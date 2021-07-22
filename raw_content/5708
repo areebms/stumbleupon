@@ -1,0 +1,1396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+   <title>The Food Lab: Perfect Boiled Eggs | Serious Eats</title>
+	<meta name="description" content="Note: J. Kenji Lopez-Alt (of Good Eater) brought his analytical cooking expertise to us last week in his first installment of The Burger Lab. This week he starts another bi-weekly column, The Food Lab, dedicated to unraveling the science of..." />
+	<meta name="keywords" content="Serious Eats, food, media, news, cooking, eggs, science, The Food Lab" />
+
+<!-- [2] including mt.js here -->
+    <script src="http://static.seriouseats.com/serious_eats/js/mt.js" type="text/javascript"></script>
+
+	<script src="http://static.seriouseats.com/js/jquery.min.js"></script>
+	<script src="http://static.seriouseats.com/js/jquery.tools.scroll.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://static.seriouseats.com/js/jquery.color.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://static.seriouseats.com/serious_eats/js/mt-site.js" type="text/javascript"></script>
+	<script src="http://static.seriouseats.com/js/jquery.accordion.min.js" type="text/javascript"></script>
+	<script src="http://static.seriouseats.com/js/accordion.js" type="text/javascript"></script>
+	<script src="http://static.seriouseats.com/js/new-home.js" type="text/javascript"></script>
+	<script type="text/javascript">
+var field_stars = new Array();
+function star_over(field, rating, on, off) {
+	for (var i = 1; i <= rating; i++) {
+		var star = document.getElementById(field + '_' + i);
+		star.src = on;
+	}
+	for (var i = rating + 1; i <= field_stars[field]; i++) {
+		var star = document.getElementById(field + '_' + i);
+		star.src = off;	
+	}
+}
+function star_out(field, rating, on, off) {
+	var val = document.getElementById(field).value;
+	if (val) {
+		val = parseInt(val);
+	} else {
+		val = 0;
+	}
+	for (var i = 1; i <= val; i++) {
+		var star = document.getElementById(field + '_' + i);
+		star.src = on;
+	}
+	for (var i = val + 1; i <= field_stars[field]; i++) {
+		var star = document.getElementById(field + '_' + i);
+		star.src = off;
+	}
+}
+function star_click(field, rating) {
+	document.getElementById(field).value = rating;
+}
+</script>
+
+    <script src="http://static.seriouseats.com/js/mobileRedirect.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/generalV2.css?v=20100728" media="screen" />
+
+    <link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/global-masthead.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/print.css" media="print" />
+
+	<!--[if gte IE 7]>
+	  <link rel="stylesheet" href="http://static.seriouseats.com/css/ie7.css" type="text/css" media="screen" charset="utf-8" />
+	<![endif]-->
+	<!--[if lt IE 7]>
+	  <link rel="stylesheet" href="http://static.seriouseats.com/css/ie6.css" type="text/css" media="screen" charset="utf-8" />
+	<![endif]-->
+
+	<meta name="copyright" content="Serious Eats 2011" />
+	<meta http-equiv="Content-Language" content="en-us" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="false" />
+        <meta property="fb:page_id" content="168926019255" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="alternate" type="application/atom+xml" title="Serious Eats" href="http://feeds.seriouseats.com/seriouseatsfeaturesvideos" />
+
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    $(document).ready(function() {
+        mtUpdateScores();
+    });
+    //mtAttachEvent('load', mtUpdateScores);
+    mtAttachEvent('usersignin', mtUpdateScores);
+    /* ]]> */
+    </script>
+
+
+	
+	
+
+	<script src="http://static.seriouseats.com/js/individualPost.js?v=022408" type="text/javascript"></script>
+
+<script type="text/javascript">
+<!--
+$(document).ready(function() {
+	$("#emailThis").one("click", function(){
+		frames['emailIframe'].location.href = "http://www.seriouseats.com/cgi-bin/mte//plugins/SendEntry/mt-send-entry.cgi?__mode=create&entry_id=69474";
+		return false;	
+	});
+});	
+//-->
+</script>
+
+
+
+<script type="text/javascript">
+       federated_media_section = "SE_Sandwich";
+    </script> 
+
+
+
+
+<script src="http://static.seriouseats.com/js/date.js" type="text/javascript"></script>
+<script src="http://static.seriouseats.com/js/pagination.js" type="text/javascript">
+</script>
+
+<script src="http://www.seriouseats.com/2009/10/the-food-lab-science-of-how-to-cook-perfect-boiled-eggs-comments.js?20110402204655" type="text/javascript"></script>
+
+<script type="text/javascript">
+  	var commentsJSLoaded = false;
+  	var commentsDisplayed = false;
+  	var commentCount = '';
+  	var commentCountText = '';
+  	var intervalID = 0;
+  	var numCommentsPerPage = 100;
+  	//100;
+
+  	// For printing comments with Recipe posts   
+  	var recipeCommentsToInclude = new Array(); 
+  	var jumpToTopOfComments = true;
+    
+  	if (numComments > 0) {
+		commentCount = numComments + " Comment";
+        if (numComments > 1) {
+              commentCount += "s";
+        }
+   	} else {
+        commentCount = "Post a Comment";
+   	}
+	  
+
+      commentCountText = '<a href="http://www.seriouseats.com/2009/10/the-food-lab-science-of-how-to-cook-perfect-boiled-eggs.html#comments"  class="commentCount">';
+      commentCountText += commentCount + '</a>';               
+
+
+
+      commentsJSLoaded = true;
+	  
+	  intervalID = setInterval("showCommentSection()", 1000);
+  
+function showCommentSection()
+{
+	if (!commentsDisplayed)
+	{
+		if (commentsJSLoaded && ($('#commentSection').length) && ($('#postFooterCommentCount').length))  {
+			$("#postFooterCommentCount").html(commentCountText);
+			if($(".entryCommentCount").length > 0) {
+				$(".entryCommentCount").each(function() {
+				 	$(this).html(commentCount);
+				});
+			}	
+	   
+			if (numComments <= numCommentsPerPage) {
+				showComments(0, numComments);
+			} else {
+				jumpToTopOfComments = false;
+	
+				$(".pagination").pagination(numComments, {
+					items_per_page:numCommentsPerPage,
+					num_edge_entries:1,
+					num_display_entries:9,
+					next_show_always:false,
+					prev_show_always:false,
+					link_to:"#comments",
+					callback:handlePaginationClick
+				});
+				
+				jumpToTopOfComments = true;
+			}
+			commentsDisplayed = true;
+		} 
+	} else {
+		clearInterval(intervalID);
+	} 
+}
+  
+function showComments(startNum, endNum)
+{
+    var commentContent = '';
+	var regex = new RegExp("\n", "g"); 
+
+    for (var i = startNum;i < endNum;i++) {
+        commentContent += '<a name="' + commentJSON[i]["comment_id"] + '"></a>';
+    	if (i%2) {
+    		commentContent += '<div class="comment yellow">';
+    	} else {
+    		commentContent += '<div class="comment green">';
+    	}
+        commentContent += '<div class="comment-body">';
+        
+                commentContent += '<p>' + commentJSON[i]["text"].replace(regex, "<br />") + '</p><div class="comment-body-bottom"></div></div><p class="commenter postFooter"><a href="http://www.seriouseats.com/user/profile/' + commentJSON[i]["author_username"] + '">' + commentJSON[i]["author_nickname"] + '</a> at <a href="http://www.seriouseats.com/2009/10/the-food-lab-science-of-how-to-cook-perfect-boiled-eggs.html#' + commentJSON[i]["comment_id"] + '">';
+        
+ 		
+ 		var date = commentJSON[i]["created_on"];
+ 		
+ 		var commentDate = new Date(date.substr(0,4), date.substr(4,2)-1, date.substr(6,2), date.substr(8,2), date.substr(10,2), date.substr(12,2));
+ 		
+ 		commentContent += commentDate.toString("h:mmtt on MM/dd/yy") + '</a></p></div>'; 		
+    }
+	
+    $('#commentSection').html(commentContent);
+	
+	// Recipe post - checked comments for printing
+	$('input[name$="include-comment"]').change(function() {
+		if ($(this).is(':checked')) { 
+			var arrayIndex = (jQuery.inArray($(this).attr('value'), recipeCommentsToInclude));
+			if (arrayIndex < 0) {
+				recipeCommentsToInclude.push($(this).attr('value'));
+				comments_list = recipeCommentsToInclude.join();
+			}
+		}
+		else {
+			var arrayIndex = (jQuery.inArray($(this).attr('value'), recipeCommentsToInclude));
+			if (arrayIndex >= 0) {
+				recipeCommentsToInclude.splice(arrayIndex,1);
+				comments_list = recipeCommentsToInclude.join();
+			}
+		}
+	});
+}
+
+function handlePaginationClick(page_index, pagination_container) {
+    var max_num = Math.min((page_index+1) * numCommentsPerPage, numComments);
+    var commentRange = '';
+    if ((max_num < numComments) || (max_num > numCommentsPerPage)) {
+         commentRange += "(" + (page_index*numCommentsPerPage + 1) + " - " + max_num + ") of ";
+    }
+
+    $('#commentRange').html(commentRange);
+
+	showComments(page_index*numCommentsPerPage, max_num);
+    
+	if (jumpToTopOfComments) {
+    	document.getElementById('comments').scrollIntoView();
+	}
+    return false;
+}
+
+$(document).ready(function()
+{
+	if (!commentsDisplayed)
+	{
+		showCommentSection();
+	}
+});
+</script>
+
+
+</head>
+	
+<body id="blog">
+
+<div id="topAdSpace">
+	<!-- FM Leaderboard 728x90 Top of Page Zone -->
+<script type='text/javascript' src='http://static.fmpub.net/zone/2385'></script>
+        <!-- FM Leaderboard 728x90 Top of Page Zone -->
+</div>
+
+<div id="container">
+
+<div class="clearfix familyTabs" id="SE">
+<ul> <!-- class="fmenu" id="familyLinks" -->
+<li><a href="http://www.seriouseats.com/" id="seTab" class="active">Serious Eats</a></li>
+<li><a href="http://slice.seriouseats.com" id="sliceTab" class="">Slice</a></li>
+<li><a href="http://aht.seriouseats.com" id="ahtTab" class="">A Hamburger Today</a></li>
+<li><a href="http://newyork.seriouseats.com/" id="senyTab" class="">New York</a></li>
+<li><a href="http://photograzing.seriouseats.com" id="photoTab" class="">Photograzing</a></li>
+<li><a href="http://www.seriouseats.com/talk/" id="talkTab" class="">Talk</a></li>
+<li><a href="http://www.seriouseats.com/recipes/" id="recipesTab" class="">Recipes</a></li>
+<li><a href="http://drinks.seriouseats.com" id="drinksTab" class="">Drinks</a></li>
+</ul>
+
+
+<div class="widget-sign-in widget">
+    <div id="signin-widget-content" class="widget-content"></div>
+</div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+function mtUpdateSignInWidget(u) {
+    var separator = '&nbsp;&nbsp;|&nbsp;&nbsp;';
+    var el = document.getElementById('signin-widget-content');
+    var content = '';
+    // alert (document.URL);
+    //alert (encodeURIComponent(document.URL));
+    if (!el) return;
+    if (u) {
+        if (u && u.is_authenticated) {
+            user = u;
+            mtSaveUser();
+        } else {
+            // user really isn't logged in; so let's do this!
+            return mtSignIn();
+        }
+    } else {
+        u = mtGetUser();
+    }
+    if (u && u.name) {
+        var url;
+		content += '<div id="login-tab" class="loggedIn"><div id="login-tab-inner">';
+        if (u.is_authenticated) {
+            if (u.is_author) {
+
+				url = 'http://www.seriouseats.com/user/profile/'; 
+
+
+            } else {
+                url = u.url;
+            }
+        } else if (u.url) {
+            url = u.url;
+        } else {
+            url = null;
+        }
+        if (url)
+            content += '<p><strong><a href="' + url + '">' + u.name + '</a></strong></p>';
+        else
+            content += '<p><strong>' + u.name + '</strong></p>';
+        if (u.is_author)
+            content += '<p><a href="http://www.seriouseats.com/cgi-bin/mte/mt-cp.cgi?__mode=edit&blog_id=30&return_to=' + encodeURIComponent(document.URL) + '">Account</a>';
+        
+        content += ' | <a href="javascript:void(0)" onclick="return mtSignOutOnClick()">Log out</a>.';
+        
+		content += '</div></div><div class="clearer"><!-- --></div>'
+    } else if (u && u.is_banned) {
+        content = 'You do not have permission to sign in to this blog.';
+    } else {
+		content = '<div id="login-tab" class="notLoggedIn"><div id="login-tab-inner"><a onclick="return mtSignInOnClick(\'login-tab-inner\')" href="javascript:void(0)" id="login-link">log in</a></div></div><div class="clearer"><!-- --></div>'
+    }
+    //alert ("content is: " + content);
+    el.innerHTML = content;
+}
+mtAttachEvent('usersignin', mtUpdateSignInWidget);
+mtUpdateSignInWidget();
+/* ]]> */
+</script>
+<script type="text/javascript">
+//mtAttachEvent('load', mtUpdateScores);
+//mtAttachEvent('usersignin', mtUpdateScores);
+</script>
+
+ 
+</div><!-- close familyNav -->
+
+<div id="header" class="SE-header">
+    <div id="topHeader">
+        <h1 id="logo" title="Serious Eats home"><a href="http://www.seriouseats.com/">Serious Eats - seriouseats.com</a></h1>   
+
+<script type="text/javascript">window.featurescode = "SE";</script>
+<script src="http://www.seriouseats.com/js/skyboxes.js" type="text/javascript"></script>
+
+
+    </div><!--/#topHeader -->
+
+    
+
+
+
+    <div id="newNavBar">
+        
+        <ul id="navNew">
+            <li>
+                <a href="http://www.seriouseats.com/" id="nav-home" class="nav-item">Home</a>
+            </li>
+            <li>
+                <a href="http://www.seriouseats.com/eating-out/" id="nav-out" class="nav-item nav-menu">Eating Out</a>
+                <div class="navFlyout">
+	
+	<div class="home-column-excerpt first">
+		<div class="thumb-100x90">
+			<a href="http://www.seriouseats.com/2011/04/crema-cafes-sweet-potato-sandwich-cambridge-ma-boston.html">
+			
+				<img src="http://www.seriouseats.com/assets_c/2011/03/03172011.cremasweetpotatoprimary-thumb-autox90-147622.jpg" alt="" />
+			
+			</a>
+		</div>
+		<h2 class="most-popular-head">Most Popular</h2>
+		
+		
+		
+		<p class="flyout-title"><a href="http://www.seriouseats.com/2011/04/crema-cafes-sweet-potato-sandwich-cambridge-ma-boston.html">A Sandwich a Day: Crema Café's Sweet Potato Sandwich in Cambridge, MA</a></p>
+	</div>
+	
+	
+	<div class="home-column-excerpt">
+		<div class="thumb-100x90">
+		<a href="http://www.seriouseats.com/2010/09/culinary-ambassadors-street-food-in-iceland--.html">
+		
+			<img src="http://www.seriouseats.com/assets_c/2010/09/20100904-ca-iceland-street-food-hot-dog-stand-thumb-autox90-109897.jpg" alt="" />
+		
+		</a>
+		</div>
+		<h2 class="featured-column-head">Featured</h2>
+		
+		
+		
+		<p class="flyout-title"><a href="http://www.seriouseats.com/2010/09/culinary-ambassadors-street-food-in-iceland--.html">Culinary Ambassadors: Street Food in Iceland - Hot Dogs from Bæjarins Beztu</a></p>
+	</div>
+	
+	<div class="recent-posts"><a href="/eating-out/" class="nav-more">Most Recent Posts &raquo;</a></div>
+	
+</div>
+
+            </li>
+            <li>
+                <a href="http://www.seriouseats.com/recipes/" id="nav-recipes" class="nav-item nav-menu">Recipes</a>
+                <div class="navFlyout">
+	
+	<div class="home-column-excerpt first">
+		<div class="thumb-100x90">
+			<a href="http://www.seriouseats.com/recipes/2011/04/pot-roast-with-mushrooms-beef-recipe.html">
+			
+				<img src="http://www.seriouseats.com/recipes/assets_c/2011/03/392011-141520-pot-roast-mushrooms-thumb-autox90-145741.jpg" alt="" />
+			
+			</a>
+		</div>
+		<h2 class="most-popular-head">Most Popular</h2>
+			
+				<p class="linksrc"><a href="http://www.seriouseats.com/recipes/" class="recipes_post" rel="nofollow">Recipes</a></p>
+		
+		<p class="flyout-title"><a href="http://www.seriouseats.com/recipes/2011/04/pot-roast-with-mushrooms-beef-recipe.html">Sunday Supper: Pot Roast with Mushrooms</a></p>
+	</div>
+	
+	
+	<div class="home-column-excerpt">
+		<div class="thumb-100x90">
+		<a href="http://www.seriouseats.com/recipes/2010/12/easy-homemade-hot-chocolate-mix-recipe.html">
+		
+			<img src="http://www.seriouseats.com/recipes/assets_c/2010/12/20101215-hot-chocolate-primary-thumb-autox90-128570.jpg" alt="" />
+		
+		</a>
+		</div>
+		<h2 class="featured-column-head">Featured</h2>
+			
+				<p class="linksrc"><a href="http://www.seriouseats.com/recipes/" class="recipes_post" rel="nofollow">Recipes</a></p>
+		
+		<p class="flyout-title"><a href="http://www.seriouseats.com/recipes/2010/12/easy-homemade-hot-chocolate-mix-recipe.html">Easy Homemade Hot Chocolate Mix</a></p>
+	</div>
+	
+	<div class="recent-posts"><a href="/recipes/" class="nav-more">Most Recent Posts &raquo;</a></div>
+	
+</div>
+
+            </li>
+            <li>
+                <a href="http://www.seriouseats.com/columns/" id="nav-columns" class="nav-item nav-menu">Columns</a>
+                <div class="navFlyout">
+
+<div id="column-flyout">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/a_sandwich_a_day/?ref=flyout" class="column-title"><div>A Sandwich a Day</div></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/crisper_whisperer/?ref=flyout" class="column-title"><div>Crisper Whisperer</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/ed_levines_serious_diet/?ref=flyout" class="column-title"><div>Ed Levine's Serious Diet</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/edible_diy/?ref=flyout" class="column-title"><div>Edible DIY</div></a>
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/fast_food/?ref=flyout" class="column-title"><div>Fast Food</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/food_policy/?ref=flyout" class="column-title"><div>Food Policy</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/gadgets/?ref=flyout" class="column-title"><div>Gadgets</div></a>
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/hot_dog_of_the_week/?ref=flyout" class="column-title"><div>Hot Dog of the Week</div></a>
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/how-to/?ref=flyout" class="column-title"><div>How To</div></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/in-season/?ref=flyout" class="column-title"><div>In Season</div></a>
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/knife_skills/?ref=flyout" class="column-title"><div>Knife Skills</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/market-scene/?ref=flyout" class="column-title"><div>Market Scene</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/meet_and_eat/?ref=flyout" class="column-title"><div>Meet and Eat</div></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/mixed_review/?ref=flyout" class="column-title"><div>Mixed Review</div></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/scandinavian_street_food/?ref=flyout" class="column-title"><div>Scandinavian Street Food</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/serious-cheese/?ref=flyout" class="column-title"><div>Serious Cheese</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/serious-chocolate/?ref=flyout" class="column-title"><div>Serious Chocolate</div></a>
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/serious_entertaining/?ref=flyout" class="column-title"><div>Serious Entertaining</div></a>
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/serious-heat/?ref=flyout" class="column-title"><div>Serious Heat</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/serious_reads/?ref=flyout" class="column-title"><div>Serious Reads</div></a>
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/seriously_asian/?ref=flyout" class="column-title"><div>Seriously Asian</div></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/southern-belly/?ref=flyout" class="column-title"><div>Southern Belly</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/spice_hunting/?ref=flyout" class="column-title"><div>Spice Hunting</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/taste-tests/?ref=flyout" class="column-title"><div>Taste Tests</div></a>
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/thats_nuts/?ref=flyout" class="column-title"><div>That's Nuts</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/the-food-lab/?ref=flyout" class="column-title"><div>The Food Lab</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/the_nasty_bits/?ref=flyout" class="column-title"><div>The Nasty Bits</div></a>
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/when_pigs_fly/?ref=flyout" class="column-title"><div>When Pigs Fly</div></a>
+
+
+ 
+
+	<div class="recent-posts"><a href="/columns/?ref=flyout" class="nav-more">See More Columns &raquo;</a></div>
+	
+</div>
+</div>
+
+            </li>
+                        <li>
+                <a href="http://www.cooking.com/aff/adredir.asp?CCAID=CBSEPTPH&Redir=%2Fseriouseats" id="nav-home" class="nav-item">Shop</a>        
+            </li>
+             <li>
+                <a href="http://videos.seriouseats.com" id="nav-videos" class="nav-item">Videos</a>        
+            </li>
+        </ul>
+        
+        <div id="search">
+
+<form id="SearchForm" method="get" action="http://www.seriouseats.com/cgi-bin/mte/mt-search.cgi">
+        <input type="hidden" id="IncludeBlogs" name="IncludeBlogs" value="30" />
+        <input type="hidden" name="limit" value="20" />
+        <input id="searchBox" class="query" name="search" value="" />
+
+
+
+		<input type="image" value="search" src="http://www.seriouseats.com/imagesV2/buttons/search.png" width="62" height="24" border="0" alt="search" id="searchButton" name="sa">
+    </form>
+
+<script type="text/javascript">
+// For blogs under Serious Eats, we want to use their blog ID for search
+if ($('#IncludeBlogs').val() == '31') {
+   if (document.location.href.indexOf('/talk/')>-1) {
+      $('#IncludeBlogs').val('32');
+   }else if (document.location.href.indexOf('/recipes/')>-1) {
+      $('#IncludeBlogs').val('34');
+   }else {
+      $('#IncludeBlogs').val('30');
+   }
+}
+
+</script>
+
+
+
+        </div>
+        <div class="clearer"></div>
+        
+    </div><!-- close navBar -->
+
+</div><!-- close header -->
+
+	<div id="content">
+		
+		<div id="threeColumn1">
+			
+		<!-- post include -->
+		
+			<div class="individualPost">
+
+				<div class="tools" id="blogTools">
+
+					<ul id="postTools" class="left">
+						<li><a href="http://www.seriouseats.com/2009/10/print/the-food-lab-science-of-how-to-cook-perfect-boiled-eggs.html" title="Print" target="_blank"><img src="/imagesV2/transparent.gif" class="icon icon-print" alt="Print This" /></a></li>
+						<li><a class="addthis_button_email"></a></li>
+					</ul>
+					
+					<ul id="share" class="right">
+                                        <li><a class="addthis_button_tweetmeme" tm:style="compact"></a></li> 
+                   	                <li id="shareParent">Share:</li>
+                                        <li><a class="addthis_button_reddit"></a></li>
+                                        <li><a class="addthis_button_delicious"></a></li>
+                                        <li><a class="addthis_button_facebook"></a></li>
+                                        <li><a class="addthis_button_twitter"></a></li>                                        
+					<li><a class="addthis_button_stumbleupon"></a></li>
+					<li><a class="addthis_button_facebook_like"></a></li>
+					</ul><!-- close share --><div class="clearer"></div>
+				
+				
+					<div id="iframeContainer" style="background: #fff;">
+						<iframe id="emailIframe" name="emailIframe" width="489" height="465" background="#ffffff"  bgcolor="#ffffff" frameborder="0" scrolling="no" src="" ></iframe>
+					</div>
+
+				</div><!-- close blogTools -->  
+
+				<h3>The Food Lab: Perfect Boiled Eggs</h3>
+			
+				<p class="byline">Posted by <a href="http://www.seriouseats.com/user/profile/GoodEaterKenji">J. Kenji Lopez-Alt</a>, October  9, 2009 at 11:45 AM</p>     
+			
+
+				     
+<script type="text/javascript">
+        $(document).ready(function(){ 
+        	var entryRecipeAlert = '#' + $(this).attr('id') + ' .recipe-alert';
+            if (($('.individualPost .recipe-alert').length > 0) && ($('.individualPost .entry-main-image').length > 0)) {
+            	$('.individualPost .recipe-alert').insertAfter($('.individualPost .entry-main-image').parent());
+            }
+            if ($('.individualPost .breakoutbox').length > 0) {
+            	$('.individualPost .breakoutbox').insertAfter($('.individualPost .recipe-alert'));
+		$('.individualPost .breakoutbox').css('clear', 'right');
+            }
+        });
+    </script>
+
+    
+     
+        
+            <div class="recipe-alert recipe-alert-lg">
+            
+                
+<a class="arrow" href="http://www.seriouseats.com/recipes/2009/10/perfect-boiled-eggs-recipe.html">Get the Recipe!</a>
+
+            
+            </div>
+        
+    
+    
+     
+
+
+				<p><small><strong>Note:</strong> J. Kenji Lopez-Alt (of <a href="http://www.goodeater.org">Good Eater</a>) brought his analytical cooking expertise to us last week in his first installment of <a href="http://aht.seriouseats.com/archives/2009/10/the-burger-lab-best-burger-blend-profiles-of-eight-cuts-of-beef.html">The Burger Lab</a>. This week he starts another bi-weekly column, The Food Lab, dedicated to unraveling the science of cooking. Today, learn about what happens under the shell when boiling eggs and how to make the perfect soft and hard boiled eggs.</small></p>
+
+<p><img alt="09242009perfecteggs.jpg" src="http://www.seriouseats.com/recipes/images/09242009perfecteggs.jpg" width="500" height="221" /></p>
+
+<div class="breakoutbox">
+<h4>Perfect Boiled Eggs Recipe</h4>
+
+<p>Want to go straight to the kitchen? Here's the recipe for <a href="http://www.seriouseats.com/recipes/2009/10/perfect-boiled-eggs-recipe.html">Perfect Boiled Eggs</a>.</p></div>
+
+<p>I'd like to apologize in advance for the shameless, horrible egg puns that I'm inevitably going to <em>shell out</em> over the course of this story.</p>
+
+<p>For the very first installment of The Food Lab, I thought I'd tackle one of the simplest, yet most vexing everyday challenges of the home kitchen: <strong>perfectly boiling an egg.</strong></p>
+
+<p>Nearly every basic cookbook offers conflicting techniques on how it should be done&mdash;start the egg in cold water, or gently lower it into boiling water; add vinegar to the water to lower its pH, or add baking soda to the water to raise it; cover the pot, don't cover the pot; use old eggs, or use new eggs, and on and on&mdash;but very few offer evidence as to why any one of these techniques should work any better than your average old wives' tale. Apparently, boiling is not...ahem...an <em>eggs</em>-act science.</p>
+
+<p>The first few of these fairy tales were easy to banish with some easy tests.</p>
+
+<h4>What Factors Matter When Boiling Eggs?</h4>
+
+<p><strong>Age of the Eggs</strong><br />
+"Old eggs are for boiling, fresh eggs are for frying," is the old chestnut. Well, it's true...to a degree. As anyone who's had fresh-from the hen eggs will tell you, they do fry up beautifully, giving you tall, tall yolks, and tight whites, and trying to peel a very freshly laid boiled egg is difficult&mdash;the inner membrane of the shell has a tendency to stick to the white, giving the peeled egg a pockmarked appearance. But these differences disappear within a few days after the egg has been laid. Since eggs in the supermarket can spend up to 30 days before they even hit the shelf, followed by a further 30 days before they hit their expiration date, the point is pretty much moot. So long as you don't keep your own chickens, you can boil eggs with impunity.</p>
+				<a name="continued"></a>
+				<p><strong>pH of the Water</strong><br />
+It's true that over time, acidic liquid can dissolve the shell of an egg, and that alkaline liquid can both make the egg easier to peel, as well as boost that "rotten egg" aroma, but in the short period that an egg spends boiling, pH has little to nothing to do with how the egg cooks. Just use plain tap water; don't bother with vinegar or baking soda.</p>
+
+<p><strong>Lid on, or Off?</strong><br />
+The only effect it has is on the heat retention and boiling point of the water. Since, as you'll see, we'll be cooking most eggs at below a boil, you don't want to use a cover. </p>
+
+<p>Turns out, the only factors that really do matter when boiling an egg are <strong>time</strong> and <strong>temperature.</strong></p>
+
+<p>The photo below demonstrates <strong>what happens when you lower an egg into boiling water.</strong> The egg in the upper left corner was boiled for precisely one minute, the one directly to its right was boiled for three minutes, and so on down the line, at two minute intervals, until you finally get to the egg on the bottom right, which was boiled for 15 minutes.</p>
+
+<p><img alt="09242009timing.jpg" src="http://www.seriouseats.com/recipes/images/09242009timing.jpg" width="500" height="268" /></p>
+
+<p>It may seem obvious to state this, but it's such an important point in cooking that I'm going to say it anyway: when a mass is exposed to heat for a given period of time, a temperature gradient will form within that mass, with the area closest to the heat source being hottest, and the area furthest from the heat source being coolest. With very few exceptions, the temperature of a given spot in the food is proportional to the inverse square of its distance from the surface exposed to the heat source.</p>
+
+<p>In other words, <strong>the middle of your food is going to cook more slowly than the exterior</strong>, and <strong>the hotter the heat source, the bigger the temperature differential will be between the center and the exterior</strong>.</p>
+
+<h4>The Temperature Timeline of Boiling an Egg</h4>
+
+<p>Now, here's what happens as an egg white cooks:</p>
+
+<ul><li><strong>From 30 -140 degrees:</strong> As it gets hot, its proteins, which resemble coiled up balls of yarn, slowly start to uncoil.</li>
+<li><strong>At 140 degrees:</strong> Some of these uncoiled proteins&mdash;called <em>ovotransferrin</em>&mdash;begin to bond with each other, creating a matrix, and turning the egg white milky and jelly-like (like the innermost layers of egg white in the 3-minute egg above).</li>
+<li><strong>At 155 degrees:</strong> The ovotransferrin has formed and opaque solid, though it is still quite soft and moist (see the white of the 5-minute egg).</li>
+<li><strong>At 180 degrees:</strong> The main protein in egg whites&mdash;<em>ovalbumen</em>&mdash;will cross-link and solidify, giving you a totally firm egg white (see the whites of the 7 and 9 minute eggs). This is very similar to the gunk that seeps out of the surface of overcooked salmon.</li>
+<li><strong>180 degrees-plus:</strong> The hotter you get the egg, the tighter these proteins bond, and the firmer, drier, and rubbier the egg white becomes (the 11-15 minute eggs). Hydrogen Sulfide, or "rotten-egg" aromas, begin to develop. <em>Ick.</em></li></ul>
+
+<p><img alt="09242009badhardegg.jpg" src="http://www.seriouseats.com/recipes/images/09242009badhardegg.jpg" width="500" height="309" /></p>
+
+<p>Egg yolks, on the other hand, follow a different set of temperatures:</p>
+
+<ul><li><strong>At 145 degrees:</strong> They begin to thicken and set up.</li>
+<li><strong>At 158 degrees:</strong> They become totally firm, but are still bright orange and shiny.</li>
+<li><strong>At 170 degrees:</strong> They become pale yellow and start to turn crumbly.</li>
+<li><strong>170 degrees-plus:</strong> They dry out and turn chalky. The sulfur in the whites rapidly reacts with the iron in the yolks, creating ferrous sulfide, and tinging the yolks.</li></ul>
+
+<p>The five degree temperature difference between when the egg white and the egg yolks firm is what allows chefs at fancy-pants restaurants to serve those "slow-cooked" eggs. They simply place the egg in a 140 degree water bath, wait about 45 minutes (by which point the egg has reached 140 degrees all the way from edge to center), then carefully crack them. The results is a white that is soft and translucent but holds it's shape, and a yolk that is still completely liquid. <em>Beautiful.</em></p>
+
+<p>So far so good? Is this all going <em>over easy?</em> Now with all this background information dealt with, we can move on to something a little more <em>eggs</em>-citing: perfecting the boil.</p>
+
+<h4>Perfect Soft Eggs</h4>
+
+<p><img alt="09242009softboiled.jpg" src="http://www.seriouseats.com/recipes/images/09242009softboiled.jpg" width="500" height="333" /></p>
+
+<p>The French have got all kinds of wild descriptions for eggs cooked to various degrees of doneness, but in American culinary terms, in the ideal soft-boiled egg, the <strong>white should be completely opaque,</strong> but not to the point of rubberiness (somewhere in the range of 155 to 180 degrees), and the <strong>yolk should be completely liquid</strong> (no hotter than 158 degrees). In this way, with each spoonful, you get tender bites of soft, velvety-smooth white, bathed in a sauce of glorious, bright golden, rich, flavorful yolk. These are the type of soft boiled eggs that'll get you <em>laid.</em></p>
+
+<p><span class="pullquote">So long as your water never come above 180 degrees&mdash;at sea level, that's the quivering stage just below a simmer&mdash;you have no chance of overcooking</span> and toughening the whites beyond the stage where ovalbumen just begins to set. Given that you're using <strong>large eggs</strong> (eggs are remarkably well-sized, and are very consistent from carton to carton), that the <strong>eggs came from the fridge</strong> (around 37 degrees), and that you're starting with a <strong>volume of 180 degree water</strong> large enough that it doesn't significantly drop in temperature when you lower your eggs into it (three quarts of water is enough for anywhere from one to a half dozen eggs), then the only other variable remaining is the length of time you cook it for.</p>
+
+<p>After a couple cartons of eggs, and a whole mess of egg salad, and what initially seemed like an un-winnable <em>shell</em> game, I determined that time to be <em>eggs</em>-actly 6 minutes, delivering the soft-boiled beauty you see above. Since whites set at 155 degrees and yolks set at 158, you have a tolerance of three degrees to work with, which translates to about 15 seconds in either direction. <strong>Use a timer!</strong></p>
+
+<p><strong>Update (1/4/2010):</strong> For best results, heat water to 180 degrees as measured on an instant-read thermometer. After adding eggs, adjust heat to maintain temperature at 180 degrees for duration of cooking time. If you do not have a thermometer, keep the water at the early simmer stage when tiny bubbles are just beginning to break the surface (at high altitudes, the water may be bubbling more vigorously).</p>
+
+<h4>Perfect Hard Boiled Eggs</h4>
+
+<p><img alt="09242009cookingeggs.jpg" src="http://www.seriouseats.com/recipes/images/09242009cookingeggs.jpg" width="500" height="333"  /></p>
+
+<p>Hard boiled eggs are a little more complicated. The goal is to have both your white and your yolk at the point where they are opaque, but not rubbery. Again, if you are a fancy-pants chef with a thermal circulator, set it at 170 degrees, drop in your eggs, and just wait. At home, we don't have that luxury.</p>
+
+<p>We already know that if we drop the eggs directly into boiling water, the exterior heats up much faster than the interior; by the time the very center of the yolk reaches 170 degrees, <strong>the white and outer layers of yolk are hopelessly overcooked,</strong> and smell worse than that guy in the elevator.</p>
+
+<p>On the other hand, if you start the eggs in cold water, as the water gently heats up over the burner the eggs gently heat up right along with it, <strong>greatly reducing the temperature differential between the interior and exterior</strong> (remember the rule: the temperature differential between edge and center is proportional to the strength of the heat source).</p>
+
+<p>This is nothing new. Many recipes instruct you to place the eggs in cold water, bring them to a simmer, shut off the heat, and wait for a prescribed period of time. However, as the photos below demonstrate, this doesn't really work consistently. </p>
+
+<p><strong>Update (1/4/2010):</strong> For clarification, a "bare simmer" should be 180-190 degrees at sea level. For best results, use an instant-read thermometer. If you do not have a thermometer, bring the water to the stage when tiny bubbles are breaking the surface steadily before shutting it off.</p>
+
+<p><img alt="09242009volume.jpg" src="http://www.seriouseats.com/recipes/images/09242009volume.jpg" width="500" height="215" /></p>
+
+<p>In each case, I placed the egg in a volume of cold water, brought the water to a simmer, shut it off, then left the egg in it for precisely ten minutes. As you can clearly see, depending on the initial volume of water (between one quart and four quarts in this case), the cooked eggs run the gamut from slightly undercooked, to totally overcooked! Taking the temperature of the water after 10 minutes confirmed the reason: the one quart pot had <strong>dropped to around 145 degrees</strong>, while the four quarts pot was <strong>still well above 175</strong>. No wonder it was overcooking!</p>
+
+<p>So this is what I discovered: given that my burner is consistent in its heat output, given that I use the same pot each time, given that my tap water always comes out at around 40 to 45 degrees, and given that my apartment is at a relatively stable temperature year around, <span class="pullquote">there is a precise volume of water I can use to hard boil an egg</span> such that if I start it cold, bring it up to a bare simmer, then immediately shut off the heat, the water temperature will drop to below 170 degrees just as the central yolk temperature reaches 170 degrees, thereby guaranteeing that my egg will be perfectly cooked every single time.</p>
+
+<p>After some more fiddling and a few dozen deviled eggs, I discovered this volume to be <strong>1.5 quarts.</strong></p>
+
+<p><img alt="09242009hardboiledtwins.jpg" src="http://www.seriouseats.com/recipes/images/09242009hardboiledtwins.jpg" width="250" height="200" class="photo-right" />The best part about using this method is that <strong>even if you accidentally forget about your egg and leave it sitting in the water, there is no chance that it will overcook,</strong> because by the time the egg is done (about ten minutes), the water temperature has dropped far enough that the egg will stop cooking. These two eggs were cooked in the same pot of water&mdash;one was removed after 10 minutes, while the other was left for a full thirty. As you can see, <strong>they are both perfectly cooked</strong>.</p>
+
+<p>The unfortunate part of this technique is that if you use a range that is vastly stronger or weaker than one you are used to, or if you have a very odd-shaped cooking vessel that drastically alters the surface-area to volume ratio of the water, it will require some fiddling with. But for most practical purposes, this will deliver perfect hard boiled eggs every time.</p>
+
+<p>Perfect eggs, but the <em>yolk</em>'s on me&mdash;all this egg boiling has left me <em>fried</em>.</p>
+
+<p><strong>Continue here for the recipe for <a href="http://www.seriouseats.com/recipes/2009/10/perfect-boiled-eggs-recipe.html">Perfect Boiled Eggs</a> »</strong></p>
+
+<p><small><strong>About the author: </strong>After graduating from MIT, <a href="http://www.seriouseats.com/user/profile/GoodEaterKenji">J. Kenji Lopez-Alt</a> spent many years as a chef, recipe developer, writer, and editor in Boston. He now lives in New York with his wife, where he runs a private chef business, <a href="http://www.kacuisine.com">KA Cuisine</a>, and co-writes the blog <a href="http://www.goodeater.org">GoodEater.org</a>.</small></p>
+				
+				
+
+				
+
+<p class="postFooter" id="commentsAndFavoritesFooter">
+
+<span id="postFooterCommentCount"><a href="http://www.seriouseats.com/2009/10/the-food-lab-science-of-how-to-cook-perfect-boiled-eggs.html#comments" class="commentCount">Post a Comment</a></span>
+
+
+<span class="favorite">
+
+<!-- [1] new favorite code  -->
+<span class="entry-scoring">
+<a href="javascript:void(0);" onclick="return mtScore(69474);" id="scoring-id-69474" class="scoring">Favorite this!</a> &nbsp;(<span id="scoring-score-69474" class="scoring-score">57</span>)
+</span>
+
+
+</span>
+
+</p>
+<div class="clearer"></div>
+
+<p class="postFooter">Tags: <a href="/tags/cooking">cooking</a>, <a href="/tags/eggs">eggs</a>, <a href="/tags/science">science</a>, <a href="/tags/The Food Lab">The Food Lab</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+					
+<div class="clearer"></div>
+
+
+
+
+<br/>
+
+<script language='JavaScript'>
+var OB_langJS = 'http://widgets.outbrain.com/lang_en.js'; var OBITm = '1296090325009';var OB_raterMode = 'none';var OB_recMode = 'strip'; 
+
+var OutbrainPermaLink='http://www.seriouseats.com/2009/10/the-food-lab-science-of-how-to-cook-perfect-boiled-eggs.html'; 
+
+ if ( typeof(OB_Script)!='undefined' )OutbrainStart(); else { var OB_Script = true; var str = unescape("%3Cscript src=\'http://widgets.outbrain.com/OutbrainRater.js\' type=\'text/javascript\'%3E%3C/script%3E"); document.write(str); }
+ </script>
+
+
+<div id="adStrip">
+				
+<script type="text/javascript"><!--
+google_ad_client = "pub-8758429631178774";
+/* 468x60, created 4/18/08 */
+google_ad_slot = "2061107744";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+				
+				</div><!-- close adStrip -->
+					
+					
+			</div><!-- close individual post -->
+
+	<div id="comments">
+				
+					
+						
+						
+<h4 class="body"><span id="commentRange"></span>
+<span class="entryCommentCount">Comments</span>:</h4>
+
+					
+					
+	
+					
+        <div id="commentPagination" class="pagination">
+        </div>
+        <div style="clear:both;"></div>
+	<div id="commentSection" style="padding-top:10px;padding-bottom:10px;">
+	</div>
+        <div id="bottomCommentPagination" class="pagination"></div>
+        <div style="clear:both;"></div>
+                                        
+
+				</div><!-- end comments -->
+				
+				
+
+<a name="ihascommented"></a><div id="commented" style="display: none;"><p>Thanks for commenting!<br />Your comment has been accepted<br />and will appear in a moment.</p></div>
+
+ <h4 class="body addAComment">Add a comment:</h4>
+
+
+					<div id="add">
+						<script type="text/javascript">
+						user = mtGetUser();
+						if (user && user.is_authenticated) {
+							document.write("");
+						} else {
+							document.write("<div class=\"commentGuidelines\"><h3>Hello Eater!</h3><p>To start talking, please <a href=\"javascript:void(0)\" onclick=\"return mtSignInOnClick('signin-widget-content')\">log in</a> or <a href=\"http://www.seriouseats.com/cgi-bin/mte/mt-cp.cgi?__mode=register&blog_id=30&return_to=" + encodeURIComponent('http://www.seriouseats.com/welcome/') + "\">sign up</a> &mdash; it's fast and free!</p></div>");
+						}
+						</script>
+					</div>
+					
+				
+
+				
+
+
+					<div id="post-comment">
+						
+					
+						<a name="commentform"></a>
+						<div class="formSection">
+							<form method="post" action="http://www.seriouseats.com/cgi-bin/mte/mt-comments.cgi" name="comments_form" id="comments_form" onsubmit="setCookie('commented', 'true'); document.getElementById('comment-post').disabled=true; document.getElementById('comment-post').value = '&nbsp;&nbsp;&nbsp;Please wait...&nbsp;&nbsp;&nbsp;'; ">
+
+<input type="hidden" name="post" value="post" />
+								<input type="hidden" name="static" value="1" />
+								<input type="hidden" name="entry_id" value="69474" />
+								<textarea id="addComment" rows="5" cols="60" name="text" class="formText"></textarea>
+								<div style="float:left"><p class="requirements">Comments can take up to a minute to appear - please be patient!</p></div>
+
+<div style="float:right" class="formCommentPreview">
+									<input type="submit" value="Post a Comment!" name="post" id="comment-post" class="formButton"  />
+								</div><div class="clearer"></div>
+							</form>
+						</div>
+						
+						<div id="previewingComment">	
+							<h4 class="body">Previewing your comment:</h4>
+							<div class="comment preview">
+								<div class="comment-body" >
+									<p id="livePreview">&nbsp;</p>
+									<div class="comment-body-bottom"></div>
+								</div>
+							</div><!-- close comment preview -->
+						</div><!-- close previewing comment -->				
+			
+						<div class="tools" id="HTMLHints">
+							<p><strong>HTML Hints</strong></p>
+							<p>Some HTML is OK: &lt;a href="URL"&gt;link&lt;/a&gt;, &lt;strong&gt;<strong>strong</strong>&lt;/strong&gt;, &lt;em&gt;<em>em</em>&lt;/em&gt;</p>
+							
+							<p><strong>Comment Guidelines</strong></p>
+							<p>Post whatever you want, just keep it seriously about eats, seriously. We reserve the right to delete off-topic or inflammatory comments. Learn more at our <a href="http://www.seriouseats.com/comment-policy/">Comment Policy page</a>.</p>
+							
+							<p>If you see something not so nice, please, <a href="http://www.seriouseats.com/contact?selected=flag&url=http://www.seriouseats.com/2009/10/the-food-lab-science-of-how-to-cook-perfect-boiled-eggs.html">report an inappropriate comment.</a></strong></p>
+						</div>
+						
+					
+					</div><!-- close post-comment -->
+			
+					 <script type="text/javascript">
+						 if (!user || !user.is_authenticated) { document.getElementById("post-comment").style.display = 'none'; }
+					 </script>
+ 
+ 
+				
+
+
+		</div><!-- end column 1 -->
+
+		<!-- SQUARE AD SPACE -->
+		<div id="featuredRight2Columns" class="indEntrySquare">
+		<div class="indEntrySquareAd" id="BIGBOX">
+			<!-- FM 300x250 ATF- Main Site Zone -->
+<script type='text/javascript' src='http://static.fmpub.net/zone/2386'></script>
+                       <!-- FM 300x250 ATF- Main Site Zone -->
+		</div>		
+	</div><!-- close featuredRight2Columns -->
+		<!-- /SQUARE AD SPACE -->
+
+<div id="featuredRight2Columns">
+<!-- Facebook Like Fan Box -->
+<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fseriouseats&amp;width=350&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=true&amp;height=265" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:350px; height:265px; padding-bottom:8px;" allowTransparency="true"></iframe>
+<!--/Facebook Like Fan Box -->
+</div>
+
+<div class="vsw-ad-block">
+<!-- VSW ADS -->
+<script type="text/javascript" language="JavaScript">
+var era_rc = {
+ERADomain: 'as.vs4food.com',
+PubID: 'seriouseats'
+};
+</script>
+<link rel="stylesheet" type="text/css" href="http://as.vs4food.com/ERA/Custom/VSW/CSS/HtmlRelatedLinks.css">
+<script type="text/javascript" language="JavaScript" src="http://as.vs4food.com/ERA/era_rl.aspx"></script>
+<!-- END VSW ADS -->
+</div>
+
+		<div id="threeColumn2">
+			
+
+<div class="column2List2" id="multiview">
+
+<!-- HOT TOPICS -->	
+	<div id="hotTopics1">
+		<div class="heading">
+			<h4 title="The most active entries based on number of comments in the last 24 hours">Hot Topics</h4>
+		</div>
+
+<div>
+
+<p><a href="http://www.seriouseats.com/talk/2011/04/recipe-instructions-use-a-wooden-spoon-to.html" rel="nofollow">Recipe instructions: "Use a wooden spoon to ..."</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/talk/2011/04/recipe-instructions-use-a-wooden-spoon-to.html#comments" rel="nofollow">13 comments</a></p>
+
+<p><a href="http://www.seriouseats.com/2011/04/this-week-in-eating-out-20110402.html" rel="nofollow">This Week in Eating Out </a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/2011/04/this-week-in-eating-out-20110402.html#comments" rel="nofollow">0 comments</a></p>
+
+<p><a href="http://www.seriouseats.com/talk/2011/04/immersion-blender-electrical-issues.html" rel="nofollow">Immersion blender electrical issues</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/talk/2011/04/immersion-blender-electrical-issues.html#comments" rel="nofollow">3 comments</a></p>
+
+<p><a href="http://www.seriouseats.com/talk/2011/04/fat-free-halfhalf.html" rel="nofollow">"Fat Free" Half&Half???</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/talk/2011/04/fat-free-halfhalf.html#comments" rel="nofollow">12 comments</a></p>
+
+<p><a href="http://www.seriouseats.com/talk/2011/04/soy-milk-in-mac-cheese.html" rel="nofollow">Soy milk in mac & cheese?</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/talk/2011/04/soy-milk-in-mac-cheese.html#comments" rel="nofollow">8 comments</a></p>
+
+<p><a href="http://www.seriouseats.com/talk/2011/04/renaming-my-blog-the-winners.html" rel="nofollow">Renaming my Blog-The Winners.</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/talk/2011/04/renaming-my-blog-the-winners.html#comments" rel="nofollow">6 comments</a></p>
+
+</div>
+
+	</div><!-- /HOT TOPICS  -->
+
+</div><!-- /multiview  -->
+	
+			<!-- DAY OLD SPECIAL -->
+			<script src="http://www.seriouseats.com/js/sidebuckets.js?20110402204656" type="text/javascript"></script>
+			<!-- /DAY OLD SPECIAL -->
+			
+		
+		
+		</div><!-- end column 2 -->
+	
+			
+		<div id="threeColumn3">
+		
+			<div class="columnAdSpace">
+	<div class="columnAdTower">
+		<!-- FM 160x600 Right Sidebar MainSite Zone -->
+<script type='text/javascript' src='http://static.fmpub.net/zone/2388'></script>
+                <!-- FM 160x600 Right Sidebar MainSite Zone -->
+	</div>
+</div>
+
+			
+		</div><!-- end column 3 -->
+		<div class="clearer"></div>
+		
+	</div><!-- close content div -->
+
+<script src="http://www.seriouseats.com/js/bottombuckets.js?20110402204656" type="text/javascript"></script>
+
+
+
+<div id="footer" class="shortFooter">
+
+	<div id="footerColumn1" class="footer-column">
+		<h3 id="h-still-hungry">Still Hungry?</h3>
+		<ul>	
+			<li><a href="/?ref=footer">Home</a></li>
+			<li><a href="/talk/?ref=footer">Talk</a></li>
+			<li><a href="/recipes/?ref=footer">Recipes</a></li>
+			<li><a href="/eating_out/?ref=footer">Eating Out</a></li>
+			<li><a href="http://videos.seriouseats.com/?ref=footer">Videos</a></li>
+			<li><a href="/columns/?ref=footer">Columns</a></li>
+		</ul>
+	</div><!-- close footerColumn1 -->
+		
+	<div id="footerColumn2" class="footer-column">
+	   <h3 id="h-delivery">Delivery</h3>
+		<p>Subscribe to our email newsletters so you don't miss anything delicious!</p>
+
+   		<form action="http://www.seriouseats.com/cgi-bin/mte/plugins/ProfileMail/profilemail.cgi" enctype="multipart/form-data" id="profile_edit" method="post">
+   		    <input type="hidden" name="__mode" value="save">
+   		    <input type="hidden" name="blog_id" value="30">
+   			<input value="Your Email Address:" type="text" name="email" class="short" onblur="if(this.value==''){this.style.color=''; this.form.reset()}" onfocus="this.value = ''; this.style.color = '#000';" />
+   			<div class="formField">
+   				<input type="checkbox" name="serious_eats_weekly_newsletter" id="serious_eats_weekly_newsletter"  /><label for="serious_eats_weekly_newsletter"> Weekly Newsletter</label>
+   		 		<br />
+   				<input type="hidden" name="name" value="" />
+   				<input type="checkbox" name="serious_eats_recipe_newsletter" id="serious_eats_recipe_newsletter"  /><label for="serious_eats_recipe_newsletter"> Recipe Newsletter</label>
+   				<br />
+   				<input type="checkbox" name="serious_eats_new_york_newsletter" id="serious_eats_new_york_newsletter"  /><label for="serious_eats_new_york_newsletter"> New York Newsletter</label>
+   				<br />
+   				<input type="checkbox" name="serious_eats_drinks_newsletter" id="serious_eats_drinks_newsletter"  /><label for="serious_eats_drinks_newsletter"> Drinks Newsletter</label>
+   				
+   			</div>
+   			<input type="image" value="Subscribe" src="http://seriouseats.com/imagesV2/buttons/subscribe.png" width="82" height="24" border="0" alt="subscribe" />
+   		</form>
+
+
+	</div><!-- close footerColumn2 -->
+		
+	<div id="footerColumn3" class="footer-column">
+		<h3 id="h-kiss-the-chef">Kiss the Chef</h3>
+		<ul>	
+			<li><a href="/about/?ref=footer">About Us</a></li>
+			<li><a href="/contact/?ref=footer">Contact Us</a></li>
+			<li><a href="/advertise/?ref=footer">Advertise with Us</a></li>
+		</ul>
+		<h3 id="h-family-style">Family Style</h3>
+		<ul>
+			<li><a href="http://www.sliceny.com/?ref=sefooter">Slice</a></li>
+			<li><a href="http://www.ahamburgertoday.com/?ref=sefooter">A Hamburger Today</a></li>
+			<li><a href="http://newyork.seriouseats.com/?ref=sefooter">Serious Eats: New York</a></li>
+			<li><a href="http://photograzing.seriouseats.com/?ref=sefooter">Photograzing</a></li>
+		</ul>
+	</div><!-- close footerColumn3 -->
+
+	<div id="footerColumn4" class="footer-column">
+			<h3 id="h-feed-yourself">Feed Yourself</h3>
+			<p>Subscribe to our feeds:</p>
+			<p><a href="http://feeds.feedburner.com/seriouseatsfeaturesvideos">Serious Eats</a>, <a href="http://feeds.feedburner.com/seriouseatstalk">Talk</a>, <a href="http://feeds.feedburner.com/seriouseats/recipes">Recipes</a></p>
+			<br />
+			<p>Subscribe by email:</p>
+			<p><a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=595294&amp;loc=en_US">All of Serious Eats</a></p>
+	</div><!-- close footerColumn4 --><div class="clearer"></div>
+
+	<a href="http://twitter.com/seriouseats" id="footer-twitter">Follow us on Twitter!</a>
+
+</div><!-- close footer div -->
+
+
+
+<!-- footer links module -->
+<div id="footerLinks">
+<ul>
+<li><a href="http://www.seriouseats.com/faq/">FAQ</a></li>
+<li><a href="http://www.seriouseats.com/advertise/">Advertise</a></li>
+<li><a href="http://www.seriouseats.com/sitemap/">Sitemap</a></li>
+<li><a href="http://www.seriouseats.com/terms/">Terms of Use</a></li>
+<li><a href="http://www.seriouseats.com/privacy/">Privacy Policy</a></li>
+<li>&copy; 2006-2011</li>
+</ul>
+</div>
+<!-- /footer links module -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js'; type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-962456-1");
+pageTracker._setDomainName(".seriouseats.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<script type="text/javascript">
+function recordOutboundLink(link, category, action, outgoingPageviewLink) {
+  try {
+    pageTracker._trackEvent(category, action, outgoingPageviewLink);
+    pageTracker._trackPageview(outgoingPageviewLink);
+    //alert (outgoingPageviewLink);
+    //setTimeout('window.open(link.href)', 100); 
+    setTimeout('document.location = "' + link + '"', 100) 
+  }catch(err){}
+}
+</script>
+
+<!-- Start Amazon Impression Reporting Script -->
+<script type="text/javascript" src="http://www.assoc-amazon.com/s/impression-counter?tag=serieats-20&o=1"></script>
+<noscript><img src="http://www.assoc-amazon.com/s/noscript?tag=serieats-20" alt="" /></noscript>
+<!-- End Amazon Impression Reporting Script -->
+
+<!-- FM Tracking Pixel -->
+<script type='text/javascript' src='http://static.fmpub.net/site/seriouseats'></script>
+<!-- FM Tracking Pixel -->
+
+<!-- chartbeat -->
+<script type="text/javascript">
+var cbjspath = "static.chartbeat.com/js/chartbeat.js?uid=2384&domain=seriouseats.com";
+var cbjsprotocol = (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://");
+document.write(unescape("%3Cscript src='"+cbjsprotocol+cbjspath+"' type='text/javascript'%3E%3C/script%3E"))
+</script>
+<!-- chartbeat -->
+
+<!-- Addthis -->
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=seriouseats"></script>
+<!-- Addthis -->
+
+<!-- SkimLinks -->
+<script type="text/javascript" src="http://s.skimresources.com/js/3781X630295.skimlinks.js"></script>
+<!-- SkimLinks -->
+
+<!-- FM Custom Video Egg Zone Zone -->
+<script type='text/javascript' src='http://static.fmpub.net/zone/3947'></script>
+<!-- FM Custom Video Egg Zone Zone -->
+
+</div><!-- close container div -->
+
+<script type="text/javascript">
+  try {
+    pageTracker._trackEvent('Serious Eats_Individual_Pages', 'Outbrain_Pageview', 'http://www.seriouseats.com/2009/10/the-food-lab-science-of-how-to-cook-perfect-boiled-eggs.html');
+  }catch(err){}
+</script>
+
+</body>
+</html>

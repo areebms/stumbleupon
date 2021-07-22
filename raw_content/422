@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	NewsVoyager
+</title><meta id="metaKeywords" name="keywords" content="news voyager, newsvoyager, nichevoyager" /><meta id="metaDescription" name="description" /><meta id="metaSectionName" name="SectionName" /></meta>
+    <meta id="metaContentDate" name="ContentDate" content="11/02/2011" /></meta>
+    <meta id="metaItemID" name="ItemID" content="{DDBC0B74-CC20-4CC6-A7F4-6031FEA2AFBD}" /></meta>
+    <script type="text/javascript" src="/Scripts/NAACorp/jquery-1.5.2.js"></script>
+    <script type="text/javascript" src="/Scripts/NAACorp/jquery.color.js"></script>
+    <script type="text/javascript" src="/Scripts/NAACorp/html5.js"> </script>
+    <script type="text/javascript" src="/Scripts/NAACorp/cufon-yui.js"></script>
+    <script type="text/javascript" src="/Scripts/NAACorp/Webdings_400.font.js"></script>
+    <script type="text/javascript" src="/Scripts/NAACorp/JQueryGlobalFunctions.js"></script>
+    <script type="text/javascript" src="/Scripts/NAACorp/functions.js"></script>
+    <script type="text/javascript" src="/Scripts/NAACorp/ContentSlider.js"></script>
+    <link href="/Css/NaaCorp/Print.css" rel="stylesheet" type="text/css" media="print" /><meta id="primaryOpenGraphTag" property="og:image" content="/~/media/NAACorp/Images/Icons/new.ashx" /><link href="App_Themes/Corporate/Css/resets.css" type="text/css" rel="stylesheet" /><link href="App_Themes/Corporate/styles.css" type="text/css" rel="stylesheet" /></head>
+<body id="body" onload="trapEnter_FF();" onkeypress="return trapEnter_IE();">
+    <form name="form1" method="post" action="/newsvoyager.aspx" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMjY5NzMyNjIwD2QWBAIBD2QWCgIBDxYCHgdjb250ZW50BSduZXdzIHZveWFnZXIsIG5ld3N2b3lhZ2VyLCBuaWNoZXZveWFnZXJkAgIPFgIfAGRkAgUPFgIfAAUKMTEvMDIvMjAxMWQCBw8WAh8ABSZ7RERCQzBCNzQtQ0MyMC00Q0M2LUE3RjQtNjAzMUZFQTJBRkJEfWQCCw8WAh8ABSYvfi9tZWRpYS9OQUFDb3JwL0ltYWdlcy9JY29ucy9uZXcuYXNoeGQCAw8WBB4Gb25sb2FkBQ90cmFwRW50ZXJfRkYoKTseCm9ua2V5cHJlc3MFFnJldHVybiB0cmFwRW50ZXJfSUUoKTsWBAIBEGRkFggCBQ8WAh4HVmlzaWJsZWdkAgcPZBYCZg8PFgYeEl9fU2VhcmNoUmVzdWx0c1VybAUML1NlYXJjaC5hc3B4HhVfX0V4dHJhbmV0SG9tZVBhZ2VVcmwFCy9NeU5BQS5hc3B4Hh5fX01lbWJlcnNoaXBJbmZvcm1hdGlvblBhZ2VVcmwFGi9BYm91dC1OQUEvTWVtYmVyc2hpcC5hc3B4ZBYEAgIPFgIeBGhyZWYFCy9NeU5BQS5hc3B4FgICAQ8WAh8DaGQCAw9kFgQCAQ9kFgYCCA8WAh8HBU1odHRwOi8vbmV0Zm9ydW0ubmFhLm9yZy9lV2ViL0R5bmFtaWNQYWdlLmFzcHg/V2ViQ29kZT1mb3Jnb3RwYXNzd29yZCZTaXRlPU5BQWQCCg8WAh8HBUVodHRwOi8vbmV0Zm9ydW0ubmFhLm9yZy9lV2ViL0R5bmFtaWNQYWdlLmFzcHg/V2ViQ29kZT12ZXJpZnkmU2l0ZT1OQUFkAgwPFgIfBwUaL0Fib3V0LU5BQS9NZW1iZXJzaGlwLmFzcHhkAgMPZBYCAgMPFgIfBwULL015TkFBLmFzcHhkAgkPZBYCZg9kFgJmDxYCHwNoZAILD2QWAmYPZBYCZg9kFgYCAQ9kFgJmD2QWAmYPZBYCAgEPFgIeBFRleHQFIjxhIGhyZWY9Ii8iPkhvbWU8L2E+ID4gTmV3c1ZveWFnZXJkAgUPFgIeBXN0eWxlBQx3aWR0aDo0ODJweDtkAgcPFgIfA2dkAgMPFgIfCAWlFTxzY3JpcHQgc3JjPSJodHRwOi8vd3d3Lmdvb2dsZS1hbmFseXRpY3MuY29tL2dhLmpzIiB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPjwvc2NyaXB0Pg0KIA0KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPiANCmlmIChkb2N1bWVudC5nZXRFbGVtZW50c0J5VGFnTmFtZSkgew0KICAgICAgICAvLyBJbml0aWFsaXplIGV4dGVybmFsIGxpbmsgaGFuZGxlcnMNCiAgICAgICAgdmFyIGhyZWZzID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoImEiKTsNCiAgICAgICAgZm9yICh2YXIgbCA9IDA7IGwgPCBocmVmcy5sZW5ndGg7IGwrKykgew0KCQkJCS8vIHRyeSB7fSBjYXRjaHt9IGJsb2NrIGFkZGVkIGJ5IGVyaWt2b2xkIFZLSQ0KCQkJdHJ5ew0KCSAgICAgICAgICAgICAgICAvL3Byb3RvY29sLCBob3N0LCBob3N0bmFtZSwgcG9ydCwgcGF0aG5hbWUsIHNlYXJjaCwgaGFzaA0KCSAgICAgICAgICAgICAgICBpZiAoaHJlZnNbbF0ucHJvdG9jb2wgPT0gIm1haWx0bzoiKSB7DQoJICAgICAgICAgICAgICAgICAgICAgICAgc3RhcnRMaXN0ZW5pbmcoaHJlZnNbbF0sImNsaWNrIix0cmFja01haWx0byk7DQoJICAgICAgICAgICAgICAgIH0gZWxzZSBpZiAoaHJlZnNbbF0uaG9zdG5hbWUgPT0gbG9jYXRpb24uaG9zdCkgew0KCSAgICAgICAgICAgICAgICAgICAgICAgIHZhciBwYXRoID0gaHJlZnNbbF0ucGF0aG5hbWUgKyBocmVmc1tsXS5zZWFyY2g7DQoJCQkJCQkJdmFyIGlzRG9jID0gcGF0aC5tYXRjaCgvXC4oPzpkb2N8ZXBzfGpwZ3xwbmd8c3ZnfHhsc3xwcHR8cGRmfHhsc3x6aXB8dHh0fHZzZHx2eGR8anN8Y3NzfHJhcnxleGV8d21hfG1vdnxhdml8d212fG1wM3xhc2h4KSgkfFwmfFw/KS8pOwkJCQkJCQkNCgkgICAgICAgICAgICAgICAgICAgICAgICBpZiAoaXNEb2MpIHsJICAgICAgICAgICAgICAgICAgICAgICAgDQoJICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzdGFydExpc3RlbmluZyhocmVmc1tsXSwiY2xpY2siLHRyYWNrRXh0ZXJuYWxMaW5rcyk7DQoJICAgICAgICAgICAgICAgICAgICAgICAgfQ0KCSAgICAgICAgICAgICAgICB9IGVsc2UgaWYgKCFocmVmc1tsXS5ocmVmLm1hdGNoKC9eamF2YXNjcmlwdDovKSkgew0KCSAgICAgICAgICAgICAgICAgICAgICAgIHN0YXJ0TGlzdGVuaW5nKGhyZWZzW2xdLCJjbGljayIsdHJhY2tFeHRlcm5hbExpbmtzKTsNCgkgICAgICAgICAgICAgICAgfQ0KCQkJfQ0KCQkJY2F0Y2goZSl7DQoJCQkJCWNvbnRpbnVlOw0KCQkJfQ0KICAgICAgICB9DQp9DQogDQpmdW5jdGlvbiBzdGFydExpc3RlbmluZyAob2JqLGV2bnQsZnVuYykgew0KICAgICAgICBpZiAob2JqLmFkZEV2ZW50TGlzdGVuZXIpIHsNCiAgICAgICAgICAgICAgICBvYmouYWRkRXZlbnRMaXN0ZW5lcihldm50LGZ1bmMsZmFsc2UpOw0KICAgICAgICB9IGVsc2UgaWYgKG9iai5hdHRhY2hFdmVudCkgew0KICAgICAgICAgICAgICAgIG9iai5hdHRhY2hFdmVudCgib24iICsgZXZudCxmdW5jKTsNCiAgICAgICAgfQ0KfQ0KIA0KZnVuY3Rpb24gdHJhY2tNYWlsdG8gKGV2bnQpIHsNCiAgICAgICAgdmFyIGhyZWYgPSAoZXZudC5zcmNFbGVtZW50KSA/IGV2bnQuc3JjRWxlbWVudC5ocmVmIDogdGhpcy5ocmVmOw0KICAgICAgICB2YXIgbWFpbHRvID0gIi9tYWlsdG8vIiArIGhyZWYuc3Vic3RyaW5nKDcpOw0KICAgICAgICBpZiAodHlwZW9mKHBhZ2VUcmFja2VyKSA9PSAib2JqZWN0IikgcGFnZVRyYWNrZXIuX3RyYWNrUGFnZXZpZXcobWFpbHRvKTsNCn0NCiANCmZ1bmN0aW9uIHRyYWNrRXh0ZXJuYWxMaW5rcyAoZXZudCkgew0KICAgICAgICB2YXIgZSA9IChldm50LnNyY0VsZW1lbnQpID8gZXZudC5zcmNFbGVtZW50IDogdGhpczsNCiAgICAgICAgd2hpbGUgKGUudGFnTmFtZSAhPSAiQSIpIHsNCiAgICAgICAgICAgICAgICBlID0gZS5wYXJlbnROb2RlOw0KICAgICAgICB9DQogICAgICAgIHZhciBsbmsgPSAoZS5wYXRobmFtZS5jaGFyQXQoMCkgPT0gIi8iKSA/IGUucGF0aG5hbWUgOiAiLyIgKyBlLnBhdGhuYW1lOw0KICAgICAgICBpZiAoZS5zZWFyY2ggJiYgZS5wYXRobmFtZS5pbmRleE9mKGUuc2VhcmNoKSA9PSAtMSkgbG5rICs9IGUuc2VhcmNoOw0KICAgICAgICBpZiAoZS5ob3N0bmFtZSAhPSBsb2NhdGlvbi5ob3N0KSBsbmsgPSAiRXh0ZXJuYWw6ICIgKyBlLmhvc3RuYW1lICsgbG5rOw0KICAgICAgICB2YXIgaXNEb2MgPSBsbmsubWF0Y2goL1wuKD86ZG9jfGVwc3xqcGd8cG5nfHN2Z3x4bHN8cHB0fHBkZnx4bHN8emlwfHR4dHx2c2R8dnhkfGpzfGNzc3xyYXJ8ZXhlfHdtYXxtb3Z8YXZpfHdtdnxtcDN8YXNoeCkoJHxcJnxcPykvKTsgICAgICAgDQoJICAgIGlmIChpc0RvYykgICBsbmsgPSAiRG93bmxvYWQ6ICIgKyBsbms7DQoJDQogICAgICAgIGlmICh0eXBlb2YocGFnZVRyYWNrZXIpID09ICJvYmplY3QiKSBwYWdlVHJhY2tlci5fdHJhY2tQYWdldmlldyhsbmspOyANCiAgICAgICAgDQogICAgICAgLy8gcGFnZVRyYWNrZXIuX3RyYWNrUGFnZXZpZXcobG5rKTsgDQogICAgICAgIA0KfQ0KIA0KdmFyIHBhZ2VUcmFja2VyOw0Kc2V0VGltZW91dCgnc3RhcnRHQSgpOycsIDUwMCk7DQpmdW5jdGlvbiBzdGFydEdBKCkNCnsNCnBhZ2VUcmFja2VyID0gX2dhdC5fZ2V0VHJhY2tlcigiVUEtOTkyOTIwMy0xIik7DQpwYWdlVHJhY2tlci5faW5pdERhdGEoKTsNCnBhZ2VUcmFja2VyLl90cmFja1BhZ2V2aWV3KCk7DQp9DQo8L3NjcmlwdD5kGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBRNjdGwwMiRjaGtSZW1lbWJlck1lU0ZxeMC8MhlczkYC8v+OpTy2XDw=" />
+</div>
+
+
+<script src="/ScriptResource.axd?d=udG-TLo5YeVaHPnToF3OGX_4_8S2qyiaxRp0vkf6cIyuL7NeKP6XEQHsj2EKUd4JtOcCwytH0s6Pmy1tB5JR7XbF1e5EzhPPnh5XvJ360EP8oRNskmkzzbN9nWCEmPC8Bc0FQzKgRMHYC8XM_H7vuOBhyfo1&amp;t=fffffffff9d85fa6" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBQLM7Mn6BAKpqfeTDAK7us+1BQL9sbHFDwLZmrmuD8Zn0zROBXhMt1Ac7dcfGWI6iIsp" />
+</div>
+    
+
+    
+
+
+
+
+<div class="global-litebox-overlay">
+
+	<div class="global-litebox">
+    	<div class="global-litebox-x">X</div>
+          
+    </div>
+
+</div>
+
+
+<!-- HEADER -->
+
+<div class="header">
+
+	<div class="header-head">
+    
+    	<header>
+            
+            <!-- MAIN LOGO -->
+            <div class="header-head-logo"><a href="/"><img src="~/media/NAACorp/Images/Logos/NAA-logo.ashx" alt="Newspaper Association of America" width="337" height="54" /></a></div>
+            <!-- /MAIN LOGO -->
+            
+            <!-- SECONDARY NAV -->
+            <div class="header-head-secnav"><ul><li class="white"><a href="http://www.AmericanPressInstitute.org" target="_blank"><span class="global-arrow">3</span>American Press Institute</a></li><li class="white">
+                 | 
+              <a href="http://www.newspapermedia.com" target="_blank"><span class="global-arrow">3</span>NewspaperMedia.com</a></li><li><a href="/About-NAA/Events.aspx">Events</a></li><li>
+                 | 
+              <a href="/About-NAA/Contact-Us.aspx">Contact Us</a></li></ul></div>
+            
+            <!-- /SECONDARY NAV -->
+            
+            <!--  SEARCH -->
+        <div class="header-head-search">
+            	<input id="search-box" name="search-box" type="text" class="header-head-search-field"  onkeypress="NAA_SearchText(event,'/Search.aspx')"> <input name="Go" type="button" value="Go" id="Go" class="header-head-search-button" onclick="NAA_Search('search-box','/Search.aspx')">
+          </div>
+            <!-- /SEARCH -->
+            
+            <!--  SIGN-IN -->
+            
+            
+            <a href="/MyNAA.aspx" id="ctl02_hrefSignButton" class="header-head-signin">sign in to my naa <span class="global-arrow">6</span></a>
+            
+            <div id="ctl02_pnlSignBox" class="header-head-signinbox">
+	           
+            
+            	<div class="header-head-signinbox-left">
+            	    <input name="ctl02$txtUsername" type="text" id="ctl02_txtUsername" class="header-head-signinbox-left-txtfield username" onblur="ResetPasswordTextBox(this)" onfocus="ClearPasswordTextBox(this)" /><input name="ctl02$txtPassword" type="password" id="ctl02_txtPassword" class="header-head-signinbox-left-txtfield password" onblur="ResetPasswordTextBox(this)" onfocus="ClearPasswordTextBox(this)" />
+              </div>
+            	<div class="header-head-signinbox-right">
+            	<input type="submit" name="ctl02$btnSignIn" value="Sign In" id="ctl02_btnSignIn" class="header-head-signinbox-right-signinbtn" />
+                </div>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                            <td><input id="ctl02_chkRememberMe" type="checkbox" name="ctl02$chkRememberMe" /></td>
+                            <td>Remember Me | <a href="http://netforum.naa.org/eWeb/DynamicPage.aspx?WebCode=forgotpassword&Site=NAA" id="ctl02_hrefRetrievePassword">Retrieve Password</a></td>
+                      </tr>
+                      <tr>
+                            <td colspan="2"><a href="http://netforum.naa.org/eWeb/DynamicPage.aspx?WebCode=verify&Site=NAA" id="ctl02_hrefCheckMembership">Check your company's membership status</a></td>
+                      </tr>
+                      <tr>
+                            <td colspan="2"><a href="/About-NAA/Membership.aspx" id="ctl02_hrefLearnAboutMembership">Learn about NAA Membership</a></td>
+                      </tr>
+                </table>
+                
+                
+          
+</div>
+            <!-- /SIGN-IN -->
+            
+    	</header>
+        
+    </div>
+
+</div>
+<!-- /HEADER -->
+
+<!-- TOPNAV -->
+
+
+
+
+<div class="topnav">
+
+	<div class="topnav-nav">
+	  <div class="topnav-nav-navcont">
+	    <nav>
+	      <ul class="topnav-nav-navitems"><li class="blue"><a href="/Topics-and-Tools.aspx">Topics & Tools</a><ul><li><a href="/Topics-and-Tools/Advertising.aspx">Advertising</a></li><li><a href="/Topics-and-Tools/Audience-and-Circulation.aspx">Audience & Circulation</a></li><li><a href="/Topics-and-Tools/Digital-Media.aspx">Digital Media</a></li></ul></li><li class="orange"><a href="/Trends-and-Numbers.aspx">Trends & Numbers</a><ul><li><a href="/Trends-and-Numbers/Advertising-Expenditures/Annual-All-Categories.aspx">Advertising Expenditures</a></li><li><a href="/Trends-and-Numbers/Circulation/Circulation-Expenditures.aspx">Circulation</a></li><li><a href="/Trends-and-Numbers/Composition-Profiles/Average-Issue-Demographic-Composition.aspx">Composition Profiles</a></li><li><a href="/Trends-and-Numbers/Newspaper-Websites/Newspaper-Web-Audience.aspx">Newspaper Websites</a></li><li><a href="/Trends-and-Numbers/Readership/Age-and-Gender.aspx">Readership</a></li><li><a href="/Trends-and-Numbers/Research.aspx">Research</a></li></ul></li><li class="violet"><a href="/Public-Policy.aspx">Public Policy</a><ul><li><a href="/Public-Policy/Government-Affairs.aspx">Government Affairs</a></li><li><a href="/Public-Policy/Legal-Affairs.aspx">Legal Affairs</a></li></ul></li><li class="green"><a href="/News-and-Media.aspx">News & Media</a><ul><li><a href="/News-and-Media/Press-Center.aspx">Press Center</a></li><li><a href="/News-and-Media/PRESSTIME-Update.aspx">PRESSTIME Update</a></li><li><a href="/News-and-Media/NAA-on-Your-Side.aspx">NAA on Your Side</a></li><li><a href="http://community.naa.org/blogs">Blogs</a></li><li><a href="/News-and-Media/Multimedia.aspx">Multimedia</a></li><li><a href="/News-and-Media/RSS-Feeds.aspx">RSS Feeds</a></li></ul></li><li class="maroon"><a href="/About-NAA.aspx">About NAA</a><ul><li><a href="/About-NAA/Membership.aspx">Membership</a></li><li><a href="/About-NAA/Events.aspx">Events</a></li><li><a href="/About-NAA/Advertise-with-NAA.aspx">Advertise with NAA</a></li><li><a href="/About-NAA/Newspapers-and-Sustainability.aspx">Newspapers & Sustainability</a></li><li><a href="/About-NAA/Board-of-Directors.aspx">Board of Directors</a></li><li><a href="/About-NAA/Staff-Directory.aspx">Staff Directory</a></li><li><a href="/About-NAA/Contact-Us.aspx">Contact Us</a></li><li><a href="/About-NAA/American-Press-Institute.aspx">American Press Institute</a></li></ul></li><li class="skyblue"><a href="http://mediaXchange.naa.org" target="_blank" class="media"> </a><ul><li class="topnav-nav-navitems-blockcontent">
+		<p style="FONT-SIZE: 14px">
+      <a href="http://mediaxchange.naa.org/" target="_blank">NAA MEDIAXCHANGE 2013<br />April 14-17, Orlando, Fla.</a> </p>
+    <hr />
+    <p style="FONT-SIZE: 14px">
+      <a href="/About-NAA/Events/Archives/2012/NAAmediaXchange/2012-NAA-mediaXchange-Hub.aspx">NAA MEDIAXCHANGE 2012<br />Archive &amp; Coverage</a> </p></li></ul></li></ul>  
+	      
+        </nav>
+      </div>
+	</div>
+
+</div>
+
+
+<!-- /TOPNAV -->
+
+<!-- CONTENT -->
+<div class="content">
+	
+<div class="content-cont">
+
+    <!--googleoff: index-->
+        
+        <div id="content_0_ctl00_pnlBreadcrumb">
+	
+     <div class="content-bread">
+         <a href="/">Home</a> > NewsVoyager
+         
+         
+         <div class="content-bread-share">
+             <div class="content-bread-share">
+                 
+                 
+                 
+             </div>
+     </div>
+     
+     
+ 
+</div>
+ 
+    
+ 
+        
+    <!--googleon: index-->
+    
+    <div id="content_0_divContentLeft" class="content-cont-left">
+        <ul class="content-cont-left-nav" xmlns:naa="http://www.naa.org/naa"><li class="selected2"></li></ul>
+        
+        
+    </div>
+    <div id="content_0_divContentMiddle" class="content-cont-middle" style="width:482px;">
+    
+    
+        <h1>NEWSVOYAGER</h1>
+		<p>The NAA website you requested, NewsVoyager.com, has been discontinued. </p>
+    <p>For information on newspapers in the United States, the website <a title="http://www.50states.com/news/" href="http://www.50states.com/news/" target="_blank">50states.com</a> offers a searchable database. In addition, <a title="http://www.newspapers.com/" href="http://www.newspapers.com/" target="_blank">Newspapers.com</a> maintains a similar database, or you can contact any of the 50 state press associations. NAA maintains a listing of <b><a title="http://www.naa.org/Public-Policy/Government-Affairs/State-Press-Associations.aspx" href="http://www.naa.org/Public-Policy/Government-Affairs/State-Press-Associations.aspx">state and regional press associations</a></b> on this website. </p>
+    <p>You may also try searching Google or using a search engine to locate lists of newspapers and newspaper websites in the United States, Canada or internationally.</p>
+    </div>
+    <div id="content_0_divContentRight" class="content-cont-right">
+        
+
+         
+    </div>
+    
+</div>
+</div>
+<!-- /CONTENT -->
+
+<!-- FOOTER -->
+<div class="footer"><div class="footer-foot"><div class="footer-foot-connectleftborder"></div><ul class="footer-foot-column"><li><h5><a href="/Topics-and-Tools.aspx">Topics & Tools</a></h5></li><li><a href="/Topics-and-Tools/Advertising.aspx">Advertising</a></li><li><a href="/Topics-and-Tools/Audience-and-Circulation.aspx">Audience & Circulation</a></li><li><a href="/Topics-and-Tools/Digital-Media.aspx">Digital Media</a></li><li></li></ul><ul class="footer-foot-column"><li><h5><a href="/Trends-and-Numbers.aspx">Trends & Numbers</a></h5></li><li><a href="/Trends-and-Numbers/Advertising-Expenditures/Annual-All-Categories.aspx">Advertising Expenditures</a></li><li><a href="/Trends-and-Numbers/Circulation/Circulation-Expenditures.aspx">Circulation</a></li><li><a href="/Trends-and-Numbers/Composition-Profiles/Average-Issue-Demographic-Composition.aspx">Composition Profiles</a></li><li><a href="/Trends-and-Numbers/Newspaper-Websites/Newspaper-Web-Audience.aspx">Newspaper Websites</a></li><li><a href="/Trends-and-Numbers/Readership/Age-and-Gender.aspx">Readership</a></li><li><a href="/Trends-and-Numbers/Research.aspx">Research</a></li></ul><ul class="footer-foot-column"><li><h5><a href="/Public-Policy.aspx">Public Policy</a></h5></li><li><a href="/Public-Policy/Government-Affairs.aspx">Government Affairs</a></li><li><a href="/Public-Policy/Legal-Affairs.aspx">Legal Affairs</a></li></ul><ul class="footer-foot-column"><li><h5><a href="/News-and-Media.aspx">News & Media</a></h5></li><li><a href="/News-and-Media/Press-Center.aspx">Press Center</a></li><li><a href="/News-and-Media/PRESSTIME-Update.aspx">PRESSTIME Update</a></li><li><a href="/News-and-Media/NAA-on-Your-Side.aspx">NAA on Your Side</a></li><li><a href="http://community.naa.org/blogs">Blogs</a></li><li><a href="/News-and-Media/Multimedia.aspx">Multimedia</a></li><li><a href="/News-and-Media/RSS-Feeds.aspx">RSS Feeds</a></li></ul><ul class="footer-foot-column"><li><h5><a href="/About-NAA.aspx">About NAA</a></h5></li><li><a href="/About-NAA/Membership.aspx">Membership</a></li><li><a href="/About-NAA/Events.aspx">Events</a></li><li><a href="/About-NAA/Advertise-with-NAA.aspx">Advertise with NAA</a></li><li><a href="/About-NAA/Newspapers-and-Sustainability.aspx">Newspapers & Sustainability</a></li><li><a href="/About-NAA/Board-of-Directors.aspx">Board of Directors</a></li><li><a href="/About-NAA/Staff-Directory.aspx">Staff Directory</a></li><li><a href="/About-NAA/Contact-Us.aspx">Contact Us</a></li></ul><ul class="footer-foot-column"><li><h5>Quick Links</h5></li><li><a href="http://www.AmericanPressInstitute.org" target="_blank">American Press Institute</a></li><li><a href="http://www.newspapermedia.com" target="_blank">NewspaperMedia.com</a></li><li><a href="http://mediaXchange.naa.org" target="_blank">NAA mediaXchange</a></li><li><a href="http://www.nnnlp.com/" target="_blank">Newspaper National Network</a></li><li><a href="http://www.newspapercareerbank.com/" target="_blank">Newspaper CareerBank</a></li><li><a href="http://naavendorlinks.com/" target="_blank">VendorLinks</a></li><li><a href="http://netforum.naa.org/eweb/DynamicPage.aspx?Site=NAA&amp;WebKey=433e9741-6cfa-4ce4-b172-3f1c905a9deb">All NAA Products</a></li></ul><div class="footer-foot-connectcolumn">
+		<div class="footer-foot-connectcolumn">
+      
+<strong>CONNECT</strong> 
+
+<ul class="footer-foot-connectcolumn-icons">
+
+<li><a href="http://www.facebook.com/newspaperassociationofamerica" target="_blank"><img width="36" height="36" alt="Find us on Facebook" src="~/media/NAACorp/Images/Icons/facebook-footer.ashx?w=36&amp;h=36&amp;as=1" /></a>  </li>
+
+<li><a href="http://www.twitter.com/NAAupdates" shape="rect" target="_blank"><img alt="Follow NAAupdates on Twitter" src="http://twitter-badges.s3.amazonaws.com/t_logo-a.png" /></a> </li>
+
+<li><a href="http://linkd.in/NewspaperAssociationOfAmerica" shape="rect" target="_blank"><img width="36" height="36" alt="Join the conversation on LinkedIn" src="~/media/NAACorp/Images/Icons/linkedin-footer.ashx?w=36&amp;h=36&amp;as=1" /></a>  </li>
+
+<li><a href="http://plus.google.com/107109731846651703829" shape="rect" target="_blank"><img width="36" height="36" alt="Circle us on Google+" src="~/media/NAACorp/Images/Icons/googleplus-footer.ashx?w=36&amp;h=36&amp;as=1" /></a>  </li>
+
+
+</ul>
+
+<strong>SUBSCRIBE</strong> 
+
+<ul class="footer-foot-connectcolumn-icons">
+<li><a href="http://www.youtube.com/user/NewspaperAssnAmerica" shape="rect" target="_blank"><img width="36" height="36" alt="NAA YouTube Channel" src="~/media/NAACorp/Images/Icons/youtube-footer.ashx?w=36&amp;h=36&amp;as=1" /></a> </li>
+
+<li><a href="/News-and-Media/RSS-Feeds.aspx" shape="rect"><img width="36" height="36" alt="RSS Feeds from NAA" src="~/media/NAACorp/Images/Icons/rss-footer.ashx?w=36&amp;h=36&amp;as=1" /></a></li>
+
+</ul>
+
+</div>
+</div><div class="footer-foot-copy">
+		<p style="FONT-SIZE: 11px">© 2012 Newspaper Association of America™. All rights reserved.  <a href="/About-NAA/Privacy-Policy.aspx">Privacy Policy</a>  |   <a href="/About-NAA/Terms-of-Service.aspx">Terms of Service</a></p>
+</div></div></div>
+<!-- /FOOTER -->
+
+
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+    <script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>
+ 
+<script type="text/javascript"> 
+if (document.getElementsByTagName) {
+        // Initialize external link handlers
+        var hrefs = document.getElementsByTagName("a");
+        for (var l = 0; l < hrefs.length; l++) {
+				// try {} catch{} block added by erikvold VKI
+			try{
+	                //protocol, host, hostname, port, pathname, search, hash
+	                if (hrefs[l].protocol == "mailto:") {
+	                        startListening(hrefs[l],"click",trackMailto);
+	                } else if (hrefs[l].hostname == location.host) {
+	                        var path = hrefs[l].pathname + hrefs[l].search;
+							var isDoc = path.match(/\.(?:doc|eps|jpg|png|svg|xls|ppt|pdf|xls|zip|txt|vsd|vxd|js|css|rar|exe|wma|mov|avi|wmv|mp3|ashx)($|\&|\?)/);							
+	                        if (isDoc) {	                        
+	                                startListening(hrefs[l],"click",trackExternalLinks);
+	                        }
+	                } else if (!hrefs[l].href.match(/^javascript:/)) {
+	                        startListening(hrefs[l],"click",trackExternalLinks);
+	                }
+			}
+			catch(e){
+					continue;
+			}
+        }
+}
+ 
+function startListening (obj,evnt,func) {
+        if (obj.addEventListener) {
+                obj.addEventListener(evnt,func,false);
+        } else if (obj.attachEvent) {
+                obj.attachEvent("on" + evnt,func);
+        }
+}
+ 
+function trackMailto (evnt) {
+        var href = (evnt.srcElement) ? evnt.srcElement.href : this.href;
+        var mailto = "/mailto/" + href.substring(7);
+        if (typeof(pageTracker) == "object") pageTracker._trackPageview(mailto);
+}
+ 
+function trackExternalLinks (evnt) {
+        var e = (evnt.srcElement) ? evnt.srcElement : this;
+        while (e.tagName != "A") {
+                e = e.parentNode;
+        }
+        var lnk = (e.pathname.charAt(0) == "/") ? e.pathname : "/" + e.pathname;
+        if (e.search && e.pathname.indexOf(e.search) == -1) lnk += e.search;
+        if (e.hostname != location.host) lnk = "External: " + e.hostname + lnk;
+        var isDoc = lnk.match(/\.(?:doc|eps|jpg|png|svg|xls|ppt|pdf|xls|zip|txt|vsd|vxd|js|css|rar|exe|wma|mov|avi|wmv|mp3|ashx)($|\&|\?)/);       
+	    if (isDoc)   lnk = "Download: " + lnk;
+	
+        if (typeof(pageTracker) == "object") pageTracker._trackPageview(lnk); 
+        
+       // pageTracker._trackPageview(lnk); 
+        
+}
+ 
+var pageTracker;
+setTimeout('startGA();', 500);
+function startGA()
+{
+pageTracker = _gat._getTracker("UA-9929203-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+}
+</script>
+</body>
+</html>

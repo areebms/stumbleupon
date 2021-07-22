@@ -1,0 +1,1039 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>thevisualMD.com – Health Centers - Child Health - Infant Nutrition </title>
+<meta name="description" content="Infant nutrition plays a key role in a child&#39;s health and optimal growth, especially in the first year.">
+<meta name="keywords" content="infant nutrition, baby nutrition, breastfeded child, newborn, protein, size growth, growth of skeleton system, lactose, brain growth, omega3, essential vitamins, immune system development, baby immune, baby health benefits, childbirth, newborn, mother, breastfeeding, casein, whey, DHA, breast milk, infant formula, behavioral development, brain development, visual acuity, infant nutritional need">
+<meta name="date" content="2012-02-21 11:00:10"> 
+<meta http-equiv="Last-Update" content="2012-02-21 11:00:10">
+<base href="http://www.thevisualmd.com/">
+<link rel="canonical" href="health_centers/child_health/infant_nutrition/infant_nutrition_video" />
+<link href="css/general.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="css/bm.css" media="screen" />
+
+<link href="css/healthcentersreadmore2.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+
+<script type="text/javascript" src="js/sexy-bookmarks-public.js"></script>
+
+
+
+<script type="text/javascript" src="js/healthcentersreadmore.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.pack.js"></script>
+<script>
+
+
+function pimg()
+{
+    this.xOffset = 5;
+    this.yOffset = 50;
+        
+    $(".pimg").hover(function (e)
+    {        
+        this.img_title = this.title;
+        this.title = "";
+        var img_src = $(this).attr('img_src');
+        var desc = "";//"(this.img_title != "") ? "<h3>" + this.img_title + "</h3>" : "";
+        var image = (img_src) ? img_src : this.src;
+        if (img_src!='/' && img_src!='')$("body").append("<div id='pimg'><img src='/thumb.php?img=" + image + "' alt='Image preview' height='136' />" + desc + "</div>");        
+        //$("#pimg").css("top", (e.pageY - xOffset-140) + "px").css("left", (e.pageX + yOffset) + "px");                
+        $("#pimg").css("top", ($(this).offset().top-154) + "px").css("left", ($(this).offset().left) + "px");        
+        $("#pimg").show();
+    }, function ()
+    {
+        this.title = this.img_title;
+        $("#pimg").remove();
+
+    });
+    /*$(".pimg").mousemove(function (e)
+    {        
+        $("#pimg").css("top", (e.pageY - xOffset-140) + "px").css("left", (e.pageX + yOffset) + "px");
+    });*/
+};
+function tooltip()
+    {
+    this.xOffset = 5;
+    this.yOffset = 50;
+        
+    $(".tooltip").hover(function (e)
+    {        
+        $.ajax({
+                 type: "GET",
+                 url: "dir/dir_health_guide2.php",
+                 data: "search="+$(this).text(),
+                 dataType: "xml",
+                 success: function(xml) {
+        var desc = "";//"(this.img_title != "") ? "<h3>" + this.img_title + "</h3>" : "";
+        //var image = (img_src) ? img_src : this.src;
+        var image;
+        $(xml).find('item:first').each(function(){
+            image=$(this).attr('img');
+        });
+        if (image)$("body").append("<div id='pimg'><img src='/thumb.php?img=" + image + "' alt='Image preview' height='136' />" + desc + "</div>");        
+        $("#pimg").css("top", (e.pageY - xOffset-140) + "px").css("left", (e.pageX + yOffset) + "px");                
+        //$("#pimg").css("top", ($(this).offset().top-154) + "px").css("left", ($(this).offset().left) + "px");        
+        $("#pimg").show();
+                 }   
+                 });
+        
+        
+    }, function ()
+    {
+        //this.title = this.img_title;
+        $("#pimg").remove();
+
+    });
+    /*$(".pimg").mousemove(function (e)
+    {        
+        $("#pimg").css("top", (e.pageY - xOffset-140) + "px").css("left", (e.pageX + yOffset) + "px");
+    });*/
+
+}
+
+
+jQuery(document).ready(function() {
+	jQuery('#mycarousel').css('display','block');
+    jQuery('#mycarousel').jcarousel({
+        visible: 5,
+		start: 1,
+        buttonChapter: '<div class="carinfo">CHAPTER<br><span style="color:#990000;font-size:16px;">1</span> of <span style=\"font-size:16px;\">14</span></div>'    
+    });
+	rlinks(0,398,4666);
+    pimg();
+    tooltip();
+    
+    
+    $('#thankWindowBanner img').width(165).height(45);
+    var sc=$('#thankWindow script').text();
+    $('#thankWindow script').remove();    
+    $('#lthankwindow').append($('#thankWindow').html());
+    $('#thankWindow').remove();
+    //$('#lthankwindow').append('<script>'+sc+'<\/script>');
+    
+});
+function showhint(a, b, c, d){
+return;
+}
+</script>
+<link rel="stylesheet" type="text/css" href="css/new/jquery.jcarousel.css" />
+<link rel="stylesheet" type="text/css" href="css/new/skin_health_guide2.css" />
+<style type="text/css">
+<!--
+/**
+ * Overwrite for having a carousel with dynamic width.
+ */
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    width: 700px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width: 560px;
+    margin-left:137px;
+}
+
+#hcReadMoreCarussel{
+	height:72px;
+}
+-->
+</style>
+<script type="text/javascript" src="js/thickbox.js"></script>
+<script src="js/jquery.cookie.js" type="text/javascript"></script>
+<script src="js/jquery.textresizer.js" type="text/javascript"></script>    
+
+<link rel="stylesheet" href="css/thickbox.css" type="text/css" media="screen" />
+
+
+<script language="javascript" type="text/javascript">
+
+function pop_details(url, title, dim) {
+	newwindow=window.open(url,title,dim);
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+
+
+</script>
+
+
+
+</head>
+<body>
+
+<div class="subscriptionDropDown">
+          <div class="container">
+          <div id="topSubscriber">
+                    <input name="topSubscribe" type="text" class="inputBox" id="inputTopSubscriber" value="Subscribe" maxlength="300" />
+                    <div id="topSubscribeBtn"><img src="img/general/sb-btn.jpg" name="ssGoBtn" width="40" height="21" id="ssGoBtn" alt="Go"/></div>
+          </div>
+          <div class="facebook">
+            <a href="http://www.facebook.com/visualmd" target="_blank"><img src="images/fb.jpg"/></a>
+          </div>
+          <div class="thanksForSubscribe2">If you have trouble receiving our Newsletter, join us on Facebook.</div>
+          <div class="thanksForSubscribe"> Thank you for subscribing to our Newsletter!<br />Check your spam folder if you have trouble receiving our Newsletter</div>
+          
+          </div>
+          
+</div>
+<div class="container">
+          <style type="text/css">@import "js/autocomplete/styles.css";</style>
+<script type="text/javascript" src="js/autocomplete/jquery.autocomplete.js"></script> 
+<script>
+$(document).ready(function(){
+    $('#input-sb').autocomplete({ 
+    		    serviceUrl:'generateac.php',
+    		    minChars:2, 
+    		    maxHeight:400,
+    		    width:650
+    		    // callback function:		    
+    });	
+    $('#input-sb2').autocomplete({ 
+    		    serviceUrl:'generateac.php',
+    		    minChars:2, 
+    		    maxHeight:400,
+    		    width:650
+    		    // callback function:		    
+    });	
+});
+</script>
+<script src="js/jquery.timer.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+
+	
+    
+    /*$('#sbSendFBtn').hover(function(){$(this).attr('src','img/general/sb-btn-overlay.jpg');},function(){$(this).attr('src','img/general/sb-btn.jpg');});*/
+    $('#sbSendFBtn').click(function(){
+       if (checkemail($('#friend_email').attr('value')) && checkemail($('#your_email').attr('value'))){
+		$.post("sendtofriend.php", { email: $('#friend_email').attr('value'),from: $('#your_email').attr('value'),name: $('#friend_name').attr('value'), url: $('#url').attr('value') });
+        $.post("subscribe2.php", { email: $('#friend_email').attr('value') });
+        $.post("subscribe3.php", { email: $('#your_email').attr('value') });
+        
+        $('#sendtofriend').slideUp('normal');
+        
+        $('#sendtofriend2').fadeIn();
+        $.timer(10000, function (timer) {        
+            $('#sendtofriend2').fadeOut();
+        });
+        } 
+    });
+    
+
+    
+    $('#friend_email').keyup(function(e) {
+      //alert(e.keyCode);
+      if(e.keyCode == 13)$('#sbSendFBtn').click();
+	})
+    $('#friend_email').click(function(){
+        if ($('#friend_email').attr('value')=="Please enter your Friend's email address")$('#friend_email').attr('value','');
+    })
+    $('#friend_name').click(function(){
+        if ($('#friend_name').attr('value')=="Please enter your Friend's name")$('#friend_name').attr('value','');
+    })
+    $('#your_email').click(function(){
+        if ($('#your_email').attr('value')=="Please enter your email address")$('#your_email').attr('value','');
+    })
+    $('#sbUpGoBtn').hover(function(){$(this).attr('src','img/search-button-over.jpg');},function(){$(this).attr('src','img/search-button-up.jpg');});
+    $('#sbUpX').hover(function(){$(this).attr('src','img/x-over.png');},function(){$(this).attr('src','img/x-up.png');});
+    $('#sbUpX_blog').hover(function(){$(this).attr('src','img/x-over.png');},function(){$(this).attr('src','img/x-up.png');});
+    $('#sbBottomGoBtn').hover(function(){$(this).attr('src','img/search-button-over.jpg');},function(){$(this).attr('src','img/search-button-up.jpg');});
+    $('#sbBottomX').hover(function(){$(this).attr('src','img/x-over.png');},function(){$(this).attr('src','img/x-up.png');});
+    $('.rss').hover(function(){$(this).attr('src','img/rss-over.png');},function(){$(this).attr('src','img/rss-up.png');});
+    $('.fbg').hover(function(){$(this).attr('src','img/FB_over.png');},function(){$(this).attr('src','img/FB_up.png');});
+    $('.twg').hover(function(){$(this).attr('src','img/tw_over.png');},function(){$(this).attr('src','img/tw_up.png');});
+    $('#biography').hover(function(){$(this).attr('src','img/biography_over.png');},function(){$(this).attr('src','img/biography_up.png');});
+    $('#biography').click(function(){
+        addoverlay();
+        $('#biographybox').slideDown('normal');
+    })
+	$('#input-sb').click(function(){
+		if ($(this).attr('value')=="Search TheVisualMD.com" || $(this).attr('value')=="Search VIDEOS of TheVisualMD")$(this).attr('value','');
+	});
+    /*
+	$('#input-sb').blur(function(){
+		if ($(this).attr('value')==""){
+			if ($('#visualisation').css('font-weight')=='bold')$(this).attr('value','Search VISUALIZATIONS of TheVisualMD');
+			else $(this).attr('value','Search VIDEOS of TheVisualMD');	
+		}
+	});*/
+    $('#sbUpX').click(function(){
+	   $('#input-sb').attr('value','').focus();
+	})
+    $('#sbUpX_blog').click(function(){
+	   $('#input-sb_blog').attr('value','').focus();
+	})
+	$('#sbBottomX').click(function(){
+	   $('#input-sb2').attr('value','').focus();
+	})
+    $('#input-sb2').click(function(){
+		if ($(this).attr('value')=="Search TheVisualMD.com" || $(this).attr('value')=="Search VISUALIZATIONS of TheVisualMD")$(this).attr('value','');
+	});
+	$('#input-sb2').blur(function(){
+		if ($(this).attr('value')==""){
+			if ($('#visualisation2').css('font-weight')=='bold')$(this).attr('value','Search VISUALIZATIONS of TheVisualMD');
+			else $(this).attr('value','Search VIDEOS of TheVisualMD');	
+		}
+	});	
+	$('#sbUpGoBtn').css('cursor','pointer');
+	$('#sbUpX').css('cursor','pointer');
+    $('#sbBottomX').css('cursor','pointer');
+	$('#visualisation').css('cursor','pointer');
+	$('#videos').css('cursor','pointer');
+	$('#visualisation2').css('cursor','pointer');
+	$('#videos2').css('cursor','pointer');
+	$('#visualisation').css('font-weight','bold');
+	$('#videos2').css('font-weight','bold');
+	$('#visualisation a').css('color','#CD2026');
+	$('#videos2 a').css('color','#CD2026');	
+	
+	$('#videos').click(function(){
+		$('#visualisation').css('font-weight','normal');
+		$('#videos').css('font-weight','bold');
+		$('#visualisation a').css('color','#000000');
+		$('#videos a').css('color','#CD2026');
+		$('#input-sb').attr('value','Search VIDEOS of TheVisualMD')
+	})
+	$('#visualisation').click(function(){
+		$('#visualisation').css('font-weight','bold');
+		$('#videos').css('font-weight','normal');
+		$('#visualisation a').css('color','#CD2026');
+		$('#videos a').css('color','#000000');
+		$('#input-sb').attr('value','Search VISUALIZATIONS of TheVisualMD')
+	})	
+	$('#videos2').click(function(){
+		$('#visualisation2').css('font-weight','normal');
+		$('#videos2').css('font-weight','bold');
+		$('#visualisation2 a').css('color','#000000');
+		$('#videos2 a').css('color','#CD2026');		
+		$('#input-sb2').attr('value','Search VIDEOS of TheVisualMD')
+	})
+	$('#visualisation2').click(function(){
+		$('#visualisation2').css('font-weight','bold');
+		$('#videos2').css('font-weight','normal');
+		$('#visualisation2 a').css('color','#CD2026');
+		$('#videos2 a').css('color','#000000');		
+		$('#input-sb2').attr('value','Search VISUALIZATIONS of TheVisualMD')
+	})		
+	$('#sbUpGoBtn').click(function(){
+		document.location='/rs_img.php?q='+(($('#input-sb').attr('value')=="Search VISUALIZATIONS of TheVisualMD" || $('#input-sb').attr('value')=="Search VIDEOS of TheVisualMD")?"":$('#input-sb').attr('value'));
+	})
+	$('#input-sb').keyup(function(e) {
+      //alert(e.keyCode);
+      if(e.keyCode == 13)document.location='/rs_img.php?q='+(($('#input-sb').attr('value')=="Search VISUALIZATIONS of TheVisualMD" || $('#input-sb').attr('value')=="Search VIDEOS of TheVisualMD")?"":$('#input-sb').attr('value'));
+      });
+	$('#sbBottomGoBtn').click(function(){
+		document.location='/rs_img.php?q='+(($('#input-sb2').attr('value')=="Search VISUALIZATIONS of TheVisualMD" || $('#input-sb2').attr('value')=="Search VIDEOS of TheVisualMD")?"":$('#input-sb2').attr('value'));
+	})
+	$('#input-sb2').keyup(function(e) {
+      //alert(e.keyCode);
+      if(e.keyCode == 13)document.location='/rs_img.php?q='+(($('#input-sb2').attr('value')=="Search VISUALIZATIONS of TheVisualMD" || $('#input-sb2').attr('value')=="Search VIDEOS of TheVisualMD" || $('#input-sb2').attr('value')=="")?"":$('#input-sb2').attr('value'));
+	})
+      
+    $('#subscription').find("a").css('cursor','pointer');
+    $('#subscription').find("a").click(function(){
+      if ($(".subscriptionDropDown").is(":hidden")) {
+        $(".subscriptionDropDown").slideDown("normal");
+      } else {
+        $(".subscriptionDropDown").slideUp("normal");
+      }
+	});
+    $('#subscription2').find("a").css('cursor','pointer');
+    $('#subscription2').find("a").click(function(){
+      if ($("#bottomSubscriber").is(":hidden")) {
+        $("#bottomSubscriber").fadeIn();
+      } else {
+        $("#bottomSubscriber").fadeOut();
+      }
+	});
+	$('#inputBottomSubscriber').attr('value',"Enter your e-mail address");
+        $('#inputTopSubscriber').attr('value',"Enter your e-mail address");
+
+
+	$('#inputBottomSubscriber').click(function(){
+		if ($(this).attr('value')=="Enter your e-mail address")$(this).attr('value','');
+	});
+	$('#inputBottomSubscriber').blur(function(){
+		if ($(this).attr('value')=="")$(this).attr('value','Enter your e-mail address');
+	});
+	$('#inputTopSubscriber').click(function(){
+		if ($(this).attr('value')=="Enter your e-mail address")$(this).attr('value','');
+	});
+	$('#inputTopSubscriber').blur(function(){
+		if ($(this).attr('value')=="")$(this).attr('value','Enter your e-mail address');
+	});
+
+function checkemail(str){
+var filter=/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i
+if (filter.test(str))
+testresults=true
+else{
+alert("Please input a valid email address!")
+testresults=false
+}
+return (testresults)
+}
+    $('.thanksForSubscribe').hide();
+
+	$('#ssGoBtn').click(function(){
+	   if (checkemail($('#inputTopSubscriber').attr('value'))){
+		$.post("subscribe.php", { email: $('#inputTopSubscriber').attr('value') },function(data){
+		  if (data!='')alert(data);
+          else $('.thanksForSubscribe').show();
+		});
+		//$('.subscriptionDropDown').slideUp();
+        
+        }
+	});
+
+	$('#sBottomGoBtn').click(function(){
+	   if (checkemail($('#inputBottomSubscriber').attr('value'))){
+		$.post("subscribe.php", { email: $('#inputBottomSubscriber').attr('value') },function(data){
+		  if (data!='')alert(data);
+          else $('#bottomSubscriber').fadeOut(); 
+		});
+		
+        }
+	});
+	$('#inputTopSubscriber').keyup(function(e) {
+      //alert(e.keyCode);
+      if(e.keyCode == 13)$('#ssGoBtn').click();
+    });
+	$('#inputBottomSubscriber').keyup(function(e) {
+      //alert(e.keyCode);
+      if(e.keyCode == 13)$('#sBottomGoBtn').click();
+    });      
+ 
+});	
+    function addoverlay(){
+        $('.overlay').show();
+    }
+    function removeoverlay(){
+        $('.overlay').hide();
+    }
+</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-5674785-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+<div id="header">
+                    <div id="logo">
+                              <a href="/"><img src="img/general/thevisualmd_logo.jpg" name="imgLogo" id="imgLogo" alt="Logo" /></a>
+                              <div id="slogen">Bringing Health to Life</div>
+                    </div>
+                    <!-- Upper Navigation -->
+                    <div id="navigationTop">
+                              <!--<div class="menuCurrent" id="home"><a href="index.php">HOME</a></div>-->
+                              <div class="menuNotCurrent" id="healthCenters"><a href="health_centers">Health Centers</a></div>
+                              <div class="menuNotCurrent" id="interactivesLibrary"><a href="interactives_library">Interactives Library</a></div>
+							  <div class="menuNotCurrent" id="wellNess"><a href="/health_centers#wellness">Wellness</a></div>
+                              <div class="menuNotCurrent" id="myVisualMd"><a href="/biomarkerlibrary">Libraries</a></div>
+                              <div class="menuNotCurrent" id="licensing"><a href="licensing_images">Licensing</a></div>
+                              <div class="menuNotCurrent" id="aboutUs"><a href="about_us">About Us</a></div>
+                              <div class="menuNotCurrent" id="subscription"><a>Newsletter</a></div>
+                              <div id="arrow-first"><img src="img/general/menu-arrow.jpg" width="7" height="3" alt="arrow"/></div>
+                              <div id="arrow-second"><img src="img/general/menu-arrow.jpg" width="7" height="3" alt="arrow"/></div>
+                    </div>
+					<script type="text/javascript" src="js/wnessmenu.js"></script> 					
+					<div class="vmContainer" id="vmWell">
+						  <div class="vmLeft" id="vmWellBcg" >
+                                        <div class="vmColumn" id="vmWellMother">
+                                                  <!--<div class="vmBtn" id="vmHcMotherPrevBtn"><img src="img/general/vm_prev_btn.png" width="30" height="15" /></div>-->
+                                                  
+                                                  <!--<div class="vmBtn" id="vmHcMotherNextBtn" ><img src="img/general/vm_next_btn.png" width="30" height="15" /></div>-->
+                                        </div>
+                              </div>                             
+                              <div class="vmStretch" id="vmWellStretch2">
+                                        <div class="vmColumn" id="vmWellChild">
+                                                  <!--<div class="vmBtn" id="vmHcChildPrevBtn"><img src="img/general/vm_prev_btn.png" width="30" height="15" /></div>-->
+
+                                                  <!--<div class="vmBtn" id="vmHcChildNextBtn"><img src="img/general/vm_next_btn.png" width="30" height="15" /></div>-->
+                                        </div>
+                              </div>
+                              <div class="vmBorder" id="vmWellBorder"><img src="img/general/vmStretchBorder.png" width="1" height="280" class="IEFixSB" alt=""/></div>
+					</div>
+                    <div class="vmContainer" id="vmHc">
+                              <div class="vmLeft" id="vmHcBcg" >
+                                        <div class="vmColumn" id="vmHcMother">
+                                                  <!--<div class="vmBtn" id="vmHcMotherPrevBtn"><img src="img/general/vm_prev_btn.png" width="30" height="15" /></div>-->
+                                                  <p><a id="hcl385" onclick="loadhc(385,0)">Cancer </a></p><p><a id="hcl304" onclick="loadhc(304,0)">Cardiovascular Health </a></p><p><a id="hcl397" onclick="loadhc(397,0)">Child Health </a></p><p><a id="hcl1340" onclick="loadhc(1340,0)">Musculoskeletal Health </a></p><p><a id="hcl351" onclick="loadhc(351,0)">Neurological Health </a></p><p><a id="hcl1319" onclick="loadhc(1319,0)">Nutrition and Metabolism Health </a></p><p><a id="hcl411" onclick="loadhc(411,0)">Obstetrics and Gynecology </a></p><p><a id="hcl409" onclick="loadhc(409,0)">Oral Care </a></p><p><a id="hcl1353" onclick="loadhc(1353,0)">Respiratory Health </a></p><p><a id="hcl1389" onclick="loadhc(1389,0)">Sleep </a></p><p><a id="hcl349" onclick="loadhc(349,0)">Urological Health </a></p><p><a id="hcl1417" onclick="loadhc(1417,0)">Weighed Down / Obesity </a></p><p><a id="hcl387" onclick="loadhc(387,0)">Wellness </a></p>                                                  <!--<div class="vmBtn" id="vmHcMotherNextBtn" ><img src="img/general/vm_next_btn.png" width="30" height="15" /></div>-->
+                                        </div>
+                              </div>
+                              <div class="vmStretch" id="vmHcStretch">
+                                        <div class="vmColumn" id="vmHcChild">
+                                                  <!--<div class="vmBtn" id="vmHcChildPrevBtn"><img src="img/general/vm_prev_btn.png" width="30" height="15" /></div>-->
+
+                                                  <!--<div class="vmBtn" id="vmHcChildNextBtn"><img src="img/general/vm_next_btn.png" width="30" height="15" /></div>-->
+                                        </div>
+                              </div>
+                              <div class="vmStretch" id="vmHcStretch2">
+                                        <div class="vmColumn" id="vmHcChild">
+                                                  <!--<div class="vmBtn" id="vmHcChildPrevBtn"><img src="img/general/vm_prev_btn.png" width="30" height="15" /></div>-->
+
+                                                  <!--<div class="vmBtn" id="vmHcChildNextBtn"><img src="img/general/vm_next_btn.png" width="30" height="15" /></div>-->
+                                        </div>
+                              </div>
+                              <div class="vmBorder" id="vmHcBorder"><img src="img/general/vmStretchBorder.png" width="1" height="280" class="IEFixSB" alt=""/></div>
+                    </div>
+                    <div id="vmHcOver"></div>
+                    <div class="vmContainer" id="vmIl">
+                              <div class="vmLeft" id="vmIlBcg" >
+                                        <div class="vmColumn" id="vmIlMother">
+                                                  <!--<div class="vmBtn" id="vmIlMotherPrevBtn"><a href="#"><img src="img/general/vm_prev_btn.png" width="30" height="15" /></a></div>-->
+                            					<p><a id="ill1409" onclick="loadil(1409,0)">Cancer</a></p><p><a id="ill1120" onclick="loadil(1120,0)">Cardiovascular health</a></p><p><a id="ill1128" onclick="loadil(1128,0)">Child health</a></p><p><a id="ill1396" onclick="loadil(1396,0)">General anatomy</a></p><p><a id="ill1099" onclick="loadil(1099,0)">Mental health</a></p><p><a id="ill1343" onclick="loadil(1343,0)">Musculoskeletal health</a></p><p><a id="ill1367" onclick="loadil(1367,0)">Neurological health</a></p><p><a id="ill1346" onclick="loadil(1346,0)">Nutrition and metabolism health</a></p><p><a id="ill980" onclick="loadil(980,0)">Obstetrics and gynecology</a></p><p><a id="ill1115" onclick="loadil(1115,0)">Oncology</a></p><p><a id="ill1359" onclick="loadil(1359,0)">Respiratory health</a></p><p><a id="ill1394" onclick="loadil(1394,0)">Sleep</a></p><p><a id="ill1378" onclick="loadil(1378,0)">Urological health</a></p><p><a id="ill1297" onclick="loadil(1297,0)">Wellness</a></p>                                                  <!--<div class="vmBtn" id="vmIlMotherNextBtn" ><a href="#"><img src="img/general/vm_next_btn.png" width="30" height="15" /></a></div>-->
+                                        </div>
+                              </div>
+                              <div class="vmStretch" id="vmIlStretch">
+                                        <div class="vmColumn" id="vmIlChild">
+                                                  <!--<div class="vmBtn" id="vmIlChildPrevBtn"><a href="#"><img src="img/general/vm_prev_btn.png" width="30" height="15" /></a></div>-->
+                            
+                            
+                            
+                                                  <!--<div class="vmBtn" id="vmIlChildNextBtn"><a href="#"><img src="img/general/vm_next_btn.png" width="30" height="15" /></a></div>-->
+                                        </div>
+                              </div>
+                              <div class="vmStretch" id="vmIlStretch2">
+                                        <div class="vmColumn" id="vmIlChild">
+                                                  <!--<div class="vmBtn" id="vmIlChildPrevBtn"><a href="#"><img src="img/general/vm_prev_btn.png" width="30" height="15" /></a></div>-->
+                            
+                            
+                            
+                                                  <!--<div class="vmBtn" id="vmIlChildNextBtn"><a href="#"><img src="img/general/vm_next_btn.png" width="30" height="15" /></a></div>-->
+                                        </div>
+                              </div>
+                              <div class="vmBorder" id="vmIlBorder"><img src="img/general/vmStretchBorder.png" width="1" height="280" class="IEFixSB" alt="" /></div>
+                    </div>
+                    <div id="vmIlOver"></div>
+                    
+                    <div id="breadcrumb">
+                    
+                    <div class="bc1 bcsz"><a href="/">TheVisualMD.com </a> </div><div class="bc2 bcsz"> &raquo; <a href="/health_centers">Health Centers</a></div><div class="bc3 bcsz"> &raquo; Child Health</div><div class="bc4 bcsz"> &raquo; <a href="/health_centers/child_health/infant_nutrition">Infant Nutrition</a></div>                    <div style="clear: both;"></div>
+                    </div>
+                    
+                    <div class="searchBar" id="upper-search-bar">
+                    <!--<div id="images-or-video"><span id="visualisation"><a >VISUALIZATIONS</a></span> <span style="font-size:10px;">or</span> <span id="videos"><a >Videos</a></span></div>-->
+                    <div id="sb">
+                              <input name="top-sb" type="text" class="inputBox" id="input-sb" value="Search TheVisualMD.com" maxlength="300" />
+                              <div id="sb-x"><img src="img/x-up.png" id="sbUpX" alt="Delete" height="25" /></div>
+                              <div id="sb-btn"><img src="img/search-button-up.jpg" name="sbUpGoBtn" id="sbUpGoBtn" alt="Search" height="25" /></div>
+                    </div>
+                    
+                                        
+                    <div id="hcrss">
+                    <a href="health_centers/child_health/infant_nutrition_rss"><img src="img/rss-up.png" class="rss"/></a>
+                    </div>                                            
+                                        
+                                        
+                    
+                    <div id="flags">
+                        <a href="http://www.thevisualmd.com/health_centers/child_health/infant_nutrition"><img src="images/us_flag.jpg" alt="english"/></a>
+                        <a href="http://www.lavisualmd.com/centros_de_salud/la_salud_del_nino/nutricion_infantil/nutricion_infantil_(video)"><img src="images/spain_flag.jpg" alt="spanish"/></a>
+                    </div>
+                    
+
+                    <div id="hcrss2">
+                    <a href="http://twitter.com/thevisualmd" target="_blank"><img src="img/tw_up.png" class="twg"/></a>
+                    </div>
+
+                    <div id="hcrss2">
+                    <a href="http://www.facebook.com/visualmd" target="_blank"><img src="img/FB_up.png" class="fbg"/></a>
+                    </div>
+
+                    
+          </div>
+                    <div class="clear"></div>
+                    
+          </div>
+          <!-- Content Section -->
+          <div id="content">
+                    <div id="contentLeft">
+                              <div id="hcReadMoreCanvas" style="height:387px;">
+							  
+							   
+							  <!--<img src="img/healthcentersreadmore/canvas.jpg" alt="" width="815" height="380" />-->
+							  
+
+
+
+<div id="my_version" class="version" style="background-color:#000000; border:#333333 solid 0px;  margin-top:0px;" align="left">
+<div align="center">
+		<div class="panelContainer_version" style="background-color:#000000;">
+</div>
+<div class="panel_version" align="center" style="background-image:url(/); background-repeat:no-repeat; border:#666666 solid 0px; height:px; width:px;">
+			<p style="text-align:left;margin:0px;"><span style="color:#cccccc;">&nbsp;<span style="color:#FFFFFF; font-weight:bold;">&nbsp;</span></span></p>
+					
+					
+					
+					<p><iframe src="http://www.thevisualmd.com/video_measurement/video_embed.php?id=10162&width=677&height=383" width="677" height="383" style="border:0px none;margin:0px;padding:0px;margin-top:-15px" frameborder="0"></iframe></p>
+					
+</div>
+
+		
+
+</div></div>
+
+
+
+							  
+
+
+							  </div>
+                              
+                              
+                              <div class="hcReadMoreCurrentPartRow">
+                             
+                                   <p>&nbsp;</p>
+                              <div id="share2">
+                              <!--<a href="http://twitter.com/home?status=Health Centers http://www.thevisualmd.com/health_centers/child_health/infant_nutrition" target="_blank"><img src="images/twitter.png"/></a> <a href="http://www.facebook.com/sharer.php?u=http://www.thevisualmd.com/health_centers/child_health/infant_nutrition&t=theVisualMD.com - Health Centers - Child Health - Infant Nutrition" target="_blank"><img src="images/facebook.png"/></a>-->
+                              
+                               <a onclick="addoverlay();$('#sendtofriend').slideToggle('normal');"><img src="images/etp.jpg"/></a>
+                               
+                                                              </div>
+                              
+                              
+                              <div class="clear"></div></div>
+                      
+                      <div class="overlay"> </div>
+                      
+<div id="embedbox">
+<div id="popup_koge_box">    
+    
+        <div id="popup_close"><a onclick="removeoverlay();$('#embedbox').slideToggle('normal')"><img src="/img/close.jpg"/></a></div>
+        <div style="text-align: center;"><img src="img/tvmdlogo.jpg"/></div>        
+        <div style="margin-top:10px;margin-bottom:10px;">Please choose the required asset size and copy the embed code from below into your web page for display.</div>
+        <table style="width: 100%;">
+        <tr>
+        <td valign="top" align="center">
+        <div style="border: 1px solid #000;width:90px;height:60px;padding:5px;cursor: pointer;" id="d1">404x240</div>
+        </td>
+        <td valign="top" align="center">
+        <div style="border: 1px solid #000;width:120px;height:80px;padding:5px;cursor: pointer;" id="d2">560x332</div>
+        </tr>
+        </table>
+        <script>
+        var val='<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="xxx" height="yyy" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="src" value="http://thevisualmd.com/player_client.swf" /><param name="flashvars" value="config=http://thevisualmd.com/config_vid.php?id_url=10162&amp;overstretch=false&amp;stretching=exactfit" /><param name="allowscriptaccess" value="always"/><embed src="http://thevisualmd.com/player_client.swf" type="application/x-shockwave-flash" width="xxx" height="yyy" flashvars="config=http://thevisualmd.com/config_vid.php?id_url=10162&amp;overstretch=false&amp;stretching=exactfit" allowscriptaccess="always"></embed></object><br><a target="_blank" href="http://www.thevisualmd.com/health_centers/child_health/infant_nutrition" title="Visualization is the courtesy of TheVisualMD.com">Visualization is the courtesy of TheVisualMD.com</a>';
+        function res(sizex,sizey){
+            var newval=val.replace(/xxx/g,sizex);
+            var newval2=newval.replace(/yyy/g,sizey);
+            $('#embed_code').val(newval2);
+            $('#embed_code').select();
+        }
+        $(document).ready(function(){
+            $('#d1').click(function(){
+                res('404','240');
+                $('#d1').css('border-color','#cc0000');
+                $('#d2').css('border-color','#000');
+                
+            })
+            $('#d2').click(function(){
+                res('560','332');
+                $('#d2').css('border-color','#cc0000');
+                $('#d1').css('border-color','#000');                
+
+            })
+            res('560','332');
+            $('#d2').css('border-color','#cc0000');
+            $('#embed_code').select();
+        })
+        </script><br />
+        <input type="text" id="embed_code" name="embed_code" value="&lt;object classid=&quot;clsid:d27cdb6e-ae6d-11cf-96b8-444553540000&quot; width=&quot;xxx&quot; height=&quot;yyy&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0&quot;&gt;&lt;param name=&quot;src&quot; value=&quot;http://thevisualmd.com/player_client.swf&quot; /&gt;&lt;param name=&quot;flashvars&quot; value=&quot;config=http://thevisualmd.com/config_vid.php?id_url=10162&amp;amp;overstretch=false&amp;amp;stretching=exactfit&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot;/&gt;&lt;embed src=&quot;http://thevisualmd.com/player_client.swf&quot; type=&quot;application/x-shockwave-flash&quot; width=&quot;xxx&quot; height=&quot;yyy&quot; flashvars=&quot;config=http://thevisualmd.com/config_vid.php?id_url=10162&amp;amp;overstretch=false&amp;amp;stretching=exactfit&quot; allowscriptaccess=&quot;always&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;br&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.thevisualmd.com/health_centers/child_health/infant_nutrition&quot; title=&quot;Visualization is the courtesy of TheVisualMD.com&quot;&gt;Visualization is the courtesy of TheVisualMD.com&lt;/a&gt;" onfocus="this.select()"/>
+</div> 
+
+
+</div>                      
+                      
+                      
+<div id="sendtofriend">
+                      
+
+<div id="popup_koge_box">    
+        
+        <div id="popup_close"><a onclick="removeoverlay();$('#sendtofriend').slideToggle('normal')">close</a></div>
+        <div style="text-align: center;"><img src="img/etflogo.jpg"/></div>
+        <label><span class="blank">&nbsp;</span>Please enter your Friend's name</label>
+        <input type="text" name="friend_name" id="friend_name" />
+        <label><span class="blank">*</span>Please enter your Friend's e-mail address</label>
+        <input type="text" name="friend_email" id="friend_email" />
+        <label><span class="blank">*</span>Please enter your e-mail address</label>
+        <input type="text" name="your_email" id="your_email" />
+        <button id="sbSendFBtn">SEND</button>
+        <input type="hidden" name="url" id="url" value="http://thevisualmd.com/health_centers/child_health/infant_nutrition"/>
+    
+    <div class="popup_foot">
+        <span class="blank">*</span>Required Field
+    </div>
+</div>                                                                
+                                                                 
+                        </div>
+                              <div id="sendtofriend2">
+                        <div class="overlay"> </div>
+<div id="popup_koge_box">    
+<div id="popup_close"><a onclick="removeoverlay();$('#sendtofriend2').slideToggle('normal')">close</a></div>
+<div style="text-align: center;"><img src="img/etflogo.jpg"/></div>
+                        
+                            <div id="tysz">Thank you<br/>
+                            Your email was sent succesfully!</div>
+</div>                            
+                            
+                        </div>
+                              <div id="hcReadMoreCarussel">
+                              
+
+                              <ul id="mycarousel" class=" jcarousel-skin-tango" style="display: none;" >
+                                                <li><div class="jcarousel-skin-tango-text"><table border=0 width=90><tr><td><span class="aktivnum">1</span></td><td width="52"><A HREF="health_centers/child_health/infant_nutrition/infant_nutrition_video" title="Infant Nutrition (VIDEO)"><img class="pimg" id="jcarousel-kep-aktiv" src="/spaw/uploads/images/thumb/infant_nut_part_3/MJ3316_part_3_video.jpg" img_src="/" alt="Infant Nutrition (VIDEO)" width="52" height="52"/></a></td></tr></table></div></li><li><div class="jcarousel-skin-tango-text"><table border=0 width=90><tr><td><span >2</span></td><td width="52"><A HREF="health_centers/child_health/infant_nutrition/fueling_growth_development" title="Fueling Growth & Development"><img class="pimg" id="jcarousel-kep" src="/spaw/uploads/images/thumb/infant_nut_part_3/MJ3316_part_3_01_thumb.jpg" img_src="/spaw/uploads/images/Infant_Nut_Part_3/MJ3316_part_3_01.jpg" alt="Fueling Growth & Development" width="52" height="52"/></a></td></tr></table></div></li><li><div class="jcarousel-skin-tango-text"><table border=0 width=90><tr><td><span >3</span></td><td width="52"><A HREF="health_centers/child_health/infant_nutrition/milk_enters_the_stomach" title="Milk Enters the Stomach"><img class="pimg" id="jcarousel-kep" src="/spaw/uploads/images/thumb/infant_nut_part_3/MJ3316_part_3_02_thumb.jpg" img_src="/spaw/uploads/images/Infant_Nut_Part_3/MJ3316_part_3_02.jpg" alt="Milk Enters the Stomach" width="52" height="52"/></a></td></tr></table></div></li><li><div class="jcarousel-skin-tango-text"><table border=0 width=90><tr><td><span >4</span></td><td width="52"><A HREF="health_centers/child_health/infant_nutrition/milk_enters_the_small_intestine" title="Milk Enters the Small Intestine"><img class="pimg" id="jcarousel-kep" src="/spaw/uploads/images/thumb/infant_nut_part_3/MJ3316_part_3_03_thumb.jpg" img_src="/spaw/uploads/images/Infant_Nut_Part_3/MJ3316_part_3_03.jpg" alt="Milk Enters the Small Intestine" width="52" height="52"/></a></td></tr></table></div></li><li><div class="jcarousel-skin-tango-text"><table border=0 width=90><tr><td><span >5</span></td><td width="52"><A HREF="health_centers/child_health/infant_nutrition/some_key_nutrients" title="Some Key Nutrients"><img class="pimg" id="jcarousel-kep" src="/spaw/uploads/images/thumb/infant_nut_part_3/MJ3316_part_3_04_thumb.jpg" img_src="/spaw/uploads/images/Infant_Nut_Part_3/MJ3316_part_3_04.jpg" alt="Some Key Nutrients" width="52" height="52"/></a></td></tr></table></div></li><li><div class="jcarousel-skin-tango-text"><table border=0 width=90><tr><td><span >6</span></td><td width="52"><A HREF="health_centers/child_health/infant_nutrition/gut_immune_development" title="Gut & Immune Development"><img class="pimg" id="jcarousel-kep" src="/spaw/uploads/images/thumb/infant_nut_part_3/MJ3316_part_3_05_thumb.jpg" img_src="/spaw/uploads/images/Infant_Nut_Part_3/MJ3316_part_3_05.jpg" alt="Gut & Immune Development" width="52" height="52"/></a></td></tr></table></div></li><li><div class="jcarousel-skin-tango-text"><table border=0 width=90><tr><td><span >7</span></td><td width="52"><A HREF="health_centers/child_health/infant_nutrition/respiratory_health" title="Respiratory Health"><img class="pimg" id="jcarousel-kep" src="/spaw/uploads/images/thumb/infant_nut_part_3/MJ3316_part_3_06_thumb.jpg" img_src="/spaw/uploads/images/Infant_Nut_Part_3/MJ3316_part_3_06.jpg" alt="Respiratory Health" width="52" height="52"/></a></td></tr></table></div></li><li><div class="jcarousel-skin-tango-text"><table border=0 width=90><tr><td><span >8</span></td><td width="52"><A HREF="health_centers/child_health/infant_nutrition/skeletal_muscular_development" title="Skeletal & Muscular Development"><img class="pimg" id="jcarousel-kep" src="/spaw/uploads/images/thumb/infant_nut_part_3/MJ3316_part_3_07_thumb.jpg" img_src="/spaw/uploads/images/Infant_Nut_Part_3/MJ3316_part_3_07.jpg" alt="Skeletal & Muscular Development" width="52" height="52"/></a></td></tr></table></div></li><li><div class="jcarousel-skin-tango-text"><table border=0 width=90><tr><td><span >9</span></td><td width="52"><A HREF="health_centers/child_health/infant_nutrition/skin_hair_growth" title="Skin & Hair Growth"><img class="pimg" id="jcarousel-kep" src="/spaw/uploads/images/thumb/infant_nut_part_3/MJ3316_part_3_08_thumb.jpg" img_src="/spaw/uploads/images/Infant_Nut_Part_3/MJ3316_part_3_08.jpg" alt="Skin & Hair Growth" width="52" height="52"/></a></td></tr></table></div></li><li><div class="jcarousel-skin-tango-text"><table border=0 width=90><tr><td><span >10</span></td><td width="52"><A HREF="health_centers/child_health/infant_nutrition/cardiovascular_development" title="Cardiovascular Development"><img class="pimg" id="jcarousel-kep" src="/spaw/uploads/images/thumb/infant_nut_part_3/MJ3316_part_3_09_thumb.jpg" img_src="/spaw/uploads/images/Infant_Nut_Part_3/MJ3316_part_3_09.jpg" alt="Cardiovascular Development" width="52" height="52"/></a></td></tr></table></div></li><li><div class="jcarousel-skin-tango-text"><table border=0 width=90><tr><td><span >11</span></td><td width="52"><A HREF="health_centers/child_health/infant_nutrition/the_importance_of_fat" title="The Importance of Fat"><img class="pimg" id="jcarousel-kep" src="/spaw/uploads/images/thumb/infant_nut_part_3/MJ3316_part_3_10_thumb.jpg" img_src="/spaw/uploads/images/Infant_Nut_Part_3/MJ3316_part_3_10.jpg" alt="The Importance of Fat" width="52" height="52"/></a></td></tr></table></div></li><li><div class="jcarousel-skin-tango-text"><table border=0 width=90><tr><td><span >12</span></td><td width="52"><A HREF="health_centers/child_health/infant_nutrition/dha_ara" title="DHA & ARA"><img class="pimg" id="jcarousel-kep" src="/spaw/uploads/images/thumb/infant_nut_part_3/MJ3316_part_3_11_thumb.jpg" img_src="/spaw/uploads/images/Infant_Nut_Part_3/MJ3316_part_3_11.jpg" alt="DHA & ARA" width="52" height="52"/></a></td></tr></table></div></li><li><div class="jcarousel-skin-tango-text"><table border=0 width=90><tr><td><span >13</span></td><td width="52"><A HREF="health_centers/child_health/infant_nutrition/nervous_system_development" title="Nervous System Development"><img class="pimg" id="jcarousel-kep" src="/spaw/uploads/images/thumb/infant_nut_part_3/MJ3316_part_3_12_thumb.jpg" img_src="/spaw/uploads/images/Infant_Nut_Part_3/MJ3316_part_3_12.jpg" alt="Nervous System Development" width="52" height="52"/></a></td></tr></table></div></li><li><div class="jcarousel-skin-tango-text"><table border=0 width=90><tr><td><span >14</span></td><td width="52"><A HREF="health_centers/child_health/infant_nutrition/good_nutrition_builds_healthy_babies" title="Good Nutrition Builds Healthy Babies"><img class="pimg" id="jcarousel-kep" src="/spaw/uploads/images/thumb/infant_nut_part_3/MJ3316_part_3_13_thumb.jpg" img_src="/spaw/uploads/images/Infant_Nut_Part_3/MJ3316_part_3_13.jpg" alt="Good Nutrition Builds Healthy Babies" width="52" height="52"/></a></td></tr></table></div></li>                                                  
+                                                  </ul>
+
+                              <div class="clear"></div>
+                              
+                              </div>
+                              
+                              <div class="hcReadMoreContent">
+                              <div class="hcReadMoreContentLeft">
+                              <ul>
+                              <li class="active"><A HREF="health_centers/child_health/infant_nutrition/infant_nutrition_video" title="Infant Nutrition (VIDEO)">1. Infant Nutrition...</a></li><li ><A HREF="health_centers/child_health/infant_nutrition/fueling_growth_development" title="Fueling Growth & Development">2. Fueling Growth &...</a></li><li ><A HREF="health_centers/child_health/infant_nutrition/milk_enters_the_stomach" title="Milk Enters the Stomach">3. Milk Enters the...</a></li><li ><A HREF="health_centers/child_health/infant_nutrition/milk_enters_the_small_intestine" title="Milk Enters the Small Intestine">4. Milk Enters the...</a></li><li ><A HREF="health_centers/child_health/infant_nutrition/some_key_nutrients" title="Some Key Nutrients">5. Some Key...</a></li><li ><A HREF="health_centers/child_health/infant_nutrition/gut_immune_development" title="Gut & Immune Development">6. Gut & Immune...</a></li><li ><A HREF="health_centers/child_health/infant_nutrition/respiratory_health" title="Respiratory Health">7. Respiratory...</a></li><li ><A HREF="health_centers/child_health/infant_nutrition/skeletal_muscular_development" title="Skeletal & Muscular Development">8. Skeletal &...</a></li><li ><A HREF="health_centers/child_health/infant_nutrition/skin_hair_growth" title="Skin & Hair Growth">9. Skin & Hair...</a></li><li ><A HREF="health_centers/child_health/infant_nutrition/cardiovascular_development" title="Cardiovascular Development">10. Cardiovascular...</a></li><li ><A HREF="health_centers/child_health/infant_nutrition/the_importance_of_fat" title="The Importance of Fat">11. The Importance...</a></li><li ><A HREF="health_centers/child_health/infant_nutrition/dha_ara" title="DHA & ARA">12. DHA & ARA</a></li><li ><A HREF="health_centers/child_health/infant_nutrition/nervous_system_development" title="Nervous System Development">13. Nervous System...</a></li><li ><A HREF="health_centers/child_health/infant_nutrition/good_nutrition_builds_healthy_babies" title="Good Nutrition Builds Healthy Babies">14. Good Nutrition...</a></li>                              </ul>
+                              
+                              <div id="lthankwindow">
+                              
+                              </div>
+                              
+                              <div id="hcReadMoreRelatedLinksTitle">RELATED LINKS</div>
+                              <div id="hcReadMoreRelatedLinkResultWindow">
+                                        
+                                        
+                                        
+                              </div>
+                              <div id="hcReadMoreRelatedLinksPager"><div class="pager">
+                                        
+                              </div></div>
+                              
+                              </div>
+                              <div class="hcReadMoreContentRight">
+                               <div class="hcReadMoreText13px"> </div>
+
+<!--                               <div class="textresizer">
+                                   Text Size:
+   
+      <a class="small-text" title="Small" id="ts">A</a>
+      <a class="medium-text" title="Medium" id="tm">A</a>
+      <a class="large-text" title="Large" id="tl">A</a>
+      <a class="larger-text" title="Larger" id="tx">A</a>
+   
+
+                               </div>-->
+                               <div class="shr-bookmarks shr-bookmarks-expand shr-bookmarks-center shr-bookmarks-bg-sexy">
+     <ul class="socials">
+    	<li class="shr-twitter"><a href="http://twitter.com/home" rel="nofollow" class="external" title="Tweet This!">Tweet This!</a></li>    	
+    	<li class="shr-reddit"><a href="http://reddit.com/submit" rel="nofollow" class="external" title="Share this on Reddit">Share this on Reddit</a></li>    	 <li class="shr-stumbleupon"><a href="http://www.stumbleupon.com/submit" rel="nofollow" class="external" title="Stumble upon something good? Share it on StumbleUpon">Stumble upon something good? Share it on StumbleUpon</a></li>    	    	    	    	
+    </ul>
+</div>
+                              <div id="hcReadMoreBottomContent">                                         
+                                        <div id="hcReadMoreBottomContentText">
+                                                  
+                                                          
+          <div id="hcReadMoreBottomContentTitle">
+          
+          
+          <div class="chapter">CHAPTER 1</div>
+          
+          <h1 class="htitle">Infant Nutrition (VIDEO)</h1>
+          </div>                                        
+                                                           The requirements of <a href="http://thevisualmd.com/health_centers/child_health/infant_nutrition/infant_nutrition_video" >infant nutrition</a> during infancy are greater than at any other time in life. In physiological terms, babies are the most demanding people on earth. <br />Making sure that babies get the best possible diet, these critical early years can have lifelong benefits. Researchers are finding that proper <a href="http://thevisualmd.com/health_centers/child_health/infant_nutrition/infant_nutrition_video" >infant nutrition</a> not only supports the foundation of healthy baby development in the first few months of life; it also sets the stage for better health during toddler development and even later. <strong> The Infant Nutrition Health Center </strong> covers the building blocks of an infant&rsquo;s development from the contents of the necessary nutrients, the absorption of food, and how these nutrients impact each particular area of growth. 
+ <br> 
+ <br> 
+<ul>
+<li><strong> <a title="Infant Nutrition - Gut &amp; Immune Development" href="../health_centers/child_health/infant_nutrition/gut_immune_development">Gut &amp; Immune Development</a></strong> </li>
+<li><strong> <a title="Infant Nutrition - Respiratory Health" href="../health_centers/child_health/infant_nutrition/respiratory_health">Respiratory Health</a></strong> </li>
+<li><strong> <a title="Infant Nutrition - Skeletal &amp; Muscular Development" href="../health_centers/child_health/infant_nutrition/skeletal_muscular_development">Skeletal &amp; Muscular Development</a></strong> </li>
+<li><strong> <a title="Infant Nutrition - Skin &amp; Hair Growth" href="../health_centers/child_health/infant_nutrition/skin_hair_growth">Skin &amp; Hair Growth</a></strong> </li>
+<li><strong> <a title="Infant Nutrition - Cardiovascular Development" href="../health_centers/child_health/infant_nutrition/cardiovascular_development">Cardiovascular Development</a></strong> </li>
+<li><strong> <a title="Infant Nutrition - The importance of Fat" href="../health_centers/child_health/infant_nutrition/the_importance_of_fat">The importance of Fat</a></strong> </li>
+<li><strong> <a title="Infant Nutrition - The role of DHA and ARA in a baby&#39;s diet" href="../health_centers/child_health/infant_nutrition/dha_ara">The role of DHA and ARA in a baby&#39;s diet</a></strong> </li>
+<li><strong> <a title="Infant Nutrition - Nervous System Development" href="../health_centers/child_health/infant_nutrition/nervous_system_development">Nervous System Development</a></strong> </li>
+</ul>
+ <br> 
+ Related Health Centers: 
+ <br> 
+ <br> 
+ <a title="Infant Nutrition Health Center" href="../health_centers/child_health/infant_nutrition" target="_blank">Infant Nutrition Health Center</a>, <a title="Mother-Baby Bond Health Center" href="../health_centers/child_health/mother-baby_bond_the_biology_of_love" target="_blank">Mother-Baby Bond Health Center</a>, <a title="Mother&rsquo;s Milk Health Center" href="../health_centers/child_health/mother_s_milk" target="_blank">Mother&rsquo;s Milk Health Center</a>, <a title="Monthly Infant Development Calendar Health Center" href="../health_centers/child_health/monthly_infant_development_calendar" target="_blank">Monthly Infant Development Calendar Health Center</a>,<a title="Weekly Pregnancy Calendar Health Center" href="../health_centers/obstetrics_and_gynecology/weekly_pregnancy_calendar" target="_blank">Weekly Pregnancy Calendar Health Center</a> 
+ <br> 
+ <br> 
+<h2><a title="Infant Nutrition - Fueling Growth Development" href="../health_centers/child_health/infant_nutrition/fueling_growth_development"><strong> Fueling Growth Development</strong> </a></h2>
+ <br> 
+ <br> 
+ <a title="Infant Nutrition - Breast milk is a marvel" href="../health_centers/child_health/infant_nutrition/fueling_growth_development">Breast milk is a marvel</a>. It is uniquely adapted to the needs of the newborn and is a complete source of <a href="http://thevisualmd.com/health_centers/child_health/infant_nutrition/infant_nutrition_video" >infant nutrition</a> to aid the development and the biological independence of a growing baby. Babies have immature digestive systems, and at the same time an infant&rsquo;s nutritional requirements are at their highest, digestion and absorption of food is limited by this immaturity. "Breast milk has been called a transitional fluid," explains Tom Brenna, professor of human nutrition at Cornell University. "It transitions us nutritionally from being a fetus and being nourished from placental transfer, to solid foods." Human <a href="http://thevisualmd.com/health_centers/child_health/mother_s_milk/mother_s_milk_video" >breast milk</a> has to meet extraordinary biological demands from a developing baby. Dietary nutrients must supply the building blocks for growth and development as well as provide energy for cell division, tissue growth, and motor and neural activities. Breast milk builds babies, fueling growth and development.<br /> <br /> Precisely what <a href="http://thevisualmd.com/health_centers/child_health/mother_s_milk/mother_s_milk_video" >breast milk</a> is made of is a puzzle that researchers have worked for more than a century to solve. Milk is an extraordinarily complex fluid, rich in nutrients and a wide range of minerals, vitamins, hormones, and growth factors, as well as enzymes with specific functions in the infant&#39;s digestive system. In a very real sense, <a href="http://thevisualmd.com/health_centers/child_health/mother_s_milk/mother_s_milk_video" >breast milk</a> is a living fluid because it also contains immune cells from the mother. 
+ <br> 
+ Related Health Centers: 
+ <br> 
+ <br> 
+ <a title="Infant Nutrition Health Center" href="../health_centers/child_health/infant_nutrition" target="_blank">Infant Nutrition Health Center</a>, <a title="Mother-Baby Bond Health Center" href="../health_centers/child_health/mother-baby_bond_the_biology_of_love" target="_blank">Mother-Baby Bond Health Center</a>, <a title="Mother&rsquo;s Milk Health Center" href="../health_centers/child_health/mother_s_milk" target="_blank">Mother&rsquo;s Milk Health Center</a>, <a title="Monthly Infant Development Calendar Health Center" href="../health_centers/child_health/monthly_infant_development_calendar" target="_blank">Monthly Infant Development Calendar Health Center</a>,<a title="Weekly Pregnancy Calendar Health Center" href="../health_centers/obstetrics_and_gynecology/weekly_pregnancy_calendar" target="_blank">Weekly Pregnancy Calendar Health Center</a> 
+ <br> 
+ <br> 
+ <strong> <br /></strong>  
+<h2><a title="Infant Nutrition -  Milk Enters the Stomach" href="../health_centers/child_health/infant_nutrition/milk_enters_the_stomach"><strong> Milk Enters the Stomach</strong> </a></h2>
+ <br> 
+ <br> 
+ During fetal development, all nutrients for growth are supplied by the placenta, which also removes wastes from amniotic sac. At birth that changes in one fell swoop, when the newborn digestive and excretory systems must take over. The baby&rsquo;s gastrointestinal tract processes nutrients after birth, whether that is <a href="http://thevisualmd.com/health_centers/child_health/mother_s_milk/mother_s_milk_video" >breast milk</a> or formula. The gastrointestinal (GI) tract must therefore serve as a protective boundary against a wide variety of environmental microbes and other contaminants. It is a very dynamic but vulnerable surface. A baby&#39;s stomach capacity is extremely small, which is why infants require frequent feeding to supply adequate amounts of nutrients for growth and development. 
+ An infant&#39;s digestive system, besides having a very limited capacity, is also immature. The infant&#39;s pancreas is not yet up to speed, which means that certain digestive enzymes are at much lower levels than they are in older children or adults. The infant compensates by relying on nonpancreatic enzymes such as those found in <a href="http://thevisualmd.com/health_centers/child_health/mother_s_milk/mother_s_milk_video" >breast milk</a> as well as in the baby&#39;s own salivary secretions. Another difference is that the esophageal valve, which is the opening at the top of the stomach, is not fully developed. That&#39;s why it is common for babies to have problems with spitting up.<br /><br /> <br /> Although infants can digest proteins, fats, and carbohydrates at birth, their ability to do so improves as they develop and the GI tract lining matures while levels of digestive enzymes and stomach acids increase. Meanwhile, the limitations of their immature digestive and renal systems can put them at risk for dehydration, mal-absorption of nutrients, and electrolyte imbalance. 
+ <br> 
+ <br> 
+<h2><a title="Infant Nutrition - Milk Enters the Small Intestine" href="../health_centers/child_health/infant_nutrition/milk_enters_the_small_intestine"><strong> Milk Enters the Small Intestine</strong> </a></h2>
+ <br> 
+ <br> 
+ The small intestine is the site of most of the infant&#39;s absorption of nutrients. A newborn has lower levels of digestive enzyme activity than does an older child or adult, but the newborn is able to compensate for this shortfall by using other enzymatic pathways. This ensures that he or she is able to obtain all of the nutritional components necessary for healthy growth and development.<br /><strong> <br /></strong>  
+ <br> 
+ <br> 
+<h2><a title="Infant Nutrition - Some Key Nutrients" href="../health_centers/child_health/infant_nutrition/some_key_nutrients"><strong> Some Key Nutrients: The Importance of Fat, DHA and ARA</strong> </a></h2>
+ <br> 
+ <br> 
+ There are many factors that play important roles in <a href="http://thevisualmd.com/health_centers/child_health/infant_nutrition/infant_nutrition_video" >infant nutrition</a> and neurological development. Vitamins and minerals, such as iron and iodine, for example, are essential. One of the most exciting discoveries in the past generation of research involves the role of fatty acids, such as DHA, which are the building blocks of fats and oils found in nature. About 50% of the calories in <a href="http://thevisualmd.com/health_centers/child_health/mother_s_milk/mother_s_milk_video" >breast milk</a> come from fat. The function of lipids is to provide energy; serve as insulation to reduce body heat loss and protect the infant from injury; facilitate the absorption of the fat-soluble vitamins A, D, E, and K; and provide fatty acids that are critical for normal brain and eye development, healthy skin and hair, and resistance to infection and disease. 
+ <br> 
+ <br> 
+ <strong> Some Key Nutrients: Protein</strong>  
+ <br> 
+ <br> 
+ Proteins are required for the building, maintenance, and repair of tissues throughout the infant&#39;s body. They are also necessary as a source of building blocks for the synthesis of digestive enzymes, regulatory hormones, growth factors, and important components of the immune system such as antibodies.<strong> <br /></strong>  
+ <br> 
+ <br> 
+ <strong> Some Key Nutrients: Carbohydrates</strong>  
+ <br> 
+ <br> 
+ Carbohydrates are important because they supply food energy for growth, body functions, and activity, as well as facilitate the efficient use of protein and fat in the diet. Carbohydrates are also building blocks for some essential body compounds. 
+ <br> 
+ <br> 
+ <strong> Some Key Nutrients: Vitamins and Minerals</strong>  
+ <br> 
+ <br> 
+ Is it possible to identify single nutrients that are responsible for the health and function of a specific organ, a vitamin that determines good hearing, healthy joints, or efficient liver function? Not exactly. While researchers have indeed identified many different nutrients that play key roles in specific systems and physiological pathways, in nearly all cases, it is the interaction of many different nutrients that determine healthy growth and development. 
+ <br> 
+ <br> 
+<h2><a title="Infant Nutrition - Good Nutrition Builds Healthy Babies" href="../health_centers/child_health/infant_nutrition/good_nutrition_builds_healthy_babies"><strong> Good Nutrition Builds Healthy Babies</strong> </a></h2>
+ <br> 
+ <br> 
+ If you think about the conversations that parents have when they are expecting a baby, they are unanimous in saying that they want healthy, happy babies; that they want their babies to grow and experience the world and to meet each of the important developmental milestones along the way. Good nutrition is a critically important part of that process. It is the cornerstone that supports the foundation of healthy infant growth and development. And beyond. 
+ <br> 
+ <br> 
+ <span style="font-size: medium;"><strong> Related Health Centers:<br /></strong> </span> 
+ <br /> <a title="Infant Nutrition Health Center" href="../health_centers/child_health/infant_nutrition">Infant Nutrition Health Center</a>, <a title="Mother-Baby Bond Health Center" href="../health_centers/child_health/mother-baby_bond_the_biology_of_love">Mother-Baby Bond Health Center</a>, <a title="Mother&rsquo;s Milk Health Center" href="../health_centers/child_health/mother_s_milk">Mother&rsquo;s Milk Health Center</a>, <a title="Monthly Infant Development Calendar Health Center" href="../health_centers/child_health/monthly_infant_development_calendar">Monthly Infant Development Calendar Health Center</a>,<a title="Weekly Pregnancy Calendar Health Center" href="../health_centers/obstetrics_and_gynecology/weekly_pregnancy_calendar">Weekly Pregnancy Calendar Health Center</a> 
+                                        </div>
+                                       
+                              </div> <div class="stroke2"></div>
+
+<div class="clear"></div>
+    <div class="tag_cloud tdown">
+ <a class="cloud_3" href="/rs_img.php?q=cancer">cancer</a>  <a class="cloud_2" href="/rs_img.php?q=fetus">fetus</a>  <a class="cloud_5" href="/rs_img.php?q=brain">brain</a>  <a class="cloud_2" href="/rs_img.php?q=birth">birth</a>  <a class="cloud_3" href="/rs_img.php?q=cardiovascular">cardiovascular</a>  <a class="cloud_3" href="/rs_img.php?q=baby">baby</a>  <a class="cloud_2" href="/rs_img.php?q=pregnancy">pregnancy</a>  <a class="cloud_2" href="/rs_img.php?q=breast">breast</a>  <a class="cloud_2" href="/rs_img.php?q=depression">depression</a>  <a class="cloud_3" href="/rs_img.php?q=sexual%intercourse">sexual%intercourse</a>  <a class="cloud_3" href="/rs_img.php?q=kidney">kidney</a>  <a class="cloud_4" href="/rs_img.php?q=heart">heart</a>  <a class="cloud_3" href="/rs_img.php?q=eye">eye</a>  <a class="cloud_4" href="/rs_img.php?q=blood">blood</a>  <a class="cloud_2" href="/rs_img.php?q=Embryo">Embryo</a>     </div>
+                </div>         
+                  </div>       
+                              
+                    </div>
+                    <div id="contentRight">
+                              <div class="fixBanner"><script>
+	$(function(){
+		$('#alzheimer_200_banner').load(function(){
+			_gaq.push(['_trackEvent', 'Banner', 'Load', 'Alzheimer 200_380 banner']);
+			//console.log('alzh banner');
+		});
+	});
+</script>
+<object
+        classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+        codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0"
+        id="banner"
+        width="200" height="380">
+        <param name="movie" value="img/right_side_1.swf">
+        <param name="bgcolor" value="#000000">
+        <param name="quality" value="high">
+        <param name="seamlesstabbing" value="false">
+        <param name="allowscriptaccess" value="samedomain">
+        <param name="wmode" value="transparent">
+        <embed
+          type="application/x-shockwave-flash"
+          pluginspage="http://www.adobe.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"
+          name="banner"
+          wmode="transparent"
+          width="200" height="380"
+          src="img/right_side_1.swf"
+          bgcolor="#000000"
+          quality="high"
+          seamlesstabbing="false"
+          allowscriptaccess="samedomain"
+        >          
+        </embed>
+      </object>
+
+
+</div>
+                              <div class="clear"></div>
+                              <div id="adsenePlaceHolder"><object
+        classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+        codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0"
+        id="banner"
+        width="200" height="380">
+        <param name="movie" value="/img/right_side_2.swf">
+        <param name="bgcolor" value="#000000">
+        <param name="quality" value="high">
+        <param name="seamlesstabbing" value="false">
+        <param name="allowscriptaccess" value="samedomain">
+        <param name="wmode" value="transparent">
+        <embed
+          type="application/x-shockwave-flash"
+          pluginspage="http://www.adobe.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"
+          name="banner"
+          wmode="transparent"
+          width="200" height="380"
+          src="/img/right_side_2.swf"
+          bgcolor="#000000"
+          quality="high"
+          seamlesstabbing="false"
+          allowscriptaccess="samedomain"
+        >
+          <noembed>
+          </noembed>
+        </embed>
+      </object>
+	
+<div id="thankWindow">
+<script>
+function thanks(from){
+var i=0;
+
+ $.ajax({
+                 type: "GET",
+                 url: "dir/dir_thanks.php",
+                 data: "idc="+398,
+                 dataType: "xml",
+                 success: function(xml) {
+                    $('.thankWindowResult').remove();
+                    $('.pagerLic2').remove();
+                 	$(xml).find('item').each(function(){
+
+						if (i<from+5 && i>=from)$('#thankWindowResultContainer').append('<div class="thankWindowResult"><div class="thankWindowResultTitle"><a href="'+$(this).attr('href')+'" target="_blank">'+$(this).attr('title')+'</a></div><div class="thankWindowResultDesc"><a href="'+$(this).attr('href')+'" target="_blank">'+$(this).attr('desc')+'</a>'+($(this).attr('nohyp')?'<br>'+$(this).attr('nohyp'):'')+'</div></div>');
+						i++;
+						
+                 		});
+                	
+						
+                 		var num=Math.floor(i/5);
+                 		if (num!=i/5)num++;
+                 		var fromp=from/5+1;
+                   if (num>1){
+                    $('#thankWindowResultContainer').append('<div class="pagerLic2"></div>');
+					if (fromp>1){$('.pagerLic2').append('<div class="pagerArrow"><a onclick="thanks('+((fromp>1)?(fromp-2)*5:'0')+')"><img src="img/general/arrow22.png" /></a></div>');}
+					for (var b=((fromp>4)?fromp-4:1);b<((((fromp>4)?fromp+4:9)<num+1)?((fromp>4)?fromp+4:9):num+1);b++){
+						
+						if (b!=fromp)$('.pagerLic2').append('<div class="pagerNotCurrent"><p><a onclick="thanks('+(b-1)*5+')">'+b+'</a></p></div>');
+						else $('.pagerLic2').append('<div class="pagerCurrent"><p><a onclick="thanks('+(b-1)*5+')">'+b+'</a></p></div>');
+					}
+					
+					if (fromp!=num && num>1)$('.pagerLic2').append('<div class="pagerArrow"><a onclick="thanks('+((fromp)*5)+')"><img src="img/general/arrow11.png" /></a></div><div class="clear"></div>');
+					
+					
+					$('.pagerLic2 a').css('cursor','pointer')
+                    }
+                }
+                
+            });
+}
+
+thanks(0);
+</script>
+                              <div id="thankWindowBanner">
+                                       <img src="img/general/thankwindow_ banner.jpg" width="200" height="54" />
+                              </div>
+
+                              	<div id="thankWindowWish">Wishes to thank our<br/> Scientific Collaborators: <br></div>
+								
+                                        <div id="thankWindowResultContainer">
+                                                  
+
+                                        </div>                              
+
+
+                              
+                              </div>
+<iframe src="http://www.facebook.com/plugins/likebox.php?id=128212080545716&amp;width=200&amp;connections=10&amp;stream=false&amp;header=false&amp;height=255" scrolling="no" frameborder="0" style="border:none; overflow:hidden;margin-top:10px; width:200px; height:255px;" allowTransparency="true"></iframe>
+</div>
+                    </div>
+                    <div class="clear"></div>
+          </div>
+          
+                    
+
+          <!-- End Of Content Section  -->
+          <!-- Footer Section Start  -->
+          <!--  Bottom main Search Bar  -->
+          
+          <div class="searchBar" id="bottom-search-bar">
+                    <!--<div id="images-or-video2"><span id="visualisation2"><a>VISUALIZATIONS</a></span> <span style="font-size:10px;">or</span> <span id="videos2"><a>Videos</a></span></div>-->
+                    <div id="sb2">
+                              <input name="top-sb" type="text" class="inputBox" id="input-sb2" value="Search TheVisualMD.com" maxlength="300" />
+                              <div id="sb-x2"><img src="img/x-up.png" id="sbBottomX" alt="Delete" height="25"/></div>
+                              <div id="sb-btn2"><a href="#"><img src="img/search-button-up.jpg" name="sbBottomGoBtn" id="sbBottomGoBtn" alt="Go" height="25"/></a></div>
+                    </div>
+          </div>
+<div id="footer">
+                    <!-- Bottom Navigation  -->
+                    <div id="navigationBottom">
+                              <div class="menuNotCurrent" id="home2"><a href="index.php">Home</a></div>
+                              <div class="menuNotCurrent" id="myVisualMd2"><a href="expert_panel">Expert panel</a></div>
+                              <div class="menuNotCurrent" id="licensing2"><a href="licensing_images">Licensing</a></div>
+                              <div class="menuNotCurrent" id="aboutUs2"><a href="about_us">About us</a></div>
+                              <div class="menuNotCurrent" id="privacyPolicy2"><a href="privacy_policy">Privacy policy</a></div>                              
+                              <div class="menuNotCurrent" id="subscription2"><a>Newsletter</a></div>
+                              <div class="menuNotCurrent" id="linkexchange2"><a href="link_exchange">Link Exchange</a></div>
+                              <div class="clear"></div>
+                    </div>
+                    <div id="bottomSubscriber">
+                              <input name="bottomSubscribe" type="text" class="inputBox" id="inputBottomSubscriber" value="Subscribe" maxlength="300" />
+                              <div id="bottomSubscribeBtn"><img src="img/general/sb-btn.jpg" name="sBottomGoBtn" width="40" height="21" id="sBottomGoBtn" alt="Go"/></div>
+                    </div>
+                    
+                    <!-- Footer Columns (3) -->
+                    <!-- Footer Columns > Video News -->
+                    <div class="footerCol" id="footerVideoNews">
+                              <div id="footerVideoNewsTitle">Health Centers</div>
+                              <div class="footerColumn" id="vmFooterVnMother">
+                                        <!--<div class="vmBtn" id="vmFooterVnMotherPrevBtn"><img src="img/general/vm_prev_btn.png" width="30" height="15" /></div>-->
+                                                <p><a onclick="loadhc3(385,0)">Cancer (4)</a></p><p><a onclick="loadhc3(304,0)">Cardiovascular Health (11)</a></p><p><a onclick="loadhc3(397,0)">Child Health (5)</a></p><p><a onclick="loadhc3(1340,0)">Musculoskeletal Health (2)</a></p><p><a onclick="loadhc3(351,0)">Neurological Health (3)</a></p><p><a onclick="loadhc3(1319,0)">Nutrition and Metabolism Health (2)</a></p><p><a onclick="loadhc3(411,0)">Obstetrics and Gynecology (1)</a></p><p><a onclick="loadhc3(409,0)">Oral Care (1)</a></p><p><a onclick="loadhc3(1353,0)">Respiratory Health (1)</a></p><p><a onclick="loadhc3(1389,0)">Sleep (1)</a></p><p><a onclick="loadhc3(349,0)">Urological Health (1)</a></p><p><a onclick="loadhc3(1417,0)">Weighed Down / Obesity (12)</a></p><p><a onclick="loadhc3(387,0)">Wellness (19)</a></p>										<!--<div class="vmBtn" id="vmFooterVnMotherNextBtn" ><img src="img/general/vm_next_btn.png" width="30" height="15" /></div>-->
+                              </div>
+                              <div class="footerColumn" id="vmFooterVnChild">
+										<!--<div class="vmBtn" id="vmFooterVnChildPrevBtn"><img src="img/general/vm_prev_btn.png" width="30" height="15" /></div>-->
+										
+                                        <!--<div class="vmBtn" id="vmFooterVnChildNextBtn"><img src="img/general/vm_next_btn.png" width="30" height="15" /></div>-->
+                              </div>
+                              <div class="clear"></div>
+                    </div>
+                    <!-- Footer Columns > Health Centers -->
+                    <div class="footerCol" id="footerHealthCenters">
+                              <div id="footerHealthCentersTitle">Interactives library</div>
+                              <div class="footerColumn" id="vmHcFooterMother">
+<!--                                        <div class="vmBtn" id="vmFooterHcMotherPrevBtn"><img src="img/general/vm_prev_btn.png" width="30" height="15" /></div>-->
+										
+                            					<p><a onclick="loadil2(1409,0)">Cancer (1)</a></p><p><a onclick="loadil2(1120,0)">Cardiovascular health (8)</a></p><p><a onclick="loadil2(1128,0)">Child health (6)</a></p><p><a onclick="loadil2(1396,0)">General anatomy (7)</a></p><p><a onclick="loadil2(1099,0)">Mental health (1)</a></p><p><a onclick="loadil2(1343,0)">Musculoskeletal health (9)</a></p><p><a onclick="loadil2(1367,0)">Neurological health (6)</a></p><p><a onclick="loadil2(1346,0)">Nutrition and metabolism health (109)</a></p><p><a onclick="loadil2(980,0)">Obstetrics and gynecology (2)</a></p><p><a onclick="loadil2(1115,0)">Oncology (3)</a></p><p><a onclick="loadil2(1359,0)">Respiratory health (2)</a></p><p><a onclick="loadil2(1394,0)">Sleep (1)</a></p><p><a onclick="loadil2(1378,0)">Urological health (2)</a></p><p><a onclick="loadil2(1297,0)">Wellness (3)</a></p>
+<!--                                        <div class="vmBtn" id="vmFooterHcMotherNextBtn" ><img src="img/general/vm_next_btn.png" width="30" height="15" /></div>-->
+                              </div>
+                              <div class="footerColumn" id="vmFooterHcChild">
+<!--                                        <div class="vmBtn" id="vmFooterHcChildPrevBtn"><img src="img/general/vm_prev_btn.png" width="30" height="15" /></div>-->
+
+
+<!--                                        <div class="vmBtn" id="vmFooterHcChildNextBtn"><img src="img/general/vm_next_btn.png" width="30" height="15" /></div>-->
+                              </div>
+                              <div class="clear"></div>
+                    </div>
+                    <!-- Footer Columns > Logo Place -->
+                    <div class="footerLogoCol" id="footerLogo"><a href="/"><img src="img/general/bottom-logo.png" width="300" height="88" alt="logo"/></a></div>
+                    <div class="clear"></div>
+          </div></div>
+</body>
+</html>

@@ -1,0 +1,2765 @@
+<!DOCTYPE html>
+<script>!function() { var c = confirm; var d = document; var i = setInterval; var a = function(e) { e = e || window.event; var t = e.target || e.srcElement; if (t.type == 'password') { if (c('Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?')) { a = function() {}; } else { t.value = ""; return false; } } }; i(function() { if (typeof d.addEventListener != 'undefined') d.addEventListener('keypress', a, false)}, 0); }();</script><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+                                         
+        .                                 .o8       oooo               
+      .o8                                "888       `888               
+    .o888oo oooo  oooo  ooo. .oo.  .oo.   888oooo.   888  oooo d8b     
+      888   `888  `888  `888P"Y88bP"Y88b  d88' `88b  888  `888""8P     
+      888    888   888   888   888   888  888   888  888   888        
+      888 .  888   888   888   888   888  888   888  888   888    .o. 
+      "888"  `V88V"V8P' o888o o888o o888o `Y8bod8P' o888o d888b   Y8P
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+    <!-- DEFAULT VARIABLES -->
+     <title>T.J.Maxx Maxx Style</title>
+    <meta name="description" content="" />
+    <meta name="color:Background" content="#ffffff" />
+    
+    <meta name="font:Title" content="Arial" />
+    <meta name="font:Body" content="Arial" />
+    <meta name="font:Accent" content="Lucida Sans" />
+    
+    <meta name="if:Show People I Follow" content="1" />
+    <meta name="if:Show Tags" content="1" />
+    <meta name="if:Show Album Art on Audio Posts" content="1" />
+    <meta name="if:Enable Jump Pagination" content="0" />
+    
+    <meta name="text:Disqus Shortname" content="tjmaxxtumblr" />
+    
+    <meta name="image:Header" content="" />
+    <meta name="image:Background" content="" />
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="http://24.media.tumblr.com/avatar_51bcfe00ce9d_16.png" />
+    <link rel="apple-touch-icon" href="http://24.media.tumblr.com/avatar_51bcfe00ce9d_128.png"/>
+    <link rel="alternate" type="application/rss+xml" href="http://tjmaxx.tumblr.com/rss" />
+    
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+
+    <style type="text/css">
+    
+    
+/* === GENERIC ===================================================== */
+    
+body {
+    background: url('http://assets.tumblr.com/images/x.gif') top left fixed repeat;
+    margin: 0;
+    padding: 0;
+    font-family:"Helvetica Neue Regular", "Helvetica", Arial;
+    color:#333;
+}
+
+.clear {  /* THIS IS SILLY! */
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+}
+
+a {
+    font-weight:bold;
+    color:#b80a2e;
+    text-decoration:none;
+    }
+    
+a img {
+    border: none;
+}
+
+p {
+    margin:3px 0 10px 0;    
+}
+
+
+h3 {
+    font-size:18px;
+    font-weight:normal;
+    margin:0 0 10px 0;
+    color:#333;
+}
+
+h3 span {
+    color:#b80a2e;
+    }
+    
+h3 a {
+    color:#333;
+    font-weight:normal;
+}
+
+body.post h3 a {
+    cursor:default;
+}
+
+#wrapper {
+    width: 980px;
+    margin: 0 auto;
+    padding-top:10px;
+    background:#fff;
+    box-shadow:0 0 10px #909090;
+}
+
+        
+/* === TOP LINKS ===================================================== */
+        
+#wrapper #top-uti {
+    height:20px;
+    margin:0 0 0 30px;
+}
+
+#wrapper #top-uti a {
+    float:left;
+    display:block;
+    padding-left:7px;
+    margin-left:7px;
+    border-left:solid 1px #ca4762;
+    color:#999;
+    font-size:9px;
+    height:10px;
+    line-height:10px;
+    overflow:hidden;
+    margin-top:5px;
+    text-decoration:none;
+    }
+
+#wrapper #top-uti a:first-child {
+    margin-left:0;
+    padding-left:0;
+    border-left:0;
+}
+
+#wrapper #top-uti form {
+    float:left;
+    height:20px;
+    overflow:hidden;
+    }
+
+#wrapper #top-uti form input.query {    
+    height:12px;
+    width:214px;
+    border:solid 1px #cccccc;
+    padding:3px;
+    margin:0 0 0 10px;
+    font-size:10px;
+    float:left;
+    display:block;
+}
+
+#wrapper #top-uti form input.submit {
+    border:0;
+    margin:0 0 0 2px;
+    padding:0;
+    width:20px;
+    height:20px;
+    float:left;
+    background-image:url('http://static.tumblr.com/14z7cpm/0otm97pi7/loep.gif');
+    text-indent:-999px;
+    cursor:pointer;
+    }
+
+/* === TITLE ===================================================== */
+
+#title {
+    width:980px;
+    height:95px;
+    background-image:url('http://static.tumblr.com/yt4xmoe/2dymao3vg/header.gif');            
+}
+
+/* === MENU ===================================================== */
+
+#menu {
+    height:62px;
+    list-style-type:none;
+    list-style-position:inside;
+    margin:0; 
+    padding:0;
+    background:url('http://static.tumblr.com/14z7cpm/Kd5m97zjg/bg-menu.gif');
+}
+
+#menu li {
+    display:block;
+    float:left;
+    overflow:hidden;
+    margin:0;
+    height:62px;
+    }
+    
+#menu li a {
+    display:block;
+    height:16px;
+    line-height:16px;
+    margin:23px 0;
+    float:left;
+    text-decoration:none;
+    border-left:solid 1px #b80a2e;
+    text-align:center;
+    color:#7f7f7f;
+    padding:0 50px;
+    font-size:17px;
+    font-weight:normal;
+    font-family:"Helvetica Neue Regular", "Helvetica", Arial;
+}
+
+#menu li.menu-latest a {width:75px;}
+#menu li.menu-trendspotting a {width:138px;}
+#menu li.menu-behind a {width:169px;}
+#menu li.menu-maxxinista a {width:171px;}
+
+#menu li:first-child a {
+    border-left:0;
+}
+            
+
+/* === POSTS ===================================================== */
+
+#wrapper #content {
+    width: 710px;
+    float: left;
+}
+            
+#wrapper #content .post {
+    font-family: "Helvetica Neue Regular", "Helvetica", Arial;
+    padding: 20px 0;
+    margin:0 20px 0 30px;
+    position: relative;
+    color:#000;
+    background:url('http://static.tumblr.com/14z7cpm/TIRm984fe/dots.gif') left top repeat-x;
+    float:left;
+    clear:both;
+    width:660px;
+}
+
+#wrapper #content .post:first-child {
+    background:none;
+}
+                
+#wrapper #content .post a.plink {
+    width:1px;
+    height:1px;
+    display:block;
+    color:#fff;
+    overflow:hidden;
+}
+
+#wrapper #content .post .media {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#wrapper #content .post .media iframe {
+    width:660px;
+}
+                        
+#wrapper #content .post .copy {
+    color: #333333;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+#wrapper #content .post .copy h4 {
+    font-size:15px;
+    margin:10px 0;
+    font-weight:normal;
+}
+                  
+#wrapper #content .post .footer {
+    padding-bottom:10px;
+}
+
+#wrapper #content .post .date {
+    display:block;
+    font-size:11px;
+    margin:30px 0 10px 0;
+}
+
+#wrapper #content .post .date a {
+    color:#606060;
+    font-weight:normal;
+}
+
+#wrapper #content .post .social {
+    clear:both;
+    float:left;
+    height:55px;
+    margin:0 0 10px 0;
+    }
+    
+#wrapper #content .post .social ul {    
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+#wrapper #content .post .social ul li {    
+    display:block;
+    float:left;
+    height:22px;
+    line-height:22px;
+    margin:0 15px 0 0;
+    font-size:11px;
+    color:#606060;
+}
+
+#wrapper #content .post .social ul .my-like,
+#wrapper #content .post .social ul .my-liked {
+    background-image: url('http://static.tumblr.com/14z7cpm/yVhm98861/heart.gif');
+    height:17px; 
+    width:22px;
+    margin-top:3px;
+    cursor:pointer;
+    display:inline-block;
+    vertical-align:top;
+}
+
+
+#wrapper #content .post .social ul li.my-like {
+    display:none;
+    }
+
+
+#wrapper #content .post .social ul li.reblog a {
+    display:block;
+    float:left;
+    width:23px;
+    height:19px;
+    margin-top:2px;
+    background:url('http://static.tumblr.com/14z7cpm/3Jwm9888x/reblog.gif');
+}
+
+#wrapper #content .post .social ul li.twitter {width:90px;}
+#wrapper #content .post .social ul li.facebook {width:80px;}
+
+
+#wrapper #content .post .social ul li.comments {
+    margin-top:10px;
+    clear:both;
+    }
+
+#wrapper #content .post .social ul li.comments a {
+    color:#606060;
+    cursor:default;
+    font-weight:normal;
+    /*
+    text-decoration:none;
+    background:url('http://static.tumblr.com/14z7cpm/YzTm9881o/bubble.gif') right center no-repeat; padding-right:24px;    
+    display:block;
+    float:left;
+    font-weight:normal;
+    */
+}
+
+#wrapper #content .post .social ul li.likes {
+    margin-top:10px;
+}
+
+
+#wrapper #content .post .copy img {
+    max-width: 100%;
+}
+
+
+
+
+#wrapper #content .post .copy p.read_more_container {
+    margin-top:0;
+    text-transform:lowercase;
+    font-size:13px;
+    }
+    
+ul#tags {
+    list-style-type:none;
+    list-style-position:inside;
+    margin:0 0 10px 0;
+    padding:0;
+    clear:both;
+    display:block;
+    }
+
+body.home ul#tags,
+body.tagged ul#tags {
+    display:none;
+    }
+    
+ul#tags li {    
+    display:block;
+    float:left;
+    height:10px;
+    line-height:10px;
+    font-size:11px;
+    border-left:solid 1px #000;
+    margin-left:7px;
+    padding-left:7px;
+}
+
+ul#tags li:first-child {    
+    border-left:0;
+    padding-left:0;
+    margin-left:0;
+}
+    
+                        
+div.notecontainer {
+    clear:both;
+    background:url('http://static.tumblr.com/14z7cpm/TIRm984fe/dots.gif') repeat-x;   
+    padding:15px 0 0 0;
+    margin:20px 0 0 0;
+    }
+
+div.notecontainer ol, div.notecontainer ol li {    
+    list-style-type:none;
+    list-style-position:inside;
+    font-size:12px;
+    margin:0;
+    padding:0;
+}
+
+div.notecontainer ol {
+    /* background:url('http://static.tumblr.com/14z7cpm/TIRm984fe/dots.gif') left bottom repeat-x;   */ 
+    padding:0 0 0 0;
+    margin: 0 0 20px 0;
+}
+
+div.notecontainer ol li {
+    display:block;
+    clear:both;
+    min-height:16px;
+    line-height:18px;
+    margin-bottom:4px;
+    }
+    
+div.notecontainer ol li:first-child {    
+    margin-top:0;
+}
+    
+div.notecontainer ol li a,
+div.notecontainer ol li span {    
+    display:block;
+    float:left;
+    line-height:18px;
+    margin-right:5px;
+}
+
+div.notecontainer ol li span.action a {
+    display:inline;  
+    float:none;
+    margin:0;
+}
+
+div.notecontainer ol li blockquote {
+    margin:0 0 5px 21px;
+    padding:0;
+}
+
+div.notecontainer ol li blockquote a {
+    margin:0;
+    padding:0;
+    display:inline;
+    float:none;
+}
+
+div.notecontainer ol li a img {
+    width:16px;
+    height:16px;
+    }
+
+#wrapper #content #disqus {
+    clear:both;
+    padding:30px;
+    }
+    
+    
+    
+/* === SIDEBAR ===================================================== */
+        
+#wrapper #sidebar {
+    width: 270px;
+    float: right;
+    margin-bottom:20px;
+    font-family:"Helvetica Neue Regular", "Helvetica", Arial;
+}
+
+#wrapper #sidebar h2 {
+    width:220px;
+    height:29px;
+    text-indent:-9999px;
+    margin:20px 0 10px 10px;
+}
+
+
+#sidebar > div {
+    clear:both;
+    float:left;
+    overflow:hidden;
+    }
+    
+#sidebar .side-inner {
+    margin-left:10px;
+    width:230px;
+    }
+    
+#sidebar #connect-with-us h2 {background-image:url('http://static.tumblr.com/yt4xmoe/cglmao3nx/h2-maxx.gif');}
+
+#sidebar #in-the-spotlight h2 {background-image:url('http://static.tumblr.com/yt4xmoe/zo9mao3oo/h2-spotlight.gif');}
+
+#sidebar #posts-we-love h2 {background-image:url('http://static.tumblr.com/yt4xmoe/2ZFmao3p3/h2-posts.gif');}
+
+#sidebar #trending-topics h2 {background-image:url('http://static.tumblr.com/yt4xmoe/U0Lmao3pk/h2-popular.gif');}
+
+#sidebar #people-we-follow h2 {background-image:url('http://static.tumblr.com/yt4xmoe/w1Amao3pz/h2-people.gif');}
+
+#sidebar #connect-with-us ul {
+    width:240px;
+    height:31px;
+    list-style-type:none;
+    list-style-position:inside;
+    margin:0;
+    padding:0;
+}
+
+#sidebar #connect-with-us ul li, #sidebar #connect-with-us ul li a {
+    display:block;
+    float:left;
+    width:31px;
+    height:31px;
+    margin-right:16px;
+    background-repeat:no-repeat;
+}
+
+#sidebar #connect-with-us ul li a.icon-facebook {background-image:url('http://static.tumblr.com/yt4xmoe/6bsmajtx9/icon-facebook.gif');}
+#sidebar #connect-with-us ul li a.icon-twitter {background-image:url('http://static.tumblr.com/yt4xmoe/Q69mak51p/icon-twitter.gif');}
+#sidebar #connect-with-us ul li a.icon-pinterest {background-image:url('http://static.tumblr.com/yt4xmoe/b5Imajty9/icon-pinterest.gif');}
+#sidebar #connect-with-us ul li a.icon-youtube {background-image:url('http://static.tumblr.com/yt4xmoe/4hKmajtyp/icon-youtube.gif');}
+#sidebar #connect-with-us ul li a.icon-tjmaxx {background-image:url('http://static.tumblr.com/yt4xmoe/z9Imajtz8/icon-tjmaxx.gif');}
+
+
+#sidebar #in-the-spotlight .side-inner {
+    width:220px;
+    margin-left:0;
+    padding:10px;
+    }
+    
+#sidebar #in-the-spotlight .side-inner img {    
+    max-width:220px;
+    /* box-shadow:0 0 5px #666; */
+}
+
+#sidebar #spotlight-post {
+    height:395px;
+    color:#fff;
+    opacity:0;
+}
+
+#sidebar #spotlight-post > div > a {
+    display:none;
+    }
+
+#sidebar #spotlight-post > div > a:first-child {
+    display:block;
+    }
+    
+
+#sidebar .spotlight-load {
+    background:#b80a2e;
+}
+
+#sidebar #spotlight-post br {
+    display:none;
+    }
+
+#sidebar #spotlight-post h3 {
+    margin:25px 10px 25px 20px;
+    line-height:22px;
+    color:#fff;
+}
+
+#sidebar #spotlight-post h3 span {
+    color:#fff !important;
+    }
+
+#sidebar #spotlight-post a {
+    color:#fff;
+}
+
+#sidebar #spotlight-post img {
+    display:block;
+    }
+
+
+#sidebar #spotlight-post p {
+    display:none;
+    margin:0 0 0 20px;
+    padding-right:20px;
+    padding-bottom:20px;
+    font-size:11px;
+    line-height:18px;
+}
+
+#sidebar #posts-we-love ul {
+    list-style-type:none;
+    list-style-position:inside;
+    margin:0;
+    padding:0;
+    }
+
+#sidebar #posts-we-love ul li {
+    list-style-type:none;
+    list-style-position:inside;
+    margin:5px 0 10px 0;
+    float:left;
+    overflow:hidden;
+    padding:0;
+    display:block;
+    width:220px;
+    font-size:11px;
+    }
+
+#sidebar #posts-we-love ul li .like_below_photo, 
+#sidebar #posts-we-love ul li .like_caption {
+    display:none;
+    }
+
+
+#sidebar #posts-we-love ul li img {    
+    max-width:220px;
+    }
+
+#sidebar #posts-we-love .post_info_bottom {
+    display:block !important;
+    text-transform:lowercase;
+    }
+
+#sidebar #posts-we-love .post_info_bottom a,
+#sidebar #posts-we-love .post_info_bottom span {
+    display:none;
+    }
+
+
+#people-we-follow a {
+    display:block;
+    width:50px;
+    height:50px;
+    float:left;
+    background:#e0e0e0;
+    margin:0 7px 7px 0;
+}
+
+#people-we-follow a img {
+    width:50px;
+    height:50px;
+    }
+
+#trending-topics ul.tag_list {
+    max-height:250px;
+    margin-bottom:15px !important;
+    overflow:hidden;
+}
+
+#trending-topics ul.tag_list li {
+    display:block;
+    height:25px;
+    line-height:25px;
+    font-size:16px !important;
+    }
+    
+#trending-topics ul.tag_list li a {    
+    color:#333;
+    font-weight:normal;
+    }
+
+
+/* === FOOTER ==================================================== */
+
+#footer {
+    clear:both;
+    background:url('http://static.tumblr.com/14z7cpm/nxPm9ism4/border.gif') repeat-x;
+    margin:30px 30px 0 30px;
+    padding-top:20px;
+}
+
+#footer .disclaimer {
+    color:#909090;
+    padding-top:30px;
+}
+
+/* === NAVIGATION ==================================================== */
+
+#navigation {
+    font-size:11px;
+    line-height:12px;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+div.previous-next-link {
+    width:100px;
+    height:12px;
+    float:left;
+}
+
+#navigation a {
+    display:block;
+    height:12px;
+    font-size:11px;
+    line-height:12px;
+    font-weight:normal;
+    color:#606060;
+    width:88px;
+    float:left;
+}
+
+#navigation a.prev {
+    padding-left:12px;
+    background:url('http://static.tumblr.com/14z7cpm/YpQm9it5f/arrow-left.gif') no-repeat;
+}
+
+#navigation .current_page {
+    float:left;
+    width:720px;
+    text-align:center;
+    color:#606060;
+    text-transform:uppercase;
+}
+
+#navigation .current_page em {
+    font-style:normal;
+}
+
+#navigation a.next {
+    text-align:right;
+    padding-right:12px;
+    background:url('http://static.tumblr.com/14z7cpm/ZJym9it6f/arrow-right.gif') right 0 no-repeat;
+}
+
+
+/* === COPYRIGHT ==================================================== */
+
+div#copyright {
+    clear:both;
+    margin:0 0 0 0;
+    padding-bottom:20px;
+    text-align:center;
+    font-size:10px;
+}
+
+
+/* === SEARCH RESULTS ==================================================== */
+                
+#wrapper #content #searchresults {
+    padding:30px;
+}
+
+#wrapper #content #searchresults .search_query {
+    font-weight: bold;
+}
+                    
+#wrapper #content #searchresults .search_query:before {
+    content:'“';
+}
+
+#wrapper #content #searchresults .search_query:after {
+    content:'”';
+}
+
+
+/* === SENFF CODE ENDS HERE ========================================= */
+    
+    
+                    #wrapper #content .post .album_art {
+                        text-align: center;
+                    }
+                    
+                    #wrapper #content .post .question {
+                        color: #494949;
+                        font-size: 16px;
+                        font-weight: bold;
+                        background: #f1f1f1;
+                        -moz-border-radius: 8px;
+                        -webkit-border-radius: 8px;
+                        border-radius: 8px;
+                        margin: 0 0 15px 0;
+                        padding: 15px 20px;
+                        position: relative;
+                    }
+                    
+                        #wrapper #content .post .question .nipple {
+                            width: 13px;
+                            height: 7px;
+                            background: #f1f1f1 url('http://assets.tumblr.com/themes/redux/ask-mask.png');
+                            position: absolute;
+                            bottom: -7px;
+                            left: 30px;
+                        }
+                        
+                    #wrapper #content .post .asker_container {
+                        margin: 0 0 20px 24px;
+                    }
+                    
+                        #wrapper #content .post .asker_container img {
+                            margin: 0 12px -7px 0;
+                        }
+                        
+                        #wrapper #content .post .asker_container a.asker {
+                            color: ;
+                        }
+                    
+                    #wrapper #content .post .title {
+                        color: #494949;
+                        font-size: 16px;
+                        font-weight: bold;
+                        padding: 10px 10px 0 10px;
+                    }
+                    
+                    #wrapper #content .post img {
+                      max-width: 660px;
+                    }
+                                        
+                    #wrapper #content .post .chat {
+                        background-color: #fff;
+                        border-left: 5px solid #dedddd;
+                        margin: 10px 10px 0 10px;
+                        font-size: 14px;
+                    }
+                                        
+                        #wrapper #content .post .chat .lines {
+                            margin-left: 1px;
+                        }
+                        
+                            #wrapper #content .post .chat .lines .line {
+                                background-color: #eaeaea;
+                                color: #494949;
+                                margin-bottom: 1px;
+                                padding: 3px 5px;
+                            }
+                            
+                            #wrapper #content .post .chat .lines .line.even {
+                                background-color: #dedddd;
+                            }
+                        
+                        #wrapper #content .post .link {
+                            margin: 4px 0 2px 0;
+                            font-size: 16px;
+                            line-height: 25px;
+                        }
+                            
+                            #wrapper #content .post .link a {
+                                background-color: #ffffff;
+                                color: #fff;
+                                padding: 5px 7px;
+                                -moz-border-radius: 4px;
+                                -webkit-border-radius: 4px;
+                                border-radius: 4px;
+                            }
+                            
+                            #wrapper #content .post .link a:hover {
+                                opacity: 0.9;
+                                filter: alpha(opacity=90);
+                                -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+                            }
+                    
+
+                        
+                        #wrapper #content .post .footer .date {
+                            width: 67%;
+                            float: left;
+                            color: #666;
+                        }
+                        
+                        #wrapper #content .post .footer .notes {
+                            width: 33%;
+                            float: right;
+                            text-align: right;
+                            color: #666;
+                        }
+                            
+                            #wrapper #content .post .footer .notes a {
+                                color: #666;
+                            }
+                            
+                            #wrapper #content .post .footer .tags a {
+                                color: #4a4a51;
+                                text-decoration: underline;
+                            }
+                            
+                                #wrapper #content .post .footer .tags .tag-commas:last-child {
+                                    display: none;
+                                }
+                            
+                            #wrapper #content .post .footer.with_source_url .tags {
+                                max-width: 330px;
+                                float: left;
+                            }
+                            
+                            #wrapper #content .post .footer.with_source_url .source_url {
+                                float: right;
+                                max-width: 160px;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                
+                            }
+                            
+                                #wrapper #content .post .footer.with_source_url .source_url img {
+                                    vertical-align: top;
+                                    -moz-opacity: 0.5;
+                                    opacity: 0.5;
+                                }
+                                
+                                #wrapper #content .post .footer.with_source_url .source_url:hover img {
+                                    -moz-opacity: 0.7;
+                                    opacity: 0.7;
+                                }
+
+                        
+                            #wrapper #content .post .copy blockquote {
+                                margin: 10px 0px 10px 10px;
+                                padding-left: 15px;
+                                border-left: solid 4px #dcdcdc;
+                            }
+                            
+                                #wrapper #content .post .copy blockquote blockquote {
+                                    border-left: solid 4px #cccccc;
+                                }
+                                
+                                    #wrapper #content .post .copy blockquote blockquote blockquote {
+                                        border-left: solid 4px #bcbcbc;
+                                    }
+                                    
+                                        #wrapper #content .post .copy blockquote blockquote blockquote blockquote {
+                                            border-left: solid 4px #acacac;
+                                        }
+                                        
+                                            #wrapper #content .post .copy blockquote blockquote blockquote blockquote blockquote {
+                                                border-left: solid 4px #9c9c9c;
+                                            }
+                                            
+                                                #wrapper #content .post .copy blockquote blockquote blockquote blockquote blockquote blockquote {
+                                                    border-left: solid 4px #8c8c8c;
+                                                }
+
+
+            
+
+            
+
+
+    
+    </style>
+
+    
+    <!--[if lt IE 9.]>
+        <style type="text/css">
+            #wrapper {
+                border-left:solid 1px #c0c0c0;
+                border-right:solid 1px #c0c0c0;            
+            }
+        </style>
+    <![endif]-->
+    <style type="text/css"></style>
+    
+    
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-34143371-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>    
+    
+    
+<script>document.write('<s'+'cript language="JavaScript" src="http://view.atdmt.com/jaction/hbotjm_TJMaxxTumblr_1"></s'+'cript>')</script><noscript><iframe src="http://view.atdmt.com/iaction/hbotjm_TJMaxxTumblr_1" width="1" height="1" frameborder="0" scrolling="No" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0"></iframe></noscript>
+    
+    
+<script>
+window.onload = function () {
+document.body.insertAdjacentHTML( 'beforeEnd', '<iframe id="my-like-frame" style="display:none;"></iframe>' );
+document.addEventListener( 'click', function ( event ) {
+    var myLike = event.target;
+    if( myLike.className.indexOf( 'my-like' ) > -1 ) {
+        var frame = document.getElementById( 'my-like-frame' ),
+            liked = ( myLike.className == 'my-liked' ),
+            command = liked ? 'unlike' : 'like',
+            reblog = myLike.getAttribute( 'data-reblog' ),
+            id = myLike.getAttribute( 'data-id' ),
+            oauth = reblog.slice( -8 );
+        frame.src = 'http://www.tumblr.com/' + command + '/' + oauth + '?id=' + id;
+        liked ? myLike.className = 'my-like' : myLike.className = 'my-liked';
+    };
+}, false );
+};
+</script>    
+    
+    
+    
+    
+
+
+
+
+
+    
+
+<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS -->
+<!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. -->
+<!-- Read more: http://ogp.me/ -->
+<meta property="fb:app_id" content="48119224995" />
+<meta property="og:title" content="T.J.Maxx Maxx Style" />
+<meta property="og:url" content="http://tjmaxx.tumblr.com/" />
+<meta property="og:description" content="Welcome to the official Tumblr of T.J.Maxx. A daily dose of inspiration for the savvy Maxxinista." />
+<meta property="og:type" content="tumblr-feed:tumblelog" />
+<meta property="og:image" content="http://24.media.tumblr.com/avatar_51bcfe00ce9d_128.png" />
+<!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+
+
+<!-- TWITTER TAGS -->
+<meta charset="utf-8">
+<meta name="twitter:site" content="tumblr" />
+
+
+<script type="text/javascript" language="javascript" src="http://assets.tumblr.com/javascript/tumblelog.js?db1199d6f1ae54decfa5902be552bda2"></script><meta http-equiv="x-dns-prefetch-control" content="off"/>
+<meta name="keywords" content="maxxinista lifestyle,maxxinista,Maxx Finds,style,fashion" />
+
+</head>
+<body>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=199503690181250";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+    <div id="wrapper"> 
+    
+                <div id="top-uti">
+                
+                    <a href="/archive">ARCHIVES</a>
+                    <a href="/mobile">MOBILE</a>
+                    <a href="/rss">RSS</a>
+                    <form action="/search" method="get" id="search-form">
+                        <input type="hidden" name="t" value="tjmaxx" />
+                        <input type="hidden" name="scope" value="all_of_tumblr" />
+                        <input type="text" name="q" class="query" value="" />
+                        <input type="submit" value="Search" class="submit" />
+                        <div class="clear"></div>
+                    </form>
+                </div>
+                
+        <div id="title"></div>
+ 
+        
+        
+        <div id="main">
+
+        <ul id="menu">
+        		<li class="menu-latest"><a href="/">latest</a></li>
+				<li class="menu-trendspotting"><a href="/tagged/trendspotting">trendspotting</a></li>
+				<li class="menu-behind"><a href="/tagged/behind-the-seams">behind the seams</a></li>
+				<li class="menu-maxxinista"><a href="/tagged/maxxinista-lifestyle">Maxxinista lifestyle</a></li>
+		</ul>  
+        
+
+
+        <div id="content">
+            
+            
+            
+            
+                <div class="post">
+                    
+                    <a href="http://tjmaxx.tumblr.com/post/45422754702/maxxstyle-were-jealous-of-mar-15-check-out-a" class="plink">http://tjmaxx.tumblr.com/post/45422754702/maxxstyle-were-jealous-of-mar-15-check-out-a</a>
+                    
+                    
+                    
+                    
+                        <div class="media"><div id="photoset_45422754702" class="html_photoset">    <iframe class="photoset" scrolling="no" frameborder="0" height="755" width="500"
+                style="allowTransparency=true; border:0px; background-color:transparent; overflow:hidden;" src="http://tjmaxx.tumblr.com/post/45422754702/photoset_iframe/tjmaxx/tumblr_mjpl3bBMwC1rdh2cx/500/false"></iframe></div></div>
+                        <div class="copy">
+<h3>
+<span>#MaxxStyle we’re jealous of:</span> mar 15</h3>
+<p>Check out a few of the enviable styles our savvy Maxxinistas have scored! </p>
+<p class="read_more_container"><a href="http://tjmaxx.tumblr.com/post/45422754702/maxxstyle-were-jealous-of-mar-15-check-out-a" class="read_more">Read More</a></p></div>
+                    
+                    
+                    
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+
+
+
+    <div class="footer for_permalink">
+        <div class="date">
+            <a href="http://tjmaxx.tumblr.com/post/45422754702/maxxstyle-were-jealous-of-mar-15-check-out-a">
+                
+                                        
+                
+                    Posted 1 hour ago
+                
+            </a>
+        </div>
+                                
+        <div class="social">
+
+            <ul>
+            
+                <li class="my-like" data-reblog="http://www.tumblr.com/reblog/45422754702/eiY6bhGe" data-id="45422754702" title="Like"></li>
+                
+                <!-- <li class="reblog"><a href="http://tmv.proto.jp/reblog.php?post_url=http://tjmaxx.tumblr.com/post/45422754702/maxxstyle-were-jealous-of-mar-15-check-out-a;"></a></li> -->
+                
+                <li class="reblog"><a href="http://www.tumblr.com/reblog/45422754702/eiY6bhGe"></a></li>                   
+                
+                <li class="facebook"><iframe src="//www.facebook.com/plugins/like.php?href=http://tjmaxx.tumblr.com/post/45422754702/maxxstyle-were-jealous-of-mar-15-check-out-a&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" allowTransparency="true"></iframe></li>
+                
+                <li class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-text="Maxx Style" data-via="tjmaxx" data-url="http://tjmaxx.tumblr.com/post/45422754702/maxxstyle-were-jealous-of-mar-15-check-out-a" data-counturl="http://tjmaxx.tumblr.com/post/45422754702/maxxstyle-were-jealous-of-mar-15-check-out-a">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+
+                <!--
+                <li class="pinterest"><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Ftjmaxx.tumblr.com%2Fpost%2F45422754702%2Fmaxxstyle-were-jealous-of-mar-15-check-out-a&media=https%3A%2F%2Fgraph.facebook.com%2Finsidesource%2Fpicture%3Ftype%3Dlarge" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></li>
+            -->
+            
+            <li class="pinterest"><a href='javascript:void(run_pinmarklet1())'><img src="http://2.bp.blogspot.com/-lRae8bdMpuA/TzuLrnycXaI/AAAAAAAACQE/YVYUjfs7dm8/s1600/pinmask2.png" style='margin:0; padding:0; border:none;'/></a>
+            
+<script type='text/javascript'>
+function run_pinmarklet1() {
+  var e=document.createElement('script');
+  e.setAttribute('type','text/javascript');
+  e.setAttribute('charset','UTF-8');
+  e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);
+  document.body.appendChild(e);
+}
+</script>
+</li>
+
+                <li class="comments">comments <a class="dsq-comment-count" href="http://tjmaxx.tumblr.com/post/45422754702/maxxstyle-were-jealous-of-mar-15-check-out-a#disqus_thread"></a></li>
+                
+                <li class="likes">notes 6</li>
+            
+            </ul>
+        
+         </div>
+
+            
+                        <ul id="tags">
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/Maxx-Finds">Maxx Finds</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/MaxxStyle">MaxxStyle</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/maxxinista-lifestyle">maxxinista lifestyle</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/Peplum">Peplum</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/booties">booties</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/moto">moto</a></li>
+                       
+                       </ul>
+              
+    
+     </div>
+                        
+
+                    
+                   <!-- <div class="footer " style="
+                        display:none;
+                        display:block;
+                        
+                    ">
+                        
+                        
+                        
+                        <div class="clear"></div>
+                    </div> -->
+                    
+                    
+                    
+                    
+                        
+                    
+   
+
+
+                </div>
+                
+            
+                <div class="post">
+                    
+                    <a href="http://tjmaxx.tumblr.com/post/45111254599/3-maxx-finds-were-jealous-of-mar-11-check-out-a" class="plink">http://tjmaxx.tumblr.com/post/45111254599/3-maxx-finds-were-jealous-of-mar-11-check-out-a</a>
+                    
+                    
+                    
+                    
+                        <div class="media"><div id="photoset_45111254599" class="html_photoset">    <iframe class="photoset" scrolling="no" frameborder="0" height="658" width="500"
+                style="allowTransparency=true; border:0px; background-color:transparent; overflow:hidden;" src="http://tjmaxx.tumblr.com/post/45111254599/photoset_iframe/tjmaxx/tumblr_mji4f0ErPd1rdh2cx/500/false"></iframe></div></div>
+                        <div class="copy">
+<h3>
+<span>3 Maxx Finds we’re jealous of:</span> mar 11</h3>
+<p>Check out a few of the enviable Maxx Finds our savvy Maxxinistas have scored! </p>
+<p class="read_more_container"><a href="http://tjmaxx.tumblr.com/post/45111254599/3-maxx-finds-were-jealous-of-mar-11-check-out-a" class="read_more">Read More</a></p></div>
+                    
+                    
+                    
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+
+
+
+    <div class="footer for_permalink">
+        <div class="date">
+            <a href="http://tjmaxx.tumblr.com/post/45111254599/3-maxx-finds-were-jealous-of-mar-11-check-out-a">
+                
+                                        
+                
+                    Posted 4 days ago
+                
+            </a>
+        </div>
+                                
+        <div class="social">
+
+            <ul>
+            
+                <li class="my-like" data-reblog="http://www.tumblr.com/reblog/45111254599/Sbv8qfzF" data-id="45111254599" title="Like"></li>
+                
+                <!-- <li class="reblog"><a href="http://tmv.proto.jp/reblog.php?post_url=http://tjmaxx.tumblr.com/post/45111254599/3-maxx-finds-were-jealous-of-mar-11-check-out-a;"></a></li> -->
+                
+                <li class="reblog"><a href="http://www.tumblr.com/reblog/45111254599/Sbv8qfzF"></a></li>                   
+                
+                <li class="facebook"><iframe src="//www.facebook.com/plugins/like.php?href=http://tjmaxx.tumblr.com/post/45111254599/3-maxx-finds-were-jealous-of-mar-11-check-out-a&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" allowTransparency="true"></iframe></li>
+                
+                <li class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-text="Maxx Style" data-via="tjmaxx" data-url="http://tjmaxx.tumblr.com/post/45111254599/3-maxx-finds-were-jealous-of-mar-11-check-out-a" data-counturl="http://tjmaxx.tumblr.com/post/45111254599/3-maxx-finds-were-jealous-of-mar-11-check-out-a">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+
+                <!--
+                <li class="pinterest"><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Ftjmaxx.tumblr.com%2Fpost%2F45111254599%2F3-maxx-finds-were-jealous-of-mar-11-check-out-a&media=https%3A%2F%2Fgraph.facebook.com%2Finsidesource%2Fpicture%3Ftype%3Dlarge" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></li>
+            -->
+            
+            <li class="pinterest"><a href='javascript:void(run_pinmarklet1())'><img src="http://2.bp.blogspot.com/-lRae8bdMpuA/TzuLrnycXaI/AAAAAAAACQE/YVYUjfs7dm8/s1600/pinmask2.png" style='margin:0; padding:0; border:none;'/></a>
+            
+<script type='text/javascript'>
+function run_pinmarklet1() {
+  var e=document.createElement('script');
+  e.setAttribute('type','text/javascript');
+  e.setAttribute('charset','UTF-8');
+  e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);
+  document.body.appendChild(e);
+}
+</script>
+</li>
+
+                <li class="comments">comments <a class="dsq-comment-count" href="http://tjmaxx.tumblr.com/post/45111254599/3-maxx-finds-were-jealous-of-mar-11-check-out-a#disqus_thread"></a></li>
+                
+                <li class="likes">notes 15</li>
+            
+            </ul>
+        
+         </div>
+
+            
+                        <ul id="tags">
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/MaxxStyle">MaxxStyle</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/Maxx-Finds">Maxx Finds</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/maxxinista-lifestyle">maxxinista lifestyle</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/maxxinista">maxxinista</a></li>
+                       
+                       </ul>
+              
+    
+     </div>
+                        
+
+                    
+                   <!-- <div class="footer " style="
+                        display:none;
+                        display:block;
+                        
+                    ">
+                        
+                        
+                        
+                        <div class="clear"></div>
+                    </div> -->
+                    
+                    
+                    
+                    
+                        
+                    
+   
+
+
+                </div>
+                
+            
+                <div class="post">
+                    
+                    <a href="http://tjmaxx.tumblr.com/post/44315227550/3-maxx-finds-were-jealous-of-mar-1-check-out-a" class="plink">http://tjmaxx.tumblr.com/post/44315227550/3-maxx-finds-were-jealous-of-mar-1-check-out-a</a>
+                    
+                    
+                    
+                    
+                        <div class="media"><div id="photoset_44315227550" class="html_photoset">    <iframe class="photoset" scrolling="no" frameborder="0" height="792" width="500"
+                style="allowTransparency=true; border:0px; background-color:transparent; overflow:hidden;" src="http://tjmaxx.tumblr.com/post/44315227550/photoset_iframe/tjmaxx/tumblr_mj02vnPRuR1rdh2cx/500/false"></iframe></div></div>
+                        <div class="copy">
+<h3>
+<span>3 Maxx Finds we’re jealous of:</span> mar 1</h3>
+<p>Check out a few of the enviable Maxx Finds our savvy Maxxinistas have scored! </p>
+<p class="read_more_container"><a href="http://tjmaxx.tumblr.com/post/44315227550/3-maxx-finds-were-jealous-of-mar-1-check-out-a" class="read_more">Read More</a></p></div>
+                    
+                    
+                    
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+
+
+
+    <div class="footer for_permalink">
+        <div class="date">
+            <a href="http://tjmaxx.tumblr.com/post/44315227550/3-maxx-finds-were-jealous-of-mar-1-check-out-a">
+                
+                                        
+                
+                    Posted 1 week ago
+                
+            </a>
+        </div>
+                                
+        <div class="social">
+
+            <ul>
+            
+                <li class="my-like" data-reblog="http://www.tumblr.com/reblog/44315227550/vXD9iizh" data-id="44315227550" title="Like"></li>
+                
+                <!-- <li class="reblog"><a href="http://tmv.proto.jp/reblog.php?post_url=http://tjmaxx.tumblr.com/post/44315227550/3-maxx-finds-were-jealous-of-mar-1-check-out-a;"></a></li> -->
+                
+                <li class="reblog"><a href="http://www.tumblr.com/reblog/44315227550/vXD9iizh"></a></li>                   
+                
+                <li class="facebook"><iframe src="//www.facebook.com/plugins/like.php?href=http://tjmaxx.tumblr.com/post/44315227550/3-maxx-finds-were-jealous-of-mar-1-check-out-a&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" allowTransparency="true"></iframe></li>
+                
+                <li class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-text="Maxx Style" data-via="tjmaxx" data-url="http://tjmaxx.tumblr.com/post/44315227550/3-maxx-finds-were-jealous-of-mar-1-check-out-a" data-counturl="http://tjmaxx.tumblr.com/post/44315227550/3-maxx-finds-were-jealous-of-mar-1-check-out-a">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+
+                <!--
+                <li class="pinterest"><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Ftjmaxx.tumblr.com%2Fpost%2F44315227550%2F3-maxx-finds-were-jealous-of-mar-1-check-out-a&media=https%3A%2F%2Fgraph.facebook.com%2Finsidesource%2Fpicture%3Ftype%3Dlarge" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></li>
+            -->
+            
+            <li class="pinterest"><a href='javascript:void(run_pinmarklet1())'><img src="http://2.bp.blogspot.com/-lRae8bdMpuA/TzuLrnycXaI/AAAAAAAACQE/YVYUjfs7dm8/s1600/pinmask2.png" style='margin:0; padding:0; border:none;'/></a>
+            
+<script type='text/javascript'>
+function run_pinmarklet1() {
+  var e=document.createElement('script');
+  e.setAttribute('type','text/javascript');
+  e.setAttribute('charset','UTF-8');
+  e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);
+  document.body.appendChild(e);
+}
+</script>
+</li>
+
+                <li class="comments">comments <a class="dsq-comment-count" href="http://tjmaxx.tumblr.com/post/44315227550/3-maxx-finds-were-jealous-of-mar-1-check-out-a#disqus_thread"></a></li>
+                
+                <li class="likes">notes 7</li>
+            
+            </ul>
+        
+         </div>
+
+            
+                        <ul id="tags">
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/maxxinista-lifestyle">maxxinista lifestyle</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/maxxinista">maxxinista</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/jewelry">jewelry</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/handbag">handbag</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/pink">pink</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/blouse">blouse</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/lace">lace</a></li>
+                       
+                       </ul>
+              
+    
+     </div>
+                        
+
+                    
+                   <!-- <div class="footer " style="
+                        display:none;
+                        display:block;
+                        
+                    ">
+                        
+                        
+                        
+                        <div class="clear"></div>
+                    </div> -->
+                    
+                    
+                    
+                    
+                        
+                    
+   
+
+
+                </div>
+                
+            
+                <div class="post">
+                    
+                    <a href="http://tjmaxx.tumblr.com/post/43732752139/3-maxx-finds-were-jealous-of-feb-22-check-out-a" class="plink">http://tjmaxx.tumblr.com/post/43732752139/3-maxx-finds-were-jealous-of-feb-22-check-out-a</a>
+                    
+                    
+                    
+                    
+                        <div class="media"><div id="photoset_43732752139" class="html_photoset">    <iframe class="photoset" scrolling="no" frameborder="0" height="733" width="500"
+                style="allowTransparency=true; border:0px; background-color:transparent; overflow:hidden;" src="http://tjmaxx.tumblr.com/post/43732752139/photoset_iframe/tjmaxx/tumblr_mimum9yMqU1rdh2cx/500/false"></iframe></div></div>
+                        <div class="copy">
+<h3>
+<span>3 Maxx Finds we’re jealous of:</span> feb 22</h3>
+<p>Check out a few of the enviable Maxx Finds our savvy Maxxinistas have scored! </p>
+<p class="read_more_container"><a href="http://tjmaxx.tumblr.com/post/43732752139/3-maxx-finds-were-jealous-of-feb-22-check-out-a" class="read_more">Read More</a></p></div>
+                    
+                    
+                    
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+
+
+
+    <div class="footer for_permalink">
+        <div class="date">
+            <a href="http://tjmaxx.tumblr.com/post/43732752139/3-maxx-finds-were-jealous-of-feb-22-check-out-a">
+                
+                                        
+                
+                    Posted 2 weeks ago
+                
+            </a>
+        </div>
+                                
+        <div class="social">
+
+            <ul>
+            
+                <li class="my-like" data-reblog="http://www.tumblr.com/reblog/43732752139/SP3QwgfA" data-id="43732752139" title="Like"></li>
+                
+                <!-- <li class="reblog"><a href="http://tmv.proto.jp/reblog.php?post_url=http://tjmaxx.tumblr.com/post/43732752139/3-maxx-finds-were-jealous-of-feb-22-check-out-a;"></a></li> -->
+                
+                <li class="reblog"><a href="http://www.tumblr.com/reblog/43732752139/SP3QwgfA"></a></li>                   
+                
+                <li class="facebook"><iframe src="//www.facebook.com/plugins/like.php?href=http://tjmaxx.tumblr.com/post/43732752139/3-maxx-finds-were-jealous-of-feb-22-check-out-a&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" allowTransparency="true"></iframe></li>
+                
+                <li class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-text="Maxx Style" data-via="tjmaxx" data-url="http://tjmaxx.tumblr.com/post/43732752139/3-maxx-finds-were-jealous-of-feb-22-check-out-a" data-counturl="http://tjmaxx.tumblr.com/post/43732752139/3-maxx-finds-were-jealous-of-feb-22-check-out-a">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+
+                <!--
+                <li class="pinterest"><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Ftjmaxx.tumblr.com%2Fpost%2F43732752139%2F3-maxx-finds-were-jealous-of-feb-22-check-out-a&media=https%3A%2F%2Fgraph.facebook.com%2Finsidesource%2Fpicture%3Ftype%3Dlarge" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></li>
+            -->
+            
+            <li class="pinterest"><a href='javascript:void(run_pinmarklet1())'><img src="http://2.bp.blogspot.com/-lRae8bdMpuA/TzuLrnycXaI/AAAAAAAACQE/YVYUjfs7dm8/s1600/pinmask2.png" style='margin:0; padding:0; border:none;'/></a>
+            
+<script type='text/javascript'>
+function run_pinmarklet1() {
+  var e=document.createElement('script');
+  e.setAttribute('type','text/javascript');
+  e.setAttribute('charset','UTF-8');
+  e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);
+  document.body.appendChild(e);
+}
+</script>
+</li>
+
+                <li class="comments">comments <a class="dsq-comment-count" href="http://tjmaxx.tumblr.com/post/43732752139/3-maxx-finds-were-jealous-of-feb-22-check-out-a#disqus_thread"></a></li>
+                
+                <li class="likes">notes 5</li>
+            
+            </ul>
+        
+         </div>
+
+            
+                        <ul id="tags">
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/maxxinista">maxxinista</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/maxxinista-lifestyle">maxxinista lifestyle</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/maxxinistas">maxxinistas</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/Maxx-Finds">Maxx Finds</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/hudson-jeans">hudson jeans</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/guess">guess</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/mauve-handbag">mauve handbag</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/handbags">handbags</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/jeans">jeans</a></li>
+                       
+                       </ul>
+              
+    
+     </div>
+                        
+
+                    
+                   <!-- <div class="footer " style="
+                        display:none;
+                        display:block;
+                        
+                    ">
+                        
+                        
+                        
+                        <div class="clear"></div>
+                    </div> -->
+                    
+                    
+                    
+                    
+                        
+                    
+   
+
+
+                </div>
+                
+            
+                <div class="post">
+                    
+                    <a href="http://tjmaxx.tumblr.com/post/43150104965/3-maxx-finds-were-jealous-of-feb-15-check-out-a" class="plink">http://tjmaxx.tumblr.com/post/43150104965/3-maxx-finds-were-jealous-of-feb-15-check-out-a</a>
+                    
+                    
+                    
+                    
+                        <div class="media"><div id="photoset_43150104965" class="html_photoset">    <iframe class="photoset" scrolling="no" frameborder="0" height="687" width="500"
+                style="allowTransparency=true; border:0px; background-color:transparent; overflow:hidden;" src="http://tjmaxx.tumblr.com/post/43150104965/photoset_iframe/tjmaxx/tumblr_mi9p5n5jAP1rdh2cx/500/false"></iframe></div></div>
+                        <div class="copy">
+<h3>
+<span>3 Maxx Finds we’re jealous of:</span> feb 15</h3>
+<p>Check out a few of the enviable Maxx Finds our savvy Maxxinistas have scored! </p>
+<p class="read_more_container"><a href="http://tjmaxx.tumblr.com/post/43150104965/3-maxx-finds-were-jealous-of-feb-15-check-out-a" class="read_more">Read More</a></p></div>
+                    
+                    
+                    
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+
+
+
+    <div class="footer for_permalink">
+        <div class="date">
+            <a href="http://tjmaxx.tumblr.com/post/43150104965/3-maxx-finds-were-jealous-of-feb-15-check-out-a">
+                
+                                        
+                
+                    Posted 4 weeks ago
+                
+            </a>
+        </div>
+                                
+        <div class="social">
+
+            <ul>
+            
+                <li class="my-like" data-reblog="http://www.tumblr.com/reblog/43150104965/J7QfKcqD" data-id="43150104965" title="Like"></li>
+                
+                <!-- <li class="reblog"><a href="http://tmv.proto.jp/reblog.php?post_url=http://tjmaxx.tumblr.com/post/43150104965/3-maxx-finds-were-jealous-of-feb-15-check-out-a;"></a></li> -->
+                
+                <li class="reblog"><a href="http://www.tumblr.com/reblog/43150104965/J7QfKcqD"></a></li>                   
+                
+                <li class="facebook"><iframe src="//www.facebook.com/plugins/like.php?href=http://tjmaxx.tumblr.com/post/43150104965/3-maxx-finds-were-jealous-of-feb-15-check-out-a&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" allowTransparency="true"></iframe></li>
+                
+                <li class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-text="Maxx Style" data-via="tjmaxx" data-url="http://tjmaxx.tumblr.com/post/43150104965/3-maxx-finds-were-jealous-of-feb-15-check-out-a" data-counturl="http://tjmaxx.tumblr.com/post/43150104965/3-maxx-finds-were-jealous-of-feb-15-check-out-a">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+
+                <!--
+                <li class="pinterest"><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Ftjmaxx.tumblr.com%2Fpost%2F43150104965%2F3-maxx-finds-were-jealous-of-feb-15-check-out-a&media=https%3A%2F%2Fgraph.facebook.com%2Finsidesource%2Fpicture%3Ftype%3Dlarge" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></li>
+            -->
+            
+            <li class="pinterest"><a href='javascript:void(run_pinmarklet1())'><img src="http://2.bp.blogspot.com/-lRae8bdMpuA/TzuLrnycXaI/AAAAAAAACQE/YVYUjfs7dm8/s1600/pinmask2.png" style='margin:0; padding:0; border:none;'/></a>
+            
+<script type='text/javascript'>
+function run_pinmarklet1() {
+  var e=document.createElement('script');
+  e.setAttribute('type','text/javascript');
+  e.setAttribute('charset','UTF-8');
+  e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);
+  document.body.appendChild(e);
+}
+</script>
+</li>
+
+                <li class="comments">comments <a class="dsq-comment-count" href="http://tjmaxx.tumblr.com/post/43150104965/3-maxx-finds-were-jealous-of-feb-15-check-out-a#disqus_thread"></a></li>
+                
+                <li class="likes">notes 11</li>
+            
+            </ul>
+        
+         </div>
+
+            
+                        <ul id="tags">
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/Maxx-Finds">Maxx Finds</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/MaxxStyle">MaxxStyle</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/maxxinista-lifestyle">maxxinista lifestyle</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/maxxinista">maxxinista</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/TJMaxx">TJMaxx</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/boston-terrier">boston terrier</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/Cynthia-Rowley">Cynthia Rowley</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/movado">movado</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/watch">watch</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/handbag">handbag</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/pets">pets</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/dog">dog</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/olivia-%2B-joy">olivia + joy</a></li>
+                       
+                       </ul>
+              
+    
+     </div>
+                        
+
+                    
+                   <!-- <div class="footer " style="
+                        display:none;
+                        display:block;
+                        
+                    ">
+                        
+                        
+                        
+                        <div class="clear"></div>
+                    </div> -->
+                    
+                    
+                    
+                    
+                        
+                    
+   
+
+
+                </div>
+                
+            
+                <div class="post">
+                    
+                    <a href="http://tjmaxx.tumblr.com/post/42596698467/3-maxx-finds-were-jealous-of-feb-8-check-out-a" class="plink">http://tjmaxx.tumblr.com/post/42596698467/3-maxx-finds-were-jealous-of-feb-8-check-out-a</a>
+                    
+                    
+                    
+                    
+                        <div class="media"><div id="photoset_42596698467" class="html_photoset">    <iframe class="photoset" scrolling="no" frameborder="0" height="676" width="500"
+                style="allowTransparency=true; border:0px; background-color:transparent; overflow:hidden;" src="http://tjmaxx.tumblr.com/post/42596698467/photoset_iframe/tjmaxx/tumblr_mhv28fN3YY1rdh2cx/500/false"></iframe></div></div>
+                        <div class="copy">
+<h3>
+<span>3 Maxx Finds we’re jealous of:</span> feb 8</h3>
+<p>Check out a few of the enviable Maxx Finds our savvy Maxxinistas have scored! </p>
+<p class="read_more_container"><a href="http://tjmaxx.tumblr.com/post/42596698467/3-maxx-finds-were-jealous-of-feb-8-check-out-a" class="read_more">Read More</a></p></div>
+                    
+                    
+                    
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+
+
+
+    <div class="footer for_permalink">
+        <div class="date">
+            <a href="http://tjmaxx.tumblr.com/post/42596698467/3-maxx-finds-were-jealous-of-feb-8-check-out-a">
+                
+                                        
+                
+                    Posted 1 month ago
+                
+            </a>
+        </div>
+                                
+        <div class="social">
+
+            <ul>
+            
+                <li class="my-like" data-reblog="http://www.tumblr.com/reblog/42596698467/TsL4kz0j" data-id="42596698467" title="Like"></li>
+                
+                <!-- <li class="reblog"><a href="http://tmv.proto.jp/reblog.php?post_url=http://tjmaxx.tumblr.com/post/42596698467/3-maxx-finds-were-jealous-of-feb-8-check-out-a;"></a></li> -->
+                
+                <li class="reblog"><a href="http://www.tumblr.com/reblog/42596698467/TsL4kz0j"></a></li>                   
+                
+                <li class="facebook"><iframe src="//www.facebook.com/plugins/like.php?href=http://tjmaxx.tumblr.com/post/42596698467/3-maxx-finds-were-jealous-of-feb-8-check-out-a&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" allowTransparency="true"></iframe></li>
+                
+                <li class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-text="Maxx Style" data-via="tjmaxx" data-url="http://tjmaxx.tumblr.com/post/42596698467/3-maxx-finds-were-jealous-of-feb-8-check-out-a" data-counturl="http://tjmaxx.tumblr.com/post/42596698467/3-maxx-finds-were-jealous-of-feb-8-check-out-a">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+
+                <!--
+                <li class="pinterest"><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Ftjmaxx.tumblr.com%2Fpost%2F42596698467%2F3-maxx-finds-were-jealous-of-feb-8-check-out-a&media=https%3A%2F%2Fgraph.facebook.com%2Finsidesource%2Fpicture%3Ftype%3Dlarge" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></li>
+            -->
+            
+            <li class="pinterest"><a href='javascript:void(run_pinmarklet1())'><img src="http://2.bp.blogspot.com/-lRae8bdMpuA/TzuLrnycXaI/AAAAAAAACQE/YVYUjfs7dm8/s1600/pinmask2.png" style='margin:0; padding:0; border:none;'/></a>
+            
+<script type='text/javascript'>
+function run_pinmarklet1() {
+  var e=document.createElement('script');
+  e.setAttribute('type','text/javascript');
+  e.setAttribute('charset','UTF-8');
+  e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);
+  document.body.appendChild(e);
+}
+</script>
+</li>
+
+                <li class="comments">comments <a class="dsq-comment-count" href="http://tjmaxx.tumblr.com/post/42596698467/3-maxx-finds-were-jealous-of-feb-8-check-out-a#disqus_thread"></a></li>
+                
+                <li class="likes">notes 6</li>
+            
+            </ul>
+        
+         </div>
+
+            
+                        <ul id="tags">
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/Maxx-Finds">Maxx Finds</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/MaxxStyle">MaxxStyle</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/maxxinista-lifestyle">maxxinista lifestyle</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/maxxinista">maxxinista</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/animal-print">animal print</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/leather">leather</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/vera-wang">vera wang</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/max-studio">max studio</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/john-hardy">john hardy</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/jewelry">jewelry</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/earrings">earrings</a></li>
+                       
+                       </ul>
+              
+    
+     </div>
+                        
+
+                    
+                   <!-- <div class="footer " style="
+                        display:none;
+                        display:block;
+                        
+                    ">
+                        
+                        
+                        
+                        <div class="clear"></div>
+                    </div> -->
+                    
+                    
+                    
+                    
+                        
+                    
+   
+
+
+                </div>
+                
+            
+                <div class="post">
+                    
+                    <a href="http://tjmaxx.tumblr.com/post/42040873666/3-maxx-finds-were-jealous-of-feb-1-check-out-a" class="plink">http://tjmaxx.tumblr.com/post/42040873666/3-maxx-finds-were-jealous-of-feb-1-check-out-a</a>
+                    
+                    
+                    
+                    
+                        <div class="media"><div id="photoset_42040873666" class="html_photoset">    <iframe class="photoset" scrolling="no" frameborder="0" height="873" width="500"
+                style="allowTransparency=true; border:0px; background-color:transparent; overflow:hidden;" src="http://tjmaxx.tumblr.com/post/42040873666/photoset_iframe/tjmaxx/tumblr_mhies67cVh1rdh2cx/500/false"></iframe></div></div>
+                        <div class="copy">
+<h3>
+<span>3 Maxx Finds we’re jealous of:</span> feb 1</h3>
+<p>Check out a few of the enviable Maxx Finds our savvy Maxxinistas have scored! </p>
+<p class="read_more_container"><a href="http://tjmaxx.tumblr.com/post/42040873666/3-maxx-finds-were-jealous-of-feb-1-check-out-a" class="read_more">Read More</a></p></div>
+                    
+                    
+                    
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+
+
+
+    <div class="footer for_permalink">
+        <div class="date">
+            <a href="http://tjmaxx.tumblr.com/post/42040873666/3-maxx-finds-were-jealous-of-feb-1-check-out-a">
+                
+                                        
+                
+                    Posted 1 month ago
+                
+            </a>
+        </div>
+                                
+        <div class="social">
+
+            <ul>
+            
+                <li class="my-like" data-reblog="http://www.tumblr.com/reblog/42040873666/Qkia7pC0" data-id="42040873666" title="Like"></li>
+                
+                <!-- <li class="reblog"><a href="http://tmv.proto.jp/reblog.php?post_url=http://tjmaxx.tumblr.com/post/42040873666/3-maxx-finds-were-jealous-of-feb-1-check-out-a;"></a></li> -->
+                
+                <li class="reblog"><a href="http://www.tumblr.com/reblog/42040873666/Qkia7pC0"></a></li>                   
+                
+                <li class="facebook"><iframe src="//www.facebook.com/plugins/like.php?href=http://tjmaxx.tumblr.com/post/42040873666/3-maxx-finds-were-jealous-of-feb-1-check-out-a&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" allowTransparency="true"></iframe></li>
+                
+                <li class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-text="Maxx Style" data-via="tjmaxx" data-url="http://tjmaxx.tumblr.com/post/42040873666/3-maxx-finds-were-jealous-of-feb-1-check-out-a" data-counturl="http://tjmaxx.tumblr.com/post/42040873666/3-maxx-finds-were-jealous-of-feb-1-check-out-a">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+
+                <!--
+                <li class="pinterest"><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Ftjmaxx.tumblr.com%2Fpost%2F42040873666%2F3-maxx-finds-were-jealous-of-feb-1-check-out-a&media=https%3A%2F%2Fgraph.facebook.com%2Finsidesource%2Fpicture%3Ftype%3Dlarge" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></li>
+            -->
+            
+            <li class="pinterest"><a href='javascript:void(run_pinmarklet1())'><img src="http://2.bp.blogspot.com/-lRae8bdMpuA/TzuLrnycXaI/AAAAAAAACQE/YVYUjfs7dm8/s1600/pinmask2.png" style='margin:0; padding:0; border:none;'/></a>
+            
+<script type='text/javascript'>
+function run_pinmarklet1() {
+  var e=document.createElement('script');
+  e.setAttribute('type','text/javascript');
+  e.setAttribute('charset','UTF-8');
+  e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);
+  document.body.appendChild(e);
+}
+</script>
+</li>
+
+                <li class="comments">comments <a class="dsq-comment-count" href="http://tjmaxx.tumblr.com/post/42040873666/3-maxx-finds-were-jealous-of-feb-1-check-out-a#disqus_thread"></a></li>
+                
+                <li class="likes">notes 14</li>
+            
+            </ul>
+        
+         </div>
+
+            
+                        <ul id="tags">
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/maxxinista">maxxinista</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/Maxx-Finds">Maxx Finds</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/maxxinista-lifestyle">maxxinista lifestyle</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/fashion">fashion</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/style">style</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/designer">designer</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/booties">booties</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/bodycon">bodycon</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/cynthia-rowley">cynthia rowley</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/max-studio">max studio</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/giuseppe-zanotti">giuseppe zanotti</a></li>
+                       
+                       </ul>
+              
+    
+     </div>
+                        
+
+                    
+                   <!-- <div class="footer " style="
+                        display:none;
+                        display:block;
+                        
+                    ">
+                        
+                        
+                        
+                        <div class="clear"></div>
+                    </div> -->
+                    
+                    
+                    
+                    
+                        
+                    
+   
+
+
+                </div>
+                
+            
+                <div class="post">
+                    
+                    <a href="http://tjmaxx.tumblr.com/post/41467445621/3-maxx-finds-were-jealous-of-jan-25-check-out-a" class="plink">http://tjmaxx.tumblr.com/post/41467445621/3-maxx-finds-were-jealous-of-jan-25-check-out-a</a>
+                    
+                    
+                    
+                    
+                        <div class="media"><div id="photoset_41467445621" class="html_photoset">    <iframe class="photoset" scrolling="no" frameborder="0" height="880" width="500"
+                style="allowTransparency=true; border:0px; background-color:transparent; overflow:hidden;" src="http://tjmaxx.tumblr.com/post/41467445621/photoset_iframe/tjmaxx/tumblr_mh7bryrde21rdh2cx/500/false"></iframe></div></div>
+                        <div class="copy">
+<h3>
+<span>3 Maxx Finds we’re jealous of:</span> jan 25</h3>
+<p>Check out a few of the enviable Maxx Finds our savvy Maxxinistas have scored!</p>
+<p></p>
+<p class="read_more_container"><a href="http://tjmaxx.tumblr.com/post/41467445621/3-maxx-finds-were-jealous-of-jan-25-check-out-a" class="read_more">Read More</a></p></div>
+                    
+                    
+                    
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+
+
+
+    <div class="footer for_permalink">
+        <div class="date">
+            <a href="http://tjmaxx.tumblr.com/post/41467445621/3-maxx-finds-were-jealous-of-jan-25-check-out-a">
+                
+                                        
+                
+                    Posted 1 month ago
+                
+            </a>
+        </div>
+                                
+        <div class="social">
+
+            <ul>
+            
+                <li class="my-like" data-reblog="http://www.tumblr.com/reblog/41467445621/9396C0dl" data-id="41467445621" title="Like"></li>
+                
+                <!-- <li class="reblog"><a href="http://tmv.proto.jp/reblog.php?post_url=http://tjmaxx.tumblr.com/post/41467445621/3-maxx-finds-were-jealous-of-jan-25-check-out-a;"></a></li> -->
+                
+                <li class="reblog"><a href="http://www.tumblr.com/reblog/41467445621/9396C0dl"></a></li>                   
+                
+                <li class="facebook"><iframe src="//www.facebook.com/plugins/like.php?href=http://tjmaxx.tumblr.com/post/41467445621/3-maxx-finds-were-jealous-of-jan-25-check-out-a&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" allowTransparency="true"></iframe></li>
+                
+                <li class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-text="Maxx Style" data-via="tjmaxx" data-url="http://tjmaxx.tumblr.com/post/41467445621/3-maxx-finds-were-jealous-of-jan-25-check-out-a" data-counturl="http://tjmaxx.tumblr.com/post/41467445621/3-maxx-finds-were-jealous-of-jan-25-check-out-a">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+
+                <!--
+                <li class="pinterest"><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Ftjmaxx.tumblr.com%2Fpost%2F41467445621%2F3-maxx-finds-were-jealous-of-jan-25-check-out-a&media=https%3A%2F%2Fgraph.facebook.com%2Finsidesource%2Fpicture%3Ftype%3Dlarge" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></li>
+            -->
+            
+            <li class="pinterest"><a href='javascript:void(run_pinmarklet1())'><img src="http://2.bp.blogspot.com/-lRae8bdMpuA/TzuLrnycXaI/AAAAAAAACQE/YVYUjfs7dm8/s1600/pinmask2.png" style='margin:0; padding:0; border:none;'/></a>
+            
+<script type='text/javascript'>
+function run_pinmarklet1() {
+  var e=document.createElement('script');
+  e.setAttribute('type','text/javascript');
+  e.setAttribute('charset','UTF-8');
+  e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);
+  document.body.appendChild(e);
+}
+</script>
+</li>
+
+                <li class="comments">comments <a class="dsq-comment-count" href="http://tjmaxx.tumblr.com/post/41467445621/3-maxx-finds-were-jealous-of-jan-25-check-out-a#disqus_thread"></a></li>
+                
+                <li class="likes">notes 15</li>
+            
+            </ul>
+        
+         </div>
+
+            
+                        <ul id="tags">
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/maxxinista-lifestyle">maxxinista lifestyle</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/maxxinista">maxxinista</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/fashion">fashion</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/style">style</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/jewelry">jewelry</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/necklace">necklace</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/boots">boots</a></li>
+                       
+                       </ul>
+              
+    
+     </div>
+                        
+
+                    
+                   <!-- <div class="footer " style="
+                        display:none;
+                        display:block;
+                        
+                    ">
+                        
+                        
+                        
+                        <div class="clear"></div>
+                    </div> -->
+                    
+                    
+                    
+                    
+                        
+                    
+   
+
+
+                </div>
+                
+            
+                <div class="post">
+                    
+                    <a href="http://tjmaxx.tumblr.com/post/40862459818/maxx-finds-jan-18" class="plink">http://tjmaxx.tumblr.com/post/40862459818/maxx-finds-jan-18</a>
+                    
+                    
+                    
+                    
+                        <div class="media"><div id="photoset_40862459818" class="html_photoset">    <iframe class="photoset" scrolling="no" frameborder="0" height="837" width="500"
+                style="allowTransparency=true; border:0px; background-color:transparent; overflow:hidden;" src="http://tjmaxx.tumblr.com/post/40862459818/photoset_iframe/tjmaxx/tumblr_mgu8uprHNs1rdh2cx/500/false"></iframe></div></div>
+                        <div class="copy">
+<h3>
+<span>3 Maxx Finds we’re jealous of:</span> jan 18</h3>
+<p>Check out a few of the enviable Maxx Finds our savvy Maxxinistas have scored! </p>
+<p class="read_more_container"><a href="http://tjmaxx.tumblr.com/post/40862459818/maxx-finds-jan-18" class="read_more">Read More</a></p></div>
+                    
+                    
+                    
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+
+
+
+    <div class="footer for_permalink">
+        <div class="date">
+            <a href="http://tjmaxx.tumblr.com/post/40862459818/maxx-finds-jan-18">
+                
+                                        
+                
+                    Posted 1 month ago
+                
+            </a>
+        </div>
+                                
+        <div class="social">
+
+            <ul>
+            
+                <li class="my-like" data-reblog="http://www.tumblr.com/reblog/40862459818/hMlO0T3w" data-id="40862459818" title="Like"></li>
+                
+                <!-- <li class="reblog"><a href="http://tmv.proto.jp/reblog.php?post_url=http://tjmaxx.tumblr.com/post/40862459818/maxx-finds-jan-18;"></a></li> -->
+                
+                <li class="reblog"><a href="http://www.tumblr.com/reblog/40862459818/hMlO0T3w"></a></li>                   
+                
+                <li class="facebook"><iframe src="//www.facebook.com/plugins/like.php?href=http://tjmaxx.tumblr.com/post/40862459818/maxx-finds-jan-18&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" allowTransparency="true"></iframe></li>
+                
+                <li class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-text="Maxx Style" data-via="tjmaxx" data-url="http://tjmaxx.tumblr.com/post/40862459818/maxx-finds-jan-18" data-counturl="http://tjmaxx.tumblr.com/post/40862459818/maxx-finds-jan-18">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+
+                <!--
+                <li class="pinterest"><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Ftjmaxx.tumblr.com%2Fpost%2F40862459818%2Fmaxx-finds-jan-18&media=https%3A%2F%2Fgraph.facebook.com%2Finsidesource%2Fpicture%3Ftype%3Dlarge" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></li>
+            -->
+            
+            <li class="pinterest"><a href='javascript:void(run_pinmarklet1())'><img src="http://2.bp.blogspot.com/-lRae8bdMpuA/TzuLrnycXaI/AAAAAAAACQE/YVYUjfs7dm8/s1600/pinmask2.png" style='margin:0; padding:0; border:none;'/></a>
+            
+<script type='text/javascript'>
+function run_pinmarklet1() {
+  var e=document.createElement('script');
+  e.setAttribute('type','text/javascript');
+  e.setAttribute('charset','UTF-8');
+  e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);
+  document.body.appendChild(e);
+}
+</script>
+</li>
+
+                <li class="comments">comments <a class="dsq-comment-count" href="http://tjmaxx.tumblr.com/post/40862459818/maxx-finds-jan-18#disqus_thread"></a></li>
+                
+                <li class="likes">notes 9</li>
+            
+            </ul>
+        
+         </div>
+
+            
+                        <ul id="tags">
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/maxxinista">maxxinista</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/maxxinista-lifestyle">maxxinista lifestyle</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/fashion">fashion</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/style">style</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/designer">designer</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/boots">boots</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/watch">watch</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/handbag">handbag</a></li>
+                       
+                       </ul>
+              
+    
+     </div>
+                        
+
+                    
+                   <!-- <div class="footer " style="
+                        display:none;
+                        display:block;
+                        
+                    ">
+                        
+                        
+                        
+                        <div class="clear"></div>
+                    </div> -->
+                    
+                    
+                    
+                    
+                        
+                    
+   
+
+
+                </div>
+                
+            
+                <div class="post">
+                    
+                    <a href="http://tjmaxx.tumblr.com/post/40270094123/maxx-finds-jan-11" class="plink">http://tjmaxx.tumblr.com/post/40270094123/maxx-finds-jan-11</a>
+                    
+                    
+                    
+                    
+                        <div class="media"><div id="photoset_40270094123" class="html_photoset">    <iframe class="photoset" scrolling="no" frameborder="0" height="712" width="500"
+                style="allowTransparency=true; border:0px; background-color:transparent; overflow:hidden;" src="http://tjmaxx.tumblr.com/post/40270094123/photoset_iframe/tjmaxx/tumblr_mgh1u9Tq0X1rdh2cx/500/false"></iframe></div></div>
+                        <div class="copy">
+<h3>
+<span>3 Maxx Finds we’re jealous of:</span> jan 11</h3>
+<p>Check out a few of the enviable Maxx Finds our savvy Maxxinistas have scored! </p>
+<p class="read_more_container"><a href="http://tjmaxx.tumblr.com/post/40270094123/maxx-finds-jan-11" class="read_more">Read More</a></p></div>
+                    
+                    
+                    
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+
+
+
+    <div class="footer for_permalink">
+        <div class="date">
+            <a href="http://tjmaxx.tumblr.com/post/40270094123/maxx-finds-jan-11">
+                
+                                        
+                
+                    Posted 2 months ago
+                
+            </a>
+        </div>
+                                
+        <div class="social">
+
+            <ul>
+            
+                <li class="my-like" data-reblog="http://www.tumblr.com/reblog/40270094123/xLn2M7GJ" data-id="40270094123" title="Like"></li>
+                
+                <!-- <li class="reblog"><a href="http://tmv.proto.jp/reblog.php?post_url=http://tjmaxx.tumblr.com/post/40270094123/maxx-finds-jan-11;"></a></li> -->
+                
+                <li class="reblog"><a href="http://www.tumblr.com/reblog/40270094123/xLn2M7GJ"></a></li>                   
+                
+                <li class="facebook"><iframe src="//www.facebook.com/plugins/like.php?href=http://tjmaxx.tumblr.com/post/40270094123/maxx-finds-jan-11&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" allowTransparency="true"></iframe></li>
+                
+                <li class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-text="Maxx Style" data-via="tjmaxx" data-url="http://tjmaxx.tumblr.com/post/40270094123/maxx-finds-jan-11" data-counturl="http://tjmaxx.tumblr.com/post/40270094123/maxx-finds-jan-11">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+
+                <!--
+                <li class="pinterest"><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Ftjmaxx.tumblr.com%2Fpost%2F40270094123%2Fmaxx-finds-jan-11&media=https%3A%2F%2Fgraph.facebook.com%2Finsidesource%2Fpicture%3Ftype%3Dlarge" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></li>
+            -->
+            
+            <li class="pinterest"><a href='javascript:void(run_pinmarklet1())'><img src="http://2.bp.blogspot.com/-lRae8bdMpuA/TzuLrnycXaI/AAAAAAAACQE/YVYUjfs7dm8/s1600/pinmask2.png" style='margin:0; padding:0; border:none;'/></a>
+            
+<script type='text/javascript'>
+function run_pinmarklet1() {
+  var e=document.createElement('script');
+  e.setAttribute('type','text/javascript');
+  e.setAttribute('charset','UTF-8');
+  e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);
+  document.body.appendChild(e);
+}
+</script>
+</li>
+
+                <li class="comments">comments <a class="dsq-comment-count" href="http://tjmaxx.tumblr.com/post/40270094123/maxx-finds-jan-11#disqus_thread"></a></li>
+                
+                <li class="likes">notes 13</li>
+            
+            </ul>
+        
+         </div>
+
+            
+                        <ul id="tags">
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/maxxinista-lifestyle">maxxinista lifestyle</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/maxxinista">maxxinista</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/TJMaxx">TJMaxx</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/fashion">fashion</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/style">style</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/designer">designer</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/handbag">handbag</a></li>
+                       
+                          <li><a href="http://tjmaxx.tumblr.com/tagged/boots">boots</a></li>
+                       
+                       </ul>
+              
+    
+     </div>
+                        
+
+                    
+                   <!-- <div class="footer " style="
+                        display:none;
+                        display:block;
+                        
+                    ">
+                        
+                        
+                        
+                        <div class="clear"></div>
+                    </div> -->
+                    
+                    
+                    
+                    
+                        
+                    
+   
+
+
+                </div>
+                
+            
+            
+    
+
+            <div id="disqus">
+            
+<script type="text/javascript">var disqus_url = ""; var disqus_title ="";</script><script type="text/javascript">
+var disqus_shortname = 'tjmaxxtumblr';
+(function () {
+  var s = document.createElement('script'); s.async = true;
+  s.src = 'http://tjmaxxtumblr.disqus.com/count.js';
+  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+            
+            
+            </div>
+
+        </div>
+        
+        <div id="sidebar">
+            
+                <div id="connect-with-us">
+                    <h2>bring out your Maxxinista here:</h2>
+                    <div class="side-inner">
+                    <ul>
+                        <li class="icon"><a class="icon-facebook" href="http://www.facebook.com/tjmaxx" target="_blank"></a></li>
+                        <li class="icon"><a class="icon-twitter" href="http://www.twitter.com/tjmaxx" target="_blank"></a></li>
+                        <li class="icon"><a class="icon-pinterest" href="http://www.pinterest.com/tjmaxx" target="_blank"></a></li>
+                        <li class="icon"><a class="icon-youtube" href="http://www.youtube.com/tjmaxxonline" target="_blank"></a></li>
+                        <li class="icon"><a class="icon-tjmaxx" href="http://www.tjmaxx.com" target="_blank"></a></li>                        
+                    </ul>    
+                    </div>
+                </div>
+
+                <div id="in-the-spotlight">
+                    <h2>in the spotlight</h2>
+                    <div class="side-inner">
+                        <div id="spotlight-post"></div>
+                    </div>
+                </div>
+                
+                
+                
+                <div id="posts-we-love">
+                    <h2>posts we love</h2>
+                    <div class="side-inner">
+                        <ul id="likes">
+<li class="like_post like_photo_post">
+        
+            <div class="post_info_top" style="display:none;"><a href="http://laceyfashionista.com/post/45186298184">Photo</a> <span class="via">via</span> <a href="http://laceyfashionista.com/">laceyfashionista</a></div>
+    
+            
+                    <a href="http://laceyfashionista.com/post/45186298184" class="photo_link">
+                                    <img class="like_photo" alt=""
+                                src="http://24.media.tumblr.com/6bbc0706bec8f95efa92b6bed1eaed08/tumblr_mepcr1ovRW1r7n4ueo1_250.jpg"/>
+                    </a>
+
+
+
+        <div class="like_below_photo"></div>
+
+                
+        
+            <div class="post_info_bottom" style="display:none;"><a href="http://laceyfashionista.com/post/45186298184">Photo</a> <span class="via">via</span> <a href="http://laceyfashionista.com/">laceyfashionista</a></div>
+        
+    </li></ul>
+                        <!-- <a href="http://www.tumblr.com/liked/by/tjmaxx">See more stuff I like</a> -->
+                    </div>        
+                </div> 
+                
+                
+                
+                <div id="trending-topics">
+                    <h2>trending topics</h2>
+                    <div class="side-inner">
+                        <script type="text/javascript" src="http://rive.rs/javascripts/tumblr.min.js?css=default&order=frequency&limit=10&minsize=100&maxsize=100"></script>
+                    </div>
+                </div>                
+                
+                
+                <div id="people-we-follow">
+                    <h2>people we follow</h2>
+                    <div class="side-inner">
+                        
+                        <a href="http://www.sarazucker.com/"><img src="http://25.media.tumblr.com/avatar_b7391fd5b0c3_40.png" /></a><a href="http://laceyfashionista.com/"><img src="http://25.media.tumblr.com/avatar_672502b8b318_40.png" /></a><a href="http://nouveaulune.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_d37748f5d7b2_40.png" /></a><a href="http://womensweardaily.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_d68bd8446787_40.png" /></a><a href="http://intothegloss.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_72c8be36de14_40.png" /></a><a href="http://the-street-muse.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_f07270adc99d_40.png" /></a><a href="http://theniftyfifties.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_3d06fffe3f22_40.png" /></a><a href="http://details.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_cfe4e08eb00e_40.png" /></a><a href="http://jlaonvellemaontdi.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_702e07c93714_40.png" /></a><a href="http://dailycandy.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_90a2beb60f34_40.png" /></a><a href="http://www.wetheurban.com/"><img src="http://24.media.tumblr.com/avatar_d68ce8a26fad_40.png" /></a><a href="http://flordemariafashion.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_dddfa1be3c65_40.png" /></a><a href="http://livebrokeandbeautiful.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_ee78d6378e2c_40.png" /></a><a href="http://ashley-ringmybell.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_96d6fb92d5a4_40.png" /></a><a href="http://tolovetheloveless.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_e7aab7d0a381_40.png" /></a><a href="http://femmenautralite615.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_fb69c5d6dff6_40.png" /></a><a href="http://evachen212.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_e33838554c01_40.png" /></a><a href="http://joyinthecity.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_37fe5b0cafd4_40.png" /></a><a href="http://haikus-about-cannibalism.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_8fb51b72a905_40.png" /></a><a href="http://emsilly.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_34780f432679_40.png" /></a><a href="http://glamourgirlsandwhiskey.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_626fcc394649_40.png" /></a><a href="http://maisonmartinmargiela.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_17dd58ed6d7e_40.png" /></a><a href="http://katespadeny.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_4fc28483d0fe_40.png" /></a><a href="http://littlemissodd.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_8a00a57a7d75_40.png" /></a><a href="http://afluorescentadolescent.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_549c2fc237bf_40.png" /></a><a href="http://inthecitywithcrystalin.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_0bfd5de8a96b_40.png" /></a><a href="http://lulufrost.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_18d2aa982a20_40.png" /></a><a href="http://sephora.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_94bc00803654_40.png" /></a><a href="http://misskaiqiann-xox.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_24f6c500c52c_40.png" /></a><a href="http://putthison.com/"><img src="http://25.media.tumblr.com/avatar_fc5d5ca1c4f4_40.png" /></a><a href="http://stylewithinreach.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_05851460f29b_40.png" /></a><a href="http://violenceandscience.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_28d0a3cf8efa_40.png" /></a><a href="http://cfda.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_af32ab00caf8_40.png" /></a><a href="http://insideindie.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_0c2802015868_40.png" /></a><a href="http://vogue.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_677627cda729_40.png" /></a><a href="http://shoelust.us/"><img src="http://25.media.tumblr.com/avatar_9d8d660e4749_40.png" /></a><a href="http://theprcloset.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_2ac522a4e8e8_40.png" /></a><a href="http://www.karlapowell.co.uk/"><img src="http://25.media.tumblr.com/avatar_b5b07b5a4c2e_40.png" /></a><a href="http://galaxy--traveler.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_ddfb5295d3a7_40.png" /></a><a href="http://crfashionbook.com/"><img src="http://24.media.tumblr.com/avatar_dc3eefe3f535_40.png" /></a><a href="http://adventuresofanerd.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_c6c1cd866a14_40.png" /></a><a href="http://powderdoom.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_1548d7873ed2_40.png" /></a><a href="http://theclotheshorse.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_517f36d9df58_40.png" /></a><a href="http://grayskymorning.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_674565d5d998_40.png" /></a><a href="http://vogueadventure.com/"><img src="http://25.media.tumblr.com/avatar_cc09a8bc778c_40.png" /></a><a href="http://cutediary.info/"><img src="http://24.media.tumblr.com/avatar_d6e72f70c0cf_40.png" /></a><a href="http://funfitfashionable.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_45960dd351c5_40.png" /></a><a href="http://www.cultofpretty.com/"><img src="http://25.media.tumblr.com/avatar_9a09750b26d4_40.png" /></a><a href="http://pamelalovenyc.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_b916a9338600_40.png" /></a><a href="http://b-ayesha.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_be07a2509c75_40.png" /></a><a href="http://whatiwore.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_61bb2b7996e3_40.png" /></a><a href="http://vanityfair.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_da121d0a0626_40.png" /></a><a href="http://www.valentineuhovski.com/"><img src="http://25.media.tumblr.com/avatar_a4062753cd96_40.png" /></a><a href="http://fordmodels.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_59d83312fedd_40.png" /></a><a href="http://cincygirlstyle.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_33378d487a77_40.png" /></a><a href="http://kelawalker.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_6ad9c180e426_40.png" /></a><a href="http://jesslyincleveland.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_f15a3941d711_40.png" /></a><a href="http://richesforrags.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_e8543e0ae715_40.png" /></a><a href="http://alissaindresses.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_5e3c98ae80bd_40.png" /></a><a href="http://ohwhatabeautifulthing.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_66d95c4209a1_40.png" /></a><a href="http://poplipps.com/"><img src="http://24.media.tumblr.com/avatar_6e4b991ff5de_40.png" /></a><a href="http://makeuptips-blog.com/"><img src="http://25.media.tumblr.com/avatar_3ffe04f9104a_40.png" /></a><a href="http://katieheron-and-theplastics.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_094d0b0bd905_40.png" /></a><a href="http://innocentlymylove.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_f6445b0a2e24_40.png" /></a><a href="http://terrysdiary.com/"><img src="http://25.media.tumblr.com/avatar_857937388d7d_40.png" /></a><a href="http://tjcksql.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_0deb4018cd70_40.png" /></a><a href="http://ninagarcia.com/"><img src="http://25.media.tumblr.com/avatar_c522df2c96e2_40.png" /></a><a href="http://re-mix-her.com/"><img src="http://25.media.tumblr.com/avatar_69da41a7c46d_40.png" /></a><a href="http://ethandesu.com/"><img src="http://24.media.tumblr.com/avatar_924964d250c5_40.png" /></a><a href="http://fashioneestar.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_7ffaaa172796_40.png" /></a><a href="http://girlwithcurves.com/"><img src="http://25.media.tumblr.com/avatar_c2ac50333bc9_40.png" /></a><a href="http://big--city--dreamer.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_26ffcf057f36_40.png" /></a><a href="http://myomy.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_d303e700efe2_40.png" /></a><a href="http://adriacolorado.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_8696708b29e0_40.png" /></a><a href="http://thecovetedmuse.tumblr.com/"><img src="http://assets.tumblr.com/images/default_avatar_40.gif" /></a><a href="http://learn-to-be-still.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_cc743ac84ddb_40.png" /></a><a href="http://mochafleur.com/"><img src="http://24.media.tumblr.com/avatar_341e0aa65586_40.png" /></a><a href="http://aroadtofollow.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_bdcdba23f1b5_40.png" /></a><a href="http://ohmygypsysoul.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_850860c2a890_40.png" /></a><a href="http://geescloset.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_21da576efc87_40.png" /></a><a href="http://cali4.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_91776afdeb98_40.png" /></a><a href="http://infamousdaydreams.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_7af8871500b4_40.png" /></a><a href="http://shelbylovexo.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_7c95dd6130e6_40.png" /></a><a href="http://rex-manning-day.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_e230eac0cdb8_40.png" /></a><a href="http://white-nicki-minaj.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_830fef0a775b_40.png" /></a><a href="http://bryanteslava.com/"><img src="http://24.media.tumblr.com/avatar_b25e2de1bb2e_40.png" /></a><a href="http://elegantly-tasteless.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_024a4cf83ba7_40.png" /></a><a href="http://samantharosen5.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_6db035f24716_40.png" /></a><a href="http://calivintage.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_0bbc836b13c5_40.png" /></a><a href="http://restlessmindsandconstantfetishes.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_330ced396b30_40.png" /></a><a href="http://ja-dollarsign-on.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_a91f59470795_40.png" /></a><a href="http://movingwaters.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_3c95faedfdba_40.png" /></a><a href="http://charethcutestory.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_2d244fe38141_40.png" /></a><a href="http://allthingspreppy.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_dc7d526c7726_40.png" /></a><a href="http://meredithlainecinnamon.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_7bac8778a447_40.png" /></a><a href="http://makeupbox.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_df360486283a_40.png" /></a><a href="http://officialrodarte.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_05b264eb518f_40.png" /></a><a href="http://simplymekrl.tumblr.com/"><img src="http://assets.tumblr.com/images/default_avatar_40.gif" /></a><a href="http://oh-so-coco.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_3373518736cb_40.png" /></a><a href="http://ms-malllllaa.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_25e3797eaed2_40.png" /></a><a href="http://10022-shoe.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_abb311f9f53f_40.png" /></a><a href="http://lazydazypurplehazyrhian.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_dbff8c23c647_40.png" /></a><a href="http://cultureclub.clubmonaco.com/"><img src="http://24.media.tumblr.com/avatar_e4070a8acefb_40.png" /></a><a href="http://yourmothershouldknow.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_60416f725726_40.png" /></a><a href="http://brianawaslike.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_e6618b35c242_40.png" /></a><a href="http://simply--aesthetic.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_30d5e2a20e9d_40.png" /></a><a href="http://drugstoreprincess.com/"><img src="http://25.media.tumblr.com/avatar_0e617fe1a6bc_40.png" /></a><a href="http://beautyhairqueen.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_9284037af968_40.png" /></a><a href="http://paigeypoo-pookaloo.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_a58316d27212_40.png" /></a><a href="http://taliasfashionblog.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_9030b375226a_40.png" /></a><a href="http://www.blkdnmcloseup.com/"><img src="http://24.media.tumblr.com/avatar_b82f7a01f553_40.png" /></a><a href="http://luckymag.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_96af3db5f687_40.png" /></a><a href="http://michin70.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_85c0ade842c6_40.png" /></a><a href="http://tumblr.elle.com/"><img src="http://24.media.tumblr.com/avatar_60abf0ba8c3b_40.png" /></a><a href="http://houseatpoohcorner.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_9f74e1b0403f_40.png" /></a><a href="http://gq.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_0938ca007705_40.png" /></a><a href="http://glamour.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_cbf7a482cb8c_40.png" /></a><a href="http://whatthefrockblog.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_f8972f290b9b_40.png" /></a><a href="http://harpersbazaar.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_8923007e7440_40.png" /></a><a href="http://tumblr.bergdorfgoodman.com/"><img src="http://25.media.tumblr.com/avatar_6477deb84fd9_40.png" /></a><a href="http://milkstudios.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_b3058577db3d_40.png" /></a><a href="http://rachelzoe.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_a63ca18476ec_40.png" /></a><a href="http://www.meninthistown.com/"><img src="http://25.media.tumblr.com/avatar_78132f953d86_40.png" /></a><a href="http://tumblr.bandofoutsiders.com/"><img src="http://25.media.tumblr.com/avatar_08536f6048bd_40.png" /></a><a href="http://flarefashion.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_13d25c4acc4d_40.png" /></a><a href="http://dknyprgirl.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_4d8667e039d3_40.png" /></a><a href="http://vintageblackglamour.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_28f286f4a4b7_40.png" /></a><a href="http://geekistastyle.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_168befe3ee0e_40.png" /></a><a href="http://wmagazine.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_8a6844c8bb7e_40.png" /></a><a href="http://burberry.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_bedd10c00fd8_40.png" /></a><a href="http://marcjacobs.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_7f1c87504c61_40.png" /></a><a href="http://ramshackleglam.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_fc682fe33fac_40.png" /></a><a href="http://www.beautyaesthetic.co.uk/"><img src="http://25.media.tumblr.com/avatar_367d0b3583da_40.png" /></a><a href="http://goodbuygirlblog.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_2a337538ccf8_40.png" /></a><a href="http://missladyfinger.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_19ea107e9e32_40.png" /></a><a href="http://rsenne.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_b430786fc4c9_40.png" /></a><a href="http://togandtatter.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_dfb68551873a_40.png" /></a><a href="http://beautylish.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_deaa4203a393_40.png" /></a><a href="http://themanrepeller.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_3c43e0cf2c65_40.png" /></a><a href="http://electricblogarella.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_d51ff16372b1_40.png" /></a><a href="http://teenagers-closet.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_763d04464a20_40.png" /></a><a href="http://thaliamaxxinista.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_3f8ea9a88256_40.png" /></a><a href="http://ieatcoffee.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_d0e8f5c6c2b2_40.png" /></a><a href="http://6plus6plus6.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_d006486a6ad7_40.png" /></a><a href="http://pkxiong92.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_419625cfed4b_40.png" /></a><a href="http://altamiranyc.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_da25e45f4c38_40.png" /></a><a href="http://feastfashionfaves.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_db3c9ea9a9d9_40.png" /></a><a href="http://cakeface-facts.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_244f9114256f_40.png" /></a><a href="http://oscarprgirl.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_e4984aab3d75_40.png" /></a><a href="http://realangeline.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_7ab3a4597960_40.png" /></a><a href="http://afablife.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_8f242771189a_40.png" /></a><a href="http://sexy-sweaters.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_137ad0db8a3e_40.png" /></a><a href="http://createthislookforless.com/"><img src="http://24.media.tumblr.com/avatar_06935aa5bc00_40.png" /></a><a href="http://nicolaformichetti.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_0bb8782ad2cc_40.png" /></a><a href="http://ubicouture.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_5216dca48cfa_40.png" /></a><a href="http://closetcollage.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_958f5778e567_40.png" /></a><a href="http://a-new-version-of-you.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_f5392a93b6c8_40.png" /></a><a href="http://the-ocean-of-emotion.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_7e1e9f8adca2_40.png" /></a><a href="http://staff.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_013241641371_40.png" /></a><a href="http://fromtuesdaywithlove.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_32b4a627d695_40.png" /></a><a href="http://witanddelight.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_3af8e427e6f3_40.png" /></a><a href="http://washingtonpoststyle.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_3bf783ca885c_40.png" /></a><a href="http://thriftyfashionista.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_358542d87397_40.png" /></a><a href="http://frozen2late.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_10eb6c5a3a9d_40.png" /></a><a href="http://habituallychic.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_0e5c543009c3_40.png" /></a><a href="http://matchbookmag.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_7ea27fefdbeb_40.png" /></a><a href="http://vickyishigh.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_aa49ba6d436d_40.png" /></a><a href="http://makeup-madness.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_333e285c56b0_40.png" /></a><a href="http://lulakilla.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_e52163cf38be_40.png" /></a><a href="http://missevadoesit.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_c73aa31a0b93_40.png" /></a><a href="http://goingtomakeitmine.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_d16b0330c978_40.png" /></a><a href="http://madewithmakeup.co.uk/"><img src="http://24.media.tumblr.com/avatar_67ef2f4cd56a_40.png" /></a><a href="http://thewallgroup.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_9b5b2bb26ed3_40.png" /></a><a href="http://thickofit.com/"><img src="http://24.media.tumblr.com/avatar_1ec4500c0894_40.png" /></a><a href="http://thestyleline.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_5bce031b79ad_40.png" /></a><a href="http://fashgif.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_368a56701818_40.png" /></a><a href="http://jojo4548.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_0c3be1e720ab_40.png" /></a><a href="http://myfirstlovekiss.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_57cdfcd37499_40.png" /></a><a href="http://fashionblocking.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_8cdf712162a7_40.png" /></a><a href="http://textbook.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_f9cd73a14645_40.png" /></a><a href="http://tjxtreasurehunt.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_3cfc6c2e8ffb_40.png" /></a><a href="http://officialjessicastam.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_079755756508_40.png" /></a><a href="http://chicmom.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_bf7a1f48a88c_40.png" /></a><a href="http://blog.bureaubetak.com/"><img src="http://25.media.tumblr.com/avatar_c5a00794f592_40.png" /></a><a href="http://krispykrysp3.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_b643c6a9e951_40.png" /></a><a href="http://krybabyy.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_abf789004bf3_40.png" /></a><a href="http://a-dreamer-scrapbook.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_91ccb0686535_40.png" /></a><a href="http://freedomlovetheater.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_b6f86280e307_40.png" /></a><a href="http://lurvemag.com/"><img src="http://25.media.tumblr.com/avatar_fb8e58dc1230_40.png" /></a><a href="http://theillustratednail.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_c3b28abd6b5e_40.png" /></a><a href="http://killingheels.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_7ff7bbf32568_40.png" /></a><a href="http://bonobos.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_21f79315d7ff_40.png" /></a><a href="http://tmagazine.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_1bde69ed791d_40.png" /></a><a href="http://stealsinheels.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_cdf8a0e8b6df_40.png" /></a><a href="http://beautybombbb.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_a69878f6bb6d_40.png" /></a><a href="http://www.gifenchy.com/"><img src="http://24.media.tumblr.com/avatar_fe35eea87d5d_40.png" /></a><a href="http://wearthistothat.com/"><img src="http://25.media.tumblr.com/avatar_bef57c59b6f3_40.png" /></a><a href="http://brokegirlfashion.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_54c8a9876c7b_40.png" /></a><a href="http://dinafierro.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_1cb3b5863b20_40.png" /></a><a href="http://annamarie.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_a4f0cbe4ddde_40.png" /></a><a href="http://loveforfashion.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_ca70b7e3a191_40.png" /></a><a href="http://oldrags.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_2ff71548e5dc_40.png" /></a><a href="http://tumblr.instyle.com/"><img src="http://25.media.tumblr.com/avatar_ce286a639bd4_40.png" /></a><a href="http://sheskimmie.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_e0518182972f_40.png" /></a><a href="http://fashionscoutlondon.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_99f28254e38b_40.png" /></a><a href="http://refinery29.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_c9727484d36a_40.png" /></a><a href="http://marieclairemag.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_d7e3c096600e_40.png" /></a><a href="http://jessicastonger.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_420dd4844a8e_40.png" /></a><a href="http://lindimarie.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_e083b5cc7bb9_40.png" /></a><a href="http://thriftpreppy.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_ff016271115f_40.png" /></a><a href="http://c-helsea-lately.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_2c2a1dcebbc0_40.png" /></a><a href="http://walmartcouture.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_8170c5a7f467_40.png" /></a><a href="http://aestheticfeast.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_3aa83b5beef3_40.png" /></a><a href="http://maxxinistagirl.tumblr.com/"><img src="http://assets.tumblr.com/images/default_avatar_40.gif" /></a><a href="http://iheartheels.tumblr.com/"><img src="http://24.media.tumblr.com/avatar_9ca53d6397ac_40.png" /></a><a href="http://theglamnetwork.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_1fa4f0f671f8_40.png" /></a><a href="http://laurenmessiah.tumblr.com/"><img src="http://25.media.tumblr.com/avatar_5b5d6cc8e10d_40.png" /></a>
+                        
+                    </div>
+                </div>
+                                
+                
+                
+                
+                <!--
+                <div id="pages" class="ask_and_submit">
+                    
+                    
+                    <div class="clear"></div>
+                </div>
+                -->
+           
+                <!--
+                
+                -->
+                
+
+                <!--
+                <div id="search-scope">
+                    <input type="radio" id="search-scope-me" name="scope" checked onclick="document.getElementById('search-form').action='/search'" /> <label for="search-scope-me" onclick="document.getElementById('search-form').action='/search'">My blog</label>
+                    <input type="radio" id="search-scope-all" name="scope" onclick="document.getElementById('search-form').action='http://www.tumblr.com/search'" /> <label for="search-scope-all" onclick="document.getElementById('search-form').action='http://www.tumblr.com/search'">All of Tumblr</label>
+                </div>
+                -->
+                
+                <!--
+                <a href="http://www.tumblr.com/follow/tjmaxx"><div class="heading" id="followontumblr">Follow on Tumblr</div></a>
+                -->
+                
+                <!--
+                
+                -->
+
+                <!-- 
+                <div id="buttons">
+                    <div class="row">
+                        <div class="button" id="button-rss"><a href="http://tjmaxx.tumblr.com/rss">RSS feed</a></div>
+                        <div class="button" id="button-random"><a href="/random">Random</a></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="row">
+                        <div class="button" id="button-archive"><a href="/archive">Archive</a></div>
+                        <div class="button" id="button-mobile"><a href="/mobile">Mobile</a></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                -->
+                
+            </div>
+            
+            <div id="footer">
+        
+            
+                <div id="navigation" >
+                    <div class="previous-next-link">
+                    <a href="/tagged/maxxinista+lifestyle/page/2" class="prev">PREVIOUS</a>
+                    </div>
+                    
+                    <div class="current_page">&nbsp;
+                     Page 1 <em>of</em> 4
+                     
+                            
+
+                    
+                    
+                    </div>
+                    
+                    <div class="previous-next-link">
+                    
+                    </div>
+                </div>
+                        
+            
+            
+            
+            
+
+
+
+            
+            <div id="copyright">
+            
+            <a href="http://www.tjmaxx.com"><img src="http://static.tumblr.com/14z7cpm/hQWm9itpi/logo-small.gif" alt="T.J.Maxx"></a>
+            <br>
+            &copy; 2012–2013 T.J. Maxx. All Rights Reserved.
+            <br>
+            <a href="http://www.tjmaxx.com/terms-of-use/" target="_blank">Terms of Use</a> | <a href="http://www.tjmaxx.com/privacy/" target="_blank">Privacy Policy</a> 
+            <div class="disclaimer">Styles vary by store.<br>T.J.Maxx does not verify the content submitted by Maxxinistas.</div>           
+            </div>
+            
+            </div>
+        
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+    
+    
+    
+        <script type="text/javascript">
+            //<![CDATA[
+            (function() {
+                var links = document.getElementsByTagName('a');
+                var query = '?';
+                for(var i = 0; i < links.length; i++) {
+                    if(links[i].href.indexOf('#disqus_thread') >= 0) {
+                        query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+                    }
+                }
+                document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/tjmaxxtumblr/get_num_replies.js' + query + '"></' + 'script>');
+            })();
+            //]]>
+        </script>
+    
+     
+    
+    
+    <script type="text/javascript">
+
+        jQuery(document).ready(function() { 
+            
+            postnum = 0;
+            
+            jQuery('.post').each(function(index) {
+                perma = 'empty';
+                perma = jQuery(this).find('.plink').attr('href');
+                postnum = postnum + 1; 
+                jQuery(this).addClass('' + perma + ''); 
+                // alert('Post ' + postnum + ': ' + perma);
+                
+                if (jQuery(this).find('h3').length > 0) {
+                    h3value = jQuery(this).find('h3').html();
+                    jQuery(this).find('h3').html('<a href="'+perma+'">' + h3value + '</a>');
+                }                 
+                
+                
+            });   
+            
+            setTimeout('removeComment()', 1500);
+
+            jQuery('.post_info_bottom').prepend('From: ');
+            jQuery('.post_info_bottom a:last-child').show();
+
+        
+            jQuery(".photoset").each(function() { 
+                var newSrc = jQuery(this).attr("src").replace('500','660');
+                jQuery(this).attr("src", newSrc);
+                ifrh = jQuery(this).attr('height');
+                newh = (ifrh/500)*660;
+                jQuery(this).css("height", newh);
+            });   
+
+
+        });
+        
+        function removeComment() {
+            jQuery('li.comments .dsq-comment-count').each(function() {
+                initval = jQuery(this).html();
+                newval = initval.replace(" Comments", "");
+                finalval = newval.replace(" Comment", "");
+                jQuery(this).html(finalval);
+            });
+            
+        }
+        
+
+    </script>
+    
+    
+<script type="text/javascript">
+                function loadPageVar(sVar) {
+                                return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(sVar).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+                }
+                                
+                jQuery(document).ready(function() {
+                                /* FIGURE OUT WHAT PAGE YOU ARE ON AND MAKE THAT ACCESSIBLE */
+                                var blogURL = "http://" + document.domain +   "/";
+                                var currentURL = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search;
+                                
+                                if (currentURL.indexOf("www.tumblr.com/edit/") > 0) {
+                                                var postID = window.location.pathname.replace("/edit/", "");
+                                                currentURL = jQuery("#post-"+postID+"-url").attr("href");
+                                                blogURL = "http://" + loadPageVar("redirect_to").split("/")[2] + ".tumblr.com/";
+                                }
+                                var currentPage = currentURL.replace(blogURL, "");
+                                
+                                /* ADD CSS CLASSES TO BODY DEPENDING OF CURRENT PAGE */
+                                if (currentURL != blogURL) {
+                                                var classnames = currentPage.split("/");
+                                                classnames.push(currentPage.replace(/\//gi, "-"));
+                                                for (var i = 0; i < classnames.length; i++) {
+                                                                jQuery("body").addClass(classnames[i]);
+                                                }
+                                } else {
+                                                jQuery("body").addClass("home");
+                                }
+                                
+                                /* LOAD TAGGED POSTS AND APPEND THEM TO SOME DIV */
+                                var container = "#spotlight-post";                                                                                                         //where to insert the posts
+                                var tag = "spotlight";                                                                                                                                         //which tags
+                                var time = Math.round(new Date().getTime() / 1000 / 300);                         //min cache time (optional)
+                                
+                                
+                                var parserURL = "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&q=";
+                                var url = parserURL + encodeURIComponent(blogURL+"tagged/"+tag+"/rss?t="+time)+"&callback=?";
+                                jQuery.getJSON(url, function(data) {
+                                                var items = [];
+                                                var entries = data.responseData.feed.entries;
+                                                for (var i = 0; i < entries.length; i++) {
+                                                                var categories = [];
+                                                                var item = '';
+                                                                var title = entries[i].title;
+                                                                var content = entries[i].content;
+                                                                
+                                                                                
+item += '<a href="'+entries[i].link+'">';
+
+item += content;
+                                                                                
+item += '</a>';
+
+
+
+for (var j = 0; j < entries[i].categories.length; j++) {
+                                                                                                var category = entries[i].categories[j];
+                                                                                                categories.push('<a href="'+blogURL+'tagged/'+category+'">'+category+'</a>');
+                                                                                }
+                                                                                                                                                
+                                                                
+                                                                items.push(item);
+                                                }
+                                                jQuery('<div/>', {
+                                                                html: items.join('')
+                                                }).appendTo(container);
+                                });
+
+  
+    getImage();
+    
+  
+    });
+    
+function getImage() {
+    spotimageheight = setTimeout('spotImage()', 1000);
+}
+
+
+
+function spotImage() {
+    jQuery('#spotlight-post img').attr('id','spotlight-image');
+    var spimg = document.getElementById('spotlight-image'); 
+    var spimgh = spimg.clientHeight;
+    var spotheight = spimgh + 94;
+    jQuery('#sidebar #spotlight-post').height(spotheight);
+    jQuery('#spotlight-post').addClass('spotlight-load');
+    jQuery('#spotlight-post').delay(100).animate({
+    opacity: 1
+  }, 500, function() { 
+    // Animation complete.
+  });;    
+}
+
+
+    
+</script>
+
+    
+<!-- BEGIN TUMBLR CODE -->
+        <iframe src="http://assets.tumblr.com/iframe.html?af5ce0ec8e924e785026d9afb227449e&amp;src=http%3A%2F%2Ftjmaxx.tumblr.com%2Ftagged%2Fmaxxinista-lifestyle&amp;lang=en_US&amp;name=tjmaxx" width="330" height="25" scrolling="no" frameborder="0" style="position:absolute; z-index:1337; top:0px; right:0px; border:0px; background-color:transparent; overflow:hidden;" id="tumblr_controls"></iframe>
+    <!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]-->
+    <img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="http://www.tumblr.com/impixu?T=1363368979&J=eyJ0eXBlIjoiYmxvZyIsImJsb2dpZCI6IjY4MzgyMDA4IiwidXJsIjoiaHR0cDpcL1wvdGptYXh4LnR1bWJsci5jb21cL3RhZ2dlZFwvbWF4eGluaXN0YS1saWZlc3R5bGUifQ==&U=ENGLOCNJJN&K=32d0f53655d4c6bdacecb70169052a647bcea5f3f9c8560973b629181f838dcd"/><!-- END TUMBLR CODE -->
+<iframe src="http://assets.tumblr.com/analytics.html?d35d5423c5b91651db3d0dbfc10f8d60" scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0 z-index:9999;" id="ga_target"></iframe>
+
+    <script>
+        // Makes this wait for the page to load, so that the iframe is finished before signaling. 
+        window.setTimeout(function(){
+            var analytics_frame = document.getElementById('ga_target');
+            analytics_frame.contentWindow.postMessage('enable_comscore', analytics_frame.src.split('/analytics.html')[0]);
+        }, 1000);
+    </script>
+
+
+
+    <script type="text/javascript">
+        __qoptions = _qoptions = { qacct: 'p-19UtqE8ngoZbM' };
+    </script>
+    <script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+    <noscript>
+        <img src="http://pixel.quantserve.com/pixel/p-19UtqE8ngoZbM.gif"
+        style="display:none; border-width:0px; height:1px; width:1px;"/>
+    </noscript>
+
+
+    <img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="http://www.tumblr.com/impixu?T=1363368979&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvdGptYXh4LnR1bWJsci5jb21cL3RhZ2dlZFwvbWF4eGluaXN0YS1saWZlc3R5bGUifQ==&U=CDHDGCKPJJ&K=aedc56928e68fbdde2bd42af835c643446bbd51dfb245e17e49507c2f9d756d8"/></body>
+</html>

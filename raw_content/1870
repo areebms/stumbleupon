@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
+    <head>
+        <title>LucyPhone.com - Never Wait on Hold Again</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta name="Description" content="LucyPhone.com - The Customer Switchboard" />
+        <meta name='keywords' content='Lucyphone, customer service, wait on hold, on hold, customer service tool, IVR on hold, asterisk solution' />
+        
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <!--[if lt IE 7]>
+            <link href="/stylesheets/master_ie_fix.css?1331666611" media="screen" rel="stylesheet" type="text/css" />
+        <![endif]-->
+        <style type="text/css">        
+                
+           </style>
+        <script src="/assets/lib.js?1331666800" type="text/javascript"></script>
+        <script src="/assets/fonts.js?1331666800" type="text/javascript"></script> 
+        <link href="/assets/common.css?1331666800" media="screen" rel="stylesheet" type="text/css" />
+        
+    </head>
+    <body>
+                <div id="fb-root"></div>
+          <script>
+            window.fbAsyncInit = function() {
+              FB.init({
+                appId  : '91445419990',
+                status : true, // check login status
+                cookie : true, // enable cookies to allow the server to access the session
+                
+                oauth : true,
+                xfbml  : true  // parse XFBML
+              });
+              
+            };
+
+            (function() {
+              var e = document.createElement('script'); e.async = true;
+              e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+              document.getElementById('fb-root').appendChild(e);
+            }());
+          </script>
+
+        <div id="addthis">
+            <!-- AddThis Button BEGIN --><a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;username=tomeeo"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a><!-- AddThis Button END -->
+        </div><a name="top"></a>
+        <div id="wrapper">
+            <div id="innerwrapper">
+                <div id="header">
+                    <div id="logo">
+                        <a href="/"><img src="/images/lucyphone-logo.png"/></a>
+                    </div>
+                    <div id="welcome">
+                        Welcome to lucyphone.com
+                    </div>
+                    <div id="tagline">
+                        <em>Never</em>
+                        wait on hold again...
+                    </div>
+                    <a href="/sms_callbacks" id="whatsnew">
+                        ** NEW! Text the company name to 424-999-LUCY(5829) **
+                    </a>
+                    
+
+                    <div id="account">
+
+                        
+                        
+<div class="login">
+    <a href="/login" class="modal"><img src="/images/member-login-button.png"/></a>
+    <div class="fbconnect">
+        <a href="#" onclick="connectToFacebook();"><img src="/images/fb_icon_grey.png"/></a> or connect via 
+    </div>
+</div>
+<div class="signup">
+    <a href="/signup" class="modal"><img src="/images/signup-button.png"/></a>
+</div>
+
+                    </div>
+                    <div id="nav">
+                        <ul class="nav">
+                            <li class="active">
+                                <a href="/">Start a Call</a>
+                            </li>
+                            <li class="">
+                                <a href="/about">About</a>
+                            </li>
+                            <li class="">
+                              <a href="http://corp.lucyphone.com" target="_blank">Call Centers</a>
+                            </li>
+                            <li class="">
+                                <a href="/contact">Contact</a>
+                            </li>
+                            <li class="">
+                                <a href="/help">Help</a>
+                              </li>
+                            <li class="">
+                              <a href="http://blog.lucyphone.com" target="_blank">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="main">
+                    <div id="content">
+                        
+                        <div id="call_form_wrapper">
+  <div id="call_form">
+  
+    <div id="call_fields">
+    	
+        <form action="/call/create" class="disabled launch_call main_call_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="eeq/SNrsxHg7CoaH1rGVh4EGOY1mAQkugJ5F8uabU1A=" /></div>
+        <div id="tooltips">
+          <div id="tooltip1"><img src='/images/tooltip1.png' /></div>
+          <div style="display:none;" id="tooltip2"><img src='/images/tooltip2.png' /></div>
+          <div style="display:none;" id="tooltip3"><img src='/images/tooltip3.png' /></div>
+        </div>
+        <div id="company_search">
+            <input id="company_id" name="company_id" type="hidden" />
+            <input id="company_number" name="company_number" type="hidden" />
+
+            <div class="number_wrap call_out">
+            	<div class="field_clear_button"></div>
+                <input id="company_entry" name="company_entry" type="text" />
+                <label class="over-apply" for="company_entry">
+                    Search for a company name or type any toll-free number...
+                </label>
+                
+            </div>
+
+
+            
+            <div id="add_company">
+              <a href="/company/new" ><img src='/images/add_company.png' /></a>
+            </div>
+			
+        </div>
+        <div id="customer_submit_wrap" class="hidden">
+            <div id="customer_entry">
+                <div class="number_wrap call_in">
+
+	<div class="field_clear_button"></div>
+    <input autocomplete="off" id="customer_number" name="customer_number" type="text" />
+    
+  </div>
+
+<label id="customer_overlabel" class="over-apply" for="customer_number">
+    Enter your phone #
+</label>
+
+                <div class="clear">
+                    &nbsp;
+                </div>
+            </div>
+            <div id="call_button">
+                <input name="commit" type="submit" value="Start" />
+            </div>
+        </div>
+    </div>
+    </form>
+  </div>
+</div>
+  <!--
+<div id="page_bottom_container">
+    <div class="content">
+        
+    </div>
+  </div>-->
+
+
+                        
+                    </div>
+                    
+                    <div id="bottom_touts">
+                        <ul>
+                            <li>
+                                <a href="http://itunes.apple.com/us/app/lucyphone/id378962452?mt=8" target=_blank><img src='/images/iPhone_tout.png' /></a>
+                            </li>
+                            <li class="xtrawide">
+                                <a target="_blank" href="https://market.android.com/search?q=lucyphone&so=1&c=apps"><img src='/images/androidtout.png'/></a>
+                            </li>
+                            <li class="wide">
+                                <a href="http://corp.lucyphone.com" target="_blank"><img src='/images/call_center_tout.png' /></a>
+                            </li>
+                            <li>
+                                <a href="/about"><img src='/images/press_tout.png' /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+    <div id="footer_wrap">
+        <div id="footer_links">
+            <ul>
+            	<ul class="right">
+                <li>
+                    <a target=_blank href="http://www.twitter.com/lucyphone"><img src="/images/twitter-small.png"/></a>
+                </li>
+                <li class="close">
+                    <a target=_blank href="http://www.facebook.com/lucyphone"><img src="/images/facebook/facebook24.png"/></a>
+                </li>
+                <li class="fb_like">
+                    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.lucyphone.com&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:100px; height:25px"> 
+                    </iframe>
+                </li>
+				</ul>
+                <li>
+                    &copy; Lucyphone 2011.  All Rights Reserved.  Patents Pending
+                </li>
+                <li>
+                    <a class="modal" href="/terms">Terms &amp; Conditions</a>
+                </li>
+                <li>
+                    <a class="modal" href="/privacy">Privacy Policy</a>
+                </li>
+				
+            </ul>
+        </div>
+		<div class="clear"></div>
+    </div>
+</div>
+
+        <!-- Modal Windows-->
+        <div id="main_modal" class="modal">
+            <div class="overlay">
+            </div>
+            <div class="main_modal_content">
+                <div class="top_buttons">
+                    <a class="close_modal" href="#">&nbsp;</a>
+                </div>
+                <div class="content">
+                    
+                </div>
+            </div>
+        </div>
+        <div id="call_box_template" class="call_box">
+          <div class="content">
+          </div>
+        </div>
+        <div id="info_message" class="message info">
+          &nbsp;
+        </div>
+        <div id="error_message" class="message error">
+          &nbsp;
+        </div>
+        <div id="loading" class="modal">
+            <div class="overlay">
+            </div>
+        </div>
+         <script type="text/javascript">
+            Cufon.now();
+          </script>
+
+       <script src="/assets/common.js?1331666800" type="text/javascript"></script>
+        <script src="/assets/app.js?1331666800" type="text/javascript"></script>
+
+        <script src="/javascripts/google-analytics.js?1331666613" type="text/javascript"></script>
+       
+        <script type="text/javascript">
+              jQuery(document).ready(function(){
+                initialize();
+                
+              });                                             
+              		  
+        </script>
+
+        <script type="text/javascript">
+            var uservoiceJsHost = ("https:" == document.location.protocol) ? "https://uservoice.com" : "http://cdn.uservoice.com";
+            document.write(unescape("%3Cscript src='" + uservoiceJsHost + "/javascripts/widgets/tab.js' type='text/javascript'%3E%3C/script%3E"))
+        </script>
+        <script type="text/javascript">
+            UserVoice.Tab.show({
+                /* required */
+                key: 'lucyphone',
+                host: 'lucyphone.uservoice.com',
+                forum: '30551',
+                /* optional */
+                alignment: 'left',
+                background_color: '#ED1E79',
+                text_color: 'white',
+                hover_color: '#0489B1',
+                lang: 'en'
+            })
+        </script>
+        <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=tomeeo">
+        </script>
+
+          
+    </body>
+</html>

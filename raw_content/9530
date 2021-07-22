@@ -1,0 +1,2127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js"> 
+  <head>
+  
+          <!-- Mobile redirector -->
+<script type="text/javascript">
+(function(){
+  
+  // get redirector to work in development
+  var tmp = /^(www\.)?([\w\.]+)?refinery29\.(\w+)(:\d+)?$/.exec(window.location.host.toLowerCase()),
+      
+      // sub domain
+      sub = tmp[2],
+      
+      // top level domain
+      tld = tmp[3],
+      
+      // cookie domain for mobile_referrer cookie
+      cookie_domain = 'refinery29.'+tld,
+      
+      // domain for mobile redirect
+      mobile_domain = 'm.'+(sub ? sub : '')+cookie_domain,
+      
+      // ignore direct traffic referrers
+      r29p = new RegExp('^(https?:\/\/)((www|m|touch)\.)'+sub+'refinery29\.'+tld, 'i'),
+      
+      // validate referrer before overriding
+      r29v = function(d){
+        return !!(d && String(d).length && !String(d).match(r29p));
+      };
+
+  // quirksmode.org: JavaScript - Cookies
+  // http://www.quirksmode.org/js/cookies.html
+  
+  var cookie_create = function(name, value, days){
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime()+(days*24*60*60*1000));
+      var expires = '; expires='+date.toGMTString();
+    }
+    else {
+      var expires = '';
+    }
+    var val = name+'='+value+expires+'; path=/; domain=.'+cookie_domain+';';
+    document.cookie = val;
+  },
+  
+  cookie_delete = function(name){
+    cookie_create(name,'',-1);
+  },
+  
+  cookie_read = function(name){
+    var nameEQ = name + '=';
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') {
+        c = c.substring(1,c.length);
+      }
+      if (c.indexOf(nameEQ) == 0) {
+        var val = c.substring(nameEQ.length,c.length);
+        return val;
+      }
+    }
+  	return null;
+  },
+  
+  show_mobile_link = function(){
+    var show_link = function(){
+      document.getElementById('mobile-link').style.display = 'block';
+    }
+    if (typeof window.onload != 'function') {
+      window.onload = show_link;
+    }
+    else {
+      var prev_onload = window.onload;
+      window.onload = function(){
+        prev_onload && prev_onload();
+        show_mobile_link();
+      };
+    }
+  };
+  
+  href = document.location.href.toString();
+  
+  // ignore mobile for thirty days
+  if (href.match(/mobile=false/i)) {
+    cookie_create('force_web', '1', 30);
+    show_mobile_link();
+    return;
+  }
+  
+  // URL param force mobile ver
+  var force_mobile = href.match(/mobile=true/i),
+
+      // Cookie to force web ver
+      ignore_mobile = cookie_read('force_web') && cookie_read('force_web') === '1',
+
+      // UA detection for mobile
+      is_mobile = navigator.userAgent.match(/iphone|ipod|android/i);
+      
+      if(navigator.userAgent.match(/ipad/i)) { 
+        // facebook user-agent stupidly calls iPad an iPhone
+        is_mobile = '';
+      }
+  
+  // forcing mobile on non-mobile browser or mobile browser and not forcing desktop
+  if (force_mobile || (is_mobile && !ignore_mobile)) {
+  
+    force_mobile && cookie_delete('force_web');
+    
+    // if we have valid referrer, write referrer cookie
+    if (r29v(document.referrer)) {
+      cookie_create('mobile_referrer', encodeURIComponent(document.referrer), 1);
+    }
+    
+    // redirect
+    var mobile_location = 'http://'+mobile_domain+location.pathname.replace(/^(.*)\/slideshow/, '$1')+location.search;
+    window.location = mobile_location;
+    return;
+  }
+  
+  // show mobile link if we didn't redirect
+  is_mobile && show_mobile_link();
+  
+})();
+</script>
+<!--/Mobile redirector -->
+    
+  
+        <script type="text/javascript">var _dc_tile = 1;var _dc_ts=_sf_startpt=(new Date()).getTime();WRInitTime=(new Date()).getTime();</script>
+    <link rel="stylesheet" href="http://static3.refinery29.com/blog/fa5471/css/compiled/style.css" media="screen" /> 
+    <link rel="alternate" type="application/rss+xml" title="Refinery29" href="http://www.refinery29.com/index.xml" />
+    
+  	<!--[if lt IE 9]>
+  		<link rel="stylesheet" type="text/css" href="http://static2.refinery29.com/blog/fa5471/css/compiled/ie.css" />
+      <script src="http://static3.refinery29.com/blog/fa5471/js/html5.js"></script>
+    <![endif]-->
+
+          <script type="text/javascript" src="http://cdn.onswipe.com/synapse/on.js?usr=refinery29" id="onswipe_synapse"></script>
+    
+    <script type="text/javascript" src="http://static1.refinery29.com/blog/fa5471/js/jquery.js"></script>
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/fa5471/js/jquery/plugins/jcarousel/jcarousel.js"></script>
+    <!-- Pinterest Hover Pin -->  
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/fa5471/js/jquery/plugins/jquery.autopin.js"></script>  
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/fa5471/js/r29.js"></script>
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/fa5471/js/api.js"></script>
+    
+    <!-- Avoiding Flash of Unstyled Text -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+    
+
+    
+    
+          <script type="text/javascript" src="http://static3.refinery29.com/blog/fa5471/js/socket.io/socket.io.js"></script>
+    
+  
+    <title itemprop="name">Photo 2- You Totally Got This: 4 Easy Braids For Rookies</title> 
+    
+    <!-- Meta -->
+    
+      <style>
+    .ad-sidebar-border {
+      background-color: transparent;
+    }
+    </style>
+    
+  
+  
+   <!-- month of beauty -->
+
+  
+  <!-- Entry Meta -->
+<meta name="description" content="View Photo 2- You Totally Got This: 4 Easy Braids For Rookies" itemprop="description"> 
+<meta name="keywords"    content="How to braid your hair, braids, up-dos, Sean Donaldson Salon" itemprop="keywords"> 
+
+  <!-- Facebook Meta -->
+  <meta property="og:title"       content="You Totally Got This: 4 Easy Braids For Rookies" itemprop="name" />
+  <meta property="og:type"        content="article"/>
+  <meta property="og:url"         content="http://www.refinery29.com/easy-braid-hairstyles"/>
+  <meta property="og:image"       content="http://static2.refinery29.com/bin/entry/7c9/300x/112826/opener.jpg" itemprop="image" />
+  <meta property="og:site_name"   content="Refinery29" itemprop="publisher" />
+  <meta property="og:description" content="While some girls learn to braid hair by practicing on their dolls, others learn by practicing on their, um, horses. Like Audra Billingsley, who loosened up her fingers by working with ponies. That&rsquo;s right; Before becoming a sought-after Miami hair pro, Billingsley was known in her hometown of Walla&hellip;" />
+
+
+<link rel="canonical" href="http://www.refinery29.com/easy-braid-hairstyles?page=2" />
+
+<!-- Slideshow Meta -->
+	
+	
+		<link rel="previous" href="http://www.refinery29.com/easy-braid-hairstyles/slideshow?page=1" />
+	
+
+		<link rel="next" href="http://www.refinery29.com/easy-braid-hairstyles/slideshow?page=3" />
+	
+
+        
+<!-- Pagination Meta -->
+
+	
+
+  
+
+        
+    
+  </head>
+    
+  <body>
+    <div id="container">
+    <div id="skin"></div><!--need this for background skinz-->
+      <div class="inner">
+      
+                
+				         	<div id="header" > <!-- Header -->
+
+      
+
+  <!-- Information Bar -->
+  <nav>
+  
+          
+    
+    
+    
+          
+          
+    
+  
+    <ul class="features">
+      <li><a href="http://www.refinery29.com" data-track="nav:r29" class="r29">R29</a></li>
+      <!-- Empty divs for gradient-ed vertical lines :/ -->
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://www.refinery29.com" data-track="nav:read" class="read active">Read</a></li>
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://www.refinery29.com/video" data-track="nav:watch" class="watch">Watch</a></li>
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://reserve.refinery29.com" data-track="nav:shop" class="shop">Shop</a></li>
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://www.refinery29.com/find/stores" data-track="nav:find" class="find">Find</a></li>
+      <li><div>&nbsp;</div></li>
+    </ul>
+    
+    
+    
+    <ul class="tooltips">
+  <li class="new_browse">
+    <p><span>New</span> Browse better with our new Refinery29 shortcuts!</p>
+    <div class="close"></div>
+  </li>
+  
+</ul>
+
+    
+    <div class="search" id="search-box">
+  <form method="get" action="/search">
+    <input type="text" name="q" value="" placeholder="Search" data-placeholder="Search" autocomplete="off" />
+    
+    
+  </form>
+  <div class="flap"></div>
+</div>
+    
+  </nav>
+  
+      <!-- Banner Bar -->
+    <div class="banner">
+      <!-- Edition Background -->
+                  <a href="/miami" class="logo miami" data-track="header:logo"></a>
+            
+    </div>
+  
+  
+  
+      <!-- Editions Navigation -->
+    <ul class="editions">
+                        <li class="everywhere"><a  href="http://www.refinery29.com/" data-track="header:everywhere">Everywhere</a></li>
+        
+                        <li class="new-york"><a  href="http://www.refinery29.com/new-york" data-track="header:new-york">New York</a></li>
+        
+                        <li class="los-angeles"><a  href="http://www.refinery29.com/los-angeles" data-track="header:los-angeles">Los Angeles</a></li>
+        
+                        <li class="chicago"><a  href="http://www.refinery29.com/chicago" data-track="header:chicago">Chicago</a></li>
+        
+                        <li class="san-francisco"><a  href="http://www.refinery29.com/san-francisco" data-track="header:san-francisco">San Francisco</a></li>
+        
+                        <li class="washington-dc"><a  href="http://www.refinery29.com/washington-dc" data-track="header:washington-dc">Washington, D.C.</a></li>
+        
+              
+                        <li class="miami"><a  class="active" href="http://www.refinery29.com/miami" data-track="header:miami">Miami</a></li>
+        
+              
+              
+      
+    </ul>
+    
+    <div class="clear"></div>
+    
+    <!-- Subnavigation -->
+      
+      
+      <ul class="categories miami"> <!-- Categories -->
+                    <li class="news
+                              
+                              
+              "><a href="http://www.refinery29.com/miami/news" data-track="header:category:miami:news">News</a>
+                            <ul>
+                <!-- Sub-categories -->
+                                  <li><a href="http://www.refinery29.com/festival-tracker" data-track="header:news:festival-tracker">Festival Tracker</a></li>
+                
+                                  <li><a href="http://www.refinery29.com/miami/news/art-basel" data-track="header:subcategory:miami:art-basel">Art Basel</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/news/beauty-news" data-track="header:subcategory:miami:beauty-news">Beauty News</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/news/drinking-and-dining" data-track="header:subcategory:miami:drinking-and-dining">Drinking &amp; Dining</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/news/fashion-news" data-track="header:subcategory:miami:fashion-news">Fashion News</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/news/special-features" data-track="header:subcategory:miami:special-features">Special Features</a></li>
+                
+              </ul>
+              
+              
+            </li>
+                    <li class="fashion
+                              
+                              
+              "><a href="http://www.refinery29.com/miami/fashion" data-track="header:category:miami:fashion">Fashion</a>
+                            <ul>
+                <!-- Sub-categories -->
+                
+                                  <li><a href="http://www.refinery29.com/miami/fashion/college-fashion" data-track="header:subcategory:miami:college-fashion">College Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/designers" data-track="header:subcategory:miami:designers">Designers</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/diy-and-tips" data-track="header:subcategory:miami:diy-and-tips">Diy And Tips</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/fall-fashion" data-track="header:subcategory:miami:fall-fashion">Fall Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/fashion-trends" data-track="header:subcategory:miami:fashion-trends">Fashion Trends</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/lookbooks" data-track="header:subcategory:miami:lookbooks">Lookbooks</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/models" data-track="header:subcategory:miami:models">Models</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/my-style" data-track="header:subcategory:miami:my-style">My Style</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/spring-fashion" data-track="header:subcategory:miami:spring-fashion">Spring Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/street-fashion" data-track="header:subcategory:miami:street-fashion">Street Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/summer-fashion" data-track="header:subcategory:miami:summer-fashion">Summer Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/winter-fashion" data-track="header:subcategory:miami:winter-fashion">Winter Fashion</a></li>
+                
+              </ul>
+              
+              
+            </li>
+                    <li class="shopping
+                              
+                              
+              "><a href="http://www.refinery29.com/miami/shopping" data-track="header:category:miami:shopping">Shopping</a>
+                            <ul>
+                <!-- Sub-categories -->
+                                  <li><a href="http://reserve.refinery29.com/" data-track="header:subcategory:miami:reserve">Reserve: Shop Our Store</a></li>
+                  <li><a href="http://www.refinery29.com/find/stores/miami" data-track="header:shopping:find-stores-we-love:miami">Stores We Love</a></li>
+                
+                                  <li><a href="http://www.refinery29.com/miami/shopping/hot-sales" data-track="header:subcategory:miami:hot-sales">Hot Sales</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/shopping/new-products" data-track="header:subcategory:miami:new-products">New Products</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/shopping/online-deals" data-track="header:subcategory:miami:online-deals">Online Deals</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/shopping/outfits" data-track="header:subcategory:miami:outfits">Outfits</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/shopping/shopping-guides" data-track="header:subcategory:miami:shopping-guides">Shopping Guides</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/shopping/store-news" data-track="header:subcategory:miami:store-news">Store News</a></li>
+                
+              </ul>
+              
+              
+            </li>
+                    <li class="beauty
+                               active selected
+                              
+              "><a href="http://www.refinery29.com/miami/beauty" data-track="header:category:miami:beauty">Beauty</a>
+                            <ul>
+                <!-- Sub-categories -->
+                
+                                  <li><a href="http://www.refinery29.com/miami/beauty/diy-and-tips" data-track="header:subcategory:miami:diy-and-tips">Diy And Tips</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/beauty/hair-trends" data-track="header:subcategory:miami:hair-trends">Hair Trends</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/beauty/makeup-trends" data-track="header:subcategory:miami:makeup-trends">Makeup Trends</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/beauty/nail-trends" data-track="header:subcategory:miami:nail-trends">Nail Trends</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/beauty/new-beauty-products" data-track="header:subcategory:miami:new-beauty-products">New Beauty Products</a></li>
+                
+              </ul>
+              
+              
+            </li>
+        
+      </ul>
+      
+    
+  
+  <script type="text/javascript">
+    
+      var R29 = R29 || {};
+    
+    
+    R29.BASE_URL = "refinery29.com";
+    
+  </script>
+      
+</div> <!-- /Header -->
+
+				
+								    				  <!-- Top Ad, Signup, Facebook -->
+<div class="top-ad">
+  
+    	
+  
+  
+      
+<div class="ad ad-728x90" iframe-code="http://ad.doubleclick.net/adi/r29.mia.oao/beauty/diy-and-tips;s1=beauty;s2=diy-and-tips;s3=diy-and-tips;sponsorship=;pagetype=slideshow;test=;pageid=easy-braid-hairstyles;pos=top;tile=1;dcopt=ist;sz=728x90;" iframe-size="728x90"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.mia.oao/beauty/diy-and-tips;s1=beauty;s2=diy-and-tips;s3=diy-and-tips;sponsorship=;pagetype=slideshow;test=;pageid=easy-braid-hairstyles;pos=top;tile=1;dcopt=ist;sz=728x90;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.mia.oao/beauty/diy-and-tips;s1=beauty;s2=diy-and-tips;s3=diy-and-tips;sponsorship=;pagetype=slideshow;test=;pageid=easy-braid-hairstyles;pos=top;tile=1;dcopt=ist;sz=728x90;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.mia.oao/beauty/diy-and-tips;s1=beauty;s2=diy-and-tips;s3=diy-and-tips;sponsorship=;pagetype=slideshow;test=;pageid=easy-braid-hairstyles;pos=top;tile=1;dcopt=ist;sz=728x90;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+  
+  
+  <div class="ribbon-tail-left"></div>
+
+  <!-- Signup -->
+<div class="widget">
+   
+  
+  
+  <a href="/signup/miami?source=sitearrow&amp;medium=organic" class="signup miami" alt="Sign Up Now!"></a>
+  <div class="fblike">
+    <fb:like href="http://www.facebook.com/refinery29" show_faces="false" width="220" height="28"></fb:like>
+  </div>
+</div>
+
+
+</div>
+
+  				
+  				
+  				
+				
+				
+        <div id="content"> 
+        
+          					<!-- LEFT -->
+					<div class="col_2">
+						
+  <!-- CACHE 0fad6 - ttl: 180 -->    <!-- Mini Signup Module on Entry Pages: For Once -->
+    
+    
+    <div class="entry-block">
+      <aside class="social-sidebar">
+
+  <!-- FB -->
+  <div class="facebook" itemprop="interactionCount">
+    <fb:like layout="box_count" href="http://www.refinery29.com/easy-braid-hairstyles" send="false" width="50" ref="sidebar"></fb:like>
+  </div>
+  
+  <!-- Twitter -->
+  <div class="twitter" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'TwitterSidebar', 'tweet']);">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-text="You Totally Got This: 4 Easy Braids For Rookies" data-url="http://www.refinery29.com/easy-braid-hairstyles" data-count="vertical" data-via="refinery29">&nbsp;</a>
+  </div>
+
+  <!-- Pinterest -->
+  <div class="pinterest" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'Pinterest', 'pinned']);">
+    <a href="http://pinterest.com/pin/create/button/?url=http://www.refinery29.com/easy-braid-hairstyles&media=http://static2.refinery29.com/bin/entry/547/x/112826/opener.jpg&description=You Totally Got This: 4 Easy Braids For Rookies" class="pin-it-button" count-layout="vertical">Pin It</a>
+  </div>
+  
+  <!-- Stumbleupon -->
+  <div class="stumbleupon" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'StumbleSidebar', 'stumble']);">
+    <iframe src="http://badge.stumbleupon.com/badge/embed/5/?url=http://www.refinery29.com/easy-braid-hairstyles" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:60px;" allowTransparency="true"></iframe>
+  </div>
+
+</aside>
+    
+      
+  
+  
+   
+    
+      <div class="entry-header">
+  
+  
+	
+  <div class="category"><!--<a href="/miami/beauty/diy-and-tips" data-track="entry:header:Diy And Tips">-->Diy And Tips<!--</a>--></div>
+  
+  <div class="deliminator"></div>
+  
+  <div class="date">
+          Jan 25, 2012 6:00 AM
+      <!-- <span itemprop="datePublished">2012-01-25 06:00:00</span> -->
+    
+  </div>
+  <div class="asset-info">
+      <!-- Facebook Like -->
+      <div class="facebook" itemprop="interactionCount">
+        <fb:like layout="button_count" href="http://www.refinery29.com/easy-braid-hairstyles" width="90" ref="entrypage"></fb:like>
+      </div>
+      <!-- Twitter Share -->
+      <div class="twitter" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'TwitterSolo', 'tweet']);">
+        <a href="http://twitter.com/share" class="twitter-share-button" data-text="You Totally Got This: 4 Easy Braids For Rookies" data-url="http://www.refinery29.com/easy-braid-hairstyles" data-count="horizontal" data-via="refinery29">&nbsp;</a>
+      </div>
+    <!-- Comment Count -->
+    <div class="comment-count" itemprop="interactionCount">
+      <a href="/easy-braid-hairstyles#disqus_thread" data-url="http://www.refinery29.com/easy-braid-hairstyles" class="comments"><span class="comment-count">0</span></a>
+    </div>
+  </div>
+</div>
+
+
+      
+      <!-- Sponsored Headline eMeta -->
+      
+    
+      <div class="entry">
+	<div itemscope itemtype="http://schema.org/Article">
+	  <div class="h1">You Totally Got This: 4 Easy Braids For Rookies</div>
+	  	    <!-- Slideshow Entry -->
+<div class="slideshow">
+
+    <!-- Slideshow -->
+    
+    
+    <div class="topnav">
+    
+      <div id="slideshow-nav-prevnext">
+        <a class="fullscreen_inslide" href="/easy-braid-hairstyles/premiumslideshow" title="Go fullscreen">Fullscreen</a>
+        <div class="slideshow_nav_box">
+          <a id="slideshow-previous" class="previous" href="/easy-braid-hairstyles/slideshow?page=1"></a>
+          <p><strong id="slideshow-page">2</strong> of <strong>40</strong></p>
+          <a id="slideshow-next" class="next" href="/easy-braid-hairstyles/slideshow?page=3"></a>
+        </div>
+      </div>
+    </div>
+      
+    <div class="slides">
+      
+              
+        
+                                    <div class="slide-image vert"><img src="http://static3.refinery29.com/bin/entry/3f8/350x500b/112849/mg-5920.jpg" alt="_MG_5920"    /></div>
+          
+          <p class="slide-description"><strong>Step 2: </strong>Hold it loosely, with not a lot of tension, and start braiding to the end of the strand.</p>
+          <div class="clear"></div>
+        
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+       
+    </div>
+    
+    <hr class="clear">
+    
+    <div class="bottomnav">
+    
+      <div id="slideshow-nav-carousel">
+          <div class="previous" id="slideshow-nav-previous"></div>
+        
+        <div class="slideshow-nav-carousel">
+          <ul>
+            
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=1" image_idx="1" class="slide-select"><img src="http://static3.refinery29.com/bin/entry/f8c/66x66b/112848/mg-5916.jpg" alt="_MG_5916"    /></a></li>
+                         <li class="selected"><a href="/easy-braid-hairstyles/slideshow?page=2" image_idx="2" class="slide-select"><img src="http://static1.refinery29.com/bin/entry/d93/66x66b/112849/mg-5920.jpg" alt="_MG_5920"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=3" image_idx="3" class="slide-select"><img src="http://static1.refinery29.com/bin/entry/c23/66x66b/112850/mg-5924.jpg" alt="_MG_5924"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=4" image_idx="4" class="slide-select"><img src="http://static3.refinery29.com/bin/entry/f6b/66x66b/112851/mg-5925.jpg" alt="_MG_5925"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=5" image_idx="5" class="slide-select"><img src="http://static1.refinery29.com/bin/entry/909/66x66b/112852/mg-5926.jpg" alt="_MG_5926"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=6" image_idx="6" class="slide-select"><img src="http://static3.refinery29.com/bin/entry/93c/66x66b/112853/mg-5929.jpg" alt="_MG_5929"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=7" image_idx="7" class="slide-select"><img src="http://static2.refinery29.com/bin/entry/c33/66x66b/112854/mg-5930.jpg" alt="_MG_5930"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=8" image_idx="8" class="slide-select"><img src="http://static3.refinery29.com/bin/entry/4c3/66x66b/112855/mg-5931.jpg" alt="_MG_5931"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=9" image_idx="9" class="slide-select"><img src="http://static1.refinery29.com/bin/entry/af3/66x66b/112856/mg-5933.jpg" alt="_MG_5933"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=10" image_idx="10" class="slide-select"><img src="http://static2.refinery29.com/bin/entry/a70/66x66b/112870/mg-5942.jpg" alt="_MG_5942"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=11" image_idx="11" class="slide-select"><img src="http://static3.refinery29.com/bin/entry/f1c/66x66b/112872/mg-5943.jpg" alt="_MG_5943"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=12" image_idx="12" class="slide-select"><img src="http://static1.refinery29.com/bin/entry/039/66x66b/112873/mg-5945.jpg" alt="_MG_5945"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=13" image_idx="13" class="slide-select"><img src="http://static2.refinery29.com/bin/entry/f80/66x66b/112874/mg-5948.jpg" alt="_MG_5948"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=14" image_idx="14" class="slide-select"><img src="http://static2.refinery29.com/bin/entry/d9b/66x66b/112875/mg-5953.jpg" alt="_MG_5953"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=15" image_idx="15" class="slide-select"><img src="http://static1.refinery29.com/bin/entry/ac1/66x66b/112876/mg-5955.jpg" alt="_MG_5955"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=16" image_idx="16" class="slide-select"><img src="http://static3.refinery29.com/bin/entry/816/66x66b/112877/mg-5957.jpg" alt="_MG_5957"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=17" image_idx="17" class="slide-select"><img src="http://static2.refinery29.com/bin/entry/198/66x66b/112878/mg-5958.jpg" alt="_MG_5958"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=18" image_idx="18" class="slide-select"><img src="http://static3.refinery29.com/bin/entry/109/66x66b/112879/mg-5959.jpg" alt="_MG_5959"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=19" image_idx="19" class="slide-select"><img src="http://static3.refinery29.com/bin/entry/9a4/66x66b/112880/mg-5960.jpg" alt="_MG_5960"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=20" image_idx="20" class="slide-select"><img src="http://static2.refinery29.com/bin/entry/2d7/66x66b/112881/mg-5966.jpg" alt="_MG_5966"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=21" image_idx="21" class="slide-select"><img src="http://static2.refinery29.com/bin/entry/bd6/66x66b/112887/mg-5969.jpg" alt="_MG_5969"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=22" image_idx="22" class="slide-select"><img src="http://static3.refinery29.com/bin/entry/c2c/66x66b/112888/mg-5970.jpg" alt="_MG_5970"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=23" image_idx="23" class="slide-select"><img src="http://static3.refinery29.com/bin/entry/952/66x66b/112889/mg-5974.jpg" alt="_MG_5974"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=24" image_idx="24" class="slide-select"><img src="http://static3.refinery29.com/bin/entry/992/66x66b/112890/mg-5980.jpg" alt="_MG_5980"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=25" image_idx="25" class="slide-select"><img src="http://static1.refinery29.com/bin/entry/fd8/66x66b/112891/mg-5982.jpg" alt="_MG_5982"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=26" image_idx="26" class="slide-select"><img src="http://static2.refinery29.com/bin/entry/a59/66x66b/112892/mg-5983.jpg" alt="_MG_5983"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=27" image_idx="27" class="slide-select"><img src="http://static2.refinery29.com/bin/entry/441/66x66b/112893/mg-5987.jpg" alt="_MG_5987"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=28" image_idx="28" class="slide-select"><img src="http://static1.refinery29.com/bin/entry/e64/66x66b/112894/mg-5990.jpg" alt="_MG_5990"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=29" image_idx="29" class="slide-select"><img src="http://static2.refinery29.com/bin/entry/c8f/66x66b/112895/mg-6002.jpg" alt="_MG_6002"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=30" image_idx="30" class="slide-select"><img src="http://static2.refinery29.com/bin/entry/2ee/66x66b/112896/mg-6003.jpg" alt="_MG_6003"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=31" image_idx="31" class="slide-select"><img src="http://static2.refinery29.com/bin/entry/249/66x66b/112897/mg-6005.jpg" alt="_MG_6005"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=32" image_idx="32" class="slide-select"><img src="http://static1.refinery29.com/bin/entry/509/66x66b/112898/mg-6007.jpg" alt="_MG_6007"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=33" image_idx="33" class="slide-select"><img src="http://static2.refinery29.com/bin/entry/da8/66x66b/112899/mg-6008.jpg" alt="_MG_6008"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=34" image_idx="34" class="slide-select"><img src="http://static2.refinery29.com/bin/entry/fda/66x66b/112900/mg-6009.jpg" alt="_MG_6009"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=35" image_idx="35" class="slide-select"><img src="http://static1.refinery29.com/bin/entry/81f/66x66b/112901/mg-6010.jpg" alt="_MG_6010"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=36" image_idx="36" class="slide-select"><img src="http://static3.refinery29.com/bin/entry/828/66x66b/112902/mg-6011.jpg" alt="_MG_6011"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=37" image_idx="37" class="slide-select"><img src="http://static3.refinery29.com/bin/entry/ebd/66x66b/112903/mg-6012.jpg" alt="_MG_6012"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=38" image_idx="38" class="slide-select"><img src="http://static1.refinery29.com/bin/entry/04b/66x66b/112904/mg-6013.jpg" alt="_MG_6013"    /></a></li>
+                         <li class=""><a href="/easy-braid-hairstyles/slideshow?page=39" image_idx="39" class="slide-select"><img src="http://static2.refinery29.com/bin/entry/987/66x66b/112905/mg-6016.jpg" alt="_MG_6016"    /></a></li>
+            
+            <li class="">
+              <a href="/easy-braid-hairstyles/slideshow?page=39" image_idx="40" class="slide-select"><img src="http://static2.refinery29.com/bin/entry/88c/66x66b/112826/opener.jpg" alt="opener"    /></a>
+            </li>
+          </ul>  
+        </div>
+           <div class="next" id="slideshow-nav-next"></div>
+      </div>
+          
+    </div>
+  
+  
+
+</div>
+
+<!-- Slideshow Javascript -->
+<script type="text/javascript"> 
+  
+  var slides = [
+  
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/64e\/350x500b\/112848\/mg-5916.jpg\" alt=\"_MG_5916\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Crown Braid<\/strong><br\/>\n<strong>Step 1: <\/strong>Start by parting your hair to the side. Then make a small \"triangle\" in the front of your head with the hair from the larger side of the part. Bring the hair from the triangle forward, in front of your face. \n<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/3f8\/350x500b\/112849\/mg-5920.jpg\" alt=\"_MG_5920\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 2: <\/strong>Hold it loosely, with not a lot of tension, and start braiding to the end of the strand.<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/35f\/350x500b\/112850\/mg-5924.jpg\" alt=\"_MG_5924\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 3: <\/strong>Attach the strand of hair to the back of your head with a clip, just until the opposite side\u2019s braid is complete. <\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/5f1\/350x500b\/112851\/mg-5925.jpg\" alt=\"_MG_5925\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 4: <\/strong>Create a small triangle in the front of your head with the hair from the opposite side of your hair's part near the temple. <\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/a2c\/350x500b\/112852\/mg-5926.jpg\" alt=\"_MG_5926\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 5: <\/strong>Braid the strand all the way until the end and clip to the back of your head to section it off.<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/f70\/350x500b\/112853\/mg-5929.jpg\" alt=\"_MG_5929\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 6:<\/strong> Grab both braided strands, pull them to the back of your head.<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/983\/350x500b\/112854\/mg-5930.jpg\" alt=\"_MG_5930\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 7: <\/strong>Attach both strands together with a clear elastic.<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/0d1\/350x500b\/112855\/mg-5931.jpg\" alt=\"_MG_5931\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 8: <\/strong> Pull any loose hairs from the front and top of the braids to give it more of a messier look. <\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/0ae\/350x500b\/112856\/mg-5933.jpg\" alt=\"_MG_5933\"    \/><\/div><\/a>\n          \n        \n        <p>A delicate side swoop braid adds a little no-fuss flair to wearing your hair down. <\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/37f\/350x500b\/112870\/mg-5942.jpg\" alt=\"_MG_5942\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Milk Maid<\/strong><br\/>\n<strong>Step 1: <\/strong>Start by adding a texturizing spray. Create two low pigtails. Don\u2019t worry about making the part perfect. Just run your fingers through the back of your head and separate. \n<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/c88\/350x500b\/112872\/mg-5943.jpg\" alt=\"_MG_5943\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 2: <\/strong>Pull out a little bit of hair from the front of your face, so hair isn't too perfect. The messier the look, the better \u2014 if it\u2019s too perfect, you\u2019ll really look like a milk maid!<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/d7e\/350x500b\/112873\/mg-5945.jpg\" alt=\"_MG_5945\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 3:<\/strong> Braid your hair on one side, starting at the ears. Tie an elastic band near the bottom of the braid, about 2-3 inches above the ends. <\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/c35\/350x500b\/112874\/mg-5948.jpg\" alt=\"_MG_5948\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 4: <\/strong>Gently pull apart the braid using your thumb and forefinger to lightly separate them.<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/608\/350x500b\/112875\/mg-5953.jpg\" alt=\"_MG_5953\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 5:<\/strong> Repeat steps to the other side of hair, so you have two loose, low pigtail braids. <\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/1e1\/350x500b\/112876\/mg-5955.jpg\" alt=\"_MG_5955\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 6: <\/strong>Lift up one braid towards the top of your head. Place the braid at the top of your head, about one inch away from your forehead. <\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/d1d\/350x500b\/112877\/mg-5957.jpg\" alt=\"_MG_5957\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 7: <\/strong>Attach the hair where the elastic is to your head with bobby pins.<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/27d\/350x500b\/112878\/mg-5958.jpg\" alt=\"_MG_5958\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 8: <\/strong>Repeat steps with the other braid, placing it on top of the first braid.<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/bb0\/350x500b\/112879\/mg-5959.jpg\" alt=\"_MG_5959\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 9: <\/strong>Make sure you position the second braid so that it hides the first braid's elastic tie.<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/371\/350x500b\/112880\/mg-5960.jpg\" alt=\"_MG_5960\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 10:<\/strong> Tuck the end of the braid under the first braid and attach with bobby pins. Use hair pins to secure any parts of the braid that do not feel tight around the head. Tip: Hair around the ear is heavy, so you\u2019ll want add some extra security there with hair pins. <\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/c09\/350x500b\/112881\/mg-5966.jpg\" alt=\"_MG_5966\"    \/><\/div><\/a>\n          \n        \n        <p>With the loose strands and the crown-like braids, you'll look perfectly put-together, romantic, and nothing like an actual milk maid. <\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/2cd\/350x500b\/112887\/mg-5969.jpg\" alt=\"_MG_5969\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Around the Head<\/strong><br\/>\n<strong>Step 1:<\/strong> Start by parting your hair to the side or to its natural part. Separate hair as if you were creating pigtails, but leave the ends loose. Make a small triangle in the front of your head with the hair from one part.  \n<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/dc8\/350x500b\/112888\/mg-5970.jpg\" alt=\"_MG_5970\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 2:<\/strong> Begin braiding your hair in a traditional French braid technique, grabbing more hair from your head every time you make a cross over one of the three strands. <\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/53f\/350x500b\/112889\/mg-5974.jpg\" alt=\"_MG_5974\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 3: <\/strong>Use all the hair on that side of our head to complete the braid. <\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/cab\/350x500b\/112890\/mg-5980.jpg\" alt=\"_MG_5980\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 4: <\/strong>Tie the end with an elastic tie. <\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/296\/350x500b\/112891\/mg-5982.jpg\" alt=\"_MG_5982\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 5: <\/strong>Thicken the look of the braid by gently separating it with your thumb and forefinger.<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/8df\/350x500b\/112892\/mg-5983.jpg\" alt=\"_MG_5983\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 6:<\/strong> Loosen up the top of the braid by placing two fingers at the beginning of braid and move your fingers forward and back.<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/bdc\/350x500b\/112893\/mg-5987.jpg\" alt=\"_MG_5987\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 7: <\/strong>Repeat steps on the other side of head.<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/389\/350x500b\/112894\/mg-5990.jpg\" alt=\"_MG_5990\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 8: <\/strong>You should now have two French-braided pigtails.<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/dca\/350x500b\/112895\/mg-6002.jpg\" alt=\"_MG_6002\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 9:<\/strong> Pull one braid to the back of your head and fold it inward (with the elastic band hiding under the top folded piece). Bring the folded braid to the bottom, opposite side of your head and attach with bobby pins. <\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/d5a\/350x500b\/112896\/mg-6003.jpg\" alt=\"_MG_6003\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 10: <\/strong>Take the second braid and repeat the folding process. <\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/db2\/350x500b\/112897\/mg-6005.jpg\" alt=\"_MG_6005\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 11: <\/strong>Tuck the second braid under the first braid and attach with bobby pins.<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/819\/350x500b\/112898\/mg-6007.jpg\" alt=\"_MG_6007\"    \/><\/div><\/a>\n          \n        \n        <p>Ta-da! The result? A 'do that looks like it took hours (when we really know better)!<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/d97\/350x500b\/112899\/mg-6008.jpg\" alt=\"_MG_6008\"    \/><\/div><\/a>\n          \n        \n        <p><strong>French Braid with Pompadour<\/strong><br\/>\n<strong>Step 1:<\/strong> For an edgier braid, start by adding texturizing spray, then create a triangle of hair from the front, middle part of your head. Separate the remaining hair in the back, so that it doesn\u2019t interfere with your triangle.\n<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/9bc\/350x500b\/112900\/mg-6009.jpg\" alt=\"_MG_6009\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 2: <\/strong>Separate the triangle of hair into a few sections depending on the length and thickness of your hair) and begin teasing each section, one by one to create your pompadour.<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/99c\/350x500b\/112901\/mg-6010.jpg\" alt=\"_MG_6010\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 3: <\/strong>Spritz the pompadour with hairspray to keep it in place.<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/715\/350x500b\/112902\/mg-6011.jpg\" alt=\"_MG_6011\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 4: <\/strong>Starting with the teased triangle section of hair, begin braiding your hair with a traditional French braid technique. <\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/b8d\/350x500b\/112903\/mg-6012.jpg\" alt=\"_MG_6012\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 5: <\/strong>Secure the end with an elastic band.<\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/7dc\/350x500b\/112904\/mg-6013.jpg\" alt=\"_MG_6013\"    \/><\/div><\/a>\n          \n        \n        <p><strong>Step 6: <\/strong>Place one hand on the back of your head where the braid begins. Place the other hand at the top of your forehead. Push the back of your hair forward (with back hand) to loosen up the pompadour a bit, so it\u2019s less organized and slightly messy. <\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/7f2\/350x500b\/112905\/mg-6016.jpg\" alt=\"_MG_6016\"    \/><\/div><\/a>\n          \n        \n        <p>All party up front and business in back, right? A great, clean way to add some edge. <\/p>\n        <div class=\"clear\"><\/div>\n      ",
+     
+    
+    "      <div class=\"last-slide\">\n      \n        \n      \n        <h2>Related Slideshows<\/h2>\n        \n                              <div>\n              <a href=\"\/diy-adorable-headbands\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/fc0\/280x335\/143752\/thumb.jpg\" alt=\"thumb\" width=\"280\" height=\"335\"  \/><\/a>\n              <h2 class=\"italic\"><a href=\"\/diy-adorable-headbands\">Crowning Glory! Two Headband Projects To Top Off Any Look<\/a><\/h2>\n            <\/div>\n            \n          \n        \n              \n        \n                          <div>\n              <a href=\"\/best-eye-creams-for-your-twenties\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/900\/280x335\/107954\/skinceuticals-thumb.jpg\" alt=\"skinceuticals-thumb\" width=\"280\" height=\"335\"  \/><\/a>\n              <h2 class=\"italic\"><a href=\"\/best-eye-creams-for-your-twenties\">5 Nourishing Eye Creams For 20-Somethings<\/a><\/h2>\n            <\/div>\n            \n          \n        \n              \n        \n        \n      <\/div>\n    "
+  ];  
+  
+      
+    var default_idx = parseInt(R29.url.hash.getVar("slide")) || 2;
+    
+    /** Load up the R29 slideshow **/
+    var slideshow = new R29.slideshow( $('.slides'), slides, default_idx, 
+      function(page, is_init) {
+        
+        if (this.page == 1) {
+          $("#slideshow-previous").fadeOut();
+        } else {
+          $("#slideshow-previous").fadeIn();
+          
+        }
+        
+        if (this.page == this.length) {
+          $("#slideshow-next").fadeOut();
+        } else {
+          $("#slideshow-next").fadeIn();
+        }
+        
+        //Set the page number at the top and the hash
+        $('#slideshow-page').text(page);
+        document.title = 'Photo ' + page + '- ' + "You Totally Got This: 4 Easy Braids For Rookies";
+        // $('meta[name="description"]').attr('content', 'View Photo ' + page + '- ' + "You Totally Got This: 4 Easy Braids For Rookies");
+        R29.url.hash.setVar("slide", page);
+  
+        //Refreshing
+        if (!is_init) {
+          R29.ads.refresh('.ad');
+          R29.tracking.refresh();
+        }      
+      }
+    );
+    
+    /** Load up this shoddy jcarousel thing **/
+    
+    $('#slideshow-nav-carousel').jcarousel({
+      scroll: 1,
+      start: default_idx,
+      wrap: null,
+      itemFallbackDimension: 80, //Default width of 80px
+      initCallback: 
+        function (carousel, state) {
+        
+          if (state != 'init') {
+           return;
+          }
+          // set fullscreen hash to the proper slide id
+          var permium_href = $('.fullscreen_inslide').attr('href').split('#')[0] + "#slide-" + default_idx;
+          $('.fullscreen_inslide').attr('href', permium_href);
+          
+          $('.slide-select').bind('click', function() {
+            var carousel     = jQuery('#slideshow-carousel').data('jcarousel');
+            //carousel.scroll(jQuery.jcarousel.intval($(this).attr('image_idx')));
+            
+            slideshow.goto($(this).attr('image_idx'));
+            
+            $('.slideshow-nav-carousel li').removeClass('selected');
+            $(this).parent().addClass('selected');
+            return false;
+          });
+        
+          $('#slideshow-next').bind('click', function() {
+          
+            var nav_carousel = jQuery('#slideshow-nav-carousel').data('jcarousel');
+            var buffer    = 3;
+      
+            slideshow.next();
+            var new_index = slideshow.page;
+            
+            var permium_href = $('.fullscreen_inslide').attr('href').split('#')[0] + "#slide-" + slideshow.page;
+            
+            $('.fullscreen_inslide').attr('href', permium_href);
+            
+            
+            if (new_index <= (buffer + 1)) {
+              new_index = 1;
+            } else if ((new_index + buffer) < slideshow.length) {
+              new_index -= buffer;
+            }       
+            
+            nav_carousel.scroll(new_index);
+            $('.slideshow-nav-carousel li').removeClass('selected');
+            $('.slideshow-nav-carousel a[image_idx='+ slideshow.page +']').parent().addClass('selected');
+            
+            return false;
+          });
+          
+          $('#slideshow-previous').bind('click', function() {
+           
+            var nav_carousel = jQuery('#slideshow-nav-carousel').data('jcarousel');
+            
+            slideshow.prev();
+             
+            var new_index = slideshow.page;
+            var buffer    = 3;
+            
+            var permium_href = $('.fullscreen_inslide').attr('href').split('#')[0] + "#slide-" + slideshow.page;
+            
+            $('.fullscreen_inslide').attr('href', permium_href);
+            
+            if (new_index <= (buffer + 1)) {
+              new_index = 1;
+            } else if (new_index + buffer < slideshow.length) {
+              new_index -= buffer;
+            }   
+            
+            nav_carousel.scroll(new_index);
+            $('.slideshow-nav-carousel li').removeClass('selected');
+            $('.slideshow-nav-carousel a[image_idx='+ slideshow.page +']').parent().addClass('selected');
+            
+            return false;
+          });
+          
+          
+          $('#slideshow-nav-next', carousel.container).bind('click', function() {  
+            var carousel     = jQuery('#slideshow-nav-carousel').data('jcarousel');    
+            carousel.next();
+            return false;
+          });
+          
+          $('#slideshow-nav-previous', carousel.container).bind('click', function() {
+            var carousel     = jQuery('#slideshow-nav-carousel').data('jcarousel');
+                               
+            carousel.prev();
+            return false;
+          });
+        
+        },
+      buttonNextHTML: null,buttonPrevHTML: null
+    });
+    
+  
+  
+  $('.slideshow .fullscreen').click(function () {
+  	_gaq.push(['_trackEvent', 'Fullscreen Slideshow Click', 'before starting slideshow', '25192',,true]);
+  });
+
+  $('.slideshow .fullscreen_inslide').click(function () {
+  	_gaq.push(['_trackEvent', 'Fullscreen Slideshow Click', 'after starting slideshow', '25192',,true]);
+  });
+  
+  $('.entry .h1').click(function () { document.location = document.location.href.split('/slideshow')[0]; }).css('cursor', 'pointer');
+  
+</script>
+	  
+	  
+	  <div class="clear"></div>
+  </div>
+</div>
+      
+      <div class="entry-footer">
+  
+
+  
+</div>
+    <!-- /CACHE 0fad6 - ttl: 180 -->
+      
+      <!-- Related Stories -->
+<div class="related-stories">
+  <div class="hot-dimple">Related Stories</div>
+  <ul>
+    <!-- CACHE 5ca89 - ttl: 180 -->      
+      
+                  
+                  
+          <li>
+            <div class="asset">
+              <a href="/diy-adorable-headbands" data-track="entry:related"><img src="http://static2.refinery29.com/bin/entry/976/120x143/143752/thumb.jpg" alt="thumb" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/diy-adorable-headbands" data-track="entry:related">Crowning Glory! Two Headband Projects To Top Off Any Look</a></h2>
+          </li>
+          
+        
+      
+                
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/how-to-apply-liquid-eyeliner" data-track="entry:related"><img src="http://static2.refinery29.com/bin/entry/beb/120x143/112502/liquid-eyeliner-thumb.jpg" alt="liquid eyeliner - thumb" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/how-to-apply-liquid-eyeliner" data-track="entry:related">A Makeup Pro Teaches Us The Dos and Don'ts Of Liquid Liner</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/best-miami-massages" data-track="entry:related"><img src="http://static2.refinery29.com/bin/entry/608/120x143/111482/opener.jpg" alt="opener" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/best-miami-massages" data-track="entry:related">5 Mind-Blowing Massages You Need To Book Now </a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/best-eye-creams-for-your-twenties" data-track="entry:related"><img src="http://static2.refinery29.com/bin/entry/6cf/120x143/107954/skinceuticals-thumb.jpg" alt="skinceuticals-thumb" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/best-eye-creams-for-your-twenties" data-track="entry:related">5 Nourishing Eye Creams For 20-Somethings</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/detoxing-tips" data-track="entry:related"><img src="http://static2.refinery29.com/bin/entry/fb6/120x143/106722/opener.jpg" alt="opener" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/detoxing-tips" data-track="entry:related">Get Your Detox On With These Safe Tips From A Local Pro</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/beauty-routine-tips-gee-beauty" data-track="entry:related"><img src="http://static1.refinery29.com/bin/entry/330/120x143/106643/geebeauty-thumb.jpg" alt="GeeBeauty_thumb" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/beauty-routine-tips-gee-beauty" data-track="entry:related">Update Your Beauty Routine With These Tips From The Gee&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/how-to-apply-fake-eyelashes" data-track="entry:related"><img src="http://static2.refinery29.com/bin/entry/966/120x143/104708/opener.jpg" alt="opener" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/how-to-apply-fake-eyelashes" data-track="entry:related">How To Apply Fake Lashes Without Gluing Your Fingers Together</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/how-to-wear-jewel-tone-liquid-eyeliner" data-track="entry:related"><img src="http://static1.refinery29.com/bin/entry/06b/120x143/103189/opener.jpg" alt="opener" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/how-to-wear-jewel-tone-liquid-eyeliner" data-track="entry:related">Score Semi-Precious Peepers With This Jewel Eyeliner How-To</a></h2>
+          </li>
+          
+        
+      
+        
+    <!-- /CACHE 5ca89 - ttl: 180 -->
+  </ul>
+
+  
+<div class="ad ad-related-stories-ccu" iframe-code="http://ad.doubleclick.net/adi/r29.mia.oao/beauty/diy-and-tips;s1=beauty;s2=diy-and-tips;s3=diy-and-tips;sponsorship=;pagetype=slideshow;test=;pageid=easy-braid-hairstyles;pos=middle;tile=3;dcopt=;sz=300x251;" iframe-size="300x251"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.mia.oao/beauty/diy-and-tips;s1=beauty;s2=diy-and-tips;s3=diy-and-tips;sponsorship=;pagetype=slideshow;test=;pageid=easy-braid-hairstyles;pos=middle;tile=3;dcopt=;sz=300x251;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.mia.oao/beauty/diy-and-tips;s1=beauty;s2=diy-and-tips;s3=diy-and-tips;sponsorship=;pagetype=slideshow;test=;pageid=easy-braid-hairstyles;pos=middle;tile=3;dcopt=;sz=300x251;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.mia.oao/beauty/diy-and-tips;s1=beauty;s2=diy-and-tips;s3=diy-and-tips;sponsorship=;pagetype=slideshow;test=;pageid=easy-braid-hairstyles;pos=middle;tile=3;dcopt=;sz=300x251;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+
+</div>
+
+      <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+    var disqus_shortname = 'refinery'; // required: replace example with your forum shortname
+    var disqus_developer = 1;
+    var disqus_url = 'http://www.refinery29.com/easy-braid-hairstyles';
+    
+    $(function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('body')[0]).appendChild(dsq);
+    });
+    
+</script>
+    </div>
+     
+
+					</div>
+            
+          <div class="col beta sidebar">
+            <!-- RIGHT -->
+                            
+              <!-- CACHE c074a - ttl: 600 -->                 
+      				  
+      				  
+                
+<div class="ad ad-sidebar-border" iframe-code="http://ad.doubleclick.net/adi/r29.mia.oao/beauty/diy-and-tips;s1=beauty;s2=diy-and-tips;s3=diy-and-tips;sponsorship=;pagetype=slideshow;test=;pageid=easy-braid-hairstyles;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;" iframe-size="300x250,300x600,300x1050"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.mia.oao/beauty/diy-and-tips;s1=beauty;s2=diy-and-tips;s3=diy-and-tips;sponsorship=;pagetype=slideshow;test=;pageid=easy-braid-hairstyles;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.mia.oao/beauty/diy-and-tips;s1=beauty;s2=diy-and-tips;s3=diy-and-tips;sponsorship=;pagetype=slideshow;test=;pageid=easy-braid-hairstyles;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.mia.oao/beauty/diy-and-tips;s1=beauty;s2=diy-and-tips;s3=diy-and-tips;sponsorship=;pagetype=slideshow;test=;pageid=easy-braid-hairstyles;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+                
+                
+                                
+
+                                
+                
+                
+
+                                  
+
+      <div class="m-o-d-widget">
+      <a href="/month-of-denim"><h3 class="headline">Month of Denim</h3></a>
+    
+      
+      <a href="/denim-day-nicole-tondra" class="frame"><img src="http://static2.refinery29.com/bin/entry/0d7/x/176495/monthofdenim-14.jpg" alt="MonthofDenim_14"    /></a>
+    </div>
+  
+
+        
+                
+
+                                  <div class="r29tv">
+  <a href="http://www.refinery29.com/everywhere/news/video"><img src="http://static3.refinery29.com/blog/fa5471/images/widgets/r29tv-header.jpg" style="margin: 0pt auto; display: block;" alt="Refinery29 TV" /></a>               
+  
+  <div style="display:none"></div>
+  
+  <!--  Videos populated by 
+        Homepage & Index Page Right Rail Playlist in Brightcove Admin
+        Video Player with Horizontal Video List -->
+  
+  <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+  
+  <object id="myExperience" class="BrightcoveExperience">
+    <param name="bgcolor" value="#FFFFFF" />
+    <param name="width" value="300" />
+    <param name="height" value="340" />
+    <param name="playerID" value="1223625514001" />
+    <param name="playerKey" value="AQ~~,AAAAjP0iSQE~,RJXHfxnZT2gNv3dZGdjsA7BIfR73CLPe" />
+    <param name="isVid" value="true" />
+    <param name="isUI" value="true" />
+    <param name="dynamicStreaming" value="true" />
+    <param name="wmode" value="transparent" />
+  </object>
+  
+  <!-- 
+  This script tag will cause the Brightcove Players defined above it to be created as soon
+  as the line is read by the browser. If you wish to have the player instantiated only after
+  the rest of the HTML is processed and the page load is complete, remove the line.
+  -->
+  <script type="text/javascript">brightcove.createExperiences();</script>
+</div>
+                
+
+                
+              <!-- /CACHE c074a - ttl: 600 -->
+              
+              <!--Top Popular & Editor's Picks -->
+              <!-- Top 5 Popular -->
+<div class="top-picks">
+  <div class="popular">
+    
+<div class="ad ad-top5" iframe-code="http://ad.doubleclick.net/adi/r29.mia.oao/beauty/diy-and-tips;s1=beauty;s2=diy-and-tips;s3=diy-and-tips;sponsorship=;pagetype=slideshow;test=;pageid=easy-braid-hairstyles;pos=top;tile=6;dcopt=;sz=75x30;" iframe-size="75x30"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.mia.oao/beauty/diy-and-tips;s1=beauty;s2=diy-and-tips;s3=diy-and-tips;sponsorship=;pagetype=slideshow;test=;pageid=easy-braid-hairstyles;pos=top;tile=6;dcopt=;sz=75x30;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.mia.oao/beauty/diy-and-tips;s1=beauty;s2=diy-and-tips;s3=diy-and-tips;sponsorship=;pagetype=slideshow;test=;pageid=easy-braid-hairstyles;pos=top;tile=6;dcopt=;sz=75x30;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.mia.oao/beauty/diy-and-tips;s1=beauty;s2=diy-and-tips;s3=diy-and-tips;sponsorship=;pagetype=slideshow;test=;pageid=easy-braid-hairstyles;pos=top;tile=6;dcopt=;sz=75x30;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+  </div>
+  <ul>
+      
+              <li>
+        	<a href="/easy-braid-hairstyles" class="title" data-track="top5:popular">
+	          <span><img src="http://static1.refinery29.com/bin/entry/9f6/60x70/112826/opener.jpg" alt="opener" width="60" height="70"  /></span>
+	          You Totally Got This: 4 Easy Braids For Rookies
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/easy-braid-hairstyles" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/cropped-tops-summer" class="title" data-track="top5:popular">
+	          <span><img src="http://static1.refinery29.com/bin/entry/60a/60x70/176789/cropped-opener.jpg" alt="cropped_opener" width="60" height="70"  /></span>
+	          Short-Sighted! 15 Cropped Tops That Look Stylish, Not Sloppy
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/cropped-tops-summer" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/cute-workout-clothes" class="title" data-track="top5:popular">
+	          <span><img src="http://static1.refinery29.com/bin/entry/c64/60x70/175558/opener.jpg" alt="opener" width="60" height="70"  /></span>
+	          Workout Gear You'll Actually WANT To Wear 
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/cute-workout-clothes" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/lost-luggage-sale" class="title" data-track="top5:popular">
+	          <span><img src="http://static3.refinery29.com/bin/entry/8f9/60x70/177191/luggage.jpg" alt="luggage" width="60" height="70"  /></span>
+	          This Bonkers Sale Lets You Steal People's Luggage
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/lost-luggage-sale" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/kruzin-design-sale" class="title" data-track="top5:popular">
+	          <span><img src="http://static3.refinery29.com/bin/entry/322/60x70/176516/alessandra-gold-opener.jpg" alt="alessandra_gold_opener" width="60" height="70"  /></span>
+	          High Design Sneakers! Catch KruZin's Cute Kicks While You Can
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/kruzin-design-sale" width="90"></fb:like>
+        </li>
+      
+    
+  </ul>
+</div>
+              <!-- Top 5 Editor's Picks -->
+<div class="top-picks">
+  <div class="editors"></div>
+  <ul class="editors">
+          <li>
+      	<a href="/spring-palm-floral" data-track="top5:editors" class="title">
+	        <span><img src="http://static1.refinery29.com/bin/entry/770/60x70/169171/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					How To Rock The Palm Floral Without Looking Like Grandma
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/spring-palm-floral" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/nail-art-salons" data-track="top5:editors" class="title">
+	        <span><img src="http://static1.refinery29.com/bin/entry/89b/60x70/165333/nailart.jpg" alt="nailart" width="60" height="70"  /></span>
+					Kitties And Kawaii! Top 5 Places To Score Amazing Nail Art
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/nail-art-salons" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/spring-break-swimsuits" data-track="top5:editors" class="title">
+	        <span><img src="http://static2.refinery29.com/bin/entry/967/60x70/160940/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					12 Stellar Swimsuits for A Stylish Miami Study Break 
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/spring-break-swimsuits" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/miami-cheesy-fashion" data-track="top5:editors" class="title">
+	        <span><img src="http://static2.refinery29.com/bin/entry/b5b/60x70/159363/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					10 Miami Fashion Stereotypes (And How To Rock Them Right)
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/miami-cheesy-fashion" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/best-stores-miami" data-track="top5:editors" class="title">
+	        <span><img src="http://static1.refinery29.com/bin/entry/94b/60x70/153106/storeswelove-miami-opener.jpg" alt="storeswelove_miami_opener" width="60" height="70"  /></span>
+					The 29 Best Boutiques In Miami (Hands Down!), Plus R29-Only Deals!
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/best-stores-miami" width="90"></fb:like>
+      </li>
+    
+        
+  </ul>
+</div>
+              
+              <!-- CACHE bf6d3 - ttl: 600 -->                <!-- Ad Editorial Module -->
+                
+                
+                <!-- Connect Tools -->
+<div class="connect">
+	<h4>Follow R29</h4>
+	<div>
+		<a href="http://www.facebook.com/refinery29" class="fb"></a>
+		<a href="http://twitter.com/refinery29" class="twit"></a>
+		<a href="/index.xml" class="rss"></a>
+	</div>
+</div>
+                <!-- Facebook Likes Widget -->
+<div class="facebook-likes">
+  <fb:like-box href="http://www.facebook.com/refinery29" width="300" height="255" show_faces="true" rows="1" stream="false" header="false"></fb:like-box>
+</div>
+<!-- /Facebook Widget -->
+                
+<!-- Reserve Widget -->
+  <div class="reserve-widget">
+    <a href="http://reserve.refinery29.com/" data-track="reserve_widget"><img src="http://static2.refinery29.com/blog/fa5471/images/widgets/reserve-widget-header.png" width="300" height="auto" border="0" alt="Show Now on Reserve" /></a>
+    <div class="subhead">Tailor-Made Deals. Get Them Now!</div>
+    <div class="ribbon pre"></div><div class="ribbon post"></div>
+    <ul>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/348/koshka"  data-track="reserve_widget" class="less">
+	        <img src="//static2.refinery29.com/bin/deal/a53/130x100/173774/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Build The Ultimate Indie Closet: $75 Off Samantha Pleet, MinkPink, And More</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/349/rebecca-minkoff"  data-track="reserve_widget" class="less">
+	        <img src="//static1.refinery29.com/bin/deal/ce0/130x100/176735/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4"> Min-sanity: Everything Rebecca Minkoff Is Now Up To $185 Off!</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/333/vanessa-mooney"  data-track="reserve_widget" class="less">
+	        <img src="//static2.refinery29.com/bin/deal/dea/130x100/169501/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">From Vanessa Mooney To You: $75 Off The Hottest Music Festival Jewels Around</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/347/miguelina"  data-track="reserve_widget" class="less">
+	        <img src="//static2.refinery29.com/bin/deal/141/130x100/174046/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Wearable Wanderlust: $125 Off The Amaze Resortwear You Don&rsquo;t Have To Travel To Love</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/334/zinke-intimates"  data-track="reserve_widget" class="less">
+	        <img src="//static1.refinery29.com/bin/deal/888/130x100/169782/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Beach To Boudoir: Up To Half-Off Zinke&rsquo;s Hot-Hued Swimsuits And Lingerie</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+    
+    </ul>
+  </div>
+ 
+                <!-- Street Style Widget -->
+<div class="street-fashion-widget">
+  <a href="/everywhere/fashion/street-fashion/" class="header">Street Fashion</a>
+      <a href="/flats-for-spring">
+	    <span class="italic">Inside R29: This Week, Our World Is Flats</span>
+	    <span class="polaroid">
+	      <img src="http://static2.refinery29.com/bin/entry/c82/158x190/177555/opener.jpg" alt="opener" width="158" height="190"  />
+	    </span>
+    </a>  
+  
+        
+</div>
+              <!-- /CACHE bf6d3 - ttl: 600 -->
+                 
+              
+<div class="ad ad-sidebar" iframe-code="http://ad.doubleclick.net/adi/r29.mia.oao/beauty/diy-and-tips;s1=beauty;s2=diy-and-tips;s3=diy-and-tips;sponsorship=;pagetype=slideshow;test=;pageid=easy-braid-hairstyles;pos=middle1;tile=7;dcopt=;sz=300x100;" iframe-size="300x100"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.mia.oao/beauty/diy-and-tips;s1=beauty;s2=diy-and-tips;s3=diy-and-tips;sponsorship=;pagetype=slideshow;test=;pageid=easy-braid-hairstyles;pos=middle1;tile=7;dcopt=;sz=300x100;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.mia.oao/beauty/diy-and-tips;s1=beauty;s2=diy-and-tips;s3=diy-and-tips;sponsorship=;pagetype=slideshow;test=;pageid=easy-braid-hairstyles;pos=middle1;tile=7;dcopt=;sz=300x100;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.mia.oao/beauty/diy-and-tips;s1=beauty;s2=diy-and-tips;s3=diy-and-tips;sponsorship=;pagetype=slideshow;test=;pageid=easy-braid-hairstyles;pos=middle1;tile=7;dcopt=;sz=300x100;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+              
+            
+          </div>
+          
+          <div class="clear"></div>
+          <!-- CACHE 89436 - ttl: 300 -->            <!-- Footer @More Stories -->
+<div class="footer-boxes">
+  <div class="hot-dimple">More Style At Your Fingertips</div>
+	<ul>
+					<li>
+				<div> 
+				<a href="/best-spring-beauty-products" data-track="hotspot:footer-more">
+					<img src="http://static1.refinery29.com/bin/public/8f8/120x143/169793/opener2.jpg" alt="opener2" width="120" height="143"  />
+					<span class="more_h2 footer_h2">Editors' Picks: 50 Fresh Beauty Buys For Spring</span>
+				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/best-spring-beauty-products#disqus_thread" data-url="http://www.refinery29.com/best-spring-beauty-products" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/beauty" class="category" data-track="hotspot:footer-more">Beauty</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+				<a href="/spring-must-haves" data-track="hotspot:footer-more">
+					<img src="http://static1.refinery29.com/bin/entry/260/120x143/169054/opener2.jpg" alt="Opener2" width="120" height="143"  />
+					<span class="more_h2 footer_h2">29 Magical Buys To Transform Your Look</span>
+				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/spring-must-haves#disqus_thread" data-url="http://www.refinery29.com/spring-must-haves" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/shopping" class="category" data-track="hotspot:footer-more">Shopping</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+				<a href="/burning-fashion-questions-answered" data-track="hotspot:footer-more">
+					<img src="http://static2.refinery29.com/bin/public/891/120x143/162504/annadellarusso-opener.jpg" alt="AnnadellaRusso_opener" width="120" height="143"  />
+					<span class="more_h2 footer_h2">29 Of Fashion's Biggest Mysteries, Solved!</span>
+				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/burning-fashion-questions-answered#disqus_thread" data-url="http://www.refinery29.com/burning-fashion-questions-answered" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/fashion" class="category" data-track="hotspot:footer-more">Fashion</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+				<a href="/spring-makeup-tutorial" data-track="hotspot:footer-more">
+					<img src="http://static3.refinery29.com/bin/public/a01/120x143/161840/sprong-beauty-tutorial-opener.jpg" alt="sprong-beauty-tutorial-opener" width="120" height="143"  />
+					<span class="more_h2 footer_h2">5 Products, 5 Stunning Spring Looks (Really!)</span>
+				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/spring-makeup-tutorial#disqus_thread" data-url="http://www.refinery29.com/spring-makeup-tutorial" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/beauty" class="category" data-track="hotspot:footer-more">Beauty</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+				<a href="/best-spring-shoes" data-track="hotspot:footer-more">
+					<img src="http://static1.refinery29.com/bin/public/b0a/120x143/156415/opener1.jpg" alt="opener1" width="120" height="143"  />
+					<span class="more_h2 footer_h2">Spring Shoes! The 20 Best Pairs To Shop Now</span>
+				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/best-spring-shoes#disqus_thread" data-url="http://www.refinery29.com/best-spring-shoes" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/shopping" class="category" data-track="hotspot:footer-more">Shopping</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+				<a href="/spring-shopping-essentials" data-track="hotspot:footer-more">
+					<img src="http://static3.refinery29.com/bin/public/bd9/120x143/154781/spring-essentials-opener-new.jpg" alt="spring-ESSENTIALS-opener-NEW" width="120" height="143"  />
+					<span class="more_h2 footer_h2">30 Wardrobe Essentials You Need For Spring</span>
+				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/spring-shopping-essentials#disqus_thread" data-url="http://www.refinery29.com/spring-shopping-essentials" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/shopping" class="category" data-track="hotspot:footer-more">Shopping</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+        
+	</ul> 
+</div>
+          <!-- /CACHE 89436 - ttl: 300 -->
+          
+
+        </div> <!-- /Content -->
+    
+        <!-- Footer -->
+<div id="footer">
+  <img src="http://static2.refinery29.com/blog/fa5471/images/refinery29-logo.png" width="200" height="24" alt="Refinery29" />
+
+	<p><strong>&copy;2012 Refinery29. All Rights Reserved.</strong></p>
+	<ul>
+		<li><a href="/">Home</a> | </li>
+		<li><a href="http://www.refinery29.com/about">About</a> | </li>
+				<li><a href="http://www.refinery29.com/about">Contact</a> | </li>
+		
+		<li><a href="http://www.refinery29.com/careers">Careers</a> | </li>
+		<li><a href="http://www.refinery29.com/about">Advertise</a> | </li>
+		<li><script type="text/javascript">
+<!--
+document.write(String.fromCharCode(60,97,32,104,114,101,102,61,34,109,97,105,108,116,111,58,102,101,101,100,98,97,99,107,64,114,101,102,105,110,101,114,121,50,57,46,99,111,109,34,32,99,108,97,115,115,61,39,101,109,97,105,108,39,62,71,111,116,32,65,32,84,105,112,63,60,47,97,62));
+-->
+</script> | </li>
+		<li><a href="http://www.refinery29.com/signup">Sign Up</a> | </li>
+		  		<li><a href="http://www.refinery29.com/privacy">Privacy Policy</a> | </li>
+  		<li><a href="http://www.refinery29.com/terms-and-conditions">Terms and Conditions</a> | </li>
+		
+		<li><a href="http://the-rig.refinery29.com">The Rig</a> | </li>
+		<li><a href="http://www.refinery29.com/index.xml">RSS</a></li>
+	</ul>
+	
+	
+	<div id="mobile-link"><a href="/?mobile=true">Refinery29 Mobile</a></div>
+	
+</div>
+
+                
+      </div> <!-- /Inner -->
+      
+    </div> <!-- /Container -->
+
+    <!-- Comscore -->
+<script type="text/javascript">
+  var r29cookie = document.cookie;
+  var val;
+  
+  if (r29cookie.indexOf("r29comstore=") != -1)
+   {
+      i = r29cookie.indexOf("r29comstore=");
+      s = r29cookie.substring(i + 12);
+      j = s.indexOf(";");
+      if (j == -1)
+      {
+          val = s;
+      }
+      else {
+          val = s.substring(0, j);
+      }
+  } else {
+      val = Math.floor(Math.random() * 12345678);
+      var date = new Date();
+      date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
+      document.cookie = 'r29comstore=' + val + '; expires=' + date.toGMTString() + '; path=/';
+  }
+  
+  var currentUrl = self.location.url;
+  document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb": "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+
+</script>
+<script type="text/javascript"> 
+  COMSCORE.beacon({ c1:2, c2:"7395029",c3:"www.refinery29.com", c4:currentUrl, c5:"", c6:"", c15: val });
+</script>
+<noscript>
+  <img src = "http://b.scorecardresearch.com/p?c1=2&amp;c2=7395029&amp;c3=www.refinery29.com&amp;c4=http://www.refinery29.com/&amp;c5=&amp;c6=&amp;c15=C67BD3C1&amp;cj=1" alt="Comscore" />
+</noscript>
+<!-- /Comscore -->
+<!-- Google Analytics -->
+<script type="text/javascript">
+  
+  var _gaq = _gaq || [];
+    
+  // break up host into app, subdomain and tld
+  var tmp = /^([^\.]+\.)([\w\.]+)?refinery29\.(\w+)(:\d+)?$/.exec(window.location.host.toLowerCase()),
+    
+      // application
+      app = tmp[1] ? tmp[1] : 'www',
+      
+      // subdomain
+      sub = tmp[2] ? tmp[2] : '',
+      
+      // top level domain
+      tld = tmp[3] ? tmp[3] : 'com';
+  
+  _gaq.push(['_setAccount', 'UA-315022-1']);
+  
+  _gaq.push(['_setDomainName', '.refinery29.' + tld]);
+  
+  _gaq.push(['_addIgnoredRef', 'refinery29.' + tld]);
+
+  
+  
+  _gaq.push(['_setCustomVar',
+    1,                   // This custom var is set to slot #1.  Required parameter.
+    'Category',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'miami\/beauty\/diy-and-tips', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+   
+   
+  _gaq.push(['_setCustomVar',
+    2,                   // This custom var is set to slot #2.  Required parameter.
+    'Publication Date',     // The name acts as a kind of category for the user activity.  Required parameter.
+    '2012-01-25', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+  
+  
+  _gaq.push(['_setCustomVar',
+    3,                   // This custom var is set to slot #3.  Required parameter.
+    'Author',// The name acts as a kind of category for the user activity.  Required parameter.
+    'Nikki Novo, Jose M. Luciani, Audra Billingsley', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+  _gaq.push(['_setCustomVar',
+    4,                   // This custom var is set to slot #4.  Required parameter.
+    'Entry Type',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'SLIDESHOW', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+
+   
+  _gaq.push(['_setCustomVar', //USE THIS  R29.cookie.get('R29_UID');
+    5,                   // This custom var is set to slot #5.  Required parameter.
+    'Log-in Status',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'Not Logged In', // This value of the custom variable.  Required parameter.
+    2                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+   
+  _gaq.push(['_trackEvent',
+    'Navigation Click', // category of activity
+    $(this).attr('data-track'),
+    'miami:beauty:diy-and-tips', // Action
+    ,
+    true
+  ]);
+  
+  _gaq.push(['_trackPageview']);
+   
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- /Google Analytics -->
+
+<!-- Quantcast -->
+<script type="text/javascript">
+_qoptions={ qacct:"p-fesXMHo90Ka_A" };
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+  <img src="http://pixel.quantserve.com/pixel/p-fesXMHo90Ka_A.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- /Quantcast -->
+    <div id="js-cont"></div> 
+
+<!-- Facebook -->
+<div id="fb-root"></div> 
+<script type="text/javascript">
+
+  window.fbAsyncInit = function() {
+  
+    FB.init({ appId: '155023867867753', status: true, cookie: true, xfbml: true});
+    
+    /* Check if the user is NOT logged into R29, but IS logged into Facebook.  Fix it */
+    if (R29.url.param.getVar('fb') && !R29.user.token() && FB.getSession()) { //We have some sort of session, we *may* be logged in.
+      FB.getLoginStatus(function(response) {
+        if(response.status == 'connected') {
+          return document.location = 'https://welcome.refinery29.com/register?from=http%3A%2F%2Fwww.refinery29.com%2Feasy-braid-hairstyles%2Fslideshow%3Fpage%3D2&amp;sig=659e4&amp;app=blog&amp;fb=1';
+        }    
+      });      
+    }
+        
+    //FACEBOOK LOGIN
+    $('a.fb_button, a.r29_fb_button').live('click', function() {
+      R29.FBLoginPopup();
+      return false;
+    });
+    
+    if (typeof window.fbAsyncOnInit == "function") {
+      window.fbAsyncOnInit();
+    }
+    
+    /* GOOGLE ANALYTICS */
+
+    FB.Event.subscribe('edge.create', function(targetUrl, fb_ref) {
+    	if (fb_ref._attr.ref == "homepage"){
+    		_gaq.push(['_trackEvent', 'FacebookIndex', 'like']);
+    	}
+    	else if (fb_ref._attr.ref == "entrypage"){
+    		_gaq.push(['_trackEvent', 'FacebookSolo', 'like']);
+    	}
+    	else if (fb_ref._attr.ref == "sidebar"){
+    		_gaq.push(['_trackEvent', 'FacebookSidebar', 'like']);
+    	}
+      _gaq.push(['_trackSocial', 'facebook', 'like', targetUrl]);
+    });
+    
+    FB.Event.subscribe('edge.remove', function(targetUrl) {
+      _gaq.push(['_trackSocial', 'facebook', 'unlike', targetUrl]);
+    });
+    
+    FB.Event.subscribe('message.send', function(targetUrl) {
+      _gaq.push(['_trackSocial', 'facebook', 'send', targetUrl]);
+    });
+    
+       
+  };
+  
+  R29.FBLoginPopup = function () {
+
+    FB.login(function(response) {
+    
+      if (response.session) {
+        //They *may* have given us perms, but who knows.
+        return document.location = 'https://welcome.refinery29.com/connect/fb?from=http%3A%2F%2Fwww.refinery29.com%2Feasy-braid-hairstyles%2Fslideshow%3Fpage%3D2&amp;sig=659e4&amp;app=blog&amp;fb=1';
+      } else {
+        //Oh well, something is wrong, let's try the normal login
+        return document.location = 'https://welcome.refinery29.com/register?from=http%3A%2F%2Fwww.refinery29.com%2Feasy-braid-hairstyles%2Fslideshow%3Fpage%3D2&amp;sig=659e4&amp;app=blog&amp;fb=1';
+      }
+      
+     },{ scope: 'email,offline_access,publish_stream,publish_actions' } );
+  }
+  
+  
+</script>
+
+<script type="text/javascript">
+  //
+  
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script> 
+<!-- /Facebook -->
+
+<!-- Twitter -->
+<script type="text/javascript">
+    window.twttr = (function (d,s,id) {
+      var t, js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+      js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+
+  
+  //START GOOGLE ANALYTICS TWITTER TRACKING
+  function trackTwitter(intent_event) {
+    if (intent_event) {
+      var opt_pagePath;
+      if (intent_event.target && intent_event.target.nodeName == 'IFRAME') {
+            opt_target = extractParamFromUri(intent_event.target.src, 'url');
+      }
+      _gaq.push(['_trackSocial', 'twitter', 'tweet', opt_pagePath]);
+    }
+  }
+
+  //Wrap event bindings - Wait for async js to load
+  twttr.ready(function (twttr) {
+    //event bindings
+    twttr.events.bind('tweet', trackTwitter);
+  });
+  
+	function extractParamFromUri(uri, paramName) {
+	  if (!uri) {
+	    return;
+	  }
+	  var regex = new RegExp('[\\?&#]' + paramName + '=([^&#]*)');
+	  var params = regex.exec(uri);
+	  if (params != null) {
+	    return unescape(params[1]);
+	  }
+	  return;
+	}
+	//END GOOGLE ANALYTICS TWITTER TRACKING
+
+</script>
+<!-- /Twitter -->
+
+<!-- Pinterest -->
+  <script type="text/javascript">
+  (function() {
+      window.PinIt = window.PinIt || { loaded:false };
+      if (window.PinIt.loaded) return;
+      window.PinIt.loaded = true;
+      function async_load(){
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          if (window.location.protocol == "https:")
+              s.src = "https://assets.pinterest.com/js/pinit.js";
+          else
+              s.src = "http://assets.pinterest.com/js/pinit.js";
+          var x = document.getElementsByTagName("script")[0];
+          x.parentNode.insertBefore(s, x);
+      }
+      if (window.attachEvent)
+          window.attachEvent("onload", async_load);
+      else
+          window.addEventListener("load", async_load, false);
+  })();
+  </script>
+<!-- /Pinterest -->
+
+
+<!-- Disqus -->
+
+<script type="text/javascript">
+  var disqus_shortname = 'refinery';
+  var disqus_developer = 1;
+  
+
+var DISQUSWIDGETS;
+var disqus_domain;
+var disqus_shortname;
+if (typeof DISQUSWIDGETS == "undefined") {
+    DISQUSWIDGETS = (function () {
+        var d = {},
+            a = (document.getElementsByTagName("HEAD")[0] || document.getElementsByTagName("BODY")[0]),
+            c = 0,
+            f = {},
+            e = {
+                identifier: 1,
+                url: 2,
+                slug: 3
+            };
+
+        function b(i) {
+            var h, k;
+
+            function j(l) {
+                return i.hasAttribute ? i.hasAttribute(l) : i.getAttribute(l) !== null
+            }
+            
+            if (j("data-disqus-identifier")) {
+                h = e.identifier;
+                k = i.getAttribute("data-disqus-identifier")
+            } else {
+            
+                if (j("data-url")) {
+                    h = e.url;
+                    k = i.getAttribute("data-url")
+                } else if (j("data-disqus-slug")) {
+                    h = e.slug;
+                    k = i.getAttribute("data-disqus-slug")
+                } else {
+                    h = e.url;
+                    k = i.href.replace("#disqus_thread", "")
+                }
+                
+            }
+            f[c++] = {
+                element: i,
+                type: h,
+                value: k
+            }
+        }
+        function g(k) {
+            var j = document.getElementsByTagName("A");
+            for (var h = 0; h < j.length; h++) {
+                if (j[h].href.indexOf("#disqus_thread") >= 0) {
+                    k(j[h])
+                }
+            }
+        }
+        d.domain = "disqus.com";
+        d.forum = "";
+        d.getCount = function () {
+            var m, h, k, j;
+            var l = [],
+                o = 0,
+                i = 10;
+
+            function n(q, p) {
+                return encodeURIComponent(q) + "=" + encodeURIComponent(p.type) + "," + encodeURIComponent(p.value)
+            }
+            g(b);
+            for (m in f) {
+                if (f.hasOwnProperty(m)) {
+                    l.push(n(m, f[m]))
+                }
+            }
+            k = l.slice(o, i);
+            while (k.length > 0) {
+                j = document.createElement("script");
+                j.type = "text/javascript";
+                j.async = true;
+                j.src = "http://" + d.domain + "/forums/" + d.forum + "/count.js?q=1&" + k.join("&");
+                a.appendChild(j);
+                o += 10;
+                i += 10;
+                k = l.slice(o, i)
+            }
+        };
+        d.displayCount = function (j) {
+            var m, h, n, l;
+            for (var k = 0; k < j.counts.length; k++) {
+                m = j.counts[k];
+                h = f[m.uid];
+                if (h) {
+                    if (m.comments === 0) {
+                        n = j.text.comments.zero
+                    } else {
+                        if (m.comments == 1) {
+                            n = j.text.comments.one
+                        } else {
+                            n = j.text.comments.multiple
+                        }
+                    }
+                    l = n.replace("{num}", m.comments);
+                    if (j.showReactions) {
+                        n = "";
+                        if (m.reactions === 0) {
+                            n = j.text.reactions.zero
+                        } else {
+                            if (m.reactions == 1) {
+                                n = j.text.reactions.one
+                            } else {
+                                n = j.text.reactions.multiple
+                            }
+                        }
+                        if (n !== "") {
+                            l += " " + j.text.and + " " + n.replace("{num}", m.reactions)
+                        }
+                    }
+                    h.element.innerHTML = l
+                }
+            }
+        };
+        return d
+    }())
+}(function () {
+    if (typeof disqus_domain != "undefined") {
+        DISQUSWIDGETS.domain = disqus_domain
+    }
+    DISQUSWIDGETS.forum = disqus_shortname;
+    DISQUSWIDGETS.getCount()
+}());
+
+ 
+  
+</script>
+
+<!-- /Disqus -->
+
+<!-- R29 Schtufff -->
+<script type="text/javascript">
+
+$(function() {
+
+  // Variables
+  var tabs = $('div.top-five > ul > li');
+  var top5 = $('div.top-five > div');
+    
+  // On Click
+  $(tabs).click(function() {
+    
+    $(tabs).removeClass("active");
+    $(this).addClass("active");
+    
+    $(top5).hide();
+    var activeTab = $(this).find("a").attr("href");
+    $(activeTab).show();
+    
+    return false;
+  });
+  
+  
+  // Hot Carousel
+  $("#hot-carousel li").show();
+  $("#hot-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  auto: 6,
+  itemFallbackDimension: 280,
+  initCallback: 
+  function (carousel) {
+    $('.control div.slide-btn', carousel.container).bind('click', function() {
+      carousel.scroll(jQuery.jcarousel.intval($(this).attr('image_id')));
+      $('.control div',carousel.container).removeClass('selected');
+      $(this).addClass('selected');
+      return false;
+    });
+    $('.control div.next', carousel.container).bind('click', function() {
+      carousel.next();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+    $('.control div.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+  },
+  itemVisibleInCallback: function(carousel, item, idx, state) {
+    $('.control div',carousel.container).removeClass('selected');
+    $('.control div[image_id='+idx+']',carousel.container).addClass('selected');  
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+
+  // Category Carousel
+  
+  $("#category-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  itemFallbackDimension: 562,
+  initCallback: 
+  function (carousel) {
+    $('.control a.next', carousel.container).bind('click', function() {
+      carousel.next();
+      return false;
+    });
+    $('.control a.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      return false;
+    });
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+  
+  // Hot Category Carousel
+  $("#category-hot-carousel li").show();
+  $("#category-hot-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  auto: 6,
+  itemFallbackDimension: 608,
+  initCallback: 
+  function (carousel) {
+    $('.control div.slide-btn', carousel.container).bind('click', function() {
+      carousel.scroll(jQuery.jcarousel.intval($(this).attr('image_id')));
+      $('.control div',carousel.container).removeClass('selected');
+      $(this).addClass('selected');
+      return false;
+    });
+    $('.control div.next', carousel.container).bind('click', function() {
+      carousel.next();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+    $('.control div.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+  },
+  itemVisibleInCallback: function(carousel, item, idx, state) {
+    $('.control div',carousel.container).removeClass('selected');
+    $('.control div[image_id='+idx+']',carousel.container).addClass('selected');  
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+
+
+  // Related Videos Carousel
+  
+/*
+  $("#video-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  itemFallbackDimension: 562,
+  initCallback: 
+  function (carousel) {
+    $('.control img.next', carousel.container).bind('click', function() {
+      carousel.next();
+      return false;
+    });
+    $('.control img.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      return false;
+    });
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+*/
+  
+  //You know where the bottom line of the container shows while the page is loading, I hate it
+  $('#container .inner').css('border-bottom', '1px solid #ccc');
+  
+});
+
+</script>
+
+    <script type="text/javascript">
+  
+  var _chartbeat_loaded = false;
+  
+  $(function() {
+   
+    if (_chartbeat_loaded) return; 
+    
+    _chartbeat_loaded = true;
+    
+    var _sf_async_config={ uid:3552,domain:"refinery29.com" };
+    R29.remote.include_js("//a248.e.akamai.net/chartbeat.download.akamai.com/102508/js/chartbeat.js");
+      
+  });
+</script>
+          <!-- Crazy Egg -->
+<script type="text/javascript" src="//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/5055.js"></script>
+<!-- /Crazy Egg -->
+    
+    
+    
+    <!-- Internal Stats -->
+<script type="text/javascript">
+
+      R29_STAT_DATA = $.extend({ app:'blog' },R29.url.param.getUTM());
+  
+  
+  try {
+    R29.stats.send([['user_page_load',R29_STAT_DATA, ((new Date()).getTime() - _sf_startpt)]]);
+  } catch (e) { };
+      
+</script>
+<!-- /Internal Stats -->
+    
+    
+    
+    
+    <script type="text/javascript">
+     try {
+        R29.stats.send([['user_page_view',{
+          app:  'blog',
+          page: 'entry',
+          entry_type: 'SLIDESHOW',
+          entry_id: 26384, 
+          market_id: 7, 
+          category_id: [588,587,561], 
+          author_id: [758,820,821]
+        }]]);
+        
+        
+      } catch (e) { };
+    </script> 
+    
+    
+    
+          <!-- Sailthru Horizon --> 
+      <script type="text/javascript">
+        (function() {
+          var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+          s.src = ('https:'==location.protocol?'https://d1gp8joe0evc8s.cloudfront.net':'http://cdn.sail-horizon.com')+'/horizon/v1.js';
+          var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+      </script>
+      <script type="text/javascript">
+        $(window).load(function() {
+          Sailthru.setup({
+            domain: 'horizon.refinery29.com',
+            tags: "how-to-braid-your-hair,braids,up-dos,sean-donaldson-salon,walla-walla-washington,salon-stylist,braid-styles,billingsley,ponies,rookies,mane,donaldson,conrad,twists,true-story,pony,fingers,hometown,dolls,horses,resume,some-girls,money,beauty,ipad,everywhere,hair-trends,diy-and-tips,miami",
+            cookieDomain: '.refinery29.com'
+          });
+        });
+      </script>
+    
+
+
+  </body>
+<!-- Served in 221ms by web01.prod.refinery29.net at Sun, 15 Apr 2012 07:02:54 -0400 -->
+</html>

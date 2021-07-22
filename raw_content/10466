@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Slam Dumb!</title>
+<script type="text/javascript" src="js/myScript1.js"></script>
+<link href="css/style-2.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="./images/site/icon.ico"/>
+<meta name="description" content="The best NBA comics and articles on the planet."/>
+<meta name="keywords" content="NBA basketball comic comics articles lebron james cavaliers suns phoenix"/></head>
+<body>
+<div class="container">
+  <div class="mainHeader">
+  <div class="mainHeaderQuote"><img src="images/quotes/ron_artest_1.jpg"/></div>
+</div>  <div class="leftColumn">
+    <div class="navBtns" id="navBtns" name="navBtns">
+    <input type="button" class="mediumBtn1" value="NEWEST COMIC"
+	 onclick="parent.location='newComic.php'" target="_blank"/>
+    <input type="button" class="mediumBtn1" value="NEWEST ARTICLE"
+	 onclick="parent.location='newArticle.php'" target="_blank"/>
+  <div class="leftImg">
+    <img src="images/site/leftImg1.jpg"/>
+  </div>
+  <div class="largeBtn1Bg">
+    <div class="largeBtn1">
+	  <p>COMIC SEARCH</p>
+      <form class="searchForm1" action="comicSearch.php" method="get">
+        <input type="text" class="searchTermsInput1" name="cSearchTerms" id="cSearchTerms"/>
+	    <input type="submit" class="searchSubmitBtn1" value="GO"/>
+	  </form>
+	  <br/>
+	  <p>COMIC ARCHIVE</p>
+	  <select name="comicList" id="comicList" class="dropDownList" onchange='loadPage(document.getElementById("comicList"));'>
+	    <option value="#">Select...</option>
+		<option value="c1">Dec 25 2007</option>
+		<option value="c2">Jan 14 2008</option>
+		<option value="c3">Jan 20 2008</option>
+		<option value="c4">Feb 07 2008</option>
+		<option value="c5">Feb 19 2008</option>
+		<option value="c6">Feb 29 2008</option>
+		<option value="c7">Mar 01 2008</option>
+		<option value="c8">Mar 18 2008</option>
+		<option value="c9">Apr 01 2008</option>
+		<option value="c10">Apr 07 2008</option>
+		<option value="c11">Apr 14 2008</option>
+		<option value="c12">Apr 24 2008</option>
+		<option value="c13">Apr 28 2008</option>
+		<option value="c14">May 06 2008</option>
+		<option value="c15">May 09 2008</option>
+		<option value="c16">May 17 2008</option>
+		<option value="c17">May 22 2008</option>
+		<option value="c18">Jun 02 2008</option>
+		<option value="c19">Jun 13 2008</option>
+		<option value="c20">Jun 17 2008</option>
+		<option value="c21">Jun 30 2008</option>
+		<option value="c22">Jul 13 2008</option>
+		<option value="c23">Jul 27 2008</option>
+		<option value="c24">Aug 08 2008</option>
+		<option value="c25">Aug 16 2008</option>
+		<option value="c26">Aug 24 2008</option>
+		<option value="c27">Aug 29 2008</option>
+		<option value="c28">Oct 03 2008</option>
+		<option value="c29">Oct 15 2008</option>
+		<option value="c30">Oct 31 2008</option>
+		<option value="c31">Nov 20 2008</option>
+		<option value="c32">Nov 30 2008</option>
+		<option value="c33">Dec 13 2008</option>
+		<option value="c34">Dec 21 2008</option>
+		<option value="c35">Dec 25 2008</option>
+		<option value="c36">Jan 11 2009</option>
+		<option value="c37">Jan 25 2009</option>
+		<option value="c38">Feb 08 2009</option>
+		<option value="c39">Feb 12 2009</option>
+		<option value="c40">Mar 08 2009</option>
+		<option value="c41">Mar 30 2009</option>
+		<option value="c42">Apr 01 2009</option>
+		<option value="c43">Apr 24 2009</option>
+		<option value="c44">Apr 29 2009</option>
+		<option value="c45">May 17 2009</option>
+		<option value="c46">May 25 2009</option>
+		<option value="c47">Jun 14 2009</option>
+		<option value="c48">Jun 19 2009</option>
+		<option value="c49">Jul 04 2009</option>
+		<option value="c50">Jul 31 2009</option>
+		<option value="c51">Sep 24 2009</option>
+		<option value="c52">Nov 11 2009</option>
+		<option value="c53">Nov 20 2009</option>
+		<option value="c54">Dec 22 2009</option>
+		<option value="c55">Dec 25 2009</option>
+		<option value="c56">Jan 10 2010</option>
+		<option value="c57">Jan 23 2010</option>
+		<option value="c58">Feb 17 2010</option>
+		<option value="c59">Feb 22 2010</option>
+		<option value="c60">Mar 15 2010</option>
+		<option value="c61">Apr 01 2010</option>
+		<option value="c62">Apr 23 2010</option>
+		<option value="c63">May 01 2010</option>
+		<option value="c64">May 09 2010</option>
+		<option value="c65">May 17 2010</option>
+		<option value="c66">Jun 13 2010</option>
+		<option value="c67">Jul 08 2010</option>
+		<option value="c68">Oct 18 2010</option>
+		<option value="c69">Oct 21 2010</option>
+		<option value="c70">Oct 26 2010</option>
+		<option value="c71">Nov 08 2010</option>
+		<option value="c72">Nov 25 2010</option>
+		<option value="c73">Dec 25 2010</option>
+      </select>
+	</div>
+  </div>
+  <div class="largeBtn1Bg">
+    <div class="largeBtn1">
+	  <p>ARTICLE SEARCH</p>
+	  <!-- Start Bravenet.com Service Code -->
+<!-- Google CSE code begins -->
+<form id="searchbox_014485793048371056720:1bi14idu7jk" class="searchForm1" onsubmit="return false;">
+  <input type="text" class="searchTermsInput1" name="q" size="40"/>
+  <input type="submit" class="searchSubmitBtn1" value="GO"/>
+</form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=searchbox_014485793048371056720%3A1bi14idu7jk&lang=en"></script>
+
+<div id="results_014485793048371056720:1bi14idu7jk" style="display:none">
+  <div class="cse-closeResults"> 
+    <a>&times; Close</a>
+  </div>
+  <div class="cse-resultsContainer"></div>
+</div>
+
+<style type="text/css">
+@import url(http://www.google.com/cse/api/overlay.css);
+</style>
+
+<script src="http://www.google.com/uds/api?file=uds.js&v=1.0&key=ABQIAAAAWJGp6EhgGM24zkJcj3UCfRRjh_DqaIm5WkuXNYi-U4f6GiaV3BRYotISkuRJssMrbLP94MxT_JhI4Q&hl=en" type="text/javascript"></script>
+<script src="http://www.google.com/cse/api/overlay.js"></script>
+<script type="text/javascript">
+function OnLoad() {
+  new CSEOverlay("014485793048371056720:1bi14idu7jk",
+                 document.getElementById("searchbox_014485793048371056720:1bi14idu7jk"),
+                 document.getElementById("results_014485793048371056720:1bi14idu7jk"));
+}
+GSearch.setOnLoadCallback(OnLoad);
+</script>
+<!-- Google CSE Code ends -->
+	  <br/>
+	  <p>ARTICLE ARCHIVE</p>
+	  <select name="articleList" id="articleList" class="dropDownList" onchange='loadPage(document.getElementById("articleList"));'>
+	    <option value="#">Select...</option>
+        <option value="a1">Dec 25 2007</option>
+		<option value="a2">Dec 28 2007</option>
+		<option value="a3">Jan 14 2008</option>
+		<option value="a4">Jan 21 2008</option>
+		<option value="a5">Feb 06 2008</option>
+		<option value="a6">Feb 12 2008</option>
+		<option value="a7">Feb 23 2008</option>
+		<option value="a8">Mar 02 2008</option>
+		<option value="a9">Mar 15 2008</option>
+		<option value="a10">Mar 19 2008</option>
+		<option value="a11">Mar 26 2008</option>
+		<option value="a12">Mar 31 2008</option>
+		<option value="a13">Apr 02 2008</option>
+		<option value="a14">Apr 08 2008</option>
+		<option value="a15">Apr 11 2008</option>
+		<option value="a16">Apr 14 2008</option>
+		<option value="a17">Apr 18 2008</option>
+		<option value="a18">Apr 28 2008</option>
+		<option value="a19">May 06 2008</option>
+		<option value="a20">May 09 2008</option>
+		<option value="a21">May 16 2008</option>
+		<option value="a22">May 19 2008</option>
+		<option value="a23">May 23 2008</option>
+		<option value="a24">May 26 2008</option>
+		<option value="a25">May 30 2008</option>
+		<option value="a26">Jun 09 2008</option>
+		<option value="a27">Jun 10 2008</option>
+		<option value="a28">Jun 13 2008</option>
+		<option value="a29">Jun 17 2008</option>
+		<option value="a30">Jun 24 2008</option>
+		<option value="a31">Jul 08 2008</option>
+		<option value="a32">Jul 16 2008</option>
+		<option value="a33">Jul 19 2008</option>
+		<option value="a34">Jul 24 2008</option>
+		<option value="a35">Jul 29 2008</option>
+		<option value="a36">Aug 05 2008</option>
+		<option value="a37">Aug 16 2008</option>
+		<option value="a38">Aug 22 2008</option>
+		<option value="a39">Aug 24 2008</option>
+		<option value="a40">Aug 27 2008</option>
+		<option value="a41">Sep 26 2008</option>
+		<option value="a42">Oct 06 2008</option>
+		<option value="a43">Oct 13 2008</option>
+		<option value="a44">Oct 25 2008</option>
+		<option value="a45">Oct 28 2008</option>
+		<option value="a46">Oct 31 2008</option>
+		<option value="a47">Nov 16 2008</option>
+		<option value="a48">Nov 19 2008</option>
+		<option value="a49">Nov 22 2008</option>
+		<option value="a50">Nov 26 2008</option>
+		<option value="a51">Dec 01 2008</option>
+		<option value="a52">Dec 02 2008</option>
+		<option value="a53">Dec 03 2008</option>
+		<option value="a54">Dec 11 2008</option>
+		<option value="a55">Dec 15 2008</option>
+		<option value="a56">Dec 16 2008</option>
+		<option value="a57">Dec 21 2008</option>
+		<option value="a58">Dec 25 2008</option>
+		<option value="a59">Dec 31 2008</option>
+		<option value="a60">Jan 05 2009</option>
+		<option value="a61">Jan 08 2009</option>
+		<option value="a62">Jan 14 2009</option>
+		<option value="a63">Jan 15 2009</option>
+		<option value="a64">Jan 16 2009</option>
+		<option value="a65">Jan 18 2009</option>
+		<option value="a66">Jan 19 2009</option>
+		<option value="a67">Jan 22 2009</option>
+		<option value="a68">Jan 23 2009</option>
+		<option value="a69">Feb 02 2009</option>
+		<option value="a70">Feb 06 2009</option>
+		<option value="a71">Feb 15 2009</option>
+		<option value="a72">Mar 01 2009</option>
+		<option value="a73">Mar 05 2009</option>
+		<option value="a74">Mar 08 2009</option>
+		<option value="a75">Mar 11 2009</option>
+		<option value="a76">Mar 18 2009</option>
+		<option value="a77">Mar 19 2009</option>
+		<option value="a78">Mar 21 2009</option>
+		<option value="a79">Mar 30 2009</option>
+		<option value="a80">Apr 01 2009</option>
+		<option value="a81">Apr 02 2009</option>
+		<option value="a82">Apr 09 2009</option>
+		<option value="a83">Apr 13 2009</option>
+		<option value="a84">Apr 18 2009</option>
+		<option value="a85">Apr 22 2009</option>
+		<option value="a86">Apr 26 2009</option>
+		<option value="a87">Apr 28 2009</option>
+		<option value="a88">May 05 2009</option>
+		<option value="a89">May 08 2009</option>
+		<option value="a90">May 09 2009</option>
+		<option value="a91">May 16 2009</option>
+		<option value="a92">May 17 2009</option>
+		<option value="a93">May 23 2009</option>
+		<option value="a94">May 30 2009</option>
+		<option value="a95">Jun 05 2009</option>
+		<option value="a96">Jun 10 2009</option>
+		<option value="a97">Jun 14 2009</option>
+		<option value="a98">Jun 16 2009</option>
+		<option value="a99">Jun 24 2009</option>
+		<option value="a100">Jun 26 2009</option>
+		<option value="a101">Jul 07 2009</option>
+		<option value="a102">Jul 24 2009</option>
+		<option value="a103">Aug 07 2009</option>
+		<option value="a104">Sep 03 2009</option>
+		<option value="a105">Sep 09 2009</option>
+		<option value="a106">Oct 26 2009</option>
+		<option value="a107">Oct 28 2009</option>
+		<option value="a108">Oct 29 2009</option>
+		<option value="a109">Nov 09 2009</option>
+		<option value="a110">Nov 13 2009</option>
+		<option value="a111">Nov 18 2009</option>
+		<option value="a112">Nov 20 2009</option>
+		<option value="a113">Dec 15 2009</option>
+		<option value="a114">Dec 21 2009</option>
+		<option value="a115">Dec 23 2009</option>
+		<option value="a116">Dec 25 2009</option>
+		<option value="a117">Dec 27 2009</option>
+		<option value="a118">Dec 30 2009</option>
+		<option value="a119">Jan 04 2010</option>
+		<option value="a120">Jan 06 2010</option>
+		<option value="a121">Jan 08 2010</option>
+		<option value="a122">Jan 13 2010</option>
+		<option value="a123">Jan 14 2010</option>
+		<option value="a124">Jan 21 2010</option>
+		<option value="a125">Jan 24 2010</option>
+		<option value="a126">Feb 03 2010</option>
+		<option value="a127">Feb 10 2010</option>
+		<option value="a128">Feb 16 2010</option>
+		<option value="a129">Feb 24 2010</option>
+		<option value="a130">Mar 15 2010</option>
+		<option value="a131">Mar 20 2010</option>
+		<option value="a132">Mar 30 2010</option>
+		<option value="a133">Apr 01 2010</option>
+		<option value="a134">Apr 04 2010</option>
+		<option value="a135">Apr 08 2010</option>
+		<option value="a136">Apr 14 2010</option>
+		<option value="a137">Apr 17 2010</option>
+		<option value="a138">Apr 22 2010</option>
+		<option value="a139">Apr 28 2010</option>
+		<option value="a140">May 02 2010</option>
+		<option value="a141">May 04 2010</option>
+		<option value="a142">May 09 2010</option>
+		<option value="a143">May 10 2010</option>
+		<option value="a144">May 13 2010</option>
+		<option value="a145">May 20 2010</option>
+		<option value="a146">May 26 2010</option>
+		<option value="a147">Jun 01 2010</option>
+		<option value="a148">Jun 18 2010</option>
+		<option value="a149">Jun 25 2010</option>
+		<option value="a150">Jun 30 2010</option>
+		<option value="a151">Jul 09 2010</option>
+		<option value="a152">Jul 14 2010</option>
+		<option value="a153">Jul 23 2010</option>
+		<option value="a154">Oct 18 2010</option>
+		<option value="a155">Oct 22 2010</option>
+		<option value="a156">Oct 26 2010</option>
+		<option value="a157">Nov 03 2010</option>
+		<option value="a158">Nov 17 2010</option>
+		<option value="a159">Dec 04 2010</option>
+		<option value="a160">Dec 22 2010</option>
+		<option value="a161">Dec 24 2010</option>
+		<option value="a162">Dec 27 2010</option>
+      </select>
+	</div>
+  </div>
+  <input type="button" class="mediumBtn1" value="COOL RATINGS"
+	 onclick="parent.location='newCoolRatings.php'" target="_blank"/>
+  <input type="button" class="mediumBtn1"/>
+  <div class="navBtnsFooter">
+    Comic Search powered by <a href="http://www.sciros.net">SCIROSnet</a>
+  </div>
+</div>
+<div class="googleAd1">
+<div class="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-7807476101772173";
+/* 160x600, created 1/12/09 */
+google_ad_slot = "9882905962";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+</div>  </div>
+  <div class="rightColumn"> 
+    <div class="comic"> 
+      <div class="comicHeader"> 
+        <div class="headerDate">Oct 18 2010</div>
+        <div class="headerTitle">Keeping It Real</div>
+      </div>
+      <div class="comicImage"><img src="images/comics/10_18_10.jpg"/></div>
+    </div>
+    <br/>
+	<div class="bottomBtns">
+  <input type="button" class="btn2"
+    onmouseover="hoverMouseOver(this);"
+    onmouseout="hoverMouseOut(this);"
+    onclick="previous();" value="PREVIOUS"/>
+  <input type="button" class="btn3"
+    onmouseover="hoverMouseOver(this);"
+    onmouseout="hoverMouseOut(this);"
+    onclick="next();" value="NEXT"/>
+</div>
+  </div>
+  <div class="thirdColumn">
+  <div class="rightTopButtonsContainer">
+    <div class="center">
+	  <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick"/>
+        <input type="hidden" name="hosted_button_id" value="53ZJGUE8QQMXC"/>
+        <input type="image" src="http://www.slamdumb.com/images/site/donateButton.jpg" border="0" name="submit" alt="Donate!"/>
+      </form>
+	</div>
+  </div>
+  <div class="googleAd2">
+    <div class="center">
+      <script type="text/javascript"><!--
+	  google_ad_client = "pub-7807476101772173";
+	  /* 160x600, created 1/13/09 */
+	  google_ad_slot = "1898222041"; 
+	  google_ad_width = 160; 
+	  google_ad_height = 600;
+	  //-->
+      </script>
+      <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+    </div>
+  </div>
+  <div class="linkToUsContainer">
+    <div class="center">
+	  SHARE SLAMDUMB!
+      <div class="linkToUs">
+        <script type="text/javascript">
+        digg_bgcolor = '#ff9900';
+        digg_skin = 'compact';
+        digg_window = 'new';
+        </script>
+        <script src="http://digg.com/tools/diggthis.js" type="text/javascript"></script>
+	  </div>
+      <div class="linkToUs">
+        <a href="http://www.stumbleupon.com/submit?url=http://www.slamdumb.com">
+        <img border="0" src="http://cdn.stumble-upon.com/images/120x20_thumb_black.gif">
+      </div>
+	  <div class="linkToUs">
+	    <a href="http://ballhype.com/post/"
+		   onclick="location.href='http://ballhype.com/post/url/?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);return false;"
+		>
+		  <img src="http://images.ballhype.com/media/img/hype/button_96x22.png" width="120" height="16" border="0" alt="BallHype: hype it up!"/>
+		</a>
+	  </div>
+	  <div class="linkToUs">
+		<img src="http://static.delicious.com/img/delicious.small.gif" height="10" width="10" alt="Delicious" />
+        <a href="http://delicious.com/save" onclick="window.open('http://delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;"> Add to del.icio.us</a>
+	  </div>
+    </div> 
+  </div>
+</div></div>
+<div class="pageMarker" id="pageMarker" name="pageMarker">c68</div>
+</body></html>

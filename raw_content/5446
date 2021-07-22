@@ -1,0 +1,463 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Memeopoly / cSlacker</title>
+		<script src="/public/js/jquery.min.js"></script>		
+		<link rel="stylesheet" type="text/css" href="/public/css/cslacker.com.core.css" media="all" />
+		<script src="/public/js/toolbox.js"></script>	
+		<link rel="icon" type="image/png" href="/public/images/favicon.png" />
+		<script>
+			$(document).ready(function(){
+				rr.menu.create(
+					$("#nav-account"),
+					$("#nav-account a.button"),
+					$("#nav-account ul")
+				);
+			});
+						
+			cs = {
+				REF: 	"e6a2dabbf31fb97d75e7f1a3c1d5619160764bfcda33655bd671e35cd7199365f18ff19f7169a37dec3e49cb462861749ea2eecbb94566f803ad7a5a7fb9f1f11328452410",
+				DURL: 	"http://cslacker.com/",
+				USER: 	0			};
+			
+		</script>
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-913307-13']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+	</head>
+	<body>
+		<center>
+			<div class="nav">
+				<center>
+					<table>
+						<tr>
+							<td width="270" align="left">
+								<a href="http://cslacker.com/" class="link"><span class="logo"></span></a>
+							</td>
+															<td align="right">	
+									<a href="" class="link" onclick="return rr.account.login();"><span class="link">Member Login</span></a>
+									<a href="" class="link" onclick="return rr.image.upload();"><span class="link">Upload Image</span></a>
+									
+									<a href="http://cslacker.com/images/random" class="link"><span class="link">Random Image</span></a>
+									<a href="http://cslacker.com/images" class="link"><span class="link">New Images</span></a>
+									<a href="http://cslacker.com/images/hot" class="link"><span class="link">Hot Images</span></a>
+								</td>
+													</tr>
+					</table>
+				</center>
+			</div>
+			<div class="main">		
+	
+	<script>
+	
+		var page = {
+			onload: function() {
+				page.div = $("#page");
+			
+				//social badges
+				//twitter
+				var s = document.createElement('SCRIPT');
+				s.type = 'text/javascript';
+				s.async = true;
+				s.src = 'http://platform.twitter.com/widgets.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+			
+				//stumble
+				$('<iframe></iframe>')
+				.attr({
+					'src': 					"http://www.stumbleupon.com/badge/embed/5/?url=http%3A%2F%2Fcslacker.com%2Fimages%2Fview%2F4797",
+					'scrolling': 			"no",
+					'frameborder':			"0",
+					'allowTransparency': 	"true"
+				})
+				.css({
+					'border': 	'none',
+					'overflow': 'hidden',
+					'width':	'50px',
+					'height': 	'60px'
+				})
+				.appendTo(
+					page.div.find(".id-stumbleupon-badge")
+				);
+				
+				//facebook
+				//$.getScript('http://connect.facebook.net/en_US/all.js#appId=175058249217885&amp;xfbml=1', function(){ alert("moo"); });
+								
+				//google +1
+				$.getScript('http://apis.google.com/js/plusone.js');
+				
+				//end badges
+				
+				
+				//vote float
+				var top = $('.vote-floater .inner', page.div).offset().top - parseFloat($('.vote-floater .inner', page.div).css('marginTop').replace(/auto/, 0));
+				$(window).scroll(function (event) {
+					// what the y position of the scroll is
+					var y = $(this).scrollTop();
+					// whether that's below the form
+					if (y >= top) {
+					// if so, ad the fixed class
+						$('.vote-floater .inner', page.div).addClass('fixed');
+					} else {
+					// otherwise remove it
+						$('.vote-floater .inner', page.div).removeClass('fixed');
+					}
+				});
+			},
+			
+			vote: function(rating) {
+				rr.ajax.request({
+					url: "http://cslacker.com/images/ajax/vote/id:4797?rc=e6a2dabbf31fb97d75e7f1a3c1d5619160764bfcda33655bd671e35cd7199365f18ff19f7169a37dec3e49cb462861749ea2eecbb94566f803ad7a5a7fb9f1f11328452410", 
+					data: {
+						rating: rating
+					},
+					success: function(response) {							
+						if (response && response.status === 'good') {
+							
+							page.div.find("#image-vote .total").html(response.total);
+							page.div.find("#image-vote .count").html(response.count + " votes");
+							
+						} else {
+							var message = response && response.message ? response.message : "Your vote could not be cast, try again later.";
+							
+							rr.dialog.alert({
+								title: "Error",
+								message: {
+									body: message,
+									css_class: 'error'
+								}
+							});	
+						}
+			    	}	    	
+			    });
+			},
+						
+			upvote: function() {
+				var up 		= page.div.find("#image-vote .up");
+				var down 	= page.div.find("#image-vote .down");
+				
+				if (up.hasClass('active')) {
+					up.removeClass("active");
+					var rating = 0;
+				} else {
+					up.addClass("active");
+					var rating = 1;
+				}
+				
+				down.removeClass("active");
+				page.vote(rating);
+				return false;
+			},
+			
+			downvote: function() {
+				var up 		= page.div.find("#image-vote .up");
+				var down 	= page.div.find("#image-vote .down");
+				
+				if (down.hasClass('active')) {
+					down.removeClass("active");
+					var rating = 0;
+				} else {
+					down.addClass("active");
+					var rating = -1;
+				}
+		
+				up.removeClass("active");
+				page.vote(rating);
+				return false;
+			}
+		};
+		
+		$(document).ready(page.onload);
+							
+	</script>
+	
+	<div id="page">
+		<h3 class="header">
+												<a href="/">Home</a> / 
+																<a href="/images">Images</a> / 
+																Memeopoly									</h3>
+		<center>
+				
+			<div style="margin: 5px 0 10px 0;">
+				<script type="text/javascript"><!--
+				google_ad_client = "pub-3926606141096010";
+				/* 728x90, created 7/18/09 */
+				google_ad_slot = "3509008000";
+				google_ad_width = 728;
+				google_ad_height = 90;
+				//-->
+				</script>
+				<script type="text/javascript"
+				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+				</script>	
+			</div>
+			
+			<div>
+				<h2>Memeopoly</h2>
+				<table width="100%">
+					<tr>
+						<td width="50%">
+															<div class="prev">
+									<div class="caption">Previous</div>
+									&laquo;&laquo; <a href="http://cslacker.com/images/view/4798">Bar Tending Skills</a>
+								</div>
+													</td>
+						<td>
+															<div class="next">
+									<div class="caption">Next</div>
+									<a href="http://cslacker.com/images/view/4796">Hoof Shoes</a> &raquo;&raquo;
+								</div>
+													</td>
+					</tr>
+				</table>
+				<div class="imageblock">
+					<div class="vote-floater">
+						<div class="inner">
+							<center>
+								<div id="image-vote" class="voting">
+						
+																												<img src="/public/images/ui/vote/up_48.png" alt="Good" class="up" onclick="return page.upvote();" />
+																		<div class="total">2</div>
+																			<img src="/public/images/ui/vote/down_48.png" alt="Bad" class="down" onclick="return page.downvote(4797);" />
+																		<div class="count">2 votes</div>
+								</div>
+								
+								<div style="width: 60px;">
+								
+									<!-- Place this tag where you want the +1 button to render -->
+									<div style="margin: 10px 10px 0 0; width: 60px; height: 70px; font-size: 11px;">
+										<g:plusone size="tall"></g:plusone>
+									</div>
+									
+									<div style="width: 55px; height: 70px; padding: 0 0 0 5px;">
+										<div id="fb-root"></div>
+										<script src="http://connect.facebook.net/en_US/all.js#appId=175058249217885&amp;xfbml=1"></script>
+										<fb:like href="http://cslacker.com/images/view/4797" send="false" layout="box_count" width="55" show_faces="false" font=""></fb:like>
+									</div>
+									
+									<div style="width: 60px; height: 70px; font-size: 11px;" class="id-stumbleupon-badge">
+									</div>
+									
+									<div style="width: 60px; height: 70px; font-size: 11px;">
+										<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://cslacker.com/images/view/4797" data-text="Memeopoly" data-count="vertical">Tweet</a>
+									</div>
+								
+								</div>
+								
+							</center>
+						</div>
+					</div>
+					
+					<div style="overflow: hidden; height: 900px; width: 900px; border: 1px solid black; position: relative;">				
+						<div style="position: absolute; top: -1px; left: -1px;">
+															<img src="http://c.cslacker.com/4797l.jpg" height="927" width="902" alt="Memeopoly" class="large" onclick="location.href='http://cslacker.com/images/view/4796';" style="cursor: pointer; display: block;" />
+													</div>
+					</div>
+				</div>
+				
+				<div style="padding: 3px 10px; margin: 10px 0;">
+					<p class="copy">
+						Memeopoly					</p>
+										<div class="tags" style="margin: 0 0 10px 0;">
+						Tags: <a href="http://cslacker.com/images/tag:473">funny</a>, <a href="http://cslacker.com/images/tag:1340">meme</a> -  Views: 56,079					</div>
+				</div>
+				
+								
+				<table width="100%">
+					<tr>
+						<td width="50%">
+															<div class="prev">
+									<div class="caption">Previous</div>
+									&laquo;&laquo; <a href="http://cslacker.com/images/view/4798">Bar Tending Skills</a>
+								</div>
+													</td>
+						<td>
+															<div class="next">
+									<div class="caption">Next</div>
+									<a href="http://cslacker.com/images/view/4796">Hoof Shoes</a> &raquo;&raquo;
+								</div>
+													</td>
+					</tr>
+				</table>
+			</div>
+				
+			<div style="margin: 10px 0 10px 0;">
+				<script type="text/javascript"><!--
+				google_ad_client = "pub-3926606141096010";
+				/* 728x90, created 7/18/09 */
+				google_ad_slot = "3509008000";
+				google_ad_width = 728;
+				google_ad_height = 90;
+				//-->
+				</script>
+				<script type="text/javascript"
+				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+				</script>	
+			</div>
+		</center>
+		
+		<div style="padding: 3px 10px; margin: 10px 0;">
+			<center>		
+									<ul class="images">
+													 
+																<li onclick="location.href='http://cslacker.com/images/view/5709';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/5709"><img src="http://c.cslacker.com/cache/t/1/6/5709.png" width="130" height="98" alt="Silly String Dogs" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/5782';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/5782"><img src="http://c.cslacker.com/cache/t/1/6/5782.png" width="130" height="97" alt="Too Cool For School" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/8836';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/8836"><img src="http://c.cslacker.com/cache/t/1/9/8836.png" width="130" height="91" alt="Cool Crab" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/4641';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/4641"><img src="http://c.cslacker.com/cache/t/1/5/4641.png" width="65" height="130" alt="Cereal Time" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/8965';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/8965"><img src="http://c.cslacker.com/cache/t/1/9/8965.png" width="95" height="130" alt="Cool Tattoo" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/7879';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/7879"><img src="http://c.cslacker.com/cache/t/1/8/7879.png" width="130" height="98" alt="Smurf Party" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/6596';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/6596"><img src="http://c.cslacker.com/cache/t/1/7/6596.png" width="87" height="130" alt="WTF Is This?!" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/1972';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/1972"><img src="http://c.cslacker.com/cache/t/1/2/1972.png" width="130" height="98" alt="Clever Tipping Jar" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/5577';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/5577"><img src="http://c.cslacker.com/cache/t/1/6/5577.png" width="125" height="130" alt="Trolling Birds" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/6663';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/6663"><img src="http://c.cslacker.com/cache/t/1/7/6663.png" width="130" height="96" alt="Asian Girlfriend" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/8835';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/8835"><img src="http://c.cslacker.com/cache/t/1/9/8835.png" width="113" height="130" alt="Stop Time" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/5918';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/5918"><img src="http://c.cslacker.com/cache/t/1/6/5918.png" width="98" height="130" alt="Best Buy Price" /></a></td></tr></table></li>
+																		</ul>
+							</center>
+			<div class="clear"></div>
+		</div>
+		
+				
+			<h3 class="header" id="comments">
+				<div class="right">
+					2 comments
+				</div>
+				Comments
+			</h3>
+			
+			<script src="/public/js/toolbox.commenting.js"></script>
+			
+			<div class="void">
+				<div style="width: 500px;">
+					<form onsubmit="return page.comment.submit(4797, null, $(this).find('textarea[name=body]'), $(this).find('input[name=anonymous]'), $(this).find('input[type=submit]'));" class="id-commenting">
+						<div style="margin: 0 0 5px 0;">
+							<textarea name="body" style="width: 490px; height: 75px;"></textarea>
+						</div>
+												<div>
+							<input type="submit" value="Post Anonymously" />
+							<input type="button" value="Login" onclick="return rr.account.login();" class="right" />
+							<input type="hidden" name="anonymous" value="1" />
+						</div>
+						<div class="clear"></div>
+											</form>
+				</div>			
+				
+				<div class="comments">
+					
+
+	<ul class="comments">
+					
+
+
+	<li id="c3288">
+		<div class="head">
+			<span class="toggle" onclick="return page.comment.toggle(3288);">+</span>
+			
+							<b>Anonymous</b>:
+						 wrote 
+			 <a href="http://cslacker.com/images/comment/3288">7 months ago</a>
+		</div>
+		<div class="toggleable">
+			<div class="voter">
+				<center>
+																<div class="up" onclick="return page.comment.upvote(3288);"></div>
+										<div class="rating">0</div>
+											<div class="down" onclick="return page.comment.downvote(3288);"></div>
+									</center>
+			</div>
+			
+				
+													<div class="body"><p>I am tired of christfags who censor anything.</p></div>
+										
+			<div class="foot">
+				<a href="" onclick="return page.comment.reply(4797, 3288);">Reply</a>
+							</div>
+			
+			<div class="interaction off"></div>
+							<div class="replies">
+					
+
+	
+	<ul class="comments" style="display: none;"></ul>
+ 
+				</div>
+					</div>
+	</li>
+ 
+					
+
+
+	<li id="c1703">
+		<div class="head">
+			<span class="toggle" onclick="return page.comment.toggle(1703);">+</span>
+			
+							<b>Anonymous</b>:
+						 wrote 
+			 <a href="http://cslacker.com/images/comment/1703">11 months ago</a>
+		</div>
+		<div class="toggleable">
+			<div class="voter">
+				<center>
+																<div class="up" onclick="return page.comment.upvote(1703);"></div>
+										<div class="rating">0</div>
+											<div class="down" onclick="return page.comment.downvote(1703);"></div>
+									</center>
+			</div>
+			
+				
+													<div class="body"><p>I want this!!!</p></div>
+										
+			<div class="foot">
+				<a href="" onclick="return page.comment.reply(4797, 1703);">Reply</a>
+							</div>
+			
+			<div class="interaction off"></div>
+							<div class="replies">
+					
+
+	
+	<ul class="comments" style="display: none;"></ul>
+ 
+				</div>
+					</div>
+	</li>
+ 
+			</ul>
+				</div>
+							
+			</div>
+		
+			</div>
+	
+	
+		
+		
+			</div>
+			<div class="footer">
+				Questions, comments or bug to reports? <a href="mailto:neoform@cslacker.com">email me</a>.
+				<br />
+				Page generated in <strong>0.0555</strong> seconds 
+				using <strong>1,438.63</strong> KB of memory.
+			</div>		
+		</center>
+	</body>
+</html>

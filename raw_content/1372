@@ -1,0 +1,1412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:fb="http://ogp.me/ns/fb#">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var wapVariable ='';
+var userAgent = navigator.userAgent;
+var curLocation = window.location.href;
+var curLocationArray = curLocation.split("/");
+if((wapVariable!="") || /android.+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(userAgent)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|e\-|e\/|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(di|rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|xda(\-|2|g)|yas\-|your|zeto|zte\-/i.test(userAgent.substr(0,4)))
+{
+        if ((curLocationArray[3]=="news") || (curLocationArray[3]=="movies") || (curLocationArray[3]=="finance") || (curLocationArray[3]=="sports")){
+                var re = /\.com/g;
+                window.location.href = curLocation.replace(re, ".com/mobile");
+        }
+
+}
+//-->
+</SCRIPT>
+<head>
+<link href="https://plus.google.com/101635574783660998904" rel="publisher" /> 
+<link href="http://im.sify.com/fullstory/fullstory-revised-2011/css/newhome.css" rel="stylesheet" type="text/css" />
+<link href="http://im.sify.com/news/images/images2008/lytebox.css" rel="stylesheet" type="text/css" />
+<script>
+function getSifyCookie(name) {
+  var dc = document.cookie;
+  var prefix = name + "=";
+  var begin = dc.indexOf("; " + prefix);
+  if (begin == -1) {
+    begin = dc.indexOf(prefix);
+    if (begin != 0) return null;
+  } else
+    begin += 2;
+  var end = document.cookie.indexOf(";", begin);
+  if (end == -1)
+    end = dc.length;
+  return unescape(dc.substring(begin + prefix.length, end));
+}
+
+function setSifyCookie(name, value, days, path, domain, secure) {
+        if (days) {
+                var date = new Date();
+                date.setTime(date.getTime()+(days*24*60*60*1000));
+                var expires = "; expires="+date.toGMTString();
+        }
+        else var expires = "";
+
+  var curCookie = name + "=" + escape(value) +
+      (expires) +
+      ((path) ? "; path=" + path : "") +
+      ((domain) ? "; domain=" + domain : "") +
+      ((secure) ? "; secure" : "");
+  document.cookie = curCookie;
+}
+function setSessionId(name){
+  var sdate = new Date();
+  var M = ("0" + "" + (sdate.getMonth()+1)).substring(("0" + "" + (sdate.getMonth()+1)).length-2, ("0" + "" + (sdate.getMonth()+1)).length);
+  var D = ("0" + "" + (sdate.getDate())).substring(("0" + "" + (sdate.getDate())).length-2, ("0" + "" + (sdate.getDate())).length);
+  var Y = "" + (sdate.getFullYear());
+  var H = ("0" + "" + (sdate.getHours())).substring(("0" + "" + (sdate.getHours())).length-2, ("0" + "" + (sdate.getHours())).length);
+  var MS = ("0" + "" + (sdate.getMinutes())).substring(("0" + "" + (sdate.getMinutes())).length-2, ("0" + "" + (sdate.getMinutes())).length);  var S = ("0" + "" + (sdate.getSeconds())).substring(("0" + "" + (sdate.getSeconds())).length-2, ("0" + "" + (sdate.getSeconds())).length);
+  sdate =  ""+Y+M+D+H+MS+S+"";
+
+  sId = name+"_"+sdate;
+  document.cookie ="sessid=" + sId;
+  return sId;
+}
+</script>
+<script language="javascript">
+var cookieValueforSify = getSifyCookie('sifyuserid');
+if((cookieValueforSify == '') || (cookieValueforSify == null)) {
+  setSifyCookie("sifyuserid","nhjmVKejbia",10000,'/','sify.com');
+}
+var cookieValueforSify = getSifyCookie('sifyuserid');
+</script>
+ 
+
+<SCRIPT LANGUAGE="JavaScript" >var videoIdArray = [];</SCRIPT><title>Tips from the ultimate orgasm guide!</title>
+<link rel="alternate" type="application/rss+xml" title="Sify.com - News - National" href="http://www.sify.com/rss2/news/article/category/National" /> 
+<link rel="alternate" type="application/rss+xml" title="Sify.com - News - offbeat" href="http://www.sify.com/rss2/news/article/category/offbeat" /> 
+	<link rel="canonical" href="http://www.sify.com/news/tips-from-the-ultimate-orgasm-guide-news-national-jehbFOibicc.html" >
+	<META NAME="Keywords" CONTENT="News,offbeat,sex,orgasm">
+	<META NAME="Description" CONTENT="London: Is your sex life more of a snooze than sizzle? Well, dont fret it, for a group of experts have come up with an ultimate orgasm guide, that is, wholesomely dedicated to pleasure of the naughty...">
+	<META NAME="google_contents" CONTENT="Tips from the ultimate orgasm guide!">
+	<!-- Facebook Opengraph integration -->
+	<meta property="og:title" content="Tips from the ultimate orgasm guide!" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://www.sify.com/news/tips-from-the-ultimate-orgasm-guide-news-national-jehbFOibicc.html" />
+	<meta property="og:image" content="http://static.sify.com/cms/commons/widget/images/featured-thumbs-default-img.gif" />
+	<meta property="og:site_name" content="Sify" />
+	<meta property="fb:app_id" content="189103277794050" />
+	<!-- Facebook Opengraph integration -->
+
+<META NAME="original-source" CONTENT="http://www.aniin.com/"><meta name="googlebot-news" content="noindex, nofollow"><style type="text/css">
+<!--
+.arial13bld-black {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	width: 220px;
+	padding: 4px;
+	border: 1px solid #000;
+	width: 224px;
+}
+.bg-2 {
+	background-image: url(http://im.sify.com/images/bg-2.png);
+	background-repeat: repeat-x;
+}
+.bg-3 {
+	background-image: url(http://im.sify.com/images/corner-4.png);
+	background-repeat: repeat-x;
+}
+.divflip
+{
+ position:relative;
+ top:93px;
+ left:18px;
+
+ }
+.arial12white-b {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+}
+.textfield1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000;
+	text-decoration: none;
+	background-image: url(http://im.sify.com/images/textfield.gif);
+	background-repeat: no-repeat;
+	background-color: #FFF;
+	border: 1px solid #FFF;
+	width: 225px;
+	white-space: nowrap;
+	padding-top: 7px;
+	padding-bottom: 6px;
+	padding-left: 5px;
+}
+form {
+    margin: 0;
+}
+#search_box {
+    width: 225px;
+    height: 28px;
+    background: url(http://im.sify.com/images/textfield.gif);
+}
+#search_box #s {
+    float: left;
+    padding: 0;
+    margin: 6px 0 0 6px;
+    border: 0;
+    width: 218px;
+    background: none;
+    font-size: 12;
+}
+#search_box #go {
+    float: right;
+    margin: 3px 4px 0 0;
+}
+/* Read Next Pop-out Styles */
+#block {
+  position:fixed;
+  bottom:0;
+  right:0px; 
+  width:324px;
+  display: none;
+  float:left;
+  background-color:#FFFFFF;
+  height:100px;
+  z-index: 100000000;
+  -moz-box-shadow:-2px 0px 5px #aaa;
+  -webkit-box-shadow:-2px 0px 5px #aaa;
+  box-shadow: 0 4px 10px #555555;
+  border-top: 1px solid #d4d4d4;
+  border-left: 1px solid #d4d4d4;
+
+}
+.pop-out-wrapper,.pop-out-heading,.pop-out-article-wrapper{
+  background-color:#FFFFFF;
+
+}
+h1 {
+	font-size:18px;
+      }
+-->
+</style>
+<!--[if IE 6]>
+<style>
+#block {
+  position:absolute;
+  bottom:0;
+  right:0px; 
+  width:324px;
+  display: none;
+  float:left;
+  background-color:#FFFFFF;
+  height:100px;
+  z-index: 100000000;
+      -moz-box-shadow:-2px 0px 5px #aaa;
+    -webkit-box-shadow:-2px 0px 5px #aaa;
+    box-shadow: 0 4px 10px #555555;
+	border-top: 1px solid #d4d4d4;
+	border-left: 1px solid #d4d4d4;
+
+}
+</style>
+<![endif]-->
+<!--Google +1 JS--> 
+
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"> 
+  {lang: 'en-GB'} 
+</script> 
+<!-- Fullstory DFP Ad Tag --> 
+<script type='text/javascript'>
+(function() {
+var useSSL = 'https:' == document.location.protocol;
+var src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+})();
+</script>
+
+<script type='text/javascript'>
+googletag.defineSlot('/29073306/News_Fullstory_300x250_ATF', [300, 250], 'div-gpt-ad-1358764159252-0').addService(googletag.pubads());
+googletag.defineSlot('/29073306/News_Fullstory_300x250_BTF1', [300, 250], 'div-gpt-ad-1358764159252-1').addService(googletag.pubads());
+googletag.defineSlot('/29073306/News_Fullstory_300x250_BTF2', [300, 250], 'div-gpt-ad-1358764159252-2').addService(googletag.pubads());
+googletag.defineSlot('/29073306/News_Fullstory_300x250_BTF3', [300, 250], 'div-gpt-ad-1358764159252-3').addService(googletag.pubads());
+googletag.defineSlot('/29073306/News_Fullstory_468x60_ATF', [468, 60], 'div-gpt-ad-1358764159252-4').addService(googletag.pubads());
+googletag.defineSlot('/29073306/News_Fullstory_468x60_BTF', [468, 60], 'div-gpt-ad-1358764159252-5').addService(googletag.pubads());
+googletag.defineSlot('/29073306/News_Fullstory_728x90_ATF', [728, 90], 'div-gpt-ad-1358764159252-6').addService(googletag.pubads());
+googletag.defineSlot('/29073306/News_Fullstory_1x1_Innovation_ATF', [1, 1], 'div-gpt-ad-1364279742883-0').addService(googletag.pubads());
+googletag.defineSlot('/29073306/News_Fullstory_1x1_Innovation_BTF', [1, 1], 'div-gpt-ad-1364279742883-1').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Movies_Fullstory_160x600_ATF', [160, 600], 'div-gpt-ad-1363596081519-9').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Movies_Fullstory_1x1_Innovation_ATF', [1, 1], 'div-gpt-ad-1363596081519-10').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Movies_Fullstory_1x1_Innovation_BTF', [1, 1], 'div-gpt-ad-1363596081519-11').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Movies_Fullstory_300x250_ATF', [300, 250], 'div-gpt-ad-1363596081519-12').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Movies_Fullstory_300x250_BTF1', [300, 250], 'div-gpt-ad-1363596081519-13').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Movies_Fullstory_300x250_BTF2', [300, 250], 'div-gpt-ad-1363596081519-14').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Movies_Fullstory_728x90_ATF', [728, 90], 'div-gpt-ad-1363596081519-15').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Finance_Fullstory_160x600_ATF', [160, 600], 'div-gpt-ad-1363753875855-27').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Finance_Fullstory_1x1_Innovation_ATF', [1, 1], 'div-gpt-ad-1363753875855-28').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Finance_Fullstory_1x1_Innovation_BTF', [1, 1], 'div-gpt-ad-1363753875855-29').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Finance_Fullstory_300x250_ATF', [300, 250], 'div-gpt-ad-1363753875855-30').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Finance_Fullstory_300x250_BTF1', [300, 250], 'div-gpt-ad-1363753875855-31').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Finance_Fullstory_300x250_BTF2', [300, 250], 'div-gpt-ad-1363753875855-32').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Finance_Fullstory_300x250_BTF3', [300, 250], 'div-gpt-ad-1363753875855-33').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Finance_Fullstory_468x60_ATF', [468, 60], 'div-gpt-ad-1363753875855-34').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Finance_Fullstory_468x60_BTF', [468, 60], 'div-gpt-ad-1363753875855-35').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Finance_Fullstory_728x90_ATF', [728, 90], 'div-gpt-ad-1363753875855-36').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Finance_Fullstory_728x90_BTF', [728, 90], 'div-gpt-ad-1363753875855-37').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Sports_Fullstory_1x1_Innovation_ATF', [1, 1], 'div-gpt-ad-1363849287959-28').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Sports_Fullstory_1x1_Innovation_BTF', [1, 1], 'div-gpt-ad-1363849287959-29').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Sports_Fullstory_300x250_ATF', [300, 250], 'div-gpt-ad-1363849287959-30').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Sports_Fullstory_300x250_BTF1', [300, 250], 'div-gpt-ad-1363849287959-31').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Sports_Fullstory_300x250_BTF2', [300, 250], 'div-gpt-ad-1363849287959-32').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Sports_Fullstory_468x60_ATF', [468, 60], 'div-gpt-ad-1363849287959-33').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Sports_Fullstory_468x60_BTF', [468, 60], 'div-gpt-ad-1363849287959-34').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Sports_Fullstory_728x90_ATF', [728, 90], 'div-gpt-ad-1363849287959-35').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Technology_Fullstory_160x600_ATF', [160, 600], 'div-gpt-ad-1363070678496-0').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Technology_Fullstory_160x600_BTF', [160, 600], 'div-gpt-ad-1363070678496-1').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Technology_Fullstory_300x250_ATF', [300, 250], 'div-gpt-ad-1363070678496-2').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Technology_Fullstory_300x250_BTF1', [300, 250], 'div-gpt-ad-1363070678496-3').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Technology_Fullstory_300x250_BTF2', [300, 250], 'div-gpt-ad-1363070678496-4').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Technology_Fullstory_728x90_ATF', [728, 90], 'div-gpt-ad-1363070678496-5').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Food_Fullstory_300x250_ATF', [300, 250], 'div-gpt-ad-1363088496722-0').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Food_Fullstory_300x250_BTF1', [300, 250], 'div-gpt-ad-1363088496722-1').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Food_Fullstory_300x250_BTF2', [300, 250], 'div-gpt-ad-1363088496722-2').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Food_Fullstory_468x60_ATF', [468, 60], 'div-gpt-ad-1363088496722-3').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Food_Fullstory_468x60_BTF', [468, 60], 'div-gpt-ad-1363088496722-4').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Food_Fullstory_728x90_ATF', [728, 90], 'div-gpt-ad-1363088496722-5').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Skills_Fullstory_160x600_ATF', [160, 600], 'div-gpt-ad-1364876548776-0').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Skills_Fullstory_1x1_Innovation_ATF', [1, 1], 'div-gpt-ad-1364876548776-1').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Skills_Fullstory_1x1_Innovation_BTF', [1, 1], 'div-gpt-ad-1364876548776-2').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Skills_Fullstory_300x250_ATF', [300, 250], 'div-gpt-ad-1364876548776-3').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Skills_Fullstory_300x250_BTF1', [300, 250], 'div-gpt-ad-1364876548776-4').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Skills_Fullstory_300x250_BTF2', [300, 250], 'div-gpt-ad-1364876548776-5').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Skills_Fullstory_300x250_BTF3', [300, 250], 'div-gpt-ad-1364876548776-6').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Skills_Fullstory_468x60_ATF', [468, 60], 'div-gpt-ad-1364876548776-7').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Skills_Fullstory_468x60_BTF', [468, 60], 'div-gpt-ad-1364876548776-8').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Skills_Fullstory_728x90_ATF', [728, 90], 'div-gpt-ad-1364876548776-9').addService(googletag.pubads());
+googletag.defineSlot('/29073306/Skills_Fullstory_728x90_BTF', [728, 90], 'div-gpt-ad-1364876548776-10').addService(googletag.pubads());
+googletag.pubads().enableSyncRendering();
+googletag.enableServices();
+</script>
+<!-- Fullstory DFP Ad Tag --> 
+</head>
+
+
+
+<body id="artBody" name="artBody">
+<center>
+<div id="outer-wrapper">
+<div id="fb-root"></div> 
+<script>(function(d, s, id) { 
+  var js, fjs = d.getElementsByTagName(s)[0]; 
+  if (d.getElementById(id)) return; 
+  js = d.createElement(s); js.id = id; 
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=189103277794050"; 
+  fjs.parentNode.insertBefore(js, fjs); 
+}(document, 'script', 'facebook-jssdk'));</script> 
+
+
+<!--noindex-->
+<script language="javascript">
+OAS_query='News Offbeat Sex Orgasm';
+var isiPad = navigator.userAgent.match(/iPad/i);
+if (isiPad!=null)
+	OAS_query+=',Ipad';
+</script>
+
+<group id='must'>
+<link href="http://im.sify.com/fullstory/fullstory-revised-2011/css/newhome.css" rel="stylesheet" type="text/css" />
+</group>
+<group id='topnav'> <center><header>
+<div id="outer-wrapper">
+<div id="topnavig" name="topnavig" style="float:left;">
+	<div><!-- Google Analytics Begin --> 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2324252-1']); /*Sify News*/
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_trackPageLoadTime']);
+
+  _gaq.push(['SifyAll._setAccount', 'UA-2736024-6']); /*Sify All*/
+  _gaq.push(['SifyAll._trackPageview']);
+  _gaq.push(['SifyAll._trackPageLoadTime']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- End Google Analytics -->
+<!-- Begin comScore Tag --><script>  var _comscore = _comscore || [];  _comscore.push({ c1: '2', c2: '6034747' });  (function() {    var s = document.createElement('script'), el = document.getElementsByTagName('script')[0]; s.async = true;    s.src = (document.location.protocol == 'https:' ? 'https://sb' : 'http://b') + '.scorecardresearch.com/beacon.js';    el.parentNode.insertBefore(s, el);  })();</script><noscript>  <img src='http://b.scorecardresearch.com/p?c1=2&c2=6034747&cv=2.0&cj=1' /></noscript><!-- End comScore Tag -->
+</div>
+	<div id="topad-728x90">     <!-- News_Fullstory_728x90_ATF -->
+<div id='div-gpt-ad-1358764159252-6' style='width:728px; height:90px;'>
+<script type='text/javascript'>
+googletag.display('div-gpt-ad-1358764159252-6');
+</script>
+</div>             </div>
+	<div>
+<group id='must'>
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="http://im.sify.com/home2012/css/ie6.css" />
+<![endif]-->
+<link href="http://im.sify.com/home2012/css/home.css" rel="stylesheet" type="text/css" />
+</group>
+<style>
+.hidedisp {
+display:none;
+}
+</style>
+<group id='topnav'> <script type="text/javascript" src="http://im.sify.com/index2/js/jquery-1.5.1.min.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function showHoverMenu(id) {
+	for (var i=2; i<=10; i++){
+		if (id==i){
+			document.getElementById("tophov"+id).style.display="block";
+			document.getElementById("tophov"+id).style.position="relative";
+			document.getElementById("litopnavlink"+id).className = "menu-select";
+		}
+		else
+		{
+			document.getElementById("litopnavlink"+i).className = "";
+			document.getElementById("tophov"+i).style.display="none";
+		}
+	}
+}
+function closeDivs(id){
+for (var i=2; i<=10; i++){
+	document.getElementById("tophov"+i).style.display="none";
+	document.getElementById("litopnavlink"+i).className = "";
+	}
+}
+var sitelogoArray = [];
+sitelogoArray['movies'] = ["http://im.sify.com/fullstory/fullstory-revised-2011/images/movies-logo.png","http://www.sify.com/movies"];
+sitelogoArray['finance'] = ["http://im.sify.com/fullstory/fullstory-revised-2011/images/finance-logo.png","http://www.sify.com/finance/"];
+sitelogoArray['sports'] = ["http://im.sify.com/fullstory/fullstory-revised-2011/images/sports-logo.png","http://www.sify.com/sports"];
+sitelogoArray['techtalk'] = ["http://im.sify.com/fullstory/fullstory-revised-2011/images/techtalk-logo.png","http://www.sify.com/technology"];
+sitelogoArray['news'] = ["http://im.sify.com/fullstory/fullstory-revised-2011/images/news-logo.png","http://www.sify.com/news/"];
+sitelogoArray['skills'] = ["http://im.sify.com/fullstory/fullstory-revised-2011/images/skills-logo.png","http://www.sify.com/itest/"];
+
+sitelogoArray['bawarchi'] = ["http://im.sify.com/images/jun2010/bawarchi-logo.gif","http://food.sify.com/"]; 
+sitelogoArray['wwe'] = ["http://im.sify.com/sifycmsimg/sep2009/Broadband/14910348_wwe-logo.png","http://wwe.sify.com/"];
+sitelogoArray['storage'] = ["https://storage.sifyservices.com/images/storage-logo.gif","https://storage.sifyservices.com/"];
+
+function loadSiteLogo(sitename){
+document.getElementById("header-logo-wrapper").innerHTML= "<a href='"+sitelogoArray[sitename][1]+"'><img src='"+sitelogoArray[sitename][0]+"' alt='' border='0' /></a> <div id='browsediv'> </div>"; //browseFn();
+}
+/*
+function browseFn()
+{
+var is_IE = navigator.appVersion.toLowerCase().indexOf('msie');
+var IE_ver = getIEVersion();
+if(is_IE && is_IE > 0 && IE_ver==10)
+{
+	document.getElementById("browsediv").innerHTML = "<img src='http://view.atdmt.com/INM/view/448852493/direct/01/' width='1' height='1'><br><a href='http://view.atdmt.com/INM/view/448852493/direct/01/' target='_blank'><img align='left' src='http://im.sify.com/sifycmsimg/may2013//News/15030440_download_black.png' alt='' border='0' /></a>";
+}
+else if(is_IE && is_IE > 0 && IE_ver<=9)
+{
+	document.getElementById("browsediv").innerHTML = "<img src='http://view.atdmt.com/INM/view/448852491/direct/01/' width='1' height='1'><br><a href='http://clk.atdmt.com/INM/go/448852491/direct/01/' target='_blank'><img align='left' src='http://im.sify.com/sifycmsimg/may2013//News/15030440_download_black.png' alt='' border='0' /></a>";
+}
+else
+{
+	document.getElementById("browsediv").innerHTML = "<img src='http://view.atdmt.com/INM/view/448852490/direct/01/' width='1' height='1'><br><a href='http://clk.atdmt.com/INM/go/448852490/direct/01/' target='_blank'><img align='left' src='http://im.sify.com/sifycmsimg/may2013//News/15030440_download_black.png' alt='' border='0' /></a>"; 
+}
+}
+
+function getIEVersion()
+{
+var rv = -1; // Return value assumes failure.
+if (navigator.appName == 'Microsoft Internet Explorer')
+{
+var ua = navigator.userAgent;
+var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+if (re.exec(ua) != null)
+rv = parseFloat( RegExp.$1 );
+}
+return rv;
+}
+*/
+//-->
+</SCRIPT>
+<div id="outer-wrapper">
+    <div id="header-outer">
+    <div id="header-logo-search-mail-wrapper">
+	    <div id="header-logo-mail-wrapper">
+	     <div id="header-logo-wrapper"><a href='http://www.sify.com/'><img src='http://im.sify.com/home2012/images/sify-logo.png' alt='' border='0' /></a>
+		 </div>
+	     <div id="header-search-outer-wrapper"><style>#header-search-inner-wrapper{display:inline;position:relative;overflow:hidden;}.textfield-1 {background: url(http://im.sify.com/home2012/images/google.gif) no-repeat 250px 3px;}.fod-thumnail-wrapper {	width: 100%;	height: auto;	float: left;} .fod-bigimage {	background-color:#000000;height:318px;}</style><style>.autocomplete-w1 {  position:absolute; top:0px; left:0px; margin:8px 0 0 6px; /* IE6 fix: */ _background:none; _margin:0; }.autocomplete { border:1px solid #999; background:#FFF; cursor:default; text-align:left; max-height:200px; overflow:auto; margin:-6px 6px 6px -6px; /* IE6 specific: */ _height:240px;  _margin:0; _overflow-x:hidden; }.autocomplete .selected { background:#F0F0F0; }.autocomplete div { padding:2px 5px; white-space:nowrap; }.autocomplete strong { font-weight:normal; color:#B1C71F; }</style>
+<script type='text/javascript'>
+function Search_newfn(typesearch)
+{
+ if(typesearch ==1)
+	{
+
+	var hidVal=document.frm_searchweb.SearchboxChoosedVal.value;
+	if(hidVal==0)
+		{
+			searchParam="search";
+		}
+		else if(hidVal==1)
+		{
+			searchParam="Searchbox_Google";
+		}
+		dd=eval("document.frm_searchweb."+searchParam);
+
+		if(dd.value == "")
+		{
+			alert("Please enter any valid search parameter.");
+			dd.focus();
+		}
+		else
+		{
+			sitesearch=document.getElementById('sitesearch').value;
+			//window.open('','websearch');
+			//document.frm_searchweb.target = 'websearch';
+                        ss = "32&rd="+ ((sitesearch == '1')? "sify" : "web");
+                	document.frm_searchweb.action='http://search.sify.com/search.php?q='+encodeURIComponent(dd.value)+'&ss=' + ss;
+					document.frm_searchweb.search.value="";
+			document.frm_searchweb.submit();
+		}
+	}
+}
+function compKeyword(text){
+	document.frm_searchweb.retKeyword.value = text;
+
+}
+</script><script src='http://im.sify.com/fullstory/fullstory-revised-2011/autosearch/jquery.autocomplete.js' type='text/javascript'></script>
+<SCRIPT LANGUAGE="JavaScript">
+function Search_newfn_1(typesearch) {
+    if (typesearch == 1) {
+        var hidVal = document.frm_searchweb.SearchboxChoosedVal.value;
+        if (hidVal == 0) {
+            searchParam = "search"
+        } else if (hidVal == 1) {
+            searchParam = "Searchbox_Google"
+        }
+        dd = eval("document.frm_searchweb." + searchParam);
+        if (dd.value == "") {
+            alert("Please enter any valid search parameter.");
+            dd.focus()
+        } else {
+		if(document.getElementById('search_sify').checked)
+		{
+		//alert('inside');
+		var searchstr= dd.value;
+		var searchstrArray = searchstr.split(" ");
+		for(var i=0;i<searchstr.length;i++){
+		searchstr = searchstr.replace(" ","_");
+		}
+		window.location.href='http://www.sify.com/topics/'+searchstr+'.html';
+		}
+		else if(document.getElementById('search_web').checked)
+		{
+            sitesearch = document.getElementById("sitesearch").value;
+            ss = "32&rd=" + (sitesearch == "1" ? "sify" : "web");
+            document.frm_searchweb.action = "http://search.sify.com/search.php?q=" + encodeURIComponent(dd.value) + "&ss=" + ss;
+            document.frm_searchweb.search.value = "";
+            document.frm_searchweb.submit()
+		}
+        }
+    }
+}
+</SCRIPT>
+<form name='frm_searchweb' method='post' onsubmit='Search_newfn_1(1);return false;' target='_new' style='display:inline; width:100%;'>
+<input type='hidden' name='SearchboxChoosedVal' id='SearchboxChoosedVal' value='0'>
+<input type='hidden' id='sitesearch'  name='sitesearch' value='0'>
+<input type='hidden' id='retKeyword'  name='retKeyword'>
+<div style='color:white;font: bold 11px Arial, Helvetica, sans-serif;'><input type="radio" id='search_web' name="searchradio" value="Web" checked onclick='javascript: $("#search").css("background","url(http://im.sify.com/home2012/images/google.gif) no-repeat 250px 3px");'>Web <input type="radio" id='search_sify' name="searchradio" value="Sify" onclick='javascript: $("#search").css("background","url()");'>Sify</div>
+<div id='header-search-inner-wrapper'>
+<div id='header-search-field'>
+<input  name='search'  id='search' autocomplete='off'  type='text' class='textfield-1' tabindex=1 />
+</div>
+<div class='header-search-button'><a onclick='Search_newfn_1(1);return false;' style='cursor:pointer;' tabindex=2 >Search</a></div>
+</div>
+</form>
+<div class='header-hotsearch'> </div></div>
+	    </div>
+
+	    <div id="header-mail-social_icons-wrapper">
+		    <div id="header-social_icons-wrapper"><script type='text/javascript' src='http://www.sify.com/sifycmsimg/sep2011/Entertainment/Movies/14978997_tooltip.js'></script> <style>#dhtmltooltip {position: absolute;left: -300px;width: 230px;height: 58px;background-color: #a9d32f;visibility: hidden;z-index: 100;font: normal 12px Arial, Helvetica, sans-serif; color: #2c3238;text-align: center;background: url(http://im.sify.com/entertainment/movies/images/sep2011/tip-bg1.gif) no-repeat;padding-top: 10px;} #dhtmlpointer {position:absolute;left: -300px;z-index: 101;visibility: hidden;}</style><table width='260' border='0' cellspacing='0' cellpadding='0'> <tr> <td width='9' align='left' valign='top'><img src='http://im.sify.com/sifycmsimg/mar2012/14993800_social-corner-left.png' width='9' height='9' /></td> <td align='center' id='follow-bg'><table width='200' border='0' cellspacing='0' cellpadding='0'> <tr> <td height='16' align='left' style='font: bold 11px Tahoma, Arial, Helvetica, sans-serif; color: #bbbbbb; text-decoration: none;'>Follow us on</td> <td width='16' align='center'><a href='http://m.sify.com/' class='mobile' title='Mobile' target='_new' onMouseover="ddrivetip('Please visit http://m.sify.com using your phone`s internet browser', 230);" onMouseout='hideddrivetip()' ></a></td> <td width='10'> </td> <td width='16'><a href='http://www.facebook.com/sify' class='fb' title='Facebook' target='_new'></a></td> <td width='10'> </td> <td width='16'><a href='http://twitter.com/#!/sifydotcom' class='twitter' title='Twitter' target='_new'></a></td> <td width='10'> </td> <td width='16'><a href='http://www.sify.com/rssfeeds/' class='rss' title='RSS' target='_new'></a></td> <td width='10'> </td> <td width='16'><a href='https://plus.google.com/101635574783660998904?prsrc=3' style='text-decoration:none;' target='_new'><img src='https://ssl.gstatic.com/images/icons/gplus-16.png' alt='' style='border:0;width:16px;height:16px;'/></a></td> </tr> </table></td> <td width='9' height='28' align='right' valign='top'><img src='http://im.sify.com/sifycmsimg/mar2012/14993801_social-corner-right.png' alt='' width='9' height='9' /></td> </tr> </table></div>
+		    <div id="header-mail-wrapper">    <table cellspacing='0' cellpadding='0' border='0' width='260'>    <tbody><tr>    <td align='left' height='5'><img height='1' width='1' src='images/spacer.gif'></td>    </tr>    <tr>      <td align='center' height='35' valign='top'><a href='http://mail.sify.com/'><img height='26' width='100' border='0' src='http://im.sify.com/home2012/images/mail-folder_2012.gif'><a href='http://mail.sify.com/'></td>    </tr>    <tr>      <td align='left'><table cellspacing='0' cellpadding='0' border='0' align='center' width='135'>        <tbody><tr>          <td align='center' width='59'><a href='http://mail.sify.com/'><img border='0' height='22' width='59' alt='login' src='http://im.sify.com/home2012/images/mail-log_2012.gif'></a></td>          <td align='right' class='arial12ash-b'><a href='https://login.sify.com/signup.php'><img border='0' height='22' width='69' alt='login' src='http://im.sify.com/home2012/images/register_2012.gif'></a></td>          </tr>      </tbody></table></td>    </tr>    </tbody></table>  </div>
+	    </div>    
+    </div>
+    <div class="header-menu-navigation"><ul>
+	<li id="litopnavlink1" name="litopnavlink1"  ><!--onMouseOver="javascript: showHoverMenu(1)" onmouseout="javascript:closeDivs(1);"--><a href="http://www.sify.com/" id="topnavlink1" name="topnavlink1" >Home</a></li>
+	<li id="litopnavlink2" name="litopnavlink2"  onMouseOver="javascript: showHoverMenu(2)" onmouseout="javascript:closeDivs(2);"><a href="http://www.samachar.com/" id="topnavlink2" name="topnavlink2">Samachar</a></li>
+	<li id="litopnavlink3" name="litopnavlink3"  onMouseOver="javascript: showHoverMenu(3)" onmouseout="javascript:closeDivs(3);"><a href="http://www.sify.com/news/" id="topnavlink3" name="topnavlink3">News</a></li>
+	<li id="litopnavlink4" name="litopnavlink4"  onMouseOver="javascript: showHoverMenu(4)" onmouseout="javascript:closeDivs(4);"><a href="http://www.sify.com/finance/" id="topnavlink4" name="topnavlink4">Finance</a></li>
+	<li id="litopnavlink5" name="litopnavlink5"  onMouseOver="javascript: showHoverMenu(5)" onmouseout="javascript:closeDivs(5);"><a href="http://www.sify.com/sports/cricket/ipl/" id="topnavlink5" name="topnavlink5">IPL 2013</a></li>
+	<li id="litopnavlink6" name="litopnavlink6"  onMouseOver="javascript: showHoverMenu(6)" onmouseout="javascript:closeDivs(6);"><a href="http://www.sify.com/sports" id="topnavlink6" name="topnavlink6">Sports</a></li>
+	<li id="litopnavlink7" name="litopnavlink7"  onMouseOver="javascript: showHoverMenu(7)" onmouseout="javascript:closeDivs(7);"><a href="http://www.sify.com/movies" id="topnavlink7" name="topnavlink7">Movies</a></li>
+	<li id="litopnavlink8" name="litopnavlink8"  onMouseOver="javascript: showHoverMenu(8)" onmouseout="javascript:closeDivs(8);"><a href="http://wwe.sify.com/" id="topnavlink8" name="topnavlink8">WWE</a></li>
+	<li id="litopnavlink9" name="litopnavlink9"  onMouseOver="javascript: showHoverMenu(9)" onmouseout="javascript:closeDivs(9);"><a href="http://storage.sify.com/" id="topnavlink9" name="topnavlink9">Services</a></li>
+	<li id="litopnavlink10" name="litopnavlink10"  onMouseOver="javascript: showHoverMenu(10)" onmouseout="javascript:closeDivs(10);"><span><a href="http://www.sify.com/" id="topnavlink10" name="topnavlink10">More</a></span></li>
+</ul>
+</div>
+    <div class='hidedisp' style="width:98%; float:left;" id="tophov1" name="tophov1"onmouseover="javascript: showHoverMenu(1);" onmouseout="javascript: closeDivs();"><div class="menu-cover"  style='position:absolute;'>
+<div class="menu-outer-wrapper">
+<div class="menu-inner-wrapper">
+<div class="menu-channels-listing">
+                    </div>
+<div class="spacer-h15"></div>
+<div class="menu-inner-left-wrapper">
+<div class="menu-blocks-header article-heading-text"></div>
+<div class="spacer-h10"></div>
+<div class="lifestyle-withimage-wrapper">
+    <ul>
+    <li><a href=""><img src="" width="127" height="85" alt="" /></a>
+    <h2><a href=""></a></h2></li>
+    <li><a href=""><img src="" width="127" height="85" alt="" /></a>
+    <h2><a href=""></a></h2></li>
+    </ul>
+    </div>
+    <div class="spacer-w40"></div>
+    <div class="lifestyle-withimage-wrapper">
+    <ul>
+    <li><a href=""><img src="" width="127" height="85" alt="" /></a>
+    <h2><a href=""></a></h2></li>
+    <li><a href=""><img src="" width="127" height="85" alt="" /></a>
+    <h2><a href=""></a></h2></li>
+    </ul>
+    </div>
+</div>
+<div class="menu-inner-right-wrapper">
+<div class="menu-blocks-header article-heading-text"></div>
+<div class="spacer-h10"></div>
+<div class="article-text-listing">
+    <ul>
+    <li class="article-first"><h2><a href=""></a></h2></li>
+    <li><h2><a href=""></a></h2></li>
+    <li><h2><a href=""></a></h2></li>
+    <li><h2><a href=""></a></h2></li>
+    <li><h2><a href=""></a></h2></li>
+    <li class="article-last"><h2><a href=""></a></h2></li>
+    </ul>
+ </div>
+ <div class="spacer-h15"></div>
+<div class="more"><a href=""></a></div>
+</div>
+</div>
+</div>
+<div class="menu-bottom-shadow"><img src="http://im.sify.com/home2012/images/menu-hover-shadow.png" width="980" height="25" alt="" /></div>
+</div>
+</div>
+    <div class='hidedisp' style="width:98%; float:left;" id="tophov2" name="tophov2" onmouseover="javascript: showHoverMenu(2);" onmouseout="javascript: closeDivs();"></div>
+    <div class='hidedisp' style="width:98%; float:left;" id="tophov3" name="tophov3" onmouseover="javascript: showHoverMenu(3);" onmouseout="javascript: closeDivs();"></div>
+    <div class='hidedisp' style="width:98%; float:left;" id="tophov4" name="tophov4" onmouseover="javascript: showHoverMenu(4);" onmouseout="javascript: closeDivs();"></div>
+    <div class='hidedisp' style="width:98%; float:left;" id="tophov5" name="tophov5" onmouseover="javascript: showHoverMenu(5);" onmouseout="javascript: closeDivs();"></div>
+    <div class='hidedisp' style="width:98%; float:left;" id="tophov6" name="tophov6" onmouseover="javascript: showHoverMenu(6);" onmouseout="javascript: closeDivs();"></div>
+    <div class='hidedisp' style="width:98%; float:left;" id="tophov7" name="tophov7" onmouseover="javascript: showHoverMenu(7);" onmouseout="javascript: closeDivs();"></div>
+    <div class='hidedisp' style="width:98%; float:left;" id="tophov8" name="tophov8" onmouseover="javascript: showHoverMenu(8);" onmouseout="javascript: closeDivs();"></div>
+    <div class='hidedisp' style="width:98%; float:left;" id="tophov9" name="tophov9" onmouseover="javascript: showHoverMenu(9);" onmouseout="javascript: closeDivs();"><div class="menu-cover" style='position:absolute;'>
+<div class="menu-outer-wrapper">
+<div class="menu-inner-wrapper">
+<div class="services-wrapper">
+<ul>
+<li><a href="https://storage.sifyservices.com">mystorage</a>
+  <p><a href="https://storage.sifyservices.com">automatically backup and protect your personal, business data files</a></p></li>
+<li><a href="http://connectivity.sify.com/mpls?source=corporate_website">MPLS</a>
+  <p><a href="http://connectivity.sify.com/mpls?source=corporate_website">Wireless & Secure Connectivity solutions for business</a></p></li>
+<li><a href="http://talk.sify.com">talk</a>
+  <p><a href="http://talk.sify.com">reach out to your clients and partners on mobile/landline anywhere</a></p></li>
+<li><a href="http://broadband.sify.com/">broadband</a>
+  <p><a href="http://broadband.sify.com/">get high speed broadband connections at really affordable prices</a></p></li>
+<li><a href="http://domains.sify.com/">domain</a>
+  <p><a href="http://domains.sify.com/">domain name registration, web hosting & more</a></p></li>
+<li class="more-last"><a href="http://www.cloudinfinit.com/">cloud infinit</a>
+  <p><a href="http://www.cloudinfinit.com/">Step up to the cloud of infinite possibilities</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="menu-bottom-shadow"><img src="http://im.sify.com/home2012/images/menu-hover-shadow.png" width="980" height="25" alt="" /></div>
+</div>
+</div>
+    <div class='hidedisp' style="width:98%; float:left;" id="tophov10" name="tophov10" onmouseover="javascript: showHoverMenu(10);" onmouseout="javascript: closeDivs();"><div class="menu-cover"  style='position:absolute;'>
+<div class="menu-outer-wrapper">
+<div class="menu-inner-wrapper">
+<div class="menu-more-wrapper">
+<ul>
+<li><a href="http://games.sify.com/">antzill</a>
+  <p><a href="http://games.sify.com/">enjoy free online games with friends and family</a></p></li>
+<li><a href="http://videos.sify.com/">videos</a>
+  <p><a href="http://videos.sify.com/">watch the latest videos from around the world right here.</a></p></li>
+<li><a href="http://astrology.sify.com/">astrology</a>
+  <p><a href="http://astrology.sify.com/">get personalized daily, weekly horoscopes</a></p></li>
+<li><a href="http://www.sify.com/technology/ ">Techtalk</a>
+  <p><a href="http://www.sify.com/technology/ ">Get the latest news on technology and updates on mobiles</a></p></li>
+<li><a href="http://www.sify.com/skills/">sify skills</a>
+  <p><a href="http://www.sify.com/skills/">get the upcoming bank exams and study materials</a></p></li>
+<li><a href="http://health.sify.com/">health</a>
+  <p><a href="http://health.sify.com/">comprehensive online resource on health and lifestyle</a></p></li>
+<li class="more-last"><a href="http://food.sify.com/">bawarchi</a>
+  <p><a href="#http://food.sify.com/"><a href='http://food.sify.com/'>Get thousands of Indian recipes, videos and expert recipes</a></a></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="menu-bottom-shadow"><img src="http://im.sify.com/home2012/images/menu-hover-shadow.png" width="980" height="25" alt="" /></div>
+</div>
+</div>
+</div>
+</div>
+</group><script type='text/javascript'>loadSiteLogo('news')</script><script language='javascript' src='http://im.sify.com/fullstory/fullstory-revised-2011/autosearch/autofooter.js'></script></div>
+ <SCRIPT LANGUAGE='JavaScript'>var tmp_google_ad_client =  'ca-sify_js';var tmp_google_ad_channel = '08may_sify_news_others,08may_sify_news_others1'; var tmp_google_ad_type = 'text,image,flash,html';</SCRIPT><SCRIPT LANGUAGE='JavaScript'>var channelshortname = 'sifynew';</SCRIPT><script  language='Javascript'>var tmpgoogleadtopparam='08may_sify_news_others,article_news';  var tmpgoogleadbottomparam='08may_sify_news_others,Section_news';  </script>  
+ </div>
+ </div>
+</header></center>
+</group><!--/noindex-->
+<div id="middle-content-wrapper">
+<input type="hidden" id = "tab_placeholder" name ="tab_placeholder" value="News||offbeat||sex||orgasm||">
+<input type='hidden' value='Tips from the ultimate orgasm guide!' name='tit_val' id='tit_val'>
+<input type='hidden' value="Tips_from_the_ultimate_orgasm_guide!" name='google_tit_val' id='google_tit_val'>
+
+<script language="Javascript">
+document.title=document.getElementById('tit_val').value;
+</script>
+ 
+
+
+<img src='' border='0' width='0' height=0 id='statsURL_HitLinkConfiguration' name='statsURL_HitLinkConfiguration'><div id="middle-column-left-wrapper">
+		<div id="breadcrumb-outer-wrapper">
+			<div id="breadcrumb-inner-wrapper">
+				<div id="breadcrumb-content-wrapper"><div id="breadcrumb-content-wrapper"><a href="http://www.sify.com/">Sify.com</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="http://www.sify.com/news/">News</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="http://www.sify.com/news/national/">National</a>&nbsp;&nbsp;/&nbsp;&nbsp;<span><!--Fullheadline-->Tips from the ultimate orgasm guide!<!--/Fullheadline--></span></div></div>
+			</div>
+			<div id="increase-decrease-wrapper">
+				<a style="cursor:pointer;" id="decrease-wrapper" onclick="javascript:  if (parseInt(document.getElementById('contentDiv').style.fontSize) > 12) { document.getElementById('contentDiv').style.fontSize = (parseInt(document.getElementById('contentDiv').style.fontSize)-1)+'px'; } "></a>
+
+				<a style="cursor:pointer;" id="increase-wrapper" onclick="javascript:  if (parseInt(document.getElementById('contentDiv').style.fontSize) < 16) {document.getElementById('contentDiv').style.fontSize = (parseInt(document.getElementById('contentDiv').style.fontSize)+1)+'px'; } "></a>
+			</div>
+		</div>
+		<div class="spacer-H20"></div>
+    <!--Vertical Sliding Share Starts-->
+    <div id="box">
+    <div id="middle-vshare-inner-wrapper">
+    <table width="55" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+      <td align="center"><!-- FB Like Begins -->
+	<fb:like send="false" layout="box_count" width="50" show_faces="false"></fb:like>
+	<!-- FB Like Ends -->
+	<!-- Start tracking FB Like in GA -->
+	<script language='javascript'>
+	FB.Event.subscribe('edge.create', function(targetUrl) { _gaq.push(['_trackSocial', 'facebook', 'like', targetUrl]);});
+	FB.Event.subscribe('edge.create', function(targetUrl) { _gaq.push(['SifyAll._trackSocial', 'facebook', 'like', targetUrl]);});
+	</script>
+	<!-- End tracking FB Like in GA --> </td>
+    </tr>
+    <tr>
+      <td height="10"><img src="http://im.sify.com/images/spacer.gif" alt="" width="1" height="1" /></td>
+    </tr>
+    <tr>
+    <td><!-- Twitter JS Begins -->
+	<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+	<a href="http://www.sify.com/news/tips-from-the-ultimate-orgasm-guide-news-national-jehbFOibicc.html" data-url="http://www.sify.com/news/tips-from-the-ultimate-orgasm-guide-news-national-jehbFOibicc.html" data-related="sifydotcom:Sify on Twitter" class="twitter-share-button" data-count="vertical">Tweet</a>
+	<!-- Twitter JS Ends -->
+	<!-- Start tracking Twitter in GA -->
+	<script language='javascript'>
+	twttr.events.bind('tweet', function(event) {
+	  if (event) {
+		var targetUrl;
+		if (event.target && event.target.nodeName == 'IFRAME') {
+		  targetUrl = _gaq.extractParamFromUri_(event.target.src, 'url');
+		}
+		_gaq.push(['_trackSocial', 'twitter', 'tweet', targetUrl]);
+		_gaq.push(['SifyAll._trackSocial', 'twitter', 'tweet', targetUrl]);
+	  }
+	});
+	_gaq.extractParamFromUri_ = function(uri, paramName) {
+	  if (!uri) {
+		return;
+	  }
+	  var uri = uri.split('#')[0];  // Remove anchor.
+	  var parts = uri.split('?');  // Check for query params.
+	  if (parts.length == 1) {
+		return;
+	  }
+	  var query = decodeURI(parts[1]);
+	  // Find url param.
+	  paramName += '=';
+	  var params = query.split('&');
+	  for (var i = 0, param; param = params[i]; ++i) {
+		if (param.indexOf(paramName) === 0) {
+		  return unescape(param.split('=')[1]);
+		}
+	  }
+	  return;
+	};
+	</script></td>
+    </tr>
+     <tr>
+      <td height="10"><img src="http://im.sify.com/images/spacer.gif" alt="" width="1" height="1" /></td>
+    </tr>
+    <tr>
+      <td height="10"><!-- Google +1 Begins--> 
+	<g:plusone size="tall"></g:plusone>
+	<!-- Google +1 Ends--> </td>
+    </tr>
+    <tr>
+      <td height="10"><img src="http://im.sify.com/images/spacer.gif" alt="" width="1" height="1" /></td>
+    </tr>
+    <tr>
+      <td align="center" class="vhare-textbg"><!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_counter"></a>
+</div>
+<style>
+.addthis_counter div { position:absolute; }
+</style>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=sifycomments"></script>
+<!-- AddThis Button END --></td>
+    </tr>
+    <tr>
+      <td height="10"><img src="http://im.sify.com/images/spacer.gif" alt="" width="1" height="1" /></td>
+    </tr>
+    <tr>
+      <td><a href="javascript:openMailWindow('url=http://www.sify.com/news/tips-from-the-ultimate-orgasm-guide-news-national-jehbFOibicc.html&title=tips-from-the-ultimate-orgasm-guide');" class="vshare-mail-social"></a></td>
+    </tr>
+    <tr>
+      <td align="center" class="vhare-textbg"><a href="javascript:openMailWindow('url=http://www.sify.com/news/tips-from-the-ultimate-orgasm-guide-news-national-jehbFOibicc.html&title=tips-from-the-ultimate-orgasm-guide');">Mail</a></td>
+    </tr>
+    <tr>
+      <td height="10"><img src="http://im.sify.com/images/spacer.gif" alt="" width="1" height="1" /></td>
+    </tr>
+    <tr>
+      <td><a href="javascript:openPrintWindow('a=jehbFOibicc&ctid=2&cid=offbeat');" class="vshare-print-icon"></a></td>
+    </tr>
+    <tr>
+      <td height="5"><img src="http://im.sify.com/images/spacer.gif" alt="" width="1" height="1" /></td>
+    </tr>
+    <tr>
+      <td align="center" class="vhare-textbg"><a href="javascript:openPrintWindow('a=jehbFOibicc&ctid=2&cid=offbeat');">Print</a></td>
+    </tr>
+    </table>
+    </div>
+    </div>
+    <!--Vertical Sliding Share Ends-->
+    
+    <!--Fullstory Article Starts-->
+ 
+    <div id="fullstory-article-wrapper">
+    <div id="artContent" name="artContent" style='display:inline; height:auto; width:100%; float:left;'>
+    <div class="fullstory-heading-wrapper"><h1>Tips from the ultimate orgasm guide!</h1></div>
+    <div class="spacer-H20"></div>
+    <div id="fullstory-branding-comments-outer-wrapper">
+	    <div id="fullstory-admin-wrapper">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="left">	
+			<div id="fullstory-source"><table width="100%" border="0" cellspacing="0" cellpadding="0">  <tr><td width="45" align="left">Source : </td><td align="left"><a href='http://www.sify.com/news/moreheadlines/source/ani.html' target='_new'><img src='http://im.sify.com/fullstory/fullstory-revised-2011/source/ani.gif' alt='ANI' border='0' ALIGN='absmiddle'></a></td></tr></table></div> </td>
+      </tr>
+  </table>
+
+	      <div id="fullstory-admin-time">Last Updated: Wed, Jun 17, 2009 10:58 hrs</div>
+	    </div>
+    <div id="fullstory-branding-comments-inner-wrapper">
+	<div id="fullstory-branding-wrapper"></div>
+	<div class="fullstory-comments-wrapper">
+		<div class="fullstory-comment-icon"><img src="http://im.sify.com/fullstory/fullstory-revised-2011/images/comments-icon.gif" width="16" height="16" alt="" /></div><a href="#disqus_thread" data-disqus-identifier="jehbFOibicc"></a></div>
+	</div>
+    </div>
+    <div class="spacer-H10"></div>
+    <div id="fullstory-google-textad">
+    <!--GADS 1 Starts-->
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0910144482339723";
+/* sify_article_468x60_top */
+google_ad_slot = "4229508012";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+	<!--GADS 1 Ends-->
+    </div>
+    <div class="spacer-H10"></div>
+    <div class="fullstory-article-content-wrapper" id="contentDiv" name="contentDiv" style="font-size:14px;"><section> <p><b>London:</b> Is your sex life more of a snooze than sizzle? Well, don't fret it, for a group of experts have come up with an ultimate ''orgasm guide'', that is, wholesomely dedicated to pleasure of the naughty variety.</p> <table width="200" align="right" border="0" cellpadding="2" cellspacing="3">  <tbody><tr>    <td><table width="200" align="right" bgcolor="#333333" border="1" cellpadding="1" cellspacing="0">      <tbody>        <tr>          <td><div align="center"><font size="2" color="#ffffff" face="Arial, Helvetica, sans-serif"><b>Most Read</b></font></div></td>        </tr>        <tr>          <td bgcolor="#f0f0f0">            <table width="100%" border="1" cellpadding="2" cellspacing="1">              <tbody>               <tr>                  <td><font size="2" face="Arial, Helvetica, sans-serif"><a class="smalllink_en" href="http://sify.com/news/imagegallery/galleryDetail.php?id=jglkWsedbhc&amp;title=The_top_10_sex_mistakes_men_make_in_bed" target="_new">The top 10 sex mistakes</a></font></td>                </tr><tr>                  <td><font size="2" face="Arial, Helvetica, sans-serif"><a class="smalllink_en" href="http://sify.com/news/imagegallery/galleryDetail.php?id=jgjpiCeabeh&amp;title=The_best_natural_Viagra" target="_new">The best natural Viagra</a><b></b></font></td>                </tr><tr>                  <td><font size="2" face="Arial, Helvetica, sans-serif"><a class="smalllink_en" href="http://sify.com/news/imagegallery/galleryDetail.php?id=jgkrfhdeafc&amp;title=Myths_surrounding_the_Pill" target="_new">Myths about the Pill </a></font></td>               </tr>                <tr>                  <td><font size="2" face="Arial, Helvetica, sans-serif"><a class="smalllink_en" href="http://twitter.com/sifydotcom/?vsv=elealso%20" target="_new">Follow us on twitter</a></font></td>                </tr>                               <tr>                  <td><font size="2" face="Arial, Helvetica, sans-serif"><a class="smalllink_en" href="http://sify.com/news/moreheadlines.php?tag=sex&amp;?vsv=elealso" target="_new"> News on sex and sensuality</a></font></td>               </tr>              </tbody>              <tbody>              </tbody>          </table></td>        </tr>      </tbody>    </table></td>  </tr></tbody></table><p>Tracey Cox, sex author and presenter; Sarah Hedley, editor of <i>Scarlett</i> magazine; Dr Petra Boynton, sex and relationship expert and Katherine Hoyle, owner of ''Sh! Women''s Erotic Emporium'' share their expert knowledge for achieving the ''Big O''<div class="googlead-inside-article-300x250"  id="gads_middle" name="gads_middle"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-0910144482339723";
+/* sify_articles_300x250_middle */
+google_ad_slot = "6875788121";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div><div style="text-align:left;"></p><p>"The biggest misconception is that women can have orgasms through intercourse. But 70 per cent of women don't, and that's totally normal. Guys don't just lie back hoping to have an orgasm - they pick a thrusting style to suit them. Women need to do the same and take control," <i>The Sun</i> quoted Tracey, as saying.</p><p>"The trick to achieving orgasm is to put pressure on your clitoris by rotating your pelvis during sex.</p><p><a target="_blank" href="http://sify.com/news/offbeat/"><font color="blue">More offbeat stories</font></a> | <a target="_blank" href="http://sify.com/news/scitech/"><font color="blue"> Science updates</font></a></p><p>"Good positions for this are with the woman on top or with the man behind - and if you tighten your pelvic muscles, your orgasm will be more intense.</p><p>"These positions are also great for hitting the G spot, which is around the urethra tissue - the part you can feel through the vaginal wall. It's not miles in like we all previously thought.</p><p>"Another good orgasm tip is to give up on trying to climax simultaneously," Tracey added.</p><p>She said: "Much better to take it in turns so you're not distracted by what the other person is doing - that's why a 69er is always better in fantasy!</p><p>"And stop thinking of sex having a start, middle and end. You could orgasm from an oral sex session or a quickie against the bathroom wall.</p><p><a target="_blank" href="http://sify.com/news/travel/"><font color="blue">Travel news </font></a> | <a target="_blank" href="http://sify.com/news/healthfact/"><font color="blue"> Health facts </font></a></p><p>"Keep your mind in the moment and feel rather than think - it will make climaxing much easier. If you want more than one orgasm, my best tip is to use different forms of stimulation, otherwise you get desensitised. So orgasm through oral sex, then through your G spot.</p><p>"Remember, having sex when you're drunk means your senses are dulled and your orgasm won't be as good."</p><p>Sarah Hedley says: "The key to having a great orgasm is to get your mind ''in orgasm mode'' way before you take your clothes off."</p><p>Dr Petra Boynton said: "All orgasms are great. Thinking of them as brilliant or boring just puts pressure on us. The trick is not to strive for something better - we all feel orgasms in different ways. My advice is to set aside time to explore orgasms on your own. It's rare to be unable to orgasm through masturbation.</p><p>"A lot of women think it's cheating to do it in a relationship, but it's not; it helps you know what you like. Then why not try masturbating in front of your partner? If you feel embarrassed, then ask him to do it first."</p><p>Katherine Hoyle says: "Breathing can really affect an orgasm. As you start having sex, your breathing rate increases and we often hold our breath. This means you tense up and climaxing is more difficult. If you're aware of your breathing and try to regulate it, you''ll let go quicker and orgasm."</p></div><br><br><div id='srcword' name='srcword' style='display:none;position:absolute; width:310px;'><div id='search_box' class='divflip'><form id='search_form_new' name='search_form_new' method='post' action='http://search.sify.com/'><input name ='s' type='text' id='s' value='' class='swap_value' onKeydown='javascript: if (event.keyCode==13) {submit_form();}'/></form></div><div style='float:left;width:310px;'><div style='float:left;width:310px;'><div style='width:16px;float:left;background-image:url(http://im.sify.com/images/corner-3.png);height:114px;background-repeat:no-repeat;'><img src='http://im.sify.com/images/corner-3.png' width='18' height='114' /></div><div style='width:260px;float:left;background-image:url(http://im.sify.com/images/bg-2.png);height:114px;'><div style='width:260px;float:left;'><div style='width:100px;float:left;text-align:left;padding-top:25px;' class='arial12white-b'>SEARCH</div><div style='width:160px;float:left;text-align:right;padding-top:25px;'><img src='http://im.sify.com/images/google1.jpg' width='113' height='23' /></div></div><div style='width:260px;float:left;'><div style='width:40px;float:right;text-align:right;padding-top:15px;'><a onclick='javascript: submit_form();' style='cursor:pointer;'><img onclick='javascript: submit_form();' src='http://im.sify.com/images/icon1.jpg' width='31' height='30' border='0'/></a></div> </div></div><div style='width:26px;float:left;'><a onclick='javascript:vanishdiv();' style='cursor:pointer;'><div style='width:26px;float:left;background-image:url(http://im.sify.com/images/corner-4.png);height:114px;background-repeat:no-repeat;'><img src='http://im.sify.com/images/corner-4.png' width='24' height='114' border='0' /></div></a></div></div></div></div> </section>	</div>
+    </div>
+  
+    <div id="fullstory-YML_wrapper">
+    <style>
+	#outbrain_container_0_stripBox .strip-like {
+	/* Added by Sify */
+	background-color:black; 
+	color:white; 
+	padding-left: 10px;
+	padding-top: 10px;
+	text-decoration: none;
+	width: 528px;
+	float:left;
+	}
+
+	.outbrain_stripBox_template{
+	float:left;
+	height:auto;
+	}
+
+	#ob_strip_container_0_stripBox {
+	width: 100%;
+	/* Added by Sify */
+	float:left; 
+	height:auto;
+	position: relative;
+	display:block;
+	background-color: #F6F6F6;
+	padding-top:5px;
+	padding-bottom:5px;
+	}
+
+	#ob_strip_container_rel_0_stripBox .strip-rec-link-img {
+	position: relative;
+	float:left;
+	display:inline;
+	}
+
+	#ob_strip_container_0_stripBox .item-container {
+	width: 108px;
+	height: auto;
+	float: left;
+	list-style: none;
+	font: normal 12px Arial, Helvetica, sans-serif;
+	color: #1059A5;
+	text-decoration: none;
+	line-height: 16px;
+	margin: 0 8px 0 8px;
+	display:inline;
+	position: relative;
+	}
+
+	#ob_strip_container_rel_0_stripBox .strip-text-content a {
+	color: #1059A5;
+	text-decoration: none;
+	font: normal 12px Arial, Helvetica, sans-serif;
+	float:left;
+	}
+
+	#ob_strip_container_rel_0_stripBox .hover .strip-rec-link-img {
+	border: 2px solid #F6F6F6;
+	position: relative;
+	clear:both;
+	display:inline;
+	width: 100px;
+	height: 100px;
+	}
+
+	#ob_strip_container_rel_0_stripBox .strip-rec-link-img {
+	border: 2px solid #F6F6F6;
+	display: block;
+	width: 100px;
+	height: 100px;
+	}
+	</style>
+	<!--[if IE 6]>
+	<style>
+	.outbrain_stripBox_template {
+		float: left;
+		height: 220px;
+		overflow:hidden;
+	}
+	#ob_strip_container_0_stripBox .item-container {
+	{
+	  margin: 0 7px 0 7px;
+	}
+	#ob_strip_container_rel_0_stripBox .strip-img {
+		float:left;
+		position: relative;
+		display:inline;
+		overflow:hidden;
+	}
+	</style>
+	<![endif]-->
+	<script language="JavaScript">
+	var OB_Template="sify";
+	var OB_langJS ="http://widgets.outbrain.com/lang_en.js";
+	var OutbrainPermaLink=window.location.href;
+	if ( typeof(OB_Script)!="undefined" ){
+		OutbrainStart();
+		}
+	else {
+	var OB_Script = true;
+	var str = '<script src="http://widgets.outbrain.com/OutbrainRater.js" type="text/javascript" charset="UTF-8"></s'+'cript>';
+	document.write(str);
+	}
+	</script>
+    <div class="spacer-H20"></div>
+    <div id="gads2" name="gads2">
+    <div id="fullstory-google-textad">
+    <!--GADS 2 Starts-->
+	<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0910144482339723";
+/* sify_article_468x60_bottom */
+google_ad_slot = "3008812832";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+    <!--GADS 2 Ends -->
+    </div></div>
+    <div id="fullstory-bottom-comments-pyc-wrapper">
+	   
+	<div class="fullstory-pyc-wrapper">
+		 <img src="http://im.sify.com/fullstory/fullstory-revised-2011/images/pyc-icon.gif" alt="" width="11" height="12" /><span><a href="#fullstory-article-comments-wrapper">Post your Comments</a></span>
+	</div>
+	<div class="fullstory-comments-wrapper-fbrec">
+		    <fb:like send="false" width="350" show_faces="false" action="recommend"></fb:like>
+	</div>
+    </div>
+    <div id="fullstory-related_keywords-wrapper">
+	<ul><li><a href='http://www.sify.com/topics/News.html'>News</a> </li><li><a href='http://www.sify.com/topics/offbeat.html'>Offbeat</a> </li><li><a href='http://www.sify.com/topics/sex.html'>Sex</a> </li><li><a href='http://www.sify.com/topics/orgasm.html'>Orgasm</a> </li><ul>
+    </div>
+    <div class="spacer-H20"></div>
+    <div id="fullstory-article-comments-wrapper">
+	<!--Disqus Starts-->
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	    var disqus_shortname = channelshortname; // required: replace example with your forum shortname
+
+	    // The following are highly recommended additional parameters. Remove the slashes in front to use.
+	    var disqus_identifier = 'jehbFOibicc';
+	    var disqus_url = window.location.href;
+
+	    /* * * DON'T EDIT BELOW THIS LINE * * */
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+	<!--Disqus ends -->
+	</div>
+    </div>
+    <!--Fullstory Article Ends-->
+    </div>
+</div><script type="text/javascript">
+var referringURL=document.referrer;
+var currentPage=location.href;
+var sourceName= "<a href='http://www.sify.com/news/moreheadlines/source/ani.html' target='_new'><img src='http://im.sify.com/fullstory/fullstory-revised-2011/source/ani.gif' alt='ANI' border='0' ALIGN='absmiddle'></a>";
+var catName="national";
+var fullTitleVal="title=tips from the ultimate orgasm guide&cid=jehbFOibicc";
+var fullChannelVal="news";
+//var queryStringForStats="http://stats.sify.com/url?app=analytics&"+fullTitleVal+"&channel="+fullChannelVal+"&referrerpage="+referringURL+"&category="+catName+"&currentpage="+currentPage+"&source="+sourceName+"&uid="+getSifyCookie('sifyuserid')+"&activity=pageload&entitytype=article"+"&sid="+setSessionId(getSifyCookie('sifyuserid'));
+//document.getElementById('statsURL_HitLinkConfiguration').src=queryStringForStats;
+</script>
+<!--*******Stas collection changes Ends*****-->
+	    <div id="middle-column-right-wrapper"><group id="Rightnav">
+<style>
+.rightnavslot_container {width: 300px;height: auto;float: left;}
+.rightnavslots {width: 300px;height: auto;float: left;margin-bottom:15px;}
+</style>
+<div class='rightnavslot_container'>
+
+	<div  class='rightnavslots'>  
+		<!-- News_Fullstory_300x250_ATF -->
+		<script type='text/javascript'>
+		googletag.display('div-gpt-ad-1358764159252-0');
+		</script>
+		<!-- News_Fullstory_300x250_ATF -->
+		 </div>
+	<div  class='rightnavslots'><div class='common-right-outer-wrapper'>    <div class='common-right-heading'>most popular on facebook</div>    <div class='common-right-inner-wrapper' style='height:300px'><div class='friends-activity-wrapper'><script>(function(d){			  var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}			  js = d.createElement('script'); js.id = id; js.async = true;			  js.src = '//connect.facebook.net/en_US/all.js#xfbml=1';			  d.getElementsByTagName('head')[0].appendChild(js);			}(document));</script>			<div class='fb-recommendations' data-site='sify.com' data-app-id='189103277794050' data-action='like,recommend' data-width='272' data-height='300' data-header='false' data-linktarget='_parent' data-font='arial' ref='news_fullstory' max_age='1'></div></div></div>    </div></div>
+
+	<div  class='rightnavslots'><div class='common-right-outer-wrapper'><div class='common-right-heading'>talking point on sify news</div><div class='common-right-inner-wrapper'>    <div class='common-article-listing-wrapper'>		<div class='dsq-widget'><script type='text/javascript' src='http://sifynew.disqus.com/popular_threads_widget.js?num_items=5'></script> <p class='dsq-widget-meta1' align='right'><a href='http://disqus.com/' style='color:#124F88;'>Powered by Disqus</a></p></div>    </div>    </div>    </div><style>li.dsq-widget-item {margin: 0 0 0 14px;list-style-type: square;clear: both;} p.dsq-widget-meta1 { clear: both; font: normal 11px Arial, Helvetica, sans-serif; color: #000000; text-decoration: none; margin: 0; padding: 5px;}a.dsq-widget-thread {font-weight: normal;}p.dsq-widget-meta {font: normal 11px Tahoma, Geneva, sans-serif;color: #595959;text-decoration: none;display: block;}</style></div>
+	<div  class='rightnavslots'><div class='common-right-outer-wrapper'>  
+<div class='common-right-heading'>today's most read on sify news</div>   
+<div class='common-right-inner-wrapper'>  
+<div class='common-article-listing-wrapper'> 
+<ul>   
+<li><a href='http://www.sify.com/news/indian-pays-rs-36-lakh-blood-money-to-rescue-compatriot-in-saudi-arabia-news-international-nhinOghhbbh.html'>Indian pays Rs 36 lakh blood money to rescue compatriot in Saudi Arabia</a> <span>Read 3824 Times</span></li><li><a href='http://www.sify.com/news/10-question-marks-over-ishrat-jahan-news-columns-nhimpVhcfec.html?source=sifyhome&slot=c1s2'>10 question marks over Ishrat Jahan</a> <span>Read 2187 Times</span></li><li><a href='http://www.sify.com/news/tn-govt-orders-commission-to-probe-death-of-dalit-youth-news-national-nhiladabhci.html?source=sifyhome&slot=c1s2&source=sifyhome&slot=c1s2'>TN government orders commission to probe death of Dalit youth</a> <span>Read 1691 Times</span></li><li><a href='http://www.sify.com/news/indian-politicians-pakistan-s-proxy-soldiers-news-columns-nhflBefbdib.html'>Indian Politicians: Pakistan's Proxy Soldiers</a> <span>Read 1484 Times</span></li><li><a href='http://www.sify.com/news/south-african-police-paid-overtime-at-high-profile-gupta-wedding-news-international-nhhpO5hbhei.html'>South African police paid overtime at high-profile Gupta wedding</a> <span>Read 1133 Times</span></li></ul>
+</div>
+</div>
+
+</div>
+</div>
+	<div  class='rightnavslots'>     <!-- News_Fullstory_300x250_BTF1 -->
+<div id='div-gpt-ad-1358764159252-1' style='width:300px; height:250px;'>
+<script type='text/javascript'>
+googletag.display('div-gpt-ad-1358764159252-1');
+</script>
+</div>     <!-- News_Fullstory_300x250_BTF1 -->      </div>
+	<div  class='rightnavslots'><style>.common-article-listing-wrapper ul {float:left; }.common-article-listing-wrapper li.last {list-style: none; float:right;}</style><!--news/article/category/columns/ Static Url: http://static.sify.com/cms/article/search?q=&channel=news&category=columns&temp=false&Offline=false&orderBy=CreatedDate&orderByDir=desc&offset=0&limit=8&withData=1--> <div class="common-right-outer-wrapper">
+<div class="common-right-heading">Latest News</div>
+<div class="common-right-inner-wrapper">
+<div class="common-article-listing-wrapper">
+<div class="common-article-listing-withimage-wrapper">  <a href="http://www.sify.com/news/should-caste-get-in-the-way-of-marriage-news-columns-nhjkvpicfbe.html"><img src="http://static.sify.com/cms/image/nhjkficghce_thumb.jpg" alt="" title="" width="120" height="75" border="0" /></a> <a href="http://www.sify.com/news/should-caste-get-in-the-way-of-marriage-news-columns-nhjkvpicfbe.html">Should caste get in the way of marriage?</a></div><ul>
+<li><a href="http://www.sify.com/news/food-security-bill-a-right-step-with-many-problems-news-columns-nhjcjXhafjb.html">Food Security Bill a right step with many problems </a></li><li><a href="http://www.sify.com/news/aarushi-s-neck-was-likely-cut-using-khukri-expert-news-columns-nhjbTnfhaac.html">Aarushi's neck was likely cut using <i>khukri</i>: Expert</a></li><li><a href="http://www.sify.com/news/10-question-marks-over-ishrat-jahan-news-columns-nhimpVhcfec.html">10 question marks over Ishrat Jahan</a></li><li><a href="http://www.sify.com/news/ten-question-marks-over-the-food-bill-news-columns-nhhvRTgdjib.html">Ten question marks over the food bill</a></li><li><a href="http://www.sify.com/news/sadly-bihar-s-no-boston-news-columns-nhhrk2gdcff.html">Sadly, Bihar's no Boston</a></li><li><a href="http://www.sify.com/news/ishrat-case-can-renew-respect-for-statute-news-columns-nhgmueiejgd.html">Ishrat case can renew respect for statute</a></li><li><a href="http://www.sify.com/news/indian-politicians-pakistan-s-proxy-soldiers-news-columns-nhflBefbdib.html">Indian Politicians: Pakistan's Proxy  Soldiers</a></li><li class="last"><a href="http://www.sify.com/news/moreheadlines/columns.html"><strong>More</strong></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+	<div  class='rightnavslots'><!-- News_Fullstory_300x250_BTF2 -->
+<div id='div-gpt-ad-1358764159252-2' style='width:300px; height:250px;'>
+<script type='text/javascript'>
+googletag.display('div-gpt-ad-1358764159252-2');
+</script>
+</div>
+</div>
+</div>
+</group>
+</div>
+	</div>
+</div>
+
+<group id="topnav"> </group>
+
+<group id='footer'>
+<center>
+<div class="footer">
+<div class="footer-inner">
+<table width='100%' border='0' cellspacing='0' cellpadding='0'>  <tr>    <td width='20'> </td>    <td align='left' class='arial-11-white-n'>© Copyright Sify Technologies Ltd, 1998-2012. All rights reserved</td>    <td align='right' class='arial-11-white-n'><a href='http://www.sify.com/disclaimer.php' target='_blank' class='arial-11-white-n'>Disclaimer</a>  <span class='arial-12-ash-n'>|</span>  <a href='http://www.sify.com/privacy.php' target='_blank' class='arial-11-white-n'>Privacy Policy</a>  <span class='arial-12-ash-n'>|</span>  <a href='http://www.sifycorp.com/scripts/careers.asp' target='_blank' class='arial-11-white-n'>careers@sify.com</a>  <span class='arial-12-ash-n'>|</span>  <a href='http://sifycorp.com/scripts/corphome-abtus.asp' target='_blank' class='arial-11-white-n'>About Us</a>  <span class='arial-12-ash-n'>|</span>  <a href='http://www.sify.com/feedback/feedbackform_home.php' target='_blank' class='arial-11-white-n'>Feedback</a>  <span class='arial-12-ash-n'>|</span>  <a href='http://www.sify.com/mediakit' target='_blank' class='arial-11-white-n'>Advertise</a></td>    <td width='20' height='61'> </td>  </tr></table></div>
+</div>
+
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/2469.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+</center>
+</group><!--/noindex-->
+
+
+<div class="pop-out-wrapper" id="block" style='display:none;text-align:right;border:1px solid #d4d4d4;'>
+<div class="pop-out-heading"><a onclick="javascript:hidepopoutbox(1);"><img src="http://im.sify.com/fullstory/fullstory-revised-2011/images/pop-out-close.gif" alt="" width="14" height="14" border="0" /></a>Read Next</div>
+<div class="pop-out-article-wrapper">
+<a href="http://www.sify.com/news/upa-needs-to-exhibit-greater-will-to-fight-terrorism-says-rajnath-singh-news-national-nhjmPndibec.html?ref=slideout" target='_blank'>UPA needs to exhibit greater will to fight terrorism, says Rajnath Singh</a></div>
+
+</div>
+</center>
+
+<script language=Javascript src='http://im.sify.com/news/jscripts/openWinMail.js'></script>
+<script language="Javascript" src="http://im.sify.com/news/lytebox.js"></script>
+
+<script language=Javascript src='http://im.sify.com/css/solfuncs.js'></script>
+<script defer type="text/javascript" src="http://im.sify.com/js/png.js"></script>
+<script defer type="text/javascript" src="http://im.sify.com/js/pngfix_map.js"></script>
+<!-- <script defer type="text/javascript" src="http://im.sify.com/js/pngfix.js"></script>-->
+
+<script language="Javascript">
+<!--
+var tempY = 0;
+function loaddiv(word, e)
+{	
+	document.getElementById('srcword').style.display="block";
+	document.getElementById('srcword').style.position="absolute";
+	document.search_form_new.s.value=word;
+    if (document.all) { 
+	tempY = e.offsetY + 480;
+	}
+	else {  
+	tempY = e.pageY;
+	}  
+	if (tempY < 0){tempY = 0;}  
+	document.getElementById("srcword").style.top = tempY +"px";
+	if((parseInt(e.clientX))<200)
+	{
+		document.getElementById("srcword").style.left = (parseInt(e.clientX)) + "px";
+	}
+	else if((parseInt(e.clientX))>400)
+	{
+		document.getElementById("srcword").style.left = (parseInt(e.clientX)-300)+ "px";
+	}
+	else
+	{
+		document.getElementById("srcword").style.left = (parseInt(e.clientX)-100)+ "px";
+	}
+}
+function vanishdiv(word)
+{
+	document.getElementById('srcword').style.display="none";
+}
+function submit_form()
+{	var word = document.search_form_new.s.value;
+	document.search_form_new.action="http://search.sify.com/search.php?q="+word+"&ss=19";
+	document.search_form_new.submit();
+}
+var currCounter = 0;
+var pages=0;
+try {
+if (pages==0)
+	$("#tdPrev").hide();
+}
+catch (e)
+{
+}
+
+var startVal = 0;
+var totalpages = 0; 
+var totalObjects = 0; 
+if (totalObjects < 4)
+	$('#startVal').html(totalObjects);
+else {
+	$('#startVal').html(4);
+	currCounter=4;
+}
+var hoverflag=0;
+var leftVal=105;
+$("#fullstory-gallery-thumbnail-wrapper li").mouseenter('mousemove',function(e){  
+		$(this).css("opacity", "1.0");
+		$(this).css("cursor", "pointer");
+		$(this).css("list-style", "none");
+});
+
+$("#fullstory-gallery-thumbnail-wrapper li").mouseleave('mousemove',function(e){  
+		$(this).css("opacity", "0.5");
+		$(this).css("cursor", "pointer");
+		$(this).css("list-style", "none");
+});
+ $(function() {
+  var offset = $(".fullstory-heading-wrapper").offset();
+  var initialOffsetTop = offset.top;
+  var boxoffset = $("#box").offset();
+  var initialBoxOffsetTop = boxoffset.top;
+  var topPadding = 15;
+  $(window).scroll(function() {
+  if ($(window).scrollTop() > offset.top) {
+		 $("#box").css("top", "3%");
+		 $("#box").css("position", "fixed");
+		 $("#box").css("z-index", "10");
+		 $(".menu-cover").css("z-index", "10000000000000000000000000000000");
+	 }
+		 else {
+		  $("#box").css("top", initialOffsetTop+"px");
+		  $("#box").css("position", "");
+		  $("#box").css("z-index", "10");
+		  $(".menu-cover").css("z-index", "10000000000000000000000000000000");
+  };
+  });
+  });
+$(window).scroll(function(event) {
+		if(($(window).scrollTop() + $(window).height()) >= (document.getElementById('artContent').clientHeight+ document.getElementById('topnavig').scrollHeight+80)) 
+		{
+			if (hoverflag==0)
+				$("#block").animate({width: 'show'});
+		}
+		else {
+			hidepopoutbox(0);
+		}
+});
+
+$("#fullstory-article-gallery-wrapper").mouseleave('mousemove',function(e){ 
+	});
+/* Start of pop out code */
+function getElementTop(Elem) {
+        if(document.getElementById) {    
+            var elem = document.getElementById(Elem);
+        } else if (document.all) {
+            var elem = document.all[Elem];
+        }
+
+        var yPos = elem.offsetTop;
+        tempEl = elem.offsetParent;
+        while (tempEl != null) {
+              yPos += tempEl.offsetTop;
+              tempEl = tempEl.offsetParent;
+          }
+        return yPos + 'px';
+    
+    }    
+
+function hidepopoutbox(closeStatus){
+	hoverflag =closeStatus;
+	$("#block").animate({width: 'hide'});
+}
+
+/* End of pop out code */
+
+function displayImage(img, description,objid, tmpwidth, tmpheight){
+		$('#innerCont').html('<img src="'+img+'"  width="'+tmpwidth+'" height="'+tmpheight+'" />');
+	$('#fullstory-gallery-article-copy').css("visibility", 'visible');
+	$('#fullstory-gallery-article-copy').html(description);
+	$('#startVal').html((parseInt(objid)+1)+ " ");
+}
+
+function displayVideo(videoid,videourl, description, objid, imgURL){
+		$('#innerCont').html('<iframe src="http://serve.vdopia.com/adserver/embedded.php?apikey=69c7b8869ddab199a9bab8f9f2ec7cd7&vdourl='+videourl+'&autoplay=false&api_test=false&imageurl='+imgURL+'&events={type:\'GA\',account:\'UA-2736040-1\',category:\''+videoIdArray[videoid][1]+'\',label:\''+videoIdArray[videoid][0]+'\'}" width="520" height="336" frameborder="0" scrolling="no" allowfullscreen></iframe>');
+	$('#fullstory-gallery-article-copy').css("visibility", 'visible');
+	$('#fullstory-gallery-article-copy').html(description);
+	$('#startVal').html((parseInt(objid)+1)+ " ");
+}
+function removeText(){
+		$('#fullstory-gallery-article-copy').css("visibility",'hidden');
+	$('#fullstory-gallery-article-copy').html = "";
+}
+function loadNext(){
+
+	if (pages <= (totalpages-1)) {
+		pages++;
+		startVal = 4 * pages;
+	}
+	for (i=0; i<(startVal+4); i++){
+		if (i<startVal){
+			$('#li_'+i).fadeOut("slow");
+		}	
+		else {
+			$('#li_'+i).css("left", "500px");
+			for (var j=parseInt($('#li_'+i).css("left")); j>=0; j=j-100)
+				$('#li_'+i).animate({"left": j+"px"}, "50");
+			$('#li_'+i).animate({"left": "0"}, "50");
+			$('#li_'+i).show();
+		}
+	}
+	if (pages < (totalpages-1)){
+		if (i <= totalObjects){
+			$('#startVal').html(i + " ");
+			var tmpStartVal = (i-4); 
+		}
+		else {
+			$('#startVal').html(totalObjects + " ");
+			var tmpStartVal = pages * 4; 
+		} 
+		$('#li_'+tmpStartVal).trigger('click');
+		$("#tdNext").show();
+		$("#tdPrev").show();
+	}
+	else {
+		var tmpStartVal = pages * 4; 
+		$('#startVal').html(totalObjects + " ");
+		$('#li_'+tmpStartVal).trigger('click');
+		$("#tdNext").hide();
+		$("#tdPrev").show();
+	}
+}
+function loadPrev(){
+	if (pages > 0) {
+		startVal = 4 * pages;
+		pages--;
+	}
+	for (i=(startVal+4); i>=(startVal-4); i--){
+		if (i>=startVal){
+			$('#li_'+i).fadeOut("slow");
+		}	
+		else {
+			for (var j=-500; j<=0; j=j+100)
+				$('#li_'+i).animate({"left": j+"px"}, "50", function() {$(this).show();});
+			
+		}
+	}
+	if (pages > 0){
+		if (i > 0) {
+			$('#startVal').html(startVal + " ");
+			var tmpStartVal = (startVal-1);  
+		}
+		else {
+			$('#startVal').html(4 + " ");
+			var tmpStartVal = 3;
+		}			
+		$("#li_"+tmpStartVal).trigger('click'); 
+		$("#tdNext").show();
+		$("#tdPrev").show();
+	}
+	else {
+		var tmpStartVal = 3;
+		$('#startVal').html(4 + " ");
+		$("#li_"+tmpStartVal).trigger('click'); 
+		$("#tdNext").show();
+		$("#tdPrev").hide();
+	}
+}
+
+function getref_searchAds() {
+			r = document.referrer; 
+			if(r !="")
+			{ 
+				var d = r.split("//"); 
+				var d1 = d[1].split("/"); 
+				var d2 = d1[0].split("."); 
+				var dname =''; 
+				if(d2.find('google')!=false)
+				{
+					document.getElementById('searchad').style.display = 'block';
+				}
+			}
+		}
+		Array.prototype.find = function(searchStr) {
+		  var returnArray = false;
+		  for (i=0; i<this.length; i++) {
+			if (typeof(searchStr) == 'function') {
+			  if (searchStr.test(this[i])) {
+				if (!returnArray) { returnArray = [] }
+				returnArray.push(i);
+			  }
+			} else {
+			  if (this[i]===searchStr) {
+				if (!returnArray) { returnArray = [] }
+				returnArray.push(i);
+			  }
+			}
+		  }
+		  return returnArray;
+		}
+		getref_searchAds();
+   $("document").ready(function() { 
+        $("#li_0").trigger('click'); 
+    }); 
+function closeiframe() {
+	try {
+		var iframeArray = document.getElementsByTagName('iframe');
+		for(i=0;i<iframeArray.length;i++)
+		{
+			iframeArray[i].className+=" hide";
+		}
+	}
+	catch (e){
+	}
+}
+//Call this function when the Ad contracts 
+function openiframe() {
+	try {
+		var iframeArray = document.getElementsByTagName('iframe');
+		for(i=0;i<iframeArray.length;i++)
+		{
+			 iframeArray[i].className=iframeArray[i].className.replace(" hide","");
+		}
+	}
+	catch (e){
+	}
+}
+//-->
+</SCRIPT>
+
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    // var disqus_shortname = 'example'; required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,1790 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><link href="wcss.css" rel="stylesheet" type="text/css" />
+
+  <script src="http://www.myhofs.com/crawler.js" language="javascript" type="text/javascript"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><link href="wcssMember.css" rel="stylesheet" type="text/css" /><title>
+	Consensus in DC: It's RG3
+</title>
+
+ <style type="text/css">
+        .formcss
+         {  
+            float: left;
+         }
+         
+         
+         .text{
+text-decoration:none;
+ font-size :medium ;
+ float :right;
+}
+
+
+.text a:hover{
+text-decoration:underline;
+}
+    </style>
+
+    <script src="http://www.myhofs.com/Javascripts/Alphabet.js" language="javascript" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+
+
+
+    window.onload = function() {
+        getResolution();
+    }
+
+    function getResolution() {
+
+        var sPath = window.location.pathname;
+
+        var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+       // alert(sPage);
+        if (sPage.toLowerCase() != "fb.aspx" && sPage.toLowerCase() != "tw.aspx" && sPage.toLowerCase() != "index.aspx" && sPage.toLowerCase() != "login.aspx" && sPage.toLowerCase() != "forgotpassword.aspx" && sPage.toLowerCase() != "confirmaccount.aspx" && sPage.toLowerCase() != "confirmnewsletter.aspx" && sPage.toLowerCase() != "") {
+            var middle_left_con2 = document.getElementById("middle_left_con2");
+            middle_left_con2.style.minHeight = (screen.height - 350) + "px";
+            
+            var gapdiv = document.getElementById("gapdiv");
+            gapdiv.style.height = "46px";
+
+            var middle_botcor = document.getElementById("middle_botcor");
+            middle_botcor.style.display = "none";
+
+          // alert('done');
+        }
+    }
+
+
+    var openpp = 2;
+    function Setgray() {
+        var btnSignin = document.getElementById("ctl00_lvMember_imgHOF1");
+        btnSignin.className = "mhofimgUP"; ;
+        return "mhofimgUP";
+    }
+
+    function Setblue() {
+        var btnSignin = document.getElementById("ctl00_lvMember_imgHOF1");
+        btnSignin.className = "mhofimg"; ;
+        return "mhofimg";
+    }
+
+    function Setgraysign() {
+        var btnSignin = document.getElementById("ctl00_lvMember_btnSignin");
+        btnSignin.className = "sigin_buttonactive"; ;
+        return "sigin_buttonactive";
+    }
+
+    function Setbluesign() {
+        var btnSignin = document.getElementById("ctl00_lvMember_btnSignin");
+        btnSignin.className = "sigin_button"; ;
+        return "sigin_button";
+    }
+
+    function hidePopup() {
+        var pp = $find('ctl00_lvMember_PopExPopupBehavior');
+        if (openpp == 0) {
+            $find('ctl00_lvMember_PopExPopupBehavior').hide();
+            openpp = 1;
+        }
+        else if (openpp == 1) {
+            $find('ctl00_lvMember_PopExPopupBehavior').show();
+            openpp = 0;
+        }
+        else {
+            openpp = 0;
+        }
+    }
+
+    if (!document.all) {
+        window.onbeforeunload = function() {
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endRequest);
+        }
+    }
+
+    function endRequest(sender, e) {
+        err = e.get_error();
+        if (err) {
+            //if (err.name == "Sys.WebForms.PageRequestManagerServerErrorException") {
+            e.set_errorHandled(true);
+            //}
+        }
+    }
+</script>
+
+ <script type="text/javascript">
+
+     function chkOptionsmm(sender, args) {
+         // alert ('Hi');
+         //int cnt;
+         var txt1 = document.getElementById('ctl00_LoginView1_txtOption1mm');
+         //  alert(txt1);
+         //  alert(txt1.value);
+
+         var txt2 = document.getElementById('ctl00_LoginView1_txtOption2mm');
+         var txt3 = document.getElementById('ctl00_LoginView1_txtOption3mm');
+         var txt4 = document.getElementById('ctl00_LoginView1_txtOption4mm');
+         var txt5 = document.getElementById('ctl00_LoginView1_txtOption5mm');
+         var cnt = 0;
+         // alert(cnt);
+         if (txt1.value == "") {
+             cnt = cnt + 1;
+             // alert(cnt);
+         }
+
+         if (txt2.value == "") {
+             cnt = cnt + 1;
+             //alert(cnt);
+
+         }
+         if (txt3.value == "") {
+             cnt = cnt + 1;
+             //  alert(cnt);
+         }
+         if (txt4.value == "") {
+
+             cnt = cnt + 1;
+             //   alert(cnt);
+         }
+         if (txt5.value == "") {
+             cnt = cnt + 1;
+
+             //  alert(cnt);
+         }
+
+
+         //   alert(cnt);
+         // return cnt;
+
+         if (cnt >= 4) {
+             args.IsValid = false;
+         }
+         else {
+             args.IsValid = true;
+         }
+
+
+     }
+     
+     
+     // Find the autocompleteextender and set the text as value selected
+     function OnItemSelectedQstmm(event) {
+          var txtSportsCast = document.getElementById("ctl00_LoginView1_txtQuestionmm");
+          var value = txtSportsCast.value;
+         var comment = txtSportsCast.value.lastIndexOf('@');
+         var cast = value.substring(0, comment);
+         var selInd = $find("AutoCompleteQstmm")._selectIndex;
+         if (selInd != -1) {
+             var comment = $find("AutoCompleteQstmm").get_completionList().childNodes[selInd]._value;
+             var ocom = cast + '@' + comment.split('$')[0];
+             //alert(ocom);
+             $find("AutoCompleteQstmm").get_element().value = ocom;
+         }
+     }
+
+
+
+     function OnClientPopulatedQstmm(sender, eventArgs) {
+
+         //Find the autocompleteextender list
+         var autoList = $find("AutoCompleteQstmm").get_completionList();
+         for (i = 0; i < autoList.childNodes.length; i++) {
+             // Consider value as image path
+             var imgeUrl = autoList.childNodes[i]._value;
+             //First node will have the text
+             var text = autoList.childNodes[i].firstChild.nodeValue.replace(/\s+/g, "");
+
+             var image = imgeUrl.split('$')[0];
+             var category = imgeUrl.split('$')[1].replace(/\s+/g, "");
+             var usertype = imgeUrl.split('$')[2];
+             if (usertype == "2") {
+
+                 autoList.childNodes[i]._value = category + "/" + text + '$' + usertype + '$' + category;
+             }
+             else {
+                 autoList.childNodes[i]._value = text + '$' + usertype + '$' + category;
+             }
+
+             //Height and Width of the mage can be customized here...
+             //autoList.childNodes[i].innerHTML = "<div style='width:420px;float:left;margin-top:5px;'>" + "<img height=30 width=30 src=" + image + " style='float:left;'/>&nbsp;" + "<div  style='float:left;margin-left:5px;'>" + text + "<br />" + category + "</div>" + "</div>";
+             //autoList.childNodes[i].innerHTML = "<img height=30 width=30 src=" + image + " />&nbsp;" + text;
+             autoList.childNodes[i].innerHTML = "<span>" + "<div>" + "</div>" + "<img height=30 width=30 src=" + image + " style='margin-bottom:5px;' />" + "<div style='width:250px; text-align:left; vertical-align:top;float:right;margin-bottom:5px;color:#4088CD;'>" + text + "<br />" + "<span style='color:gray;font:normal 11px Arial, Helvetica, sans-serif;'>" + category + "</span>" + "</div>" + "</span>";
+         }
+     }
+    </script>
+
+    <script type="text/javascript">
+        // Find the autocompleteextender and set the text as value selected
+        function OnItemSelectedOpt1mm(event) {
+            var txtSportsCast = document.getElementById("ctl00_LoginView1_txtOption1mm");
+            var value = txtSportsCast.value;
+            var comment = txtSportsCast.value.lastIndexOf('@');
+            var cast = value.substring(0, comment);
+            var selInd = $find("AutoCompleteOpt1mm")._selectIndex;
+            if (selInd != -1) {
+                var comment = $find("AutoCompleteOpt1mm").get_completionList().childNodes[selInd]._value;
+                //alert(comment);
+                var ocom = cast + '@' + comment.split('$')[0];
+                //alert(ocom);
+                $find("AutoCompleteOpt1mm").get_element().value = ocom;
+            }
+        }
+
+
+        function OnClientPopulatedOpt1mm(sender, eventArgs) {
+            //Find the autocompleteextender list
+            var autoList = $find("AutoCompleteOpt1mm").get_completionList();
+            for (i = 0; i < autoList.childNodes.length; i++) {
+                // Consider value as image path
+                var imgeUrl = autoList.childNodes[i]._value;
+                //First node will have the text
+                var text = autoList.childNodes[i].firstChild.nodeValue.replace(/\s+/g, "");
+                var image = imgeUrl.split('$')[0];
+                var category = imgeUrl.split('$')[1].replace(/\s+/g, "");
+                var usertype = imgeUrl.split('$')[2];
+                if (usertype == "2") {
+
+                    autoList.childNodes[i]._value = category + "/" + text + '$' + usertype + '$' + category;
+                }
+                else {
+                    autoList.childNodes[i]._value = text + '$' + usertype + '$' + category;
+                }
+
+                autoList.childNodes[i].innerHTML = "<span>" + "<div>" + "</div>" + "<img height=30 width=30 src=" + image + " style='margin-bottom:5px;' />" + "<div style='width:250px; text-align:left; vertical-align:top;float:right;margin-bottom:5px;color:#4088CD;'>" + text + "<br />" + "<span style='color:gray;font:normal 11px Arial, Helvetica, sans-serif;'>" + category + "</span>" + "</div>" + "</span>";
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        // Find the autocompleteextender and set the text as value selected
+        function OnItemSelectedOpt2mm(event) {
+            var txtSportsCast = document.getElementById("ctl00_LoginView1_txtOption2mm");
+            var value = txtSportsCast.value;
+            var comment = txtSportsCast.value.lastIndexOf('@');
+            var cast = value.substring(0, comment);
+            var selInd = $find("AutoCompleteOpt2mm")._selectIndex;
+            if (selInd != -1) {
+                var comment = $find("AutoCompleteOpt2mm").get_completionList().childNodes[selInd]._value;
+                //alert(comment);
+                var ocom = cast + '@' + comment.split('$')[0];
+                //alert(ocom);
+                $find("AutoCompleteOpt2mm").get_element().value = ocom;
+            }
+        }
+
+
+        function OnClientPopulatedOpt2mm(sender, eventArgs) {
+            //Find the autocompleteextender list
+            var autoList = $find("AutoCompleteOpt2mm").get_completionList();
+            for (i = 0; i < autoList.childNodes.length; i++) {
+                // Consider value as image path
+                var imgeUrl = autoList.childNodes[i]._value;
+                //First node will have the text
+                var text = autoList.childNodes[i].firstChild.nodeValue.replace(/\s+/g, "");
+                var image = imgeUrl.split('$')[0];
+                var category = imgeUrl.split('$')[1].replace(/\s+/g, "");
+                var usertype = imgeUrl.split('$')[2];
+                if (usertype == "2") {
+
+                    autoList.childNodes[i]._value = category + "/" + text + '$' + usertype + '$' + category;
+                }
+                else {
+                    autoList.childNodes[i]._value = text + '$' + usertype + '$' + category;
+                }
+
+                autoList.childNodes[i].innerHTML = "<span>" + "<div>" + "</div>" + "<img height=30 width=30 src=" + image + " style='margin-bottom:5px;' />" + "<div style='width:250px; text-align:left; vertical-align:top;float:right;margin-bottom:5px;color:#4088CD;'>" + text + "<br />" + "<span style='color:gray;font:normal 11px Arial, Helvetica, sans-serif;'>" + category + "</span>" + "</div>" + "</span>";
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        // Find the autocompleteextender and set the text as value selected
+        function OnItemSelectedOpt3mm(event) {
+            var txtSportsCast = document.getElementById("ctl00_LoginView1_txtOption3mm");
+            var value = txtSportsCast.value;
+            var comment = txtSportsCast.value.lastIndexOf('@');
+            var cast = value.substring(0, comment);
+            var selInd = $find("AutoCompleteOpt3mm")._selectIndex;
+            if (selInd != -1) {
+                var comment = $find("AutoCompleteOpt3mm").get_completionList().childNodes[selInd]._value;
+                //alert(comment);
+                var ocom = cast + '@' + comment.split('$')[0];
+                //alert(ocom);
+                $find("AutoCompleteOpt3mm").get_element().value = ocom;
+            }
+        }
+
+
+        function OnClientPopulatedOpt3mm(sender, eventArgs) {
+            //Find the autocompleteextender list
+            var autoList = $find("AutoCompleteOpt3mm").get_completionList();
+            for (i = 0; i < autoList.childNodes.length; i++) {
+                // Consider value as image path
+                var imgeUrl = autoList.childNodes[i]._value;
+                //First node will have the text
+                var text = autoList.childNodes[i].firstChild.nodeValue.replace(/\s+/g, "");
+                var image = imgeUrl.split('$')[0];
+                var category = imgeUrl.split('$')[1].replace(/\s+/g, "");
+                var usertype = imgeUrl.split('$')[2];
+                if (usertype == "2") {
+
+                    autoList.childNodes[i]._value = category + "/" + text + '$' + usertype + '$' + category;
+                }
+                else {
+                    autoList.childNodes[i]._value = text + '$' + usertype + '$' + category;
+                }
+
+                autoList.childNodes[i].innerHTML = "<span>" + "<div>" + "</div>" + "<img height=30 width=30 src=" + image + " style='margin-bottom:5px;' />" + "<div style='width:250px; text-align:left; vertical-align:top;float:right;margin-bottom:5px;color:#4088CD;'>" + text + "<br />" + "<span style='color:gray;font:normal 11px Arial, Helvetica, sans-serif;'>" + category + "</span>" + "</div>" + "</span>";
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        // Find the autocompleteextender and set the text as value selected
+        function OnItemSelectedOpt4mm(event) {
+            var txtSportsCast = document.getElementById("ctl00_LoginView1_txtOption4mm");
+            var value = txtSportsCast.value;
+            var comment = txtSportsCast.value.lastIndexOf('@');
+            var cast = value.substring(0, comment);
+            var selInd = $find("AutoCompleteOpt4mm")._selectIndex;
+            if (selInd != -1) {
+                var comment = $find("AutoCompleteOpt4mm").get_completionList().childNodes[selInd]._value;
+                //alert(comment);
+                var ocom = cast + '@' + comment.split('$')[0];
+                //alert(ocom);
+                $find("AutoCompleteOpt4mm").get_element().value = ocom;
+            }
+        }
+
+
+        function OnClientPopulatedOpt4mm(sender, eventArgs) {
+            //Find the autocompleteextender list
+            var autoList = $find("AutoCompleteOpt4mm").get_completionList();
+            for (i = 0; i < autoList.childNodes.length; i++) {
+                // Consider value as image path
+                var imgeUrl = autoList.childNodes[i]._value;
+                //First node will have the text
+                var text = autoList.childNodes[i].firstChild.nodeValue.replace(/\s+/g, "");
+                var image = imgeUrl.split('$')[0];
+                var category = imgeUrl.split('$')[1].replace(/\s+/g, "");
+                var usertype = imgeUrl.split('$')[2];
+                if (usertype == "2") {
+
+                    autoList.childNodes[i]._value = category + "/" + text + '$' + usertype + '$' + category;
+                }
+                else {
+                    autoList.childNodes[i]._value = text + '$' + usertype + '$' + category;
+                }
+
+                autoList.childNodes[i].innerHTML = "<span>" + "<div>" + "</div>" + "<img height=30 width=30 src=" + image + " style='margin-bottom:5px;' />" + "<div style='width:250px; text-align:left; vertical-align:top;float:right;margin-bottom:5px;color:#4088CD;'>" + text + "<br />" + "<span style='color:gray;font:normal 11px Arial, Helvetica, sans-serif;'>" + category + "</span>" + "</div>" + "</span>";
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        // Find the autocompleteextender and set the text as value selected ctl00_LoginView1_txtQuestionmm
+        function OnItemSelectedOpt5mm(event) {
+            var txtSportsCast = document.getElementById("ctl00_LoginView1_txtOption5mm");
+            var value = txtSportsCast.value;
+            var comment = txtSportsCast.value.lastIndexOf('@');
+            var cast = value.substring(0, comment);
+            var selInd = $find("AutoCompleteOpt5mm")._selectIndex;
+            if (selInd != -1) {
+                var comment = $find("AutoCompleteOpt5mm").get_completionList().childNodes[selInd]._value;
+                //alert(comment);
+                var ocom = cast + '@' + comment.split('$')[0];
+                //alert(ocom);
+                $find("AutoCompleteOpt5mm").get_element().value = ocom;
+            }
+        }
+
+
+        function OnClientPopulatedOpt5mm(sender, eventArgs) {
+            //Find the autocompleteextender list
+            var autoList = $find("AutoCompleteOpt5mm").get_completionList();
+            for (i = 0; i < autoList.childNodes.length; i++) {
+                // Consider value as image path
+                var imgeUrl = autoList.childNodes[i]._value;
+                //First node will have the text
+                var text = autoList.childNodes[i].firstChild.nodeValue.replace(/\s+/g, "");
+                var image = imgeUrl.split('$')[0];
+                var category = imgeUrl.split('$')[1].replace(/\s+/g, "");
+                var usertype = imgeUrl.split('$')[2];
+                if (usertype == "2") {
+
+                    autoList.childNodes[i]._value = category + "/" + text + '$' + usertype + '$' + category;
+                }
+                else {
+                    autoList.childNodes[i]._value = text + '$' + usertype + '$' + category;
+                }
+
+                autoList.childNodes[i].innerHTML = "<span>" + "<div>" + "</div>" + "<img height=30 width=30 src=" + image + " style='margin-bottom:5px;' />" + "<div style='width:250px; text-align:left; vertical-align:top;float:right;margin-bottom:5px;color:#4088CD;'>" + text + "<br />" + "<span style='color:gray;font:normal 11px Arial, Helvetica, sans-serif;'>" + category + "</span>" + "</div>" + "</span>";
+            }
+        }
+    </script>
+    
+        
+    <script type ="text/javascript">
+        var a = Math.floor(Math.random() * 9999999999 + 1)
+        var random_number = a;
+  </script>
+  
+  <!-- Begin comScore Tag -->
+<script>
+    var _comscore = _comscore || [];
+    _comscore.push({ c1: "2", c2: "6035210" });
+    (function() {
+        var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+        el.parentNode.insertBefore(s, el);
+    })();
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=6035210&cv=2.0&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+ <meta property="og:image" content="userdata/sportnews/RG3_320320121831234.jpg" /><meta property="og:description" content="There are a lot of clich&amp;eacute;s thrown around when the topic of pressure in sports is brought up.  Robert Griffin III doesn't buy into any of them.  &lt;br />" /><link href="/WebResource.axd?d=qdY0UXJR34mmu_9uPRkU-r1I6zEyNHP33204xcRJPBSIVriQoAoV-ZW8cb4H50l9XJl-kYw902c-SqjcjnfdeXIjKD4cjlWrNuhrZ_gh1ekHkZonf3f0KSxdv0VB0AqZP-_UyWI0rGV7rCH_uaGOfdYqcJk1&amp;t=634393930482187500" type="text/css" rel="stylesheet" /></head>
+<body id="ctl00_PageBody" style="background:url(userdata/Background.jpg) center top repeat fixed;">
+    <form name="aspnetForm" method="post" action="NewsDesc.aspx?nd=FTHSCpRq6AI%24" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+
+<script src="/ScriptResource.axd?d=CpCN2EDReRhK9pqah5iL6OkdW-6s1rx1jdNgAtuQzM04Y-4hpVHlq2kGExGmg3gTodJWeH4aHoNOLJM1CcWYA76O-BddnCrmNfOOnfMO7vSxytito_jV4eguUTOaOcknH-hNHNL2Z7TLSDdLtuCd83G4xmA1&amp;t=ffffffff8dc250fc" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=EUXRryF8n3Yvkw24xK9OFxZoZ2hhVmhwLgToLw52kkeg0F9Va8komkehHuHf7kv8sWxJSEudPnCnqJ4omd917lwbtDZ2Db_Z91Uw961LCOmcDEDo0EJUJORHJU5l_2MNCykhGZdcS3AgZ1wAR1zKIYCEVTs1&amp;t=54a75ef5" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=xZF5rtrfaQEnyqqQQlmm7Phf6Dnpb25LDxE_A4_omaQf1swipgZ3eOQsIvxltfFud70jmnAE4sMRuZSEnr8fr3LOhzoHB99Jk3hNFvlBhH121VCEux0kTup1APCoHnYOp7fc8E7qeR2Vp_tP09Cz4qlVh6A1&amp;t=54a75ef5" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=n2bzYH9kOwO4fv3r_Sstw4_zILwgivQp9n4QGJPTfDJ2dI5L5XH_OdO6bIbZT54pmZ2wg1kYKm_6FlMaa-VKx6LNZb01GGkQMhRZ5xMsxw1r7WWMmwb6aAKI0pp65Wnt5ieIdv8J5EdXQPoEmPBOgvD9gwgc5Il5IyvTCeA-EGyAySSN0&amp;t=54a75ef5" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=pf4k_cozeCfQPal2PNxvW8lq8rAKLGM2Ajpw6hsjGPvfBSyIHnR8oS--s5HQgwqL-3GXU_xIX1rx1S0u4pOiUJjfD3cbFupRTT02LuNMazhTmrmSE0XgBfPoyLR2cRuQmyzPJ_cGuvh45HCI4gcxr5iHmjc1&amp;t=54a75ef5" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=bRWmDyFU5ocdQkuSqelSG0mQxmou4ueJ08UAh8XCEGH3XzMJ2kPZo52eU9oPWhBI0aR7w6yDT7GICo_CVD0uorJgCuPuOncjyLZOFnyLXFex0QuB6SeJlWs4UoDVRON_k4ISEnvfhjklpjPNf5jeng8FGco1&amp;t=54a75ef5" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=dtGiYg0rPj53_unzOcw7OHdddhi8bSbc_ds9rKELq8ovv5sPxBAcD5PvUkxkjo_s5WvYjqMsVBzfkl1L2hYQ3LG0zXXH-suCXkoc-6uwINAsd0AoQjFW14T8IDR4hTDmj5Rlc9RdPTp743H4LLnZ3CFoahs1&amp;t=54a75ef5" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=YnSl0mKyvE1GYUf6qMxe387YED_ue_e1LyXqPQ5RYB_PKRtdINdks4tbwYgHSdODcnxIUe3X7T0LWvqLq6G65-53eN-ToufZUoOUkcdaZ_Ne8MlBoe3CQ6uIy-yhuqqVCy0lihvCKWiGNfTZdPWTuLiiaCg1&amp;t=54a75ef5" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=mwIm6BxMlAlE32_nyPKeXSNm0yfuZzXwlBfiLmLJc-tmHhZYFgYB5QclDILHpSWCX0FqMaFxvptpp4Zr2arSyacu_3jLErgTuRzqlXoUgjFjhD4FyXlaiJ1DkdHx57iWA_n8NujQPI8PpCfU0yQHAXD8sjnEOeU_r8p8qubvEW9k2zzn0&amp;t=54a75ef5" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=4hXSse7hdtkpoCIPs8FZhLwTJhA6a_9bpU4L5xErspu4iZJoRt0q6cGTKK2Dr1EOh3WAJN4U47BuEn5a2w2RfPFachkVLGniZduy1Dy51v8XDfOM_cJgoUBII3gu1yAnn5IJ2G7AGqunMsDS9OQlKhVpJ5yXirX5vK6PfJqpRI8XGsfS0&amp;t=54a75ef5" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=qtGfZPrpxd27-3mzm40LDwp4nKqIObzNyOYVQVnrcHEHOLRkG2h0mmQjmRiP7nhc4Ls3PorkKFt52HNhFoFh54S2OXEuzdH5-y6YmMi4Wn2LWwCUPxW5RrhQez8Ngk-a6WDvaZaSoua7s03gD1eqGhZtU8k1&amp;t=54a75ef5" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=dvVoXVmPNGta3zb8AL3nJ8Bw_mGjdruYbx1zBILGjzX7I0PTd1rZYK8isS5L7gXx79NsNY0FRe7KF-Zg08RLtIYGxIMZTNZkioMudHC0bvatMeRL1LmRveLVAjD1TV-7JpmuWEcvMq6anCEckvR_Ep8Yoyk1&amp;t=54a75ef5" type="text/javascript"></script>
+<script src="StatusFeed.asmx/js" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="2BXYg4eEFanZCOBdSO0eaI7XdkGkhGCwSpUUftdtn8VJEW4stX7Y8YJ-x5WUm3y-GneeRykU1ZIfi_gh_0jQO-4C54Y1" />
+    
+    
+    <input type="hidden" name="ctl00$hdnuserid" id="ctl00_hdnuserid" />
+<div id="warper">
+<div id="inner-wraper">
+<div class="header">
+<div class="logo_box">
+<a href="Index.aspx" id="ctl00_lvMember_logo" class="mhoflogo_beta"></a>
+<a href="http://twitter.com/myhofs" class="twitter_icon" target="_blank"></a>
+<a href="http://www.facebook.com/pages/MyHOFS/172875312730585" class="facebook_icon"  target="_blank"></a>
+
+<div class="mhofsite_text"></div>
+
+ </div>
+ 
+ <div class="sigin_box" style ="z-index :100001;">
+<div class="sigin_text">Already have an account?</div>
+ <img src="http://www.myhofs.com/images/signinhover.gif" style="display:none" /><span id="ctl00_lvMember_btnSignin" class="sigin_button" onclick="hidePopup();">Sign In</span>
+ 
+    <div id="ctl00_lvMember_pnlLg" class="loginClass3" style="display:none; z-index :100001;">
+	
+    <div id="supernote-note-demo3" class="loginClass1"  style="width:239px; height:180px; z-index:10000001; position :relative ;">
+ 
+  <span class="login_headingtext">&nbsp;</span>
+  
+   <table id="ctl00_lvMember_lgEmployer" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td>
+					
+					<div>
+					  <table width="222" border="0" cellspacing="0" cellpadding="0" align="left" style="margin:0 0 0 5px;">
+                        <tr style="height:35px;">
+                          <td  align="left" valign="top" width="85" class="login_text1">Username:</td>
+                          <td   align="left" valign="top"><input name="ctl00$lvMember$lgEmployer$UserName" type="text" id="ctl00_lvMember_lgEmployer_UserName" class="login_textfield" /></td>
+                        </tr>
+                        <tr style="height:35px;">
+                          <td align="left" valign="top" class="login_text1">Password:</td>
+                          <td  align="left" valign="top" ><input name="ctl00$lvMember$lgEmployer$Password" type="password" id="ctl00_lvMember_lgEmployer_Password" class="login_textfield" />&nbsp;</td>
+                        </tr>
+                        <tr style="height:35px;">
+                        <td align="left" valign="middle" >
+						  </td>
+						    <td  align="right" valign="middle" style="padding-top:4px" > 
+						  <input type="submit" name="ctl00$lvMember$lgEmployer$Login" value="Login" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$lvMember$lgEmployer$Login&quot;, &quot;&quot;, true, &quot;Login2mm&quot;, &quot;http://myhofs.com/NewsDesc.aspx?nd=FTHSCpRq6AI$&quot;, false, false))" id="ctl00_lvMember_lgEmployer_Login" class="login_button1" /> 
+						  <a id="ctl00_lvMember_lgEmployer_lnkForgotPassword" class="forgot_password" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$lvMember$lgEmployer$lnkForgotPassword&quot;, &quot;&quot;, false, &quot;&quot;, &quot;ForgotPassword.aspx&quot;, false, true))">Forgot Password</a></td> 
+                       
+                        </tr>
+                       <tr  style="height:35px;">
+                      <td align="left" valign="top" class="login_text1" style="font-size:11px;">Sign in with:</td>
+                       <td >
+                       <input type="image" name="ctl00$lvMember$lgEmployer$btnTwitter" id="ctl00_lvMember_lgEmployer_btnTwitter" src="images/tw.jpg" border="0" />
+                       <input type="image" name="ctl00$lvMember$lgEmployer$btnLogin" id="ctl00_lvMember_lgEmployer_btnLogin" src="images/facebook.jpg" border="0" /> 
+                        </td>
+                       </tr>
+                      </table>
+					</div>
+					</div> 	</td>
+		</tr>
+	</table>
+				 
+		</div>
+     
+</div>
+</div>
+ 
+
+
+
+
+
+
+
+</div>
+<div id="middle_page">
+
+<div style="width:1000px; margin:0 auto 0 auto;">
+<div class="middle_topheader" >
+<div class="middle_topheader_top"></div>
+<div class="middle_topheader_mid">
+<div class="halloffrme">
+<div style="float:left; width:950px; margin-left:3px;">
+<div class="halloffrme_text_img"></div>
+
+<div id="ctl00_pnlSearch">
+	
+<div class="search_box">
+ <div style="float:left; margin-right:2px;">
+   &nbsp;
+ </div>
+<input name="ctl00$txtSearch" type="text" id="ctl00_txtSearch" class="search_field" />
+<input type="submit" name="ctl00$search_button" value="" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$search_button&quot;, &quot;&quot;, true, &quot;ButtonSearch&quot;, &quot;&quot;, false, false))" id="ctl00_search_button" class="search_button" />
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<div id="nev2">
+<div id="nevigation3">
+<ul>
+<li><a href="../../MainHOF.aspx">All</a></li>
+<li><a href="../../myhof/Baseball">Baseball</a></li>
+<li><a href="../../myhof/Basketball">Basketball</a></li>
+<li><a href="../../myhof/Boxing">Boxing</a></li>
+<li><a href="../../myhof/CollegeBasketball">College Basketball</a></li>
+<li><a href="../../myhof/CollegeFootball">College Football</a></li>
+<li><a href="../../myhof/Football">Football</a></li>
+<li><a href="../../myhof/Golf">Golf</a></li>
+<li><a href="../../myhof/Hockey">Hockey</a></li>
+<li><a href="../../myhof/MMA">MMA</a></li>
+<li><a href="../../myhof/Motorsports">Motorsports</a></li>
+<li><a href="../../myhof/Soccer">Soccer</a></li>
+<li><a href="../../myhof/Tennis"  style="margin:0px">Tennis</a></li>
+</ul></div>
+</div>
+</div>
+
+
+<div id="ctl00_divBannnerTop" style="height:auto;margin-left:10px;float:left;width:975px;background-color:#231F20;">
+ 
+   <div style = " width: 975px; height:90px; text-align: center;"><SCRIPT>
+document.write('<scr' + 'ipt src=http://ad.doubleclick.net/adj/myhofs.fsv/home;sect=home;wmode=transparent;fantasy=no;game=no;tile=1;dcopt=ist;sz=728x90;ord=' + random_number + '?></scr' + 'ipt>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/myhofs.fsv/home;sect=home;fantasy=no;game=no;tile=1;sz=728x90;ord='+random_number+'?" >
+<IMG SRC="http://ad.doubleclick.net/ad/myhofs.fsv/home;sect=home;fantasy=no;game=no;tile=1;sz=728x90;ord='+random_number+'?" border="0" height="90" width="728"></A>
+</NOSCRIPT></div></div>
+
+
+
+<div class="halloffrme" style="width:955px;">
+<div class="halloffrme_text2">IN DEMAND TOPICS</div>
+
+
+    <div id="nev5" style="width:755px;">
+	<div class="nev_top_left_bg"></div><div class="nev_top_right_bg"></div>
+<div id="nevigation5" style="width:755px;">
+ <div  id="mycrawler">
+               <a href='../../../topic/NFL' class='marquelink'>#NFL</a><a href='../../../topic/Eagles' class='marquelink'>#Eagles</a><a href='../../../topic/phillies' class='marquelink'>#phillies</a><a href='../../../topic/justvoted' class='marquelink'>#justvoted</a><a href='../../../topic/flyers' class='marquelink'>#flyers</a><a href='../../../topic/vote' class='marquelink'>#vote</a><a href='../../../topic/voted' class='marquelink'>#voted</a><a href='../../../dforte' class='marquelink'>dforte</a><a href='../../../Foldats' class='marquelink'>Foldats</a><a href='../../../215phila' class='marquelink'>215phila</a><a href='../../../player/Baseball/RoyHalladay' class='marquelink'>Roy Halladay</a><a href='../../../topic/NBA' class='marquelink'>#NBA</a><a href='../../../topic/Philly' class='marquelink'>#Philly</a><a href='../../../tony' class='marquelink'>tony</a><a href='../../../player/Football/MichaelVick' class='marquelink'>Michael Vick</a><a href='../../../topic/realmadrid' class='marquelink'>#realmadrid</a><a href='../../../topic/giants' class='marquelink'>#giants</a><a href='../../../topic/sixers' class='marquelink'>#sixers</a><a href='../../../topic/Temple' class='marquelink'>#Temple</a><a href='../../../player/Baseball/ColeHamels' class='marquelink'>Cole Hamels</a>
+               
+ </div>
+                <script type="text/javascript">
+                    marqueeInit({
+                        uniqueid: 'mycrawler',
+                        style: {
+                            'float': 'left',
+                            'width': '743px',
+                            'height': '20px',
+                            'margin': '0px 0px 0px 10px'
+                        },
+                        inc: 2,
+                        mouse: 'pause'
+                    });
+</script></div></div>
+
+
+
+</div>
+</div>
+</div>
+<div class="middle_topheader_bot"></div>
+
+<div id="middle_topcor" ></div>
+
+
+        
+<input type="hidden" name="ctl00$ContentPlaceHolder1$hdnuserid" id="ctl00_ContentPlaceHolder1_hdnuserid" />
+<input type="hidden" name="ctl00$ContentPlaceHolder1$hdnStatusId" id="ctl00_ContentPlaceHolder1_hdnStatusId" value="353" />
+<input type="hidden" name="ctl00$ContentPlaceHolder1$hdnFeedType" id="ctl00_ContentPlaceHolder1_hdnFeedType" value="4" />
+<div id="middle_con2" >
+<div id="middle_con4">
+<div id="middle_left_con2" style="width:650px; margin-top:5px;">
+<div class="recent_player_mention_box" style="width:650px;" >
+<div class="sphalloffame_box">
+<a href="NewsList.aspx" >
+<div class="newsheadingimg"></div></a>
+<div class="newsallsport_link">
+
+
+
+             
+             
+</div>
+ <div class="text"> 
+ 
+
+        
+     
+
+
+<a id="ctl00_ContentPlaceHolder1_A1" href="UserData/SportNews/newsrss.xml" onMouseOver="this.style.textDecoration='underline';" onMouseOut="this.style.textDecoration='none';" target="_blank" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$A1','')">Subscribe to our News</a>
+
+<a href="UserData/SportNews/newsrss.xml" id="ctl00_ContentPlaceHolder1_arssimg" target="_blank">
+
+    <img id="ctl00_ContentPlaceHolder1_rssimg" src="images/1320120132___RSS.png" height="15" width="15" border="0" />
+    </a>
+</div>
+</div>
+
+<table class="formcss" cellspacing="0" border="0" id="ctl00_ContentPlaceHolder1_fv_pdetails" width="100%">
+	<tr>
+		<td colspan="2">
+<div class="news_heading">
+ <input type="image" name="ctl00$ContentPlaceHolder1$fv_pdetails$ImageButton1" id="ctl00_ContentPlaceHolder1_fv_pdetails_ImageButton1" title="mjcalabrese283" class="proofimg" src="CreateThumbNail.aspx?image=/UserData/432/Picture25820111021437.png&amp;Width=38&amp;Height=38" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$fv_pdetails$ImageButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/mjcalabrese283&quot;, false, false))" border="0" /> 
+
+
+<div class="text">
+Consensus in DC: It's RG3
+<br />
+<span>Posted by <a href='/mjcalabrese283' >mjcalabrese283</a> on March 20, 2012
+</span></div>
+<div class="mainbox" style="margin-left:160px;">
+<div class="box">
+                                                                <div>
+                                                                </div><span>
+                                                                <div id="ctl00_ContentPlaceHolder1_fv_pdetails_divVoteDesc">
+                                                                    <table cellspacing="0" border="0" id="ctl00_ContentPlaceHolder1_fv_pdetails_fvDesc">
+			<tr>
+				<td colspan="2">
+                                                                            <div class="left_bg">
+                                                                            </div>
+                                                                            <div class="mid_bg">
+                                                                                <img src="images/usr_H_bg_star.jpg"  style="width:11px; height:12px" /><div class="text1"><a href="../../Red">Red</a> and 11 others voted this</div>
+                                                                            </div>
+                                                                            <div class="right_bg">
+                                                                             </div>
+                                                                        </td>
+			</tr>
+		</table>
+                                                                </div>&nbsp;</span>
+                                                            </div> 
+<img id="ctl00_ContentPlaceHolder1_fv_pdetails_imgStar" src="images/voteplusnews.jpg" border="0" style="margin-top:3px;" /><a onclick="VoteStatus(this.id,this.name); return false;" id="ctl00_ContentPlaceHolder1_fv_pdetails_LinkButton2" class="uservote" name="Vote$353" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$fv_pdetails$LinkButton2','')" style="font: normal 13px/13px Arial,Helvetica,sans-serif;">Vote</a></div>
+                 
+                
+                 
+        <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+
+ 
+       <a href="http://twitter.com/share" class="twitter-share-button" style="width:100px;"
+
+          data-url="http://www.myhofs.com/NewsDesc.aspx?nd=FTHSCpRq6AI%24"
+
+          data-via="myhofs"
+
+          data-text="Consensus in DC: It's RG3"
+
+
+          data-count="horizontal">Tweet</a>
+          
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+                                <iframe src="http://www.facebook.com/plugins/like.php?href=NewsDesc.aspx?nd=FTHSCpRq6AI%24&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;width=85px&amp;height=25px" scrolling="no" frameborder="0" allowTransparency="false" style="border:none; overflow:hidden;width:85px;height:25px;float:right;"></iframe>
+
+</div>
+<div class="newscontain">
+<img id="ctl00_ContentPlaceHolder1_fv_pdetails_newsImg" src="userdata/SportNews/RG3_320320121831234.jpg" border="0" />
+
+<div class="con" style="margin-top:6px; float:left;">
+There are a lot of clich&eacute;s thrown around when the topic of pressure in sports is brought up.  Robert Griffin III doesn't buy into any of them.  <br /><br />
+<br />
+&quot;They say pressure busts pipes.  I don't feel like I've ever been that kind of guy, my whole life in general, especially in sports.  When the pressure's on I seem to play extremely well,&quot; Griffin said.    <br />
+<br />
+&quot;And it's not just cause I'm the greatest thing since sliced bread,&quot; Griffin points out while holding back wry laughter.  <br />
+<br />
+Griffin continued, &quot;it comes down to the guys around you.  You gotta have guys around you that believe in you and believe in themselves.  And it's your job as a quarterback to help them facilitate that belief, so I think it goes full circle.  I've been able to help my teammates play well in pressure situations.&quot;<br />
+<br />
+During Griffin's record-setting redshirt junior season at Baylor he excelled in numerous pressure-packed situations, drawing praise from fans and professionals alike.  One of those professionals was quarterback consultant/guru <a target="_blank" href="http://www.coachshea.com/Terry_Sheas_QB_Score/Home.html">Terry Shea</a>.  A coaching disciple of the legendary Bill Walsh, Shea has been working with quarterbacks on the collegiate and professional levels since 1968.  His career highlights include leading San Jose State to a bowl victory in 1990, being named Big East Coach of the Year while at Rutgers in 1998 and prepping five first round quarterbacks for the NFL draft since 2007.  <br />
+<br />
+Shea is currently training Griffin in Phoenix, a new relationship that was facilitated by Griffin's agency, Creative Artists Agency (CAA).  CAA represents NFL players such as Drew Brees, Mario Williams and Adrian Peterson.    Shea, like other football insiders, has no problem heaping praise on the young signal-caller.<br />
+<br />
+&quot;He's very impressive, very bright and he picks up concepts very easily.  He's able to translate the concepts back to you with ease.  Verbally he has a great tempo, specifically his speech pattern.  All of these things add up, because when you ask a guy to quickly step into a huddle and make a call or communicate, he's got a real upside to that part of his game,&quot; said Shea.<br />
+<br />
+While many fans lack an appreciation for Griffin's football IQ, his on-field aptitude is evident.  &quot;The other thing that I see that you probably don't see closely enough on TV or from a fan's perspective, is his accuracy, in terms of ball placement at the 18-22 yard pass route.  Not many QBs can accurately place a ball at that depth, 18-22 yards.  There are a lot of accurate quarterbacks with the short game.  But he really has a special talent, and he keeps the receivers on the run and that's the epitome of accuracy,&quot; noted Shea.  <br />
+<br />
+Shea continues to work with Griffin as they approach his pro day on March 21st.  Griffin chose not to throw at the NFL combine in Indianapolis in late February, instead choosing to focus on the forty-yard dash and other drills.  If his pro day in Waco is anything like his combine performance, fans and executives alike should be prepared for fireworks.  <br />
+<br />
+Griffin ran the second fastest forty-yard dash time by a quarterback in the history of the combine, clocking an <a target="_blank" href="http://www.youtube.com/watch?v=-wWr0H5NHO4">incendiary 4.41</a>.  That kind of acceleration is usually reserved for I-95 on-ramps .  The only &quot;quarterback&quot; to ever post a faster time was Reggie McNeal in 2006 with a 4.40 forty-yard dash.  McNeal would later be drafted as a wide receiver by the Bengals.  McNeal has never taken a snap as a quarterback during his professional career in both the NFL and CFL.   The only time Griffin's speed is reined in is on the virtual gridiron.  Griffin will be the cover boy for <a target="_blank" href="http://content.usatoday.com/communities/gamehunters/post/2012/02/interview-rg3-on-snagging-ncaa-football-13-cover/1#.T2kyMhxLVIA">EA Sports NCAA 2013 for PS3 and XBox</a>.  Prior to winning the Heisman Trophy, Griffin remembers that Baylor's &quot;#10&quot; in the game was a bit slower than the real life counterpart. &quot;I think my speed the first year was 89.  And then the second year it was maybe 90 or 91.  Then after I tore my ACL, they shot my speed all the way down to 84,&quot; said Griffin.   <br />
+<br />
+Griffin's eye popping speed has been with him his entire life.  After graduating high school a semester early, he enrolled at Baylor as a 17 year old.  During his first semester on campus, he broke the NCAA Midwest Regional 400-meter hurdles record and advanced to the semifinals of the U.S. Olympic Trials.  <br />
+<br />
+&quot;Without track I wouldn't be the football player I am today.  The fact that I knew I could line up in the 400, the 200, the 100, the hurdles, and I knew I could beat anybody who lined up against me.  That gave me the kind of confidence to go out and be the quarterback that I am.  With that belief that no matter what obstacle is put in front of myself and my teammates that we can go out and conquer it.  That's the beauty of being the quarterback, you have the ball in your hands every play,&quot; said Griffin.    <br />
+<br />
+Athletically, Griffin enters this year's draft as the most gifted quarterback on draft boards since Michael Vick in 2001.  Coach Shea believes the combination of Griffin's skills and the way teams are utilizing young quarterbacks may lead to early playing time.  <br />
+<br />
+&quot;Historically (quarterbacks) were really groomed for up to three years and then given their opportunity.  And that was pretty much the routine, but I think that tradition, that routine, has been broken considerably by the onslaught of young college quarterbacks that have had great success their first or second year in the NFL.  And I speak from experience in this regard because I look at the Matthew Staffords that I've coached and Josh Freeman and Sam Bradford and even Blaine Gabbert started his rookie season.  And with Cam Newton's success it starts to multiply itself.  There were a number of rookies this past year that started and I think that the teams are starting to see that these quarterbacks coming out of college are athletic enough, number one, and number two, they're bright enough to absorb the playbook, that they are ready to play.  Maybe not at a high level like Aaron Rodgers, but Aaron was the traditional wait for a couple years to get your shot kind of player.  All the young quarterbacks in the league seem to be having relatively good success and I think that's opening up the eyes of teams,&quot; Shea said.  <br />
+<br />
+One of those teams is the Washington Redskins.  Griffin appropriately pointed out that he may end up with another team come draft day, noting that wherever he ends up he'll be excited to play.  For those who follow the league closely, Washington's blockbuster trade with the St. Louis Rams, exchanging three first round draft picks for the second overall pick, all but assures that RG3 will be suiting up for the Redskins this fall.  Griffin will join the likes of Ricky Williams, Jeff George and Eli Manning -- all players who were secured through major draft trades.  But even the king's bounty that Mike Ditka and the Saints surrendered for Williams back in 1999 pales in comparison to what Dan Synder and the Redskins have agreed to.  <br />
+<br />
+While there have been some great success stories in the last few seasons regarding young quarterbacks, the franchise-altering potential of a bust weighs heavily on front offices and fan bases alike.  Despite that potential cloud hanging over April's draft, coaches, executives, analysts and fans all seem to love Griffin's game.  When asked if there was a specific play that led Shea to believe that Griffin could be successful at the pro level, he turned to what many analysts believe was the play that won Robert Griffin III his Heisman trophy.  <br />
+<br />
+&quot;The one play that had me jump right out my quarterback chair was when he threw a deep ball into the opposite corner of the end zone away from the defenders so only his player could get it,&quot; said Shea, referencing <a target="_blank" href="http://www.youtube.com/watch?v=4U8yGmOEHOo">Baylor's final offensive play against fifth-ranked Oklahoma in late November 2011</a>.  Shea continued, &quot;he wasn't throwing it to the receiver, he was throwing it to a spot, anticipating the ability of his receiver to get to the ball.  I thought that was very, very advanced.  And I said to myself, this young guy plays the position with a lot of maturity.&quot;  <br />
+<br />
+Griffin's recollection of that play also speaks to his maturity.  &quot;The throw against Oklahoma to win the game, you know that one brought me to tears, it was such an amazing feeling because I knew how much that game meant not only to my head coach and the players on the team but to everybody in the community,&quot; said Griffin.  Griffin saw the big picture.  It was Baylor's first victory over Oklahoma in twenty attempts and the school's first top five victory since 1985.    <br />
+<br />
+Maturity on a football field often comes down to putting your mistakes behind you and carrying out the coach's game plan, two things Griffin dealt with in the 2011 opener against fourteenth-ranked TCU.  <br />
+<br />
+Griffin's first comment about the TCU game, a performance in which he threw for 359 yards and five touchdowns, was, &quot;I was the reason we were behind in the first place.  I fumbled. I was running the ball and I fumbled with three minutes left in the game and TCU goes down and scores a touchdown to go up by one.&quot;  A perfectionist at heart, Griffin would have to put that play behind him and lead Baylor on a game-winning drive.  <br />
+<br />
+&quot;We go back on the field and it's the last drive of the game, a minute left in the game and we have to go score.  And we get two incompletions in a row and now it's third and ten and coach calls a double pass to the quarterback,&quot; said Griffin.  <br />
+<br />
+This was a familiar situation for a program that hadn't finished in the top 25 since 1986...close but no cigar.  Fortunately for &quot;Baylor Nation,&quot; as Griffin puts it, they had a mature leader on the field.  <br />
+<br />
+&quot;A lot of times when coaches call trick plays they second guess it, and by them second guessing it, that makes you second guess it.  But as soon as I threw the incompletion on second down, coach was already signaling for the double pass, and I think the conviction he sent the play in with gave me the confidence to go out and run it.  As a player, when you make a mistake you want the opportunity to make up for that mistake and I had my opportunity.  I knew it was going to be covered. I knew they were going to know he was going to throw the ball right back to me but I also knew that no matter what happens I had to catch the pass,&quot; recalled Griffin.<br />
+<br />
+Griffin continued, &quot;I threw it to Kendall (Wright), went right up the middle, I had three guys draped on me.  Kendall still threw it in there and I got annihilated.  I mean I got hit pretty hard crossing the field and I held onto the ball.  And that's all that matters at the end of the day.  The pressure was on.  I had just made a mistake and I had to step up big in a situation I'm not used to.  I'm not used to catching passes over the middle and getting hit by three guys.  Kendall had the confidence to throw it, I knew I had to catch it and I responded well in that situation,&quot; said Griffin.  Seven plays later, <a target="_blank" href="http://www.youtube.com/watch?v=LdDOmHuA6u4">Aaron Jones split the uprights with a 37-yard field goal to give Baylor a 50-48 victory.</a><br />
+<br />
+***************<br />
+<br />
+Griffin's success comes from a blend of dedication and joy.  How else could you explain a workout-warrior like Griffin who also likes to don <a target="_blank" href="http://i.cdn.turner.com/sivault/multimedia/photo_gallery/1112/pop-culture-2011/images/rg3.jpg">Superman socks</a>?  It's all about balance for Griffin.  <br />
+<br />
+&quot;The <a target="_blank" href="http://starcasm.net/wp-content/uploads/2011/12/Robert_Griffin_III_poster.jpg">socks</a> thing is just something that started in high school.  I was just comfortable with who I was, comfortable in my own skin, so I went out and bought socks and just wore those.  People would laugh and laugh but whenever I got on the basketball court or the field or running track they always respected me because I wasn't just about the socks.  That discipline, that hard work and dedication, made me a better athlete because I was gonna go out and perfect my craft.  So yeah, <a target="_blank" href="http://baylorlariat.com/files/2012/01/griffin_mh-01.11.12_266-ftw.jpg">I might wear the funny socks and smile a lot</a> and have a good time, but when it comes to the game, getting to business, and making sure you do what you're supposed to do to be successful, you better believe I'm the first person in the door and I'm the last one out.  And it's not just a clich&eacute;, I literally do that.  I make sure I'm the first guy there and I make sure I'm the last guy out,&quot; explained Griffin.    <br />
+<br />
+RG3's dedication to excellence is illustrated by his response to a serious setback.  During the third game of his sophomore season, Griffin tore his ACL playing against Northwestern State.  Griffin recounted that time in his life.<br />
+<br />
+&quot;Your past can lead you to who you are in your future, that injury shaped me not only as a person but as a player.  I didn't love football before my knee injury, but after my knee injury I had to love football because you don't come back from an ACL tear if you don't love the game.   I wanted to come back and be a better player not just the same player.  So it really shaped me, I watched my teammates struggle and I could see the pain in their eyes just like they could see the pain in my eyes when I tore my ACL.  So I wanted to come back for them, to help my family and my future family and help Baylor Nation get the notoriety it deserves.&quot;   <br />
+<br />
+From those days rehabbing his knee, to his run on the awards circuit this past season, Griffin just keeps pushing forward, looking to get better.  And as he gets better he has one final message for his future fan base. <br />
+<br />
+After meeting with Heisman greats like Marcus Allen and Barry Sanders, Griffin declared, &quot;I don't wanna just be that Heisman guy that didn't work out in the pros.  I want to be that great player just like they were.  And they'll all tell you that if any kid comes up to them and says I wanna be just like you, they'd all tell them, &quot;be better.&quot;  I take that advice, I want to be better than all those guys.&quot;<br />
+<br />
+Between Griffin's accuracy, athleticism and leadership, the only question regarding pressure may turn out to be how long it takes to transform collegiate carbon into an NFL diamond.  <br />
+<br />
+<br />
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">&nbsp;</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f693aab532486a0"></script> <!-- AddThis Button END -->
+<FONT color="ffffff">"</font><!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+<a class="addthis_counter addthis_pill_style"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f4d667f41a5b0fb"></script>
+<!-- AddThis Button END --><FONT color="ffffff">"</font>
+
+</div></div>
+<div class="comread">
+<a onclick="show(this.id);return(false);" id="ctl00_ContentPlaceHolder1_fv_pdetails_lnk_comment_1" class="link" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$fv_pdetails$lnk_comment_1','')" style="display:inline-block;">+Comment</a>
+
+
+
+</div>
+
+ <input type="hidden" name="ctl00$ContentPlaceHolder1$fv_pdetails$hdnFeedType" id="ctl00_ContentPlaceHolder1_fv_pdetails_hdnFeedType" value="4" />
+                    <input type="hidden" name="ctl00$ContentPlaceHolder1$fv_pdetails$hdnStatusId" id="ctl00_ContentPlaceHolder1_fv_pdetails_hdnStatusId" value="353" />
+<div class="userupdates">
+<div class="vote_box2">
+                                                            
+                                                            <div class="comment">
+                                                                </div>
+                                                             
+                                                            
+                                                            <div id="ctl00_ContentPlaceHolder1_fv_pdetails_pnlComments" class="onlyleft" style="display:none">
+			
+                                                                <div class="top_cor">
+                                                                </div>
+                                                                <div class="mid_bg">
+                                                                    <div class="all_user_update">
+                                                                         
+                                                                        <a id="ctl00_ContentPlaceHolder1_fv_pdetails_ViewAll" onclick="showDiv(this.id); return false;">
+                                                                            </a><a id="ctl00_ContentPlaceHolder1_fv_pdetails_ViewRecent" onclick="hideDiv(this.id); return false;" style="display: none">view recent comments</a> 
+                                                                    </div>
+                                                                     <div id="ctl00_ContentPlaceHolder1_fv_pdetails_divGvAll" style="display: none" class="onlyleft">
+                                                                        <div>
+
+			</div>
+                                                                    </div>
+                                                                     <div id="ctl00_ContentPlaceHolder1_fv_pdetails_divGv" style="word-wrap: break-word;">
+                                                                        <div>
+
+			</div>
+                                                                    </div>
+                                                                    <div id="ctl00_ContentPlaceHolder1_fv_pdetails_pnl_test">
+				
+                                                                        <div id="ctl00_ContentPlaceHolder1_fv_pdetails_upComment">
+					
+                                                                                <div class="user_sec2textfield" style="word-wrap: break-word;">
+                                                                                    <input name="ctl00$ContentPlaceHolder1$fv_pdetails$txtcomments" type="text" maxlength="500" id="ctl00_ContentPlaceHolder1_fv_pdetails_txtcomments" class="user_sec2textfield1" />&nbsp;&nbsp;<input type="hidden" name="ctl00$ContentPlaceHolder1$fv_pdetails$TextBoxWatermarkExtender3_ClientState" id="ctl00_ContentPlaceHolder1_fv_pdetails_TextBoxWatermarkExtender3_ClientState" />
+                                                                                </div>
+                                                                                <div id="ctl00_ContentPlaceHolder1_fv_pdetails_UpdateProgress2" style="display:block;">
+						
+                                                                                        <div id="ctl00_ContentPlaceHolder1_fv_pdetails_pnlProcess1">
+							
+                                                                                            <div style="float: left; margin: 5px 0 0 2px;">
+                                                                                                <img id="ctl00_ContentPlaceHolder1_fv_pdetails_imgProc1" src="images/processbarlarge.gif" alt="Processing" height="10" width="15" border="0" /></div>
+                                                                                        
+						</div>
+                                                                                    
+					</div>
+                                                                                <input type="submit" name="ctl00$ContentPlaceHolder1$fv_pdetails$CommentsShare" value="" onclick="AddComments(this.id); return false;WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$fv_pdetails$CommentsShare&quot;, &quot;&quot;, true, &quot;com353&quot;, &quot;&quot;, false, false))" id="ctl00_ContentPlaceHolder1_fv_pdetails_CommentsShare" class="user_sec2button" />
+                                                                                
+                                                                            
+				</div>
+                                                                    
+			</div>
+                                                                    
+                                                                    
+                                                                </div>
+                                                                <div class="bot_bg">
+                                                                </div>
+                                                            
+		</div>
+                                                        </div>
+
+</div>
+
+</td>
+	</tr>
+</table>
+<input type="hidden" name="ctl00$ContentPlaceHolder1$hdnNewsId" id="ctl00_ContentPlaceHolder1_hdnNewsId" value="353" />
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+</div>
+</div>
+<div id="user_right_sec" style="width:300px;">
+  <div class="comman_heading_box" style="width:300px;"><span style="font-size:14px;">
+  RECENT NEWS</span></div>
+<input type="hidden" name="ctl00$ContentPlaceHolder1$tpNewsControl$hdncursec" id="ctl00_ContentPlaceHolder1_tpNewsControl_hdncursec" />
+<input type="hidden" name="ctl00$ContentPlaceHolder1$tpNewsControl$hdnUserId" id="ctl00_ContentPlaceHolder1_tpNewsControl_hdnUserId" />
+<input type="hidden" name="ctl00$ContentPlaceHolder1$tpNewsControl$hdnSportName" id="ctl00_ContentPlaceHolder1_tpNewsControl_hdnSportName" />
+            
+                             
+                             <div id="ctl00_ContentPlaceHolder1_tpNewsControl_divRecNews" class="news_box" style="height:none; width:230px;">
+                             <div>
+	<table cellspacing="0" border="0" id="ctl00_ContentPlaceHolder1_tpNewsControl_gvNews">
+		<tr>
+			<td>
+                           
+                                   <a id="ctl00_ContentPlaceHolder1_tpNewsControl_gvNews_ctl02_lnkNews" title="Consensus in DC: It's RG3" class="news_text" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvNews$ctl02$lnkNews','')" style="display:inline-block;">Consensus in DC: It's RG3</a>   
+   
+                               
+                        </td>
+		</tr><tr>
+			<td>
+                           
+                                   <a id="ctl00_ContentPlaceHolder1_tpNewsControl_gvNews_ctl03_lnkNews" title="NBA: Sasky's Sizzle Rankings - Tournament Edition" class="news_text" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvNews$ctl03$lnkNews','')" style="display:inline-block;">NBA: Sasky's Sizzle Rankings - Tournament Edition</a>   
+   
+                               
+                        </td>
+		</tr><tr>
+			<td>
+                           
+                                   <a id="ctl00_ContentPlaceHolder1_tpNewsControl_gvNews_ctl04_lnkNews" title="La Salle vs. Minnesota in the 75th NIT" class="news_text" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvNews$ctl04$lnkNews','')" style="display:inline-block;">La Salle vs. Minnesota in the 75th NIT</a>   
+   
+                               
+                        </td>
+		</tr><tr>
+			<td>
+                           
+                                   <a id="ctl00_ContentPlaceHolder1_tpNewsControl_gvNews_ctl05_lnkNews" title="The MyHOFS Guide To Unscientific Bracketology" class="news_text" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvNews$ctl05$lnkNews','')" style="display:inline-block;">The MyHOFS Guide To Unscientific Bracketology</a>   
+   
+                               
+                        </td>
+		</tr><tr>
+			<td>
+                           
+                                   <a id="ctl00_ContentPlaceHolder1_tpNewsControl_gvNews_ctl06_lnkNews" title="Marching Forward: East &amp; Midwest Regions" class="news_text" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvNews$ctl06$lnkNews','')" style="display:inline-block;">Marching Forward: East & Midwest Regions</a>   
+   
+                               
+                        </td>
+		</tr><tr>
+			<td>
+                           
+                                   <a id="ctl00_ContentPlaceHolder1_tpNewsControl_gvNews_ctl07_lnkNews" title="Marching Forward: South &amp; West Regions" class="news_text" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvNews$ctl07$lnkNews','')" style="display:inline-block;">Marching Forward: South & West Regions</a>   
+   
+                               
+                        </td>
+		</tr><tr>
+			<td>
+                           
+                                   <a id="ctl00_ContentPlaceHolder1_tpNewsControl_gvNews_ctl08_lnkNews" title="The Best Bet I've Ever Lost: Loyola's Dancing" class="news_text" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvNews$ctl08$lnkNews','')" style="display:inline-block;">The Best Bet I've Ever Lost: Loyola's Dancing</a>   
+   
+                               
+                        </td>
+		</tr><tr>
+			<td>
+                           
+                                   <a id="ctl00_ContentPlaceHolder1_tpNewsControl_gvNews_ctl09_lnkNews" title="Circling the Drain in Flushing" class="news_text" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvNews$ctl09$lnkNews','')" style="display:inline-block;">Circling the Drain in Flushing</a>   
+   
+                               
+                        </td>
+		</tr><tr>
+			<td>
+                           
+                                   <a id="ctl00_ContentPlaceHolder1_tpNewsControl_gvNews_ctl10_lnkNews" title="Closing Time: Phillies Closer Jonathan Papelbon Needs A New Song" class="news_text" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvNews$ctl10$lnkNews','')" style="display:inline-block;">Closing Time: Phillies Closer Jonathan Papelbon Needs A New Song</a>   
+   
+                               
+                        </td>
+		</tr><tr>
+			<td>
+                           
+                                   <a id="ctl00_ContentPlaceHolder1_tpNewsControl_gvNews_ctl11_lnkNews" title="Making Something Out of Nothing" class="news_text" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvNews$ctl11$lnkNews','')" style="display:inline-block;">Making Something Out of Nothing</a>   
+   
+                               
+                        </td>
+		</tr>
+	</table>
+</div>     
+</div>
+                                     
+                                     <div class="middle_con_left_vot_link_box" style="width: 99%; ">
+                                    
+              <a id="ctl00_ContentPlaceHolder1_tpNewsControl_SeeAll" class="most_voted_box_top_link1" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$tpNewsControl$SeeAll&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsList.aspx&quot;, false, true))">See All</a>
+               
+             <span id="ctl00_ContentPlaceHolder1_tpNewsControl_lblAllNews" class="most_voted_box_top_link2">All Sports</span>
+             
+                
+                <div id="ctl00_ContentPlaceHolder1_tpNewsControl_pnlSportsNews" style="display: none;background-color:#ffffff;">
+	
+                    <div>
+		<table class="mostvoted_box_popup" cellspacing="0" border="0" id="ctl00_ContentPlaceHolder1_tpNewsControl_gvSports">
+			<tr>
+				<td>
+                                    <div style="width: 150px; float: left;">
+                                        <div class="mostvoted_box_popup_link2">
+                                            <a onclick="ViewSportNews(this.id,this.name); return false;" id="ctl00_ContentPlaceHolder1_tpNewsControl_gvSports_ctl02_lnkSport" name="0$All" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvSports$ctl02$lnkSport','')">All</a></div>
+                                    </div>
+                                </td>
+			</tr><tr>
+				<td>
+                                    <div style="width: 150px; float: left;">
+                                        <div class="mostvoted_box_popup_link2">
+                                            <a onclick="ViewSportNews(this.id,this.name); return false;" id="ctl00_ContentPlaceHolder1_tpNewsControl_gvSports_ctl03_lnkSport" name="1$Baseball" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvSports$ctl03$lnkSport','')">Baseball</a></div>
+                                    </div>
+                                </td>
+			</tr><tr>
+				<td>
+                                    <div style="width: 150px; float: left;">
+                                        <div class="mostvoted_box_popup_link2">
+                                            <a onclick="ViewSportNews(this.id,this.name); return false;" id="ctl00_ContentPlaceHolder1_tpNewsControl_gvSports_ctl04_lnkSport" name="2$Basketball" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvSports$ctl04$lnkSport','')">Basketball</a></div>
+                                    </div>
+                                </td>
+			</tr><tr>
+				<td>
+                                    <div style="width: 150px; float: left;">
+                                        <div class="mostvoted_box_popup_link2">
+                                            <a onclick="ViewSportNews(this.id,this.name); return false;" id="ctl00_ContentPlaceHolder1_tpNewsControl_gvSports_ctl05_lnkSport" name="3$Boxing" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvSports$ctl05$lnkSport','')">Boxing</a></div>
+                                    </div>
+                                </td>
+			</tr><tr>
+				<td>
+                                    <div style="width: 150px; float: left;">
+                                        <div class="mostvoted_box_popup_link2">
+                                            <a onclick="ViewSportNews(this.id,this.name); return false;" id="ctl00_ContentPlaceHolder1_tpNewsControl_gvSports_ctl06_lnkSport" name="4$College Basketball" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvSports$ctl06$lnkSport','')">College Basketball</a></div>
+                                    </div>
+                                </td>
+			</tr><tr>
+				<td>
+                                    <div style="width: 150px; float: left;">
+                                        <div class="mostvoted_box_popup_link2">
+                                            <a onclick="ViewSportNews(this.id,this.name); return false;" id="ctl00_ContentPlaceHolder1_tpNewsControl_gvSports_ctl07_lnkSport" name="5$College Football" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvSports$ctl07$lnkSport','')">College Football</a></div>
+                                    </div>
+                                </td>
+			</tr><tr>
+				<td>
+                                    <div style="width: 150px; float: left;">
+                                        <div class="mostvoted_box_popup_link2">
+                                            <a onclick="ViewSportNews(this.id,this.name); return false;" id="ctl00_ContentPlaceHolder1_tpNewsControl_gvSports_ctl08_lnkSport" name="6$Football" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvSports$ctl08$lnkSport','')">Football</a></div>
+                                    </div>
+                                </td>
+			</tr><tr>
+				<td>
+                                    <div style="width: 150px; float: left;">
+                                        <div class="mostvoted_box_popup_link2">
+                                            <a onclick="ViewSportNews(this.id,this.name); return false;" id="ctl00_ContentPlaceHolder1_tpNewsControl_gvSports_ctl09_lnkSport" name="7$Golf" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvSports$ctl09$lnkSport','')">Golf</a></div>
+                                    </div>
+                                </td>
+			</tr><tr>
+				<td>
+                                    <div style="width: 150px; float: left;">
+                                        <div class="mostvoted_box_popup_link2">
+                                            <a onclick="ViewSportNews(this.id,this.name); return false;" id="ctl00_ContentPlaceHolder1_tpNewsControl_gvSports_ctl10_lnkSport" name="8$Hockey" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvSports$ctl10$lnkSport','')">Hockey</a></div>
+                                    </div>
+                                </td>
+			</tr><tr>
+				<td>
+                                    <div style="width: 150px; float: left;">
+                                        <div class="mostvoted_box_popup_link2">
+                                            <a onclick="ViewSportNews(this.id,this.name); return false;" id="ctl00_ContentPlaceHolder1_tpNewsControl_gvSports_ctl11_lnkSport" name="9$MMA" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvSports$ctl11$lnkSport','')">MMA</a></div>
+                                    </div>
+                                </td>
+			</tr><tr>
+				<td>
+                                    <div style="width: 150px; float: left;">
+                                        <div class="mostvoted_box_popup_link2">
+                                            <a onclick="ViewSportNews(this.id,this.name); return false;" id="ctl00_ContentPlaceHolder1_tpNewsControl_gvSports_ctl12_lnkSport" name="10$Motor Sports" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvSports$ctl12$lnkSport','')">Motor Sports</a></div>
+                                    </div>
+                                </td>
+			</tr><tr>
+				<td>
+                                    <div style="width: 150px; float: left;">
+                                        <div class="mostvoted_box_popup_link2">
+                                            <a onclick="ViewSportNews(this.id,this.name); return false;" id="ctl00_ContentPlaceHolder1_tpNewsControl_gvSports_ctl13_lnkSport" name="12$Soccer" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvSports$ctl13$lnkSport','')">Soccer</a></div>
+                                    </div>
+                                </td>
+			</tr><tr>
+				<td>
+                                    <div style="width: 150px; float: left;">
+                                        <div class="mostvoted_box_popup_link2">
+                                            <a onclick="ViewSportNews(this.id,this.name); return false;" id="ctl00_ContentPlaceHolder1_tpNewsControl_gvSports_ctl14_lnkSport" name="11$Tennis" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$tpNewsControl$gvSports$ctl14$lnkSport','')">Tennis</a></div>
+                                    </div>
+                                </td>
+			</tr>
+		</table>
+	</div>
+                    
+                
+</div>
+            </div>
+ 
+                                       <input type="hidden" name="ctl00$ContentPlaceHolder1$tpNewsControl$hdnSportId" id="ctl00_ContentPlaceHolder1_tpNewsControl_hdnSportId" value="0" />
+                                 <input type="hidden" name="ctl00$ContentPlaceHolder1$tpNewsControl$hdncnt" id="ctl00_ContentPlaceHolder1_tpNewsControl_hdncnt" value="10" />
+    
+                 
+                 <script type="text/javascript">
+                     function pageLoad() {
+                         var DDE = $find('ctl00_ContentPlaceHolder1_tpNewsControl_DDENews');
+                        // alert(DDE);
+                         if (DDE == null) {
+                             DDE = $find('ctl00_ContentPlaceHolder1_tbMostVoted_tpRecNews_tpNewsControl_DDENews');
+                         }
+                         if (DDE != null) {
+                             var chngPosition = DDE._dropPopupPopupBehavior;
+                             chngPosition.set_positioningMode(2);
+                         }
+                         //
+                     }
+    
+    
+    
+</script>          
+<script language="javascript" type="text/javascript">
+    function ViewSportNews(id, val) {
+       // alert('sport');
+           var len = id.lastIndexOf('_tpNewsControl');
+           curID = id.substr(0, len);
+
+           var param = val.split('$');
+           var hdnUserId = $get(curID + "_tpNewsControl_hdnUserId");
+           var hdnSportId = $get(curID + "_tpNewsControl_hdnSportId");
+           var hdnSportName = $get(curID + "_tpNewsControl_hdnSportName");
+           var hdncnt = $get(curID + "_tpNewsControl_hdncnt");
+           var cnt = hdncnt.value;
+//           alert(hdncnt);
+//           alert(hdncnt.value);
+           
+           if (param[0] == "0") {
+               hdnSportId.value = null;
+               hdnSportName.value = "";
+             //  hdncnt.value = null;
+
+           }
+           else {
+               hdnSportId.value = param[0];
+              // alert(hdnSportId.value);
+               hdnSportName.value = param[1];
+              // alert(hdnSportName.value);
+               
+             
+
+           }
+           var All = $get(curID + "_tpNewsControl_lblAllNews");
+           All.innerHTML = param[1];
+           StatusFeed.RecentNews( param[0],cnt, onViewNewsCompleted);
+       }
+
+       function onViewNewsCompleted(result) {
+           //alert(result);
+           var curTopDiv = $get(curID + "_tpNewsControl_divRecNews");
+               curTopDiv.innerHTML = result;
+       }
+       
+
+</script>
+  
+
+
+ 
+                    
+                    
+                    
+                <div id="ctl00_ContentPlaceHolder1_divRightTop" style="margin-top:10px;background-color:#FFFFFF;">
+         <div style = " float: right; margin-top:10px; text-decoration: none; width: 300px;"><SCRIPT>
+document.write('<scr' + 'ipt src=http://ad.doubleclick.net/adj/myhofs.fsv/ros;sect=ros;fantasy=no;game=no;tile=1;sz=300x250;ord=' + random_number + '?></scr' + 'ipt>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/myhofs.fsv/ros;sect=ros;fantasy=no;game=no;tile=3;sz=300x250;ord='+random_number+'?" >
+<IMG SRC="http://ad.doubleclick.net/ad/myhofs.fsv/ros;sect=ros;fantasy=no;game=no;tile=3;sz=300x250;ord='+random_number+'?" border="0" height="250" width="300"></A>
+</NOSCRIPT></div></div>    
+                           
+                <div id="ctl00_ContentPlaceHolder1_divRightMiddle" style="margin-top:10px;background-color:#FAFFF0;">                                    <div style = " float: right; margin-top:10px; text-decoration: none; width: 300px;"><SCRIPT>
+document.write('<scr' + 'ipt src=http://ad.doubleclick.net/adj/myhofs.fsv/home;sect=home;fantasy=no;game=no;tile=2;sz=300x250;ord=' + random_number + '?></scr' + 'ipt>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/myhofs.fsv/home;sect=home;fantasy=no;game=no;tile=3;sz=300x250;ord='+random_number+'?" >
+<IMG SRC="http://ad.doubleclick.net/ad/myhofs.fsv/home;sect=home;fantasy=no;game=no;tile=3;sz=300x250;ord='+random_number+'?" border="0" height="250" width="300"></A>
+</NOSCRIPT></div></div> 
+                   
+                <div id="ctl00_ContentPlaceHolder1_divRightbottom" style="margin-top:10px;background-color:#231F20;">        
+                           
+                       <div style = " float: right; margin-top:10px; text-decoration: none; width: 300px;"><SCRIPT>
+document.write('<scr' + 'ipt src=http://ad.doubleclick.net/adj/myhofs.fsv/home;sect=home;fantasy=no;game=no;tile=3;sz=300x250;ord=' + random_number + '?></scr' + 'ipt>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/myhofs.fsv/home;sect=home;fantasy=no;game=no;tile=3;sz=300x250;ord='+random_number+'?" >
+<IMG SRC="http://ad.doubleclick.net/ad/myhofs.fsv/home;sect=home;fantasy=no;game=no;tile=3;sz=300x250;ord='+random_number+'?" border="0" height="250" width="300"></A>
+</NOSCRIPT></div></div> 
+                
+</div>
+
+</div>
+
+                
+                            <div id="ctl00_ContentPlaceHolder1_divfooterbanner" class="footer_banner">
+            
+             <div style = "  float: left; height: 90px; margin-left:9px; width: 975px;"><SCRIPT>
+document.write('<scr' + 'ipt src=http://ad.doubleclick.net/adj/myhofs.fsv/home;sect=home;fantasy=no;game=no;pos=atf;tile=1;dcopt=ist;sz=728x90;ord=' + random_number + '?></scr' + 'ipt>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/myhofs.fsv/home;sect=home;fantasy=no;game=no;pos=atf;tile=1;sz=728x90;ord='+random_number+'?" >
+<IMG SRC="http://ad.doubleclick.net/ad/myhofs.fsv/home;sect=home;fantasy=no;game=no;pos=atf;tile=1;sz=728x90;ord='+random_number+'?" border="0" height="90" width="728"></A>
+</NOSCRIPT></div></div>
+
+                
+                
+</div>
+
+<script type="text/javascript">
+          function show(k) {
+              //alert(1);
+              var s = k;
+              var p = s.replace("lnk_comment_1", "pnlComments");
+              //alert(s);
+              //alert(p);
+
+
+              var comment = document.getElementById(s);
+              var panel = document.getElementById(p);
+              //alert(comment);
+              //alert(panel);
+              comment.style.display = 'none';
+              panel.style.display = 'block';
+
+
+          }
+          function showDiv(id) {
+              var newdiv = id.replace('ViewAll', 'divGvAll');
+              //        animatedcollapse.addDiv(newdiv, 'fade=0,speed=400');
+              //        animatedcollapse.show(newdiv);
+              var divh = $get(newdiv);
+              divh.style.display = "";
+              var oldlink = id;
+              var ViewAll = $get(oldlink);
+              ViewAll.style.display = "none";
+              var newlink = id.replace('ViewAll', 'ViewRecent');
+              var ViewRecent = $get(newlink);
+              ViewRecent.style.display = "";
+          }
+
+          function hideDiv(id) {
+              var newdiv = id.replace('ViewRecent', 'divGvAll');
+              ////        animatedcollapse.addDiv(newdiv, 'fade=0,speed=400');
+              //////        animatedcollapse.init();
+              ////        animatedcollapse.hide(newdiv);
+              var divh = $get(newdiv);
+              divh.style.display = "none";
+
+              var oldlink = id;
+              var ViewAll = $get(oldlink);
+              ViewAll.style.display = "none";
+              var newlink = id.replace('ViewRecent', 'ViewAll');
+              var ViewRecent = $get(newlink);
+              ViewRecent.style.display = "";
+          }
+
+
+
+          //////    animatedcollapse.addDiv('jason', 'fade=1,height=80px')
+          ////    animatedcollapse.addDiv('kelly', 'fade=1,height=100px')
+          ////    animatedcollapse.addDiv('michael', 'fade=1,height=120px')
+
+          ////    animatedcollapse.addDiv('cat', 'fade=0,speed=400,group=pets')
+          ////    animatedcollapse.addDiv('dog', 'fade=0,speed=400,group=pets,persist=1,hide=1')
+          ////    animatedcollapse.addDiv('rabbit', 'fade=0,speed=400,group=pets,hide=1')
+
+
+          var curidc = "";
+
+          function VoteStatus(id, val) {
+            //  alert(val);
+              var idc = $get(id);
+              var divVoteDescid = id.replace("LinkButton2", "divVoteDesc");
+              var divVoteDesc = $get(divVoteDescid);
+              curdivVoteDesc = divVoteDesc;
+            //  alert(curdivVoteDesc);
+              curidc = idc;
+              //alert(idc);
+              //alert(idc.innerHTML);
+              var test = val.split('$');
+              //  alert(test);
+
+              var huid = $get('ctl00_ContentPlaceHolder1_hdnuserid');
+              //  alert(huid);
+              var uid = huid.value;
+
+
+              // Added by Prajakta on May 28,2011
+              if (uid == "") {
+
+              }
+              else {
+                  if ((idc.innerHTML).toLowerCase() == "vote") {
+                      //   idc.innerHTML = "Unvote";
+                      idc.name = "unvote$" + test[1];
+                  }
+                  else {
+                      // idc.innerHTML = "Vote";
+                      idc.name = "vote$" + test[1];
+                  }
+              }
+             // alert('1');
+              StatusFeed.VoteNewsStatus(id, test[0], test[1], uid, onVoteStatusCompleted);
+              StatusFeed.GetNewsVoteDescAll(test[1], uid, onVoteDescCompleted);
+          }
+
+
+          function onVoteStatusCompleted(result) {
+              //alert(result);
+              var test = result.split('$');
+              // Added by Prajakta on May 28,2011
+              //ctl00_ContentPlaceHolder1_gvStatus_ctrl0_LinkButton2
+              //alert(test);
+              //            if (test == "") {
+              if (test == "not loggedin") {
+                  var str1 = curidc.innerHTML;
+                  //alert(str1);
+                  curidc.innerHTML = str1;
+                  window.location.href = "JoinToday.aspx";
+              }
+              else {
+                  curidc.name = test[0] + "$" + test[2];
+                  curidc.innerHTML = test[1];
+              }
+
+
+          }
+
+          function onVoteDescCompleted(result) {
+              // Added by Prajakta on May 28,2011
+              //alert(result);
+              // alert(curdivVoteDesc);
+              //curdivVoteDesc.innerHTML = result; //ctl00_ContentPlaceHolder1_gvStatus_ctrl0_LinkButton2
+              var str = "not loggedin";
+              // alert('str:' + str + ',result:' + result);
+              if (result == str) {
+                  window.location.href = "JoinToday.aspx";
+
+              }
+              else {
+                  curdivVoteDesc.innerHTML = result;
+              }
+          }
+
+
+
+
+          var curgv = "";
+          var curgvall = "";
+          var txtcomments = "";
+          var curdivGv = "";
+          var curStatusDiv = "";
+          var curdivGvAll = "";
+          var curdivVoteDesc = "";
+          var curlnkComments = "";
+          var newid = "";
+          var newAllid = "";
+
+          function AddComments(id) {
+              // alert(id);
+              var btn = $get(id);
+              //  alert(btn);
+              var huid = $get('ctl00_ContentPlaceHolder1_hdnuserid');
+              //  alert("UserId " + huid.value);
+              var txtid = id.replace("CommentsShare", "txtcomments");
+              var txt = $get(txtid);
+              if (txt.value == 'Write a comment...' || txt.value == '')
+                  return false;
+              //  alert("Comment Text " + txt.value);
+              var hndid = id.replace("CommentsShare", "hdnStatusId");
+              newid = id.replace("CommentsShare", "gvComments_ctl");
+              newAllid = id.replace("CommentsShare", "gvCommentsAll_ctl");
+
+              var hdnst = $get(hndid);
+              // alert("StatusId " + hdnst.value);
+              var gvid = id.replace("CommentsShare", "gvComments");
+              var gvComments = $get(gvid);
+              var gvidAll = id.replace("CommentsShare", "gvCommentsAll");
+              var gvCommentsAll = $get(gvidAll);
+              // alert(gvCommentsAll);
+
+              var divGvid = id.replace("CommentsShare", "divGv");
+              var divGv = $get(divGvid);
+
+              var divGvAllId = id.replace("CommentsShare", "divGvAll");
+              var divGvAll = $get(divGvAllId);
+              curdivGvAll = divGvAll;
+
+              var divVoteDescid = id.replace("CommentsShare", "divVoteDesc");
+              var divVoteDesc = $get(divVoteDescid);
+
+
+              var lnkCommentsid = id.replace("CommentsShare", "ViewAll");
+              var lnkComments = $get(lnkCommentsid);
+
+
+              var hndft = id.replace("CommentsShare", "hdnFeedType");
+              var hdbfeedtype = $get(hndft);
+              var stat = hdnst.value + "#" + hdbfeedtype.value;
+
+
+
+              //   alert(lnkCommentsid);
+
+              //  ctl00_ContentPlaceHolder1_gvStatus_ctrl9_ViewAll
+              //  ctl00_ContentPlaceHolder1_gvStatus_ctrl9_ViewAll
+
+              curlnkComments = lnkComments;
+
+              curdivVoteDesc = divVoteDesc;
+              //    alert(divGv);
+              curdivGv = divGv;
+              curgv = gvComments;
+              curgvall = gvCommentsAll;
+              txtcomments = txt;
+              //////                var uid = huid.value;
+              //////                StatusFeed.VoteStatus(id, test[0], test[1], uid, onVoteStatusCompleted);
+
+              //////                var hstid = $get('ZipCode');
+              //////                var stid = hstid.value;
+              //////                var tb = $get('City');
+              //////                var zip = tb.value;
+              //////                // alert(zip);
+              //////                var huid = $get('hdnuserid');
+              //////                var uid = huid.value;
+              //////                // alert(uid);
+
+              //////                // if (zip.length == 5)
+              //                var db = StatusFeed.AddComment(hdnst.value, txt.value, huid.value);
+              //                alert('DB');
+              //                alert(db);
+              StatusFeed.AddNewsComment(stat, txt.value, huid.value, newid,
+          onGetCommentCompleted);
+
+              StatusFeed.GetNewsCommentAll(stat, newAllid, onGetCommentAllCompleted);
+              StatusFeed.GetCommentCount(stat, onGetCommentCountCompleted);
+
+          }
+
+
+
+          function DeleteComment(id, val) {
+              if (confirm('Do you want to remove this comment?') == true) {
+                  var stid = val.split('$');
+                  //ctl00_ContentPlaceHolder1_gvStatus_ctrl0_gvComments_ctl02_del
+                  var len = id.indexOf('_gvComments');
+                  var commid = id.substr(0, len);
+                  var hndid = (commid + "_hdnStatusId");
+                  var hdnst = $get(hndid);
+                  //  alert('Statusid: ' + hdnst.value);
+                  //  alert('FeedType: ' + hdnFeedType.value);
+
+                  var gvid = (commid + "_gvComments");
+                  var gvComments = $get(gvid);
+                  curgv = gvComments;
+                  var returnid = id.substr(0, len) + "_gvComments_ctl";
+                  var returnAllid = id.substr(0, len) + "_gvCommentsAll_ctl";
+
+                  var gvidAll = (commid + "_gvCommentsAll");
+                  var gvCommentsAll = $get(gvidAll);
+                  curgvall = gvCommentsAll;
+
+                  var divGvid = (commid + "_divGv");
+                  var divGv = $get(divGvid);
+                  curdivGv = divGv;
+
+                  var divGvAllId = (commid + "_divGvAll");
+                  var divGvAll = $get(divGvAllId);
+                  curdivGvAll = divGvAll;
+
+
+                  var FeedType = (commid + "_hdnFeedType");
+                  // alert(FeedType);
+                  var hdnFeedType = $get(FeedType);
+                  var stat = stid[1] + "#" + hdnFeedType.value;
+                  //  alert(stat);
+                  var lnkCommentsid = (commid + "_ViewAll");
+                  var lnkComments = $get(lnkCommentsid);
+                  curlnkComments = lnkComments;
+                  StatusFeed.DeleteNewsComment(stat, stid[0], returnid, onGetCommentCompleted);
+                  StatusFeed.GetNewsCommentAll(stat, returnAllid, onGetCommentAllDeleteCompleted);
+                  StatusFeed.GetCommentCount(stat, onGetCommentCountCompleted);
+              }
+              else
+                  return false;
+          }
+
+
+          function DeleteStatus(id, val) {
+
+              if (confirm('Do you want to remove this feed?') == true) {
+                  var curStatusDivid = id.replace("del", "pnl1");
+                  curStatusDiv = $get(curStatusDivid);
+                  StatusFeed.DeleteStatus(val, onDeleteStatustCompleted);
+              }
+              else
+                  return false;
+          }
+
+
+          function onDeleteStatustCompleted(result) {
+              curStatusDiv.innerHTML = "";
+          }
+
+
+          function onGetCommentCountCompleted(result) {
+              curlnkComments.innerHTML = result;
+          }
+
+          function onGetCommentAllDeleteCompleted(result) {
+               curdivGvAll.innerHTML = result;
+          }
+
+
+          function DeleteCommentHTML(id, val) {
+              if (confirm('Do you want to remove this comment?') == true) {
+                  var stid = val.split('$');
+                  //ctl00_ContentPlaceHolder1_gvStatus_ctrl0_gvComments_ctl02_del
+                  StatusFeed.DeleteNewsComment(stid[1], stid[0], onGetCommentCompleted);
+                  StatusFeed.GetNewsCommentAll(stid[1], onGetCommentAllDeleteCompleted);
+                  StatusFeed.GetCommentCount(stid[1], onGetCommentCountCompleted);
+
+              }
+              else
+                  return false;
+
+
+          }
+
+
+
+
+          function onGetCommentAllCompleted(result) {
+              var str = "not loggedin";
+              // alert('str:' + str + ',result:' + result);
+              if (result == str) {
+                  window.location.href = "JoinToday.aspx";
+
+              }
+              else { curdivGvAll.innerHTML = result; }
+          }
+
+
+
+
+          function onGetCommentCompleted(result) {
+          var str = "not loggedin";
+              // alert('str:' + str + ',result:' + result);
+          if (result == str) {
+              window.location.href = "JoinToday.aspx";
+
+          }
+          else {
+              txtcomments.value = "";
+              curdivGv.innerHTML = result;
+          }
+          }
+
+
+
+          function ItemMouseOver(oRow, del) {
+              try {
+                  oImage1 = document.getElementById(del);
+
+                  oImage1.style.display = 'block';
+
+
+                  oRow.originalBackgroundColor = oRow.style.backgroundColor
+              } catch (e)
+{ }
+
+          }
+
+          function ItemMouseOut(oRow, del) {
+              try {
+                  oImage1 = document.getElementById(del);
+
+
+                  oImage1.style.display = 'none';
+
+
+                  oRow.style.backgroundColor = oRow.originalBackgroundColor;
+              } catch (e)
+{ }
+          }
+
+    </script>
+
+      <div id="middle_botcor" ></div>
+<div style="height: 85px; float: left; width: 899px;" id="gapdiv">&nbsp;</div>
+</div>
+</div>
+<div id="footer">
+
+
+
+<div id="footer_text_bg2" >
+<div  style="margin:0 auto 0 auto; width:1000px;">
+<div id="footer1" style="width:400px;"><ul>
+			<li><a href="AboutUs.aspx">About Us</a></li>
+	        <li><a href="Advertising.aspx">Advertising</a></li>
+	        <li><a href="Help.aspx">Help Center</a></li>
+	        <li><a href="TermsAndConditions.aspx">Terms & Conditions</a></li>
+			<li><a href="ContactUs.aspx">Contact Us</a></li>
+	</ul></div>
+<div id="footer_text_2">
+2011 MyHofs.com. Part of the USA Today Sports Media Group. All Rights Reserved. Reproduction without explicit permission is prohibited.
+</div>
+</div>
+</div>
+</div>
+</div>
+ 
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.PopupControlBehavior, {"OffsetX":-172,"OffsetY":-4,"PopupControlID":"ctl00_lvMember_pnlLg","Position":3,"dynamicServicePath":"/NewsDesc.aspx","id":"ctl00_lvMember_PopEx","onHide":"{\"AnimationName\":\"Sequence\",\"AnimationChildren\":[{\"AnimationName\":\"StyleAction\",\"AnimationTarget\":\"ctl00_lvMember_btnSignin\",\"Attribute\":\"class\",\"ValueScript\":\"Setbluesign();\",\"AnimationChildren\":[]},{\"AnimationName\":\"HideAction\",\"Visible\":\"false\",\"AnimationChildren\":[]},{\"AnimationName\":\"FadeOut\",\"Duration\":\"0\",\"Fps\":\"20\",\"AnimationChildren\":[]}]}","onShow":"{\"AnimationName\":\"Sequence\",\"AnimationChildren\":[{\"AnimationName\":\"StyleAction\",\"AnimationTarget\":\"ctl00_lvMember_btnSignin\",\"Attribute\":\"class\",\"ValueScript\":\"Setgraysign();\",\"AnimationChildren\":[]},{\"AnimationName\":\"HideAction\",\"Visible\":\"true\",\"AnimationChildren\":[]},{\"AnimationName\":\"FadeIn\",\"duration\":\"0.2\",\"fps\":\"20\",\"AnimationChildren\":[]}]}"}, null, null, $get("ctl00_lvMember_btnSignin"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TextBoxWatermarkBehavior, {"ClientStateFieldID":"ctl00_ContentPlaceHolder1_fv_pdetails_TextBoxWatermarkExtender3_ClientState","WatermarkCssClass":"watermark","WatermarkText":"Write a comment...","id":"ctl00_ContentPlaceHolder1_fv_pdetails_TextBoxWatermarkExtender3"}, null, null, $get("ctl00_ContentPlaceHolder1_fv_pdetails_txtcomments"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.DropDownBehavior, {"dropArrowBackgroundColor":"Transparent","dropArrowImageUrl":"images/tra_img.png","dropDownControl":$get("ctl00_ContentPlaceHolder1_tpNewsControl_pnlSportsNews"),"dynamicServicePath":"/NewsDesc.aspx","highlightBackgroundColor":"Transparent","highlightBorderColor":"Transparent","id":"ctl00_ContentPlaceHolder1_tpNewsControl_DDENews"}, null, null, $get("ctl00_ContentPlaceHolder1_tpNewsControl_lblAllNews"));
+});
+//]]>
+</script>
+</form>
+ <script type="text/javascript">
+
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-22431720-1']);
+     _gaq.push(['_trackPageview']);
+
+     (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+
+</script>
+
+<script language="javascript" type="text/javascript">
+
+    function showpollmm() {
+        $find('pollPopupmm').show();
+    }
+
+
+
+
+    function AddLatestPoll() {
+//        var procStatus = $get("procStatus");
+//        if (procStatus != null)
+//            procStatus.style.display = "";
+        var qst = document.getElementById('ctl00_LoginView1_txtQuestionmm');
+        var txt1 = document.getElementById('ctl00_LoginView1_txtOption1mm');
+        var txt2 = document.getElementById('ctl00_LoginView1_txtOption2mm');
+        var txt3 = document.getElementById('ctl00_LoginView1_txtOption3mm');
+        var txt4 = document.getElementById('ctl00_LoginView1_txtOption4mm');
+        var txt5 = document.getElementById('ctl00_LoginView1_txtOption5mm');
+
+        if (qst.value == "") {
+            return false;
+            // alert(cnt);
+        }
+    
+        var cnt = 0;
+        // alert(cnt);
+        if (txt1.value == "") {
+            cnt = cnt + 1;
+            // alert(cnt);
+        }
+
+        if (txt2.value == "") {
+            cnt = cnt + 1;
+            //alert(cnt);
+
+        }
+        if (txt3.value == "") {
+            cnt = cnt + 1;
+            //  alert(cnt);
+        }
+        if (txt4.value == "") {
+
+            cnt = cnt + 1;
+            //   alert(cnt);
+        }
+        if (txt5.value == "") {
+            cnt = cnt + 1;
+
+            //  alert(cnt);
+        }
+
+
+        //   alert(cnt);
+        // return cnt;
+
+        if (cnt >= 4) {
+            return false;
+        }
+        else {
+        }
+
+
+
+
+        var uid = $get("ctl00_hdnuserid");
+        var hdncnt = document.getElementById("ctl00_ContentPlaceHolder1_hdncnt");
+        var hdnstcount = document.getElementById("ctl00_ContentPlaceHolder1_hdnstcount");
+        var hdnnxtcnt = $get("reccnt");
+        var nxtcnt;
+        if (hdnnxtcnt == null || hdnnxtcnt.value == "") {
+            if (hdnstcount == null) {
+                nxtcnt = 20; 
+            }
+            else {
+                nxtcnt = hdnstcount.value;
+            }
+        }
+        else {
+            nxtcnt = hdnnxtcnt.value;
+        }
+
+
+        StatusFeed.GetPollLatest(uid.value, qst.value, txt1.value, txt2.value, txt3.value, txt4.value, txt5.value, nxtcnt, AddLatestPollCompleted);
+
+    }
+
+
+    function AddLatestPollCompleted(result) {
+        // alert(result);
+        var SatatusList = $get("SatatusList");
+        //alert(result + SatatusList.innerHTML);
+        var hdncnt = document.getElementById("ctl00_ContentPlaceHolder1_hdncnt");
+        var hdnstcount = document.getElementById("ctl00_ContentPlaceHolder1_hdnstcount");
+        var hdnnxtcnt = $get("reccnt");
+        if (SatatusList == null || hdncnt == null || hdnstcount == null || hdnnxtcnt == null) {
+            window.location.href = "../../home.aspx";
+        }
+        SatatusList.innerHTML = result + SatatusList.innerHTML;
+        var hdnstcount = document.getElementById("ctl00_ContentPlaceHolder1_hdnstcount");
+        hdnstcount.value = parseInt(hdnstcount.value) + 1;
+        var qst = document.getElementById('ctl00_LoginView1_txtQuestionmm');
+        var txt1 = document.getElementById('ctl00_LoginView1_txtOption1mm');
+        var txt2 = document.getElementById('ctl00_LoginView1_txtOption2mm');
+        var txt3 = document.getElementById('ctl00_LoginView1_txtOption3mm');
+        var txt4 = document.getElementById('ctl00_LoginView1_txtOption4mm');
+        var txt5 = document.getElementById('ctl00_LoginView1_txtOption5mm');
+        qst.value = "";
+        txt1.value = "";
+        txt2.value = "";
+        txt3.value = "";
+        txt4.value = "";
+        txt5.value = "";
+        var st = $find('mpePoll');
+        st.hide();
+
+
+    }
+
+    function SetOptionHome(id, val) {
+        var hdnOption = $get("ctl00_ContentPlaceHolder1_hdnOption");
+        hdnOption.value = val;
+    }
+    function openPollPopUp() {
+    
+        $find('mpePoll').show();
+
+    }
+
+    function hideall() {
+        var panel_votehof = $get('ctl00_LoginView1_Panel_hofPollmm');
+        // alert(panel_votehof);
+        panel_votehof.style.display = "none";
+
+    }
+</script>
+
+</body>
+</html>

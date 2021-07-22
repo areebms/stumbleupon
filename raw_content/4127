@@ -1,0 +1,208 @@
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																<!DOCTYPE html><html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=7, IE=9" /><title>NIMH &#183; New Findings Reveal New Worlds In Neuroscience</title><meta name="content_id" content="134305"/><meta name="description" content="Windows to completely new areas of research have been opened recently by research efforts in basic science.  These reports force us to consider factors that have not previously been thought to have any role in mental health or illness. "/>	 <link rel="alternate" type="application/atom+xml" title="NIMH RSS Feed" href="http://www.nimh.nih.gov/site-info/index-rss.atom"/>
+	 <!--[if !IE 6]><!-->
+<link href="/styles/smoothness/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css" media="all"/><link href="/styles/baseline.css" rel="stylesheet" type="text/css" media="all"/><link href="/styles/override.css" rel="stylesheet" type="text/css" media="all"/><!--<![endif]-->
+<!--[if (IE 7)|(IE 8)]>
+<link rel="stylesheet" type="text/css" href="/styles/ie0607.css" title="Default" />
+<![endif]-->
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" media="screen, projection" href="http://universal-ie6-css.googlecode.com/files/ie6.1.1.css" />
+<style type="text/css">
+a:visited {
+	color: #555;
+}
+a:hover, a:focus {
+	color: #555;
+}
+</style>
+<![endif]-->
+ <script src="https://www.google.com/jsapi?key=ABQIAAAAF8vwpYt3Gl0JyyW16Qjw-BSn2XP_Ca8QLMPzpSymlIDQtBmIrhQaMKpPvFNQc0tRQMG1l-4spipJkQ" type="text/javascript"></script>
+<!--[if !IE 6]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script><script type="text/javascript" src="/scripts/hoverIntent.js"></script><script type="text/javascript" src="/scripts/jquery-menu.js"></script><script type="text/javascript" src="/scripts/nimh.js"></script> <!--<![endif]-->	
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20011391-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript">
+function recordLinkDelay(link, category, action) {
+  try {
+    _gaq.push(['_trackEvent',category,action]);
+	if(link.target !== "_blank") {
+    	setTimeout('document.location = " ' + link.href + '"', 100);
+	} else {
+		newWindow = window.open(link.href);
+		if (window.focus) {newWindow.focus();}
+	}
+  } catch(err){}
+}
+function recordLinkNoDelay(link, category, action) {
+  try {
+    _gaq.push(['_trackEvent',category,action]);
+  } catch(err){}
+}
+</script>
+
+<script type="text/javascript">
+$(function() {
+	var links = $('a');
+	var linkFragments = $(links).filter('[href^="#"]');
+	var links = $(links).not(linkFragments);
+	var slideActionLinks = $('#actions').children('a');
+	var slideNavLinks = $('.navi').children('a');
+	var links = $(links).not(slideActionLinks).not(slideNavLinks); // Subtracting these links fixes IE bug for slideshow.
+	var outboundLinks = $(links).filter('[href^="http://"],[href^="https://"]');
+	var mailLinks = $(links).filter('[href^="mailto:"]');
+	var subsetLinks = $(links).not(outboundLinks).not(mailLinks);
+	var pdfLinks = $(subsetLinks).filter('[href*=".pdf"]');
+	var zipLinks = $(subsetLinks).not(pdfLinks).filter('[href*=".zip"]');
+	var epubLinks = $(subsetLinks).not(pdfLinks).not(zipLinks).filter('[href*=".epub"]');
+	var mobiLinks = $(subsetLinks).not(pdfLinks).not(zipLinks).not(epubLinks).filter('[href*=".mobi"]');
+	$(outboundLinks).click(function() {
+		var action = this.href;
+		action = action.substring(action.indexOf('://') + 3,action.length);
+		recordLinkDelay(this, 'Outbound Links', action); return false;
+	});
+	$(pdfLinks).click(function() {
+		var action = this.href;
+		action = action.substring(action.indexOf('.gov') + 4,action.length);
+		recordLinkDelay(this, 'PDF Downloads', action); return false;
+	});
+	$(zipLinks).click(function() {
+		var action = this.href;
+		action = action.substring(action.indexOf('.gov') + 4,action.length);
+		recordLinkNoDelay(this, 'Zip Downloads', action);
+	});
+	$(epubLinks).click(function() {
+		var action = this.href;
+		action = action.substring(action.indexOf('.gov') + 4,action.length);
+		recordLinkNoDelay(this, 'Epub Downloads', action);
+	});
+	$(mobiLinks).click(function() {
+		var action = this.href;
+		action = action.substring(action.indexOf('.gov') + 4,action.length);
+		recordLinkNoDelay(this, 'Mobi Downloads', action);
+	});
+	$(mailLinks).click(function() {
+		var action = this.href;
+		action = action.substring(action.indexOf(':') + 1,action.length);
+		recordLinkNoDelay(this, 'Mail Links', action);
+	});
+});
+</script>
+
+</head><body id="about"><!--[if lt IE 9]><div id="container"><![endif]-->
+<div><a href="#main" id="skipnav">Skip navigation.</a></div><div id="banner" role="banner">
+<div id="nih"><a href="http://www.nih.gov">
+<!--[if !IE 6]><!--><img src="/images/banner_nih.png" alt="National Institutes of Health" /><!--<![endif]-->
+<!--[if lte IE 6]>NIH<![endif]--></a></div><div id="logo"><a href="/"><img src="/images/banner_nimh_logo.png" alt="Logo for the National Institute of Mental Health"  /></a></div><div id="tagline"><img src="/images/banner_nimh_tagline.png" alt="National Institute of Mental Health, Transforming the understanding and treatment of mental illness throught research." /></div><form id="search" name="gs" action="http://wwwsearch.nimh.nih.gov/" method="get"><fieldset><label for="searchbox">Search NIMH:</label> <input id="searchbox" name="q" type="text" maxlength="255" size="28" /> <input id="btnG" name="btnG" type="submit" value="Go" /><input type="hidden" value="0" name="entqr" /><input type="hidden" value="1" name="ud" /><input type="hidden" value="date:D:L:d1" name="sort" /><input type="hidden" value="xml_no_dtd" name="output" /><input type="hidden" value="UTF-8" name="oe" /><input type="hidden" value="UTF-8" name="ie" /><input type="hidden" value="internet_frontend" name="client" /><input type="hidden" value="internet_frontend" name="proxystylesheet" /><input type="hidden" value="internet_collection" name="site" /></fieldset></form></div>
+    <ul class="sf-menu" id="nav"><li class="home"><a href="/index.shtml">Home</a></li><li class="health"><a href="/health/index.shtml">Health Topics</a> <ul><li><a href="/health/index.shtml">Health Topics Home</a></li><li><a href="/trials/index.shtml">Clinical Trials</a></li><li><a href="/health/topics/statistics/index.shtml">Statistics</a></li><li class="last"><a href="/health/publications/index.shtml">Publications</a></li></ul></li><li class="outreach"><a href="/outreach/index.shtml">Outreach</a> <ul><li><a href="/outreach/index.shtml">Outreach Home</a></li><li><a href="/outreach/public-involvement-at-nimh.shtml">Public Involvement</a></li><li><a href="/outreach/alliance/index.shtml">Alliance for Research Progress</a></li><li><a href="/outreach/coalition/index.shtml">Professional Coalition for Research Progress</a></li><li><a href="/outreach/partnership-program/index.shtml">Outreach Partnership Program</a></li><li class="last"><a href="/outreach/nimh-legislative-activities.shtml">Legislative Activities</a></li></ul></li><li class="research"><a href="/research-funding/index.shtml">Research and Funding</a> <ul><li><a href="/research-funding/index.shtml">Research and Funding Home</a></li><li><a href="/research-funding/grants/index.shtml">Grants</a></li><li><a href="/research-funding/contracts/index.shtml">Contracts</a></li><li><a href="/research-funding/training/index.shtml">Training</a></li><li><a href="/research-funding/small-business/index.shtml">Small Business</a></li><li><a href="/research-funding/scientific-meetings/index.shtml">Scientific Meetings</a></li><li><a href="/trials/index.shtml">Clinical Trials</a></li><li class="last"><a href="http://intramural.nimh.nih.gov/">Intramural Research Programs</a></li></ul></li><li class="news"><a href="/news/index.shtml">News Room</a> <ul><li><a href="/news/index.shtml">News Room Home</a></li><li><a href="/science-news/index.shtml">Science News</a></li><li><a href="/media/video/index.shtml">NIMH Video</a></li><li><a href="/media/audio/index.shtml">NIMH Audio</a></li><li class="last"><a href="http://infocenter.nimh.nih.gov/il/public_il/">Image Library</a></li></ul></li><li class="education"><a href="/educational-resources/index.shtml">Educational Resources</a> <ul><li><a href="/educational-resources/brain-basics/brain-basics.shtml">Brain Basics</a></li><li><a href="/educational-resources/brains-inner-workings/the-brains-inner-workings-activities-for-grades-9-through-12.shtml">Brain’s Inner Workings</a></li><li class="last"><a href="/educational-resources/neuroscience-and-psychiatry/neuroscience-and-psychiatry-module-1-translating-neural-circuits-into-novel-therapeutics.shtml">Neuroscience and Psychiatry Module</a></li></ul></li><li class="about"><a href="/about/index.shtml">About NIMH</a> <ul><li><a href="/about/index.shtml">About NIMH Home</a></li><li><a href="/about/director/index.shtml">Director’s Blog</a></li><li><a href="/about/strategic-planning-reports/index.shtml">Strategic Plans</a></li><li><a href="/about/connect-with-nimh/index.shtml">Contact Us</a></li><li><a href="/about/organization/index.shtml">Offices and Divisions</a></li><li><a href="/about/advisory-boards-and-groups/index.shtml">Advisory Boards &amp; Groups</a></li><li class="last"><a href="/about/budget/index.shtml">Budget</a></li></ul></li></ul>
+<div id="subnav">
+							<a href='/index.shtml'>Home</a><span class="separator"></span><a href='/about/index.shtml'>About NIMH</a><span class="separator"></span><span class="last-crumb"><a href='/about/director/index.shtml'>Director’s Blog</a></span></div><div class='row standard standard-styles' id='main' role='main'><div class='ie06-standard ie06-fc ie06-c'><p class="stamp">
+
+	<a href="/about/director/index.shtml">Director’s Blog</a><br/><span class="date-stamp">March 29, 2011</span></p>	<h1 id="title">New Findings Reveal New Worlds In Neuroscience</h1>		<p class='post-author'>
+											<a href="/about/director/directors-biography.shtml">Thomas Insel</a></p><p>“The purpose of science is not to open the door to an infinitude of wisdom but to set some limit to the infinitude of error.”<br />Brecht, <em>Galileo</em></p><p>This quote comes to mind with a couple of recent clinical research reports that suggest some of the broadly accepted wisdom of our field may be wrong. For instance, lack of adherence to oral medication has been widely considered the most common reason for treatment failure in schizophrenia. However, in a recent random assignment study with a two year follow-up, an injectable, long-acting medication was no better than oral medication, as measured by re-hospitalization or quality of life measures.</p><p>In another example, PTSD has been assumed to be a leading cause of the increased suicides in soldiers and veterans. Yet a recent VA study of more than 7,000 suicides found that bipolar disorder was the most prevalent diagnosis. PTSD only increased the risk for suicide when complicated by substance abuse.</p><p>Nonetheless, windows to completely new areas of research have been opened recently by research efforts in basic science. These reports may not offer “an infinitude of wisdom,” but they force us to consider factors that have not previously been thought to have any role in mental health or illness.</p><p>For instance, Rochellys Diaz Heijtz and colleagues have brought the microbiome to the study of brain and behavior. Microbiomics is an emerging area of biomedical research characterizing the microbes of the human body. Only about 10% of the DNA on our bodies is human, with the other 90% belonging to a vast array of bacterial species, many of which have only recently been identified. Does this microbial ecology influence human health? Several studies have implicated the microbial flora of the gut in obesity. Some have wondered if the microbial environment could also affect brain development.</p><p>The Heijtz team provides some of the first evidence supporting this idea. They compared the offspring of germ-free mice to mice with normal gut bacteria. Offspring of germ-free mice had changes in neurotransmitters, growth factors, synaptic proteins, and anxiety-related behaviors relative to mice exposed to normal bacteria during development. Germ-free moms given the bacteria of the control mice had offspring with the behaviors of the control mice. But germ-free mice that were exposed to gut bacteria as adults never adopted the behavior patterns, like the level of fearfulness, of mice that are born and grow up in an environment with bacteria.Apparently, there is a sensitive period during fetal development when the mother’s bacterial environment can influence brain development and subsequent behavior of her offspring. The mechanism is unknown, but there are clear implications for mental disorders.</p><p>Equally intriguing are recent findings from the field of epigenomics. If genomics is the study of DNA as text, epigenomics is the study of how this text is highlighted or redacted by proteins that bind to the DNA. Epigenomics is one process by which environmental factors – from stress to diet to toxins – influence development; in other words, how nurture alters nature.</p><p>Uchida and colleagues compared two different strains of laboratory mice, one that is highly susceptible to stress and another that is resistant. They looked for epigenomic differences in the nucleus accumbens, a region of the brain known to be involved in reward and, according to some studies, in the response to stress. They found a difference in the GDNF gene – the glial derived neurotrophic factor gene – which had previously been implicated in the stress response. The genomic sequence was identical in the two strains but in the stress-susceptible mice, epigenomic marks silenced GDNF, leading to reductions in the amount of GDNF protein. A chemical inhibitor of these epigenomic tags reversed the stress/fear behavior of these mice. Conversely, when epigenomic silencing of GDNF was induced in the resilient mice, they became fearful.</p><p>These kinds of basic studies on epigenomics begin to identify novel factors involved in individual responses to stress and they suggest a mechanism by which early experience (nurture) can have enduring effects on stress responsiveness (nature).</p><p>Epigenomics may also identify clinical subgroups. Gregory and colleagues reported a rare mutation in the oxytocin receptor gene in a single case of autism. In many more people with autism they found this same gene to be silenced by epigenomic methylation.</p><p>Jacquemont and colleagues recently reported a sub-group of patients with autism who benefit from a new drug to treat Fragile X Syndrome, a genetic form of intellectual deficit often associated with autism. While the medication had no effect in the over all group of 38 patients, in a subgroup with the Fragile X gene completely shut off by an epigenomic tag, there was significant improvement. Whether epigenomics will be a useful biomarker for selecting treatments remains to be seen, but these early studies suggest that genomics is giving us only part of the story of individual differences.</p><p>We are living through an extraordinary period of discovery in neuroscience, analogous to the exuberant periods of theoretical physics a century ago or microbiology a half-century ago. The challenge is keeping up, navigating between the “infinitude of wisdom” and the “infinitude of error.”</p><hr /><p>RA Rosenheck, JH Krystal, R Lew, PG Barnett, L Fiore, D Valley, SS Thwin, JE Vertrees, MH Liang; CSP555 Research Group. <a href="http://www.ncbi.nlm.nih.gov/pubmed/21366475"><strong>Long-acting risperidone and oral antipsychotics in unstable schizophrenia.</strong></a> <em>N Engl J Med.</em> 364(9):842-51, 2011.</p><p>Mark A. Ilgen, Amy S. B. Bohnert, Rosalinda V. Ignacio, John F. McCarthy, Marcia M. Valenstein, H. Myra Kim, and Frederic C. Blow. <strong>Psychiatric Diagnoses and Risk of Suicide in Veterans.</strong> Arch Gen Psychiatry, Nov 2010; 67: 1152 - 1158.</p><p>RD Heijtz, S Wang, F Anuard, Y Qiana, B Björkholmd, A Samuelssond, ML Hibberd, H Forssberg, and S Pettersson. <strong>Normal gut microbiota modulates brain development and behavior.</strong> <em>Proceedings of the National Academy of Sciences,</em> 108:3047-3052, 2011.</p><p>S Uchida, K Hara, A Kobayashi, K Otsuki, H Yamagata, T Hobara, T Suzuki, N Miyata, and Y Watanabe, <strong>Epigenetic Status of Gdnf in the Ventral Striatum Determines Susceptibility and Adaptation to Daily Stressful Events.</strong> <em>Neuron</em>, pp 359-372, 2011.</p><p>S Gregory, J Connelly, A Towers, J Johnson, D Biscocho, C Markunas, C Lintas, R Abramson, H Wright, P Ellis, C Langford, G Worley, R Delong, S Murphy, M Cuccaro, A Persico, M Periak-Vance. <strong>Genomic and epigenetic evidence for oxytocin receptor deficiency in autism</strong>. <em>BMC Medicine</em>, 2009;</p><p>S Jacquemont, A Curie, V des Portes, MG Torrioli, E Berry-Kravis, RJ Hagerman, FJ Ramos, K Cornish, Y He, C Paulding, G Neri, F Chen, N Hadjikhani, D Martinet, J Meyer, JS Beckmann, K Delange, A Brun, G Bussy, F Gasparini, T Hilse, A Floesser, J Branson, G Bilbe, D Johns, B Gomez-Mancilla.<strong>Epigenetic Modification of the <em>FMR1</em> Gene in Fragile X Syndrome Is</strong> <strong>Associated with Differential Response to the mGluR5 Antagonist AFQ056</strong> <em>Sci Transl Med</em> <strong>3</strong>, 64ra1 pp 1-9, 2011.</p><div class="box default">Learn more about: 
+<a href="/topics/topic-page-basic-research.shtml">Basic Research</a>. View all posts about: 
+<a href="/about/director/index-basic-research.shtml">Basic Research</a>.<!--[if lt IE 9]>
+<span class="tr"></span><span class="br"></span><span class="bl"></span><span class="tl"></span>
+<![endif]-->
+</div></div><div class='ie0607-standard ie0607-lc ie06-c'>	
+
+
+<div class="box default"><h2>RSS Feed for Director’s Blog</h2><p><a href="/site-info/feed-directors-blog.atom" title=""><span class="rss-link">Subscribe to full feed of Director’s Blog</span></a></p><!--[if lt IE 9]>
+<span class="tr"></span><span class="br"></span><span class="bl"></span><span class="tl"></span>
+<![endif]-->
+</div>
+<div class="box default"><h2>Publications by the Director</h2><p><a href="/about/director/publications/index.shtml" title="">Selected publications by NIMH Director Thomas Insel</a></p><!--[if lt IE 9]>
+<span class="tr"></span><span class="br"></span><span class="bl"></span><span class="tl"></span>
+<![endif]-->
+</div>
+    
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																<div class="box default"><h2>Posts by Topic</h2>									<h3>Disorders</h3><ul>						
+<li><a href='/about/director/index-adhd.shtml'>Attention Deficit Hyperactivity Disorder (ADHD) (3 Items)</a></li>									
+									
+<li><a href='/about/director/index-autism.shtml'>Autism (8 Items)</a></li>									
+<li><a href='/about/director/index-bipolar-disorder.shtml'>Bipolar Disorder (4 Items)</a></li>									
+<li><a href='/about/director/index-borderline.shtml'>Borderline Personality Disorder (1 Item)</a></li>									
+<li><a href='/about/director/index-depression.shtml'>Depression (5 Items)</a></li>									
+									
+									
+<li><a href='/about/director/index-ocd.shtml'>Obsessive-Compulsive Disorder (OCD) (1 Item)</a></li>									
+									
+<li><a href='/about/director/index-ptsd.shtml'>Post-Traumatic Stress Disorder (5 Items)</a></li>									
+<li><a href='/about/director/index-schizophrenia.shtml'>Schizophrenia (9 Items)</a></li>									
+												</ul>						<h3>Populations</h3><ul>						
+									
+									
+<li><a href='/about/director/index-military.shtml'>Military Servicemembers (1 Item)</a></li>									
+<li><a href='/about/director/index-women.shtml'>Women's Mental Health (1 Item)</a></li>									
+<li><a href='/about/director/index-youth.shtml'>Children and Adolescents (5 Items)</a></li>												</ul>						<h3>Research</h3><ul>						
+<li><a href='/about/director/index-basic-research.shtml'>Basic Research (13 Items)</a></li>									
+<li><a href='/about/director/index-clinical-research-and-trials.shtml'>Clinical Research and Trials (9 Items)</a></li>									
+<li><a href='/about/director/index-research-funding.shtml'>Research Funding (24 Items)</a></li>									
+<li><a href='/about/director/index-services-research.shtml'>Mental Health Services Research (1 Item)</a></li>												</ul>						<h3>Other</h3><ul>						
+									
+<li><a href='/about/director/index-coping-with-traumatic-events.shtml'>Coping with Traumatic Events (2 Items)</a></li>									
+<li><a href='/about/director/index-diversity.shtml'>Diversity and Ethnic Groups (4 Items)</a></li>									
+<li><a href='/about/director/index-genetics.shtml'>Genetics (8 Items)</a></li>									
+<li><a href='/about/director/index-hiv.shtml'>HIV/AIDS (1 Item)</a></li>									
+<li><a href='/about/director/index-imaging.shtml'>Imaging (3 Items)</a></li>									
+<li><a href='/about/director/index-medications.shtml'>Medications (7 Items)</a></li>									
+<li><a href='/about/director/index-nimh.shtml'>NIMH (24 Items)</a></li>									
+<li><a href='/about/director/index-prevention.shtml'>Prevention (3 Items)</a></li>									
+									
+<li><a href='/about/director/index-recovery-act.shtml'>Recovery Act (1 Item)</a></li>									
+<li><a href='/about/director/index-statistics.shtml'>Statistics (2 Items)</a></li>									
+<li><a href='/about/director/index-suicide-prevention.shtml'>Suicide Prevention (6 Items)</a></li>									
+<li><a href='/about/director/index-treatments.shtml'>Treatments (9 Items)</a></li>				</ul><!--[if lt IE 9]>
+<span class="tr"></span><span class="br"></span><span class="bl"></span><span class="tl"></span>
+<![endif]-->
+</div><div class="box default"><h2>Posts by Month</h2><ul>
+<li><a href='/about/director/2011/index-12-2011.shtml'>December 2011 (3 Items)</a></li>
+<li><a href='/about/director/2011/index-11-2011.shtml'>November 2011 (3 Items)</a></li>
+<li><a href='/about/director/2011/index-10-2011.shtml'>October 2011 (4 Items)</a></li>
+<li><a href='/about/director/2011/index-09-2011.shtml'>September 2011 (2 Items)</a></li>
+<li><a href='/about/director/2011/index-08-2011.shtml'>August 2011 (3 Items)</a></li>
+<li><a href='/about/director/2011/index-07-2011.shtml'>July 2011 (1 Item)</a></li>
+<li><a href='/about/director/2011/index-06-2011.shtml'>June 2011 (4 Items)</a></li>
+<li><a href='/about/director/2011/index-05-2011.shtml'>May 2011 (2 Items)</a></li>
+<li><a href='/about/director/2011/index-04-2011.shtml'>April 2011 (2 Items)</a></li>
+<li><a href='/about/director/2011/index-03-2011.shtml'>March 2011 (4 Items)</a></li>
+<li><a href='/about/director/2011/index-02-2011.shtml'>February 2011 (3 Items)</a></li>
+<li><a href='/about/director/2011/index-01-2011.shtml'>January 2011 (3 Items)</a></li>
+<li><a href='/about/director/2010/index-12-2010.shtml'>December 2010 (3 Items)</a></li>
+<li><a href='/about/director/2010/index-11-2010.shtml'>November 2010 (2 Items)</a></li>
+<li><a href='/about/director/2010/index-10-2010.shtml'>October 2010 (3 Items)</a></li>
+<li><a href='/about/director/2010/index-09-2010.shtml'>September 2010 (2 Items)</a></li>
+<li><a href='/about/director/2010/index-08-2010.shtml'>August 2010 (3 Items)</a></li>
+<li><a href='/about/director/2010/index-07-2010.shtml'>July 2010 (1 Item)</a></li>
+<li><a href='/about/director/2010/index-06-2010.shtml'>June 2010 (4 Items)</a></li>
+<li><a href='/about/director/2010/index-05-2010.shtml'>May 2010 (2 Items)</a></li>
+<li><a href='/about/director/2010/index-04-2010.shtml'>April 2010 (3 Items)</a></li>
+<li><a href='/about/director/2010/index-03-2010.shtml'>March 2010 (4 Items)</a></li>
+<li><a href='/about/director/2010/index-02-2010.shtml'>February 2010 (1 Item)</a></li>
+<li><a href='/about/director/2010/index-01-2010.shtml'>January 2010 (3 Items)</a></li>
+<li><a href='/about/director/2009/index-12-2009.shtml'>December 2009 (2 Items)</a></li>
+<li><a href='/about/director/2009/index-11-2009.shtml'>November 2009 (2 Items)</a></li>
+<li><a href='/about/director/2009/index-10-2009.shtml'>October 2009 (1 Item)</a></li>
+<li><a href='/about/director/2009/index-09-2009.shtml'>September 2009 (1 Item)</a></li></ul><!--[if lt IE 9]>
+<span class="tr"></span><span class="br"></span><span class="bl"></span><span class="tl"></span>
+<![endif]-->
+</div>
+</div></div><div id="footer" role="contentinfo">
+    
+<div class="box no-heading"><ul class="row social-media-links"><li class="addthis"><a class="addthis_button" href="http://www.addthis.com/bookmark.php">Bookmark &amp; Share</a></li><li class="email"><a href="/site-info/register-for-nimh-e-mail-newsletters.shtml">Newsletters</a></li><li class="rss"><a href="/site-info/subscribe-to-nimh-rss-updates.shtml">RSS Feeds</a></li><li class="facebook"><a href="http://www.facebook.com/nimhgov">Facebook</a></li><li class="twitter"><a href="http://twitter.com/nimhgov">Twitter</a></li><li class="youtube"><a href="http://www.youtube.com/nimhgov">YouTube</a></li></ul><!--[if lt IE 9]>
+<span class="tr"></span><span class="br"></span><span class="bl"></span><span class="tl"></span>
+<![endif]-->
+</div>
+
+    <ul class="row standard-links"><li><a href="/site-info/contact-nimh.shtml">Contact Us</a></li><li><a href="/about/staff-directories/index.shtml">Staff Directories</a></li><li><a href="/site-info/privacy-notice.shtml">Privacy Notice</a></li><li><a href="/site-info/policies.shtml">Policies</a></li><li><a href="http://www.nih.gov/icd/od/foia/index.htm">FOIA</a></li><li><a href="/site-info/accessibility.shtml">Accessibility</a></li><li><a href="/topics/index.shtml">Topic Finder</a></li></ul>
+<div id="page-bottom"><p id="agency-text">The National Institute of Mental Health (NIMH) is part of the National Institutes of Health (NIH), a component of the U.S. Department of Health and Human Services.</p><div id="org-icons"><a href="http://www.nih.gov/"><img alt="Logo for the National Institutes of Health" src="/images/nihlogo.png" /></a> <a href="http://www.hhs.gov/"><img alt="Logo for the Department of Health and Human Services" src="/images/hhslogo.png" /></a> <a href="http://www.usa.gov/"><img alt="Logo for USA.Gov" src="http://www.nimh.nih.gov/images/usagovlogo.png" /></a></div><p id="nih-trademark">“NIH… Turning Discovery into Health”</p>
+<p id="review-date">This page last reviewed: March 31, 2011.</p></div></div><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js"></script><!--[if lt IE 9]></div><![endif]-->
+</body></html>

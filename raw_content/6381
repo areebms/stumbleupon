@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head data-layout-view="default" class="xj_layout_head"><script>(function(){var d={date:8,app:"s",host:"s",ip:4,ua:"s",user:"s",url:"s",html:4,css:4,render:4,js:4,nlr:4,nlr_eval:4,img:4,embed:4,obj:4,mcc:4,mcr:4,mct:4,nac:4,pac:4,l_t:"s"},h=document,e="getElementsByTagName",i=window,c=function(){return(new Date).getTime()},f=c(),g={},b={},a={},j=i.bzplcm={listen:{},start:function(k){b[k]=c();return j},stop:function(k){g[k]=c()-b[k];return j},ts:function(k){g[k]=c()-f;return j},abs_ts:function(k){g[k]=c();return j},add:function(l){for(var k in l){if("function"!=typeof l[k]){a[k]=l[k]}}},send:function(){if(!g.he){j.ts("he")}a.date=["xdate"];a.host=["xhost"];a.ip=["xip"];a.ua=["xua"];a.url=["xpath"];a.html=g.he-g.hb;a.css=g.ca-g.cb;a.render=g.jb-g.hb;a.js=g.ja-g.jb;a.nlr=g.nr-g.ns;a.nlr_eval=g.ni+g.ne;a.img=h[e]("img").length;a.embed=h[e]("embed").length;a.obj=h[e]("object").length;if(i.xg&&i.xg.xnTrackEvent){i.xg.xnTrackEvent(d,"BazelCSPerfLite",a)}}}})();</script><script>if(window.bzplcm)window.bzplcm.ts('hb')</script>    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TuDiabetes</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="Connecting people touched by diabetes." />
+    <meta name="keywords" content="diabetic, diabetes, type1, type2, community, health, insulin, pump, support, non-profit" />
+<meta name="title" content="TuDiabetes" />
+<link rel="image_src" href="http://api.ning.com/icons/appatar/583967?default=583967&amp;width=90&amp;height=90" />
+<script type="text/javascript">
+djConfig = { baseScriptUri: 'http://www.tudiabetes.org/xn/static-6.11.8.1/js/dojo-0.3.1-ning/', isDebug: false }
+ning = {"CurrentApp":{"premium":true,"iconUrl":"http:\/\/api.ning.com\/icons\/appatar\/583967?default=583967&width=64&height=64","url":"http:\/\/tudiabetes.ning.com","domains":["tudiabetes.org","tudiabetes.com"],"online":true,"privateSource":true,"id":"tudiabetes","appId":"583967","description":"Connecting people touched by diabetes.","name":"TuDiabetes","owner":"askmanny","createdDate":"2007-03-06T03:18:55.729Z","runOwnAds":false,"category":{"diabetic":null,"diabetes":null,"type1":null,"type2":null,"community":null,"health":null,"insulin":null,"pump":null,"support":null,"non-profit":null},"tags":["diabetic","diabetes","type1","type2","community","health","insulin","pump","support","non-profit"]},"CurrentProfile":null,"maxFileUploadSize":7};
+    (function(){
+        if (!window.ning) { return; }
+
+        var age, gender, rand, obfuscated, combined;
+
+        obfuscated = document.cookie.match(/xgdi=([^;]+)/);
+        if (obfuscated) {
+            var offset = 100000;
+            obfuscated = parseInt(obfuscated[1]);
+            rand = obfuscated / offset;
+            combined = (obfuscated % offset) ^ rand;
+            age = combined % 1000;
+            gender = (combined / 1000) & 3;
+            gender = (gender == 1 ? 'm' : gender == 2 ? 'f' : 0);
+            ning.viewer = {"age":age,"gender":gender};
+        }
+    })();
+
+if (window.location.hash.indexOf('#!/') == 0) {
+    window.location.replace(window.location.hash.substr(2));
+}
+window.xg = {};
+xg.addOnRequire = function(f) { xg.addOnRequire.functions.push(f); };
+xg.addOnRequire.functions = [];
+xg.addOnFacebookLoad = function (f) { xg.addOnFacebookLoad.functions.push(f); };
+xg.addOnFacebookLoad.functions = [];
+xg._loader = {
+    p: 0,
+    loading: function(set) { this.p++; },
+    onLoad: function(set) {
+        this.p--;
+        if (this.p == 0 && typeof(xg._loader.onDone) == 'function') {
+            xg._loader.onDone();
+        }
+    }
+};
+xg._loader.loading('xnloader');
+if (window.bzplcm) {
+    window.bzplcm._profileCount = 0;
+    window.bzplcm._profileSend = function() { if (window.bzplcm._profileCount++ == 1) window.bzplcm.send(); };
+}
+xg._loader.onDone = function() {
+        if(window.bzplcm)window.bzplcm.start('ni');
+        xg.shared.util.parseWidgets();    var addOnRequireFunctions = xg.addOnRequire.functions;
+    xg.addOnRequire = function(f) { f(); };
+    try {
+        if (addOnRequireFunctions) { dojo.lang.forEach(addOnRequireFunctions, function(onRequire) { onRequire.apply(); }); }
+    } catch (e) {
+        if(window.bzplcm)window.bzplcm.ts('nx').send();
+        throw e;
+    }
+    if(window.bzplcm) { window.bzplcm.stop('ni'); window.bzplcm._profileSend(); }
+};
+window.xn = { track: { _globals: { screen_name: null, subdomain: "tudiabetes", is_owner: false, is_admin: false, is_member: false, join_date: 0, request_method: "GET", trace: "d9128ec2-bb1d-4491-8cab-580e6570e819"}, event: function() {}, pageView: function() {}, registerCompletedFlow: function() {}, registerError: function() {}, timer: function() { return { lapTime: function() {} }; }, _trackingHost: "coll.ning.com", _jsDebug: false } }    </script>
+<link rel="alternate" type="application/atom+xml" title="Popular Conversations - TuDiabetes" href="http://www.tudiabetes.org/leaderboards/topcontent/week?feed=yes&amp;xn_auth=no&amp;n=20&amp;images=yes&amp;imageMaxSize=240" /><link rel="alternate" type="application/rss+xml" title="Latest Activity - TuDiabetes" href="http://www.tudiabetes.org/activity/log/list?fmt=rss" /><link rel="alternate" type="application/atom+xml" title="Forum - TuDiabetes" href="http://www.tudiabetes.org/forum/topic/list?feed=yes&amp;xn_auth=no" /><link rel="alternate" type="application/atom+xml" title="Blog Posts - TuDiabetes" href="http://www.tudiabetes.org/profiles/blog/feed?xn_auth=no" /><script>if(window.bzplcm)window.bzplcm.ts('cb')</script>
+<style type="text/css" media="screen,projection">
+@import url(http://static.ning.com/socialnetworkmain/widgets/index/css/common-982.min.css?xn_version=3686318567);
+@import url(http://static.ning.com/socialnetworkmain/widgets/shared/css/editors/tinymce/ui.min.css?xn_version=2698157939);
+@import url(http://static.ning.com/socialnetworkmain/widgets/index/css/component.min.css?xn_version=669402888);
+
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(http://static.ning.com/tudiabetes/instances/css/embed_1332001241.css?xn_version=201203152002);
+
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(http://static.ning.com/tudiabetes/instances/css/theme-982_1331843662.css?xn_version=201203152002);
+
+</style>
+
+<!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="http://static.ning.com/socialnetworkmain/widgets/index/css/common-ie6.min.css?v=201203152002" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="http://static.ning.com/socialnetworkmain/widgets/index/css/common-ie7.css?v=201203152002" />
+<![endif]-->
+<script>if(window.bzplcm)window.bzplcm.ts('ca')</script><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.tudiabetes.org/profiles/blog/rsd" />
+</head>
+<body>
+    <div class="xj_before_content"><div id='fb-root'></div>
+<script>
+  window.fbAsyncInit = function () {
+    FB.init({
+      appId      : '364613525347', 
+      status     : true,   
+      cookie     : true,   
+      xfbml      : false,  
+      oauth      : true,   
+      channelUrl : 'http://www.tudiabetes.org/xn_resources/widgets/index/js/facebookapp/channel.html'
+    });
+    var n = xg.addOnFacebookLoad.functions.length;
+    for (var i = 0; i < n; i++) {
+      xg.addOnFacebookLoad.functions[i]();
+    }
+    xg.addOnFacebookLoad = function (f) { f(); };
+    xg.addOnFacebookLoad.functions = [];
+  };
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  })();
+</script>        <div id="xn_bar">
+            <div id="xn_bar_menu">
+                <div id="xn_bar_menu_branding" >
+                                    </div>
+
+                <div id="xn_bar_menu_more">
+                    <form id="xn_bar_menu_search" method="GET" action="http://www.tudiabetes.org/main/search/search">
+                        <fieldset>
+                            <input type="text" name="q" id="xn_bar_menu_search_query" value="Search TuDiabetes" _hint="Search TuDiabetes" accesskey="4" class="text xj_search_hint" />
+                            <a id="xn_bar_menu_search_submit" href="#" onclick="document.getElementById('xn_bar_menu_search').submit();return false">Search</a>
+                        </fieldset>
+                    </form>
+                </div>
+
+                            <ul id="xn_bar_menu_tabs">
+                                            <li><a href="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain">Join</a></li>
+                        <li><a href="http://www.tudiabetes.org/main/authorization/signIn?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain">Sign In</a></li>
+                                        </ul>
+                        </div>
+        </div>
+        </div>
+    <div class="xg_theme" data-layout-pack="brutus">
+        <div id="xg_themebody">
+            <div id="xg_ad_above_header" class="xg_ad xj_ad_above_header dy-displaynone">
+                    
+                </div>        
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <h1 id="xg_sitename" class="xj_site_name"><a id="application_name_header_link" href="/"><img src="http://api.ning.com:80/files/diGKoIbxkPB-lJwf2OdfGmcUBz7-4iALyyCGrVOyN65veElhWjRJdN6dBJVAG76dTTcuFP*puFRzFjifUxKujg__/banner_01.12_r.png" alt="TuDiabetes"></a></h1>
+                    <p id="xg_sitedesc" class="xj_site_desc"></p>
+                </div>
+                <div id="xg_navigation" class="xj_navigation"><ul>
+    <li id="xg_tab_main" class="xg_subtab this"><a href="/"><span>Home</span></a></li><li id="xg_tab_profile" class="xg_subtab"><a href="/profiles"><span>My Page</span></a></li><li id="xg_tab_members" class="xg_subtab"><a href="/profiles/members/"><span>Members</span></a></li><li dojoType="SubTabHover" id="xg_tab_forum" class="xg_subtab"><a href="/forum"><span>Forum</span></a><div class="xg_subtab" style="display:none;position:absolute;"><ul class="xg_subtab" style="display:block;" ><li style="list-style:none !important;display:block;text-align:left;"><a href="/forum/categories/583967:Category:25245/listForCategory" style="float:none;"><span>New to Diabetes?</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="/forum/categories/583967:Category:2623/listForCategory" style="float:none;"><span>Type 1 Diabetes</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="/forum/categories/583967:Category:2624/listForCategory" style="float:none;"><span>Type 2 Diabetes</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="/forum/categories/lada-type-15-diabetes-forum/listForCategory" style="float:none;"><span>LADA (Type 1.5)</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="/forum/categories/583967:Category:2625/listForCategory" style="float:none;"><span>Insulin Pump</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="/forum/category/listByTitle" style="float:none;"><span>More Categories...</span></a></li></ul></div></li><li id="xg_tab_blogs" class="xg_subtab"><a href="/profiles/blog/list"><span>Blogs</span></a></li><li dojoType="SubTabHover" id="xg_tab_groups" class="xg_subtab"><a href="/notes/Group_Categories"><span>Groups</span></a><div class="xg_subtab" style="display:none;position:absolute;"><ul class="xg_subtab" style="display:block;" ><li style="list-style:none !important;display:block;text-align:left;"><a href="/group/omnipodusers" style="float:none;"><span>Omnipod Users</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="/group/minimedparadigmusers" style="float:none;"><span>Minimed Paradigm Users</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="/group/animasusers" style="float:none;"><span>Animas Users</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="/group/dexcomusers" style="float:none;"><span>Dexcom Users</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="/group/canada" style="float:none;"><span>Canadian People</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="/groups" style="float:none;"><span>More Groups...</span></a></li></ul></div></li><li dojoType="SubTabHover" id="xg_tab_events" class="xg_subtab"><a href="/events"><span>Events</span></a><div class="xg_subtab" style="display:none;position:absolute;"><ul class="xg_subtab" style="display:block;" ><li style="list-style:none !important;display:block;text-align:left;"><a href="/events/event/listByType?type=videochat" style="float:none;"><span>Video Chats</span></a></li></ul></div></li><li dojoType="SubTabHover" id="xg_tab_xn65" class="xg_subtab"><a href="#"><span>Media</span></a><div class="xg_subtab" style="display:none;position:absolute;"><ul class="xg_subtab" style="display:block;" ><li style="list-style:none !important;display:block;text-align:left;"><a href="/photo" style="float:none;"><span>All Photos</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="/video" style="float:none;"><span>All Videos</span></a></li></ul></div></li><li dojoType="SubTabHover" id="xg_tab_xn66" class="xg_subtab"><a href="#"><span>TuAnalyze</span></a><div class="xg_subtab" style="display:none;position:absolute;"><ul class="xg_subtab" style="display:block;" ><li style="list-style:none !important;display:block;text-align:left;"><a href="/opensocial/ningapps/show?appUrl=http%3A%2F%2Ftuanalyze.chip.org%2Ftuanalyze%2FdiabetesGadget.xml%3Fning-app-status%3Dnetwork&amp;owner=askmanny" style="float:none;"><span>TuAnalyze Community Map</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="/opensocial/ningapps/show?appUrl=http://tuanalyze.chip.org/tuanalyze/diabetesGadget.xml%3Fning-app-status%3Dnetwork&amp;view_param=about&amp;owner=askmanny" style="float:none;"><span>About TuAnalyze</span></a></li></ul></div></li><li dojoType="SubTabHover" id="xg_tab_xn29" class="xg_subtab"><a href="http://diabeteshandsfoundation.org"><span>Our Programs</span></a><div class="xg_subtab" style="display:none;position:absolute;"><ul class="xg_subtab" style="display:block;" ><li style="list-style:none !important;display:block;text-align:left;"><a href="http://www.estudiabetes.org" style="float:none;"><span>EsTuDiabetes (espa&ntilde;ol)</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="/notes/Word_In_Your_Hand" style="float:none;"><span>Word In Your Hand</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="http://bigbluetest.org/" style="float:none;"><span>The Big Blue Test</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="/profile/NoSugarAddedPoetry" style="float:none;"><span>No-Sugar Added Poetry</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="http://HealthSeekerGame.org" style="float:none;"><span>HealthSeeker</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="/group/drawingdiabetes" style="float:none;"><span>Drawing Diabetes</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="/group/diabetessuppliesart" style="float:none;"><span>Diabetes Supplies Art</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="http://makingsenseofdiabetes.org" style="float:none;"><span>Making Sense of Diabetes</span></a></li></ul></div></li><li dojoType="SubTabHover" id="xg_tab_xn57" class="xg_subtab"><a href="http://tud4.us/TDNavBar" target="_blank"><span>Donate</span></a><div class="xg_subtab" style="display:none;position:absolute;"><ul class="xg_subtab" style="display:block;" ><li style="list-style:none !important;display:block;text-align:left;"><a href="/notes/Community_Supporters_2011" style="float:none;"><span>2011 Donors</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="/notes/Community_Supporters_2010" style="float:none;"><span>2010 Donors</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="/notes/Community_Supporters_2009" style="float:none;"><span>2009 Donors</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="/notes/Community_Supporters" style="float:none;"><span>2008 Donors</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="/notes/How_to_fundraise_for_DHF" style="float:none;"><span>Fundraise for DHF</span></a></li></ul></div></li></ul>
+</div>
+            </div>
+            <div id="xg_ad_below_header" class="xg_ad xj_ad_below_header dy-displaynone">
+                        
+                    </div>
+            <div id="xg" class="xg_widget_main xg_widget_main_index xg_widget_main_index_index">
+            	 
+                <div id="xg_body">
+                   
+                    <div class="xj_notifications"></div>
+                    <div class="xg_column xg_span-16" id="column1">
+                        <div id="xg_canvas" class="xj_canvas">
+                            <div  class='xg_colgroup first-child last-child'>
+<div _maxEmbedWidth="730" _columnCount="3"  class='xg_3col first-child'>
+<div  class='xg_colgroup first-child last-child'>
+<div _maxEmbedWidth="220" _columnCount="1"  id="xg_layout_column_1" class='xg_1col first-child'>
+<div class="xg_module  html_module module_text xg_reset" data-module_name="text"
+        >
+                <div class="xg_module_body nopad xg_user_generated">
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript">
+</script>
+<script src="http://api.ning.com:80/files/2jAXkkyP-fDRXo7rLhoT0NXdT5u78dkEXHB-oBW*TCE3PpEBGl0pqrzF1U4uNbBDhz-Pg7xZS*dMSdSLiuHiyw__/jquery.simpleslider1.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+// <![CDATA[
+$(function() {
+        $('#slider').simpleslider({
+               auto: true,
+                        interval: 6000,
+                        speed: 1000,
+                        direction: 'horizontal',
+                        buttons: false,
+                nexttext: 'Next',
+                previoustext: 'Previous'
+                });
+});
+// ]]>
+</script>
+<div id="container" style="overflow: hidden;">
+<div class="spacer"></div>
+<div class="spacer"></div>
+<ul>
+<li style="list-style: none; display: inline">
+<ul id="slider" style="overflow: none; height: 300px;">
+<li style="margin: 0; padding: 0; list-style: none; height: 300px;"><a href="http://www.tudiabetes.org/forum/topics/monthly-query-tudiabetes-turns-five-where-were-you-in-relation-to" target="_blank"><img src="http://api.ning.com:80/files/PxUOMdOhInG4aDqPHghdMd7mqu-i4W6iwKmTvI4lkZ8hJL3APAOOimiySD95536tYw-U2NZgVUmO6fNA5pTCSQ__/TuDiabetesturns5.jpg" width="220" class="align-full"  /></a></li>
+<li style="margin: 0; padding: 0; list-style: none; height: 300px;"><a target="_blank" href="http://www.tudiabetes.org/forum/topics/diabetes-hands-foundation-dhf-seeds"><img class="align-full" src="http://api.ning.com:80/files/KvdPbipKh3-lEl8BPnL0-RyMKMRT56EVYsnJgRoVvb-0ZX2WybHb*5b3ecEcBIoQyFY1gI1z8bSl72e5dJQQ1g__/DHFSeeds_tdbanner.jpg" width="220"  /></a></li>
+<li style="margin: 0; padding: 0; list-style: none; height: 300px;"><a target="_blank" href="http://www.tudiabetes.org/video/winter-fatigue-staying-positive-and-active-waiting-for-spring"><img class="align-full" src="http://api.ning.com:80/files/y4Yd-PbANx6CBoBlCGgzWMqWSTMgT9jzjSybb8L8SycNXIOLzBmfW8eg9jBSkZUhw*GHXrI1uGbnnLPxBkQpBQ__/WinterFatigueVideochat_b.jpg" width="220"  /></a></li>
+<li style="margin: 0; padding: 0; list-style: none; height: 300px;"><a href="http://www.tudiabetes.org/video/an-interview-with-dr-faustman-2012" target="_blank"><img src="http://api.ning.com:80/files/iz4P5NgmtY*WSO3Hiwu1ixmkYYUYFWJ3XWYLxXIQobH-joqGwsykvhWnUQW09bLVu6V8nGAfuhMTLq11O4Xyuw__/Dr.Faustman.jpg" width="220" class="align-full"  /></a></li>
+</ul>
+<div class="spacer"></div>
+</li>
+</ul>
+</div>
+        </div>
+            </div>
+<div class="xg_module module_members">
+    <div class="xg_module_head">
+        <h2>Members</h2>
+    </div>
+    <div class="xg_module_body body_small" data-module_name="members">
+    <ul class="clist">
+        <li>
+        <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/Vrinda"  title="Vrinda"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com:80/files/5ClB0pDljYzl4SEoQOpvqTDwS5qHlnVmvBpO-zGGs5cn*FE7pyKeoZ82AuYzSX8HRzwiXSnNmXup6x7OhHLuiw__/411094609.jpeg?xgip=339%3A0%3A1443%3A1443%3B%3B&amp;width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span></li>
+
+<li>
+        <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/Raesj"  title="Raesj"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com:80/files/gk73nlcckStZuQ3VRHoa-Pv2HkSciVo7NMxJcfxsCUoGoi0If2qsYvKwWXbPp*oYKp4aZsGIb4IvQP5dO5CJ5A__/647927630.bin?xgip=0%3A0%3A1530%3A1530%3B%3B&amp;width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span></li>
+
+<li>
+        <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/KellyCollins"  title="Kelly Collins"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com:80/files/NGsc6S07Pk14EhdUo6zeWLhDd4lkfQWoHKw3*8WWkVskqZ0N1NmW9WbwiLlc9nt01wzJTBEojXluSVcs1xgXsQ__/693805296.jpeg?xgip=0%3A138%3A1215%3A1215%3B%3B&amp;width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span></li>
+
+<li>
+        <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/mamalookingood"  title="Doris D"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com:80/files/EAuxFVWX1CjW2FNjUd7dznTH59chfLAEFaMic7Qz*cAspqo4qzV00F1v7dph*wIhxQKQLXpav-6tOPrVFJnFOw__/694514082.bin?xgip=126%3A0%3A766%3A766%3B%3B&amp;width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span></li>
+
+<li>
+        <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/shoshana27"  title="shoshana27"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com:80/files/3inNVyMeyJHzLssCUS1Xdut--2PBM4xjZjMtiGF1ZYUlozazMoOIkYdqDyFRuh1muqpL1bQUj-DoOtbvFQ97-g__/678561371.jpeg?xgip=0%3A0%3A1103%3A1103%3B%3B&amp;width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span></li>
+
+<li>
+        <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/manishthakur"  title="manish thakur"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com/files/IIYHMGI0cAakm90zR8kIXpgAdXfxlCkGHZO7gYHRaly7wPh0iEeUSeFDJoZ-8to5u4J4j0rvmvTrlpnvNGDUI6hx8aC6yInK/08032009407.jpg?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span></li>
+
+<li>
+        <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/LadyD"  title="LadyD"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com:80/files/5H*9SXI8zjURSnLffyRDYRcIVeC6Ioo-2uwQw0fSXSxn0hD8S3KaLkwRoE4lHSh22rN2cP0z8NOYeDleVe6C0A__/866812059.jpeg?xgip=0%3A0%3A454%3A454%3B%3B&amp;width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span></li>
+
+<li>
+        <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/Cindy187"  title="Cindy"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com:80/files/sfStL6iwk02aOAsuRGc6cMT364ly7U5VKaJnuz9TxMa3*A1pnlcBhkw4knspi3dz6ViCCtAezuUR4oOE7GoqnA__/542299986.jpeg?xgip=0%3A0%3A203%3A203%3B%3B&amp;width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span></li>
+
+<li>
+        <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/SEAGATOR164"  title="SEAGATOR"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com:80/files/s9COjwkl0IEcxeuCGGG5HDMWl4SXNICbAMywYVtuS4hqFTY6LhVcuah4z-VFWeAegOgQwPrAxDDCGfOpNjX8rA__/rkt.jpg?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span></li>
+
+<li>
+        <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/BennyL"  title="BennyL"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com:80/files/dKekvmdvXooxTKQbLThJ6WII0boXXaY26xYpiiIt5uIjsP9PcLfCzgJmW13mam*FqGqZi*J2tFaGp4ClgDjsnw__/694428608.png?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span></li>
+
+<li>
+        <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/Peetie"  title="Peetie"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com:80/files/nFj0ShghI-iN7iy1Cun7wdlwO7wdlTDWmh4u-obaGRgvhFHytfRUhGTe4U39pyIu5bNZKikwYOAWG4cKLdKU8Q__/beat001.jpg?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span></li>
+
+<li>
+        <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/MikeSanter"  title="Mike S."><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com:80/files/JA0lT*xfFHhK3eUpv3YBbC9mMMhVtBOmBIInH566vmwCck2x9Wr3Ha2p6HX44mp7Ift1AaFna74kPzaVRIFINA__/743990702.bin?xgip=9%3A343%3A1694%3A1694%3B%3B&amp;width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span></li>
+
+    </ul>
+</div>
+<div class="xg_module_foot">
+    <ul>
+                    <li class="right"><a href="http://www.tudiabetes.org/profiles/members/">View All</a></li>
+            </ul>
+</div>
+</div><div class="xg_module mini-leaderboard-module xj_leaderboard_module" data-module_name="leaderboards" >
+    <div class="xg_module_head handle">
+     <h2><span>Popular Conversations</span>&nbsp;</h2>
+    <p class="edit" style="display:none"><a class="button" href="#"><span>Edit</span></a></p>
+</div>
+<div class="xg_module_body">
+            <table class="leaderboard">
+                        <tbody>
+                                    <tr >
+                        <td class="lb-rank">1</td>
+                        <td class="lb-content">
+                            <span class="xg_avatar left"><a href="http://www.tudiabetes.org/xn/detail/583967%3ATopic%3A2604674" class="" ><img alt="RED MEAT BADDDDDDD" src="http://api.ning.com/files/79lsKjsLUlUuqblVca5Fjez6iSqDT*RT2mYqmiMcjbHpXR4RnDqs*YO83pmSEPikMmObO55vJn2UDMD177KtlSm-0B3CVszL/MYAVATAR2.JPG?width=32&amp;height=32&amp;crop=1%3A1" class="photo" width="32" height="32" /></a></span>
+                            <h3 class="dy-protect"><a href="http://www.tudiabetes.org/xn/detail/583967%3ATopic%3A2604674" class="" >RED MEAT BADDDDDDD</a></h3>
+                                                                                </td>
+                    </tr>
+                                    <tr class="alt">
+                        <td class="lb-rank">2</td>
+                        <td class="lb-content">
+                            <span class="xg_avatar left"><a href="http://www.tudiabetes.org/xn/detail/583967%3ATopic%3A2604243" class="" ><img alt="Endo and PA Issues.." src="http://api.ning.com/files/m1Jxf3UlUKVPYNcfiXv3mt*dmA*9O5*exq09aP6veqSb*FpHsbturwhXaZPdaHzBOGzTE34JizIQbDRnTcMT1w__/710744790.jpeg?xgip=0%3A53%3A716%3A716%3B%3B&amp;width=32&amp;height=32&amp;crop=1%3A1" class="photo" width="32" height="32" /></a></span>
+                            <h3 class="dy-protect"><a href="http://www.tudiabetes.org/xn/detail/583967%3ATopic%3A2604243" class="" >Endo and PA Issues..</a></h3>
+                                                                                </td>
+                    </tr>
+                                    <tr >
+                        <td class="lb-rank">3</td>
+                        <td class="lb-content">
+                            <span class="xg_avatar left"><a href="http://www.tudiabetes.org/xn/detail/583967%3ATopic%3A2601814" class="" ><img alt="Psychologist or new Dr.??" src="http://api.ning.com/files/5k*8tDMDvY-C69Z5sOpgy5rhF7Qm5VvqVfnuM9bT-*M4Ph*NFm0kHikaq3E8jwqHczkxLsYQCP2rNTe3amg37tWUQwOd-0GE/s76409652425_1805806_2360015.jpg?width=32&amp;height=32&amp;crop=1%3A1" class="photo" width="32" height="32" /></a></span>
+                            <h3 class="dy-protect"><a href="http://www.tudiabetes.org/xn/detail/583967%3ATopic%3A2601814" class="" >Psychologist or new Dr.??</a></h3>
+                                                                                </td>
+                    </tr>
+                                    <tr class="alt">
+                        <td class="lb-rank">4</td>
+                        <td class="lb-content">
+                            <span class="xg_avatar left"><a href="http://www.tudiabetes.org/xn/detail/583967%3ATopic%3A2600194" class="" ><img alt="Just Curious, Is there anyone who is generally happy with the Omnipod?" src="http://api.ning.com/files/PMFxHwQUzTEYgkY38o2DbGGTK7PckX6MK70rIqO9Mf9WSgVZnRNq1DcL*dlm7Z7jcNhdjHrVhXcbVKKAPR-2tXVHITHvDtuz/me.jpg?width=32&amp;height=32&amp;crop=1%3A1" class="photo" width="32" height="32" /></a></span>
+                            <h3 class="dy-protect"><a href="http://www.tudiabetes.org/xn/detail/583967%3ATopic%3A2600194" class="" >Just Curious, Is there anyone who is generally happy with the Omnipod?</a></h3>
+                                                                                </td>
+                    </tr>
+                                    <tr >
+                        <td class="lb-rank">5</td>
+                        <td class="lb-content">
+                            <span class="xg_avatar left"><a href="http://www.tudiabetes.org/xn/detail/583967%3ATopic%3A2603845" class="" ><img alt="Before and After Using Insulin in the 1920s" src="http://api.ning.com/files/5z5130TsaDlQ3iCBEvvbM9pu-9UJXzTygYMn7dAhHaq2qa283D72a6Rf9G*BIs71GIdqgItS1uOuzHg8A9WPb0LRcUeHom-s/Prfile1.jpg?width=32&amp;height=32&amp;crop=1%3A1" class="photo" width="32" height="32" /></a></span>
+                            <h3 class="dy-protect"><a href="http://www.tudiabetes.org/xn/detail/583967%3ATopic%3A2603845" class="" >Before and After Using Insulin in the 1920s</a></h3>
+                                                                                </td>
+                    </tr>
+                            </tbody>
+        </table>
+    </div>
+    <div class="xg_module_foot">
+        <ul>
+                            <li class="left"><a class="xg_icon xg_icon-rss" href="http://www.tudiabetes.org/leaderboards/topcontent/week?feed=yes&amp;xn_auth=no&amp;n=20&amp;images=yes&amp;imageMaxSize=240">RSS</a></li>
+                            <li class="right"><a href="http://www.tudiabetes.org/leaderboards/topcontent/week">View All</a></li>
+                    </ul>
+    </div>
+</div>
+<div id="xg_network_activity"
+    class="xg_module xg_module_activity indented_content  column_1"
+    dojotype="ActivityModule"
+    data-module_name="activity"
+    _isProfile=""
+    _isAdmin=""
+    _activityOptionsAvailable="1"
+    _columnCount="1"
+    _maxEmbedWidth="220"
+    _embedLocatorId="101/homepage/index"
+    _refreshUrl="http://www.tudiabetes.org/activity/embed/refresh?id=101%2Fhomepage%2Findex&amp;xn_out=json"
+    _activitynum="4"
+    data-owner-name=""
+    data-excerpt-length="0"
+    data-get-items-url="http://www.tudiabetes.org/activity/index/getActivityItems?xn_out=json"
+
+ >
+
+    <div class="xg_module_head">
+        <h2>Latest Activity</h2>
+    </div>
+    <div class="xg_module_body activity-feed-skinny">
+    <div
+    class="xj_social_feed_info"
+    data-count="200"
+></div>
+        <div class="xg_new_activity_items_container dy-displaynone">
+            <button class="xj-new-feed-items xg_show_activity_items">
+                <span class="xg_more_activity_arrow"></span>
+                <span class="xj-new-item-text"></span>
+            </button>
+        </div>
+        <div class="module module-feed">
+            <div id="feed-260f5954c0cae4bffc96f9208495bf09" class="feed-story  xg_separator xj_activity_item"><a href="/profile/KellyCollins?xg_source=activity"><span class="dy-avatar dy-avatar-32 feed-avatar"><img class="photo " src="http://api.ning.com:80/files/NGsc6S07Pk14EhdUo6zeWLhDd4lkfQWoHKw3*8WWkVskqZ0N1NmW9WbwiLlc9nt01wzJTBEojXluSVcs1xgXsQ__/693805296.jpeg?xgip=0%3A138%3A1215%3A1215%3B%3B&amp;width=32&amp;height=32&amp;crop=1%3A1" alt="" /></span></a>                <div class="feed-event-info">
+                    <span class="event-info-action xg_lightfont"><a href="http://www.tudiabetes.org/profile/KellyCollins?xg_source=activity">Kelly Collins</a> <a href="http://www.tudiabetes.org/xn/detail/583967:Comment:2607894?xg_source=activity">replied</a> to <a href="http://www.tudiabetes.org/profile/acidrock23?xg_source=activity">acidrock23's</a> discussion '<a href="http://www.tudiabetes.org/xn/detail/583967:Topic:2607969?xg_source=activity">Blown CGM sensor?</a>'</span>
+                                        <span class="event-info-timestamp xg_lightfont" data-time="2012-03-17T17:16:23.478Z">2 minutes ago</span>                </div>
+            </div><div id="feed-42018662a1a335c39cdbf029000cf1a8" class="feed-story  xg_separator xj_activity_item"><a href="/profile/mamalookingood?xg_source=activity"><span class="dy-avatar dy-avatar-32 feed-avatar"><img class="photo " src="http://api.ning.com:80/files/EAuxFVWX1CjW2FNjUd7dznTH59chfLAEFaMic7Qz*cAspqo4qzV00F1v7dph*wIhxQKQLXpav-6tOPrVFJnFOw__/694514082.bin?xgip=126%3A0%3A766%3A766%3B%3B&amp;width=32&amp;height=32&amp;crop=1%3A1" alt="" /></span></a>                <div class="feed-event-info">
+                    <span class="event-info-action xg_lightfont"><a href="http://www.tudiabetes.org/profile/mamalookingood?xg_source=activity">Doris D</a> <a href="http://www.tudiabetes.org/xn/detail/583967:Comment:2608233?xg_source=activity">replied</a> to <a href="http://www.tudiabetes.org/profile/RichardVaughn?xg_source=activity">Richard157's</a> discussion '<a href="http://www.tudiabetes.org/xn/detail/583967:Topic:2603845?xg_source=activity">Before and After Using Insulin in the 1920s</a>'</span>
+                                        <span class="event-info-timestamp xg_lightfont" data-time="2012-03-17T17:16:05.275Z">3 minutes ago</span>                </div>
+            </div><div id="feed-a17570100aac6fac74c9656c5956946d" class="feed-story  xg_separator xj_activity_item"><a href="/profile/LadyD?xg_source=activity"><span class="dy-avatar dy-avatar-32 feed-avatar"><img class="photo " src="http://api.ning.com:80/files/5H*9SXI8zjURSnLffyRDYRcIVeC6Ioo-2uwQw0fSXSxn0hD8S3KaLkwRoE4lHSh22rN2cP0z8NOYeDleVe6C0A__/866812059.jpeg?xgip=0%3A0%3A454%3A454%3B%3B&amp;width=32&amp;height=32&amp;crop=1%3A1" alt="" /></span></a>                <div class="feed-event-info">
+                    <span class="event-info-action xg_lightfont"><a href="http://www.tudiabetes.org/profile/LadyD?xg_source=activity">LadyD</a> <a href="http://www.tudiabetes.org/xn/detail/583967:Comment:2608145?xg_source=activity">replied</a> to <a href="http://www.tudiabetes.org/profile/PJtype2?xg_source=activity">PJtype2's</a> discussion '<a href="http://www.tudiabetes.org/xn/detail/583967:Topic:1456565?xg_source=activity">Hypothetical situation</a>'</span>
+                                        <span class="event-info-timestamp xg_lightfont" data-time="2012-03-17T17:12:46.601Z">6 minutes ago</span>                </div>
+            </div><div id="feed-f28272029737542c25bc6d9cac371261" class="feed-story  xg_separator xj_activity_item"><a href="/profile/russellstamets?xg_source=activity"><span class="dy-avatar dy-avatar-32 feed-avatar"><img class="photo " src="http://api.ning.com:80/files/nJJfM6TFXTtYzTcNhmhMxx*bxzzbZUV7yaRe*fOQyqGQ*kSdwBqpKU4z6Ue*INq1EcRq7XmGXn-6YjqPIi2kRA__/815513026.jpeg?xgip=0%3A0%3A200%3A200%3B%3B&amp;width=32&amp;height=32&amp;crop=1%3A1" alt="" /></span></a>                <div class="feed-event-info">
+                    <span class="event-info-action xg_lightfont"><a href="http://www.tudiabetes.org/profile/russellstamets?xg_source=activity">russell.stamets</a> <a href="http://www.tudiabetes.org/xn/detail/583967:Comment:2608067?xg_source=activity">commented</a> on <a href="http://www.tudiabetes.org/profile/russellstamets?xg_source=activity">russell.stamets's</a> group '<a href="http://www.tudiabetes.org/xn/detail/583967:Group:2425804?xg_source=activity">Diabetics Controlled Without Insulin</a>'</span>
+                                        <span class="event-info-timestamp xg_lightfont" data-time="2012-03-17T17:07:02.963Z">12 minutes ago</span>                </div>
+            </div>        </div>
+    </div>
+    <div class="xg_module_foot">
+                    <button class="xj_see_more xg_show_activity_items">
+                More...            </button>
+        
+            <ul class="feed_foot_icons">
+                    <li class="left"><a class="xg_icon xg_icon-rss" href="http://www.tudiabetes.org/activity/log/list?fmt=rss">RSS</a></li>
+         </ul>
+    </div></div>
+<div class="xg_module module_video" data-module_name="video">
+    <div class="xg_module_head">
+        <h2>Videos</h2>
+    </div>
+    <div class="xg_module_body body_large">
+  <ul class="clist">
+      <li>
+        <div class="ib">
+                <a href="http://www.tudiabetes.org/video/tudiabetes-weekly-update-w-emily-coles-03-16-12"><img  src="http://api.ning.com:80/files/w*j96wqnbeOyKgknGwC1-tvqW0ug9ACow13YPtGBCCwHplpKjYvZshd7fLffpIAdO9yog-LzgnIqqfAn1Yvcjw__/710759078.jpeg?width=136" alt="TuDiabetes Weekly Update w/ Emily Coles: 03-16-12" width="136" /></a>
+        </div>
+        <div class="tb">
+            <h3><a href="http://www.tudiabetes.org/video/tudiabetes-weekly-update-w-emily-coles-03-16-12">
+                TuDiabetes Weekly Update w/ Emily Coles: 03-16-12            </a></h3>
+                        <p class="xg_lightfont">
+                Added by <a class="xg_lightfont" href="http://www.tudiabetes.org/profile/Emily114">Emily Coles</a>                    <span class="reactions">
+                    <a href="http://www.tudiabetes.org/video/tudiabetes-weekly-update-w-emily-coles-03-16-12#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">1 <span class='details'>Comment</span></a>
+                                <a href="http://www.tudiabetes.org/video/tudiabetes-weekly-update-w-emily-coles-03-16-12" data-content-id="583967:Video:2607401" data-content-type="Video" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    0 <span class='details'>Likes</span>
+                </a>
+                </span>
+            </p>
+                    </div>
+    </li>
+    </ul><ul class="clist">    <li>
+        <div class="ib">
+                <a href="http://www.tudiabetes.org/video/getting-back-on-track-with-diabetes"><img  src="http://api.ning.com:80/files/hDM0xio5XEPnyTFEBUVjWgrkaqWZM6cgLxOLGcuieViS9nNNythKhlNVh-TL2kfhHvqYzC1naiMMFR*Bi2Lv4A__/559400536.jpeg?width=136" alt="Getting back on track with diabetes. Strategies to honor our resolutions." width="136" /></a>
+        </div>
+        <div class="tb">
+            <h3><a href="http://www.tudiabetes.org/video/getting-back-on-track-with-diabetes">
+                Getting back on track with diabetes. Strategies to honor our resolutions.            </a></h3>
+                        <p class="xg_lightfont">
+                Added by <a class="xg_lightfont" href="http://www.tudiabetes.org/profile/askmanny">Manny Hernandez</a>                    <span class="reactions">
+                    <a href="http://www.tudiabetes.org/video/getting-back-on-track-with-diabetes#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">0 <span class='details'>Comments</span></a>
+                                <a href="http://www.tudiabetes.org/video/getting-back-on-track-with-diabetes" data-content-id="583967:Video:2601500" data-content-type="Video" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    2 <span class='details'>Likes</span>
+                </a>
+                </span>
+            </p>
+                    </div>
+    </li>
+    </ul><ul class="clist">    <li>
+        <div class="ib">
+                <a href="http://www.tudiabetes.org/video/winter-fatigue-staying-positive-and-active-waiting-for-spring"><img  src="http://api.ning.com:80/files/Y9fNAhp*PLumraX10m-LkiqaGScS1ugm4omtpHw4EgVu7WH-ts0pIXJbKjO7xtvkgpz7wBb93HE0-tNv5g8LZg__/629200488.jpeg?width=136" alt="Winter Fatigue: Staying Positive and Active While Waiting for Spring" width="136" /></a>
+        </div>
+        <div class="tb">
+            <h3><a href="http://www.tudiabetes.org/video/winter-fatigue-staying-positive-and-active-waiting-for-spring">
+                Winter Fatigue: Staying Positive and Active While Waiting for Spring            </a></h3>
+                        <p class="xg_lightfont">
+                Added by <a class="xg_lightfont" href="http://www.tudiabetes.org/profile/askmanny">Manny Hernandez</a>                    <span class="reactions">
+                    <a href="http://www.tudiabetes.org/video/winter-fatigue-staying-positive-and-active-waiting-for-spring#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">0 <span class='details'>Comments</span></a>
+                                <a href="http://www.tudiabetes.org/video/winter-fatigue-staying-positive-and-active-waiting-for-spring" data-content-id="583967:Video:2601262" data-content-type="Video" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    1 <span class='details'>Like</span>
+                </a>
+                </span>
+            </p>
+                    </div>
+    </li>
+    </ul><ul class="clist">  </ul>
+</div>
+        <div class="xg_module_foot">
+            <ul>
+                <li class="left"><a class="xg_sprite xg_sprite-add" href="http://www.tudiabetes.org/video/video/chooseUploader">Add Videos</a></li>
+                <li class="right"><a href="http://www.tudiabetes.org/video/video">View All</a></li>
+                                    <li class="right video-facebook-share" style="display:none; margin-right:10px;"><a target="_blank"
+                        href="http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.tudiabetes.org%2Fvideo%2Fvideo%3Ffrom%3Dfb"><img src="http://static.ning.com/socialnetworkmain/widgets/index/gfx/icon/facebook.gif?v=201203152002" alt="Facebook" /></a></li>
+                    <script>
+                        xg.addOnRequire(function () {
+                            x$('.module_video').mouseover(function () { x$(this).find('.video-facebook-share').show(); })
+                                    .mouseout(function () { x$(this).find('.video-facebook-share').hide(); });
+                        });
+                    </script>
+                            </ul>
+        </div>
+    </div>
+<div class="xg_module module_birthdays" >
+    <div class="xg_module_head">
+        <h2>Birthdays</h2>
+    </div>
+    <div class="xg_module_body">
+<h3>Birthdays Today</h3>
+<ul class="clist">
+    <li>
+        <div class="ib">
+            <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/Al58"  title="Alessandro Cecconi"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com/files/VcqaJtnygDYNFK*serlT*kQuT7a9MLUR*qd5Q5QsLwONzssihncWTkU7g*FgdrsEut32lZYurx43fRRtu**ZYUxx8r8l-7tr/167831712.bin?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span>        </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.tudiabetes.org/profile/Al58">Alessandro Cecconi</a></span>
+	        <span> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+            <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/Amy411"  title="Amy"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com/files/2q0AE14Wqx6Coxp9Fb9770O5A8NPzjKjlP2lwwYQsJj95NloLjAPhhc1lgPdMKgi7mnfppNfPl0MYD2dG7PyloCq2v*thskU/Photo1578.jpg?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span>        </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.tudiabetes.org/profile/Amy411">Amy</a></span>
+	        <span> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+            <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/Angel22"  title="Angel"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com/files/tVcuEoWEjUra7tc1lQmWFI821cUixfgINMorMTlUZdMmThUZbh2zEJl8CwQeRr*H89tAJW1FOwlCDjP98KXD5y4OvGn8*hi2/photoreminderHAND.jpg?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span>        </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.tudiabetes.org/profile/Angel22">Angel</a></span>
+	        <span> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+            <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/BarbaraPeale"  title="Barbara Peale"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com/files/7OC4WBM2npaTApl2SZl*GL6Gh6Oc3HOb4-DabXxyrcc_/barbara98.jpg?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span>        </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.tudiabetes.org/profile/BarbaraPeale">Barbara Peale</a></span>
+	        <span> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+            <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/BarbaraVotta"  title="Barbara Votta"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com/files/tVcuEoWEjUra7tc1lQmWFI821cUixfgINMorMTlUZdMmThUZbh2zEJl8CwQeRr*H89tAJW1FOwlCDjP98KXD5y4OvGn8*hi2/photoreminderHAND.jpg?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span>        </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.tudiabetes.org/profile/BarbaraVotta">Barbara Votta</a></span>
+	        <span> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+            <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/BarryF"  title="BarryF"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com/files/tVcuEoWEjUra7tc1lQmWFI821cUixfgINMorMTlUZdMmThUZbh2zEJl8CwQeRr*H89tAJW1FOwlCDjP98KXD5y4OvGn8*hi2/photoreminderHAND.jpg?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span>        </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.tudiabetes.org/profile/BarryF">BarryF</a></span>
+	        <span> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+            <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/BrianAFarley"  title="Brian A Farley"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com/files/jJwFNRkjX6lRmGYXQLSpiuYF7qpw88oiRV4vySpZPMqkodYCLnYZR*WUGEWi23tNPS85Gg1vTBSGP7vbgNaODrUbW-3*LavL/frankpaint.gif?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span>        </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.tudiabetes.org/profile/BrianAFarley">Brian A Farley</a></span>
+	        <span> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+            <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/Dan869"  title="Dan"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com/files/tVcuEoWEjUra7tc1lQmWFI821cUixfgINMorMTlUZdMmThUZbh2zEJl8CwQeRr*H89tAJW1FOwlCDjP98KXD5y4OvGn8*hi2/photoreminderHAND.jpg?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span>        </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.tudiabetes.org/profile/Dan869">Dan</a></span>
+	        <span> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+            <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/DanThrailkill"  title="Dan Thrailkill"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com:80/files/Qj0tHVDUGrxHTEFuBI07PrW1ulDywtW9xU2beUaN2lM-5eVTEehu82HwtOBW0-CmL9Xtv9DOqjM4G8hLQoJrVw__/Iceberg.jpg?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span>        </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.tudiabetes.org/profile/DanThrailkill">Dan Thrailkill</a></span>
+	        <span> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+            <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/DannyR"  title="DannyR"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com:80/files/RgxuCFWg7r9rp6neqpR3-i3z31JxkofE3OZPj*C9E7B70TAE9Kv1BXL0wxi-9yYVrvQLB-jNkXI4*E8SYB6qAw__/n1145641753_30109561_7399.jpg?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span>        </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.tudiabetes.org/profile/DannyR">DannyR</a></span>
+	        <span> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+            <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/Debbie52"  title="Debbie"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com/files/tVcuEoWEjUra7tc1lQmWFI821cUixfgINMorMTlUZdMmThUZbh2zEJl8CwQeRr*H89tAJW1FOwlCDjP98KXD5y4OvGn8*hi2/photoreminderHAND.jpg?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span>        </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.tudiabetes.org/profile/Debbie52">Debbie</a></span>
+	        <span> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+            <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/DiabeticGuy"  title="DiabeticGuy"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com/files/tVcuEoWEjUra7tc1lQmWFI821cUixfgINMorMTlUZdMmThUZbh2zEJl8CwQeRr*H89tAJW1FOwlCDjP98KXD5y4OvGn8*hi2/photoreminderHAND.jpg?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span>        </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.tudiabetes.org/profile/DiabeticGuy">DiabeticGuy</a></span>
+	        <span> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+            <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/Grace"  title="Grace"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com:80/files/4Pr7sO4vZI8bZu-UIlZEbL7qAm2hSIPo0wdhZPaUDrmU-lVF4A22rA4M1LjF-p0RGijhD0*OpdrubxeQPdGhWw__/967458366.jpeg?xgip=35%3A0%3A503%3A503%3B%3B&amp;width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span>        </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.tudiabetes.org/profile/Grace">Grace</a></span>
+	        <span> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+            <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/Jeriel"  title="Jeriel"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com/files/8WKpXcPj6Z6pNYkSLJfL44e4FLYhFhAAqioVSZ3jedr763tmGyGGnjUcAAjqKR6HzTbt8EQ5Ag2ijp010iqnDn5bO4jZ8iox/042.JPG?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span>        </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.tudiabetes.org/profile/Jeriel">Jeriel</a></span>
+	        <span> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+            <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/JohnManning"  title="John Manning"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com/files/CfeDafAUCN6XfkLeqI5r-yjU8dS8J6ueq3UrmEUEPUYszC8v3Q6WtS916Qy1D7MDWk1CSSZJuIItnxlfEIj24lLUm8RJlv7F/faceb098.jpg?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span>        </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.tudiabetes.org/profile/JohnManning">John Manning</a></span>
+	        <span> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+            <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/KathyLockwood"  title="Kathy Lockwood"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com/files/tVcuEoWEjUra7tc1lQmWFI821cUixfgINMorMTlUZdMmThUZbh2zEJl8CwQeRr*H89tAJW1FOwlCDjP98KXD5y4OvGn8*hi2/photoreminderHAND.jpg?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span>        </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.tudiabetes.org/profile/KathyLockwood">Kathy Lockwood</a></span>
+	        <span> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+            <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/KatrineJensen"  title="Katrine Jensen"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com/files/TMHFqsohC2IyLxtBdBvs0SES3j7PHWafCmuu511U*PAaVi46t55bOICYbMxh96qchEfmi1k6t76oehMr28xvPIdfYwSqgilw/IMG_6067.JPG?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span>        </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.tudiabetes.org/profile/KatrineJensen">Katrine Jensen</a></span>
+	        <span> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+            <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/Keith235"  title="Keith"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com/files/tVcuEoWEjUra7tc1lQmWFI821cUixfgINMorMTlUZdMmThUZbh2zEJl8CwQeRr*H89tAJW1FOwlCDjP98KXD5y4OvGn8*hi2/photoreminderHAND.jpg?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span>        </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.tudiabetes.org/profile/Keith235">Keith</a></span>
+	        <span> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+            <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/LesleyStewart"  title="Lesley Stewart"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com/files/tVcuEoWEjUra7tc1lQmWFI821cUixfgINMorMTlUZdMmThUZbh2zEJl8CwQeRr*H89tAJW1FOwlCDjP98KXD5y4OvGn8*hi2/photoreminderHAND.jpg?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span>        </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.tudiabetes.org/profile/LesleyStewart">Lesley Stewart</a></span>
+	        <span> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+            <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/Lolo"  title="Lolo"><span class="dy-avatar dy-avatar-48 "><img class="photo photo" src="http://api.ning.com/files/tVcuEoWEjUra7tc1lQmWFI821cUixfgINMorMTlUZdMmThUZbh2zEJl8CwQeRr*H89tAJW1FOwlCDjP98KXD5y4OvGn8*hi2/photoreminderHAND.jpg?width=48&amp;height=48&amp;crop=1%3A1" alt="" /></span></a></span>        </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.tudiabetes.org/profile/Lolo">Lolo</a></span>
+	        <span> </span>
+	    </p>
+        </div>
+    </li>
+</ul>
+</div></div>
+&nbsp;</div>
+<div _maxEmbedWidth="492" _columnCount="2"  id="xg_layout_column_2" class='xg_2col last-child'>
+<div class="xg_module  html_module module_text xg_reset" data-module_name="text"
+        >
+        <div class="xg_module_head"><h2>Resources</h2></div>
+            <div class="xg_module_body xg_user_generated">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td>
+<div class="td_nav_button"><a href="/notes/index/show?noteKey=New_to_Diabetes%3F"><img src="http://api.ning.com:80/files/rb26OEU*p8JFrFtbkZ6XygHRfpiEuAPvkKgkZx3Fp-G8o5igYRZXzRcXyLxbi7dXCPVjSrPAJ2cM5Gv0gztsmA__/newtodiabetes.png" alt="New to diabetes?" title="Resources for people newly diagnosed with diabetes"  /></a></div>
+</td>
+<td>
+<div class="td_nav_button"><a href="/notes/Type_1_Diabetes"><img src="http://api.ning.com:80/files/mlgpQ0Qpt1ixjoNIlgnFal*aZ0RAOrfdDljIVpBCRGLXgz7QHunI6VIDXJPUEsjtIB8SRI1WsuOwBaVC6m0Oeg__/type1.png" alt="Type 1 diabetes" title="Resources for people with type 1 diabetes"  /></a></div>
+</td>
+<td>
+<div class="td_nav_button"><a href="/notes/Type_2_Diabetes"><img src="http://api.ning.com:80/files/U30LMF6*Qk1J77-IkL8rXK5pvMkkH0BYuG7g4ZW09iZnEUONZMQ4Gl3BntifmYHUUDFN-iN-7j0wHqidfPadXA__/type2.png" alt="Type 2 diabetes" title="Resources for people with type 2 diabetes"  /></a></div>
+</td>
+<td>
+<div class="td_nav_button"><a href="/notes/Other_Types_of_Diabetes"><img src="http://api.ning.com:80/files/td*8uanPWQui8Yt3-RuCB4TNAJu7H2ytlS4ZUJKzFLOnMVuhOfnjw2A9wb-SAoxk2CjJlkZm6Q*jYdreZylT5Q__/othertypes.png" alt="Other types of diabetes" title="Resources for people with other types with diabetes"  /></a></div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="td_nav_button"><a href="/notes/Nutrition_and_Recipes"><img src="http://api.ning.com:80/files/0BhOVnQUcSRkmQegY7cqiF-tx2XWrjO0Tnaofv9pFThKfEHMSS69Q-uos0kc7TBV73GWOlVv6riZJNowFUE7aA__/nutritionrecipes.png" alt="Nutrition and recipes" title="Nutrition resources and recipes for people with diabetes"  /></a></div>
+</td>
+<td>
+<div class="td_nav_button"><a href="/notes/For_people_who_have_loved_ones_with_diabetes"><img src="http://api.ning.com:80/files/qylv6xkcu9YbTbwT7Epc-gephrCxJFBaBXUOaNHW8E-OtptzHU*oFgsW946MiJSL78x5wZwf-pTufnNOh5wKdw__/lovedones.png" alt="For loved ones" title="Resources for people who have loved ones with diabetes"  /></a></div>
+</td>
+<td>
+<div class="td_nav_button"><a href="/notes/Control_Your_Diabetes"><img src="http://api.ning.com:80/files/vKABSA7L5ubIjx55IRJa21V0dsJ6eOigzXS9kL6noVGw*FAqzsllV5gnjl75uRkiylkxLDL7ciNLtX*1xTqgrQ__/controlyourdiabetes.png" alt="Control your diabetes" title="Resources to help with diabetes control"  /></a></div>
+</td>
+<td>
+<div class="td_nav_button"><a href="/notes/Complications"><img src="http://api.ning.com:80/files/kblBBo-wrJ2uR6qSMVvJCwsyHe4VihYXEm*iIgmf60W2r9dRpc4pq2vun--UhIloiBd5dJzQf2296IUdM4YqlQ__/complications.png" alt="Learn about complications" title="Resources about diabetes complications"  /></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;"><a href="http://www.tudiabetes.org/notes/Diabetes_Patient_Assistance_Resources" target="_blank">Patient Assistance Resources</a> | <a href="http://www.tudiabetes.org/notes/Discounts" target="_blank">TuDiabetes Member Discounts</a></p>
+        </div>
+            </div>
+    <div class="xg_module module_forum indented_content" data-module_name="forum">
+            <div class="xg_module_head">
+            <h2>Forum</h2>
+        </div>
+        <div class="xg_module_body">
+                <div class="vcard">
+                    <div class="author"><span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/acidrock23"  title="acidrock23"><span class="dy-avatar dy-avatar-32 "><img class="photo photo" src="http://api.ning.com:80/files/hVXDObuNLQ1h4kKs5vTNVc-zeavMdG5dW8zYf5tRRUnrDAKgUlHc02hnV1FdR7fJfHtLFekC4fS7c4Jc0PgLoQ__/678506861.png?xgip=0%3A8%3A474%3A474%3B%3B&amp;width=32&amp;height=32&amp;crop=1%3A1" alt="" /></span></a></span></div>
+                <div class="topic indent">
+            <h3>
+                <a href="http://www.tudiabetes.org/forum/topics/blown-cgm-sensor" _snid="583967:Topic:2607969">Blown CGM sensor?</a>
+                            </h3>
+                        <p class="dy-small xg_lightfont indent ">
+                    Started by acidrock23 in <a href="http://www.tudiabetes.org/forum/categories/general-diabetes-topics-and/listForCategory">General Diabetes Topics and Pre-Diabetes</a>. <a href="http://www.tudiabetes.org/forum/topics/blown-cgm-sensor/showLastReply">Last reply</a> by Kelly Collins 2 minutes ago.    <span class="reactions">
+                    <a href="http://www.tudiabetes.org/forum/topics/blown-cgm-sensor#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">1 <span class='details'>Reply</span></a>
+                                <a href="http://www.tudiabetes.org/forum/topics/blown-cgm-sensor" data-content-id="583967:Topic:2607969" data-content-type="Topic" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    0 <span class='details'>Likes</span>
+                </a>
+                </span>
+            </p>
+            <p class="indent">I got up early for a local 5K race today, my MM CGM sensor I'd inserted yesterday was being a bit wiggy. I woke up great, 94, had breakfast, bolus for 20G thinking toast, eggs and have a V8 if it didn't spike. Wandered around in circles getting my…<a href="http://www.tudiabetes.org/forum/topics/blown-cgm-sensor" class="xj_expandable continue-link">Continue</a></p>        </div>
+    </div>
+    <div class="vcard">
+                    <div class="author"><span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/RichardVaughn"  title="Richard157"><span class="dy-avatar dy-avatar-32 "><img class="photo photo" src="http://api.ning.com/files/5z5130TsaDlQ3iCBEvvbM9pu-9UJXzTygYMn7dAhHaq2qa283D72a6Rf9G*BIs71GIdqgItS1uOuzHg8A9WPb0LRcUeHom-s/Prfile1.jpg?width=32&amp;height=32&amp;crop=1%3A1" alt="" /></span></a></span></div>
+                <div class="topic indent">
+            <h3>
+                <a href="http://www.tudiabetes.org/forum/topics/before-and-after-using-insulin-in-the-1920s" _snid="583967:Topic:2603845">Before and After Using Insulin in the 1920s</a>
+                            </h3>
+                        <p class="dy-small xg_lightfont indent ">
+                    Started by Richard157 in <a href="http://www.tudiabetes.org/forum/categories/type-1-diabetes-forum/listForCategory">Type 1 Diabetes Forum</a>. <a href="http://www.tudiabetes.org/forum/topics/before-and-after-using-insulin-in-the-1920s/showLastReply">Last reply</a> by Doris D 3 minutes ago.    <span class="reactions">
+                    <a href="http://www.tudiabetes.org/forum/topics/before-and-after-using-insulin-in-the-1920s#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">34 <span class='details'>Replies</span></a>
+                                <a href="http://www.tudiabetes.org/forum/topics/before-and-after-using-insulin-in-the-1920s" data-content-id="583967:Topic:2603845" data-content-type="Topic" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    1 <span class='details'>Like</span>
+                </a>
+                </span>
+            </p>
+            <p class="indent"><a href="http://api.ning.com:80/files/2judLwpaHC3xQmZSFii*-sVTGbV9cs1kw8HSzroKjHVC4DHiVat46xMXizaypN59nm9HituMhwiZqq1EAv-4hA__/0112092043492art.jpg" target="_self"></a><a href="http://www.tudiabetes.org/forum/topics/before-and-after-using-insulin-in-the-1920s" class="xj_expandable continue-link">Continue</a></p>        </div>
+    </div>
+    <div class="vcard">
+                    <div class="author"><span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/PJtype2"  title="PJtype2"><span class="dy-avatar dy-avatar-32 "><img class="photo photo" src="http://api.ning.com:80/files/zSPXCVwJRuAArye2ixy5gjcpgeh-ZKYRE3wXGjfvavtnhwLIris3rgUK3TYa2dPA2e7jDoF0ldFyFXTAq3midw__/paul.jpg?width=32&amp;height=32&amp;crop=1%3A1" alt="" /></span></a></span></div>
+                <div class="topic indent">
+            <h3>
+                <a href="http://www.tudiabetes.org/forum/topics/hypothetical-situation" _snid="583967:Topic:1456565">Hypothetical situation</a>
+                            </h3>
+                        <p class="dy-small xg_lightfont indent ">
+                    Started by PJtype2 in <a href="http://www.tudiabetes.org/forum/categories/alternative-ways-of-treating/listForCategory">Alternative Ways of Treating Diabetes</a>. <a href="http://www.tudiabetes.org/forum/topics/hypothetical-situation/showLastReply">Last reply</a> by LadyD 6 minutes ago.    <span class="reactions">
+                    <a href="http://www.tudiabetes.org/forum/topics/hypothetical-situation#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">5 <span class='details'>Replies</span></a>
+                                <a href="http://www.tudiabetes.org/forum/topics/hypothetical-situation" data-content-id="583967:Topic:1456565" data-content-type="Topic" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    0 <span class='details'>Likes</span>
+                </a>
+                </span>
+            </p>
+            <p class="indent">You have been selected by an alien race to determine your ingenuity and intelligence.You are stranded on a desert island, all necessities are there excluding insulin,you have a lap top and a satellite link but no way to communicate or be found…<a href="http://www.tudiabetes.org/forum/topics/hypothetical-situation" class="xj_expandable continue-link">Continue</a></p>        </div>
+    </div>
+    <div class="vcard">
+                    <div class="author"><span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/Cindy187"  title="Cindy"><span class="dy-avatar dy-avatar-32 "><img class="photo photo" src="http://api.ning.com:80/files/sfStL6iwk02aOAsuRGc6cMT364ly7U5VKaJnuz9TxMa3*A1pnlcBhkw4knspi3dz6ViCCtAezuUR4oOE7GoqnA__/542299986.jpeg?xgip=0%3A0%3A203%3A203%3B%3B&amp;width=32&amp;height=32&amp;crop=1%3A1" alt="" /></span></a></span></div>
+                <div class="topic indent">
+            <h3>
+                <a href="http://www.tudiabetes.org/forum/topics/changing-time-zones" _snid="583967:Topic:2605999">CHANGING TIME ZONES</a>
+                            </h3>
+                        <p class="dy-small xg_lightfont indent ">
+                    Started by Cindy in <a href="http://www.tudiabetes.org/forum/categories/insulin-pump-users-forum/listForCategory">Insulin Pump Users Forum</a>. <a href="http://www.tudiabetes.org/forum/topics/changing-time-zones/showLastReply">Last reply</a> by Cindy 18 minutes ago.    <span class="reactions">
+                    <a href="http://www.tudiabetes.org/forum/topics/changing-time-zones#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">9 <span class='details'>Replies</span></a>
+                                <a href="http://www.tudiabetes.org/forum/topics/changing-time-zones" data-content-id="583967:Topic:2605999" data-content-type="Topic" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    0 <span class='details'>Likes</span>
+                </a>
+                </span>
+            </p>
+            <p class="indent">I'm having some more confusion about my flight to Singapore next week. I'm going to take off on 3/20 midnight CA time and land at 3/21 noon in Singapore. It will take me 21 hours to get there. MM had no advice for me re the time/date change and my…<a href="http://www.tudiabetes.org/forum/topics/changing-time-zones" class="xj_expandable continue-link">Continue</a></p>        </div>
+    </div>
+        </div>
+            <div class="xg_module_foot">
+            <ul>
+                                    <li class="left"><a href="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fforum%2Ftopic%2Fnew%3Ftarget%3Dhttp%253A%252F%252Fwww.tudiabetes.org%252Fmain" dojoType="PromptToJoinLink" _joinPromptText="Please sign up or sign in to complete this step." _signInUrl="http://www.tudiabetes.org/main/authorization/signIn?target=http%3A%2F%2Fwww.tudiabetes.org%2Fforum%2Ftopic%2Fnew%3Ftarget%3Dhttp%253A%252F%252Fwww.tudiabetes.org%252Fmain" class="xg_sprite xg_sprite-add xj_new_topic_link">Add a Discussion</a></li>
+                                <li class="right"><a href="http://www.tudiabetes.org/forum">View All</a></li>
+            </ul>
+        </div>    </div>
+<div class="xg_module module_photo" data-module_name="photo">
+    <div class="xg_module_head">
+        <h2>Photos</h2>
+    </div>
+    <div class="xg_module_body body_slideshow xj_slideshow_body xj_embed_container" _embedCode="&lt;embed class=&quot;xg_slideshow xj_photo_embed&quot; src=&quot;http://static.ning.com/socialnetworkmain/widgets/photo/slideshowplayer/slideshowplayer.swf?v=201203152002&quot; quality=&quot;high&quot; bgcolor=&quot;#&quot;
+    width=&quot;492&quot;
+    height=&quot;386&quot;
+    allowFullScreen=&quot;true&quot;
+    allowScriptAccess=&quot;always&quot;
+    scale=&quot;noscale&quot;
+    wmode=&quot;opaque&quot;
+    FlashVars=&quot;feed_url=http%3A%2F%2Fwww.tudiabetes.org%2Fphoto%2Fphoto%2FslideshowFeed%3Fxn_auth%3Dno%26promoted%3Dtrue%26mtime%3D1331982048%26x%3DxEGsq4VRQ5uMKSHZ8LnPfLgYST526Lt3&amp;autoplay=1&amp;loop=1&amp;hideWatermark=1&amp;hideVisit=1&amp;config_url=http%3A%2F%2Fwww.tudiabetes.org%2Fphoto%2Fphoto%2FshowPlayerConfig%3Fx%3DxEGsq4VRQ5uMKSHZ8LnPfLgYST526Lt3%26xn_auth%3Dno%26feed_url%3Dhttp%253A%252F%252Fwww.tudiabetes.org%252Fphoto%252Fphoto%252FslideshowFeed%253Fxn_auth%253Dno%2526promoted%253Dtrue%2526mtime%253D1331982048%2526x%253DxEGsq4VRQ5uMKSHZ8LnPfLgYST526Lt3%26version%3DDEP-7365%253A19c6695_196_157_212%26theme982Version%3D7&amp;layout=within_app&amp;slideshow_title=&amp;fullsize_url=http%3A%2F%2Fwww.tudiabetes.org%2Fphoto%2Fphoto%2Fslideshow%3Ffeed_url%3Dhttp%253A%252F%252Fwww.tudiabetes.org%252Fphoto%252Fphoto%252FslideshowFeed%253Fxn_auth%253Dno%2526promoted%253Dtrue%2526mtime%253D1331982048%26back_url%3Dhttp%253A%252F%252Fwww.tudiabetes.org%252Fmain&quot;
+    type=&quot;application/x-shockwave-flash&quot; pluginspage=&quot;http://www.macromedia.com/go/getflashplayer&quot;&gt;
+&lt;/embed&gt;">
+                Loading…            </div>
+                <div class="xg_module_foot">
+        <ul>
+                            <li class="left"><a href="http://www.tudiabetes.org/photo/photo/chooseUploader" class="xg_sprite xg_sprite-add">Add Photos</a></li>
+                                        <li class="right"><a href="http://www.tudiabetes.org/photo/photo/list">View All</a></li>
+                                <li class="right photo-facebook-share" style="display:none; margin-right:10px;" ><a target="_blank"
+                        href="http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.tudiabetes.org%2Fphoto%2Fphoto%2Flist%3Ffrom%3Dfb"><img src="http://static.ning.com/socialnetworkmain/widgets/index/gfx/icon/facebook.gif?v=201203152002" alt="Facebook" /></a></li>
+                    <script>
+                        xg.addOnRequire(function () {
+                            x$('.module_photo').mouseover(function () { x$(this).find('.photo-facebook-share').show(); })
+                                    .mouseout(function () { x$(this).find('.photo-facebook-share').hide(); });
+                        });
+                    </script>
+                    </ul>
+    </div></div>
+    <div class="xg_module module_opensocial" data-module_name="opensocial">
+        <div class="xg_module_head" id="xj-osoc-14339731f062b88871d9460eb66ee7de">
+            <h2>TuAnalyze</h2>
+                    </div>
+    
+<div class="xg_module_body xg_opensocial_body">
+
+    
+    <div class="_opensocial_container">
+        <div class="_opensocial_gadget">
+            <div id="_opensocial-chrome-0" class="_opensocial-gadget-chrome">
+              <div id="_opensocial-gadget-titlebar-0" class="_opensocial-gadget-titlebar"><span id="remote_iframe_0_title" class="gadgets-gadget-title"></span></div>
+              <div class="gadgets-gadget-content"><iframe  id="remote_iframe_0" name="remote_iframe_0" class="gadgets-gadget" src="about:blank" frameborder="no" scrolling="no" width="100%"></iframe></div>
+            </div>
+        </div>
+    </div>
+
+    <div style="display:none" id="no_show_msg_0">
+        <p>This Ning App is not visible to members on the Main page.</p>
+    </div>
+
+    <script type="text/javascript">
+        xg.addOnRequire(function(){
+                        xg.opensocial.embed.moduleBodyAndFooter.loadGadget({"params":[],"st":"00000007pkoc7g|f78m7p1h4idtm8dv1rpcksdu6daf5vepbefmn25em4hng4t726plgoiscam4q1gg12l16g760f4bbr7bkntr1le95muhcmeshre4cvdum7shtdkbt7uunmc7vc80aq77blgon2iqvh5pn98ilchomk9ro577gckr04i68qehhf5u6v015shmn1a78rr6o7sl080668dv9a8drdp8cmed3d7qm36u1jt51np74dphrserigb5q9kclesnrp4m254eaupo1uak56vnou7j6ts28guoudp6jm27pd7njp2upvfufkuvoubvvfjlo7p2oei9ljol7mpf1h5mo0g6hqg9tle8bic8p9ag70rrtveaabdvmdu4bl48kkd6rccsuvbouli7c38ja00ivol453bqrm043e7700qt3lj6gi1i0i0lh1h162i1to1ahms6r30g3pst332b0rpn3inrc1ob41f0p73jsftl3j21nsduij79efvltsi3pea40fhdgagbnb6atng5bsqth48f56vnv6kh0kt2m00i932s173oolmole5g6c3o0lk6o3l0dt6pujh0u98bk1to7epgdk7227r0lmblvpuvt37kej6dn0lg815et62fhlhboeapq3jkivmrq7aob1a44mpncq0sfeco3t1vjfaml178rs7d3a0tnupf2tuc9facluvbps67r9kdm34et2asf4a81h12fqq894","iframeDomain":"14339731f0.tudiabetes.ninggadgets.com","ownerName":"askmanny","domain":"www.tudiabetes.org","url":"http%3A%2F%2Ftuanalyze.chip.org%2Ftuanalyze%2FdiabetesGadget.xml%3Fning-app-status%3Dnetwork","rpctoken":1901638628,"iframeId":"remote_iframe_0"});
+        });
+    </script>
+
+     <a style="display:none" class="xg_osskin_link">link</a>
+     <span style="display:none" class="xg_osskin_text">text</span>
+</div>
+    <div class="xg_module_foot">
+        <ul>
+                    <li class="right showcase-wide"><a href="http://www.tudiabetes.org/opensocial/ningapps/show?appUrl=http%3A%2F%2Ftuanalyze.chip.org%2Ftuanalyze%2FdiabetesGadget.xml%3Fning-app-status%3Dnetwork&amp;owner=askmanny">View TuAnalyze</a></li>
+                </ul>
+    </div>
+    </div><!--/.xg_module-->
+<div class="xg_module module_blog indented_content" data-module_name="blog">
+    <div class="xg_module_head">
+        <h2>Blog Posts</h2>
+    </div>
+    <div class="xg_module_body body_detail">
+            <div class="blogpost vcard" data-contentId="583967:BlogPost:2608142">
+                <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/Julie53"  title="Julie"><span class="dy-avatar dy-avatar-32 "><img class="photo photo" src="http://api.ning.com/files/UZ8UQ2FXhhNCPboppE6HZqbNuj8HlTchoW7800Pi-Fc_/Juliepicture.jpg?width=32&amp;height=32&amp;crop=1%3A1" alt="" /></span></a></span>                </div>
+                <div class="tb">
+                    <h3><a href="http://www.tudiabetes.org/profiles/blogs/school-emergency-boxes" _snid="583967:BlogPost:2608142">School Emergency Boxes</a></h3>
+                                        <p class="dy-small xg_lightfont">
+                                                    Posted by <a href="/profile/Julie53">Julie</a> on March 17, 2012 at 9:41am                            <span class="reactions">
+                    <a href="http://www.tudiabetes.org/profiles/blogs/school-emergency-boxes#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">0 <span class='details'>Comments</span></a>
+                                <a href="http://www.tudiabetes.org/profiles/blogs/school-emergency-boxes" data-content-id="583967:BlogPost:2608142" data-content-type="BlogPost" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    0 <span class='details'>Likes</span>
+                </a>
+                </span>
+                    </p>
+                                            <div class="postbody">
+                            <div class="xg_user_generated">
+                                <p>I often talk about providing boxes for each of Nikki's classes for emergencies, I have gotten a lot of questions on what i put in those boxes. So I have done a video on how i prepare our emergency diabetes boxes. Protecting our children while…</p>                                 <a href="http://www.tudiabetes.org/profiles/blogs/school-emergency-boxes" class="xj_expandable">Continue</a>                            </div>
+                        </div>
+                                    </div>
+            </div>
+                <div class="blogpost vcard" data-contentId="583967:BlogPost:2607687">
+                <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/Masterbs"  title="Closet-betic"><span class="dy-avatar dy-avatar-32 "><img class="photo photo" src="http://api.ning.com:80/files/rbCf7I4A8o7BmS6JBfOHNnWBAENgFUt1yfgSq13kz2YpywmIeLIKiM7aU79vN0lo*tl9GhxTt47nYoabjw8ayw__/866601208.jpeg?xgip=5%3A115%3A1930%3A1930%3B%3B&amp;width=32&amp;height=32&amp;crop=1%3A1" alt="" /></span></a></span>                </div>
+                <div class="tb">
+                    <h3><a href="http://www.tudiabetes.org/profiles/blogs/6-9-a1c" _snid="583967:BlogPost:2607687">6.9 A1C</a></h3>
+                                        <p class="dy-small xg_lightfont">
+                                                    Posted by <a href="/profile/Masterbs">Closet-betic</a> on March 16, 2012 at 11:47pm                            <span class="reactions">
+                    <a href="http://www.tudiabetes.org/profiles/blogs/6-9-a1c#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">3 <span class='details'>Comments</span></a>
+                                <a href="http://www.tudiabetes.org/profiles/blogs/6-9-a1c" data-content-id="583967:BlogPost:2607687" data-content-type="BlogPost" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    0 <span class='details'>Likes</span>
+                </a>
+                </span>
+                    </p>
+                                            <div class="postbody">
+                            <div class="xg_user_generated">
+                                <p>So its been about 2 and a half months since I've been on the MM pump. Its changed my life around. My A1C test has come down from an 9.0 to 6.9. I was shocked, I never thought that I would ever get it that low. I use to be between 8 and 12. I also…</p>                                 <a href="http://www.tudiabetes.org/profiles/blogs/6-9-a1c" class="xj_expandable">Continue</a>                            </div>
+                        </div>
+                                    </div>
+            </div>
+                <div class="blogpost vcard" data-contentId="583967:BlogPost:2607752">
+                <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/SheriTurner"  title="Sheri Turner"><span class="dy-avatar dy-avatar-32 "><img class="photo photo" src="http://api.ning.com/files/Qmp-Q0kZNXxP7KTbQzIYBDljCzTFpVKqpHLL8yzpwh8Rgb14cqlfMs8MdUnqku5yMNgZrhO-sxUg0BOCvG5LuH0*I*JWGGiZ/5090_220015570360_621565360_7475779_2968712_s.jpg?width=32&amp;height=32&amp;crop=1%3A1" alt="" /></span></a></span>                </div>
+                <div class="tb">
+                    <h3><a href="http://www.tudiabetes.org/profiles/blogs/we-paid-what" _snid="583967:BlogPost:2607752">We Paid What??!!</a></h3>
+                                        <p class="dy-small xg_lightfont">
+                                                    Posted by <a href="/profile/SheriTurner">Sheri Turner</a> on March 16, 2012 at 9:30pm                            <span class="reactions">
+                    <a href="http://www.tudiabetes.org/profiles/blogs/we-paid-what#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">0 <span class='details'>Comments</span></a>
+                                <a href="http://www.tudiabetes.org/profiles/blogs/we-paid-what" data-content-id="583967:BlogPost:2607752" data-content-type="BlogPost" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    0 <span class='details'>Likes</span>
+                </a>
+                </span>
+                    </p>
+                                            <div class="postbody">
+                            <div class="xg_user_generated">
+                                <p><a href="http://api.ning.com:80/files/eO4Pm0varmRflIktHIwAQZ*6FP*lXVJ*iGa8Od1WBUPROIVDQRpcGhu*i0fKhzYZQG4sVgxjuV6vY8g1JHSOOA__/diabetes_awareness_tag_7_by_Comgk2005.png" target="_self"><img class="align-center" src="http://api.ning.com:80/files/eO4Pm0varmRflIktHIwAQZ*6FP*lXVJ*iGa8Od1WBUPROIVDQRpcGhu*i0fKhzYZQG4sVgxjuV6vY8g1JHSOOA__/diabetes_awareness_tag_7_by_Comgk2005.png" width="400"></img></a> <br></br> As the parent of a T1 who is winding up…</p>                                 <a href="http://www.tudiabetes.org/profiles/blogs/we-paid-what" class="xj_expandable">Continue</a>                            </div>
+                        </div>
+                                    </div>
+            </div>
+                <div class="blogpost vcard" data-contentId="583967:BlogPost:2607737">
+                <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.tudiabetes.org/profile/CatherineJaneVancak"  title="Catherine Jane Vancak"><span class="dy-avatar dy-avatar-32 "><img class="photo photo" src="http://api.ning.com:80/files/qHbNptz9PsG2HtxR32918rLB976z2h6YBJm2q0E4nAch7Ovl60dvR6c*TH*ViTCg6mJ--EOxe85dqGTorYPGWg__/526796505.jpeg?xgip=0%3A600%3A1936%3A1936%3B%3B&amp;width=32&amp;height=32&amp;crop=1%3A1" alt="" /></span></a></span>                </div>
+                <div class="tb">
+                    <h3><a href="http://www.tudiabetes.org/profiles/blogs/a-dialogue-with-your-body" _snid="583967:BlogPost:2607737">A Dialogue with your Body</a></h3>
+                                        <p class="dy-small xg_lightfont">
+                                                    Posted by <a href="/profile/CatherineJaneVancak">Catherine Jane Vancak</a> on March 16, 2012 at 7:41pm                            <span class="reactions">
+                    <a href="http://www.tudiabetes.org/profiles/blogs/a-dialogue-with-your-body#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">1 <span class='details'>Comment</span></a>
+                                <a href="http://www.tudiabetes.org/profiles/blogs/a-dialogue-with-your-body" data-content-id="583967:BlogPost:2607737" data-content-type="BlogPost" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    0 <span class='details'>Likes</span>
+                </a>
+                </span>
+                    </p>
+                                            <div class="postbody">
+                            <div class="xg_user_generated">
+                                <p>Remember to check out my full blog at <a rel=nofollow href="http://dancethrubeetus.blogspot.com/" target="_blank">A Diabetic Ballerina</a></p>
+<p>After a meaningful conversation with my amazing ballet coach I realized how important it is to respect and listen…</p>                                 <a href="http://www.tudiabetes.org/profiles/blogs/a-dialogue-with-your-body" class="xj_expandable">Continue</a>                            </div>
+                        </div>
+                                    </div>
+            </div>
+    </div>
+    <div class="xg_module_foot">
+        <ul>
+            <li class="left"><a href="http://www.tudiabetes.org/profiles/blog/new" class="xg_sprite xg_sprite-add">Add a Blog Post</a></li>
+            <li class="right"><a href="http://www.tudiabetes.org/profiles/blog/list">View All</a></li>        </ul>
+    </div>
+</div>
+<div class="xg_module module_events" data-module_name="events">
+    <div class="xg_module_head">
+        <h2>Events</h2>
+    </div>
+    <div class="xg_module_body body_list">
+        <div class="wrap easyclear xg_lightborder"><div class="dategroup"><h3><a href="http://www.tudiabetes.org/events/event/listByDate?date=2012-03-19">March 19</a></h3> <p class="small">Monday</p></div><ul class="clist"><li>
+        <div class="ib">
+        <a href="http://www.tudiabetes.org/events/diabetes-sisters-pods-support-group">
+                			<span class="image" style="background-image:url('http://api.ning.com:80/files/bKvY0FOfYhlJRUHjN7qW6Ekh6xjH*PZ3ShlGTZz23C-LHRq0ldNsGMBj538F7qAqvxfRvCN3lQ4XXWhTVwiUZQ__/DSLogo.jpg?size=36&crop=1:1');"><!-- --></span>
+                    </a>
+    </div>
+        <div class="tb">        <h3><a href="http://www.tudiabetes.org/events/diabetes-sisters-pods-support-group">Women&#039;s PODS Support Group / Northbay - Novato</a></h3>
+        <p>
+            <a href="http://www.tudiabetes.org/events/event/listByDate?date=2012-03-19">March 19, 2012</a> from 6:30pm to 8:30pm – <a href="http://www.tudiabetes.org/events/event/listByLocation?location=NorthBay-Novato+Fire+Dept.">NorthBay-Novato Fire Dept.</a>        </p>
+                            <span class="reactions">
+                    <a href="http://www.tudiabetes.org/events/diabetes-sisters-pods-support-group#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">3 <span class='details'>Comments</span></a>
+                                <a href="http://www.tudiabetes.org/events/diabetes-sisters-pods-support-group" data-content-id="583967:Event:2408945" data-content-type="Event" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    3 <span class='details'>Likes</span>
+                </a>
+                </span>
+    </div></li>
+</ul></div><div class="wrap easyclear xg_lightborder"><div class="dategroup"><h3><a href="http://www.tudiabetes.org/events/event/listByDate?date=2012-03-23">March 23</a></h3> <p class="small">Friday</p></div><ul class="clist"><li>
+        <div class="ib">
+        <a href="http://www.tudiabetes.org/events/riding-on-insulin-canada-ontario-camp">
+                			<span class="image" style="background-image:url('http://api.ning.com:80/files/hzES8eH3hkIOj*kpp-V58Ba6ezJF0mKP3nzB3MbZ*PfEHKkEYplEqvy8dHF552dCa7EyRLsJGDmcjHHIQo6MEw__/eventflyer_Ontario2012.jpg?size=36&crop=1:1');"><!-- --></span>
+                    </a>
+    </div>
+        <div class="tb">        <h3><a href="http://www.tudiabetes.org/events/riding-on-insulin-canada-ontario-camp">Riding on Insulin Canada - Ontario Camp</a></h3>
+        <p>
+            <a href="http://www.tudiabetes.org/events/event/listByDate?date=2012-03-23">March 23, 2012</a> at 5pm to <a href="http://www.tudiabetes.org/events/event/listByDate?date=2012-03-24">March 24, 2012</a> at 7pm – <a href="http://www.tudiabetes.org/events/event/listByLocation?location=Blue+Mountain+Resort">Blue Mountain Resort</a>        </p>
+                            <span class="reactions">
+                    <a href="http://www.tudiabetes.org/events/riding-on-insulin-canada-ontario-camp#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">0 <span class='details'>Comments</span></a>
+                                <a href="http://www.tudiabetes.org/events/riding-on-insulin-canada-ontario-camp" data-content-id="583967:Event:2499969" data-content-type="Event" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    1 <span class='details'>Like</span>
+                </a>
+                </span>
+    </div></li>
+</ul></div><div class="wrap easyclear xg_lightborder"><div class="dategroup"><h3><a href="http://www.tudiabetes.org/events/event/listByDate?date=2012-03-24">March 24</a></h3> <p class="small">Saturday</p></div><ul class="clist"><li>
+        <div class="ib">
+        <a href="http://www.tudiabetes.org/events/free-diabetes-education-event-for-kids-with-special-guest-appeara">
+                			<span class="image" style="background-image:url('http://api.ning.com:80/files/AtffXRcj4U1o*0S5YEVvDSs1FveSM2gTfmUj5YstaVULmiUF2yHdd4WcSnPG0xa9DgoRZ-WM1Rqhf0BmmAwrxQ__/childrenplaying.jpg?size=36&crop=1:1');"><!-- --></span>
+                    </a>
+    </div>
+        <div class="tb">        <h3><a href="http://www.tudiabetes.org/events/free-diabetes-education-event-for-kids-with-special-guest-appeara">FREE Diabetes Education Event for Kids with Special Guest Appearance by Country Music Singer George Canyon</a></h3>
+        <p>
+            <a href="http://www.tudiabetes.org/events/event/listByDate?date=2012-03-24">March 24, 2012</a> from 12:30pm to 5:45pm – <a href="http://www.tudiabetes.org/events/event/listByLocation?location=Mount+Vernon+Baptist+Church">Mount Vernon Baptist Church</a>        </p>
+                            <span class="reactions">
+                    <a href="http://www.tudiabetes.org/events/free-diabetes-education-event-for-kids-with-special-guest-appeara#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">1 <span class='details'>Comment</span></a>
+                                <a href="http://www.tudiabetes.org/events/free-diabetes-education-event-for-kids-with-special-guest-appeara" data-content-id="583967:Event:2607219" data-content-type="Event" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    1 <span class='details'>Like</span>
+                </a>
+                </span>
+    </div></li>
+</ul></div><div class="wrap easyclear xg_lightborder"><div class="dategroup"><h3><a href="http://www.tudiabetes.org/events/event/listByDate?date=2012-03-26">March 26</a></h3> <p class="small">Monday</p></div><ul class="clist"><li>
+        <div class="ib">
+        <a href="http://www.tudiabetes.org/events/live-chat-with-dr-nat-strand-t1d-and-winner-of-the-amazing-race">
+                			<span class="image" style="background-image:url('http://api.ning.com:80/files/7*PBSURjtUEXLrl0NJzemtuHnR2fEzn4cZho2ySlWTGQ1nr4sSpx1z77Rs*TYrg1FTLs6eUE0k1EfcPgD2J*CQ__/280422534.jpg?size=36&crop=1:1');"><!-- --></span>
+                    </a>
+    </div>
+        <div class="tb">        <h3><a href="http://www.tudiabetes.org/events/live-chat-with-dr-nat-strand-t1d-and-winner-of-the-amazing-race">Live Chat with Dr. Nat Strand, T1D and Winner of &quot;The Amazing Race&quot;</a></h3>
+        <p>
+            <a href="http://www.tudiabetes.org/events/event/listByDate?date=2012-03-26">March 26, 2012</a> from 5:30pm to 7pm – <a href="http://www.tudiabetes.org/events/event/listByLocation?location=online">online</a>        </p>
+                            <span class="reactions">
+                    <a href="http://www.tudiabetes.org/events/live-chat-with-dr-nat-strand-t1d-and-winner-of-the-amazing-race#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">0 <span class='details'>Comments</span></a>
+                                <a href="http://www.tudiabetes.org/events/live-chat-with-dr-nat-strand-t1d-and-winner-of-the-amazing-race" data-content-id="583967:Event:2602495" data-content-type="Event" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    0 <span class='details'>Likes</span>
+                </a>
+                </span>
+    </div></li>
+</ul></div><div class="wrap easyclear xg_lightborder last-child"><div class="dategroup"><h3><a href="http://www.tudiabetes.org/events/event/listByDate?date=2012-05-18">May 18</a></h3> <p class="small">Friday</p></div><ul class="clist"><li>
+        <div class="ib">
+        <a href="http://www.tudiabetes.org/events/diabetessisters-national-conference">
+                			<span class="image" style="background-image:url('http://api.ning.com:80/files/RVThpz4jdZ*rHYOoqnwZ8wh7NFpVoZTCxph-lSi6msWRUUxU4mMP5drspWfsnFM-P3I2MS-aXU2NQFSAaR5oKA__/DSLogo.jpg?size=36&crop=1:1');"><!-- --></span>
+                    </a>
+    </div>
+        <div class="tb">        <h3><a href="http://www.tudiabetes.org/events/diabetessisters-national-conference">DiabetesSisters&rsquo; National Conference</a></h3>
+        <p>
+            <a href="http://www.tudiabetes.org/events/event/listByDate?date=2012-05-18">May 18, 2012</a> at 8am to <a href="http://www.tudiabetes.org/events/event/listByDate?date=2012-05-20">May 20, 2012</a> at 6pm – <a href="http://www.tudiabetes.org/events/event/listByLocation?location=Marriott+City+Center+in+downtown+Raleigh%2C+NC">Marriott City Center in downtown Raleigh, NC</a>        </p>
+                            <span class="reactions">
+                    <a href="http://www.tudiabetes.org/events/diabetessisters-national-conference#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">0 <span class='details'>Comments</span></a>
+                                <a href="http://www.tudiabetes.org/events/diabetessisters-national-conference" data-content-id="583967:Event:2527063" data-content-type="Event" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    0 <span class='details'>Likes</span>
+                </a>
+                </span>
+    </div></li>
+</ul></div>    </div>
+    <div class="xg_module_foot">
+        <ul>
+                            <li class="left"><a href="http://www.tudiabetes.org/events/event/new?cancelTarget=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" class="xg_sprite xg_sprite-add">Add an Event</a></li>
+                                <li class="right"><a href="http://www.tudiabetes.org/events/event/listUpcoming">View All</a></li>
+                        </ul>
+    </div>
+</div>
+<div class="xg_module  html_module module_text xg_reset" data-module_name="text"
+        >
+                <div class="xg_module_body nopad xg_user_generated">
+            <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+</script>
+<script type='text/javascript'>
+GS_googleAddAdSenseService("ca-pub-9320507832588195");
+GS_googleEnableAllServices();
+</script>
+<script type='text/javascript'>
+GA_googleAddSlot("ca-pub-9320507832588195", "TD_481x150");
+</script>
+<script type='text/javascript'>
+GA_googleFetchAds();
+</script><!-- TD_481x150 -->
+
+<script type='text/javascript'>
+GA_googleFillSlot("TD_481x150");
+</script>
+        </div>
+            </div>
+&nbsp;</div>
+</div>
+&nbsp;</div>
+<div _maxEmbedWidth="220" _columnCount="1"  class='xg_1col last-child'>
+&nbsp;</div>
+</div>
+<script>xg_quickadd_forceReload = true /* enable the quick add refreshing. */ </script>
+
+                        </div>
+                    </div>
+                    <div class="xg_column xg_span-5 xg_last" id="column2">
+                        <div class="xj_user_info">    <div class="xg_module" id="xg_module_account">
+        <div class="xg_module_body xg_signup xg_lightborder">
+            <p>Welcome to<br />TuDiabetes</p>
+            <p class="last-child">
+                <big><strong><a href="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain">Join</a></strong></big><br/>
+                or <a href="http://www.tudiabetes.org/main/authorization/signIn?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" style="white-space:nowrap">Sign In</a>            </p>
+                            <div class="xg_external_signup xg_lightborder xj_signup">
+                    <p class="dy-small">You can also sign up with:</p>
+                    <ul class="providers">
+            <li data-provider-name="Facebook"><a onclick="window.open('https://tudiabetes.networkauth.com/facebook/connect_start?ext_perm=user_birthday%2Cuser_location%2Cemail&token_url=http%3A%2F%2Fwww.tudiabetes.org%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.tudiabetes.org%252Fmain%26source%3DsignUp%26close%3D1', null, 'width=626,height=436,location=no,menubar=no,resizable=yes,scrollbars=yes,toolbar=no,status=no'); return false;" href="https://tudiabetes.networkauth.com/facebook/connect_start?ext_perm=user_birthday%2Cuser_location%2Cemail&amp;token_url=http%3A%2F%2Fwww.tudiabetes.org%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.tudiabetes.org%252Fmain%26source%3DsignUp%26close%3D0">
+                            <span class="mini-service mini-service-facebook" title="Facebook"></span>
+                    </a></li>
+            <li data-provider-name="Twitter"><a onclick="window.open('https://tudiabetes.networkauth.com/twitter/start?token_url=http%3A%2F%2Fwww.tudiabetes.org%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.tudiabetes.org%252Fmain%26source%3DsignUp%26close%3D1', null, 'width=860,height=440,location=no,menubar=no,resizable=yes,scrollbars=yes,toolbar=no,status=no'); return false;" href="https://tudiabetes.networkauth.com/twitter/start?token_url=http%3A%2F%2Fwww.tudiabetes.org%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.tudiabetes.org%252Fmain%26source%3DsignUp%26close%3D0">
+            <span class="mini-service mini-service-twitter" title="Twitter"></span>
+        </a></li>
+            <li data-provider-name="Google"><a onclick="window.open('https://tudiabetes.networkauth.com/openid/start?openid_identifier=http%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid&token_url=http%3A%2F%2Fwww.tudiabetes.org%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.tudiabetes.org%252Fmain%26source%3DsignUp%26close%3D1', null, 'width=530,height=480,location=no,menubar=no,resizable=yes,scrollbars=yes,toolbar=no,status=no'); return false;" href="https://tudiabetes.networkauth.com/openid/start?openid_identifier=http%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid&amp;token_url=http%3A%2F%2Fwww.tudiabetes.org%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.tudiabetes.org%252Fmain%26source%3DsignUp%26close%3D0">
+            <span class="mini-service mini-service-google" title="Google"></span>
+        </a></li>
+            <li data-provider-name="Yahoo!"><a onclick="window.open('https://tudiabetes.networkauth.com/openid/start?openid_identifier=http%3A%2F%2Fme.yahoo.com%2F&token_url=http%3A%2F%2Fwww.tudiabetes.org%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.tudiabetes.org%252Fmain%26source%3DsignUp%26close%3D1', null, 'width=500,height=480,location=no,menubar=no,resizable=yes,scrollbars=yes,toolbar=no,status=no'); return false;" href="https://tudiabetes.networkauth.com/openid/start?openid_identifier=http%3A%2F%2Fme.yahoo.com%2F&amp;token_url=http%3A%2F%2Fwww.tudiabetes.org%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.tudiabetes.org%252Fmain%26source%3DsignUp%26close%3D0">
+            <span class="mini-service mini-service-yahoo" title="Yahoo!"></span>
+        </a></li>
+    </ul>
+                </div>
+                    </div>
+    </div>
+</div>
+                        <div class="xj_sidebar_content"><div class="xg_module html_module module_text xg_reset" data-module_name="text"
+        >
+        <div class="xg_module_head"><h2>Advertisements</h2></div>
+            <div class="xg_module_body xg_user_generated">
+            <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+</script>
+<script type='text/javascript'>
+GS_googleAddAdSenseService("ca-pub-9320507832588195");
+GS_googleEnableAllServices();
+</script>
+<script type='text/javascript'>
+GA_googleAddSlot("ca-pub-9320507832588195", "TD_160x600");
+</script>
+<script type='text/javascript'>
+GA_googleFetchAds();
+</script>
+<br />
+<!-- TD_160x600 --><br />
+<script type='text/javascript'>
+GA_googleFillSlot("TD_160x600");
+</script>
+        </div>
+            </div>
+<div class="xg_module html_module module_text xg_reset" data-module_name="text"
+        >
+                <div class="xg_module_body nopad xg_user_generated">
+            <div class="fb-like-box" data-href="http://www.facebook.com/DIABETESHF" data-width="220" data-show-faces="true" data-stream="false" data-header="true"></div>
+        </div>
+            </div>
+<div class="xg_module module_groups">
+    <div class="xg_module_head">
+        <h2>Groups</h2>
+    </div>
+            <div class="xg_module_body body_list">
+                            <ul class="clist">
+                        <li class="xg_lightborder ">
+        <div class="ib">
+                        <a href="http://www.tudiabetes.org/group/diabetics-controlled-without-insulin"><img  src="http://api.ning.com:80/files/79tg2oL6EPVrPttElUf8vCL0u9WqHVfPmoX8LbJzsgoWbi7Vnm67e801GPtXaKN2OPfm1XKn*-*MtHsYmELKEQ__/nosyringe.jpg?crop=1%3A1&amp;width=40" width="40" height="40" alt="Diabetics Controlled Wit&hellip;" /></a>
+        </div>
+        <div class="tb">
+            <h3><a href="http://www.tudiabetes.org/group/diabetics-controlled-without-insulin">Diabetics Controlled Wit&hellip;</a></h3>
+            <p class="xg_lightfont">5 members</p>
+                <span class="reactions">
+                    <a href="http://www.tudiabetes.org/group/diabetics-controlled-without-insulin#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">114 <span class='details'>Comments</span></a>
+                                <a href="http://www.tudiabetes.org/group/diabetics-controlled-without-insulin" data-content-id="583967:Group:2425804" data-content-type="Group" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    1 <span class='details'>Like</span>
+                </a>
+                </span>
+        </div>
+    </li>    <li class="xg_lightborder ">
+        <div class="ib">
+                        <a href="http://www.tudiabetes.org/group/weightlossteam"><img  src="http://api.ning.com/files/TlpfofvMbg0djcrJl2bZ7vJ-Uo0eBnt8orT74hvUVrA=/scale.jpg?crop=1%3A1&amp;width=40" width="40" height="40" alt="TuDiabetes Weight Loss T&hellip;" /></a>
+        </div>
+        <div class="tb">
+            <h3><a href="http://www.tudiabetes.org/group/weightlossteam">TuDiabetes Weight Loss T&hellip;</a></h3>
+            <p class="xg_lightfont">486 members</p>
+                <span class="reactions">
+                    <a href="http://www.tudiabetes.org/group/weightlossteam#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">201 <span class='details'>Comments</span></a>
+                                <a href="http://www.tudiabetes.org/group/weightlossteam" data-content-id="583967:Group:21937" data-content-type="Group" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    4 <span class='details'>Likes</span>
+                </a>
+                </span>
+        </div>
+    </li>                </ul>
+                            <ul class="clist">
+                        <li class="xg_lightborder ">
+        <div class="ib">
+                        <a href="http://www.tudiabetes.org/group/victoza"><img  src="http://api.ning.com/files/VvO7bReTh0bjBpTDyGYi*bUlwm0hk0yhKPjil2AwGrpmUBRDvWhg7ADDihc92GZfQ9QHxjkoTZ-9qrwui*UKjBvHWmDQ0hS8/victozasquare.jpg?crop=1%3A1&amp;width=40" width="40" height="40" alt="VICTOZA" /></a>
+        </div>
+        <div class="tb">
+            <h3><a href="http://www.tudiabetes.org/group/victoza">VICTOZA</a></h3>
+            <p class="xg_lightfont">168 members</p>
+                <span class="reactions">
+                    <a href="http://www.tudiabetes.org/group/victoza#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">110 <span class='details'>Comments</span></a>
+                                <a href="http://www.tudiabetes.org/group/victoza" data-content-id="583967:Group:960717" data-content-type="Group" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    3 <span class='details'>Likes</span>
+                </a>
+                </span>
+        </div>
+    </li>    <li class="xg_lightborder ">
+        <div class="ib">
+                        <a href="http://www.tudiabetes.org/group/canada"><img  src="http://api.ning.com/files/4PBrKkLPiIYLkVKe7kTQksdxRyX05tounFKhtWVBihs=?crop=1%3A1&amp;width=40" width="40" height="40" alt="Canada Diabetes" /></a>
+        </div>
+        <div class="tb">
+            <h3><a href="http://www.tudiabetes.org/group/canada">Canada Diabetes</a></h3>
+            <p class="xg_lightfont">585 members</p>
+                <span class="reactions">
+                    <a href="http://www.tudiabetes.org/group/canada#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">490 <span class='details'>Comments</span></a>
+                                <a href="http://www.tudiabetes.org/group/canada" data-content-id="583967:Group:6297" data-content-type="Group" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    24 <span class='details'>Likes</span>
+                </a>
+                </span>
+        </div>
+    </li>                </ul>
+                            <ul class="clist">
+                        <li class="xg_lightborder last-child">
+        <div class="ib">
+                        <a href="http://www.tudiabetes.org/group/diabetic_ontario"><img  src="http://api.ning.com/files/bvIzAgJ4So75R00fgRrY0R5TDgQtUfhK03YMkkPQQWV4tdPvzfdyfbG5jv0A9f16w7ce-oG*xS9*i0s5zukIWxZQRVFYpWUF/groupimage_circles.jpg?width=40&amp;crop=1%3A1" width="40" height="40" alt="Diabetic and from Ontario" /></a>
+        </div>
+        <div class="tb">
+            <h3><a href="http://www.tudiabetes.org/group/diabetic_ontario">Diabetic and from Ontario</a></h3>
+            <p class="xg_lightfont">86 members</p>
+                <span class="reactions">
+                    <a href="http://www.tudiabetes.org/group/diabetic_ontario#comments" data-page-type="main" class="xg_sprite xg_sprite-comment">63 <span class='details'>Comments</span></a>
+                                <a href="http://www.tudiabetes.org/group/diabetic_ontario" data-content-id="583967:Group:88069" data-content-type="Group" data-sign-up-url="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain" data-page-type="main" class="xg_sprite like-link-1 like-link">
+                    0 <span class='details'>Likes</span>
+                </a>
+                </span>
+        </div>
+    </li>                </ul>
+                    </div>
+                <div class="xg_module_foot">
+                <ul>
+                                            <li class="right"><a href="http://www.tudiabetes.org/groups">View All</a></li>
+                                    </ul>
+            </div>
+        </div>
+<div class="xg_module html_module module_text xg_reset" data-module_name="text"
+        >
+        <div class="xg_module_head"><h2>TuDiabetes Team</h2></div>
+            <div class="xg_module_body xg_user_generated">
+            <h2>DHF STAFF</h2>
+<br />
+<table>
+<tbody>
+<tr>
+<td><a href="http://www.tudiabetes.org/profile/askmanny"><img src="http://static.ning.com/tudiabetes/images/MannyHernandez32x32.jpg" border="0"  /></a><a href="http://www.tudiabetes.org/profile/askmanny">Manny Hernandez</a><br />
+(Co-Founder, Editor, Patient)</td>
+</tr>
+<tr>
+<td><a href="http://www.tudiabetes.org/profile/andreDAVILA"><img src="http://static.ning.com/tudiabetes/images/AndreinaDavila32x32.jpg" border="0"  /></a><a href="http://www.tudiabetes.org/profile/andreDAVILA">Andreina Davila</a><br />
+(Co-Founder, Patient Spouse)</td>
+</tr>
+<tr>
+<td><a href="http://www.tudiabetes.org/profile/Emily114"><img src="http://api.ning.com:80/files/PoEXFE5uOnnRU0cILWNKfNF5SXbZ6k8E9p9CJUgN-fi5E4ZePgybgLkThzs*KufhAfj-CGUuD6V3F*W8hqTZ1A__/Emily_Coles_32x321.png" border="0"  /></a><a href="http://www.tudiabetes.org/profile/Emily114">Emily Coles</a><br />
+(Program Manager, Patient)</td>
+</tr>
+<tr>
+<td><a href="http://www.tudiabetes.org/profile/EmilyWalton"><img src="http://api.ning.com:80/files/BffwM3EKIndLJnFhyCZZkn0fhpyKQWx7S*OL8YDD*oqqaBij6Gd*NQWQG0gecFZeiyUiiY-lVIMqS7Co7hY6Yw__/Emily_Walton_32x32.png" border="0"  /></a><a href="http://www.tudiabetes.org/profile/EmilyWalton">Emily Walton</a><br />
+(Office/Volunteer Coordinator)</td>
+</tr>
+</tbody>
+</table>
+<br />
+<h2>DHF VOLUNTEERS</h2>
+<br />
+<b>Lead Administrator</b><br />
+<table>
+<tbody>
+<tr>
+<td><a href="http://www.tudiabetes.org/profile/MelissaBL"><img src="http://api.ning.com:80/files/NmTUAHSXXjfcwMXaGlGmM5uOoHSqf*q8I7D36k-*SuGHSBM6aMcUQAiVU8sKlMkg4PlXtOHZupyf7bqEsb12ug__/MelissaBL32x32.jpg" border="0"  /></a><a href="http://www.tudiabetes.org/profile/MelissaBL">MelissaBL</a></td>
+</tr>
+</tbody>
+</table>
+<br />
+<b>Administrators</b><br />
+<table>
+<tbody>
+<tr>
+<td><a href="http://www.tudiabetes.org/profile/Bradford"><img src="http://static.ning.com/tudiabetes/images/BG32x32.jpg" border="0"  /></a><a href="http://www.tudiabetes.org/profile/Bradford">Bradford</a></td>
+</tr>
+<tr>
+<td><a href="http://www.tudiabetes.org/profile/Gerri"><img src="http://static.ning.com/tudiabetes/images/Gerri32x32.jpg" border="0"  /></a><a href="http://www.tudiabetes.org/profile/Gerri">Gerri</a></td>
+</tr>
+<tr>
+<td><a href="http://www.tudiabetes.org/profile/Colcalli"><img src="http://static.ning.com/tudiabetes/images/Lorraine_32x32.jpg" border="0"  /></a><a href="http://www.tudiabetes.org/profile/Colcalli">Lorraine</a></td>
+</tr>
+<tr>
+<td><a href="http://www.tudiabetes.org/profile/MarieB"><img src="http://api.ning.com:80/files/Wp4Ro-mlSRoIe6obY5SdmbdcCZtSmxOOkJbWNpPj4rEu1sAILdk1hY2jGHslKyWflLtgZGRLV8eOpJZ8Uv0Ppw__/MarieB_32x32.jpg" border="0"  /></a><a href="http://www.tudiabetes.org/profile/MarieB">Marie B</a></td>
+</tr>
+<tr>
+<td><a href="http://www.tudiabetes.org/profile/Teena_"><img src="http://static.ning.com/tudiabetes/images/teena32x32.jpg" border="0"  /></a><a href="http://www.tudiabetes.org/profile/Teena_">Teena</a></td>
+</tr>
+</tbody>
+</table>
+<div class="xg_module_head"></div>
+<ul>
+<li><a href="http://tudiabetes.com/group/welcomecommittee">Care Team</a></li>
+<li><a href="http://tudiabetes.com/group/contentcreationcommittee">Content Committee</a></li>
+</ul>
+<br />
+        </div>
+            </div>
+	<div class="xg_module module_badge">
+		<div class="xg_module_head">
+	    <h2>Spread the word</h2>
+	    </div>
+	    <div class="xg_module_body xj_badge_body xj_embed_container" data-module_name="badge" _embedCode="&lt;object classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; codebase=&quot;http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab&quot;
+    id=&quot;badgeSwf&quot; width=&quot;100%&quot; height=&quot;242&quot; &gt;
+    &lt;param name=&quot;movie&quot; value=&quot;http://static.ning.com/socialnetworkmain/widgets/index/swf/badge.swf?v=201203152002&quot; /&gt;
+    &lt;param name=&quot;quality&quot; value=&quot;high&quot; /&gt;
+    &lt;param name=&quot;bgcolor&quot; value=&quot;#dfddcb&quot; /&gt;
+    &lt;param name=&quot;flashvars&quot; value=&quot;hideVisit=1&amp;amp;config=http%3A%2F%2Fwww.tudiabetes.org%2Fmain%2Fbadge%2FshowPlayerConfig%3Fsize%3Dlarge%26v%3D212&amp;amp;backgroundColor=0xdfddcb&amp;amp;textColor=0x5b5b58&quot; /&gt;
+    &lt;param name=&quot;wmode&quot; value=&quot;opaque&quot;/&gt;
+    &lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;
+&lt;embed
+    class=&quot;xj_badge_embed&quot;
+    src=&quot;http://static.ning.com/socialnetworkmain/widgets/index/swf/badge.swf?v=201203152002&quot;
+    quality=high
+    bgColor=&quot;#dfddcb&quot;
+    width=&quot;100%&quot;
+    height=&quot;242&quot;
+    name=&quot;badgeSwf&quot;
+    type=&quot;application/x-shockwave-flash&quot;
+    pluginspage=&quot;http://www.macromedia.com/go/getflashplayer&quot;
+    wmode=&quot;opaque&quot;
+    FlashVars=&quot;hideVisit=1&amp;amp;config=http%3A%2F%2Fwww.tudiabetes.org%2Fmain%2Fbadge%2FshowPlayerConfig%3Fsize%3Dlarge%26v%3D212&amp;amp;backgroundColor=0xdfddcb&amp;amp;textColor=0x5b5b58&quot;
+    scale=&quot;noscale&quot;
+    allowScriptAccess=&quot;always&quot;&gt;
+&lt;/embed&gt;
+&lt;/object&gt;">
+    Loading…</div>
+	    <div class="xg_module_foot">
+	        <p class="right"><a href="http://www.tudiabetes.org/main/embeddable/list">Get Badge</a></p>
+	    </div>
+	</div>
+    </div>
+                    </div>
+                </div>
+            </div>
+            <div id="xg_foot">
+                <div id="xg_footcontent">
+                    <div class="xj_foot_content"><p class="left">
+    © 2012             &nbsp; A community of people touched by diabetes, run by the <a href="http://diabeteshandsFoundation.org" target="_blank"> Diabetes Hands Foundation</a>.        </p>
+    <p class="right xg_lightfont">
+                <a href="http://www.tudiabetes.org/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                                    <a href="http://www.tudiabetes.org/main/authorization/signUp?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain%2Findex%2Freport" dojoType="PromptToJoinLink" _joinPromptText="Please sign up or sign in to complete this step." _signInUrl="http://www.tudiabetes.org/main/authorization/signIn?target=http%3A%2F%2Fwww.tudiabetes.org%2Fmain%2Findex%2Freport">Contact Us</a> &nbsp;|&nbsp;
+                        <a href="http://www.tudiabetes.org/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.tudiabetes.org%2Fmain">Terms of Service</a>
+            </p>
+</div>
+                </div>
+            </div>
+			<div id="xg_ad_below_footer" class="xg_ad xj_ad_below_footer dy-displaynone">
+				
+			</div>
+        </div>
+    </div>
+    <div class="xj_after_content"><div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use TuDiabetes.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			<img src="/xn_resources/widgets/index/gfx/jstrk_off.gif" alt="" height="1" width="1" />
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+<script>if(window.bzplcm)window.bzplcm.ts('jb')</script><script type="text/javascript" src="http://static.ning.com/socialnetworkmain/widgets/lib/core.min.js?v=201203152002"></script>        <script>
+            var sources = ["http:\/\/api.tudiabetes.ninggadgets.com\/gadgets\/js\/rpc.js?c=1","http:\/\/static.ning.com\/socialnetworkmain\/widgets\/lib\/js\/jquery\/jquery-ui.min.js?v=201203152002","http:\/\/static.ning.com\/socialnetworkmain\/widgets\/lib\/js\/modernizr\/modernizr.custom.09583.js?v=201203152002","http:\/\/static.ning.com\/socialnetworkmain\/widgets\/lib\/js\/jquery\/jstorage.min.js?v=201203152002","http:\/\/static.ning.com\/socialnetworkmain\/widgets\/lib\/js\/jquery\/jquery.autoResize.js?v=201203152002","http:\/\/static.ning.com\/socialnetworkmain\/widgets\/lib\/js\/jquery\/jquery.jsonp-2.2.0.min.js?v=201203152002","http:\/\/static.ning.com\/socialnetworkmain\/widgets\/lib\/js\/Base64.js?v=201203152002","http:\/\/static.ning.com\/tudiabetes\/instances\/shared\/js\/set_common.min.js?r=1331843282","http:\/\/static.ning.com\/tudiabetes\/instances\/shared\/js\/set_sidebar_u.min.js?r=1328124589","http:\/\/static.ning.com\/tudiabetes\/instances\/shared\/js\/set_mainindeinde_u.min.js?r=1331914144"];
+            var numSources = sources.length;
+            var heads = document.getElementsByTagName('head');
+            var node = heads.length > 0 ? heads[0] : document.body;
+            var onloadFunctionsObj = {};
+
+            var createScriptTagFunc = function(source) {
+                var script = document.createElement('script');
+                
+                script.type = 'text/javascript';
+                                var currentOnLoad = function() {xg._loader.onLoad(source);};
+                if (script.readyState) { //for IE (including IE9)
+                    script.onreadystatechange = function() {
+                        if (script.readyState == 'complete' || script.readyState == 'loaded') {
+                            script.onreadystatechange = null;
+                            currentOnLoad();
+                        }
+                    }
+                } else {
+                   script.onerror = script.onload = currentOnLoad;
+                }
+
+                script.src = source;
+                node.appendChild(script);
+            };
+
+            for (var i = 0; i < numSources; i++) {
+                xg._loader.loading(sources[i]);
+                createScriptTagFunc(sources[i]);
+            }
+        </script>
+    <script type="text/javascript">
+if (!ning._) {ning._ = {}}
+ning._.compat = { encryptedToken: "<empty>" }
+ning._.CurrentServerTime = "2012-03-17T17:19:14+00:00";
+ning._.probableScreenName = "";
+ning._.domains = {
+    base: 'ning.com',
+    ports: { http: '80', ssl: '443' }
+};
+ning.loader.version = '201203152002_212'; // DEP-7365:19c6695 33
+djConfig.parseWidgets = false;
+</script>
+<script>if(window.bzplcm)window.bzplcm.ts('ja')</script><script>window.bzplcm.add({"app":"tudiabetes","user":null,"l_t":"homepage","mcr":12,"mct":12,"nac":1});</script><script type="text/javascript">
+    xg.token = '';
+    xg.canTweet = false;
+    xg.cdnHost = 'static.ning.com';
+    xg.version = '201203152002';
+    xg.useMultiCdn = true;
+        xg.staticRoot = 'socialnetworkmain';
+    xg.xnTrackHost = "coll.ning.com";
+            xg.cdnDefaultPolicyHost = 'static';
+        xg.cdnPolicy = [];
+        xg.global = xg.global||{}; xg.global.currentMozzle = 'main';
+    xg.global.userCanInvite = false;
+    xg.global.requestBase = '';
+    xg.global.locale = 'en_US';
+    xg.num_thousand_sep = ",";
+    xg.num_decimal_sep = ".";
+        (function() {
+        dojo.addOnLoad(function() {
+            if(window.bzplcm) { window.bzplcm.ts('hr'); window.bzplcm._profileSend(); }
+                    });
+                            xg._loader.onLoad('xnloader');
+            })();
+</script>
+<script type="text/javascript" src="http://static.ning.com/socialnetworkmain/widgets/lib/js/thrift/xn_track.min.js?v=201203152002"></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=222408397825895";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script type="text/javascript">
+/* insert in footer */
+if (typeof(x$) != 'undefined') {
+    var footAd = '<div id="footAd "><iframe height="400px" width="100%" src="/footer" frameborder="no" scrolling="no" allowtransparency=”true”></iframe></div>';
+    x$("#xg_foot").prepend(footAd);
+}
+</script></div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-529819-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<script language="JavaScript">
+x$(document).ready(function() {
+  x$('.module_feed').find("a").attr("target", "_blank" );   
+});
+</script>
+
+<!-- Start Quantcast tag -->
+<script type="text/javascript">
+_qoptions={
+qacct:"p-62ZEe_qxrsQ92"
+};
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+<img src="http://pixel.quantserve.com/pixel/p-62ZEe_qxrsQ92.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- End Quantcast tag --><script>if(window.bzplcm)window.bzplcm.ts('he')</script><script>
+(function () {
+var cookies = document.cookie.split(';');
+var re = /^\s*xn_visitor=([^\s]*)/;
+var vc = '';
+for (i in cookies) {
+    if (!cookies.hasOwnProperty(i)) {
+        continue
+    }
+    var match = re.exec(cookies[i]);
+    if (match) {
+        vc = match[1];
+        break;
+    }
+}
+var image = new Image();
+var user = vc + ',,tudiabetes';
+image.src = 'http://www22.glam.com/cTagsImgCmd.act?gname=ning_user&gvalue=' + user + '&gtid=5000059145&gcmd=setc&gexpires=604800&ord=' + Math.random()*1E16;
+})();
+</script>
+<script src="http://www35.glam.com/gad/glamadapt_jsapi.act?afid=183770529"></script>
+<script>
+try {
+    GlamCreateSlot("183770529", "728x90", "Ning_Top_Leaderboard");
+    GlamSetSlotData("Ning_Top_Leaderboard", "ningid=583967");
+    GlamCreateSlot("183770529", "300x250", "Ning_Top_Right");
+    GlamSetSlotData("Ning_Top_Right", "ningid=583967");
+    GlamTrack("183770529");
+} catch (e) {}
+</script>
+<script type="text/javascript">
+    var ning_gaq = ning_gaq || [];
+    ning_gaq.push(['_ning_ga._setAccount', 'UA-2270114-6']); 
+    ning_gaq.push(['_ning_ga._setNamespace', 'ning']);
+               ning_gaq.push(['_ning_ga._setCustomVar', 1,'member_type',   'anonymous', 3]);
+       ning_gaq.push(['_ning_ga._setCustomVar', 2,'subdomain',     'tudiabetes.ning.com' ,3]); 
+       ning_gaq.push(['_ning_ga._setCustomVar', 3,'category',      'health' ,3]);
+       ning_gaq.push(['_ning_ga._setCustomVar', 4,'product_type',  'pro' ,3]);
+       ning_gaq.push(['_ning_ga._setCustomVar', 5,'member_segment','5000-49999' ,3]);
+    ning_gaq.push(['_ning_ga._trackPageview']);
+    ning_gaq.push(['_ning_ga._trackPageLoadTime']);
+
+    (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = "http://static.ning.com/socialnetworkmain/widgets/index/js/google-analytics/ga.js?v=201203152002";
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+</script>
+<script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "6770185" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=6770185&cv=2.0&cj=1" />
+</noscript>
+
+</div>
+</body>
+</html>

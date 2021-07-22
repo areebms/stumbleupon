@@ -1,0 +1,4695 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/">
+<!--
+  
+    
+    ROLE = prod.
+-->
+
+
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+
+
+
+
+<head>
+	
+		
+		<script type="text/javascript">
+			var jSINGconf = {};
+			jSINGconf.theme = {
+				
+					CITY: 'Stuart',
+				
+					SITE_NAME: 'TCPalm',
+				
+					VIDEO_MEDIA_URL: 'http://media.scrippsnewspapers.com/corp_assets/asphalt',
+				
+					SITE_MEDIA_URL: 'http://web.tcpalm.com/static/tcp/asphalt/prod',
+				
+					REGION: 'Treasure Coast',
+				
+					MOBILE_SITE_NAME: 'TCPalm Mobile',
+				
+					SITE_URL: 'http://www.tcpalm.com/',
+				
+					STATE: 'Florida',
+				
+					STATE_ABBR: 'FL',
+				
+					MOBILE_SITE_URL: 'http://m.tcpalm.com',
+				
+					CORP_MEDIA_URL: 'http://media.tcpalm.com/corp_assets/asphalt',
+				
+					SITE_ABBR: 'tcp'
+				
+			};
+			jSINGconf.ajax = {
+				loaderImageURL: 'http://media.tcpalm.com/corp_assets/asphalt/img/ajax-loader.gif'
+			};
+			jSINGconf.maps = {
+				yahooMapList: [] // Array for yahoo maps to be registered
+			};
+			jSINGconf.playlistVideos = {};
+			jSINGconf.playlistPlayers = {};
+			jSINGconf.videoPlayers = {};
+		</script>
+	
+	
+	
+		
+		
+		<meta name="viewport" content="width=device-width,user-scalable=yes" />
+<script src="http://media.tcpalm.com/corp_assets/asphalt/js/jSING.mobile-redirect.yui.js" type="text/javascript"></script>
+		
+	
+	
+	
+	
+		
+		
+			<!-- ad_manager --><!-- target.obj_name = story -->
+<script type="text/javascript"><!--
+
+            function ReadCookie(cookieName) {
+                var theCookie="" + document.cookie ;
+                var ind = theCookie.indexOf( cookieName ) ;
+                if( ind == -1 || cookieName == "" ) return "" ; 
+                var ind1 = theCookie.indexOf( ';', ind ) ;
+                if( ind1 == -1) ind1 = theCookie.length ; 
+                return unescape( theCookie.substring( ind + cookieName.length + 1, ind1 ) ) ;
+            }
+            function ReadZagi( zagiName) {
+                var zagi = ReadCookie( 'zagi' );
+                var ind = zagi.indexOf( zagiName );
+                if( ind == -1 || zagiName == "" ) return "" ;
+                var ind1 = zagi.indexOf( '&', ind ) ;
+                if( ind1 == -1 ) ind1 = zagi.length - 1;
+                return zagi.substring( ind + zagiName.length + 1, ind1 ) ;
+            }
+            // SITE-LEVEL PARAMETERS
+            yld_mgr = {};
+            yld_mgr.pub_id="20989837316";
+            yld_mgr.site_name="TcPalm";
+            yld_mgr.container_type="js";//Hardcoded
+
+            //OPTIONAL PARAMETERS THAT DESCRIBE THE TARGETED CONTENT 
+            // <class 'django.models.news.Story'>
+            /* St. Lucie teacher has students vote on whether 5-year-old can stay in class */
+            yld_mgr.content_topic_id_list=[ "20201001", "20275001", "20276501", "20277001", "20287001", "20345501"]; 
+            // [Home Page (NPC), News (NPC), News / Local (NPC), News / Local / Education (NPC), News / Weird News (NPC), Special Section / Local / Education (NPC)]
+            yld_mgr.site_section_name_list=[ "Article"]; // mapped from view decorator and info_dicts by the yahoo SiteSectionTaxonomyMiddleware
+            yld_mgr.content_lang="en-US"; //Hardcoded
+
+
+            //OPTIONAL DISABLE CONTENT SEND 
+            yld_mgr.disable_content_send="0"; 
+ 
+            //OPTIONAL PARAMETERS FOR GEOGRAPHIC TARGETING 
+            var zip = ReadZagi( 'zip_code' );
+            if( zip ) { yld_mgr.user_zip = zip ; }
+            var city = ReadZagi( 'city' ) ;
+            if( city ) { yld_mgr.user_city = city ; }
+            var state = ReadZagi( 'state' ) ;
+            if( state ) { yld_mgr.user_state = state ; }
+            
+            //OPTIONAL PARAMETERS FOR DEMOGRAPHIC TARGETING 
+            var age = ReadZagi( 'age' ) ;
+            function AgeToRange( years_old ) {
+                if( years_old < 13 ) { return "" ; }
+                else if( years_old < 18 ) { return "13-17" ; }
+                else if( years_old < 21 ) { return "18-20" ; }
+                else if( years_old < 25 ) { return "21-24" ; }
+                else if( years_old < 30 ) { return "25-29" ; }
+                else if( years_old < 35 ) { return "30-34" ; }
+                else if( years_old < 40 ) { return "35-39" ; }
+                else if( years_old < 45 ) { return "40-44" ; }
+                else if( years_old < 50 ) { return "45-49" ; }
+                else if( years_old < 55 ) { return "50-54" ; }
+                else if( years_old < 60 ) { return "55-59" ; }
+                else if( years_old < 65 ) { return "60-64" ; }
+                else if( years_old < 100 ){ return "65-100" ; }
+                return "100+" ;
+            }
+            var gender = ReadZagi( 'gender' )=='M'?'Male':ReadZagi('gender')=='F'?'Female':''
+            if( gender ) yld_mgr.user_gender = gender ;
+            if( age ) yld_mgr.user_age = AgeToRange( age ) ;
+            function IncToRange( inc ) {
+                var idx = 0 ;
+                var numstr = '' ;
+                for( idx = 0; idx < inc.length; idx ++ ) 
+                    if( ! isNaN( parseInt(inc[idx]) ) ) numstr += inc[idx] ;
+                inc = parseInt( numstr ) ;
+                if( isNaN( inc ) ) { return '' ; }
+                else if( inc <= 24999 ) { return '1-24999' ; }
+                else if( inc <= 34999 ) { return '25000-34999' ; }
+                else if( inc <= 49999 ) { return '35000-49999' ; }
+                else if( inc <= 74999 ) { return '50000-74999' ; }
+                else if( inc <= 99999 ) { return '75000-99999' ; }
+                else if( inc <=149999 ) { return '100000-149999' ; }
+                else if( inc <=249999 ) { return '150000-249999' ; }
+                else if( inc >=250000 ) { return '250000-' ; }
+            }
+            var inc_range = IncToRange( ReadZagi( 'income' ) ) ;
+            if( inc_range ) yld_mgr.income_range=inc_range ;
+
+
+            // define the slots
+            yld_mgr.slots = {} ;
+            
+//--> </script>
+<!-- End ad manager -->
+			
+			
+			
+		
+
+		
+	
+			
+			<!-- stage register_ad_pos -->
+			<script type="text/javascript"><!--
+            yld_mgr.slots.SUPERSTITIAL = {};
+             
+            //REQUIRED PARAMETERS 
+            yld_mgr.slots.SUPERSTITIAL.request_type="ac"; // ac=ad call, bc=beacon call, fc=forecast call
+            yld_mgr.slots.SUPERSTITIAL.ad_size_list=["720x300", "720x90"  ]; // SUPERSTITIAL
+
+            //OPTIONAL PARAMETERS THAT DESCRIBE THE AD 
+            yld_mgr.slots.SUPERSTITIAL.ad_delivery_mode="ipatf"; // pos = above; ipatf = above the fold, ipbtf = below the fold, ipstf = spans the fold
+            yld_mgr.slots.SUPERSTITIAL.clk_dest="_blank"; //Hardcoded
+            yld_mgr.slots.SUPERSTITIAL.ad_output_encoding="utf-8"; //Hardcoded
+            yld_mgr.slots.SUPERSTITIAL.cstm_content_cat_list=[ "St Lucie County"]; 
+            yld_mgr.slots.SUPERSTITIAL.content_type_list=[ "fn_news" ]; 
+
+        
+            //--> </script> 
+			<script type="text/javascript"><!--
+            yld_mgr.slots.BIGBOX_1 = {};
+             
+            //REQUIRED PARAMETERS 
+            yld_mgr.slots.BIGBOX_1.request_type="ac"; // ac=ad call, bc=beacon call, fc=forecast call
+            yld_mgr.slots.BIGBOX_1.ad_size_list=["300x250"  ]; // BIGBOX
+
+            //OPTIONAL PARAMETERS THAT DESCRIBE THE AD 
+            yld_mgr.slots.BIGBOX_1.ad_delivery_mode="ipatf"; // pos = above; ipatf = above the fold, ipbtf = below the fold, ipstf = spans the fold
+            yld_mgr.slots.BIGBOX_1.clk_dest="_blank"; //Hardcoded
+            yld_mgr.slots.BIGBOX_1.ad_output_encoding="utf-8"; //Hardcoded
+            yld_mgr.slots.BIGBOX_1.cstm_content_cat_list=[ "St Lucie County"]; 
+            yld_mgr.slots.BIGBOX_1.content_type_list=[ "fn_news" ]; 
+
+        
+            //--> </script> 
+
+			
+	
+	
+
+
+			<script type="text/javascript"><!--
+            yld_mgr.slots.WEATHER_SPONSOR = {};
+             
+            //REQUIRED PARAMETERS 
+            yld_mgr.slots.WEATHER_SPONSOR.request_type="ac"; // ac=ad call, bc=beacon call, fc=forecast call
+            yld_mgr.slots.WEATHER_SPONSOR.ad_size_list=["120x30"  ]; // WEATHER_SPONSOR
+
+            //OPTIONAL PARAMETERS THAT DESCRIBE THE AD 
+            yld_mgr.slots.WEATHER_SPONSOR.ad_delivery_mode="ipbtf"; // pos = below; ipatf = above the fold, ipbtf = below the fold, ipstf = spans the fold
+            yld_mgr.slots.WEATHER_SPONSOR.clk_dest="_blank"; //Hardcoded
+            yld_mgr.slots.WEATHER_SPONSOR.ad_output_encoding="utf-8"; //Hardcoded
+            yld_mgr.slots.WEATHER_SPONSOR.cstm_content_cat_list=[ "St Lucie County"]; 
+            yld_mgr.slots.WEATHER_SPONSOR.content_type_list=[ "fn_news" ]; 
+
+        
+            //--> </script> 
+			<script type="text/javascript"><!--
+            yld_mgr.slots.SEARCH_RESULTS_SPONSOR_1 = {};
+             
+            //REQUIRED PARAMETERS 
+            yld_mgr.slots.SEARCH_RESULTS_SPONSOR_1.request_type="ac"; // ac=ad call, bc=beacon call, fc=forecast call
+            yld_mgr.slots.SEARCH_RESULTS_SPONSOR_1.ad_size_list=["120x30"  ]; // SEARCH_RESULTS_SPONSOR
+
+            //OPTIONAL PARAMETERS THAT DESCRIBE THE AD 
+            yld_mgr.slots.SEARCH_RESULTS_SPONSOR_1.ad_delivery_mode="ipatf"; // pos = above; ipatf = above the fold, ipbtf = below the fold, ipstf = spans the fold
+            yld_mgr.slots.SEARCH_RESULTS_SPONSOR_1.clk_dest="_blank"; //Hardcoded
+            yld_mgr.slots.SEARCH_RESULTS_SPONSOR_1.ad_output_encoding="utf-8"; //Hardcoded
+            yld_mgr.slots.SEARCH_RESULTS_SPONSOR_1.cstm_content_cat_list=[ "St Lucie County"]; 
+            yld_mgr.slots.SEARCH_RESULTS_SPONSOR_1.content_type_list=[ "fn_news" ]; 
+
+        
+            //--> </script> 
+			
+			<!-- End register_ad_pos -->
+		
+	
+	<script type="text/javascript"><!--
+            yld_mgr.slots.LEADERBOARD_1 = {};
+             
+            //REQUIRED PARAMETERS 
+            yld_mgr.slots.LEADERBOARD_1.request_type="ac"; // ac=ad call, bc=beacon call, fc=forecast call
+            yld_mgr.slots.LEADERBOARD_1.ad_size_list=["728x90"  ]; // LEADERBOARD
+
+            //OPTIONAL PARAMETERS THAT DESCRIBE THE AD 
+            yld_mgr.slots.LEADERBOARD_1.ad_delivery_mode="ipatf"; // pos = above; ipatf = above the fold, ipbtf = below the fold, ipstf = spans the fold
+            yld_mgr.slots.LEADERBOARD_1.clk_dest="_blank"; //Hardcoded
+            yld_mgr.slots.LEADERBOARD_1.ad_output_encoding="utf-8"; //Hardcoded
+            yld_mgr.slots.LEADERBOARD_1.cstm_content_cat_list=[ "St Lucie County"]; 
+            yld_mgr.slots.LEADERBOARD_1.content_type_list=[ "fn_news" ]; 
+
+        
+            //--> </script> 
+
+
+		
+
+		<script type="text/javascript" src="http://e.yieldmanager.net/script.js"></script>
+	
+	
+	
+	
+	<!-- META -->
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="TCPalm.com and TCPalm" />
+	<meta name="description" content="A 5-year-old Morningside Elementary student was 'voted out' of kindergarten by his classmates -- an action orchestrated by the child's teacher, according to Port St. Lucie Police Department officials." />
+	<meta name="copyright" content="Copyright (c) 2011 TCPalm.com. All Rights Reserved." />
+	<meta property="fb:app_id" content="333982304914" />
+	
+	
+	<meta property="og:title" content="St. Lucie teacher has students vote on whether 5-year-old can stay in class" /> 
+	<meta property="og:site_name" content="TCPalm" /> 
+	<meta property="og:type" content="article" /> 
+	<meta property="og:url" content="http://www.tcpalm.com/news/2008/may/23/st-lucie-teacher-has-class-vote-whether-5-year-old/" /> 
+	<meta property="og:description" content="A 5-year-old Morningside Elementary student was 'voted out' of kindergarten by his classmates -- an action orchestrated by the child's teacher, according to Port St. Lucie Police Department officials." /> 
+	
+		
+	    <meta property="og:image" content="http://media.tcpalm.com/media/img/photos/2008/05/23/alex_3_t81.jpg" />
+	    
+	
+
+	
+	
+	<meta name="google-site-verification" content="4zAGBDNbCbL4wcZUR-TVITv2-1RFVJjXtOC6aC8LgR8" />
+
+
+	
+	<title>St. Lucie teacher has students vote on whether 5-year-old can stay in class &raquo; TCPalm.com</title>
+	
+	
+		<link rel="icon" href="http://media.tcpalm.com/corp_assets/asphalt/_sites/tcp/img/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut" href="http://media.tcpalm.com/corp_assets/asphalt/_sites/tcp/img/favicon.ico" type="image/x-icon" />
+	
+	
+	
+	<!-- CSS -->
+		
+			<link href="http://media.tcpalm.com/corp_assets/asphalt/css/base/base.yui.2011-03-31_14-40-17.css" rel="stylesheet" type="text/css" /> 
+			<style type="text/css" media="only screen and (max-device-width: 768px)">
+				.primary_nav li a, #verticals_nav li a {
+					margin-right: 27px;
+				}
+			</style>
+		
+		
+	
+			
+			<link href="http://media.tcpalm.com/corp_assets/asphalt/_sites/tcp/css/tcp.css" rel="stylesheet" type="text/css" />
+		
+    
+    <style type="text/css">
+    	#topstories .time_updated{font-weight:bold; color:#ff0000;}   
+    </style>
+	 
+
+		
+			
+				<!--[if IE 6]>
+					<link href="http://media.tcpalm.com/corp_assets/asphalt/css/ie6.css" rel="stylesheet" type="text/css" />
+				<![endif]-->
+
+				<!--[if IE 7]>
+					<link href="http://media.tcpalm.com/corp_assets/asphalt/css/ie7.css" rel="stylesheet" type="text/css" />
+				<![endif]-->
+				
+				<!--[if IE 8]>
+					<link href="http://media.tcpalm.com/corp_assets/asphalt/css/ie8.css" rel="stylesheet" type="text/css" />
+				<![endif]-->
+			
+			
+			
+	
+				
+				<!--[if IE 6]>
+					<link href="http://media.tcpalm.com/corp_assets/asphalt/_sites/tcp/css/tcp_ie6.css" rel="stylesheet" type="text/css" />
+				<![endif]-->
+				<!--[if IE 7]>
+					<link href="http://media.tcpalm.com/corp_assets/asphalt/_sites/tcp/css/tcp_ie7.css" rel="stylesheet" type="text/css" />
+				<![endif]-->
+			
+
+			
+		
+
+	
+	
+	
+	
+	
+		<link rel="alternate"
+			title="RSS feed of all TCPalm headlines"
+			href="/feeds/headlines/"
+			type="application/rss+xml" />
+		
+	
+	
+	
+
+</head>
+
+<body class="default_body">
+	
+<!-- stats tag ['TCP'] -->
+<script type="text/javascript" src="http://apptap.scripps.com/apptap3?site=TCP&amp;app=djeff&amp;path=/news/local/special-coverage/alex-barton/article/st-lucie-teacher-has-class-vote-whether-5-year-old&amp;title=St. Lucie teacher has students vote on whether 5-year-old can stay in class&amp;k=v&amp;topic=Home+Page+%28NPC%29"></script><script>
+                    s.prop50 = "News/Alex Barton";
+                    s.prop51 = "News/Odd News";
+                    s.prop52 = "News/Schools";
+                    s.prop53 = "News/St. Lucie County";
+                    s.prop54 = "News";
+                    
+                    </script><script type="text/javascript" >apptap();</script>
+
+<script type="text/javascript">document.body.className += " hasJS"</script>
+	
+
+	
+
+	
+	<div class="adtag" id="SUPERSTITIAL"><script>yld_mgr.place_ad_here("SUPERSTITIAL");</script> </div>
+
+
+<div id="advertising_wrapper" class="default">
+	
+	
+	    <div id="advertising">
+		
+			
+		
+			<div id="leaderboard">
+				<div class="adtag" id="LEADERBOARD_1"><script>yld_mgr.place_ad_here("LEADERBOARD_1");</script> </div>
+			</div> <!-- end #leaderboard -->
+		
+		</div> <!-- end #advertising -->
+	
+	
+</div> <!-- end #advertising_wrapper -->
+<div id="utilities_wrapper">
+			
+	<div id="utilities">
+		
+		<ul id="site_services">
+			
+				<li><a href="/accounts/login/" id="site_services_login"><strong>Login</strong></a> |</li>
+			
+			<li><a href="/accounts/profile/edit/">Manage Account</a> |</li>
+			<li><a href="http://m.tcpalm.com">Mobile</a> |</li>
+			
+	<li><a href="/staff/" title="Contact Us"> Contact Us</a> |</li>
+    <li><a href="http://treasurecoast.fl.newsmemory.com/ " title="E-Edition"> E-Edition</a> |</li>
+    <li><a href="https://circulation.scripps.com/tcpalm/cgi-bin/cmo_cmo.sh/custservice/web/login.html" title="Subscriber Services">Subscriber Services</a> |</li>	
+	<li><a href="/sitemap/" title="Site Map"> Site Map</a></li>
+
+		</ul>
+		
+		
+		<div id="global_site_login" class="preventFOUC">
+		
+			
+						<div class="submit_form_alerts_global">
+							<form action="/accounts/login/?next=/news/2008/may/23/st-lucie-teacher-has-class-vote-whether-5-year-old/" method="post" id="loginform1">					
+								<div class="global_login_container_left">
+											
+											<label for="global_username">
+												<span class="global_submit_label_username">User Name:</span>
+											</label>
+											
+											<input id="global_username" class="vTextField required" name="username" size="17" value="" maxlength="75" def="" type="text" />
+											<input type="image" name="image" src="http://media.tcpalm.com/corp_assets/asphalt/_sites/tcp/img/buttons/global_login_btn.gif" title="Login" alt="Login" class="global_login_button" border="0"/>
+											<br/>
+											<label for="global_password">
+												<span class="global_submit_label_password">Password:</span>
+											</label>
+											
+											<input id="global_password" class="vPasswordField required" name="password" size="17" value="" maxlength="30" def="" type="password" style="margin-top:12px;"/>
+											
+											<span class="global_formtip"><a href="/accounts/password_reset/">Forgotten your password?</a>&nbsp;|
+											
+											<a href="/accounts/register/">Create an account</a></span>
+									</div>
+								
+									
+										<div class="global_login_container_right">
+											 <span class="global_rpx_login_text"><a class="rpxnow" onclick="return false;" href="https://login.tcpalm.com/openid/v2/signin?token_url=http%3A%2F%2Fwww.tcpalm.com%2Faccounts%2Fauth%2F?previous=/news/2008/may/23/st-lucie-teacher-has-class-vote-whether-5-year-old/">Register or log in using your account on these websites.</a></span>
+											<div class="connect_icons">
+	                                                                                
+	                                                                                
+	                                                                                <a id="facebook_connect" class="" href="" onclick="window.open('https://login.tcpalm.com/facebook/connect_start?ext_perm=publish_stream,email&token_url=http%3A%2F%2Fwww.tcpalm.com%2Faccounts%2Fauth%2F%3Fprevious=/news/2008/may/23/st-lucie-teacher-has-class-vote-whether-5-year-old/%26popup=true','rpxnow','width=800,height=550'); return false;"><img src="http://media.tcpalm.com/corp_assets/asphalt/img/icons/facebook/facebook_sm_blk.jpg"/></a>
+	                                                                                
+	                                                                                <a id="google_connect" class="" href="" onclick="window.open('https://login.tcpalm.com/openid/start?openid_identifier=https%3A//www.google.com/accounts/o8/id&token_url=http%3A%2F%2Fwww.tcpalm.com%2Faccounts%2Fauth%2F%3Fprevious=/news/2008/may/23/st-lucie-teacher-has-class-vote-whether-5-year-old/%26popup=true','rpxnow','width=800,height=550'); return false;"><img src="http://media.tcpalm.com/corp_assets/asphalt/img/icons/google/google_sm_blk.jpg"/></a>
+	                                                                                
+	                                                                                <a id="yahoo_connect" class="" href="" onclick="window.open('https://login.tcpalm.com/openid/start?openid_identifier=https%3A//me.yahoo.com/&token_url=http%3A%2F%2Fwww.tcpalm.com%2Faccounts%2Fauth%2F%3Fprevious=/news/2008/may/23/st-lucie-teacher-has-class-vote-whether-5-year-old/%26popup=true','rpxnow','width=800,height=550'); return false;"><img src="http://media.tcpalm.com/corp_assets/asphalt/img/icons/yahoo/yahoo_sm_blk.jpg"/></a>
+	                                                                                
+	                                                                                <a id="twitter_connect" class="" href="" onclick="window.open('https://login.tcpalm.com/twitter/start?token_url=http%3A%2F%2Fwww.tcpalm.com%2Faccounts%2Fauth%2F%3Fprevious=/news/2008/may/23/st-lucie-teacher-has-class-vote-whether-5-year-old/%26popup=true','rpxnow','width=800,height=550'); return false;"><img src="http://media.tcpalm.com/corp_assets/asphalt/img/icons/twitter/twitter_sm_blk.jpg"/></a>
+	                                                                                
+	                                                                                <a id="openid_connect" class="" href="" onclick="window.open('https://login.tcpalm.com/openid/start?openid_identifier=https%3A//myopenid.com/&token_url=http%3A%2F%2Fwww.tcpalm.com%2Faccounts%2Fauth%2F%3Fprevious=/news/2008/may/23/st-lucie-teacher-has-class-vote-whether-5-year-old/%26popup=true','rpxnow','width=800,height=550'); return false;"><img src="http://media.tcpalm.com/corp_assets/asphalt/img/icons/openid/openid_sm_blk.jpg"/></a>
+	                                                                                
+											</div>
+											<span class="global_login_close"><a href="#global_site_login" id="global_login_close" alt="Close"><img src="http://media.tcpalm.com/corp_assets/asphalt/img/buttons/global_login_close.png" /> </a></span>
+										</div>				
+								</form>
+						</div>
+		</div>
+		
+		<div id="search">
+			<form action="/search/" method="get">
+				<fieldset>
+					<input id="q" name="q" type="text" class="search_text" />
+					<select class="yahoo_select" name="t">
+						<option value="">site</option>
+						<option value="web">web</option>
+					</select>
+					<input type="hidden" name="sortby" value="date"/>
+					<input class="search_button" type="image" alt="Go" src="http://media.tcpalm.com/corp_assets/asphalt/_sites/tcp/img/buttons/go.gif" name="image"/>
+				</fieldset>
+			</form>
+			<p class="search_sponsor">Web Search powered by <span class="yahoo_search">Yahoo!</span> SEARCH</p>
+		</div> <!-- end #search -->
+		
+	
+	</div> <!-- end #utilities -->
+	
+</div> <!-- end #utilities_wrapper -->
+	
+<div id="background_wrapper">
+	<div id="sand"></div><!-- end #sand -->
+</div>
+
+	<div id="page_wrapper" class="hnews hentry item">
+		
+		<div id="header">
+			<div id="logo"><a href="/" title="TCPalm">TCPalm</a></div>
+
+			
+			
+		</div> <!-- end #header -->
+		
+		
+		
+		<div id="space_nav_wrapper">
+			
+			
+			
+		</div>
+		
+		
+		
+		<div id="nav_wrapper">
+			
+	<ul id="site_nav" class="primary_nav nav_news">
+		<li id="nav_news"><a href="/news/news/" title="News">News</a>
+			<ul class="secondary_nav first">
+				<li><a href="/news/today/" title="Today">Today</a></li>
+				<li><a href="/news/news/" title="Local">Local</a>
+					<ul class="tertiary_nav">
+						<li><a href="/news/news/local/indian-river-county/" title="Indian River County News">Indian River County</a></li>
+						<li><a href="/news/news/local/st-lucie-county/" title="St. Lucie County News">St. Lucie County</a></li>
+						<li><a href="/news/news/local/martin-county/" title="Martin County News">Martin County</a></li>
+						<li><a href="/news/news/local/north-palm-beach-county/" title="North Palm Beach County News">North Palm Beach County</a></li>
+						<li><a href="/news/news/local/okeechobee-county/" title="Okeechobee County News">Okeechobee County</a></li>
+						<li><a href="/news/news/local/south-brevard-county/" title="South Brevard County News">South Brevard County</a></li>
+					</ul>
+				</li>
+				<li><a href="/news/news/state/" title="State">State</a></li>
+				<!-- <li><a href="/news/news/national/" title="National">National</a></li> -->
+				<li><a href="/weather/" title="Weather">Weather</a>
+                
+					<ul class="tertiary_nav">
+						<li><a href="/news/weather/hurricanes/ " title="Hurricane">Hurricane</a></li>
+					</ul>
+                
+				</li>
+				<li><a href="http://www.legacy.com/obituaries/tcpalm/" title="Obituaries">Obituaries</a></li>
+				<li><a href="/news/news/education/" title="Education">Education</a>
+					<ul class="tertiary_nav">
+						<li><a href="/news/news/education/indian-river-county/" title="Indian River County Education">Indian River County</a></li>
+						<li><a href="/news/news/education/st-lucie-county/" title="St. Lucie County Education">St. Lucie County</a></li>
+						<li><a href="/news/news/education/martin-county/" title="Martin County Education">Martin County</a></li>
+						<li><a href="/news/news/education/indian-river-state-college/" title="Indain River State Collerg">IRSC</a></li>
+					</ul>
+				</li>
+                <li><a href="/data/" title="Databases">Databases</a></li>
+				<li><a href="/news/news/local/politics/" title="Politics">Politics</a>
+					<ul class="tertiary_nav">
+						<li><a href="http://www.tcpalmaskthecandidates.com/" title="Ask the Candidates">Ask the Candidates</a></li>                        
+					</ul>				
+				</li>
+				<li><a href="/news/news/local/special-coverage" title="Special Coverage">Special Coverage</a>
+					<ul class="tertiary_nav">
+						<li><a href="/news/unsolved-murders-on-treasure-coast/ " title="Murder Mystery">Murder Mystery</a></li>
+						<li><a href="/news/news/local/special-coverage/gulf-oil-spill/" title="Gulf Oil Spill">Gulf Oil Spill</a></li>
+						<li><a href="/news/news/local/special-coverage/killer-roads/" title="Killer Roads">Killer Roads</a></li>
+						<li><a href="/news/stephen-schafer-shark-attack-stuart-florida/ " title="Stuart Shark Attack">Stuart Shark Attack</a></li>
+						<li><a href="/news/news/local/special-coverage/chinese-drywall/" title="Chinese Drywall">Chinese Drywall</a></li>
+						<li><a href="/news/news/local/special-coverage/brush-fires/" title="Brush Fires">Brush Fires</a></li>
+						<li><a href="/news/news/local/special-coverage/government-accountability/" title="Treasure Coast Government Accountability">Government Accountability</a></li>
+						<li><a href="/news/news/local/special-coverage/we-are-looking-out-for-you/" title="Looking Out For You">Looking Out For You</a></li>
+						<li><a href="/news/news/local/special-coverage/piper-aircraft/" title="">Piper Aircraft</a></li>
+						<li><a href="/news/news/local/special-coverage/space-shuttle/" title="Space Shuttle">Space Shuttle</a></li>
+						<li><a href="/news/news/local/special-coverage/swine-flu/" title="Swine Flu">Swine Flu</a></li>
+						<li><a href="/news/news/local/special-coverage/torrey-pines-molecular-studies/" title="Torrey Pines">Torrey Pines</a></li>
+                        <li><a href="/news/news/local/special-coverage/vero-beach-90th-anniversary/" title="Vero 90th Anniversary">Vero 90th Anniversary</a></li>
+                        <li><a href="/news/news/local/special-coverage/" title="More Special Coverage">More</a></li>                        
+					</ul>
+				</li>
+				<li><a href="/allblogs" title="Blogs">Blogs</a>
+					<ul class="tertiary_nav">
+						<li><a href="http://blogs.tcpalm.com/bargainista/" title="Bargainista">Bargainista</a></li>
+						<li><a href="http://blogs.tcpalm.com/coastal_zone/" title="Coastal Zone">Coastal Zone</a></li>
+						<li><a href="/allblogs" title="Columnists">Columnists</a>
+							<ul class="quaternary_nav">
+								<li><a href="http://blogs.tcpalm.com/anthony_westbury/" title="Anthony Westbury">Anthony Westbury</a></li>
+								<li><a href="http://blogs.tcpalm.com/ed_killer/" title="Ed Killer">Ed Killer</a></li>
+								<li><a href="http://blogs.tcpalm.com/eve_samples/" title="Eve Samples">Eve Samples</a></li>
+								<li><a href="http://blogs.tcpalm.com/laurence_reisman/" title="Laurence Reisman">Laurence Reisman</a></li>
+								<li><a href="http://blogs.tcpalm.com/marilyn_bauer/" title="Marilyn Bauer">Marilyn Bauer</a></li>
+								<li><a href="http://blogs.tcpalm.com/michael_goforth/" title="Michael Goforth">Michael Goforth</a></li>
+								<li><a href="http://blogs.tcpalm.com/ray_mcnulty/" title="Ray McNulty">Ray McNulty</a></li>
+								<li><a href="http://blogs.tcpalm.com/rich_campbell/" title="Rich Campbell">Rich Campbell</a></li>
+								<li><a href="http://blogs.tcpalm.com/russ_lemmon/" title="Russ Lemmon">Russ Lemmon</a></li>																
+							</ul>
+						</li>
+						<li><a href="http://blogs.tcpalm.com/health_lifestyle/" title="Health &amp; Lifestyle">Health &amp; Lifestyle</a></li>
+						<li><a href="http://blogs.tcpalm.com/off_the_beat_will_greenlee_blog/" title="Off the Beat">Off the Beat</a></li>
+						<li><a href="/allblogs" title="Reader-submitted">Reader Submitted</a>
+							<ul class="quaternary_nav">
+								<li><a href="http://www.tcpalm.com/blogs/us-rep-bill-posey-blog/" title="U.S. Rep. Bill Posey">U.S. Rep. Bill Posey</a></li>																
+								<li><a href="http://www.tcpalm.com/blogs/us-rep-tom-rooney-blog/" title="U.S. Rep. Tom Rooney">U.S. Rep. Tom Rooney</a></li>																
+								<li><a href="http://blogs.tcpalm.com/dealing_with_chinese_drywall_blog" title="Chinese Dry-Wall">Chinese Dry-Wall</a></li>																							
+							</ul>
+						</li>
+						<li><a href="/allblogs" title="Sports blogs">Sports blogs</a>
+							<ul class="quaternary_nav">
+								<li><a href="http://blogs.tcpalm.com/ed_killer/" title="Fishing &amp; Boating">Fishing &amp; Boating</a></li>
+								<li><a href="http://blogs.tcpalm.com/high_school_football/" title="High school football">High school football</a></li>
+								<li><a href="http://blogs.tcpalm.com/high_school_sports/" title="High school sports">High school sports</a></li>
+								<li><a href="http://blogs.tcpalm.com/ray_mcnulty/" title="McNulty on Sports">McNulty on Sports</a></li>
+								<li><a href="http://blogs.tcpalm.com/treasure_coast_running/" title="Running">Running</a></li>
+							</ul>
+						</li>
+						<li><a href="http://blogs.tcpalm.com/the_cross_christian_issues_topics_treasure_coast_blog/" title="The Cross">The Cross</a></li>
+						<li><a href="http://blogs.tcpalm.com/treasure_coast_homeroom/" title="Treasure Coast Homeroom">Treasure Coast Homeroom</a></li>
+						<li><a href="http://blogs.tcpalm.com/treasure_coast_cooking_and_food_blog/" title="Who's Hungry?">Who's Hungry?</a></li>
+					</ul>
+				</li>
+				<li><a href="/news/local/crime/ " title="Crime">Crime</a></li>
+				<li><a href="/news/news/columnists/" title="News Columnists">Columnists</a>
+					<ul class="tertiary_nav">
+						<li><a href="/news/news/columnists/eve-samples/" title="Eve Samples">Eve Samples</a></li>
+						<li><a href="/news/news/columnists/anthony-westbury/" title="Anthony Westbury">Anthony Westbury</a></li>
+						<li><a href="/news/news/columnists/russ-lemmon/" title="Russ Lemmon">Russ Lemmon</a></li>					
+					</ul>
+				</li>
+                <li><a href="/news/yournews/" title="YourNews">YourNews</a>
+                	<ul class="tertiary_nav">
+                    	<li><a href="/news/yournews/indian-river-county/" title="Indian River County">Indian River County</a></li>
+                        <li><a href="/news/yournews/st-lucie-county/" title="St. Lucie County">St. Lucie County</a></li>
+                        <li><a href="/news/yournews/martin-county/" title="Martin County">Martin County</a></li>
+                        <li><a href="/news/yournews/north-palm-beach-county/" title="Palm Beach County">Palm Beach County</a></li>
+                    </ul>
+                </li>
+			</ul>
+		</li>
+		<li id="nav_sports"><a href="/news/sports/" title="Sports">Sports</a>
+			<ul class="secondary_nav">
+				<li><a href="/news/sports/local-sports/" title="Local">Local</a></li>
+				<li><a href="/news/sports/high-school/" title="High School">High School</a>
+					<ul class="tertiary_nav">
+						<li><a href="/news/sports/high-school/fall-sports/" title="Fall Sports">Fall Sports</a>
+							<ul class="quaternary_nav">
+								<li><a href="/news/sports/high-school/football/" title="Football">Football</a></li>
+								<li><a href="/news/sports/high-school/bowling/boys/" title="Boys Bowling">Boys Bowling</a></li>
+								<li><a href="/news/sports/high-school/cross-country/boys/" title="Boys Cross Country">Boys Cross Country</a></li>
+								<li><a href="/news/sports/high-school/golf/boys/" title="Boys Glof">Boys Golf</a></li>
+								<li><a href="/news/sports/high-school/swimming-diving/boys/" title="Boys Swimming and Diving">Boys Swimming &amp; Diving</a></li>
+								<li><a href="/news/sports/high-school/volleyball/" title="Volleyball">Volleyball</a></li>
+								<li><a href="/news/sports/high-school/bowling/girls/" title="Girls Bowling">Girls Bowling</a></li>
+								<li><a href="/news/sports/high-school/cross-country/girls/" title="Girls Cross Country">Girls Cross Country</a></li>
+								<li><a href="/news/sports/high-school/golf/girls/" title="Girls Golf">Girls Golf</a></li>
+								<li><a href="/news/sports/high-school/swimming-diving/girls/" title="Girls Swimming and Diving">Girls Swimming &amp; Diving</a></li>
+							</ul>
+						</li>
+						<li><a href="/news/sports/high-school/winter-sports/" title="Winter Sports">Winter Sports</a>
+							<ul class="quaternary_nav">
+								<li><a href="/news/sports/high-school/basketball/boys/" title="Boys Basketball">Boys Basketball</a></li>
+								<li><a href="/news/sports/high-school/soccer/boys/" title="Boys Soccer">Boys Soccer</a></li>
+								<li><a href="/news/sports/high-school/basketball/girls/" title="Girls Basketball">Girls Basketball</a></li>
+								<li><a href="/news/sports/high-school/soccer/girls/" title="Girls Soccer">Girls Soccer</a></li>
+								<li><a href="/news/sports/high-school/weightlifting/girls/" title="Girls Weightlifting">Girls Weightlifting</a></li>
+								<li><a href="/news/sports/high-school/wrestling/" title="Wrestling">Wrestling</a></li>
+							</ul>
+						</li>
+						<li><a href="/news/sports/high-school/spring-sports/" title="Spring Sports">Spring Sports</a>
+							<ul class="quaternary_nav">
+								<li><a href="/news/sports/high-school/baseball/" title="Baseball">Baseball</a></li>
+								<li><a href="/news/sports/high-school/lacrosse/boys/" title="Boys Lacrosse">Boys Lacrosse</a></li>
+								<li><a href="/news/sports/high-school/tennis/boys/" title="Boys Tennis">Boys Tennis</a></li>
+								<li><a href="/news/sports/high-school/track-field/boys/" title="Boys Track and Field">Boys Track &amp; Field</a></li>
+								<li><a href="/news/sports/high-school/weightlifting/boys/" title="Boys Weightlifting">Boys Weightlifting</a></li>
+								<li><a href="/news/sports/high-school/lacrosse/girls/" title="Girls Lacrosse">Girls Lacrosse</a></li>
+								<li><a href="/news/sports/high-school/tennis/girls/" title="Girls Tennis">Girls Tennis</a></li>
+								<li><a href="/news/sports/high-school/track-field/girls/" title="Girls Track and Field">Girls Track &amp; Field</a></li>
+								<li><a href="/news/sports/high-school/softball/" title="Softball">Softball</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="/news/sports/college/" title="College">College</a>
+					<ul class="tertiary_nav">
+						<li><a href="/news/sports/college/football/" title="College Football">Football</a></li>
+					</ul>
+				</li>
+				<li><a href="/news/sports/professional/" title="Professional">Professional</a>
+					<ul class="tertiary_nav">
+						<li><a href="/news/sports/professional/football/" title="Pro Football">Football</a></li>
+						<li><a href="/news/sports/professional/baseball/" title="Pro Baseball">Baseball</a></li>
+						<li><a href="/news/sports/professional/basketball/" title="Pro Basketball">Basketball</a></li>
+					</ul>
+				</li>
+				<li><a href="/news/sports/golf/" title="Golf">Golf</a></li>
+				<li><a href="/news/fishing-boating/" title="Fishing and Boating">Fishing and Boating</a></li>
+				<li><a href="/news/sports/recreation/surfing/" title="Surfing">Surfing</a></li>
+
+				<li class="last"><a href="/news/sports/columnists/" title="Columnists">Columnists</a>
+					<ul class="tertiary_nav">
+						<li><a href="/news/sports/columnists/ray-mcnulty/" title="Ray McNulty">Ray McNulty</a></li>
+						<li><a href="/news/sports/columnists/ed-killer/" title="Ed Killer">Ed Killer</a></li>
+						<li><a href="/news/sports/columnists/bill-hilbig/" title="Bill Hilbig">Bill Hilbig</a></li>
+						<li><a href="/news/sports/columnists/mike-english/" title="Mike English">Mike English</a></li>
+						<li><a href="/news/sports/columnists/justin-beard/" title="Justin Beard">Justin Beard</a></li>
+						<li><a href="/news/sports/columnists/karl-ramonas/" title="Karl Ramonas">Karl Ramonas</a></li>
+						<li><a href="/news/sports/columnists/larry-bush/" title="Larry Bush">Larry Bush</a></li>
+						<li><a href="/news/sports/columnists/dennis-jacob/" title="Dennis Jacob">Dennis Jacob</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li id="nav_business"><a href="/news/business/" title="Business">Business</a>
+			<ul class="secondary_nav">
+				<li><a href="/news/business/local/" title="Local">Local</a>
+					<ul class="tertiary_nav">
+						<li><a href="/news/business/local/business-journal/" title="Business Journal">Business Journal</a></li>
+					</ul>
+				</li>
+				<li><a href="/news/business/employment/" title="Employment">Employment</a></li>
+				<li><a href="/news/business/real-estate/" title="Real Estate">Real Estate</a></li>
+				<li><a href="/news/cars/" title="Automotive">Automotive</a></li>
+				<li><a href="/news/business/investment/personal-finance/" title="Finances">Finances</a></li>
+				<li><a href="http://local.tcpalm.com/yellow-pages/stuart/fl" title="Treasure Coast Business Directory">Business Directory</a></li>
+				<li><a href="/news/business/columnists/" title="Business Columnists">Columnists</a>
+					<ul class="tertiary_nav">
+						<li><a href="/news/business/columnists/richard-white/" title="Richard White">Richard White</a></li>
+						<li><a href="/news/business/columnists/keshya-williams/" title="Keshya Williams">Keshya Williams</a></li>
+					</ul>
+				</li>
+				
+			</ul>
+		</li>
+		<li id="nav_opinion"><a href="/news/opinion/" title="Opinion">Opinion</a>
+			<ul class="secondary_nav">
+				<li><a href="/news/opinion/editorial/" title="Editorial">Editorial</a></li>
+				<li><a href="/news/opinion/guest-columns/" title="Guest Columns">Guest Columns</a></li>
+				<li><a href="/news/opinion/letters-to-editor/" title="Letters to the Editor">Letters to the Editor</a></li>
+				<li><a href="/allblogs/" title="Blogs">Blogs</a></li>
+				<li><a href="/polls/" title="Polls">Polls</a></li>
+				<li><a href="/news/opinion/columnists/" title="Opinion Columnists">Columnists</a>
+					<ul class="tertiary_nav">
+						<li><a href="/news/opinion/columnists/rich-campbell/" title="Rich Campbell">Rich Campbell</a></li>
+						<li><a href="/news/opinion/columnists/michael-goforth/" title="Michael Goforth">Michael Goforth</a></li>
+						<li><a href="/news/opinion/columnists/Laurence-reisman/" title="Laurance Reisman">Laurence Reisman</a></li>
+						<li><a href="/news/opinion/columnists/mark-tomasik/" title="Mark Tomasik">Mark Tomasik</a></li>
+					</ul>
+				</li>
+				<li><a href="/forms/letterstotheeditor/" title="Submit a Letter to the Editor">Submit a Letter to the Editor</a></li>
+			</ul>
+		</li>
+		<li id="nav_entertainment"><a href="/news/entertainment/" title="Entertainment">Entertainment</a>
+			<ul class="secondary_nav">
+				<li><a href="/news/entertainment/arts-theater" title="Arts &amp; Theater">Arts &amp; Theater</a></li>
+				<li><a href="/news/entertainment/books/" title="Books">Books</a></li>
+				<li><a href="/news/entertainment/dining/" title="Dining">Dining</a>
+					<ul class="tertiary_nav">
+						<li><a href="/places/bars/" title="Bars and Clubs">Bars &amp; Clubs</a></li>
+						<li><a href="/drinkspecials/" title="Specials">Food &amp; Drink Specials</a></li>
+						<li><a href="/restaurants/" title="Restaurants">Restaurants</a></li>
+						<li><a href="/restaurants/opennow/" title="Restaurants Open Now">Open Now</a></li>
+						<li><a href="/forms/restaurants/" title="Submit a Restaurant">Submit Restaurant</a></li>
+					</ul>
+				</li>
+				<li><a href="/events/" title="Events">Events Calendar</a>
+					<ul class="tertiary_nav">
+						<li><a href="/forms/calendars/" title="Submit Event">Submit Event</a></li>
+						<li><a href="/places/venues/all" title="Treasure Coast Venues">Treasure Coast Venues</a></li>
+						<li><a href="/news/entertainment/calendars/" title="Entertainment Calendar">Entertainment Calendar</a></li>
+					</ul>
+				</li>
+				<li><a href="/news/entertainment/horoscopes/" title="Horoscopes">Horoscopes</a></li>
+				<li><a href="/games/" title="Games">Games</a>
+					<ul class="tertiary_nav">
+						<li><a href="http://www.uclick.com/client/tcp/fcx/" title="Crossword Puzzles">Crossword Puzzles</a></li>
+						<li><a href="/games/numbrix/" title="Numbrix">Numbrix</a></li>
+					</ul>				
+				</li>
+				<li><a href="/news/entertainment/lottery/" title="Lottery">Lottery</a></li>
+                <li><a href="/news/entertainment/movies/" title="Movies">Movies</a></li>
+				<li><a href="/news/entertainment/music/" title="Music">Music</a></li>
+				<li><a href="http://affiliate.zap2it.com/tvlistings/ZCTVHome.do?aid=94j" title="Television">Television</a></li>
+				<li><a href="/entertainment/celebrities/" title="Celebrities">Celebrities</a></li>
+				<li><a href="/news/entertainment/columnists/" title="Entertainment Columnists">Columnists</a>
+					<ul class="tertiary_nav">
+						<li><a href="/news/entertainment/columnists/marilyn-bauer/" title="Marilyn Bauer">Marilyn Bauer</a></li>
+						<li><a href="/news/entertainment/columnists/peter-pringle/" title="Peter Pringle">Peter Pringle</a></li>
+						<li><a href="/news/entertainment/columnists/carol-saunders/" title="Carol Saunders">Carol Saunders</a></li>
+						<li><a href="/news/entertainment/columnists/shelley-owens/" title="Shelley Owens">Shelly Owens</a></li>
+                        <li><a href="/news/entertainment/columnists/amanda-farinos/" title="Amanda Farinos">Amanda Farinos</a></li>
+                        <li><a href="/news/entertainment/columnists/diana-foote/" title="Diana Foote">Diana Foote</a></li>                                               
+                        <li><a href="/news/entertainment/columnists/chris-campbell/" title="Chris Campbell">Chris Campbell</a></li>
+						<li><a href="/news/entertainment/columnists/jennifer-trefelner/" title="Jennifer Trefelner">Jennifer Trefelner</a></li>                                                                       
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li id="nav_lifestyles"><a href="/news/lifestyles/" title="Lifestyles">Lifestyles</a>
+			<ul class="secondary_nav">
+				<li><a href="/news/lifestyles/local/" title="Local Lifestyles">Local</a></li>
+				<li><a href="/submit-your-stuff/" title="Submit">Submit</a></li>
+				<li><a href="/news/your_stuff/" title="Your Stuff">Your Stuff</a></li>
+				<li><a href="/news/lifestyles/announcements/" title="Announcements">Announcements</a></li>
+				<li><a href="/news/lifestyles/faith-values/" title="Faith">Faith</a></li>
+				<li><a href="/news/lifestyles/food/" title="Food">Food</a></li>
+				<li><a href="http://health.tcpalm.com/" title="Health">Health</a></li>
+				<li><a href="/news/lifestyles/home-garden/" title="Home &amp; Garden">Home &amp; Garden</a></li>
+        			<ul class="tertiary_nav">
+						<li><a href="/news/lifestyles/columnists/molly-johnson-stracuzzi/" title="Molly Johnson Stracuzzi">Molly Johnson Stracuzzi</a></li>
+					</ul>
+				<li><a href="/news/lifestyles/travel/" title="Travel">Travel</a></li>
+				<li><a href="/news/lifestyles/calendars/" title="Lifestyles Calendar">Calendar</a></li>
+                <li><a href="/news/lifestyles/pets/" title="Pets">Pets</a></li>
+				<li><a href="/news/lifestyles/columnists/" title="Columnists">Columnists</a>
+					<ul class="tertiary_nav">
+						<li><a href="/news/lifestyles/columnists/carol-cloud-bailey/" title="Carol Cloud Bailey">Carol Cloud Bailey</a></li>
+						<li><a href="/news/lifestyles/columnists/eyal-goldshmid/" title="Eyal Goldshmid">Eyal Goldshmid</a></li>
+						<li><a href="/news/lifestyles/columnists/alice-d-harris/" title="Alice D. Harris">Alice D. Harris</a></li>
+						<li><a href="/news/lifestyles/columnists/judie-rappaport/" title="Judie Rappaport">Judie Rappaport</a></li>
+						<li><a href="/news/lifestyles/columnists/bonnie-slade/" title="Bonnie Slade">Bonnie Slade</a></li>
+						<li><a href="/news/lifestyles/columnists/mary-d-snyder/" title="Mary D. Snyder">Mary D. Snyder</a></li>
+						<li><a href="/news/lifestyles/columnists/hillary-copsey/" title="Hillary Copsey">Hillary Copsey</a></li>
+					</ul>
+				</li>
+				<li><a href="http://print.coupons.com/couponweb/LocalOffers.aspx?pid=15094&zid=yr88&nid=10&mod=loc" title="coupons">Coupons</a></li>
+			</ul>
+		</li>
+		<li id="nav_media"><a href="/multimedia/" title="Media">Media</a>
+			<ul class="secondary_nav">
+				<li><a href="/photos/" title="Photos">Today's Photos</a></li>
+				<li><a href="/photos/archive/" title="Photo Archive">Photo Archive</a></li>
+				<li><a href="/photos/galleries/" title="Photo Galleries">Photo Galleries</a></li>
+				<li><a href="/cams/" title="WebCam">WebCam</a></li>
+				<li><a href="/photos/galleries/sets/" title="Photo Galleries by Topic">Photo Galleries by Topic</a></li>
+				<li><a href="/videos/" title="Videos">Videos</a></li>
+				<li><a href="http://yourmedia.tcpalm.com/" title="User Submitted Photos and Videos">User Submitted</a></li>
+                <li><a href="http://gallery.pictopia.com/tcn/requests/" title="Buy Photos">Buy Photos</a></li>
+                <li><a href="http://gallery.pictopia.com/tcn/fprequests/" title="Front Page Reprints">Front Page Reprints</a></li>
+			</ul>
+		</li>
+	</ul> <!-- end #main_nav -->
+
+	<ul id="verticals_nav">
+		<li><a href="http://jobs.tcpalm.com/" title="Jobs">Jobs</a></li>
+		<li><a href="http://homes.tcpalm.com/" title="Homes">Homes</a></li>
+		<li><a href="http://cars.tcpalm.com/" title="Cars">Cars</a></li>
+		<li class="last"><a href="http://www.tcpalm.com/classifieds/" title="Classified">Classified</a></li>
+	</ul> <!-- end #verticals_nav -->
+
+			
+		</div> <!-- end #nav_wrapper -->
+		
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+
+		
+		
+			
+			
+				
+				
+				
+	
+				
+					
+				
+		
+				
+		
+				
+					<div id="alert_bark_wrapper">
+						<div id="alert_bark_clipper">
+							<ul id="alert_bark_carousel">
+							
+								
+							
+								
+				
+								
+							
+								
+							
+								
+							
+								
+									
+									
+										<li class="alert_bark alert_bark_quicklinks clear">
+											<h2 class="alert_bark_title">PSL at 50</h2>
+											<ul class="alert_bark_content ab_quicklinks clear">
+												
+													<li><a href="http://www.tcpalm.com/news/news/local/special-coverage/port-st-lucie-50th-anniversary/" title="Stories">Stories</a></li>
+												
+													<li><a href="http://www.tcpalm.com/news/2011/apr/13/port-st-lucies-first-50-years-had-city-leaders/" title="Growth">Growth</a></li>
+												
+													<li><a href="http://www.tcpalm.com/news/2011/apr/11/no-headline---tc_sl_50th_schedule_of_events/" title="Events">Events</a></li>
+												
+													<li><a href="http://www.tcpalm.com/news/2011/apr/13/port-st-lucie-time-line/" title="Timeline">Timeline</a></li>
+												
+													<li><a href="http://www.tcpalm.com/photos/galleries/2011/apr/08/port-st-lucies-first-50-years/" title="Photos: Early years">Photos: Early years</a></li>
+												
+													<li><a href="http://www.tcpalm.com/photos/galleries/2010/mar/02/port-st-lucie-botanical-garden/" title="Botanical garden photos">Botanical garden photos</a></li>
+												
+													<li><a href="http://www.tcpalm.com/photos/galleries/2011/apr/08/aerial-views-port-st-lucie-through-years/" title="Aerial photos">Aerial photos</a></li>
+												
+													<li><a href="http://www.tcpalm.com/videos/detail/preview-port-st-lucies-50th-anniversary/" title="Video">Video</a></li>
+												
+													<li><a href="http://www.tcpalm.com/forms/PSLAnniversary/" title="Upload memories">Upload memories</a></li>
+												
+											</ul>
+										</li>
+
+									
+										<li class="alert_bark alert_bark_quicklinks clear">
+											<h2 class="alert_bark_title">Legislative session</h2>
+											<ul class="alert_bark_content ab_quicklinks clear">
+												
+													<li><a href="http://www.tcpalm.com/session2011" title="Full coverage">Full coverage</a></li>
+												
+													<li><a href="http://blogs.tcpalm.com/florida-legislative-session-2011/" title="Local blog">Local blog</a></li>
+												
+													<li><a href="http://www.tcpalm.com/news/topic/joe-negron/" title="Negron">Negron</a></li>
+												
+													<li><a href="http://www.tcpalm.com/news/topic/mike-haridopolos/" title="Haridopolos">Haridopolos</a></li>
+												
+													<li><a href="http://www.tcpalm.com/news/topic/j-d-alexander/" title="Alexander">Alexander</a></li>
+												
+													<li><a href="http://www.tcpalm.com/news/topic/william-snyder/" title="Snyder">Snyder</a></li>
+												
+													<li><a href="http://www.tcpalm.com/news/topic/gayle-harrell/" title="Harrell">Harrell</a></li>
+												
+													<li><a href="http://www.tcpalm.com/news/topic/debbie-mayfield" title="Mayfield">Mayfield</a></li>
+												
+													<li><a href="http://www.tcpalm.com/news/topic/steve-perman/" title="Perman">Perman</a></li>
+												
+													<li><a href="http://www.tcpalm.com/news/topic/tom-goodson/" title="Goodson">Goodson</a></li>
+												
+											</ul>
+										</li>
+
+									
+
+								
+							
+								
+							
+							</ul>
+						</div><!-- end #alert_bark_clipper -->
+					</div><!-- end #alert_bark_wrapper -->
+				
+				
+				
+			
+		
+			
+		
+		
+		
+		
+	<div id="section_header_wrapper">
+		<div id="section_header" class="detail clear">
+			
+			
+	
+	
+		
+		<div id="article_header">
+			<h1 class="article_headline entry-title">St. Lucie teacher has students vote on whether 5-year-old can stay in class</h1>
+			
+		
+			
+		
+			<ul class="article_meta clear">
+				
+					
+						<li class="author vcard">
+							
+								
+									By <a href="/staff/colleen-wixon/" title="Colleen Wixon" class="fn">Colleen Wixon</a>
+								
+							
+						</li>
+						
+							<li class="source-org vcard" style="display:none">
+								<span class="org fn">TCPalm</span>
+							</li>
+						
+
+					
+				
+			
+				<li><span class="updated" title="2008-05-23T13:50:00-04:00">Posted May 23, 2008 at 1:50 p.m.</span>, <span class="updated" title="2008-05-23T16:30:00-04:00">updated May 23, 2008 at 4:30 p.m.</span></li>
+			
+			</ul>
+		
+			<ul class="story_tools story_tools_dark">
+	
+	<li><a href="/mailfriend/61/130023/89b68c4b45/" title="Email" class="button button_dark story_tool story_tool_email">Email</a></li>
+	<li><a href="#comments" title="Discuss" class="button button_dark story_tool story_tool_discuss">Discuss</a></li>
+	<li class="story_share_button"><a href="#" title="Share" class="button button_dark story_tool story_tool_share popmenu_button" id="story_sharing_button">Share &raquo;</a>
+	
+	<ul class="popmenu">
+	<li><a href="http://digg.com/submit?phase=2&url=http://www.tcpalm.com/news/2008/may/23/st-lucie-teacher-has-class-vote-whether-5-year-old/?cid=Digg" title="Digg this" class="digg">Digg</a></li>
+	<li><a href="http://www.facebook.com/share.php?u=<url>" onclick="return fbs_click()" target="_blank" title="Share this on Facebook" class="facebook">Facebook</a></li>
+	<li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.tcpalm.com/news/2008/may/23/st-lucie-teacher-has-class-vote-whether-5-year-old/&title=St. Lucie teacher has students vote on whether 5-year-old can stay in class&summary=A 5-year-old Morningside Elementary student was "voted out" of kindergarten by his classmates -- an action orchestrated by the child's teacher, according to Port St. Lucie Police Department officials.&source=TCPalm.com?cid=LinkedIn" title="Share this on LinkedIn" class="linkedin">LinkedIn</a></li>
+	<li><a href="#" title="Tweet this" class="twitter" onclick="javascript:window.open('http://twitter.com/share?url=http%3A//www.tcpalm.com/news/2008/may/23/st-lucie-teacher-has-class-vote-whether-5-year-old/&amp;text=St.%20Lucie%20teacher%20has%20students%20vote%20on%20whether%205-year-old%20can%20stay%20in%20class','popup','width=600,height=400');">Tweet this</a></li>
+	
+</ul>
+
+<script>function fbs_click() {u=location.href + "?cid=Facebook";t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;}</script>
+	
+	</li>
+	
+	<li class="story_print_button"><a href="?print=1" title="Print" class="button button_dark story_tool story_tool_print">Print</a></li>
+
+	<li class="story_font story_font_small"><a href="#" title="Font Size: Small" class="button button_dark story_tool story_tool_font_small" id="font_small">A</a></li>
+	<li class="story_font story_font_medium"><a href="#" title="Font Size: Medium" class="button button_dark story_tool story_tool_font_default" id="font_default">A</a></li>
+	<li class="story_font story_font_large"><a href="#" title="Font Size: Large" class="button button_dark story_tool story_tool_font_large" id="font_large">A</a></li>
+</ul>
+
+		</div><!-- end #article_header -->
+	
+	
+	
+		
+	
+
+
+			
+			
+		</div> <!-- end #section_header -->
+		
+		
+			
+	
+	
+
+			
+			
+			
+		
+		
+	</div> <!-- end #section_title_wrapper -->
+
+		
+		
+		
+		
+		<div id="content_wrapper" class="clear">
+			
+		
+		<div id="primary_content">
+			
+			
+			
+			
+			
+	<div id="article_body">
+		
+		
+			
+				<div class="lead_photo_vert">
+					<a href="/photos/2008/may/23/82586/">
+					
+					
+						<img src="http://media.tcpalm.com/media/img/photos/2008/05/23/alex_3_t300.jpg" alt="5-year-old Alex Barton's teacher made him stand in front of his kindergarten class and had his fellow students say what they didn't like about him and then vote whether he should remain in the class." />
+					
+					</a>
+					
+					<div class="lead_photo_caption">
+						
+							<p class="photo_credit">
+								
+									Photo by File photo
+								
+							</p>
+						
+						
+							<p class="caption">5-year-old Alex Barton's teacher made him stand in front of his kindergarten class and had his fellow students say what they didn't like about him and then vote whether he should remain in the class.</p>
+						
+					</div><!-- end .lead_photo_caption -->
+					
+				</div><!-- end .lead_photo -->
+			
+		
+		
+		
+			<div class="entry-content">
+			
+			
+				
+
+
+
+
+
+<div class="inline_wrapper inline-left photothumb_inline">
+	
+	<div class="inline_bucket">
+
+		<a href="/photos/2008/may/23/82586/" title="View Full Size"><img src="http://media.tcpalm.com/media/img/photos/2008/05/23/alex_3_t160.jpg" alt="5-year-old Alex Barton's teacher made him stand in front of his kindergarten class and had his fellow students say what they didn't like about him and then vote whether he should remain in the class." /></a>
+
+		
+			<p class="photo_credit">
+				
+					
+						Photo by File photo
+					
+				
+			</p>
+		
+		
+		
+			
+				<p class="caption">5-year-old Alex Barton's teacher made him stand in front of his kindergarten class and had his fellow students say what they didn't like about him and then vote whether he should remain in the class.</p>
+			
+		
+
+	</div> <!-- end .inline_bucket -->
+</div> <!-- end .inline_wrapper -->
+
+
+
+<p ><span class="dateline">PORT ST. LUCIE</span> —
+Melissa Barton said she is considering legal action after her son's kindergarten teacher led his classmates to vote him out of class.</p>
+
+<p >After each classmate was allowed to say what they didn't like about Barton's 5-year-old son, Alex, his Morningside Elementary teacher said they were going to take a vote, Barton said.</p>
+
+<p >By a 14 to 2 margin, the class voted him out of the class.</p>
+
+<p >Barton said her son is in the process of being diagnosed with Aspberger's, a type of high-functioning autism. Alex began the testing process in February for an official diagnosis under the suggestion of Morningside Principal Marsha Cully.</p>
+
+<p >Alex has had disciplinary issues because of his disabilities, Barton said. The school and district has met with Barton and her son to create an individual education plan, she said. His teacher, Wendy Portillo, has attended these meetings, she said.</p>
+
+<p >Barton said after the vote, Alex's teacher asked him how he felt.</p>
+
+<p >"He said, 'I feel sad,'" she said.</p>
+
+<p >Alex left the classroom and spent the rest of the day in the nurse's office, she said.</p>
+
+<p >Barton said when she came to pick up her son at the school on Wednesday, he was leaving the nurse's office.</p>
+
+<p >"He was shaken up," she said. Barton said the nurse told her to talk with the child's teacher, who told her what happened.</p>
+
+<p >Alex hasn't been back to school since then, and Barton said he won't be returning. He starts screaming when she brings him with her to drop off his sibling at school.</p>
+
+<p >Thursday night, his mother heard him saying "I'm not special."</p>
+
+<p >Barton said Alex is reliving the incident.</p>
+
+<p >They said he was "disgusting" and "annoying," Barton said.</p>
+
+<p >"He was incredibly upset," Barton said. "The only friend he has ever made in his life was forced to do this."</p>
+
+<p >The child's mother filed a complaint with the school resource officer, who investigated the matter, said Port St. Lucie spokeswoman Michelle Steele said. But the state attorney's office concluded the matter did not meet the criteria for emotional child abuse, so no criminal charges will be filed, Steele said. Port St. Lucie Police is no longer investigating, but is documenting the complaint, she said.</p>
+
+<p >Steele said the teacher confirmed the incident did occur.</p>
+
+<p >St. Lucie School's spokeswoman Janice Karst said the district is investigating the incident, but could not make any further comment.</p>
+
+<p >Vern Melvin, Department of Children and Families circuit administrator, confirmed the agency is investigating an allegation of abuse at Morningside, but said he could not elaborate.</p>
+
+
+			
+			</div>
+		
+		
+		
+		
+		
+			
+		
+			<!-- Below is only used by KNS -->
+			
+			<!-- /is only used by KNS -->
+			
+			<!-- below for ap registry -->
+			
+			<p>
+				
+				<em><a rel="item-license" href="/privacy/">&copy; 2008 TCPalm. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></em>
+
+				<img src="http://analytics.apnewsregistry.com/analytics/v2/image.svc/TCP/MAI/tcp_130023_2008-05-23T135000-0400/RWS/www.tcpalm.com/PC/Basic/" alt="" width="1" height="1" />
+			</p>
+			
+			<!-- /below for ap registry -->
+		
+		
+	</div><!-- End #article_body -->
+	
+	
+<ul class="story_tools story_tools_light clear">
+	
+	<li><a href="/mailfriend/61/130023/89b68c4b45/" title="Email" class="button button_light story_tool story_tool_email">Email</a></li>
+	<li><a href="#comments" title="Discuss" class="button button_light story_tool story_tool_discuss">Discuss</a></li>
+	<li class="story_share_button"><a href="#" title="Share" class="button button_light story_tool story_tool_share popmenu_button" id="story_sharing_button">Share &raquo;</a>
+	
+	<ul class="popmenu">
+	<li><a href="http://digg.com/submit?phase=2&url=http://www.tcpalm.com/news/2008/may/23/st-lucie-teacher-has-class-vote-whether-5-year-old/?cid=Digg" title="Digg this" class="digg">Digg</a></li>
+	<li><a href="http://www.facebook.com/share.php?u=<url>" onclick="return fbs_click()" target="_blank" title="Share this on Facebook" class="facebook">Facebook</a></li>
+	<li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.tcpalm.com/news/2008/may/23/st-lucie-teacher-has-class-vote-whether-5-year-old/&title=St. Lucie teacher has students vote on whether 5-year-old can stay in class&summary=A 5-year-old Morningside Elementary student was "voted out" of kindergarten by his classmates -- an action orchestrated by the child's teacher, according to Port St. Lucie Police Department officials.&source=TCPalm.com?cid=LinkedIn" title="Share this on LinkedIn" class="linkedin">LinkedIn</a></li>
+	<li><a href="#" title="Tweet this" class="twitter" onclick="javascript:window.open('http://twitter.com/share?url=http%3A//www.tcpalm.com/news/2008/may/23/st-lucie-teacher-has-class-vote-whether-5-year-old/&amp;text=St.%20Lucie%20teacher%20has%20students%20vote%20on%20whether%205-year-old%20can%20stay%20in%20class','popup','width=600,height=400');">Tweet this</a></li>
+	
+</ul>
+
+<script>function fbs_click() {u=location.href + "?cid=Facebook";t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;}</script>
+	
+	
+	</li>
+	<li><a href="?print=1" title="Print" class="button button_light story_tool story_tool_print">Print</a></li>
+
+</ul>
+
+	
+	<p><fb:like action="recommend" width="400" colorscheme="light"></fb:like></p>
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		<div class="bucket story_detail_bucket">
+			<div class="titlebar">
+				<h3>Related Links</h3>
+			</div><!-- End .titlebar -->
+			
+			<div class="bucket_primary clear">
+				<ul class="story_list more_story_list">
+					
+						<li><a href="http://www.tcpalm.com/news/ongoing_coverage/alex_barton/" title="More coverage of the autistic boy voted out of his kindergarten class" target="">More coverage of the autistic boy voted out of his kindergarten class</a></li>
+					
+				</ul>
+			</div><!-- end .bucket_primary -->
+		</div><!-- End .bucket -->
+	
+	
+	
+		<div class="bucket story_detail_bucket">
+			<div class="titlebar">
+				<h3><a href="/news/news/local/special-coverage/alex-barton/" title="Also in Alex Barton">Also in Alex Barton</a></h3>
+				
+				<ul class="deeplinks">
+					<li><a href="/news/news/local/special-coverage/alex-barton/" title="More /news/news/local/special-coverage/alex-barton/">More</a></li>
+				</ul><!-- end .deeplinks -->
+				
+			</div><!-- End .titlebar -->
+			
+			<div class="bucket_primary clear">
+				<ul class="story_list more_story_list">
+					
+						<li><a href="/news/2011/feb/07/st-lucie-mom-voted-out-boy-says-settlement-doesnt/" title="St. Lucie mom of voted-out boy says settlement doesn't end fight against abuses in classrooms ">St. Lucie mom of voted-out boy says settlement doesn't end fight against abuses in classrooms </a></li>
+					
+						<li><a href="/news/2011/feb/03/alex-barton-settlement-morningside-elementary/" title="Lawsuit over Alex Barton's treatment at school ends with $350,000 settlement">Lawsuit over Alex Barton's treatment at school ends with $350,000 settlement</a></li>
+					
+						<li><a href="/news/2010/dec/01/mom-st-lucie-kindergartner-voted-out-class-get-350/" title="Mom of St. Lucie kindergartner voted out of class to get $350,000 in settlement | Video">Mom of St. Lucie kindergartner voted out of class to get $350,000 in settlement | Video</a></li>
+					
+				</ul>
+			</div><!-- end .bucket_primary -->
+		</div><!-- End .bucket -->	
+	
+	
+	
+
+	<script>
+		// record top of comments
+		//apptap_whenFirstVisible("titlebar_comment_count","apptap_viewed_comments_after_fold( document.title );" );
+		// record bottom of comments
+		apptap_whenFirstVisible("comments","apptap_viewed_comments_after_fold( document.title );" );
+	</script>
+	<div id="comments" class="tab_wrapper comments_enabled">
+		<div class="titlebar">
+			<h3>Comments <span id="titlebar_comment_count">&raquo; <span class="dynamic_comment_count">263</span></span></h3>
+			
+		</div><!-- end .titlebar -->
+		
+		<div id="comment_wrapper" class="bucket_primary">
+			<div id="comments_container" class="clear">
+				
+					<div class="pagination pagination_top pagination_comments">
+						
+    
+		<ul class="time_paginated_arrows comments_paginated_arrows clear">
+			
+			<li class="time_paginated_counter">
+				<form action="/comments/list/news/stories/130023/" method="GET">
+				Comments 
+				<select name="comments_pages-1307930136" class="comments_pages_select">
+ 					
+ 						<option value="/comments/list/news/stories/130023/0/" class="comment_page_option_0" selected="selected">1 - 50</option>
+					
+ 						<option value="/comments/list/news/stories/130023/1/" class="comment_page_option_1">51 - 100</option>
+					
+ 						<option value="/comments/list/news/stories/130023/2/" class="comment_page_option_2">101 - 150</option>
+					
+ 						<option value="/comments/list/news/stories/130023/3/" class="comment_page_option_3">151 - 200</option>
+					
+ 						<option value="/comments/list/news/stories/130023/4/" class="comment_page_option_4">201 - 250</option>
+					
+ 						<option value="/comments/list/news/stories/130023/5/" class="comment_page_option_5">251 - 263</option>
+					
+				</select> of <span class="comment_count_storage">263</span>
+				<input type="submit" value="Go" class="preventFOUC" />
+				</form>
+			</li>
+			
+                <li class="time_paginated_next"><a href="/comments/list/news/stories/130023/1/" class="comments_next">Newer Comments</a></li>
+            
+			
+		</ul>
+	
+
+
+
+
+					</div><!-- end .pagination pagination_top -->
+
+					<div class="comment_list_wrapper clear" id="comment_list_count_263">
+						<div id="comment_list" class="comment_list clear">
+						
+
+							
+							
+							
+							
+							
+							
+
+								
+								
+
+								<div id="c145026" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">2:07 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145026/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145026" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/ohwow/" title="See ohwow's profile page">ohwow</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>if that is not emotional child abuse I dont know what is. If a parent were to tell their children they are disgusting that would be considered child abuse. <br />This teacher should be ashamed for this. Encouraging other children to be mean to another child is very sad. She needs to be reprimanded.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145026 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145030" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">2:09 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145030/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145030" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/justathought/" title="See justathought's profile page">justathought</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>This is cut and dry emotional abuse and is totally unacceptable.   Any teacher that would do this should be fired immediately, without question. This a FIVE year old child with a form of autism who is already feeling like an outcast and now it is reinforced by a teacher and clasroom of kids.</p>
+
+<p>The kids were encouraged to do this by a teacher who is supposed to be a role model.  If I were the parent of this child, I would pursue with the school board.  Again, another example of a poor standard of teaching.  Anyone in their right mind knows you don't do this to a child.  Of course it is emotional abuse and while it may not have been deemed &quot;illegal&quot; - it's cruel. This teacher just set a horrible example for the children in this class.  The school board should be embarrased by the quality of teachers that they hire. I'm absolutely outraged for this parent.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145030 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145032" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">2:10 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145032/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145032" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/wolfinpsl/" title="See wolfinpsl's profile page">wolfinpsl</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>Waa Waa Waa</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145032 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145037" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">2:15 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145037/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145037" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/id/490554/" title="See heres.your.sign#490554's profile page">heres.your.sign#490554</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>This is a great way to let the democratic process intervein in problem solving and conclude in a determination by your peers. This should be a good time for parents to use this as a learning experience for their child. What can he do differently? Does he want to be a member of the class? <br />This is cutting edge behavior management. <br />Parents...meet with the teacher and your child to discuss the event and make it the beginning of a positive lesson for your child. <br />His classmates will be happy to see him truly be a part of their class again. If he wants to be.<br />Wonder if it would work in the workplace....<br />No, that wouldn't work... adults would want to blame someone else or sue someone instead of seeing they have a problem that is affecting other people or try to change their attitude for the better of the group.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145037 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145038" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">2:15 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145038/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145038" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/pattynpsl/" title="See pattynpsl's profile page">pattynpsl</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>This teacher should be strung up and put in front of a line up of her peers and see how many would &quot;vote her off&quot; I think she's seen too many reality shows. This is a Kindergarten teacher who is suppose to be the first impression these kids have of school. K-Teachers should be caring and understanding not hateful and cruel. To put that child on display in front of the entire class is most certainly CHILD ABUSE, how will that child cope with the other children now, it's like giving the other kids a license to abuse him any way they want. If this was my child this teacher would not only be apologizing to my child in front of the entire school, putting her on display, I would be taking this woman to court and getting her teaching license taken away. <br />STIMEY - Do you realize how ridiculous you sound?? You think it's okay for someone to do this to a 5 year old? That's discgusting - crawl back under your rock. Obviously you don't have children or grandchildren, if you do, my heart goes out to them.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145038 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145040" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">2:17 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145040/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145040" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/rambler_08/" title="See rambler_08's profile page">rambler_08</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>How could a teacher do this to a 5 year old at all. If this is my kid I would be doing something more about this. The squeky wheel gets the oil, I would be screaming till there was something done about this.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145040 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145041" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">2:19 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145041/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145041" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/flgirl36/" title="See flgirl36's profile page">flgirl36</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>This is really sad.  How can officals find nothing wrong with what she did.  She should be fired.  The other parents of the children in that class should be concerned.  What she did to those children was also wrong.  I feel bad for the 5 year old child that had to go through this.  I can't even imagine.  To the parents of this boy, keep fighting the system.  Hopefully something good will come of it.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145041 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145043" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">2:20 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145043/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145043" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/LovinFL/" title="See LovinFL's profile page">LovinFL</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>This is horrible! I remember years ago we as first graders had a teacher Mrs. Glawacki &quot;Wacki&quot; as I call her now, anyway, she had a chair in the corner of the room, facing the wall.  It had a big sign on it called the &quot;Dunce Chair&quot;. We were forced to wear a &quot;Dunce Hat&quot; and sit in the chair as punishment!<br />Being a mother of a 6 year old with NO problems, I couldn't imagine that happening to him.  She needs to be fired, nevermind reprimanded! She might as well just had the other kids throw eggs on this kid. It gives the same effect! What a shame!</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145043 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145046" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">2:24 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145046/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145046" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/TGirl/" title="See TGirl's profile page">TGirl</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>My children go to school at Morningside and I am familiar with this teacher.  I was shocked when I read it and horrified. If the child has Asperger's (please note TCPalm did not spell it correctly) he may already feel awkward and left out.  These children have socialization issues that need to be addressed.  My son recently was diagnosed with this syndrome and it has always been very difficult for him to make friends.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145046 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145048" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">2:25 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145048/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145048" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/TheShadowKnows/" title="See TheShadowKnows's profile page">TheShadowKnows</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>so far it's:</p>
+
+<p>5 ... for fire the teacher and burn her at the stake <br />vs.<br />3 ... for give her a raise, a medal and a promotion</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145048 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145049" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">2:28 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145049/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145049" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/id/473069/" title="See cantoncanton#473069's profile page">cantoncanton#473069</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>Wendy Portillo will not be let go, suspended, or fired...why should she? It's not like she moonlights wearing a bikini on a fishing charter boat...<br />Keep up the great work SLCSB!</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145049 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145053" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">2:32 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145053/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145053" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/innervate/" title="See innervate's profile page">innervate</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>Great concept from the teacher. Now, stand her up in front of the parents of the school, let her hear what the parents think of her, and vote whether to keep her or fire her.<br />That's 6.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145053 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145055" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">2:34 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145055/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145055" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/MisElaineous/" title="See MisElaineous's profile page">MisElaineous</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>This is sickening. Children aren't cruel enough to each other, apparently, so the teacher helped them.<br />Maybe they will vote her out of class, next.<br />It looks like we have another teacher who is more qualified to bait hooks &amp; serve sandwiches.<br />Get her away from children! <br />Yet another reason for parents to do everything in their power to remove their kids from SLC schools.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145055 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145060" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">2:38 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145060/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145060" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/Crimson_Spawn/" title="See Crimson_Spawn's profile page">Crimson_Spawn</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>Okay... so the child suffers from autism. Is this condition a distraction to the other students who are also trying to learn?</p>
+
+<p>Perhaps the needs of the many outweigh the needs of the few, in this particular case.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145060 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145062" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">2:42 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145062/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145062" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/paulie_sleepsalot/" title="See paulie_sleepsalot's profile page">paulie_sleepsalot</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>If the teacher gets off unpunished, and the district defends her, I think a similar process should be used to determine the fate of principals at schools on a yearly basis, and maybe even the superintendent's comfy chair.</p>
+
+<p>Even if the kid's behaviors were annoying or problematic, how do you so willingly give up your authority in the classroom by letting kids who can't wait to get home to see Power Rangers or Sponge Bob make decisions for you.  Also, since when would the vote even matter?  It's not as if she was going to conduct her straw poll, document it, and pin a note on a kid and send them to the office to give the official results to the principal and have the student removed.</p>
+
+<p>Then again, it's SLC, so maybe she did conduct the vote and then go to the principal and say, &quot;he's got to be removed, the kindergartners in my class SAID so!&quot;  You gotta wonder what she expected to do with the vote.  The only logical train of thought behind thinking that was a good idea, is that the teacher is functionally retarded.  Funny too, the kid she had them vote on has a high chance to be incredibly intelligent, something that she clearly is lacking.</p>
+
+<p>Six year olds shouldn't be allowed to choose what they want to watch on tv, what they eat for lunch, or who their teachers are.  Also, they're really about twelve years away from voting on anything that matters, including who &quot;gets&quot; to be educated in their public school.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145062 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145064" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">2:43 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145064/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145064" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/hjc333/" title="See hjc333's profile page">hjc333</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>This makes my stomach churn- this teacher should be fired.  SLCSB- this isn't child abuse?  Another view- the other children just learned on how to bully other children. These children were just taught that when someone is different they can taunt and call names and tell other kids that they are not only not special but disgusting and annoying.  This teacher had a duty to protect this child from name calling and taunting yet she promoted it!  This teacher has me fuming!!!!!!!! How can she treat a child with obvious hurdles to overcome in this manner- I hope the mom and dad take this to Tallahassee- if that was my child I wouldn't stop until that teacher was away from all children.  Boy- SLCSB let's review the standards that you hold the children accountable and apply it to the teachers.  I'll betcha that bullying isn't tolerated by the kids but it's okay for the teachers to emotionally abuse a child. hmmm</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145064 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145065" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">2:46 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145065/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145065" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/id/490554/" title="See heres.your.sign#490554's profile page">heres.your.sign#490554</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>OKay...so the class suffers from inclusion of students with disabilities. They know it. The teahcer knows it. What now for the rest of the kids?</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145065 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145066" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">2:47 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145066/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145066" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/hjc333/" title="See hjc333's profile page">hjc333</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>I hope 20/20 picks this one up- this was is far more newsworthy than the trashy bikini wannabe teacher- sorry I am FURIOUS!!!! How can anyone treat a child like this?</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145066 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145070" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">2:48 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145070/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145070" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/id/267084/" title="See tde1116#267084's profile page">tde1116#267084</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>Hey Crimson Spawn - FEDERAL LAW requires inclusion into regular classrooms for children with disabilities. I hope these parents take it one step further and file a civil suit under the ADA and Civil Rights Reform Acts and take some more of the SLC tax monies.<br />Oh, And I also feel this ignorant, stupid and ill trained teacher should be publicly humiliated ( and maybe a family member should have a little one on one &quot;conversation&quot; with her on a side road after school</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145070 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145080" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:04 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145080/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145080" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/Crimson_Spawn/" title="See Crimson_Spawn's profile page">Crimson_Spawn</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>&quot;tde1116&quot;, as much as I would like to join with you as you acknowledge your god given right to force all students to sit in a classroom together regardless of disabilities... you do realize that in some special situations, certain conditions might actually become a hindrance to the other students in the class, and actually serve to hold everyone back because of the special needs of one child?</p>
+
+<p>Just because something is your &quot;right&quot;, doesn't make it advantageous for everyone else to practice it.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145080 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145086" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:11 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145086/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145086" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/id/484471/" title="See scrobi3#484471's profile page">scrobi3#484471</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>Let's see.  What's wrong with this picture?</p>
+
+<p>A teacher who hurts, humiliates and traumatizes a little boy - and who coerces other near-toddlers into being her accomplices - goes unpunished.  And the boy is punished by being banished from the school.</p>
+
+<p>Yet last week we saw a teacher at an alternative school who'd been hit in the head by a smart-a**ed punk teenager and when he defended himself was duly dismissed.  And the kid got no punishement.  Not even being embarrassed by having to listen to what others in the class thought of him or having them vote whether or not he should be banished from the classroom.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145086 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145087" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:11 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145087/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145087" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/Just_a_Citizen/" title="See Just_a_Citizen's profile page">Just_a_Citizen</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>This is just totally SICK!!!  We are talking about a 5 year old... a FIVE YEAR OLD!!!  Children are just learning to interact outside their safety zone of the home and Mom.  It is the time when disabilities become more visible.  The school is supposed to help find these developmental issues and then adjust the child's education accordingly; be it special ed; different class; whatever... they are educators.  Apparently the school knew this according to the article.</p>
+
+<p>To publically humiliate a child (who they have known about for four months) is abhorent!  They should ALL face legal action.  The message to the students of that classroom is &quot;if someone is different you have our permission to demoralize, degrade and humiliate them&quot;.</p>
+
+<p>Way to go St Lucie... let me see next it will be ok to discriminate on faith, race and hmmmm if you don't have blonde hair well you aren't part of the &quot;master&quot; race...  seems to me there is something about that in the history books isn't there?</p>
+
+<p>This isn't education - it is the foundation for hate!</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145087 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145088" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:12 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145088/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145088" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/Mysterious/" title="See Mysterious's profile page">Mysterious</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>tde-actually, placement of students with disabilities is a team decision based on least restrictive environment.  Nowhere does the law state that all students with disabilities should be included in a regular classroom.  If a student cannot function in  a regular ed. classroom, perhaps a self-contained environment would better suit his needs.<br />At this time the child has not even been classified as a special ed. student, so this doesn't apply (yet.)</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145088 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145090" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:16 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145090/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145090" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/flgirl36/" title="See flgirl36's profile page">flgirl36</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>just a citizen... very well said!</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145090 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145092" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:18 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145092/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145092" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/id/410311/" title="See duster407#410311's profile page">duster407#410311</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>Teacher watch your back.... He may be coming for you in 20 years.......</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145092 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145094" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:21 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145094/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145094" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/teachcbs/" title="See teachcbs's profile page">teachcbs</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>The child has every right to be mainstreamed in a class. If his behavior is in question, the school could have assigned an aide to work with him!!</p>
+
+<p>His mom and attorney should press the issue with an updated IEP!</p>
+
+<p>The teacher should be fired! She should be teaching children that everyone is different, and to accept them.</p>
+
+<p>She belongs in Russia or China!</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145094 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145099" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:28 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145099/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145099" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/MisElaineous/" title="See MisElaineous's profile page">MisElaineous</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>If a child is too disruptive for a regular classroom, he or she can and will be reassigned to a special needs classroom.<br />This little guy (and he is adorable BTW) was still in the classroom.<br />The policy in public schools has been to protect little egos, even to an absurd level. Many teachers have stopped using a RED marker to correct assignments, because it's so HARSH!! They use more nuetral colors like purple, or blue. Teachers have been careful not to challenge students. What if they fail? How will they deal with it? I know, because one of my daughter's teachers asked special permission from me to challenge my daughter. <br />Yet, here we have a teacher who went out of her way to humiliate and degrade a 5 yr old boy.<br />Seems awful young to decide he's 'disgusting'.<br />If that child were in a wheelchair, would it be OK to ask the other to vote him out of the class?</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145099 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145100" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:28 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145100/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145100" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/Mysterious/" title="See Mysterious's profile page">Mysterious</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>THE CHILD HAS NOT BEEN CLASSIFEID ESE YET according to the article.  He has no IEP.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145100 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145101" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:29 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145101/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145101" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/Packman/" title="See Packman's profile page">Packman</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>My guess is this teacher watches way too many reality shows....</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145101 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145104" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:31 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145104/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145104" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/lovelibertine/" title="See lovelibertine's profile page">lovelibertine</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>I have a brilliant idea - why don't parents become responsible for the education of their own children? How about a dose of your own medicine!</p>
+
+<p>People want to fire this woman? I'm willing to bet money that some of these yah-hoos who post would do the same, if not worse if they had to deal with a disruptive child in class. People are SO QUICK to judge.</p>
+
+<p>To &quot;teachcbs&quot;: As a teacher myself, I DO NOT believe in mainstreaming. What a way to water down education and force the teachers to multitask their abilities all for the sake of a politically correct concept.</p>
+
+<p>No wonder teachers end up doing wierd $hit like this!</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145104 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145106" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:32 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145106/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145106" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/lovelibertine/" title="See lovelibertine's profile page">lovelibertine</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>OOPS spelling error: weird</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145106 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145110" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:35 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145110/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145110" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/WhatNews/" title="See WhatNews's profile page">WhatNews</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>It doesn't seem like some of you who have posted know anything about aspergers, implying the child is unruly. I can assure you that if this poor child has the disorder, he is quiet, awkward, maybe a little clumsy, but generally keeps to himself.  To be drawn out, ridiculed and &quot;voted out&quot; would be extremely traumatic for him.  Shame on that teacher, she should definitely be fired, especially considering she's been to some of the meetings and knows about his potential condition.  I'm disgusted!</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145110 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145113" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:40 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145113/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145113" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/Mysterious/" title="See Mysterious's profile page">Mysterious</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>He has not been diagnosed yet with aspergers.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145113 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145114" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:41 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145114/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145114" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/larry/" title="See larry's profile page">larry</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>I have sent a copy of this news item to Fox, MSNBC and CNN. I hope one of the networks pick up on it, what a shame to treat a 5 year old like this.</p>
+
+<p>Makes me sick to think that a teacher would even involve the other children. All the parents should be in front of the school with protest signs until this teacher is FIRED.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145114 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145116" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:41 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145116/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145116" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/FloridaWyld/" title="See FloridaWyld's profile page">FloridaWyld</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>I'm surprised this teacher doesn't work at Westwood.  Has Dr. Brown sent for her resume yet?</p>
+
+<p>On the other hand, the lack of accountability doesn't surprise me.  Its the operating mode for this school district.</p>
+
+<p>This teacher should be fired.  If the student was so disruptive then there are plenty of steps that could- and should- have been taken to arrange for other educational environments for the child.</p>
+
+<p>As for those who say that this kid was disrupting the education of the other precious little snowflakes and therefore deserved to be publicly humiliated, perhaps you are also facing some social challenges.  It seems that, as old as you are, you failed to learn compassion, understanding and the difference between right and wrong.</p>
+
+<p>There are plenty of children with disabilities who I'm sure would be more than happy to teach you those things.</p>
+
+<p>TheShadowKnows: Put another tick in the 'fire her' column please.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145116 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145123" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:47 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145123/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145123" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/TGirl/" title="See TGirl's profile page">TGirl</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>For anyone who would like more information on the disorder.  Asperger's children are usually highly intelligent so as for &quot;mainstreaming&quot; they may be smarter than the &quot;normal&quot; children.  They may have some odd behaviors.  My child that was diagnosed with Asperger's has never been in trouble in school and has always been noted for his good behavior.  <br /><a href="http://www.udel.edu/bkirby/asperger/aswhatisit.html" rel="nofollow">http://www.udel.edu/bkirby/asperger/a...</a></p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145123 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145125" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:48 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145125/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145125" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/MichelleW/" title="See MichelleW's profile page">MichelleW</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>What the teacher did was sooo wrong! Young children need postive reinforcement NOT negative critism. The teacher made a 5 year old stand in front of the class while the classmates berade him. What is the teacher trying to do...does she already have him branded as a failure. Regardless of past behavior problems...its still wrong. This kid could be turned around with positive reinforcement. They already stated they were trying to work on a plan. This kid is going to no longer have any respect for his teacher and why should he..obvioulsy she doesnt respect him enough. How can she expect this kid to have any motivation in class now. He was totally embarrassed in front of the whole class. Not to mention the example she set in front of the other kids.</p>
+
+<p>I would be pissed if my kid was one of the other classmates to. I try to teach my son to be nice and respect others and then this teacher just goes and makes the kids say not so nice things about this kid for no apparant reason. Maybe the parents of the other classmates could get together and file complaints too. Something has got to be done.</p>
+
+<p>I seriously hope the teacher is displined. I can't believe the school didn't do anything but document her complaint. My butt would be down there at the school superintentant office demanding answers. And I my son would not go back to her class until she aplogized to him in front of the class.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145125 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145126" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:48 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145126/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145126" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/Smitty/" title="See Smitty's profile page">Smitty</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>Why didn't the Principal separate this child by putting him in a special class.  Autism is distruptive and it was the children who said they thought he was disgusting, etc... I believe the adminstrative end has failed the teacher and she was probably forced to deal with a child with special needs and this was a way to do it. I expect what happened to this child was probably not any worse than what he was dishing out to the others.  The teacher need support from the principal's office and she didn't get it.  Its hard to teach the other children when one child is disruptive.  It 's a no win situation.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145126 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145128" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:50 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145128/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145128" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/paulie_sleepsalot/" title="See paulie_sleepsalot's profile page">paulie_sleepsalot</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>jjfad:</p>
+
+<p>There are a lot of ignorant posts on here that run the gamut of being openly racist, to just plain dumb, and not forgetting to touch on the insane along the way.  With most of those though, they don't parade nor act like they're coming from the brains of Harvard grads.</p>
+
+<p>Your post above might be the dumbest, most insane and blatantly ignorant post that actually tries to paint ones self as educated.  At least the racists, idiots, mouth breathers and nimrods out there don't try to pretend to be something they are not.</p>
+
+<p>You want to talk taxes?  Who pays for the lawsuit if they sue under disability laws that protect students in many ways, about two or three that will be directly involved in this case should it go further.  Don't like the fact that they can sue and win damages?  Well, a lot of people don't, but since you try to stand on hard-line government authortity, you're a moron to not understand that like 'em or not, they are the rules of the game.</p>
+
+<p>SLC would foot the bill should they sue, and win.  Teacher training, especially for those who teach young children, pretty much always covers issues like this in depth, meaning that it was reckless and entirely unacceptable.  You won't find an educator who will be sticking up for this one, especially in light of the fact that she sounds as if she corroborated the story.</p>
+
+<p>At this point, you're so desperate for attention and a political agenda that you will find any story you can to interject your potentially racist comments into a post.   This story has as much to do with Mexico as you do with common sense or integrity.  Nothing.</p>
+
+<p>I won't even touch impact fees.  Nor the fact that the school district has nothing really to do with those.  Rather, I'll just leave it as a testament to your sanity.  Tip another frosty one while typin, bud.  They clearly don't impair your judgment.</p>
+
+<p>I will grab a hold of your proclaimed white-knight status, coming to the defense of the other students in the class, and treat it as I'd love to have a chance to treat you in person.  Here's what it's called: classroom management.  When the kid acts out, they leave and go elsewhere to complete tasks in another location.  Is his behavior disruptive?  Sure, most likely is somewhat, but if you are going to make it in life, part of what you have to learn to deal with is handling all types of people, from those with this syndrome (defenseless 5 year old) and clowns like you (insane asylum escapee).</p>
+
+<p>At the end of the day, I guess I can see your point though in justifying the right of six year olds to vote on the presence of a student.  Given your political agenda, it's the only voting constituent that you'll ever get to buy into your whacked, sick and demented views on society.  Honestly, keep spewing out the wisdom.  You do more damage to your own causes than any criticism of you ever could.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145128 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145131" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">3:54 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145131/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145131" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/STOP_THE_INSANITY/" title="See STOP_THE_INSANITY's profile page">STOP_THE_INSANITY</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>lovelibertine, nice, you are a teacher.  Please let me know where so I can keep my kid far away from you!</p>
+
+<p>I am not a teacher and I can tell you there were several other ways to handle this problem.  Good thing the year is ending, who knows what you have in mind for your class.  And I hope you do not get your contract renewed.</p>
+
+<p>come on Fess up, so proud to be a teacher, where do you teach?</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145131 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145134" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">4:01 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145134/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145134" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/TroubleMaker/" title="See TroubleMaker's profile page">TroubleMaker</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>That teacher needs fired, she is not fit to teach. A 5 year kid should never be subject to something like this.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145134 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145140" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">4:10 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145140/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145140" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/id/447616/" title="See jamilynnpastore#447616's profile page">jamilynnpastore#447616</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>The teacher definitely went about this the wrong way.  Should there be constructive &quot;criticism&quot; in a classroom? Sure why not? It helps everyone.  But the teacher definitely did not conduct her &quot;session&quot; in any type of constructive manner for any of the children in her classroom.</p>
+
+<p>As for ESE, I have been trying to get my son into a class for 2 years now.  He has just gotten in now that there are 9 days left of this school year....  And I have been calling a minimum of once a month to get updates..... now that we are in, I hope there will be a great difference.  If not, I guess I will be home schooling.... Good luck to all the other parents that are trying to get their kids help.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145140 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145149" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">4:36 p.m.</li>
+		
+		
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145149" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/id/222535/" title="See frog_23_23#222535's profile page">frog_23_23#222535</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					<p><em>(This comment was removed by the site staff.)</em></p>
+
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145149 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145150" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">4:40 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145150/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145150" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/JustineM/" title="See JustineM's profile page">JustineM</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>This teacher is a disgrace.  This child will now shut out all future teachers and is mentally scarred.  kids are cruel enough to each other as an adult,teacher,mentor, you are supposed to set an example.  not act like a 5 year old yourself.  I would be going to jail if this was my child.  I would have beaten the living crap out of this teacher for pulling such an act.  I'm hoping there is a lot more to this story.  If not, I'm sticking with beat the snot out of her</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145150 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145152" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">4:44 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145152/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145152" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/STOP_THE_INSANITY/" title="See STOP_THE_INSANITY's profile page">STOP_THE_INSANITY</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>I am the only one that thinks that it is wrong to treat any human being this way, disability or not?</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145152 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145154" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">4:48 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145154/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145154" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/FortPierceTeacher/" title="See FortPierceTeacher's profile page">FortPierceTeacher</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>For all of you defending Asperger's Syndrome, read about the little one below that turned into a monster that deserves the DEATH PEANALTY:</p>
+
+<p><a href="http://www.telegram.com/apps/pbcs.dll/article?AID=/20070120/NEWS/701200360/0/FRONTPAGE" rel="nofollow">http://www.telegram.com/apps/pbcs.dll...</a></p>
+
+<p>I wouldn't want him near your kids or mine.  These kids can be more than disruptive, this one turned out to be a murderer.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145154 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145156" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">4:49 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145156/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145156" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/id/222535/" title="See frog_23_23#222535's profile page">frog_23_23#222535</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>Morningside elementary school has a website - <a href="http://www.morningsideschool.org/" rel="nofollow">http://www.morningsideschool.org/</a> - if you go to the school info tab you can e-mail the principal directly.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145156 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145157" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">4:49 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145157/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145157" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/JennD/" title="See JennD's profile page">JennD</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>I'm with IMHO...i'd be the snot out of this woman if she were my son's teacher. Where do we sign up to protest against this wretched woman?!</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145157 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145158" class="comment_wrapper comment_wrapper_even clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">4:54 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145158/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145158" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/angiwab/" title="See angiwab's profile page">angiwab</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>You know, a few years back I made a complaint about Rivers Edge Elementary. They were making kids put their lunch trays on the floor and eat if they did something wrong. <br />I spoke with the principle about it and when she confirmed it I called a slew of people and filed complaints. <br />They no longer practice this. <br />These schools can get away with way too much.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145158 -->
+
+
+
+								
+								
+								
+							
+
+								
+								
+
+								<div id="c145159" class="comment_wrapper comment_wrapper_odd clear">
+    <ul class="comment_info">
+		<li class="comment_date">May 23, 2008</li>
+		<li class="comment_time removal">4:56 p.m.</li>
+		
+		
+			
+				<li class="removal"><a href="/comments/flag/145159/" rel="nofollow">Suggest removal</a></li>
+			
+		
+		
+		
+			<li class="comment_reply_link"><a href="/comments/reply/?target=61:130023&amp;comment=145159" rel="nofollow">Reply to this post</a></li>
+		
+    </ul>
+    <div class="comment_body clear">
+
+    	<h5 class="author"><a href="/users/JennD/" title="See JennD's profile page">JennD</a> writes:</h5>
+
+			
+
+			<div class="comment-content clear">
+				
+					
+						<p>lovelibertine.....please do tell us what school you teach at so we can be sure our kids don't go there.</p>
+					
+					
+			</div><!-- End comment-content -->
+
+    </div><!-- End comment-body -->	
+</div><!-- End c145159 -->
+
+
+
+								
+								
+								
+							
+							
+							
+
+						
+
+						</div><!-- End comment_list -->
+
+					</div><!-- End comment_list_wrapper -->
+
+					<div class="pagination pagination_bottom pagination_comments">
+						
+    
+		<ul class="time_paginated_arrows comments_paginated_arrows clear">
+			
+			<li class="time_paginated_counter">
+				<form action="/comments/list/news/stories/130023/" method="GET">
+				Comments 
+				<select name="comments_pages-1307930136" class="comments_pages_select">
+ 					
+ 						<option value="/comments/list/news/stories/130023/0/" class="comment_page_option_0" selected="selected">1 - 50</option>
+					
+ 						<option value="/comments/list/news/stories/130023/1/" class="comment_page_option_1">51 - 100</option>
+					
+ 						<option value="/comments/list/news/stories/130023/2/" class="comment_page_option_2">101 - 150</option>
+					
+ 						<option value="/comments/list/news/stories/130023/3/" class="comment_page_option_3">151 - 200</option>
+					
+ 						<option value="/comments/list/news/stories/130023/4/" class="comment_page_option_4">201 - 250</option>
+					
+ 						<option value="/comments/list/news/stories/130023/5/" class="comment_page_option_5">251 - 263</option>
+					
+				</select> of <span class="comment_count_storage">263</span>
+				<input type="submit" value="Go" class="preventFOUC" />
+				</form>
+			</li>
+			
+                <li class="time_paginated_next"><a href="/comments/list/news/stories/130023/1/" class="comments_next">Newer Comments</a></li>
+            
+			
+		</ul>
+	
+
+
+
+
+					</div><!-- end .pagination pagination_bottom -->
+				
+					
+					
+					
+			</div><!-- End comments_container -->
+			
+			
+				
+					<div class="comment_form_wrapper">
+	
+	<div class="comment_form">
+		
+		<h4>Share your thoughts</h4>
+		<p class="comments_privacy">Comments are the sole responsibility of the person posting them.  You agree not to post comments that are off topic, defamatory, obscene, abusive, threatening or an invasion of privacy. Violators may be banned.  <a href="/privacy/">Click here for our full user agreement</a>.</p>
+
+		<form action="/comments/post/" method="post" class="submit_form default_form submit_comment_form">
+			
+
+			
+
+			
+				<p><label for="id_username"><span class="submit_label">Username * <span class="formtip">Don't have an account? <a href="/accounts/register/">Sign up for a new account</a></span></span> <input type="text" name="username" id="id_username" /></label></p>
+				<p><label for="id_password"><span class="submit_label">Password * <span class="formtip">Can't remember? <a href="/accounts/password_reset/">Reset your password</a></span></span><input type="password" name="password" id="id_password" /></label></p>
+			
+			
+			
+			
+
+			<p><label for="id_comment"><span class="submit_label">Comment</span><textarea name="comment" id="id_comment" rows="10" cols="60"></textarea></label></p>
+
+			<input type="hidden" name="options" value="ip" />
+			<input type="hidden" name="target" value="61:130023" />
+			<input type="hidden" name="gonzo" value="34f182c603271b256f9f4bbf2d7bc195" />
+
+			<p><input type="submit" name="preview" value="Preview comment" /></p>
+						
+			
+			
+			
+			
+				
+					<div style="border-bottom:1px solid #dadada; margin-bottom:10px;"></div>
+					<p class="comments_privacy">Comments can be shared on 
+						
+							
+							Facebook
+							and 
+							Yahoo!.
+Add both options by <a href="/accounts/auth/identities/">connecting your profiles</a>.</p>
+				
+				
+				
+				
+			
+					
+			
+		</form>
+
+	</div><!-- end .comment_form -->
+	
+</div><!-- end .comment_form_wrapper -->
+
+
+				
+			
+			
+		
+		</div><!-- end #comments -->
+
+	</div><!-- end #comment_wrapper -->
+		
+
+			
+			
+			
+			
+		</div><!-- End primary_content -->
+		
+		
+		
+			<div id="secondary_content">
+				
+					
+						<div class="bigbox_wrapper clear">
+	<div class="bigbox">
+		<div class="adtag" id="BIGBOX_1"><script>yld_mgr.place_ad_here("BIGBOX_1");</script> </div>
+	</div> <!-- end .bigbox -->
+</div> <!-- end .bigbox_wrapper -->
+						
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						
+
+
+
+<div id="most_popular" class="tab_wrapper">
+	<div class="titlebar titlebar_secondary">
+		<h3>Most Popular</h3>
+	</div><!-- end .titlebar_secondary -->
+	<ul class="tab_header">
+		
+		
+		
+		
+		<li class="ui-tabs-selected"><a href="#most_popular_viewed">Viewed</a></li>
+		
+		
+		
+		
+			<li><a href="#most_popular_commented">Commented</a></li>
+		
+		
+		
+		
+			<li><a href="#most_popular_emailed">Emailed</a></li>
+		
+		
+	</ul>
+	
+	
+	<div id="most_popular_viewed" class="bucket_secondary">
+		
+		
+		<ul class="story_list sidebar_story_list">
+			
+				<li>
+					<a href="/news/2011/apr/22/no-headline---tc_sl_captain/?partner=popular" title="PORT ST. LUCIE &#8212; A June 2010 memo obtained by Scripps Treasure Coast Newspapers after Police Capt. Joe D&#39;Agostino filed a libel lawsuit against Mayor JoAnn Faiella on Thursday accuses the captain of misconduct and unethical behavior. " rel="nofollow">June 2010 memo accused Port St. Lucie police captain of misconduct </a>
+					<span class="date">Updated 4/22/2011 at 9:25 p.m.</span> <a href="/news/2011/apr/22/no-headline---tc_sl_captain/?partner=popular#comments" class="comment_count" rel="nofollow">61 comments</a>
+				</li>
+			
+				<li>
+					<a href="/news/2011/apr/22/man-60-faces-child-pornography-charges/?partner=popular" title="PORT ST. LUCIE &#8212; A 60-year-old man faces 10 felony charges after St. Lucie County Sheriff&#39;s investigators found images and video of child pornography on his computer, according to an arrest affidavit released Friday. " rel="nofollow">Man, 60, faces child pornography charges </a>
+					<span class="date">Published 4/22/2011 at 3:10 p.m.</span> <a href="/news/2011/apr/22/man-60-faces-child-pornography-charges/?partner=popular#comments" class="comment_count" rel="nofollow">29 comments</a>
+				</li>
+			
+				<li>
+					<a href="/news/2011/apr/22/masked-four-legged-bandit-sought-in-indian-river/?partner=popular" title="INDIAN RIVER COUNTY &#8212; A masked bandit remained on the loose Friday, three days after being identified as the one responsible for the theft of purses taken at the Sandridge Golf Club. " rel="nofollow">Masked (four-legged) bandit sought in purse snatchings at Indian River golf course</a>
+					<span class="date">Published 4/22/2011 at 9:59 p.m.</span> <a href="/news/2011/apr/22/masked-four-legged-bandit-sought-in-indian-river/?partner=popular#comments" class="comment_count" rel="nofollow">22 comments</a>
+				</li>
+			
+				<li>
+					<a href="/news/2011/apr/22/divers-search-indian-river-for-evidence-in-of/?partner=popular" title="INDIAN RIVER COUNTY &#8212; Divers groped along the muddy bottom of the Indian River Lagoon near the southeast side of the U.S. 1 bridge to Brevard County on Friday, searching for evidence in last Saturday&#39;s murder of Sebastian auto mechanic James Malone. " rel="nofollow"> Divers search Indian River for evidence in murder of Sebastian auto mechanic  </a>
+					<span class="date">Updated 4/22/2011 at 8:48 p.m.</span> <a href="/news/2011/apr/22/divers-search-indian-river-for-evidence-in-of/?partner=popular#comments" class="comment_count" rel="nofollow">3 comments</a>
+				</li>
+			
+				<li>
+					<a href="/news/2011/apr/22/toddler-taken-from-grandmothers-fort-pierce-home/?partner=popular" title="The mother of the man police say shot to death his 3-year-old daughter&#39;s pregnant mom and maternal grandmother before killing himself has lost custody of the toddler ahead of the original date set by a court. " rel="nofollow">Toddler taken from grandmother's Fort Pierce home ahead of schedule </a>
+					<span class="date">Published 4/22/2011 at 7:39 p.m.</span> <a href="/news/2011/apr/22/toddler-taken-from-grandmothers-fort-pierce-home/?partner=popular#comments" class="comment_count" rel="nofollow">5 comments</a>
+				</li>
+			
+		</ul>
+		
+		
+		
+		<div class="bucket_media sidebar_bucket_media clear">
+			<h5>Photo Galleries</h5>
+			
+			
+				<div class="bucket_media_item sidebar_bucket_media_item">
+					<a href="/photos/galleries/2011/apr/21/st-lucie-west-centennial-vs-vero-beach-girls-soft/?partner=popular" title="St. Lucie West Centennial V's Vero Beach ( Girls Soft Ball )" rel="nofollow"><img src="http://media.tcpalm.com/media/img/photos/2011/04/22/36__slwch___jd1_8252_t90_70.jpg" width="90" alt="St. Lucie West Centennial V's Vero Beach ( Girls Soft Ball )" /> St. Lucie West Centennial V'&hellip;</a>
+				</div> <!-- end .bucket_media_item -->
+			
+				<div class="bucket_media_item sidebar_bucket_media_item">
+					<a href="/photos/galleries/2011/apr/22/judge-orders-change-custody/?partner=popular" title="Judge orders change in custody for 3-year-old in Fort Pierce" rel="nofollow"><img src="http://media.tcpalm.com/media/img/photos/2011/04/22/court03_t90_70.JPG" width="90" alt="Judge orders change in custody for 3-year-old in Fort Pierce" /> Judge orders change in custod&hellip;</a>
+				</div> <!-- end .bucket_media_item -->
+			
+				<div class="bucket_media_item sidebar_bucket_media_item">
+					<a href="/photos/galleries/2011/apr/20/photos-images-inside-sanctuary-animal-refuge-slc/?partner=popular" title="Images from inside the Sanctuary Animal Refuge in SLC" rel="nofollow"><img src="http://media.tcpalm.com/media/img/photos/2011/04/20/EDC3_t90_70.JPG" width="90" alt="Images from inside the Sanctuary Animal Refuge in SLC" /> Images from inside th&hellip;</a>
+				</div> <!-- end .bucket_media_item -->
+			
+
+		</div> <!-- end .bucket_gallery -->
+		
+	</div><!-- end #most_popular_viewed -->
+	
+	
+	
+	<div id="most_popular_commented" class="bucket_secondary preventFOUC">
+		<ul class="story_list sidebar_story_list">
+			
+				<li>
+					<a href="/news/2011/apr/21/port-st-lucie-police-captain-sues-mayor-libel/?partner=popular" title="She authored note that leveled false accusations of corruption, Joe D'Agostino says in the suit." rel="nofollow">Port St. Lucie police captain sues Mayor Faiella for libel | See lawsuit</a>
+					<span class="date">Updated 4/21/2011 at 9:12 p.m.</span> <a href="/news/2011/apr/21/port-st-lucie-police-captain-sues-mayor-libel/?partner=popular#comments" class="comment_count" rel="nofollow">107 comments</a>
+				</li>
+			
+				<li>
+					<a href="/news/2011/apr/20/letter-145get-back-to-where-we-were-surely-few/?partner=popular" title="Mark Bush, Stuart " rel="nofollow">Letter: &#145;Get back to where we were'? Surely few Americans want to go there </a>
+					<span class="date">Updated // at : </span> <a href="/news/2011/apr/20/letter-145get-back-to-where-we-were-surely-few/?partner=popular#comments" class="comment_count" rel="nofollow">93 comments</a>
+				</li>
+			
+				<li>
+					<a href="/news/2011/apr/21/baby-born-morning-left-bag-port-st-lucie-good-heal/?partner=popular" title="PORT ST. LUCIE &#8212;A newborn girl thought to have been born at 7:15 a.m. Thursday apparently was dropped off about an hour later at the St. Lucie County Fire District&#39;s headquarters and appeared to be in good health, fire district officials said. " rel="nofollow">Baby born Thursday morning, left in bag in Port St. Lucie, said to be in good health | Video</a>
+					<span class="date">Updated 4/21/2011 at 4:03 p.m.</span> <a href="/news/2011/apr/21/baby-born-morning-left-bag-port-st-lucie-good-heal/?partner=popular#comments" class="comment_count" rel="nofollow">77 comments</a>
+				</li>
+			
+				<li>
+					<a href="/news/2011/apr/20/russ-lemmon-eliminating-music-art-teachers-fit/?partner=popular" title="My favorite memory of elementary school has nothing to do with reading, writing or arithmetic. " rel="nofollow">Russ Lemmon: Eliminating music, art teachers doesn't fit profile of &#145;special' community </a>
+					<span class="date">Updated // at : </span> <a href="/news/2011/apr/20/russ-lemmon-eliminating-music-art-teachers-fit/?partner=popular#comments" class="comment_count" rel="nofollow">79 comments</a>
+				</li>
+			
+				<li>
+					<a href="/news/2011/apr/22/no-headline---tc_sl_captain/?partner=popular" title="PORT ST. LUCIE &#8212; A June 2010 memo obtained by Scripps Treasure Coast Newspapers after Police Capt. Joe D&#39;Agostino filed a libel lawsuit against Mayor JoAnn Faiella on Thursday accuses the captain of misconduct and unethical behavior. " rel="nofollow">June 2010 memo accused Port St. Lucie police captain of misconduct </a>
+					<span class="date">Updated 4/22/2011 at 9:25 p.m.</span> <a href="/news/2011/apr/22/no-headline---tc_sl_captain/?partner=popular#comments" class="comment_count" rel="nofollow">61 comments</a>
+				</li>
+			
+		</ul>
+	</div><!-- end #most_popular_commented -->
+	
+	
+	
+	<div id="most_popular_emailed" class="bucket_secondary preventFOUC">
+		<ul class="story_list sidebar_story_list">
+			
+				<li>
+					<a href="/news/2011/apr/20/estefans-debut-new-restaurant-at-their-vero/?partner=popular" title="VERO BEACH &#8212; Grammy Award-winning singer Gloria Estefan and her husband, producer Emilio Estafan Jr., have opened a new restaurant concept at their luxury Vero Beach Costa d&#39;Este Beach Resort. " rel="nofollow">Estefans debut new restaurant at their Vero Beach Costa d'Este Resort </a>
+					<span class="date">Updated // at : </span> <a href="/news/2011/apr/20/estefans-debut-new-restaurant-at-their-vero/?partner=popular#comments" class="comment_count" rel="nofollow">32 comments</a>
+				</li>
+			
+				<li>
+					<a href="/news/2011/apr/22/masked-four-legged-bandit-sought-in-indian-river/?partner=popular" title="INDIAN RIVER COUNTY &#8212; A masked bandit remained on the loose Friday, three days after being identified as the one responsible for the theft of purses taken at the Sandridge Golf Club. " rel="nofollow">Masked (four-legged) bandit sought in purse snatchings at Indian River golf course</a>
+					<span class="date">Updated // at : </span> <a href="/news/2011/apr/22/masked-four-legged-bandit-sought-in-indian-river/?partner=popular#comments" class="comment_count" rel="nofollow">22 comments</a>
+				</li>
+			
+				<li>
+					<a href="/news/2011/apr/19/officials-animal-welfare-groups-trying-take-care-o/?partner=popular" title="Refuge owner hospitalized, turns over about 130 animals to county. Public/private efforts launched to care for animals." rel="nofollow">Neglect at animal refuge called one of worst cases seen in St. Lucie | Photos, Video | How to help</a>
+					<span class="date">Updated 4/20/2011 at 9:51 a.m.</span> <a href="/news/2011/apr/19/officials-animal-welfare-groups-trying-take-care-o/?partner=popular#comments" class="comment_count" rel="nofollow">64 comments</a>
+				</li>
+			
+				<li>
+					<a href="/news/2011/apr/14/columbus-replica-ships-arrive-in-stuart-today-to/?partner=popular" title="Niña and Pinta look-alikes at the Loggerhead Club &amp; Marina in Stuart will educate children and adults." rel="nofollow">Columbus replica ships arrive in Stuart, open for tours Friday to April 24 | Photo Gallery, Video</a>
+					<span class="date">Updated 4/15/2011 at 10:11 a.m.</span> <a href="/news/2011/apr/14/columbus-replica-ships-arrive-in-stuart-today-to/?partner=popular#comments" class="comment_count" rel="nofollow">4 comments</a>
+				</li>
+			
+				<li>
+					<a href="/news/2011/apr/22/3d-conversion-portion-of-digital-domain-has/?partner=popular" title="Port St. Lucie is benefiting from job growth at Digital Domain, which acquired In-Three Inc., a pioneer in 3D conversion technology." rel="nofollow">3D conversion portion of Digital Domain has company growing rapidly </a>
+					<span class="date">Updated // at : </span> <a href="/news/2011/apr/22/3d-conversion-portion-of-digital-domain-has/?partner=popular#comments" class="comment_count" rel="nofollow">7 comments</a>
+				</li>
+			
+		</ul>
+	</div><!-- end #most_popular_emailed -->
+	
+
+</div><!-- end #most_popular -->
+
+
+					
+					
+					
+					
+					
+					
+					
+						<div id="sidebar_weather" class="tab_wrapper clear">
+	<div class="titlebar titlebar_secondary">
+		<h3>Weather</h3>
+	</div><!-- end .titlebar_secondary -->
+
+	<ul class="tab_header">
+		<li class="ui-tabs-selected"><a href="#sidebar_weather_currently">Currently</a></li>
+		<li><a href="#sidebar_weather_3day">36-Hour</a></li>
+		<li><a href="#sidebar_weather_ugc">Your Photos</a></li>
+	</ul>
+	
+	<div id="sidebar_weather_currently" class="bucket_secondary">
+		
+		
+		
+		
+		
+			
+		
+		<div class="sidebar_current_weather clear">
+	
+			<div id="sidebar_current_icon">
+				<img src="http://media.scrippsnewspapers.com/static/asphalt/dev/img/weather/icons/33_170.png" width="120px" alt="Fair" />
+			</div> <!-- end #radar -->
+	
+			<div id="sidebar_current_weather">
+				<span class="current_temp_label">Currently</span>
+				<span class="current_temp">75<span class="current_temp_degree">&deg;</span></span>
+				<span class="current_conditions">Fair</span>
+				<span class="current_wind">Wind: E 6mph</span>
+			</div> <!-- end #current_conditions -->
+	
+			<div id="sidebar_hi_low">
+				<span class="today_temp_label">Today</span>
+				<span class="hi_temp">84<span class="current_temp_degree">&deg;</span></span>
+				<span class="lo_temp">70<span class="current_temp_degree">&deg;</span></span>
+			</div> <!-- end #hi_low -->
+			
+		</div> <!-- end #weather -->
+		
+	</div><!-- end #sidebar_weather_currently -->
+	
+	<div id="sidebar_weather_3day" class="bucket_secondary preventFOUC">
+		<div id="sidebar_weather_forecast_3day" class="clear">
+			<div class="sidebar_forecast_day">
+				<div class="sidebar_weather_day">Sun</div><div class="sidebar_weather_day">10:00 AM</div>
+				<img src="http://media.scrippsnewspapers.com/static/asphalt/dev//img/weather/icons/14_100.png" alt="Partly Sunny Showers" />
+				<div class="sidebar_forecast_conditions">Partly Sunny Showers</div>
+				<div class="sidebar_forecast_hilo">Temp: <span class="temp">82&deg;</span></div>
+			</div>
+			<div class="sidebar_forecast_day">
+				<div class="sidebar_weather_day">Sun</div><div class="sidebar_weather_day">10:00 PM</div>
+				<img src="http://media.scrippsnewspapers.com/static/asphalt/dev//img/weather/icons/35_100.png" alt="Partly Cloudy" />
+				<div class="sidebar_forecast_conditions">Partly Cloudy</div>
+				<div class="sidebar_forecast_hilo">Temp: <span class="temp">75&deg;</span></div>
+			</div><!-- End sidebar_forecast_day -->
+			<div class="sidebar_forecast_day">
+				<div class="sidebar_weather_day">Mon</div><div class="sidebar_weather_day">10:00 AM</div>
+				<img src="http://media.scrippsnewspapers.com/static/asphalt/dev//img/weather/icons/14_100.png" alt="Partly Sunny Showers" />
+				<div class="sidebar_forecast_conditions">Partly Sunny Showers</div>
+				<div class="sidebar_forecast_hilo">Temp: <span class="temp">82&deg;</span></div>
+			</div><!-- End sidebar_forecast_day -->
+			<div class="clear"></div>
+			<div class="sidebar_forecast_detail">
+				<div class="sidebar_forecast_details">
+					<div class="sidebar_forecast_rulepadding">
+						<p>Feels Like: 84&deg;</p>
+						<p>Humidity: 58%</p>
+						<p>Precip: 15%</p>
+					</div>
+				</div>
+			</div><!-- End sidebar_forecast_detail -->
+			<div class="sidebar_forecast_detail">
+				<div class="sidebar_forecast_details">
+					<div class="sidebar_forecast_rulepadding">
+						<p>Feels Like: 75&deg;</p>
+						<p>Humidity: 73%</p>
+						<p>Precip: 10%</p>
+					</div>
+				</div>
+			</div><!-- End sidebar_forecast_detail -->
+			<div class="sidebar_forecast_detail">
+				<div class="sidebar_forecast_details">
+					<div class="sidebar_forecast_rulepadding last">
+						<p>Feels Like: 85&deg;</p>
+						<p>Humidity: 65%</p>
+						<p>Precip: 20%</p>
+					</div>
+				</div>
+			</div><!-- End sidebar_forecast_detail -->
+		</div><!-- End sidebar_weather_forecast_3day -->
+		
+	</div><!-- end #sidebar_weather_3day -->
+	
+	<div id="sidebar_weather_ugc" class="bucket_secondary preventFOUC">
+		<div class="bucket_media sidebar_bucket_media no_border clear">
+
+			
+			
+<div class="bucket_media_item sidebar_bucket_media_item">
+	<a href="http://yourmedia.tcpalm.com/MediaItemView.aspx?id=1151531"><img src="http://c33452.r52.cf0.rackcdn.com/5749c190-9500-4042-ab73-e1ad0871e441.jpg" /></a> <a href="http://yourmedia.tcpalm.com/MediaItemView.aspx?id=1151531" title="Dreamy Sky">Dreamy Sky </a>
+	<div class="date ugc_sidebar">
+		2/24/11<br />
+		8:45 p.m.<br />
+	</div>
+</div>
+
+<div class="bucket_media_item sidebar_bucket_media_item">
+	<a href="http://yourmedia.tcpalm.com/MediaItemView.aspx?id=1064108"><img src="http://c0033452.cdn.cloudfiles.rackspacecloud.com/c789c638-73e1-4c04-9bdf-0fa4d1194260.jpg" /></a> <a href="http://yourmedia.tcpalm.com/MediaItemView.aspx?id=1064108" title="Chemtrails HobeSound1/30/11 1:00 pm">Chemtrails HobeSound1/30/11 1:00 pm </a>
+	<div class="date ugc_sidebar">
+		1/30/11<br />
+		2:19 p.m.<br />
+	</div>
+</div>
+
+<div class="bucket_media_item sidebar_bucket_media_item">
+	<a href="http://yourmedia.tcpalm.com/MediaItemView.aspx?id=1046328"><img src="http://c0033452.cdn.cloudfiles.rackspacecloud.com/d60bf51d-46e3-4ce6-9955-007be2e008cf.jpg" /></a> <a href="http://yourmedia.tcpalm.com/MediaItemView.aspx?id=1046328" title="Rainbow">Rainbow </a>
+	<div class="date ugc_sidebar">
+		1/25/11<br />
+		9:51 p.m.<br />
+	</div>
+</div>
+
+<div class="bucket_media_item sidebar_bucket_media_item">
+	<a href="http://yourmedia.tcpalm.com/MediaItemView.aspx?id=1046327"><img src="http://c0033452.cdn.cloudfiles.rackspacecloud.com/8dc71554-42c9-4de1-9673-514efd2a8ee2.jpg" /></a> <a href="http://yourmedia.tcpalm.com/MediaItemView.aspx?id=1046327" title="Rainbow">Rainbow </a>
+	<div class="date ugc_sidebar">
+		1/25/11<br />
+		9:51 p.m.<br />
+	</div>
+</div>
+
+<div class="bucket_media_item sidebar_bucket_media_item">
+	<a href="http://yourmedia.tcpalm.com/MediaItemView.aspx?id=1046326"><img src="http://c0033452.cdn.cloudfiles.rackspacecloud.com/7f735942-2a44-4d04-817b-eec0108d1142.jpg" /></a> <a href="http://yourmedia.tcpalm.com/MediaItemView.aspx?id=1046326" title="Rainbow">Rainbow </a>
+	<div class="date ugc_sidebar">
+		1/25/11<br />
+		9:51 p.m.<br />
+	</div>
+</div>
+
+<div class="bucket_media_item sidebar_bucket_media_item">
+	<a href="http://yourmedia.tcpalm.com/MediaItemView.aspx?id=1046325"><img src="http://c0033452.cdn.cloudfiles.rackspacecloud.com/a4779817-0d45-474a-ad4a-be63e4167451.jpg" /></a> <a href="http://yourmedia.tcpalm.com/MediaItemView.aspx?id=1046325" title="Rainbow">Rainbow </a>
+	<div class="date ugc_sidebar">
+		1/25/11<br />
+		9:51 p.m.<br />
+	</div>
+</div>
+
+
+
+
+
+		</div> <!-- end .bucket_gallery -->
+		
+	</div><!-- end #sidebar_weather_regional -->
+
+	<div class="sidebar_more_link sidebar_more_link_weather">
+		<div class="sidebar_weather_ad_rule"></div>
+		<div id="sidebar_weather_ad">
+			<div class="adtag" id="WEATHER_SPONSOR"><script>yld_mgr.place_ad_here("WEATHER_SPONSOR");</script> </div>
+		</div>
+		<a href="/weather/" title="More Treasure Coast Weather">More Weather &raquo;</a>
+	</div>
+
+</div><!-- end #sidebar_weather -->
+
+					
+					
+					
+					
+					
+					
+					
+						
+					
+						
+						<div id="sidebar_events" class="tab_wrapper">
+	<div class="titlebar titlebar_secondary">
+		<h3>Calendar</h3>
+	</div><!-- end .titlebar titlebar_secondary -->
+
+
+	<ul class="cal_tab_header clear">
+		
+			<li class="cal_tab_first ui-tabs-selected">
+				<a href="#Apr23" value="2011-04-23">
+					<span class="cal_tab_day">Saturday</span> <span class="cal_tab_month">Apr</span> <span class="cal_tab_date">23</span>
+				</a>
+			</li>
+		
+			<li >
+				<a href="#Apr24" value="2011-04-24">
+					<span class="cal_tab_day">Sunday</span> <span class="cal_tab_month">Apr</span> <span class="cal_tab_date">24</span>
+				</a>
+			</li>
+		
+			<li >
+				<a href="#Apr25" value="2011-04-25">
+					<span class="cal_tab_day">Monday</span> <span class="cal_tab_month">Apr</span> <span class="cal_tab_date">25</span>
+				</a>
+			</li>
+		
+		
+		<li class="cal_tab_last">
+			<a href="#calendar" class="browse_cal">
+				<span class="cal_tab_day">More</span> <span class="cal_tab_month">BROWSE</span> <span class="cal_tab_icon">Icon</span>
+			</a>
+		</li>
+	</ul>
+	
+	
+		<div id="Apr23" class="bucket_secondary">
+			
+			<ul class="sidebar_list">
+				
+					<li class="odd clear">
+						<h4><a href="/events/goto/3656/" class="browse_list_title" title="The Jove Comedy Experience">The Jove Comedy Experience</a> <a href="/places/atlantic-theatre/" class="browse_list_venue" title="Atlantic Theatre">Atlantic Theatre</a></h4>
+						<h5 class="browse_list_time">8 a.m.</h5>
+					</li>			
+				
+					<li class="even clear">
+						<h4><a href="/events/goto/3674/" class="browse_list_title" title="American Public Works Association Golf Tournament">American Public Works Association Golf Tournament</a> <a href="/places/gator-trace-golf-and-country-club/" class="browse_list_venue" title="Gator Trace Golf and Country Club">Gator Trace Golf and Country Club</a></h4>
+						<h5 class="browse_list_time">8 a.m.</h5>
+					</li>			
+				
+					<li class="odd clear">
+						<h4><a href="/events/goto/3544/" class="browse_list_title" title="Easter Egg Hunt & Egg Roll">Easter Egg Hunt & Egg Roll</a> <a href="/places/flagler-museum/" class="browse_list_venue" title="Flagler Museum">Flagler Museum</a></h4>
+						<h5 class="browse_list_time">9 a.m.</h5>
+					</li>			
+				
+					<li class="even clear">
+						<h4><a href="/events/goto/3585/" class="browse_list_title" title="Earth Day/Arbor Day Festival">Earth Day/Arbor Day Festival</a> <a href="/places/one_off/" class="browse_list_venue" title="(One-off place)">(One-off place)</a></h4>
+						<h5 class="browse_list_time">9 a.m.</h5>
+					</li>			
+				
+					<li class="odd clear">
+						<h4><a href="/events/goto/3693/" class="browse_list_title" title="Egg Extravaganza">Egg Extravaganza</a> <a href="/places/one_off/" class="browse_list_venue" title="(One-off place)">(One-off place)</a></h4>
+						<h5 class="browse_list_time">9 a.m.</h5>
+					</li>			
+				
+			
+			</ul>
+			
+			<div class="sidebar_more_link sidebar_more_link_events">
+				<a href="/events/" title="More Treasure Coast Events">More Events &raquo;</a>
+			</div>
+			
+		</div> <!-- end #Apr23 -->
+	
+		<div id="Apr24" class="bucket_secondary preventFOUC">
+			
+			<ul class="sidebar_list">
+				
+					<li class="even clear">
+						<h4><a href="/events/goto/3930/" class="browse_list_title" title="Sonrise Service/Resurrection Services">Sonrise Service/Resurrection Services</a> <a href="" class="browse_list_venue" title="">388 Chamberlain Blvd. St. Lucie Village, FL 34946</a></h4>
+						<h5 class="browse_list_time">6:15 a.m.</h5>
+					</li>			
+				
+					<li class="odd clear">
+						<h4><a href="/events/goto/3588/" class="browse_list_title" title="Easter Sunday Celebration">Easter Sunday Celebration</a> <a href="/places/southside-christian-church/" class="browse_list_venue" title="Southside Christian Church">Southside Christian Church</a></h4>
+						<h5 class="browse_list_time">6:30 a.m.</h5>
+					</li>			
+				
+					<li class="even clear">
+						<h4><a href="/events/goto/3837/" class="browse_list_title" title="Easter Services">Easter Services</a> <a href="/places/hope-lutheran-church/" class="browse_list_venue" title="Hope Lutheran Church">Hope Lutheran Church</a></h4>
+						<h5 class="browse_list_time">7 a.m.</h5>
+					</li>			
+				
+					<li class="odd clear">
+						<h4><a href="/events/goto/3916/" class="browse_list_title" title="Easter Sunrise Services at the PSL Botanical Gardens">Easter Sunrise Services at the PSL Botanical Gardens</a> <a href="/places/one_off/" class="browse_list_venue" title="(One-off place)">(One-off place)</a></h4>
+						<h5 class="browse_list_time">7 a.m.</h5>
+					</li>			
+				
+					<li class="even clear">
+						<h4><a href="/events/goto/3839/" class="browse_list_title" title="Easter Services">Easter Services</a> <a href="/places/christ-church-vero-beach/" class="browse_list_venue" title="Christ Church Vero Beach"> </a></h4>
+						<h5 class="browse_list_time">7:30 a.m.</h5>
+					</li>			
+				
+			
+			</ul>
+			
+			<div class="sidebar_more_link sidebar_more_link_events">
+				<a href="/events/" title="More Treasure Coast Events">More Events &raquo;</a>
+			</div>
+			
+		</div> <!-- end #Apr24 -->
+	
+		<div id="Apr25" class="bucket_secondary preventFOUC">
+			
+			<ul class="sidebar_list">
+				
+					<li class="odd clear">
+						<h4><a href="/events/goto/3928/" class="browse_list_title" title="Community Garden Workday">Community Garden Workday</a> <a href="/places/heathcote-botanical-gardens/" class="browse_list_venue" title="Heathcote Botanical Gardens">Heathcote Botanical Gardens</a></h4>
+						<h5 class="browse_list_time">9 a.m.</h5>
+					</li>			
+				
+					<li class="even clear">
+						<h4><a href="/events/goto/3929/" class="browse_list_title" title="Advanced Line Dancing">Advanced Line Dancing</a> <a href="/places/river-walk-center/" class="browse_list_venue" title="River Walk Center">River Walk Center</a></h4>
+						<h5 class="browse_list_time">9 a.m.</h5>
+					</li>			
+				
+					<li class="odd clear">
+						<h4><a href="/events/goto/3893/" class="browse_list_title" title="Free Cholesterol and Diabetes Screening">Free Cholesterol and Diabetes Screening</a> <a href="/places/one_off/" class="browse_list_venue" title="(One-off place)">(One-off place)</a></h4>
+						<h5 class="browse_list_time">11 a.m.</h5>
+					</li>			
+				
+					<li class="even clear">
+						<h4><a href="/events/goto/3886/" class="browse_list_title" title="Genealogy Class: Profiling">Genealogy Class: Profiling</a> <a href="/places/one_off/" class="browse_list_venue" title="(One-off place)"> Church of Latter Day Saints, 3980 12th St., Vero Beach</a></h4>
+						<h5 class="browse_list_time">1 p.m.</h5>
+					</li>			
+				
+					<li class="odd clear">
+						<h4><a href="/events/goto/3923/" class="browse_list_title" title="Spring Blood Drive/Health Fair">Spring Blood Drive/Health Fair</a> <a href="/places/one_off/" class="browse_list_venue" title="(One-off place)">The Palms of St. Lucie West, 501 NW Cashmere Blvd., Port St. Lucie</a></h4>
+						<h5 class="browse_list_time">1 p.m.</h5>
+					</li>			
+				
+			
+			</ul>
+			
+			<div class="sidebar_more_link sidebar_more_link_events">
+				<a href="/events/" title="More Treasure Coast Events">More Events &raquo;</a>
+			</div>
+			
+		</div> <!-- end #Apr25 -->
+	
+	
+	<div class="ajax_loader"><img src="http://media.tcpalm.com/corp_assets/asphalt/img/ajax-loader.gif" alt="Loading content" /><p>Loading...</p></div>
+	
+	<div id="calendar" class="bucket_secondary">
+		
+		<div id="calendar_results"></div>
+		
+		<div class="sidebar_more_link sidebar_more_link_events">
+			<a href="/events/" title="More Treasure Coast Events">More Events &raquo;</a>
+		</div>
+	</div><!-- end #cal -->
+	
+</div><!-- end #sidebar_events -->
+					
+					
+					
+					
+					
+					
+					
+						
+					
+					
+					
+					
+					
+					
+					
+	
+	
+
+
+<div id="sidebar_business_directory" class="tab_wrapper clear">
+	
+	<div class="titlebar titlebar_secondary">
+		
+		<h3>Business Directory</h3>
+		
+	</div><!-- end .titlebar_secondary -->
+
+	<ul class="tab_header">
+		<li><a href="#sidebar_business_directory_search">Search</a></li>
+		<li><a href="#sidebar_business_directory_links">Browse</a></li>
+	</ul>
+	
+	<div id="sidebar_business_directory_search" class="bucket_secondary clear">
+		
+		<FORM STYLE='margin:0;' TARGET=_top METHOD=GET ACTION="http://local.tcpalm.com/search.pg" class="submit_form default_form">
+			<label for="id_business">
+				<span class="submit_label">Business: <span class="formtip">e.g. salon</span></span>
+				<input name="q" style="width: 160px;" maxlength="2048" value="" type="text" class="CatTxtBxMojo">
+			</label>
+			<label for="id_business">
+				<span class="submit_label">Location: <span class="formtip">e.g. Stuart, FL</span></span>
+				<input name="z" style="width: 160px;" maxlength="2048" value="Stuart, FL" type="TEXT" class="CatTxtBxMojo">
+			</label>
+			
+			<div class="CatBtnSubmitMojo">
+				<INPUT TYPE=SUBMIT STYLE='font-size:8pt;' VALUE=Search>            
+			</div>
+			
+			<br />
+			
+			<div class="sidebar_more_link">
+				
+				<div class="sidebar_description">
+					
+					Powered by <a style="text-decoration: none;" href="http://www.local.com">Local.com</a>
+				
+				</div>
+				
+			</div>
+			
+		</form>
+		
+	</div><!-- end #sidebar_business_directory_search -->
+	
+	<div id="sidebar_business_directory_links" class="bucket_secondary clear">	
+		
+		<ul class="bucket_list bucket_list_2col clear">
+			<li><a href="http://local.tcpalm.com/Stuart+FL/auto+dealers.zq.html" title="Stuart Auto Dealers">Auto Dealers</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/auto+repair.zq.html" title="Stuart Auto Repair">Auto Repair</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/books.zq.html" title="Stuart Books">Books</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/carpet+cleaning.zq.html" title="Stuart Carpet Cleaning">Carpet Cleaning</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/child+care.zq.html" title="Stuart Child Care">Child Care</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/coffee+shops.zq.html" title="Stuart Coffee Shops">Coffee Shops</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/dentists.zq.html" title="Stuart Dentists">Dentists</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/doctors.zq.html" title="Stuart Doctors">Doctors</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/flowers.zq.html" title="Stuart Florists">Florists</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/furniture.zq.html" title="Stuart Furniture">Furniture</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/golf+courses.zq.html" title="Stuart Golf Courses">Golf Courses</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/gyms.zq.html" title="Stuart Gyms">Gyms</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/beauty+salons.zq.html" title="Stuart Hair Salons">Hair Salons</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/hotels.zq.html" title="Stuart Hotels">Hotels</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/insurance.zq.html" title="Stuart Insurance">Insurance</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/jewelry.zq.html" title="Stuart Jewelry">Jewelry</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/lawn+service.zq.html" title="Stuart Lawn Services">Lawn Services</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/locksmiths.zq.html" title="Stuart Locksmiths">Locksmiths</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/movers.zq.html" title="Stuart Movers">Movers</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/pizza.zq.html" title="Stuart Pizza">Pizza</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/plumbers.zq.html" title="Stuart Plumbibg">Plumbing</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/realtors.zq.html" title="Stuart Realtors">Realtors</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/remodeling+contractors.zq.html" title="Stuart Remodeling">Remodeling</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/restaurants.zq.html" title="Stuart Restaurants">Restaurants</a></li>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/storage.zq.html" title="Stuart Storage">Storage</a>
+			<li><a href="http://local.tcpalm.com/Stuart+FL/veterinarians.zq.html" title="Stuart Veterinarians">Veterinarians</a></li>
+		</ul>
+		
+		<div class="sidebar_more_link">
+			
+			<div class="sidebar_description">Powered by <a href="http://www.local.com/" title="Powered by Local.com">Local.com</a></div>
+			
+			<a title="Local.com Full Directory" href="http://local.tcpalm.com/Stuart+FL.z.html">Full Directory &raquo;</a>
+			
+		</div>
+		
+	</div><!-- #sidebar_business_directory_links -->
+	
+</div><!-- end #sidebar_business_directory -->
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+				
+			</div> <!-- end #secondary_content -->
+		
+		
+
+		</div><!-- end #content_wrapper -->
+		
+		
+		
+		
+	<div id="content_match_wrapper">
+		<div id="content_match">
+			<!-- yahoo content match --><script type="text/javascript" language="JavaScript">
+                                                 ctxt_ad_interface = 'http://cm.npc-scripps.overture.com/js_1_0/';
+                                                 ctxt_ad_width = 728 ;
+                                                 ctxt_ad_height = 90;
+                                                 ctxt_ad_source = 'npc_scripps_tcpalm_t1_ctxt';
+                                                 ctxt_ad_config = '7894763060';
+                                                 ctxt_ad_id = 'education';
+                                                 ctxt_ad_type = 'education';
+                                                 ctxt_ad_url = window.location.href ; 
+                                                 ctxt_css_url = 'http://media.scrippsnewspapers.com/yahoo/yahoo_cm.css' ; 
+                                                 </script>
+                                                 <script type="text/javascript" language="JavaScript" src="http://cm.npc-scripps.overture.com/partner/js/ypn.js"></script>
+<!-- /yahoo content match -->
+		</div> <!-- end #content_match -->
+	</div> <!-- end #content_match_wrapper -->
+
+
+		
+		
+			
+			
+				
+				
+				
+			
+		
+		
+		
+	
+
+
+
+	
+	
+	
+	<div id="skybox_wrapper" class="skybox_wrapper_interior">
+		<div id="skybox_title" class="clear">
+			<h3>Features</h3>
+			<div id="skybox_controls">
+				<ul class="carousel_pagination"></ul>
+			</div> <!-- end #skybox_controls -->
+		</div> <!-- end #skybox_title -->
+
+		<ul id="skybox_carousel" class="carousel">
+			
+			
+				<li id="carousel_page1">
+					
+					<div class="skybox">
+						<a href="http://blogs.tcpalm.com/off_the_beat_will_greenlee_blog/" title=""><img src="http://media.tcpalm.com/media/img/photos/2010/01/25/skyboxWillGreenleeBlog.jpg" alt="" width="120" height="107" /></a>
+
+<h4><a href="http://blogs.tcpalm.com/off_the_beat_will_greenlee_blog/">Off the Beat</a></h4>
+
+<p><a href="http://blogs.tcpalm.com/off_the_beat_will_greenlee_blog/">Apparent ire over 'codpiece' comment prefaces battery in Jensen Beach.</a>
+
+</p>
+					</div> <!-- end .skybox -->
+					
+					<div class="skybox">
+						<a href="http://www.tcpalm.com/news/2011/apr/20/legislators-facing-tough-compromises-that-could/"><img src="http://web.naplesnews.com/media/skybox/bucket-statelegis030411.jpg" alt="" width="120" height="107" /></a>
+
+<h4><a href="http://www.tcpalm.com/news/2011/apr/20/legislators-facing-tough-compromises-that-could/">State Legislature</a></h4>
+
+<p><a href="http://www.tcpalm.com/news/2011/apr/20/legislators-facing-tough-compromises-that-could/">Tough compromises ahead that could affect Treasure Coast residents.</a>
+					</div> <!-- end .skybox -->
+					
+					<div class="skybox">
+						<a href="http://www.tcpalm.com/photos/galleries/sets/day-photos/"><img src="http://media.tcpalm.com/media/img/photos/2011/04/23/ears.jpg" width="120" height="107" ></a>
+
+<h4><a href="http://www.tcpalm.com/photos/galleries/sets/day-photos/"><b>Day in Photos</b></a></h4>
+
+<p><a href="http://www.tcpalm.com/photos/galleries/sets/day-photos/">The best images from the Treasure Coast and beyond.</a></p> 
+					</div> <!-- end .skybox -->
+					
+				</li><!-- End carousel_page1 -->
+			
+				<li id="carousel_page2">
+					
+					<div class="skybox">
+						<a href="http://www.tcpalm.com/news/2011/apr/22/masked-four-legged-bandit-sought-in-indian-river/"><img src="http://media.tcpalm.com/media/img/photos/2011/04/22/raccoon_t120.jpg" alt="" width="120" height="107" /></a>
+
+<h4><a href="http://www.tcpalm.com/news/2011/apr/22/masked-four-legged-bandit-sought-in-indian-river/">4-legged bandit</a></h4>
+
+<p><a href="http://www.tcpalm.com/news/2011/apr/22/masked-four-legged-bandit-sought-in-indian-river/">Raccoon suspected in purse thefts at Sandridge Golf Club in Indian River County.</a></p>
+					</div> <!-- end .skybox -->
+					
+					<div class="skybox">
+						<a href="http://blogs.tcpalm.com/martin-county-politics/2011/04/martin-county-commissioners-will-be.html"><img src="http://media.tcpalm.com/media/img/photos/2010/06/10/Jim_Turner.jpg" alt="" title="" width="120" height="107" /></a>
+
+<h4><a href="http://blogs.tcpalm.com/martin-county-politics/2011/04/martin-county-commissioners-will-be.html" title=""><b>Martin County Politics</b></a></h4>
+
+<p><a href="http://blogs.tcpalm.com/martin-county-politics/2011/04/martin-county-commissioners-will-be.html" title="">County asked to oppose golf in Jonathan Dickinson park.
+</a></p>
+					</div> <!-- end .skybox -->
+					
+					<div class="skybox">
+						<a href="http://www.tcpalm.com/news/2011/apr/21/easter-house-raffle-winner-has-choice-of-palm-or/"><img src="http://media.tcpalm.com/media/img/photos/2011/04/21/easter_t120.JPG" alt="" width="120" height="107" /></a>
+
+<h4><a href="http://www.tcpalm.com/news/2011/apr/21/easter-house-raffle-winner-has-choice-of-palm-or/">Easter House</a></h4>
+
+<p><a href="http://www.tcpalm.com/news/2011/apr/21/easter-house-raffle-winner-has-choice-of-palm-or/">Charity raffle winner has choice of Palm City home or $150,000 in cash.</a></p>
+					</div> <!-- end .skybox -->
+					
+				</li><!-- End carousel_page2 -->
+			
+				<li id="carousel_page3">
+					
+					<div class="skybox">
+						<a href="http://www.tcpalm.com/news/2011/mar/30/easter-events-on-the-treasure-coast/"><img src="http://media.tcpalm.com/media/img/photos/2010/03/15/egghunt__t120.jpg" alt="" width="120" height="107" /></a>
+
+<h4><a href="http://www.tcpalm.com/news/2011/mar/30/easter-events-on-the-treasure-coast/">Easter Events</a></h4>
+
+<p><a href="http://www.tcpalm.com/news/2011/mar/30/easter-events-on-the-treasure-coast/">From egg hunts to church services, find out what's happening for the holiday.</a></p>
+					</div> <!-- end .skybox -->
+					
+					<div class="skybox">
+						<a href="http://blogs.tcpalm.com/russ_lemmon/2011/04/todays-column-about-importance-of.html"><img src="http://media.tcpalm.com/media/img/photos/2009/10/01/russ_lemmon_t120.jpg" alt="" width="120" height="107" /></a>
+
+<h4><a href="http://blogs.tcpalm.com/russ_lemmon/2011/04/todays-column-about-importance-of.html"><b>Russ Lemmon</b></a></h4>
+
+<p><a href="http://blogs.tcpalm.com/russ_lemmon/2011/04/todays-column-about-importance-of.html">Determining the value of the arts in elementary schools.</a></p>
+					</div> <!-- end .skybox -->
+					
+					<div class="skybox">
+						<a href="http://blogs.tcpalm.com/treasure_coast_business_blog/2011/04/florida-attorney-general-pam-bondi-objects-to-principal-reductions.html"><img src="http://media.tcpalm.com/media/img/photos/2010/03/25/biz_buzz_logo_t120.jpg" alt="" width="120" height="107" /></a>
+
+<h4><a href="http://blogs.tcpalm.com/treasure_coast_business_blog/2011/04/florida-attorney-general-pam-bondi-objects-to-principal-reductions.html">'Moral Hazard'</a></h4>
+
+<p><a href="http://blogs.tcpalm.com/treasure_coast_business_blog/2011/04/florida-attorney-general-pam-bondi-objects-to-principal-reductions.html">Florida Attorney General Pam Bondi objects to principal reductions.</a></p>
+					</div> <!-- end .skybox -->
+					
+				</li><!-- End carousel_page3 -->
+			
+				<li id="carousel_page4">
+					
+					<div class="skybox">
+						<a href="http://www.tcpalm.com/news/2011/apr/20/florida-museums-expect-big-hit-upcoming-budget/"><img src="http://media.tcpalm.com/media/img/photos/2011/04/20/2money_t120.JPG
+" alt="" width="120" height="107" /></a>
+
+<h4><a href="http://www.tcpalm.com/news/2011/apr/20/florida-museums-expect-big-hit-upcoming-budget/">Museum Misery</a></h4>
+
+<p><a href="http://www.tcpalm.com/news/2011/apr/20/florida-museums-expect-big-hit-upcoming-budget/">Florida museums face funding cuts as lawmakers struggle with budget.</a></p>
+					</div> <!-- end .skybox -->
+					
+					<div class="skybox">
+						<a href="http://www.tcpalm.com/data/restaurant-inspections/"><img src="http://media.tcpalm.com/media/img/photos/2009/11/09/kitchen_t120.jpg" alt="" title="" width="120" height="107" /></a>
+
+<h4><a href="http://www.tcpalm.com/data/restaurant-inspections/" title=""><b>Dining Inspections</b></a></h4>
+
+<p><a href="http://www.tcpalm.com/data/restaurant-inspections/" title="">Find out how Treasure Coast restaurants fared on their official state inspections.</a></p> 
+					</div> <!-- end .skybox -->
+					
+					<div class="skybox">
+						<a href="http://www.tcpalm.com/forms/PSLAnniversary/"><img src="http://media.tcpalm.com/media/img/photos/2010/06/30/fireworks_t120.jpg" title="" width="120" height="107" /></a>
+
+<h4><a href="http://www.tcpalm.com/forms/PSLAnniversary/">PSL turning 50</a></h4>
+
+<p><a href="http://www.tcpalm.com/forms/PSLAnniversary/">We want to hear your memories about Port St. Lucie and see your photos or videos.</a></p>
+					</div> <!-- end .skybox -->
+					
+				</li><!-- End carousel_page4 -->
+			
+	
+		</ul> <!-- end #skybox_carousel -->
+
+	</div> <!-- end #skybox_wrapper -->
+
+
+		
+		<div id="footer" class="clear">
+			
+			<div id="cellar">
+				<dl>
+	<dt>On the Web:</dt>
+	<dd><a href="http://www.facebook.com/tcpalm" title="Facebook">Facebook</a></dd>
+	<dd><a href="http://twitter.com/tcpalm" title="Twitter">Twitter</a></dd>
+	<dd><a href="/data/" title="Databases">Databases</a></dd>
+	<dd><a href="/news/news/local/special-coverage/" title="Special Coverage">Special Coverage</a></dd>
+    <dd><a href="http://prepzone.tcpalm.com" title="PrepZone">PrepZone</a></dd>
+    <dd><a target="_blank" href="http://nl.newsbank.com/sites/tcnp/" title="Story Archive">Story Archive</a></dd>
+    <dd><a href="http://jobsearch.local-jobs.monster.com/Search.aspx?wt.mc_n=hjnpsearch&ch=stuartnews&q=&where=Stuart,FL&re=130&cy=us&brd=1
+				" title="LawInfo">Find Stuart Jobs</a></dd>
+    <dd><a target="_blank" href="http://legalnotice.org/pl/tcpalm/landing1.aspx" title="Story Archive">Public Notices</a></dd>
+</dl>
+
+<dl>
+	<dt>Your Stuff:</dt>
+	<dd><a href="/submit-your-stuff/" title="Submit">Submit</a></dd>
+	<dd><a href="/events/submit/" title="Events">Events</a></dd>
+	<dd><a href="http://yourmedia.tcpalm.com/" title="Share Your Photos">Share Your Photos</a></dd>
+	<dd><a href="/forms/letterstotheeditor/" title="Letters to the Editor">Letters to the Editor</a></dd>
+    <dd><a href="/news/yournews/" title="YourNews">YourNews</a></dd>
+</dl>
+
+<dl>
+	<dt>Special Features:</dt>
+    <dd><a href="http://display.tcpalm.com/" title="Shopping">Shopping</a></dd>
+    <dd><a href="http://www.tcpalmexperts.com/" title="Ask the Experts">Ask the Experts</a></dd>
+	<dd><a href="/news/luminaries/" title="Luminaries">Luminaries</a></dd>
+	<dd><a href="/news/news/local/sebastian-sun/" title="Sebastian Sun">Sebastian Sun</a></dd>
+	<dd><a href="/news/news/local/north-palm-beach-county/" title="Jupiter Courier">Jupiter Courier</a></dd>
+    <dd><a href="/contests/" title="Contests">Contests</a></dd>
+    <dd><a href="http://print.coupons.com/Couponweb/Offers.aspx?pid=15094&zid=yr88&nid=10&mod=loc" title="Coupons">Coupons</a></dd>
+	<dd><a href="http://www.tcpalmaskthecandidates.com/" title="Ask the Candidates">Ask the Candidates</a></dd>
+</dl>
+
+<dl>
+	<dt>Partners:</dt>
+	<dd><a href="http://www.wptv.com/default.aspx" title="WPTV NewsChannel 5">WPTV NewsChannel 5</a></dd>
+	<dd><a href="http://www.sun-sentinel.com/" title="Sun Sentinel">Sun Sentinel</a></dd>
+	<dd><a href="http://www.floridatoday.com/" title="Florida Today">Florida Today</a></dd>
+	<dd><a href="http://tcpalm.lawinfo.com/ " title="LawInfo">LawInfo</a></dd>
+  
+</dl>                     
+
+<dl id="business_directory">
+	<dt id="business_directory_prompt">Business Directory:</dt>
+	<dd id="business_directory_links">
+		<dl>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/apartments.zq.html">Stuart Apartments</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/attorneys.zq.html">Stuart Attorneys</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/auto+dealers.zq.html">Stuart Auto Dealers</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/auto+parts.zq.html">Stuart Auto Parts</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/auto+repair.zq.html">Stuart Auto Repair</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/beauty+salons.zq.html">Stuart Beauty Salons</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/car+rental.zq.html">Stuart Car Rental</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/dentists.zq.html">Stuart Dentists</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/doctors.zq.html">Stuart Doctors</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/flowers.zq.html">Stuart Flowers</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/hotels.zq.html">Stuart Hotels</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/insurance.zq.html">Stuart Insurance</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/loans.zq.html">Stuart Loans</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/mortgages.zq.html">Stuart Mortgages</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/movers.zq.html">Stuart Movers</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/pizza.zq.html">Stuart Pizza</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/realtors.zq.html">Stuart Realtors</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/restaurants.zq.html">Stuart Restaurants</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/storage.zq.html">Stuart Storage</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/tax+preparation.zq.html">Stuart Tax Preparation</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl/travel.zq.html">Stuart Travel</a></dd>
+			<dd><a href="http://local.tcpalm.com/allads.q.html">Featured</a></dd>
+			<dd><a href="http://local.tcpalm.com/stuart+fl.z.html">More...</a></dd>
+		</dl>
+	</dd>
+</dl>
+			</div> <!-- end #cellar -->
+			
+			<div id="site_tools">
+				<h2 style="color:#C2C2C2; border-bottom:1px solid; padding-bottom:5px;"><a href="http://local.tcpalm.com" style="color:#C2C2C2;" title="Stuart Business Directory">Business Directory</a></h2>
+
+				<FORM STYLE='margin:0;color:#C2C2C2;background:#000;border:0;padding:12px 0;' TARGET=_top METHOD=GET ACTION="http://local.tcpalm.com/search.pg" class="submit_form default_form">
+
+
+				<label for="id_business"><span class="submit_label">Business: <span class="formtip">e.g. salon</span></span>
+					 <input name="q" style="width: 160px;color:#666666;" maxlength="2048" value="" type="text" class="CatTxtBxMojo">
+				</label>
+				
+				<label for="id_business"><span class="submit_label">Location: <span class="formtip">e.g. Stuart, FL</span></span>
+					<input name="z" style="width: 160px;color:#666666;" maxlength="2048" value="Stuart, FL" type="TEXT" class="CatTxtBxMojo">
+				</label>
+			<div class="CatBtnSubmitMojo">
+<INPUT TYPE=SUBMIT STYLE='font-size:8pt;' VALUE=Search>            </div>
+			<br />
+			<div style="font-size:11px;">
+				<div>Powered by <a style="text-decoration: none;" href="http://www.local.com">Local.com</a></div>
+			</div>
+		</form>
+			</div> <!-- end #site_tools -->
+			
+		</div> <!-- end #footer -->
+			
+		<div id="copyright" class="clear">
+			<img src="http://media.tcpalm.com/corp_assets/asphalt/img/sing_logo.gif" alt="Scripps Interactive Newspaper Group" /> 
+			Scripps Interactive Newspapers Group<br/>
+			2011 The E.W. Scripps Co.<br/>
+			<span class="partners"><a href="/local-news/partners/" title="More news from our local partners">More news from our local partners &raquo;</a></span>
+			<a href="/privacy/" title="Privacy Policy">Privacy Policy</a> | <a href="/privacy/#user" title="User Agreement">User Agreement</a> | <a href="/privacy/#about_our_ads" title="About Our Ads">About Our Ads</a>
+			
+
+			
+
+		</div> <!-- end #copyright -->
+		
+	</div> <!-- end #page_wrapper -->
+	
+	
+		<!-- Javascript -->
+		<script src="http://media.tcpalm.com/corp_assets/asphalt/js/jquery-1.4.1.min.js" type="text/javascript"></script>
+		<script src="http://media.tcpalm.com/corp_assets/asphalt/js/ui/jquery-ui-1.7.1.core-tabs.js" type="text/javascript"></script>
+		
+		
+			<script src="http://media.tcpalm.com/corp_assets/asphalt/js/plugins.scriptalizer.js" type="text/javascript"></script>
+		
+	
+		<!--[if lte IE 6]>
+			<script src="http://media.tcpalm.com/corp_assets/asphalt/js/supersleight-min.js" type="text/javascript"></script>
+		<![endif]-->
+		
+		
+		<script src="http://media.tcpalm.com/corp_assets/asphalt/js/jSING/core/jSING.core.yui.2011-02-03_16-08-12.js" type="text/javascript"></script>
+		<script src="http://media.tcpalm.com/corp_assets/asphalt/js/jSING/news/jSING.news.yui.2011-01-27_11-46-10.js" type="text/javascript"></script>
+
+			<script src="http://media.tcpalm.com/corp_assets/asphalt/js/jSING.video-html5.yui.js" type="text/javascript"></script>
+		
+		
+		<!-- rpx_login_global -->
+	    <script type="text/javascript">
+	      var rpxJsHost = (("https:" == document.location.protocol) ? "https://" : "http://static.");
+	      document.write(unescape("%3Cscript src='" + rpxJsHost +
+	    "rpxnow.com/js/lib/rpx.js' type='text/javascript'%3E%3C/script%3E"));
+	    </script>
+
+	    <script type="text/javascript">
+	      RPXNOW.overlay = true;
+	      RPXNOW.language_preference = 'en';
+	    </script>
+	
+
+		<!-- facebook like/recommended script -->
+		<div id="fb-root"></div>
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({appId: '333982304914', status: true, cookie: true,
+		             xfbml: true});
+		  };
+		  (function() {
+		    var e = document.createElement('script'); e.async = true;
+		    e.src = document.location.protocol +
+		      '//connect.facebook.net/en_US/all.js';
+		    document.getElementById('fb-root').appendChild(e);
+		  }());
+		</script>
+
+		<script type="text/javascript">
+			$('#nav li').hover(
+				function () {
+					//show its submenu
+					$('ul', this).slideDown(100);
+
+				}, 
+				function () {
+					//hide its submenu
+					$('ul', this).slideUp(100);			
+				}
+			);
+		</script>
+	
+	
+	<script type="text/javascript">
+		/* Javascript for initializing functions when the page loads */
+		
+	
+	jSING.fonts.init();
+	jSING.apptap.registerAppTapEvent("ul.popmenu a.digg", "Event13", false);
+	jSING.apptap.registerAppTapEvent("ul.popmenu a.facebook", "Event14", false);
+	jSING.apptap.registerAppTapEvent("ul.popmenu a.linkedin", "Event15", false);
+	jSING.apptap.registerAppTapEvent("ul.popmenu a.myspace", "Event16", false);
+
+		
+	</script>
+	
+	
+	<script type="text/javascript" src="http://media.tcpalm.com/corp_assets/asphalt/js/swfobject-2.2.js"></script>
+	<script type="text/javascript">jSING.videoPlayer.embedPlayers();</script>
+</body>
+</html>
+

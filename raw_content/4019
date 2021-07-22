@@ -1,0 +1,943 @@
+
+
+
+ 
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en-au" xml:lang="en-au" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>First Aid quiz - Quiz - Quizzes &amp; Tools - Health &amp; Wellbeing</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"  />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="title" content="First Aid quiz - Quizzes - Quizzes &amp; Tools - Health &amp; Wellbeing" />
+<meta name="description" content="If you were to find yourself in an emergency situation, would you know what to do? Test your first aid knowledge on our 10 emergency scenarios." />
+<meta name="keywords" content="ABC Health, ABC Health &amp; Wellbeing, Health &amp; Wellbeing, Healthy Living, Quizzes &amp; Tools, Quiz, Page Title, " />
+<meta name="author" content="Australian Broadcasting Corporation" />
+<meta name="date" content="03/09/2009" />
+<meta name="ABC-DateReversed" content="20090903" />
+<meta name="copyright" content="&copy;2012 Australian Broadcasting Corporation" />
+<link rel="Copyright" href="http://abc.net.au/common/copyrigh.htm" title="Copyright" />
+<link rel="Privacy Policy" href="http://abc.net.au/privacy.htm" title="Privacy Policy" />
+<link rel="Conditions of Use" href="http://abc.net.au/conditions.htm" title="Conditions of Use" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="/health/resources/css/main.css" media="screen, projection" />
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="/health/resources/css/screen_ie.css" media="screen, projection" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="/health/resources/css/print.css" media="print" />
+<style type="text/css">
+.qheader{
+font:bold 14px Arial;
+}
+
+.qselections{
+font:normal 13px Arial;
+}
+
+#q1Tlyr, #q1lyr, #q1Alyr, #q2Tlyr, #q2lyr, #q2Alyr, #q3Tlyr, #q3lyr, #q3Alyr, #q4Tlyr, #q4lyr, #q4Alyr, #q5Tlyr, #q5lyr, #q5Alyr, #q6Tlyr, #q6lyr, #q6Alyr, #q7Tlyr, #q7lyr, #q7Alyr, #q8Tlyr, #q8lyr, #q8Alyr, #q9Tlyr, #q9lyr, #q9Alyr, #q10Tlyr, #q10lyr, #q10Alyr, #results {display:none}
+
+table.question {border:none !important}
+
+a.answerButton {float:left; width:140px}
+a.nextButton {float: right; width:125px}
+
+input.QA {font-weight:bold; border:none; width:120px; color:#666}
+input.On {color:#ff0000}
+input.Off {color:#000}
+.story h4 { font-weight: normal;}
+
+</style>
+<!--Add a copy of jQuery for generic JavaScript functionality-->
+<script src="/health/resources/js/jquery.js" type="text/javascript"></script>
+<!-- correct answers need to be edited in the javascipt file below ie, correct choices: -->
+<script src="2671625.js" type="text/javascript"></script>
+<script type="text/javascript">
+/***********************************************
+* JavaScriptKit.com Multiple Choice Quiz Script (http://www.javascriptkit.com)
+* Copyright 2003 JavaScript Kit- http://www.javascriptkit.com
+* This notice and footnote must stay intact for use
+* Visit JavaScript Kit (http://www.javascriptkit.com/) for full source code
+***********************************************/
+var actualchoices=new Array()
+document.cookie="ready=yes"
+
+<!--jQuery code to toggle between short and long answers-->
+$(document).ready(function(){
+
+	var showmoreinfo = "Show full answer";
+	var showlessinfo = "Show short answer";
+	var morelink = '<p style="text-align:left;"><a href="#" class="toggle" style="font-weight:bold;">' + showmoreinfo + '</a></p>';
+	
+	$('div.long').each( function(i) {
+		$(this).after(morelink);
+		$(this).hide();
+	});
+	
+	$('a.toggle').click(function() {
+		$(this).parent().prev('.long').toggle();
+		var showinfo = ($(this).text() == showmoreinfo) ? showlessinfo : showmoreinfo;
+		$(this).text(showinfo);
+		return false;
+	});
+	
+});
+<!--End jQuery code-->
+// end hiding javascript -->
+</script>
+
+
+<!--[if IE 6]>
+<style type="text/css" media="screen">
+#artShareLinks .tabContent {
+ 	width:98%; height:100px; 
+	margin:0; border:none;
+	background-image:url(/science/css/img/bg_artBookmarks.gif);
+	background-position:208px top; background-repeat:no-repeat;
+}
+#comments li ul {padding-left:0.5em;}
+#columnRight {clear:none;}
+.printEmail {position:relative; display:block!important;}
+</style><![endif]-->
+
+<!--[if IE 7]><style type="text/css">
+#artShareLinks .tabContent {
+	clear:both!important;
+	margin-top:0; border:none;
+	background-image:url(/science/css/img/bg_artBookmarks.gif);
+	background-position:208px top; background-repeat:no-repeat;
+}
+</style><![endif]-->
+
+
+</head>
+
+<body class="quizzes" onload="document.myquiz.reset(); showQA('Q1')">
+<a name="topOfPage"></a>
+
+<p id="skipTo">Skip to: <a href="#mainNavigation">Main Navigation</a> | <a href="#mainContent">Main Content</a></p>
+
+
+<!--noindex-->
+	<!-- ABC nav: Global Nav - XHTML, no imported styles [/includes/abcglobalnav_xhtml.inc]-->
+	<div id="abcNav">
+		<div id="abcNavWrapper">
+			<form id="abcNavSearch" method="get" action="http://search.abc.net.au/search/search.cgi">
+				<input type="hidden" name="form" value="simple" />
+				<input type="hidden" name="num_ranks" value="20" />
+				<input type="hidden" name="collection" value="abcall" />
+				<label for="abcNavQuery">Search:</label>
+				<input type="text" id="abcNavQuery" name="query" value="Keywords" size="20" maxlength="30" />
+				<input type="submit" id="abcNavSubmit" value=" ABC Search " title="ABC Search" />
+			</form>
+			<ul id="abcNavMenu">
+				<li id="abcNavHome"><a href="http://www.abc.net.au/" title="ABC Home"><img src="http://www.abc.net.au/res/abc/logos/nav_logo.png" alt="ABC Home" width="61" height="16" /></a></li>
+				<li id="abcNavRadio"><a href="http://www.abc.net.au/radio/">Radio</a></li>
+				<li id="abcNavTV"><a href="http://www.abc.net.au/tv/">TV</a></li>
+				<li id="abcNavShop"><a href="http://shop.abc.net.au/">Shop</a></li>
+				<li id="abcNavNews"><a href="http://www.abc.net.au/news/">News</a></li>
+				<li id="abcNavSport"><a href="http://www.abc.net.au/sport/">Sport</a></li>
+				<li id="abcNavLocal"><a href="http://www.abc.net.au/local/">Local</a></li>
+				<li id="abcNavKids"><a href="http://www.abc.net.au/children/">Children</a></li>
+				<li id="abcNavScience"><a href="http://www.abc.net.au/science/">Science</a></li>
+				<li id="abcNavEnvironment"><a href="http://www.abc.net.au/environment/">Environment</a></li>
+				<li id="abcNavTopics"><a href="http://www.abc.net.au/topics.htm">more&nbsp;Topics</a></li>
+				<li id="abcNavHelp"><a href="http://www.abc.net.au/help/">help</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="http://www.abc.net.au/includes/scripts/global.js"></script>
+	<noscript>
+		<img alt="" style="border:0;" id="DCSIMG" width="1" height="1" src="http://statse.webtrendslive.com/dcsg85fae000004n0vfjpj8oa_9m4q/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" />
+	</noscript>
+
+	<!-- START Nielsen Online SiteCensus V6.0 -->
+	<!-- COPYRIGHT 2010 Nielsen Online -->
+	<script type="text/javascript" src="//secure-au.imrworldwide.com/v60.js"></script>
+	<script type="text/javascript">
+		var pvar = { cid: "abc-aust", content: "0", server: "secure-au" };
+		var trac = nol_t(pvar);
+		trac.record().post();
+	</script>
+	<noscript>
+		<div>
+			<img src="//secure-au.imrworldwide.com/cgi-bin/m?ci=abc-aust&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt="" />
+		</div>
+	</noscript>
+	<!-- END Nielsen Online SiteCensus V6.0 -->
+
+	<!-- end ABC nav -->
+<!--endnoindex-->
+
+
+
+<div id="header">
+	<div id="headerInner"><h1><a href="/health/default.htm" title="ABC Health &amp; Wellbeing"><span class="invisible">ABC Health &amp; Wellbeing</span></a></h1></div>
+</div>
+
+<div id="nav">
+	<div id="navInner">
+		<h3 class="invisible">Main Navigation:</h3>
+		<ul id="mainNavigation">
+		<li id="navHome"><a href="/health/default.htm">Home</a></li>
+		<li id="navNews"><a href="/health/healthnews/">Health&nbsp;News</a></li>
+		<li id="navFeatures"><a href="/health/features/">Features</a></li>
+		<li id="navLibrary"><a href="/health/library/">A-Z&nbsp;Library</a></li>
+		<!--<li id="navTalkingHealth"><a href="/--><!-- #include virtual="../../resources/includes/path.inc"--><!--/talkinghealth/">Talking Health</a></li>-->
+		<li id="navYourStories"><a href="/health/yourstories/">Your Stories</a></li>
+		<li id="navFactBuster"><a href="/health/talkinghealth/factbuster/">Fact Buster</a></li>
+		<li id="navQuizzes"><a href="/health/quizzestools/">Quizzes&nbsp;&amp;&nbsp;Tools</a></li>
+		<li id="navTvRadioVideo"><a href="/health/tvradio/">Audio &amp; Video</a></li>
+		<li id="navSubscribe"><a href="/health/subscribe/">Subscribe</a></li>
+        <li id="navDiary"><a href="http://www2b.abc.net.au/EventCentral/View/Search.aspx?p=60&amp;pm=2&amp;c=1005">Events</a></li>
+		<!--<li id="navAboutUs"><a href="/--><!-- #include virtual="../../resources/includes/path.inc"--><!--/aboutus/">About Us</a></li>-->
+		<!--<li id="navContact"><a href="/--><!-- #include virtual="../../resources/includes/path.inc"--><!--/contact/">Contact</a></li>-->
+		</ul>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<div id="contentContainer">
+	<div id="columnLeft">
+		<div id="columnLeftSearch">
+	<form action="http://search.abc.net.au/search/search.cgi?collection=health" method="get" name="simple">							
+	<input name="collection" value="health" type="hidden" />									
+	<input name="form" value="simple" type="hidden" />									
+	<input name="num_ranks" value="10" type="hidden" />
+	<!--<input name="meta_v" value="health/" type="hidden" />-->
+	<input type="hidden" name="scope" value="abc.net.au/health" />
+	<label class="invisible" for="columnLeftSearchInputField" title="Search Health &amp; Wellbeing">Search Health &amp; Wellbeing</label>
+	<input id="columnLeftSearchInputField" name="query" type="text" />
+	<input id="columnLeftSearchButton" value="Search Health &amp; Wellbeing" title="Search Health &amp; Wellbeing" type="submit" />
+	</form>
+	
+	<p>or try the <a href="/health/library/">A-Z Library</a></p>
+</div>
+
+<div class="boxTop"></div>
+<div class="box">
+	<div id="boxHealthyLiving">
+		<h3>Health Topics</h3>
+		
+		<ul>
+		<li id="columnLeftDietRecipies"><a href="/health/healthyliving/dietrecipes/default.htm">Diet &amp; Recipes</a></li>
+		<li id="columnLeftFitness"><a href="/health/healthyliving/fitness/default.htm">Fitness</a></li>
+		<li id="columnLeftMindMood"><a href="/health/healthyliving/mindmood/default.htm">Mind &amp; Mood</a></li>
+		<li id="columnLeftSexRelationships"><a href="/health/healthyliving/sexrelationships/default.htm">Sex &amp; Relationships</a></li>
+		<li id="columnLeftWorkHealth"><a href="/health/healthyliving/workhealth/default.htm">Workplace Health</a></li>
+		<li id="columnLeftNaturalHealth"><a href="/health/healthyliving/naturalhealth/default.htm">Natural Health</a></li>
+		<li id="columnLeftBirth"><a href="/health/healthyliving/birth/default.htm">Pregnancy &amp; Birth</a></li>
+		<li id="columnLeftDrugsAlcohol"><a href="/health/healthyliving/drugsalcohol/default.htm">Drugs &amp; Alcohol</a></li>
+		<li id="columnLeftHealthConsumer"><a href="/health/healthyliving/healthconsumer/default.htm">Health Consumer</a></li>
+		</ul>
+		
+		<h3>Your Health</h3>
+		
+		<ul>
+		<li id="columnLeftKidsHealth"><a href="/health/healthyliving/yourhealth/kidshealth/default.htm">Kids' Health</a></li>
+		<li id="columnLeftWomensHealth"><a href="/health/healthyliving/yourhealth/womenshealth/default.htm">Women's Health</a></li>
+		<li id="columnLeftMensHealth"><a href="/health/healthyliving/yourhealth/menshealth/default.htm">Men's Health</a></li>
+		<li id="columnLeftOver50s"><a href="/health/healthyliving/yourhealth/over50s/default.htm">Over 50s</a></li>
+		<li id="columnLeftIndigenousHealth"><a href="/health/healthyliving/yourhealth/indigenoushealth/default.htm">Indigenous Health</a></li>
+		<li id="columnLeftRuralRegionalHealth"><a href="/health/healthyliving/yourhealth/ruralregionalhealth/default.htm">Rural &amp; Regional Health</a></li>
+		</ul>
+	</div>
+</div>
+<div class="boxBottom"></div>
+
+<div class="boxTop"></div>
+<div class="box">
+	<div id="boxConditions">
+		<h3><a href="/health/factfiles/">Fact files</a></h3>
+		
+		<ul>
+		<li id="columnLeft1828304"><a href="/health/library/stories/2003/04/24/1828304.htm">ADHD</a></li>
+		<li id="columnLeft2422544"><a href="/health/library/stories/2008/11/24/2422544.htm">Allergies</a></li>
+		<li id="columnLeft1829495"><a href="/health/library/stories/2006/05/25/1829495.htm">Alzheimer's &amp; Dementia</a></li>
+		<li id="columnLeft1828950"><a href="/health/library/stories/2005/06/07/1828950.htm">Anxiety Disorders</a></li>
+		<li id="columnLeftARTHRITIS"><a href="/health/conditions/arthritis/default.htm">Arthritis</a></li>
+		<li id="columnLeftCANCER"><a href="/health/conditions/cancer/default.htm">Cancer</a></li>
+		<li id="columnLeft1923585"><a href="/health/library/stories/2007/06/05/1944066.htm">Depression</a></li>
+		<li id="columnLeft1829403"><a href="/health/library/stories/2002/12/19/1829403.htm">Diabetes</a></li>
+		<li id="columnLeft1831271"><a href="/health/library/stories/2003/02/27/1831271.htm">Heart Disease</a></li>
+		<li id="columnLeft1919840"><a href="/health/library/stories/2007/05/30/1919840.htm">Infertility</a></li>
+		<li id="columnLeft1831345"><a href="/health/library/stories/2004/07/08/1831345.htm">Influenza</a></li>
+		<li id="columnLeft1883771"><a href="/health/library/stories/2007/04/05/1883771.htm">Menopause</a></li>
+		<li id="columnLeft1831468"><a href="/health/library/stories/2004/04/29/1831468.htm">Osteoporosis</a></li>
+		<li id="columnLeft2181149"><a href="/health/library/stories/2008/03/13/2181149.htm">Pregnancy</a></li>
+		</ul>
+		
+		<ul class="more">
+		<li><a href="/health/library/default.htm">More fact files in the A-Z Library</a></li>
+		</ul>
+	</div><!--end:#boxConditions-->
+</div><!--end:box-->
+<div class="boxBottom"></div>
+	</div>
+	<div id="columnCenter"><a id="mainContent" name="mainContent"></a>
+		<div class="dropshadow">
+			<div class="pageheader"></div>
+			<div class="story page">
+				<h2 class="headerG">Quiz</h2>
+				
+				
+<div class="printEmail"><a href="#artShareLinks" onclick="artShareLinks.expandit(1); return true" class="email">Share<span> |</span></a> <a href="javascript:window.print();" class="print">Print</a></div>
+
+
+				
+				<h2 class="headerH">First aid</h2>
+
+				<p class="author">by <a href="/health/aboutus/bio/mcleod_f.htm">Dr Frank McLeod</a></p>
+				<p class="introduction">If you were to find yourself in an emergency, would you know what to do? Test your first aid knowledge on our 10 emergency scenarios.<br />
+				Published 03/09/2009</p>
+				
+				<div id="mainPic">
+					<img src="/health/quizzestools/img/emergency_m1783713.jpg" alt="" /><span class="imgSource"><span class="invisible"><br />[Image source: </span>iStockphoto<span class="invisible">]</span></span>
+				</div>
+			
+			<div class="clear"></div>	
+				
+				<!--Comments on configuring quiz script-->
+				<!--Change the questions below any way you want, but make note of the following:-->
+				<!--1) Perserve the <FORM> tags -->
+				<!--2a) Inside each radio button, use the VALUE attribute to denote each question's choices: "a", "b", "c" etc.-->
+				<!--2b) Inside each radio button, use the NAME attribute to denote which question the button belongs to ("question1", "question2" etc-->
+				<!--3) Script supports 10 questions. Be sure to edit .js file to enter corresponding solutions-->
+					
+				
+				<form method="post" name="myquiz">
+					<div id="q1Tlyr">
+						<h4>1. What should you do if the person next to you suddenly makes a strange sound then falls to the ground unconscious, lying stiffly on their back for a few seconds, before beginning to jerk their arms and legs violently?</h4>
+					</div>	
+					<div id="q1lyr">
+						<table class="question">
+							<tr>
+								<td><input name="question1" value="a" onclick="q1=this.value; answerQ1()" type="radio" /></td>
+								<td><label>a) Put something between their teeth to stop them from biting their tongue</label></td>
+							</tr>
+							<tr>
+								<td><input name="question1" value="b" onclick="q1=this.value; answerQ1()" type="radio" /></td>
+								<td><label>b) Remove any objects they may hurt themselves on and roll them on to their side</label></td>
+							</tr>
+							<tr>
+								<td><input name="question1" value="c" onclick="q1=this.value; answerQ1()" type="radio" /></td>
+								<td><label>c) Restrain their thrashing arms and limbs by holding them down on their back</label></td>
+							</tr>
+							<tr>
+								<td><input name="question1" value="d" onclick="q1=this.value; answerQ1()" type="radio" /></td>
+								<td><label>d) Commence mouth-to-mouth resuscitation</label></td>
+							</tr>
+						</table>
+						<p><a href="#" onClick="showQA('A1');" class="answerButton"><span>Read the answer &raquo;</span></a></p>
+					</div>
+					<div id="q1Alyr">
+					<div class="short">
+						<p>Your Answer: <input name="answer1" value="" type="text" class="QA" /></p>
+						<p><strong>Answer: b) Remove any objects they may hurt themselves on and roll them on to their side.</strong></p>
+						<p><strong>First aid steps:</strong>
+							<ul><li>Remove any objects they may hurt themselves on</li>
+							<li>Roll them onto their side</li>
+							<li>Clear their airway (mouth and throat), making sure they can breathe</li>
+							<li>Place them in the recovery position</li>
+							<li>Call an ambulance if the seizure lasts for more than five minutes, occurs again soon afterwards or if there is no one to look after the person</li></ul>
+					</div>
+						
+					<div class="long">
+					<p>This scenario describes a grand mal or tonic-clonic seizure, which occurs most commonly in people with epilepsy. Most seizures only last a matter of minutes, and are caused by an abnormal burst of electrical activity in the brain. After the warning cry (which may not always occur), the person's trunk and limb muscles become rigid. They may grunt or froth at the mouth, and possibly urinate. The person's face may turn blue, but this will sort itself out as soon as the seizure subsides. After a moment, the person will begin jerking their arms and legs violently (convulsing), for a few seconds to several minutes.</p><p>When someone is having a seizure, the most important thing you can do is ensure they don't breathe in any vomit or injure themselves while they are convulsing. You can protect the person by placing them in the recovery position.</p><p>To place someone in the recovery position, lie the person on their side, tilted slightly forward. Arrange their lower arm (the one on the ground) straight out from the shoulder, and pull the leg on the same side straight down. Bend the other arm at the elbow and place the hand under the cheek. Bend the leg on this side at the hip and knee, which will hold them in position.</p><p>Most epileptics don't need to go to hospital for a seizure. However, ring 000 for an ambulance if the seizure goes on for more than five minutes, is followed by another seizure soon afterwards or there is no-one who can look after the person for a couple of hours. Read our <a href="http://www.abc.net.au/health/library/stories/2008/06/04/2244321.htm" target="_blank">Epilepsy fact file</a> for more information.</p>
+					</div>
+					<p><a href="#" onClick="showQA('Q2');" class="answerButton nextButton"><span>Next question &raquo;</span></a></p>
+					</div>
+					
+					<div id="q2Tlyr"><h4>2. You see a middle-aged man suddenly become distressed. He appears to be choking and points to his throat. He cannot speak and is becoming bluish in colour. What should you do?</h4></div>
+					<div id="q2lyr">
+						<table class="question">
+							<tr>
+								<td><input name="question2" value="a" onclick="q2=this.value; answerQ2()" type="radio" /></td>
+								<td><label>a) Reassure him and offer him a glass of water</label></td>
+							</tr>
+							<tr>
+								<td><input name="question2" value="b" onclick="q2=this.value; answerQ2()" type="radio" /></td>
+								<td><label>b) Stand behind him, wrap your arms around his upper abdomen and with one hand wrapped around the other, pull back strongly and sharply (the Heimlich manoeuvre)</label></td>
+							</tr>
+							<tr>
+								<td><input name="question2" value="c" onclick="q2=this.value; answerQ2()" type="radio" /></td>
+								<td><label>c) Begin mouth-to-mouth resuscitation</label></td>
+							</tr>
+							<tr>
+								<td><input name="question2" value="d" onclick="q2=this.value; answerQ2()" type="radio" /></td>
+								<td><label>d) Ask him to bend forward and give him a series of hard thumps to his upper back</label></td>
+							</tr>
+						</table>
+						<p><a href="#" onClick="showQA('A2');" class="answerButton"><span>Read the answer &raquo;</span></a></p>
+					</div>	
+					
+					<div id="q2Alyr">
+						<div class="short">
+						<p>Your Answer: <input name="answer2" value="" type="text" class="QA" /></p>
+						<p><strong>Answer: d) Ask him to bend forward and give him a series of hard thumps to his upper back.</strong></p>
+						<p><strong>First aid steps:</strong>
+						<ul><li>Bend the person forward and give them a series of firm thumps between the shoulder blades. </li>
+						<li>If the person still can't breathe, keep them bent forward and, supporting their back with one hand, perform strong, sudden chest compressions with the other hand</li>
+						<li>Don't try the 'abdominal thrust' (Heimlich manoeuvre) &#150; it's no longer recommended for this type of emergency</li></ul>
+						</div>
+						<div class="long">
+					<p>If a person inhales a piece of food into their voice box (larynx), they will be unable to speak or breathe in adequately and won't be able to take in enough air to cough and clear their larynx. This situation occurs more commonly in young children and older people with dentures.</p><p>If you are with someone and they start choking you should bend the person forward and give them up to five sharp thumps between their shoulder blades. Don't be gentle &#150; give a good whack using the heel of your hand.</p><p>If the person still can't breathe, keep them bent forward, supporting their back with one hand. Place your other hand over their breast bone and compress their chest five times. Use the same force (but a slower rate) as those used for <a href="" target="_blank">cardiopulmonary resuscitation</a>.<p>If a child one year or older is choking, treat them the same way as an adult but decrease the force of your thumps. If a baby is choking, drape it along your forearm. Your arm should be between the baby's legs and your hand under the upper body. Again, modify the force of your thumps according to the size of the child.</p><p>Don't use the Heimlich manoeuvre &#150; it's no longer recommended by first aid authorities.</p>
+						</div>
+						<p><a href="#" onClick="showQA('Q3');" class="answerButton nextButton"><span>Next question &raquo;</span></a></p>
+					</div>	
+					
+					
+					<div id="q3Tlyr"><h4>3. You are a member of a search party and have found the missing person, who has been lost overnight in the mountains in winter. The person is inadequately dressed and very wet. What should you do?</h4></div>
+					<div id="q3lyr">
+						<table class="question">
+							<tr>
+								<td><input name="question3" value="a" onclick="q3=this.value; answerQ3()" type="radio" /></td>
+								<td><label>a) Light a fire and sit him in front of it with a hot coffee</label></td>
+							</tr>
+							<tr>
+								<td><input name="question3" value="b" onclick="q3=this.value; answerQ3()" type="radio" /></td>
+								<td><label>b) Give him a nip of brandy and then walk him out of the bush</label></td>
+							</tr>
+							<tr>
+								<td><input name="question3" value="c" onclick="q3=this.value; answerQ3()" type="radio" /></td>
+								<td><label>c) Protect him from the wind, remove his wet clothes, dry him and wrap him in blankets and a space blanket as soon as possible</label></td>
+							</tr>
+							<tr>
+								<td><input name="question3" value="d" onclick="q3=this.value; answerQ3()" type="radio" /></td>
+								<td><label>d) Place him on a stretcher and get him to transport as soon as possible</label></td>
+							</tr>
+						</table>
+						<p><a href="#" onClick="showQA('A3');" class="answerButton"><span>Read the answer &raquo;</span></a></p>
+					</div>
+					
+					<div id="q3Alyr">
+						<div class="short">
+						<p>Your Answer: <input name="answer3" value="" type="text" class="QA" /></p>
+						<p><strong>Answer: c) Protect him from the wind, remove his wet clothes, dry him and wrap him in blankets and a space blanket as soon as possible</strong></p>
+						<p><strong>First aid steps:</strong>
+						<ul><li>Move the person out of the wind and rain</li>
+						<li>Remove their wet clothing, dry them, and wrap them in blankets and a space blanket</li>
+						<li>If necessary, use your body to warm them &#150; this can be life saving in severe cases</li>
+						<li>If the person is conscious, give them a warm drink &#150; but not alcohol &#150; and heat packs.</li></ul>
+					</div>
+					
+					<div class="long">
+					<p>In this situation, you should immediately prevent the person from losing any further heat. Remove any wet clothes and dry the person to prevent heat loss by evaporation. Next, wrap the person in blankets &#150; a sleeping bag is ideal for this &#150; to keep their own body heat in. Wrap them in a space blanket if you have one, this will keep the warmed air locked into the blankets and reduce radiant heat loss. You can also use your own body heat to warm the person up &#150; to do this, remove your clothing so that your skin is in direct contact with theirs, then cover both of you with blankets, sleep bags, etc.</p><p>After you have wrapped them up, sit the person in a comfortable position and try to actively warm them up. You can give them a warm drink, but don't give them alcohol &#150; it increases heat loss from the skin. You can apply heat packs and hot water bottles to the neck, armpits and groins (where large blood vessels are close to the surface), but take care not to burn them.</p><p>If someone is severely affected by a drop in their body temperature &#150; called hypothermia &#150; they may have a very slow, even undetectable pulse and be unconscious. These people should be treated with great care. Follow the above steps to prevent further heat loss, then keep them horizontal with minimal movement while you transport them to hospital.<br> 
+							</div>
+						<p><a href="#" onClick="showQA('Q4');" class="answerButton nextButton"><span>Next question &raquo;</span></a></p>
+					</div>
+				
+					
+					<div id="q4Tlyr"><h4>4. Your partner accidentally places their hand on a hot stove top and burns themselves?  What's the best thing to do?</h4></div>
+					<div id="q4lyr">
+						<table class="question">
+							<tr>
+								<td><input name="question4" value="a" onclick="q4=this.value; answerQ4()" type="radio" /></td>
+								<td><label>a) Rub butter onto the burned area</label></td>
+							</tr>
+							<tr>
+								<td><input name="question4" value="b" onclick="q4=this.value; answerQ4()" type="radio" /></td>
+								<td><label>b) Hold the hand under cold running water for up to 20 minutes</label></td>
+							</tr>
+							<tr>
+								<td><input name="question4" value="c" onclick="q4=this.value; answerQ4()" type="radio" /></td>
+								<td><label>c) Immerse the hand in a bucket of iced water</label></td>
+							</tr>
+							<tr>
+								<td><input name="question4" value="d" onclick="q4=this.value; answerQ4()" type="radio" /></td>
+								<td><label>d) Cover with antiseptic cream and a cloth bandage</label></td>
+							</tr>
+						</table>
+						<p><a href="#" onClick="showQA('A4');" class="answerButton"><span>Read the answer &raquo;</span></a></p>
+					</div>
+					
+					<div id="q4Alyr">
+					<div class="short">
+						<p>Your Answer: <input name="answer4" value="" type="text" class="QA" /></p>
+						<p><strong>Answer: b) Hold the hand under cold running water for up to 20 minutes</strong></p>
+						<p><strong>First aid steps:</strong>
+						<ul><li>Place the burned area under cool running water for up to 20 minutes to stop further heat injury</li>
+						<li>Seek medical help, especially for burns in children, burns with blistering or charring, or burns that extend over a wide area</li>
+						<li>If significant blistering or charring has occurred, carefully cover the burn using cling wrap or aluminium foil to prepare them for transport to medical care</li>
+						<li>Do not use cotton wool, cloth and fibre-based dressings or antiseptics and ointments unless advised to by a medic</li></ul>
+						</div>
+						<div class="long">
+					<p>When someone burns themselves, the first thing you need to do is reduce the heat in the tissues to stop further damage from occurring. You can do this by cooling the burned tissue under cold running water.</p><p>The severity of a burn is determined by the size of the burn and the depth of damage to the skin that occurs. There are three levels:<ul><li>Reddening &#150; the burn causes pain and reddening of the skin.</li><li>Blistering &#150; in addition to pain and reddening, the burn causes blistering.</li><li>Destruction &#150; burns of this group go through the full thickness of the skin and result in tissue death. Usually, the most severely burned areas are not painful to touch because the nerve endings in the skin are dead.</li></ul><p>If someone has a burn with extensive blistering or any skin death, they should be medically assessed. When in doubt, especially with children, see a doctor.</p><p>Severe local burns to the face and hands, even if small, can have severe, long-term consequences and must be taken seriously.</p><p>Don't apply anything to the burn &#150; most readily available 'treatments' do more harm than good. To cover a burn for transport to medical care, use plastic cling wrap or aluminium foil applied directly to the burn.</p><p>If blistering occurs, don't break the blisters as these act as sterile dressings.</p></div>
+						<p><a href="#" onClick="showQA('Q5');" class="answerButton nextButton"><span>Next question &raquo;</span></a></p>
+					</div>
+					
+					<div id="q5Tlyr"><h4>5. You come across a car accident and the driver is still in her seatbelt, crying in pain and holding her neck? She complains of tingling in her fingers and toes. What should you do?</h4></div>
+					<div id="q5lyr">
+						<table class="question">
+							<tr>
+								<td><input name="question5" value="a" onclick="q5=this.value; answerQ5()" type="radio" /></td>
+								<td><label>a) Reassure her, ask her to keep still and support her head from behind</label></td>
+							</tr>
+							<tr>
+								<td><input name="question5" value="b" onclick="q5=this.value; answerQ5()" type="radio" /></td>
+								<td><label>b) Reassure her and get her to take deep breaths</label></td>
+							</tr>
+							<tr>
+								<td><input name="question5" value="c" onclick="q5=this.value; answerQ5()" type="radio" /></td>
+								<td><label>c) Get her to breathe in and out of a paper bag</label></td>
+							</tr>
+							<tr>
+								<td><input name="question5" value="d" onclick="q5=this.value; answerQ5()" type="radio" /></td>
+								<td><label>d) Release the seat belt and help her out of the car to the side of the road</label></td>
+							</tr>
+						</table>
+						<p><a href="#" onClick="showQA('A5');" class="answerButton"><span>Read the answer &raquo;</span></a></p>
+					</div>
+					
+					<div id="q5Alyr">
+					<div class="short">
+						<p>Your Answer: <input name="answer5" value="" type="text" class="QA" /></p>
+						<p><strong>Answer: a) Reassure her, ask her to keep still and support her head from behind</strong></p>
+						<p><strong>First aid steps:</strong>
+						<ul><li>Encourage the person to keep still and support their head and neck against the headrest (if there isn't one, use clothing or another support)</li>
+						<li>Whenever possible, let experts get the person out of the vehicle</li>
+						<li>Remember to ensure your own safety at all times</li></ul>
+						</div>
+						<div class="long">
+					<p>If a person has a neck injury with symptoms like tingling in the hands and/or feet, this could mean they have spinal cord damage. In the neck, the spinal cord is tightly confined by the bones of the vertebrae; relatively minor displacements of these bones can tear or squash the spinal cord and potentially cause paralysis from the neck down (quadriplegia).</p><p>It's always better to let the experts work out the severity of the injury. Keep the person in place and as still as possible until professional help arrives.</p><p>Use available supports &#150; such as clothing or pillows &#150; on either side of the person's neck to hold their head in place on the headrest. If the car doesn't have a headrest, place a support behind their head.</p><p>Loosen any tight clothing, keep them as calm as possible and make sure they stay warm.</p><p>If the person is unconscious and having problems breathing, your first priority is to clear their airway of any obstruction (e.g. their tongue). This might require moving the person from the vehicle. Remember to watch out for passing traffic. Always support their head and neck, and place them in the recovery position.</p>
+					</div>
+						<p><a href="#" onClick="showQA('Q6');" class="answerButton nextButton"><span>Next question &raquo;</span></a></p>
+					</div>
+				
+					<div id="q6Tlyr"><h4>6. What do you do if a child has fallen from their bike, hit their head on the ground and is lying unconscious on the ground?</h4></div>
+					<div id="q6lyr">
+						<table class="question">
+							<tr>
+								<td><input name="question6" value="a" onclick="q6=this.value; answerQ6()" type="radio" /></td>
+								<td><label>a) Ring 000 and call for an ambulance</label></td>
+							</tr>
+							<tr>
+								<td><input name="question6" value="b" onclick="q6=this.value; answerQ6()" type="radio" /></td>
+								<td><label>b) Roll the child into the recovery position</label></td>
+							</tr>
+							<tr>
+								<td><input name="question6" value="c" onclick="q6=this.value; answerQ6()" type="radio" /></td>
+								<td><label>c) Check and if necessary, clear their airway, then place them in the recovery position</label></td>
+							</tr>
+							<tr>
+								<td><input name="question6" value="d" onclick="q6=this.value; answerQ6()" type="radio" /></td>
+								<td><label>d) Pick them up and carry them home</label></td>
+							</tr>
+						</table>
+						<p><a href="#" onClick="showQA('A6');" class="answerButton"><span>Read the answer &raquo;</span></a></p>
+					</div>
+					
+					<div id="q6Alyr">
+					<div class="short">
+						<p>Your Answer: <input name="answer6" value="" type="text" class="QA" /></p>
+								<p><strong>Answer: c) Check and if necessary, clear their airway then place them in the recovery position</strong></p>
+						<p><strong>First aid steps:</strong>
+						<ul><li>Make sure the child can breathe properly by clearing any obstruction from their mouth</li>
+						<li>Place the child in the recovery position</li>
+						<li>If the child recovers quickly and sits up, take them to hospital</li>
+						<li>If the child is still unconscious and not responding to their surroundings, call an ambulance to take them to the nearest accident and emergency centre</li>
+						</ul>
+						</div>
+						<div class="long">
+					<p>Regardless of age, anyone who sustains a head injury and loses consciousness should be taken to hospital. Once there, they should be observed for a minimum of four hours.</p><p>If you follow this rule, a person who is bleeding inside the skull will not be overlooked. In these rare but serious cases, the person quickly regains consciousness then, over a period of minutes to hours, begins to deteriorate. These people require urgent and expert surgery to save their lives.</p></div>
+
+						<p><a href="#" onClick="showQA('Q7');" class="answerButton nextButton"><span>Next question &raquo;</span></a></p>
+					</div>
+						
+					
+					<div id="q7Tlyr"><h4>7. You have been chiselling rust off some steel and feel something go into your eye? On looking closely, you can see a tiny spot on the clear part of the eye (the cornea) that covers the pupil and iris. What should you do?</h4></div>
+					<div id="q7lyr">
+						<table class="question">
+							<tr>
+								<td><input name="question7" value="a" onclick="q7=this.value; answerQ7()" type="radio" /></td>
+								<td><label>a) Rub the eye vigorously with a clean handkerchief</label></td>
+							</tr>
+							<tr>
+								<td><input name="question7" value="b" onclick="q7=this.value; answerQ7()" type="radio" /></td>
+								<td><label>b) Try to remove any foreign particles with a moistened cotton bud</label></td>
+							</tr>
+							<tr>
+								<td><input name="question7" value="c" onclick="q7=this.value; answerQ7()" type="radio" /></td>
+								<td><label>c) Leave it for a couple of days and see what happens</label></td>
+							</tr>
+							<tr>
+								<td><input name="question7" value="d" onclick="q7=this.value; answerQ7()" type="radio" /></td>
+								<td><label>d) Get professional help to remove the particle</label></td>
+							</tr>
+						</table>
+						<p><a href="#" onClick="showQA('A7');" class="answerButton"><span>Read the answer &raquo;</span></a></p>
+					</div>
+					
+					<div id="q7Alyr">
+					<div class="short">
+						<p>Your Answer: <input name="answer7" value="" type="text" class="QA" /></p>
+						<p><strong>Answer: d) Get professional help to remove the particle</strong></p>
+						<p><strong>First aid steps:</strong>
+						<ul><li>As soon as possible, see an optometrist, who will inspect your eye, remove the foreign body and if necessary, refer you to an ophthalmic surgeon. A foreign body on or in your cornea should only be removed by trained personnel.</li>
+						<li>If you can't get to an optometrist then go to your local Accident and Emergency department</li></ul>
+						</div>
+						<div class="long">
+					<p>If you are hammering or grinding a surface with an electric grinder, steel particles can fly off at very high speed. If you're not wearing protection, these tiny bits of metal can easily strike your eye and penetrate deep into the eyeball without much obvious external sign of damage. If these metallic particles are not removed, your eye can become severely inflamed and you run the risk of eventually losing your sight or even your eye. If not removed from the cornea, you will see a 'rust ring' form at the site which can impair your vision.</p><p>Foreign bodies in your cornea can cause intense irritation. Your eye will water profusely and you will have difficulty keeping it open because of light sensitivity that results from the irritation.</p><p>High speed eye injuries like this are best assessed by ophthalmic surgeons and optometrists, who will examine the eye with a modified microscope. Usually, getting in to see an optometrist is easier and quicker than getting an appointment to see an eye specialist. If necessary, the optometrist will arrange an urgent referral to an ophthalmologist (eye surgeon).</p><p>Foreign bodies in the eye that aren't in the cornea can often be removed with a moistened cotton bud. Pull the eyelid away from the eyeball and wipe gently inside the eyelid. If you have any difficulty, see your GP.</p></div>
+						<p><a href="#" onClick="showQA('Q8');" class="answerButton nextButton"><span>Next question &raquo;</span></a></p>
+					</div>
+
+					
+					<div id="q8Tlyr"><h4>8. Someone you know, who is a diabetic and takes insulin, starts to become confused, slur their words and stagger as they walk. What should you do?</h4></div>
+					<div id="q8lyr">
+						<table class="question">
+							<tr>
+								<td><input name="question8" value="a" onclick="q8=this.value; answerQ8()" type="radio" /></td>
+								<td><label>a) Give them an injection of their insulin</label></td>
+							</tr>
+							<tr>
+								<td><input name="question8" value="b" onclick="q8=this.value; answerQ8()" type="radio" /></td>
+								<td><label>b) Offer them two paracetamol tablets with a glass of water</label></td>
+							</tr>
+							<tr>
+								<td><input name="question8" value="c" onclick="q8=this.value; answerQ8()" type="radio" /></td>
+								<td><label>c) Give them a sweetened drink, such as orange juice with added sugar</label></td>
+							</tr>
+							<tr>
+								<td><input name="question8" value="d" onclick="q8=this.value; answerQ8()" type="radio" /></td>
+								<td><label>d) Encourage them to go to bed and sleep it off</label></td>
+							</tr>
+						</table>
+						<p><a href="#" onClick="showQA('A8');" class="answerButton"><span>Read the answer &raquo;</span></a></p>
+					</div>
+					
+					<div id="q8Alyr">
+					<div class="short">
+						<p>Your Answer: <input name="answer8" value="" type="text" class="QA" /></p>
+						<p><strong>Answer: c)  Give them a sweetened drink, such as orange juice with added sugar.</strong></p>
+						<p><strong>First aid steps:</strong>
+						<ul><li>If a diabetic person is confused, always treat this as a low sugar emergency</li>
+						<li>Immediately give them a sweetened drink.</li></ul>
+						</div>
+						<div class="long">
+					<p>If someone with diabetes has low blood sugar, their functioning can be affected very quickly. These episodes are most common in diabetics who require insulin, which includes all type 1 and some type 2 diabetics, but also those only on tablet medication, particularly the elderly.</p><p>Early signs of low blood sugar include stumbling for words, irritability, confusion and even appearing drunk. More serious signs include collapsing into unconsciousness. Alcohol can make this happen faster.</p><p>If a conscious diabetic person has any symptoms that suggest they have low blood sugar, you can never harm them by giving sugar in any form. If they don't show some improvement within 10-15 minutes of having some sugar, then take them to a hospital, either by private transport or ambulance.</p><p>If the person is unconscious, do NOT attempt to give them anything by mouth. Call 000 to get professional help from ambulance personnel. It is possible that this person may be unwell because of a very high blood sugar level due to poor control of their diabetes.</p><p>There is no effective first aid for a person in a high sugar diabetic coma. They require medical assessment as soon as possible &#150; the longer this situation continues, the more serious it becomes. The person requires accurate diagnosis and intravenous fluids along with insulin therapy.</p>
+					</div>
+						<p><a href="#" onClick="showQA('Q9');" class="answerButton nextButton"><span>Next question &raquo;</span></a></p>
+					</div>
+									
+					
+					<div id="q9Tlyr"><h4>9. You are with a three-year-old girl, who has a runny nose, cough and a high fever. She suddenly loses consciousness, goes stiff and begins to shake and jerk violently. What do you do?</h4></div>
+					<div id="q9lyr">
+						<table class="question">
+							<tr>
+								<td><input name="question9" value="a" onclick="q9=this.value; answerQ9()" type="radio" /></td>
+								<td><label>a) Place her in the recovery position and protect her from injury</label></td>
+							</tr>
+							<tr>
+								<td><input name="question9" value="b" onclick="q9=this.value; answerQ9()" type="radio" /></td>
+								<td><label>b) Place her in a cool bath to bring her temperature down</label></td>
+							</tr>
+							<tr>
+								<td><input name="question9" value="c" onclick="q9=this.value; answerQ9()" type="radio" /></td>
+								<td><label>c) Give her the correct dose of children's paracetamol</label></td>
+							</tr>
+							<tr>
+								<td><input name="question9" value="d" onclick="q9=this.value; answerQ9()" type="radio" /></td>
+								<td><label>d) Try to rouse her by calling her name</label></td>
+							</tr>
+						</table>
+						<p><a href="#" onClick="showQA('A9');" class="answerButton"><span>Read the answer &raquo;</span></a></p>
+					</div>
+					
+					<div id="q9Alyr">
+					<div class="short">
+						<p>Your Answer: <input name="answer9" value="" type="text" class="QA" /></p>
+							<p><strong>Answer: a) Place her in the recovery position and protect her from injury</strong></p>
+						<p><strong>First aid steps:</strong>
+						<ul><li>Put the child in the recovery position to protect her airway</li>
+						<li>Gently restrain the child to protect her from accidentally harming herself during the jerking phase of the seizure</li>
+						<li>Once the seizure subsides and the child is alert enough, you can treat the symptoms of the fever</li></ul>
+						</div>
+						<div class="long">
+					<p>It can be frightening to see a child have a fever-induced seizure, but the best thing you can do is remain quiet, calm and put the child in the recovery position. Fits associated with a sudden rise in temperature generally don't last long and are quite common.</p><p>After the seizure subsides &#150; usually after a couple of minutes &#150; the child will probably be confused and not fully aware of his or her surroundings. This is normal. If the child is sufficiently awake to follow instructions, give her the correct dose of paracetamol for her age and weight.</p><p>Remove the child's clothing and if you have a fan, place it on low speed to blow air across the child. Rapidly cooling a child in a cool bath can make them shiver, which generates more body heat and can delay cooling or raise their temperature even further.</p><p>Children under eight years of age will average eight to 12 illnesses per year associated with fever, and the vast majority of these will be viral infections that require you to only treat the symptoms. While most seizures associated with fevers in children prove to be more distressing than important, you should take your child to a doctor as soon as possible after the event. </p><p>If your child is under 12 months of age, particularly if their fever is over 39°C, seek medical assessment urgently; their fever may be an indicator of a more significant infection.</p>	
+					</div>
+
+						<p><a href="#" onClick="showQA('Q10');" class="answerButton nextButton"><span>Next question &raquo;</span></a></p>
+					</div>
+					
+
+					<div id="q10Tlyr"><h4>10. What do you do if a person suddenly collapses in front of you?</h4></div>
+					<div id="q10lyr">
+						<table class="question">
+							<tr>
+								<td><input name="question10" value="a" onclick="q10=this.value; answerQ10()" type="radio" /></td>
+								<td><label>a) Immediately call 000</label></td>
+							</tr>
+							<tr>
+								<td><input name="question10" value="b" onclick="q10=this.value; answerQ10()" type="radio" /></td>
+								<td><label>b) Try to get a response out of them before checking their airway</label></td>
+							</tr>
+							<tr>
+								<td><input name="question10" value="c" onclick="q10=this.value; answerQ10()" type="radio" /></td>
+								<td><label>c) Get them into a sitting position and offer a glass of water</label></td>
+							</tr>
+							<tr>
+								<td><input name="question10" value="d" onclick="q10=this.value; answerQ10()" type="radio" /></td>
+								<td><label>d) Roll them into the recovery position</label></td>
+							</tr>
+						</table>
+						<p><a href="#" onClick="showQA('A10');" class="answerButton"><span>Read the answer &raquo;</span></a></p>
+					</div>
+					
+					<div id="q10Alyr">
+					<div class="short">
+						<p>Your Answer: <input name="answer10" value="" type="text" class="QA" /></p>
+						<p><strong>Answer: b)  Try to get a response out of them before checking their airway.</strong></p>
+						<p><strong>First aid steps:</strong>
+						<ul><li>This is the classic situation where you should use the St John Ambulance DRABCD first aid protocol.</li></ul>
+						</div>
+						<div class="long">
+						
+					<p><strong>D</strong>: check for <strong>danger</strong> in the surroundings both to the victim and you. You may need to move the person to a safe area before proceeding.</p><p><strong>R</strong>:  check for a <strong>response</strong> by calling to the person or giving them a gentle shake.</p><p><strong>A</strong>: If there is no response, check their <strong>airway</strong> is clear.</p>
+<p><strong>B</strong>: check that the person is <strong>breathing</strong>, if not, turn them on their back and give them two breaths of expired air. If their breathing starts up again, place them in the recovery position. In either case, ring 000.</p><p>If there are no signs of life, as in spontaneous breathing and/or some response to your efforts then start CPR (Cardio-Pulmonary Resuscitation) <strong>C</strong>. You have already given them two breaths, so now start giving them chest compressions. Push the breastbone down by one third of the thickness of the chest at a rate of about 100 compressions per minute for an adult (almost two compressions/second).</p><p>Once you have given 30 chest compressions, give them two breaths and start again.</p><p><strong>D</strong>: If there are still no signs of life and a <strong>defibrillation</strong> device is available, use it by following the instructions spoken by the machine (many licensed clubs and other venues now have automatic defibrillators throughout their buildings). Continue assisting the person until the ambulance arrives and takes over.</p><p>This is a VERY tiring exercise and it is unlikely that you will be able to keep this up for much longer than 5-10 minutes. Get others to help you &#150; it will make a big difference to this type of resuscitation. The most important thing to do is keep the compressions going until help arrives, even if you aren't comfortable doing the resuscitation breathing.</p></div>
+					</div>
+					
+				</form>
+				
+				<form>
+				<div id="results">
+					<table style="border:none">
+						<tr>
+							<td><a href="#" onClick="checkForm()" class="answerButton" style="float:left; width:100px;"><span>Grade Me!</span></a></td>
+							<td><a href="#" onClick="document.myquiz.reset(); showQA('Q1')" class="answerButton" style="float:left; width:80px;"><span>Reset</span></a></td>
+						</tr>
+					</table>
+				</div>
+				</form>
+					<br /><br />
+					<div class="box moreInfo" >
+						<div><a name="moreInfo"></a><h3 id="moreInfo">More info</h3>
+							<!-- question 1 More Info -->
+							<div id="q1More">
+								<ul>
+									<li><a href="http://www.epilepsy.org.au/" target="_blank">Epilepsy Action (Australia)</a></li>
+									<li><a href="http://www.stjohn.org.au/index.php?option=com_content&task=view&id=22&Itemid=34" target="_blank">St 
+									John Ambulance Service</a></li>
+																</ul>
+							</div>
+							
+							<!-- question 2 More Info -->
+							<div id="q2More">
+								<ul>
+									<li><a href="http://www.abc.net.au/rn/healthreport/stories/2009/2634253.htm" target="_blank">The Heimlich manoeuvre &#150; The Health Report</a></li>
+									<li><a href="http://www.stjohn.org.au/index.php?option=com_content&task=view&id=22&Itemid=34" target="_blank">St 
+									John Ambulance Service</a></li>
+								</ul>
+							</div>
+							
+							<!-- question 3 More Info -->
+							<div id="q3More">
+								<ul>
+									<li><a href="http://www.stjohn.org.au/index.php?option=com_content&task=view&id=22&Itemid=34" target="_blank">St 
+									John Ambulance Service</a></li>
+								</ul>
+							</div>
+							
+							<!-- question 4 More Info -->
+							<div id="q4More">
+								<ul>
+									<li><a href="http://www.stjohn.org.au/index.php?option=com_content&task=view&id=22&Itemid=34" target="_blank">St 
+									John Ambulance Service</a></li>
+								</ul>
+							</div>
+							
+							<!-- question 5 More Info -->
+							<div id="q5More">
+								<ul>
+								<li><a href="http://www.stjohn.org.au/index.php?option=com_content&task=view&id=22&Itemid=34" target="_blank">St 
+									John Ambulance Service</a></li>
+								</ul>
+							</div>
+							
+							<!-- question 6 More Info -->
+							<div id="q6More">
+								<ul>
+									<li><a href="http://www.stjohn.org.au/index.php?option=com_content&task=view&id=22&Itemid=34" target="_blank">St 
+									John Ambulance Service</a></li>
+								</ul>
+							</div>
+							
+							<!-- question 7 More Info -->
+							<div id="q7More">
+								<ul>
+								<li><a href="http://www.stjohn.org.au/index.php?option=com_content&task=view&id=22&Itemid=34" target="_blank">St 
+									John Ambulance Service</a></li>
+								</ul>
+							</div>
+							
+							<!-- question 8 More Info -->
+							<div id="q8More">
+								<ul>
+									<li><a href="http://www.stjohn.org.au/index.php?option=com_content&task=view&id=22&Itemid=34" target="_blank">St 
+									John Ambulance Service</a></li>
+								</ul>
+							</div>
+							
+							<!-- question 9 More Info -->
+							<div id="q9More">
+								<ul>
+								<li><a href="http://www.stjohn.org.au/index.php?option=com_content&task=view&id=22&Itemid=34" target="_blank">St 
+									John Ambulance Service</a></li>
+								</ul>
+							</div>
+							
+							<!-- question 10 More Info -->
+							<div id="q10More">
+								<ul>
+									<li><a href="http://www.resus.org.au/" target="_blank">The Australian Resuscitation Council</a></li>
+									<li><a href="http://www.stjohn.org.au/index.php?option=com_content&task=view&id=22&Itemid=34" target="_blank">St 
+									John Ambulance Service</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+							
+<div id="artShareLinks">
+
+<p class="right"><a href="/cgi-bin/common/mailto/mailto-nojs_query.pl?http://www.abc.net.au/health/quizzestools/quizzes/2009/09/03/2671625.htm?" class="email friend">email a friend</a>
+
+<a href="/health/contact/" class="email editor" title="Contact ABC Health &amp; Wellbeing">email ABC Health &amp; Wellbeing</a></p>
+
+
+<ul id="artShareTabs" class="tabClick">
+	<li><a class="selected" href="#artBookmarks" rel="artBookmarks">Share this article</a></li>
+</ul>
+
+
+
+
+<div id="artBookmarks" class="tabContent" style="display: block;">
+
+<p>Use these social-bookmarking links to share <strong>First Aid quiz</strong>.</p>
+
+<!-- AddThis Button BEGIN -->
+<ul>
+<li><a class="addthis_button_stumbleupon_badge"></a></li>
+<li><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a></li>
+<li><a class="addthis_button_tweet"></a></li>
+<li class="googlePlus"><a class="addthis_button_google_plusone" g:plusone:size="medium"></a></li>
+<li class="shareAll"><a class="addthis_counter addthis_pill_style"></a></li>
+</ul>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-5032c80c0c5f2c20"></script>
+<!-- AddThis Button END -->
+
+</div>
+<div class="clear"></div>
+
+
+</div> 
+<!-- Place this snippet wherever appropriate --> 
+ <script type="text/javascript"> 
+ (function() { 
+     var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true; 
+     li.src = window.location.protocol + '//platform.stumbleupon.com/1/widgets.js'; 
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s); 
+ })(); 
+ </script>
+
+<!--end:artShareLinks -->
+					<div class="clear"></div>
+					
+			</div>
+		</div>
+	</div>
+	<div id="columnRight">
+	<div class="variantA">
+<h3>More Disasters and Accidents on Health &amp; Wellbeing</h3>
+<div class="related3389914">
+<p>Fact Files:</p>
+<ul>
+<li class="related3389914">
+<a href="http://www.abc.net.au/health/library/stories/2011/12/15/3389914.htm">Summer safety</a>
+</li>
+</ul>
+<div class="divider related3389914"> </div>
+</div>
+<ul>
+<li class="related3459237">
+<a href="http://www.abc.net.au/health/talkinghealth/factbuster/stories/2012/04/17/3459237.htm">Is butter good for a burn?</a>
+</li>
+<li class="related3135043">
+<a href="http://www.abc.net.au/health/features/stories/2011/02/10/3135043.htm">Health risks remain after floodwater subsides</a>
+</li>
+<li class="related2960092">
+<a href="http://www.abc.net.au/health/talkinghealth/factbuster/stories/2010/07/21/2960092.htm">Can you drive safely and talk on a hands-free mobile phone?</a>
+</li>
+<li class="related2849271">
+<a href="http://www.abc.net.au/health/talkinghealth/factbuster/stories/2010/03/18/2849271.htm">Will sea water help heal sores?</a>
+</li>
+<li class="related2836116">
+<a href="http://www.abc.net.au/health/thepulse/stories/2010/03/11/2836116.htm">Lift injuries in the elderly</a>
+</li>
+<li class="related2752845">
+<a href="http://www.abc.net.au/health/thepulse/stories/2009/11/26/2752845.htm">Blokes, booze 'n' beach don't mix</a>
+</li>
+</ul>
+<p>
+<a href="/health/tag/disasters-and-accidents" class="more">More</a>
+</p>
+</div>
+
+
+	<div class="variantB">
+<h3><span>Elsewhere on ABC</span></h3>
+<ul>
+<li>
+<a href="http://www.abc.net.au/radionational/programs/ockhamsrazor/from-battlefields-to-bushfires3a-the-mental-health-effects-of-/4003110">From Battlefields to Bushfires: The Mental Health Effects of Traumatic Experience</a>
+<br />Ockham's Razor</li>
+<li>
+<a href="http://www.abc.net.au/science/articles/2012/02/10/3427149.htm">Smoking dope doubles accident risk</a>
+<br />Science Online</li>
+<li>
+<a href="http://www.abc.net.au/radionational/programs/lifematters/paul-de-gelder-shark-attack-survivor/3668094">Paul de Gelder: shark attack survivor</a>
+<br />Life Matters</li>
+</ul>
+</div>
+
+
+
+
+			<div class="variantB">
+			<h3><span>Elsewhere on the web</span></h3>
+			<ul>
+									<li><a href="http://www.stjohn.org.au/index.php?option=com_content&task=view&id=22&Itemid=34" target="_blank">St 
+									John Ambulance Service</a></li>
+																
+			</ul>
+		</div>
+			<div class="variantA altColorA">
+			<h3>Related Topics</h3>
+			<ul>
+				<li><a href="/health/healthyliving/healthconsumer/default.htm">Health Consumer</a></li>
+			</ul>
+		</div>	
+</div>
+<div class="clear"> </div>
+</div>
+
+<div id="footer">
+	<div id="footerTopStrip"></div>
+	<p><a title="Copyright" href="http://www.abc.net.au/copyright.htm">&copy; 2012 ABC</a> | <a title="Privacy Policy" href="http://www.abc.net.au/privacy.htm">Privacy Policy</a> | <a href="/conditions.htm" title="Conditions of Use">Conditions of Use</a> | <a href="/health/aboutus/">About Us</a> | <a href="/health/contact/">Contact</a> | <a href="/health/sitemap.htm">Sitemap</a></p>
+	<div id="footerBottomStrip"></div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6625369-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+</body>
+</html>

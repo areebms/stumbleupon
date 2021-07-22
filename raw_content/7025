@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    
+  
+  
+  
+	  <link rel="canonical" href="http://www.extension.org/pages/19879/fruits-and-vegetables-the-best-snack-choice"/>
+	
+	<title>Fruits and Vegetables - The BEST Snack Choice - eXtension</title>
+	
+	
+    	
+    	    <link href="/stylesheets/common.css?1301624692" media="screen" rel="stylesheet" type="text/css" />
+    	    <link href="/stylesheets/960.css?1301624692" media="screen" rel="stylesheet" type="text/css" />
+        	<link href="/stylesheets/extension2.css?1301624692" media="screen" rel="stylesheet" type="text/css" />
+        	<link href="/stylesheets/fancybox/jquery.fancybox-1.3.1.css?1301624692" media="screen" rel="stylesheet" type="text/css" />
+        	<link href="/stylesheets/print-for-screen.css?1301624692" media="print" rel="stylesheet" type="text/css" />
+        	<link href="/stylesheets/print.css?1301624692" media="print" rel="stylesheet" type="text/css" />
+        	
+        	
+    	
+	
+    
+  
+  
+    <script src="/javascripts/prototype.js?1301624692" type="text/javascript"></script>
+    <script src="/javascripts/effects.js?1301624692" type="text/javascript"></script>
+    <script src="/javascripts/dragdrop.js?1301624692" type="text/javascript"></script>
+    <script src="/javascripts/controls.js?1301624692" type="text/javascript"></script>
+    <script src="/javascripts/jquery-1.4.2.min.js?1301624692" type="text/javascript"></script>
+    <script type="text/javascript">
+        var $j = jQuery.noConflict();
+    </script>
+    <script src="/javascripts/application.js?1301624692" type="text/javascript"></script>
+    <script src="/javascripts/jquery.cluetip.min.js?1301624692" type="text/javascript"></script>
+    <script src="/javascripts/fancybox/jquery.fancybox-1.3.1.js?1301624692" type="text/javascript"></script>
+    <script src="/javascripts/charcount.js?1301624692" type="text/javascript"></script>
+    
+    <script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAA1LmtLYh4TNIbY5g8p1Lv7RSXDUXNkirYuCSjRdbg1Ub22CSMkhSvO9rZuF6tMwS1hO0aeze7zMMkAA"></script>
+    
+	<link rel="stylesheet" type="text/css" href="/stylesheets/contentslider.css" />
+	<!--[if lt IE 7]>
+	    <link href="/stylesheets/ie6.css?1301624692" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    
+    
+    
+        
+        <!-- include prototype js for image carousel -->
+            <script type="text/javascript" src="/javascripts/swfobject.js"></script>
+   
+	        <script type="text/javascript" src="/javascripts/contentslider.js"></script>
+      
+   
+</head>
+<body> <!-- pubsite layout -->
+    <div id="body_wrapper"><!-- used for preview -->
+        <div id="preview_wrapper" class="production"></div>
+        
+        
+    <div id="wrapper">
+	
+		<div id="content_wrapper">
+		
+    <div class="container_16">
+        <div class="grid_16 alpha omega override_960px">
+            
+            <ul id="skiplist">
+                <li class="skip"><a href="#content_tag">Skip Navigation</a></li>
+                <li class="skip"><a href="#sidebar">Jump to Side Bar</a></li>
+            </ul>
+            
+            
+             
+             
+             <div id="masthead_wrap">
+                 <div id="masthead">
+                     
+                     <p class="aboutex">These resources are brought to you by the Cooperative Extension System and your Local Institution</p>
+                     
+
+                     <div class="branding_wrapper">
+                       <div id="logo">
+                               <h1 class="logo" >
+    <a href="http://www.extension.org/" style="width: 177px;"><img alt="University of Massachusetts" src="/logo/umass_extension.png" width="177" /></a>
+  </h1>
+  <div class='institution_actions_wrapper'>
+    <ul id="institution_actions">
+      <li><a href="http://www.umassextension.org/index.php/in-your-community">Local Extension offices near you</a></li>
+      <li><a href="http://www.extension.umass.edu/">Learn more about this institution</a></li>                 
+      <li class="changeint"><a class="sample" href="#" onclick="Effect.toggle('institution_picker','blind', { duration: .4}); setTimeout(set_select_focus, 500);; return false;">Select a different institution</a></li>
+    </ul>
+  </div>
+<script type="text/javascript">
+if ($('institution_picker')!=null) {
+  Effect.BlindUp('institution_picker', {duration: .4});
+}
+</script>
+                        </div>
+
+                       
+                         
+                          <h3 id="eXlogo"><a href="/"><img id="lores_print_logo" src="/images/layout/extensionlogo.gif" width="216" height="81" alt="eXtension: more mind reach" /><span>eXtension: more mind reach</span></a></h3>
+                         
+                        
+                     </div>
+
+                 </div>
+                 <div id="institution_picker" style="display:none;">
+                  <form action="/main/show_institution_list" method="post" onsubmit="new Ajax.Updater('institution_list', '/main/show_institution_list', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">           
+             		    <fieldset>
+             		        <h3>Find an Extension Institution</h3>
+             		        <p>
+             		            <label>ZIP code or State Abbreviation
+             		                <input id="zip_or_state" type="text" name='zip_or_state' /> 
+             		            </label>
+             		               <input name="commit" type="submit" value="Go" />
+                                 <a class="sample" href="#" onclick="Effect.toggle('institution_picker','blind', { duration: .4});
+         Effect.BlindUp('institution_list', { duration: .4});; return false;">Cancel</a>
+                           </p>
+             		    </fieldset>
+             		    <div id="institution_list" style="display:none;"></div>
+             		</form>
+                 </div>
+
+             </div>
+             
+             <div class="navbar">
+                    
+                  <div class="globalnav">
+                      <ul>
+                        <li class="home"><a href = "/">Home</a></li>
+                        <li class="about"><a href = "/main/about">About</a></li>
+                        <li class="topics"><a href = "/main/communities">Resource Areas</a></li>
+                        <li class="news"><a href="http://www.extension.org/all/news">News</a></li>
+                        <li class="articles"><a href="http://www.extension.org/all/articles">Articles</a></li>
+                        <li class="answers"><a href="http://www.extension.org/all/faqs">Answers</a></li>
+                        <li class="calendar"><a href="http://www.extension.org/all/events">Calendar</a></li>
+                        <li class="lessons"><a href="http://www.extension.org/all/learning_lessons">Learning Lessons</a></li>
+                      </ul>
+                  </div>
+                     
+                 
+                  <div class = "searchbar">
+    <!-- Google CSE Search Box Begins -->
+        <form id="searchbox_002594610894210374936:hggphannnzi" action="/main/search">
+          <input type="hidden" name="cx" value="002594610894210374936:hggphannnzi" />
+          <input type="hidden" name="cof" value="FORID:11" />
+		  	<input type="text" name="q" class="searchfield" />
+        	<input type="submit" value="Search" style = "margin-top: 3px" />
+        </form>
+<!--        <script src="/javascripts/google_coop.js?1301624692" type="text/javascript"></script> -->
+        <!-- Google CSE Search Box Ends -->
+</div>
+
+                  
+                </div>
+        </div><!-- end .grid_16 -->
+        <div class="clear"></div>
+        
+        <div class="grid_16" id="content_area">
+        
+        
+        
+        
+        
+        
+        </div><!-- .grid_16 -->
+        <div class="clear"></div>
+        
+        
+            <!-- content: right column -->
+            <div class="grid_16 alpha omega override_960px content_page" >
+            <div class="grid_11 alpha omega override_650px" id="content_tag">
+                <div class="content_gutter">
+                
+
+
+  <p id="relatedresources">
+    <span><a href="http://www.extension.org/families%20food%20fitness">Families, Food and Fitness Home</a></span>
+  </p>
+
+<div class="pageextras">
+  
+    <p id="aae_pitch">Have a question? <a href="http://www.extension.org/ask">Try asking one of our Experts</a></p>
+  
+    <p class="print_and_share"><a href="/pages/19879/fruits-and-vegetables-the-best-snack-choice/print/" class="print">Print</a>
+      <a class="a2a_dd" href="http://www.addtoany.com/share_save">
+    <img src="http://static.addtoany.com/buttons/share_save_106_16.gif" border="0" alt="Share/Bookmark"/>
+</a>
+<script type="text/javascript">
+var a2a_config = a2a_config || {};
+a2a_config.linkname=document.title;
+a2a_config.track_links='custom';
+a2a_config.track_links_key='http://extension.org/19879';
+a2a_config.onclick=1;
+</script>
+<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
+
+
+    </p>
+</div>
+
+<div class = "headline left">
+  <h1 class="title">Fruits and Vegetables - The BEST Snack Choice</h1>
+  <p class="caption">Last Updated: <abbr class="updated" title="20091118">November 18, 2009</abbr></p>
+  <p class="view_as_web_page"><a href="/pages/19879/fruits-and-vegetables-the-best-snack-choice">View as web page</a></p>
+</div>
+<br class="clearing" />
+
+
+
+<div id="content_css_reset">
+    <div id="article">
+      <p>Because fruits and vegetables are so low in calories, they make great snacks. The pictures below show a 100-calorie portion for some healthy versus traditional snacks.
+</p><p><br></p>
+<div class="singleimage center"><img alt="Snack choices" src="/mediawiki/files/1/10/Snack_choices.jpg" width="330" height="667" border="0"></div><br class="clear"><p><br><b>FOR MORE INFORMATION ON HOW TO ENJOY FRUITS AND VEGETABLES VIEW</b>
+<a href="/pages/24058/video-thirteen-fun-ways-to-eat-more-fruits-and-vegetables" title="Video - Thirteen Fun Ways to Eat More Fruits and Vegetables" class="internal_link"> Thirteen Fun Ways to Eat More Fruits and Vegetables Video</a>
+</p><p><br></p>
+<div id="second_column_content">
+<a name="More_Articles" id="More_Articles"></a><h3> <span class="mw-headline">More Articles</span>
+</h3>
+<p><a href="/pages/19871/enjoy-more-fruits-and-vegetables" title="Enjoy More Fruits and Vegetables" class="internal_link">Enjoy More Fruits and Vegetables</a>
+</p>
+<ul>
+<li><a href="/pages/21510/strategies-to-eat-more-fruits" title="10 Strategies to Eat More Fruits" class="internal_link">10 Strategies to Eat More Fruits</a></li>
+<li><a href="/pages/19881/strategies-to-eat-more-vegetables" title="10 Strategies to Eat More Vegetables" class="internal_link">10 Strategies to Eat More Vegetables</a></li>
+<li><a href="/pages/32301/a-rainbow-in-every-lunch" title="A Rainbow In Every Lunch" class="internal_link">A Rainbow In Every Lunch</a></li>
+<li><a href="/pages/27731/benefits-of-growing-your-own-fruits-and-vegetables" title="Benefits of Growing Your Own Fruits and Vegetables" class="internal_link">Benefits of Growing Your Own Fruits and Vegetables</a></li>
+<li><a href="/pages/19887/cut-calories-by-choosing-fruits-and-vegetables" title="Cut Calories By Choosing Fruits and Vegetables" class="internal_link">Cut Calories By Choosing Fruits and Vegetables</a></li>
+<li><a href="/pages/19883/eat-a-colorful-variety-of-fruits-and-vegetables-every-day-for-better-health" title="Eat a Colorful Variety of Fruits and Vegetables Every Day for Better Health" class="internal_link">Eat a Colorful Variety of Fruits and Vegetables Every Day for Better Health</a></li>
+<li><a href="/pages/19871/enjoy-more-fruits-and-vegetables" title="Enjoy More Fruits and Vegetables" class="internal_link">Enjoy More Fruits and Vegetables</a></li>
+<li><a href="/pages/32330/farmers-markets:-a-great-way-to-stock-up-on-fruits-and-vegetables" title="Farmers' Markets: A great way to stock up on fruits and vegetables" class="internal_link">Farmers' Markets: A great way to stock up on fruits and vegetables</a></li>
+<li><a href="/pages/27758/food-desert" title="Food Desert" class="internal_link">Food Desert</a></li>
+<li><a href="/pages/19889/fruits-and-vegetables-fill-up-with-fewer-calories" title="Fruits and Vegetables - Fill Up With Fewer Calories" class="internal_link">Fruits and Vegetables - Fill Up With Fewer Calories</a></li>
+<li><strong class="selflink">Fruits and Vegetables - The BEST Snack Choice</strong></li>
+<li><a href="/pages/54322/fruits-and-vegetables-fresh-frozen-and-canned" title="Fruits and Vegetables, Fresh, Frozen, and Canned" class="internal_link">Fruits and Vegetables, Fresh, Frozen, and Canned</a></li>
+<li><a href="/pages/20274/getting-your-kids-to-eat-more-fruits-and-vegetables" title="Getting Your Kids to Eat More Fruits and Vegetables" class="internal_link">Getting Your Kids to Eat More Fruits and Vegetables</a></li>
+<li><a href="/pages/27730/health-benefits-of-eating-fruits-vegetables" title="Health Benefits of Eating Fruits &amp; Vegetables" class="internal_link">Health Benefits of Eating Fruits &amp; Vegetables</a></li>
+<li><a href="/pages/19885/how-long-do-fruits-and-vegetables-retain-their-nutrients" title="How Long Do Fruits and Vegetables Retain Their Nutrients" class="internal_link">How Long Do Fruits and Vegetables Retain Their Nutrients</a></li>
+<li><a href="/pages/19882/safe-food-handling-of-fruits-and-vegetables" title="Safe Food Handling of Fruits and Vegetables" class="internal_link">Safe Food Handling of Fruits and Vegetables</a></li>
+<li><a href="/pages/19888/shopping-for-fruits-and-vegetables" title="Shopping for Fruits and Vegetables" class="internal_link">Shopping for Fruits and Vegetables</a></li>
+<li><a href="/pages/32298/side-dishes-straight-from-the-farmers-market" title="Side Dishes - Straight from the Farmers Market" class="internal_link">Side Dishes - Straight from the Farmers Market</a></li>
+<li><a href="/pages/19886/storing-fruits-and-vegetables" title="Storing Fruits and Vegetables" class="internal_link">Storing Fruits and Vegetables</a></li>
+<li><a href="/pages/27757/summer-gardening" title="Summer Gardening" class="internal_link">Summer Gardening</a></li>
+<li><a href="/pages/19884/top-reasons-to-eat-more-fruits-and-vegetables" title='Top "10" Reasons to Eat More Fruits and Vegetables' class="internal_link">Top "10" Reasons to Eat More Fruits and Vegetables</a></li>
+<li><a href="/pages/24488/weight-loss-diets-which-one-is-the-best-for-you" title="Weight Loss Diets - Which One is the Best for You?" class="internal_link">Weight Loss Diets - Which One is the Best for You?</a></li>
+<li><a href="/pages/24341/what-are-the-key-nutrients-in-fruits-and-vegetables" title="What are the Key Nutrients in Fruits and Vegetables" class="internal_link">What are the Key Nutrients in Fruits and Vegetables</a></li>
+<li><a href="/pages/24340/what-is-the-best-cooking-method-to-preserve-the-nutrients-in-fruits-and-vegetables" title="What is the Best Cooking Method to Preserve the Nutrients in Fruits and Vegetables" class="internal_link">What is the Best Cooking Method to Preserve the Nutrients in Fruits and Vegetables</a></li>
+</ul>
+<hr>
+<br>
+</div><br><br><br><p><a href="/pages/20492/families-food-fitness:-glossary" title="Families Food Fitness: Glossary" class="internal_link">Glossary</a><br><a href="/pages/20284/families-food-and-fitness-resourcespublications" title="Families Food and Fitness Resources/Publications" class="internal_link"> Resources/Tools</a><br></p>
+  
+        <p class="caption publictags">Browse related Articles by tag: 
+          <a href="http://www.extension.org/families%20food%20fitness">families food fitness</a>, <a href="http://www.extension.org/enjoy%20more%20fruits%20and%20vegetables">enjoy more fruits and vegetables</a>    
+        </p>
+    </div>
+</div>
+<br class="clearing" />
+
+
+  <div id="aae_plug">
+    <h4>Have a specific question? <a href="http://www.extension.org/ask">Try asking one of our Experts</a></h4>
+    <p>Unlike most other resources on the web, we have experts from Universities around the country ready to answer your questions.</p>
+  </div>
+
+
+
+                <br class="clearing" />
+                </div>
+            </div>
+            
+            
+<div class="grid_5" id="rightcolumn">
+
+<div id="sidebar" class="rightcolumn">
+    
+    <div id="homage">
+        <p>This resource area was created by the: <span><a href="http://www.extension.org/pages/20268/families-food-and-fitness-community-page">Families, Food and Fitness</a> community</span></p>
+    </div>
+    <div class = "homagepic">
+        <img alt="copad_families_food_fitness.jpg" src="/logo/copad_families_food_fitness.jpg" />
+    </div>  
+
+    
+    
+    
+    
+
+    
+        <div class="rightcolmodule">
+        <h1><span class="feed">Resource Area Feeds</span></h1>
+        <ul>
+           
+            <li><a href="http://www.extension.org/feeds/content/families%20food%20fitness">Track all new content</a></li>  		      
+         </ul>
+         
+         </div>
+    
+    
+    
+        <div class="rightcolmodule">
+    	<h1>In This Resource Area</h1>
+    	<div>
+    		<ul>
+<li>
+<a href="/pages/19871/enjoy-more-fruits-and-vegetables" title="Enjoy More Fruits and Vegetables" class="internal_link">Enjoy More Fruits and Vegetables</a><br>
+</li>
+<li>
+<a href="/pages/19659/move-more-everyday" title="Move More Everyday" class="internal_link">Move More Everyday</a><br>
+</li>
+<li>
+<a href="/pages/19863/prepare-and-eat-more-meals-at-home" title="Prepare and Eat More Meals at Home" class="internal_link">Prepare and Eat More Meals at Home</a><br>
+</li>
+<li>
+<a href="/pages/19869/rethink-your-drink" title="Rethink Your Drink" class="internal_link">Rethink Your Drink</a><br>
+</li>
+<li>
+<a href="/pages/23940/right-size-your-portions" title="Right Size Your Portions" class="internal_link">Right Size Your Portions</a><br>
+</li>
+<li>
+<a href="/pages/23941/tame-the-tube" title="Tame the Tube" class="internal_link">Tame the Tube</a><br>
+</li>
+</ul><hr><div class="singleimage left"><img alt="illustration of thumbs up" src="/mediawiki/files/2/2c/Thumbs_up.jpg" width="62" height="54" border="0"></div>
+<p><br></p>
+<a name="How_are_we_doing.3F" id="How_are_we_doing.3F"></a><h2> <span class="mw-headline"> How are we doing? </span>
+</h2>
+<p><br><a href="http://www.surveygizmo.com/s/233647/families-food-and-fitness-user-survey" class="external_link" title="http://www.surveygizmo.com/s/233647/families-food-and-fitness-user-survey" rel="nofollow">Take our 5 Minute Survey</a>
+<br></p>
+<hr><p><b>Approved Resources</b>
+</p>
+<ul>
+<li>
+<a href="http://www.letsmove.gov/" class="external_link" title="http://www.letsmove.gov/" rel="nofollow">Let's Move! Website: America's Move to Raise a Healthier Generation of Kids</a><br>
+</li>
+<li>
+<a href="/pages/26092/your-food-environment-atlas" title="Your Food Environment Atlas" class="internal_link"> Your Food Environment Atlas</a><br>
+</li>
+<li>
+<a href="http://www.mypyramid.gov/" class="external_link" title="http://www.mypyramid.gov/" rel="nofollow">USDA MyPyramid</a>
+</li>
+</ul><hr><p><b>Interactive Tools</b>
+</p>
+<ul>
+<li>
+<a href="/pages/20276/interactive-beverage-guide-to-sugars" title="Interactive Beverage Guide to Sugars" class="internal_link">Interactive Beverage Guide to Sugars</a><br>
+</li>
+<li>
+<a href="/pages/24390/interactive-fast-food-menu-with-fitness" title="Interactive Fast Food Menu with Fitness" class="internal_link">Interactive Fast Food Menu with Fitness</a><br>
+</li>
+<li>
+<a href="/pages/20277/interactive-nutrition-facts-label" title="Interactive Nutrition Facts Label" class="internal_link">Interactive Nutrition Facts Label</a><br>
+</li>
+<li>
+<a href="/pages/20275/interactive-spice-guide" title="Interactive Spice Guide" class="internal_link">Interactive Spice Guide</a>
+</li>
+</ul><hr><p><b>Working on an AFRI Proposal?</b>
+</p>
+<ul>
+<li>
+<a href="http://connect.extension.iastate.edu/p27535810/" class="external_link" title="http://connect.extension.iastate.edu/p27535810/" rel="nofollow">View the "AFRI Q &amp; A" Webinar</a><br>
+</li>
+<li>
+<a href="http://nifa.usda.gov/funding/afri/afri_fas_child_obesity.html" class="external_link" title="http://nifa.usda.gov/funding/afri/afri_fas_child_obesity.html" rel="nofollow">“Considerations in Planning for Research, Education and Extension Programs in Obesity Prevention”</a><br>
+</li>
+<li>
+<a href="/pages/33674/do-we-have-to-include-usda-extension-communities-in-our-proposed-study" title="Do we have to include USDA eXtension Communities in our proposed study?" class="internal_link">Do we have to include USDA eXtension Communities in our proposed study?</a><br>
+</li>
+<li>
+<a href="/pages/33675/afri-guidelines" title="AFRI Guidelines" class="internal_link">AFRI Guidelines</a>
+</li>
+</ul><hr><ul>
+<li>
+<a href="/pages/23328/families-food-and-fitness-chat" title="Families Food and Fitness Chat" class="internal_link">Join a Families Food &amp; Fitness Chat</a><br>
+</li>
+<li>
+<a href="/pages/20492/families-food-fitness:-glossary" title="Families Food Fitness: Glossary" class="internal_link">Glossary Terms</a><br>
+</li>
+<li>
+<a href="/pages/20491/families-food-and-fitness-dynamic-list-of-recipes" title="Families Food and Fitness Dynamic List of Recipes" class="internal_link">Recipe Bank</a><br>
+</li>
+<li>
+<a href="/pages/23942/families-food-and-fitness-supplemental-documents" title="Families Food and Fitness Supplemental Documents" class="internal_link">Families Food &amp; Fitness Supplemental Documents</a>
+</li>
+</ul><hr><a name="Families_Food_and_Fitness_Partner" id="Families_Food_and_Fitness_Partner"></a><h2> <span class="mw-headline"><span style="color:#800000"><a href="/pages/27063/families-food-and-fitness-partner" title="Families Food and Fitness Partner" class="internal_link">Families Food and Fitness Partner</a></span></span>
+</h2>
+<p><b>Helping Communities Stand Up for Children.</b>
+</p>
+<hr><p><br></p>
+<div class="singleimage left"><img alt="Screen capture image of Youtube logo" src="/mediawiki/files/0/0a/Youtube_logo.jpg" width="106" height="46" border="0"></div><br class="clear"><p><br><a href="/pages/23939/instructional-videos" title="Instructional Videos" class="internal_link"><span style="color:#CD5C5C">YouTube Videos and Channel</span></a><br></p><p><br></p>
+<div class="singleimage left"><img alt="Find Us at Facebook" src="/mediawiki/files/1/11/Facebook_logo.gif" width="144" height="44" border="0"></div><br class="clear"><p><a href="http://ja-jp.facebook.com/pages/Families-Food-and-Fitness/134828792843?v=wall" class="external_link" title="http://ja-jp.facebook.com/pages/Families-Food-and-Fitness/134828792843?v=wall" rel="nofollow"><span style="color:#CD5C5C">Click Here to Like Our Facebook Page</span></a>
+</p><p><br></p>
+<div class="singleimage left"><img alt="Twitter Logo Header" src="/mediawiki/files/a/a7/Twitter_logo_header.png" width="144" height="33" border="0"></div><br class="clear"><p><a href="http://twitter.com/FFFCoP" class="external_link" title="http://twitter.com/FFFCoP" rel="nofollow"><span style="color:#CD5C5C">Click Here to Follow Us On Twitter</span></a>
+<br><br><br><br><br></p>
+<hr>
+    	</div>
+    	</div>
+    
+        
+    
+    
+</div> <!-- end .rightcolumn -->
+<br class="clearing" />
+</div>
+
+
+            </div>
+        
+        
+        
+        
+        
+        <div class="clear"></div>
+    </div><!-- end .container_16 -->
+    	</div><!-- end #wrapper -->
+	
+	</div><!-- end content_wrapper -->
+	
+	
+    <div id="footer_wrapper">
+		<div id="footer_inner_wrapper">
+            <div id="footer">
+                <p><span class="aboutexforprint">These resources are brought to you by the Cooperative Extension System and your Local Institution.</span> eXtension provides objective and research-based information and learning opportunities that help people improve their lives. eXtension is an educational partnership of 74 universities in the United States.</p>
+                <p class="copyright">&copy; 2011 eXtension. All rights reserved.</p>
+                <ul>
+                    <li><a href="/feeds" class="feeds">Feeds</a></li>
+                    <li><a href="/main/partners">institutional partners</a></li>
+                    <li><a href="/main/privacy">privacy</a></li>
+                    <li><a href="/main/contact_us">contact us</a></li>
+                    <li><a href="/main/disclaimer">disclaimer</a></li>
+                    <li class="last"><a href="/main/termsofuse">terms of use</a></li>
+                </ul>
+            </div>
+		</div>
+	</div>
+
+    </div><!-- end #body_wrapper -->
+
+
+
+
+<!-- GA for wwww.extension.org -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-155321-2']);
+  _gaq.push(['_setDomainName', '.extension.org']);
+  _gaq.push(['_setCustomVar', 2, 'login', 'anonymous', 1]);
+
+  _gaq.push(['_setCustomVar', 1, 'rat', 'families_food_fitness', 3]);
+  _gaq.push(['_trackPageview', '/pages/19879/fruits-and-vegetables-the-best-snack-choice?content_types=article&tags=families_food_fitness']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+  <script type="text/javascript"
+  src="http://s3.amazonaws.com/new.cetrk.com/pages/scripts/0006/2168.js">
+  </script>
+</body>
+</html>

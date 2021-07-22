@@ -1,0 +1,714 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:bold' rel='stylesheet' type='text/css'>
+<title>Researchers Develop Unnecessarily Tiny Pixels&#8230; Because They Can | Techi.com</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://cdn.techi.com/favicon.ico" type="image/x-icon" />
+<link rel="icon" type="image/png" href="http://www.techi.com/favicon.png" />
+<link rel="apple-touch-icon" href="http://www.techi.com/apple-touch-icon.png" />
+
+<link rel="stylesheet" href="http://cdn.techi.com/wp-content/themes/techi/style.css?v=345" type="text/css" media="screen" />
+<link rel="pingback" href="http://www.techi.com/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="Techi - Fresh Daily Technology News Feed" href="http://feeds.feedburner.com/techirss" />
+
+<script type="text/javascript" src="http://m.techi.com/mobify/redirect.js"></script>
+<script type="text/javascript">try{_mobify("http://m.techi.com/");} catch(err) {};</script>
+
+
+<link rel='stylesheet' id='contact-form-7-css'  href='http://www.techi.com/wp-content/plugins/contact-form-7/styles.css?ver=2.4.3' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.techi.com/wp-content/plugins/vipers-video-quicktags/resources/swfobject.js?ver=2.2'></script>
+<script type='text/javascript' src='http://cdn.techi.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js'></script>
+<script type='text/javascript'>try{jQuery.noConflict();}catch(e){};</script>
+<script type='text/javascript' src='http://www.techi.com/wp-content/plugins/wp-google-buzz/wp-google-buzz.js?ver=2.9.2'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.techi.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.techi.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Techi.com' href='http://www.techi.com' />
+<link rel='start' title='MIX: Windows Phone 7 Wonâ€™t Multitask' href='http://www.techi.com/2010/03/mix-windows-phone-7-won%e2%80%99t-multitask/' />
+<link rel='prev' title='Y&#8217;know, Steve Jobs Might Be A Cylon, Too' href='http://www.techi.com/2010/09/yknow-steve-jobs-might-be-a-cylon-too/' />
+<link rel='next' title='Rating Apple&#8217;s Annoucements: Great Updates to iPods, iTunes and a Meh Apple TV' href='http://www.techi.com/2010/09/rating-apples-annoucements-great-updates-to-ipods-itunes-and-a-meh-apple-tv/' />
+<meta name="generator" content="WordPress 2.9.2" />
+
+<!-- All in One SEO Pack 1.6.10.2 by Michael Torbert of Semper Fi Web Design[332,427] -->
+<meta name="description" content="You thought that Retina Display was smooth. You thought pixels 4 times smaller than regular pixels were impressive. Man, have you got something to learn" />
+<meta name="keywords" content="displays,iphone 4,pixels,tech,technology" />
+<link rel="canonical" href="http://www.techi.com/2010/09/researchers-develop-unnecessarily-tiny-pixels-because-they-can/" />
+<!-- /all in one seo pack -->
+<meta name="framework" content="Alkivia Framework 0.8" />
+<script type="text/javascript">
+//<![CDATA[
+var _wpcf7 = { cached: 1 };
+//]]>
+</script>
+	<script type="text/javascript"><!-- // -->
+	var popupTimer = null;
+	var rowPopupContents = new Object();
+	var xmlHttp = null;
+	var apiKey = '0ace5205d07e2023750491d50014495b';
+	var ws = 'xpzctff';
+	
+	function findPos(obj) {
+		var curleft = curtop = 0;
+		if (obj.offsetParent) {
+			curleft = obj.offsetLeft
+			curtop = obj.offsetTop
+			while (obj = obj.offsetParent) {
+				curleft += obj.offsetLeft
+				curtop += obj.offsetTop
+			}
+		}
+		return [curleft,curtop];
+	}
+
+	// Get a XMLHttpObject for different browsers
+	function GetXmlHttpObject(){
+		try{
+			// Firefox, Opera 8.0+, Safari
+			xmlHttp = new XMLHttpRequest();
+		}catch (e){
+			// Internet Explorer
+			try{
+				xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+			}catch (e){
+				xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+		}
+		return xmlHttp;
+	}
+
+	function showHint(apiKey, ws){
+		xmlHttp = GetXmlHttpObject();
+
+		if (xmlHttp == null){
+			return;
+		}
+		
+		var url = "http://www.techi.com/wp-content/plugins/goingup-web-analytics/Take.php";
+		url = url+"?apiKey="+apiKey+"&ws="+ws;
+
+		xmlHttp.onreadystatechange = stateChanged;
+		xmlHttp.open("GET",url,true);
+		xmlHttp.send(null);
+	}
+	// take state
+	function stateChanged(){ 
+		if (xmlHttp.readyState == 4){
+			var popup_content = document.getElementById('row_popup_content');
+			popup_content.innerHTML = xmlHttp.responseText;
+		}
+	}
+
+	function showPopupTimer(){
+		clearTimeout(popupTimer);
+		popupTimer = setTimeout('showRowPopup()',300);
+	}
+
+	function showRowPopup(){
+		var popupob = document.getElementById('row_popup');
+		var gupob = document.getElementById('row_gu');
+		var popup_content = document.getElementById('row_popup_content');
+		var gu_pos = findPos(gupob);
+
+		var loading_content = '<div stlye="width:100%; height:100%; margin:30px; vertical-align:middle; text-align:center"><br><span style="color:#111111; font-size:10px">Retrieving Data. Please Wait.</span></div>';
+		popupob.style.left = gu_pos[0] + 250 + "px";
+		popupob.style.top = gu_pos[1] - 250 + "px";
+		
+		if (popupob.style.display!='block'){
+			popupob.style.visibility = 'visible';
+			popupob.style.display = 'block';
+			popup_content.innerHTML = loading_content;
+		}
+		fillRowPopup();
+	}
+
+	function fillRowPopup(){
+		showHint(apiKey,ws);
+	}
+	
+	function hideRowPopup(){
+		clearTimeout(popupTimer);
+		var popupob = document.getElementById('row_popup');
+		popupob.style.visibility = 'hidden';
+		popupob.style.display = 'none';
+	}
+
+	</script>
+<!-- Shorturl added by shorten2ping -->
+<link rel="shortlink" href="http://bit.ly/cPQ4UX" />
+<!-- Img for Facebook thumbnail added by Shorten2Ping -->
+<link rel="image_src" href="http://cdn.techi.com/wp-content/uploads/2010/09/unimichiganlogo.jpg" />
+<!-- Vipers Video Quicktags v6.2.14 | http://www.viper007bond.com/wordpress-plugins/vipers-video-quicktags/ -->
+<style type="text/css">
+.vvqbox { display: block; max-width: 100%; visibility: visible !important; margin: 10px auto; } .vvqbox img { max-width: 100%; height: 100%; } .vvqbox object { max-width: 100%; } 
+</style>
+<script type="text/javascript">
+// <![CDATA[
+	var vvqflashvars = {};
+	var vvqparams = { wmode: "opaque", allowfullscreen: "true", allowscriptacess: "always" };
+	var vvqattributes = {};
+	var vvqexpressinstall = "http://www.techi.com/wp-content/plugins/vipers-video-quicktags/resources/expressinstall.swf";
+// ]]>
+</script>
+<!--<script src="http://cdn.techi.com/wp-content/themes/techi/js/jquery-1.4.2.min.js" type="text/javascript" ></script>-->
+<!--[if IE]>
+<script type="text/javascript" src="http://cdn.techi.com/wp-content/themes/techi/js/excanvas.compiled.js"></script>
+<![endif]-->
+
+<!--[if IE]>
+<link rel="stylesheet" href="http://cdn.techi.com/wp-content/themes/techi/css/ie.css" type="text/css" media="screen" />
+<![endif]-->
+
+<script type='text/javascript'><!--// <![CDATA[
+var OA_zones = {
+'Content Ad' : 28,
+'Skyscraper' : 31,
+'Comment Sponsor' : 29,
+'Leaderboard' : 27,
+'Sponsor 1' : 30,
+'Sponsor 2' : 30,
+'Homepage' : 32
+}
+// ]]> --></script>
+<script type='text/javascript' src='http://auslieferung.commindo-media-ressourcen.de/www/delivery/spcjs.php?id=5&amp;block=1&amp;blockcampaign=1&amp;withtext=1'></script>
+</head>
+<body class="single postid-16151">
+<!-- BuySellAds.com Ad Code -->
+<script type="text/javascript">
+(function(){
+  var bsa = document.createElement('script');
+     bsa.type = 'text/javascript';
+     bsa.async = true;
+     bsa.src = '//s3.buysellads.com/ac/bsa.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<!-- End BuySellAds.com Ad Code -->
+<div id="header">
+  <!--<div id="header-underline"></div>-->
+	
+  <div id="header-content">
+  
+
+	
+	<div id="head-bottom">
+	  <div id="logo">
+	     <div class="logo-strip"></div>
+		   <a href="http://www.techi.com/"> </a>
+	  </div>    
+	  
+	  
+	  
+	  <div id="search-block">
+		<form action="/" id="searchform" method="get" >
+	<div id="search-box">
+	<input type="text" id="s" name="s" value="SEARCH ME" onclick="if(this.value == 'SEARCH ME')this.value = ''; " />
+	<input type="submit" value="" id="searchsubmit" />
+	</div>
+	</form>	  </div>
+	  
+	  <div id="top-icons">
+	      
+		  <span>
+			<a  href="http://www.facebook.com/pages/Techi/345165772693" id="facebook-link" class="external"></a>
+			<a href="http://twitter.com/techiblog" id="twitter-link"></a>
+			<a  id="email-link" href="http://feedburner.google.com/fb/a/mailverify?uri=techirss&#038;loc=en_US" title="Subscribe to Techi by Email" class="external"></a>
+						<a href="/rssfeeds/" id="rss-link"></a>
+			<a  href="http://www.google.com/profiles/techibuzz" id="buzz-link" class="external"></a>
+		  </span>
+		  <div id="subandfollow"></div>
+		
+	   </div>
+	   
+	  <div class="clr"></div>
+	</div> <!-- #head-bottom -->
+	
+  <div id="categories-top">
+    <div id="categories-top-wrap">
+  <a href="http://www.techi.com/category/apple/">APPLE</a><a  href="http://www.techi.com/category/design/">DESIGN</a><a  href="http://www.techi.com/category/facebook/">FACEBOOK</a><a  href="http://www.techi.com/category/gadgets/">GADGETS</a><a  href="http://www.techi.com/category/gaming/">GAMING</a><a  href="http://www.techi.com/category/google/">GOOGLE</a><a  href="http://www.techi.com/category/hardware/">HARDWARE</a><a  href="http://www.techi.com/category/lifestyle/">LIFESTYLE</a><a  href="http://www.techi.com/category/microsoft/">MICROSOFT</a><a  href="http://www.techi.com/category/mobile/">MOBILE</a><a  href="http://www.techi.com/category/offbeat/">OFFBEAT</a><a  href="http://www.techi.com/category/robotics/">ROBOTICS</a><a  href="http://www.techi.com/category/software/">SOFTWARE</a><a  href="http://www.techi.com/category/technology/">TECHNOLOGY</a><a  href="http://www.techi.com/category/twitter/">TWITTER</a>    </div>
+  </div>
+	
+	<div id="top-banner">
+		<script type='text/javascript'><!--// <![CDATA[
+    OA_show('Leaderboard');
+// ]]> --></script>	   		
+	</div>
+	
+	 	
+		
+	
+	
+			
+  </div> <!-- end header-content -->
+  <div class="clr"></div>
+</div> <!-- end header -->
+<div class="clr"></div>
+<div id="page">
+
+
+
+	<div id="content" >
+
+		<div class='single-content-wrap'>
+							<div class="post-16151 post hentry category-technology tag-displays tag-iphone-4 tag-pixels tag-tech news" id="post-16151">
+			<h1>Researchers Develop Unnecessarily Tiny Pixels... Because They Can</h1>
+			<small>
+			<a  href="/news"><span class="news-icon"></span></a><span class="post-info">
+			Sep 1 by <a  class="author-link" href="/author/tydunitz">Ty Dunitz</a> <span class="title-comments-info">|
+			<a  href="#comments">2 comments</a></span>
+			</span></small><br />
+						<div class="clr"></div>
+			
+							<!--<div style="margin-left:150px;">
+				<script type='text/javascript'>				
+    				OA_show('Content Ad');				
+				</script>
+				</div> -->
+			
+			<div class="entry" id="content_single">
+			    			    				<p><a  href="http://cdn.techi.com/wp-content/uploads/2010/09/unimichiganlogo.jpg"><img class="alignnone size-full wp-image-16152" src="http://cdn.techi.com/wp-content/uploads/2010/09/unimichiganlogo.jpg" alt="" width="600" height="262" /></a></p>
+<p>You thought that Retina Display was smooth. You thought pixels 4 times smaller than regular pixels were impressive. Man, have <em>you</em> got something to learn about what smooth be.</p>
+<p>Smooth be this: Researchers at the University of Michigan have <a  href="http://www.tuaw.com/2010/08/30/researchers-create-pixels-eight-times-smaller-than-the-retina-di/" class="external">created</a> a display with a resolution so, so, so, so, so fine, that the pixels used are eight times smaller than those used on the iPhone 4. Now, let&#8217;s put this into perspective. To show off the technology, the researchers recreated the U of M logo on a screen 9 microns tall.</p>
+<p>A human hair is 100 microns wide.</p>
+<p>I know, right?</p>
+<p>Created with nanometer-thin sheets of metal, this display is absolutely what smooth be. And you thought your television was HD. You don&#8217;t know nothin&#8217;. You don&#8217;t know nothin&#8217; &#8217;bout HD.</p>
+<p>This will be so damn expensive.</p>
+				<iframe src="http://www.facebook.com/plugins/like.php?href=http://www.techi.com/2010/09/researchers-develop-unnecessarily-tiny-pixels-because-they-can/&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:450px; height: 30px; align: left; margin: 2px 0px 2px 0px"></iframe>				<div class="clr"></div>
+				
+
+<div class="digg_bookmark" >
+	<script type="text/javascript" src="http://reddit.com/static/button/button2.js"></script>
+</div>
+
+
+<div class="digg_bookmark">	
+	<script type="text/javascript">
+	(function() {
+	var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
+	s.type = 'text/javascript';
+	s.async = true;
+	s.src = 'http://widgets.digg.com/buttons.js';
+	s1.parentNode.insertBefore(s, s1);
+	})();
+	</script>
+	<a class="DiggThisButton DiggMedium"></a>
+</div>
+
+<div class="digg_bookmark" >	
+<!--<a href="http://twitter.com/share" class="twitter-share-button" data-url='http://www.techi.com/2010/09/researchers-develop-unnecessarily-tiny-pixels-because-they-can/'  data-count="vertical">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>-->
+                     <script type="text/javascript">
+                    //<![CDATA[
+                        tweetmeme_url = 'http://www.techi.com/2010/09/researchers-develop-unnecessarily-tiny-pixels-because-they-can/';
+                    //]]></script><script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script></div>
+
+		
+	<div class="middle_bookmark">  
+  <div class="icons_bookmark">	
+  	<span id="facebook-box">
+	<a  name="fb_share" type="box_count" href="http://www.facebook.com/sharer.php" class="external">Share</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+	</span>
+	  </div>
+</div>
+<div style="clear:both"></div>
+
+
+
+
+
+
+			</div>
+			
+		</div>
+		
+    </div> <!-- single-content-wrap -->
+	
+	
+	
+<div id="author-block">
+  <div class="inner-strip">WRITTEN BY TY DUNITZ </div>
+
+  <div id="author-info" >
+  
+    <span class="author-avatar"><a  href="/author/tydunitz"><img alt='' src='http://www.gravatar.com/avatar/ec18cf9f9333d524e9dd0b5a8cb9b6ed?s=54&amp;d=http%3A%2F%2Fwww.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D54&amp;r=G' class='avatar avatar-54 photo' height='54' width='54' /></a></span>
+	<div class="author-description">
+	  <!--<div class="author-title">Written by&nbsp;<strong>Ty Dunitz</strong></div>-->
+	  	  <p >Ty is an illustrator who stays up too late, and has to wear glasses. You can follow him on Twitter if you want to (<a  href="http://twitter.com/glitchritual" class="external">@glitchritual</a>), but he's just gonna throw your stupid PR crap in the garbage, so don't email him.</p>
+	  </div>
+    <div class="clr"></div>
+  </div>
+</div>
+	
+	  
+			
+	
+	<div id='related-stories'>
+<div class="inner-strip">RELATED STORIES</div>
+  <div class="related-meta-info">
+			   <strong>Categories:</strong>
+			  <a  href="/?cat=10">Technology</a> 			   <br/><strong>Tags:</strong>
+			   <a  href="/?tag=displays">#displays</a> <a  href="/?tag=iphone-4">#iphone 4</a> <a  href="/?tag=pixels">#pixels</a> <a  href="/?tag=tech">#tech</a> 				 
+</div>
+<div class="related-stories-wrap">			   
+       <a  href="http://www.techi.com/2011/02/pixels-old-school/" class="home-mini-post ">
+      
+	  <span  class="img-wrap"><img src='http://cdn.techi.com/wp-content/uploads/2011/02/Pixels_techi_thumbnail.jpg' alt='' />
+	  	  </span>
+      <span class="home-mini-title">Pixels. Old School.</span>
+	  
+   </a>
+          <a  href="http://www.techi.com/2011/01/the-iphone-4s-delay-was-caused-by-paint/" class="home-mini-post ">
+      
+	  <span  class="img-wrap"><img src='http://cdn.techi.com/wp-content/uploads/2011/01/1321926415_techi_thumbnail.jpg' alt='' />
+	  	  </span>
+      <span class="home-mini-title">The iPhone 4's Delay Was Caused by... Paint</span>
+	  
+   </a>
+          <a  href="http://www.techi.com/2011/01/old-laptop-into-digital-frame-sure-why-not/" class="home-mini-post ">
+      
+	  <span  class="img-wrap"><img src='http://cdn.techi.com/wp-content/uploads/2011/01/done_techi_thumbnail.jpg' alt='' />
+	  	  </span>
+      <span class="home-mini-title">Old Laptop Into Digital Frame? Sure, Why Not?</span>
+	  
+   </a>
+          <a  href="http://www.techi.com/2011/01/the-coolest-and-most-unergonomic-iphone-4-case-yet/" class="home-mini-post home-mini-most-right">
+      
+	  <span  class="img-wrap"><img src='http://cdn.techi.com/wp-content/uploads/2011/01/iphone-brickcase_techi_thumbnail.jpg' alt='' />
+	  	  </span>
+      <span class="home-mini-title">The Coolest and Most Unergonomic iPhone 4 Case Yet</span>
+	  
+   </a>
+   <div class="clr"></div>       <a  href="http://www.techi.com/2011/01/2010-tech-in-review/" class="home-mini-post ">
+      
+	  <span  class="img-wrap"><img src='http://cdn.techi.com/wp-content/uploads/2011/01/2010-Tech-Review_techi_thumbnail.jpg' alt='' />
+	  	  </span>
+      <span class="home-mini-title">2010 Tech in Review</span>
+	  
+   </a>
+          <a  href="http://www.techi.com/2010/11/microsoft-wants-you-to-just-shut-up-and-touch-it/" class="home-mini-post ">
+      
+	  <span  class="img-wrap"><img src='http://cdn.techi.com/wp-content/uploads/2010/11/microsoft_surface_main_techi_thumbnail.jpg' alt='' />
+	  	  </span>
+      <span class="home-mini-title">Microsoft Wants You To Just Shut Up And Touch It</span>
+	  
+   </a>
+          <a  href="http://www.techi.com/2010/11/5-industries-the-internet-is-transforming/" class="home-mini-post ">
+      
+	  <span  class="img-wrap"><img src='http://cdn.techi.com/wp-content/uploads/2010/11/broken-camcorder_techi_thumbnail.jpg' alt='' />
+	  	  </span>
+      <span class="home-mini-title">5 Technologies The Internet Is Transforming</span>
+	  
+   </a>
+          <a  href="http://www.techi.com/2010/11/samsung-pwns-fpd-2010-with-scores-of-cool-tech/" class="home-mini-post home-mini-most-right">
+      
+	  <span  class="img-wrap"><img src='http://cdn.techi.com/wp-content/uploads/2010/11/samsung-disp-001_techi_thumbnail.jpg' alt='' />
+	  	  </span>
+      <span class="home-mini-title">Samsung Pwns FPD 2010 with Scores of Cool Tech</span>
+	  
+   </a>
+   <div class="clr"></div>   			 
+	<div class="clr"></div>
+ </div><!-- related storis wrap -->
+ 
+</div>	
+	
+<!-- You can start editing here. -->
+ 
+ 
+    <div class="inner-strip comm-num-title">2 COMMENTS</div>
+	<!--<h3 id="comments">2 Responses to &#8220;Researchers Develop Unnecessarily Tiny Pixels&#8230; Because They Can&#8221;</h3>-->
+
+
+	<ol class="commentlist" id="comments">
+	
+
+   <li id="comment-3828" class="comment even thread-even depth-1">
+    <div class="comment-block ">
+	
+    <img alt='' src='http://www.gravatar.com/avatar/c4bfb48991e2399c00cb77588fb4fb56?s=75&amp;d=http%3A%2F%2Fwww.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D75&amp;r=G' class='avatar avatar-75 photo' height='75' width='75' />    <div class="comment-meta">	   
+	   <span class="author-name">Will Heeton</span> on 
+	   September 1, 2010 at 1:44 pm	   </div>
+	   
+	   <span class="comment-number">#1</span>
+
+  
+          <div class="comment-content">
+
+        <p>This is great stuff. It is exciting to think what what can be accomplished with this. I thought the iPhone 4 screen was amazing.</p>
+
+    </div>
+
+  <a  rel="nofollow" class="comment-reply-link" href="/2010/09/researchers-develop-unnecessarily-tiny-pixels-because-they-can/?replytocom=3828#respond" onclick="return addComment.moveForm('comment-3828', '3828', 'respond', '16151')">reply</a>    <div class="clr"></div>
+ </div> <!-- comment wrap -->
+</li>
+
+   <li id="comment-5632" class="comment odd alt thread-odd thread-alt depth-1">
+    <div class="comment-block ">
+	
+    <img alt='' src='http://www.gravatar.com/avatar/0be786e917501d0b5fc35e1aaf503c99?s=75&amp;d=http%3A%2F%2Fwww.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D75&amp;r=G' class='avatar avatar-75 photo' height='75' width='75' />    <div class="comment-meta">	   
+	   <span class="author-name">Denis</span> on 
+	   January 4, 2011 at 12:10 pm	   </div>
+	   
+	   <span class="comment-number">#2</span>
+
+  
+          <div class="comment-content">
+
+        <p>I was reading up on video eyewear and the best res is 640 by 480. This could change all that. Imagine 1080p in a pair of glasses. A pair of two inch screens could be as effective as going to the theater.<br />
+Just a thought</p>
+
+    </div>
+
+  <a  rel="nofollow" class="comment-reply-link" href="/2010/09/researchers-develop-unnecessarily-tiny-pixels-because-they-can/?replytocom=5632#respond" onclick="return addComment.moveForm('comment-5632', '5632', 'respond', '16151')">reply</a>    <div class="clr"></div>
+ </div> <!-- comment wrap -->
+</li>
+	</ol>
+
+	
+ 
+
+
+<div id="respond">
+  <div class="inner-strip leave-comment">LEAVE A COMMENT</div>
+  <div id="respond-content">
+<!--<h3>Leave a Reply</h3>-->
+
+<div class="cancel-comment-reply">
+	<small><a  rel="nofollow" id="cancel-comment-reply-link" href="/2010/09/researchers-develop-unnecessarily-tiny-pixels-because-they-can/#respond" style="display:none;">Click here to cancel reply.</a></small>
+</div>
+
+
+<form action="http://www.techi.com/wp-comments-post.php" method="post" id="commentform">
+
+
+<p>
+<label for="author">NAME</label><br/>
+<input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />
+</p>
+
+<p id="email-input">
+<label for="email">EMAIL</label><br/>
+<input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' />
+</p>
+
+<p id="website-input">
+<label for="url">WEBSITE</label><br/>
+<input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+</p>
+<div class="clr"></div>
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+
+<p><label>DISCUSS</label><br/><textarea name="comment" id="comment" cols="58" rows="10" tabindex="4"></textarea></p>
+			<div id="captchaNumDiv">
+			<script>
+			function randomToN(maxVal,floatVal)
+			{
+				var randVal = Math.random()*maxVal;
+				return typeof floatVal=='undefined'?Math.round(randVal):randVal.toFixed(floatVal);
+			}
+			
+			var rand_a = randomToN(4) + 1;
+			var rand_b = randomToN(4) + 1;
+			
+			 var output = '<p><input autocomplete="off" style="width:auto; margin-right:10px;" type="text" name="captcha_num" id="captcha_num" size="2" maxlength="2" />';
+             output += '<input autocomplete="off" type="hidden" id="cnd-rand-a" name="rand_a" value="'+ rand_a +'" />';
+			 output += '<input autocomplete="off" type="hidden" id="cndr-'+ rand_b +'" name="rand_b" value="'+ rand_b +'" />';
+             output += '<label><span>' + rand_a +'+' + rand_b +  '=?</span> (required)</label></p>';
+			 
+			 document.write(output);
+			 
+			
+			</script>
+			</div>
+			
+			<p><input name="submit" type="submit" id="submit" tabindex="5" value="POST COMMENT" />
+<input type='hidden' name='comment_post_ID' value='16151' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p>
+
+
+</form>
+
+  </div>
+</div>
+
+
+	
+	</div>
+	<div id="sidebar">
+	
+	<div class="sidebar-square-banner" style="margin-top:0;">
+		<!-- BuySellAds.com Zone Code -->
+<div id="bsap_1254444" class="bsarocks bsap_f1659c145317d5733d932c5b98493348"></div>
+<!-- End BuySellAds.com Zone Code -->
+		<!-- <a  href="http://www.mightydeals.com" class="external"><img src="http://cdn.techi.com/wp-content/themes/techi/images/ads/md300x250_2.jpg" width="300" height="250" alt="Daily Deals for Creative Professionals" /></a>	-->	
+	</div>
+	
+	
+		 
+<div class="sidebar-facebook"><iframe src="http://www.facebook.com/plugins/likebox.php?id=345165772693&amp;width=300&amp;connections=10&amp;stream=false&amp;header=true&amp;height=287" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:287px;" allowTransparency="false"></iframe></div>
+
+<div id="category-widget" class="techi-side-widget">
+  <div class="techi-widget-title"><span class="slide-title">BROWSE BY CATEGORIES<span class="second-title"></span></span></div>
+  <div id="category-widget-wrap" class="sliding-widget-wrap">
+  
+  <div id="category-widget-icons" class="left-part">
+  
+  <a href="javascript:;" onclick="browse_category('3','http://www.techi.com/wp-content/themes/techi/ajax/category_posts.php','LATEST APPLE POSTS')"  class="cat-icon-wrap most-left"><span class="cat-icon-3"></span><br/>Apple</a><a href="javascript:;" onclick="browse_category('11','http://www.techi.com/wp-content/themes/techi/ajax/category_posts.php','LATEST DESIGN POSTS')"  class="cat-icon-wrap"><span class="cat-icon-11"></span><br/>Design</a><a href="javascript:;" onclick="browse_category('6','http://www.techi.com/wp-content/themes/techi/ajax/category_posts.php','LATEST FACEBOOK POSTS')"  class="cat-icon-wrap"><span class="cat-icon-6"></span><br/>Facebook</a><a href="javascript:;" onclick="browse_category('5','http://www.techi.com/wp-content/themes/techi/ajax/category_posts.php','LATEST GADGETS POSTS')"  class="cat-icon-wrap most-right"><span class="cat-icon-5"></span><br/>Gadgets</a><a href="javascript:;" onclick="browse_category('56','http://www.techi.com/wp-content/themes/techi/ajax/category_posts.php','LATEST GAMING POSTS')"  class="cat-icon-wrap most-left"><span class="cat-icon-56"></span><br/>Gaming</a><a href="javascript:;" onclick="browse_category('7','http://www.techi.com/wp-content/themes/techi/ajax/category_posts.php','LATEST GOOGLE POSTS')"  class="cat-icon-wrap"><span class="cat-icon-7"></span><br/>Google</a><a href="javascript:;" onclick="browse_category('9','http://www.techi.com/wp-content/themes/techi/ajax/category_posts.php','LATEST HARDWARE POSTS')"  class="cat-icon-wrap"><span class="cat-icon-9"></span><br/>Hardware</a><a href="javascript:;" onclick="browse_category('202','http://www.techi.com/wp-content/themes/techi/ajax/category_posts.php','LATEST LIFESTYLE POSTS')"  class="cat-icon-wrap most-right"><span class="cat-icon-202"></span><br/>Lifestyle</a><a href="javascript:;" onclick="browse_category('4','http://www.techi.com/wp-content/themes/techi/ajax/category_posts.php','LATEST MICROSOFT POSTS')"  class="cat-icon-wrap most-left"><span class="cat-icon-4"></span><br/>Microsoft</a><a href="javascript:;" onclick="browse_category('13','http://www.techi.com/wp-content/themes/techi/ajax/category_posts.php','LATEST MOBILE POSTS')"  class="cat-icon-wrap"><span class="cat-icon-13"></span><br/>Mobile</a><a href="javascript:;" onclick="browse_category('1477','http://www.techi.com/wp-content/themes/techi/ajax/category_posts.php','LATEST OFFBEAT POSTS')"  class="cat-icon-wrap"><span class="cat-icon-1477"></span><br/>Offbeat</a><a href="javascript:;" onclick="browse_category('175','http://www.techi.com/wp-content/themes/techi/ajax/category_posts.php','LATEST ROBOTICS POSTS')"  class="cat-icon-wrap most-right"><span class="cat-icon-175"></span><br/>Robotics</a><a href="javascript:;" onclick="browse_category('8','http://www.techi.com/wp-content/themes/techi/ajax/category_posts.php','LATEST SOFTWARE POSTS')"  class="cat-icon-wrap most-left"><span class="cat-icon-8"></span><br/>Software</a><a href="javascript:;" onclick="browse_category('10','http://www.techi.com/wp-content/themes/techi/ajax/category_posts.php','LATEST TECHNOLOGY POSTS')"  class="cat-icon-wrap"><span class="cat-icon-10"></span><br/>Technology</a><a href="javascript:;" onclick="browse_category('12','http://www.techi.com/wp-content/themes/techi/ajax/category_posts.php','LATEST TWITTER POSTS')"  class="cat-icon-wrap"><span class="cat-icon-12"></span><br/>Twitter</a>	
+	</div> <!-- icons end -->
+	
+	<div id="category-widget-content" class="right-part">
+	  <div class="dynamic-page-strip">
+	    <a href="javascript:;" onclick="category_widget_back()" class="back-btn">&laquo; BACK</a>
+	    <span class="see-all"></span>
+		<div class="clr"></div>
+	  </div>
+	  <div id="category-widget-categories" class="dynamic-list"></div>
+	  
+	</div> <!-- end category-widget-items -->
+	
+  </div> <!-- wrap end -->
+   
+</div> <!-- widget end -->
+<div class="clr"></div>
+
+
+ 
+<div class="side-sky-banner-160">
+<script type='text/javascript'><!--// <![CDATA[
+    OA_show('Skyscraper');
+// ]]> --></script>
+</div>
+
+ 
+
+ 
+ 
+ <a  class="sidebar-square-banner external" href="http://www.vps.net/?w3source=4" rel="nofollow"><img src="http://cdn.techi.com/wp-content/themes/techi/images/ads/vps2.jpg" alt='' /></a>
+ 
+ 
+ <div id="side-neatorama-widget" class="techi-side-widget">
+<div class="techi-widget-title"><span class="slide-title">FROM NEATORAMA<span class="second-title"></span></span></div>
+<div style="margin-left:9px;"> 
+ <script type="text/javascript">var neatohub_opts={border:"#ffffff",bgcolor:"#FFFFFF",perrow:2};</script><script type="text/javascript" src="http://www.neatorama.com/neatohub/widget/86/4/108"></script>
+ </div>
+ </div>
+ 
+ <div class="sidebar-square-banner">
+<!-- ValueClick Media 300x250 Medium Rectangle CODE for Techi -->
+<script language="javascript" src="http://media.fastclick.net/w/get.media?sid=55312&m=6&tp=8&d=j&t=n"></script>
+<noscript><a  href="http://media.fastclick.net/w/click.here?sid=55312&#038;m=6&#038;c=1" target="_blank" class="external">
+<img src="http://media.fastclick.net/w/get.media?sid=55312&m=6&tp=8&d=s&c=1" width=300 height=250 border=1></a></noscript>
+<!-- ValueClick Media 300x250 Medium Rectangle CODE for Techi -->
+ </div>
+ 
+ 
+ 
+
+
+		
+</div>
+
+
+<!-- Javascript tag: -->
+<!-- begin ZEDO for channel: Techi.com , publisher: Freestyle Networks Inc , Ad Dimension: Super Banner - 728 x 90 -->
+<div class="clr"></div>
+<div id="footer-banner">
+<script type="text/javascript"><!--
+google_ad_client = "pub-5778786047058798";
+/* 728x90, created 12/20/10 */
+google_ad_slot = "0946509583";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+</div> <!-- end of page -->
+<div class="clr"></div>
+
+<div id="footer">
+
+
+ <div id="footer-wrap">
+ <a  href="#header" class="top-link">TOP OF PAGE</a>
+ 
+  <div class="logo-wrap">
+    <div class="logo-strip"></div>
+    <a  href="/" id="footer-logo"></a>
+  </div>
+  
+  <div id="pages-bottom-links">
+    <a href="/about/"><span>ABOUT US</span></a>
+	<a href="mailto:advertising[at]techi.com"><span>ADVERTISING</span></a><br/>
+	<a  href="/authors-list/"><span>AUTHORS</span></a>
+	<a  href="/disclaimer-and-privacy-policy/"><span>PRIVACY POLICY</span></a><br/>
+	<a  href="/submit-review/"><span>GET REVIEWED</span></a> 
+	<a  href="/contact/"><span>CONTACT US</span></a>  </div>
+ 
+   <div id="footer-info">
+    <div class="trade">Techi&trade; - Fresh daily technology news, editorials and reviews. Send tips to <a href="mailto:tips[at]techi.com">tips[@]techi.com</a>.</div>
+    <div class="rights">&copy; 2011 All Rights Reserved</div>
+  </div>
+  
+ </div> <!-- end of footer wrap -->
+</div> <!-- end footer -->
+
+
+
+<script type='text/javascript' src='http://www.techi.com/wp-content/plugins/contact-form-7/jquery.form.js?ver=2.52'></script>
+<script type='text/javascript' src='http://www.techi.com/wp-content/plugins/contact-form-7/scripts.js?ver=2.4.3'></script>
+	<div style="display:none"><script type="text/javascript">
+document.write(unescape('%3Cscript type="text/javascript" src="'+
+document.location.protocol+'//counter.goingup.com/js/tracker.js?st=xpzctff&amp;b=5"%3E%3C/script%3E'));
+</script>
+<noscript><div><a  href="http://www.goingup.com" title="web metrics" class="external"><img src="http://counter.goingup.com/default.php?st=xpzctff&amp;b=5" alt="web metrics" /></a></div></noscript></div>
+<script src="http://cdn.techi.com/wp-content/themes/techi/js/jquery.timer.js" type="text/javascript" ></script>
+<script src="http://cdn.techi.com/wp-content/themes/techi/js/jquery.flow.1.1.min.js" type="text/javascript" ></script>
+<script src="http://cdn.techi.com/wp-content/themes/techi/js/main.js?v=21" type="text/javascript" ></script>
+<script type="text/javascript">
+/***********************************************
+* Easy Email Scrambler script- © Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var maildivider="[at]" //enter divider you use to divide your email address strings
+
+for (i=0; i<=(document.links.length-1); i++){
+if (document.links[i].href.indexOf(maildivider)!=-1)
+document.links[i].href=document.links[i].href.split(maildivider)[0]+"@"+document.links[i].href.split(maildivider)[1]
+}
+
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-331696-11']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- <script type="text/javascript" src="http://dnn506yrbagrg.cloudfront.net/pages/scripts/0011/2948.js"> </script> -->
+<script type="text/javascript">document.write(unescape('%3Cscript type="text/javascript" src="'+document.location.protocol+'//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/2948.js"%3E%3C%2Fscript%3E'))</script>
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using disk
+Page Caching using disk (enhanced)
+Database Caching 4/39 queries in 0.141 seconds using apc
+Object Caching 796/845 objects using disk
+Content Delivery Network via cdn.techi.com
+
+Served from: www.techi.com @ 2011-03-01 03:02:37 -->

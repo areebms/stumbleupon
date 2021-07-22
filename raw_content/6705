@@ -1,0 +1,693 @@
+<!DOCTYPE HTML>
+<html xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8">
+<title>It is time for software development for accurate business decision making</title>
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+<META NAME="description" CONTENT="A software development company usually employs skilled business analysts who map the businesses and as per cases the tailored solution are offered.">
+<Meta NAME="KEYWORDS" CONTENT="Website Design, Web Site Design, Web Design, Website Designer, Web Development, Web Developer, Website Developer, Website Development, Web Applications Development, Software Development, Web Portal, Graphic Design, E-Commerce,  Project Management, Web Design Sydney Australia, Web Design Sydney, Web Designer Sydney, Australian Web Designer, Sigma InfoTech">
+<link href="../css/default.css" rel="stylesheet" type="text/css">
+<link href="css/fonts.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../js/html5.js"></script>
+<link href="../css/defaultie8.css" rel="stylesheet" type="text/css">
+<![endif]-->
+<script type="text/javascript">document.write('<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"><link href="../css/defaultie.css" rel="stylesheet" type="text/css">');</script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/scrolltopcontrol.js"></script>
+
+<!--Start Lazyload js -->
+
+<script src="../js/jquery.lazyload.js" type="text/javascript"></script>
+
+<!--End Lazyload js -->
+
+<script type="text/javascript" src="../js/custom.js"></script>
+
+<!--Form -->
+
+<script type="text/javascript" src="../js/ajax.js"></script>
+<script type="text/javascript" src="../js/ajaxSubmit.js"></script>
+
+<!--Ends Form -->
+</head>
+
+<body><!-- #BeginLibraryItem "/Library/requestquote.lbi" --><!--Request Quote -->
+<section class="quoteSection">
+  <div class="quoteBg">
+    <div class="quote"> 
+      <!--Left -->
+      <div class="leftSide">
+        <p><img src="../images/request-quote-txt.png" width="195" height="198" alt="Request a quote"></p>
+        <div class="cl"><!--Clear --></div>
+      </div>
+      <!--Ends Left --> 
+      <!--Right -->
+      <div class="rightSide">
+        <p class="closeBtn"><span>Close</span></p>
+        <form name="frm_quote" id="frm_quote" action="../req_mail.php" method="post" onSubmit="return req_quote(this);">
+          <input type="hidden" name="servicetype" id="servicetype">
+          <fieldset>
+            <legend>Request a quote</legend>
+            <div class="reqContact">
+              <p class="headingTxt">Your Contact Information:</p>
+              <input name="rqfname" type="text" class="formfield" id="rqfname" value="First Name*" size="5" maxlength="100" onFocus="if(this.value=='First Name*'){this.value=''};" onBlur="if(this.value==''){this.value='First Name*'};">
+              <input name="rqlname" type="text" class="formfield" id="rqlname" value="Last Name*" size="5" maxlength="100" onFocus="if(this.value=='Last Name*'){this.value=''};" onBlur="if(this.value==''){this.value='Last Name*'};">
+              <input name="rqcompany" type="text" class="formfieldShort"  id="rqcompany" value="Company Name*" maxlength="100" onFocus="if(this.value=='Company Name*'){this.value=''};" onBlur="if(this.value==''){this.value='Company Name*'};">
+              <input name="rqphone" type="text" class="formfield" id="rqphone" value="Phone*" size="5" maxlength="100" onFocus="if(this.value=='Phone*'){this.value=''};" onBlur="if(this.value==''){this.value='Phone*'};">
+              <input name="rqemail" type="text" class="formfield" id="rqemail" value="Email*" size="5" maxlength="100" onFocus="if(this.value=='Email*'){this.value=''};" onBlur="if(this.value==''){this.value='Email*'};">
+              <div class="cl"></div>
+            </div>
+            <div class="selContainer">
+              <p class="headingTxt">Budget</p>
+              <select name="sel_budget" size="1" id="sel_budget" class="formfield">
+                <option value="">Please Choose</option>
+                <option value="$1,000 to $2,000">$1,000 to $2,000</option>
+                <option value="$2,000 to $5,000">$2,000 to $5,000</option>
+                <option value="$5,000 to $10,000">$5,000 to $10,000</option>
+                <option value="$10,000 to $25,000">$10,000 to $25,000</option>
+                <option value="$25,000 to $50,000">$25,000 to $50,000</option>
+                <option value="$50,000 to $100,000">$50,000 to $100,000</option>
+                <option value="More than $100,000">More than $100,000</option>
+              </select>
+              <div class="cl"></div>
+            </div>
+            <div class="selContainer">
+              <p class="headingTxt">Time Frame</p>
+              <select name="sel_timeframe" size="1" id="sel_timeframe" class="formfield">
+                <option value="">Please Choose</option>
+                <option value="Immediately">Immediately</option>
+                <option value="Within 1 month">Within 1 month</option>
+                <option value="Within 3 months">Within 3 months</option>
+                <option value="More than 3 months">More than 3 months</option>
+              </select>
+              <div class="cl"></div>
+            </div>
+            <div class="chckListContainer">
+              <p class="headingTxt" id="checkbox" style="width:200px;" >Services Required</p>
+              <label class="chckList">
+                <input type="checkbox"  name="servicetype1"  id="servicetype1" checked value="Enhance corporate identity">
+                Website Design</label>
+              <label class="chckList">
+                <input  type="checkbox" name="servicetype2" id="servicetype2" value="Leads generation">
+                Web Development</label>
+              <label class="chckList">
+                <input name="servicetype3" type="checkbox" id="servicetype3" value="Sell products online (e-commerce)">
+                eCommerce</label>
+              <label class="chckList">
+                <input type="checkbox" name="servicetype4" id="servicetype4" value="Provide customer service">
+                Search Engine Optimisation</label>
+              <label class="chckList">
+                <input type="checkbox" name="servicetype5" id="servicetype5" value="Provide customer service" onClick="enable('other',this)">
+                Pay Per Click Advertising</label>
+              <label class="chckList">
+                <input type="checkbox" name="servicetype6" id="servicetype6" value="Flash Animations or Applications">
+                Social Media</label>
+              <label class="chckList">
+                <input type="checkbox" name="servicetype7" id="servicetype7" value="Discussion Forums">
+                Mobile Apps Development</label>
+              <label class="chckList">
+                <input type="checkbox" name="servicetype8" id="servicetype8" value="Calendars or Appointment Setting">
+                Mobile Website</label>
+              <label class="chckList">
+                <input type="checkbox" name="servicetype9" id="servicetype9" value="Image Galleries">
+                Graphic Design</label>
+              <label class="chckList">
+                <input type="checkbox" name="servicetype10" id="servicetype10" value="Document Management (Word, PDF, etc.)">
+                Software Development</label>
+              <div class="cl"></div>
+            </div>
+            <div class="cl"></div>
+            <div class="comment">
+              <p class="headingTxt">More Information</p>
+              <textarea name="rqcomment2" class="formfield" id="rqcomment2" cols="5" rows="5"></textarea>
+              <div class="cl"></div>
+            </div>
+            <div class="selContainer">
+              <p class="headingTxt">Enter the Code Shown</p>
+              <p id="divcode" class="formfield"></p>
+              <p>
+				<input type="hidden" id="randomfield" value="" name="randomfield" />
+                <input name="rqcaptchat" type="text" class="formfield" id="rqcaptchat" size="5" maxlength="100" value="">
+              </p>
+              <input type="submit" name="btn_quote" id="btn_quote" value="SUBMIT" class="sendOut">
+              <div class="cl"></div>
+            </div>
+            <div class="cl"></div>
+          </fieldset>
+        </form>
+        <div class="cl"><!--Clear --></div>
+      </div>
+      <!--Ends Right -->
+      <div class="cl"><!--Clear --></div>
+    </div>
+  </div>
+</section>
+<!--Ends Request Quote --> <!-- #EndLibraryItem --><!--Header -->
+
+<div class="wrapper">
+  <div id="headerBody">
+    <header> 
+      
+      <!--Logo -->
+      
+      <p class="logo"><a href="http://www.sigmainfotech.com.au/" title="Sigma Infotech - Connect | Engage | Convert">Sigma Infotech - Connect | Engage | Convert</a></p>
+      
+      <!--Ends Logo --> 
+      
+      <!--Social Media -->
+      
+      <ul class="socialMedia">
+        <li><a href="http://www.facebook.com/sigmainfotech.com.au" class="facebook" target="_blank" rel="nofollow">Facebook</a></li>
+        <li><a href="http://twitter.com/sigmainfotech" class="twitter" target="_blank" rel="nofollow">Twitter</a></li>
+        <li><a href="http://www.linkedin.com/company/sigma-infotech-pty-ltd/" class="linkedin" target="_blank" rel="nofollow">LinkedIn</a></li>
+        <li><a href="https://plus.google.com/115382883112840432495?prsrc=3" class="googleplus" target="_blank" rel="nofollow">Google+</a></li>
+      </ul>
+      
+      <!--Ends Social Media --> 
+      
+      <!--Quote -->
+      
+      <p class="quoteBtn"><em>Request a Quote</em><span></span></p>
+      
+      <!--Ends Quote --> 
+      
+      <!--Phone -->
+      
+      <p class="phone">1300&nbsp;78&nbsp;20&nbsp;23<br>
+        <a href="mailto:sales@sigmainfotech.com.au">sales@sigmainfotech.com.au</a></p>
+      
+      <!--Ends Phone --><!-- #BeginLibraryItem "/Library/menu.lbi" --><!--Menu -->
+    <nav class="menu">
+      <ul>
+        <li><a href="http://www.sigmainfotech.com.au/">Home</a></li>
+        <li><a href="../services.htm">Services</a></li>
+        <!--<li class="dropdown"><a href="../services.htm">Services</a>
+          <div>
+            <ul>
+              <li>Web Design and Development
+<ul>
+                  <li><a href="../websitedesign.htm">Website Design</a></li>
+                  <li><a href="../e-commerce.htm">eCommerce Website</a></li>
+                  <li><a href="../webdevelopment.htm">Web Development</a></li>
+                  <li><a href="../applicationdevelopment.htm">Web Application Development</a></li>
+                  <li><a href="../content-management-systems.html">Content Management Systems</a></li>
+                  <li><a href="../mobile-web-design.html">Mobile Web Design</a></li>
+                  <li><a href="../our-process-website-design.html">Our Process</a></li>
+                </ul>
+              </li>
+              <li>SEO
+<ul>
+                  <li><a href="../search-engine-marketing.htm">Search Engine Optimisation</a></li>
+                  <li><a href="../top5-seo.html">Top 5 SEO</a></li>
+                  <li><a href="../complete-seo.html">Complete SEO</a></li>
+                  <li><a href="../guaranteed-seo-results.html">Guaranteed SEO Results</a></li>
+                  <li><a href="../custom-seo.html">Custom SEO</a></li>
+                  <li><a href="../local-seo.html">Local SEO</a></li>
+                  <li><a href="../google-places.html">Google Places</a></li>
+                  <li><a href="../website-optimisation.html">Website Optimisation</a></li>
+                  <li><a href="../our-process-seo.html">Our SEO Process</a></li>
+                </ul>
+              </li>
+              <li>Social Media Marketing
+<ul>
+                  <li><a href="../social-media-marketing.html">Social Media Marketing</a></li>
+                  <li><a href="../social-media-integration.html">Social Media Integration</a></li>
+                  <li><a href="../twitter-marketing.html">Twitter Marketing</a></li>
+                  <li><a href="../facebook-marketing.html">Facebook Marketing</a></li>
+                  <li><a href="../linkedin-marketing.html">LinkedIn Marketing</a></li>
+                  <li><a href="../community-building.html">Community Building</a></li>
+                  <li><a href="../reputation-management.html">Reputation Management</a></li>
+                  <li><a href="../our-process-smm.html">Our SMM Process</a></li>
+                </ul>
+              </li>
+              <li>PPC
+<ul>
+                  <li><a href="../pay-per-click-advertising.html">Pay Per Click Advertising</a></li>
+                  <li><a href="../google-advertising.html">Google Advertising</a></li>
+                  <li><a href="../yahoo-bing-advertising.html">Yahoo/Bing Advertising</a></li>
+                  <li><a href="../facebook-advertising.html">Facebook Advertising</a></li>
+                  <li><a href="../twitter-advertising.html">Twitter Advertising</a></li>
+                  <li><a href="../banner-advertising.html">Banner Advertising</a></li>
+                </ul>
+              </li>
+              <li><a href="../facebook-apps-development.html">Facebook Apps Development</a></li>
+              <li><a href="../services.htm">Mobile Apps Development</a>
+                <ul>
+                  <li><a href="../iphone-apps-development.html">iPhone Apps Development</a></li>
+                  <li><a href="../android-apps-development.html">Android Apps Development</a></li>
+                </ul>
+              </li>
+              <li><a href="../online-marketing.htm">Online Marketing</a></li>
+              <li><a href="../database-development.htm">Database Development</a></li>
+              <li><a href="../software-development.htm">Software Development</a></li>
+              <li><a href="../graphicsdesign.htm">Graphic Design</a></li>
+              <li><a href="../itconsulting.htm">IT Consulting</a></li>
+              <li><a href="../services.htm">Internet Trends</a></li>
+            </ul>
+          </div>
+        </li> -->
+        <li><a href="../testimonials.htm">Testimonials</a></li>
+        <li><a href="../aboutus.htm">About us</a></li>
+        <li><a href="../portfolio.htm">Portfolio</a></li>
+        <li><a href="../contactus.htm">Contact us</a></li>
+      </ul>
+      <div class="cl"><!--Clear --></div>
+    </nav>
+    <!--Ends Menu --><!-- #EndLibraryItem --><div class="cl"><!--Clear --></div>
+    </header>
+    <div class="cl"><!--Clear --></div>
+  </div>
+  
+  <!--Ends Header --> 
+  
+  <!--Banner -->
+  
+  <section id="bannerBody">
+    <figure class="articlebg">
+      <div class="leftSide"><img src="images/articles.png" width="494" height="159" alt="Banner"></div>
+      <div class="rightSide">
+        <p class="headingTxt">Articles</p>
+        <p>Get new tips and suggestions on issues related to website design and online marketing.</p>
+      </div>
+      <div class="cl"><!--Clear --></div>
+    </figure>
+    <div class="cl"><!--Clear --></div>
+  </section>
+  
+  <!--Ends Banner --> 
+  
+  <!--Inner Content Body -->
+  
+  <div id="innerContentBody"> 
+    
+    <!--Content Wrapper -->
+    
+    <div class="contentWrapper"> 
+      
+      <!--Breadcrumb -->
+      
+      <nav class="breadcrumb">
+        <ul>
+          <li><a href="http://www.sigmainfotech.com.au/">Home</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li>It is time for software development for accurate business decision making</li>
+        </ul>
+      </nav>
+      
+      <!--Ends Breadcrumb --> 
+      
+      <!--Content Area -->
+      
+      <div class="leftShade">
+        <div class="rightShade">
+          <div class="contentArea"> 
+            
+            <!--Right Body -->
+            
+            <article class="rightBody">
+              <h1>It is time for software development for accurate business decision making</h1>
+              
+              <!--Article -->
+              
+              <section class="articleSection">
+                <p>When you hunt for the ideal web design company, it is a good idea to have a basic overview of the different tools and techniques associated. It case of every software development there remains a cycle and web design can be considered to be a compilation of several usage of software. It is a prudent use by the efficient web designers that makes the difference. There might be the option of different.</p>
+                <p>There are different companies that come with cheap software based solutions. Finding a suitable one is easy and it is just a cautious step that makes all possible. Business decisions and global presence is now governed by online and web based support to the product and service seekers. Again, to benchmark the business needs it is mandatory to initiate system based transactions. A <a href="../software-development.htm" title="software development"><strong>software development</strong></a> company usually employs skilled business analysts who map the businesses and as per cases the tailored solution are offered.  The process of business case mapping is pretty process oriented and success of a customised software depends upon the way it serves decision making processes.</p>
+                <p>There are different software companies that have tailored software for specific business domain and further these software needs customisation. Little customisation makes large differences and it is prudent to understand the businesses vividly to offer tailored solutions. There are different <a href="../websitedesign.htm" title="web design"><strong>web design</strong></a> companies that offer alluring user interface. It is wise to consider many of such portals have interactive customer access facilities. Large databases are connected to these sites and it becomes mandatory to connect the sites to the servers by ensuring remote access to the servers. At the same time security is an essential ingredient related to web design and these companies provide high secured software development solutions.</p>
+                <p>In case of web development it is also follow up with the processes and in each developmental process the client or customer’s specification is necessary. Across Asia Pacific and Australia, the <a href="../webdevelopment.htm" title="Sydney web development"><strong>Sydney web development</strong></a> and Sydney software development companies have attained high popularity. It is a well known fact that as a nation Australia implemented electronic transactions and online dependence of Australian businesses have been successful. The Australian  website design  and software design companies have catered global companies with business specific software solution</p>
+                <p>There are plenty of educational institutes in Australia that teaches the correct processes of software development and implementation. There remain companies in all parts of Australia but as most of the reputed software solution providers are Sydney based, customers seek services from a proper Sydney based service provider. Most of these companies come with free consultation and just by dialing the customer care numbers anyone can get lots of details about how to initiate software development process with the perfect solution provider. </p>
+                <p>Online research to get the ideal software development company often works well. Australians are now using the World Wide Web as the tool to reach the best software solution provider. Online discussion forums, articles are helpful resources. In addition a quick peep through different websites of the software companies serves the purpose of hunting the proper service provider. In this time of online business software is indispensible and it is prudent decision to initiate online presence early.</p>
+                <div class="conversionArticle">
+                  <ul class="listArrow">
+                    <li><a href="../websitedesign.htm">Website Design</a></li>
+                    <li><a href="../websitedesign.htm">Web Design</a></li>
+                    <li><a href="../webdevelopment.htm">Website Development</a></li>
+                    <li><a href="../search-engine-marketing.htm">Search Engine<br>
+                      Optimisation</a></li>
+                    <li><a href="../graphicsdesign.htm">Graphic Design</a></li>
+                    <li><a href="../software-development.htm">Software Development</a></li>
+                  </ul>
+                  <div class="cl"><!--Clear --></div>
+                </div>
+                <p class="greenHighlightTxt">More useful articles are available on the <a href="articles.html">Sigma Infotech website</a></p>
+                <div class="cl"><!--Clear --></div>
+              </section>
+              
+              <!--Ends Article -->
+              
+              <p><a href="javascript: history.go(-1)" class="backArticles">Back to Articles</a></p>
+              <div class="cl"><!--Clear --></div>
+            </article>
+            
+            <!--Ends Pagination --> 
+            
+            <!--Ends Right Body --> 
+            
+            <!--Left Panel -->
+            
+            <aside class="leftPanel"><!-- #BeginLibraryItem "/Library/leftnav.lbi" --><!--Services -->
+            <h2 class="heading">Services</h2>
+            <nav class="navLinks">
+              <ul>
+                <li class="wd"><a href="../websitedesign.htm">Website Design</a></li>
+                <li class="wdm"><a href="../webdevelopment.htm">Web Development</a></li>
+                <li class="seo"><a href="../search-engine-marketing.htm">Search Engine Optimisation</a></li>
+                <li class="gp"><a href="../google-places.html">Google Places</a></li>
+                <li class="smm"><a href="../social-media-marketing.html">Social Media Marketing</a></li>
+                <li class="ppca"><a href="../pay-per-click-advertising.html">Pay Per Click Advertising</a></li>
+                <li class="om"><a href="../online-marketing.htm">Online Marketing</a></li>
+                <li class="smoad"><a href="../facebook-apps-development.html">Facebook Apps Development</a></li>
+                <li class="md"><a href="../iphone-apps-development.html">iPhone Apps Development</a></li>
+                <li class="dd"><a href="../database-development.htm">Database Development</a></li>
+                <li class="sd"><a href="../software-development.htm">Software Development</a></li>
+                <li class="gd"><a href="../graphicsdesign.htm">Graphic Design</a></li>
+                <li class="itc"><a href="../itconsulting.htm">IT Consulting</a></li>
+              </ul>
+              <div class="cl"><!--Clear --></div>
+            </nav>
+            <!--Ends Services --><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/Library/freeconsult.lbi" --><!--Free Consultation -->
+            <h2 class="headingTxt">Free Consultation</h2>
+            <div class="whtContent">
+              <form name="cunsultation" id="cunsultation" method="post" action="../submit_query.php" onSubmit="return check_query(this);">
+			  <input type="hidden" name="hd_result" id="hd_result" value="error" >
+                <fieldset>
+                  <legend>Free Consultation</legend>
+                  <p class="fieldContainer">
+                    <input name="con_name" type="text" id="con_name" value="Name" size="5" maxlength="100" class="formfield" onFocus="if(this.value=='Name'){this.value=''};" onBlur="if(this.value==''){this.value='Name'};">
+                  </p>
+                  <p class="fieldContainer">
+                    <input name="con_email" type="text" id="con_email" value="Email" size="5" maxlength="100" class="formfield" onFocus="if(this.value=='Email'){this.value=''};" onBlur="if(this.value==''){this.value='Email'};">
+                  </p>
+                  <p class="fieldContainer">
+                    <input name="con_phone_mobile" type="text" id="con_phone_mobile" value="Phone" size="5" maxlength="100" class="formfield" onFocus="if(this.value=='Phone'){this.value=''};" onBlur="if(this.value==''){this.value='Phone'};">
+                  </p>
+                  <p class="fieldContainer">
+                    <textarea name="con_comment" cols="45" rows="5" class="formfield" id="con_comment" onFocus="if(this.value=='Comment'){this.value=''};" onBlur="if(this.value==''){this.value='Comment'};">Comment</textarea>
+                  </p>
+                  <p>To protect against spam, please enter the verification code.</p>
+                  <p class="fieldContainer">
+				  <input type="hidden" id="con_randomfield" value="" name="con_randomfield" />
+                   <div style="float:left;"> 
+				   <input name="con_captcha2" type="text" id="con_captcha2" size="5" maxlength="5" class="captchafield"></div>
+					<div id="con_divcode"></div>
+                    </p>
+                  <p class="fieldContainer">
+                    <input type="submit" name="btn_consutant" id="btn_consutant" value="SUBMIT" class="sendOut">
+                  </p>
+                </fieldset>
+              </form>
+              <div class="cl">
+                <!--Clear -->
+              </div>
+            </div>
+            <!--Ends Free Consultation --><!-- #EndLibraryItem --><div class="cl"><!--Clear --></div>
+            </aside>
+            
+            <!--Ends Left Panel -->
+            
+            <div class="cl"><!--Clear --></div>
+          </div>
+        </div>
+      </div>
+      
+      <!--Ends Content Area --> 
+      
+    </div>
+    
+    <!--Ends Content Wrapper --> 
+    
+  </div>
+  
+  <!--Ends Inner Content Body --> 
+  
+  <!--Footer Body -->
+  
+  <div id="footerBody">
+    <footer><!-- #BeginLibraryItem "/Library/footer.lbi" --><!--Footer Navigation -->
+    <nav>
+      <ul>
+        <li class="home"><a href="http://www.sigmainfotech.com.au/">Home</a> 
+          <ul>
+            <li><a href="../services.htm">Services</a></li>
+            <li><a href="../portfolio.htm">Portfolio</a></li>
+            <li><a href="../testimonials.htm">Testimonials</a></li>
+            <li><a href="../aboutus.htm">About Us</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="../contactus.htm">Contact Us</a></li>
+            <li><a href="../sitemap.htm">Sitemap</a></li>
+          </ul>
+        </li>
+        <li>Web Design and Development
+<ul>
+            <li><a href="../websitedesign.htm">Website Design</a></li>
+            <li><a href="../e-commerce.htm">eCommerce Website</a></li>
+            <li><a href="../webdevelopment.htm">Web Development</a></li>
+            <li><a href="../applicationdevelopment.htm">Web Application Development</a></li>
+            <li><a href="../content-management-systems.html">Content Management Systems</a></li>
+            <li><a href="../mobile-web-design.html">Mobile Web Design</a></li>
+            <li><a href="../our-process-website-design.html">Our Process</a></li>
+          </ul>
+        </li>
+        <li>SEO
+<ul>
+            <li><a href="../search-engine-marketing.htm">Search Engine Optimisation</a></li>
+            <li><a href="../top5-seo.html">Top 5 SEO</a></li>
+            <li><a href="../complete-seo.html">Complete SEO</a></li>
+            <li><a href="../guaranteed-seo-results.html">Guaranteed SEO Results</a></li>
+            <li><a href="../custom-seo.html">Custom SEO</a></li>
+            <li><a href="../local-seo.html">Local SEO</a></li>
+            <li class="gpicon"><a href="../google-places.html">Google Places</a></li>
+            <li><a href="../website-optimisation.html">Website Optimisation</a></li>
+            <li><a href="../our-process-seo.html">Our SEO Process</a></li>
+          </ul>
+        </li>
+        <li>Social Media Marketing
+<ul>
+            <li><a href="../social-media-marketing.html">Social Media Marketing</a></li>
+            <li><a href="../social-media-integration.html">Social Media Integration</a></li>
+            <li class="twittericon"><a href="../twitter-marketing.html">Twitter Marketing</a></li>
+            <li class="facebookicon"><a href="../facebook-marketing.html">Facebook Marketing</a></li>
+            <li class="linkedinicon"><a href="../linkedin-marketing.html">LinkedIn Marketing</a></li>
+            <li><a href="../community-building.html">Community Building</a></li>
+            <li><a href="../reputation-management.html">Reputation Management</a></li>
+            <li><a href="../our-process-smm.html">Our SMM Process</a></li>
+          </ul>
+        </li>
+        <li>PPC
+<ul>
+            <li><a href="../pay-per-click-advertising.html">Pay Per Click Advertising</a></li>
+            <li class="googleicon"><a href="../google-advertising.html">Google Advertising</a></li>
+            <li class="yahooicon"><a href="../yahoo-bing-advertising.html">Yahoo/Bing Advertising</a></li>
+            <li class="facebookicon"><a href="../facebook-advertising.html">Facebook Advertising</a></li>
+            <li class="twittericon"><a href="../twitter-advertising.html">Twitter Advertising</a></li>
+            <li><a href="../banner-advertising.html">Banner Advertising</a></li>
+          </ul>
+        </li>
+        <li class="facebookicon"><a href="../facebook-apps-development.html">Facebook Apps Development</a></li>
+        <li class="lastline"><a href="../online-marketing.htm">Online Marketing</a></li>
+        <li class="lastline"><a href="../database-development.htm">Database Development</a></li>
+        <li><a href="../services.htm">Mobile Apps Development</a>
+          <ul>
+            <li class="iphoneicon"><a href="../iphone-apps-development.html">iPhone Apps Development</a></li>
+            <li class="androidicon"><a href="../android-apps-development.html">Android Apps Development</a></li>
+          </ul>
+        </li>
+        <li class="lastline"><a href="../software-development.htm">Software Development</a></li>
+        <li class="lastline"><a href="../graphicsdesign.htm">Graphic Design</a></li>
+        <li class="lastline"><a href="../itconsulting.htm">IT Consulting</a></li>
+        <li class="lastline"><a href="../services.htm">Internet Trends</a></li>
+        
+      </ul>
+      <div class="cl"><!--Clear --></div>
+    </nav>
+    <!--Ends Footer Navigation --> 
+    <!--Sigma Footer -->
+    <div class="sigmafooter"> 
+      <!--Left Side -->
+      <div class="leftSide">
+        <div class="otherLikes">
+        <div class="normTxt">Sigma Infotech Elsewhere: </div>
+        <!--Google+ -->
+        <div class="gpLikeBtn"><!-- Place this tag where you want the +1 button to render -->
+<div class="g-plusone"></div>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script></div>
+		<!--Ends Google+ -->
+        <!--Facebook -->
+        <div class="fbLikeBtn"><div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script> <div class="fb-like" data-href="http://www.facebook.com/sigmainfotech.com.au
+        " data-send="false" data-width="400" data-show-faces="false"></div></div>
+        <!--Ends Facebook -->
+          <div class="cl"><!--Clear --></div>
+        </div>
+        <p>Copyright Sigma Infotech-2012 All Rights Reserved.</p>
+        <p><a href="../resources.html">Resources</a> - <a href="../sitemap.xml" target="_blank">XML Sitemap</a> - <a href="articles.html">Articles</a> - <a href="../ror.xml" target="_blank">ROR Map</a> - <a href="articles.xml" class="rssxmlarticle">RSS</a></p>
+          <div class="cl"><!--Clear --></div>
+      </div>
+      <!--Ends Left Side --> 
+      <!--Right Side -->
+      <div class="rightSide"><a href="http://validator.w3.org/check?uri=http%3A//sigmainfotech.com.au/" class="html5css" target="_blank" rel="nofollow">HTML5 and CSS3</a>&nbsp;&nbsp;<a href="http://www.copyscape.com/" class="copyright" target="_blank" rel="nofollow">Copyright</a></div>
+      <!--Ends Right Side -->
+      <div class="cl"><!--Clear --></div>
+    </div>
+    <!--Ends Sigma Footer --> <!-- #EndLibraryItem --><!--keywords -->
+      
+      <div class="sigmaKeywordContainer">
+        <div class="sigmakeywords"><a href="../websitedesign.htm" title="Web Design - Website Design">Web Design</a>, <a href="../applicationdevelopment.htm" title="Web Application - Application Development">Web Applications</a>, <a href="../applicationdevelopment.htm" title="Web Application - Application Development">Application Development</a>, <a href="../website_developer.htm" title="Web Developer - Website Developer">Web Developer</a>, <a href="../graphicsdesign.htm" title="Graphic Design - Graphic Designer">Graphic Design</a>, <a href="../graphicsdesign.htm" title="Graphic Design - Graphic Designer">Graphic Designer</a>, <a href="../websitedesign.htm" title="Web Design - Website Design">Website Design</a>, <a href="../applicationdevelopment.htm" title="Website Application">Website Application</a>, <a href="../website_developer.htm" title="Website Developer">Website Developer</a>, <a href="../webdevelopment.htm" title="Website Development">Website Development</a>, <a href="../website-optimisation.html" title="Website Optimisation">Website Optimisation</a>, <a href="../search-engine-marketing.htm" title="Search Engine Optimisation">Search Engine Optimisation</a>, <a href="../search-engine-marketing.htm" title="Search Engine Marketing">Search Engine Marketing</a>, <a href="../websitedesign.htm" title="Web Designer">Web Designer</a>, <a href="../websitedesign.htm" title="Web Design Sydney">Web Design Sydney</a>, <a href="../websitedesign.htm" title="Website Designer">Website Designer</a>, <a href="../websitedesign.htm" title="Website Design Sydney">Website Design Sydney</a>, <a href="../businessconsultanting.htm" title="Business Consulting">Business Consulting</a>, <a href="../projectmanagement.htm" title="Project Management">Project Management</a>, <a href="../webportals.htm" title="Web Portal">Web Portal</a></div>
+      </div>
+      
+      <!--Ends keywords -->
+      
+      <div class="cl"><!--Clear --></div>
+    </footer>
+  </div>
+  
+  <!--Ends Footer Body --> 
+  
+  <!--Start Share Button List-->
+  <div class="shareThisPage">
+    <div class="shareThisLinks"> 
+      <!--start google like button --> 
+      <!-- Place this tag where you want the +1 button to render -->
+      <div class="listShare">
+        <div class="g-plusone" data-size="tall"></div>
+        <!-- Place this render call where appropriate --> 
+        <script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+          </script> 
+      </div>
+      
+      <!--start Facebook share button -->
+      <div class="listShare"> 
+        <script src="http://widgets.fbshare.me/files/fbshare.js"></script> </div>
+      <!--End Facebook Share button --> 
+      
+      <!--start twitter like button -->
+      <div class="listShare"><a href="https://twitter.com/share" class="twitter-share-button" data-via="sigmainfotech" data-lang="en" data-related="sigmainfotech" data-count="vertical">Tweet</a> 
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
+      </div>
+      <!--LinkedIn -->
+      <div class="listShare"> 
+        <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script> 
+        <script type="IN/Share" data-counter="top"></script> 
+      </div>
+      <!--Ends LinkedIn --> 
+      <!--Digg it -->
+      <div class="listShare"> 
+        <script type="text/javascript">
+(function() {
+var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
+s.type = 'text/javascript';
+s.async = true;
+s.src = 'http://widgets.digg.com/buttons.js';
+s1.parentNode.insertBefore(s, s1);
+})();
+          </script> 
+        <!-- Medium Button --> 
+        <a class="DiggThisButton DiggMedium"></a></div>
+      <!--Ends Digg it --> 
+      <!--Reddit -->
+      <div class="listShare"> 
+        <script type="text/javascript" src="http://www.reddit.com/static/button/button2.js"></script> 
+      </div>
+      <!--Ends Reddit --> 
+      
+      <!-- Start Stumble Upon badge -->
+      <su:badge layout="5"></su:badge>
+      
+      <!-- Place this snippet wherever appropriate --> 
+      <script type="text/javascript"> 
+ (function() { 
+     var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true; 
+     li.src = window.location.protocol + '//platform.stumbleupon.com/1/widgets.js'; 
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s); 
+ })(); 
+ </script> 
+      <!-- End Stumble Upon badge --> 
+      
+    </div>
+  </div>
+  <!--End Share Button List--> 
+  
+</div>
+<!--Google Tracker --> 
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : 
+"http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script> 
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10781460-1");
+pageTracker._trackPageview();
+} catch(err) {}</script> 
+
+<!--Ends Google Tracker --> 
+
+<!-- Begin Web-Stat code 2.0 http --> 
+
+<script type="text/javascript" src="http://server3.web-stat.com/wtslog.js">
+</script><script type="text/javascript"> //<![CDATA[ 
+// BEGIN PARAMETERS
+var page_name = '#';
+var invisible = '#';
+var text_counter = '#';
+// END PARAMETERS 
+//]]>
+wtslog('al7427','2','http',page_name,invisible,text_counter);
+</script>
+<noscript>
+<p><a href="http://www.web-stat.com" rel="nofollow"> <img src="http://server3.web-stat.com/2/al7427.gif"
+style="border:0px;" alt="traffic analytics"/></a></p>
+</noscript>
+
+<!-- End Web-Stat code v 2.0 --> 
+
+<script type="text/javascript"><!--
+function HideContent(d) {
+if(d.length < 1) { return; }
+document.getElementById(d).style.display = "none";
+}
+function ShowContent(d) {
+if(d.length < 1) { return; }
+document.getElementById(d).style.display = "block";
+}
+function ReverseContentDisplay(d) {
+if(d.length < 1) { return; }
+if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
+else { document.getElementById(d).style.display = "none"; }
+}
+//--></script> 
+
+<!-- Start Alexa Certify Javascript --> 
+
+<script type="text/javascript" src="https://d31qbv1cthcecs.cloudfront.net/atrk.js"></script><script type="text/javascript">_atrk_opts = { atrk_acct: "o9W7f1agAq00E3", domain:"sigmainfotech.com.au"}; atrk ();</script>
+<noscript>
+<img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=o9W7f1agAq00E3" class="shareThisPageMin" height="1" width="1" alt="cloudfront">
+</noscript>
+
+<!-- End Alexa Certify Javascript --> 
+
+<!-- End Alexa Certify Javascript -->
+
+</body>
+</html>

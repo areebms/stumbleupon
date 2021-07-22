@@ -1,0 +1,361 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Marshalls #fabfound Friday</title>
+	<meta name="description" content="Share photos of your Fabulous Finds via Facebook, Instagram, or Twitter for a chance to win a $50 gift card.">
+	<meta name="keywords" content="Marshalls, fabfound, fab found, fab find, fabulous find, share photo, instagram, gift card, contest, #fabfound, fan finds, Marshall's">
+	
+	<meta property="fb:app_id" content="485441291513907">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="http://www.marshallsfacebook.com/Images/site/logo-share-thumb.jpg">
+	<meta property="og:url" content="http://www.facebook.com/Marshalls/app_485441291513907">
+	<meta property="og:title" content="Marshalls #fabfound Friday">
+	<meta property="og:description" content="Share photos of your Fabulous Finds via Facebook, Instagram, or Twitter for a chance to win a $50 gift card.">
+	
+	<link rel="stylesheet" href="/Style/normalize.css">
+	<link rel="stylesheet" href="/Style/fabfound.css?dt=635001948053121466" type="text/css">
+	<link rel="stylesheet" href="/Style/jcrop.css" type="text/css">
+    
+    <script src="/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="/Scripts/modernizr-2.6.1.min.js"></script>
+    <script src="/Scripts/jquery-ui.js"></script>
+    <script src="/Scripts/jquery-migrate-1.1.0.min.js"></script>
+    <script src="/Scripts/jquery.jcarousel.min.js"></script>
+    <script src="/Scripts/jquery.validate.min.js"></script>
+    <script src="/Scripts/jquery.leanModal.min.js"></script>
+    <script src="/Scripts/jquery.cookie.js"></script>
+    <script src="/Scripts/jquery.imagesloaded.min.js"></script>
+    <script src="/Scripts/jquery.fineuploader-3.2.js"></script>
+    <script src="/Scripts/spin.min.js"></script>
+    <script src="/Scripts/jquery.Jcrop.min.js"></script>
+    <script src="/Scripts/plugins.js?dt=635001948053121466"></script>
+    <script src="/Scripts/s_code.js"></script>
+    <script src="/Scripts/html5-tracking.js"></script>
+    <script src="/Scripts/fabfound.js?dt=635001948053121466"></script>
+	
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+</head>
+
+<!--[if lt IE 7]><body class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><body class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><body class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><body class="ie"><![endif]-->
+<!--[if !IE]><!--><body scroll="no"><!--<![endif]-->
+	
+	<div id="fb-root"></div>
+	<script>
+	    window.fbAsyncInit = function () {
+	        FB.init({
+	            appId: '485441291513907', // App ID
+	            status: true,
+	            cookie: true,
+	            xfbml: true
+	        });
+	        FB.Canvas.setAutoGrow();
+	    };
+
+	    // Load the SDK Asynchronously
+	    (function (d, debug) {
+	        var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+	        if (d.getElementById(id)) { return; }
+	        js = d.createElement('script'); js.id = id; js.async = true;
+	        js.src = "//connect.facebook.net/en_US/all" + (debug ? "/debug" : "") + ".js";
+	        ref.parentNode.insertBefore(js, ref);
+	    }(document, /*debug*/ false));
+	</script>
+	
+	<div id="main">
+		<header class="form-header clearfix">
+			<form id="email-subscribe" class="clearfix">
+				<div class="col"><label>Never miss a designer deal</label></div>
+				<div class="col email clearfix">
+					<input type="text" class="email clearfix" id="email" name="email" value="EMAIL ADDRESS" />
+					<p class="error error-email"></p>
+				</div>
+				<div class="col zipcode clearfix">
+					<input type="text" class="zipcode" id="zipcode1" name="zipcode" value="ZIP CODE" />
+					<p class="error error-zipcode1"></p>
+				</div>
+				<div class="col submit clearfix">
+					<input class="submit" type="submit" value="Submit" />
+					<p class="privacy"><a href="http://www.marshallsonline.com/privacy/" title="Privacy Policy" alt="Privacy Policy" target="_blank">Privacy Policy</a></p>
+				</div>
+			</form>
+			<form id="store-locator" class="clearfix">
+				<div class="col"><label>Store locator</label></div>
+				<div class="col zipcode clearfix">
+					<input type="text" class="zipcode" id="zipcode2" name="zipcode" value="ZIP CODE" />
+					<p class="error error-zipcode2"></p>
+				</div>
+				<div class="col submit clearfix">
+					<input class="submit" type="submit" value="Find" />
+				</div>
+			</form>	
+			<div class="confirmation"></div>
+		</header>
+		
+		<nav class="tabs">               
+			<ul class="clearfix">
+				<li><a class="lookbook" href="#" title="Look Book" alt="Look Book" target="_parent"><span id="tab1">LOOK BOOK</span></a></li>
+				<li class="active" style="background-color:#0c375d;"><span id="tab2" style="background-color:#0c375d;">#FABFOUND</span></li>
+				<li><a class="pinterest" href="#" title="Pinterest" alt="Pinterest" target="_parent"><span id="tab3">PINTEREST</span></a></li>
+			</ul>
+		</nav>
+		
+		<div class="content clearfix">
+            <div class="background-image" style="background-color:#0c375d; background-image:url(http://0cb4eb65f15199bfc687-3c8349689f48c9541acd22bf462651a1.r85.cf1.rackcdn.com/aeafd831-b5d1-4f3b-a5bf-46d25f4e2da6.jpg); "></div>
+	
+			
+			<section class="hero clearfix">
+				<header class="logo">
+					<div class="emblem">
+						<img src="/Images/site/ff-logo.png" title="Marshalls #fabfound" alt="Marshalls #fabfound" />
+					</div>
+					<div class="friday">
+						<h2 style="background-color:#f74760;">Friday</h2>
+					</div>
+				</header>
+				
+                <div class="winner-emblem">
+					<hgroup>
+						<h2>Our Latest</h2>
+						<h3>#fabfound</h3>
+						<h2>Winner!</h2>
+					</hgroup>
+				</div>
+
+				<div class="past-winners">
+					<nav class="jcarousel-prev arrows">
+						<a href="#" class="prev" title="Previous Winner" alt="Previous Winner"><span><</span></a>
+					</nav>
+					
+					<div class="winner-carousel">
+						<ul id="winner-img-carousel" class="jcarousel-skin-custom"></ul>
+					</div>
+					
+					<nav class="jcarousel-next arrows">
+						<a href="#" class="next" title="Next Winner" alt="Next Winner"><span>></span></a>
+					</nav>
+				</div>
+				
+				<div class="details">
+					<hgroup>
+						<h2>Share photos of your</h2>
+						<h3 style="color: #f74760;">Fabulous Finds</h3>
+						<h4>for a chance to win a $50 Marshalls gift card.</h4>
+						<p>No purchase necessary. See <a href="http://www.facebook.com/Marshalls/app_508399685868876" title="Official Rules" alt="Official Rules" target="_blank">Official Rules</a> for complete details.</p>
+					</hgroup>
+					
+					<ol>
+						<li>share via <img src="/Images/site/instagram.png" title="Instagram" alt="Instagram" /> <img src="/Images/site/twitter.png" title="Twitter" alt="Twitter" /> or <a href="#uploadphoto" id="upload-link" title="Upload a photo!" alt="Upload a photo!">UPLOAD</a></li>
+						<li class="clearfix"><span>tag</span><span>#fabfound<em class="swoosh" style="color:#f74760;">_</em></span></li>
+						<li>most votes wins!</li>
+					</ol>
+				</div>
+			</section>
+			
+			<section class="leaderboard entries">
+				<hgroup>
+					<a href="#pictips" class="small" id="pictips-link" title="Tips on Pics" alt="Tips on Pics">Tips on Pics</a>
+				</hgroup>
+				<div id="leaderboard-container">
+					<hgroup>
+						<h2>This week's most-voted finds:</h2>
+					</hgroup>
+					<ul id="leaderboard-entries" class="photos clearfix"></ul>
+				</div>
+			</section>
+			
+			<section id="rest-of-entries" class="rest entries clearfix">
+                <div class="entries-carousel clearfix">
+				    <div class="current-entries group">
+                        <hgroup>
+					        <a href="#" id="prev-entries-btn" class="small" title="View Previous Weeks' Entries" alt="View Previous Weeks' Entries">View Previous Weeks' Entries</a>
+					        <h2>Vote for your favorite <em>#fabfound</em> photos:</h2>
+				        </hgroup>
+				        <ul id="restof-entries-current" class="photos clearfix"></ul>
+                    </div>
+                    <div class="previous-entries group">
+                        <hgroup>
+					        <a href="#" id="current-entries-btn" class="small" title="Go Back to This Weeks' Entries" alt="Go Back to This Weeks' Entries">Go Back to This Week's Entries</a>
+					        <h2>Previous Entries</h2>
+				        </hgroup>
+				        <ul id="restof-entries-prev" class="photos clearfix"></ul>
+                    </div>
+                </div>
+			</section>
+			
+			<footer>
+				<a href="#" id="viewmore-link" class="small" alt="View More" title="View More">View More</a>
+                <a href="#" id="backtotop-link" class="small" alt="Back to Top" title="Back to Top">Back to Top</a>
+			</footer>
+		</div>
+		
+		<div class="overlays">
+			
+			<article id="pictips" class="box pictips clearfix" style="display:none">
+				<figure class="emblem">
+					<img src="/Images/site/ff-logo.png" title="Marshalls #FabFound" alt="Marshalls #FabFound" />
+				</figure>
+				<a href="#" class="modal-close" title="Close" alt="Close">X</a>
+				<header>
+					<h2>Tips on Pics</h2>
+				</header>
+				<div class="tip-copy">
+					<p>When you find a fabulous item at Marshalls, don’t just show us the item, show us how it enhances your fabulous lifestyle.</p>
+					<ul>
+						<li>If you find an accessory, show how it enhances a great outfit.</li>
+						<li>Bags and shoes can be difficult to show off from a distance, so get up close and personal.</li>
+						<li class="short">Don’t be afraid to strike a pose, get creative and have fun. But not too much fun, okay? Inappropriate submissions will be rejected.</li>
+						<li class="shorter">Remember, #fabfound Friday is just like shopping at Marshalls. It’s all about being fabulous.</li>
+					</ul>
+				</div>
+			</article>
+			
+			<article id="votemax" class="box votemax clearfix" style="display:none;">
+				<figure class="emblem">
+					<img src="/Images/site/ff-logo.png" title="Marshalls #FabFound" alt="Marshalls #FabFound" />
+				</figure>
+				<a href="#" class="modal-close" title="Close" alt="Close">X</a>
+				<p>You have used your three votes for this week. Return to the voting screen if you’d like to change your votes. And don’t forget to vote in next week’s contest.</p>
+			</article>
+			
+			<article id="entrylightbox" class="entrylightbox clearfix" style="display:none;">
+				<div class="lightboximg"></div>
+				<a href="#" class="modal-close" title="Close" alt="Close">X</a>
+				<figcaption class="caption clearfix">
+					<p></p>
+					<div class="vote"><input type="checkbox" id="lightbox-check" name="" value=""><span class="over"><a href="#" class="vote-cast" data-votesrc="overlay" data-voteid="" title="" alt="">VOTE</a><span class="show-votes-overlay"><span class="pipe">|</span><span id="vote-count">0</span><span id="vote-word"> Votes</span></span></span></div>
+					<div class="share"><a href="#" class="fb-share-current" title="" alt=""><span>SHARE</span><img src="/Images/site/facebook.png" alt="Share on Facebook" title="Share on Facebook" /></a></div>
+				</figcaption>
+				<div class="vote-error">
+					<p>You have used your three votes for this week. Return to the voting screen if you'd like to change your votes. And don't forget to vote in next week's contest.</p>
+				</div>
+			</article>
+			
+            <article id="uploadphoto" class="box upload clearfix" style="display:none; background-color:#0c375d; background-image:url(http://0cb4eb65f15199bfc687-3c8349689f48c9541acd22bf462651a1.r85.cf1.rackcdn.com/aeafd831-b5d1-4f3b-a5bf-46d25f4e2da6.jpg);">
+				<a href="#" id="upload-modal-close" class="modal-close" title="Close" alt="Close">X</a>
+				<div class="progress-bar">
+					<ul class="clearfix">
+						<li id="listep1" class="on"><h2>Upload Photo</h2><span></span></li>
+						<li id="listep2"><h2>Edit<br>Photo</h2><span></span></li>
+						<li id="listep3"><h2>Submit Photo</h2><span></span></li>
+						<li id="listep4"><h2 class="wide">Submission complete</h2><span></span></li>
+					</ul>
+					<div class="bar"></div>
+				</div>
+				<section id="step1" class="step">
+                    <div class="upload-image-ui">
+                        <p class="find">Find and upload your photo.</p>
+                        <p class="btn"><span></span><a href="#" id="btn-browse" class="graybtn center" title="Browse for a photo" alt="Browse for a photo">Browse</a></p>
+					    <p class="or">or</p>
+					    <figure id="drag-box">
+					    	<div id="drag-area">
+					    		<!--[if gt IE 9]><h3 id="drop-text">Drag and drop<br>your photo here.</h3><![endif]-->
+                                <!--[if !IE]> -->
+                                <h3 id="drop-text">Drag and drop<br>your photo here.</h3>
+                                <!-- <![endif]-->
+					    	</div>
+					    </figure>
+                        <p class="error">You must upload an image to continue.</p>
+                    </div>
+                    <div class="upload-image-loader"></div>
+					<a href="#" id="step1-next" class="graybtn right" title="Next step" alt="Next step">Next ></a>
+				</section>
+				<section id="step2" class="step">
+					<p>To crop image, move and scale the frame<br>to the desired position and click "Next."</p>
+					<div id="crop-box">
+                        <div id="crop-img"><img id="uploaded-image" src="" /></div>
+					</div>
+                    <p class="error">Please crop your image.</p>
+					<a href="#" id="step2-back" class="graybtn left" title="Previous step" alt="Previous step">< Back</a>
+					<a href="#" id="step2-next" class="graybtn right" title="Next step" alt="Next step">Next ></a>
+				</section>
+				<section id="step3" class="step">
+				    <p class="form-error">The following <span>required fields</span> were either empty or filled out incorrectly.</p>
+<form action="/FabFound/Save" id="upload-form" method="post">                        <!-- the next four fields control the cropper -->
+                        <input type="hidden" id="form-imgtop" name="top" value="0"/>
+                        <input type="hidden" id="form-imgleft" name="left" value="0"/>
+                        <input type="hidden" id="form-imgwidth" name="width" value="200"/>
+                        <input type="hidden" id="form-imgheight" name="height" value="200"/>
+                        <input type="hidden" id="form-imgurl" name="imageUrl" value="..."/>
+                        <div class="fields clearfix">
+                            <span class="left">
+                                <label>First Name*</label>
+                                <input type="text" id="FirstName" class="text" name="FirstName" />
+                            </span>
+                            <span class="right">
+                                <label>Last Name*</label>
+                                <input type="text" id="LastName" class="text" name="LastName" />
+                            </span>
+                            <span class="left">
+                                <label>Email*</label>
+                                <input type="text" id="Email" class="text" name="Email" />
+                            </span>
+                            <span class="right">
+                                <label>ZIP Code*</label>
+                                <input type="text" id="ZIP" class="text" name="ZIP" />
+                            </span>
+                            <span class="left">
+                                <label>Designer/Brand*</label>
+                                <input type="text" id="BrandName" class="text" name="BrandName" />
+                            </span>
+                            <span class="right">
+                                <span class="left price1">
+                                    <label>Our Price*</label>
+                                    <input type="text" id="OurPrice" class="text" name="OurPrice" />
+                                </span>
+                                <span class="right price2">
+                                    <label>Compare at Price</label>
+                                    <input type="text" id="TheirPrice" class="text" name="TheirPrice" />
+                                </span>
+                            </span>
+                            <span class="left">
+                                <p>* indicates required field</p>
+                            </span>
+                            <span class="right email">
+                                <input type="checkbox" id="SignMeUpForMarshalls" name="SignMeUpForMarshalls" /> Sign me up for Marshalls email
+                            </span>
+                        </div>
+                        <p class="disclaimer">*By clicking submit, you agree to the privacy policy and give Marshalls permission to use the #fabfound content provided by you in other marketing by TJX in its sole discretion.</p>
+                        <input type="reset" name="reset" id="reset-btn" style="display:none;"/>
+                        <a href="#" id="step3-back" class="graybtn left" title="Previous step" alt="Previous step">< Back</a>
+                        <p class="rules"><a href="http://www.facebook.com/Marshalls/app_508399685868876" title="See Official Rules" alt="See Official Rules" target="_blank">See Official Rules</a></p>
+                        <input id="step3-submit" type="submit" value="Submit >" />
+</form>				</section>
+				<section id="step4" class="step">
+					<p>Thank you for your entry.</p>
+					<p>Your entry will be reviewed and could be included<br>for voting in our #fabfound Friday contest on <span id="nextFriday"></span> for<br>a chance to win a $50 Marshalls gift card.</p>
+					<p>Don’t forget to vote for your favorite #fabfound<br>and share with your friends!</p>
+					<figure>
+						<img src="/Images/site/gift-card.png" title="Marshalls Gift Card" alt="Marshalls Gift Card" />
+					</figure>
+					<p class="legal">No purchase necessary. See <a href="http://www.facebook.com/Marshalls/app_508399685868876" title="Official Rules" alt="Official Rules" target="_blank">Official Rules</a> for complete details.</p>
+					<a href="#" class="graybtn center fb-share-upload" title="Share on Facebook" alt="Share on Facebook">SHARE <img src="/Images/site/facebook.png" alt="Share on Facebook" title="Share on Facebook" /></a>
+				</section>
+			</article>
+			
+			<article id="votemax-link-hidden" style="display:none;">
+				<a href="#votemax" class="small" id="votemax-link">Vote maximum</a>
+			</article>
+			
+		</div>
+		
+	</div>
+
+    <script>
+        document.write('<s' + 'cript language="JavaScript" src="http://view.atdmt.com/jaction/hbomar_MarshallsFabFoundFacebookTab_1"></s' + 'cript>')
+	</script>
+	<noscript>
+		<iframe src="http://view.atdmt.com/iaction/hbomar_MarshallsFabFoundFacebookTab_1" width="1" height="1" frameborder="0" scrolling="No" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0"></iframe>
+	</noscript>
+</body>
+
+</html>

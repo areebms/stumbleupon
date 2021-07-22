@@ -1,0 +1,897 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:my="mynames"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="Content-Script-Type" content="text/javascript"></meta><meta name="robots" content="index, follow, noarchive"></meta><meta name="language" content="de"></meta><meta name="copyright" content="TAZ Verlags- und Vertriebs GmbH"></meta><title>Start -
+		
+		taz.de
+	</title><meta name="author" content="taz. die tageszeitung"></meta><meta name="description" content='Das große linke Nachrichten-Portal der "tageszeitung" aus Berlin: Unabhängig dank mehr als 11.000 Genossen.'></meta><meta name="keywords" content="Start,
+		Nachrichten, News, 
+		taz, tageszeitung
+	 "></meta><meta name="generator" content="tazxslt, ; "></meta><link rel="canonical" href="http://www.taz.de/"></link><link rel="alternate" type="application/rss+xml" title="taz.de - Start" href="rss.xml"></link><link rel="home" type="text/html" title="taz.de - Schlagzeilen" href="/"></link><link rel="copyright" type="text/html" title="Impressum" href="/6/impressum/"></link><link href="/lib/style/2011-11-29.css" type="text/css" rel="stylesheet"></link><link href="/lib/style/adition.css" type="text/css" rel="stylesheet"></link><style type="text/css" xml:space="preserve">
+
+			#logo_tazde {  top:0px;  }
+			#logo_tazde div {  
+				background-image:url(/lib/icons/logos/tazde2011-04-11.png); background-position:0 -13px;
+				height:333px;
+				}
+			
+			#headerleft, #headerright  {  z-index:1;  }
+			#predate {  top:35px;  }
+
+
+			ul.topbar                      >li:before,
+			.secthead>ul[role='navigation']>li:before	{  
+				content:''; display:inline-block; vertical-align:bottom;  
+				border-left: 1px solid; height:12px; margin: 0px 4px 2px;
+				}
+			ul.topbar                      >li.first:before,
+			.secthead>ul[role='navigation']>li.first:before	{  border:none; margin:0px;  }
+			ul.topbar                      >li:before  {  border-color:white;    }
+			.secthead>ul[role='navigation']>li:before  {  border-color:#888888;  }
+
+			#newsnavigation li.home a span	{  display:none;  }
+
+			#footer .sitemap {  padding-bottom:0px;  }
+			#footer .service, #footer .help {  padding:0px; border-bottom:none; }
+			#footer .claim, #footer ul.sitemap >li {  padding-bottom:16px;  }
+			#footer ul.sitemap >li.help {  padding-bottom:2px;  }
+			#footer ul.sitemap >li>a>h2  {  border-bottom: 1px solid #9E9E9E; margin-bottom:4px;  }
+			#footer ul.sitemap >li>ul>li {  
+				display:inline-block; overflow:hidden;
+				vertical-align:top; padding-right:0px;
+				}
+			#footer ul.sitemap >li.service>ul>li {  padding-left:49px;  }
+			#footer ul.sitemap >li.service>ul+ul {  text-align:right;  }
+			#footer ul.sitemap >li.service>ul+ul>li {  padding-left:25px;  }
+			#footer ul.sitemap >li.help>ul>li,
+			#footer ul.sitemap >li.news>ul>li {  padding-left:20px;  }
+			#footer ul.sitemap >li>ul>li.first {  padding-left:0px;  }
+			#footer h2 {  position:static; margin-bottom:0px; padding-bottom:0px;  }
+			#footer .sitemap span {  
+				position:static; display:inline;
+				padding-top:0px; padding-right:0px; margin-bottom:0px;
+				font-size:12.7px; line-height:16px;
+				}
+
+			.sect_dossier img {
+				width:auto; margin-bottom:42px; 
+				background-image:url(/lib/icons/big/schwerpunkt.jpg); background-repeat:no-repeat;
+				padding-left:76px;
+				border: 1px solid black;
+				border-width: 1px 0px;
+				}
+
+			.style_versal {  text-transform:uppercase;  }
+
+			.sect_adr .secthead img {  display:none;  }
+
+		</style><!--[if lte IE 6]> <link rel="stylesheet" type="text/css" href="/lib/style/ie6.css"> <![endif]--><!--[if lte IE 7]><style type="text/css">
+			ul.topbar                      >li      >a>span,
+			.secthead>ul[role='navigation']>li      >a>span	{  border-left: 1px solid; padding: 0px 4px;  }
+			ul.topbar                      >li.first>a>span,
+			.secthead>ul[role='navigation']>li.first>a>span	{  border:none; padding-left:0px;  }
+			ul.topbar                      >li      >a>span  {  border-color:white;    }
+			.secthead>ul[role='navigation']>li      >a>span  {  border-color:#888888;  }
+			.box h2 {  line-height:20px;  }
+			.author  {	display:inline;	float:none;	}
+			.sect_spb .sectbody {	padding-top:8px;	}
+			/* fil 2011-04-08 */
+			.sect_article >.sectfoot ul.toolbar >li,
+			#reward >ul.toolbar  {  height:28px;  }
+			.sect_article >.sectfoot ul.toolbar >li,
+			#reward ul.toolbar >li  {  float: left !important;  }
+			#reward >div  {  clear:both;  }
+			.sect_article >.sectfoot ul.toolbar  {  position:relative !important; top:0px; left:0px; height:24px;  }
+			#micropay ul.toolbar  {  height:52px;  }
+			.sect_article >.sectfoot {  padding-bottom:30px  }
+		</style><![endif]--><script type="text/javascript" src="/lib/ch/web/js/2011-12-12.js" xml:space="preserve"></script><link rel="shortcut icon" href="/favicon.ico" type="image/ico"></link></head><body class="homepage"><script type="text/javascript" xml:space="preserve">$(document.body).addClass('js');</script><div id="adOverlay" class="topo_lay"></div><div class="topo_wit" id="counter"><script type="text/javascript" xml:space="preserve">
+			var IVW=''+ location.protocol +'//taz.ivwbox.de/cgi-bin/ivw/CP/Startseite';
+			if( location.protocol == "http:" )
+				document.write(
+					'<img src="'+IVW
+					+'?r='+escape(document.referrer)
+					+'&d='+(Math.random()*100000)
+					+'" width="1" height="1" alt="szmtag" />'
+					);
+		</script><noscript><img src="http://taz.ivwbox.de/cgi-bin/ivw/CP/Startseite" width="1" height="1" alt="szmtag"></img></noscript><script type="text/javascript" xml:space="preserve">
+			rand = (''+Math.random());
+			len = rand.length;
+			append = rand.substr(len-10,10);
+			var IVW='/digitaz/cntres/Startseite/ecnt/'+append+'.taz/countergif';
+			document.write('<img src="'+IVW+'" width="1" height="1" border="0" alt="zaehler">');
+		</script><noscript><img src="/digitaz/cntres/Startseite/ecnt/1328121055.taz/countergif" border="0" width="1" height="1" alt=""></img></noscript></div><div id="fake" class="topo_wit"></div><div id="background" class="topo_bin"><div id="adition_zone_banner"></div><div id="subbanner"><div id="adition_zone_sky" class="topo_lay"></div><div id="adition_zone_layer" class="topo_lay"></div><div id="riegel" class="frame"><span id="headerleft" class="topo_col"><ul role="navigation" id="globalnavigation" class="topbar"><li class="first odd"><a shape="rect" href="/zeitung/tazinfo/"><span>tazinfo</span></a></li><li class="even"><a shape="rect" href="/zeitung/e-paper/"><span>e-Paper</span></a></li><li class="odd"><a shape="rect" href="/nc/zeitung/abo/"><span>Abo</span></a></li><li class="even"><a shape="rect" href="/zeitung/anzeigen-verlag/"><span>Anzeigen</span></a></li><li class="odd"><a shape="rect" href="/zeitung/genossenschaft/"><span>Genossenschaft</span></a></li><li class="even"><a shape="rect" href="/zeitung/taz-panter-stiftung/"><span>Stiftung</span></a></li><li class="odd"><a shape="rect" href="/zeitung/tazshop/"><span>tazshop</span></a></li><li class="last even"><a shape="rect" href="/zeitung/tazcafe/"><span>tazcafe</span></a></li></ul><ul role="navigation" id="newsnavigation" class="navbar" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><li class="first odd home selected"><a shape="rect" itemprop="url" href="/"><span itemprop="title">Startseite</span><div id="logo_tazde"><div></div></div></a></li><li class="even"><a shape="rect" href="/Politik/!p2/"><span>Politik</span></a></li><li class="odd"><a shape="rect" href="/Zukunft/!p4/"><span>Zukunft</span></a></li><li class="even"><a shape="rect" href="/Netz/!p5/"><span>Netz</span></a></li><li class="odd"><a shape="rect" href="/Debatte/!p9/"><span>Debatte</span></a></li><li class="even"><a shape="rect" href="/Leben/!p10/"><span>Leben</span></a></li><li class="odd"><a shape="rect" href="/Sport/!p12/"><span>Sport</span></a></li><li class="even"><a shape="rect" href="/Wahrheit/!p13/"><span>Wahrheit</span></a></li><li class="odd"><a shape="rect" href="/Berlin/!p14/"><span>Berlin</span></a></li><li class="last even"><a shape="rect" href="/Nord/!p11/"><span>Nord</span></a></li></ul><script type="text/javascript" xml:space="preserve">filOtaz_de.mainNavi();</script></span><span id="headerright" class="topo_col homepage"><ul role="navigation" id="helplinks" class="topbar"><li class="first odd"><a shape="rect" href="/6/hilfe/"><span>Hilfe</span></a></li><li class="last even"><a shape="rect" href="/6/kontakt/"><span>Kontakt</span></a></li><li><a href="/zeitung/" id="logo_dietageszeitung" shape="rect"><img src="/lib/icons/logos/dietageszeitung.png"></img><div class="underline I"></div><div class="underline II"></div></a></li></ul><ul role="navigation" id="siblinglinks" class="navbar"><li class="first odd"><a shape="rect" href="/1/archiv/archiv-start/"><span>Archiv</span></a></li><li class="even"><a shape="rect" href="/zeitung/"><span>Zeitung</span></a></li><li class="odd"><a shape="rect" href="/blogs/"><span>Blogs</span></a></li><li class="last even"><a shape="rect" href="/bewegung"><span>Bewegung</span></a></li></ul><form class="search" role="search" action="/!s=" method="GET" enctype="application/x-www-form-urlencoded"><div class="frame"><input type="text" class="text" name="s" value="suchen ..."></input><script type="text/javascript" language="javascript" xml:space="preserve">filOtaz_de.searchslot();</script><input type="image" class="send" title="suche senden" alt="suche senden" name="ignore" src="/lib/icons/ausloesen.png"></input></div></form></span><div id="billboard"><span id="adition_zone_billboard" class="ad_zone ad_zone_contentad ad_zone_sold"></span></div><div id="seite"><span role="main" id="hauptspalte" class="topo_col main_col">
+
+
+
+
+	<div class="sect sect_leads first_sect_leads" role="region"><ul role="directory"><li class="sectbody first odd first_sectbody"><a role="link" shape="rect" href="/Juristin-ueber-polizeilichen-Hanf-Anbau/!86867/" class="objlink pictured xl"><h4>Juristin über polizeilichen Hanf-Anbau</h4><h3>"Wie in Minority Report"</h3><p>Die Hamburger Polizei baut Cannabis an, um Erträge zu prognostizieren, die in eine Verurteilung eingehen könnten. Die Bremer Juristin Nicole Krumdiek hält das für mehr als fragwürdig. <span class="linkmarker"></span></p><img src="/uploads/images/460x229/cannabis-dpa.jpeg"></img></a></li><li class="sectbody even"><a role="link" shape="rect" href="/Fluechtlinge-aus-Afrika/!86856/" class="objlink pictured"><h4>Flüchtlinge aus Afrika</h4><h3>Tod auf hoher See</h3><p>1.500 Flüchtlinge ertranken im vergangenen Jahr auf dem Weg von Afrika nach Europa. Das sind so viele wie noch nie, sagt das UN-Flüchtlingshochkommissariat.<span class="linkmarker"></span><span class="author"> von D. Johnson &amp; C. Jakob</span></p><img src="/uploads/images/152x76/zazir_reuters.jpg"></img></a></li><li class="sectbody last odd"><a role="link" shape="rect" href="/Neue-Feindesliste-des-NSU-aufgetaucht/!86870/" class="objlink pictured"><h4>Neue Feindesliste des NSU aufgetaucht</h4><h3>Die Handschrift des Terrors</h3><p>Ein im Schutt gefundenes Adressbuch des NSU gibt Rätsel auf. Das Terrortrio sammelte Namen von Personen, die mit dem NPD-Verbot zu tun hatten.<span class="linkmarker"></span><span class="author"> von Wolf Schmidt</span></p><img src="/uploads/images/152x76/nsuadressbuch.jpg"></img></a></li></ul></div>
+
+
+
+
+	<div class="sect sect_leads" role="region"><ul role="directory"><li class="sectbody first odd first_sectbody"><a role="link" shape="rect" href="/Gastauftritt-bei-den-Simpsons/!86818/" class="objlink pictured"><h4>Gastauftritt bei den Simpsons</h4><h3>Assange wird Homers Nachbar</h3><p>Ein gemeinsamer DvD-Abend mit Julian Assange? Warum nicht. Die Simpsons bekommen in ihrer 500. Episode einen neuen Nachbarn. Ein cleverer Comeback-Versuch – mit Risiken.<span class="linkmarker"></span><span class="author"> von Rieke Havertz</span></p><img src="/uploads/images/152x76/simpsonsassangedpa.jpg"></img></a></li><li class="sectbody last even"><a role="link" shape="rect" href="/Einreise-in-USA-wegen-Tweets-verweigert/!86847/" class="objlink pictured"><h4>Einreise in USA wegen Tweets verweigert</h4><h3>#Access denied</h3><p>US-Behörden verstehen keinen Spaß. Auch nicht auf Twitter. Das erfuhren nun zwei britische Touristen, deren Tweets ein bisschen zu ernst genommen wurden. <span class="linkmarker"></span><span class="author"> von Katalina Präkelt</span></p><img src="/uploads/images/152x76/du_kommst_hier_nicht_rein.jpg"></img></a></li></ul></div>
+
+
+
+
+	<div class="sect sect_tdt" role="region"><div class="secthead" role="heading"><h2><a name="Themen des Tages" shape="rect" href="/Themen-des-Tages/!p15/"><span>Themen des Tages</span></a></h2></div><ul role="directory" class="sectbody box"><li class="first odd"><a role="link" shape="rect" href="/Proteste-in-Rumaenien/!86817/" class="objlink pictured nolead"><h4>Proteste in Rumänien</h4><h3>Korruption, Hunger und Zorn</h3><img src="/uploads/images/138x69/bukarest_protest_reuter.jpg"></img></a></li><li class="even"><a role="link" shape="rect" href="/Kosten-der-Atomkraft-in-Frankreich/!86837/" class="objlink pictured nolead"><h4>Kosten der Atomkraft in Frankreich</h4><h3>Im Kern falsch gerechnet</h3><img src="/uploads/images/138x69/franceatom.jpg"></img></a></li><li class="last odd"><a role="link" shape="rect" href="/Ermittlungen-zum-Zwickauer-Neonazitrio/!86811/" class="objlink pictured nolead"><h4>Ermittlungen zum Zwickauer Neonazitrio</h4><h3>Nummer fünf ist gefasst</h3><img src="/uploads/images/138x69/12020104_nazis_dpa_web.jpg"></img></a></li></ul></div>
+
+
+
+
+	<div class="sect sect_adr" role="region"><div class="secthead" role="heading"><h2><a name="Politik" shape="rect" href="/Politik/!p2/"><span>Politik</span></a></h2><ul role="navigation"><li class="first odd"><a shape="rect" href="/Politik/Deutschland/!p3272/"><span>Deutschland</span></a></li><li class="even"><a shape="rect" href="/Politik/Europa/!p3273/"><span>Europa</span></a></li><li class="odd"><a shape="rect" href="/Politik/Nahost/!p3274/"><span>Nahost</span></a></li><li class="even"><a shape="rect" href="/Politik/Amerika/!p3275/"><span>Amerika</span></a></li><li class="odd"><a shape="rect" href="/Politik/Asien/!p3276/"><span>Asien</span></a></li><li class="last even"><a shape="rect" href="/Politik/Afrika/!p3277/"><span>Afrika</span></a></li></ul></div><ul role="directory" class="sectbody"><li class="first odd"><a role="link" shape="rect" href="/Neue-Proteste-in-Dakar/!86853/" class="objlink pictured"><h4>Neue Proteste in Dakar</h4><h3>Opposition auf der Straße</h3><p>Tausende demonstrieren im Zentrum der Hauptstadt des Senegal gegen Präsident Wades Wiederwahl. Die Polizei löste die Demonstration auf, ein Mensch starb.<span class="linkmarker"></span></p><img src="/uploads/images/152x76/demo_dakar_reuters.jpg"></img></a></li><li class="even"><a role="link" shape="rect" href="/Muslime-gegen-Antisemitismus/!86850/" class="objlink nolead"><h4>Muslime gegen Antisemitismus</h4><h3>Solidarität unter "Geschwistern"</h3></a></li><li class="odd"><a role="link" shape="rect" href="/Wahlen-in-Kuwait/!86836/" class="objlink nolead"><h4>Wahlen in Kuwait</h4><h3>Aktivisten setzen auf den Wandel</h3></a></li><li class="last even"><a role="link" shape="rect" href="/Justizministerin-ueber-Handelsabkommen/!86822/" class="objlink nolead"><h4>Justizministerin über Handelsabkommen</h4><h3>"ACTA ändert nichts"</h3></a></li></ul></div>
+
+
+
+
+	<div class="sect sect_adr" role="region"><div class="secthead" role="heading"><h2><a name="Zukunft" shape="rect" href="/Zukunft/!p4/"><span>Zukunft</span></a></h2><ul role="navigation"><li class="first odd"><a shape="rect" href="/Zukunft/Konsum/!p3282/"><span>Konsum</span></a></li><li class="even"><a shape="rect" href="/Zukunft/Umwelt/!p3283/"><span>Umwelt</span></a></li><li class="odd"><a shape="rect" href="/Zukunft/Wirtschaft/!p3284/"><span>Wirtschaft</span></a></li><li class="even"><a shape="rect" href="/Zukunft/Bildung/!p3285/"><span>Bildung</span></a></li><li class="last odd"><a shape="rect" href="/Zukunft/Wissen/!p3286/"><span>Wissen</span></a></li></ul></div><ul role="directory" class="sectbody"><li class="first odd"><a role="link" shape="rect" href="/Einleitung-gefaehrlicher-Schadstoffe/!86854/" class="objlink pictured"><h4>Einleitung gefährlicher Schadstoffe</h4><h3>Unheimliche Gefahr aus dem Wasser</h3><p>Die Europäische Kommission will die Einleitung von Schadstoffen strenger kontrollieren. Umweltschützer fordern aber eine deutlich höhere Anzahl von Verboten.<span class="linkmarker"></span><span class="author"> von Ruth Reichstein</span></p><img src="/uploads/images/152x76/lochness01022012.jpg"></img></a></li><li class="even"><a role="link" shape="rect" href="/Merkel-besucht-China/!86852/" class="objlink nolead"><h4>Merkel besucht China</h4><h3>Pokerface auf Handelsreise</h3></a></li><li class="odd"><a role="link" shape="rect" href="/Bionade-verkauft-an-Dr-Oetker/!86842/" class="objlink nolead"><h4>Bionade verkauft an Dr. Oetker</h4><h3>Flasche ganz leer</h3></a></li><li class="last even"><a role="link" shape="rect" href="/Arbeitsagentur-Vorstand-ueber-Armut/!86843/" class="objlink nolead"><h4>Arbeitsagentur-Vorstand über Armut</h4><h3>"Mit dem 400-Euro-Job eingerichtet"</h3></a></li></ul></div>
+
+
+
+
+	<div class="sect sect_spb" role="region"><div class="secthead" role="heading"><h2><a name="Internet-Hauptstadt Berlin" shape="rect" href="/Internet-Hauptstadt-Berlin/!t186/"><span>Internet-Hauptstadt Berlin</span><img src="/uploads/images/freeform/schmuckbild_berlin_internet_cw-design_photocase.jpg"></img></a></h2></div><ul role="directory" class="sectbody box"><li class="first odd"><a role="link" shape="rect" href="/Editorial-Panter-Workshop/!86098/" class="objlink nolead"><h4>Editorial Panter-Workshop</h4><h3>Niemand twittert</h3></a></li><li class="even"><a role="link" shape="rect" href="/Start-up-Gruenderinnen/!86108/" class="objlink nolead"><h4>Start-up-Gründerinnen</h4><h3>"Das Internet ist nicht männlich"</h3></a></li><li class="last odd"><a role="link" shape="rect" href="/Berliner-Freifunker-ueber-WLAN-fuer-alle/!86111/" class="objlink nolead"><h4>Berliner Freifunker über WLAN für alle</h4><h3>"Wir brauchen nur Strom und Dächer"</h3></a></li></ul></div>
+
+
+
+
+	<div class="sect sect_adr" role="region"><div class="secthead" role="heading"><h2><a name="Netz" shape="rect" href="/Netz/!p5/"><span>Netz</span></a></h2><ul role="navigation"><li class="first odd"><a shape="rect" href="/Netz/Netzpolitik/!p3290/"><span>Netzpolitik</span></a></li><li class="even"><a shape="rect" href="/Netz/Netzökonomie/!p3291/"><span>Netzökonomie</span></a></li><li class="odd"><a shape="rect" href="/Netz/Netzkultur/!p3292/"><span>Netzkultur</span></a></li><li class="last even"><a shape="rect" href="/Netz/Netzgeräte/!p3293/"><span>Netzgeräte</span></a></li></ul></div><ul role="directory" class="sectbody"><li class="first odd"><a role="link" shape="rect" href="/Spendenkampagne-Wikipedia-/!86849/" class="objlink pictured"><h4>Spendenkampagne Wikipedia </h4><h3>Streit ums Geld</h3><p>Die Wikimedia-Stiftung hat auch dieses Jahr wieder Millionen gesammelt - 72 Prozent mehr als im Vorjahr. Jetzt geht das Hickhack darüber los, wer sie ausgeben darf. <span class="linkmarker"></span><span class="author"> von Torsten Kleinz</span></p><img src="/uploads/images/152x76/Sparschwein_Geld.jpg"></img></a></li><li class="even"><a role="link" shape="rect" href="/Regionale-Zensur-bei-Twitter-und-Google/!86826/" class="objlink nolead"><h4>Regionale Zensur bei Twitter und Google</h4><h3>Nächster Frühling ohne Twitter?</h3></a></li><li class="odd"><a role="link" shape="rect" href="/Pirate-Bay-Revisionsantrag-abgelehnt/!86848/" class="objlink nolead"><h4>"Pirate Bay"-Revisionsantrag abgelehnt</h4><h3>Knast für Piraten</h3></a></li><li class="last even"><a role="link" shape="rect" href="/Frauen-und-Computerspiele/!86820/" class="objlink nolead"><h4>Frauen und Computerspiele</h4><h3>Die verheimlichte Revolution</h3></a></li></ul></div>
+
+
+
+
+	<div class="sect sect_adr" role="region"><div class="secthead" role="heading"><h2><a name="Debatte" shape="rect" href="/Debatte/!p9/"><span>Debatte</span></a></h2><ul role="navigation"><li class="first odd"><a shape="rect" href="/Debatte/Kommentar/!p3295/"><span>Kommentar</span></a></li><li class="even"><a shape="rect" href="/Debatte/Kolumnen/!p3296/"><span>Kolumnen</span></a></li><li class="odd"><a shape="rect" href="/Debatte/Theorie/!p3297/"><span>Theorie</span></a></li><li class="last even"><a shape="rect" href="/Debatte/sonntazStreit/!p3299/"><span>sonntazStreit</span></a></li></ul></div><ul role="directory" class="sectbody"><li class="first odd"><a role="link" shape="rect" href="/Kommentar-Boersenfusion-/!86841/" class="objlink"><h4>Kommentar Börsenfusion </h4><h3>Ein Monopol sorgt für Transparenz </h3><p>Die verhinderte Fusion der Deutschen Börse mit der New Yorker Börse nutzt niemandem. Ein staatliches Börsenmonopol muss her, um die Risiken sichtbar zu machen.<span class="linkmarker"></span><span class="author"> von Ulrike Herrmann</span></p></a></li><li class="even"><a role="link" shape="rect" href="/Kolumne-Maenner/!86844/" class="objlink nolead"><h4>Kolumne Männer</h4><h3>Was Frauen wollen</h3></a></li><li class="odd"><a role="link" shape="rect" href="/Kommentar-Stromnetzausbau/!86834/" class="objlink nolead"><h4>Kommentar Stromnetzausbau</h4><h3>So kommt der Netzausbau nie</h3></a></li><li class="last even"><a role="link" shape="rect" href="/Schlagloch-Agitprop/!86808/" class="objlink nolead"><h4>Schlagloch Agitprop</h4><h3>Theaterkitsch? Ach was!</h3></a></li></ul></div>
+
+
+
+
+	<div class="sect sect_adr" role="region"><div class="secthead" role="heading"><h2><a name="Leben" shape="rect" href="/Leben/!p10/"><span>Leben</span></a></h2><ul role="navigation"><li class="first odd"><a shape="rect" href="/Leben/Köpfe/!p3301/"><span>Köpfe</span></a></li><li class="even"><a shape="rect" href="/Leben/Alltag/!p3302/"><span>Alltag</span></a></li><li class="odd"><a shape="rect" href="/Leben/Film/!p3303/"><span>Film</span></a></li><li class="even"><a shape="rect" href="/Leben/Medien/!p3304/"><span>Medien</span></a></li><li class="odd"><a shape="rect" href="/Leben/Musik/!p3305/"><span>Musik</span></a></li><li class="even"><a shape="rect" href="/Leben/Buch/!p3306/"><span>Buch</span></a></li><li class="odd"><a shape="rect" href="/Leben/Künste/!p3307/"><span>Künste</span></a></li><li class="last even"><a shape="rect" href="/Leben/Reise/!p3819/"><span>Reise</span></a></li></ul></div><ul role="directory" class="sectbody"><li class="first odd"><a role="link" shape="rect" href="/Der-Trend-zum-Film-Moneyball/!86832/" class="objlink pictured"><h4>Der Trend zum Film "Moneyball"</h4><h3>Die Datenfresser kommen</h3><p>In diversen Ballsportarten wie Baseball oder Fußball stechen schlaue Statistiknerds die alte Bauchgefühl-Trainergarde aus. "Moneyball" ist der Film zum Trend.<span class="linkmarker"></span><span class="author"> von Thomas Winkler</span></p><img src="/uploads/images/152x76/Szenenbild_02_700x466__02.jpg"></img></a></li><li class="even"><a role="link" shape="rect" href="/Film-Die-Summe-meiner-einzelnen-Teile/!86827/" class="objlink nolead"><h4>Film "Die Summe meiner einzelnen Teile"</h4><h3>Jenseits der Normalität</h3></a></li><li class="odd"><a role="link" shape="rect" href="/Helmut-Dietls-Film-Zettl/!86801/" class="objlink nolead"><h4>Helmut Dietls Film "Zettl"</h4><h3>Tröstet euch, es wird nicht besser</h3></a></li><li class="last even"><a role="link" shape="rect" href="/Arte-Doku-ueber-Filmgeschichte/!86795/" class="objlink nolead"><h4>Arte-Doku über Filmgeschichte</h4><h3>Traumfabrik mit Thermoskanne</h3></a></li></ul></div>
+
+
+
+
+	<div class="sect sect_adr" role="region"><div class="secthead" role="heading"><h2><a name="Sport" shape="rect" href="/Sport/!p12/"><span>Sport</span></a></h2></div><ul role="directory" class="sectbody"><li class="first odd"><a role="link" shape="rect" href="/Internationale-Vermarktung-der-Bundesliga/!86753/" class="objlink pictured"><h4>Internationale Vermarktung der Bundesliga</h4><h3>Markt der Möglichkeiten</h3><p>Auch im Ausland steigt der Wert des deutschen Fußballs. Die Bundesliga steigert die Erlöse aus TV-Rechten um 50 Prozent, sieht aber immer noch großes Potenzial.<span class="linkmarker"></span><span class="author"> von Frank Hellmann</span></p><img src="/uploads/images/152x76/neuer31012012.jpg"></img></a></li><li class="even"><a role="link" shape="rect" href="/Kolumne-Die-raetselhafte-Welt-des-Sports/!86831/" class="objlink nolead"><h4>Kolumne Die rätselhafte Welt des Sports</h4><h3>Tier im Tätowierstuhl</h3></a></li><li class="odd"><a role="link" shape="rect" href="/Der-Trend-zum-Film-Moneyball/!86832/" class="objlink nolead"><h4>Der Trend zum Film "Moneyball"</h4><h3>Die Datenfresser kommen</h3></a></li><li class="last even"><a role="link" shape="rect" href="/Football-Karriere-mit-unklarem-Ziel/!86749/" class="objlink nolead"><h4>Football-Karriere mit unklarem Ziel</h4><h3>Manning-Manie</h3></a></li></ul></div>
+
+
+
+
+	<div class="sect sect_wf" role="region"><div class="secthead" role="heading"><h2><a name="was fehlt" shape="rect" href="/was-fehlt/!p3894/"><span>was fehlt</span></a></h2></div><ul role="directory tablist" class="tabbox"><li class="tab box first odd first_tab"><div role="tab" class="secthead"><h2><a name="... die Ritterwürde" shape="rect"><span>... die Ritterwürde</span><img src="/lib/icons/schwerpunkt.png"></img></a></h2></div><a role="link tabpanel" shape="rect" href="/was-fehlt-/!86830/" class="objlink sectbody"><p>Fred Goodwin, ehemaliger Vorsitzender der Royal Bank of Scotland, ist kein Ritter mehr. Dafür war er während der Finanzkrise zu habgierig, findet die britische Regierung.<span class="linkmarker"></span></p></a></li><li class="tab box last even"><div role="tab" class="secthead"><h2><a name="... der Gletscher" shape="rect"><span>... der Gletscher</span><img src="/lib/icons/schwerpunkt.png"></img></a></h2></div><a role="link tabpanel" shape="rect" href="/was-fehlt-/!86824/" class="objlink sectbody"><p>Fette Beute für die Polizei: 5,2 Tonnen Gletschereis im Wert von 5.000 Euro hat sie in Chile beschlagnahmt. Das Eis sollte Getränke in Hauptstadtkneipen aufwerten.<span class="linkmarker"></span></p></a></li></ul></div><script type="text/javascript" xml:space="preserve">
+		filOtaz_de.tabbrowser( 460 );
+	
+		(function(){
+			$('.sect_wf').each(function(){
+				if( this.handled ) return;	// already processed
+				$('.sectbody', this).click(function(){
+					window.open( $(this).attr('href'),'popup','height=600,width=800');
+					return false;
+					});
+				this.handled = true;	// mark this done
+				});
+			})();
+	</script>
+
+
+
+
+	<div class="sect sect_adr" role="region"><div class="secthead" role="heading"><h2><a name="Wahrheit" shape="rect" href="/Wahrheit/!p13/"><span>Wahrheit</span></a></h2><ul role="navigation"><li class="first odd"><a shape="rect" href="/Wahrheit/Über die Wahrheit/!p3874/"><span>Über die Wahrheit</span></a></li><li class="even"><a shape="rect" href="/Wahrheit/Carla Brunis Tagebuch/!p3886/"><span>Carla Brunis Tagebuch</span></a></li><li class="last odd"><a shape="rect" href="/Wahrheit/Bei Tom/!p3311/"><span>Bei Tom</span></a></li></ul></div><ul role="directory" class="sectbody"><li class="first odd"><a role="link" shape="rect" href="/die-wahrheit/!86764/" class="objlink pictured"><h4>die wahrheit</h4><h3>Leerer Schein, Nase voll</h3><p>Jetzt werden den Konsumenten auch noch barocke Schuldgefühle beim Parfümkauf aufgeladen.Mit dem Warnhinweis "Rauchen lässt Ihre Haut altern" ...<span class="linkmarker"></span><span class="author"> von Kriki</span></p><img src="/uploads/images/152x76/versace.jpg"></img></a></li><li class="even"><a role="link" shape="rect" href="/die-wahrheit/!86766/" class="objlink nolead"><h4>die wahrheit</h4><h3>Hermann Hesses Haus fürn Arsch</h3></a></li><li class="odd"><a role="link" shape="rect" href="/die-wahrheit/!86673/" class="objlink nolead"><h4>die wahrheit</h4><h3>Neukölln Unlimited</h3></a></li><li class="last even"><a role="link" shape="rect" href="/die-wahrheit/!86674/" class="objlink nolead"><h4>die wahrheit</h4><h3>Der Hölle Rache</h3></a></li></ul></div>
+
+
+
+
+	<div class="sect sect_adr" role="region"><div class="secthead" role="heading"><h2><a name="Berlin" shape="rect" href="/Berlin/!p14/"><span>Berlin</span></a></h2><ul role="navigation"><li class="first odd"><a shape="rect" href="/Berlin/Berliner Köpfe/!p3314/"><span>Berliner Köpfe</span></a></li><li class="even"><a shape="rect" href="/Berlin/Kultur/!p3315/"><span>Kultur</span></a></li><li class="odd"><a shape="rect" href="/Berlin/tazplan/!p3877/"><span>tazplan</span></a></li><li class="even"><a shape="rect" href="/Berlin/Fluglärm BBI/!p3690/"><span>Fluglärm BBI</span></a></li><li class="last odd"><a shape="rect" href="/Berlin/Berlin Folgen/!p3818/"><span>Berlin Folgen</span></a></li></ul></div><ul role="directory" class="sectbody"><li class="first odd"><a role="link" shape="rect" href="/Ein-Jahr-nach-der-Raeumung-/!86865/" class="objlink pictured"><h4>Ein Jahr nach der Räumung </h4><h3>Liebig und teuer</h3><p>Die Räumung der Liebig 14 hat Berlin 1,6 Millionen Euro gekostet. Nun ist das Haus neu vermietet. Am Donnerstag, dem Jahrestag, gibt es erneut Proteste.<span class="linkmarker"></span><span class="author"> von Svenja Bergt Und  Konrad Litschko</span></p><img src="/uploads/images/152x76/liebig_dpa_01.jpg"></img></a></li><li class="even"><a role="link" shape="rect" href="/Affaere-um-Schrottimmobilien/!86872/" class="objlink nolead"><h4>Affäre um Schrottimmobilien</h4><h3>Senator berät beim Immobilienkauf </h3></a></li><li class="odd"><a role="link" shape="rect" href="/Senator-Heilmann-und-die-CDU/!86866/" class="objlink nolead"><h4>Senator Heilmann und die CDU</h4><h3>Herr Heilmann von der CDU</h3></a></li><li class="last even"><a role="link" shape="rect" href="/Festivals/!86859/" class="objlink nolead"><h4>Festivals</h4><h3>"Müll ist das Problem Nummer eins"</h3></a></li></ul></div>
+
+
+
+
+<iframe src="http://player.vimeo.com/video/35740161?title=0&amp;byline=0&amp;portrait=0&amp;color=ab020a&amp;autoplay=0" width="460" height="285" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><p><a href="http://www.taz.de/1/berlin/berlin-folgen/#35740161">Thomas Herfort: Der Puppenspieler</a>  - Ein Film aus der Serie "<a style="color: rgb(150, 29, 42);" href="http://www.taz.de/1/berlin/berlin-folgen/">berlinfolgen</a>" von taz.de und 2470media. Alle Filme <a style="color: rgb(150, 29, 42);" href="http://www.taz.de/1/berlin/berlin-folgen/">im Überblick</a>. </p>
+
+
+
+
+	<div class="sect sect_adr" role="region"><div class="secthead" role="heading"><h2><a name="Nord" shape="rect" href="/Nord/!p11/"><span>Nord</span></a></h2><ul role="navigation"><li class="first odd"><a shape="rect" href="/Nord/Hamburg/!p3317/"><span>Hamburg</span></a></li><li class="even"><a shape="rect" href="/Nord/Bremen/!p3318/"><span>Bremen</span></a></li><li class="last odd"><a shape="rect" href="/Nord/Kultur/!p3319/"><span>Kultur</span></a></li></ul></div><ul role="directory" class="sectbody"><li class="first odd"><a role="link" shape="rect" href="/Skandal-um-Pflegefamilie-von-Chantal/!86869/" class="objlink pictured"><h4>Skandal um Pflegefamilie von Chantal</h4><h3>Beamtenrecht sticht</h3><p>Nach Tod einer Elfjährigen wird die Jugendamtsleiterin suspendiert. Vorgesetzter sagt, das habe er eigentlich längst tun wollen. Opposition bezweifelt das.<span class="linkmarker"></span><span class="author"> von Kaija Kutter</span></p><img src="/uploads/images/152x76/Online_Schreiber_Wolters_dpa.jpeg"></img></a></li><li class="even"><a role="link" shape="rect" href="/Leere-Gebaeude-trotz-Wohnungsmangels/!86868/" class="objlink nolead"><h4>Leere Gebäude trotz Wohnungsmangels</h4><h3>Für Makler oder Wohnungslose</h3></a></li><li class="odd"><a role="link" shape="rect" href="/Drogen-unter-Aufsicht/!86789/" class="objlink nolead"><h4>Drogen unter Aufsicht</h4><h3>Polizei pflanzt Cannabis</h3></a></li><li class="last even"><a role="link" shape="rect" href="/Geschlossenes-Frauenhaus-in-Luebeck/!86792/" class="objlink nolead"><h4>Geschlossenes Frauenhaus in Lübeck</h4><h3>Sparen auf Kosten der Frauen</h3></a></li></ul></div>
+
+
+
+
+	<div class="sect sect_adr" role="region"><div class="secthead" role="heading"><h2><a name="Reise" shape="rect" href="/Leben/Reise/!p3896/"><span>Reise</span></a></h2><ul role="navigation"><li class="first odd"><a shape="rect" href="/Leben/Reise/Thema/!p3892/"><span>Thema</span></a></li><li class="last even"><a shape="rect" href="/Leben/Reise/Alle Länder/!p3891/"><span>Alle Länder</span></a></li></ul></div><ul role="directory" class="sectbody"><li class="first odd"><a role="link" shape="rect" href="/Flugabgabe/!86383/" class="objlink pictured"><h4>Flugabgabe</h4><h3>Der klimaneutrale Bluff</h3><p>"Kompensation von CO2-Emission ist nur die zweitbeste Lösung", sagt Dietrich Brockhagen von atmosfair. Ein Gespräch über ökologische Vernunft.<span class="linkmarker"></span></p><img src="/uploads/images/152x76/wolken_02.jpg"></img></a></li><li class="even"><a role="link" shape="rect" href="/Kulturaustausch-in-Indien/!86345/" class="objlink nolead"><h4>Kulturaustausch in Indien</h4><h3>Im Zentrum der Welt</h3></a></li><li class="odd"><a role="link" shape="rect" href="/Dominikanische-Republik/!86031/" class="objlink nolead"><h4>Dominikanische Republik</h4><h3>Einsame Insel im Pauschalparadies</h3></a></li><li class="last even"><a role="link" shape="rect" href="/Szenetreff/!86039/" class="objlink nolead"><h4>Szenetreff</h4><h3>Kaffee am Puls der Zeit</h3></a></li></ul></div>
+
+
+
+	
+		</span><span role="complementary" id="marginalspalte" class="topo_col right_col"><div id="predate">Die taz wird ermöglicht durch <a href="/zeitung/genossenschaft/" shape="rect">11.613 GenossInnen</a></div><div id="date">01<span class="I"></span>02<span class="I"></span>2012</div><!--[if lte IE 6]>
+			<div class="warning">Sie verwenden eine <a target="_blank" href="/Kampagne-gegen-den-Internet-Explorer-6/!66997/" 
+				title="Kampagne gegen den Internet Explorer 6: Microsoft frisst seine Kinder - taz.de">sehr alte</a> Version des Internet-Explorer.
+				Noch sind wir bemüht auch in diesem Browser zumindest unsere Inhalte zugänglich zu halten. Es ist allerdings mit Darstellungsfehlern
+				und eingeschränkten Interakionsmöglichkeiten zu rechnen.
+				Mit der Installation eines aktuelleren Browsers erleichtern Sie unsere Arbeit erheblich, <a target="_blank" href="http://www.heise.de/newsticker/meldung/Microsoft-Surfen-mit-dem-Internet-Explorer-6-ist-ein-Risiko-987480.html" title="Microsoft: Surfen mit dem Internet Explorer 6 ist ein Risiko">verbessern den Schutz Ihrer persönlichen Daten</a> und bereiten sich selbst eine Freude:
+				<ul>
+					<li><a target="_blank" href="http://mozilla-europe.org/de/firefox/" title="mozilla-europe.org/de/firefox/">Mozilla Firefox</a></li>
+					<li><a target="_blank" href="http://microsoft.com/germany/windows/internet-explorer/" title="microsoft.com/germany/windows/internet-explorer/">Internet-Explorer 8</a></li>
+					<li><a target="_blank" href="http://apple.com/de/safari/" title="apple.com/de/safari/">Apple Safari</a></li>
+				</ul>
+			</div>
+		<![endif]-->
+
+			
+
+
+
+	<div class="rack first_rack style_taz">
+    	<div xmlns="" class="sect sect_service box style_taz first_box">
+	
+	<div role="heading" class="secthead"><h2><a name="die%20aktuelle%20Ausgabe%20der%20taz" shape="rect">die aktuelle Ausgabe der taz</a></h2></div>
+	
+	<ul class="sectbody" role="directory">
+	 	<li style="padding-left:208px; height:100px;"><a role="link" href="/zeitung/" target="_top" style="margin:0px;"><div class="frame" style="width:198px; height:98px; overflow:hidden; border:1px solid black; position:absolute; top:0px; left:0px;"><img class="full" src="/fileadmin/seite1/s1-big.png" style="width:198px;"></div></a><ul role="navigation">
+				<li style="display:block;"><a href="/zeitung/abo/e-paper/" style="margin:0px;"><span>ePaper Abo</span></a></li>
+				<li style="display:block;"><a href="https://www.taz.de/zeitung/e-kiosk/" style="margin:0px;"><span>eKiosk</span></a></li>
+				<li style="display:block;"><a href="http://dl.taz.de/taz/shop/download_action.php?model=20100&amp;typ=seite1" style="margin:0px;"><span>PDF-Vorschau</span></a></li>
+			</ul>
+		</li>
+ 	</ul>
+
+</div><div xmlns="" class="sect sect_service box style_taz last_box">
+
+	<div role="heading" class="secthead">
+		<h2><a name="taz%20Service" shape="rect">taz Angebote</a></h2>
+		<img src="/lib/icons/buttons/plus.png" class="toolbar">
+	</div>
+	
+	<ul class="sectbody" role="directory">
+		
+		<li><a href="/zeitung/"><span>die Zeitung</span></a>
+			<ul role="navigation">
+				<li><a href="https://www.taz.de/zeitung/e-paper/"><span>ePaper</span></a><!-- <span>|</span> --></li>
+<!--				<li><a href="https://www.taz.de/zeitung/e-kiosk/"><span>eKiosk</span></a></li>
+ -->
+			</ul>
+		</li>
+		
+		<li><a href="/zeitung/abo/"><span>Abo</span></a>
+			<ul role="navigation">
+				<li><a href="https://www.taz.de/zeitung/abo/standardabo/"><span>Zeitung</span></a><span>|</span></li>
+				<li><a href="/zeitung/abo/probeabos/"><span>Probeabo</span></a><span>|</span></li>
+				<li><a href="/zeitung/abo/e-abo/"><span>ePaper</span></a><span>|</span></li>
+<!--				<li><a href="/taz/nf/etc/testausgaben.html"><span>eBook</span></a><span>|</span></li>
+ -->
+				<li><a href="/zeitung/abo/e-paper/iphone-ipad/"><span>iPhone</span></a></li>
+			</ul>
+		</li>
+		<li><a href="/zeitung/anzeigen-verlag/"><span>Anzeigen</span></a>
+			<ul role="navigation">
+				<li><a href="/zeitung/anzeigen-verlag/printausgabe0/"><span>Print</span></a><span>|</span></li>
+				<li><a href="/zeitung/anzeigen-verlag/online/"><span>Online</span></a><span>|</span></li>
+				<li><a href="/taz/pdf/TAZ-MA2009-National.pdf"><span>Mediadaten</span></a></li>
+			</ul>
+		</li>
+		<li><a><span>Recherche</span></a>
+			<ul role="navigation">
+				<li><a href="/zeitung/recherchedienst/"><span>Service</span></a><span>|</span></li>
+				<li><a href="/digitaz/.archiv/suche"><span>Textarchiv</span></a><span>|</span></li>
+				<li><a href="/themenalarm/"><span>Themenalarm</span></a></li>
+			</ul>
+		</li>
+		<li><a><span>mitmachen</span></a>
+			<ul role="navigation">
+				<li><a href="http://bewegung.taz.de/"><span>Bewegung</span></a><span>|</span></li>
+				<li><a href="/zeitung/genossenschaft/"><span>Genossenschaft</span></a><span>|</span></li>
+				<li><a href="/zeitung/taz-panter-stiftung/akademie/"><span>Akademie</span></a></li>
+			</ul>
+		</li>
+		<li><a href="http://shop.taz.de/"><span>tazshop</span></a>
+			<ul role="navigation">
+				<li><a href="http://shop.taz.de/index.php?cat=c58_Espresso.html"><span>tazpresso</span></a><span>|</span></li>
+				<li><a href="http://shop.taz.de/index.php?cat=c22_tazrad.html"><span>tazrad</span></a></li>
+			</ul>
+		</li>
+		<li><a href="/4/taz-reisen/"><span>tazreisen in die Zivilgesellschaft</span></a></li>
+		<li><a href="/zeitung/tazcafe/"><span>tazcafe</span></a>
+			<ul role="navigation">
+				<li><a href="/zeitung/tazcafe/tazpressomobil/"><span>tazpressomobil</span></a></li>
+			</ul>
+		</li>
+		<li><a href="/zeitung/tazinfo/veranstaltungen/"><span>Veranstaltungen</span></a></li>
+		<li><a href="/zeitung/tazinfo/panterpreis/"><span>taz Panter Preis</span></a></li>
+		<li><a href="/zeitung/tazinfo/"><span>tazinfo</span></a>
+			<ul role="navigation">
+				<li><a href="/zeitung/formulare/newsletter/"><span>Newsletter</span></a><span>|</span></li>
+				<li><a href="/zeitung/tazinfo/presse/"><span>Presse</span></a></li>
+			</ul>
+		</li>
+<!--		<li>
+			<ul role="navigation" class="subnav">
+				<li><a href=""><span>Hilfe</span></a><span>|</span></li>
+				<li><a href=""><span>Kontakt</span></a><span>|</span></li>
+				<li><a href=""><span>Impressum</span></a></li>
+			</ul>
+		</li> -->	
+ 	</ul>
+
+
+</div>
+	</div>
+
+
+	<div id="adition_zone_rechts_co0" class="ad_zone ad_zone_contentad ad_zone_badged ad_zone_sold"></div>
+
+
+
+
+
+	<div class="rack">
+    
+	<div class="sect sect_moreleads box first_box" role="region"><div class="secthead" role="heading"><h2><a name="weitere Schlagzeilen ..." shape="rect" href="/!p3270/"><span>weitere Schlagzeilen ...</span></a></h2></div><ul role="directory" class="sectbody"><li class="first odd"><a role="link" shape="rect" href="/Arbeitsagentur-Vorstand-ueber-Armut/!86843/" class="objlink nolead"><h4>Arbeitsagentur-Vorstand über Armut</h4><h3>"Mit dem 400-Euro-Job eingerichtet"</h3></a></li><li class="even"><a role="link" shape="rect" href="/Bionade-verkauft-an-Dr-Oetker/!86842/" class="objlink nolead"><h4>Bionade verkauft an Dr. Oetker</h4><h3>Flasche ganz leer</h3></a></li><li class="odd"><a role="link" shape="rect" href="/Spendenkampagne-Wikipedia-/!86849/" class="objlink nolead"><h4>Spendenkampagne Wikipedia </h4><h3>Streit ums Geld</h3></a></li><li class="even"><a role="link" shape="rect" href="/Merkel-besucht-China/!86852/" class="objlink nolead"><h4>Merkel besucht China</h4><h3>Pokerface auf Handelsreise</h3></a></li><li class="last odd"><a role="link" shape="rect" href="/Kosten-der-Atomkraft-in-Frankreich/!86837/" class="objlink nolead"><h4>Kosten der Atomkraft in Frankreich</h4><h3>Im Kern falsch gerechnet</h3></a></li></ul></div>
+    
+	<div class="sect sect_comment box last_box" role="region"><div class="secthead" role="heading"><h2><a name="Kommentar von Dominic Johnson" shape="rect"><span>Kommentar von Dominic Johnson</span></a></h2></div><a class="sectbody objlink pictured" role="link" shape="rect" href="/Kommentar-Europas-Fluechtlingspolitik/!86857/"><img src="/uploads/images/96x96/dominic_johnson_144_57.jpg"></img><p>Europa ist an einem Neubeginn im Verhältnis zu Nordafrika interessiert. Aber dafür braucht es eine verantwortungsbewusste Flüchtlingspolitk.<span class="linkmarker"></span></p></a></div>
+	</div>
+
+ 
+
+	<div id="adition_zone_rechts_co1" class="ad_zone ad_zone_contentad ad_zone_badged ad_zone_sold"></div>
+	<div id="adition_zone_rechts_co2" class="ad_zone ad_zone_contentad ad_zone_badged"></div>
+	<div id="adition_zone_rechts_co3" class="ad_zone ad_zone_contentad ad_zone_badged ad_zone_sold"></div>
+
+
+
+
+
+	<div class="rack">
+    
+	<div class="sect sect_moreleads box first_box last_box" role="region"><div class="secthead" role="heading"><h2><a name="meistgelesen" shape="rect"><span>meistgelesen</span></a></h2></div><ul role="directory" class="sectbody"><li class="first odd"><a role="link" shape="rect" href="/Juristin-ueber-polizeilichen-Hanf-Anbau/!86867/" class="objlink nolead"><h4>Juristin über polizeilichen Hanf-Anbau</h4><h3>"Wie in Minority Report"</h3></a></li><li class="even"><a role="link" shape="rect" href="/Gastauftritt-bei-den-Simpsons/!86818/" class="objlink nolead"><h4>Gastauftritt bei den Simpsons</h4><h3>Assange wird Homers Nachbar</h3></a></li><li class="odd"><a role="link" shape="rect" href="/Einreise-in-USA-wegen-Tweets-verweigert/!86847/" class="objlink nolead"><h4>Einreise in USA wegen Tweets verweigert</h4><h3>#Access denied</h3></a></li><li class="even"><a role="link" shape="rect" href="/Neue-Feindesliste-des-NSU-aufgetaucht/!86870/" class="objlink nolead"><h4>Neue Feindesliste des NSU aufgetaucht</h4><h3>Die Handschrift des Terrors</h3></a></li><li class="last odd"><a role="link" shape="rect" href="/Bionade-verkauft-an-Dr-Oetker/!86842/" class="objlink nolead"><h4>Bionade verkauft an Dr. Oetker</h4><h3>Flasche ganz leer</h3></a></li></ul></div>
+	</div>
+
+ 
+
+	<div class="rack style_taz">
+    
+	<div class="sect sect_taz zahl ich box first_box" role="region"><div class="secthead" role="heading"><h2><a name="taz zahl ich" shape="rect"><span>taz zahl ich</span></a></h2></div><div class="sectbody"><link xmlns="" type="text/css" rel="stylesheet" href="/scripts/taz_zahl_ich/css/jquery.qtip.min.css"><a xmlns="" id="reward"></a></div></div>
+
+    <style type="text/css" xml:space="preserve">
+.twtr-widget,
+.twtr-tweet-text em
+ { 
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size:12.7px !important;
+    }
+.twtr-doc { 
+    background-color: #efede4;
+    border:0px solid #961D2A;
+    border-width:1px 0px 2px;
+    -moz-border-radius:0px;
+    }
+.twtr-hd {
+    height:18px;
+    padding:0px;
+    }/*
+    padding:0 8px 3px 0;
+*/
+/*
+.twtr-hd:before {
+	content:url(/lib/icons/21x21red/tazze.gif); display:inline;
+	}
+*/
+
+.twtr-bd {
+    padding-top:12px;
+    }/*
+    border-top: 1px solid #961D2A;
+    padding-top:6px;
+*/
+
+.twtr-hd h3 {
+    display:inline;
+    line-height:25px !important;
+    margin-left:8px !important;
+    vertical-align:top;
+    color:#961D2A;
+    font-size:12.1px !important;
+    font-weight:bold !important;
+    text-transform:uppercase;
+    }
+
+.twtr-hd img.twtr-profile-img,
+.twtr-hd h4
+ { display:none; }
+
+/* ----- new 2011-10-14 ----- */
+.twtr-avatar,
+.twtr-user		{  display:none;  }
+.twtr-tweet-text	{  margin-left: 0px;  }
+
+
+	</style><script src="http://widgets.twimg.com/j/2/widget.js" xml:space="preserve"></script><script xml:space="preserve">
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 2,
+  interval: 6000,
+  width: 320,
+  height: 480,
+  theme: {
+    shell: {
+      background: 'none',
+      color: '#961D2A'
+    },
+    tweets: {
+      background: 'none',
+      color: '#555555',
+      links: '#961D2A',
+      fontFamily: 'Arial,Helvetica,sans-serif'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    hashtags: true,
+    timestamp: true,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('tazzahlich').start();
+	</script>
+	</div>
+
+
+	<div id="adition_zone_rechts_co4" class="ad_zone ad_zone_contentad ad_zone_badged"></div>
+
+
+
+
+
+	<div class="rack">
+    
+
+	<div class="sect sect_galleries box first_box" role="region"><div class="secthead" role="heading"><h2><a name="Bildergalerie" shape="rect"><span>Bildergalerie</span></a></h2></div><ul role="directory" class="sectbody"><li class="first odd"><a href="/fileadmin/Fotogalerien/Computerladen-largepreview.jpg" class="topImg" shape="rect"></a><a href="/fileadmin/Fotogalerien/Computerladen.jpg" class="botImg" shape="rect"></a><a role="link" shape="rect" href="/Galerie/!g=Computerladen/" class="objlink nolead"><h4>In Österreich herrscht immer noch Ordnung</h4><p>Einfach nur gebrauchte Computer verkaufen ist ja wohl langweilig. In diesem Laden in Österreich gibt es außerdem Palatschinken, einen schnelldrehenden Flohmarkt und seeeeehr viele Hinweisschilder. Irre!<span class="linkmarker"></span></p><img src="/fileadmin/Fotogalerien/Computerladen-largepreview.jpg"></img></a></li><li class="even"><a href="/fileadmin/Fotogalerien/Rate-den-Bart-largepreview.jpg" class="topImg" shape="rect"></a><a href="/fileadmin/Fotogalerien/Rate-den-Bart.jpg" class="botImg" shape="rect"></a><a role="link" shape="rect" href="/Galerie/!g=Rate-den-Bart/" class="objlink nolead"><h4>Rate den Bart</h4><p>Disney erlaubt seinen Mitarbeitern endlich offiziell das Tragen von Gesichtsbehaarung. Anlass für ein taz-Bartquiz.<span class="linkmarker"></span></p><img src="/fileadmin/Fotogalerien/Rate-den-Bart.jpg"></img></a></li><li class="odd"><a href="/fileadmin/Fotogalerien/Prchen-des-Grauens-largepreview.jpg" class="topImg" shape="rect"></a><a href="/fileadmin/Fotogalerien/Prchen-des-Grauens.jpg" class="botImg" shape="rect"></a><a role="link" shape="rect" href="/Galerie/!g=Prchen-des-Grauens/" class="objlink nolead"><h4>Pärchen des Grauens</h4><p>Wenn Iran und Venezuela gemeinsam an einer Bombe bauten, wäre "Liebe der Treibstoff" (Chavez). Ahmadinedschad und Chavez zeigen: Überall lauern sie, die Pärchen des Grauens. Eine Auswahl.<span class="linkmarker"></span></p><img src="/fileadmin/Fotogalerien/Prchen-des-Grauens.jpg"></img></a></li><li class="last even"><a href="/fileadmin/Fotogalerien/Dner-Morde-Unwort-des-Jahres-largepreview.jpg" class="topImg" shape="rect"></a><a href="/fileadmin/Fotogalerien/Dner-Morde-Unwort-des-Jahres.jpg" class="botImg" shape="rect"></a><a role="link" shape="rect" href="/Galerie/!g=Dner-Morde-Unwort-des-Jahres/" class="objlink nolead"><h4>Döner-Morde &amp; Co. - Unwörter des Jahres</h4><p>Von sozialverträglichem Frühableben bis Menschenmaterial. Eine kleine aber feine Auswahl preisgekrönter Unwörter.<span class="linkmarker"></span></p><img src="/fileadmin/Fotogalerien/Dner-Morde-Unwort-des-Jahres.jpg"></img></a></li></ul></div><script xml:space="preserve">
+(function() {
+
+	$('.sect_galleries').each(function(){	if( this.handled ) return;
+	
+/*		var href;
+		$(this).click(function(){
+				window.open( href, 'popup', 'height=600,width=800' );
+				return false;
+				}); 
+*/	
+		// the switching content needs to know its alternative image sources
+		$('.sectbody li',this).each(function(){
+			var a = $('a.objlink',this);
+			a[0].topImg = $('.topImg',this).attr('href');
+			a[0].botImg = $('.botImg',this).attr('href');
+			a.click(function(e){
+				e.preventDefault();
+				window.open( a.attr('href'), 'popup', 'height=642,width=800' );
+				return false;
+				});
+			});
+
+		var top = $('.sectbody li:first',this);
+		var bot = $('.sectbody li:gt(0)',this);
+	
+		// mouseover content switching
+		bot.hover(function(){	if( this.hovered ) return; this.hovered = true;
+			
+			var topA = $('a.objlink',top );
+			var botA = $('a.objlink',this); 
+
+			$('img',top).replaceWith('<img src="'+ topA[0].botImg+ '"/>');
+
+			var    upA = botA.clone(true);        upA[0].topImg = botA[0].topImg;        upA[0].botImg = botA[0].botImg;
+			this.downA = topA.clone(true); this.downA[0].topImg = topA[0].topImg; this.downA[0].botImg = topA[0].botImg;
+
+			top.empty().append( upA );
+
+			$('img',top).replaceWith('<img src="'+  upA[0].topImg+ '"/>');
+
+			}, function(){
+
+			$(this).empty().append( this.downA );
+			this.hovered = false;
+
+			});
+		
+	
+		this.handled = true;	// mark this done
+		});
+	
+
+  })(); 
+	//</script>
+
+
+    
+
+<div class="sect sect_poll box" role="region"><div class="secthead" role="heading"><h2><a name="Entscheidung des Tages" shape="rect"><span>Entscheidung des Tages</span></a></h2></div><div class="sectbody">
+  
+	<!--  CONTENT ELEMENT, uid:21040/list [begin] -->
+		
+		<!--  Plugin inserted: [begin] -->
+			
+
+
+	<!--
+
+		BEGIN: Content of extension "jk_poll", plugin "tx_jkpoll_pi1"
+
+	-->
+	<div class="tx-jkpoll-pi1">
+		<form name="poll" method="post" action="index.php?id=3270&amp;tx_jkpoll_pi1[go]=savevote&amp;tx_jkpoll_pi1[uid]=4713">
+
+		<p style="margin-bottom:3px;">  Mitt Romney hat auch die Vorwahl der Republikaner in Florida gewonnen. Wird er nun der Herausforderer Obamas?   </p>
+
+		
+
+		
+		<p class="answer">
+			<input class="pollanswer" name="tx_jkpoll_pi1[answer]" type="radio" value="0" />	
+			 Ja, den holt keiner mehr ein.
+		</p>
+		
+		<p class="answer">
+			<input class="pollanswer" name="tx_jkpoll_pi1[answer]" type="radio" value="1" />	
+			 Newt Gingrich ist noch nicht aus dem Rennen.
+		</p>
+		
+		<p class="answer">
+			<input class="pollanswer" name="tx_jkpoll_pi1[answer]" type="radio" value="2" />	
+			 Romney wird Herausforderer Obamas, hat dann aber gegen ihn keine Chance.
+		</p>
+		
+		<p class="answer">
+			<input class="pollanswer" name="tx_jkpoll_pi1[answer]" type="radio" value="3" />	
+			 Der nächste US-Präsident heißt Mitt Romney.
+		</p>
+			
+		<span style="display:block; height:10px;"></span>
+<div style="float:left;">
+		<input class="pollsubmit" type="submit" value="Abstimmen" />
+</div>
+
+<div align="right" style="float:right;margin-top:3px;"><a href="" id="resultlink" style="color:#555555;">Ergebnis anzeigen</a></div>
+
+<div style="clear:both;"></div>
+
+<script type="text/javascript" language="javascript">
+        (function(){
+			var Wert = document.getElementsByName("poll")[0].action;
+			var Ausdruck = /uid.*=([0-9]+)/;
+			Ausdruck.exec(Wert);
+			document.getElementById('resultlink').href = "/1/poll-popup/?tx_jkpoll_pi1[uid]="+RegExp.$1;
+			if (navigator.cookieEnabled) {
+				document.getElementsByName("poll")[0].action = "/1/poll-popup/?cchk=1&tx_jkpoll_pi1[go]=savevote&tx_jkpoll_pi1[uid]="+RegExp.$1;
+			} else {
+				document.getElementsByName("poll")[0].action = "/1/poll-popup/?tx_jkpoll_pi1[go]=savevote&tx_jkpoll_pi1[uid]="+RegExp.$1;
+			}
+                        $('.sect_poll #resultlink').click(function(){
+                                window.open( $(this).attr('href'),'popup','height=600,width=800');
+                                return false;
+                                });
+
+                        $('.pollsubmit').click(function(){
+                                window.open( '','popup','height=600,width=800');
+				document.getElementsByName("poll")[0].target = 'popup';
+				document.poll.submit();
+                                return false;
+                                });
+                
+                        this.handled = true;    // mark this done
+                        })();
+</script>
+
+		</form>
+	</div>
+	
+	<!-- END: Content of extension "jk_poll", plugin "tx_jkpoll_pi1" -->
+
+	
+		<!--  Plugin inserted: [end] -->
+			
+	<!--  CONTENT ELEMENT, uid:21040/list [end] -->
+		
+</div></div>
+
+
+    
+
+	<div class="sect sect_Karikatur &amp; Toms Touché box last_box" role="region"><div class="secthead" role="heading"><h2><a name="Karikatur &amp; Toms Touché" shape="rect"><span>Karikatur &amp; Toms Touché</span></a></h2></div><div class="sectbody karikatur_icons_rechts"><a shape="rect" href="/Debatte/!p9/"><img src="/fileadmin/seite1/kari/kari_preview.jpg"></img></a><a target="FEopenLink" onclick="        var href = this.href;       vHWin=window.open(        href,        'FEopenLink','width=808,height=704'        );       vHWin.focus();       return false;       " shape="rect" href="/digitaz/.tom/tomdestages"><img src="/fileadmin/seite1/tom/tom_preview.jpg"></img></a></div></div>
+
+	</div>
+
+ 
+
+<div class="rack">
+
+		<div role="region tablist" class="sect tabbox style_bewegung"><div class="box tab first_tab first_box active_tab"><div role="tab" class="secthead" style="left: 0px; width: 78px; display: block;"><h2><a name="Aktionen">
+
+	Aktionen<img src="/lib/icons/bewegung.jpg"></a></h2></div><div role="tabpanel" class="sectbody"><ul role="directory"><li class="odd first "><a role="link" class="objlink nolead " 
+
+href="http://bewegung.taz.de/termine/protest-gegen-die-sogenannte-sicherheitskonferenz-siko-2012"	><h4>
+Sicherheitskonferenz	</h4><h3>
+Kein Frieden mit dem Kriegsgeschäft!	</h3></a></li><li class="odd first "><a role="link" class="objlink nolead " 
+
+href="http://bewegung.taz.de/aktionen/gitarrenhersteller-gibson-will-naturschutzgesetz-kippen/beschreibung"	><h4>
+Gibson	</h4><h3>
+Gitarrenhersteller will Naturschutzgesetz kippen 	</h3></a></li><li class="odd first "><a role="link" class="objlink nolead " 
+
+href="http://bewegung.taz.de/aktionen/dresden-nazifrei-2012"	><h4>
+Dresden Nazifrei	</h4><h3>
+...bis der Aufmarsch Geschichte ist	</h3></a></li></ul><a href="http://bewegung.taz.de/aktionen">
+
+180 weitere Aktionen zum Mitmachen	</a> &gt;</div></div><div class="box tab"><div role="tab" class="secthead" style="left: 106px; width: 78px; display: block;"><h2><a name="Termine">
+
+
+	Termine<img src="/lib/icons/bewegung.jpg"></a></h2></div><div role="tabpanel" class="sectbody"><ul role="directory"><li class="odd first "><a role="link" class="objlink nolead " 
+
+href="http://bewegung.taz.de/termine/strategie-und-aktionskonferenz-%E2%80%9Cenergiekaempfe-in-bewegung-%E2%80%9D"	><h4>
+03.02. bis 05.02. Berlin	</h4><h3>
+Strategie- und Aktionskonferenz “Energiekämpfe in Bewegung!?!”	</h3></a></li><li class="odd first "><a role="link" class="objlink nolead " 
+
+href="http://bewegung.taz.de/termine/stuttgart-open-fair-2012"	><h4>
+03.02. bis 05.02. Stuttgart	</h4><h3>
+Stuttgart Open Fair 2012	</h3></a></li><li class="odd first "><a role="link" class="objlink nolead " 
+
+href="http://bewegung.taz.de/termine/urankonferenz-2012-in-muenster"	><h4>
+04.02. Münster	</h4><h3>
+Urankonferenz 2012	</h3></a></li></ul><a href="http://bewegung.taz.de/termine">
+
+aktuell 160 Termine im Bewegungskalender</a> &gt;</div></div><div class="box tab"><div role="tab" class="secthead" style="left: 212px; width: 78px; display: block;"><h2><a name="Orgas" shape="rect">
+
+	Orgas<img src="/lib/icons/bewegung.jpg"></a></h2></div><div role="tabpanel" class="sectbody"><ul role="directory"><li class="odd first "><a role="link" class="objlink nolead " 
+
+href="http://bewegung.taz.de/organisationen/gwtv/blogeintrag/gorleben-365-der-schwarzbau-geht-weiter"  ><h4>
+graswurzel.tv	</h4><h3>
+Gorleben 365: Der Schwarzbau geht weiter - Video Blockade Aktion	</h3></a></li><li class="odd first "><a role="link" class="objlink nolead " 
+
+href="http://bewegung.taz.de/organisationen/lobbycontrol/blogeintrag/christian-wulff-%E2%80%93-leider-kein-einzelfall"  ><h4>
+LobbyControl	</h4><h3>
+Christian Wulff – leider kein Einzelfall	</h3></a></li><li class="odd first "><a role="link" class="objlink nolead " 
+
+href="http://bewegung.taz.de/organisationen/leftvision/blogeintrag/dresden-nazifrei-mobi-clip-2012"  ><h4>
+leftvision	</h4><h3>
+Dresden Nazifrei Mobi Clip 2012	</h3></a></li></ul><a href="http://bewegung.taz.de/organisationen">
+
+886 weitere Organisationen stellen sich vor	</a> &gt;</div></div></div><script type="text/javascript" language="javascript">filOtaz_de.tabbrowser( 320 );</script>
+
+
+<div class="sect box last_box style_bewegung" role="region">
+	<div class="secthead" role="heading"><h2><a href="http://bewegung.taz.de">Plattform für Veränderung</a></h2></div>
+	<div class="sectbody"><a href="http://bewegung.taz.de"><img style="position: relative; top: -8px; left:4px; margin-bottom:-8px;" src="/lib/icons/logos/bewegungtazde.jpg"/></a></div>
+</div>
+
+</div>
+
+
+	<div id="adition_zone_rechts_co5" class="ad_zone ad_zone_contentad ad_zone_badged ad_zone_sold"></div>
+
+
+	<div id="adition_zone_rechts_co6" class="ad_zone ad_zone_contentad ad_zone_badged"></div>
+
+
+	<div class="rack style_taz">
+    
+	<div class="sect sect_moreleads box first_box" role="region"><div class="secthead" role="heading"><h2><a name="taz Hausblog" shape="rect" href="http://blogs.taz.de/hausblog/"><span>taz Hausblog</span></a></h2></div><ul role="directory" class="sectbody"><li class="first odd"><a role="link" shape="rect" href="http://blogs.taz.de/hausblog/2012/01/31/hate-poetry-im-taz-cafe//" class="objlink nolead"><h3>Hate-Poetry im taz-Café</h3></a></li><li class="even"><a role="link" shape="rect" href="http://blogs.taz.de/hausblog/2012/01/24/im-hagelsturm-der-kritik-%e2%80%93-stellt-sich-die-frage-ob-und-wenn-an-wen//" class="objlink nolead"><h3>Im Hagelsturm der Kritik – Stellt sich die Frage, ob und wenn, an wen?</h3></a></li><li class="odd"><a role="link" shape="rect" href="http://blogs.taz.de/hausblog/2012/01/23/so-viel-hitler-war-selten//" class="objlink nolead"><h3>So viel Hitler war selten</h3></a></li><li class="even"><a role="link" shape="rect" href="http://blogs.taz.de/hausblog/2012/01/22/die-jagd-nach-klicks//" class="objlink nolead"><h3>Die Jagd nach Klicks</h3></a></li><li class="last odd"><a role="link" shape="rect" href="http://blogs.taz.de/hausblog/2012/01/22/schlieslich-wurde-es-das-rosa-steckenpferd-probleme-bei-der-recherche//" class="objlink nolead"><h3>Schließlich wurde es das rosa Steckenpferd – Probleme bei der Recherche</h3></a></li></ul></div>
+
+    
+<div class="sect sect_comment box" role="region"><div class="secthead" role="heading"><h2><a name="LE MONDE diplomatique" shape="rect"><span>LE MONDE diplomatique</span></a></h2></div><a class="sectbody objlink pictured" role="link" shape="rect" href="http://www.monde-diplomatique.de/"><img src="/uploads/images/96x96/lmd-96pxl.jpg"></img><p>LE MONDE diplomatique ist die größte Monatszeitung für internationale Politik. Sie erscheint weltweit in 61 Ausgaben &ndash; und liegt am 2. Freitag im Monat der tageszeitung bei.<span class="linkmarker"></span></p></a></div>
+
+    
+<div class="sect sect_comment box" role="region"><div class="secthead" role="heading"><h2><a name="Neuer taz-Partner" shape="rect"><span>Neuer taz-Partner</span></a></h2></div><a class="sectbody objlink pictured" role="link" shape="rect" href="http://www.kontext-wochenzeitung.de"><img src="/uploads/images/96x96/kontext_quad_teaserfoto.jpg"></img><p>KONTEXT ist ein unabhängiges Onlineportal, das von Journalisten verantwortet und von Stuttgarter Bürgern getragen wird. Die neue Ausgabe von Kontext erscheint ab sofort jeden Mittwoch online und am Wochenende als Beilage von taz.die tageszeitung.<span class="linkmarker"></span></p></a></div>
+
+    
+<div class="sect sect_comment box last_box" role="region"><div class="secthead" role="heading"><h2><a name="taz.Recherchefonds Ausland" shape="rect"><span>taz.Recherchefonds Ausland</span></a></h2></div><a class="sectbody objlink pictured" role="link" shape="rect" href="http://www.taz.de/zeitung/tazinfo/auslandsrecherche/"><img src="/uploads/images/96x96/Globus96.jpg"></img><p>Auslandsrecherche kostet Geld - Sie können dabei helfen!<span class="linkmarker"></span></p></a></div>
+
+	</div>
+
+
+	<div id="adition_zone_rechts_co7" class="ad_zone ad_zone_contentad ad_zone_badged ad_zone_sold"></div>
+
+
+
+
+
+	<div class="rack">
+    
+<div class="sect sect_comment box first_box" role="region"><div class="secthead" role="heading"><h2><a name="Wir-wollen-wenig-aber-von-vielen-Blog" shape="rect"><span>Wir-wollen-wenig-aber-von-vielen-Blog</span></a></h2></div><a class="sectbody objlink pictured" role="link" shape="rect" href="http://blogs.taz.de/wirwollenwenig/"><img src="/uploads/images/96x96/euro.png"></img><p>Das Blog der deutschen Crowdfunding-Szene auf taz.de.<span class="linkmarker"></span></p></a></div>
+
+    
+	<div class="sect sect_moreleads box last_box" role="region"><div class="secthead" role="heading"><h2><a name="Das Neueste in den tazblogs" shape="rect" href="http://blogs.taz.de///"><span>Das Neueste in den tazblogs</span></a></h2></div><ul role="directory" class="sectbody"><li class="first odd"><a role="link" shape="rect" href="http://blogs.taz.de/reptilienfonds/" class="objlink nolead"><h4>Reptilienfonds</h4><h3>Nachrichten vom Niedergang der politischen Karikatur XXI</h3></a></li><li class="even"><a role="link" shape="rect" href="http://blogs.taz.de/datenscheich/" class="objlink nolead"><h4>Der Datenscheich</h4><h3>Syrien... ge'spiegelt'!</h3></a></li><li class="odd"><a role="link" shape="rect" href="http://blogs.taz.de/popblog/" class="objlink nolead"><h4>Monarchie &amp; Alltag</h4><h3>Dame, König, As, Spion (Regie: Tomas Alfredson)</h3></a></li><li class="even"><a role="link" shape="rect" href="http://blogs.taz.de/latinorama/" class="objlink nolead"><h4>Latin@rama</h4><h3>Einheit vor Reform</h3></a></li><li class="last odd"><a role="link" shape="rect" href="http://blogs.taz.de/netizenblog/" class="objlink nolead"><h4>Netizen Journalism and the New News</h4><h3>AL Observer Report Corrects Media Narratives About Syria</h3></a></li></ul></div>
+
+	</div>
+
+ 
+
+
+
+
+	<div class="rack">
+    
+
+
+  
+	<!--  CONTENT ELEMENT, uid:16387/list [begin] -->
+		
+		<!--  Plugin inserted: [begin] -->
+			
+
+
+	<!--
+
+		BEGIN: Content of extension "hp_taz_plugin_right", plugin "tx_hptazpluginright_pi1"
+
+	-->
+	<div class="tx-hptazpluginright-pi1">
+		<!-- start smarty/plugin_right.tmpl -->
+
+
+<div class="sect sect_minitext box" role="region">
+		<div class="secthead" role="heading">
+
+		<div class="insert_sectname">
+			<span name="name">SPORTSCHAU</span>
+		</div>
+
+	</div>
+		<div class="sectbody">
+
+		
+<p><b>Guten Tag, <br />
+meine Damen und Herren!<br />
+</b> &Uuml;berall irre Diktatoren, explodierende Atomkraftwerke, steigende Temperaturen, kaputte Familien, korrupte Banker, Priester und Reformp&auml;dagogen, sinkende Temperaturen, vergiftetes Essen, Private-public-Geheimvertr&auml;ge, bankrotte Staatshaushalte, schwindende Triple-A-Ratings, einst&uuml;rzende Neubauten, abst&uuml;rzende Brieftauben, zerst&ouml;rte Bahnhofsgastst&auml;tten, nicht mehr startende Airlineflotten. Aber es gibt auch eine gute Nachricht:  <b>David Beckham stellt seine  Unterw&auml;schekollektion vor.<br />
+<br />
+&uuml;brigens: verboten durfte nie tagesschau hei&szlig;en und hei&szlig;t jetzt sportschau. verboten unterst&uuml;tzt die Kandidatur von Andreas R&uuml;ttenauer f&uuml;r den DFB-Vorsitz.</b></p>
+
+		
+		<div class="insert_objlink">
+					</div>
+
+	</div>
+</div>
+
+
+<!--  end  smarty/plugin_right.tmpl -->
+	</div>
+	
+	<!-- END: Content of extension "hp_taz_plugin_right", plugin "tx_hptazpluginright_pi1" -->
+
+	
+		<!--  Plugin inserted: [end] -->
+			
+	<!--  CONTENT ELEMENT, uid:16387/list [end] -->
+		
+
+
+
+	</div>
+
+ 
+
+	<div id="adition_zone_rechts_co8" class="ad_zone ad_zone_contentad ad_zone_badged"></div>
+	<div id="adition_zone_rechts_co9" class="ad_zone ad_zone_contentad ad_zone_badged ad_zone_sold"></div>
+
+
+
+		</span><div id="footer"><div class="claim"><a href="/6/redaktionsstatut/" shape="rect">Die Unabhängigkeit</a> der taz ermöglichen über <a href="/zeitung/genossenschaft/" shape="rect">11.000 GenossInnen</a> und mehr als 50.000 AbonnentInnen der taz - <a href="/zeitung/abo/" shape="rect">gedruckt</a> oder als <a href="/zeitung/abo/digiabo/" shape="rect">E-Paper</a>.</div><ul role="navigation" class="sitemap"><li class="service"><a shape="rect"><h2>Service</h2></a><ul><li class="first odd"><a shape="rect" href="/zeitung/"><h2>die Zeitung</h2></a><ul><li class="first odd"><a shape="rect" href="https://www.taz.de/zeitung/e-kiosk/"><span>eKiosk</span></a></li><li class="even"><a shape="rect" href="/zeitung/abo/e-paper/"><span>ePaper Abo</span></a></li><li class="last odd"><a shape="rect" href="/zeitung/e-kiosk/apps/"><span>App</span></a></li></ul></li><li class="even"><a shape="rect" href="/zeitung/abo/"><h2>Abo</h2></a><ul><li class="first odd"><a shape="rect" href="/abo/standardabo/"><span>Zeitung</span></a></li><li class="even"><a shape="rect" href="/zeitung/abo/probeabos/"><span>Probeabo</span></a></li><li class="odd"><a shape="rect" href="/zeitung/abo/e-paper/"><span>ePaper</span></a></li><li class="even"><a shape="rect" href="/zeitung/abo/e-paper/iphone-ipad/"><span>iPhone</span></a></li><li class="last odd"><a shape="rect" href="/zeitung/abo/e-paper/iphone-ipad/"><span>iPad</span></a></li></ul></li><li class="odd"><a shape="rect" href="/zeitung/anzeigen-verlag/"><h2>Anzeigen</h2></a><ul><li class="first odd"><a shape="rect" href="/zeitung/anzeigen-verlag/printausgabe0/"><span>Print</span></a></li><li class="last even"><a shape="rect" href="/zeitung/anzeigen-verlag/online/"><span>Online</span></a></li></ul></li><li class="even"><a shape="rect" href=""><h2>Recherche</h2></a><ul><li class="first odd"><a shape="rect" href="/zeitung/recherchedienst/"><span>Service</span></a></li><li class="even"><a shape="rect" href="/digitaz/.archiv/suche"><span>Textarchiv</span></a></li><li class="last odd"><a shape="rect" href="/themenalarm/"><span>Themenalarm</span></a></li></ul></li><li class="odd"><a shape="rect" href=""><h2>mitmachen</h2></a><ul><li class="first odd"><a shape="rect" href="http://bewegung.taz.de/"><span>Bewegung</span></a></li><li class="even"><a shape="rect" href="/zeitung/genossenschaft/"><span>Genossenschaft</span></a></li><li class="last odd"><a shape="rect" href="/zeitung/taz-panter-stiftung/akademie/"><span>Akademie</span></a></li></ul></li><li class="even"><a shape="rect" href="/zeitung/tazcafe/"><h2>tazcafe</h2></a><ul><li class="first last odd"><a shape="rect" href="/zeitung/tazcafe/tazpressomobil/"><span>tazpressomobil</span></a></li></ul></li><li class="last odd"><a shape="rect" href="/zeitung/tazinfo/"><h2>tazinfo</h2></a><ul><li class="first odd"><a shape="rect" href="/zeitung/formulare/newsletter/"><span>Newsletter</span></a></li><li class="last even"><a shape="rect" href="/zeitung/tazinfo/presse/"><span>Presse</span></a></li></ul></li></ul><ul><li class="first odd"><a shape="rect" href="http://shop.taz.de/"><h2>tazshop</h2></a></li><li class="even"><a shape="rect" href="/4/taz-reisen/"><h2>tazreisen in die Zivilgesellschaft</h2></a></li><li class="odd"><a shape="rect" href="/zeitung/tazinfo/veranstaltungen/"><h2>Veranstaltungen</h2></a></li><li class="last even"><a shape="rect" href="/zeitung/tazinfo/panterpreis/"><h2>taz Panter Preis</h2></a></li></ul></li><li class="news"><a href="/" shape="rect"><h2>Start</h2></a><ul><li class="first odd"><a shape="rect" href="/Politik/!p2/"><h2>Politik</h2></a><ul><li class="first odd"><a shape="rect" href="/Politik/Deutschland/!p3272/"><span>Deutschland</span></a></li><li class="even"><a shape="rect" href="/Politik/Europa/!p3273/"><span>Europa</span></a></li><li class="odd"><a shape="rect" href="/Politik/Nahost/!p3274/"><span>Nahost</span></a></li><li class="even"><a shape="rect" href="/Politik/Amerika/!p3275/"><span>Amerika</span></a></li><li class="odd"><a shape="rect" href="/Politik/Asien/!p3276/"><span>Asien</span></a></li><li class="last even"><a shape="rect" href="/Politik/Afrika/!p3277/"><span>Afrika</span></a></li></ul></li><li class="even"><a shape="rect" href="/Zukunft/!p4/"><h2>Zukunft</h2></a><ul><li class="first odd"><a shape="rect" href="/Zukunft/Konsum/!p3282/"><span>Konsum</span></a></li><li class="even"><a shape="rect" href="/Zukunft/Umwelt/!p3283/"><span>Umwelt</span></a></li><li class="odd"><a shape="rect" href="/Zukunft/Wirtschaft/!p3284/"><span>Wirtschaft</span></a></li><li class="even"><a shape="rect" href="/Zukunft/Bildung/!p3285/"><span>Bildung</span></a></li><li class="last odd"><a shape="rect" href="/Zukunft/Wissen/!p3286/"><span>Wissen</span></a></li></ul></li><li class="odd"><a shape="rect" href="/Netz/!p5/"><h2>Netz</h2></a><ul><li class="first odd"><a shape="rect" href="/Netz/Netzpolitik/!p3290/"><span>Netzpolitik</span></a></li><li class="even"><a shape="rect" href="/Netz/Netzökonomie/!p3291/"><span>Netzökonomie</span></a></li><li class="odd"><a shape="rect" href="/Netz/Netzkultur/!p3292/"><span>Netzkultur</span></a></li><li class="last even"><a shape="rect" href="/Netz/Netzgeräte/!p3293/"><span>Netzgeräte</span></a></li></ul></li><li class="even"><a shape="rect" href="/Debatte/!p9/"><h2>Debatte</h2></a><ul><li class="first odd"><a shape="rect" href="/Debatte/Kommentar/!p3295/"><span>Kommentar</span></a></li><li class="even"><a shape="rect" href="/Debatte/Kolumnen/!p3296/"><span>Kolumnen</span></a></li><li class="odd"><a shape="rect" href="/Debatte/Theorie/!p3297/"><span>Theorie</span></a></li><li class="last even"><a shape="rect" href="/Debatte/sonntazStreit/!p3299/"><span>sonntazStreit</span></a></li></ul></li><li class="odd"><a shape="rect" href="/Leben/!p10/"><h2>Leben</h2></a><ul><li class="first odd"><a shape="rect" href="/Leben/Köpfe/!p3301/"><span>Köpfe</span></a></li><li class="even"><a shape="rect" href="/Leben/Alltag/!p3302/"><span>Alltag</span></a></li><li class="odd"><a shape="rect" href="/Leben/Film/!p3303/"><span>Film</span></a></li><li class="even"><a shape="rect" href="/Leben/Medien/!p3304/"><span>Medien</span></a></li><li class="odd"><a shape="rect" href="/Leben/Musik/!p3305/"><span>Musik</span></a></li><li class="even"><a shape="rect" href="/Leben/Buch/!p3306/"><span>Buch</span></a></li><li class="odd"><a shape="rect" href="/Leben/Künste/!p3307/"><span>Künste</span></a></li><li class="last even"><a shape="rect" href="/Leben/Reise/!p3819/"><span>Reise</span></a></li></ul></li><li class="even"><a shape="rect" href="/Sport/!p12/"><h2>Sport</h2></a><ul></ul></li><li class="odd"><a shape="rect" href="/Wahrheit/!p13/"><h2>Wahrheit</h2></a><ul><li class="first odd"><a shape="rect" href="/Wahrheit/Über die Wahrheit/!p3874/"><span>Über die Wahrheit</span></a></li><li class="even"><a shape="rect" href="/Wahrheit/Carla Brunis Tagebuch/!p3886/"><span>Carla Brunis Tagebuch</span></a></li><li class="last odd"><a shape="rect" href="/Wahrheit/Bei Tom/!p3311/"><span>Bei Tom</span></a></li></ul></li><li class="even"><a shape="rect" href="/Berlin/!p14/"><h2>Berlin</h2></a><ul><li class="first odd"><a shape="rect" href="/Berlin/Berliner Köpfe/!p3314/"><span>Berliner Köpfe</span></a></li><li class="even"><a shape="rect" href="/Berlin/Kultur/!p3315/"><span>Kultur</span></a></li><li class="odd"><a shape="rect" href="/Berlin/tazplan/!p3877/"><span>tazplan</span></a></li><li class="even"><a shape="rect" href="/Berlin/Fluglärm BBI/!p3690/"><span>Fluglärm BBI</span></a></li><li class="last odd"><a shape="rect" href="/Berlin/Berlin Folgen/!p3818/"><span>Berlin Folgen</span></a></li></ul></li><li class="last odd"><a shape="rect" href="/Nord/!p11/"><h2>Nord</h2></a><ul><li class="first odd"><a shape="rect" href="/Nord/Hamburg/!p3317/"><span>Hamburg</span></a></li><li class="even"><a shape="rect" href="/Nord/Bremen/!p3318/"><span>Bremen</span></a></li><li class="last odd"><a shape="rect" href="/Nord/Kultur/!p3319/"><span>Kultur</span></a></li></ul></li></ul></li><li class="help"><ul><li class="first odd"><a shape="rect" href="/6/hilfe/"><span>Hilfe</span></a></li><li class="even"><a shape="rect" href="/6/kontakt/"><span>Kontakt</span></a></li><li class="odd"><a shape="rect" href="/6/impressum/"><span>Impressum</span></a></li><li class="even"><a shape="rect" href="/6/redaktionsstatut/"><span>Redaktionsstatut</span></a></li><li class="odd"><a shape="rect" href="/zeitung/tazinfo/datenschutz/"><span>Datenschutzerklärung</span></a></li><li class="last even"><a shape="rect" href="/zeitung/tazinfo/presse/"><span>Presse</span></a></li></ul></li><li class="search"><form class="search" role="search" action="/!s=" method="GET" enctype="application/x-www-form-urlencoded"><div class="frame"><input type="text" class="text" name="s" value="suchen ..."></input><script type="text/javascript" language="javascript" xml:space="preserve">filOtaz_de.searchslot();</script><input type="image" class="send" title="suche senden" alt="suche senden" name="ignore" src="/lib/icons/ausloesen.png"></input></div></form></li></ul><div class="copyright">Alle Rechte vorbehalten. Für Fragen zu Rechten oder Genehmigungen wenden Sie sich bitte an lizenzen@taz.de</div></div></div><a class="sticker" target="_blank" href="/dfb-kandidat" onclick="this.blur();" style="left:30px;" shape="rect"><img src="/fileadmin/static/images/stickerDFB.png"></img></a></div></div></div><div id="adition" class="topo_wit"><script xml:space="preserve">
+			// identify adition ad zones, set IDs
+			// expect jQuery already to be loaded
+(function() {
+  var adids = {
+
+
+artikelliste: [68456],
+artikel_co: [68380],
+banner: [68369],
+sky: [68370],
+layer: [68381],
+rechts_co0: [117889],
+rechts_co1: [68371],
+rechts_co2: [68372],
+rechts_co3: [68373],
+rechts_co4: [68374],
+rechts_co5: [68375],
+rechts_co6: [68376],
+rechts_co7: [68377],
+rechts_co8: [68378],
+rechts_co9: [68379],
+billboard: [413040],
+pageID: [3270],
+message: ['ok']
+
+	
+    }
+  var zones = [ 'artikelliste', 'banner', 'sky', 'artikel_co', 'layer', 'billboard',
+                'rechts_co0', 'rechts_co1', 'rechts_co2', 'rechts_co3', 'rechts_co4', 'rechts_co5', 'rechts_co6', 'rechts_co7', 'rechts_co8', 'rechts_co9'
+                ];
+  zones=$.grep( zones, function( type, i ){ return adids[type]; } );
+  var cat='none';
+
+  var param = '';
+  if( window.filOtaz_de ) {
+
+	window.filOtaz_de.adition = {
+		keyword	: '/',
+		prf	: {
+	
+		ptype	: 'dir'
+			}
+		};
+
+
+	$.each( window.filOtaz_de.adition, function(k,v){
+		if( v instanceof Object )
+			$.each( v, function(k1,v1){
+				param += '&amp;'+ k +'['+ k1 +']='+ v1;
+				})
+		else
+			param += '&amp;'+ k +'='+ v;
+		});
+
+	}
+
+//  param += '&amp;keyword=/'+ filOtaz_de.page.rootline.join('/') +'/';
+//  param += '&amp;prf[ptype]='+ filOtaz_de.page.type;
+
+  // ... go manipulate DOM
+
+  $('.ad_zone_badged.ad_zone_sold').append('<div class="ad_badge">Anzeige</div>');
+
+  $.each( zones, function(i,type){
+    $('#adition_zone_'+type) .append('<div id="adition_tag_'+ adids[type][0] +'" class="ad_core" title="'+ param +'" />') ;
+    });
+
+  document.write(
+        '<script type="text/javascript" src="'+ location.protocol +'//imagesrv.adition.com/js/secure_tag_head_adfarm1.js"></script'+'>' +
+        '<script type="text/javascript" src="'+ location.protocol +'//imagesrv.adition.com/js/secure_tag_before_body_end.js"></script'+'>'
+        );
+
+  })();
+		</script><script xml:space="preserve">
+			// unhide non-empty ad zones
+(function() {
+
+  // log Adblock use
+  var count=0;
+  var wait = setInterval( function() {  try {
+        var loaded  = typeof(adUrl) != "undefined";
+        var timeout = count++ > 150;
+        if( loaded || timeout ) {
+                $( document.body ).append('<img src="/count/adsBlocked/'+( Math.random()*10 )+'/'+( loaded ? 'delivered' : 'blocked' )+'.gif" />');
+                clearInterval( wait );
+                }
+        } catch(e) { clearInterval( wait ); }  }, 100 );
+
+  if( $.browser.msie && $.browser.version=='7.0' )  var tofixIE7=$('.sect,.plugin_rechts');
+
+  $('.ad_zone_contentad').each( function(){
+    var me=$(this);
+    var core=$('.ad_core',me);
+    var count=0;
+    var wait = setInterval( function() {  try {
+      var loaded = $('[href],obj,embed,iframe',core).length > 0;
+      var empty = me.hasClass('ad_zone_empty');
+      var timeout = count++ > 150;
+      if( loaded && !empty ) {
+        me.addClass('ad_zone_shown');
+        me.show();
+        if( tofixIE7 ) tofixIE7.each(function(){  this.className = this.className ? this.className : 'reflow';  });
+        } 
+      if( loaded || empty || timeout ) clearInterval( wait );
+      } catch(e) { clearInterval( wait ); }  }, 100 );
+    });
+
+
+  $('#adition_zone_banner').each( function(){
+    var me=$(this);
+    var core=$('.ad_core',me);
+    var count=0;
+    var wait = setInterval( function() {  try {
+      var loaded = $('[href],obj,embed,iframe',core).length > 0;
+      var timeout = count++ > 150;
+      if( loaded ) {
+        me.addClass('ad_zone_shown');
+        me.show(0,function(){
+          $('#subbanner').addClass('shifted');
+	  });
+	}
+      if( loaded || timeout ) clearInterval( wait );
+      } catch(e) { clearInterval( wait ); }  }, 100 );
+    });  
+
+  })();
+		</script><noscript><img src="/count/adsBlocked/0/noscript.gif"></img></noscript></div></body></html>

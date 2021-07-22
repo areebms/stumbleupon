@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+<head>
+
+
+			<link rel="stylesheet" href="/templates/fit/css/newhomepage.css" type="text/css" />
+	<link type="text/css" rel="stylesheet" media="all" href="/cometchat/cometchatcss.php" charset="utf-8" />
+	<link rel="stylesheet" href="/templates/fit/css/template.css" type="text/css" />
+<script type="text/javascript" src="http://www.fittogether.com/components/com_adagency/includes/js/domready.js" async="async"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" async="async"></script>
+	<script>jqcc=jQuery.noConflict(true);</script>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="FitTogether,Fitness Social Networking,Activity Partners, Fitness Partners, Personal Fitness Trainers, Fitness Events, Fitness Groups, Online Fitness Community" />
+  <meta name="description" content="FitTogether.com is a fitness social networking site built to bring the fitness community closer together. FitTogether.com connects you locally, globally, online and in person to potential fitness partners, fitness groups and fitness professionals that have similar interests as you." />
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management" />
+  <title>FitTogether-Fitness Social Networking-Activity Partners-Singles-Trainers-Groups..</title>
+  <link href="/templates/fit/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="http://www.fittogether.com/components/com_comprofiler/plugin/templates/default/template.css" type="text/css" />
+  <script type="text/javascript" src="/components/com_jfbconnect/includes/jfbconnect.js?v411"></script>
+  <script type='text/javascript'>
+/*<![CDATA[*/
+	var jax_live_site = 'http://www.fittogether.com/index.php';
+	var jax_site_type = '1.5';
+	var jax_token_var='e17d326c836ddc74442b90d348768a34';
+/*]]>*/
+</script><script type="text/javascript" src="http://www.fittogether.com/plugins/system/pc_includes/ajax_1.3.js"></script>
+  <script type='text/javascript'>
+/*<![CDATA[*/
+var jc_option           = "";
+var jc_autoUpdate       = "0";
+var jc_update_period    = 0*1000;
+var jc_orderBy          = "1";
+var jc_livesite_busyImg = "http://www.fittogether.com/components/com_jomcomment/busy.gif";
+var jc_username         = "";
+var jc_email            = "";
+var jc_commentForm;
+/*]]>*/
+</script>
+  <script type="text/javascript" src="http://www.fittogether.com/components/com_comprofiler/js/cb12.min.js"></script>
+	<script type="text/javascript" src="http://www.fittogether.com/components/com_comprofiler/js/jquery-1.4.2/jquery-1.4.2.min.js"></script><script type="text/javascript"><!--
+jQuery.noConflict();
+--></script>
+	<script type="text/javascript"><!--
+jQuery(document).ready(function($){
+$.fn.cb_field_ajaxCheck = function() {
+	if ( ( $(this).val() != '' ) && ( $(this).val() != $(this).data('cblastvalsent') ) ) {
+		var inputid = $(this).attr('id');
+		if ( ! $('#'+inputid+'__Response').size() ) {
+			var respField = '<div class=\"cb_result_container\"><div id=\"' + inputid + '__Response\">&nbsp;</div></div>';
+			$(this).parent().each( function() {
+				if (this.tagName.toLowerCase() == 'td') {
+					$(this).append(respField);
+				} else {
+					$(this).after(respField);
+				}
+				$(inputid+'__Response').hide();
+			} );
+		}
+		if (  $('#'+inputid+'__Response').length > 0 ) {
+			$('#'+inputid+'__Response').html('<img alt=\"\" src=\"http://www.fittogether.com/components/com_comprofiler/images/wait.gif\" /> Checking...').fadeIn('fast');
+			var cbInputField = this;
+			var lastVal = $(this).val();
+			$(this).data('cblastvalsent', lastVal );
+			$.ajax( {	type: 'POST',
+						url:  'http://www.fittogether.com/index2.php?option=com_comprofiler&task=fieldclass&reason=register&field='+encodeURIComponent(inputid)+'&function=checkvalue&user=0&no_html=1&format=raw',
+						data: 'value=' + encodeURIComponent( lastVal ) + '&cbsecuritym3=' + encodeURIComponent('cbm_16e7e325_21a5019a_0902d041c693ce5bf5b9622870f12bef') + '&cbrasitway=' + encodeURIComponent('cbrv1_1390320204d194161f07a2cdd9d91e13_d3NUJC1WsOzUYNsg'),
+						success: function(response) {
+							var respField = $('#'+$(cbInputField).attr('id')+'__Response');
+							respField.fadeOut('fast', function() {
+								respField.html(response).fadeIn('fast');
+							} );
+							$(cbInputField).data( 'cblastvalchecked', lastVal );
+						},
+						dataType: 'html'
+			});
+		}
+	}
+};
+$.fn.cb_field_ajaxClear = function() {
+	var respField = $('#'+$(this).attr('id')+'__Response');
+	if ( respField.html() != '&nbsp;' ) {
+		if ( $(this).val() != $(this).data( 'cblastvalchecked' ) ) {
+			respField.fadeOut('medium' );
+		} else {
+			respField.fadeIn('medium' );
+		}
+	}
+};
+$('#email').data( 'cblastvalsent', $('#email').val() ).blur( $.fn.cb_field_ajaxCheck ).keyup( $.fn.cb_field_ajaxClear );
+var cbDefaultFieldBackground;
+function cbFrmSubmitButton() {
+	var me = this.elements;
+	var r = new RegExp("[\<|\>|\"|\'|\%|\;|\(|\)|\&]", "i");
+	var errorMSG = '';
+	var iserror=0;
+	if (cbDefaultFieldBackground === undefined && typeof(me['username'])!='undefined') cbDefaultFieldBackground = ((me['username'].style.getPropertyValue) ? me['username'].style.getPropertyValue("backgroundColor") : me['username'].style.backgroundColor);
+	if (typeof(me['username'])!='undefined' && me['username'].value == "") {
+		errorMSG += "Please enter a username.\n";
+		me['username'].style.backgroundColor = "red";
+		iserror=1;
+	} else if (typeof(me['username'])!='undefined' && ( r.exec(me['username'].value) || (me['username'].value.length < 3))) {
+		errorMSG += "Please enter a valid Username:.  No spaces, more than 2 characters and contain 0-9,a-z,A-Z\n";
+		me['username'].style.backgroundColor = "red";
+		iserror=1;
+	} else if (typeof(me['username'])!='undefined' && me['username'].style.backgroundColor.slice(0,3)=="red") { me['username'].style.backgroundColor = cbDefaultFieldBackground;
+	}
+	if (typeof(me['password'])!='undefined' && me['password'].value.length < 6) {
+		errorMSG += "Please enter a valid Password:.  No spaces, more than 6 characters and contain 0-9,a-z,A-Z\n";
+		<!--me['password'].style.backgroundColor = "red";-->
+		iserror=1;
+	} else if (typeof(me['password'])!='undefined' && (me['password'].value != "") && (me['password'].value != me['password__verify'].value)){
+		errorMSG += "Password and verification do not match, please try again.\n";
+		<!--me['password'].style.backgroundColor = "red"; me['password__verify'].style.backgroundColor = "red";-->
+		iserror=1;
+	} else if (typeof(me['password'])!='undefined') {
+		if (me['password'].style.backgroundColor.slice(0,3)=="red") me['password'].style.backgroundColor = cbDefaultFieldBackground;
+		if (me['password__verify'].style.backgroundColor.slice(0,3)=="red") me['password__verify'].style.backgroundColor = cbDefaultFieldBackground;
+	}
+	// loop through all input elements in form
+	var fieldErrorMessages = new Array;
+	for (var i=0; i < me.length; i++) {
+		// check if element is mandatory; here mosReq="1"
+		var myenabled = (typeof(me[i].getAttribute('mosNoReq')) == 'undefined' ) || (me[i].getAttribute('mosNoReq') != 1);
+		var mytyp = me[i].getAttribute('type');
+		var myact = myenabled && mytyp != 'reset' && mytyp != 'button' && mytyp != 'submit' && mytyp != 'image';
+		if ( myact && (typeof(me[i].getAttribute('mosReq')) != "undefined") && ( me[i].getAttribute('mosReq') == 1) ) {
+			if (me[i].type == 'radio' || me[i].type == 'checkbox') {
+				var rOptions = me[me[i].getAttribute('name')];
+				var rChecked = 0;
+				if(rOptions.length > 1) {
+					for (var r=0; r < rOptions.length; r++) {
+						if ( (typeof(rOptions[r].getAttribute('mosReq')) != "undefined") && ( rOptions[r].getAttribute('mosReq') == 1) ) {
+							if (rOptions[r].checked) {
+								rChecked=1;
+							}
+						}
+					}
+				} else {
+					if (me[i].checked) {
+						rChecked=1;
+					}
+				}
+				if (rChecked==0) {
+					for (var k=0; k < me.length; k++) {
+						if (me[i].getAttribute('name') == me[k].getAttribute('name')) {
+							if (me[k].checked) {
+								rChecked=1;
+								break;
+							}
+						}
+					}
+				}
+				if (rChecked==0) {
+					var alreadyFlagged = false;
+					for (var j = 0, n = fieldErrorMessages.length; j < n; j++) {
+						if (fieldErrorMessages[j] == me[i].getAttribute('name')) {
+							alreadyFlagged = true;
+							break
+						}
+					}
+					if ( ! alreadyFlagged ) {
+						fieldErrorMessages.push(me[i].getAttribute('name'));
+						// add up all error messages
+						errorMSG += me[i].getAttribute('mosLabel') + ' : This field is required!\n';
+						// notify user by changing background color, in this case to red
+						me[i].style.backgroundColor = "red";
+						iserror=1;
+					}
+				} else if (me[i].style.backgroundColor.slice(0,3)=="red") me[i].style.backgroundColor = cbDefaultFieldBackground;
+			}
+			if (me[i].value == '') {
+				// add up all error messages
+				errorMSG += me[i].getAttribute('mosLabel') + ' : This field is required!\n';
+				// notify user by changing background color, in this case to red
+				me[i].style.backgroundColor = "red";
+				iserror=1;
+			} else if (me[i].style.backgroundColor.slice(0,3)=="red") me[i].style.backgroundColor = cbDefaultFieldBackground;
+		}
+	}
+	if(iserror==1) {
+		<!--alert(errorMSG);-->
+		return false;
+	} else {
+		return true;
+	}
+}
+$('#cbcheckedadminForm').submit( cbFrmSubmitButton );});
+--></script>
+  <script type="text/javascript">var jfbcLogoutFacebook = false;
+var jfbcBase = 'http://www.fittogether.com/';
+var jfbcReturnUrl = 'Lw==';
+var jfbcRequiredPermissions = 'email,publish_stream';
+</script>
+  <meta property="og:url" content="http://www.fittogether.com/"/><meta property="og:title" content="FitTogether-Fitness Social Networking-Activity Partners-Singles-Trainers-Groups.."/><meta property="og:description" content="FitTogether.com is a fitness social networking site built to bring the fitness community closer together. FitTogether.com connects you locally, globally, online and in person to potential fitness partners, fitness groups and fitness professionals that have similar interests as you."/><meta property="og:type" content="website" /><meta property="fb:app_id" content="231546216902844"/><meta property="og:locale" content="en_GB" />
+  
+  
+  
+
+
+
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-19605527-1']);
+	_gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+</script>
+
+	<script LANGUAGE="JavaScript" src="/templates/fit/slideshow.js" async="async">
+	</script>
+<style>
+.customStyleSelectBox {
+/* Styles For Your Select Box */
+display:none;
+}
+
+.customStyleSelectBox.changed {
+/* You can use this if you want a different style after user has made a selection */
+}
+
+/* on the next line we add a down arrow on the right to indicate that it is a select box */
+.customStyleSelectBoxInner {
+background:url(canvas-list-nav-item-arrow-.gif) no-repeat center right;
+}
+</style>
+</head>
+
+	<!-- New Home page -->
+<body id="home_page"><div id="fb-root"></div>
+<script type="text/javascript">
+
+
+window.fbAsyncInit = function() {
+FB.init({appId: '231546216902844', status: true, cookie: true, xfbml: true, oauth: true, channelUrl: 'http://www.fittogether.com/components/com_jfbconnect/assets/jfbcchannel.php'});
+FB.Event.subscribe('comment.create', jfbc.social.comment.create);
+FB.Event.subscribe('edge.create', jfbc.social.like.create);
+};
+(function(d){
+     var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_GB/all.js";
+     d.getElementsByTagName('head')[0].appendChild(js);
+   }(document));
+</script>
+<div class="new">	 
+
+	<div class="header">
+	<div id="logo_image"><a href = "http://www.fittogether.com/"><img src="/images/new_images/logo.png" width="468" height="45" /></a></div> 
+	<div id="login">
+<div id="ojlogin">
+
+
+<form action="/index.php" method="post" name="login" id="form-login" >
+
+	
+	<div id="field">
+
+	<fieldset class="input">
+
+	<div id="form-login-username">		
+
+		<input id="modlgn_username" type="text" name="username" class="inputbox" alt="username" size="18" value=""  onclick="this.value=''" onblur="" style = "width:135px;" />
+<div id = "username1" style = "float:left;color:#fff; font-size:12px;margin-top:5px;padding-left:4px;">E-mail </div>
+	</div>
+
+	<div id="form-login-password">
+
+		<input id="modlgn_passwd" type="password" name="passwd" class="inputbox" size="18" alt="password" style = "width:135px;" />
+<div id = "pw" style = "float:left;color:#fff; font-size:12px;margin-top:5px;padding-left:4px;">Password </div>
+
+	</div>
+
+<!--	<div id="remember">
+
+	
+	
+
+		<input id="modlgn_remember" type="checkbox" name="remember" class="inputbox" value="yes" alt="Remember Me" />
+
+	
+
+	-->
+
+<!--	</div>-->
+<div id="form_submit">
+		<input type="submit" name="Submit" class="button user" value="" />
+</div>
+	</fieldset></div>
+
+	<div id="forgot_pass"><a href="/index.php?option=com_user&amp;view=reset">
+
+			Forgot your password?</a></div>
+
+	
+
+	
+
+
+	<input type="hidden" name="option" value="com_user" />
+
+	<input type="hidden" name="task" value="login" />
+
+	<input type="hidden" name="return" value="L2luZGV4LnBocD9vcHRpb249Y29tX2NvbW11bml0eSZ2aWV3PWZyb250cGFnZSZJdGVtaWQ9MQ==" />
+
+	<input type="hidden" name="e17d326c836ddc74442b90d348768a34" value="1" />
+</form>
+
+
+
+</div>
+</div>
+<div id = "msgerrorss" class = "messages" style = "position:absolute;margin-left: -262px;#margin-left: -210px !important;
+    margin-top: -14px;
+    position: absolute;
+    ">   </div>
+	
+	</div>
+
+	<div class="band">
+	<div style="margin: 0 auto; text-align: center; width: 961px; height: 57px; position: relative; z-index: 2000; " class = "fitness-header">
+	<!--<img src="/images/fitness-header.png" width="961" height="57" />-->
+	<div style="margin: 8px 40px 0 0; float: right;">
+	<a href = "http://pinterest.com/GetFitTogether" target="_blank"><div class = "sprite-pinterest"></div></a>
+	<a href = "http://facebook.com/FitTogether" target="_blank"><div class = "sprite-facebook"></div></a>
+	<a href = "http://twitter.com/FitTogethercom" target="_blank"><div  class = "sprite-twitter"></div></a>
+	<a href = "http://YouTube.com/FitTogetherdotcom" target="_blank"><div  class = "sprite-youtube"></div></a>
+	</div>
+	</div>
+	</div>
+
+	<div class="billboardcontainer">
+	<div class="billboard">
+
+	<IMG NAME="Ad_Image" SRC="images/new_images/billboard7.jpg" BORDER=0>
+
+	</div>
+	</div>
+	<div class="line"></div>
+
+
+	<div class="container">
+
+	<div style="margin: 0 auto; width: 923px;">
+	<img src="/images/new_images/what-can.png" width="410" height="23" />
+	<div style="float: left; width:57%;">
+
+	<div class="content">
+
+	<div style="float: left;">
+	<div>
+<div class = "connect"> </div> 	</div>
+	<div class="photo">
+			<div class = "connect-img">
+
+</div>	</div>
+	</div>
+	<div class="text">
+	FitTogether will connect you locally, globally, online and in person to potential fitness partners, fitness trainers and fitness groups that share similar interests as you. Whether you are simply looking for a running buddy or a personal trainer to whip you into shape, FitTogether has you covered.
+
+	</div>
+	</div>
+
+	<div class="content">
+	<div style="float: left;">
+	<div>
+<div class = "build"> </div>
+	</div>
+	<div class="photo">
+		<div class = "build-img"></div>
+
+	</div>
+	</div>
+	<div class="text">
+	Are you a personal trainer or some other kind of fitness professional? Signing up for FitTogether will help you build your business by making it easier for potential clients to search for you by zip code and fitness discipline. You can also search for people in your area that are listed as "looking for a trainer". With video chat, instant messaging, chat boards and more, FitTogether is a great way for you to stay connected with current clients and potential new ones.
+	</div>
+	</div>
+
+	<div class="content">
+	<div style="float: left;">
+	<div>
+<div class = "motivate"> </div>
+
+	</div>
+	<div class="photo">
+	<div class = "motivate-img"></div>
+	</div>
+	</div>
+	<div class="text">
+	Signing up for FitTogether will give you a great place to interact with other health and fitness oriented people. It's a proven fact that surrounding yourself with other fitness and goal oriented people will help you stay motivated and reach your fitness goals as well. Use our status bar every day to brag about your most recent accomplishment or workout, whether it was finishing a marathon or dropping that last 4 lbs you have been complaining about.
+
+	</div>
+	</div>
+
+
+	<span class="footer">Copyright 2012 FitTogether</span>
+	</div>
+
+	<img style="margin-left: 215px;" src="/images/new_images/signup-header.png" width="203" height="23" />
+
+	<div class="signup"> <br />
+	<div class="labelcontainer"> 
+		
+
+<script type="text/javascript" src="/components/com_comprofiler/plugin/templates/default/validation.php" async="async">
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+</script>
+
+<div class="cb_template_default"><!-- <div class="componentheading">Registration</div>   MYSUNILSADA            --> <div class="contentpaneopen"><div class="cb_comp_outer"><div class="cb_comp_inner cbHtmlEdit cbRegistration">
+<form action="/index.php?option=com_comprofiler" method="post" id="cbcheckedadminForm" name="adminForm" enctype="multipart/form-data">
+		<input type="hidden" name="id" value="0" />
+		<input type="hidden" name="gid" value="0" />
+		<input type="hidden" name="emailpass" value="0" />
+		<input type="hidden" name="option" value="com_comprofiler" />
+		<input type="hidden" name="task" value="saveregisters" />
+		<input type="hidden" name="cbsecuritym3" value="cbm_213c41d2_4d78da8d_f883eb237cc8094687107d041a8dfd56" />
+
+		<input type="hidden" name="cbrasitway" value="cbrv1_1390320204d194161f07a2cdd9d91e13_d3NUJC1WsOzUYNsg" />
+
+<table class="contentpane" id="registrationTable">
+
+				<tr class="sectiontableentry1 cbft_predefined" id="cbfr_46">
+					<td class="titleCell"><label for="firstname" title="First Name:Please enter your real first name.">First Name:</label></td>
+					<td class="fieldCell" id="cbfv_46"><input type="text" name="firstname" id="firstname" value=""  size="25" class="inputbox" title="First Name: Please enter your real first name." /><span class='cbFieldIcons'></span></td>
+				</tr>
+				<tr class="sectiontableentry2 cbft_predefined" id="cbfr_48">
+					<td class="titleCell"><label for="lastname" title="Last Name:Please enter your real last name.">Last Name:</label></td>
+					<td class="fieldCell" id="cbfv_48"><input type="text" name="lastname" id="lastname" value=""  size="25" class="inputbox" title="Last Name: Please enter your real last name." /><span class='cbFieldIcons'></span></td>
+				</tr>
+				<tr class="sectiontableentry1 cbft_primaryemailaddress" id="cbfr_50">
+					<td class="titleCell"><label for="email" title="Email :Please enter a valid e-mail address. A confirmation email will be sent to this address upon registration.">Email :</label></td>
+					<td class="fieldCell" id="cbfv_50"><input type="text" name="email" id="email" value=""  size="25" class="email inputbox" title="Email : Please enter a valid e-mail address. A confirmation email will be sent to this address upon registration." /><span class='cbFieldIcons'></span></td>
+				</tr>
+				<tr class="sectiontableentry2 cbft_password" id="cbfr_51">
+					<td class="titleCell"><label for="password" title="Password :Please enter a valid password.  No spaces, at least 6 characters and contain lower and upper-case letters, numbers and special signs">Password :</label></td>
+					<td class="fieldCell" id="cbfv_51"><input type="password" name="password" id="password" value=""  autocomplete="off" size="25" maxlength="50" class="{minlength:6} inputbox" title="Password : Please enter a valid password.  No spaces, at least 6 characters and contain lower and upper-case letters, numbers and special signs" /><span class='cbFieldIcons'></span></td>
+				</tr>
+				<tr class="sectiontableentry2 cbft_password" id="cbfr_51__verify">
+					<td class="titleCell"><label for="password__verify" title="Verify Password :Please enter a valid password.  No spaces, at least 6 characters and contain lower and upper-case letters, numbers and special signs">Verify Password :</label></td>
+					<td class="fieldCell" id="cbfv_51__verify"><input type="password" name="password__verify" id="password__verify" value=""  autocomplete="off" size="25" maxlength="50" class="{minlength:6,equalTo:'#password'} inputbox" title="Verify Password : Please enter a valid password.  No spaces, at least 6 characters and contain lower and upper-case letters, numbers and special signs" /><span class='cbFieldIcons'></span></td>
+				</tr>
+				<tr class="sectiontableentry1 cbft_select" id="cbfr_74">
+					<td class="titleCell"><label for="cb_usertype"><span style='color:#fff;font-size:18px;'></span>Member&nbsp;Type:</label></td>
+					<td class="fieldCell" id="cbfv_74">
+<select name="cb_usertype" id="cb_usertype"  mosReq="1" mosLabel="Member&amp;nbsp;Type" size="1"  class="required inputbox">
+	<option value="Social User" id="cbf61" selected="selected">Social User</option>
+	<option value="Fitness Pro Signup" id="cbf62">Fitness Pro Signup</option>
+</select>
+<span class='cbFieldIcons'></span></td>
+				</tr>    <!--<tr>
+      <td colspan="2" class="contentpaneopen">&nbsp;	  
+	  </td>
+    </tr>-->
+	</table>
+
+		
+	<div id="reg-div" style="float:left;margin-left:100px;">	<input align="right" type="submit" value="" class="button" onclick="return validate()"/>
+		</div>
+     
+
+</form>
+</div></div></div><div class="cbClr"></div></div>
+		 <span style = "float: left; margin-left: 198px; margin-top: -25px;width: 100px;">- or -</span><span class = "facebook_connect" style = "float:left;"> 		<div class="module">
+			<div>
+				<div>
+					<div>
+											<a href="javascript:void(0)" onclick="jfbc.login.login_custom();"><div class = "login-facebook"> </div></a>					</div>
+				</div>
+			</div>
+		</div>
+	 </span><br /><br />
+<div style = "margin-left:20px"> <div class='mod_ijoomlazone' id='ijoomlazone157'></div>
+<style>
+#ijoomlazone152 { padding-bottom:20px; }
+#ijoomlazone153 { padding-top:10px; }
+</style>
+ </div>
+	</div>
+	</div>
+
+	<div class="footer" style="text-align: right;">Design by <a href="http://www.ultradesignagency.com" target="_blank"><img style="margin-top: 4px;" src="/images/new_images/ultra.png" width="25" height="16" /></a> Design Agency</div>
+	</div>
+
+	</div>
+</div>
+<!-- end new-->
+</body>
+</html>

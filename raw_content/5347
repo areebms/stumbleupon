@@ -1,0 +1,197 @@
+﻿<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<title>New Page 2</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<style type="text/css">
+body {
+}
+
+#topbar {
+position:absolute;
+padding: 0px;
+width: 130px;
+height: 33px;
+visibility: hidden;
+z-index: 100;
+}
+
+img {
+border:0;
+}
+
+</style>
+<script type="text/javascript">
+
+/***********************************************
+* Floating Top Bar script- © Dynamic Drive (www.dynamicdrive.com)
+* Sliding routine by Roy Whittle (http://www.javascript-fx.com/)
+* This notice must stay intact for legal use.
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var persistclose=0 //set to 0 or 1. 1 means once the bar is manually closed, it will remain closed for browser session
+var startX = 430 //set x offset of bar in pixels
+var startY = 5 //set y offset of bar in pixels
+var verticalpos="fromtop" //enter "fromtop" or "frombottom"
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function get_cookie(Name) {
+var search = Name + "="
+var returnvalue = "";
+if (document.cookie.length > 0) {
+offset = document.cookie.indexOf(search)
+if (offset != -1) {
+offset += search.length
+end = document.cookie.indexOf(";", offset);
+if (end == -1) end = document.cookie.length;
+returnvalue=unescape(document.cookie.substring(offset, end))
+}
+}
+return returnvalue;
+}
+
+function closebar(){
+if (persistclose)
+document.cookie="remainclosed=1"
+document.getElementById("topbar").style.visibility="hidden"
+}
+
+function staticbar(){
+	barheight=document.getElementById("topbar").offsetHeight
+	var ns = (navigator.appName.indexOf("Netscape") != -1) || window.opera;
+	var d = document;
+	function ml(id){
+		var el=d.getElementById(id);
+		if (!persistclose || persistclose && get_cookie("remainclosed")=="")
+		el.style.visibility="visible"
+		if(d.layers)el.style=el;
+		el.sP=function(x,y){this.style.left=x+"px";this.style.top=y+"px";};
+		el.x = startX;
+		if (verticalpos=="fromtop")
+		el.y = startY;
+		else{
+		el.y = ns ? pageYOffset + innerHeight : iecompattest().scrollTop + iecompattest().clientHeight;
+		el.y -= startY;
+		}
+		return el;
+	}
+	window.stayTopLeft=function(){
+		if (verticalpos=="fromtop"){
+		var pY = ns ? pageYOffset : iecompattest().scrollTop;
+		ftlObj.y += (pY + startY - ftlObj.y)/8;
+		}
+		else{
+		var pY = ns ? pageYOffset + innerHeight - barheight: iecompattest().scrollTop + iecompattest().clientHeight -  barheight;
+		ftlObj.y += (pY - startY - ftlObj.y)/8;
+		}
+		ftlObj.sP(ftlObj.x, ftlObj.y);
+		setTimeout("stayTopLeft()", 10);
+	}
+	ftlObj = ml("topbar");
+	stayTopLeft();
+}
+
+if (window.addEventListener)
+window.addEventListener("load", staticbar, false)
+else if (window.attachEvent)
+window.attachEvent("onload", staticbar)
+else if (document.getElementById)
+window.onload=staticbar
+</script>
+
+<base target="_blank">
+</head>
+
+<body topmargin="0" leftmargin="0" bgcolor="#9f7e5f" link="#000000" vlink="#000000"
+alink="#000000">
+<div id="topbar"><a
+href="http://twitter.com/home/?status=hilarious+site+making+fun+of+punk+/+emo+/+metal+/+indie+scenesters+at+www.yourscenesucks.com+via+@robdobi">
+<dd><img src="http://www.dobi.nu/yourscenesucks/tweetthis.gif" /></a> </dd>
+</div><div align="left">
+
+<table border="0" width="652" cellspacing="0" cellpadding="0" valign="top">
+  <tr>
+    <td width="100%" align="center"><font face="Verdana" size="2"><img src="scene.jpg"
+    width="652" height="762"></font></td>
+  </tr>
+  <tr>
+    <td width="100%" align="center"><table border="0" width="541" cellspacing="0"
+    cellpadding="0" valign="top">
+      <tr>
+        <td width="100%" valign="top"><font face="Verdana" size="2"><img src="../top.gif"
+        width="541" height="16"></font></td>
+      </tr>
+      <tr>
+        <td width="100%" bgcolor="#FFFFFF" valign="top"><div align="center"><center><table
+        border="0" width="510" cellspacing="0" cellpadding="10">
+          <tr>
+            <td width="389" align="left" valign="top"><font face="Verdana" size="2"><img
+            src="../about.gif" width="60" height="21"></font><p STYLE="margin-bottom: 0in">
+			<font SIZE="2" FACE="Arial, sans-serif">Deep seeded in 19th century 
+			Victorian fashion combined with a western sci-fi twist, the 
+			Steampunk tries his best to resemble an extra from Will Smith&#39;s <i>
+			The Wild Wild West</i>. The Steampunk longs for a time where 
+			technology was romanticized rather than mass manufactured. &nbsp;He 
+			scoffs at the minimalism of homogenized modern devices and attempts 
+			to make them his own.</font></p>
+			<p STYLE="margin-bottom: 0in">
+			<font SIZE="2" FACE="Arial, sans-serif">Displaying an unhealthy 
+			fascination with steam, valves and gears, the Steampunk will spend 
+			hours in his workshop crafting accessories for his wardrobe. Custom 
+			timepieces, goggles and Nerf guns are often overly customized to the 
+			point that they obscure the item&#39;s original purpose. Modern day 
+			electronic devices are modified to look like rusted antiques. 
+			Outside of Flava Flav, no one displays clocks as proudly and 
+			prominently as this dapper gentleman.</font></p>
+			<p STYLE="margin-bottom: 0in">
+			<font SIZE="2" FACE="Arial, sans-serif">When not spending time 
+			reading the works of HG Wells and Jules Verne on his brass encased 
+			iPad, the Steampunk can be found attending various conventions and 
+			ballroom dances devoted to his fantasy world. The preferred method 
+			of transportation to these events is via zeppelin or steam engine, 
+			but most end up using the city bus.</font></p>
+			<p STYLE="margin-bottom: 0in">
+			<font SIZE="2" FACE="Arial, sans-serif">One can say that Steampunk 
+			is &quot;What the past would look like if the future had happened sooner&quot; 
+			but the reality is that Steampunk is what happens when Goths 
+			discover the color brown.</font></p>
+            <p><font color="#000000" valign="top" face="Verdana" size="2">&lt;&lt; <a
+            href="../scenesters.htm" target="_self"><strong>back to scenesters</strong></a></font></p>
+            <p><a href="http://www.yourscenesucks.com" target="_top"><img src="../link.gif"
+            width="343" height="21" border="0"></a></td>
+            <td width="121" align="left" valign="top"><font face="Verdana" size="2"><img
+            src="../playlist.gif" width="81" height="21"><br>
+            abney park<br>
+			dr. steel<br>
+			vernian process<br>
+            <br>
+            <img src="../bookmarks.gif" width="109" height="21"><br>
+            </font><a target="_blank" href="http://www.steampunktribune.com">
+			steampunktribune</a><br>
+			<a target="_blank" href="http://www.steampunkworkshop.com">
+			steampunkworkshop</a><br>
+			<a target="_blank" href="http://www.steampunk.com">steampunk.com</a><p>
+			&nbsp;</p>
+            <p>&nbsp;</td>
+          </tr>
+        </table>
+        </center></div></td>
+      </tr>
+      <tr>
+        <td width="100%"><font face="Verdana" size="2"><img src="../bottom.gif" width="541"
+        height="16"></font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+</div>
+
+<p>&nbsp;</p>
+</body>
+</html>

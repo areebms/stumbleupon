@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if (gt IE 6) | (!IE)]><!-->
+<html dir="ltr" lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<title>Drunken Cheesecake Brownies. | The Jey of Cooking.</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://www.thejeyofcooking.com/wp-content/themes/coraline/style.css" />
+<link rel="pingback" href="http://www.thejeyofcooking.com/xmlrpc.php" />
+<script type="text/javascript">
+//<![CDATA[
+var BrowserDetect = {
+init: function () {
+this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
+this.version = this.searchVersion(navigator.userAgent)|| this.searchVersion(navigator.appVersion)|| "an unknown version";
+this.OS = this.searchString(this.dataOS) || "an unknown OS";
+},
+searchString: function (data) {
+for (var i=0;i<data.length;i++)	{
+        var dataString = data[i].string;
+        var dataProp = data[i].prop;
+        this.versionSearchString = data[i].versionSearch || data[i].identity;
+        if (dataString) {if (dataString.indexOf(data[i].subString) != -1)
+                return data[i].identity;}
+        else if (dataProp){return data[i].identity;}
+}
+},
+searchVersion: function (dataString) {
+var index = dataString.indexOf(this.versionSearchString);
+if (index == -1) return;
+return parseFloat(dataString.substring(index+this.versionSearchString.length+1));
+},
+dataBrowser: [
+        {string: navigator.userAgent,subString: "Chrome",identity: "Chrome"},
+        {string: navigator.userAgent,subString: "OmniWeb",versionSearch: "OmniWeb/",identity: "OmniWeb"},
+        {string: navigator.vendor,subString: "Apple",identity: "Safari",versionSearch: "Version"},
+        {prop: window.opera,identity: "Opera"},
+        {string: navigator.vendor,subString: "iCab",identity: "iCab"},
+        {string: navigator.vendor,subString: "KDE",identity: "Konqueror"},
+        {string: navigator.userAgent,subString: "Firefox",identity: "Firefox"},
+        {string: navigator.vendor,subString: "Camino",identity: "Camino"},
+        {string: navigator.userAgent,subString: "Netscape",identity: "Netscape"},
+        {string: navigator.userAgent,subString: "MSIE",identity: "Explorer",versionSearch: "MSIE"},
+        {string: navigator.userAgent,subString: "Gecko",identity: "Mozilla",versionSearch: "rv"},
+        {string: navigator.userAgent,subString: "Mozilla",identity: "Netscape",versionSearch: "Mozilla"}],
+dataOS:[{string: navigator.platform,subString: "Win",identity: "Windows"},
+        {string: navigator.platform,subString: "Mac",identity: "Mac"},
+        {string: navigator.userAgent,subString: "iPhone",identity: "iPhone/iPod"},
+        {string: navigator.platform,subString: "Linux",identity: "Linux"}]
+};
+BrowserDetect.init();
+
+function bookMark(theurl, thetitle, browser){
+    switch(browser){
+        case "Firefox":
+            window.sidebar.addPanel(thetitle, theurl,"");
+            break;
+        case "Explorer":
+            window.external.AddFavorite( theurl, thetitle);
+            break;
+        case "Chrome":
+        case "Safari":
+        case "Opera":
+        case "Netscape":
+            switch(BrowserDetect.OS){
+            case "Windows":
+            case "Linux":
+            alert('press ctrl+D to bookmark this page');
+            break;
+            case "Mac":
+                alert('press cmd+D to bookmark this page');
+            break;
+            }
+            break;
+    }
+}
+//]]>
+</script>
+                        <style type="text/css" media="screen" >
+                                .socialwrap li.icon_text a img, .socialwrap li.iconOnly a img, .followwrap li.icon_text a img, .followwrap li.iconOnly a img{border-width:0 !important;background-color:none;}#follow.right {width:32px;position:fixed; right:0; top:100px;background-color:#878787;padding:10px 0;font-family:impact,charcoal,arial, helvetica,sans-serif;-moz-border-radius-topleft: 5px;-webkit-border-top-left-radius:5px;-moz-border-radius-bottomleft:5px;-webkit-border-bottom-left-radius:5px;border:2px solid #fff;border-right-width:0}#follow.right ul {padding:0; margin:0; list-style-type:none !important;font-size:24px;color:black;}
+#follow.right ul li {padding-bottom:10px;list-style-type:none !important;padding-left:4px;padding-right:4px}
+#follow img{border:none;}#follow.right ul li.follow {margin:0 4px;}
+#follow.right ul li.follow img {border-width:0;display:block;overflow:hidden; background:transparent url(http://www.thejeyofcooking.com/wp-content/plugins/share-and-follow/images/impact/follow-right.png) no-repeat -0px 0px;height:79px;width:20px;}
+#follow.right ul li a {display:block;}
+#follow.right ul li.follow span, #follow ul li a span {display:none}.share {margin:0 3px 3px 0;}
+.phat span {display:inline;}
+ul.row li {float:left;list-style-type:none;}
+li.iconOnly a span.head {display:none}
+#follow.left ul.size16 li.follow{margin:0px auto !important}
+li.icon_text a {padding-left:0;margin-right:3px}
+li.text_only a {background-image:none !important;padding-left:0;}
+li.text_only a img {display:none;}
+li.icon_text a span{background-image:none !important;padding-left:0 !important; }
+li.iconOnly a span.head {display:none}
+ul.socialwrap li {margin:0 3px 3px 0 !important;}
+ul.socialwrap li a {text-decoration:none;}ul.row li {float:left;line-height:auto !important;}
+ul.row li a img {padding:0}.size16 li a,.size24 li a,.size32 li a, .size48 li a, .size60 li a {display:block}ul.socialwrap {list-style-type:none !important;margin:0; padding:0;text-indent:0 !important;}
+ul.socialwrap li {list-style-type:none !important;background-image:none;padding:0;list-style-image:none !important;}
+ul.followwrap {list-style-type:none !important;margin:0; padding:0}
+ul.followwrap li {margin-right:3px;margin-bottom:3px;list-style-type:none !important;}
+#follow.right ul.followwrap li, #follow.left ul.followwrap li {margin-right:0px;margin-bottom:0px;}
+.shareinpost {clear:both;padding-top:0px}.shareinpost ul.socialwrap {list-style-type:none !important;margin:0 !important; padding:0 !important}
+.shareinpost ul.socialwrap li {padding-left:0 !important;background-image:none !important;margin-left:0 !important;list-style-type:none !important;text-indent:0 !important}
+.socialwrap li.icon_text a img, .socialwrap li.iconOnly a img{border-width:0}ul.followrap li {list-style-type:none;list-style-image:none !important;}
+div.clean {clear:left;}
+div.display_none {display:none;}
+                        </style>
+                                                <style type="text/css" media="print" >
+                                body {background: white;font-size: 12pt;color:black;}
+ * {background-image:none;}
+ #wrapper, #content {width: auto;margin: 0 5%;padding: 0;border: 0;float: none !important;color: black;background: transparent none;}
+ a { text-decoration : underline; color : #0000ff; }
+#menu, #navigation, #navi, .menu {display:none}
+                        </style>
+                        <link rel="image_src" href="http://www.thejeyofcooking.com/wp-content/uploads/2012/09/drunken.cheesecake.brownies.jpg" /> 
+<link rel="alternate" type="application/rss+xml" title="The Jey of Cooking. &raquo; Feed" href="http://www.thejeyofcooking.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Jey of Cooking. &raquo; Comments Feed" href="http://www.thejeyofcooking.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Jey of Cooking. &raquo; Drunken Cheesecake Brownies. Comments Feed" href="http://www.thejeyofcooking.com/drunken-cheesecake-brownies/feed/" />
+<script type='text/javascript' src='http://www.thejeyofcooking.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.thejeyofcooking.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.thejeyofcooking.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='The Jey of Cooking.' href='http://www.thejeyofcooking.com/' />
+<link rel='start' title='My Very Own Domain!' href='http://www.thejeyofcooking.com/hello-world/' />
+<link rel='prev' title='Chicken in Honey Beer Sauce.' href='http://www.thejeyofcooking.com/chicken-in-honey-beer-sauce/' />
+<meta name="generator" content="WordPress 3.0.3" />
+<link rel='canonical' href='http://www.thejeyofcooking.com/drunken-cheesecake-brownies/' />
+<link rel='shortlink' href='http://www.thejeyofcooking.com/?p=2231' />
+<script type="text/javascript" src="http://www.thejeyofcooking.com/wp-content/plugins/ziplist-recipe-plugin/zlrecipe_print.js"></script>
+<script type="text/javascript" src="http://www.zlcdn.com/javascripts/pt_include.js"></script>
+	<link charset="utf-8" href="http://www.zlcdn.com/stylesheets/minibox/generic.css" rel="stylesheet" type="text/css" />
+<link charset="utf-8" href="http://www.zlcdn.com/stylesheets/minibox/zlrecipe-std.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body { background-color: #fafafa; }
+</style>
+	<style type="text/css">
+			#site-title,
+		#site-description {
+			position: absolute;
+			left: -9000px;
+		}
+		</style>
+	</head>
+
+<body class="single single-post postid-2231 two-column content-sidebar">
+<div id="container" class="hfeed">
+	<div id="header">
+		<div id="masthead" role="banner">
+						<div id="site-title">
+				<span>
+					<a href="http://www.thejeyofcooking.com/" title="The Jey of Cooking." rel="home">The Jey of Cooking.</a>
+				</span>
+			</div>
+			<div id="site-description">Making the Internet More Delicious, One Strip of Bacon at a Time.</div>
+		</div><!-- #masthead -->
+
+		<div id="access" role="navigation">
+		  			<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+						<div class="menu"><ul><li ><a href="http://www.thejeyofcooking.com/" title="Home">Home</a></li><li class="page_item page-item-7"><a href="http://www.thejeyofcooking.com/about-2/" title="About.">About.</a></li><li class="page_item page-item-13"><a href="http://www.thejeyofcooking.com/contact-me/" title="Contact Me.">Contact Me.</a></li><li class="page_item page-item-741"><a href="http://www.thejeyofcooking.com/eleven-in-11/" title="Eleven in &#8217;11.">Eleven in &#8217;11.</a></li><li class="page_item page-item-758"><a href="http://www.thejeyofcooking.com/reader-requests/" title="Reader Requests.">Reader Requests.</a></li></ul></div>
+		</div><!-- #access -->
+
+		<div id="branding">
+						<a href="http://www.thejeyofcooking.com/">
+									<img src="http://www.thejeyofcooking.com/wp-content/uploads/2010/12/the-jey-of-cooking.gif" width="990" height="180" alt="" />
+							</a>
+					</div><!-- #branding -->
+	</div><!-- #header -->
+
+	<div id="content-box">
+
+		<div id="content-container">
+			<div id="content" role="main">
+
+			
+				<div id="nav-above" class="navigation">
+					<div class="nav-previous"><a href="http://www.thejeyofcooking.com/chicken-in-honey-beer-sauce/" rel="prev"><span class="meta-nav">&larr;</span> Chicken in Honey Beer Sauce.</a></div>
+					<div class="nav-next"></div>
+				</div><!-- #nav-above -->
+
+				<div id="post-2231" class="post-2231 post type-post hentry category-uncategorized tag-baking tag-brownies tag-dessert tag-food tag-recipe">
+					<h1 class="entry-title">Drunken Cheesecake Brownies.</h1>
+
+					<div class="entry-meta">
+						<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://www.thejeyofcooking.com/drunken-cheesecake-brownies/" title="6:00 am" rel="bookmark"><span class="entry-date">September 7, 2012</span></a> <span class="byline"><span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://www.thejeyofcooking.com/author/admin/" title="View all posts by Jey">Jey</a></span></span><span class="comments-link"><span class="meta-sep">|</span> <a href="http://www.thejeyofcooking.com/drunken-cheesecake-brownies/#comments" title="Comment on Drunken Cheesecake Brownies.">1 Comment</a></span>
+											</div><!-- .entry-meta -->
+
+					<div class="entry-content">
+						<p><a href="http://www.thejeyofcooking.com/wp-content/uploads/2012/09/drunken.cheesecake.brownies.jpg"><img class="aligncenter size-full wp-image-2232" title="drunken.cheesecake.brownies" src="http://www.thejeyofcooking.com/wp-content/uploads/2012/09/drunken.cheesecake.brownies.jpg" alt="" width="500" height="333" /></a></p>
+<p>I have a confession to make &#8211; I much prefer box mix brownies to homemade ones.  GASP!  There, I&#8217;ve said it.  There&#8217;s just something about the predictability of the way they always turn out the same that I find very comforting.  Now that doesn&#8217;t mean that I didn&#8217;t enjoy these brownies, because I did, but they were just different from what I&#8217;m used to.</p>
+<p>And while I&#8217;m making confessions, here&#8217;s another one &#8211; I&#8217;m currently 34.5 weeks pregnant!  While I&#8217;m sure many of you may have guessed due to my lack of ability in keeping this blog up and running, it came as a shock to me when a friend mentioned that I never shared this little tidbit here.  I&#8217;m due mid-October with a baby girl this time around.  The Husby, the Fruitaholic and I couldn&#8217;t be more excited to welcome a new member into our family and I hope you bear with me as I attempt to balance life with a newborn with this little hobby of mine.  To say we&#8217;ve been eating a lot of takeout is an understatement.  Lately it seems as though if we&#8217;re lucky, I might be making a home-cooked meal once or twice per week.  I&#8217;m really looking forward to having some sort of motivation to get back in the kitchen soon.</p>
+<p>But anyway, back to the brownies.  I&#8217;ve had a major sweet tooth this pregnancy so when <a href="http://tasteofhomecooking.blogspot.com">Sarah</a> announced that this week&#8217;s swap theme was Dessert recipes, I was pretty thrilled.  As I&#8217;ve said before, I&#8217;m not much of a baker but I do enjoy whipping up the (very) occasional treat.  And when this one landed in my inbox, I couldn&#8217;t wait to get baking.</p>
+<p>The original recipe called for Bailey&#8217;s but I didn&#8217;t have any and didn&#8217;t find it very appropriate for a hugely pregnant lady to be buying booze, so I substituted some Buffalo Trace Bourbon Cream that we already had in the house.  With only 4 Tbsp. of liquor in the whole recipe, I wasn&#8217;t too concerned about the alcohol content, but I did feel that the flavor didn&#8217;t come through as much as I was hoping it would.   But maybe that&#8217;s just because I haven&#8217;t been drinking for the past 8.5 months.</p>
+<p>I also couldn&#8217;t find my 8&#215;8 pan for the life of me so I attempted to make these in my muffin top pan.  I really liked the individual, precut portion size by baking this way and also that each brownie had a crispy edge and chewy center, but I was a bit disappointed that I wasn&#8217;t able to &#8220;swirl&#8221; the cream cheese as prettily as I was hoping to achieve.  Because I used this pan instead of the 8&#215;8, I had to adjust the cooking time.  In the recipe instructions, I&#8217;ve provided cooking times for both.</p>
+<p><a href="http://www.thejeyofcooking.com/wp-content/uploads/2012/09/WC-Recipe-Swap-badge-1.jpg"><img class="aligncenter size-thumbnail wp-image-2233" title="WC-Recipe-Swap-badge-1" src="http://www.thejeyofcooking.com/wp-content/uploads/2012/09/WC-Recipe-Swap-badge-1-150x150.jpg" alt="" width="150" height="150" /></a></p>
+<p>
+    <div id="zlrecipe-container-12" class="zlrecipe-container-border" >
+    <div id="zlrecipe-container" class="hrecipe serif">
+      <div id="zlrecipe-innerdiv">
+        <div class="item b-b"><div class="zlrecipe-print-link fl-r"><a class="butn-link" title="Print this recipe" href="javascript:void(0);" onclick="zlrPrint('zlrecipe-container-12'); return false">Print</a></div><div id="zl-recipe-link-12" class="zl-recipe-link fl-r">
+		  <a class="butn-link" title="Add this recipe to your ZipList, where you can store all of your favorite web recipes in one place and easily add ingredients to your shopping list." onmouseup="getZRecipeArgs(this, {'partner_key':'', 'url':'http://www.thejeyofcooking.com/drunken-cheesecake-brownies/', 'class':'hrecipe'}); return false;" href="javascript:void(0);"></a>
+		</div><div id="zlrecipe-title" class="fn b-b h-1 strong" >Drunken Cheesecake Brownies.</div>
+      </div><div class="zlmeta zlclear">
+      <div class="fl-l width-50"></div>
+      <div class="fl-l width-50"></div>
+      <div class="zlclear">
+      </div>
+    </div><p id="zlrecipe-ingredients" class="h-4 strong">Ingredients</p><ul id="zlrecipe-ingredients-list"><li id="zlrecipe-ingredient-0" class="ingredient">6 oz. Cream Cheese, at room temperature</li><li id="zlrecipe-ingredient-1" class="ingredient">3 Tbsp. Buffalo Trace Bourbon Cream (the original recipe calls for Bailey's Irish Cream)</li><li id="zlrecipe-ingredient-2" class="ingredient"></li><li id="zlrecipe-ingredient-3" class="ingredient">1 Cup Sugar</li><li id="zlrecipe-ingredient-4" class="ingredient">1/2 Cup Flour</li><li id="zlrecipe-ingredient-5" class="ingredient">1/3 Cup Unsweetened Cocoa Powder</li><li id="zlrecipe-ingredient-6" class="ingredient">1/4 tsp. Baking Powder</li><li id="zlrecipe-ingredient-7" class="ingredient">1/4 tsp. Salt</li><li id="zlrecipe-ingredient-8" class="ingredient">2 Eggs</li><li id="zlrecipe-ingredient-9" class="ingredient">1/2 Cup (1 Stick) Unsalted Butter</li><li id="zlrecipe-ingredient-10" class="ingredient">1 tsp. Vanilla</li><li id="zlrecipe-ingredient-11" class="ingredient">1 tsp. Buffalo Trace Bourbon Cream (or Bailey's Irish Cream)</li></ul><p id="zlrecipe-instructions" class="h-4 strong">Instructions</p><span id="zlrecipe-instructions-list" class="instructions"><p id="zlrecipe-instruction-0" class="instruction">Preheat oven to 350.  If using an 8x8 pan, cut a sheet of parchment paper long enough to hang over the sides and place it into the pan.  If using a muffin top pan, lightly spray each compartment with cooking spray.</p><p id="zlrecipe-instruction-1" class="instruction">In the bowl of the stand mixer with the wire whisk attached, cream together the cream cheese and the 3 Tbsp. bourbon cream until well combined.  Set aside.</p><p id="zlrecipe-instruction-2" class="instruction">In a large bowl, combine the sugar, flour, cocoa powder, baking powder and salt.  Mix until combined, then add the eggs, butter, vanilla and remaining Tbsp. bourbon cream and stir until the batter is well mixed and free of lumps.</p><p id="zlrecipe-instruction-3" class="instruction">Pour the batter into the baking pan (or alternately, scoop about 1.5 Tbsp of batter into each compartment of the muffin top pan).  Spread evenly.</p><p id="zlrecipe-instruction-4" class="instruction">Using a rubber spatula, spoon the cream cheese mixture on top and swirl into the batter.</p><p id="zlrecipe-instruction-5" class="instruction">Bake for 45 minutes (or 30 minutes in a muffin top pan).</p><p id="zlrecipe-instruction-6" class="instruction">Remove brownies from the oven, allow to cool 5-10 minutes then transfer to a wire rack and cool to room temperature.  Refrigerate brownies at least two hours before serving, and serve chilled.</p></span><p id="zlrecipe-notes" class="h-4 strong">Source - </p><div id="zlrecipe-notes-list"><p class="notes">Slightly adapted from <a href="http://www.cookaholicwife.com/2012/04/drunken-cheesecake-brownies.html" class="notes-link" target="_blank">The Cookaholic Wife</a></p></div><div class="zl-linkback" style="display: none;">Google Recipe View Microformatting by <a title="ZipList Recipe Plugin" href="http://www.ziplist.com/recipe_plugin" target="_blank">ZipList Recipe Plugin</a></div><div class="ziplist-recipe-plugin" style="display: none;">1.4</div><a id="zl-printed-permalink" href="http://www.thejeyofcooking.com/drunken-cheesecake-brownies/"title="Permalink to Recipe">http://www.thejeyofcooking.com/drunken-cheesecake-brownies/</a></div><div id="zl-printed-copyright-statement">The Jey of Cooking | http://www.thejeyofcooking.com</div></div>
+		</div></p>
+<p><!-- start InLinkz script --><br />
+<script type="text/javascript">
+                document.write('<script type="text/javascript" src=http://www.inlinkz.com/cs.php?id=189324&#038;' + new Date().getTime() + '"><\/script>');</script><br />
+<!-- end InLinkz script --></p>
+<div class='shareinpost'><ul class="socialwrap row"><li class="iconOnly share">Pass the Peas:</li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.thejeyofcooking.com%2Fdrunken-cheesecake-brownies%2F&amp;t=Drunken+Cheesecake+Brownies." title="Recommend this post : Drunken Cheesecake Brownies. on Facebook" ><img src="http://www.thejeyofcooking.com/wp-content/plugins/share-and-follow/images/blank.png" height="32" style="background: transparent url(http://www.thejeyofcooking.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-363px 0px" class="image-32" width="32" alt="facebook"/> <span class="head">Recommend on Facebook</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.reddit.com/submit?url=http%3A%2F%2Fwww.thejeyofcooking.com%2Fdrunken-cheesecake-brownies%2F&amp;title=Drunken+Cheesecake+Brownies." title="Share this post : Drunken Cheesecake Brownies. on Reddit" ><img src="http://www.thejeyofcooking.com/wp-content/plugins/share-and-follow/images/blank.png" height="32" style="background: transparent url(http://www.thejeyofcooking.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1419px 0px" class="image-32" width="32" alt="reddit"/> <span class="head">share via Reddit</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.thejeyofcooking.com%2Fdrunken-cheesecake-brownies%2F&amp;title=Drunken+Cheesecake+Brownies." title="Share this post : Drunken Cheesecake Brownies. with Stumblers" ><img src="http://www.thejeyofcooking.com/wp-content/plugins/share-and-follow/images/blank.png" height="32" style="background: transparent url(http://www.thejeyofcooking.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1617px 0px" class="image-32" width="32" alt="stumble"/> <span class="head">Share with Stumblers</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://twitter.com/home/?status=Drunken+Cheesecake+Brownies.+-+http%3A%2F%2Fwww.thejeyofcooking.com%2Fdrunken-cheesecake-brownies%2F" title="Tweet this post : Drunken Cheesecake Brownies. on Twitter" ><img src="http://www.thejeyofcooking.com/wp-content/plugins/share-and-follow/images/blank.png" height="32" style="background: transparent url(http://www.thejeyofcooking.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1749px 0px" class="image-32"  width="32"  alt="twitter"/> <span class="head">Tweet about it</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.print();" title="Print this post : Drunken Cheesecake Brownies. for reading later" ><img src="http://www.thejeyofcooking.com/wp-content/plugins/share-and-follow/images/blank.png" height="32" style="background: transparent url(http://www.thejeyofcooking.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1386px 0px" class="image-32" width="32" alt="print"/> <span class="head">Print for later</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.bookMark('http%3A%2F%2Fwww.thejeyofcooking.com%2Fdrunken-cheesecake-brownies%2F', 'Drunken+Cheesecake+Brownies.', BrowserDetect.browser);" title="Bookmark this post : Drunken Cheesecake Brownies." ><img src="http://www.thejeyofcooking.com/wp-content/plugins/share-and-follow/images/blank.png" height="32" style="background: transparent url(http://www.thejeyofcooking.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-99px 0px" class="image-32" width="32" alt="bookmark"/> <span class="head">Bookmark in Browser</span></a></li><li class="iconOnly"><a rel="_self" href="mailto:?subject=The%20Jey%20of%20Cooking.%20:%20Drunken%20Cheesecake%20Brownies.&amp;body=Found%20this%20recipe%20on%20www.TheJeyofCooking.com%20%20http://www.thejeyofcooking.com/drunken-cheesecake-brownies/" title="Tell a friend about this post : Drunken Cheesecake Brownies. "><img src="http://www.thejeyofcooking.com/wp-content/plugins/share-and-follow/images/blank.png" height="32"  width="32" style="background: transparent url(http://www.thejeyofcooking.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-330px 0px" class="image-32"  alt="email" /> <span class="head">Tell a friend</span></a></li></ul><div class="clean"></div> </div><div style="padding: 10px 0 "  class="interactive_bottom"><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fwww.thejeyofcooking.com%2Fdrunken-cheesecake-brownies%2F&amp;text=Drunken Cheesecake Brownies.&amp;count=vertical&amp;lang=  " style="width:65px; height:65px;"></iframe><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.thejeyofcooking.com%2Fdrunken-cheesecake-brownies%2F&amp;layout=box_count&amp;show_faces=false&amp;width=65&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:65px; height:65px;" allowTransparency="true"></iframe><script src="http://www.stumbleupon.com/hostedbadge.php?s=5&r=http%3A%2F%2Fwww.thejeyofcooking.com%2Fdrunken-cheesecake-brownies%2F"></script></div><h3>Related posts:</h3><div style="clear: both"></div><div style="border: 0pt none ; margin: 0pt; padding: 0pt;"><a onmouseout="this.style.backgroundColor='#FFFFFF'" onmouseover="this.style.backgroundColor='#EEEEEF'" style="background-color: #FFFFFF; border-right: 1px solid #DDDDDD; border-bottom: medium none; margin: 0pt; padding: 6px; display: block; float: left; text-decoration: none; text-align: left; cursor: pointer;" href="http://www.thejeyofcooking.com/oatmeal-raisin-cookies-and-a-giveaway/"><div style="border: 0pt none ; margin: 0pt; padding: 0pt; width: 150px; height: 225px;"><div style="border: 0pt none ; margin: 0pt; padding: 0pt; background: transparent url(http://www.thejeyofcooking.com/wp-content/uploads/2011/01/oatmeal.raisin.cookies-150x150.jpg) no-repeat scroll 0% 0%; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; width: 150px; height: 150px;"></div><div style="border: 0pt none; margin: 3px 0pt 0pt; padding: 0pt; font-family: ; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-size-adjust: none; font-stretch: normal; -x-system-font: none; color: #333333;">Oatmeal Raisin Cookies and a Giveaway!</div></div></a><a onmouseout="this.style.backgroundColor='#FFFFFF'" onmouseover="this.style.backgroundColor='#EEEEEF'" style="background-color: #FFFFFF; border-right: 1px solid #DDDDDD; border-bottom: medium none; margin: 0pt; padding: 6px; display: block; float: left; text-decoration: none; text-align: left; cursor: pointer;" href="http://www.thejeyofcooking.com/recipe-swap-mango-habanero-chicken-sandwich/"><div style="border: 0pt none ; margin: 0pt; padding: 0pt; width: 150px; height: 225px;"><div style="border: 0pt none ; margin: 0pt; padding: 0pt; background: transparent url(http://www.thejeyofcooking.com/wp-content/uploads/2011/05/mango.habanero.chicken.sandwich-150x150.jpg) no-repeat scroll 0% 0%; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; width: 150px; height: 150px;"></div><div style="border: 0pt none; margin: 3px 0pt 0pt; padding: 0pt; font-family: ; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-size-adjust: none; font-stretch: normal; -x-system-font: none; color: #333333;">Recipe Swap: Mango Habanero Chicken Sandwich.</div></div></a><a onmouseout="this.style.backgroundColor='#FFFFFF'" onmouseover="this.style.backgroundColor='#EEEEEF'" style="background-color: #FFFFFF; border-right: 1px solid #DDDDDD; border-bottom: medium none; margin: 0pt; padding: 6px; display: block; float: left; text-decoration: none; text-align: left; cursor: pointer;" href="http://www.thejeyofcooking.com/bourbon-pear-pecan-stuffing/"><div style="border: 0pt none ; margin: 0pt; padding: 0pt; width: 150px; height: 225px;"><div style="border: 0pt none ; margin: 0pt; padding: 0pt; background: transparent url(http://www.thejeyofcooking.com/wp-content/uploads/2011/11/bourbon.pear_.pecan_.stuffing-150x150.jpg) no-repeat scroll 0% 0%; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; width: 150px; height: 150px;"></div><div style="border: 0pt none; margin: 3px 0pt 0pt; padding: 0pt; font-family: ; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-size-adjust: none; font-stretch: normal; -x-system-font: none; color: #333333;">Bourbon Pear Pecan Stuffing.</div></div></a></div><div style="clear: both"></div>											</div><!-- .entry-content -->
+
+					<div class="entry-info">
+						This entry was posted in <a href="http://www.thejeyofcooking.com/category/uncategorized/" title="View all posts in Uncategorized" rel="category tag">Uncategorized</a> and tagged <a href="http://www.thejeyofcooking.com/tag/baking/" rel="tag">baking</a>, <a href="http://www.thejeyofcooking.com/tag/brownies/" rel="tag">brownies</a>, <a href="http://www.thejeyofcooking.com/tag/dessert/" rel="tag">dessert</a>, <a href="http://www.thejeyofcooking.com/tag/food/" rel="tag">food</a>, <a href="http://www.thejeyofcooking.com/tag/recipe/" rel="tag">recipe</a>. Bookmark the <a href="http://www.thejeyofcooking.com/drunken-cheesecake-brownies/" title="Permalink to Drunken Cheesecake Brownies." rel="bookmark">permalink</a>.											</div><!-- .entry-info -->
+				</div><!-- #post-## -->
+
+				<div id="nav-below" class="navigation">
+					<div class="nav-previous"><a href="http://www.thejeyofcooking.com/chicken-in-honey-beer-sauce/" rel="prev"><span class="meta-nav">&larr;</span> Chicken in Honey Beer Sauce.</a></div>
+					<div class="nav-next"></div>
+				</div><!-- #nav-below -->
+
+				
+<div id="comments">
+	
+	
+			<h3 id="comments-title">One Response to <span>Drunken Cheesecake Brownies.</span></h3>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-2936">
+		<div id="comment-2936">
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/cab8ae7395e7d5a505e24d11181bfbfd?s=48&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=G' class='avatar avatar-48 photo' height='48' width='48' />
+			<cite class="fn"><a href='http://www.cookaholicwife.com' rel='external nofollow' class='url'>Cookaholic Wife</a></cite>
+
+			<span class="comment-meta commentmetadata">
+				|
+				<a href="http://www.thejeyofcooking.com/drunken-cheesecake-brownies/#comment-2936">
+				September 7, 2012 at 7:31 am</a>
+					|
+					<a rel='nofollow' class='comment-reply-link' href='/drunken-cheesecake-brownies/?replytocom=2936#respond' onclick='return addComment.moveForm("comment-2936", "2936", "respond", "2231")'>Reply</a>								</span><!-- .comment-meta .commentmetadata -->
+		</div><!-- .comment-author .vcard -->
+		
+		<div class="comment-body"><p>Glad you liked them! <img src='http://www.thejeyofcooking.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+</div>
+
+	</div><!-- #comment-##  -->
+
+	</li>
+		</ol>
+
+		
+	
+									<div id="respond">
+				<h3 id="reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/drunken-cheesecake-brownies/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://www.thejeyofcooking.com/wp-comments-post.php" method="post" id="commentform">
+																			<p class="comment-notes">Your email address will not be published. Required fields are marked <span class="required">*</span></p>							<p class="comment-form-author"><label for="author">Name</label> <span class="required">*</span><input id="author" name="author" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-email"><label for="email">Email</label> <span class="required">*</span><input id="email" name="email" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-url"><label for="url">Website</label><input id="url" name="url" type="text" value="" size="30" /></p>
+												<p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>						<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='2231' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="03b65f62e0" /></p>					</form>
+							</div><!-- #respond -->
+						
+</div><!-- #comments -->
+			
+			</div><!-- #content -->
+		</div><!-- #content-container -->
+
+
+		
+		<div id="primary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+
+			<li id="text-10" class="widget-container widget_text"><h3 class="widget-title">Never miss an update again&#8230; get the jey of cooking delivered straight to your inbox or favorite reader!</h3>			<div class="textwidget"><a href="http://feeds.feedburner.com/TheJeyOfCooking" title="Subscribe to my feed" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon32x32.png" alt="" style="border:0"/></a><a href="http://feeds.feedburner.com/TheJeyOfCooking" title="Subscribe to my feed" rel="alternate" </div>
+		</li><li id="text-11" class="widget-container widget_text"><h3 class="widget-title">Follow Me on Pinterest!</h3>			<div class="textwidget"><a href="http://pinterest.com/thejeyofcooking/"><img src="http://d3io1k5o0zdpqr.cloudfront.net/images/big-p-button.png" width="61" height="61" alt="Follow Me on Pinterest" /></a></div>
+		</li>		<li id="recent-posts-3" class="widget-container widget_recent_entries">		<h3 class="widget-title">What&#8217;s Cooking Lately?</h3>		<ul>
+				<li><a href="http://www.thejeyofcooking.com/drunken-cheesecake-brownies/" title="Drunken Cheesecake Brownies.">Drunken Cheesecake Brownies.</a></li>
+				<li><a href="http://www.thejeyofcooking.com/chicken-in-honey-beer-sauce/" title="Chicken in Honey Beer Sauce.">Chicken in Honey Beer Sauce.</a></li>
+				<li><a href="http://www.thejeyofcooking.com/root-beer-float-ice-cream/" title="Root Beer Float Ice Cream.">Root Beer Float Ice Cream.</a></li>
+				<li><a href="http://www.thejeyofcooking.com/panzanella/" title="Panzanella.">Panzanella.</a></li>
+				<li><a href="http://www.thejeyofcooking.com/philly-cheesesteak-sloppy-joes/" title="Philly Cheesesteak Sloppy Joes.">Philly Cheesesteak Sloppy Joes.</a></li>
+				</ul>
+		</li><li id="archives-3" class="widget-container widget_archive"><h3 class="widget-title">Archives</h3>		<select name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> <option value="">Select Month</option> 	<option value='http://www.thejeyofcooking.com/2012/09/'> September 2012 &nbsp;(1)</option>
+	<option value='http://www.thejeyofcooking.com/2012/08/'> August 2012 &nbsp;(4)</option>
+	<option value='http://www.thejeyofcooking.com/2012/07/'> July 2012 &nbsp;(2)</option>
+	<option value='http://www.thejeyofcooking.com/2012/06/'> June 2012 &nbsp;(5)</option>
+	<option value='http://www.thejeyofcooking.com/2012/05/'> May 2012 &nbsp;(3)</option>
+	<option value='http://www.thejeyofcooking.com/2012/04/'> April 2012 &nbsp;(7)</option>
+	<option value='http://www.thejeyofcooking.com/2012/03/'> March 2012 &nbsp;(5)</option>
+	<option value='http://www.thejeyofcooking.com/2012/02/'> February 2012 &nbsp;(4)</option>
+	<option value='http://www.thejeyofcooking.com/2012/01/'> January 2012 &nbsp;(11)</option>
+	<option value='http://www.thejeyofcooking.com/2011/12/'> December 2011 &nbsp;(13)</option>
+	<option value='http://www.thejeyofcooking.com/2011/11/'> November 2011 &nbsp;(13)</option>
+	<option value='http://www.thejeyofcooking.com/2011/10/'> October 2011 &nbsp;(8)</option>
+	<option value='http://www.thejeyofcooking.com/2011/09/'> September 2011 &nbsp;(10)</option>
+	<option value='http://www.thejeyofcooking.com/2011/08/'> August 2011 &nbsp;(7)</option>
+	<option value='http://www.thejeyofcooking.com/2011/07/'> July 2011 &nbsp;(8)</option>
+	<option value='http://www.thejeyofcooking.com/2011/06/'> June 2011 &nbsp;(7)</option>
+	<option value='http://www.thejeyofcooking.com/2011/05/'> May 2011 &nbsp;(5)</option>
+	<option value='http://www.thejeyofcooking.com/2011/04/'> April 2011 &nbsp;(10)</option>
+	<option value='http://www.thejeyofcooking.com/2011/03/'> March 2011 &nbsp;(7)</option>
+	<option value='http://www.thejeyofcooking.com/2011/02/'> February 2011 &nbsp;(17)</option>
+	<option value='http://www.thejeyofcooking.com/2011/01/'> January 2011 &nbsp;(19)</option>
+	<option value='http://www.thejeyofcooking.com/2010/12/'> December 2010 &nbsp;(9)</option>
+	<option value='http://www.thejeyofcooking.com/2010/11/'> November 2010 &nbsp;(8)</option>
+	<option value='http://www.thejeyofcooking.com/2010/10/'> October 2010 &nbsp;(5)</option>
+	<option value='http://www.thejeyofcooking.com/2010/09/'> September 2010 &nbsp;(6)</option>
+	<option value='http://www.thejeyofcooking.com/2010/08/'> August 2010 &nbsp;(1)</option>
+	<option value='http://www.thejeyofcooking.com/2010/07/'> July 2010 &nbsp;(1)</option>
+ </select>
+</li><li id="search-3" class="widget-container widget_search"><h3 class="widget-title">Search the Recipe Box.</h3><form role="search" method="get" id="searchform" action="http://www.thejeyofcooking.com/" >
+	<div><label class="screen-reader-text" for="s">Search for:</label>
+	<input type="text" value="" name="s" id="s" />
+	<input type="submit" id="searchsubmit" value="Search" />
+	</div>
+	</form></li><li id="text-12" class="widget-container widget_text">			<div class="textwidget"><a href="http://http://www.blogher.com/blogher-food-12"><img src="http://www.blogher.com/files/BHFood12_150x150_going.jpg" alt="I'm Going to BlogHer Food'12" height="150" width="150"></a></div>
+		</li><li id="text-13" class="widget-container widget_text">			<div class="textwidget"><div style="text-align:center"><a href="http://www.foodista.com/fbod?src=fbod_badge"><img src="http://cf.foodista.com/content/fp/hyv3p75jwirzl3kf" alt="Foodista Food Blog of the Day Badge" title="Foodista Food Blog of the Day Badge" style="border:none;width:120px;height:120px" /></a></div></div>
+		</li><li id="as_facebook_mem_likebox_widgets" class="widget-container widget_as_facebook_mem_likebox"><h3 class="widget-title">Facebook</h3><div id="likebox-frame"><iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages/The-Jey-of-Cooking/176682732353626&amp;width=234&amp;connections=10&amp;stream=false&amp;header=false&amp;height=340" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:234px; height:340px;" allowTransparency="true"></iframe></div></li><li id="tag_cloud-3" class="widget-container widget_tag_cloud"><h3 class="widget-title">Tags</h3><div><a href='http://www.thejeyofcooking.com/tag/5-ingredients-or-less/' class='tag-link-9' title='5 topics' style='font-size: 8pt;'>5 ingredients or less</a>
+<a href='http://www.thejeyofcooking.com/tag/appetizer/' class='tag-link-10' title='14 topics' style='font-size: 11.8620689655pt;'>appetizer</a>
+<a href='http://www.thejeyofcooking.com/tag/apple/' class='tag-link-11' title='8 topics' style='font-size: 9.64137931034pt;'>apple</a>
+<a href='http://www.thejeyofcooking.com/tag/bacon/' class='tag-link-14' title='8 topics' style='font-size: 9.64137931034pt;'>bacon</a>
+<a href='http://www.thejeyofcooking.com/tag/baking/' class='tag-link-15' title='40 topics' style='font-size: 16.0137931034pt;'>baking</a>
+<a href='http://www.thejeyofcooking.com/tag/bbq/' class='tag-link-16' title='5 topics' style='font-size: 8pt;'>BBQ</a>
+<a href='http://www.thejeyofcooking.com/tag/bread/' class='tag-link-19' title='11 topics' style='font-size: 10.8965517241pt;'>bread</a>
+<a href='http://www.thejeyofcooking.com/tag/breakfast/' class='tag-link-20' title='13 topics' style='font-size: 11.5724137931pt;'>breakfast</a>
+<a href='http://www.thejeyofcooking.com/tag/brunch/' class='tag-link-21' title='16 topics' style='font-size: 12.3448275862pt;'>brunch</a>
+<a href='http://www.thejeyofcooking.com/tag/burger/' class='tag-link-142' title='7 topics' style='font-size: 9.15862068966pt;'>burger</a>
+<a href='http://www.thejeyofcooking.com/tag/cheese/' class='tag-link-92' title='20 topics' style='font-size: 13.2137931034pt;'>cheese</a>
+<a href='http://www.thejeyofcooking.com/tag/chicken/' class='tag-link-22' title='25 topics' style='font-size: 14.0827586207pt;'>chicken</a>
+<a href='http://www.thejeyofcooking.com/tag/chocolate/' class='tag-link-87' title='10 topics' style='font-size: 10.5103448276pt;'>chocolate</a>
+<a href='http://www.thejeyofcooking.com/tag/condiment/' class='tag-link-82' title='8 topics' style='font-size: 9.64137931034pt;'>condiment</a>
+<a href='http://www.thejeyofcooking.com/tag/cookies/' class='tag-link-26' title='13 topics' style='font-size: 11.5724137931pt;'>cookies</a>
+<a href='http://www.thejeyofcooking.com/tag/cooking/' class='tag-link-27' title='123 topics' style='font-size: 20.6482758621pt;'>cooking</a>
+<a href='http://www.thejeyofcooking.com/tag/dessert/' class='tag-link-33' title='40 topics' style='font-size: 16.0137931034pt;'>dessert</a>
+<a href='http://www.thejeyofcooking.com/tag/entree/' class='tag-link-35' title='54 topics' style='font-size: 17.2689655172pt;'>entree</a>
+<a href='http://www.thejeyofcooking.com/tag/fall/' class='tag-link-36' title='12 topics' style='font-size: 11.1862068966pt;'>fall</a>
+<a href='http://www.thejeyofcooking.com/tag/food/' class='tag-link-37' title='169 topics' style='font-size: 22pt;'>food</a>
+<a href='http://www.thejeyofcooking.com/tag/football/' class='tag-link-85' title='10 topics' style='font-size: 10.5103448276pt;'>football</a>
+<a href='http://www.thejeyofcooking.com/tag/freezer-friendly/' class='tag-link-38' title='10 topics' style='font-size: 10.5103448276pt;'>freezer friendly</a>
+<a href='http://www.thejeyofcooking.com/tag/ground-beef/' class='tag-link-89' title='6 topics' style='font-size: 8.67586206897pt;'>ground beef</a>
+<a href='http://www.thejeyofcooking.com/tag/healthy/' class='tag-link-43' title='8 topics' style='font-size: 9.64137931034pt;'>healthy</a>
+<a href='http://www.thejeyofcooking.com/tag/holiday/' class='tag-link-78' title='6 topics' style='font-size: 8.67586206897pt;'>holiday</a>
+<a href='http://www.thejeyofcooking.com/tag/party-food/' class='tag-link-96' title='6 topics' style='font-size: 8.67586206897pt;'>party food</a>
+<a href='http://www.thejeyofcooking.com/tag/pasta/' class='tag-link-51' title='15 topics' style='font-size: 12.0551724138pt;'>pasta</a>
+<a href='http://www.thejeyofcooking.com/tag/potato/' class='tag-link-55' title='6 topics' style='font-size: 8.67586206897pt;'>potato</a>
+<a href='http://www.thejeyofcooking.com/tag/pumpkin/' class='tag-link-57' title='7 topics' style='font-size: 9.15862068966pt;'>pumpkin</a>
+<a href='http://www.thejeyofcooking.com/tag/quick-and-easy/' class='tag-link-59' title='7 topics' style='font-size: 9.15862068966pt;'>quick and easy</a>
+<a href='http://www.thejeyofcooking.com/tag/recipe/' class='tag-link-60' title='165 topics' style='font-size: 21.9034482759pt;'>recipe</a>
+<a href='http://www.thejeyofcooking.com/tag/salad/' class='tag-link-61' title='9 topics' style='font-size: 10.124137931pt;'>salad</a>
+<a href='http://www.thejeyofcooking.com/tag/sandwich/' class='tag-link-140' title='7 topics' style='font-size: 9.15862068966pt;'>sandwich</a>
+<a href='http://www.thejeyofcooking.com/tag/seafood/' class='tag-link-63' title='5 topics' style='font-size: 8pt;'>seafood</a>
+<a href='http://www.thejeyofcooking.com/tag/side/' class='tag-link-65' title='13 topics' style='font-size: 11.5724137931pt;'>side</a>
+<a href='http://www.thejeyofcooking.com/tag/side-dish/' class='tag-link-100' title='7 topics' style='font-size: 9.15862068966pt;'>side dish</a>
+<a href='http://www.thejeyofcooking.com/tag/snack/' class='tag-link-103' title='8 topics' style='font-size: 9.64137931034pt;'>snack</a>
+<a href='http://www.thejeyofcooking.com/tag/soup/' class='tag-link-67' title='9 topics' style='font-size: 10.124137931pt;'>soup</a>
+<a href='http://www.thejeyofcooking.com/tag/spinach/' class='tag-link-68' title='6 topics' style='font-size: 8.67586206897pt;'>spinach</a>
+<a href='http://www.thejeyofcooking.com/tag/summer/' class='tag-link-70' title='22 topics' style='font-size: 13.6pt;'>summer</a>
+<a href='http://www.thejeyofcooking.com/tag/toddler-approved/' class='tag-link-71' title='10 topics' style='font-size: 10.5103448276pt;'>toddler approved</a>
+<a href='http://www.thejeyofcooking.com/tag/tomato/' class='tag-link-72' title='6 topics' style='font-size: 8.67586206897pt;'>tomato</a>
+<a href='http://www.thejeyofcooking.com/tag/vegan/' class='tag-link-111' title='6 topics' style='font-size: 8.67586206897pt;'>vegan</a>
+<a href='http://www.thejeyofcooking.com/tag/vegetarian/' class='tag-link-108' title='22 topics' style='font-size: 13.6pt;'>vegetarian</a>
+<a href='http://www.thejeyofcooking.com/tag/yeast/' class='tag-link-95' title='7 topics' style='font-size: 9.15862068966pt;'>yeast</a></div>
+</li>			</ul>
+		</div><!-- #primary .widget-area -->
+
+		
+			</div><!-- #content-box -->
+
+	<div id="footer" role="contentinfo">
+		
+
+		<div id="colophon">
+			Theme: Coraline by <a href="http://automattic.com/">Automattic</a> <span class="generator-link"><a href="http://wordpress.org/" title="A Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress.</a></span>
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #container -->
+
+<script type='text/javascript' src='http://assets.pinterest.com/js/pinit.js?ver=1.0'></script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-0000000-0");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<!--stats_footer_test--><script src="http://stats.wordpress.com/e-201236.js" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({blog:'18846671',v:'ext',post:'2231'});
+var load_cmc = function(){linktracker_init(18846671,2231,2);};
+if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+else load_cmc();
+</script>
+</body>
+</html>

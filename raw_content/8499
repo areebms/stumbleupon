@@ -1,0 +1,1968 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js"> 
+  <head>
+  
+          <!-- Mobile redirector -->
+<script type="text/javascript">
+(function(){
+  
+  // get redirector to work in development
+  var tmp = /^(www\.)?([\w\.]+)?refinery29\.(\w+)(:\d+)?$/.exec(window.location.host.toLowerCase()),
+      
+      // sub domain
+      sub = tmp[2],
+      
+      // top level domain
+      tld = tmp[3],
+      
+      // cookie domain for mobile_referrer cookie
+      cookie_domain = 'refinery29.'+tld,
+      
+      // domain for mobile redirect
+      mobile_domain = 'm.'+(sub ? sub : '')+cookie_domain,
+      
+      // ignore direct traffic referrers
+      r29p = new RegExp('^(https?:\/\/)((www|m|touch)\.)'+sub+'refinery29\.'+tld, 'i'),
+      
+      // validate referrer before overriding
+      r29v = function(d){
+        return !!(d && String(d).length && !String(d).match(r29p));
+      };
+
+  // quirksmode.org: JavaScript - Cookies
+  // http://www.quirksmode.org/js/cookies.html
+  
+  var cookie_create = function(name, value, days){
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime()+(days*24*60*60*1000));
+      var expires = '; expires='+date.toGMTString();
+    }
+    else {
+      var expires = '';
+    }
+    var val = name+'='+value+expires+'; path=/; domain=.'+cookie_domain+';';
+    document.cookie = val;
+  },
+  
+  cookie_delete = function(name){
+    cookie_create(name,'',-1);
+  },
+  
+  cookie_read = function(name){
+    var nameEQ = name + '=';
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') {
+        c = c.substring(1,c.length);
+      }
+      if (c.indexOf(nameEQ) == 0) {
+        var val = c.substring(nameEQ.length,c.length);
+        return val;
+      }
+    }
+  	return null;
+  },
+  
+  show_mobile_link = function(){
+    var show_link = function(){
+      document.getElementById('mobile-link').style.display = 'block';
+    }
+    if (typeof window.onload != 'function') {
+      window.onload = show_link;
+    }
+    else {
+      var prev_onload = window.onload;
+      window.onload = function(){
+        prev_onload && prev_onload();
+        show_mobile_link();
+      };
+    }
+  };
+  
+  href = document.location.href.toString();
+  
+  // ignore mobile for thirty days
+  if (href.match(/mobile=false/i)) {
+    cookie_create('force_web', '1', 30);
+    show_mobile_link();
+    return;
+  }
+  
+  // URL param force mobile ver
+  var force_mobile = href.match(/mobile=true/i),
+
+      // Cookie to force web ver
+      ignore_mobile = cookie_read('force_web') && cookie_read('force_web') === '1',
+
+      // UA detection for mobile
+      is_mobile = navigator.userAgent.match(/iphone|ipod|android/i);
+      
+      if(navigator.userAgent.match(/ipad/i)) { 
+        // facebook user-agent stupidly calls iPad an iPhone
+        is_mobile = '';
+      }
+  
+  // forcing mobile on non-mobile browser or mobile browser and not forcing desktop
+  if (force_mobile || (is_mobile && !ignore_mobile)) {
+  
+    force_mobile && cookie_delete('force_web');
+    
+    // Setup for GA in case cookie fails
+    var referrer = encodeURIComponent(document.referrer);
+    var searchURL = '?garef=' + referrer + '&' + location.search.slice(1);
+    
+    // if we have valid referrer, write referrer cookie
+    if (r29v(document.referrer)) {
+      cookie_create('mobile_referrer', referrer, 1);
+    }
+    
+    // redirect
+    var mobile_location = 'http://'+mobile_domain+location.pathname.replace(/^(.*)\/slideshow/, '$1')+searchURL;
+    window.location = mobile_location;
+    return;
+  }
+  
+  // show mobile link if we didn't redirect
+  is_mobile && show_mobile_link();
+  
+})();
+</script>
+<!--/Mobile redirector -->
+    
+  
+        <script type="text/javascript">var _dc_tile = 1;var _dc_ts=_sf_startpt=(new Date()).getTime();WRInitTime=(new Date()).getTime();</script>
+    <link rel="stylesheet" href="http://static3.refinery29.com/blog/c3ab9e/css/compiled/style.css" media="screen" />
+    <link rel="alternate" type="application/rss+xml" title="Refinery29" href="http://www.refinery29.com/index.xml" />
+    
+  	<!--[if lt IE 9]>
+  		<link rel="stylesheet" type="text/css" href="http://static2.refinery29.com/blog/c3ab9e/css/compiled/ie.css" />
+      <script src="http://static3.refinery29.com/blog/c3ab9e/js/html5.js"></script>
+    <![endif]-->
+
+          <script type="text/javascript" src="http://cdn.onswipe.com/synapse/on.js?usr=refinery29" id="onswipe_synapse"></script>
+    
+    <script type="text/javascript" src="http://static1.refinery29.com/blog/c3ab9e/js/jquery.js"></script>
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/c3ab9e/js/jquery/plugins/jcarousel/jcarousel.js"></script>
+    <!-- Pinterest Hover Pin -->  
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/c3ab9e/js/jquery/plugins/jquery.autopin.js"></script>  
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/c3ab9e/js/r29.js"></script>
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/c3ab9e/js/api.js"></script>
+
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/c3ab9e/js/r29.clip.js"></script>
+    <script type="text/javascript" src="http://static3.refinery29.com/blog/c3ab9e/js/jquery/jquery.form.js"></script>
+
+
+    <!-- Avoiding Flash of Unstyled Text -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+    
+
+    
+    
+          <script type="text/javascript" src="http://static3.refinery29.com/blog/c3ab9e/js/socket.io/socket.io.js"></script>
+    
+  
+    <title itemprop="name">City Hall NYC Wedding Style - Pictures From City Hall Weddings</title> 
+    
+    <!-- Meta -->
+    
+  
+  
+   <!-- month of beauty -->
+
+  
+  <!-- Entry Meta -->
+<meta name="description" content="Confused about what to wear to your own wedding at City Hall? Check out these adorable couples and their City Hall wedding style!" itemprop="description"> 
+<meta name="keywords"    content="city hall wedding style, city hall weddings, city hall wedding pics, city happy wedding outfits" itemprop="keywords"> 
+
+  <!-- Facebook Meta -->
+  <meta property="og:title"       content="City Hall Weddings: 15 Duos Who Said 'I Do'" itemprop="name" />
+  <meta property="og:type"        content="article"/>
+  <meta property="og:url"         content="http://www.refinery29.com/city-hall-wedding-style"/>
+  <meta property="og:image"       content="http://static1.refinery29.com/bin/entry/fd5/300x/206019/opener.jpg" itemprop="image" />
+  <meta property="og:site_name"   content="Refinery29" itemprop="publisher" />
+  <meta property="og:description" content="Big or small, extravagant or minimal, traditional or modern&hellip;weddings, like couples, come in all shapes, sizes, and budgets. For every lavish ceremony set atop a tulle-draped mountaintop, there is a quiet morning spent in City Hall. We camped out in front of NYC&#039;s iconic City Hall to document&hellip;" />
+
+
+<link rel="canonical" href="http://www.refinery29.com/city-hall-wedding-style" />
+
+<!-- Slideshow Meta -->
+
+        
+<!-- Pagination Meta -->
+
+	
+
+  
+
+        
+    
+  </head>
+    
+  <body>
+    <div id="container">
+    <div id="skin"></div><!--need this for background skinz-->
+      <div class="inner">
+      
+                
+				         	<div id="header" > <!-- Header -->
+
+      
+
+  <!-- Information Bar -->
+  <nav>
+  
+          
+    
+    
+    
+          
+          
+    
+  
+    <ul class="features">
+      <li><a href="http://www.refinery29.com" data-track="nav:r29" class="r29">R29</a></li>
+      <!-- Empty divs for gradient-ed vertical lines :/ -->
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://www.refinery29.com" data-track="nav:read" class="read active">Read</a></li>
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://www.refinery29.com/video" data-track="nav:watch" class="watch">Watch</a></li>
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://reserve.refinery29.com" data-track="nav:shop" class="shop">Shop</a></li>
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://www.refinery29.com/find/stores" data-track="nav:find" class="find">Find</a></li>
+      <li><div>&nbsp;</div></li>
+    </ul>
+    
+    
+    
+    <ul class="tooltips">
+  <li class="new_browse">
+    <p><span>New</span> Browse better with our new Refinery29 shortcuts!</p>
+    <div class="close"></div>
+  </li>
+  
+</ul>
+
+    
+    <div class="search" id="search-box">
+  <form method="get" action="/search">
+    <input type="text" name="q" value="" placeholder="Search" data-placeholder="Search" autocomplete="off" />
+    
+    
+  </form>
+  <div class="flap"></div>
+</div>
+
+    
+  </nav>
+  
+      <!-- Banner Bar -->
+    <div class="banner">
+      <!-- Edition Background -->
+                  <a href="/everywhere" class="logo everywhere" data-track="header:logo"></a>
+            
+    </div>
+  
+  
+  
+      <!-- Editions Navigation -->
+    <ul class="editions">
+                        <li class="everywhere"><a  class="active" href="http://www.refinery29.com/" data-track="header:everywhere">Everywhere</a></li>
+        
+                        <li class="new-york"><a  href="http://www.refinery29.com/new-york" data-track="header:new-york">New York</a></li>
+        
+                        <li class="los-angeles"><a  href="http://www.refinery29.com/los-angeles" data-track="header:los-angeles">Los Angeles</a></li>
+        
+                        <li class="chicago"><a  href="http://www.refinery29.com/chicago" data-track="header:chicago">Chicago</a></li>
+        
+                        <li class="san-francisco"><a  href="http://www.refinery29.com/san-francisco" data-track="header:san-francisco">San Francisco</a></li>
+        
+                        <li class="washington-dc"><a  href="http://www.refinery29.com/washington-dc" data-track="header:washington-dc">Washington, D.C.</a></li>
+        
+              
+                        <li class="miami"><a  href="http://www.refinery29.com/miami" data-track="header:miami">Miami</a></li>
+        
+              
+              
+      
+    </ul>
+    
+    <div class="clear"></div>
+    
+    <!-- Subnavigation -->
+      
+      
+      <ul class="categories everywhere"> <!-- Categories -->
+                    <li class="news
+                              
+                              
+              "><a href="http://www.refinery29.com/everywhere/news" data-track="header:category:everywhere:news">News</a>
+                            <ul>
+                <!-- Sub-categories -->
+                                  <li><a href="http://www.refinery29.com/festival-tracker" data-track="header:news:festival-tracker">Festival Tracker</a></li>
+                
+                                  <li><a href="http://www.refinery29.com/everywhere/news/art-and-culture" data-track="header:subcategory:everywhere:art-and-culture">Art &amp; Culture</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/news/celebrities" data-track="header:subcategory:everywhere:celebrities">Celebrities</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/news/dedicated-feature" data-track="header:subcategory:everywhere:dedicated-feature">Dedicated Feature</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/news/drinking-and-dining" data-track="header:subcategory:everywhere:drinking-and-dining">Drinking &amp; Dining</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/news/fashion-news" data-track="header:subcategory:everywhere:fashion-news">Fashion News</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/news/friends-of-r29" data-track="header:subcategory:everywhere:friends-of-r29">Friends of R29</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/news/hot-new-products" data-track="header:subcategory:everywhere:hot-new-products">Hot New Products</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/news/itineraries" data-track="header:subcategory:everywhere:itineraries">Itineraries</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/news/link-love" data-track="header:subcategory:everywhere:link-love">Link Love</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/news/music" data-track="header:subcategory:everywhere:music">Music</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/news/parties" data-track="header:subcategory:everywhere:parties">Parties</a></li>
+                
+              </ul>
+              
+              
+            </li>
+                    <li class="fashion
+                               active selected
+                              
+              "><a href="http://www.refinery29.com/everywhere/fashion" data-track="header:category:everywhere:fashion">Fashion</a>
+                            <ul>
+                <!-- Sub-categories -->
+                
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/college-fashion" data-track="header:subcategory:everywhere:college-fashion">College Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/designers" data-track="header:subcategory:everywhere:designers">Designers</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/diy-fashion" data-track="header:subcategory:everywhere:diy-fashion">Diy Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/fall-fashion" data-track="header:subcategory:everywhere:fall-fashion">Fall Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/fashion-tips" data-track="header:subcategory:everywhere:fashion-tips">Fashion Tips</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/fashion-week" data-track="header:subcategory:everywhere:fashion-week">Fashion Week</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/i-love-my" data-track="header:subcategory:everywhere:i-love-my">I Love My...</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/living" data-track="header:subcategory:everywhere:living">Living</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/lookbooks" data-track="header:subcategory:everywhere:lookbooks">Lookbooks</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/magazines" data-track="header:subcategory:everywhere:magazines">Magazines</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/models" data-track="header:subcategory:everywhere:models">Models</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/my-style" data-track="header:subcategory:everywhere:my-style">My Style</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/petites" data-track="header:subcategory:everywhere:petites">Petites</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/plus-size" data-track="header:subcategory:everywhere:plus-size">Plus Size</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/spring-fashion" data-track="header:subcategory:everywhere:spring-fashion">Spring Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/spring-trends" data-track="header:subcategory:everywhere:spring-trends">Spring Trends</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/street-fashion" data-track="header:subcategory:everywhere:street-fashion">Street Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/summer-fashion" data-track="header:subcategory:everywhere:summer-fashion">Summer Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/trend-watch" data-track="header:subcategory:everywhere:trend-watch">Trend Watch</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/weddings" data-track="header:subcategory:everywhere:weddings">Weddings</a></li>
+                
+              </ul>
+              
+              
+            </li>
+                    <li class="shopping
+                              
+                              
+              "><a href="http://www.refinery29.com/everywhere/shopping" data-track="header:category:everywhere:shopping">Shopping</a>
+                            <ul>
+                <!-- Sub-categories -->
+                                  <li><a href="http://reserve.refinery29.com/" data-track="header:subcategory:everywhere:reserve">Reserve: Shop Our Store</a></li>
+                  <li><a href="http://www.refinery29.com/find/stores/" data-track="header:shopping:find-stores-we-love:everywhere">Stores We Love</a></li>
+                
+                                  <li><a href="http://www.refinery29.com/everywhere/shopping/dresses" data-track="header:subcategory:everywhere:dresses">Dresses</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/shopping/gifts" data-track="header:subcategory:everywhere:gifts">Gifts</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/shopping/holiday" data-track="header:subcategory:everywhere:holiday">Holiday</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/shopping/hot-sales" data-track="header:subcategory:everywhere:hot-sales">Hot Sales</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/shopping/online-deals" data-track="header:subcategory:everywhere:online-deals">Online Deals</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/shopping/shopping-guides" data-track="header:subcategory:everywhere:shopping-guides">Shopping Guides</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/shopping/shopping-roundups" data-track="header:subcategory:everywhere:shopping-roundups">Shopping Roundups</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/shopping/store-news" data-track="header:subcategory:everywhere:store-news">Store News</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/shopping/store-openings" data-track="header:subcategory:everywhere:store-openings">Store Openings</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/shopping/the-perfect-outfit" data-track="header:subcategory:everywhere:the-perfect-outfit">The Perfect Outfit</a></li>
+                
+              </ul>
+              
+              
+            </li>
+                    <li class="beauty
+                              
+                              
+              "><a href="http://www.refinery29.com/everywhere/beauty" data-track="header:category:everywhere:beauty">Beauty</a>
+                            <ul>
+                <!-- Sub-categories -->
+                
+                                  <li><a href="http://www.refinery29.com/everywhere/beauty/hair-trends" data-track="header:subcategory:everywhere:hair-trends">Hair Trends</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/beauty/health-and-wellness" data-track="header:subcategory:everywhere:health-and-wellness">Health &amp; Wellness</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/beauty/makeup-trends" data-track="header:subcategory:everywhere:makeup-trends">Makeup Trends</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/beauty/nail-polish-colors" data-track="header:subcategory:everywhere:nail-polish-colors">Nail Polish Colors</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/beauty/new-beauty-products" data-track="header:subcategory:everywhere:new-beauty-products">New Beauty Products</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/beauty/new-makeup-products" data-track="header:subcategory:everywhere:new-makeup-products">New Makeup Products</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/beauty/skincare" data-track="header:subcategory:everywhere:skincare">Skincare</a></li>
+                
+              </ul>
+              
+              
+            </li>
+        
+      </ul>
+      
+    
+  
+  <script type="text/javascript">
+    
+      var R29 = R29 || {};
+    
+    
+    R29.BASE_URL = "refinery29.com";
+    
+  </script>
+      
+</div> <!-- /Header -->
+
+				
+								    				  <!-- Top Ad, Signup, Facebook -->
+<div class="top-ad">
+  
+    	
+  
+  
+      
+<div class="ad ad-728x90" iframe-code="http://ad.doubleclick.net/adi/r29.oao/fashion/weddings;s1=fashion;s2=weddings;s3=weddings;sponsorship=;pagetype=entry;test=;pageid=city-hall-wedding-style;tags=wedding-inspiration-street-style;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;" iframe-size="728x90, 970x66"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.oao/fashion/weddings;s1=fashion;s2=weddings;s3=weddings;sponsorship=;pagetype=entry;test=;pageid=city-hall-wedding-style;tags=wedding-inspiration-street-style;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.oao/fashion/weddings;s1=fashion;s2=weddings;s3=weddings;sponsorship=;pagetype=entry;test=;pageid=city-hall-wedding-style;tags=wedding-inspiration-street-style;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.oao/fashion/weddings;s1=fashion;s2=weddings;s3=weddings;sponsorship=;pagetype=entry;test=;pageid=city-hall-wedding-style;tags=wedding-inspiration-street-style;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+  
+  
+  <div class="ribbon-tail-left"></div>
+
+  <!-- Signup -->
+<div class="widget">
+   
+  
+  
+  <a href="/signup/everywhere?source=sitearrow&amp;medium=organic" class="signup everywhere" alt="Sign Up Now!"></a>
+  <div class="fblike">
+    <fb:like href="http://www.facebook.com/refinery29" show_faces="false" width="220" height="28"></fb:like>
+  </div>
+</div>
+
+
+</div>
+
+  				
+  				
+  				
+				
+				
+        <div id="content"> 
+        
+          					<!-- LEFT -->
+					<div class="col_2">
+						
+  <!-- CACHE 82992 - ttl: 180 -->    <!-- Mini Signup Module on Entry Pages: For Once -->
+          <!-- Lil Mini Signup Module -->
+<div class="signup-mini" style="display:none;">
+  <div class="folded-corner"></div>
+  <img src="http://static1.refinery29.com/blog/c3ab9e/images/signup/sample-email.png" width="195" height="163" alt="Get Your Free Daily Newsletter!" class="left" />
+  <h4>Get Your Free <br>Daily Newsletter!</h4>
+  <p>The freshest fashion, shopping, lifestyle news, beauty tips, and local deals you'll ever need!</p>
+  
+  <form action="/signup/new-york?source=sitebox&medium=organic" method="POST">
+  
+    <input type="email" name="email" required placeholder="Enter your Email Address" data-placeholder="Enter your Email Address">
+    
+    <input type="hidden" name="email_lists[everywhere]" value="true">
+    
+      
+    <input type="submit" name="submit" value="Sign Up" data-track="signup-mini:submit" />
+  
+  
+  </form>
+
+  <a href="" class="close" data-track="signup-mini:close">Close<span></span></a>
+</div>
+
+
+<script type="text/javascript">
+
+  $('.signup-mini a.close').click(function(event) {
+    event.preventDefault();
+    $('.signup-mini').hide();
+    R29.cookie.set('signup_mini',1,3600*24*30);
+  });
+
+  $('.signup-mini input.submit').click(function(event) {
+    R29.cookie.set('signup_mini',1,-1);
+    return true;
+  });
+
+  if(!R29.cookie.get('signup_mini')) {
+    $('.signup-mini').show();
+  }
+
+</script>
+    
+    <div class="entry-block">
+      <aside class="social-sidebar">
+
+    <!-- R29 CLIP -->
+      <div class="r29-clip disabled" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'R29ClipSidebar', 'clipped']);">
+      <p class="count">0 clips</p>
+      <img src="/static/images/stylebook/clip.png" alt="CLIP It" height="50px" width="50px">
+    </div>
+  
+  
+  <!-- FB -->
+  <div class="facebook" itemprop="interactionCount">
+    <fb:like layout="box_count" href="http://www.refinery29.com/city-hall-wedding-style" send="false" width="50" ref="sidebar"></fb:like>
+  </div>
+  
+  <!-- Twitter -->
+  <div class="twitter" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'TwitterSidebar', 'tweet']);">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-text="City Hall Weddings: 15 Duos Who Said 'I Do'" data-url="http://www.refinery29.com/city-hall-wedding-style" data-count="vertical" data-via="refinery29">&nbsp;</a>
+  </div>
+
+  <!-- Pinterest -->
+  <div class="pinterest" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'Pinterest', 'pinned']);">
+    <a href="http://pinterest.com/pin/create/button/?url=http://www.refinery29.com/city-hall-wedding-style&media=http://static2.refinery29.com/bin/entry/092/x/206019/opener.jpg&description=City Hall Weddings: 15 Duos Who Said 'I Do'" class="pin-it-button" count-layout="vertical">Pin It</a>
+  </div>
+  
+  <!-- Stumbleupon -->
+  <div class="stumbleupon" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'StumbleSidebar', 'stumble']);">
+    <iframe src="http://badge.stumbleupon.com/badge/embed/5/?url=http://www.refinery29.com/city-hall-wedding-style" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:60px;" allowTransparency="true"></iframe>
+  </div>
+  
+</aside>
+    
+      
+  
+  
+   
+    
+      <div class="entry-header">
+  
+  
+	
+  <div class="category"><!--<a href="/everywhere/fashion/weddings" data-track="entry:header:Weddings">-->Weddings<!--</a>--></div>
+  
+  <div class="deliminator"></div>
+  
+  <div class="date">
+          Apr 25, 2012 7:00 AM
+      <!-- <span itemprop="datePublished">2012-04-25 07:00:00</span> -->
+    
+  </div>
+  <div class="asset-info">
+      <!-- Facebook Like -->
+      <div class="facebook" itemprop="interactionCount">
+        <fb:like layout="button_count" href="http://www.refinery29.com/city-hall-wedding-style" width="90" ref="entrypage"></fb:like>
+      </div>
+      <!-- Twitter Share -->
+      <div class="twitter" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'TwitterSolo', 'tweet']);">
+        <a href="http://twitter.com/share" class="twitter-share-button" data-text="City Hall Weddings: 15 Duos Who Said 'I Do'" data-url="http://www.refinery29.com/city-hall-wedding-style" data-count="horizontal" data-via="refinery29">&nbsp;</a>
+      </div>
+    <!-- Comment Count -->
+    <div class="comment-count" itemprop="interactionCount">
+      <!-- ben 1 -->
+              <a href="/city-hall-wedding-style#disqus_thread" data-url="http://www.refinery29.com/city-hall-wedding-style" class="comments"><span class="comment-count">0</span></a>
+      
+    </div>
+  </div>
+</div>
+
+
+      
+      <!-- Sponsored Headline eMeta -->
+      
+    
+      <div class="entry">
+	<div itemscope itemtype="http://schema.org/Article">
+	  <div class="h1">City Hall Weddings: 15 Duos Who Said 'I Do'</div>
+	  	    <!-- Slideshow Entry -->
+<div class="slideshow">
+
+      <!-- Slideshow Intro -->
+    <p class="byline">
+
+      By 
+    
+    <a href="/author/connie-wang" rel="author"><span itemprop="author">Connie Wang</span></a>,     
+          Photographed by
+    
+    <a href="/author/winnie-au" rel="author"><span itemprop="author">Winnie Au</span></a>
+</p>
+    <div class="intro">
+      <div class="right">
+        <img src="http://static2.refinery29.com/bin/entry/b3f/280x/206019/opener.jpg" alt="opener" width="280" height="335"  />
+        <a class="fullscreen" href="/city-hall-wedding-style/premiumslideshow">View Fullscreen</a>
+      </div>
+      <div class="overlay"><a class="slide-watch" href="/city-hall-wedding-style/slideshow">View Slideshow</a></div>
+      Big or small, extravagant or minimal, traditional or modern…weddings, like couples, come in all shapes, sizes, and budgets. For every lavish ceremony set atop a tulle-draped mountaintop, there is a quiet morning spent in City Hall. We camped out in front of NYC's iconic City Hall to document the flow of 'I Do'-ers who chose to trade in the pomp and circumstance for something a littler simpler. Check out the 15 beautiful couples who caught out eye…now, can you pass the Kleenex?
+<br><br><em>
+  <small>Photographed by Winnie Au</small>
+</em>
+      <p>
+        <a href="/city-hall-wedding-style/slideshow">Start Slideshow</a>
+      </p>
+    </div>
+  
+
+</div>
+
+<!-- Slideshow Javascript -->
+<script type="text/javascript"> 
+  
+  var slides = [
+  
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/0ef\/350x500b\/206024\/01-weddingcouples02-025.jpg\" alt=\"01_WeddingCouples02_025\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Architect Jordan Tait and model Martiza Veer in their wedding day finery.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"horiz\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/006\/600x500b\/206020\/02-weddingcouples02-041.jpg\" alt=\"02_WeddingCouples02_041\" width=\"600\" height=\"400\"  \/><\/div><\/a>\n          \n        \n        <p>White roses and leather belts.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"horiz\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/58f\/600x500b\/206022\/03-weddingcouples02-052.jpg\" alt=\"03_WeddingCouples02_052\" width=\"600\" height=\"400\"  \/><\/div><\/a>\n          \n        \n        <p><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/8f7\/350x500b\/206025\/04-weddingcouples02-030.jpg\" alt=\"04_WeddingCouples02_030\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Said Maritza, \"We were both invited to a rooftop dinner and it turned out to be wrong day, so we ended up meeting.\"<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/dce\/350x500b\/206021\/05-weddingcouples01-117.jpg\" alt=\"05_WeddingCouples01_117\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Mariko Aoyagi in her feathered white dress.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/2dd\/350x500b\/206023\/06-weddingcouples01-136.jpg\" alt=\"06_WeddingCouples01_136\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>\"...She wore flowers in her hair...\" <br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/5d5\/350x500b\/206027\/07-weddingcouples01-122.jpg\" alt=\"07_WeddingCouples01_122\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Mariko and Sourabh Singhal met through a friend at school<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"horiz\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/bd4\/600x500b\/206026\/08-weddingcouples01-139.jpg\" alt=\"08_WeddingCouples01_139\" width=\"600\" height=\"400\"  \/><\/div><\/a>\n          \n        \n        <p>Lookin' good, Sourabh!<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/57d\/350x500b\/206029\/09-weddingcouples01-024.jpg\" alt=\"09_WeddingCouples01_024\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Jabal Abdur-Rahman and Aisha Dolo were introduced through their sheikh.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"horiz\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/541\/600x500b\/206028\/10-weddingcouples01-033.jpg\" alt=\"10_WeddingCouples01_033\" width=\"600\" height=\"400\"  \/><\/div><\/a>\n          \n        \n        <p>Gorgeous henna scrolls on Aisha's hands.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/ef4\/350x500b\/206030\/11-weddingcouples01-026.jpg\" alt=\"11_WeddingCouples01_026\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"horiz\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/de9\/600x500b\/206031\/12-weddingcouples04-202.jpg\" alt=\"12_WeddingCouples04_202\" width=\"600\" height=\"400\"  \/><\/div><\/a>\n          \n        \n        <p>Actress Francesca Loftus and yoga instructor Corey Loftus smile for the camera.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/79b\/350x500b\/206033\/13-weddingcouples04-175.jpg\" alt=\"13_WeddingCouples04_175\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Francesca's plaid jacket is pitch perfect.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"horiz\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/408\/600x500b\/206032\/14-weddingcouples04-185.jpg\" alt=\"14_WeddingCouples04_185\" width=\"600\" height=\"400\"  \/><\/div><\/a>\n          \n        \n        <p>A bundle of calla lilies.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/721\/350x500b\/206035\/15-weddingcouples04-162.jpg\" alt=\"15_WeddingCouples04_162\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>\"He walked me home after class every day... and because it was dance class in NYC, I thought he was gay &mdash; surprise!\"<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/c1a\/350x500b\/206036\/16-weddingcouples04-190.jpg\" alt=\"16_WeddingCouples04_190\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/088\/350x500b\/206038\/17-weddingcouples02-106.jpg\" alt=\"17_WeddingCouples02_106\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Johnny Junior Rodriguez and Joseph Rodriguez in matching ensembles...<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"horiz\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/4e1\/600x500b\/206034\/18-weddingcouples02-133.jpg\" alt=\"18_WeddingCouples02_133\" width=\"600\" height=\"400\"  \/><\/div><\/a>\n          \n        \n        <p>...and matching tattoos, rings, and nail art!<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/9ad\/350x500b\/206037\/19-weddingcouples02-113.jpg\" alt=\"19_WeddingCouples02_113\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Johnny and Joseph met at a club in Philadelphia.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"horiz\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/641\/600x500b\/206039\/20-weddingcouples02-119.jpg\" alt=\"20_WeddingCouples02_119\" width=\"600\" height=\"400\"  \/><\/div><\/a>\n          \n        \n        <p>Don't forget the matching hair!<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/ad4\/350x500b\/206042\/21-weddingcouples01-060.jpg\" alt=\"21_WeddingCouples01_060\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Says writer Jessica Hoppe of her new husband Simone Serritella, \"He picked me up on Bleecker Street four years ago at 1 a.m.. He followed me home, and the rest was history.\"<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"horiz\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/78d\/600x500b\/206040\/22-weddingcouples01-055.jpg\" alt=\"22_WeddingCouples01_055\" width=\"600\" height=\"400\"  \/><\/div><\/a>\n          \n        \n        <p>We love Jessica's trio of dangerous rings.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/94d\/350x500b\/206044\/23-weddingcouples01-052.jpg\" alt=\"23_WeddingCouples01_052\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/257\/350x500b\/206043\/24-weddingcouples04-272.jpg\" alt=\"24_WeddingCouples04_272\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Musician Monique Powell's neon get-up is <em>beyond<\/em>.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"horiz\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/114\/600x500b\/206041\/25-weddingcouples04-266.jpg\" alt=\"25_WeddingCouples04_266\" width=\"600\" height=\"400\"  \/><\/div><\/a>\n          \n        \n        <p>Something blue.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/c4d\/350x500b\/206045\/26-weddingcouples04-235.jpg\" alt=\"26_WeddingCouples04_235\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Monique and her new husband Leon Gazarian met on eHarmony.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/6fe\/350x500b\/206047\/27-weddingcouples04-128.jpg\" alt=\"27_WeddingCouples04_128\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Nii Addo and Courtney Handy met in Brooklyn on Courtney's first visit to NYC.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"horiz\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/420\/600x500b\/206046\/28-weddingcouples04-135.jpg\" alt=\"28_WeddingCouples04_135\" width=\"600\" height=\"400\"  \/><\/div><\/a>\n          \n        \n        <p>A cluster of flowers on Nii's lapel.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/77e\/350x500b\/206051\/29-weddingcouples04-123.jpg\" alt=\"29_WeddingCouples04_123\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>We love Courtney's mod white dress and simple ballet flats.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/607\/350x500b\/206048\/30-weddingcouples04-138.jpg\" alt=\"30_WeddingCouples04_138\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/9e7\/350x500b\/206050\/31-weddingcouples04-011.jpg\" alt=\"31_WeddingCouples04_011\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Joyce Huang in a stunning floor-length gown.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/662\/350x500b\/206049\/32-weddingcouples04-045.jpg\" alt=\"32_WeddingCouples04_045\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/667\/350x500b\/206053\/33-weddingcouples04-021.jpg\" alt=\"33_WeddingCouples04_021\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Joyce and Peter Chen worked at the same office and dated for five years before tying the knot!<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/52e\/350x500b\/206052\/34-weddingcouples04-005.jpg\" alt=\"34_WeddingCouples04_005\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p><br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/193\/350x500b\/206055\/35-weddingcouples03-053.jpg\" alt=\"35_WeddingCouples03_053\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Mohammad Hamid and Maryam Hamid are showered with rose petals.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/9fd\/350x500b\/206054\/36-weddingcouples03-063.jpg\" alt=\"36_WeddingCouples03_063\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>The happy couple met through a family friend.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"horiz\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/ae9\/600x500b\/206057\/37-weddingcouples03-076.jpg\" alt=\"37_WeddingCouples03_076\" width=\"600\" height=\"400\"  \/><\/div><\/a>\n          \n        \n        <p><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/ca3\/350x500b\/206056\/38-weddingcouples01-073.jpg\" alt=\"38_WeddingCouples01_073\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Erica M. Mejia and Sergio Ramirez first met in elementary school, then reunited years later on Facebook.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/419\/350x500b\/206058\/39-weddingcouples01-077.jpg\" alt=\"39_WeddingCouples01_077\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>An oh-so-classic bouquet of white roses.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"horiz\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/f90\/600x500b\/206059\/40-weddingcouples01-075.jpg\" alt=\"40_WeddingCouples01_075\" width=\"600\" height=\"400\"  \/><\/div><\/a>\n          \n        \n        <p><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/bdf\/350x500b\/206060\/41-weddingcouples02-069.jpg\" alt=\"41_WeddingCouples02_069\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Barbara Zahl and Winnie Berriors have known each other for 35 years.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"horiz\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/f65\/600x500b\/206061\/42-weddingcouples02-085.jpg\" alt=\"42_WeddingCouples02_085\" width=\"600\" height=\"400\"  \/><\/div><\/a>\n          \n        \n        <p>The two became domestic partners in 1996 and married this year.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/0cb\/350x500b\/206064\/43-weddingcouples02-073.jpg\" alt=\"43_WeddingCouples02_073\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/f78\/350x500b\/206062\/44-weddingcouples04-095.jpg\" alt=\"44_WeddingCouples04_095\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Congrats to Clara Gialdi and Alf Nauman!<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/b62\/350x500b\/206065\/45-weddingcouples04-104.jpg\" alt=\"45_WeddingCouples04_104\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Check out Clara's brilliant rose-printed jacket.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/a9f\/350x500b\/206063\/46-weddingcouples04-092.jpg\" alt=\"46_WeddingCouples04_092\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Says Clara, \"[We met] in my future husband's art gallery.\"<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/f5b\/350x500b\/206066\/47-weddingcouples03-007.jpg\" alt=\"47_WeddingCouples03_007\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Jacqueline Knights and Charles Williams met in Antigua.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"horiz\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/bf7\/600x500b\/206068\/48-weddingcouples03-021.jpg\" alt=\"48_WeddingCouples03_021\" width=\"600\" height=\"400\"  \/><\/div><\/a>\n          \n        \n        <p>Jacqueline's garden-fresh bouquet.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/970\/350x500b\/206067\/49-weddingcouples03-027.jpg\" alt=\"49_WeddingCouples03_027\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static3.refinery29.com\/bin\/entry\/b4d\/350x500b\/206071\/50-weddingcouples05-022.jpg\" alt=\"50_WeddingCouples05_022\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Designer Sue Eggen in a seafoam-green gown.<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"horiz\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/f52\/600x500b\/206069\/51-weddingcouples04-209.jpg\" alt=\"51_WeddingCouples04_209\" width=\"600\" height=\"400\"  \/><\/div><\/a>\n          \n        \n        <p>A bouquet of succulents!<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static2.refinery29.com\/bin\/entry\/a56\/350x500b\/206070\/52-weddingcouples05-025.jpg\" alt=\"52_WeddingCouples05_025\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+          
+      "                              <div class=\"vert\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/75d\/350x500b\/206072\/53-weddingcouples05-003.jpg\" alt=\"53_WeddingCouples05_003\" width=\"333\" height=\"500\"  \/><\/div><\/a>\n          \n        \n        <p>Says Nathaniel Eddy, \"We met at The Matador, a bar in Portland, in 2011. Sue picked me up!\"<br><br><em>\n  <small>Photographed by Winnie Au<\/small>\n<\/em><\/p>\n        <div class=\"clear\"><\/div>\n      ",
+     
+    
+    "      <div class=\"last-slide\">\n      \n        \n      \n        <h2>Related Slideshows<\/h2>\n        \n                  \n        \n                          <div>\n              <a href=\"\/colorful-wedding-dresses\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/103\/280x335\/180157\/op.jpg\" alt=\"op\" width=\"280\" height=\"335\"  \/><\/a>\n              <h2 class=\"italic\"><a href=\"\/colorful-wedding-dresses\">Do You Dare? Wedding Dresses That Aren't White<\/a><\/h2>\n            <\/div>\n            \n          \n        \n                          <div>\n              <a href=\"\/charm-city-lookbook\"><img src=\"http:\/\/static1.refinery29.com\/bin\/entry\/435\/280x335\/168279\/thumb.jpg\" alt=\"thumb\" width=\"280\" height=\"335\"  \/><\/a>\n              <h2 class=\"italic\"><a href=\"\/charm-city-lookbook\">To-Die-For Cakes! The Most Gorgeous (And Edible) Lookbook Yet<\/a><\/h2>\n            <\/div>\n            \n          \n        \n              \n        \n              \n        \n        \n      <\/div>\n    "
+  ];  
+  
+    
+  
+  
+  $('.slideshow .fullscreen').click(function () {
+  	_gaq.push(['_trackEvent', 'Fullscreen Slideshow Click', 'before starting slideshow', '29084',,true]);
+  });
+
+  $('.slideshow .fullscreen_inslide').click(function () {
+  	_gaq.push(['_trackEvent', 'Fullscreen Slideshow Click', 'after starting slideshow', '29084',,true]);
+  });
+  
+  $('.entry .h1').click(function () { document.location = document.location.href.split('/slideshow')[0]; }).css('cursor', 'pointer');
+  
+</script>
+	  
+	  
+	  <div class="clear"></div>
+  </div>
+</div>
+      
+      <div class="footer">
+      <div class="tags">
+              <a href="/">Everywhere</a> &raquo; 
+              <a href="/everywhere/fashion">Fashion</a> &raquo; 
+      
+      <a href="/everywhere/fashion/weddings">Weddings</a> &raquo;
+            	<h1 class="sub">City Hall NYC Wedding Style - Pictures From City Hall Weddings</h1>
+      
+      <br/>
+      
+       
+        <strong>Tags: </strong>
+        <a class="less" href='/wedding-inspiration' tag_id="220">Wedding Inspiration</a>, <a class="less" href='/street-style' tag_id="228">Street Style</a>
+      
+    </div>
+  
+
+  
+</div>
+    <!-- /CACHE 82992 - ttl: 180 -->
+    
+      
+      
+      <!-- Related Stories -->
+<div class="related-stories">
+  <div class="hot-dimple">Related Stories</div>
+  <ul>
+    <!-- CACHE ee27f - ttl: 180 -->      
+      
+                  
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/colorful-wedding-dresses" data-track="entry:related"><img src="http://static1.refinery29.com/bin/entry/4cf/120x143/180157/op.jpg" alt="op" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/colorful-wedding-dresses" data-track="entry:related">Do You Dare? Wedding Dresses That Aren't White</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/classy-bridal-lingerie" data-track="entry:related"><img src="http://static1.refinery29.com/bin/entry/f26/120x143/170797/beautiful-bottoms.jpg" alt="beautiful-bottoms" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/classy-bridal-lingerie" data-track="entry:related">Finally! Bridal Lingerie Without The Cheesy Undertones</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/charm-city-lookbook" data-track="entry:related"><img src="http://static3.refinery29.com/bin/entry/790/120x143/168279/thumb.jpg" alt="thumb" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/charm-city-lookbook" data-track="entry:related">To-Die-For Cakes! The Most Gorgeous (And Edible) Lookbook&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/alternative-wedding-dresses" data-track="entry:related"><img src="http://static1.refinery29.com/bin/entry/a09/120x143/166537/opener.jpg" alt="opener" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/alternative-wedding-dresses" data-track="entry:related">14 Gorg, Unconventional Wedding Gowns For The Seriously&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/pippa-middleton-royal-wedding-dress" data-track="entry:related"><img src="http://static1.refinery29.com/bin/entry/e1b/120x143/164772/pipp-aop.jpg" alt="pipp-aop" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/pippa-middleton-royal-wedding-dress" data-track="entry:related">Alexander McQueen Sells Pippa Middleton's Royal Wedding&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/ruth-barzel-wedding-jewelry" data-track="entry:related"><img src="http://static1.refinery29.com/bin/entry/b94/120x143/163171/etsyman.jpg" alt="etsyman" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/ruth-barzel-wedding-jewelry" data-track="entry:related">Getting Hitched? Browse An Etsy Shop Devoted To Big-Day&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/bridesmaids-gifts-ideas" data-track="entry:related"><img src="http://static2.refinery29.com/bin/entry/ef7/120x143/156400/op.jpg" alt="op" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/bridesmaids-gifts-ideas" data-track="entry:related">5 Bridesmaids Gifts Good Enough To Keep</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/wedding-dresses-under-500" data-track="entry:related"><img src="http://static3.refinery29.com/bin/entry/639/120x143/161744/op.jpg" alt="op" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/wedding-dresses-under-500" data-track="entry:related">10 Bewitching Wedding Dresses Under $500</a></h2>
+          </li>
+          
+        
+      
+        
+    <!-- /CACHE ee27f - ttl: 180 -->
+  </ul>
+
+  
+<div class="ad ad-related-stories-ccu" iframe-code="http://ad.doubleclick.net/adi/r29.oao/fashion/weddings;s1=fashion;s2=weddings;s3=weddings;sponsorship=;pagetype=entry;test=;pageid=city-hall-wedding-style;tags=wedding-inspiration-street-style;pos=middle;tile=3;dcopt=;sz=300x251;" iframe-size="300x251"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.oao/fashion/weddings;s1=fashion;s2=weddings;s3=weddings;sponsorship=;pagetype=entry;test=;pageid=city-hall-wedding-style;tags=wedding-inspiration-street-style;pos=middle;tile=3;dcopt=;sz=300x251;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.oao/fashion/weddings;s1=fashion;s2=weddings;s3=weddings;sponsorship=;pagetype=entry;test=;pageid=city-hall-wedding-style;tags=wedding-inspiration-street-style;pos=middle;tile=3;dcopt=;sz=300x251;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.oao/fashion/weddings;s1=fashion;s2=weddings;s3=weddings;sponsorship=;pagetype=entry;test=;pageid=city-hall-wedding-style;tags=wedding-inspiration-street-style;pos=middle;tile=3;dcopt=;sz=300x251;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+
+</div>
+
+      <div id="comments">
+      <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    
+        var disqus_shortname = 'refinery'; // required: replace example with your forum shortname
+        var disqus_developer = 1;
+        var disqus_url = 'http://www.refinery29.com/city-hall-wedding-style';
+        
+        $(function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('body')[0]).appendChild(dsq);
+        });
+        
+    </script>
+  
+</div>
+    </div>
+     
+
+					</div>
+            
+          <div class="col beta sidebar">
+            <!-- RIGHT -->
+                            
+              <!-- CACHE 56044 - ttl: 600 -->                 
+      				  
+      				  
+                
+<div class="ad ad-sidebar-border" iframe-code="http://ad.doubleclick.net/adi/r29.oao/fashion/weddings;s1=fashion;s2=weddings;s3=weddings;sponsorship=;pagetype=entry;test=;pageid=city-hall-wedding-style;tags=wedding-inspiration-street-style;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;" iframe-size="300x250,300x600,300x1050"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.oao/fashion/weddings;s1=fashion;s2=weddings;s3=weddings;sponsorship=;pagetype=entry;test=;pageid=city-hall-wedding-style;tags=wedding-inspiration-street-style;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.oao/fashion/weddings;s1=fashion;s2=weddings;s3=weddings;sponsorship=;pagetype=entry;test=;pageid=city-hall-wedding-style;tags=wedding-inspiration-street-style;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.oao/fashion/weddings;s1=fashion;s2=weddings;s3=weddings;sponsorship=;pagetype=entry;test=;pageid=city-hall-wedding-style;tags=wedding-inspiration-street-style;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+                
+                
+                                
+
+                                
+                
+                
+
+                                  
+
+      <div class="m-o-d-widget">
+      <a href="/month-of-denim"><h3 class="headline">Month of Denim</h3></a>
+    
+      
+      <a href="/denim-day-jac-cameron" class="frame"><img src="http://static1.refinery29.com/bin/entry/880/x/204540/monthofdenim-25.jpg" alt="MonthofDenim_25" width="280" height="335"  /></a>
+    </div>
+  
+
+        
+                
+
+                <!-- Connect Tools -->
+<div class="connect">
+	<h4>Follow R29</h4>
+	<div>
+		<a href="http://www.facebook.com/refinery29" class="fb"></a>
+		<a href="http://twitter.com/refinery29" class="twit"></a>
+		<a href="/index.xml" class="rss"></a>
+	</div>
+</div>
+                                  <div class="r29tv">
+  <a href="http://www.refinery29.com/everywhere/news/video"><img src="http://static3.refinery29.com/blog/c3ab9e/images/widgets/r29tv-header.jpg" style="margin: 0pt auto; display: block;" alt="Refinery29 TV" /></a>               
+  
+  <div style="display:none"></div>
+  
+  <!--  Videos populated by 
+        Homepage & Index Page Right Rail Playlist in Brightcove Admin
+        Video Player with Horizontal Video List -->
+  
+  <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+  
+  <object id="myExperience" class="BrightcoveExperience">
+    <param name="bgcolor" value="#FFFFFF" />
+    <param name="width" value="300" />
+    <param name="height" value="340" />
+    <param name="playerID" value="1223625514001" />
+    <param name="playerKey" value="AQ~~,AAAAjP0iSQE~,RJXHfxnZT2gNv3dZGdjsA7BIfR73CLPe" />
+    <param name="isVid" value="true" />
+    <param name="isUI" value="true" />
+    <param name="dynamicStreaming" value="true" />
+    <param name="wmode" value="transparent" />
+  </object>
+  
+  <!-- 
+  This script tag will cause the Brightcove Players defined above it to be created as soon
+  as the line is read by the browser. If you wish to have the player instantiated only after
+  the rest of the HTML is processed and the page load is complete, remove the line.
+  -->
+  <script type="text/javascript">brightcove.createExperiences();</script>
+</div>
+                
+
+                
+              <!-- /CACHE 56044 - ttl: 600 -->
+              
+              <!--Top Popular & Editor's Picks -->
+              <!-- Top 5 Popular -->
+<div class="top-picks">
+  <div class="popular">
+    
+<div class="ad ad-top5" iframe-code="http://ad.doubleclick.net/adi/r29.oao/fashion/weddings;s1=fashion;s2=weddings;s3=weddings;sponsorship=;pagetype=entry;test=;pageid=city-hall-wedding-style;tags=wedding-inspiration-street-style;pos=top;tile=6;dcopt=;sz=75x30;" iframe-size="75x30"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.oao/fashion/weddings;s1=fashion;s2=weddings;s3=weddings;sponsorship=;pagetype=entry;test=;pageid=city-hall-wedding-style;tags=wedding-inspiration-street-style;pos=top;tile=6;dcopt=;sz=75x30;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.oao/fashion/weddings;s1=fashion;s2=weddings;s3=weddings;sponsorship=;pagetype=entry;test=;pageid=city-hall-wedding-style;tags=wedding-inspiration-street-style;pos=top;tile=6;dcopt=;sz=75x30;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.oao/fashion/weddings;s1=fashion;s2=weddings;s3=weddings;sponsorship=;pagetype=entry;test=;pageid=city-hall-wedding-style;tags=wedding-inspiration-street-style;pos=top;tile=6;dcopt=;sz=75x30;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+  </div>
+  <ul>
+    <!-- CACHE dafa3 - ttl: 600 -->  
+              <li>
+        	<a href="/trends-to-try" class="title" data-track="top5:popular">
+	          <span><img src="http://static3.refinery29.com/bin/entry/194/60x70/201476/opener.jpg" alt="opener" width="60" height="70"  /></span>
+	          29 Trends You Need To Try Before You Die
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/trends-to-try" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/summer-trends-nail-polish" class="title" data-track="top5:popular">
+	          <span><img src="http://static3.refinery29.com/bin/entry/53e/60x70/201191/summer-trends-nail-polish-opener.jpg" alt="summer-trends-nail-polish-opener" width="60" height="70"  /></span>
+	          Deck Out Your Digits In Summer's Hottest Hues
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/summer-trends-nail-polish" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/diy-cut-off-shorts" class="title" data-track="top5:popular">
+	          <span><img src="http://static3.refinery29.com/bin/entry/cd7/60x70/201165/opener.jpg" alt="opener" width="60" height="70"  /></span>
+	          How To DIY 3 Extra-Cute Pairs Of Cut-Off Shorts
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/diy-cut-off-shorts" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/bronzer-makeup-tutorial" class="title" data-track="top5:popular">
+	          <span><img src="http://static3.refinery29.com/bin/public/e6a/60x70/203653/opener.jpg" alt="opener" width="60" height="70"  /></span>
+	          How To Fake Model-Worthy Cheekbones
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/bronzer-makeup-tutorial" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/dresses-for-your-body-type" class="title" data-track="top5:popular">
+	          <span><img src="http://static3.refinery29.com/bin/entry/443/60x70/180858/opener.jpg" alt="Opener" width="60" height="70"  /></span>
+	          15 Perfect Spring Dresses For 15 Body Types
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/dresses-for-your-body-type" width="90"></fb:like>
+        </li>
+      
+    <!-- /CACHE dafa3 - ttl: 600 -->
+  </ul>
+</div>
+              <!-- Top 5 Editor's Picks -->
+<div class="top-picks">
+  <div class="editors"></div>
+  <ul class="editors">
+          <li>
+      	<a href="/how-to-get-a-job" data-track="top5:editors" class="title">
+	        <span><img src="http://static1.refinery29.com/bin/entry/71d/60x70/204035/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					How To Score A Dream Job: Advice From 5 Successful Chicagoans
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/how-to-get-a-job" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/summer-trends-nail-polish" data-track="top5:editors" class="title">
+	        <span><img src="http://static3.refinery29.com/bin/entry/53e/60x70/201191/summer-trends-nail-polish-opener.jpg" alt="summer-trends-nail-polish-opener" width="60" height="70"  /></span>
+					Deck Out Your Digits In Summer's Hottest Hues
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/summer-trends-nail-polish" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/plus-size-cocktail-dresses" data-track="top5:editors" class="title">
+	        <span><img src="http://static1.refinery29.com/bin/entry/012/60x70/180810/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					Plus-Size Cocktail Dresses: 12 Fancy Frocks To Flaunt Your Curves
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/plus-size-cocktail-dresses" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/artists-in-residence" data-track="top5:editors" class="title">
+	        <span><img src="http://static1.refinery29.com/bin/entry/654/60x70/178878/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					The 10 Most Inspiring Young Artists In NYC Right Now
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/artists-in-residence" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/real-zoolander-fashion-moments" data-track="top5:editors" class="title">
+	        <span><img src="http://static2.refinery29.com/bin/entry/3bf/60x70/176532/opener-home.jpg" alt="opener_home" width="60" height="70"  /></span>
+					10 Real-Life Moments Right Out Of Zoolander
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/real-zoolander-fashion-moments" width="90"></fb:like>
+      </li>
+    
+        
+  </ul>
+</div>
+              
+              <!-- CACHE 65188 - ttl: 600 -->                <!-- Ad Editorial Module -->
+                
+                
+                <!-- Facebook Likes Widget -->
+<div class="facebook-likes">
+  <fb:like-box href="http://www.facebook.com/refinery29" width="300" height="255" show_faces="true" rows="1" stream="false" header="false"></fb:like-box>
+</div>
+<!-- /Facebook Widget -->
+                
+<!-- Reserve Widget -->
+  <div class="reserve-widget">
+    <a href="http://reserve.refinery29.com/" data-track="reserve_widget"><img src="http://static2.refinery29.com/blog/c3ab9e/images/widgets/reserve-widget-header.png" width="300" height="auto" border="0" alt="Shop Now on Reserve" /></a>
+    <div class="subhead">Tailor-Made Deals. Get Them Now!</div>
+    <div class="ribbon pre"></div><div class="ribbon post"></div>
+    <ul>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/363/hampden-clothing"  data-track="reserve_widget" class="less">
+	        <img src="//static1.refinery29.com/bin/deal/c18/130x100/204461/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Up To $400 Off Your Dream Designer Roster &mdash; Alexander Wang and Opening Ceremony, We&rsquo;re Looking At You</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/364/biko"  data-track="reserve_widget" class="less">
+	        <img src="//static1.refinery29.com/bin/deal/e1b/130x100/204636/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Color Me Accessorized: Up To Half-Off Spring&rsquo;s Hottest Beaded Jewels</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/345/loup"  data-track="reserve_widget" class="less">
+	        <img src="//static3.refinery29.com/bin/deal/85f/130x100/204029/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Super-Comfy Loungewear You Can Take To The Streets (And Still Look Totally Adorable)</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/360/shop-underwear"  data-track="reserve_widget" class="less">
+	        <img src="//static1.refinery29.com/bin/deal/084/130x100/201358/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Restock Your Undie Drawer (And Save Big!) With Stunners From Eberjey, Hanky Panky, And More</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/362/hip-apotheca"  data-track="reserve_widget" class="less">
+	        <img src="//static3.refinery29.com/bin/deal/00c/130x100/201131/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Earth Day Exclusive: $35 Off 400 Natural Beauty Products That Work</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+    
+    </ul>
+  </div>
+ 
+                <!-- Street Style Widget -->
+<div class="street-fashion-widget">
+  <a href="/everywhere/fashion/street-fashion/" class="header">Street Fashion</a>
+      <a href="/city-hall-wedding-style">
+	    <span class="italic">City Hall Weddings: 15 Duos Who Said 'I Do'</span>
+	    <span class="polaroid">
+	      <img src="http://static2.refinery29.com/bin/entry/800/158x190/206019/opener.jpg" alt="opener" width="158" height="190"  />
+	    </span>
+    </a>  
+  
+        
+</div>
+              <!-- /CACHE 65188 - ttl: 600 -->
+                 
+              
+<div class="ad ad-sidebar" iframe-code="http://ad.doubleclick.net/adi/r29.oao/fashion/weddings;s1=fashion;s2=weddings;s3=weddings;sponsorship=;pagetype=entry;test=;pageid=city-hall-wedding-style;tags=wedding-inspiration-street-style;pos=middle1;tile=7;dcopt=;sz=300x100;" iframe-size="300x100"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.oao/fashion/weddings;s1=fashion;s2=weddings;s3=weddings;sponsorship=;pagetype=entry;test=;pageid=city-hall-wedding-style;tags=wedding-inspiration-street-style;pos=middle1;tile=7;dcopt=;sz=300x100;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.oao/fashion/weddings;s1=fashion;s2=weddings;s3=weddings;sponsorship=;pagetype=entry;test=;pageid=city-hall-wedding-style;tags=wedding-inspiration-street-style;pos=middle1;tile=7;dcopt=;sz=300x100;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.oao/fashion/weddings;s1=fashion;s2=weddings;s3=weddings;sponsorship=;pagetype=entry;test=;pageid=city-hall-wedding-style;tags=wedding-inspiration-street-style;pos=middle1;tile=7;dcopt=;sz=300x100;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+              
+            
+          </div>
+          
+          <div class="clear"></div>
+          <!-- CACHE f523e - ttl: 300 -->            <!-- Footer @More Stories -->
+<div class="footer-boxes">
+  <div class="hot-dimple">More Style At Your Fingertips</div>
+	<ul>
+    
+    <li>
+      <div>
+        <a href="/festival-tracker" data-track="hotspot:footer-more:festival-tracker">
+                      <img src="http://static1.refinery29.com/bin/public/9d8/x/178558/image.jpg" width="120" height="143">
+            <span class="more_h2 footer_h2">Your Coachella Style Cheat Sheet&ndash;Everything You Need For Festival Season</span>
+          
+        </a>
+				<div>
+					<a href="/festival-tracker" class="category" data-track="hotspot:footer-more:festival-tracker">Festival Tracker</a>
+				</div>
+      </div>
+    </li>
+					<li>
+				<div> 
+  				<a href="/city-hall-wedding-style" data-track="hotspot:footer-more">
+  					<img src="http://static3.refinery29.com/bin/entry/dc9/120x143/206019/opener.jpg" alt="opener" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">City Hall Weddings: 15 Duos Who Said 'I Do'</span>
+  				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/city-hall-wedding-style#disqus_thread" data-url="http://www.refinery29.com/city-hall-wedding-style" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/fashion" class="category" data-track="hotspot:footer-more">Fashion</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+  				<a href="/dresses-for-your-body-type" data-track="hotspot:footer-more">
+  					<img src="http://static2.refinery29.com/bin/entry/63c/120x143/180858/opener.jpg" alt="Opener" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">15 Perfect Spring Dresses For 15 Body Types</span>
+  				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/dresses-for-your-body-type#disqus_thread" data-url="http://www.refinery29.com/dresses-for-your-body-type" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/fashion" class="category" data-track="hotspot:footer-more">Fashion</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+  				<a href="/best-spring-beauty-products" data-track="hotspot:footer-more">
+  					<img src="http://static1.refinery29.com/bin/public/8f8/120x143/169793/opener2.jpg" alt="opener2" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">Editors' Picks: 50 Fresh Beauty Buys For Spring</span>
+  				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/best-spring-beauty-products#disqus_thread" data-url="http://www.refinery29.com/best-spring-beauty-products" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/beauty" class="category" data-track="hotspot:footer-more">Beauty</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+  				<a href="/spring-must-haves" data-track="hotspot:footer-more">
+  					<img src="http://static1.refinery29.com/bin/entry/260/120x143/169054/opener2.jpg" alt="Opener2" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">29 Magical Buys To Transform Your Look</span>
+  				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/spring-must-haves#disqus_thread" data-url="http://www.refinery29.com/spring-must-haves" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/shopping" class="category" data-track="hotspot:footer-more">Shopping</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+  				<a href="/burning-fashion-questions-answered" data-track="hotspot:footer-more">
+  					<img src="http://static2.refinery29.com/bin/public/891/120x143/162504/annadellarusso-opener.jpg" alt="AnnadellaRusso_opener" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">29 Of Fashion's Biggest Mysteries, Solved!</span>
+  				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/burning-fashion-questions-answered#disqus_thread" data-url="http://www.refinery29.com/burning-fashion-questions-answered" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/fashion" class="category" data-track="hotspot:footer-more">Fashion</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+        
+	</ul> 
+</div>
+          <!-- /CACHE f523e - ttl: 300 -->
+          
+
+        </div> <!-- /Content -->
+    
+        <!-- Footer -->
+<div id="footer">
+  <img src="http://static2.refinery29.com/blog/c3ab9e/images/refinery29-logo.png" width="200" height="24" alt="Refinery29" />
+
+	<p><strong>&copy;2012 Refinery29. All Rights Reserved.</strong></p>
+	<ul>
+		<li><a href="/">Home</a> | </li>
+		<li><a href="http://www.refinery29.com/about">About</a> | </li>
+				<li><a href="http://www.refinery29.com/about">Contact</a> | </li>
+		
+		<li><a href="http://www.refinery29.com/careers">Careers</a> | </li>
+		<li><a href="http://www.refinery29.com/about">Advertise</a> | </li>
+		<li><script type="text/javascript">
+<!--
+document.write(String.fromCharCode(60,97,32,104,114,101,102,61,34,109,97,105,108,116,111,58,102,101,101,100,98,97,99,107,64,114,101,102,105,110,101,114,121,50,57,46,99,111,109,34,32,99,108,97,115,115,61,39,101,109,97,105,108,39,62,71,111,116,32,65,32,84,105,112,63,60,47,97,62));
+-->
+</script> | </li>
+		<li><a href="http://www.refinery29.com/signup/everywhere?source=footer&medium=organic">Sign Up</a> | </li>
+		  		<li><a href="http://www.refinery29.com/privacy">Privacy Policy</a> | </li>
+  		<li><a href="http://www.refinery29.com/terms-and-conditions">Terms and Conditions</a> | </li>
+		
+		<li><a href="http://the-rig.refinery29.com">The Rig</a> | </li>
+		<li><a href="http://www.refinery29.com/index.xml">RSS</a></li>
+	</ul>
+	
+	
+	<div id="mobile-link"><a href="/?mobile=true">Refinery29 Mobile</a></div>
+	
+</div>
+
+                
+      </div> <!-- /Inner -->
+      
+    </div> <!-- /Container -->
+
+    <!-- Comscore -->
+<script type="text/javascript">
+  var r29cookie = document.cookie;
+  var val;
+  
+  if (r29cookie.indexOf("r29comstore=") != -1)
+   {
+      i = r29cookie.indexOf("r29comstore=");
+      s = r29cookie.substring(i + 12);
+      j = s.indexOf(";");
+      if (j == -1)
+      {
+          val = s;
+      }
+      else {
+          val = s.substring(0, j);
+      }
+  } else {
+      val = Math.floor(Math.random() * 12345678);
+      var date = new Date();
+      date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
+      document.cookie = 'r29comstore=' + val + '; expires=' + date.toGMTString() + '; path=/';
+  }
+  
+  var currentUrl = self.location.url;
+  document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb": "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+
+</script>
+<script type="text/javascript"> 
+  COMSCORE.beacon({ c1:2, c2:"7395029",c3:"www.refinery29.com", c4:currentUrl, c5:"", c6:"", c15: val });
+</script>
+<noscript>
+  <img src = "http://b.scorecardresearch.com/p?c1=2&amp;c2=7395029&amp;c3=www.refinery29.com&amp;c4=http://www.refinery29.com/&amp;c5=&amp;c6=&amp;c15=C67BD3C1&amp;cj=1" alt="Comscore" />
+</noscript>
+<!-- /Comscore -->
+<!-- Google Analytics -->
+<script type="text/javascript">
+  
+  var _gaq = _gaq || [];
+    
+  // break up host into app, subdomain and tld
+  var tmp = /^([^\.]+\.)([\w\.]+)?refinery29\.(\w+)(:\d+)?$/.exec(window.location.host.toLowerCase()),
+    
+      // application
+      app = tmp[1] ? tmp[1] : 'www',
+      
+      // subdomain
+      sub = tmp[2] ? tmp[2] : '',
+      
+      // top level domain
+      tld = tmp[3] ? tmp[3] : 'com';
+  
+  _gaq.push(['_setAccount', 'UA-315022-1']);
+  
+  _gaq.push(['_setDomainName', '.refinery29.' + tld]);
+
+  
+  
+  _gaq.push(['_setCustomVar',
+    1,                   // This custom var is set to slot #1.  Required parameter.
+    'Category',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'everywhere\/fashion\/weddings', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+   
+   
+  _gaq.push(['_setCustomVar',
+    2,                   // This custom var is set to slot #2.  Required parameter.
+    'Publication Date',     // The name acts as a kind of category for the user activity.  Required parameter.
+    '2012-04-25', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+  
+  
+  _gaq.push(['_setCustomVar',
+    3,                   // This custom var is set to slot #3.  Required parameter.
+    'Author',// The name acts as a kind of category for the user activity.  Required parameter.
+    'Connie Wang, Winnie Au', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+  _gaq.push(['_setCustomVar',
+    4,                   // This custom var is set to slot #4.  Required parameter.
+    'Entry Type',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'SLIDESHOW', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+
+   
+  _gaq.push(['_setCustomVar', //USE THIS  R29.cookie.get('R29_UID');
+    5,                   // This custom var is set to slot #5.  Required parameter.
+    'Log-in Status',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'Not Logged In', // This value of the custom variable.  Required parameter.
+    2                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+   
+  _gaq.push(['_trackEvent',
+    'Navigation Click', // category of activity
+    $(this).attr('data-track'),
+    'new-york:fashion:weddings', // Action
+    ,
+    true
+  ]);
+  
+  _gaq.push(['_trackPageview']);
+   
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- /Google Analytics -->
+
+<!-- Quantcast -->
+<script type="text/javascript">
+_qoptions={ qacct:"p-fesXMHo90Ka_A" };
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+  <img src="http://pixel.quantserve.com/pixel/p-fesXMHo90Ka_A.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- /Quantcast -->
+    <div id="js-cont"></div> 
+
+<!-- Facebook -->
+<div id="fb-root"></div> 
+<script type="text/javascript">
+
+  window.fbAsyncInit = function() {
+  
+    FB.init({ appId: '155023867867753', status: true, cookie: true, xfbml: false});
+    
+    /* Check if the user is NOT logged into R29, but IS logged into Facebook.  Fix it */
+    if (R29.url.param.getVar('fb') && !R29.user.token() && FB.getSession()) { //We have some sort of session, we *may* be logged in.
+      FB.getLoginStatus(function(response) {
+        if(response.status == 'connected') {
+          return document.location = 'https://welcome.refinery29.com/register?from=http%3A%2F%2Fwww.refinery29.com%2Fcity-hall-wedding-style&amp;sig=3e8a0&amp;app=blog&amp;fb=1';
+        }    
+      });      
+    }
+        
+    //FACEBOOK LOGIN
+    $('a.fb_button, a.r29_fb_button').live('click', function() {
+      R29.FBLoginPopup();
+      return false;
+    });
+    
+    if (typeof window.fbAsyncOnInit == "function") {
+      window.fbAsyncOnInit();
+    }
+    
+    /* GOOGLE ANALYTICS */
+
+    FB.Event.subscribe('edge.create', function(targetUrl, fb_ref) {
+    	if (fb_ref._attr.ref == "homepage"){
+    		_gaq.push(['_trackEvent', 'FacebookIndex', 'like']);
+    	}
+    	else if (fb_ref._attr.ref == "entrypage"){
+    		_gaq.push(['_trackEvent', 'FacebookSolo', 'like']);
+    	}
+    	else if (fb_ref._attr.ref == "sidebar"){
+    		_gaq.push(['_trackEvent', 'FacebookSidebar', 'like']);
+    	}
+      _gaq.push(['_trackSocial', 'facebook', 'like', targetUrl]);
+    });
+    
+    FB.Event.subscribe('edge.remove', function(targetUrl) {
+      _gaq.push(['_trackSocial', 'facebook', 'unlike', targetUrl]);
+    });
+    
+    FB.Event.subscribe('message.send', function(targetUrl) {
+      _gaq.push(['_trackSocial', 'facebook', 'send', targetUrl]);
+    });
+    
+       
+  };
+  
+  R29.FBLoginPopup = function () {
+
+    FB.login(function(response) {
+    
+      if (response.session) {
+        //They *may* have given us perms, but who knows.
+        return document.location = 'https://welcome.refinery29.com/connect/fb?from=http%3A%2F%2Fwww.refinery29.com%2Fcity-hall-wedding-style&amp;sig=3e8a0&amp;app=blog&amp;fb=1';
+      } else {
+        //Oh well, something is wrong, let's try the normal login
+        return document.location = 'https://welcome.refinery29.com/register?from=http%3A%2F%2Fwww.refinery29.com%2Fcity-hall-wedding-style&amp;sig=3e8a0&amp;app=blog&amp;fb=1';
+      }
+      
+     },{ scope: 'email,offline_access,publish_stream,publish_actions' } );
+  }
+  
+  
+</script>
+
+<script type="text/javascript">
+  //
+  
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</script>
+<!-- /Facebook -->
+
+<!-- Twitter -->
+<script type="text/javascript">
+    window.twttr = (function (d,s,id) {
+      var t, js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+      js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+
+  
+  //START GOOGLE ANALYTICS TWITTER TRACKING
+  function trackTwitter(intent_event) {
+    if (intent_event) {
+      var opt_pagePath;
+      if (intent_event.target && intent_event.target.nodeName == 'IFRAME') {
+            opt_target = extractParamFromUri(intent_event.target.src, 'url');
+      }
+      _gaq.push(['_trackSocial', 'twitter', 'tweet', opt_pagePath]);
+    }
+  }
+
+  //Wrap event bindings - Wait for async js to load
+  twttr.ready(function (twttr) {
+    //event bindings
+    twttr.events.bind('tweet', trackTwitter);
+  });
+  
+	function extractParamFromUri(uri, paramName) {
+	  if (!uri) {
+	    return;
+	  }
+	  var regex = new RegExp('[\\?&#]' + paramName + '=([^&#]*)');
+	  var params = regex.exec(uri);
+	  if (params != null) {
+	    return unescape(params[1]);
+	  }
+	  return;
+	}
+	//END GOOGLE ANALYTICS TWITTER TRACKING
+
+</script>
+<!-- /Twitter -->
+
+<!-- Pinterest -->
+  <script type="text/javascript">
+  (function() {
+      window.PinIt = window.PinIt || { loaded:false };
+      if (window.PinIt.loaded) return;
+      window.PinIt.loaded = true;
+      function async_load(){
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          if (window.location.protocol == "https:")
+              s.src = "https://assets.pinterest.com/js/pinit.js";
+          else
+              s.src = "http://assets.pinterest.com/js/pinit.js";
+          var x = document.getElementsByTagName("script")[0];
+          x.parentNode.insertBefore(s, x);
+      }
+      if (window.attachEvent)
+          window.attachEvent("onload", async_load);
+      else
+          window.addEventListener("load", async_load, false);
+  })();
+  </script>
+<!-- /Pinterest -->
+
+
+<!-- Disqus -->
+
+<script type="text/javascript">
+  var disqus_shortname = 'refinery';
+  var disqus_developer = 1;
+  
+
+var DISQUSWIDGETS;
+var disqus_domain;
+var disqus_shortname;
+if (typeof DISQUSWIDGETS == "undefined") {
+    DISQUSWIDGETS = (function () {
+        var d = {},
+            a = (document.getElementsByTagName("HEAD")[0] || document.getElementsByTagName("BODY")[0]),
+            c = 0,
+            f = {},
+            e = {
+                identifier: 1,
+                url: 2,
+                slug: 3
+            };
+
+        function b(i) {
+            var h, k;
+
+            function j(l) {
+                return i.hasAttribute ? i.hasAttribute(l) : i.getAttribute(l) !== null
+            }
+            
+            if (j("data-disqus-identifier")) {
+                h = e.identifier;
+                k = i.getAttribute("data-disqus-identifier")
+            } else {
+            
+                if (j("data-url")) {
+                    h = e.url;
+                    k = i.getAttribute("data-url")
+                } else if (j("data-disqus-slug")) {
+                    h = e.slug;
+                    k = i.getAttribute("data-disqus-slug")
+                } else {
+                    h = e.url;
+                    k = i.href.replace("#disqus_thread", "")
+                }
+                
+            }
+            f[c++] = {
+                element: i,
+                type: h,
+                value: k
+            }
+        }
+        function g(k) {
+            var j = document.getElementsByTagName("A");
+            for (var h = 0; h < j.length; h++) {
+                if (j[h].href.indexOf("#disqus_thread") >= 0) {
+                    k(j[h])
+                }
+            }
+        }
+        d.domain = "disqus.com";
+        d.forum = "";
+        d.getCount = function () {
+            var m, h, k, j;
+            var l = [],
+                o = 0,
+                i = 10;
+
+            function n(q, p) {
+                return encodeURIComponent(q) + "=" + encodeURIComponent(p.type) + "," + encodeURIComponent(p.value)
+            }
+            g(b);
+            for (m in f) {
+                if (f.hasOwnProperty(m)) {
+                    l.push(n(m, f[m]))
+                }
+            }
+            k = l.slice(o, i);
+            while (k.length > 0) {
+                j = document.createElement("script");
+                j.type = "text/javascript";
+                j.async = true;
+                j.src = "http://" + d.domain + "/forums/" + d.forum + "/count.js?q=1&" + k.join("&");
+                a.appendChild(j);
+                o += 10;
+                i += 10;
+                k = l.slice(o, i)
+            }
+        };
+        d.displayCount = function (j) {
+            var m, h, n, l;
+            for (var k = 0; k < j.counts.length; k++) {
+                m = j.counts[k];
+                h = f[m.uid];
+                if (h) {
+                    if (m.comments === 0) {
+                        n = j.text.comments.zero
+                    } else {
+                        if (m.comments == 1) {
+                            n = j.text.comments.one
+                        } else {
+                            n = j.text.comments.multiple
+                        }
+                    }
+                    l = n.replace("{num}", m.comments);
+                    if (j.showReactions) {
+                        n = "";
+                        if (m.reactions === 0) {
+                            n = j.text.reactions.zero
+                        } else {
+                            if (m.reactions == 1) {
+                                n = j.text.reactions.one
+                            } else {
+                                n = j.text.reactions.multiple
+                            }
+                        }
+                        if (n !== "") {
+                            l += " " + j.text.and + " " + n.replace("{num}", m.reactions)
+                        }
+                    }
+                    h.element.innerHTML = l
+                }
+            }
+        };
+        return d
+    }())
+}(function () {
+    if (typeof disqus_domain != "undefined") {
+        DISQUSWIDGETS.domain = disqus_domain
+    }
+    DISQUSWIDGETS.forum = disqus_shortname;
+    DISQUSWIDGETS.getCount()
+}());
+
+ 
+  
+</script>
+
+<!-- /Disqus -->
+
+<!-- R29 Schtufff -->
+<script type="text/javascript">
+
+$(function() {
+
+  // Variables
+  var tabs = $('div.top-five > ul > li');
+  var top5 = $('div.top-five > div');
+    
+  // On Click
+  $(tabs).click(function() {
+    
+    $(tabs).removeClass("active");
+    $(this).addClass("active");
+    
+    $(top5).hide();
+    var activeTab = $(this).find("a").attr("href");
+    $(activeTab).show();
+    
+    return false;
+  });
+  
+  
+  // Hot Carousel
+  $("#hot-carousel li").show();
+  $("#hot-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  auto: 6,
+  itemFallbackDimension: 280,
+  initCallback: 
+  function (carousel) {
+    $('.control div.slide-btn', carousel.container).bind('click', function() {
+      carousel.scroll(jQuery.jcarousel.intval($(this).attr('image_id')));
+      $('.control div',carousel.container).removeClass('selected');
+      $(this).addClass('selected');
+      return false;
+    });
+    $('.control div.next', carousel.container).bind('click', function() {
+      carousel.next();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+    $('.control div.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+  },
+  itemVisibleInCallback: function(carousel, item, idx, state) {
+    $('.control div',carousel.container).removeClass('selected');
+    $('.control div[image_id='+idx+']',carousel.container).addClass('selected');  
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+
+  // Category Carousel
+  
+  $("#category-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  itemFallbackDimension: 562,
+  initCallback: 
+  function (carousel) {
+    $('.control a.next', carousel.container).bind('click', function() {
+      carousel.next();
+      return false;
+    });
+    $('.control a.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      return false;
+    });
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+  
+  // Hot Category Carousel
+  $("#category-hot-carousel li").show();
+  $("#category-hot-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  auto: 6,
+  itemFallbackDimension: 608,
+  initCallback: 
+  function (carousel) {
+    $('.control div.slide-btn', carousel.container).bind('click', function() {
+      carousel.scroll(jQuery.jcarousel.intval($(this).attr('image_id')));
+      $('.control div',carousel.container).removeClass('selected');
+      $(this).addClass('selected');
+      return false;
+    });
+    $('.control div.next', carousel.container).bind('click', function() {
+      carousel.next();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+    $('.control div.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+  },
+  itemVisibleInCallback: function(carousel, item, idx, state) {
+    $('.control div',carousel.container).removeClass('selected');
+    $('.control div[image_id='+idx+']',carousel.container).addClass('selected');  
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+
+
+  // Related Videos Carousel
+  
+/*
+  $("#video-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  itemFallbackDimension: 562,
+  initCallback: 
+  function (carousel) {
+    $('.control img.next', carousel.container).bind('click', function() {
+      carousel.next();
+      return false;
+    });
+    $('.control img.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      return false;
+    });
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+*/
+  
+  //You know where the bottom line of the container shows while the page is loading, I hate it
+  $('#container .inner').css('border-bottom', '1px solid #ccc');
+  
+});
+
+</script>
+
+    <script type="text/javascript">
+  
+  var _chartbeat_loaded = false;
+  
+  $(function() {
+   
+    if (_chartbeat_loaded) return; 
+    
+    _chartbeat_loaded = true;
+    
+    var _sf_async_config={ uid:3552,domain:"refinery29.com" };
+    R29.remote.include_js("//a248.e.akamai.net/chartbeat.download.akamai.com/102508/js/chartbeat.js");
+      
+  });
+</script>
+          <!-- Crazy Egg -->
+<script type="text/javascript" src="//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/5055.js"></script>
+<!-- /Crazy Egg -->
+    
+    
+    
+    <!-- Internal Stats -->
+<script type="text/javascript">
+
+      R29_STAT_DATA = $.extend({ app:'blog' },R29.url.param.getUTM());
+  
+  
+  try {
+    R29.stats.send([['user_page_load',R29_STAT_DATA, ((new Date()).getTime() - _sf_startpt)]]);
+  } catch (e) { };
+      
+</script>
+<!-- /Internal Stats -->
+    
+    
+    
+    
+    <script type="text/javascript">
+     try {
+        R29.stats.send([['user_page_view',{
+          app:  'blog',
+          page: 'entry',
+          entry_type: 'SLIDESHOW',
+          entry_id: 30826, 
+          market_id: 1, 
+          category_id: [389,3,2], 
+          author_id: [1,960]
+        }]]);
+        
+        
+      } catch (e) { };
+    </script> 
+    
+    
+    
+          <!-- Sailthru Horizon --> 
+      <script type="text/javascript">
+        (function() {
+          var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+          s.src = ('https:'==location.protocol?'https://d1gp8joe0evc8s.cloudfront.net':'http://cdn.sail-horizon.com')+'/horizon/v1.js';
+          var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+      </script>
+      <script type="text/javascript">
+        $(window).load(function() {
+          Sailthru.setup({
+            domain: 'horizon.refinery29.com',
+            tags: "city-hall-wedding-style,city-hall-weddings,city-hall-wedding-pics,city-happy-wedding-outfits,pomp-and-circumstance,lavish-ceremony,shapes-sizes,quiet-morning,mountaintop,kleenex,duos,tulle,city-hall,budgets,couples,weddings,weddings,fashion,everywhere,street-fashion,spring-fashion,new-york,wedding-inspiration,street-style,220,228",
+            cookieDomain: '.refinery29.com'
+          });
+        });
+      </script>
+    
+
+
+  </body>
+<!-- Served in 301ms by web03.prod.refinery29.net at Wed, 25 Apr 2012 07:38:04 -0400 -->
+</html>

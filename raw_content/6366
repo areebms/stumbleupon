@@ -1,0 +1,2579 @@
+
+
+
+
+
+
+  
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+	xmlns:og="http://ogp.me/ns#" 
+	xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>NFL Videos</title>
+	<!-- BEGIN DECORATOR redesign/global-alt -->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=1009" />
+	<link rel="shortcut icon" href="http://img.static.nfl.com/static/site/img/favicon.png" type="image/png" />
+	<link rel="stylesheet" href="http://css.static.nfl.com/static/site/styles/redesign/global.css" type="text/css" />
+	<script src="http://scripts.static.nfl.com/static/site/scripts/lib/prototype-1.6.0.3.js" type="text/javascript"></script>
+	<script src="http://scripts.static.nfl.com/static/site/scripts/scriptaculous-1.8.1/scriptaculous.js?load=effects" type="text/javascript"></script>
+	<script src="http://scripts.static.nfl.com/static/site/scripts/lib/swfobject.js" type="text/javascript"></script>
+	
+	<!-- BEGIN INCLUDE global/nfl-constants -->
+	<script type="text/javascript" src="http://www.nfl.com/yui/3.3.0/build/yui/yui-min.js"></script>
+	<script type="text/javascript" src="http://www.nfl.com/widget/partner/constants"></script>
+	<script type="text/javascript" src="http://scripts.static.nfl.com/static/site/scripts/global/dependencies.js"></script>
+	<!-- END INCLUDE global/nfl-constants -->
+	
+
+	<script src="http://scripts.static.nfl.com/static/site/scripts/analytics/s_code.js" type="text/javascript"></script><script src="http://scripts.static.nfl.com/static/site/scripts/analytics/s_code_common.js" type="text/javascript"></script>
+	<script src="http://scripts.static.nfl.com/static/site/scripts/redesign/nfl.global.js" type="text/javascript"></script>
+	<script src="http://scripts.static.nfl.com/static/site/scripts/redesign/polls.js" type="text/javascript"></script>
+	<script src="http://connect.facebook.net/en_US/all.js" type="text/javascript"></script>
+	<meta name="decorator" content="redesign/videos" />
+	<meta name="header" content="videos" />
+	<meta name="show-scorestrip" content="false" />
+	<meta name="show-banner-ads" content="false" />
+	<meta name="navigation" content="videos" />
+	<meta name="footer" content="global" />
+	
+	
+
+
+
+
+<!-- BEGIN INCLUDE videos/analytics -->
+
+
+
+
+
+
+<script>
+nfl.analytics.values = {
+	"levelOne" : "",
+	"levelTwo" : "",
+	"levelThree" : ""
+};
+//console.log(nfl.analytics.values.levelOne);
+//console.log(nfl.analytics.values.levelTwo);
+//console.log(nfl.analytics.values.levelThree);
+</script>
+<!-- END INCLUDE videos/analytics -->
+	
+	<link rel="stylesheet" href="http://css.static.nfl.com/static/site/styles/videos-v2.css" type="text/css" />
+	<script src="http://scripts.static.nfl.com/static/site/scripts/scriptaculous-1.8.1/slider.js" type="text/javascript"></script>
+	<script src="http://scripts.static.nfl.com/static/site/scripts/videos/nfl.videos.js" type="text/javascript"></script>
+	<meta name="page" content="videos" />
+		<meta name="description" content="The destination for all National Football League-related video on the web. Game and player highlights, news stories, team and player-related features, Fantasy football videos, NFL event coverage and more. The online home for NFL Network video and exclusive NFL Films-related content." />
+<meta name="keywords" name="NFL Video, NFL Game Highlights, NFL Player Highlights, NFL Video, videoclips, video's, video-clip, football videos, football video" />
+		
+<style type="text/css">
+.carousel-list-default {background: transparent url(http://img.static.nfl.com/static/site/img/videos-v2/video-landing-carousel-header.png) no-repeat top left;}
+</style>
+		<script>
+		document.observe('dom:loaded', function() {
+			var remarketingTrackingPixel = new Image();
+			remarketingTrackingPixel.src = "https://r.turn.com/r/beacon?b2=qLxR5Z0T6E8-ZEB2ezPwGdbGczsc9hXCULEX3LNAb-S8yKX539LHqY-hF_c0kjIRkhMTVawV6KPdZxr7mK5w3A&cid=";
+		});
+		</script>
+</head>
+<body id="com-nfl" class="">
+	<div id="fb-root"></div>
+	<script type="text/javascript"> FB.init({appId: nfl.constants.FACEBOOK_APP_ID,status:true,cookie:true,xfbml:true});</script>
+	<div id="accessible-jump-link"><a href="#doc-wrap">Jump to content</a></div>
+	<div style="display:none">
+<script type="text/javascript">
+
+var loggingOff = true;
+var noOmnitureCall = false;
+//applyFireBugX();
+isPageTypeError();
+//moved all the functions into s_code_common.js until we can overhaul this atrocity
+
+/**
+* s_analytics.trackLinkClick will send a request to omniture indicating a minor level page event occurred
+* @param {String} _propNum is a number provided by Marketing.  ex, prop1, prop14, prop35, etc.
+* @param {String} _propValue is the value to place within the prop.  ex, Avatar, Friends_alerts, Message_Alerts, Global_Alerts, etc.
+* TO DO: update this function so it accepts multiple prop values.  
+*/
+s_analytics.trackLinkClick = function(_propNum, _propValue) {
+	var s_analytics = s_gi(s_account),
+	    propName    = 'prop' + _propNum;
+	s_analytics.linkTrackEvents = "";
+	s_analytics.linkTrackVars = "prop" + _propNum;
+	s_analytics[propName] = _propValue;
+	s_analytics.events = '';
+	s_analytics.tl(true, 'o', _propValue);
+	// should empty out the track properties after the call is made.  this is a directive from omniture.
+	s_analytics.linkTrackEvents = "";
+	s_analytics.linkTrackVars = "";
+}
+
+/*analytics_file: videos-v2.js*/
+function initAnalytics() { 
+	var section = 'nfl';
+	var omnitureChannel = 'video';
+	var pageName = 'video';
+	var heir = '';
+	var analytics1 = nfl.analytics.values.levelOne;
+	var analytics2 = nfl.analytics.values.levelTwo;
+	var analytics3 = nfl.analytics.values.levelThree;
+	
+	if (analytics1.length > 0)  pageName += ":" + analytics1.replace(/:/g, "");
+	if (analytics2.length > 0)  pageName += ":" + analytics2.replace(/:/g, "");
+	if (analytics3.length > 0)  pageName += ":" + analytics3.replace(/:/g, "");
+
+	hier = pageName.replace(/:/g, '|');
+
+	var setOmnitureTags = function(ch, pn, hr) {
+		s_analytics.server='nfl.com';	
+		s_analytics.prop22='www.nfl.com'; 
+		s_analytics.channel = ch; 
+		s_analytics.eVar3 = ch;
+		s_analytics.pageName = pn; 
+		s_analytics.eVar2 = pn;
+		s_analytics.hier1 = hr;  
+		s_analytics.prop5 = hr;
+		s_analytics.eVar4 = hr;
+	}	
+
+	pageName = section + ":" + pageName;
+	hier = section + ":" + hier;
+	//console.log("pageName = " + pageName + ", hier = " + hier);	
+	setOmnitureTags(omnitureChannel, pageName, hier);
+} 
+function applyFooter() {  
+	if (noOmnitureCall == true) return;
+	/******* ****** DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+	try { 
+		var s_code = s_analytics.t();
+		if (s_code) document.write(s_code);
+	} catch(e) { 
+		console.warn(e);
+	}
+}
+</script>
+</div>
+	<div id="hd" class="videos">
+		
+		<!-- BEGIN INCLUDE headers/videos -->
+<div id="hd-micro-nav-list">
+	<ul class="left">
+		<li id="link-site-home"><a href="http://www.nfl.com/">&laquo; NFL.com Homepage</a></li>
+	</ul>
+	<ul class="right">
+		<li id="hd-shop-container"><a href="http://www.nflshop.com/entry.point?target=z&source=NFL_VideosPage">NFL Shop</a></li>
+		<li id="link-user-fans"><a href="http://www.nfl.com/fans">Fans</a></li>
+		<li id="link-user-register"><a href="https://id2.s.nfl.com/fans/register?returnTo=%2Fvideos">Register</a></li>
+		<li id="link-user-sign-in"><a href="https://id2.s.nfl.com/fans/login?returnTo=%2Fvideos">Sign In</a></li>
+		<li id="link-user-sign-out" style="display:none"><a href="https://id2.s.nfl.com/fans/logout?returnTo=%2Fvideos">Sign Out</a></li>
+		<li id="link-user-profile" style="display:none">Welcome, <a data-href="http://www.nfl.com/fans/profile/#{username}">#{username}</a></li>
+	</ul>
+</div>
+<div id="header-content">
+	<form class="yui3-searchbox-loading" id="hd-search" action="http://www.nfl.com/videos/search-results" method="get">
+		<div>
+			<label id="hd-search-label" for="hd-search-input">Search Videos</label>
+			<input type="text" name="quickSearch" id="hd-search-input" maxlength="50" />
+			<button type="submit">
+				 <img alt="search" src="http://img.static.nfl.com/static/site/img/home-2010/search.png" />
+			</button>
+		</div>
+	</form>
+	<script>nfl.global.InitializeSearch({ input: "hd-search-input", label: "hd-search-label" });</script>
+	<div id="header-logo">
+		<a href="http://www.nfl.com/videos"><img alt="NFL Video" src="http://img.static.nfl.com/static/site/img/videos-v2/logo.png" /></a>
+	</div>
+	<!-- BEGIN PAGE widget/video/navigation -->
+<div id="alt-nv-main">
+	<ul class="alt-nv-groups">
+		<li id="alt-nv-group-home" class="alt-nv-group"><h3><a href="http://www.nfl.com/videos">Home</a></h3></li>
+		
+			<li id="alt-nv-group-shows" class="alt-nv-group">
+				
+				
+					
+					
+						
+						
+						
+						
+						<h3><a href="#">Shows</a></h3>
+						<div class="channel-content">
+							<div class="alt-nv-content-wrapper">
+								
+<div class="video-nv-content bottom">
+		<img src="http://static.nfl.com/static/content//public/image/videos/navigation/shows.png" alt="" />
+	</div>
+								
+								<div class="channels">
+									<ul>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-network-total-access">NFL Total Access</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-network-gameday">NFL GameDay</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-network-playbook">Playbook</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-network-top-ten">NFL Top Ten</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-network-path-to-the-draft">Path to the Draft</a></li>
+										
+									</ul>
+									<ul>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-network-around-the-league">Around the League</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-fantasy">Fantasy</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-fantasy-team-by-team">Fantasy, Team by Team</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-network-the-coaches">The Coaches</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-films-game-of-the-week">Game of the Week</a></li>
+										
+									</ul>
+									<ul>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-films-americas-game">America&#039;s Game</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-films-presents">NFL Films Presents</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-films-sound-efx">Sound FX</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-films-anatomy-of-a-play">Anatomy of a Play</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-network-hard-knocks">Hard Knocks</a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+					
+				
+			</li>
+		
+			<li id="alt-nv-group-teams" class="alt-nv-group">
+				
+				
+					
+					
+						
+						
+						
+						
+						<h3><a href="#">Teams</a></h3>
+						<div class="channel-content">
+							<div class="alt-nv-content-wrapper">
+								
+<div class="video-nv-content bottom">
+		<img src="http://static.nfl.com/static/content//public/image/videos/navigation/teams.png" alt="" />
+	</div>
+								
+								<div class="channels">
+									<ul>
+										
+											<li><a href="http://www.nfl.com/videos/arizona-cardinals">Arizona Cardinals</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/atlanta-falcons">Atlanta Falcons</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/baltimore-ravens">Baltimore Ravens</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/buffalo-bills">Buffalo Bills</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/carolina-panthers">Carolina Panthers</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/chicago-bears">Chicago Bears</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/cincinnati-bengals">Cincinnati Bengals</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/cleveland-browns">Cleveland Browns</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/dallas-cowboys">Dallas Cowboys</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/denver-broncos">Denver Broncos</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/detroit-lions">Detroit Lions</a></li>
+										
+									</ul>
+									<ul>
+										
+											<li><a href="http://www.nfl.com/videos/green-bay-packers">Green Bay Packers</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/houston-texans">Houston Texans</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/indianapolis-colts">Indianapolis Colts</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/jacksonville-jaguars">Jacksonville Jaguars</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/kansas-city-chiefs">Kansas City Chiefs</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/miami-dolphins">Miami Dolphins</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/minnesota-vikings">Minnesota Vikings</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/new-england-patriots">New England Patriots</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/new-orleans-saints">New Orleans Saints</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/new-york-giants">New York Giants</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/new-york-jets">New York Jets</a></li>
+										
+									</ul>
+									<ul>
+										
+											<li><a href="http://www.nfl.com/videos/oakland-raiders">Oakland Raiders</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/philadelphia-eagles">Philadelphia Eagles</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/pittsburgh-steelers">Pittsburgh Steelers</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/san-diego-chargers">San Diego Chargers</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/san-francisco-49ers">San Francisco 49ers</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/seattle-seahawks">Seattle Seahawks</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/st-louis-rams">St. Louis Rams</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/tampa-bay-buccaneers">Tampa Bay Buccaneers</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/tennessee-titans">Tennessee Titans</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/washington-redskins">Washington Redskins</a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+					
+				
+			</li>
+		
+			<li id="alt-nv-group-game-highlights" class="alt-nv-group">
+				
+				
+					
+						
+							<h3><a href="http://www.nfl.com/videos/nfl-game-highlights">Game Highlights</a></h3>
+						
+					
+					
+				
+			</li>
+		
+			<li id="alt-nv-group-spotlight" class="alt-nv-group">
+				
+				
+					
+					
+						
+						
+						
+						
+						<h3><a href="#">Spotlight</a></h3>
+						<div class="channel-content">
+							<div class="alt-nv-content-wrapper">
+								
+<div class="video-nv-content bottom">
+		<img src="http://static.nfl.com/static/content//public/image/videos/navigation/spotlight.png" alt="" />
+	</div>
+								
+								<div class="channels">
+									<ul>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-countdowns">Countdowns</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-top-5-catches">Top 5 Catches</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-cant-miss-plays">Can&#039;t-Miss Plays</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-drive-of-the-week">Drive Of The Week</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-the-season">The Season</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-player-interviews">Interviews</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-game-previews">Game Previews</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-video-diaries">Video Diaries</a></li>
+										
+									</ul>
+									<ul>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-top100-2011">Top 100 Players of 2011</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-never-say-never-moments">Never Say Never Moments</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-rookie-of-the-week">Rookie of the Year</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-air-and-ground-players-of-the-week">Air &amp; Ground NFL Players</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-playoff-x-factors">Playoff X-Factors</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-oline-confidential">O-Line Confidential</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-pepsi-audible">Pepsi Audible</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-locker-room-mvps">Locker Room MVPs</a></li>
+										
+									</ul>
+									<ul>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-everything-to-prove">Everything to Prove</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-on-the-beat">On The Beat</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-ultimate-audio">Ultimate Audio</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-first-draft">First Draft</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-facility-tours">All-Access Facility Tours</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-on-the-fringe">On The Fringe</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-rush">NFL Rush</a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+					
+				
+			</li>
+		
+			<li id="alt-nv-group-events" class="alt-nv-group">
+				
+				
+					
+					
+						
+						
+						
+						
+						<h3><a href="#">Events</a></h3>
+						<div class="channel-content">
+							<div class="alt-nv-content-wrapper">
+								
+<div class="video-nv-content bottom">
+		<img src="http://static.nfl.com/static/content//public/image/videos/navigation/events.png" alt="" />
+	</div>
+								
+								<div class="channels">
+									<ul>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-draft">Draft</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-mini-camps">Minicamps</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-training-camps">Training Camps</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-super-bowl-commercials">Commercials</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-hall-of-fame">Hall of Fame</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-preseason">Preseason</a></li>
+										
+									</ul>
+									<ul>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-kickoff">Kickoff</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-thanksgiving">Thanksgiving</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-playoffs">Playoffs</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-super-bowl">Super Bowl</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-pro-bowl">Pro Bowl</a></li>
+										
+									</ul>
+									<ul>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-free-agency">Free Agency</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-combine">Combine</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-senior-bowl">Senior Bowl</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-international-series">International Series</a></li>
+										
+											<li><a href="http://www.nfl.com/videos/nfl-rookie-symposium">Rookie Symposium</a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+					
+				
+			</li>
+		
+			<li id="alt-nv-group-all-videos" class="alt-nv-group">
+				
+				
+					
+						
+							<h3><a href="http://www.nfl.com/videos/nfl-videos">All Videos</a></h3>
+						
+					
+					
+				
+			</li>
+		
+		
+		
+	</ul>
+</div>
+<!-- END PAGE widget/video/navigation -->
+
+	<script type="text/javascript">
+nfl.global.Navigation.initialize();
+nfl.global.MicroNav.initialize("#hd-micro-nav-list");
+	</script>
+</div>
+<!-- END INCLUDE headers/videos -->
+
+	</div><div id="doc">
+		<div id="doc-wrap">
+			<div id="bd">
+		<div id="video-landing">
+			
+			<div id="video-hero">
+				<div id="video-hero-player"></div>
+				<script type="text/javascript">
+					nfl.use('nfl-video','event-custom', function (Y) {
+						var Video = Y.NFL.Video, vp, swf;
+						
+						// create a video player instance
+						vp = new Video.Player({
+							size: 'detail',
+							companionSize: "300x250",
+							dartURL: "http://ad.doubleclick.net/pfadx/nfl.videogallery/videohome;s1=videohome;slot=;url=videohome;nfl=ad;!category=;kw=;tile=10;test=;sz=640x360;ord=" + (window.adRandom || nfl.constants.AD_RANDOM) + "?",
+							adSetting: 17 // pre-roll
+						});
+						vp.render('#video-hero-player');
+						swf = vp.get('player');
+						
+						// force video player events to be global
+						Y.Object.each(Video.PlayerEvent, function (type, constName) {
+							swf.getEvent(type).broadcast = 2;
+						});
+						
+						Y.local.player = vp;
+					});
+				</script>
+			</div>
+			<div class="page-wrapper">
+				<div class="in-page column-set">
+					<div class="primary column">
+						<div class="video-playlist-header">
+	<h3 class="video-playlist-heading">PLAYLIST</h3>
+	<form class="video-autoplay-toggle">
+		CONTINUOUS PLAY:&nbsp;&nbsp;&nbsp; ON &nbsp;<input type="radio" name="autoplay-toggle" class="autoplay-on" checked='checked'/>&nbsp;&nbsp;&nbsp; OFF &nbsp;<input type="radio" name="autoplay-toggle" class="autoplay-off"/> 
+	</form>
+	<div style="clear:both"></div>
+</div>
+						<!-- START CAROUSEL -->
+						<div id="featured-videos-carousel">
+							<!-- BEGIN PAGE widget/video/carousel -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="carousel-list-container carousel-list-default" id="carousel-container-1303471510150">
+	<div class="carousel-list first" id="carousel-1303471510150">
+			
+		
+		<h2><span>Featured  Videos</span></h2>
+		
+		<div class="carousel-controls">
+			<a class="carousel-controls-back" ><img alt="previous" src="http://img.static.nfl.com/static/site/img/videos-v2/carousel-pg-button-new-left.png" /></a>
+			<span class="carousel-controls-page">1</span> / <span class="carousel-controls-totalpages">1</span>
+			<a class="carousel-controls-forward"><img alt="next" src="http://img.static.nfl.com/static/site/img/videos-v2/carousel-pg-button-new-right.png" /></a>
+		</div>
+		<div style="clear:both"></div>
+		
+		<ul class="list-items">
+			<li data-ecmId="09000d5d81f637bc" data-thumbnail="http://static.nfl.com/static/content/public/video/2011/09000d5d81f637b6_video_thumbnail_80_60.jpg" class="">
+				<div class="thumbnail">
+					<a href="/videos/nfl-draft/09000d5d81f637bc/Patriots-QB-smokescreen">
+						<img alt="Watch: Patriots QB smokescreen" src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f637b6_video_rhr_280_210.jpg" />
+						<span class="play-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-carousel.png" /></span>
+						<span class="now-playing-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/playing.png" /></span>
+						<span class="up-next-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/up-next.png" /></span>
+					</a>
+				</div>
+				<div class="content">
+					<h3 class="headline"><a href="/videos/nfl-draft/09000d5d81f637bc/Patriots-QB-smokescreen">Patriots QB smokescreen</a></h3>
+				</div>
+			</li>
+			
+			
+			<li data-ecmId="09000d5d81f63518" data-thumbnail="http://static.nfl.com/static/content/public/video/2011/09000d5d81f63510_video_thumbnail_80_60.jpg" class="">
+				<div class="thumbnail">
+					<a href="/videos/nfl-draft/09000d5d81f63518/Casserly-s-2nd-round-mock-draft">
+						<img alt="Watch: Casserly's 2nd-round mock draft" src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f63510_video_rhr_280_210.jpg" />
+						<span class="play-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-carousel.png" /></span>
+						<span class="now-playing-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/playing.png" /></span>
+						<span class="up-next-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/up-next.png" /></span>
+					</a>
+				</div>
+				<div class="content">
+					<h3 class="headline"><a href="/videos/nfl-draft/09000d5d81f63518/Casserly-s-2nd-round-mock-draft">Casserly's 2nd-round mock draft</a></h3>
+				</div>
+			</li>
+			
+			
+			<li data-ecmId="09000d5d81f5e364" data-thumbnail="http://static.nfl.com/static/content/public/video/2011/09000d5d81f5e35e_video_thumbnail_80_60.jpg" class="">
+				<div class="thumbnail">
+					<a href="/videos/nfl-network-total-access/09000d5d81f5e364/Rift-in-the-players-union">
+						<img alt="Watch: Rift in the players union?" src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f5e35e_video_rhr_280_210.jpg" />
+						<span class="play-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-carousel.png" /></span>
+						<span class="now-playing-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/playing.png" /></span>
+						<span class="up-next-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/up-next.png" /></span>
+					</a>
+				</div>
+				<div class="content">
+					<h3 class="headline"><a href="/videos/nfl-network-total-access/09000d5d81f5e364/Rift-in-the-players-union">Rift in the players union?</a></h3>
+				</div>
+			</li>
+			
+			
+			<li data-ecmId="09000d5d81f5dee9" data-thumbnail="http://static.nfl.com/static/content/public/video/2011/09000d5d81f5dee2_video_thumbnail_80_60.jpg" class="">
+				<div class="thumbnail">
+					<a href="/videos/nfl-draft/09000d5d81f5dee9/Predicting-draft-day-trades">
+						<img alt="Watch: Predicting draft-day trades" src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f5dee2_video_rhr_280_210.jpg" />
+						<span class="play-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-carousel.png" /></span>
+						<span class="now-playing-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/playing.png" /></span>
+						<span class="up-next-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/up-next.png" /></span>
+					</a>
+				</div>
+				<div class="content">
+					<h3 class="headline"><a href="/videos/nfl-draft/09000d5d81f5dee9/Predicting-draft-day-trades">Predicting draft-day trades</a></h3>
+				</div>
+			</li>
+			
+			
+			<li data-ecmId="09000d5d81f5de12" data-thumbnail="http://static.nfl.com/static/content/public/video/2011/09000d5d81f5de09_video_thumbnail_80_60.jpg" class="">
+				<div class="thumbnail">
+					<a href="/videos/nfl-draft/09000d5d81f5de12/Ravens-on-the-clock">
+						<img alt="Watch: Ravens on the clock" src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f5de09_video_rhr_280_210.jpg" />
+						<span class="play-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-carousel.png" /></span>
+						<span class="now-playing-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/playing.png" /></span>
+						<span class="up-next-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/up-next.png" /></span>
+					</a>
+				</div>
+				<div class="content">
+					<h3 class="headline"><a href="/videos/nfl-draft/09000d5d81f5de12/Ravens-on-the-clock">Ravens on the clock</a></h3>
+				</div>
+			</li>
+			
+			
+			<li data-ecmId="09000d5d81f57ead" data-thumbnail="http://static.nfl.com/static/content/public/video/2011/09000d5d81f57ea6_video_thumbnail_80_60.jpg" class="">
+				<div class="thumbnail">
+					<a href="/videos/nfl-network-total-access/09000d5d81f57ead/Game-Changers-Herzlich-s-story">
+						<img alt="Watch: Game Changers: Herzlich's story" src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f57ea6_video_rhr_280_210.jpg" />
+						<span class="play-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-carousel.png" /></span>
+						<span class="now-playing-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/playing.png" /></span>
+						<span class="up-next-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/up-next.png" /></span>
+					</a>
+				</div>
+				<div class="content">
+					<h3 class="headline"><a href="/videos/nfl-network-total-access/09000d5d81f57ead/Game-Changers-Herzlich-s-story">Game Changers: Herzlich's story</a></h3>
+				</div>
+			</li>
+			
+			
+			<li data-ecmId="09000d5d81f59612" data-thumbnail="http://static.nfl.com/static/content/public/video/2011/09000d5d81f59604_video_thumbnail_80_60.jpg" class="">
+				<div class="thumbnail">
+					<a href="/videos/nfl-network-total-access/09000d5d81f59612/Will-St-Louis-topple-Seattle-in-2011">
+						<img alt="Watch: Will St. Louis topple Seattle in 2011?" src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f59604_video_rhr_280_210.jpg" />
+						<span class="play-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-carousel.png" /></span>
+						<span class="now-playing-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/playing.png" /></span>
+						<span class="up-next-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/up-next.png" /></span>
+					</a>
+				</div>
+				<div class="content">
+					<h3 class="headline"><a href="/videos/nfl-network-total-access/09000d5d81f59612/Will-St-Louis-topple-Seattle-in-2011">Will St. Louis topple Seattle in 2011?</a></h3>
+				</div>
+			</li>
+			
+			
+			<li data-ecmId="09000d5d81f58f9f" data-thumbnail="http://static.nfl.com/static/content/public/video/2011/09000d5d81f58f99_video_thumbnail_80_60.jpg" class="">
+				<div class="thumbnail">
+					<a href="/videos/nfl-network-total-access/09000d5d81f58f9f/2011-Jets-schedule-analysis">
+						<img alt="Watch: 2011 Jets schedule analysis" src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f58f99_video_rhr_280_210.jpg" />
+						<span class="play-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-carousel.png" /></span>
+						<span class="now-playing-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/playing.png" /></span>
+						<span class="up-next-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/up-next.png" /></span>
+					</a>
+				</div>
+				<div class="content">
+					<h3 class="headline"><a href="/videos/nfl-network-total-access/09000d5d81f58f9f/2011-Jets-schedule-analysis">2011 Jets schedule analysis</a></h3>
+				</div>
+			</li>
+			
+			
+			<li data-ecmId="09000d5d81f58a2d" data-thumbnail="http://static.nfl.com/static/content/catch_all/nfl_image/m_forte_110123_VS_video_thumbnail_80_60.jpg" class="">
+				<div class="thumbnail">
+					<a href="/videos/nfl-network-total-access/09000d5d81f58a2d/2011-schedule-Bears-and-Packers-analysis">
+						<img alt="Watch: 2011 schedule: Bears and Packers analysis" src="http://static.nfl.com/static/content/catch_all/nfl_image/m_forte_110123_VS_video_rhr_280_210.jpg" />
+						<span class="play-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-carousel.png" /></span>
+						<span class="now-playing-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/playing.png" /></span>
+						<span class="up-next-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/up-next.png" /></span>
+					</a>
+				</div>
+				<div class="content">
+					<h3 class="headline"><a href="/videos/nfl-network-total-access/09000d5d81f58a2d/2011-schedule-Bears-and-Packers-analysis">2011 schedule: Bears and Packers analysis</a></h3>
+				</div>
+			</li>
+			
+			
+			<li data-ecmId="09000d5d81f52e68" data-thumbnail="http://static.nfl.com/static/content/public/video/2011/09000d5d81f52e4c_video_thumbnail_80_60.jpg" class="">
+				<div class="thumbnail">
+					<a href="/videos/nfl-draft/09000d5d81f52e68/Bielema-on-prospects">
+						<img alt="Watch: Bielema on prospects" src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f52e4c_video_rhr_280_210.jpg" />
+						<span class="play-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-carousel.png" /></span>
+						<span class="now-playing-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/playing.png" /></span>
+						<span class="up-next-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/up-next.png" /></span>
+					</a>
+				</div>
+				<div class="content">
+					<h3 class="headline"><a href="/videos/nfl-draft/09000d5d81f52e68/Bielema-on-prospects">Bielema on prospects</a></h3>
+				</div>
+			</li>
+			
+			
+			<li data-ecmId="09000d5d81f52f9c" data-thumbnail="http://static.nfl.com/static/content/public/video/2011/09000d5d81f52f96_video_thumbnail_80_60.jpg" class="">
+				<div class="thumbnail">
+					<a href="/videos/nfl-draft/09000d5d81f52f9c/On-the-clock-Colts">
+						<img alt="Watch: On the clock: Colts" src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f52f96_video_rhr_280_210.jpg" />
+						<span class="play-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-carousel.png" /></span>
+						<span class="now-playing-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/playing.png" /></span>
+						<span class="up-next-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/up-next.png" /></span>
+					</a>
+				</div>
+				<div class="content">
+					<h3 class="headline"><a href="/videos/nfl-draft/09000d5d81f52f9c/On-the-clock-Colts">On the clock: Colts</a></h3>
+				</div>
+			</li>
+			
+			
+			<li data-ecmId="09000d5d81f529e2" data-thumbnail="http://static.nfl.com/static/content/public/video/2011/09000d5d81f529d1_video_thumbnail_80_60.jpg" class="">
+				<div class="thumbnail">
+					<a href="/videos/nfl-first-draft/09000d5d81f529e2/First-Draft-John-Moffitt">
+						<img alt="Watch: First Draft: John Moffitt" src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f529d1_video_rhr_280_210.jpg" />
+						<span class="play-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-carousel.png" /></span>
+						<span class="now-playing-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/playing.png" /></span>
+						<span class="up-next-button"><img alt="" src="http://img.static.nfl.com/static/site/img/videos-v2/up-next.png" /></span>
+					</a>
+				</div>
+				<div class="content">
+					<h3 class="headline"><a href="/videos/nfl-first-draft/09000d5d81f529e2/First-Draft-John-Moffitt">First Draft: John Moffitt</a></h3>
+				</div>
+			</li>
+			
+			
+		</ul>
+	</div>
+</div>
+
+<!-- END PAGE widget/video/carousel -->
+
+						</div>
+						<!-- END CAROUSEL -->
+						<!-- START LISTING -->
+						
+
+
+
+
+
+
+<div id="videos-list" class="primary-column-widget"><!--
+
+		Video pagination debugging:
+
+		<pre>
+		page:       1
+		perPage:    25
+		videos:     25
+		total:      34256
+		batch:      0
+		startVideo: 0
+		stopVideo:  24
+		beginVideo: 0
+		endVideo:   24
+		pages:      1371
+		pagem1:     1370
+		paginS:     1
+		paginE:     5
+		</pre>
+		-->
+				<ul id="filter-orderBy" class="sort">
+					<li class="current"><a href="?orderBy=recent">Most Recent</a></li>
+					<li class="last">
+						<h1 class="heading">Most Viewed</h1>
+						<div class="options">
+							<ol>
+								<li><a href="?orderBy=dailyViews">Today</a></li>
+								<li><a href="?orderBy=weeklyViews">This Week</a></li>
+								<li><a href="?orderBy=monthlyViews">This Month</a></li>
+								<li><a href="?orderBy=allTimeViews">All Time</a></li>
+							</ol>
+						</div>
+					</li>
+			<!-- NYI
+					<li><a href="?sort=recommended">Most Recommended</a></li>
+					<li><a href="?sort=commented">Most Commented</a></li>
+			 -->
+				</ul>
+				<form id="video-list-per-page-form" class="results-showing" action="" method="get">
+					<div id="video-list-displaying" class="displaying">
+						Displaying: <span class="min">1</span> &ndash; <span class="max">25</span> of <span class="total">34256</span>
+					</div>
+					<div class="switch">
+						<label>Videos Per Page:
+							<select name="perPage">
+								
+									
+										
+										
+											<option value="10">10</option>
+										
+									
+								
+									
+										
+											<option selected="selected" value="25">25</option>
+										
+										
+									
+								
+									
+										
+										
+											<option value="50">50</option>
+										
+									
+								
+							</select>
+						</label>
+						<button class="button" type="submit"><span class="btn-w"><span class="btn-l"></span><span class="btn-c">Go</span><span class="btn-r"></span></span></button>
+					</div>
+				</form>
+			
+			<ul id="video-list-items" class="list-items">
+
+				
+				   
+					<li data-ecmId="09000d5d81f63fcf" data-index="0" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-draft/09000d5d81f63fcf/Fairley-s-field" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f63fbf_video_thumbnail_80_60.jpg" alt="Watch: Fairley&#039;s field" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-draft/09000d5d81f63fcf/Fairley-s-field" class="nfl-video-link">Fairley's field</a></h3>
+							<p class="date">Published: April 21, 2011 at 08:13 p.m.</p>
+							<p>Auburn DT Nick Fairley shows his speed and agility on the "NFL Total Access" demo field.  Watch the big man move.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								04:12
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f63e7d" data-index="1" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-network-total-access/09000d5d81f63e7d/Mock-draft-21-32" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f63e70_video_thumbnail_80_60.jpg" alt="Watch: Mock draft: 21-32" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-network-total-access/09000d5d81f63e7d/Mock-draft-21-32" class="nfl-video-link">Mock draft: 21-32</a></h3>
+							<p class="date">Published: April 21, 2011 at 08:06 p.m.</p>
+							<p>Charles Davis and Brian Baldinger team up to finish their first-round mock draft with picks 21-32.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								05:04
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f63c03" data-index="2" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-videos/09000d5d81f63c03/Butch-in-the-Bod-Pod" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f63bfd_video_thumbnail_80_60.jpg" alt="Watch: Butch in the Bod Pod" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-videos/09000d5d81f63c03/Butch-in-the-Bod-Pod" class="nfl-video-link">Butch in the Bod Pod</a></h3>
+							<p class="date">Published: April 21, 2011 at 07:49 p.m.</p>
+							<p>UNC head coach Butch Davis reminisces with Rich Eisen about his experience inside the Bod Pod.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								01:16
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f6399c" data-index="3" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-draft/09000d5d81f6399c/Mock-draft-picks-11-20" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f63985_video_thumbnail_80_60.jpg" alt="Watch: Mock draft picks 11-20" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-draft/09000d5d81f6399c/Mock-draft-picks-11-20" class="nfl-video-link">Mock draft picks 11-20</a></h3>
+							<p class="date">Published: April 21, 2011 at 07:39 p.m.</p>
+							<p>Charles Davis and Brian Baldinger combine forces to lay out their picks for the second 10 draft choices.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								05:45
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f637bc" data-index="4" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-draft/09000d5d81f637bc/Patriots-QB-smokescreen" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f637b6_video_thumbnail_80_60.jpg" alt="Watch: Patriots QB smokescreen" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-draft/09000d5d81f637bc/Patriots-QB-smokescreen" class="nfl-video-link">Patriots QB smokescreen</a></h3>
+							<p class="date">Published: April 21, 2011 at 07:34 p.m.</p>
+							<p>Are the Patriots looking at a QB in the first round?  Former Patriots first-round draft pick Willie McGinest attempts to crawl inside Bill Belichick's head to answer this question.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								02:53
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f3d08e" data-index="5" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-videos/09000d5d81f3d08e/How-to-scout-college-safeties" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/catch_all/nfl_image/r_moore_110421_VS_video_thumbnail_80_60.jpg" alt="Watch: How to scout college safeties" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-videos/09000d5d81f3d08e/How-to-scout-college-safeties" class="nfl-video-link">How to scout college safeties</a></h3>
+							<p class="date">Published: April 21, 2011 at 07:28 p.m.</p>
+							<p>Bucky Brooks identifies the key traits scouts look for when assessing collegiate safeties.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								00:52
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f63245" data-index="6" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-draft/09000d5d81f63245/Un-Fairley-judged" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f63236_video_thumbnail_80_60.jpg" alt="Watch: Un-Fairley judged?" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-draft/09000d5d81f63245/Un-Fairley-judged" class="nfl-video-link">Un-Fairley judged?</a></h3>
+							<p class="date">Published: April 21, 2011 at 06:46 p.m.</p>
+							<p>Alabama DT and potential top 10 pick Nick Fairley addresses scouts' concerns about his dedication to football.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								03:12
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f63518" data-index="7" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-draft/09000d5d81f63518/Casserly-s-2nd-round-mock-draft" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f63510_video_thumbnail_80_60.jpg" alt="Watch: Casserly&#039;s 2nd-round mock draft" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-draft/09000d5d81f63518/Casserly-s-2nd-round-mock-draft" class="nfl-video-link">Casserly's 2nd-round mock draft</a></h3>
+							<p class="date">Published: April 21, 2011 at 06:45 p.m.</p>
+							<p>Charlie Casserly has a few surprises in top half of his second-round mock draft. Check them out here.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								03:44
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f6343d" data-index="8" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-draft/09000d5d81f6343d/How-far-could-Cam-Newton-fall" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f63436_video_thumbnail_80_60.jpg" alt="Watch: How far could Cam Newton fall?" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-draft/09000d5d81f6343d/How-far-could-Cam-Newton-fall" class="nfl-video-link">How far could Cam Newton fall?</a></h3>
+							<p class="date">Published: April 21, 2011 at 06:39 p.m.</p>
+							<p>If Cam Newton is not selected by the Panthers with the No. 1 overall pick, how far might he fall in the 2011 NFL Draft?</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								02:49
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f62949" data-index="9" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-draft/09000d5d81f62949/Butch-Davis-on-UNC-prospects" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f62930_video_thumbnail_80_60.jpg" alt="Watch: Butch Davis on UNC prospects" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-draft/09000d5d81f62949/Butch-Davis-on-UNC-prospects" class="nfl-video-link">Butch Davis on UNC prospects</a></h3>
+							<p class="date">Published: April 21, 2011 at 04:56 p.m.</p>
+							<p>Find out why North Carolina head coach Butch Davis says DE Robert Quinn and DT Marvin Austin should be first-round picks.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								05:16
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f61ce3" data-index="10" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-draft/09000d5d81f61ce3/On-the-Clock-Seahawks" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f61cd4_video_thumbnail_80_60.jpg" alt="Watch: On the Clock: Seahawks" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-draft/09000d5d81f61ce3/On-the-Clock-Seahawks" class="nfl-video-link">On the Clock: Seahawks</a></h3>
+							<p class="date">Published: April 21, 2011 at 02:04 p.m.</p>
+							<p>Steve Wyche reveals which prospects the Seahawks will target in the draft. Is Ryan Mallett on their radar to replace Matt Hasselbeck?</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								03:27
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f61556" data-index="11" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-videos/09000d5d81f61556/NFL-daily-news-update" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f61548_video_thumbnail_80_60.jpg" alt="Watch: NFL daily news update" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-videos/09000d5d81f61556/NFL-daily-news-update" class="nfl-video-link">NFL daily news update</a></h3>
+							<p class="date">Published: April 21, 2011 at 12:07 p.m.</p>
+							<p>Get the latest news on court-ordered mediation, what John Elway had to say about the Broncos' No. 2 pick and more.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								01:51
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f5f0bd" data-index="12" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-network-total-access/09000d5d81f5f0bd/Eisen-gets-hung-up-on-by-Nick-Saban" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f5f0ad_video_thumbnail_80_60.jpg" alt="Watch: Eisen gets hung up on by Nick Saban" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-network-total-access/09000d5d81f5f0bd/Eisen-gets-hung-up-on-by-Nick-Saban" class="nfl-video-link">Eisen gets hung up on by Nick Saban</a></h3>
+							<p class="date">Published: April 20, 2011 at 09:21 p.m.</p>
+							<p>Alabama head coach Nick Saban has no time for small talk with "NFL Total Access" host Rich Eisen after a phone interview.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								00:40
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f5e987" data-index="13" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-network-total-access/09000d5d81f5e987/Best-pass-rushers-in-the-NFL" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f5e97a_video_thumbnail_80_60.jpg" alt="Watch: Best pass rushers in the NFL" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-network-total-access/09000d5d81f5e987/Best-pass-rushers-in-the-NFL" class="nfl-video-link">Best pass rushers in the NFL</a></h3>
+							<p class="date">Published: April 20, 2011 at 08:10 p.m.</p>
+							<p>Is it Julius Peppers?  Jared Allen?  Former NFL LB Willie McGinest counts down the best pass rushers in the NFL.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								02:15
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f5e8de" data-index="14" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-network-path-to-the-draft/09000d5d81f5e8de/NFC-West-draft-grades" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f5e8d6_video_thumbnail_80_60.jpg" alt="Watch: NFC West draft grades" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-network-path-to-the-draft/09000d5d81f5e8de/NFC-West-draft-grades" class="nfl-video-link">NFC West draft grades</a></h3>
+							<p class="date">Published: April 20, 2011 at 08:06 p.m.</p>
+							<p>'NFL Total Access' grades the past five draft classes of the Rams, 49ers, Cardinals and Seahawks. Plus, is St. Louis the team to beat in the division?</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								03:50
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f5e5ef" data-index="15" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-network-total-access/09000d5d81f5e5ef/State-of-the-Franchise-Bills" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/catch_all/nfl_image/billscms_video_thumbnail_80_60.jpg" alt="Watch: State of the Franchise: Bills" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-network-total-access/09000d5d81f5e5ef/State-of-the-Franchise-Bills" class="nfl-video-link">State of the Franchise: Bills</a></h3>
+							<p class="date">Published: April 20, 2011 at 07:59 p.m.</p>
+							<p>"NFL Total Access" looks at the state of the Bills and what they should do with the 3rd overall pick.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								03:24
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f5e51e" data-index="16" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-network-total-access/09000d5d81f5e51e/Mediation-adjourned-until-May-16" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f5e510_video_thumbnail_80_60.jpg" alt="Watch: Mediation adjourned until May 16" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-network-total-access/09000d5d81f5e51e/Mediation-adjourned-until-May-16" class="nfl-video-link">Mediation adjourned until May 16</a></h3>
+							<p class="date">Published: April 20, 2011 at 07:55 p.m.</p>
+							<p>Albert Breer and NFL Network legal expert Gabe Feldman have the latest news on labor talks being adjourned until May 16.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								05:58
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f5e364" data-index="17" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-network-total-access/09000d5d81f5e364/Rift-in-the-players-union" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f5e35e_video_thumbnail_80_60.jpg" alt="Watch: Rift in the players union?" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-network-total-access/09000d5d81f5e364/Rift-in-the-players-union" class="nfl-video-link">Rift in the players union?</a></h3>
+							<p class="date">Published: April 20, 2011 at 07:24 p.m.</p>
+							<p>Jason La Canfora has the latest on reports that there might be a new group of players joining the labor negotiations.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								02:51
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f5de12" data-index="18" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-draft/09000d5d81f5de12/Ravens-on-the-clock" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f5de09_video_thumbnail_80_60.jpg" alt="Watch: Ravens on the clock" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-draft/09000d5d81f5de12/Ravens-on-the-clock" class="nfl-video-link">Ravens on the clock</a></h3>
+							<p class="date">Published: April 20, 2011 at 07:03 p.m.</p>
+							<p>The "Path to the Draft" crew breaks down Baltimore's team needs as they head in to the 2011 NFL Draft holding the 26th overall pick.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								04:27
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f5dee9" data-index="19" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-draft/09000d5d81f5dee9/Predicting-draft-day-trades" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f5dee2_video_thumbnail_80_60.jpg" alt="Watch: Predicting draft-day trades" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-draft/09000d5d81f5dee9/Predicting-draft-day-trades" class="nfl-video-link">Predicting draft-day trades</a></h3>
+							<p class="date">Published: April 20, 2011 at 06:51 p.m.</p>
+							<p>Charley Casserly identifies several teams that might look to move up to grab certain players in the draft's first round.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								05:57
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f5dcb9" data-index="20" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-network-path-to-the-draft/09000d5d81f5dcb9/Why-Denver-shouldn-t-draft-a-QB" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f5dca1_video_thumbnail_80_60.jpg" alt="Watch: Why Denver shouldn&#039;t draft a QB" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-network-path-to-the-draft/09000d5d81f5dcb9/Why-Denver-shouldn-t-draft-a-QB" class="nfl-video-link">Why Denver shouldn't draft a QB</a></h3>
+							<p class="date">Published: April 20, 2011 at 06:31 p.m.</p>
+							<p>The "Path to the Draft" crew discusses why the Broncos should look at other options in the first round of the 2011 NFL Draft, despite questions at quarterback.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								03:41
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f5d3a3" data-index="21" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-draft/09000d5d81f5d3a3/Saban-projects-former-Tide-players" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f5d394_video_thumbnail_80_60.jpg" alt="Watch: Saban projects former Tide players" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-draft/09000d5d81f5d3a3/Saban-projects-former-Tide-players" class="nfl-video-link">Saban projects former Tide players</a></h3>
+							<p class="date">Published: April 20, 2011 at 06:13 p.m.</p>
+							<p>Alabama head coach Nick Saban gives some exclusive insight to how his former players will project in the NFL.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								04:48
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f5d9d4" data-index="22" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-first-draft/09000d5d81f5d9d4/First-Draft-Derek-Sherrod" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f5d9bc_video_thumbnail_80_60.jpg" alt="Watch: First Draft: Derek Sherrod" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-first-draft/09000d5d81f5d9d4/First-Draft-Derek-Sherrod" class="nfl-video-link">First Draft: Derek Sherrod</a></h3>
+							<p class="date">Published: April 20, 2011 at 05:58 p.m.</p>
+							<p>Mississippi State tackle Derek Sherrod talks about his style of play and love for the game in his first draft. </p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								01:35
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f5c4bf" data-index="23" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-network-total-access/09000d5d81f5c4bf/Draft-grades-AFC-West" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f5c4b1_video_thumbnail_80_60.jpg" alt="Watch: Draft grades: AFC West" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-network-total-access/09000d5d81f5c4bf/Draft-grades-AFC-West" class="nfl-video-link">Draft grades: AFC West</a></h3>
+							<p class="date">Published: April 20, 2011 at 01:33 p.m.</p>
+							<p>Steve Wyche doles out some pretty harsh grades for teams in the AFC West.  Are they warranted?  Find out.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								02:20
+							</div>
+		
+						</div>
+					</li>
+				
+				   
+					<li data-ecmId="09000d5d81f5be7e" data-index="24" class="thumb-small">
+						
+							
+							
+								
+							
+							
+							
+						
+						<div class="thumbnail">
+							
+							<a href="/videos/nfl-videos/09000d5d81f5be7e/NFL-daily-update-Apr-20th" class="nfl-video-link">
+								<img src="http://static.nfl.com/static/content/public/video/2011/09000d5d81f5be6e_video_thumbnail_80_60.jpg" alt="Watch: NFL daily update - Apr. 20th" />
+								<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+							</a>
+						</div>
+						<div class="content">
+							<h3 class="headline"><a href="/videos/nfl-videos/09000d5d81f5be7e/NFL-daily-update-Apr-20th" class="nfl-video-link">NFL daily update - Apr. 20th</a></h3>
+							<p class="date">Published: April 20, 2011 at 11:49 a.m.</p>
+							<p>Albert Breer has the latest from Minnesota as a 4th day of talks resumed on Wednesday in court-ordered mediation between the two sides.</p>
+						</div>
+						<div class="metadata">
+							<div class="run-time">
+								02:31
+							</div>
+		
+						</div>
+					</li>
+				
+			</ul>
+			<ul style="display:none" id="video-list-template">
+				<li data-ecmId="#{videoCMSID}" data-index="#{index}" class="thumb-small">
+					<div class="thumbnail #{thumbSize}">
+						<a href="#{videoDetailUrl}" class="nfl-video-link">
+							#{thumbnailImage}
+							<span class="play-button"><img src="http://img.static.nfl.com/static/site/img/videos-v2/play-button-small.png" alt="" /></span>
+						</a>
+					</div>
+					<div class="content">
+						<h3 class="headline"><a href="#{videoDetailUrl}" class="nfl-video-link">#{briefHeadline}</a>#{hqImg}</h3>
+						<p class="date">Published: #{date}</p>
+						<p>#{captionBlurb}</p>
+					</div>
+					<div class="metadata">
+						<div class="run-time">#{runTime}</div>
+		
+					</div>
+				</li>
+		 	</ul>
+			<ul style="display:none" id="video-list-empty">
+				<li class="empty">No videos are currently available.</li>
+			</ul>
+			
+				
+					
+				
+				
+			
+			
+				<div class="subscribe"><a href="/rss/rsslanding">Subscribe</a></div>
+			
+			
+				<div id="video-list-pagination" class="pagination">
+					
+						
+						
+							
+							<a href="?page=1" class="page current">1</a>
+						
+							
+							<a href="?page=2" class="page force-quotes-in-IE">2</a>
+						
+							
+							<a href="?page=3" class="page force-quotes-in-IE">3</a>
+						
+							
+							<a href="?page=4" class="page force-quotes-in-IE">4</a>
+						
+							
+							<a href="?page=5" class="page force-quotes-in-IE">5</a>
+						
+						
+							<a href="?page=2" class="previous force-quotes-in-IE">Next</a>
+						
+					
+				</div>
+				<div id="video-list-pagination-template" style="display:none">
+					<a class="#{className} force-quotes-in-IE" href="/videos/?page=#{page}">#{page_name}</a>
+				</div>
+				<script>
+(function () {
+	nfl.videos.FilterSets.add( new nfl.videos.FilterBySortType({ el: "filter-orderBy", defaultValue: "recent" }) );
+	window.pagination       = new nfl.videos.VideoPagination({
+		content: 'video-list-pagination',
+		template: 'video-list-pagination-template',
+		destination: 'videos-list', 
+		page: "1",
+		perPage: "25"
+	});
+	window.perPageFilter    = new nfl.videos.VideosPerPageFilter('video-list-per-page-form');
+	window.videosDisplaying = new nfl.videos.VideosDisplaying('video-list-displaying');
+	window.videos           = new nfl.videos.VideoCollection({
+		template: 'video-list-template',
+		list: 'video-list-items',
+		batch: 0,
+		total: 34256,
+		thumbSize: "small",
+		empty: "video-list-empty",
+		
+		
+		
+		videos: [
+			{
+				briefHeadline:  "Fairley\'s field",
+				captionBlurb:   "Auburn DT Nick Fairley shows his speed and agility on the \"NFL Total Access\" demo field.  Watch the big man move.",
+				date:           "April 21, 2011 at 08:13 p.m.",
+				videoCMSID:     "09000d5d81f63fcf",
+				runTime:        "00:04:12:19",
+				videoDetailUrl: "\/videos\/nfl-draft\/09000d5d81f63fcf\/Fairley-s-field",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f63fcf/Fairley-s-field",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f63fbf_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f63fbf_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Mock draft: 21-32",
+				captionBlurb:   "Charles Davis and Brian Baldinger team up to finish their first-round mock draft with picks 21-32.",
+				date:           "April 21, 2011 at 08:06 p.m.",
+				videoCMSID:     "09000d5d81f63e7d",
+				runTime:        "00:05:04:28",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f63e7d\/Mock-draft-21-32",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f63e7d/Mock-draft-21-32",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f63e70_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f63e70_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Butch in the Bod Pod",
+				captionBlurb:   "UNC head coach Butch Davis reminisces with Rich Eisen about his experience inside the Bod Pod.",
+				date:           "April 21, 2011 at 07:49 p.m.",
+				videoCMSID:     "09000d5d81f63c03",
+				runTime:        "00:01:16:17",
+				videoDetailUrl: "\/videos\/nfl-videos\/09000d5d81f63c03\/Butch-in-the-Bod-Pod",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f63c03/Butch-in-the-Bod-Pod",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f63bfd_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f63bfd_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Mock draft picks 11-20",
+				captionBlurb:   "Charles Davis and Brian Baldinger combine forces to lay out their picks for the second 10 draft choices.",
+				date:           "April 21, 2011 at 07:39 p.m.",
+				videoCMSID:     "09000d5d81f6399c",
+				runTime:        "00:05:45:07",
+				videoDetailUrl: "\/videos\/nfl-draft\/09000d5d81f6399c\/Mock-draft-picks-11-20",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f6399c/Mock-draft-picks-11-20",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f63985_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f63985_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Patriots QB smokescreen",
+				captionBlurb:   "Are the Patriots looking at a QB in the first round?  Former Patriots first-round draft pick Willie McGinest attempts to crawl inside Bill Belichick\'s head to answer this question.",
+				date:           "April 21, 2011 at 07:34 p.m.",
+				videoCMSID:     "09000d5d81f637bc",
+				runTime:        "00:02:53:16",
+				videoDetailUrl: "\/videos\/nfl-draft\/09000d5d81f637bc\/Patriots-QB-smokescreen",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f637bc/Patriots-QB-smokescreen",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f637b6_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f637b6_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "How to scout college safeties",
+				captionBlurb:   "Bucky Brooks identifies the key traits scouts look for when assessing collegiate safeties.",
+				date:           "April 21, 2011 at 07:28 p.m.",
+				videoCMSID:     "09000d5d81f3d08e",
+				runTime:        "00:00:52:19",
+				videoDetailUrl: "\/videos\/nfl-videos\/09000d5d81f3d08e\/How-to-scout-college-safeties",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f3d08e/How-to-scout-college-safeties",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/catch_all\/nfl_image\/r_moore_110421_VS_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/catch_all\/nfl_image\/r_moore_110421_VS_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Un-Fairley judged?",
+				captionBlurb:   "Alabama DT and potential top 10 pick Nick Fairley addresses scouts\' concerns about his dedication to football.",
+				date:           "April 21, 2011 at 06:46 p.m.",
+				videoCMSID:     "09000d5d81f63245",
+				runTime:        "00:03:12:28",
+				videoDetailUrl: "\/videos\/nfl-draft\/09000d5d81f63245\/Un-Fairley-judged",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f63245/Un-Fairley-judged",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f63236_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f63236_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Casserly\'s 2nd-round mock draft",
+				captionBlurb:   "Charlie Casserly has a few surprises in top half of his second-round mock draft. Check them out here.",
+				date:           "April 21, 2011 at 06:45 p.m.",
+				videoCMSID:     "09000d5d81f63518",
+				runTime:        "00:03:44:08",
+				videoDetailUrl: "\/videos\/nfl-draft\/09000d5d81f63518\/Casserly-s-2nd-round-mock-draft",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f63518/Casserly-s-2nd-round-mock-draft",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f63510_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f63510_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "How far could Cam Newton fall?",
+				captionBlurb:   "If Cam Newton is not selected by the Panthers with the No. 1 overall pick, how far might he fall in the 2011 NFL Draft?",
+				date:           "April 21, 2011 at 06:39 p.m.",
+				videoCMSID:     "09000d5d81f6343d",
+				runTime:        "00:02:49:18",
+				videoDetailUrl: "\/videos\/nfl-draft\/09000d5d81f6343d\/How-far-could-Cam-Newton-fall",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f6343d/How-far-could-Cam-Newton-fall",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f63436_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f63436_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Butch Davis on UNC prospects",
+				captionBlurb:   "Find out why North Carolina head coach Butch Davis says DE Robert Quinn and DT Marvin Austin should be first-round picks.",
+				date:           "April 21, 2011 at 04:56 p.m.",
+				videoCMSID:     "09000d5d81f62949",
+				runTime:        "00:05:16:26",
+				videoDetailUrl: "\/videos\/nfl-draft\/09000d5d81f62949\/Butch-Davis-on-UNC-prospects",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f62949/Butch-Davis-on-UNC-prospects",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f62930_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f62930_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "On the Clock: Seahawks",
+				captionBlurb:   "Steve Wyche reveals which prospects the Seahawks will target in the draft. Is Ryan Mallett on their radar to replace Matt Hasselbeck?",
+				date:           "April 21, 2011 at 02:04 p.m.",
+				videoCMSID:     "09000d5d81f61ce3",
+				runTime:        "00:03:27:23",
+				videoDetailUrl: "\/videos\/nfl-draft\/09000d5d81f61ce3\/On-the-Clock-Seahawks",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f61ce3/On-the-Clock-Seahawks",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f61cd4_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f61cd4_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "NFL daily news update",
+				captionBlurb:   "Get the latest news on court-ordered mediation, what John Elway had to say about the Broncos\' No. 2 pick and more.",
+				date:           "April 21, 2011 at 12:07 p.m.",
+				videoCMSID:     "09000d5d81f61556",
+				runTime:        "00:01:51:08",
+				videoDetailUrl: "\/videos\/nfl-videos\/09000d5d81f61556\/NFL-daily-news-update",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f61556/NFL-daily-news-update",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f61548_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f61548_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Eisen gets hung up on by Nick Saban",
+				captionBlurb:   "Alabama head coach Nick Saban has no time for small talk with \"NFL Total Access\" host Rich Eisen after a phone interview.",
+				date:           "April 20, 2011 at 09:21 p.m.",
+				videoCMSID:     "09000d5d81f5f0bd",
+				runTime:        "00:00:40:11",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f5f0bd\/Eisen-gets-hung-up-on-by-Nick-Saban",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f5f0bd/Eisen-gets-hung-up-on-by-Nick-Saban",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5f0ad_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5f0ad_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Best pass rushers in the NFL",
+				captionBlurb:   "Is it Julius Peppers?  Jared Allen?  Former NFL LB Willie McGinest counts down the best pass rushers in the NFL.",
+				date:           "April 20, 2011 at 08:10 p.m.",
+				videoCMSID:     "09000d5d81f5e987",
+				runTime:        "00:02:15:22",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f5e987\/Best-pass-rushers-in-the-NFL",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f5e987/Best-pass-rushers-in-the-NFL",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5e97a_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5e97a_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "NFC West draft grades",
+				captionBlurb:   "\'NFL Total Access\' grades the past five draft classes of the Rams, 49ers, Cardinals and Seahawks. Plus, is St. Louis the team to beat in the division?",
+				date:           "April 20, 2011 at 08:06 p.m.",
+				videoCMSID:     "09000d5d81f5e8de",
+				runTime:        "00:03:50:19",
+				videoDetailUrl: "\/videos\/nfl-network-path-to-the-draft\/09000d5d81f5e8de\/NFC-West-draft-grades",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f5e8de/NFC-West-draft-grades",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5e8d6_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5e8d6_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "State of the Franchise: Bills",
+				captionBlurb:   "\"NFL Total Access\" looks at the state of the Bills and what they should do with the 3rd overall pick.",
+				date:           "April 20, 2011 at 07:59 p.m.",
+				videoCMSID:     "09000d5d81f5e5ef",
+				runTime:        "00:03:24:04",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f5e5ef\/State-of-the-Franchise-Bills",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f5e5ef/State-of-the-Franchise-Bills",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/catch_all\/nfl_image\/billscms_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/catch_all\/nfl_image\/billscms_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Mediation adjourned until May 16",
+				captionBlurb:   "Albert Breer and NFL Network legal expert Gabe Feldman have the latest news on labor talks being adjourned until May 16.",
+				date:           "April 20, 2011 at 07:55 p.m.",
+				videoCMSID:     "09000d5d81f5e51e",
+				runTime:        "00:05:58:07",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f5e51e\/Mediation-adjourned-until-May-16",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f5e51e/Mediation-adjourned-until-May-16",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5e510_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5e510_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Rift in the players union?",
+				captionBlurb:   "Jason La Canfora has the latest on reports that there might be a new group of players joining the labor negotiations.",
+				date:           "April 20, 2011 at 07:24 p.m.",
+				videoCMSID:     "09000d5d81f5e364",
+				runTime:        "00:02:51:11",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f5e364\/Rift-in-the-players-union",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f5e364/Rift-in-the-players-union",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5e35e_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5e35e_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Ravens on the clock",
+				captionBlurb:   "The \"Path to the Draft\" crew breaks down Baltimore\'s team needs as they head in to the 2011 NFL Draft holding the 26th overall pick.",
+				date:           "April 20, 2011 at 07:03 p.m.",
+				videoCMSID:     "09000d5d81f5de12",
+				runTime:        "00:04:27:08",
+				videoDetailUrl: "\/videos\/nfl-draft\/09000d5d81f5de12\/Ravens-on-the-clock",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f5de12/Ravens-on-the-clock",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5de09_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5de09_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Predicting draft-day trades",
+				captionBlurb:   "Charley Casserly identifies several teams that might look to move up to grab certain players in the draft\'s first round.",
+				date:           "April 20, 2011 at 06:51 p.m.",
+				videoCMSID:     "09000d5d81f5dee9",
+				runTime:        "00:05:57:20",
+				videoDetailUrl: "\/videos\/nfl-draft\/09000d5d81f5dee9\/Predicting-draft-day-trades",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f5dee9/Predicting-draft-day-trades",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5dee2_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5dee2_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Why Denver shouldn\'t draft a QB",
+				captionBlurb:   "The \"Path to the Draft\" crew discusses why the Broncos should look at other options in the first round of the 2011 NFL Draft, despite questions at quarterback.",
+				date:           "April 20, 2011 at 06:31 p.m.",
+				videoCMSID:     "09000d5d81f5dcb9",
+				runTime:        "00:03:41:10",
+				videoDetailUrl: "\/videos\/nfl-network-path-to-the-draft\/09000d5d81f5dcb9\/Why-Denver-shouldn-t-draft-a-QB",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f5dcb9/Why-Denver-shouldn-t-draft-a-QB",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5dca1_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5dca1_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Saban projects former Tide players",
+				captionBlurb:   "Alabama head coach Nick Saban gives some exclusive insight to how his former players will project in the NFL.",
+				date:           "April 20, 2011 at 06:13 p.m.",
+				videoCMSID:     "09000d5d81f5d3a3",
+				runTime:        "00:04:48:15",
+				videoDetailUrl: "\/videos\/nfl-draft\/09000d5d81f5d3a3\/Saban-projects-former-Tide-players",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f5d3a3/Saban-projects-former-Tide-players",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5d394_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5d394_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "First Draft: Derek Sherrod",
+				captionBlurb:   "Mississippi State tackle Derek Sherrod talks about his style of play and love for the game in his first draft. ",
+				date:           "April 20, 2011 at 05:58 p.m.",
+				videoCMSID:     "09000d5d81f5d9d4",
+				runTime:        "00:01:35:25",
+				videoDetailUrl: "\/videos\/nfl-first-draft\/09000d5d81f5d9d4\/First-Draft-Derek-Sherrod",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f5d9d4/First-Draft-Derek-Sherrod",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5d9bc_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5d9bc_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Draft grades: AFC West",
+				captionBlurb:   "Steve Wyche doles out some pretty harsh grades for teams in the AFC West.  Are they warranted?  Find out.",
+				date:           "April 20, 2011 at 01:33 p.m.",
+				videoCMSID:     "09000d5d81f5c4bf",
+				runTime:        "00:02:20:19",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f5c4bf\/Draft-grades-AFC-West",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f5c4bf/Draft-grades-AFC-West",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5c4b1_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5c4b1_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "NFL daily update - Apr. 20th",
+				captionBlurb:   "Albert Breer has the latest from Minnesota as a 4th day of talks resumed on Wednesday in court-ordered mediation between the two sides.",
+				date:           "April 20, 2011 at 11:49 a.m.",
+				videoCMSID:     "09000d5d81f5be7e",
+				runTime:        "00:02:31:14",
+				videoDetailUrl: "\/videos\/nfl-videos\/09000d5d81f5be7e\/NFL-daily-update-Apr-20th",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f5be7e/NFL-daily-update-Apr-20th",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5be6e_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5be6e_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Game Changers: Herzlich\'s story",
+				captionBlurb:   "Boston College LB Mark Herzlich shares his story of beating cancer and what it took for him to beat the illness and become an NFL prospect.",
+				date:           "April 20, 2011 at 11:27 a.m.",
+				videoCMSID:     "09000d5d81f57ead",
+				runTime:        "00:09:07:14",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f57ead\/Game-Changers-Herzlich-s-story",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f57ead/Game-Changers-Herzlich-s-story",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f57ea6_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f57ea6_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Game Changers: Herzlich hits the field",
+				captionBlurb:   "Boston College LB Mark Herzlich hits the practice field to learn the tricks of the trade from NFL legend Willie McGinest.",
+				date:           "April 20, 2011 at 11:27 a.m.",
+				videoCMSID:     "09000d5d81f58159",
+				runTime:        "00:05:53:00",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f58159\/Game-Changers-Herzlich-hits-the-field",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f58159/Game-Changers-Herzlich-hits-the-field",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f58140_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f58140_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Mariucci: \'Something I\'ll never forget\'",
+				captionBlurb:   "Former 49ers head coach Steve Mariucci reflects on his team\'s game at the New York Jets shortly after 9\/11.",
+				date:           "April 19, 2011 at 09:11 p.m.",
+				videoCMSID:     "09000d5d81f5972e",
+				runTime:        "00:02:56:19",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f5972e\/Mariucci-Something-I-ll-never-forget",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f5972e/Mariucci-Something-I-ll-never-forget",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f59719_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f59719_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Remembering Sept. 11",
+				captionBlurb:   "NFL head coaches reflect on the tragic events in New York and suburban Washington on Sept. 11, 2001.",
+				date:           "April 19, 2011 at 09:03 p.m.",
+				videoCMSID:     "09000d5d81f5972c",
+				runTime:        "00:02:07:02",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f5972c\/Remembering-Sept-11",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f5972c/Remembering-Sept-11",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5971a_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5971a_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Will St. Louis topple Seattle in 2011?",
+				captionBlurb:   "Last year\'s NFC West title race went down to the last game of the season. Marshall Faulk and Michael Irvin debate who wins the division in 2011.",
+				date:           "April 19, 2011 at 08:55 p.m.",
+				videoCMSID:     "09000d5d81f59612",
+				runTime:        "00:04:06:26",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f59612\/Will-St-Louis-topple-Seattle-in-2011",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f59612/Will-St-Louis-topple-Seattle-in-2011",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f59604_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f59604_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "2011 Colts schedule analysis",
+				captionBlurb:   "The \"NFL Total Access\" crew breaks down the Colts\' 2011 schedule and their chances of playing at home in Super Bowl XLVI.",
+				date:           "April 19, 2011 at 08:50 p.m.",
+				videoCMSID:     "09000d5d81f594ee",
+				runTime:        "00:04:30:18",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f594ee\/2011-Colts-schedule-analysis",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f594ee/2011-Colts-schedule-analysis",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f594da_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f594da_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Michael Irvin loses his touch?",
+				captionBlurb:   "The \"Total Access\" crew has a laugh at Michael Irvin\'s expense over his interesting technique with the touchscreen board.",
+				date:           "April 19, 2011 at 08:48 p.m.",
+				videoCMSID:     "09000d5d81f5941c",
+				runTime:        "00:02:05:23",
+				videoDetailUrl: "\/videos\/nfl-videos\/09000d5d81f5941c\/Michael-Irvin-loses-his-touch",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f5941c/Michael-Irvin-loses-his-touch",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f59410_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f59410_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Falcons 2011 schedule analysis",
+				captionBlurb:   "Steve Mariucci analyzes the Atlanta Falcons\' 2011 schedule.",
+				date:           "April 19, 2011 at 08:31 p.m.",
+				videoCMSID:     "09000d5d81f59214",
+				runTime:        "00:01:52:00",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f59214\/Falcons-2011-schedule-analysis",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f59214/Falcons-2011-schedule-analysis",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f59207_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f59207_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "2011 schedule: Eagles in depth",
+				captionBlurb:   "The \"Total Access\" crew takes a look at Philadelphia\'s 2011 schedule, which includes a Week 2 trek to Atlanta, Eagles QB Michael Vick\'s old stamping grounds.",
+				date:           "April 19, 2011 at 08:27 p.m.",
+				videoCMSID:     "09000d5d81f59135",
+				runTime:        "00:04:57:01",
+				videoDetailUrl: "\/videos\/philadelphia-eagles\/09000d5d81f59135\/2011-schedule-Eagles-in-depth",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f59135/2011-schedule-Eagles-in-depth",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f59128_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f59128_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "2011 schedule: Giants analysis",
+				captionBlurb:   "\"NFL Total Access\" breaks down the New York Giants\' 2011 schedule, highlighted by two matchups vs. NFC East rival Dallas in the season\'s final four weeks.",
+				date:           "April 19, 2011 at 08:25 p.m.",
+				videoCMSID:     "09000d5d81f59134",
+				runTime:        "00:03:39:19",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f59134\/2011-schedule-Giants-analysis",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f59134/2011-schedule-Giants-analysis",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f59129_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f59129_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "2011 Jets schedule analysis",
+				captionBlurb:   "The \"NFL Total Access\" crew dissects the Jets\' 2011 schedule.",
+				date:           "April 19, 2011 at 08:13 p.m.",
+				videoCMSID:     "09000d5d81f58f9f",
+				runTime:        "00:02:57:15",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f58f9f\/2011-Jets-schedule-analysis",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f58f9f/2011-Jets-schedule-analysis",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f58f99_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f58f99_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Will San Diego stumble out the gate?",
+				captionBlurb:   "Norv Turner weighs in on San Diego\'s 2011 schedule; Michael Irvin and Marshall Faulk debate whether the Chargers can get off to a hot start.",
+				date:           "April 19, 2011 at 08:00 p.m.",
+				videoCMSID:     "09000d5d81f58ddb",
+				runTime:        "00:03:47:07",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f58ddb\/Will-San-Diego-stumble-out-the-gate",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f58ddb/Will-San-Diego-stumble-out-the-gate",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f58dc6_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f58dc6_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "State of the Franchise: Steelers",
+				captionBlurb:   "The 2011 NFL schedule has been released. Do the Steelers have a clear path on the \"Stairway to 7\"?",
+				date:           "April 19, 2011 at 07:58 p.m.",
+				videoCMSID:     "09000d5d81f58d1f",
+				runTime:        "00:06:05:26",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f58d1f\/State-of-the-Franchise-Steelers",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f58d1f/State-of-the-Franchise-Steelers",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/catch_all\/nfl_image\/b_roethlisberger_110420_VS_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/catch_all\/nfl_image\/b_roethlisberger_110420_VS_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "2011 schedule: Bears and Packers analysis",
+				captionBlurb:   "NFC North rivals Chicago Bears and the Green Bay Packers learn their 2011 schedules. What are the key games?",
+				date:           "April 19, 2011 at 07:29 p.m.",
+				videoCMSID:     "09000d5d81f58a2d",
+				runTime:        "00:05:15:20",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f58a2d\/2011-schedule-Bears-and-Packers-analysis",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f58a2d/2011-schedule-Bears-and-Packers-analysis",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/catch_all\/nfl_image\/m_forte_110123_VS_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/catch_all\/nfl_image\/m_forte_110123_VS_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Greg Little on set",
+				captionBlurb:   "Former University of North Carolina WR Greg Little stops by the \"Path to the Draft\" set to discuss his NFL future.",
+				date:           "April 19, 2011 at 07:21 p.m.",
+				videoCMSID:     "09000d5d81f58876",
+				runTime:        "00:04:06:21",
+				videoDetailUrl: "\/videos\/nfl-draft\/09000d5d81f58876\/Greg-Little-on-set",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f58876/Greg-Little-on-set",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5885e_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5885e_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Garrett on Cowboys\' schedule",
+				captionBlurb:   "Jason Garrett stops by to talk about the Dallas Cowboys\' 2011 schedule, highlighted by a Week 1 matchup vs. the New York Jets on the 10th anniversary of 9\/11.",
+				date:           "April 19, 2011 at 07:09 p.m.",
+				videoCMSID:     "09000d5d81f585d0",
+				runTime:        "00:05:37:28",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f585d0\/Garrett-on-Cowboys-schedule",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f585d0/Garrett-on-Cowboys-schedule",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f585bf_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f585bf_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Ryan on Jets-Patriots rivalry",
+				captionBlurb:   "Rex Ryan talks about what makes Jets-Patriots such a great rivalry.",
+				date:           "April 19, 2011 at 07:07 p.m.",
+				videoCMSID:     "09000d5d81f51888",
+				runTime:        "00:01:11:16",
+				videoDetailUrl: "\/videos\/new-york-jets\/09000d5d81f51888\/Ryan-on-Jets-Patriots-rivalry",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f51888/Ryan-on-Jets-Patriots-rivalry",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f51873_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f51873_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Clash of the Harbaughs",
+				captionBlurb:   "John and Jim Harbaugh will be the first brothers to face off as head coaches in NFL history. How do they feel about the showdown and their teams\' schedules.",
+				date:           "April 19, 2011 at 07:01 p.m.",
+				videoCMSID:     "09000d5d81f576c6",
+				runTime:        "00:07:21:09",
+				videoDetailUrl: "\/videos\/nfl-network-total-access\/09000d5d81f576c6\/Clash-of-the-Harbaughs",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f576c6/Clash-of-the-Harbaughs",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f576bd_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f576bd_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Rivera on 2011 schedule",
+				captionBlurb:   "Panthers head coach Ron Rivera talks about what he looks forward to when the NFL schedule is released.",
+				date:           "April 19, 2011 at 06:55 p.m.",
+				videoCMSID:     "09000d5d81f51403",
+				runTime:        "00:00:28:21",
+				videoDetailUrl: "\/videos\/carolina-panthers\/09000d5d81f51403\/Rivera-on-2011-schedule",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f51403/Rivera-on-2011-schedule",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f513f7_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f513f7_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Lovie Smith on 2011 schedule",
+				captionBlurb:   "Bears head coach Lovie Smith discusses the games he circles when the NFL schedule is released.",
+				date:           "April 19, 2011 at 06:55 p.m.",
+				videoCMSID:     "09000d5d81f51d8e",
+				runTime:        "00:01:15:03",
+				videoDetailUrl: "\/videos\/chicago-bears\/09000d5d81f51d8e\/Lovie-Smith-on-2011-schedule",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f51d8e/Lovie-Smith-on-2011-schedule",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f51d71_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f51d71_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Andy Reid on 2011 schedule",
+				captionBlurb:   "Andy Reid discusses what he looks for when the season schedule is released.",
+				date:           "April 19, 2011 at 06:55 p.m.",
+				videoCMSID:     "09000d5d81f51614",
+				runTime:        "00:00:22:17",
+				videoDetailUrl: "\/videos\/philadelphia-eagles\/09000d5d81f51614\/Andy-Reid-on-2011-schedule",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f51614/Andy-Reid-on-2011-schedule",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5160e_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5160e_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Schwartz on 2011 schedule",
+				captionBlurb:   "What does Jim Schwartz look for with new schedules and what does he think about preseason predictions?",
+				date:           "April 19, 2011 at 06:55 p.m.",
+				videoCMSID:     "09000d5d81f5151b",
+				runTime:        "00:01:38:26",
+				videoDetailUrl: "\/videos\/detroit-lions\/09000d5d81f5151b\/Schwartz-on-2011-schedule",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f5151b/Schwartz-on-2011-schedule",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f51515_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f51515_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Harbaugh on 2011 schedule",
+				captionBlurb:   "Is a big showdown in Baltimore the only game 49ers head coach Jim Harbaugh has circles with the release of the NFL schedule?",
+				date:           "April 19, 2011 at 06:55 p.m.",
+				videoCMSID:     "09000d5d81f51706",
+				runTime:        "00:00:23:09",
+				videoDetailUrl: "\/videos\/san-francisco-49ers\/09000d5d81f51706\/Harbaugh-on-2011-schedule",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f51706/Harbaugh-on-2011-schedule",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f516ff_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f516ff_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Jackson on 2011 schedule",
+				captionBlurb:   "Find out what new Raiders head coach Hue Jackson is looking for when the new schedule is released.",
+				date:           "April 19, 2011 at 06:54 p.m.",
+				videoCMSID:     "09000d5d81f51695",
+				runTime:        "00:00:30:29",
+				videoDetailUrl: "\/videos\/oakland-raiders\/09000d5d81f51695\/Jackson-on-2011-schedule",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f51695/Jackson-on-2011-schedule",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5168f_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5168f_video_thumbnail_60_45.jpg"
+			},
+			{
+				briefHeadline:  "Turner on 2011 schedule",
+				captionBlurb:   "Chargers head coach Norv Turner shares the first thing that he looks for when the NFL schedule is released.",
+				date:           "April 19, 2011 at 06:54 p.m.",
+				videoCMSID:     "09000d5d81f51544",
+				runTime:        "00:00:22:19",
+				videoDetailUrl: "\/videos\/san-diego-chargers\/09000d5d81f51544\/Turner-on-2011-schedule",
+				hQVideoDetailUrl: "/videos/nfl-hq-videos/09000d5d81f51544/Turner-on-2011-schedule",
+				smallImage:     "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5153e_video_thumbnail_80_60.jpg",
+				xSmallImage:    "http:\/\/static.nfl.com\/static\/content\/public\/video\/2011\/09000d5d81f5153e_video_thumbnail_60_45.jpg"
+			}
+		]
+	});
+})();
+			</script>
+			
+		
+		
+	
+</div>
+
+						<!-- END LISTING -->
+						
+
+	
+	
+		<div class="search-ads">
+			<script type="text/javascript">/*<![CDATA[*/
+
+var adsonar_placementId = parseInt("1488390", 10),
+    adsonar_pid         = parseInt("1956785", 10),
+    adsonar_ps          = parseInt("-1", 10),
+    adsonar_zw          = parseInt("615", 10),
+    adsonar_zh          = parseInt("200", 10),
+    adsonar_jv          = 'ads.adsonar.com';
+if ((typeof nfl === 'undefined') || nfl.constants.SEARCH_ADS) {
+	document.write('<sc'+'ript type="text/javascript" src="http://js.adsonar.com/js/adsonar.js"></sc'+'ript>');
+}
+			/*]]>*/</script>
+		</div>
+	
+
+
+					</div>
+					<div class="secondary column">
+						<div class="in-page-ad secondary-column-widget">
+	<div id="nfl-video-ad" style="height: 250px">
+			<script>
+			
+nfl.use("node", "event-custom", 'nfl-video', function (Y) {
+	var ad, VideoPlayerEvent = Y.NFL.Video.PlayerEvent;
+	
+	// var adPath
+	
+		var adRandom = (nfl.constants.AD_RANDOM)? nfl.constants.AD_RANDOM : adRandom ;
+		var adPath = nfl.ads.createAd("ad1303471510367inpage", 
+			"nfl.videogallery/videohome;s1=videohome;slot=inpage;url=videohome;nfl=ad;!category=;kw=;tile=#{tile};test=;sz=300x250", 
+			{
+				width: 300,
+				height: 250,
+				slot: 'inpage',
+				transparent: false,
+				pathOnly: true
+			}
+		);
+	
+	ad = new nfl.videos.VideoCompanionAd({ el: "nfl-video-ad", adURL: 'http://ad.doubleclick.net/adi/' + adPath, width: 300, height: 250 });
+	
+	Y.Global.after(VideoPlayerEvent.AD_LOADED, ad.showCompanionAd, ad);
+	Y.Global.once(VideoPlayerEvent.PLAY, ad.writeAd, ad);
+	Y.Global.once(VideoPlayerEvent.UNAVAILABLE, ad.writeAd, ad);
+});
+			</script>
+	</div>
+	<p class="ad-above"><img src="http://img.static.nfl.com/static/site/img/ads/ad-above.gif" alt="The previous image was an ad." height="9" width="300" /></p>
+</div>
+
+						
+<script>
+		nfl.use("node", "event", function(Y){
+			// Conference/Team Dropdowns
+			Y.all(".btn-conference-dropdown").on("mouseover", function(e){
+				Y.one("#"+e.currentTarget.getAttribute("dropdown")).setStyle('display', 'block');
+			});
+			Y.all(".conf-panel").on("mouseleave", function(e){
+				this.setStyle('display', 'none');
+			});
+		});
+	</script>
+	<div id="widget-team-categories" class="secondary-column-widget right-hangover">
+		<h3 class="replaced heading">Team Channels</h3>
+		<h4>Select below to access your team's videos</h4>
+		<div class="megadropdown">
+			<div id="btns-conference-dropdowns"><div id="ddAFC" class="btn-conference-dropdown" dropdown="conf-panel-afc">AFC</div><div id="ddNFC" class="btn-conference-dropdown" dropdown="conf-panel-nfc">NFC</div></div>
+			<div id="conf-panel-afc" class="conf-panel">
+				<div class="conf-panel-blank"></div>
+				<div class="conf-panel-list">
+					<ul>
+						<li class="division">AFC East</li>
+						<li><a href="/videos/buffalo-bills">Buffalo Bills</a></li>
+						<li><a href="/videos/miami-dolphins">Miami Dolphins</a></li>
+						<li><a href="/videos/new-england-patriots">New England Patriots</a></li>
+						<li><a href="/videos/new-york-jets">New York Jets</a></li>
+					</ul>
+					<hr />
+					<ul>
+						<li class="division">AFC North</li>
+						<li><a href="/videos/baltimore-ravens">Baltimore Ravens</a></li>
+						<li><a href="/videos/cincinnati-bengals">Cincinnati Bengals</a></li>
+						<li><a href="/videos/cleveland-browns">Cleveland Browns</a></li>
+						<li><a href="/videos/pittsburgh-steelers">Pittsburgh Steelers</a></li>
+					</ul>
+					<hr />	
+					<ul>
+						<li class="division">AFC South</li>
+						<li><a href="/videos/houston-texans">Houston Texans</a></li>
+						<li><a href="/videos/indianapolis-colts">Indianapolis Colts</a></li>
+						<li><a href="/videos/jacksonville-jaguars">Jacksonville Jaguars</a></li>
+						<li><a href="/videos/tennessee-titans">Tennessee Titans</a></li>
+
+					</ul>
+					<hr />	
+					<ul>
+						<li class="division">AFC West</li>
+						<li><a href="/videos/denver-broncos">Denver Broncos</a></li>
+						<li><a href="/videos/kansas-city-chiefs">Kansas City Chiefs</a></li>
+						<li><a href="/videos/oakland-raiders">Oakland Raiders</a></li>
+						<li><a href="/videos/san-diego-chargers">San Diego Chargers</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="conf-panel-nfc" class="conf-panel">
+				<div class="conf-panel-blank"></div>
+				<div class="conf-panel-list">
+					<ul>
+						<li class="division">NFC East</li>
+						<li><a href="/videos/dallas-cowboys">Dallas Cowboys</a></li>
+						<li><a href="/videos/new-york-giants">New York Giants</a></li>
+						<li><a href="/videos/philadelphia-eagles">Philadelphia Eagles</a></li>
+						<li><a href="/videos/washington-redskins">Washington Redskins</a></li>
+					</ul>
+					<hr />
+					<ul>
+						<li class="division">NFC North</li>
+						<li><a href="/videos/chicago-bears">Chicago Bears</a></li>
+						<li><a href="/videos/detroit-lions">Detroit Lions</a></li>
+						<li><a href="/videos/green-bay-packers">Green Bay Packers</a></li>
+						<li><a href="/videos/minnesota-vikings">Minnesota Vikings</a></li>
+					</ul>
+					<hr />
+					<ul>
+						<li class="division">NFC South</li>
+						<li><a href="/videos/atlanta-falcons">Atlanta Falcons</a></li>
+						<li><a href="/videos/carolina-panthers">Carolina Panthers</a></li>
+						<li><a href="/videos/new-orleans-saints">New Orleans Saints</a></li>
+						<li><a href="/videos/tampa-bay-buccaneers">Tampa Bay Buccaneers</a></li>
+					</ul>
+					<hr />
+					<ul>
+						<li class="division">NFC West</li>
+						<li><a href="/videos/arizona-cardinals">Arizona Cardinals</a></li>
+						<li><a href="/videos/san-francisco-49ers">San Francisco 49ers</a></li>
+						<li><a href="/videos/seattle-seahawks">Seattle Seahawks</a></li>
+						<li><a href="/videos/st-louis-rams">St. Louis Rams</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+						
+
+						<div style="text-align:center">
+							
+
+	
+	
+		<div class="search-ads">
+			<script type="text/javascript">/*<![CDATA[*/
+
+var adsonar_placementId = parseInt("1488393", 10),
+    adsonar_pid         = parseInt("1956785", 10),
+    adsonar_ps          = parseInt("-1", 10),
+    adsonar_zw          = parseInt("300", 10),
+    adsonar_zh          = parseInt("250", 10),
+    adsonar_jv          = 'ads.adsonar.com';
+if ((typeof nfl === 'undefined') || nfl.constants.SEARCH_ADS) {
+	document.write('<sc'+'ript type="text/javascript" src="http://js.adsonar.com/js/adsonar.js"></sc'+'ript>');
+}
+			/*]]>*/</script>
+		</div>
+	
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Acerno tag -->
+		<IFRAME SRC="http://www.imiclk.com/cgi/r.cgi?m=3&mid=fL5PetPZ&did=videos" FRAMEBORDER="0" SCROLLING="NO" WIDTH="0" HEIGHT="0"> </IFRAME>
+	</div>
+		</div>
+	</div>
+	<div id="br">
+		<div id="ft-teams">
+			<div id="footer-logo">
+				<a href="http://www.nfl.com/"><img alt="NFL Logo" src="http://img.static.nfl.com/static/site/img/global/nfl-logo-footer-2010.png" />&nbsp;</a>
+			</div>
+			
+<ul>
+	<li><a href="http://nflrush.com/?campaign=NFL_footer" target="_blank">NFL Rush</a> | <a href="http://www.nflrush.com/play60">PLAY 60</a></li>
+	<li><a href="http://www.nflyouthpd.com/" target="_blank">NFL Youth Tackle</a></li>
+	<li><a href="http://www.usafootball.com" target="_blank">USA Football</a></li>
+	<li><a href="http://www.nfl.com/international">NFL International</a></li>
+	<li><a href="http://www.nflonlocation.net" target="_blank">NFL On Location</a></li>
+	<li><a href="http://www.nflextrapoints.com/">NFL Extra Points</a></li>
+	<li><a href="http://www.nfl.com/rulebook" target="_blank">Rulebook</a></li>
+	<li><a href="http://www.nfl.com/contact-us">Contact Us</a> | <a href="http://www.nfl.com/help/faq">FAQ</a> | <a href="http://www.nfl.com/news/author?id=09000d5d8142ac0e" target="_blank">PR</a></li>
+	<li>Jobs: <a href="http://www.nfl.apply2jobs.com/" target="_blank">League</a> | <a href="http://footballjobs.teamworkonline.com/teamwork/jobs/default.cfm" target="_blank">Team</a></li>
+	<li><a href="http://www.nflhealthandsafety.com/" target="_blank">NFLHealthandSafety.com</a></li>
+</ul>
+
+<ul>
+	<!--  li>NFL Corporate</li  -->
+	<li><a href="http://www.nflshop.com/entry.point?target=z&source=NFL_SHOP_TAB_BOTTOM_BANNER" target="_blank">NFL Shop</a></li>
+	<li><a href="http://www.ticketexchangebyticketmaster.com/NFL/default.aspx?intcmp=tm100454&wt.mc_id=NFL_LEAGUE_TE_FOOTER&extcmp=Footer_TX_EX" target="_blank">NFL Ticket Exchange</a></li>
+	<!-- <li><a href="http://women.nfl.com">NFL Women's Apparel</a></li> -->
+	<li><a href="http://www.nfl.com/static/content/catch_all/nfl_generic_content/media-kit-2010.pdf">Media</a> | <a href="http://www.nfl.biz">Licensing</a></li>
+	<li><a href="http://profootballhof.com" target="_blank">Profootballhof.com</a></li>
+	<li><a href="http://www.nfllabor.com" target="_blank">NFLLabor.com</a></li>
+	<li><a href="http://www.jointheteam.com/" target="_blank">In The Community</a></li>
+	<!-- <li><a href="http://nflplayers.com" target="_blank">NFLPlayers.com</a></li> -->
+	<li><a href="https://www.nflplayercare.com/" target="_blank">NFL Player Care</a></li>
+	<li><a href="https://www.nflplayerengagement.com" target="_blank">Player Engagement</a></li>
+</ul>
+
+<div id="ft-teams-afc-mark-container">
+	<div id="ft-teams-afc-mark"></div>
+	<div class="ft-teams-parenthesis"></div>
+</div>
+<ul class="ft-teams-list">
+	<li><a href="http://www.buffalobills.com/" target="_blank">Bills</a></li>
+	<li><a href="http://www.miamidolphins.com/" target="_blank">Dolphins</a></li>
+	<li><a href="http://www.patriots.com/" target="_blank">Patriots</a></li>
+	<li><a href="http://www.newyorkjets.com/" target="_blank">Jets</a></li>
+</ul>
+<ul class="ft-teams-list">
+	<li><a href="http://www.baltimoreravens.com/" target="_blank">Ravens</a></li>
+	<li><a href="http://www.bengals.com/" target="_blank">Bengals</a></li>
+	<li><a href="http://www.clevelandbrowns.com/" target="_blank">Browns</a></li>
+	<li><a href="http://www.steelers.com/" target="_blank">Steelers</a></li>
+</ul>
+<ul class="ft-teams-list">
+	<li><a href="http://www.houstontexans.com/" target="_blank">Texans</a></li>
+	<li><a href="http://www.colts.com/" target="_blank">Colts</a></li>
+	<li><a href="http://www.jaguars.com/" target="_blank">Jaguars</a></li>
+	<li><a href="http://www.titansonline.com/" target="_blank">Titans</a></li>
+</ul>
+<ul class="ft-teams-list">
+	<li><a href="http://www.denverbroncos.com/" target="_blank">Broncos</a></li>
+	<li><a href="http://www.kcchiefs.com/" target="_blank">Chiefs</a></li>
+	<li><a href="http://www.raiders.com/" target="_blank">Raiders</a></li>
+	<li><a href="http://www.chargers.com/" target="_blank">Chargers</a></li>
+</ul>
+<div id="ft-teams-nfc-mark-container">
+	<div id="ft-teams-nfc-mark"></div>
+	<div class="ft-teams-parenthesis"></div>
+</div>
+<ul class="ft-teams-list">
+	<li><a href="http://www.dallascowboys.com/" target="_blank">Cowboys</a></li>
+	<li><a href="http://www.giants.com/" target="_blank">Giants</a></li>
+	<li><a href="http://www.philadelphiaeagles.com/" target="_blank">Eagles</a></li>
+	<li><a href="http://www.redskins.com/" target="_blank">Redskins</a></li>
+</ul>
+<ul class="ft-teams-list">
+	<li><a href="http://www.chicagobears.com/" target="_blank">Bears</a></li>
+	<li><a href="http://www.detroitlions.com/" target="_blank">Lions</a></li>
+	<li><a href="http://www.packers.com/" target="_blank">Packers</a></li>
+	<li><a href="http://www.vikings.com/" target="_blank">Vikings</a></li>
+</ul>
+<ul class="ft-teams-list">
+	<li><a href="http://www.atlantafalcons.com/" target="_blank">Falcons</a></li>
+	<li><a href="http://www.panthers.com/" target="_blank">Panthers</a></li>
+	<li><a href="http://www.neworleanssaints.com/" target="_blank">Saints</a></li>
+	<li><a href="http://www.buccaneers.com/" target="_blank">Buccaneers</a></li>
+</ul>
+<ul class="ft-teams-list">
+	<li><a href="http://www.azcardinals.com/" target="_blank">Cardinals</a></li>
+	<li><a href="http://www.stlouisrams.com/" target="_blank">Rams</a></li>
+	<li><a href="http://www.sf49ers.com/" target="_blank">49ers</a></li>
+	<li><a href="http://www.seahawks.com/" target="_blank">Seahawks</a></li>
+</ul>
+<script>nfl.bandages.IE6FooterFixes();</script>
+			
+<p class="copyright">
+			&copy; 2011 NFL Enterprises LLC. NFL and the NFL shield design are registered trademarks of the
+			National Football League.The team names, logos and uniform designs are registered trademarks of
+			the teams indicated. All other NFL-related trademarks are trademarks of the National Football
+			League. NFL	footage &copy; NFL Productions LLC. <a href="http://www.nfl.com/help/privacy" style="color:#b6061e;">PRIVACY POLICY</a> | <a href="http://www.nfl.com/help/terms" style="color:#b6061e;">Terms & Conditions</a>
+	</p>
+	<div id="slice" class="hslice" style=" display:none; ">
+		<div class="entry-title">NFL News</div>
+		<div class="entry-content">CONTENT</div>
+		<a rel="entry-content" href="http://www.nfl.com/ie/web-slice" style=" display:none; "></a>
+		<a rel="bookmark" target="_blank" href="http://www.nfl.com" style=" display:none; "></a>
+		<span class="ttl" style=" display:none; ">15</span>
+	</div>
+		</div>
+	</div>
+	<script type="text/javascript">	
+	document.fire('dom:ready');
+	if ( typeof(nfl.executeYUICallbacks) == 'function' ) nfl.executeYUICallbacks();
+	</script>
+	<!-- END DECORATOR redesign/global-alt -->
+</body>
+</html>
+

@@ -1,0 +1,511 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Scientists Write Messages Into DNA "Bottle"</title>
+<meta name="viewport" content="width=320, user-scalable=yes" />
+<script type="text/javascript"><!--
+	var gebi = function(el){
+		return (typeof(el)=='string'?document.getElementById(el):el);
+	},
+	gebtn = function(el,tn){
+		el = gebi(el);
+		if (el)
+			return el.getElementsByTagName(tn);
+		else
+			return [];
+	},
+	fsc = function(el,c1,c2){
+		el = gebi(el);
+		if (el)
+			el.className=(el.className==c1?c2:c1);
+	},
+	sc = function(el,c) {
+		if (el===undefined)
+			return false;
+		else if (typeof(el)=='string')
+			el = gebi(el);
+		if (el)
+			el.className = c;
+	},
+	chcount=function(o){
+		o=o||{};
+		if (!o.tgt || !o.el)
+			return false;
+		if (typeof(o.tgt)=='string') o.tgt=gebi(o.tgt);
+		var str,err='',len=o.el.value.length;
+		if (len<o.min)
+			err='too short';
+		else if (len>o.max)
+			err='too long';
+		str = err?err:'&#10003;';
+		o.tgt.innerHTML='<span class='+(err?'bad':'good')+'>'+str+'</span>';
+	},
+	addchcount=function(els) {
+		var i,p,f=function(){ if(this.chCount) chcount(this.chCount); }
+		for(i in els){
+			p=els[i];
+			p.el.chCount = p;
+			p.el.addEventListener('keyup',f,false);
+			f.call(p.el);
+		}
+	},
+	adjtxtheight_fld=null, adjtxtareaheight = function(ta,force) {
+		ta = gebi(ta);
+		if (ta) {
+			var f=adjtxtheight_fld;
+			if (!f) {
+				f=document.createElement('div');
+				adjtxtheight_fld=f;
+				sc(f,'textarea '+ta.className);
+				f.style.whiteSpace='pre-wrap';
+				f.style.position='fixed';
+				f.style.left=-3000+'px';
+				f.style.outline='1px solid black';
+				document.body.appendChild(f);
+			}
+			if (f && (ta.prevTAVal!=ta.value || force)) {
+				ta.style.overflow='hidden';
+				f.style.width=ta.clientWidth+'px';
+				f.innerHTML = '';
+				f.appendChild(document.createTextNode(ta.value));
+				var val = (f.clientHeight+(ta.offsetHeight-ta.clientHeight)+40);
+				ta.style.height = val+'px';
+				//if (ta.scrollTop) ta.style.height=(val+ta.scrollTop)+'px';
+				ta.prevTAVal=ta.value;
+			}
+		}
+	}
+	var adjwidth = function(f) {
+		var neww,inp;
+		f=gebi(f);
+		if (f) {
+			inp = f.getElementsByTagName('input');
+			newwf = function(f){ f.style.width = Math.min(600,Math.max(200,f.parentNode.offsetWidth))+'px'; };
+			for(var i=0;i<inp.length;i++) {
+				if (inp[i].className.match(/\binptwidth/))
+					newwf(inp[i]);
+			}
+			inp = f.getElementsByTagName('textarea');
+			for(var i=0;i<inp.length;i++) {
+				newwf(inp[i]);
+			}
+		}
+	}
+	var djp = {
+user: { tt:function(){ } },
+spanclick:function(o){
+	try{
+	o=o||{};
+	o.url = (o.url||(window.location+''));
+	var r,url,hasqs=(o.url||'').match(/\?/);
+	if (hasqs) {
+		r=new RegExp("([?&])("+o.pv+"=[0-9]+)","");
+		if (o.url.match(r)) {
+			url = o.url.replace(r,'$1'+o.pv+'='+o.p);
+		}
+		else
+			url = o.url+'&'+o.pv+'='+o.p;
+	}
+	else url = o.url+'?'+o.pv+'='+o.p;
+	}
+	catch(err){ alert(err); }
+	window.location=url;
+}
+	};
+if(document.location.protocol=='http:'){
+	 var Tynt=Tynt||[];Tynt.push('dF1byYV0Kr3713adbi-bnq');
+	  (function(){var s=document.createElement('script');s.async="async";s.type="text/javascript";s.src='http://tcr.tynt.com/ti.js';var h=document.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})();
+}
+--></script>
+<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
+<script type='text/javascript'>
+	GS_googleAddAdSenseService("ca-pub-1077026815079259");
+	GS_googleEnableAllServices();
+</script>
+<script type='text/javascript'>
+	GA_googleAddSlot("ca-pub-1077026815079259", "Digital-Journal-Mobile");
+</script>
+<script type='text/javascript'>
+	GA_googleFetchAds();
+</script>
+<style type="text/css">
+	body { background:white; }
+	.mobibody {
+		width:300px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	body, td, th, .textarea, textarea, input, .regtxt {
+		font-size:18px;
+		/*
+		font-family:arial,verdana,sans-serif;
+		*/
+		font-family:georgia,serif;
+	}
+	.small, .imgdetails td, .act, .list-email .item .details, input, option, select, button { font-size:14px;}
+	.nowrap, .xtraeff { white-space:nowrap; }
+	a.ut {
+		text-decoration:none;
+		color:#cccccc !important;
+	}
+	a.ut-3,a.ut-4 { color: #88cc88 !important; }
+	a.ut-5,a.ut-7 { color: #cc8888 !important; }
+	.p, .list-email .item { padding: 15px 0;}
+	.tal { text-align:left;}
+	.tac { text-align:center;}
+	.tar { text-align:right;}
+	.imp {font-weight:bold; }
+	.nimp, blockquote { color:#666666; }
+	.vis { display:block; }
+	.visil { display:inline; }
+	.invis { display:none; }
+	.e_tbl td { padding: 4px;}
+	.e_tbl .npub td { color:red;}
+	.imgdetails td { vertical-align:top;padding: 7px 0;}
+	.imgdetails td.nimp { padding-right:10px; }
+	form { padding:0;margin:0;}
+	h3 { padding:5px 0; margin:0;}
+	blockquote { font-style:italic;margin:5 15px; }
+	div.good, div.bad {
+		padding:5px;
+		background:#ffffcc;
+		font-weight:bold;
+		border:1px solid green;
+		margin:10px 0;
+	}
+	div.bad { border-color:red;}
+	span.bad { color:#cc1100; }
+	span.good { color:#119900; }
+	a { color: #013055; }
+	.reglnk { color: #013055!important; }
+	a:visited { color: #61798c; }
+	.reglnk a:visited { color: #61798c!important; }
+	img.avatar {
+		border:1px solid #cccccc;
+	}
+	.list-email .item {
+		font-size:14px !important;
+		border-bottom:1px solid #cccccc;
+	}
+	.list-email a, .blog-list a, .e_tbl a {
+		text-decoration:none!important;
+	}
+	.list-email .item h3 {
+		font-size:18px !important;
+	}
+	.list-email .item .offset {
+		color:#cc1100;
+	}
+	.epadd, .odd, .even, .act, .imgdetails td {
+		padding:8px 3px;
+	}
+	.odd {
+		background:#f0f0f6;
+		border-bottom:1px solid #ccbbbb;
+	}
+	.even, .act, .imgdetails td {
+		border-bottom:1px solid #e0e0e0;
+	}
+	.act a {
+		text-decoration:none;
+		font-weight:bold;
+		color:black!important;
+	}
+	.nodecor {
+		text-decoration:none!important;
+	}
+	.redlbl, .xtraeff {
+		background:#cc1100;
+		/*
+		font-size:13px !important;
+		*/
+		padding:1px;
+		text-decoration:none !important;
+		color:white!important;
+		font-weight:bold;
+	}
+	.xtraeff {
+		font-size:12px;
+	}
+	.e_tbl td {
+		border-bottom:1px solid #cccccc;
+		padding:10px 5px;
+	}
+	table.aspan {
+		width:100%;
+	}
+	.aspan td.sp {
+		text-align:center;
+		padding:10px;
+		font-size:20px;
+	}
+	.aspan a.span, .aspan span.span_sel {
+		font-weight:bold;
+		color:#cc1100!important;
+		padding:2px;
+		text-decoration:none;
+	}
+	.aspan span.span_sel {
+		background:white;
+		border:1px solid #cccccc;
+		color:#666666!important;
+	}
+	h3.odd a {
+		color:#cc1100;
+		text-decoration:none;
+	}
+	.vertspace {
+		line-height:240%;
+	}
+</style>
+
+<link rel="apple-touch-icon" href="/mimg/dj-iphone-icon.png" />
+
+</head>
+<body><div class="mobibody">
+
+<div class="odd">
+	<!-- Digital-Journal-Mobile -->
+	<script type='text/javascript'>
+		GA_googleFillSlot("Digital-Journal-Mobile");
+	</script> 
+</div>
+
+<div style="float:right;" class="p tar imp small">
+	<a href="/?login-cc">Log In</a>
+	</div>
+	<div class="even" style="border-color:black">
+		<a name="top" href="/"><img src="/mimg/logo.gif" height="24" width="200" border="0" align="top" /></a>
+	</div>
+<div class="act">
+	<img src="/images/article.gif" border="0" align="absmiddle" height="16" width="16" />&nbsp;<a href="/">News</a>
+	&nbsp;
+	<img src="/images/blog.gif" border="0" align="absmiddle" height="16" width="16" />&nbsp;<a href="/blogs/">Blogs</a>
+	&nbsp;
+	<img src="/images/group.gif" border="0" align="absmiddle" height="16" width="16" />&nbsp;<a href="/groups/">Groups</a>
+	&nbsp;
+	<img src="/images/image.gif" border="0" align="absmiddle" height="16" width="16" />&nbsp;<a href="/pics/">Images</a>
+</div>
+
+
+	
+
+
+<div id="article_text">
+<h2 style="margin:10px 0 5px 0">Scientists Write Messages Into DNA "Bottle"</h2>
+<div class="nimp small">
+	Feb 23, 2007 by <a title="Digital Journalist" class="ut ut-5">&#x25a0;</a>&nbsp;<a class="userlink" href="/user/1636" onmouseover="djp.user.tt(this,event);" pg="5">geozone</a>	<div class="rs_skip small">
+		<a href="/?did=12">Technology</a>
+				- <a href="#comments" class="nowrap">6 comments</a>			</div>
+</div>
+
+<div style="padding:10px 0 15px 0" class="small rs_skip">
+	<a href="http://app.readspeaker.com/cgi-bin/rsent?customerid=4357&lang=en_us&voice=heather22k&readid=article_text&url=http%3A%2F%2Fwww.digitaljournal.com%2Farticle%2F125172&save=1">Listen to this article</a>
+<span class="nimp">(by <a href="http://www.voice-corp.com" target="_blank" class=nimp>ReadSpeaker</a>)</span>
+</div>
+
+
+
+<div style="float:right;padding:0 0 10px 10px;" class="vertspace rs_skip imp small nowrap">
+	<div style="width:150px;">
+	<div style="background:white;padding:0px;overflow:hidden;vertical-align:middle;border:1px solid #cccccc;">
+<a href="/image/21665" style="display:block;text-align:center"><img src="/img/1/6/3/6/i/2/1/6/p-small/digital_dna.gif" alt="Untitled" border="0" /></a>
+
+</div>
+	</div>
+			</div>
+
+<div>Japanese researchers have successfully stored messages in the DNA of bacteria. The hardiness of the hay bacillus bacteria ensures the digital data encoded into them can last for millenia.</div>
+<div class="even" style="margin-top:5px;">
+	<div style="float:left;padding:10px 15px 0 0;">
+		<a name="fb_share" type="button_count" href="http://www.facebook.com/sharer.php?u=http://www.digitaljournal.com/article/125172">Share</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+	</div>
+	<script type='text/javascript'>
+var permaLink = "http://www.digitaljournal.com/article/125172";
+</script>
+	<div style="float:left;padding-top:10px">
+		<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.digitaljournal.com/article/125172" data-count="horizontal" data-via="digitaljournal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	</div>
+	<br clear=all>
+</div>
+
+
+<div class=p>Generally found in soil or decaying matter, hay bacillus are exceptionally resistant to extreme weather conditions. Two megabits (data equivalent to 1.6 million Roman letters) can be stored in each bacterium of hay bacillus in the form of implants. These tiny implants can be extracted in a lab and read like ordinary text at a later date.
+<div style="padding-bottom:15px;"></div>
+
+The research team was able to encode Einstein's renown E=MC^2 equation along with the date 1905 into the genome of the bacteria strain. They were able to read the message later on by analyzing its genetic sequence.
+<div style="padding-bottom:15px;"></div>
+
+Head researcher Yoshiaki Ohashi said, "If I wanted to store my personal diary in these live bacteria and take it with me to my grave, then my story can live for thousands and thousands of years."
+<div style="padding-bottom:15px;"></div>
+
+One of the practical applications of this technology lies in the area of pharmaceuticals. Fraudulent drugs are a major problem but if pharmaceutical companies could "stamp" their signature into the drugs, it would prevent piracy and at the same time protect their patents. To prevent corruption of the message encoding, the data would be inserted into 4 different places as multiple backups.
+<div style="padding-bottom:15px;"></div>
+
+The bacteria's hardiness and ability to preserve data for future generations would also be extremely useful in storing vast amounts of data which would not be suspectible to the types of damage that wipe out computer hard drives. Information stored on DNA lasts for more than one hundred million years.
+<div style="padding-bottom:15px;"></div>
+
+The researchers project being able to develop a type of living memory for a new breed of organic computers which would use strands of DNA to perform calculations and would have the ability to heal themselves if damaged. 
+<div style="padding-bottom:15px;"></div>
+
+Though the promise of this technology is very high, the scientists caution more work is needed before it can be marketed. One of the hurdles to overcome is ensuring very slow mutation rates in the DNA as the bacteria evolve, otherwise the messages encoded will be rendered unreadable.
+<div style="padding-bottom:15px;"></div>
+
+I am fascinated by the use of this technology to create new types of computers where you have no more worry about the corruption and loss of data. Very few of us have not experienced a hard drive crash, especially when it was not recently backed up. The other aspect of that is what you "write" on it is preserved for a very long time and possibly not eraseable. There are some things you do not want preserved for that long and/or not eraseable.
+<div style="padding-bottom:15px;"></div></div>
+
+</div>
+
+<br clear=all />
+
+<br />
+
+<div class="even p">
+	<div class=imp>Next in Technology</div>
+	<div class=p>
+		<a class=nodecor href="/article/305797">Nuclear-powered rover scheduled to land on Mars in 2012</a>
+	</div>
+</div>
+
+
+
+
+
+
+	<a name="comments"></a>
+<form action="" method=get>
+	<h3 class=odd>
+	<img src="/images/comment.gif" border=0 width=16 height=16 />
+	6 comments</a>
+			</h3>
+</form>
+
+
+<div class=p>
+<a name="tab=comments&sc=1099535"></a>
+	<div class="p even nimp small" style="padding-bottom:10px;"><span style="float:right">#1</span>Feb 23, 2007 <a title="Citizen" class="ut ut-1">&#x25a0;</a>&nbsp;<a class="userlink" href="/user/3640" onmouseover="djp.user.tt(this,event);" pg="1">somethingelseunique</a></div>
+This reminds me of a modern cryptex. Imagine this technology was to become the future of paper journals and diaries. We would have a cellar of stories that would last for years and years.
+<div style="padding-bottom:15px;"></div><a name="tab=comments&sc=1099819"></a>
+	<div class="p even nimp small" style="padding-bottom:10px;"><span style="float:right">#2</span>Feb 23, 2007 <a title="Digital Journalist" class="ut ut-5">&#x25a0;</a>&nbsp;<a class="userlink" href="/user/1552" onmouseover="djp.user.tt(this,event);" pg="5">Sheba</a></div>
+I'm not a scientist here Geo so I need some help understanding this. <em>Generally found in soil or decaying matter, hay bacillus... Two megabits (data equivalent to 1.6 million Roman letters) can be stored in each bacterium of hay bacillus in the form of implants. These tiny implants can be extracted in a lab and read like ordinary text at a later date... Head researcher Yoshiaki Ohashi said, "If I wanted to store my personal diary in these live bacteria and take it with me to my grave, then my story can live for thousands and thousands of years." </em>
+<div style="padding-bottom:15px;"></div>
+What is the life span of one of these bacterium? How can the data outlive one of them?
+<div style="padding-bottom:15px;"></div><a name="tab=comments&sc=1100185"></a>
+	<div class="p even nimp small" style="padding-bottom:10px;"><span style="float:right">#3</span>Feb 24, 2007 <a title="Digital Journalist" class="ut ut-5">&#x25a0;</a>&nbsp;<a class="userlink" href="/user/1636" onmouseover="djp.user.tt(this,event);" pg="5">geozone</a></div>
+<blockquote>@<strong><a title="Digital Journalist" class="ut ut-5">&#x25a0;</a>&nbsp;<a class="userlink" href="/user/1552" onmouseover="djp.user.tt(this,event);" pg="5">Sheba</a>:</strong>
+<div style="padding-bottom:15px;"></div>
+I'm not a scientist here Geo so I need some help understanding this.
+<div style="padding-bottom:15px;"></div>
+
+What is the life span of one of these bacterium? How can the data outlive one of them?
+<div style="padding-bottom:15px;"></div>
+</blockquote>
+<div style="padding-bottom:15px;"></div>
+
+Hey Sheba,
+<div style="padding-bottom:15px;"></div>
+
+Sorry for the delay in replying to you post. Okay here it goes.
+<div style="padding-bottom:15px;"></div>
+
+Scientists convert a message into a binary code which means using a string of 1s and 0s. Then they build the code into artificial strands of DNA which are comprised of base pairs that form the rungs of the DNA ladder. There are four bases: Adenine (A), Guanine (G), Cytosine (C) and Thymine (T). Adenine always pairs with Thymine, Guanine with Cytosine. So for example, AG forms one base pair or rung while TC forms another rung. The researchers used these pairs or rungs as a binary code. For example, AG could represent the sequence 1000 and TC 0111.
+<div style="padding-bottom:15px;"></div>
+
+By converting the message into binary code, they then "sequence" the rungs of artificial DNA to contain the right binary sequence of the message. The artificial DNA is then injected into the bacteria which has a lifetime of 100 million years. The data or message then will last as long as the bacteria in which they have been injected. So the data doesn't outlive the bacteria. It is the long life span of the bacteria which gives the data such longevity.
+<div style="padding-bottom:15px;"></div>
+
+I hope this clarifies it a bit more. My background was not in biology so I am explaining only from what I know of DNA. Scientific research is invariably difficult to explain in plain language. I've done what I could with this story here. Hope it helps, Sheba.
+<div style="padding-bottom:15px;"></div>
+
+You can get a better idea of the base pairs forming DNA strands by checking out this <a href="http://learn.genetics.utah.edu/units/basics/builddna/">interactive site</a>.
+<div style="padding-bottom:15px;"></div><a name="tab=comments&sc=1100422"></a>
+	<div class="p even nimp small" style="padding-bottom:10px;"><span style="float:right">#4</span>Feb 24, 2007 <a title="Digital Journalist" class="ut ut-5">&#x25a0;</a>&nbsp;<a class="userlink" href="/user/1552" onmouseover="djp.user.tt(this,event);" pg="5">Sheba</a></div>
+<blockquote>@<strong><a title="Digital Journalist" class="ut ut-5">&#x25a0;</a>&nbsp;<a class="userlink" href="/user/1636" onmouseover="djp.user.tt(this,event);" pg="5">geozone</a>:</strong>
+<div style="padding-bottom:15px;"></div>
+<blockquote>@<strong><a title="Digital Journalist" class="ut ut-5">&#x25a0;</a>&nbsp;<a class="userlink" href="/user/1552" onmouseover="djp.user.tt(this,event);" pg="5">Sheba</a>:</strong>
+<div style="padding-bottom:15px;"></div>
+I'm not a scientist here Geo so I need some help understanding this.
+<div style="padding-bottom:15px;"></div>
+
+What is the life span of one of these bacterium? How can the data outlive one of them?
+<div style="padding-bottom:15px;"></div>
+</blockquote>
+<div style="padding-bottom:15px;"></div>
+
+Hey Sheba,
+<div style="padding-bottom:15px;"></div>
+
+The artificial DNA is then injected into the bacteria which has a lifetime of 100 million years. The data or message then will last as long as the bacteria in which they have been injected. So the data doesn't outlive the bacteria. It is the long life span of the bacteria which gives the data such longevity.
+<div style="padding-bottom:15px;"></div>
+
+You can get a better idea of the base pairs forming DNA strands by checking out this <a href="http://learn.genetics.utah.edu/units/basics/builddna/">interactive site</a>.
+<div style="padding-bottom:15px;"></div>
+</blockquote>
+<div style="padding-bottom:15px;"></div>
+Sure Geo, that helps, thanks. I had no idea that these little (excuse me) Buggers could live for a 100 million years. Blows the mind! LOL.
+<div style="padding-bottom:15px;"></div><a name="tab=comments&sc=1111733"></a>
+	<div class="p even nimp small" style="padding-bottom:10px;"><span style="float:right">#5</span>Mar 17, 2007 <a title="Citizen" class="ut ut-1">&#x25a0;</a>&nbsp;<a class="userlink" href="/user/167563" onmouseover="djp.user.tt(this,event);" pg="1">cslime</a></div>
+<blockquote>@<strong><a title="Digital Journalist" class="ut ut-5">&#x25a0;</a>&nbsp;<a class="userlink" href="/user/1636" onmouseover="djp.user.tt(this,event);" pg="5">geozone</a>:</strong>
+<div style="padding-bottom:15px;"></div>
+<blockquote>@<strong><a title="Digital Journalist" class="ut ut-5">&#x25a0;</a>&nbsp;<a class="userlink" href="/user/1552" onmouseover="djp.user.tt(this,event);" pg="5">Sheba</a>:</strong>
+<div style="padding-bottom:15px;"></div>
+I'm not a scientist here Geo so I need some help understanding this.
+<div style="padding-bottom:15px;"></div>
+
+What is the life span of one of these bacterium? How can the data outlive one of them?
+<div style="padding-bottom:15px;"></div>
+</blockquote>
+<div style="padding-bottom:15px;"></div>
+
+Hey Sheba,
+<div style="padding-bottom:15px;"></div>
+
+Sorry for the delay in replying to you post. Okay here it goes.
+<div style="padding-bottom:15px;"></div>
+
+Scientists convert a message into a binary code which means using a string of 1s and 0s. Then they build the code into artificial strands of DNA which are comprised of base pairs that form the rungs of the DNA ladder. There are four bases: Adenine (A), Guanine (G), Cytosine (C) and Thymine (T). Adenine always pairs with Thymine, Guanine with Cytosine. So for example, AG forms one base pair or rung while TC forms another rung. The researchers used these pairs or rungs as a binary code. For example, AG could represent the sequence 1000 and TC 0111.
+<div style="padding-bottom:15px;"></div>
+
+By converting the message into binary code, they then "sequence" the rungs of artificial DNA to contain the right binary sequence of the message. The artificial DNA is then injected into the bacteria which has a lifetime of 100 million years. The data or message then will last as long as the bacteria in which they have been injected. So the data doesn't outlive the bacteria. It is the long life span of the bacteria which gives the data such longevity.
+<div style="padding-bottom:15px;"></div>
+
+I hope this clarifies it a bit more. My background was not in biology so I am explaining only from what I know of DNA. Scientific research is invariably difficult to explain in plain language. I've done what I could with this story here. Hope it helps, Sheba.
+<div style="padding-bottom:15px;"></div>
+
+You can get a better idea of the base pairs forming DNA strands by checking out this <a href="http://learn.genetics.utah.edu/units/basics/builddna/">interactive site</a>.
+<div style="padding-bottom:15px;"></div>
+</blockquote>
+<div style="padding-bottom:15px;"></div>
+Actually, the bacteria don't each live 100 million years. The injected DNA is copied every time the bacteria divides. So, it's not one bacteria, but a colony of them that hold the information in each individual member.
+<div style="padding-bottom:15px;"></div><a name="tab=comments&sc=1111735"></a>
+	<div class="p even nimp small" style="padding-bottom:10px;"><span style="float:right">#6</span>Mar 17, 2007 <a title="Digital Journalist" class="ut ut-5">&#x25a0;</a>&nbsp;<a class="userlink" href="/user/1552" onmouseover="djp.user.tt(this,event);" pg="5">Sheba</a></div>
+Cslime, thanks for that. It gets more interesting, lol.
+<div style="padding-bottom:15px;"></div></div>
+
+
+
+
+
+
+<br>
+
+<div class="small imp tar"><a class="nodecor" href="#top">Top^</a></div>
+<div class="odd">View: Mobile site | <a href="http://www.digitaljournal.com/article/125172/Scientists_Write_Messages_Into_DNA_Bottle_?noredir=1">Full Site</a></div>
+<div class="tac nimp small">
+	<div class="p">
+		© 1998-2011 digitaljournal.com | <a href="/?contactus">Contact Us</a>
+	</div>
+	powered by <a href="http://www.dell.ca/" target="_blank">dell servers</a>
+</div>
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-521285-4");
+		pageTracker._trackPageview();
+	} catch(err) { }
+</script>
+</div></body>
+</html>

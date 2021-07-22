@@ -1,0 +1,762 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="title" content="Ticket Search and Forecasts for Sports, Concerts &amp; More | SeatGeek" />
+<meta name="robots" content="index, follow" />
+<meta name="description" content="SeatGeek forecasts the price of sports and concert tickets. Search multiple sites, find sold out tickets, compare prices, and buy cheap tickets." />
+<meta name="keywords" content="sold out tickets, cheap concert tickets, sports tickets, ticket search, buy tickets, ticket price forecasts" />
+<meta name="language" content="en" />
+  <title>Ticket Search and Forecasts for Sports, Concerts &amp; More | SeatGeek</title>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/bundle_common.492e4cb4b252949b5feda24582d6606d6380bdfa.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/bundle_customer.492e4cb4b252949b5feda24582d6606d6380bdfa.css" />
+
+      
+<link rel="canonical" href="http://seatgeek.com/" />
+  <script type="text/javascript" src="//use.typekit.com/lpd6mqr.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <script type="text/javascript" src="http://cdn.seatgeek.com/js/jquery/jquery-1.4.4.min.js"></script>
+  <script type="text/javascript" src="http://cdn.seatgeek.com/js/jquery/jquery-ui-1.8.8.custom.min.js"></script>
+  <script type="text/javascript">jQuery.noConflict();</script>
+  <script type="text/javascript" src="/js/bundle_jquery-plugins.c7da2ab0e9c49790e0b116142fd06845112e673a.js"></script>
+<script type="text/javascript" src="/js/bundle_customer.c7da2ab0e9c49790e0b116142fd06845112e673a.js"></script>
+
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <!--[if IE 6]>
+  <link rel="stylesheet" type="text/css" href="/css/ie6.css" />
+  <![endif]-->
+</head>
+<body>
+  <!-- ga_header partial -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', "UA-2380337-9"]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+          <script type="text/javascript">
+
+  (function () {
+    var root = document.createElement("div"); root.id = "fb-root";
+    document.getElementsByTagName("body")[0].appendChild(root);
+    SG.load_script_async(('https:' == document.location.protocol ? 'https' : 'http') + "://connect.facebook.net/en_US/all.js");
+  })();
+
+  window.fbAsyncInit = function () {
+    FB.init({
+      appId: 'd77520f224200e405090bf6645fc79fb',
+      status: true,
+      cookie: true,
+      xfbml:  true
+    });
+
+    // HACK don't register the auth.login listener until we know the initial
+    // sessionChange event has fired
+    FB.getLoginStatus(function(response) {
+      FB.Event.subscribe('auth.login', function(response) {
+        // A user has logged in, and a new cookie has been saved
+        SG.fb_connect_cb();
+      });
+
+      if (response.session && !SG.is_authenticated()) {
+        // on the off chance the user is logged into facebook and has already approved
+        // the SeatGeek app, log them into seatgeek
+        SG.fb_connect_cb();
+      } else {
+        // do nothing
+      }
+    });
+  };
+
+</script>
+  <div id="wrapper" class="homepage">
+    <div id="main">
+      <div id="header">
+        <div class="top_details">
+          <div class="top_menu_outer">
+            <div class="top_menu">
+              <div class="left_curv">
+                <div class="right_curv">
+                  <ul id="logged-in-nav" style="display:none;">
+                    <li><a rel="nofollow" id="logout-link" href="/logout/">Sign out</a></li>
+                    <li class="last"><a rel="nofollow" href="/account/info">My account</a></li>
+                  </ul>
+                  <ul id="logged-out-nav" >
+                    <li class="facebook">
+                      <form action="/fblogin/" id="fblogin" method="post" style="display:inline-block">
+                        <fb:login-button perms="email,publish_stream">Connect</fb:login-button>
+                      </form>
+                    </li>
+                    <li><a id="login-link" rel="nofollow" href="/login/">Sign in</a></li>
+                    <li class="last"><a id="register-link" rel="nofollow" href="/register/">Register</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="logo"><a href="/"><img alt="SeatGeek Logo" src="http://cdn.seatgeek.com/images/logoStd2.png" /></a></div>
+        <!-- hack: we hide this on the home page to avoid naming conflict with home page search -->
+        
+      </div>
+
+      <div id="body_container">
+        <div class="top_curv">
+          <div class="bottom_curv">
+            <div class="bred_crumb">
+  <ul>
+    <li><a href="/">Home</a></li>
+<li>Index</li>
+  </ul>
+  <div class="clear"></div>
+</div>
+            <div id="left_container">
+  <div class="slider_box">
+    <ul class="slider">
+      <li>
+        <img src="http://cdn.seatgeek.com/images/homepage_U2.jpg" style="width:518px; height:313px" alt="Concert Tickets and Ticket Search" />
+        <h1>
+            The most popular ticket<br />
+            search site on the web.<span>All available tickets in one place.</span>
+        </h1>
+        <div class="button"><a href="/concert-tickets/"> </a></div>
+      </li>
+      <li style="display: none;">
+        <img src="http://cdn.seatgeek.com/images/homepage_mlb.jpg" style="width:518px; height:313px" alt="MLB Tickets and Ticket Search" />
+        <h1 style="top: 37px; left: 57px; color: #041528;">
+            Ticket search that's<br />
+            always 100% free.<span style="color: #2a3d56;">SeatGeek charges no extra fees.</span>
+        </h1>
+        <div class="button" style="top: 224px; left: 287px;"><a style="background-image: url(&quot;/images/find-mlb-button.png&quot;)" href="/mlb-tickets"> </a></div>
+      </li>
+      <li style="display: none;">
+        <img src="http://cdn.seatgeek.com/images/homepage_nba2.jpg" style="width:518px; height:313px" alt="Buy NBA Tickets" />
+        <h1 style="color: #04170c; top: 37px; left: 37px;">
+            Never buy tickets at<br />
+            the box office again.<span style="color: #1a2d1a;">Thousands of tickets below face value.</span>
+        </h1>
+        <div class="button" style="top: 224px; left: 287px;"><a style="background-image: url(&quot;/images/find-nba-button.png&quot;)" href="/nba-tickets"> </a></div>
+      </li>
+    </ul>
+    <br class="clear" />
+    <div>
+      <div class="pagination">
+        <ul id="pager">
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="left_details">
+    <div class="popular_list">
+      <h5>Most Popular:</h5>
+              <h2><a href="/mlb-tickets/">MLB Tickets</a></h2>
+        <ul>
+                      <li><a href="/toronto-blue-jays-tickets/">Toronto Blue Jays</a></li>
+                      <li><a href="/san-diego-padres-tickets/">San Diego Padres</a></li>
+                      <li><a href="/san-francisco-giants-tickets/">San Francisco Giants</a></li>
+                      <li><a href="/atlanta-braves-tickets/">Atlanta Braves</a></li>
+                    <li class="moreLink"><a href="/mlb-tickets/">More &rsaquo;</a></li>
+        </ul>
+              <h2><a href="/nhl-tickets/">NHL Tickets</a></h2>
+        <ul>
+                      <li><a href="/new-york-rangers-tickets/">New York Rangers</a></li>
+                      <li><a href="/new-york-islanders-tickets/">New York Islanders</a></li>
+                      <li><a href="/boston-bruins-tickets/">Boston Bruins</a></li>
+                      <li><a href="/san-jose-sharks-tickets/">San Jose Sharks</a></li>
+                    <li class="moreLink"><a href="/nhl-tickets/">More &rsaquo;</a></li>
+        </ul>
+              <h2><a href="/nba-tickets/">NBA Tickets</a></h2>
+        <ul>
+                      <li><a href="/new-york-knicks-tickets/">New York Knicks</a></li>
+                      <li><a href="/new-jersey-nets-tickets/">New Jersey Nets</a></li>
+                      <li><a href="/boston-celtics-tickets/">Boston Celtics</a></li>
+                      <li><a href="/miami-heat-tickets/">Miami Heat</a></li>
+                    <li class="moreLink"><a href="/nba-tickets/">More &rsaquo;</a></li>
+        </ul>
+              <h2><a href="/concert-tickets/">Concert Tickets</a></h2>
+        <ul>
+                      <li><a href="/bon-jovi-tickets/">Bon Jovi</a></li>
+                      <li><a href="/lady-gaga-tickets/">Lady Gaga</a></li>
+                      <li><a href="/kesha-tickets/">Kesha</a></li>
+                      <li><a href="/u2-tickets/">U2</a></li>
+                    <li class="moreLink"><a href="/concert-tickets/">More &rsaquo;</a></li>
+        </ul>
+            <h2 class="nolist" title="Search Theater Tickets"><a href="/theater-tickets/">Theater</a></h2>
+      <h2 class="nolist" title="Search College Basketball Tickets"><a href="/ncaa-basketball-tickets/">NCAA Basketball</a></h2>
+      <h2 class="nolist" title="Search NASCAR Tickets"><a href="/nascar-tickets/">NASCAR</a></h2>
+    </div>
+  </div>
+  <div class="right_details">
+    <div class="event_box" id="hotTickets">
+      <div class="loadingEvents">
+        Finding events in your area...
+        <img src="/images/lightLoad.gif" alt="LightLoad" />      </div>
+    </div>
+  </div>
+</div>
+<div id="right_container">
+  <div class="search_box" id="searchBar">
+    <div class="search_bg">
+      <form action="/search/" autocomplete="off" id="search-form" method="get">
+        <input type="text" name="search" id="searchBarInput" value="" />        <input type="submit" value="" />
+      </form>
+      <div id="autocompleteSpinner" style="display:none">
+        <img src="http://cdn.seatgeek.com/images/searchLoader.gif" alt="Ticket Search Results Loading ..." />
+      </div>
+    </div>
+    <p>Popular searches: <span><a href="/miami-heat-tickets">Miami Heat</a>, <a href="/new-york-rangers-tickets">New York Rangers</a>, <a href="/boston-celtics-tickets">Boston Celtics</a></span></p>
+  </div>
+  <div class="ticket_price_box">
+    <h2>
+        Data-driven ticket search <span>gets you the best deals.</span>
+    </h2>
+    <ul>
+      <li>
+        <div class="photo"> <div class="toolImage toolImage_forecast"></div> </div>
+        <div class="details">
+          <h3>Know <strong>when</strong> to buy</h3>
+          <p>We <strong>forecast</strong> whether prices will drop with over 80% accuracy, so you buy when prices are lowest.</p>
+        </div>
+      </li>
+      <li>
+        <div class="photo"> <div class="toolImage toolImage_search"></div> </div>
+        <div class="details">
+          <h3><strong>Search</strong> all ticket sites</h3>
+          <p>Get tickets from all the web's major ticket sites with one click.</p>
+        </div>
+      </li>
+      <li>
+        <div class="photo"> <div class="toolImage toolImage_location"></div> </div>
+        <div class="details">
+          <h3>See seat <strong>location</strong></h3>
+          <p>Each ticket is rated on whether it's a good or bad deal, so it's easy to identify the best bargains.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <h2 class="emailHeader">Get <span>notifications</span> of deals in your area.</h2>
+  
+
+<div id="get_email_updates" class="email_box">
+    <script type="text/javascript">
+        jQuery(function() {
+            jQuery("#get_email_updates form").unbind('submit'); // HACK b/c this code seems to run twice on the event page
+            jQuery("#get_email_updates form").submit(function(e) {
+                var dataString = 'email=' + encodeURIComponent(jQuery('#email').val());
+                dataString += '&ref=' + encodeURIComponent("homepage");
+                jQuery.ajax({
+                    type: "POST",
+                    url: '/main/addemail/',
+                    data: dataString,
+                    beforeSend: function(data) {
+                        jQuery('#email_success').fadeOut(200);
+                        jQuery('#indicator').show();
+                    },
+                    success: function(data) {
+                        jQuery('#indicator').hide()
+                        jQuery('#email_success').html(data);
+                        jQuery('#email_success').fadeIn(1000);
+                        return false;
+                    },
+                    error: function() {
+                        jQuery('#email_success').html("<p>An error occured. Please try submitting again.</p>");
+                        jQuery('#email_success').fadeIn(200);
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+    <form action="/main/addemail/" method="post">
+          <p id="spamSucks">We’ll email you occasionally about deals on events in your area. We don’t spam. Promise.</p>
+          <div style="display:none" id="email_success">
+              <p style="color: rgb(0, 92, 150); font-size: 14px; float: none; padding: 10px 0;">Thanks, your email has been added</p>
+          </div>
+          <div class="input_bg">
+              <input id="email" name="email" class="ghosted" type="text" value="Your email address" />
+          </div>
+          <img id="indicator" style="display:none" src="http://cdn.seatgeek.com/images/searchLoader.gif" alt="loading..." />
+          <div class="botton_box">
+              <input type="image" id="email_commit" name="commit" src="http://cdn.seatgeek.com/images/submit-btn3.png" class="botton" alt="Submit_button" />
+          </div>
+    </form>
+</div>  <div class="featured_box">
+    <h2>SeatGeek has been featured in:</h2>
+    <ul class="featured_box_left">
+      <li><div class="siteSprite siteSprite_1"></div></li>
+      <li><div class="siteSprite siteSprite_2"></div> TechCrunch 50 Finalist</li>
+      <li><div class="siteSprite siteSprite_3"></div>LA Times</li>
+      <li><div class="siteSprite siteSprite_4"></div>CNET</li>
+    </ul>
+    <ul class="right_icon">
+      <li><div class="siteSprite siteSprite_5"></div>The Wall Street Journal</li>
+      <li><div class="siteSprite siteSprite_6"></div>The New York Times</li>
+      <li><div class="siteSprite siteSprite_7"></div>TIME</li>
+      <li><div class="siteSprite siteSprite_8"></div>CNBC</li>
+      <li><div class="siteSprite siteSprite_9"></div>USA Today</li>
+      <li><div class="siteSprite siteSprite_10"></div>ESPN</li>
+      <li><div class="siteSprite siteSprite_11"></div>Sports Illustrated</li>
+      <li><div class="siteSprite siteSprite_12"></div>Mashable</li>
+    </ul>
+  </div>
+</div>
+
+<script type="text/javascript">
+try { jQuery('#searchBarInput').trigger("focus") } catch (e) {}
+jQuery.get('/main/homepage_geolocation_logic/', function (html) {
+    jQuery("#hotTickets").html(html);
+});
+
+jQuery(function() {
+    function pagerAnchorBblasafuilder(i, el) {
+      return '<li class="slider-'+(i+1)+'"><a href="#"></a></li>';
+    }
+    jQuery('ul.slider').cycle({
+      fx: 'fade',
+      pager: '#pager',
+      pause: 1,
+      timeout: 8000,
+      activePagerClass: 'active',
+      pagerAnchorBuilder: function(i, el) {
+        return '<li class="slider-'+(i+1)+'"><a href="#"></a></li>';
+      }
+    });
+});
+</script>
+
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+
+      <div class="nav-links left main-menu" id="super-hack">
+    <div class="left_curv">
+        <div class="right_curv">
+            <div id="menu">
+<ul class="nav-link-bar">
+            <li class="nav-link first">
+      <span class="link-list-container">
+        <span><a class="header-link" href="/mlb-tickets/">MLB</a></span>
+        <div class="link-list" id="mlb-link-list">
+          <table cellspacing="0" cellpadding="0" class="link-list-table">
+              <tbody>
+                  <tr>
+                      <td class="dropdown-top-left"></td>
+                      <td class="dropdown-top"></td>
+                      <td class="dropdown-top-right"></td>
+                  </tr>
+                  <tr>
+                      <td class="dropdown-left"></td>
+                      <td class="dropdown-middle">
+                                                        <div class="column">
+                                                                <a href="/arizona-diamondbacks-tickets/">Arizona Diamondbacks</a>                                                                <a href="/atlanta-braves-tickets/">Atlanta Braves</a>                                                                <a href="/baltimore-orioles-tickets/">Baltimore Orioles</a>                                                                <a href="/boston-red-sox-tickets/">Boston Red Sox</a>                                                                <a href="/chicago-cubs-tickets/">Chicago Cubs</a>                                                                <a href="/chicago-white-sox-tickets/">Chicago White Sox</a>                                                                <a href="/cincinnati-reds-tickets/">Cincinnati Reds</a>                                                                <a href="/cleveland-indians-tickets/">Cleveland Indians</a>                                                                <a href="/colorado-rockies-tickets/">Colorado Rockies</a>                                                                <a href="/detroit-tigers-tickets/">Detroit Tigers</a>                                                                <a href="/florida-marlins-tickets/">Florida Marlins</a>                                                                <a href="/houston-astros-tickets/">Houston Astros</a>                                                                <a href="/kansas-city-royals-tickets/">Kansas City Royals</a>                                                                <a href="/los-angeles-angels-tickets/">Los Angeles Angels</a>                                                                <a href="/los-angeles-dodgers-tickets/">Los Angeles Dodgers</a>                                                            </div>
+                                                        <div class="column">
+                                                                <a href="/milwaukee-brewers-tickets/">Milwaukee Brewers</a>                                                                <a href="/minnesota-twins-tickets/">Minnesota Twins</a>                                                                <a href="/new-york-mets-tickets/">New York Mets</a>                                                                <a href="/new-york-yankees-tickets/">New York Yankees</a>                                                                <a href="/oakland-athletics-tickets/">Oakland Athletics</a>                                                                <a href="/philadelphia-phillies-tickets/">Philadelphia Phillies</a>                                                                <a href="/pittsburgh-pirates-tickets/">Pittsburgh Pirates</a>                                                                <a href="/san-diego-padres-tickets/">San Diego Padres</a>                                                                <a href="/san-francisco-giants-tickets/">San Francisco Giants</a>                                                                <a href="/seattle-mariners-tickets/">Seattle Mariners</a>                                                                <a href="/st-louis-cardinals-tickets/">St. Louis Cardinals</a>                                                                <a href="/tampa-bay-rays-tickets/">Tampa Bay Rays</a>                                                                <a href="/texas-rangers-tickets/">Texas Rangers</a>                                                                <a href="/toronto-blue-jays-tickets/">Toronto Blue Jays</a>                                                                <a href="/washington-nationals-tickets/">Washington Nationals</a>                                                            </div>
+                                                    <div class="clear"></div>
+                      </td>
+                      <td class="dropdown-right"></td>
+                  </tr>
+                  <tr>
+                      <td class="dropdown-bottom-left"></td>
+                      <td class="dropdown-bottom"></td>
+                      <td class="dropdown-bottom-right"></td>
+                  </tr>
+              </tbody>
+          </table>
+        </div>
+      </span>
+    </li>
+            <li class="nav-link">
+      <span class="link-list-container">
+        <span><a class="header-link" href="/nfl-tickets/">NFL</a></span>
+        <div class="link-list" id="nfl-link-list">
+          <table cellspacing="0" cellpadding="0" class="link-list-table">
+              <tbody>
+                  <tr>
+                      <td class="dropdown-top-left"></td>
+                      <td class="dropdown-top"></td>
+                      <td class="dropdown-top-right"></td>
+                  </tr>
+                  <tr>
+                      <td class="dropdown-left"></td>
+                      <td class="dropdown-middle">
+                                                        <div class="column">
+                                                                <a href="/arizona-cardinals-tickets/">Arizona Cardinals</a>                                                                <a href="/atlanta-falcons-tickets/">Atlanta Falcons</a>                                                                <a href="/baltimore-ravens-tickets/">Baltimore Ravens</a>                                                                <a href="/buffalo-bills-tickets/">Buffalo Bills</a>                                                                <a href="/carolina-panthers-tickets/">Carolina Panthers</a>                                                                <a href="/chicago-bears-tickets/">Chicago Bears</a>                                                                <a href="/cincinnati-bengals-tickets/">Cincinnati Bengals</a>                                                                <a href="/cleveland-browns-tickets/">Cleveland Browns</a>                                                                <a href="/dallas-cowboys-tickets/">Dallas Cowboys</a>                                                                <a href="/denver-broncos-tickets/">Denver Broncos</a>                                                                <a href="/detroit-lions-tickets/">Detroit Lions</a>                                                                <a href="/green-bay-packers-tickets/">Green Bay Packers</a>                                                                <a href="/houston-texans-tickets/">Houston Texans</a>                                                                <a href="/indianapolis-colts-tickets/">Indianapolis Colts</a>                                                                <a href="/jacksonville-jaguars-tickets/">Jacksonville Jaguars</a>                                                                <a href="/kansas-city-chiefs-tickets/">Kansas City Chiefs</a>                                                            </div>
+                                                        <div class="column">
+                                                                <a href="/miami-dolphins-tickets/">Miami Dolphins</a>                                                                <a href="/minnesota-vikings-tickets/">Minnesota Vikings</a>                                                                <a href="/new-england-patriots-tickets/">New England Patriots</a>                                                                <a href="/new-orleans-saints-tickets/">New Orleans Saints</a>                                                                <a href="/new-york-giants-tickets/">New York Giants</a>                                                                <a href="/new-york-jets-tickets/">New York Jets</a>                                                                <a href="/oakland-raiders-tickets/">Oakland Raiders</a>                                                                <a href="/philadelphia-eagles-tickets/">Philadelphia Eagles</a>                                                                <a href="/pittsburgh-steelers-tickets/">Pittsburgh Steelers</a>                                                                <a href="/san-diego-chargers-tickets/">San Diego Chargers</a>                                                                <a href="/san-francisco-49ers-tickets/">San Francisco 49ers</a>                                                                <a href="/seattle-seahawks-tickets/">Seattle Seahawks</a>                                                                <a href="/st-louis-rams-tickets/">St Louis Rams</a>                                                                <a href="/tampa-bay-buccaneers-tickets/">Tampa Bay Buccaneers</a>                                                                <a href="/tennessee-titans-tickets/">Tennessee Titans</a>                                                                <a href="/washington-redskins-tickets/">Washington Redskins</a>                                                            </div>
+                                                    <div class="clear"></div>
+                      </td>
+                      <td class="dropdown-right"></td>
+                  </tr>
+                  <tr>
+                      <td class="dropdown-bottom-left"></td>
+                      <td class="dropdown-bottom"></td>
+                      <td class="dropdown-bottom-right"></td>
+                  </tr>
+              </tbody>
+          </table>
+        </div>
+      </span>
+    </li>
+            <li class="nav-link">
+      <span class="link-list-container">
+        <span><a class="header-link" href="/nba-tickets/">NBA</a></span>
+        <div class="link-list" id="nba-link-list">
+          <table cellspacing="0" cellpadding="0" class="link-list-table">
+              <tbody>
+                  <tr>
+                      <td class="dropdown-top-left"></td>
+                      <td class="dropdown-top"></td>
+                      <td class="dropdown-top-right"></td>
+                  </tr>
+                  <tr>
+                      <td class="dropdown-left"></td>
+                      <td class="dropdown-middle">
+                                                        <div class="column">
+                                                                <a href="/atlanta-hawks-tickets/">Atlanta Hawks</a>                                                                <a href="/boston-celtics-tickets/">Boston Celtics</a>                                                                <a href="/charlotte-bobcats-tickets/">Charlotte Bobcats</a>                                                                <a href="/chicago-bulls-tickets/">Chicago Bulls</a>                                                                <a href="/cleveland-cavaliers-tickets/">Cleveland Cavaliers</a>                                                                <a href="/dallas-mavericks-tickets/">Dallas Mavericks</a>                                                                <a href="/denver-nuggets-tickets/">Denver Nuggets</a>                                                                <a href="/detroit-pistons-tickets/">Detroit Pistons</a>                                                                <a href="/golden-state-warriors-tickets/">Golden State Warriors</a>                                                                <a href="/houston-rockets-tickets/">Houston Rockets</a>                                                                <a href="/indiana-pacers-tickets/">Indiana Pacers</a>                                                                <a href="/los-angeles-clippers-tickets/">Los Angeles Clippers</a>                                                                <a href="/los-angeles-lakers-tickets/">Los Angeles Lakers</a>                                                                <a href="/memphis-grizzlies-tickets/">Memphis Grizzlies</a>                                                                <a href="/miami-heat-tickets/">Miami Heat</a>                                                            </div>
+                                                        <div class="column">
+                                                                <a href="/milwaukee-bucks-tickets/">Milwaukee Bucks</a>                                                                <a href="/minnesota-timberwolves-tickets/">Minnesota Timberwolves</a>                                                                <a href="/new-jersey-nets-tickets/">New Jersey Nets</a>                                                                <a href="/new-orleans-hornets-tickets/">New Orleans Hornets</a>                                                                <a href="/new-york-knicks-tickets/">New York Knicks</a>                                                                <a href="/oklahoma-city-thunder-tickets/">Oklahoma City Thunder</a>                                                                <a href="/orlando-magic-tickets/">Orlando Magic</a>                                                                <a href="/philadelphia-76ers-tickets/">Philadelphia 76ers</a>                                                                <a href="/phoenix-suns-tickets/">Phoenix Suns</a>                                                                <a href="/portland-trail-blazers-tickets/">Portland Trail Blazers</a>                                                                <a href="/sacramento-kings-tickets/">Sacramento Kings</a>                                                                <a href="/san-antonio-spurs-tickets/">San Antonio Spurs</a>                                                                <a href="/toronto-raptors-tickets/">Toronto Raptors</a>                                                                <a href="/utah-jazz-tickets/">Utah Jazz</a>                                                                <a href="/washington-wizards-tickets/">Washington Wizards</a>                                                            </div>
+                                                    <div class="clear"></div>
+                      </td>
+                      <td class="dropdown-right"></td>
+                  </tr>
+                  <tr>
+                      <td class="dropdown-bottom-left"></td>
+                      <td class="dropdown-bottom"></td>
+                      <td class="dropdown-bottom-right"></td>
+                  </tr>
+              </tbody>
+          </table>
+        </div>
+      </span>
+    </li>
+            <li class="nav-link">
+      <span class="link-list-container">
+        <span><a class="header-link" href="/nhl-tickets/">NHL</a></span>
+        <div class="link-list" id="nhl-link-list">
+          <table cellspacing="0" cellpadding="0" class="link-list-table">
+              <tbody>
+                  <tr>
+                      <td class="dropdown-top-left"></td>
+                      <td class="dropdown-top"></td>
+                      <td class="dropdown-top-right"></td>
+                  </tr>
+                  <tr>
+                      <td class="dropdown-left"></td>
+                      <td class="dropdown-middle">
+                                                        <div class="column">
+                                                                <a href="/anaheim-ducks-tickets/">Anaheim Ducks</a>                                                                <a href="/atlanta-thrashers-tickets/">Atlanta Thrashers</a>                                                                <a href="/boston-bruins-tickets/">Boston Bruins</a>                                                                <a href="/buffalo-sabres-tickets/">Buffalo Sabres</a>                                                                <a href="/calgary-flames-tickets/">Calgary Flames</a>                                                                <a href="/carolina-hurricanes-tickets/">Carolina Hurricanes</a>                                                                <a href="/chicago-blackhawks-tickets/">Chicago Blackhawks</a>                                                                <a href="/colorado-avalanche-tickets/">Colorado Avalanche</a>                                                                <a href="/columbus-blue-jackets-tickets/">Columbus Blue Jackets</a>                                                                <a href="/dallas-stars-tickets/">Dallas Stars</a>                                                                <a href="/detroit-red-wings-tickets/">Detroit Red Wings</a>                                                                <a href="/edmonton-oilers-tickets/">Edmonton Oilers</a>                                                                <a href="/florida-panthers-tickets/">Florida Panthers</a>                                                                <a href="/los-angeles-kings-tickets/">Los Angeles Kings</a>                                                                <a href="/minnesota-wild-tickets/">Minnesota Wild</a>                                                            </div>
+                                                        <div class="column">
+                                                                <a href="/montreal-canadiens-tickets/">Montreal Canadiens</a>                                                                <a href="/nashville-predators-tickets/">Nashville Predators</a>                                                                <a href="/new-jersey-devils-tickets/">New Jersey Devils</a>                                                                <a href="/new-york-islanders-tickets/">New York Islanders</a>                                                                <a href="/new-york-rangers-tickets/">New York Rangers</a>                                                                <a href="/ottawa-senators-tickets/">Ottawa Senators</a>                                                                <a href="/philadelphia-flyers-tickets/">Philadelphia Flyers</a>                                                                <a href="/phoenix-coyotes-tickets/">Phoenix Coyotes</a>                                                                <a href="/pittsburgh-penguins-tickets/">Pittsburgh Penguins</a>                                                                <a href="/san-jose-sharks-tickets/">San Jose Sharks</a>                                                                <a href="/st-louis-blues-tickets/">St. Louis Blues</a>                                                                <a href="/tampa-bay-lightning-tickets/">Tampa Bay Lightning</a>                                                                <a href="/toronto-maple-leafs-tickets/">Toronto Maple Leafs</a>                                                                <a href="/vancouver-canucks-tickets/">Vancouver Canucks</a>                                                                <a href="/washington-capitals-tickets/">Washington Capitals</a>                                                            </div>
+                                                    <div class="clear"></div>
+                      </td>
+                      <td class="dropdown-right"></td>
+                  </tr>
+                  <tr>
+                      <td class="dropdown-bottom-left"></td>
+                      <td class="dropdown-bottom"></td>
+                      <td class="dropdown-bottom-right"></td>
+                  </tr>
+              </tbody>
+          </table>
+        </div>
+      </span>
+    </li>
+            <li class="nav-link">
+      <span class="link-list-container">
+        <span><a class="header-link" href="/concert-tickets/">Concerts</a></span>
+        <div class="link-list" id="concerts-link-list">
+          <table cellspacing="0" cellpadding="0" class="link-list-table">
+              <tbody>
+                  <tr>
+                      <td class="dropdown-top-left"></td>
+                      <td class="dropdown-top"></td>
+                      <td class="dropdown-top-right"></td>
+                  </tr>
+                  <tr>
+                      <td class="dropdown-left"></td>
+                      <td class="dropdown-middle">
+                                                        <div class="column">
+                                                                <a href="/lady-gaga-tickets/">Lady Gaga</a>                                                                <a href="/bon-jovi-tickets/">Bon Jovi</a>                                                                <a href="/taylor-swift-tickets/">Taylor Swift</a>                                                                <a href="/my-chemical-romance-tickets/">My Chemical Romance</a>                                                                <a href="/celine-dion-tickets/">Celine Dion</a>                                                            </div>
+                                                        <div class="column">
+                                                                <a href="/usher-tickets/">Usher</a>                                                                <a href="/backstreet-boys-tickets/">Backstreet Boys</a>                                                                <a href="/u2-tickets/">U2</a>                                                                <a href="/30-seconds-to-mars-tickets/">30 Seconds to Mars</a>                                                                <a href="/kenny-chesney-tickets/">Kenny Chesney</a>                                                            </div>
+                                                        <div class="column">
+                                                                <a href="/concert-tickets/">more concerts...</a>                                                            </div>
+                                                    <div class="clear"></div>
+                      </td>
+                      <td class="dropdown-right"></td>
+                  </tr>
+                  <tr>
+                      <td class="dropdown-bottom-left"></td>
+                      <td class="dropdown-bottom"></td>
+                      <td class="dropdown-bottom-right"></td>
+                  </tr>
+              </tbody>
+          </table>
+        </div>
+      </span>
+    </li>
+    <li class="nav-link" id="more-links">
+      <span class="link-list-container">
+        <span><span class="header-link">More</span></span>
+        <div class="link-list" id="more-link-list">
+          <table cellspacing="0" cellpadding="0" class="link-list-table">
+              <tbody>
+                  <tr>
+                      <td class="dropdown-top-left"></td>
+                      <td class="dropdown-top"></td>
+                      <td class="dropdown-top-right"></td>
+                  </tr>
+                  <tr>
+                      <td class="dropdown-left"></td>
+                      <td class="dropdown-middle">
+                                                    <div class="column-description">
+                                                                                        <a class="hover current" attached="theater" href="/theater-tickets/">Theater</a>                                                                                        <a class="hover" attached="fight" href="/fighting-tickets/">Fighting</a>                                                                                        <a class="hover" attached="tennis" href="/tennis-tickets/">Tennis</a>                                                                                        <a class="hover" attached="golf" href="/golf-tickets/">Golf</a>                                                                                        <a class="hover" attached="nascar" href="/nascar-tickets/">Nascar</a>                                                      </div>
+
+                          <div class="column-list">
+                                                                                                                      <span id="theater-hover-list" class="hover-list" attached="theater">
+                                                                  <a href="/radio-city-christmas-spectacular-tickets/">Radio City Christmas</a>                                                                  <a href="/lion-king-tickets/">Lion King</a>                                                                  <a href="/wicked-tickets/">Wicked</a>                                                                  <a href="/west-side-story-tickets/">West Side Story</a>                                                                  <a href="/billy-elliot-tickets/">Billy Elliot</a>                                                                  <a href="/jersey-boys-tickets/">Jersey Boys</a>                                                                  <a href="/cirque-du-soleil-tickets/">Cirque Du Soleil</a>                                                                  <a href="/rock-of-ages-tickets/">Rock of Ages</a>                                                                  <a href="/a-little-night-music-tickets/">A Little Night Music</a>                                                                  <a href="/hair-tickets/">Hair</a>                                                                  <a href="/theater-tickets/">more theater...</a>                                                              </span>
+                                                                                                                      <span id="fight-hover-list" class="hover-list" attached="fight" style="display: none;">
+                                                                  <a href="/boxing-tickets/">Boxing</a>                                                                  <a href="/strikeforce-tickets/">Strikeforce</a>                                                                  <a href="/bellator-fighting-championships-tickets/">Bellator Fighting Championships</a>                                                                  <a href="/mixed-martial-arts-mma-tickets/">Mixed Martial Arts (MMA)</a>                                                                  <a href="/ufc-128-mauricio-rua-vs-jon-jones-tickets/fighting/2011-03-19-4-pm/514551/">UFC 128 (Rua vs Jones)</a>                                                                  <a href="/ufc-129-george-st-pierre-vs-jake-shields-tickets/fighting/2011-04-30-5-pm/528298/">UFC 129 (St-Pierre vs Shields)</a>                                                                  <a href="/fighting-tickets/">more fighting events...</a>                                                              </span>
+                                                                                                                      <span id="tennis-hover-list" class="hover-list" attached="tennis" style="display: none;">
+                                                                  <a href="/us-open-tennis-championship-tickets/">US Open Championship</a>                                                                  <a href="/davis-cup-tickets/">Davis Cup</a>                                                                  <a href="/sony-ericsson-open-miami-tickets/">Sony Ericsson Open</a>                                                                  <a href="/bnp-paribas-open-tickets/">BNP Paribas Open</a>                                                                  <a href="/champions-cup-tickets/">Champions Cup</a>                                                                  <a href="/pilot-pen-tennis-championship-new-haven-tickets/">Pilot Pen Championship</a>                                                                  <a href="/la-tennis-open-tickets/">LA Tennis Open</a>                                                                  <a href="/rogers-cup-toronto-tickets/">Rogers Cup</a>                                                                  <a href="/tennis-tickets/">more tennis...</a>                                                              </span>
+                                                                                                                      <span id="golf-hover-list" class="hover-list" attached="golf" style="display: none;">
+                                                                  <a href="/masters-tickets/">Masters</a>                                                                  <a href="/us-open-golf-tickets/">US Open</a>                                                                  <a href="/british-open-tickets/">British Open</a>                                                                  <a href="/pga-championship-tickets/">PGA Championship</a>                                                                  <a href="/lpga-championship-tickets/">LPGA Championship</a>                                                                  <a href="/the-barclays-golf-tickets/">The Barclays</a>                                                                  <a href="/world-golf-championships-tickets/">World Golf Championships</a>                                                                  <a href="/arnold-palmer-invitational-tickets/">Arnold Palmer Invitational</a>                                                                  <a href="/bridgestone-invitational-tickets/">Bridgestone Invitational</a>                                                                  <a href="/golf-tickets/">more golf...</a>                                                              </span>
+                                                                                                                      <span id="nascar-hover-list" class="hover-list" attached="nascar" style="display: none;">
+                                                                  <a href="/daytona-500-tickets/">Daytona 500</a>                                                                  <a href="/food-city-500-sprint-cup-tickets/nascar/2011-03-20-1-pm/497947/">Food City 500 Sprint Cup</a>                                                                  <a href="/auto-club-500-sprint-cup-tickets/nascar/2011-03-27-1-pm/497934/">Auto Club 500 Sprint Cup</a>                                                                  <a href="/samsung-mobile-500-sprint-cup-tickets/nascar/2011-04-09-1-pm/494397/">Samsung Mobile 500</a>                                                                  <a href="/coca-cola-600-lowes-tickets/">Coca-Cola 600 Sprint Cup</a>                                                                  <a href="/brickyard-400-sprint-cup-tickets/nascar/2011-07-31-1-pm/494455/">Brickyard 400</a>                                                                  <a href="/price-chopper-400-sprint-cup-tickets/nascar/2011-10-09-1-pm/494453/">Price Chopper 400</a>                                                                  <a href="/nascar-tickets/">more nascar...</a>                                                              </span>
+                                                      </div>
+
+                          <div class="clear"></div>
+                      </td>
+                      <td class="dropdown-right"></td>
+                  </tr>
+                  <tr>
+                      <td class="dropdown-bottom-left"></td>
+                      <td class="dropdown-bottom"></td>
+                      <td class="dropdown-bottom-right"></td>
+                  </tr>
+              </tbody>
+          </table>
+        </div>
+      </span>
+    </li>
+</ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+  window.IE_HOVER_HACK = false;
+
+  jQuery('#more-links .hover').mouseover(function (e, elem) {
+    var hover = jQuery(e.currentTarget);
+    if (hover.is(".hover")) {
+      jQuery('.column-description a.hover').removeClass('current');
+      hover.addClass('current');
+      jQuery('.hover-list').hide();
+      jQuery('#' + hover.attr('attached') + '-hover-list').show();
+    }
+  });
+
+  // the timeout bs fixes flickering in IE7
+  jQuery('#super-hack .nav-link').mouseover(function (e, elem) {
+    var elem = jQuery(e.currentTarget);
+    if (elem.is('.nav-link')) {
+      clearTimeout(elem.data("timeout"));
+      elem.data("timeout", setTimeout(function () {
+        var dropdown = elem.find('.link-list'),
+            offset   = elem.position();
+        elem.addClass("over");
+        dropdown.css({
+          position: "absolute",
+          top: offset.top + elem.height() - 2,
+          left: offset.left
+        });
+      },
+      50));
+      if (document.activeElement.id == 'searchBarInput') {
+        window.IE_HOVER_HACK = true;
+        document.activeElement.blur();
+      }
+    }
+  });
+
+  jQuery('#super-hack .nav-link').mouseout(function (e, elem) {
+    var elem = jQuery(e.currentTarget);
+    if (elem.is('.nav-link')) {
+      clearTimeout(elem.data("timeout"));
+      elem.data("timeout", setTimeout(function () {elem.removeClass("over");}, 50));
+      if (window.IE_HOVER_HACK) {
+        window.IE_HOVER_HACK = false;
+        jQuery('#searchBarInput').focus();
+      }
+    }
+  });
+</script>    </div>
+    <div class="clear"></div>
+    <div id="footer">
+  <div id="footer_inner">
+    <div class="left_details">
+      <div class="cols">
+        <h4>LEARN MORE</h4>
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/press/">Press</a></li>
+          <li><a rel="nofollow" href="/partners/dashboard/">Partner program</a></li>
+        </ul>
+      </div>
+      <div class="cols">
+        <h4>GET&nbsp;BLOGS</h4>
+        <ul>
+          <li><a href="http://seatgeek.com/blog/">Company Blog</a></li>
+          <li><a href="http://seatgeek.com/sports/">Sports Blog</a></li>
+          <li><a href="http://seatgeek.com/music/">Music Blog</a></li>
+   
+        </ul>
+      </div>
+      <div class="cols">
+        <h4>GET&nbsp;IN&nbsp;TOUCH</h4>
+        <ul>
+          <li><a rel="nofollow" href="/contact/">Contact us</a></li>
+          <li><a href="/jobs/">Jobs</a></li>
+          <li><a rel="nofollow" href="http://twitter.com/seatgeek">Twitter</a></li>
+          <li><a rel="nofollow" href="http://www.facebook.com/SeatGeek">Facebook</a></li>                    
+        </ul>
+      </div>
+      <div class="cols priceRank">
+        <h4>PRICE&nbsp;STATS</h4>
+        <ul>
+          <li><a href="/football-nfl-ticket-prices/">NFL ticket prices</a></li>                    
+          <li><a href="/basketball-nba-ticket-prices/">NBA ticket prices</a></li>                    
+          <li><a href="/hockey-nhl-ticket-prices/">NHL ticket prices</a></li>                    
+          <li><a href="/baseball-mlb-ticket-prices/">MLB ticket prices</a></li>                              
+        </ul>
+      </div>      
+      <div class="cols">
+        <h4>BORING&nbsp;STUFF</h4>
+        <ul>
+          <li><a rel="nofollow" href="/privacy/">Privacy policy</a></li>
+          <li><a rel="nofollow" href="/terms/">Terms of use</a></li>
+          <li><a href="/sitemap/">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="right_details">
+      <div class="footer_logo"> <a href="/"><img alt="SeatGeek Footer Logo" src="http://cdn.seatgeek.com/images/footer_logo.jpg" /></a>        <p>&copy; 2011 SeatGeek. All rights reserved.</p>
+        <span class="clear"></span> </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<!--footer end-->  </div>
+  <!--wrapper end-->
+
+  <!-- ga_footer partial -->
+
+  <div id="get-satisfaction"></div>
+<script type="text/javascript" charset="utf-8">
+
+  SG.load_script_async(
+    ('https:' == document.location.protocol ? 'https' : 'http') + "://s3.amazonaws.com/getsatisfaction.com/javascripts/feedback-v2.js",
+    function () { return window.GSFN && window.GSFN.feedback_widget },
+    function () {
+      var feedback_widget = new GSFN.feedback_widget({
+        display:   "overlay",
+        company:   "seatgeek",
+        placement: "left",
+        color:     "#115daa",
+        style:     "question",
+        container: "get-satisfaction"
+      });
+    }
+  );
+
+</script>  <div id="login-popup" class="popupv2" style="display:none">
+    <div class="header">
+        <h2>Log in</h2>
+        <h3>Don't have an account?</h3>
+        <a href="#" class="close" onclick="sglightbox.close(); return false;"></a>
+    </div>
+    <div class="body">
+        <div class="form-left">
+            <div class="validationErrors">
+                <div style="display:none;" class="form_error" id="login_invalid">Your login is invalid. Please try again.</div>
+                <div style="display:none;" class="form_error" id="login_missing">Please enter both your email and password.</div>
+            </div>
+
+            <form id="loginForm" method="post" action="/login/">                <label>Email</label>
+                <input type="text" class="text" name="email" value="" id="login_email" />
+
+                <label>Password</label> 
+                <input type="password" class="text" name="password" value="" id="login_pass" />
+
+                <div class="note">
+                    Forgot your password?
+                    <a href="/forgot_password/">Click here to recover it.</a>                </div>
+
+                <div class="buttons">
+                    <input type="image" src="http://cdn.seatgeek.com/images/map/btn-log-in.png" alt="Log in" value="Log in" />
+                </div>
+
+                <div id="login_loading" style="display:none; float:left; padding: 10px 0px 0px 10px;">
+                    <img alt="loading..." src="http://cdn.seatgeek.com/images/blueSpin.gif" />                </div>
+            </form>
+
+        </div>
+        <div class="form-right">
+            <div class="validationErrors">
+                <div style="display:none;" class="form_error" id="login_invalid">Your login is invalid. Please try again.</div>
+                <div style="display:none;" class="form_error" id="login_missing">Please enter both your email and password.</div>
+            </div>
+
+                        <form id="registerForm" method="post" action="/register/">                <input name="user[tos]" type="hidden" value="tos" />
+
+                <label for="user_email">Email address</label>                <input type="text" name="user[email]" class="text" id="user_email" />
+                <label for="user_password">Password</label>                <input type="password" name="user[password]" class="text" id="user_password" />
+                <div class="fullname">
+                    <div class="first">
+                        <label for="user_first_name">First Name</label>                        <input type="text" name="user[first_name]" class="text" id="user_first_name" />                    </div>
+                    <div class="last">
+                        <label for="user_last_name">Last Name</label>                        <input type="text" name="user[last_name]" class="text" id="user_last_name" />                    </div>
+                </div>
+
+                <br class="spacer" />
+
+                
+                <div class="note">
+                    By clicking "Sign up", you confirm that you accept the SeatGeek
+                    <a href="/terms/">Terms of Use</a>.
+                </div>
+
+                <div class="buttons">
+                    <!--
+                    <form action="/fblogin/" id="fblogin" method="post">
+                        <fb:login-button v="2">Login with Facebook</fb:login-button>
+                    </form>
+                    <strong>or</strong>
+                    -->
+                    <input type="image" src="http://cdn.seatgeek.com/images/map/btn-sign-up.png" alt="Sign up" value="Sign up" style="position:absolute; right:0" />
+                </div>
+
+                <div id="login_loading" style="display:none; float:left; padding: 10px 0px 0px 10px;">
+                    <img alt="loading..." src="http://cdn.seatgeek.com/images/blueSpin.gif" />                </div>
+            </form>
+        </div>
+    </div>
+    <div class="login-footer"></div>
+</div></body>
+</html>

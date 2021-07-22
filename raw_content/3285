@@ -1,0 +1,2701 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head>
+
+<title>nonesuch things</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+
+
+<!--[if IE 6]><style type="text/css" media="screen">@import url("/static/custom/css/style_ie6.css");</style><![endif]-->
+<!--[if IE 7]><style type="text/css" media="screen">@import url("/static/custom/css/style_ie7.css");</style><![endif]-->
+
+
+<link rel="shortcut icon" href="/static/custom/images/favicon.ico" type="image/vnd.microsoft.icon" /> 
+<link rel="icon" href="/static/custom/images/favicon.ico" type="image/vnd.microsoft.icon" /> 
+
+<style type="text/css" media="screen">@import url("/static/custom/css/style.css");</style>
+<style type="text/css" media="screen">@import url("/static//custom/css/selectbox.css");</style>
+
+<script type="text/javascript" charset="utf-8" src="/static//system_scripts/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="/static//system_scripts/jquery.selectbox-0.5.js"></script>
+<script type="text/javascript" charset="utf-8" src="/static//system_scripts/jquery.form.js"></script>
+<script type="text/javascript" charset="utf-8" src="/static/custom/scripts/nonesuch.js"></script>
+<script type="text/javascript" charset="utf-8" src="/static/system_scripts/jquery.cookie.js"></script>
+
+
+<script type="text/javascript" charset="utf-8">
+var product_slugs = new Array();
+$(document).ready(function(){
+	$(".buy_button").click(function(){
+		// alert($(this).parent().parent("form").attr('action'));
+		// $(this).ajaxSubmit();
+		$(this).parent().parent("form").ajaxSubmit(submitOptions);
+		return false;
+	});
+	
+	var submitOptions = {
+	    url : '/cart/add/ajax/',
+	    type : 'POST',
+	    beforeSubmit : function(formArray, jqForm) {
+			$("#ajaxwindow").show().html("");
+	        return SSS.validate(formArray, jqForm, '#statusupdate');
+	    },
+	    dataType : 'json',
+	    success : function(json) {
+	        SSS.updatestatus(json, '#statusupdate', '#cart .red');
+			$("li#cart a").click();
+	    },
+		error: function (XMLHttpRequest, textStatus, errorThrown) {
+		  alert(XMLHttpRequest+"\n\n"+textStatus+"\n\n"+errorThrown);
+		}
+
+	};
+	$('select.priced').selectbox({debug: true});	
+	var shipping = new Array();
+	
+		shipping['uk'] = 4.50;
+	
+		shipping['europe-airmail-order-value-over-25'] = 7.95;
+	
+		shipping['international'] = 9.50;
+	
+		shipping['Europe'] = 4.25;
+	
+	$('form.options').ajaxForm(submitOptions);
+});
+
+</script>
+
+
+
+<body>
+<!-- BEGIN LEFT COLUM -->
+<div id="left">
+<div id="welcome_message">MT Tapes in Elle Decoration and Pink Kaweco Fountain Pen in Living Etc June 12 issues - how lovely! The next Lovely Merchants (www.lovelymerchants.wordpress.com) is 24th June . Nonesuchthings is somewhere between a blog and a shop, a place I can put a few lovely things made by some really fabulous people - Amanda x</div>
+<h1><a href="/">nonesuch<br />things</a></h1>
+<ul id="menu">
+	<li id="cart"><a href="/cart">View cart</a> <span class="red">(0 items)</span></li>
+	<li id="current-collection"><a href="/">Current collection</a>
+
+    <li class="slide"><a href="#" id="archives">Archives</a>
+        <ul id="collections">
+            <li><a href="/archive/2010">2010</a></li>
+            <li><a href="/archive/2009">2009</a></li>
+        </ul>   
+    </li>
+
+	<li id="feedback"><a href="/feedback">Feedback</a></li>
+	<li id="contact"><a href="/contact">Contact</a></li>
+	<li id="profiles"><a href="/about">About</a></li>
+	<li id="profiles"><a href="/mentions/">As seen in</a>
+	<li id="mailinglist"><a href="/mailinglist">Mailing list</a></li>
+	<li id="carpetbag"><a href="/travelling-shop/">Travelling shop</a></li>
+	<li><a href="http://twitter.com/nonesuchthings">Twitter</a></li>
+	<li><a href="http://www.facebook.com/pages/nonesuchthings/115486468486186/">Facebook</a></li>
+</ul>
+<!-- <div id="likes"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<br>
+<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like layout="button_count"></fb:like></div> -->
+<!-- menu ends --></div>
+<!-- END LEFT COLUM -->
+
+<div id="ajaxwindow" class="greyform">
+
+</div>
+<div id="right">
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-bird-house-to-go-350.jpg" width="400" height="470"/>
+<h2>Bird House "To Go"</h2>
+<p class="description">A completely new product by German company Side by Side. It is made from tin, oiled Ashwood, cord stop and comes with a pack of birdseed. Diameter is 15.5cm and 3cm high when closed and 13cm when open. It's such a neat product and an easy to post gift and a good one to take when visiting friends. Comes top of the list for a genius Father's Day gift soon approaching in June. </p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£22.00<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="bird-house-to-go" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-birthday-complimentary-pencils-328.jpg" width="400" height="485"/>
+<h2>Birthday "Complimentary" Pencils</h2>
+<p class="description">A set of 6 (2 of each compliment) that are packaged in a crisp long end opening envelope and are stamped "Complimentary" Pencils. "Extremely Gorgeous", "Birthday Beauty" and "You're a Sweetie".</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£10.00<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="birthday-complimentary-pencils" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-kaweco-pen-refills-332.jpg" width="400" height="500" alt="Kaweco Pen Refills" />
+<h2>Kaweco Pen Refills</h2>
+<p class="description">Ink cartridge refills come in a box of 6 in Black, Blue/Black, Red and Sepia. Rollerball refills come as a single in Black and come with or without writing (suitable for the Pink and Clear Pen so writing doesn't show through).</p>
+<form id="options" action="/add/" method="post">
+	
+	<div  class="option_name"> <p>Please choose</p></div>
+	<div class="option_selector">
+		 <!-- Colours -->
+		<select name="2" id="2" class="priced">
+	    
+		
+		<option value="Black">Black
+	        
+	     </option>
+		
+	    
+		
+		<option value="sepia">Sepia
+	        
+	     </option>
+		
+	    
+		
+		<option value="Red">Red
+	        
+	     </option>
+		
+	    
+		
+		<option value="Blue">Blue
+	        
+	     </option>
+		
+	    
+		
+		<option value="rollerball refill black">Rollerball refill Black
+	        
+	            (+ £0.60)
+	        
+	     </option>
+		
+	    
+	</select>
+	</div>
+	
+
+
+<div class="clear"></div>
+
+<input type="hidden", size="2", name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="kaweco-pen-refills" />
+
+<p class="buy">£2.00<br>	
+	<a href='#' class="buy_button">Buy</a>
+</p>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-kaweco-pens-352.jpg" width="400" height="485" alt="Kaweco Pens" />
+<h2>Kaweco Pens</h2>
+<p class="description">Kaweco of Heidelberg, Germany, has been making pens since 1833. This example, a design that dates to the 1930s is so lovely and easy to use. Pen length when closed is approx 10.3cm. Choose from Fountain Pen or Rollerball Pen. </p>
+<form id="options" action="/add/" method="post">
+	
+	<div  class="option_name"> <p>Please choose</p></div>
+	<div class="option_selector">
+		 <!-- Colours -->
+		<select name="2" id="2" class="priced">
+	    
+		
+		<option value="Drk Red F">Drk Red F
+	        
+	            (+ £2.00)
+	        
+	     </option>
+		
+	    
+		
+		<option value="drk red r">Drk Red R
+	        
+	     </option>
+		
+	    
+		
+	    
+		
+		<option value="clear r">Clear R
+	        
+	     </option>
+		
+	    
+		
+		<option value="black f">Black F
+	        
+	            (+ £2.00)
+	        
+	     </option>
+		
+	    
+		
+		<option value="black r">Black R
+	        
+	     </option>
+		
+	    
+		
+		<option value="clear f">Clear F
+	        
+	            (+ £2.00)
+	        
+	     </option>
+		
+	    
+		
+	    
+	</select>
+	</div>
+	
+
+
+<div class="clear"></div>
+
+<input type="hidden", size="2", name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="kaweco-pens" />
+
+<p class="buy">£15.95<br>	
+	<a href='#' class="buy_button">Buy</a>
+</p>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-kaweco-pink-pen-346.jpg" width="400" height="500" alt="Kaweco Pink Pen " />
+<h2>Kaweco Pink Pen </h2>
+<p class="description">Kaweco of Heidelberg, Germany, has been making pens since 1833. This example, a design that dates to the 1930s. I've been referring to this as "A Girl's Best Pen"! Yes, pink is ok to give into this season as it seems to be one of the main colours of the season. It's really a pocket pen and so easy to use and carry with - the lid unscrews and pop it onto the end of the pen and enjoy writing. Pen length when closed is approx 10.3cm. Choose from Fountain Pen or Rollerball.</p>
+<form id="options" action="/add/" method="post">
+	
+	<div  class="option_name"> <p>Please choose</p></div>
+	<div class="option_selector">
+		 <!-- Product variation -->
+		<select name="6" id="6" class="priced">
+	    
+		
+		<option value="pink fountain pen">Pink Fountain Pen
+	        
+	            (+ £2.00)
+	        
+	     </option>
+		
+	    
+		
+		<option value="pink rollerball">Pink Rollerball
+	        
+	     </option>
+		
+	    
+	</select>
+	</div>
+	
+
+
+<div class="clear"></div>
+
+<input type="hidden", size="2", name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="kaweco-pink-pen" />
+
+<p class="buy">£15.95<br>	
+	<a href='#' class="buy_button">Buy</a>
+</p>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-knapkin-rings-299.jpg" width="400" height="492"/>
+<h2>Knapkin Rings </h2>
+<p class="description">Great fun to use - to write dinner guest names, list the dinner courses or just write a special note to each guest. They are made from untreated maple, partly lacquered and come boxed with a slate pencil and sponge. A set of 4 that measure 5cm d x 3.3cm h. Designed by Jorg Gatjens and produced by Side by Side in Germany, who employ 120 disabled workers. </p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£29.95<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="knapkin-rings" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-lace-cuffs-308.jpg" width="400" height="500"/>
+<h2>Lace Cuffs</h2>
+<p class="description">Absolutely beautiful Lace Cuffs that pop together and can be worn so easily with anything. They are designed and produced by Hamburg-based The Girl and The Gorilla. </p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£82.00<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="lace-cuffs" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-leaf-it-post-it-notes-green-oak-306.jpg" width="400" height="529"/>
+<h2>Leaf-It Post-It Notes - Green Oak </h2>
+<p class="description">These are so exquisite and certainly make the stuff "to do" much more beautiful instead of a regular post-it! You get 20 sheets of 4 different sized leaves so 80 sheets in all. Designed by Appree and made in Korea.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£7.99<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="leaf-it-post-it-notes-green-oak" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-love-letter-stamp-set-336.jpg" width="400" height="500"/>
+<h2>Love Letter Stamp Set</h2>
+<p class="description">You get 10 little notelets and envelopes, 1 black ink pad, 1 "with love" stamp and 1 "to from" stamp. The Love Letters measure 15cm by 9.5cm.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£11.95<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="love-letter-stamp-set" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-mt-patterned-tapes-344.jpg" width="400" height="484" alt="MT Patterned Tapes" />
+<h2>MT Patterned Tapes</h2>
+<p class="description">Completely new - these lovely designs make perfect touches to gift wrapping, sealing envelopes etc. The Flower and Butterflies are 30mm wide by 10 metres long and the Pins design is 35mm wide by 10 metres long. </p>
+<form id="options" action="/add/" method="post">
+	
+	<div  class="option_name"> <p>Please choose</p></div>
+	<div class="option_selector">
+		 <!-- Product variation -->
+		<select name="6" id="6" class="priced">
+	    
+		
+		<option value="butterflies">Butterflies
+	        
+	     </option>
+		
+	    
+		
+		<option value="flowers">Flowers
+	        
+	     </option>
+		
+	    
+		
+		<option value="pins">Pins
+	        
+	            (+ £0.45)
+	        
+	     </option>
+		
+	    
+	</select>
+	</div>
+	
+
+
+<div class="clear"></div>
+
+<input type="hidden", size="2", name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="mt-patterned-tapes" />
+
+<p class="buy">£5.50<br>	
+	<a href='#' class="buy_button">Buy</a>
+</p>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-mt-tape-garden-flower-349.jpg" width="400" height="487"/>
+<h2>MT Tape - Garden Flower</h2>
+<p class="description">Completely new - another lovely flower design that makes perfect touches to gift wrapping, sealing envelopes etc. The roll is 30mm wide by 10 metres long.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£5.50<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="mt-tape-garden-flower" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-mt-tape-box-new-colours-323.jpg" width="400" height="479"/>
+<h2>MT Tape Box - new colours</h2>
+<p class="description">Completely new - this just launched treasure box of 6 MT Tape rolls of lovely prints is so beautiful - each one measures 15mm wide and 10m long. The box is beautiful in itself and the tapes store well - take one out and tear off what you need and pop it back in again and it makes a really great gift. Thanks to Mark's Europe for allowing use of the photo.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£19.50<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="mt-tape-box-new-colours" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-mt-tape-two-pack-329.jpg" width="400" height="506" alt="MT Tape Two Pack" />
+<h2>MT Tape Two Pack</h2>
+<p class="description">A set of two Japanese decorative tapes made from "Washi" (rice) paper. Check-out this link for ideas on how to use it - http://www.masking-tape.jp and click on "mt Gallery". They come in packs of two and measure 15mm wide and 10m long. Choose from Stripes or Spots. It works perfectly with inexpensive tissue paper.</p>
+<form id="options" action="/add/" method="post">
+	
+	<div  class="option_name"> <p>Please choose</p></div>
+	<div class="option_selector">
+		 <!-- Product variation -->
+		<select name="6" id="6" class="priced">
+	    
+		
+		<option value="spots">Spots
+	        
+	     </option>
+		
+	    
+		
+		<option value="stripes">Stripes
+	        
+	     </option>
+		
+	    
+	</select>
+	</div>
+	
+
+
+<div class="clear"></div>
+
+<input type="hidden", size="2", name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="mt-tape-two-pack" />
+
+<p class="buy">£5.95<br>	
+	<a href='#' class="buy_button">Buy</a>
+</p>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-paper-tape-set-337.jpg" width="400" height="500"/>
+<h2>Paper Tape Set</h2>
+<p class="description">A set of 3 paper tape rolls in 3 different designs. Each one comes in a box and they measure 10 metres long by 1.5cm wide. You get 1 "Love", 1 "Happy Birthday" and 1 Black Dot print. </p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£10.00<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="paper-tape-set" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-queen-of-hearts-ring-130.jpg" width="400" height="500"/>
+<h2>Queen of Hearts Ring</h2>
+<p class="description">This ring is so utterly stunning and so well-designed by London-based Rentaro Nishimura (as part of the Hidden Art Select 2010) and inspired by the "Queen of Hearts" by Alice in Wonderland - I assembled one today and had not quite realised that there are 3 choices of ring sizes (16mm, 17mm, 18mm)- amazing! It comes as a laser cut piece of acrylic - all you do is pop out the pieces, follow the instructions and pop it together so easily. It comes in a white envelope with card and makes such a great gift and is easy and inexpensive to send in the mail as a gift. Due to small parts not suitable for children under 36 months. </p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£15.00<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="queen-of-hearts-ring" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-ribbon-and-tag-set-338.jpg" width="400" height="500"/>
+<h2>Ribbon and Tag Set</h2>
+<p class="description">2 rolls of printed ribbon plus 3 "Happy Birthday" tags, 2 "With love" tags and 1 "thank you" tag. There are 3 metres of ribbon on each roll by 1.5cm wide and the tags measure 7.5cm by 4.cm. A very useful wrapping set that will keep you going for a good few months.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£11.00<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="ribbon-and-tag-set" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-set-of-2-knapkin-rings-301.jpg" width="400" height="532"/>
+<h2>Set of 2 Knapkin Rings</h2>
+<p class="description">You are purchasing a set of 2 Knapkin Rings only. They are perfect to add to the Set of Knapkin Rings or just buy and purchase a slate pencil from a stationery shop. Great fun to use - to write dinner guest names, list the dinner courses or just write a special note to each guest. They are made from untreated maple, partly lacquered and measure 5cm d x 3.3cm h. Designed by Jorg Gatjens and produced by Side by Wide in Germany, who employ 120 disabled workers. SET of 2 ONLY. </p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£12.50<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="set-of-2-knapkin-rings" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-i-love-you-tiny-porcelain-set-333.jpg" width="400" height="500"/>
+<h2>Set of 3 dishes "I Love You" </h2>
+<p class="description">A set of 3 porcelain dishes - "I Love You". Perfect for just looking pretty somewhere or for keeping a ring or piece of jewellery on. The largest heart measures very approximately 5.5cm by 5cm and the smallest is approximately 3.5cm by 3.2cm. They come in small cream box.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£7.99<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="set-of-3-dishes-i-love-you" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-silver-plated-pewter-key-necklace-242.jpg" width="400" height="500" alt="Silver Plated Pewter Key Necklace" />
+<h2>Silver Plated Pewter Key Necklace</h2>
+<p class="description">A lovely choice of words and sizes in these stunning Oxidised Silver Plated Pewter Keys. Each one comes on a length of narrow (3mm) grosgrain black ribbon, but they can easily be popped on a favourite chain. Small keys - Love, Luck, Friend and Eternal are all £13.50 and the larger Devotion and Grace keys are £16.50 To give you an idea of size - the smallest Love key measures 2.8cm and the largest Grace key measures 5.5cm. Please note: black narrow ribbon replaces the cord shown in the photo.
+</p>
+<form id="options" action="/add/" method="post">
+	
+	<div  class="option_name"> <p>Please choose</p></div>
+	<div class="option_selector">
+		 <!-- Product variation -->
+		<select name="6" id="6" class="priced">
+	    
+		
+		<option value="devotion">Devotion
+	        
+	            (+ £3.00)
+	        
+	     </option>
+		
+	    
+		
+		<option value="grace">Grace
+	        
+	            (+ £3.00)
+	        
+	     </option>
+		
+	    
+		
+		<option value="love">Love
+	        
+	     </option>
+		
+	    
+		
+	    
+		
+		<option value="luck">Luck
+	        
+	     </option>
+		
+	    
+		
+		<option value="Eternal">Eternal
+	        
+	     </option>
+		
+	    
+	</select>
+	</div>
+	
+
+
+<div class="clear"></div>
+
+<input type="hidden", size="2", name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="silver-plated-pewter-key-necklace" />
+
+<p class="buy">£13.50<br>	
+	<a href='#' class="buy_button">Buy</a>
+</p>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-single-mt-tape-191.jpg" width="400" height="500" alt="Single MT Tape" />
+<h2>Single MT Tape</h2>
+<p class="description">Oh my, these just look like giant sweeties in their individual wrappers - sooo good you just want to try them all! Each one measures 15mm wide by 10 metres long.</p>
+<form id="options" action="/add/" method="post">
+	
+	<div  class="option_name"> <p>Please choose</p></div>
+	<div class="option_selector">
+		 <!-- Product variation -->
+		<select name="6" id="6" class="priced">
+	    
+		
+	    
+		
+		<option value="black dot">Black dot
+	        
+	     </option>
+		
+	    
+		
+	    
+		
+		<option value="red/2 rows dots">Red/2 rows dots
+	        
+	     </option>
+		
+	    
+		
+		<option value="pink dot">Pink dot
+	        
+	     </option>
+		
+	    
+		
+	    
+		
+		<option value="stripe">Stripe
+	        
+	     </option>
+		
+	    
+		
+	    
+	</select>
+	</div>
+	
+
+
+<div class="clear"></div>
+
+<input type="hidden", size="2", name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="single-mt-tape" />
+
+<p class="buy">£3.25<br>	
+	<a href='#' class="buy_button">Buy</a>
+</p>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-single-mt-tapes-343.jpg" width="400" height="500" alt="Single MT Tapes" />
+<h2>Single MT Tapes</h2>
+<p class="description">Some lovely new colours just launched plus some old favourites too. Each roll is 15mm wide by 10metres long - perfect for wrapping presents with inexpensive tissue or brown paper. </p>
+<form id="options" action="/add/" method="post">
+	
+	<div  class="option_name"> <p>Please choose</p></div>
+	<div class="option_selector">
+		 <!-- Product variation -->
+		<select name="6" id="6" class="priced">
+	    
+		
+		<option value="green fluoro">Green fluoro
+	        
+	     </option>
+		
+	    
+		
+		<option value="green spot">Green Spot
+	        
+	     </option>
+		
+	    
+		
+		<option value="pink fluoro">Pink flouro
+	        
+	     </option>
+		
+	    
+		
+		<option value="red/2 rows dots">Red/2 rows dots
+	        
+	     </option>
+		
+	    
+		
+		<option value="turquoise green">Turquoise green
+	        
+	     </option>
+		
+	    
+		
+		<option value="red spot">Red Spot
+	        
+	     </option>
+		
+	    
+		
+		<option value="alphabet print">Alphabet print
+	        
+	     </option>
+		
+	    
+		
+		<option value="Pink stripe">Pink stripe
+	        
+	     </option>
+		
+	    
+		
+		<option value="orange fluoro">Orange Fluoro
+	        
+	     </option>
+		
+	    
+	</select>
+	</div>
+	
+
+
+<div class="clear"></div>
+
+<input type="hidden", size="2", name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="single-mt-tapes" />
+
+<p class="buy">£3.25<br>	
+	<a href='#' class="buy_button">Buy</a>
+</p>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-stamp-set-new-351.jpg" width="400" height="499"/>
+<h2>Stamp Set - NEW</h2>
+<p class="description">A quirky, lovely, fun and useful big box of stamps and ink pads. These are perfect for customising drawings, cards, gift-wrapping and can also be used on old or new photos. By French designer Zoe de las Cases.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£22.00<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="stamp-set-new" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-swallow-print-bandanna-92" width="400" height="500"/>
+<h2>Swallow Print Bandanna</h2>
+<p class="description">A stunning Bandanna with the most gorgeous Swallow print, produced by hand in small quantities in Brooklyn by Box and Flea. Machine wash cold and please hang to dry to preserve and make sure it lasts for many years to come. I'm liking mine worn with a vintage chambray denim dress. Measures 22" square. Coal black.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£20.00<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="swallow-print-bandanna" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-table-confetti-love-335.jpg" width="400" height="500"/>
+<h2>Table Confetti - Love</h2>
+<p class="description">A packet of approximately 240 heart shaped confetti - some have 'love' on them, dictionary definition of Love and others are cut from a song sheet. The package measures approx 16cm by 9cm and the approx size of the confetti is 2cm by 2cm.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£4.95<br><span class="red">Sold out</span>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="table-confetti-love" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-vintage-french-flower-pin-151.jpg" width="400" height="500"/>
+<h2>Vintage French Flower Pin - Lucky Dip</h2>
+<p class="description">I picked a box of these very old French Pins recently in Paris - they are made from Paper and have a little Grape charm and are so so pretty. Allegedly, according to the dealer, were used to celebrate the wine harvest where everyone would pop on a pin and drink heavily and celebrate. They are all great colours so I will choose and send. Just 3 left.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£4.25<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="vintage-french-flower-pin" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-complimentary-pencils-set-of-6-296.jpg" width="400" height="500"/>
+<h2>"Complimentary" Pencils - Set of 6</h2>
+<p class="description">A set of 6 (2 of each compliment) that are packaged in a crisp long end opening envelope and are stamped "Complimentary" Pencils. As featured in the Lust List, Observer 1st January.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£10.00<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="complimentary-pencils-set-of-6" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-heart-card-165.jpg" width="400" height="500"/>
+<h2>Bird Heart Card</h2>
+<p class="description">A perfect card with the most pure and gorgeous image of a flock of birds in a heart shape - shot by the marvellous Christina Wilson who does some photography for Nonesuchthings - printed on watercolour paper and blank inside, measuring 4 x 6 cm and comes with a crisp brown envelope. </p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£2.35<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="bird-heart-card" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-cuffs-by-michelle-lowe-holder-236.jpg" width="400" height="500" alt="Cuffs by Michelle Lowe-Holder" />
+<h2>Cuffs by Michelle Lowe-Holder</h2>
+<p class="description">Origami folded ribbon cuffs made from beautifully woven ribbon and leather. Michelle produces amazing hand-crafted pieces sampled and hand-crafted in the UK using antique and vintage materials and end of line trimmings with an impeccable attention to detail. Ethical and sustainable, these beautiful cuffs use historical techniques that produce a beautiful piece to covet. The single ribbon cuff is £79.50 and the double is £95. Limited stock. Adjustable with buckle fastenings. Last few ON SALE - at £35 for single and £40 for the double.</p>
+<form id="options" action="/add/" method="post">
+	
+	<div  class="option_name"> <p>Please choose</p></div>
+	<div class="option_selector">
+		 <!-- sizes -->
+		<select name="1" id="1" class="priced">
+	    
+		
+		<option value="single ribbon">Single Ribbon
+	        
+	     </option>
+		
+	    
+		
+		<option value="double ribbon">Double Ribbon
+	        
+	            (+ £5.00)
+	        
+	     </option>
+		
+	    
+	</select>
+	</div>
+	
+
+
+<div class="clear"></div>
+
+<input type="hidden", size="2", name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="cuffs-by-michelle-lowe-holder" />
+
+<p class="buy">£35.00<br>	
+	<a href='#' class="buy_button">Buy</a>
+</p>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-gingko-post-it-notes-211.jpg" width="400" height="454"/>
+<h2>Leaf-it Post-It Notes - Gingko</h2>
+<p class="description">These are so exquisite and certainly make the stuff "to do" much more beautiful instead of a regular post-it! You get 20 sheets of 3 different sized leaves so 60 sheets in all. Designed by Appree and made in Korea.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£7.99<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="leaf-it-post-it-notes-gingko" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-mt-tape-box-249.jpg" width="400" height="507"/>
+<h2>MT Tape Box</h2>
+<p class="description">A treasure box of 6 MT Tape rolls of classic Japanese prints- each one measures 15mm wide and 10m long. The box is beautiful in itself and the tapes store well - take one out and tear off what you need and pop it back in again and it makes a really great gift. Thanks to Mark's Europe for allowing use of the photo.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£19.50<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="MT-tape-box" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-mt-tape-multi-spot-78.jpg" width="400" height="500"/>
+<h2>MT Tape Multi Spot </h2>
+<p class="description">MT Tape is a fantastic Japanese decorative tape made from "Washi" (rice) paper. People are going crazy for it in Japan and I've managed to order some for Nonesuchthings to feed my addiction. It is removable and can be used for all manner of things - sticking things and writing messages on walls, fancy/thrifty/quirky gift wrapping and card making, fixing the broken remote control back, and the list goes on and on but it really does allow you to be creative and add little personal touches to wrapping and other things. Check-out this link for ideas on how to use it - http://www.masking-tape.jp and click on "mt Gallery". A pack of two measures 15mm wide and 10m long. </p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£5.95<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="mt-tape-multi-spot" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-bear-face-mirror-318.jpg" width="400" height="463"/>
+<h2>Bear Face Mirror</h2>
+<p class="description">Groom yourself in front of this delightful mirror, a great present for kids or big kids alike. Made in the EU from A grade quality oak, this is a simple but beautiful product, great for a kid’s room or for the whole family to enjoy. Dimensions 165mm x 165mm x 10mm.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£19.95<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="bear-face-mirror" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-bee-houses-319.jpg" width="400" height="500"/>
+<h2>Bee Houses</h2>
+<p class="description">These three bee houses are ideal for encouraging solitary bees into your garden to pollenate trees and flowers. These bees very rarely sting so make ideal pets. The houses are made from machined oak and rusty steel. Sold as a pack of three. Dimensions 35 x 35 x 100mm. Designed for All Lovely Stuff by Ester Comunello.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£21.95<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="bee-houses" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-coloured-steel-scissors-320.jpg" width="400" height="480" alt="Coloured Steel Scissors" />
+<h2>Coloured Steel Scissors</h2>
+<p class="description">These sturdy, metal handled Chinese scissors fit in the palm of your hand and are ideal for many snippy jobs around the home. These colourful versions of our Traditional Chinese scissors are available in a choice of colours: racing green, fantastic claret and blue. Dimensions 105 x 25 x 6mm. Steel blades and handle. Price for one pair.</p>
+<form id="options" action="/add/" method="post">
+	
+	<div  class="option_name"> <p>Please choose</p></div>
+	<div class="option_selector">
+		 <!-- Colours -->
+		<select name="2" id="2" class="priced">
+	    
+		
+		<option value="Green">Green
+	        
+	     </option>
+		
+	    
+		
+	    
+		
+		<option value="Blue">Blue
+	        
+	     </option>
+		
+	    
+	</select>
+	</div>
+	
+
+
+<div class="clear"></div>
+
+<input type="hidden", size="2", name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="coloured-steel-scissors" />
+
+<p class="buy">£6.95<br>	
+	<a href='#' class="buy_button">Buy</a>
+</p>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-flower-nails-set-of-3-277.jpg" width="400" height="500"/>
+<h2>FlowerNails - set of 3</h2>
+<p class="description">A set of 3 FlowerNails made from Stainless Steel - they measure 4cm long and the flower diameter is 1cm. They can be used on walls, shelfs and other surfaces to hang items. They make an incredibly unique gift and come in a clear bag with a card printed "Plant Me" with line illustrations showing how you can use them. </p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£9.50<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="flower-nails-set-of-3" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-leather-butterfly-hairclip-231.jpg" width="400" height="500"/>
+<h2>Leather Butterfly Hairclip</h2>
+<p class="description">A three layered butterfly hairclip with laser cut wings - just so beautiful. It measures approx 7.3cm from tip to tip of top wings and the height is approx 6cm. </p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£12.50<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="leather-butterfly-hairclip" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-mt-tape-vine-and-frame-190.jpg" width="400" height="500" alt="MT Tape Vine and Frame" />
+<h2>MT Tape Vine and Frame</h2>
+<p class="description">Choose from a single roll of wide MT Tape with a stunning Vine print or a Silver Frame print. The Vine print measures 30mm wide by 10 metres long and the Silver Frame print measures 50mm wide by 10 metres long. You can write on all MT Tapes and it is tearable, removable and reusable too. The Frame print is so perfect for writing a name on or a tiny message and adding to gift wrapping or an envelope or you can make simple tags. Please also see the MT Wrap to see how you can use it. The Vine print is £5.50 and the Silver Frame print is £8.50.</p>
+<form id="options" action="/add/" method="post">
+	
+	<div  class="option_name"> <p>Please choose</p></div>
+	<div class="option_selector">
+		 <!-- Product variation -->
+		<select name="6" id="6" class="priced">
+	    
+		
+		<option value="MT Vine">MT Vine
+	        
+	     </option>
+		
+	    
+		
+	    
+	</select>
+	</div>
+	
+
+
+<div class="clear"></div>
+
+<input type="hidden", size="2", name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="mt-tape-vine-and-frame" />
+
+<p class="buy">£5.50<br>	
+	<a href='#' class="buy_button">Buy</a>
+</p>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-mt-tapes-218.jpg" width="400" height="500" alt="MT Tapes" />
+<h2>MT Tapes</h2>
+<p class="description">MT Tape is a fantastic Japanese decorative tape made from "Washi" (rice) paper. People are going crazy for it all over the world now - it is removable and can be used for all manner of things - sticking things and writing messages on walls, fancy/thrifty/quirky gift wrapping and card making, fixing the broken remote control back, and the list goes on and on but it really does allow you to be creative and add little personal touches to wrapping and other things. Check-out this link for ideas on how to use it - http://www.masking-tape.jp and click on "mt Gallery". They come in packs of two and measure 15mm wide and 10m long. Choose from "Red with dots/white lace" or Red/Grey deco. £5.95 per pack of two.  It works perfectly with inexpensive tissue paper.</p>
+<form id="options" action="/add/" method="post">
+	
+	<div  class="option_name"> <p>Please choose</p></div>
+	<div class="option_selector">
+		 <!-- Colours -->
+		<select name="2" id="2" class="priced">
+	    
+		
+		<option value="red/grey deco">Red/Grey deco
+	        
+	     </option>
+		
+	    
+		
+		<option value="red/white lace">Red/white lace
+	        
+	     </option>
+		
+	    
+	</select>
+	</div>
+	
+
+
+<div class="clear"></div>
+
+<input type="hidden", size="2", name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="MT-tapes" />
+
+<p class="buy">£5.95<br>	
+	<a href='#' class="buy_button">Buy</a>
+</p>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-paper-eyelashes-deer-and-butterfly-regular-260" width="400" height="457"/>
+<h2>Paper Eyelashes - Deer and Butterfly (regular)</h2>
+<p class="description">Inspired by the art of Chinese paper cutting, these delicately pretty and intricately cut paper eyelashes are so utterly exquisite. They come in a really neat little box with a display window and make a fabulous and surprising gift and are just plain fun to wear. The designs come steeped in Chinese symbolic meaning with "Deer and Butterfly" meaning "free, sensitive and delicate". You receive one pair that can be used as is or cut up and used. Use with regular eyelash glue. By Paperself. Please click the Facebook link on Menu to see more photos.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£12.50<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="paper-eyelashes-deer-and-butterfly-regular" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-minnie-hairclip-by-mawi-disney-couture-289.jpg" width="400" height="500"/>
+<h2>Minnie by Mawi/Disney Couture Hairclip</h2>
+<p class="description">A great fun hairclip from this amazing range produced by Disney Couture for jewellery brand Mawi. Gold plated and black enamel.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£14.50<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="minnie-hairclip-by-mawi-disney-couture" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-minnie-crystal-earrings-by-mawi-disney-couture-292.jpg" width="400" height="500"/>
+<h2>Minnie Crystal Earrings by Mawi/Disney Couture</h2>
+<p class="description">Lovely gold plated, black enamel and crystal small stud earrings by Mawi/Disney Couture. Approximately 1 cm wide by .8mm high. Just a few left - on sale.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£19.95<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="minnie-crystal-earrings-by-mawi-disney-couture" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-agatha-postcard-set-324.png" width="400" height="511"/>
+<h2>Agatha Postcard Set</h2>
+<p class="description">A very useful set of postcards - by Sugalily. Set of 6.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£5.00<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="agatha-postcard-set" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-heart-key-tiny-brooch-pin-217.jpg" width="400" height="500" alt="Heart Key Tiny Brooch Pin" />
+<h2>Heart Key Tiny Brooch Pin</h2>
+<p class="description">Specially commissioned for Nonesuchthings, this delightful teeny tiny brooch pin comes in Silver Plated brass. The overall length is approximately 4.1cm. SPECIAL OFFER WHILST STOCKS LAST (usual price is £10.50). Gold is now sold out.</p>
+<form id="options" action="/add/" method="post">
+	
+	<div  class="option_name"> <p>Please choose</p></div>
+	<div class="option_selector">
+		 <!-- Colours -->
+		<select name="2" id="2" class="priced">
+	    
+		
+	    
+		
+		<option value="Silv.">Silver
+	        
+	     </option>
+		
+	    
+	</select>
+	</div>
+	
+
+
+<div class="clear"></div>
+
+<input type="hidden", size="2", name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="heart-key-tiny-brooch-pin" />
+
+<p class="buy">£6.00<br>	
+	<a href='#' class="buy_button">Buy</a>
+</p>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-key-handled-mug-gold-321.psd" width="" height=""/>
+<h2>Key Handled Mug - Gold - ON SALE</h2>
+<p class="description">A stunning Bone China mug by British designer Gary Birks, that has been made in Stoke-on-Trent with traditional methods. Measures 9cm diameter across the top and is 10cm high. Handwash only. Currently reduced from £18.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£10.00<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="key-handled-mug-gold" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-key-handled-mug-red-322.tif" width="400" height="513"/>
+<h2>Key Handled Mug - Red - ON SALE</h2>
+<p class="description">A stunning Bone China mug by British designer Gary Birks, that has been made in Stoke-on-Trent with traditional methods. Measures 9cm diameter across the top and is 10cm high. Handwash only. Currently on sale from £16.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£8.00<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="key-handled-mug-red" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-flower-girl-pin-179.jpg" width="400" height="500" alt="Flower Girl Pin" />
+<h2>Flower Girl Pin</h2>
+<p class="description">Another beautiful pin - this time with a gorgeous flower charm - again Rose Gold or Silver Plated brass. These Pins are so tiny - part of the reason they have been so popular as they are so teeny tiny and pretty and delicate. They are so easy to wear and look quite lovely pinned on a shirt or dress or almost anywhere because they are so little. The plating is quite matt which gives them such a lovely look. The Pin length is approx 27mm and the Flower is approx 8mm. By Hunter NY. Oh and each pin comes in a tiny cotton drawstring bag. Rose Gold is now sold out and just a few left of silver.</p>
+<form id="options" action="/add/" method="post">
+	
+	<div  class="option_name"> <p>Please choose</p></div>
+	<div class="option_selector">
+		 <!-- Colours -->
+		<select name="2" id="2" class="priced">
+	    
+		
+		<option value="Silv.">Silver
+	        
+	     </option>
+		
+	    
+		
+	    
+	</select>
+	</div>
+	
+
+
+<div class="clear"></div>
+
+<input type="hidden", size="2", name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="flower-girl-pin" />
+
+<p class="buy">£9.50<br>	
+	<a href='#' class="buy_button">Buy</a>
+</p>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-bear-bag-shopper-blue-dot-234.jpg" width="400" height="500" alt="Bear Bag Shopper - Blue Dot" />
+<h2>Bear Bag Shopper - Blue Dot</h2>
+<p class="description">This little chap is so incredibly useful and adorable. The bear measures 25cm and the bag is 35 x 45cm and the bear has a metal clasp hook to attach. By Perigot and photo credit - Perigot. This bag comes in 2 sizes - Small for a younger shopper which measures 23 x 22cm and the bear is 15cm. Medium which is a classic shopper size measuring 35 x 45cm and the bear is 25cm. CURRENTLY ON SPECIAL - The small is £9.00 reduced from £16.50 and the medium is £11.00 reduced from £23.50. Medium now sold out.</p>
+<form id="options" action="/add/" method="post">
+	
+	<div  class="option_name"> <p>Please choose</p></div>
+	<div class="option_selector">
+		 <!-- sizes -->
+		<select name="1" id="1" class="priced">
+	    
+		
+	    
+		
+		<option value="S">Small
+	        
+	     </option>
+		
+	    
+	</select>
+	</div>
+	
+
+
+<div class="clear"></div>
+
+<input type="hidden", size="2", name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="bear-bag-shopper-blue-dot" />
+
+<p class="buy">£9.00<br>	
+	<a href='#' class="buy_button">Buy</a>
+</p>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-flocked-butterfly-clip-brooch-288.jpg" width="400" height="476"/>
+<h2>Flocked Butterfly Clip Brooch</h2>
+<p class="description">An amazingly clever and amusing take on the classic black office paper clip, by London jeweller Frances Wadsworth-Jones. I just fell in love with it when I saw it and it makes a very understated Brooch. Measurements - from wingtip top and wingtip bottom is around 3.3cm and the black part is 1.9cm high. Each ones comes in the small envelope. </p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£14.00<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="flocked-butterfly-clip-brooch" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-flower-nail-notice-note-pad-297.jpg" width="400" height="520"/>
+<h2>FlowerNail Notice Note Pad</h2>
+<p class="description">A genius "to do" notepad - no excuses not to be drawn to the lovely writing pad nailed to an oak board with a FlowerNail to write down your neverending things to do or buy! Once the paper has gone, just re-nail a batch of cut up recycled paper. 7 x 14cm.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£10.95<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="flower-nail-notice-note-pad" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-mt-wrap-185.jpg" width="400" height="500" alt="MT Wrap" />
+<h2>MT Wrap</h2>
+<p class="description">A genius roll of MT Wrap - just pull and tear off - the inside edges are sticky which helps form a great little gift package. Add a few bits of MT Tape to decorate or help secure edges and even a name label from the MT Label roll. Measures 25.5cm wide by 5 metres long and is suitable for small gift wrapping. Check-out this Youtube video on how it's used - http://www.youtube.com/watch?v=Buv9aJ8PRms (copy this into your browser) Just a few left - reduced from £23.50.</p>
+<form id="options" action="/add/" method="post">
+	
+	<div  class="option_name"> <p>Please choose</p></div>
+	<div class="option_selector">
+		 <!-- Product variation -->
+		<select name="6" id="6" class="priced">
+	    
+		
+		<option value="Pink stripe">Pink stripe
+	        
+	     </option>
+		
+	    
+		
+		<option value="Blue dot">Blue dot
+	        
+	     </option>
+		
+	    
+		
+	    
+	</select>
+	</div>
+	
+
+
+<div class="clear"></div>
+
+<input type="hidden", size="2", name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="mt-wrap" />
+
+<p class="buy">£18.00<br>	
+	<a href='#' class="buy_button">Buy</a>
+</p>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-paper-eyelashes-bird-298.500" width="400" height="452"/>
+<h2>Paper Eyelashes - Bird</h2>
+<p class="description">Inspired by the art of Chinese paper cutting, these delicately pretty and intricately cut paper eyelashes are so utterly exquisite. They come in a really neat little box with a display window and make a fabulous and surprising gift and are just plain fun to wear. You receive one pair that can be used as is or cut up and used. Use with regular eyelash glue. By Paperself.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£12.50<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="paper-eyelashes-bird" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-tiny-diamond-ring-and-pearl-ring-necklace-303.jpg" width="400" height="545"/>
+<h2>tiny "Diamond" Ring and Pearl Ring Necklace</h2>
+<p class="description">By Paris-based Benedicte Mouret, this beautiful necklace is made from Gold Plated Sterling Silver (Vermeil) and is set with the tiniest Zircon stone to immitate a classic diamond ring linked with a tiny Pearl Ring. The chain length is approx 41.5cm (just over 16").</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£78.00<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="tiny-diamond-ring-and-pearl-ring-necklace" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-tiny-diamond-ring-earrings-300.jpg" width="400" height="520"/>
+<h2>Tiny "Diamond" Ring Earrings</h2>
+<p class="description">By Paris-based Benedicte Mouret, these beautiful earrings are made from Gold Plated Sterling Silver (Vermeil) and are set with the tiniest Zircon stone to immitate a classic diamond ring. Necklaces are also available in this range and soon to be available in the shop.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£68.00<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="tiny-diamond-ring-earrings" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-tiny-diamond-ring-necklace-302.jpg" width="400" height="530"/>
+<h2>Tiny "Diamond" Ring Necklace</h2>
+<p class="description">By Paris-based Benedicte Mouret, this beautiful necklace is made from Gold Plated Sterling Silver (Vermeil) and is set with the tiniest Zircon stone to immitate a classic diamond ring. The chain length is approx 41.5cm (just  over 16").</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£68.00<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="tiny-diamond-ring-necklace" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-practically-perfect-in-every-way-sticky-tape-314.jpg" width="400" height="500"/>
+<h2>Practically Perfect in Every Way - Sticky Tape</h2>
+<p class="description">10 metres of this fab tape makes a brilliant addition to your wrapping supplies. It's 2.5cm wide. By Nancy & Betty.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£5.95<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="practically-perfect-in-every-way-sticky-tape" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-bear-bag-shopper-red-dot-235.jpg" width="400" height="493" alt="Bear Bag Shopper - Red Dot" />
+<h2>Bear Bag Shopper - Red Dot</h2>
+<p class="description">This little chap is so incredibly useful and adorable. The bear measures 25cm and the bag is 35 x 45cm and the bear has a metal clasp hook to attach. By Perigot and photo credit - Perigot. This bag comes in 2 sizes - Small for a younger shopper which measures 23 x 22cm and the bear is 15cm. Medium which is a classic shopper size measuring 35 x 45cm and the bear is 25cm. CURRENTLY ON SPECIAL - The small is £9.00 reduced from £16.50 and the medium is £11.00 reduced from £23.50. Also available in Blue Dot.</p>
+<form id="options" action="/add/" method="post">
+	
+	<div  class="option_name"> <p>Please choose</p></div>
+	<div class="option_selector">
+		 <!-- sizes -->
+		<select name="1" id="1" class="priced">
+	    
+		
+		<option value="S">Small
+	        
+	     </option>
+		
+	    
+		
+		<option value="medium">Medium (bag)
+	        
+	            (+ £3.00)
+	        
+	     </option>
+		
+	    
+	</select>
+	</div>
+	
+
+
+<div class="clear"></div>
+
+<input type="hidden", size="2", name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="Bear-bag-shopper-red-dot" />
+
+<p class="buy">£9.00<br>	
+	<a href='#' class="buy_button">Buy</a>
+</p>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-mt-tape-wide-duo-173.jpg" width="400" height="492"/>
+<h2>MT Tape Wide Duo - Green</h2>
+<p class="description">A set of 2 extra wide MT Tapes featuring the hugely popular Red Multi-Spot but in a wider version - width is 30mm and there's 10 metres of lovelieness! Photo credit Mark's Europe. 3 left.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£9.95<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="mt-tape-wide-duo-green" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-rose-knitted-necklace-35.jpg" width="400" height="500"/>
+<h2>Rose Knitted Necklace</h2>
+<p class="description">By The Girl and the Gorilla, Hamburg. A very unusual and stunning necklace with an embroidered rose on leather backing with knitted 'ribbons' that go around your neck and tie in a double knot neatly under the rose. Reduced from £69.  One left.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£30.00<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="rose-knitted-necklace" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-flower-holder-169.jpg" width="400" height="500"/>
+<h2>Flower Holder</h2>
+<p class="description">A beautiful and so simple hanging flower holder - perfect for a special place at home - a hook, a nail or a small handle. It's made from wire and glass and is by Fog Linen Work, Japan and measures from top of wire to bottom 25cm and the glass tube is just over 12cm long. PLEASE NOTE - the flower in the photo was used for the shot and does not come with the Flower Holder. </p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£11.95<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="flower-holder" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item">
+<img src="/static/images/productimage-picture-silver-plated-locket-pin-154.jpg" width="400" height="500"/>
+<h2>Tiny Silver Plated Locket Pin</h2>
+<p class="description">These Pins are so tiny - part of the reason they have been so popular as they are so teeny tiny and pretty and delicate. I think they would also look quite lovely too pinned on a shirt or dress collar or almost anywhere because they are so little. The plating is quite matt which gives them such a lovely look. The Pin length is approx 27mm and the Locket is approx 12mm by 7mm. by Hunter NY. Oh and each little Pin comes in a tiny cotton bag.  Rose Gold Plate is now sold out.</p>
+<form class="options" action="/add/" method="post">
+<p class="buy">
+	
+	£9.50<br><a href='#' class="buy_button">Buy</a>
+	
+</p>
+
+
+<input type="hidden" size="2" name="quantity" id="quantity" value="1" class="priced" />
+<input type="hidden" name="productname" id="productname" value="tiny-silver-plated-locket-pin" />
+
+</form>
+</div>
+
+
+
+
+
+
+
+<p class="footer">
+Photos: <a href="http://www.christinawilson.co.uk">www.christinawilson.co.uk</a><br />Copyright: <a href="http://www.nonesuchthings.com">www.nonesuchthings.com</a>. All rights reserved.<br /><a href="/terms-and-conditions/">Terms and conditions of sale</a>
+</p>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-437974-27");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

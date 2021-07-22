@@ -1,0 +1,334 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+	<meta name="Keywords" content="world clock, population, birth, death, population counter,  counter, Peter Russell,">
+	<meta name="Description" content="World Clock showing birth and death rates, plus oil usage">
+	<meta name="MSSmartTagsPreventParsing" content="TRUE">
+<!-- CSS and JS files -->
+<link href="/css/main.css" rel="stylesheet" type="text/css" media="screen">
+<link href="http://www.peterrussell.com/css/print.css" rel="stylesheet" type="text/css" media="print">
+
+<link href="/css/dropdown.css" rel="stylesheet" type="text/css" media="all">
+
+<script type="text/javascript" src="/js/dropdown.js"></script> 
+
+<script type="text/javascript" src="http://www.peterrussell.com/js/mailvalidator.js"></script> 
+
+
+<title>Life Expectancy Calculator</title> 
+</head>
+<body leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">
+<div id="wrapper">
+<div align="center">
+		<div id="header">
+		<p>Printed from Peter Russell's site The Spirit of Now<br>http://www.peterrussell.com<p>
+			
+		</div> <!-- end header -->
+			
+								<div id="nav">
+<a onmouseover="dropdownmenu(this, event, menu1, '85px');changeImages('son_header_03','http://www.peterrussell.com/images/nav_images/Home_over.png');return true" onmouseout="delayhidemenu();changeImages('son_header_03','http://www.peterrussell.com/images/nav_images/Home.png');return true" onfocus="this.blur()" href="/index2.php"><img id="son_header_03" src="http://www.peterrussell.com/images/nav_images/Home.png" alt="home" name="son_header_03" width="66" height="28" border="0"></a><a onmouseover="dropdownmenu(this, event, menu2, '75px');changeImages('son_header_04','http://www.peterrussell.com/images/nav_images/Bio_over.png');return true" onmouseout="delayhidemenu();changeImages('son_header_04','http://www.peterrussell.com/images/nav_images/Bio.png');return true" onfocus="this.blur()" href="/pete.php"><img id="son_header_04" src="http://www.peterrussell.com/images/nav_images/Bio.png" alt="Bio" name="son_header_04" width="39" height="28" border="0"></a><a onmouseover="dropdownmenu(this, event, menu3, '75px');changeImages('son_header_05','http://www.peterrussell.com/images/nav_images/Speaking_over.png');return true" onmouseout="delayhidemenu();changeImages('son_header_05','http://www.peterrussell.com/images/nav_images/Speaking.png');return true" onfocus="this.blur()" href="/Speaker/"><img id="son_header_05" src="http://www.peterrussell.com/images/nav_images/Speaking.png" alt="Speaking" name="son_header_05" width="78" height="28" border="0"></a><a onmouseover="dropdownmenu(this, event, menu4, '165px');changeImages('son_header_06','http://www.peterrussell.com/images/nav_images/Articles_over.png');return true" onmouseout="delayhidemenu();changeImages('son_header_06','http://www.peterrussell.com/images/nav_images/Articles.png');return true" onfocus="this.blur()" href="/articleIndex.php"><img id="son_header_06" src="http://www.peterrussell.com/images/nav_images/Articles.png" alt="Articles" name="son_header_06" width="66" height="28" border="0"></a><a onmouseover="dropdownmenu(this, event, menu5, '185px');changeImages('son_header_07','http://www.peterrussell.com/images/nav_images/Books_over.png');return true" onmouseout="delayhidemenu();changeImages('son_header_07','http://www.peterrussell.com/images/nav_images/Books.png');return true" onfocus="this.blur()" href="/Ordering.php"><img id="son_header_07" src="http://www.peterrussell.com/images/nav_images/Books.png" alt="Books" name="son_header_07" width="59" height="28" border="0"></a><a onmouseover="dropdownmenu(this, event, menu6, '165px');changeImages('son_header_08','http://www.peterrussell.com/images/nav_images/Tapes_over.png');return true" onmouseout="delayhidemenu();changeImages('son_header_08','http://www.peterrussell.com/images/nav_images/Tapes.png');return true" onfocus="this.blur()" href="/Ordering.php#tapes"><img id="son_header_08" src="http://www.peterrussell.com/images/nav_images/Tapes.png" alt="Tapes" name="son_header_08" width="88" height="28" border="0"></a><a onmouseover="dropdownmenu(this, event, menu7, '110px');changeImages('son_header_09','http://www.peterrussell.com/images/nav_images/Streams_over.png');return true" onmouseout="delayhidemenu();changeImages('son_header_09','http://www.peterrussell.com/images/nav_images/Streams.png');return true" onfocus="this.blur()" href="/TV/"><img id="son_header_09" src="http://www.peterrussell.com/images/nav_images/Streams.png" alt="Streams" name="son_header_09" width="71" height="28" border="0"></a><a onmouseover="dropdownmenu(this, event, menu8, '125px');changeImages('son_header_10','http://www.peterrussell.com/images/nav_images/Meditations_over.png');return true" onmouseout="delayhidemenu();changeImages('son_header_10','http://www.peterrussell.com/images/nav_images/Meditations.png');return true" onfocus="this.blur()" href="/Meditation/Meditations.php"><img id="son_header_10" src="http://www.peterrussell.com/images/nav_images/Meditations.png" alt="meditations" name="son_header_10" width="93" height="28" border="0"></a><a onmouseover="dropdownmenu(this, event, menu9, '110px');changeImages('son_header_11','http://www.peterrussell.com/images/nav_images/More_over.png');return true" onmouseout="delayhidemenu();changeImages('son_header_11','http://www.peterrussell.com/images/nav_images/More.png');return true" onfocus="this.blur()" href="/Overview.php"><img id="son_header_11" src="http://www.peterrussell.com/images/nav_images/More.png" alt="More" name="son_header_11" width="61" height="28" border="0"></a>				
+                </div> <!-- end bav -->
+
+		
+	</div> <!-- end center -->	<div id="body">
+		<div id="sidebar">
+			<div align="left">
+<!-- 
+		<div class='nexteventbox'>
+<p class='nexteventboxinfo'>Next West Coast Event<br><i><b><a href='http://www.peterrussell.com/Speaker/SG.php'>From Science to God</b></a></i><br>Noetic Sciences, CA. Apr 16-18</p>
+			</div>
+			<div class='clearboth'></div>  -->
+
+<h7><a href="/optin/optin.php">Subscribe to Newsletter</a></h7><br>
+<div class="bkgdark">
+<FORM Name="sidsubsc" method=POST action="/optin/OptinProcessSidebar.php" onSubmit="return checkMailId(sidsubsc.roo9.value)">
+<input type="text" name="email" style="display: none;" value="nobot">
+<input type="hidden" name="listName" value="Site Updates">
+<INPUT  TYPE="text"  name="roo9" Value="Enter email here" SIZE="15" MAXLENGTH="200" class="form" style="border: 1px solid #71929B"> 
+<INPUT type=submit value="Subscribe" class="form"><br>
+<div style="text-align: right;margin:0 9px 0 0;">
+<!-- <small  style = "display:none"  >Receive 20% discount on all products<br></small> -->
+<a href="/optin/PrivacyPolicy.php"><small>Details / Privacy Policy</small></a>
+</div></FORM>
+</div>
+
+
+<h7> <a href="/WhatsNew.php"> Recent Additions to Site</a> </h7><br>
+ 
+<h7> <a href="/Odds/Popular.php"> Most Popular Pages</a> </h7><br>
+					
+<h7> <a href="/PotLuck.php"> Random Page</a> </h7><br>
+
+<h7> <a href="/articleIndexFull.php"> Site Index</a> </h7><br>
+					
+<h7> <a href="/blog/"> Blog</a> </h7><br> 
+					
+<h7> <a href="/Speaker/Calendar.php"> Upcoming Events</a> </h7><br>
+
+ <h7> <a href="/Ordering.php"> Books, Tapes, CDs, DVDs </a> </h7><br> 						
+
+<!-- 
+ <P class="center"><img src="http://www.peterrussell.com/Icons/books/sidebar/gb.jpg" width="80" height="129" border="0" align ="left" hspace="15" ><br><a href="http://www.peterrussell.com/GB/globalbrain.php">The Global <br>Brain</a><br><span class="small">A much needed, optimistic perspective on the future<br>- Ted Turner</span></P> <br clear='all'> 					
+ 
+ <P class="center"><img hspace="5" src="http://www.peterrussell.com/Icons/books/sidebar/combodvd.jpg" border="0" align ="right" ><br><a href="http://www.peterrussell.com/Ordering.php#DVD">The Global <br>Brain<br><i>and</i><BR>The White Hole<BR>in Time</a><br><span class="small">(DVD)<br>Two classic videos on single DVD</span></P> <br clear='all'> 	 
+ 
+ -->
+ <h7> <a href="/Odds/consulting.php"> Consultations</a> </h7><br> 						
+
+<h7><a href="javascript:window.location.reload()">Quote of the Moment</a></h7> 
+ <div class="bkgdark"><p class="randquote left" >You have no cause for anything but gratitude and joy.</p><P class="randquote right"><I>Buddhist teaching </I></p> </div>
+ 
+ <h7><a href="http://twitter.com/peterjrussell">Follow me on <img src="/Icons/tweeter.gif" width="51" height="12" border="0" ></a></h7>
+
+<div class="bkgdark">
+<!-- <h7>Search Site:</h7> -->
+	<form method="get" action="http://search.atomz.com/search/">
+ <input size="20" class="form" name="sp-q" style="border: 1px solid #71929B" value="   ...Search Site..."> 
+ <input type="submit" class="form" value="Go"> 
+ <input type="hidden" name="sp-a" value="sp1003b74a"> <br>
+ <a href="/search.php"><small>Advanced Search &gt;&gt;</small></a>
+</form>
+ </div>
+		
+
+<div class="bkgdark " style="height:45px">
+ Translate this page into:
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+</script>
+<div class="form"><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div> </div>
+			</div> <!-- end left -->
+		</div> <!-- end sidebar -->
+		
+		<div id="page">
+			<div id="content">
+
+<div id="toplineblock">		
+
+</div> <!-- end toplineblock -->
+
+
+
+ 	
+<div class="mainblock"> 
+
+<h2 align="center">Life Expectancy Calculator</h2>
+
+<div class="wcalso">
+<div class="also">See also:<br>
+<a href="/Odds/WorldClock.php">The World Clock - Various Global Statistics &gt;&gt;</a><br>
+<a href="/Odds/FoodClock.php">Food Clock - Principal foodstuffs produced &gt;&gt;</a>
+<br>
+</div>
+
+<div class="wcsubscribe">
+<FORM Name="subsc" method=POST action="../optin/OptinProcess2.php" onSubmit="return checkMailId(subsc.roo9.value)">
+<input type="text" name="email" style="display: none;" value="nobot">
+Subscribe to newsletter  <span style="float:right;margin-right:15px"><a href="/optin/PrivacyPolicy.php">Privacy Policy</a></span><br>
+<input type="hidden" name="listName" value="World Clock">
+<INPUT TYPE="text"  name="roo9" Value="Enter Address" SIZE="23" MAXLENGTH="200" >&nbsp;<INPUT type=submit value="Subscribe" class="form"></FORM>
+</div>
+
+<div class="wcefriend">
+<SMALL><a href="#" onClick="window.open('/Rec/EmailFriend.php?title='+document.title+'&URL='+document.location+'','EmailFriendForm','width=550,height=570,resizable=yes,scrollbars=yes,toolbar=no,screenX=0,screenY=0,left=0,top=0');if (window.focus) {newwindow.focus()};return false"><img src="/Icons/emailLogo.gif" alt="" width="17" height="11" border="0">Email friend</a></SMALL>  
+</div> <!-- end efriend -->
+
+<div class="wcsocialLinks">
+        <small>Share:</small>
+	<a rel="nofollow" target="_blank" href="http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.peterrussell.com%2FOdds%2FVirtualAge.php&amp;t=From%20Peter%20Russell,%20The%20Spirit%20of%20Now%3A%20%20Life%20Expectancy%20Calculator" title="Facebook"><img src="/Icons/socialLogos/facebook.gif" title="Facebook" alt="Facebook" class="sociable-hovers" width="14" height="14" hspace="1" border="0" ></a>
+	<a rel="nofollow" target="_blank" href="http://twitter.com/home?status=From%20Peter%20Russell,%20The%20Spirit%20of%20Now%3A%20%20Life%20Expectancy%20Calculator%20http%3A%2F%2Fwww.peterrussell.com%2FOdds%2FVirtualAge.php" title="Twitter"><img src="/Icons/socialLogos/twitter.gif" title="Twitter" alt="Twitter" class="sociable-hovers" width="14" height="14" hspace="1" border="0" ></a>
+	<a rel="nofollow" target="_blank" href="http://www.myspace.com/Modules/PostTo/Pages/?u=http%3A%2F%2Fwww.peterrussell.com%2FOdds%2FVirtualAge.php&amp;t=From%20Peter%20Russell,%20The%20Spirit%20of%20Now%3A%20%20Life%20Expectancy%20Calculator" title="MySpace"><img src="/Icons/socialLogos/myspace.gif" title="MySpace" alt="MySpace" class="sociable-hovers" width="14" height="14" hspace="1" border="0" ></a>
+	<a rel="nofollow" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fwww.peterrussell.com%2FOdds%2FVirtualAge.php&amp;title=From%20Peter%20Russell,%20The%20Spirit%20of%20Now%3A%20%20Life%20Expectancy%20Calculator" title="LinkedIn"><img src="/Icons/socialLogos/linkedin.png" title="LinkedIn" alt="LinkedIn" class="sociable-hovers" width="14" height="14" hspace="1" border="0" ></a>
+        <a rel="nofollow" target="_blank" href="http://delicious.com/post?url=http%3A%2F%2Fwww.peterrussell.com%2FOdds%2FVirtualAge.php&amp;title=From%20Peter%20Russell,%20The%20Spirit%20of%20Now%3A%20%20Life%20Expectancy%20Calculator" title="del.icio.us"><img src="/Icons/socialLogos/delicious.png" title="del.icio.us" alt="del.icio.us" class="sociable-hovers" width="14" height="14" hspace="1" border="0" ></a>
+	<a rel="nofollow" target="_blank" href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Fwww.peterrussell.com%2FOdds%2FVirtualAge.php&amp;title=From%20Peter%20Russell,%20The%20Spirit%20of%20Now%3A%20%20Life%20Expectancy%20Calculator" title="Digg"><img src="/Icons/socialLogos/digg.png" title="Digg" alt="Digg" class="sociable-hovers" width="14" height="14" hspace="1" border="0" ></a>
+	<a rel="nofollow" target="_blank" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.peterrussell.com%2FOdds%2FVirtualAge.php&amp;title=From%20Peter%20Russell,%20The%20Spirit%20of%20Now%3A%20%20Life%20Expectancy%20Calculator" title="StumbleUpon"><img src="/Icons/socialLogos/stumbleupon.png" title="StumbleUpon" alt="StumbleUpon" class="sociable-hovers" width="14" height="14" hspace="1" border="0" ></a>
+</div> <!-- end socialLinks --></div> 
+
+<div style="margin-bottom:7px; font-size:120%"> <i>Explore this Site's Recurrent Themes</i></div>
+			<div class="wcindexbox">
+			<a href= "/SCG/aboutscg.php"><img src="/Icons/indexboxes/SciConscLogoBox.jpg" width="95" height="95" hspace="6" vspace="6" border="0" align="middle"></a><br>
+			<a href= "/SCG/aboutscg.php">Science and<br>Consciousness</a>
+			</div>
+			<!-- 
+<div class="indexboxinfo">
+			<p><a href= "SCG/aboutscg.php"><big>Science and Consciousness</big></A></p> 
+<p>Can science explain consciousness?<br>
+How has consciousness evolved?<br>
+Are all creatures conscious?<br>
+Is reality all in the mind? </P>
+</div>
+ -->
+
+<div class="wcindexbox">
+			<a href="/SpiritAwake/aboutspiritawake.php"><img src="/Icons/indexboxes/SpiritAwakeBox.jpg" width="95" height="83" hspace="6" vspace="12" border="0" align="middle"></a><br>
+			<a href="/SpiritAwake/aboutspiritawake.php">Spiritual<br>Awakening</a>
+			</div> 
+			<!-- 
+<div class="indexboxinfo">
+			<p><a href="SpiritAwake/aboutspiritawake.php"><big>Spiritual Awakening</big></a></p>
+<p>Letting go.<br>
+Opening to now.<br>Inner peace.<br>
+Love.</p>
+</div>
+ -->
+			
+			
+	                <div class="wcindexbox">
+			<a href="/Earth/"><img src="/Icons/indexboxes/earthMarbleBox.jpg" width="95" height="95" hspace="6" vspace="6" border="0" align="middle"></a><br>
+			<a href="/Earth/">Earth and<br>Environment</a>
+			</div>
+			<!-- 
+<div class="indexboxinfo">
+			<p><a href="Earth/"> <big>Earth and Environment </big></a> </p> 
+<p>Roots of the Global Crisis.<br>
+The True Threat of Climate Change.<br>
+The Global Brain.<br>
+The Universe Around Us.</P>
+</div>
+ -->
+			
+				<div class="clearboth"></div>
+				
+				<div class="leftblock200" style="float:right">
+				<br><br><br>
+				<i>Virtual Age</i> is a reflects your health and vitality. The lower it is, the better shape you are in. It is used to calculate the <i>Life Expectancy</i> of someone of your physical age. </div>
+				<div style="width:420px; float:left" class="center">
+					<embed src="/Odds/virtualage.swf" width="400" height="400" type="application/x-shockwave-flash" bgcolor="#ffffee" />
+					<br>
+					<p class="center">
+						<small>Virtual Age Calculator Created by <a href="http://www.poodwaddle.com" title="This Virtual Age Calculator brought to you by Poodwaddle.com">Poodwaddle.com</a></small>
+					</p>
+</div>
+<div class="clearboth"></div>
+
+<div class="alsofull">See also:<br>
+<a href="/age.php">Your Age in Days</a>&nbsp;&nbsp;|&nbsp;&nbsp; 
+<a href="/SP/OutliveLife.php">Outliving Your Life Expectancy</a>&nbsp;&nbsp;|&nbsp;&nbsp; 
+<A href="/PassingThoughts/PoM.php">If Peace of Mind is your Goal</A>
+<br>
+<a href="/Meditation/">Meditation</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="/ToM/index.php">Mindful Reminders</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="/TV/3Min.php">Three-Minute Meditation</a>&nbsp;&nbsp;|&nbsp;&nbsp;  
+				<a href="/PassingThoughts/PeacePrayer.php">Prayer for Peace </a> <br>
+<A href="/WUIT/Happiness.php">Happiness</A>&nbsp;&nbsp;|&nbsp;&nbsp; 
+<A href="/WUIT/Stress.php">Stress</A>&nbsp;&nbsp;|&nbsp;&nbsp; 
+<A href="/WUIT/Enlightenment.php">Enlightenment</A>&nbsp;&nbsp;|&nbsp;&nbsp; 
+
+<A href="/SP/QReln.php">Love in Practice</A>&nbsp;&nbsp;|&nbsp;&nbsp; 
+<a href="/PassingThoughts/Wizardry.php">How to be a Wizard</a>  &nbsp;&nbsp;|&nbsp;&nbsp; 
+<A href="/LGN/JustLGo.php">Letting Go</A><BR>
+</div>
+
+
+
+								<p class="smallgrey">
+					Date created: July 21, 2007
+				</p>
+			</div>
+</div>
+		</div> <!-- end page -->
+		
+		<div id="clear"></div> 
+	</div> <!-- end body -->
+</div> <!-- end wrapper -->
+<div align="center">
+	<div id="footer">
+	
+	
+<BR>
+<DIV class = "bottomblock">
+<div style="width:394px;">
+<div class="efriend">
+<SMALL><a href="#" onClick="window.open('/Rec/EmailFriend.php?title='+document.title+'&URL='+document.location+'','EmailFriendForm','width=550,height=570,resizable=yes,scrollbars=yes,toolbar=no,screenX=0,screenY=0,left=0,top=0');if (window.focus) {newwindow.focus()};return false"><img src="/Icons/emailLogo.gif" alt="" width="17" height="11" border="0">Email this page to a friend</a></SMALL>  
+</div> <!-- end efriend --><div class="socialLinks">
+
+        Share:
+	<a rel="nofollow" target="_blank" href="http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.peterrussell.com%2FOdds%2FVirtualAge.php&amp;t=From%20Peter%20Russell,%20The%20Spirit%20of%20Now%3A%20%20Life%20Expectancy%20Calculator" title="Facebook"><img src="/Icons/socialLogos/facebook.gif" title="Facebook" alt="Facebook" class="sociable-hovers" width="14" height="14" hspace="1" border="0" ></a>
+	<a rel="nofollow" target="_blank" href="http://twitter.com/home?status=From%20Peter%20Russell,%20The%20Spirit%20of%20Now%3A%20%20Life%20Expectancy%20Calculator%20http%3A%2F%2Fwww.peterrussell.com%2FOdds%2FVirtualAge.php" title="Twitter"><img src="/Icons/socialLogos/twitter.gif" title="Twitter" alt="Twitter" class="sociable-hovers" width="14" height="14" hspace="1" border="0" ></a>
+	<a rel="nofollow" target="_blank" href="http://www.myspace.com/Modules/PostTo/Pages/?u=http%3A%2F%2Fwww.peterrussell.com%2FOdds%2FVirtualAge.php&amp;t=From%20Peter%20Russell,%20The%20Spirit%20of%20Now%3A%20%20Life%20Expectancy%20Calculator" title="MySpace"><img src="/Icons/socialLogos/myspace.gif" title="MySpace" alt="MySpace" class="sociable-hovers" width="14" height="14" hspace="1" border="0" ></a>
+	<a rel="nofollow" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fwww.peterrussell.com%2FOdds%2FVirtualAge.php&amp;title=From%20Peter%20Russell,%20The%20Spirit%20of%20Now%3A%20%20Life%20Expectancy%20Calculator" title="LinkedIn"><img src="/Icons/socialLogos/linkedin.png" title="LinkedIn" alt="LinkedIn" class="sociable-hovers" width="14" height="14" hspace="1" border="0" ></a>
+        <a rel="nofollow" target="_blank" href="http://delicious.com/post?url=http%3A%2F%2Fwww.peterrussell.com%2FOdds%2FVirtualAge.php&amp;title=From%20Peter%20Russell,%20The%20Spirit%20of%20Now%3A%20%20Life%20Expectancy%20Calculator" title="del.icio.us"><img src="/Icons/socialLogos/delicious.png" title="del.icio.us" alt="del.icio.us" class="sociable-hovers" width="14" height="14" hspace="1" border="0" ></a>
+	<a rel="nofollow" target="_blank" href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Fwww.peterrussell.com%2FOdds%2FVirtualAge.php&amp;title=From%20Peter%20Russell,%20The%20Spirit%20of%20Now%3A%20%20Life%20Expectancy%20Calculator" title="Digg"><img src="/Icons/socialLogos/digg.png" title="Digg" alt="Digg" class="sociable-hovers" width="14" height="14" hspace="1" border="0" ></a>
+	<a rel="nofollow" target="_blank" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.peterrussell.com%2FOdds%2FVirtualAge.php&amp;title=From%20Peter%20Russell,%20The%20Spirit%20of%20Now%3A%20%20Life%20Expectancy%20Calculator" title="StumbleUpon"><img src="/Icons/socialLogos/stumbleupon.png" title="StumbleUpon" alt="StumbleUpon" class="sociable-hovers" width="14" height="14" hspace="1" border="0" ></a>
+</div> <!-- end socialLinks --><div class="clearboth"></div> 
+</div>
+
+<div class="center"><img src="/Icons/blue_line.gif" alt="" width="394" height="6" border="0"></div>
+
+<p class="center">
+              <a href="http://www.peterrussell.com/Earth/index.php">Earth and Environment</a>
+	<b> | </b> <a href="http://www.peterrussell.com/SCG/scg.php">Science and Consciousness</a> 
+	<b> | </b> <a href="http://www.peterrussell.com/SpiritAwake/index.php">Spiritual Awakening</a> 
+	 
+<br>
+          <a href="http://www.peterrussell.com/globalbrain.php">Global Brain</a>
+	<b> | </b> <a href="http://www.peterrussell.com/WUIT/index.php">Waking Up In Time</a>
+	<b> | </b> <A href="http://www.peterrussell.com/SG/index.php">From Science to God</A>
+<b> | </b> <a href="http://www.peterrussell.com/CIA/CIA1.php">Church of I AM</a><br> 
+
+<!-- 
+ 			   <a href="http://www.peterrussell.com/Dolphin/april.php">Dolphin Swim</a> 
+    
+	<b> | </b> <a href="http://www.peterrussell.com/mindmap1.php">Mind Maps</a>
+    <b> | </b> <a href="http://www.peterrussell.com/TV/">Audio &amp; Video Streams</a>
+	<b> | </b> <a href="http://www.peterrussell.com/Meditation/Meditations.php">Meditation</a>
+	<br>
+ -->
+			   
+			<!--  <a href="http://www.peterrussell.com/Odds/HelpWanted.php">Help Wanted</a>
+    <b> | </b>   --><a href="http://www.peterrussell.com/Links/links.php">Links</a>
+<b> | </b> <a href="http://www.peterrussell.com/SkyWatch.php">SkyWatch</a>
+	<b> | </b> <a href="http://www.peterrussell.com/Speaker/">Speaking Info</a>
+	<b> | </b> <a href="http://www.peterrussell.com/pete.php">Peter Russell</a>
+	<b> | </b> <a href="http://www.peterrussell.com/mail.php">Contact</a>
+	<b> | </b> <a href="http://www.peterrussell.com/articleIndexFull.php">Index</a>
+	
+	<br>
+<a href="/Odds/100spiritual.php">100 Most Spiritually Influential Living People</a></p>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2861256-1";
+urchinTracker();
+</script>
+
+<div id="preload">
+<img src="http://www.peterrussell.com/images/son_header_over_03.jpg" width="1" height="1" alt="over">
+<img src="http://www.peterrussell.com/images/son_header_over_04.jpg" width="1" height="1" alt="over">
+<img src="http://www.peterrussell.com/images/son_header_over_05.jpg" width="1" height="1" alt="over">
+<img src="http://www.peterrussell.com/images/son_header_over_06.jpg" width="1" height="1" alt="over">
+<img src="http://www.peterrussell.com/images/son_header_over_07.jpg" width="1" height="1" alt="over">
+<img src="http://www.peterrussell.com/images/son_header_over_08.jpg" width="1" height="1" alt="over">
+<img src="http://www.peterrussell.com/images/son_header_over_09.jpg" width="1" height="1" alt="over">
+<img src="http://www.peterrussell.com/images/son_header_over_10.jpg" width="1" height="1" alt="over">
+<img src="http://www.peterrussell.com/images/son_header_over_11.jpg" width="1" height="1" alt="over">
+
+<img src="http://www.peterrussell.com/Icons/books/sidebar/wuit.jpg" width="1" height="1" alt="book cover">
+<img src="http://www.peterrussell.com/Icons/books/sidebar/upi.jpg" width="1" height="1" alt="book cover">
+<img src="http://www.peterrussell.com/Icons/books/sidebar/tm.jpg" width="1" height="1" alt="book cover">
+<img src="http://www.peterrussell.com/Icons/books/sidebar/sg.jpg" width="1" height="1" alt="book cover">
+<img src="http://www.peterrussell.com/Icons/books/sidebar/gb.jpg" width="1" height="1" alt="book cover">
+<img src="http://www.peterrussell.com/Icons/books/sidebar/cr.jpg" width="1" height="1" alt="book cover">
+<img src="http://www.peterrussell.com/Icons/books/sidebar/bb.jpg" width="1" height="1" alt="book cover">
+
+<img src="http://www.peterrussell.com/Icons/books/sidebar/pcdvd.jpg" width="1" height="1" alt="DVD cover">
+<img src="http://www.peterrussell.com/Icons/books/sidebar/wisdcd.jpg" width="1" height="1" alt="DVD cover">
+<img src="http://www.peterrussell.com/Icons/books/sidebar/combodvd.jpg" width="1" height="1" alt="DVD cover">
+<img src="http://www.peterrussell.com/Icons/books/sidebar/fonix.jpg" width="1" height="1" alt="DVD cover">
+<img src="http://www.peterrussell.com/Icons/books/sidebar/algcd.jpg" width="1" height="1" alt="DVD cover">
+<img src="http://www.peterrussell.com/Icons/books/sidebar/sgdvd.jpg" width="1" height="1" alt="DVD cover">
+</div> <!-- end preload -->
+
+
+</div> <!-- bottomblock -->
+					
+	
+	</div> <!-- end footer -->
+	</div><!--  end center --></body>
+</html>

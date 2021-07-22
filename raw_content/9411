@@ -1,0 +1,2008 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="servername" content="mtl-www5">
+    <title>RDS.ca</title>
+	<script language="javascript" type="text/javascript" src="/js/2009/ua.js?20100310"></script>
+    <script language="JavaScript">
+    beforeload = (new Date()).getTime();
+    function pageloadingtime(){
+        afterload = (new Date()).getTime();
+        secondes = (afterload-beforeload)/1000;
+        document.getElementById('loadingtime_frame').src = 'http://loadtime.rds.ca/dot.gif?load=' + secondes + '&rnd=' + Math.random() + "&page=index";
+    }
+    </script>
+        <script language="JavaScript" type="text/javascript" src="/js/2009/min/main.js?20110307"></script>
+    <link rel="stylesheet" href="/css/2009/min/main.css?20110328" />
+    <link rel="stylesheet" href="/zv2/css/style.css?20100315" />
+    <link rel="stylesheet" href="/zv2/css/mini.css" />
+    <script language="javascript">AC_FL_RunContent = 0;</script>
+	<script language="javascript" type="text/javascript" src="/zv2/js/functions.js?v=20110606"></script>
+    <script language="javascript" type="text/javascript" src="/zv2/js/class.ajax_queue.js"></script>
+    <script language="javascript" type="text/javascript" src="/zv2/js/mini_player.js?v=20101102"></script>
+	<script language="javascript" type="text/javascript" src="/zv2/js/chronique_player.js?v=20101215"></script>
+    <script language="javascript" type="text/javascript" src="/zv2/js/swfobject.js"></script>
+	
+    <link rel="stylesheet" href="/css/2009/accueil/contenu.css?20100708" />
+	<link rel="alternate" type="application/atom+xml" title="Flux RSS de RDS.ca" 
+  href="http://www.rds.ca/fildepresse_rds.xml" />
+</head>
+<!--<body title="Flux RSS de RDS.ca" onLoad="initTopMenu();pageloadingtime();" href="/rss/" rel="alternate">-->
+<body onLoad="initTopMenu();pageloadingtime();">	
+	<iframe height="0" width="0" src="" style="height:0; width:0; position:absolute; top:-10px;" id="loadingtime_frame"></iframe>
+	<div id="rdsWrap">
+    
+     <div id="superboard" style="position:relative;height:auto;min-height:0px; background-color:#000;">
+            <script language="JavaScript" src="http://ad.doubleclick.net/adj/ctv.rds.ca/accueil_top;sz=1000x90;ord=[timestamp]?" type="text/javascript"></script>
+            <noscript><a href="http://ad.doubleclick.net/adj/ctv.rds.ca/accueil_top;sz=1000x90;ord=[timestamp]?" target="_blank"><img src="http://ad.doubleclick.net/adj/ctv.rds.ca/accueil_top;sz=1000x90;ord=[timestamp]?" width="1000" height="90" border="0" alt=""></a></noscript>
+        </div>
+        
+		<div id="top" class="clearfix">
+        				<div id="topBar"  onmouseover="hideSubMenus();">
+				<div class="profile">
+	<div id="loginSearch" style="background-image:url(http://www.rds.ca/images/2009/navTopbar/back_top_menu.gif);">
+		<script language="javascript" type="text/javascript">
+		<!--//
+		
+		function CreateUniqueid () {		
+				var maxVal = 9999999999;
+				var minVal = 1111111111;
+				var randVal = minVal+(Math.random()*(maxVal-minVal));
+				var UID = typeof floatVal=='undefined'?Math.round(randVal):randVal.toFixed(floatVal);				
+				return UID;	
+		}
+		
+
+		GetRDSCookieValue (GetCookie ("sessionkey"));
+		
+		var MyLocation = document.location;
+		var MyLocation = MyLocation.toString();
+		if (MyLocation.indexOf('http:\/\/www2') == -1)
+		{
+			if (oCurrentCookie.sessionkey == 'na' || oCurrentCookie.sessionkey == 'deleted' ){
+				document.write('<div class="GrandClubLink"><a href="http://www.rds.ca/"><img src="http://media.legrandclub.rds.ca/images/design/topnav/rds_top_logo.gif" border="0"/></a></div>');
+				document.write('<div class="GrandClubLink" style="padding:5px;padding-right:0px;">| <a href="http://legrandclub.rds.ca/">Le Grand Club</a></div>');
+				document.write('<div class="GrandClubLink" style="padding:5px;padding-right:0px;"><a href="http://ac.rds.ca/">| L\'antichambre</a></div>');
+				document.write('<div class="GrandClubLink" style="padding:5px;padding-right:0px;"><a href="http://www.facebook.com/pages/RDSca/132756582352">| Facebook</a></div>');
+				document.write('<div class="GrandClubLink" style="padding:5px;padding-right:0px;"><a href="http://twitter.com/rdsca">| Twitter</a></div>');
+				document.write('<div class="LoginForm" style="padding:5px;width:310px">');
+				document.write('<form action="/cgi-bin/Identification?uniqueid=' + CreateUniqueid() + '" method="POST" onsubmit="return Soumettre(this);">');
+				document.write('<input type="hidden" name="Commande" value="email_password" />');
+				document.write('<input type="hidden" name="deg" value="realtime" />');
+				document.write('<input type="hidden" name="pageloc" value="' + document.location + '" />');
+				document.write('<input type="hidden" name="uniqueid" value="' + CreateUniqueid() + '" />');
+				document.write('<input class="ff" type="text" name="email"  value="Courriel" onclick="if (this.value == \'Courriel\'){this.value = \'\'}" onblur="if (this.value == \'\'){this.value= \'Courriel\'}" onfocus="if (this.value == \'Courriel\'){this.value = \'\'}" />&nbsp;');
+				document.write('<input class="ff" type="password" name="password" value="password" onclick="if (this.value == \'password\'){this.value = \'\';}" onblur="if (this.value == \'\'){this.value= \'password\';}" onfocus="if (this.value == \'password\'){this.value = \'\';}" />&nbsp;');
+				document.write('<input class="bouton" type="submit" name="submit" value="connexion" />');
+				document.write('</form>');
+				document.write('&nbsp;&nbsp;&nbsp;|</div>');
+				document.write('<div class="Subscribe" style="padding:5px;"><a href="/cgi-bin/Identification?Commande=inscription&pageloc=' + document.location + '">S\'inscrire</a></div>');
+			
+			} else 	{
+				document.write('<div class="GrandClubLink"><a href="http://www.rds.ca/"><img src="http://media.legrandclub.rds.ca/images/design/topnav/rds_top_logo.gif" border="0"/></a></div>');
+				document.write('<div class="GrandClubLink" style="padding:5px;padding-right:0px;">| <a href="http://legrandclub.rds.ca/">Le Grand Club</a></div>');
+				document.write('<div class="GrandClubLink" style="padding:5px;padding-right:0px;">| <a href="http://ac.rds.ca/">L\'antichambre</a></div>');
+				document.write('<div class="GrandClubLink" style="padding:5px;padding-right:0px;"><a href="http://www.facebook.com/RDS">| Facebook</a></div>');
+				document.write('<div class="GrandClubLink" style="padding:5px;padding-right:0px;"><a href="http://twitter.com/rdsca">| Twitter</a></div>');
+				document.write('<div class="Welcome" style="padding:5px;width:250px;;">Bonjour <span>' + oCurrentCookie.prenom + '</span> <img src="/images/2009/navTopbar/fleche.jpg" style="vertical-align:middle;display:inline"> <a class="GC" title="Votre page du Grand Club" href="http://legrandclub.rds.ca/profils/'+ oCurrentCookie.pkprofil + '">MA PAGE</a></div>');
+				document.write('<div class="Links" style="padding:5px;width:150px"><a href="http://www.rds.ca/cgi-bin/GestionProfil?Commande=select&pk_profil=' + oCurrentCookie.pkprofil + '&sessionkey=' + oCurrentCookie.sessionkey +'" title="Modifier votre profil">Préférences</a> | <a href="javascript:deleteMySessionkeyCookie(\'sessionkey\', \'/\', _BASE_URL)" title="Fermer la session">Déconnexion</a></div>');
+			}
+		}
+		
+		//Validate email
+		function testerBoite(f) {
+			if (f.email.value != "") {
+					if(f.email.value.indexOf('@', 0) == -1 || f.email.value.indexOf('.',0) == -1 || f.email.value.indexOf(' ',0) != -1 || f.email.value.indexOf(',',0) != -1 )
+						{
+						alert('L\'adresse de courriel n\'est pas valide.\nElle doit avoir cette forme : nom@votreserveur.com\n');
+						f.email.focus();
+						return (false);
+						}
+				}
+			return(true);
+		}
+		function Soumettre(form)  {
+			if (!testerBoite(form)) return(false);
+			return(true);
+		}
+		
+		//-->
+		</script>	
+		
+		<div class="searchBoxRDS" style="float:right;padding:5px;width:160px;">
+			<form method="GET" action="http://www.google.com/custom">
+				<input type="hidden" name="domains" value="www.rds.ca" />       
+				<input type="hidden" name="client" value="pub-6146531969677312" />
+				<input type="hidden" name="forid" value="1" />
+				<input type="hidden" name="ie" value="ISO-8859-1" />
+				<input type="hidden" name="oe" value="ISO-8859-1" />
+				<input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:FFFFFF;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;LH:23;LW:92;L:http://www.rds.ca/images/rds_google.jpg;S:http://;FORID:1;" />
+				<input type="hidden" name="hl" value="fr" />
+				<input type="hidden" name="sitesearch" value="www.rds.ca" />        
+				<input class="ff" type="text" name="q" size="10" maxlength="255" value="Rechercher" onclick="if (this.value == 'Rechercher') this.value = ''" onblur="if (this.value == '') this.value = 'Rechercher'" style="width:135px;"/>
+				<input class="loupe" type="submit" name="submit" value=" " />
+			</form>
+		</div>
+	</div>
+</div>
+
+			</div>
+			<!-- main navigation menu -->
+<div id="topmenu">
+    <ul>
+        <!--<li class="menuItemSecondary" id="menuVancouver">&nbsp;</li>-->
+        <li class="menuItemPrimary" id="menuHockey"><a href="/hockey/" onmouseover="showSubMenu('menuHockey', 'subMenuHockey');">hockey</a></li>
+        <li class="menuItemPrimary" id="menuCourses"><a href="/courses/" onmouseover="showSubMenu('menuCourses', 'subMenuCourses');">courses</a></li>
+        <li class="menuItemPrimary" id="menuFootball"><a href="/football/" onmouseover="showSubMenu('menuFootball', 'subMenuFootball');">football</a></li>
+        <li class="menuItemPrimary" id="menuBaseball"><a href="/baseball/" onmouseover="showSubMenu('menuBaseball', 'subMenuBaseball');">baseball</a></li>
+		<li class="menuItemPrimary" id="menuBoxe" onmouseover="hideSubMenus();"><a href="/boxe/" onmouseover="hideSubMenus();">boxe</a></li>
+		<li class="menuItemPrimary" id="menuMMA"><a href="/combats/" onmouseover="hideSubMenus();">AMM</a></li>
+		<li class="menuItemPrimary" id="menuSoccer"><a href="/soccer/" onmouseover="showSubMenu('menuSoccer', 'subMenuSoccer');">soccer</a></li>
+        <li class="menuItemPrimary" id="menuGolf" style="padding:2px 11px;"><a href="/golf/" onmouseover="showSubMenu('menuGolf', 'subMenuGolf');">golf</a></li>
+        <li class="menuItemPrimary" id="menuTennis" style="padding:2px 11px;"><a href="/tennis/" onmouseover="showSubMenu('menuTennis', 'subMenuTennis');">tennis</a></li>
+		<li class="menuItemPrimary" id="menuBasketball" style="padding:2px 11px;"><a href="/tourfrance/" onmouseover="hideSubMenus();">Tour de France</a></li>
+        <li class="menuItemPrimary" id="menuAutres" style="padding:2px 11px;"><a href="javascript:void(0);" onmouseover="showSubMenu('menuAutres', 'subMenuAutres');">autres</a></li>
+        <li class="menuItemSecondary menuNavigationRight" style="padding-right:3px;" onmouseover="hideSubMenus();"><a href="/concours">concours</a></li>
+        <li class="menuItemSecondary menuNavigationRight" onmouseover="hideSubMenus();"><a href="/surnosondes">t&eacute;l&eacute;</a></li>
+        <li class="menuItemSecondary menuNavigationRight" onmouseover="hideSubMenus();" style="padding:2px 11px;"><a href="/mobile">mobile</a></li>
+        <li class="menuItemSecondary menuNavigationRight" onmouseover="hideSubMenus();" style="padding:2px 11px;"><a href="/zv2">vid&eacute;o</a></li>
+    </ul>
+</div>
+<!-- End main navigation menu -->
+
+<!-- Navigation sub menus -->
+<div id="subMenuHockey" class="topSubMenu">
+    <ul style="width:110px;">
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/canadien/">canadien</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/senateurs/">s&eacute;nateurs</a></li>
+		<li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/coin-du-dg/">coin du dg</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/bulldogs/">bulldogs</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/lhjmq/">lhjmq</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/lnah/">lnah</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/lhjaaa/">lhjaaa</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/midgetaaa/">midget aaa</a></li>
+    </ul>
+</div>
+
+<div id="subMenuCourses" class="topSubMenu">
+	<ul style="width:90px;">
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/f1/">Formule 1</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/indycar/">Indycar</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/nascar/">nascar</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/rallye/">rallye</a></li>
+    </ul>
+</div>
+
+<div id="subMenuFootball" class="topSubMenu">
+	<ul style="width:100px;">
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/superbowl/">superbowl</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/alouettes/">Alouettes</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/sic/">universitaire</a></li>
+    </ul>
+</div>
+
+<div id="subMenuBaseball" class="topSubMenu">
+	<ul style="width:155px;">
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/capitales/">capitales</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/lbeq/">lbeq</a></li>
+        <!--<li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/baseballquebec/">baseball qu&eacute;bec</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/baseballquebec/temple/">temple de la renomm&eacute;e</a></li>-->
+    </ul>
+</div>
+
+<div id="subMenuGolf" class="topSubMenu">
+	<ul style="width:110px;">
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/britishopen/">british open</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/omniumcanadien/">omnium canadien</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/masters/">masters</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/championnatpga/">championnat pga</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/usopengolf/">us open</a></li>
+    </ul>
+</div>
+
+<div id="subMenuSoccer" class="topSubMenu">
+	<ul style="width:110px;">
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/coupedumonde/">coupe du monde</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/impact/">impact</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/euro/">euro</a></li>
+    </ul>
+</div>
+
+
+<div id="subMenuTennis" class="topSubMenu">
+	<ul style="width:130px;">
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/wimbledon/">wimbledon</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/usopentennis/">us open</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/intercanada/">coupe rogers</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/omniumaustralie/">omnium d'australie</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/roland-garros/">roland garros</a></li>
+    </ul>
+</div>
+
+<div id="subMenuAutres" class="topSubMenu">
+	<ul style="width:140px;">
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/amateurs/">amateurs</a></li>
+        <!--<li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/combats/">arts martiaux mixtes</a></li>-->
+        <!--<li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/basketball/">basketball</a></li>-->
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/chasse/">chasse et p&ecirc;che</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/curling/">curling</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/cyclisme/">cyclisme</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/lutte/">lutte</a></li>
+		<li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/jo/">olympiques</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/pantheon/">panth&eacute;on</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/pleinair/">plein-air</a></li>
+		<li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/poker/">poker</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/rugby/">rugby</a></li>
+		<li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/ski/">ski</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/extremes/">sports extr&ecirc;mes</a></li>
+		<li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/basketball/">Basketball</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/sic/">universitaire</a></li>
+        <li onmouseover="this.className='subMenuHovered';" onmouseout="this.className='';"><a href="/divers/">autres &hellip;</a></li>
+    </ul>
+</div>
+
+<!-- End Navigation sub menus -->
+
+            <div id="header" onMouseOver="hideSubMenus();">
+	<div id="headerBoard" style="float:left;">
+		<a href="http://www.rds.ca/">
+			<div id="headerPresentedBy" style="cursor:pointer;height:85px;padding-left:0px;margin-top:0px;min-height:40px;min-width:140px;width:265px;z-index:5;">
+			</div>
+		</a>
+	</div>
+	
+	<div id="leaderboard">
+	
+	<script language="JavaScript" src="http://ad.doubleclick.net/adj/ctv.rds.ca/accueil;tile=1;dcopt=ist;sz=728x90;ord=Tuesday, 12-Jul-2011 20:30:13 EDT?" type="text/javascript"></script>
+<noscript>
+	<a href="http://ad.doubleclick.net/jump/ctv.rds.ca/accueil;tile=1;sz=728x90;ord=Tuesday, 12-Jul-2011 20:30:13 EDT?" target="_blank">
+    	<img src="http://ad.doubleclick.net/ad/ctv.rds.ca/accueil;tile=1;sz=728x90;ord=Tuesday, 12-Jul-2011 20:30:13 EDT?" width="728" height="90" border="0" alt="">
+  	</a>
+</noscript>
+
+	</div>
+</div>
+
+<div id="superInner2" style="display:none; float:left;"><link rel="stylesheet" type="text/css" media="screen" href="/css/superboard.css?99" />
+	
+
+	<a href="javascript:void(0);" onclick="javascript:document.getElementById('superInner3').style.display = 'block'; javascript:document.getElementById('superInner2').style.display = 'none';" id="superClose" style="left:920px; top: 53px; color:#000000; width=21px; height=16px; z-index:10000; position:absolute;"><img src="http://www.rds.ca/images/2009/ouvrir_advil.png" width="80" height="27" alt="Ouvrir"></a>
+
+
+
+<script language="JavaScript" src="http://ad.doubleclick.net/adj/ctv.rds.ca/accueil;tile=6;dcopt=ist;sz=1000x45;ord=12072011200713?" type="text/javascript"></script>
+<noscript>
+	<a href="http://ad.doubleclick.net/jump/ctv.rds.ca/accueil;tile=6;sz=1000x45;ord=12072011200713?" target="_blank">
+    	<img src="http://ad.doubleclick.net/ad/ctv.rds.ca/accueil;tile=6;sz=1000x45;ord=12072011200713?" width="1000" height="45" border="0" alt="">
+   	</a>
+</noscript>
+	</div>
+
+	
+
+	<div id="superInner" style="position:relative;height:auto;min-height:0px; background-color:#000; display:none; float:left;">
+	<a href="javascript:void(0);" onclick="javascript:document.getElementById('superInner').style.display = 'none'; javascript:document.getElementById('superInner2').style.display = 'block';" id="superClose" style="left:915px; top: 5px; color:#000000; width=65px; height=19px; z-index:10000; position:absolute;"><img src="http://www.rds.ca/images/2009/fermer_advil.png" width="80" height="27" alt="Fermer"></a>
+
+	
+
+
+<script language="JavaScript" src="http://ad.doubleclick.net/adj/ctv.rds.ca/accueil;tile=5;dcopt=ist;sz=1000x250;ord=12072011200713?" type="text/javascript"></script>
+<noscript>
+	<a href="http://ad.doubleclick.net/jump/ctv.rds.ca/accueil;tile=5;sz=1000x250;ord=12072011200713?" target="_blank">
+    	<img src="http://ad.doubleclick.net/ad/ctv.rds.ca/accueil;tile=5;sz=1000x250;ord=12072011200713?" width="1000" height="250" border="0" alt="">
+   	</a>
+</noscript>
+	</div>
+
+	
+	<div id="superInner3" style="position:relative;height:auto;min-height:0px; background-color:#000; display:none; width:1000px; clear:both;">
+	<a href="javascript:void(0);" onclick="javascript:document.getElementById('superInner3').style.display = 'none'; javascript:document.getElementById('superInner2').style.display = 'block';" id="superClose" style="left:915px; top: 5px; color:#000000; width=65px; height=19px; z-index:10000; position:absolute;"><img src="http://www.rds.ca/images/2009/fermer_advil.png" width="80" height="27" alt="Fermer"></a>
+
+	
+
+
+
+<script language="JavaScript" src="http://ad.doubleclick.net/adj/ctv.rds.ca/accueil;tile=7;dcopt=ist;sz=1x1;ord=12072011200713?" type="text/javascript"></script>
+<noscript>
+	<a href="http://ad.doubleclick.net/jump/ctv.rds.ca/accueil;tile=7;sz=1x1;ord=12072011200713?" target="_blank">
+    	<img src="http://ad.doubleclick.net/ad/ctv.rds.ca/accueil;tile=7;sz=1x1;ord=12072011200713?" width="1000" height="250" border="0" alt="">
+   	</a>
+</noscript>
+
+
+
+	
+
+	
+
+
+
+</div>
+
+
+
+		</div>
+        <div id="results_selector" style="height: 35px;"> <span class="selector_title">R&Eacute;SULTATS</span>
+<div id="shifter">
+<table cellpadding="0" cellspacing="0" width="100%">
+
+  <tbody>
+
+    <tr>
+
+      <td width="10">
+      <div style="margin: 0px; padding: 0px; width: 10px; height: 15px; overflow: hidden;">
+      <a class="shifter-control" rel="prev"> <img src="http://www.rds.ca/images/2009/boiteresultats/selector_prev.png" align="absbottom" border="0"> </a> </div>
+
+      </td>
+
+      <td>
+		  <div id="shifter-wrapper">
+			  <div id="shifter-content">	
+			  		<div class="shifter selected" onclick="selectShiftElement(this, 'mlb')">MLB</div>
+			        <div class="shifter" onclick="selectShiftElement(this, 'cfl')">LCF</div>
+					<div class="shifter" onclick="selectShiftElement(this, 'wta')">WTA</div>	
+			  	  	<div class="shifter" onclick="selectShiftElement(this, 'atp')">ATP</div>
+					<div class="shifter" onclick="selectShiftElement(this, 'pga')">PGA</div>
+					<div class="shifter" onclick="selectShiftElement(this, 'lpga')">LPGA</div>						
+					<div class="shifter" onclick="selectShiftElement(this, 'lbeq')">LBEQ</div>									    			  				  	
+				  				  
+				  	
+						  		  
+			  </div>
+		  </div>
+      </td>
+
+      <td width="10">
+      <div style="margin: 0px; padding: 0px; width: 10px; height: 15px; overflow: hidden;">
+      <a class="shifter-control" rel="next"> <img src="http://www.rds.ca/images/2009/boiteresultats/selector_next.png" align="absbottom" border="0"> </a> </div>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+</div>
+
+</div>
+
+<script>
+new Shifter('shifter-wrapper', $$('#shifter-content .shifter'), $$('a.shifter-control'), {duration:0.5});
+function selectShiftElement(shifter, sport)
+{
+$$('#shifter-content .shifter').each(function(slide, index) {
+slide.className = "shifter";
+});
+shifter.className = "shifter selected";
+$$('#results_scroller .boiteResScroller').each(function(slide, index) {
+slide.style.display = "none";
+});
+//$(sport).style.display = "block";
+$(sport).appear({duration: 0.4});
+//new Effect.Scale(sport, 100, {scaleX:true, scaleY:false, scaleFromCenter:false, scaleFrom:0, scaleMode: {originalHeight:35,originalWidth:550},duration:0.5});
+}
+</script>
+		<div id="results_scroller">
+	<table cellpadding="0" cellspacing="0" width="100%" height="35px">
+		<tbody>
+			<tr>
+				<td align="right" width="17"> <img src="http://www.rds.ca/images/2009/boiteresultats/arrow_red.gif"></td>
+				<td style="font-size: 10px; line-height: 10px;" width="550">
+					<div>
+						
+							
+						
+						<div id="mlb" class="boiteResScroller" style="display:block;"><div id="res_mlb" style="overflow:hidden;top:0px;left:0px;"></div>
+
+<script type="text/javascript" language="javascript">
+	
+	var phpHour = '<?php print(date("H"));?>';
+	var ssiHour = '20';
+	var divTodayMLB = "";
+	
+	if(isNaN(ssiHour)) {
+		if(parseInt(phpHour) < 12 && parseInt(phpHour) > 4 ){var xmlFile = "MLB_LIVE_YESTERDAY";}
+			else{var xmlFile = "MLB_LIVE";}
+	} else {
+		if(parseInt(ssiHour) < 12 && parseInt(ssiHour) > 4){var xmlFile = "MLB_LIVE_YESTERDAY";}
+			else{var xmlFile = "MLB_LIVE";}
+	}
+
+	rdsXmlRequest('http://www.rds.ca/hockey/get_xml.php?provider=statsinc&file='+xmlFile+'.XML', 'mlb_live_contents');
+</script></div>	
+						<div id="cfl" class="boiteResScroller" style="display: none;"><div id="res_cfl" style="overflow:hidden;top:0px;left:0px;"></div>
+<script type="text/javascript" language="javascript">
+	rdsXmlRequest('http://www.rds.ca/hockey/get_xml.php?provider=statsinc&file=CFL_SCORES.XML', 'cfl_live_contents');
+</script></div>							
+						<div id="wta" class="boiteResScroller" style="display: none;"><div id="res_wta" style="overflow:hidden;top:0px;left:0px;"></div>
+
+<script>
+	var currentDate = '20110712';
+	rdsXmlRequest('http://www.rds.ca/hockey/get_xml.php?provider=statsinc&file=TENNIS_WTA_LIVE.XML', 'wta_live_contents');
+</script></div>
+						<div id="atp" class="boiteResScroller" style="display: none;"><div id="res_atp" style="overflow:hidden;top:0px;left:0px;"></div>
+
+<script>
+	var currentDate = '20110712';
+	rdsXmlRequest('http://www.rds.ca/hockey/get_xml.php?provider=statsinc&file=TENNIS_ATP_LIVE.XML', 'atp_live_contents');
+</script></div>
+						<div id="pga" class="boiteResScroller" style="display: none;"><div id="res_pga"  style="overflow:hidden;top:0px;left:0px;"></div>
+<script type="text/javascript" language="javascript">
+	rdsXmlRequest('http://www.rds.ca/hockey/get_xml.php?provider=statsinc&file=GOLF_LIVE_PGA.XML', 'pga_live_contents');
+</script></div>	
+						<div id="lpga" class="boiteResScroller" style="display: none;"><div id="res_lpga"  style="overflow:hidden;top:0px;left:0px;"></div>
+<script type="text/javascript" language="javascript">
+	rdsXmlRequest('http://www.rds.ca/hockey/get_xml.php?provider=statsinc&file=GOLF_LIVE_LPGA.XML', 'lpga_live_contents');
+</script></div>					
+						<div id="lbeq" class="boiteResScroller" style="display: none;"><div id="res_lbeq"  style="overflow:hidden;top:0px;left:0px;"></div>
+<script type="text/javascript" language="javascript">
+	rdsXmlRequest('http://www.rds.ca/RISTICKER/generateLBEQ.php', 'lbeq_live_contents');
+</script></div>																										
+																												
+						
+																		
+							
+				  </div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div> 
+        <div id="sur_nos_ondes"></div>
+<script type="text/javascript">
+	 var fo = new FlashObject("http://www.rds.ca/video/banner300/banner.swf", "banner", "308", "35", "0", "#990000");
+	 fo.addParam("allowScriptAccess", "sameDomain");
+	 fo.addParam("quality", "high");
+	 fo.addParam("scale", "scale");
+	 fo.addParam("loop", "true");
+	 fo.addParam("wmode", "transparent");
+	 fo.write("sur_nos_ondes");
+</script>
+
+		<div id="content" class="clearfix" onMouseOver="hideSubMenus();">
+			<div id="col1Wrapper">
+                <div id="col1Inner">
+                	<div id="laUne" class="innerBox">
+                		<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_principale.tpl"> -->
+	<h1 class="chronPrinc"><a class="chronPrinc" href="baseball/chroniques/322703.html" title="Russell et compagnie &agrave; RDS">Russell et compagnie &agrave; RDS</a>
+		<span style="white-space: nowrap; font-size: 1em; font-weight: normal"></span>
+        </h1>
+
+        <!-- + #################### RDSOS-4356 + ######################### -->
+        <!-- ################################ --><div id="videoChronique"><div id="videoChroniqueImgDiv" class="item"><a href="javascript:void(0);" onClick="return createNewsPlayer(55176);"><img src="/images/chroniques/322703.jpg?20110712161935" alt="Russell et compagnie &agrave; RDS" onerror="this.style.display='none';"/><span class="play"></span></a></div><div id="videoChroniquePlayerDiv"><script>var so = new SWFObject("/zv2/player/ExtendedMediaPlayer.swf?version=2010040702&options=", "videoChroniquePlayer", "450", "273", "10", "#000000");so.addParam("allowFullScreen", "true"); so.addParam("wmode", "transparent"); so.write("videoChroniquePlayerDiv");</script></div></div>
+        <!-- + #################### RDSOS-4356 - ######################### -->
+
+        <p style="padding: 5px;">Pour la troisi&egrave;me fois de sa carri&egrave;re, et la premi&egrave;re fois en tant que repr&eacute;sentant de la Ligue am&eacute;ricaine, le receveur Russell Martin prend part au match des &eacute;toiles du baseball majeur. Ne manquez rien de cette rencontre en syntonisant RDS.&nbsp;&nbsp;<a href="baseball/chroniques/322703.html" title="suite">suite ...</a></p>
+        <p align="center">
+                <!-- 
+                         
+                -->
+                <a
+href="http://legrandclub.rds.ca/profils/734708/posts/117841">
+Match des Étoiles : posez vos questions à Denis et Rodger</a>
+
+
+<div class="chronRelatedContent">
+<ul class="links"></ul>
+    
+<div class="box">
+<h3><img src="/hockey/series/2010/img/elements/zvLogo.png" alt="Dans la zone vidéo" /></h3>
+<div>
+
+
+<a href=http://www.rds.ca/zv2/?video=55173><b>Entrevue avec Russell Martin</b></a>
+
+|
+
+<a href=http://www.rds.ca/zv2/index.html?video=55165><b>Reportage de Jean-Luc Legendre </b></a><br>
+
+
+<a href="http://www.rds.ca/zv2/?categorie=baseball"><b>Tout sur le concours de circuits</b></a>
+
+
+</div></div>
+
+
+<div class="box">
+<h3>À lire aussi...</h3>
+<div>
+
+<!-- <a
+href="http://www.rds.ca/baseball/stats/mlb_boxscore.php?gid=310710123">
+<b>Le sommaire du match</b></a> |  <a
+href="http://www.rds.ca/baseball/stats/mlb_calendrier.php?dt=20110710">
+<b>Dimanche dans le baseball majeur</b></a><br>-->
+
+<a
+href="http://www.rds.ca/baseball/chroniques/322729.html">
+Russell Martin de retour parmi l'élite</a>
+
+|
+
+<a
+href="http://legrandclub.rds.ca/profils/104880/posts/117819">
+<b>Blogue de J.-L. Legendre</b> </a><br>
+
+<a
+href="http://www.rds.ca/baseball/chroniques/322727.html">
+Robinson Cano remporte le concours de circuits</b> </a><br>
+
+
+
+<a
+href="http://legrandclub.rds.ca/profils/608558/posts/117725">
+<b>D. Casavant</b> : Bravo à Derek Jeter</a><br>
+
+<a
+href="http://legrandclub.rds.ca/profils/Bonsoir_Rodger/posts/117715">
+<b>R. Brulotte</b> : Jeter parmi les grands des Yankees</a>
+<br>
+
+
+<a
+href="http://www.rds.ca/baseball/nouvelles.html">
+<b>Baseball</b> : toutes les nouvelles de la journée</a>
+
+</div>
+</div>
+</div>
+        </p>
+
+
+<!-- </tplinfo= "/templates/chroniques_nouvelles/accu/accu_principale_secondaire.tpl"> -->
+        <!-- RDSOS-4367 --><!-- ############### PLAY ARROW ################ --><style type="text/css" media="all">#videoChronique {position:relative;width: 450px; height: 301px;}#videoChroniqueImgDiv {position:absolute;top:0px;left:0px;z-index:150}#videoChroniquePlayerDiv {position:absolute;top:0px;left:0px;z-index:149;background-color:#000000;height:272px;}.item { width: 450px; height: 301px; cursor:pointer;} // A- Image dimensions..item a { text-decoration: none; display:block; cursor:pointer;}.item a span.play { display:block; background: url('http://www.rds.ca/images/play-arrow.png?20100708') right bottom no-repeat; margin: -301px 10px 0 0; height: 301px; position: relative; z-index: 151; opacity: 1.2; cursor:pointer;} // B- Negatives margins and height of span should correspond to image height.</style><!-- ############### PLAY ARROW ################ -->
+
+
+                   	</div>
+                    <!-- GRAND CLUB -->
+                 <!--	<div id="grandClubDirect" class="innerBox">
+                    	<div class="col_sub_header" style="text-align: left;">
+                        	<a href="http://legrandclub.rds.ca/">blogues en direct</a>
+                        </div>
+                        include virtual="/ssi/2009/grandclub/accuManuel.ssi"
+               </div>-->
+					<style type="text/css">
+					.moreLink {text-align: right; padding: 0 5px;}
+					.moreLink a {color: #777; font: normal 10px/20px Verdana, Arial, sans-serif; text-decoration: none;}
+					.moreLink a strong {color: #000;}
+					.moreLink a:hover span {text-decoration: underline;}
+					</style>
+					<div id="grandClub" class="innerBox">
+
+
+                    	<div class="col_sub_header" style="text-align: left;">
+                        	<a href="http://www.rds.ca/blogueurs/">blogueurs rds</a>
+                        </div>
+                        <table width="100%" cellpadding="0" cellspacing="1">
+    <tr>
+        <td width="50%" valign="top">
+            <div id="blogueur1_accordion">
+           		                	  
+            		<h2 class="blogue_accordion_toggle">Le Baseball à RDS</h2>
+
+                	<div class="accordion_content" style="display:none;">
+                    	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+                        	<tr>
+                            	<td class="chronTalkTitle">
+                        			<a href="http://legrandclub.rds.ca/profils/734708/posts/117841" title="Le Match des Étoiles 2011 : échangez avec nous!">Le Match des &Eacute;toiles 2011 :...</a>
+                               	</td>
+                         	</tr>
+                            <tr>
+                            	<td class="chronTalkTexte">
+                                	<a class="blanc" href="http://legrandclub.rds.ca/profils/734708/" title="Le Baseball à RDS">
+                                    	<img align="left" src="http://media.legrandclub.rds.ca/images/userpics/avatars/734/708/734708.png" width="50" height="50" alt="" border="0" />
+                                   	</a>
+                                    Tout au long de la saison du baseball majeur, on vous invite &agrave; utiliser ce blogue pour...
+                                	<a href="http://legrandclub.rds.ca/profils/734708/posts/117841" title="Le Match des Étoiles 2011 : échangez avec nous!">
+                                    	[suite]
+                                   	</a>
+                              	</td>
+                          	</tr>
+                     	</table>
+                  	</div>
+                                	  
+            		<h2 class="blogue_accordion_toggle">Jean-Luc Legendre</h2>
+
+                	<div class="accordion_content" style="display:none;">
+                    	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+                        	<tr>
+                            	<td class="chronTalkTitle">
+                        			<a href="http://legrandclub.rds.ca/profils/104880/posts/117819" title="Mes impressions sur Russell Martin">Mes impressions sur Russell Martin</a>
+                               	</td>
+                         	</tr>
+                            <tr>
+                            	<td class="chronTalkTexte">
+                                	<a class="blanc" href="http://legrandclub.rds.ca/profils/104880/" title="Jean-Luc Legendre">
+                                    	<img align="left" src="http://media.legrandclub.rds.ca/images/userpics/avatars/104/880/104880.png" width="50" height="50" alt="" border="0" />
+                                   	</a>
+                                    Je suis pr&eacute;sentement &agrave; Phoenix, dans la chaleur s&egrave;che du d&eacute;sert de l'Arizona, pour couvrir...
+                                	<a href="http://legrandclub.rds.ca/profils/104880/posts/117819" title="Mes impressions sur Russell Martin">
+                                    	[suite]
+                                   	</a>
+                              	</td>
+                          	</tr>
+                     	</table>
+                  	</div>
+                                	  
+            		<h2 class="blogue_accordion_toggle">Sylvain Leclerc</h2>
+
+                	<div class="accordion_content" style="display:none;">
+                    	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+                        	<tr>
+                            	<td class="chronTalkTitle">
+                        			<a href="http://legrandclub.rds.ca/profils/2540/posts/117731" title="Quelle expérience incroyable!!!">Quelle exp&eacute;rience incroyable!!!</a>
+                               	</td>
+                         	</tr>
+                            <tr>
+                            	<td class="chronTalkTexte">
+                                	<a class="blanc" href="http://legrandclub.rds.ca/profils/2540/" title="Sylvain Leclerc">
+                                    	<img align="left" src="http://media.legrandclub.rds.ca/images/userpics/avatars/002/540/2540.png" width="50" height="50" alt="" border="0" />
+                                   	</a>
+                                    La session d'&eacute;t&eacute; 2011 de l'Acad&eacute;mie internationale olympique est maintenant termin&eacute;e depuis...
+                                	<a href="http://legrandclub.rds.ca/profils/2540/posts/117731" title="Quelle expérience incroyable!!!">
+                                    	[suite]
+                                   	</a>
+                              	</td>
+                          	</tr>
+                     	</table>
+                  	</div>
+                                	  
+            		<h2 class="blogue_accordion_toggle">Denis Casavant</h2>
+
+                	<div class="accordion_content" style="display:none;">
+                    	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+                        	<tr>
+                            	<td class="chronTalkTitle">
+                        			<a href="http://legrandclub.rds.ca/profils/608558/posts/117725" title="Bravo AC et Jeter">Bravo AC et Jeter</a>
+                               	</td>
+                         	</tr>
+                            <tr>
+                            	<td class="chronTalkTexte">
+                                	<a class="blanc" href="http://legrandclub.rds.ca/profils/608558/" title="Denis Casavant">
+                                    	<img align="left" src="http://media.legrandclub.rds.ca/images/userpics/avatars/608/558/608558.png" width="50" height="50" alt="" border="0" />
+                                   	</a>
+                                    Alors que je me pr&eacute;parais pour la diffusion du match des Alouettes &agrave; R&eacute;gina, mon coll&egrave;gue...
+                                	<a href="http://legrandclub.rds.ca/profils/608558/posts/117725" title="Bravo AC et Jeter">
+                                    	[suite]
+                                   	</a>
+                              	</td>
+                          	</tr>
+                     	</table>
+                  	</div>
+                                	  
+            		<h2 class="blogue_accordion_toggle">Rodger Brulotte</h2>
+
+                	<div class="accordion_content" style="display:none;">
+                    	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+                        	<tr>
+                            	<td class="chronTalkTitle">
+                        			<a href="http://legrandclub.rds.ca/profils/630206/posts/117715" title="Jeter parmi les grands des Yankees">Jeter parmi les grands des Yankees</a>
+                               	</td>
+                         	</tr>
+                            <tr>
+                            	<td class="chronTalkTexte">
+                                	<a class="blanc" href="http://legrandclub.rds.ca/profils/630206/" title="Rodger Brulotte">
+                                    	<img align="left" src="http://media.legrandclub.rds.ca/images/userpics/avatars/630/206/630206.png" width="50" height="50" alt="" border="0" />
+                                   	</a>
+                                    Derek Jeter a fait son entr&eacute;e parmi les grands de l'histoire des Yankees par la grande...
+                                	<a href="http://legrandclub.rds.ca/profils/630206/posts/117715" title="Jeter parmi les grands des Yankees">
+                                    	[suite]
+                                   	</a>
+                              	</td>
+                          	</tr>
+                     	</table>
+                  	</div>
+                                	  
+            		<h2 class="blogue_accordion_toggle">RDS.ca endirect</h2>
+
+                	<div class="accordion_content" style="display:none;">
+                    	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+                        	<tr>
+                            	<td class="chronTalkTitle">
+                        			<a href="http://legrandclub.rds.ca/profils/599681/posts/117629" title="L'avant-combat Bute c. Mendy">L'avant-combat Bute c. Mendy</a>
+                               	</td>
+                         	</tr>
+                            <tr>
+                            	<td class="chronTalkTexte">
+                                	<a class="blanc" href="http://legrandclub.rds.ca/profils/599681/" title="RDS.ca endirect">
+                                    	<img align="left" src="http://media.legrandclub.rds.ca/images/userpics/avatars/599/681/599681.png" width="50" height="50" alt="" border="0" />
+                                   	</a>
+                                    Cet apr&egrave;s-midi en direct de Bucarest, les passionn&eacute;s de boxe auront droit &agrave; un gala mettant...
+                                	<a href="http://legrandclub.rds.ca/profils/599681/posts/117629" title="L'avant-combat Bute c. Mendy">
+                                    	[suite]
+                                   	</a>
+                              	</td>
+                          	</tr>
+                     	</table>
+                  	</div>
+                                	  
+            		<h2 class="blogue_accordion_toggle">Stéphane Laberge</h2>
+
+                	<div class="accordion_content" style="display:none;">
+                    	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+                        	<tr>
+                            	<td class="chronTalkTitle">
+                        			<a href="http://legrandclub.rds.ca/profils/377555/posts/117690" title="Les Panthers sont les plus améliorés...">Les Panthers sont les plus...</a>
+                               	</td>
+                         	</tr>
+                            <tr>
+                            	<td class="chronTalkTexte">
+                                	<a class="blanc" href="http://legrandclub.rds.ca/profils/377555/" title="Stéphane Laberge">
+                                    	<img align="left" src="http://media.legrandclub.rds.ca/images/userpics/avatars/377/555/377555.png" width="50" height="50" alt="" border="0" />
+                                   	</a>
+                                    Les Panthers de la Floride pourraient bien causer des surprises au cours de la prochaine...
+                                	<a href="http://legrandclub.rds.ca/profils/377555/posts/117690" title="Les Panthers sont les plus améliorés...">
+                                    	[suite]
+                                   	</a>
+                              	</td>
+                          	</tr>
+                     	</table>
+                  	</div>
+                           	</div>
+            
+            <script>
+				// Create Accordion
+				var blogueur1Accordion = new accordion('blogueur1_accordion', {maxOpen:3, classNames : {toggle : 'blogue_accordion_toggle', toggleActive : 'blogue_accordion_toggle_active', content : 'accordion_content'}});
+				
+				// Open three first ones
+				blogueur1Accordion.activate($$('#blogueur1_accordion .blogue_accordion_toggle')[0]);
+				blogueur1Accordion.activate($$('#blogueur1_accordion .blogue_accordion_toggle')[1]);
+				blogueur1Accordion.activate($$('#blogueur1_accordion .blogue_accordion_toggle')[2]);
+			</script>
+            
+        </td>
+        <td width="50%" valign="top">
+            <div id="blogueur2_accordion">
+           		                	  
+            		<h2 class="blogue_accordion_toggle">Luc Bellemare</h2>
+
+                	<div class="accordion_content" style="display:none;">
+                    	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+                        	<tr>
+                            	<td class="chronTalkTitle">
+                        			<a href="http://legrandclub.rds.ca/profils/24/posts/117845" title="Le soccer québécois">Le soccer qu&eacute;b&eacute;cois</a>
+                               	</td>
+                         	</tr>
+                            <tr>
+                            	<td class="chronTalkTexte">
+                                	<a class="blanc" href="http://legrandclub.rds.ca/profils/24/" title="Luc Bellemare">
+                                    	<img align="left" src="http://media.legrandclub.rds.ca/images/userpics/avatars/000/024/24.png" width="50" height="50" alt="" border="0" />
+                                   	</a>
+                                    Le soccer est le sport le plus pratiqu&eacute; au Qu&eacute;bec. Avons-nous pour autant une &eacute;lite...
+                                	<a href="http://legrandclub.rds.ca/profils/24/posts/117845" title="Le soccer québécois">
+                                    	[suite]
+                                   	</a>
+                              	</td>
+                          	</tr>
+                     	</table>
+                  	</div>
+                                	  
+            		<h2 class="blogue_accordion_toggle">Patrick Friolet</h2>
+
+                	<div class="accordion_content" style="display:none;">
+                    	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+                        	<tr>
+                            	<td class="chronTalkTitle">
+                        			<a href="http://legrandclub.rds.ca/profils/30806/posts/117788" title="Mon 1er match des Capitales">Mon 1er match des Capitales</a>
+                               	</td>
+                         	</tr>
+                            <tr>
+                            	<td class="chronTalkTexte">
+                                	<a class="blanc" href="http://legrandclub.rds.ca/profils/30806/" title="Patrick Friolet">
+                                    	<img align="left" src="http://media.legrandclub.rds.ca/images/userpics/avatars/030/806/30806.png" width="50" height="50" alt="" border="0" />
+                                   	</a>
+                                    Vendredi 8 juillet, un soleil radieux brille sur la ville de Qu&eacute;bec en fin d'apr&egrave;s-midi....
+                                	<a href="http://legrandclub.rds.ca/profils/30806/posts/117788" title="Mon 1er match des Capitales">
+                                    	[suite]
+                                   	</a>
+                              	</td>
+                          	</tr>
+                     	</table>
+                  	</div>
+                                	  
+            		<h2 class="blogue_accordion_toggle">Guillaume Rivest</h2>
+
+                	<div class="accordion_content" style="display:none;">
+                    	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+                        	<tr>
+                            	<td class="chronTalkTitle">
+                        			<a href="http://legrandclub.rds.ca/profils/676491/posts/117727" title="Merci, Andre Agassi">Merci, Andre Agassi</a>
+                               	</td>
+                         	</tr>
+                            <tr>
+                            	<td class="chronTalkTexte">
+                                	<a class="blanc" href="http://legrandclub.rds.ca/profils/676491/" title="Guillaume Rivest">
+                                    	<img align="left" src="http://media.legrandclub.rds.ca/images/userpics/avatars/676/491/676491.png" width="50" height="50" alt="" border="0" />
+                                   	</a>
+                                    Il y a de ces athl&egrave;tes qui, de par leur prestance et leur personnalit&eacute; hors du commun, ont...
+                                	<a href="http://legrandclub.rds.ca/profils/676491/posts/117727" title="Merci, Andre Agassi">
+                                    	[suite]
+                                   	</a>
+                              	</td>
+                          	</tr>
+                     	</table>
+                  	</div>
+                                	  
+            		<h2 class="blogue_accordion_toggle">Michel Laprise</h2>
+
+                	<div class="accordion_content" style="display:none;">
+                    	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+                        	<tr>
+                            	<td class="chronTalkTitle">
+                        			<a href="http://legrandclub.rds.ca/profils/598183/posts/117723" title="Lucian Bute: les émotions">Lucian Bute: les &eacute;motions</a>
+                               	</td>
+                         	</tr>
+                            <tr>
+                            	<td class="chronTalkTexte">
+                                	<a class="blanc" href="http://legrandclub.rds.ca/profils/598183/" title="Michel Laprise">
+                                    	<img align="left" src="http://media.legrandclub.rds.ca/images/userpics/avatars/598/183/598183.png" width="50" height="50" alt="" border="0" />
+                                   	</a>
+                                    Dans la vie, vous savez comme moi qu'on ne peut pas plaire &agrave; tout le monde. Oui, on essaie...
+                                	<a href="http://legrandclub.rds.ca/profils/598183/posts/117723" title="Lucian Bute: les émotions">
+                                    	[suite]
+                                   	</a>
+                              	</td>
+                          	</tr>
+                     	</table>
+                  	</div>
+                                	  
+            		<h2 class="blogue_accordion_toggle">Frédéric Plante</h2>
+
+                	<div class="accordion_content" style="display:none;">
+                    	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+                        	<tr>
+                            	<td class="chronTalkTitle">
+                        			<a href="http://legrandclub.rds.ca/profils/118664/posts/117360" title="Fantasme pédestre">Fantasme p&eacute;destre</a>
+                               	</td>
+                         	</tr>
+                            <tr>
+                            	<td class="chronTalkTexte">
+                                	<a class="blanc" href="http://legrandclub.rds.ca/profils/118664/" title="Frédéric Plante">
+                                    	<img align="left" src="http://media.legrandclub.rds.ca/images/userpics/avatars/118/664/118664.png" width="50" height="50" alt="" border="0" />
+                                   	</a>
+                                    C'&eacute;tait un vieux fantasme que j'entretenais depuis des ann&eacute;es. J'avais ce grand d&eacute;sir de le...
+                                	<a href="http://legrandclub.rds.ca/profils/118664/posts/117360" title="Fantasme pédestre">
+                                    	[suite]
+                                   	</a>
+                              	</td>
+                          	</tr>
+                     	</table>
+                  	</div>
+                                	  
+            		<h2 class="blogue_accordion_toggle">Jean Pagé</h2>
+
+                	<div class="accordion_content" style="display:none;">
+                    	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+                        	<tr>
+                            	<td class="chronTalkTitle">
+                        			<a href="http://legrandclub.rds.ca/profils/578083/posts/117481" title="Une bonne partie de pêche">Une bonne partie de p&ecirc;che</a>
+                               	</td>
+                         	</tr>
+                            <tr>
+                            	<td class="chronTalkTexte">
+                                	<a class="blanc" href="http://legrandclub.rds.ca/profils/578083/" title="Jean Pagé">
+                                    	<img align="left" src="http://media.legrandclub.rds.ca/images/userpics/avatars/578/083/578083.png" width="50" height="50" alt="" border="0" />
+                                   	</a>
+                                    En quelques occasions, depuis l'ouverture de la saison, je me suis rendu dans les r&eacute;serves...
+                                	<a href="http://legrandclub.rds.ca/profils/578083/posts/117481" title="Une bonne partie de pêche">
+                                    	[suite]
+                                   	</a>
+                              	</td>
+                          	</tr>
+                     	</table>
+                  	</div>
+                                	  
+            		<h2 class="blogue_accordion_toggle">Nicolas Landry</h2>
+
+                	<div class="accordion_content" style="display:none;">
+                    	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+                        	<tr>
+                            	<td class="chronTalkTitle">
+                        			<a href="http://legrandclub.rds.ca/profils/715494/posts/117182" title="UFC 132 : dix observations">UFC 132 : dix observations</a>
+                               	</td>
+                         	</tr>
+                            <tr>
+                            	<td class="chronTalkTexte">
+                                	<a class="blanc" href="http://legrandclub.rds.ca/profils/715494/" title="Nicolas Landry">
+                                    	<img align="left" src="http://media.legrandclub.rds.ca/images/userpics/avatars/715/494/715494.png" width="50" height="50" alt="" border="0" />
+                                   	</a>
+                                    En ce qui me concerne, le d&eacute;bat que se livrent plus ou moins directement la vieille garde et...
+                                	<a href="http://legrandclub.rds.ca/profils/715494/posts/117182" title="UFC 132 : dix observations">
+                                    	[suite]
+                                   	</a>
+                              	</td>
+                          	</tr>
+                     	</table>
+                  	</div>
+                           	</div>
+            
+            <script>
+				// Create Accordion
+				var blogueur2Accordion = new accordion('blogueur2_accordion', {maxOpen:3, classNames : {toggle : 'blogue_accordion_toggle', toggleActive : 'blogue_accordion_toggle_active', content : 'accordion_content'}});
+				
+				// Open three first ones
+				blogueur2Accordion.activate($$('#blogueur2_accordion .blogue_accordion_toggle')[0]);
+				blogueur2Accordion.activate($$('#blogueur2_accordion .blogue_accordion_toggle')[1]);
+				blogueur2Accordion.activate($$('#blogueur2_accordion .blogue_accordion_toggle')[2]);
+			</script>
+            
+        </td>
+    </tr>
+</table>
+						<div class="moreLink"><a href="http://www.rds.ca/blogueurs/"><strong>&raquo;</strong> <span>Tous nos blogueurs</span></a></div>
+                    </div>
+                    
+                    <div id="grandClub" class="innerBox">
+	<iframe src="http://media.legrandclub.rds.ca/bigbox/bigbox.html" width="450px" height="436px"  scrolling="no" ></iframe>
+</div>
+
+					<!-- / GRAND CLUB -->
+                </div>
+            </div>
+            <div id="col2Wrapper">
+                <div id="col2Inner">
+                	<!-- <NOUVELLES> -->
+                    
+                
+                    <div class="innerBox">
+                   <!-- <a href="http://www.rds.ca/hockey/nouvelles.html"><img src="http://www.rds.ca/images/pub/flash/235x45_LesNouvellesLaRonde.png" alt="Ronde" width="235" height="45"/></a>-->
+                    	<div class="col_sub_header">
+                    		<a href="http://www.rds.ca/nouvelles.html" style="text-decoration:none">Nouvelles</a>
+                		</div>
+          <table width="100%">
+                            <!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+	<tr>
+		<td class="chronListeTexte">
+        	<a class="accuChronScnd" href="/alouettes/chroniques/322788.html" title="Qui passera &agrave; l'histoire avec Calvillo?">
+            	Qui passera &agrave; l'histoire avec Calvillo?
+           	</a>
+      	</td>
+	</tr>    
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+	<tr>
+		<td class="chronListeTexte">
+        	<a class="accuChronScnd" href="/lhjmq/chroniques/322744.html" title="Le Junior est mort, l'Armada est n&eacute;e">
+            	Le Junior est mort, l'Armada est n&eacute;e
+           	</a>
+      	</td>
+	</tr>    
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+	<tr>
+		<td class="chronListeTexte">
+        	<a class="accuChronScnd" href="/tourfrance/chroniques/322745.html" title="TDF : Andre Greipel devance Cavendish">
+            	TDF : Andre Greipel devance Cavendish
+           	</a>
+      	</td>
+	</tr>    
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+	<tr>
+		<td class="chronListeTexte">
+        	<a class="accuChronScnd" href="/hockey/chroniques/322789.html" title="Simon Despr&eacute;s vise la LNH &agrave; l'automne">
+            	Simon Despr&eacute;s vise la LNH &agrave; l'automne
+           	</a>
+      	</td>
+	</tr>    
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+	<tr>
+		<td class="chronListeTexte">
+        	<a class="accuChronScnd" href="/amateurs/chroniques/322769.html" title="La nouvelle mission d'&Eacute;milie Heymans">
+            	La nouvelle mission d'&Eacute;milie Heymans
+           	</a>
+      	</td>
+	</tr>    
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+	<tr>
+		<td class="chronListeTexte">
+        	<a class="accuChronScnd" href="/nascar/chroniques/322775.html" title="Ranger pilotera une Nationwide samedi">
+            	Ranger pilotera une Nationwide samedi
+           	</a>
+      	</td>
+	</tr>    
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+	<tr>
+		<td class="chronListeTexte">
+        	<a class="accuChronScnd" href="/impact/chroniques/322736.html" title="Terminesi est de retour avec l'Impact">
+            	Terminesi est de retour avec l'Impact
+           	</a>
+      	</td>
+	</tr>    
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+	<tr>
+		<td class="chronListeTexte">
+        	<a class="accuChronScnd" href="/britishopen/chroniques/322761.html" title="Lee Westwood sera pr&ecirc;t mentalement">
+            	Lee Westwood sera pr&ecirc;t mentalement
+           	</a>
+      	</td>
+	</tr>    
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+	<tr>
+		<td class="chronListeTexte">
+        	<a class="accuChronScnd" href="/indycar/chroniques/322790.html" title="Tag s'attend &agrave; de la casse &agrave; Edmonton">
+            	Tag s'attend &agrave; de la casse &agrave; Edmonton
+           	</a>
+      	</td>
+	</tr>    
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+	<tr>
+		<td class="chronListeTexte">
+        	<a class="accuChronScnd" href="/hockey/chroniques/322748.html" title="A. Cogliano est &eacute;chang&eacute; aux Ducks">
+            	A. Cogliano est &eacute;chang&eacute; aux Ducks
+           	</a>
+      	</td>
+	</tr>    
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+	<tr>
+		<td class="chronListeTexte">
+        	<a class="accuChronScnd" href="/intercanada/chroniques/322774.html" title="C. Rogers : Agassi et Connors honor&eacute;s">
+            	C. Rogers : Agassi et Connors honor&eacute;s
+           	</a>
+      	</td>
+	</tr>    
+<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_chronique_liste_line.tpl"> -->
+
+                        </table>
+						<table>
+                            <tr>
+                                <td class="chronListeLien" colspan="2" align="right">					
+                                    <div class="nouvHTML">&raquo;&nbsp;<a class="accuChronScnd" href="/nouvelles.html" style="text-decoration:underline">Toutes les nouvelles</a></div>
+                                    <div class="nouvRSS"><a href="/fildepresse_rds.xml" title="Flux RSS"><img src="/images/xmlrss2_n.gif" width="82" height="15" border="0" alt="Flux RSS" /></a></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                	
+                    
+
+                    <!-- </NOUVELLES> -->
+                    
+					<div>
+						<style>
+                            #bertraym {background-image:url(http://www.rds.ca/images/chroniqueurs/230x90_bertraym.png);background-repeat:no-repeat;wdith:230px;padding-left:5px;padding-right:50px;padding-top:25px;color:#FFFFFF;min-height:65px;background-color:#777777;}
+                            #bertraym a{color:#FFFFFF;}
+                        </style>
+                        <!--include virtual="/ssi/2009/chroniqueurs/accu_bertraym.ssi" -->
+                    </div>
+					
+					
+				
+                    
+					
+                    <!-- <SECTIONS SPECIALES> -->
+ 					
+                    <div class="innerBox">
+                        <div class="col_sub_header">sections sp&eacute;ciales</div>
+                        <!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+
+        <script language="JavaScript" type="text/javascript">
+               function redirectConcours () {        
+                       var URL = "http://www.rds.ca/cgi-bin/Identification?pagedyn=concours&idx=202&action=formulaire&site=rds";
+                       var maxVal = 9999999999;
+                       var minVal = 1111111111;
+                       var randVal = minVal+(Math.random()*(maxVal-minVal));
+                       var UID = typeof floatVal=='undefined'?Math.round(randVal):randVal.toFixed(floatVal);                        
+                       document.location = URL + "&uniqueid=" + UID; 
+               }
+        </script>
+		
+
+		<div id="specialAccordion">
+		
+	
+		
+	<h2 class="accordion_toggle">En Piste avec Dodge</h2>
+    <div class="accordion_content" style="display:none;">
+    	<div style="border-bottom:1px solid #000000;">
+            <a href="http://www.rds.ca/concours/enpisteavecdodge/?cid=2011-07-concoursNascar" target="_blank">
+            	<img width="235" height="45" src="http://www.rds.ca/images/promos/235x45_EnPisteAvecDodge.jpg" title="Dodge" alt="En_Piste_avec_Dodge" border="0" />
+            </a>
+		</div>
+	</div>
+		
+		
+
+<!-- <h2 class="accordion_toggle">Discutez avec notre équipe!</h2>
+    <div class="accordion_content" style="display:none;">
+    	<div style="border-bottom:1px solid #000000;">
+            <a href="http://legrandclub.rds.ca/profils/734708/page_profil" style="text-decoration:none">
+            	<img width="230" height="45" src="http://www.rds.ca/images/centrale/promo_speciale/baseballrds_230x45.jpg" alt="Le baseball à RDS - Discutez avec nous!" border="0" />
+            </a>
+		</div>
+   	</div> -->
+	
+	<h2 class="accordion_toggle">Séries mondiales de poker</h2>
+    <div class="accordion_content" style="display:none;">
+    	<div style="border-bottom:1px solid #000000;">
+            <a href="http://www.rds.ca/poker/ " title="Jonathan Duhamel">
+            	<img width="235" height="45" src="http://www.rds.ca/images/promos/235x45_WSOP_JonathanDuhamel.jpg" title="Suivez Jonathan Duhamel" alt="Suivez Jonathan Duhamel" border="0" />
+            </a>
+		</div>
+		</div>
+
+	
+	<h2 class="accordion_toggle">Faits saillants du mois Advil</h2>
+    <div class="accordion_content" style="display:none;">
+    	<div style="border-bottom:1px solid #000000;">
+            <a href="http://ad.doubleclick.net/clk;241547122;30030964;s?http://advil.tsn.ca/fr/default.aspx" target="_blank">
+            	<img width="230" height="45" src="http://www.rds.ca/images/promos/Advil230x45_FR.jpg" title="Advil" alt="" border="0" />
+            </a>
+		</div>
+	</div>
+			
+	
+	<h2 class="accordion_toggle">Célébration Kraft</h2>
+    <div class="accordion_content" style="display:none;">
+    	<div style="border-bottom:1px solid #000000;">
+            <a href="http://ad.doubleclick.net/clk;240485442;29955041;h?http://www.tourneedecelebrationkraft.ca" style="text-decoration:none" TARGET="_blank" title="Célébration Kraft">
+            	<img width="235" height="45" src="http://www.rds.ca/images/promos/Kraft.jpg" title="Célébration Kraft" alt="CélébrationKraft" border="0" />
+            </a>
+		</div>
+		</div>
+
+<!-- 		<h2 class="accordion_toggle">Suivez le Challenge Wilson</h2>
+    <div class="accordion_content" style="display:none;">
+    	<div style="border-bottom:1px solid #000000;">
+            <a href="http://www.rds.ca/footballquebec/ " title="Suivez le Challenge Wilson">
+            	<img width="235" height="45" src="http://www.rds.ca/images/centrale/promo_speciale/235x45_ChallengeWilson.jpg" title="Suivez le Challenge Wilson" alt="Suivez le Challenge Wilson" border="0" />
+            </a>
+		</div>
+		</div> -->
+		
+		
+		<!--<h2 class="accordion_toggle">Repêchage 2011</h2>
+    <div class="accordion_content" style="display:none;">
+    	<div style="border-bottom:1px solid #000000;">
+            <a href="http://www.rds.ca/hockey/repechage/2011/" style="text-decoration:none" title="Repêchage 2011"><img width="235" height="45" src="http://www.rds.ca/images/promos/235x45_RepechageLNH2011.jpg" title="Repêchage 2011" alt="Repêchage 2011" border="0"/>
+            </a>
+		</div>
+   	</div>-->
+	
+	<!--<h2 class="accordion_toggle">Blogue en Direct-Joueurs Autonomes</h2>
+    <div class="accordion_content" style="display:none;">
+    	<div style="border-bottom:1px solid #000000;">
+            <a href="http://legrandclub.rds.ca/profils/599681/en_direct/190">
+            	<img width="235" height="45" src="http://www.rds.ca/images/promos/235x45_JoueursAutonomes2011_Blogue.jpg" title="Blogue en Direct-Joueurs Autonomes" alt="Blogue en Direct-Joueurs Autonomes" border="0" />
+            </a>
+		</div>
+	</div>-->
+	
+	
+	
+	<h2 class="accordion_toggle">Vivez à l'heure de la F1</h2>
+    <div class="accordion_content" style="display:none;">
+    	<div style="border-bottom:1px solid #000000;">
+            <a href="http://www.heuref1rds.ca/?cid=2011-04-concoursF1" style="text-decoration:none" title="Vivez à l'heure de la F1">
+            	<img width="235" height="45" src="http://www.rds.ca/images/promos/230x45_VivezAlHeureDelaF1_02.jpg" title="Vivez à l'heure de la F1" alt="Vivez à l'heure de la F1" border="0" />
+            </a>
+		</div>
+   	</div>
+	
+		<!-- <h2 class="accordion_toggle">Tecnic</h2>
+    <div class="accordion_content" style="display:none;">
+    	<div style="border-bottom:1px solid #000000;">
+            <a href="http://ad.doubleclick.net/clk;238919597;29955041;b?http://tecnic.ca/promotion"  TARGET="_blank" style="text-decoration:none">
+            	<img width="230" height="45" src="http://www.rds.ca/images/promos/Tecnic_230.jpg" alt="Cruz" border="0" />
+            </a>
+		</div>
+   	</div>-->
+	
+	
+	
+		
+	
+<h2 class="accordion_toggle">Concours Grand Coffre à Projets</h2>
+    <div class="accordion_content" style="display:none;">
+    	<div style="border-bottom:1px solid #000000;">
+        <a href="http://ad.doubleclick.net/clk;240211258;63040919;w?http://www.renodepot.com/economies/concours/grand-coffre-a-projets" TARGET="_blank" >
+            	<img width="230" height="45" src="http://www.rds.ca/images/promos/RENO_RDS.ca_BoutConcou_230X45px.jpg" title="Concours Grand Coffre à Projets" alt="Concours Grand Coffre à Projets" border="0" />
+            </a>
+		</div>
+	</div>
+	
+
+	
+
+<!--<h2 class="accordion_toggle">La parole est à vous!</h2>
+    <div class="accordion_content" style="display:none;">
+    	<div style="border-bottom:1px solid #000000;">
+            <a href="http://legrandclub.rds.ca/profils/Sports3018h/posts/108033/" style="text-decoration:none" title="Hockey : la commission">
+            	<img width="230" height="45" src="http://www.rds.ca/images/centrale/promo_speciale/hockeycommission_230x45.jpg" alt="Hockey : la commission" border="0" />
+            </a>
+		</div>
+   	</div>-->
+
+	
+
+<!--<h2 class="accordion_toggle">RDS Hockey pour iPhone</h2>
+    <div class="accordion_content" style="display:none;">
+    	<div style="border-bottom:1px solid #000000;"> <a href="http://www.rds.ca/mobile/iPhone.html?utm_source=AccueilRDS&utm_medium=Bouton&utm_term=Mobile&utm_content=InstructionsMobile&utm_campaign=BoutonMobile
+" style="text-decoration:none">
+            	<img width="230" height="45" src="http://www.rds.ca/images/promos/iphone_230x45.jpg" alt="RDS Hockey" border="0" />
+            </a>
+		</div>
+   	</div>-->
+	
+	<!--<h2 class="accordion_toggle">Photo sur la bande</h2>
+    <div class="accordion_content" style="display:none;">
+    	<div style="border-bottom:1px solid #000000;">
+
+
+
+            <a href="http://ad.doubleclick.net/clk;240095249;62919862;r" TARGET="_blank">
+            	<img width="230" height="45" src="http://www.rds.ca/images/promos/fr_230x45_bell_boutonRDS[4].jpg" title="La course aux Séries" alt="La course aux Séries" border="0" />
+            </a>
+		</div>
+   	</div>-->
+ 
+
+
+
+<!-- // SITE ANTICHAMBRE
+	<h2 class="accordion_toggle">L'Antichambre</h2>
+    <div class="accordion_content" style="display:none;">
+    	<div style="border-bottom:1px solid #000000;">
+            <a href="http://ac.rds.ca/" style="border-bottom:1px solid #000000;"><div align="center"><img width="230" height="45" src="http://www.rds.ca/images/centrale/promo_speciale/antichambre_230x45.jpg" alt="L'Antichambre" border="0"></div></a>
+		</div>
+    </div>
+-->
+
+
+
+
+
+
+</div>
+<script>
+	// Create Accordion
+	var specialAccordion = new accordion('specialAccordion', {maxOpen:3});
+	
+	// Open three first ones
+	specialAccordion.activate($$('#specialAccordion .accordion_toggle')[2]);
+	specialAccordion.activate($$('#specialAccordion .accordion_toggle')[1]);
+	specialAccordion.activate($$('#specialAccordion .accordion_toggle')[0]);
+</script>
+                    </div>
+ 	
+                    <!-- </SECTIONS SPECIALES> -->
+							
+                    <!-- <CHRONIQUEURS> -->
+                    <div class="innerBox">
+                        <div class="col_sub_header"><a href="/chroniqueurs/">chroniqueurs</a></div>
+                        <div id="expert_accordion">
+	<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+<h2 class="accordion_toggle">
+	Russ Anber
+</h2>
+<div class="accordion_content" style="display:none;">
+	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+    	<tr>
+        	<td class="chronTalkTitle">
+            	<a href="boxe/chroniques/322766.html" title="Trois combats, 3 sc&eacute;narios diff&eacute;rents">Trois combats, 3 sc&eacute;narios diff&eacute;rents</a>
+            </td>
+        </tr>
+		<tr>
+			<td class="chronTalkTexte">
+            	<a class="blanc" href="/chroniqueurs/expert_russanbe.html" title="Russ Anber">
+                	<img align="left" src="/new_images/small_RUSSANBE.gif?20110706154410" width="42" height="37" alt="" border="0" />
+               	</a>
+                C’est devant 8000 partisans que Lucian Bute a d&eacute;fendu avec succ&egrave;s son titre de champion du monde IBF des super-moyens et ce, gr&acirc;ce &agrave; une gauche qui a mis K.... 
+                <a href="boxe/chroniques/322766.html" title="Trois combats, 3 sc&eacute;narios diff&eacute;rents">
+                	[suite]
+               	</a>
+         	</td>
+		</tr>							
+	</table>
+</div>
+<!-- </tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+
+	<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+<h2 class="accordion_toggle">
+	Pierre Vercheval
+</h2>
+<div class="accordion_content" style="display:none;">
+	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+    	<tr>
+        	<td class="chronTalkTitle">
+            	<a href="alouettes/chroniques/322728.html" title="&Agrave; tout seigneur tout honneur">&Agrave; tout seigneur tout honneur</a>
+            </td>
+        </tr>
+		<tr>
+			<td class="chronTalkTexte">
+            	<a class="blanc" href="/chroniqueurs/expert_pierverc.html" title="Pierre Vercheval">
+                	<img align="left" src="/new_images/small_PIERVERC.gif?20110112165721" width="42" height="37" alt="" border="0" />
+               	</a>
+                Impossible de parler de la derni&egrave;re victoire des Alouettes sans faire r&eacute;f&eacute;rence &agrave; la performance &eacute;blouissante d’Anthony Calvillo. Avec un total de... 
+                <a href="alouettes/chroniques/322728.html" title="&Agrave; tout seigneur tout honneur">
+                	[suite]
+               	</a>
+         	</td>
+		</tr>							
+	</table>
+</div>
+<!-- </tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+
+	<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+<h2 class="accordion_toggle">
+	Michel Lacroix
+</h2>
+<div class="accordion_content" style="display:none;">
+	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+    	<tr>
+        	<td class="chronTalkTitle">
+            	<a href="britishopen/chroniques/322651.html" title="Une nouvelle &eacute;poque, vraiment?">Une nouvelle &eacute;poque, vraiment?</a>
+            </td>
+        </tr>
+		<tr>
+			<td class="chronTalkTexte">
+            	<a class="blanc" href="/chroniqueurs/expert_michlacr.html" title="Michel Lacroix">
+                	<img align="left" src="/new_images/small_MICHLACR.gif?20110112164922" width="42" height="37" alt="" border="0" />
+               	</a>
+                La prochaine &eacute;dition de l’Omnium Britannique qui sera disput&eacute;e sur le tortueux et lunaire parcours Royal St George’s en Angleterre va-t-elle confirmer... 
+                <a href="britishopen/chroniques/322651.html" title="Une nouvelle &eacute;poque, vraiment?">
+                	[suite]
+               	</a>
+         	</td>
+		</tr>							
+	</table>
+</div>
+<!-- </tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+
+	<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+<h2 class="accordion_toggle">
+	Carlo Blanchard
+</h2>
+<div class="accordion_content" style="display:none;">
+	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+    	<tr>
+        	<td class="chronTalkTitle">
+            	<a href="golf/chroniques/322705.html" title="Steve Stricker : le coup de l'ann&eacute;e!">Steve Stricker : le coup de l'ann&eacute;e!</a>
+            </td>
+        </tr>
+		<tr>
+			<td class="chronTalkTexte">
+            	<a class="blanc" href="/chroniqueurs/expert_carlblan.html" title="Carlo Blanchard">
+                	<img align="left" src="/new_images/small_CARLBLAN.gif?20110112171233" width="42" height="37" alt="" border="0" />
+               	</a>
+                Je ne sais pas si vous avez vu le coup ph&eacute;nom&eacute;nal de Steve Stricker au 18e trou lors de la finale de la Classique John Deere, sinon, vous avez sans... 
+                <a href="golf/chroniques/322705.html" title="Steve Stricker : le coup de l'ann&eacute;e!">
+                	[suite]
+               	</a>
+         	</td>
+		</tr>							
+	</table>
+</div>
+<!-- </tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+
+	<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+<h2 class="accordion_toggle">
+	Martin Dion
+</h2>
+<div class="accordion_content" style="display:none;">
+	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+    	<tr>
+        	<td class="chronTalkTitle">
+            	<a href="boxe/chroniques/322641.html" title="La plus facile des d&eacute;fenses de Bute">La plus facile des d&eacute;fenses de Bute</a>
+            </td>
+        </tr>
+		<tr>
+			<td class="chronTalkTexte">
+            	<a class="blanc" href="/chroniqueurs/expert_martdion.html" title="Martin Dion">
+                	<img align="left" src="/new_images/small_MARTDION.gif?20110112163845" width="42" height="37" alt="" border="0" />
+               	</a>
+                On ne l’avouera probablement pas chez Interbox, mais la victoire de Lucian Bute sur Jean-Paul Mendy &eacute;tait probablement la d&eacute;fense de titre la plus... 
+                <a href="boxe/chroniques/322641.html" title="La plus facile des d&eacute;fenses de Bute">
+                	[suite]
+               	</a>
+         	</td>
+		</tr>							
+	</table>
+</div>
+<!-- </tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+
+	<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+<h2 class="accordion_toggle">
+	Louis Bertrand
+</h2>
+<div class="accordion_content" style="display:none;">
+	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+    	<tr>
+        	<td class="chronTalkTitle">
+            	<a href="tourfrance/chroniques/322653.html" title="Voeckler sera en jaune jusqu'&agrave; jeudi">Voeckler sera en jaune jusqu'&agrave; jeudi</a>
+            </td>
+        </tr>
+		<tr>
+			<td class="chronTalkTexte">
+            	<a class="blanc" href="/chroniqueurs/expert_louibert.html" title="Louis Bertrand">
+                	<img align="left" src="/new_images/small_LOUIBERT.gif?20061221101038" width="42" height="37" alt="" border="0" />
+               	</a>
+                ‘Abondance de biens ne nuit pas’, le proverbe s’applique parfaitement au Tour de France actuel, avec la disparition en premi&egrave;re semaine de Brajkovic... 
+                <a href="tourfrance/chroniques/322653.html" title="Voeckler sera en jaune jusqu'&agrave; jeudi">
+                	[suite]
+               	</a>
+         	</td>
+		</tr>							
+	</table>
+</div>
+<!-- </tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+
+	<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+<h2 class="accordion_toggle">
+	Matthieu Proulx
+</h2>
+<div class="accordion_content" style="display:none;">
+	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+    	<tr>
+        	<td class="chronTalkTitle">
+            	<a href="alouettes/chroniques/322618.html" title="Anthony Calvillo a rajeuni">Anthony Calvillo a rajeuni</a>
+            </td>
+        </tr>
+		<tr>
+			<td class="chronTalkTexte">
+            	<a class="blanc" href="/chroniqueurs/expert_mattprou.html" title="Matthieu Proulx">
+                	<img align="left" src="/new_images/small_MATTPROU.gif?20080128162605" width="42" height="37" alt="" border="0" />
+               	</a>
+                &Agrave; mes premi&egrave;res ann&eacute;es avec les Alouettes en 2005, on commen&ccedil;ait &agrave; critiquer Anthony Calvillo. On aurait dit que les gens aimaient moins son travail... 
+                <a href="alouettes/chroniques/322618.html" title="Anthony Calvillo a rajeuni">
+                	[suite]
+               	</a>
+         	</td>
+		</tr>							
+	</table>
+</div>
+<!-- </tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+
+	<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+<h2 class="accordion_toggle">
+	Phillippe Aumont
+</h2>
+<div class="accordion_content" style="display:none;">
+	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+    	<tr>
+        	<td class="chronTalkTitle">
+            	<a href="baseball/chroniques/322480.html" title="Ryne Sandberg, mon nouveau g&eacute;rant">Ryne Sandberg, mon nouveau g&eacute;rant</a>
+            </td>
+        </tr>
+		<tr>
+			<td class="chronTalkTexte">
+            	<a class="blanc" href="/chroniqueurs/expert_philaumo.html" title="Phillippe Aumont">
+                	<img align="left" src="/new_images/small_PHILAUMO.gif?20080207151338" width="42" height="37" alt="" border="0" />
+               	</a>
+                Pour la premi&egrave;re fois de ma carri&egrave;re, je suis ennuy&eacute; par une tendinite &agrave; l’&eacute;paule droite, ce qui me force &agrave; prendre quelques jours de repos avec ma... 
+                <a href="baseball/chroniques/322480.html" title="Ryne Sandberg, mon nouveau g&eacute;rant">
+                	[suite]
+               	</a>
+         	</td>
+		</tr>							
+	</table>
+</div>
+<!-- </tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+
+	<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+<h2 class="accordion_toggle">
+	Maxime Talbot
+</h2>
+<div class="accordion_content" style="display:none;">
+	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+    	<tr>
+        	<td class="chronTalkTitle">
+            	<a href="hockey/chroniques/322305.html" title="Un nouveau d&eacute;fi emballant">Un nouveau d&eacute;fi emballant</a>
+            </td>
+        </tr>
+		<tr>
+			<td class="chronTalkTexte">
+            	<a class="blanc" href="/chroniqueurs/expert_maxitalb.html" title="Maxime Talbot">
+                	<img align="left" src="/new_images/small_MAXITALB.gif?20110112170410" width="42" height="37" alt="" border="0" />
+               	</a>
+                Quelques jours apr&egrave;s la signature de mon contrat avec les Flyers de Philadelphie, je suis encore &eacute;mu et excit&eacute; par le d&eacu... 
+                <a href="hockey/chroniques/322305.html" title="Un nouveau d&eacute;fi emballant">
+                	[suite]
+               	</a>
+         	</td>
+		</tr>							
+	</table>
+</div>
+<!-- </tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+
+	<!-- <tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+<h2 class="accordion_toggle">
+	Stéphan Larouche
+</h2>
+<div class="accordion_content" style="display:none;">
+	<table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0">
+    	<tr>
+        	<td class="chronTalkTitle">
+            	<a href="boxe/chroniques/322411.html" title="C'est la folie que nous avions anticip&eacute;e">C'est la folie que nous avions anticip&eacute;e</a>
+            </td>
+        </tr>
+		<tr>
+			<td class="chronTalkTexte">
+            	<a class="blanc" href="/chroniqueurs/expert_steplaro.html" title="Stéphan Larouche">
+                	<img align="left" src="/new_images/small_STEPLARO.gif?20080128162614" width="42" height="37" alt="" border="0" />
+               	</a>
+                Nous sommes maintenant &agrave; trois jours du duel entre Lucian Bute et Jean-Paul Mendy et tout se passe tel que pr&eacute;vu jusqu’&agrave; maintenant. On voulait avoir... 
+                <a href="boxe/chroniques/322411.html" title="C'est la folie que nous avions anticip&eacute;e">
+                	[suite]
+               	</a>
+         	</td>
+		</tr>							
+	</table>
+</div>
+<!-- </tplinfo= "/templates/chroniques_nouvelles/accu/accu_experts_line.tpl"> -->
+
+</div>
+
+<script>
+	// Create Accordion
+	var expertAccordion = new accordion('expert_accordion', {maxOpen:8});
+	
+	// Open three first ones
+	expertAccordion.activate($$('#expert_accordion .accordion_toggle')[0]);
+	expertAccordion.activate($$('#expert_accordion .accordion_toggle')[1]);
+	expertAccordion.activate($$('#expert_accordion .accordion_toggle')[2]);
+	expertAccordion.activate($$('#expert_accordion .accordion_toggle')[3]);
+	expertAccordion.activate($$('#expert_accordion .accordion_toggle')[4]);
+	expertAccordion.activate($$('#expert_accordion .accordion_toggle')[5]);
+</script>
+						<div class="moreLink"><a href="http://www.rds.ca/chroniqueurs/"><strong>&raquo;</strong> <span>Tous nos chroniqueurs</span></a></div>
+                    </div>
+                    <!-- </CHRONIQUEURS> -->
+                    
+                    <!-- <COMMUNAUTÉ RDS> -->
+                    <div class="innerBox">
+                        <div class="col_sub_header"><a href="http://legrandclub.rds.ca/">dans la communauté</a></div>
+                        <div id="communaute_accordion">
+
+<h2 class="accordion_toggle">Le blogue de Michel Ménard</h2>
+
+<div class="accordion_content" style="display:none;"><table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0"><tr><td class="chronTalkTitle" bgcolor="#EAEAEA"><a href="http://legrandclub.rds.ca/profils/595742/posts/117800" title="Tour de France 2011 - 10e étape">Tour de France 2011 - 10e étape</a></td></tr><tr><td class="chronTalkTexte" bgcolor="#EAEAEA"><a class="blanc" href="http://legrandclub.rds.ca/profils/595742/page_profil" title="Michel Ménard"><img align="left" src="http://media.legrandclub.rds.ca/images/userpics/avatars/595/742/595742.png?1243617356" width="50" height="50" alt="" border="0" /></a>Faits saillants de la 5e étape - Mise à part l’habituelle échappée, le premier fait marquant allait être le...<a href="http://legrandclub.rds.ca/profils/595742/posts/117800" title="Tour de France 2011 - 10e étape">[suite]</a></td></tr></table></div>
+
+<h2 class="accordion_toggle">Le blogue de Stéphane Laberge</h2>
+
+<div class="accordion_content" style="display:none;"><table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0"><tr><td class="chronTalkTitle" bgcolor="#EAEAEA"><a href="http://legrandclub.rds.ca/profils/377555/posts/117524" title="Pourquoi Guy Carbonneau est-il boudé ?">Pourquoi Guy Carbonneau est-il boudé ?</a></td></tr><tr><td class="chronTalkTexte" bgcolor="#EAEAEA"><a class="blanc" href="http://legrandclub.rds.ca/profils/377555/page_profil" title="Stéphane Laberge"><img align="left" src="http://www.rds.ca/images/grandclub/image50x50_STEPLABE.jpg" width="50" height="50" alt="" border="0" /></a>Le statisticien Stéphane Laberge propose dans son blogue une série d'anectotes et de statistiques LNH...<a href="http://legrandclub.rds.ca/profils/377555/posts/117524" title="Pourquoi Guy Carbonneau est-il boudé ?">[suite]</a></td></tr></table></div>
+
+<h2 class="accordion_toggle">Le blogue de Prince Poker</h2>
+
+<div class="accordion_content" style="display:none;"><table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0"><tr><td class="chronTalkTitle" bgcolor="#EAEAEA"><a href="http://legrandclub.rds.ca/profils/PrincePoker/posts/116893" title="Dame Chance - Blogue WSOP 2011">Dame Chance - Blogue WSOP 2011</a></td></tr><tr><td class="chronTalkTexte" bgcolor="#EAEAEA"><a class="blanc" href="http://legrandclub.rds.ca/profils/707244/page_profil" title="Prince Poker"><img align="left" src="http://www.rds.ca/images/grandclub/image50x50_PRINPOKE.jpg" width="50" height="50" alt="" border="0" /></a>Aéroport de Montréal, 31 mai, 7h am. Un à un nous faisons notre arrivée à la porte d’embarquement C73...<a href="http://legrandclub.rds.ca/profils/PrincePoker/posts/116893" title="Dame Chance - Blogue WSOP 2011">[suite]</a></td></tr></table></div>
+
+<!-- <h2 class="accordion_toggle">Le blogue de Maxim Martin</h2>
+
+<div class="accordion_content" style="display:none;"><table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0"><tr><td class="chronTalkTitle" bgcolor="#EAEAEA"><a href="http://legrandclub.rds.ca/profils/686872/posts/113015" title="Mon nouveau spectacle : les gagnants sont...">Mon nouveau spectacle : les gagnants sont...</a></td></tr><tr><td class="chronTalkTexte" bgcolor="#EAEAEA"><a class="blanc" href="http://legrandclub.rds.ca/profils/686872/page_profil" title="Maxim Martin"><img align="left" src="http://www.rds.ca/images/grandclub/image50x50_MAXIMART.jpg" width="50" height="50" alt="" border="0" /></a>Maxim Martin fait son entrée dans le Grand Club! Venez discuter de sports avec cet amateur invétéré... <a href="http://legrandclub.rds.ca/profils/686872/posts/113015" title="Mon nouveau spectacle : les gagnants sont...">[suite]</a></td></tr></table></div> -->
+
+<!-- <h2 class="accordion_toggle">Le blogue de Kim St-Pierre</h2>
+
+<div class="accordion_content" style="display:none;"><table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0"><tr><td class="chronTalkTitle" bgcolor="#EAEAEA"><a href="http://legrandclub.rds.ca/profils/78941/posts/112896" title="Déception">Déception</a></td></tr><tr><td class="chronTalkTexte" bgcolor="#EAEAEA"><a class="blanc" href="http://legrandclub.rds.ca/profils/78941/page_profil" title="Kim St-Pierre"><img align="left" src="http://www.rds.ca/images/grandclub/image50x50_KIMSTPI.jpg" width="50" height="50" alt="" border="0" /></a>La gardienne de but Kim St-Pierre se joint au Grand Club! Triple médaillée d'or et passionnée de sports, Kim vous fera découvrir son blogue au sujet du  hockey féminin. <a href="http://legrandclub.rds.ca/profils/78941/posts/112896" title="Déception">[suite]</a></td></tr></table></div> -->
+
+<!-- <h2 class="accordion_toggle">La caricature de la semaine</h2>
+
+<div class="accordion_content" style="display:none;"><table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0"><tr><td class="chronTalkTitle" bgcolor="#EAEAEA"><a href="http://legrandclub.rds.ca/profils/314462/posts/108725" title="Coup à la tête 2e partie...">Coup à la tête 2e partie...</a></td></tr><tr><td class="chronTalkTexte" bgcolor="#EAEAEA"><a class="blanc" href="http://legrandclub.rds.ca/profils/314462/page_profil" title="Patrick Laramée"><img align="left" src="http://www.rds.ca/images/grandclub/image50x50_PATRLARA.jpg" width="50" height="50" alt="" border="0" /></a>Faites vos suggestions à notre caricaturiste du Grand Club et revivez l'actualité de la semaine en images... <a href="http://legrandclub.rds.ca/profils/314462/posts/108725" title="Coup à la tête 2e partie...">[suite]</a></td></tr></table></div>  -->
+
+<!-- <h2 class="accordion_toggle">Les recettes de Bob le Chef</h2>
+
+<div class="accordion_content" style="display:none;"><table class="chronTalkGros" width="100%" cellspacing="0" cellpadding="0"><tr><td class="chronTalkTitle" bgcolor="#EAEAEA"><a href="http://legrandclub.rds.ca/profils/639291/posts/103223" title="Super Bol de chili XLV">Super Bol de chili XLV</a></td></tr><tr><td class="chronTalkTexte" bgcolor="#EAEAEA"><a class="blanc" href="http://legrandclub.rds.ca/profils/639291/page_profil" title="Bob le Chef"><img align="left" src="http://www.rds.ca/images/grandclub/image50x50_BOBLECHEF.jpg" width="50" height="50" alt="" border="0" /></a>Bob le Chef débarque dans le Grand Club! Échangez avec lui pour faire de vos partys sportifs un succès... <a href="http://legrandclub.rds.ca/profils/639291/posts/103223" title="Super Bol de chili XLV">[suite]</a></td></tr></table></div>  -->
+
+<script>
+	// Create Accordion
+	var communauteAccordion = new accordion('communaute_accordion', {maxOpen:2, classNames : {toggle : 'accordion_toggle', toggleActive : 'accordion_toggle_active', content : 'accordion_content'}});
+	
+	// Open three first ones
+	communauteAccordion.activate($$('#communaute_accordion .accordion_toggle')[0]);
+	communauteAccordion.activate($$('#communaute_accordion .accordion_toggle')[1]);
+</script>
+
+</div>
+                    </div>
+                    <!-- </COMMUNAUTÉ RDS> -->	
+		
+                </div>
+            </div>
+
+
+
+            <div id="col3Wrapper">
+                <div id="col3Inner">
+                
+                    <div id="ticker" style="padding-top:0px;">
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="300" height="19" id="ticker" align="middle">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="allowFullScreen" value="false" />
+<param name="movie" value="/ticker/ticker.swf" />
+<param name="quality" value="high" />
+<param name="bgcolor" value="#99ffcc" />
+<param name="wmode" value="transparent" />
+<embed src="/ticker/ticker.swf" quality="high" bgcolor="#99ffcc" width="300" height="19" name="ticker" align="middle" wmode="transparent" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+
+
+<script>
+	var currentHour = 20;
+	
+	if(currentHour >= 10){$('ticker').style.display = 'none'}
+</script>
+
+</div>
+					
+                    <!--<div class="innerBox" style="overflow:visible;"><a href="/mobile/rdshockey.html"><img src="/images/promos/RDSHockeyAndroid-300x80.jpg" width="300" height="80" alt=""></a></div>-->
+					
+					<div id="bigBox" class="innerBox" style="overflow:visible;">
+<script language="JavaScript" src="http://ad.doubleclick.net/adj/ctv.rds.ca/accueil;tile=2;dcopt=ist;sz=300x250;ord=12072011200713?" type="text/javascript"></script>
+<noscript>
+	<a href="http://ad.doubleclick.net/jump/ctv.rds.ca/accueil;tile=2;sz=300x250;ord=12072011200713?" target="_blank">
+    	<img src="http://ad.doubleclick.net/ad/ctv.rds.ca/accueil;tile=2;sz=300x250;ord=12072011200713?" width="300" height="250" border="0" alt="">
+   	</a>
+</noscript>
+
+
+
+</div> 
+                                                 
+                    <div id="playerVideo" class="innerBox">    <!-- // Début du mini player //-->
+    <div id="mini_player">
+      <div class="col_sub_header"><a href="http://www.rds.ca/zv2/" style="color:#FFFFFF;">Zone Vidéo</a></div>
+      <div id="mini_title" style="display:none;">&nbsp;</div>
+      <div id="mini_main" style="min-height:190px;">
+        <div id="mini_flash"></div>
+        <div id="video_warning"></div>
+      </div>
+      <script type="text/javascript">
+        function CreatePlayer(){
+          var so = new SWFObject("/zv2/player/ExtendedMediaPlayer.swf?version=20101020&options=", "myId", "302", "190", "10", "#000000");
+          so.addParam("allowFullScreen", "true"); 
+          so.addParam("wmode", "transparent"); 
+          so.write("mini_flash");
+        }
+      </script>
+      <div id="playlist"></div>
+	  <div id="access_zv"><a href="/zv2/">&laquo; Acc&eacute;dez &agrave; la nouvelle Zone Vid&eacute;o &raquo;</a></div>
+	  <div id="trackingPixels">
+		<img width="1" height="1" id="startUrl" src=""/>
+		<img width="1" height="1" id="endUrl" src=""/>
+	  </div>
+    </div>
+    <script type="text/javascript">
+	  	var miniPlayerLoaded = false;
+		
+		function OnPlayerReady(){
+			if(miniPlayerLoaded == false && document.getElementById('myId')){
+				mini_player.init('accueil=on&order_by=ordo');
+				miniPlayerLoaded = true;
+			}
+		}
+		
+		if (window.addEventListener){
+			window.addEventListener('load', CreatePlayer, false); 
+		}else if (window.attachEvent){
+			window.attachEvent("onload", CreatePlayer);
+		}
+    </script></div>
+
+					<div id="promomobile" class="innerBox" style="overflow:visible;"><a href="mobile/index.html"><img src="images/promos/BellMobility-300x80-RDS.jpg" width="300" height="80" alt="RDS T&eacute;l&eacute; Mobile"></a></div>
+
+                    <!-- <ÉMISSIONS RDS> -->
+
+					<!--<style>
+                        #emission_accordion h2.accordion_toggle_active, #emission_accordion1 h2.accordion_toggle_active{background-image:url(/images/2009/toggles/chron_active_300.jpg);}
+                        #emission_accordion h2.accordion_toggle,  #emission_accordion1 h2.accordion_toggle{background-image:url(/images/2009/toggles/chron_passive_300.jpg);}
+                    </style>
+					
+                    <div id="emissions" class="innerBox">
+                        <div class="col_sub_header"><a href="/surnosondes/">émissions rds</a></div>-->
+                        <!--include virtual="/ssi/2009/chroniqueurs/accu_emissions4A7_liste.ssi" -->
+                        <!--include virtual="/ssi/2009/chroniqueurs/accu_emissions360_liste.ssi" -->
+                    <!-- </div> -->
+					
+                    <!-- </ÉMISSIONS RDS> -->
+                    
+					<div id="sondage" class="innerBox">
+						<div class="col_sub_header">sondage</div>
+						<!-- IF PAGE TYPE IS CHRONIQUE USE DIFF CSS CLASSES JO-->
+
+   
+	
+	
+   
+
+
+<!-- <tplinfo ="/templates/sondages/sondage-texte.tpl"> -->
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var year = 2011 ;
+var month = parseInt('07') - 1 ;
+var day = parseInt('14') ;
+var expiration = new Date(year,month,day);
+var cookie = document.cookie ;
+var webcookie = "SONDAG4E1BC872"
+var deb = cookie.indexOf(webcookie) ;
+var Reponse = "" ;
+
+
+function CreateUniqueid () {		
+	var maxVal = 9999999999;
+	var minVal = 1111111111;
+	var randVal = minVal+(Math.random()*(maxVal-minVal));
+	var UID = typeof floatVal=='undefined'?Math.round(randVal):randVal.toFixed(floatVal);				
+	return UID;	
+}
+
+function writeCookie() {
+	document.cookie = webcookie + "=full; path=/; expires=" + expiration.toGMTString();
+}
+
+
+function validate(f) {
+	
+	var flag = false ;
+	
+	for ( i=0 ; i<f.ff_reponse.length ; i++ ) {
+		if ( f.ff_reponse[i].checked == true ) {
+			flag = true;
+			ff_reponse = f.ff_reponse[i].value;
+		}
+	}
+	
+	if ( flag == false ) {
+		alert("Veuillez S.V.P. faire un choix ...") ;
+		f.ff_reponse[0].focus() ;
+		return (false) ;
+	}		
+	
+  	pagerefresh = "saisiesondage";
+	year = "2011";
+	month = "07";
+	day = "14";
+	ff_ID_sondage = "SONDAG4E1BC872";
+	ff_URL = document.location.pathname;
+		
+	URL = "/cgi-bin/Identification?uniqueid=" + CreateUniqueid() + "&pagerefresh=" + pagerefresh + "&year=" + year + "&month=" + month + "&day=" + day + "&ff_ID_sondage=" + ff_ID_sondage + "&ff_URL=" + ff_URL + "&ff_reponse=" + ff_reponse + "&from_pop=yes";
+	
+	popUp(URL,500,400,1);
+	return false;	
+	
+}
+
+if ( deb == -1 )
+{
+	// début Publicité
+	
+	// AFFICHER LE PUB FLASH QUI CORRESPOND A LA PAGE ACCU OU CHRONIQUE
+
+		document.write('<object	classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="300" height="45">');
+		document.write('<param name="movie" value="/sondage/flash/SONDAG.swf?clickTAG=http://ad.doubleclick.net/clk;47404417;6633334;g?http://www.rds.ca/concours/frisk/">');
+		document.write('<param name="quality" value="high">');
+		document.write('<param name="wmode" value="transparent">');
+		document.write('<param name="bgcolor" value="#FFFFFF" />');
+		document.write('<embed src="/sondage/flash/SONDAG.swf?clickTAG=http://ad.doubleclick.net/clk;47404417;6633334;g?http://www.rds.ca/concours/frisk/" quality="high" wmode="transparent" bgcolor="#FFFFFF" width="300" height="45" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>');
+		document.write('</object>');	
+	// fin Publicité
+	
+	document.write('') ;
+	document.write('') ;
+
+	document.write('<form name="formSond" action="/cgi-bin/Identification" method="get" onsubmit="return validate(this)">\n') ;
+
+	document.write('<input type="hidden" name="pagerefresh" value="saisiesondage">\n') ;
+
+        document.write('<input type="hidden" name="year" value="2011">\n') ;
+        document.write('<input type="hidden" name="month" value="07">\n') ;
+        document.write('<input type="hidden" name="day" value="14">\n') ;
+
+
+	document.write('<input type="hidden" name="ff_ID_sondage" value="SONDAG4E1BC872">\n') ;
+	document.write('<input type="hidden" name="ff_URL" value="vide">\n') ;
+	document.write('<input type="hidden" name="xdebug" value="off">\n') ;
+	document.write('<table class="sondage" cellpadding="0" cellspacing="0" border="0">\n') ;
+	document.write('<tr>\n') ;
+	document.write('<td class="sondQuestion" colspan="2">\n') ;
+	document.write('Croyez-vous que l\'Impact jouera pour une fiche supérieure à ,500 dans la deuxième portion de son calendrier? \n') ;
+	document.write('</td>\n') ;
+	document.write('</tr>\n') ;
+	Reponse="Oui" ;
+	if (Reponse!="") { document.write('<tr><td class="questionItemButton" width="10"><input type="radio" name="ff_reponse" value="0" id="champ1"></td><td><label for="champ1" class="questionItemText">Oui</label></td></tr>\n') }
+	Reponse="Non" ;
+	if (Reponse!="") { document.write('<tr><td class="questionItemButton" width="10"><input type="radio" name="ff_reponse" value="1" id="champ2"></td><td><label for="champ2" class="questionItemText">Non</label></td></tr>\n') }
+	Reponse="" ;
+	if (Reponse!="") { document.write('<tr><td class="questionItemButton" width="10"><input type="radio" name="ff_reponse" value="2" id="champ3"></td><td><label for="champ3" class="questionItemText"></label></td></tr>\n') }
+	Reponse="" ;
+	if (Reponse!="") { document.write('<tr><td class="questionItemButton" width="10"><input type="radio" name="ff_reponse" value="3" id="champ4"></td><td><label for="champ4" class="questionItemText"></label></td></tr>\n') }
+	Reponse="" ;
+	if (Reponse!="") { document.write('<tr><td class="questionItemButton" width="10"><input type="radio" name="ff_reponse" value="4" id="champ5"></td><td><label for="champ5" class="questionItemText"></label></td></tr>\n') }
+	document.write('<tr><td class="sondBout" colspan="2"><input type="Submit" style="width: 110px" class="boutGen" value="Soumettre"></td></tr></table></form>\n') ;
+} else {
+
+	// Si le cookie existe déjà, on affiche les résultats ...
+
+	// début Publicité
+	
+
+		document.write('<object	classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="300" height="45">');
+		document.write('<param name="movie" value="/sondage/flash/SONDAG.swf?clickTAG=http://ad.doubleclick.net/clk;47404417;6633334;g?http://www.rds.ca/concours/frisk/">');
+		document.write('<param name="quality" value="high">');
+		document.write('<param name="wmode" value="transparent">');
+		document.write('<param name="bgcolor" value="#FFFFFF" />');
+		document.write('<embed src="/sondage/flash/SONDAG.swf?clickTAG=http://ad.doubleclick.net/clk;47404417;6633334;g?http://www.rds.ca/concours/frisk/" quality="high" wmode="transparent" bgcolor="#FFFFFF" width="300" height="45" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>');
+		document.write('</object>');						
+	
+	// fin Publicité
+	document.write('<table class="sondage" cellpadding="0" cellspacing="0" border="0">\n') ;
+	document.write('<tr>\n') ;
+	document.write('<td class="sondQuestion">\n') ;
+	document.write('Croyez-vous que l\'Impact jouera pour une fiche supérieure à ,500 dans la deuxième portion de son calendrier? \n') ;
+	document.write('</td>\n') ;
+	document.write('</tr>\n') ;
+	document.write('<tr>\n') ;
+	document.write('<td class="sondQuestion">\n') ;
+	document.write('<B>Résultats</B><BR />\n') ;
+	document.write('</td>\n') ;
+	document.write('</tr>\n') ;
+	Reponse="Oui";
+	if (Reponse!="") { document.write('<tr><td class="sondRes">Oui (25%)<br /><IMG SRC="http://www.rds.ca/images/sondage_barre.gif" WIDTH=25 HEIGHT=10 ALT="25 %" BORDER=0></td></tr>\n') }
+	Reponse="Non";
+	if (Reponse!="") { document.write('<tr><td class="sondRes">Non (75%)<br /><IMG SRC="http://www.rds.ca/images/sondage_barre.gif" WIDTH=75 HEIGHT=10 ALT="75 %" BORDER=0></td></tr>\n') }
+	Reponse="";
+	if (Reponse!="") { document.write('<tr><td class="sondRes"> (0%)<br /><IMG SRC="http://www.rds.ca/images/sondage_barre.gif" WIDTH=0 HEIGHT=10 ALT="0 %" BORDER=0></td></tr>\n') }
+	Reponse="";
+	if (Reponse!="") { document.write('<tr><td class="sondRes"> (0%)<br /><IMG SRC="http://www.rds.ca/images/sondage_barre.gif" WIDTH=0 HEIGHT=10 ALT="0 %" BORDER=0></td></tr>\n') }
+	Reponse="";
+	if (Reponse!="") { document.write('<tr><td class="sondRes"> (0%)<br /><IMG SRC="http://www.rds.ca/images/sondage_barre.gif" WIDTH=0 HEIGHT=10 ALT="0 %" BORDER=0><br /><br /></td></tr>\n') }
+	document.write('<tr><td class="sondRes">Nombre de participants : 858<br /><br /></td></tr>\n') ;
+	document.write('</table>');
+}
+// -->
+</script>
+
+<!-- </tplinfo ="/templates/sondages/sondage-texte.tpl"> -->
+
+                   	</div>
+               	</div>
+            </div>
+		</div>
+
+        <div id="footer">
+        	<script language="javascript" type="text/javascript">
+	unikIdForLink = function (obj){
+	    var thisLink = obj.href;
+		var linkSplit = thisLink.split("?");
+		var maxVal = 9999999999;
+		var minVal = 1111111111;
+		var randVal = minVal+(Math.random()*(maxVal-minVal));
+		var UID = typeof floatVal=='undefined'?Math.round(randVal):randVal.toFixed(floatVal);
+		document.location = linkSplit[0] + "?uniqueid=" + UID + "&" + linkSplit[1];
+		return false;
+	}
+</script>
+<div class="links">
+	<div class="logoRDS">
+		<a href="http://www.rds.ca"><img src="/images/logos/Event2010.png" width="88" height="63" alt="RDS.ca" /></a>
+	</div>
+	<div class="textLinks">
+		<br />
+		<ul>
+			<li class="first"><a href="/mobile/">RDS Mobile</a></li>
+			<li><a href="/emplois/">Emplois</a></li>
+			<!--<li><a href="/rdshd/">HD</a></li>-->
+			<li><a href="/comite_direction.html">Comit&eacute; de direction</a></li>
+			<li><a href="/historique.html">Historique</a></li>
+			<li><a href="/surnosondes/liste_communiques.html">Communiqu&eacute;s</a></li>
+			<li><a href="/ventes/">Ventes</a></li>
+			<li class="last"><a href="/normesGraph/">Extranet Prod. Ext.</a></li>
+		</ul>
+		<!--
+		<ul>
+			<li><a href="/chroniqueurs/">Chroniqueurs</a></li>
+			<li><a href="/concours/">Concours</a></li>
+			<li><a href="/forums/">Forums</a></li>
+			<li><a href="/jeux">Jeux</a></li>
+			<li><a href="/federations/">F&eacute;d&eacute;rations Sportives</a></li>
+			<li class="last"><a href="http://www.aubaine.ca/" target="blank">Annonces class&eacute;es</a></li>
+		</ul>
+		-->
+		<ul>
+			<li class="first"><strong>RDS.ca</strong></li>
+			<li><a href="/surnosondes/">Sur nos ondes</a></li>
+			<li><a href="/animateurs/">Animateurs</a></li>
+			<li><a href="/contact/">&Eacute;crivez-nous</a></li>
+			<li><a href="http://www.bell.ca/shopping/PrsShpCTV_Terms.page?language=fr" target="_blank">Termes&nbsp;et&nbsp;Conditions</a></li>
+			<li><a href="http://www.bell.ca/shopping/PrsShpCTV_Privacy.page?language=fr" target="_blank">Politique</a></li>
+			<li><a href="/forums.html">Forums</a></li>
+			<li><a href="/ventes/">Publicit&eacute;</a></li>
+			<!--<li><a href="/fr_favori.html">RDS.ca: mon favori</a></li>-->
+			<!--<li><a href="/cgi-bin/Identification?REQ=MAR&P=INTRO&pagedyn=marcheauxpuces&SPODIR=accu" onclick="unikIdForLink(this); return false;">Activit&eacute;s de quartier</a></li>-->
+			<!--<li class="last"><a href="/cgi-bin/Identification?REQ=MAR&P=INTRO&pagedyn=marcheauxpuces&SPODIR=accu" onclick="unikIdForLink(this); return false;">March&eacute; aux puces</a></li>-->
+		</ul>
+	</div>
+	<div class="logoRDS rss"><a href="/flux_rss.html"><img src="/images/xmlrss2_n.gif" width="82" height="15" alt="Flux RSS" /></a></div>
+</div>
+<div class="bellMedia">
+	<a href="http://www.bellmedia.ca" class="bell"><img src="/images/logos/BellMedia.gif" width="230" height="46" /></a>
+	<span>Bell M&eacute;dia T&eacute;l&eacute;vision</span>
+</div>
+
+<!-- <div id="outputforlink"></div> -->
+<!-- <a href="/cgi-bin/Identification?REQ=MAR&P=INTRO&pagedyn=marcheauxpuces&SPODIR=accu" style="text-decoration : none;" onclick="unikIdForLink(this);">&nbsp;&nbsp;</a> -->
+<!-- // Tracking Omniture -->
+<script type='text/javascript'>_AUTO_TRACK = false;</script>
+<script type='text/javascript' src='http://metrics.ctvdigital.net/global/globalpagetracking.js'></script>
+<!-- // Fin Tracking Omniture -->
+<!-- // Tracking Comscore -->
+<script type='text/javascript' src="http://metrics.ctvdigital.net/comscore/beacon.js"></script>
+<!-- // Fin Tracking Comscore -->
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-19464918-1'])
+	_gaq.push(['_setDomainName', '.rds.ca']);
+	_gaq.push(['_trackPageview']);
+	
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+			<script language="javascript" type="text/javascript">
+			 // Omniture Tracking parameters
+			s.prop6			= "RDS.ca";
+			s.prop7			= "RDS.ca/accueil";
+			s.prop8			= "";
+			s.prop9			= "";
+			s.PageName		= "RDS.ca:accueil";
+			s.ContentTitle	= "";
+			s.ContentID		= "";
+			s.ContentType	= "";
+			Tracking.Track();
+			</script>
+        </div>
+        <!-- Pour un catfish sans bouton Fermer -->
+
+
+<link rel="stylesheet" type="text/css" media="screen" href="/css/catfish.css?99" />
+
+<div id="catfish" style="display:none;position:fixed; bottom:0; z-index:10000;">
+	<div id="catfishInner">
+		
+        
+		<!-- CONTENU - Placer l'image ou les tags ici-->
+        <a href="javascript:void(0);" onclick="javascript:document.getElementById('catfish').style.display = 'none';" id="catfishClose" style="left:978px; bottom: 69px; height:17px;color:#000000;font-weight:bold;text-decoration:underlined;"><img src="http://www.rds.ca/images/2009/closebutton.png" alt="Fermer"></a>
+        
+        <!-- begin ad tag-->
+
+			<script language="JavaScript" src="http://ad.doubleclick.net/adj/ctv.rds.ca/accueil;sz=1000x90;ord=[timestamp]?" type="text/javascript"></script>
+			
+			<noscript><a href="http://ad.doubleclick.net/adj/ctv.rds.ca/accueil;sz=1000x90;ord=[timestamp]?" target="_blank"><img src="http://ad.doubleclick.net/adj/ctv.rds.ca/accueil;sz=1000x90;ord=[timestamp]?" width="1000" height="90" border="0" alt=""></a></noscript>
+			
+		<!-- End ad tag -->
+
+		<!-- FIN CONTENU-->
+		
+	</div>
+</div>
+	</div>
+    
+    <div id="RDSWings" onClick="window.location.href='http://clicks.eyereturn.com/redir.aspx?tokenID=253716&cn=0';" style="position:fixed;top:0;left:0;width:100%;height:850px;z-index:3;cursor:pointer;display:none;"></div>
+   
+	<!--
+	<div id='primary' style='visibility:hidden'>
+	   <iframe src='radar8.html'
+	      id='cedexis' name='cdxradar' height='0' width='0' border='0'
+	      scrolling='no' marginwidth='0' marginheight='0' frameborder='0'
+	      vspace='0' hspace='0' style='position:absolute; left:0px;
+	top:0px; z-index:0;'>
+	   </iframe>
+	</div>
+	-->
+	
+</body>
+</html>
+

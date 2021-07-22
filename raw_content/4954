@@ -1,0 +1,1325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <title>HealthMap | Mapa mundial de alertas epid&eacute;micas</title>
+    <link rel="stylesheet" type="text/css" href="../css/master.css" />
+    <link rel="stylesheet" type="text/css" href="../css/presets.css" />
+    <link rel="stylesheet" type="text/css" href="../css/skins/new/hm.css" />
+    <link rel="stylesheet" type="text/css" href="../css/datePicker.css" />
+    <link rel="stylesheet" type="text/css" href="../rating/rating.css" />
+    <link rel="stylesheet" href="http://view.jquery.com/trunk/plugins/autocomplete/jquery.autocomplete.css" type="text/css" />
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="../css/ie.css" />
+    <![endif]-->
+     <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="../css/ie6.css" />
+    <style type="text/css">    #fullscreen, tr.heading img, #outbreak_missing, #outbreak_missing_top, #outbreak_missing strong, #qv, #qv_lc, #qv_rc, div.sp_rating div.base, div.sp_rating div.base div.average, img#disease_icon, img#location_icon, img#feeds_icon, img#category_icon, img#date_icon
+        {
+        behavior: url(../iepngfix/iepngfix.htc)
+        }
+    </style>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.1.css" media="screen" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.1.js"></script>
+    <script type="text/javascript" src="../datepicker/jquery.datePicker.js"></script>
+    <script type="text/javascript" src="../datepicker/date.js"></script>
+    <script type="text/javascript" src="http://view.jquery.com/trunk/plugins/autocomplete/jquery.autocomplete.js"></script>
+    <script type="text/javascript" src="../jquerytools/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="../customtooltip/jquery.customtooltip.js"></script>
+    <script type="text/javascript" src="../iepngfix/iepngfix_tilebg.js"></script>
+
+    <!-- CUSTOM: kml widget -->
+    <script type="text/javascript" src="../kmlwidget/js/kmlUtils.js"></script>
+    <!-- END CUSTOM -->
+
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3&client=gme-childrenshospital&sensor=false"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17547010-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body onload="onLoad(); initState(); maskmailto('mailhotline','hotline','healthmap.org'); maskmailto('hm_email','info','healthmap.org');">
+
+<!-- START: TOP BAR
+............................ -->
+
+<div id="topbar">
+
+<!-- START: ROTATOR
+............................ -->
+
+<a class="next hide"></a><a class="prev hide"></a>
+<div class="navi"></div>
+<div id="rss_rotator" class="rotator">
+<div id="rss_rotator_items">
+<div><img src="../images/new/rss_blog_icon.png" alt="" />Apr 21, 2011 - <span class="title"><a href="http://healthmapblog.blogspot.com/2011/04/14-hospitalized-with-suspected-anthrax.html" target="_blank">14 Hospitalized with Suspected Anthrax in Tajikistan</a></span></div><div><img src="http://healthmap.org/images/new/dengue_ad.png" alt="" /><span class="title"><a href="http://www.healthmap.org/dengue" target="_blank">CDC collaboration for assessing dengue risk throughout the world</a></span></div><div><img src="../images/new/rss_blog_icon.png" alt="" />Apr 19, 2011 - <span class="title"><a href="http://healthmapblog.blogspot.com/2011/04/white-nose-syndrome-spreads-foot-and.html" target="_blank">White-nose syndrome spreads, Foot and Mouth Returns to S. Korea, and Avian Influenza...</a></span></div><div><img src="http://healthmap.org/images/new/haiti_ad.gif" alt="" /><span class="title"><a href="http://www.healthmap.org/haiti" target="_blank">Focus on the Cholera outbreak in Haiti</a></span></div><div><img src="../images/new/rss_blog_icon.png" alt="" />Apr 13, 2011 - <span class="title"><a href="http://healthmapblog.blogspot.com/2011/04/drug-resistant-bug-review-ndm-1-in-new.html" target="_blank">Drug resistant bug review: NDM-1 in New Delhi’s sewage, WHO calls to action,  recent...</a></span></div><div><img src="http://healthmap.org/images/new/smartphone_ad.gif" alt="" /><span class="title"><a href="http://www.healthmap.org/outbreaksnearme" target="_blank">Submit outbreaks to HealthMap using "Outbreaks Near Me", our free SmartPhone app!</a></span></div><div><img src="../images/new/rss_blog_icon.png" alt="" />Apr 08, 2011 - <span class="title"><a href="http://healthmapblog.blogspot.com/2011/04/possible-link-in-us-measles-cases-and.html" target="_blank">Possible Link in US Measles Cases and Dolphin Deaths Declared to be "Unusual Mortality...</a></span></div><div><img src="http://healthmap.org/images/new/facebook_ad.png" alt="" /><span class="title"><a href="http://apps.facebook.com/onm_app/?ref=ts" target="_blank">Share alerts with your friends on Facebook!</a></span></div><div><img src="../images/new/rss_blog_icon.png" alt="" />Apr 07, 2011 - <span class="title"><a href="http://healthmapblog.blogspot.com/2011/04/possible-libya-border-camp-outbreak.html" target="_blank">Possible Libya Border Camp Outbreak, Gastroenteritis in Ukraine, and Newcastle Disease...</a></span></div><div><img src="http://healthmap.org/images/new/twitter_ad.png" alt="" /><span class="title"><a href="http://www.twitter.com/healthmap" target="_blank">Follow HealthMap on Twitter!</a></span></div></div>
+</div>
+
+<!-- .......................
+END: ROTATOR -->
+
+</div>
+
+<!-- ....................... 
+END: TOP BAR -->
+
+<!-- START: PAGE 
+............................ -->
+
+<div id="page">
+
+<!-- START: HEADER
+............................ -->
+
+<div id="header">
+
+<div id="header_left">
+<a href="index.php?PHPSESSID=stetmdv1hm1i5hvp9v1e55nv73" class="hmlogo"><img src="../images/new/logo.png" width="227" height="54" alt="HealthMap" />
+<span class="tagline">Mapa mundial de alertas epid&eacute;micas</span></a>
+</div>
+
+<div id="header_right">
+
+
+<div id="loggedin" class="hide">
+Usted esta  <a href="../admin/profile.php?PHPSESSID=stetmdv1hm1i5hvp9v1e55nv73">Su Perfil</a> | <a href="../admin/pref.php?PHPSESSID=stetmdv1hm1i5hvp9v1e55nv73">preferencias</a> | <a href="../admin/logout.php?PHPSESSID=stetmdv1hm1i5hvp9v1e55nv73">Log Out</a>
+</div>
+
+<div id="loggedout" class="">
+<input type="text" id="uname" onfocus="clearBox(this.id);" class="default" value="Username or Email" /> &nbsp; <input type="password" id="pword" onfocus="clearBox(this.id);" class="default" value="Password" /> &nbsp; <input type="button" value="Login" onclick="xajax_authenticate('', i$('uname').value, i$('pword').value);" /> &nbsp; <a href="../register.html?PHPSESSID=stetmdv1hm1i5hvp9v1e55nv73" class="iframe">Regístrate</a> | <a href="../pw.html?PHPSESSID=stetmdv1hm1i5hvp9v1e55nv73" class="iframe">Olvidó su contraseña</a>
+<span id="loginmsg"></span>
+</div>
+
+
+<!-- START: PROMOTE 
+............................ -->
+
+<div id="promote_container"></div>
+
+<!-- .......................
+END: PROMOTE -->
+
+
+</div>
+
+</div>
+
+<!-- .......................
+END: HEADER -->
+
+<!-- START: HIDDEN LOGIN WIDGET
+............................ -->
+
+<div id="lb_message" class="hide">
+<a href="javascript:;" onclick="$('#lb_message').attr('class','hide'); $('#content').css({ opacity: 1 });" class="fancy_close"></a>
+<h1>Login to HealthMap</h1>
+<span id="loginmsg2"></span>
+<p>You must be logged into HealthMap to use this feature.</p>
+<p>* Username or Email<br /><input type="text" class="medium_textbox" id="uname2" /></p>
+<p>* Password<br /><input type="password" class="medium_textbox" id="pword2" /></p>
+<p><input class="submit" type="button" value="submit" onclick="xajax_authenticate('widget', i$('uname2').value, i$('pword2').value)" /></p>
+<p>Don't have a HealthMap account?  <a href="../register.html?PHPSESSID=stetmdv1hm1i5hvp9v1e55nv73" class="iframe">Register &raquo;</a></p>
+</div>
+
+<!-- END: HIDDEN LOGIN WIDGET
+............................ -->
+
+<!-- START: CONTENT
+............................ -->
+
+<div id="content">
+
+<!-- START: NAV ABOVE MAP
+............................ -->
+
+<div id="path">
+
+<div id="path_lc"></div>
+<div id="path_rc"></div>
+
+<!-- START: FULLSCREEN
+............................ -->
+
+<div id="display_options">
+<label>Display Options:</label> <a href="javascript:;" id="split" class="viewdown"><img src="../images/new/split_view.png" alt="Split View" title="Split View, Map and Listing" /></a><a href="javascript:;" id="list_only"><img src="../images/new/list_view.png" alt="List View Only" title="List View Only" /></a><a href="javascript:;" id="map_only"><img src="../images/new/map_view.png" alt="Map View Only" title="Map View Only" /></a><a href="javascript:;" onclick='maxMap();'><img src="../images/new/fullscreen_view.png" alt="Fullscreen" title="Map in Fullscreen Mode" /></a> 
+</div>
+<!--
+<div id="fullscreen">
+<a href="javascript:;" onclick='maxMap();'>Pantalla completa</a>
+</div>
+-->
+
+<!-- .......................
+END: FULLSCREEN -->
+
+<!-- START: REGULAR SEARCH
+............................ -->
+
+<div id="search">
+
+Buscar <input class="default" type="text" id="searchbox" name="searchbox" onfocus="clearBox(this.id);" value="disease or location" />
+<input type="button" id="search_button" name="search_button" value="go" />
+
+</div>
+
+<!-- .......................
+END: REGULAR SEARCH -->
+
+<!-- START: ADVANCED SEARCH
+............................ -->
+
+<div id="adv_search">
+
+<a href="javascript:;" onclick="i$('adv_search_options').className='show';">Búsqueda avanzada</a>
+
+<!-- START: ADVANCED SEARCH OPTIONS
+............................ -->
+
+<div id="adv_search_options" class="hide">
+
+<h2>Advanced Search Options <span id="aso_error"></span></h2>
+<a href="javascript:;" onclick="i$('adv_search_options').className='hide';" class="close">Close</a>
+
+<!-- START: DISEASES
+............................ -->
+
+<div id="column1">
+<h3><img src="../images/new/disease_trans.png" id="disease_icon" width="22" height="22" alt="Diseases" />Enfermedades</h3>
+
+Selecciona: <a href="javascript:void(0)" onclick="setAllCheck('diz', 1);">todos</a>, <a href="javascript:void(0)" onclick="setAllCheck('diz', 0);">ninguno</a>
+<div id="disease-list">
+<ul>
+<li><input type=checkbox checked="true" id="diz227"/> <span id="dn227" style="cursor:pointer" onclick="mSl('diz',227,'Meningitis - HiB');">Meningitis - HiB</span></li><li><input type=checkbox checked="true" id="diz228"/> <span id="dn228" style="cursor:pointer" onclick="mSl('diz',228,'Meningitis - Strep/Pneumoccocal');">Meningitis - Strep/Pneumoccocal</span></li><li><input type=checkbox checked="true" id="diz229"/> <span id="dn229" style="cursor:pointer" onclick="mSl('diz',229,'Meningitis - Neisseria');">Meningitis - Neisseria</span></li><li><input type=checkbox checked="true" id="diz230"/> <span id="dn230" style="cursor:pointer" onclick="mSl('diz',230,'Gnathostoma');">Gnathostoma</span></li><li><input type=checkbox checked="true" id="diz231"/> <span id="dn231" style="cursor:pointer" onclick="mSl('diz',231,'Anisakis');">Anisakis</span></li><li><input type=checkbox checked="true" id="diz232"/> <span id="dn232" style="cursor:pointer" onclick="mSl('diz',232,'Bartonella');">Bartonella</span></li><li><input type=checkbox checked="true" id="diz233"/> <span id="dn233" style="cursor:pointer" onclick="mSl('diz',233,'Paracoccidioidomycosis');">Paracoccidioidomycosis</span></li><li><input type=checkbox checked="true" id="diz234"/> <span id="dn234" style="cursor:pointer" onclick="mSl('diz',234,'Sporotrichosis');">Sporotrichosis</span></li><li><input type=checkbox checked="true" id="diz235"/> <span id="dn235" style="cursor:pointer" onclick="mSl('diz',235,'Colitis');">Colitis</span></li><li><input type=checkbox checked="true" id="diz237"/> <span id="dn237" style="cursor:pointer" onclick="mSl('diz',237,'Vibrio, noncholera');">Vibrio, noncholera</span></li><li><input type=checkbox checked="true" id="diz238"/> <span id="dn238" style="cursor:pointer" onclick="mSl('diz',238,'Relapsing Fever');">Relapsing Fever</span></li><li><input type=checkbox checked="true" id="diz4"/> <span id="dn4" style="cursor:pointer" onclick="mSl('diz',4,'&Aacute;ntrax');">&Aacute;ntrax</span></li><li><input type=checkbox checked="true" id="diz41"/> <span id="dn41" style="cursor:pointer" onclick="mSl('diz',41,'&Eacute;bola');">&Eacute;bola</span></li><li><input type=checkbox checked="true" id="diz174"/> <span id="dn174" style="cursor:pointer" onclick="mSl('diz',174,'A&uacute;n No Clasificado');">A&uacute;n No Clasificado</span></li><li><input type=checkbox checked="true" id="diz165"/> <span id="dn165" style="cursor:pointer" onclick="mSl('diz',165,'Acinetobacter baumannii');">Acinetobacter baumannii</span></li><li><input type=checkbox checked="true" id="diz179"/> <span id="dn179" style="cursor:pointer" onclick="mSl('diz',179,'Adenitis Equina ');">Adenitis Equina </span></li><li><input type=checkbox checked="true" id="diz211"/> <span id="dn211" style="cursor:pointer" onclick="mSl('diz',211,'Adenovirus');">Adenovirus</span></li><li><input type=checkbox checked="true" id="diz203"/> <span id="dn203" style="cursor:pointer" onclick="mSl('diz',203,'Alga');">Alga</span></li><li><input type=checkbox checked="true" id="diz218"/> <span id="dn218" style="cursor:pointer" onclick="mSl('diz',218,'Ambiental');">Ambiental</span></li><li><input type=checkbox checked="true" id="diz221"/> <span id="dn221" style="cursor:pointer" onclick="mSl('diz',221,'Ameba');">Ameba</span></li><li><input type=checkbox checked="true" id="diz3"/> <span id="dn3" style="cursor:pointer" onclick="mSl('diz',3,'Amoebiasis');">Amoebiasis</span></li><li><input type=checkbox checked="true" id="diz159"/> <span id="dn159" style="cursor:pointer" onclick="mSl('diz',159,'Anemia Infecciosa Equina ');">Anemia Infecciosa Equina </span></li><li><input type=checkbox checked="true" id="diz64"/> <span id="dn64" style="cursor:pointer" onclick="mSl('diz',64,'Anquilostoma ');">Anquilostoma </span></li><li><input type=checkbox checked="true" id="diz5"/> <span id="dn5" style="cursor:pointer" onclick="mSl('diz',5,'Arenavirus');">Arenavirus</span></li><li><input type=checkbox checked="true" id="diz6"/> <span id="dn6" style="cursor:pointer" onclick="mSl('diz',6,'Ascariasis');">Ascariasis</span></li><li><input type=checkbox checked="true" id="diz7"/> <span id="dn7" style="cursor:pointer" onclick="mSl('diz',7,'Aspergillosis');">Aspergillosis</span></li><li><input type=checkbox checked="true" id="diz8"/> <span id="dn8" style="cursor:pointer" onclick="mSl('diz',8,'Babesiosis');">Babesiosis</span></li><li><input type=checkbox checked="true" id="diz10"/> <span id="dn10" style="cursor:pointer" onclick="mSl('diz',10,'Blastomicosis');">Blastomicosis</span></li><li><input type=checkbox checked="true" id="diz172"/> <span id="dn172" style="cursor:pointer" onclick="mSl('diz',172,'Bocavirus Humano');">Bocavirus Humano</span></li><li><input type=checkbox checked="true" id="diz11"/> <span id="dn11" style="cursor:pointer" onclick="mSl('diz',11,'Botulismo');">Botulismo</span></li><li><input type=checkbox checked="true" id="diz204"/> <span id="dn204" style="cursor:pointer" onclick="mSl('diz',204,'Bronquitis/Bronquiolitis');">Bronquitis/Bronquiolitis</span></li><li><input type=checkbox checked="true" id="diz13"/> <span id="dn13" style="cursor:pointer" onclick="mSl('diz',13,'Brucelosis');">Brucelosis</span></li><li><input type=checkbox checked="true" id="diz20"/> <span id="dn20" style="cursor:pointer" onclick="mSl('diz',20,'C&oacute;lera');">C&oacute;lera</span></li><li><input type=checkbox checked="true" id="diz192"/> <span id="dn192" style="cursor:pointer" onclick="mSl('diz',192,'C&oacute;lera Aviaria');">C&oacute;lera Aviaria</span></li><li><input type=checkbox checked="true" id="diz22"/> <span id="dn22" style="cursor:pointer" onclick="mSl('diz',22,'C. difficile');">C. difficile</span></li><li><input type=checkbox checked="true" id="diz14"/> <span id="dn14" style="cursor:pointer" onclick="mSl('diz',14,'Campylobacter');">Campylobacter</span></li><li><input type=checkbox checked="true" id="diz15"/> <span id="dn15" style="cursor:pointer" onclick="mSl('diz',15,'Candidiasis');">Candidiasis</span></li><li><input type=checkbox checked="true" id="diz114"/> <span id="dn114" style="cursor:pointer" onclick="mSl('diz',114,'Ceguera del R&iacute;o');">Ceguera del R&iacute;o</span></li><li><input type=checkbox checked="true" id="diz17"/> <span id="dn17" style="cursor:pointer" onclick="mSl('diz',17,'Chagas');">Chagas</span></li><li><input type=checkbox checked="true" id="diz19"/> <span id="dn19" style="cursor:pointer" onclick="mSl('diz',19,'Chikungunya');">Chikungunya</span></li><li><input type=checkbox checked="true" id="diz107"/> <span id="dn107" style="cursor:pointer" onclick="mSl('diz',107,'Chlamydia');">Chlamydia</span></li><li><input type=checkbox checked="true" id="diz185"/> <span id="dn185" style="cursor:pointer" onclick="mSl('diz',185,'Circovirosis Porcina');">Circovirosis Porcina</span></li><li><input type=checkbox checked="true" id="diz32"/> <span id="dn32" style="cursor:pointer" onclick="mSl('diz',32,'Citomegalovirus');">Citomegalovirus</span></li><li><input type=checkbox checked="true" id="diz21"/> <span id="dn21" style="cursor:pointer" onclick="mSl('diz',21,'Clonorchiasis');">Clonorchiasis</span></li><li><input type=checkbox checked="true" id="diz219"/> <span id="dn219" style="cursor:pointer" onclick="mSl('diz',219,'Conflicto');">Conflicto</span></li><li><input type=checkbox checked="true" id="diz26"/> <span id="dn26" style="cursor:pointer" onclick="mSl('diz',26,'Conjuntivitis');">Conjuntivitis</span></li><li><input type=checkbox checked="true" id="diz201"/> <span id="dn201" style="cursor:pointer" onclick="mSl('diz',201,'Coronavirus');">Coronavirus</span></li><li><input type=checkbox checked="true" id="diz28"/> <span id="dn28" style="cursor:pointer" onclick="mSl('diz',28,'Cryptococcosis');">Cryptococcosis</span></li><li><input type=checkbox checked="true" id="diz29"/> <span id="dn29" style="cursor:pointer" onclick="mSl('diz',29,'Cryptosporidium');">Cryptosporidium</span></li><li><input type=checkbox checked="true" id="diz127"/> <span id="dn127" style="cursor:pointer" onclick="mSl('diz',127,'Culebrilla');">Culebrilla</span></li><li><input type=checkbox checked="true" id="diz31"/> <span id="dn31" style="cursor:pointer" onclick="mSl('diz',31,'Cysticercosis');">Cysticercosis</span></li><li><input type=checkbox checked="true" id="diz186"/> <span id="dn186" style="cursor:pointer" onclick="mSl('diz',186,'Dermatosis Nodular Contagiosa');">Dermatosis Nodular Contagiosa</span></li><li><input type=checkbox checked="true" id="diz34"/> <span id="dn34" style="cursor:pointer" onclick="mSl('diz',34,'Diarrea');">Diarrea</span></li><li><input type=checkbox checked="true" id="diz35"/> <span id="dn35" style="cursor:pointer" onclick="mSl('diz',35,'Difteria');">Difteria</span></li><li><input type=checkbox checked="true" id="diz36"/> <span id="dn36" style="cursor:pointer" onclick="mSl('diz',36,'Diphyllobothrium');">Diphyllobothrium</span></li><li><input type=checkbox checked="true" id="diz38"/> <span id="dn38" style="cursor:pointer" onclick="mSl('diz',38,'Disenter&iacute;a');">Disenter&iacute;a</span></li><li><input type=checkbox checked="true" id="diz39"/> <span id="dn39" style="cursor:pointer" onclick="mSl('diz',39,'E. coli');">E. coli</span></li><li><input type=checkbox checked="true" id="diz42"/> <span id="dn42" style="cursor:pointer" onclick="mSl('diz',42,'Echinococcosis');">Echinococcosis</span></li><li><input type=checkbox checked="true" id="diz27"/> <span id="dn27" style="cursor:pointer" onclick="mSl('diz',27,'ECJ');">ECJ</span></li><li><input type=checkbox checked="true" id="diz44"/> <span id="dn44" style="cursor:pointer" onclick="mSl('diz',44,'Encefalitis');">Encefalitis</span></li><li><input type=checkbox checked="true" id="diz240"/> <span id="dn240" style="cursor:pointer" onclick="mSl('diz',240,'Encefalitis de La Crosse');">Encefalitis de La Crosse</span></li><li><input type=checkbox checked="true" id="diz236"/> <span id="dn236" style="cursor:pointer" onclick="mSl('diz',236,'Encefalitis de St. Louis');">Encefalitis de St. Louis</span></li><li><input type=checkbox checked="true" id="diz40"/> <span id="dn40" style="cursor:pointer" onclick="mSl('diz',40,'Encefalitis Equina del Este');">Encefalitis Equina del Este</span></li><li><input type=checkbox checked="true" id="diz155"/> <span id="dn155" style="cursor:pointer" onclick="mSl('diz',155,'Encefalitis Equina Occidental');">Encefalitis Equina Occidental</span></li><li><input type=checkbox checked="true" id="diz147"/> <span id="dn147" style="cursor:pointer" onclick="mSl('diz',147,'Encefalitis Equina Venezolana');">Encefalitis Equina Venezolana</span></li><li><input type=checkbox checked="true" id="diz187"/> <span id="dn187" style="cursor:pointer" onclick="mSl('diz',187,'Encefalitis Japonesa');">Encefalitis Japonesa</span></li><li><input type=checkbox checked="true" id="diz239"/> <span id="dn239" style="cursor:pointer" onclick="mSl('diz',239,'Encefalitis transmitida por garrapata');">Encefalitis transmitida por garrapata</span></li><li><input type=checkbox checked="true" id="diz12"/> <span id="dn12" style="cursor:pointer" onclick="mSl('diz',12,'Encefalopat&iacute;a Espongiforme Bovina');">Encefalopat&iacute;a Espongiforme Bovina</span></li><li><input type=checkbox checked="true" id="diz202"/> <span id="dn202" style="cursor:pointer" onclick="mSl('diz',202,'Enfermedad Cr&oacute;nica');">Enfermedad Cr&oacute;nica</span></li><li><input type=checkbox checked="true" id="diz177"/> <span id="dn177" style="cursor:pointer" onclick="mSl('diz',177,'Enfermedad Cr&oacute;nica Degenerativa ');">Enfermedad Cr&oacute;nica Degenerativa </span></li><li><input type=checkbox checked="true" id="diz78"/> <span id="dn78" style="cursor:pointer" onclick="mSl('diz',78,'Enfermedad de Lyme');">Enfermedad de Lyme</span></li><li><input type=checkbox checked="true" id="diz157"/> <span id="dn157" style="cursor:pointer" onclick="mSl('diz',157,'Enfermedad de Newcastle');">Enfermedad de Newcastle</span></li><li><input type=checkbox checked="true" id="diz191"/> <span id="dn191" style="cursor:pointer" onclick="mSl('diz',191,'Enfermedad del Caballo Africano');">Enfermedad del Caballo Africano</span></li><li><input type=checkbox checked="true" id="diz178"/> <span id="dn178" style="cursor:pointer" onclick="mSl('diz',178,'Enfermedad Hemorr&aacute;gica Epizo&oacute;tica');">Enfermedad Hemorr&aacute;gica Epizo&oacute;tica</span></li><li><input type=checkbox checked="true" id="diz99"/> <span id="dn99" style="cursor:pointer" onclick="mSl('diz',99,'Enfermedad P&eacute;lvica Inflamatoria');">Enfermedad P&eacute;lvica Inflamatoria</span></li><li><input type=checkbox checked="true" id="diz16"/> <span id="dn16" style="cursor:pointer" onclick="mSl('diz',16,'Enfermedad por ara&ntilde;azo de gato');">Enfermedad por ara&ntilde;azo de gato</span></li><li><input type=checkbox checked="true" id="diz212"/> <span id="dn212" style="cursor:pointer" onclick="mSl('diz',212,'Enfermedad Respiratoria');">Enfermedad Respiratoria</span></li><li><input type=checkbox checked="true" id="diz215"/> <span id="dn215" style="cursor:pointer" onclick="mSl('diz',215,'Enfermedad transmitida por garrapata');">Enfermedad transmitida por garrapata</span></li><li><input type=checkbox checked="true" id="diz220"/> <span id="dn220" style="cursor:pointer" onclick="mSl('diz',220,'Enfermedad transmitida por pulga');">Enfermedad transmitida por pulga</span></li><li><input type=checkbox checked="true" id="diz209"/> <span id="dn209" style="cursor:pointer" onclick="mSl('diz',209,'Enfermedades transmitidas por agua');">Enfermedades transmitidas por agua</span></li><li><input type=checkbox checked="true" id="diz193"/> <span id="dn193" style="cursor:pointer" onclick="mSl('diz',193,'Enterococcus');">Enterococcus</span></li><li><input type=checkbox checked="true" id="diz213"/> <span id="dn213" style="cursor:pointer" onclick="mSl('diz',213,'Enterovirus');">Enterovirus</span></li><li><input type=checkbox checked="true" id="diz124"/> <span id="dn124" style="cursor:pointer" onclick="mSl('diz',124,'Esquistosomiasis');">Esquistosomiasis</span></li><li><input type=checkbox checked="true" id="diz184"/> <span id="dn184" style="cursor:pointer" onclick="mSl('diz',184,'Estomatitis Vesicular ');">Estomatitis Vesicular </span></li><li><input type=checkbox checked="true" id="diz48"/> <span id="dn48" style="cursor:pointer" onclick="mSl('diz',48,'Fasciolopsiasis');">Fasciolopsiasis</span></li><li><input type=checkbox checked="true" id="diz47"/> <span id="dn47" style="cursor:pointer" onclick="mSl('diz',47,'Fasciolosis');">Fasciolosis</span></li><li><input type=checkbox checked="true" id="diz216"/> <span id="dn216" style="cursor:pointer" onclick="mSl('diz',216,'Fiebre');">Fiebre</span></li><li><input type=checkbox checked="true" id="diz169"/> <span id="dn169" style="cursor:pointer" onclick="mSl('diz',169,'Fiebre Aftosa');">Fiebre Aftosa</span></li><li><input type=checkbox checked="true" id="diz156"/> <span id="dn156" style="cursor:pointer" onclick="mSl('diz',156,'Fiebre Amarilla');">Fiebre Amarilla</span></li><li><input type=checkbox checked="true" id="diz72"/> <span id="dn72" style="cursor:pointer" onclick="mSl('diz',72,'Fiebre de Lassa');">Fiebre de Lassa</span></li><li><input type=checkbox checked="true" id="diz33"/> <span id="dn33" style="cursor:pointer" onclick="mSl('diz',33,'Fiebre del Dengue');">Fiebre del Dengue</span></li><li><input type=checkbox checked="true" id="diz117"/> <span id="dn117" style="cursor:pointer" onclick="mSl('diz',117,'Fiebre del R&iacute;o Ross');">Fiebre del R&iacute;o Ross</span></li><li><input type=checkbox checked="true" id="diz146"/> <span id="dn146" style="cursor:pointer" onclick="mSl('diz',146,'Fiebre del Valle');">Fiebre del Valle</span></li><li><input type=checkbox checked="true" id="diz175"/> <span id="dn175" style="cursor:pointer" onclick="mSl('diz',175,'Fiebre del Valle del Rift');">Fiebre del Valle del Rift</span></li><li><input type=checkbox checked="true" id="diz123"/> <span id="dn123" style="cursor:pointer" onclick="mSl('diz',123,'Fiebre Escarlata');">Fiebre Escarlata</span></li><li><input type=checkbox checked="true" id="diz151"/> <span id="dn151" style="cursor:pointer" onclick="mSl('diz',151,'Fiebre Hemorr&aacute;gica');">Fiebre Hemorr&aacute;gica</span></li><li><input type=checkbox checked="true" id="diz158"/> <span id="dn158" style="cursor:pointer" onclick="mSl('diz',158,'Fiebre Hemorr&aacute;gica de Crimea Congo');">Fiebre Hemorr&aacute;gica de Crimea Congo</span></li><li><input type=checkbox checked="true" id="diz115"/> <span id="dn115" style="cursor:pointer" onclick="mSl('diz',115,'Fiebre Manchada de las Monta&ntilde;as Rocosas');">Fiebre Manchada de las Monta&ntilde;as Rocosas</span></li><li><input type=checkbox checked="true" id="diz81"/> <span id="dn81" style="cursor:pointer" onclick="mSl('diz',81,'Fiebre Marburg');">Fiebre Marburg</span></li><li><input type=checkbox checked="true" id="diz108"/> <span id="dn108" style="cursor:pointer" onclick="mSl('diz',108,'Fiebre Q');">Fiebre Q</span></li><li><input type=checkbox checked="true" id="diz111"/> <span id="dn111" style="cursor:pointer" onclick="mSl('diz',111,'Fiebre Reum&aacute;tica ');">Fiebre Reum&aacute;tica </span></li><li><input type=checkbox checked="true" id="diz120"/> <span id="dn120" style="cursor:pointer" onclick="mSl('diz',120,'Fiebre Tifoidea');">Fiebre Tifoidea</span></li><li><input type=checkbox checked="true" id="diz49"/> <span id="dn49" style="cursor:pointer" onclick="mSl('diz',49,'Filariasis');">Filariasis</span></li><li><input type=checkbox checked="true" id="diz150"/> <span id="dn150" style="cursor:pointer" onclick="mSl('diz',150,'Gastroenteritis');">Gastroenteritis</span></li><li><input type=checkbox checked="true" id="diz52"/> <span id="dn52" style="cursor:pointer" onclick="mSl('diz',52,'Giardiasis');">Giardiasis</span></li><li><input type=checkbox checked="true" id="diz57"/> <span id="dn57" style="cursor:pointer" onclick="mSl('diz',57,'Glosopeda');">Glosopeda</span></li><li><input type=checkbox checked="true" id="diz54"/> <span id="dn54" style="cursor:pointer" onclick="mSl('diz',54,'Gnathostomiasis');">Gnathostomiasis</span></li><li><input type=checkbox checked="true" id="diz55"/> <span id="dn55" style="cursor:pointer" onclick="mSl('diz',55,'Gonorrea');">Gonorrea</span></li><li><input type=checkbox checked="true" id="diz67"/> <span id="dn67" style="cursor:pointer" onclick="mSl('diz',67,'Gripe');">Gripe</span></li><li><input type=checkbox checked="true" id="diz68"/> <span id="dn68" style="cursor:pointer" onclick="mSl('diz',68,'Gripe Aviaria');">Gripe Aviaria</span></li><li><input type=checkbox checked="true" id="diz210"/> <span id="dn210" style="cursor:pointer" onclick="mSl('diz',210,'Gripe Equina');">Gripe Equina</span></li><li><input type=checkbox checked="true" id="diz224"/> <span id="dn224" style="cursor:pointer" onclick="mSl('diz',224,'Gripe porcina');">Gripe porcina</span></li><li><input type=checkbox checked="true" id="diz56"/> <span id="dn56" style="cursor:pointer" onclick="mSl('diz',56,'Gusano de Guinea');">Gusano de Guinea</span></li><li><input type=checkbox checked="true" id="diz222"/> <span id="dn222" style="cursor:pointer" onclick="mSl('diz',222,'H. influenzae');">H. influenzae</span></li><li><input type=checkbox checked="true" id="diz58"/> <span id="dn58" style="cursor:pointer" onclick="mSl('diz',58,'Hantavirus');">Hantavirus</span></li><li><input type=checkbox checked="true" id="diz59"/> <span id="dn59" style="cursor:pointer" onclick="mSl('diz',59,'Helicobacter pylori');">Helicobacter pylori</span></li><li><input type=checkbox checked="true" id="diz60"/> <span id="dn60" style="cursor:pointer" onclick="mSl('diz',60,'Hepatitis');">Hepatitis</span></li><li><input type=checkbox checked="true" id="diz243"/> <span id="dn243" style="cursor:pointer" onclick="mSl('diz',243,'hepatitis A');">hepatitis A</span></li><li><input type=checkbox checked="true" id="diz244"/> <span id="dn244" style="cursor:pointer" onclick="mSl('diz',244,'hepatitis B');">hepatitis B</span></li><li><input type=checkbox checked="true" id="diz245"/> <span id="dn245" style="cursor:pointer" onclick="mSl('diz',245,'hepatitis C');">hepatitis C</span></li><li><input type=checkbox checked="true" id="diz246"/> <span id="dn246" style="cursor:pointer" onclick="mSl('diz',246,'hepatitis D');">hepatitis D</span></li><li><input type=checkbox checked="true" id="diz247"/> <span id="dn247" style="cursor:pointer" onclick="mSl('diz',247,'hepatitis E');">hepatitis E</span></li><li><input type=checkbox checked="true" id="diz61"/> <span id="dn61" style="cursor:pointer" onclick="mSl('diz',61,'Herpes');">Herpes</span></li><li><input type=checkbox checked="true" id="diz66"/> <span id="dn66" style="cursor:pointer" onclick="mSl('diz',66,'Himenolepiasis ');">Himenolepiasis </span></li><li><input type=checkbox checked="true" id="diz63"/> <span id="dn63" style="cursor:pointer" onclick="mSl('diz',63,'Histoplasmosis');">Histoplasmosis</span></li><li><input type=checkbox checked="true" id="diz135"/> <span id="dn135" style="cursor:pointer" onclick="mSl('diz',135,'Hongos de la Piel');">Hongos de la Piel</span></li><li><input type=checkbox checked="true" id="diz125"/> <span id="dn125" style="cursor:pointer" onclick="mSl('diz',125,'Infecci&oacute;n de Transmisi&oacute;n Sexual');">Infecci&oacute;n de Transmisi&oacute;n Sexual</span></li><li><input type=checkbox checked="true" id="diz94"/> <span id="dn94" style="cursor:pointer" onclick="mSl('diz',94,'Infecci&oacute;n Hospitalaria');">Infecci&oacute;n Hospitalaria</span></li><li><input type=checkbox checked="true" id="diz176"/> <span id="dn176" style="cursor:pointer" onclick="mSl('diz',176,'Intoxicaci&oacute;n');">Intoxicaci&oacute;n</span></li><li><input type=checkbox checked="true" id="diz50"/> <span id="dn50" style="cursor:pointer" onclick="mSl('diz',50,'Intoxicaci&oacute;n Alimentaria');">Intoxicaci&oacute;n Alimentaria</span></li><li><input type=checkbox checked="true" id="diz241"/> <span id="dn241" style="cursor:pointer" onclick="mSl('diz',241,'Intoxicaci&oacute;n paralizante por moluscos');">Intoxicaci&oacute;n paralizante por moluscos</span></li><li><input type=checkbox checked="true" id="diz69"/> <span id="dn69" style="cursor:pointer" onclick="mSl('diz',69,'Isosporiasis');">Isosporiasis</span></li><li><input type=checkbox checked="true" id="diz73"/> <span id="dn73" style="cursor:pointer" onclick="mSl('diz',73,'Legionelosis');">Legionelosis</span></li><li><input type=checkbox checked="true" id="diz74"/> <span id="dn74" style="cursor:pointer" onclick="mSl('diz',74,'Leishmaniasis');">Leishmaniasis</span></li><li><input type=checkbox checked="true" id="diz170"/> <span id="dn170" style="cursor:pointer" onclick="mSl('diz',170,'Lengua Azul');">Lengua Azul</span></li><li><input type=checkbox checked="true" id="diz75"/> <span id="dn75" style="cursor:pointer" onclick="mSl('diz',75,'Lepra');">Lepra</span></li><li><input type=checkbox checked="true" id="diz76"/> <span id="dn76" style="cursor:pointer" onclick="mSl('diz',76,'Leptospirosis');">Leptospirosis</span></li><li><input type=checkbox checked="true" id="diz163"/> <span id="dn163" style="cursor:pointer" onclick="mSl('diz',163,'LGV');">LGV</span></li><li><input type=checkbox checked="true" id="diz77"/> <span id="dn77" style="cursor:pointer" onclick="mSl('diz',77,'Listeriosis');">Listeriosis</span></li><li><input type=checkbox checked="true" id="diz101"/> <span id="dn101" style="cursor:pointer" onclick="mSl('diz',101,'Lombriz Intestinal');">Lombriz Intestinal</span></li><li><input type=checkbox checked="true" id="diz79"/> <span id="dn79" style="cursor:pointer" onclick="mSl('diz',79,'Machupo');">Machupo</span></li><li><input type=checkbox checked="true" id="diz80"/> <span id="dn80" style="cursor:pointer" onclick="mSl('diz',80,'Malaria');">Malaria</span></li><li><input type=checkbox checked="true" id="diz83"/> <span id="dn83" style="cursor:pointer" onclick="mSl('diz',83,'Melioidosis');">Melioidosis</span></li><li><input type=checkbox checked="true" id="diz84"/> <span id="dn84" style="cursor:pointer" onclick="mSl('diz',84,'Meningitis');">Meningitis</span></li><li><input type=checkbox checked="true" id="diz9"/> <span id="dn9" style="cursor:pointer" onclick="mSl('diz',9,'Meningitis Bacterial');">Meningitis Bacterial</span></li><li><input type=checkbox checked="true" id="diz152"/> <span id="dn152" style="cursor:pointer" onclick="mSl('diz',152,'Meningitis Viral');">Meningitis Viral</span></li><li><input type=checkbox checked="true" id="diz86"/> <span id="dn86" style="cursor:pointer" onclick="mSl('diz',86,'Metagonimiasis');">Metagonimiasis</span></li><li><input type=checkbox checked="true" id="diz89"/> <span id="dn89" style="cursor:pointer" onclick="mSl('diz',89,'Mononucleosis infecciosa');">Mononucleosis infecciosa</span></li><li><input type=checkbox checked="true" id="diz207"/> <span id="dn207" style="cursor:pointer" onclick="mSl('diz',207,'Mordedura');">Mordedura</span></li><li><input type=checkbox checked="true" id="diz90"/> <span id="dn90" style="cursor:pointer" onclick="mSl('diz',90,'Mucormycosis');">Mucormycosis</span></li><li><input type=checkbox checked="true" id="diz53"/> <span id="dn53" style="cursor:pointer" onclick="mSl('diz',53,'Muermo');">Muermo</span></li><li><input type=checkbox checked="true" id="diz242"/> <span id="dn242" style="cursor:pointer" onclick="mSl('diz',242,'Muertes masivas de animales');">Muertes masivas de animales</span></li><li><input type=checkbox checked="true" id="diz166"/> <span id="dn166" style="cursor:pointer" onclick="mSl('diz',166,'Mycobacteria, no-TB');">Mycobacteria, no-TB</span></li><li><input type=checkbox checked="true" id="diz92"/> <span id="dn92" style="cursor:pointer" onclick="mSl('diz',92,'Myiasis');">Myiasis</span></li><li><input type=checkbox checked="true" id="diz104"/> <span id="dn104" style="cursor:pointer" onclick="mSl('diz',104,'Neumon&iacute;a');">Neumon&iacute;a</span></li><li><input type=checkbox checked="true" id="diz103"/> <span id="dn103" style="cursor:pointer" onclick="mSl('diz',103,'Neumon&iacute;a Pneumococcal');">Neumon&iacute;a Pneumococcal</span></li><li><input type=checkbox checked="true" id="diz93"/> <span id="dn93" style="cursor:pointer" onclick="mSl('diz',93,'Norovirus');">Norovirus</span></li><li><input type=checkbox checked="true" id="diz205"/> <span id="dn205" style="cursor:pointer" onclick="mSl('diz',205,'Oreja Azul');">Oreja Azul</span></li><li><input type=checkbox checked="true" id="diz197"/> <span id="dn197" style="cursor:pointer" onclick="mSl('diz',197,'Organismos Nocivos');">Organismos Nocivos</span></li><li><input type=checkbox checked="true" id="diz96"/> <span id="dn96" style="cursor:pointer" onclick="mSl('diz',96,'Otitis media');">Otitis media</span></li><li><input type=checkbox checked="true" id="diz199"/> <span id="dn199" style="cursor:pointer" onclick="mSl('diz',199,'Otra Enfermedad de Animal');">Otra Enfermedad de Animal</span></li><li><input type=checkbox checked="true" id="diz200"/> <span id="dn200" style="cursor:pointer" onclick="mSl('diz',200,'Otra Enfermedad de Planta');">Otra Enfermedad de Planta</span></li><li><input type=checkbox checked="true" id="diz171"/> <span id="dn171" style="cursor:pointer" onclick="mSl('diz',171,'P. aeruginosa');">P. aeruginosa</span></li><li><input type=checkbox checked="true" id="diz91"/> <span id="dn91" style="cursor:pointer" onclick="mSl('diz',91,'Paperas');">Paperas</span></li><li><input type=checkbox checked="true" id="diz188"/> <span id="dn188" style="cursor:pointer" onclick="mSl('diz',188,'Paragonimus');">Paragonimus</span></li><li><input type=checkbox checked="true" id="diz97"/> <span id="dn97" style="cursor:pointer" onclick="mSl('diz',97,'Parotitis');">Parotitis</span></li><li><input type=checkbox checked="true" id="diz180"/> <span id="dn180" style="cursor:pointer" onclick="mSl('diz',180,'Parvovirus');">Parvovirus</span></li><li><input type=checkbox checked="true" id="diz181"/> <span id="dn181" style="cursor:pointer" onclick="mSl('diz',181,'Pasteurelosis');">Pasteurelosis</span></li><li><input type=checkbox checked="true" id="diz98"/> <span id="dn98" style="cursor:pointer" onclick="mSl('diz',98,'Pediculosis');">Pediculosis</span></li><li><input type=checkbox checked="true" id="diz102"/> <span id="dn102" style="cursor:pointer" onclick="mSl('diz',102,'Peste');">Peste</span></li><li><input type=checkbox checked="true" id="diz190"/> <span id="dn190" style="cursor:pointer" onclick="mSl('diz',190,'Peste des petits ruminants ');">Peste des petits ruminants </span></li><li><input type=checkbox checked="true" id="diz206"/> <span id="dn206" style="cursor:pointer" onclick="mSl('diz',206,'Peste Porcina Africana');">Peste Porcina Africana</span></li><li><input type=checkbox checked="true" id="diz167"/> <span id="dn167" style="cursor:pointer" onclick="mSl('diz',167,'Peste Porcina Classica');">Peste Porcina Classica</span></li><li><input type=checkbox checked="true" id="diz183"/> <span id="dn183" style="cursor:pointer" onclick="mSl('diz',183,'Pleuroneumon&iacute;a Contagiosa Bovina');">Pleuroneumon&iacute;a Contagiosa Bovina</span></li><li><input type=checkbox checked="true" id="diz105"/> <span id="dn105" style="cursor:pointer" onclick="mSl('diz',105,'Poliomielitis');">Poliomielitis</span></li><li><input type=checkbox checked="true" id="diz217"/> <span id="dn217" style="cursor:pointer" onclick="mSl('diz',217,'Psitacosis');">Psitacosis</span></li><li><input type=checkbox checked="true" id="diz109"/> <span id="dn109" style="cursor:pointer" onclick="mSl('diz',109,'Rabia');">Rabia</span></li><li><input type=checkbox checked="true" id="diz196"/> <span id="dn196" style="cursor:pointer" onclick="mSl('diz',196,'Rash');">Rash</span></li><li><input type=checkbox checked="true" id="diz25"/> <span id="dn25" style="cursor:pointer" onclick="mSl('diz',25,'Resfriado');">Resfriado</span></li><li><input type=checkbox checked="true" id="diz248"/> <span id="dn248" style="cursor:pointer" onclick="mSl('diz',248,'resistencia antibiótica');">resistencia antibiótica</span></li><li><input type=checkbox checked="true" id="diz225"/> <span id="dn225" style="cursor:pointer" onclick="mSl('diz',225,'Rickettsia');">Rickettsia</span></li><li><input type=checkbox checked="true" id="diz116"/> <span id="dn116" style="cursor:pointer" onclick="mSl('diz',116,'Ros&eacute;ola');">Ros&eacute;ola</span></li><li><input type=checkbox checked="true" id="diz189"/> <span id="dn189" style="cursor:pointer" onclick="mSl('diz',189,'Rotavirus');">Rotavirus</span></li><li><input type=checkbox checked="true" id="diz198"/> <span id="dn198" style="cursor:pointer" onclick="mSl('diz',198,'Roya de la Soya');">Roya de la Soya</span></li><li><input type=checkbox checked="true" id="diz118"/> <span id="dn118" style="cursor:pointer" onclick="mSl('diz',118,'Rub&eacute;ola');">Rub&eacute;ola</span></li><li><input type=checkbox checked="true" id="diz132"/> <span id="dn132" style="cursor:pointer" onclick="mSl('diz',132,'S&iacute;filis');">S&iacute;filis</span></li><li><input type=checkbox checked="true" id="diz223"/> <span id="dn223" style="cursor:pointer" onclick="mSl('diz',223,'S&iacute;ndrome de nariz blanco');">S&iacute;ndrome de nariz blanco</span></li><li><input type=checkbox checked="true" id="diz119"/> <span id="dn119" style="cursor:pointer" onclick="mSl('diz',119,'Salmonella');">Salmonella</span></li><li><input type=checkbox checked="true" id="diz82"/> <span id="dn82" style="cursor:pointer" onclick="mSl('diz',82,'Sarampi&oacute;n');">Sarampi&oacute;n</span></li><li><input type=checkbox checked="true" id="diz87"/> <span id="dn87" style="cursor:pointer" onclick="mSl('diz',87,'SARM');">SARM</span></li><li><input type=checkbox checked="true" id="diz122"/> <span id="dn122" style="cursor:pointer" onclick="mSl('diz',122,'Sarna');">Sarna</span></li><li><input type=checkbox checked="true" id="diz168"/> <span id="dn168" style="cursor:pointer" onclick="mSl('diz',168,'Sepsis');">Sepsis</span></li><li><input type=checkbox checked="true" id="diz126"/> <span id="dn126" style="cursor:pointer" onclick="mSl('diz',126,'Shigelosis');">Shigelosis</span></li><li><input type=checkbox checked="true" id="diz162"/> <span id="dn162" style="cursor:pointer" onclick="mSl('diz',162,'Sin Diagn&oacute;stico');">Sin Diagn&oacute;stico</span></li><li><input type=checkbox checked="true" id="diz121"/> <span id="dn121" style="cursor:pointer" onclick="mSl('diz',121,'SRAS');">SRAS</span></li><li><input type=checkbox checked="true" id="diz129"/> <span id="dn129" style="cursor:pointer" onclick="mSl('diz',129,'Staph');">Staph</span></li><li><input type=checkbox checked="true" id="diz131"/> <span id="dn131" style="cursor:pointer" onclick="mSl('diz',131,'Streptococcus');">Streptococcus</span></li><li><input type=checkbox checked="true" id="diz134"/> <span id="dn134" style="cursor:pointer" onclick="mSl('diz',134,'T&eacute;tanos');">T&eacute;tanos</span></li><li><input type=checkbox checked="true" id="diz194"/> <span id="dn194" style="cursor:pointer" onclick="mSl('diz',194,'Tembladera');">Tembladera</span></li><li><input type=checkbox checked="true" id="diz133"/> <span id="dn133" style="cursor:pointer" onclick="mSl('diz',133,'Teniasis');">Teniasis</span></li><li><input type=checkbox checked="true" id="diz113"/> <span id="dn113" style="cursor:pointer" onclick="mSl('diz',113,'Tifus');">Tifus</span></li><li><input type=checkbox checked="true" id="diz100"/> <span id="dn100" style="cursor:pointer" onclick="mSl('diz',100,'Tos Ferina');">Tos Ferina</span></li><li><input type=checkbox checked="true" id="diz137"/> <span id="dn137" style="cursor:pointer" onclick="mSl('diz',137,'Toxocariasis');">Toxocariasis</span></li><li><input type=checkbox checked="true" id="diz138"/> <span id="dn138" style="cursor:pointer" onclick="mSl('diz',138,'Toxoplasmosis');">Toxoplasmosis</span></li><li><input type=checkbox checked="true" id="diz139"/> <span id="dn139" style="cursor:pointer" onclick="mSl('diz',139,'Tracoma');">Tracoma</span></li><li><input type=checkbox checked="true" id="diz142"/> <span id="dn142" style="cursor:pointer" onclick="mSl('diz',142,'Tricuriasis');">Tricuriasis</span></li><li><input type=checkbox checked="true" id="diz143"/> <span id="dn143" style="cursor:pointer" onclick="mSl('diz',143,'Tripanosomiasis');">Tripanosomiasis</span></li><li><input type=checkbox checked="true" id="diz1"/> <span id="dn1" style="cursor:pointer" onclick="mSl('diz',1,'Tripanosomiasis Africana');">Tripanosomiasis Africana</span></li><li><input type=checkbox checked="true" id="diz141"/> <span id="dn141" style="cursor:pointer" onclick="mSl('diz',141,'Triquinosis');">Triquinosis</span></li><li><input type=checkbox checked="true" id="diz144"/> <span id="dn144" style="cursor:pointer" onclick="mSl('diz',144,'Tuberculosis');">Tuberculosis</span></li><li><input type=checkbox checked="true" id="diz226"/> <span id="dn226" style="cursor:pointer" onclick="mSl('diz',226,'Tuberculosis bovina');">Tuberculosis bovina</span></li><li><input type=checkbox checked="true" id="diz145"/> <span id="dn145" style="cursor:pointer" onclick="mSl('diz',145,'Tularemia');">Tularemia</span></li><li><input type=checkbox checked="true" id="diz208"/> <span id="dn208" style="cursor:pointer" onclick="mSl('diz',208,'Vacu&ntilde;as, complicaciones');">Vacu&ntilde;as, complicaciones</span></li><li><input type=checkbox checked="true" id="diz18"/> <span id="dn18" style="cursor:pointer" onclick="mSl('diz',18,'Varicela');">Varicela</span></li><li><input type=checkbox checked="true" id="diz161"/> <span id="dn161" style="cursor:pointer" onclick="mSl('diz',161,'Vibrio parahaemolyticus');">Vibrio parahaemolyticus</span></li><li><input type=checkbox checked="true" id="diz195"/> <span id="dn195" style="cursor:pointer" onclick="mSl('diz',195,'Vibrio vulnificus');">Vibrio vulnificus</span></li><li><input type=checkbox checked="true" id="diz2"/> <span id="dn2" style="cursor:pointer" onclick="mSl('diz',2,'VIH/SIDA');">VIH/SIDA</span></li><li><input type=checkbox checked="true" id="diz128"/> <span id="dn128" style="cursor:pointer" onclick="mSl('diz',128,'Viruela (relacionado)');">Viruela (relacionado)</span></li><li><input type=checkbox checked="true" id="diz88"/> <span id="dn88" style="cursor:pointer" onclick="mSl('diz',88,'Viruela del Simio');">Viruela del Simio</span></li><li><input type=checkbox checked="true" id="diz182"/> <span id="dn182" style="cursor:pointer" onclick="mSl('diz',182,'Viruela Ovina/Caprina');">Viruela Ovina/Caprina</span></li><li><input type=checkbox checked="true" id="diz154"/> <span id="dn154" style="cursor:pointer" onclick="mSl('diz',154,'Virus del Nilo Occidental');">Virus del Nilo Occidental</span></li><li><input type=checkbox checked="true" id="diz173"/> <span id="dn173" style="cursor:pointer" onclick="mSl('diz',173,'Virus Herpes Equino');">Virus Herpes Equino</span></li><li><input type=checkbox checked="true" id="diz214"/> <span id="dn214" style="cursor:pointer" onclick="mSl('diz',214,'Virus Nipah/Hendra');">Virus Nipah/Hendra</span></li><li><input type=checkbox checked="true" id="diz110"/> <span id="dn110" style="cursor:pointer" onclick="mSl('diz',110,'Virus Sincicial Respiratorio');">Virus Sincicial Respiratorio</span></li><li><input type=checkbox checked="true" id="diz65"/> <span id="dn65" style="cursor:pointer" onclick="mSl('diz',65,'VPH');">VPH</span></li></ul>
+</div>
+
+</div>
+
+<!-- .......................
+END: DISEASES -->
+
+<!-- START: LOCATIONS
+............................ -->
+
+<div id="column2">
+<h3><img src="../images/new/location_trans.png" id="location_icon" width="22" height="22" alt="Locations" />Locations</h3>
+
+Selecciona: <a href="javascript:void(0)" onclick="setAllCheck('place', 1);">todos</a>, <a href="javascript:void(0)" onclick="setAllCheck('place', 0);">ninguno</a>
+<div id="sidebar-gis">
+<ul>
+<li><input type=checkbox checked="true" id="place137"/> <span id="pn137" style="cursor:pointer" onclick="mSl('place',137,'Afganist&aacute;n');">Afganist&aacute;n</span></li><li><input type=checkbox checked="true" id="place72"/> <span id="pn72" style="cursor:pointer" onclick="mSl('place',72,'Albania');">Albania</span></li><li><input type=checkbox checked="true" id="place101"/> <span id="pn101" style="cursor:pointer" onclick="mSl('place',101,'Alemania');">Alemania</span></li><li><input type=checkbox checked="true" id="place69"/> <span id="pn69" style="cursor:pointer" onclick="mSl('place',69,'Andorra');">Andorra</span></li><li><input type=checkbox checked="true" id="place165"/> <span id="pn165" style="cursor:pointer" onclick="mSl('place',165,'Angola');">Angola</span></li><li><input type=checkbox checked="true" id="place162"/> <span id="pn162" style="cursor:pointer" onclick="mSl('place',162,'Ant&aacute;rtida');">Ant&aacute;rtida</span></li><li><input type=checkbox checked="true" id="place30"/> <span id="pn30" style="cursor:pointer" onclick="mSl('place',30,'Antigua y Barbuda');">Antigua y Barbuda</span></li><li><input type=checkbox checked="true" id="place131"/> <span id="pn131" style="cursor:pointer" onclick="mSl('place',131,'Arabia Saudita');">Arabia Saudita</span></li><li><input type=checkbox checked="true" id="place67"/> <span id="pn67" style="cursor:pointer" onclick="mSl('place',67,'Argelia');">Argelia</span></li><li><input type=checkbox checked="true" id="place4"/> <span id="pn4" style="cursor:pointer" onclick="mSl('place',4,'Argentina');">Argentina</span></li><li><input type=checkbox checked="true" id="place133"/> <span id="pn133" style="cursor:pointer" onclick="mSl('place',133,'Armenia');">Armenia</span></li><li><input type=checkbox checked="true" id="place186"/> <span id="pn186" style="cursor:pointer" onclick="mSl('place',186,'Australia');">Australia</span></li><li><input type=checkbox checked="true" id="place109"/> <span id="pn109" style="cursor:pointer" onclick="mSl('place',109,'Austria');">Austria</span></li><li><input type=checkbox checked="true" id="place92"/> <span id="pn92" style="cursor:pointer" onclick="mSl('place',92,'Autoridad Palestina');">Autoridad Palestina</span></li><li><input type=checkbox checked="true" id="place134"/> <span id="pn134" style="cursor:pointer" onclick="mSl('place',134,'Azerbaij&aacute;n');">Azerbaij&aacute;n</span></li><li><input type=checkbox checked="true" id="place99"/> <span id="pn99" style="cursor:pointer" onclick="mSl('place',99,'B&eacute;lgica');">B&eacute;lgica</span></li><li><input type=checkbox checked="true" id="place378"/> <span id="pn378" style="cursor:pointer" onclick="mSl('place',378,'Bahamas');">Bahamas</span></li><li><input type=checkbox checked="true" id="place127"/> <span id="pn127" style="cursor:pointer" onclick="mSl('place',127,'Bahrein');">Bahrein</span></li><li><input type=checkbox checked="true" id="place153"/> <span id="pn153" style="cursor:pointer" onclick="mSl('place',153,'Bangladesh');">Bangladesh</span></li><li><input type=checkbox checked="true" id="place32"/> <span id="pn32" style="cursor:pointer" onclick="mSl('place',32,'Barbados');">Barbados</span></li><li><input type=checkbox checked="true" id="place116"/> <span id="pn116" style="cursor:pointer" onclick="mSl('place',116,'Belar&uacute;s');">Belar&uacute;s</span></li><li><input type=checkbox checked="true" id="place19"/> <span id="pn19" style="cursor:pointer" onclick="mSl('place',19,'Belice');">Belice</span></li><li><input type=checkbox checked="true" id="place59"/> <span id="pn59" style="cursor:pointer" onclick="mSl('place',59,'Ben&iacute;n');">Ben&iacute;n</span></li><li><input type=checkbox checked="true" id="place5"/> <span id="pn5" style="cursor:pointer" onclick="mSl('place',5,'Bolivia');">Bolivia</span></li><li><input type=checkbox checked="true" id="place73"/> <span id="pn73" style="cursor:pointer" onclick="mSl('place',73,'Bosnia y Herzegovina');">Bosnia y Herzegovina</span></li><li><input type=checkbox checked="true" id="place169"/> <span id="pn169" style="cursor:pointer" onclick="mSl('place',169,'Botsuana');">Botsuana</span></li><li><input type=checkbox checked="true" id="place6"/> <span id="pn6" style="cursor:pointer" onclick="mSl('place',6,'Brasil');">Brasil</span></li><li><input type=checkbox checked="true" id="place157"/> <span id="pn157" style="cursor:pointer" onclick="mSl('place',157,'Brun&eacute;i');">Brun&eacute;i</span></li><li><input type=checkbox checked="true" id="place81"/> <span id="pn81" style="cursor:pointer" onclick="mSl('place',81,'Bulgaria');">Bulgaria</span></li><li><input type=checkbox checked="true" id="place49"/> <span id="pn49" style="cursor:pointer" onclick="mSl('place',49,'Burkina Faso');">Burkina Faso</span></li><li><input type=checkbox checked="true" id="place172"/> <span id="pn172" style="cursor:pointer" onclick="mSl('place',172,'Burundi');">Burundi</span></li><li><input type=checkbox checked="true" id="place154"/> <span id="pn154" style="cursor:pointer" onclick="mSl('place',154,'But&aacute;n');">But&aacute;n</span></li><li><input type=checkbox checked="true" id="place15"/> <span id="pn15" style="cursor:pointer" onclick="mSl('place',15,'Cabo Verde');">Cabo Verde</span></li><li><input type=checkbox checked="true" id="place145"/> <span id="pn145" style="cursor:pointer" onclick="mSl('place',145,'Camboya');">Camboya</span></li><li><input type=checkbox checked="true" id="place65"/> <span id="pn65" style="cursor:pointer" onclick="mSl('place',65,'Camer&uacute;n');">Camer&uacute;n</span></li><li><input type=checkbox checked="true" id="place12"/> <span id="pn12" style="cursor:pointer" onclick="mSl('place',12,'Canad&aacute;');">Canad&aacute;</span></li><li><input type=checkbox checked="true" id="place57"/> <span id="pn57" style="cursor:pointer" onclick="mSl('place',57,'Chad');">Chad</span></li><li><input type=checkbox checked="true" id="place7"/> <span id="pn7" style="cursor:pointer" onclick="mSl('place',7,'Chile');">Chile</span></li><li><input type=checkbox checked="true" id="place155"/> <span id="pn155" style="cursor:pointer" onclick="mSl('place',155,'China');">China</span></li><li><input type=checkbox checked="true" id="place82"/> <span id="pn82" style="cursor:pointer" onclick="mSl('place',82,'Chipre');">Chipre</span></li><li><input type=checkbox checked="true" id="place80"/> <span id="pn80" style="cursor:pointer" onclick="mSl('place',80,'Ciudad del Vaticano');">Ciudad del Vaticano</span></li><li><input type=checkbox checked="true" id="place16"/> <span id="pn16" style="cursor:pointer" onclick="mSl('place',16,'Colombia');">Colombia</span></li><li><input type=checkbox checked="true" id="place175"/> <span id="pn175" style="cursor:pointer" onclick="mSl('place',175,'Comoras');">Comoras</span></li><li><input type=checkbox checked="true" id="place166"/> <span id="pn166" style="cursor:pointer" onclick="mSl('place',166,'Congo');">Congo</span></li><li><input type=checkbox checked="true" id="place196"/> <span id="pn196" style="cursor:pointer" onclick="mSl('place',196,'Corea del Norte');">Corea del Norte</span></li><li><input type=checkbox checked="true" id="place195"/> <span id="pn195" style="cursor:pointer" onclick="mSl('place',195,'Corea del Sur');">Corea del Sur</span></li><li><input type=checkbox checked="true" id="place52"/> <span id="pn52" style="cursor:pointer" onclick="mSl('place',52,'Costa de Marfil');">Costa de Marfil</span></li><li><input type=checkbox checked="true" id="place17"/> <span id="pn17" style="cursor:pointer" onclick="mSl('place',17,'Costa Rica');">Costa Rica</span></li><li><input type=checkbox checked="true" id="place74"/> <span id="pn74" style="cursor:pointer" onclick="mSl('place',74,'Croacia');">Croacia</span></li><li><input type=checkbox checked="true" id="place20"/> <span id="pn20" style="cursor:pointer" onclick="mSl('place',20,'Cuba');">Cuba</span></li><li><input type=checkbox checked="true" id="place111"/> <span id="pn111" style="cursor:pointer" onclick="mSl('place',111,'Dinamarca');">Dinamarca</span></li><li><input type=checkbox checked="true" id="place33"/> <span id="pn33" style="cursor:pointer" onclick="mSl('place',33,'Dominica');">Dominica</span></li><li><input type=checkbox checked="true" id="place8"/> <span id="pn8" style="cursor:pointer" onclick="mSl('place',8,'Ecuador');">Ecuador</span></li><li><input type=checkbox checked="true" id="place55"/> <span id="pn55" style="cursor:pointer" onclick="mSl('place',55,'Egipto');">Egipto</span></li><li><input type=checkbox checked="true" id="place21"/> <span id="pn21" style="cursor:pointer" onclick="mSl('place',21,'El Salvador');">El Salvador</span></li><li><input type=checkbox checked="true" id="place132"/> <span id="pn132" style="cursor:pointer" onclick="mSl('place',132,'Emiratos &Aacute;rabes Unidos');">Emiratos &Aacute;rabes Unidos</span></li><li><input type=checkbox checked="true" id="place94"/> <span id="pn94" style="cursor:pointer" onclick="mSl('place',94,'Eritrea');">Eritrea</span></li><li><input type=checkbox checked="true" id="place114"/> <span id="pn114" style="cursor:pointer" onclick="mSl('place',114,'Eslovaquia');">Eslovaquia</span></li><li><input type=checkbox checked="true" id="place115"/> <span id="pn115" style="cursor:pointer" onclick="mSl('place',115,'Eslovenia');">Eslovenia</span></li><li><input type=checkbox checked="true" id="place43"/> <span id="pn43" style="cursor:pointer" onclick="mSl('place',43,'Espa&ntilde;a');">Espa&ntilde;a</span></li><li><input type=checkbox checked="true" id="place106"/> <span id="pn106" style="cursor:pointer" onclick="mSl('place',106,'Estados Unidos');">Estados Unidos</span></li><li><input type=checkbox checked="true" id="place117"/> <span id="pn117" style="cursor:pointer" onclick="mSl('place',117,'Estonia');">Estonia</span></li><li><input type=checkbox checked="true" id="place95"/> <span id="pn95" style="cursor:pointer" onclick="mSl('place',95,'Etiop&iacute;a');">Etiop&iacute;a</span></li><li><input type=checkbox checked="true" id="place158"/> <span id="pn158" style="cursor:pointer" onclick="mSl('place',158,'Filipinas');">Filipinas</span></li><li><input type=checkbox checked="true" id="place118"/> <span id="pn118" style="cursor:pointer" onclick="mSl('place',118,'Finlandia');">Finlandia</span></li><li><input type=checkbox checked="true" id="place167"/> <span id="pn167" style="cursor:pointer" onclick="mSl('place',167,'Fiyi');">Fiyi</span></li><li><input type=checkbox checked="true" id="place100"/> <span id="pn100" style="cursor:pointer" onclick="mSl('place',100,'Francia');">Francia</span></li><li><input type=checkbox checked="true" id="place168"/> <span id="pn168" style="cursor:pointer" onclick="mSl('place',168,'Gab&oacute;n');">Gab&oacute;n</span></li><li><input type=checkbox checked="true" id="place481"/> <span id="pn481" style="cursor:pointer" onclick="mSl('place',481,'Gambia');">Gambia</span></li><li><input type=checkbox checked="true" id="place53"/> <span id="pn53" style="cursor:pointer" onclick="mSl('place',53,'Ghana');">Ghana</span></li><li><input type=checkbox checked="true" id="place34"/> <span id="pn34" style="cursor:pointer" onclick="mSl('place',34,'Granada');">Granada</span></li><li><input type=checkbox checked="true" id="place83"/> <span id="pn83" style="cursor:pointer" onclick="mSl('place',83,'Grecia');">Grecia</span></li><li><input type=checkbox checked="true" id="place13"/> <span id="pn13" style="cursor:pointer" onclick="mSl('place',13,'Guatemala');">Guatemala</span></li><li><input type=checkbox checked="true" id="place45"/> <span id="pn45" style="cursor:pointer" onclick="mSl('place',45,'Guinea');">Guinea</span></li><li><input type=checkbox checked="true" id="place60"/> <span id="pn60" style="cursor:pointer" onclick="mSl('place',60,'Guinea Ecuatorial');">Guinea Ecuatorial</span></li><li><input type=checkbox checked="true" id="place47"/> <span id="pn47" style="cursor:pointer" onclick="mSl('place',47,'Guinea-Biss&aacute;u');">Guinea-Biss&aacute;u</span></li><li><input type=checkbox checked="true" id="place27"/> <span id="pn27" style="cursor:pointer" onclick="mSl('place',27,'Guyana');">Guyana</span></li><li><input type=checkbox checked="true" id="place25"/> <span id="pn25" style="cursor:pointer" onclick="mSl('place',25,'Hait&iacute;');">Hait&iacute;</span></li><li><input type=checkbox checked="true" id="place22"/> <span id="pn22" style="cursor:pointer" onclick="mSl('place',22,'Honduras');">Honduras</span></li><li><input type=checkbox checked="true" id="place112"/> <span id="pn112" style="cursor:pointer" onclick="mSl('place',112,'Hungr&iacute;a');">Hungr&iacute;a</span></li><li><input type=checkbox checked="true" id="place142"/> <span id="pn142" style="cursor:pointer" onclick="mSl('place',142,'India');">India</span></li><li><input type=checkbox checked="true" id="place184"/> <span id="pn184" style="cursor:pointer" onclick="mSl('place',184,'Indonesia');">Indonesia</span></li><li><input type=checkbox checked="true" id="place128"/> <span id="pn128" style="cursor:pointer" onclick="mSl('place',128,'Ir&aacute;n');">Ir&aacute;n</span></li><li><input type=checkbox checked="true" id="place89"/> <span id="pn89" style="cursor:pointer" onclick="mSl('place',89,'Iraq');">Iraq</span></li><li><input type=checkbox checked="true" id="place39"/> <span id="pn39" style="cursor:pointer" onclick="mSl('place',39,'Irlanda');">Irlanda</span></li><li><input type=checkbox checked="true" id="place522"/> <span id="pn522" style="cursor:pointer" onclick="mSl('place',522,'Isla de San Mart&iacute;n [Francia/Pa&iacute;ses Bajos]');">Isla de San Mart&iacute;n [Francia/Pa&iacute;ses Bajos]</span></li><li><input type=checkbox checked="true" id="place38"/> <span id="pn38" style="cursor:pointer" onclick="mSl('place',38,'Islandia');">Islandia</span></li><li><input type=checkbox checked="true" id="place366"/> <span id="pn366" style="cursor:pointer" onclick="mSl('place',366,'Islas Cook');">Islas Cook</span></li><li><input type=checkbox checked="true" id="place160"/> <span id="pn160" style="cursor:pointer" onclick="mSl('place',160,'Islas Marshall');">Islas Marshall</span></li><li><input type=checkbox checked="true" id="place149"/> <span id="pn149" style="cursor:pointer" onclick="mSl('place',149,'Islas Paracelso');">Islas Paracelso</span></li><li><input type=checkbox checked="true" id="place189"/> <span id="pn189" style="cursor:pointer" onclick="mSl('place',189,'Islas Salom&oacute;n');">Islas Salom&oacute;n</span></li><li><input type=checkbox checked="true" id="place159"/> <span id="pn159" style="cursor:pointer" onclick="mSl('place',159,'Islas Spratly');">Islas Spratly</span></li><li><input type=checkbox checked="true" id="place90"/> <span id="pn90" style="cursor:pointer" onclick="mSl('place',90,'Israel');">Israel</span></li><li><input type=checkbox checked="true" id="place75"/> <span id="pn75" style="cursor:pointer" onclick="mSl('place',75,'Italia');">Italia</span></li><li><input type=checkbox checked="true" id="place26"/> <span id="pn26" style="cursor:pointer" onclick="mSl('place',26,'Jamaica');">Jamaica</span></li><li><input type=checkbox checked="true" id="place156"/> <span id="pn156" style="cursor:pointer" onclick="mSl('place',156,'Jap&oacute;n');">Jap&oacute;n</span></li><li><input type=checkbox checked="true" id="place91"/> <span id="pn91" style="cursor:pointer" onclick="mSl('place',91,'Jordania');">Jordania</span></li><li><input type=checkbox checked="true" id="place56"/> <span id="pn56" style="cursor:pointer" onclick="mSl('place',56,'Kazajst&aacute;n');">Kazajst&aacute;n</span></li><li><input type=checkbox checked="true" id="place174"/> <span id="pn174" style="cursor:pointer" onclick="mSl('place',174,'Kenia');">Kenia</span></li><li><input type=checkbox checked="true" id="place138"/> <span id="pn138" style="cursor:pointer" onclick="mSl('place',138,'Kirguist&aacute;n');">Kirguist&aacute;n</span></li><li><input type=checkbox checked="true" id="place61"/> <span id="pn61" style="cursor:pointer" onclick="mSl('place',61,'Kiribati');">Kiribati</span></li><li><input type=checkbox checked="true" id="place129"/> <span id="pn129" style="cursor:pointer" onclick="mSl('place',129,'Kuwait');">Kuwait</span></li><li><input type=checkbox checked="true" id="place85"/> <span id="pn85" style="cursor:pointer" onclick="mSl('place',85,'L&iacute;bano');">L&iacute;bano</span></li><li><input type=checkbox checked="true" id="place146"/> <span id="pn146" style="cursor:pointer" onclick="mSl('place',146,'Laos');">Laos</span></li><li><input type=checkbox checked="true" id="place119"/> <span id="pn119" style="cursor:pointer" onclick="mSl('place',119,'Latvia');">Latvia</span></li><li><input type=checkbox checked="true" id="place178"/> <span id="pn178" style="cursor:pointer" onclick="mSl('place',178,'Lesotho');">Lesotho</span></li><li><input type=checkbox checked="true" id="place54"/> <span id="pn54" style="cursor:pointer" onclick="mSl('place',54,'Liberia');">Liberia</span></li><li><input type=checkbox checked="true" id="place68"/> <span id="pn68" style="cursor:pointer" onclick="mSl('place',68,'Libia');">Libia</span></li><li><input type=checkbox checked="true" id="place102"/> <span id="pn102" style="cursor:pointer" onclick="mSl('place',102,'Liechtenstein');">Liechtenstein</span></li><li><input type=checkbox checked="true" id="place120"/> <span id="pn120" style="cursor:pointer" onclick="mSl('place',120,'Lituania');">Lituania</span></li><li><input type=checkbox checked="true" id="place103"/> <span id="pn103" style="cursor:pointer" onclick="mSl('place',103,'Luxemburgo');">Luxemburgo</span></li><li><input type=checkbox checked="true" id="place14"/> <span id="pn14" style="cursor:pointer" onclick="mSl('place',14,'M&eacute;xico');">M&eacute;xico</span></li><li><input type=checkbox checked="true" id="place70"/> <span id="pn70" style="cursor:pointer" onclick="mSl('place',70,'M&oacute;naco');">M&oacute;naco</span></li><li><input type=checkbox checked="true" id="place76"/> <span id="pn76" style="cursor:pointer" onclick="mSl('place',76,'Macedonia');">Macedonia</span></li><li><input type=checkbox checked="true" id="place181"/> <span id="pn181" style="cursor:pointer" onclick="mSl('place',181,'Madagascar');">Madagascar</span></li><li><input type=checkbox checked="true" id="place50"/> <span id="pn50" style="cursor:pointer" onclick="mSl('place',50,'Mal&iacute;');">Mal&iacute;</span></li><li><input type=checkbox checked="true" id="place147"/> <span id="pn147" style="cursor:pointer" onclick="mSl('place',147,'Malasia');">Malasia</span></li><li><input type=checkbox checked="true" id="place176"/> <span id="pn176" style="cursor:pointer" onclick="mSl('place',176,'Malawi');">Malawi</span></li><li><input type=checkbox checked="true" id="place143"/> <span id="pn143" style="cursor:pointer" onclick="mSl('place',143,'Maldivas');">Maldivas</span></li><li><input type=checkbox checked="true" id="place77"/> <span id="pn77" style="cursor:pointer" onclick="mSl('place',77,'Malta');">Malta</span></li><li><input type=checkbox checked="true" id="place41"/> <span id="pn41" style="cursor:pointer" onclick="mSl('place',41,'Marruecos');">Marruecos</span></li><li><input type=checkbox checked="true" id="place182"/> <span id="pn182" style="cursor:pointer" onclick="mSl('place',182,'Mauricio');">Mauricio</span></li><li><input type=checkbox checked="true" id="place51"/> <span id="pn51" style="cursor:pointer" onclick="mSl('place',51,'Mauritania');">Mauritania</span></li><li><input type=checkbox checked="true" id="place161"/> <span id="pn161" style="cursor:pointer" onclick="mSl('place',161,'Micronesia');">Micronesia</span></li><li><input type=checkbox checked="true" id="place121"/> <span id="pn121" style="cursor:pointer" onclick="mSl('place',121,'Moldova');">Moldova</span></li><li><input type=checkbox checked="true" id="place1"/> <span id="pn1" style="cursor:pointer" onclick="mSl('place',1,'Mongolia');">Mongolia</span></li><li><input type=checkbox checked="true" id="place480"/> <span id="pn480" style="cursor:pointer" onclick="mSl('place',480,'Montenegro');">Montenegro</span></li><li><input type=checkbox checked="true" id="place177"/> <span id="pn177" style="cursor:pointer" onclick="mSl('place',177,'Mozambique');">Mozambique</span></li><li><input type=checkbox checked="true" id="place148"/> <span id="pn148" style="cursor:pointer" onclick="mSl('place',148,'Myanmar');">Myanmar</span></li><li><input type=checkbox checked="true" id="place58"/> <span id="pn58" style="cursor:pointer" onclick="mSl('place',58,'N&iacute;ger');">N&iacute;ger</span></li><li><input type=checkbox checked="true" id="place163"/> <span id="pn163" style="cursor:pointer" onclick="mSl('place',163,'Namibia');">Namibia</span></li><li><input type=checkbox checked="true" id="place187"/> <span id="pn187" style="cursor:pointer" onclick="mSl('place',187,'Nauru');">Nauru</span></li><li><input type=checkbox checked="true" id="place139"/> <span id="pn139" style="cursor:pointer" onclick="mSl('place',139,'Nepal');">Nepal</span></li><li><input type=checkbox checked="true" id="place23"/> <span id="pn23" style="cursor:pointer" onclick="mSl('place',23,'Nicaragua');">Nicaragua</span></li><li><input type=checkbox checked="true" id="place62"/> <span id="pn62" style="cursor:pointer" onclick="mSl('place',62,'Nigeria');">Nigeria</span></li><li><input type=checkbox checked="true" id="place476"/> <span id="pn476" style="cursor:pointer" onclick="mSl('place',476,'Niue');">Niue</span></li><li><input type=checkbox checked="true" id="place107"/> <span id="pn107" style="cursor:pointer" onclick="mSl('place',107,'Noruega');">Noruega</span></li><li><input type=checkbox checked="true" id="place199"/> <span id="pn199" style="cursor:pointer" onclick="mSl('place',199,'Nueva Inglaterra');">Nueva Inglaterra</span></li><li><input type=checkbox checked="true" id="place164"/> <span id="pn164" style="cursor:pointer" onclick="mSl('place',164,'Nueva Zelanda');">Nueva Zelanda</span></li><li><input type=checkbox checked="true" id="place124"/> <span id="pn124" style="cursor:pointer" onclick="mSl('place',124,'Om&aacute;n');">Om&aacute;n</span></li><li><input type=checkbox checked="true" id="place104"/> <span id="pn104" style="cursor:pointer" onclick="mSl('place',104,'Pa&iacute;ses Bajos');">Pa&iacute;ses Bajos</span></li><li><input type=checkbox checked="true" id="place140"/> <span id="pn140" style="cursor:pointer" onclick="mSl('place',140,'Pakist&aacute;n');">Pakist&aacute;n</span></li><li><input type=checkbox checked="true" id="place519"/> <span id="pn519" style="cursor:pointer" onclick="mSl('place',519,'Palau');">Palau</span></li><li><input type=checkbox checked="true" id="place18"/> <span id="pn18" style="cursor:pointer" onclick="mSl('place',18,'Panam&aacute;');">Panam&aacute;</span></li><li><input type=checkbox checked="true" id="place188"/> <span id="pn188" style="cursor:pointer" onclick="mSl('place',188,'Pap&uacute;a Nueva Guinea');">Pap&uacute;a Nueva Guinea</span></li><li><input type=checkbox checked="true" id="place9"/> <span id="pn9" style="cursor:pointer" onclick="mSl('place',9,'Paraguay');">Paraguay</span></li><li><input type=checkbox checked="true" id="place10"/> <span id="pn10" style="cursor:pointer" onclick="mSl('place',10,'Per&uacute;');">Per&uacute;</span></li><li><input type=checkbox checked="true" id="place382"/> <span id="pn382" style="cursor:pointer" onclick="mSl('place',382,'Polinesia Francesa');">Polinesia Francesa</span></li><li><input type=checkbox checked="true" id="place113"/> <span id="pn113" style="cursor:pointer" onclick="mSl('place',113,'Polonia');">Polonia</span></li><li><input type=checkbox checked="true" id="place42"/> <span id="pn42" style="cursor:pointer" onclick="mSl('place',42,'Portugal');">Portugal</span></li><li><input type=checkbox checked="true" id="place130"/> <span id="pn130" style="cursor:pointer" onclick="mSl('place',130,'Qatar');">Qatar</span></li><li><input type=checkbox checked="true" id="place40"/> <span id="pn40" style="cursor:pointer" onclick="mSl('place',40,'Reino Unido');">Reino Unido</span></li><li><input type=checkbox checked="true" id="place66"/> <span id="pn66" style="cursor:pointer" onclick="mSl('place',66,'Rep&uacute;blica Centroafricana');">Rep&uacute;blica Centroafricana</span></li><li><input type=checkbox checked="true" id="place110"/> <span id="pn110" style="cursor:pointer" onclick="mSl('place',110,'Rep&uacute;blica Checa');">Rep&uacute;blica Checa</span></li><li><input type=checkbox checked="true" id="place84"/> <span id="pn84" style="cursor:pointer" onclick="mSl('place',84,'Rep&uacute;blica de Georgia');">Rep&uacute;blica de Georgia</span></li><li><input type=checkbox checked="true" id="place194"/> <span id="pn194" style="cursor:pointer" onclick="mSl('place',194,'Rep&uacute;blica Democr&aacute;tica del Congo');">Rep&uacute;blica Democr&aacute;tica del Congo</span></li><li><input type=checkbox checked="true" id="place24"/> <span id="pn24" style="cursor:pointer" onclick="mSl('place',24,'Rep&uacute;blica Dominicana');">Rep&uacute;blica Dominicana</span></li><li><input type=checkbox checked="true" id="place173"/> <span id="pn173" style="cursor:pointer" onclick="mSl('place',173,'Ruanda');">Ruanda</span></li><li><input type=checkbox checked="true" id="place122"/> <span id="pn122" style="cursor:pointer" onclick="mSl('place',122,'Rumania');">Rumania</span></li><li><input type=checkbox checked="true" id="place98"/> <span id="pn98" style="cursor:pointer" onclick="mSl('place',98,'Rusia');">Rusia</span></li><li><input type=checkbox checked="true" id="place44"/> <span id="pn44" style="cursor:pointer" onclick="mSl('place',44,'S&aacute;hara Occidental');">S&aacute;hara Occidental</span></li><li><input type=checkbox checked="true" id="place2"/> <span id="pn2" style="cursor:pointer" onclick="mSl('place',2,'Samoa');">Samoa</span></li><li><input type=checkbox checked="true" id="place78"/> <span id="pn78" style="cursor:pointer" onclick="mSl('place',78,'San Marino');">San Marino</span></li><li><input type=checkbox checked="true" id="place36"/> <span id="pn36" style="cursor:pointer" onclick="mSl('place',36,'San Vicente y las Granadinas');">San Vicente y las Granadinas</span></li><li><input type=checkbox checked="true" id="place35"/> <span id="pn35" style="cursor:pointer" onclick="mSl('place',35,'Santa Luc&iacute;a');">Santa Luc&iacute;a</span></li><li><input type=checkbox checked="true" id="place63"/> <span id="pn63" style="cursor:pointer" onclick="mSl('place',63,'Santo Tom&eacute; y Pr&iacute;ncipe');">Santo Tom&eacute; y Pr&iacute;ncipe</span></li><li><input type=checkbox checked="true" id="place48"/> <span id="pn48" style="cursor:pointer" onclick="mSl('place',48,'Senegal');">Senegal</span></li><li><input type=checkbox checked="true" id="place79"/> <span id="pn79" style="cursor:pointer" onclick="mSl('place',79,'Serbia');">Serbia</span></li><li><input type=checkbox checked="true" id="place183"/> <span id="pn183" style="cursor:pointer" onclick="mSl('place',183,'Seychelles');">Seychelles</span></li><li><input type=checkbox checked="true" id="place46"/> <span id="pn46" style="cursor:pointer" onclick="mSl('place',46,'Sierra Leona');">Sierra Leona</span></li><li><input type=checkbox checked="true" id="place150"/> <span id="pn150" style="cursor:pointer" onclick="mSl('place',150,'Singapur');">Singapur</span></li><li><input type=checkbox checked="true" id="place86"/> <span id="pn86" style="cursor:pointer" onclick="mSl('place',86,'Siria');">Siria</span></li><li><input type=checkbox checked="true" id="place125"/> <span id="pn125" style="cursor:pointer" onclick="mSl('place',125,'Somalia');">Somalia</span></li><li><input type=checkbox checked="true" id="place144"/> <span id="pn144" style="cursor:pointer" onclick="mSl('place',144,'Sri Lanka');">Sri Lanka</span></li><li><input type=checkbox checked="true" id="place31"/> <span id="pn31" style="cursor:pointer" onclick="mSl('place',31,'St. Kitts y Nevis');">St. Kitts y Nevis</span></li><li><input type=checkbox checked="true" id="place179"/> <span id="pn179" style="cursor:pointer" onclick="mSl('place',179,'Sud&aacute;frica');">Sud&aacute;frica</span></li><li><input type=checkbox checked="true" id="place96"/> <span id="pn96" style="cursor:pointer" onclick="mSl('place',96,'Sud&aacute;n');">Sud&aacute;n</span></li><li><input type=checkbox checked="true" id="place108"/> <span id="pn108" style="cursor:pointer" onclick="mSl('place',108,'Suecia');">Suecia</span></li><li><input type=checkbox checked="true" id="place105"/> <span id="pn105" style="cursor:pointer" onclick="mSl('place',105,'Suiza');">Suiza</span></li><li><input type=checkbox checked="true" id="place37"/> <span id="pn37" style="cursor:pointer" onclick="mSl('place',37,'Surinam');">Surinam</span></li><li><input type=checkbox checked="true" id="place180"/> <span id="pn180" style="cursor:pointer" onclick="mSl('place',180,'Swazilandia');">Swazilandia</span></li><li><input type=checkbox checked="true" id="place151"/> <span id="pn151" style="cursor:pointer" onclick="mSl('place',151,'Tailandia');">Tailandia</span></li><li><input type=checkbox checked="true" id="place200"/> <span id="pn200" style="cursor:pointer" onclick="mSl('place',200,'Tanzania');">Tanzania</span></li><li><input type=checkbox checked="true" id="place141"/> <span id="pn141" style="cursor:pointer" onclick="mSl('place',141,'Tayikist&aacute;n');">Tayikist&aacute;n</span></li><li><input type=checkbox checked="true" id="place185"/> <span id="pn185" style="cursor:pointer" onclick="mSl('place',185,'Timor Oriental');">Timor Oriental</span></li><li><input type=checkbox checked="true" id="place64"/> <span id="pn64" style="cursor:pointer" onclick="mSl('place',64,'Togo');">Togo</span></li><li><input type=checkbox checked="true" id="place3"/> <span id="pn3" style="cursor:pointer" onclick="mSl('place',3,'Tonga');">Tonga</span></li><li><input type=checkbox checked="true" id="place28"/> <span id="pn28" style="cursor:pointer" onclick="mSl('place',28,'Trinidad y Tobago');">Trinidad y Tobago</span></li><li><input type=checkbox checked="true" id="place71"/> <span id="pn71" style="cursor:pointer" onclick="mSl('place',71,'Tunisia');">Tunisia</span></li><li><input type=checkbox checked="true" id="place135"/> <span id="pn135" style="cursor:pointer" onclick="mSl('place',135,'Turkmenist&aacute;n');">Turkmenist&aacute;n</span></li><li><input type=checkbox checked="true" id="place87"/> <span id="pn87" style="cursor:pointer" onclick="mSl('place',87,'Turqu&iacute;a');">Turqu&iacute;a</span></li><li><input type=checkbox checked="true" id="place190"/> <span id="pn190" style="cursor:pointer" onclick="mSl('place',190,'Tuvalu');">Tuvalu</span></li><li><input type=checkbox checked="true" id="place123"/> <span id="pn123" style="cursor:pointer" onclick="mSl('place',123,'Ucrania');">Ucrania</span></li><li><input type=checkbox checked="true" id="place97"/> <span id="pn97" style="cursor:pointer" onclick="mSl('place',97,'Uganda');">Uganda</span></li><li><input type=checkbox checked="true" id="place11"/> <span id="pn11" style="cursor:pointer" onclick="mSl('place',11,'Uruguay');">Uruguay</span></li><li><input type=checkbox checked="true" id="place136"/> <span id="pn136" style="cursor:pointer" onclick="mSl('place',136,'Uzbekist&aacute;n');">Uzbekist&aacute;n</span></li><li><input type=checkbox checked="true" id="place191"/> <span id="pn191" style="cursor:pointer" onclick="mSl('place',191,'Vanuatu');">Vanuatu</span></li><li><input type=checkbox checked="true" id="place29"/> <span id="pn29" style="cursor:pointer" onclick="mSl('place',29,'Venezuela');">Venezuela</span></li><li><input type=checkbox checked="true" id="place152"/> <span id="pn152" style="cursor:pointer" onclick="mSl('place',152,'Vietnam');">Vietnam</span></li><li><input type=checkbox checked="true" id="place126"/> <span id="pn126" style="cursor:pointer" onclick="mSl('place',126,'Yemen');">Yemen</span></li><li><input type=checkbox checked="true" id="place93"/> <span id="pn93" style="cursor:pointer" onclick="mSl('place',93,'Yibuti');">Yibuti</span></li><li><input type=checkbox checked="true" id="place170"/> <span id="pn170" style="cursor:pointer" onclick="mSl('place',170,'Zambia');">Zambia</span></li><li><input type=checkbox checked="true" id="place171"/> <span id="pn171" style="cursor:pointer" onclick="mSl('place',171,'Zimbabue');">Zimbabue</span></li></ul>
+</div>
+
+</div>
+
+<!-- .......................
+END: LOCATIONS -->
+
+<!-- START: FEEDS
+............................ -->
+
+<div id="column3">
+<h3><img src="../images/new/feeds_trans.png" id="feeds_icon" width="22" height="22" alt="Feeds" />Fuentes</h3>
+
+Selecciona: <a href="javascript:void(0)" onclick="setAllCheck('feed', 1);">todos</a>, <a href="javascript:void(0)" onclick="setAllCheck('feed', 0);">ninguno</a>
+<div id="feed-list">
+<ul>
+<li><input type=checkbox checked="true" id="feed7"/><a href="http://apex.oracle.com/pls/otn/f?p=2400:1060:::NO::FSP_LANGUAGE_PREFERENCE:es"><img class="f" src="../p" /></a>  <span id="fn7" style="cursor:pointer" onclick="mSl('feed',7,'PromedES');">ProMED Espa&ntilde;ol</span></li><li><input type=checkbox checked="true" id="feed9"/><a href="http://news.google.es"><img class="f" src="../g" /></a>  <span id="fn9" style="cursor:pointer" onclick="mSl('feed',9,'GoogleNewsXES');">Google News Espa&ntilde;ol</span></li><li><input type=checkbox checked="true" id="feed8"/><a href="http://www.who.int/csr/don/es/"><img class="f" src="../w" /></a>  <span id="fn8" style="cursor:pointer" onclick="mSl('feed',8,'WhoES');">Organizaci&oacute;n Mundial de la Salud</span></li><li><input type=checkbox checked="true" id="feed77"/><a href="http://fao.org"><img class="f" src="../fao.png" /></a>  <span id="fn77" style="cursor:pointer" onclick="mSl('feed',77,'FAO');">Food and Agriculture Org</span></li><li><input type=checkbox checked="true" id="feed32"/><a href="http://www.oie.int/esp/es_index.htm"><img class="f" src="../o" /></a>  <span id="fn32" style="cursor:pointer" onclick="mSl('feed',32,'OieES');">Org. Mundial de Sanidad Animal</span></li><li><input type=checkbox checked="true" id="feed1"/><a href="http://www.promedmail.org"><img class="f" src="../p" /></a>  <span id="fn1" style="cursor:pointer" onclick="mSl('feed',1,'Promed');">ProMED Mail</span></li><li><input type=checkbox checked="true" id="feed15"/><a href="http://apex.oracle.com/pls/otn/f?p=2400:1040:674479108843189::NO:::"><img class="f" src="../p" /></a>  <span id="fn15" style="cursor:pointer" onclick="mSl('feed',15,'PromedMBDS');">ProMED MBDS</span></li><li><input type=checkbox checked="true" id="feed24"/><a href="?PHPSESSID=stetmdv1hm1i5hvp9v1e55nv73"><img class="f" src="../p" /></a>  <span id="fn24" style="cursor:pointer" onclick="mSl('feed',24,'PromedEAFR');">ProMED Anglophone Africa</span></li><li><input type=checkbox checked="true" id="feed3"/><a href="http://www.eurosurveillance.org"><img class="f" src="../e" /></a>  <span id="fn3" style="cursor:pointer" onclick="mSl('feed',3,'Eurosurv');">EuroSurveillance</span></li><li><input type=checkbox checked="true" id="feed4"/><a href="http://news.google.com"><img class="f" src="../g" /></a>  <span id="fn4" style="cursor:pointer" onclick="mSl('feed',4,'GoogleNews');">Google News</span></li><li><input type=checkbox checked="true" id="feed5"/><a href="http://www.moreover.com"><img class="f" src="../m" /></a>  <span id="fn5" style="cursor:pointer" onclick="mSl('feed',5,'Moreover');">Moreover Technologies</span></li><li><input type=checkbox checked="true" id="feed19"/><a href="http://wildlifedisease.nbii.gov/"><img class="f" src="../wd" /></a>  <span id="fn19" style="cursor:pointer" onclick="mSl('feed',19,'WDIN');">Wildlife Disease Node</span></li><li><input type=checkbox checked="true" id="feed22"/><a href="http://healthmap.org/about.php"><img class="f" src="../hm" /></a>  <span id="fn22" style="cursor:pointer" onclick="mSl('feed',22,'HMCommunity');">HM Community News Reports</span></li><li><input type=checkbox checked="true" id="feed26"/><a href="?PHPSESSID=stetmdv1hm1i5hvp9v1e55nv73"><img class="f" src="../p" /></a>  <span id="fn26" style="cursor:pointer" onclick="mSl('feed',26,'PromedPT');">ProMED Portugu&ecirc;s</span></li><li><input type=checkbox checked="true" id="feed28"/><a href="http://news.google.com.br"><img class="f" src="../g" /></a>  <span id="fn28" style="cursor:pointer" onclick="mSl('feed',28,'GoogleNewsPT');">Google News Portugu&ecirc;s</span></li><li><input type=checkbox checked="true" id="feed18"/><a href="http://www.promedmail.org/pls/otn/f?p=2400:1030:::NO::FSP_LANGUAGE_PREFERENCE:fr"><img class="f" src="../p" /></a>  <span id="fn18" style="cursor:pointer" onclick="mSl('feed',18,'PromedFR');">ProMED Fran&ccedil;ais</span></li><li><input type=checkbox checked="true" id="feed10"/><a href="http://news.google.fr"><img class="f" src="../g" /></a>  <span id="fn10" style="cursor:pointer" onclick="mSl('feed',10,'GooglenewsFR');">Google News Fran&ccedil;ais</span></li><li><input type=checkbox checked="true" id="feed12"/><a href="http://apex.oracle.com/pls/otn/f?p=2400:1090:::NO::FSP_LANGUAGE_PREFERENCE:ru"><img class="f" src="../p" /></a>  <span id="fn12" style="cursor:pointer" onclick="mSl('feed',12,'PromedRU');">ProMED &#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span></li><li><input type=checkbox checked="true" id="feed14"/><a href="http://news.google.ru"><img class="f" src="../g" /></a>  <span id="fn14" style="cursor:pointer" onclick="mSl('feed',14,'GoogleNewsRU');">Google News &#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span></li><li><input type=checkbox checked="true" id="feed17"/><a href="http://news.google.cn"><img class="f" src="../g" /></a>  <span id="fn17" style="cursor:pointer" onclick="mSl('feed',17,'GoogleNewsZH');">Google 资讯</span></li><li><input type=checkbox checked="true" id="feed31"/><a href="http://news.google.com/news?ned=ar_me"><img class="f" src="../g" /></a>  <span id="fn31" style="cursor:pointer" onclick="mSl('feed',31,'GoogleNewsAR');">أخبار جوجل العربية</span></li></ul>
+</div>
+
+</div>
+
+<!-- .......................
+END: FEEDS -->
+
+<!-- START: CATEGORY/DATE
+............................ -->
+
+<div id="column4">
+
+<!-- START: CATEGORY
+............................ -->
+
+<div id="category">
+<h3><img src="../images/new/category_trans.png" id="category_icon" width="22" height="22" alt="Category" />Categor&iacute;a</h3>
+<input checked="true" id="tag1" type="checkbox"><span class="" id="tn1" style="cursor: pointer;" onclick="mSl('tag',1,'New &amp; Ongoing Outbreaks');"> New &amp; Ongoing Outbreaks</span><br><input checked="true" id="tag2" type="checkbox"><span class="" id="tn2" style="cursor: pointer;" onclick="mSl('tag',2,'Warnings');"> Warnings</span><br><input checked="true" id="tag29" type="checkbox"><span class="" id="tn29" style="cursor: pointer;" onclick="mSl('tag',29,'International Significance');"> International Significance</span></div>
+
+<!-- .......................
+END: CATEGORY -->
+
+<!-- START: DATE
+............................ -->
+
+<div id="date_options">
+
+<h3><img src="../images/new/date_trans.png" id="date_icon" width="22" height="22" alt="Dates" />Time Period</h3>
+
+<div id="days_weeks">
+<p><input type="radio" id="datechoice1" name="datechoice" value="recent" checked="checked" /> 
+<select name="time_interval" id="time_interval">
+<option value="1 day">today</option><option value="2 days">past 2 days</option><option value="3 days">past 3 days</option><option value="4 days">past 4 days</option><option value="5 days">past 5 days</option><option value="6 days">past 6 days</option><option value="1 week">past week</option><option value="2 weeks">past 2 weeks</option><option value="3 weeks">past 3 weeks</option><option value="1 month">past month</option></select>
+</p>
+</div>
+
+<div id="date_range" class="inactive">
+<p><input type="radio" id="datechoice2" name="datechoice" value="daterange" /> within this date range:</p>
+
+<div id="fromdate">
+<label>from:</label> <input name="date1" id="date1" size="9" class="date-pick dp-applied" value="04/09/2011" />
+</div>
+
+<div id="todate">
+<label>to:</label> <input name="date2" id="date2" size="9" class="date-pick dp-applied" value="04/24/2011" />
+</div>
+
+</div>
+
+</div>
+
+<!-- .......................
+END: DATE -->
+
+<input type="button" id="adv_search_button" name="search" value="Search" onclick="i$('adv_search_options').className='hide'; javascript:presetds(); gSl();" />
+
+</div>
+
+<!-- .......................
+END: CATEGORY/DATE -->
+
+
+</div>
+
+<!-- .......................
+END: ADVANCED SEARCH OPTIONS -->
+
+</div>
+
+<!-- .......................
+END: ADVANCED SEARCH -->
+
+</div>
+
+<!-- .......................
+END: NAV ABOVE MAP -->
+
+<!-- START: MAP
+............................ -->
+
+<div id="map">
+<div id="mapds"></div>
+<div id="loadingMsg" class="hide">Loading</div>
+<div id="message" class="hide"></div>
+<div id="outbreak_missing_top"></div>
+<div id="outbreak_missing">
+<a href="../onm_form.php?PHPSESSID=stetmdv1hm1i5hvp9v1e55nv73" class="iframe">
+<strong>Outbreak Missing?</strong>
+<span>Add it to the map</span>
+</a>
+</div>
+
+
+<!-- begin accordian -->
+<div id="accordionContainer" class="hide">
+<img id="openIcon" src="../kmlwidget/images/icons/open.png" onclick="iconOpenHandler()" />
+<img id="closeIcon" name="close" src="../kmlwidget/images/icons/close.png" onclick="iconCloseHandler()" />
+   <div id="accordion"></div>
+</div>
+<!-- end accordian -->
+
+<script type="text/javascript" charset="utf-8">
+//<![CDATA[
+document.write('<div id="gis" style="width: 100%; height: 400px"></div>');
+//]]>
+</script>
+</div>
+
+<!-- .......................
+END: MAP -->
+
+<!-- START: CONTROL PANEL
+............................ -->
+
+<div id="control_panel"> 
+
+<!-- START: LEGEND
+............................ -->
+
+<div id="cp_left" >
+
+<div class="legend">
+
+<h2><a href="../activityindex.php?PHPSESSID=stetmdv1hm1i5hvp9v1e55nv73" class="iframe"><img src="../images/new/i.gif" alt="More Information" /></a> &Iacute;ndice<br />de actividad</h2>
+
+<table>
+<tr>
+<th colspan="2">Bajo</th>
+<th></th>
+<th colspan="2" align="right">Alto</th>
+<th></th>
+</tr>
+<tr>
+<td><img src="../images/new/legend/big_lyellow.gif" width="11" height="11" alt="Lite Yellow" /></td>
+<td><img src="../images/new/legend/big_yellow.gif" width="11" height="11" alt="Yellow" /></td>
+<td><img src="../images/new/legend/big_orange.gif" width="11" height="11" alt="Orange" /></td>
+<td><img src="../images/new/legend/big_red.gif" width="11" height="11" alt="Red" /></td>
+<td><img src="../images/new/legend/big_dred.gif" width="11" height="11" alt="Dark Red" /></td>
+<th>Pa&iacute;s</th>
+</tr>
+<tr>
+<td><img src="../images/new/legend/sm_lyellow.gif" width="8" height="16" alt="Lite Yellow" /></td>
+<td><img src="../images/new/legend/sm_yellow.gif" width="8" height="16" alt="Yellow" /></td>
+<td><img src="../images/new/legend/sm_orange.gif" width="8" height="16" alt="Orange" /></td>
+<td><img src="../images/new/legend/sm_red.gif" width="8" height="16" alt="Red" /></td>
+<td><img src="../images/new/legend/sm_dred.gif" width="8" height="16" alt="Dark Red" /></td>
+<th>Provincia o localidad</th>
+</tr>
+</table>
+
+
+<div id="custom_legend">
+</div>
+
+</div>
+
+
+</div>
+
+<!-- .......................
+END: LEGEND -->
+
+
+<!-- START: PRESETS
+............................ -->
+
+<div id="cp_right"> 
+
+<div id="presets" class="">
+
+<h2><span id="qv_lc">&nbsp;</span><span id="qv">
+<a href="../quickviews.php?PHPSESSID=stetmdv1hm1i5hvp9v1e55nv73" class="iframe"><img src="../images/new/i.gif" alt="More Information" /></a> Quick<strong>Views</strong> 
+</span><span id="qv_rc">&nbsp;</span></h2>
+
+<a id="preset_left_arrow" class="prev browse left"><img src="../images/new/preset_arrow_left.gif" alt="Previous" /></a>
+<br />
+<a id="preset_right_arrow" class="next browse right"><img src="../images/new/preset_arrow_right.gif" alt="Next" /></a>
+<div id="cp_scrollable">
+<div id="cp_scrollable_items">
+<div class="presetgroup"><div class="preset"><div class="t"><div class="l"><div class="r"><div class="tlc"><div class="trc"><div class="blc"><div class="brc"><a id="preset1" title="Alerts from past week" class="hm home active " href="javascript:;" onclick="presetds(1); xajax_preset(1,state);"><span>Alerts from past week</span></a></div></div></div></div></div></div></div></div><div class="preset"><div class="t"><div class="l"><div class="r"><div class="tlc"><div class="trc"><div class="blc"><div class="brc"><a id="preset2" title="Antibiotic resistance 2011" class="user " href="javascript:;" onclick="presetds(2); xajax_preset(219,state);"><span>Antibiotic Resistance</span></a></div></div></div></div></div></div></div></div><div class="preset"><div class="t"><div class="l"><div class="r"><div class="tlc"><div class="trc"><div class="blc"><div class="brc"><a id="preset3" title="Focus on Public Health Events in Japan Following the March 11th 9.0 Earthquake and Tsunami" class="user " href="javascript:;" onclick="presetds(3); xajax_preset(216,state);"><span>Focus on Japan</span></a></div></div></div></div></div></div></div></div></div><div class="presetgroup"><div class="preset"><div class="t"><div class="l"><div class="r"><div class="tlc"><div class="trc"><div class="blc"><div class="brc"><a id="preset4" title="A global view of measles alerts for past month" class="user " href="javascript:;" onclick="presetds(4); xajax_preset(212,state);"><span>Measles - Past Month</span></a></div></div></div></div></div></div></div></div><div class="preset"><div class="t"><div class="l"><div class="r"><div class="tlc"><div class="trc"><div class="blc"><div class="brc"><a id="preset5" title="Events involving mass animal mortality, past week" class="user " href="javascript:;" onclick="presetds(5); xajax_preset(198,state);"><span>Animal Die-off Events</span></a></div></div></div></div></div></div></div></div><div class="preset"><div class="t"><div class="l"><div class="r"><div class="tlc"><div class="trc"><div class="blc"><div class="brc"><a id="preset6" title="Cholera and other water-borne diseases in Haiti" class="user " href="javascript:;" onclick="presetds(6); xajax_preset(127,state);"><span>Cholera in Haiti</span></a></div></div></div></div></div></div></div></div></div><div class="presetgroup"><div class="preset"><div class="t"><div class="l"><div class="r"><div class="tlc"><div class="trc"><div class="blc"><div class="brc"><a id="preset7" title="Polio in Africa in the last month" class="user " href="javascript:;" onclick="presetds(7); xajax_preset(149,state);"><span>Polio in Africa</span></a></div></div></div></div></div></div></div></div><div class="preset"><div class="t"><div class="l"><div class="r"><div class="tlc"><div class="trc"><div class="blc"><div class="brc"><a id="preset8" title="" class="hm " href="javascript:;" onclick="presetds(8); xajax_preset(3,state);"><span>User Submitted Reports</span></a></div></div></div></div></div></div></div></div><div class="preset"><div class="t"><div class="l"><div class="r"><div class="tlc"><div class="trc"><div class="blc"><div class="brc"><a id="preset9" title="" class="hm " href="javascript:;" onclick="presetds(9); xajax_preset(4,state);"><span>Highest Rated</span></a></div></div></div></div></div></div></div></div></div><div class="presetgroup"><div class="preset"><div class="t"><div class="l"><div class="r"><div class="tlc"><div class="trc"><div class="blc"><div class="brc"><a id="preset10" title="Infectious Disease Warnings" class="user " href="javascript:;" onclick="presetds(10); xajax_preset(94,state);"><span>Warnings</span></a></div></div></div></div></div></div></div></div><div class="preset"><div class="t"><div class="l"><div class="r"><div class="tlc"><div class="trc"><div class="blc"><div class="brc"><a id="preset11" title="" class="hm " href="javascript:;" onclick="presetds(11); xajax_preset(2,state);"><span>Worldwide Alerts</span></a></div></div></div></div></div></div></div></div></div>
+</div>
+</div>
+
+<div id="save_current_qv" class="hide">
+</div>
+
+</div>
+
+</div>
+
+<!-- .......................
+END: PRESETS -->
+
+
+</div>
+
+<!-- .......................
+END: CONTROL PANEL -->
+
+<!-- START: ALERTS LIST
+............................ -->
+
+<div id="alerts_bar">
+<h2><strong><span id="now_showing_num"></span>&nbsp;Alertas actuales mostradas</strong><span id="now_showing_display"></span>
+</h2>
+<div id="now_showing">
+<table id="now_showing_table">
+<thead>
+<tr class="heading" id="now_showing_heading">
+<th class="th1">Source</th>
+<th class="th2"><span id="sort1" title="Sort by Date">Date</span></th>
+<th class="th3"><span id="sort2" title="Sort by Summary">Summary</span></th>
+<th class="th4"><span id="sort3" title="Sort by Enfermedades">Enfermedades</span></th>
+<th class="th5"><span id="sort4" title="Sort by Location">Location</span></th>
+<th class="th6" title="Confirmed Cases"><span id="sort5" title="Sort by Confirmed Cases">Cases</span></th>
+<th class="th7" title="Confirmed Deaths"><span id="sort6" title="Sort by Confirmed Deaths">Deaths</span></th>
+<th class="th8" title="Significance Rating"><span id="sort7" title="Sort by Significance">Significance</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="8">
+<div id="innertable">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- .......................
+END: ALERTS LIST -->
+
+<!-- START: BOTTOM NAV
+............................ -->
+
+<div id="fbar">
+<div id="flc">&nbsp;</div>
+<div id="frc">&nbsp;</div>
+</div>
+
+<div id="bottom_nav">
+
+<div id="bottom_left">
+<ul>
+<li class="last">
+<select name="language" onchange="javascript:location.href = '../' + this.value;">
+<option value="" >English</option><option value="es" selected>Espa&ntilde;ol</option><option value="fr" >Fran&ccedil;ais</option><option value="pt" >Portugu&ecirc;s</option><option value="ru" >&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</option><option value="zh" >中文</option><option value="ar" >العربية</option></select>
+</li>
+<li><a href="../about?PHPSESSID=stetmdv1hm1i5hvp9v1e55nv73">Acerca de HealthMap</a></li>
+<li><a href="../outbreaksnearme?PHPSESSID=stetmdv1hm1i5hvp9v1e55nv73">Móvil</a></li>
+<li><a href="../partners?PHPSESSID=stetmdv1hm1i5hvp9v1e55nv73">Socios</a></li>
+<li><a href="javascript:uP('http://healthmapblog.blogspot.com');">Blog</a></li>
+<li><a href="javascript:uP('http://facebook.com/healthmap');"><img src="../images/new/fb.png" alt="Facebook" /></a></li>
+<li class="last"><a href="javascript:uP('http://twitter.com/healthmap');"><img src="../images/new/tw.png" alt="Twitter" /></a></li>
+</ul>
+<p id="hm_contact">Questions? Please contact us at <span id="hm_email"></span></p>
+
+</div>
+
+<div id="bottom_right">
+
+<span class="last-load">
+&Uacute;tima actualizaci&oacute;n: <span><span id="last-load"></span></span>
+&nbsp;|&nbsp;
+Pr&oacute;xima actualizaci&oacute;n: <span><span id="next-load"></span></span>
+</span>
+
+</div>
+
+</div>
+
+<!-- .......................
+END: BOTTOM NAV -->
+
+<!-- START: HIDDEN DISEASE LOOKUP
+............................ -->
+
+<div id="dlud" class="dlu" style="display: none;"></div>
+
+<!-- .......................
+END: HIDDEN DISEASE LOOKUP -->
+
+<!-- START: FOOTER
+............................ -->
+
+<div id="footer">
+<img src="../images/logo_ceg.jpg" height="25" alt="Computational Epidemiology Group" />
+<img src="../images/logo_chip.jpg" height="25" alt="CHIP - Children's Hospital Informatics Program" />
+<img src="../images/logo_chb.jpg" height="25" alt="Children's Hospital Boston" />
+<img src="../images/logo_harvard.jpg" height="25" alt="Harvard" />
+<img src="../images/logo_mit.jpg" height="25" alt="MIT" />
+<img src="../images/logo_hst.jpg" height="25" alt="Harvard-MIT Health Sciences and Technology" />
+<p>
+By Clark Freifeld and John Brownstein. Copyright &copy;2007.<br />
+This site necessarily relies on publicly available third-party information.<br />
+We assume no responsibility for its accuracy or completeness.
+</p>
+</div>
+
+<!-- .......................
+END: FOOTER -->
+
+<!-- START: HIDDEN FULL MAP STUFF
+............................ -->
+
+<div id="maxctl" class="rstr" style="display: none;" title="Hit ESC to restore normal view">
+<a id="togButton" href="javascript:toggleHop();" style="text-decoration: none">Stop marker rotation</a>
+</div>
+
+<!--
+<a id="closefs" href="javascript:restoreMap();"><img src="fancybox/fancy_close.png" alt="healthMap" /></a>
+-->
+
+<div id="maxkey" style="display: none;">
+<span class="gr">News/Media</span><br /><img class="f" src="../g" /> Google News Espa&ntilde;ol<br />
+
+<img class="f" src="../m" /> Moreover Technologies<br />
+<img class="f" src="../wd" /> Wildlife Disease Node<br />
+
+
+
+
+
+
+<br /><span class="gr">Scientific Reports</span><br /><img class="f" src="../p" /> ProMED Espa&ntilde;ol<br />
+
+
+
+<img class="f" src="../e" /> EuroSurveillance<br />
+
+
+
+
+<br /><span class="gr">Community Contributions</span><br /><img class="f" src="../hm" /> HM Community News Reports<br />
+
+<br /><span class="gr">Official Sources</span><br /><img class="f" src="../w" /> Organizaci&oacute;n Mundial de la Salud<br />
+<img class="f" src="../fao.png" /> Food and Agriculture Org<br />
+<img class="f" src="../o" /> Org. Mundial de Sanidad Animal<br />
+
+</div>
+
+<div id="maxbanner" class="mban" style="display: none;" title="HealthMap Banner">
+<div id="max_banner">
+
+<div class="mban">
+<img src="../images/new/logo.png" width="227" height="54" alt="HealthMap" />
+<span class="tagline">Mapa mundial de alertas epid&eacute;micas</span>
+</div>
+
+<div class="mbt">
+
+<div class="legend">
+
+<h2><a href="../activityindex.php?PHPSESSID=stetmdv1hm1i5hvp9v1e55nv73" class="iframe"><img src="../images/new/i.gif" alt="More Information" /></a> &Iacute;ndice<br />de actividad</h2>
+
+<table>
+<tr><th colspan="2">Bajo</th>
+<th></th><th colspan="2" align="right">Alto</th>
+<th></th>
+</tr>
+<tr>
+<td><img src="../images/new/legend/big_lyellow.gif" width="11" height="11" alt="Lite Yellow" /></td>
+<td><img src="../images/new/legend/big_yellow.gif" width="11" height="11" alt="Yellow" /></td>
+<td><img src="../images/new/legend/big_orange.gif" width="11" height="11" alt="Orange" /></td>
+<td><img src="../images/new/legend/big_red.gif" width="11" height="11" alt="Red" /></td>
+<td><img src="../images/new/legend/big_dred.gif" width="11" height="11" alt="Dark Red" /></td>
+<th>Pa&iacute;s</th>
+</tr>
+<tr>
+<td><img src="../images/new/legend/sm_lyellow.gif" width="8" height="16" alt="Lite Yellow" /></td>
+<td><img src="../images/new/legend/sm_yellow.gif" width="8" height="16" alt="Yellow" /></td><td><img src="../images/new/legend/sm_orange.gif" width="8" height="16" alt="Orange" /></td>
+<td><img src="../images/new/legend/sm_red.gif" width="8" height="16" alt="Red" /></td>
+<td><img src="../images/new/legend/sm_dred.gif" width="8" height="16" alt="Dark Red" /></td>
+<th>Provincia o localidad</th>
+</tr>
+</table>
+
+</div>
+</div>
+
+</div>
+<p>HealthMap (<a href="http://www.healthmap.org">healthmap.org</a>) brings together disparate data sources to achieve a comprehensive view of the current global state of infectious diseases.</p>
+</div>
+
+<!-- .......................
+END: HIDDEN FULL MAP STUFF  -->
+
+ </div>
+
+<!-- .......................
+END: CONTENT -->
+
+</div>
+
+<!-- .......................
+END: PAGE -->
+
+<script type="text/javascript">
+    //<![CDATA[
+
+// date picker
+Date.format = 'mm/dd/yyyy';
+$(function() {
+    $('.date-pick').datePicker({startDate:'01/01/2010',endDate:new Date().addDays(1).asString(),clickInput:true})
+    .bind(
+       'dateSelected',
+        function(e, selectedDate, $td)
+        {
+            sdate = document.getElementById('date1').value;
+            var sdates = sdate.split("/");
+            sdate = sdates[2]+"-"+sdates[0]+"-"+sdates[1];
+            edate = document.getElementById('date2').value;
+            var edates = edate.split("/");
+            edate = edates[2]+"-"+edates[0]+"-"+edates[1];
+        }
+    );
+    $('#date1').bind(
+        'dpClosed',
+        function(e, selectedDates)
+        {
+            var d = selectedDates[0];
+            if (d) {
+                d = new Date(d);
+                $('#date2').dpSetStartDate(d.addDays(1).asString());
+            }
+        }
+    );
+    $('#date2').bind(
+        'dpClosed',
+        function(e, selectedDates)
+        {
+            var d = selectedDates[0];
+            if (d) {
+                d = new Date(d);
+                $('#date1').dpSetEndDate(d.addDays(-1).asString());
+            }
+        }
+    );
+});
+
+// fancybox
+$(function() {
+    $('a.iframe').fancybox();
+    $('a.iframebig').fancybox({
+	'width': 780,
+	'height': 400
+    });
+});
+
+
+// toggle active/inactive date choices
+$(function() {
+	if ($('#datechoice1').is(":checked")) {
+		$('#days_weeks').attr("class","");
+		$('#date_range').attr("class","inactive");
+	} else {
+		$('#days_weeks').attr("class","inactive");
+		$('#date_range').attr("class","");
+	}
+	$('#datechoice1').click(function() {
+		$('#days_weeks').attr("class","");
+		$('#date_range').attr("class","inactive");
+	});
+	$('#datechoice2').click(function() {
+		$('#days_weeks').attr("class","inactive");
+		$('#date_range').attr("class","");
+	});
+});
+
+// outbreak missing tabs
+$(function() { 
+    $("ul#tabs").tabs("div#panes > div"); 
+});
+
+// preset scroller
+$(function() {
+     $("#cp_scrollable").scrollable({
+        //'size': 3
+    }).mousewheel();
+    // hide preset arrows if <= 3 buttons
+    var numpresets = $('.preset').length;
+    if (numpresets <= 3) {
+        $('#presets .prev').addClass('disabled');
+        $('#presets .next').addClass('disabled');
+    } 
+});
+
+// adjust height of control panel if
+// save preset form is visible
+$(function() {
+	if ($('#save_current_qv').attr('class') !== 'hide') {
+		$('#control_panel').height = '10em';
+	} else {
+		$('#control_panel').height = '7.5em';
+	}
+});
+
+
+// fading message
+$(function() {
+	setTimeout(function(){
+		$("#message").fadeOut("slow", function() {
+	//		$("#message").remove();
+		});
+	}, 3000);
+});
+
+// auto-complete search
+function quicksearch()
+{
+    presetds();
+    xajax_quicksearch('', '', i$('searchbox').value, state);
+}
+
+function show_map_only() {
+        $('#gis').show();
+        $('#mapds').show();
+        $('#outbreak_missing_top').show();
+        $('#outbreak_missing').show();
+        if (!$('#accordion:empty')) {
+            $('#accordionContainer').show();
+        }
+        if ($('#map_disclaimer').length) {
+            $('#map_disclaimer').show();
+        }
+        // collapse list to nothing
+        $('#innertable').height(0);
+        $('#now_showing_table').hide(); 
+        $('#cp_right').css({"margin-top": 0});
+        // increase map height so it fills more of window
+        $('#gis').height(510);
+        $('#mapds').css({"top": 531});
+        // down states
+        $('#map_only').addClass("viewdown");
+        $('#split').removeClass("viewdown");
+        $('#list_only').removeClass("viewdown");
+}
+
+function show_split() {
+        $('#gis').height(400);
+        $('#mapds').css({"top": 421});
+        $('#gis').show();
+        $('#mapds').show();
+        $('#outbreak_missing_top').show();
+        $('#outbreak_missing').show();
+        $('#now_showing_table').show(); 
+        if (!$('#accordion:empty')) {
+            $('#accordionContainer').show();
+        }
+        if ($('#map_disclaimer').length) {
+            $('#map_disclaimer').show();
+        }
+        $('#innertable').height('150px');
+        $('#cp_right').css({"margin-top": 0});
+        // down states
+        $('#split').addClass("viewdown");
+        $('#list_only').removeClass("viewdown");
+        $('#map_only').removeClass("viewdown");
+}
+
+function list_only() {
+        $('#gis').hide();
+        $('#mapds').hide();
+        $('#outbreak_missing_top').hide();
+        $('#outbreak_missing').hide();
+        if (!$('#accordion:empty')) {
+            $('#accordionContainer').hide();
+        }
+        if ($('#map_disclaimer').length) {
+            $('#map_disclaimer').hide();
+        }
+        $('#now_showing_table').show(); 
+        // expand to full height of list
+        $('#innertable').height('auto');
+        $('#alert_rows').height('auto');
+        $('#cp_right').css({"margin-top": 25});
+        // down states
+        $('#list_only').addClass("viewdown");
+        $('#map_only').removeClass("viewdown");
+        $('#split').removeClass("viewdown");
+}
+
+// rotating blog content
+$(function() {
+    if ($('#topbar').css('display') == 'block') {
+        $(".rotator").scrollable({
+            vertical: true, 
+            circular: true
+        }).autoscroll({
+            autoplay: true, 
+            autopause: true, 
+            interval: 10000
+        }).navigator();
+    }
+});
+
+
+$(document).ready(function() {   
+
+    // preset popups
+
+/*
+    $('<div id="presetinfo"></div>').hide().appendTo('body');
+    $('.preset').live('mouseover', function() {
+        var offset = $(this).offset();
+        var topEdge = offset.top + 3;
+        var leftEdge = offset.left + 3;
+        $('#presetinfo').css({ top: topEdge, left: leftEdge }).html('<div><p>All alerts, all locations, past 3 days.</p><p>Email to a friend:<br /><input type="text" name="emaillink" value="http://www.healthmap.org/en/?pid=1" /></p></div>').show();
+    });
+    $('#presetinfo').live('mouseout', function() {
+        $('#presetinfo').hide();
+    });
+*/
+
+
+/*
+    $('.preset').live('mouseover', function() {
+        $(this).addClass('hover'); 
+        hover_intent = setTimeout(function() { 
+            $('.preset .hover').find('.off').fadeOut("fast");
+        } , 100 ); 
+    }, function() { 
+            try{clearTimeout(hover_intent);}catch(e){}; 
+            $('#header .hover').find('.off').fadeIn("fast"); 
+            $(this).removeClass('hover'); 
+    });
+*/
+
+
+
+/*
+$('#header li').hover(function() { 
+    $(this).addClass('hover'); 
+    hover_intent = setTimeout(function() { 
+        $('#header .hover').find('.off').fadeOut("fast");
+    } , 100 ); 
+}, function() { 
+        try{clearTimeout(hover_intent);}catch(e){}; 
+        $('#header .hover').find('.off').fadeIn("fast"); 
+        $(this).removeClass('hover'); 
+});
+*/
+
+
+    // tooltips
+
+    $('<div id="livetip"></div>').hide().appendTo('body');
+    var tipTitle = '';
+    $('#now_showing_display a').customToolTip();
+
+
+    // toggle display views
+    $('#map_only').click(function() { show_map_only(); });
+    $('#split').click(function() { show_split(); });
+    $('#list_only').click(function() { list_only(); });
+
+    $('#search_button').bind('click', quicksearch);
+
+
+    // rating
+    $('.base').live('hover', function() {
+        $(this).next().css('z-index','850');
+        $(this).css('z-index','5');
+        }, function() {
+        $(this).next().css('z-index','5');
+        $(this).css('z-index','850');
+    });
+
+    $('.status').live('mouseleave',function() {
+        $(this).css('z-index','5');
+        $(this).prev().css('z-index','850');
+    });
+
+/*
+    $(".preset a").live('hover', function() {
+        $(this).prev().prev().prev().prev().prev().prev().prev().prev().prev("em").stop(true, true).animate({opacity: "show", top: "-60"}, "slow");
+        }, function() {
+        $(this).prev("em").animate({opacity: "hide", top: "-70"}, "fast");
+    });
+*/
+
+    // random promos only used for displaying legend in header on skins
+    $('#promote_container').load('promote.htm',function(){
+        var promote = $(this).find('div.promote');
+        var n = promote.length;
+        var random = Math.floor( Math.random()*n );
+        promote.eq(random).show();
+    }); 
+
+});
+
+/*
+$(document).ready(function() {
+    // resizable table
+    //$("#innertable").height(150);
+    $("#now_showing").resizable({
+        alsoResize: '#innertable',
+        handles: 's'
+    });
+});
+*/
+
+/*
+$(document).ready(function() {
+    // resizable table
+    $("#now_showing").resizable({
+        handles: 's'
+    });
+    var ns_height = $("#now_showing").height();
+    alert("here");
+    $('#innertable').height(ns_height);
+});
+*/
+
+
+$(function() {
+   $('#searchbox').autocomplete( '../ac.php', {width: 300, cellSeparator: '|'} ).result( function( data, value, formatted ) {
+        $('#searchbox').val(value[1]);
+        var f = {'d':'disease_id', 'p':'place_id'};
+        var type = value[2].substring(0,1);
+        var fieldType = f[type];
+        var id = value[2].replace(type, "");
+        presetds();
+        xajax_quicksearch(id, fieldType, '', state);
+   } ); 
+});
+
+    //]]>
+</script>
+    <noscript>JavaScript must be enabled in order for you to use Google Maps.  However, it seems JavaScript is either disabled or not supported by your browser. 
+      To view Google Maps, enable JavaScript by changing your browser options, and then 
+      try again.
+    </noscript>
+
+  <script type="text/javascript" charset="utf-8">
+//<![CDATA[
+/*************************************************
+ * Created with GoogleMapAPI 2.4-dev
+ * Author: Monte Ohrt <monte AT ohrt DOT com>
+ * Copyright 2005-2006 New Digital Group
+ * http://www.phpinsider.com/php/code/GoogleMapAPI/
+ *************************************************/
+var points = [];
+var markers = [];
+var counter = 0;
+var ic = [];
+var map = null;
+function onLoad() {
+var mapObj = document.getElementById("gis");
+if (mapObj != "undefined" && mapObj != null) {
+var mapOptions = { zoom: 2, center: new google.maps.LatLng(18, 15), disableDefaultUI: true, mapTypeControl: true, navigationControl: true, navigationControlOptions: {streetViewControl: false}, mapTypeControlOptions: { mapTypeIds: [google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.TERRAIN, google.maps.MapTypeId.SATELLITE] }, mapTypeId: google.maps.MapTypeId.TERRAIN };
+map = new google.maps.Map(document.getElementById("gis"), mapOptions);
+}
+}
+//]]>
+</script>
+  <script type="text/javascript">
+  var state = []
+var feedIds = new Array(7,9,8,77,32,1,15,24,3,4,5,19,22,26,28,18,10,12,14,17,31); 
+var diseaseIds = new Array(227,228,229,230,231,232,233,234,235,237,238,4,41,174,165,179,211,203,218,221,3,159,64,5,6,7,8,10,172,11,204,13,20,192,22,14,15,114,17,19,107,185,32,21,219,26,201,28,29,127,31,186,34,35,36,38,39,42,27,44,240,236,40,155,147,187,239,12,202,177,78,157,191,178,99,16,212,215,220,209,193,213,124,184,48,47,216,169,156,72,33,117,146,175,123,151,158,115,81,108,111,120,49,150,52,57,54,55,67,68,210,224,56,222,58,59,60,243,244,245,246,247,61,66,63,135,125,94,176,50,241,69,73,74,170,75,76,163,77,101,79,80,83,84,9,152,86,89,207,90,53,242,166,92,104,103,93,205,197,96,199,200,171,91,188,97,180,181,98,102,190,206,167,183,105,217,109,196,25,248,225,116,189,198,118,132,223,119,82,87,122,168,126,162,121,129,131,134,194,133,113,100,137,138,139,142,143,1,141,144,226,145,208,18,161,195,2,128,88,182,154,173,214,110,65); 
+var placeIds = new Array(137,72,101,69,165,162,30,131,67,4,133,186,109,92,134,99,378,127,153,32,116,19,59,5,73,169,6,157,81,49,172,154,15,145,65,12,57,7,155,82,80,16,175,166,196,195,52,17,74,20,111,33,8,55,21,132,94,114,115,43,106,117,95,158,118,167,100,168,481,53,34,83,13,45,60,47,27,25,22,112,142,184,128,89,39,522,38,366,160,149,189,159,90,75,26,156,91,56,174,138,61,129,85,146,119,178,54,68,102,120,103,14,70,76,181,50,147,176,143,77,41,182,51,161,121,1,480,177,148,58,163,187,139,23,62,476,107,199,164,124,104,140,519,18,188,9,10,382,113,42,130,40,66,110,84,194,24,173,122,98,44,2,78,36,35,63,48,79,183,46,150,86,125,144,31,179,96,108,105,37,180,151,200,141,185,64,3,28,71,135,87,190,123,97,11,136,191,29,152,126,93,170,171); 
+var tagIds = new Array(1,2,29);
+  var zoomlevel = 2;
+  var centerlat = 15;
+  var centerlon = 18;
+  var locmarkers = [];
+  var lang = 'es';
+  var monAbbr = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  var stopMrkStr = 'Detener movimiento';
+  var startMrkStr = 'Empezar movimiento';
+  </script>
+  	<script type="text/javascript">
+var xajaxRequestUri="../hm.server.new.php";
+var xajaxDebug=false;
+var xajaxStatusMessages=false;
+var xajaxWaitCursor=true;
+var xajaxDefinedGet=0;
+var xajaxDefinedPost=1;
+var xajaxLoaded=false;
+function xajax_update_map(){return xajax.call("update_map", arguments, 1);}
+function xajax_signup(){return xajax.call("signup", arguments, 1);}
+function xajax_check_email(){return xajax.call("check_email", arguments, 1);}
+function xajax_reset_password(){return xajax.call("reset_password", arguments, 1);}
+function xajax_create_user(){return xajax.call("create_user", arguments, 1);}
+function xajax_diseaseSort(){return xajax.call("diseaseSort", arguments, 1);}
+function xajax_countrySort(){return xajax.call("countrySort", arguments, 1);}
+function xajax_logMaxMap(){return xajax.call("logMaxMap", arguments, 1);}
+function xajax_fetch_article(){return xajax.call("fetch_article", arguments, 1);}
+function xajax_accept_ureport(){return xajax.call("accept_ureport", arguments, 1);}
+function xajax_authenticate(){return xajax.call("authenticate", arguments, 1);}
+function xajax_preset(){return xajax.call("preset", arguments, 1);}
+function xajax_update_preset_manager(){return xajax.call("update_preset_manager", arguments, 1);}
+function xajax_buildNowShowing(){return xajax.call("buildNowShowing", arguments, 1);}
+function xajax_save_view(){return xajax.call("save_view", arguments, 1);}
+function xajax_save_rating(){return xajax.call("save_rating", arguments, 1);}
+function xajax_expand_comment(){return xajax.call("expand_comment", arguments, 1);}
+function xajax_post_comment(){return xajax.call("post_comment", arguments, 1);}
+function xajax_quicksearch(){return xajax.call("quicksearch", arguments, 1);}
+	</script>
+	<script type="text/javascript" src="../xajax_0.2.4/xajax_js/xajax.js"></script>
+	<script type="text/javascript">
+window.setTimeout(function () { if (!xajaxLoaded) { alert('Error: the xajax Javascript file could not be included. Perhaps the URL is incorrect?\nURL: ../xajax_0.2.4/xajax_js/xajax.js'); } }, 6000);
+	</script>
+    <script type="text/javascript" src="../event_utils.js"></script>
+  <script type="text/javascript" src="../hm_fn.new.js"></script>
+  <script type="text/javascript">
+
+xajax.loadingFunction = function()
+ {
+ i$('loadingMsg').className = 'block';
+ };
+ xajax.doneLoadingFunction = function()
+ {
+ i$('loadingMsg').className = 'hide';
+};
+
+var feedLangs = new Array();
+// checkedByDefault
+var cbD = new Array();
+var noEng = new Array();
+feedLangs[7] = 'es';
+cbD[7] = 1;
+feedLangs[9] = 'es';
+cbD[9] = 1;
+feedLangs[8] = 'es';
+cbD[8] = 1;
+feedLangs[77] = '';
+cbD[77] = 1;
+feedLangs[32] = 'es';
+cbD[32] = 1;
+feedLangs[1] = '';
+cbD[1] = 1;
+feedLangs[15] = '';
+cbD[15] = 1;
+feedLangs[24] = '';
+cbD[24] = 1;
+feedLangs[3] = '';
+cbD[3] = 1;
+feedLangs[4] = '';
+cbD[4] = 1;
+feedLangs[5] = '';
+cbD[5] = 1;
+feedLangs[19] = '';
+cbD[19] = 1;
+feedLangs[22] = '';
+cbD[22] = 1;
+feedLangs[26] = 'pt';
+cbD[26] = 1;
+feedLangs[28] = 'pt';
+cbD[28] = 1;
+feedLangs[18] = 'fr';
+cbD[18] = 1;
+feedLangs[10] = 'fr';
+cbD[10] = 1;
+feedLangs[12] = 'ru';
+cbD[12] = 1;
+feedLangs[14] = 'ru';
+cbD[14] = 1;
+feedLangs[17] = 'zh';
+cbD[17] = 1;
+feedLangs[31] = 'ar';
+cbD[31] = 1;
+noEng['es'] = 1;
+noEng['fr'] = 1;
+noEng['ru'] = 1;
+noEng['zh'] = 1;
+noEng['pt'] = 1;
+noEng['ar'] = 1;
+var fsbanner = '1';
+var hmu_id = '';
+var pathToMain = '../';
+function initState() {
+    state = [];
+    state['default_pid'] = '';
+    state['geonameid'] = '';
+    state['allplace'] = '203';
+    state['alldiz'] = '225';
+    state['alltag'] = '3';
+    state['allfeed'] = '21';
+    state['default_time'] = '1 week';
+    state['default_feeds'] = '';
+    state['default_diseases'] = '';
+    state['default_places'] = '';
+    state['partner'] = 'hm';
+    state['lang'] = 'es';
+    state['presets'] = '1,219,216,212,198,127,149,3,4,94,2';
+    state['heatscore'] = 1;
+    state['omit_notag'] = '';
+    state['persistent_kmlpath'] = '';
+    state['path_to_main'] = '../';
+    state['species'] = '';
+    state['sort1'] = 0;
+    state['sort2'] = 0;
+    state['sort3'] = 0;
+    state['sort4'] = 0;
+    state['sort5'] = 0;
+    state['sort6'] = 0;
+    state['sort7'] = 0;
+
+    state['place_id'] = [];
+    initCheckboxes('place', true);
+
+    state['disease_id'] = [];
+    initCheckboxes('diz', true);
+
+    state['alert_tag_id'] = [];
+    initCheckboxes('tag', true);
+
+    state['feed_id'] = [];
+    initCheckboxes('feed', true);
+
+    // if disease ids are passed in, treat it like a search
+    var dizpi = getParam('disease');
+    if (typeof dizpi != "undefined") {
+        state['disease_id'] = [];
+        presetds();
+        var dizpiarr = dizpi.split(",");
+        for(var i = 0; i < dizpiarr.length; i++) {
+            state['disease_id']['' + dizpiarr[i]] = 1;
+        }
+        xajax_update_map(state);
+        return 1;
+    }
+
+        // if a preset is passed into the URL by default, go directly to the preset
+    var ps = getParam('ps');
+    if (typeof ps != "undefined") {
+        if(ps == '127') {
+            location.href='http://healthmap.org/haiti';
+        }
+        state['preset'] = ps;
+    } else {
+        state['preset'] = '';
+        ps = 1;
+    }
+    // v is lat, lon and zoom
+    var v = getParam('v');
+    if (typeof v != "undefined") {
+        show_map_only();
+        var el = v.split(',');
+        var pid = Number(el[3]);
+        if(pid) {
+            state['default_pid'] = pid;
+        } else {
+            state['geonameid'] = getParam('g');
+        }
+        state['mapzoom'] = Number(el[2]);
+        state['mapcenter'] = Number(el[0]) + ", " + Number(el[1]);
+    } 
+    xajax_preset(ps, state, '');
+    var fs = getParam('fs');
+    if(Number(fs) == 1) {
+        maxMap();
+        return 1;
+    }
+}
+function presetds(id) {
+    state['default_pid'] = '';
+    state['geonameid'] = '';
+    // hide the save this map view option
+    if(id) {
+        // a preset was clicked on so reset the value of the searchbox
+        i$('searchbox').className = 'default';
+        i$('searchbox').value = 'disease or location';
+        i$('save_current_qv').className='hide';
+    } else {
+            }
+    for(var i = 1; i <= 20; i++) {
+        if(i$('preset' + i) != null) {
+	        icon_class = i$('preset' + i).className;
+            if(i == id) {
+                i$('preset' + i).className = icon_class + " active";
+            } else {
+		    if (icon_class.indexOf('home') != -1) {
+			i$('preset' + i).className = 'home';
+		    } else {
+	            	if (icon_class.indexOf("hm") != -1) {
+            	    	i$('preset' + i).className = 'hm';
+	            	} else {
+            	    	i$('preset' + i).className = 'user';
+	            	}
+		    }
+            }
+        }
+    }
+}
+function mSl(elt,id,name) {
+    if(!i$(elt + id)) {
+        return;  // if id doesnt exist, do nothing
+    }
+    setAllCheck(elt, 0);
+    i$(elt + id).checked = 1;
+}
+function getSl() {
+    var idMap = {'diz':diseaseIds, 'feed':feedIds, 'tag':tagIds, 'place':placeIds};
+    var dbidMap  = {'diz':'disease_id', 'feed':'feed_id', 'tag':'alert_tag_id', 'place':'place_id'};
+    var ckMap     = {'diz':'diseaseCheck', 'feed':'feedCheck', 'tag':'tagCheck', 'place':'placeCheck'};
+    var elts = new Array('diz', 'feed', 'tag', 'place');
+    for(var j=0; j< elts.length; j++) {
+        var elt = elts[j];
+        var ids = idMap[elt];
+        var fieldType = dbidMap[elt];
+        var ckName = ckMap[elt];
+        state[fieldType] = [];
+
+        for(var i = 0; i < ids.length; i++) {
+            var f = ids[i];
+            var ckName = i$(elt + f);
+            if(ckName.checked == true) {
+                state[fieldType]['' + f] = 1;
+            }
+        }
+
+        if(state[fieldType] == "") {
+            var dispMap = {'diz':'Disease', 'feed':'Feed', 'tag':'Category', 'place':'Place'};
+            i$('aso_error').innerHTML = "Please choose at least one "+dispMap[elt];
+            i$('adv_search_options').className='show';
+            return;
+        }
+
+    }
+}
+function gSl() {
+    getSl();
+    if (i$('datechoice1').checked == true) {
+        state['start_date'] = i$('time_interval').value;
+        state['end_date'] = 'time_interval';
+    } else {
+        var sdate = i$('date1').value;
+        var edate = i$('date2').value;
+        var sdates = sdate.split("/");
+        state['start_date'] = sdates[2]+"-"+sdates[0]+"-"+sdates[1];
+        var edates = edate.split("/");
+        state['end_date'] = edates[2]+"-"+edates[0]+"-"+edates[1];
+    }
+    xajax_update_map(state);
+}
+function saveView(viewval, viewdesc) {
+    getSl();
+    xajax_save_view(viewval, viewdesc, state, map.getCenter().lat(), map.getCenter().lng(), map.getZoom(), map.getMapTypeId(), '');
+}
+function sortElts(evt) {
+    var tg = getTarget(evt);
+    var othertg = document.getElementById("now_showing_heading").getElementsByTagName("span");
+    for (var i=0;i<othertg.length;i++) {
+        othertg[i].style.textDecoration = 'underline';
+        othertg[i].style.backgroundImage = 'none';
+    }
+    var s = state[tg.id];
+    var sel = tg.id.replace("sort","");
+    xajax_buildNowShowing(sel, i$('alert_rows').innerHTML, s, true);
+    if(s) {
+        state[tg.id] = 0;
+        tg.style.backgroundImage = 'url(../images/new/desc_arrow.png)';
+    } else {
+        state[tg.id] = 1;
+        tg.style.backgroundImage = 'url(../images/new/asc_arrow.png)';
+    }
+    //tg.title = 'Ordene alfabético';
+}
+function show_comment(alertid) {
+    xajax_expand_comment(alertid, '');
+}
+function rating(rate,alertid) {
+    xajax_save_rating(rate, alertid, '');
+}
+addEvent(i$('sort1'), "click", sortElts);
+addEvent(i$('sort2'), "click", sortElts);
+addEvent(i$('sort3'), "click", sortElts);
+addEvent(i$('sort4'), "click", sortElts);
+addEvent(i$('sort5'), "click", sortElts);
+addEvent(i$('sort6'), "click", sortElts);
+addEvent(i$('sort7'), "click", sortElts);
+
+i$('last-load').innerHTML = '23 Apr 2011 08:00';i$('next-load').innerHTML = '23 Apr 2011 09:00';
+
+</script>
+
+</body>
+</html>

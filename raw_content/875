@@ -1,0 +1,515 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+>
+  <head profile="http://www.w3.org/1999/xhtml/vocab">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="canonical" href="http://www.ucsf.edu/news/2009/06/8187/obesity-and-metabolic-syndrome-driven-fructose-sugar-diet"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/all/themes/ucsf_public/favicon.ico" type="image/x-icon" />
+
+        <meta name="keywords" content="News Center" />
+        <title>Sugar Is a Poison, Says UCSF Obesity Expert | www.ucsf.edu</title>
+
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/default/files/css/css_d56003fa5232bba9e6ba9ba1bde142e6.css" />
+<link type="text/css" rel="stylesheet" media="print" href="/sites/default/files/css/css_c2f676f86a21eec99e9c10b93d9dfd3e.css" />
+
+    <!--[if IE 6]>
+    <link type="text/css" rel="stylesheet" href="/sites/all/themes/ucsf_public/css/ie6.css" />
+    <![endif]-->
+    <!--[if IE 7]>
+    <link type="text/css" rel="stylesheet" href="/sites/all/themes/ucsf_public/css/ie7.css" />
+    <![endif]-->
+ <!--[if IE 8]>
+    <link type="text/css" rel="stylesheet" href="/sites/all/themes/ucsf_public/css/ie8.css" />
+    <![endif]-->
+    <script type="text/javascript" src="/sites/default/files/js/js_3876f15f88755616c3739904004f18ed.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","ahahPageStorage":{"pageBuildId":"page-70432a8918d842a7ea93eb3ac7bfb9b2"},"automodal":{".automodal":{"autoFit":true,"draggable":true,"width":600,"height":400,"automodalClose":true,"automodalReload":false}},"getQ":"node\/8187"});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function debug_log(thing) {
+  var debug_console = 0;
+  if (debug_console) {
+    if (typeof console != 'undefined') {
+      console.log(thing);
+    }
+    else {
+      setTimeout('throw new Error(\'' + thing + '\')', 0);
+    }
+  }
+}
+Drupal.behaviors.GABehavior = function(context) {
+  /* init external tracking links */
+  var gaprefix = '/news/2009/06/8187/obesity-and-metabolic-syndrome-driven-fructose-sugar-diet';
+  var gaurls = eval('({"http:\/\/dentistry.ucsf.edu":"school_dentistry","http:\/\/dentistry.ucsf.edu\/patient-services":"find_dentist","http:\/\/dentistry.ucsf.edu\/patients\/patients_main.html":"find_dentist","http:\/\/finaid.ucsf.edu":"financial_aid","http:\/\/graduate.ucsf.edu":"grad_div","http:\/\/medschool.ucsf.edu":"school_medicine","http:\/\/medschool2.ucsf.edu":"school_medicine","http:\/\/medschool2.ucsf.edu\/":"school_medicine","http:\/\/nurseweb.ucsf.edu":"school_nursing","http:\/\/nurseweb.ucsf.edu\/index.shtml":"school_nursing","http:\/\/pharmacy.ucsf.edu":"school_pharmacy","http:\/\/registrar.ucsf.edu":"office_registrar","http:\/\/registrar.ucsf.edu\/registration\/fees":"fees_tuition","http:\/\/www.ucsfhealth.org":"medical_center","http:\/\/www.ucsfhealth.org\/appointments":"request_appointment","http:\/\/www.ucsfhealth.org\/conditions\/all.html":"conditions_treatments","http:\/\/www.ucsfhealth.org\/directory\/A.html":"doctor_staff_directory","http:\/\/www.ucsfhealth.org\/doctors_and_clinics":"find_doctor","https:\/\/makeagift.ucsf.edu\/*":"giving","https:\/\/registrar.ucsf.edu\/registration\/fees":"fees_tuition"})');
+  // galist = '';
+  $.each(gaurls, function(url,vpage) {
+    var re = /\*$/;
+    var op = '=';
+    if (url.match(re)) {
+      op = '^=';
+    }
+    var asel = 'a[href' + op + '"' + url.replace(re, '') + '"]:not([ga])';
+    debug_log('url=' + url + ' vpage=' + vpage + ' asel=' + asel);
+    $(asel).each(function() {
+      var debug_console = 0;
+      var gatype = 'ga';
+      if ($(this).closest('ul#primary-nav').length) {
+        debug_log('you are in the top nav');
+        gatype = 'ga_main_nav';
+      }
+      else if ($(this).closest('div.quick-links').length) {
+        debug_log('you are in quick-links ');
+        gatype = 'ga_bucket';
+      }
+      else if ($(this).closest('div.blind').length) {
+        debug_log('you are in a duck blind');
+        gatype = 'ga_blind';
+      }
+      gavalue = gaprefix + '/' + gatype + '/' + vpage;
+      debug_log("set ga attribute of " + $(this).attr('href') + ' to ' + gavalue);
+      $(this).addClass('track-external').attr('ga', gavalue);
+      if (debug_console) {
+        var dhtml = $('<div>').append($(this).clone()).remove().html();
+        debug_log('result is ' + dhtml);
+      }
+    });
+  });
+  // don't do this automagically
+  // $('.track-external').attr('target', '_blank');
+  var trackhandler = function() {
+    var debug_alert = 0;
+    var href = $(this).attr('href');
+    var vpage = href;
+    if ($(this).attr('ga')) {
+      vpage = $(this).attr('ga');
+      debug_log('tracking ' + vpage);
+      if (debug_alert) {
+        alert('tracking ' + vpage);
+      }
+      _gaq.push(['_trackPageview', vpage]);
+    }
+    else {
+      debug_log('no ga attribute');
+      debug_log($(this));
+    }
+  };
+  $('.track-external').unbind('click.GA', trackhandler);
+  $('.track-external').bind('click.GA', trackhandler);
+};
+//--><!]]>
+</script>
+
+    <script type="text/javascript"> </script>
+    <!--[if IE 6]>
+	  <script type="text/javascript" src="/sites/all/themes/ucsf_public/js/DD_belatedPNG_0.0.8a-min.js"></script>
+    <script>
+      DD_belatedPNG.fix('div.corner.top-left, div.corner.top-right, div.corner.bottom-left, div.corner.bottom-right, .map-bubble a, a div.map-node-button, a.map-point, a.link-home, .form-holder a, .arrow-heading a, .button-details, .button-close, h4.blue-heading a, .directory-search, .button-search, .button-read-more, .search-input-holder, a.light-blue-arrowed span, #filter-search-go, .news-two-column .column-left h4.blue-heading span, a.learn-more, .glider-thumbnails .thumbnail .inner');
+    </script>
+    <![endif]-->
+  </head>
+  <body class="article not-front not-logged-in page-node node-type-article-page one-sidebar sidebar-right article">
+    <div id="header">
+      <div class="nav">
+        <div class="large-inner">
+         <div id="print-logo"><img src="/sites/all/themes/ucsf_public/images/print/logo.png" alt="ucsf logo"/></div>
+          <div class="nav-inner">
+            <div class="column-left">
+              <a href="/" class="link-home">Home</a><ul id="primary-nav" class="sf-menu"><li class="expanded first"><a href="/about" title="" class="nav-about">About</a><ul class="menu"><li class="leaf first"><a href="/about/about-ucsf" title="">About UCSF</a></li>
+<li class="leaf"><a href="/about/achievements" title="">Achievements</a></li>
+<li class="leaf"><a href="/about/areas-excellence" title="">Areas of Excellence</a></li>
+<li class="leaf"><a href="http://ucsfchancellor.ucsf.edu/" title="Link to UCSF Chancellor Site" target="_blank">Chancellor</a></li>
+<li class="leaf"><a href="/about/history-1" title="">History</a></li>
+<li class="leaf"><a href="/about/community-overview" title="">UCSF in the Community</a></li>
+<li class="leaf last"><a href="/about" title="">More </a></li>
+</ul></li>
+<li class="expanded"><a href="/patient-care" class="nav-patient-care">Patient Care</a><ul class="menu"><li class="leaf first"><a href="http://www.ucsfhealth.org/doctors_and_clinics" title="" target="_blank">Find a Doctor</a></li>
+<li class="leaf"><a href="http://www.ucsfhealth.org/appointments" title="" target="_blank">Request an Appointment</a></li>
+<li class="leaf"><a href="http://www.ucsfbenioffchildrens.org/" title="UCSF Benioff Children&#039;s Hospital" target="_blank">UCSF Benioff Children&#039;s Hospital</a></li>
+<li class="leaf"><a href="http://dentistry.ucsf.edu/patient-services" title="" target="_blank">UCSF Dental Center</a></li>
+<li class="leaf"><a href="http://www.ucsfhealth.org" title="" target="_blank">UCSF Medical Center</a></li>
+<li class="leaf"><a href="http://www.ucsfhealth.org/conditions/all.html" title="" target="_blank">Conditions &amp; Treatments</a></li>
+<li class="leaf last"><a href="/patient-care" title="">More</a></li>
+</ul></li>
+<li class="expanded"><a href="/research" class="nav-research">Research</a><ul class="menu"><li class="leaf first"><a href="/research/research-excellence" title="">Research Excellence</a></li>
+<li class="leaf"><a href="/research/major-research-initiatives" title="">Major Research Initiatives</a></li>
+<li class="leaf"><a href="/research/clinical-trials-overview" title="">Clinical Trials</a></li>
+<li class="leaf"><a href="/research/vision" title="">Research Partnerships</a></li>
+<li class="leaf last"><a href="/research" title="">More</a></li>
+</ul></li>
+<li class="expanded"><a href="/education" class="nav-education">Education</a><ul class="menu"><li class="leaf first"><a href="http://dentistry.ucsf.edu" title="" target="_blank">School of Dentistry</a></li>
+<li class="leaf"><a href="http://medschool2.ucsf.edu" title="" target="_blank">School of Medicine</a></li>
+<li class="leaf"><a href="http://nurseweb.ucsf.edu" title="" target="_blank">School of Nursing</a></li>
+<li class="leaf"><a href="http://pharmacy.ucsf.edu" title="" target="_blank">School of Pharmacy</a></li>
+<li class="leaf"><a href="http://graduate.ucsf.edu" title="" target="_blank">Graduate Division</a></li>
+<li class="leaf last"><a href="/education" title="">More</a></li>
+</ul></li>
+<li class="expanded last active-trail"><a href="/news" title="" class="nav-news-center">News Center</a><ul class="menu"><li class="leaf first"><a href="/news" title="">Latest News</a></li>
+<li class="leaf"><a href="/news/media-coverage" title="">Media Coverage</a></li>
+<li class="leaf"><a href="/news/news-media-services" title="">For Journalists</a></li>
+<li class="leaf last"><a href="/news/news-media-services/faq-faculty-staff" title="">For Faculty</a></li>
+</ul></li></ul>            </div>
+            <div class="column-right">
+              <div>
+                <ul id="secondary-nav" class="links secondary-links">
+  <li class="leaf first"><a href="http://www.ucsf.edu/support/" title="" target="_blank">Support UCSF</a></li>
+<li class="leaf"><a href="http://insideguide.ucsf.edu" title="" target="_blank">Students</a></li>
+<li class="leaf last"><a href="/faculty-staff" title="">Faculty/Staff</a></li>
+  <li class="text-size">
+    <span>Text Size</span>
+    <a name="link-increase-font-size" id="link-increase-font-size" class="mickey" onclick="return false;">+</a>
+    <a name="link-decrease-font-size" id="link-decrease-font-size" class="mickey" onclick="return false;">&ndash;</a>
+  </li>
+</ul>              </div>
+              <div class="form-holder">
+                <form action="/ucsf/search" method="get" id="form-search">
+                  <div>
+                    <div class="search-box-outer">
+                      <div class="search-input-holder">
+                        <input type="text" name="search" id="search-q" value="Search by keyword or last name" onClick="this.value='';" />
+                      </div>
+                      <a class="mickey" name="form-search-button" id="form-search-button">Go</a>
+                    </div>
+                    <div class="search-type-holder">
+                      <input type="radio" name="search-type" id="search-type-ucsf" checked="checked" />
+                      <label for="search-type-ucsf">UCSF</label>
+                      <input type="radio" name="search-type" id="search-type-people" />
+                      <label for="search-type-people">People</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end div#header -->
+
+    <div id="breadcrumb-follow" class="breadcrumb-follow-short default-area-color">
+      <div class="large-inner">
+        <div class="breadcrumb">
+          <div class="inner">
+            <a href="/">Home</a> &gt; <a href="/news">News Center</a>          </div>
+        </div>
+        <div class="follow">
+  <div class="inner">
+    <div class="item"><span class="follow-text">Follow UCSF on:</span></div>
+    <div class="item"><a id="ck_facebook" class="external stbar stbar-chicklet chicklet" href="http://facebook.com/ucsf"><img src="http://w.sharethis.com/chicklets/facebook.gif" alt="" /></a></div>
+    <div class="item"><a id="ck_twitter" class="external stbar stbar-chicklet chicklet" href="http://twitter.com/ucsf"><img src="http://w.sharethis.com/chicklets/twitter.gif" alt="" /></a></div>
+    <div class="item"><span class="st_sharethis">Share</span></div>
+  </div>
+</div>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">
+if (typeof stLight == 'object') {
+  stLight.options({
+    publisher: 'bdfa2dbe-3ea0-4fe8-a85e-40894f61641b'
+  });
+}
+</script>
+      </div>
+    </div> <!-- end div#breadcrumb-follow -->
+
+    <div id="main">
+      <div class="large-inner two-column">
+        <div class="left-float">
+
+          <div id="content" class="layout-column-left">
+            <div class="left-indent">
+								<h1 property="dc:title" class="title" id="page-title">Sugar Is a Poison, Says UCSF Obesity Expert</h1>														<div id="topshare">
+						<div class="article-share">		
+	<span class="share-label">Share this story:</span>
+		
+	<a rel="nofollow" class="share-button share-facebook" href="http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.ucsf.edu/news%2F2009%2F06%2F8187%2Fobesity-and-metabolic-syndrome-driven-fructose-sugar-diet&t=Sugar+Is+a+Poison+Says+UCSF+Obesity+Expert" target="_blank"></a><a rel="nofollow" class="share-button share-twitter" href="http://www.twitter.com/share?url=www.ucsf.edu/news%2F2009%2F06%2F8187%2Fobesity-and-metabolic-syndrome-driven-fructose-sugar-diet&text=Sugar+Is+a+Poison+Says+UCSF+Obesity+Expert+-+http://www.ucsf.edu/node/8187" target="_blank"></a>	
+	<div class="share-button share-this"><span class="st_sharethis">Share</span></div>
+	<script type="text/javascript">
+		if (typeof stLight == 'object') {
+		  stLight.options({
+			publisher: 'bdfa2dbe-3ea0-4fe8-a85e-40894f61641b'
+		  });
+		}
+	</script>
+	
+	<div class="share-button share-gplus">
+		<div class="g-plusone" data-size="medium" data-annotation="none" data-callback="plusone_vote"></div>
+	</div>
+	
+	<script language="JavaScript">
+		function EmailLink(){
+			var summary = ""
+			$('body.article .node .content > p').each(function () {
+				if ($(this).text() != "") {
+					summary = $(this).text();
+					return false;
+				}
+			});
+			window.location = "mailto:"+"?subject="+ top.document.title + "&body="+ summary +"... "+ window.location;
+		}
+		document.write('<input class="share-button email-button" type="button" value="Send Email" onClick="EmailLink()"></form>')
+	</script>
+	<a href="#" class="share-button print-link" onclick="window.print();return false;">Print</a>
+</div>
+					</div>
+								<div id="node-8187" class="node" about="/news/2009/06/8187/obesity-and-metabolic-syndrome-driven-fructose-sugar-diet">
+
+  <div class="content clear-block">
+    
+
+    <p class="author">By <a href="mailto: jeff.norris@ucsf.edu ">Jeffrey Norris</a> on <span class="date-display-single" datatype="xsd:dateTime" content="2009-06-25T00:00:00-07:00" property="dc:date dc:created">June 25, 2009</span></p>
+  
+  <div class="insert-image insert-right insert-400">
+  <img  class="imagefield imagefield-field_image" width="395" height="194" alt="" src="/sites/default/files/sugar-395_0.jpg?1304459908" />  </div>
+
+<p>The rise of obesity is usually blamed on too much eating and not enough exercising, but Robert Lustig, MD, a UCSF pediatric neuroendocrinologist, asks us to look beyond the obvious.</p>
+<p>Yes, more Americans are overweight today than 30 years ago. Kids are still getting heavier, compared with prior generations of kids. That leads some UCSF researchers to warn that heart disease and other health problems will grow in future decades. </p>
+<p>But behaviors that some might refer to as gluttony and sloth are merely consequences of the true cause of the epidemic, Lustig says. Food was just as abundant before obesity&#8217;s ascendance. The problem is the increase in sugar consumption. Sugar both drives fat storage and makes the brain think it is hungry, setting up a &#8220;vicious cycle,&#8221; according to Lustig.</p>
+<div class="insert-image insert-right insert-100">
+  <img  class="imagefield imagefield-field_image" width="100" height="170" title="Robert Lustig, MD" alt="Robert Lustig, MD" src="/sites/default/files/lustig.jpg?1304459908" />  <p>Robert Lustig, MD</p></div>
+
+<p>More specifically, it is fructose that is harmful, according to Lustig. Fructose is a component of the two most popular sugars. One is table sugar &#151; sucrose. The other is high-fructose corn syrup. High-fructose corn syrup has become ubiquitous in soft drinks and many other processed foods.</p>
+<p>Lustig presented his case against fructose in a recent UCSF Mini Medical School course on diet and nutrition, part of a series sponsored by the Osher Lifelong Learning Institute. Audience members may have been surprised to hear such unequivocally strong statements from a researcher. Lustig framed the obesity epidemic as a societal issue that pits the food-selling agenda of federal agencies and profit-seeking behavior of major corporations against public health needs. </p>
+<p>Lustig quit working in the lab a decade ago. Now he spends more time with pediatric patients. He is on the front lines of the world&#8217;s weight woes, treating kids who already are obese, a condition that sets the stage for health problems that begin long before these children become adults.</p>
+<p>Lustig still conducts clinical research. He evaluates dietary lifestyle, as well as pharmacologic interventions that might hold the pounds at bay. He tracks down associations between diet, lifestyle and health outcomes in an effort to identify biological mechanisms that will explain them.</p>
+<h2>Insulin and Leptin</h2>
+<p>Lustig&#8217;s own groundbreaking studies more than a decade ago stimulated the development of his controversial ideas about metabolism and biological feedback in weight control. One not-yet-popular idea is that, calorie for calorie, sugar causes more insulin resistance in the liver than other edibles. The pancreas then has to release more insulin to satisfy the liver&#8217;s needs. High insulin levels, in turn, interfere with the brain&#8217;s receipt of signals from a hormone called leptin, secreted by fat cells, Lustig believes. </p>
+<p>In the 1990s, Lustig worked with children diagnosed with hypothalamic obesity, a disorder that can occur after brain tumor surgery. The children were making more insulin than was necessary for normal energy storage in fat cells. Lustig thought the kids were not receiving signals from leptin, which helps send a message that the appetite has been sated. </p>
+<p>Lustig concluded that the children&#8217;s brains were fooled into thinking that they were starving. Lustig administered a drug called octreotide, known to block insulin release. Insulin levels fell; the children ate less, lost weight, spontaneously became more active and improved their quality of life.</p>
+<p>Lustig tried the same treatment with obese adults, and found that a subset responded in the same way as the children with hypothalamic obesity.</p>
+<p>Eating stimulates secretion of insulin and leptin. The conventional view holds that insulin, like leptin, feeds back in the brain to limit food intake, Lustig explains. But Lustig does not think that chronically elevated insulin levels feed back negatively to curb eating. Instead, chronically elevated insulin blocks leptin&#8217;s negative feedback signal, Lustig believes. &#8220;Most people think insulin does the same thing as leptin,&#8221; he says. &#8220;I think it does just the opposite.&#8221;</p>
+<p>Lustig believes that fructose generates greater insulin resistance than other foodstuffs, and that fructose calories, therefore, fail to blunt appetite in the same way as other foods.</p>
+<h2>A Calorie Is Not Just a Calorie</h2>
+<p>Lustig also is at odds with mainstream scientific viewpoints when it comes to explaining how fructose is shunted through biochemical pathways and converted into fat and other molecules. </p>
+<p>Unlike conventional calorie counters, Lustig does not believe all food calories have the same impact on fat storage and energy expenditure, regardless of whether they come from fat, protein or carbohydrate. Fructose, a type of carbohydrate, is not metabolized like other foodstuffs, and not even like glucose, the other major carbohydrate, Lustig says.</p>
+<p>In addition, Lustig claims that fructose is just as bad as alcohol in causing fat storage in the liver &#151; and in causing fatty liver disease.</p>
+<p>Lustig advances these controversial ideas primarily by citing already published studies, most of them by other researchers. But he also tries to enlist bench scientists in research collaborations in the hopes that additional studies will prove to others that these ideas are correct.</p>
+<h2>Sugar No Better Than Fat</h2>
+<p>Each sucrose molecule consists of one molecule of fructose joined to one molecule of glucose. In the gut, these two components are quickly split apart. High-fructose corn syrup is a less expensive mixture of glucose and fructose. There is no point in belaboring the difference, Lustig says. &#8220;High-fructose corn syrup and sucrose are exactly the same,&#8221; Lustig says. &#8220;They&#8217;re equally bad. They&#8217;re both poison in high doses.&#8221;</p>
+<p>Over the past century, Americans have increased their fructose consumption from 15 grams per day to 75 grams per day or more, Lustig explains. The trend accelerated beginning about three decades ago, when cheap, easy-to-transport high-fructose corn syrup became widely available.</p>
+<p>Much of processed food labeled &#8220;reduced fat&#8221; instead has sugar added to make it more palatable, Lustig says. But when it comes to harmful health effects, sugar is worse than fat, he claims. Consumption of either results in elevated levels of artery-clogging fats being made by the liver and deposited in the bloodstream. But fructose causes even further damage to the liver and to structural proteins of the body while fomenting excessive caloric consumption, Lustig says.</p>
+<h2>Four Simple Guidelines</h2>
+<p>Lustig prescribes four simple guidelines for parents coping with kids who are too heavy:</p>
+<ul>
+<li>Get rid of every sugared liquid in the house. Kids should drink only water and milk.</li>
+<li>Provide carbohydrates associated with fiber.</li>
+<li>Wait 20 minutes before serving second portions.</li>
+<li>Have kids buy their &#8220;screen time&#8221; minute-for-minute with physical activity.</li>
+</ul>
+<p>Fructose is abundant in fruit. Fruit is fine, Lustig says, but we should think twice before drinking juice or feeding it to our kids. The fiber in whole fruit contributes to a sense of fullness. Lustig says it is rare to see a child eat more than one orange, but it is common for kids to consume much more sugar and calories as orange juice. </p>
+<p>Eating fiber also results in less carbohydrate being absorbed in the gut, Lustig notes. In addition, he says, fiber consumption allows the brain to receive a satiety signal sooner than it would otherwise, so we stop eating sooner.</p>
+<p>Exercise burns only a modest amount of calories, Lustig notes. But it does have other benefits. Exercise improves insulin sensitivity in skeletal muscle, lowering insulin levels in the bloodstream. Exercise reduces stress and, therefore, reduces stress-induced eating, according to Lustig. Lastly, exercise increases metabolic rate. </p>
+<p>The directive to balance active play with computer, video and TV time is the most difficult one to comply with, Lustig says. But failure to limit sugar intake appears to be the most predictive of poor weight control in children, he adds.</p>
+<p>&#8220;You are not what you eat; you are what you do with what you eat,&#8221; Lustig concludes. &#8220;And what you do with fructose is particularly dangerous.&#8221;</p>
+<h2>Related Links:</h2>
+<p><a href="http://www.uctv.tv/series/?seriesnumber=135">UCSF Mini Medical School for the Public</a><br />UCTV</p>
+<p><a href="http://arjournals.annualreviews.org/doi/full/10.1146/annurev.med.59.103106.105628">Childhood Obesity: Adrift in the &#8220;Limbic Triangle&#8221;</a><br />Michelle L. Mietus-Snyder and Robert H. Lustig<br /><cite>Annual Review of Medicine</cite> 59:147-162 (February 2008)</p>
+<p><a href="http://www.nature.com/nrendo/journal/v2/n8/full/ncpendmet0220.html">Childhood Obesity: Behavioral Aberration or Biochemical Drive? Reinterpreting the First Law of Thermodynamics</a><br />Robert H. Lustig<br /><cite>Nature Clinical Practice Endocrinology &amp; Metabolism</cite> 2(8):447-458 (2006)</p>
+<p><a href="http://content.nejm.org/cgi/content/full/357/23/2371">Adolescent Overweight and Future Adult Coronary Heart Disease</a><br />Kirsten Bibbins-Domingo, Pamela Coxson, Mark T. Pletcher, James Lightwood and Lee Goldman<br /><cite>New England Journal of Medicine</cite>, 357(23):2371-2379 (Dec. 6, 2007)</p>
+<p><a href="http://news.ucsf.edu/releases/overweight-adolescents-projected-to-have-more-heart-disease-in-young-adulth">Overweight Adolescents Projected to Have More Heart Disease in Young Adulthood</a><br />UCSF News Release, Dec. 5, 2007</p>
+<p><a href="http://jama.ama-assn.org/cgi/content/full/295/13/1549">Prevalence of Overweight and Obesity in the United States, 1999-2004</a><br />Cynthia L. Ogden, Margaret D. Carroll, Lester R. Curtin, Margaret A. McDowell, Carolyn J. Tabak and Katherine M. Flegal<br /><cite>JAMA</cite>, 295(13):1549-1555 (April 5, 2006)</p>
+
+  </div>
+
+  
+
+</div>
+									<div id="bottomshare">
+						<div class="article-share">		
+	<span class="share-label">Share this story:</span>
+		
+	<a rel="nofollow" class="share-button share-facebook" href="http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.ucsf.edu/news%2F2009%2F06%2F8187%2Fobesity-and-metabolic-syndrome-driven-fructose-sugar-diet&t=Sugar+Is+a+Poison+Says+UCSF+Obesity+Expert" target="_blank"></a><a rel="nofollow" class="share-button share-twitter" href="http://www.twitter.com/share?url=www.ucsf.edu/news%2F2009%2F06%2F8187%2Fobesity-and-metabolic-syndrome-driven-fructose-sugar-diet&text=Sugar+Is+a+Poison+Says+UCSF+Obesity+Expert+-+http://www.ucsf.edu/node/8187" target="_blank"></a>	
+	<div class="share-button share-this"><span class="st_sharethis">Share</span></div>
+	<script type="text/javascript">
+		if (typeof stLight == 'object') {
+		  stLight.options({
+			publisher: 'bdfa2dbe-3ea0-4fe8-a85e-40894f61641b'
+		  });
+		}
+	</script>
+	
+	<div class="share-button share-gplus">
+		<div class="g-plusone" data-size="medium" data-annotation="none" data-callback="plusone_vote"></div>
+	</div>
+	
+	<script language="JavaScript">
+		function EmailLink(){
+			var summary = ""
+			$('body.article .node .content > p').each(function () {
+				if ($(this).text() != "") {
+					summary = $(this).text();
+					return false;
+				}
+			});
+			window.location = "mailto:"+"?subject="+ top.document.title + "&body="+ summary +"... "+ window.location;
+		}
+		document.write('<input class="share-button email-button" type="button" value="Send Email" onClick="EmailLink()"></form>')
+	</script>
+	<a href="#" class="share-button print-link" onclick="window.print();return false;">Print</a>
+</div>
+					</div>
+				            </div>
+          </div> <!-- end div#content -->
+
+          <div id="sidebar-right" class="column sidebar layout-column-right">
+              <div id="block-views-most_read_news-block_1" class="block block-views">
+  <h3 class="arrow-heading">Most-Read News</h3>
+
+  <div class="content">
+    <div class="view view-most-read-news view-id-most_read_news view-display-id-block_1 view-dom-id-1">
+  
+  
+  
+      <div class="view-content">
+          <div class="news-item news-item-0 first odd">
+      <a href="/news/2012/03/11715/medical-students-mark-match-day-ucsf"><p>Medical Students Mark Match Day at UCSF</p></a><img  class="imagefield imagefield-field_most_read_news_image" width="98" height="114" alt="" src="/sites/default/files/most-read-image/match-day-most-read-03292012.jpg?1333041165" />    </div>
+      <div class="news-item news-item-1 even">
+      <a href="/news/2012/03/11794/new-layer-genetic-information-discovered"><p>New Layer of Genetic Information Discovered</p></a><img  class="imagefield imagefield-field_most_read_news_image" width="98" height="114" alt="" src="/sites/default/files/most-read-image/rib-most-read-03292012.jpg?1333041325" />    </div>
+      <div class="news-item news-item-2 odd">
+      <a href="/news/2012/03/11714/japan-earthquake-and-tsunami-one-year-later-lingering-impacts-and-lessons"><p>Japan Earthquake and Tsunami One Year Later</p></a><img  class="imagefield imagefield-field_most_read_news_image" width="98" height="114" alt="" src="/sites/default/files/most-read-image/japan-most-read-032962012.jpg?1333041716" />    </div>
+      <div class="news-item news-item-3 last even">
+      <a href="/news/2012/03/11662/deprived-sex-jilted-flies-drink-more-alcohol"><p>Deprived of Sex, Jilted Flies Drink More Alcohol</p></a><img  class="imagefield imagefield-field_most_read_news_image" width="98" height="114" alt="" src="/sites/default/files/most-read-image/fly-most-read-03152012.jpg?1331921541" />    </div>
+      </div>
+  
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</div>
+  <div id="block-views-news_teasers-block_3" class="block block-views">
+
+  <div class="content">
+    <div class="view view-news-teasers view-id-news_teasers view-display-id-block_3 view-dom-id-2">
+  
+  
+  
+      <div class="view-content">
+        <h3 class="arrow-heading">
+    <a href="/news">Related News</a>  </h3>
+  <ul class="orange-bullets">
+    <li class="first">
+      <h4 class="headline" property="dc:title"><a href="/news/2012/04/11821/american-history-alive-and-well-ucsf">American History Alive and Well at UCSF</a></h4>
+<span class="date-display-single" datatype="xsd:dateTime" content="2012-04-05T00:00:00-07:00" property="dc:date dc:created">April 5, 2012</span>    </li>
+      <li>
+      <h4 class="headline" property="dc:title"><a href="/news/2012/04/11824/ucsf-police-report-armed-robbery-laurel-heights">UCSF Police Report Armed Robbery at Laurel Heights</a></h4>
+<span class="date-display-single" datatype="xsd:dateTime" content="2012-04-05T00:00:00-07:00" property="dc:date dc:created">April 5, 2012</span>    </li>
+      <li>
+      <h4 class="headline" property="dc:title"><a href="/news/2012/04/11817/health-policy-experts-address-californias-independent-medical-review-program">Health Policy Experts to Address California's Independent Medical Review Program</a></h4>
+<span class="date-display-single" datatype="xsd:dateTime" content="2012-04-04T00:00:00-07:00" property="dc:date dc:created">April 4, 2012</span>    </li>
+      <li>
+      <h4 class="headline" property="dc:title"><a href="/news/2012/04/11812/four-successful-innovators-earn-ucsfs-highest-honor">Four Successful Innovators Earn UCSF’s Highest Honor</a></h4>
+<span class="date-display-single" datatype="xsd:dateTime" content="2012-04-03T00:00:00-07:00" property="dc:date dc:created">April 3, 2012</span>    </li>
+      <li>
+      <h4 class="headline" property="dc:title"><a href="/news/2012/04/11810/gladstone-scientists-find-increased-apoe-protein-levels-may-promote-alzheimers">Gladstone Scientists Find Increased ApoE Protein Levels May Promote Alzheimer’s Disease</a></h4>
+<span class="date-display-single" datatype="xsd:dateTime" content="2012-04-03T00:00:00-07:00" property="dc:date dc:created">April 3, 2012</span>    </li>
+      <li class="last">
+      <h4 class="headline" property="dc:title"><a href="/news/2012/04/11816/ucsf-posts-final-three-year-plan-tactics">UCSF Posts Final Three-Year Plan with Tactics</a></h4>
+<span class="date-display-single" datatype="xsd:dateTime" content="2012-04-03T00:00:00-07:00" property="dc:date dc:created">April 3, 2012</span>    </li>
+    </ul>
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <div class="rssteasers rsslink"><a href="/news/rss-news-feeds" class="rss">Subscribe</a></div>    </div>
+  
+  
+  
+</div>   </div>
+</div>
+  <div id="block-views-givebox-block_1" class="block block-views">
+
+  <div class="content">
+    <h3 class="arrow-heading"><a href="https://makeagift.ucsf.edu" target="_blank">Give to UCSF</a></h3>
+<p>
+Be a part of the next generation of care and discovery. With your support, UCSF can change the health of the world.
+</p>
+<p><a href="https://makeagift.ucsf.edu" class="make-a-gift" target="_blank">Make a Gift</a></p>
+  </div>
+</div>
+          </div> <!-- end div#sidebar-right -->
+          
+          <div id="content-bottom" class="layout-row-bottom">
+          	  <div id="block-views-explore_ucsf_news-block_1" class="block block-views">
+  <h2>Explore UCSF News</h2>
+
+  <div class="content">
+    <div class="view view-explore-ucsf-news view-id-explore_ucsf_news view-display-id-block_1 view-dom-id-4">
+  
+  
+  
+      <div class="view-content">
+          <div class="news-item news-item-0 first odd">
+      <span class="explore-topic">RESEARCH
+</span><a href="/news/2012/03/11793/meditation-improves-emotional-behaviors-teachers-study-finds"><h4 class="explore-title">Meditation Improves Emotional Behaviors in Teachers, Study Finds
+</h4></a><img  class="imagefield imagefield-field_explore_image" width="210" height="124" alt="" src="/sites/default/files/explore-image/classroom-explore-04032012.jpg?1333486402" /><p class="explore-summary"></p>    </div>
+      <div class="news-item news-item-1 even">
+      <span class="explore-topic">EDUCATION
+</span><a href="/news/2012/03/11721/family-medicine-residency-anniversary-addresses-changing-climate-health-care"><h4 class="explore-title">Family Medicine Residency Anniversary Addresses Changing Climate of Health Care
+</h4></a><p class="explore-summary">If the U.S Supreme Court allows for the ongoing expansion and adoption of national health care reform, it will mean a greater role for family medicine practitioners as the previously uninsured seek primary care physicians to gain access to the health care system.
+</p>    </div>
+      <div class="news-item news-item-2 odd">
+      <span class="explore-topic">PATIENT CARE
+</span><a href="/news/2012/03/11701/ucsf-medical-center-volunteer-marks-47-years-service-patients"><h4 class="explore-title">UCSF Medical Center Volunteer Marks 47 Years of Service to Patients
+</h4></a><img  class="imagefield imagefield-field_explore_image" width="210" height="124" alt="" src="/sites/default/files/explore-image/kahn-explore-04032012.jpg?1333487294" /><p class="explore-summary"></p>    </div>
+      <div class="news-item news-item-3 last even">
+      <span class="explore-topic">HONORS AND AWARDS
+</span><a href="/news/2012/03/11626/chancellor-present-2012-award-advancement-women-three"><h4 class="explore-title">Chancellor Presents 2012 Award for Advancement of Women to Three
+</h4></a><p class="explore-summary">UCSF Chancellor Susan Desmond-Hellmann awarded three members of the campus community for their efforts to advance women at UCSF and beyond at ceremony on March 28.
+</p>    </div>
+      </div>
+  
+  
+  
+  
+  
+  
+  
+</div>   </div>
+</div>
+          </div>
+
+        </div> 
+      </div> 
+    </div> <!-- end div#main -->
+    
+
+    <div id="footer">
+      <!-- begin #footer.large-inner -->
+      <div class="large-inner">
+        <!-- begin #footer.large-inner.column-left -->
+        <div class="column-left">
+          <a href="/">Home</a>        </div>
+        <!-- end #footer.large-inner.column-left -->
+        <!-- begin #footer.large-inner.column-right -->
+        <div class="column-right">
+          <p class="links">
+            <a href="/">Home</a> |
+            <a href="/sitemap">Site Map</a> |
+            <a href="/contact-us">Contact Us</a> |
+            <a href="http://oaais.ucsf.edu/OAAIS/790-DSY.html">Accessibility</a> |
+            <a href="/terms-of-use">Terms of Use</a> |
+            <a href="/azlist">A-Z Website List</a>          </p>
+          <p><a href="/feedback" class="feedback">Feedback</a></p>
+          <p>The University of California, San Francisco, CA 94143, 415-476-9000<br />
+            &copy; 2012 The Regents of the University of California. All rights reserved.</p>
+        </div>
+      </div>
+    </div> <!-- end #footer -->
+
+        	<script type="text/javascript" src="/sites/all/themes/ucsf_public/js/ucsf-tracking.js?v=1"></script>
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+  </body>
+</html>

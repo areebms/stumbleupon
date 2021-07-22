@@ -1,0 +1,1040 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:bold' rel='stylesheet' type='text/css'>
+<title>Augmented Grocery Shopping: How a Korean grocer moved virtual shopping to the subway | Techi.com</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://cdn.techi.com/favicon.ico" type="image/x-icon" />
+<link rel="icon" type="image/png" href="http://www.techi.com/favicon.png" />
+<link rel="apple-touch-icon" href="http://www.techi.com/apple-touch-icon.png" />
+
+<link rel="stylesheet" href="http://cdn.techi.com/wp-content/themes/techi/style.css?v=504" type="text/css" media="screen" />
+<link rel="pingback" href="http://www.techi.com/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="Techi - Fresh Daily Technology News Feed" href="http://feeds.feedburner.com/techirss" />
+
+
+<script type="text/javascript" src="http://m.techi.com/mobify/redirect.js"></script>
+<script type="text/javascript">try{_mobify("http://m.techi.com/");} catch(err) {};</script>
+
+
+
+
+<link rel='stylesheet' id='contact-form-7-css'  href='http://www.techi.com/wp-content/plugins/contact-form-7/styles.css?ver=2.4.3' type='text/css' media='all' />
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js'></script>
+<script type='text/javascript' src='http://cdn.techi.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+<script type='text/javascript'>try{jQuery.noConflict();}catch(e){};</script>
+<script type='text/javascript' src='http://www.techi.com/wp-content/plugins/wp-google-buzz/wp-google-buzz.js?ver=3.3.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.techi.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.techi.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Twitter buys social analytics company BackType' href='http://www.techi.com/2011/07/twitter-buys-social-analytics-company-backtype/' />
+<link rel='next' title='Online shopping is soaring (as if you didn&#8217;t know)' href='http://www.techi.com/2011/07/online-shopping-is-soaring-as-if-you-didnt-know/' />
+<meta name="generator" content="WordPress 3.3.1" />
+
+<!-- All in One SEO Pack 1.6.10.2 by Michael Torbert of Semper Fi Web Design[332,442] -->
+<meta name="description" content="It's the kind of experiment that seems like it was hatched for a satirical spoof video, but the results were anything but funny. Home Plus, the 2nd largest" />
+<meta name="keywords" content="grocer,korea,shopping,subway,tesco,lifestyle,mobile,offbeat,technology" />
+<link rel="canonical" href="http://www.techi.com/2011/07/augmented-grocery-shopping/" />
+<!-- /all in one seo pack -->
+<meta name="framework" content="Alkivia Framework 0.8" />
+<script type="text/javascript">
+//<![CDATA[
+var _wpcf7 = { cached: 1 };
+//]]>
+</script>
+<meta property='og:title' content='Augmented Grocery Shopping: How a Korean grocer moved virtual shopping to the subway'/><meta property='og:url' content='http://www.techi.com/2011/07/augmented-grocery-shopping/'/><meta property='og:image' content='http://cdn.techi.com/wp-content/uploads/2011/07/Tesco-Subway-Grocery-Store.jpg'/><meta property='og:site_name' content='Techi.com'/><meta property='og:description' content='
+
+It's the kind of experiment that seems like it was hatched for a satirical spoof video, but the results were anything but funny. Home Plus, the 2nd largest grocery chain in South Korea formerly known as Tesco, needed to increase their market shar ...'/>	<script type="text/javascript"><!-- // -->
+	var popupTimer = null;
+	var rowPopupContents = new Object();
+	var xmlHttp = null;
+	var apiKey = '0ace5205d07e2023750491d50014495b';
+	var ws = 'xpzctff';
+	
+	function findPos(obj) {
+		var curleft = curtop = 0;
+		if (obj.offsetParent) {
+			curleft = obj.offsetLeft
+			curtop = obj.offsetTop
+			while (obj = obj.offsetParent) {
+				curleft += obj.offsetLeft
+				curtop += obj.offsetTop
+			}
+		}
+		return [curleft,curtop];
+	}
+
+	// Get a XMLHttpObject for different browsers
+	function GetXmlHttpObject(){
+		try{
+			// Firefox, Opera 8.0+, Safari
+			xmlHttp = new XMLHttpRequest();
+		}catch (e){
+			// Internet Explorer
+			try{
+				xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+			}catch (e){
+				xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+		}
+		return xmlHttp;
+	}
+
+	function showHint(apiKey, ws){
+		xmlHttp = GetXmlHttpObject();
+
+		if (xmlHttp == null){
+			return;
+		}
+		
+		var url = "http://www.techi.com/wp-content/plugins/goingup-web-analytics/Take.php";
+		url = url+"?apiKey="+apiKey+"&ws="+ws;
+
+		xmlHttp.onreadystatechange = stateChanged;
+		xmlHttp.open("GET",url,true);
+		xmlHttp.send(null);
+	}
+	// take state
+	function stateChanged(){ 
+		if (xmlHttp.readyState == 4){
+			var popup_content = document.getElementById('row_popup_content');
+			popup_content.innerHTML = xmlHttp.responseText;
+		}
+	}
+
+	function showPopupTimer(){
+		clearTimeout(popupTimer);
+		popupTimer = setTimeout('showRowPopup()',300);
+	}
+
+	function showRowPopup(){
+		var popupob = document.getElementById('row_popup');
+		var gupob = document.getElementById('row_gu');
+		var popup_content = document.getElementById('row_popup_content');
+		var gu_pos = findPos(gupob);
+
+		var loading_content = '<div stlye="width:100%; height:100%; margin:30px; vertical-align:middle; text-align:center"><br><span style="color:#111111; font-size:10px">Retrieving Data. Please Wait.</span></div>';
+		popupob.style.left = gu_pos[0] + 250 + "px";
+		popupob.style.top = gu_pos[1] - 250 + "px";
+		
+		if (popupob.style.display!='block'){
+			popupob.style.visibility = 'visible';
+			popupob.style.display = 'block';
+			popup_content.innerHTML = loading_content;
+		}
+		fillRowPopup();
+	}
+
+	function fillRowPopup(){
+		showHint(apiKey,ws);
+	}
+	
+	function hideRowPopup(){
+		clearTimeout(popupTimer);
+		var popupob = document.getElementById('row_popup');
+		popupob.style.visibility = 'hidden';
+		popupob.style.display = 'none';
+	}
+
+	</script>
+<!-- Shorturl added by shorten2ping -->
+<link rel="shortlink" href="http://bit.ly/qyFICy" />
+<!-- Img for Facebook thumbnail added by Shorten2Ping -->
+<link rel="image_src" href="http://cdn.techi.com/wp-content/uploads/2011/07/Tesco-Subway-Grocery-Store.jpg" />
+<!-- Vipers Video Quicktags v6.2.14 | http://www.viper007bond.com/wordpress-plugins/vipers-video-quicktags/ -->
+<style type="text/css">
+.vvqbox { display: block; max-width: 100%; visibility: visible !important; margin: 10px auto; } .vvqbox img { max-width: 100%; height: 100%; } .vvqbox object { max-width: 100%; } 
+</style>
+<script type="text/javascript">
+// <![CDATA[
+	var vvqflashvars = {};
+	var vvqparams = { wmode: "opaque", allowfullscreen: "true", allowscriptacess: "always" };
+	var vvqattributes = {};
+	var vvqexpressinstall = "http://www.techi.com/wp-content/plugins/vipers-video-quicktags/resources/expressinstall.swf";
+// ]]>
+</script>
+<!--<script src="http://cdn.techi.com/wp-content/themes/techi/js/jquery-1.4.2.min.js" type="text/javascript" ></script>-->
+<!--[if IE]>
+<script type="text/javascript" src="http://cdn.techi.com/wp-content/themes/techi/js/excanvas.compiled.js"></script>
+<![endif]-->
+
+<!--[if IE]>
+<link rel="stylesheet" href="http://cdn.techi.com/wp-content/themes/techi/css/ie.css" type="text/css" media="screen" />
+<![endif]-->
+
+<script type="text/javascript" src="http://use.typekit.com/qlf0hhu.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</head>
+<body class="single single-post postid-23950 single-format-standard">
+<!-- BuySellAds.com Ad Code -->
+<script type="text/javascript">
+(function(){
+  var bsa = document.createElement('script');
+     bsa.type = 'text/javascript';
+     bsa.async = true;
+     bsa.src = '//s3.buysellads.com/ac/bsa.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<!-- End BuySellAds.com Ad Code -->
+<div id="header">
+  <!--<div id="header-underline"></div>-->
+	
+  <div id="header-content">
+  
+  <div id="header-top">
+        <div id="search-block">
+		     <form action="/" id="searchform" method="get" >
+	<div id="search-box">
+	<input type="text" id="s" name="s" value="SEARCH ME" onclick="if(this.value == 'SEARCH ME')this.value = ''; " />
+	<input type="submit" value="" id="searchsubmit" />
+	</div>
+	</form>	      </div>
+        
+       <div id="header-socials">
+         <span class="header-social">
+            <g:plusone size="medium" href="http://www.techi.com/"></g:plusone>
+         </span>
+         
+         <span class="header-social mini-tw-like">
+            <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.techi.com/" data-count="horizontal">Tweet</a>
+         </span>
+         
+         <span class="header-social mini-fb-like">
+            <fb:like href="http://www.techi.com/" layout="button_count" show_faces="false" ></fb:like>
+          </span>
+          
+        <a href="/rssfeeds/" id="rss-link"></a>
+        
+      </div>
+      
+      
+      <div class="clr"></div>
+  </div>
+
+	
+	<div id="head-bottom">
+	  <a id="logo" href="http://www.techi.com/">
+	     <img src="http://cdn.techi.com/wp-content/themes/techi/images/techi_logo.gif" alt="" />
+		   <!--<span></span>-->
+	  </a>    
+	  
+	  
+	  
+	  
+	  <div id="top-banner">		
+		<!-- FM Leaderboard 1 Zone -->
+		<script type='text/javascript' src='http://static.fmpub.net/zone/4804'></script>
+		<!-- FM Leaderboard 1 Zone -->   		
+	  </div>
+	  
+	   
+	  <div class="clr"></div>
+	</div> <!-- #head-bottom -->
+	
+  <div id="categories-top">
+    <div id="categories-top-wrap">
+  <a href="http://www.techi.com/category/apple/">APPLE</a><a href="http://www.techi.com/category/design/">DESIGN</a><a href="http://www.techi.com/category/facebook/">FACEBOOK</a><a href="http://www.techi.com/category/gadgets/">GADGETS</a><a href="http://www.techi.com/category/gaming/">GAMING</a><a href="http://www.techi.com/category/google/">GOOGLE</a><a href="http://www.techi.com/category/hardware/">HARDWARE</a><a href="http://www.techi.com/category/lifestyle/">LIFESTYLE</a><a href="http://www.techi.com/category/microsoft/">MICROSOFT</a><a href="http://www.techi.com/category/mobile/">MOBILE</a><a href="http://www.techi.com/category/offbeat/">OFFBEAT</a><a href="http://www.techi.com/category/robotics/">ROBOTICS</a><a href="http://www.techi.com/category/software/">SOFTWARE</a><a href="http://www.techi.com/category/technology/">TECHNOLOGY</a><a href="http://www.techi.com/category/twitter/">TWITTER</a>    </div>
+  </div>
+	
+	
+	
+	 	
+		
+	
+	
+			
+  </div> <!-- end header-content -->
+  <div class="clr"></div>
+</div> <!-- end header -->
+<div class="clr"></div>
+<div id="page">
+
+
+
+	<div id="content" >
+
+		<div class='single-content-wrap'>
+							<div class="post-23950 post type-post status-publish format-standard hentry category-lifestyle category-mobile category-offbeat category-technology tag-grocer tag-korea tag-shopping tag-subway tag-tesco news" id="post-23950">
+			<h1>Augmented Grocery Shopping: How a Korean grocer moved virtual shopping to the subway</h1>
+			<small>
+			<a href="/news"><span class="news-icon"></span></a><span class="post-info">
+			Jul 5 by <a class="author-link" href="/author/jd-rucker">JD Rucker</a> <span class="title-comments-info">|
+			<a href="#comments"><span class="dsq-postid" rel="23950 http://www.techi.com/?p=23950">9 comments</span></a></span>
+			</span></small><br />
+						<div class="clr"></div>
+			
+							<!--<div style="margin-left:150px;">
+				<script type='text/javascript'>				
+    				OA_show('Content Ad');				
+				</script>
+				</div> -->
+			
+			<div class="entry" id="content_single">
+			    			    				<p><a href="http://cdn.techi.com/wp-content/uploads/2011/07/Tesco-Subway-Grocery-Store.jpg"><img class="alignnone size-full wp-image-23955" src="http://cdn.techi.com/wp-content/uploads/2011/07/Tesco-Subway-Grocery-Store.jpg" alt="Tesco Subway Grocery Store" width="600" /></a></p>
+<p>It&#8217;s the kind of experiment that seems like it was hatched for a satirical spoof video, but the results were anything but funny. Home Plus, the 2nd largest grocery chain in South Korea formerly known as Tesco, needed to increase their market share without building more stores. The idea they had was simple and elegant, albeit completely offbeat and somewhat insane.</p>
+<p>&#8220;Let the store come to the people.&#8221;</p>
+<p>They created virtual stores to make grocery shopping something that could be done without while performing other duties such as waiting in the subway. With lighted billboard visualizations of the actual shopping experience, someone waiting for a subway who was armed with a smartphone with a QR Code reading app installed could order the groceries they needed without physically going to the store itself. They find the items they need, buy them through the app, and the groceries are delivered to their home.</p>
+<p>As you can see by the video, the results have been extraordinary with over 10,000 people visiting the online Home Plus mall using smartphones. New registered members rose 76% and online sales grew 130%.</p>
+<span class="vvqbox vvqyoutube" style="width:600px;height:486px;"><span id="vvq-23950-youtube-1"><a href="http://www.youtube.com/watch?v=nJVoYsBym88"><img src="http://img.youtube.com/vi/nJVoYsBym88/0.jpg" alt="YouTube Preview Image" /></a></span></span>
+<!-- SimpleReach Slide Plugin Version: 0.6.0 -->
+<script type='text/javascript' id='simplereach-slide-tag'>
+    __spr_config = {
+      pid: '4f0ef9cd396cef08570001ab',
+      title: 'Augmented Grocery Shopping: How a Korean grocer moved virtual shopping to the subway',
+      ckw: 'grocer,korea,shopping,subway,tesco',
+      chan: '',
+      no_slide: '',
+      slide_logo: false,
+      pub: '2011-07-05 22:43:47',
+      url: 'http%3A%2F%2Fwww.techi.com%2F2011%2F07%2Faugmented-grocery-shopping%2F',
+      header: 'RECOMMENDED FOR YOU'
+    };
+    var content = document.getElementById('simplereach-slide-tag').parentNode, loc;
+    if (content.className){ loc = '.' + content.className; }
+    if (content.id){ loc = '#' + content.id; }
+    __spr_config.loc = loc || content;
+    (function(){
+    var s = document.createElement('script');
+      s.async = true;
+      s.type = 'text/javascript';
+      s.src = document.location.protocol + '//d8rk54i4mohrb.cloudfront.net/js/slide.js';
+      __spr_config.css = 'http://techi.com/css/sr.css';
+      var tg = document.getElementsByTagName('head')[0];
+      if (!tg) {tg = document.getElementsByTagName('body')[0];}
+      if (tg) {tg.appendChild(s);}
+    })();
+</script>
+
+<script type="text/javascript">
+	swfobject.embedSWF("http://www.youtube.com/v/nJVoYsBym88&amp;rel=0&amp;fs=1&amp;showsearch=0&amp;showinfo=0", "vvq-23950-youtube-1", "600", "486", "9", vvqexpressinstall, vvqflashvars, vvqparams, vvqattributes);
+</script>
+								<div class="clr"></div>
+        <div style="text-align:center;">
+        <!-- FM Medium Rectangle 3 Zone -->
+<script type='text/javascript' src='http://static.fmpub.net/zone/6562'></script>
+<!-- FM Medium Rectangle 3 Zone -->
+        </div>
+      <div class="clr"></div>
+
+				<div id="social-side">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.techi.com/2011/07/augmented-grocery-shopping/" data-count="vertical">Tweet</a>
+  
+  
+  <div class="fb-like" data-href="http://www.techi.com/2011/07/augmented-grocery-shopping/" data-send="false" data-layout="box_count" data-width="44" data-show-faces="false"></div>
+  
+  
+  <g:plusone size="tall" href="http://www.techi.com/2011/07/augmented-grocery-shopping/"></g:plusone>
+  
+  <div class="stubmle-widget">
+    <su:badge layout="5" location="http://www.techi.com/2011/07/augmented-grocery-shopping/"></su:badge>
+  </div>
+  
+  <div>
+  	   <a href="http://pinterest.com/pin/create/button/?url=http://www.techi.com/2011/07/augmented-grocery-shopping/" class="pin-it-button" count-layout="vertical">Pin It</a>
+       <script type="text/javascript" src="http://assets.pinterest.com/js/pinit.js"></script>
+  </div>
+  
+  <div>
+    <a class="DiggThisButton DiggMedium"></a>
+    <script type="text/javascript">
+(function() {
+var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
+s.type = 'text/javascript';
+s.async = true;
+s.src = 'http://widgets.digg.com/buttons.js';
+s1.parentNode.insertBefore(s, s1);
+})();
+</script>
+  </div>
+  
+  <div>
+  <script type="text/javascript" src="http://www.reddit.com/static/button/button2.js"></script>
+  </div>
+  
+</div>			</div>
+			
+		</div>
+		
+    </div> <!-- single-content-wrap -->
+	
+	
+	
+<div id="author-block">
+  <div class="inner-strip">WRITTEN BY JD RUCKER </div>
+
+  <div id="author-info" >
+  
+    <span class="author-avatar"><a href="/author/jd-rucker"><img alt='' src='http://0.gravatar.com/avatar/4ce3ad4912d9733a20f898b713b8b4d5?s=54&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D54&amp;r=G' class='avatar avatar-54 photo' height='54' width='54' /></a></span>
+	<div class="author-description">
+	  <!--<div class="author-title">Written by&nbsp;<strong>JD Rucker</strong></div>-->
+	  	  <p ><a href="https://plus.google.com/113848692389397535084/posts?rel=author">+JD Rucker</a> is Editor at Soshable, a <a href="http://soshable.com">Social Media Marketing Blog</a>. Find him on <a href="http://twitter.com/0boy">Twitter</a>, <a href="http://www.facebook.com/jd.rucker.profile">Facebook</a>, and <a href="http://pinterest.com/socialnews">Pinterest</a>.</p>
+	  </div>
+    <div class="clr"></div>
+  </div>
+</div>
+	
+	  
+			
+	
+	<div id='related-stories'>
+<div class="inner-strip">RELATED STORIES</div>
+  <div class="related-meta-info">
+			   <strong>Categories:</strong>
+			  <a href="/?cat=202">Lifestyle</a> <a href="/?cat=13">Mobile</a> <a href="/?cat=1477">Offbeat</a> <a href="/?cat=10">Technology</a> 			   <br/><strong>Tags:</strong>
+			   <a href="/?tag=grocer">#grocer</a> <a href="/?tag=korea">#korea</a> <a href="/?tag=shopping">#shopping</a> <a href="/?tag=subway">#subway</a> <a href="/?tag=tesco">#tesco</a> 				 
+</div>
+<div class="related-stories-wrap">			   
+       <a href='http://www.techi.com/2012/05/remote-tablets-revolutionizing-your-world/' class="home-mini-post ">
+      
+	  <span  class="img-wrap"><img src='http://cdn.techi.com/wp-content/uploads/2012/05/Remote-Tablet_techi_thumbnail.jpg' alt='' />
+	  	  </span>
+      <span class="home-mini-title">Remote tablets: Revolutionizing your world</span>
+	  
+   </a>
+          <a href='http://www.techi.com/2010/11/has-google-already-purchased-groupon/' class="home-mini-post ">
+      
+	  <span  class="img-wrap"><img src='http://cdn.techi.com/wp-content/uploads/2010/11/groupon-sale_techi_thumbnail.jpg' alt='' />
+	  	  </span>
+      <span class="home-mini-title">Has Google Already Purchased Groupon?</span>
+	  
+   </a>
+          <a href='http://www.techi.com/2010/05/smartswipe-card-reader-keeps-you-safe-shopping-online/' class="home-mini-post ">
+      
+	  <span  class="img-wrap"><img src='http://cdn.techi.com/wp-content/uploads/2010/05/smartswipe_techi_thumbnail.jpg' alt='' />
+	  	  </span>
+      <span class="home-mini-title">SmartSwipe Card Reader Keeps You Safe Shopping Online</span>
+	  
+   </a>
+          <a href='http://www.techi.com/2012/07/chewie-and-han-30-years-later/' class="home-mini-post home-mini-most-right">
+      
+	  <span  class="img-wrap"><img src='http://cdn.techi.com/wp-content/uploads/2012/07/Han-and-Chewie_techi_thumbnail.jpg' alt='' />
+	  	  </span>
+      <span class="home-mini-title">Chewie and Han, 30 years later</span>
+	  
+   </a>
+   <div class="clr"></div>   			 
+	<div class="clr"></div>
+ </div><!-- related storis wrap -->
+ 
+</div>  
+  	
+  <div id="comments-inner-block">
+	  <div class="inner-strip comm-num-title">COMMENTS</div>
+	  <div class="disq-comments">
+	 
+	   
+<div id="disqus_thread">
+                    <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-7154">
+        <div id="dsq-comment-header-7154" class="dsq-comment-header">
+            <cite id="dsq-cite-7154">
+http://www.facebook.com/jonspooner                <span id="dsq-author-user-7154">Jonathan Spooner</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7154" class="dsq-comment-body">
+            <div id="dsq-comment-message-7154" class="dsq-comment-message"><p>brilliant!</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-7155">
+        <div id="dsq-comment-header-7155" class="dsq-comment-header">
+            <cite id="dsq-cite-7155">
+http://debtpay1.com                <span id="dsq-author-user-7155">Iris</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7155" class="dsq-comment-body">
+            <div id="dsq-comment-message-7155" class="dsq-comment-message"><p>That is a great business strategy for Home Plus.  That&#8217;s a perfect example for thinking outside the box!!  It&#8217;s so convenient and just plain smart.  I wonder if this concept will ever make it in the U.S.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-7189">
+        <div id="dsq-comment-header-7189" class="dsq-comment-header">
+            <cite id="dsq-cite-7189">
+                <span id="dsq-author-user-7189">Anwarbd72</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7189" class="dsq-comment-body">
+            <div id="dsq-comment-message-7189" class="dsq-comment-message"><p>this is very good shop</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-7481">
+        <div id="dsq-comment-header-7481" class="dsq-comment-header">
+            <cite id="dsq-cite-7481">
+http://www.midlandpropertylawyers.co.uk                <span id="dsq-author-user-7481">conveyancing west</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7481" class="dsq-comment-body">
+            <div id="dsq-comment-message-7481" class="dsq-comment-message"><p> It&#8217;s so convenient and just plain smart.This is great post.I appreciate to this content.This ia a good written.Thanks to share this blog.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-7482">
+        <div id="dsq-comment-header-7482" class="dsq-comment-header">
+            <cite id="dsq-cite-7482">
+http://www.promocodes.co.uk/Pontins-promo-codes/                <span id="dsq-author-user-7482">Pontins promo code</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7482" class="dsq-comment-body">
+            <div id="dsq-comment-message-7482" class="dsq-comment-message"><p>Hey,nice post.Well written article.I appreciate your writing skin its great.Its really a great business  strategy for Home Plus.Home Plus, the 2nd largest grocery chain in South Korea formerly known<br />
+as Tesco, needed to increase their market share without building more<br />
+stores</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-7483">
+        <div id="dsq-comment-header-7483" class="dsq-comment-header">
+            <cite id="dsq-cite-7483">
+http://www.luggagetravelbags.co.uk                <span id="dsq-author-user-7483">Lightweight luggage</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7483" class="dsq-comment-body">
+            <div id="dsq-comment-message-7483" class="dsq-comment-message"><p>It’s really good news that home plus is going to increase<br />
+their market share. It’s really a simple and elegant idea. You have done a<br />
+great job by sharing this post with us. I like this post .Keep sharing with us.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-7488">
+        <div id="dsq-comment-header-7488" class="dsq-comment-header">
+            <cite id="dsq-cite-7488">
+http://www.allaspectsuk.co.uk/location/west-midlands/solihull/central-heating.asp                <span id="dsq-author-user-7488">Central Heating in Solihull</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7488" class="dsq-comment-body">
+            <div id="dsq-comment-message-7488" class="dsq-comment-message"><p>Home Plus is great place o for shopping.Its really a great news that they are going to expand their market.Its really its really so convenient.You have done a great job by sharing this post with us.I like this post.Keep sharing with us.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-7548">
+        <div id="dsq-comment-header-7548" class="dsq-comment-header">
+            <cite id="dsq-cite-7548">
+http://www.simplyearplugs.co.uk                <span id="dsq-author-user-7548">custom earplugs</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7548" class="dsq-comment-body">
+            <div id="dsq-comment-message-7548" class="dsq-comment-message"><p>Its a very smart shared post regarding virtual shopping.I really admire it a lot.Thank a lot for sharing.Keep sharing always.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-8021">
+        <div id="dsq-comment-header-8021" class="dsq-comment-header">
+            <cite id="dsq-cite-8021">
+http://www.allaspectsuk.co.uk/location/west-midlands/solihull/electrician.asp                <span id="dsq-author-user-8021">Johny</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8021" class="dsq-comment-body">
+            <div id="dsq-comment-message-8021" class="dsq-comment-message"><p>This is a great article.They created virtual stores to make grocery shopping something that could be done without while performing.I like this one.This is an amazing.I appreciate to this content.Thanks to share this blog.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://www.techi.com/2011/07/augmented-grocery-shopping/';
+    var disqus_identifier = '23950 http://www.techi.com/?p=23950';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'techi-comments';
+    var disqus_title = "Augmented Grocery Shopping: How a Korean grocer moved virtual shopping to the subway";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            DISQUS.request.get('?cf_action=sync_comments&post_id=23950');
+        });
+                    };
+    var facebookXdReceiverPath = 'http://www.techi.com/wp-content/plugins/disqus-comment-system/xd_receiver.htm';
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/www.techi.com\/2011\/07\/augmented-grocery-shopping\/trackback\/"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = 'http://' + disqus_shortname + '.' + disqus_domain + '/embed.js?pname=wordpress&pver=2.70';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+	  </div>
+  </div>
+
+	
+	</div>
+	<div id="sidebar">
+		
+	<div class="sidebar-square-banner" style="margin-top:0;">
+		<!-- FM Medium Rectangle 1 Zone -->
+		<script type='text/javascript' src='http://static.fmpub.net/zone/4803'></script>
+		<!-- FM Medium Rectangle 1 Zone -->
+	</div>
+	
+	<div class="sidebar-square-banner" style="margin-top:20px;padding:0 10px;">
+	<!-- BuySellAds.com Zone Code -->
+	<div id="bsap_1266452" class="bsarocks bsap_8774f671d24db03b01e43da8709d6675"></div>
+	<!-- End BuySellAds.com Zone Code -->
+	</div>
+	
+	
+
+	<div id="side-popular-posts" class="techi-side-widget">
+	<div class="techi-widget-title">
+    <span>POPULAR STORIES</span>
+  </div>
+  <div class="side-menu-switcher">
+    <a href="javascript:;" class="active" onclick="showPopularList(0, this);">THIS WEEK</a>
+    <a href="javascript:;" onclick="showPopularList(1, this);">LAST WEEK</a>
+    <a href="javascript:;" onclick="showPopularList(2, this);">LAST MONTH</a>
+  </div>
+	
+    <ul id="side-popular-list-0"   >
+     <li>
+    <a href="http://www.techi.com/2012/07/the-rapid-growth-of-apps/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2012/07/Apps_techi_thumbnail.jpg' alt=''  />
+    <span>The rapid growth of apps</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2012/07/how-much-time-do-we-spend-each-month-on-social-networks/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2012/07/2WIjS_techi_thumbnail.png' alt=''  />
+    <span>How Much Time Do We Spend Each Month On Social Networks?</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2012/07/same-sex-marriage-icon-added-to-facebook/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2012/07/Facebook-Gay-Marriage_techi_thumbnail.jpg' alt=''  />
+    <span>Same-sex marriage icon added to Facebook</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2012/07/instagrams-rapid-user-growth-visualized/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2012/07/Arrow_techi_thumbnail.jpg' alt=''  />
+    <span>Instagram’s rapid user growth visualized</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2012/07/the-dubstep-dispute-with-robots/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2012/07/Dubstep-Debate_techi_thumbnail.jpg' alt=''  />
+    <span>The dubstep dispute. With robots.</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2012/07/other-than-tagged-com-all-social-networks-are-sexually-lopsided/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2012/07/Men-vs-Women_techi_thumbnail.jpg' alt=''  />
+    <span>Other than Tagged.com, all social networks are sexually lopsided</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2012/07/easter-island-may-hold-the-key-to-curing-alzheimers/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2012/07/Easter-Island_techi_thumbnail.jpg' alt=''  />
+    <span>Easter Island may hold the key to curing Alzheimer's</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2012/07/google-isnt-a-social-network-according-to-google-so-ehat-is-it/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2012/07/Google-Plus_techi_thumbnail.jpg' alt=''  />
+    <span>Google+ isn’t a social network, according to Google. So what is it?</span>
+    </a>
+   </li>
+     </ul>
+    <ul id="side-popular-list-1" style="display:none"  >
+     <li>
+    <a href="http://www.techi.com/2011/07/open-source-wars-wordpress-vs-drupal-vs-joomla/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2011/07/Wordpress-vs-Drupal-vs-Joomla_techi_thumbnail.jpg' alt=''  />
+    <span>Open source wars: Wordpress vs Drupal vs Joomla</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2010/06/9-steps-to-creating-a-social-networking-site-that-kills-facebook/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2010/05/fb1_techi_thumbnail.jpg' alt=''  />
+    <span>9 Steps to Creating a Social Networking Site That Kills Facebook</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2010/06/6-outstanding-sim-games-for-ipad-and-iphone/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2010/06/red-alert-iphone-command-and-conquer-screenshot_techi_thumbnail.jpg' alt=''  />
+    <span>6 Outstanding Sim Games For iPad and iPhone</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2011/08/razer-blade-gaming-laptop-launches-but-the-real-story-is-the-buzz-behind-it/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2011/08/Razer-Blade-Gaming-Laptop_techi_thumbnail.jpg' alt=''  />
+    <span>Razer Blade gaming laptop launches, but the real story is the buzz behind it</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2012/06/mobile-site-vs-apps/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2012/06/Mobile-Apps-vs-Websites_techi_thumbnail.jpg' alt=''  />
+    <span>Mobile site vs apps</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2011/09/consoles-vs-pc-gaming/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2011/09/Console-Gaming_techi_thumbnail.jpg' alt=''  />
+    <span>Consoles vs PC gaming</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2012/03/googles-driverless-car-comes-with-satirical-consequences/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2012/03/Driverless-Car_techi_thumbnail.jpg' alt=''  />
+    <span>Google's driverless car comes with (satirical) consequences</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2012/06/a-breakdown-of-our-mobile-payment-future/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2012/06/Mobile-Phone-Payments_techi_thumbnail.jpg' alt=''  />
+    <span>A breakdown of our mobile payment future</span>
+    </a>
+   </li>
+     </ul>
+    <ul id="side-popular-list-2" style="display:none"  >
+     <li>
+    <a href="http://www.techi.com/2012/06/back-to-the-future-history-being-rewritten-on-twitter-facebook/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2012/06/Back-to-the-Future-Hoax_techi_thumbnail.jpg' alt=''  />
+    <span>Back to the Future history being rewritten on Twitter, Facebook</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2012/07/the-rapid-growth-of-apps/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2012/07/Apps_techi_thumbnail.jpg' alt=''  />
+    <span>The rapid growth of apps</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2012/07/how-much-time-do-we-spend-each-month-on-social-networks/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2012/07/2WIjS_techi_thumbnail.png' alt=''  />
+    <span>How Much Time Do We Spend Each Month On Social Networks?</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2012/07/same-sex-marriage-icon-added-to-facebook/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2012/07/Facebook-Gay-Marriage_techi_thumbnail.jpg' alt=''  />
+    <span>Same-sex marriage icon added to Facebook</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2012/06/5-years-ago-the-guardian-predicted-massive-failure-for-the-iphone/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2012/06/Guardian-5-Years-Ago-Today_techi_thumbnail.jpg' alt=''  />
+    <span>5 years ago, The Guardian predicted massive failure for the iPhone</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2012/06/the-next-generation-of-heat-sinks/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2012/06/Heat-Sink_techi_thumbnail.jpg' alt=''  />
+    <span>The next generation of heat sinks?</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2012/07/instagrams-rapid-user-growth-visualized/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2012/07/Arrow_techi_thumbnail.jpg' alt=''  />
+    <span>Instagram’s rapid user growth visualized</span>
+    </a>
+   </li>
+      <li>
+    <a href="http://www.techi.com/2012/06/top-5-security-systems-for-2012/">
+    <img src='http://cdn.techi.com/wp-content/uploads/2012/06/security2_techi_thumbnail.jpg' alt=''  />
+    <span>Top 5 security systems for 2012</span>
+    </a>
+   </li>
+     </ul>
+    
+	</div>
+<div class="sidebar-facebook"><iframe src="http://www.facebook.com/plugins/likebox.php?id=345165772693&amp;width=300&amp;connections=5&amp;stream=false&amp;header=true&amp;height=187" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:287px;" allowTransparency="false"></iframe></div>
+<div class="clr"></div>
+
+
+ 
+<div class="side-sky-banner-160">
+<!-- FM Wide Skyscraper 1 Zone -->
+<script type='text/javascript' src='http://static.fmpub.net/zone/4805'></script>
+<!-- FM Wide Skyscraper 1 Zone -->
+</div>
+
+ 
+
+ 
+ 
+  <a class="sidebar-square-banner" href="http://www.comcure.com" rel="nofollow"><img src="/img/comcure-300x250.jpg" alt="comcure" width="300" height="250" /></a>
+ 
+ 
+ 
+ <!-- <div class="sidebar-square-banner"> -->
+ 	<!-- ValueClick Media 300x250 Medium Rectangle CODE for Techi -->
+<!-- <script language="javascript" src="http://media.fastclick.net/w/get.media?sid=55312&m=6&tp=8&d=j&t=n"></script>
+<noscript><a href="http://media.fastclick.net/w/click.here?sid=55312&m=6&c=1" target="_blank">
+<img src="http://media.fastclick.net/w/get.media?sid=55312&m=6&tp=8&d=s&c=1" width=300 height=250 border=1></a></noscript> -->
+<!-- ValueClick Media 300x250 Medium Rectangle CODE for Techi -->
+  
+ <!-- </div> -->
+ 
+ 
+
+<div id="comments-widget" class="techi-side-widget">
+  <div class="techi-widget-title"><span class="slide-title">LATEST COMMENTS<span class="second-title"></span></span></div>
+  <div id="comments-widget-wrap" >
+  
+  <ul class="home-comments-list">
+    	<li>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=9f92a88e5e6852244e2dfa02a4131178&amp;size=40&amp;rating=G&amp;default=http%3A%2F%2Fwww.techi.com%2Fimages%2Favatar.jpg" alt="" width="40" height="40" class="kjgrcGravatar" />
+<div class="l-comment-wrap">
+<strong>Cody Swartz says:</strong><br />
+<a href="http://www.techi.com/2012/07/5-awesome-bamboo-products-for-your-office/#comment-9108">Links to these products would be helpful.</a><br/>
+<span class="recent-comment-meta">Posted July 6, 2012 in 5 awesome bamboo products for your office
+</div>
+</span>
+</li>
+	<li>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=09ecd1390997ec20d816eaf80ae1ee18&amp;size=40&amp;rating=G&amp;default=http%3A%2F%2Fwww.techi.com%2Fimages%2Favatar.jpg" alt="" width="40" height="40" class="kjgrcGravatar" />
+<div class="l-comment-wrap">
+<strong>Sizzling Magazine says:</strong><br />
+<a href="http://www.techi.com/2012/06/back-to-the-future-history-being-rewritten-on-twitter-facebook/#comment-9097">Lol nice!</a><br/>
+<span class="recent-comment-meta">Posted June 27, 2012 in Back to the Future history being rewritten on Twitter, Facebook
+</div>
+</span>
+</li>
+	<li>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=5f1a91e3751c458eb0714eb76243737b&amp;size=40&amp;rating=G&amp;default=http%3A%2F%2Fwww.techi.com%2Fimages%2Favatar.jpg" alt="" width="40" height="40" class="kjgrcGravatar" />
+<div class="l-comment-wrap">
+<strong>top security companies ireland says:</strong><br />
+<a href="http://www.techi.com/2012/06/top-5-security-systems-for-2012/#comment-9096"> The technologies like wireless voice...</a><br/>
+<span class="recent-comment-meta">Posted June 25, 2012 in Top 5 security systems for 2012
+</div>
+</span>
+</li>
+	<li>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=3fa6722e4fdf513d4b3f0999c2ed424c&amp;size=40&amp;rating=G&amp;default=http%3A%2F%2Fwww.techi.com%2Fimages%2Favatar.jpg" alt="" width="40" height="40" class="kjgrcGravatar" />
+<div class="l-comment-wrap">
+<strong>pari says:</strong><br />
+<a href="http://www.techi.com/2012/07/how-much-time-do-we-spend-each-month-on-social-networks/#comment-9082">nice info </a><br/>
+<span class="recent-comment-meta">Posted July 3, 2012 in How Much Time Do We Spend Each Month On Social Networks?
+</div>
+</span>
+</li>
+	<li>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=090bc8801a83c0cb34766c5b4d38532d&amp;size=40&amp;rating=G&amp;default=http%3A%2F%2Fwww.techi.com%2Fimages%2Favatar.jpg" alt="" width="40" height="40" class="kjgrcGravatar" />
+<div class="l-comment-wrap">
+<strong>Anonymous says:</strong><br />
+<a href="http://www.techi.com/2012/07/how-much-time-do-we-spend-each-month-on-social-networks/#comment-9078">I would have to guess bunches and...</a><br/>
+<span class="recent-comment-meta">Posted July 3, 2012 in How Much Time Do We Spend Each Month On Social Networks?
+</div>
+</span>
+</li>
+  </ul>
+	
+  </div> <!-- wrap end -->
+   
+</div> <!-- widget end -->
+
+ 
+ <div style="text-align:center;margin-top:30px;">
+ <!-- FM Badge Start -->
+  <a href="https://advertisers.federatedmedia.net/explore/view/techi">
+    <img src="http://static.fmpub.net/assets/badges/FM_Tech_Advertise_hz.gif" border="0" width="114" height="75">
+  </a>
+<!-- FM Badge End -->
+</div>
+ 
+ 
+  
+
+
+
+		
+</div>
+
+
+<!-- Javascript tag: -->
+<!-- begin ZEDO for channel: Techi.com , publisher: Freestyle Networks Inc , Ad Dimension: Super Banner - 728 x 90 -->
+<div class="clr"></div>
+<div id="footer-banner">
+<script type="text/javascript"><!--
+google_ad_client = "pub-5778786047058798";
+/* 728x90, created 12/20/10 */
+google_ad_slot = "0946509583";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+</div> <!-- end of page -->
+<div class="clr"></div>
+
+<div id="footer">
+
+
+ <div id="footer-wrap">
+ <a  href="#header" class="top-link">TOP OF PAGE</a>
+ 
+  <div class="logo-wrap">
+    <div class="logo-strip"></div>
+    <a  href="/" id="footer-logo"></a>
+  </div>
+  
+  <div id="pages-bottom-links">
+    <a href="/about/"><span>ABOUT US</span></a>
+    <a href="/rssfeeds/"><span>RSS FEEDS</span></a>
+	<br/>
+	<a href="/authors-list/"><span>AUTHORS</span></a>
+  <a href="https://advertisers.federatedmedia.net/explore/view/techi"><span>ADVERTISING</span></a>
+	<br/>
+	<!-- <a href="/submit-review/"><span>GET REVIEWED</span></a> --> 
+	<a href="/contact/"><span>CONTACT US</span></a>
+  <a href="/disclaimer-and-privacy-policy/"><span>PRIVACY POLICY</span></a>  
+  
+  </div>
+ 
+   <div id="footer-info">
+    <div class="trade">Techi&trade; - Fresh daily technology news, editorials and reviews. Send tips to <a href="mailto:tips[at]techi.com">tips[@]techi.com</a>.</div>
+    <div class="rights">&copy; 2012 All Rights Reserved</div>
+  </div>
+  
+  <div class="clr"></div>
+  
+   <ul id="footer-links">					
+			 	<li><a href="http://www.mightydeals.com">Deals for designers</a></li>
+<li><a href="http://www.brushlovers.com">Free photoshop brushes</a></li>
+<li><a href="http://www.tn3gallery.com">Image gallery</a></li>
+<li><a href="http://www.wixmobile.com?utm_campaign=se_mbl_lb_techi.com&#038;experiment_id=MW" title="Mobile Websites">Mobile Websites</a></li>
+<li><a href="http://depositphotos.com/">Royalty free images</a></li>
+<li><a href="http://www.webdesignerdepot.com">Web design blog</a></li>
+<li><a href="http://www.wix.com?utm_campaign=se_lb_techi.com&#038;experiment_id=WB" title="Website Builder">Website Builder</a></li>
+	 </ul>	
+  
+ </div> <!-- end of footer wrap -->
+</div> <!-- end footer -->
+
+
+
+	<div style="display:none"><script type="text/javascript">
+document.write(unescape('%3Cscript type="text/javascript" src="'+
+document.location.protocol+'//counter.goingup.com/js/tracker.js?st=xpzctff&amp;b=5"%3E%3C/script%3E'));
+</script>
+<noscript><div><img src="http://counter.goingup.com/default.php?st=xpzctff&amp;b=5" alt="" /></div></noscript>
+<div style="position: absolute; top: -8000px;"><a href="http://www.goingup.com" title="Visitor Tracking">Visitor Tracking</a><a href="http://www.binarybiz.com" title="data recovery">data recovery</a><a href="http://www.binarybiz.com" title="Data Recovery Software">Data Recovery Software</a><a href="http://www.forex.sc" title="forex">forex</a></div></div><!-- Wordpress Popular Posts v2.2.1 -->
+<script type="text/javascript" charset="utf-8">
+    /* <![CDATA[ */				
+	jQuery.post('http://www.techi.com/wp-admin/admin-ajax.php', {action: 'wpp_update', token: '4ecdae9902', id: 23950});
+    /* ]]> */
+</script>
+<!-- End Wordpress Popular Posts v2.2.1 -->
+            <script type='text/javascript' src='http://www.techi.com/wp-content/plugins/contact-form-7/jquery.form.js?ver=2.52'></script>
+<script type='text/javascript' src='http://www.techi.com/wp-content/plugins/contact-form-7/scripts.js?ver=2.4.3'></script>
+
+<script src="http://cdn.techi.com/wp-content/themes/techi/js/jquery.timer.js" type="text/javascript" ></script>
+<script src="http://cdn.techi.com/wp-content/themes/techi/js/jquery.flow.1.1.min.js" type="text/javascript" ></script>
+<script src="http://cdn.techi.com/wp-content/themes/techi/js/main.js?v=36" type="text/javascript" ></script>
+<script type="text/javascript">
+/***********************************************
+* Easy Email Scrambler script- � Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var maildivider="[at]" //enter divider you use to divide your email address strings
+
+for (i=0; i<=(document.links.length-1); i++){
+if (document.links[i].href.indexOf(maildivider)!=-1)
+document.links[i].href=document.links[i].href.split(maildivider)[0]+"@"+document.links[i].href.split(maildivider)[1]
+}
+
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-331696-11']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- FM Tracking Pixel -->
+<script type='text/javascript' src='http://static.fmpub.net/site/techi'></script>
+<!-- FM Tracking Pixel -->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using disk: basic
+Page Caching using disk: enhanced
+Database Caching 8/33 queries in 0.035 seconds using disk: basic
+Object Caching 921/971 objects using disk: basic
+Content Delivery Network via cdn.techi.com
+
+Served from: www.techi.com @ 2012-07-09 14:53:17 -->

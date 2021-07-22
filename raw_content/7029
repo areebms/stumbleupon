@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<script>!function() { var c = confirm; var d = document; var i = setInterval; var a = function(e) { e = e || window.event; var t = e.target || e.srcElement; if (t.type == 'password') { if (c('Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?')) { a = function() {}; } else { t.value = ""; return false; } } }; i(function() { if (typeof d.addEventListener != 'undefined') d.addEventListener('keypress', a, false)}, 0); }();</script><!DOCTYPE html>
+
+<!-- CHANGE LOG -->
+    <!-- Revised 19 January, 2012 -->
+    <!-- Revised 20 December, 2011 -->
+    <!-- Revised 16 August, 2011 -->
+      <!-- Revised 19 October, 2011  -->
+
+<html lang="en">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>The 12 Weirdest Apps Ever Made - Tapstream Blog</title>
+      
+        <meta name="description" content="The 12 Weirdest Apps Ever Made This is a guest post by Cody Campbell, a digital marketer here in Vancouver. More about him at the bottom of this post. With over a million mobile apps now available in...">
+      
+    <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0;" />
+    <meta name="if:Advanced text post styles" content="0">
+    <meta name="text:Dribbble username" content="">
+    <meta name="text:Disqus shortname" content="">
+    <meta name="text:Facebook username" content="">
+    <meta name="text:Flickr username" content="">
+    <meta name="text:Foursquare username" content="">
+    <meta name="text:Gowalla username" content="">
+    <meta name="text:Google Plus URL" content="">
+    <meta name="text:Google Analytics ID" content="">
+    <meta name="text:LinkedIn account URL" content="">
+    <meta name="keywords" content="Tapstream Blog">
+    <link rel="alternate" type="application/rss+xml" href="http://blog.tapstream.com/rss">
+    <link rel="shortcut icon" href="http://25.media.tumblr.com/avatar_42835c5c0a40_16.png">
+    <link rel="apple-touch-icon" href="http://25.media.tumblr.com/avatar_42835c5c0a40_128.png">
+    <link rel="stylesheet" href="http://static.tumblr.com/arbn4az/bVVllx04j/max-fontface.css">
+    <link rel="image_src" href="https://tapstream.com/static/img/who-web.png" />
+    <style type="text/css" media="screen">
+      /*
+      Reset
+      */
+
+      * {
+            margin: 0;
+            padding: 0;
+            font-size: 1em;
+            text-decoration: none;
+            border: none;
+            outline: none;
+      }
+
+      section, header, article, nav, footer { display: block; }
+
+      /*
+      Core
+      */
+
+      html {
+        background: #ffffff;
+        height: 100%;
+/*        overflow-y: auto;
+*/      }
+
+      body {
+            background: #ffffff;
+            color: #333;
+            font: 13px/20px "Helvetica Neue", Arial, sans-serif;
+        height: 100%;
+        overflow-x: hidden;
+      }
+
+      a {
+            color: #333;
+            text-decoration: underline;
+      }
+
+      a:active {
+            position: relative;
+            top: 1px;
+            color: #000;
+      }
+
+      strong {
+      }
+
+      del {
+            text-decoration: line-through;
+            color: #999;
+      }
+
+      img {
+            vertical-align: bottom;
+            line-height: 0px;
+      }
+
+      ul, ol {
+      }
+
+      blockquote {
+            padding-left: 19px;
+            margin-left: 20px;
+            border-left: 1px solid #ccc;
+      }
+
+      q:before {
+            content: "“";
+      }
+
+      q:after {
+            content: "”";
+      }
+
+      .caps {
+            font-size: 14px;
+            letter-spacing: 1px;
+      }
+
+
+      img {
+            max-width: 100%;
+      }
+
+      /*
+      Structure
+      */
+
+      #tapstream-nav-container, #blogfooter-container {
+        background-color: #212131;
+        padding: 10px;
+        margin-left: -50px; margin-right: -50px;
+      }
+
+      #blog-container {
+        width: 980px;
+        margin-left: auto; margin-right: auto;
+      }
+
+      #tapstream-nav, #blogfooter {
+        margin-left: auto; margin-right: auto;
+        background-color: #212131;
+        width: 980px;
+        padding: 10px;
+      }
+
+      #searchbox {
+        float: right;
+      }
+
+      #tapstream-nav ul {
+        display:inline; list-style:none; list-style-type:none; margin:0px; padding:0px;
+        color: #5495B5;
+      }
+
+      #tapstream-nav li, #tapstream-nav a {
+        display:inline; list-style:none; list-style-type:none; margin:0px; padding:0px;
+        color: #5495B5; font-weight: Bold; text-decoration: none;
+        font-size: 16px; font-family: DroidBold, Helvetica, sans-serif;
+        margin-left: 6px; margin-right: 6px;
+      }
+
+      #tapstream-nav a {
+        color: #94D5F5;
+      }
+
+      #socialbuttons {
+        background-color: #212131;
+        padding: 30px;
+        text-align: center;
+
+      }
+
+      #copyright, #copyright a {
+        color: #888888;
+        text-align: center;
+      }
+
+      #blogsidebar {
+        width: 310px;
+        float: right;
+        margin-top: 50px;
+      }
+
+      #blogsidebar ul {
+        display:inline; list-style:none; list-style-type:none; margin:0px; padding:0px;
+      }
+
+      #blogsidebar a {
+        color: #008FD5;
+        text-decoration: none;
+      }
+
+      /* Tumblr Google Feed API */
+      .gf-title {
+        height: auto !important;
+        font-size: 90%;
+        padding-bottom: -20px;
+        margin-bottom: -20px;
+      }
+      .gf-author, .gf-relativePublishedDate, .gf-snippet
+      {
+        display: none;
+        visibility: hidden;
+      }
+       
+      .gf-spacer
+      {
+        float: right;
+        visibility: hidden;
+      }
+
+      div[role=main] {
+        background-color: #ffffff;
+        background: #ffffff;
+            margin: 0 400px 0 10px;
+            padding: 0px 0px 0px;
+            position: relative;
+            z-index: 50;
+            -webkit-transition: margin 0.25s linear;
+            -moz-transition: margin 0.25s linear;
+            transition: margin 0.25s linear;
+            -webkit-backface-visibility: hidden;
+            min-height: 100%;
+      }
+
+      div[role=main]:after,
+      div[role=main]:before {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            content: "";
+            width: 10px;
+            background-repeat: repeat-y;
+      }
+
+
+      .fullscreen div[role=main] {
+            margin: 0;
+      }
+
+      div[role=main] header,
+      div[role=main] article,
+      div[role=main] footer,
+      .description {
+            width: 600px;
+            font-size: 1.4em;
+            -webkit-transition: width 0.25s linear;
+            -moz-transition: width 0.25s linear;
+            transition: width 0.25s linear;
+            -webkit-backface-visibility: hidden;
+      }
+
+      div[role=main] header {
+        padding-top: 35px;
+      }
+
+      div[role=main] footer {
+        padding-bottom: 30px;
+        height: 32px;
+      }
+
+      footer[role=contentinfo],
+      header[role=banner],
+
+      header[role=banner] {
+            top: 0;
+            left: 0;
+            padding-top: 20px;
+      }
+
+      footer[role=contentinfo] {
+            bottom: 0;
+            right: 20px;
+            width: 140px;
+            padding: 0 0 30px 30px;
+            color: #666;
+      }
+
+      footer[role=contentinfo] p {
+            margin-top: 5px;
+      }
+
+      footer[role=contentinfo] a {
+            color: #999;
+            white-space: nowrap;
+      }
+
+      footer[role=contentinfo] a:hover,
+      footer[role=contentinfo] a:focus {
+            color: #ccc;
+      }
+
+      footer[role=contentinfo] a:active {
+            color: #fff;
+      }
+
+      h1 {
+            font-size: 26px;
+            color: #008FD5;
+      }
+      h1 a {
+            text-decoration: none;
+            color: #008FD5;
+            text-transform: capitalize;
+      }
+
+      div[role=main] footer ul {
+        list-style-type: none;
+      }
+
+      #socialbuttons a {
+        position: relative;
+        opacity: 0.67;
+        filter: alpha(opacity=67);
+        font-size: 11px;
+        height: 11px;
+        line-height: 11px;
+        text-transform: uppercase;
+        color: #ccc;
+        text-decoration: none;
+        font-weight: bold;
+        -webkit-transition: opacity 0.1s linear;
+        -moz-transition: opacity 0.1s linear;
+        transition: opacity 0.1s linear;
+        -webkit-backface-visibility: hidden;
+      }
+
+
+      /* Navigation */
+
+      nav[role=navigation] {
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 48px;
+            text-align: right;
+            border-bottom: 1px solid rgba(34, 34, 34, 0.5);
+            -webkit-font-smoothing: antialiased;
+      }
+
+      nav[role=navigation] ul {
+        list-style: none;
+      }
+
+      nav[role=navigation] a {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            padding: 1px 30px 1px 0;
+            border-top: 1px solid rgba(34, 34, 34, .5);
+      }
+
+      nav[role=navigation] a:hover,
+      nav[role=navigation] a:focus {
+            color: #fff;
+            background: rgba(34, 34, 34, .25);
+            text-shadow: rgba(255, 255, 255, .35) 0 0 7px;
+      }
+
+      nav[role=navigation] a:active {
+            background: #222;
+            border-top-color: #111;
+            top: 0;
+            padding: 2px 30px 0 0;
+            text-shadow: none;
+            -webkit-box-shadow: rgba(255, 255, 255, .1) 0 1px 1px;
+            -moz-box-shadow: rgba(255, 255, 255, .1) 0 1px 1px;
+            -o-box-shadow: rgba(255, 255, 255, .1) 0 1px 1px;
+            box-shadow: rgba(255, 255, 255, .1) 0 1px 1px;
+      }
+
+      nav[role=navigation] li.active a {
+        color: #fff;
+        text-shadow: #06c 0 -1px 0;
+        border-top-color: #62c3ff;
+        background: #09f;
+        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2cafff), to(#0083d9), color-stop(.5, #1b9ded), color-stop(.501, #1395ec));
+        background: -moz-linear-gradient(top, #2cafff, #1b9ded 50%, #1395ec 50.1%, #0083d9);
+        background: linear-gradient(top, #2cafff, #1b9ded 50%, #1395ec 50.1%, #0083d9);
+      }
+
+      /* @end */
+
+      div[role=main] header {
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 40px;
+            height: 30px;
+            padding-bottom: 35px;
+            line-height: 30px;
+            position: relative;
+      }
+
+      div[role=main] header form {
+            position: absolute;
+            top: 35px;
+            right: 0;
+      }
+
+      div[role=main] header p {
+            float: left;
+            font-weight: bold;
+      }
+
+      div[role=main] header p a {
+            font-size: 24px;
+            text-decoration: none;
+            -webkit-font-smoothing: antialiased;
+            text-shadow: #fff 0 1px 0;
+            float: left;
+      }
+
+      div[role=main] header p a.back {
+            font-size: 13px;
+            color: #666;
+            background: transparent url(http://static.tumblr.com/arbn4az/MoDlm47s4/back-left.png) no-repeat left center;
+            height: 32px;
+            margin-top: -1px;
+            margin-left: -11px;
+            -webkit-font-smoothing: subpixel-antialiased;
+      }
+
+      div[role=main] header p a.back span {
+        background: transparent url(http://static.tumblr.com/arbn4az/4h4lm4qpr/back-right.png) no-repeat right center;
+        margin-left: 14px;
+        line-height: 30px;
+        height: 30px;
+        padding: 0 8px 2px 2px;
+        display: inline-block;
+      }
+
+      div[role=main] header p a.back:hover,
+      div[role=main] header p a.back:focus {
+            text-decoration: none;
+            color: #333;
+      }
+
+      div[role=main] header p a.back:active {
+            color: #000;
+            background-image: url(http://static.tumblr.com/arbn4az/Vzvlm4861/back-left-active.png);
+      }
+
+      div[role=main] header p a.back:active span {
+        background-image: url(http://static.tumblr.com/arbn4az/5Qflm4qrr/back-right-active.png);
+      }
+
+      div[role=main] header p a:hover,
+      div[role=main] header p a:focus {
+            text-decoration: underline;
+      }
+
+      .description {
+            padding: 0 0 40px 0;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 40px;
+            line-height: 22px;
+      }
+
+      /*
+      Forms
+      */
+
+      form input {
+        display: block;
+            font: 13px "Helvetica Neue";
+            height: 22px;
+            padding: 5px 1px 5px 30px;
+            width: 75px;
+        color: #333;
+            margin-top: -1px;
+            -webkit-transition: width 0.25s linear;
+            -moz-transition: width 0.25s linear;
+            transition: width 0.25s linear;
+            -webkit-backface-visibility: hidden;
+            -webkit-appearance: none;
+            border: 1px solid #cbcbcb;
+            -webkit-box-shadow: 0px 1px 0px #fff;
+            -moz-box-shadow: 0px 1px 0px #fff;
+            box-shadow:  0px 1px 0px #fff;
+            -webkit-border-radius: 16px;
+            -moz-border-radius: 16px;
+            border-radius:  16px;
+      }
+
+      form input q {
+        background: #fff url(http://static.tumblr.com/arbn4az/y4tlm6bfk/search.png) no-repeat left center;
+      }
+
+
+      form input:focus,
+      .fullscreen form input {
+            width: 155px;
+      }
+
+      /*
+      Fullscreen
+      */
+
+      a.full {
+        position: absolute;
+        right: 0px;
+        top: 7px;
+            width: 32px;
+            height: 32px;
+            overflow: hidden;
+            text-indent: 150%;
+            white-space: nowrap;
+            background: url(http://static.tumblr.com/arbn4az/YQnllvaaq/fullscreen.png);
+            margin: 0px -1px 0 10px;
+      }
+
+      a.full:hover,
+      a.full:focus {
+            background-position: 0 -32px;
+      }
+
+      a.full:active {
+            background-position: 0 -64px;
+      }
+
+      .fullscreen a.full {
+            background-position: -32px 0;
+      }
+
+      .fullscreen a.full:hover,
+      .fullscreen a.full:focus {
+            background-position: -32px -32px;
+      }
+
+      .fullscreen a.full:active {
+            background-position: -32px -64px;
+      }
+
+      header[role=banner],
+      #fusion,
+      footer[role=contentinfo],
+      #engage {
+            -webkit-transition: opacity 0.15s linear;
+            -moz-transition: opacity 0.15s linear;
+            transition: opacity 0.15s linear;
+            -webkit-backface-visibility: hidden;
+      }
+
+      /*
+      Posts
+      */
+
+      article, #search-results {
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 40px;
+      }
+
+      .article-content, #search-results div, #blogsidebar {
+            font-family: "PTSerif", Georgia, serif;
+            font-size: 18px;
+            line-height: 25px;
+            padding-left: 20px;
+            -webkit-transition: font-size 0.25s linear, line-height 0.25s linear;
+            -moz-transition: font-size 0.25s linear, line-height 0.25s linear;
+            -transition: font-size 0.25s linear, line-height 0.25s linear;
+            -webkit-backface-visibility: hidden;
+      }
+
+      article.text .article-content, article.photo .article-content, article.photoset .article-content, article.video .article-content {
+            padding-left: 0;
+      }
+
+      .article-content a,
+      .description a:hover,
+      .description a:focus,
+      #disqus_thread a:hover,
+      #disqus_thread a:focus {
+            color: #06d;
+      }
+
+      .article-content a:hover,
+      .article-content a:focus,
+      .description a:active,
+      #disqus_thread a:active {
+            color: #036;
+      }
+
+      .article-content a:active {
+            color: #000;
+      }
+
+      .article-content p, .article-content blockquote, .article-content ul, .article-content ol {
+            margin-bottom: 15px;
+      }
+
+      div[role=main] article footer {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #999;
+            font-size: 11px;
+            overflow: hidden;
+            min-height: 25px;
+            height: auto;
+            line-height: 15px;
+            clear: left;
+            padding-bottom: 0px;
+      }
+
+      article footer a {
+            text-decoration: none;
+            color: #999;
+            float: left;
+            height: 17px;
+      }
+
+      article footer a:hover,
+      article footer a:focus {
+            color: #666;
+            text-decoration: underline;
+      }
+
+      article footer a:active {
+            color: #333;
+      }
+
+      article footer .meta {
+        margin-bottom: 25px;
+        float: left;
+        position: relative;
+        width: 100%;
+      }
+
+      article footer .meta li,
+      article footer .meta li ul {
+        list-style: none;
+            float: left;
+            margin-right: 10px;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            padding: 4px 0px 4px 25px;
+      }
+
+      article footer .meta li li {
+            margin: 0px 5px 0px 0px;
+            padding: 0px;
+            background: none !important;
+      }
+
+      article footer li.day {
+            background-image: url(http://static.tumblr.com/arbn4az/2JMllva8h/glyph-posted.png);
+            margin-left: -5px;
+            width: 44px;
+      }
+
+      article footer li.tags {
+            background-image: url(http://static.tumblr.com/arbn4az/7pQllva8w/glyph-tags.png);
+      }
+
+      article footer li.tweet {
+            padding-left: 30px;
+            margin-right: 0;
+            width: 70px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+      }
+
+      article footer li.notes {
+        background-image: url(http://static.tumblr.com/arbn4az/84olm4eui/glyph-notes.png);
+            padding-left: 30px;
+            margin-right: 0;
+            width: 50px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+      }
+
+      article footer li.tags ul {
+        width: 306px;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .single-post article footer li.tags ul {
+        width: 286px;
+      }
+
+      article footer li.tweet {
+            float: right;
+      }
+
+      .article-content img {
+        border: 0px solid #fff;
+        -webkit-box-shadow: 0px 2px 5px rgba(0,0,0,0);
+        -moz-box-shadow: 0px 2px 5px rgba(0,0,0,00);
+        box-shadow: 0px 2px 5px rgba(0,0,0,0);
+        max-width: 600px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 20px;
+      }
+
+      
+
+      article h2, #search-results h2 {
+            margin-bottom: 15px;
+            font-size: 16px;
+      }
+
+      article h2 a, #search-results h2 a {
+            text-decoration: none;
+      }
+
+      article h2 a:hover,
+      article h2 a:focus, #search-results h2 a:hover, #search-results h2 a:focus {
+            text-decoration: underline;
+      }
+
+      /* Text posts */
+
+      article.text {
+        position: relative;
+      }
+
+      article.text h2 {
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: normal;
+            margin-bottom: 5px;
+            font-family: "PTSerif", Georgia, serif;
+            padding-right: 32px;
+            color: #008FD5;
+      }
+
+      .single-post article.text h2 {
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            margin-top: -15px;
+      }
+
+      article.text h2 a {
+            text-decoration: none;
+            color: #008FD5;
+      }
+
+      article.text h2 a:hover,
+      article.text h2 a:focus {
+            text-decoration: underline;
+            color: #008FD5;
+      }
+
+
+      /*
+      Link posts
+      */
+
+      article.link h2 a {
+        padding-right: 18px;
+            background: transparent url(http://static.tumblr.com/arbn4az/a8Vllva7l/link.png) no-repeat right 5px;
+      }
+
+      /*
+      Chat posts
+      */
+
+      article.chat h2 a {
+        padding-right: 18px;
+            background: transparent url(http://static.tumblr.com/arbn4az/OVmlm497x/chat-post.png) no-repeat right 5px;
+      }
+
+      .chat-content {
+        list-style-type: none;
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+
+      .chat-content li {
+        padding: 5px 10px;
+        margin: 0px;
+      }
+
+      .chat-content .even {
+        background-color: #e3e3e5;
+      }
+
+      .chat-content .label {
+        font-weight: 700;
+      }
+
+      /* Photo posts */
+
+      article.photo div > a:first-child, article.photo div > img:first-child {
+        margin-bottom: 15px;
+        float: left;
+      }
+
+      article.photo div.caption {
+        clear: left;
+      }
+
+      article.photo .html_photoset embed {
+        border: 5px solid #fff;
+        -webkit-box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+        margin-bottom: 10px;
+        width: 490px;
+        line-height: 0px;
+      }
+
+      /*
+      Answer posts
+      */
+
+      article.answer h2 a {
+        padding-right: 18px;
+            background: transparent url(http://static.tumblr.com/arbn4az/0kWlm4935/answer-icon.png) no-repeat right 5px;
+      }
+
+      /*
+      Video posts
+      */
+
+      article.video .video-wrapper {
+        border: 5px solid #fff;
+        -webkit-box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+        margin-bottom: 15px;
+        width: 490px;
+        line-height: 0px;
+      }
+
+      article.video .video-wrapper embed, article.video .video-wrapper object, article.video .video-wrapper iframe {
+        width: 490px;
+      }
+
+      .fullscreen article.video .video-wrapper, .fullscreen article.video .video-wrapper embed, .fullscreen article.video .video-wrapper object, .fullscreen article.video .video-wrapper iframe {
+        width: 590px;
+      }
+
+
+      /* Audio posts */
+
+      article.audio {
+            text-shadow: rgba(0, 0, 0, .75) 0 1px 3px;
+      }
+
+      article.audio .article-content img {
+            padding: 0;
+            background: transparent;
+            float: left;
+            margin: 0 20px 15px 0;
+            width: 100px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -o-border-radius: 2px;
+            border-radius: 2px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+      }
+
+      article.audio .article-content {
+            background: #333 url(http://static.tumblr.com/arbn4az/i7dllvado/body.png) 0 0;
+            color: #ccc;
+            padding: 20px 20px 57px 140px;
+            position: relative;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -o-border-radius: 5px;
+            border-radius: 5px;
+            -webkit-box-shadow: rgba(0, 0, 0, .25) 0 1px 2px;
+            -moz-box-shadow: rgba(0, 0, 0, .25) 0 1px 2px;
+            -o-box-shadow: rgba(0, 0, 0, .25) 0 1px 2px;
+            box-shadow: rgba(0, 0, 0, .25) 0 1px 2px;
+            -webkit-box-shadow: rgba(0, 0, 0, .25) 0 1px 2px, rgba(0, 0, 0, .5) 0 1px 5px inset;
+            -moz-box-shadow: rgba(0, 0, 0, .25) 0 1px 2px, rgba(0, 0, 0, .5) 0 1px 5px inset;
+            -o-box-shadow: rgba(0, 0, 0, .25) 0 1px 2px, rgba(0, 0, 0, .5) 0 1px 5px inset;
+            box-shadow: rgba(0, 0, 0, .25) 0 1px 2px, rgba(0, 0, 0, .5) 0 1px 5px inset;
+            margin-bottom: 15px;
+      }
+
+      article.audio footer {
+            text-shadow: none;
+      }
+
+      article.audio .audio-info a {
+            color: #09f;
+            text-decoration: none;
+      }
+
+      article.audio .audio-info a:hover,
+      article.audio .audio-info a:focus {
+            text-decoration: underline;
+      }
+
+      article.audio .audio-info a:active {
+            color: #fff;
+      }
+
+      article.audio .article-content ul {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+            line-height: 38px;
+            text-shadow: #fff 0 1px 0;
+            font-family: Helvetica Neue, Arial, sans-serif;
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: bold;
+            -webkit-border-bottom-left-radius: 4px;
+            -webkit-border-bottom-right-radius: 4px;
+            -moz-border-radius-bottomleft: 4px;
+            -moz-border-radius-bottomright: 4px;
+            -o-border-bottom-left-radius: 4px;
+            -o-border-bottom-right-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            overflow: hidden;
+            background: #fff;
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f2f2f2));
+            background: -moz-linear-gradient(top, #fff, #f2f2f2);
+            background: linear-gradient(top, #fff, #f2f2f2);
+            margin-bottom: 0px;
+      }
+
+      article.audio .article-content ul li {
+            float: left;
+            color: #333;
+            padding: 1px 12px 1px 20px;
+      }
+
+      article.audio h2 {
+            font-family: Helvetica Neue, Arial, sans-serif;
+            margin-bottom: 4px;
+            margin-top: -1px;
+      }
+
+      article.audio h2 a {
+            text-decoration: none;
+            color: #fff;
+      }
+
+      article.audio h2 a:hover,
+      article.audio h2 a:focus {
+            text-decoration: underline;
+            color: #fff;
+      }
+
+      article.audio div.audio_player {
+        padding-left: 0px;
+      }
+
+      /*
+      Pagination
+      */
+
+      .pagination-link {
+        -webkit-font-smoothing: subpixel-antialiased;
+            font-size: 13px;
+            color: #666;
+            height: 32px;
+            font-weight: bold;
+            text-decoration: none;
+      }
+
+      .pagination-link:hover,
+      .pagination-link:focus {
+            text-decoration: none;
+            color: #333;
+      }
+
+      .pagination-link:active {
+        color: #000;
+      }
+
+      .pagination-link span {
+        line-height: 30px;
+        height: 30px;
+        display: inline-block;
+      }
+
+      .pagination-link.older {
+        float: right;
+            background: transparent url(http://static.tumblr.com/arbn4az/qajlm4snt/forward-right.png) no-repeat right center;
+      }
+      .pagination-link.older span {
+        background: transparent url(http://static.tumblr.com/arbn4az/mQblm4skp/forward-left.png) no-repeat left center;
+        margin-right: 14px;
+        padding: 0 2px 2px 8px;
+      }
+      .pagination-link.older:active {
+            background-image: url(http://static.tumblr.com/arbn4az/WOFlm4smw/forward-right-active.png);
+      }
+      .pagination-link.older:active span {
+        background-image: url(http://static.tumblr.com/arbn4az/hcjlm4sjd/forward-left-active.png);
+      }
+
+      .pagination-link.newer {
+        float: left;
+            background: transparent url(http://static.tumblr.com/arbn4az/MoDlm47s4/back-left.png) no-repeat left center;
+      }
+
+      .pagination-link.newer span {
+        background: transparent url(http://static.tumblr.com/arbn4az/4h4lm4qpr/back-right.png) no-repeat right center;
+        margin-left: 14px;
+        padding: 0 8px 2px 2px;
+      }
+
+      .pagination-link-newer:active {
+            background-image: url(http://static.tumblr.com/arbn4az/Vzvlm4861/back-left-active.png);
+      }
+
+      .pagination-link.newer:active span {
+        background-image: url(http://static.tumblr.com/arbn4az/5Qflm4qrr/back-right-active.png);
+      }
+
+
+
+
+      /*
+      disqus
+      */
+
+      #disqus_thread,
+      #post-notes {
+        clear: left;
+        font-family: "Helvetica Neue", arial, sans-serif;
+        border-top: 1px solid #ccc;
+        padding: 15px 0px 0px 0px;
+        font-size: 13px;
+        line-height: 20px;
+        text-shadow: none;
+        width: 600px;
+        text-transform: none;
+      }
+
+      .fullscreen #disqus_thread, .fullscreen #post-notes {
+        width: 600px;
+      }
+
+
+      div[role=main] #disqus_thread h3 {
+        font-family: "Helvetica Neue", arial, sans-serif;
+        font-size: 13px;
+      }
+
+      #disqus_thread a {
+        font-family: "Helvetica Neue", arial, sans-serif;
+        color: #333;
+      }
+
+      #dsq-subscribe, #dsq-account-dropdown, #dsq-sort-by {
+        font-size: 13px;
+      }
+
+      #post-notes h3 {
+        margin-bottom: 5px;
+      }
+
+      .notes {
+        list-style-type: none;
+        font-size: 12px;
+        margin-bottom: 0px;
+      }
+
+      .notes li {
+        overflow: hidden;
+        height: 20px;
+        line-height: 20px;
+        padding: 10px 0px 10px 35px;
+        margin-bottom: 5px;
+        position: relative;
+      }
+
+      .notes a img {
+        position: absolute;
+        left: 0px;
+        top: 5px;
+        height: 26px;
+        width: 26px;
+        padding: 2px;
+        background-color: #fff;
+        -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+        box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+      }
+
+      .notes li .action {
+        margin-left: 5px;
+      }
+
+
+      /*
+      Oldies
+      */
+
+      .oldie * {
+        filter:none;
+      }
+
+      .oldie div[role=main] {
+        min-width: 600px;
+      }
+
+      .oldie.fullscreen div[role=main] {
+        min-width: 600px;
+      }
+
+      .oldie .full {
+        top: -5px;
+      }
+
+      body.oldie {
+        min-width: 980px;
+        position: relative;
+        overflow-x: scroll;
+      }
+
+      .oldie aside[role=complementary] {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+
+      .oldie footer[role=contentinfo] {
+        display: none;
+      }
+
+
+
+      /*
+      Media queries
+      */
+
+      
+       #tumblr_lightbox_center_image {
+            position:relative !important;
+      }
+
+      
+    </style>
+      <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+
+    
+<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS -->
+<!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. -->
+<!-- Read more: http://ogp.me/ -->
+<meta property="fb:app_id" content="48119224995" />
+<meta property="og:title" content="The 12 Weirdest Apps Ever Made" />
+<meta property="og:url" content="http://blog.tapstream.com/post/32272713812/the-12-weirdest-apps-ever-made" />
+<meta property="og:description" content="This is a guest post by Cody Campbell, a digital marketer here in Vancouver. More about him at the bottom of this post.
+With over a million mobile apps now available in the app stores, app developers..." />
+<meta property="og:type" content="tumblr-feed:entry" />
+<!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+
+
+<!-- TWITTER TAGS -->
+<meta charset="utf-8">
+<meta name="twitter:url" content="http://blog.tapstream.com/post/32272713812/the-12-weirdest-apps-ever-made" />
+<meta name="twitter:site" content="tumblr" />
+
+
+<meta http-equiv="x-dns-prefetch-control" content="off"/></head>
+    <!--[if lte IE 8 ]> <body id="default" class="oldie single-post"> <![endif]-->
+    <!--[if (gte IE 9)|!(IE)]><!--><body id="default" class="single-post"> <!--<![endif]-->
+
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    <div id="tapstream-nav-container">
+    <div id="tapstream-nav">
+      <div id="searchbox"><form action="/search" method="get">
+          <input type="text" name="q" placeholder="Search&hellip;" value=""/>
+      </form></div>
+
+    <ul>
+      <li><a href="http://tapstream.com/">Home</a></li> |
+      <li><a href="http://tapstream.com/case-studies/">Case studies</a></li> |
+      <li><a href="http://tapstream.com/how-it-works/">FAQ</a></li> |
+      <li><a href="http://tapstream.com/pricing/">Pricing</a></li> |
+      <li><a href="http://tapstream.com/developer/">Documentation</a></li> |
+      <li>Blog</li> |
+      <li><a href="http://tapstream.com/support/">Contact Us</a></li>
+
+    </ul>
+    </div>
+    </div>
+
+<div id="blog-container">
+
+  <div id="blogsidebar">
+
+    <div style="text-align: right;">
+      <a href="http://twitter.com/TapstreamApp"><img src="http://media.tumblr.com/tumblr_m9lffrXUj91r13sfj.png" alt="Twitter icon" /></a>
+      <a href="http://facebook.com/306646642749211"><img src="http://media.tumblr.com/tumblr_m9lffngZyk1r13sfj.png" alt="Facebook icon" /></a>
+      <a href="https://plus.google.com/b/106094380859633890642/106094380859633890642/posts"><img src="http://media.tumblr.com/tumblr_m9lffigi1A1r13sfj.png" alt="Google Plus icon" /></a>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+
+    <h3>12 Weeks of Christmas:</h3>
+    <div>Your practical Week-by-Week<br/>
+    Guide to App Marketing</div>
+    <br/>
+    <img src="http://media.tumblr.com/tumblr_ma92l6gTVr1r13sfj.png" />
+    <br/>
+
+    <p>Get ready for the biggest sales period of the year with our simple 12-week guide on how to boost your mobile app sales during the holidays. Don't miss a week:</p>
+
+    <!-- Begin MailChimp Signup Form -->
+    <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <div id="mc_embed_signup">
+    <form action="http://tapfolio.us2.list-manage2.com/subscribe/post?u=269d6939151ef9eef45eb7409&amp;id=133eadba61" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      
+      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+      <div class="clear"><input type="submit" value="Start Now >" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color: green;"></div>
+    </form>
+    </div>
+
+    <!--End mc_embed_signup-->
+
+    <br/>
+    <br/>
+
+    <h3>Recent posts</h3>
+
+    <div id="recentPosts">Loading...</div>
+
+  </div><!--! end of blogsidebar -->
+
+
+  <div role="main">
+
+
+    <header>
+        <p>
+          
+          
+            <a href="/" class="back"><span>Tapstream Blog</span></a>
+          
+        </p>
+    </header>
+    
+    
+    
+      <article class="text advanced">
+        
+        
+        
+        
+        
+        
+          <h2><a rel="bookmark" href="http://blog.tapstream.com/post/32272713812/the-12-weirdest-apps-ever-made">The 12 Weirdest Apps Ever Made</a></h2>
+
+          <div class="article-content">
+            <p><em>This is a guest post by Cody Campbell, a digital marketer here in Vancouver. More about him at the bottom of this post.</em><br/><br/>With over a million mobile apps now available in the app stores, app developers should be proud of their honourable contribution to the global tech community. Their apps have made a huge difference in the lives of users around the world, both increasing, and severely decreasing, the productivity of us all. <br/><br/>Today we honour the eccentric people who have brought us the most outrageous, quirky and clever apps around. Without further adieu, I give you the 12 weirdest apps we could possibly find:<br/><br/></p>
+<p><strong>1. <a href="http://itunes.apple.com/us/app/drunk-dial-no!/id309080055?mt=8">Drunk Dial No!</a></strong><br/><br/>We all have a few contacts in our phone that should NOT be called at 1am on a Friday night. With Drunk Dialer No, you can hide contact phone numbers from your belligerent self for up to 48 hours. Never again will you wake up regretting the calls you made the night before. For all you singles with your brain below your waist, block your ex’s and say “NO” to that late night booty call!</p>
+<p><img src="http://media.tumblr.com/tumblr_matlcoavfL1rrcyn5.jpg" width="250"/><img src="http://media.tumblr.com/tumblr_matlcufMoL1rrcyn5.jpg" width="250"/></p>
+<p><br/><strong>2. <a href="http://itunes.apple.com/us/app/bowel-mover-pro-digestion/id480842167?mt=8">Bowel Mover</a></strong><br/><br/>Got a blockage in your pipes?! This sexy app will help you track your digestion and consumption habits on your mission to clean your system. Find out what gets you going (literally) and keep up with all your latest bowel movements. And that’s not all folks: you can even capture your latest poogress and share it with your friends!</p>
+<p><img src="http://media.tumblr.com/tumblr_matleyJONI1rrcyn5.jpg" width="250"/><img src="http://media.tumblr.com/tumblr_matlf4369d1rrcyn5.jpg" width="250"/></p>
+<p><br/><strong>3. <a href="https://play.google.com/store/apps/details?id=com.droidhen.paperracing">Paper Racing</a></strong><br/><br/>Now that you’ve released that pressure, its time to snag some TP and clean up the mess. This addictive game pairs you up against your friends to find out who can spin-off a roll of toilet paper the fastest. Which technique will you use; the Fast Tap or the BIG BEAR SWIPE?</p>
+<p><img src="http://media.tumblr.com/tumblr_matlgj5HtB1rrcyn5.jpg" width="166"/><img src="http://media.tumblr.com/tumblr_matlh8IvOz1rrcyn5.jpg" width="166"/><img src="http://media.tumblr.com/tumblr_matlhjSYok1rrcyn5.jpg" width="166"/></p>
+<p><br/><strong>4. <a href="http://itunes.apple.com/us/app/game-for-cats/id406740405?mt=8">Game for Cats</a></strong><br/><br/>Scientific Fact: Cats play video games; their favourite machine is the iPad 3. <br/><br/>This iPad app is world famous. It’s gotten press from the New York Times, L.A. Times, WIRED.CO.UK, Gizmodo, ABC News and more. It’s simple: cat chase laser on screen, owner like happy cat, owner get duped with in-app purchase and buy “Mouse Level”. Cat now chase small rodent on screen and catch with paw. Needless to say, this app developer has touched the hearts of crazy cat ladies worldwide.</p>
+<p><img src="http://media.tumblr.com/tumblr_matljvMjUr1rrcyn5.jpg" width="250"/><img src="http://media.tumblr.com/tumblr_matlk6CXEy1rrcyn5.jpg" width="250"/></p>
+<p><br/><strong>5. <a href="http://itunes.apple.com/us/app/annoy-a-teen/id298562245?mt=8">Annoy-A-Teen</a></strong><br/><br/>Does your teen son or daughter act like an irrational animal? If so, it’s time to treat them like one. With Annoy-A-Teen, you can blast out irritatingly high frequency sounds that will drive them nuts. The beauty of it is your old ass ears won’t hear a thing! This app even works covertly; hide it in your pocket and those little SUCKAZ won’t know what hit ‘em!</p>
+<p><img src="http://media.tumblr.com/tumblr_matlljMMDG1rrcyn5.jpg" width="250"/><img src="http://media.tumblr.com/tumblr_matllvGzBG1rrcyn5.jpg" width="250"/></p>
+<p><br/><strong>6. The Brostache</strong><br/><br/>This app is perfect for Ron Burgundy wannabe’s and the poor folks who can’t grow facial hair for ‘Movember’. Step 1: Choose one of the seven stache’s suitable for a variety of occasions: a business meeting, raging party, or hot date. Step 2: Place the phone over your mouth and speak - the moustache mouth will mimic your words.</p>
+<p><img src="http://media.tumblr.com/tumblr_matlmwOTxJ1rrcyn5.jpg" width="250"/><img src="http://media.tumblr.com/tumblr_matln2mgrV1rrcyn5.jpg" width="250"/></p>
+<p><br/><strong>7. <a href="http://itunes.apple.com/ae/app/paranormal-state-emf-meter/id301915840?mt=8">Paranormal EMF Meter</a> </strong><br/><br/>Ghost hunting is real kids. Every <a href="http://xs2ghosts.weebly.com/">Individual Paranormal Consultant</a> worthy of note is strapped up with a state-of-the-art Paranormal <a href="http://en.wikipedia.org/wiki/EMF_measurement">EMF Meter</a>. Now, with this snazzy gizmo, you can be a fraud too! Next time you’re walking your neighbourhood at night, whip out your EMF Meter and discover what’s really out there. Feel like you’re not alone? Watch the needle creep up the scale as you’re joined by spirits of the beyond.</p>
+<p><img src="http://media.tumblr.com/tumblr_matlnt1CMv1rrcyn5.jpg" width="250"/></p>
+<p><br/><strong>8. Haircaster</strong><br/><br/>OK gurrrl, us men know that if your hair nappy, you ain&#8217;t happy. It’s clear that ya’ll like <a href="http://www.youtube.com/watch?v=1m-4qxz08So">Good Hair</a> and you’ll go through hell and back to keep it looking <a href="http://www.urbandictionary.com/define.php?term=fyne">FYNE</a>. So what if I told you that you never had to have a bad hair day again? Darlin&#8217;, you gon’ love this app right hurrrr: <br/><br/>Haircaster checks the local weather conditions including humidity, wind, rain and temperature and advises women how it will impact their hair. Warnings include “STAY HOME” and “FRIZZ ALERT”. Additional styling tips are provided based on individuals’ hair texture.</p>
+<p><img src="http://media.tumblr.com/tumblr_matlolDIEY1rrcyn5.jpg" width="250"/></p>
+<p><br/><strong>9. <a href="http://itunes.apple.com/us/app/pimple-popper/id312383694?mt=8">Pimple Popper</a></strong><br/><br/>If you were a pizza face like me in the 8th grade, you’re gunna rule at this game. Pick ‘n’ pop your way through eight faces tackling blackheads, whiteheads, full blown ragers and the notorious ZIT SCAB! Become a Pimple Master by perfecting special techniques for each zit. What else can I say, this app promises an ooooeyy goooeey good time. Once you pop, you just can’t stop.<br/><br/>Pro tip: never squeeze the tip, or you’ll have a bleeder!</p>
+<p><img src="http://media.tumblr.com/tumblr_matlpezvCq1rrcyn5.jpg" width="250"/><img src="http://media.tumblr.com/tumblr_matlpj95Rx1rrcyn5.jpg" width="250"/></p>
+<p><br/><strong>10. <a href="http://itunes.apple.com/us/app/places-ive-pooped/id417926033?mt=8">Places I’ve Pooped</a></strong><br/><br/>Bombs away! This little gem helps you track all the places you&#8217;ve pooped in the world. It’s especially useful for those traveling through Mexico, South East Asia and India (I know you know what im sayin’!). Expand your territory, conquer the world and have a detailed map to prove it. I’m not exactly sure what kind of person it takes to use an app like this, but if you’re out there, I urge you to remain anonymous.</p>
+<p><img src="http://media.tumblr.com/tumblr_matlq1tJWM1rrcyn5.jpg" width="250"/><img src="http://media.tumblr.com/tumblr_matlq76NQF1rrcyn5.jpg" width="250"/></p>
+<p><br/><strong>11. <a href="http://itunes.apple.com/us/app/fake-excuse-hangup-now!-*free*/id354650766?mt=8">Fake-An-Excuse: Hangup Now!</a></strong><br/><br/>Whether it’s your in-laws, crazy ex-girlfriend or wild uncle Cletus, there’s always a time when you’re dying to get the heck off the phone. Most of us Canucks are too polite to tell it how it is, so we tend to lie to squeek our way out of these situations. With the help of Fake-An-Excuse, we have access to over 45 realistic excuses and sound effects to help us in times of dire need. You know, stuff like killer bee attacks, government wiretaps - the goods! Warning: don’t let your significant other see this app installed on your phone.</p>
+<p><img src="http://media.tumblr.com/tumblr_matlqpXf9u1rrcyn5.jpg" width="250"/><img src="http://media.tumblr.com/tumblr_matlquYJeN1rrcyn5.jpg" width="250"/></p>
+<p><br/><strong>12. <a href="https://play.google.com/store/apps/details?id=air.RunPee&amp;hl=en">Run and Pee</a></strong></p>
+<p>This puppy right here is a MUST HAVE for every movie goer. I think we can all agree, that at one time or another, we’ve gone to the cinema and experienced a full bladder in the midst of our favourite new blockbuster. And yes, I’ve even found myself wiggling into crazy yoga poses to seal off the pressure from erupting mid-film. People, our saviour has come. Run and Pee tells you the best times to go pee during your movie and fills you in on what you’ve missed during your bathroom trip. It’s utter genius! See the full video below to fully understand the magic:</p>
+<p><iframe frameborder="0" height="375" src="http://www.youtube.com/embed/Cvhy_3VHLd4?rel=0" width="500"></iframe></p>
+<p><strong><br/>About the Author</strong></p>
+<p><img align="right" src="http://media.tumblr.com/tumblr_max4ekPsS21rrcyn5.jpg" width="200"/></p>
+<p><span>Cody Campbell is a digital marketer based in Vancouver, working with startups and event promoters </span><span>to build</span><span> vibrant online</span><span> communities</span><span>. In his spare time, he travels the world soaking up new cultures and looking for adventure. He loves meeting new people and talking business over beer, so do say hello! Catch him on Twitter at <a href="http://www.twitter.com/cody_campbell" target="_blank">@Cody_Campbell</a>.</span></p>
+            <div class="article-append">
+                  <p><em>
+                  <br/>
+                  Tapstream makes web marketing easier for mobile app developers. See which web visitors turn into app users in web ads, when comparing referring sites or between two landing pages. <a href="http://in.tapstream.com/blog11">Try us out, 30-day trial is free.</a> You can also find us on Twitter at <a href="http://twitter.com/TapstreamApp">@TapstreamApp</a>.
+                  </em></p>
+                  <br clear="all" />
+            </div>
+
+          </div>
+        
+        
+        
+        <footer>
+
+          <div style="width: 600px; margin-top: 4px; margin-bottom: 50px; ">
+        <!-- AddThis Button BEGIN -->
+        <div class="addthis_toolbox addthis_default_style " tw:count="vertical" addthis:url="http://blog.tapstream.com/post/32272713812/the-12-weirdest-apps-ever-made" addthis:title="The 12 Weirdest Apps Ever Made" >
+          <a class="addthis_button_tweet" tw:via="TapstreamApp" tw:count="vertical"></a>
+          <a class="addthis_button_google_plusone" g:plusone:size="tall"></a>
+          <a class="addthis_button_facebook_like" fb:like:width="450" fb:like:layout="box_count"></a>
+        </div>
+        <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-502fea8e13203797"></script>
+        <!-- AddThis Button END -->
+      </div>
+      <br clear="all" />
+
+          <ul class="meta">
+            
+              <li class="day"><a href="http://blog.tapstream.com/post/32272713812/the-12-weirdest-apps-ever-made">25/09/12</a></li>
+            
+            
+              <li class="tags">
+                <ul>
+                  
+                    <li><a href="http://blog.tapstream.com/tagged/weird" title="weird">weird</a></li>
+                  
+                    <li><a href="http://blog.tapstream.com/tagged/apps" title="apps">apps</a></li>
+                  
+                    <li><a href="http://blog.tapstream.com/tagged/comedy" title="comedy">comedy</a></li>
+                  
+                    <li><a href="http://blog.tapstream.com/tagged/humour" title="humour">humour</a></li>
+                  
+                    <li><a href="http://blog.tapstream.com/tagged/cody-campbell" title="cody campbell">cody campbell</a></li>
+                  
+                </ul>
+              </li>
+            
+
+
+
+            <!-- <div style="text-align: right; margin-right: 90px; margin-top: 4px;"><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.tapstream.com/post/32272713812/the-12-weirdest-apps-ever-made" data-text="The 12 Weirdest Apps Ever Made" data-via="TapstreamApp" data-count="none">Tweet this</a> <a href="http://news.ycombinator.com/submit" class="hn-share-button" data-title="The 12 Weirdest Apps Ever Made" data-url="http://blog.tapstream.com/post/32272713812/the-12-weirdest-apps-ever-made"></a><iframe src="//www.facebook.com/plugins/like.php?href=http://blog.tapstream.com/post/32272713812/the-12-weirdest-apps-ever-made&amp;send=false&amp;layout=button_count&amp;width=51&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=197376773703837" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:51px; height:21px;" allowTransparency="true"></iframe></div> -->
+
+            
+            
+            
+            
+            
+
+            
+          </ul>
+          
+            
+          
+          
+
+        </footer>
+      </article><!--! end of text article -->
+    
+    <footer>
+      <div id="pagination">
+        
+        
+            
+              <a href="http://blog.tapstream.com/post/31985453375" class="pagination-link older"><span>Older Post</span></a>
+            
+            
+        
+        </div><!--! end of #pagination -->
+    </footer>
+  </div><!--! end of main -->
+
+</div><!-- end of blog-container -->
+
+
+<div id="blogfooter-container">
+  <div id="blogfooter">
+    <div id="socialbuttons">
+    <a href="http://twitter.com/TapstreamApp"><img src="http://static.tumblr.com/arbn4az/WkOlm2rfk/twitter-icon.png" alt="Twitter icon" />Twitter</a>
+    <a href="http://facebook.com/306646642749211"><img src="http://static.tumblr.com/arbn4az/Mbelm2ra2/facebook-icon.png" alt="Facebook icon" />Facebook</a>
+    <a href="https://plus.google.com/b/106094380859633890642/106094380859633890642/posts"><img src="http://static.tumblr.com/g2l6mdu/qIely2img/icon-google-3.png" alt="Google Plus icon" />Google Plus</a>
+    <a href="http://blog.tapstream.com/rss"><img src="http://static.tumblr.com/arbn4az/jqXlm2t9d/rss-icon.png" alt="RSS Icon" />RSS Feed</a>
+    </div>
+
+    <div id="copyright">&copy; 2012 Tapstream Inc, <a href="https://tapstream.com/legal/privacy_policy/">Privacy Policy</a> and <a href="https://tapstream.com/legal/terms_of_use/">Terms of Use</a></div>
+  </div>
+</div>
+
+
+
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="http://static.tumblr.com/arbn4az/yyillayf8/jquery-1.6.1.min.js"%3E%3C/script%3E'))</script>
+  <script>
+  $(document).ready(function(){
+    // Toggle full screen
+    $("a.full").click(toggleFull);
+    function toggleFull() {
+      $("body").toggleClass("fullscreen");
+      return false;
+    }
+    // Implement active class on nav
+    var url = window.location.pathname;
+      var navitems = $('nav ul li a');
+      var pathArray = url.split('/').pop();
+      $.each(navitems, function(i, e) {
+            if($(this).attr('href') == url) {
+              if($(this).parent().attr('id') !== 'homepage') {
+                $("article").removeClass('advanced');
+              }
+              $('nav ul li').removeClass('active');
+                  $(this).parent().addClass('active');
+            }
+      });
+    // White Youtube player
+    $('embed[src^="http://www.youtube.com"]', this).each(function(){
+      var parent = $(this).closest('.video-wrapper');
+      parent.html( parent.html().replace(/rel=0/gmi, 'rel=0&amp;color1=0xFFFFFF&amp;color2=0xFFFFFF&amp;hd=1') );
+    });
+  });
+  </script>
+  
+  <script>
+  var _gaq=[['_setAccount','UA-30496553-3'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+  
+
+  <script>
+    (function(d, t) {
+        var g = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        g.src = '//hnbutton.appspot.com/static/hn.js';
+        s.parentNode.insertBefore(g, s);
+    }(document, 'script'));
+</script>
+
+
+<script type="text/javascript">
+
+   google.load("feeds", "1");
+     
+    function OnLoad() {
+      var feedControl = new google.feeds.FeedControl();
+      feedControl.setNumEntries(5);
+     
+      feedControl.addFeed("http://tapstream.tumblr.com/rss");
+     
+      feedControl.draw(document.getElementById("recentPosts"));
+    }
+     
+    google.setOnLoadCallback(OnLoad);
+</script>
+
+  <!-- BEGIN TUMBLR CODE -->
+            <script type="text/javascript" language="javascript" src="http://assets.tumblr.com/javascript/tumblelog.js?5cc643081b5aeed0a17688cf807b52c7"></script>
+    <iframe src="http://assets.tumblr.com/iframe.html?1049&amp;src=http%3A%2F%2Fblog.tapstream.com%2Fpost%2F32272713812%2Fthe-12-weirdest-apps-ever-made&amp;pid=32272713812&amp;rk=IjVqQk3m&amp;lang=en_US&amp;name=tapstream" width="330" height="25" scrolling="no" frameborder="0" style="position:absolute; z-index:1337; top:0px; right:0px; border:0px; background-color:transparent; overflow:hidden;" id="tumblr_controls"></iframe>
+    <!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]-->
+    <script type="text/javascript">_qoptions={qacct:"p-19UtqE8ngoZbM"};</script><script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script><noscript><img src="http://pixel.quantserve.com/pixel/p-19UtqE8ngoZbM.gif" style="display:none; border-width:0px; height:1px; width:1px;" alt=""/></noscript><!-- END TUMBLR CODE --><iframe src="http://assets.tumblr.com/analytics.html?11" scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0 z-index:9999;" id="ga_target"></iframe></body>
+</html>

@@ -1,0 +1,1638 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META name="keywords" content="Digital content & entertainment, Enterprise IT, Personalization & privacy, Terrorism, Security, Telecom infrastructure, Telecom services, Consumer Internet, Developing world, Environment, Web 2.0, Blogs, IPTV, VOIP, WiMax, 802.11, Craig Newmark, John Grimes, Kevin Mitnick, Philip Rosedale, Ralph Szygenda, Don Tapscott, Thomas Dolby, Matt Bross, Steve Stasiukonis, Jack Uldrich, Peter Kash, David Weinberger, Robert Scoble, Cory Doctorow">
+<META name="description" content="Part 2: IBM's research labs are like a candy shop for technologists. In Part 2 of this 2-part series, we take a look at Many Eyes, a solution in data visualization and Smart Surveillance Solution (S3), a tool in physical security.">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="google-site-verification" content="_XTWaggsfrodOf0v8BDPSbEpkyZvSXO8VJQmeLH3jvU" />
+<title>Internet Evolution - IBM Videos - Exploring IBM Research Labs (Part 2) </title>
+
+<link rel="shortcut icon" href="http://img.lightreading.com/favicons/ie_favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="http://img.lightreading.com/favicons/ie_favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="image_src" href="http://img.deusm.com/facebook/fb_Internet_evolution_200x200.jpg" />
+<link rel="meta" type="application/rdf+xml" title="RDF Metadata" href="/rdf_simple.asp?the_docid=187008&the_url=http%3A%2F%2Fwww%2Einternetevolution%2Ecom%2Fdocument%2Easp%3Fdoc%5Fid%3D187008" />
+<link rel="canonical" href="http://www.internetevolution.com/document.asp?doc_id=187008"/>
+<link type="text/css" rel="stylesheet" href="http://img.deusm.com/commoncss/internetevolution_site.css"/>
+
+<script language="Javascript" src="http://img.deusm.com/commonscript/cmp_omniture_h_s_code_remote.js"></script>
+<script language="JavaScript" src="http://img.deusm.com/commonscript/complete.js"></script>
+<script type="text/javascript" src="http://img.deusm.com/commonscript/jquery-1.5.2.min.js"></script>
+<script language="JavaScript">
+theSiteDomain = 'www.internetevolution.com';
+thePageTitle = 'Internet Evolution - IBM Videos - Exploring IBM Research Labs (Part 2) ';
+</script>
+<script language = "Javascript"> 
+function SubmitInPageSurvey(inSurvey, inWidth) { 
+	var theForm = GetObject('survey_' + inSurvey); 
+	var theFormSubmitURL = 'http://www.internetevolution.com/survey_jspage.asp?survey_submit=yes&survey_width='+ inWidth +'&cbust=37630&survey_async=yes&survey_async_ip=199%2E30%2E80%2E112&'; 
+	for (var felt = 0; felt <  theForm.elements.length; felt++) {
+		var thisElt = theForm.elements[felt]; 
+		if (thisElt.type == 'checkbox' || thisElt.type == 'radio') { 
+			if (thisElt.checked) { 
+				theFormSubmitURL = theFormSubmitURL + thisElt.name + '=' + URLEncodeString(thisElt.value) + '&'; 
+			} 
+		} 
+		else { 
+			theFormSubmitURL = theFormSubmitURL + thisElt.name + '=' + URLEncodeString(thisElt.value) + '&'; 
+		} 
+	} 
+	//alert(theFormSubmitURL); 
+	LoadScript(theFormSubmitURL); 
+	return false; 
+} 
+</script>
+</head>
+<body class="sitedefault" bgcolor="#ffffff" border="0"  onLoad="window.scroll(0,returnPosYofObj(GetObject('internetevolution_template_logo')) - 2);GetObject('the_ratebox_316125').style.marginTop = '10px';">
+
+<!-- omniture -->
+<script language="JavaScript">
+<!--
+s.pageName="";
+s.server="";
+s.channel="";
+s.pageType="";
+s.prop1="";
+s.prop2="187008";
+s.prop3="Internet Evolution | 187008 | Exploring IBM Research Labs (Part 2) ";
+s.prop4="Exploring IBM Research Labs (Part 2) ";
+s.prop5="";
+s.prop6="";
+s.prop7="";
+s.prop8="199.30.80.112 | ";
+s.prop9="";
+s.prop10="";
+s.prop11="";
+s.prop12="";
+s.prop13="";
+s.prop14="";
+s.prop15="";
+s.prop16="";
+s.prop19="False";
+s.prop20="20100127";
+
+/* E-commerce Variables */
+s.campaign="";
+s.state="";
+s.zip="";
+s.events="event5";
+s.products="";
+s.purchaseID="";
+s.eVar1="";
+s.eVar2="";
+s.eVar3="";
+s.eVar4="";
+s.eVar5="";
+s.eVar23="False";
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code);
+//-->
+</script>
+<noscript>
+<img src="http://cmpglobalvista.112.2o7.net/b/ss/cmpglobalvista/1/H.16--NS/35513?g=http%3A%2F%2Fwww%2Einternetevolution%2Ecom%2Fdocument%2Easp%3Fdoc%5Fid%3D187008%26cid%3Dsem%5Fcomm%5Fhrd%5Fsu%5Fdocstr%5F20120319&server=www%2Einternetevolution%2Ecom&c2=187008" width="1" height="1" border="0">
+</noscript>
+
+<div align="center"><table width="970" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td width="970" align="right" valign="top"><div style="width: 970px;">
+<div style="margin-top: 5px; width: 150px; float: right;"><span class="smallest lightgray"><a href="/mobile/">Click here for our mobile site</a></span></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div></td>
+	</tr>
+	<tr>
+		<td width="970" align="left" valign="top"><div style="border: 2px solid #e6e6e6; margin-top: 30px; float: left;"><div style="width: 800px; display: block;">
+<div style="width: 728px; height: 90px; margin-left: 36px; margin-right: 36px; margin-top: 13px; margin-bottom: 13px;">
+<!--JavaScript Tag // Tag for network 5242: United Business Media // Website: Internet Evolution // Page: ROS // Placement: BACKUP_Top_728x90 (1183669) // created at: May 26, 2010 3:45:43 PM-->
+<script language="javascript"><!--
+document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1183669/0/225/ADTECH;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1183669/0/225/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1183669/0/225/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" border="0" width="728" height="90"></a></noscript>
+<!-- End of JavaScript Tag --><img src="http://www.internetevolution.com/client_adlog.asp?a=11752&s=35513" border="0" width="1" height="1" hspace="0" vspace="0">
+</div>
+</div></div>
+<div style="float: right; width: 166px; margin-top: 30px; " align="right"><a href="http://itunes.apple.com/us/app/internet-evolution/id456345243?mt=8" target="new"><img src="http://img.deusm.com/internetevolution/IE_app_ad6.gif" width="140" height="120" border="0" /></a></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</td>
+	</tr>
+	<tr>
+		<td width="970" align="right" valign="top"><div class="divsplitter" style="height: 15px;"></div></td>
+	</tr>
+	<tr>
+		<td width="970" align="left" valign="top"><div style="width: 970px;">
+<div style="float: left; width: 601px; margin-right: 33px;"><img id="internetevolution_template_logo" name="internetevolution_template_logo" src="http://img.deusm.com/internetevolution/intevol_logo_top_new.gif" width="601" height="58" border="0" alt="Internet Evolution" /></div>
+<div style="float: left; width: 336px; margin-top: 28px;"><img src="http://img.deusm.com/internetevolution/intevol_tag_top_new.gif" width="279" height="31" border="0" alt="The Macrosite for News, Analysis and Opinion about the Future of the Internet" /></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+
+<div style="width: 970px;">
+<div style="float: left; margin-right: 8px; margin-top: 21px;"><span class="darkgray transback strong"><a href="../">Home</a> | 
+<a name="videolist_button_top" id="videolist_button_top" href="Javascript:ShowMenu('menu_box_video',(returnPosXofObj(GetObject('videolist_button_top')) + 15),(returnPosYofObj(GetObject('videolist_button_top'))));">Video</a> | 
+<a href="/archives.asp?section_id=657">Tutorials</a> | 
+<a name="eventslist_button_top" id="eventslist_button_top" href="Javascript:ShowMenu('menu_box_events',(returnPosXofObj(GetObject('eventslist_button_top')) + 15),(returnPosYofObj(GetObject('eventslist_button_top'))));">Webinars</a> | 
+<a href="/archives.asp?threads=yes">Message Boards</a> | <a href="/register.asp">Join</a> | <a href="/login.asp?piddl_nexturl=http%3A%2F%2Fwww%2Einternetevolution%2Ecom%2Fdocument%2Easp%3Fdoc%5Fid%3D187008%26cid%3Dsem%255Fcomm%255Fhrd%255Fsu%255Fdocstr%255F20120319">Login</a> | <a href="/document.asp?doc_id=134133">About Us</a></span></div>
+<div style="float: left; margin-top: 23px;"><a href="http://staging.internetevolution.com/rss_simple.asp"><img src="http://img.lightreading.com/images/rss_icon.gif" width="13" height="13" border="0" /></a></div>
+<div style="float: right; margin-top: 15px;"><img src="http://img.deusm.com/internetevolution/intevol_ibm_logo_revise.gif" width="123" height="21" border="0"></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div></td>
+	</tr>
+	<tr>
+		<td width="970" align="left" valign="top"><div class="divsplitter" style="height: 19px;"></div></td>
+	</tr>
+	<tr>
+		<td width="970" align="left" valign="top" style="background-color: #e6e6e6;">
+<div style="width: 970px;  height: 33px; background-color: #e6e6e6; display: block; margin: 0;">
+<div style="width: 970px;  height: 33px; background-color: #e6e6e6; display: block;">
+
+<div style="width: 617px; height: 33px; float: left;">
+<div style="width: 61px; height: 26px; margin-top: 7px; margin-left: 13px; margin-right: 17px; float: left;"><img src="http://img.deusm.com/internetevolution/intevol_topclannav_label2.gif" width="61" height="26" border="0" /></div>
+<div style="width: 77px; height: 26px; margin-top: 7px; margin-right: 8px; float: left;"><a href="/analytics-clan.asp" target="new"><img id="intevol_topclannav_analyticsclan" name="intevol_topclannav_analyticsclan" onmouseover="intevol_topclannav_analyticsclan_mouseoverFunction()" onmouseout="intevol_topclannav_analyticsclan_mouseoutFunction()" src="http://img.deusm.com/internetevolution/intevol_topclannav_analyticsclan.gif" width="77" height="26" border="0" /></a></div>
+
+<div style="width: 57px; height: 26px; margin-top: 7px; margin-right: 8px; float: left;"><a href="/cloud-clan.asp" target="new"><img id="intevol_topclannav_cloudclan" name="intevol_topclannav_cloudclan" onmouseover="intevol_topclannav_cloudclan_mouseoverFunction()" onmouseout="intevol_topclannav_cloudclan_mouseoutFunction()" src="http://img.deusm.com/internetevolution/intevol_topclannav_cloudclan.gif" width="57" height="26" border="0" /></a></div>
+
+<div style="width: 79px; height: 26px; margin-top: 7px; margin-right: 8px; float: left;"><a href="/executive-clan.asp" target="new"><img id="intevol_topclannav_executiveclan" name="intevol_topclannav_executiveclan" onmouseover="intevol_topclannav_executiveclan_mouseoverFunction()" onmouseout="intevol_topclannav_executiveclan_mouseoutFunction()" src="http://img.deusm.com/internetevolution/intevol_topclannav_executiveclan.gif" width="79" height="26" border="0" /></a></div>
+
+<div style="width: 34px; height: 26px; margin-top: 7px; margin-right: 8px; float: left;"><a href="/itclan.asp" target="new"><img id="intevol_topclannav_itclan" name="intevol_topclannav_itclan" onmouseover="intevol_topclannav_itclan_mouseoverFunction()" onmouseout="intevol_topclannav_itclan_mouseoutFunction()" src="http://img.deusm.com/internetevolution/intevol_topclannav_itclan.gif" width="34" height="26" border="0" /></a></div>
+
+<div style="width: 86px; height: 26px; margin-top: 7px; margin-right: 8px; float: left;"><a href="/midmarket-clan.asp" target="new"><img id="intevol_topclannav_midmarketclan" name="intevol_topclannav_midmarketclan" onmouseover="intevol_topclannav_midmarketclan_mouseoverFunction()" onmouseout="intevol_topclannav_midmarketclan_mouseoutFunction()" src="http://img.deusm.com/internetevolution/intevol_topclannav_midmarketclan.gif" width="86" height="26" border="0" /></a></div>
+
+<div style="width: 70px; height: 26px; margin-top: 7px; margin-right: 8px; float: left;"><a href="/securityclan.asp" target="new"><img id="intevol_topclannav_securityclan" name="intevol_topclannav_securityclan" onmouseover="intevol_topclannav_securityclan_mouseoverFunction()" onmouseout="intevol_topclannav_securityclan_mouseoutFunction()" src="http://img.deusm.com/internetevolution/intevol_topclannav_securityclan.gif" width="70" height="26" border="0" /></a></div>
+
+						<div style="width: 50px; height: 26px; margin-top: 7px; margin-right: 8px; float: left;"><a href="/archives.asp?tag_id=2734" target="new"><img id="intevol_topclannav_cmoclan" name="intevol_topclannav_cmoclan" src="http://img.deusm.com/internetevolution/intevol_topclannav_cmoclan.gif" width="50" height="26" border="0" /></a></div>
+					
+</div>
+<div style="width: 1px; height: 33px; float: left; background-color: #ffffff;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="33" border="0"></div>
+<div style="width: 16px; height: 33px; float: left;"><form name="template_search" id="template_search" action="/search.asp" method="post" style="margin: 0; padding: 0;"><img src="http://img.deusm.com/images/spacer.gif" width="16" height="1" border="0"></div>
+<div style="width: 336px; height: 33px; float: left;"><div align="right">
+<div style="width: 268px; height: 24px; margin-top: 6px; float: left;"><input name="search_value" type="text" maxlength="250" style="width: 266px; height: 20px; font-size: 12px; font-family: tahoma, arial, helvetica; color: #000000; text-decoration: none; font-weight: normal; border: 1px solid #999999; background-color: #ffffff;"></div>
+<div style="width: 54px; height: 15px; margin-top: 8px; float: left;"><span class="bigsmallest transback plain black strong"><a href="javascript:GetObject('template_search').submit();">Search</a></span></form></div>
+<div style="width: 14px; height: 15px; margin-top: 8px; float: left;"><img src="http://img.deusm.com/images/spacer.gif" width="14" height="1" border="0"></div>
+</div></div>
+</div>
+</div></td>
+	</tr>
+
+	<tr>
+		<td width="970" align="left" valign="top"><div class="divsplitter" style="height: 19px;"></div></td>
+	</tr>
+	<tr>
+		<td width="970" align="left" valign="top">
+<div align="left" class="default">
+
+<div style="margin-top: 0; margin-bottom: 0;">
+<table width="970" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td width="16" align="left" valign="top"><img src="http://img.deusm.com/images/spacer.gif" width="16" height="1" border="0"></td>
+		<td width="585" align="left" valign="top"><!-- 
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description rdf:about="http://www.internetevolution.com/document.asp?doc_id=187008" dc:identifier="http://www.internetevolution.com/document.asp?doc_id=187008" dc:title="Exploring IBM Research Labs (Part 2) " 
+trackback:ping="http://www.internetevolution.com/trackback/trackback.asp?doc_id=187008" />
+</rdf:RDF>
+ -->
+<link rel="pingback" href="http://www.internetevolution.com/xmlrpc.asp" />
+
+<div class="contentwrapper">
+
+<div style="width: 585px;">
+<div style="float: left; width: 90px;"><img src="http://img.lightreading.com/internetevolution/intevol_ietvlogo_90x45.gif" width="90" height="45" border="0"></div>
+<div style="float: left;">
+
+<div style="width: 112px; height: 33px; float: left;"><form name="video_search" id="video_search" action="/search.asp" method="post"><input type="hidden" name="search_videos" value="yes"><img src="http://img.lightreading.com/images/spacer.gif" width="112" height="45" border="0"></div>
+<div style="width: 268px; height: 24px; margin-top: 21px; float: left;"><input name="search_value" type="text" maxlength="250" style="width: 266px; height: 20px; font-size: 12px; font-family: tahoma, arial, helvetica; color: #000000; text-decoration: none; font-weight: normal; border: 1px solid #999999; background-color: #ffffff;"></div>
+<div style="width: 9px; height: 15px; margin-top: 25px; float: left;"><img src="http://img.lightreading.com/images/spacer.gif" width="9" height="1" border="0"></div>
+<div style="height: 15px; margin-top: 25px; float: left;"><span class="transback plain black"><a href="javascript:GetObject('video_search').submit();">Search video</a></span></div>
+<div style="width: 5px; height: 15px; margin-top: 25px; float: left;"></form><img src="http://img.lightreading.com/images/spacer.gif" width="5" height="1" border="0"></div>
+
+</div>
+
+<div class="divsplitter"  style="height: 19px;"></div>
+</div>
+
+<style type="text/css">
+.iebluetopborder {
+	background: url(http://img.lightreading.com/images/lr2009_borderieblue.gif) top repeat-x;
+}
+.iebluebotborder {
+	background: url(http://img.lightreading.com/images/lr2009_borderieblue.gif) bottom repeat-x;
+}
+.ieblueltborder {
+	background: url(http://img.lightreading.com/images/lr2009_borderieblue.gif) left repeat-y;
+}
+.iebluertborder {
+	background: url(http://img.lightreading.com/images/lr2009_borderieblue.gif) right repeat-y;
+}
+.iebluebotltcorner {
+	background: url(http://img.lightreading.com/images/lr2009_cornerieblue_botleft.gif) bottom left no-repeat;
+}
+.iebluebotrtcorner {
+	background: url(http://img.lightreading.com/images/lr2009_cornerieblue_botright.gif) bottom right no-repeat;
+}
+.iebluetopltcorner {
+	background: url(http://img.lightreading.com/images/lr2009_cornerieblue_topleft.gif) top left no-repeat;
+}
+.iebluetoprtcorner {
+	background: url(http://img.lightreading.com/images/lr2009_cornerieblue_topright.gif) top right no-repeat;
+}
+
+.ietvbuttoncontentoff {
+	font-weight: normal;
+	font-size: 18px;
+	color: #4282dc;
+}
+
+.ietvbuttoncontenton {
+	font-weight: bold;
+	font-size: 18px;
+	color: #4282dc;
+}
+
+.ietvbuttoncontentouteroff {
+	background-color: #ffffff;
+}
+
+.ietvbuttoncontentouteron {
+	background-color: transparent;
+}
+</style>
+
+<script language="Javascript">
+
+function ToggleIETVNavButtonBg(inButtonName, inOnOrOff) {
+	GetObject(inButtonName + '_content').className = 'ietvbuttoncontent' + inOnOrOff;
+	GetObject(inButtonName + '_contentouter').className = 'ietvbuttoncontentouter' + inOnOrOff;
+	if (inButtonName == 'ietvnav_channel' || inButtonName == 'ietvnav_vblogger') { 
+		if (inOnOrOff == 'on') {
+			PopMenu(inButtonName + '_arrowpopmenu_toparrow',(returnPosXofObj(GetObject(inButtonName)) + 0),(returnPosYofObj(GetObject(inButtonName)) + 36));
+			lockPoppedMenu = true;
+			lockedPoppedMenuObjName = inButtonName + '_arrowpopmenu_toparrow';
+		} else {
+			lockPoppedMenu = false;
+			lockedPoppedMenuObjName = '';
+			PopMenuOff(inButtonName + '_arrowpopmenu_toparrow', -500, 38);
+		}
+	}
+}
+
+</script>
+
+<div style="width: 585px; height: 36px;">
+<div style="float: left; margin-top: 11px; margin-right: 8px;"><span class="blue">View by</span></div>
+
+<div name="ietvnav_channel" id="ietvnav_channel" onmouseover="ToggleIETVNavButtonBg('ietvnav_channel','on');" onmouseout="ToggleIETVNavButtonBg('ietvnav_channel','off');" style="float: left; margin-right: 5px;">
+<div name="ietvnav_channel_cornerone" id="ietvnav_channel_cornerone" class="iebluetopborder"><div name="ietvnav_channel_cornertwo" id="ietvnav_channel_cornertwo" class="iebluebotborder"><div name="ietvnav_channel_cornerthree" id="ietvnav_channel_cornerthree" class="ieblueltborder"><div name="ietvnav_channel_cornerfour" id="ietvnav_channel_cornerfour" class="iebluertborder"><div name="ietvnav_channel_cornerfive" id="ietvnav_channel_cornerfive" class="iebluebotltcorner"><div name="ietvnav_channel_cornersix" id="ietvnav_channel_cornersix" class="iebluebotrtcorner"><div name="ietvnav_channel_cornerseven" id="ietvnav_channel_cornerseven" class="iebluetopltcorner"><div name="ietvnav_channel_cornereight" id="ietvnav_channel_cornereight" class="iebluetoprtcorner"><div name="ietvnav_channel_contentouter" id="ietvnav_channel_contentouter" class="ietvbuttoncontentouteroff" style="width: 91px; height: 36px;" align="center">
+<div name="ietvnav_channel_content" id="ietvnav_channel_content" class="ietvbuttoncontentoff" style="margin-left: 8px; margin-right: 8px;">
+<div class="divsplitter" style="height: 9px;"></div>
+Channel
+</div>
+</div></div></div></div></div></div></div></div></div>
+</div>
+
+
+<div name="ietvnav_channel_arrowpopmenu_toparrow" id="ietvnav_channel_arrowpopmenu_toparrow" onmouseover="ToggleIETVNavButtonBg('ietvnav_channel','on');" onmouseout="ToggleIETVNavButtonBg('ietvnav_channel','off');" style="width: 480px; position: absolute; z-index: 8; left: -500px; top: 38px;">
+<div style="width: 45px; height: 12px; position: relative; left: 10px; top: 1px;"><img src="http://img.lightreading.com/internetevolution/intevol_ietv_popuparrow_gray_top.png" width="45" height="12" border="0"></div>
+<div style="border: 1px solid #b3b3b3; background-color: #f4f4f4;">
+<table width="478" cellpadding="0" cellspacing="0" border="0" style="margin: 0; padding: 0;">
+	<tr>
+		<td colspan="9"><img src="http://img.lightreading.com/images/spacer.gif" width="1" height="12" border="0"></td>
+	</tr>
+	<tr>
+		<td width="12"><img src="http://img.lightreading.com/images/spacer.gif" width="12" height="1" border="0"></td>
+		<td width="105" valign="top" align="left">
+<span class="black"><b>Industries</b> </span></td>
+		<td width="12"><img src="http://img.lightreading.com/images/spacer.gif" width="12" height="1" border="0"></td>
+		<td colspan="3" valign="top" align="left">
+<span class="black"><b>Topics & Technologies</b> </span></td>
+		<td width="12"><img src="http://img.lightreading.com/images/spacer.gif" width="12" height="1" border="0"></td>
+		<td width="105" valign="top" align="left">
+<span class="black"><b>Regions</b> </span></td>
+		<td width="12"><img src="http://img.lightreading.com/images/spacer.gif" width="12" height="1" border="0"></td>
+	</tr>
+	<tr>
+		<td width="12"><img src="http://img.lightreading.com/images/spacer.gif" width="12" height="1" border="0"></td>
+		<td width="105" valign="top" align="left">
+<span class="gray">
+<br /><a href="/ietv.asp?tag_id=2366">Electronics</a>
+<br /><a href="/ietv.asp?tag_id=2178">Finance & Banking</a>
+<br /><a href="/ietv.asp?tag_id=2360">Government</a>
+<br /><a href="/ietv.asp?tag_id=2368">Greentech</a>
+<br /><a href="/ietv.asp?tag_id=2363">Healthcare</a>
+<br /><a href="/ietv.asp?tag_id=2367">Insurance</a>
+<br /><a href="/ietv.asp?tag_id=2364">Media & entertainment</a>
+<br /><a href="/ietv.asp?tag_id=2362">Pharmaceutical</a>
+<br /><a href="/ietv.asp?tag_id=2361">Retail</a>
+<br /><a href="/ietv.asp?tag_id=2365">Transportation</a></span></td>
+		<td width="12"><img src="http://img.lightreading.com/images/spacer.gif" width="12" height="1" border="0"></td>
+		<td width="105" valign="top" align="left">
+<span class="gray">
+<br /><a href="/ietv.asp?tag_id=2359">Executive Analysis</a>
+<br /><a href="/ietv.asp?tag_id=2168">Enterprise IT</a>
+<br /><a href="/ietv.asp?tag_id=2401">Midtier Enterprise</a>
+<br />
+<br /><a href="/ietv.asp?tag_id=2149">Access technologies</a>
+<br /><a href="/ietv.asp?tag_id=2150">Blogs</a>
+<br /><a href="/ietv.asp?tag_id=2151">Cable</a>
+<br /><a href="/ietv.asp?tag_id=2152">Comm chips</a>
+<br /><a href="/ietv.asp?tag_id=2174">Consumer Internet</a>
+<br /><a href="/ietv.asp?tag_id=2153">Data center / storage</a>
+<br /><a href="/ietv.asp?tag_id=2175">Developing world</a>
+<br /><a href="/ietv.asp?tag_id=2167">Digital content & entertainment</a>
+<br /><a href="/ietv.asp?tag_id=2190">Google</a>
+<br /><a href="/ietv.asp?tag_id=2154">IP</a>
+<br /><a href="/ietv.asp?tag_id=2155">IPTV</a></span></td>
+		<td width="10"><img src="http://img.lightreading.com/images/spacer.gif" width="10" height="1" border="0"></td>
+		<td width="105" valign="top" align="left">
+<span class="gray">
+<br /><a href="/ietv.asp?tag_id=2156">Mobile / wireless</a>
+<br /><a href="/ietv.asp?tag_id=2157">Optical networking</a>
+<br /><a href="/ietv.asp?tag_id=2169">Personalization & privacy</a>
+<br /><a href="/ietv.asp?tag_id=2159">RSS</a>
+<br /><a href="/ietv.asp?tag_id=2160">Search</a>
+<br /><a href="/ietv.asp?tag_id=2171">Security</a>
+<br /><a href="/ietv.asp?tag_id=2193">Social Networking</a>
+<br /><a href="/ietv.asp?tag_id=2172">Telecom infrastructure</a>
+<br /><a href="/ietv.asp?tag_id=2173">Telecom services</a>
+<br /><a href="/ietv.asp?tag_id=2170">Terrorism</a>
+<br /><a href="/ietv.asp?tag_id=2161">Video</a>
+<br /><a href="/ietv.asp?tag_id=2162">VOIP</a>
+<br /><a href="/ietv.asp?tag_id=2177">Web 2.0</a>
+<br /><a href="/ietv.asp?tag_id=2163">Wikis</a>
+<br /><a href="/ietv.asp?tag_id=2164">WiMax</a>
+<br /><a href="/ietv.asp?tag_id=2165">WLANs / 802.11</a></span></td>
+		<td width="12"><img src="http://img.lightreading.com/images/spacer.gif" width="12" height="1" border="0"></td>
+		<td width="105" valign="top" align="left">
+<span class="gray">
+<br /><a href="/ietv.asp?tag_id=2391">Africa</a>
+<br /><a href="/ietv.asp?tag_id=2392">Americas</a>
+<br /><a href="/ietv.asp?tag_id=2393">Asia-Pacific</a>
+<br /><a href="/ietv.asp?tag_id=2394">Europe</a>
+<br /><a href="/ietv.asp?tag_id=2395">Middle East</a>
+<br /><a href="/ietv.asp?tag_id=2396">South Asia</a></span></td>
+		<td width="12"><img src="http://img.lightreading.com/images/spacer.gif" width="12" height="1" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="9"><img src="http://img.lightreading.com/images/spacer.gif" width="1" height="12" border="0"></td>
+	</tr>
+</table>
+
+</div>
+</div>
+
+
+<div name="ietvnav_vblogger" id="ietvnav_vblogger" onmouseover="ToggleIETVNavButtonBg('ietvnav_vblogger','on');" onmouseout="ToggleIETVNavButtonBg('ietvnav_vblogger','off');" style="float: left; margin-right: 5px;">
+<div name="ietvnav_vblogger_cornerone" id="ietvnav_vblogger_cornerone" class="iebluetopborder"><div name="ietvnav_vblogger_cornertwo" id="ietvnav_vblogger_cornertwo" class="iebluebotborder"><div name="ietvnav_vblogger_cornerthree" id="ietvnav_vblogger_cornerthree" class="ieblueltborder"><div name="ietvnav_vblogger_cornerfour" id="ietvnav_vblogger_cornerfour" class="iebluertborder"><div name="ietvnav_vblogger_cornerfive" id="ietvnav_vblogger_cornerfive" class="iebluebotltcorner"><div name="ietvnav_vblogger_cornersix" id="ietvnav_vblogger_cornersix" class="iebluebotrtcorner"><div name="ietvnav_vblogger_cornerseven" id="ietvnav_vblogger_cornerseven" class="iebluetopltcorner"><div name="ietvnav_vblogger_cornereight" id="ietvnav_vblogger_cornereight" class="iebluetoprtcorner"><div name="ietvnav_vblogger_contentouter" id="ietvnav_vblogger_contentouter" class="ietvbuttoncontentouteroff" style="width: 96px; height: 36px;" align="center">
+<div name="ietvnav_vblogger_content" id="ietvnav_vblogger_content" class="ietvbuttoncontentoff" style="margin-left: 8px; margin-right: 8px;">
+<div class="divsplitter" style="height: 9px;"></div>
+Vblogger
+</div>
+</div></div></div></div></div></div></div></div></div>
+</div>
+
+
+
+<div name="ietvnav_vblogger_arrowpopmenu_toparrow" id="ietvnav_vblogger_arrowpopmenu_toparrow" onmouseover="ToggleIETVNavButtonBg('ietvnav_vblogger','on');" onmouseout="ToggleIETVNavButtonBg('ietvnav_vblogger','off');" style="width: 480px; position: absolute; z-index: 8; left: -500px; top: 38px;">
+<div style="width: 45px; height: 12px; position: relative; left: 10px; top: 1px;"><img src="http://img.lightreading.com/internetevolution/intevol_ietv_popuparrow_gray_top.png" width="45" height="12" border="0"></div>
+<div style="border: 1px solid #b3b3b3; background-color: #f4f4f4;">
+<table width="478" cellpadding="0" cellspacing="0" border="0" style="margin: 0; padding: 0;">
+	<tr>
+		<td colspan="7"><img src="http://img.lightreading.com/images/spacer.gif" width="1" height="12" border="0"></td>
+	</tr>
+	<tr>
+		<td width="12"><img src="http://img.lightreading.com/images/spacer.gif" width="12" height="1" border="0"></td>
+		<td width="144" valign="top" align="left">
+<span class="black"><b>Top 5 Vbloggers</b> </span>
+<span class="gray"><br />
+
+<br /><a href="/ietv.asp?section_id=826">Second Shooter</a>
+<br /><a href="/ietv.asp?section_id=818">Reiter's Block</a>
+<br /><a href="/ietv.asp?section_id=1333">Kim Davis</a>
+<br /><a href="/ietv.asp?section_id=817">what.the.ferraro</a>
+<br /><a href="/ietv.asp?section_id=891">Wisdom of the Big Chair</a>
+<br />
+
+<br /><span class="black"><b>Vbloggers A-Z</b> </span>
+<br />
+<br /><a href="/ietv.asp?section_id=956">Sam Altman</a>
+<br /><a href="/ietv.asp?section_id=870">Rafat Alvi</a>
+<br /><a href="/ietv.asp?section_id=828">Sandeep Amar</a>
+<br /><a href="/ietv.asp?section_id=829">Jart Armin</a>
+<br /><a href="/ietv.asp?section_id=825">Robert D. Atkinson</a>
+<br /><a href="/ietv.asp?section_id=1614">David Austin</a>
+<br /><a href="/ietv.asp?section_id=824">Cyan Banister</a>
+<br /><a href="/ietv.asp?section_id=1882">David Bartlett</a>
+<br /><a href="/ietv.asp?section_id=1050">Genevieve Bell</a>
+<br /><a href="/ietv.asp?section_id=885">Amir Ben-Efraim</a>
+<br /><a href="/ietv.asp?section_id=886">Lee H. Berke</a>
+<br /><a href="/ietv.asp?section_id=1165">Beau Brendler</a>
+<br /><a href="/ietv.asp?section_id=1190">Stephen Brobst</a>
+<br /><a href="/ietv.asp?section_id=832">Brown Out</a>
+<br /><a href="/ietv.asp?section_id=964">Jerry Brown</a>
+<br /><a href="/ietv.asp?section_id=811">David Buckholtz</a>
+<br /><a href="/ietv.asp?section_id=860">Adam Caplan</a>
+<br /><a href="/ietv.asp?section_id=952">Daniel Castro</a>
+<br /><a href="/ietv.asp?section_id=1561">Ann Cavoukian</a>
+<br /><a href="/ietv.asp?section_id=1616">Staci Cenis</a>
+<br /><a href="/ietv.asp?section_id=801">Aneesh Chopra</a>
+<br /><a href="/ietv.asp?section_id=820">Scott Clavenna</a>
+<br /><a href="/ietv.asp?section_id=1018">Bram Cohen</a>
+<br /><a href="/ietv.asp?section_id=967">June Cohen</a>
+<br /><a href="/ietv.asp?section_id=933">Phillippe Courtot</a>
+		</span></td>
+		<td width="11"><img src="http://img.lightreading.com/images/spacer.gif" width="11" height="1" border="0"></td>
+		<td width="144" valign="top" align="left">
+<span class="gray">
+<a href="/ietv.asp?section_id=880">Thus Spake Mr. Cramer</a>
+<br /><a href="/ietv.asp?section_id=1883">Jack Danahy</a>
+<br /><a href="/ietv.asp?section_id=982">Jack Dangermond</a>
+<br /><a href="/ietv.asp?section_id=1333">Kim Davis</a>
+<br /><a href="/ietv.asp?section_id=1049">John Engates</a>
+<br /><a href="/ietv.asp?section_id=812">Bob Evans</a>
+<br /><a href="/ietv.asp?section_id=846">Executive Takes</a>
+<br /><a href="/ietv.asp?section_id=817">what.the.ferraro</a>
+<br /><a href="/ietv.asp?section_id=830">TeleGraham</a>
+<br /><a href="/ietv.asp?section_id=939">Jon Fisher</a>
+<br /><a href="/ietv.asp?section_id=874">From the Editors</a>
+<br /><a href="/ietv.asp?section_id=931">Raimund Genes</a>
+<br /><a href="/ietv.asp?section_id=1202">Ben Golub</a>
+<br /><a href="/ietv.asp?section_id=833">Not Dr. Phil</a>
+<br /><a href="/ietv.asp?section_id=947">David Hayden</a>
+<br /><a href="/ietv.asp?section_id=974">Swayne Hill</a>
+<br /><a href="/ietv.asp?section_id=816">The Incredible Hultquist</a>
+<br /><a href="/ietv.asp?section_id=809">Marianne James</a>
+<br /><a href="/ietv.asp?section_id=1294">Mary Jander</a>
+<br /><a href="/ietv.asp?section_id=975">Chris Jones</a>
+<br /><a href="/ietv.asp?section_id=1435">Kevin Jones</a>
+<br /><a href="/ietv.asp?section_id=1312">Scott Klososky</a>
+<br /><a href="/ietv.asp?section_id=934">Paul Kocher</a>
+<br /><a href="/ietv.asp?section_id=1073">Scott Koegler</a>
+<br /><a href="/ietv.asp?section_id=969">David Koretz</a>
+<br /><a href="/ietv.asp?section_id=891">Wisdom of the Big Chair</a>
+<br /><a href="/ietv.asp?section_id=842">Thomas S. Kunz</a>
+<br /><a href="/ietv.asp?section_id=848">Eurotrash</a>
+<br /><a href="/ietv.asp?section_id=892">Eugene Lee</a>
+<br /><a href="/ietv.asp?section_id=1357">Ginny Lee</a>
+<br /><a href="/ietv.asp?section_id=823">Gideon J. Lenkey</a>
+<br /><a href="/ietv.asp?section_id=861">Bill Loumpouridis</a>
+<br /><a href="/ietv.asp?section_id=981">Carl Malamud</a>
+<br /><a href="/ietv.asp?section_id=845">Marissa Mayer</a>
+<br /><a href="/ietv.asp?section_id=810">Wayne Mekjian</a>
+		</span></td>
+		<td width="11"><img src="http://img.lightreading.com/images/spacer.gif" width="11" height="1" border="0"></td>
+		<td width="144" valign="top" align="left">
+<span class="gray">
+<a href="/ietv.asp?section_id=1361">Eben Moglen</a>
+<br /><a href="/ietv.asp?section_id=935">Jim Morris</a>
+<br /><a href="/ietv.asp?section_id=1358">Bob Moul</a>
+<br /><a href="/ietv.asp?section_id=802">Full Nelson</a>
+<br /><a href="/ietv.asp?section_id=826">Second Shooter</a>
+<br /><a href="/ietv.asp?section_id=1210">Bolaji Ojo</a>
+<br /><a href="/ietv.asp?section_id=948">Mike Olson</a>
+<br /><a href="/ietv.asp?section_id=853">Steven Peterson</a>
+<br /><a href="/ietv.asp?section_id=963">Edward Pleet</a>
+<br /><a href="/ietv.asp?section_id=818">Reiter's Block</a>
+<br /><a href="/ietv.asp?section_id=1000">Jodee Rich</a>
+<br /><a href="/ietv.asp?section_id=1359">Mike Riegel</a>
+<br /><a href="/ietv.asp?section_id=970">Treb Ryan</a>
+<br /><a href="/ietv.asp?section_id=962">Simon Saba</a>
+<br /><a href="/ietv.asp?section_id=822">Rob Salkowitz</a>
+<br /><a href="/ietv.asp?section_id=800">Steve Saunders' Outernet</a>
+<br /><a href="/ietv.asp?section_id=951">Mary E. Shacklett</a>
+<br /><a href="/ietv.asp?section_id=814">Singer at C-Level</a>
+<br /><a href="/ietv.asp?section_id=819">John Soat</a>
+<br /><a href="/ietv.asp?section_id=1001">The Sole Man</a>
+<br /><a href="/ietv.asp?section_id=876">Cirque Du Solez</a>
+<br /><a href="/ietv.asp?section_id=871">Sebastian Stadil</a>
+<br /><a href="/ietv.asp?section_id=827">Marc Staimer</a>
+<br /><a href="/ietv.asp?section_id=930">Thomas Steding</a>
+<br /><a href="/ietv.asp?section_id=1199">Richard Stiennon</a>
+<br /><a href="/ietv.asp?section_id=1630">Sherry Swackhamer</a>
+<br /><a href="/ietv.asp?section_id=831">Sweeney Blog</a>
+<br /><a href="/ietv.asp?section_id=1201">Chris Tolles</a>
+<br /><a href="/ietv.asp?section_id=821">David Vellante</a>
+<br /><a href="/ietv.asp?section_id=1562">David Vladeck</a>
+<br /><a href="/ietv.asp?section_id=808">Raymond Voelker</a>
+<br /><a href="/ietv.asp?section_id=1314">Mitch Wagner</a>
+<br /><a href="/ietv.asp?section_id=1615">Jane Williams</a>
+</span></td>
+		<td width="12"><img src="http://img.lightreading.com/images/spacer.gif" width="12" height="1" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="7"><img src="http://img.lightreading.com/images/spacer.gif" width="1" height="12" border="0"></td>
+	</tr>
+</table>
+
+</div>
+</div>
+
+<div name="ietvnav_education" id="ietvnav_education" onmouseover="ToggleIETVNavButtonBg('ietvnav_education','on');" onmouseout="ToggleIETVNavButtonBg('ietvnav_education','off');" style="float: left; margin-right: 5px;">
+<div name="ietvnav_education_cornerone" id="ietvnav_education_cornerone" class="iebluetopborder"><div name="ietvnav_education_cornertwo" id="ietvnav_education_cornertwo" class="iebluebotborder"><div name="ietvnav_education_cornerthree" id="ietvnav_education_cornerthree" class="ieblueltborder"><div name="ietvnav_education_cornerfour" id="ietvnav_education_cornerfour" class="iebluertborder"><div name="ietvnav_education_cornerfive" id="ietvnav_education_cornerfive" class="iebluebotltcorner"><div name="ietvnav_education_cornersix" id="ietvnav_education_cornersix" class="iebluebotrtcorner"><div name="ietvnav_education_cornerseven" id="ietvnav_education_cornerseven" class="iebluetopltcorner"><div name="ietvnav_education_cornereight" id="ietvnav_education_cornereight" class="iebluetoprtcorner"><div name="ietvnav_education_contentouter" id="ietvnav_education_contentouter" class="ietvbuttoncontentouteroff" style="width: 107px; height: 36px;" align="center">
+<div name="ietvnav_education_content" id="ietvnav_education_content" class="ietvbuttoncontentoff" style="margin-left: 8px; margin-right: 8px;">
+<div class="divsplitter" style="height: 9px;"></div>
+<span class="big blue transback stronghover" style="line-height: 15px;"><a href="/ietv.asp?section_id=846,462,1111">Education</a></span>
+</div>
+</div></div></div></div></div></div></div></div></div>
+</div>
+
+<div name="ietvnav_ietvhome" id="ietvnav_ietvhome" onmouseover="ToggleIETVNavButtonBg('ietvnav_ietvhome','on');" onmouseout="ToggleIETVNavButtonBg('ietvnav_ietvhome','off');" style="float: left; margin-right: 5px;">
+<div name="ietvnav_ietvhome_cornerone" id="ietvnav_ietvhome_cornerone" class="iebluetopborder"><div name="ietvnav_ietvhome_cornertwo" id="ietvnav_ietvhome_cornertwo" class="iebluebotborder"><div name="ietvnav_ietvhome_cornerthree" id="ietvnav_ietvhome_cornerthree" class="ieblueltborder"><div name="ietvnav_ietvhome_cornerfour" id="ietvnav_ietvhome_cornerfour" class="iebluertborder"><div name="ietvnav_ietvhome_cornerfive" id="ietvnav_ietvhome_cornerfive" class="iebluebotltcorner"><div name="ietvnav_ietvhome_cornersix" id="ietvnav_ietvhome_cornersix" class="iebluebotrtcorner"><div name="ietvnav_ietvhome_cornerseven" id="ietvnav_ietvhome_cornerseven" class="iebluetopltcorner"><div name="ietvnav_ietvhome_cornereight" id="ietvnav_ietvhome_cornereight" class="iebluetoprtcorner"><div name="ietvnav_ietvhome_contentouter" id="ietvnav_ietvhome_contentouter" class="ietvbuttoncontentouteroff" style="width: 118px; height: 36px;" align="center">
+<div name="ietvnav_ietvhome_content" id="ietvnav_ietvhome_content" class="ietvbuttoncontentoff" style="margin-left: 8px; margin-right: 8px;">
+<div class="divsplitter" style="height: 9px;"></div>
+<span class="big blue transback stronghover" style="line-height: 15px;"><a href="/ietv.asp">IETV Home</a></span>
+</div>
+</div></div></div></div></div></div></div></div></div>
+</div>
+
+
+<div style="float: right; margin-top: 11px; margin-left: 12px;"><span class="blue"><a href="/profile.asp?the_fieldsmode=content_prefs">Subscribe</a></span></div>
+
+<div style="float: right; margin-top: 11px;"><span class="blue"><a href="/document.asp?doc_id=182354">About</a></span></div>
+
+<div class="divsplitter"  style="height: 0px;"></div>
+</div>
+
+<div class="divsplitter"  style="height: 21px;"></div>
+
+<div style="position: absolute; left: -500px; top: 200px;">
+<img src="http://img.lightreading.com/images/lr2009_borderieblue.gif">
+<img src="http://img.lightreading.com/images/lr2009_cornerieblue_botleft.gif">
+<img src="http://img.lightreading.com/images/lr2009_cornerieblue_botright.gif">
+<img src="http://img.lightreading.com/images/lr2009_cornerieblue_topleft.gif">
+<img src="http://img.lightreading.com/images/lr2009_cornerieblue_topright.gif">
+</div>
+
+
+
+<div name="piddl_contentnotifysubscribelink_doc_187008" id="piddl_contentnotifysubscribelink_doc_187008" style="display: block; float: right;"><span class="red strong"><a href="Javascript: ShowContentNotifySubscribeMenu_Doc_187008();">Subscribe<img src="http://img.lightreading.com/images/spacer.gif" width="6" height="6" border="0" style="" /><img src="http://img.lightreading.com/internetevolution/intevol_red_checkmark_13x13_onwhite.gif" width="13" height="13" border="0" style="" /></a> </span></div>
+<script language="Javascript">
+function ShowContentNotifySubscribeMenu_Doc_187008() {
+	ShowMenu('piddl_contentnotifyprefsdiv_doc_187008_arrowmenu_leftarrow', returnPosXofObj(GetObject('piddl_contentnotifysubscribelink_doc_187008')) + 83, returnPosYofObj(GetObject('piddl_contentnotifysubscribelink_doc_187008')) - 25);
+}
+</script>
+<div class="divsplitter" style="height: 1px;"></div>
+<div style="width: 585px; height: 412px;" align="center">
+<style type="text/css">span.lrembedtxt {color: #4282dc; font-family: tahoma, arial, geneva, helvetica;font-size: 10px; line-height: 14px;font-weight: normal;text-decoration: none;border: 0;}span.lrembedtxt a, span.lrembedtxt a:active, span.lrembedtxt a:visited {color: #4282dc;font-weight: normal;text-decoration: underline;border: 0;}span.lrembedtxt a:hover {color: #000000;font-weight: normal;background-color: #eef5fb;border: 0;}textarea.lrembedtxt {width: 400px; font-family: tahoma, arial, helvetica; font-size: 11px; font-weight: normal; text-decoration: none; color: #4c4c4c;border: 1px solid #666666;}</style>
+<div style="width: 585px; margin-top: 0px;"><div id="bcplayer_187008" name="bcplayer_187008">
+<!-- Start of Player -->
+<script language="Javascript">function brightcoveConfig_187008(){return 'brightcoveietv';}</script>
+<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script language="JavaScript">
+document.write('<object id="myExperience_187008" class="BrightcoveExperience">');
+document.write('<param name="bgcolor" value="#FFFFFF" />');
+document.write('<param name="width" value="585" />');
+document.write('<param name="height" value="390" />');
+document.write('<param name="playerID" value="957791670001" />');
+document.write('<param name="playerKey" value="AQ~~,AAAAAF14eAc~,GZC-YoxXneg-dEeFac4ya5qKo-NUx-GA" />');
+document.write('<param name="publisherID" value="1568176135"/>');
+document.write('<param name="autoStart" value="true" />');
+document.write('<param name="isVid" value="true" />');
+document.write('<param name="isUI" value="true" />');
+document.write('<param name="@videoPlayer" value="ref:187008" />');
+document.write('<param name="wmode" value="opaque" />');
+document.write('</object>');
+</script>
+<div><img src="http://www.internetevolution.com/client_pathlog.asp?p=%2Fbrightcoveietv%2Fvideo%2Fsection%2F462%2F187008&f=%2Fbrightcoveietv%2Fvideo%2Fsection%2F462%2F187008&rndserial=35514" border="0" width="1" height="1"></div>
+<!-- End of Player -->
+</div></div>
+
+<div class="divsplitter" style="height: 1px;"></div>
+</div>
+
+<div class="divsplitter" style="height: 15px;"></div>
+
+<div>
+<div style="display: block; float: left; width: 434px;" name="thedocheadline" id="thedocheadline" align="left"><h1 class="blue bigsmall header">Exploring the IBM Research Labs (Part 2) </h1>
+<span class="gray">Part 2: IBM's research labs are like a candy shop for technologists. In Part 2 of this 2-part series, we take a look at Many Eyes, a solution in data visualization and Smart Surveillance Solution (S3), a tool in physical security.</span></div>
+
+<div style="float: right;"><div name="the_ratebox_316125" id="the_ratebox_316125"  class="docrate" ><div class="ratebox"><div class="divsplitter" style="height: 5px;"></div><div  align="center" ><div style="display: block; width: 100%;"><div align="left" style="display: block; width: 95px; height: 18px;"><div align="center"><span class="small strong">no ratings</span></div></div></div><div class="divsplitter"></div><div class="divsplitter" style="height: 5px;"></div><div  align="center" ><div class="loginbutton"><ul class="loginbuttons"><li class="loginbutton"><span class="blue smallest strong"><a href="/login.asp?piddl_nexturl=http%3A%2F%2Fwww%2Einternetevolution%2Ecom%2Fdocument%2Easp%3Fdoc%5Fid%3D187008%26cid%3Dsem%255Fcomm%255Fhrd%255Fsu%255Fdocstr%255F20120319&piddl_msg=Please+login%2E">Login to Rate</a></span></li></ul></div></div></div></div></div></div>
+
+<div class="divsplitter"  style="height: 5px;"></div>
+</div>
+<div id="thedoctop" name="thedoctop" class="docfullblock">
+<div style="float: left;"><span class="smallest plain uppercase nobold blue"><a href="#msgs">DISCUSS</a> &nbsp; 
+<script language="JavaScript">
+<!--
+var thispage_doctop187008_sharelink = 'http://www.internetevolution.com/document.asp?doc_id=187008';
+//-->
+</script>
+ &nbsp; <a href="/email.asp" onclick="window.open('/email.asp?url='+encodeURIComponent(thispage_doctop187008_sharelink)+'&title='+encodeURIComponent(document.title),'',''); return false;"><img src="http://img.lightreading.com/icons/email_intevol_18x18.gif" width="18" height="18" border="0"> Email This</a>
+
+</span></div><div style="float: left; margin-left: 10px;"><div>
+<div style="float: left;"><a href="http://twitter.com/share" class="twitter-share-button"  data-via="NetEvolution"  data-url="http://www.internetevolution.com/document.asp?doc_id=187008" data-count="horizontal" data-counturl="http://www.internetevolution.com/document.asp?doc_id=187008">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
+<div style="float: left; margin-right: 5px;"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.internetevolution.com%2Fdocument.asp%3Fdoc_id%3D187008&amp;layout=button_count&amp;show_faces=false&amp;width=87&amp;action=like&amp;font=tahoma&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:87px; height:21px;" allowTransparency="true"></iframe></div>
+<div style="float: left; margin-right: 5px;"><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><script type="in/share" data-url="http://www.internetevolution.com/document.asp?doc_id=187008" data-counter="right"></script></div>
+<div style="float: left; margin-right: 5px; width: 90px; overflow: hidden;"><g:plusone size="medium"></g:plusone>
+<script type="text/javascript">
+//<!--
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+po.src = 'https://apis.google.com/js/plusone.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+//-->
+</script></div>
+</div></div><div class="divsplitter" style="height: 0;"></div><div style="display: block; width: 585px;">
+<div align="left" style="float: left; width: 460px; margin-top: 5px;">
+<div style="float: left; display: inline; width: 434px; margin-top: 0; margin-left: 2px; margin-right: 5px; margin-bottom: 5px; padding: 0;">
+<div style="float: left; height: 13px; margin-top: 7px;"><a href="/rss_simple.asp?f_s=462&f_ln=IBM+Videos" style="border: 0;"><img src="http://img.lightreading.com/images/rss_icon.gif" width="13" height="13" border="0"></a></div>
+<div style="float: left; margin-top: 5px; margin-left: 5px;"><span class="gray">1/27/2010 </span><span class="blue"> <a href="#msgs">Post a comment</a></span></div>
+</div>
+</div>
+</div>
+<div class="divsplitter" style="height: 15px;"></div>
+<div style="float: left;"><span class="blue bigsmalltallline">Channel: 
+<br>Tags: </span></div>
+<!--<div class="divsplitter" style="height: 10px;"></div>-->
+</div>
+
+</div>
+
+<div name="piddl_contentnotifyprefsdiv_doc_187008_arrowmenu_leftarrow" id="piddl_contentnotifyprefsdiv_doc_187008_arrowmenu_leftarrow" style="width: 330px; position: absolute; z-index: 8; left: -500px; top: 38px;">
+<div style="float: left; width: 12px; height: 45px; position: relative; left: 1px;"><img src="http://img.lightreading.com/internetevolution/intevol_ietv_popuparrow_gray_left.png" width="12" height="45" border="0"></div>
+<div style="float: left; width: 316px; border: 1px solid #b3b3b3; background-color: #f4f4f4;">
+<div name="piddl_contentnotifyprefsdiv_doc_187008_arrowmenu_leftarrow_content" id=name="piddl_contentnotifyprefsdiv_doc_187008_arrowmenu_leftarrow_content" style="margin: 13px;">
+<div name="piddl_contentnotifyprefsform_doc_187008_message" id="piddl_contentnotifyprefsform_doc_187008_message"><span class="black"> </span></div>
+<form name="piddl_contentnotifyprefsform_doc_187008" id="piddl_contentnotifyprefsform_doc_187008" action="" onSubmit="return ContentNotifyPrefsShortSubmit('piddl_contentnotifyprefsform_doc_187008', 'piddl_contentnotifyprefsform_doc_187008_message')" method="post" style="margin: 0; padding: 0px;">
+	<input type="hidden" id="piddl_fieldsmode" name="piddl_fieldsmode" value="content_prefs">
+	<input type="hidden" id="pcep_submit" name="pcep_submit" value="yes">
+	<input type="hidden" id="pcep_ctype" name="pcep_ctype" value="document">
+	<input type="hidden" id="pcep_simple" name="pcep_simple" value="yes">
+
+<span class="blue"><b>Subscribe me to the following:</b></span>
+<br /><table cellspacing="0" cellpadding="2" border="0">
+<tr><td align="right"><input type="checkbox" id="pcep_nocdids_def" name="pcep_nocdids_def" value="Video Blog"> </td><td colspan="3"><span class="gray small">all IETV video blogs </span></td></tr>
+<tr><td align="right"><input type="checkbox" id="pcep_exc_cdids" name="pcep_exc_cdids" value="462"> </td><td colspan="3"><span class="gray small">all IBM Videos video blogs </span></td></tr>
+<tr><td align="right"><input type="checkbox" id="pcep_cdids" name="pcep_cdids" value="462"> </td><td colspan="3"><span class="gray small">only IBM Videos video blogs that match the Channels I've selected below: </span></td></tr>
+
+<!--<tr><td colspan="2" align="right"><input type="checkbox" id="pcep_fdids" name="pcep_fdids" value="2149"> </td><td colspan="2"> Access technologies</td></tr>-->
+
+<tr><td colspan="4"><input type="button" name="contentnotifyemailbutton_doc_187008" id="contentnotifyemailbutton_doc_187008" value="Subscribe via Email"  class="forminputbutton" > &nbsp; <input type="button" name="contentnotifyrssbutton_doc_187008" id="contentnotifyrssbutton_doc_187008" value="RSS Feed"  class="forminputbutton" ></td></tr>
+<tr><td width="3%">&nbsp;</td><td width="18%">&nbsp;</td><td width="40%">&nbsp;</td><td width="40%" align="right"><span class="gray smallest"><a href="Javascript: ShowMenu('piddl_contentnotifyprefsdiv_doc_187008_arrowmenu_leftarrow',-500,38);">close this box</a> </span></td></tr>
+</table>
+</form>
+</div>
+</div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+
+<script language = "Javascript"> 
+AddEventListenerToObj(GetObject('contentnotifyemailbutton_doc_187008'), 'click', function() { return ContentNotifyPrefsRedirect_doc_187008(); }, false);
+AddEventListenerToObj(GetObject('contentnotifyrssbutton_doc_187008'), 'click', function() { return ContentNotifyPrefsShortGenerateAndDisplayRSSFeed('piddl_contentnotifyprefsform_doc_187008', 'piddl_contentnotifyprefsform_doc_187008_message', '<span class=\"red strong\">', '</span>'); }, false);
+function ContentNotifyPrefsRedirect_doc_187008() {
+	self.location.href = '/login.asp?piddl_nexturl=http%3A%2F%2Fwww%2Einternetevolution%2Ecom%2Fdocument%2Easp%3Fdoc%5Fid%3D187008%26cid%3Dsem%255Fcomm%255Fhrd%255Fsu%255Fdocstr%255F20120319%26p%5Fcd%5Fpop%3Ddocument&piddl_msg=You+must+login+to+subscribe+to+content+via+email%2E';
+	return false;
+}
+</script>
+
+<div class="divsplitter" style="height: 28px;"></div>
+<div style="background-color: #f5fae6;"><div style="display: block; width: 585px; background-color: #f5fae6;"><div style="margin-left: 16px;"><div style=" float: left;"><span class="gray biggest strong"><a name="msgs">Comments</a></span></div><div style="margin-top: 15px; margin-right: 8px; float: right;"><span class="gray small"><b>Current display: &nbsp; &nbsp; &nbsp; </b>
+newest comments first &nbsp; &nbsp; &nbsp; <a href="http://www.internetevolution.com/document.asp?doc_id=187008&cid=sem%5Fcomm%5Fhrd%5Fsu%5Fdocstr%5F20120319&piddl_msgorder=asc#msgs"><u>display in chronological order</u></a></span></div>
+<div class="divsplitter" style="height: 1px;"></div></div>
+<div style="display: block; width: 585px; height: 8px; background-color: #ffffff;"></div></div>
+
+<!-- start of msgqueue -->
+<div>
+<div name="msgchatparticipantslistlink" id="msgchatparticipantslistlink" align="right"></div>
+<div class="divsplitter" style="height: 1px;"></div>
+</div>
+<div name="msgchatparticipantslistholder" id="msgchatparticipantslistholder" class="menudropdown" style="width: 150px; padding: 0;">
+<div name="msgchatparticipantslist" id="msgchatparticipantslist" style="height: 200px; margin: 5px; overflow-x: hidden; overflow-y: auto;"></div>
+<div style="margin-bottom: 5px;" align="right"><span class="smallest"><a href="Javascript:ShowMenu('msgchatparticipantslistholder',-500,38);">[close this box]</a></span></div>
+</div>
+
+<div id="msgqueue" name="msgqueue">
+<div id="msgqueue_topdiv" name="msgqueue_topdiv"></div>
+
+
+</div>
+<!-- end of msgqueue -->
+
+<div id="hidden_msgqueue" name="hidden_msgqueue" style="position: absolute; top: 500px; left: -1000px;">
+<div id="hidden_msgqueue_topdiv" name="hidden_msgqueue_topdiv"></div>
+
+</div>
+
+
+<div id="nomsgheader" name="nomsgheader" style="display: block; width: 585px; background-color: #f5fae6;"><div class="divsplitter" style="height: 16px;"></div><div style="margin-left: 16px; margin-right: 16px;"><span class="gray big">Be the first to <a href="/message.asp?piddl_fieldsmode=new&piddl_msgtopicid=45&piddl_msgparentid=316125"><u>post a comment</u></a> regarding this story.</span></div><div class="divsplitter" style="height: 16px;"></div>
+<div class="divsplitter" style="width: 585px; height: 24px; background-color: #ffffff;"></div></div>
+
+</div>
+
+</div>
+
+<div class="contentwrapper"><span class="gray small"><i>The ThinkerNet does not reflect the views of TechWeb. The ThinkerNet is an informal means of communication to members and visitors of the Internet Evolution site. Individual authors are chosen by Internet Evolution to blog. Neither Internet Evolution nor TechWeb assume responsibility for comments, claims, or opinions made by authors and ThinkerNet bloggers. They are no substitute for your own research and should not be relied upon for trading or any other purpose.</i></span></div></td>
+		<td width="16" align="left" valign="top"><img src="http://img.deusm.com/images/spacer.gif" width="16" height="1" border="0"></td>
+		<td width="1" bgcolor="#e6e6e6" align="left" valign="top"><div><img src="http://img.deusm.com/images/spacer.gif" width="1" height="1" border="0"></div></td>
+		<td width="16" align="left" valign="top"><img src="http://img.deusm.com/images/spacer.gif" width="16" height="1" border="0"></td>
+		<td width="336" align="left" valign="top">
+
+<div style="width: 336px;">
+
+<div id="LRSlider_ietvrtcolmorefrom" name="LRSlider_ietvrtcolmorefrom">
+<div id="LRSlider_Top_ietvrtcolmorefrom" name="LRSlider_Top_ietvrtcolmorefrom">
+<div style="width: 336px;"><img src="http://img.lightreading.com/internetevolution/intevol_tab_morevblogsfrom.gif" width="336" height="42" border="0"></div>
+<div style="width: 334px; border-left: 1px solid #b3b3b3;  border-right: 1px solid #b3b3b3;">
+<div class="divsplitter" style="height: 5px;"></div>
+<div style="width: 308px; height: 18px; margin-left: 13px; margin-right: 13px;">
+<div style="float: left;"><span class="gray bigsmall">IBM Videos</span></div>
+<div style="float: right; margin-top: 2px;">
+
+
+<div style="float: right; width: 9px; height: 11px; margin-top: 1px; margin-left: 9px;"><a href="Javascript: ietvrtcolmorefromSliderHandler.LRSliderSlideRight(1);" onmouseout="MM_swapImage('ietvrtcolmorefrom_rightarrowbutton','',ietvrtcolmorefromRightArrowButtonMouseoutImgSrc,1)" onmouseover="MM_swapImage('ietvrtcolmorefrom_rightarrowbutton','','http://img.lightreading.com/internetevolution/intevol_videonav_rightarrow_blue.gif',1)"><img name="ietvrtcolmorefrom_rightarrowbutton" id="ietvrtcolmorefrom_rightarrowbutton" src="http://img.lightreading.com/internetevolution/intevol_videonav_rightarrow_darkgray.gif" border="0" width="8" height="10"></a></div>
+<div style="float: right; height: 11px; margin-left: 8px; margin-top: 1px;"><span class="gray smallest" style="line-height: 10px;">5</span></div>
+<div style="float: right; height: 11px; margin-top: 1px;"><span class="gray smallest" style="line-height: 10px;">of</span></div>
+<div style="float: right; width: 8px; height: 12px;"><form name="ietvrtcolmorefrom_navform" name="ietvrtcolmorefrom_navform" action="" method="post" style="margin: 0; padding: 0;" onsubmit="return false"><img src="http://img.lightreading.com/images/spacer.gif" width="8" height="12" border="0"></div>
+<div style="float: right; width: 28px; height: 12px;" align="center"><div style="border: 1px solid #b3b3b3;"><div style="width: 26px; height: 10px; overflow: hidden;"><input name="ietvrtcolmorefrom_navform_selector" id="ietvrtcolmorefrom_navform_selector" type="text" maxlength="3" style="position: relative; top: -1px; width: 16px; height: 10px; font-size: 10px; font-family: tahoma, arial, geneva, helvetica; color: #4c4c4c; text-decoration: none; font-weight: normal; line-height: 10px; border: 0; padding: 0; margin-left: 10px; margin-top: 0; margin-bottom: 0; background-color: transparent;" value="1" onblur="ietvrtcolmorefromSliderHandler.LRSliderSlide(GetObject('ietvrtcolmorefrom_navform_selector').value)"></div></div></div>
+<div style="float: right; width: 10px; height: 12px;"><img src="http://img.lightreading.com/images/spacer.gif" width="10" height="12" border="0"></form></div>
+<div style="float: right; width: 9px; height: 11px; margin-top: 1px;"><a href="Javascript: ietvrtcolmorefromSliderHandler.LRSliderSlideLeft(1);" onmouseout="MM_swapImage('ietvrtcolmorefrom_leftarrowbutton','',ietvrtcolmorefromLeftArrowButtonMouseoutImgSrc,1)" onmouseover="MM_swapImage('ietvrtcolmorefrom_leftarrowbutton','','http://img.lightreading.com/internetevolution/intevol_videonav_leftarrow_blue.gif',1)"><img name="ietvrtcolmorefrom_leftarrowbutton" id="ietvrtcolmorefrom_leftarrowbutton" src="http://img.lightreading.com/internetevolution/intevol_videonav_leftarrow_lightgray.gif" border="0" width="8" height="10"></a></div>
+
+
+</div>
+<div class="divsplitter" style="height: 1px;"></div>
+</div>
+<div class="divsplitter" style="height: 5px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="5" border="0" /></div>
+</div>
+</div>
+<div style="width: 336px; border-left: 1px solid #b3b3b3;">
+<div style="width: 322px; margin-left: 13px;">
+
+<div class="divsplitter" style="height: 10px;"></div>
+
+<script language="Javascript">
+
+var ietvrtcolmorefromSliderHandler = new LRSliderHandler();
+
+ietvrtcolmorefromSliderHandler.thisSliderElementName = 'ietvrtcolmorefromSliderHandler';
+ietvrtcolmorefromSliderHandler.sliderElementCount = 5;
+ietvrtcolmorefromSliderHandler.sliderElementSize = 288;
+ietvrtcolmorefromSliderHandler.sliderObjectViewsize = 1;
+ietvrtcolmorefromSliderHandler.sliderRightLimit = ietvrtcolmorefromSliderHandler.sliderElementSize * ((ietvrtcolmorefromSliderHandler.sliderElementCount - ietvrtcolmorefromSliderHandler.sliderObjectViewsize) * -1) + 1;
+ietvrtcolmorefromSliderHandler.currentSliderElement = 1;
+ietvrtcolmorefromSliderHandler.sliderObjectId = 'ietvrtcolmorefrom_outside';
+ietvrtcolmorefromSliderHandler.sliderDoSlide = false;
+
+var ietvrtcolmorefromLeftArrowButtonMouseoutImgSrc = 'http://img.lightreading.com/internetevolution/intevol_videonav_leftarrow_lightgray.gif';
+var ietvrtcolmorefromRightArrowButtonMouseoutImgSrc = 'http://img.lightreading.com/internetevolution/intevol_videonav_rightarrow_darkgray.gif';
+
+ietvrtcolmorefromSliderHandler.LRSliderNavGraphicsHandlerSlideLeft = function() {
+	// change the input box value
+	GetObject('ietvrtcolmorefrom_navform_selector').value = this.currentSliderElement;
+	// now deal with the images
+	
+	var currentImage = GetObject('ietvrtcolmorefrom_rightarrowbutton');
+	// if we're at currentSliderElement < sliderElementCount make sure the right button is active
+	if (this.currentSliderElement < this.sliderElementCount) { 
+		currentImage.src = 'http://img.lightreading.com/internetevolution/intevol_videonav_rightarrow_darkgray.gif';
+	} else {
+		currentImage.src = 'http://img.lightreading.com/internetevolution/intevol_videonav_rightarrow_lightgray.gif';
+	}
+	ietvrtcolmorefromRightArrowButtonMouseoutImgSrc = currentImage.src;
+
+	// if sliding left, change when currentSliderElement gets to 1
+	currentImage = GetObject('ietvrtcolmorefrom_leftarrowbutton');
+	if (this.currentSliderElement == 1) { 
+		currentImage.src = 'http://img.lightreading.com/internetevolution/intevol_videonav_leftarrow_lightgray.gif';
+	} else {
+		currentImage.src = 'http://img.lightreading.com/internetevolution/intevol_videonav_leftarrow_darkgray.gif';
+	}
+	ietvrtcolmorefromLeftArrowButtonMouseoutImgSrc = currentImage.src;
+	
+}
+
+ietvrtcolmorefromSliderHandler.LRSliderNavGraphicsHandlerSlideRight = function() {
+	// change the input box value
+	GetObject('ietvrtcolmorefrom_navform_selector').value = this.currentSliderElement;
+	// now deal with the images
+	
+	var currentImage = GetObject('ietvrtcolmorefrom_leftarrowbutton');
+	// if we're at currentSliderElement > 1 make sure the left button is active
+	if (this.currentSliderElement > 1) { 
+		currentImage.src = 'http://img.lightreading.com/internetevolution/intevol_videonav_leftarrow_darkgray.gif';
+	} else {
+		currentImage.src = 'http://img.lightreading.com/internetevolution/intevol_videonav_leftarrow_lightgray.gif';
+	}
+	ietvrtcolmorefromLeftArrowButtonMouseoutImgSrc = currentImage.src;
+	
+	currentImage = GetObject('ietvrtcolmorefrom_rightarrowbutton');
+	// sliding right, change when currentSliderElement gets to this.sliderElementCount
+	if (this.currentSliderElement == this.sliderElementCount) {
+		currentImage.src = 'http://img.lightreading.com/internetevolution/intevol_videonav_rightarrow_lightgray.gif';
+	} else {
+		currentImage.src = 'http://img.lightreading.com/internetevolution/intevol_videonav_rightarrow_darkgray.gif';
+	}
+	ietvrtcolmorefromRightArrowButtonMouseoutImgSrc = currentImage.src;
+}
+
+</script>
+
+<div id="LRSlider_Content_ietvrtcolmorefrom" name="LRSlider_Content_ietvrtcolmorefrom" style="display: block;">
+<div style="">
+<div style="height: 148px;">
+<div id="ietvrtcolmorefrom_scrollyparent" name="ietvrtcolmorefrom_scrollyparent" style="position: absolute;">
+<div id="ietvrtcolmorefrom_border" name="ietvrtcolmorefrom_border" style="position: relative; top: 0px; left: 0px; width: 289px; height: 148px; overflow: hidden;">
+<div id="ietvrtcolmorefrom_window" name="ietvrtcolmorefrom_window" style="position: relative; top: 0px; left: 0px; clip: rect(0px 287px 146px 0px); overflow: hidden;">
+<div id="ietvrtcolmorefrom_outside" name="ietvrtcolmorefrom_outside" style="position: relative; top: 1px; left: 1px; width: 1440px; height: 144px; z-index: 2;">
+<div id="ietvrtcolmorefrom_vid_236868" name="ietvrtcolmorefrom_vid_236868" style="width: 144px;  float: left;">
+<div style="width: 132px; margin-right: 12px;">
+<div style="width: 132px; height: 129px; overflow: hidden;"><a href="/document.asp?doc_id=236868" ><img id="ietvrtcolmorefrom_vid_236868_thumb" name="ietvrtcolmorefrom_vid_236868_thumb" onmouseover="ietvrtcolmorefrom_vid_236868_thumb_mouseoverFunction()" onmouseout="ietvrtcolmorefrom_vid_236868_thumb_mouseoutFunction()" src="http://brightcove.vo.llnwd.net/d19/unsecured/media/1568176135/1568176135_1325909579001_ari-origin29-arc-129-1323816043732.jpg?pubId=1568176135" width="108" height="81" border="0" style="border: 1px solid #e6e6e6;"></a>
+<div style="margin-top: 6px;"><span class="black smallest transback" style="line-height: normal;"><a href="/document.asp?doc_id=236868"><b>IBM Videos</b>
+<br />Smarter Processes Lead to Business Agility</a> </span></div>
+</div>
+<div style="width: 132px; height: 15px; overflow: hidden;">
+<div style="float: left;"><span class="gray smallest transback">12|15|11 </span></div>
+<div style="float: right;"><span class="gray smallest transback"><a href="/document.asp?doc_id=236868" >No comments</a> </span></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+</div></div>
+<div id="ietvrtcolmorefrom_vid_235934" name="ietvrtcolmorefrom_vid_235934" style="width: 144px;  float: left;">
+<div style="width: 132px; margin-right: 12px;">
+<div style="width: 132px; height: 129px; overflow: hidden;"><a href="/document.asp?doc_id=235934" ><img id="ietvrtcolmorefrom_vid_235934_thumb" name="ietvrtcolmorefrom_vid_235934_thumb" onmouseover="ietvrtcolmorefrom_vid_235934_thumb_mouseoverFunction()" onmouseout="ietvrtcolmorefrom_vid_235934_thumb_mouseoutFunction()" src="http://brightcove.vo.llnwd.net/d18/unsecured/media/1568176135/1568176135_1283371008001_ari-origin29-arc-128-1321635337214.jpg?pubId=1568176135" width="108" height="81" border="0" style="border: 1px solid #e6e6e6;"></a>
+<div style="margin-top: 6px;"><span class="black smallest transback" style="line-height: normal;"><a href="/document.asp?doc_id=235934"><b>IBM Videos</b>
+<br />Smarter Computing Through Optimized Systems</a> </span></div>
+</div>
+<div style="width: 132px; height: 15px; overflow: hidden;">
+<div style="float: left;"><span class="gray smallest transback">11|18|11 </span></div>
+<div style="float: right;"><span class="gray smallest transback"><a href="/document.asp?doc_id=235934" >1 comment</a> </span></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+</div></div>
+<div id="ietvrtcolmorefrom_vid_231984" name="ietvrtcolmorefrom_vid_231984" style="width: 144px;  float: left;">
+<div style="width: 132px; margin-right: 12px;">
+<div style="width: 132px; height: 129px; overflow: hidden;"><a href="/document.asp?doc_id=231984" ><img id="ietvrtcolmorefrom_vid_231984_thumb" name="ietvrtcolmorefrom_vid_231984_thumb" onmouseover="ietvrtcolmorefrom_vid_231984_thumb_mouseoverFunction()" onmouseout="ietvrtcolmorefrom_vid_231984_thumb_mouseoutFunction()" src="http://brightcove.vo.llnwd.net/d16/unsecured/media/1568176135/1568176135_1099405086001_ari-origin07-arc-138-1312829507206.jpg?pubId=1568176135" width="108" height="81" border="0" style="border: 1px solid #e6e6e6;"></a>
+<div style="margin-top: 6px;"><span class="black smallest transback" style="line-height: normal;"><a href="/document.asp?doc_id=231984"><b>IBM Videos</b>
+<br />Building Smarter Cities</a> </span></div>
+</div>
+<div style="width: 132px; height: 15px; overflow: hidden;">
+<div style="float: left;"><span class="gray smallest transback">8|2|11 </span></div>
+<div style="float: right;"><span class="gray smallest transback"><a href="/document.asp?doc_id=231984" >No comments</a> </span></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+</div></div>
+<div id="ietvrtcolmorefrom_vid_207490" name="ietvrtcolmorefrom_vid_207490" style="width: 144px;  float: left;">
+<div style="width: 132px; margin-right: 12px;">
+<div style="width: 132px; height: 129px; overflow: hidden;"><a href="/document.asp?doc_id=207490" ><img id="ietvrtcolmorefrom_vid_207490_thumb" name="ietvrtcolmorefrom_vid_207490_thumb" onmouseover="ietvrtcolmorefrom_vid_207490_thumb_mouseoverFunction()" onmouseout="ietvrtcolmorefrom_vid_207490_thumb_mouseoutFunction()" src="http://img.lightreading.com/images/spacer.gif" width="108" height="81" border="0" style="border: 1px solid #e6e6e6;"></a>
+<div style="margin-top: 6px;"><span class="black smallest transback" style="line-height: normal;"><a href="/document.asp?doc_id=207490"><b>IBM Videos</b>
+<br />Smart Business Solutions for the Midmarket: Coriell Insitute</a> </span></div>
+</div>
+<div style="width: 132px; height: 15px; overflow: hidden;">
+<div style="float: left;"><span class="gray smallest transback">6|16|11 </span></div>
+<div style="float: right;"><span class="gray smallest transback"><a href="/document.asp?doc_id=207490" >No comments</a> </span></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+</div></div>
+<div id="ietvrtcolmorefrom_vid_206223" name="ietvrtcolmorefrom_vid_206223" style="width: 144px;  float: left;">
+<div style="width: 132px; margin-right: 12px;">
+<div style="width: 132px; height: 129px; overflow: hidden;"><a href="/document.asp?doc_id=206223" ><img id="ietvrtcolmorefrom_vid_206223_thumb" name="ietvrtcolmorefrom_vid_206223_thumb" onmouseover="ietvrtcolmorefrom_vid_206223_thumb_mouseoverFunction()" onmouseout="ietvrtcolmorefrom_vid_206223_thumb_mouseoutFunction()" src="http://brightcove04.o.brightcove.com/1568176135/1568176135_930953617001_ari-origin07-arc-562-1304529400692.jpg?pubId=1568176135" width="108" height="81" border="0" style="border: 1px solid #e6e6e6;"></a>
+<div style="margin-top: 6px;"><span class="black smallest transback" style="line-height: normal;"><a href="/document.asp?doc_id=206223"><b>IBM Videos</b>
+<br />Connecting With Social Software</a> </span></div>
+</div>
+<div style="width: 132px; height: 15px; overflow: hidden;">
+<div style="float: left;"><span class="gray smallest transback">5|3|11 </span></div>
+<div style="float: right;"><span class="gray smallest transback"><a href="/document.asp?doc_id=206223" >No comments</a> </span></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+</div></div>
+<div id="ietvrtcolmorefrom_vid_201954" name="ietvrtcolmorefrom_vid_201954" style="width: 144px;  float: left;">
+<div style="width: 132px; margin-right: 12px;">
+<div style="width: 132px; height: 129px; overflow: hidden;"><a href="/document.asp?doc_id=201954" ><img id="ietvrtcolmorefrom_vid_201954_thumb" name="ietvrtcolmorefrom_vid_201954_thumb" onmouseover="ietvrtcolmorefrom_vid_201954_thumb_mouseoverFunction()" onmouseout="ietvrtcolmorefrom_vid_201954_thumb_mouseoutFunction()" src="http://brightcove04.o.brightcove.com/1568176135/1568176135_703426802001_ari-origin06-arc-136-1291844811009.jpg?pubId=1568176135" width="108" height="81" border="0" style="border: 1px solid #e6e6e6;"></a>
+<div style="margin-top: 6px;"><span class="black smallest transback" style="line-height: normal;"><a href="/document.asp?doc_id=201954"><b>IBM Videos</b>
+<br />How Analytics Is Changing Workforce Management in a Borderless World</a> </span></div>
+</div>
+<div style="width: 132px; height: 15px; overflow: hidden;">
+<div style="float: left;"><span class="gray smallest transback">12|14|10 </span></div>
+<div style="float: right;"><span class="gray smallest transback"><a href="/document.asp?doc_id=201954" >5 comments</a> </span></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+</div></div>
+<div id="ietvrtcolmorefrom_vid_201952" name="ietvrtcolmorefrom_vid_201952" style="width: 144px;  float: left;">
+<div style="width: 132px; margin-right: 12px;">
+<div style="width: 132px; height: 129px; overflow: hidden;"><a href="/document.asp?doc_id=201952" ><img id="ietvrtcolmorefrom_vid_201952_thumb" name="ietvrtcolmorefrom_vid_201952_thumb" onmouseover="ietvrtcolmorefrom_vid_201952_thumb_mouseoverFunction()" onmouseout="ietvrtcolmorefrom_vid_201952_thumb_mouseoutFunction()" src="http://img.lightreading.com/images/spacer.gif" width="108" height="81" border="0" style="border: 1px solid #e6e6e6;"></a>
+<div style="margin-top: 6px;"><span class="black smallest transback" style="line-height: normal;"><a href="/document.asp?doc_id=201952"><b>IBM Videos</b>
+<br />Business Agility</a> </span></div>
+</div>
+<div style="width: 132px; height: 15px; overflow: hidden;">
+<div style="float: left;"><span class="gray smallest transback">12|14|10 </span></div>
+<div style="float: right;"><span class="gray smallest transback"><a href="/document.asp?doc_id=201952" >No comments</a> </span></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+</div></div>
+<div id="ietvrtcolmorefrom_vid_194060" name="ietvrtcolmorefrom_vid_194060" style="width: 144px;  float: left;">
+<div style="width: 132px; margin-right: 12px;">
+<div style="width: 132px; height: 129px; overflow: hidden;"><a href="/document.asp?doc_id=194060" ><img id="ietvrtcolmorefrom_vid_194060_thumb" name="ietvrtcolmorefrom_vid_194060_thumb" onmouseover="ietvrtcolmorefrom_vid_194060_thumb_mouseoverFunction()" onmouseout="ietvrtcolmorefrom_vid_194060_thumb_mouseoutFunction()" src="http://img.lightreading.com/images/spacer.gif" width="108" height="81" border="0" style="border: 1px solid #e6e6e6;"></a>
+<div style="margin-top: 6px;"><span class="black smallest transback" style="line-height: normal;"><a href="/document.asp?doc_id=194060"><b>IBM Videos</b>
+<br />How Enterprise 2.0 Transforms Business & Empowers the Workforce</a> </span></div>
+</div>
+<div style="width: 132px; height: 15px; overflow: hidden;">
+<div style="float: left;"><span class="gray smallest transback">7|6|10 </span></div>
+<div style="float: right;"><span class="gray smallest transback"><a href="/document.asp?doc_id=194060" >2 comments</a> </span></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+</div></div>
+<div id="ietvrtcolmorefrom_vid_187007" name="ietvrtcolmorefrom_vid_187007" style="width: 144px;  float: left;">
+<div style="width: 132px; margin-right: 12px;">
+<div style="width: 132px; height: 129px; overflow: hidden;"><a href="/document.asp?doc_id=187007" ><img id="ietvrtcolmorefrom_vid_187007_thumb" name="ietvrtcolmorefrom_vid_187007_thumb" onmouseover="ietvrtcolmorefrom_vid_187007_thumb_mouseoverFunction()" onmouseout="ietvrtcolmorefrom_vid_187007_thumb_mouseoutFunction()" src="http://brightcove.vo.llnwd.net/d2/unsecured/media/1568176135/1568176135_62962946001_asset-1264203417969.jpg?pubId=1568176135" width="108" height="81" border="0" style="border: 1px solid #e6e6e6;"></a>
+<div style="margin-top: 6px;"><span class="black smallest transback" style="line-height: normal;"><a href="/document.asp?doc_id=187007"><b>IBM Videos</b>
+<br />Exploring IBM Research Labs (Part 1)</a> </span></div>
+</div>
+<div style="width: 132px; height: 15px; overflow: hidden;">
+<div style="float: left;"><span class="gray smallest transback">1|23|10 </span></div>
+<div style="float: right;"><span class="gray smallest transback"><a href="/document.asp?doc_id=187007" >2 comments</a> </span></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+</div></div>
+
+<div id="ietvrtcolmorefrom_vid_ghost_9" name="ietvrtcolmorefrom_vid_ghost_9" style="width: 144px;  float: left;"></div>
+
+
+<div class="divsplitter" style="height: 1px;"></div>
+</div></div></div></div></div>
+<div class="divsplitter" style="height: 1px;"></div>
+</div>
+</div>
+
+<script language="Javascript">
+ietvrtcolmorefromSliderHandler.LRSliderSlide(1);
+</script>
+
+
+<div class="divsplitter" style="height: 8px;"></div>
+<div name="piddl_contentnotifysubscribelink_section_462" id="piddl_contentnotifysubscribelink_section_462" style="display: block; float: left;"><span class="red strong"><a href="Javascript: ShowContentNotifySubscribeMenu_Section_462();">Subscribe<img src="http://img.lightreading.com/images/spacer.gif" width="6" height="6" border="0" style="" /><img src="http://img.lightreading.com/internetevolution/intevol_red_checkmark_13x13_onwhite.gif" width="13" height="13" border="0" style="" /></a> </span></div>
+<script language="Javascript">
+function ShowContentNotifySubscribeMenu_Section_462() {
+	ShowMenu('piddl_contentnotifyprefsdiv_section_462_arrowmenu_rightarrow', returnPosXofObj(GetObject('piddl_contentnotifysubscribelink_section_462')) - 335, returnPosYofObj(GetObject('piddl_contentnotifysubscribelink_section_462')) - 25);
+}
+</script>
+
+<div class="divsplitter" style="height: 2px;"></div>
+<div name="piddl_contentnotifyprefsdiv_section_462_arrowmenu_rightarrow" id="piddl_contentnotifyprefsdiv_section_462_arrowmenu_rightarrow" style="width: 330px; position: absolute; z-index: 8; left: -500px; top: 38px;">
+<div style="float: left; width: 316px; border: 1px solid #b3b3b3; background-color: #f4f4f4;">
+<div name="piddl_contentnotifyprefsdiv_section_462_arrowmenu_rightarrow_content" id=name="piddl_contentnotifyprefsdiv_section_462_arrowmenu_rightarrow_content" style="margin: 13px;">
+<div name="piddl_contentnotifyprefsform_section_462_message" id="piddl_contentnotifyprefsform_section_462_message"><span class="black"> </span></div>
+<form name="piddl_contentnotifyprefsform_section_462" id="piddl_contentnotifyprefsform_section_462" action="" onSubmit="return ContentNotifyPrefsShortSubmit('piddl_contentnotifyprefsform_section_462', 'piddl_contentnotifyprefsform_section_462_message')" method="post" style="margin: 0; padding: 0px;">
+	<input type="hidden" id="piddl_fieldsmode" name="piddl_fieldsmode" value="content_prefs">
+	<input type="hidden" id="pcep_submit" name="pcep_submit" value="yes">
+	<input type="hidden" id="pcep_ctype" name="pcep_ctype" value="document">
+	<input type="hidden" id="pcep_simple" name="pcep_simple" value="yes">
+
+<span class="blue"><b>Subscribe me to the following:</b></span>
+<br /><table cellspacing="0" cellpadding="2" border="0">
+<tr><td align="right"><input type="checkbox" id="pcep_nocdids_def" name="pcep_nocdids_def" value="Video Blog"> </td><td colspan="3"><span class="gray small">all IETV video blogs </span></td></tr>
+<tr><td align="right"><input type="checkbox" id="pcep_exc_cdids" name="pcep_exc_cdids" value="462"> </td><td colspan="3"><span class="gray small">all IBM Videos video blogs </span></td></tr>
+<tr><td colspan="4"><input type="button" name="contentnotifyemailbutton_section_462" id="contentnotifyemailbutton_section_462" value="Subscribe via Email"  class="forminputbutton" > &nbsp; <input type="button" name="contentnotifyrssbutton_section_462" id="contentnotifyrssbutton_section_462" value="RSS Feed"  class="forminputbutton" ></td></tr>
+<tr><td width="3%">&nbsp;</td><td width="18%">&nbsp;</td><td width="40%">&nbsp;</td><td width="40%" align="right"><span class="gray smallest"><a href="Javascript: ShowMenu('piddl_contentnotifyprefsdiv_section_462_arrowmenu_rightarrow',-500,38);">close this box</a> </span></td></tr>
+</table>
+</form>
+</div>
+</div>
+<div style="float: left; width: 12px; height: 45px; position: relative; left: -1px;"><img src="http://img.lightreading.com/internetevolution/intevol_ietv_popuparrow_gray_right.png" width="12" height="45" border="0"></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+
+<script language = "Javascript"> 
+AddEventListenerToObj(GetObject('contentnotifyemailbutton_section_462'), 'click', function() { return ContentNotifyPrefsRedirect_section_462(); }, false);
+AddEventListenerToObj(GetObject('contentnotifyrssbutton_section_462'), 'click', function() { return ContentNotifyPrefsShortGenerateAndDisplayRSSFeed('piddl_contentnotifyprefsform_section_462', 'piddl_contentnotifyprefsform_section_462_message', '<span class=\"red strong\">', '</span>'); }, false);
+function ContentNotifyPrefsRedirect_section_462() {
+	self.location.href = '/login.asp?piddl_nexturl=http%3A%2F%2Fwww%2Einternetevolution%2Ecom%2Fdocument%2Easp%3Fdoc%5Fid%3D187008%26cid%3Dsem%255Fcomm%255Fhrd%255Fsu%255Fdocstr%255F20120319%26p%5Fcd%5Fpop%3Dsection&piddl_msg=You+must+login+to+subscribe+to+content+via+email%2E';
+	return false;
+}
+</script>
+</div>
+</div>
+<div class="divsplitter" style="height: 28px;"></div>
+
+</div>
+
+</div>
+
+<div style="width: 336px;"><img src="http://img.deusm.com/internetevolution/intevol_tab_thinktank.gif" width="336" height="42" border="0"></div>
+<div style="width: 334px; border-left: 1px solid #b3b3b3;  border-right: 1px solid #b3b3b3;"><div style="height: 5px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="1" border="0"></div>
+<div style="width: 309px; margin-left: 13px; margin-right: 12px;">
+<div style="float: left; width: 209px;"><span class="gray bigsmall">an IBM information resource</span></div>
+<div align="right" style="float: right; width: 100px; margin-top: 1px;"><span class="gray smallest">sponsored content</span></div>
+<div class="divsplitter" style="height: 1px;"></div>
+</div></div><div style="width: 321px; margin-left: 13px;"><div style="height: 15px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="1" border="0"></div>
+<div><span class="blue bigsmall strong">white papers & case studies</span></div>
+<div style="height: 10px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="1" border="0"></div>
+<div style="float: left; width: 10px; height: 10px; background-color: #b3b3b3; margin-right: 5px; margin-top: 3px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="1" border="0"></div>
+<div style="float: left; width: 306px;"><span class="gray plain"><a href="/lg_redirect.asp?piddl_lgid_docid=233634&piddl_lg_pcode=thinktankhome">THINK: A Forum on the Future of Leadership</a></span></div>
+<div class="divsplitter" style="height: 10px;"></div>
+<div style="float: left; width: 10px; height: 10px; background-color: #b3b3b3; margin-right: 5px; margin-top: 3px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="1" border="0"></div>
+<div style="float: left; width: 306px;"><span class="gray plain"><a href="/lg_redirect.asp?piddl_lgid_docid=206921&piddl_lg_pcode=thinktankhome">Working Smarter Through Intelligent, Responsive Decision Automation</a></span></div>
+<div class="divsplitter" style="height: 10px;"></div>
+<div style="float: left; width: 10px; height: 10px; background-color: #b3b3b3; margin-right: 5px; margin-top: 3px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="1" border="0"></div>
+<div style="float: left; width: 306px;"><span class="gray plain"><a href="/lg_redirect.asp?piddl_lgid_docid=206920&piddl_lg_pcode=thinktankhome">Smarter Commerce - Redefining the value chain in the age of the customer</a></span></div>
+<div class="divsplitter" style="height: 10px;"></div>
+<div style="float: left; width: 10px; height: 10px; background-color: #b3b3b3; margin-right: 5px; margin-top: 3px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="1" border="0"></div>
+<div style="float: left; width: 306px;"><span class="gray plain"><a href="/lg_redirect.asp?piddl_lgid_docid=206919&piddl_lg_pcode=thinktankhome">Using IBM Social Business to Take Your Business Relationships to the Next Level</a></span></div>
+<div class="divsplitter" style="height: 10px;"></div>
+<div style="float: left; width: 10px; height: 10px; background-color: #b3b3b3; margin-right: 5px; margin-top: 3px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="1" border="0"></div>
+<div style="float: left; width: 306px;"><span class="gray plain"><a href="/lg_redirect.asp?piddl_lgid_docid=206918&piddl_lg_pcode=thinktankhome">Social Business:  Advent of a new age</a></span></div>
+<div class="divsplitter" style="height: 10px;"></div>
+<div style="float: left; width: 10px; height: 10px; background-color: #b3b3b3; margin-right: 5px; margin-top: 3px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="1" border="0"></div>
+<div style="float: left; width: 306px;"><span class="gray plain"><a href="/lg_redirect.asp?piddl_lgid_docid=206917&piddl_lg_pcode=thinktankhome">IBM Information Management: Manage your data and control risk to develop information you can trust</a></span></div>
+<div class="divsplitter" style="height: 10px;"></div>
+<div style="float: left; width: 10px; height: 10px; background-color: #b3b3b3; margin-right: 5px; margin-top: 3px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="1" border="0"></div>
+<div style="float: left; width: 306px;"><span class="gray plain"><a href="/lg_redirect.asp?piddl_lgid_docid=206916&piddl_lg_pcode=thinktankhome">Extending Virtualization in the data center with application infrastructure virtualization</a></span></div>
+<div class="divsplitter" style="height: 10px;"></div>
+<div style="float: left; width: 10px; height: 10px; background-color: #b3b3b3; margin-right: 5px; margin-top: 3px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="1" border="0"></div>
+<div style="float: left; width: 306px;"><span class="gray plain"><a href="/lg_redirect.asp?piddl_lgid_docid=206915&piddl_lg_pcode=thinktankhome">Capturing the Potential of Cloud</a></span></div>
+<div class="divsplitter" style="height: 10px;"></div>
+<div class="divsplitter" style="height: 7px;"></div>
+<div style="float: left;"><span class="blue hoverwhite"><a href="/archives.asp?section_id=465">MORE WHITE PAPERS</a></span></div>
+<div style="float: right;"><a href="/rss_simple.asp?f_s=465&f_ln=Think+Tank" style="border: 0;"><img src="http://img.lightreading.com/images/rss_icon.gif" width="13" height="13" border="0"></a></div>
+<div class="divsplitter" style="height: 1px;"></div>
+</div>
+<div class="divsplitter" style="height: 28px;"></div><table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td><!--JavaScript Tag // Tag for network 5242: United Business Media // Website: Internet Evolution // Page: ROS // Placement: BACKUP_IMU1_300x250 (1183701) // created at: May 26, 2010 3:45:43 PM-->
+<script language="javascript"><!--
+document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1183701/0/0/ADTECH;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1183701/0/0/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1183701/0/0/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" border="0" width="0" height="0"></a></noscript>
+<!-- End of JavaScript Tag --></td>
+</tr>
+<tr>
+<td><img src="http://www.internetevolution.com/client_adlog.asp?a=11754&s=35514" border="0" width="1" height="1" hspace="0" vspace="0"></td>
+</tr>
+</table>
+<div class="divsplitter" style="height: 30px;"></div>
+<div style="width: 336px; background-color: #ebebeb;">
+<div><img src="http://img.deusm.com/internetevolution/intevol_radio_fullsched_top.gif" width="336" height="57" border="0" style="margin: 0;"></div>
+<div class="divsplitter" style="height: 2px; width: 336px; background-color: #ffffff;"></div>
+</div>
+
+<div style="width: 336px; background-color: #ebebeb; border-top: 1px solid #c1c1c1;">
+<div style="margin-top: 6px;">
+<div style="float: left; width: 16px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="30" border="0"></div>
+<div style="float: left; width: 62px; margin-right: 6px;"><span class="black">2pm EDT </span></div>
+<div style="float: left; width: 58px; margin-right: 6px;"><span class="black">Thu<br />Mar 29th </span></div>
+<div style="float: left; width: 120px; margin-right: 6px;"><span class="blue"><a href="/radio.asp?doc_id=239937">Dan Lyons, Author, Formerly 'Fake Steve Jobs'</a> </span></div>
+<div style="float: left; width: 46px;"><span class="red"><a href="/radio.asp?doc_id=239937">Remind<br />Me</a> </span></div>
+<div class="divsplitter" style="height: 6px;"></div>
+</div>
+</div>
+<div class="divsplitter" style="height: 2px;"></div>
+
+<div style="width: 336px; background-color: #ebebeb; border-top: 1px solid #c1c1c1;">
+<div style="margin-top: 6px;">
+<div style="float: left; width: 16px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="30" border="0"></div>
+<div style="float: left; width: 62px; margin-right: 6px;"><span class="black">2pm EDT </span></div>
+<div style="float: left; width: 58px; margin-right: 6px;"><span class="black">Thu<br />Apr 5th </span></div>
+<div style="float: left; width: 120px; margin-right: 6px;"><span class="blue"><a href="/radio.asp?doc_id=240204">Teri Takai, CIO, Department of Defense</a> </span></div>
+<div style="float: left; width: 46px;"><span class="red"><a href="/radio.asp?doc_id=240204">Remind<br />Me</a> </span></div>
+<div class="divsplitter" style="height: 6px;"></div>
+</div>
+</div>
+<div class="divsplitter" style="height: 2px;"></div>
+
+<div style="width: 336px; background-color: #ebebeb; border-top: 1px solid #c1c1c1;">
+<div style="margin-top: 6px;">
+<div style="float: left; width: 16px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="30" border="0"></div>
+<div style="float: left; width: 62px; margin-right: 6px;"><span class="black">2pm EDT </span></div>
+<div style="float: left; width: 58px; margin-right: 6px;"><span class="black">Thu<br />Apr 12th </span></div>
+<div style="float: left; width: 120px; margin-right: 6px;"><span class="blue"><a href="/radio.asp?doc_id=240713">Rick Peltz, CIO, Marcus & Millichap</a> </span></div>
+<div style="float: left; width: 46px;"><span class="red"><a href="/radio.asp?doc_id=240713">Remind<br />Me</a> </span></div>
+<div class="divsplitter" style="height: 6px;"></div>
+</div>
+</div>
+<div class="divsplitter" style="height: 2px;"></div>
+
+<div style="width: 336px; background-color: #ebebeb; border-top: 1px solid #c1c1c1;">
+<div style="margin-top: 6px;">
+<div style="float: left; width: 16px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="30" border="0"></div>
+<div style="float: left; width: 62px; margin-right: 6px;"><span class="black">2pm EDT </span></div>
+<div style="float: left; width: 58px; margin-right: 6px;"><span class="black">Thu<br />Apr 19th </span></div>
+<div style="float: left; width: 120px; margin-right: 6px;"><span class="blue"><a href="/radio.asp?doc_id=240580">Daniel Tunkelang, Principal Data Scientist, LinkedIn</a> </span></div>
+<div style="float: left; width: 46px;"><span class="red"><a href="/radio.asp?doc_id=240580">Remind<br />Me</a> </span></div>
+<div class="divsplitter" style="height: 6px;"></div>
+</div>
+</div>
+<div class="divsplitter" style="height: 2px;"></div>
+
+
+<div style="width: 336px; background-color: #ebebeb; border-top: 1px solid #c1c1c1;">
+<div style="margin-top: 4px;">
+<div style="width: 304px;">
+<div style="float: left; width: 16px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="17" border="0"></div>
+<div style="float: left; width: 7px; height: 7px; background-color: #99cc00; margin-right: 5px; margin-top: 5px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="1" border="0"></div>
+<div style="float: left; width: 276px;"><span class="blue"><a href="/ie-radio.asp"><b>View</b> the full schedule</a> </span></div>
+</div>
+<div class="divsplitter" style="height: 4px;"></div>
+</div>
+</div>
+<div class="divsplitter" style="height: 1px;"></div>
+
+<div style="width: 336px; background-color: #ebebeb; border-top: 1px solid #c1c1c1;">
+<div style="margin-top: 4px;">
+<div style="float: left; width: 16px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="17" border="0"></div>
+<div style="float: left; width: 252px; margin-right: 6px;">
+<div style="float: left; width: 233px;">
+<div style="float: left; width: 7px; height: 7px; background-color: #99cc00; margin-right: 5px; margin-top: 5px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="1" border="0"></div>
+<div style="float: left; width: 221px;"><span class="blue"><a href="/archives.asp?section_id=748"><b>Listen</b> to archived IER shows</a> </span></div>
+</div>
+<div style="float: right; width: 19px; margin-top: 0;"><a href="/archives.asp?section_id=748"><img src="http://img.deusm.com/internetevolution/IE_new_radio_icon2.gif" width="19" height="13" border="0"></a></div>
+</div>
+<div class="divsplitter" style="height: 4px;"></div>
+</div>
+</div>
+<div class="divsplitter" style="height: 1px;"></div>
+
+<div style="width: 336px; background-color: #ebebeb; border-top: 1px solid #c1c1c1;">
+<div style="margin-top: 4px;">
+<div style="width: 304px;">
+<div style="float: left; width: 16px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="17" border="0"></div>
+<div style="float: left; width: 7px; height: 7px; background-color: #99cc00; margin-right: 5px; margin-top: 5px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="1" border="0"></div>
+<div style="float: left; width: 276px;"><span class="blue"><a href="/ical.asp"><b>Download</b> guide to Outlook or other calendar</a> </span></div>
+</div>
+<div class="divsplitter" style="height: 4px;"></div>
+</div>
+</div>
+<div class="divsplitter" style="height: 1px;"></div>
+
+<div class="divsplitter" style="height: 30px;"></div>
+
+<div style="width: 336px;">
+<div><img src="http://img.deusm.com/internetevolution/intevol_tab_poll.gif" width="336" height="42" border="0"></div>
+<div style="border-left: 1px solid #b3b3b3; width: 336px; overflow: hidden;"><div style="width: 325px; margin-left: 9px;"><div id="surveydiv_1147" name="surveydiv_1147" style="width: 325px;"></div></div>
+<div style="width: 321px; margin-left: 13px;"><span class="blue hoverwhite"><a href="/document.asp?doc_id=241231&#msgs">6 COMMENTS</a></span></div>
+<div style="width: 321px; margin-left: 13px;"><span class="blue hoverwhite"><a href="/archives.asp?section_id=546">MORE POLLS</a></span></div></div>
+</div>
+<script language="Javascript" src="http://www.internetevolution.com/survey_jspage.asp?survey_id=1147&cbust=6906"></script>
+<div class="divsplitter" style="height: 28px;"></div>
+
+<div style="width: 336px;"><img src="http://img.deusm.com/internetevolution/intevol_tab_thinktank.gif" width="336" height="42" border="0"></div>
+<div style="width: 334px; border-left: 1px solid #b3b3b3;  border-right: 1px solid #b3b3b3;"><div style="height: 5px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="1" border="0"></div>
+<div style="width: 309px; margin-left: 13px; margin-right: 12px;">
+<div style="float: left; width: 209px;"><span class="gray bigsmall">an IBM information resource</span></div>
+<div align="right" style="float: right; width: 100px; margin-top: 1px;"><span class="gray smallest">sponsored content</span></div>
+<div class="divsplitter" style="height: 1px;"></div>
+</div></div>
+<div style="width: 336px; border-left: 1px solid #b3b3b3;"><div style="width: 321px; margin-left: 13px;"><div style="height: 15px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="1" border="0"></div>
+<div><span class="blue bigsmall strong">big blue blog</span></div>
+<div style="height: 10px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="1" border="0"></div><div class="docmedthinblock">
+<div style="float: left; width: 56px; margin-top: 2px; margin-right: 12px; padding: 0; display: block;"><img src="http://img.lightreading.com/internetevolution/ToddWatson.gif" width="54" height="54" border="0" style="border: 1px solid #e6e6e6;" alt="Todd Watson"></div>
+<div style="float: right; width: 255px; display: block; overflow: hidden;">
+<div style="float: left; width: 255px;"><span class="black header bigsmall"><a href="/author.asp?section_id=587&doc_id=241328&">Impressions From SXSW 2012: 'Conversational Commerce' With Opus Research's Dan Miller</a></span></div>
+<div class="divsplitter" style="height: 1px;"></div>
+<div style="float: left; width: 255px;"><span class="gray strong small"><a href="/bloggers.asp#Todd_Watson">Todd Watson</a> &nbsp; </span><span class="small">3/27/2012 &nbsp; </span><span class="blue blueback small"><a href="/author.asp?section_id=587&doc_id=241328&#msgs">Post a comment</a></span></div>
+<div style="float: left; width: 255px;"><span class="gray">If you want to better understand the looming intersection between  voice recognition and artificial intelligence, you don't want to talk to  HAL from <i>2001: A Space Odyssey</i>, or even IBM's Watson.
+</span></div>
+</div></div>
+
+<div class="divsplitter" style="height: 17px;"></div>
+<div style="float: left; width: 68px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="1" border="0"></div>
+<div style="float: left;"><span class="blue hoverwhite"><a href="/archives.asp?section_id=587">MORE BIG BLUE BLOG</a></span></div>
+<div style="float: right;"><a href="/rss_simple.asp?f_s=587&f_ln=Todd+Watson" style="border: 0;"><img src="http://img.lightreading.com/images/rss_icon.gif" width="13" height="13" border="0"></a></div>
+<div class="divsplitter" style="height: 1px;"></div>
+</div></div>
+<div class="divsplitter" style="height: 28px;"></div>
+<div style="width: 336px;"><img src="http://img.deusm.com/internetevolution/intevol_tab_ebooks.gif" width="336" height="42" border="0"></div>
+<div style="width: 334px; border-left: 1px solid #b3b3b3;  border-right: 1px solid #b3b3b3;"><div style="height: 5px;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="1" border="0"></div>
+<div style="width: 309px; margin-left: 13px; margin-right: 12px;">
+<div style="float: left; width: 209px;"><span class="gray bigsmall">an IBM information resource</span></div>
+<div align="right" style="float: right; width: 100px; margin-top: 1px;"><span class="gray smallest">sponsored content</span></div>
+<div class="divsplitter" style="height: 1px;"></div>
+</div></div>
+<div style="width: 336px; border-left: 1px solid #b3b3b3;"><div style="width: 323px; margin-left: 13px;">
+<div class="divsplitter" style="height: 10px;"></div>
+<div style="float: left; width: 96px; margin-right: 16px; margin-top: 4px;"><a href="/lg_redirect.asp?piddl_lgid_docid=239671"><img src="http://img.deusm.com/internetevolution/ibm_ebookcover_17.gif" width="96" height="71" border="0"></a></div>
+<div style="float: left; width: 211px;"><span class="small blue"><b>Empowered CMOs, Empowered Customers</b></span>
+<span class="small plain"><br />Chief marketing officers (CMOs) are at a crossroads. Like CFOs a decade ago, their position in the organization is about to change dramatically, impacting not only traditional marketing functions like public relations and promotion, but also requiring a greater partnership with fellow C-suite decision makers. In interviews with over 1,700 CMOs worldwide, IBM found that CMOs are keenly aware of their specific set of challenges.</span>
+<span class="smallest blue plain"><br /><a href="/lg_redirect.asp?piddl_lgid_docid=239671">READ THIS eBOOK</a> </span></div>
+<div class="divsplitter" style="height: 19px;"></div>
+<div style="float: left;"><span class="blue hoverwhite"><a href="/archives.asp?section_id=573">MORE IBM eBOOKS</a></span></div>
+<div style="float: right;"><a href="http://www.internetevolution.com/rss_simple.asp?f_s=573&f_ln=eBooks" style="border: 0;"><img src="http://img.lightreading.com/images/rss_icon.gif" width="13" height="13" border="0"></a></div>
+<div style="clear: both;"></div>
+</div></div>
+<div class="divsplitter" style="height: 28px;"></div>
+
+<div style="width: 336px;"><img src="http://img.deusm.com/internetevolution/intevol_tab_register_top_new.gif" width="336" height="72" border="0"></div>
+<div style="width: 334px; border-left: 1px solid #99cc00;  border-right: 1px solid #99cc00;"><div style="width: 319px; margin-left: 15px;"><span class="gray bigsmalltallline">your weekly update of news, analysis, and
+<br />opinion from Internet Evolution - <i>FREE!</i></span>
+<span class="green strong plain bigsmalltallline"><br /><a href="/register.asp">REGISTER HERE</a></span></div></div></div>
+<div style="width: 336px;"><img src="http://img.deusm.com/internetevolution/intevol_tab_register_bottom.gif" width="336" height="17" border="0"></div>
+<div class="divsplitter" style="height: 30px;"></div>
+<div style="width: 336px; background-color: #eef5fb;"><div style="width: 319px; margin-left: 15px;">
+<div style="display: block;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="10" border="0"></div>
+<div style="float: right; width: 56px; margin-top: 2px; margin-right: 12px; padding: 0; display: inline;"><img src="http://img.deusm.com/internetevolution/magic8ball_small.gif" width="54" height="54" border="0" style="border: 1px solid #e6e6e6;"></div><span class="blue strong bigsmalltallline plain">Wanted! Site Moderators</span>
+<span><br />Internet Evolution is looking for a handful of readers to help moderate the message boards on our site &#150; as well as engaging in high-IQ conversation with the industry mavens on our thinkerNet blogosphere. The job comes with various perks, bags of kudos, and GIANT bragging rights. Interested?
+<br /><br />
+Please email: <a href="mailto:moderators@internetevolution.com">moderators@internetevolution.com</a></span>
+<div style="display: block;"><img src="http://img.deusm.com/images/spacer.gif" width="1" height="15" border="0"></div></div></div>
+<div class="divsplitter" style="height: 30px;"></div>
+
+<div style="width: 336px;" align="center"><img src="http://img.deusm.com/internetevolution/IE_awards-animation4.gif" width="140" height="120" border="0" /></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</td>
+	</tr>
+</table>
+</div>
+</div>
+<div class="divsplitter"></div></td>
+	</tr>
+	<tr>
+		<td width="970" align="left" valign="top"><div style="border: 2px solid #e6e6e6; margin-top: 30px;"><div style="width: 966px; display: block;">
+<div style="width: 728px; height: 90px; margin-left: 119px; margin-right: 119px; margin-top: 17px; margin-bottom: 17px;"><!--JavaScript Tag // Tag for network 5242: United Business Media // Website: Internet Evolution // Page: ROS // Placement: BACKUP_Bottom_728x90 (1183653) // created at: May 26, 2010 3:45:43 PM-->
+<script language="javascript"><!--
+document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1183653/0/225/ADTECH;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1183653/0/225/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1183653/0/225/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" border="0" width="728" height="90"></a></noscript>
+<!-- End of JavaScript Tag --><img src="http://www.internetevolution.com/client_adlog.asp?a=11753&s=35514" border="0" width="1" height="1" hspace="0" vspace="0"></div>
+</div></div></td>
+	</tr>
+	<tr>
+		<td width="970" align="center" valign="top"><div class="divsplitter" style="height: 24px;"></div>
+<div style="width: 970px; margin-top: 15px; margin-bottom: 15px;"><span class="plain strong black"></span></div></td>
+	</tr>
+	<tr>
+		<td width="970" align="center" valign="top"><div class="divsplitter" style="height: 25px;"></div>
+<div style="display: block; width: 230px;"><div style="float: left; margin-top: 3px;"><span class="gray smallesttext">Internet Evolution &#150; not for thickies</span></div><div style="float: left; margin-left: 5px;"><img src="http://img.lightreading.com/internetevolution/intevol_brain.gif" width="24" height="20" border="0"></div>
+<div class="divsplitter"></div></div>
+<img src="http://www.internetevolution.com/client_pathlog.asp?p=%2Finternetevolution%2Fsection%2F462&f=%2Finternetevolution%2Fsection%2F462%2F187008&rndserial=35514" border="0" width="1" height="1">
+
+<script src="http://content.dl-rms.com/rms/mother/25364/nodetag.js"></script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8643844-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</td>
+	</tr>
+</table>
+<div class="divsplitter" style="height: 25px;"></div>
+</div>
+
+<div name="menu_box_rate" id="menu_box_rate" class="menudropdown">
+<ul>
+<form name="rate_menu" id="rate_menu" action="" method="post">
+<input type="hidden" name="piddl_pageobj" value="">
+<input type="hidden" name="piddl_contentid" value="">
+<input type="hidden" name="piddl_rate" value="">
+<input type="hidden" name="piddl_rating" value="">
+<input type="hidden" name="piddl_icons" value="">
+<li><div class="notalink" style="text-align: left; padding-left: 3px;">To rate this item, click on a rating below.</div></li>
+<li><a style="text-align: left;" href="javascript:RateThis('5');"><img src="http://img.deusm.com/internetevolution/intevol_rate_monkey_full.gif" width="19" height="18" border="0" style="margin-left: 10px;"><img src="http://img.deusm.com/internetevolution/intevol_rate_monkey_full.gif" width="19" height="18" border="0"><img src="http://img.deusm.com/internetevolution/intevol_rate_monkey_full.gif" width="19" height="18" border="0"><img src="http://img.deusm.com/internetevolution/intevol_rate_monkey_full.gif" width="19" height="18" border="0"><img src="http://img.deusm.com/internetevolution/intevol_rate_monkey_full.gif" width="19" height="18" border="0"></a></li>
+<li><a style="text-align: left;" href="javascript:RateThis('4');"><img src="http://img.deusm.com/internetevolution/intevol_rate_monkey_full.gif" width="19" height="18" border="0" style="margin-left: 10px;"><img src="http://img.deusm.com/internetevolution/intevol_rate_monkey_full.gif" width="19" height="18" border="0"><img src="http://img.deusm.com/internetevolution/intevol_rate_monkey_full.gif" width="19" height="18" border="0"><img src="http://img.deusm.com/internetevolution/intevol_rate_monkey_full.gif" width="19" height="18" border="0"></a></li>
+<li><a style="text-align: left;" href="javascript:RateThis('3');"><img src="http://img.deusm.com/internetevolution/intevol_rate_monkey_full.gif" width="19" height="18" border="0" style="margin-left: 10px;"><img src="http://img.deusm.com/internetevolution/intevol_rate_monkey_full.gif" width="19" height="18" border="0"><img src="http://img.deusm.com/internetevolution/intevol_rate_monkey_full.gif" width="19" height="18" border="0"></a></li>
+<li><a style="text-align: left;" href="javascript:RateThis('2');"><img src="http://img.deusm.com/internetevolution/intevol_rate_monkey_full.gif" width="19" height="18" border="0" style="margin-left: 10px;"><img src="http://img.deusm.com/internetevolution/intevol_rate_monkey_full.gif" width="19" height="18" border="0"></a></li>
+<li><a style="text-align: left;" href="javascript:RateThis('1');"><img src="http://img.deusm.com/internetevolution/intevol_rate_monkey_full.gif" width="19" height="18" border="0" style="margin-left: 10px;"></a></li>
+<li><a style="font-size: 10px; text-align: right; padding-right: 8px;" href="Javascript:HideRateMenu();">[close this box]</a></li>
+</form>
+</ul>
+</div>
+
+<div name="menu_box_save" id="menu_box_save" class="menudropdown">
+<ul>
+<li><div class="notalink" style="text-align: left;">&nbsp;</div></li>
+<li><div class="notalink" style="text-align: left;">To save this item to your list of favorite Internet Evolution content so you can find it later in your Profile page, click the "Save It" button next to the item.</div></li>
+<li><div class="notalink" style="text-align: left;">&nbsp;</div></li>
+</ul>
+</div>
+
+<div name="menu_box_video" id="menu_box_video" class="menudropdown" style="width: 150px;">
+<ul>
+<li><a style="text-align: left;" href="/ietv.asp"><b>IETV</b></a></li>
+<li><a style="text-align: left;" href="/archives.asp?section_id=461"><b>Web Wide World</b></a></li>
+<li><a style="text-align: left;" href="/archives.asp?section_id=657"><b>Tutorials</b></a></li>
+<li><a style="text-align: left;" href="/archives.asp?section_id=462"><b>IBM Videos</b></a></li>
+<li><a style="text-align: left;" href="/archives.asp?section_id=846"><b>Executive Takes</b></a></li>
+<li><a style="font-size: 10px; color: #666666; text-align: right; padding-right: 8px;" href="Javascript:ShowMenu('menu_box_video',-500,38);">[close this box]</a></li>
+</ul>
+</div>
+
+<div name="menu_box_events" id="menu_box_events" class="menudropdown" style="width: 150px;">
+<ul>
+<li><a style="text-align: left;" href="/webinars.asp"><b>Upcoming Webinars</b></a></li>
+<li><a style="text-align: left;" href="/webinar_archives.asp"><b>Webinar Archives</b></a></li>
+<li><a style="text-align: left;" href="/calendar_webinars.asp"><b>Webinar Calendar</b></a></li>
+<li><a style="font-size: 10px; color: #666666; text-align: right; padding-right: 8px;" href="Javascript:ShowMenu('menu_box_events',-500,38);">[close this box]</a></li>
+</ul>
+</div>
+
+<div name="menu_box_clans" id="menu_box_clans" class="menudropdown" style="width: 150px;">
+<ul>
+<li><a style="text-align: left;" href="/analytics-clan.asp"><b>Analytics Clan</b></a></li> 
+<li><a style="text-align: left;" href="/cloud-clan.asp"><b>Cloud Clan</b></a></li>
+<li><a style="text-align: left;" href="/executive-clan.asp"><b>Executive Clan</b></a></li>
+<li><a style="text-align: left;" href="/midmarket-clan.asp"><b>Midmarket Clan</b></a></li>
+<li><a style="text-align: left;" href="/itclan.asp"><b>IT Clan</b></a></li>
+<li><a style="text-align: left;" href="/securityclan.asp"><b>Security Clan</b></a></li>
+<li><a style="text-align: left;" href="/document.asp?doc_id=152334"><b>About the Clans</b></a></li>
+<li><a style="font-size: 10px; color: #666666; text-align: right; padding-right: 8px;" href="Javascript:ShowMenu('menu_box_clans',-500,38);">[close this box]</a></li>
+</ul>
+</div>
+
+<div id="helpbox" name="helpbox"><div id="helpshell" name="helpshell" onfilterchange=""></div></div>
+
+<div name="intevol_topclannav_analyticsclan_arrowpopmenu_toparrow" id="intevol_topclannav_analyticsclan_arrowpopmenu_toparrow" onmouseover="intevol_topclannav_analyticsclan_mouseoverFunction()" onmouseout="intevol_topclannav_analyticsclan_mouseoutFunction()" style="width: 312px; position: absolute; z-index: 8; left: -500px; top: 38px;">
+<div style="width: 45px; height: 12px; position: relative; left: 10px; top: 1px;"><img src="http://img.deusm.com/internetevolution/intevol_ietv_popuparrow_gray_top.png" width="45" height="12" border="0"></div>
+<div style="width: 298px; border: 1px solid #b3b3b3; background-color: #f4f4f4;">
+<div name="intevol_topclannav_analyticsclan_arrowpopmenu_toparrow_content" id="intevol_topclannav_analyticsclan_arrowpopmenu_toparrow_content" style="margin: 13px;"><span class="black"><a href="/analytics-clan.asp" target="new"><b>Chip-Equipped Ball Heralds New 'Money Ball' Era</b> 
+<br />Ron Miller <br />Sports stat geeks and fantasy league players love numbers. They can't get enough of them. They measure things that casual fans can't even begin to understand. In fact, their analytics work puts most marketers to shame. </span>
+</a> </span>
+<span class="blue smallest"><br /><a href="/analytics-clan.asp" target="new">CLICK FOR MORE</a> </span>
+</div>
+</div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+<script language="Javascript">
+function intevol_topclannav_analyticsclan_mouseoverFunction () {
+	GetObject('intevol_topclannav_analyticsclan').src = 'http://img.deusm.com/internetevolution/intevol_topclannav_analyticsclan_over.gif';
+	PopMenu('intevol_topclannav_analyticsclan_arrowpopmenu_toparrow',(returnPosXofObj(GetObject('intevol_topclannav_analyticsclan')) + 0 - 4),(returnPosYofObj(GetObject('intevol_topclannav_analyticsclan')) + GetObject('intevol_topclannav_analyticsclan').height + 2));
+}
+function intevol_topclannav_analyticsclan_mouseoutFunction () {
+	GetObject('intevol_topclannav_analyticsclan').src = 'http://img.deusm.com/internetevolution/intevol_topclannav_analyticsclan.gif';
+	PopMenuOff('intevol_topclannav_analyticsclan_arrowpopmenu_toparrow', -500, 38);
+}
+</script>
+<div name="intevol_topclannav_cloudclan_arrowpopmenu_toparrow" id="intevol_topclannav_cloudclan_arrowpopmenu_toparrow" onmouseover="intevol_topclannav_cloudclan_mouseoverFunction()" onmouseout="intevol_topclannav_cloudclan_mouseoutFunction()" style="width: 312px; position: absolute; z-index: 8; left: -500px; top: 38px;">
+<div style="width: 45px; height: 12px; position: relative; left: 10px; top: 1px;"><img src="http://img.deusm.com/internetevolution/intevol_ietv_popuparrow_gray_top.png" width="45" height="12" border="0"></div>
+<div style="width: 298px; border: 1px solid #b3b3b3; background-color: #f4f4f4;">
+<div name="intevol_topclannav_cloudclan_arrowpopmenu_toparrow_content" id="intevol_topclannav_cloudclan_arrowpopmenu_toparrow_content" style="margin: 13px;"><span class="black"><a href="/cloud-clan.asp" target="new"><b>Five Enterprise Technologies on Death Row</b> 
+<br />Robert McGarvey <br />Roladexes. Punch cards. Carbon paper. Rotary telephones. <a href="http://www.internetevolution.com/author.asp?section_id=587&doc_id=231815"target="new">IBM Selectrics</a>. </span>
+</a> </span>
+<span class="blue smallest"><br /><a href="/cloud-clan.asp" target="new">CLICK FOR MORE</a> </span>
+</div>
+</div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+<script language="Javascript">
+function intevol_topclannav_cloudclan_mouseoverFunction () {
+	GetObject('intevol_topclannav_cloudclan').src = 'http://img.deusm.com/internetevolution/intevol_topclannav_cloudclan_over.gif';
+	PopMenu('intevol_topclannav_cloudclan_arrowpopmenu_toparrow',(returnPosXofObj(GetObject('intevol_topclannav_cloudclan')) + 0 - 15),(returnPosYofObj(GetObject('intevol_topclannav_cloudclan')) + GetObject('intevol_topclannav_cloudclan').height + 2));
+}
+function intevol_topclannav_cloudclan_mouseoutFunction () {
+	GetObject('intevol_topclannav_cloudclan').src = 'http://img.deusm.com/internetevolution/intevol_topclannav_cloudclan.gif';
+	PopMenuOff('intevol_topclannav_cloudclan_arrowpopmenu_toparrow', -500, 38);
+}
+</script>
+<div name="intevol_topclannav_executiveclan_arrowpopmenu_toparrow" id="intevol_topclannav_executiveclan_arrowpopmenu_toparrow" onmouseover="intevol_topclannav_executiveclan_mouseoverFunction()" onmouseout="intevol_topclannav_executiveclan_mouseoutFunction()" style="width: 312px; position: absolute; z-index: 8; left: -500px; top: 38px;">
+<div style="width: 45px; height: 12px; position: relative; left: 10px; top: 1px;"><img src="http://img.deusm.com/internetevolution/intevol_ietv_popuparrow_gray_top.png" width="45" height="12" border="0"></div>
+<div style="width: 298px; border: 1px solid #b3b3b3; background-color: #f4f4f4;">
+<div name="intevol_topclannav_executiveclan_arrowpopmenu_toparrow_content" id="intevol_topclannav_executiveclan_arrowpopmenu_toparrow_content" style="margin: 13px;"><span class="black"><a href="/executive-clan.asp" target="new"><b>Eager Investors, Beware Pre-IPO Shares</b> 
+<br />Chris Poley <br />Just about two years ago, I posted <a href="http://www.internetevolution.com/author.asp?section_id=705&doc_id=189710"target="new">a blog</a> warning Internet Evolution readers, “I’ll take the 
+<a href="http://www.youtube.com/watch?v=OJfF9scHuNA&feature=related"target="new">whipping post</a> anytime before I actually commit a penny to 
+<a href="https://www.sharespost.com/"target="new">SharesPost.com</a>.” </span>
+</a> </span>
+<span class="blue smallest"><br /><a href="/executive-clan.asp" target="new">CLICK FOR MORE</a> </span>
+</div>
+</div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+<script language="Javascript">
+function intevol_topclannav_executiveclan_mouseoverFunction () {
+	GetObject('intevol_topclannav_executiveclan').src = 'http://img.deusm.com/internetevolution/intevol_topclannav_executiveclan_over.gif';
+	PopMenu('intevol_topclannav_executiveclan_arrowpopmenu_toparrow',(returnPosXofObj(GetObject('intevol_topclannav_executiveclan')) + 0 - 3),(returnPosYofObj(GetObject('intevol_topclannav_executiveclan')) + GetObject('intevol_topclannav_executiveclan').height + 2));
+}
+function intevol_topclannav_executiveclan_mouseoutFunction () {
+	GetObject('intevol_topclannav_executiveclan').src = 'http://img.deusm.com/internetevolution/intevol_topclannav_executiveclan.gif';
+	PopMenuOff('intevol_topclannav_executiveclan_arrowpopmenu_toparrow', -500, 38);
+}
+</script>
+<div name="intevol_topclannav_itclan_arrowpopmenu_toparrow" id="intevol_topclannav_itclan_arrowpopmenu_toparrow" onmouseover="intevol_topclannav_itclan_mouseoverFunction()" onmouseout="intevol_topclannav_itclan_mouseoutFunction()" style="width: 312px; position: absolute; z-index: 8; left: -500px; top: 38px;">
+<div style="width: 45px; height: 12px; position: relative; left: 10px; top: 1px;"><img src="http://img.deusm.com/internetevolution/intevol_ietv_popuparrow_gray_top.png" width="45" height="12" border="0"></div>
+<div style="width: 298px; border: 1px solid #b3b3b3; background-color: #f4f4f4;">
+<div name="intevol_topclannav_itclan_arrowpopmenu_toparrow_content" id="intevol_topclannav_itclan_arrowpopmenu_toparrow_content" style="margin: 13px;"><span class="black"><a href="/itclan.asp" target="new"><b>A Course in Strategic IT From Indiana University</b> 
+<br />Mansur Hasib <br />In 1997, Indiana University, which serves about 100,000 students on eight campuses, became one of the first academic institutions to elevate the job of CIO to a strategic position reporting to the president of the university. In 2007, IU made another notable decision by choosing a former CIO as its president. </span>
+</a> </span>
+<span class="blue smallest"><br /><a href="/itclan.asp" target="new">CLICK FOR MORE</a> </span>
+</div>
+</div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+<script language="Javascript">
+function intevol_topclannav_itclan_mouseoverFunction () {
+	GetObject('intevol_topclannav_itclan').src = 'http://img.deusm.com/internetevolution/intevol_topclannav_itclan_over.gif';
+	PopMenu('intevol_topclannav_itclan_arrowpopmenu_toparrow',(returnPosXofObj(GetObject('intevol_topclannav_itclan')) + 0 - 26),(returnPosYofObj(GetObject('intevol_topclannav_itclan')) + GetObject('intevol_topclannav_itclan').height + 2));
+}
+function intevol_topclannav_itclan_mouseoutFunction () {
+	GetObject('intevol_topclannav_itclan').src = 'http://img.deusm.com/internetevolution/intevol_topclannav_itclan.gif';
+	PopMenuOff('intevol_topclannav_itclan_arrowpopmenu_toparrow', -500, 38);
+}
+</script>
+<div name="intevol_topclannav_midmarketclan_arrowpopmenu_toparrow" id="intevol_topclannav_midmarketclan_arrowpopmenu_toparrow" onmouseover="intevol_topclannav_midmarketclan_mouseoverFunction()" onmouseout="intevol_topclannav_midmarketclan_mouseoutFunction()" style="width: 312px; position: absolute; z-index: 8; left: -500px; top: 38px;">
+<div style="width: 45px; height: 12px; position: relative; left: 10px; top: 1px;"><img src="http://img.deusm.com/internetevolution/intevol_ietv_popuparrow_gray_top.png" width="45" height="12" border="0"></div>
+<div style="width: 298px; border: 1px solid #b3b3b3; background-color: #f4f4f4;">
+<div name="intevol_topclannav_midmarketclan_arrowpopmenu_toparrow_content" id="intevol_topclannav_midmarketclan_arrowpopmenu_toparrow_content" style="margin: 13px;"><span class="black"><a href="/midmarket-clan.asp" target="new"><b>A Course in Strategic IT From Indiana University</b> 
+<br />Mansur Hasib <br />In 1997, Indiana University, which serves about 100,000 students on eight campuses, became one of the first academic institutions to elevate the job of CIO to a strategic position reporting to the president of the university. In 2007, IU made another notable decision by choosing a former CIO as its president. </span>
+</a> </span>
+<span class="blue smallest"><br /><a href="/midmarket-clan.asp" target="new">CLICK FOR MORE</a> </span>
+</div>
+</div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+<script language="Javascript">
+function intevol_topclannav_midmarketclan_mouseoverFunction () {
+	GetObject('intevol_topclannav_midmarketclan').src = 'http://img.deusm.com/internetevolution/intevol_topclannav_midmarketclan_over.gif';
+	PopMenu('intevol_topclannav_midmarketclan_arrowpopmenu_toparrow',(returnPosXofObj(GetObject('intevol_topclannav_midmarketclan')) + 0 - 0),(returnPosYofObj(GetObject('intevol_topclannav_midmarketclan')) + GetObject('intevol_topclannav_midmarketclan').height + 2));
+}
+function intevol_topclannav_midmarketclan_mouseoutFunction () {
+	GetObject('intevol_topclannav_midmarketclan').src = 'http://img.deusm.com/internetevolution/intevol_topclannav_midmarketclan.gif';
+	PopMenuOff('intevol_topclannav_midmarketclan_arrowpopmenu_toparrow', -500, 38);
+}
+</script>
+<div name="intevol_topclannav_securityclan_arrowpopmenu_toparrow" id="intevol_topclannav_securityclan_arrowpopmenu_toparrow" onmouseover="intevol_topclannav_securityclan_mouseoverFunction()" onmouseout="intevol_topclannav_securityclan_mouseoutFunction()" style="width: 312px; position: absolute; z-index: 8; left: -500px; top: 38px;">
+<div style="width: 45px; height: 12px; position: relative; left: 10px; top: 1px;"><img src="http://img.deusm.com/internetevolution/intevol_ietv_popuparrow_gray_top.png" width="45" height="12" border="0"></div>
+<div style="width: 298px; border: 1px solid #b3b3b3; background-color: #f4f4f4;">
+<div name="intevol_topclannav_securityclan_arrowpopmenu_toparrow_content" id="intevol_topclannav_securityclan_arrowpopmenu_toparrow_content" style="margin: 13px;"><span class="black"><a href="/securityclan.asp" target="new"><b>How to Prevent Employees From Stealing Data</b> 
+<br />Gideon J. Lenkey <br />Twenty years ago, departing employees may have packed up a stapler or a lifetime supply of paperclips on their way out. These days, they may take something more valuable and a lot easier to pocket: digital data. In most cases, it's likely to be the innocuous email inbox containing nothing more than cute kitten photos, bad jokes, and drink recipes (which is probably what got them fired in the first place). At the other end of the spectrum is the employee who makes off with your customer list, design documents, or source code and uses it to get a better position with one of your competitors. </span>
+</a> </span>
+<span class="blue smallest"><br /><a href="/securityclan.asp" target="new">CLICK FOR MORE</a> </span>
+</div>
+</div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+<script language="Javascript">
+function intevol_topclannav_securityclan_mouseoverFunction () {
+	GetObject('intevol_topclannav_securityclan').src = 'http://img.deusm.com/internetevolution/intevol_topclannav_securityclan_over.gif';
+	PopMenu('intevol_topclannav_securityclan_arrowpopmenu_toparrow',(returnPosXofObj(GetObject('intevol_topclannav_securityclan')) + 0 - 8),(returnPosYofObj(GetObject('intevol_topclannav_securityclan')) + GetObject('intevol_topclannav_securityclan').height + 2));
+}
+function intevol_topclannav_securityclan_mouseoutFunction () {
+	GetObject('intevol_topclannav_securityclan').src = 'http://img.deusm.com/internetevolution/intevol_topclannav_securityclan.gif';
+	PopMenuOff('intevol_topclannav_securityclan_arrowpopmenu_toparrow', -500, 38);
+}
+</script>
+<div name="ietvrtcolmorefrom_vid_236868_arrowpopmenu_rightarrow" id="ietvrtcolmorefrom_vid_236868_arrowpopmenu_rightarrow" onmouseover="ietvrtcolmorefrom_vid_236868_thumb_mouseoverFunction()" onmouseout="ietvrtcolmorefrom_vid_236868_thumb_mouseoutFunction()" style="width: 312px; position: absolute; z-index: 8; left: -500px; top: 38px;">
+<div style="float: left; width: 298px; border: 1px solid #b3b3b3; background-color: #f4f4f4;">
+<div name="ietvrtcolmorefrom_vid_236868_arrowpopmenu_rightarrow_content" id=name="ietvrtcolmorefrom_vid_236868_arrowpopmenu_rightarrow_content" style="margin: 13px;">
+<span class="black"><a href="/document.asp?doc_id=236868"><b>IBM Videos</b><br />Smarter Processes Lead to Business Agility</a> </span><span class="gray"><br />12|15|11 &nbsp; | &nbsp; 5:37 &nbsp; | &nbsp; <a href="/document.asp?doc_id=236868">No comments</a> </span><span class="black"><br /><br />As customer expectations shift and business becomes more complex, companies must become more agile to cope with what IBM VP Paul Brunet calls the "new normal."  See how IBM customer, American Well,  is using technology to technology to build smarter business processes and new healthcare services.</span>
+</div>
+</div>
+<div style="float: left; width: 12px; height: 45px; position: relative; left: -1px;"><img src="http://img.lightreading.com/internetevolution/intevol_ietv_popuparrow_gray_right.png" width="12" height="45" border="0"></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+<script language="Javascript">
+function ietvrtcolmorefrom_vid_236868_thumb_mouseoverFunction() {
+	GetObject('ietvrtcolmorefrom_vid_236868_thumb').style.border = '1px solid #4282dc';
+	PopMenu('ietvrtcolmorefrom_vid_236868_arrowpopmenu_rightarrow',(returnPosXofObj(GetObject('ietvrtcolmorefrom_vid_236868_thumb')) - 315),(returnPosYofObj(GetObject('ietvrtcolmorefrom_vid_236868_thumb')) + 0));
+}
+function ietvrtcolmorefrom_vid_236868_thumb_mouseoutFunction() {
+	GetObject('ietvrtcolmorefrom_vid_236868_thumb').style.border = '1px solid #e6e6e6';
+	PopMenuOff('ietvrtcolmorefrom_vid_236868_arrowpopmenu_rightarrow', -500, 38);
+}
+</script>
+<div name="ietvrtcolmorefrom_vid_235934_arrowpopmenu_rightarrow" id="ietvrtcolmorefrom_vid_235934_arrowpopmenu_rightarrow" onmouseover="ietvrtcolmorefrom_vid_235934_thumb_mouseoverFunction()" onmouseout="ietvrtcolmorefrom_vid_235934_thumb_mouseoutFunction()" style="width: 312px; position: absolute; z-index: 8; left: -500px; top: 38px;">
+<div style="float: left; width: 298px; border: 1px solid #b3b3b3; background-color: #f4f4f4;">
+<div name="ietvrtcolmorefrom_vid_235934_arrowpopmenu_rightarrow_content" id=name="ietvrtcolmorefrom_vid_235934_arrowpopmenu_rightarrow_content" style="margin: 13px;">
+<span class="black"><a href="/document.asp?doc_id=235934"><b>IBM Videos</b><br />Smarter Computing Through Optimized Systems</a> </span><span class="gray"><br />11|18|11 &nbsp; | &nbsp; 9:28 &nbsp; | &nbsp; <a href="/document.asp?doc_id=235934">1 comment</a> </span><span class="black"><br /><br />IBM Fellow Gururaj Rao reveals how companies can create business innovation and client value by optimizing workloads, data, and storage systems.</span>
+</div>
+</div>
+<div style="float: left; width: 12px; height: 45px; position: relative; left: -1px;"><img src="http://img.lightreading.com/internetevolution/intevol_ietv_popuparrow_gray_right.png" width="12" height="45" border="0"></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+<script language="Javascript">
+function ietvrtcolmorefrom_vid_235934_thumb_mouseoverFunction() {
+	GetObject('ietvrtcolmorefrom_vid_235934_thumb').style.border = '1px solid #4282dc';
+	PopMenu('ietvrtcolmorefrom_vid_235934_arrowpopmenu_rightarrow',(returnPosXofObj(GetObject('ietvrtcolmorefrom_vid_235934_thumb')) - 315),(returnPosYofObj(GetObject('ietvrtcolmorefrom_vid_235934_thumb')) + 0));
+}
+function ietvrtcolmorefrom_vid_235934_thumb_mouseoutFunction() {
+	GetObject('ietvrtcolmorefrom_vid_235934_thumb').style.border = '1px solid #e6e6e6';
+	PopMenuOff('ietvrtcolmorefrom_vid_235934_arrowpopmenu_rightarrow', -500, 38);
+}
+</script>
+<div name="ietvrtcolmorefrom_vid_231984_arrowpopmenu_rightarrow" id="ietvrtcolmorefrom_vid_231984_arrowpopmenu_rightarrow" onmouseover="ietvrtcolmorefrom_vid_231984_thumb_mouseoverFunction()" onmouseout="ietvrtcolmorefrom_vid_231984_thumb_mouseoutFunction()" style="width: 312px; position: absolute; z-index: 8; left: -500px; top: 38px;">
+<div style="float: left; width: 298px; border: 1px solid #b3b3b3; background-color: #f4f4f4;">
+<div name="ietvrtcolmorefrom_vid_231984_arrowpopmenu_rightarrow_content" id=name="ietvrtcolmorefrom_vid_231984_arrowpopmenu_rightarrow_content" style="margin: 13px;">
+<span class="black"><a href="/document.asp?doc_id=231984"><b>IBM Videos</b><br />Building Smarter Cities</a> </span><span class="gray"><br />8|2|11 &nbsp; | &nbsp; 6:26 &nbsp; | &nbsp; <a href="/document.asp?doc_id=231984">No comments</a> </span><span class="black"><br /><br />Just like businesses, cities compete in a global marketplace. By leveraging technology, they can use information to engage their communities, deliver better services, and lure prospective citizens. </span>
+</div>
+</div>
+<div style="float: left; width: 12px; height: 45px; position: relative; left: -1px;"><img src="http://img.lightreading.com/internetevolution/intevol_ietv_popuparrow_gray_right.png" width="12" height="45" border="0"></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+<script language="Javascript">
+function ietvrtcolmorefrom_vid_231984_thumb_mouseoverFunction() {
+	GetObject('ietvrtcolmorefrom_vid_231984_thumb').style.border = '1px solid #4282dc';
+	PopMenu('ietvrtcolmorefrom_vid_231984_arrowpopmenu_rightarrow',(returnPosXofObj(GetObject('ietvrtcolmorefrom_vid_231984_thumb')) - 315),(returnPosYofObj(GetObject('ietvrtcolmorefrom_vid_231984_thumb')) + 0));
+}
+function ietvrtcolmorefrom_vid_231984_thumb_mouseoutFunction() {
+	GetObject('ietvrtcolmorefrom_vid_231984_thumb').style.border = '1px solid #e6e6e6';
+	PopMenuOff('ietvrtcolmorefrom_vid_231984_arrowpopmenu_rightarrow', -500, 38);
+}
+</script>
+<div name="ietvrtcolmorefrom_vid_207490_arrowpopmenu_rightarrow" id="ietvrtcolmorefrom_vid_207490_arrowpopmenu_rightarrow" onmouseover="ietvrtcolmorefrom_vid_207490_thumb_mouseoverFunction()" onmouseout="ietvrtcolmorefrom_vid_207490_thumb_mouseoutFunction()" style="width: 312px; position: absolute; z-index: 8; left: -500px; top: 38px;">
+<div style="float: left; width: 298px; border: 1px solid #b3b3b3; background-color: #f4f4f4;">
+<div name="ietvrtcolmorefrom_vid_207490_arrowpopmenu_rightarrow_content" id=name="ietvrtcolmorefrom_vid_207490_arrowpopmenu_rightarrow_content" style="margin: 13px;">
+<span class="black"><a href="/document.asp?doc_id=207490"><b>IBM Videos</b><br />Smart Business Solutions for the Midmarket: Coriell Insitute</a> </span><span class="gray"><br />6|16|11 &nbsp; | &nbsp; 6:38 &nbsp; | &nbsp; <a href="/document.asp?doc_id=207490">No comments</a> </span><span class="black"><br /><br />When it comes to innovation, midmarket firms frequently lead the way. Take the budding field of personalized medicine, where forward-looking organizations like New Jersey's Coriell Institute are laying groundwork for a new generation of drugs that will be uniquely tailored to each individual patient. A small nonprofit with fewer than 200 employees, Coriell is leveraging IBM technology to create a next-generation "DNA bank," a critical tool for constructing tomorrow's "smart" medicines and treatments</span>
+</div>
+</div>
+<div style="float: left; width: 12px; height: 45px; position: relative; left: -1px;"><img src="http://img.lightreading.com/internetevolution/intevol_ietv_popuparrow_gray_right.png" width="12" height="45" border="0"></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+<script language="Javascript">
+function ietvrtcolmorefrom_vid_207490_thumb_mouseoverFunction() {
+	GetObject('ietvrtcolmorefrom_vid_207490_thumb').style.border = '1px solid #4282dc';
+	PopMenu('ietvrtcolmorefrom_vid_207490_arrowpopmenu_rightarrow',(returnPosXofObj(GetObject('ietvrtcolmorefrom_vid_207490_thumb')) - 315),(returnPosYofObj(GetObject('ietvrtcolmorefrom_vid_207490_thumb')) + 0));
+}
+function ietvrtcolmorefrom_vid_207490_thumb_mouseoutFunction() {
+	GetObject('ietvrtcolmorefrom_vid_207490_thumb').style.border = '1px solid #e6e6e6';
+	PopMenuOff('ietvrtcolmorefrom_vid_207490_arrowpopmenu_rightarrow', -500, 38);
+}
+</script>
+<div name="ietvrtcolmorefrom_vid_206223_arrowpopmenu_rightarrow" id="ietvrtcolmorefrom_vid_206223_arrowpopmenu_rightarrow" onmouseover="ietvrtcolmorefrom_vid_206223_thumb_mouseoverFunction()" onmouseout="ietvrtcolmorefrom_vid_206223_thumb_mouseoutFunction()" style="width: 312px; position: absolute; z-index: 8; left: -500px; top: 38px;">
+<div style="float: left; width: 298px; border: 1px solid #b3b3b3; background-color: #f4f4f4;">
+<div name="ietvrtcolmorefrom_vid_206223_arrowpopmenu_rightarrow_content" id=name="ietvrtcolmorefrom_vid_206223_arrowpopmenu_rightarrow_content" style="margin: 13px;">
+<span class="black"><a href="/document.asp?doc_id=206223"><b>IBM Videos</b><br />Connecting With Social Software</a> </span><span class="gray"><br />5|3|11 &nbsp; | &nbsp; 8:45 &nbsp; | &nbsp; <a href="/document.asp?doc_id=206223">No comments</a> </span><span class="black"><br /><br />An ever-increasing number of businesses are using social software to enable project managers to efficiently connect to individuals, groups of people and even entire communities. This ability to share knowledge and efficiently leverage people’s interests and skillsets enables companies of any size to remain flexible and agile when it comes to developing new products and ideas. We visited the IBM Research facility in Cambridge, Mass., for a 21st Century take on the old adage: It’s not what you know, but who you know.</span>
+</div>
+</div>
+<div style="float: left; width: 12px; height: 45px; position: relative; left: -1px;"><img src="http://img.lightreading.com/internetevolution/intevol_ietv_popuparrow_gray_right.png" width="12" height="45" border="0"></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+<script language="Javascript">
+function ietvrtcolmorefrom_vid_206223_thumb_mouseoverFunction() {
+	GetObject('ietvrtcolmorefrom_vid_206223_thumb').style.border = '1px solid #4282dc';
+	PopMenu('ietvrtcolmorefrom_vid_206223_arrowpopmenu_rightarrow',(returnPosXofObj(GetObject('ietvrtcolmorefrom_vid_206223_thumb')) - 315),(returnPosYofObj(GetObject('ietvrtcolmorefrom_vid_206223_thumb')) + 0));
+}
+function ietvrtcolmorefrom_vid_206223_thumb_mouseoutFunction() {
+	GetObject('ietvrtcolmorefrom_vid_206223_thumb').style.border = '1px solid #e6e6e6';
+	PopMenuOff('ietvrtcolmorefrom_vid_206223_arrowpopmenu_rightarrow', -500, 38);
+}
+</script>
+<div name="ietvrtcolmorefrom_vid_201954_arrowpopmenu_rightarrow" id="ietvrtcolmorefrom_vid_201954_arrowpopmenu_rightarrow" onmouseover="ietvrtcolmorefrom_vid_201954_thumb_mouseoverFunction()" onmouseout="ietvrtcolmorefrom_vid_201954_thumb_mouseoutFunction()" style="width: 312px; position: absolute; z-index: 8; left: -500px; top: 38px;">
+<div style="float: left; width: 298px; border: 1px solid #b3b3b3; background-color: #f4f4f4;">
+<div name="ietvrtcolmorefrom_vid_201954_arrowpopmenu_rightarrow_content" id=name="ietvrtcolmorefrom_vid_201954_arrowpopmenu_rightarrow_content" style="margin: 13px;">
+<span class="black"><a href="/document.asp?doc_id=201954"><b>IBM Videos</b><br />How Analytics Is Changing Workforce Management in a Borderless World</a> </span><span class="gray"><br />12|14|10 &nbsp; | &nbsp; 9:50 &nbsp; | &nbsp; <a href="/document.asp?doc_id=201954">5 comments</a> </span><span class="black"><br /><br />As organizations become more global, opportunities to enter new markets and offer new solutions will drive future workforce investment, regardless of the region. In a new study from IBM, some 700 HR executives offer insights into the future of workforce management and leadership in a dynamic global marketplace. We sat down with IBM's VP of HR for workforce analytics to explore these issues. </span>
+</div>
+</div>
+<div style="float: left; width: 12px; height: 45px; position: relative; left: -1px;"><img src="http://img.lightreading.com/internetevolution/intevol_ietv_popuparrow_gray_right.png" width="12" height="45" border="0"></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+<script language="Javascript">
+function ietvrtcolmorefrom_vid_201954_thumb_mouseoverFunction() {
+	GetObject('ietvrtcolmorefrom_vid_201954_thumb').style.border = '1px solid #4282dc';
+	PopMenu('ietvrtcolmorefrom_vid_201954_arrowpopmenu_rightarrow',(returnPosXofObj(GetObject('ietvrtcolmorefrom_vid_201954_thumb')) - 315),(returnPosYofObj(GetObject('ietvrtcolmorefrom_vid_201954_thumb')) + 0));
+}
+function ietvrtcolmorefrom_vid_201954_thumb_mouseoutFunction() {
+	GetObject('ietvrtcolmorefrom_vid_201954_thumb').style.border = '1px solid #e6e6e6';
+	PopMenuOff('ietvrtcolmorefrom_vid_201954_arrowpopmenu_rightarrow', -500, 38);
+}
+</script>
+<div name="ietvrtcolmorefrom_vid_201952_arrowpopmenu_rightarrow" id="ietvrtcolmorefrom_vid_201952_arrowpopmenu_rightarrow" onmouseover="ietvrtcolmorefrom_vid_201952_thumb_mouseoverFunction()" onmouseout="ietvrtcolmorefrom_vid_201952_thumb_mouseoutFunction()" style="width: 312px; position: absolute; z-index: 8; left: -500px; top: 38px;">
+<div style="float: left; width: 298px; border: 1px solid #b3b3b3; background-color: #f4f4f4;">
+<div name="ietvrtcolmorefrom_vid_201952_arrowpopmenu_rightarrow_content" id=name="ietvrtcolmorefrom_vid_201952_arrowpopmenu_rightarrow_content" style="margin: 13px;">
+<span class="black"><a href="/document.asp?doc_id=201952"><b>IBM Videos</b><br />Business Agility</a> </span><span class="gray"><br />12|14|10 &nbsp; | &nbsp; 5:43 &nbsp; | &nbsp; <a href="/document.asp?doc_id=201952">No comments</a> </span><span class="black"><br /><br />Like profitability and market share, business agility is something that every company strives for. But in today’s economic climate, with businesses operating in a highly challenging and ever more complex environment, how flexible you are and how rapidly you can respond to new opportunities and adapt to new challenges may well determine the success or failure of your enterprise. 
+ </p><p>
+IBM is a company known for its ability to help other companies streamline their processes and become more agile. To get more insight on this, we sat down with Nancy Pearson, IBM’s vice president for BPM, SOA, and Websphere marketing.</span>
+</div>
+</div>
+<div style="float: left; width: 12px; height: 45px; position: relative; left: -1px;"><img src="http://img.lightreading.com/internetevolution/intevol_ietv_popuparrow_gray_right.png" width="12" height="45" border="0"></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+<script language="Javascript">
+function ietvrtcolmorefrom_vid_201952_thumb_mouseoverFunction() {
+	GetObject('ietvrtcolmorefrom_vid_201952_thumb').style.border = '1px solid #4282dc';
+	PopMenu('ietvrtcolmorefrom_vid_201952_arrowpopmenu_rightarrow',(returnPosXofObj(GetObject('ietvrtcolmorefrom_vid_201952_thumb')) - 315),(returnPosYofObj(GetObject('ietvrtcolmorefrom_vid_201952_thumb')) + 0));
+}
+function ietvrtcolmorefrom_vid_201952_thumb_mouseoutFunction() {
+	GetObject('ietvrtcolmorefrom_vid_201952_thumb').style.border = '1px solid #e6e6e6';
+	PopMenuOff('ietvrtcolmorefrom_vid_201952_arrowpopmenu_rightarrow', -500, 38);
+}
+</script>
+<div name="ietvrtcolmorefrom_vid_194060_arrowpopmenu_rightarrow" id="ietvrtcolmorefrom_vid_194060_arrowpopmenu_rightarrow" onmouseover="ietvrtcolmorefrom_vid_194060_thumb_mouseoverFunction()" onmouseout="ietvrtcolmorefrom_vid_194060_thumb_mouseoutFunction()" style="width: 312px; position: absolute; z-index: 8; left: -500px; top: 38px;">
+<div style="float: left; width: 298px; border: 1px solid #b3b3b3; background-color: #f4f4f4;">
+<div name="ietvrtcolmorefrom_vid_194060_arrowpopmenu_rightarrow_content" id=name="ietvrtcolmorefrom_vid_194060_arrowpopmenu_rightarrow_content" style="margin: 13px;">
+<span class="black"><a href="/document.asp?doc_id=194060"><b>IBM Videos</b><br />How Enterprise 2.0 Transforms Business & Empowers the Workforce</a> </span><span class="gray"><br />7|6|10 &nbsp; | &nbsp; 3:26 &nbsp; | &nbsp; <a href="/document.asp?doc_id=194060">2 comments</a> </span><span class="black"><br /><br />Enterprise 2.0, which encompasses everything from collaboration to knowledge sharing, promises to change corporate culture and how people work. We talked to several people about how these technologies are transforming their organizations.</span>
+</div>
+</div>
+<div style="float: left; width: 12px; height: 45px; position: relative; left: -1px;"><img src="http://img.lightreading.com/internetevolution/intevol_ietv_popuparrow_gray_right.png" width="12" height="45" border="0"></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+<script language="Javascript">
+function ietvrtcolmorefrom_vid_194060_thumb_mouseoverFunction() {
+	GetObject('ietvrtcolmorefrom_vid_194060_thumb').style.border = '1px solid #4282dc';
+	PopMenu('ietvrtcolmorefrom_vid_194060_arrowpopmenu_rightarrow',(returnPosXofObj(GetObject('ietvrtcolmorefrom_vid_194060_thumb')) - 315),(returnPosYofObj(GetObject('ietvrtcolmorefrom_vid_194060_thumb')) + 0));
+}
+function ietvrtcolmorefrom_vid_194060_thumb_mouseoutFunction() {
+	GetObject('ietvrtcolmorefrom_vid_194060_thumb').style.border = '1px solid #e6e6e6';
+	PopMenuOff('ietvrtcolmorefrom_vid_194060_arrowpopmenu_rightarrow', -500, 38);
+}
+</script>
+<div name="ietvrtcolmorefrom_vid_187007_arrowpopmenu_rightarrow" id="ietvrtcolmorefrom_vid_187007_arrowpopmenu_rightarrow" onmouseover="ietvrtcolmorefrom_vid_187007_thumb_mouseoverFunction()" onmouseout="ietvrtcolmorefrom_vid_187007_thumb_mouseoutFunction()" style="width: 312px; position: absolute; z-index: 8; left: -500px; top: 38px;">
+<div style="float: left; width: 298px; border: 1px solid #b3b3b3; background-color: #f4f4f4;">
+<div name="ietvrtcolmorefrom_vid_187007_arrowpopmenu_rightarrow_content" id=name="ietvrtcolmorefrom_vid_187007_arrowpopmenu_rightarrow_content" style="margin: 13px;">
+<span class="black"><a href="/document.asp?doc_id=187007"><b>IBM Videos</b><br />Exploring IBM Research Labs (Part 1)</a> </span><span class="gray"><br />1|23|10 &nbsp; | &nbsp; 7:39 &nbsp; | &nbsp; <a href="/document.asp?doc_id=187007">2 comments</a> </span><span class="black"><br /><br />Part 1: IBM's research labs are like a candy shop for technologists. In Part 1 of this 2-part series, we take a look at Artemis and Blue Spruce, tools used for healthcare analytics and real-time collaboration.</span>
+</div>
+</div>
+<div style="float: left; width: 12px; height: 45px; position: relative; left: -1px;"><img src="http://img.lightreading.com/internetevolution/intevol_ietv_popuparrow_gray_right.png" width="12" height="45" border="0"></div>
+<div class="divsplitter" style="height: 0px;"></div>
+</div>
+<script language="Javascript">
+function ietvrtcolmorefrom_vid_187007_thumb_mouseoverFunction() {
+	GetObject('ietvrtcolmorefrom_vid_187007_thumb').style.border = '1px solid #4282dc';
+	PopMenu('ietvrtcolmorefrom_vid_187007_arrowpopmenu_rightarrow',(returnPosXofObj(GetObject('ietvrtcolmorefrom_vid_187007_thumb')) - 315),(returnPosYofObj(GetObject('ietvrtcolmorefrom_vid_187007_thumb')) + 0));
+}
+function ietvrtcolmorefrom_vid_187007_thumb_mouseoutFunction() {
+	GetObject('ietvrtcolmorefrom_vid_187007_thumb').style.border = '1px solid #e6e6e6';
+	PopMenuOff('ietvrtcolmorefrom_vid_187007_arrowpopmenu_rightarrow', -500, 38);
+}
+</script>
+
+<div align="center"><link rel="stylesheet" type="text/css" href="http://twimgs.com/infoweek/footernav/august11/superfooter_936.css" /><div align="center"><div id="tw_superfooter_936">	<div id="tw_superfooter_top">		<div id="tw_superfooter_bottom_bg">		<div id="tw_superfooter_header">			<div id="tw_superfooter_left_header_logo">				<a href="http://www.techweb.com/aboutus?itc=footer" target="_blank"><img src="http://twimgs.com/infoweek/footernav/august11/ubmtechweb_logo_sm.gif"/></a>			</div>			<div id="tw_superfooter_tagline"><h3>Enabling People and Organizations to Harness the Transformative Power of Technology</h3></div>		</div>		<div id="tw_superfooter_mid">			<div id="tw_superfooter_links">							<ul class="tw_superfooter_links_column">					<h4>CIOs &amp; IT Professionals</h4>					<li><a href="http://www.blackhat.com/" target="_blank">Black Hat</a></li>					<li><a href="http://www.byte.com/?itc=footer" target="_blank">BYTE</a></li>					<li><a href="http://www.cloudconnectevent.com/?itc=footer" target="_blank">Cloud Connect</a></li>					<li><a href="http://www.darkreading.com/?itc=footer" target="_blank">Dark Reading</a></li>					<li><a href="http://www.enterprise2conf.com/?itc=footer" target="_blank">Enterprise 2.0</a></li>					<li><a href="http://www.voicecon.com/?itc=footer" target="_blank">Enterprise Connect</a></li>					<li><a href="http://www.enterpriseefficiency.com/?itc=footer" target="_blank">Enterprise Efficiency</a></li>					<li><a href="http://www.thinkhdi.com/?itc=footer" target="_blank">HDI</a></li>					<li><a href="http://www.informationweek.com/?itc=footer" target="_blank">InformationWeek</a></li>					<li><a href="http://www.informationweek.com/iw500?itc=footer" target="_blank">InformationWeek 500</a></li>					<li><a href="http://www.informationweekconference.com/?itc=footer" target="_blank">InformationWeek 500 Conference</a></li>					<li><a href="http://www.informationweek.com/events/?itc=footer" target="_blank">InformationWeek Events</a></li>					<li><a href="http://www.informationweek.com/global-cio/?itc=footer" target="_blank">InformationWeek Global CIO</a></li>					<li><a href="http://www.informationweek.com/healthcare/?itc=footer" target="_blank">InformationWeek Healthcare</a></li>					<li><a href="http://www.informationweek.in/?itc=footer" target="_blank">InformationWeek India</a></li>					<li><a href="http://reports.informationweek.com/?itc=footer" target="_blank">InformationWeek Reports</a></li>					<li><a href="http://smb.informationweek.com/?itc=footer" target="_blank">InformationWeek SMB</a></li>					<li><a href="http://www.interop.com/?itc=footer" target="_blank">Interop</a></li>					<li><a href="http://www.mobileconnectevent.com/?itc=footer" target="_blank">Mobile Connect</a></li>					<li><a href="http://www.networkcomputing.com/?itc=footer" target="_blank">Network Computing</a></li>					<li><a href="http://www.nojitter.com/?itc=footer" target="_blank">No Jitter</a></li>					<li><a href="http://www.techweb.com/?itc=footer" target="_blank">TechWeb.com</a></li>					<li><a href="http://www.thebrainyard.com/?itc=footer" target="_blank">The BrainYard</a></li>				</ul>				<ul class="tw_superfooter_links_column">					<h4>Software Developers</h4>					<li><a href="http://drdobbs.com/?itc=footer" target="_blank">Dr. Dobb's</a></li>					<li><a href="http://drdobbs.com/windows/?itc=footer" target="_blank">Dr. Dobb's M-Dev</a></li>					<li><a href="http://www.drdobbs.com/digital?itc=footer" target="_blank">Dr. Dobb's Journal</a></li>					<li><a href="http://www.drdobbs.com/newsletters/?itc=footer" target="_blank">Dr. Dobb's Update</a></li>					<li><a href="http://www.techweb.com/?itc=footer" target="_blank">TechWeb.com</a></li>					<h4>Web &amp; Digital Professionals</h4>					<li><a href="http://www.internetevolution.com/?itc=footer" target="_blank">Internet Evolution</a></li>					<li><a href="http://www.onlinemarketingsummit.com/?itc=footer" target="_blank">Online Marketing Summit</a></li>					<li><a href="http://www.techweb.com/?itc=footer" target="_blank">TechWeb.com</a></li>					<h4>Government Officials</h4>					<li><a href="http://www.gtec.ca/?itc=footer" target="_blank">GTEC Ottawa</a></li>					<li><a href="http://www.informationweek.com/government/?itc=footer" target="_blank">InformationWeek Government</a></li>					<li><a href="http://www.techweb.com/?itc=footer" target="_blank">TechWeb.com</a></li>				</ul>				<ul class="tw_superfooter_links_column">					<h4>Vertical Markets</h4>					<li><a href="http://www.advancedtrading.com/?itc=footer" target="_blank">Advanced Trading</a></li>					<li><a href="http://www.banktech.com/?itc=footer" target="_blank">Bank Systems &amp; Technology</a></li>					<li><a href="http://www.createyournextcustomer.com/?itc=footer" target="_blank">CreateYourNextCustomer</a></li>					<li><a href="http://www.informationweek.com/government/?itc=footer" target="_blank">InformationWeek Government</a></li>					<li><a href="http://www.informationweek.com/healthcare/?itc=footer" target="_blank">InformationWeek Healthcare</a></li>					<li><a href="http://www.insurancetech.com/?itc=footer" target="_blank">Insurance &amp; Technology</a></li>					<li><a href="http://www.lightreading.com/?itc=footer" target="_blank">Light Reading / Telecom</a></li>					<li><a href="http://www.thecmosite.com/?itc=footer" target="_blank">The CMO Site</a></li>					<li><a href="http://www.wallstreetandtech.com/?itc=footer" target="_blank">Wall Street &amp; Technology</a></li>					<h4>Game Industry Professionals</h4>					<li><a href="http://gamasutra.com/?itc=footer" target="_blank">Gamasutra.com</a></li>					<li><a href="http://www.gdconf.com/?itc=footer" target="_blank">Game Developers Conference (GDC)</a></li>					<li><a href="http://www.igf.com/?itc=footer" target="_blank">Independent Games Festival</a></li>					<li><a href="http://www.gdmag.com/?itc=footer" target="_blank">Game Developer Magazine</a></li>					<li><a href="http://www.gdceurope.com/?itc=footer" target="_blank">GDC Europe</a></li>					<li><a href="http://www.china.gdconf.com/?itc=footer" target="_blank">GDC China</a></li>					<li><a href="http://www.gamecareerguide.com/?itc=footer" target="_blank">Game Career Guide</a></li>					<li><a href="http://www.game-advertising-online.com/?itc=footer" target="_blank">Game Advertising Online</a></li>				</ul>				<ul class="tw_superfooter_links_column">					<h4>Global Communications <br />Service Providers</h4>					<li><a href="http://www.4gworld.com/?itc=footer" target="_blank">4G World</a></li>					<li><a href="http://www.heavyreading.com/?itc=footer" target="_blank">Heavy Reading</a></li>					<li><a href="http://www.heavyreading.com/research/?itc=footer" target="_blank">Heavy Reading Insiders</a></li>					<li><a href="http://www.pyr.com/" target="_blank">Pyramid Research</a></li>					<li><a href="http://www.lightreading.com/?itc=footer" target="_blank">Light Reading</a></li>					<li><a href="http://www.lightreading.in/?itc=footer" target="_blank">Light Reading India</a></li>					<li><a href="http://www.lightreading.com/lr-mobile/?itc=footer" target="_blank">Light Reading Mobile</a></li>					<li><a href="http://www.lightreading.com/lr-cable/?itc=footer" target="_blank">Light Reading Cable</a></li>					<li><a href="http://www.lightreading.com/europe/?itc=footer" target="_blank">Light Reading Europe</a></li>					<li><a href="http://www.lightreading.com/asia/?itc=footer" target="_blank">Light Reading Asia</a></li>					<li><a href="http://www.EthernetExpo.com" target="_blank">Ethernet Expo</a></li>					<li><a href="http://www.TelcoTVonline.com" target="_blank">TelcoTV</a></li>					<li><a href="http://www.towersummit.com" target="_blank">Tower Summit</a></li>					<li><a href="http://www.lightreading.com/live/?itc=footer" target="_blank">Light Reading Live &amp; Virtual Events</a></li>					<li><a href="http://www.lightreading.com/calendar_webinars.asp?site=lightreading?itc=footer" target="_blank">Webinars</a></li>				</ul>			<ul class="tw_superfooter_links_column">					<h4>Most Popular</h4>					<li><a href="http://www.lightreading.com/blog.asp?blog_sectionid=419&doc_id=180545&site=cdn&?itc=footer" target="_blank">Cable Catchup</a></li>					<li><a href="http://blog.cloudconnectevent.com/?itc=footer" target="_blank">Cloud Connect Blog</a></li>					<li><a href="http://www.informationweek.com/blogs/digital_life?itc=footer" target="_blank">Digital Life</a></li>					<li><a href="http://www.darkreading.com/blog/archives/evil_bytes/index.html?itc=footer" target="_blank">Evil Bytes</a></li>					<li><a href="http://reports.informationweek.com/?itc=footer" target="_blank">InformationWeek Reports</a></li>					<li><a href="http://blog.interop.com/?itc=footer" target="_blank">Interop Blog</a></li>					<li><a href="http://www.lightreading.com/archives.asp?section_id=222" target="_blank">Monkey Bidness</a></li>					<li><a href="http://www.informationweek.com/blogs/mobility?itc=footer" target="_blank">Over the Air</a></li>					<li><a href="http://www.informationweek.com/personal-tech/?itc=footer" target="_blank">Personal Tech</a></li>					<li><a href="http://www.lightreading.com/archives.asp?section_id=217" target="_blank">The Philter</a></li>					<li><a href="http://www.lightreading.com/archives.asp?section_id=388" target="_blank">Valley Wonk</a></li>				</ul>				<div style="clear: both;"></div>			</div>		</div>	</div>	</div>	<div id="tw_superfooter_bottom">		<div id="tw_superfooter_tw">						<h4>UBM TechWeb Reader Services</h4>			<ul>				<li><a href="http://www.techweb.com/aboutus/?itc=footer" target="_blank">About UBM TechWeb</a></li>				<li><a href="http://createyournextcustomer.com/contact-us/?itc=footer" target="_blank">Advertising Contacts</a></li>				<li><a href="http://www.createyournextcustomer.com/?itc=footer" target="_blank">Technology Marketing Solutions</a></li>				<li><a href="http://www.ubmtechweb.com/contact/?itc=footer" target="_blank">Contact Us</a></li>				<li><a href="mailto:feedback@techweb.com" target="_blank">Feedback</a></li>			</ul>			<div style="clear:both;"></div>			<ul>				<li><a href="http://www.wrightsreprints.com/reprints/?magid=techweb" target="_blank">Reprints</a></li>				<li><a href="http://www.informationweek.com/whitepaper/?itc=footer" target="_blank">TechWeb Digital Library / White Papers</a></li>				<li><a href="http://events.techweb.com/?itc=footer" target="_blank">TechWeb Events Calendar</a></li>				<li><a href="http://www.techweb.com/?itc=footer" target="_blank">TechWeb.com</a></li>			</ul>		</div>	</div>	<div id="tw_superfooter_tos">				<ul><li><a href="http://legal.us.ubm.com/terms-of-service/?itc=footer" target="_blank">Terms of Service</a></li>		<li>|</li><li><a href="http://legal.us.ubm.com/privacy-notice/?itc=footer" target="_blank">Privacy Statement</a></li>		<li>|</li><li><a href="http://legal.us.ubm.com/copyright-notice/?itc=footer" target="_blank">Copyright &copy; 2012 UBM TechWeb, All rights reserved.</a></li></ul>		<br />	</div></div></div><br />
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://twimgs.com/informationweek/elqNow/elqCfg.js'></SCRIPT><SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://twimgs.com/informationweek/elqNow/elqImg.js'></SCRIPT>
+</div>
+<div style="display: none;">
+<img src="http://img.deusm.com/internetevolution/bubble_green_small_2.gif">
+</div>
+
+</body>
+</html>

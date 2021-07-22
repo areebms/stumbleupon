@@ -1,0 +1,101 @@
+<html>
+
+<head>
+<TITLE>You Fell Asleep Watching a DVD</TITLE>
+
+<STYLE type=text/css>
+
+
+body {
+  background-image: url("bg03smaller.jpg");
+
+  background-repeat: no-repeat;
+  background-color: black;
+
+}
+
+#playlist {
+background-color:#D3D3D3;
+width:150px;
+height:195px;
+float:right;
+margin: 45px;
+}
+
+
+#vidbox { 
+position: absolute; 
+left: 298px; 
+top: 59px; 
+z-index:1;
+
+}
+
+#placeholder { 
+  }
+
+</STYLE>
+
+<script type="text/javascript" src="swfobject.js"></script>
+
+<script type="text/javascript">
+
+function createPlayer(thePlace, theFile) {
+	var s = new SWFObject("mediaplayer.swf","thePlayerId","125","90","7");
+	s.addParam("allowscriptaccess","always");
+	s.addVariable("file",theFile);
+	s.addVariable("width","125");
+	s.addVariable("height","90");
+	s.addVariable("displayheight","90");
+	s.addVariable("overstretch","false");
+	s.addVariable("displayclick","none");
+	s.addVariable("showicons","false");
+	s.addVariable("linkfromdisplay","true");
+	s.addVariable("link","");
+	s.addVariable("autostart","true");
+	s.addVariable("repeat","always");
+	s.write(thePlace);
+}
+</script>
+</head>
+<body onLoad="javascript: document.theForm.reset(); createPlayer('vidbox','darcy.flv')">
+
+<div id="vidbox"><a href='http://www.macromedia.com/go/getflashplayer'>get the flash player</a> to see this player.</div>
+
+
+<DIV id="playlist">
+*You Fell Asleep Watching a DVD*<br />
+---- ---- ---- ---- ----<br />
+Select the DVD->
+<form name="theForm" id="theFormId">
+
+<select name="sel1" onchange="createPlayer('vidbox',this.options[this.selectedIndex].value)" style="width:150px;"> 
+<option value="darcy.flv" selected>Pride & Prejudice</option>
+  <option value="knockknockknock.flv">Knocked Up</option> 
+  <option value="punchit.flv">Punch Drunk Love</option> 
+   <option value="buckyo.flv">Bucket List</option> 
+  <option value="arrestedflvsmall.flv">Arrested Development</option> 
+   <option value="t2.flv">Terminator 2</option> 
+     <option value="vanwildo.flv">Van Wilder</option>    
+    <option value="hpsmall.flv">Harry Potter 3</option> 
+  <option value="doggyflash.flv">Reservoir Dogs</option> 
+  <option value="smalleststillerflv.flv">The Ben Stiller Show</option> 
+  <option value="shaunofdead.flv">Shaun of Dead</option> 
+  <option value="bornagain.flv">Bourne Supremacy</option> 
+</select>
+</form>
+<br />
+gingeranyhow [at] gmail [dot] com
+</DIV>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-5303419-1");
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>
+

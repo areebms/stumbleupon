@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <META name="description" content="Supercook is a recipe search engine that lets you search by ingredients you have at home. Find thousands of recipes you can make right now with the ingredients you have available at home.  Supercook can help you save hundreds on grocery bills by showing you how to fully use the ingredients you have at home. No more wasted left-overs">
+        <META name="keywords" content="leftovers,left overs,home,appliances,diet,grocery,supermarket,recipe,search engine,ingredients,pantry,food,kitchen,dinner,dessert,entree,meal">
+        <meta name="apple-mobile-web-app-capable" content="no">
+        <title>Supercook: recipe search by ingredients you have at home</title>
+<!--        <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--        <title>wiz2</title>-->
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="wizard.js?v=1.0"></script>
+        <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+        <script src="js/bootstrap2.js"></script>
+        <script src="js/jquery.countTo.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script src="js/jquery.timers.js"></script>
+        <script src="js/modal-responsive-fix.js"></script>
+        <script src="js/jquery.printElement.min.js"></script>
+
+        <link rel="apple-touch-icon" href="img/icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/icon-iphone4.png">        
+
+<!--        <script type="text/javascript">
+            var addToHomeConfig = {returningVisitor: true, message: 'Install Supercook on your <strong>%device</strong>. Tap %icon and then <b>Add to Home Screen</b>.'};
+        </script>        
+        
+        <link rel="stylesheet" href="css/add2home.css">
+        <script type="application/javascript" src="js/add2home.js"></script>        -->
+        
+        <link href="css/bootstrap.css" rel="stylesheet">
+<!--        <link href="css/bootstrap-responsive.css" rel="stylesheet">-->
+        <link href="css/font-awesome.css" rel="stylesheet">
+        <link href="css/supercook.css" rel="stylesheet">
+        
+        <link href="css/jquery.autocomplete.css" rel="stylesheet">
+
+        
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                supercook.init();
+                
+                $('#q').keyup(function(e) {
+                        if(e.keyCode == 13) {
+                                supercook.add_ingredient($('#q').val());
+                                $('#q').val('');
+                        }
+                });
+                
+                $('#cat').click(function(){
+                    supercook.update_menu();
+                });
+                
+               $("#q").autocomplete("/dyn/autoc",{onItemSelect:selectItem});
+                
+               $('#kitchen_button').click(function(){
+                   supercook.data.altered_kitchen=0;
+                   $('#kitchen').modal('toggle')
+               });
+
+               $('#shopping_button').click(function(){
+                   $('#shopping_modal').modal('toggle')
+                   supercook.update_shopping_list();
+               });
+               
+               $('#oldsite').click(function(){
+                   var x=window.confirm("The old version of Supercook will be available until Nov 1st 2012. If you have any information you would like to keep, please log on to your account and save it. Once the old website is removed you will no longer have access to any saved information on your account. Our new version doesn't require an account and will automatically keep all of the contents of your kitchen as cookies within the browser.")
+                   if (x){
+                       window.location = 'http://www.supercook.com:81/signin.asp'
+                   }
+               });
+
+                $('#kitchen').bind('hidden', function () {
+                    if (supercook.data.altered_kitchen){
+                        supercook.load_recipes();
+                        supercook.update_ingredients();
+                    }
+                });               
+
+
+               $('#remove_all').click(function(){
+                   var x=window.confirm("Are you sure you want to remove all your ingredients?")
+                   if (x){
+                       supercook.remove_all_ingredients();
+                       $('#kitchen').modal('hide');
+                   }
+               });
+
+
+
+            });
+            
+            function selectItem(li) {
+                if( li == null ) return alert("No match!");
+                if( !!li.extra ) var sValue = li.extra[0];
+                else var sValue = li.selectValue;   
+                supercook.add_ingredient($('#q').val());
+                
+                $('#q').val('').focus();
+            }
+            
+            $(window).scroll(function () {
+               if ($(window).scrollTop() >= $(document).height() - $(window).height() - 800) {
+                   if (!supercook.data.append_loading){
+                       if (supercook.data.results_available>supercook.data.results_shown) supercook.load_recipes(1);
+                   }
+               }
+            });
+            
+            $(function() {
+                    $(window).scroll(function() {
+                            if($(this).scrollTop() != 0) {
+                                    $('#toTop').fadeIn();	
+                            } else {
+                                    $('#toTop').fadeOut();
+                            }
+                    });
+
+                    $('#toTop').click(function() {
+                            $('body,html').animate({scrollTop:0},500);
+                    });	
+            });
+            
+            if( navigator.userAgent.match(/iPhone/i) || 
+                  navigator.userAgent.match(/iPod/i) || 
+                  navigator.userAgent.match(/iPad/i)
+                ) {
+                     document.title = "SuperCook";
+
+              }
+              
+//        $(document).on('ajaxComplete', function (event, request, settings) {
+//            _gaq.push(['_trackPageview', settings.url]);
+//        });              
+            
+        </script>
+        <script type="text/javascript">
+              $(function() {
+                $('.modal').modalResponsiveFix({ debug: false })
+              })
+        </script>       
+
+        
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-35552943-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+        
+
+<!--        <script type='text/javascript'>
+            var googletag = googletag || {};
+            googletag.cmd = googletag.cmd || [];
+            (function() {
+                var gads = document.createElement('script');
+                gads.async = true;
+                gads.type = 'text/javascript';
+                var useSSL = 'https:' == document.location.protocol;
+                gads.src = (useSSL ? 'https:' : 'http:') + 
+                '//www.googletagservices.com/tag/js/gpt.js';
+                var node = document.getElementsByTagName('script')[0];
+                node.parentNode.insertBefore(gads, node);
+            })();
+        </script>
+
+        <script type='text/javascript'>
+            googletag.cmd.push(function() {
+                googletag.defineSlot('/82113412/top_ad', [728, 90], 'div-gpt-ad-1350328189526-0').addService(googletag.pubads());
+                googletag.defineSlot('/82113412/left_ad', [160, 600], 'div-gpt-ad-1350328274895-0').addService(googletag.pubads());
+                googletag.pubads().enableSingleRequest();
+                googletag.enableServices();
+            });
+        </script>-->
+
+
+        
+        
+    </head>
+    <body>
+        <div id="maincontent">
+            <iframe style="padding-left:200px;" id="topad2" align="middle" src="http://www.supercook.com/ads/top.html" framespacing='0' frameborder='no' scrolling='no' width='748' height='100'>
+                <script type="text/javascript">
+                google_ad_client = "ca-pub-1057233790981454";
+                /* topadd */
+                google_ad_slot = "7351288991";
+                google_ad_width = 728;
+                google_ad_height = 90;
+                //
+                </script>
+                <script type="text/javascript"
+                src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                </script>             
+            </iframe>
+             
+            
+            <div id="toTop">^ Back up</div>
+            <div id="navv" class="navbar" style="background-color: orange;">
+              <div id="nav_inner" class="navbar-inner">
+                  <img src="img/logo.png" style="margin-top: 4px;">
+<!--                <a class="brand" href="#">Supercook</a>-->
+
+
+                <div class="dropdown btn-group pull-right">
+                    <button id="exclusion_button" class="btn btn-large btn-danger dropdown-toggle" data-toggle="dropdown" style="margin-top:5px;">My Restrictions <span class="caret"></span></button>
+                      <ul class="dropdown-menu" id="exclusion_cats">
+
+                      </ul>
+                </div>                
+
+                <button id="kitchen_button" class="btn btn-large btn-success pull-right" style="margin-top:10px;margin-right:40px;">My Kitchen </button>
+                
+                <button id="shopping_button" class="btn btn-large btn-success pull-right" style="margin-top:10px;margin-right:40px;font-size: 13px;">My Shopping List </button>
+
+              </div>
+            </div>            
+
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div id="left_wrap" class="span3">
+                        <button class="btn btn-link" id="oldsite" type="button">Back to old site</button>
+
+                        <ul id="ccats" class="nav nav-list">
+                            <li class="nav-header">Choose a category</li>
+                        </ul>
+                        <a href="http://www.facebook.com/pages/Supercook/118243704898877"><img id="fb" src="img/facebook.png"></a>
+                        
+<!--                        <div class="leftad">
+                             left_ad 
+                            <div id='div-gpt-ad-1350328690062-0' style='width:160px; height:600px;'>
+                            <script type='text/javascript'>
+                            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1350328690062-0'); });
+                            </script>
+                            </div>                            
+                        </div>
+                        <div class="leftad">
+                             left_ad 
+                            <div id='div-gpt-ad-1350328690062-0' style='width:160px; height:600px;'>
+                            <script type='text/javascript'>
+                            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1350328690062-0'); });
+                            </script>
+                            </div>                            
+                        </div>-->
+
+                        
+                        <iframe class="leftad" src="http://www.supercook.com/ads/left.html" framespacing='0' frameborder='no' scrolling='no' width='160' height='600'>
+                            <script type="text/javascript">
+                            google_ad_client = "ca-pub-1057233790981454";
+                            /* right ad */
+                            google_ad_slot = "0914147459";
+                            google_ad_width = 160;
+                            google_ad_height = 600;
+                            //
+                            </script>
+                            <script type="text/javascript"
+                            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                            </script>                
+                        </iframe>
+                        <iframe class="leftad" src="http://www.supercook.com/ads/left.html" framespacing='0' frameborder='no' scrolling='no' width='160' height='600'>
+                            <script type="text/javascript">
+                            google_ad_client = "ca-pub-1057233790981454";
+                            /* right ad */
+                            google_ad_slot = "0914147459";
+                            google_ad_width = 160;
+                            google_ad_height = 600;
+                            //
+                            </script>
+                            <script type="text/javascript"
+                            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                            </script>                
+                        </iframe>
+
+
+                    </div>
+
+
+                    <div id="rightstuff" class="span9">
+
+
+                        <div id="google_translate_element"></div>
+                        <script>function googleTranslateElementInit() {  new google.translate.TranslateElement({    pageLanguage: 'en',    layout: google.translate.TranslateElement.InlineLayout.SIMPLE  }, 'google_translate_element');}</script>
+                        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                        <div id="welcome">
+                            <h2>Welcome to the new Supercook</h2>
+                            <p style="font-size: 18px;">We don’t believe in teasing you with recipes you can’t make. That's why every recipe you see on
+                                Supercook, is a recipe you have the ingredients to make.  Think of it as a <strong>menu for your kitchen</strong></p>
+                            <p style="font-size: 18px;">There are no logins or accounts, everything is stored in your browser.</p>
+                            <br><br>
+                            <h4>Step 1... Choose a category on the left.</h4>
+                        </div>
+                        
+                        <div id="wiz">
+                            <div id="wiz_label" class="alert alert-info" style="display: none;">
+                                 <button type="button" class="close" data-dismiss="alert">×</button>
+                                 <h3>Step 2</h3>
+                                 <p style="font-size: 18px">Below is the ingredient wizard.  Go ahead and start clicking on any ingredients you have.</p>
+                            </div>                            
+<!--                            <div id="wiz_label">
+                                <h4 style="float:left">Ingredient Wizard </h4>
+                                <p style="float:left;margin-top:10px;margin-left:10px;">Click on what you'd like to use</p>
+                            </div>-->
+
+                            <div id="loading"><img src="img/loader2.gif"></div>
+                            <div id="ingredients">
+
+                            </div>                    
+
+
+                        </div>
+                        
+                        <div id="horiz" style="display: none;">
+                            <div id="cat_label"></div>
+                            <div id="recipe_num"></div>
+                            <div id="mmsg" style="display:none;">You can make <b><u>all</u></b> the recipes below</div>
+                            
+                        </div>
+
+
+                        <ul class="thumbnails" id="recipes">
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        
+        <div id="kitchen" class="modal hide" style="width:660px;">
+            <div class="modal-header" >
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2 style="color: #F27E18;">My kitchen</h2>
+                <input type="text" id="q" placeholder="Add ingredient" style="width: 300px;margin-top:20px;" >
+                <h4>Click the 'x' to remove an ingredient, or click the ingredient itself to emphasize</h4>
+            </div>
+            <div class="modal-body">
+                <ul class="unstyled" id="klist">
+
+                </ul>
+
+            </div>
+            <div class="modal-footer">
+
+                <button id="remove_all" style="float:left;" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Remove all ingredients</button>
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+
+            </div>
+        </div>          
+        
+        <div id="shopping_modal" class="modal hide" style="width:660px;overflow: scroll;">
+            <div class="modal-header" >
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                
+                <h2>My Shopping List</h2>
+<!--                <input type="text" id="q" placeholder="Add ingredient" style="width: 300px;padding-top:10px;" >-->
+            </div>
+            <div class="modal-body">
+                <a href="javascript:void(0)" onclick="$('#shopping_modal .modal-body').printElement({pageTitle:'Supercook'});">
+                    <img src="img/icon_printer.gif" class='pull-right'>
+                </a>
+                <h5>Based on what we know about your kitchen, it would make sense to buy these ingredients, since they would help you make the most recipes</h5>
+                <div id="shopping_loading"><img src="img/loader2.gif"></div>
+                <div class="row" id="shop_list">
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+
+<!--                <button id="remove_all" style="float:left;" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Remove all ingredients</button>-->
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+
+            </div>
+        </div>
+
+        <div id="getsat-widget-1985"></div>
+        <script type="text/javascript" src="https://loader.engage.gsfn.us/loader.js"></script>
+        <script type="text/javascript">
+        if (typeof GSFN !== "undefined") { GSFN.loadWidget(1985,{"containerId":"getsat-widget-1985"}); }
+        </script>        
+        
+    </body>
+</html>
+

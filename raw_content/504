@@ -1,0 +1,1299 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8" />
+	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+	<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+	<META HTTP-EQUIV="EXPIRES" CONTENT="Sat, 01 Jan 2011 01:02:03 GMT">	
+	<meta name="description" content="urcrowd.com - throw it out to the crowds!" />
+	<META NAME="KEYWORDS" CONTENT="meme, urcrowd, urcrowd.com, canvas, images, video, memes, funny, humor, rage comics, comics">
+	<META NAME="ROBOTS" CONTENT="ALL"> 	
+	<title>urcrowd.com - Awesome is Awessome</title>
+	
+	
+	<link rel="image_src" href="http://img.youtube.com/vi/_WN7o1rsKHw/0.jpg" />
+	<meta NAME="author" CONTENT="urcrowd.com">
+	<meta property="og:title" content="urcrowd.com - Awesome is Awessome" />
+	<meta property="og:description" content="Throw it out to the crowds!" />
+	<meta property="og:image" content="http://img.youtube.com/vi/_WN7o1rsKHw/0.jpg" />
+	<meta property="og:site_name" content="urcrowd.com"/>
+	<meta property="og:type" content="article" />
+	<meta property="fb:app_id" content="173594946064123"/>
+	<meta property="fb:admins" content="100002390015734,549157883"/>
+
+	<link href="/css/style.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/js/css/ui-lightness/jquery-ui-1.8.16.custom.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/css/popup.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/css/dev.css" media="screen" rel="stylesheet" type="text/css" />			
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="/js/jquery.hoverIntent.minified.js"></script>
+<script type="text/javascript" src="/js/jquery.dcmegamenu.1.3.3.js"></script>
+<script type="text/javascript" src="/js/aux_lib.js"></script>
+<script type="text/javascript" src="/js/popup.js"></script>
+<script type="text/javascript" src="/js/swfobject.js"></script>
+<script type="text/javascript" src="/js/superfish.js"></script>
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+	<script>
+
+    var BackButton = {
+	        "width": 27,
+	        "height": 99
+        }
+
+
+	
+
+
+		$(document).ready(function() {
+			InitBackButton();
+						
+			var BackButton = $("#BackButton");
+
+			$(window).scroll(function(){			
+				$('#Footer').stop();
+				BackButton.stop();
+				if ($(document).scrollTop()>350) {
+					$('#Footer').show();
+					BackButton.show();
+				} else {
+					$('#Footer').hide();
+					BackButton.hide();
+				}
+			});
+			
+			TooltipsHandler();
+			PopupOpenHandler();
+			PopupCloseHandler();
+
+			var left_padding = (document.documentElement.clientWidth - $('#InnerFooter').width())/2;
+			$('#InnerFooter').css('left',left_padding);
+
+			
+		});
+
+	    function InitBackButton() {
+	        var btn = $('#BackButton');
+	        var h = ($(window).height() - BackButton.height) / 2;
+	        h = (h < 0) ? 0 : h;
+	        btn.css('right', '0');
+	        btn.css('top', h);
+	    }
+
+        $(window).resize(function () {
+        	InitBackButton();
+        });
+		
+
+		
+	</script>	
+	
+</head>
+<body id="body">
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div id="test"></div>
+
+
+
+	<center>
+		<link href="/css/style.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/js/css/ui-lightness/jquery-ui-1.8.16.custom.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/css/popup.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/css/dev.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/js/css/megamenu/skins/black.css" media="screen" rel="stylesheet" type="text/css" />
+
+<style>
+
+.SortOptionsDiv {
+	border:0px solid #ffffff;
+	padding-left:5px;
+	margin-top:30px;
+	height:30px;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.SortSelected {
+	color: #93989C;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+	function DoSearch() {
+	    var phrase = jQuery.trim($('#Phrase').val());
+	    $('#Phrase').val(phrase);
+	
+	    if ($('#Phrase').val().length < 2) phrase = "ShowAll";
+	    $("#msg").html('');
+	    
+	    var url = '/search/' + phrase;
+	    location.href = url;
+	}
+
+	function Blinker() {
+		var slice = 300;
+		setTimeout("$('#RegisterLink').css('color', 'black');",		1 * slice);
+		setTimeout("$('#RegisterLink').css('color', '#00adec');",	2 * slice);
+		setTimeout("$('#RegisterLink').css('color', 'black');",		3 * slice);
+		setTimeout("$('#RegisterLink').css('color', '#00adec');",	4 * slice);
+		setTimeout("$('#RegisterLink').css('color', 'black');",		5 * slice);
+		setTimeout("$('#RegisterLink').css('color', '#00adec');",	6 * slice);
+	}
+
+
+	$(document).ready(function($){
+		
+		$('#mega-menu').dcMegaMenu({
+			rowItems: '2',
+			speed: 'fast',
+			effect: 'fade',
+			event: 'hover'
+		});
+
+		$('#mega-menu-1').dcMegaMenu({
+			rowItems: '1',
+			speed: 'fast',
+			effect: 'fade',
+			event: 'hover'
+		});
+		$('#mega-menu-2').dcMegaMenu({
+			rowItems: '2',
+			speed: 'fast',
+			effect: 'fade',
+			event: 'hover'
+		});
+
+
+        $('#Phrase').bind('keypress', function(e){
+       	   if ( e.keyCode == 13 ) {
+        		  DoSearch();
+       	   }
+       	 });
+
+        /*
+		try {
+			$( "#Phrase" ).autocomplete({
+				source: "/ws/autocomplete/",
+				minLength: 2,
+				select: function( event, ui ) {
+				}
+			});
+		} catch (ex) {
+			alert(ex.description);
+		}
+		*/
+
+	});
+
+function SwitchToPage(val) {
+	if (val=="home") {
+		location.href = "/";
+	}
+	if (val=="faq") {
+		location.href = "/about/faq";
+	}
+	
+	if (val=="settings") {
+		location.href = "/user/settings";
+	}
+
+	if (val=="logout") {
+		location.href = "/index/logout";
+	}
+}
+</script>
+
+
+<div style="clear:both;"></div>
+
+<div id="nav" style="border:0px solid white;left:0;position:fixed;z-index:10000;background-color:#000000;">
+
+	<table cellpadding="0" cellspacing="0" border="0" style="width:994px;">
+		<tr>
+			<td rowspan="2" style="width:260px;padding-top:10px;vertical-align:top;text-align:left;">
+				<a href="/"><img border="0" title="urcrowd.com" src="/img/topbar/logo_beta.png" /></a> 
+			</td>
+			<td style="text-align:right;padding-right:5px;padding-top:3px;" class="BlueLink">
+			
+									<a style="font-size:13px;font-weight:bold;" href="/account/login">Login</a>
+					<span style="color:#ffffff">/</span>
+					<a style="font-size:13px;font-weight:bold;" 
+						href="/account/register"><span id="RegisterLink">Register</span></a>
+	       			
+	       					
+							
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-top:0px;vertical-align:top;">
+				<table cellpadding="0" cellspacing="0" border="0">
+				<tr><td style="vertical-align:top;padding-top:5px;">
+				    <div style="float:left;padding-left:10px;">
+				        <input id="Phrase" class="Phrase" type="text" maxlength="32" value="" />
+				    </div>
+				    <div style="padding-right:10px;float:left;padding-left:0px;">
+				        <a href="#" onclick="DoSearch();"><img title="Search" alt="Search" src="/img/topbar/search_but_on.png" border="0" /></a>
+				    </div>
+			    </td>
+			    <td style="padding-left:48px;vertical-align:top;">
+					
+<div class="demo-container" style="">
+    <div class="black" style="float:left;z-index:200000">  
+    <ul id="mega-menu" class="mega-menu">
+	    <li style="list-style: none;">
+	    <a href="/"><div style="width:100px;">Everything</div></a>	    
+        	<ul>
+                <li>
+					<ul>
+											<li style="text-align:left;"><a href="/category/funny" target="_self">Funny</a></li>
+											<li style="text-align:left;"><a href="/category/wtf" target="_self">WTF</a></li>
+											<li style="text-align:left;"><a href="/category/animals" target="_self">Animals</a></li>
+											<li style="text-align:left;"><a href="/category/movies" target="_self">Movies</a></li>
+											<li style="text-align:left;"><a href="/category/politics" target="_self">Politics</a></li>
+											<li style="text-align:left;"><a href="/category/celebs" target="_self">Celebs</a></li>
+											<li style="text-align:left;"><a href="/category/sexy" target="_self">Sexy</a></li>
+											<li style="text-align:left;"><a href="/category/relationships" target="_self">Relationships</a></li>
+											<li style="text-align:left;"><a href="/category/music" target="_self">Music</a></li>
+											<li style="text-align:left;"><a href="/category/sports" target="_self">Sports</a></li>
+					</ul></li><li><ul>						<li style="text-align:left;"><a href="/category/quotes" target="_self">Quotes</a></li>
+											<li style="text-align:left;"><a href="/category/graphs" target="_self">Graphs</a></li>
+											<li style="text-align:left;"><a href="/category/news" target="_self">News</a></li>
+											<li style="text-align:left;"><a href="/category/sms" target="_self">Text Messages</a></li>
+											<li style="text-align:left;"><a href="/category/posters" target="_self">Posters</a></li>
+											<li style="text-align:left;"><a href="/category/religion" target="_self">Religion</a></li>
+											<li style="text-align:left;"><a href="/category/psyco" target="_self">Psycho...logy</a></li>
+											<li style="text-align:left;"><a href="/category/originals" target="_self">Original Memes</a></li>
+											<li style="text-align:left;"><a href="/category/tweaks" target="_self">Meme Tweaks</a></li>
+											<li style="text-align:left;"><a href="/category/movement" target="_self">New Movement</a></li>
+											<li style="text-align:left;"><a href="/category/comics" target="_self">Comics</a></li>
+										</ul>
+                </li>
+        	</ul>
+	    </li>
+	    <li style="list-style: none;"><a href="/crowd/create" style="font-weight:bold;">Create Post</a></li>
+        <li style="list-style: none;"><a href="/index/streamer" class="tip_trigger" style="font-weight:bold;">Streamer</a></li>
+					        <li style="list-style: none;">
+					<a style="padding:0px;" href="/account/login">
+	       				<div style="height:40px;width:66px;text-align:center;border:0px solid green;">
+		       				<div style="float:left;padding-top:4px;margin-left:16px;">
+								<img title="Click to login" style="width:34px;height:34px;" 
+									src="/img/topbar/face_s.png" border="0" />
+							</div>
+						</div>
+					</a>
+       			</li>
+	       		
+       		       		
+			       		
+    </div>
+</div>
+
+				</td></tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+
+
+</div>
+<div style="clear:both;"></div>
+
+<div style="height:80px;"></div>
+
+
+<div id="BlueLineDiv"></div>
+
+		<!-- http://www.vegabit.com/jquery_bubble_popup_v2/ -->
+<link href="/js/css/jqbubble/jquery.bubblepopup.v2.3.1.css" rel="stylesheet" type="text/css" />
+<script src="/js/jquery.bubblepopup.v2.3.1.min.js" type="text/javascript"></script>
+
+<style>
+
+	.ImgDiv {
+		background-repeat:no-repeat;
+		background-position:center;
+		width:110px;
+		height:110px;
+		cursor:hand;
+		cursor:pointer;
+		border:1px solid black;
+		padding:0px;
+		margin:0px;
+	}
+	
+	.ImgDiv:hover {
+		background-position:left top;
+	}
+
+	.title_class {
+		background-color:#88b7e9;
+		color:#000000;
+		font-weight:bold;
+		font-size:18px;
+	}
+	.rdDiv {
+		font-size:18px;
+		padding:3px;
+	}
+	.IconDiv {
+		padding-bottom:5px;
+	}
+
+	.CrowdOuterBox {
+		width:594px;
+		border:3px solid #0b0c0e;
+		padding-left:30px;
+		padding-right:30px;
+		padding-bottom:25px;
+		background-image: url('/img/site/crowd_image_bg.png');
+		background-repeat:repeat;
+	    -webkit-border-radius: 5px;
+	    -moz-border-radius: 5px;
+	    border-radius: 5px;
+	}
+	
+	.CrowdTitleBox {
+		width:600px;
+		text-align:left;
+		padding-top:7px;
+		padding-bottom:0px;
+		color:#00adee;
+		font-size:20px;
+		font-weight:bold;
+		text-align:left;
+	}	
+	
+	.CrowdSubTitleBox {
+		width:600px;
+		color:#ffffff;
+		font-size:14px;
+		line-height:17px;
+		text-align:left;
+		padding-bottom:10px;
+		border:0px solid red;
+	}	
+
+	.CrowdBodyBox {
+		width:600px;
+		text-align:left;
+		padding-top:10px;
+		padding-bottom:10px;
+		color:#fefefe;
+		font-size:18px;
+		font-weight:normal;
+	}	
+	
+	.CrowdImageBox {
+		background-color:#fefefe;
+		padding-top:20px;
+		padding-bottom:20px;
+		padding-left:25px;
+		padding-right:25px;
+		width:550px;
+	}
+	
+	.CrowdLeftBox {
+		width:240px;
+		padding-left:13px;
+		padding-right:13px;
+		padding-top:10px;
+		padding-bottom:10px;
+		border:3px solid #0b0c0e;
+		background-image: url('/img/site/crowd_image_bg.png');
+		background-repeat:repeat;
+	    -webkit-border-radius: 5px;
+	    -moz-border-radius: 5px;
+	    border-radius: 5px;
+	}
+	
+	.PostImgCell {
+		width:110px;
+		height:110px;
+		background-color:#000000;
+		border:2px solid #000000;
+	}
+
+	.PostImgCell:hover {
+		border:2px solid #00adef;
+	}
+	
+	#TweakBtn {
+		float:right;
+		width:93px;
+	    height:33px;	
+		background-image: url('/img/site/tweakBig_off.png');
+		background-repeat:no-repeat;
+		cursor:hand;
+		cursor:pointer;
+		margin-top:0px;
+		margin-bottom:0px;
+	}
+	
+	#TweakBtn:hover {
+		background-image: url('/img/site/tweakBig_over.png');
+	}
+	
+	#NextBtn {
+		float:right;
+		width:93px;
+	    height:33px;	
+		background-image: url('/img/site/nextBig_off.png');
+		background-repeat:no-repeat;
+		cursor:hand;
+		cursor:pointer;
+		margin-top:0px;
+		margin-bottom:0px;
+	}
+	
+	#ReportBtn {
+		width:66px;
+	    height:24px;	
+		margin:0px;
+		background-image: url('/img/site/btn_66_24.png');
+		background-repeat:no-repeat;
+		cursor:hand;
+		cursor:pointer;
+		margin-top:0px;
+		margin-bottom:0px;
+		color:#ffffff;
+		font-size:11px;
+		line-height:22px;
+	}
+	
+	#ReportBtn:hover {
+		color:#00adef;
+	}
+	
+	#click_me {
+		position:absolute;
+		padding-left:8px;
+		padding-right:8px;
+		background-color:#ffffff;
+		color:#000000;
+		border: 1px solid #00adee;
+	    -webkit-border-radius: 5px;
+	    -moz-border-radius: 5px;
+	    border-radius: 5px;
+	}
+		
+}
+	
+	
+</style>
+
+<script>
+
+//vars will be set after getting creator info inside GetCreatorInfo()
+//note: in case of direct link, the creator will be the ent_name by default.
+var ent = '', ent_name = '', ent_type = '', ent_type_id=2;	//2 for posts
+
+var NextCrowd = -1;
+var PrevCrowd = -1;
+
+
+var is_first_update = true;
+
+function ChangeCrowd() {
+	if (NextCrowd < 1) return;
+	location.href = CreateCrowdUrl(NextCrowd);
+}
+
+function ChangePrevCrowd() {
+	if (PrevCrowd < 1) return;
+	location.href = CreateCrowdUrl(PrevCrowd);
+}
+
+document.onkeyup = KeyCheck;
+function KeyCheck(e) {
+   var KeyID = (window.event) ? event.keyCode : e.keyCode;
+   switch(KeyID) {
+      case 37:
+    	  ChangeCrowd();
+	      break;
+      case 39:
+    	  ChangePrevCrowd();
+	      break;
+   }
+}
+
+
+$(document).ready(function() {
+
+		$('#TheImage, #NextBtn').bind('mousemove', function(e){
+		    $('#click_me').css({
+		       left:  e.pageX+10,
+		       top:   e.pageY+25,
+		       display: 'block'
+		    });
+		}).bind('mouseout', function(e){
+		    $('#click_me').css({display: 'none'});
+		});
+
+	
+	//$('#indiLikeBox').html(MakeLikeBoxCell_IndiPage());
+
+	GetCreatorInfo();
+
+    $("#report-modal").dialog({
+    	dialogClass: "flora",
+       	autoOpen: false,
+        width: 550,
+        height: 350,
+        modal: true,
+		resizable: false,
+		draggable: false,
+        hide: 'blind',
+        show: 'blind',
+        create: function (event, ui) {
+            //$(".ui-dialog-titlebar").hide();
+        },
+        open: function (event, ui) {
+	        $(this).parents(".ui-dialog:first").find(".ui-widget-header")
+            .removeClass("ui-widget-header").addClass("title_class");
+            $("#report-body").focus();
+        },
+        buttons: {
+            "Report Post": function () {
+                $(this).dialog("close");
+				var crowd_id = 1532;
+                var reason = $("#report-modal input[type='radio']:checked").val();
+				var body =  encodeURIComponent($("#report-body").val());
+				var json = {crowd_id: crowd_id, reason: reason, body: body};
+
+				var str = objtostring(json);
+				$.post("/ws/report/", str,
+					 function(data){
+	 					if (data.status==1) 
+	 						$( "#thanks" ).dialog( "open" );
+	 					else {
+	 						alert(data.msg);
+	 					}
+					 });
+            },
+            "Cancel": function () {
+                $(this).dialog("close");
+            }
+        },
+        close: function () {
+        }
+    });
+    $('.flora.ui-dialog').css({position:"fixed"});  
+
+
+	$.fx.speeds._default = 1000;
+	$(function() {
+		$( "#thanks" ).dialog({
+			open: function(event, ui){ 
+		        $(this).parents(".ui-dialog:first").find(".ui-widget-header")
+		            .removeClass("ui-widget-header").addClass("title_class");
+		    },
+	        buttons: {
+	            "Close": function () {
+	                $(this).dialog("close");
+	            }
+	        },
+    		autoOpen: false,
+			show: 'blind',
+			hide: 'blind',
+			width: 550,
+			height: 250, 
+			modal: true,
+			resizable: false,
+			draggable: false
+		});
+	});
+
+	UpdateCrowdInfo();
+
+	SetTweakBubble();
+});
+
+
+
+function SetTweakBubble() {
+	var options = {
+		position		: 'left',
+		selectable		: false,
+		align   		: 'center',
+		tail	 		: {align: 'center'},
+		innerHtml		: 'Edit image',
+		innerHtmlStyle	: { color:'#000000',  'text-align':'left' },
+		themeName		: 'azure',
+		themePath		: '/js/jquerybubblepopup-theme',
+		alwaysVisible	: false,
+		closingDelay	: 0
+	};
+
+	$('#TweakBtn').CreateBubblePopup();		
+	$('#TweakBtn').SetBubblePopupOptions(options);
+}
+
+</script>
+
+
+<div id="report-modal" title="Report this post" style="display:none;">
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+        	<td style="padding-top:20px;padding-left:10px;">
+        	<div  class="rdDiv">
+				<input type="radio" id="rdReason1" name="rdReportSet" value="1"> 
+				<label for="rdReason1">Pornography</label>
+			</div>
+        	<div  class="rdDiv">
+				<input type="radio" id="rdReason2" name="rdReportSet" value="2"> 
+				<label for="rdReason2" class="rdText">Racism</label>
+			</div>
+        	<div  class="rdDiv">
+				<input type="radio" id="rdReason3" name="rdReportSet" value="3"> 
+				<label for="rdReason3" class="rdText">Hate Speech</label>
+			</div>
+        	<div class="rdDiv">
+				<input type="radio" id="rdReason4" name="rdReportSet" value="4" checked> 
+				<label for="rdReason4" class="rdText">Graphic Violence</label>
+			</div>
+        	<div class="rdDiv">
+				<input type="radio" id="rdReason5" name="rdReportSet" value="5" checked> 
+				<label for="rdReason5" class="rdText">Other</label>
+			</div>
+        </td>
+            <td style="padding-left:50px;">
+            	<div class="rdDiv">
+            		Message: <span style="font-size:11px;">(optional)</span></div>
+                	<textarea id="report-body" style="font-size:16px;width:250px;height:80px;"></textarea>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div style="height:20px;"></div>
+
+<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td style="vertical-align:top;text-align:center;">
+		
+			<div class="CrowdOuterBox">
+				<div class="CrowdTitleBox">
+					Awesome is Awessome<br/>
+				</div>
+				<div class="CrowdSubTitleBox">
+					Posted by: <span id="created_by"></span>
+					&nbsp;&nbsp;&nbsp;
+					<span id="when"></span>
+					&nbsp;|&nbsp;
+					<span id="crowd_views"></span>
+					&nbsp;&nbsp;
+					<span id="members_plus" class="wicked" style="display:none;"></span>
+					&nbsp;&nbsp;
+					<span id="members_minus" class="weak"  style="display:none;"></span>
+					<div class="addthis_toolbox addthis_default_style addthis_32x32_style" 
+						style="padding-top:0px;float:right;position:relative;top:8px;">
+						<div class="AddThisLink"><a class="addthis_button_facebook"></a></div>
+						<div class="AddThisLink"><a class="addthis_button_twitter"></a></div>
+						<div class="AddThisLink"><a class="addthis_button_reddit"></a></div>
+						<div class="AddThisLink"><a class="addthis_button_stumbleupon"></a></div>
+						<div class="AddThisLink"><a class="addthis_counter addthis_bubble_style"></a></div>
+					</div>
+					<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f5f3cbe3b7387fc"></script>
+				</div>
+				<div class="CrowdImageBox">
+											<div id="videoContainer"></div>
+					
+					<div style="border:0px solid red;float:left;width:400px;">
+							<div id="TwoButtonsDiv" style="display:none;float:left;padding-top:13px;padding-right:45px;">
+								<table cellpadding="0" cellspacing="0" border="0" style="background-color:#000000;"><tr>
+								<td style="vertical-align:top;padding-left:2px;">
+									<div id="wickedBtn" class="PostBtnBig" onclick="JoinPlusCrowd();"><span class="wicked">Wicked</span></div>
+								</td><td style="vertical-align:top;padding-right:2px;padding-left:2px;">
+									<div id="weakBtn" class="PostBtnBig" onclick="JoinMinusCrowd();"><span class="weak">Weak</span></div>
+								</td></tr>
+								</table>
+							</div>
+		
+		
+							<div id="SingleButtonDiv" style="display:none;float:left;padding-top:13px;padding-right:45px;">
+								<table cellpadding="0" cellspacing="0" border="0" style="background-color:#000000;"><tr>
+								<td style="vertical-align:top;padding-left:2px;padding-right:2px;">
+									<div id="UnwickedBtn" style="display:none;" class="PostDoubleBtn" onclick="LeaveCrowd();"><span class="wicked">UnWicked</span></div>
+									<div id="UnweakBtn" style="display:none;" class="PostDoubleBtn" onclick="LeaveCrowd();"><span class="wicked">UnWeak</span></div>
+								</td></tr>
+								</table>
+							</div>
+						</div>
+
+							<div style="padding-top:20px;height:30px;">
+																	<div id="NextBtn" onclick="ChangePrevCrowd();"></div>					
+															</div>
+				</div>
+				
+				<div class="clearfix"></div>
+				
+				<div style="background-color: lightgray; width:600px">
+					<div style="padding-top:20px;margin-top:20px;margin-bottom:0px;">
+						<div id="fb-root"></div>
+
+<script>
+	  window.fbAsyncInit = function() {
+		var r = FB.init({
+		  appId  : '173594946064123',
+		  status : true, // check login status
+		  cookie : true, // enable cookies to allow the server to access the session
+		  xfbml  : true  // parse XFBML
+		});
+	};
+		
+	(function() {
+		var e = document.createElement('script');
+		e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+		e.async = true;
+		document.getElementById('fb-root').appendChild(e);
+	  }());		
+</script>
+
+<div class="fb-comments" 
+	data-href="http://urcrowd.com/crowd/view/1532" data-num-posts="8" data-width="520" data-colorscheme="light" notify="true" >
+</div>
+					</div>
+					<div id="ReportBtn" onclick="$('#report-modal').dialog('open');">Report</div>					
+				</div>
+			</div>
+		</td>
+		<td style="width:20px;"></td>
+		<td style="vertical-align:top;padding-top:0px;margin:0px;">
+			<!-- 
+				<div id="indiLikeBox" style="margin-bottom:30px;border:0px solid white;">
+				</div>
+			 -->
+			
+			<div style="padding-bottom:10px;">
+				<table border="0" style="width:270px;height:40px;" cellpadding="0" cellspacing="0">
+					<tr>
+						<td style="width:30px;vertical-align:top;padding-top:7px;" id="arr_left_cell">
+						</td>
+						<td id="RightPanelTitleBox" style="text-align:center;vertical-align:top;">
+							&nbsp;
+						</td>
+						<td style="width:30px;vertical-align:top;padding-top:7px;" id="arr_right_cell">
+						</td>
+					</tr>					
+				</table>			
+			</div>
+			
+			<div style="color:#ffffff;text-align:center;" class="CrowdLeftBox">
+
+				<table border="0" style="width:240px;" cellpadding="0" cellspacing="0">
+					<tr>
+						<td id="img0" class="PostImgCell">
+						</td>
+						<td style="width:20px;height:110px;">
+						</td>
+						<td id="img1" class="PostImgCell">
+						</td>
+					</tr>					
+				</table>
+				<div style="height:15px;"></div>
+				<table border="0" style="width:240px;" cellpadding="0" cellspacing="0">
+					<tr>
+						<td id="img2" class="PostImgCell">
+						</td>
+						<td style="width:20px;height:110px;">
+						</td>
+						<td id="img3" class="PostImgCell">
+						</td>
+					</tr>					
+				</table>
+				<div style="height:15px;"></div>
+				<table border="0" style="width:240px;" cellpadding="0" cellspacing="0">
+					<tr>
+						<td id="img4" class="PostImgCell">
+						</td>
+						<td style="width:20px;height:110px;">
+						</td>
+						<td id="img5" class="PostImgCell">
+						</td>
+					</tr>					
+				</table>
+			</div>
+
+
+			<div style="height:30px;"></div>
+
+			<div id="AncestorDiv" style="display:none;">
+				<div style="padding-bottom:5px;padding-left:5px;">
+					<span class="weak" style="font-size:18px;font-weight:bold;">Original:</span>
+				</div>
+				<div id="AncestorImg" class="CrowdLeftBox">
+				</div>
+			</div>
+
+
+			
+		</td>
+	</tr>
+</table>	<!-- end of external table -->
+
+
+<div style="height:70px;"></div>
+
+<div id="thanks" title="Report this post" style="display:none;">
+	<p>
+	Thank you for reporting your concerns to Urcrowd.<br /><br />
+	We take these matters seriously and will investigate your concern in a reasonably expeditious manner.
+	</p>
+</div>	
+
+<div id="click_me">Click to see next</div>
+
+
+<script>
+    var ytplayer = null;
+
+    function init_video()
+    {
+        var params = { allowScriptAccess: "always", wmode: "transparent" };
+        var atts = { id: "myytplayer" };
+        var id = '_WN7o1rsKHw';
+		var install = "/flash/playerProductInstall.swf";
+		var ver = '10.3.0';
+        var link = 'http://www.youtube.com/v/' + id + '&enablejsapi=1&playerapiid=ytplayer';
+        swfobject.embedSWF( link, "videoContainer", "480", "360", ver, install, null, params, atts);
+    }
+
+    init_video();
+
+	function onYouTubePlayerReady(playerId)
+	{
+		ytplayer = document.getElementById("myytplayer");
+		ytplayer.playVideo();
+	}
+
+
+function HandleProfilePanel() {
+	$.get('/ws/userinfo/' + ent_name, function(obj) {
+		var user_image = '<a href="/' + ent_name + '">' +
+			'<img border="0" style="width:27px;height:27px;" src="' + 
+				obj.picture_large.replace('_L.', '_SQ.') + '" /></a>';
+
+		var title_text = 'Posts';
+		if (ent_type=='weak') title_text = 'Weaks';
+		if (ent_type=='wicked') title_text = 'Wicked';
+	
+		var title = '<span class="wicked" style="font-size:28px;font-weight:bold;">' + title_text + '</span>';
+
+		$('#RightPanelTitleBox').html(user_image + '&nbsp;&nbsp;&nbsp;' + title);
+	});
+
+	PopulateProfilePanel();
+}
+
+function CreateCrowdUrl(crowd_id) {
+	var ret = '/crowd/view/' + crowd_id + '?sort=0&ent=' + ent + '&name=' + ent_name + '&type=' + ent_type;
+	return ret;
+}
+
+function CreateImgDiv(line, i) {
+	var thumb;
+
+	if (line.crowd_type==1)
+		thumb = 'http://img.youtube.com/vi/' + line.SIR_path + '/1.jpg';
+	else
+		thumb = '/sdal/sir/' + line.SIR_path.replace('_L.', '_S.');
+
+	var bg = "background-image: url('" + thumb + "');";
+	
+	var crowd_url = CreateCrowdUrl(line.id);
+	var click_event = 'onclick="location.href=\'' + crowd_url + '\'"';
+	var ret = '<div id="InnerImgDiv_' + i + '" ' + click_event + ' style="width:0px;' + bg + '" class="ImgDiv"></div>';
+
+	return ret;
+}
+
+//for wicked and weak
+function PopulateProfilePanel_Marked() {		
+	var url = '/ws/getmarkedcrowdspanel/' + ent_name + '/' + ent_type_id + '/1532/';
+	$.get(url, function(obj) {
+
+		PopulatePanel(obj);		
+		
+		if (obj.one_after_crowd.length>0) {
+			var next_item = obj.one_after_crowd[0].id;
+			var click_event = 'onclick="location.href=\'' + CreateCrowdUrl(next_item) + '\'"';
+			var arr_left = '<img style="cursor:hand;cursor:pointer;" title="Previous" src="/img/site/arr_left.png" ' + click_event + ' />';
+			$('#arr_left_cell').html(arr_left);	
+			NextCrowd = next_item;
+		} else {
+			var arr_left = '<img style="opacity:0.4;" title="Previous" src="/img/site/arr_left.png" />';
+			$('#arr_left_cell').html(arr_left);
+			NextCrowd = 0;
+		}
+
+		if (obj.lines.length>0) {
+			var pre_item = obj.lines[0].id;
+			var click_event = 'onclick="location.href=\'' + CreateCrowdUrl(pre_item) + '\'"';
+			var arr_right = '<img style="cursor:hand;cursor:pointer;" title="Next" src="/img/site/arr_right.png" ' + click_event + ' />';
+			$('#arr_right_cell').html(arr_right);	
+		} else {
+			var arr_right = '<img style="opacity:0.4;" title="Next" src="/img/site/arr_right.png" />';
+			$('#arr_right_cell').html(arr_right);	
+		}
+	});
+}
+
+function PopulateProfilePanel_Posts() {
+	var url = '/ws/getpostscrowdspanel/' + ent_name + '/1532';
+	$.get(url, function(obj) {
+
+		PopulatePanel(obj);		
+		
+		if (obj.one_after_crowd.length>0) {
+			var one_after = obj.one_after_crowd[0].id;
+			var click_event = 'onclick="location.href=\'' + CreateCrowdUrl(one_after) + '\'"';
+			var arr_left = '<img style="cursor:hand;cursor:pointer;" title="Previous" src="/img/site/arr_left.png" ' + click_event + ' />';
+			$('#arr_left_cell').html(arr_left);	
+			NextCrowd = one_after;
+		} else {
+			var arr_left = '<img style="opacity:0.4;" title="Previous" src="/img/site/arr_left.png" />';
+			$('#arr_left_cell').html(arr_left);	
+			NextCrowd = 0;
+		}
+
+		if (obj.lines.length>0) {
+			var click_event = 'onclick="location.href=\'' + CreateCrowdUrl(obj.lines[0].id) + '\'"';
+			var arr_right = '<img style="cursor:hand;cursor:pointer;" title="Next" src="/img/site/arr_right.png" ' + click_event + ' />';
+			$('#arr_right_cell').html(arr_right);	
+		} else {
+			var arr_right = '<img style="opacity:0.4;" title="Next" src="/img/site/arr_right.png" />';
+			$('#arr_right_cell').html(arr_right);	
+		}
+	});
+}
+
+function PopulateProfilePanel() {
+	if (ent=="profile") {
+		if ((ent_type_id==0) || (ent_type_id==1)) {
+			PopulateProfilePanel_Marked();
+			return;
+		}
+		PopulateProfilePanel_Posts();
+		return;
+	}
+}
+
+//===================================================================================================
+
+function RunBubbles(id) {
+	$('.ImgDiv').HideAllBubblePopups();
+	$('.ImgDiv').css('border', '1px solid #000000');
+	$('.ImgDiv').css('background-position', 'center');
+	$('#InnerImgDiv_' + id).css('background-position', 'left top');
+	$('#InnerImgDiv_' + id).css('border', '2px solid #00adef');
+	$('#InnerImgDiv_' + id).ShowBubblePopup();
+}
+
+
+function PopulatePanel(obj) {
+
+	PrevCrowd = -1;
+	if (obj.lines.length>0){
+		PrevCrowd = obj.lines[0].id;
+	}
+	
+	for (var i=obj.lines.length-1; i>=0; i--){
+		$('#img'+i).html(CreateImgDiv(obj.lines[i], i));
+
+		$('#InnerImgDiv_' + i).delay(i*300).animate({
+		    width: 110
+		  }, 300 );
+	}
+	
+	var start = 0;
+	var delta = 2000;
+	setTimeout(function() {	RunBubbles(0); }, start + 6 * delta);
+	setTimeout(function() {	RunBubbles(1); }, start + 5 * delta);
+	setTimeout(function() {	RunBubbles(2); }, start + 4 * delta);
+	setTimeout(function() {	RunBubbles(3); }, start + 3 * delta);
+	setTimeout(function() {	RunBubbles(4); }, start + 2 * delta);
+	setTimeout(function() {	RunBubbles(5); }, start + 1 * delta);
+
+	setTimeout(function() {	
+			$('.ImgDiv').HideAllBubblePopups(); 
+			$('.ImgDiv').css('border', '1px solid #000000');
+		}, 
+		start + 7 * delta);
+
+	
+	
+			
+	for (var i=obj.lines.length-1; i>=0; i--){
+		var title = obj.lines[i].title;
+		var text_len = 35;
+		if (title.length > text_len) title = title.substr(0, text_len-3) + '...';
+		
+		$('#InnerImgDiv_' + i).CreateBubblePopup();		
+	
+		$('#InnerImgDiv_' + i).SetBubblePopupOptions({
+			position		: 'top',
+			align   		: 'left',
+			tail	 		: {align: 'center'},
+			innerHtml		: '<div style="width:110px;">' + title + '</div>',
+			innerHtmlStyle	: { color:'#000000',  'text-align':'left' },
+			themeName		: 'azure',
+			themePath		: '/js/jquerybubblepopup-theme',
+			alwaysVisible	: false,
+			closingDelay	: 200
+		});
+	}
+}
+
+
+function PopulateCategoryPanel() {
+	var url = '/ws/getcategorycrowdspanel/' + ent_name + '/1532/0';
+
+	$.get(url, function(obj) {
+
+		PopulatePanel(obj);		
+		
+		if (obj.one_after_crowd.length>0) {
+			var one_after = obj.one_after_crowd[0].id;
+			var click_event = 'onclick="location.href=\'' + CreateCrowdUrl(one_after) + '\'"';
+			var arr_left = '<img style="cursor:hand;cursor:pointer;" title="Previous" src="/img/site/arr_left.png" ' + click_event + ' />';
+			$('#arr_left_cell').html(arr_left);
+			NextCrowd = one_after;
+		} else {
+			var arr_left = '<img style="opacity:0.4;" title="Previous" src="/img/site/arr_left.png" />';
+			$('#arr_left_cell').html(arr_left);	
+			NextCrowd = 0;
+		}
+			
+		if (obj.lines.length>0) {
+			var click_event = 'onclick="location.href=\'' + CreateCrowdUrl(obj.lines[0].id) + '\'"';
+			var arr_right = '<img style="cursor:hand;cursor:pointer;" title="Next" src="/img/site/arr_right.png" ' + click_event + ' />';
+			$('#arr_right_cell').html(arr_right);	
+		} else {
+			var arr_right = '<img style="opacity:0.4;" title="Next" src="/img/site/arr_right.png" />';
+			$('#arr_right_cell').html(arr_right);	
+		}
+
+		//AnimatePanel(obj);
+		
+	});
+}
+
+function AnimatePanel(obj) {
+	for (var i=obj.lines.length-1; i>=0; i--) {
+		$('#img'+i).css('border', '1px solid red');
+		$('#img'+i).css('border', '1px dashed #aaaaaa');
+	}	
+	
+}
+
+function HandleCategoryPanel() {
+	var url = '/ws/categorybylink/' + ent_name;
+	$.get(url, function(obj) {
+		var name = 'Everything';
+		if (obj.length>0) name = obj[0].name;
+		var title = '<span class="wicked" style="font-size:28px;font-weight:bold;">' + name + '</span>';
+		$('#RightPanelTitleBox').html(title);
+	});
+	PopulateCategoryPanel();
+}
+
+function GetRightPanelInfo() {
+
+	if (ent=='profile') 
+		HandleProfilePanel();
+	else if (ent=='category') 
+		HandleCategoryPanel();
+	else
+		alert('Error 6001: invalid entity.');
+}
+
+
+
+function GetCreatorInfo() {
+	$.get('/ws/userinfobyid/268', function(obj) {
+		var profile_url = (obj.username=='anonymous') ? '#' : '/' + obj.username;
+		var creator_link = '<a href="' + profile_url + '">' + obj.username + '</a>';
+		$("#created_by").html(creator_link);
+		$("#when").html(When('2012-04-06 02:46:27','2012-04-07 09:56:02'));
+		$("#crowd_views").html('107 views');
+		$("#members_plus").html('5 wicked');
+		$("#members_minus").html('1 weak');
+
+		ent = '';
+		ent_name = '';
+		ent_type = '';
+
+		ent_type_id = 2;	//for posts
+		if (ent_type=='weak') ent_type_id = 0;
+		if (ent_type=='wicked') ent_type_id = 1;
+
+		if (ent == '') {
+			/*
+			ent = 'profile';
+			ent_name = obj.username;
+			ent_type = 'posts';
+			*/
+			ent = 'category';
+			ent_name = 'everything';
+			ent_type = '';
+		}
+		
+		GetRightPanelInfo();
+		
+	});
+}
+
+function UpdateCrowdInfo() {
+	var is_login = (0 > 0);
+
+	$.get('/ws/crowdinfo/1532', function(obj) {
+		$("#members_plus").html(obj.members_plus + ' wicked');
+		$("#members_minus").html(obj.members_minus + ' weak');
+
+
+		
+			$('#TwoButtonsDiv').hide();
+			$('#UnwickedBtn').hide();
+			$('#UnweakBtn').hide();
+			$('#SingleButtonDiv').hide();
+
+			if (is_login) {
+				if (obj.join_leave=="leave_plus") {
+					$('#UnwickedBtn').show();
+					$('#SingleButtonDiv').show();
+					return; 
+				}
+				
+				if (obj.join_leave=="leave_minus") {
+					$('#UnweakBtn').show();
+					$('#SingleButtonDiv').show();
+					return;
+				}
+				$('#TwoButtonsDiv').show();
+			}
+
+			if (!is_login) {
+				if (is_first_update) {
+					$('#TwoButtonsDiv').show();
+					is_first_update = false;
+				}
+			}
+
+		
+
+		if (obj.ancestor_crowd_id!=null) {
+			var crowd_id = obj.ancestor_crowd_id;
+			$.get('/ws/crowdinfo/' + crowd_id, function(obj) {
+				var ancestor_img = '<a href="/crowd/view/' + crowd_id + '"><img style="width:200px;" src="/sdal/sir/' + obj.SIR_path.replace('_L.', '_M.') + '" border="0" /></a>';
+				$('#AncestorImg').html(ancestor_img);
+				$('#AncestorDiv').show();
+			});
+		}
+		
+	});
+}
+
+function JoinPlusCrowd() {
+	/*
+			location.href='/account/login';
+		*/
+	$.get('/ws/join/1532/1', function(obj) {
+		UpdateCrowdInfo();
+	});
+}	
+
+function JoinMinusCrowd() {
+	/*
+			location.href='/account/login';
+		*/
+	$.get('/ws/join/1532/0', function(obj) {
+		UpdateCrowdInfo();
+	});
+}
+
+function LeaveCrowd() {
+	$.get('/ws/leave/1532', function(obj) {
+		UpdateCrowdInfo();
+	});
+}
+
+</script>
+
+	</center>
+
+<!--	
+<div id="popupSearch" class="popup_block" style="top:40%;">
+<table>
+<tr>
+	<td>
+		<input type="text" id="Search" style="width:355px;height:30px;font-size:24px;color:#aaaaaa;" 
+			value="Search your stick..." onclick='$("#Search").val("");$("#Search").css("color","red");' /> 
+	</td>
+	<td style="padding-left:5px;">
+		<input type="button" value="search" style="height:36px;width:80px;" onclick="location.href='/search/results';" />
+	</td>	
+</tr>
+<tr>
+	<td style="text-align:left;">
+		<input type="radio" name="s1" value="all" CHECKED />All Sticks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="s1" value="others" />Others Sticks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="s1" value="mine" />My Sticks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</td>
+	<td>
+	</td>	
+</tr>
+</table>
+</div>
+
+-->
+
+<div id="BackButton" style="display:none;z-index:100;position:fixed;cursor:pointer;cursor:hand;">
+	<a href="#" onclick='$.scrollTop();'><img src="/images/back_to_top.gif" border="0" /></a>
+</div>
+
+<div id="Footer" style="display:none;">
+	
+
+<div id="InnerFooter" class="footer">
+	<span style="color:#ffffff;">www.urcrowd.com &copy; Copyright 2012 &nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="/about/tos">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="/about/privacy">Privacy policy</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="/about/copyright">Copyright</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="/about/support">Support</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="/index/sitemap">Site map</a> 
+	</span>
+</div>
+</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28565901-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</body>
+</html>

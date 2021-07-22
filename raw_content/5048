@@ -1,0 +1,3933 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Smart Enterprise Exchange: Home</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" /> 
+
+<script type="text/javascript">
+    if (top != self) {
+        var isSafeTopUrl = false;
+        try {
+            var topUrl = top.location.href;
+            var topUrlQsIdx = topUrl.indexOf('?');
+            if (topUrlQsIdx > 0) {
+                topUrl = topUrl.substring(0, topUrlQsIdx);
+            }
+            topUrl = topUrl.toLowerCase();
+
+            var safeTopUrls = new Array(
+                'http://smartenterpriseexchange.com/skin-basic.jspa',
+                'http://smartenterpriseexchange.com/skin-advanced.jspa',
+                'http://smartenterpriseexchange.com/skin-advanced!UploadSkinZip.jspa',
+                'http://smartenterpriseexchange.com/skin-palette.jspa',
+                'http://smartenterpriseexchange.com/skin-palette!start.jspa'
+            );
+            for (var i = 0; i < safeTopUrls.length; i++) {
+                if (safeTopUrls[i].toLowerCase() == topUrl) {
+                    isSafeTopUrl = true;
+                    break;
+                }
+            }
+        } catch (err) {
+        }
+        if (!isSafeTopUrl) top.location = location;
+    }
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="en-US" />
+<meta name="keywords" content="" />
+
+<link rel="search"
+    href="/opensearch.xml"
+    title="Smart Enterprise Exchange"
+    type="application/opensearchdescription+xml"/>
+
+
+<link rel="shortcut icon" href='http://i.cmpnet.com/smartenterpriseexchange/assets/favicon.ico' />
+<link rel="icon" type="image/png" href='http://i.cmpnet.com/smartenterpriseexchange/assets/favicon.png' />
+    
+
+
+    <script type="text/javascript">
+        (function() {
+            var prepareUrl = function(url) {
+                if (url.indexOf(";") > 0) {
+                    url = url.substring(0, url.indexOf(";"));
+                }
+                if (url.charAt(url.length - 1) == '/') {
+                    url = url.substring(0, url.length - 1);
+                }
+                return url
+            };
+            if (typeof(window._jive_base_url) == "undefined") {
+                window._jive_base_url = prepareUrl("/")
+            }
+            if (typeof(window._jive_resource_url) == "undefined") {
+                window._jive_resource_url = prepareUrl("/4.5.6/")
+            }
+                if (typeof(window._jive_current_user) == "undefined") {
+                    window._jive_current_user = {
+                        anonymous: true,
+                        username: 'ANONYMOUS',
+                        ID: '-1',
+                        enabled: true,
+                        avatarID: '-1',
+                        displayName: ''
+                    };
+                }
+
+
+
+        })();
+
+        var _jive_effective_user_id = "-1";
+        var _jive_auth_token ="no-user";
+        var _jive_locale = "en_US";
+
+    </script>
+
+
+<script type="text/javascript">
+/* Kongregate Asychronous JavaScript Loader
+
+The MIT License
+
+Copyright (c) 2010 Kongregate Inc.
+*/function KJS(a){this._path=a&&a.path||"",this._d={}}KJS.prototype={require:function(){var a=Array.prototype.slice.call(arguments),b;typeof a[a.length-1]=="function"&&(b=a.pop());for(var c=0;c<a.length;c++)this.sat(a[c]+"--required");b&&this.run(b,a)},_load:function(a,b,c,d,e){var f=this,g=(c||[]).concat(a.split("?")[0]),h=this._path+a,i=this._origin(h)&&d,j=i?function(a){d.call(f,a);var b;while(b=g.shift())f.sat(b)}:function(a){e.call(f,a,function(){var a;while(a=g.shift())f.sat(a)})};this.isSat(g)||(i?this.get(h,function(a){b&&b.length?f.run(function(){j(a)},b):j(a)}):b&&b.length?f.run(function(){j(h)},b):j(h))},load:function(a,b,c){var d=this;this._load(a,b,c,d.embed,d.link)},loadCSS:function(a,b,c){var d=this;d._load(a,b,c,null,d.linkCSS)},run:function(a,b,c){var d=this,e,f=c||[],g=f.length?function(){a();var b;while(b=f.pop())d.sat(b)}:a;if(!d.isSat(f)){if(!b.length)g();else if(1==b.length)e=g;else{var h=b.length;e=function(){--h||g()}}var i;while(i=b.pop())!0===this._d[i]?e():this._d[i]=this._d[i]?function(a,b){return function(){a(),b()}}(this._d[i],e):e}},_css:/css(?:$|\?)/i,get:function(a,b){$j.ajax({url:a,dataType:a.match(this._css)?"text/css":"text/javascript",complete:function(a){b(a.responseText)}})},_firstScript:document.getElementsByTagName("script")[0],_head:document.getElementsByTagName("head")[0],embed:function(a){$j.globalEval(a)},link:function(a,b){var c=this,d=this._firstScript,e=d.parentNode,f=document.createElement("script");f.src=a,f.onreadystatechange=f.onload=function(){if(!f.readyState||f.readyState=="loaded"||f.readyState=="complete")f.onload=f.onreadystatechange=$j.noop,e.removeChild(f),b&&b()},e.insertBefore(f,d)},linkCSS:function(a,b){var c=this,d;document.createStyleSheet?d=document.createStyleSheet(a):(d=document.createElement("link"),d.href=a,d.rel="stylesheet",d.type="text/css",this._head.appendChild(d)),b&&b()},_origin:function(a){var b=location.origin||location.protocol+"//"+location.host,c=this._fullURL(a);return c.slice(0,b.length)===b},_fullURL:function(a){var b=document.createElement("div");b.innerHTML='<a href="'+a+'">x</a>';return b.firstChild.href},sat:function(a){this._d[a]&&!0!==this._d[a]&&this._d[a](),this._d[a]=!0},isSat:function(a){var b=0;for(var c=0;c<a.length;c++)!0===this._d[a[c]]&&b++;return b>0&&b===a.length}};var kjs=new KJS
+</script>
+
+    
+      
+      
+    <script type="text/javascript">
+        window.SPELL_LANGS = "English (Canada)=en_ca,English (United Kingdom)=en_gb,+English (United States)=en_us,French=fr,French (Canada)=fr_ca,German=de,Italian=it,Spanish=es";
+        window.CS_BASE_URL = "";
+        window.CS_RESOURCE_BASE_URL = "/4.5.6";
+        window.tinyMCEPreInit = {
+            suffix : "_src",
+            base : CS_BASE_URL + "/resources/scripts/tiny_mce3"
+        };
+        if (typeof(_jive_project_i18n) == "undefined") {
+            var _jive_project_i18n = new Array();
+            _jive_project_i18n['project.calendar.task'] = "Task";
+            _jive_project_i18n['project.calendar.tasks'] = "Tasks";
+            _jive_project_i18n['project.calendar.checkpoint'] = "Checkpoint";
+            _jive_project_i18n['project.calendar.checkpoints'] = "Checkpoints";
+            _jive_project_i18n['global.edit'] = "Edit";
+            _jive_project_i18n['global.delete'] = "Delete";
+            _jive_project_i18n['project.task.mark.complete'] = "Mark complete";
+            _jive_project_i18n['project.task.assign.to.me'] = "Assign to me";
+            _jive_project_i18n['task.incomplete.link'] = "Incomplete";
+            _jive_project_i18n['project.checkPoint.create.link'] = "Create a checkpoint";
+            _jive_project_i18n['project.task.create.link'] = "Create a task";
+        }
+    </script>
+     
+
+
+
+
+    
+
+
+
+    
+<script type="text/javascript">
+kjs.run(function() {
+kjs.load('/4.5.6/resources/scripts/gen/aadb6a8bac550876dd2120895d447b59.js', [  ]);
+kjs.run(function() {
+        Zapatec.Calendar._TT["DEF_DATE_FORMAT"] = "%m/%d/%Y";
+
+
+}, [ '/4.5.6/resources/scripts/gen/aadb6a8bac550876dd2120895d447b59.js' ], [ 'Zapatec.Calendar' ]);
+}, [ 'Zapatec.Calendar--required' ]);
+</script>
+    
+    <script type="text/javascript">
+        var profileShortUrl = "/profile-short.jspa";
+        var profileLoadingTooltip = "Loading user profile";
+        var profileErrorTooltip = "There was an error loading that profile information.";
+
+        var projectChooserUrl = "/project-chooser!input.jspa";
+
+        var containerShortUrl = "/container-short.jspa";
+        var containerLoadingTooltip = "Loading place information.";
+        var containerErrorTooltip = "There was an error loading that place information.";
+
+        var videoShortUrl = "/view-video-short.jspa";
+        var videoLoadingTooltip = "video.tooltip.loading";
+        var videoErrorTooltip = "video.tooltip.error";
+        var _jive_video_picker__url = "?container=1&containerType=14";
+        var followErrorMessage = "An internal error occurred while following the project or space.";
+
+        (function() {
+            var originalWrite = document.write;
+            document.write = function() {
+                if(typeof $j != 'undefined' && $j.isReady) {
+                    console.warn("document.write called after document was loaded: ", arguments);
+                }
+                else {
+                    // In IE before version 8 `document.write()` does not
+                    // implement Function methods, like `apply()`.
+                    return Function.prototype.apply.call(originalWrite, document, arguments);
+                }
+            }
+        })();        
+    </script>
+
+
+
+
+
+
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4cb61250185e5d32"></script>
+
+    <link rel="stylesheet" href="/4.5.6/styles/jive-global.css" type="text/css" media="all" />
+    <!-- <link rel="stylesheet" href="/styles/jive-icons-legacy.css" type="text/css" media="all" /> -->
+    <link rel="stylesheet" href="/4.5.6/styles/jive-icons.css" type="text/css" media="all" />
+
+
+
+
+
+    <!--[if IE 6]>
+    <style type="text/css">
+    /* hack for IE6's lack of alpha PNG support */
+    #jive-wrapper .ie6png {
+        filter: expression(function(e){
+            e.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=" +
+                (e.tagName=='IMG' ? e.src : e.currentStyle.backgroundImage.split('\"')[1]) + ")",
+            e.runtimeStyle.backgroundImage = "none",
+            e.src = "/images/transparent.png"
+        }(this));
+    }
+    </style>
+
+    <link rel="stylesheet" href="/4.5.6/styles/jive-icons-ie.css" type="text/css" media="all" />
+    <![endif]-->
+
+
+<script type="text/javascript" src="/4.5.6/resources/scripts/gen/709669af061f17189a59d90c0e8feb73.js"></script>
+<script type="text/javascript">
+        // begin list of custom CSS
+        jive.rte.defaultStyles = new Array();
+        // end list of custom CSS
+
+
+            var jiveControl = new jive.model.Controller();
+            jive.rte.mobileUI = false;
+
+
+if (dwr == null) var dwr = {};
+if (dwr.engine == null) dwr.engine = {};
+if (DWREngine == null) var DWREngine = dwr.engine;
+
+dwr.engine._origScriptSessionId = "FE67A1293287531F9065B5B295D88D15";
+dwr.engine._sessionCookieName = "JSESSIONID"; // JSESSIONID
+dwr.engine._allowGetForSafariButMakeForgeryEasier = "true";
+dwr.engine._scriptTagProtection = "throw 'allowScriptTagRemoting is false.';";
+dwr.engine._defaultPath = "/dwr/interface";
+dwr.engine._pollWithXhr = "false";
+
+
+    (function() {
+        var options = {
+            friendsRange : 20,
+            everyoneRange : 20,
+            youUsername : 'ANONYMOUS',
+            youID : -1,
+            isGuest : true
+        };
+
+        var i18n = {
+            acclaimLikingLike : "Like",
+            acclaimLikingUnlike : "Liked",
+            acclaimLikedNone : "None",
+            acclaimLikingLiked : "Person Liked This",
+            acclaimLikingLikedPlural : "People Liked This",
+            acclaimPeopleLiked : "People who liked this",
+            acclaimLikedYou : "You",
+            acclaimLikedFriends : "Friends",
+            acclaimLikedEveryone : "Everyone Else",
+            globalMore : "More",
+            globalClose : "Close"
+        };
+
+        new jive.Acclaim(options, i18n);
+    })();
+
+
+        var quickuserprofile = new QuickUserProfile("jive-note-user-body", profileShortUrl, profileLoadingTooltip,
+                profileErrorTooltip);
+        var jiveprojectchooser = new JiveProjectChooser(projectChooserUrl);
+        var quickcontainersummary = new QuickContainerSummary("jive-note-container-body", containerShortUrl,
+                containerLoadingTooltip, containerErrorTooltip);
+        var quickviewvideo = new QuickViewVideo("jive-note-video-body", videoShortUrl, videoLoadingTooltip,
+                videoErrorTooltip);
+
+        var jiveFollow = new jive.Follow(followErrorMessage);
+
+
+</script>
+
+
+<script type="text/javascript" src="/4.5.6/resources/scripts/gen/b1add212a86bddcc13b7db1f2228c516.js"></script>
+<script type="text/javascript">
+            window.tinyMCE_GZ = { loaded: true };
+
+
+    (function(){
+        var controlSelectors = [
+            '#jive-announcements-links span a[name|=jive-ann-update]',
+            '#jive-link-manageAnnouncements a',
+            '#jive-new-announcement a',
+            '#jive-another-announcement a',
+            '.jive-form-buttons .back',
+            '.jive-form-buttons .save',
+            '.jive-modal-announcements-listing .add a',
+            '#annNotifyCreateNew'
+        ];
+        jive.util.lazyLoadJSBySels(controlSelectors, 'click', 'jive.Announcements');
+    })();
+
+
+
+$j(function() { window.gadgetContainer = new GadgetContainer()});
+
+
+var bridgeIDs = new Array();
+var widgetBridges = new WidgetBridges({
+    bridgeAction : "/bridge-widgets.jspa",
+    bridgeLoginAction : "/bridge-widgets!login.jspa",
+    bridgeLogoutAction : "/bridge-widgets!logout.jspa",
+    bridgeIDs: bridgeIDs
+});
+
+
+    var opts = {
+        containerType : 14,
+        containerID : 1,
+        widgetID : "de0s71",
+        moreUrl : "/polls",
+        createUrl : "/poll-post!input.jspa?container=1&containerType=14",
+        canCreatePoll : false,
+        i18n : {
+            moreLink : "More polls",
+            previous : "Previous",
+            next : "Next",
+            loading : "Loading...",
+            readMore : "Read more",
+            voteAdded : "Your vote has been added",
+            voteButton : "Vote",
+            createdBy : "Created by",
+            globalOn : "on",
+            pollsIn : "in",
+            comments : "Comments",
+            leaveComment : "Leave comment",
+            vote : "Vote",
+            votes : "Votes",
+            voteProcessing : "Processing...",
+            noOptionSelected : "Please select a choice to vote for",
+            includingYours : "You voted for this",
+            remove : "Remove",
+            noPolls : "No polls yet",
+            noPollsCreate : "No polls yet - {0}",
+            noPollsLink : "create one now"
+        }
+    };
+
+    new jive.PollWidget.Main(opts);
+
+
+
+    (function() {
+        var containerSelector = "#widget-33404";
+        var i18n = {
+            loading: "Loading..."
+        };
+        var recentContent = new jive.RecentContentApp(containerSelector, i18n);
+    })();
+
+
+</script>
+
+    
+    <!-- BEGIN main.ftl head section -->
+    
+
+
+        <link rel="alternate" type="application/rss+xml"
+            title="Smart Enterprise Exchange All Content Feed"
+            href="/community/feeds/allcontent?community=1" />
+
+            <link rel="alternate" type="application/rss+xml"
+                title="Smart Enterprise Exchange Blog Posts Feed"
+                href="/community/feeds/blogs?community=1" />
+
+            <link rel="alternate" type="application/rss+xml"
+                title="Smart Enterprise Exchange Documents Feed"
+                href="/community/feeds/documents?community=1" />
+
+
+            <link rel="alternate" type="application/rss+xml"
+                title="Smart Enterprise Exchange Popular Discussions Feed"
+                href="/community/feeds/popularthreads?community=1" />
+
+            <link rel="alternate" type="application/rss+xml"
+                title="Smart Enterprise Exchange Discussions Feed"
+                href="/community/feeds/threads?community=1" />
+
+        <link rel="alternate" type="application/rss+xml"
+            title="Smart Enterprise Exchange Polls Feed"
+            href="/community/feeds/polls?community=1" />
+
+
+
+    <!-- END main.ftl head section -->
+
+
+
+    <style type="text/css">/* custom-css */
+body {
+    background-color: #FFFFFF;
+    color: #333333;
+    font-family: Lucida Grande,Arial,Helvetica,sans-serif;
+    font-size: 75%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    z-index: 1;
+}
+.jive-widget .jive-widget-body{
+    overflow: visible;
+}
+/*a:link, a:visited {
+text-decoration: underline !important;
+}*/
+div#jive-wrapper, .clearfix div#jive-wrapper {
+    margin: 0 auto;
+    width: 968px;
+}
+#jive-global-header{
+    background-color: #003D80;
+    border-bottom: 0 solid #E9E9E9;
+    width: 970px;
+
+}
+#jive-global-header-texture {
+    background: url("http://i.cmpnet.com/designcentral/caseewebsite/graphics/see_masthead2.gif") no-repeat scroll 0 50% transparent;
+    height: 100px;
+    padding: 0;
+    width: 970px;
+}
+#social-section {
+    color: #68A4E7;
+    float: right;
+    line-height: 18px;
+    margin-top: 4px;
+    text-decoration: none !important;
+}
+ #social-section img {
+    margin: 0 0 -4px;
+}
+#jive-global-header .jive-header-logo, #jive-global-header .jive-header-logo a.jive-global-header-logolink {
+    height: 50px;
+    width: 78px;
+}
+
+#user-bar-wrapper,
+.ubm-header-nav{
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    width: 968px;
+}
+.ubm-header-nav{
+    margin-top: 77px;
+    float: left;
+}
+.ubm-header-nav a {
+    display: inline;
+    float: left;
+    font-size: 0;
+    height: 36px;
+    overflow: hidden;
+}
+img, a img {
+    border: medium none;
+}
+/*JIVE BODY
+------------------------------------*/
+#jive-body, #jive-body-full {
+     border-right: 1px solid #CCCCCC;
+     border-left: 1px solid #CCCCCC;
+    float: left;
+    min-width: 968px;
+    position: relative;
+    width: 968px !important;
+    padding-top: 6px;
+}
+#jive-body-intro{
+    background: none;
+    margin: 0 !important;
+}
+#jive-body-maincol {
+    padding: 0 10px !important;
+}
+#jive-body-sidebarcol{
+   padding: 0 10px 0 0 !important;
+}
+#jive-body-intro #jive-body-intro-content {
+    padding: 5px 0 10px 10px !important;
+}
+#jive-body-intro{
+padding: 10px 10px 0;
+}
+#jive-body-intro.jive-body-intro-home{
+    padding: 0px !important;
+}
+.jive-body-tabcurrent strong, .jive-body-tab a {
+    padding: 7px 11px 6px 6px !important;
+}
+.jive-body-tab-customizable {
+    display: block;
+    float: left;
+    padding: 0 11px 0 0;
+}
+.jive-body-tab-customizable a {
+    background-image: none;
+    float: left;
+    padding-right: 0 !important;
+}
+.jive-body-tab {
+    margin: 0 0 0 10px;
+}
+
+div#exclusives {
+    background: url(http://i.cmpnet.com/designcentral/caseewebsite/graphics/exclusives_hd.jpg) no-repeat top left !important;
+    _height: 50px !important;
+    overflow: hidden;
+}
+div#editors-note, #business-technology-development-video, #business-technology-strategy-video, #tracks, #exclusives, #exclusivestracks {
+    background-repeat: no-repeat;
+    font-size: 95%;
+    padding: 40px 10px 10px;
+}
+#jive-widget-content {
+    padding: 0 5px !important;
+}
+.jive-box-header, .jive-sidebar-header, .jive-widget-header{
+    border-bottom: none !important;
+}
+.jive-widget .jive-widget-header,
+.jive-sidebar .jive-sidebar-header{
+         background: url(/themes/ubmsee/images/ubm_widget_headerbar.jpg) no-repeat left bottom;
+         overflow: hidden;
+         width:100%;
+}
+.jive-widget.featblogposthd .jive-widget-header {
+    background: url("http://i.cmpnet.com/designcentral/caseewebsite/graphics/blog_hd.jpg") !important;
+    color: white !important;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 8px;
+}
+div#tracks {
+    background-image: url("http://i.cmpnet.com/designcentral/caseewebsite/graphics/tracks_hd.jpg");
+    overflow:hidden;
+}
+.jive-widget .jive-widget-header h4 {
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+}
+
+.jive-blog-post-reply-container {
+    display: block;
+    float: right;
+    overflow: hidden;
+    padding-right: 15px !important;
+    width: 55px;
+}
+.jive-blog-post-reply-grp-container{
+     float: left;
+     margin: 5px 5px 10px 5px;
+     width: 80%;
+}
+.jive-widget .jive-blog-post-subject-header-withavatar {
+      margin : 0 15px 0 15px !important; /*margin: 0 70px 0 88px !important;*/
+      float: left;
+      width: 65%;
+}
+.jive-blog-post-subject{
+    padding: 15px 0 !important;
+}
+.jive-widgetsize-small .jive-html-text-widget,
+.jive-widget .jive-widget-body ul{
+    padding: 0 !important;
+}
+
+/*.jive-widget-populartags{
+    padding-top: 10px;
+} */
+/*.jive-widget-populartags */
+.jive-widget .jive-widget-body ul.jive-tagcloud-list,
+.jive-widget .jive-widget-body ul.jive-people-list {
+    padding: 10px !important;
+ }
+.jive-widget .jive-widget-body ul.jive-icon-list
+ /*.jive-widget-body ul.jive-simple-list*/{
+padding: 10px !important;
+ }
+.jive-widget-body ul.jive-widget-grouplist div.jive-widget-sgroup-activity {
+    margin-left: 20px !important;
+}
+.jive-widget-actions .jive-widget-header{
+     background: none !important;
+}
+.ubm-footer-nav {
+    float: left;
+    line-height: 18px;
+    margin-right: -101px;
+    overflow: hidden;
+    padding: 10px 0 15px;
+    text-align: left;
+    width: 100%;
+}
+.ubm-footer-nav img {
+    float: left;
+    margin-right: 15px;
+}
+
+.jive-people-results-member-container {
+    padding:0 !important;
+}
+.jive-people-live-participant label {
+    color: #666666;
+    font-weight: bold;
+}
+.jive-sidebar .jive-sidebar-header h4, .jive-sidebar-body.jive-sidebar-body-polls h4 {
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+}
+.jive-people-live-participant {
+    margin: 0;
+    padding: 10px;
+    position: relative;
+}
+.jive-people-results-member-container {
+    padding: 9px !important;
+}
+.jive-body-content-blog #jive-body-maincol-container {
+    margin-right: -370px;
+}
+.jive-body-content-blog #jive-body-maincol {
+    margin-right: 370px;
+    padding: 0 5px;
+}
+.jive-body-content-blog #jive-body-sidebarcol-container {
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 360px;
+}
+.jive-body-content-blog #jive-body-sidebarcol {
+    margin: 0;
+    padding: 0 5px 0 0;
+}
+#exec_sum {
+    color: #FFFFFF;
+}
+#exec_sum_bot {
+    background: url("http://i.cmpnet.com/smartenterpriseexchange/box_bkg_exec_bottom.gif") no-repeat scroll center top transparent;
+    height: 18px;
+    width: 353px;
+}
+#exec_sum p {
+    font-size: 11px;
+    margin: 0 10px 0 15px;
+}
+a.readmore_lt:link, a.readmore_lt:active, a.readmore_lt:visited {
+    color: #9CDDF1;
+    font-size: 0.8em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#jive-link-change-author .jive-icon-med {
+    background: url(/themes/ubmsee/images/change_author.png) no-repeat scroll right center #F5F5F5;
+}
+.change-author{
+   background: url(/themes/ubmsee/images/change_author_icon.png) no-repeat scroll left center;
+   padding: 10px 0 10px 50px;
+   font-weight: bold;
+   font-size: 17px;
+}
+.jive-form-container .jive-form-label, .jive-form-label{
+    font-size: 12px !important;
+}
+.jive-widget .jive-widget-header, .jive-sidebar .jive-sidebar-header,
+.borderless .jive-widget-header{
+    overflow: visible !important;
+    *overflow: hidden !important;
+    width: auto;
+}
+ #jive-body, #jive-body-full{
+    *top: 30px;
+    *height: 100%;
+  }
+  .jive-widget .jive-blog-post-body{
+
+    *height: 100%;
+    *padding-bottom: 40px!important;
+  }
+  #jive-body-main{
+  padding: 10px 2px 20px 2px !important;
+  /*padding: 10px 0 40px 2px !important;  */
+  width: auto !important;
+  float: none !important;
+  }
+  #jive-footer {
+    *top: 30px !important;
+  }
+  .defaultSkin tr.mceFirst table.mceToolbar tr td {
+    padding: 0 !important;
+  }
+  .defaultSkin .mceToolbarRow1 a.jive_spacer_button,
+  .defaultSkin .mceToolbarRow1 a.jive_spacer_button1{
+   width: auto !important;
+  }
+ #user-bar-wrapper{
+    *position: relative;
+    *top: 35px;
+    z-index: 999999;
+ }
+.jive-table-cell-author span,
+.jive-table-cell-avatar span{
+   display: none;
+}
+.jive-table table{
+    width: auto !important;
+}
+.jive-table tr.jive-table-row-odd td,
+.jive-table tr.jive-table-row-odd td a {
+    *word-wrap: break-word !important;
+}
+
+/*.jive-table tr.jive-table-row-odd td span{
+    *float: left;
+    *clear:both;
+}*/
+.jive-blog-post-details-item.tags{
+    width: 100%;
+}
+/*EDIT PROFILE
+----------------------------------------*/
+table.jive-edit-profile td.jive-profile-edit-label label{
+     display: block;
+     padding-right: 15px;
+     width:auto !important;
+}
+
+table.jive-edit-profile td textarea,
+table.jive-edit-profile .jive-form-instructions,
+#edit_hover_box .jive-form-instructions{
+    display: block;
+    clear:both;
+}
+.checkboxlist input{
+    float: left;
+    margin: 0 !important;
+    clear: right;
+}
+.checkboxlist label{
+    display: block;
+    margin: 0px 2px 5px 20px;
+    width: 60%;
+}
+table.jive-edit-profile select{
+        width: 333px;
+}
+
+ /*REGISTRATION
+----------------------------------------*/
+.jive-table table{
+    width: 600px;
+    margin: 0 auto;
+}
+#edit_hover_box .jive-account-formblock td.jive-table-cell-label,
+#edit_hover_box .jive-account-formblock td.jive-profile-edit-label{
+    width: 385px;
+    float: left;
+}
+#edit_hover_box .jive-account-formblock td.jive-table-cell-label label,
+#edit_hover_box .jive-account-formblock td.jive-profile-edit-label label{
+    width: 385px;
+    display: block;
+}
+#jive-body-full #edit_hover_box_container {
+    position: relative !important;
+    top: 0px !important;
+}
+#edit_hover_box {
+    -moz-border-radius: 0 0 0 0;
+     -webkit-border-radius: 0 0 0 0;
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    padding: 20px !important;
+    width: auto !important;
+   }
+#edit_hover_box h1.jive-acct-heading {
+    background: none !important;
+    padding: 0  0 5px 0!important;
+}
+
+.jive-setup-wizard div#jive-footer {
+    display: block !important;
+}
+#jive-discussion-content .jive-table td.jive-table-cell-subject a,
+#jive-document-content .jive-table td.jive-table-cell-subject a{
+     width: 200px;
+     float: left;
+ }
+ #jive-discussion-content .jive-table td.jive-table-cell-subject span,
+ #jive-document-content .jive-table td.jive-table-cell-subject span{
+     clear: both;
+     float: left;
+ }
+ #jive-discussion-content .jive-table td.jive-table-cell-subject span a,
+ #jive-document-content .jive-table td.jive-table-cell-subject span a{
+    float: none !important;
+ }
+ .jive-table table {
+    width: 100% !important;
+ }
+/* DOCUMENT DOWNLOAD
+--------------------------------------------*/
+.jive-attachments ul li a {
+    background: url("http://i.cmpnet.com/smartenterpriseexchange/dl.png") no-repeat scroll 0 19px transparent;
+    display: block;
+    float: left;
+    height: 50px;
+}
+#edit_hover_box .grey_buttons{
+    padding: 18px 330px !important;
+}
+
+/* SUBSCRIPTION
+--------------------------------------------*/
+.subscription-body{
+    background: #fff;
+    border: 1px solid #666;
+    margin: 10px auto;
+    width: 680px;
+    padding: 20px;
+}
+.subscription-body h3{
+    padding-bottom: 10px;
+    color: #0070A8;
+    font: bold;
+    font-weight:  24px;
+}
+.subscription-body span{
+    display: block;
+}
+.subscription-form{
+        padding-top: 10px;
+}
+.subscription-form div{
+padding: 0 10px 10px 0;
+}
+.subscription-form label{
+    display: block;
+    float: left;
+    padding-right: 10px;
+    text-align: right;
+    width: 100px;
+}
+.subscription-form .subs-radio,
+.subscription-form .subs-checkbox{
+     padding: 0 0 10px 110px !important;
+     width: 550px;
+}
+.subscription-form .subs-radio label,
+.subscription-form .subs-checkbox label{
+    padding:0;
+     width: 550px;
+     text-align: left;
+}
+.subscription-form .subs-radio input{
+    margin-left: 0;
+}
+.subscription-terms span{
+    font-size: 10px;
+}
+span.asterix{
+    display: inline;
+    color: #FF3300;
+}
+.subs-submit{
+    margin: 10px 300px;
+}
+.subscription-body-main #jive-body,
+.subscription-body-main     #jive-body-full{
+ border: none !important;
+ width: 100% !important;
+ min-width: 0 !important;
+ }
+.subscription-body-main div#jive-wrapper,
+.subscription-body-main .clearfix div#jive-wrapper {
+    width: 100% !important;
+ }
+.subscription-body-main{
+ background: #C0C0C0;
+ }
+ .subscription-footer{
+    background: #fff;
+    padding: 10px;
+ }
+  .subscription-footer span{
+    width:680px;
+    font-size: 10px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+ }
+.checkboxlist .checkboxLabel{
+    font-weight: normal !important;
+}
+.jive-body-home #jive-announcements-messaging{
+    margin: 0;
+    padding: 0 5px 10px 5px;
+}
+.j-widget-body-polls .j-poll ol li{
+    padding-bottom: 0;
+}
+.jive-widget-grouplist {
+    height: 200px;
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.j-widget-body-polls .j-poll ol label{
+    font-weight: normal;
+}
+.jive-widget-grouplist li{
+    border-bottom: 1px solid #F7F7F7;
+    display: block;
+    padding: 5px 0 5px 4px !important;
+    position: relative;
+    width: auto;
+}
+.jive-widget-grouplist li a,
+.jive-widget .jive-widget-body ul.jive-icon-list a{
+    text-decoration: none !important;
+    font-weight: normal;
+ }
+ .jive-widget-recentblogpostswidget .jive-table-cell-title a,
+ .jive-blog-post-subject .featblogpostheadline,
+ .jive-table-recentcontent .jive-table-cell-title a,
+.jive-tagcloud-list a{
+   text-decoration: none !important;
+ }
+.jive-widget-grouplist li a:hover,
+.jive-blog-post-subject .featblogpostheadline:hover,
+ .jive-table-recentcontent .jive-table-cell-title a:hover,
+.jive-tagcloud-list a:hover,
+.jive-table td.jive-table-cell-author a,
+.jive-table-cell-modified a,
+.jive-table-cell-modified span,
+.jive-activity-author a,
+a.jive-username-link,
+.jive-blog-post-details a,
+.jive-table td.jive-table-cell-title span a{
+   text-decoration: underline !important;
+ }
+ .jive-reply {
+    background: url("../images/jive-social-reply-btn-right.gif") no-repeat scroll 100% 0 transparent;
+}
+.jive-reply a {
+    background: url("../images/jive-social-reply-btn-left.gif") no-repeat scroll 0 0 transparent;
+    color: #56861D !important;
+    display: block;
+    font-size: 1.1111em;
+    font-weight: bold;
+    height: 16px;
+    line-height: 16px;
+    margin: 0 5px 0 0;
+    padding: 5px 3px 6px 33px;
+    text-align: right;
+    text-decoration: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border: none;
+    text-decoration: none !important;
+}
+.jive-reply a:hover, .jive-reply a:focus {
+    background-color: #FFFFFF;
+    background-position: 0 0;
+    border-color: #DADADA;
+
+}
+#jive-alert.clearfix {
+    margin: 0;
+}
+/*Production div styling */
+div#business-technology-strategy {
+    background-image: url("http://i.cmpnet.com/designcentral/caseewebsite/graphics/new_bts_hd2.jpg");
+}
+
+div#business-technology-strategy, #business-technology-execution, #business-technology-development {
+    background-repeat: no-repeat;
+    padding: 40px 10px 10px;
+}
+
+div#editors-note{_width: 225px; _height: 50px;
+	background-image: url(http://i.cmpnet.com/designcentral/caseewebsite/graphics/new_exchangeview_hd.jpg);
+	}
+
+div#tracks{_width: 225px; _height: 50px;
+	background-image: url(http://i.cmpnet.com/designcentral/caseewebsite/graphics/tracks_hd.jpg);
+	}
+
+div#exclusives{_width: 225px; _height: 50px;
+	background-image: url(http://i.cmpnet.com/designcentral/caseewebsite/graphics/exclusives_hd.jpg);
+	}
+div#exclusivestracks{_width: 225px; _height: 50px;
+	background-image: url(http://i.cmpnet.com/designcentral/caseewebsite/graphics/exclusives_hd2.jpg);
+	}
+
+div#trackliveexchanges{_width: 225px; _height: 50px;
+	background-image: url(http://i.cmpnet.com/designcentral/caseewebsite/graphics/le_snapshot_bg.jpg);
+    }
+
+div#trackliveexchanges2{_width: 225px; _height: 50px;
+	background-image: url(http://i.cmpnet.com/designcentral/caseewebsite/graphics/le_snapshot2_bg.jpg);
+    }
+
+div#moretracks{_width: 225px; _height: 50px;
+    }
+
+div#editors-note, #business-technology-development-video, #business-technology-strategy-video, #tracks, #exclusives, #exclusivestracks {
+	background-repeat: no-repeat;
+	padding: 40px 10px 10px;
+	font-size: 95%;
+	}
+
+div#business-technology-strategy, #business-technology-execution, #business-technology-development {
+	background-repeat: no-repeat;
+	padding: 40px 10px 10px;
+	}
+
+div#trackliveexchanges {
+	background-repeat: no-repeat;
+	padding: 10px 85px 10px 10px;
+	font-size: 95%;
+	}
+
+div#trackliveexchanges2 {
+	background-repeat: no-repeat;
+	padding: 10px 85px 10px 10px;
+	font-size: 95%;
+	}
+
+div#moretracks {
+	background-repeat: no-repeat;
+	padding: 10px 10px 10px 10px;
+	font-size: 95%;
+	}
+
+div#editors-note h2{
+	font-size: 120%;
+	}
+
+div#editors-note h2 a{
+	text-decoration: none;
+	}
+
+div#editors-image {
+	float: right;
+	text-align: center;
+	font-size:90%;
+	}
+
+div#business-technology-strategy {_width: 450px; _height: 50px; background-image: url(http://i.cmpnet.com/designcentral/caseewebsite/graphics/new_bts_hd2.jpg);}
+
+div#business-technology-execution {_width: 450px; _height: 50px; background-image: url(http://i.cmpnet.com/designcentral/caseewebsite/graphics/new_bte_hd2.jpg);}
+
+div#business-technology-development {_width: 450px; _height: 50px; background-image: url(http://i.cmpnet.com/designcentral/caseewebsite/graphics/new_prodev_hd2.jpg);}
+
+div#business-technology-development-video {_width: 707px; _height: 50px; background-image: url(http://i.cmpnet.com/designcentral/caseewebsite/graphics/new_prodev_hd2.jpg);}
+
+div#business-technology-strategy-video {_width: 707px; _height: 50px; background-image: url(http://i.cmpnet.com/designcentral/caseewebsite/graphics/new_bts_hd2.jpg);}
+
+div#business-technology-strategy h2, div#business-technology-execution h2, div#business-technology-development h2, div#business-technology-development-video h2,
+
+div#business-technology-strategy-video h2{
+	font-size: 120%;
+	}
+
+div#business-technology-strategy h2 a,
+div#business-technology-strategy-video h2 a {
+	text-decoration: none;
+	color: rgb(53, 84, 145);
+	}
+
+xdiv#business-technology-strategy h2 a:hover {
+	text-decoration: underline;
+	}
+
+div#business-technology-execution h2 a {
+	text-decoration: none;
+	color: rgb(53, 84, 145);
+	}
+
+xdiv#business-technology-execution h2 a:hover {
+	text-decoration: underline;
+	}
+
+div#business-technology-development h2 a, div#business-technology-development-video h2 a {
+	text-decoration: none;
+	color: rgb(53, 84, 145);
+	}
+
+xdiv#business-technology-development h2 a:hover {
+	text-decoration: underline;
+	}
+
+div#editors-note p, #business-technology-strategy p, #business-technology-execution p, #business-technology-development p, #business-technology-development-video p,
+#business-technology-strategy-video p {
+	width: 335px;
+        font-size: 105%;
+  }
+  #jive-body-layout-lss .jive-body-layout-s, #jive-body-layout-lss .jive-body-layout-s1 {
+    padding-left: 10px;
+    width: 270px;
+}
+#jive-body-layout-lss .jive-body-layout-s2 {
+    padding-left: 10px;
+    width: 200px;
+}
+
+.jive-widget {
+-moz-border-radius: 4px 4px 4px 4px;
+-webkit-border-radius: 4px 4px 4px 4px;
+    border: 1px solid #E5E5E5 !important;
+
+}
+.jive-widget .jive-widget-body {
+    clear: left;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.jive-widget-body .jive-html-text-widget ul li{
+    list-style: none !important;
+}
+/* Change Author Calendar styling */
+div.calendar{
+    left: 417px !important;
+    top: 380px !important;
+}
+#jive-widget-container_2 .jive-widget-borderless.jive-widget{
+    border: none !important;
+}
+
+.jive-box, .jive-sidebar, .jive-widget, .jive-content-block-container{
+    margin-bottom: 10px !important;
+}
+#jive-body-announcements-container{
+    padding: 10px 20px 0 20px;
+}
+#jive-another-announcement{
+    overflow: hidden:
+    width: 100%;
+}
+.jive-attachments .preview{
+    background: none !important;
+    height: auto !important;
+}
+.jive-attachments ul li {
+    overflow: hidden;
+}
+/* Nov 16 2011 */
+.jive-body-content-document .jive-content {
+    background-color: #FFFFFF !important;
+}
+.jive-content-header-version {
+    display: none !important;
+}</style>
+    <style type="text/css">/* custom-css-container */</style>
+
+</head>
+<body class="jive-body-home" >
+
+
+<a href="#jive-body" class="jive-skip-nav">Skip navigation</a>
+
+    <div id="jive-compliance" class=""style="display:none">
+        <span class="jive-icon-med "></span>
+        
+    </div>
+
+    <div id="jive-wrapper" class="clearfix">
+
+<!-- BEGIN header -->
+<a name="top"></a>
+<div id="jive-global-header" class="clearfix">
+    <div id="jive-global-header-texture">
+
+            <div id="social-section">
+            <a href="http://twitter.com/smartEnterprise">
+                <img src="http://i.cmpnet.com/designcentral/caseewebsite/graphics/icon_twitter.gif" width="16" height="16" border="0" alt="Twitter" title="Twitter" />
+            </a>&nbsp; Follow us&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4cb61250185e5d32" class="addthis_button_compact">
+                <img src="http://i.cmpnet.com/designcentral/caseewebsite/graphics/icon_share.gif" width="16" height="16" border="0" alt="Share" title="Share" />
+            </a>&nbsp; Share &nbsp;&nbsp;
+            <a href="/create-account.jspa">
+                <img src="http://i.cmpnet.com/designcentral/caseewebsite/graphics/btn_become_member.gif" width="131" height="18" border="0" alt="Become a member" title="Become a member" />
+            </a>
+
+        </div>
+
+
+        <div class="ubm-header-logo" >
+            <a href="/index.jspa"></a>
+        </div>
+
+        <div class="ubm-header-nav">
+
+                <a href="/">
+                <img height="36" border="0" width="48" src="http://i.cmpnet.com/designcentral/caseewebsite/graphics/see_home2.gif" alt="Home" title="Home">
+                </a>
+                <a href="/community/strategy">
+                <img height="36" border="0" width="159" src="http://i.cmpnet.com/designcentral/caseewebsite/graphics/see_bts2.gif" alt="Business Technology Strategy" title="Business Technology Strategy">
+                </a>
+                <a href="/community/execution">
+                <img height="36" border="0" width="165" src="http://i.cmpnet.com/designcentral/caseewebsite/graphics/see_bte2.gif" alt="Business Technology Execution" title="Business Technology Execution">
+                </a>
+                <a href="/community/development">
+                <img height="36" border="0" width="192" src="http://i.cmpnet.com/designcentral/caseewebsite/graphics/see_pd2.gif" alt="Professional Development" title="Professional Development">
+                </a>
+                <a href="/community/exchange">
+                <img height="36" border="0" width="126" src="http://i.cmpnet.com/designcentral/caseewebsite/graphics/see_liveexc2.gif" alt="Live Exchanges" title="Live Exchanges">
+                </a>
+                <a href="/community/features">
+                <img height="36" border="0" width="83" src="http://i.cmpnet.com/designcentral/caseewebsite/graphics/see_archive2.gif" alt="Smart Archive" title="Smart Archive">
+                </a>
+                <a href="/community/magazine">
+                <img height="36" border="0" width="195" src="http://i.cmpnet.com/designcentral/caseewebsite/graphics/see_mag2.gif" alt="Smart Enterprise Magazine" title="Smart Enterprise Magazine">
+                </a>
+
+                <!--a onclick="" href="http://www.google.com/calendar/embed?src=smartenterpriseexchange%40gmail.com&ctz=America/New_York" target="blank_">
+                <img height="36" border="0" title="Exchange Calendar" alt="Exchange Calendar" src="/themes/generated_advanced_skin_global/images/navbtn_calendar.jpg"/>
+                </a-->
+                <!--a href="/community/about" class="lsstChild">
+                <img height="36" border="0" title="About This Site" alt="About This Site" src="/themes/generated_advanced_skin_global/images/navbtn_about.jpg"/>
+                </a-->
+          
+        </div>
+
+
+
+    </div>
+</div>
+
+<!-- END header -->
+
+
+<!-- BEGIN user bar -->
+<div id="user-bar-wrapper">
+    <div id="jive-userbar">
+<div id="jive-userbar-login">
+    <form action="/cs_login"
+          method="post" name="loginform" autocomplete="off">
+        
+        
+
+        <span class="jive-userbar-login-welcome" id="jiveLoginWelcome">
+            <span class="jive-userbar-login-guest">
+            Welcome, Guest
+            </span>
+
+            <span class="jive-userbar-login-loginlink">
+                <a href="#" onClick="jivetoggleLogin(); return false;">Login</a>
+            </span>
+
+            <span class="jive-userbar-login-new">
+                <a href="/create-account.jspa">Register</a>
+            </span>
+        </span>
+
+        <span class="jive-userbar-login-form" id="jiveLoginForm" style="display: none;">
+
+            <span class="jive-userbar-login-username">
+                <label for="login-username">
+Username:                </label>
+                <a href="forgot-username!input.jspa" title="I forgot my username ">(?)</a>
+                <input type="text" name="username" size="20" maxlength="150" value="" tabindex="1"
+                               id="login-username" />
+            </span>
+
+            <span class="jive-userbar-login-password">
+                <label for="login-password">
+Password:                </label>
+                <a href="emailPasswordToken!input.jspa" title="I forgot my password ">(?)</a>
+                <input type="password" name="password" size="20" maxlength="150" value="" tabindex="2"
+                               id="login-password" />
+            </span>
+
+            <span class="jive-userbar-login-auto">
+                <input type="checkbox" name="autoLogin" id="login-auto" value="true" tabindex="3" />
+                <label for="login-auto">Remember Me</label>
+            </span>
+
+            <span class="jive-userbar-login-submit">
+                <input type="submit" name="login" value="Login" tabindex="4"
+                       class="jive-login-button" />
+                <input type="reset" name="doCancel" value="Cancel" tabindex="5"
+                               class="jive-cancel-button" onclick="jivetoggleLogin();" />
+            </span>
+        </span>
+
+    </form>
+</div>        <div id="jive-userbar-right">
+<div id="jive-userbar-search">
+    <form action="/search.jspa" method="get" id="jive-userbar-search-form">
+        <input type="hidden" name="peopleEnabled" value="true"/>
+
+        <input type="hidden" name="userID"/>
+        <input type="hidden" name="containerType"/>
+        <input type="hidden" name="container"/>
+        <input type="hidden" name="spotlight" value="false"/>
+        <label for="jive-query"
+               class="j-508-label">Search for:</label>
+        <input type="text" id="jive-query" name="q" value="" accesskey="4" class="jive-userbar-search-field"
+               autocomplete="off"/>
+        <button type="submit" value="Search Tags"
+                class="jive-userbar-search-button">Search</button>
+    </form>
+
+    <div id="jive-spotlight-search-container"></div>
+    <script type="text/javascript">
+        var containerType = 14;
+        var containerID = 1;
+
+        $j('#jive-userbar-search-form').submit(function() {
+            var query = $j('#jive-query').val();
+            var isWildcard = query.charAt(query.length-1) == '*';
+            if (query && !isWildcard) {
+                $j('#jive-userbar-search-form input[name=spotlight]').val("true");
+            }
+        });
+    </script>
+</div>        </div>
+    </div>
+
+</div>
+<!-- END user bar -->
+
+        <div id="jive-body">
+
+
+
+<div style="height:1px;clear:both;">&nbsp</div>
+
+
+            
+
+    
+    <script>
+        window._jive_images_enabled = true;
+    </script>
+
+
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="/4.5.6/styles/tiny_mce3/plugins/inlinepopups/skins/clearlooks2/window.css" />
+
+
+
+<script type="text/javascript">
+kjs.run(function() {
+kjs.load('/4.5.6/resources/scripts/gen/f474c16ad9ca739b6a061fa44ea52dbc.js', [  ]);
+kjs.run(function() {
+    window.errorHandlerMessage = "An error occurred:";
+
+    window.editorErrorHandler = function(message, exception) {
+        // if the message is something other than a timeout, show the message plus the error code
+        if (message.indexOf('Timeout') == -1) {
+            $j('#dwr-error-text').text(errorHandlerMessage + ' Error Code: ' + message);
+            $j('#dwr-error-table').fadeIn();
+            setTimeout(function() {
+                $j('#dwr-error-table').fadeOut();
+            }, 10000);
+        }
+    };
+
+
+    
+    if(typeof(tinyMCE) != "undefined"){ // could be Safari 2, which dies with tinyMCE
+        tinyMCE.addI18n('en.jivemacros',{
+                    "unused.jive.key" : "nothing."
+        });
+    }
+    if(typeof(tinyMCE) != "undefined"){ // could be Safari 2, which dies with tinyMCE
+        tinyMCE.addI18n('en.jivemacros',{
+                    "unused.jive.key" : "nothing."
+        });
+    }
+    if(typeof(tinyMCE) != "undefined"){ // could be Safari 2, which dies with tinyMCE
+        tinyMCE.addI18n('en.jivemacros',{
+                    "unused.jive.key" : "nothing."
+        });
+    }
+
+
+        window.RawHTMLSaveFunction = function(element_id, html, body){
+            var text = $j('#wysiwygtext');
+            if (text.is(':not(:visible)')) {
+                return html;
+            }else{
+                return text.val();
+            }
+        }
+        jive.rte.multiRTE = new Array();
+
+        //Not used by RTEWrap, but we need this for backward compatibility; see CS-23883
+        window.refreshLinks = function() {
+            jive.rte.multiRTE.forEach(function(rteID) {
+                if ($j('#' + rteID + '_parent').length < 1) {
+                    // safari 2, text only
+                    $j('#' + rteID + '_toggle_html').hide();
+                    $j('#jivePreferredEditorModeLinkHREF').hide();
+                    return;
+                }
+
+                if(currentMode == 'rawhtml') {
+                    $j('#' + rteID + '_toggle_html').css('display', 'block');
+                }else{
+                    $j('#' + rteID + '_toggle_html').hide();
+                }
+
+                if (preferredMode == currentMode) {
+                    $j('#jivePreferredEditorModeLinkHREF').hide();
+                } else {
+                    $j('#jivePreferredEditorModeLinkHREF').css('display', 'block');
+                }
+            });
+        }
+
+    window.editor = new jive.ext.y.HashTable();
+
+
+       
+jive.rte.macros.push(new jive.rte.Macro("color","","TEXT", true, false, [], [{name: "0",value: ""},{name: "__default_attr",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("size","","TEXT", true, false, [], [{name: "0",value: ""},{name: "__default_attr",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("font","","TEXT", true, false, [], [{name: "0",value: ""},{name: "__default_attr",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("toc","","IMAGE", true, true, [], [], true,false));
+jive.rte.macros.push(new jive.rte.Macro("code","","TEXT", false, true, [{ name: "sql", deleteAll: true, params: [{ name: "__default_attr", value :"sql"} ]},{ name: "html", deleteAll: true, params: [{ name: "__default_attr", value :"html"} ]},{ name: "xml", deleteAll: true, params: [{ name: "__default_attr", value :"xml"} ]},{ name: "java", deleteAll: true, params: [{ name: "__default_attr", value :"java"} ]},{ name: "plain", deleteAll: true, params: [{ name: "__default_attr", value :"plain"} ]}], [{name: "__default_attr",value: ["sql","html","xml","java","plain"]}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("noformat","","TEXT", true, false, [], [], true,false));
+jive.rte.macros.push(new jive.rte.Macro("thread","thread/","INLINE", true, false, [], [{name: "id",value: ""},{name: "0",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("message","message/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("external-site","bookmarks/","INLINE", false, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("document","docs/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("microblog","status/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("polls","polls/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("blogpost","blogs/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("blog","blogs/","INLINE", true, false, [], [{name: "id",value: ""},{name: "name",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("community","community/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("space","community/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("user","","INLINE", true, false, [], [{name: "id",value: ""},{name: "username",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("project","project/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("task","view-task.jspa?task=","INLINE", true, false, [], [{name: "id",value: ""},{name: "0",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("group","groups/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("quote","","TEXT", false, true, [], [{name: "title",value: ""},{name: "__default_attr",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("vimeo","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("veoh","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("dailymotion","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("google","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("youtube","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""}], true,false));
+
+
+
+}, [ '/4.5.6/resources/scripts/gen/f474c16ad9ca739b6a061fa44ea52dbc.js' ], [ 'jive.rte' ]);
+}, [ 'jive.rte--required' ]);
+</script>
+
+    
+
+
+    <script type="text/html" id="rte-template">
+
+<div>
+    <div class="wysiwygtext_html_link" id="wysiwygtext_html_link" style="display:block">
+        <a href="javascript:;" class="toggle_html" style="display:none;">
+Show Full Editor        </a>
+        <a href="javascript:void(0);" class="jive-description toggle_preferred_mode" style="display:none;" id="jivePreferredEditorModeLinkHREF">
+Always use this editor        </a>
+    </div>
+    <textarea id="wysiwygtext" rows="10" class="jive-comment-textarea"><%= body %></textarea>
+    <textarea name="body" rows="10" style="display:none;" class="jive-comment-textarea"><%= body %></textarea>
+</div>
+
+    </script>
+
+
+
+<!--<meta name="nosidebar" content="true" />-->
+
+<script type="text/javascript">
+kjs.run(function() {
+kjs.require('jive.rte');
+kjs.load('/4.5.6/resources/scripts/gen/c52480ab063463caaedee6bafdc1bf83.js', [ 'jive.rte' ]);
+kjs.run(function() {
+window.containerID = 1;
+window.containerType = 14;
+window._jive_video_picker__url = "?container=1&containerType=14"
+window.container = { ID: containerID, objectType: containerType};
+if(typeof(Community) == 'undefined'){
+            Community = {};
+            Community.feed = {};
+        }
+
+
+                window.options = {
+                    body: "",
+                    containerType:14,
+                    containerID:1,
+                    container: { ID: containerID, objectType: containerType},
+                    rteOptions : {
+                        controller    : jiveControl,
+                        preset        : "mini",
+                        autoSave      : new DummyAutoSave(false),
+                        preferredMode : "advanced",
+                        startMode     : "advanced",
+                        mobileUI      : false,
+                        toggleText    : 'Show Full Editor',
+                        alwaysUseTabText : 'Always use this editor',
+                        editDisabledText : 'You are using a device that only enables you to add content.',
+                        editDisabledSummary : 'If you access {0} from a computer, you can both add and edit your content.',
+                        communityName : 'Smart Enterprise Exchange',
+                        height        : 200
+                    },
+                    i18n: {
+                        noAnnonucementsLabelString:    'No announcements found',
+                        viewLabelString:    'Edit',
+                        removeLabelString:    'Delete',
+                        updateLabelString:    'Edit',
+                        expireLabelString:    'Expire',
+                        deleteConfirmLabelString:  'Are you sure you want to delete this announcement?',
+                        expireConfirmLabelString:    'Expiring the announcement will not delete it but will remove it from the public announcement list. Are you sure you want to expire this announcement?',
+                        couldNotLoadAnnAlert:    'Could not load announcement.',
+                        chooseVldActvDtAlert:    'Please choose a date after today\'s date. To make the announcement active today, choose the option to make the announcement begin immediately.',
+                        enterAnncmtBodyAlert:    'Please enter the announcement details.',
+                        chooseVldExprDtAlert:    'Please choose a valid expiration date. The date needs to be today or later and later than the begin date.',
+                        enterDaysToExpAlert:    'Please enter a specific number of days from the begin date when the announcement will expire.',
+                        enterVldSubjectAlert:    'Please enter a valid subject.',
+                        invalidInctvDtAlert:    'Please choose a valid expiration date. The date needs to be later than the begin date.',
+                        choose_active_dateAlert:    'Please choose when to begin the announcement.',
+                        chooseInactiveDateAlert:    'Please choose when to expire the announcement.'
+                    }
+                };
+
+
+
+    $j(function() {
+
+        $j("input[name='activeMode']").change(function() {
+            if ( $j('#annActiveLater').is(':checked') ) {
+                $j('.activeDatePicker').show();
+            } else {
+                $j('.activeDatePicker').hide();
+            }
+        });
+
+        $j("input[name='expiresMode']").change(function() {
+            if ( $j('#annExpireLater').is(':checked') ) {
+                $j('.expiresDatePicker').show();
+                $j('#annExpiresDays').hide();
+            } else {
+                $j('.expiresDatePicker').hide();
+                $j('#annExpiresDays').show();
+            }
+        });
+
+    });
+
+
+    new jive.Announcements.Main($j.extend({annMode: 'ann'}, options));
+
+
+}, [ '/4.5.6/resources/scripts/gen/c52480ab063463caaedee6bafdc1bf83.js' ], [ 'jive.Announcements' ]);
+}, [ 'jive.Announcements--required' ]);
+</script>
+
+
+<!-- The client-side template used by jQuery to render the manage announcements table -->
+ <script type="text/html" id="jive-announcement-row-block">
+        <tr class="{{statkey}}">
+            <td class="name subject"><div>{{subject}}</div></td>
+            <td class="author">{{user}}</td>
+            <td class="date"><strong class="{{statusFontColor}}">{{status}}</strong> - {{days}}</span></td>
+            <td class="actions">
+                   <a href="#" class="updateViewLinkGen">({{updateViewLink}}</a> | <a href="#" class="expireRemoveLinkGen">{{expireRemoveLink}})</a>
+            </td>
+        </tr>
+ </script>
+
+
+
+<!-- BEGIN Manage Category panel -->
+<div class="jive-modal" id="jive-modal-announcements">
+    <h2 class="jive-modal-title jive-modal-title-manage-announcements">Manage Announcements</h2>
+
+     <h2 class="jive-modal-title jive-modal-title-add-announcement" style="display: none">Add a new announcement</h2>
+     <h2 class="jive-modal-title jive-modal-title-edit-announcement" style="display: none">Edit Announcement</h2>
+
+     <a href="#" class="jive-modal-close-top close">Close</a>
+
+     <!-- Manage announcements listing -->
+     <div class="jive-modal-content jive-modal-announcements-listing clearfix">
+     	<p>
+Create and manage announcements in <strong>Smart Enterprise Exchange</strong>. Try to limit the announcements to keep them useful.        </p>
+
+     	<h5>
+Announcements in Smart Enterprise Exchange        </h5>
+     	<div class="jive-modal-announcement-list">
+     		<table>
+                <colgroup>
+                    <col class="colName" />
+                    <col class="colAuthor" />
+                    <col class="colDate"/>
+                    <col class="colActions" />
+                </colgroup>
+                <thead>
+                <tr>
+                <th>Subject</th>
+                <th>Author</th>
+                <th>Date</th>
+                <th>Actions</th>
+                </tr>
+                </thead>
+     			<tbody>
+     			</tbody>
+     		</table>
+     	</div>
+     	<div class="add">
+            <a href="#"><span class="jive-icon-med jive-icon-announcement"></span>Add a new announcement</a>
+     	</div>
+
+     	<div class="jive-form-buttons clearfix">
+     			<input type="submit" class="jive-modal-close-top close" value="Finished" style="float: right;"/>
+     		</div>
+     </div>
+    <!-- Add an announcement modal -->
+
+     <div class="jive-modal-content jive-modal-create-announcement" style="display: none">
+     	<p id='p-announce-create-text'>Enter your announcement details below, including when  you would like it to become active and expire. By default, announcements will become active immediately and expire in 7 days.</p>
+     	<div class="jive-bookmark-form jive-announcement-form clearfix">
+		<form id="jive-announcement-form" action="" method="post">
+            <input name="annID" id="annID" type="hidden" value='-1'/>
+     		<div class="jive-form-row" id="jive-bookmark-form-notes">
+        		<div class="jive-form-label">
+        			<label for="subject01">Subject <em>What is the title or subject of your announcement? 75 characters max. <span class="font-color-danger">(Required)</span></em></label>
+        		</div>
+        		<div class="jive-form-element">
+     				<input tabindex="1" class="jive-form-element-text" id="subject01" size="67" maxlength="75" />
+     			</div>
+     		</div>
+
+     		<div class="jive-form-row" id="jive-ann-description">
+     			<div class="jive-form-label">
+        			<label for="body">Details <em>Tell people more about this announcement. <span class="font-color-danger">(Required)</span></em></label>
+                    <div class="jive-rte">
+                    </div>
+        		</div>
+
+     		</div>
+
+            <div class="jive-form-row" id="jive-ann-form-start">
+     			<div class="jive-form-label">
+        			<label for="annSubject">Begins <em>When would you like this announcement to appear?</em></label>
+        		</div>
+        		<div class="jive-form-element jive-form-element-announcement-start">
+        			<ul>
+        				<li>
+        					<!--<input type="radio" name="announcementStart" id="startNow" value="activenow" checked="checked" /> <label for="startNow">Immediately</label>-->
+                            <input tabindex="3" type="radio" name="activeMode" value="activenow" id="annActiveNow"
+                                      
+                                      onclick="$j('#annStartDate').val('');"
+                                      />
+                             <label for="annActiveNow">Immediately</label>
+        				</li>
+        				<li>
+        					<!--<input type="radio" name="announcementStart" id="startOnDate" value="activelater" class="pickSpecificDay" /> <label for="startOnDate">On a specific day</label>-->
+                            <input tabindex="4" type="radio" name="activeMode" value="activelater" id="annActiveLater"
+                                  
+                                  />
+                                  <label for="annActiveLater">On a specific date</label>
+
+                            <span class="activeDatePicker">
+
+<!--[if lt IE 8]>
+ <script type="text/javascript">
+ function restore(e) {
+            if (e.options[e.selectedIndex].disabled) {
+                e.selectedIndex = window.select_current[e.id];
+            }
+        }
+
+        function emulate(e) {
+            for (var i = 0, option; option = e.options[i]; i++) {
+                if (option.disabled) {
+                    option.style.color = "graytext";
+                }
+                else
+                {
+                    option.style.color = "menutext";
+                }
+            }
+        }
+
+        $j(function() {
+            if (document.getElementsByTagName) {
+                var s = $j("select");
+                if (s.length > 0) {
+                    window.select_current = new Array();
+                    for (var i = 0, select; select = s[i]; i++) {
+                        select.onfocus = function() {
+                            window.select_current[this.id] = this.selectedIndex;
+                        }
+                        select.onchange = function() {
+                            restore(this);
+                        }
+                        emulate(select);
+                    }
+                }
+            }
+        });
+
+    </script>
+  <![endif]-->
+
+    <input type="text" class="jive-form-textinput-variable" id="annStartDate" name="startDate" />
+    <input type="hidden"  id="userLocale" name="userLocale" value="en_US" />
+    <a href="#" id="annStartDate_button">
+        <img src="/4.5.6/images/calendar/calendar.gif" width="34" height="21" border="0" alt="Click to select a date" title="Click to select a date" />
+    </a>
+
+    <script type="text/javascript">
+        $j(document).ready(function() {
+            var time = null;
+            function setTime(){
+                if(time){
+                    $j('#annStartDate').val(new Date(time).print(Zapatec.Calendar._TT["DEF_DATE_FORMAT"]));
+                }
+            }
+            // lazy load zapatec calendar
+            Zapatec.Calendar.bootstrap({
+                inputField     :    "annStartDate",
+                showsTime      :    false,
+                button         :    "annStartDate_button",
+                step           :    1
+            }, setTime);
+        });
+    </script>
+                            <span>
+                            (M/d/yy)
+                            </span>
+                            </span>
+        				</li>
+        			</ul>
+     			</div>
+     		</div>
+
+
+     		<div class="jive-form-row" id="jive-ann-form-end">
+     			<div class="jive-form-label">
+        			<label for="annSubject">Expires <em>When would you like this announcement to end?</em></label>
+        		</div>
+        		<div class="jive-form-element jive-form-element-announcement-end">
+        			<ul>
+        				<li>
+        					<!--<input type="radio" name="announcementEnd" id="endDays" value="expireslater" checked="checked" /> <label for="endDays">A specific number of days after it begins</label>-->
+                            <input tabindex="5" type="radio" name="expiresMode" value="expiresrelative" id="annExpireRelative"
+                            
+                            onclick="$j('#annEndDate').val('');"
+                            />
+                            <label for="annExpireRelative">A specific number of days after it begins</label>
+                            <input tabindex="6" class="jive-announcements-form-days" type="text" name="expiresDays" id="annExpiresDays" size="2" maxlength="3"
+                            value=""
+                            onclick="$j('#annExpireRelative').attr('checked', 'checked');"/>
+        				</li>
+        				<li>
+        					<!--<input type="radio" name="announcementEnd" id="endOnDate" value="expiresrelative" class="pickSpecificDay" /> <label for="endOnDate">On a specific day</label>-->
+                            <input tabindex="7" type="radio" name="expiresMode" value="expireslater" id="annExpireLater"
+                              
+                              />
+                              <label for="annExpireLater">On a specific date</label>
+
+                               <span class="expiresDatePicker">
+
+<!--[if lt IE 8]>
+ <script type="text/javascript">
+ function restore(e) {
+            if (e.options[e.selectedIndex].disabled) {
+                e.selectedIndex = window.select_current[e.id];
+            }
+        }
+
+        function emulate(e) {
+            for (var i = 0, option; option = e.options[i]; i++) {
+                if (option.disabled) {
+                    option.style.color = "graytext";
+                }
+                else
+                {
+                    option.style.color = "menutext";
+                }
+            }
+        }
+
+        $j(function() {
+            if (document.getElementsByTagName) {
+                var s = $j("select");
+                if (s.length > 0) {
+                    window.select_current = new Array();
+                    for (var i = 0, select; select = s[i]; i++) {
+                        select.onfocus = function() {
+                            window.select_current[this.id] = this.selectedIndex;
+                        }
+                        select.onchange = function() {
+                            restore(this);
+                        }
+                        emulate(select);
+                    }
+                }
+            }
+        });
+
+    </script>
+  <![endif]-->
+
+    <input type="text" class="jive-form-textinput-variable" id="annEndDate" name="endDate" />
+    <input type="hidden"  id="userLocale" name="userLocale" value="en_US" />
+    <a href="#" id="annEndDate_button">
+        <img src="/4.5.6/images/calendar/calendar.gif" width="34" height="21" border="0" alt="Click to select a date" title="Click to select a date" />
+    </a>
+
+    <script type="text/javascript">
+        $j(document).ready(function() {
+            var time = null;
+            function setTime(){
+                if(time){
+                    $j('#annEndDate').val(new Date(time).print(Zapatec.Calendar._TT["DEF_DATE_FORMAT"]));
+                }
+            }
+            // lazy load zapatec calendar
+            Zapatec.Calendar.bootstrap({
+                inputField     :    "annEndDate",
+                showsTime      :    false,
+                button         :    "annEndDate_button",
+                step           :    1
+            }, setTime);
+        });
+    </script>
+                                <span>
+                                (M/d/yy)
+                                </span>
+                                </span>
+        				</li>
+        			</ul>
+     			</div>
+     		</div>
+            <!-- The checkbox to send/not send notifications on create/edit. Please do not change any ids below as they are referenced in /scripts/apps/announcements/main.js -->
+            <div id="minorAnnCheckbox">
+                <input tabindex="8" type="checkbox" name="minorAnn" value="" id="jive-ann-minor-flag" />
+                <strong>
+                        <label id="minorAnnCreateLabel" for="jive-ann-minor-flag">Do not send notifications</label>
+                        <label id="minorAnnEditLabel" for="jive-ann-minor-flag">Minor edit, don't send notifications</label>
+                </strong>
+            </div>
+            <div align="left" class="jive-form-buttons clearfix">
+     			<input tabindex="9" type="button" class="save" value="Save"/>
+     			<input tabindex="10" type="button" class="back" value="Cancel"/>
+     		</div>
+     	</form>
+     	</div>
+     </div>
+</div>
+<!-- END modals -->
+<!-- BEGIN main.ftl body section -->
+
+
+<!-- BEGIN intro -->
+<div id="jive-body-intro" class="jive-body-intro-home">
+
+    <!-- BEGIN browse community tabs -->
+     <div class="jive-body-tabbar">
+
+
+
+
+
+    </div>     
+    <!-- END browse community tabs -->
+
+    <!-- BEGIN home page links -->
+    <!-- END home page links -->
+
+</div>
+<!-- BEGIN main body -->
+<div id="jive-body-main">
+    <div id="jive-announcements-messaging">
+<div id="jive-alert" class="clearfix">
+    <div class="jive-alert-type jive-alert-announcement" id="jive-alert-1"
+         >
+
+        <div class="jive-alert-header">
+            <h5 class="jive-alert-title">
+                <span class="jive-alert-label jive-alert-announcement-label"><span class="jive-icon-med jive-icon-announcement"></span>Announcement:</span>
+                <a href="#"
+                   onclick="if ($j('#jive-alert-content-1').is(':visible')){hideAlertContent();}else{showAlertContent();} return false;">Consumer Driven IT February 9 event - Register Now</a>
+            </h5>
+            <ul>
+                <li class="jive-alert-details-show" id="jive-alert-details-show-1">
+                    <a href="#" onclick="showAlertContent(); return false;">Show Details</a>
+                </li>
+                <li class="jive-alert-details-hide" id="jive-alert-details-hide-1" style="display: none;">
+                    <a href="#" onclick="hideAlertContent(); return false;">Hide Details</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="jive-alert-content" id="jive-alert-content-1" style="display: none;">
+
+            <!-- [DocumentBodyStart:fdae6760-3e56-4645-a47e-a18c07465819] --><div class="jive-rendered-content"><p>Register Now at <a class="jive-link-external-small" href="http://www.ca.com/consumerdrivenit">www.ca.com/consumerdrivenit</a></p></div><!-- [DocumentBodyEnd:fdae6760-3e56-4645-a47e-a18c07465819] -->
+            <div id="jive-announcements-links" class="jive-alert-details font-color-meta">
+                by <a href="/people/ellenlalier"
+data-externalId=""
+data-username="ellenlalier"
+data-avatarId="-1"
+id="jive-202915604660053814308"
+onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 2029, presence );"
+onmouseout="quickuserprofile.cancelTooltip();"
+class="jiveTT-hover-user jive-username-link"
+>ellenlalier</a>
+                (Feb 3, 2012)
+                        <span>
+
+
+                        </span>
+            </div>
+
+            <div class="jive-body-announcements-confirm" id="jive-body-announcements-expire-1172"
+                 style="display: none;">
+                <p>
+Expiring the announcement will not delete it but will remove it from the public announcement list.&nbsp;&nbsp;Are you sure you want to expire this announcement?                </p>
+
+                <form action="/ann-expire.jspa" name="annform" method="post">
+                    <input type="hidden" name="announcement" value="1172"/>
+                    <input type="submit" name="delete" value="Expire Announcement"/>
+                    <input type="button" name="cancel" value="Cancel"
+                           onclick="$j('#jive-body-announcements-expire-1172').hide();return false;"/>
+                </form>
+            </div>
+
+            <div class="jive-body-announcements-confirm" id="jive-body-announcements-delete-1172"
+                 style="display: none;">
+                <p>
+Are you sure you want to delete this announcement?                </p>
+
+                <form action="/ann-delete.jspa" name="annform" method="post">
+                    <input type="hidden" name="announcement" value="1172"/>
+                    <input type="submit" name="delete" value="Delete Announcement"/>
+                    <input type="button" name="cancel" value="Cancel"
+                           onclick="$j('#jive-body-announcements-delete-1172').hide();return false;"/>
+                </form>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <div class="jive-alert-type jive-alert-announcement" id="jive-alert-2"
+         style="display: none;">
+
+        <div class="jive-alert-header">
+            <h5 class="jive-alert-title">
+                <span class="jive-alert-label jive-alert-announcement-label"><span class="jive-icon-med jive-icon-announcement"></span>Announcement:</span>
+                <a href="#"
+                   onclick="if ($j('#jive-alert-content-2').is(':visible')){hideAlertContent();}else{showAlertContent();} return false;">How Does Christiana Care Make Innovations a Reality?</a>
+            </h5>
+            <ul>
+                <li class="jive-alert-details-show" id="jive-alert-details-show-2">
+                    <a href="#" onclick="showAlertContent(); return false;">Show Details</a>
+                </li>
+                <li class="jive-alert-details-hide" id="jive-alert-details-hide-2" style="display: none;">
+                    <a href="#" onclick="hideAlertContent(); return false;">Hide Details</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="jive-alert-content" id="jive-alert-content-2" style="display: none;">
+
+            <!-- [DocumentBodyStart:161eacdf-a281-47cb-ad9c-6bc3f8a836b5] --><div class="jive-rendered-content"><p>Read the Q&amp;A with CIO Randy Gaboriault <a class="jive-link-wiki-small" href="http://smartenterpriseexchange.com/docs/DOC-1885">here</a>.</p></div><!-- [DocumentBodyEnd:161eacdf-a281-47cb-ad9c-6bc3f8a836b5] -->
+            <div id="jive-announcements-links" class="jive-alert-details font-color-meta">
+                by <a href="/people/paulaklein"
+data-externalId=""
+data-username="paulaklein"
+data-avatarId="1033"
+id="jive-200515604660054889308"
+onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 2005, presence );"
+onmouseout="quickuserprofile.cancelTooltip();"
+class="jiveTT-hover-user jive-username-link"
+>Paula Klein</a>
+                (Feb 1, 2012)
+                        <span>
+
+
+                        </span>
+            </div>
+
+            <div class="jive-body-announcements-confirm" id="jive-body-announcements-expire-1170"
+                 style="display: none;">
+                <p>
+Expiring the announcement will not delete it but will remove it from the public announcement list.&nbsp;&nbsp;Are you sure you want to expire this announcement?                </p>
+
+                <form action="/ann-expire.jspa" name="annform" method="post">
+                    <input type="hidden" name="announcement" value="1170"/>
+                    <input type="submit" name="delete" value="Expire Announcement"/>
+                    <input type="button" name="cancel" value="Cancel"
+                           onclick="$j('#jive-body-announcements-expire-1170').hide();return false;"/>
+                </form>
+            </div>
+
+            <div class="jive-body-announcements-confirm" id="jive-body-announcements-delete-1170"
+                 style="display: none;">
+                <p>
+Are you sure you want to delete this announcement?                </p>
+
+                <form action="/ann-delete.jspa" name="annform" method="post">
+                    <input type="hidden" name="announcement" value="1170"/>
+                    <input type="submit" name="delete" value="Delete Announcement"/>
+                    <input type="button" name="cancel" value="Cancel"
+                           onclick="$j('#jive-body-announcements-delete-1170').hide();return false;"/>
+                </form>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <div class="jive-alert-type jive-alert-announcement" id="jive-alert-3"
+         style="display: none;">
+
+        <div class="jive-alert-header">
+            <h5 class="jive-alert-title">
+                <span class="jive-alert-label jive-alert-announcement-label"><span class="jive-icon-med jive-icon-announcement"></span>Announcement:</span>
+                <a href="#"
+                   onclick="if ($j('#jive-alert-content-3').is(':visible')){hideAlertContent();}else{showAlertContent();} return false;">Big Data Needs Big Solutions</a>
+            </h5>
+            <ul>
+                <li class="jive-alert-details-show" id="jive-alert-details-show-3">
+                    <a href="#" onclick="showAlertContent(); return false;">Show Details</a>
+                </li>
+                <li class="jive-alert-details-hide" id="jive-alert-details-hide-3" style="display: none;">
+                    <a href="#" onclick="hideAlertContent(); return false;">Hide Details</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="jive-alert-content" id="jive-alert-content-3" style="display: none;">
+
+            <!-- [DocumentBodyStart:67589c13-2885-4a45-ae5b-26096bfa3d62] --><div class="jive-rendered-content"><p>Find out how your CIO peers are coping with data proliferation <a class="jive-link-wiki-small" href="http://smartenterpriseexchange.com/docs/DOC-1755">here</a>. Add your experiences and comments on the article.</p></div><!-- [DocumentBodyEnd:67589c13-2885-4a45-ae5b-26096bfa3d62] -->
+            <div id="jive-announcements-links" class="jive-alert-details font-color-meta">
+                by <a href="/people/paulaklein"
+data-externalId=""
+data-username="paulaklein"
+data-avatarId="1033"
+id="jive-200515604660055737308"
+onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 2005, presence );"
+onmouseout="quickuserprofile.cancelTooltip();"
+class="jiveTT-hover-user jive-username-link"
+>Paula Klein</a>
+                (Sep 8, 2011)
+                        <span>
+
+
+                        </span>
+            </div>
+
+            <div class="jive-body-announcements-confirm" id="jive-body-announcements-expire-1153"
+                 style="display: none;">
+                <p>
+Expiring the announcement will not delete it but will remove it from the public announcement list.&nbsp;&nbsp;Are you sure you want to expire this announcement?                </p>
+
+                <form action="/ann-expire.jspa" name="annform" method="post">
+                    <input type="hidden" name="announcement" value="1153"/>
+                    <input type="submit" name="delete" value="Expire Announcement"/>
+                    <input type="button" name="cancel" value="Cancel"
+                           onclick="$j('#jive-body-announcements-expire-1153').hide();return false;"/>
+                </form>
+            </div>
+
+            <div class="jive-body-announcements-confirm" id="jive-body-announcements-delete-1153"
+                 style="display: none;">
+                <p>
+Are you sure you want to delete this announcement?                </p>
+
+                <form action="/ann-delete.jspa" name="annform" method="post">
+                    <input type="hidden" name="announcement" value="1153"/>
+                    <input type="submit" name="delete" value="Delete Announcement"/>
+                    <input type="button" name="cancel" value="Cancel"
+                           onclick="$j('#jive-body-announcements-delete-1153').hide();return false;"/>
+                </form>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <div class="jive-alert-type jive-alert-announcement" id="jive-alert-4"
+         style="display: none;">
+
+        <div class="jive-alert-header">
+            <h5 class="jive-alert-title">
+                <span class="jive-alert-label jive-alert-announcement-label"><span class="jive-icon-med jive-icon-announcement"></span>Announcement:</span>
+                <a href="#"
+                   onclick="if ($j('#jive-alert-content-4').is(':visible')){hideAlertContent();}else{showAlertContent();} return false;">Cloud and Security: Can They Co-Exist?&#160; Videocast Highlights and Reports</a>
+            </h5>
+            <ul>
+                <li class="jive-alert-details-show" id="jive-alert-details-show-4">
+                    <a href="#" onclick="showAlertContent(); return false;">Show Details</a>
+                </li>
+                <li class="jive-alert-details-hide" id="jive-alert-details-hide-4" style="display: none;">
+                    <a href="#" onclick="hideAlertContent(); return false;">Hide Details</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="jive-alert-content" id="jive-alert-content-4" style="display: none;">
+
+            <!-- [DocumentBodyStart:5e90f84b-077d-49cc-9239-af343d48c5af] --><div class="jive-rendered-content"><p><span style="text-decoration: underline;"><strong>Read about the event and download reports <a class="jive-link-wiki-small" href="http://smartenterpriseexchange.com/docs/DOC-1726">here</a></strong></span></p><p>Watch our experts discuss key topics <a class="jive-link-community-small" href="http://smartenterpriseexchange.com/community/exchange">here</a></p><p>Read the blog <a class="jive-link-blog-small" href="http://smartenterpriseexchange.com/groups/cloud/blog/2011/05/23/who-s-protecting-your-data-in-the-cloud-all-eyes-are-on-you">here</a></p><p><span style="text-decoration: underline;"><strong>Watch for the link to our videocast...</strong></span></p><p style="min-height: 8pt; height: 8pt; padding: 0px;">&#160;</p><p>Also, get insights from our <a class="jive-link-wiki-small" href="http://smartenterpriseexchange.com/docs/DOC-1710">live event </a>held in New York City March 1 with leading industry experts including Timothy Chou.</p></div><!-- [DocumentBodyEnd:5e90f84b-077d-49cc-9239-af343d48c5af] -->
+            <div id="jive-announcements-links" class="jive-alert-details font-color-meta">
+                by <a href="/people/paulaklein"
+data-externalId=""
+data-username="paulaklein"
+data-avatarId="1033"
+id="jive-200515604660056502308"
+onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 2005, presence );"
+onmouseout="quickuserprofile.cancelTooltip();"
+class="jiveTT-hover-user jive-username-link"
+>Paula Klein</a>
+                (Apr 22, 2011)
+                        <span>
+
+
+                        </span>
+            </div>
+
+            <div class="jive-body-announcements-confirm" id="jive-body-announcements-expire-1132"
+                 style="display: none;">
+                <p>
+Expiring the announcement will not delete it but will remove it from the public announcement list.&nbsp;&nbsp;Are you sure you want to expire this announcement?                </p>
+
+                <form action="/ann-expire.jspa" name="annform" method="post">
+                    <input type="hidden" name="announcement" value="1132"/>
+                    <input type="submit" name="delete" value="Expire Announcement"/>
+                    <input type="button" name="cancel" value="Cancel"
+                           onclick="$j('#jive-body-announcements-expire-1132').hide();return false;"/>
+                </form>
+            </div>
+
+            <div class="jive-body-announcements-confirm" id="jive-body-announcements-delete-1132"
+                 style="display: none;">
+                <p>
+Are you sure you want to delete this announcement?                </p>
+
+                <form action="/ann-delete.jspa" name="annform" method="post">
+                    <input type="hidden" name="announcement" value="1132"/>
+                    <input type="submit" name="delete" value="Delete Announcement"/>
+                    <input type="button" name="cancel" value="Cancel"
+                           onclick="$j('#jive-body-announcements-delete-1132').hide();return false;"/>
+                </form>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <ul id="jive-alert-counter">
+        <li class="jive-alert-count jive-alert-count-active" id="jive-alert-count-1">
+            <a href="#" onclick="chooseAlert(1); return false;">1</a>
+        </li>
+        <li class="jive-alert-count " id="jive-alert-count-2">
+            <a href="#" onclick="chooseAlert(2); return false;">2</a>
+        </li>
+        <li class="jive-alert-count " id="jive-alert-count-3">
+            <a href="#" onclick="chooseAlert(3); return false;">3</a>
+        </li>
+        <li class="jive-alert-count " id="jive-alert-count-4">
+            <a href="#" onclick="chooseAlert(4); return false;">4</a>
+        </li>
+    </ul>
+
+    <script type="text/javascript">
+        var alertCycle = window.setInterval(cycleAlerts, 15000);
+        var pauseCycle = false;
+        var currentAlert = 1;
+        var alertCount = 4;
+
+        function cycleAlerts() {
+            if (!pauseCycle) {
+                currentAlert++;
+                if (currentAlert > alertCount) {
+                    currentAlert = 1;
+                }
+                showAlert(currentAlert);
+            }
+        }
+
+        function showAlert(index) {
+            $j('.jive-alert-type').hide();
+            $j('#jive-alert-' + index).show();
+            $j('.jive-alert-count').removeClass('jive-alert-count-active');
+            $j('#jive-alert-count-' + index).addClass('jive-alert-count-active');
+            currentAlert = index;
+        }
+
+        function chooseAlert(index) {
+            clearInterval(alertCycle);
+            showAlert(index);
+        }
+
+        function showAlertContent() {
+            clearInterval(alertCycle);
+            $j('.jive-alert-details-show').hide();
+            $j('.jive-alert-details-hide').show();
+            $j('.jive-alert-content').show();
+        }
+
+        function hideAlertContent() {
+            clearInterval(alertCycle);
+            $j('.jive-alert-details-show').show();
+            $j('.jive-alert-details-hide').hide();
+            $j('.jive-alert-content').hide();
+        }
+
+        $j('#jive-alert').mouseover(function(e) {
+            pauseCycle = true;
+        });
+        $j('#jive-alert').mouseout(function(e) {
+            pauseCycle = false;
+        });
+    </script>
+
+
+</div>
+
+
+    </div>
+
+    <div id="jive-widgets-panel-loading" style="display: none">
+        <p class="font-color-meta-light"><img src="/4.5.6/images/jive-image-loading.gif" alt=""/>Loading...</p>
+    </div>
+
+<script src="/gadgets/js/core:rpc?c=1&amp;debug=1"></script>
+<script type="text/javascript">
+    var widgetContainer = new jive.widgets.Container({
+        'widgetType': '1',
+        'renderWidgetAction': '/render-widget!execute.jspa'
+            ,
+            'container': '1',
+            'containerType': '14'
+    });
+    $j(function() {
+        widgetContainer.renderAll();
+    });
+</script>
+<div id="jive-widget-container">
+    <div id="jive-widget-content" class="clearfix">
+<div id="jive-body-layout-sls">
+    <div class="jive-body-layout-s1">
+        <div id="jive-widget-container_1" class="jive-widget-container jive-widget-container-small">
+         <div id="jive-widgetframe_33396"
+     class="jive-widget jive-box jive-widget-htmlcssclasswidget jive-widget-htmltext jive-widget-borderless ">
+    <div id="jive-widgetsize_33396" class="jive-widgetsize-small">
+        <div id="jive-widgetframe-header_33396"
+             class="jive-widget-header jive-box-header   ">
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_33396">
+                    HTML Styled
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_33396" class="jive-widget-body jive-widget-loading jive-box-body"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_33396" class="jive-widget-body jive-box-body">
+
+<div class="content-small"><div id="exclusives"><p><img src="http://twimgs.com/designcentral/caseewebsite/headshots/randy_gaboriault_tiny.jpg" style="float:left; margin: 0 8px 0px 0px;"/></p><h4 style="font-family: Arial, Helvetica, sans-serif;font-size: 9px;color: #cc6600;margin: 0px;padding: 0px;">BUSINESS TECHNOLOGY EXECUTION</h4><p><a href="http://smartenterpriseexchange.com/docs/DOC-1885" style="font-family: Verdana, Helvetica, sans-serif; color: #355491; font-size:12px; text-decoration:none"><strong>Tomorrow’s Healthcare Innovations Today</strong></a><br/> Christiana Care Health System CIO Randall Gaboriault describes ways to drive business transformation with IT. <a href="http://smartenterpriseexchange.com/docs/DOC-1885">Read More »</a></p><br/> <p><img src="http://twimgs.com/designcentral/caseewebsite/headshots/smart_architect_tiny.gif" style="float:left; margin: 0 8px 0px 0px;"/></p><h4 style="font-family: Arial, Helvetica, sans-serif;font-size: 9px;color: #cc6600;margin: 0px;padding: 0px;">SMART ARCHITECT</h4><p><a href="http://smartenterpriseexchange.com/docs/DOC-1884" style="font-family: Verdana, Helvetica, sans-serif; color: #355491; font-size:12px; text-decoration:none"><strong>What Online Gaming Can Teach Us About Enterprise Architecture</strong></a><br/>Get up to speed on guiding the build-out of services and applications for the cloud by leveraging the knowledge of an industry that adopted it early on. <a href="http://smartenterpriseexchange.com/docs/DOC-1884">Read More »</a></p><br/> <p><img src="http://twimgs.com/designcentral/caseewebsite/headshots/adrian_gardner_tiny.jpg" style="float:left; margin: 0 8px 0px 0px;"/></p><h4 style="font-family: Arial, Helvetica, sans-serif;font-size: 9px;color: #cc6600;margin: 0px;padding: 0px;">BUSINESS TECHNOLOGY STRATEGY</h4><p><a href="http://smartenterpriseexchange.com/docs/DOC-1839" style="font-family: Verdana, Helvetica, sans-serif; color: #355491; font-size:12px; text-decoration:none"><strong>IT Gives Business an Agility Boost</strong></a><br/>CIO Adrian Gardner says that agility is key to NASA Goddard's strategic plan, but there’s no single road to business agility. <a href="http://smartenterpriseexchange.com/docs/DOC-1839">Read More »</a></p></div></div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_33397"
+     class="jive-widget jive-box jive-widget-latestpollwidget  ">
+    <div id="jive-widgetsize_33397" class="jive-widgetsize-small">
+        <div id="jive-widgetframe-header_33397"
+             class="jive-widget-header jive-box-header jive-widget-header-refresh  ">
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_33397">
+                    Latest Poll
+                </span>
+            </h4>
+            <span class="jive-widget-refresh" id="jive-widgetframe-refresh_33397"
+                  >
+                <a href="javascript:void(0)" id="jive-widgetframe-refresh-link_33397" 
+                   title="Refresh this widget">Refresh this widget</a>
+            </span>
+            <script type="text/javascript">
+                widgetContainer.refreshLink(33397);
+            </script>
+        </div>
+        <div id="jive-widgetframe-loading_33397" class="jive-widget-body jive-widget-loading jive-box-body"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_33397" class="jive-widget-body jive-box-body">
+
+<div class="content-small">
+<!-- MAIN poll container -->
+<div id="poll-container-de0s71" class="jive-poll-container"></div></div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_33398"
+     class="jive-widget jive-box jive-widget-groupswidget  ">
+    <div id="jive-widgetsize_33398" class="jive-widgetsize-small">
+        <div id="jive-widgetframe-header_33398"
+             class="jive-widget-header jive-box-header jive-widget-header-refresh  ">
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_33398">
+                    Smart Groups
+                </span>
+            </h4>
+            <span class="jive-widget-refresh" id="jive-widgetframe-refresh_33398"
+                  >
+                <a href="javascript:void(0)" id="jive-widgetframe-refresh-link_33398" 
+                   title="Refresh this widget">Refresh this widget</a>
+            </span>
+            <script type="text/javascript">
+                widgetContainer.refreshLink(33398);
+            </script>
+        </div>
+        <div id="jive-widgetframe-loading_33398" class="jive-widget-body jive-widget-loading jive-box-body"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_33398" class="jive-widget-body jive-box-body">
+
+<div class="content-small">
+
+<!-- start small container view -->    
+
+        <ul class="jive-simple-list jive-widget-grouplist">
+            <li class="clearfix jive-widget-sgroup-row-odd">
+
+                 <span class="jive-icon-med jive-icon-group"></span>
+                 <div class="jive-widget-sgroup-activity">
+                    <h4><a href="/groups/cloud">Cloud Computing</a></h4>
+                </div>
+            </li>
+            <li class="clearfix jive-widget-sgroup-row-even">
+
+                 <span class="jive-icon-med jive-icon-group"></span>
+                 <div class="jive-widget-sgroup-activity">
+                    <h4><a href="/groups/brazil-it-leaders">Brazil IT Leaders</a></h4>
+                </div>
+            </li>
+            <li class="clearfix jive-widget-sgroup-row-odd">
+
+                 <span class="jive-icon-med jive-icon-group"></span>
+                 <div class="jive-widget-sgroup-activity">
+                    <h4><a href="/groups/healthcare">Healthcare IT</a></h4>
+                </div>
+            </li>
+            <li class="clearfix jive-widget-sgroup-row-even">
+
+                 <span class="jive-icon-med jive-icon-group"></span>
+                 <div class="jive-widget-sgroup-activity">
+                    <h4><a href="/groups/virtualization">Virtualization</a></h4>
+                </div>
+            </li>
+            <li class="clearfix jive-widget-sgroup-row-odd">
+
+                 <span class="jive-icon-med jive-icon-group"></span>
+                 <div class="jive-widget-sgroup-activity">
+                    <h4><a href="/groups/smart-architect">Smart Architect</a></h4>
+                </div>
+            </li>
+            <li class="clearfix jive-widget-sgroup-row-even">
+
+                 <span class="jive-icon-med jive-icon-group"></span>
+                 <div class="jive-widget-sgroup-activity">
+                    <h4><a href="/groups/outsourcing-wisdom">Outsourcing Wisdom</a></h4>
+                </div>
+            </li>
+            <li class="clearfix jive-widget-sgroup-row-odd">
+
+                 <span class="jive-icon-med jive-icon-group"></span>
+                 <div class="jive-widget-sgroup-activity">
+                    <h4><a href="/groups/mainframe-20">Mainframe 2.0</a></h4>
+                </div>
+            </li>
+            <li class="clearfix jive-widget-sgroup-row-even">
+
+                 <span class="jive-icon-med jive-icon-group"></span>
+                 <div class="jive-widget-sgroup-activity">
+                    <h4><a href="/groups/the-new-role-of-it">The New Role of IT</a></h4>
+                </div>
+            </li>
+            <li class="clearfix jive-widget-sgroup-row-odd">
+
+                 <span class="jive-icon-med jive-icon-group"></span>
+                 <div class="jive-widget-sgroup-activity">
+                    <h4><a href="/groups/test-group">Public-sector CIOs</a></h4>
+                </div>
+            </li>
+            <li class="clearfix jive-widget-sgroup-row-even">
+
+                 <span class="jive-icon-med jive-icon-group"></span>
+                 <div class="jive-widget-sgroup-activity">
+                    <h4><a href="/groups/itil">ITIL</a></h4>
+                </div>
+            </li>
+            <li class="clearfix jive-widget-sgroup-row-odd">
+
+                 <span class="jive-icon-med jive-icon-group"></span>
+                 <div class="jive-widget-sgroup-activity">
+                    <h4><a href="/groups/green-it">Sustainability and Green IT</a></h4>
+                </div>
+            </li>
+            <li class="clearfix jive-widget-sgroup-row-even">
+
+                 <span class="jive-icon-med jive-icon-group"></span>
+                 <div class="jive-widget-sgroup-activity">
+                    <h4><a href="/groups/it-security">IT Security</a></h4>
+                </div>
+            </li>
+            <li class="clearfix jive-widget-sgroup-row-odd">
+
+                 <span class="jive-icon-med jive-icon-group"></span>
+                 <div class="jive-widget-sgroup-activity">
+                    <h4><a href="/groups/web-20-in-the-enterprise">Consumer Driven IT</a></h4>
+                </div>
+            </li>
+            <li class="clearfix jive-widget-sgroup-row-even">
+
+                 <span class="jive-icon-med jive-icon-group"></span>
+                 <div class="jive-widget-sgroup-activity">
+                    <h4><a href="/groups/service-portfolio-management">Service Portfolio Management</a></h4>
+                </div>
+            </li>
+            <li class="clearfix jive-widget-sgroup-row-odd">
+
+                 <span class="jive-icon-med jive-icon-group"></span>
+                 <div class="jive-widget-sgroup-activity">
+                    <h4><a href="/groups/uk-secret">UK &amp; Ireland IT Leaders</a></h4>
+                </div>
+            </li>
+            <li class="clearfix jive-widget-sgroup-row-even">
+
+                 <span class="jive-icon-med jive-icon-group"></span>
+                 <div class="jive-widget-sgroup-activity">
+                    <h4><a href="/groups/it-service-management">IT service management</a></h4>
+                </div>
+            </li>
+            <li class="clearfix jive-widget-sgroup-row-odd">
+
+                 <span class="jive-icon-med jive-icon-group"></span>
+                 <div class="jive-widget-sgroup-activity">
+                    <h4><a href="/groups/metrics">Metrics</a></h4>
+                </div>
+            </li>
+            <li class="clearfix jive-widget-sgroup-row-even">
+
+                 <span class="jive-icon-med jive-icon-group"></span>
+                 <div class="jive-widget-sgroup-activity">
+                    <h4><a href="/groups/financial-services">Financial Services</a></h4>
+                </div>
+            </li>
+            <li class="clearfix jive-widget-sgroup-row-odd">
+
+                 <span class="jive-icon-med jive-icon-group"></span>
+                 <div class="jive-widget-sgroup-activity">
+                    <h4><a href="/groups/cio-circle-east">CIO Exchange -East</a></h4>
+                </div>
+            </li>
+            <li class="clearfix jive-widget-sgroup-row-even">
+
+                 <span class="jive-icon-med jive-icon-group"></span>
+                 <div class="jive-widget-sgroup-activity">
+                    <h4><a href="/groups/london">London</a></h4>
+                </div>
+            </li>
+        </ul>
+
+
+
+
+<!-- end small container view -->
+
+
+
+</div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_33399"
+     class="jive-widget jive-box jive-widget-htmlcssclasswidget widget-htmltext-cssclass ">
+    <div id="jive-widgetsize_33399" class="jive-widgetsize-small">
+        <div id="jive-widgetframe-header_33399"
+             class="jive-widget-header jive-box-header   ">
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_33399">
+                    Member Directory
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_33399" class="jive-widget-body jive-widget-loading jive-box-body"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_33399" class="jive-widget-body jive-box-body">
+
+<div class="content-small"><a href="http://smartenterpriseexchange.com/community/ourmembers"><img border="0" height="100" src="http://i.cmpnet.com/designcentral/caseewebsite/graphics/our_members_graphic.jpg" width="225"/></a></div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_33400"
+     class="jive-widget jive-box jive-widget-htmltextwidget jive-widget-htmltext jive-widget-borderless ">
+    <div id="jive-widgetsize_33400" class="jive-widgetsize-small">
+        <div id="jive-widgetframe-header_33400"
+             class="jive-widget-header jive-box-header   ">
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_33400">
+                    HTML
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_33400" class="jive-widget-body jive-widget-loading jive-box-body"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_33400" class="jive-widget-body jive-box-body">
+
+<div class="content-small"><div class="jive-html-text-widget"><script src="http://widgets.twimg.com/j/2/widget.js" type="text/javascript"></script><script type="text/javascript">
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 6000,
+  width: 223,
+  height: 200,
+  theme: {
+    shell: {
+      background: '#c8e0f8',
+      color: '#333333'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#333333',
+      links: '#6699cc'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: false,
+    live: false,
+    hashtags: true,
+    timestamp: false,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('smartEnterprise').start();
+</script></div></div>
+        </div>
+    </div>
+</div>
+        </div>
+     </div>
+
+     <div class="jive-body-layout-l">
+         <div id="jive-widget-container_2" class="jive-widget-container jive-widget-container-large">
+<div id="jive-widgetframe_33401"
+     class="jive-widget jive-box jive-widget-htmltextwidget jive-widget-htmltext jive-widget-borderless ">
+    <div id="jive-widgetsize_33401" class="jive-widgetsize-large">
+        <div id="jive-widgetframe-header_33401"
+             class="jive-widget-header jive-box-header   ">
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_33401">
+                    HTML
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_33401" class="jive-widget-body jive-widget-loading jive-box-body"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_33401" class="jive-widget-body jive-box-body">
+
+<div class="content-large"><div class="jive-html-text-widget"><a href="http://smartenterpriseexchange.com/join-group!input.jspa?socialGroup=1070"><img border="0" height="70" src="http://i.cmpnet.com/designcentral/caseewebsite/graphics/joingroup.jpg" width="460"/></a></div></div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_33403"
+     class="jive-widget jive-box jive-widget-ubmfeaturedblogpostwidget featblogposthd ">
+    <div id="jive-widgetsize_33403" class="jive-widgetsize-large">
+        <div id="jive-widgetframe-header_33403"
+             class="jive-widget-header jive-box-header jive-widget-header-refresh  ">
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_33403">
+                    .
+                </span>
+            </h4>
+            <span class="jive-widget-refresh" id="jive-widgetframe-refresh_33403"
+                  >
+                <a href="javascript:void(0)" id="jive-widgetframe-refresh-link_33403" 
+                   title="Refresh this widget">Refresh this widget</a>
+            </span>
+            <script type="text/javascript">
+                widgetContainer.refreshLink(33403);
+            </script>
+        </div>
+        <div id="jive-widgetframe-loading_33403" class="jive-widget-body jive-widget-loading jive-box-body"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_33403" class="jive-widget-body jive-box-body">
+
+<div class="content-large">
+    <style type="text/css">
+	    .jive-widget-ubmfeaturedblogpostwidget .featblogpostcontent{
+            background-image:url(http://i.cmpnet.com/designcentral/caseewebsite/graphics/blog_bg.jpg); 
+            height:100% !important;
+            overflow:visible !important;
+        }
+	.jive-table-recentcontent.jive-table .featblogpostcontent tr.jive-table-row-even,
+	.jive-table-recentcontent.jive-table .featblogpostcontent tr.jive-table-row-odd{
+		background: none !important;
+	}
+
+    </style>
+	    <style type="text/css">
+		   .jive-widget-ubmfeaturedblogpostwidget .jive-blog-post-subject-header .featblogpostheadline{
+		    color:#355491;
+font-family:verdana,arial,helvetica,sans-serif;
+font-size:16px;
+font-weight:bold;
+
+		}
+
+	.jive-table-recentcontent.jive-table .featblogpostheadline{
+		color:#355491;
+font-family:verdana,arial,helvetica,sans-serif;
+font-size:16px;
+font-weight:bold;
+
+		height:auto !important;
+		overflow:hidden !important;
+	}
+	    </style>
+
+       
+         <a id="a1503"></a>
+         <div class="jive-blog-post featblogpostcontent " id="entry-1503" style="margin:0 0 2px !important;">
+
+            <!-- BEGIN blog post subject -->
+            <div class="jive-blog-post-subject">
+
+                <div class="jive-author-avatar-container">
+                    <div class="jive-author-avatar">
+
+
+<a href="/people/paulaklein"
+   data-externalId=""
+   data-username="paulaklein"
+   data-avatarId="1033"
+   class="jiveTT-hover-user"
+   onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 2005, presence );"
+   onmouseout="quickuserprofile.cancelTooltip();"
+        >
+    <img
+            class="jive-avatar"
+
+            src="/people/paulaklein/avatar/46.png?a=1033"
+            border="0" height="46" width="46"
+            alt="Paula Klein"
+            /><span username="paulaklein" style="display:none;"></span></a>
+                    </div>
+                </div>
+
+
+                <!-- BEGIN blog post subject header (with avatar) -->
+                <div class="jive-blog-post-subject-header jive-blog-post-subject-header-withavatar">
+
+                    <div>
+                        <div style="display: block; float: left;">
+                        <h2><a class="featblogpostheadline" href="http://smartenterpriseexchange.com/blogs/editorsnotes/2012/01/30/staying-focused-in-2012">Staying Focused in 2012</a> <span>in     <a href="http://smartenterpriseexchange.com/blogs/editorsnotes">Editor's Notes</a>
+</span></h2>
+                        <em>Posted by
+<a href="/people/paulaklein"
+data-externalId=""
+data-username="paulaklein"
+data-avatarId="1033"
+id="jive-200515604660082114308"
+onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 2005, presence );"
+onmouseout="quickuserprofile.cancelTooltip();"
+class="jiveTT-hover-user jive-username-link"
+>Paula Klein</a>                        <span>Jan 30, 2012</span>
+                        </em>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END blog post subject header -->
+
+            </div>
+            <!-- END blog post subject -->
+
+
+            <!-- BEGIN blog post body -->
+            <div class="jive-blog-post-body clearfix">
+                <div class="jive-blog-post-message">
+			            As we dive into the New Year, a myriad of IT trends are unfolding &mdash; from Amazon&rsquo;s success with the Kindle Fire, to Facebook&rsquo;s expected IPO and RIM&rsquo;s ongoing business cha <a href="http://smartenterpriseexchange.com/blogs/editorsnotes/2012/01/30/staying-focused-in-2012"></span>more</a>
+                </div>
+
+                <div class="jive-blog-post-details">
+                    <span class="jive-blog-post-details-item">
+                        248&nbsp;Views</a>
+                    </span>
+
+                        <span class="jive-blog-post-details-item">
+                            <a href="http://smartenterpriseexchange.com/blogs/editorsnotes/2012/01/30/staying-focused-in-2012#comments"><span class="jive-icon-sml jive-icon-comment"></span>0&nbsp;Comments</a>
+                        </span>
+
+
+                    <span class="jive-blog-post-details-item">
+                        <a href="http://smartenterpriseexchange.com/blogs/editorsnotes/2012/01/30/staying-focused-in-2012"><span class="jive-icon-med jive-icon-link"></span>Permalink</a>
+                    </span>
+
+                    <span class="jive-blog-post-details-item"><span class="jive-icon-sml jive-icon-tag"></span>Tags:
+                         <a href="http://smartenterpriseexchange.com/blogs/editorsnotes/tags/national">national</a>,
+                         <a href="http://smartenterpriseexchange.com/blogs/editorsnotes/tags/_retail_federation">_retail_federation</a>,
+                         <a href="http://smartenterpriseexchange.com/blogs/editorsnotes/tags/randy_gaboriault">randy_gaboriault</a>,
+                         <a href="http://smartenterpriseexchange.com/blogs/editorsnotes/tags/christiana_care">christiana_care</a>,
+                         <a href="http://smartenterpriseexchange.com/blogs/editorsnotes/tags/sucharita_mulpuru">sucharita_mulpuru</a>,
+                         <a href="http://smartenterpriseexchange.com/blogs/editorsnotes/tags/mobile">mobile</a>,
+                         <a href="http://smartenterpriseexchange.com/blogs/editorsnotes/tags/mobility">mobility</a>,
+                         <a href="http://smartenterpriseexchange.com/blogs/editorsnotes/tags/mobile_devices">mobile_devices</a>,
+                         <a href="http://smartenterpriseexchange.com/blogs/editorsnotes/tags/social_media">social_media</a>,
+                         <a href="http://smartenterpriseexchange.com/blogs/editorsnotes/tags/retail">retail</a>,
+                         <a href="http://smartenterpriseexchange.com/blogs/editorsnotes/tags/larry_bonfante">larry_bonfante</a>,
+                         <a href="http://smartenterpriseexchange.com/blogs/editorsnotes/tags/healthcare">healthcare</a>,
+                         <a href="http://smartenterpriseexchange.com/blogs/editorsnotes/tags/harris_mustafa">harris_mustafa</a>
+                    </span>
+
+                </div>
+            </div>
+            <!-- END blog post body -->
+
+        </div>
+         <a id="a1502"></a>
+         <div class="jive-blog-post featblogpostcontent jive-blog-post-alt" id="entry-1502" style="margin:0 0 2px !important;">
+
+            <!-- BEGIN blog post subject -->
+            <div class="jive-blog-post-subject">
+
+                <div class="jive-author-avatar-container">
+                    <div class="jive-author-avatar">
+
+
+<a href="/people/richgraves"
+   data-externalId=""
+   data-username="richgraves"
+   data-avatarId="1202"
+   class="jiveTT-hover-user"
+   onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 7359, presence );"
+   onmouseout="quickuserprofile.cancelTooltip();"
+        >
+    <img
+            class="jive-avatar"
+
+            src="/people/richgraves/avatar/46.png?a=1202"
+            border="0" height="46" width="46"
+            alt="Rich Graves"
+            /><span username="richgraves" style="display:none;"></span></a>
+                    </div>
+                </div>
+
+
+                <!-- BEGIN blog post subject header (with avatar) -->
+                <div class="jive-blog-post-subject-header jive-blog-post-subject-header-withavatar">
+
+                    <div>
+                        <div style="display: block; float: left;">
+                        <h2><a class="featblogpostheadline" href="http://smartenterpriseexchange.com/community/strategy/blog/2012/01/26/the-future-of-textbooks-will-define-our-future-workforce">The Future of Textbooks Will Define Our Future Workforce</a> <span>in 
+        <span>
+            <a href="/community/strategy">Business Technology Strategy</a>
+        </span>
+</span></h2>
+                        <em>Posted by
+<a href="/people/richgraves"
+data-externalId=""
+data-username="richgraves"
+data-avatarId="1202"
+id="jive-735915604660086616308"
+onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 7359, presence );"
+onmouseout="quickuserprofile.cancelTooltip();"
+class="jiveTT-hover-user jive-username-link"
+>Rich Graves</a>                        <span>Jan 26, 2012</span>
+                        </em>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END blog post subject header -->
+
+            </div>
+            <!-- END blog post subject -->
+
+
+            <!-- BEGIN blog post body -->
+            <div class="jive-blog-post-body clearfix">
+                <div class="jive-blog-post-message">
+			            Last week with their usual fanfare and fantastic marketing, Apple made a small but absolutely world changing announcement. They announced their new Education focused iBooks release and digitial <a href="http://smartenterpriseexchange.com/community/strategy/blog/2012/01/26/the-future-of-textbooks-will-define-our-future-workforce"></span>more</a>
+                </div>
+
+                <div class="jive-blog-post-details">
+                    <span class="jive-blog-post-details-item">
+                        122&nbsp;Views</a>
+                    </span>
+
+                        <span class="jive-blog-post-details-item">
+                            <a href="http://smartenterpriseexchange.com/community/strategy/blog/2012/01/26/the-future-of-textbooks-will-define-our-future-workforce#comments"><span class="jive-icon-sml jive-icon-comment"></span>0&nbsp;Comments</a>
+                        </span>
+
+
+                    <span class="jive-blog-post-details-item">
+                        <a href="http://smartenterpriseexchange.com/community/strategy/blog/2012/01/26/the-future-of-textbooks-will-define-our-future-workforce"><span class="jive-icon-med jive-icon-link"></span>Permalink</a>
+                    </span>
+
+                    <span class="jive-blog-post-details-item"><span class="jive-icon-sml jive-icon-tag"></span>Tags:
+                         <a href="http://smartenterpriseexchange.com/community/strategy/blog/tags/ibooks">ibooks</a>,
+                         <a href="http://smartenterpriseexchange.com/community/strategy/blog/tags/agility">agility</a>,
+                         <a href="http://smartenterpriseexchange.com/community/strategy/blog/tags/cio">cio</a>,
+                         <a href="http://smartenterpriseexchange.com/community/strategy/blog/tags/innovation">innovation</a>,
+                         <a href="http://smartenterpriseexchange.com/community/strategy/blog/tags/leadership">leadership</a>,
+                         <a href="http://smartenterpriseexchange.com/community/strategy/blog/tags/social_media">social_media</a>,
+                         <a href="http://smartenterpriseexchange.com/community/strategy/blog/tags/education">education</a>,
+                         <a href="http://smartenterpriseexchange.com/community/strategy/blog/tags/apple">apple</a>
+                    </span>
+
+                </div>
+            </div>
+            <!-- END blog post body -->
+
+        </div>
+         <a id="a1497"></a>
+         <div class="jive-blog-post featblogpostcontent " id="entry-1497" style="margin:0 0 2px !important;">
+
+            <!-- BEGIN blog post subject -->
+            <div class="jive-blog-post-subject">
+
+                <div class="jive-author-avatar-container">
+                    <div class="jive-author-avatar">
+
+
+<a href="/people/LarryLange"
+   data-externalId=""
+   data-username="LarryLange"
+   data-avatarId="1205"
+   class="jiveTT-hover-user"
+   onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 6825, presence );"
+   onmouseout="quickuserprofile.cancelTooltip();"
+        >
+    <img
+            class="jive-avatar"
+
+            src="/people/LarryLange/avatar/46.png?a=1205"
+            border="0" height="46" width="46"
+            alt="Larry Lange"
+            /><span username="LarryLange" style="display:none;"></span></a>
+                    </div>
+                </div>
+
+
+                <!-- BEGIN blog post subject header (with avatar) -->
+                <div class="jive-blog-post-subject-header jive-blog-post-subject-header-withavatar">
+
+                    <div>
+                        <div style="display: block; float: left;">
+                        <h2><a class="featblogpostheadline" href="http://smartenterpriseexchange.com/groups/it-security/blog/2012/01/19/security-as-a-service-hope-or-hype">Security as a Service: Hope or Hype?</a> <span>in 
+        <span>
+            <a href="/groups/it-security">IT Security</a>
+        </span>
+</span></h2>
+                        <em>Posted by
+<a href="/people/LarryLange"
+data-externalId=""
+data-username="LarryLange"
+data-avatarId="1205"
+id="jive-682515604660090260308"
+onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 6825, presence );"
+onmouseout="quickuserprofile.cancelTooltip();"
+class="jiveTT-hover-user jive-username-link"
+>Larry Lange</a>                        <span>Jan 19, 2012</span>
+                        </em>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END blog post subject header -->
+
+            </div>
+            <!-- END blog post subject -->
+
+
+            <!-- BEGIN blog post body -->
+            <div class="jive-blog-post-body clearfix">
+                <div class="jive-blog-post-message">
+			            Numerous start-up cloud vendors are busy hyping their "Security-as-a-Service" wares, with requisite promises of turnkey "Security in a Box" and the like. But enterprise CIOs have tough question <a href="http://smartenterpriseexchange.com/groups/it-security/blog/2012/01/19/security-as-a-service-hope-or-hype"></span>more</a>
+                </div>
+
+                <div class="jive-blog-post-details">
+                    <span class="jive-blog-post-details-item">
+                        336&nbsp;Views</a>
+                    </span>
+
+                        <span class="jive-blog-post-details-item">
+                            <a href="http://smartenterpriseexchange.com/groups/it-security/blog/2012/01/19/security-as-a-service-hope-or-hype#comments"><span class="jive-icon-sml jive-icon-comment"></span>0&nbsp;Comments</a>
+                        </span>
+
+
+                    <span class="jive-blog-post-details-item">
+                        <a href="http://smartenterpriseexchange.com/groups/it-security/blog/2012/01/19/security-as-a-service-hope-or-hype"><span class="jive-icon-med jive-icon-link"></span>Permalink</a>
+                    </span>
+
+                    <span class="jive-blog-post-details-item"><span class="jive-icon-sml jive-icon-tag"></span>Tags:
+                         <a href="http://smartenterpriseexchange.com/groups/it-security/blog/tags/matthew_clark">matthew_clark</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/it-security/blog/tags/security-in-a-box">security-in-a-box</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/it-security/blog/tags/larry_lange">larry_lange</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/it-security/blog/tags/lina_liberti">lina_liberti</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/it-security/blog/tags/iam">iam</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/it-security/blog/tags/cloud">cloud</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/it-security/blog/tags/security">security</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/it-security/blog/tags/peter_hinssen">peter_hinssen</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/it-security/blog/tags/cloud_services">cloud_services</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/it-security/blog/tags/services">services</a>
+                    </span>
+
+                </div>
+            </div>
+            <!-- END blog post body -->
+
+        </div>
+         <a id="a1493"></a>
+         <div class="jive-blog-post featblogpostcontent jive-blog-post-alt" id="entry-1493" style="margin:0 0 2px !important;">
+
+            <!-- BEGIN blog post subject -->
+            <div class="jive-blog-post-subject">
+
+                <div class="jive-author-avatar-container">
+                    <div class="jive-author-avatar">
+
+
+<a href="/people/jenz514"
+   data-externalId=""
+   data-username="jenz514"
+   data-avatarId="1063"
+   class="jiveTT-hover-user"
+   onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 5544, presence );"
+   onmouseout="quickuserprofile.cancelTooltip();"
+        >
+    <img
+            class="jive-avatar"
+
+            src="/people/jenz514/avatar/46.png?a=1063"
+            border="0" height="46" width="46"
+            alt="Jennifer Zaino"
+            /><span username="jenz514" style="display:none;"></span></a>
+                    </div>
+                </div>
+
+
+                <!-- BEGIN blog post subject header (with avatar) -->
+                <div class="jive-blog-post-subject-header jive-blog-post-subject-header-withavatar">
+
+                    <div>
+                        <div style="display: block; float: left;">
+                        <h2><a class="featblogpostheadline" href="http://smartenterpriseexchange.com/groups/smart-architect/blog/2012/01/24/take-storage-into-consideration">How to Exploit Storage Architecture</a> <span>in 
+        <span>
+            <a href="/groups/smart-architect">Smart Architect</a>
+        </span>
+</span></h2>
+                        <em>Posted by
+<a href="/people/jenz514"
+data-externalId=""
+data-username="jenz514"
+data-avatarId="1063"
+id="jive-554415604660094286308"
+onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 5544, presence );"
+onmouseout="quickuserprofile.cancelTooltip();"
+class="jiveTT-hover-user jive-username-link"
+>Jennifer Zaino</a>                        <span>Jan 24, 2012</span>
+                        </em>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END blog post subject header -->
+
+            </div>
+            <!-- END blog post subject -->
+
+
+            <!-- BEGIN blog post body -->
+            <div class="jive-blog-post-body clearfix">
+                <div class="jive-blog-post-message">
+			            Storage is critical enterprise infrastructure, and how best to protect these environments to ensure the safety and recovery of the data that resides there is pretty darn important. But is this  <a href="http://smartenterpriseexchange.com/groups/smart-architect/blog/2012/01/24/take-storage-into-consideration"></span>more</a>
+                </div>
+
+                <div class="jive-blog-post-details">
+                    <span class="jive-blog-post-details-item">
+                        316&nbsp;Views</a>
+                    </span>
+
+                        <span class="jive-blog-post-details-item">
+                            <a href="http://smartenterpriseexchange.com/groups/smart-architect/blog/2012/01/24/take-storage-into-consideration#comments"><span class="jive-icon-sml jive-icon-comment"></span>0&nbsp;Comments</a>
+                        </span>
+
+
+                    <span class="jive-blog-post-details-item">
+                        <a href="http://smartenterpriseexchange.com/groups/smart-architect/blog/2012/01/24/take-storage-into-consideration"><span class="jive-icon-med jive-icon-link"></span>Permalink</a>
+                    </span>
+
+                    <span class="jive-blog-post-details-item"><span class="jive-icon-sml jive-icon-tag"></span>Tags:
+                         <a href="http://smartenterpriseexchange.com/groups/smart-architect/blog/tags/theinfopro">theinfopro</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/smart-architect/blog/tags/451_research">451_research</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/smart-architect/blog/tags/david_liff">david_liff</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/smart-architect/blog/tags/recovery_point_objective">recovery_point_objective</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/smart-architect/blog/tags/recovery_time_objective">recovery_time_objective</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/smart-architect/blog/tags/server">server</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/smart-architect/blog/tags/enterprise_architect">enterprise_architect</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/smart-architect/blog/tags/enterprise_architecture">enterprise_architecture</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/smart-architect/blog/tags/smart_architect">smart_architect</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/smart-architect/blog/tags/storage">storage</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/smart-architect/blog/tags/ca">ca</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/smart-architect/blog/tags/technologies">technologies</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/smart-architect/blog/tags/business_process">business_process</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/smart-architect/blog/tags/virtualization">virtualization</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/smart-architect/blog/tags/data">data</a>,
+                         <a href="http://smartenterpriseexchange.com/groups/smart-architect/blog/tags/protection">protection</a>
+                    </span>
+
+                </div>
+            </div>
+            <!-- END blog post body -->
+
+        </div>
+
+
+
+
+
+<style> .featblogposthd h4 {background-image:url(http://i.cmpnet.com/designcentral/caseewebsite/graphics/blog_hd.jpg); 
+color:white !important;
+font-family:arial,helvetica,sans-serif;
+font-size:8px;} .jive-widget-header-refresh {padding-right:0px !important;}</style></div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_33404"
+     class="jive-widget jive-box jive-widget-recentcontentwidget  ">
+    <div id="jive-widgetsize_33404" class="jive-widgetsize-large">
+        <div id="jive-widgetframe-header_33404"
+             class="jive-widget-header jive-box-header jive-widget-header-refresh  ">
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_33404">
+                    Recent Content
+                </span>
+            </h4>
+            <span class="jive-widget-refresh" id="jive-widgetframe-refresh_33404"
+                  >
+                <a href="javascript:void(0)" id="jive-widgetframe-refresh-link_33404" 
+                   title="Refresh this widget">Refresh this widget</a>
+            </span>
+            <script type="text/javascript">
+                widgetContainer.refreshLink(33404);
+            </script>
+        </div>
+        <div id="jive-widgetframe-loading_33404" class="jive-widget-body jive-widget-loading jive-box-body"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_33404" class="jive-widget-body jive-box-body">
+
+<div class="content-large">
+
+
+<div class="widget-container" id="widget-33404">
+<form class="status-morecontent-form" action="/recent-updates!moreContentResults.jspa">
+    <input type="hidden" name="containerID" value="1"/>
+    <input type="hidden" name="containerType" value="14"/>
+    <input type="hidden" name="recursive" value="false"/>
+    <input type="hidden" name="visibleTypes" value="102-1-18-38"/>
+    <input type="hidden" name="filterEnabled" value="true"/>
+    <input type="hidden" name="start"  value="10"/>
+    <input type="hidden" name="numResults" value="10"/>
+    <input type="hidden" name="containerSize" value="LARGE"/>
+    <input type="hidden" name="root" value="true"/>
+    <input type="hidden" name="zeroItem" value="1885-102"/>
+    <input type="hidden" name="showProjectContent" value="false"/>
+</form>
+
+<div class="jive-table jive-table-widget jive-table-recentcontent">
+    <table cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+    <tr class="jive-table-row-odd">
+        <td class="jive-table-cell-type">
+            <a href="/docs/DOC-1885">
+                <img class="jive-icon-med jive-icon-document" alt=""
+                     src="/4.5.6/images/transparent.png"/>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="/docs/DOC-1885">
+                Making Tomorrow&rsquo;s Healthcare Innovations Today&rsquo;s Reality
+            </a>
+                        <span>
+                        <strong>
+                            4 days ago
+                        </strong>
+                                        in <a href="/community/execution">Business Technology Execution</a>
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+                        <span>by
+                            <a href="/people/jenz514"
+data-externalId=""
+data-username="jenz514"
+data-avatarId="1063"
+id="jive-554415604660115071308"
+onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 5544, presence );"
+onmouseout="quickuserprofile.cancelTooltip();"
+class="jiveTT-hover-user jive-username-link"
+>Jennifer Zaino</a></span>
+        </td>
+        <td class="jive-table-cell-avatar">
+            <span>
+
+<a href="/people/jenz514"
+   data-externalId=""
+   data-username="jenz514"
+   data-avatarId="1063"
+   class="jiveTT-hover-user"
+   onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 5544, presence );"
+   onmouseout="quickuserprofile.cancelTooltip();"
+        >
+    <img
+            class="jive-avatar"
+
+            src="/people/jenz514/avatar/22.png?a=1063"
+            border="0" height="22" width="22"
+            alt="Jennifer Zaino"
+            /><span username="jenz514" style="display:none;"></span></a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-even">
+        <td class="jive-table-cell-type">
+            <a href="/blogs/editorsnotes/2012/01/30/staying-focused-in-2012">
+                <img class="jive-icon-med jive-icon-blog" alt=""
+                     src="/4.5.6/images/transparent.png"/>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="/blogs/editorsnotes/2012/01/30/staying-focused-in-2012">
+                Staying Focused in 2012
+            </a>
+                        <span>
+                        <strong>
+                            6 days ago
+                        </strong>
+                               <span>in     <a href="http://smartenterpriseexchange.com/blogs/editorsnotes">Editor's Notes</a>
+</span>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+                        <span>by
+                            <a href="/people/paulaklein"
+data-externalId=""
+data-username="paulaklein"
+data-avatarId="1033"
+id="jive-200515604660116435308"
+onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 2005, presence );"
+onmouseout="quickuserprofile.cancelTooltip();"
+class="jiveTT-hover-user jive-username-link"
+>Paula Klein</a></span>
+        </td>
+        <td class="jive-table-cell-avatar">
+            <span>
+
+<a href="/people/paulaklein"
+   data-externalId=""
+   data-username="paulaklein"
+   data-avatarId="1033"
+   class="jiveTT-hover-user"
+   onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 2005, presence );"
+   onmouseout="quickuserprofile.cancelTooltip();"
+        >
+    <img
+            class="jive-avatar"
+
+            src="/people/paulaklein/avatar/22.png?a=1033"
+            border="0" height="22" width="22"
+            alt="Paula Klein"
+            /><span username="paulaklein" style="display:none;"></span></a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-odd">
+        <td class="jive-table-cell-type">
+            <a href="/docs/DOC-1884">
+                <img class="jive-icon-med jive-icon-document" alt=""
+                     src="/4.5.6/images/transparent.png"/>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="/docs/DOC-1884">
+                The Play&rsquo;s the Thing: What Online Gaming Can Teach Us about Enterprise Architecture
+            </a>
+                        <span>
+                        <strong>
+                            6 days ago
+                        </strong>
+                                        in <a href="/groups/smart-architect"> Smart Architect</a>
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+                        <span>by
+                            <a href="/people/ericjbruno"
+data-externalId=""
+data-username="ericjbruno"
+data-avatarId="1061"
+id="jive-647215604660117564308"
+onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 6472, presence );"
+onmouseout="quickuserprofile.cancelTooltip();"
+class="jiveTT-hover-user jive-username-link"
+>Eric Bruno</a></span>
+        </td>
+        <td class="jive-table-cell-avatar">
+            <span>
+
+<a href="/people/ericjbruno"
+   data-externalId=""
+   data-username="ericjbruno"
+   data-avatarId="1061"
+   class="jiveTT-hover-user"
+   onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 6472, presence );"
+   onmouseout="quickuserprofile.cancelTooltip();"
+        >
+    <img
+            class="jive-avatar"
+
+            src="/people/ericjbruno/avatar/22.png?a=1061"
+            border="0" height="22" width="22"
+            alt="Eric Bruno"
+            /><span username="ericjbruno" style="display:none;"></span></a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-even">
+        <td class="jive-table-cell-type">
+            <a href="/community/strategy/blog/2012/01/26/the-future-of-textbooks-will-define-our-future-workforce">
+                <img class="jive-icon-med jive-icon-blog" alt=""
+                     src="/4.5.6/images/transparent.png"/>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="/community/strategy/blog/2012/01/26/the-future-of-textbooks-will-define-our-future-workforce">
+                The Future of Textbooks Will Define Our Future Workforce
+            </a>
+                        <span>
+                        <strong>
+                            1 week ago
+                        </strong>
+                               <span>in 
+        <span>
+            <a href="/community/strategy">Business Technology Strategy</a>
+        </span>
+</span>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+                        <span>by
+                            <a href="/people/richgraves"
+data-externalId=""
+data-username="richgraves"
+data-avatarId="1202"
+id="jive-735915604660118954308"
+onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 7359, presence );"
+onmouseout="quickuserprofile.cancelTooltip();"
+class="jiveTT-hover-user jive-username-link"
+>Rich Graves</a></span>
+        </td>
+        <td class="jive-table-cell-avatar">
+            <span>
+
+<a href="/people/richgraves"
+   data-externalId=""
+   data-username="richgraves"
+   data-avatarId="1202"
+   class="jiveTT-hover-user"
+   onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 7359, presence );"
+   onmouseout="quickuserprofile.cancelTooltip();"
+        >
+    <img
+            class="jive-avatar"
+
+            src="/people/richgraves/avatar/22.png?a=1202"
+            border="0" height="22" width="22"
+            alt="Rich Graves"
+            /><span username="richgraves" style="display:none;"></span></a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-odd">
+        <td class="jive-table-cell-type">
+            <a href="/community/development/blog/2012/01/26/should-every-executive-have-a-coach">
+                <img class="jive-icon-med jive-icon-blog" alt=""
+                     src="/4.5.6/images/transparent.png"/>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="/community/development/blog/2012/01/26/should-every-executive-have-a-coach">
+                Should Every Executive Have a Coach?
+            </a>
+                        <span>
+                        <strong>
+                            1 week ago
+                        </strong>
+                               <span>in 
+        <span>
+            <a href="/community/development">Professional Development</a>
+        </span>
+</span>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+                        <span>by
+                            <a href="/people/dinalichtman"
+data-externalId=""
+data-username="dinalichtman"
+data-avatarId="1069"
+id="jive-596315604660120338308"
+onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 5963, presence );"
+onmouseout="quickuserprofile.cancelTooltip();"
+class="jiveTT-hover-user jive-username-link"
+>Dina Lichtman</a></span>
+        </td>
+        <td class="jive-table-cell-avatar">
+            <span>
+
+<a href="/people/dinalichtman"
+   data-externalId=""
+   data-username="dinalichtman"
+   data-avatarId="1069"
+   class="jiveTT-hover-user"
+   onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 5963, presence );"
+   onmouseout="quickuserprofile.cancelTooltip();"
+        >
+    <img
+            class="jive-avatar"
+
+            src="/people/dinalichtman/avatar/22.png?a=1069"
+            border="0" height="22" width="22"
+            alt="Dina Lichtman"
+            /><span username="dinalichtman" style="display:none;"></span></a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-even">
+        <td class="jive-table-cell-type">
+            <a href="/message/1711#1711">
+                <img class="jive-icon-med jive-icon-discussion" alt=""
+                     src="/4.5.6/images/transparent.png"/>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="/message/1711#1711">
+                How Does Mentorship Fit Into Your EA Role?
+            </a>
+                        <span>
+                        <strong>
+                            1 week ago
+                        </strong>
+                                        in <a href="/groups/smart-architect"> Smart Architect</a>
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+                        <span>by
+                            <a href="/people/jenz514"
+data-externalId=""
+data-username="jenz514"
+data-avatarId="1063"
+id="jive-554415604660121444308"
+onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 5544, presence );"
+onmouseout="quickuserprofile.cancelTooltip();"
+class="jiveTT-hover-user jive-username-link"
+>Jennifer Zaino</a></span>
+        </td>
+        <td class="jive-table-cell-avatar">
+            <span>
+
+<a href="/people/jenz514"
+   data-externalId=""
+   data-username="jenz514"
+   data-avatarId="1063"
+   class="jiveTT-hover-user"
+   onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 5544, presence );"
+   onmouseout="quickuserprofile.cancelTooltip();"
+        >
+    <img
+            class="jive-avatar"
+
+            src="/people/jenz514/avatar/22.png?a=1063"
+            border="0" height="22" width="22"
+            alt="Jennifer Zaino"
+            /><span username="jenz514" style="display:none;"></span></a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-odd">
+        <td class="jive-table-cell-type">
+            <a href="/message/1728#1728">
+                <img class="jive-icon-med jive-icon-discussion-question" alt=""
+                     src="/4.5.6/images/transparent.png"/>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="/message/1728#1728">
+                Is IT acceptance uneven at your healthcare organization?
+            </a>
+                        <span>
+                        <strong>
+                            1 week ago
+                        </strong>
+                                        in <a href="/groups/healthcare"> Healthcare IT</a>
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+                        <span>by
+                            <a href="/people/paulaklein"
+data-externalId=""
+data-username="paulaklein"
+data-avatarId="1033"
+id="jive-200515604660122582308"
+onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 2005, presence );"
+onmouseout="quickuserprofile.cancelTooltip();"
+class="jiveTT-hover-user jive-username-link"
+>Paula Klein</a></span>
+        </td>
+        <td class="jive-table-cell-avatar">
+            <span>
+
+<a href="/people/paulaklein"
+   data-externalId=""
+   data-username="paulaklein"
+   data-avatarId="1033"
+   class="jiveTT-hover-user"
+   onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 2005, presence );"
+   onmouseout="quickuserprofile.cancelTooltip();"
+        >
+    <img
+            class="jive-avatar"
+
+            src="/people/paulaklein/avatar/22.png?a=1033"
+            border="0" height="22" width="22"
+            alt="Paula Klein"
+            /><span username="paulaklein" style="display:none;"></span></a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-even">
+        <td class="jive-table-cell-type">
+            <a href="/groups/smart-architect/blog/2012/01/24/take-storage-into-consideration">
+                <img class="jive-icon-med jive-icon-blog" alt=""
+                     src="/4.5.6/images/transparent.png"/>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="/groups/smart-architect/blog/2012/01/24/take-storage-into-consideration">
+                How to Exploit Storage Architecture
+            </a>
+                        <span>
+                        <strong>
+                            1 week ago
+                        </strong>
+                               <span>in 
+        <span>
+            <a href="/groups/smart-architect">Smart Architect</a>
+        </span>
+</span>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+                        <span>by
+                            <a href="/people/jenz514"
+data-externalId=""
+data-username="jenz514"
+data-avatarId="1063"
+id="jive-554415604660123978308"
+onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 5544, presence );"
+onmouseout="quickuserprofile.cancelTooltip();"
+class="jiveTT-hover-user jive-username-link"
+>Jennifer Zaino</a></span>
+        </td>
+        <td class="jive-table-cell-avatar">
+            <span>
+
+<a href="/people/jenz514"
+   data-externalId=""
+   data-username="jenz514"
+   data-avatarId="1063"
+   class="jiveTT-hover-user"
+   onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 5544, presence );"
+   onmouseout="quickuserprofile.cancelTooltip();"
+        >
+    <img
+            class="jive-avatar"
+
+            src="/people/jenz514/avatar/22.png?a=1063"
+            border="0" height="22" width="22"
+            alt="Jennifer Zaino"
+            /><span username="jenz514" style="display:none;"></span></a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-odd">
+        <td class="jive-table-cell-type">
+            <a href="/docs/DOC-1090">
+                <img class="jive-icon-med jive-icon-document" alt=""
+                     src="/4.5.6/images/transparent.png"/>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="/docs/DOC-1090">
+                Innovation Leadership, download the slides
+            </a>
+                        <span>
+                        <strong>
+                            1 week ago
+                        </strong>
+                                        in <a href="/groups/healthcare"> Healthcare IT</a>
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+                        <span>by
+                            <a href="/people/geoffreybrown"
+data-externalId=""
+data-username="geoffreybrown"
+data-avatarId="-1"
+id="jive-201615604660125005308"
+onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 2016, presence );"
+onmouseout="quickuserprofile.cancelTooltip();"
+class="jiveTT-hover-user jive-username-link"
+>geoffreybrown</a></span>
+        </td>
+        <td class="jive-table-cell-avatar">
+            <span>
+
+<a href="/people/geoffreybrown"
+   data-externalId=""
+   data-username="geoffreybrown"
+   data-avatarId="-1"
+   class="jiveTT-hover-user"
+   onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 2016, presence );"
+   onmouseout="quickuserprofile.cancelTooltip();"
+        >
+    <img
+            class="jive-avatar"
+
+            src="/people/geoffreybrown/avatar/22.png?a=-1"
+            border="0" height="22" width="22"
+            alt="geoffreybrown"
+            /><span username="geoffreybrown" style="display:none;"></span></a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-even">
+        <td class="jive-table-cell-type">
+            <a href="/docs/DOC-1405">
+                <img class="jive-icon-med jive-icon-document" alt=""
+                     src="/4.5.6/images/transparent.png"/>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="/docs/DOC-1405">
+                Electronic Medical Records Spur Demand for New IT Skills
+            </a>
+                        <span>
+                        <strong>
+                            1 week ago
+                        </strong>
+                                        in <a href="/groups/healthcare"> Healthcare IT</a>
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+                        <span>by
+                            <a href="/people/dbartholomew"
+data-externalId=""
+data-username="dbartholomew"
+data-avatarId="-1"
+id="jive-673915604660126023308"
+onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 6739, presence );"
+onmouseout="quickuserprofile.cancelTooltip();"
+class="jiveTT-hover-user jive-username-link"
+>Douglas Bartholomew</a></span>
+        </td>
+        <td class="jive-table-cell-avatar">
+            <span>
+
+<a href="/people/dbartholomew"
+   data-externalId=""
+   data-username="dbartholomew"
+   data-avatarId="-1"
+   class="jiveTT-hover-user"
+   onmouseover="var presence = null; quickuserprofile.getUserProfileTooltip( 6739, presence );"
+   onmouseout="quickuserprofile.cancelTooltip();"
+        >
+    <img
+            class="jive-avatar"
+
+            src="/people/dbartholomew/avatar/22.png?a=-1"
+            border="0" height="22" width="22"
+            alt="Douglas Bartholomew"
+            /><span username="dbartholomew" style="display:none;"></span></a>
+</span>
+        </td>
+    </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="more-status-content">
+    <span class="jive-whats-new-more">
+            <a href="#" class="jive-icon-link-forward-content jive-more-content">More</a>
+    </span>
+</div>
+    <div class="jive-box-footer">
+        <span class="jive-whats-new-more">
+                <a href="/community/feeds/allcontent?community=1&amp;showProjectContent=false" class="statusrss">
+                    <span class="jive-icon-med jive-icon-rss"></span>
+                </a>
+        </span>
+     </div>          
+</div>
+</div>
+        </div>
+    </div>
+</div>
+         </div>
+     </div>
+
+     <div class="jive-body-layout-s2">
+         <div id="jive-widget-container_3" class="jive-widget-container jive-widget-container-small">
+<div id="jive-widgetframe_33405"
+     class="jive-widget jive-box jive-widget-htmlcssclasswidget jive-widget-htmltext jive-widget-borderless ">
+    <div id="jive-widgetsize_33405" class="jive-widgetsize-small">
+        <div id="jive-widgetframe-header_33405"
+             class="jive-widget-header jive-box-header   ">
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_33405">
+                    Latest Videos
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_33405" class="jive-widget-body jive-widget-loading jive-box-body"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_33405" class="jive-widget-body jive-box-body">
+
+<div class="content-small"><p><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,47,0" height="312" id="flashObj" width="223"><param name="movie" value="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&amp;isUI=1"/><param name="bgcolor" value="#FFFFFF"/><param name="flashVars" value="playerID=969475885001&amp;playerKey=AQ~~,AAAAAF14eAc~,GZC-YoxXneh5GP99rRdKJIUyrvOZz7AL&amp;domain=embed&amp;dynamicStreaming=true"/><param name="base" value="http://admin.brightcove.com"/><param name="seamlesstabbing" value="false"/><param name="allowFullScreen" value="true"/><param name="swLiveConnect" value="true"/><param name="allowScriptAccess" value="always"/><embed allowfullscreen="true" allowscriptaccess="always" base="http://admin.brightcove.com" bgcolor="#FFFFFF" flashvars="playerID=969475885001&amp;playerKey=AQ~~,AAAAAF14eAc~,GZC-YoxXneh5GP99rRdKJIUyrvOZz7AL&amp;domain=embed&amp;dynamicStreaming=true" height="312" name="flashObj" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" seamlesstabbing="false" src="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&amp;isUI=1" swliveconnect="true" type="application/x-shockwave-flash" width="223"></embed></object></p><br/> <p style="margin-left: 8px; margin-bottom: 0px; margin-right: 8px; margin-top: 0px;"><a href="http://smartenterpriseexchange.com/docs/DOC-1773" style="font-family: Verdana, Helvetica, sans-serif; color: #355491; font-size:11px;  text-decoration:none"><strong>The Era of Now, A Special Video Presentation by Peter Hinssen »</strong></a><br/><br/></p></div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_33406"
+     class="jive-widget jive-box jive-widget-htmlcssclasswidget jive-widget-htmltext jive-widget-borderless ">
+    <div id="jive-widgetsize_33406" class="jive-widgetsize-small">
+        <div id="jive-widgetframe-header_33406"
+             class="jive-widget-header jive-box-header   ">
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_33406">
+                    Carousel
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_33406" class="jive-widget-body jive-widget-loading jive-box-body"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_33406" class="jive-widget-body jive-box-body">
+
+<div class="content-small"><iframe frameborder="0" height="211" scrolling="no" src="http://i.cmpnet.com/designcentral/caseewebsite/graphics/flash_carousel/banner.html" width="100%">
+</iframe></div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_33407"
+     class="jive-widget jive-box jive-widget-htmlcssclasswidget jive-widget-htmltext jive-widget-borderless ">
+    <div id="jive-widgetsize_33407" class="jive-widgetsize-small">
+        <div id="jive-widgetframe-header_33407"
+             class="jive-widget-header jive-box-header   ">
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_33407">
+                    HTML Styled
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_33407" class="jive-widget-body jive-widget-loading jive-box-body"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_33407" class="jive-widget-body jive-box-body">
+
+<div class="content-small"><div id="tracks"><h1 style="font-family: Arial, Helvetica, sans-serif;font-size: 10px;color: #cc6600;margin: 0px;padding: 0px 0px 0px 0px;">FEATURED BLOGS</h1><a href="http://smartenterpriseexchange.com/community/development/blog/2011/09/09/how-to-lead-by-giving-up-control" style="font-family: Verdana, Helvetica, sans-serif; color: #355491; font-size:12px; text-decoration:none"><strong>Charlene Li on 'How to Lead By Giving Up Control'</strong></a><br/><br/> <h1 style="font-family: Arial, Helvetica, sans-serif;font-size: 10px;color: #cc6600;margin: 0px;padding: 0px 0px 0px 0px;">CONSUMER DRIVEN IT</h1><a href="http://smartenterpriseexchange.com/groups/web-20-in-the-enterprise/blog/2011/09/12/tablet-takeover-how-is-it-responding" style="font-family: Verdana, Helvetica, sans-serif; color: #355491; font-size:12px; text-decoration:none"><strong>Tablet Takeover: How is IT Responding?</strong></a><br/><br/> <h1 style="font-family: Arial, Helvetica, sans-serif;font-size: 10px;color: #cc6600;margin: 0px;padding: 0px 0px 0px 0px;">BUSINESS TECHNOLOGY STRATEGY</h1><a href="http://smartenterpriseexchange.com/docs/DOC-1746" style="font-family: Verdana, Helvetica, sans-serif; color: #355491; font-size:12px; text-decoration:none"><strong>Empower the Me Enterprise</strong></a><br/>Perhaps consumer tech is a new chance for CIOs to shine.<br/><br/><h1 style="font-family: Arial, Helvetica, sans-serif;font-size: 10px;color: #cc6600;margin: 0px;padding: 0px 0px 0px 0px;">BUSINESS TECHNOLOGY <strong>EXECUTION</strong></h1><a href="http://smartenterpriseexchange.com/docs/DOC-1723" style="font-family: Verdana, Helvetica, sans-serif; color: #355491; font-size:12px; text-decoration:none"><strong>Good Enough Security Discussions Resurface</strong></a><br/>While security remains a critical priority, IT execs are rethinking the levels of acceptable risk.<br/><br/> <h1 style="font-family: Arial, Helvetica, sans-serif;font-size: 10px;color: #cc6600;margin: 0px;padding: 0px 0px 0px 0px;">LIVE <strong>EXCHANGES</strong></h1><a href="http://smartenterpriseexchange.com/docs/DOC-1710" style="font-family: Verdana, Helvetica, sans-serif; color: #355491; font-size:12px; text-decoration:none"><strong>Security and the Cloud: Can They Really Co-exist?</strong></a><br/><br/><h1 style="font-family: Arial, Helvetica, sans-serif;font-size: 10px;color: #cc6600;margin: 0px;padding: 0px 0px 0px 0px;">PROFESSIONAL <strong>DEVELOPMENT</strong></h1><a href="http://smartenterpriseexchange.com/community/development/blog/2011/07/05/the-rise-of-generation-c-and-the-digital-future" style="font-family: Verdana, Helvetica, sans-serif; color: #355491; font-size:12px; text-decoration:none"><strong>The Rise of Generation 'C' and the Digital Future</strong></a><br/>No CIO can afford to ignore this next generation, as it will transform how every enterprise operates.</div></div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_33408"
+     class="jive-widget jive-box jive-widget-communityactionswidget jive-widget-actions jive-box-actions ">
+    <div id="jive-widgetsize_33408" class="jive-widgetsize-small">
+        <div id="jive-widgetframe-header_33408"
+             class="jive-widget-header jive-box-header   ">
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_33408">
+                    Actions
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_33408" class="jive-widget-body jive-widget-loading jive-box-body"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_33408" class="jive-widget-body jive-box-body">
+
+<div class="content-small">
+        
+        <ul class="jive-icon-list ">
+
+
+
+
+
+
+
+
+
+
+
+
+        </ul>
+
+        <div class="jive-box-header"><h4>Notifications</h4></div>
+        <ul class="jive-icon-list ">
+
+
+
+
+
+                <li id="receive-rss-link" style=""
+                ><a href="/community/feeds?community=1"
+                        rel="nofollow"
+                        onclick=""
+                        title="">
+                    <span class="jive-icon-med jive-icon-rss"></span>
+                    View feeds
+                    </a></li>
+        </ul>
+</div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_33409"
+     class="jive-widget jive-box jive-widget-htmlcssclasswidget jive-widget-htmltext jive-widget-borderless ">
+    <div id="jive-widgetsize_33409" class="jive-widgetsize-small">
+        <div id="jive-widgetframe-header_33409"
+             class="jive-widget-header jive-box-header   ">
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_33409">
+                    HTML Styled
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_33409" class="jive-widget-body jive-widget-loading jive-box-body"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_33409" class="jive-widget-body jive-box-body">
+
+<div class="content-small"><img border="0" height="313" src="http://twimgs.com/designcentral/caseewebsite/graphics/se_app_widget.jpg" usemap="#map2" width="223"/> <map id="Map2" name="Map2"><area coords="110,268,215,304" href="http://www.smartenterpriseapp.com/issue/44560" shape="rect" target="_blank"></area><area coords="10,268,100,304" href="http://itunes.apple.com/app/smart-enterprise/id472056305?mt=8" shape="rect" target="_blank"></area></map></div>
+        </div>
+    </div>
+</div>
+         </div>
+     </div>
+</div>
+    </div>
+</div>
+
+</div>
+<!-- END main body -->
+
+
+
+        </div>
+
+<!-- BEGIN footer -->
+<div id="jive-footer" class="clearfix">
+    
+   <div class="ubm-footer-nav"><img src="http://i.cmpnet.com/designcentral/caseewebsite/graphics/see_ubm_logo_wht.gif" width="41" height="55" border="0" />  ©2012 Smart Enterprise<span style="font-size:9px;"><sup>®</sup></span> Exchange is a unique and exclusive CIO and senior IT executive information resource and community. <br />
+      The program was developed by <a href="http://www.ubmtechnology.com/united-business-media-llc-privacy-statement/" target="blank_">UBM TechWeb</a> in conjunction with <a href="http://www.ca.com/us/privacy/" target="blank_">CA Inc</a>. <br />
+    <a href="http://smartenterpriseexchange.com/community/about">About This Site</a> | <a href="/docs/DOC-1085">Smart Enterprise Exchange User Guidelines</a> | <a href="/docs/DOC-1084">Terms and Conditions</a>    
+   </div>
+
+
+</div>
+<!-- END footer -->
+
+    </div> 
+
+
+<div id="jiveTT-note-user" class="jive-tooltip2 notedefault snp-mouseoffset"  >
+	<div class="jive-tooltip2-mid j-mini-modal">
+		<div class="jive-tooltip2-mid-padding j-modal-content clearfix" id="jive-note-user-body"></div>
+	</div>
+<!--[if lt IE 7]><iframe src="javascript:false;" class="ieselectfix"></iframe><![endif]--></div>
+
+<div id="jiveTT-note-video" class="jive-tooltip2 notedefault snp-mouseoffset"  >
+	<div class="jive-tooltip2-mid j-mini-modal">
+		<div class="jive-tooltip2-mid-padding j-modal-content clearfix" id="jive-note-video-body"></div>
+	</div>
+<!--[if lt IE 7]><iframe src="javascript:false;" class="ieselectfix"></iframe><![endif]--></div>
+
+<div id="jivecontainerTT-note-container" class="jive-tooltip2 notedefault snp-mouseoffset"  >
+	<div class="jive-tooltip2-mid j-mini-modal">
+		<div class="jive-tooltip2-mid-padding j-modal-content clearfix" id="jive-note-container-body"></div>
+	</div>
+<!--[if lt IE 7]><iframe src="javascript:false;" class="ieselectfix"></iframe><![endif]--></div>
+
+
+
+
+    <div id="omniture" style="float:left; clear:none; width:0; height: 0">
+		<!--SiteCatalyst code version: G.7. Copyright 1997-2004 Omniture, Inc. More info available at http://www.omniture.com-->
+		<script language="JavaScript">
+		<!--
+		var s_pageName="";
+		var s_server="";
+		var s_channel="";
+		var s_pageType="";
+		var s_prop1="";
+		var s_prop2="";
+		var s_prop3="";
+		var s_prop4="";
+		var s_prop5="";
+		var s_prop6="";
+		var s_prop7="";
+		var s_prop8="";
+		var s_prop9="";
+		var s_prop10="";
+		var s_prop11="";
+		var s_prop12="";
+		var s_prop13="";
+		var s_prop14="";
+		var s_prop15="";
+		var s_prop16="";
+
+		/* E-commerce Variables */
+		var s_campaign="";
+		var s_state="";
+		var s_zip="";
+		var s_events="event5";
+		var s_products="";
+		var s_purchaseID="";
+		var s_eVar1="";
+		var s_eVar2="";
+		var s_eVar3="";
+		var s_eVar4="";
+		var s_eVar5="";
+		//-->
+		</script>
+		<script language="JavaScript" src="http://i.cmpnet.com/shared/omniture/s_code_remote.js" type="text/javascript"></script>
+		<!-- End SiteCatalyst code version: G.7. -->
+		</div>
+
+<script type="text/javascript">
+    var jivespotlightsearch = new JiveSpotlightSearch("#jive-query", "#jive-spotlight-search-container",
+    "/spotlight-search.jspa", containerType, containerID);
+
+
+</script>
+
+
+
+
+</body>
+</html>

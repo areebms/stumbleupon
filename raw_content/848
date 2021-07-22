@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+
+	<title>Painless Extraction | The Dentist Authority</title>
+
+	<meta http-equiv="content-type" content="text/html charset=UTF-8"/>
+
+	<meta name="robots" content="index,follow" />
+
+	<link rel="canonical" href="http://www.thedentistauthority.com/comical/painless-extraction/"/>
+
+	<link rel="stylesheet" type="text/css" href="http://www.thedentistauthority.com/wp-content/themes/thematic/style.css" />
+
+	<link rel="alternate" type="application/rss+xml" href="http://www.thedentistauthority.com/feed/" title="The Dentist Authority Posts RSS feed" />
+	<link rel="alternate" type="application/rss+xml" href="http://www.thedentistauthority.com/comments/feed/" title="The Dentist Authority Comments RSS feed" />
+
+	<link rel="pingback" href="http://www.thedentistauthority.com/xmlrpc.php" />
+
+<script type="text/javascript">
+//<![CDATA[
+var BrowserDetect = {
+init: function () {
+this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
+this.version = this.searchVersion(navigator.userAgent)|| this.searchVersion(navigator.appVersion)|| "an unknown version";
+this.OS = this.searchString(this.dataOS) || "an unknown OS";
+},
+searchString: function (data) {
+for (var i=0;i<data.length;i++)	{
+        var dataString = data[i].string;
+        var dataProp = data[i].prop;
+        this.versionSearchString = data[i].versionSearch || data[i].identity;
+        if (dataString) {if (dataString.indexOf(data[i].subString) != -1)
+                return data[i].identity;}
+        else if (dataProp){return data[i].identity;}
+}
+},
+searchVersion: function (dataString) {
+var index = dataString.indexOf(this.versionSearchString);
+if (index == -1) return;
+return parseFloat(dataString.substring(index+this.versionSearchString.length+1));
+},
+dataBrowser: [
+        {string: navigator.userAgent,subString: "Chrome",identity: "Chrome"},
+        {string: navigator.userAgent,subString: "OmniWeb",versionSearch: "OmniWeb/",identity: "OmniWeb"},
+        {string: navigator.vendor,subString: "Apple",identity: "Safari",versionSearch: "Version"},
+        {prop: window.opera,identity: "Opera"},
+        {string: navigator.vendor,subString: "iCab",identity: "iCab"},
+        {string: navigator.vendor,subString: "KDE",identity: "Konqueror"},
+        {string: navigator.userAgent,subString: "Firefox",identity: "Firefox"},
+        {string: navigator.vendor,subString: "Camino",identity: "Camino"},
+        {string: navigator.userAgent,subString: "Netscape",identity: "Netscape"},
+        {string: navigator.userAgent,subString: "MSIE",identity: "Explorer",versionSearch: "MSIE"},
+        {string: navigator.userAgent,subString: "Gecko",identity: "Mozilla",versionSearch: "rv"},
+        {string: navigator.userAgent,subString: "Mozilla",identity: "Netscape",versionSearch: "Mozilla"}],
+dataOS:[{string: navigator.platform,subString: "Win",identity: "Windows"},
+        {string: navigator.platform,subString: "Mac",identity: "Mac"},
+        {string: navigator.userAgent,subString: "iPhone",identity: "iPhone/iPod"},
+        {string: navigator.platform,subString: "Linux",identity: "Linux"}]
+};
+BrowserDetect.init();
+
+function bookMark(theurl, thetitle, browser){
+    switch(browser){
+        case "Firefox":
+            window.sidebar.addPanel(thetitle, theurl,"");
+            break;
+        case "Explorer":
+            window.external.AddFavorite( theurl, thetitle);
+            break;
+        case "Chrome":
+        case "Safari":
+        case "Opera":
+        case "Netscape":
+            switch(BrowserDetect.OS){
+            case "Windows":
+            case "Linux":
+            alert('press ctrl+D to bookmark this page');
+            break;
+            case "Mac":
+                alert('press cmd+D to bookmark this page');
+            break;
+            }
+            break;
+    }
+}
+//]]>
+</script>
+                        <style type="text/css" media="screen" >
+                                .socialwrap li.icon_text a img, .socialwrap li.iconOnly a img, .followwrap li.icon_text a img, .followwrap li.iconOnly a img{border-width:0 !important;background-color:none;}#follow.right {width:32px;position:fixed; right:0; top:100px;background-color:#878787;padding:10px 0;font-family:impact,charcoal,arial, helvetica,sans-serif;-moz-border-radius-topleft: 5px;-webkit-border-top-left-radius:5px;-moz-border-radius-bottomleft:5px;-webkit-border-bottom-left-radius:5px;border:2px solid #fff;border-right-width:0}#follow.right ul {padding:0; margin:0; list-style-type:none !important;font-size:24px;color:black;}
+#follow.right ul li {padding-bottom:10px;list-style-type:none !important;padding-left:4px;padding-right:4px}
+#follow img{border:none;}#follow.right ul li.follow {margin:0 4px;}
+#follow.right ul li.follow img {border-width:0;display:block;overflow:hidden; background:transparent url(http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/impact/follow-right.png) no-repeat -0px 0px;height:79px;width:20px;}
+#follow.right ul li a {display:block;}
+#follow.right ul li.follow span, #follow ul li a span {display:none}.share {margin:0 3px 3px 0;}
+.phat span {display:inline;}
+ul.row li {float:left;list-style-type:none;}
+li.iconOnly a span.head {display:none}
+#follow.left ul.size16 li.follow{margin:0px auto !important}
+li.icon_text a {padding-left:0;margin-right:3px}
+li.text_only a {background-image:none !important;padding-left:0;}
+li.text_only a img {display:none;}
+li.icon_text a span{background-image:none !important;padding-left:0 !important; }
+li.iconOnly a span.head {display:none}
+ul.socialwrap li {margin:0 3px 3px 0 !important;}
+ul.socialwrap li a {text-decoration:none;}ul.row li {float:left;line-height:auto !important;}
+ul.row li a img {padding:0}.size16 li a,.size24 li a,.size32 li a, .size48 li a, .size60 li a {display:block}ul.socialwrap {list-style-type:none !important;margin:0; padding:0;text-indent:0 !important;}
+ul.socialwrap li {list-style-type:none !important;background-image:none;padding:0;list-style-image:none !important;}
+ul.followwrap {list-style-type:none !important;margin:0; padding:0}
+ul.followwrap li {margin-right:3px;margin-bottom:3px;list-style-type:none !important;}
+#follow.right ul.followwrap li, #follow.left ul.followwrap li {margin-right:0px;margin-bottom:0px;}
+.shareinpost {clear:both;padding-top:0px}.shareinpost ul.socialwrap {list-style-type:none !important;margin:0 !important; padding:0 !important}
+.shareinpost ul.socialwrap li {padding-left:0 !important;background-image:none !important;margin-left:0 !important;list-style-type:none !important;text-indent:0 !important}
+.socialwrap li.icon_text a img, .socialwrap li.iconOnly a img{border-width:0}ul.followrap li {list-style-type:none;list-style-image:none !important;}
+div.clean {clear:left;}
+div.display_none {display:none;}
+                        </style>
+                                                <style type="text/css" media="print" >
+                                body {background: white;font-size: 12pt;color:black;}
+ * {background-image:none;}
+ #wrapper, #content {width: auto;margin: 0 5%;padding: 0;border: 0;float: none !important;color: black;background: transparent none;}
+ a { text-decoration : underline; color : #0000ff; }
+#menu, #navigation, #navi, .menu {display:none}
+                        </style>
+                        <link rel="image_src" href="http://www.gravatar.com/avatar/3a47d05878f48ad6e9de46e3292c0d8c?default=&amp;size=110.jpg" /> 
+				
+	<script type="text/javascript">//<![CDATA[
+	// Google Analytics for WordPress by Yoast v4.1.3 | http://yoast.com/wordpress/google-analytics/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-6877358-18']);
+	_gaq.push(['_trackPageview'],['_trackPageLoadTime']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	//]]></script>
+<link rel="alternate" type="application/rss+xml" title="The Dentist Authority &raquo; Painless Extraction Comments Feed" href="http://www.thedentistauthority.com/comical/painless-extraction/feed/" />
+<link rel='stylesheet' id='tweetable-frontend-css'  href='http://www.thedentistauthority.com/wp-content/plugins/tweetable/main_css.css?ver=3.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://www.thedentistauthority.com/wp-content/plugins/contact-form-7/styles.css?ver=2.4.6' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.thedentistauthority.com/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://www.thedentistauthority.com/wp-includes/js/jquery/jquery.js?ver=1.6.1'></script>
+<script type='text/javascript' src='http://www.thedentistauthority.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.thedentistauthority.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.thedentistauthority.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='The Dentist Authority' href='http://www.thedentistauthority.com/' />
+<link rel='start' title='Does your Dentist Smile?' href='http://www.thedentistauthority.com/comical/does-your-dentist-smile/' />
+<link rel='prev' title='Does your Dentist Smile?' href='http://www.thedentistauthority.com/comical/does-your-dentist-smile/' />
+<link rel='next' title='When you really floss' href='http://www.thedentistauthority.com/comical/when-you-really-floss/' />
+
+<link rel='shortlink' href='http://www.thedentistauthority.com/?p=61' />
+
+<!-- All in One SEO Pack 1.6.13.3 by Michael Torbert of Semper Fi Web Design[233,259] -->
+<link rel="canonical" href="http://www.thedentistauthority.com/comical/painless-extraction/" />
+<!-- /all in one seo pack -->
+<script type="text/javascript">
+//<![CDATA[
+var _wpcf7 = { cached: 1 };
+//]]>
+</script>
+
+    <script type="text/javascript" src="http://www.thedentistauthority.com/wp-content/themes/thematic/library/scripts/hoverIntent.js"></script>
+    <script type="text/javascript" src="http://www.thedentistauthority.com/wp-content/themes/thematic/library/scripts/superfish.js"></script>
+    <script type="text/javascript" src="http://www.thedentistauthority.com/wp-content/themes/thematic/library/scripts/supersubs.js"></script>
+    <script type="text/javascript" src="http://www.thedentistauthority.com/wp-content/themes/thematic/library/scripts/thematic-dropdowns.js"></script>
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style><link rel="shortcut icon" href="http://thedentistauthority.com/wp-content/images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body class="wordpress y2012 m04 d02 h02 slug-painless-extraction single postid-61 s-y2009 s-m01 s-d31 s-h12 s-category-comical s-tag-dentist s-tag-extraction s-tag-funny s-tag-humor s-tag-painless s-tag-teeth s-tag-tooth s-author-tgc windows firefox ff8">
+
+<div id="wrapper" class="hfeed">
+
+   
+
+    <div id="header">
+            	<div id="branding">
+    	</div><!--  #branding -->
+    	<div id="access">
+    		<div class="skip-link"><a href="#content" title="Skip navigation to the content">Skip to content</a></div>
+            <div class="menu"><ul id="nav" class="sf-menu"><li class="page_item page-item-2"><a href="http://www.thedentistauthority.com/about/" title="About">About</a></li><li class="page_item page-item-5"><a href="http://www.thedentistauthority.com/resources/" title="Resources">Resources</a></li><li class="page_item page-item-7"><a href="http://www.thedentistauthority.com/dental-technology/" title="Dental Technology">Dental Technology</a></li><li class="page_item page-item-96"><a href="http://www.thedentistauthority.com/contact-us/" title="Contact Us">Contact Us</a></li><li class="page_item page-item-100"><a href="http://www.thedentistauthority.com/sitemap/" title="Site Map">Site Map</a></li><li class="page_item page-item-105"><a href="http://www.thedentistauthority.com/terms-of-use/" title="Terms of Use">Terms of Use</a></li><li class="page_item page-item-107"><a href="http://www.thedentistauthority.com/privacy-policy/" title="Privacy Policy">Privacy Policy</a></li></ul></div>
+        </div><!-- #access -->
+    </div><!-- #header-->
+    
+   
+
+    <div id="main">
+    
+	<div id="container">
+		<div id="content">
+
+			<div id="nav-above" class="navigation">
+				<div class="nav-previous"><a href="http://www.thedentistauthority.com/comical/does-your-dentist-smile/" rel="prev"><span class="meta-nav">&laquo;</span> Does your Dentist Smile?</a></div>
+				<div class="nav-next"><a href="http://www.thedentistauthority.com/comical/when-you-really-floss/" rel="next">When you really floss <span class="meta-nav">&raquo;</span></a></div>
+			</div>
+
+
+			<div id="post-61" class="hentry p1 post publish author-tgc category-comical tag-dentist tag-extraction tag-funny tag-humor tag-painless tag-teeth tag-tooth y2009 m01 d31 h12 slug-painless-extraction">
+    			<h1 class="entry-title">Painless Extraction</h1>
+<div class="entry-meta"><span class="author vcard">By <a class="url fn n" href="http://www.thedentistauthority.com/author/tgc/" title="View all posts by tgc">tgc</a></span><span class="meta-sep"> | </span>Published: <span class="entry-date"><abbr class="published" title="2009-01-31T19:59:06+0000">January 31, 2009</abbr></span></div><!-- .entry-meta -->
+				<div class="entry-content">
+<div style="float:right;padding: 0 0 10px 10px" class="interactive_right"><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fwww.thedentistauthority.com%2Fcomical%2Fpainless-extraction%2F&amp;text=Painless Extraction&amp;count=vertical&amp;lang=  " style="width:65px; height:65px;"></iframe><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.thedentistauthority.com%2Fcomical%2Fpainless-extraction%2F&amp;layout=box_count&amp;show_faces=false&amp;width=65&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:65px; height:65px;" allowTransparency="true"></iframe><script src="http://www.stumbleupon.com/hostedbadge.php?s=5&amp;r=http%3A%2F%2Fwww.thedentistauthority.com%2Fcomical%2Fpainless-extraction%2F"></script></div><div style="width: 585px; height: 70px;">
+<div style="padding: 0px 0px 0pt 0pt; float: left;"><script src="http://digg.com/tools/diggthis.js" type="text/javascript"></script></div>
+<div style="padding: 5px 5px 5pt 5pt; float: left;"><a name="fb_share"></a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div>
+<div style="padding: 0px 2px 0pt 0pt; float: left;"><script src="http://tweetmeme.com/i/scripts/button.js" type="text/javascript"></script></div>
+<div style="padding: 0px 2px 0pt 0pt; float: left;"><script src="http://platform.linkedin.com/in.js" type="text/javascript"></script><script type="in/share"></script></div>
+<div style="padding: 0px 2px 0pt 0pt; float: left;"><script src="http://www.stumbleupon.com/hostedbadge.php?s=1"></script></div>
+</div>
+<p><a href="http://www.thedentistauthority.com/wp-content/uploads/2011/05/Screen-shot-2011-05-31-at-7.57.16-PM.png" ><img class="alignnone size-full wp-image-62" title="Screen shot 2011-05-31 at 7.57.16 PM" src="http://www.thedentistauthority.com/wp-content/uploads/2011/05/Screen-shot-2011-05-31-at-7.57.16-PM.png" alt="" width="403" height="627" /></a></p>
+<div class="linkwithin_hook" id="http://www.thedentistauthority.com/comical/painless-extraction/"></div><script>
+<!-- //LinkWithinCodeStart
+var linkwithin_site_id = 837987;
+var linkwithin_div_class = "linkwithin_hook";
+//LinkWithinCodeEnd -->
+</script>
+<script src="http://www.linkwithin.com/widget.js"></script>
+<a href="http://www.linkwithin.com/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.linkwithin.com']);"><img src="http://www.linkwithin.com/pixel.png" alt="Related Posts Plugin for WordPress, Blogger..." style="border: 0" /></a><div class='shareinpost'><ul class="socialwrap row"><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.blogger.com/blog_this.pyra?t&amp;u=http%3A%2F%2Fwww.thedentistauthority.com%2Fcomical%2Fpainless-extraction%2F&amp;n=Painless+Extraction&amp;pli=1" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.blogger.com']);" title="Share this post : Painless Extraction on Blogger" ><img src="http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-66px 0px" class="image-32" width="32" alt="blogger"/> <span class="head">Blog this!</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://delicious.com/post?url=http%3A%2F%2Fwww.thedentistauthority.com%2Fcomical%2Fpainless-extraction%2F&amp;title=Painless+Extraction" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://delicious.com']);" title="Bookmark this post : Painless Extraction on Delicious" ><img src="http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-198px 0px" class="image-32" width="32" alt="delicious"/> <span class="head">Bookmark on Delicious</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://digg.com/submit?url=http%3A%2F%2Fwww.thedentistauthority.com%2Fcomical%2Fpainless-extraction%2F&amp;title=Painless+Extraction&amp;bodytext=%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://digg.com']);" title="Digg this post : Painless Extraction" ><img src="http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-264px 0px" class="image-32" width="32" alt="digg"/> <span class="head">Digg this post</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.thedentistauthority.com%2Fcomical%2Fpainless-extraction%2F&amp;t=Painless+Extraction" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.facebook.com']);" title="Recommend this post : Painless Extraction on Facebook" ><img src="http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-363px 0px" class="image-32" width="32" alt="facebook"/> <span class="head">Recommend on Facebook</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fwww.thedentistauthority.com%2Fcomical%2Fpainless-extraction%2F&amp;title=Painless+Extraction&amp;&amp;summary=%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.linkedin.com']);" title="Share this post : Painless Extraction on Linkedin" ><img src="http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-891px 0px" class="image-32" width="32" alt="linkedin"/> <span class="head">Share on Linkedin</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.myspace.com/Modules/PostTo/Pages/?u=http%3A%2F%2Fwww.thedentistauthority.com%2Fcomical%2Fpainless-extraction%2F" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.myspace.com']);" title="Share this post : Painless Extraction via MySpace" ><img src="http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1056px 0px" class="image-32" width="32" alt="myspace"/> <span class="head">Share via MySpace</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://promote.orkut.com/preview?nt=orkut.com&amp;du=http%3A%2F%2Fwww.thedentistauthority.com%2Fcomical%2Fpainless-extraction%2F&amp;tt=Painless+Extraction" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://promote.orkut.com']);" title="Share this post : Painless Extraction on Orkut" ><img src="http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1221px 0px" class="image-32" width="32" alt="orkut"/> <span class="head">Share on Orkut</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.reddit.com/submit?url=http%3A%2F%2Fwww.thedentistauthority.com%2Fcomical%2Fpainless-extraction%2F&amp;title=Painless+Extraction" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.reddit.com']);" title="Share this post : Painless Extraction on Reddit" ><img src="http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1419px 0px" class="image-32" width="32" alt="reddit"/> <span class="head">share via Reddit</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.sphinn.com/share?v=3&amp;u=http%3A%2F%2Fwww.thedentistauthority.com%2Fcomical%2Fpainless-extraction%2F&amp;t=Painless+Extraction" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.sphinn.com']);" title="Share this post : Painless Extraction on sphinn" ><img src="http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1551px 0px" class="image-32" width="32" alt="sphinn"/> <span class="head">Share this on sphinn</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.thedentistauthority.com%2Fcomical%2Fpainless-extraction%2F&amp;title=Painless+Extraction" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.stumbleupon.com']);" title="Share this post : Painless Extraction with Stumblers" ><img src="http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1617px 0px" class="image-32" width="32" alt="stumble"/> <span class="head">Share with Stumblers</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.tumblr.com/share?v=3&amp;u=http%3A%2F%2Fwww.thedentistauthority.com%2Fcomical%2Fpainless-extraction%2F&amp;t=Painless+Extraction" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.tumblr.com']);" title="Tumblr. this post : Painless Extraction " ><img src="http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1716px 0px" class="image-32" width="32" alt="tumblr"/> <span class="head">Tumblr it</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://twitter.com/home/?status=http%3A%2F%2Fwww.thedentistauthority.com%2Fcomical%2Fpainless-extraction%2F" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://twitter.com']);" title="Tweet this post : Painless Extraction on Twitter" ><img src="http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1749px 0px" class="image-32"  width="32"  alt="twitter"/> <span class="head">Tweet about it</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://buzz.yahoo.com/buzz?targetUrl=http%3A%2F%2Fwww.thedentistauthority.com%2Fcomical%2Fpainless-extraction%2F" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://buzz.yahoo.com']);" title="Buzz up this post : Painless Extraction " ><img src="http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1980px 0px" class="image-32" width="32" alt="yahoo_buzz"/> <span class="head">Buzz it up</span></a></li><li class="iconOnly"><a rel="_self" href="http://www.thedentistauthority.com/comical/painless-extraction/feed"  title="Follow this post : Painless Extraction comments"><img src="http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32"  width="32" style="background: transparent url(http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1452px 0px" class="image-32"  alt="rss" /> <span class="head">Subscribe to the comments on this post</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.print();" title="Print this post : Painless Extraction for reading later" ><img src="http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/blank.gif"  height="32" style="background: transparent url(http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1386px 0px" class="image-32" width="32" alt="print"/> <span class="head">Print for later</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.bookMark('http%3A%2F%2Fwww.thedentistauthority.com%2Fcomical%2Fpainless-extraction%2F', 'Painless+Extraction', BrowserDetect.browser);" title="Bookmark this post : Painless Extraction" ><img src="http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/blank.gif"  height="32" style="background: transparent url(http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-99px 0px" class="image-32" width="32" alt="bookmark"/> <span class="head">Bookmark in Browser</span></a></li><li class="iconOnly"><a rel="_self" href="mailto:?subject=The%20Dentist%20Authority%20:%20Painless%20Extraction&amp;body=here%20is%20a%20link%20to%20a%20site%20I%20really%20like.%20%20%20http://www.thedentistauthority.com/comical/painless-extraction/"  title="Tell a friend about this post : Painless Extraction "><img src="http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32"  width="32" style="background: transparent url(http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-330px 0px" class="image-32"  alt="email" /> <span class="head">Tell a friend</span></a></li></ul><div class="clean"></div> </div>
+									</div>
+				<div class="entry-utility"><span class="cat-links">This entry was posted in <a href="http://www.thedentistauthority.com/category/comical/" title="View all posts in Comical" rel="category tag">Comical</a></span><span class="tag-links">  and tagged <a href="http://www.thedentistauthority.com/tag/dentist/" rel="tag">dentist</a>, <a href="http://www.thedentistauthority.com/tag/extraction/" rel="tag">extraction</a>, <a href="http://www.thedentistauthority.com/tag/funny/" rel="tag">funny</a>, <a href="http://www.thedentistauthority.com/tag/humor/" rel="tag">humor</a>, <a href="http://www.thedentistauthority.com/tag/painless/" rel="tag">painless</a>, <a href="http://www.thedentistauthority.com/tag/teeth/" rel="tag">teeth</a>, <a href="http://www.thedentistauthority.com/tag/tooth/" rel="tag">tooth</a></span>. Bookmark the <a href="http://www.thedentistauthority.com/comical/painless-extraction/" title="Permalink to Painless Extraction">permalink</a>. <a class="comment-link" href="#respond" title ="Post a comment">Post a comment</a> or leave a trackback: <a class="trackback-link" href="http://www.thedentistauthority.com/comical/painless-extraction/trackback/" title ="Trackback URL for your post" rel="trackback">Trackback URL</a>.</div><!-- .entry-utility -->
+			</div><!-- .post -->
+			
+
+			<div id="nav-below" class="navigation">
+				<div class="nav-previous"><a href="http://www.thedentistauthority.com/comical/does-your-dentist-smile/" rel="prev"><span class="meta-nav">&laquo;</span> Does your Dentist Smile?</a></div>
+				<div class="nav-next"><a href="http://www.thedentistauthority.com/comical/when-you-really-floss/" rel="next">When you really floss <span class="meta-nav">&raquo;</span></a></div>
+			</div>
+
+			<div id="comments">
+
+
+				<div id="respond">
+    				<h3>Post a Comment</h3>
+    				
+    				<div id="cancel-comment-reply"><a rel="nofollow" id="cancel-comment-reply-link" href="/comical/painless-extraction/#respond" style="display:none;">Click here to cancel reply.</a></div>
+
+					<div class="formcontainer">	
+					
+					
+
+						<form id="commentform" action="http://www.thedentistauthority.com/wp-comments-post.php" method="post">
+
+
+							<p id="comment-notes">Your email is <em>never</em> published nor shared. Required fields are marked <span class="required">*</span></p>
+
+                            <div id="form-section-author" class="form-section">
+    							<div class="form-label"><label for="author">Name</label> <span class="required">*</span></div>
+    							<div class="form-input"><input id="author" name="author" type="text" value="" size="30" maxlength="20" tabindex="3" /></div>
+                            </div><!-- #form-section-author .form-section -->
+
+                            <div id="form-section-email" class="form-section">
+    							<div class="form-label"><label for="email">Email</label> <span class="required">*</span></div>
+    							<div class="form-input"><input id="email" name="email" type="text" value="" size="30" maxlength="50" tabindex="4" /></div>
+                            </div><!-- #form-section-email .form-section -->
+
+                            <div id="form-section-url" class="form-section">
+    							<div class="form-label"><label for="url">Website</label></div>
+    							<div class="form-input"><input id="url" name="url" type="text" value="" size="30" maxlength="50" tabindex="5" /></div>
+                            </div><!-- #form-section-url .form-section -->
+
+
+                            <div id="form-section-comment" class="form-section">
+    							<div class="form-label"><label for="comment">Comment</label></div>
+    							<div class="form-textarea"><textarea id="comment" name="comment" cols="45" rows="8" tabindex="6"></textarea></div>
+                            </div><!-- #form-section-comment .form-section -->
+                            
+                            <div id="form-allowed-tags" class="form-section">
+                                <p><span>You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes: </span>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </p>
+                            </div>
+							
+                  <p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="00fd1e370b" /></p>                  
+							<div class="form-submit"><input id="submit" name="submit" type="submit" value="Post Comment" tabindex="7" /><input type="hidden" name="comment_post_ID" value="61" /></div>
+
+                            <input type='hidden' name='comment_post_ID' value='61' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+    
+
+						</form><!-- #commentform -->
+						
+											
+						
+					</div><!-- .formcontainer -->
+
+				</div><!-- #respond -->
+
+			</div><!-- #comments -->
+
+
+		</div><!-- #content -->
+	</div><!-- #container -->
+
+	<div id="primary" class="aside main-aside">
+		<ul class="xoxo">
+			<li id="search" class="widgetcontainer widget_thematic_search">				<h3 class="widgettitle"><label for="s">Search</label></h3>
+				<form id="searchform" method="get" action="http://www.thedentistauthority.com">
+					<div>
+						<input id="s" name="s" type="text" value="" size="20" tabindex="1" />
+						<input id="searchsubmit" name="searchsubmit" type="submit" value="Search" tabindex="2" />
+					</div>
+				</form>
+			</li>
+		<li id="recent-posts-3" class="widgetcontainer widget_recent_entries">		<h3 class="widgettitle">Recent Posts</h3>
+		<ul>
+				<li><a href="http://www.thedentistauthority.com/dental-technology/horse-dental-care/" title="Horse Dental Care">Horse Dental Care</a></li>
+				<li><a href="http://www.thedentistauthority.com/dental-technology/dental-technology-for-the-big-cat/" title="Dental Technology for the Big Cat">Dental Technology for the Big Cat</a></li>
+				<li><a href="http://www.thedentistauthority.com/comical/ancient-dental-tools/" title="Ancient Dental Tools">Ancient Dental Tools</a></li>
+				<li><a href="http://www.thedentistauthority.com/dental-technology/dental-technology-faire-tooth/" title="Dental Technology-Women Tooth">Dental Technology-Women Tooth</a></li>
+				<li><a href="http://www.thedentistauthority.com/comical/a-visit-to-the-dentist-gone-wrong/" title="A Visit To the Dentist Gone Wrong">A Visit To the Dentist Gone Wrong</a></li>
+				</ul>
+		</li><li id="categories-3" class="widgetcontainer widget_categories"><h3 class="widgettitle">Categories</h3>
+		<ul>
+	<li class="cat-item cat-item-57"><a href="http://www.thedentistauthority.com/category/comical/" title="View all posts filed under Comical">Comical</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://www.thedentistauthority.com/category/dental-technology/" title="View all posts filed under Dental Technology">Dental Technology</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://www.thedentistauthority.com/category/home/" title="View all posts filed under Home">Home</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://www.thedentistauthority.com/category/resources/" title="View all posts filed under Resources">Resources</a>
+</li>
+		</ul>
+</li>		</ul>
+	</div><!-- #primary .aside -->
+
+
+	<div id="secondary" class="aside main-aside">
+		<ul class="xoxo">
+<li id="text-3" class="widgetcontainer widget_text">			<div class="textwidget">    <p align="center"><embed title="Chicago, IL" src="http://www.weatherlet.com/weather.swf?locid=USIL0225&unit=s" quality="high" wmode="transparent" bgcolor="#CC00CC" width="184" height="76" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /><br>
+	<a href="http://www.weatherlet.com/?cityname=Chicago%2C+IL&unit=s" onclick="javascript:_gaq.push(['_trackEvent','outbound-widget','http://www.weatherlet.com']);" title="Free Online Weather for WordPress, Blogspot, Blogger, Drupal, TypePad, MySpace, Facebook, Bebo, Piczo, Xanga, Freewebs, Netvibes, Pageflakes, iGoogle and other blogs and web pages" target="_blank"><small>Chicago, IL Current Weather</small></a></p>
+              </div>
+		</li>	        <li id="wp-cumulus" class="widgetcontainer wp_cumulus_widget">						<!-- SWFObject embed by Geoff Stearns geoff@deconcept.com http://blog.deconcept.com/swfobject/ --><script type="text/javascript" src="http://www.thedentistauthority.com/wp-content/plugins/wp-cumulus/swfobject.js"></script><div id="wpcumuluswidgetcontent2976224"><p><a href='http://www.thedentistauthority.com/tag/awesome/' class='tag-link-109' title='2 topics' style='font-size: 11.230769230769pt;'>awesome</a>
+<a href='http://www.thedentistauthority.com/tag/broken-teeth/' class='tag-link-30' title='1 topic' style='font-size: 8pt;'>broken teeth</a>
+<a href='http://www.thedentistauthority.com/tag/broken-tooth/' class='tag-link-29' title='1 topic' style='font-size: 8pt;'>broken tooth</a>
+<a href='http://www.thedentistauthority.com/tag/cool/' class='tag-link-104' title='3 topics' style='font-size: 13.384615384615pt;'>cool</a>
+<a href='http://www.thedentistauthority.com/tag/cosmetic-dentistry/' class='tag-link-17' title='1 topic' style='font-size: 8pt;'>cosmetic dentistry</a>
+<a href='http://www.thedentistauthority.com/tag/crowns/' class='tag-link-4' title='1 topic' style='font-size: 8pt;'>Crowns</a>
+<a href='http://www.thedentistauthority.com/tag/dental-cleaning/' class='tag-link-35' title='1 topic' style='font-size: 8pt;'>dental cleaning</a>
+<a href='http://www.thedentistauthority.com/tag/dental-emergencies/' class='tag-link-28' title='1 topic' style='font-size: 8pt;'>dental emergencies</a>
+<a href='http://www.thedentistauthority.com/tag/dental-emergency/' class='tag-link-27' title='1 topic' style='font-size: 8pt;'>dental emergency</a>
+<a href='http://www.thedentistauthority.com/tag/dental-implant/' class='tag-link-25' title='2 topics' style='font-size: 11.230769230769pt;'>dental implant</a>
+<a href='http://www.thedentistauthority.com/tag/dental-technology-2/' class='tag-link-100' title='2 topics' style='font-size: 11.230769230769pt;'>dental technology</a>
+<a href='http://www.thedentistauthority.com/tag/dental-xray/' class='tag-link-37' title='1 topic' style='font-size: 8pt;'>dental xray</a>
+<a href='http://www.thedentistauthority.com/tag/dentist/' class='tag-link-59' title='11 topics' style='font-size: 22pt;'>dentist</a>
+<a href='http://www.thedentistauthority.com/tag/denture/' class='tag-link-8' title='1 topic' style='font-size: 8pt;'>denture</a>
+<a href='http://www.thedentistauthority.com/tag/denture-approach/' class='tag-link-14' title='1 topic' style='font-size: 8pt;'>denture approach</a>
+<a href='http://www.thedentistauthority.com/tag/denture-material/' class='tag-link-9' title='1 topic' style='font-size: 8pt;'>denture material</a>
+<a href='http://www.thedentistauthority.com/tag/denture-materials/' class='tag-link-10' title='1 topic' style='font-size: 8pt;'>denture materials</a>
+<a href='http://www.thedentistauthority.com/tag/denture-method/' class='tag-link-12' title='1 topic' style='font-size: 8pt;'>denture method</a>
+<a href='http://www.thedentistauthority.com/tag/denture-methods/' class='tag-link-13' title='1 topic' style='font-size: 8pt;'>denture methods</a>
+<a href='http://www.thedentistauthority.com/tag/dentures/' class='tag-link-7' title='1 topic' style='font-size: 8pt;'>dentures</a>
+<a href='http://www.thedentistauthority.com/tag/endodontics/' class='tag-link-15' title='1 topic' style='font-size: 8pt;'>endodontics</a>
+<a href='http://www.thedentistauthority.com/tag/funny/' class='tag-link-60' title='8 topics' style='font-size: 19.666666666667pt;'>funny</a>
+<a href='http://www.thedentistauthority.com/tag/gum-improvement/' class='tag-link-22' title='1 topic' style='font-size: 8pt;'>gum improvement</a>
+<a href='http://www.thedentistauthority.com/tag/gum-modification/' class='tag-link-21' title='1 topic' style='font-size: 8pt;'>gum modification</a>
+<a href='http://www.thedentistauthority.com/tag/gum-swelling/' class='tag-link-32' title='1 topic' style='font-size: 8pt;'>gum swelling</a>
+<a href='http://www.thedentistauthority.com/tag/happy/' class='tag-link-69' title='2 topics' style='font-size: 11.230769230769pt;'>happy</a>
+<a href='http://www.thedentistauthority.com/tag/horrible/' class='tag-link-87' title='2 topics' style='font-size: 11.230769230769pt;'>horrible</a>
+<a href='http://www.thedentistauthority.com/tag/humor/' class='tag-link-61' title='3 topics' style='font-size: 13.384615384615pt;'>humor</a>
+<a href='http://www.thedentistauthority.com/tag/implant/' class='tag-link-23' title='1 topic' style='font-size: 8pt;'>implant</a>
+<a href='http://www.thedentistauthority.com/tag/implants/' class='tag-link-24' title='1 topic' style='font-size: 8pt;'>implants</a>
+<a href='http://www.thedentistauthority.com/tag/oral-hygiene/' class='tag-link-34' title='1 topic' style='font-size: 8pt;'>oral hygiene</a>
+<a href='http://www.thedentistauthority.com/tag/orthodontics/' class='tag-link-43' title='2 topics' style='font-size: 11.230769230769pt;'>orthodontics</a>
+<a href='http://www.thedentistauthority.com/tag/partial-denture/' class='tag-link-11' title='1 topic' style='font-size: 8pt;'>partial denture</a>
+<a href='http://www.thedentistauthority.com/tag/partial-tooth-displacement/' class='tag-link-31' title='1 topic' style='font-size: 8pt;'>partial tooth displacement</a>
+<a href='http://www.thedentistauthority.com/tag/rare/' class='tag-link-92' title='2 topics' style='font-size: 11.230769230769pt;'>rare</a>
+<a href='http://www.thedentistauthority.com/tag/root-canal/' class='tag-link-16' title='1 topic' style='font-size: 8pt;'>root canal</a>
+<a href='http://www.thedentistauthority.com/tag/swollen-gums/' class='tag-link-33' title='1 topic' style='font-size: 8pt;'>swollen gums</a>
+<a href='http://www.thedentistauthority.com/tag/teeth/' class='tag-link-66' title='3 topics' style='font-size: 13.384615384615pt;'>teeth</a>
+<a href='http://www.thedentistauthority.com/tag/teeth-cleaning/' class='tag-link-36' title='1 topic' style='font-size: 8pt;'>teeth cleaning</a>
+<a href='http://www.thedentistauthority.com/tag/teeth-modification/' class='tag-link-18' title='1 topic' style='font-size: 8pt;'>teeth modification</a>
+<a href='http://www.thedentistauthority.com/tag/teeth-shaping/' class='tag-link-19' title='1 topic' style='font-size: 8pt;'>teeth shaping</a>
+<a href='http://www.thedentistauthority.com/tag/teeth-whitening/' class='tag-link-20' title='1 topic' style='font-size: 8pt;'>teeth whitening</a>
+<a href='http://www.thedentistauthority.com/tag/tooth-implant/' class='tag-link-26' title='1 topic' style='font-size: 8pt;'>tooth implant</a>
+<a href='http://www.thedentistauthority.com/tag/unique/' class='tag-link-91' title='3 topics' style='font-size: 13.384615384615pt;'>unique</a>
+<a href='http://www.thedentistauthority.com/tag/visit/' class='tag-link-76' title='2 topics' style='font-size: 11.230769230769pt;'>visit</a></p><p>WP Cumulus Flash tag cloud by <a href="http://www.roytanck.com">Roy Tanck</a> and <a href="http://lukemorton.co.uk/">Luke Morton</a> requires <a href="http://www.macromedia.com/go/getflashplayer">Flash Player</a> 9 or better.</p></div><script type="text/javascript">var widget_so9643892 = new SWFObject("http://www.thedentistauthority.com/wp-content/plugins/wp-cumulus/tagcloud.swf?r=7282061", "tagcloudflash", "180", "180", "9", "#D6E1E7");widget_so9643892.addParam("allowScriptAccess", "always");widget_so9643892.addVariable("tcolor", "0x333333");widget_so9643892.addVariable("tcolor2", "0x333333");widget_so9643892.addVariable("hicolor", "0x000000");widget_so9643892.addVariable("tspeed", "100");widget_so9643892.addVariable("distr", "true");widget_so9643892.addVariable("mode", "tags");widget_so9643892.addVariable("tagcloud", "%3Ctags%3E%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fawesome%2F%27+class%3D%27tag-link-109%27+title%3D%272+topics%27+style%3D%27font-size%3A+11.230769230769pt%3B%27%3Eawesome%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fbroken-teeth%2F%27+class%3D%27tag-link-30%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Ebroken+teeth%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fbroken-tooth%2F%27+class%3D%27tag-link-29%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Ebroken+tooth%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fcool%2F%27+class%3D%27tag-link-104%27+title%3D%273+topics%27+style%3D%27font-size%3A+13.384615384615pt%3B%27%3Ecool%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fcosmetic-dentistry%2F%27+class%3D%27tag-link-17%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Ecosmetic+dentistry%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fcrowns%2F%27+class%3D%27tag-link-4%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3ECrowns%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fdental-cleaning%2F%27+class%3D%27tag-link-35%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Edental+cleaning%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fdental-emergencies%2F%27+class%3D%27tag-link-28%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Edental+emergencies%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fdental-emergency%2F%27+class%3D%27tag-link-27%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Edental+emergency%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fdental-implant%2F%27+class%3D%27tag-link-25%27+title%3D%272+topics%27+style%3D%27font-size%3A+11.230769230769pt%3B%27%3Edental+implant%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fdental-technology-2%2F%27+class%3D%27tag-link-100%27+title%3D%272+topics%27+style%3D%27font-size%3A+11.230769230769pt%3B%27%3Edental+technology%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fdental-xray%2F%27+class%3D%27tag-link-37%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Edental+xray%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fdentist%2F%27+class%3D%27tag-link-59%27+title%3D%2711+topics%27+style%3D%27font-size%3A+22pt%3B%27%3Edentist%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fdenture%2F%27+class%3D%27tag-link-8%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Edenture%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fdenture-approach%2F%27+class%3D%27tag-link-14%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Edenture+approach%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fdenture-material%2F%27+class%3D%27tag-link-9%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Edenture+material%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fdenture-materials%2F%27+class%3D%27tag-link-10%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Edenture+materials%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fdenture-method%2F%27+class%3D%27tag-link-12%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Edenture+method%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fdenture-methods%2F%27+class%3D%27tag-link-13%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Edenture+methods%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fdentures%2F%27+class%3D%27tag-link-7%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Edentures%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fendodontics%2F%27+class%3D%27tag-link-15%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Eendodontics%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Ffunny%2F%27+class%3D%27tag-link-60%27+title%3D%278+topics%27+style%3D%27font-size%3A+19.666666666667pt%3B%27%3Efunny%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fgum-improvement%2F%27+class%3D%27tag-link-22%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Egum+improvement%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fgum-modification%2F%27+class%3D%27tag-link-21%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Egum+modification%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fgum-swelling%2F%27+class%3D%27tag-link-32%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Egum+swelling%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fhappy%2F%27+class%3D%27tag-link-69%27+title%3D%272+topics%27+style%3D%27font-size%3A+11.230769230769pt%3B%27%3Ehappy%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fhorrible%2F%27+class%3D%27tag-link-87%27+title%3D%272+topics%27+style%3D%27font-size%3A+11.230769230769pt%3B%27%3Ehorrible%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fhumor%2F%27+class%3D%27tag-link-61%27+title%3D%273+topics%27+style%3D%27font-size%3A+13.384615384615pt%3B%27%3Ehumor%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fimplant%2F%27+class%3D%27tag-link-23%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Eimplant%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fimplants%2F%27+class%3D%27tag-link-24%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Eimplants%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Foral-hygiene%2F%27+class%3D%27tag-link-34%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Eoral+hygiene%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Forthodontics%2F%27+class%3D%27tag-link-43%27+title%3D%272+topics%27+style%3D%27font-size%3A+11.230769230769pt%3B%27%3Eorthodontics%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fpartial-denture%2F%27+class%3D%27tag-link-11%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Epartial+denture%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fpartial-tooth-displacement%2F%27+class%3D%27tag-link-31%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Epartial+tooth+displacement%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Frare%2F%27+class%3D%27tag-link-92%27+title%3D%272+topics%27+style%3D%27font-size%3A+11.230769230769pt%3B%27%3Erare%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Froot-canal%2F%27+class%3D%27tag-link-16%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Eroot+canal%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fswollen-gums%2F%27+class%3D%27tag-link-33%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Eswollen+gums%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fteeth%2F%27+class%3D%27tag-link-66%27+title%3D%273+topics%27+style%3D%27font-size%3A+13.384615384615pt%3B%27%3Eteeth%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fteeth-cleaning%2F%27+class%3D%27tag-link-36%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Eteeth+cleaning%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fteeth-modification%2F%27+class%3D%27tag-link-18%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Eteeth+modification%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fteeth-shaping%2F%27+class%3D%27tag-link-19%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Eteeth+shaping%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fteeth-whitening%2F%27+class%3D%27tag-link-20%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Eteeth+whitening%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Ftooth-implant%2F%27+class%3D%27tag-link-26%27+title%3D%271+topic%27+style%3D%27font-size%3A+8pt%3B%27%3Etooth+implant%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Funique%2F%27+class%3D%27tag-link-91%27+title%3D%273+topics%27+style%3D%27font-size%3A+13.384615384615pt%3B%27%3Eunique%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fwww.thedentistauthority.com%2Ftag%2Fvisit%2F%27+class%3D%27tag-link-76%27+title%3D%272+topics%27+style%3D%27font-size%3A+11.230769230769pt%3B%27%3Evisit%3C%2Fa%3E%3C%2Ftags%3E");widget_so9643892.write("wpcumuluswidgetcontent2976224");</script>	        </li>				</ul>
+	</div><!-- #secondary .aside -->
+	
+    </div><!-- #main -->
+    
+    
+
+	<div id="footer">
+                    <div id="siteinfo">        
+    		<p id="copyright"> Copyright © <span class="the-year">2012</span>  <a href="http://www.thedentistauthority.com/"><span style="color: #FFFFFF">TheDentistAuthority.com</span></a> · <a href="/terms-of-use/" alt="Terms of Use"><span style="color: #FFFFFF">Terms of Use</span></a> · <a href="/privacy-policy/" alt="Privacy Policy"><span style="color: #FFFFFF">Privacy Policy</span></a> · <a href="/sitemap/" alt="sitemap"><span style="color: #FFFFFF">Site Map</span></a> · <a href="/contact-us/" alt="Contact Us"><span style="color: #FFFFFF">Contact Us</span></a></p>		</div><!-- #siteinfo -->
+	</div><!-- #footer -->
+	
+  
+
+</div><!-- #wrapper .hfeed -->
+
+<div id="follow" class="right"><ul class="tab down"><li class="follow"><img src="http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/blank.gif"  alt="follow:"/><span>follow:</span></li><li class="iconOnly"><a rel="nofollow me" target="_blank" href="http://www.thedentistauthority.com/feed/rss/" title="RSS" ><img src="http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/blank.gif" height="24"  width="24" style="background: transparent url(http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/default/24/sprite-24.png) no-repeat;padding:0;margin:0;height:24px;width:24px;background-position:-1100px 0px"  alt="RSS"/> <span class="head">RSS</span></a></li><li class="iconOnly"><a rel="nofollow me" target="_blank" href="http://twitter.com/#!/totaldentist" title="Tweet with me" ><img src="http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/images/blank.gif" height="24"  width="24" style="background: transparent url(http://www.thedentistauthority.com/wp-content/plugins/share-and-follow/default/24/sprite-24.png) no-repeat;padding:0;margin:0;height:24px;width:24px;background-position:-1325px 0px"  alt="Tweet with me"/> <span class="head">Tweet with me</span></a></li></ul></div><script type='text/javascript' src='http://www.thedentistauthority.com/wp-content/plugins/contact-form-7/jquery.form.js?ver=2.52'></script>
+<script type='text/javascript' src='http://www.thedentistauthority.com/wp-content/plugins/contact-form-7/scripts.js?ver=2.4.6'></script>
+
+</body>
+</html>
+<!-- Dynamic page generated in 2.010 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2012-04-02 02:28:33 -->
+<!-- super cache -->

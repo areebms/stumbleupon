@@ -1,0 +1,862 @@
+<HTML>
+<HEAD>
+	<LINK REL="stylesheet" HREF="/css/body.css" type="text/css">
+	<STYLE TYPE="text/css">
+		BODY
+		{
+			margin: 0px;
+			background: #eeeeee;
+			font-family: "Arial", "Verdana", sans-serif;
+		}
+
+		.m0l0o
+		{
+			font-family: "Arial", sans-serif;
+			font-size: 12px;
+			font-weight: bold;
+			text-decoration: none;
+			color: white;
+		}
+
+		.m0l1o
+		{
+			padding-left: 5px;
+			text-decoration: none;
+		}
+
+		.m0l0i
+		{
+			font-size: 12px;
+			font-family: "Arial", sans-serif;
+			text-decoration: none;
+		}
+
+		.m0l1i
+		{
+			font-size: 11px;
+			font-family: "Arial", sans-serif;
+			text-decoration: none;
+		}
+
+		.pagetitle
+		{
+			font-size: 16px;
+			font-weight: bold;
+			color: white;
+		}
+	</STYLE>
+
+	<SCRIPT LANGUAGE="JavaScript">
+		<!-- // Insert non-KitchenMath-related functions here.
+			function togglevisi(IDhere){
+				if(IDhere.style.visibility == "hidden"){
+					IDhere.style.visibility = "visible";
+				}
+
+				else{
+					IDhere.style.visibility = "hidden";
+				}
+			}
+
+			function funcKeypress(e){
+				if (document.all){
+					e = window.event;
+				}
+
+				var keyNumbvalue;
+
+				if (document.layers){
+					keyNumbvalue = e.which;
+				}
+
+				if (document.all){
+					keyNumbvalue = e.keyCode;
+				}
+
+				var key = String.fromCharCode(keyNumbvalue);
+
+				if (keyNumbvalue == "13"){
+					calculate();
+					return false;
+				}
+			}
+		// -->
+	</script>
+	<script language="JavaScript">
+		<!--
+			/* NOTES
+				* calculate() is the main function called. Most other functions are called from within.
+				* See the notes on UnitConverter if you want to know more. UnitConverter is essentially several KitchenMaths, although
+				  it is more complicated and has lots of changes.
+			END NOTES */
+
+
+			// GLOBAL VARIABLES
+			var dashMe, pinchMe, tspMe, tbspMe, fluidozMe, cupMe, pintMe, quartMe, gallonMe, literMe; // Initializes unit value variables.
+			var ALLARRAY; // Static variable that contains an array holding all fields.
+			var fracOrDecRounding = "frac"; // Controls whether "frac" or "dec" is the dominant field concerning rounding (only an issue in some cases of using "Multiply Values" button).
+			// END GLOBAL VARIABLES
+
+			function loadMe(){
+				ALLARRAY = arrayOfAll();
+			}
+
+			function checkFocusValue(x){
+				var inputValue; // This is the value that the user inputs.
+				if (x == "" || x == undefined || x == null){
+					for (var i = 0; i < ALLARRAY.length; i++){
+						if (ALLARRAY[i].value != ""){ // blippie; more limiting conditions (perhaps) here
+							inputValue = ALLARRAY[i].value;
+							return inputValue;
+						}
+					}
+				}
+
+
+				for (var i = 0; i < ALLARRAY.length; i++){
+					if (ALLARRAY[i].value != "" && i == x){ // blippie; more limiting conditions (perhaps) here
+						inputValue = ALLARRAY[i].value;
+						break;
+					}
+				}
+
+				return inputValue;
+			}
+
+			function checkFocusField(x){
+				var inputField; // This is the field containing the value that the user has inputted.
+				if (x == "" || x == undefined || x == null){
+					for (var i = 0; i < ALLARRAY.length; i++){ // Checks all array elements (i.e., measurement fields) and sets inputField and inputValue to be the field name and value of the field where there something actually exists.
+						if (ALLARRAY[i].value != ""){ // blippie; more limiting conditions (perhaps) here
+							inputField = i; // Returns the array position of the field.
+							return inputField;
+						}
+					}
+				}
+
+				for (var i = 0; i < ALLARRAY.length; i++){ // Checks all array elements (i.e., measurement fields) and sets inputField and inputValue to be the field name and value of the field where there something actually exists.
+					if (ALLARRAY[i].value != "" && i == x){ // blippie; more limiting conditions (perhaps) here
+						inputField = i; // Returns the array position of the field.
+						break;
+					}
+				}
+
+				return inputField;
+			}
+
+			function clearall(){
+				clearform(-1);
+			}
+
+			function arrayOfAll(){
+				var dashFrac = document.mathform.dashfrac;       // Element 0
+				var pinchFrac = document.mathform.pinchfrac;     // Element 1
+				var tspFrac = document.mathform.tspfrac;         // Element 2
+				var tbspFrac = document.mathform.tbspfrac;       // Element 3
+				var fluidozFrac = document.mathform.fluidozfrac; // Element 4
+				var cupFrac = document.mathform.cupfrac;         // Element 5
+				var pintFrac = document.mathform.pintfrac;       // Element 6
+				var quartFrac = document.mathform.quartfrac;     // Element 7
+				var gallonFrac = document.mathform.gallonfrac;   // Element 8
+				var literFrac = document.mathform.literfrac;     // Element 9
+				var dashDec = document.mathform.dashdec;         // Element 10
+				var pinchDec = document.mathform.pinchdec;       // Element 11
+				var tspDec = document.mathform.tspdec;           // Element 12
+				var tbspDec = document.mathform.tbspdec;         // Element 13
+				var fluidozDec = document.mathform.fluidozdec;   // Element 14
+				var cupDec = document.mathform.cupdec;           // Element 15
+				var pintDec = document.mathform.pintdec;         // Element 16
+				var quartDec = document.mathform.quartdec;       // Element 17
+				var gallonDec = document.mathform.gallondec;     // Element 18
+				var literDec = document.mathform.literdec;       // Element 19
+
+				// The order in which this array is built is crucial.
+				var hiThere = new Array(dashFrac, pinchFrac, tspFrac, tbspFrac, fluidozFrac, cupFrac, pintFrac, quartFrac, gallonFrac, literFrac, dashDec, pinchDec, tspDec, tbspDec, fluidozDec, cupDec, pintDec, quartDec, gallonDec, literDec);
+				return hiThere;
+			}
+
+			function calculate(){
+				var inputField = checkFocusField();
+				var inputValue = checkFocusValue();
+
+				if (checkChars(inputValue)){ // After this code block, inputValue should be a decimal.
+					inputValue = checkChars(inputValue);
+				}
+				else{
+					clearall();
+					return false;
+				}
+
+				switch (inputField){
+					case 0 :  // dash
+					case 10 : // dash
+						dashMe = inputValue;
+						break;
+
+					case 1 :  // pinch
+					case 11 : // pinch
+						dashMe = 2 * inputValue;
+						break;
+
+					case 2 :  // teaspoon
+					case 12 : // teaspoon
+						dashMe = 16 * inputValue;
+						break;
+
+					case 3 :  // tablespoon
+					case 13 : // tablespoon
+						dashMe = 48 * inputValue;
+						break;
+
+					case 4 :  // fluid ounce
+					case 14 : // fluid ounce
+						dashMe = 96 * inputValue;
+						break;
+
+					case 5 :  // cup
+					case 15 : // cup
+						dashMe = 768 * inputValue;
+						break;
+
+					case 6 :  // pint
+					case 16 : // pint
+						dashMe = 1536 * inputValue;
+						break;
+
+					case 7 :  // quart
+					case 17 : // quart
+						dashMe = 3072 * inputValue;
+						break;
+
+					case 8 :  // gallon
+					case 18 : // gallon
+						dashMe = 12288 * inputValue;
+						break;
+
+					case 9 :  // liter
+					case 19 : // liter
+						dashMe = 3264 * inputValue;
+						break;
+
+					default :
+						break;
+				}
+
+				// Conversion factors for units other than dash.
+				pinchMe = (1/2) * dashMe;
+				tspMe = (1/16) * dashMe;
+				tbspMe = (1/48) * dashMe;
+				fluidozMe = (1/96) * dashMe;
+				cupMe = (1/768) * dashMe;
+				pintMe = (1/1536) * dashMe;
+				quartMe = (1/3072) * dashMe;
+				gallonMe = (1/12288) * dashMe;
+				literMe = (1/3264) * dashMe;
+
+				// Fix rounding issues
+				if (inputField >= 9){ // If the field the user typed in is in "Fraction Units"
+					fracOrDecRounding = "frac";
+				}
+				else{
+					fracOrDecRounding = "dec";
+				}
+
+				display(1); // 1 is there because when pressing the "Calculate" button, the multiplication factor is 1.
+
+
+			}
+
+			function checkChars(theInput){ // Deal with potential illegal characters, convert fractions to decimals, handle mixed numbers by converting to decimals.
+				var myInput = theInput;
+				try{
+					var mySlash = /\//gi; // Regular expression that matches all forward slashes (i.e., "/"). Use to detect a fraction.
+					var mySpace = / /gi; // Regular expression that matches all spaces. Use to detect mixed number.
+					var myMixedNumber = /\b\d+ \d\/\d/; // Matches a  mixed number in the form "[word boundary][any number of digits][space][digit][forward slash][digit].
+
+
+					if (myInput.search(mySpace) != -1){ // Do this because if there's no space, then using a comparision operator like == on match(mySpace) throws an error.
+						if (myInput.search(mySlash) == -1 && myInput.match(mySpace).length == 1){ // If myInput contains no slash and only contains one space, which is at the end, then trim the space off and try to eval().
+							if(myInput.search(mySpace) == (myInput.length - 1)){
+								myInput = myInput.replace(mySpace, ""); // Trim off space.
+								myInput = eval(myInput); // Convert potential fractions to decimals.
+							}
+						}
+					}
+
+					if (myInput.search(myMixedNumber) != -1){ // Else if myInput contains a mixed number
+						var mySplit = myInput.split(mySpace); // Split myInput into an array whose first element is the whole number and whose second element is the fraction.
+						var theWholeNum = mySplit[0];
+						var theFraction = mySplit[1];
+						var theDecimal = eval(theWholeNum) + eval(theFraction);
+						myInput = theDecimal;
+					}
+
+					myInput = eval(myInput);
+					return myInput;
+				}
+				catch(expressionObject){
+					// clearall(); // clearall() this used to be here (blippie)
+					return false;
+				}
+			}
+
+
+			function makeFrac(valToBeRounded){ // Creates mixed number.
+				// Contract: Assumes that there are no illegal characters. Allowable chars: 0-9 and period.
+				
+				var roundMe = valToBeRounded;
+
+				if (roundMe == 0){
+					return roundMe;
+				}
+
+				else{ // If roundMe > 0
+					var wholeNum = parseInt(roundMe); // wholeNum is value right up to the decimal point, noninclusive.
+					var fracNum = roundMe - wholeNum; // fracNum is a decimal value between [0,1).
+
+					fracNum = roundToFrac(fracNum); // Now fracNum should be a string like, say, "7/8".
+
+					if (fracNum == "1"){ // If decimal rounds to 1, and roundToFrac() returns string "1", then add 1 to wholeNum and disregard fracNum.
+						var mixedNum = wholeNum + 1;
+					}
+
+					else if (fracNum == "0"){ // If decimal rounds to 0, and roundToFrac() returns string "0", then disregard fracNum.
+						var mixedNum = wholeNum;
+					}
+
+					else{ // If decimal value rounds to an actual decimal, then concatenate wholeNum string with a space and with fracNum string.
+						if (wholeNum == 0){ // Changes strings such as "0 5/8" to just "5/8".
+							var mixedNum = fracNum;
+						}
+
+						else{
+							var mixedNum = wholeNum + " " + fracNum;
+						}
+					}
+
+					return mixedNum;
+				}
+			}
+
+
+			function makeFrac2(valToBeRounded){ // Creates mixed number. Rounds to more precise sixteenth using roundToFrac2().
+				// Contract: Assumes that there are no illegal characters. Allowable chars: 0-9 and period.
+				
+				var roundMe = valToBeRounded;
+
+				if (roundMe == 0){
+					return roundMe;
+				}
+
+				else{ // If roundMe > 0
+					var wholeNum = parseInt(roundMe); // wholeNum is value right up to the decimal point, noninclusive.
+					var fracNum = roundMe - wholeNum; // fracNum is a decimal value between [0,1).
+
+					fracNum = roundToFrac2(fracNum); // Now fracNum should be a string like, say, "7/8".
+
+					if (fracNum == "1"){ // If decimal rounds to 1, and roundToFrac() returns string "1", then add 1 to wholeNum and disregard fracNum.
+						var mixedNum = wholeNum + 1;
+					}
+
+					else if (fracNum == "0"){ // If decimal rounds to 0, and roundToFrac() returns string "0", then disregard fracNum.
+						var mixedNum = wholeNum;
+					}
+
+					else{ // If decimal value rounds to an actual decimal, then concatenate wholeNum string with a space and with fracNum string.
+						if (wholeNum == 0){ // Changes strings such as "0 5/8" to just "5/8".
+							var mixedNum = fracNum;
+						}
+
+						else{
+							var mixedNum = wholeNum + " " + fracNum;
+						}
+					}
+
+					return mixedNum;
+				}
+			}
+
+			function roundToFrac(aDecimal){
+				// Contract: aDecimal must be a decimal between [0,1).
+
+				var roundedFrac; // Fractional string like "2/3" to be returned.
+
+				if (aDecimal < 0.0625){
+					roundedFrac = "0"; // This is a special case; allow for it in other functions.
+				}
+
+				else if (aDecimal < 0.1875){
+					roundedFrac = "1/8";
+				}
+
+				else if (aDecimal < 0.291667){
+					roundedFrac = "1/4";
+				}
+
+				else if (aDecimal < 0.354167){
+					roundedFrac = "1/3";
+				}
+
+				else if (aDecimal < 0.4375){
+					roundedFrac = "3/8";
+				}
+
+				else if (aDecimal < 0.5625){
+					roundedFrac = "1/2";
+				}
+
+				else if (aDecimal < 0.645833){
+					roundedFrac = "5/8";
+				}
+
+				else if (aDecimal < 0.708333){
+					roundedFrac = "2/3";
+				}
+
+				else if (aDecimal < 0.8125){
+					roundedFrac = "3/4";
+				}
+
+				else if (aDecimal < 0.9375){
+					roundedFrac = "7/8";
+				}
+
+				else if (aDecimal <  1){
+					roundedFrac = "1"; // This is a special case; allow for it in other functions.
+				}
+
+				return roundedFrac;
+			}
+
+
+			function roundToFrac2(aDecimal){
+				// Contract: aDecimal must be a decimal between [0,1).
+
+				var roundedFrac; // Fractional string like "2/3" to be returned.
+
+				if (aDecimal < 0.03125){
+					roundedFrac = "0"; // This is a special case; allow for it in other functions.
+				}
+
+				else if (aDecimal < 0.09375){
+					roundedFrac = "1/16";
+				}
+
+				else if (aDecimal < 0.15625){
+					roundedFrac = "1/8";
+				}
+
+				else if (aDecimal < 0.21875){
+					roundedFrac = "3/16";
+				}
+
+				else if (aDecimal < 0.28125){
+					roundedFrac = "1/4";
+				}
+
+				else if (aDecimal < 0.322916){
+					roundedFrac = "5/16";
+				}
+
+				else if (aDecimal < 0.354166){
+					roundedFrac = "1/3";
+				}
+
+				else if (aDecimal < 0.40625){
+					roundedFrac = "3/8";
+				}
+
+				else if (aDecimal < 0.46875){
+					roundedFrac = "7/16";
+				}
+
+				else if (aDecimal < 0.53125){
+					roundedFrac = "1/2";
+				}
+
+				else if (aDecimal < 0.59375){
+					roundedFrac = "9/16";
+				}
+
+				else if (aDecimal < 0.645833){
+					roundedFrac = "5/8";
+				}
+
+				else if (aDecimal < 0.677083){
+					roundedFrac = "2/3";
+				}
+
+				else if (aDecimal < 0.71875){
+					roundedFrac = "11/16";
+				}
+
+				else if (aDecimal < 0.78125){
+					roundedFrac = "3/4";
+				}
+
+				else if (aDecimal < 0.84375){
+					roundedFrac = "13/16";
+				}
+
+				else if (aDecimal < 0.90625){
+					roundedFrac = "7/8";
+				}
+
+				else if (aDecimal < 0.96875){
+					roundedFrac = "15/16";
+				}
+
+				else if (aDecimal <  1){
+					roundedFrac = "1"; // This is a special case; allow for it in other functions.
+				}
+
+				return roundedFrac;
+			}
+
+
+			function roundDec(theValue){ // Rounds a value to a specified number of decimal places and returns it.
+				var inputValue = theValue;
+				var sigDigits = 4; // Amount of decimal places to which to round.
+				var div = Math.pow(10, sigDigits);
+				inputValue = Math.round(inputValue * div) / div;
+				return inputValue;
+			}
+
+			function clearform(theFieldToStay){
+				var kitchenElements = arrayOfAll();
+				for (var i = 0; i < kitchenElements.length; i++){
+					if (i != theFieldToStay){
+						kitchenElements[i].value = "";
+					}
+				}
+
+				document.multiplyform.multiplyinput.value = "";
+			}
+
+			function display(theMultiplier){ // Set theMultiplier to 1 to ignore multiplying of all values. Set it to values other than one to use with the "Multiply Values" button.
+				// Add a try...catch function to check that the multiplier is a floating point number (i.e., will return a real value when parseFloat() is used on it).
+
+				var MULTIPLIER = theMultiplier;
+
+				var dashFrac = makeFrac(eval(MULTIPLIER * dashMe));
+				var pinchFrac = makeFrac(eval(MULTIPLIER * pinchMe));
+				var tspFrac = makeFrac(eval(MULTIPLIER * tspMe));
+				var tbspFrac = makeFrac(eval(MULTIPLIER * tbspMe));
+				var fluidozFrac = makeFrac(eval(MULTIPLIER * fluidozMe));
+				var cupFrac = makeFrac2(eval(MULTIPLIER * cupMe));
+				var pintFrac = makeFrac2(eval(MULTIPLIER * pintMe));
+				var quartFrac = makeFrac2(eval(MULTIPLIER * quartMe));
+				var gallonFrac = makeFrac2(eval(MULTIPLIER * gallonMe));
+				var literFrac = makeFrac2(eval(MULTIPLIER * literMe));
+				var dashDec = roundDec(eval(MULTIPLIER * dashMe));
+				var pinchDec = roundDec(eval(MULTIPLIER * pinchMe));
+				var tspDec = roundDec(eval(MULTIPLIER * tspMe));
+				var tbspDec = roundDec(eval(MULTIPLIER * tbspMe));
+				var fluidozDec = roundDec(eval(MULTIPLIER * fluidozMe));
+				var cupDec = roundDec(eval(MULTIPLIER * cupMe));
+				var pintDec = roundDec(eval(MULTIPLIER * pintMe));
+				var quartDec = roundDec(eval(MULTIPLIER * quartMe));
+				var gallonDec = roundDec(eval(MULTIPLIER * gallonMe));
+				var literDec = roundDec(eval(MULTIPLIER * literMe));
+
+				// Deal with some rounding issues, and more importantly, re-initialize values of dashMe-like variables to be current value (so "Multiply Values" works more than once).
+				if (fracOrDecRounding == "frac"){
+					dashMe = dashFrac;
+					pinchMe = pinchFrac;
+					tspMe = tspFrac;
+					tbspMe = tbspFrac;
+					fluidozMe = fluidozFrac;
+					cupMe = cupFrac;
+					pintMe = pintFrac;
+					quartMe = quartFrac;
+					gallonMe = gallonFrac;
+					literMe = literFrac;
+				}
+				else{
+					dashMe = dashDec;
+					pinchMe = pinchDec;
+					tspMe = tspDec;
+					tbspMe = tbspDec;
+					fluidozMe = fluidozDec;
+					cupMe = cupDec;
+					pintMe = pintDec;
+					quartMe = quartDec;
+					gallonMe = gallonDec;
+					literMe = literDec;
+				}
+
+				// Finally, change the values of the HTML <input type="text"> boxes to reflect the variables.
+				ALLARRAY[0].value = dashFrac;
+				ALLARRAY[1].value = pinchFrac;
+				ALLARRAY[2].value = tspFrac;
+				ALLARRAY[3].value = tbspFrac;
+				ALLARRAY[4].value = fluidozFrac;
+				ALLARRAY[5].value = cupFrac;
+				ALLARRAY[6].value = pintFrac;
+				ALLARRAY[7].value = quartFrac;
+				ALLARRAY[8].value = gallonFrac;
+				ALLARRAY[9].value = literFrac;
+				ALLARRAY[10].value = dashDec;
+				ALLARRAY[11].value = pinchDec;
+				ALLARRAY[12].value = tspDec;
+				ALLARRAY[13].value = tbspDec;
+				ALLARRAY[14].value = fluidozDec;
+				ALLARRAY[15].value = cupDec;
+				ALLARRAY[16].value = pintDec;
+				ALLARRAY[17].value = quartDec;
+				ALLARRAY[18].value = gallonDec;
+				ALLARRAY[19].value = literDec;
+			}
+
+		// -->
+	</SCRIPT>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2967578-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</HEAD>
+<BODY BGCOLOR="eeeeee" onload="loadMe()" onkeypress="funcKeypress()">
+
+	<!-- MotionNET.com Horizontal Bar -->
+	<!-- menu_items.js must be stored locally because it contains the code for accessing the help menu (and possibly "Clear All Fields", which is not something universal). -->
+	<SCRIPT LANGUAGE="JavaScript" SRC="/js/menu.js"></SCRIPT>
+	<SCRIPT LANGUAGE="JavaScript" src="/js/menu_items.js"></SCRIPT>
+	<SCRIPT LANGUAGE="JavaScript" src="/js/menu_tpl.js"></SCRIPT>
+	<SCRIPT LANGUAGE="JavaScript">
+		//<!--
+		new menu (MENU_ITEMS, MENU_POS, MENU_STYLES);
+		//-->
+	</SCRIPT>
+	<TABLE WIDTH="100%" BGCOLOR="#000000" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+		<TR>
+			<TD WIDTH="15" HEIGHT="21" VALIGN="top" BACKGROUND="/images/submenu_background.gif">&nbsp;</TD>
+			<TD HEIGHT="21" VALIGN="top" BACKGROUND="/images/submenu_background.gif" CLASS="pagetitle">
+				KitchenMath.com
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH="15" HEIGHT="17" VALIGN="top"></TD>
+			<TD HEIGHT="17"></TD>
+		</TR>
+	</TABLE>
+	<!-- End Horizontal Bar -->
+
+
+	<form name="mathform">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td width="15" valign="middle">&nbsp;</td>
+			<td width="125" rowspan="5" valign="middle">
+				<strong>Fraction Units:</strong>
+				<br>
+				<small>Top row rounded to nearest eighth or third; bottom row, to nearest sixteenth or third.</small>
+			</td>
+			<td width="82" align="center" valign="top">Dash</td>
+			<td width="82" align="center" valign="top">Pinch</td>
+			<td width="82" align="center" valign="top">Teaspoon</td>
+			<td width="82" align="center" valign="top">Tablespoon</td>
+			<td width="82" align="center" valign="top">Fluid Ounce</td>
+		</tr>
+		<tr>
+			<td width="15" valign="middle">&nbsp;</td>
+			<td width="82" align="center" valign="top">
+				<!-- Dash box-->
+				<input type="text" name="dashfrac" style="width: 82px" onfocus="clearform(0)">
+			</td>
+			<td width="82" align="center" valign="top">
+				<!-- Pinch box -->
+				<input type="text" name="pinchfrac" style="width: 82px" onfocus="clearform(1)">
+			</td>
+			<td width="82" align="center" valign="top">
+				<!-- Teaspoon box -->
+				<input type="text" name="tspfrac" style="width: 82px" onfocus="clearform(2)">
+			</td>
+			<td width="82" align="center" valign="top">
+				<!-- Tablespoon box -->
+				<input type="text" name="tbspfrac" style="width: 82px" onfocus="clearform(3)">
+			</td>
+			<td width="82" align="center" valign="top">
+				<!-- Fluid Ounce box -->
+				<input type="text" name="fluidozfrac" style="width: 82px" onfocus="clearform(4)">
+		</tr>
+		<tr>
+			<td width="15" valign="middle">&nbsp;</td>
+			<td width="82" align="center" valign="top">Cup</td>
+			<td width="82" align="center" valign="top">Pint</td>
+			<td width="82" align="center" valign="top">Quart</td>
+			<td width="82" align="center" valign="top">Gallon</td>
+			<td width="82" align="center" valign="top">Liter</td>
+		</tr>
+		<tr>
+			<td width="15" valign="middle">&nbsp;</td>
+			<td width="82" align="center" valign="top">
+				<!-- Cup box -->
+				<input type="text" name="cupfrac" style="width: 82px" onfocus="clearform(5)">
+			</td>
+			<td width="82" align="center" valign="top">
+				<!-- Pint box -->
+				<input type="text" name="pintfrac" style="width: 82px" onfocus="clearform(6)">
+			</td>
+			<td width="82" align="center" valign="top">
+				<!-- Quart box -->
+				<input type="text" name="quartfrac" style="width: 82px" onfocus="clearform(7)">
+			</td>
+			<td width="82" align="center" valign="top">
+				<!-- Gallon box -->
+				<input type="text" name="gallonfrac" style="width: 82px" onfocus="clearform(8)">
+			<td width="82" align="center" valign="top">
+				<!-- Liter box -->
+				<input type="text" name="literfrac" style="width: 82px" onfocus="clearform(9)">
+			</td>
+		</tr>
+		<tr>
+			<td width="15" valign="middle">&nbsp;</td>
+			<td colspan="5" valign="top">
+				<input type="button" name="calcbutton" style="width: 123px" value="Calculate" onclick="calculate(); return false"><input type="button" name="clearbutton" style="width: 123px" value="Clear All Fields" onclick="clearall()">
+			</td>
+		</tr>
+	</table>
+
+	<hr size="1" noshade>
+
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td width="15" valign="middle">&nbsp;</td>
+			<td width="125" rowspan="5" valign="middle">
+				<strong>Decimal Units:</strong>
+				<br>
+				<small>Rounded to four decimal places</small>
+			</td>
+			<td width="82" align="center" valign="top">Dash</td>
+			<td width="82" align="center" valign="top">Pinch</td>
+			<td width="82" align="center" valign="top">Teaspoon</td>
+			<td width="82" align="center" valign="top">Tablespoon</td>
+			<td width="82" align="center" valign="top">Fluid Ounce</td>
+		</tr>
+		<tr>
+			<td width="15" valign="middle">&nbsp;</td>
+			<td width="82" align="center" valign="top">
+				<!-- Dash box-->
+				<input type="text" name="dashdec" style="width: 82px" onfocus="clearform(10)">
+			</td>
+			<td width="82" align="center" valign="top">
+				<!-- Pinch box -->
+				<input type="text" name="pinchdec" style="width: 82px" onfocus="clearform(11)">
+			</td>
+			<td width="82" align="center" valign="top">
+				<!-- Teaspoon box -->
+				<input type="text" name="tspdec" style="width: 82px" onfocus="clearform(12)">
+			</td>
+			<td width="82" align="center" valign="top">
+				<!-- Tablespoon box -->
+				<input type="text" name="tbspdec" style="width: 82px" onfocus="clearform(13)">
+			</td>
+			<td width="82" align="center" valign="top">
+				<!-- Fluid Ounce box -->
+				<input type="text" name="fluidozdec" style="width: 82px" onfocus="clearform(14)">
+		</tr>
+		<tr>
+			<td width="15" valign="middle">&nbsp;</td>
+			<td width="82" align="center" valign="top">Cup</td>
+			<td width="82" align="center" valign="top">Pint</td>
+			<td width="82" align="center" valign="top">Quart</td>
+			<td width="82" align="center" valign="top">Gallon</td>
+			<td width="82" align="center" valign="top">Liter</td>
+		</tr>
+		<tr>
+			<td width="15" valign="middle">&nbsp;</td>
+			<td width="82" align="center" valign="top">
+				<!-- Cup box -->
+				<input type="text" name="cupdec" style="width: 82px" onfocus="clearform(15)">
+			</td>
+			<td width="82" align="center" valign="top">
+				<!-- Pint box -->
+				<input type="text" name="pintdec" style="width: 82px" onfocus="clearform(16)">
+			</td>
+			<td width="82" align="center" valign="top">
+				<!-- Quart box -->
+				<input type="text" name="quartdec" style="width: 82px" onfocus="clearform(17)">
+			</td>
+			<td width="82" align="center" valign="top">
+				<!-- Gallon box -->
+				<input type="text" name="gallondec" style="width: 82px" onfocus="clearform(18)">
+			<td width="82" align="center" valign="top">
+				<!-- Liter box -->
+				<input type="text" name="literdec" style="width: 82px" onfocus="clearform(19)">
+			</td>
+		</tr>
+		<tr>
+			<td width="15" valign="middle">&nbsp;</td>
+			<td colspan="5" valign="top">
+				<input type="button" name="calcbutton2" style="width: 123px" value="Calculate" onclick="calculate(); return false"><input type="button" name="clearbutton2" style="width: 123px" value="Clear All Fields" onclick="clearall()">
+			</td>
+		</tr>
+	</table>
+</form>
+	<hr size="1" noshade>
+
+	<form name="multiplyform" onsubmit="calculate(); display(document.multiplyform.multiplyinput.value); return false">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td width="15" valign="middle">&nbsp;</td>
+			<td width="125" valign="middle">&nbsp;</td>
+			<td>
+				Multiply values by:
+				<br>
+				<input type="text" name="multiplyinput" style="width: 82px">
+				<input type="button" name="multiplybutton" value="Multiply" style="width: 82px" onclick="calculate(); display(document.multiplyform.multiplyinput.value); return false">
+			</td>
+		</tr>
+	</table>
+	</form>
+
+	<p></p>
+
+
+
+<TABLE cellpadding=13 cellspacing=0 WIDTH=600 HEIGHT=80><TR><TD>
+<a href="http://www.kitchenmath.com" title=home><FONT CLASS=title>KitchenMath.com</font></a><BR>
+<FONT CLASS=SMALL><i>Free Online Units Converter -- Rev. 2.10</i>
+<BR><a href=http://www.motionnet.com style="font-face:arial; font-size:10; color:000000; text-decoration:none;">&copy; MotionNET.com</a>
+<BR><BR><FONT COLOR=eeeeee SIZE=-4><!--#EXEC CGI="/cgi-bin/sendfile.exe?File=PageLoads&PageLoadSiteName=KitchenMath"--> pageloads since 03/18/2002</FONT>
+</TD></TR></TABLE>
+
+
+
+
+
+	<!-- KitchenMath Help Menu -->
+	<DIV ID="helpmenu" STYLE="z-index:3;position:absolute; padding: 5px; top:38px; left:328px; width:250; height:233; visibility:hidden; background-color:ffffff; border-width: 1px; border-color: #000000; border-style: solid;">
+		KitchenMath <STRONG>Help</STRONG>
+		<HR SIZE=1 WIDTH="100%" COLOR="#000000">
+		<SPAN ID="helpitem1" STYLE="display: inline">
+			<FONT COLOR="#FF0000">Directions:</FONT>
+			<BR>
+			<SMALL>
+				<FONT COLOR="#ff0000">Step 1:</FONT> Type or paste a fraction or decimal value into any field.
+				<BR>
+				<FONT COLOR="#ff0000">Step 2:</FONT> Press enter while in a field or Click "Calculate" to convert that value to all of the other related units. Units will be rounded to the listed fractional or decimal value.
+				<BR><BR>
+				(Please note that this and other free services of MotionNET are provided on an "as is" basis, without warranty of any kind, either expressed or implied. Additionally, while these pages have been verified to work correctly on the most recent versions of Internet Explorer and Netscape Navigator, they may not work on older versions.)
+				<br><br>
+				You may e-mail suggestions to <a href="mailto:kitchenmath@kitchenmath.com?subject=KitchenMath.com Website Suggestions" style="a.hover (color:ff0000; background-color:transparent;)">KitchenMath@KitchenMath.com</a>.
+			</SMALL>
+		</SPAN>
+		<BR><BR>
+		<HR SIZE=1 WIDTH="100%" COLOR="#000000">
+		<SMALL><A HREF="#" ONMOUSEOVER="togglevisi(helpmenu)">Hide this menu.</A></SMALL>
+	</DIV>
+</BODY>
+</HTML>

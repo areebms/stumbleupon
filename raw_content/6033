@@ -1,0 +1,661 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     <link rel="stylesheet" href="http://cdn.i-dressup.com/cdn/static/css/site.css" type="text/css" />
+    <link rel="stylesheet" href="http://cdn.i-dressup.com/cdn/static/js/jquery.tooltip.css" type="text/css" />
+    <meta name="description"  content="Project Runway - Daniel Vosovic Dress up Games, Dress up games for people who love fashion.">
+    <meta name="keywords" content="Chanel, Prada, Versace and more">
+    <title>Dress up Games: Project Runway - Daniel Vosovic by i-Dressup.com</title>
+
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+    <script type="text/javascript" src="http://api.conduit.com/ToolbarApi.js"></script>
+    <script type="text/javascript" src="http://cdn.i-dressup.com/cdn/static/js/jquery.min.1.4.2.js"></script>
+    <script type="text/javascript" src="http://cdn.i-dressup.com/cdn/static/js/swfobject/swfobject.js"></script>
+    <script type="text/javascript" src="http://cdn.i-dressup.com/cdn/static/js/common.js"></script>
+    <script type="text/javascript" src="http://cdn.i-dressup.com/cdn/static/js/jquery.tooltip.min.js"></script>
+    <script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-132425-2']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+</script>
+	  <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+	  </script>
+	  <script type='text/javascript'>
+	  GS_googleAddAdSenseService("ca-pub-4906431666602100");
+	  GS_googleEnableAllServices();
+	  </script>
+	  <script type='text/javascript'>
+	  GA_googleAddSlot("ca-pub-4906431666602100", "120_600details");
+	   GA_googleAddSlot("ca-pub-4906431666602100", "home_160");
+	  </script>
+	  <script type='text/javascript'>
+	  GA_googleFetchAds();
+</script>
+
+
+    <script type="text/javascript" src="http://cdn.i-dressup.com/cdn/static/js/jquery.form.js"></script>
+    <script type="text/javascript" src="http://cdn.i-dressup.com/cdn/static/js/jquery.blockUI.js"></script>
+    <script type="text/javascript" src="http://cdn.i-dressup.com/cdn/xheditor/xheditor-en.min.js"></script>
+    <script type="text/javascript" src="http://cdn.i-dressup.com/cdn/xheditor/editor.js"></script>
+    <script type="text/javascript">
+    var __EDITOR_LOWER_LEVEL     = 5;
+    var __EDITOR_DEFAULT_CONTENT = 'You must be level 5 or higher to type your own words';
+    var __EDITOR_CUR_USER_LEVEL  = 1;
+    var __EDITOR_NUM_IMGS_CAN_USE_MSG = 'You can add %s image(s) more.';
+    var __EDITOR_MAX_IMGS_CAN_USE = 10;
+    var __EDITOR_MAX_IMGS_CAN_USE_MSG = 'The maximum number of images allowed is %s';
+    </script>
+    <script type="text/javascript">
+    var __CURRENT_USER_IS_ACTIVATED = false;
+    var __CURRENT_USER = '';
+    var __CURRENT_USER_EMAIL = '';
+    var __CURRENT_USER_ON_SAFE_MODE = false;
+    
+
+    function lockInput() {
+	if (__CURRENT_USER_ON_SAFE_MODE && __CURRENT_USER) {
+	    alert('Please ask your parent to email i-Dressup staff to deselect the safe mode. Please use the parent email registered with your account.');
+	    return true;
+	}
+	return false;
+    }
+
+	$(function() {
+
+	$('#link-video-tour').click(function () {
+		$.blockUI({
+			message: $("#video-tour"),
+			overlayCSS: { backgroundColor: 'transparent', cursor: 'pointer' },
+			css: {
+				width: '740px',
+				height: '430px',
+				top:  ($(window).height() - 430) /2 + 'px',
+				left: ($(window).width() - 740) /2 + 'px',
+				cursor: 'default',
+				padding: '0px',
+				border: 'none'
+			}
+		});
+	});
+
+	$('#link-close-tour').click(function () {
+		$.unblockUI();
+	});
+
+	});
+
+
+    
+    </script>
+
+</head>
+<body>
+    <div id="wrapper">
+                <div id="sub-header">
+            <label><strong>Activities: </strong>Surprise! Welcome to the fashionable and ABSOLUTELY FREE i-Dressup!. <a href="/join.php">Join now for details</a></label>
+            <a href="/needicoins.php" title="Add iCoins">Add iCoins</a>&nbsp;|&nbsp;
+            <a href="http://freeidressup.ourtoolbar.com/exe">Free i-Dressup Toolbar</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" onclick="$.idressup.showLoginForm();" class="dark">Login</a>&nbsp;|&nbsp;
+            <a href="#" onclick="$.idressup.showRegisterForm();" class="dark">Register</a>
+        </div>
+                <div id="header">
+            <a href="/" title="Home" class="site-logo" onfocus="this.blur()">i-dressup</a>
+            <div class="banner">
+                <iframe src="/adver728.php" scrolling="no" frameborder="0" marginheight="0" marginwidth="0" style="width:728px;height:90px"></iframe>
+            </div>
+            <div class="site-navigation" style="z-index: 1000;">
+                <div class="lft-edge"></div>
+                <ul class="catalog" id="catalog">
+                                        <li>
+                                                <a class="home" title="Home" href="/">Home</a>
+                                                                    </li>
+                                        <li>
+                                                <a class="selected" title="Games" href="/gamelist_by_date.php"><span>Games</span></a>
+                                                                        <ul>
+                                                    <li>
+                                <a class="first" title="New" href="/gamelist_by_date.php">New</a>
+                            </li>
+                                                    <li>
+                                <a title="Popular" href="/gamelist_by_pop.php">Popular</a>
+                            </li>
+                                                    <li>
+                                <a title="User Collections" href="/usercollections.php">User Collections</a>
+                            </li>
+                                                    <li>
+                                <a class="selected" title="Fashion" href="/fashion/">Fashion</a>
+                            </li>
+                                                    <li>
+                                <a title="Barbie" href="/barbie/">Barbie</a>
+                            </li>
+                                                    <li>
+                                <a title="Room" href="/room/">Room</a>
+                            </li>
+                                                    <li>
+                                <a title="Celebrities" href="/celebrities/">Celebrities</a>
+                            </li>
+                                                    <li>
+                                <a title="Girls" href="/girls/">Girls</a>
+                            </li>
+                                                    <li>
+                                <a title="Fantasy" href="/fantasy/">Fantasy</a>
+                            </li>
+                                                </ul>
+                                            </li>
+                                        <li>
+                                                <a class="" title="My iZone" href="/izone.php"><span>My iZone</span></a>
+                                                                        <ul>
+                                                    <li>
+                                <a class="first" title="Room" href="/izone.php">Room</a>
+                            </li>
+                                                    <li>
+                                <a title="Primp Me" href="/primpme.php">Primp Me</a>
+                            </li>
+                                                    <li>
+                                <a title="My Runway" href="/myrunway.php">My Runway</a>
+                            </li>
+                                                    <li>
+                                <a title="Blog" href="/blog.php">Blog</a>
+                            </li>
+                                                    <li>
+                                <a title="Album" href="/album.php">Album</a>
+                            </li>
+                                                    <li>
+                                <a title="Messages" href="/messages.php">Messages</a>
+                            </li>
+                                                    <li>
+                                <a title="Friends" href="/friends.php">Friends</a>
+                            </li>
+                                                    <li>
+                                <a title="My Store" href="/marketplace.php?store=0">My Store</a>
+                            </li>
+                                                    <li>
+                                <a title="My Pictures" href="/pictures.php">My Pictures</a>
+                            </li>
+                                                    <li>
+                                <a title="Account" href="/account.php">Account</a>
+                            </li>
+                                                </ul>
+                                            </li>
+                                        <li>
+                                                <a class="" title="Shops" href="/fashionavenue.php"><span>Shops</span></a>
+                                                                        <ul>
+                                                    <li>
+                                <a class="first" title="Fashion Avenue" href="/fashionavenue.php">Fashion Avenue</a>
+                            </li>
+                                                    <li>
+                                <a title="Marketplace" href="/marketplace.php">Marketplace</a>
+                            </li>
+                                                    <li>
+                                <a title="Pet Shop" href="/petshop.php">Pet Shop</a>
+                            </li>
+                                                    <li>
+                                <a title="Gift Store" href="/giftshop.php">Gift Store</a>
+                            </li>
+                                                    <li>
+                                <a title="Rare Stuff" href="/rarestuff.php">Rare Stuff</a>
+                            </li>
+                                                    <li>
+                                <a title="Gameway" href="/gameway.php">Gameway</a>
+                            </li>
+                                                </ul>
+                                            </li>
+                                        <li>
+                                                <a class="icon_contest" title="Contests" href="/contests.php"><span>Contests</span></a>
+                                                                        <ul>
+                                                    <li>
+                                <a class="first" title="Contest Home" href="/contests.php">Contest Home</a>
+                            </li>
+                                                    <li>
+                                <a title="Top Model" href="/contest_top_models.php">Top Model</a>
+                            </li>
+                                                    <li>
+                                <a title="Hottest D.I.Y Design" href="/contest_hottest_design.php">Hottest D.I.Y Design</a>
+                            </li>
+                                                    <li>
+                                <a title="Designer Collection" href="/contest_designer_collection.php">Designer Collection</a>
+                            </li>
+                                                    <li>
+                                <a title="Fashion Party" href="/party_user.php">Fashion Party</a>
+                            </li>
+                                                </ul>
+                                            </li>
+                                        <li>
+                                                <a class="" title="Design" href="/idesign.php"><span>Design</span></a>
+                                                                        <ul>
+                                                    <li>
+                                <a class="first" title="Fashion Fabric House" href="/idesign.php?room=fabric">Fashion Fabric House</a>
+                            </li>
+                                                    <li>
+                                <a title="Patchwork Design" href="/idesign.php?room=patchwork">Patchwork Design</a>
+                            </li>
+                                                    <li>
+                                <a title="Decor Design" href="/idesign.php?room=decor">Decor Design</a>
+                            </li>
+                                                    <li>
+                                <a title="D.I.Y" href="/fashionavenue.php?brand=diy0">D.I.Y</a>
+                            </li>
+                                                </ul>
+                                            </li>
+                                        <li>
+                                                <a class="" title="Music&Art" href="/musicbox.php"><span>Music&Art</span></a>
+                                                                        <ul>
+                                                    <li>
+                                <a class="first" title="Music Box" href="/musicbox.php">Music Box</a>
+                            </li>
+                                                    <li>
+                                <a title="Create eArt" href="/eart_create.php">Create eArt</a>
+                            </li>
+                                                    <li>
+                                <a title="Browse Artworks" href="/eart/">Browse Artworks</a>
+                            </li>
+                                                    <li>
+                                <a title="Browse eCards" href="/ecard/">Browse eCards</a>
+                            </li>
+                                                    <li>
+                                <a title="My Artworks" href="/eart_user.php">My Artworks</a>
+                            </li>
+                                                    <li>
+                                <a title="Art Gallery" href="/artgallery.php">Art Gallery</a>
+                            </li>
+                                                </ul>
+                                            </li>
+                                        <li>
+                                                <a title="Help" href="/faq.php"><span>Help</span></a>
+                                                                    </li>
+                                        <li>
+                                                <a class="" title="Video Tour" href="#" id="link-video-tour" onclick="so_tour.write('swf-video-tour'); return false;"><span>Video Tour</span></a>
+						                                            </li>
+                                    </ul>
+                <div class="search">
+		    <div class="search-text">
+			<input type="text" name="keyword" id="search-keywords-handler" />
+			<input type="hidden" name="search-type" id="search-options-handler" />
+		    </div>
+		    <div class="search-options" id="search-options">
+			<label></label>
+			<div>
+			    <a href="#friends">Friends</a>
+			    <a href="#games">Games</a>
+			</div>
+		    </div>
+		    <button class="search-button" name="search" type="button" id="general-search">Search</button>
+                </div>
+                <div class="rght-edge"></div>
+                <ul id="catalog-childs" class="catalog-childs"></ul>
+            </div>
+        </div>
+				<div id="video-tour" style="position: relative; display:none; width:720px; height:410px; background:#fff; padding:30px 10px 10px 10px; border: solid 1px #d37aaa; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;"><p style="display:block; position: absolute; top:7px; left:10px;"><strong>Video Tour</strong></p><a href="#" onclick="return false;" id="link-close-tour" style="display:block; position: absolute; top:5px; right:5px;"><img src="http://cdn.i-dressup.com/cdn/static/image/icons/send-msg-close.png"></a><div id="swf-video-tour"></div></div>
+		<script type="text/javascript">
+		// <![CDATA[
+		var so_tour = new SWFObject('http://cdn.i-dressup.com/cdn/Tour720X410.swf?version=1', 'Tour_swf', '720', '410', '8', '#FFFFFF');
+		so_tour.addParam("menu", false);
+		so_tour.addParam("wmode", "transparent");
+		// ]]>
+		</script>
+		
+							
+        <div id="content">    <div class="page-navigation">
+        <ul>
+	                <li><label><img src="http://cdn.i-dressup.com/cdn/static/img/gameicon/all.gif" /></label><a href="/fashion/" title="All">All</a></li>
+	                <li><label><img src="http://cdn.i-dressup.com/cdn/static/img/gameicon/designer-labels.gif" /></label><a href="/gamelist_by_cate.php?sub=1" title="Designer Labels">Designer Labels</a></li>
+	    	    <li style="font-weight: bold; font-size: 14px;"><label>&raquo;</label>Project Runway - Daniel Vosovic</li>
+        </ul>
+	<a href="/myrunway.php" class="button-create" title="Create Your Own Game"><img src="http://cdn.i-dressup.com/cdn/static/image/btn_create_game.gif" alt="Create Your Own Game"></a>
+		<label class="nextgame" id="next-game" url="/fashion/chic/Arden_B.php">
+	    <img src="http://cdn.i-dressup.com/cdn/gamepic/Arden_B.jpg" art="Arden B" />
+	    <span>Next game:</span>
+	    <span class="game">Arden B</span>
+	</label>
+	    </div>
+    <div id="preselecteds" style="display:none">
+        <ul><li><a class="preselected-anchor" href="#">Hello</a><ul><li><a class="preselected-anchor" href="#">Hi</a><ul><li><a class="preselected-anchor" href="#">Hi there!</a></li><li><a class="preselected-anchor" href="#">Hello</a></li><li><a class="preselected-anchor" href="#">Hi every one</a></li></ul></li><li><a class="preselected-anchor" href="#">Welcome</a><ul><li><a class="preselected-anchor" href="#">Welcome to my iZone!</a></li><li><a class="preselected-anchor" href="#">Check out my iZone!</a></li></ul></li><li><a class="preselected-anchor" href="#">Hey There</a></li><li><a class="preselected-anchor" href="#">Good Day</a><ul><li><a class="preselected-anchor" href="#">Good morning!</a></li><li><a class="preselected-anchor" href="#">Good afternoon!</a></li><li><a class="preselected-anchor" href="#">Good evening!</a></li><li><a class="preselected-anchor" href="#">Good night!</a></li></ul></li><li><a class="preselected-anchor" href="#">What's up?</a><ul><li><a class="preselected-anchor" href="#">How are you doing?</a></li><li><a class="preselected-anchor" href="#">How is it going?</a></li><li><a class="preselected-anchor" href="#">What's new?</a></li><li><a class="preselected-anchor" href="#">Waz up?</a></li><li><a class="preselected-anchor" href="#">Hulloo!</a></li><li><a class="preselected-anchor" href="#">Ahoy!</a></li></ul></li></ul></li><li><a class="preselected-anchor" href="#">Goodbye</a><ul><li><a class="preselected-anchor" href="#">Later</a></li><li><a class="preselected-anchor" href="#">Bye</a></li><li><a class="preselected-anchor" href="#">I'll be right back</a></li><li><a class="preselected-anchor" href="#">I have to go</a></li><li><a class="preselected-anchor" href="#">See you tomorrow!</a></li><li><a class="preselected-anchor" href="#">See you later</a></li><li><a class="preselected-anchor" href="#">Farewell</a><ul><li><a class="preselected-anchor" href="#">Have a nice day!</a></li><li><a class="preselected-anchor" href="#">Take care.</a></li><li><a class="preselected-anchor" href="#">Good luck!</a></li><li><a class="preselected-anchor" href="#">Enjoy!</a></li><li><a class="preselected-anchor" href="#">Ciao.</a></li><li><a class="preselected-anchor" href="#">Cheers.</a></li></ul></li></ul></li><li><a class="preselected-anchor" href="#">Friend</a><ul><li><a class="preselected-anchor" href="#">Please add me as friend</a></li><li><a class="preselected-anchor" href="#">Vote for me please</a></li><li><a class="preselected-anchor" href="#">Wanna be friends?</a></li><li><a class="preselected-anchor" href="#">I like...</a><ul><li><a class="preselected-anchor" href="#">I like your outfits!</a></li><li><a class="preselected-anchor" href="#">I like your decoration.</a></li><li><a class="preselected-anchor" href="#">I like your hair.</a></li><li><a class="preselected-anchor" href="#">I like your design!</a></li><li><a class="preselected-anchor" href="#">Great! Love it!</a></li></ul></li><li><a class="preselected-anchor" href="#">Thank you</a><ul><li><a class="preselected-anchor" href="#">Thanks a lot!</a></li><li><a class="preselected-anchor" href="#">Thanks for the vote!</a></li><li><a class="preselected-anchor" href="#">No, thank you.</a></li><li><a class="preselected-anchor" href="#">Thanks for visiting.</a></li></ul></li><li><a class="preselected-anchor" href="#">No problem</a></li><li><a class="preselected-anchor" href="#">You are...</a><ul><li><a class="preselected-anchor" href="#">You are awesome!</a></li><li><a class="preselected-anchor" href="#">You look very pretty!</a></li><li><a class="preselected-anchor" href="#">You are funny.</a></li><li><a class="preselected-anchor" href="#">You are cool.</a></li><li><a class="preselected-anchor" href="#">You are silly.</a></li><li><a class="preselected-anchor" href="#">You are a good friend.</a></li></ul></li></ul></li><li><a class="preselected-anchor" href="#">iZone</a><ul><li><a class="preselected-anchor" href="#">Nice decoration!</a></li><li><a class="preselected-anchor" href="#">Cool iZone.</a></li><li><a class="preselected-anchor" href="#">Awesome rooms</a></li></ul></li><li><a class="preselected-anchor" href="#">Sorry</a><ul><li><a class="preselected-anchor" href="#">Sorry, I need to go.</a></li><li><a class="preselected-anchor" href="#">Sorry, I am busy.</a></li><li><a class="preselected-anchor" href="#">Please forgive me.</a></li><li><a class="preselected-anchor" href="#">That's OK.</a></li></ul></li><li><a class="preselected-anchor" href="#">Questions</a><ul><li><a class="preselected-anchor" href="#">What</a><ul><li><a class="preselected-anchor" href="#">What is your favorite music?</a></li><li><a class="preselected-anchor" href="#">What is your favorite type of game?</a></li><li><a class="preselected-anchor" href="#">What is your favorite style?</a></li><li><a class="preselected-anchor" href="#">What are your hobbies?</a></li><li><a class="preselected-anchor" href="#">What is your favorite animal?</a></li></ul></li><li><a class="preselected-anchor" href="#">Where</a><ul><li><a class="preselected-anchor" href="#">Where do you want to go?</a></li><li><a class="preselected-anchor" href="#">Where are you from?</a></li><li><a class="preselected-anchor" href="#">Where did you find that?</a></li></ul></li><li><a class="preselected-anchor" href="#">When</a><ul><li><a class="preselected-anchor" href="#">When is your contest?</a></li><li><a class="preselected-anchor" href="#">When does that begin?</a></li></ul></li><li><a class="preselected-anchor" href="#">How</a><ul><li><a class="preselected-anchor" href="#">How did you do that?</a></li></ul></li></ul></li><li><a class="preselected-anchor" href="#">Answers</a><ul><li><a class="preselected-anchor" href="#">Music</a><ul><li><a class="preselected-anchor" href="#">Pop</a></li><li><a class="preselected-anchor" href="#">Jazz</a></li><li><a class="preselected-anchor" href="#">Country</a></li><li><a class="preselected-anchor" href="#">Classical</a></li><li><a class="preselected-anchor" href="#">Rap</a></li><li><a class="preselected-anchor" href="#">Hip Hop</a></li><li><a class="preselected-anchor" href="#">Rock</a></li><li><a class="preselected-anchor" href="#">Heavy Metal</a></li><li><a class="preselected-anchor" href="#">Techno</a></li></ul></li><li><a class="preselected-anchor" href="#">Hobbies</a><ul><li><a class="preselected-anchor" href="#">Reading</a></li><li><a class="preselected-anchor" href="#">Dance</a></li><li><a class="preselected-anchor" href="#">Online games</a></li><li><a class="preselected-anchor" href="#">Music</a></li><li><a class="preselected-anchor" href="#">Arts and crafts</a></li><li><a class="preselected-anchor" href="#">Karate</a></li><li><a class="preselected-anchor" href="#">Shopping</a></li><li><a class="preselected-anchor" href="#">Hanging out</a></li></ul></li><li><a class="preselected-anchor" href="#">Games</a><ul><li><a class="preselected-anchor" href="#">Fashion games</a></li><li><a class="preselected-anchor" href="#">Celebrity dress up games</a></li><li><a class="preselected-anchor" href="#">Girl games</a></li><li><a class="preselected-anchor" href="#">Fairy games</a></li><li><a class="preselected-anchor" href="#">Room & Scene</a></li><li><a class="preselected-anchor" href="#">Arcade games</a></li><li><a class="preselected-anchor" href="#">Kitchen games</a></li></ul></li><li><a class="preselected-anchor" href="#">Mood</a><ul><li><a class="preselected-anchor" href="#">Good</a></li><li><a class="preselected-anchor" href="#">Great </a></li><li><a class="preselected-anchor" href="#">Not bad</a></li><li><a class="preselected-anchor" href="#">All right</a></li></ul></li></ul></li><li><a class="preselected-anchor" href="#">Game Comments</a><ul><li><a class="preselected-anchor" href="#">I love this game!</a></li><li><a class="preselected-anchor" href="#">Awesome hairstyle!</a></li><li><a class="preselected-anchor" href="#">I love the dresses.</a></li><li><a class="preselected-anchor" href="#">Nice game.</a></li><li><a class="preselected-anchor" href="#">I don't like this game.</a></li><li><a class="preselected-anchor" href="#">5 stars!</a></li><li><a class="preselected-anchor" href="#">Lame.</a></li></ul></li><li><a class="preselected-anchor" href="#">Activities</a><ul><li><a class="preselected-anchor" href="#">I am having a contest. </a></li><li><a class="preselected-anchor" href="#">Please rate my iZone.</a></li><li><a class="preselected-anchor" href="#">Please vote for me.</a></li><li><a class="preselected-anchor" href="#">Check my blog.</a></li><li><a class="preselected-anchor" href="#">Check my eArt</a></li><li><a class="preselected-anchor" href="#">I've just got a new look.</a></li><li><a class="preselected-anchor" href="#">I just sent a gift to you.</a></li></ul></li><li><a class="preselected-anchor" href="#">Stop it!</a><ul><li><a class="preselected-anchor" href="#">That's not nice.</a></li><li><a class="preselected-anchor" href="#">Stop that!</a></li><li><a class="preselected-anchor" href="#">Please go away.</a></li><li><a class="preselected-anchor" href="#">Nevermind</a></li><li><a class="preselected-anchor" href="#">That is rude.</a></li></ul></li><li><a class="preselected-anchor" href="#">Yeah!</a><ul><li><a class="preselected-anchor" href="#">Yay!</a></li><li><a class="preselected-anchor" href="#">Great!</a></li><li><a class="preselected-anchor" href="#">Woohoo!</a></li><li><a class="preselected-anchor" href="#">Yee-ha!</a></li><li><a class="preselected-anchor" href="#">All right!</a></li></ul></li><li><a class="preselected-anchor" href="#">Yes</a></li><li><a class="preselected-anchor" href="#">No</a></li><li><a class="preselected-anchor" href="#">Ok</a></li><li><a class="preselected-anchor" href="#">Location</a><ul><li><a class="preselected-anchor" href="#">USA</a></li><li><a class="preselected-anchor" href="#">Mexico</a></li><li><a class="preselected-anchor" href="#">Canada</a></li><li><a class="preselected-anchor" href="#">Europe</a><ul><li><a class="preselected-anchor" href="#">UK</a></li><li><a class="preselected-anchor" href="#">France</a></li><li><a class="preselected-anchor" href="#">Germany</a></li><li><a class="preselected-anchor" href="#">Spain</a></li><li><a class="preselected-anchor" href="#">Italy</a></li><li><a class="preselected-anchor" href="#">Poland</a></li><li><a class="preselected-anchor" href="#">Switzerland</a></li><li><a class="preselected-anchor" href="#">Turkey</a></li><li><a class="preselected-anchor" href="#">Russia</a></li></ul></li><li><a class="preselected-anchor" href="#">Asia</a><ul><li><a class="preselected-anchor" href="#">China</a></li><li><a class="preselected-anchor" href="#">Japan</a></li><li><a class="preselected-anchor" href="#">Korea</a></li><li><a class="preselected-anchor" href="#">India</a></li><li><a class="preselected-anchor" href="#">Indonesia</a></li></ul></li><li><a class="preselected-anchor" href="#">Africa</a></li><li><a class="preselected-anchor" href="#">Central America</a></li><li><a class="preselected-anchor" href="#">South America</a></li><li><a class="preselected-anchor" href="#">Australia</a></li><li><a class="preselected-anchor" href="#">Middle East</a></li></ul></li></ul>
+    </div>
+    <div class="gamecols">
+	<div class="l-col">
+	<script type="text/javascript"><!--
+		google_ad_client = "pub-4906431666602100";
+		/* 160x600, created 3/2/09 */
+		google_ad_slot = "3596650060";
+		google_ad_width = 160;
+		google_ad_height = 600;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+	</div>
+	<div class="middle-col" id="game-col">
+	   		    <div id="swf-content" class="swf"></div>
+	    <script type="text/javascript">
+	    // <![CDATA[
+		var so = new SWFObject('http://cdn.i-dressup.com/cdn/119988/project_runway-daniel_vosovic.swf','project_runway-daniel_vosovic', '630', '600', '8', '#ffffff');
+		so.addParam("menu", false);
+		so.addParam("wmode", "transparent");
+		so.addParam("AllowScriptAccess", "always");
+		so.addVariable("PHP_root_path", "http://www.i-dressup.com/");
+		so.addVariable("static_root_path", "http://cdn.i-dressup.com/cdn/");
+		so.addVariable("id", "532");
+		so.addVariable("name", "project_runway-daniel_vosovic");
+		so.addVariable("type", "1");
+		so.addVariable("pcode", 169);
+		so.addVariable("isSaveDoll", "0");
+		so.addVariable("myUid", "");
+		so.write('swf-content');
+	    // ]]>
+	    </script>
+	</div>
+	<div class="r-col">
+<script type="text/javascript"><!--
+	google_ad_client = "pub-4906431666602100";
+	/* 160x600, created 3/2/09 */
+	google_ad_slot = "3596650060";
+	google_ad_width = 160;
+	google_ad_height = 600;
+	//-->
+	</script>
+	<script type="text/javascript"
+	src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+	</div>
+    </div>
+    <div class="innertube gameview">
+	<div class="details">
+	    <label>Views: 189950&nbsp;&nbsp;Comments: 32&nbsp;&nbsp;Favorites: 1</label>
+	    <div class="buttons" id="id-buttons">
+		<span class="question">Like this game?</span>
+		<a href="/rate.new.php?type=game&action=like&id=532" class="ajax-rate button like"><span>362</span></a>
+		<a href="/rate.new.php?type=game&action=dislike&id=532" class="ajax-rate button dislike"><span>92</span></a>
+		<a href="#" class="button favorite" content="532" id="favorite-game"><span>Add to Favorite</span></a>
+		<a href="#" class="button earn" content="532" id="earn-icoins"><span>Earn iCoins</span></a><span class="result"><g:plusone size="medium"></g:plusone></span>
+		<!--<span class="result"><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="" id="fblike"></fb:like></span>-->
+	    </div>
+	</div>
+        <div class="left">
+            <script type="text/javascript">
+	    $('#fblike').attr('href',window.location.href);
+            var commentUrl = '/comment.new.php?tpl=comment.new.html&itemid=532&type=game&perpage=8';
+            
+
+	    var commentEditor = null;
+
+            function loadComments(offset, first) {
+                if (!/^\d+$/.test(offset)) {
+                    offset = 0;
+                }
+
+                $.ajax({
+                    url: commentUrl + '&offset=' + offset,
+                    cache: false,
+                    success: function(result) {
+                        $("#id-comments").html(result);
+                    }
+                });
+            }
+
+            $(function(){
+
+		try {
+		    if ($('#textarea-comment').is(':hidden') == false) {
+			commentEditor = createEditor($('#textarea-comment'));
+		    } else {
+			//alert('comment editor hiden');
+		    }
+		} catch(e) {}
+
+                $('#id-buttons .ajax-rate').click(function(e) {
+                    e.preventDefault();
+                    var self = $(this);
+                    url = self.attr('href');
+                    if (url.indexOf('rate.new.php') < 0) return;
+                    $.get(url, function(num){ self.html('<span>' + num + '</span>'); });
+                });
+
+                $('#earn-icoins').click(function(e) {
+                    e.preventDefault();
+                    $.idressup.earnICoins($(this).attr('content'));
+                });
+
+                $('#favorite-game').click(function(e) {
+                    e.preventDefault();
+                    $.idressup.favoriteGame($(this).attr('content'));
+                });
+
+                $('#next-game').click(function() {
+                    //alert($(this).attr('url'));
+                    window.location.href = $(this).attr('url');
+                });
+
+                loadComments(0, true);
+
+		$('#form-comment').submit(function() {
+		    if (lockInput()) return false;
+
+		    if (!__CURRENT_USER_IS_ACTIVATED) {
+			$.idressup.showActive();
+			return false;
+		    }
+		    $.idressup.showMessage('Saving data...');
+		    $(this).ajaxSubmit({
+			success: function(data) {
+			    $('#id-comments').html(data);
+			    clearEditor(commentEditor.editor);
+			}
+		    });
+		    return false;
+		});
+            });
+
+            function goComment() {
+                if ($("#id-post-comment").html() != null) {
+                    $(document).scrollTop($("#id-post-comment").position().top);
+                }
+            }
+            
+            </script>
+            <div class="comments" id="id-comments">
+                <!-- ajax.game_comment.php -->
+            </div>
+                        <div class="notlogin">
+                <a href="#" onclick="$.idressup.showLoginForm();">Login</a> or <a href="#" onclick="$.idressup.showRegisterForm();">Register</a> to post a comment!
+            </div>
+                        <!-- <div style="width: 728px;height: 90px; float: left; overflow: hidden; margin-top: 30px">
+                <iframe scrolling="no" frameborder="0" style="width: 728px;height: 90px" src="/adver728x90.php"></iframe>
+            </div>-->
+        </div>
+        <div class="right">
+            <div class="pupular-games">
+                <h3>Popular Games</h3>
+                <ul>
+                                        <li>
+                        <a href="/girls/First_Date_Outfit.php" title="First Date Outfit"><img src="http://cdn.i-dressup.com/cdn/gamepic/First_Date_Outfit.jpg" alt="First Date Outfit" /></a>
+                    </li>
+                                        <li>
+                        <a href="/girls/Civil_War_Clothing.php" title="Civil War Clothing"><img src="http://cdn.i-dressup.com/cdn/gamepic/Civil_War_Clothing.jpg" alt="Civil War Clothing" /></a>
+                    </li>
+                                        <li>
+                        <a href="/girls/Stylish_Modern_Blazers.php" title="Stylish Modern Blazers"><img src="http://cdn.i-dressup.com/cdn/gamepic/Stylish_Modern_Blazers.jpg" alt="Stylish Modern Blazers" /></a>
+                    </li>
+                                        <li>
+                        <a href="/girls/Rainbow_Nation.php" title="Rainbow Nation"><img src="http://cdn.i-dressup.com/cdn/gamepic/Rainbow_Nation.jpg" alt="Rainbow Nation" /></a>
+                    </li>
+                                        <li>
+                        <a href="/girls/makeovers/Flat_Bangs.php" title="Flat Bangs"><img src="http://cdn.i-dressup.com/cdn/gamepic/Flat_Bangs.jpg" alt="Flat Bangs" /></a>
+                    </li>
+                                        <li>
+                        <a href="/girls/Golden_Shoes.php" title="Golden Shoes"><img src="http://cdn.i-dressup.com/cdn/gamepic/Golden_Shoes.jpg" alt="Golden Shoes" /></a>
+                    </li>
+                                        <li>
+                        <a href="/girls/Tankini_Swimsuits.php" title="Tankini Swimsuits"><img src="http://cdn.i-dressup.com/cdn/gamepic/Tankini_Swimsuits.jpg" alt="Tankini Swimsuits" /></a>
+                    </li>
+                                        <li>
+                        <a href="/girls/Neo-Punk_Fashion.php" title="Neo-Punk Fashion"><img src="http://cdn.i-dressup.com/cdn/gamepic/Neo-Punk_Fashion.jpg" alt="Neo-Punk Fashion" /></a>
+                    </li>
+                                    </ul>
+            </div>
+            <div class="games-you-may-like">
+                <h3>Games You May Like</h3>
+                <ul>
+                                        <li>
+                        <a href="/fashion/Mori_Lee_Party_Dresses.php" title="Mori Lee Party Dresses"><img src="http://cdn.i-dressup.com/cdn/gamepic/Mori_Lee_Party_Dresses.jpg" alt="Mori Lee Party Dresses" /></a>
+                    </li>
+                                        <li>
+                        <a href="/fashion/Christopher_Kane_Spring_2011.php" title="Christopher Kane Spring 2011"><img src="http://cdn.i-dressup.com/cdn/gamepic/Christopher_Kane_Spring_2011.jpg" alt="Christopher Kane Spring 2011" /></a>
+                    </li>
+                                        <li>
+                        <a href="/fashion/John_Galliano_Spring_2009.php" title="John Galliano Spring 2009"><img src="http://cdn.i-dressup.com/cdn/gamepic/John_Galliano_Spring_2009.jpg" alt="John Galliano Spring 2009" /></a>
+                    </li>
+                                        <li>
+                        <a href="/fashion/Short_Prom_Dresses_by_Jovani.php" title="Short Prom Dresses By Jovani"><img src="http://cdn.i-dressup.com/cdn/gamepic/Short_Prom_Dresses_by_Jovani.jpg" alt="Short Prom Dresses By Jovani" /></a>
+                    </li>
+                                        <li>
+                        <a href="/fashion/Jason_Wu_Spring_2010.php" title="Jason Wu Spring 2010"><img src="http://cdn.i-dressup.com/cdn/gamepic/Jason_Wu_Spring_2010.jpg" alt="Jason Wu Spring 2010" /></a>
+                    </li>
+                                        <li>
+                        <a href="/fashion/Miu_Miu_Spring_2011.php" title="Miu Miu Spring 2011"><img src="http://cdn.i-dressup.com/cdn/gamepic/Miu_Miu_Spring_2011.jpg" alt="Miu Miu Spring 2011" /></a>
+                    </li>
+                                        <li>
+                        <a href="/fashion/Paris_by_Tony_Bowls_Prom_Dresses.php" title="Paris By Tony Bowls Prom Dresses"><img src="http://cdn.i-dressup.com/cdn/gamepic/Paris_by_Tony_Bowls_Prom_Dresses.jpg" alt="Paris By Tony Bowls Prom Dresses" /></a>
+                    </li>
+                                        <li>
+                        <a href="/fashion/Oscar_De_La_Renta_Fall_2010.php" title="Oscar De La Renta Fall 2010"><img src="http://cdn.i-dressup.com/cdn/gamepic/Oscar_De_La_Renta_Fall_2010.jpg" alt="Oscar De La Renta Fall 2010" /></a>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+		<div id="footer">
+            <div class="toolbar-box">
+				<a href="http://freeidressup.ourtoolbar.com/exe"><img src="http://cdn.i-dressup.com/cdn/static//image/toolbar.png" /></a>
+			</div>
+			<div class="under-shadow"></div>
+            <dl class="games">
+                <dt>Games</dt>
+                <dd><a href="/barbie">Barbie</a></dd>
+                <dd><a href="/celebrities">Celebrities</a></dd>
+                <dd><a href="/fantasy">Fantasy</a></dd>
+                <dd><a href="/fashion">Fashion</a></dd>
+                <dd><a href="/girls">Girls</a></dd>
+                <dd><a href="/room">Room</a></dd>
+            </dl>
+            <dl class="izone">
+                <dt>iZone</dt>
+                <dd><a href="/izone.php">Room</a></dd>
+                <!--dd><a href="/myrunway.php">My Runway</a></dd-->
+                <dd><a href="/primpme.php">Primp Me</a></dd>
+                <dd><a href="/blog.php">Blog</a></dd>
+                <dd><a href="/album.php">Album</a></dd>
+                <dd><a href="/messages.php">Messages</a></dd>
+                <dd><a href="/friends.php">Friends</a></dd>
+                <dd><a href="/marketplace.php?store=">My Store</a></dd>
+                <dd><a href="/account.php">Account</a></dd>
+            </dl>
+            <dl class="shop">
+                <dt>Shop</dt>
+                <dd><a href="/fashionavenue.php">Fashion Avenue</a></dd>
+				<dd><a href="marketplace.php">Marketplace</a></dd>
+				<dd><a href="/giftshop.php">Gift Store</a></dd>
+                <dd><a href="/petshop.php">Pet Shop</a></dd>
+                <dd><a href="/rarestuff.php">Rare Stuff</a></dd>
+                <dd><a href="/gameway.php">Gameway</a></dd>
+            </dl>
+            <dl class="design">
+                <dt>Design</dt>
+                <dd><a href="/idesign.php?room=fabric">Fabric Design</a></dd>
+                <dd><a href="/idesign.php?room=patchwork">Patchwork Design</a></dd>
+                <dd><a href="/idesign.php?room=decor">Decor Design</a></dd>
+				<dd><a href="/fashionavenue.php?brand=diy0">D.I.Y. Design</a></dd>
+            </dl>
+            <dl class="help">
+                <dt>Help</dt>
+                <dd><a href="/faq.php">FAQ</a></dd>
+                <dd><a href="/privacypolicy.php">Privacy Policy</a></dd>
+                <dd><a href="/termuse.php">Term of Use</a></dd>
+                <dd><a href="/contactus.php">Contact Us</a></dd>
+            </dl>
+            <dl class="about" style="margin-top:10px">
+				<iframe src="/adver250_1.php" scrolling="no" frameborder="0" marginheight="0" marginwidth="0" style="width:300px;height:250px;"></iframe>
+            </dl>
+            <ul class="links">
+            <li>
+				<a href="http://www.facebook.com/pages/i-Dressupcom-Dress-up-games-for-people-who-love-fashion/208394581376" target="_blank"><img src="http://cdn.i-dressup.com/cdn/static/image/fb.jpg" /></a>
+				<label><a href="http://www.facebook.com/pages/i-Dressupcom-Dress-up-games-for-people-who-love-fashion/208394581376" target="_blank">Facebook Fan</a></label>
+                </li>
+                <li>
+                    <a href="http://www.dressupgames.com/" target="_blank"><img src="http://cdn.i-dressup.com/cdn/static/image/logos/dress-up-games.png" /></a>
+                    <label><a href="http://www.dressupgames.com/" target="_blank">Dress up Games</a></label>
+                </li>
+                <li>
+                    <a href="http://www.funcorder.com/" target="_blank"><img src="http://cdn.i-dressup.com/cdn/static/image/logos/funcorder.png" /></a>
+                    <label><a href="http://www.funcorder.com/" target="_blank">Funcorder</a></label>
+                </li>
+                <li>
+                    <a href="http://www.dressupwho.com/" target="_blank"><img src="http://cdn.i-dressup.com/cdn/static/image/logos/dressupwho.png" /></a>
+                    <label><a href="http://www.dressupwho.com/" target="_blank">Dressupwho</a></label>
+                </li>
+                <li>
+                    <a href="http://www.123peppy.com/" target="_blank"><img src="http://cdn.i-dressup.com/cdn/static/image/logos/123peppy.png" /></a>
+                    <label><a href="http://www.123peppy.com/" target="_blank">123peppy</a></label>
+                </li>
+                <li>
+                    <a href="http://www.dressupgirl.net/" target="_blank"><img src="http://cdn.i-dressup.com/cdn/static/image/logos/dressupgirl.png" /></a>
+                    <label><a href="http://www.dressupgirl.net/" target="_blank">DressupGirl</a></label>
+                </li>
+                <li>
+                    <a href="http://www.tinkfanatic.com/" target="_blank"><img src="http://cdn.i-dressup.com/cdn/static/image/logos/tinkerbell.png" /></a>
+                    <label><a href="http://www.tinkfanatic.com/" target="_blank">Tinkerbell</a></label>
+                </li>
+                <li>
+                    <a href="http://www.wambie.com/" target="_blank"><img src="http://cdn.i-dressup.com/cdn/static/image/logos/wambie.png" /></a>
+                    <label><a href="http://www.wambie.com/" target="_blank">Wambie</a></label>
+                </li>
+                <li>
+                    <a href="http://www.i-amour.com/" target="_blank"><img src="http://cdn.i-dressup.com/cdn/static/image/logos/i-amour.png" /></a>
+                    <label><a href="http://www.i-amour.com/" target="_blank">I-amour</a></label>
+                </li>
+                <li>
+                    <a href="http://www.rainbowdressup.com/" target="_blank"><img src="http://cdn.i-dressup.com/cdn/static/image/logos/rainbow-dress-up.png" /></a>
+                    <label><a href="http://www.rainbowdressup.com/" target="_blank">Rainbow Dress up</a></label>
+                </li>
+            </ul>
+            <div class="copyright">
+		    <div class="col-1">
+                &copy; Intellineur Inc. 2005~2011 . <a href="http://www.funcorder.com/" target="_blank">funcorder.com</a>. <a href="http://i-amour.com/" target="_blank">i-amour.com</a> . <a href="http://www.tinkfanatic.com/" target="_blank">tinkfanatic.com</a>
+		    </div>
+		    <div class="col-2"><script type="text/javascript">
+		    <!--
+		    google_ad_client = "pub-4906431666602100";
+		    /* 468x15, created 1/15/11 */
+		    google_ad_slot = "1985315224";
+		    google_ad_width = 458;
+		    google_ad_height = 15;
+		    //-->
+		    </script>
+		    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+		    </div>
+            </div>
+            <div class="free"></div>
+            <div class="r-cor"></div>
+			<div style="width:160px; height:24px; position: absolute; left:270px; top:320px;">
+			<script type="text/javascript" language="JavaScript">
+			  		glam_affiliate_id = '367551034';
+			  		glam_logo_type = 'GEnter';
+			  		glam_logo_size = '160x24';
+			  		glam_logo_color = 'wht';
+			</script><script src="http://www8.glam.com/js/widgets/glam_logo.js"></script>
+			</div>
+		</div>
+        <div class="clear-all"></div>
+    </div>
+</body>
+</html>

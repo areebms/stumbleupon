@@ -1,0 +1,1202 @@
+
+
+
+
+
+<!-- bof: newsArticles.jsp -->
+
+<!-- This file handles two cases: the news landing page, and an actual news article. If it is the news landing page, then
+the functionality is taken care of right here in this file. If it is an actual news article, then the template for that
+news article is imported, and that's what does the work. See down below in the if-else statement, where this is checked
+and then handled. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+	<head>
+		<META HTTP-EQUIV="Expires" CONTENT="0"/>
+		
+
+
+
+
+
+
+
+
+
+
+
+	<meta name="description" content="Alec Jeffreys, a pioneer in genetic profiling, has criticized the British government&#8217;s policy of keeping DNA samples of innocent people in its database." />
+
+	<meta name="keywords" content="dna database, dna database innocent, dna database Britain, dna database England, dna database court, dna database opposition, dna sample database, dna database controversy, dna database alec Jeffreys, alec jeffreys dna fingerprinting, alec jeffreys dna, alec jeffreys genetic, genetic database, genetic database britain" />
+
+	<title>DNA Pioneer Wants Genetic Profiles of Innocent People Out of British Database</title>
+
+<meta name="Robots" content="all" />
+
+<!-- Start DI Tracking Code for HEAD section-->
+<SCRIPT LANGUAGE="JavaScript1.2">
+var refr=escape(document.referrer); /* get the http referer and encode it */
+var dom=location.hostname; /* get the host domain */
+var stURL="http://na.link.decdna.net/n/41835/41837/www.findingdulcinea.com/1nedeho;11;3;;6;;7q3ggj;;;;;1;/i/c?0&1pixgif&referer="
++ refr;
+if ( (refr && refr.search(dom) == -1) && (location.href.toUpperCase().indexOf("247SEO=N") == -1) ) /* if the referrer is external preload the image request and does not contain 247SEO argument = "N" */
+{
+imageTR = new Image();
+imageTR.src = stURL;
+}
+</SCRIPT>
+<!-- End DI Tracking Code -->
+
+<!-- Start Sportgenic -->
+    <!-- ADS WILL NOT DISPLAY WITHOUT THE HEADCODE INSTALLED -->
+    <!-- begin script to create random number for ads -->
+    <script type="text/javascript">
+    <!--
+    sgi_ord=Math.random()*10000000000000000;
+    sgi_tile=1;
+    //-->
+    </script>
+
+    <!-- End random number script -->
+    <!-- PLACE THE QUANTCAST AND GOOGLE ANALYTICS TAGS BEFORE THE CLOSING BODY TAG -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6181637-14");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- End Sportgenic -->
+
+
+
+
+
+
+
+<!------  BEGIN e-healthcare SETUP ------>
+<SCRIPT LANGUAGE=JavaScript><!--//configuration
+OAS_url = 'http://ads.digitalhealthcare.com/RealMedia/ads/';
+sitepage = window.location.hostname + window.location.pathname;
+var cat="";
+var topics=new Array("Acne", "Addiction", "adhd", "advance-directives", "aids", "alcoholism", "allergies", "alzheimer-disease", "Anxiety-and-Depression", "arthritis", "Assistive-Technology", "asthma", "autism", "Back-Pain", "beauty", "Bipolar-Disease", "cancer", "cardiovascular-disease", "Carpal-Tunnel-Syndrome", "Children-s-Fitness", "childrens-health", "COPD", "clinical-trials", "Cold-and-Flu", "Complementary-and-Alternative-Medicine", "counseling-and-therapy", "dental-health", "diabetes", "diagnostic-imaging", "Dietary-Supplements", "Dreams", "eating-disorders", "End-of-Life-Issues", "epilepsy", "fertility-issues", "fever", "fibromyalgia", "First-Aid", "fitness", "Hair-Loss", "heart-attack", "high-blood-pressure", "injuries", "Learning-Disabilities", "Lice", "Long-Term-Care", "Lyme-Disease", "Medication", "mens-health", "menopause", "mental-health", "migraines", "Multiple-Sclerosis", "New-Years-Resolutions", "nutrition", "obesity", "OCD", "osteoporosis", "parkinsons-disease", "Personal-Trainers", "Physical-disabilities", "pregnancy", "Quit-Smoking", "Scoliosis", "seniors-health", "Skin-Care", "sleep", "STDs", "Stress", "stroke", "Substance-Abuse", "Sun-Protection", "Surgery", "teething", "Terminal-Illness", "Tourette-Syndrome", "weight-loss", "wilderness-survival", "womens-health");
+var topics_match=new Array("skin_health/acne", "mental_health/addiction", "mental_health/adhd", "senior_health/advance_directives", "sexual_health/AIDS", "mental_health/alcoholism", "respiratory/allergies", "neuro/alzheimers", "mental_health/anxiety_and_depression", "bone_joint/arthritis", "care_giver", "respiratory/asthma", "autism", "bone_joint", "womens_health", "mental_health/bipolar", "cancer", "heart_disease", "bone_joint/carpal_tunnel", "childrens_health/fitness", "childrens_health ", "respiratory/COPD", "clinical_trials", "respiratory/cold_and_flu", "alternative_medicine", "mental_health", "dental_mealth", "diabetes", "diagnostic_imaging", "fitness_weightloss", "dreams", "mental_health/eating_disorders", "senior_health", "neuro/epilepsy", "sexual_health/fertility", "fever", "bone_joint/fibromyalgia", "first_aid", "fitness_weightloss", "skin_health/hairloss", "heart_disease/heart_attack", "heart_disease/hypertension", "injuries", "childrens_health/learning_disabillities", "childrens_health/lice", "caregiver", "infectious_disease/lyme_disease", "medication", "mens_health", "womens_health/menopause", "mental_health", "neuro/migraines", "neuro/MS", "new_year_resolutions", "nutrition", "fitness_weightloss", "mental_health/OCD", "bone_joint/osteoporosis", "neuro/parkinsons", "fitness_weightloss", "disabled", "womens_health/pregnancy", "respiratory/smoking_cessation", "bone_joint/scoliosis", "senior_health", "skin_health", "sleep_disorders", "sexual_health", "mental_health/stress", "heart_disease/stroke", "mental_health/addiction", "skin_health/sun_protection", "surgery", "childrens_health/teething", "caregiver/terminal", "neuro/tourette_syndrome", "fitness_weightloss", "wilderness_survival", "womens_health");
+
+for (var i=0;i<=78;i++) {
+	var pos=sitepage.indexOf(topics[i]);
+	if (pos!=-1) {
+		cat=topics_match[i];
+	}
+}
+
+OAS_sitepage="www.findingdulcinea.com/" + cat;
+OAS_listpos = 'Middle,Right_combo,Bottom_combo';
+OAS_query = '';
+OAS_target = '_top';
+//end of configuration
+
+OAS_version = 10;
+OAS_rn = '001234567890'; OAS_rns = '1234567890';
+OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
+function OAS_NORMAL(pos) {
+document.write('<A HREF="' + OAS_url + 'click_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" TARGET=' + OAS_target + '>');
+document.write('<IMG SRC="' + OAS_url + 'adstream_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" BORDER=0></A>');
+
+}
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE=JavaScript1.1>
+<!--
+OAS_version = 11;
+if ((navigator.userAgent.indexOf('Mozilla/3') != -1) || (navigator.userAgent.indexOf('Mozilla/4.0 WebTV') != -1))
+  OAS_version = 10;
+if (OAS_version >= 11)
+  document.write('<SCR' + 'IPT LANGUAGE=JavaScript1.1 SRC="' + OAS_url + 'adstream_mjx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '?' + OAS_query + '"><\/SCRIPT>');
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+document.write('');
+function OAS_AD(pos) {
+  if (OAS_version >= 11)
+    OAS_RICH(pos);
+  else
+    OAS_NORMAL(pos);
+}
+//-->
+</SCRIPT>
+<!------ END e-healthcare OAS SETUP ------>      
+
+<LINK REL="SHORTCUT ICON" HREF="/docroot/dulcinea/img/favicon.ico" />
+
+		
+
+
+<LINK rel="alternate" TYPE="application/rss+xml" TITLE="RSS" HREF="http://www.findingdulcinea.com/news/Europe/2009/april/DNA-Pioneer-Wants-Innocent-Out-of-British-Database.rss"/>
+
+		
+		<script src="/docroot/dulcinea/js/dulcinea.js" type="text/javascript" language="javascript"></script>
+  		<script language="javascript" src="/docroot/dulcinea/js/menu.js"> </script>
+
+		<link rel="stylesheet" type="text/css" href="/docroot/dulcinea/css/dulcinea.css" />
+  		<link rel="stylesheet" type="text/css" href="/docroot/dulcinea/css/fd_content.css" />
+  		<link rel="stylesheet" type="text/css" href="/docroot/dulcinea/css/fd_news_articles.css" />
+  		<link rel="stylesheet" type="text/css" href="/docroot/dulcinea/css/dulcinea_dailyDulcinea.css" />
+
+		<link rel="stylesheet" type="text/css" href="/docroot/dulcinea/css/fd_news_cards.css" />
+		<link rel="stylesheet" type="text/css" href="/docroot/dulcinea/css/custom_sidebox.css" />
+
+	</head>
+	    			
+	<body class="yui-skin-sam" id="replaceWithBrowserName">
+	
+		<script type="text/javascript" language="javascript">
+			// alert(navigator.userAgent);
+			var browser = new whichBrowser();
+
+                        if (browser.isIE)
+                                document.getElementById("replaceWithBrowserName").id = "MSIE";
+                        else if (navigator.userAgent.indexOf("Safari") > 0)    
+                                document.getElementById("replaceWithBrowserName").id = "SAFARI";
+                        else if (browser.isNS)
+                                document.getElementById("replaceWithBrowserName").id = "FIREFOX";			
+		</script>
+	 	
+
+		<div id="body_div"> <!-- used for centering page in browser -->
+		<div class="main_content" id="dulcinea_news" > <!-- used for centering page in browser -->
+			
+			<!-- eof: header.jsp -->
+
+<DIV id="dulcinea_header">
+   <div id="head_border">
+        <div id="header">
+             <a href="/"><img src="/docroot/dulcinea/img/home/new_home/logo.gif" class="logo_pad" alt="findingDulcinea" height="81" width="149"></a>
+             <div id="head_rt">
+                  <div class="nav">
+                       <div class="nav_links">
+                            <ul class="orangeTab">                                        
+         			<li><a href="/guides/Technology/Internet/Dulcineas-Guide-to-Searching-on-the-Web.html">Web Guides</a></li>
+                	    </ul>
+                            <ul class="greenTab">
+                                <li><a href="/news.topic__ss_categories_ss_top-stories.html">Beyond the Headlines</a></li>
+                            </ul>
+                            <ul class="blueTab">
+                                <li><a href="/features.topic__ss_categories_ss_todays-features.html">Features</a></li>
+                            </ul>
+                            <ul class="blueBar">
+                                <li><a href="/info/Our-Mission.html">About Us</a><span>|</span></li>
+				<li><a href="/info/main/FAQ.html">FAQ</a><span>|</span></li>
+				<li><a href="/info/contact-us.html">Contact Us</a></li>
+                            </ul>
+			<ul class="blueBar blueBarIcon">
+			   <li><img border="0" src="/docroot/dulcinea/img/home/new_home/follow_us.jpg"/></li>
+			   <li><a href="http://www.facebook.com/pages/findingDulcineacom/9844132329" target="_blank"><img width="35" height="35" border="0" src="/docroot/dulcinea/img/home/new_home/facebook.png"/></a></li>
+			   <li><a href="http://twitter.com/findingDulcinea" target="_blank"><img width="35" height="35" border="0" src="/docroot/dulcinea/img/home/new_home/twitter.png"/></a></li>
+			   <li><a href="/home.rss" target="_blank"><img width="35" height="35" border="0" src="/docroot/dulcinea/img/home/new_home/feed.png"/></a></li>
+			   <li><a href="/info/newsletter.html"><img width="35" height="35" border="0" src="/docroot/dulcinea/img/home/new_home/email.jpg"/></a></li>
+			</ul>
+                         </div>
+                         <div id="quick_search"><h4>Quick Search</h4>
+                             <form name="form" action="/search.html" id="quick_search_form">
+                                     <input name="keywords" class="txt" value="" type="text">
+                                     <input alt="GO" class="btn" name="go" src="/docroot/dulcinea/img/home/new_home/btn_go_blue.gif" type="image">
+                             </form>
+                         </div><!-- end #quick_search -->
+                   </div><!-- end #Nav -->
+             </div><!-- end #head_rt -->
+         </div><!-- end #header -->
+   </div><!-- end #head_border --> 	
+   <script>
+   
+   function handleDropdownMenu(elem) {
+   	var top;
+   	var left;
+	if (elem != null) {
+   		top=getPos(elem, '#document', 'bottom'); 
+		left = getPos(elem, '#document', 'left') - getPos(document.getElementById('body_div'),'#document','left');
+		
+		var target = document.getElementById('headerMenu')
+		if (target != null) {
+			target.style.top = top + "px";
+			target.style.left = left + "px";
+			target.style.display = "block";
+		}
+	}
+   }
+   
+   function getPos(elem, myroot, pos) {
+	var myroot = myroot || "HTML";
+	if (elem == null) return false;
+		var rootT=elem.offsetTop 
+	    	var rootL=elem.offsetLeft 
+	        var rootB=elem.offsetHeight
+	    	var rootR=elem.offsetWidth;
+	    	var elemP = elem.parentNode;
+	    	var mynode = elemP.id;
+	    	
+	    	while (mynode != myroot) {
+	        	rootT += elemP.offsetTop;
+	        	rootL += elemP.offsetLeft;
+	        	
+	        	elemP = elemP.parentNode;
+	        	mynode = elemP.nodeName;
+	    	}
+	    		
+	    	rootB += rootT;
+	    	rootR += rootL;
+	    		
+	    	switch(pos)
+		{
+			case "top":
+  				return rootT;
+  				break;
+			case "left":
+  				return rootL;
+  				break;
+  			case "bottom":
+  				return rootB;
+  				break;
+  			case "right":
+  				return rootR;
+  				break;
+			default:
+				return("error");
+		}
+	}
+
+   function getPosById(elem, pID, pos) {
+	if (elem == null) return false;
+		var rootT=elem.offsetTop 
+	    	var rootL=elem.offsetLeft 
+	        var rootB=elem.offsetHeight
+	    	var rootR=elem.offsetWidth;
+	    	var elemP = elem.parentNode;
+	    	var mynode = elemP.id;
+	    	
+	    	while (mynode != pID) {
+	        	rootT += elemP.offsetTop;
+	        	rootL += elemP.offsetLeft;
+	        	//alert(elemP.id + "::" + rootT);
+	        	elemP = elemP.parentNode;
+	        	mynode = elemP.id;
+			
+	    	}
+	    		
+	    	rootB += rootT;
+	    	rootR += rootL;
+	    		
+	    	switch(pos)
+		{
+			case "top":
+  				return rootT;
+  				break;
+			case "left":
+  				return rootL;
+  				break;
+  			case "bottom":
+  				return rootB;
+  				break;
+  			case "right":
+  				return rootR;
+  				break;
+			default:
+				return("error");
+		}
+	}
+</script>
+   
+   				
+
+</DIV> <!-- dulcinea_header -->
+
+
+<!-- eof: header.jsp -->
+
+
+			<div id="full_width_container" >
+			<div id="content">	
+
+				<!-- TAB HEADER -->					
+				<div class="page_tab_header" id="news_tab">
+					<img id="tab_top" src="/docroot/dulcinea/img/news/tab_top.jpg"/>			
+					<!-- TOPIC -->
+					<h2 class="dulcinea_landing_found_text" id="topic"><a href="/news.topic__ss_categories_ss_science.html">Science</a></h2>
+					<!-- END TOPIC -->
+					<form method="get" action="/news.html" class="topic_select" id="tab_topic_select">
+						<label for="btopic">Browse By:</label>
+						<select onchange="this.form.submit()" class="topic_browse_select" id="btopic" name="topic">
+							<option value="na" selected="selected" >Main Topics</option>
+							<option value="na">------------------------</option>
+							<option onclick="window.location='/topics.html?type=news'" value="complete">Complete Index</option>
+								
+							<option value="/categories/americas">Americas</option>
+								
+							<option value="/categories/entertainment">Art and Entertainment</option>
+								
+							<option value="/categories/art-in-the-round">Art in the Round</option>
+								
+							<option value="/categories/autos">Autos</option>
+								
+							<option value="/categories/business">Business</option>
+								
+							<option value="/categories/careers">Careers</option>
+								
+							<option value="/categories/education">Education</option>
+								
+							<option value="/categories/election-news-roundup">Election News Roundup</option>
+								
+							<option value="/categories/environment">Environment</option>
+								
+							<option value="/categories/family-and-relationships">Family and Relationships</option>
+								
+							<option value="/categories/finance">Finance</option>
+								
+							<option value="/categories/food">Food</option>
+								
+							<option value="/categories/health">Health</option>
+								
+							<option value="/categories/history">History</option>
+								
+							<option value="/categories/homes">Homes</option>
+								
+							<option value="/categories/human-interest">Human Interest</option>
+								
+							<option value="/categories/international">International</option>
+								
+							<option value="/categories/libraries">Libraries</option>
+								
+							<option value="/categories/national">National</option>
+								
+							<option value="/categories/obituaries">Obituaries</option>
+								
+							<option value="/categories/on-this-day">On This Day</option>
+								
+							<option value="/categories/people">People</option>
+								
+							<option value="/categories/politics">Politics</option>
+								
+							<option value="/categories/reference">Reference</option>
+								
+							<option value="/categories/religion-and-spirituality">Religion and Spirituality</option>
+								
+							<option value="/categories/science">Science</option>
+								
+							<option value="/categories/shopping">Shopping</option>
+								
+							<option value="/categories/sports">Sports</option>
+								
+							<option value="/categories/technology">Technology</option>
+								
+							<option value="/categories/today-s-news-roundup">Today's News Roundup</option>
+								
+							<option value="/categories/top-stories">Top Stories</option>
+								
+							<option value="/categories/travel">Travel</option>
+							
+						</select>
+						<noscript><input type="submit" value="go"/></noscript>
+					</form>		
+				</div> <!--page_tab_header -->
+
+				<div id="article_content">
+					<div id="article_sidebar">
+						<div id="sidebar_breadcrumb_links"><a href="/">Home</a>	&raquo; <a href="/news.topic__ss_categories_ss_top-stories.html">Beyond the Headlines</a> &raquo; 
+						
+							<a href="/news.topic__ss_categories_ss_science.html">Science</a>
+						
+						</div>
+						
+							
+
+
+
+
+
+<script src="/docroot/dulcinea/js/articleShare.js" type="text/javascript"></script>
+<div class="article_sidebar_block share_box_style">
+        <A HREF="mailto:?subject=An interesting article from findingDulcinea&body=Hi,%0D%0A%0D%0AI just found an interesting entry on http://www.findingDulcinea.com. Thought you'd like to look at it too.   %0D%0A%0D%0Ahttp://www.findingdulcinea.com/news/Europe/2009/april/DNA-Pioneer-Wants-Innocent-Out-of-British-Database.html"><IMG SRC="/docroot/dulcinea/img/icons/icon_email.jpg" /></A>
+        &nbsp;&nbsp;
+        <span style="position:relative; bottom:1px;">
+	<a href="http://delicious.com/save" onclick="window.open('http://delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;" target="_blank"><img src="http://static.delicious.com/img/delicious.gif" height="14" width="14" alt="Delicious" /></a>
+        </span>&nbsp;
+        <a href="http://digg.com/submit?url=http://www.findingdulcinea.com/news/Europe/2009/april/DNA-Pioneer-Wants-Innocent-Out-of-British-Database.html&title=DNA Pioneer Wants Genetic Profiles of Innocent People Out of British Database&bodytext=Alec Jeffreys, a pioneer in genetic profiling, has criticized the British government&amp;rsquo;s policy of keeping DNA samples of innocent people in its database." target="_blank"><img border="0" src="http://digg.com/img/badges/16x16-digg-guy.gif" width="16" height="16" alt="Digg!" /></a>&nbsp;&nbsp;
+        <script> function fbs_click() {u=location.href;t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;} </script>
+        <a href="http://www.facebook.com/share.php?u=http://www.findingdulcinea.com/news/Europe/2009/april/DNA-Pioneer-Wants-Innocent-Out-of-British-Database.html" onclick="return fbs_click()" target="_blank"><img src="http://b.static.ak.fbcdn.net/images/share/facebook_share_icon.gif?8:26981" alt="facebook" /></a>&nbsp;&nbsp;
+        <a href="http://www.stumbleupon.com/submit?url=http://www.findingdulcinea.com/news/Europe/2009/april/DNA-Pioneer-Wants-Innocent-Out-of-British-Database.html%26title%3DDNA Pioneer Wants Genetic Profiles of Innocent People Out of British Database" target="_blank"> <img border="0" alt="StumbleUpon" src="http://cdn.stumble-upon.com/images/16x16_su_3d.gif" /></a>&nbsp;&nbsp;
+        <a href="http://www.diigo.com" onclick="var s=document.createElement('script');s.type='text/javascript';s.src='http://www.diigo.com/javascripts/webtoolbar/diigolet_b_h_b.js';document.body.appendChild(s);return false;"><img style="border: medium none ;" alt="diigo" src="http://www.diigo.com/images/ii_blue.gif" /></a>&nbsp;&nbsp;
+	<a href="http://www.reddit.com/submit?url=http://www.findingdulcinea.com/news/Europe/2009/april/DNA-Pioneer-Wants-Innocent-Out-of-British-Database.html&title=DNA Pioneer Wants Genetic Profiles of Innocent People Out of British Database; return false" target="_blank"> <img src="http://www.reddit.com/static/spreddit1.gif" alt="submit to reddit" border="0" /></a>&nbsp;&nbsp;
+        <span id="yahoo_buzz">
+        <script type="text/javascript"
+                src="http://d.yimg.com/ds/badge2.js"
+                badgetype="logo">
+                http://www.findingdulcinea.com/news/Europe/2009/april/DNA-Pioneer-Wants-Innocent-Out-of-British-Database.html
+        </script>
+        </span>
+</div>
+
+
+
+						
+						
+						<!-- bof: capsule.jsp -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	<!-- TOC PANEL -->
+	<div id="sidebar_what_youll_find" class="article_sidebar_block box_style">
+		
+		<img id="what_youll_find_arrow" src="/docroot/dulcinea/jsp/home/featuresWhatYoullFindArrow.gif"/>
+		<h3 id="TOC_heading">In This Article</h3>
+		<ul>
+			
+				<li><h3><a href="/news/Europe/2009/april/DNA-Pioneer-Wants-Innocent-Out-of-British-Database.html#0">Jeffreys Critical of DNA Database</a></h3></li>
+			
+				<li><h3><a href="/news/Europe/2009/april/DNA-Pioneer-Wants-Innocent-Out-of-British-Database.html#1">Opinion & Analysis: Should the profiles of innocent people be removed from the DNA database?</a></h3></li>
+			
+				<li><h3><a href="/news/Europe/2009/april/DNA-Pioneer-Wants-Innocent-Out-of-British-Database.html#2">Background: Alec Jeffreys’ DNA fingerprinting discovery</a></h3></li>
+			
+		</ul>
+	</div><!-- END TOC PANEL -->
+	
+	
+
+						
+							<div class="article_sidebar_block box_style"><ul>
+								<li><h3><a href="/topics.html?topic=/categories/science">View All Science Articles</a></h3></li>
+								<li><h3><a href="/home.rss?topic=/categories/science&t=n"><img id="rss_icon" src="/docroot/dulcinea/img/rss/rss-icon.jpg"> Subscribe to Science Updates</a></h3></li>
+								</ul>
+							</div>
+						
+						<div style="margin-right:20px;margin-top:15px;float:right;">
+						   <script id="sweetSearchScript" src="http://www.sweetsearch.com/docroot/dulcinea/jsp/widget.jsp?type=medium" type="text/javascript"></script> 
+						</div>
+						
+
+
+
+
+
+						
+
+					     
+					</div>	
+						
+						<!-- bof: capsule.jsp -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+#article_capsule_image {
+	margin-right:12px;
+}
+</style>
+
+
+<div id="article_capsule">
+	
+		<div id="article_capsule_image"><img alt="null" src="/docroot/dulcinea/fd_images/news/Europe/2009/april/DNA-Pioneer-Wants-Innocent-Out-of-British-Database/news/0/image.jpg" />
+		
+			<div class="dulcinea_caption"><font size="1"><font color="#999999">Rui Vieira/AP</font><br /> <strong>Sir Alec Jeffreys</strong></font></div>
+		
+		</div>
+	
+
+	
+		<h1 id="article_capsule_headline">DNA Pioneer Wants Genetic Profiles of Innocent People Out of British Database</h1> <!-- headline -->
+	
+	
+		
+		  <div id="article_capsule_date">
+		        
+		  	<div style="float:right; margin-top:5px;">
+		  	<script type="text/javascript">
+		  	/* <![CDATA[ */ 
+		  	   EBcitation = {
+		  	       "page":document.title,
+		  	       "site":"findingDulcinea",
+		  	       "url":document.URL,
+		  	       "date":"April 17, 2009",
+		  	       "authors":"Denis Cummings"
+		  	   };
+		  	   EBversion  = "1.0";
+		  	   document.write(unescape("%3Cscript src='http://cdn.easybib.com/citethis/"+EBversion+"/widget_mini.js' type='text/javascript'%3E%3C/script%3E"));
+		  	/* ]]> */
+		  	</script>
+		  	</div>
+		        
+		 	
+		 		April 17, 2009 07:20 AM
+		 	
+	 	  </div>
+		  <div id="article_capsule_byline">
+		  	by
+		   
+		  	<a href="/employees/editorial/denis-cummings.html">Denis Cummings</a>
+		  
+		  </div>
+
+		
+	
+        
+                <div id="article_capsule_deck">Alec Jeffreys, a pioneer in genetic profiling, has criticized the British government&rsquo;s policy of keeping DNA samples of innocent people in its database.</div>
+        
+	
+</div> <!-- END article_capsule -->
+
+				<div id="article_detail">
+					
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="news_section">
+	<div class="dulcinea_section">
+		
+		<h2 class="section_title" id="dulcinea_section_title_0">
+			<a name="0" href="#0">Jeffreys Critical of DNA Database</a>
+		</h2>
+		
+
+           	
+
+
+<script> function fbs_click() {u=location.href;t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;} </script>
+
+<div style="float:left;margin:7px;">
+   <div>
+     <script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script>
+   </div>
+   <div style="margin-top:5px">
+     <script type="text/javascript" src="http://reddit.com/static/button/button2.js"></script>
+   </div>
+   <div style="margin-top:5px">
+     <a href="http://www.facebook.com/share.php?u=http://www.findingdulcinea.com/news/Europe/2009/april/DNA-Pioneer-Wants-Innocent-Out-of-British-Database.html" onclick="return fbs_click()" target="_blank"><img src="/docroot/dulcinea/img/facebook-sharer.png" alt="facebook" />
+   </div>
+   <div style="margin-top:5px">
+     <A HREF="mailto:?subject=An interesting article from findingDulcinea&body=Hi,%0D%0A%0D%0AI just found an interesting entry on http://www.findingDulcinea.com. Thought you'd like to look at it too.   %0D%0A%0D%0Ahttp://www.findingdulcinea.com/news/Europe/2009/april/DNA-Pioneer-Wants-Innocent-Out-of-British-Database.html"><IMG onmouseover="document['email_icon'].src='/docroot/dulcinea/img/email-hover.png'" onmouseout="document['email_icon'].src='/docroot/dulcinea/img/email.png'" id="email_icon" name="email_icon" SRC="/docroot/dulcinea/img/email.png" /></A>
+   </div>
+   <div style="margin-top:5px">
+	<script type="text/javascript" src="http://w.sharethis.com/button/sharethis.js#publisher=2e647ef1-2485-4b74-bf0b-8dddbf109db2&amp;type=website&amp;buttonText=Share&amp;post_services=email%2Cfacebook%2Ctwitter%2Cgbuzz%2Cmyspace%2Cdigg%2Csms%2Cwindows_live%2Cdelicious%2Cstumbleupon%2Creddit%2Cgoogle_bmarks%2Clinkedin%2Cbebo%2Cybuzz%2Cblogger%2Cyahoo_bmarks%2Cmixx%2Ctechnorati%2Cfriendfeed%2Cpropeller%2Cwordpress%2Cnewsvine"></script>
+   </div>
+
+</div>
+
+
+		<div id="NA0">
+
+				
+
+
+
+
+
+
+
+
+<div class="resource_section">
+
+	<div class="resource_text">
+		Sir Alec Jeffreys, professor of genetics at the University of Leicester, developed the technique of DNA fingerprinting in 1984. His breakthrough revolutionized forensic science and gave law enforcement the ability to definitively link suspects to crimes.<br /> <br /> He has concerns, however, <a onclick="window.open(this.href,'','resizable=yes,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,fullscreen=no,dependent=no,width=700,height=600,status'); return false" href="http://www.guardian.co.uk/politics/2009/apr/15/jeffreys-dna-database-human-rights-police">over the use of a DNA database as a crime-fighting tool</a>. The U.K. established the National DNA Database in 1995, collecting DNA samples when a person was charged with a crime and destroying the profiles if the person was acquitted.<br /> <br /> In 2001, England, Wales and Northern Ireland began retaining all profiles, and in 2003 the <a onclick="window.open(this.href,'','resizable=yes,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,fullscreen=no,dependent=no,width=700,height=600,status'); return false" href="http://www.genewatch.org/sub-537968">police began collecting samples after any arrest</a>. The database now contains DNA profiles of between 4 and 5 million people, <a onclick="window.open(this.href,'','resizable=yes,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,fullscreen=no,dependent=no,width=700,height=600,status'); return false" href="http://www.telegraph.co.uk/news/3548134/DNA-database-Questions-and-answers-on-ruling-by-European-Court-of-Human-Rights.html">50 times larger than the next largest national database in Europe</a>. An estimated 850,000 people, including 40,000 children, were later acquitted of their crime.<br /> <br /> &ldquo;My genome is my property. It is not the state's. &hellip; It is an issue of my personal genetic privacy,&rdquo; Jeffreys told The Guardian. &ldquo;I have met some [innocent] people who are on the database and are really distressed by the fact. They feel branded as criminals,&rdquo; adding that he would feel the same way. <br /> <br /> He joins a growing list of critics who believe the government must destroy the profiles of those suspected of a crime, but later acquitted. Their view is supported by the European Court of Human Rights, which in December ruled in a 17-0 decision that the <a onclick="window.open(this.href,'','resizable=yes,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,fullscreen=no,dependent=no,width=700,height=600,status'); return false" href="http://news.bbc.co.uk/2/hi/uk_news/7764069.stm">database was violating the human right to privacy</a>.<br /> <br /> The court, &ldquo;was struck by the blanket and indiscriminate nature of the power of retention,&rdquo; according to the ruling, adding that it &ldquo;failed to strike a fair balance between the competing public and private interests.&rdquo;<br /> <br /> Government and law enforcement officials <a onclick="window.open(this.href,'','resizable=yes,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,fullscreen=no,dependent=no,width=700,height=600,status'); return false" href="http://www.reuters.com/article/scienceNews/idUSTRE4B347M20081204?feedType=RSS&amp;feedName=scienceNews">defended the retention as a necessity to solve crimes</a>. Chris Sims of the Association of Chief Police Officers said that, over the 200,000 samples of innocent people collected between 2001 and 2005, &ldquo;about 8,500 profiles of individuals have been linked with crime scene profiles involving nearly 14,000 offences.&rdquo;<br /> <br /> Despite the court ruling, England&rsquo;s government has shown no inclination to change its policy. The opposition Conservative Party is proposing that <a onclick="window.open(this.href,'','resizable=yes,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,fullscreen=no,dependent=no,width=700,height=600,status'); return false" href="http://www.politics.co.uk/news/legal-and-constitutional/tories-promise-to-reform-dna-database-$1285967.htm">all of the U.K. adopt the policy of Scotland</a>, which removes the DNA profiles of suspects upon acquittal.
+	</div>
+
+
+
+
+        <script type='text/javascript'>
+                if (!com) var com = {};
+                if (!com.qwidget) com.qwidget = {};
+                com.qwidget.webservices = 'http://webservice.qwidget.com';
+                com.qwidget.qwidgetSource = 'qwidget';
+                com.qwidget.qwidgetPath = 'http://webservice.qwidget.com/chattheplanet/wordpress/qwidget/viewer/';
+                com.qwidget.wordpressPath = '';
+                com.qwidget.verbose = false;
+                com.qwidget.environment = 'wordpress'   
+	</script>
+	<script type='text/javascript' src='http://qwidget.com/blog/wp-includes/js/jquery/jquery.js?ver=1.2.6'></script>
+	<script type='text/javascript' src='http://webservice.qwidget.com/chattheplanet/wordpress/qwidget/viewer/js/class.js?ver=0.8.089'></script>
+	<script type='text/javascript' src='http://webservice.qwidget.com/chattheplanet/wordpress/qwidget/viewer/js/qwidgetConfig.js?ver=0.8.089'></script>
+	<script type='text/javascript' src='http://webservice.qwidget.com/chattheplanet/wordpress/qwidget/viewer/js/qwidgetQwid.js?ver=0.8.089'></script>
+	<script type='text/javascript' src='http://webservice.qwidget.com/chattheplanet/wordpress/qwidget/viewer/js/qwidgetMisc.js?ver=0.8.089'></script>
+	<script type='text/javascript' src='http://webservice.qwidget.com/chattheplanet/wordpress/qwidget/viewer/js/qwidgetManager.js?ver=0.8.089'></script>
+	
+	<script type='text/javascript' src='http://webservice.qwidget.com/chattheplanet/wordpress/qwidget/viewer/js/qwidgetView.js?ver=0.8.089'></script>
+	<script type='text/javascript' src='http://webservice.qwidget.com/chattheplanet/wordpress/qwidget/viewer/js/qwidgetModel.js?ver=0.8.089'></script>
+	<script type='text/javascript' src='http://webservice.qwidget.com/chattheplanet/wordpress/qwidget/viewer/js/qwidgetSection.js?ver=0.8.089'></script>
+	<script type='text/javascript' src='http://webservice.qwidget.com/chattheplanet/wordpress/qwidget/viewer/js/qwidgetDialog.js?ver=0.8.089'></script>
+	<script type='text/javascript' src='http://webservice.qwidget.com/chattheplanet/wordpress/qwidget/viewer/js/qwidgetAccount.js?ver=0.8.089'></script>
+	<script type='text/javascript' src='http://webservice.qwidget.com/chattheplanet/wordpress/qwidget/viewer/js/qwidgetMessages.js?ver=0.8.089'></script>
+	<script type='text/javascript' src='http://webservice.qwidget.com/chattheplanet/wordpress/qwidget/viewer/js/json2.js?ver=0.8.089'></script>
+	<link rel='stylesheet' href='http://webservice.qwidget.com/chattheplanet/wordpress/qwidget/viewer/css/qwidget.css' type='text/css' media='screen' title='no title' charset='utf-8'>
+
+	<div id="qwidget_470" question="470" blog_url="http://www.findingdulcinea.com" permalink="http://www.findingdulcinea.com/news/Europe/2009/april/DNA-Pioneer-Wants-Innocent-Out-of-British-Database.html" class="qwidget" qwid="container" qwidget_version="0.8.088">
+		<hr /> Qwidget is loading...<hr /> 
+	</div> 
+	<div id="qwidget_scripts">&nbsp;</div>
+
+</div>
+
+
+		</div>
+	</div>
+</div>	
+
+<div id="news_section">
+	<div class="dulcinea_section">
+		
+		<h2 class="section_title" id="dulcinea_section_title_0">
+			<a name="1" href="#1">Opinion & Analysis: Should the profiles of innocent people be removed from the DNA database?</a>
+		</h2>
+		
+
+		<div id="NA1">
+
+				
+
+
+
+
+
+
+
+
+
+
+<div class="sidebar sidebar_right">
+	
+		<h3>Sources in this Story</h3>
+	
+	
+	
+	<div class="sidebar_text">
+	
+		<ul>     <li><a href="http://www.guardian.co.uk/politics/2009/apr/15/jeffreys-dna-database-human-rights-police" onclick="window.open(this.href,'','resizable=yes,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,fullscreen=no,dependent=no,width=700,height=600,status'); return false"><strong>The Guardian:</strong> DNA pioneer Alec Jeffreys: drop innocent from database</a></li>     <li><a href="http://www.telegraph.co.uk/news/3548134/DNA-database-Questions-and-answers-on-ruling-by-European-Court-of-Human-Rights.html" onclick="window.open(this.href,'','resizable=yes,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,fullscreen=no,dependent=no,width=700,height=600,status'); return false"><strong>The Daily Telegraph:</strong> DNA database: Questions and answers on ruling by European Court of Human Rights</a></li>     <li><a href="http://www.genewatch.org/sub-537968" onclick="window.open(this.href,'','resizable=yes,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,fullscreen=no,dependent=no,width=700,height=600,status'); return false"><strong>GeneWatch:</strong> A brief legal history of the NDNAD</a></li>     <li><a href="http://news.bbc.co.uk/2/hi/uk_news/7764069.stm" onclick="window.open(this.href,'','resizable=yes,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,fullscreen=no,dependent=no,width=700,height=600,status'); return false"><strong>The BBC:</strong> DNA database &lsquo;breach of rights&rsquo;</a></li>     <li><a href="http://www.reuters.com/article/scienceNews/idUSTRE4B347M20081204?feedType=RSS&amp;feedName=scienceNews" onclick="window.open(this.href,'','resizable=yes,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,fullscreen=no,dependent=no,width=700,height=600,status'); return false"><strong>Reuters:</strong> Britain's DNA database violates privacy: court</a></li>     <li><a href="http://www.politics.co.uk/news/legal-and-constitutional/tories-promise-to-reform-dna-database-$1285967.htm" onclick="window.open(this.href,'','resizable=yes,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,fullscreen=no,dependent=no,width=700,height=600,status'); return false"><strong>Politics.co.uk:</strong> Tories promise to reform DNA database</a></li>     <li><a href="http://www.guardian.co.uk/commentisfree/2009/apr/05/dna-database-law" onclick="window.open(this.href,'','resizable=yes,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,fullscreen=no,dependent=no,width=700,height=600,status'); return false"><strong>The Guardian:</strong> Keeping DNA data is illegal. So stop</a></li>     <li><a href="http://www.libdems.org.uk/news/expert-right-to-condemn-dna-database-huhne-232096178;show" onclick="window.open(this.href,'','resizable=yes,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,fullscreen=no,dependent=no,width=700,height=600,status'); return false"><strong>Liberal Democrats:</strong> Expert right to condemn DNA database&mdash;Huhne</a></li>     <li><a href="http://www.guardian.co.uk/commentisfree/libertycentral/2009/apr/15/dna-database-policing" onclick="window.open(this.href,'','resizable=yes,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,fullscreen=no,dependent=no,width=700,height=600,status'); return false"><strong>The Guardian:</strong> DNA database keeps us safe</a></li>     <li><a href="http://www.independent.co.uk/opinion/commentators/david-davis-a-condemnation-of-a-policy-that-does-not-add-up-1052526.html" onclick="window.open(this.href,'','resizable=yes,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,fullscreen=no,dependent=no,width=700,height=600,status'); return false"><strong>The Independent:</strong> David Davis: A condemnation of a policy that does not add up</a></li> </ul>
+	
+	
+	</div>
+</div>
+
+
+
+				
+
+
+
+
+
+
+
+
+<div class="resource_section">
+
+	<div class="resource_text">
+		Conservative MP Chris Grayling, the shadow home secretary, wrote in The Guardian that the retention of innocents&rsquo; DNA in the database &ldquo;is an <a onclick="window.open(this.href,'','resizable=yes,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,fullscreen=no,dependent=no,width=700,height=600,status'); return false" href="http://www.guardian.co.uk/commentisfree/2009/apr/05/dna-database-law">unacceptable extension of what is increasingly becoming a surveillance society</a>.&rdquo; He believes, &ldquo;One of those principles is the right to be treated as innocent unless you are proved to be guilty. That right is inalienable.&rdquo; He later added that that &ldquo;must never change.&rdquo;&nbsp; <br /> <br /> Liberal Democrat Shadow Home Secretary Chris Huhne echoes these sentiments, commenting, &ldquo;<a onclick="window.open(this.href,'','resizable=yes,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,fullscreen=no,dependent=no,width=700,height=600,status'); return false" href="http://www.libdems.org.uk/news/expert-right-to-condemn-dna-database-huhne-232096178;show">It demonstrates how out of touch the Government is with public opinion</a> when the inventor of genetic fingerprinting has to tell them how unfair the DNA database is.&rdquo;<br /> <br /> Simon Foy, head of the Metropolitan Police's Homicide and Serious Crime Command, argues in The Guardian that, though he too has privacy concerns, the &ldquo;<a onclick="window.open(this.href,'','resizable=yes,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,fullscreen=no,dependent=no,width=700,height=600,status'); return false" href="http://www.guardian.co.uk/commentisfree/libertycentral/2009/apr/15/dna-database-policing">DNA database is an essential investigative tool</a>.&rdquo;<br /> <br /> DNA evidence, &ldquo;is one of the reasons murder conviction rates in the UK are significantly higher than those in the rest of the world,&rdquo; he writes. &ldquo;It helps ensure good detection, high conviction rates and a relatively low incidence of murder.&rdquo;<br /> <br /> But Conservative MP David Davis counters in The Independent that the <a onclick="window.open(this.href,'','resizable=yes,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,fullscreen=no,dependent=no,width=700,height=600,status'); return false" href="http://www.independent.co.uk/opinion/commentators/david-davis-a-condemnation-of-a-policy-that-does-not-add-up-1052526.html">crime-fighting benefits of the database are not as great as they are made out to be</a>. &ldquo;Since 2002-03 the number of profiles on the database has more than doubled,&rdquo; he said, &ldquo;but there has been no corresponding increase in the number of crimes detected using DNA.&rdquo;
+	</div>
+
+
+
+
+</div>
+
+
+		</div>
+	</div>
+</div>	
+
+<div id="news_section">
+	<div class="dulcinea_section">
+		
+		<h2 class="section_title" id="dulcinea_section_title_0">
+			<a name="2" href="#2">Background: Alec Jeffreys’ DNA fingerprinting discovery</a>
+		</h2>
+		
+
+		<div id="NA2">
+
+				
+
+
+
+<div class="dulcinea_link">
+
+	
+		<div class="dulcinea_link_text dulcinea_text">
+			On Sept. 10, 1984, Leicester University genetics professor Alec Jeffreys was examining the X-ray of a DNA experiment. &ldquo;I took one look, thought &lsquo;what a complicated mess,&rsquo; then suddenly realised we had patterns,&rdquo; he told the Wellcome Trust. &ldquo;There was a level of individual specificity that was light years beyond anything that had been seen before.&rdquo; Jeffreys described it as a &ldquo;&lsquo;eureka!&rsquo; moment&rdquo; and said, &ldquo;We could immediately see the potential for forensic investigations and paternity.&rdquo;
+		</div>
+	
+	
+		<h4 class="resource_source">Source: <a class="source_link" href="javascript:openwin('http://genome.wellcome.ac.uk/doc_wtd020877.html');">The Wellcome Trust</a></h4>
+	
+	
+	
+		<div class="go_to_link_row"><a class="snap_shots go_to_link" href="javascript:openwin('http://genome.wellcome.ac.uk/doc_wtd020877.html');">go to site &raquo;</a></div>
+	
+
+</div>
+
+	                
+		</div>
+	</div>
+</div>	
+
+
+<!-- END SECTIONS -->
+	
+<!-- eof: newsArticleContent.jsp -->
+
+					
+					
+						
+
+
+<script> function fbs_click2() {u=location.href;t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;} </script>
+
+<div style="margin-bottom:40px">
+   <div style="float:right; margin-left:25px">
+	<script type="text/javascript" src="http://reddit.com/static/button/button1.js"></script>
+   </div>
+   <div style="float:right">
+     <a href="http://www.facebook.com/share.php?u=http://www.findingdulcinea.com/news/Europe/2009/april/DNA-Pioneer-Wants-Innocent-Out-of-British-Database.html" onclick="return fbs_click2()" target="_blank"><img src="/docroot/dulcinea/img/facebook-sharer.png" alt="facebook" />
+   </div>
+   <div style="float:right">
+	<script type="text/javascript">
+	tweetmeme_style = 'compact';
+	</script>
+	<script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script>
+   </div>
+</div>
+
+
+						<script language="JavaScript" src="http://forumctx.topix.net/forumsyndication.js"></script>
+						<script>
+							if (document.topix_forumctx) {
+							    document.topix_forumctx.create_cobrand_form("http://www.findingdulcinea.com/news/Europe/2009/april/DNA-Pioneer-Wants-Innocent-Out-of-British-Database.html", "1989", 1);
+							}
+						</script>
+
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="most_recent_articles" class="article_bottom_block box_style">
+	<h3>Most Recent Beyond The Headlines</h3>
+
+	<div class="most_recent_col">
+		<a href="/news/on-this-day/March-April-08/On-this-Day--Helen-Keller-Comprehends-the-Word--Water-.html">
+	    		<img width="127" height="127" src="/docroot/dulcinea/fd_images/news/on-this-day/March-April-08/On-this-Day--Helen-Keller-Comprehends-the-Word--Water-/news/0/newImageHome.jpg" />
+		</a>
+		<a href="/news/on-this-day/March-April-08/On-this-Day--Helen-Keller-Comprehends-the-Word--Water-.html">
+	    		On This Day: Helen Keller Comprehends the Word “Water”
+		</a>
+	</div>
+
+	<div class="most_recent_col">
+		<a href="/news/on-this-day/March-April-08/On-this-Day--Martin-Luther-King-Jr--Assassinated-in-Memphis.html">
+	    		<img width="127" height="127" src="/docroot/dulcinea/fd_images/news/on-this-day/March-April-08/On-this-Day--Martin-Luther-King-Jr--Assassinated-in-Memphis/news/0/newImageHome.jpg" />
+		</a>
+		<a href="/news/on-this-day/March-April-08/On-this-Day--Martin-Luther-King-Jr--Assassinated-in-Memphis.html">
+	    		On This Day: Martin Luther King Jr. Assassinated
+		</a>
+	</div>
+
+	<div class="most_recent_col">
+		<a href="/news/on-this-day/April/Truman-Signs-Marshall-Plan.html">
+	    		<img width="127" height="127" src="/docroot/dulcinea/fd_images/news/on-this-day/April/Truman-Signs-Marshall-Plan/news/0/newImageHome.jpg" />
+		</a>
+		<a href="/news/on-this-day/April/Truman-Signs-Marshall-Plan.html">
+	    		On This Day: President Truman Signs Marshall Plan Into Law
+		</a>
+	</div>
+
+	<br class="clearfloat"/>
+	<img width="100" height="1" alt="" src="/docroot/dulcinea/img/home/new_home/spacer.gif"/>
+</div> <!-- recentArticles -->
+
+					
+							
+						<!-- bof: article_detail_nav.jsp -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+<!-- START BOTTOM GUIDE NAVIGATION -->
+
+<div id="bottom_navigation">
+	<a id="bottom_nav_read_more" href="/news.topic__ss_categories_ss_top-stories.html">Click For More Beyond the Headlines</a>
+</div>
+<!-- END BOTTOM GUIDE NAVIGATION -->
+
+
+	
+<!-- eof: article_detail_nav.jsp -->
+	
+					
+				</div>
+					
+					
+					
+	<!-- JAVASCRIPT FUNCTIONS -->
+	<script language="javascript">
+		// functions for toggling content display
+		//var totDiv = 0;
+		
+		// Show a single section
+		function showSection(divId) {
+			if ( document.getElementById("NA"+divId) ) { 
+					document.getElementById("NA"+divId).style.display = "block";
+					document.getElementById("dulcinea_section_title_"+divId).style.background =
+						"url(/docroot/dulcinea/jsp/home/newsArticleMinus.gif) center left no-repeat";
+			}
+		}
+		
+		// Hide a single section
+		function hideSection(divId) {
+			if ( document.getElementById("NA"+divId) ) { 
+					document.getElementById("NA"+divId).style.display = "none";
+					document.getElementById("dulcinea_section_title_"+divId).style.background =
+						"url(/docroot/dulcinea/jsp/home/newsArticlePlus.gif) center left no-repeat";
+			}
+		}
+		
+		// Toggles a single section
+		function toggleSection(divId) {
+			if ( document.getElementById("NA"+divId) )
+				if ( document.getElementById("NA"+divId).style.display == "block" || document.getElementById("NA"+divId).style.display == "")
+					hideSection(divId);
+				else 
+					showSection(divId);
+		}
+		
+		// Hides all but a single section
+		function hideAllBut(divId) {
+		   for (i=0; i<totDiv; i++) {
+				if ( document.getElementById("NA"+i) ) {
+					if (i == divId)
+						showSection(i);
+					else
+						hideSection(i);
+				}
+			}
+		}
+		
+		// Hides all sections
+		function hideAll() {
+			for (i=0; i<totDiv; i++)
+				if ( document.getElementById("NA"+i) )
+					hideSection(i);	
+		}
+		
+		// Shows all sections
+		function showAll() { 
+			for (i=0; i<totDiv; i++)
+				if ( document.getElementById("NA"+i) )
+					showSection(i);	
+		}
+		
+		
+		if ( navigator.userAgent.indexOf('Safari') != -1 ){
+			document.getElementById("resize_for_safari_paragraph").style.width="213px";//This resize is for the what you will find panel
+		}
+	
+	</script>
+	<!-- END JAVASCRIPT FUNCTIONS -->
+	</div> <!-- article_content -->
+	
+	
+												
+	<!-- footer-->
+	
+
+
+
+
+
+<!--<table cellpadding="0" class="dulcinea_footer">-->
+<div class="dulcinea_footer">
+	<div class="dulcinea_footer_text">					
+		<a href="/info/Our-Mission.html">
+			&nbsp;About Us&nbsp;
+		</a>
+		<a href="/info/media-kit.html">
+			&nbsp;Press&nbsp;
+		</a>
+		<a href="/info/newsletter.html">
+			&nbsp;Newsletter Sign-up&nbsp;
+		</a>
+		<a href="/info/terms.html">
+			&nbsp;Terms of Service&nbsp;
+		</a>
+		<a href="/info/privacy-promise.html">
+			&nbsp;Privacy Policy&nbsp;
+		</a>
+		<a href="/employees.html">
+			&nbsp;Our Team&nbsp;
+		</a>
+		<a href="/info/site-tour.html">
+			&nbsp;Site Tour&nbsp;
+		</a>
+		<a href="/info/contact-us.html">
+			&nbsp;Contact Us&nbsp;
+		</a>
+		<a href="/info/Education-Initiative.html">
+			&nbsp;Educators&nbsp;
+		</a>
+		<a href="/store.html">
+			&nbsp;Media Store&nbsp;
+		</a>
+		<hr/>
+	</div>
+	<img id="footer_curves" src="/docroot/dulcinea/img/footer/black_footer_bg.jpg"/>					
+	<div id="copyright_notice">&copy; 2011 Dulcinea Media, Inc.</div>
+	
+
+
+
+
+
+
+
+
+
+<div class="ad">
+
+	
+	<iframe src="http://rcm.amazon.com/e/cm?t=findingdulcin-20&o=1&p=48&l=ur1&category=gift_certificates&banner=1J95RP5SP9MDBFSH63R2&f=ifr" width="728" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+
+</div>
+
+</div>
+
+
+
+<!-- Begin 24/7 Media Tracking block -->
+<script type='text/javascript' language='javascript' 
+src='http://oasc05.247realmedia.com/RealMedia/ads/adstream_jx.ads/Dulcinea/analytics/11580915371@x01?section=news&topic=/categories/top-stories'>
+</script>
+<!-- End 24/7 Media Tracking block -->
+
+<!-- eof: footer.jsp -->
+
+
+	<!--End footer-->				
+						
+							
+	</div> <!-- content -->
+	<div id="right_sidebar">
+		<!-- bof: dulcinea_dailyDulcinea.jsp -->
+
+<!-- Tue 7 Aug 07 / The "Daily Dulcinea" panel at the right of every? page. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- right sidebar -->
+<div class="dulcinea_dailyDulcinea">
+	<div class="promo-button" id="findingEducation"><h4><a target="_blank" href="http://findingeducation.com"><img class="how_to_button" id="findingeducation-button" alt="findingEducation" src="/docroot/dulcinea/img/fedu_long_btn.gif"/></a></h4></div>
+	<div class="promo-button" id="encontrandoDulcinea"><h4><a target="_blank" href="http://www.encontrandodulcinea.com"><img class="how_to_button" id="encontrando-button" alt="encontrandoDulcinea" src="/docroot/dulcinea/img/encontrandoButton.jpg"/></a></h4></div>
+	<div class="promo-button" id="SweetSearch"><h4><a target="_blank" href="http://www.sweetsearch.com"><img class="how_to_button" id="SweetSearch-button" alt="SweetSearch" src="/docroot/dulcinea/img/SweetSearchButton.jpg"/></a></h4></div>
+	<div class="sidebar_block" id="other_content">
+		<!--<h3 class="sidebar_header">More Tools</h3>-->
+		<h3 class="sidebar_header"></h3>
+		<!-- SIGN UP FOR FREE -->
+		<ul id="more_tools_list">
+			<!--<li><a style="color:red;" target="_blank" href="http://www.dulcineamedia.com/store/?aznode=287">American-Made Toy Store</a></li>-->
+			<li class="more_tools_list_top"><a target="_blank" href="http://blog.findingdulcinea.com">Read Our Blog</a></li>
+			<li><a href="/info/newsletter.html">Sign Up for Our Newsletter</a></li>
+			<li><a href="/info/contact-us.html">Send Us Feedback</a></li>
+			
+				<li id="rss_item"><img id="rss_icon" src="/docroot/dulcinea/img/rss/rss-icon.jpg"/><a href="/news.rss">Live Updates (RSS)</a></li>
+			
+			<li id="add_bookmark_link"><a href="#" onclick="window.external.AddFavorite(window.location.href, document.title);">Add to Favorites</a></li>
+			
+		</ul></div> <!-- other_content -->
+
+        <div class="sidebar_ad" align="center">
+		<h3>Advertisement</h3>
+
+	<iframe src="http://rcm.amazon.com/e/cm?t=findingdulcin-20&o=1&p=14&l=ur1&category=school&banner=1QAZTF5S3XMCN844TR02&f=ifr" width="160" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+
+        </div>
+</div> <!-- dulcinea_dailyDulcinea -->
+<!-- google analytics code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-1469577-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<!-- eof: dulcinea_dailyDulcinea.jsp -->
+
+	</div><!-- end right_sidebar -->
+	</div> <!-- full_width_container -->			
+
+		
+     		  	 
+			
+	</div> <!-- main_content - used for centering page in browser -->	
+</div> <!-- body_div - used for centering page in browser -->
+											
+	</body>
+			
+<script language="javascript" src="/docroot/dulcinea/js/menu.js"> </script>
+		 
+						
+</html>
+<!-- eof: articles.jsp -->

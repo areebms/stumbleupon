@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Bottle makes dirty water drinkable in an Instant</title>
+<meta name="viewport" content="width=320, user-scalable=yes" />
+<script type="text/javascript"><!--
+	var gebi = function(el){
+		return (typeof(el)=='string'?document.getElementById(el):el);
+	},
+	gebtn = function(el,tn){
+		el = gebi(el);
+		if (el)
+			return el.getElementsByTagName(tn);
+		else
+			return [];
+	},
+	fsc = function(el,c1,c2){
+		el = gebi(el);
+		if (el)
+			el.className=(el.className==c1?c2:c1);
+	},
+	sc = function(el,c) {
+		if (el===undefined)
+			return false;
+		else if (typeof(el)=='string')
+			el = gebi(el);
+		if (el)
+			el.className = c;
+	},
+	chcount=function(o){
+		o=o||{};
+		if (!o.tgt || !o.el)
+			return false;
+		if (typeof(o.tgt)=='string') o.tgt=gebi(o.tgt);
+		var str,err='',len=o.el.value.length;
+		if (len<o.min)
+			err='too short';
+		else if (len>o.max)
+			err='too long';
+		str = err?err:'&#10003;';
+		o.tgt.innerHTML='<span class='+(err?'bad':'good')+'>'+str+'</span>';
+	},
+	addchcount=function(els) {
+		var i,p,f=function(){ if(this.chCount) chcount(this.chCount); }
+		for(i in els){
+			p=els[i];
+			p.el.chCount = p;
+			p.el.addEventListener('keyup',f,false);
+			f.call(p.el);
+		}
+	},
+	adjtxtheight_fld=null, adjtxtareaheight = function(ta,force) {
+		ta = gebi(ta);
+		if (ta) {
+			var f=adjtxtheight_fld;
+			if (!f) {
+				f=document.createElement('div');
+				adjtxtheight_fld=f;
+				sc(f,'textarea '+ta.className);
+				f.style.whiteSpace='pre-wrap';
+				f.style.position='fixed';
+				f.style.left=-3000+'px';
+				f.style.outline='1px solid black';
+				document.body.appendChild(f);
+			}
+			if (f && (ta.prevTAVal!=ta.value || force)) {
+				ta.style.overflow='hidden';
+				f.style.width=ta.clientWidth+'px';
+				f.innerHTML = '';
+				f.appendChild(document.createTextNode(ta.value));
+				var val = (f.clientHeight+(ta.offsetHeight-ta.clientHeight)+40);
+				ta.style.height = val+'px';
+				//if (ta.scrollTop) ta.style.height=(val+ta.scrollTop)+'px';
+				ta.prevTAVal=ta.value;
+			}
+		}
+	}
+	var adjwidth = function(f) {
+		var neww,inp;
+		f=gebi(f);
+		if (f) {
+			inp = f.getElementsByTagName('input');
+			newwf = function(f){ f.style.width = Math.min(600,Math.max(200,f.parentNode.offsetWidth))+'px'; };
+			for(var i=0;i<inp.length;i++) {
+				if (inp[i].className.match(/\binptwidth/))
+					newwf(inp[i]);
+			}
+			inp = f.getElementsByTagName('textarea');
+			for(var i=0;i<inp.length;i++) {
+				newwf(inp[i]);
+			}
+		}
+	}
+	var djp = {
+user: { tt:function(){ } },
+spanclick:function(o){
+	try{
+	o=o||{};
+	o.url = (o.url||(window.location+''));
+	var r,url,hasqs=(o.url||'').match(/\?/);
+	if (hasqs) {
+		r=new RegExp("([?&])("+o.pv+"=[0-9]+)","");
+		if (o.url.match(r)) {
+			url = o.url.replace(r,'$1'+o.pv+'='+o.p);
+		}
+		else
+			url = o.url+'&'+o.pv+'='+o.p;
+	}
+	else url = o.url+'?'+o.pv+'='+o.p;
+	}
+	catch(err){ alert(err); }
+	window.location=url;
+}
+	};
+if(document.location.protocol=='http:'){
+	 var Tynt=Tynt||[];Tynt.push('dF1byYV0Kr3713adbi-bnq');
+	  (function(){var s=document.createElement('script');s.async="async";s.type="text/javascript";s.src='http://tcr.tynt.com/ti.js';var h=document.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})();
+}
+--></script>
+<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
+<script type='text/javascript'>
+	GS_googleAddAdSenseService("ca-pub-1077026815079259");
+	GS_googleEnableAllServices();
+</script>
+<script type='text/javascript'>
+	GA_googleAddSlot("ca-pub-1077026815079259", "Digital-Journal-Mobile");
+</script>
+<script type='text/javascript'>
+	GA_googleFetchAds();
+</script>
+<style type="text/css">
+	body { background:white; }
+	.mobibody {
+		width:300px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	body, td, th, .textarea, textarea, input, .regtxt {
+		font-size:18px;
+		/*
+		font-family:arial,verdana,sans-serif;
+		*/
+		font-family:georgia,serif;
+	}
+	.small, .imgdetails td, .act, .list-email .item .details, input, option, select, button { font-size:14px;}
+	.nowrap, .xtraeff { white-space:nowrap; }
+	a.ut {
+		text-decoration:none;
+		color:#cccccc !important;
+	}
+	a.ut-3,a.ut-4 { color: #88cc88 !important; }
+	a.ut-5,a.ut-7 { color: #cc8888 !important; }
+	.p, .list-email .item { padding: 15px 0;}
+	.tal { text-align:left;}
+	.tac { text-align:center;}
+	.tar { text-align:right;}
+	.imp {font-weight:bold; }
+	.nimp, blockquote { color:#666666; }
+	.vis { display:block; }
+	.visil { display:inline; }
+	.invis { display:none; }
+	.e_tbl td { padding: 4px;}
+	.e_tbl .npub td { color:red;}
+	.imgdetails td { vertical-align:top;padding: 7px 0;}
+	.imgdetails td.nimp { padding-right:10px; }
+	form { padding:0;margin:0;}
+	h3 { padding:5px 0; margin:0;}
+	blockquote { font-style:italic;margin:5 15px; }
+	div.good, div.bad {
+		padding:5px;
+		background:#ffffcc;
+		font-weight:bold;
+		border:1px solid green;
+		margin:10px 0;
+	}
+	div.bad { border-color:red;}
+	span.bad { color:#cc1100; }
+	span.good { color:#119900; }
+	a { color: #013055; }
+	.reglnk { color: #013055!important; }
+	a:visited { color: #61798c; }
+	.reglnk a:visited { color: #61798c!important; }
+	img.avatar {
+		border:1px solid #cccccc;
+	}
+	.list-email .item {
+		font-size:14px !important;
+		border-bottom:1px solid #cccccc;
+	}
+	.list-email a, .blog-list a, .e_tbl a {
+		text-decoration:none!important;
+	}
+	.list-email .item h3 {
+		font-size:18px !important;
+	}
+	.list-email .item .offset {
+		color:#cc1100;
+	}
+	.epadd, .odd, .even, .act, .imgdetails td {
+		padding:8px 3px;
+	}
+	.odd {
+		background:#f0f0f6;
+		border-bottom:1px solid #ccbbbb;
+	}
+	.even, .act, .imgdetails td {
+		border-bottom:1px solid #e0e0e0;
+	}
+	.act a {
+		text-decoration:none;
+		font-weight:bold;
+		color:black!important;
+	}
+	.nodecor {
+		text-decoration:none!important;
+	}
+	.redlbl, .xtraeff {
+		background:#cc1100;
+		/*
+		font-size:13px !important;
+		*/
+		padding:1px;
+		text-decoration:none !important;
+		color:white!important;
+		font-weight:bold;
+	}
+	.xtraeff {
+		font-size:12px;
+	}
+	.e_tbl td {
+		border-bottom:1px solid #cccccc;
+		padding:10px 5px;
+	}
+	table.aspan {
+		width:100%;
+	}
+	.aspan td.sp {
+		text-align:center;
+		padding:10px;
+		font-size:20px;
+	}
+	.aspan a.span, .aspan span.span_sel {
+		font-weight:bold;
+		color:#cc1100!important;
+		padding:2px;
+		text-decoration:none;
+	}
+	.aspan span.span_sel {
+		background:white;
+		border:1px solid #cccccc;
+		color:#666666!important;
+	}
+	h3.odd a {
+		color:#cc1100;
+		text-decoration:none;
+	}
+	.vertspace {
+		line-height:240%;
+	}
+</style>
+
+<link rel="apple-touch-icon" href="/mimg/dj-iphone-icon.png" />
+
+</head>
+<body><div class="mobibody">
+
+<div class="odd">
+	<!-- Digital-Journal-Mobile -->
+	<script type='text/javascript'>
+		GA_googleFillSlot("Digital-Journal-Mobile");
+	</script> 
+</div>
+
+<div style="float:right;" class="p tar imp small">
+	<a href="/?login-cc">Log In</a>
+	</div>
+	<div class="even" style="border-color:black">
+		<a name="top" href="/"><img src="/mimg/logo.gif" height="24" width="200" border="0" align="top" /></a>
+	</div>
+<div class="act">
+	<img src="/images/article.gif" border="0" align="absmiddle" height="16" width="16" />&nbsp;<a href="/">News</a>
+	&nbsp;
+	<img src="/images/blog.gif" border="0" align="absmiddle" height="16" width="16" />&nbsp;<a href="/blogs/">Blogs</a>
+	&nbsp;
+	<img src="/images/group.gif" border="0" align="absmiddle" height="16" width="16" />&nbsp;<a href="/groups/">Groups</a>
+	&nbsp;
+	<img src="/images/image.gif" border="0" align="absmiddle" height="16" width="16" />&nbsp;<a href="/pics/">Images</a>
+</div>
+
+
+	
+
+
+<div id="article_text">
+<h2 style="margin:10px 0 5px 0">Bottle makes dirty water drinkable in an Instant</h2>
+<div class="nimp small">
+	Sep 12, 2007 by <a title="Digital Journalist" class="ut ut-5">&#x25a0;</a>&nbsp;<a class="userlink" href="/user/1705" onmouseover="djp.user.tt(this,event);" pg="5">Chris V. Thangham</a>	<div class="rs_skip small">
+		<a href="/?did=36">Health</a>
+				- <a href="#comments" class="nowrap">3 comments</a>			</div>
+</div>
+
+<div style="padding:10px 0 15px 0" class="small rs_skip">
+	<a href="http://app.readspeaker.com/cgi-bin/rsent?customerid=4357&lang=en_us&voice=heather22k&readid=article_text&url=http%3A%2F%2Fwww.digitaljournal.com%2Farticle%2F227346&save=1">Listen to this article</a>
+<span class="nimp">(by <a href="http://www.voice-corp.com" target="_blank" class=nimp>ReadSpeaker</a>)</span>
+</div>
+
+
+
+<div style="float:right;padding:0 0 10px 10px;" class="vertspace rs_skip imp small nowrap">
+	<div style="width:130px;">
+	<div style="background:white;padding:0px;overflow:hidden;vertical-align:middle;border:1px solid #cccccc;">
+<a href="/image/33654" style="display:block;text-align:center"><img src="/img/1/7/0/5/i/3/3/6/p-small/lifesaverbottle.jpg" alt="The Life Saver bottle  which can clean up the dirtiest water being demonstrated. Ref: Daily Mail" border="0" /></a>
+
+</div>
+	</div>
+			</div>
+
+<div>Michael Pritchard discovers a “Life Saver” bottle that will convert the most impure water into clean potable water in seconds. The bottle sells for £190 and has become a big hit in London. Military is keen to buy this technology from him.</div>
+<div class="even" style="margin-top:5px;">
+	<div style="float:left;padding:10px 15px 0 0;">
+		<a name="fb_share" type="button_count" href="http://www.facebook.com/sharer.php?u=http://www.digitaljournal.com/article/227346">Share</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+	</div>
+	<script type='text/javascript'>
+var permaLink = "http://www.digitaljournal.com/article/227346";
+</script>
+	<div style="float:left;padding-top:10px">
+		<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.digitaljournal.com/article/227346" data-count="horizontal" data-via="digitaljournal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	</div>
+	<br clear=all>
+</div>
+
+
+<div class=p>Michael Pritchard runs a water treatment business in Ipswich, England. Pritchard came up with this novel idea after he watched the Tsunami disaster, seeing how people suffered to get clean water. So he tried to create a simple product that will filter water quickly and safely. He worked hard the next few months after a few failed prototypes; he came up with this “<a href="http://www.telegraph.co.uk/news/main.jhtml;jsessionid=3R3S1NAZ1X2NVQFIQMFCFFWAVCBQYIV0?xml=/news/2007/09/12/nwater112.xml">Life Saver</a>” bottle design. 
+<div style="padding-bottom:15px;"></div>
+
+Pritchard launched this new product at the DESI defense show in London yesterday, soon after he sold out his entire 1,000 stock. Even the military has taken notice and wants his product. It will boost the military’s needs to provide clean water in large volumes without changing a filter. 
+<div style="padding-bottom:15px;"></div>
+<em>
+<div style="padding-bottom:15px;"></div>
+In July a prototype of the bottle was voted "Best Technological Development" at the Soldier Technology conference.</em>
+<div style="padding-bottom:15px;"></div>
+
+
+
+
+
+<img src="http://www.lifesaversystems.com/images/firstpage.gif" />
+<div style="padding-bottom:15px;"></div>
+<em>Advertisement for Life Saver Bottle.
+<div style="padding-bottom:15px;"></div>
+</em>
+<div style="padding-bottom:15px;"></div>
+The filters that are currently used in water treatment can remove bacteria measuring more than 200 nanometers in size, but not the viruses which are 25 nanometers in length. Pritchard’s “Life Saver” bottle has filter that can cut out any particles or viruses that are longer than 15 nanometers. So it effectively cleans any dirty water and makes the water drinkable in seconds.
+<div style="padding-bottom:15px;"></div>
+
+<a href="http://www.lifesaversystems.com/aboutus.html">Here</a> is more technical information from the main web site.
+<div style="padding-bottom:15px;"></div>
+
+The price seems to be high but it will be good to carry along when traveling foreign countries or when visiting camps and outdoors. A similar design done in a larger scale can provide clean water quickly in disaster areas and poorer regions who can’t afford water treatment plants. 
+<div style="padding-bottom:15px;"></div>
+
+I wrote another <a href="http://digitaljournal.com/article/194901">article</a> in June where Mikkel Vestergaard Frandsen produced a water filter gadget for $3.
+<div style="padding-bottom:15px;"></div></div>
+
+</div>
+
+<br clear=all />
+
+<br />
+
+<div class="even p">
+	<div class=imp>Next in Health</div>
+	<div class=p>
+		<a class=nodecor href="/article/305813">Reporter offers insights on disease risks from inside pneumonia&nbsp;<span class="xtraeff" title="Includes interview and first-hand account">Special</span></a>
+	</div>
+</div>
+
+
+
+
+
+
+	<a name="comments"></a>
+<form action="" method=get>
+	<h3 class=odd>
+	<img src="/images/comment.gif" border=0 width=16 height=16 />
+	3 comments</a>
+			</h3>
+</form>
+
+
+<div class=p>
+<a name="tab=comments&sc=1180266"></a>
+	<div class="p even nimp small" style="padding-bottom:10px;"><span style="float:right">#1</span>Sep 12, 2007 <a title="Digital Journalist" class="ut ut-5">&#x25a0;</a>&nbsp;<a class="userlink" href="/user/4290" onmouseover="djp.user.tt(this,event);" pg="5">Bob Ewing</a></div>
+It is pricey but could be very useful.
+<div style="padding-bottom:15px;"></div><a name="tab=comments&sc=1180273"></a>
+	<div class="p even nimp small" style="padding-bottom:10px;"><span style="float:right">#2</span>Sep 12, 2007 <a title="Digital Journalist" class="ut ut-5">&#x25a0;</a>&nbsp;<a class="userlink" href="/user/2226" onmouseover="djp.user.tt(this,event);" pg="5">Laura Trowbridge</a></div>
+Great invention! I'm sure the price will come down eventually, but this is really an important tech.discovery.
+<div style="padding-bottom:15px;"></div>
+I'd buy one if I ever thought I might be somewhere where I'd need it.
+<div style="padding-bottom:15px;"></div><a name="tab=comments&sc=1180332"></a>
+	<div class="p even nimp small" style="padding-bottom:10px;"><span style="float:right">#3</span>Sep 12, 2007 <a title="Digital Journalist" class="ut ut-5">&#x25a0;</a>&nbsp;<a class="userlink" href="/user/608621" onmouseover="djp.user.tt(this,event);" pg="5">Debra Myers</a></div>
+I think the prices will come down after it's been massed produced and has been out for a while.  I would buy one too...when the price is right.
+<div style="padding-bottom:15px;"></div></div>
+
+
+
+
+
+
+<br>
+
+<div class="small imp tar"><a class="nodecor" href="#top">Top^</a></div>
+<div class="odd">View: Mobile site | <a href="http://www.digitaljournal.com/article/227346/Bottle_makes_dirty_water_drinkable_in_an_Instant?noredir=1">Full Site</a></div>
+<div class="tac nimp small">
+	<div class="p">
+		© 1998-2011 digitaljournal.com | <a href="/?contactus">Contact Us</a>
+	</div>
+	powered by <a href="http://www.dell.ca/" target="_blank">dell servers</a>
+</div>
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-521285-4");
+		pageTracker._trackPageview();
+	} catch(err) { }
+</script>
+</div></body>
+</html>

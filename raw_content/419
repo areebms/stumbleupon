@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="description" content="Upload files free: hosting for music, documents, mp3 and files and images. Free File Storage that is simplest and easy to use."/>
+    <meta name="keywords" content="upload files, upload mp3, upload music, free file hosting, free file upload"/>
+	<title>Upload Files, MP3, Music. Free File Hosting To Share Files</title>
+  
+    <link rel="shortcut icon" href="/images/favicon.ico"/>
+    <link href="/css/callisto-Download.css" rel="stylesheet" type="text/css"/>
+    
+    <link href="/css/jquery-ui-1.8.5.custom.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="http://www.wikiupload.com/js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="http://www.wikiupload.com/js/ui/jquery-ui-1.8.5.custom.js"></script>
+	<script type="text/javascript" src="/js/jquery.filetree.js"></script>
+	<script type="text/javascript" src="/js/jquery.fileinfo.js"></script>
+	<script type="text/javascript" src="/js/global.js"></script>
+	<script type="text/javascript" src="/js/jquery.tablesorter.min.js"></script>
+
+<!--   	<script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
+ 	<script type="text/javascript" src="/js/callisto-Download.js"></script>
+-->  	</head>
+<body>
+<div id="main-container" class="uis-widget-content">
+	<div id="header">
+		<a href="/" class="logo">
+			<span  style="margin-left:2.5em;width:25em;height:8.6em;float:left;">&nbsp;</span>
+		</a>
+		<div id="nav-menu">
+			<ul>
+				<li><a href="/about">About</a></li>
+				<li><a href="/contact">Contact</a></li>
+				<li><a href="/terms">Terms</a></li>
+				<li><a href="/privacy">Privacy</a></li>
+								<li><a href="/login">Log in</a></li>
+							</ul>
+		</div>
+	</div>
+<div id="main-content">
+	<div class="theme-container">
+					<div class="download-detail">
+				<div class="title-text">
+				Sorry, File not found!
+				</div>
+			</div>
+				<div class="sharing">
+			<a href="/register" ><div style="margin:2em 4.5em;width:20em;height:8em"></div></a>
+			<a href="/" ><div style="margin:2.5em 2.8em;width:24em;height:4em"></div></a>
+			<table cellspacing="0" cellpadding="0" border="0" class="share-file" width="100%" height="180">
+				<tr>
+					<td colspan="2">
+						<label>Share this file</label>
+					</td>
+				</tr>
+				<tr>
+					<td align="left">
+						<label>Url</label>
+					</td>
+					<td align="left">
+						<input type="text" class="share-text" value=""/>
+					</td>
+				</tr>
+				<tr>
+					<td  align="left">
+						<label>Embed</label>
+					</td>
+					<td align="left">
+						<input type="text" class="share-text" value=""/>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<br style="clear:both;"/>
+	</div>
+	<div id="secondbox">
+		<div id="premium">
+			<table cellspacing="0" cellpadding="0" border="0" width="598" height="230" class="liststyle">
+				<tr>
+					<td width="40" height="40" valign="middle"><img src="/images/handicon.png" border="0"/></td>
+					<td colspan="2" valign="middle" style="font-weight:bold;font-size:1.4em; font-family:Arial;color:#0b304a;">Why Signup for a Premium Account?</td>
+				</tr>
+				<tr>
+					<td height="50" colspan="3" style="color:black;font-size:1em;">Signing up as a member of WikiUpload gives you some great benefits. You'll be able to keep track of your files in a handy file manager where you can upload and share your files easily.</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td height="30"><div class="bullet" ></div></td>
+					<td colspan="2" ><b>Back up</b> - Every photo, document, song.</td>
+				</tr>
+				<tr>
+					<td height="30"><div class="bullet" ></div></td>
+					<td colspan="2" ><b>Easy to use</b> - Simple upload, download and sharing options</td>
+				</tr>
+				<tr>
+					<td height="30"><div class="bullet" ></div></td>
+					<td colspan="2" ><b>Password Protected</b> - Keep your files safe, or share them with anyone you like.</td>
+				</tr>
+				<tr>
+					<td valign="middle"><div class="bullet" ></div></td>
+					<td width="260" height="30" valign="middle"><b>Access from anywhere</b></td>
+					<td><a href="/register"><img src="/images/sign_up_button.png" border="0"/></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="login">
+			<form method="post" action="/login">
+			<table cellspacing="0" cellpadding="0" border="0" width="275" height="230" class="liststyle">
+				<tr>
+					<td width="50" height="40" valign="middle"><img src="/images/usericon.png" border="0"/></td>
+					<td colspan="2" valign="middle" style="font-weight:bold;font-size:1.4em; font-family:Arial;color:#0b304a;">Log in to your Account</td>
+				</tr>
+				<tr>
+					<td colspan="3" height="40" style="color:black;">Already got an account? Log in here..</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td style="color:black;">Email:</td>
+					<td align="right"><input class="text-input" name="login_email" type="text" size="30"/></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td style="color:black;">Password:</td>
+					<td align="right"><input class="text-input" name="login_password" type="password" size="30"/></td>
+				</tr>
+				<tr>
+					<td colspan="2" valign="bottom"></td>
+					<td valign="bottom">
+						<div style="float:left;padding-top:1.4em">
+						<a class="forgot-password" href="#" >Forgot Password?</a>
+						</div>
+						<input type="submit" id="gobutton" value=""/>
+					</td>
+					
+				</tr>
+			</table>
+			</form>
+		</div>
+	</div>
+	<br style="clear:both"/>
+</div>
+<div id="footer">
+<a title="myspace visitor tracker"
+href="http://www.statcounter.com/myspace/"
+target="_blank"><img
+src="http://c.statcounter.com/1530198/0/709b0ea2/1/"
+alt="myspace visitor tracker"
+border="0"></a>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-291348-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>	
+</div>
+<a href="http://www.hivelocity.net">Dedicated Servers</a>
+</div>
+</body>
+</html>

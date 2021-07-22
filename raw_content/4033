@@ -1,0 +1,4298 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+	<title>Luxury Travel | Luxury Vacations | Travel Articles &amp; News</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta name="description" content="Discover the best in luxury travel, five-star hotels, vacation packages, resorts, spas and more at JustLuxe.com">
+	<meta name="keywords" content="luxury travel, luxury vacations, travel articles and news, cruises, luxury hotels, tours, exotic resorts">
+
+	<!-- interstitial
+	<link rel="stylesheet" type="text/css" href="/includes/css/interstitial.css" />
+	<script type="text/javascript" src="/includes/interstitial/interstitial500x500.js" /></script>
+	 end interstitial-->
+
+	<script type="text/javascript" src="/includes/js/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="/includes/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="/includes/js/jquery.galleryview-1.1.js"></script> 
+	<script type="text/javascript" src="/includes/js/jquery.timers-1.1.2.js"></script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){		
+			$('#photos').galleryView({
+				panel_width: 626,
+				panel_height: 238,
+				frame_width: 106,
+				frame_height: 80,
+				overlay_color: '#222',
+				overlay_text_color: 'black',
+				caption_text_color: 'black',
+				background_color: 'transparent',
+				border: 'none',
+				nav_theme: 'light',
+				easing: 'easeInOutQuad',
+				show_captions: true,
+				pause_on_hover: true
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+	<!--
+	/*	var flashvars = {};
+		var params = {};
+		params.wmode = "transparent"; 
+		var attributes = {};
+		swfobject.embedSWF("/includes/flash/travel-map.swf", "mapa", "305", "210", "7.0.0", false, flashvars, params, attributes);
+*/
+		function MM_jumpMenu(targ,selObj,restore){ //v3.0
+		  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+		  if (restore) selObj.selectedIndex=0;
+		}
+
+
+		function goto(there) {
+			var location = there.options[there.selectedIndex].value;
+			window.location.href = location;
+		}
+
+		function check_form(){
+			if (document.frm_destin.continent_id.selectedIndex == 0){
+				alert('Please select a destination');
+				return false;
+			} else{
+				showLoading(document.getElementById('loading'),'load');
+			}
+		
+		}
+
+		var LoadingStatus = 0; 
+		function showLoading(which,act) { 
+			if (which.style.display == "none") { 
+				which.style.display = "block"; 
+				if(act == 'load') { 
+					LoadingStatus = 1; 
+				} 
+			} 
+		} 
+	//-->
+	</script>
+
+<style type="text/css">
+	<!--
+
+
+.blog-land-art-box {
+	background-image: url(/images/120423-articles-landing-tbg.jpg);
+	background-repeat:repeat-y;
+}
+.blog-art-box {
+	background-image:url(/images/120423-articles-landing-title-bg1.png);
+	background-repeat:repeat-x;
+	background-position:top;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height:16px;
+	color: #4a4949;
+	text-transform:none;
+	text-decoration:none;
+	padding:5px;
+}
+.blog-art-box h1{
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+	line-height:25px;
+	font-weight:300;
+	color: #FFF;
+	text-transform:none;
+	text-decoration:none;
+	padding:0px;
+	padding-left:10px;
+	margin:0px;
+}
+.blog-art-box h1 a:link{
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	line-height:24px;
+	font-weight: 300;
+	color: #FFF;
+	text-transform:none;
+	text-decoration:none;
+	margin:0px;
+}
+.blog-art-box h1 a:visited{
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	line-height:24px;
+	font-weight: 300;
+	color: #FFF;
+	text-transform:none;
+	text-decoration:none;
+	margin:0px;
+}
+.blog-art-box h1 a:hover{
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	line-height:24px;
+	font-weight: 300;
+	color: #CCC;
+	text-transform:none;
+	text-decoration:none;
+	margin:0px;
+}
+.blog-art-box span{
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height:12px;
+	color: #676b6d;
+	text-transform:uppercase;
+	text-decoration:none;
+	padding-left:7px;
+	font-weight: bold;
+}
+.blog-art-box samp{
+	font-family: 'Oswald', sans-serif;
+	font-size: 13px;
+	line-height:15px;
+	font-weight:500;
+	color: #aca88b;
+	text-transform:uppercase;
+	text-decoration:none;
+	padding-left:7px;
+}
+.blog-art-box-img {
+	border-top:4px solid #094663;
+}
+.blog-art-box-info {
+	background-image:url(/images/120423-articles-landing-info-box.png);
+	background-repeat:repeat-y;
+	background-position:top;
+}
+.blog-art-short-info {
+	background-color:#edecec;
+	border-top:1px solid #094663;
+	border-bottom:1px solid #FFF;
+	padding:4px 10px 4px 10px;
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#8C8C8C;
+	font-weight:bold;
+}
+.blog-art-short-info a:link{
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#094663;
+	font-weight:bold;
+	text-decoration:none;
+}
+.blog-art-short-info a:visited{
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#094663;
+	font-weight:bold;
+	text-decoration:none;
+}
+.blog-art-short-info a:hover{
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#1e5671;
+	font-weight:bold;
+	text-decoration:none;
+}
+.blog-art-info {
+	border-top:1px solid #edecec;
+	padding:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	line-height:16px;
+	color:#4a4949;
+	font-weight:normal;
+}
+.blog-art-comments {
+	border-top:1px solid #cbcbcb;
+	padding:4px 10px 4px 10px;
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#8C8C8C;
+	font-weight:bold;
+}
+.blog-art-comments a:link{
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#094663;
+	font-weight:bold;
+	text-decoration:none;
+}
+.blog-art-comments a:visited{
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#094663;
+	font-weight:bold;
+	text-decoration:none;
+}
+.blog-art-comments a:hover{
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#1e5671;
+	font-weight:bold;
+	text-decoration:none;
+}
+.blog-video-box {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	line-height:15px;
+	color:#fff;
+	padding:3px;
+	background-color: #101215;
+}
+.blog-video-box span{
+	font-family: 'Oswald', sans-serif;
+	font-size:12px;
+	line-height:14px;
+	color:#aca88b;
+	font-weight:300;
+	text-transform:uppercase;
+}
+.blog-video-box samp{
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	line-height:14px;
+	color:#aca88b;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.subnav-box-travel-landing {
+	background-image: url(/images/120424-subnav-fashion-bg.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
+	line-height:16px;
+	font-weight: 300;
+	color: #474a55;
+	text-transform:none;
+	text-decoration:none;
+	border-bottom:1px solid #b2b2b2;
+}
+.subnav-box-travel-landing a:link{
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
+	line-height:16px;
+	font-weight: 300;
+	color: #474a55;
+	text-transform:none;
+	text-decoration:none;
+	padding:0px 10px 0px 10px;
+	border-right:1px dotted #bfbbbd;
+}
+.subnav-box-travel-landing a:visited{
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
+	line-height:16px;
+	font-weight: 300;
+	color: #474a55;
+	text-transform:none;
+	text-decoration:none;
+	padding:0px 10px 0px 10px;
+	border-right:1px dotted #bfbbbd;
+}
+.subnav-box-travel-landing a:hover{
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
+	line-height:16px;
+	font-weight: 300;
+	color: #094663;
+	text-transform:none;
+	text-decoration:none;
+	padding:0px 10px 0px 10px;
+	border-right:1px dotted #bfbbbd;
+}
+.pagination-travel-landing {
+	background-image: url(/images/120423-articles-page-tbg.jpg);
+	background-repeat: repeat-y;
+	background-position: center top;
+	font-family: 'Oswald', sans-serif;
+	font-size: 12px;
+	line-height:17px;
+	font-weight: 300;
+	color: #b2b2b2;
+	text-transform::uppercase;
+	text-decoration:none;
+	padding-bottom:5px;		
+}
+.pagination-travel-landing a:link{
+	font-family: 'Oswald', sans-serif;
+	font-size: 12px;
+	line-height:17px;
+	font-weight: 300;
+	color: #fff;
+	text-transform::uppercase;
+	text-decoration:none;
+	border-right:1px solid #b2b2b2;
+	padding:0px 5px 0px 5px;	
+}
+.pagination-travel-landing a:visited{
+	font-family: 'Oswald', sans-serif;
+	font-size: 12px;
+	line-height:17px;
+	font-weight: 300;
+	color: #fff;
+	text-transform::uppercase;
+	text-decoration:none;
+	border-right:1px solid #b2b2b2;
+	padding:0px 5px 0px 5px;	
+}
+.pagination-travel-landing a:hover{
+	font-family: 'Oswald', sans-serif;
+	font-size: 12px;
+	line-height:17px;
+	font-weight: 300;
+	color: #b2b2b2;
+	text-transform::uppercase;
+	text-decoration:none;
+	border-right:1px solid #b2b2b2;
+	padding:0px 5px 0px 5px;	
+}
+-->
+</style>
+	
+	<script type="text/JavaScript">
+	<!--
+	function MM_jumpMenu(targ,selObj,restore){ //v3.0
+	  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+	  if (restore) selObj.selectedIndex=0;
+	}
+	//-->
+	</script>
+
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+
+	<script type="text/javascript">
+var xajaxRequestUri="http://www.justluxe.com/travel/";
+var xajaxDebug=false;
+var xajaxStatusMessages=false;
+var xajaxDefinedGet=0;
+var xajaxDefinedPost=1;
+function xajax_setSlave(){xajax.call("setSlave", arguments, 1);}
+</script>
+	<script type="text/javascript" src="http://submit.justluxe.com/community/modules/classes/xajax/xajax_js/xajax.js"></script>
+
+
+<link rel="stylesheet" href="/includes/css/header-styles.css" type="text/css">
+<link rel="stylesheet" href="/includes/css/dropdown_nav.css" media="all" type="text/css"/>
+<link rel="stylesheet" href="/lifestyle/includes/css/style_global.css" media="all" type="text/css">
+<link rel="stylesheet" href="/lifestyle/includes/css/style_JL.css" media="all" type="text/css">
+
+<!-- Google Plus One -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<!-- End Google Plus One-->
+
+<link rel="stylesheet" type="text/css" href="/includes/css/myaccountmenu.css" />
+<script type="text/javascript" src="/includes/js/anylinkmenu.js">
+/***********************************************
+* AnyLink JS Drop Down Menu v2.0- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Project Page at http://www.dynamicdrive.com/dynamicindex1/dropmenuindex.htm for full source code
+***********************************************/
+</script>
+
+<script type="text/javascript">
+
+	function openUploadWindow(){
+
+		newwindow=window.open('/community/upload-article.php','uploadarticle','width=760,height=700,toolbar=0,scrollbars=1,resizable=1,location=0');
+		if (window.focus) {newwindow.focus()}
+	}
+
+//anylinkmenu.init("menu_anchors_class") //Pass in the CSS class of anchor links (that contain a sub menu)
+anylinkmenu.init("menuanchorclass")
+
+//My Account Menu
+var myaccountmenu={divclass:'anylinkmenu', inlinestyle:'', linktarget:''} 
+myaccountmenu.items=[
+	["Dashboard", "/community/dashboard.php"],
+	["My Public Profile", "/community/view-profile.php?p_id="],
+	["Edit My Profile", "/community/edit-profile.php"],
+	["My Articles", "/community/profile-articles.php?p_id="],
+	["My Posts", "/community/profile-articles.php?p_id=&type=story"],
+	["My Photo-Galleries", "/community/profile-photo-galleries.php?p_id="],
+	["My Videos", "/community/profile-videos.php?p_id="],
+	["My Comments", "/community/profile-comments.php?p_id="],
+	["My Favorites", "/community/profile-favorites.php?p_id="],
+	["My Notifications", "/community/notifications.php?p_id="],
+	["Add An Event", "/luxecalendar/add-event.php"],
+	["Upload Your Story", "javascript:openUploadWindow();"]
+]
+
+</script>
+
+
+
+		<!-- Begin comScore Tag -->
+		<script>
+			document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+		</script>
+		<script>
+		<!--
+		COMSCORE.beacon({
+			c1:2,
+			c2:6486636,
+			c3:"",
+			c4:"",
+			c5:"",
+			c6:"",
+			c15:""
+		  });
+		//-->	
+		</script>
+		<noscript>
+		  <img src="http://b.scorecardresearch.com/p?c1=2&c2=6486636&c3=&c4=&c5=&c6=&c15=&cj=1" />
+		</noscript>
+		<!-- End comScore Tag -->
+
+
+<script type="text/javascript">
+
+	function MM_swapImgRestore() { //v3.0
+	  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+	}
+
+	function MM_preloadImages() { //v3.0
+	  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+		var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+		if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+	}
+
+	function MM_swapImage() { //v3.0
+	  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+	   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+	}
+
+
+	function closeBrowserOverlay () {
+		var path="/";
+		document.cookie="jlcatfish=1;path="+escape ( path );
+		
+		document.getElementById('browserOverlay').style.display = 'none';
+	}
+</script>
+
+
+<script>
+/*
+	function pop(elem,show,veil) {
+		
+		var width = 760;
+		var height = 430;
+		var left = parseInt((screen.availWidth/2) - (width/2));
+		//var top = parseInt((screen.availHeight/2) - (height/2));
+		var top = 100;
+		var windowFeatures = "scrollbars, width=" + width + ",height=" + height + ",left=" + left + ",top=" + top + "screenX=" + left + ",screenY=" + top;
+		myWindow = window.open('/includes/login-pop.php', "subWind", windowFeatures);
+		//myWindow=window.open('login-pop.php','','location=0, menubar=0, status=0, toolbar=0,width=755,height=430');
+		checkChild();
+		myWindow.focus();
+		
+		
+	}
+	
+	function checkChild() {
+		if (myWindow.closed) {
+			window.location.reload(true);
+		} else setTimeout("checkChild()",1000);
+	}
+*/
+</script>
+
+
+
+<script type="text/javascript"> 
+	function check_form(){
+		if (document.frm_destin.continent_id.selectedIndex == 0){
+			alert('Please select a destination');
+			return false;
+		} else{
+			showLoading(document.getElementById('loading'),'load');
+		}
+	
+	}
+
+	var LoadingStatus = 0; 
+	function showLoading(which,act) { 
+		if (which.style.display == "none") { 
+			which.style.display = "block"; 
+			if(act == 'load') { 
+				LoadingStatus = 1; 
+			} 
+		} 
+	} 
+	
+	function addfav()
+   {
+   if (document.all)
+      {
+      window.external.AddFavorite
+      ("http://www.justluxe.com/","JustLuxe.com")
+      }
+   }
+
+
+</script>
+
+
+
+
+<style type="text/css">
+<!--
+
+
+		/* start normal background */
+		body {
+			background-color:#000;
+			background-image:url(/images/background.gif);
+			font-family: Arial, Helvetica, sans-serif;
+			padding:0;
+			margin-top: 0px;
+			margin-right: 0px;
+			margin-bottom: 0px;
+			margin-left: 0px;
+		}
+		/* end normal background */
+
+
+
+
+/* Start site code for wrapper center*/
+
+#backgLink {
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:0;
+}
+
+#allTogether {
+	position:absolute;
+	display:block;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:2;
+	background-image: url(/images/050310-transp-backg.gif);
+	background-repeat: repeat-y;
+	background-position: center top;
+	float:inherit;
+	
+}
+
+#allTogether-inpictures {
+	position:absolute;
+	display:block;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:2;
+	float:inherit;
+	text-align:center;
+}
+
+
+
+
+/* End site code for wrapper center */
+
+.hdr-utility-bg {
+	background-image: url(/images/031809-header-utility-bg.jpg);
+	background-repeat: no-repeat;
+}
+.hdr-utility {
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	padding-left: 41px;
+	font-weight: bold;
+}
+.hdr-utility-search-box {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	height: 18px;
+	border: 1px solid #999999;
+}
+.hdr-nav-off {
+	background-image: url(/images/031809-header-nav-off.jpg);
+	background-repeat: repeat-x;
+}
+.hdr-nav-off a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+.hdr-nav-off a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+.hdr-nav-off a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #282829;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.hdr-nav-off-color {
+	background-image: url(/images/031809-header-nav-off.jpg);
+	background-repeat: repeat-x;
+}
+.hdr-nav-off-color a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #F00000;
+	font-weight: bold;
+	text-decoration: none;
+}
+.hdr-nav-off-color a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #F00000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.hdr-nav-on {
+	background-image: url(/images/031809-header-nav-on.jpg);
+	background-repeat: repeat-x;
+}
+.hdr-nav-on a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #282829;
+	font-weight: bold;
+	text-decoration: none;
+}
+.hdr-nav-on a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #282829;
+	font-weight: bold;
+	text-decoration: none;
+}
+.hdr-nav-on a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #282829;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.hdr-nav-sub-off {
+	background-image: url(/images/031809-header-sub-nav-off.jpg);
+	background-repeat: repeat-x;
+}
+.hdr-nav-sub-off a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	
+}
+.hdr-nav-sub-off a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	
+}
+.hdr-nav-sub-off a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	
+}
+.hdr-nav-sub-on {
+	background-image: url(/images/031809-header-sub-nav-on.jpg);
+	background-repeat: repeat-x;
+}
+.hdr-nav-sub-on a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	
+}
+.hdr-nav-sub-on a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	
+}
+.hdr-nav-sub-on a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: underline;
+	
+}
+.travel-search-box {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	height: 17px;
+	border: 1px solid #575040;
+}
+.favorites {
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+}
+.favorites a{
+	color:#E5D980;
+	text-decoration: none;
+}
+.favorites a:visited{
+	color:#E5D980;
+	text-decoration: none;
+}
+.favorites a:hover{
+	color:#E5D980;
+	text-decoration: underline;
+}
+.twitter-link {
+	color: #244E8A;
+}
+.new-link {
+	color:#990000;
+}
+.sign-bg {
+	background-image: url(/hotels/images/101110-header-nav-bgtile.jpg);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+.sign {
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.sign span{
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: bold;
+	color: #D9D479;
+}
+.join{
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.welcome{
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.welcome span{
+	font-weight: bold;
+}
+.join a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.join a:visited{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.join a:hover{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.login{
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: bold;
+}
+.login a{
+	color: #00CCFF;
+	text-decoration: none;
+}
+.login a:visited{
+	color: #00CCFF;
+	text-decoration: none;
+}
+.login a:hover{
+	color: #00CCFF;
+	text-decoration: underline;
+}
+-->
+</style>
+
+<style type="text/css">
+.jl-nav {
+	font-family: "Century Gothic";
+	font-size: 11px;
+	color: #FFF;
+	background-image: url(/images/122810-nav-bg-tile.jpg);
+	background-repeat: repeat-x;
+	font-weight: bold;
+}
+.jl-nav a{
+	color: #00CCFF;
+	text-decoration: none;
+}
+.jl-nav a:visited{
+	color: #00CCFF;
+	text-decoration: none;
+}
+.jl-nav a:hover{
+	color: #00CCFF;
+	text-decoration: underline;
+}
+.jl-nav h1 {
+	font-family: "Century Gothic";
+	font-size: 11px;
+	color: #999;
+	padding-left: 30px;
+	margin: 0px;
+	font-weight: normal;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.jl-nav-search {
+	font-family: "Century Gothic";
+	font-size: 11px;
+	color: #666;
+	background-color: #FFF;
+	border: 1px solid #1A1A1A;
+	padding: 3px;
+	margin-right: 5px;
+}
+.jl-nav-sub {
+	font-family: "Century Gothic";
+	font-size: 13px;
+	color: #CCC;
+	background-image: url(/images/122810-nav-sub-bg.jpg);
+	background-repeat: repeat-x;
+	padding-right: 30px;
+	padding-left: 30px;
+	text-align: left;
+	font-weight: bold;
+}
+.jl-nav-sub a{
+	color: #000;
+	text-decoration: none;
+}
+.jl-nav-sub a:visited{
+	color: #000;
+	text-decoration: none;
+}
+.jl-nav-sub a:hover{
+	color: #000;
+	text-decoration: underline;
+}
+</style>
+
+
+	<script language="Javascript">
+	<!--
+		var axel = Math.random() + "";
+		var ord = axel * 1000000000000000000;
+		var dc_tile = 0;
+
+		var OAS_RN = new String (Math.random());
+		var OAS_RNS = OAS_RN.substring (2,11);
+
+	//-->
+	</script>	
+
+<!-- analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-165314-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- end analytics -->
+
+
+<script language="JavaScript1.2" type="text/JavaScript">
+
+	function hide_div(){
+		document.getElementById('divpb').style.visibility = "hidden"
+	}
+
+	function MM_findObj(n, d) { //v4.01
+	  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+		d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+	  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+	  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+	  if(!x && d.getElementById) x=d.getElementById(n); return x;
+	}
+
+</script>
+	<!-- overlay -->
+	<script>
+		function pop(elem,show,veil) {
+			/*
+			o = document.getElementById('overlay');
+			s = document.getElementById(elem);
+			if (show == 1) {
+				if (veil == 1) {
+					o.style.display = 'block';
+				}
+				s.style.display = 'block';
+			} else {
+				o.style.display = 'none';
+				s.style.display = 'none';
+			}
+			*/
+			var width = 760;
+			var height = 530;
+			var left = parseInt((screen.availWidth/2) - (width/2));
+			//var top = parseInt((screen.availHeight/2) - (height/2));
+			var top = 100;
+			var windowFeatures = "scrollbars, width=" + width + ",height=" + height + ",left=" + left + ",top=" + top + "screenX=" + left + ",screenY=" + top;
+			myWindow = window.open('/includes/login-pop.php', "subWind", windowFeatures);
+			//myWindow=window.open('login-pop.php','','location=0, menubar=0, status=0, toolbar=0,width=755,height=430');
+			checkChild();
+			myWindow.focus();
+			
+		}
+	
+	function checkChild() {
+		if (myWindow.closed) {
+			window.location.reload(true);
+		} else setTimeout("checkChild()",1000);
+	}
+		
+	</script>
+	<!-- end overlay -->
+
+	<!-- google +1 -->
+	<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+	<!-- end google +1 -->
+
+</head>
+<body onload();>
+<script type="text/javascript">var mtuagent=navigator.userAgent.toLowerCase();if((mtuagent.match(/iphone/i) != null) || (mtuagent.match(/ipod/i) != null) || (mtuagent.match(/ipad/i) != null) || (mtuagent.match(/android/i) != null) || (mtuagent.match(/blackberry/i) != null)) {document.write('<script type="text/javascript" src="http://impel.mobiletheory.com/ad/mobiletheory.php?f=d&pid=MjE4&keywords=">');document.write("</scr"+"ipt>");} </script>
+<div style="display:none;">
+	<!-- begin ad tag -->
+	<script type="text/javascript">
+	<!--
+		OAS_url = 'http://oasc18015.247realmedia.com';
+		OAS_sitepage = 'www.justluxe.com/travel';
+		OAS_pos = 'Top,Middle1,Middle2,Bottom,Position1,Position2,Position3,Position4,x01,x02,x04,x10,x11,x12,x13,x31,x32,x33,x34,x35,x36,x40,x60,x61,x62,x63,Right!Position4';
+		OAS_query = '';
+		var OAS_pubclick = '';
+		OAS_query += '&_RM_HTML_CLICK_=' + OAS_pubclick;
+		document.write('<scr' + 'ipt type="text/javascript" src="' + OAS_url + '/RealMedia/ads/adstream_jx.ads/'
+		+ OAS_sitepage + '/1' + OAS_RNS + '@' + OAS_pos + '?' + OAS_query + '"></scr' + 'ipt>');
+	// -->
+	</script>
+	
+	<noscript>
+		<a href="http://oascentral.site.com/RealMedia/ads/click_nx.ads/www.justluxe.com/travel/@Position4?">
+		<img src="http://oascentral.site.com/RealMedia/ads/adstream_nx.ads/www.justluxe.com/travel/@Position4?" border="0" />
+		</a>
+	</noscript>
+	<!-- end ad tag -->
+</div>		<!-- 
+		<style type="text/css">
+		#jl-skin-link {
+			position: absolute;
+			width: 100%;
+			height: 800px;
+			margin-left: auto;
+			margin-right: auto;
+			top: 0px;
+			left: 0px;
+			z-index: -999;
+		}
+
+		#jl-background-skin
+		{
+			background: url("http://media2.justluxe.com/banners/guess/guess-shanghai-1152x720.jpg") no-repeat 50% 0;
+			background-color: #000;
+			height: 800px;
+			position: absolute;
+			width: 100%;
+			top: 0px;
+			left: 0px;
+			z-index: -999;
+		}
+		body{
+			background-image:none;
+			background-color:#000;
+		}
+		</style>
+				<A HREF="http://ad.doubleclick.net/jump/N2581.justluxe/B5724025.10;sz=1x1;ord=?">
+		<IMG SRC="http://ad.doubleclick.net/ad/N2581.justluxe/B5724025.10;sz=1x1;ord=?" BORDER=0 WIDTH=1 HEIGHT=1 ALT="Advertisement"></A>
+		-->
+		
+		<!--
+		<div id="jl-background-skin"><a href="http://ad.doubleclick.net/clk;246280527;71501787;l?http://shop.guess.com/?CMP=ADV-MORJustLuxe_FashionChannel_Skin" id="jl-skin-link" target="guess"></a></div>
+		-->
+
+		<!--
+		<script type="text/JavaScript">
+			var screenwidth = screen.width;
+			if (screenwidth <= 1024) {
+				document.body.style.backgroundImage = "url(/images/background.gif)";
+				document.getElementById('jl-background-skin').style.background = '';
+				document.getElementById('jl-background-skin').style.height = '0px';
+				document.getElementById('jl-skin-link').style.height = '0px';
+			} else if (screenwidth <= 1152) {
+				document.getElementById('jl-background-skin').style.background = 'url(http://media2.justluxe.com/banners/guess/guess-shanghai-1152x720.jpg) no-repeat 50% 0;';
+				document.getElementById('jl-background-skin').style.height = '720px';
+				document.getElementById('jl-skin-link').style.height = '720px';
+			} else if (screenwidth <= 1280){
+				document.getElementById('jl-background-skin').style.background = 'url(http://media2.justluxe.com/banners/guess/guess-shanghai-1280x800.jpg) no-repeat 50% 0;';
+				document.getElementById('jl-background-skin').style.height = '800px';
+				document.getElementById('jl-skin-link').style.height = '800px';
+			} else if (screenwidth <= 1440){
+				document.getElementById('jl-background-skin').style.background = 'url(http://media2.justluxe.com/banners/guess/guess-shanghai-1440x900.jpg) no-repeat 50% 0;';
+				document.getElementById('jl-background-skin').style.height = '900px';
+				document.getElementById('jl-skin-link').style.height = '900px';
+			} else if (screenwidth <= 1680){
+				document.getElementById('jl-background-skin').style.background = 'url(http://media2.justluxe.com/banners/guess/guess-shanghai-1680x1050.jpg) no-repeat 50% 0;';
+				document.getElementById('jl-background-skin').style.height = '1050px';
+				document.getElementById('jl-skin-link').style.height = '1050px';
+			} else {
+				document.getElementById('jl-background-skin').style.background = 'url(http://media2.justluxe.com/banners/guess/guess-shanghai-1920x1200.jpg) no-repeat 50% 0;';
+				document.getElementById('jl-background-skin').style.height = '1200px';
+				document.getElementById('jl-skin-link').style.height = '1200px';
+			}
+		</script> 
+-->
+
+
+<div style="display:none;">
+	<!-- begin ad tag -->
+	<script type="text/javascript">
+	<!--
+		OAS_url = 'http://oasc18015.247realmedia.com';
+		OAS_sitepage = 'www.justluxe.com/travel';
+		OAS_pos = 'Top,Middle1,Middle2,Bottom,Position1,Position2,Position3,Position4,x01,x02,x04,x10,x11,x12,x13,x31,x32,x33,x34,x35,x36,x40,x60,x61,x62,x63,Right!x40';
+		OAS_query = '';
+		var OAS_pubclick = '';
+		OAS_query += '&_RM_HTML_CLICK_=' + OAS_pubclick;
+		document.write('<scr' + 'ipt type="text/javascript" src="' + OAS_url + '/RealMedia/ads/adstream_jx.ads/'
+		+ OAS_sitepage + '/1' + OAS_RNS + '@' + OAS_pos + '?' + OAS_query + '"></scr' + 'ipt>');
+	// -->
+	</script>
+	
+	<noscript>
+		<a href="http://oascentral.site.com/RealMedia/ads/click_nx.ads/www.justluxe.com/travel/@x40?">
+		<img src="http://oascentral.site.com/RealMedia/ads/adstream_nx.ads/www.justluxe.com/travel/@x40?" border="0" />
+		</a>
+	</noscript>
+	<!-- end ad tag -->
+</div>
+<!-- addon pixel -->
+
+
+
+<!-- Start site center wrapper -->
+<!--
+<div id="backgLink" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='http://ad.doubleclick.net/clk;224106201;47580711;q'";"return false" >
+-->
+
+<div id="allTogether" style="vertical-align:top;" align="center">	
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" valign="top" bgcolor="#1A1A1A" id="middle_nav" style="position:fixed;z-index:9999999999;">
+	<tr>
+		<td align="center" class="jl-nav">
+			<table width="950" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="97">
+					<img src="/images/122810-nav-justluxe-on.jpg" alt="JustLuxe" width="97" height="41" border="0"/>					</td>
+					<td width="128"><a href="http://travel.justluxe.com" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image28','','/images/122810-nav-luxuryhotels-hover.jpg',1)"><img src="/images/122810-nav-luxuryhotels-off.jpg" alt="Luxury Hotels" name="Image28" width="128" height="41" border="0" id="Image28" /></a></td>
+					<td width="127"><a href="/livingluxe/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','/images/122810-nav-livingluxe-hover.jpg',1)"><img src="/images/122810-nav-livingluxe-off.jpg" alt="shop LivingLuxe" name="Image17" width="127" height="41" border="0" id="Image17" /></a></td>
+                    <td width="95" align="left" style="padding-left: 5px;">
+					<a href="/community/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','/images/090311-header-luxelounge-on1.jpg',1)"><img src="/images/090311-header-luxelounge-purple1.jpg" alt="community LuxeLounge" name="Image16" width="95" height="41" border="0"></a>					</td>
+                    
+	        <td align="left"><h1>Luxury Guide</h1></td>
+											
+							<td align="center"><a href="javascript:pop('signupoverlay',1,1);">Join Now</a> | <a href="javascript:pop('loginoverlay',1,0);">Sign In</a></td>
+					
+							<td align="right">
+								<form name="frm_search" method="get" action="/search.php" id="googlesearch">
+								<input type="hidden" name="site" value="luxury"/>
+								<input type="hidden" name="client" value="luxury"/>
+								<input type="hidden" name="proxystylesheet" value="luxury"/>
+								<input type="hidden" name="output" value="xml_no_dtd"/>
+								<input name="q" type="text" class="jl-nav-search" value="Luxury Search" onFocus="if(this.value == 'Luxury Search') { this.value = ''; }"/>
+								<input name="search" type="image" src="/images/122810-nav-search-btn.jpg" alt="Search" width="20" height="24" align="absmiddle" border="0"/>
+								</form>
+							</td>
+									</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+	
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" valign="top"  id="middle_nav"  style="padding-top:40px">
+	<tr>
+		<td height="115" align='center'>
+			<table width="950" height="115" border="0" cellpadding="0" cellspacing="0" bgcolor="#1A1A1A" align="center">
+				<tr>
+					<td width="209" align="center">
+                    
+						 <a href="/"><img src="/images/031809-header-logo.jpg" alt="JustLuxe | Affluent Lifestyle Guide" width="209" height="66" border="0"/></a>                    </td>
+					<td rowspan="2" align="center">
+						
+	<!-- begin ad tag -->
+	<script type="text/javascript">
+	<!--
+		OAS_url = 'http://oasc18015.247realmedia.com';
+		OAS_sitepage = 'www.justluxe.com/travel';
+		OAS_pos = 'Top,Middle1,Middle2,Bottom,Position1,Position2,Position3,Position4,x01,x02,x04,x10,x11,x12,x13,x31,x32,x33,x34,x35,x36,x40,x60,x61,x62,x63,Right!Top';
+		OAS_query = '';
+		var OAS_pubclick = '';
+		OAS_query += '&_RM_HTML_CLICK_=' + OAS_pubclick;
+		document.write('<scr' + 'ipt type="text/javascript" src="' + OAS_url + '/RealMedia/ads/adstream_jx.ads/'
+		+ OAS_sitepage + '/1' + OAS_RNS + '@' + OAS_pos + '?' + OAS_query + '"></scr' + 'ipt>');
+	// -->
+	</script>
+	<noscript>
+		<a href="http://oascentral.site.com/RealMedia/ads/click_nx.ads/www.justluxe.com/travel/@Top?">
+		<img src="http://oascentral.site.com/RealMedia/ads/adstream_nx.ads/www.justluxe.com/travel/@Top?" border="0" />
+		</a>
+	</noscript>
+	<!-- end ad tag -->
+					</td>
+				</tr>
+				<tr>
+					<td align="center"></td>
+				</tr>
+		  </table>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" width="100%"  id="section_buttons">
+		<div class="menu-jk">
+		
+
+            <ul>
+                <li><a href="/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','/images/021412-jlnav-home-on.jpg',1)"><img src="/images/021412-jlnav-home-off.jpg" alt="Home" name="Image18" width="89" height="36" border="0" id="Image18" /></a></li>
+                <li><a href="/lifestyle/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','/images/021412-jlnav-lifestyle-on.jpg',1)"><img src="/images/021412-jlnav-lifestyle-off.jpg" alt="LifeStyle" name="Image19" width="112" height="36" border="0" id="Image19" /></a>
+				<ul onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','/images/122810-nav-lifestyle-on.jpg',1)">
+					<li><a href="/lifestyle/luxury-cars/articles-2.php">Autos &amp; Vehicles</a></li>
+					<li><a href="/lifestyle/arts/articles-8.php" >Arts &amp; Culture</a></li>
+					<li><a href="/lifestyle/aircraft/articles-1.php">Aviation</a></li>
+					<li><a href="/lifestyle/luxury-yachts/articles-6.php">Boats &amp; Yachts</a></li>
+					<li><a href="/lifestyle/electronics/articles-4.php">Electronics</a></li>
+					<li><a href="/luxecalendar/">Events</a></li>
+					<li><a href="/lifestyle/dining/articles-152.php">LuxeEpicure</a></li>
+					<li><a href="/lifestyle/home-decor/articles-153.php" >Home</a></li>
+					<li><a href="/lifestyle/leisure/articles-5.php">Leisure</a></li>
+					<li><a href="/lifestyle/real-estate/articles-7.php">Real Estate</a></li>
+					<li><a href="/video1.php">Lifestyle Videos</a></li>
+					</ul>
+
+				</li>
+                <li><a href="/travel/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','/images/021412-jlnav-luxetravel-on.jpg',1)"><img src="/images/021412-jlnav-luxetravel-on.jpg" alt="Luxe Travel" name="Image20" width="128" height="36" border="0" id="Image20" /></a>
+					<ul onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','/images/122810-nav-luxetravel-on.jpg',1)"> 
+					<li><a href="/travel/city-guides.php" >City Guides</a></li>
+					<li><a href="/travel/cruise/articles-20.php">Cruises</a></li>
+					<li><a href="/travel/hotel/articles-14.php">Hotel Reviews</a></li>
+					<li><a href="/travel/spa/articles-25.php">Resorts &amp; Spas</a></li>
+					<li><a href="/travel/luxury-vacations/articles-132.php">Luxury Vacations</a></li>
+					<li><a href="/travel/villas/articles-27.php">Villas</a></li>
+					<li><a href="/travel/luxury-travel-deals/articles-89.php">Specials</a></li>
+					<li><a href="/gallery-index.php">Photo Galleries</a></li>
+                    <li><a href="/luxevideo/?channelId=8cb3cb0f-5208-4a88-9095-1fea59776978">Travel Videos</a></li>
+					<li><a href="http://travel.justluxe.com">Book a Hotel Now</a></li>
+					</ul>
+				</li>
+                <li><a href="/fine-living/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','/images/021412-jlnav-fashion-on.jpg',1)"><img src="/images/021412-jlnav-fashion-off.jpg" alt="Fashion" name="Image21" width="108" height="36" border="0" id="Image21" /></a>
+					<ul onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','/images/122810-nav-fashion-on.jpg',1)">
+					<li><a href="/fine-living/celebrity-style/articles-151.php">Celebrity Style</a></li>
+					<li><a href="/fine-living/fashion/articles-16.php">Fashion & Style</a></li>
+					<li><a href="/fine-living/fitness/articles-17.php">Health & Beauty</a></li>
+					<li><a href="/fine-living/jewelry/articles-9.php">Jewelry &amp; Watches</a></li>
+					<li><a href="/fine-living/chatter/articles-186.php">Chatter</a></li>
+					<li><a href="/luxecalendar/fashion-events/events-52.php?ref=sub-menu">Events</a></li>
+					<li><a href="/gallery-index.php">Photo Galleries</a></li>
+                    <li><a href="/luxevideo/index.php?vcat=4">Fashion Videos</a></li>
+					<li><a href="/livingluxe/">Shop LivingLuxe</a></li>
+					</ul>
+				</li>
+                <li><a href="/lifestyle/luxury-cars/articles-2.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','/images/021412-jlnav-autos-on.jpg',1)"><img src="/images/021412-jlnav-autos-off.jpg" alt="Autos" name="Image22" width="77" height="36" border="0" id="Image22" /></a></li>
+                <li><a href="/lifestyle/dining/articles-152.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','/images/021412-jlnav-luxeepicure-on.jpg',1)"><img src="/images/021412-jlnav-luxeepicure-off.jpg" alt="LuxeEpicure" name="Image15" width="117" height="36" border="0" id="Image15" /></a></li>
+                <li><a href="/best-of-luxury/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','/images/021412-jlnav-bestofluxe-on.jpg',1)"><img src="/images/021412-jlnav-bestofluxe-off.jpg" alt="Best of Luxe" name="Image23" width="115" height="36" border="0" id="Image23" /></a></li>
+                <li><a href="/luxe-insider/index.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','/images/021412-jlnav-luxeinsider-on.jpg',1)"><img src="/images/021412-jlnav-luxeinsider-off.jpg" alt="LuxeInsider" name="Image24" width="113" height="36" border="0" id="Image24" /></a></li>
+                
+				<li><a href="/luxevideo/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','/images/021412-jlnav-videos-on.jpg',1)"><img src="/images/021412-jlnav-videos-off.jpg" alt="Videos" name="Image25" width="91" height="36" border="0" id="Image25" /></a></li>
+                
+				<!--<li><a href="/wealth/money/articles-165.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','/images/122810-nav-money-on.jpg',1)"><img src="" alt="Money" name="Image15" width="92" height="36" border="0" id="Image15" /></a></li>-->
+                
+                
+            </ul>
+		</div>
+		</td>
+	</tr>
+</table>
+
+<!--sub nav -->
+	<!-- Do not remove this comment -->
+
+
+    <div style="z-index:-999999;padding:0px;margin:0px;border:0px;font-size:1px;line-height:1em;" width="100%" align="center"></div><div width='950' style='width:950px;text-align:left;margin-left:auto;margin-right:auto;'>
+<link href="/includes/css/main-index.css" rel="stylesheet" type="text/css">
+
+<!--facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=226903057399516";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<table bgcolor="#ffffff" width="950" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td colspan="2"><img src="images/011011-index-top-line.gif" width="950" height="2"></td>
+	</tr>
+	<tr>
+		<td colspan="2" align="left" style="background-color:#1b161a" class="main-flipper"><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  /* This code is executed after the DOM has been completely loaded */
+  var totWidth=0;
+  var positions = new Array();	
+  $('#slides .slide').each(function(i){	  
+    /* Traverse through all the slides and store their accumulative widths in totWidth */
+    positions[i]= totWidth;
+    totWidth += $(this).width();		
+    /* The positions array contains each slide's commulutative offset from the left part of the container */
+    if(!$(this).width()){
+      return false;
+    }
+  });	
+  $('#slides').width(totWidth);
+    /* Change the cotnainer div's width to the exact width of all the slides combined */
+  $('#menu-slider ul li a').click(function(e,keepScroll){
+  /* On a thumbnail click */
+  $('li.menuSlider').removeClass('act').addClass('inact');
+  $(this).parent().addClass('act');
+  var pos = $(this).parent().prevAll('.menuSlider').length;
+  $('#slides').stop().animate({marginLeft:-positions[pos]+'px'},450);  
+  /* Start the sliding animation */
+  e.preventDefault();  
+  /* Prevent the default action of the link */
+  // Stopping the auto-advance if an icon has been clicked:
+  if(!keepScroll) clearInterval(itvl);
+});
+  $('#menu-slider ul li.menuSlider:first').addClass('act').siblings().addClass('inact'); 
+  /* On page load, mark the first thumbnail as active */
+  /*****
+	 *
+	 *	Enabling auto-advance.
+	 *
+  ****/
+  var current=1;
+  function autoAdvance(){
+    if(current==-1) return false;
+    $('#menu-slider ul li a').eq(current%$('#menu-slider ul li a').length).trigger('click',[true]);	
+	// [true] will be passed as the keepScroll parameter of the click function on line 28
+    current++;
+  }
+  // The number of seconds that the slider will auto-advance in:
+  var changeEvery = 6;
+  var itvl = setInterval(function(){autoAdvance()},changeEvery*1000);
+  /* End of customizations */
+});
+</script>
+
+
+<style type="text/css">
+.all {
+	display:inline;
+	float:left;
+}
+
+.all ul li{
+	display:inline;
+	float:left;
+}
+
+/* Gallery styles */
+.main-flipper {
+	background-image: url(http://www.justluxe.com/images/011011-flipper-bg.jpg);
+	background-repeat: no-repeat;
+	background-position:bottom;
+}
+#gallery-slider{		
+	/* The width of the gallery */
+	width:950px;
+	overflow:hidden;
+}
+#slides{
+	/* This is the slide area */
+	height:278px;
+	/* jQuery changes the width later on to the sum of the widths of all the slides. */
+	width:950px;
+	overflow:hidden;
+}
+.slide{
+	float:left;
+}
+#menu-slider{
+	/* This is the container for the thumbnails */
+	height:86px;
+	background-image:url(/images/travel-slider-bg-thumbnails.jpg); 
+	background-repeat:no-repeat;
+}
+#menu-slider ul{
+	margin:0px;
+	padding:0px;
+}
+#menu-slider li{
+	/* Every thumbnail is a li element */
+	width:190px;
+	display:inline-block;
+	list-style:none;
+	height:76px;
+	overflow:hidden;
+}
+#menu-slider li.inact:hover{
+	/* The inactive state, highlighted on mouse over */
+	/*background:url(images/pic_bg.png) repeat;*/
+}
+#menu-slider li.act,li.act:hover{
+	/* The active state of the thumb */
+	background:url(images/active_bg.png) no-repeat;
+	z-index:9999;
+}
+
+#menu-slider li.act a{
+	cursor:default;
+}
+
+.sliderbar{
+	/* The left-most vertical bar, next to the first thumbnail */
+	background:none;
+}
+
+.sliderbar li a{
+	display:block;
+	height:76px;
+	padding-top:10px;
+	background:none;
+}
+
+.sliderbar a img{
+	border:none;
+}
+#main-slider{
+	/* The main container */
+	
+	text-align:center;
+	width:950px;
+	position:relative;
+}
+#main-slider a, a:visited {	
+	text-decoration:none;
+	outline:none;
+}
+#main-slider a:hover{
+	text-decoration:underline;
+}
+</style>
+
+
+<table width="950" border="0" align="left" cellpadding="0" cellspacing="0" class="all" bgcolor="#1b161a">
+   <tr>
+      <td align="left">
+        <div id="main-slider">
+          <div id="gallery-slider">
+          
+            <div id="slides">
+         
+              <div class="slide" style="width:950px; height:278px;">
+              
+
+	<!-- begin ad tag -->
+	<script type="text/javascript">
+	<!--
+		OAS_url = 'http://oasc18015.247realmedia.com';
+		OAS_sitepage = 'www.justluxe.com/travel';
+		OAS_pos = 'Top,Middle1,Middle2,Bottom,Position1,Position2,Position3,Position4,x01,x02,x04,x10,x11,x12,x13,x31,x32,x33,x34,x35,x36,x40,x60,x61,x62,x63,Right!x60';
+		OAS_query = 'x60';
+		var OAS_pubclick = '';
+		OAS_query += '&_RM_HTML_CLICK_=' + OAS_pubclick;
+		document.write('<scr' + 'ipt type="text/javascript" src="' + OAS_url + '/RealMedia/ads/adstream_jx.ads/'
+		+ OAS_sitepage + '/1' + OAS_RNS + '@' + OAS_pos + '?' + OAS_query + '"></scr' + 'ipt>');
+	// -->
+	</script>
+	<noscript>
+		<a href="http://oascentral.site.com/RealMedia/ads/click_nx.ads/www.justluxe.com/travel/@x60?x60">
+		<img src="http://oascentral.site.com/RealMedia/ads/adstream_nx.ads/www.justluxe.com/travel/@x60?x60" border="0" />
+		</a>
+	</noscript>
+	<!-- end ad tag -->
+
+
+
+              </div>
+
+              <div class="slide" style="width:950px; height:278px;">
+              
+
+
+	<!-- begin ad tag -->
+	<script type="text/javascript">
+	<!--
+		OAS_url = 'http://oasc18015.247realmedia.com';
+		OAS_sitepage = 'www.justluxe.com/travel';
+		OAS_pos = 'Top,Middle1,Middle2,Bottom,Position1,Position2,Position3,Position4,x01,x02,x04,x10,x11,x12,x13,x31,x32,x33,x34,x35,x36,x40,x60,x61,x62,x63,Right!x62';
+		OAS_query = 'x62';
+		var OAS_pubclick = '';
+		OAS_query += '&_RM_HTML_CLICK_=' + OAS_pubclick;
+		document.write('<scr' + 'ipt type="text/javascript" src="' + OAS_url + '/RealMedia/ads/adstream_jx.ads/'
+		+ OAS_sitepage + '/1' + OAS_RNS + '@' + OAS_pos + '?' + OAS_query + '"></scr' + 'ipt>');
+	// -->
+	</script>
+	<noscript>
+		<a href="http://oascentral.site.com/RealMedia/ads/click_nx.ads/www.justluxe.com/travel/@x62?x62">
+		<img src="http://oascentral.site.com/RealMedia/ads/adstream_nx.ads/www.justluxe.com/travel/@x62?x62" border="0" />
+		</a>
+	</noscript>
+	<!-- end ad tag -->
+
+
+              </div>
+         
+              <div class="slide">
+              <a href="/travel/jump-into-ireland.php?ref=travel950" target="_self"><img src="/images/031612-slider-lrg-ireland.jpg" alt="Jump Into Ireland: It's Your Year. Heart of the Emerald Isle." width="950" height="278" border="0" /></a>
+              </div>
+     
+              <div class="slide">
+              <a href="http://travel.justluxe.com/worlds-best-hotels.php?ref=travel950" target="_self"><img src="/images/032612-slider-lrg-besthotels.jpg" alt="The World's Best Luxury Hotels" width="950" height="278" border="0" /></a>
+              </div>
+              
+              <div class="slide">
+              <a href="/travel/hotel/feature-1756762.php?ref=travel950" target="_self"><img src="/images/041812-slider-lrg-trump.jpg" alt="TRUMP CARD Privileges Program" width="950" height="278" border="0" /></a>
+              </div>
+     
+            </div>
+    
+            <div id="menu-slider">
+              <ul class="sliderbar">
+    
+                <li class="menuSlider">
+                
+
+
+	<!-- begin ad tag -->
+	<script type="text/javascript">
+	<!--
+		OAS_url = 'http://oasc18015.247realmedia.com';
+		OAS_sitepage = 'www.justluxe.com/travel';
+		OAS_pos = 'Top,Middle1,Middle2,Bottom,Position1,Position2,Position3,Position4,x01,x02,x04,x10,x11,x12,x13,x31,x32,x33,x34,x35,x36,x40,x60,x61,x62,x63,Right!x61';
+		OAS_query = 'x62';
+		var OAS_pubclick = '';
+		OAS_query += '&_RM_HTML_CLICK_=' + OAS_pubclick;
+		document.write('<scr' + 'ipt type="text/javascript" src="' + OAS_url + '/RealMedia/ads/adstream_jx.ads/'
+		+ OAS_sitepage + '/1' + OAS_RNS + '@' + OAS_pos + '?' + OAS_query + '"></scr' + 'ipt>');
+	// -->
+	</script>
+	<noscript>
+		<a href="http://oascentral.site.com/RealMedia/ads/click_nx.ads/www.justluxe.com/travel/@x61?x62">
+		<img src="http://oascentral.site.com/RealMedia/ads/adstream_nx.ads/www.justluxe.com/travel/@x61?x62" border="0" />
+		</a>
+	</noscript>
+	<!-- end ad tag -->
+
+
+                <a href="" target="_self"></a>
+                </li>
+    
+                <li class="menuSlider">
+                
+
+
+	<!-- begin ad tag -->
+	<script type="text/javascript">
+	<!--
+		OAS_url = 'http://oasc18015.247realmedia.com';
+		OAS_sitepage = 'www.justluxe.com/travel';
+		OAS_pos = 'Top,Middle1,Middle2,Bottom,Position1,Position2,Position3,Position4,x01,x02,x04,x10,x11,x12,x13,x31,x32,x33,x34,x35,x36,x40,x60,x61,x62,x63,Right!x63';
+		OAS_query = 'x62';
+		var OAS_pubclick = '';
+		OAS_query += '&_RM_HTML_CLICK_=' + OAS_pubclick;
+		document.write('<scr' + 'ipt type="text/javascript" src="' + OAS_url + '/RealMedia/ads/adstream_jx.ads/'
+		+ OAS_sitepage + '/1' + OAS_RNS + '@' + OAS_pos + '?' + OAS_query + '"></scr' + 'ipt>');
+	// -->
+	</script>
+	<noscript>
+		<a href="http://oascentral.site.com/RealMedia/ads/click_nx.ads/www.justluxe.com/travel/@x63?x62">
+		<img src="http://oascentral.site.com/RealMedia/ads/adstream_nx.ads/www.justluxe.com/travel/@x63?x62" border="0" />
+		</a>
+	</noscript>
+	<!-- end ad tag -->
+
+
+                <a href="" target="_self"></a>
+                </li> 
+            
+                <li class="menuSlider">
+                <a href="" target="_self"><img src="/images/031612-travel-thumb-ireland.jpg" alt="Jump Into Ireland: It's Your Year. Heart of the Emerald Isle." width="190" height="76" /></a>
+                </li>
+      
+                <li class="menuSlider">
+                <a href="" target="_self"><img src="/images/032312-travel-thumb-hotels.jpg" alt="The World's Best Luxury Hotels" width="190" height="76" /></a>
+                </li>
+    
+                <li class="menuSlider">
+                <a href="" target="_self"><img src="/images/041812-travel-thumb-trump.jpg" alt="TRUMP CARD Privileges Program" width="190" height="76" /></a>
+                </li>
+      
+              </ul>
+            </div>
+    
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>		</td>
+	</tr>
+    <tr>
+		<td width="630" valign="top">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                     <tr>
+                        <td height="77" class="subnav-box-travel-landing">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="18%" style="padding:0px 10px 0px 23px;"><img src="/images/120424-subnav-travel-title.png" width="81" height="49"></td>
+                            <td width="82%"><a href="/travel/city-guides.php">City Guides</a><a href="/travel/hotel/articles-14.php"> Hotel Reviews</a><a href="/travel/luxury-vacations/articles-132.php">Luxury Vacations</a><a href="/travel/spa/articles-25.php">Resorts &amp; Spas</a><a href="/inpictures/index.php?cat=125">InPictures</a></td>
+                          </tr>
+                        </table>
+                        </td>
+                     </tr>
+			</table>
+
+
+			<table width="636" border="0" cellspacing="0" cellpadding="0" class="blog-land-art-box">
+   
+				  
+						<tr>
+							<td style="padding-top:25px;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td valign="bottom" class="blog-art-box"><a href="/travel/cruise/feature-1759685.php"><h1>Unique Vietnam Luxury Cruise Experience</h1></a></td>
+									</tr>
+									<tr>
+										<td style="padding:5px;">
+											<table width="100%" border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td align="center">
+														<a href="/travel/cruise/feature-1759685.php"><img src="http://media2.justluxe.com/articles/images/news/AuCoVietnam_1759685-thumb.jpg" width="616" alt="" border="0"/></a>									
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td style="padding:1px 5px 0px 5px;" class="blog-art-box-info">
+																	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																		<tr>
+																			<td valign="bottom" class="blog-art-short-info">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="50%" height="40"><a href="/travel/cruise/articles-20.php">CRUISES</a> | by: <a href="/community/view-profile.php?p_id=18073">SARA CARDOZA</a></td>
+																						<td width="50%" align="right">
+																							<div class="fb-like" data-href="http://www.justluxe.com/travel/cruise/feature-1759685.php" data-send="false" data-layout="button_count" data-show-faces="false"></div>			  
+																							<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://www.justluxe.com/travel/cruise/feature-1759685.php" data-text="Unique Vietnam Luxury Cruise Experience" data-via="JustLuxe" data-lang="en">Tweet</a>
+
+																							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="blog-art-info">Au Co Gulf of Tonkin is a luxury  <a href="http://www.justluxe.com/travel/cruise/articles-20.php">cruise</a> experience that features the stunning beauty of Vietnam’s coastal terrain. Au Co offers a unique route during the two and three day cruises, allowing guests to witness Halong Bay, the Bays of Lan Ha and Bai Tu Long, and Cat Ba Island. The trip includes multiple excursions and a variety of activities.  The ship is built with state-of-the-art technology and design. Measuring at 55.29 meters in length and 10.43 meters in width, the ship has room for 32 roomy cabins, each with a private balcony or terrace.</td>
+																		</tr>
+																		<tr>
+																			<td style="padding:10px;">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="70%"><a href="/travel/cruise/feature-1759685.php"><img src="/images/120423-articles-landing-btn-more-t.png" width="109" height="23" border="0" /></a></td>
+																						<td width="30%" align="right"  class="blog-art-comments">COMMENTS <a href="/travel/cruise/feature-1759685.php#community_comments">0</a> |  2012</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td align="center" valign="top">
+																	<img src="/images/120423-articles-landing-info-boxb.png" width="624" height="14" />
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						  
+						<tr>
+							<td style="padding-top:25px;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td valign="bottom" class="blog-art-box"><a href="/travel/luxury-vacations/feature-1759069.php"><h1>Madada Mogador in Eclectic Essaouira, Morocco</h1></a></td>
+									</tr>
+									<tr>
+										<td style="padding:5px;">
+											<table width="100%" border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td align="center">
+														<a href="/travel/luxury-vacations/feature-1759069.php"><img src="http://media2.justluxe.com/articles/images/news/madada-1759069-main.jpg" width="616" alt="Stone archways provide entrance to the medina." border="0"/></a>									
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td style="padding:1px 5px 0px 5px;" class="blog-art-box-info">
+																	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																		<tr>
+																			<td valign="bottom" class="blog-art-short-info">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="50%" height="40"><a href="/travel/luxury-vacations/articles-132.php">LUXURY VACATIONS</a> | by: <a href="/community/view-profile.php?p_id=12045">SEAN HILLEN</a></td>
+																						<td width="50%" align="right">
+																							<div class="fb-like" data-href="http://www.justluxe.com/travel/luxury-vacations/feature-1759069.php" data-send="false" data-layout="button_count" data-show-faces="false"></div>			  
+																							<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://www.justluxe.com/travel/luxury-vacations/feature-1759069.php" data-text="Madada Mogador in Eclectic Essaouira, Morocco" data-via="JustLuxe" data-lang="en">Tweet</a>
+
+																							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="blog-art-info">Quiet, unassuming, minimalist – these words best sum up Madada Mogador, a comfortable riad centrally located in Essaouira, a picturesque port resort on Morocco’s Atlantic coast. Madada Mogador’s relaxed atmosphere is due in great part to its willowy manageress, Pauline, and her helpful, unobtrusive staff.</td>
+																		</tr>
+																		<tr>
+																			<td style="padding:10px;">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="70%"><a href="/travel/luxury-vacations/feature-1759069.php"><img src="/images/120423-articles-landing-btn-more-t.png" width="109" height="23" border="0" /></a></td>
+																						<td width="30%" align="right"  class="blog-art-comments">COMMENTS <a href="/travel/luxury-vacations/feature-1759069.php#community_comments">0</a> |  2012</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td align="center" valign="top">
+																	<img src="/images/120423-articles-landing-info-boxb.png" width="624" height="14" />
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						  
+						<tr>
+							<td style="padding-top:25px;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td valign="bottom" class="blog-art-box"><a href="/travel/spa/feature-1751158.php"><h1>Naka Island Resort & Spa Promises a Pure Thai Experience in Phuket</h1></a></td>
+									</tr>
+									<tr>
+										<td style="padding:5px;">
+											<table width="100%" border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td align="center">
+														<a href="/travel/spa/feature-1751158.php"><img src="http://media2.justluxe.com/articles/images/news/725The_Naka_Island-pic7.jpg" width="616" alt="" border="0"/></a>									
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td style="padding:1px 5px 0px 5px;" class="blog-art-box-info">
+																	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																		<tr>
+																			<td valign="bottom" class="blog-art-short-info">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="50%" height="40"><a href="/travel/spa/articles-25.php">RESORTS & SPAS</a> | by: <a href="/community/view-profile.php?p_id=18073">SARA CARDOZA</a></td>
+																						<td width="50%" align="right">
+																							<div class="fb-like" data-href="http://www.justluxe.com/travel/spa/feature-1751158.php" data-send="false" data-layout="button_count" data-show-faces="false"></div>			  
+																							<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://www.justluxe.com/travel/spa/feature-1751158.php" data-text="Naka Island Resort & Spa Promises a Pure Thai Experience in Phuket" data-via="JustLuxe" data-lang="en">Tweet</a>
+
+																							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="blog-art-info">Located near the glittering waters of Phang Nga Bay in Phuket, Thailand, <a href="http://travel.justluxe.com/top-hotels/1709274__The-Naka-Island,-a-Luxury-Collection-Resort-and-Spa--Phuket-picture-review.html">The Naka Island Resort & Spa</a> is known as the “Pearl of the Andaman.” This jewel of a retreat is located on Thailand’s largest island and was once a destination for Thai fisherman. Surrounded by a bounty of natural wonder, from tropical beaches and coconut groves to landscaped gardens and bamboo forests, the beauty of this Southeast Asian resort sets the stage for the ultimate in relaxation and indulgence.</td>
+																		</tr>
+																		<tr>
+																			<td style="padding:10px;">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="70%"><a href="/travel/spa/feature-1751158.php"><img src="/images/120423-articles-landing-btn-more-t.png" width="109" height="23" border="0" /></a></td>
+																						<td width="30%" align="right"  class="blog-art-comments">COMMENTS <a href="/travel/spa/feature-1751158.php#community_comments">0</a> |  2012</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td align="center" valign="top">
+																	<img src="/images/120423-articles-landing-info-boxb.png" width="624" height="14" />
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						  
+						<tr>
+							<td style="padding-top:25px;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td valign="bottom" class="blog-art-box"><a href="/travel/spa/feature-1750036.php"><h1>Le Bristol Hotel | The Epitome of Parisian Style and Luxury</h1></a></td>
+									</tr>
+									<tr>
+										<td style="padding:5px;">
+											<table width="100%" border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td align="center">
+														<a href="/travel/spa/feature-1750036.php"><img src="http://media2.justluxe.com/articles/images/news/725Bristol-Paris-2.jpg" width="616" alt="" border="0"/></a>									
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td style="padding:1px 5px 0px 5px;" class="blog-art-box-info">
+																	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																		<tr>
+																			<td valign="bottom" class="blog-art-short-info">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="50%" height="40"><a href="/travel/spa/articles-25.php">RESORTS & SPAS</a> | by: <a href="/community/view-profile.php?p_id=10618">SLAVICA MONCZKA</a></td>
+																						<td width="50%" align="right">
+																							<div class="fb-like" data-href="http://www.justluxe.com/travel/spa/feature-1750036.php" data-send="false" data-layout="button_count" data-show-faces="false"></div>			  
+																							<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://www.justluxe.com/travel/spa/feature-1750036.php" data-text="Le Bristol Hotel | The Epitome of Parisian Style and Luxury" data-via="JustLuxe" data-lang="en">Tweet</a>
+
+																							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="blog-art-info">If someone were to ask me where to stay for their first, and possibly only, time in Paris, without hesitation I would insist on <a href="http://travel.justluxe.com/luxury-hotel/219094__Hotel-Le-Bristol-Paris.html">Le Bristol Hotel</a>. “The moment you step into Le Bristol,” states President and General Manager Didier Le Calvez, “you step into Paris.” It is so much more than just a luxury Parisian hotel with all its haughty splendor. Le Bristol is a hotel of Palace Distinction, giving you the authentic French experience.</td>
+																		</tr>
+																		<tr>
+																			<td style="padding:10px;">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="70%"><a href="/travel/spa/feature-1750036.php"><img src="/images/120423-articles-landing-btn-more-t.png" width="109" height="23" border="0" /></a></td>
+																						<td width="30%" align="right"  class="blog-art-comments">COMMENTS <a href="/travel/spa/feature-1750036.php#community_comments">1</a> |  2012</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td align="center" valign="top">
+																	<img src="/images/120423-articles-landing-info-boxb.png" width="624" height="14" />
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+												
+							<tr>
+								<td style="padding-top:20px;">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td valign="bottom" class="blog-art-box">
+												<table width="100%" border="0" cellspacing="0" cellpadding="0">
+													<tr>
+														<td width="21%" style="border-right:1px solid #676b6d;"><h1>Featured Video</h1></td>
+														<td width="79%" valign="bottom"><span>NOW PLAYING</span> <samp>Vedema Resort Santorini</samp></td>
+														
+													</tr>
+												
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td style="padding:5px;">
+												<table width="100%" border="0" cellspacing="0" cellpadding="0">
+													<tr>
+														<td align="center" class="blog-video-box">
+															<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																<tr>
+																	<td width="75%" rowspan="2" style="padding-right:10px;">
+																	
+<!-- Start of Brightcove Player -->
+
+<div style="display:none">
+
+</div>
+
+<!--
+By use of this code snippet, I agree to the Brightcove Publisher T and C 
+found at https://accounts.brightcove.com/en/terms-and-conditions/. 
+-->
+
+<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+
+<object id="myExperience1481473859001" class="BrightcoveExperience">
+  <param name="bgcolor" value="#FFFFFF" />
+  <param name="width" value="480" />
+  <param name="height" value="270" />
+  <param name="playerID" value="1581883449001" />
+  <param name="playerKey" value="AQ~~,AAAArH1ssJE~,0veV3L50ebPKUHM92BoQi-MpAJnDsH-g" />
+  <param name="isVid" value="true" />
+  <param name="isUI" value="true" />
+  <param name="dynamicStreaming" value="true" />
+  
+  <param name="@videoPlayer" value="1481473859001" />
+</object>
+
+<!-- 
+This script tag will cause the Brightcove Players defined above it to be created as soon
+as the line is read by the browser. If you wish to have the player instantiated only after
+the rest of the HTML is processed and the page load is complete, remove the line.
+-->
+<script type="text/javascript">brightcove.createExperiences();</script>
+
+<!-- End of Brightcove Player -->
+																	
+																	</td>
+																	<td width="25%" valign="top" style="padding:15px 5px 10px 5px;">
+																	<div><span>DESCRIPTION</span></div>
+																	<div><samp>TRAVEL</samp></div>
+																	<div style="padding:10px 0px 10px 0px;">Vedema Resort is the place where style, emotions, creativity and perfection meets a world of beauty and mythology.</div></td>
+																</tr>
+																<tr>
+																	<td align="center" valign="top">
+																	<div><img src="/images/120423-articles-video-linesep.jpg" width="117" height="2" /></div>
+																	<div align="left" style="padding:12px 0px 7px 5px;"><div class="fb-like" data-href="http://www.justluxe.com/luxevideo/index.php?videoId=1481473859001" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="arial"></div></div>
+																	<div align="left" style="padding:7px 0px 7px 5px;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.justluxe.com/luxevideo/index.php?videoId=1481473859001" data-via="Justluxe">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div></td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+							</tr>
+							  
+						<tr>
+							<td style="padding-top:25px;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td valign="bottom" class="blog-art-box"><a href="/travel/luxury-vacations/feature-1748826.php"><h1>Early Spring and Off-Season Rates Come to the Adirondacks</h1></a></td>
+									</tr>
+									<tr>
+										<td style="padding:5px;">
+											<table width="100%" border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td align="center">
+														<a href="/travel/luxury-vacations/feature-1748826.php"><img src="http://media2.justluxe.com/articles/images/news/adirondacks-1748826.jpg" width="616" alt="" border="0"/></a>									
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td style="padding:1px 5px 0px 5px;" class="blog-art-box-info">
+																	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																		<tr>
+																			<td valign="bottom" class="blog-art-short-info">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="50%" height="40"><a href="/travel/luxury-vacations/articles-132.php">LUXURY VACATIONS</a> | by: <a href="/community/view-profile.php?p_id=189">LENA KATZ</a></td>
+																						<td width="50%" align="right">
+																							<div class="fb-like" data-href="http://www.justluxe.com/travel/luxury-vacations/feature-1748826.php" data-send="false" data-layout="button_count" data-show-faces="false"></div>			  
+																							<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://www.justluxe.com/travel/luxury-vacations/feature-1748826.php" data-text="Early Spring and Off-Season Rates Come to the Adirondacks" data-via="JustLuxe" data-lang="en">Tweet</a>
+
+																							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="blog-art-info">The 2012 “Winter That Never Was” has had an interesting effect on the Northeast, effectively cancelling out the muddy season in the Adirondacks and nearby regions. Locals are already testing out the bike trails around Lake Placid and reporting that they’re in mid-season condition.</td>
+																		</tr>
+																		<tr>
+																			<td style="padding:10px;">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="70%"><a href="/travel/luxury-vacations/feature-1748826.php"><img src="/images/120423-articles-landing-btn-more-t.png" width="109" height="23" border="0" /></a></td>
+																						<td width="30%" align="right"  class="blog-art-comments">COMMENTS <a href="/travel/luxury-vacations/feature-1748826.php#community_comments">0</a> |  2012</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td align="center" valign="top">
+																	<img src="/images/120423-articles-landing-info-boxb.png" width="624" height="14" />
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						  
+						<tr>
+							<td style="padding-top:25px;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td valign="bottom" class="blog-art-box"><a href="/travel/villa/feature-1747157.php"><h1>Luxury Villas in Southern California Offer Five-Star Travel Experience</h1></a></td>
+									</tr>
+									<tr>
+										<td style="padding:5px;">
+											<table width="100%" border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td align="center">
+														<a href="/travel/villa/feature-1747157.php"><img src="http://media2.justluxe.com/articles/images/news/725wolf-worster1.jpg" width="616" alt="california villas Wolf Worster Associates" border="0"/></a>									
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td style="padding:1px 5px 0px 5px;" class="blog-art-box-info">
+																	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																		<tr>
+																			<td valign="bottom" class="blog-art-short-info">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="50%" height="40"><a href="/travel/villa/articles-27.php">LUXURY VILLAS</a> | by: <a href="/community/view-profile.php?p_id=16948">JUSTLUXE TEAM</a></td>
+																						<td width="50%" align="right">
+																							<div class="fb-like" data-href="http://www.justluxe.com/travel/villa/feature-1747157.php" data-send="false" data-layout="button_count" data-show-faces="false"></div>			  
+																							<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://www.justluxe.com/travel/villa/feature-1747157.php" data-text="Luxury Villas in Southern California Offer Five-Star Travel Experience" data-via="JustLuxe" data-lang="en">Tweet</a>
+
+																							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="blog-art-info">When looking for a place to stay during your next fun in the sun vacation, think beyond the hotel and look into renting one of the <a href="http://www.justluxe.com/best-of-luxury/113/best_luxury_villas.php">best luxury villas</a> Southern California has to offer. Your relaxing getaway with family or friends can be made that much more comfortable in your very own home away from home.</td>
+																		</tr>
+																		<tr>
+																			<td style="padding:10px;">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="70%"><a href="/travel/villa/feature-1747157.php"><img src="/images/120423-articles-landing-btn-more-t.png" width="109" height="23" border="0" /></a></td>
+																						<td width="30%" align="right"  class="blog-art-comments">COMMENTS <a href="/travel/villa/feature-1747157.php#community_comments">1</a> |  2012</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td align="center" valign="top">
+																	<img src="/images/120423-articles-landing-info-boxb.png" width="624" height="14" />
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						  
+						<tr>
+							<td style="padding-top:25px;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td valign="bottom" class="blog-art-box"><a href="/travel/spa/feature-1738434.php"><h1>St. Regis Bahia Beach Resort, Puerto Rico Brings New Dimension of Luxury to the Caribbean</h1></a></td>
+									</tr>
+									<tr>
+										<td style="padding:5px;">
+											<table width="100%" border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td align="center">
+														<a href="/travel/spa/feature-1738434.php"><img src="http://media2.justluxe.com/articles/images/news/725St.-Regis-Bahia-Beach-Resort1.jpg" width="616" alt="" border="0"/></a>									
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td style="padding:1px 5px 0px 5px;" class="blog-art-box-info">
+																	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																		<tr>
+																			<td valign="bottom" class="blog-art-short-info">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="50%" height="40"><a href="/travel/spa/articles-25.php">RESORTS & SPAS</a> | by: <a href="/community/view-profile.php?p_id=10591">GABE GREENBERG</a></td>
+																						<td width="50%" align="right">
+																							<div class="fb-like" data-href="http://www.justluxe.com/travel/spa/feature-1738434.php" data-send="false" data-layout="button_count" data-show-faces="false"></div>			  
+																							<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://www.justluxe.com/travel/spa/feature-1738434.php" data-text="St. Regis Bahia Beach Resort, Puerto Rico Brings New Dimension of Luxury to the Caribbean" data-via="JustLuxe" data-lang="en">Tweet</a>
+
+																							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="blog-art-info">After my recent visit to St. Regis Hotels' first Caribbean hotel, the <a href="http://travel.justluxe.com/luxury-hotel/1101877__St.-Regis-Bahia-Beach-Resort.html">St. Regis Bahia Beach Resort</a>, Puerto Rico, I was rested and tanned. The property, delivered unparalleled luxury and bespoke service at nearly every turn. The resort is located on a former coconut plantation, nestled between the El Yunque rainforest and the tranquil waters of the Espiritu Santo River. Surrounded by a coral reef, this spectacular 483-acre resort embraces the island’s stunning natural beauty with verdant landscapes, breathtaking ocean views and a private bird sanctuary.</td>
+																		</tr>
+																		<tr>
+																			<td style="padding:10px;">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="70%"><a href="/travel/spa/feature-1738434.php"><img src="/images/120423-articles-landing-btn-more-t.png" width="109" height="23" border="0" /></a></td>
+																						<td width="30%" align="right"  class="blog-art-comments">COMMENTS <a href="/travel/spa/feature-1738434.php#community_comments">0</a> |  2012</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td align="center" valign="top">
+																	<img src="/images/120423-articles-landing-info-boxb.png" width="624" height="14" />
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						  
+						<tr>
+							<td style="padding-top:25px;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td valign="bottom" class="blog-art-box"><a href="/travel/luxury-vacations/feature-1737782.php"><h1>Saffire Freycinet Lodge | Tasmania's Coastal Sanctuary</h1></a></td>
+									</tr>
+									<tr>
+										<td style="padding:5px;">
+											<table width="100%" border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td align="center">
+														<a href="/travel/luxury-vacations/feature-1737782.php"><img src="http://media2.justluxe.com/articles/images/news/725SAF-Aerial_01(1).jpg" width="616" alt="" border="0"/></a>									
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td style="padding:1px 5px 0px 5px;" class="blog-art-box-info">
+																	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																		<tr>
+																			<td valign="bottom" class="blog-art-short-info">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="50%" height="40"><a href="/travel/luxury-vacations/articles-132.php">LUXURY VACATIONS</a> | by: <a href="/community/view-profile.php?p_id=1798">TARA IMPERATORE</a></td>
+																						<td width="50%" align="right">
+																							<div class="fb-like" data-href="http://www.justluxe.com/travel/luxury-vacations/feature-1737782.php" data-send="false" data-layout="button_count" data-show-faces="false"></div>			  
+																							<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://www.justluxe.com/travel/luxury-vacations/feature-1737782.php" data-text="Saffire Freycinet Lodge | Tasmania's Coastal Sanctuary" data-via="JustLuxe" data-lang="en">Tweet</a>
+
+																							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="blog-art-info">Combining a relaxing luxury vacation with the <a href="http://www.justluxe.com/best-of-luxury/166/best_adventure_travel.php">best adventure travel</a> experience has never been easier with high-end lodges popping up in exotic destinations around the world. Saffire Lodge located on Tasmania’s Freycinet Peninsula offers a care-free stay with opulent accommodations while encouraging a connection with nature.</td>
+																		</tr>
+																		<tr>
+																			<td style="padding:10px;">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="70%"><a href="/travel/luxury-vacations/feature-1737782.php"><img src="/images/120423-articles-landing-btn-more-t.png" width="109" height="23" border="0" /></a></td>
+																						<td width="30%" align="right"  class="blog-art-comments">COMMENTS <a href="/travel/luxury-vacations/feature-1737782.php#community_comments">0</a> |  2012</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td align="center" valign="top">
+																	<img src="/images/120423-articles-landing-info-boxb.png" width="624" height="14" />
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						  
+						<tr>
+							<td style="padding-top:25px;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td valign="bottom" class="blog-art-box"><a href="/travel/villa/feature-1738311.php"><h1>Honeymoon Destination | Alila Soori Luxury Villas in Bali</h1></a></td>
+									</tr>
+									<tr>
+										<td style="padding:5px;">
+											<table width="100%" border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td align="center">
+														<a href="/travel/villa/feature-1738311.php"><img src="http://media2.justluxe.com/articles/images/news/725Bali-Alila-Villas-Soori.jpg" width="616" alt="" border="0"/></a>									
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td style="padding:1px 5px 0px 5px;" class="blog-art-box-info">
+																	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																		<tr>
+																			<td valign="bottom" class="blog-art-short-info">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="50%" height="40"><a href="/travel/villa/articles-27.php">LUXURY VILLAS</a> | by: <a href="/community/view-profile.php?p_id=649">CAROL DRIVER</a></td>
+																						<td width="50%" align="right">
+																							<div class="fb-like" data-href="http://www.justluxe.com/travel/villa/feature-1738311.php" data-send="false" data-layout="button_count" data-show-faces="false"></div>			  
+																							<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://www.justluxe.com/travel/villa/feature-1738311.php" data-text="Honeymoon Destination | Alila Soori Luxury Villas in Bali" data-via="JustLuxe" data-lang="en">Tweet</a>
+
+																							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="blog-art-info">Our executive car winds its way along a narrow lane, which zig-zags through a tiny town centre into lush paddy fields. In the distance, my husband and I can see a towering volcano, which we are following in order to get to our corner of paradise. We're heading to Alila Soori, a <a href="http://travel.justluxe.com/luxury-hotels/Asia__Indonesia__Bali/index.html">Bali luxury hotel</a>, for our honeymoon. Two weeks of sun, sand and relaxation will ensue now that the year of wedding planning is over. Alila Soori is only about an hour from Ngurah Rai International Airport, but after almost 24 hours of travel from the UK, we are more than pleased to reach our stunning one-bedroom pool villa. Although we are both shattered from the journey, we're still excited enough to want to explore. Our home</td>
+																		</tr>
+																		<tr>
+																			<td style="padding:10px;">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="70%"><a href="/travel/villa/feature-1738311.php"><img src="/images/120423-articles-landing-btn-more-t.png" width="109" height="23" border="0" /></a></td>
+																						<td width="30%" align="right"  class="blog-art-comments">COMMENTS <a href="/travel/villa/feature-1738311.php#community_comments">0</a> |  2012</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td align="center" valign="top">
+																	<img src="/images/120423-articles-landing-info-boxb.png" width="624" height="14" />
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						  
+						<tr>
+							<td style="padding-top:25px;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td valign="bottom" class="blog-art-box"><a href="/travel/luxury-vacations/feature-1738218.php"><h1>Ecuador’s Mashpi Lodge Wins 2012 Design Award</h1></a></td>
+									</tr>
+									<tr>
+										<td style="padding:5px;">
+											<table width="100%" border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td align="center">
+														<a href="/travel/luxury-vacations/feature-1738218.php"><img src="http://media2.justluxe.com/articles/images/news/725.MTE3013.jpg" width="616" alt="" border="0"/></a>									
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td style="padding:1px 5px 0px 5px;" class="blog-art-box-info">
+																	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																		<tr>
+																			<td valign="bottom" class="blog-art-short-info">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="50%" height="40"><a href="/travel/luxury-vacations/articles-132.php">LUXURY VACATIONS</a> | by: <a href="/community/view-profile.php?p_id=17112">JANICE NIEDER</a></td>
+																						<td width="50%" align="right">
+																							<div class="fb-like" data-href="http://www.justluxe.com/travel/luxury-vacations/feature-1738218.php" data-send="false" data-layout="button_count" data-show-faces="false"></div>			  
+																							<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://www.justluxe.com/travel/luxury-vacations/feature-1738218.php" data-text="Ecuador’s Mashpi Lodge Wins 2012 Design Award" data-via="JustLuxe" data-lang="en">Tweet</a>
+
+																							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="blog-art-info">Having never visited a cloud forest, which sounded to me like some magical, fantasy place where Hobbits might reside, I was really looking forward to spending the night at Mashpi Lodge, which was nestled deep in a 2,600 acre private Andean reserve. I had been forewarned that the lodge was still a few months away from being finished so I would be dining in the staff quarters, (the grand opening is scheduled for April 2012.) But I didn’t mind one iota since the lodge had just been awarded the coveted <i>Wallpaper</i>* magazine Design Awards 2012 for Best Resort!</td>
+																		</tr>
+																		<tr>
+																			<td style="padding:10px;">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="70%"><a href="/travel/luxury-vacations/feature-1738218.php"><img src="/images/120423-articles-landing-btn-more-t.png" width="109" height="23" border="0" /></a></td>
+																						<td width="30%" align="right"  class="blog-art-comments">COMMENTS <a href="/travel/luxury-vacations/feature-1738218.php#community_comments">0</a> |  2012</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td align="center" valign="top">
+																	<img src="/images/120423-articles-landing-info-boxb.png" width="624" height="14" />
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						  
+						<tr>
+							<td style="padding-top:25px;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td valign="bottom" class="blog-art-box"><a href="/travel/spa/feature-1736583.php"><h1>Hermitage Bay Five-Star Antigua Resort</h1></a></td>
+									</tr>
+									<tr>
+										<td style="padding:5px;">
+											<table width="100%" border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td align="center">
+														<a href="/travel/spa/feature-1736583.php"><img src="http://media2.justluxe.com/articles/images/news/725-private-plunge-pool-ocean-view-daytime.jpg" width="616" alt="" border="0"/></a>									
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td style="padding:1px 5px 0px 5px;" class="blog-art-box-info">
+																	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																		<tr>
+																			<td valign="bottom" class="blog-art-short-info">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="50%" height="40"><a href="/travel/spa/articles-25.php">RESORTS & SPAS</a> | by: <a href="/community/view-profile.php?p_id=157">TIM COTRONEO</a></td>
+																						<td width="50%" align="right">
+																							<div class="fb-like" data-href="http://www.justluxe.com/travel/spa/feature-1736583.php" data-send="false" data-layout="button_count" data-show-faces="false"></div>			  
+																							<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://www.justluxe.com/travel/spa/feature-1736583.php" data-text="Hermitage Bay Five-Star Antigua Resort" data-via="JustLuxe" data-lang="en">Tweet</a>
+
+																							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="blog-art-info">Andy Thesen’s career in high finance took a dramatic turn the day he initially turned down a college grad seeking employment. Thesen (below), the owner of Hermitage Bay in Antigua, believes his accidental path to building a <a href="http://travel.justluxe.com/luxury-hotels/Caribbean/index.html">5-star hotel in the Caribbean</a> had a lot to do with the persistence shown by the young man seeking a foothold in Thesen’s former world of venture capital.</td>
+																		</tr>
+																		<tr>
+																			<td style="padding:10px;">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="70%"><a href="/travel/spa/feature-1736583.php"><img src="/images/120423-articles-landing-btn-more-t.png" width="109" height="23" border="0" /></a></td>
+																						<td width="30%" align="right"  class="blog-art-comments">COMMENTS <a href="/travel/spa/feature-1736583.php#community_comments">0</a> |  2012</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td align="center" valign="top">
+																	<img src="/images/120423-articles-landing-info-boxb.png" width="624" height="14" />
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						  
+						<tr>
+							<td style="padding-top:25px;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td valign="bottom" class="blog-art-box"><a href="/travel/spa/feature-1711541.php"><h1>Tides Riviera Maya Gets a Viceroy Makeover</h1></a></td>
+									</tr>
+									<tr>
+										<td style="padding:5px;">
+											<table width="100%" border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td align="center">
+														<a href="/travel/spa/feature-1711541.php"><img src="http://media2.justluxe.com/articles/images/news/725.tides_riviera.jpg" width="616" alt="" border="0"/></a>									
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td style="padding:1px 5px 0px 5px;" class="blog-art-box-info">
+																	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																		<tr>
+																			<td valign="bottom" class="blog-art-short-info">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="50%" height="40"><a href="/travel/spa/articles-25.php">RESORTS & SPAS</a> | by: <a href="/community/view-profile.php?p_id=8055">JARED PAUL STERN</a></td>
+																						<td width="50%" align="right">
+																							<div class="fb-like" data-href="http://www.justluxe.com/travel/spa/feature-1711541.php" data-send="false" data-layout="button_count" data-show-faces="false"></div>			  
+																							<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://www.justluxe.com/travel/spa/feature-1711541.php" data-text="Tides Riviera Maya Gets a Viceroy Makeover" data-via="JustLuxe" data-lang="en">Tweet</a>
+
+																							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="blog-art-info">The beautiful Tides Riviera Maya <a href="http://travel.justluxe.com/luxury-hotels/North-America__Mexico/index.html">resort in Mexico</a> has just emerged from a multimillion-dollar renovation project re-branded as the Viceroy Riviera Maya, joining other posh Viceroy properties in Santa Monica, Palm Springs, Miami, Anguilla, Snowmass and Abu Dhabi.</td>
+																		</tr>
+																		<tr>
+																			<td style="padding:10px;">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="70%"><a href="/travel/spa/feature-1711541.php"><img src="/images/120423-articles-landing-btn-more-t.png" width="109" height="23" border="0" /></a></td>
+																						<td width="30%" align="right"  class="blog-art-comments">COMMENTS <a href="/travel/spa/feature-1711541.php#community_comments">1</a> |  2012</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td align="center" valign="top">
+																	<img src="/images/120423-articles-landing-info-boxb.png" width="624" height="14" />
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+										<tr>
+					<td align="center" class="pagination-travel-landing">PAGES. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<class="pages-btm">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				</tr></div>
+			</table>
+		</td>
+		<td width="320" align="center" valign="top" bgcolor="#000" height="100%">
+			<table width="300" border="0" cellspacing="0" cellpadding="0" height="100%" valign="top">
+				<tr>
+					<td align="center" style="padding-bottom: 30px;">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>	<script type="text/javascript" src="http://travel.justluxe.com/includes/js/jquery-ui-1.8.12.custom.min.js"></script>
+	<link rel="stylesheet" href="http://travel.justluxe.com/includes/js/jquery-ui-1.8.12.custom.css" type="text/css" media="all" />
+	
+	<script type="text/javascript" src="http://www.justluxe.com/community/includes/js/jquery-welcome.js"></script>
+	
+	<script type="text/javascript">
+	var hotelSearchBool=true;
+	jQuery.noConflict();
+	jQuery(document).ready(function($){
+
+		$("#hotel-search-slider-button").mouseover(function(){
+			if (hotelSearchBool == true){
+				$("#hotel-search-content").slideToggle("slow", function(){hotelSearchBool=true;});
+				$(".hotel-search-open").toggleClass("hotel-search-close"); 
+			}
+			hotelSearchBool=false;
+			return false;
+		});
+		
+		 
+	});
+	</script>
+	
+<script type="text/javascript"> 
+	function check_form(){
+		if (document.frm_availability.continent_id.selectedIndex == 0){
+			alert('Please select a destination');
+			return false;
+		} else{
+			showLoading(document.getElementById('loading'),'load');
+		}
+	
+	}
+
+	var LoadingStatus = 0; 
+	function showLoading(which,act) { 
+		if (which.style.display == "none") { 
+			which.style.display = "block"; 
+			if(act == 'load') { 
+				LoadingStatus = 1; 
+			} 
+		} 
+	} 
+</script>
+
+
+	
+
+	<script type="text/javascript">
+	$(function() {
+		$("#date_in").datepicker();
+		$("#date_in").datepicker("option", "dateFormat", "yy-mm-dd");
+		$("#date_out").datepicker();
+		$("#date_out").datepicker("option", "dateFormat", "yy-mm-dd");
+	});
+	</script>
+
+
+	<script language="JavaScript">
+		function dateDiff(strDateIn,strDateOut){
+			var arrDate = strDateIn.split('-');
+			var date1 = new Date(arrDate[0],arrDate[1],arrDate[2]);
+			var date1Days = new Date(arrDate[0], arrDate[1], 0).getDate();
+			var date1Month = arrDate[1];
+			arrDate = strDateOut.split('-');
+			var date2 = new Date(arrDate[0],arrDate[1],arrDate[2]);
+			var date2Days = new Date(arrDate[0], arrDate[1], 0).getDate();
+			var date2Month = arrDate[1];
+			var one_day=1000*60*60*24;			
+			var diff = (date2.getTime()-date1.getTime())/(one_day);
+			if ((date1Month != date2Month) && (date1Days == 30)){
+				diff=diff-1;
+			}
+			return diff;
+			//return (date2.getDate()-date1.getDate());
+		}
+
+		function datePlusOne(strDateIn,DateOutElem){
+
+			var arrDate = strDateIn.split('-');
+
+			var d = new Date(arrDate[0],arrDate[1]-1,arrDate[2]);
+			
+			d.setDate(d.getDate() + 2);
+
+			var theday = d.getDate();
+			if(theday < 10) {theday = "0" + theday}
+			var themonth = d.getMonth();
+			themonth = themonth + 1
+			if(themonth < 10) {themonth = "0" + themonth}
+			var theyear = d.getFullYear();
+
+			DateOutElem.value=theyear + "-" + themonth + "-" + theday;
+		}
+
+	</script>
+    
+<script type="text/javascript">
+		
+		function searchGo(){
+			if ((document.getElementById("date_in").value=='') && (document.getElementById("date_out").value=='')){
+				document.getElementById("date_in").value='2012-04-26';
+				document.getElementById("date_out").value='2012-04-28';
+				document.getElementById("nights").value=2;
+				document.forms["frm_search_new"].submit();
+			}else{
+				var nights = dateDiff(document.getElementById("date_in").value, document.getElementById("date_out").value);
+				if (nights>0){
+					document.getElementById("nights").value=nights;
+					document.forms["frm_search_new"].submit();
+				}else{
+					alert('Please enter correct dates');
+				}
+			}
+		}
+		
+		//Hide autocomplete menu if the list loses focus
+		function blurContent(){			
+			document.getElementById("autocomplete_content").style.display='none';
+		}		
+		
+		//variables
+		var xmlHttpReq;
+		var self;
+		var checkComplete;
+		
+		function autocompleteSelect(id){
+			document.getElementById("autocomplete_input").value = document.getElementById("autocomplete_"+id+"_content").value;
+			document.getElementById("autocomplete_type").value = document.getElementById("autocomplete_"+id+"_type").value;
+			document.getElementById("autocomplete_title").value = document.getElementById("autocomplete_"+id+"_title").value;
+			document.getElementById("autocomplete_content").style.display='none';
+			//if (document.all){
+            //    document.getElementById("autocomplete_input").value = document.getElementById("autocomplete_"+id+"_content").value;
+			//} else	{
+			//	document.getElementById("autocomplete_input").value = document.getElementById("autocomplete_link_"+id).textContent;				
+			//}    
+			
+		}
+		
+		function loadajax(){
+			//Load AJAX stuff
+			xmlHttpReq = false;
+			self = this;
+			checkComplete=1;
+			// Mozilla/Safari
+			if (window.XMLHttpRequest) {
+				self.xmlHttpReq = new XMLHttpRequest();
+			}
+			// IE
+			else if (window.ActiveXObject) {
+				self.xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+			}			
+		}
+		
+		function getData(){
+			var keywords = document.getElementById("autocomplete_input").value;
+			document.getElementById("autocomplete_type").value = "";
+			if (checkComplete==1){
+			if (keywords.length > 2){
+				self.xmlHttpReq.open('POST', "/includes/search-autocomplete-service.php", true);
+				self.xmlHttpReq.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+				checkComplete=0;
+				self.xmlHttpReq.onreadystatechange = function() {
+					if (self.xmlHttpReq.readyState == 4) {
+						//Put category data in div
+						document.getElementById("autocomplete_content").innerHTML=self.xmlHttpReq.responseText;
+						document.getElementById("autocomplete_content").style.display='block';
+						checkComplete=1;
+					}
+				}
+			self.xmlHttpReq.send('keywords='+keywords);
+			}
+			}
+		}
+</script>
+<style type="text/css">
+div.ui-datepicker{
+ font-size:12px;
+}
+.hotel-search-open{
+	display:block;
+}
+.hotel-search-close{
+	display:none;
+}
+	#autocomplete_content{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 17px;
+	font-weight: bold;
+	color: #303;
+	position:absolute;
+	width:260px;
+		margin-left:0px;margin-top:-5px;		z-index:2;
+		text-align:left;
+	}
+	
+	.autocomplete_list
+	{
+	position:relative;
+	top:0;
+	left:0;
+	background: white;
+	border: 1px solid;
+	font-size:14px;
+	padding: 5px;
+	width:100%;
+	text-align:left;
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	line-height: 17px;
+	font-weight: bold;
+	color: #333;
+	}
+	
+	.autocomplete_list ul
+	{
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		text-align:left;
+	}
+
+	.autocomplete_list li 
+	{
+	padding-top:5px;
+	padding-bottom: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	padding-left: 10px;
+	}
+	.autocomplete_list li span
+	{
+	color: #333;
+	text-align:left;
+	text-decoration: none;
+	font-size:12px;
+	font-weight:normal;
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	line-height: 17px;
+	}	
+	
+	.autocomplete_list li:hover
+	{
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #D6D6D6;
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	}	
+
+</style>
+
+<style>
+/************************************************************************************
+FORM STYLE BEGIN
+*************************************************************************************/
+
+/* input styles */
+.input-select {
+	background: #f4f4f4;
+	border: solid 1px #a3a3a3;
+	-webkit-box-shadow: inset 0 2px 3px rgba(0,0,0,.1);
+	-moz-box-shadow: inset 0 2px 3px rgba(0,0,0,.1);
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.1);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-appearance: none; /* reset webkit search style */
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	font-weight: bold;
+	width: 55px;
+}
+.input-textarea, input[type=search] {
+	background: #f4f4f4;
+	border: solid 1px #a3a3a3;
+	-webkit-box-shadow: inset 0 2px 3px rgba(0,0,0,.1);
+	-moz-box-shadow: inset 0 2px 3px rgba(0,0,0,.1);
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.1);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-appearance: none; /* reset webkit search style */
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	font-weight: bold;
+	width: 220px;
+}
+
+.input-text{
+	background: #f4f4f4;
+	border: solid 1px #a3a3a3;
+	-webkit-box-shadow: inset 0 2px 3px rgba(0,0,0,.1);
+	-moz-box-shadow: inset 0 2px 3px rgba(0,0,0,.1);
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.1);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-appearance: none; /* reset webkit search style */
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	font-weight: bold;
+	width: 230px;
+}
+
+.input-date{
+	background: #f4f4f4;
+	border: solid 1px #a3a3a3;
+	-webkit-box-shadow: inset 0 2px 3px rgba(0,0,0,.1);
+	-moz-box-shadow: inset 0 2px 3px rgba(0,0,0,.1);
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.1);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-appearance: none; /* reset webkit search style */
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	font-weight: bold;
+	width: 110px;
+}
+
+/* input:focus styles */
+input[type=text]:focus,
+select[type=text]:focus, 
+textarea:focus,
+input[type=search]:focus {
+	background: #fff;
+	border-color: #333;
+	outline: none; /* remove outline */
+}
+
+
+
+/* fallback placeholder */
+.placeholder {
+	color: #999;
+}
+/* webkit placeholder */
+::-webkit-input-placeholder {
+	color: #bbb;
+}
+/* moz placeholder */
+:-moz-placeholder {
+	color: #bbb;
+}
+
+/* remove webkit search input decoration and cancel button */
+input[type="search"]::-webkit-search-decoration, 
+input[type="search"]::-webkit-search-cancel-button {
+	display: none;
+}
+</style>
+
+<script type="text/javascript">
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+
+<script src="/includes/request-affiliate-quote-modernizr.js"></script>
+
+<script>
+$(document).ready(function(){
+
+if(!Modernizr.input.placeholder){
+
+	$('[placeholder]').focus(function() {
+	  var input = $(this);
+	  if (input.val() == input.attr('placeholder')) {
+		input.val('');
+		input.removeClass('placeholder');
+	  }
+	}).blur(function() {
+	  var input = $(this);
+	  if (input.val() == '' || input.val() == input.attr('placeholder')) {
+		input.addClass('placeholder');
+		input.val(input.attr('placeholder'));
+	  }
+	}).blur();
+	$('[placeholder]').parents('form').submit(function() {
+	  $(this).find('[placeholder]').each(function() {
+		var input = $(this);
+		if (input.val() == input.attr('placeholder')) {
+		  input.val('');
+		}
+	  })
+	});
+
+}
+
+});
+</script>
+
+
+<link href="/includes/css/main-index.css" rel="stylesheet" type="text/css">
+
+<div class="cityguide-findhotel-include-bg">
+<div class="cityguide-findhotel-include">
+	 <form name="frm_search_new" id="frm_search_new" method="get" action="http://travel.justluxe.com/luxury-hotel-search/results.html" style="margin:0px; padding:0px;">
+	 
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+   
+  <tr>
+    <td align="left">
+    	<h2><span>The World's Best Luxury Hotels</span><br>
+		  <a href="http://travel.justluxe.com/">Find a Luxury Hotel</a></h2>
+        <img src="/images/061611-cg-hotel-divide.jpg" width="252" height="5" style="padding-bottom: 10px;">
+    </td>
+  </tr>
+  
+  </table>
+ 
+  <div id='hotel-search-content' class='hotel-search-close'>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left">
+    	<h3>Search Hotels</h3>
+		<label for="textfield" class="main-search-fieldbox"></label>
+				<script type='text/javascript'>loadajax();</script>
+				<input name='search_term' id='autocomplete_input' class="input-text" type='text' onkeyup='getData()' onblur="setTimeout('blurContent()', 500);" AUTOCOMPLETE="off" size="39" placeholder="Hotel Name, City, Country, or Keyword">
+				<div id='autocomplete_content'>
+				</div>
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="2" align="left"><h3>Travel Options</h3></td>
+    </tr>
+  <tr>
+    <td><input name="date_in" id="date_in" size=10 type="text" placeholder="Check-In Date" class="input-date" value="2012-04-26" maxlength="12" onChange="datePlusOne(this.value,document.frm_search_new.date_out);">
+    </td>
+    <td><input name="date_out" id="date_out" size=10 type="text" class="input-date" placeholder="Check-Out Date" value="2012-04-28" maxlength="12">
+    </td>
+  </tr>
+</table>
+
+        
+        
+        
+        
+    </td>
+  </tr>
+  <tr>
+    <td align="left"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>
+        	<h3>Guests</h3>
+            <select name="adults" class="input-select">
+							<option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>					  </select>
+        </td>
+        <td>
+        	<h3>Rooms</h3>
+            <select name="rooms" class="input-select">
+							<option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>					  </select>
+        </td>
+        <td align="center"><a href="javascript:void(0);" onClick="searchGo();" border=0> <img src="/images/061611-cg-btn-search-hotels.jpg" width="118" height="36" alt="Search Hotels" border="0" /></a></td>
+      </tr>
+    </table>
+    		<input type='hidden' name='nights' id='nights'>
+			<input type='hidden' name='autocomplete_type' id='autocomplete_type'>
+			<input type='hidden' name='autocomplete_title' id='autocomplete_title'>
+    </td>
+  </tr>
+  <!--tr>
+    <td align="center"><img src="/images/061611-cg-hotel-divide.jpg" width="252" height="5" style="padding-bottom: 5px;">
+<span>JustLuxe Members can<br>
+Save up to 70% on hotel bookings! <!--<a href="javascript:pop('signupoverlay',1,1);">Become a Member Today</a></span></td>
+  </tr-->
+ 
+</table>
+</div>
+
+ <div width='100%' id='hotel-search-slider-button' style='height:10px;text-align:center;'><img src='/community/images/arrow-down.png'></div>
+ 
+ 
+ </form>
+ 
+        </div>
+        </div>
+</td>
+				</tr>
+				<tr>
+					<td align="center" style="padding-bottom: 30px;">
+	<!-- begin ad tag -->
+	<script type="text/javascript">
+	<!--
+		OAS_url = 'http://oasc18015.247realmedia.com';
+		OAS_sitepage = 'www.justluxe.com/travel';
+		OAS_pos = 'Top,Middle1,Middle2,Bottom,Position1,Position2,Position3,Position4,x01,x02,x04,x10,x11,x12,x13,x31,x32,x33,x34,x35,x36,x40,x60,x61,x62,x63,Right!Middle2';
+		OAS_query = 'x62';
+		var OAS_pubclick = '';
+		OAS_query += '&_RM_HTML_CLICK_=' + OAS_pubclick;
+		document.write('<scr' + 'ipt type="text/javascript" src="' + OAS_url + '/RealMedia/ads/adstream_jx.ads/'
+		+ OAS_sitepage + '/1' + OAS_RNS + '@' + OAS_pos + '?' + OAS_query + '"></scr' + 'ipt>');
+	// -->
+	</script>
+	<noscript>
+		<a href="http://oascentral.site.com/RealMedia/ads/click_nx.ads/www.justluxe.com/travel/@Middle2?x62">
+		<img src="http://oascentral.site.com/RealMedia/ads/adstream_nx.ads/www.justluxe.com/travel/@Middle2?x62" border="0" />
+		</a>
+	</noscript>
+	<!-- end ad tag -->
+<div class="advertisement">advertisement</div></td>
+				</tr>
+				<tr>
+					<td align="center" style="padding-bottom: 30px;">
+							 
+ <link rel="stylesheet" href="http://www.justluxe.com/includes/royal-slider/royalslider.css" />
+    <link rel="stylesheet" href="http://www.justluxe.com/includes/royal-slider/royalslider-skins/default/default.css" />
+    <link rel="stylesheet" href="http://www.justluxe.com/includes/royal-slider/royalslider-skins/iskin/iskin.css" />
+	<script src="http://www.justluxe.com/includes/royal-slider/jquery.easing.1.3.min.js"></script> 
+    <script src="http://www.justluxe.com/includes/royal-slider/royal-slider-8.1.min.js"></script>
+    <script src="http://www.justluxe.com/includes/royal-slider/royal-slider-8.1.js"></script>
+	
+<link href='http://fonts.googleapis.com/css?family=Oswald:300,400' rel='stylesheet' type='text/css'>
+
+	<script>
+	jQuery(document).ready(function($) {
+		var sliderInstance = $('#content-slider').royalSlider({
+	  		directionNavEnabled: true,
+			directionNavAutoHide: false,
+			welcomeScreenEnabled:false,
+			imageAlignCenter:true,
+			captionShowEffects:["moveleft", "fade"]       
+	    }).data('royalSlider');   				
+		$("#button-id").click(function() {
+			sliderInstance.next();
+		});
+	});
+    </script>
+    
+    <script>
+$(document).ready(function() {
+    $("#content-slider").royalSlider({
+        captionShowEffects:["moveleft", "fade"],
+        directionNavAutoHide: true
+        /* other options go here, view javascript options to learn more */			
+    });  
+});
+</script>
+
+<style type="text/css">
+#travel-middle-column {
+	width: 245px;
+	padding: 10px;
+	background-image: url(http://www.justluxe.com/images/032812-middle-tile-bg.jpg);
+	background-repeat: repeat;
+	margin: 0px;
+}
+
+#travel-middle-column  .header {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	line-height: 15px;
+	color: #333;
+	font-style: italic;
+	background-color: #FFF;
+	padding: 10px;
+	margin: 0px;
+}
+
+#travel-middle-column  .header h3{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 24px;
+	color: #463D32;
+	margin: 0px;
+	padding-bottom: 10px;
+	font-style: normal;
+}
+
+#travel-middle-column  .header h3 span{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 24px;
+	color: #998D59;
+	font-style: normal;
+}
+
+#travel-middle-column  .featured-hotels {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	line-height: 15px;
+	color: #333;
+	font-style: italic;
+}
+
+#travel-middle-column  .featured-hotels h3{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 24px;
+	color: #463D32;
+	margin: 0px;
+	padding-bottom: 15px;
+	font-style: normal;
+	padding-left: 0px;
+}
+
+#travel-middle-column  .featured-hotels-description {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	line-height: 15px;
+	color: #333;
+	font-style: italic;
+	background-color: #FFF;
+	padding: 10px;
+}
+
+#travel-middle-column  .featured-hotels-description a {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 20px;
+	color: #600;
+	font-style: normal;
+	text-decoration: none;
+}
+
+#travel-middle-column  .featured-hotels-description a:visited {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 20px;
+	color: #600;
+	font-style: normal;
+	text-decoration: none;
+}
+
+#travel-middle-column  .featured-hotels-description a:hover {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 20px;
+	color: #998D59;
+	font-style: normal;
+	text-decoration: none;
+}
+
+#travel-middle-column  .featured-hotels-description span {
+	font-family: "Gill Sans", Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 20px;
+	color: #6E665B;
+	font-style: normal;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+#travel-middle-column  .hotel-reviews {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	line-height: 15px;
+	color: #333;
+	font-style: italic;
+}
+
+#travel-middle-column  .hotel-reviews h3{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 24px;
+	color: #463D32;
+	margin: 0px;
+	padding-bottom: 15px;
+	font-style: normal;
+	padding-left: 0px;
+}
+
+#travel-middle-column  .hotel-reviews ul {
+	margin: 0px;
+	padding-left: 10px;	
+}
+
+#travel-middle-column  .hotel-reviews li {
+	list-style-type: none;
+	padding-bottom: 10px;
+}
+
+#travel-middle-column  .hotel-reviews li a {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 18px;
+	color: #303;
+	font-style: normal;
+	text-decoration: none;
+}
+
+#travel-middle-column  .hotel-reviews li a:visited {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 18px;
+	color: #303;
+	font-style: normal;
+	text-decoration: none;
+}
+
+#travel-middle-column  .hotel-reviews li a:hover {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 18px;
+	color: #606;
+	font-style: normal;
+	text-decoration: none;
+}
+</style>
+
+<div id="travel-middle-column">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+    <td class="header"><h3><span>JustLuxe presents</span><br>The World's Best Luxury Hotels</h3>
+    As a leading online luxury magazine and travel provider, we know the best in luxury when we see it.</td>
+</tr>
+    <tr>
+    <td style="padding-top: 20px;">
+		<div id="content-slider" class="royalSlider default" style='width:245px;height:310px;'>   
+		<ul class="royalSlidesContainer">    
+			<li class="royalSlide" style='width:245px;'> 
+				<a href='http://travel.justluxe.com/best-hotels/Beach/index.html' border=0><img src="http://www.justluxe.com/travel/images/032812-middle-slide-beach.jpg" width="245" height="294" border=0></a>
+			</li>
+			<li class="royalSlide"> 
+				<a href='http://travel.justluxe.com/best-hotels/Spa/index.html' border=0><img src="http://www.justluxe.com/travel/images/032812-middle-slide-spas.jpg" width="245" height="294" border=0></a>
+			</li>
+			<li class="royalSlide"> 
+				<a href='http://travel.justluxe.com/best-hotels/Business/index.html' border=0><img src="http://www.justluxe.com/travel/images/032812-middle-slide-business.jpg" width="245" height="294" border=0></a>
+			</li>
+			<li class="royalSlide"> 
+				<a href='http://travel.justluxe.com/best-hotels/Boutique/index.html' border=0><img src="http://www.justluxe.com/travel/images/032812-middle-slide-boutique.jpg" width="245" height="294" border=0></a>
+			</li>			
+		</ul>
+		</div>
+	
+	</td>
+  </tr>
+  <tr>
+    <td align="center" style="padding-top: 20px; padding-bottom: 20px;"><img src="http://www.justluxe.com/images/032812-middle-divider.png" width="157" height="7"></td>
+  </tr>
+  <tr>
+    <td class="featured-hotels"><h3>Featured Luxury Hotels</h3>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  			  <tr>
+			<td style="padding-top: 20px;"><a href="http://travel.justluxe.com/luxury-hotel/223552__Le-Méridien-Beach-Plaza.html"><img src="http://media2.justluxe.com/phpThumb/phpThumb.php?src=/classifieds/66534.jpg&w=245&h=100" width="245" height="100" border="0"></a></td>
+		  </tr>
+		  <tr>
+			<td class="featured-hotels-description"><span>Monte Carlo, Monaco</span><br><a href="http://travel.justluxe.com/luxury-hotel/223552__Le-Méridien-Beach-Plaza.html">Le Méridien Beach Plaza</a><p> Le Méridien Beach Plaza sits in the within walking distance of Monaco's most...</p>
+			</td>
+		  </tr>
+		 		  <tr>
+			<td style="padding-top: 20px;"><a href="http://travel.justluxe.com/luxury-hotel/1759591__The-Andaman,-a-Luxury-Collection-Resort.html"><img src="http://media2.justluxe.com/phpThumb/phpThumb.php?src=/classifieds/67205.jpg&w=245&h=100" width="245" height="100" border="0"></a></td>
+		  </tr>
+		  <tr>
+			<td class="featured-hotels-description"><span>Langkawi, Malaysia</span><br><a href="http://travel.justluxe.com/luxury-hotel/1759591__The-Andaman,-a-Luxury-Collection-Resort.html">The Andaman, a Luxury Collection Resort</a><p>The Andaman, a Luxury Collection Resort located in an idyllic tropical setting...</p>
+			</td>
+		  </tr>
+		 		  <tr>
+			<td style="padding-top: 20px;"><a href="http://travel.justluxe.com/luxury-hotel/242762__Trump-International-Hotel-Las-Vegas.html"><img src="http://media2.justluxe.com/phpThumb/phpThumb.php?src=/classifieds/65848.jpg&w=245&h=100" width="245" height="100" border="0"></a></td>
+		  </tr>
+		  <tr>
+			<td class="featured-hotels-description"><span>Las Vegas, United States</span><br><a href="http://travel.justluxe.com/luxury-hotel/242762__Trump-International-Hotel-Las-Vegas.html">Trump International Hotel Las Vegas</a><p>Soaring high above the Strip, the  Trump Hotel Las Vegas rises 64 stories to...</p>
+			</td>
+		  </tr>
+		 		  <tr>
+			<td style="padding-top: 20px;"><a href="http://travel.justluxe.com/luxury-hotel/1710396__Trump-International-Hotel-&-Tower-Toronto.html"><img src="http://media2.justluxe.com/phpThumb/phpThumb.php?src=/classifieds/65982.jpg&w=245&h=100" width="245" height="100" border="0"></a></td>
+		  </tr>
+		  <tr>
+			<td class="featured-hotels-description"><span>Toronto, Canada</span><br><a href="http://travel.justluxe.com/luxury-hotel/1710396__Trump-International-Hotel-&-Tower-Toronto.html">Trump International Hotel & Tower Toronto</a><p>Crowned by an articulated spire 900-feet above the Downtown Toronto's financial...</p>
+			</td>
+		  </tr>
+		 		  <tr>
+			<td style="padding-top: 20px;"><a href="http://travel.justluxe.com/luxury-hotel/1587450__Hotel-De-EDGE.html"><img src="http://media2.justluxe.com/phpThumb/phpThumb.php?src=/classifieds/62465.jpg&w=245&h=100" width="245" height="100" border="0"></a></td>
+		  </tr>
+		  <tr>
+			<td class="featured-hotels-description"><span>Hong Kong, China</span><br><a href="http://travel.justluxe.com/luxury-hotel/1587450__Hotel-De-EDGE.html">Hotel De EDGE</a><p>The Hong Kong harbour view hotel is the latest landmark in Sheung Wan on Hong...</p>
+			</td>
+		  </tr>
+		 		  <tr>
+			<td style="padding-top: 20px;"><a href="http://travel.justluxe.com/luxury-hotel/1596569__Four-Seasons-Hotel-Marrakech.html"><img src="http://media2.justluxe.com/phpThumb/phpThumb.php?src=/classifieds/62675.jpg&w=245&h=100" width="245" height="100" border="0"></a></td>
+		  </tr>
+		  <tr>
+			<td class="featured-hotels-description"><span>Marrakech, Morocco</span><br><a href="http://travel.justluxe.com/luxury-hotel/1596569__Four-Seasons-Hotel-Marrakech.html">Four Seasons Hotel Marrakech</a><p>An easy walk from the ancient ramparts of the Medina and across from the Menara...</p>
+			</td>
+		  </tr>
+		 		</table>
+
+	</td>
+  </tr>
+  <tr>
+    <td align="center" style="padding-top: 20px; padding-bottom: 20px;"><img src="http://www.justluxe.com/images/032812-middle-divider.png" width="157" height="7"></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="http://www.justluxe.com/travel/pop-up-travel-specials.php" onClick="window.open(this.href,'_blank','width=630,location=0,menubar=0,toolbar=0,scrollbars=1');return false;"><img src="http://www.justluxe.com/images/032812-middle-adholder.jpg" alt="Let Us Create a Custom Vacation for You" width="170" height="134" border="0"></a></td>
+  </tr>
+  
+  <!--
+  <tr>
+    <td class="featured-hotels"><h3>Featured Hotel Video</h3>
+    -->
+	
+    <!-- Start of Brightcove Player -->
+<!--
+<div style="display:none">
+
+</div>
+-->
+<!--
+By use of this code snippet, I agree to the Brightcove Publisher T and C 
+found at https://accounts.brightcove.com/en/terms-and-conditions/. 
+-->
+<!--
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+
+<object id="myExperience1523033318001" class="BrightcoveExperience">
+  <param name="bgcolor" value="#FFFFFF" />
+  <param name="width" value="245" />
+  <param name="height" value="171" />
+  <param name="playerID" value="757675912001" />
+  <param name="playerKey" value="AQ~~,AAAArH1ssJE~,0veV3L50ebPQTC3E8Vel0gzALijZrhQU" />
+  <param name="isVid" value="true" />
+  <param name="dynamicStreaming" value="true" />
+    
+  <param name="@videoPlayer" value="1523033318001" />
+</object>
+-->
+<!-- 
+This script tag will cause the Brightcove Players defined above it to be created as soon
+as the line is read by the browser. If you wish to have the player instantiated only after
+the rest of the HTML is processed and the page load is complete, remove the line.
+-->
+<!--
+<script type="text/javascript">brightcove.createExperiences();</script>
+-->
+<!-- End of Brightcove Player -->
+
+<!--
+	</td>
+  </tr>
+ -->
+ 
+</table>
+</div>					</td>
+				</tr>
+				<tr>
+					<td align="center" style="padding-bottom: 30px;">
+						<div width=292 style='width:292px;overflow:hidden;text-align:left;'>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=137288903030493";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-like-box" style="background-color:#ffffff;" data-href="https://www.facebook.com/pages/JustLuxe-a-luxury-portal/88480315823" data-width="292" data-colorscheme="light" data-show-faces="true" data-stream="false" data-header="true"></div>
+</div>					</td>
+				</tr>
+				<tr>
+					<td align="center" style="padding-bottom: 30px;">
+	<!-- begin ad tag -->
+	<script type="text/javascript">
+	<!--
+		OAS_url = 'http://oasc18015.247realmedia.com';
+		OAS_sitepage = 'www.justluxe.com/travel';
+		OAS_pos = 'Top,Middle1,Middle2,Bottom,Position1,Position2,Position3,Position4,x01,x02,x04,x10,x11,x12,x13,x31,x32,x33,x34,x35,x36,x40,x60,x61,x62,x63,Right!x02';
+		OAS_query = 'x62';
+		var OAS_pubclick = '';
+		OAS_query += '&_RM_HTML_CLICK_=' + OAS_pubclick;
+		document.write('<scr' + 'ipt type="text/javascript" src="' + OAS_url + '/RealMedia/ads/adstream_jx.ads/'
+		+ OAS_sitepage + '/1' + OAS_RNS + '@' + OAS_pos + '?' + OAS_query + '"></scr' + 'ipt>');
+	// -->
+	</script>
+	<noscript>
+		<a href="http://oascentral.site.com/RealMedia/ads/click_nx.ads/www.justluxe.com/travel/@x02?x62">
+		<img src="http://oascentral.site.com/RealMedia/ads/adstream_nx.ads/www.justluxe.com/travel/@x02?x62" border="0" />
+		</a>
+	</noscript>
+	<!-- end ad tag -->
+<div class="advertisement">advertisement</div></td>
+				</tr>
+				<tr>
+					<td align="center" style="padding-bottom: 30px;">
+						   
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.inpic-teaser-main-box {
+	background-image: url(http://www.justluxe.com/images/120405-photo-teaser-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	border: 1px solid #2b2529;
+}
+.inpic-teaser-content-box {
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 15px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #FFF;
+	padding: 15px;
+	text-decoration: none;
+}
+.inpic-teaser-content-box a:link{
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 15px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+}
+.inpic-teaser-content-box a:visited{
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 15px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+}
+.inpic-teaser-content-box a:hover{
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 15px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #cccccc;
+	text-decoration: none;
+}
+.inpic-teaser-content-img {
+	border: 1px solid #4c4c4c;
+}
+
+</style>
+
+<table width="300" border="0" cellspacing="0" cellpadding="0" class="inpic-teaser-main-box">
+  <tr>
+    <td align="center" valign="top"><img src="http://www.justluxe.com/images/120405-photo-teaser-title.png" alt="imagination.inspiration.perfection.inpictures: popular photo galleries" width="300" height="82" /></td>
+  </tr>
+  <tr>
+    <td class="inpic-teaser-content-box"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+      
+        <td align="left" valign="top">
+        <div style="float:left;">
+        <div align="left" style="width:127px;"> <a href="/inpictures/gallery.php?cid=1743081"><img src="http://www.justluxe.com/images/120405-photo-teaser-img2-1.jpg" alt="Seafood Adventures Across the Globe" width="127" height="119" border="0" class="inpic-teaser-content-img"/></a></div>
+        <div align="right" style="width:127px; padding:3px 0px 10px 0px;"><a href="/inpictures/index.php?cat=125"><img src="http://www.justluxe.com/images/120405-photo-teaser-subtitle4.png" alt="travel" width="127" height="11" border="0" /></a></div>
+        <div align="left" style="width:127px; padding:3px 0px 10px 0px;"><a href="/inpictures/gallery.php?cid=1743081" target="_self">Seafood Adventures Across the Globe</a></div>
+        </div>
+        </td>
+        
+        <td align="right" valign="top">
+        <div style="float:right;">
+        <div align="right" style="width:127px;"> <a href="/inpictures/gallery.php?cid=1736962"><img src="http://www.justluxe.com/images/120405-photo-teaser-img2-2.jpg" alt="Exploring the Wilds of Australia" width="127" height="119" border="0" class="inpic-teaser-content-img"/></a></div>
+        <div align="right" style="width:127px; padding:3px 0px 10px 0px;"><a href="/inpictures/index.php?cat=125"><img src="http://www.justluxe.com/images/120405-photo-teaser-subtitle4.png" alt="travel" width="127" height="11" border="0" /></a></div>
+        <div align="left" style="width:127px; padding:3px 0px 10px 0px;"><a href="/inpictures/gallery.php?cid=1736962" target="_self">Exploring the Wilds of Australia</a></div>
+        </div>
+        </td>
+        
+      </tr>
+      <tr>
+
+        <td align="left" valign="top">
+        <div style="float:left;">
+        <div align="left" style="width:127px;"> <a href="/inpictures/gallery.php?cid=1590976"><img src="http://www.justluxe.com/images/120405-photo-teaser-img2-3.jpg" alt="The World's Best Places to Nap" width="127" height="119" border="0" class="inpic-teaser-content-img"/></a></div>
+        <div align="right" style="width:127px; padding:3px 0px 10px 0px;"><a href="/inpictures/index.php?cat=125"><img src="http://www.justluxe.com/images/120405-photo-teaser-subtitle4.png" alt="travel" width="127" height="11" border="0" /></a></div>
+        <div align="left" style="width:127px; padding:3px 0px 10px 0px;"><a href="/inpictures/gallery.php?cid=1590976" target="_self">The World's Best Places to Nap</a></div>
+        </div>
+        </td>
+        
+        <td align="right" valign="top">
+        <div style="float:right;">
+        <div align="right" style="width:127px;"> <a href="/inpictures/gallery.php?cid=1747225"><img src="http://www.justluxe.com/images/120405-photo-teaser-img2.jpg" alt="Luxury Villas of Southern California" width="127" height="119" border="0" class="inpic-teaser-content-img"/></a></div>
+        <div align="right" style="width:127px; padding:3px 0px 10px 0px;"><a href="/inpictures/index.php?cat=125"><img src="http://www.justluxe.com/images/120405-photo-teaser-subtitle4.png" alt="travel" width="127" height="11" border="0" /></a></div>
+        <div align="left" style="width:127px; padding:3px 0px 10px 0px;"><a href="/inpictures/gallery.php?cid=1747225" target="_self">Luxury Villas of Southern California</a></div>
+        </div>
+        </td>
+        
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><a href="/inpictures/index.php?cat=125"><img src="http://www.justluxe.com/images/120405-photo-teaser-footer.png" width="300" height="46" border="0" /></a></td>
+  </tr>
+</table>
+
+					</td>
+				</tr>
+				<tr>
+					<td align="center" style="padding-bottom: 30px;">
+						<style type="text/css">
+.recent-title-box {
+	background-image: url(/images/111108-ll-recent-act-bg-title.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding-top: 17px;
+	padding-left: 6px;
+	padding-bottom: 10px;
+}
+.faces-box {
+	background-color: #eeeeee;
+	border-top-width: 6px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+	border-bottom-width: 6px;
+	border-bottom-style: solid;
+	border-bottom-color: #ffffff;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight: bold;
+	color: #330033;	
+}
+.faces-box a:link{
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight: bold;
+	color: #660066;
+	text-decoration:none;
+}
+.faces-box a:visited{
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight: bold;
+	color: #660066;
+	text-decoration:none;
+}.faces-box a:hover{
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight: bold;
+	color: #660066;
+	text-decoration:none;
+}
+
+.faces-box samp{
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:normal;
+	text-transform:uppercase;
+	color: #1a1a1a;	
+}
+
+.faces-box span{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color: #363636;	
+}
+.faces-box span a:link{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color: #363636;
+	text-decoration:none;	
+}
+.faces-box span a:visited{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color: #363636;
+	text-decoration:none;	
+}
+.faces-box span a:hover{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color: #636363;
+	text-decoration:none;	
+}
+
+.activity-box {
+	background-color: #eeeeee;
+	border-top-width: 6px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+	border-bottom-width: 6px;
+	border-bottom-style: solid;
+	border-bottom-color: #ffffff;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight: normal;
+	color: #1a1a1a;
+	line-height:17px;
+}
+.activity-box a:link{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color: #1a1a1a;
+	text-decoration:none;
+}
+.activity-box a:hover{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color: #504e4e;
+	text-decoration:none;
+}
+.activity-box a:visited{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color: #1a1a1a;
+	text-decoration:none;
+}
+.activity-box span{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color: #330033;	
+}
+.activity-box span a:link{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color: #330033;
+	text-decoration:none;	
+}
+.activity-box span a:visited{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color: #330033;
+	text-decoration:none;	
+}
+.activity-box span a:hover{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color: #660066;	
+	text-decoration:none;	
+}
+.activity-box samp{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight: normal;
+	color: #1a1a1a;
+	line-height:17px;
+}
+
+/* Tooltip */
+
+#tooltip {
+	position:absolute;
+	z-index:9999;
+	color:#fff;
+	font-size:10px;
+	width:180px;
+	
+}
+
+#tooltip .tipHeader {
+	height:8px;
+	background:url(/images/tipHeader.gif) no-repeat;
+}
+
+
+#tooltip .tipBody {
+	background-color:#000;
+	padding:5px 5px 5px 15px;
+}
+
+#tooltip .tipFooter {
+	height:8px;
+	background:url(/images/tipFooter.gif) no-repeat;
+}
+</style>
+<table width="300" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td bgcolor="#5f5959" style="padding:10px;"><table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+      <tr>
+        <td style="padding:0px 7px 0px 7px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left" valign="top" class="recent-title-box"><a href="/community/"><img src="/images/111108-ll-recent-title-member1.png" width="250" height="32" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td valign="top" class="faces-box">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				 
+						  <tr>
+							<td style="padding-bottom:5px;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+									<tr>
+										<td width="19%" rowspan="2" align="left" valign="middle" style="padding:4px;"><a href="/community/view-profile.php?p_id=7821"><img src="http://media1.justluxe.com/contributors/profile/tn_default-image-female.jpg" width="40" border="0" /></a></td>
+										<td width="81%" height="24" style="padding-top:4px;" align="left"><a href="/community/view-profile.php?p_id=7821">CoLoR349</a> <samp>POSTED</samp> <img src="/images/111108-ll-recent-bullet.jpg" width="7" height="8" /></td>
+									</tr>
+									<tr>
+										<td align="left"><span><a href="/community/view-profile.php?p_id=7821">67 times</a> in the past 30 days</span></td>
+									</tr>
+								</table>
+							</td>
+						  </tr>
+						 
+						  <tr>
+							<td style="padding-bottom:5px;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+									<tr>
+										<td width="19%" rowspan="2" align="left" valign="middle" style="padding:4px;"><a href="/community/view-profile.php?p_id=19166"><img src="http://media1.justluxe.com/contributors/profile/tn_default-image-female.jpg" width="40" border="0" /></a></td>
+										<td width="81%" height="24" style="padding-top:4px;" align="left"><a href="/community/view-profile.php?p_id=19166">RichTeez</a> <samp>POSTED</samp> <img src="/images/111108-ll-recent-bullet.jpg" width="7" height="8" /></td>
+									</tr>
+									<tr>
+										<td align="left"><span><a href="/community/view-profile.php?p_id=19166">20 times</a> in the past 30 days</span></td>
+									</tr>
+								</table>
+							</td>
+						  </tr>
+						 
+						  <tr>
+							<td style="padding-bottom:5px;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+									<tr>
+										<td width="19%" rowspan="2" align="left" valign="middle" style="padding:4px;"><a href="/community/view-profile.php?p_id=18501"><img src="http://media1.justluxe.com/member/profile_images/18501-profilepic.jpg" width="40" border="0" /></a></td>
+										<td width="81%" height="24" style="padding-top:4px;" align="left"><a href="/community/view-profile.php?p_id=18501">Neel</a> <samp>POSTED</samp> <img src="/images/111108-ll-recent-bullet.jpg" width="7" height="8" /></td>
+									</tr>
+									<tr>
+										<td align="left"><span><a href="/community/view-profile.php?p_id=18501">16 times</a> in the past 30 days</span></td>
+									</tr>
+								</table>
+							</td>
+						  </tr>
+									    </table>
+		    </td>
+		  </tr>
+          <tr>
+            <td align="left" valign="top" class="recent-title-box">
+            <a rel="tooltip" title="LuxeLounge Members connect with travelers, fashionistas, and lifestyle experts, sharing experiences, insights, and advice."  href="javascript:pop('loginoverlay',1,0);"><img src="/images/111108-ll-recent-title-activity1.png" width="178" height="32" border="0"/></a><a href="/community/"><img src="/images/111108-ll-recent-title-activity2.png" width="73" height="32" border="0"/></a></td>
+          </tr>
+          <tr>
+			<td valign="top" class="activity-box">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td style="padding-bottom:5px;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+								  <tr>
+									<td width="19%" height="24" align="left" valign="middle" style="padding:4px;"><span><a href="/community/view-profile.php?p_id=19290">Greek Fonts by Sabastian</a></span> <samp>posted</samp> <a href="/community/greek-house-offers-elegant-and-funky-greek-fonts_a_1760250.php">Greek House Offers Elegant and Funky Greek Fonts </a></td>
+								  </tr>
+								</table>
+							</td>
+						</tr>
+					</table><table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td style="padding-bottom:5px;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+								  <tr>
+									<td width="19%" height="24" align="left" valign="middle" style="padding:4px;"><span><a href="/community/view-profile.php?p_id=18864">Dane</a></span> <samp>posted</samp> <a href="/community/the-right-approach-to-trade-shows_a_1760067.php">The Right Approach to Trade Shows</a></td>
+								  </tr>
+								</table>
+							</td>
+						</tr>
+					</table><table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td style="padding-bottom:5px;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+								  <tr>
+									<td width="19%" height="24" align="left" valign="middle" style="padding:4px;"><span><a href="/community/view-profile.php?p_id=18864">Dane</a></span> <samp>posted</samp> <a href="/community/what-to-look-for-in-your-new-apartment_a_1760066.php">What To Look For In Your New Apartment</a></td>
+								  </tr>
+								</table>
+							</td>
+						</tr>
+					</table><table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td style="padding-bottom:5px;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+								  <tr>
+									<td width="19%" height="24" align="left" valign="middle" style="padding:4px;"><span><a href="/community/view-profile.php?p_id=17141">Jennifer</a></span> <samp>posted</samp> <a href="/community/retail-therapy-of-the-vintage-sort-at-grays-antique-market-i_a_1759973.php">Retail therapy of the vintage sort at Grays Antique Market in London</a></td>
+								  </tr>
+								</table>
+							</td>
+						</tr>
+					</table><table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td style="padding-bottom:5px;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+								  <tr>
+									<td width="19%" height="24" align="left" valign="middle" style="padding:4px;"><span><a href="/community/view-profile.php?p_id=19277">Anna Kec</a></span> <samp>posted</samp> <a href="/community/you-can-build-your-own-outdoor-pergola_a_1759930.php">You can build your own outdoor pergola!</a></td>
+								  </tr>
+								</table>
+							</td>
+						</tr>
+					</table>			</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+
+<map name="Map" id="Map">
+
+  <area shape="rect" coords="31,18,146,31" href="javascript:pop('loginoverlay',1,0);" />
+  <area shape="rect" coords="198,11,248,34" href="/community/" />
+</map>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" style="padding-bottom: 30px;">
+					<style type="text/css">
+<!--
+.box-featured {
+	font-family: Arial, Helvetica, sans-serif;
+	padding-right: 20px;
+	padding-left: 30px;
+	padding-bottom:10px;
+}
+.box-featured a:link{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #303;
+	text-decoration: none;
+	line-height: 17px;
+	font-weight: bold;
+}
+.box-featured a:visited{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #303;
+	text-decoration: none;
+	line-height: 17px;
+	font-weight: bold;
+}
+.box-featured a:hover{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #606;
+	text-decoration: underline;
+	line-height: 17px;
+	font-weight: bold;
+}
+.box-featured ul{
+	margin: 0px;
+	padding: 0px;
+}
+.box-featured li{
+	list-style-image: url(/images/070609-feat-adv-box-bullet.jpg);
+	list-style-type: none;
+	list-style-position: inside;
+	margin: 0px;
+	text-align: left;
+	left: 0px;
+	padding-bottom: 10px;
+}
+-->
+</style>
+
+
+<table width="300" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center"><table width="298" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><img src="/images/070609-feat-adv-box-top.jpg" width="298" height="40" /></td>
+      </tr>
+      <tr>
+        <td align="left" class="box-featured" style="background-image:url(/images/070609-feat-adv-box-mid.jpg)">
+        
+<!-- link 01 START-->
+<img src="/images/070609-feat-adv-box-bullet.jpg" /> 
+	<!-- begin ad tag -->
+	<script type="text/javascript">
+	<!--
+		OAS_url = 'http://oasc18015.247realmedia.com';
+		OAS_sitepage = 'www.justluxe.com/travel';
+		OAS_pos = 'Top,Middle1,Middle2,Bottom,Position1,Position2,Position3,Position4,x01,x02,x04,x10,x11,x12,x13,x31,x32,x33,x34,x35,x36,x40,x60,x61,x62,x63,Right!x10';
+		OAS_query = 'x62';
+		var OAS_pubclick = '';
+		OAS_query += '&_RM_HTML_CLICK_=' + OAS_pubclick;
+		document.write('<scr' + 'ipt type="text/javascript" src="' + OAS_url + '/RealMedia/ads/adstream_jx.ads/'
+		+ OAS_sitepage + '/1' + OAS_RNS + '@' + OAS_pos + '?' + OAS_query + '"></scr' + 'ipt>');
+	// -->
+	</script>
+	<noscript>
+		<a href="http://oascentral.site.com/RealMedia/ads/click_nx.ads/www.justluxe.com/travel/@x10?x62">
+		<img src="http://oascentral.site.com/RealMedia/ads/adstream_nx.ads/www.justluxe.com/travel/@x10?x62" border="0" />
+		</a>
+	</noscript>
+	<!-- end ad tag -->
+<!-- link 01 END-->
+
+<!-- link 02 START-->
+<br /> <img src="/images/070609-feat-adv-box-bullet.jpg" /> 
+	<!-- begin ad tag -->
+	<script type="text/javascript">
+	<!--
+		OAS_url = 'http://oasc18015.247realmedia.com';
+		OAS_sitepage = 'www.justluxe.com/travel';
+		OAS_pos = 'Top,Middle1,Middle2,Bottom,Position1,Position2,Position3,Position4,x01,x02,x04,x10,x11,x12,x13,x31,x32,x33,x34,x35,x36,x40,x60,x61,x62,x63,Right!x11';
+		OAS_query = 'x62';
+		var OAS_pubclick = '';
+		OAS_query += '&_RM_HTML_CLICK_=' + OAS_pubclick;
+		document.write('<scr' + 'ipt type="text/javascript" src="' + OAS_url + '/RealMedia/ads/adstream_jx.ads/'
+		+ OAS_sitepage + '/1' + OAS_RNS + '@' + OAS_pos + '?' + OAS_query + '"></scr' + 'ipt>');
+	// -->
+	</script>
+	<noscript>
+		<a href="http://oascentral.site.com/RealMedia/ads/click_nx.ads/www.justluxe.com/travel/@x11?x62">
+		<img src="http://oascentral.site.com/RealMedia/ads/adstream_nx.ads/www.justluxe.com/travel/@x11?x62" border="0" />
+		</a>
+	</noscript>
+	<!-- end ad tag -->
+<!-- link 02 END-->
+
+<!-- link 03 START-->
+<!-- <br /><img src="/images/070609-feat-adv-box-bullet.jpg" /> <strong><a href="http://www.facebook.com/pages/JustLuxe-a-luxury-portal/88480315823" target="_blank">JustLuxe is on Facebook. Become a fan today. </a> </strong>
+<!-- link 03 END--> 
+
+<!-- link 04 START-->
+<!-- <br /><img src="/images/070609-feat-adv-box-bullet.jpg" /><strong><a href="http://travel.justluxe.com/?ref=dctxt" target="_blank"> Is it time to get away? Book the perfect trip now. </a> </strong> -->
+<!-- link 04 END--> 
+</td>
+      </tr>
+      <tr>
+        <td><img src="/images/070609-feat-adv-box-bot.jpg" width="298" height="7" /></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" style="padding-bottom: 30px;">
+	<!-- begin ad tag -->
+	<script type="text/javascript">
+	<!--
+		OAS_url = 'http://oasc18015.247realmedia.com';
+		OAS_sitepage = 'www.justluxe.com/travel';
+		OAS_pos = 'Top,Middle1,Middle2,Bottom,Position1,Position2,Position3,Position4,x01,x02,x04,x10,x11,x12,x13,x31,x32,x33,x34,x35,x36,x40,x60,x61,x62,x63,Right!x02';
+		OAS_query = 'x62';
+		var OAS_pubclick = '';
+		OAS_query += '&_RM_HTML_CLICK_=' + OAS_pubclick;
+		document.write('<scr' + 'ipt type="text/javascript" src="' + OAS_url + '/RealMedia/ads/adstream_jx.ads/'
+		+ OAS_sitepage + '/1' + OAS_RNS + '@' + OAS_pos + '?' + OAS_query + '"></scr' + 'ipt>');
+	// -->
+	</script>
+	<noscript>
+		<a href="http://oascentral.site.com/RealMedia/ads/click_nx.ads/www.justluxe.com/travel/@x02?x62">
+		<img src="http://oascentral.site.com/RealMedia/ads/adstream_nx.ads/www.justluxe.com/travel/@x02?x62" border="0" />
+		</a>
+	</noscript>
+	<!-- end ad tag -->
+<div class="advertisement">advertisement</div></td>
+				</tr>
+				<tr>
+					<td height="100%" valign="bottom" style="height:100%; min-height:1650px">
+						<div style="position:relative;padding-top:1050px;">
+							<div style="position:absolute;bottom:0;left:0px;">
+								
+	<!-- begin ad tag -->
+	<script type="text/javascript">
+	<!--
+		OAS_url = 'http://oasc18015.247realmedia.com';
+		OAS_sitepage = 'www.justluxe.com/travel';
+		OAS_pos = 'Top,Middle1,Middle2,Bottom,Position1,Position2,Position3,Position4,x01,x02,x04,x10,x11,x12,x13,x31,x32,x33,x34,x35,x36,x40,x60,x61,x62,x63,Right!Right';
+		OAS_query = 'x62';
+		var OAS_pubclick = '';
+		OAS_query += '&_RM_HTML_CLICK_=' + OAS_pubclick;
+		document.write('<scr' + 'ipt type="text/javascript" src="' + OAS_url + '/RealMedia/ads/adstream_jx.ads/'
+		+ OAS_sitepage + '/1' + OAS_RNS + '@' + OAS_pos + '?' + OAS_query + '"></scr' + 'ipt>');
+	// -->
+	</script>
+	<noscript>
+		<a href="http://oascentral.site.com/RealMedia/ads/click_nx.ads/www.justluxe.com/travel/@Right?x62">
+		<img src="http://oascentral.site.com/RealMedia/ads/adstream_nx.ads/www.justluxe.com/travel/@Right?x62" border="0" />
+		</a>
+	</noscript>
+	<!-- end ad tag -->
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<style type="text/css">
+<!--
+.cityguide-footer-list {
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #B6A869;
+}
+.cityguide-footer-list a{
+	color: #B6A869;
+	text-decoration: none;
+}
+.cityguide-footer-list a:visited{
+	color: #B6A869;
+	text-decoration: none;
+}
+.cityguide-footer-list a:hover{
+	color: #B6A869;
+	text-decoration: underline;
+}
+.cityguide-footer-list ul{
+	margin: 0px;
+	padding: 0px;
+}
+.cityguide-footer-list li{
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	list-style-type: none;
+	padding-bottom: 5px;
+	display: list-item;
+	float: none;
+}
+.cityguide-footer-list li a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.cityguide-footer-list li a:visited{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.cityguide-footer-list li a:hover{
+	color: #CCCCCC;
+	text-decoration: underline;
+}
+.cityguide-footer-become{
+	color: #B3D0CD;
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 15px;
+	font-weight: bold;
+}
+.cityguide-footer-become a{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 10px;
+}
+.cityguide-footer-become a:visited{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 10px;
+}
+.cityguide-footer-become a:hover{
+	color: #FFFFFF;
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 10px;
+}
+.cityguide-footer-division{
+	color: #999999;
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 15px;
+}
+.cityguide-footer-division a{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+.cityguide-footer-division a:visited{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+.cityguide-footer-division a:hover{
+	color: #FFFFFF;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.cityguide-footer-corporate {
+	color: #4E4D4D;
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 17px;
+	font-weight: bold;
+}
+.cityguide-footer-corporate a{
+	color: #CCCCCC;
+	text-decoration: none;	
+}
+.cityguide-footer-corporate a:visited{
+	color: #CCCCCC;
+	text-decoration: none;	
+}
+.cityguide-footer-corporate a:hover{
+	color: #CCCCCC;
+	text-decoration: underline;	
+}
+-->
+</style>
+<table width="950" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td align="center" bgcolor="#150E12" style="padding-top: 24px;">
+			<table width="900" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="225" valign="top">
+						<table width="225" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td height="20" align="left" class="cityguide-footer-list"><a href="http://travel.justluxe.com/luxury-travel-deals/articles-89.php">Luxury Vacations</a></td>
+							</tr>
+							<tr>
+								<td><img src="/images/081909-footer-divider.jpg" width="225" height="17"></td>
+							</tr>
+							<tr>
+								<td align="left" class="cityguide-footer-list">
+									<ul>
+										<li><a href="http://travel.justluxe.com/luxury-hotels/Europe__United-Kingdom__London/index.html">Luxury Vacations in London</a></li>
+										<li><a href="http://travel.justluxe.com/luxury-hotels/South-America__Argentina__Buenos-Aires/index.html">Luxury Vacations in Buenos Aires</a></li>
+										<li><a href="http://travel.justluxe.com/luxury-hotels/North-America__United-States_-_Northeast_-_NY__New-York/index.html">Luxury Vacations in New York</a></li>
+										<li><a href="http://travel.justluxe.com/luxury-hotels/Central-America__Costa-Rica/index.html">Luxury Vacations in Costa Rica</a></li>
+										<li><a href="http://travel.justluxe.com/luxury-hotels/Caribbean__Bahamas/index.html">Luxury Vacations in Bahamas</a></li>
+										<li><a href="http://travel.justluxe.com/luxury-hotels/North-America__Mexico__Cabo-San-Lucas/index.html">Luxury Vacations in Cabo San Lucas</a></li>
+									</ul>
+								</td>
+							</tr>
+					  </table>
+					</td>
+					<td width="225" valign="top">
+						<table width="225" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="20" align="left" class="cityguide-footer-list"><a href="http://travel.justluxe.com/">Best Luxury Hotels & Resorts</a></td>
+          </tr>
+          <tr>
+            <td><img src="/images/081909-footer-divider.jpg" width="225" height="17"></td>
+          </tr>
+          <tr>
+            <td align="left" class="cityguide-footer-list">
+				<ul>
+					<li><a href="http://travel.justluxe.com/best-hotels/Spa/index.html">The Best Spa Resorts</a></li>
+					<li><a href="http://travel.justluxe.com/best-hotels/Beach/index.html">The Best Beach Resorts</a></li>
+					<li><a href="http://travel.justluxe.com/best-hotels/Business/index.html">The Best Business Hotels</a></li>
+					<li><a href="http://travel.justluxe.com/best-hotels/Romantic/index.html">The Best Romantic Hotels</a></li>
+					<li><a href="http://travel.justluxe.com/best-hotels/Golf/index.html">The Best Golf Resorts</a></li>
+					<li><a href="http://travel.justluxe.com/best-hotels/Family-Friendly/index.html">The Best Kid-Friendly Hotels</a></li>
+				</ul>			</td>
+          </tr>
+        </table>
+					</td>
+					<td width="225" valign="top">
+						<table width="225" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+					            <td height="20" align="left" class="cityguide-footer-list">Travel Videos</td>
+							</tr>
+							<tr>
+					            <td><img src="/images/081909-footer-divider.jpg" width="225" height="17"></td>
+							</tr>
+							<tr>
+								<td align="left" class="cityguide-footer-list">
+									<ul>
+										<li><a href="/luxevideo/index.php?videoId=792518429001">Travel Video: Paris</a></li>
+										<li><a href="/luxevideo/index.php?videoId=792518212001">Travel Video: Athens</a></li>
+										<li><a href="/luxevideo/index.php?videoId=792518428001">Travel Video: Copenhagen</a></li>
+										<li><a href="/luxevideo/index.php?videoId=792518428001">Travel Video: Dublin</a></li>
+										<li><a href="/luxevideo/index.php?videoId=792518206001">Travel Video: Zurich</a></li>
+										<li><a href="/luxevideo/index.php?videoId=792518418001">Travel Video: Vienna</a></li>
+									</ul>
+								</td>
+							</tr>
+					  </table>
+					</td>
+					<td valign="top">
+						<table width="225" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+					            <td height="20" align="left" class="cityguide-footer-list"><a href="http://www.justluxe.com/">Luxury Guide</a></td>
+							</tr>
+							<tr>
+								<td><img src="/images/081909-footer-divider.jpg" width="225" height="17"></td>
+							</tr>
+							<tr>
+								<td align="left" class="cityguide-footer-become" style="padding-bottom: 15px;">Have insight on your city that you <br>
+					              want to share?<br />
+<a href="/contributor.php">Become a LuxeCityLife Contributor</a><img src="/images/081909-footer-arrow.jpg"></td>
+							</tr>
+							<tr>
+					            <td height="20" align="left" class="cityguide-footer-list"><a href="http://www.justluxe.com/">Recommended Websites</a></td>
+							</tr>
+							<tr>
+								<td align="left" class="cityguide-footer-list">
+									<ul>
+										<li style="padding-left:10px"><a href="http://www.nileguide.com/">Trip Planner</a> </li>
+                                        <li style="padding-left:10px"><a href="http://www.tripsay.com/">Trip Say</a> </li>	
+									</ul>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td><img src="/images/081909-footer-line.jpg" width="950" height="3"></td>
+	</tr>
+	<tr>
+		<td align="center" bgcolor="#000000" style="padding-top: 24px; padding-bottom: 24px;">
+			<table width="900" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+				  <td width="225" align="left" class="cityguide-footer-division">
+						JustLuxe.com is a division of<br>
+				    <a href="http://rgmgroup.com/" target="_blank">The RGM Group</a></td>
+					<td align="left" valign="top" class="cityguide-footer-corporate">
+						<a href="http://www.justluxe.com/">Luxury Guide</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/about-us.php">About Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://travel.justluxe.com/contact.php">Contact</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/newsletter-sign-up.php">Newsletter Sign Up</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/contributor.php">Write for Us</a><br>
+						<a href="/advertising/">Online Advertising</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+				        <a href="/sitemap.php">Site Map</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/archives/">Article Archive</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.justluxe.com/terms/privacy.php" onClick="window.open(this.href,'popup','width=510,height=600,scrollbars=1,menubar=0,locationbar=0'); return false;">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<img src="/images/081909-footer-rssicon.jpg" width="13" height="13" align="absmiddle"><a href="/rss/">&nbsp;RSS Feeds</a><br>
+						Content Partners: IBtimes&nbsp;&nbsp;|&nbsp;&nbsp;RedButler.<br>
+						By your continued use of this site, you agree to abide by the <a href="http://www.justluxe.com/terms/terms.php" onClick="window.open(this.href,'popup','width=510,height=600,scrollbars=1,menubar=0,locationbar=0'); return false;">Terms</a>.<br>
+						&copy; 2004 - 2010 LuxeMont.com All rights reserved. JustLuxe and LuxeVegas are entities and marks owned by LuxeMont.
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</div>	
+
+
+
+		<!-- Start Quantcast tag -->
+		<script type="text/javascript">
+		_qoptions={
+		qacct:"p-f84QAVkyDvkKQ"
+		};
+		</script>
+		<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+		<noscript>
+		<img src="http://pixel.quantserve.com/pixel/p-f84QAVkyDvkKQ.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+		</noscript>
+		<!-- End Quantcast tag -->
+
+<div style="position: absolute; top: 0px; left: 0px; display: none; width:100%; height:100%">
+	<div align="center">
+	<div>
+<div width="100%">
+
+	<!-- begin ad tag -->
+	<script type="text/javascript">
+	<!--
+		OAS_url = 'http://oasc18015.247realmedia.com';
+		OAS_sitepage = 'www.justluxe.com/travel';
+		OAS_pos = 'Top,Middle1,Middle2,Bottom,Position1,Position2,Position3,Position4,x01,x02,x04,x10,x11,x12,x13,x31,x32,x33,x34,x35,x36,x40,x60,x61,x62,x63,Right!Position1';
+		OAS_query = 'x62';
+		var OAS_pubclick = '';
+		OAS_query += '&_RM_HTML_CLICK_=' + OAS_pubclick;
+		document.write('<scr' + 'ipt type="text/javascript" src="' + OAS_url + '/RealMedia/ads/adstream_jx.ads/'
+		+ OAS_sitepage + '/1' + OAS_RNS + '@' + OAS_pos + '?' + OAS_query + '"></scr' + 'ipt>');
+	// -->
+	</script>
+	<noscript>
+		<a href="http://oascentral.site.com/RealMedia/ads/click_nx.ads/www.justluxe.com/travel/@Position1?x62">
+		<img src="http://oascentral.site.com/RealMedia/ads/adstream_nx.ads/www.justluxe.com/travel/@Position1?x62" border="0" />
+		</a>
+	</noscript>
+	<!-- end ad tag -->
+
+
+</div>
+</div>
+
+	</div>
+</div>
+
+</body>
+</html>

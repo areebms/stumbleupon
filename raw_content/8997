@@ -1,0 +1,812 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--TODO: these two lines are better- -->
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">        <!--      off sent as actual headers -->
+    <title>Spaghetti Pie Recipe - Sargento.com</title>
+    
+    <meta name="keywords" content="spaghetti pie, spaghetti pie recipe, baked spaghetti pie
+" />
+    <meta name="description" content="Try our infamous spaghetti pie recipe. Bake spaghetti with parmesan and ricotta cheese, top with tomato sauce and mozzarella. Perfect for the whole family.
+" />
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!--[if !IE]> -->
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- <![endif]-->
+    <link rel="stylesheet" href="/media/style/reset.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/media/style/base.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/media/rating/jquery.ui.stars.css" type="text/css" media="screen">
+    <!--[if IE 8]>
+        <link rel="stylesheet" href="/media/style/base.ie8.css" type="text/css" media="screen">
+    <![endif]-->
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="/media/style/base.ie7.css" type="text/css" media="screen">
+    <![endif]-->
+    
+	<link href='http://fonts.googleapis.com/css?family=UnifrakturMaguntia' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/media/style/recipes/recipe_detail.css" media="screen">
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="/media/style/recipes/recipe_detail-ie7.css" media="screen">
+	<![endif]-->
+
+    <script>
+        var loggedInUsername = null;
+        var currentAppName = "recipes";
+        var DEBUG = "" === "True";
+    </script>
+	<script src="/media/script/lib/underscore-min.js"></script>
+    <script src="/media/script/lib/jquery-1.6.1.min.js"></script>
+    <script src="/media/script/lib/jquery-ui-1.8.12.custom.min.js"></script>
+    <script src="/media/script/lib/jquery.cycle.all.min.js"></script>
+    <script src="/media/script/lib/jquery.bxSlider.min.js"></script>
+    <script src="/media/script/lib/jquery.ui.stars.js"></script>
+    <script src="/media/script/lib/jquery.tmpl.min.js"></script>
+    <script src="/media/script/lib/jquery.eselect.js"></script>
+    <script src="/media/script/lib/jquery.wrapborder.js"></script>
+    <script src="/media/script/base.js"></script>
+    <!--[if IE 7]>
+        <script src="/media/script/base-ie7.js"></script>
+    <![endif]-->
+    
+	<script type="text/javascript" src="/media/script/recipes/recipe_detail.js"></script>
+
+</head>
+<body>
+    <a name="top" id="top"></a>
+    <div id="fb-root"></div>
+    <div id="search">
+        <div id="search-back"></div>
+        <form id="search-form" method="get" action="/search/recipe/">
+	<fieldset id="search-fieldset">
+		<select id="search-type-select" name="search-type-select">
+			<option value="recipes" selected="selected">Recipes</option>
+			<option value="products">Products</option>
+			<option value="site">Search All</option>
+        </select>
+        <div id="search-term-input-wrapper">
+        	<input id="search-term-input" name="q" type="text" value="Search">
+        </div>
+        <input id="search-submit" name="search-submit" type="submit" value="Go">
+	</fieldset>
+</form>
+
+    </div>
+
+    <div id="user-panel">
+        <span id="not-logged-in-links" class="user-panel-links">
+            <a href="#register-direct">Register</a>
+            <span class="separator">|</span>
+            <a href="#log-in">Log in</a>
+        </span>
+        <span id="logged-in-links" class="user-panel-links hidden">
+            <a href="/favorites/">My Recipe Box</a>
+            <span class="separator">|</span>
+            <a href="#profile">My Profile</a>
+            <span class="separator">|</span>
+            <a href="#log-out">Logout</a>
+        </span>
+    </div>
+
+    <div id="header">
+        <div id="header-inset">
+            <a href="/"><img id="logo" src="/media/images/logo.png" alt="Sargento"></a>
+            
+            <ul id="menu-main">
+    <li class="menu-heading menu-heading-normal" id="menu_our_brand">
+        <span class="menu-dot-left">&middot;</span>&nbsp;<a href="/our-brand/">Our Brand</a>&nbsp;<span class="menu-dot-right">&middot;</span>
+        <ul id="menu-our-brand" class="left">
+            <li class="menu-item"><a href="/our-brand/generations/">A Family's Passion</a></li>
+            <li class="menu-item"><a href="/our-brand/cheese-expertise/">Cheese Expertise</a></li>
+            <li class="menu-item"><a href="/our-brand/cheese-innovations/">Innovation</a></li>
+            <li class="menu-item"><a href="/our-brand/natural-is-best/">Natural Cheese</a></li>
+        </ul>
+    </li>
+    <li class="menu-heading menu-heading-normal" id="menu_recipes">
+        <span class="menu-dot-left">&middot;</span>&nbsp;<a href="/recipes/">Recipes</a>&nbsp;<span class="menu-dot-right">&middot;</span>
+        <ul id="menu-recipes" class="left">
+            <li class="menu-item"><a href="/recipes/tag/seasonal/">Seasonal</a></li>
+            <li class="menu-item"><a href="/recipes/tag/healthy%20living/">Healthy Living</a></li>
+            <li class="menu-item"><a href="/recipes/tag/classic/">Classic Recipes</a></li>
+            <li class="menu-item"><a href="/favorites/" rel="login-required">My Recipe Box</a></li>
+        </ul>
+    </li>
+    <li class="menu-heading menu-heading-normal" id="menu_products">
+        <span class="menu-dot-left">&middot;</span>&nbsp;<a href="/products/">Products</a>&nbsp;<span class="menu-dot-right">&middot;</span>
+        <ul id="menu-products" class="left">
+            <li class="menu-item"><a href="/products/shredded/">Shredded</a></li>
+            <li class="menu-item"><a href="/products/sliced/">Sliced</a></li>
+            <li class="menu-item"><a href="/products/snacks/">Snacks</a></li>
+            <li class="menu-item"><a href="/products/other-fine-cheeses/">Other Varieties</a></li>
+            <li class="menu-item"><a href="/products/locate/">Product Locator</a></li>
+        </ul>
+    </li>
+    <li class="menu-heading menu-heading-normal" id="menu_whatsnew">
+        <span class="menu-dot-left">&middot;</span>&nbsp;<a href="/whatsnew/">What's New</a>&nbsp;<span class="menu-dot-right">&middot;</span>
+        <ul id="menu-whats-fresh" class="left">
+            <li class="menu-item"><a href="/whatsnew/category/recipes/">Recipes</a></li>
+            <li class="menu-item"><a href="/whatsnew/category/news/">Latest News</a></li>
+            <li class="menu-item"><a href="/whatsnew/category/promotions/">Promotions</a></li>
+        </ul>
+    </li>
+    <li class="menu-heading menu-heading-normal" id="menu_our_company">
+        <span class="menu-dot-left">&middot;</span>&nbsp;<a href="/our-company/">Our Company</a>&nbsp;<span class="menu-dot-right">&middot;</span>
+        <ul id="menu-our-company" class="right">
+            <li class="menu-item"><a href="/our-company/company-info/">About Us</a></li>
+            <li class="menu-item"><a href="/our-company/faq/">FAQ</a></li>
+            <li class="menu-item"><a href="/our-company/press/">Press Room</a></li>
+            <li class="menu-item"><a href="/our-company/contact-us/">Contact Us</a></li>
+        </ul>
+    </li>
+</ul>
+
+            
+        </div>
+    </div>
+    
+    
+    <div id="masthead">
+        <img src="/media/images/background-top-narrow.jpg" alt="">
+    </div>
+    
+    
+    <div class="middle-bg-shadow"></div>
+    <div id="middle">
+        <div id="middle-bg"></div>
+        
+        <div id="middle-header-container">
+            <div id="middle-header">
+                
+<h2 class="sectiontitle">Recipes</h2>
+<!-- REQUIRED JAVASCRIPT -->
+<script src="/media/script/recipes/quicklinks.js"></script>
+<!-- MAIN CODE -->
+<div id="quicklinks">
+    <div id="selections">
+        <select name="recipe_meal" id="recipe_meal" class="quicklinks-list">
+            <option value="/recipes/tag/breakfast/">Breakfast</option>
+            <option value="/recipes/tag/lunch/">Lunch</option>
+            <option value="/recipes/tag/appetizer/">Appetizer/Snack</option>
+            <option value="/recipes/tag/dinner/">Dinner</option>
+            <option value="/recipes/tag/dessert/">Dessert</option>
+        </select> 
+        <select name="recipe_cuisine" id="recipe_cuisine" class="quicklinks-list">
+            <option value="/recipes/popular/">Most Popular</option>
+            <option value="/recipes/tag/american/">American</option>
+            <option value="/recipes/tag/asian/">Asian</option>
+            <option value="/recipes/tag/classic/">Classics</option>
+            <option value="/recipes/tag/italian/">Italian</option>
+            <option value="/recipes/tag/mediterranean/">Mediterranean</option>
+            <option value="/recipes/tag/mexican/">Mexican</option>
+            <option value="/recipes/tag/southwestern/">Southwestern</option>
+        </select>
+        <select name="recipe_ingredient" id="recipe_ingredient" class="quicklinks-list">
+            <option value="/recipes/tag/beef/">Beef</option>
+            <option value="/recipes/tag/chicken/">Chicken</option>
+            <option value="/recipes/tag/fish/">Fish</option>
+            <option value="/recipes/tag/pork/">Pork</option>
+            <option value="/recipes/tag/turkey/">Turkey</option>
+            <option value="/recipes/tag/pasta/">Pasta</option>
+            <option value="/recipes/tag/pizza/">Pizza</option>
+            <option value="/recipes/tag/potato/">Potato</option>
+            <option value="/recipes/tag/rice/">Rice</option>
+            <option value="/recipes/tag/vegetables/">Vegetables</option>
+        </select>
+        <select name="recipe_cheese" id="recipe_cheese" class="quicklinks-list">
+            <option value="/recipes/tag/anejo%20enchildado/">Anejo Enchilado</option>
+            <option value="/recipes/tag/asadero/">Asadero</option>
+            <option value="/recipes/tag/asiago/">Asiago</option>
+            <option value="/recipes/tag/chipotle%20cheddar">Chipotle Cheddar</option>
+            <option value="/recipes/tag/blue/">Blue</option>
+            <option value="/recipes/tag/cheddar/">Cheddar</option>
+            <option value="/recipes/tag/colby/">Colby</option>
+            <option value="/recipes/tag/colby%20jack/">Colby Jack</option>
+            <option value="/recipes/tag/fontina/">Fontina</option>
+            <option value="/recipes/tag/gouda/">Gouda</option>
+            <option value="/recipes/tag/gruyere/">Gruy&eacute;re</option>
+            <option value="/recipes/tag/havarti/">Havarti</option>
+            <option value="/recipes/tag/jarlsberg/">Jarlsberg</option>
+            <option value="/recipes/tag/manchego/">Manchego</option>
+            <option value="/recipes/tag/monterey%20jack/">Monterey Jack</option>
+            <option value="/recipes/tag/mozzarella/">Mozzarella</option>
+            <option value="/recipes/tag/muenster/">Muenster</option>
+            <option value="/recipes/tag/parmesan/">Parmesan</option>
+            <option value="/recipes/tag/pepper%20jack/">Pepper Jack</option>
+            <option value="/recipes/tag/provolone/">Provolone</option>
+            <option value="/recipes/tag/queso%20gallego/">Queso Gallego</option>
+            <option value="/recipes/tag/queso%20quesadilla/">Queso Quesadilla</option>
+            <option value="/recipes/tag/ricotta/">Ricotta</option>
+            <option value="/recipes/tag/romano/">Romano</option>
+            <option value="/recipes/tag/swiss/">Swiss</option>
+        </select> 
+        <select name="recipe_more" id="recipe_more" class="quicklinks-list">
+            <option value="/recipes/tag/quick/">Quick</option>
+            <option value="/recipes/tag/easy/">Easy</option>
+            <option value="/recipes/tag/family%20friendly/">Family Friendly</option>
+            <option value="/recipes/tag/sandwich/">Sandwich</option>
+            <option value="/recipes/tag/wrap/">Wrap</option>
+        </select>
+    </div>
+</div>
+
+
+            </div>
+        </div>
+        
+        <div id="middle-content">
+            <div id="middle-content-bg-top-left-corner"></div>
+            <div id="middle-content-bg-top-edge"></div>
+            <div id="middle-content-bg-top-right-corner"></div>
+            <div id="middle-content-bg-left-edge"></div>
+            <div id="middle-content-bg-right-edge"></div>
+            <div id="middle-content-bg-bottom-left-corner"></div>
+            <div id="middle-content-bg-bottom-edge"></div>
+            <div id="middle-content-bg-bottom-right-corner"></div>
+            <div id="middle-content-bg"></div>
+            <div id="content">
+                
+<div id="recipes-container" itemscope itemtype="http://schema.org/Recipe">
+
+<div id="recipes-info">
+    <div id="recipe-header">
+        <h2 id="recipe-title" itemprop="name">Spaghetti Pie</h2>
+        <div id="recipe-subheader"><div>
+            <div id="rating-info">
+                <span id="recipe-rating" class="rating-disabled">
+                    <input type="radio" name="newrate" value="1" title="Poor" />
+                    <input type="radio" name="newrate" value="2" title="Fair" />
+                    <input type="radio" name="newrate" value="3" title="Neutral" />
+                    <input type="radio" name="newrate" value="4" title="Good" checked="checked" />
+                    <input type="radio" name="newrate" value="5" title="Excellent" />
+                </span>
+                &nbsp;(<a href="#reviews" title="Reviews"><span id="review-count">0</span> Reviews</a>)
+            </div>
+            <div id="recipe-numadded"><strong>1117</strong> people added this to their <a href="/favorites" rel="login-required">recipe box</a>!</div>
+        </div></div>
+    </div>
+
+    <div id="ingredients">
+
+<h2 class="subhead">INGREDIENTS</h2>
+<ul id="ingredients_col1">
+    
+        <li>6 oz. spaghetti, cooked</li>
+    
+        <li>2 Tbsp. olive oil</li>
+    
+        <li>2 eggs, well beaten</li>
+    
+        <li>3/4 cup (3 oz.) <a href="/products/34/sargento-artisan-blends-shredded-parmesan-cheese/">Sargento<span class='smaller-symbol'>®</span> Artisan Blends<span class='smaller-symbol'>®</span> Shredded Parmesan Cheese</a>, divided</li>
+    
+    </ul>
+    <ul id="ingredients_col2">
+    
+        <li>1 cup <a href="/products/85/sargento-whole-milk-ricotta-cheese/">Sargento<span class='smaller-symbol'>®</span> Whole Milk Ricotta Cheese</a></li>
+    
+        <li>1 cup pasta sauce</li>
+    
+        <li>1/2 cup (2 oz.) <a href="/products/19/sargento-chefstyle-shredded-mozzarella-cheese/">Sargento<span class='smaller-symbol'>®</span> ChefStyle Shredded Mozzarella Cheese</a></li>
+    
+</ul>
+</div>
+    <div style="clear:both">&nbsp;</div>
+    <div id="directions">
+        <h2 class="subhead">DIRECTIONS</h2>
+        <ul id="recipe-directions">
+            
+            <li><span class="direction-order">1</span><p>Toss spaghetti with olive oil in large bowl.  Stir in eggs and 1/2 cup Parmesan cheese.  Pour spaghetti mixture into greased 10-inch pie plate; form into a crust.</p></li>
+            
+            <li><span class="direction-order">2</span><p>Spoon Ricotta cheese over spaghetti crust.  Top with pasta sauce.  Bake in preheated 350°F oven 25 minutes.  Top with Mozzarella cheese.  Bake 5 minutes more or until cheese is melted.  Sprinkle with remaining Parmesan cheese.  Cool 10 minutes before cutting.</p></li>
+            
+        </ul>
+    </div>
+</div>
+
+<div id="recipe-media">
+    <img class="brown-shadow-large" height="314" width= "437" id="recipe-image" src="/media/recipe/photo/806-Spaghetti-Pie.jpg" alt="Spaghetti Pie" itemprop="image" />
+    <ul id="socialbar">
+        <li class="fb-like">
+            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.sargento.com%2Frecipes/806/spaghetti-pie/%2F&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
+        </li>
+        <li id="recipe-googleplus">
+            <g:plusone size="medium" annotation="none"></g:plusone>
+        </li>
+        <li id="recipe-tweet">
+            <a href="https://twitter.com/share" data-count="none" class="twitter-share-button" data-lang="en" data-size="medium">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+            </script>
+        </li>
+        <li id="recipe-print">
+            <a href="/recipes/806/spaghetti-pie/print/" title="Print" rel="external">
+                <img src="/media/recipe/print-icon.png" alt="Print" />
+            </a>
+        </li>
+        <li id="recipe-mail">
+            <a href="mailto:?subject=Someone is sharing a Sargento Recipe with you!&amp;body=http://www.sargento.com/recipes/806/spaghetti-pie/" title="Share via Email">
+                <img src="/media/recipe/email-icon.png" alt="Email" />
+            </a>
+        </li>
+        <li id="recipe-save">
+            
+            <a href="#log-in" title="Login and Save to Recipe Box">
+            
+            
+                <img id="add-to-favorites-icon" src="/media/recipe/save-icon.png" alt="Save">
+            
+            </a>
+        </li>
+    </ul>
+    <div id="recipe-extra">
+        <div id="recipe-summary-wrap">
+            <h2 class="subhead">SUMMARY</h2>
+            <ul id="recipe-summary" itemtype="description">
+                <li><span class="summary-item-name">Prep Time:</span> 10 minutes</li>
+                <li><span class="summary-item-name">Cook Time:</span> 30 minutes</li>
+                <li><span class="summary-item-name">Yield:</span> Serves: 6</li>
+            </ul>
+        </div>
+        <div id="recipe-tips">
+            <h2 class="subhead">HELPFUL HINTS</h2>
+            <ul>
+            
+                <li></li>
+            
+            </ul>
+        </div>
+        <div style="clear:both">&nbsp;</div>
+    </div>
+</div>
+
+<div class="divider-fill"></div>
+
+<div id="reviews-and-nutrition">
+    <div id="reviews-container">
+<div id="reviews">
+    <div id="review-section-title">
+        <h2 class="subsection">User Reviews</h2> 
+        
+            <div id="please-login"><a href="#write-review" rel="login-required" title="Review this recipe">Write Your Review</a></div>
+        
+    </div>
+    
+    
+
+        <p id="be-the-first">Be the first to <a href="#write-review" rel="login-required" title="Write a Review">write a review</a></p>
+    
+</div>
+</div>
+    <div id="recipe-nutrition">
+        <div id="nutrition-scroller">
+            <p id="nutrition-header">See Nutrition Facts</p>
+        </div>
+        <div id="nutrition-items">
+        
+            <p class="nutrition-item thick">Serves: 6</p>
+            <p class="nutrition-item thin nutrition-subhead">Amount Per Serving</p>
+            <p class="nutrition-item thick">
+                Calories 268
+            </p>
+            <!--<p id="daily-value-header" class="nutrition-subhead">
+                % Daily Value
+            </p>-->
+            <p class="nutrition-subhead thin" style="clear:both">
+                Total Fat 16.1g
+            </p>
+            <p class="indent-2 nutrition-item thin">
+                <span class="nutrtion-key">Saturated Fat</span>
+                <span class="nutrition-value">9.5g</span>
+            </p>
+            <p class="indent-2 nutrition-item  thin">
+                <span class="nutrtion-key">Trans Fat</span>
+                <span class="nutrition-value">4.7g</span>
+            </p> 
+            <p class="indent-2 nutrition-item  thin">
+                <span class="nutrtion-key">Polyunsaturated Fat</span>
+                <span class="nutrition-value">1.3g</span>
+            </p>
+            <p class="nutrition-item thin">
+                <span class="nutrtion-key">Cholesterol</span>
+                <span class="nutrition-value">105mg</span>
+            </p>
+            <p class="nutrition-item thin">
+                <span class="nutrtion-key">Sodium</span>
+                <span class="nutrition-value">515mg</span>
+            </p>
+            <p class="nutrition-item thin">
+                <span class="nutrtion-key">Carbohydrates</span>
+                <span class="nutrition-value">16mg</span>
+            </p>
+            <p class="nutrition-item thin">
+                <span class="nutrtion-key">Protein</span>
+                <span class="nutrition-value">16g</span>
+            </p>
+            <p class="nutrition-item thin">
+                <span class="nutrtion-key">Dietary Fiber</span>
+                <span class="nutrition-value">1g</span>
+            </p>
+            <p class="nutrition-item thin">
+                <span class="nutrtion-key">Vitamin A</span>
+                <span class="nutrition-value">76%</span>
+            </p>
+            <p class="nutrition-item thin">
+              <span class="nutrtion-key">Vitamin C</span>
+              <span class="nutrition-value">3%</span>
+            </p>
+            <p class="nutrition-item thin">
+                <span class="nutrtion-key">Calcium</span>
+                <span class="nutrition-value">312%</span>
+            </p>
+            <p class="nutrition-item thin">
+                <span class="nutrtion-key">Iron</span>
+                <span class="nutrition-value">1%</span>
+            </p>
+        
+            <div style="clear:both">&nbsp;</div>
+        </div>
+        <div id="scroller-close"></div>
+    </div>
+</div>
+<div style="clear:both">&nbsp;</div>
+<div id="related-container">
+    <div id="keywords-ribbon" class="ribbon-left">KEYWORDS</div>
+    <div id="keywords-container">
+        <p id="recipe-tags">
+        
+            <a href="/recipes/tag/kid-friendly to eat/" title="kid-friendly to eat">Kid-friendly to eat</a><br/>
+        
+            <a href="/recipes/tag/romano/" title="romano">Romano</a><br/>
+        
+            <a href="/recipes/tag/main dish/" title="main dish">Main dish</a><br/>
+        
+            <a href="/recipes/tag/shredded/" title="shredded">Shredded</a><br/>
+        
+            <a href="/recipes/tag/vegetarian/" title="vegetarian">Vegetarian</a><br/>
+        
+            <a href="/recipes/tag/mediterranean/" title="mediterranean">Mediterranean</a><br/>
+        
+            <a href="/recipes/tag/lunch/" title="lunch">Lunch</a><br/>
+        
+            <a href="/recipes/tag/dinner/" title="dinner">Dinner</a><br/>
+        
+            <a href="/recipes/tag/other/" title="other">Other</a><br/>
+        
+            <a href="/recipes/tag/parmesan/" title="parmesan">Parmesan</a><br/>
+        
+            <a href="/recipes/tag/pasta/" title="pasta">Pasta</a><br/>
+        
+            <a href="/recipes/tag/ricotta/" title="ricotta">Ricotta</a><br/>
+        
+            <a href="/recipes/tag/mozzarella/" title="mozzarella">Mozzarella</a><br/>
+        
+            <a href="/recipes/tag/italian/" title="italian">Italian</a><br/>
+        
+        </p>
+    </div>
+    <div class="car3">
+<div id="related-recipes-carousel" class="feature-carousel">
+    <h2>Similar Recipes</h2>
+    
+    <a class="see-all-link" href="#">See All</a>
+    
+    <div class="carousel-left"></div>
+    <ul class="carousel">
+        
+        <li>
+           <a href="/recipes/1650/bibb-salad-mexican-cheese-and-jalapeno-ranch-dressing/">
+                
+                    <img class="brown-shadow-small" src="/media/recipe/carousel/1650_Bibb-Salad-w_Mexican-Cheese.jpg" width="215" height="161" alt="Bibb Salad with Mexican Cheese and Jalapeño Ranch Dressing"/>
+                
+            </a>
+            <div class="caption">
+                <a href="/recipes/1650/bibb-salad-mexican-cheese-and-jalapeno-ranch-dressing/" title="Bibb Salad with Mexican Cheese and Jalapeño Ranch Dressing">Bibb Salad with Mexican...</a>
+            </div>
+            <ul class="rating rating-disabled">
+                <li>
+                    <input type="radio" name="newrate" value="1" title="Poor" />
+                    <input type="radio" name="newrate" value="2" title="Fair" />
+                    <input type="radio" name="newrate" value="3" title="Neutral"  />
+                    <input type="radio" name="newrate" value="4" title="Good" />
+                    <input type="radio" name="newrate" value="5" title="Excellent"  />
+                </li>
+            </ul>           
+            <div class="carousel-underline"></div>
+        </li>
+        
+        <li>
+           <a href="/recipes/1575/truffle-mac-and-cheese/">
+                
+                    <img class="brown-shadow-small" src="/media/recipe/carousel/1575_TruffleMac.jpg" width="215" height="161" alt="Truffle Mac and Cheese"/>
+                
+            </a>
+            <div class="caption">
+                <a href="/recipes/1575/truffle-mac-and-cheese/" title="Truffle Mac and Cheese">Truffle Mac and Cheese</a>
+            </div>
+            <ul class="rating rating-disabled">
+                <li>
+                    <input type="radio" name="newrate" value="1" title="Poor" />
+                    <input type="radio" name="newrate" value="2" title="Fair" />
+                    <input type="radio" name="newrate" value="3" title="Neutral"  />
+                    <input type="radio" name="newrate" value="4" title="Good" />
+                    <input type="radio" name="newrate" value="5" title="Excellent"  />
+                </li>
+            </ul>           
+            <div class="carousel-underline"></div>
+        </li>
+        
+        <li>
+           <a href="/recipes/1406/black-bean-corn-quesadillas/">
+                
+                    <img class="brown-shadow-small" src="/media/recipe/carousel/1406_BlkBeanCornQuesadilla_2.jpg" width="215" height="161" alt="Black Bean &amp; Corn Quesadillas"/>
+                
+            </a>
+            <div class="caption">
+                <a href="/recipes/1406/black-bean-corn-quesadillas/" title="Black Bean &amp; Corn Quesadillas">Black Bean &amp; Corn...</a>
+            </div>
+            <ul class="rating rating-disabled">
+                <li>
+                    <input type="radio" name="newrate" value="1" title="Poor" />
+                    <input type="radio" name="newrate" value="2" title="Fair" />
+                    <input type="radio" name="newrate" value="3" title="Neutral"  />
+                    <input type="radio" name="newrate" value="4" title="Good" />
+                    <input type="radio" name="newrate" value="5" title="Excellent" checked="checked" />
+                </li>
+            </ul>           
+            <div class="carousel-underline"></div>
+        </li>
+        
+        <li>
+           <a href="/recipes/1405/italian-bread-pudding/">
+                
+                    <img class="brown-shadow-small" src="/media/recipe/carousel/1405_ItalianBreadPudding_1.jpg" width="215" height="161" alt="Italian Bread Pudding"/>
+                
+            </a>
+            <div class="caption">
+                <a href="/recipes/1405/italian-bread-pudding/" title="Italian Bread Pudding">Italian Bread Pudding</a>
+            </div>
+            <ul class="rating rating-disabled">
+                <li>
+                    <input type="radio" name="newrate" value="1" title="Poor" />
+                    <input type="radio" name="newrate" value="2" title="Fair" />
+                    <input type="radio" name="newrate" value="3" title="Neutral"  />
+                    <input type="radio" name="newrate" value="4" title="Good" />
+                    <input type="radio" name="newrate" value="5" title="Excellent"  />
+                </li>
+            </ul>           
+            <div class="carousel-underline"></div>
+        </li>
+        
+        <li>
+           <a href="/recipes/1400/polenta-squares-with-tomato-sauce/">
+                
+                    <img class="brown-shadow-small" src="/media/recipe/carousel/1400_PolentaSquares_1.jpg" width="215" height="161" alt="Polenta Squares with Tomato Sauce"/>
+                
+            </a>
+            <div class="caption">
+                <a href="/recipes/1400/polenta-squares-with-tomato-sauce/" title="Polenta Squares with Tomato Sauce">Polenta Squares with Tomato...</a>
+            </div>
+            <ul class="rating rating-disabled">
+                <li>
+                    <input type="radio" name="newrate" value="1" title="Poor" />
+                    <input type="radio" name="newrate" value="2" title="Fair" />
+                    <input type="radio" name="newrate" value="3" title="Neutral"  />
+                    <input type="radio" name="newrate" value="4" title="Good" />
+                    <input type="radio" name="newrate" value="5" title="Excellent"  />
+                </li>
+            </ul>           
+            <div class="carousel-underline"></div>
+        </li>
+        
+        <li>
+           <a href="/recipes/1328/swisstacular-herbed-spinach-bake/">
+                
+                    <img class="brown-shadow-small" src="/media/recipe/carousel/1328-Swisstacular-Herbed-Spinach-Bake_1.jpg" width="215" height="161" alt="Swisstacular Herbed Spinach Bake"/>
+                
+            </a>
+            <div class="caption">
+                <a href="/recipes/1328/swisstacular-herbed-spinach-bake/" title="Swisstacular Herbed Spinach Bake">Swisstacular Herbed Spinach...</a>
+            </div>
+            <ul class="rating rating-disabled">
+                <li>
+                    <input type="radio" name="newrate" value="1" title="Poor" />
+                    <input type="radio" name="newrate" value="2" title="Fair" />
+                    <input type="radio" name="newrate" value="3" title="Neutral"  />
+                    <input type="radio" name="newrate" value="4" title="Good" />
+                    <input type="radio" name="newrate" value="5" title="Excellent"  />
+                </li>
+            </ul>           
+            <div class="carousel-underline"></div>
+        </li>
+        
+        <li>
+           <a href="/recipes/1304/portobello-provolone-sandwiches/">
+                
+                    <img class="brown-shadow-small" src="/media/recipe/carousel/1304-PortabellaProvSandwich_1.jpg" width="215" height="161" alt="Portobello Provolone Sandwiches"/>
+                
+            </a>
+            <div class="caption">
+                <a href="/recipes/1304/portobello-provolone-sandwiches/" title="Portobello Provolone Sandwiches">Portobello Provolone...</a>
+            </div>
+            <ul class="rating rating-disabled">
+                <li>
+                    <input type="radio" name="newrate" value="1" title="Poor" />
+                    <input type="radio" name="newrate" value="2" title="Fair" />
+                    <input type="radio" name="newrate" value="3" title="Neutral"  />
+                    <input type="radio" name="newrate" value="4" title="Good" />
+                    <input type="radio" name="newrate" value="5" title="Excellent"  />
+                </li>
+            </ul>           
+            <div class="carousel-underline"></div>
+        </li>
+        
+        <li>
+           <a href="/recipes/1276/cheese-tomato-quiche/">
+                
+                    <img class="brown-shadow-small" src="/media/recipe/carousel/1276_CheeseTomatoQuiche.jpg" width="215" height="161" alt="Cheese &amp; Tomato Quiche"/>
+                
+            </a>
+            <div class="caption">
+                <a href="/recipes/1276/cheese-tomato-quiche/" title="Cheese &amp; Tomato Quiche">Cheese &amp; Tomato Quiche</a>
+            </div>
+            <ul class="rating rating-disabled">
+                <li>
+                    <input type="radio" name="newrate" value="1" title="Poor" />
+                    <input type="radio" name="newrate" value="2" title="Fair" />
+                    <input type="radio" name="newrate" value="3" title="Neutral"  />
+                    <input type="radio" name="newrate" value="4" title="Good" />
+                    <input type="radio" name="newrate" value="5" title="Excellent"  />
+                </li>
+            </ul>           
+            <div class="carousel-underline"></div>
+        </li>
+        
+        <li>
+           <a href="/recipes/1261/mexican-egg-skillet/">
+                
+                    <img class="brown-shadow-small" src="/media/recipe/carousel/1261_MexicanEggSkillet.jpg" width="215" height="161" alt="Mexican Egg Skillet"/>
+                
+            </a>
+            <div class="caption">
+                <a href="/recipes/1261/mexican-egg-skillet/" title="Mexican Egg Skillet">Mexican Egg Skillet</a>
+            </div>
+            <ul class="rating rating-disabled">
+                <li>
+                    <input type="radio" name="newrate" value="1" title="Poor" />
+                    <input type="radio" name="newrate" value="2" title="Fair" />
+                    <input type="radio" name="newrate" value="3" title="Neutral"  />
+                    <input type="radio" name="newrate" value="4" title="Good" />
+                    <input type="radio" name="newrate" value="5" title="Excellent"  />
+                </li>
+            </ul>           
+            <div class="carousel-underline"></div>
+        </li>
+        
+        <li>
+           <a href="/recipes/1246/stuffed-eggplant/">
+                
+                    <img class="brown-shadow-small" src="/media/recipe/carousel/1246_StuffedEggplant.jpg" width="215" height="161" alt="Stuffed Eggplant"/>
+                
+            </a>
+            <div class="caption">
+                <a href="/recipes/1246/stuffed-eggplant/" title="Stuffed Eggplant">Stuffed Eggplant</a>
+            </div>
+            <ul class="rating rating-disabled">
+                <li>
+                    <input type="radio" name="newrate" value="1" title="Poor" />
+                    <input type="radio" name="newrate" value="2" title="Fair" />
+                    <input type="radio" name="newrate" value="3" title="Neutral"  />
+                    <input type="radio" name="newrate" value="4" title="Good" />
+                    <input type="radio" name="newrate" value="5" title="Excellent"  />
+                </li>
+            </ul>           
+            <div class="carousel-underline"></div>
+        </li>
+        
+    </ul>
+    <div class="carousel-right"></div>
+</div>
+ </div>
+<div>
+<div style="clear:both">&nbsp;</div>
+ <input type="hidden" id="recipe_id" value="806" />   
+
+</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="middle-bg-shadow"></div>
+    
+    <div id="footer">
+        <div class="footer-columns">
+        <div id="footer-left" class="footer-col-group">
+            <ul id="footer-left-col1" class="footer-col">
+                <li>
+                    <a class="footer-link" href="/">Home</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="/our-brand/">Our Brand</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="/recipes/">Recipes</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="/products/">Products</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="/our-company/contact-us/">Contact Us</a>
+                </li>
+            </ul>
+            <ul id="footer-left-col2" class="footer-col">
+                <li>
+                    <a class="footer-link" href="/whatsnew/">What's New</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="/our-company/">Our Company</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="/products/locate/">Product Locator</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="/sitemap/">Site Map</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="/our-company/faq/">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <div id="footer-middle" class="footer-col-group">
+            <ul id="footer-middle-supplemental" class="footer-col">
+                <li>
+                    <a class="footer-link" href="/careers/" title="Career Center">Career Center</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="/our-company/press/" title="Press Room">Press Room</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="http://www.sargentofoodservice.com/" title="Food Service Division">Food Service Division</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="http://www.sargentofoodingredients.com/" title="Food Ingredients Division">Food Ingredients Division</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="/privacy/" title="Privacy Statement">Privacy Statement</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div id="footer-right" class="footer-col-group last-child">
+            <ul id="footer-right-social" class="footer-col">
+                <li>
+                    <a class="footer-link" href="http://www.facebook.com/SargentoCheese/" title="Find us on Facebook">
+                        <img src="/media/images/fb-icon.png" id="footer-fb-icon" alt="Find us on Facebook"/> <span style="margin-top: -2px">Visit us on Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer-link" href="/rss/updates" title="Subscribe to our RSS">
+                        <img src="/media/images/footer-rss-icon.png" id="footer-rss-icon" alt="Subscribe to our RSS"/> Subscribe to our RSS</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="/compliance/" title="Compliance">Compliance</a>
+                </li>
+            </ul>
+            <p class="copyright">
+               &copy; 2012 Sargento Foods Inc
+            </p>
+        </div>
+    </div>
+    </div>
+    
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-4173233-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+</script>
+
+</body>
+</html>

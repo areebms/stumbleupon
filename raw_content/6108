@@ -1,0 +1,733 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>Around My Family Table</title>
+
+<link rel="stylesheet" href="http://www.aroundmyfamilytable.com/wp-content/themes/wedding-bells/style.css" type="text/css" media="screen" />
+<link href="http://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Around My Family Table RSS Feed" href="http://www.aroundmyfamilytable.com/feed/" />
+<link rel="pingback" href="http://www.aroundmyfamilytable.com/xmlrpc.php" />
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+var BrowserDetect = {
+init: function () {
+this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
+this.version = this.searchVersion(navigator.userAgent)|| this.searchVersion(navigator.appVersion)|| "an unknown version";
+this.OS = this.searchString(this.dataOS) || "an unknown OS";
+},
+searchString: function (data) {
+for (var i=0;i<data.length;i++)	{
+        var dataString = data[i].string;
+        var dataProp = data[i].prop;
+        this.versionSearchString = data[i].versionSearch || data[i].identity;
+        if (dataString) {if (dataString.indexOf(data[i].subString) != -1)
+                return data[i].identity;}
+        else if (dataProp){return data[i].identity;}
+}
+},
+searchVersion: function (dataString) {
+var index = dataString.indexOf(this.versionSearchString);
+if (index == -1) return;
+return parseFloat(dataString.substring(index+this.versionSearchString.length+1));
+},
+dataBrowser: [
+        {string: navigator.userAgent,subString: "Chrome",identity: "Chrome"},
+        {string: navigator.userAgent,subString: "OmniWeb",versionSearch: "OmniWeb/",identity: "OmniWeb"},
+        {string: navigator.vendor,subString: "Apple",identity: "Safari",versionSearch: "Version"},
+        {prop: window.opera,identity: "Opera"},
+        {string: navigator.vendor,subString: "iCab",identity: "iCab"},
+        {string: navigator.vendor,subString: "KDE",identity: "Konqueror"},
+        {string: navigator.userAgent,subString: "Firefox",identity: "Firefox"},
+        {string: navigator.vendor,subString: "Camino",identity: "Camino"},
+        {string: navigator.userAgent,subString: "Netscape",identity: "Netscape"},
+        {string: navigator.userAgent,subString: "MSIE",identity: "Explorer",versionSearch: "MSIE"},
+        {string: navigator.userAgent,subString: "Gecko",identity: "Mozilla",versionSearch: "rv"},
+        {string: navigator.userAgent,subString: "Mozilla",identity: "Netscape",versionSearch: "Mozilla"}],
+dataOS:[{string: navigator.platform,subString: "Win",identity: "Windows"},
+        {string: navigator.platform,subString: "Mac",identity: "Mac"},
+        {string: navigator.userAgent,subString: "iPhone",identity: "iPhone/iPod"},
+        {string: navigator.platform,subString: "Linux",identity: "Linux"}]
+};
+BrowserDetect.init();
+
+function bookMark(theurl, thetitle, browser){
+    switch(browser){
+        case "Firefox":
+            window.sidebar.addPanel(thetitle, theurl,"");
+            break;
+        case "Explorer":
+            window.external.AddFavorite( theurl, thetitle);
+            break;
+        case "Chrome":
+        case "Safari":
+        case "Opera":
+        case "Netscape":
+            switch(BrowserDetect.OS){
+            case "Windows":
+            case "Linux":
+            alert('press ctrl+D to bookmark this page');
+            break;
+            case "Mac":
+                alert('press cmd+D to bookmark this page');
+            break;
+            }
+            break;
+    }
+}
+//]]>
+</script>
+                        <style type="text/css" media="screen" >
+                                .socialwrap li.icon_text a img, .socialwrap li.iconOnly a img, .followwrap li.icon_text a img, .followwrap li.iconOnly a img{border-width:0 !important;background-color:none;}#follow.right {width:32px;position:fixed; right:0; top:100px;background-color:#878787;padding:10px 0;font-family:impact,charcoal,arial, helvetica,sans-serif;-moz-border-radius-topleft: 5px;-webkit-border-top-left-radius:5px;-moz-border-radius-bottomleft:5px;-webkit-border-bottom-left-radius:5px;border:2px solid #fff;border-right-width:0}#follow.right ul {padding:0; margin:0; list-style-type:none !important;font-size:24px;color:black;}
+#follow.right ul li {padding-bottom:10px;list-style-type:none !important;padding-left:4px;padding-right:4px}
+#follow img{border:none;}#follow.right ul li.follow {margin:0 4px;}
+#follow.right ul li.follow img {border-width:0;display:block;overflow:hidden; background:transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/impact/follow-right.png) no-repeat -0px 0px;height:79px;width:20px;}
+#follow.right ul li a {display:block;}
+#follow.right ul li.follow span, #follow ul li a span {display:none}.share {margin:0 3px 3px 0;}
+.phat span {display:inline;}
+ul.row li {float:left;list-style-type:none;}
+li.iconOnly a span.head {display:none}
+#follow.left ul.size16 li.follow{margin:0px auto !important}
+li.icon_text a {padding-left:0;margin-right:3px}
+li.text_only a {background-image:none !important;padding-left:0;}
+li.text_only a img {display:none;}
+li.icon_text a span{background-image:none !important;padding-left:0 !important; }
+li.iconOnly a span.head {display:none}
+ul.socialwrap li {margin:0 3px 3px 0 !important;}
+ul.socialwrap li a {text-decoration:none;}ul.row li {float:left;line-height:auto !important;}
+ul.row li a img {padding:0}.size16 li a,.size24 li a,.size32 li a, .size48 li a, .size60 li a {display:block}ul.socialwrap {list-style-type:none !important;margin:0; padding:0;text-indent:0 !important;}
+ul.socialwrap li {list-style-type:none !important;background-image:none;padding:0;list-style-image:none !important;}
+ul.followwrap {list-style-type:none !important;margin:0; padding:0}
+ul.followwrap li {margin-right:3px;margin-bottom:3px;list-style-type:none !important;}
+#follow.right ul.followwrap li, #follow.left ul.followwrap li {margin-right:0px;margin-bottom:0px;}
+.shareinpost {clear:both;padding-top:0px}.shareinpost ul.socialwrap {list-style-type:none !important;margin:0 !important; padding:0 !important}
+.shareinpost ul.socialwrap li {padding-left:0 !important;background-image:none !important;margin-left:0 !important;list-style-type:none !important;text-indent:0 !important}
+.socialwrap li.icon_text a img, .socialwrap li.iconOnly a img{border-width:0}ul.followrap li {list-style-type:none;list-style-image:none !important;}
+div.clean {clear:left;}
+div.display_none {display:none;}
+                        </style>
+                                                <style type="text/css" media="print" >
+                                body {background: white;font-size: 12pt;color:black;}
+ * {background-image:none;}
+ #wrapper, #content {width: auto;margin: 0 5%;padding: 0;border: 0;float: none !important;color: black;background: transparent none;}
+ a { text-decoration : underline; color : #0000ff; }
+#menu, #navigation, #navi, .menu {display:none}
+                        </style>
+                        <link rel="alternate" type="application/rss+xml" title="Around My Family Table &raquo; Feed" href="http://www.aroundmyfamilytable.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Around My Family Table &raquo; Comments Feed" href="http://www.aroundmyfamilytable.com/comments/feed/" />
+<link rel='stylesheet' id='commentluv_style-css'  href='http://www.aroundmyfamilytable.com/wp-content/plugins/commentluv/css/commentluv.css?ver=3.1.4' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.aroundmyfamilytable.com/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js?ver=3.1.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var cl_settings = {
+	name: "author",
+	url: "url",
+	comment: "comment",
+	email: "email",
+	infopanel: "on",
+	default_on: "",
+	default_on_admin: "on",
+	cl_version: "2.90.6",
+	images: "http://www.aroundmyfamilytable.com/wp-content/plugins/commentluv/images/",
+	api_url: "http://www.aroundmyfamilytable.com/wp-admin/admin-ajax.php",
+	_fetch: "9f3ca01a9e",
+	_info: "71a2e9b40c",
+	infoback: "white",
+	infotext: "black",
+	template_insert: "",
+	logged_in: "",
+	refer: "http://www.aroundmyfamilytable.com/2011/07/stuffed-peanut-butter-pops/",
+	no_url_message: "Please enter a URL and then click the CommentLuv checkbox if you want to add your last blog post",
+	no_http_message: "Please use http:// in front of your url",
+	no_url_logged_in_message: "You need to visit your profile in the dashboard and update your details with your site URL",
+	no_info_message: "No info was available or an error occured"
+};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.aroundmyfamilytable.com/wp-content/plugins/commentluv/js/commentluv.js?ver=3.1.4'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.aroundmyfamilytable.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.aroundmyfamilytable.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Around My Family Table' href='http://www.aroundmyfamilytable.com/' />
+<meta name="generator" content="WordPress 3.1.4" />
+
+<!-- Facebook Open Graph metatags added by WordPress plugin. Get it at: http://www.linksalpha.com/widgets/clickngo -->
+<meta property="og:site_name" content="Around My Family Table" />
+<meta property="og:title" content="Around My Family Table" />
+<meta property="og:url" content="http://www.aroundmyfamilytable.com" />
+<meta property="og:type" content="blog" />
+<!-- End Facebook Open Graph metatags-->
+<meta name="google-site-verification" content="TDWLc_YwdDbuZ19XIbqyFUlmsRx_qQOXCaXl0UqRq7M" /> 
+<meta name="y_key" content="e7c567a7e6b0e017" />
+<meta name="alexaVerifyID" content="VsSXORi4Wz0jaw_rn96rCsd74eg" />
+<meta name="blogcatalog" content="9BC10203126" />
+<meta property="fb:admins" content="118885818159837" />
+<script type='text/javascript' src='http://www.aroundmyfamilytable.com/wp-includes/js/tw-sack.js?ver=1.6.1'></script>
+  <script	type="text/javascript" src="http://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    google.load('friendconnect', '0.8');
+  </script>
+  <script	type="text/javascript" src="http://www.aroundmyfamilytable.com/wp-content/plugins/googlefriendconnect//googlefriendconnect.js"></script>
+  <script type="text/javascript">
+      var SITE_ID = "04946891970339427948";
+      var FC_PLUGIN_URL = "http://www.aroundmyfamilytable.com/wp-content/plugins/googlefriendconnect/";
+      var FC_LOGOUT_URL = "http://www.aroundmyfamilytable.com/wp-login.php?action=logout&amp;redirect_to=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fstuffed-peanut-butter-pops%2F&amp;_wpnonce=140c1cf763";
+      var FC_USER_ID = 0;
+      google.friendconnect.container.setParentUrl(FC_PLUGIN_URL);
+    </script>
+  
+<!-- platinum seo pack 1.3.7 -->
+<meta name="robots" content="index,follow,noodp,noydir" />
+<meta name="keywords" content="rice krispies, treats, marshmallows, edible, party, dessert, snacks, white chocolate, peanut butter cups, gluten free, lemonade stand, bake sale, giveaway, kid friendly,kids in the kitchen, cooking with kids, cheese enchiladas, mexican, supper,hop, carnival, meme, recipes, crafts, linky,diet, orange julius, hcg recipe, orange, stevia, sweetleaf, vanilla creme, beverages, smoothies,cake, cupcakes, chocolate, baking, scratch" />
+<link rel="canonical" href="http://www.aroundmyfamilytable.com/" />
+<!-- /platinum one seo pack -->
+<style type="text/css">
+#header {
+    background: url(http://www.aroundmyfamilytable.com/wp-content/themes/wedding-bells/images/default.jpg) no-repeat;
+    height: 304px;
+    width: 960px;
+}
+#header h1 a {
+    color: #2e2c6a;
+}
+</style>
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style>
+<script type="text/javascript">
+/* <![CDATA[ */
+jQuery(document).ready(function() {
+jQuery("#nav ul").css({display: "none"});
+jQuery("#nav li").hover(function(){
+		jQuery(this).find('ul:first').css({visibility: "visible",display: "none"}).show();
+		},function(){
+		jQuery(this).find('ul:first').css({visibility: "hidden"});
+		});
+});
+/* ]]> */
+</script>
+</head>
+<body class="home blog">
+
+<div id="wrapper">
+
+	<div id="shadow">
+
+	<div id="toparea">
+		<div id="header">
+
+		</div><!-- #header -->
+
+					<div id="menulist">
+				<ul id="nav">
+					<li><a href="http://www.aroundmyfamilytable.com/">Home</a></li>
+					<li class="page_item page-item-153"><a href="http://www.aroundmyfamilytable.com/about-me/" title="About Me">About Me</a></li>
+<li class="page_item page-item-151"><a href="http://www.aroundmyfamilytable.com/contact-me/" title="Contact Me">Contact Me</a></li>
+<li class="page_item page-item-149"><a href="http://www.aroundmyfamilytable.com/disclosure/" title="Disclosure">Disclosure</a></li>
+<li class="page_item page-item-1356"><a href="http://www.aroundmyfamilytable.com/hop-carnival-menu/" title="Hop &amp; Carnival Menu">Hop &#038; Carnival Menu</a></li>
+<li class="page_item page-item-150"><a href="http://www.aroundmyfamilytable.com/pr-friendly/" title="PR Friendly">PR Friendly</a></li>
+<li class="page_item page-item-1481"><a href="http://www.aroundmyfamilytable.com/winners/" title="Winners">Winners</a></li>
+				</ul>
+			</div><!-- #menulist -->
+			
+
+	</div><!-- #toparea -->
+	<div id="page-wrap">
+
+		<div id="content">
+		
+			<div class="post-wrap">
+
+			
+				
+					<div class="post-1562 post type-post status-publish format-standard hentry category-giveaway category-recipe tag-beverages tag-chocolate tag-dessert tag-giveaway tag-kids tag-party-food tag-peanut-butter tag-rice-krispies tag-snacks post" id="post-1562">
+						<h2><a href="http://www.aroundmyfamilytable.com/2011/07/stuffed-peanut-butter-pops/" rel="bookmark" title="Permanent Link to Kellogg&#8217;s Rice Krispies Challenge #2 &#8211; Favorite Summer Pastimes &amp; Stuffed Peanut Butter Pops">Kellogg&#8217;s Rice Krispies Challenge #2 &#8211; Favorite Summer Pastimes &#038; Stuffed Peanut Butter Pops</a></h2>
+							<small>July 10th, 2011 by Wendy</small>
+						
+						<div class="entry">
+							<div style="float:right;padding: 0 0 10px 10px" class="interactive_right"><script src="http://www.stumbleupon.com/hostedbadge.php?s=2&amp;r=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fstuffed-peanut-butter-pops%2F"></script></div><div style="padding-top:5px;padding-right:0px;padding-bottom:5px;padding-left:0px;;">
+											<iframe
+												style="height:25px !important; border:0px solid gray !important; overflow:hidden !important; width:550px !important;" frameborder="0" scrolling="no" allowTransparency="true"
+												src="http://www.linksalpha.com/social?blog=Around+My+Family+Table&link=http%253A%252F%252Fwww.aroundmyfamilytable.com%252F2011%252F07%252Fstuffed-peanut-butter-pops%252F&title=Kellogg%27s+Rice+Krispies+Challenge+%232+-+Favorite+Summer+Pastimes+%26+Stuffed+Peanut+Butter+Pops&desc=It%27s+that+time+again%21%21%0D%0AWe+are+SO+THRILLED+to+share+our+display+for+the+%0D%0AKellogg%E2%80%99s%E2%84%A2+Rice+Krispies%E2%84%A2+Making+Memories+Challenge.%0D%0AThis+challenges+theme+was%3A%0D%0AFAVORITE+SUMMER+PASTIMES%0D%0A%0D%0A%0D%0AWe+decid&fc=333333&fs=arial&fblname=like&fblref=facebook&fbllang=en_US&fblshow=1&fbsbutton=1&fbsctr=1&fbslang=en&fbsendbutton=0&twbutton=1&twlang=en&twmention=myfamilytable&twrelated1=myfamilytable&twrelated2=&twctr=1&lnkdshow=noshow&lnkdctr=0&buzzbutton=0&buzzlang=en&buzzctr=0&diggbutton=0&diggctr=0&stblbutton=1&stblctr=1&g1button=1&g1ctr=1&g1lang=en-US">
+											</iframe>
+										</div><div style="text-align: center;"><span style="font-size: large;">It&#8217;s that time again!!</span></div>
+<div style="text-align: center;"><span style="font-size: large;">We are <strong>SO THRILLED </strong>to share our display for the </span></div>
+<div style="text-align: center;"><span style="font-size: large;">Kellogg’s™ Rice Krispies™ Making Memories Challenge.</span><br />
+<span style="font-size: large;">This challenges theme was:</span><br />
+<strong><span style="font-size: large;">FAVORITE SUMMER PASTIMES</span></strong><br />
+<span style="font-size: large;"><br />
+</span></div>
+<div style="text-align: center;"><span style="font-size: large;">We decided that one of our fondest Summer Memories was having a <strong>Lemonade Stand and Bake Sale. </strong></span><br />
+<a style="margin-left: 1em; margin-right: 1em;" href="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/1-Wide_Shot_RC.jpg"><img src="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/1-Wide_Shot_RC.jpg" border="0" alt="" width="407" height="619" /></a><span style="font-size: large;"> </span></div>
+<div style="text-align: center;"><span style="font-size: small;"> <span style="font-size: large;">{We built this beauty from scratch!}</span></span></div>
+<div style="text-align: center;"><span style="font-size: large;"><br />
+</span></div>
+<div style="text-align: center;"><span style="font-size: large;">What kid hasn&#8217;t done one and loved it, right?! </span></div>
+<div style="text-align: center;"><span style="font-size: large;">For our main recipe we were thrilled to come up with</span><br />
+<span style="font-size: large;">something not only  <strong> </strong></span><br />
+<span style="font-size: large;"><strong>ORIGINAL</strong> and<strong> KID-FRIENDLY</strong> (it&#8217;s on a stick!) </span><br />
+<span style="font-size: large;">but something <strong>SUPER YUMMY!</strong></span></div>
+<div style="text-align: center;"><span style="font-size: large;"><a style="margin-left: 1em; margin-right: 1em;" href="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/5-Pops_RC.jpg"></a><a href="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/5-Pops_RC.jpg"><img class="size-medium wp-image-1578" title="5-Pops_RC" src="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/5-Pops_RC-300x201.jpg" alt="" width="350" height="235" /></a><br />
+</span></div>
+<div style="text-align: center;"><span style="font-size: large;">What&#8217;s great about goodies on a stick is it really minimizes the mess, which is always a <strong>BONUS!</strong></span></div>
+<div style="text-align: center;"><span style="font-size: large;"> </span><br />
+<a href="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/2-Inside_Pop_RC.jpg"><img class="size-medium wp-image-1576" title="2-Inside_Pop_RC" src="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/2-Inside_Pop_RC-300x225.jpg" alt="" width="365" height="274" /></a></div>
+<div style="text-align: center;"><span style="font-size: large;"> </span><span style="font-size: large;">And speaking of bonuses, check out the yummy-ness </span><br />
+<span style="font-size: large;"><strong>INSIDE</strong> our treat! </span><br />
+<span style="font-size: large;">They are stuffed with white chocolate peanut butter cups!!</span><br />
+<span style="font-size: large;">Here&#8217;s how you can make these </span><br />
+<span style="font-size: large;"><strong>UNIQUE</strong> and <strong>DELISH</strong> Pops as well&#8230; </span><br />
+<span style="font-size: large;"><a style="margin-left: 1em; margin-right: 1em;" href="http://2.bp.blogspot.com/-HxniN2a_3pk/TgywqrtXVSI/AAAAAAAAEuY/8cUYxTV2eM4/s1600/2-Inside+Pop.jpg"><br />
+</a></span></div>
+<div style="text-align: center;"><span style="font-size: large;"><strong>Rice Krispies Stuffed Peanut Butter Pops</strong></span><br />
+<span style="font-size: large;"><span style="font-style: italic;">yields: approximately 24 pops</span>&nbsp;</p>
+<div style="text-align: center;"><span style="font-size: large;">1 cup light corn syrup</span><span style="font-size: large;"> </span></div>
+<div style="text-align: center;"><span style="font-size: large;">7 cups Kelloggs Rice Krispies</span> <span style="font-size: large;"> </span></div>
+<div style="text-align: center;"><span style="font-size: large;">1 1/4 cups sugar</span> <span style="font-size: large;"> </span></div>
+<div style="text-align: center;"><span style="font-size: large;">1 cup peanut butter</span> <span style="font-size: large;"> </span></div>
+<div style="text-align: center;"><span style="font-size: large;">white chocolate peanut butter cups</span> <span style="font-size: large;"> </span></div>
+<div style="text-align: center;"><span style="font-size: large;">white chocolate almond bark</span> <span style="font-size: large;"> </span></div>
+<div style="text-align: center;"><span style="font-size: large;">24-30 long lollipop sticks</span></div>
+<div style="text-align: center;"><span style="font-size: large;"><br />
+</span></div>
+<div style="text-align: center;"><span style="font-size: large;">Pour Kelloggs Rice Krispies into a large bowl.  Bring peanut butter, sugar and corn syrup to a boil on medium heat. Pour mixture over Rice Krispies and stir making sure all cereal is lightly coated. Let cool for 10-15 minutes.</span>&nbsp;</p>
+<p><span style="font-size: large;"> </span></p>
+</div>
+<div style="text-align: center;"><span style="font-size: large;">Let your kids grab a handful of Rice Krispies mixture and add a peanut butter cup to the center and roll into a ball.</span> <span style="font-size: large;">Insert stick to the center of the ball and press around. Do the same for all pops.</span></div>
+<div style="text-align: center;"><span style="font-size: large;"><br />
+</span></div>
+<div style="text-align: center;"><span style="font-size: large;">Melt white chocolate bark in a pan on low heat stirring constantly.</span> <span style="font-size: large;">Drizzle white chocolate over the pops and let cool.</span></div>
+<p><span style="font-size: large;"><br />
+</span></p>
+<div style="text-align: center;"><span style="font-size: large;">It was SO much fun to join forces in building a lemonade stand and creating all sorts of  <strong>YUMMY </strong>Rice Krispies goodies for the table.</span></div>
+<div style="text-align: center;"><span style="font-size: large;"> </span><a href="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/4-Treats_RC.jpg"><img class="size-medium wp-image-1577" title="4-Treats_RC" src="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/4-Treats_RC-300x201.jpg" alt="" width="376" height="252" /></a></div>
+<div style="text-align: center;"><span id="formatbar_Buttons" style="display: block; font-size: large;"><span id="formatbar_JustifyCenter" class="down" style="display: block;" title="Align Center"><br />
+</span></span></div>
+<div style="text-align: center;"><span style="font-size: large;"><span class="st">•</span></span><span style="font-size: large;">Carnival Lemonade </span><span style="font-size: large;"> </span><br />
+<span style="font-size: large;"><span class="st">•</span></span><span style="font-size: large;">Rice Krispies Treats</span><br />
+<span style="font-size: large;"><span class="st">•</span></span><span style="font-size: large;">Chocolate Scotcharoos</span><br />
+<span style="font-size: large;"><span class="st">•</span></span><span style="font-size: large;">Rice Krispies Pinwheels</span><br />
+<span style="font-size: large;"><span class="st">•</span></span><span style="font-size: large;">Gluten Free Lemon Bars </span><span style="font-size: large;"> </span><br />
+<span style="font-size: large;"><span class="st">•</span></span><span style="font-size: large;">Rice Krispies Ice Cream Cones</span><br />
+<span style="font-size: large;"><span class="st"><br />
+</span></span><span style="font-size: large;"> </span><br />
+<span style="font-size: large;">Each  member of our team has agreed to share detailed instructions on how to  make all of the projects on the stand. Stay tuned to all of our  blogs over the next week and a half so you can learn how to create the ultimate Lemonade Stand and Bake Sale too!</span></div>
+<div style="text-align: center;"><span style="font-size: large;"><br />
+</span></div>
+<div style="text-align: center;"><span style="text-decoration: underline;"><strong><span style="font-size: large;">Ashley @ </span><span style="font-size: large;"><a href="http://cuteasafox.com/">Cute as a Fox</a>: </span></strong></span><br />
+<span style="font-size: large;">Rice Krispies Ice Cream Cone Treats{7/13}</span></div>
+<div style="text-align: center;"><span style="font-size: large;">Rice Krispies Pinwheels {7/18}</span></div>
+<div style="text-align: center;"><span style="font-size: large;"><br />
+</span></div>
+<div style="text-align: center;"><strong><span style="font-size: large;"><span style="text-decoration: underline;">Jax @ <a href="http://alyandash.com/">Aly &amp; Ash</a></span>:</span></strong><br />
+<span style="font-size: large;">FREE Printable Price Tags </span><span style="font-size: large;">{7/14}</span><strong><span style="font-size: large;"><br />
+</span></strong><span style="font-size: large;">Gluten Free Rice Krispies Lemon Squares {7/20}</span><span style="font-size: large;"><br />
+</span><br />
+<span style="text-decoration: underline;"><strong><span style="font-size: large;">Kristyn @<a href="http://lilluna.com/"> Lil&#8217; Luna</a>:</span></strong></span><br />
+<span style="font-size: large;">Lemonade Stand {7/19}</span></div>
+<p><span style="font-size: large;"> </span></p>
+<div style="text-align: center;"><strong><span style="font-size: large;"><span style="text-decoration: underline;">Me @ <a href="http://aroundmyfamilytable.com/">Around My Family Table</a></span>:</span></strong><br />
+<span style="font-size: large;">Carnival Lemonade {7/13}</span><br />
+<span style="font-size: large;">Chocolate Scotcharoos and Rice Krispies Treats {7/15}</span></div>
+<div style="text-align: center;"><span style="font-size: large;">Gluten Free Rice Krispies Lemon Squares {7/20}<br />
+</span></div>
+<p>&nbsp;</p>
+<div style="text-align: center;"><span style="font-size: large;">And I&#8217;m sure you haven&#8217;t forgotten, but just in case you have&#8230;<br />
+</span></div>
+<div style="text-align: center;"><span style="font-size: large;"> We get to give away <strong>$100</strong> to one <strong>LUCKY READER </strong>as a part of this challenge!<strong><br />
+</strong></span><br />
+<span style="font-size: large;"><br />
+</span><br />
+<span style="font-size: large;">Who wouldn&#8217;t want <strong>ONE HUNDRED BUCKS!?</strong></span></div>
+<div style="text-align: center;"><span style="font-size: large;"><strong> </strong><br />
+<strong>MANDATORY ENTRY:</strong></span></div>
+<div style="text-align: center;"><strong><span style="font-size: large;"><span style="color: #ff0000;">Like AMFT on</span> <a href="http://www.facebook.com/aroundmyfamilytable" target="_blank">Facebook</a></span></strong></div>
+<div style="text-align: center;">{And don&#8217;t forget to leave your email addy too!}</div>
+<div style="text-align: center;"><span style="font-size: large;">-1 entry-</span></div>
+<div style="text-align: center;"><span style="font-size: large;"><br />
+</span></div>
+<div style="text-align: center;"><span style="font-size: large;"><strong>ADDITIONAL ENTRIES:</strong><br />
+<span style="color: #ff0000;">1. Like Kellogg&#8217;s Rice Krispies on Facebook</span><span style="font-weight: bold;"> </span><a style="font-weight: bold;" href="http://www.facebook.com/ricekrispies?ref=ts&amp;sk=wall">HERE.</a><br />
+-1 entry-</span></div>
+<div style="text-align: center;"><span style="font-size: large;"><br />
+</span></div>
+<div style="text-align: center;"><span style="font-size: large; color: #ff0000;">2. <strong>VOTE</strong> for Team PHX by Liking Kellogg&#8217;s Rice Krispies on Facebook and then <strong>LIKING</strong> our team&#8217;s pictures.</span><br />
+<span style="font-size: large;">-1 entry/vote for a total of 4 entries-</span><br />
+<span style="font-size: large;"><br />
+</span><span style="font-size: large;"><span style="font-weight: bold;"> </span></span></div>
+<div style="text-align: center;"><span style="font-size: large;"><br />
+</span></div>
+<div style="text-align: center;"><span style="font-size: large;"> <span style="font-weight: bold;"><span style="color: #ff0000;">3. Follow me on Twitter {</span><a href="twitter.com/myfamilytable" target="_blank" class="broken_link">@myfamilytable</a><span style="color: #ff0000;">}</span></span></span></div>
+<div style="text-align: center;">{Already do? Just remind me!}<br />
+<span style="font-size: large;"> -1 entry-</span></div>
+<div style="text-align: center;"><span style="font-size: large;"><br />
+<span style="font-weight: bold;"> </span></span><br />
+<span style="font-size: large;"><span style="font-weight: bold; color: #ff0000;">4. Follow my Blog with GFC/RSS.</span><br />
+</span>{Already do? Just remind me!}<br />
+<span style="font-size: large;"> -1 entry-</span></div>
+<div style="text-align: center;"><span style="font-size: large;"><br />
+<span style="font-weight: bold;"> </span></span><br />
+<span style="font-size: large; color: #ff0000;"><span style="font-weight: bold;">5. Subscribe to my Feeds by entering your email on my side bar</span></span><br />
+<span style="font-size: large;">-1 entry-</span></div>
+<div style="text-align: center;"><span style="font-size: large;"> <span style="font-weight: bold;"> </span></span><br />
+<span style="font-size: large;"><span style="font-weight: bold; color: #ff0000;">6. Twitter, Facebook or Blog about this Giveaway.</span><br />
+(#win $100gc with #ricekrispies and @myfamilytable.  ends 7/20 </span>http://bit.ly/q6oEAX<span style="font-size: large;">)</span></div>
+<div style="text-align: center;"><span style="font-size: large;">-1 entry-</span></div>
+<div style="text-align: center;"><span style="font-size: large;"><br />
+</span><br />
+<span style="font-size: large;"> </span><span style="font-size: large;"> </span><span style="font-size: large;"><span style="font-weight: bold;"><span style="color: #ff0000;">7. Vote for AMFT on</span> <a href="http://www.babble.com/best-recipes/dinner/top-100-food-mom-blog-2011-nominate-a-food-blog/" target="_blank">Babble</a></span></span></div>
+<div style="text-align: center;"><span style="font-size: large;">(search for Around My Family Table alphabetically or it should be on the landing page near the middle, click &#8220;I Like This&#8221; to register your vote)</span></div>
+<div style="text-align: center;"><span style="font-size: large;">-1 entry-</span><br />
+<span style="font-size: large;"> </span><span style="font-size: large;"><br />
+**Please leave a separate comment for each entry along with your<br />
+corresponding username/link to post.**<br />
+Each person on my team will also be giving away $100,<br />
+so be sure to check out their blogs for more chances to win.<br />
+</span><br />
+<span style="font-size: large;"> </span><br />
+<span style="font-size: large;">{Ashley &#8211; <a href="http://cuteasafox.com/" target="_blank"><span style="font-weight: bold;">Cute as a Fox</span></a>}<br />
+{Jacqui &#8211; <a href="http://alyandash.com/" target="_blank"><span style="font-weight: bold;">Aly &amp; Ash</span></a>}<br />
+{Kristyn- <a href="http://lilluna.com/" target="_blank"><strong>Lil&#8217; Luna</strong></a>}<br />
+<strong><br />
+Giveaway ends at 9 PM on July 20th.</strong><br />
+Winner will be announced on my FB Page on July 21st.</span><br />
+<span style="font-size: large;">In the meantime, you can head over to the</span><br />
+<span style="font-size: large;"><a href="http://www.themotherhood.com/circle/show/id/61764">Rice Krispies Making Memories Circle on The Motherhood</a> </span><br />
+<span style="font-size: large;">on Thursday, July 14th at 1 PM ET where there will be a special LIVE chat with all the different teams and a Kellogg&#8217;s Dietitian. </span><br />
+<span style="font-size: large;"><br />
+</span></div>
+<div style="text-align: center;">
+<p>&nbsp;</p>
+<div style="text-align: center;"><span style="font-size: large;">Our whole team hopes that you are inspired to get in the kitchen with your kids and start making memories!</span><br />
+<span style="font-size: large;"><span style="font-weight: bold;">GOOD LUCK!</span></span><span style="font-size: large;"> </span></div>
+<p><span style="font-size: large;"><a href="http://2.bp.blogspot.com/-JdiozmltD98/TZjFciqBCXI/AAAAAAAAEDg/bFhwG5Jn0_I/s1600/logo_rk.gif"><img id="BLOGGER_PHOTO_ID_5591436031510514034" style="display: block; height: 124px; margin: 0px auto 10px; text-align: center; width: 203px;" src="http://2.bp.blogspot.com/-JdiozmltD98/TZjFciqBCXI/AAAAAAAAEDg/bFhwG5Jn0_I/s400/logo_rk.gif" border="0" alt="" /></a></span><span style="font-size: large;"><span style="color: #333333;"><span style="font-size: x-small;"><span style="font-family: Georgia,serif;">Abbreviated Rules. No Purchase Necessary. Begins no earlier than 12:00:00 AM (ET) on 6/14/11 and ends no later than 11:59:59 PM (ET) on 7/26/11.  For complete Official Rules, go to http://web.mediacdt.com/docs/RKGiveawaySummer.pdf. Open to legal residents of the fifty (50) United States and District of Columbia who are 18 years of age or older at time of entry. Subject to complete Official Rules. Void where prohibited. Sponsor: The Motherhood; www.TheMotherhood.com. </span></span></span><span style="font-size: x-small;"><span style="border-collapse: separate; color: black; font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"> </span></span><br />
+<span style="font-weight: bold;"><br />
+</span></span></p>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p></span></div>
+<div class="linkwithin_hook" id="http://www.aroundmyfamilytable.com/2011/07/stuffed-peanut-butter-pops/"></div><div class='shareinpost'><ul class="socialwrap row"><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://delicious.com/post?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fstuffed-peanut-butter-pops%2F&amp;title=Kellogg%E2%80%99s+Rice+Krispies+Challenge+%232+%E2%80%93+Favorite+Summer+Pastimes+and+Stuffed+Peanut+Butter+Pops" title="Bookmark this post : Kellogg&#8217;s Rice Krispies Challenge #2 &#8211; Favorite Summer Pastimes &#038; Stuffed Peanut Butter Pops on Delicious" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-102px 0px" class="image-16" width="16" alt="delicious"/> <span class="head">Bookmark on Delicious</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://digg.com/submit?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fstuffed-peanut-butter-pops%2F&amp;title=Kellogg%E2%80%99s+Rice+Krispies+Challenge+%232+%E2%80%93+Favorite+Summer+Pastimes+and+Stuffed+Peanut+Butter+Pops&amp;bodytext=It%27s+that+time+again%21%21%0D%0AWe+are+SO+THRILLED+to+share+our+display+for+the+%0D%0AKellogg%E2%80%99s%E2%84%A2+Rice+Krispies%E2%84%A2+Making+Memories+Challenge.%0D%0AThis+challenges+theme+was%3A%0D%0AFAVORITE+SUMMER+PASTIMES%0D%0A%0D%0A%0D%0AWe+decided+that+one+of+our+fondest+Summer+Memories+was+having+a+Lemonade+Stand+and+Bake+Sale.+%0D%0A+%0D%0A+%7BWe+built+this+beauty+from+s" title="Digg this post : Kellogg&#8217;s Rice Krispies Challenge #2 &#8211; Favorite Summer Pastimes &#038; Stuffed Peanut Butter Pops" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-136px 0px" class="image-16" width="16" alt="digg"/> <span class="head">Digg this post</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fstuffed-peanut-butter-pops%2F&amp;t=Kellogg%E2%80%99s+Rice+Krispies+Challenge+%232+%E2%80%93+Favorite+Summer+Pastimes+and+Stuffed+Peanut+Butter+Pops" title="Recommend this post : Kellogg&#8217;s Rice Krispies Challenge #2 &#8211; Favorite Summer Pastimes &#038; Stuffed Peanut Butter Pops on Facebook" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-187px 0px" class="image-16" width="16" alt="facebook"/> <span class="head">Recommend on Facebook</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fstuffed-peanut-butter-pops%2F&amp;title=Kellogg%E2%80%99s+Rice+Krispies+Challenge+%232+%E2%80%93+Favorite+Summer+Pastimes+and+Stuffed+Peanut+Butter+Pops" title="Share this post : Kellogg&#8217;s Rice Krispies Challenge #2 &#8211; Favorite Summer Pastimes &#038; Stuffed Peanut Butter Pops with Stumblers" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-833px 0px" class="image-16" width="16" alt="stumble"/> <span class="head">Share with Stumblers</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.tumblr.com/share?v=3&amp;u=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fstuffed-peanut-butter-pops%2F&amp;t=Kellogg%E2%80%99s+Rice+Krispies+Challenge+%232+%E2%80%93+Favorite+Summer+Pastimes+and+Stuffed+Peanut+Butter+Pops" title="Tumblr. this post : Kellogg&#8217;s Rice Krispies Challenge #2 &#8211; Favorite Summer Pastimes &#038; Stuffed Peanut Butter Pops " ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-884px 0px" class="image-16" width="16" alt="tumblr"/> <span class="head">Tumblr it</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://twitter.com/home/?status=Kellogg%E2%80%99s+Rice+Krispies+Challenge+%232+%E2%80%93+Favorite+Summer+Pastimes+and+Stuffed+Peanut+Butter+Pops+-+http%3A%2F%2Fbit.ly%2FqmnJev VIA+%40myfamilytable" title="Tweet this post : Kellogg&#8217;s Rice Krispies Challenge #2 &#8211; Favorite Summer Pastimes &#038; Stuffed Peanut Butter Pops on Twitter" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-901px 0px" class="image-16"  width="16"  alt="twitter"/> <span class="head">Tweet about it</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://buzz.yahoo.com/buzz?targetUrl=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fstuffed-peanut-butter-pops%2F" title="Buzz up this post : Kellogg&#8217;s Rice Krispies Challenge #2 &#8211; Favorite Summer Pastimes &#038; Stuffed Peanut Butter Pops " ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-1020px 0px" class="image-16" width="16" alt="yahoo_buzz"/> <span class="head">Buzz it up</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.print();" title="Print this post : Kellogg&#8217;s Rice Krispies Challenge #2 &#8211; Favorite Summer Pastimes &#038; Stuffed Peanut Butter Pops for reading later" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-714px 0px" class="image-16" width="16" alt="print"/> <span class="head">Print for later</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.bookMark('http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fstuffed-peanut-butter-pops%2F', 'Kellogg%E2%80%99s+Rice+Krispies+Challenge+%232+%E2%80%93+Favorite+Summer+Pastimes+and+Stuffed+Peanut+Butter+Pops', BrowserDetect.browser);" title="Bookmark this post : Kellogg&#8217;s Rice Krispies Challenge #2 &#8211; Favorite Summer Pastimes &#038; Stuffed Peanut Butter Pops" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-51px 0px" class="image-16" width="16" alt="bookmark"/> <span class="head">Bookmark in Browser</span></a></li><li class="iconOnly"><a rel="_self" href="mailto:?subject=Around%20My%20Family%20Table%20:%20Kellogg&#8217;s%20Rice%20Krispies%20Challenge%20#2%20&#8211;%20Favorite%20Summer%20Pastimes%20&#038;%20Stuffed%20Peanut%20Butter%20Pops&amp;body=Here%20is%20a%20link%20to%20a%20site%20I%20really%20like.%20%20%20http://www.aroundmyfamilytable.com/2011/07/stuffed-peanut-butter-pops/" title="Tell a friend about this post : Kellogg&#8217;s Rice Krispies Challenge #2 &#8211; Favorite Summer Pastimes &#038; Stuffed Peanut Butter Pops "><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16"  width="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-170px 0px" class="image-16"  alt="email" /> <span class="head">Tell a friend</span></a></li></ul><div class="clean"></div> </div><div style="padding: 10px 0 "  class="interactive_bottom"><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fstuffed-peanut-butter-pops%2F&amp;text=Kellogg&#8217;s Rice Krispies Challenge #2 &#8211; Favorite Summer Pastimes &#038; Stuffed Peanut Butter Pops&amp;count=none&amp;lang=&amp;via=myfamilytable  " style="width:0px; height:31px;"></iframe><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fstuffed-peanut-butter-pops%2F&amp;layout=standard&amp;show_faces=false&amp;width=0&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=31" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:0px; height:31px;" allowTransparency="true"></iframe></div>						</div>		
+			
+						<p class="postmetadata"><a href="http://www.aroundmyfamilytable.com/2011/07/stuffed-peanut-butter-pops/#comments" title="Comment on Kellogg&#8217;s Rice Krispies Challenge #2 &#8211; Favorite Summer Pastimes &amp; Stuffed Peanut Butter Pops">3 Comments</a> / Tags: <a href="http://www.aroundmyfamilytable.com/tag/beverages/" rel="tag">beverages</a>, <a href="http://www.aroundmyfamilytable.com/tag/chocolate/" rel="tag">chocolate</a>, <a href="http://www.aroundmyfamilytable.com/tag/dessert/" rel="tag">dessert</a>, <a href="http://www.aroundmyfamilytable.com/tag/giveaway/" rel="tag">giveaway</a>, <a href="http://www.aroundmyfamilytable.com/tag/kids/" rel="tag">kids</a>, <a href="http://www.aroundmyfamilytable.com/tag/party-food/" rel="tag">party food</a>, <a href="http://www.aroundmyfamilytable.com/tag/peanut-butter/" rel="tag">peanut butter</a>, <a href="http://www.aroundmyfamilytable.com/tag/rice-krispies/" rel="tag">rice krispies</a>, <a href="http://www.aroundmyfamilytable.com/tag/snacks/" rel="tag">snacks</a> /  Posted in <a href="http://www.aroundmyfamilytable.com/category/giveaway/" title="View all posts in giveaway" rel="category tag">giveaway</a>, <a href="http://www.aroundmyfamilytable.com/category/recipe/" title="View all posts in recipe" rel="category tag">recipe</a> </p>	
+					</div>
+					
+
+				
+					<div class="post-1597 post type-post status-publish format-standard hentry category-kids category-recipe tag-cheese tag-kids tag-kitk tag-mexican tag-supper post" id="post-1597">
+						<h2><a href="http://www.aroundmyfamilytable.com/2011/07/kids-in-the-kitchen-easy-cheese-enchiladas/" rel="bookmark" title="Permanent Link to Kids in the Kitchen: Easy Cheese Enchiladas">Kids in the Kitchen: Easy Cheese Enchiladas</a></h2>
+							<small>July 8th, 2011 by Wendy</small>
+						
+						<div class="entry">
+							<div style="float:right;padding: 0 0 10px 10px" class="interactive_right"><script src="http://www.stumbleupon.com/hostedbadge.php?s=2&amp;r=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fkids-in-the-kitchen-easy-cheese-enchiladas%2F"></script></div><div style="padding-top:5px;padding-right:0px;padding-bottom:5px;padding-left:0px;;">
+											<iframe
+												style="height:25px !important; border:0px solid gray !important; overflow:hidden !important; width:550px !important;" frameborder="0" scrolling="no" allowTransparency="true"
+												src="http://www.linksalpha.com/social?blog=Around+My+Family+Table&link=http%253A%252F%252Fwww.aroundmyfamilytable.com%252F2011%252F07%252Fkids-in-the-kitchen-easy-cheese-enchiladas%252F&title=Kids+in+the+Kitchen%3A+Easy+Cheese+Enchiladas&desc=I+can%27t+believe+I+didn%27t+realize+that+last+Friday+was+really+the+1st+Friday+of+the+month.+%C2%A0I+got+so+excited+to+share+our+4th+of+July+picnic+with+y%27all+that+I+just+totally+spaced+this.%0D%0A%0D%0AThis+month%27s&fc=333333&fs=arial&fblname=like&fblref=facebook&fbllang=en_US&fblshow=1&fbsbutton=1&fbsctr=1&fbslang=en&fbsendbutton=0&twbutton=1&twlang=en&twmention=myfamilytable&twrelated1=myfamilytable&twrelated2=&twctr=1&lnkdshow=noshow&lnkdctr=0&buzzbutton=0&buzzlang=en&buzzctr=0&diggbutton=0&diggctr=0&stblbutton=1&stblctr=1&g1button=1&g1ctr=1&g1lang=en-US">
+											</iframe>
+										</div><p>I can&#8217;t believe I didn&#8217;t realize that last Friday was really the 1st Friday of the month.  I got so excited to share our 4th of July picnic with y&#8217;all that I just totally spaced this.</p>
+<p><a href="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/Kids_in_the_kitchen.jpg"><img class="alignleft size-full wp-image-1598" title="Kids_in_the_kitchen" src="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/Kids_in_the_kitchen.jpg" alt="" width="300" height="300" /></a>This month&#8217;s KITK is from my sister.  She is an awesome cook and is teaching her children well.  Isaac, who recently turned 7, actually makes these enchiladas all by himself.  I wish my daughter was at this stage, but she  has a few more lessons in the kitchen before she can do this all by herself.</p>
+<p>Want to feature your family and a family recipe?  Send me an email to schedule a time&#8230;.aroundmyfamilytable (at) gmail (dot) com.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/Issac1.jpg"><img class="alignnone size-medium wp-image-1599" title="Issac1" src="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/Issac1-225x300.jpg" alt="" width="158" height="210" /></a><a href="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/Issac2.jpg"><img class="alignnone size-medium wp-image-1600" title="Issac2" src="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/Issac2-225x300.jpg" alt="" width="158" height="210" /></a><a href="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/Issac5.jpg"><img class="alignnone size-medium wp-image-1601" title="Issac5" src="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/Issac5-225x300.jpg" alt="" width="158" height="210" /></a></p>
+<h2 style="text-align: center;"><strong>Easy Cheese Enchiladas</strong></h2>
+<p style="text-align: center;">10 corn tortillas<br />
+1 lb ground turkey, beef, or left over chicken<br />
+shredded cheese<br />
+1 large can (19 oz) enchilada sauce (or 2 small)<br />
+dehydrated onion<br />
+green chiles (opt)</p>
+<p style="text-align: center;">Brown  the turkey with a handful of dehydrated onion and green chilies.  Mix  in half of the enchilada sauce.  Cut 3 torillas in half and line flat  edges on the sides of a casserole.  Fill in the center with 2 more  tortillas and spread the meat mixture on top.  Add as much shredded  cheese as you&#8217;d like. Add the remaining tortillas in the same  configuration with 3 cut in half lining the sides and 2 filling in the  center.  Spread the remaining sauce on top covering the toritalls  completely and top with a little extra cheese.  Bake for about 30  minutes at 350 or until cheese in completely melted.</p>
+<p style="text-align: center;"><img class="size-medium wp-image-1602 alignnone" title="Issac6" src="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/Issac6-225x300.jpg" alt="" width="190" height="252" /></p>
+<p style="text-align: center;"><em><strong>Teachable Moments:</strong> oven/stove safety, hygiene, knife skills, creativity </em></p>
+<p style="text-align: center;"><strong><em>Kids in the Kitchen is a monthly feature on the first Friday of the Month.<br />
+Want to check out the previous KITK posts?</em></strong></p>
+<p style="text-align: center;"><em><a href="http://www.aroundmyfamilytable.com/2011/04/kids-in-the-kitchen/">BBQ Chicken Bites</a><br />
+<a href="http://www.aroundmyfamilytable.com/2011/05/kids-in-the-kitchen-canning-jam/">Canning Jam</a><br />
+<a href="http://www.aroundmyfamilytable.com/2011/03/our-traditional-st-paddys-day-meal-more/">Irish Soda Bread</a></em></p>
+<div class="linkwithin_hook" id="http://www.aroundmyfamilytable.com/2011/07/kids-in-the-kitchen-easy-cheese-enchiladas/"></div><div class='shareinpost'><ul class="socialwrap row"><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://delicious.com/post?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fkids-in-the-kitchen-easy-cheese-enchiladas%2F&amp;title=Kids+in+the+Kitchen%3A+Easy+Cheese+Enchiladas" title="Bookmark this post : Kids in the Kitchen: Easy Cheese Enchiladas on Delicious" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-102px 0px" class="image-16" width="16" alt="delicious"/> <span class="head">Bookmark on Delicious</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://digg.com/submit?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fkids-in-the-kitchen-easy-cheese-enchiladas%2F&amp;title=Kids+in+the+Kitchen%3A+Easy+Cheese+Enchiladas&amp;bodytext=I+can%27t+believe+I+didn%27t+realize+that+last+Friday+was+really+the+1st+Friday+of+the+month.+%C2%A0I+got+so+excited+to+share+our+4th+of+July+picnic+with+y%27all+that+I+just+totally+spaced+this.%0D%0A%0D%0AThis+month%27s+KITK+is+from+my+sister.+%C2%A0She+is+an+awesome+cook+and+is+teaching+her+children+well.+%C2%A0Isaac%2C+who+recently+turned+7%2C+act" title="Digg this post : Kids in the Kitchen: Easy Cheese Enchiladas" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-136px 0px" class="image-16" width="16" alt="digg"/> <span class="head">Digg this post</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fkids-in-the-kitchen-easy-cheese-enchiladas%2F&amp;t=Kids+in+the+Kitchen%3A+Easy+Cheese+Enchiladas" title="Recommend this post : Kids in the Kitchen: Easy Cheese Enchiladas on Facebook" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-187px 0px" class="image-16" width="16" alt="facebook"/> <span class="head">Recommend on Facebook</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fkids-in-the-kitchen-easy-cheese-enchiladas%2F&amp;title=Kids+in+the+Kitchen%3A+Easy+Cheese+Enchiladas" title="Share this post : Kids in the Kitchen: Easy Cheese Enchiladas with Stumblers" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-833px 0px" class="image-16" width="16" alt="stumble"/> <span class="head">Share with Stumblers</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.tumblr.com/share?v=3&amp;u=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fkids-in-the-kitchen-easy-cheese-enchiladas%2F&amp;t=Kids+in+the+Kitchen%3A+Easy+Cheese+Enchiladas" title="Tumblr. this post : Kids in the Kitchen: Easy Cheese Enchiladas " ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-884px 0px" class="image-16" width="16" alt="tumblr"/> <span class="head">Tumblr it</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://twitter.com/home/?status=Kids+in+the+Kitchen%3A+Easy+Cheese+Enchiladas+-+http%3A%2F%2Fbit.ly%2FpSTMJz VIA+%40myfamilytable" title="Tweet this post : Kids in the Kitchen: Easy Cheese Enchiladas on Twitter" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-901px 0px" class="image-16"  width="16"  alt="twitter"/> <span class="head">Tweet about it</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://buzz.yahoo.com/buzz?targetUrl=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fkids-in-the-kitchen-easy-cheese-enchiladas%2F" title="Buzz up this post : Kids in the Kitchen: Easy Cheese Enchiladas " ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-1020px 0px" class="image-16" width="16" alt="yahoo_buzz"/> <span class="head">Buzz it up</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.print();" title="Print this post : Kids in the Kitchen: Easy Cheese Enchiladas for reading later" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-714px 0px" class="image-16" width="16" alt="print"/> <span class="head">Print for later</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.bookMark('http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fkids-in-the-kitchen-easy-cheese-enchiladas%2F', 'Kids+in+the+Kitchen%3A+Easy+Cheese+Enchiladas', BrowserDetect.browser);" title="Bookmark this post : Kids in the Kitchen: Easy Cheese Enchiladas" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-51px 0px" class="image-16" width="16" alt="bookmark"/> <span class="head">Bookmark in Browser</span></a></li><li class="iconOnly"><a rel="_self" href="mailto:?subject=Around%20My%20Family%20Table%20:%20Kids%20in%20the%20Kitchen:%20Easy%20Cheese%20Enchiladas&amp;body=Here%20is%20a%20link%20to%20a%20site%20I%20really%20like.%20%20%20http://www.aroundmyfamilytable.com/2011/07/kids-in-the-kitchen-easy-cheese-enchiladas/" title="Tell a friend about this post : Kids in the Kitchen: Easy Cheese Enchiladas "><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16"  width="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-170px 0px" class="image-16"  alt="email" /> <span class="head">Tell a friend</span></a></li></ul><div class="clean"></div> </div><div style="padding: 10px 0 "  class="interactive_bottom"><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fkids-in-the-kitchen-easy-cheese-enchiladas%2F&amp;text=Kids in the Kitchen: Easy Cheese Enchiladas&amp;count=none&amp;lang=&amp;via=myfamilytable  " style="width:0px; height:31px;"></iframe><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fkids-in-the-kitchen-easy-cheese-enchiladas%2F&amp;layout=standard&amp;show_faces=false&amp;width=0&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=31" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:0px; height:31px;" allowTransparency="true"></iframe></div>						</div>		
+			
+						<p class="postmetadata"><a href="http://www.aroundmyfamilytable.com/2011/07/kids-in-the-kitchen-easy-cheese-enchiladas/#comments" title="Comment on Kids in the Kitchen: Easy Cheese Enchiladas">6 Comments</a> / Tags: <a href="http://www.aroundmyfamilytable.com/tag/cheese/" rel="tag">cheese</a>, <a href="http://www.aroundmyfamilytable.com/tag/kids/" rel="tag">kids</a>, <a href="http://www.aroundmyfamilytable.com/tag/kitk/" rel="tag">KITK</a>, <a href="http://www.aroundmyfamilytable.com/tag/mexican/" rel="tag">mexican</a>, <a href="http://www.aroundmyfamilytable.com/tag/supper/" rel="tag">supper</a> /  Posted in <a href="http://www.aroundmyfamilytable.com/category/kids/" title="View all posts in kids" rel="category tag">kids</a>, <a href="http://www.aroundmyfamilytable.com/category/recipe/" title="View all posts in recipe" rel="category tag">recipe</a> </p>	
+					</div>
+					
+
+				
+					<div class="post-1593 post type-post status-publish format-standard hentry category-carnival tag-carnival post" id="post-1593">
+						<h2><a href="http://www.aroundmyfamilytable.com/2011/07/turning-the-table-thursday-5/" rel="bookmark" title="Permanent Link to Turning the Table Thursday">Turning the Table Thursday</a></h2>
+							<small>July 6th, 2011 by Wendy</small>
+						
+						<div class="entry">
+							<div style="float:right;padding: 0 0 10px 10px" class="interactive_right"><script src="http://www.stumbleupon.com/hostedbadge.php?s=2&amp;r=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fturning-the-table-thursday-5%2F"></script></div><div style="padding-top:5px;padding-right:0px;padding-bottom:5px;padding-left:0px;;">
+											<iframe
+												style="height:25px !important; border:0px solid gray !important; overflow:hidden !important; width:550px !important;" frameborder="0" scrolling="no" allowTransparency="true"
+												src="http://www.linksalpha.com/social?blog=Around+My+Family+Table&link=http%253A%252F%252Fwww.aroundmyfamilytable.com%252F2011%252F07%252Fturning-the-table-thursday-5%252F&title=Turning+the+Table+Thursday&desc=Today%2C+I%27m+Turning+my+Table+over+to+y%27all%21+Please+link+up+as+many+recipes+or+craft+projects+as+you%27d+like.++If+this+is+your+first+time%2C+please+make+sure+you+leave+a+comment%2C+so+I+can+stop+by+your+blog&fc=333333&fs=arial&fblname=like&fblref=facebook&fbllang=en_US&fblshow=1&fbsbutton=1&fbsctr=1&fbslang=en&fbsendbutton=0&twbutton=1&twlang=en&twmention=myfamilytable&twrelated1=myfamilytable&twrelated2=&twctr=1&lnkdshow=noshow&lnkdctr=0&buzzbutton=0&buzzlang=en&buzzctr=0&diggbutton=0&diggctr=0&stblbutton=1&stblctr=1&g1button=1&g1ctr=1&g1lang=en-US">
+											</iframe>
+										</div><p style="text-align: center;">Today, I&#8217;m Turning my Table over to y&#8217;all! Please link up as many <strong>recipes </strong>or <strong>craft projects</strong> as you&#8217;d like.  If this is your first time, please make sure you leave a comment, so I can stop by your blog and follow you back!</p>
+<p style="text-align: center;"><a title="Around My Family Table" href="http://www.aroundmyfamilytable.com/" target="_blank"><img src="  http://i3.photobucket.com/albums/y100/waoneal/ttttnew2.jpg" alt="Around My Family Table" /></a></p>
+<p style="text-align: center;"><textarea id="code-source" rows="3" name="code-source">&lt;center&gt;&lt;a href=&#8221; http://www.aroundmyfamilytable.com/&#8221; _mce_href=&#8221; http://www.aroundmyfamilytable.com/&#8221; target=&#8221;_blank&#8221; title=&#8221;Around My Family Table&#8221;&gt;&lt;img alt=&#8221;Around My Family Table&#8221; src=&#8221; http://i3.photobucket.com/albums/y100/waoneal/ttttnew2.jpg&#8221; _mce_src=&#8221; http://i3.photobucket.com/albums/y100/waoneal/ttttnew2.jpg&#8221;/&gt;&lt;/a&gt;&lt;/center&gt;</textarea></p>
+<p style="text-align: center;"><strong> </strong><br />
+Please grab my button or add a link back to my homepage.  Visit the recipes and comment on their blogs.  Don&#8217;t forget to come back next week!</p>
+<p style="text-align: center;"><span style="color: #ff0000;"><strong>Do you host a hop or carnival..then link up <a href="http://www.aroundmyfamilytable.com/hop-carnival-menu/">HERE </a>!  Looking for more hops to join&#8230;check out the running link <a href="http://www.aroundmyfamilytable.com/hop-carnival-menu/">HERE</a>!</strong></span></p>
+<p style="text-align: center;"><strong>Spotlight Blog for the Week!<br />
+</strong></p>
+<p style="text-align: center;"><span style="font-family: Calibri; font-size: small;">Hi, I’m Nancy of </span><a href="http://www.realfoodallergyfree.com/"><span style="color: #0000ff; font-family: Calibri; font-size: small;">Real Food, Allergy Free</span></a><span style="font-family: Calibri; font-size: small;">.  I am a home-schooling mom of four beautiful children.  My youngest suffers with severe eczema.  Part of her treatment plan is to avoid the top 8 allergens (dairy, egg, wheat, soy, tree nut, peanut, fish and shellfish).  I am passionate about the real food movement but I am also a real mom with a limited amount of time and money.   My blog features fast, frugal and healthy allergy-friendl<span style="color: #000000;">y </span></span><span style="color: #000000;"><span style="font-family: Calibri; font-size: small;">recipes</span><span style="font-family: Calibri; font-size: small;"> that even “normal” people would enjoy.  I also include allergy-friendly </span><span style="font-family: Calibri; font-size: small;">deals and coupons</span></span><span style="font-size: small;"><span style="font-family: Calibri;"><span style="color: #000000;">. </span> I’m brand new to blogging and I love the community it creates.  I’d be honored if you’d check out my blog and bring some friends with you!<br />
+</span></span></p>
+<p><script src="http://www.blenza.com/linkies/easylink.php?owner=jmwaoneal&amp;postid=06Jul2011" type="text/javascript"></script></p>
+<div class="linkwithin_hook" id="http://www.aroundmyfamilytable.com/2011/07/turning-the-table-thursday-5/"></div><div class='shareinpost'><ul class="socialwrap row"><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://delicious.com/post?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fturning-the-table-thursday-5%2F&amp;title=Turning+the+Table+Thursday" title="Bookmark this post : Turning the Table Thursday on Delicious" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-102px 0px" class="image-16" width="16" alt="delicious"/> <span class="head">Bookmark on Delicious</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://digg.com/submit?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fturning-the-table-thursday-5%2F&amp;title=Turning+the+Table+Thursday&amp;bodytext=Today%2C+I%27m+Turning+my+Table+over+to+y%27all%21+Please+link+up+as+many+recipes+or+craft+projects+as+you%27d+like.++If+this+is+your+first+time%2C+please+make+sure+you+leave+a+comment%2C+so+I+can+stop+by+your+blog+and+follow+you+back%21%0D%0A%0D%0A%26lt%3Bcenter%26gt%3B%26lt%3Ba+href%3D%22+http%3A%2F%2Fwww.aroundmyfamilytable.com%2F%22+_mce_href%3D%22+http%3A%2F%2Fwww.aroundmy" title="Digg this post : Turning the Table Thursday" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-136px 0px" class="image-16" width="16" alt="digg"/> <span class="head">Digg this post</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fturning-the-table-thursday-5%2F&amp;t=Turning+the+Table+Thursday" title="Recommend this post : Turning the Table Thursday on Facebook" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-187px 0px" class="image-16" width="16" alt="facebook"/> <span class="head">Recommend on Facebook</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fturning-the-table-thursday-5%2F&amp;title=Turning+the+Table+Thursday" title="Share this post : Turning the Table Thursday with Stumblers" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-833px 0px" class="image-16" width="16" alt="stumble"/> <span class="head">Share with Stumblers</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.tumblr.com/share?v=3&amp;u=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fturning-the-table-thursday-5%2F&amp;t=Turning+the+Table+Thursday" title="Tumblr. this post : Turning the Table Thursday " ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-884px 0px" class="image-16" width="16" alt="tumblr"/> <span class="head">Tumblr it</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://twitter.com/home/?status=Turning+the+Table+Thursday+-+http%3A%2F%2Fbit.ly%2FoxO07H VIA+%40myfamilytable" title="Tweet this post : Turning the Table Thursday on Twitter" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-901px 0px" class="image-16"  width="16"  alt="twitter"/> <span class="head">Tweet about it</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://buzz.yahoo.com/buzz?targetUrl=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fturning-the-table-thursday-5%2F" title="Buzz up this post : Turning the Table Thursday " ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-1020px 0px" class="image-16" width="16" alt="yahoo_buzz"/> <span class="head">Buzz it up</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.print();" title="Print this post : Turning the Table Thursday for reading later" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-714px 0px" class="image-16" width="16" alt="print"/> <span class="head">Print for later</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.bookMark('http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fturning-the-table-thursday-5%2F', 'Turning+the+Table+Thursday', BrowserDetect.browser);" title="Bookmark this post : Turning the Table Thursday" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-51px 0px" class="image-16" width="16" alt="bookmark"/> <span class="head">Bookmark in Browser</span></a></li><li class="iconOnly"><a rel="_self" href="mailto:?subject=Around%20My%20Family%20Table%20:%20Turning%20the%20Table%20Thursday&amp;body=Here%20is%20a%20link%20to%20a%20site%20I%20really%20like.%20%20%20http://www.aroundmyfamilytable.com/2011/07/turning-the-table-thursday-5/" title="Tell a friend about this post : Turning the Table Thursday "><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16"  width="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-170px 0px" class="image-16"  alt="email" /> <span class="head">Tell a friend</span></a></li></ul><div class="clean"></div> </div><div style="padding: 10px 0 "  class="interactive_bottom"><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fturning-the-table-thursday-5%2F&amp;text=Turning the Table Thursday&amp;count=none&amp;lang=&amp;via=myfamilytable  " style="width:0px; height:31px;"></iframe><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fturning-the-table-thursday-5%2F&amp;layout=standard&amp;show_faces=false&amp;width=0&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=31" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:0px; height:31px;" allowTransparency="true"></iframe></div>						</div>		
+			
+						<p class="postmetadata"><a href="http://www.aroundmyfamilytable.com/2011/07/turning-the-table-thursday-5/#comments" title="Comment on Turning the Table Thursday">34 Comments</a> / Tags: <a href="http://www.aroundmyfamilytable.com/tag/carnival/" rel="tag">carnival</a> /  Posted in <a href="http://www.aroundmyfamilytable.com/category/carnival/" title="View all posts in carnival" rel="category tag">carnival</a> </p>	
+					</div>
+					
+
+				
+					<div class="post-1564 post type-post status-publish format-standard hentry category-recipe tag-beverages tag-diet tag-fruit tag-reviews tag-smoothies tag-snacks post" id="post-1564">
+						<h2><a href="http://www.aroundmyfamilytable.com/2011/07/mock-orange-julius/" rel="bookmark" title="Permanent Link to Mock Orange Julius">Mock Orange Julius</a></h2>
+							<small>July 6th, 2011 by Wendy</small>
+						
+						<div class="entry">
+							<div style="float:right;padding: 0 0 10px 10px" class="interactive_right"><script src="http://www.stumbleupon.com/hostedbadge.php?s=2&amp;r=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fmock-orange-julius%2F"></script></div><div style="padding-top:5px;padding-right:0px;padding-bottom:5px;padding-left:0px;;">
+											<iframe
+												style="height:25px !important; border:0px solid gray !important; overflow:hidden !important; width:550px !important;" frameborder="0" scrolling="no" allowTransparency="true"
+												src="http://www.linksalpha.com/social?blog=Around+My+Family+Table&link=http%253A%252F%252Fwww.aroundmyfamilytable.com%252F2011%252F07%252Fmock-orange-julius%252F&title=Mock+Orange+Julius&desc=I+am+attempting+to+eat+fewer+calories+and+lose+a+few+pounds.%C2%A0+Good+Luck%2C+right%3F%21%3F%21%C2%A0+One+of+my+friends+suggested+I+give+this+a+try+for+an+afternoon+pick+me+up.%C2%A0+I+seriously+had+a+DUH+moment...it+was&fc=333333&fs=arial&fblname=like&fblref=facebook&fbllang=en_US&fblshow=1&fbsbutton=1&fbsctr=1&fbslang=en&fbsendbutton=0&twbutton=1&twlang=en&twmention=myfamilytable&twrelated1=myfamilytable&twrelated2=&twctr=1&lnkdshow=noshow&lnkdctr=0&buzzbutton=0&buzzlang=en&buzzctr=0&diggbutton=0&diggctr=0&stblbutton=1&stblctr=1&g1button=1&g1ctr=1&g1lang=en-US">
+											</iframe>
+										</div><p><a href="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/100_0271.jpg"><img class="alignleft size-medium wp-image-1565" title="Orange Julius" src="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/100_0271-164x300.jpg" alt="" width="164" height="300" /></a>I am attempting to eat fewer calories and lose a few pounds.  Good Luck, right?!?!  One of my friends suggested I give this a try for an afternoon pick me up.  I seriously had a DUH moment&#8230;it was so simple and really tasty that I wish I had come up with it.  The drink uses <a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2Fs%3Fie%3DUTF8%26ref_%3Dnb_sb_ss_c_1_16%26field-keywords%3Dsweetleaf%2520stevia%26url%3Dsearch-alias%253Dgrocery%26sprefix%3Dsweetleaf%2520stevia%23&amp;tag=arou02-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=390957">SweetLeaf Liquid Stevia</a><img style="border: none !important; margin: 0px !important;" src="https://www.assoc-amazon.com/e/ir?t=arou02-20&amp;l=ur2&amp;o=1" border="0" alt="" width="1" height="1" />.  Have you tried it or heard of it?  I&#8217;ve used it before and really like it.  It&#8217;s a great way to add a little sweetness and flavor without any calories.  I love it in my coffee or in things like this.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2 style="text-align: center;">Mock Orange Julius</h2>
+<p style="text-align: center;">1 large orange<br />
+8-10 drops <a href="http://www.amazon.com/gp/product/B000E8WIAS/ref=as_li_ss_tl?ie=UTF8&amp;tag=arou02-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399369&amp;creativeASIN=B000E8WIAS">SweetLeaf Vanilla Creme Liquid Stevia</a><img style="border: none !important; margin: 0px !important;" src="http://www.assoc-amazon.com/e/ir?t=&amp;l=as2&amp;o=1&amp;a=B000E8WIAS&amp;camp=217145&amp;creative=399369" border="0" alt="" width="1" height="1" /><br />
+1-2 cups of ice<br />
+1/8-1/4 cup of water, if needed</p>
+<p style="text-align: center;">Peel orange.  Place all ingredients, except water, into a good blender.  Blend on high until everything comes together, add water as needed to get things moving.  Adjust ice and Vanilla Creme to suit your tastes.  Enjoy!</p>
+<div class="linkwithin_hook" id="http://www.aroundmyfamilytable.com/2011/07/mock-orange-julius/"></div><div class='shareinpost'><ul class="socialwrap row"><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://delicious.com/post?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fmock-orange-julius%2F&amp;title=Mock+Orange+Julius" title="Bookmark this post : Mock Orange Julius on Delicious" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-102px 0px" class="image-16" width="16" alt="delicious"/> <span class="head">Bookmark on Delicious</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://digg.com/submit?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fmock-orange-julius%2F&amp;title=Mock+Orange+Julius&amp;bodytext=I+am+attempting+to+eat+fewer+calories+and+lose+a+few+pounds.%C2%A0+Good+Luck%2C+right%3F%21%3F%21%C2%A0+One+of+my+friends+suggested+I+give+this+a+try+for+an+afternoon+pick+me+up.%C2%A0+I+seriously+had+a+DUH+moment...it+was+so+simple+and+really+tasty+that+I+wish+I+had+come+up+with+it.%C2%A0+The+drink+uses+SweetLeaf+Liquid+Stevia.%C2%A0+Have+you+trie" title="Digg this post : Mock Orange Julius" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-136px 0px" class="image-16" width="16" alt="digg"/> <span class="head">Digg this post</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fmock-orange-julius%2F&amp;t=Mock+Orange+Julius" title="Recommend this post : Mock Orange Julius on Facebook" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-187px 0px" class="image-16" width="16" alt="facebook"/> <span class="head">Recommend on Facebook</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fmock-orange-julius%2F&amp;title=Mock+Orange+Julius" title="Share this post : Mock Orange Julius with Stumblers" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-833px 0px" class="image-16" width="16" alt="stumble"/> <span class="head">Share with Stumblers</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.tumblr.com/share?v=3&amp;u=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fmock-orange-julius%2F&amp;t=Mock+Orange+Julius" title="Tumblr. this post : Mock Orange Julius " ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-884px 0px" class="image-16" width="16" alt="tumblr"/> <span class="head">Tumblr it</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://twitter.com/home/?status=Mock+Orange+Julius+-+http%3A%2F%2Fbit.ly%2Fp4agIM VIA+%40myfamilytable" title="Tweet this post : Mock Orange Julius on Twitter" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-901px 0px" class="image-16"  width="16"  alt="twitter"/> <span class="head">Tweet about it</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://buzz.yahoo.com/buzz?targetUrl=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fmock-orange-julius%2F" title="Buzz up this post : Mock Orange Julius " ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-1020px 0px" class="image-16" width="16" alt="yahoo_buzz"/> <span class="head">Buzz it up</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.print();" title="Print this post : Mock Orange Julius for reading later" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-714px 0px" class="image-16" width="16" alt="print"/> <span class="head">Print for later</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.bookMark('http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fmock-orange-julius%2F', 'Mock+Orange+Julius', BrowserDetect.browser);" title="Bookmark this post : Mock Orange Julius" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-51px 0px" class="image-16" width="16" alt="bookmark"/> <span class="head">Bookmark in Browser</span></a></li><li class="iconOnly"><a rel="_self" href="mailto:?subject=Around%20My%20Family%20Table%20:%20Mock%20Orange%20Julius&amp;body=Here%20is%20a%20link%20to%20a%20site%20I%20really%20like.%20%20%20http://www.aroundmyfamilytable.com/2011/07/mock-orange-julius/" title="Tell a friend about this post : Mock Orange Julius "><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16"  width="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-170px 0px" class="image-16"  alt="email" /> <span class="head">Tell a friend</span></a></li></ul><div class="clean"></div> </div><div style="padding: 10px 0 "  class="interactive_bottom"><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fmock-orange-julius%2F&amp;text=Mock Orange Julius&amp;count=none&amp;lang=&amp;via=myfamilytable  " style="width:0px; height:31px;"></iframe><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fmock-orange-julius%2F&amp;layout=standard&amp;show_faces=false&amp;width=0&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=31" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:0px; height:31px;" allowTransparency="true"></iframe></div>						</div>		
+			
+						<p class="postmetadata"><a href="http://www.aroundmyfamilytable.com/2011/07/mock-orange-julius/#comments" title="Comment on Mock Orange Julius">8 Comments</a> / Tags: <a href="http://www.aroundmyfamilytable.com/tag/beverages/" rel="tag">beverages</a>, <a href="http://www.aroundmyfamilytable.com/tag/diet/" rel="tag">diet</a>, <a href="http://www.aroundmyfamilytable.com/tag/fruit/" rel="tag">fruit</a>, <a href="http://www.aroundmyfamilytable.com/tag/reviews/" rel="tag">reviews</a>, <a href="http://www.aroundmyfamilytable.com/tag/smoothies/" rel="tag">smoothies</a>, <a href="http://www.aroundmyfamilytable.com/tag/snacks/" rel="tag">snacks</a> /  Posted in <a href="http://www.aroundmyfamilytable.com/category/recipe/" title="View all posts in recipe" rel="category tag">recipe</a> </p>	
+					</div>
+					
+
+				
+					<div class="post-1556 post type-post status-publish format-standard hentry category-recipe tag-baking tag-cake tag-chocolate tag-cupcakes tag-dessert tag-scratch post" id="post-1556">
+						<h2><a href="http://www.aroundmyfamilytable.com/2011/07/perfect-chocolate-cake/" rel="bookmark" title="Permanent Link to Perfect Chocolate Cake">Perfect Chocolate Cake</a></h2>
+							<small>July 5th, 2011 by Wendy</small>
+						
+						<div class="entry">
+							<div style="float:right;padding: 0 0 10px 10px" class="interactive_right"><script src="http://www.stumbleupon.com/hostedbadge.php?s=2&amp;r=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fperfect-chocolate-cake%2F"></script></div><div style="padding-top:5px;padding-right:0px;padding-bottom:5px;padding-left:0px;;">
+											<iframe
+												style="height:25px !important; border:0px solid gray !important; overflow:hidden !important; width:550px !important;" frameborder="0" scrolling="no" allowTransparency="true"
+												src="http://www.linksalpha.com/social?blog=Around+My+Family+Table&link=http%253A%252F%252Fwww.aroundmyfamilytable.com%252F2011%252F07%252Fperfect-chocolate-cake%252F&title=Perfect+Chocolate+Cake&desc=I+found+this+basic+recipe+over+at+the+Hershey%27s+website.%C2%A0+I%27ve+had+several+friends+try+it+and+love+it%2C+so+I+had+to+give+it+a+try.%C2%A0+I+made+just+a+slight+change+to+the+recipe+and+I+LOVE+it%21%C2%A0+This+rec&fc=333333&fs=arial&fblname=like&fblref=facebook&fbllang=en_US&fblshow=1&fbsbutton=1&fbsctr=1&fbslang=en&fbsendbutton=0&twbutton=1&twlang=en&twmention=myfamilytable&twrelated1=myfamilytable&twrelated2=&twctr=1&lnkdshow=noshow&lnkdctr=0&buzzbutton=0&buzzlang=en&buzzctr=0&diggbutton=0&diggctr=0&stblbutton=1&stblctr=1&g1button=1&g1ctr=1&g1lang=en-US">
+											</iframe>
+										</div><p><a href="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/102_0626.jpg"><img class="alignleft size-medium wp-image-1557" title="Perfect Chocolate Cake" src="http://www.aroundmyfamilytable.com/wp-content/uploads/2011/07/102_0626-300x224.jpg" alt="" width="300" height="224" /></a>I found this basic recipe over at the Hershey&#8217;s website.  I&#8217;ve had several friends try it and love it, so I had to give it a try.  I made just a slight change to the recipe and I LOVE it!  This recipe is so easy and uses basic ingredients&#8230;.there really is no reason to buy a boxed mixed.  This recipe makes a very moist and chocolately cake.  If you need a bit of a firmer cake for cakes that will be decorated then reduce the oil by a tablespoon or two.</p>
+<h2 style="text-align: center;">Perfect Chocolate Cake</h2>
+<p style="text-align: center;">2 cups sugar<br />
+1 3/4 cups all-purpose flour<br />
+3/4 cup cocoa powder<br />
+1 1/2 tsps baking powder<br />
+1 1/2 tsps baking soda<br />
+1 tsp salt<br />
+2 eggs<br />
+1 cup milk<br />
+1/2 cup vegetable oil<br />
+2 tsps vanilla extract<br />
+1 cup hot coffee</p>
+<p style="text-align: center;">Preheat oven to 350°F.  Grease and flour two 8-inch round baking pans.</p>
+<p style="text-align: center;">Combine sugar, flour, cocoa, baking powder, baking soda and salt in  large bowl.   Add eggs, milk, oil and vanilla.  Beat on medium speed (using a stand or handheld mixer) 2 minutes.  Stir in hot coffee (the batter will be thin).  Pour the batter into prepared pans.</p>
+<p style="text-align: center;">Bake 30  to 35 minutes or until toothpick inserted in center comes out clean.   Cool  10 minutes; remove cake from pans onto wire racks.  Cool completely.   Frost with your favorite frosting.  Serves 10-12</p>
+<p style="text-align: center;"><strong>Options:</strong> 9&#215;13 pan and bake 35-40 minutes or 24 cupcakes (line  muffin tin with paper baking cup, fill 2/3 full) and bake 22 to 25 minutes.</p>
+<div class="linkwithin_hook" id="http://www.aroundmyfamilytable.com/2011/07/perfect-chocolate-cake/"></div><script>
+<!-- //LinkWithinCodeStart
+var linkwithin_site_id = 404475;
+var linkwithin_div_class = "linkwithin_hook";
+//LinkWithinCodeEnd -->
+</script>
+<script src="http://www.linkwithin.com/widget.js"></script>
+<a href="http://www.linkwithin.com/"><img src="http://www.linkwithin.com/pixel.png" alt="Related Posts Plugin for WordPress, Blogger..." style="border: 0" /></a><div class='shareinpost'><ul class="socialwrap row"><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://delicious.com/post?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fperfect-chocolate-cake%2F&amp;title=Perfect+Chocolate+Cake" title="Bookmark this post : Perfect Chocolate Cake on Delicious" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-102px 0px" class="image-16" width="16" alt="delicious"/> <span class="head">Bookmark on Delicious</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://digg.com/submit?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fperfect-chocolate-cake%2F&amp;title=Perfect+Chocolate+Cake&amp;bodytext=I+found+this+basic+recipe+over+at+the+Hershey%27s+website.%C2%A0+I%27ve+had+several+friends+try+it+and+love+it%2C+so+I+had+to+give+it+a+try.%C2%A0+I+made+just+a+slight+change+to+the+recipe+and+I+LOVE+it%21%C2%A0+This+recipe+is+so+easy+and+uses+basic+ingredients....there+really+is+no+reason+to+buy+a+boxed+mixed.%C2%A0+This+recipe+makes+a+very+" title="Digg this post : Perfect Chocolate Cake" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-136px 0px" class="image-16" width="16" alt="digg"/> <span class="head">Digg this post</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fperfect-chocolate-cake%2F&amp;t=Perfect+Chocolate+Cake" title="Recommend this post : Perfect Chocolate Cake on Facebook" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-187px 0px" class="image-16" width="16" alt="facebook"/> <span class="head">Recommend on Facebook</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fperfect-chocolate-cake%2F&amp;title=Perfect+Chocolate+Cake" title="Share this post : Perfect Chocolate Cake with Stumblers" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-833px 0px" class="image-16" width="16" alt="stumble"/> <span class="head">Share with Stumblers</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.tumblr.com/share?v=3&amp;u=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fperfect-chocolate-cake%2F&amp;t=Perfect+Chocolate+Cake" title="Tumblr. this post : Perfect Chocolate Cake " ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-884px 0px" class="image-16" width="16" alt="tumblr"/> <span class="head">Tumblr it</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://twitter.com/home/?status=Perfect+Chocolate+Cake+-+http%3A%2F%2Fbit.ly%2FmAP3CM VIA+%40myfamilytable" title="Tweet this post : Perfect Chocolate Cake on Twitter" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-901px 0px" class="image-16"  width="16"  alt="twitter"/> <span class="head">Tweet about it</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://buzz.yahoo.com/buzz?targetUrl=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fperfect-chocolate-cake%2F" title="Buzz up this post : Perfect Chocolate Cake " ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-1020px 0px" class="image-16" width="16" alt="yahoo_buzz"/> <span class="head">Buzz it up</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.print();" title="Print this post : Perfect Chocolate Cake for reading later" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-714px 0px" class="image-16" width="16" alt="print"/> <span class="head">Print for later</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.bookMark('http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fperfect-chocolate-cake%2F', 'Perfect+Chocolate+Cake', BrowserDetect.browser);" title="Bookmark this post : Perfect Chocolate Cake" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-51px 0px" class="image-16" width="16" alt="bookmark"/> <span class="head">Bookmark in Browser</span></a></li><li class="iconOnly"><a rel="_self" href="mailto:?subject=Around%20My%20Family%20Table%20:%20Perfect%20Chocolate%20Cake&amp;body=Here%20is%20a%20link%20to%20a%20site%20I%20really%20like.%20%20%20http://www.aroundmyfamilytable.com/2011/07/perfect-chocolate-cake/" title="Tell a friend about this post : Perfect Chocolate Cake "><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16"  width="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-170px 0px" class="image-16"  alt="email" /> <span class="head">Tell a friend</span></a></li></ul><div class="clean"></div> </div><div style="padding: 10px 0 "  class="interactive_bottom"><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fperfect-chocolate-cake%2F&amp;text=Perfect Chocolate Cake&amp;count=none&amp;lang=&amp;via=myfamilytable  " style="width:0px; height:31px;"></iframe><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2011%2F07%2Fperfect-chocolate-cake%2F&amp;layout=standard&amp;show_faces=false&amp;width=0&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=31" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:0px; height:31px;" allowTransparency="true"></iframe></div>						</div>		
+			
+						<p class="postmetadata"><a href="http://www.aroundmyfamilytable.com/2011/07/perfect-chocolate-cake/#comments" title="Comment on Perfect Chocolate Cake">9 Comments</a> / Tags: <a href="http://www.aroundmyfamilytable.com/tag/baking/" rel="tag">baking</a>, <a href="http://www.aroundmyfamilytable.com/tag/cake/" rel="tag">cake</a>, <a href="http://www.aroundmyfamilytable.com/tag/chocolate/" rel="tag">chocolate</a>, <a href="http://www.aroundmyfamilytable.com/tag/cupcakes/" rel="tag">cupcakes</a>, <a href="http://www.aroundmyfamilytable.com/tag/dessert/" rel="tag">dessert</a>, <a href="http://www.aroundmyfamilytable.com/tag/scratch/" rel="tag">scratch</a> /  Posted in <a href="http://www.aroundmyfamilytable.com/category/recipe/" title="View all posts in recipe" rel="category tag">recipe</a> </p>	
+					</div>
+					
+
+				
+				<div class="navigation">
+					<div class="alignleft"><a href="http://www.aroundmyfamilytable.com/page/2/" >&laquo; Older Entries</a></div>
+					<div class="alignright"></div>
+				</div>
+				
+				<div class="clear"></div>
+
+						
+			</div><!-- .post-wrap -->
+
+		</div><!-- #content -->
+
+	<div id="sidebar">
+		<ul class="wrap">
+			<li id="text-5" class="widget widget_text">			<div class="textwidget"><center><a href="http://www.facebook.com/home.php?#!/pages/Around-My-Family-Table/118885818159837" title="Like"><img alt="Around My Family Table" src="http://i3.photobucket.com/albums/y100/waoneal/facebook.png" /></a>
+
+<a href="https://twitter.com/MyFamilyTable"  title="Follow"><img alt="Around My Family Table" src="http://i3.photobucket.com/albums/y100/waoneal/twitter.png" /></a>
+
+<a href="http://feeds.feedburner.com/AroundMyFamilyTable" title="Subscribe"><img alt="Around My Family Table" src="http://i3.photobucket.com/albums/y100/waoneal/rss.png" /></a></center>
+</br>
+<center><form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=AroundMyFamilyTable', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><p>Enter your email address:</p><p><input type="text" style="width:140px" name="email"/></p><input type="hidden" value="AroundMyFamilyTable" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" value="Subscribe" /><p>Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></p></form></center>
+</div>
+		</li><li id="text-14" class="widget widget_text">			<div class="textwidget"><center><script type="text/javascript"><!--
+google_ad_client = "ca-pub-3716571835575631";
+/* Sidebar */
+google_ad_slot = "2193695328";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></center></div>
+		</li><li id="search-3" class="widget widget_search"><form method="get" id="searchform" action="http://www.aroundmyfamilytable.com/">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</li><li id="text-11" class="widget widget_text">			<div class="textwidget"><center><a href="http://www.babble.com/best-recipes/dinner/top-100-food-mom-blog-2011-nominate-a-food-blog/"><img src="http://www.babble.com/badges/images/badge_foodmombloggers_nominee.jpg" alt="I was nominated for Babble.com's Top 100 Mom Food Bloggers 2011! Follow this link to vote for me!" /></a></center>
+<br />
+<center><a href="http://www.pomwonderful.com/cupcakecontest_winners/"><img src="http://i3.photobucket.com/albums/y100/waoneal/grand_prize_badge.jpg" border="0" alt="Photobucket" /></a></center>
+<br />
+<center><a href="http://www.blogaholicnetwork.com/" target="blank"><img src="http://images.blogaholicnetwork.com/ning/BlogaholicSocialNetworkAd.png" alt="Blogaholic" /></a></center></div>
+		</li><li id="text-3" class="widget widget_text"><h2 class="widgettitle">Grab a Button!</h2>			<div class="textwidget"><center><a href="http://www.aroundmyfamilytable.com/" title="Around My Family Table"><img alt="Around My Family Table" src="http://i3.photobucket.com/albums/y100/waoneal/buttonthree.gif" /></a></center>
+
+<center><textarea id="code-source" cols="30" rows="3" name="code-source"><a href="http://www.aroundmyfamilytable.com/" target="_blank" title="Around My Family Table"><img alt="Around My Family Table" src="http://i3.photobucket.com/albums/y100/waoneal/buttonthree.gif "/></a></textarea></center>
+
+<br />
+
+<center><a href="http://www.aroundmyfamilytable.com/" title="Around My Family Table"><img alt="Around My Family Table" src="http://i3.photobucket.com/albums/y100/waoneal/featuredbutton.jpg" /></a> </center>
+
+<center><textarea id="code-source" cols="30" rows="3" name="code-source"><a href="http://aroundmyfamilytable.com/" target="_blank" title="Around My Family Table"><img alt="Around My Family Table" src="http://i3.photobucket.com/albums/y100/waoneal/featuredbutton.jpg " /></a></textarea></center>
+</div>
+		</li><li id="text-6" class="widget widget_text"><h2 class="widgettitle">Sponsors</h2>			<div class="textwidget"><a target="_top" href="http://swagbucks.com/refer/slingmama"><img alt="Search &amp; Win" title="Search &amp; Win" border="0" src="http://prodegebanners.sitegrip.com/images/swagbucks-125x125.jpg" /></a>  <a href="http://www.paisleymoon.biz/" target="_blank" title=" Paisley Moon-Logos, Banners, & More "><img alt="Paisley Moon-Logos, Banners, &amp; More" src="http://i3.photobucket.com/albums/y100/waoneal/paisleybutton.gif" /></a>
+<script charset="utf-8" type="text/javascript" src="http://ws.amazon.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822/US/arou02-20/8002/2af04043-35cd-45cf-bff4-f2c6e1818ba0"> </script> <noscript><a href="http://ws.amazon.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Farou02-20%2F8002%2F2af04043-35cd-45cf-bff4-f2c6e1818ba0&Operation=NoScript">Amazon.com Widgets</a></noscript>
+<a href="http://izea.in/rvy4"><img alt="Connect With Advertisers - Sign up for SocialSpark!" border="0" src="http://app.socialspark.com/images/badges/referral-connect_with_advertisers.jpg" style="border: 0 none !important;" /></a>
+</div>
+		</li><li id="text-12" class="widget widget_text">			<div class="textwidget"><center><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab" id="Player_2d2ac28f-27c7-44cf-acf6-3fbcdfbeaf66"  WIDTH="120px" HEIGHT="400px"> <param name="movie" value="http://ws.amazon.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Farou02-20%2F8009%2F2d2ac28f-27c7-44cf-acf6-3fbcdfbeaf66&Operation=GetDisplayTemplate" /><param name="quality" value="high" /><param name="bgcolor" value="#FFFFFF" /><param name="allowscriptaccess" value="always" /><embed src="http://ws.amazon.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Farou02-20%2F8009%2F2d2ac28f-27c7-44cf-acf6-3fbcdfbeaf66&Operation=GetDisplayTemplate" id="Player_2d2ac28f-27c7-44cf-acf6-3fbcdfbeaf66" quality="high" bgcolor="#ffffff" name="Player_2d2ac28f-27c7-44cf-acf6-3fbcdfbeaf66" allowscriptaccess="always"  type="application/x-shockwave-flash" align="middle" height="400px" width="120px"></embed></object> <noscript><a href="http://ws.amazon.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Farou02-20%2F8009%2F2d2ac28f-27c7-44cf-acf6-3fbcdfbeaf66&Operation=NoScript">Amazon.com Widgets</a></noscript><center>
+
+</div>
+		</li><li id="text-4" class="widget widget_text">			<div class="textwidget"><center><marquee direction="up" behavior="scroll" style="width: 130px; height: 350px; font-size: 11px; background-color: #ffffff; border-color: #dd6680; border-width: 2px; border-style: ridge;" scrollamount="2">
+
+<center><a title="Wendy on Foodista" href="http://www.foodista.com/profile/4STFY346/wendy" style="display: block; padding: 5px; border: 5px solid #C44F50; -moz-border-radius: 2px; -webkit-border-radius: 2px; background-color: #fff; width: 100px; text-align: center; text-indent: 0;"><img alt="Wendy on Foodista" src="http://cf.foodista.com/static/images/widget_logo_md.png" style="border: none; width: 84px; height: 18px; padding: 0; margin: 0;" /><img src="http://dyn.foodista.com/content/embed/z1.png?foodista_widget_4STFY346_4STFY346" style="display: none;" alt="foodista" /></a></center>
+
+<br />
+
+<center><a
+href="http://www.myblogspark.com/" target="_blank"><img src="http://www.myblogspark.com/images/MBSWebButton.jpg" alt="Blog Search" width="149" height="70" border="0" /></a></center>
+<br />
+<center><a href="http://www.themomblogs.com">
+<img border="0" src="http://www.themomblogs.com/smmbbutton.jpg" width="113" height="41" alt="The Mom Blogs" /></a></center>
+<br />
+
+<center><a href="http://www.business2blogger.com/" target="_blank"><img src="http://business2blogger.com/wp-content/uploads/2010/01/b2bbutton111.png" alt="Business 2 Blogger" width="125" height="125" /></a></center>
+<br />
+<center><a href="http://www.usfamilyguide.com/">
+<img src="http://www.usfamilyguide.com/graphics/USFGmemberbadge.png" width="125" height="175" alt="USFamilyGuide.com" /></a></center>
+
+<br />
+
+</marquee></center>
+<br />
+<center><a href="http://www.foodblogs.com"><img src="http://www.foodblogs.com/files/badges/foodblogs_badge2_265x50.jpg" alt="Proud member of FoodBlogs" border="0" width="265" height="50" /></a></center>
+<br />
+<center><a href="http://www.foodieblogroll.com" title="Foodie Blogroll" target="_blank"><img src="http://widget.foodieblogroll.com/?BlogID=13279&styleID=1&wp=1" border="0" alt="Foodie Blogroll" /></a></center></div>
+		</li><li id="text-7" class="widget widget_text"><h2 class="widgettitle">Follow AMFT!</h2>			<div class="textwidget"><!-- Include the Google Friend Connect javascript library. -->
+<script type="text/javascript" src="http://www.google.com/friendconnect/script/friendconnect.js"></script>
+<!-- Define the div tag where the gadget will be inserted. -->
+<div id="div-863587709690677239" style="width:276px;border:1px solid #cccccc;"></div>
+<!-- Render the gadget into a div. -->
+<script type="text/javascript">
+var skin = {};
+skin['BORDER_COLOR'] = '#cccccc';
+skin['ENDCAP_BG_COLOR'] = '#e0ecff';
+skin['ENDCAP_TEXT_COLOR'] = '#333333';
+skin['ENDCAP_LINK_COLOR'] = '#0000cc';
+skin['ALTERNATE_BG_COLOR'] = '#ffffff';
+skin['CONTENT_BG_COLOR'] = '#ffffff';
+skin['CONTENT_LINK_COLOR'] = '#0000cc';
+skin['CONTENT_TEXT_COLOR'] = '#333333';
+skin['CONTENT_SECONDARY_LINK_COLOR'] = '#7777cc';
+skin['CONTENT_SECONDARY_TEXT_COLOR'] = '#666666';
+skin['CONTENT_HEADLINE_COLOR'] = '#333333';
+skin['NUMBER_ROWS'] = '4';
+google.friendconnect.container.setParentUrl('/' /* location of rpc_relay.html and canvas.html */);
+google.friendconnect.container.renderMembersGadget(
+ { id: 'div-863587709690677239',
+   site: '04946891970339427948' },
+  skin);
+</script>
+
+<div id='networkedblogs_nwidget_container' style='height:360px;padding-top:10px;'><div id='networkedblogs_nwidget_above'></div><div id='networkedblogs_nwidget_widget' style="border:1px solid #D1D7DF;background-color:#F5F6F9;margin:0px auto;"><div id="networkedblogs_nwidget_logo" style="padding:1px;margin:0px;background-color:#edeff4;text-align:center;height:21px;"><a href="http://networkedblogs.com/" target="_blank" title="NetworkedBlogs"><img style="border: none;" src="http://static.networkedblogs.com/static/images/logo_small.png" alt="NetworkedBlogs" title="NetworkedBlogs"/></a></div><div id="networkedblogs_nwidget_body" style="text-align: center;"></div><div id="networkedblogs_nwidget_follow" style="padding:5px;"><a style="display:block;line-height:100%;width:90px;margin:0px auto;padding:4px 8px;text-align:center;background-color:#3b5998;border:1px solid #D9DFEA;border-bottom-color:#0e1f5b;border-right-color:#0e1f5b;color:#FFFFFF;font-family:'lucida grande',tahoma,verdana,arial,sans-serif;font-size:11px;text-decoration:none;" href="http://networkedblogs.com/blog/around_my_family_table/?ahash=f2718d7fe629ccb7e2d5fa770bd92d1d">Follow this blog</a></div></div><div id='networkedblogs_nwidget_below'></div></div><script type="text/javascript"><!--
+if(typeof(networkedblogs)=="undefined"){networkedblogs = {};networkedblogs.blogId=469181;networkedblogs.shortName="around_my_family_table";}
+--></script><script src="http://nwidget.networkedblogs.com/getnetworkwidget?bid=469181" type="text/javascript"></script>						</div>
+		</li><li id="text-13" class="widget widget_text">			<div class="textwidget"><script type='text/javascript' src='http://groupon.com/javascripts/common/widget.js'></script><script type='text/javascript'>new GRPN.Widget({"referral_code":"uu224893"}).render();</script></div>
+		</li><li id="meta-3" class="widget widget_meta"><h2 class="widgettitle">Meta</h2>			<ul>
+						<li><a rel="nofollow" href="http://www.aroundmyfamilytable.com/wp-login.php">Log in</a></li>
+			<li><a href="http://www.aroundmyfamilytable.com/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://www.aroundmyfamilytable.com/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+						</ul>
+</li><li id="text-9" class="widget widget_text">			<div class="textwidget"><center><p><a href="http://feeds.feedburner.com/AroundMyFamilyTable"><img src="http://feeds.feedburner.com/~fc/AroundMyFamilyTable?bg=FFFF99&amp;fg=000000&amp;anim=1" height="26" width="88" style="border:0" alt="" /></a></p></center>
+
+<center><a href="http://www.prchecker.info/" title="PageRank Checking Icon" target="_blank">
+<img src="http://pr.prchecker.info/getpr.php?codex=aHR0cDovL2Fyb3VuZG15ZmFtaWx5dGFibGUuY29t&tag=3" alt="PageRank Checking Icon" style="border:0;" /></a><center>
+
+<center><a href="http://www.allcookingsites.com/"><img src="http://www.allcookingsites.com/rank/Wendy/a1.gif" alt="All Cooking Sites" border="0" /></a></center><br />
+
+<center><a href="http://www.alexa.com/siteinfo/www.aroundmyfamilytable.com"><script type='text/javascript' language='javascript' src='http://xslt.alexa.com/site_stats/js/t/a?url=www.aroundmyfamilytable.com'></script></a></center>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20582039-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</div>
+		</li>		</ul>
+	</div>
+
+
+	
+	</div><!-- #page-wrap -->
+		
+		<div id="footer">
+			<p class="alignleft">&copy; Copyright Around My Family Table | <a href="http://www.aroundmyfamilytable.com/feed/">Entries (RSS)</a> | <a href="http://www.aroundmyfamilytable.com/comments/feed/">Comments (RSS)</a></p>
+			<p class="alignright">WordPress theme by <a href="http://lauriliimatta.com">Lauri Liimatta</a></p>
+		</div>
+			
+	</div><!-- #shadow -->
+
+</div><!-- #wrapper -->
+
+<center><script type="text/javascript"><!--
+google_ad_client = "ca-pub-3716571835575631";
+/* Footer */
+google_ad_slot = "2370201605";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></center>
+
+
+</body>
+</html>

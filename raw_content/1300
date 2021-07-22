@@ -1,0 +1,2296 @@
+﻿<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+    <script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+<title>TeamBuy</title>
+  
+  <!-- Place favicon.ico in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+<link href="/lib/webfontkit/stylesheet.css" type="text/css" rel="stylesheet" />
+
+  <!-- CSS : implied media="all" -->
+  <link type="text/css" rel="stylesheet" href="/css/style.css">
+  <link href='//fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css' />
+
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="/js/libs/modernizr-1.7.min.js"></script>
+
+  <!-- Google Analytics -->
+  <script>
+   var _gaq = [['_setAccount', 'UA-11265932-1'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+  </script>
+
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>
+        var facebook_clicked = false;
+        window.fbAsyncInit = function() {
+            FB.init(
+                { appId      : '178199288867996'
+                , status     : true
+                , cookie     : true
+                , xfbml      : true
+                }
+            );
+        };
+
+        (function(d) {
+            var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+            if (d.getElementById(id)) {return;}
+            js = d.createElement('script'); js.id = id; js.async = true;
+            js.src = "//connect.facebook.net/en_US/all.js";
+            d.getElementsByTagName('head')[0].appendChild(js);
+        }(document));
+    </script>
+
+      <div id="header_subscribe-section">
+        <div id="header-subscribe">
+    <div id="header-subscribe-page-wrap">
+<!-- if user logged in and subscribe, skip -->
+<!-- TODO: include javascript to disable if local storage is set for the current location -->
+        <form action="/account/subscribe" method="POST">
+            <a href="#" id="header-close">
+                <img src="http://d1o74metl8bqim.cloudfront.net/buttons/btn-close.png">
+            </a>
+
+            <input id="subscribe" class="pink-button small-2" type="submit" name="submit" value="Subscribe" />
+            <div id="subscribe-el">
+                <span id="subscribe-description">Email me the Daily Deal:</span>
+                <label>City:</label>
+                <select name="city">
+<option value="toronto">Toronto</option>
+<option value="ottawa">Ottawa-Gatineau</option>
+<option value="montreal">Montreal</option>
+<option value="calgary">Calgary</option>
+<option value="vancouver">Vancouver</option>
+<option value="halifax">Halifax</option>
+<option value="mississauga">Mississauga</option>
+<option value="london">London</option>
+<option value="kitchener">Kitchener/Waterloo</option>
+<option value="edmonton">Edmonton</option>
+<option value="quebec">Quebec City</option>
+<option value="winnipeg">Winnipeg</option>
+<option value="victoria">Victoria</option>
+<option value="hamilton">Hamilton</option>
+<option value="guelph">Guelph</option>
+<option value="gta">GTA</option>
+<option value="brampton">Brampton</option>
+<option value="york_region">York Region</option>
+<option value="durham_region">Durham Region</option>
+<option value="barrie">Barrie</option>
+<option value="niagara">Niagara/St. Catharines</option>
+<option value="windsor">Windsor</option>
+<option value="regina">Regina</option>
+<option value="saskatoon">Saskatoon</option>
+<option value="st_johns">St. John's</option>
+<option value="fredericton">Fredericton</option>
+<option value="moncton">Moncton</option>
+<option value="saint_john">Saint John</option>
+<option value="abbotsford">Abbotsford</option>
+<option value="kelowna">Kelowna</option>
+<option value="kingston">Kingston</option>
+<option value="sudbury">Sudbury</option>
+<option value="laval">Laval</option>
+<option value="sherbrooke">Sherbrooke</option>
+<option value="saguenay">Saguenay</option>
+<option value="kawartha_lakes">Kawartha Lakes</option>
+<option value="halton_region">Halton Region</option>
+<option value="seed">seed</option>
+</select>
+                <label>Email:</label>
+                <input type="email" name="email" value="" placeholder="example@domain.com"/>
+            </div>
+        </form>
+    </div>
+</div>
+      </div>
+
+    <div id="background-wrapper">
+        <header id="banner">
+            <div style="display:none;">
+
+    <div id="cityBoxFancyAP" class="lightbox" style="width:540px;padding:20px;">
+        <table>
+             <tr>
+                    <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-abbotsford" style="cursor:pointer">Abbotsford</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-barrie" style="cursor:pointer">Barrie</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-brampton" style="cursor:pointer">Brampton</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-calgary" style="cursor:pointer">Calgary</a></span></div>
+                                            </td>
+                                    </tr>
+                                 <tr>
+                    <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-durham_region" style="cursor:pointer">Durham Region</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-edmonton" style="cursor:pointer">Edmonton</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-fredericton" style="cursor:pointer">Fredericton</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-guelph" style="cursor:pointer">Guelph</a></span></div>
+                                            </td>
+                                    </tr>
+                                 <tr>
+                    <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-halifax" style="cursor:pointer">Halifax</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-halton_region" style="cursor:pointer">Halton Region</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-hamilton" style="cursor:pointer">Hamilton</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-kawartha_lakes" style="cursor:pointer">Kawartha Lakes</a></span></div>
+                                            </td>
+                                    </tr>
+                                 <tr>
+                    <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-kelowna" style="cursor:pointer">Kelowna</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-kingston" style="cursor:pointer">Kingston</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-kitchener" style="cursor:pointer">Kitchener/Waterloo</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-laval" style="cursor:pointer">Laval</a></span></div>
+                                            </td>
+                                    </tr>
+                                 <tr>
+                    <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-london" style="cursor:pointer">London</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-mississauga" style="cursor:pointer">Mississauga</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-moncton" style="cursor:pointer">Moncton</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-montreal" style="cursor:pointer">Montreal</a></span></div>
+                                            </td>
+                                    </tr>
+                                 <tr>
+                    <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-niagara" style="cursor:pointer">Niagara/St. Catharines</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-ottawa" style="cursor:pointer">Ottawa-Gatineau</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-quebec" style="cursor:pointer">Quebec City</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-regina" style="cursor:pointer">Regina</a></span></div>
+                                            </td>
+                                    </tr>
+                                 <tr>
+                    <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-saguenay" style="cursor:pointer">Saguenay</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-saint_john" style="cursor:pointer">Saint John</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-saskatoon" style="cursor:pointer">Saskatoon</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-sherbrooke" style="cursor:pointer">Sherbrooke</a></span></div>
+                                            </td>
+                                    </tr>
+                                 <tr>
+                    <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-st_johns" style="cursor:pointer">St. John's</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-sudbury" style="cursor:pointer">Sudbury</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-toronto" style="cursor:pointer">Toronto</a></span></div>
+                                            </td>
+                                                <td>
+                                                <div class="otherCityCurrent"><span><a style="color:#48baeb" id="change-to-vancouver" style="cursor:pointer">Vancouver</a></span></div>
+                                            </td>
+                                    </tr>
+                                 <tr>
+                    <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-victoria" style="cursor:pointer">Victoria</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-windsor" style="cursor:pointer">Windsor</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-winnipeg" style="cursor:pointer">Winnipeg</a></span></div>
+                                            </td>
+                                                <td>
+                                                    <div class="otherCityLive"><span><a id="change-to-york_region" style="cursor:pointer">York Region</a></span></div>
+                                            </td>
+                                    </tr>
+                            </table>
+    </div>
+</div>
+
+    <div id="header-container">
+      <div id="header">
+        <nav id="menu-main">
+          <ul>
+              <li ><a href="http://www.teambuy.ca/howItWorks.php">How it Works</a></li>
+                      </ul>
+        </nav>
+          <div id="header-logo">
+            <a href="http://www.teambuy.ca/">
+              <img id="header-logo-image" src="http://dr5q9l6ruw3lj.cloudfront.net/logo.png" width="230" height="70" alt="TeamBuy.ca">
+            </a>
+          </div>
+        <!-- city selector -->
+        <div id="header-city">
+          <a id="changeCityLinkFancy" href="#cityBoxFancyAP" class="fancybox">
+            <span id="header-city-current">Vancouver</span>
+            <div id="header-city-select-container">
+                <span class="btn-dropdown"></span>
+                <span id="header-city-select">Change City</span>
+            </div>
+          </a>
+        </div>
+
+        <div id="context-box">
+
+            <!-- shopping bag -->
+            <div id="shopping-bag-counter">
+                <a id="shopping-bag-link" class="pink-link" href="https://www.teambuy.ca/en/shopping-bag">
+                    <span id="shopping-bag-counter-label">
+                        My Shopping Bag                    </span>
+                    <span id="shopping-bag-counter-icon" class="empty-shopping-bag"></span>
+                </a>
+            </div>
+
+            <!-- sign in -->
+            <div id="header-account">
+                <span class="fb_button">
+                    <div class="fb-login-button" data-show-faces="false" data-width="200" data-max-rows="1" data-scope="email">
+                        Connect
+                    </div>
+                </span>
+
+                <a id="header-signin-button" href="https://www.teambuy.ca/signIn.php">Sign In | Sign Up</a>
+
+            </div>
+                                <div class="change-lang-div"><a href="http://www.teambuy.ca/fr" class="change-lang">Français</a></div>
+                        </div>
+
+      </div>
+    </div>
+
+
+    <div id="vrts">
+        <ul class="vrts ">
+            <li class="vrts-li"><a href="http://www.teambuy.ca/en/vancouver/all-buys" class="vrts-a current-page">ALL BUYS</a><span class="vrts-li-border"></span></li>
+            <li class="vrts-li"><a href="http://www.teambuy.ca/en/vancouver/all-buys/local" class="vrts-a  ">LOCAL</a><span class="vrts-li-border"></span></li>
+            <li class="vrts-li"><a href="http://www.teambuy.ca/en/vancouver/all-buys/products" class="vrts-a  ">PRODUCTS</a><span class="vrts-li-border"></span></li>
+            <li class="vrts-li"><a href="http://www.teambuy.ca/theTravelRoom.php?travel=true" class="vrts-a ">TRAVEL</a><span class="vrts-li-border"></span></li>
+            <li class="vrts-li"><a href="http://www.teambuy.ca/en/vancouver/all-buys/family" class="vrts-a  ">KIDS & BABY</a><span class="vrts-li-border"></span></li>
+  			<li class="vrts-li"><a href="http://www.teambuy.ca/en/vancouver/all-buys/home_decor" class="vrts-a  ">HOME</a><span class="vrts-li-border"></span></li>
+            
+            <li class="vrts-li"><span class="vrts-new">New!</span><a href="http://www.teambuy.ca/en/lottery/gas_card/s" class="vrts-a ">CONTEST</a></li>
+        </ul>
+    </div>
+        </header>
+
+        
+<style type="text/css">
+            #banner_container{
+            width:1010px;
+            margin-left:auto;
+            margin-right:auto
+        }
+        #banner_top{
+            clear:both;
+        }
+        #banner_top_link{
+            display:block; 
+            position:relative;
+            margin:auto;
+            margin-top: 9px;
+            width:1010px;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+        }
+                    #banner_top_close_button{
+                display:none;
+            }
+        </style>
+
+<script type="text/javascript">
+            document.getElementById("header-logo-image").src = "http://d2w0nea8vff8w.cloudfront.net/logos/valentines_website323x93.png";
+    </script>
+
+        <div id="content_body">
+
+          <div id="container">
+
+<div id="banner_container">
+    <div id="banner_top">
+        <a id="banner_top_close_button" href="#">&times;</a>
+        <a id="banner_top_link" ><img src="http://d2es5bp56u9o6g.cloudfront.net/banners/gas-contest-banner-en.jpg"/></a>
+    </div>
+</div>
+
+
+<article id="page-wrap">
+                    <input type="hidden" id="deal_id-28136085" value="28136085" />
+                                    <section class="all-buys-deal-section deal-section-1010">
+                        <div class="deal-section-inner-1010">
+                            <a class="image-link" href="http://www.teambuy.ca/vancouver/28136085">
+                                <div class="deal-section-left-column-1010">
+                                    <div class="swap-container">
+                                        <div class="show large-swap-height">
+                                        <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/540x254/other/20120206dawamanipedi.jpg"  width="540" height="254"/>                                        </div>
+                                        <div class="hide"></div>
+                                        <div class="hide-content">
+                                            <div class="large-padding">
+                                                <h3>
+                                                    Dawa Spa                                                </h3>
+                                                <p1>
+                                                    <p>&bull; Pedicure comes with a jet foot spa with aromatherapy.</p><p>&bull; 
+Get your nails, cuticles, and callouses all buffed, exfoliated, and polished.</p><p>&bull; 
+Uses all-organic products.</p><p>&bull; 
+Chic and clean environment.</p><p>&bull; 
+Located in the heart of Commercial Drive.</p>
+                                                </p1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="deal-section-right-column-1010">
+                                <div class="deal-section-right-column-upper-1010">
+                                    <h3>
+                                        $25 for a 30-Minute Manicure and 60-Minutes Pedicure at Dawa Spa ($75 Value)                                    </h3>
+                                    <h4>
+                                        Dawa Spa                                    </h4>
+                                    <p>
+                                        Don't settle for tired-looking tootsies, get a toe-tally awesome makeover with today's TeamBuy: $25 for a 30-Minute Manicure and 60-Minutes Pedicure at Dawa Spa.
+Located on Commercial Drive, Dawa Spa is an urban oasis ripe with a variety of beauty treatments. They are committed to meeting, and excee...                                    </p>
+                                </div>
+                                <div class="deal-section-right-column-lower-1010">
+                                    <div class="deal-section-buys-1010">
+                                        98 Buys                                    </div>
+                                    <div class="deal-section-time-left-1010">
+                                       <img src="/web-app/images/icons/clock.png"/>
+                                       <span id="deal_timer-28136085">6h 01m 49s</span>
+                                       <input type="hidden" id="deal_end_date-28136085" value="1328601600"/>
+                                    </div>
+                                    <a href="http://www.teambuy.ca/vancouver/28136085" class="pink-button small-2 float-right">
+                                        View Deal                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                                <input type="hidden" id="deal_id-28135888" value="28135888" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135888">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120206centerspace0.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Center Space Pilates & Health                                        </h4>
+                                        <p>
+                                            <p>&bull; Located in the heart of Vancouver's Kitsilano neighbourhood.</p><p>&bull; 
+Increase core strength, improve posture and prevent injuries.</p><p>&bull; 
+Customized to suit your body.</p><p>&bull; 
+Lose weight and in...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $19 for 3 Mat OR 2 Reformer/Apparatus Pilates Classes at Center Space Pilates &amp; Health (up to $60 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                14 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135888">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135888" value="1329120000"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135045" value="28135045" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135045">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120201arturo.1.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Arturo's Mexico To Go                                        </h4>
+                                        <p>
+                                            <p>&bull; 81% approval rating on UrbanSpoon</p><p>&bull; 
+Fusion of Spanish and Mexican flavours.</p><p>&bull; 
+Hand-picked fresh ingredients.</p><p>&bull; 
+Convenient downtown location at Howe & West Cordova.</p><p>&bull; 
+High quality...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $10 For $20 Worth of Burritos, Quesadillas, Enchiladas and More from Arturo's Mexico 2 Go                             </h4>
+                            <div class="deal-section-buys">
+                                211 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135045">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135045" value="1328688000"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135893" value="28135893" />
+                                    <section class="all-buys-deal-section deal-section-330 ">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135893">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/2012020120120201massback45_v2.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Momentum Bodywork and Massage                                        </h4>
+                                        <p>
+                                            <p>&bull; Complete choice of 60-minute massage.</p><p>&bull; 
+Choose from Swedish, Deep Flow Bodywork, Ayurvedic Bodywork and more.</p><p>&bull; 
+Open daily throughout Friday and the weekend.</p><p>&bull; 
+Massage practitio...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $25 for a Sixty Minute Massage of Your Choice from Momentum Bodywork and Massage (an $80 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                152 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135893">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135893" value="1328688000"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135860" value="28135860" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135860">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120206qstick2-1.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Tazl Inc.                                        </h4>
+                                        <p>
+                                            <p>&bull; New and innovative product for facial hair removal.</p><p>&bull; 
+Great alternative to threading, shaving, or waxing.</p><p>&bull; 
+Convenient, easy and safe for all skin types.</p><p>&bull; 
+Used by both both men...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $16 for 2 Unique Facial Hair Removal Tools from Tazl Inc. - Shipping Included! ($32 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                63 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135860">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135860" value="1329120000"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135563" value="28135563" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135563">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120130dzignart-arev2.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            www.dzignart.com                                        </h4>
+                                        <p>
+                                            <p>&bull; 100% handmade oil painting, metal wall art.</p><p>&bull; 
+Abstract, landscape, still life, African, Asian and many other canvas paintings.</p><p>&bull; 
+Perfect for art connoisseurs looking to increas...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $29 for Your Choice of Gorgeous and Unique Abstract Oil Paintings from Dzignart.com (a $100 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                413 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135563">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135563" value="1328601600"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135985" value="28135985" />
+                                    <section class="all-buys-deal-section deal-section-330 ">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135985">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120131jysk-01.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            JYSK Linen N Furniture Inc                                        </h4>
+                                        <p>
+                                            <p>&bull; Brings traditional European design to North-American homes.</p><p>&bull; 
+Established in 34 countries with 1,750 retail stores.</p><p>&bull; 
+Products for your bedroom, bathroom, kitchen, living room,...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $25 for $50 OR $50 for $100 to Spend on Modern Home Furnishing Online at JYSK.ca- 5 Locations                            </h4>
+                            <div class="deal-section-buys">
+                                162 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135985">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135985" value="1328601600"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28136043" value="28136043" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28136043">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120206syhelodiamonds.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Say Hello Diamonds                                        </h4>
+                                        <p>
+                                            <p>&bull; Choice of 1 or 2 Carat round cut stud earrings in a four prong setting.</p><p>&bull; 
+Each set of earrings are made in Indonesia, come set in Sterling Silver posts and sparkle and shine j...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $49 for a Pair of 1 Carat OR $59 for 2 Carat Diamond Veneer Earrings (Up to $195 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                21 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28136043">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28136043" value="1329120000"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135495" value="28135495" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135495">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120204lvshackvdayrev.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Love Shack Canada                                        </h4>
+                                        <p>
+                                            <p>&bull; Choose from available stock of toys, adult novelties, books, games, kama sutra products and more!</p><p>&bull; 
+Can be used on sale items.</p><p>&bull; 
+Quick and easy, safe and secure.</p><p>&bull; 
+Delivered rig...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $25 for $75 Credit Towards Adult Products and Toys at Love Shack Canada                            </h4>
+                            <div class="deal-section-buys">
+                                420 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135495">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135495" value="1329033600"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28136053" value="28136053" />
+                                    <section class="all-buys-deal-section deal-section-330 ">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28136053">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120203pooq.2012-1.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            POOQ Pursehook                                        </h4>
+                                        <p>
+                                            <p>&bull; Fuses a love of jewellery with fashion and design in a gadget that defies gravity.</p><p>&bull; 
+With a magnetic clasp, the palm-sized foldable purse hooks hold up to 25 lbs.</p><p>&bull; 
+5 collectio...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $10 for Your Choice of Any Fashionable POOQ Purse Hook ($39 Value)                              </h4>
+                            <div class="deal-section-buys">
+                                193 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28136053">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28136053" value="1328860800"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135728" value="28135728" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135728">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120131DigiartySoftware.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Digiarty Software, Inc                                        </h4>
+                                        <p>
+                                            <p>&bull; Rips DVD to iPhone/iPhone 4S, iPad/iPad 2, iPod, Apple TV, Android, HTC, Samsung, XOOM, Galaxy Tab, PSP.</p><p>&bull; 
+Convert DVD to AVI, MP4, FLV, WMV, MOV, MPEG, & more.</p><p>&bull; 
+Copy DVD to H...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $17 for a MacX DVD Ripper Pro or MacX Video Converter Pro for Windows &amp; Mac Computers - Taxes Included ($50 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                178 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135728">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135728" value="1328601600"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28136011" value="28136011" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28136011">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120204luxorlinen2.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Luxor Linens                                        </h4>
+                                        <p>
+                                            <p>&bull; Each robe can be customized with a single-letter monogram in burgundy, gold, or black colours.</p><p>&bull; 
+Luxurious spa feel.</p><p>&bull; 
+Made from 100% Egyptian cotton.</p><p>&bull; 
+Includes special gift pa...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $49 for One, or $79 for Two Egyptian Cotton Monogrammed Spa Robes (up to a $398 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                162 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28136011">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28136011" value="1328947200"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135698" value="28135698" />
+                                    <section class="all-buys-deal-section deal-section-330 ">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135698">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120116canopymain.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Carseat Canopy                                        </h4>
+                                        <p>
+                                            <p>&bull; Made for year-round use; fabrics not too heavy for summer and not too thin for winter.</p><p>&bull; 
+Soft, snuggly, loveable 100% polyester mink interiors.</p><p>&bull; 
+Each canopy fits all makes and...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $39 for a 5-Piece Canopy Set from Carseat Canopy ($135 Value)                             </h4>
+                            <div class="deal-section-buys">
+                                153 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135698">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135698" value="1328601600"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135744" value="28135744" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135744">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120118powercapes.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Power Capes                                        </h4>
+                                        <p>
+                                            <p>&bull; Completely customizable superhero capes.</p><p>&bull; 
+Shipped directly to your door.</p><p>&bull; 
+Choose the colour, design, emblem, letters and more!</p><p>&bull; 
+Makes a great, unique gift.</p><p>&bull; 
+Capes come in a n...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $17 for a Customized Superhero Cape from Power Capes (a $35 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                79 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135744">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135744" value="1328601600"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135899" value="28135899" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135899">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120204nokiabt.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            www.directshops.ca                                        </h4>
+                                        <p>
+                                            <p>&bull; Cutting edge and Compact design.</p><p>&bull; 
+Superior audio quality with DSP technology (digital sound</p><p>&bull; 
+processing).</p><p>&bull; 
+Two easy-to-use buttons allow for transferable call</p><p>&bull; 
+management.</p><p>&bull; 
+F...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $29 for a Genuine Nokia Bluetooth BH-804 Headset (a $129 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                77 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135899">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135899" value="1328947200"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135824" value="28135824" />
+                                    <section class="all-buys-deal-section deal-section-330 ">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135824">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120202ezair.feature1.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            EZAir Wireless                                        </h4>
+                                        <p>
+                                            <p>&bull; Stream in real time, anything including Netflix, YouTube, and media on your computer.</p><p>&bull; 
+Completely wireless with no cables and no hassle!</p><p>&bull; 
+Quick and easy set-up with USB devic...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $89 for a Wireless PC-to-TV Streaming Device from EZAirWireless.com ($189 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                59 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135824">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135824" value="1328774400"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135968" value="28135968" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135968">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120202funkysocks_01.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            My Funky Socks                                        </h4>
+                                        <p>
+                                            <p>&bull; Over 200 Different Designs and Patterns to choose from.</p><p>&bull; 
+Add a little flair to any of your outfits.</p><p>&bull; 
+Offering all sizes for both men and women, as well as children.</p><p>&bull; 
+Order mu...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $18 for a $40 Credit Towards Colourful and Expressive Socks - Choose From Over 200 Designs                            </h4>
+                            <div class="deal-section-buys">
+                                58 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135968">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135968" value="1328774400"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28136007" value="28136007" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28136007">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120203empowerpads1.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Empower Pads                                        </h4>
+                                        <p>
+                                            <p>&bull; 5 Star rating on Amazon.com!</p><p>&bull; 
+Negative Ion technology now in a sanitary napkin.</p><p>&bull; 
+Helps to relieve pain associated with menstrual cramping.</p><p>&bull; 
+Offering 7 layers of total protect...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $19 for a 5 Pack of Negative Ion Empower Pads - Including Tax and Shipping ($45 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                55 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28136007">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28136007" value="1328860800"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28136006" value="28136006" />
+                                    <section class="all-buys-deal-section deal-section-330 ">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28136006">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120202clthinaboxvltns.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Cloth In A Box                                        </h4>
+                                        <p>
+                                            <p>&bull; First luxury facecloth made just for a girl’s face and neck.</p><p>&bull; 
+Heart-shaped design to contour your entire face.</p><p>&bull; 
+Deep cleansing yet very gentle on your face and neck.</p><p>&bull; 
+The n...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $8 for an Exfoliating Heart-Shaped Face Cloth from Cloth In A Box ($17 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                50 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28136006">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28136006" value="1328774400"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135411" value="28135411" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135411">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120202feature-img.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Medical Esthetics by Katie                                        </h4>
+                                        <p>
+                                            <p>&bull; Convenient location at Cadeaux Gifts and Home Embellishments.</p><p>&bull; 
+Enjoy this amazing semi-permanent makeup accessory that lasts 4-6 weeks!</p><p>&bull; 
+Popular trend among celebrities inclu...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $39 for a Set of Wink Lavish Lash Extensions from Medical Esthetics by Katie ($99 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                30 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135411">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135411" value="1328774400"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28136054" value="28136054" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28136054">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120204beercon-1.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Beer Connoisseur                                        </h4>
+                                        <p>
+                                            <p>&bull; Published quarterly.</p><p>&bull; 
+Glossy page magazine that covers the latest in beer and brewery news.</p><p>&bull; 
+Reviews of different types of beers as well as food pairings and more.</p><p>&bull; 
+Learn abo...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $28 for a Two-Year Subscription to The Beer Connoisseur® Magazine plus an All Access Online Membership ($64 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                26 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28136054">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28136054" value="1328947200"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135805" value="28135805" />
+                                    <section class="all-buys-deal-section deal-section-330 ">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135805">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120201jillybo1.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Jilly Bo Billy Boutique                                        </h4>
+                                        <p>
+                                            <p>&bull; Canadian company, based in British Columbia</p><p>&bull; 
+Has a loyalty and referral rewards program.</p><p>&bull; 
+Carries favourite boutique brands, including Oilily, Room Seven, Misha Lulu, Pom Pom...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $20 for $40 Worth of Online Children's Clothing and Accessories at Jilly Bo Billy Boutique                            </h4>
+                            <div class="deal-section-buys">
+                                17 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135805">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135805" value="1328688000"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135887" value="28135887" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135887">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120203gatling-1.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Gateau Lingerie                                        </h4>
+                                        <p>
+                                            <p>&bull; Provides a charming boutique experience when it comes to all things fun and intimate.</p><p>&bull; 
+Top quality lingerie brands including Betsy Johnson, Carol Malony, Coquette, Cosabella,...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $25 for $50 Worth of Gorgeous Lingerie from Gateau Lingerie                            </h4>
+                            <div class="deal-section-buys">
+                                16 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135887">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135887" value="1328860800"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135810" value="28135810" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135810">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120201hometrends-feature.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Canadian Home Trends                                        </h4>
+                                        <p>
+                                            <p>&bull; Offers informative insight to home decorating projects, simple practical ideas, tips, tricks, and much more.</p><p>&bull; 
+Written and published by Canadians, for Canadians.</p><p>&bull; 
+Each issue i...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $12 for a 1 Year Digital Subscription to Canadian Home Trends Magazine ($69 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                12 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135810">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135810" value="1328688000"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135937" value="28135937" />
+                                    <section class="all-buys-deal-section deal-section-330 ">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135937">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120206deltator__1.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Delta Chelsea                                        </h4>
+                                        <p>
+                                            <p>&bull; Valid for Thursday, Friday, and Saturday - perfect for a weekend getaway!</p><p>&bull; 
+Travel all the way until June 30th, ideal for summer vacations.</p><p>&bull; 
+The Delta Chelsea is located in To...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $169 for 1-Night Weekend Stay in a Deluxe Room with Dinner for 2, Parking, and More at Delta Chelsea ($367 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                12 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135937">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135937" value="1329120000"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135955" value="28135955" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135955">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120206marriott_falls-1.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Marriott Gateway on the Falls                                        </h4>
+                                        <p>
+                                            <p>&bull; Choose between the Cityview room, or Fallsview room which has an unparalleled view of the Horseshoe Falls.</p><p>&bull; 
+The Marriott has undergone a $15 Million Renovation  to make it a ...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $99 for a Cityview Room or $139 for a Fallsview Room With 2 Breakfast Buffets, $25 Milestone Credit (Up To $242 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                11 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135955">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135955" value="1329120000"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135919" value="28135919" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135919">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120131techbellfeat.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            TechBell Computer Service                                        </h4>
+                                        <p>
+                                            <p>&bull; Give your computer a fresh start make it run like new again.</p><p>&bull; 
+Fully mobile service, they will come to you.</p><p>&bull; 
+Get all problems solved: speed up your machine, virus and spyware ...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $29 for a Complete Computer Restore and Data Backup with Pickup &amp; Delivery Included ($160 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                10 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135919">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135919" value="1328601600"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135969" value="28135969" />
+                                    <section class="all-buys-deal-section deal-section-330 ">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135969">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120202feelphobou-1.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Feeling Photography                                        </h4>
+                                        <p>
+                                            <p>&bull; Includes the shoot, pictures, and online gallery.</p><p>&bull; 
+Comfortable atmosphere throughout your entire photo shoot experience.</p><p>&bull; 
+Led by professional photographer Suzanne Rushton.</p><p>&bull; 
+A...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $49 for a 45-Min Boudoir Photo Session, 8x10 or 5x7 Prints, &amp; Online Gallery from Feeling Photography ($252 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                9 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135969">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135969" value="1328774400"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135966" value="28135966" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135966">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120202allaboardvlntns.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            All Aboard                                        </h4>
+                                        <p>
+                                            <p>&bull; Great decorative items for any room of your home - from the nursery to the front door!</p><p>&bull; 
+Handcrafted from quality wood, completely customized to your message specifications.</p><p>&bull; 
+...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $36 for an $80 Credit Towards Hand-Crafted, Personalized Signboards and Letter Art from All Aboard                            </h4>
+                            <div class="deal-section-buys">
+                                8 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135966">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135966" value="1328774400"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28136001" value="28136001" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28136001">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120201clocks.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            TeamBuy - Home & Decor                                        </h4>
+                                        <p>
+                                            <p>&bull; Shipped directly to your door.</p><p>&bull; 
+Will make a statement in any room.</p><p>&bull; 
+Elegant and chic designs.</p><p>&bull; 
+Made of quality materials.</p>
+                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $81 and Up for Your Choice of Stunning and Personable Wall Clocks- Tax &amp; Shipping Included (up to a $133 Value)                             </h4>
+                            <div class="deal-section-buys">
+                                2 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28136001">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28136001" value="1328688000"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28136003" value="28136003" />
+                                    <section class="all-buys-deal-section deal-section-330 ">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28136003">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120201frgnce.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            TeamBuy - Home & Decor                                        </h4>
+                                        <p>
+                                            <p>&bull; From makers Ashleigh and Burwood who are synonymous with high quality, innovative home fragrance products.</p><p>&bull; 
+Infuse the air with a blissful scent which will also freshen your ...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $58 for a Choice of Sea and Sky OR Cordoba Plate and Fragrance Set ($95 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                2 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28136003">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28136003" value="1328688000"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28136070" value="28136070" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28136070">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120206Abadin-Europeanrevised2.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            Abadin European Style Bed and Breakfast                                        </h4>
+                                        <p>
+                                            <p>&bull; Boutique Bed and Breakfast located between Ottawa & Montreal.</p><p>&bull; 
+Chic modern interior with stunning and comfortable furnishings.</p><p>&bull; 
+Each room is uniquely designed and includes 40...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $199 for a 2-Night Getaway with Wine, Chocolate, Breakfast and More at Abadin European Style B&amp;B ($405 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                0 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28136070">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28136070" value="1329120000"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28136002" value="28136002" />
+                                    <section class="all-buys-deal-section deal-section-330 right-margin">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28136002">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120201mirrors.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            TeamBuy - Home & Decor                                        </h4>
+                                        <p>
+                                            <p>&bull; Shipped directly to your door.</p><p>&bull; 
+The exciting 'sunburst' mirror design is executed in all gold tone with matte finished metal.</p><p>&bull; 
+The metal wall mirror is hand cut and made of b...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $81 and Up for Your Choice of Gold or Metal Wall Mirrors- Tax &amp; Shipping Included (up to a $133 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                0 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28136002">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28136002" value="1328688000"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                                <input type="hidden" id="deal_id-28135652" value="28135652" />
+                                    <section class="all-buys-deal-section deal-section-330 ">
+                    <a class="image-link" href="http://www.teambuy.ca/vancouver/28135652">
+                        <div class="deal-section-inner-330">
+                            <div class="swap-container">
+                                <div class="show small-swap-height">
+                                <img src="http://dr5q9l6ruw3lj.cloudfront.net/deal/330x155/other/20120203searcndchill.jpg"  width="330" height="155"/>                                </div>
+                                <div class="hide"></div>
+                                <div class="hide-content small-padding">
+                                    <div class="small-upper small-padding">
+                                        <h4>
+                                            The Sears Great Canadian Chill                                        </h4>
+                                        <p>
+                                            <p>&bull; "The Coolest Event on Earth."</p><p>&bull; 
+Help raise money for the Sears Charitable Foundation.</p><p>&bull; 
+Benefits 17 Canadian Children's Pediatric Oncology Centres.</p><p>&bull; 
+Fun-filled activity - bring...                                        </p>
+                                    </div>
+                                    <span class="pink-button small-2 float-right right-margin">
+                                        View Deal                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="deal-section-bottom-330">
+                        <div class="bottom-content-330">
+                            <h4>
+                                $25 for 2 Registrations for the Sears Great Canadian Chill - February 18th at Stanley Park ($50 Value)                            </h4>
+                            <div class="deal-section-buys">
+                                0 Buys                            </div>
+                            <div class="deal-section-time-left">
+                                <img src="/web-app/images/icons/clock.png" width="12" height="12"/>
+                                <span id="deal_timer-28135652">6h 01m 49s</span>
+                                <input type="hidden" id="deal_end_date-28135652" value="1328860800"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                </article>            <div style="clear:both"></div>
+          </div> <!--! end of #container -->
+
+        </div>
+    </div>
+
+      <footer id="footer">
+    <div id="footer-top">
+   
+    <h1>Partner With Us</h1>
+    <div class="container medium short float-left">
+        <div class="float-left width-500" style="position: relative;">
+            <h3 class="new-row float-left">Business Owner</h3>
+            <p class="new-row float-left xlong">Want to join an exclusive list of merchants who have run a successful TeamBuy campaign? Click below to learn more about TeamBuy!</p>
+            <img class="pos-right pos-bottom" src="http://d1t106xlvl28jr.cloudfront.net/footer/business-owner.png" />
+            <a class="pink-button pos-left pos-bottom" href="http://www.teambuy.ca/WhyTeamBuy">Get Started</a>
+        </div>
+    </div>
+    
+    <div class="container medium short float-right">
+        <div class="float-right width-500 pos-relative">
+            <h3 class="new-row float-left">Become an Affiliate</h3>
+            <p class="new-row float-left xlong">We want to share TeamBuy with everyone but understand that we can't without some help. Learn more about becoming a TeamBuy Affiliate partner.</p>
+            <img class="pos-right pos-bottom" src="http://d2w0nea8vff8w.cloudfront.net/footer/business-owner-2.png" />
+            <a class="pink-button pos-left pos-bottom" href="http://www.teambuy.ca/WhyTeamBuy/affiliates.php">Learn More</a>
+        </div>
+    </div>
+    <div class="clear-float"></div>
+    
+    <h1>News</h1>
+    
+     <div class="container large tall float-left">
+        <h2 class="float-left">TeamBuy Mobile</h2>
+        <a href="http://www.teambuy.ca/mobile/"><img src="http://d2es5bp56u9o6g.cloudfront.net/footer/mobile.png" class="float-right pos-right pos-bottom" /></a>
+        <div class="clear-float"></div>
+        <p class="float-left long">Download TeamBuy's iPhone and Android Apps, or use our Mobile Website to buy, share, and redeem all on the go!</p>
+        <div class="clear-float"></div>
+        <p class="float-left">Download our App!</p>
+        <div class="clear-float"></div>
+        <a href="http://itunes.apple.com/ca/app/teambuy.ca/id452843124?mt=8" class="app-link iphone sprite app-roll" target="_blank"></a>
+        <a href="https://market.android.com/details?id=com.plasticmobile.teambuy.consumer" class="app-link android sprite app-roll" target="_blank"></a>
+        <a href="#ComingSoon" class="sprite blackberry app-roll no-link app-link"></a>
+        <p class="clear-float long"><span class="text-faded">Blackberry app coming soon.</span></p>
+     </div>
+    
+    <div class="container small tall float-right">
+        <div class="label-container">
+            <div class="label">
+                New            </div>
+        </div>
+        <h2 class="long float-right text-left">TeamBuy Deals on Facebook!</h2>
+        <p class="float-right text-left medium">Now you can save up to 90% on the best to see, eat and do without ever leaving Facebook.</p>
+        <img src="http://dr5q9l6ruw3lj.cloudfront.net/footer/facebook.png" class="pos-left pos-bottom" />
+        <p class="float-right text-left medium"><span class="float-left text-pink" style="margin-top: 4px;">Shop on</span> <a class="facebook text-roll sprite" href="http://www.facebook.com/TeamBuyToronto?sk=app_157068204397813" target="_blank"></a></p>
+    </div>
+    
+</div>
+
+<div style="width:100%;height:20px;clear:both;"></div>
+
+<div id="footer-bottom">
+    <nav class="footer-nav">
+      <ul class="float-left">
+        <div class="col">
+          <li>
+              <h4>Company Info</h4>
+              <ul>
+                <li><a href="http://www.teambuy.ca/teamPage.php">Meet the Team</a></li>
+                <li><a href="http://www.teambuy.ca/contactUs.php">Contact Us</a></li>
+                <li><a href="http://www.teambuy.ca/careers.php">We're Hiring</a></li>
+                <li class="footer-li-last"><a href="http://www.teambuy.ca/terms.php">Terms, Privacy, Returns</a></li>
+              </ul>
+          </li>
+          <li>
+              <h4>TeamBuy University</h4>
+              <ul>
+                <li><a href="http://www.teambuy.ca/howItWorks.php">How It Works</a></li>
+                <li><a href="http://www.teambuy.ca/faq.php">FAQ</a></li>
+                <li class="footer-li-last"><a href="http://www.teambuy.ca/recentBuys.php">Past Buys</a></li>
+              </ul>
+          </li>
+        </div>
+        <div class="col">
+            <li>
+              <h4>Business Services</h4>
+              <ul>
+                <li><a href="http://www.teambuy.ca/WhyTeamBuy/contact.php">Get Featured</a></li>
+                <li><a href="http://www.teambuy.ca/WhyTeamBuy">Why TeamBuy?</a></li>
+                <li><a href="http://www.teambuy.ca/WhyTeamBuy/affiliates.php">Affiliate Program</a></li>
+                <li class="footer-li-last" ><a href="http://www.teambuy.ca/contactUs.php">Suggest a Business</a></li>
+              </ul>
+            </li>
+            <li>
+              <h4>TeamBuy Elsewhere</h4>
+              <ul class="social-media">
+                    <li>
+                        <a href="http://www.facebook.com/teambuyvancouver" class="sprite facebook social-roll" target="_blank"></a>
+                    </li> 
+                    <li>
+                        <a href="http://twitter.com/TeamBuy_Van" class="sprite social-roll twitter" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="http://www.youtube.com/user/TeamBuy" class="sprite social-roll youtube" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=TeamBuy_Van" class="sprite social-roll rss" target="_blank"></a>
+                    </li>
+              </ul>
+            </li>
+        </div>
+          <li class="col">
+              <h4>TeamBuy Mobile</h4>
+              <ul class="mobile">
+                <li>Take all of your deals on the go using the TeamBuy iPhone App, Android App, and Mobile Site and redeem without leaving a paper trail. Blackberry app coming soon.</li>
+                <li>&nbsp;</li>
+                <li><a href="http://itunes.apple.com/ca/app/teambuy.ca/id452843124?mt=8" class="iphone sprite app-roll dark" target="_blank"></a></li>
+                <li><a href="https://market.android.com/details?id=com.plasticmobile.teambuy.consumer" class="android sprite app-roll dark" target="_blank"></a></li>
+                <li><a href="#ComingSoon" class="sprite blackberry app-roll no-link dark"></a><span class="footer-coming-soon">Coming Soon</span></li>
+              </ul>
+          </li>
+          <li>
+        <div class="col pos-absolute pos-right float-right">
+            <div class="label-container">
+                <div class="label">
+                    We're Hiring!                 </div>
+            </div>
+            <a href="http://www.teambuy.ca/careers.php" class="hiring-link">Get Started Today! &raquo;</a>
+            <a href="http://www.teambuy.ca/careers.php"><img src="http://d1t106xlvl28jr.cloudfront.net/footer/were-hiring.jpg" /></a>
+        </div>
+        </li>
+      </ul>
+        <div id="clear-float"></div>
+      <div class="footer-fine-print">Limited Time Offers @ Exclusive Pricing.&nbsp;TeamBuy.ca offers a variety of local services and products in your area at incredible savings of 50-90% off. Through TeamBuying we help you discover the best your city has to offer including restaurants, spas, entertainment, activities, events, theatres, and more.&nbsp;Copyright Buyers Unite Inc. All rights reserved.</div>
+    </nav>
+    <div class="footer-mini">
+      <div id="footer_mini_contents">
+        <p>As Featured On:</p>
+        
+          <img src="http://d2w0nea8vff8w.cloudfront.net/logos/logo-global.jpg" alt="logo-global.jpg"/>
+          <img src="http://d2es5bp56u9o6g.cloudfront.net/logos/logo-globe-mail.jpg" alt="logo-globe-mail.jpg"/>
+          <img src="http://dr5q9l6ruw3lj.cloudfront.net/logos/logo-toronto-star.jpg" alt="logo-toronto-star.jpg"/>
+          <img src="http://d1t106xlvl28jr.cloudfront.net/logos/logo-ctv.jpg" alt="logo-ctv.jpg"/>
+          <img src="http://d2w0nea8vff8w.cloudfront.net/logos/logo-national-post.jpg" alt="logo-national-post.jpg"/>
+          <img src="http://d2es5bp56u9o6g.cloudfront.net/logos/logo-cp24.jpg" alt="logo-cp24.jpg"/>
+          <img src="http://dr5q9l6ruw3lj.cloudfront.net/logos/logo-metro.jpg" alt="logo-metro.jpg"/>
+        
+      </div>
+    </div>
+</div>
+
+    <script src="//snapabug.appspot.com/snapabug.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      SnapABug.setSecureConnexion();
+      SnapABug.setButton("http://d1t106xlvl28jr.cloudfront.net/livehelp.png");
+      SnapABug.setButtonEffect("-4px");
+      SnapABug.addButton("74a8f861-5da7-41b0-99b1-c756bd38a74d","0","55%");
+    </script>
+      </footer>
+
+  <!-- Javascript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/js/libs/jquery-1.7.0.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- scripts concatenated and minified via ant build script-->
+
+  <script src="/web-app/js/jquery.fancybox-1.3.1/fancybox/jquery.fancybox-1.3.1.js"> </script>
+  <script src="/web-app/js/dropdown.js"> </script>
+  <script src="/web-app/js/geo.min.js"> </script>
+  <script src="/web-app/js/geolocate.js"> </script>
+  <!-- TODO: load from CDN -->
+  <script src="/js/plugins.js"></script>
+
+
+  <script>
+$(document).ready(function() {
+
+    $("#header-close").click(function(){
+        $("#header-subscribe").fadeTo(300, .1);
+        $("#header-subscribe").slideUp(300);
+        setCookie("headerSubscribe",true);
+        return false;
+    });
+
+    function setCookie(c_name,value,exdays)
+    {
+        var exdate=new Date();
+        exdate.setDate(exdate.getDate() + exdays);
+        var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+        document.cookie=c_name + "=" + c_value;
+    }
+
+    $(".fancybox").fancybox({
+        "speedIn":0,
+        "titleShow":false,
+        "scrolling":"no",
+        "showCloseButton":true,
+        "autoDimensions":true,
+        "padding":0
+    });
+
+    $(".fancyboxNoPad").fancybox({
+        "speedIn":500,
+        "titleShow":false,
+        "scrolling":"no",
+        "showCloseButton":true,
+        "autoDimensions":true,
+        "padding":0
+    });
+
+
+    $(".fancyboxRefresh").fancybox({
+        "speedIn":500,
+        "titleShow":false,
+        "scrolling":"no",
+        "showCloseButton":true,
+        "autoDimensions":true,
+        "padding":0,
+        "onClosed":function(){
+            window.location.href = "";
+        }
+    });
+
+    $("#changeEnglish").click(function(){
+        changeLanguage('english');
+    });
+
+    $("#changeFrench").click(function(){
+        changeLanguage('french');
+    });
+
+    $("#change-to-abbotsford").click(function(){
+        changeCity("abbotsford");
+    });
+    $("#change-to-barrie").click(function(){
+        changeCity("barrie");
+    });
+    $("#change-to-brampton").click(function(){
+        changeCity("brampton");
+    });
+    $("#change-to-calgary").click(function(){
+        changeCity("calgary");
+    });
+    $("#change-to-durham_region").click(function(){
+        changeCity("durham_region");
+    });
+    $("#change-to-edmonton").click(function(){
+        changeCity("edmonton");
+    });
+    $("#change-to-fredericton").click(function(){
+        changeCity("fredericton");
+    });
+    $("#change-to-guelph").click(function(){
+        changeCity("guelph");
+    });
+    $("#change-to-halifax").click(function(){
+        changeCity("halifax");
+    });
+    $("#change-to-halton_region").click(function(){
+        changeCity("halton_region");
+    });
+    $("#change-to-hamilton").click(function(){
+        changeCity("hamilton");
+    });
+    $("#change-to-kawartha_lakes").click(function(){
+        changeCity("kawartha_lakes");
+    });
+    $("#change-to-kelowna").click(function(){
+        changeCity("kelowna");
+    });
+    $("#change-to-kingston").click(function(){
+        changeCity("kingston");
+    });
+    $("#change-to-kitchener").click(function(){
+        changeCity("kitchener");
+    });
+    $("#change-to-laval").click(function(){
+        changeCity("laval");
+    });
+    $("#change-to-london").click(function(){
+        changeCity("london");
+    });
+    $("#change-to-mississauga").click(function(){
+        changeCity("mississauga");
+    });
+    $("#change-to-moncton").click(function(){
+        changeCity("moncton");
+    });
+    $("#change-to-montreal").click(function(){
+        changeCity("montreal");
+    });
+    $("#change-to-niagara").click(function(){
+        changeCity("niagara");
+    });
+    $("#change-to-ottawa").click(function(){
+        changeCity("ottawa");
+    });
+    $("#change-to-quebec").click(function(){
+        changeCity("quebec");
+    });
+    $("#change-to-regina").click(function(){
+        changeCity("regina");
+    });
+    $("#change-to-saguenay").click(function(){
+        changeCity("saguenay");
+    });
+    $("#change-to-saint_john").click(function(){
+        changeCity("saint_john");
+    });
+    $("#change-to-saskatoon").click(function(){
+        changeCity("saskatoon");
+    });
+    $("#change-to-sherbrooke").click(function(){
+        changeCity("sherbrooke");
+    });
+    $("#change-to-st_johns").click(function(){
+        changeCity("st_johns");
+    });
+    $("#change-to-sudbury").click(function(){
+        changeCity("sudbury");
+    });
+    $("#change-to-toronto").click(function(){
+        changeCity("toronto");
+    });
+    $("#change-to-vancouver").click(function(){
+        changeCity("vancouver");
+    });
+    $("#change-to-victoria").click(function(){
+        changeCity("victoria");
+    });
+    $("#change-to-windsor").click(function(){
+        changeCity("windsor");
+    });
+    $("#change-to-winnipeg").click(function(){
+        changeCity("winnipeg");
+    });
+    $("#change-to-york_region").click(function(){
+        changeCity("york_region");
+    });
+
+    function changeCity(city) {
+        var dataString = "city=" + city;
+
+        $.ajax({
+            type: "POST",
+            url: location.protocol + "//" + location.host + "/changeCity.php",
+            data: dataString,
+            cache: false,
+            success: function(data){
+                $.fancybox.close();
+                window.location.href = "http://" + location.host + "/" + city + "/all-buys";
+            },
+            error: function() {
+            }
+        });
+    }
+
+    function changeLanguage(lang) {
+
+        var language = lang;
+
+        var dataString = 'language=' + language;
+
+        $.ajax({
+            type: "POST",
+            url: location.protocol + "//" + location.host + "/changeLanguage.php",
+            data: dataString,
+            cache: false,
+            success: function(data){
+                window.location.href = "";
+            },
+            error: function() {
+                // TODO
+            }
+        });
+    }
+	
+    $('#subscribe').click(function(){
+        var city = $("select[name=city]").val(),
+        email = $("input[name=email]").val(),
+        errmsg='',
+        frm=null
+        displayError = function(msg){
+            $.fancybox(
+                "<div class='lightbox'><h3>Subscribing</h3><p>"+msg+"</p></div>",
+                {
+                'autoDimensions'	: false,
+                'width'         		: 350,
+                'height'        		: 'auto',
+                'transitionIn'		: 'none',
+                'transitionOut'		: 'none'
+                }
+            );		
+        };
+        if( !city || city ==='undefined'){
+            errmsg = "Please Select a city";
+        }
+        if( !email || email ==='undefined'){
+            errmsg += (errmsg?" and":"Please")+" enter an email address";
+        }
+        if(errmsg){
+            displayError("Error "+errmsg);
+        }else{
+            frm = $(this).parents('form');
+
+            $.post($(frm).attr('action')
+                ,{'city':city,'email':email}
+                ,function(data){
+                    if(data.length){
+                        data = $.parseJSON( data );
+                        if(data.error){
+                            displayError("Error "+data.error.message);
+                        }else{
+                            displayError("Your subscription was sucessful");
+                        }
+                    }else{
+                        $.fancybox(
+                            "<div class='lightbox'><h3>Subscribing</h3><p>Your subscription was sucessful</p></div>",
+                            {
+                            'autoDimensions'	: false,
+                            'width'         		: 350,
+                            'height'        		: 'auto',
+                            'transitionIn'		: 'none',
+                            'transitionOut'		: 'none'
+                            }
+                        );
+                        $("#header-close").click();
+                    }
+                });
+        }
+        return false;
+    });
+
+    function facebook_connect(response)
+    {
+        if( response.authResponse )
+        {
+            $.ajax(
+                { url: location.protocol + "//" + location.host + "/account/facebook"
+                , dataType: 'json'
+                , cache: false
+                , data: {'access_token':response.authResponse.accessToken}
+                , type: "POST"
+                , success: function( data )
+                  {
+                      if( data.error )
+                      {
+                          switch( data.error.code )
+                          {
+                            case 31300:
+                            case 31301:
+                                // TODO: Display error message
+                                break;
+                            case 31302:
+                                // Offer to link emails
+                                FB.api('/me', function(response) {
+                                    window.location.href = "https://www.teambuy.ca/signIn.php?tb_exist=" + response.email + "&fbuid=" + response.id;
+                                });
+                                break;
+                            case 31303:
+                                // Offer to create an account
+                                window.location.href = "https://www.teambuy.ca/signIn.php?register=true";
+                                break;
+                            default:
+                                // Unknown Error
+                                break;
+                          }
+                      }
+                      else
+                      {
+                          window.location.href = "";
+                      }
+                  }
+                , error: function()
+                  {
+                      // TODO: Display error message
+                  }
+                }
+            );
+        }
+        else
+        {
+            FB.logout(function(response) {
+               //console.log('Logged out.');
+            });
+        }
+    }
+
+    $('.fb-login-button').on( 'click', function(e) {
+        FB.Event.subscribe('auth.authResponseChange', facebook_connect);
+        FB.getLoginStatus(facebook_connect);
+    });
+
+
+    /**
+     * Logout of Facebook when logging out of Teambuy, as required in their
+     * policy and as required for out integration to work correctly (Anson Kao)
+     *
+     */
+    $("#menu-item-logout").click(function(){
+        FB.logout();
+        return true;
+    });
+    if(typeof tb_geo_locate == 'object'){
+    	
+    	try{
+    		tb_geo_locate.initialize(window.location.pathname == "/");
+    	}catch(e){
+    		//console.warn('failing gracefully');
+    	}
+    }function countdown(end_date, format, element)
+{
+     Today = new Date();
+     Todays_Year = Today.getFullYear();
+     Todays_Month = Today.getMonth();
+
+     //Convert today's date into miliseconds.
+     Todays_Date = (new Date(Todays_Year, Todays_Month, Today.getDate(),
+                             Today.getHours(), Today.getMinutes(), Today.getSeconds())).getTime();
+
+     //Find their difference, and convert that into seconds.
+     Time_Left = Math.round((end_date - Todays_Date) / 1000);
+
+     if(Time_Left < 0)
+        Time_Left = 0;
+
+     var innerHTML = '';
+
+     switch(format)
+       {
+       case 0:
+            //The simplest way to display the time left.
+            innerHTML = Time_Left + ' seconds';
+            break;
+       case 1:
+            //More datailed.
+            days = Math.floor(Time_Left / (60 * 60 * 24));
+            Time_Left %= (60 * 60 * 24);
+            hours = Math.floor(Time_Left / (60 * 60));
+            Time_Left %= (60 * 60);
+            minutes = Math.floor(Time_Left / 60);
+            Time_Left %= 60;
+            seconds = Time_Left;
+
+            innerHTML = "";
+
+            if (days != 0)
+                innerHTML = days + 'd ';
+            innerHTML += hours + 'h ';
+            innerHTML += minutes + 'm ';
+            innerHTML += seconds + 's';
+            break;
+       default:
+            innerHTML = Time_Left + ' seconds';
+       }
+
+       $('#'+element).html(innerHTML);
+
+     //Recursive call, keeps the clock ticking.
+     setTimeout(function(){ countdown(end_date, format, element) }, 1000);
+}/* 
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Countdown for the more buys deals
+ */
+
+get_countdown();
+
+function get_countdown()
+{
+    $('input[id|="deal_id"]').each(function() {
+        var id = this.value;
+        var end_date = $('#deal_end_date-'+id).val();
+        end_date = end_date * 1000; //In milliseconds for javascript
+        countdown(end_date, 1 ,"deal_timer-" + id);
+    });
+}$("#close-announcement").click(function(){
+    $("#announcement-container").fadeTo(300, .1);
+    $("#announcement-container").slideUp(300);
+    var date = new Date();
+    date.setTime(date.getTime()+(30*24*60*60*1000))
+    document.cookie = 'announcement=true; expires='+date.toGMTString()+'; path=/'
+    return false;
+});
+
+$("#banner_top_close_button").click(function(){
+    $("#banner_container").fadeTo(300, .1);
+    $("#banner_container").slideUp(300);
+    var date = new Date();
+    date.setTime(date.getTime()+(30*24*60*60*1000))
+    document.cookie = 'close_banner=true; expires='+date.toGMTString()+'; path=/'
+    return false;
+});});
+  </script>
+  <!-- end concatenated and minified scripts-->
+
+  <!--[if lt IE 7 ]>
+    <script src="/js/libs/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+  <!-- Page rendered in 0.1456 seconds -->
+    <noscript>
+        <img src="/external/ga.php?utmac=UA-11265932-1&amp;utmn=2027639975&amp;utmr=-&amp;utmp=%2F%3Fdeal%3D28134119%26affiliate_code%3Dek85a8w5&amp;guid=ON" alt="" />
+    </noscript>
+<script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://d1ros97qkrwjf5.cloudfront.net/30/eum/rum.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrf2","beacon-1.newrelic.com","1a6ecff771",472207,"MgZXMhdUDxFQW0ddCgtMYBQMGggMVV1LGhUNEw==",0,164,new Date().getTime()]);</script>
+</body>
+</html>

@@ -1,0 +1,1811 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js"> 
+  <head>
+  
+          <!-- Mobile redirector -->
+<script type="text/javascript">
+(function(){
+  
+  // get redirector to work in development
+  var tmp = /^(www\.)?([\w\.]+)?refinery29\.(\w+)(:\d+)?$/.exec(window.location.host.toLowerCase()),
+      
+      // sub domain
+      sub = tmp[2],
+      
+      // top level domain
+      tld = tmp[3],
+      
+      // cookie domain for mobile_referrer cookie
+      cookie_domain = 'refinery29.'+tld,
+      
+      // domain for mobile redirect
+      mobile_domain = 'm.'+(sub ? sub : '')+cookie_domain,
+      
+      // ignore direct traffic referrers
+      r29p = new RegExp('^(https?:\/\/)((www|m|touch)\.)'+sub+'refinery29\.'+tld, 'i'),
+      
+      // validate referrer before overriding
+      r29v = function(d){
+        return !!(d && String(d).length && !String(d).match(r29p));
+      };
+
+  // quirksmode.org: JavaScript - Cookies
+  // http://www.quirksmode.org/js/cookies.html
+  
+  var cookie_create = function(name, value, days){
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime()+(days*24*60*60*1000));
+      var expires = '; expires='+date.toGMTString();
+    }
+    else {
+      var expires = '';
+    }
+    var val = name+'='+value+expires+'; path=/; domain=.'+cookie_domain+';';
+    document.cookie = val;
+  },
+  
+  cookie_delete = function(name){
+    cookie_create(name,'',-1);
+  },
+  
+  cookie_read = function(name){
+    var nameEQ = name + '=';
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') {
+        c = c.substring(1,c.length);
+      }
+      if (c.indexOf(nameEQ) == 0) {
+        var val = c.substring(nameEQ.length,c.length);
+        return val;
+      }
+    }
+  	return null;
+  },
+  
+  show_mobile_link = function(){
+    var show_link = function(){
+      document.getElementById('mobile-link').style.display = 'block';
+    }
+    if (typeof window.onload != 'function') {
+      window.onload = show_link;
+    }
+    else {
+      var prev_onload = window.onload;
+      window.onload = function(){
+        prev_onload && prev_onload();
+        show_mobile_link();
+      };
+    }
+  };
+  
+  href = document.location.href.toString();
+  
+  // ignore mobile for thirty days
+  if (href.match(/mobile=false/i)) {
+    cookie_create('force_web', '1', 30);
+    show_mobile_link();
+    return;
+  }
+  
+  // URL param force mobile ver
+  var force_mobile = href.match(/mobile=true/i),
+
+      // Cookie to force web ver
+      ignore_mobile = cookie_read('force_web') && cookie_read('force_web') === '1',
+
+      // UA detection for mobile
+      is_mobile = navigator.userAgent.match(/iphone|ipod|android/i);
+      
+      if(navigator.userAgent.match(/ipad/i)) { 
+        // facebook user-agent stupidly calls iPad an iPhone
+        is_mobile = '';
+      }
+  
+  // forcing mobile on non-mobile browser or mobile browser and not forcing desktop
+  if (force_mobile || (is_mobile && !ignore_mobile)) {
+  
+    force_mobile && cookie_delete('force_web');
+    
+    // if we have valid referrer, write referrer cookie
+    if (r29v(document.referrer)) {
+      cookie_create('mobile_referrer', encodeURIComponent(document.referrer), 1);
+    }
+    
+    // redirect
+    var mobile_location = 'http://'+mobile_domain+location.pathname.replace(/^(.*)\/slideshow/, '$1')+location.search;
+    window.location = mobile_location;
+    return;
+  }
+  
+  // show mobile link if we didn't redirect
+  is_mobile && show_mobile_link();
+  
+})();
+</script>
+<!--/Mobile redirector -->
+    
+  
+        <script type="text/javascript">var _dc_tile = 1;var _dc_ts=_sf_startpt=(new Date()).getTime();WRInitTime=(new Date()).getTime();</script>
+    <link rel="stylesheet" href="http://static3.refinery29.com/blog/fa5471/css/compiled/style.css" media="screen" /> 
+    <link rel="alternate" type="application/rss+xml" title="Refinery29" href="http://www.refinery29.com/index.xml" />
+    
+  	<!--[if lt IE 9]>
+  		<link rel="stylesheet" type="text/css" href="http://static2.refinery29.com/blog/fa5471/css/compiled/ie.css" />
+      <script src="http://static3.refinery29.com/blog/fa5471/js/html5.js"></script>
+    <![endif]-->
+
+          <script type="text/javascript" src="http://cdn.onswipe.com/synapse/on.js?usr=refinery29" id="onswipe_synapse"></script>
+    
+    <script type="text/javascript" src="http://static1.refinery29.com/blog/fa5471/js/jquery.js"></script>
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/fa5471/js/jquery/plugins/jcarousel/jcarousel.js"></script>
+    <!-- Pinterest Hover Pin -->  
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/fa5471/js/jquery/plugins/jquery.autopin.js"></script>  
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/fa5471/js/r29.js"></script>
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/fa5471/js/api.js"></script>
+    
+    <!-- Avoiding Flash of Unstyled Text -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+    
+
+    
+    
+          <script type="text/javascript" src="http://static3.refinery29.com/blog/fa5471/js/socket.io/socket.io.js"></script>
+    
+  
+    <title itemprop="name">NYC Subletting Horror Stories- Worst Subletting Stories</title> 
+    
+    <!-- Meta -->
+    
+  
+  
+   <!-- month of beauty -->
+
+  
+  <!-- Entry Meta -->
+<meta name="description" content="This will be the scariest story you&#039;ve heard about NYC subletting. Hear one NYC subletter&#039;s story about his experience with a Meat Lover." itemprop="description"> 
+<meta name="keywords"    content="nyc subletting stories, worst subletting stories, meat lover, chinese food man, chinese food sex toy" itemprop="keywords"> 
+
+  <!-- Facebook Meta -->
+  <meta property="og:title"       content="Meat Lover! The Scariest (True) NYC Sublet Story You've Ever Heard " itemprop="name" />
+  <meta property="og:type"        content="article"/>
+  <meta property="og:url"         content="http://www.refinery29.com/meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard"/>
+  <meta property="og:image"       content="http://static1.refinery29.com/bin/entry/24a/300x/42360/scary-nyc-apartment-stories.jpg" itemprop="image" />
+  <meta property="og:site_name"   content="Refinery29" itemprop="publisher" />
+  <meta property="og:description" content="In the summer of 2005, I moved to New York to live with a girl I had been dating long distance. And&mdash;as &quot;moving across the country to be with a girl&quot; stories usually go&mdash;it didn&#039;t work out. Our reunion was short-lived, and I needed someplace to stay, quick.
+  
+In my experience&hellip;" />
+
+
+<link rel="canonical" href="http://www.refinery29.com/meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard" />
+
+<!-- Slideshow Meta -->
+
+        
+<!-- Pagination Meta -->
+
+	
+
+  
+
+        
+    
+  </head>
+    
+  <body>
+    <div id="container">
+    <div id="skin"></div><!--need this for background skinz-->
+      <div class="inner">
+      
+                
+				         	<div id="header" > <!-- Header -->
+
+      
+
+  <!-- Information Bar -->
+  <nav>
+  
+          
+    
+    
+    
+          
+          
+    
+  
+    <ul class="features">
+      <li><a href="http://www.refinery29.com" data-track="nav:r29" class="r29">R29</a></li>
+      <!-- Empty divs for gradient-ed vertical lines :/ -->
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://www.refinery29.com" data-track="nav:read" class="read active">Read</a></li>
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://www.refinery29.com/video" data-track="nav:watch" class="watch">Watch</a></li>
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://reserve.refinery29.com" data-track="nav:shop" class="shop">Shop</a></li>
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://www.refinery29.com/find/stores" data-track="nav:find" class="find">Find</a></li>
+      <li><div>&nbsp;</div></li>
+    </ul>
+    
+    
+    
+    <ul class="tooltips">
+  <li class="new_browse">
+    <p><span>New</span> Browse better with our new Refinery29 shortcuts!</p>
+    <div class="close"></div>
+  </li>
+  
+</ul>
+
+    
+    <div class="search" id="search-box">
+  <form method="get" action="/search">
+    <input type="text" name="q" value="" placeholder="Search" data-placeholder="Search" autocomplete="off" />
+    
+    
+  </form>
+  <div class="flap"></div>
+</div>
+    
+  </nav>
+  
+      <!-- Banner Bar -->
+    <div class="banner">
+      <!-- Edition Background -->
+                  <a href="/new-york" class="logo new-york" data-track="header:logo"></a>
+            
+    </div>
+  
+  
+  
+      <!-- Editions Navigation -->
+    <ul class="editions">
+                        <li class="everywhere"><a  href="http://www.refinery29.com/" data-track="header:everywhere">Everywhere</a></li>
+        
+                        <li class="new-york"><a  class="active" href="http://www.refinery29.com/new-york" data-track="header:new-york">New York</a></li>
+        
+                        <li class="los-angeles"><a  href="http://www.refinery29.com/los-angeles" data-track="header:los-angeles">Los Angeles</a></li>
+        
+                        <li class="chicago"><a  href="http://www.refinery29.com/chicago" data-track="header:chicago">Chicago</a></li>
+        
+                        <li class="san-francisco"><a  href="http://www.refinery29.com/san-francisco" data-track="header:san-francisco">San Francisco</a></li>
+        
+                        <li class="washington-dc"><a  href="http://www.refinery29.com/washington-dc" data-track="header:washington-dc">Washington, D.C.</a></li>
+        
+              
+                        <li class="miami"><a  href="http://www.refinery29.com/miami" data-track="header:miami">Miami</a></li>
+        
+              
+              
+      
+    </ul>
+    
+    <div class="clear"></div>
+    
+    <!-- Subnavigation -->
+      
+      
+      <ul class="categories new-york"> <!-- Categories -->
+                    <li class="news
+                               active selected
+                              
+              "><a href="http://www.refinery29.com/new-york/news" data-track="header:category:new-york:news">News</a>
+                            <ul>
+                <!-- Sub-categories -->
+                                  <li><a href="http://www.refinery29.com/festival-tracker" data-track="header:news:festival-tracker">Festival Tracker</a></li>
+                
+                                  <li><a href="http://www.refinery29.com/new-york/news/art-and-culture" data-track="header:subcategory:new-york:art-and-culture">Art &amp; Culture</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/news/celebrities" data-track="header:subcategory:new-york:celebrities">Celebrities</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/news/dedicated-feature" data-track="header:subcategory:new-york:dedicated-feature">Dedicated Feature</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/news/drinking-and-dining" data-track="header:subcategory:new-york:drinking-and-dining">Drinking &amp; Dining</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/news/fashion-news" data-track="header:subcategory:new-york:fashion-news">Fashion News</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/news/hot-new-products" data-track="header:subcategory:new-york:hot-new-products">Hot New Products</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/news/itineraries" data-track="header:subcategory:new-york:itineraries">Itineraries</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/news/link-love" data-track="header:subcategory:new-york:link-love">Link Love</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/news/music" data-track="header:subcategory:new-york:music">Music</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/news/parties" data-track="header:subcategory:new-york:parties">Parties</a></li>
+                
+              </ul>
+              
+              
+            </li>
+                    <li class="fashion
+                              
+                              
+              "><a href="http://www.refinery29.com/new-york/fashion" data-track="header:category:new-york:fashion">Fashion</a>
+                            <ul>
+                <!-- Sub-categories -->
+                
+                                  <li><a href="http://www.refinery29.com/new-york/fashion/designers" data-track="header:subcategory:new-york:designers">Designers</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/fashion/diy-fashion" data-track="header:subcategory:new-york:diy-fashion">Diy Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/fashion/fall-fashion" data-track="header:subcategory:new-york:fall-fashion">Fall Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/fashion/fashion-tips" data-track="header:subcategory:new-york:fashion-tips">Fashion Tips</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/fashion/fashion-week" data-track="header:subcategory:new-york:fashion-week">Fashion Week</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/fashion/living" data-track="header:subcategory:new-york:living">Living</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/fashion/lookbooks" data-track="header:subcategory:new-york:lookbooks">Lookbooks</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/fashion/magazines" data-track="header:subcategory:new-york:magazines">Magazines</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/fashion/models" data-track="header:subcategory:new-york:models">Models</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/fashion/my-style" data-track="header:subcategory:new-york:my-style">My Style</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/fashion/spring-fashion" data-track="header:subcategory:new-york:spring-fashion">Spring Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/fashion/street-fashion" data-track="header:subcategory:new-york:street-fashion">Street Fashion</a></li>
+                
+              </ul>
+              
+              
+            </li>
+                    <li class="shopping
+                              
+                              
+              "><a href="http://www.refinery29.com/new-york/shopping" data-track="header:category:new-york:shopping">Shopping</a>
+                            <ul>
+                <!-- Sub-categories -->
+                                  <li><a href="http://reserve.refinery29.com/" data-track="header:subcategory:new-york:reserve">Reserve: Shop Our Store</a></li>
+                  <li><a href="http://www.refinery29.com/find/stores/new-york" data-track="header:shopping:find-stores-we-love:new-york">Stores We Love</a></li>
+                
+                                  <li><a href="http://www.refinery29.com/new-york/shopping/dresses" data-track="header:subcategory:new-york:dresses">Dresses</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/shopping/hot-sales" data-track="header:subcategory:new-york:hot-sales">Hot Sales</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/shopping/online-deals" data-track="header:subcategory:new-york:online-deals">Online Deals</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/shopping/shopping-roundups" data-track="header:subcategory:new-york:shopping-roundups">Shopping Roundups</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/shopping/store-news" data-track="header:subcategory:new-york:store-news">Store News</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/shopping/store-openings" data-track="header:subcategory:new-york:store-openings">Store Openings</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/shopping/the-perfect-outfit" data-track="header:subcategory:new-york:the-perfect-outfit">The Perfect Outfit</a></li>
+                
+              </ul>
+              
+              
+            </li>
+                    <li class="beauty
+                              
+                              
+              "><a href="http://www.refinery29.com/new-york/beauty" data-track="header:category:new-york:beauty">Beauty</a>
+                            <ul>
+                <!-- Sub-categories -->
+                
+                                  <li><a href="http://www.refinery29.com/new-york/beauty/hair-trends" data-track="header:subcategory:new-york:hair-trends">Hair Trends</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/beauty/health-and-wellness" data-track="header:subcategory:new-york:health-and-wellness">Health &amp; Wellness</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/beauty/makeup-trends" data-track="header:subcategory:new-york:makeup-trends">Makeup Trends</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/beauty/nail-polish-colors" data-track="header:subcategory:new-york:nail-polish-colors">Nail Polish Colors</a></li>
+                                  <li><a href="http://www.refinery29.com/new-york/beauty/new-makeup-products" data-track="header:subcategory:new-york:new-makeup-products">New Makeup Products</a></li>
+                
+              </ul>
+              
+              
+            </li>
+        
+      </ul>
+      
+    
+  
+  <script type="text/javascript">
+    
+      var R29 = R29 || {};
+    
+    
+    R29.BASE_URL = "refinery29.com";
+    
+  </script>
+      
+</div> <!-- /Header -->
+
+				
+								    				  <!-- Top Ad, Signup, Facebook -->
+<div class="top-ad">
+  
+    	
+  
+  
+      
+<div class="ad ad-728x90" iframe-code="http://ad.doubleclick.net/adi/r29.ny.oao/news/art-and-culture;s1=news;s2=art-and-culture;s3=art-and-culture;sponsorship=;pagetype=entry;test=;pageid=meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;" iframe-size="728x90, 970x66"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.ny.oao/news/art-and-culture;s1=news;s2=art-and-culture;s3=art-and-culture;sponsorship=;pagetype=entry;test=;pageid=meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.ny.oao/news/art-and-culture;s1=news;s2=art-and-culture;s3=art-and-culture;sponsorship=;pagetype=entry;test=;pageid=meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.ny.oao/news/art-and-culture;s1=news;s2=art-and-culture;s3=art-and-culture;sponsorship=;pagetype=entry;test=;pageid=meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+  
+  
+  <div class="ribbon-tail-left"></div>
+
+  <!-- Signup -->
+<div class="widget">
+   
+  
+  
+  <a href="/signup/new-york?source=sitearrow&amp;medium=organic" class="signup new-york" alt="Sign Up Now!"></a>
+  <div class="fblike">
+    <fb:like href="http://www.facebook.com/refinery29" show_faces="false" width="220" height="28"></fb:like>
+  </div>
+</div>
+
+
+</div>
+
+  				
+  				
+  				
+				
+				
+        <div id="content"> 
+        
+          					<!-- LEFT -->
+					<div class="col_2">
+						
+  <!-- CACHE 1c0b5 - ttl: 180 -->    <!-- Mini Signup Module on Entry Pages: For Once -->
+          <!-- Lil Mini Signup Module -->
+<div class="signup-mini" style="display:none;">
+  <div class="folded-corner"></div>
+  <img src="http://static1.refinery29.com/blog/fa5471/images/signup/sample-email.png" width="195" height="163" alt="Get Your Free Daily Newsletter!" class="left" />
+  <h4>Get Your Free <br>Daily Newsletter!</h4>
+  <p>The freshest fashion, shopping, lifestyle news, beauty tips, and local deals you'll ever need!</p>
+  
+  <form action="/signup/new-york?source=sitebox&medium=organic" method="POST">
+  
+    <input type="email" name="email" required placeholder="Enter your Email Address" data-placeholder="Enter your Email Address">
+    
+    <input type="hidden" name="email_lists[everywhere]" value="true">
+          <input type="hidden" name="email_lists[new-york]" value="true">
+    
+      
+    <input type="submit" name="submit" value="Sign Up" data-track="signup-mini:submit" />
+  
+  
+  </form>
+
+  <a href="" class="close" data-track="signup-mini:close">Close<span></span></a>
+</div>
+
+
+<script type="text/javascript">
+
+  $('.signup-mini a.close').click(function(event) {
+    event.preventDefault();
+    $('.signup-mini').hide();
+    R29.cookie.set('signup_mini',1,3600*24*30);
+  });
+
+  $('.signup-mini input.submit').click(function(event) {
+    R29.cookie.set('signup_mini',1,-1);
+    return true;
+  });
+
+  if(!R29.cookie.get('signup_mini')) {
+    $('.signup-mini').show();
+  }
+
+</script>
+    
+    
+    <div class="entry-block">
+      <aside class="social-sidebar">
+
+  <!-- FB -->
+  <div class="facebook" itemprop="interactionCount">
+    <fb:like layout="box_count" href="http://www.refinery29.com/meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard" send="false" width="50" ref="sidebar"></fb:like>
+  </div>
+  
+  <!-- Twitter -->
+  <div class="twitter" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'TwitterSidebar', 'tweet']);">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-text="Meat Lover! The Scariest (True) NYC Sublet Story You've Ever Heard " data-url="http://www.refinery29.com/meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard" data-count="vertical" data-via="refinery29">&nbsp;</a>
+  </div>
+
+  <!-- Pinterest -->
+  <div class="pinterest" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'Pinterest', 'pinned']);">
+    <a href="http://pinterest.com/pin/create/button/?url=http://www.refinery29.com/meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard&media=http://static3.refinery29.com/bin/entry/d44/x/42360/scary-nyc-apartment-stories.jpg&description=Meat Lover! The Scariest (True) NYC Sublet Story You've Ever Heard " class="pin-it-button" count-layout="vertical">Pin It</a>
+  </div>
+  
+  <!-- Stumbleupon -->
+  <div class="stumbleupon" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'StumbleSidebar', 'stumble']);">
+    <iframe src="http://badge.stumbleupon.com/badge/embed/5/?url=http://www.refinery29.com/meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:60px;" allowTransparency="true"></iframe>
+  </div>
+
+</aside>
+    
+      
+  
+  
+   
+    
+      <div class="entry-header">
+  
+  
+	
+  <div class="category"><!--<a href="/new-york/news/art-and-culture" data-track="entry:header:Art &amp; Culture">-->Art &amp; Culture<!--</a>--></div>
+  
+  <div class="deliminator"></div>
+  
+  <div class="date">
+          Mar 16, 2011 3:00 PM
+      <!-- <span itemprop="datePublished">2011-03-16 15:00:00</span> -->
+    
+  </div>
+  <div class="asset-info">
+      <!-- Facebook Like -->
+      <div class="facebook" itemprop="interactionCount">
+        <fb:like layout="button_count" href="http://www.refinery29.com/meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard" width="90" ref="entrypage"></fb:like>
+      </div>
+      <!-- Twitter Share -->
+      <div class="twitter" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'TwitterSolo', 'tweet']);">
+        <a href="http://twitter.com/share" class="twitter-share-button" data-text="Meat Lover! The Scariest (True) NYC Sublet Story You've Ever Heard " data-url="http://www.refinery29.com/meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard" data-count="horizontal" data-via="refinery29">&nbsp;</a>
+      </div>
+    <!-- Comment Count -->
+    <div class="comment-count" itemprop="interactionCount">
+      <a href="/meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard#disqus_thread" data-url="http://www.refinery29.com/meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard" class="comments"><span class="comment-count">0</span></a>
+    </div>
+  </div>
+</div>
+
+
+      
+      <!-- Sponsored Headline eMeta -->
+      
+    
+      <div class="entry">
+	<div itemscope itemtype="http://schema.org/Article">
+	  <div class="h1">Meat Lover! The Scariest (True) NYC Sublet Story You've Ever Heard </div>
+	  	    <p class="byline">
+
+      
+          Story by
+    
+    <a href="/author/peter-kassel" rel="author"><span itemprop="author">Peter Kassel</span></a>,     
+          Words by
+    
+    <a href="/author/connie-wang" rel="author"><span itemprop="author">Connie Wang</span></a>
+</p>
+	    <div class="body">
+	    	<span itemprop="articleBody">
+		      <img src="/static/bin/entry/3f4/x/42361/image.jpg" width="300" height="400" class="left">In the summer of 2005, I moved to New York to live with a girl I had been dating long distance. And—as "moving across the country to be with a girl" stories usually go—it didn't work out. Our reunion was short-lived, and I needed someplace to stay, quick.
+<br><br>
+In my experience, finding good housing in New York is largely based on luck, and I had that in low reserve. I tried all the usual avenues—Craigslist, friends, friends of friends, acquaintances of friends… and, after a few weeks of searching, I finally managed to be put in contact with a guy who had a spare room to sublet for a super-low price in the Lower East Side.
+<br><br>
+The owner of this apartment (we’ll call him Doug) was a heavy-drinking, chain-smoking freelance writer who had also recently split from his girlfriend. His ex-girlfriend's office space was in the apartment, which made the perfect bedroom to rent out. I was in a sort of headspace at the time that necessitated a lot of shut-door boozing and miscellany, and I found it highly attractive that Doug seemed to be into the same kind of mopery that I was. Plus, the room for rent was large (for the Lower East Side), seemed cloistered enough from Doug's area that I would have a decent amount of privacy, and—while it gave off the kind of "dude" funk smell that some might have shied away from—it wasn't that big of a deal considering it was also devoid of rats, mold, and water damage. It seemed perfect.
+<br><br>
+"This place seems perfect!" I said to Doug. And of course, the follow-up: "What's wrong with it?"
+<br><br>
+"Nothing's wrong with the room," he said a little too cautiously. "But you're talking about the price right? Why it's so low?"
+<br><br>
+"Ha," I joked. "Did someone die in here or what?"
+<br><br>
+"No, nothing like that. But something did happen, and I'd feel like an ass if I rented the place to you and didn't tell you what happened here a few months ago." …Ah, the words every subletter wants to hear. And with that, he launched into the best story I've ever heard about NYC housing.
+<br><br>
+After Doug's girlfriend left him a few months before I met him, he became unable to afford the rent by himself. He quickly found Jack via Craigslist, a recent Columbia journalism school graduate and fellow writer. Like Doug, Jack was also quiet and a loner, choosing to order Chinese food and chip away at his novel instead of getting drunk like the LES revelers on the sidewalks bellow. But he was courteous and stayed out of Doug's perma-sedated way, which is the exact kind of stranger you want to be living with.
+<br><br>
+After living with Jack for a few months, Doug was running home through the middle of a raging rainstorm, and noticed that Jack’s window was wide open, water pouring into the room. He rushed up the stairs, still dripping wet, and knocked on Jack’s door. Nobody answered, and Doug figured Jack was out. He found his master key, opened the door, and clicked on the light. 
+<br><br>
+Neatly piled into stacks were Chinese food containers, some 10 boxes high, some already toppled, with their half-eaten contents strewn on the floor. The cartons covered all the available area on the floor except for a narrow walkway to the bed and the desk. Doug stood horrified at the doorway, then noticed the water flooding the floor by the window. He rushed over to close it.
+<br><br>
+Compulsive hoarders—as anyone who's spent a decent time watching TV will know—are not rare. There are between six to 15 million hoarders living in the United States, with many of them carrying on seemingly normal lives outside of their obsessive disorder. This fact didn't make Doug any more comfortable with the toy city of rotting Chinese food in his spare bedroom. He was going to kick Jack out when he got back to the apartment.
+<br><br>
+Then he saw the boot. 
+<br><br><img src="/static/bin/entry/227/x/42363/image.jpg" width="600" height="400"><br><br>
+Doug leaned over to pick it up, knowing what the contents were before his fingers even made contact. Spilled out from the tops were strings of Lo Mein noodles, and hard pieces of dried rice. Doug was sure he could see crusted-over mounds of meat and hardened sauce. Sickened, Doug sat down the shoe, and as he did so, he noticed a shadow in the shape of a human body beneath the twin bed.
+<br><br>
+With absolute trepidation, Doug lifted the bed and slid it a few feet away, knocking over a pile of takeout boxes. What he uncovered wasn't—to his immediate relief—a real person. But it was a person's shape, with a hooded sweatshirt attached to gloves and a pair of jeans, with the other boot tucked into the leg. Coming out of the seams were remnants of noodles, rice, and meat, grease stains pooling through the fabric and onto the floor, spoiled scraps of food filling the hoodie to the brim. Doug scanned the body—and...yep, there it was. Noodles oozed out of the unzipped fly; a glory hole that Jack had ostensibly been taking advantage of all spring long.
+<br><br><img src="/static/bin/entry/4ae/x/42364/image.jpg" width="600" height="400"><br><br>
+Doug called an emergency locksmith who came and changed the locks within the hour. Jack arrived home not too long afterward and found it locked.
+<br><br>
+"I just need my laptop," he called through the door.
+<br><br>
+Doug slid the laptop through the mail slot. He could hear Jack's footsteps click down the hall, and the apartment entrance door slam shut. During the following days, Doug hired cleaners to remove all the food that Jack had left behind. Though the room had been cleared of all the takeout containers (along with the Meat Lover, which I've since started using to describe the effigy), the floors and walls scrubbed clean, and the room aired out for days, the smell still lingered. 
+<br><br>
+Doug paused. "So, yeah. The room is cheap. What happened was fucked up." Doug looked ready to pass out, and I felt faint. "I'm sorry, dude. I can't," I muttered, and headed for the door. I regret leaving in such haste now, as the amount of questions I have are overwhelming—Didn't Doug smell something weird coming from Jack's room before he went in? Didn't he notice that Jack never took out any trash? What did he think was on his laptop? I've considered calling him to tie up those loose mental ends (which would lend this story that I've retold at least a hundred times much more credence), but really, I hate to bother the guy. That summer was an especially damaging one for me, and <em>I</em> wasn't the one who had to clean up a leaking sex toy my ex-roommate had constructed out of decomposing Chinese food.
+<br><br><em>Editor's Note: After reading your comments about the mail slot, we grilled Peter about that detail, and he admitted that he misremembered due to telling it incorrectly for so many years, and it was actually passed through the door crack with the chain lock fastened. So, there you go.
+</em><br><br><em>Images via <a href="http://greyfoxbytes.tumblr.com/" rel="nofollow" target="_blank">Peter Kassel</a> and Elijah Wolfson.</em>
+		      
+		      		        
+
+
+
+
+		      
+		      
+		        <div class="index-pagination">
+
+  
+  
+  </div>
+
+		      
+		      
+		      
+	      </span>
+		  </div>
+	  
+	  
+	  <div class="clear"></div>
+  </div>
+</div>
+      
+      <div class="entry-footer">
+      <div class="tags">
+              <a href="/new-york">New York</a> &raquo; 
+              <a href="/new-york/news">News</a> &raquo; 
+      
+      <a href="/new-york/news/art-and-culture">Art &amp; Culture</a> &raquo;
+            	<h1 class="sub">NYC Subletting Horror Stories- Worst Subletting Stories</h1>
+      
+      <br/>
+      
+      
+    </div>
+  
+
+  
+</div>
+    <!-- /CACHE 1c0b5 - ttl: 180 -->
+      
+      <!-- Related Stories -->
+<div class="related-stories">
+  <div class="hot-dimple">Related Stories</div>
+  <ul>
+    <!-- CACHE a7a94 - ttl: 180 -->      
+      
+                  
+                  
+          <li>
+            <div class="asset">
+              <a href="/weird-subway-behavior" data-track="entry:related"><img src="http://static3.refinery29.com/bin/entry/802/120x143/177183/subwaydining0412.jpg" alt="subwaydining0412" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/weird-subway-behavior" data-track="entry:related">Subway Riders Chop Onions, Mold Clay Heads, What's Next&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/marc-jacobs-louis-vuitton-book" data-track="entry:related"><img src="http://static3.refinery29.com/bin/entry/e4f/120x143/175461/lvmjthumb.jpg" alt="lvmjthumb" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/marc-jacobs-louis-vuitton-book" data-track="entry:related">The Cheapest Louis Vuitton Piece You'll Ever Own</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/festival-fashion-tips" data-track="entry:related"><img src="http://static3.refinery29.com/bin/entry/645/120x143/173837/vh1thumb.jpg" alt="vh1thumb" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/festival-fashion-tips" data-track="entry:related">Video: We Team Up With VH1 For An Early A.M. Festival Fashion&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/inside-r29-desks" data-track="entry:related"><img src="http://static3.refinery29.com/bin/entry/b80/120x143/173166/opener2.jpg" alt="opener2" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/inside-r29-desks" data-track="entry:related">Inside R29, Desk Edition: Step Into Our Office...</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/biologues-show" data-track="entry:related"><img src="http://static2.refinery29.com/bin/entry/1ab/120x143/173141/biolgoues-thumb.jpg" alt="biolgoues-thumb" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/biologues-show" data-track="entry:related">Watch Live Performances Of Ridiculous Blog Posts And LOLOLOL</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/artists-textiles-book" data-track="entry:related"><img src="http://static1.refinery29.com/bin/entry/a76/120x143/173061/artiststextilesthumb.jpg" alt="artiststextilesthumb" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/artists-textiles-book" data-track="entry:related">Peep Textiles By Warhol (& Other Artists) In This Sweet&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/uplift-workout-studio" data-track="entry:related"><img src="http://static3.refinery29.com/bin/entry/f7a/120x143/172699/thumb.jpg" alt="thumb" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/uplift-workout-studio" data-track="entry:related">This New NYC Gym Rewards You In Alcohol (They Read Our Minds&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/hbo-girls-premiere" data-track="entry:related"><img src="http://static2.refinery29.com/bin/entry/3ff/120x143/172632/thumb.jpg" alt="thumb" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/hbo-girls-premiere" data-track="entry:related">Check Out Your New TV BFFs At Last Night's Girls Premiere</a></h2>
+          </li>
+          
+        
+      
+                
+        
+      
+        
+    <!-- /CACHE a7a94 - ttl: 180 -->
+  </ul>
+
+  
+<div class="ad ad-related-stories-ccu" iframe-code="http://ad.doubleclick.net/adi/r29.ny.oao/news/art-and-culture;s1=news;s2=art-and-culture;s3=art-and-culture;sponsorship=;pagetype=entry;test=;pageid=meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard;pos=middle;tile=3;dcopt=;sz=300x251;" iframe-size="300x251"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.ny.oao/news/art-and-culture;s1=news;s2=art-and-culture;s3=art-and-culture;sponsorship=;pagetype=entry;test=;pageid=meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard;pos=middle;tile=3;dcopt=;sz=300x251;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.ny.oao/news/art-and-culture;s1=news;s2=art-and-culture;s3=art-and-culture;sponsorship=;pagetype=entry;test=;pageid=meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard;pos=middle;tile=3;dcopt=;sz=300x251;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.ny.oao/news/art-and-culture;s1=news;s2=art-and-culture;s3=art-and-culture;sponsorship=;pagetype=entry;test=;pageid=meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard;pos=middle;tile=3;dcopt=;sz=300x251;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+
+</div>
+
+      <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+    var disqus_shortname = 'refinery'; // required: replace example with your forum shortname
+    var disqus_developer = 1;
+    var disqus_url = 'http://www.refinery29.com/meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard';
+    
+    $(function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('body')[0]).appendChild(dsq);
+    });
+    
+</script>
+    </div>
+     
+
+					</div>
+            
+          <div class="col beta sidebar">
+            <!-- RIGHT -->
+                            
+              <!-- CACHE 57ce6 - ttl: 600 -->                 
+      				  
+      				  
+                
+<div class="ad ad-sidebar-border" iframe-code="http://ad.doubleclick.net/adi/r29.ny.oao/news/art-and-culture;s1=news;s2=art-and-culture;s3=art-and-culture;sponsorship=;pagetype=entry;test=;pageid=meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;" iframe-size="300x250,300x600,300x1050"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.ny.oao/news/art-and-culture;s1=news;s2=art-and-culture;s3=art-and-culture;sponsorship=;pagetype=entry;test=;pageid=meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.ny.oao/news/art-and-culture;s1=news;s2=art-and-culture;s3=art-and-culture;sponsorship=;pagetype=entry;test=;pageid=meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.ny.oao/news/art-and-culture;s1=news;s2=art-and-culture;s3=art-and-culture;sponsorship=;pagetype=entry;test=;pageid=meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+                
+                
+                                
+
+                                
+                
+                
+
+                                  
+
+      <div class="m-o-d-widget">
+      <a href="/month-of-denim"><h3 class="headline">Month of Denim</h3></a>
+    
+      
+      <a href="/denim-day-nicole-tondra" class="frame"><img src="http://static2.refinery29.com/bin/entry/0d7/x/176495/monthofdenim-14.jpg" alt="MonthofDenim_14"    /></a>
+    </div>
+  
+
+        
+                
+
+                
+
+                
+              <!-- /CACHE 57ce6 - ttl: 600 -->
+              
+              <!--Top Popular & Editor's Picks -->
+              <!-- Top 5 Popular -->
+<div class="top-picks">
+  <div class="popular">
+    
+<div class="ad ad-top5" iframe-code="http://ad.doubleclick.net/adi/r29.ny.oao/news/art-and-culture;s1=news;s2=art-and-culture;s3=art-and-culture;sponsorship=;pagetype=entry;test=;pageid=meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard;pos=top;tile=6;dcopt=;sz=75x30;" iframe-size="75x30"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.ny.oao/news/art-and-culture;s1=news;s2=art-and-culture;s3=art-and-culture;sponsorship=;pagetype=entry;test=;pageid=meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard;pos=top;tile=6;dcopt=;sz=75x30;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.ny.oao/news/art-and-culture;s1=news;s2=art-and-culture;s3=art-and-culture;sponsorship=;pagetype=entry;test=;pageid=meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard;pos=top;tile=6;dcopt=;sz=75x30;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.ny.oao/news/art-and-culture;s1=news;s2=art-and-culture;s3=art-and-culture;sponsorship=;pagetype=entry;test=;pageid=meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard;pos=top;tile=6;dcopt=;sz=75x30;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+  </div>
+  <ul>
+    <!-- CACHE 9c415 - ttl: 600 -->  
+              <li>
+        	<a href="/makeup-artist-beauty-favorites" class="title" data-track="top5:popular">
+	          <span><img src="http://static3.refinery29.com/bin/entry/664/60x70/176740/opener.jpg" alt="opener" width="60" height="70"  /></span>
+	          21 Spring Beauty Buys From NYC's Top Makeup Gurus
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/makeup-artist-beauty-favorites" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/new-nyc-boutiques" class="title" data-track="top5:popular">
+	          <span><img src="http://static2.refinery29.com/bin/entry/b2f/60x70/175491/opener.jpg" alt="opener" width="60" height="70"  /></span>
+	          3 New NYC Boutiques To Check Out NOW
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/new-nyc-boutiques" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/happy-meal-art-project" class="title" data-track="top5:popular">
+	          <span><img src="http://static1.refinery29.com/bin/entry/455/60x70/11412/image.jpg" alt="" width="60" height="70"  /></span>
+	          Why We're Scared Of Happy Meals
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/happy-meal-art-project.php" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/fashionable-handbag-pictures-new-york" class="title" data-track="top5:popular">
+	          <span><img src="http://static2.refinery29.com/bin/entry/85e/60x70/174964/opener.jpg" alt="opener" width="60" height="70"  /></span>
+	          NYC Bag Stalking: The Coolest Carryalls On The Street
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/fashionable-handbag-pictures-new-york" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/marc-jacobs-louis-vuitton-book" class="title" data-track="top5:popular">
+	          <span><img src="http://static2.refinery29.com/bin/entry/3bf/60x70/175461/lvmjthumb.jpg" alt="lvmjthumb" width="60" height="70"  /></span>
+	          The Cheapest Louis Vuitton Piece You'll Ever Own
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/marc-jacobs-louis-vuitton-book" width="90"></fb:like>
+        </li>
+      
+    <!-- /CACHE 9c415 - ttl: 600 -->
+  </ul>
+</div>
+              <!-- Top 5 Editor's Picks -->
+<div class="top-picks">
+  <div class="editors"></div>
+  <ul class="editors">
+          <li>
+      	<a href="/bright-nails-food-spring" data-track="top5:editors" class="title">
+	        <span><img src="http://static1.refinery29.com/bin/entry/e04/60x70/168112/spring-nails-food-opener.jpg" alt="spring-nails-food-opener" width="60" height="70"  /></span>
+					Nail Art & Food: Yes, We're Serious
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/bright-nails-food-spring" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/real-mad-men" data-track="top5:editors" class="title">
+	        <span><img src="http://static1.refinery29.com/bin/entry/a22/60x70/165122/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					Meet The REAL Mad Men Of NYC
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/real-mad-men" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/cheap-eats-nyc" data-track="top5:editors" class="title">
+	        <span><img src="http://static3.refinery29.com/bin/entry/725/60x70/160251/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					16 Amazing Cheap Eats In NYC—Starting At Just $1!
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/cheap-eats-nyc" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/video-tutorial-hair-waves-retro" data-track="top5:editors" class="title">
+	        <span><img src="http://static1.refinery29.com/bin/entry/34e/60x70/151760/video-tutorial-hairstyles-retro-waves.jpg" alt="video-tutorial-hairstyles-retro-waves" width="60" height="70"  /></span>
+					Get Glamour Girl Waves With This Easy Tutorial
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/video-tutorial-hair-waves-retro" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/cool-couples-in-nyc" data-track="top5:editors" class="title">
+	        <span><img src="http://static3.refinery29.com/bin/entry/e05/60x70/145873/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					How 4 Cool Couples Keep The (Creative) Fires Burnin’!
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/cool-couples-in-nyc" width="90"></fb:like>
+      </li>
+    
+        
+  </ul>
+</div>
+              
+              <!-- CACHE 26484 - ttl: 600 -->                <!-- Ad Editorial Module -->
+                
+                
+                <!-- Connect Tools -->
+<div class="connect">
+	<h4>Follow R29</h4>
+	<div>
+		<a href="http://www.facebook.com/refinery29" class="fb"></a>
+		<a href="http://twitter.com/refinery29" class="twit"></a>
+		<a href="/index.xml" class="rss"></a>
+	</div>
+</div>
+                <!-- Facebook Likes Widget -->
+<div class="facebook-likes">
+  <fb:like-box href="http://www.facebook.com/refinery29" width="300" height="255" show_faces="true" rows="1" stream="false" header="false"></fb:like-box>
+</div>
+<!-- /Facebook Widget -->
+                
+<!-- Reserve Widget -->
+  <div class="reserve-widget">
+    <a href="http://reserve.refinery29.com/" data-track="reserve_widget"><img src="http://static2.refinery29.com/blog/fa5471/images/widgets/reserve-widget-header.png" width="300" height="auto" border="0" alt="Show Now on Reserve" /></a>
+    <div class="subhead">Tailor-Made Deals. Get Them Now!</div>
+    <div class="ribbon pre"></div><div class="ribbon post"></div>
+    <ul>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/348/koshka"  data-track="reserve_widget" class="less">
+	        <img src="//static2.refinery29.com/bin/deal/a53/130x100/173774/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Build The Ultimate Indie Closet: $75 Off Samantha Pleet, MinkPink, And More</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/349/rebecca-minkoff"  data-track="reserve_widget" class="less">
+	        <img src="//static1.refinery29.com/bin/deal/ce0/130x100/176735/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4"> Min-sanity: Everything Rebecca Minkoff Is Now Up To $185 Off!</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/333/vanessa-mooney"  data-track="reserve_widget" class="less">
+	        <img src="//static2.refinery29.com/bin/deal/dea/130x100/169501/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">From Vanessa Mooney To You: $75 Off The Hottest Music Festival Jewels Around</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/347/miguelina"  data-track="reserve_widget" class="less">
+	        <img src="//static2.refinery29.com/bin/deal/141/130x100/174046/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Wearable Wanderlust: $125 Off The Amaze Resortwear You Don&rsquo;t Have To Travel To Love</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/334/zinke-intimates"  data-track="reserve_widget" class="less">
+	        <img src="//static1.refinery29.com/bin/deal/888/130x100/169782/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Beach To Boudoir: Up To Half-Off Zinke&rsquo;s Hot-Hued Swimsuits And Lingerie</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+    
+    </ul>
+  </div>
+ 
+                <!-- Street Style Widget -->
+<div class="street-fashion-widget">
+  <a href="/everywhere/fashion/street-fashion/" class="header">Street Fashion</a>
+      <a href="/flats-for-spring">
+	    <span class="italic">Inside R29: This Week, Our World Is Flats</span>
+	    <span class="polaroid">
+	      <img src="http://static2.refinery29.com/bin/entry/c82/158x190/177555/opener.jpg" alt="opener" width="158" height="190"  />
+	    </span>
+    </a>  
+  
+        
+</div>
+              <!-- /CACHE 26484 - ttl: 600 -->
+                 
+              
+<div class="ad ad-sidebar" iframe-code="http://ad.doubleclick.net/adi/r29.ny.oao/news/art-and-culture;s1=news;s2=art-and-culture;s3=art-and-culture;sponsorship=;pagetype=entry;test=;pageid=meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard;pos=middle1;tile=7;dcopt=;sz=300x100;" iframe-size="300x100"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.ny.oao/news/art-and-culture;s1=news;s2=art-and-culture;s3=art-and-culture;sponsorship=;pagetype=entry;test=;pageid=meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard;pos=middle1;tile=7;dcopt=;sz=300x100;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.ny.oao/news/art-and-culture;s1=news;s2=art-and-culture;s3=art-and-culture;sponsorship=;pagetype=entry;test=;pageid=meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard;pos=middle1;tile=7;dcopt=;sz=300x100;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.ny.oao/news/art-and-culture;s1=news;s2=art-and-culture;s3=art-and-culture;sponsorship=;pagetype=entry;test=;pageid=meat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard;pos=middle1;tile=7;dcopt=;sz=300x100;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+              
+            
+          </div>
+          
+          <div class="clear"></div>
+          <!-- CACHE 89436 - ttl: 300 -->            <!-- Footer @More Stories -->
+<div class="footer-boxes">
+  <div class="hot-dimple">More Style At Your Fingertips</div>
+	<ul>
+					<li>
+				<div> 
+				<a href="/best-spring-beauty-products" data-track="hotspot:footer-more">
+					<img src="http://static1.refinery29.com/bin/public/8f8/120x143/169793/opener2.jpg" alt="opener2" width="120" height="143"  />
+					<span class="more_h2 footer_h2">Editors' Picks: 50 Fresh Beauty Buys For Spring</span>
+				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/best-spring-beauty-products#disqus_thread" data-url="http://www.refinery29.com/best-spring-beauty-products" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/beauty" class="category" data-track="hotspot:footer-more">Beauty</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+				<a href="/spring-must-haves" data-track="hotspot:footer-more">
+					<img src="http://static1.refinery29.com/bin/entry/260/120x143/169054/opener2.jpg" alt="Opener2" width="120" height="143"  />
+					<span class="more_h2 footer_h2">29 Magical Buys To Transform Your Look</span>
+				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/spring-must-haves#disqus_thread" data-url="http://www.refinery29.com/spring-must-haves" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/shopping" class="category" data-track="hotspot:footer-more">Shopping</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+				<a href="/burning-fashion-questions-answered" data-track="hotspot:footer-more">
+					<img src="http://static2.refinery29.com/bin/public/891/120x143/162504/annadellarusso-opener.jpg" alt="AnnadellaRusso_opener" width="120" height="143"  />
+					<span class="more_h2 footer_h2">29 Of Fashion's Biggest Mysteries, Solved!</span>
+				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/burning-fashion-questions-answered#disqus_thread" data-url="http://www.refinery29.com/burning-fashion-questions-answered" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/fashion" class="category" data-track="hotspot:footer-more">Fashion</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+				<a href="/spring-makeup-tutorial" data-track="hotspot:footer-more">
+					<img src="http://static3.refinery29.com/bin/public/a01/120x143/161840/sprong-beauty-tutorial-opener.jpg" alt="sprong-beauty-tutorial-opener" width="120" height="143"  />
+					<span class="more_h2 footer_h2">5 Products, 5 Stunning Spring Looks (Really!)</span>
+				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/spring-makeup-tutorial#disqus_thread" data-url="http://www.refinery29.com/spring-makeup-tutorial" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/beauty" class="category" data-track="hotspot:footer-more">Beauty</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+				<a href="/best-spring-shoes" data-track="hotspot:footer-more">
+					<img src="http://static1.refinery29.com/bin/public/b0a/120x143/156415/opener1.jpg" alt="opener1" width="120" height="143"  />
+					<span class="more_h2 footer_h2">Spring Shoes! The 20 Best Pairs To Shop Now</span>
+				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/best-spring-shoes#disqus_thread" data-url="http://www.refinery29.com/best-spring-shoes" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/shopping" class="category" data-track="hotspot:footer-more">Shopping</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+				<a href="/spring-shopping-essentials" data-track="hotspot:footer-more">
+					<img src="http://static3.refinery29.com/bin/public/bd9/120x143/154781/spring-essentials-opener-new.jpg" alt="spring-ESSENTIALS-opener-NEW" width="120" height="143"  />
+					<span class="more_h2 footer_h2">30 Wardrobe Essentials You Need For Spring</span>
+				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/spring-shopping-essentials#disqus_thread" data-url="http://www.refinery29.com/spring-shopping-essentials" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/shopping" class="category" data-track="hotspot:footer-more">Shopping</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+        
+	</ul> 
+</div>
+          <!-- /CACHE 89436 - ttl: 300 -->
+          
+
+        </div> <!-- /Content -->
+    
+        <!-- Footer -->
+<div id="footer">
+  <img src="http://static2.refinery29.com/blog/fa5471/images/refinery29-logo.png" width="200" height="24" alt="Refinery29" />
+
+	<p><strong>&copy;2012 Refinery29. All Rights Reserved.</strong></p>
+	<ul>
+		<li><a href="/">Home</a> | </li>
+		<li><a href="http://www.refinery29.com/about">About</a> | </li>
+				<li><a href="http://www.refinery29.com/about">Contact</a> | </li>
+		
+		<li><a href="http://www.refinery29.com/careers">Careers</a> | </li>
+		<li><a href="http://www.refinery29.com/about">Advertise</a> | </li>
+		<li><script type="text/javascript">
+<!--
+document.write(String.fromCharCode(60,97,32,104,114,101,102,61,34,109,97,105,108,116,111,58,102,101,101,100,98,97,99,107,64,114,101,102,105,110,101,114,121,50,57,46,99,111,109,34,32,99,108,97,115,115,61,39,101,109,97,105,108,39,62,71,111,116,32,65,32,84,105,112,63,60,47,97,62));
+-->
+</script> | </li>
+		<li><a href="http://www.refinery29.com/signup">Sign Up</a> | </li>
+		  		<li><a href="http://www.refinery29.com/privacy">Privacy Policy</a> | </li>
+  		<li><a href="http://www.refinery29.com/terms-and-conditions">Terms and Conditions</a> | </li>
+		
+		<li><a href="http://the-rig.refinery29.com">The Rig</a> | </li>
+		<li><a href="http://www.refinery29.com/index.xml">RSS</a></li>
+	</ul>
+	
+	
+	<div id="mobile-link"><a href="/?mobile=true">Refinery29 Mobile</a></div>
+	
+</div>
+
+                
+      </div> <!-- /Inner -->
+      
+    </div> <!-- /Container -->
+
+    <!-- Comscore -->
+<script type="text/javascript">
+  var r29cookie = document.cookie;
+  var val;
+  
+  if (r29cookie.indexOf("r29comstore=") != -1)
+   {
+      i = r29cookie.indexOf("r29comstore=");
+      s = r29cookie.substring(i + 12);
+      j = s.indexOf(";");
+      if (j == -1)
+      {
+          val = s;
+      }
+      else {
+          val = s.substring(0, j);
+      }
+  } else {
+      val = Math.floor(Math.random() * 12345678);
+      var date = new Date();
+      date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
+      document.cookie = 'r29comstore=' + val + '; expires=' + date.toGMTString() + '; path=/';
+  }
+  
+  var currentUrl = self.location.url;
+  document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb": "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+
+</script>
+<script type="text/javascript"> 
+  COMSCORE.beacon({ c1:2, c2:"7395029",c3:"www.refinery29.com", c4:currentUrl, c5:"", c6:"", c15: val });
+</script>
+<noscript>
+  <img src = "http://b.scorecardresearch.com/p?c1=2&amp;c2=7395029&amp;c3=www.refinery29.com&amp;c4=http://www.refinery29.com/&amp;c5=&amp;c6=&amp;c15=C67BD3C1&amp;cj=1" alt="Comscore" />
+</noscript>
+<!-- /Comscore -->
+<!-- Google Analytics -->
+<script type="text/javascript">
+  
+  var _gaq = _gaq || [];
+    
+  // break up host into app, subdomain and tld
+  var tmp = /^([^\.]+\.)([\w\.]+)?refinery29\.(\w+)(:\d+)?$/.exec(window.location.host.toLowerCase()),
+    
+      // application
+      app = tmp[1] ? tmp[1] : 'www',
+      
+      // subdomain
+      sub = tmp[2] ? tmp[2] : '',
+      
+      // top level domain
+      tld = tmp[3] ? tmp[3] : 'com';
+  
+  _gaq.push(['_setAccount', 'UA-315022-1']);
+  
+  _gaq.push(['_setDomainName', '.refinery29.' + tld]);
+  
+  _gaq.push(['_addIgnoredRef', 'refinery29.' + tld]);
+
+  
+  
+  _gaq.push(['_setCustomVar',
+    1,                   // This custom var is set to slot #1.  Required parameter.
+    'Category',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'new-york\/news\/art-and-culture', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+   
+   
+  _gaq.push(['_setCustomVar',
+    2,                   // This custom var is set to slot #2.  Required parameter.
+    'Publication Date',     // The name acts as a kind of category for the user activity.  Required parameter.
+    '2011-03-16', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+  
+  
+  _gaq.push(['_setCustomVar',
+    3,                   // This custom var is set to slot #3.  Required parameter.
+    'Author',// The name acts as a kind of category for the user activity.  Required parameter.
+    'Peter Kassel, Connie Wang', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+  _gaq.push(['_setCustomVar',
+    4,                   // This custom var is set to slot #4.  Required parameter.
+    'Entry Type',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'ARTICLE', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+
+   
+  _gaq.push(['_setCustomVar', //USE THIS  R29.cookie.get('R29_UID');
+    5,                   // This custom var is set to slot #5.  Required parameter.
+    'Log-in Status',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'Not Logged In', // This value of the custom variable.  Required parameter.
+    2                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+   
+  _gaq.push(['_trackEvent',
+    'Navigation Click', // category of activity
+    $(this).attr('data-track'),
+    'new-york:news:art-and-culture', // Action
+    ,
+    true
+  ]);
+  
+  _gaq.push(['_trackPageview']);
+   
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- /Google Analytics -->
+
+<!-- Quantcast -->
+<script type="text/javascript">
+_qoptions={ qacct:"p-fesXMHo90Ka_A" };
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+  <img src="http://pixel.quantserve.com/pixel/p-fesXMHo90Ka_A.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- /Quantcast -->
+    <div id="js-cont"></div> 
+
+<!-- Facebook -->
+<div id="fb-root"></div> 
+<script type="text/javascript">
+
+  window.fbAsyncInit = function() {
+  
+    FB.init({ appId: '155023867867753', status: true, cookie: true, xfbml: true});
+    
+    /* Check if the user is NOT logged into R29, but IS logged into Facebook.  Fix it */
+    if (R29.url.param.getVar('fb') && !R29.user.token() && FB.getSession()) { //We have some sort of session, we *may* be logged in.
+      FB.getLoginStatus(function(response) {
+        if(response.status == 'connected') {
+          return document.location = 'https://welcome.refinery29.com/register?from=http%3A%2F%2Fwww.refinery29.com%2Fmeat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard&amp;sig=59cd3&amp;app=blog&amp;fb=1';
+        }    
+      });      
+    }
+        
+    //FACEBOOK LOGIN
+    $('a.fb_button, a.r29_fb_button').live('click', function() {
+      R29.FBLoginPopup();
+      return false;
+    });
+    
+    if (typeof window.fbAsyncOnInit == "function") {
+      window.fbAsyncOnInit();
+    }
+    
+    /* GOOGLE ANALYTICS */
+
+    FB.Event.subscribe('edge.create', function(targetUrl, fb_ref) {
+    	if (fb_ref._attr.ref == "homepage"){
+    		_gaq.push(['_trackEvent', 'FacebookIndex', 'like']);
+    	}
+    	else if (fb_ref._attr.ref == "entrypage"){
+    		_gaq.push(['_trackEvent', 'FacebookSolo', 'like']);
+    	}
+    	else if (fb_ref._attr.ref == "sidebar"){
+    		_gaq.push(['_trackEvent', 'FacebookSidebar', 'like']);
+    	}
+      _gaq.push(['_trackSocial', 'facebook', 'like', targetUrl]);
+    });
+    
+    FB.Event.subscribe('edge.remove', function(targetUrl) {
+      _gaq.push(['_trackSocial', 'facebook', 'unlike', targetUrl]);
+    });
+    
+    FB.Event.subscribe('message.send', function(targetUrl) {
+      _gaq.push(['_trackSocial', 'facebook', 'send', targetUrl]);
+    });
+    
+       
+  };
+  
+  R29.FBLoginPopup = function () {
+
+    FB.login(function(response) {
+    
+      if (response.session) {
+        //They *may* have given us perms, but who knows.
+        return document.location = 'https://welcome.refinery29.com/connect/fb?from=http%3A%2F%2Fwww.refinery29.com%2Fmeat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard&amp;sig=59cd3&amp;app=blog&amp;fb=1';
+      } else {
+        //Oh well, something is wrong, let's try the normal login
+        return document.location = 'https://welcome.refinery29.com/register?from=http%3A%2F%2Fwww.refinery29.com%2Fmeat-lover-the-most-horrifying-nyc-subletting-story-you-ve-ever-heard&amp;sig=59cd3&amp;app=blog&amp;fb=1';
+      }
+      
+     },{ scope: 'email,offline_access,publish_stream,publish_actions' } );
+  }
+  
+  
+</script>
+
+<script type="text/javascript">
+  //
+  
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script> 
+<!-- /Facebook -->
+
+<!-- Twitter -->
+<script type="text/javascript">
+    window.twttr = (function (d,s,id) {
+      var t, js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+      js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+
+  
+  //START GOOGLE ANALYTICS TWITTER TRACKING
+  function trackTwitter(intent_event) {
+    if (intent_event) {
+      var opt_pagePath;
+      if (intent_event.target && intent_event.target.nodeName == 'IFRAME') {
+            opt_target = extractParamFromUri(intent_event.target.src, 'url');
+      }
+      _gaq.push(['_trackSocial', 'twitter', 'tweet', opt_pagePath]);
+    }
+  }
+
+  //Wrap event bindings - Wait for async js to load
+  twttr.ready(function (twttr) {
+    //event bindings
+    twttr.events.bind('tweet', trackTwitter);
+  });
+  
+	function extractParamFromUri(uri, paramName) {
+	  if (!uri) {
+	    return;
+	  }
+	  var regex = new RegExp('[\\?&#]' + paramName + '=([^&#]*)');
+	  var params = regex.exec(uri);
+	  if (params != null) {
+	    return unescape(params[1]);
+	  }
+	  return;
+	}
+	//END GOOGLE ANALYTICS TWITTER TRACKING
+
+</script>
+<!-- /Twitter -->
+
+<!-- Pinterest -->
+  <script type="text/javascript">
+  (function() {
+      window.PinIt = window.PinIt || { loaded:false };
+      if (window.PinIt.loaded) return;
+      window.PinIt.loaded = true;
+      function async_load(){
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          if (window.location.protocol == "https:")
+              s.src = "https://assets.pinterest.com/js/pinit.js";
+          else
+              s.src = "http://assets.pinterest.com/js/pinit.js";
+          var x = document.getElementsByTagName("script")[0];
+          x.parentNode.insertBefore(s, x);
+      }
+      if (window.attachEvent)
+          window.attachEvent("onload", async_load);
+      else
+          window.addEventListener("load", async_load, false);
+  })();
+  </script>
+<!-- /Pinterest -->
+
+
+<!-- Disqus -->
+
+<script type="text/javascript">
+  var disqus_shortname = 'refinery';
+  var disqus_developer = 1;
+  
+
+var DISQUSWIDGETS;
+var disqus_domain;
+var disqus_shortname;
+if (typeof DISQUSWIDGETS == "undefined") {
+    DISQUSWIDGETS = (function () {
+        var d = {},
+            a = (document.getElementsByTagName("HEAD")[0] || document.getElementsByTagName("BODY")[0]),
+            c = 0,
+            f = {},
+            e = {
+                identifier: 1,
+                url: 2,
+                slug: 3
+            };
+
+        function b(i) {
+            var h, k;
+
+            function j(l) {
+                return i.hasAttribute ? i.hasAttribute(l) : i.getAttribute(l) !== null
+            }
+            
+            if (j("data-disqus-identifier")) {
+                h = e.identifier;
+                k = i.getAttribute("data-disqus-identifier")
+            } else {
+            
+                if (j("data-url")) {
+                    h = e.url;
+                    k = i.getAttribute("data-url")
+                } else if (j("data-disqus-slug")) {
+                    h = e.slug;
+                    k = i.getAttribute("data-disqus-slug")
+                } else {
+                    h = e.url;
+                    k = i.href.replace("#disqus_thread", "")
+                }
+                
+            }
+            f[c++] = {
+                element: i,
+                type: h,
+                value: k
+            }
+        }
+        function g(k) {
+            var j = document.getElementsByTagName("A");
+            for (var h = 0; h < j.length; h++) {
+                if (j[h].href.indexOf("#disqus_thread") >= 0) {
+                    k(j[h])
+                }
+            }
+        }
+        d.domain = "disqus.com";
+        d.forum = "";
+        d.getCount = function () {
+            var m, h, k, j;
+            var l = [],
+                o = 0,
+                i = 10;
+
+            function n(q, p) {
+                return encodeURIComponent(q) + "=" + encodeURIComponent(p.type) + "," + encodeURIComponent(p.value)
+            }
+            g(b);
+            for (m in f) {
+                if (f.hasOwnProperty(m)) {
+                    l.push(n(m, f[m]))
+                }
+            }
+            k = l.slice(o, i);
+            while (k.length > 0) {
+                j = document.createElement("script");
+                j.type = "text/javascript";
+                j.async = true;
+                j.src = "http://" + d.domain + "/forums/" + d.forum + "/count.js?q=1&" + k.join("&");
+                a.appendChild(j);
+                o += 10;
+                i += 10;
+                k = l.slice(o, i)
+            }
+        };
+        d.displayCount = function (j) {
+            var m, h, n, l;
+            for (var k = 0; k < j.counts.length; k++) {
+                m = j.counts[k];
+                h = f[m.uid];
+                if (h) {
+                    if (m.comments === 0) {
+                        n = j.text.comments.zero
+                    } else {
+                        if (m.comments == 1) {
+                            n = j.text.comments.one
+                        } else {
+                            n = j.text.comments.multiple
+                        }
+                    }
+                    l = n.replace("{num}", m.comments);
+                    if (j.showReactions) {
+                        n = "";
+                        if (m.reactions === 0) {
+                            n = j.text.reactions.zero
+                        } else {
+                            if (m.reactions == 1) {
+                                n = j.text.reactions.one
+                            } else {
+                                n = j.text.reactions.multiple
+                            }
+                        }
+                        if (n !== "") {
+                            l += " " + j.text.and + " " + n.replace("{num}", m.reactions)
+                        }
+                    }
+                    h.element.innerHTML = l
+                }
+            }
+        };
+        return d
+    }())
+}(function () {
+    if (typeof disqus_domain != "undefined") {
+        DISQUSWIDGETS.domain = disqus_domain
+    }
+    DISQUSWIDGETS.forum = disqus_shortname;
+    DISQUSWIDGETS.getCount()
+}());
+
+ 
+  
+</script>
+
+<!-- /Disqus -->
+
+<!-- R29 Schtufff -->
+<script type="text/javascript">
+
+$(function() {
+
+  // Variables
+  var tabs = $('div.top-five > ul > li');
+  var top5 = $('div.top-five > div');
+    
+  // On Click
+  $(tabs).click(function() {
+    
+    $(tabs).removeClass("active");
+    $(this).addClass("active");
+    
+    $(top5).hide();
+    var activeTab = $(this).find("a").attr("href");
+    $(activeTab).show();
+    
+    return false;
+  });
+  
+  
+  // Hot Carousel
+  $("#hot-carousel li").show();
+  $("#hot-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  auto: 6,
+  itemFallbackDimension: 280,
+  initCallback: 
+  function (carousel) {
+    $('.control div.slide-btn', carousel.container).bind('click', function() {
+      carousel.scroll(jQuery.jcarousel.intval($(this).attr('image_id')));
+      $('.control div',carousel.container).removeClass('selected');
+      $(this).addClass('selected');
+      return false;
+    });
+    $('.control div.next', carousel.container).bind('click', function() {
+      carousel.next();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+    $('.control div.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+  },
+  itemVisibleInCallback: function(carousel, item, idx, state) {
+    $('.control div',carousel.container).removeClass('selected');
+    $('.control div[image_id='+idx+']',carousel.container).addClass('selected');  
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+
+  // Category Carousel
+  
+  $("#category-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  itemFallbackDimension: 562,
+  initCallback: 
+  function (carousel) {
+    $('.control a.next', carousel.container).bind('click', function() {
+      carousel.next();
+      return false;
+    });
+    $('.control a.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      return false;
+    });
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+  
+  // Hot Category Carousel
+  $("#category-hot-carousel li").show();
+  $("#category-hot-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  auto: 6,
+  itemFallbackDimension: 608,
+  initCallback: 
+  function (carousel) {
+    $('.control div.slide-btn', carousel.container).bind('click', function() {
+      carousel.scroll(jQuery.jcarousel.intval($(this).attr('image_id')));
+      $('.control div',carousel.container).removeClass('selected');
+      $(this).addClass('selected');
+      return false;
+    });
+    $('.control div.next', carousel.container).bind('click', function() {
+      carousel.next();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+    $('.control div.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+  },
+  itemVisibleInCallback: function(carousel, item, idx, state) {
+    $('.control div',carousel.container).removeClass('selected');
+    $('.control div[image_id='+idx+']',carousel.container).addClass('selected');  
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+
+
+  // Related Videos Carousel
+  
+/*
+  $("#video-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  itemFallbackDimension: 562,
+  initCallback: 
+  function (carousel) {
+    $('.control img.next', carousel.container).bind('click', function() {
+      carousel.next();
+      return false;
+    });
+    $('.control img.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      return false;
+    });
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+*/
+  
+  //You know where the bottom line of the container shows while the page is loading, I hate it
+  $('#container .inner').css('border-bottom', '1px solid #ccc');
+  
+});
+
+</script>
+
+    <script type="text/javascript">
+  
+  var _chartbeat_loaded = false;
+  
+  $(function() {
+   
+    if (_chartbeat_loaded) return; 
+    
+    _chartbeat_loaded = true;
+    
+    var _sf_async_config={ uid:3552,domain:"refinery29.com" };
+    R29.remote.include_js("//a248.e.akamai.net/chartbeat.download.akamai.com/102508/js/chartbeat.js");
+      
+  });
+</script>
+          <!-- Crazy Egg -->
+<script type="text/javascript" src="//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/5055.js"></script>
+<!-- /Crazy Egg -->
+    
+    
+    
+    <!-- Internal Stats -->
+<script type="text/javascript">
+
+      R29_STAT_DATA = $.extend({ app:'blog' },R29.url.param.getUTM());
+  
+  
+  try {
+    R29.stats.send([['user_page_load',R29_STAT_DATA, ((new Date()).getTime() - _sf_startpt)]]);
+  } catch (e) { };
+      
+</script>
+<!-- /Internal Stats -->
+    
+    
+    
+    
+    <script type="text/javascript">
+     try {
+        R29.stats.send([['user_page_view',{
+          app:  'blog',
+          page: 'entry',
+          entry_type: 'ARTICLE',
+          entry_id: 15786, 
+          market_id: 1, 
+          category_id: [72,11,6], 
+          author_id: [359,1]
+        }]]);
+        
+        
+      } catch (e) { };
+    </script> 
+    
+    
+    
+          <!-- Sailthru Horizon --> 
+      <script type="text/javascript">
+        (function() {
+          var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+          s.src = ('https:'==location.protocol?'https://d1gp8joe0evc8s.cloudfront.net':'http://cdn.sail-horizon.com')+'/horizon/v1.js';
+          var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+      </script>
+      <script type="text/javascript">
+        $(window).load(function() {
+          Sailthru.setup({
+            domain: 'horizon.refinery29.com',
+            tags: "nyc-subletting-stories,worst-subletting-stories,chinese-food-man,chinese-food-sex-toy,mopery,meat-lover,subletter,headspace,spare-room,lower-east-side,water-damage,moving-across-the-country,miscellany,office-space,rats,mold,avenues,ex-girlfriend,long-distance,apartment,funk,art-and-culture,news,everywhere,new-york",
+            cookieDomain: '.refinery29.com'
+          });
+        });
+      </script>
+    
+
+
+  </body>
+<!-- Served in 368ms by web05.prod.refinery29.net at Sat, 14 Apr 2012 14:44:59 -0400 -->
+</html>

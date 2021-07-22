@@ -1,0 +1,985 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="mcontent-Type" content="text/html; charset=UTF-8" />
+	<title>TR10: Mobile 3-D - Technology Review</title>
+	<meta http-equiv="mcontent-Type" content="text/html; charset=utf-8" />
+	<meta content="Technology, Review, MIT, magazine, nanotechnology, nanotech, biotechnology, biotech, information technology, infotech, business, business technology, biz tech" name="keywords" />
+	<meta content="Smart phones will take 3-D mainstream. " name="description" />
+	<meta content="Technology Review Web Development Team" name="author" />
+	<meta content="TR10: Mobile 3-D - Technology Review" name="title" />
+	<meta content="" name="pages" />
+	<meta content="" name="collection" />
+	<meta content="Cambridge, MA" name="geo.placename" />
+	<meta content="US-MA" name="geo.region" />
+	<link rel="shortcut icon" href="/favicon.ico?634261995914320154" />
+	<link rel="icon" href="/favicon.ico?634261995914320154" />
+
+	<link rel="stylesheet" media="only screen and (device-width: 768px)" href="/css/ipad.css" type="text/css" />
+
+
+	<link href="/css/style.css?634342407204457110" rel="stylesheet" type="text/css" />
+	
+
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.technologyreview.com/rss/rss.aspx" />
+
+<!--[if IE]><link rel="stylesheet" href="/css/ie.css?634280969475877728" type="text/css" media="all" /><![endif]-->
+<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie7.css?634296529933105922" type="text/css" media="all" /><![endif]-->
+<!-- JQuery Library -->
+<script type="text/javascript" src="/scripts/jquery-1.4.2.js?634177217785666350"></script>
+<script type="text/javascript" src="/scripts/scripts.js?634238772152187359"></script>
+<script type="text/javascript" src="/scripts/jsScroller.js?634176559459234440"></script>
+<script type="text/javascript" src="/scripts/jsScrollbar3.js?634176560155340124"></script>
+<script type="text/javascript">
+var scroller  = null;
+var scrollbar = null;
+window.onload = function () {
+	if (document.getElementById("Scroller-3")) {
+  scroller  = new jsScroller(document.getElementById("Scroller-3"), 330, 230);
+  scrollbar = new jsScrollbar (document.getElementById("Scrollbar-Container"), scroller, false);
+  	}
+}
+</script>
+
+<script type="text/javascript" src="/scripts/MobileCompatibilityScript.js?634093656220000000"></script>
+
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script> 
+<script type="text/javascript" src="http://admin.brightcove.com/js/APIModules_all.js"></script> 
+
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var randartnum = Math.random()*10000000000000000;
+//--><!]]>
+</script>
+</head>
+
+<body class="article-pg magarticle-pg">
+<!-- search ignore begin -->
+
+
+
+<div class="container">
+	<div id="header">
+		<div id="topheader">
+
+		<div id="logo">
+			<a href="http://www.technologyreview.com/"><img src="/images/logo.png" width="197" height="63" alt="Technology Review" /></a>
+			<span class="tagline">Published by MIT</span>
+		</div>
+
+		
+		
+		<ul class="languages">
+			<li><a href="http://www.technologyreview.com/">English</a></li>
+			<li><a href="http://www.technologyreview.com/es" lang="es">en Español</a></li>
+			<li><a href="http://www.heise.de/tr/" lang="de">auf Deutsch</a></li>
+			<li><a href="http://www.technologyreview.it/" lang="it">in Italiano</a></li>
+			<!--<li><a href="#" lang="pt">Portugese</a></li>-->
+			<li><a href="http://www.mittrchinese.com/" lang="ar">中文</a></li>
+			<li><a href="http://www.technologyreview.in/" lang="hi">in India</a></li>
+		</ul>
+		
+		<ul id="myaccount">
+			<li class="first"><a href="https://subscribe.technologyreview.com/mit/">Subscribe</a></li>
+			<li>
+	
+				<a href="https://www.technologyreview.com/mytr/login.aspx?redirect=http%3A%2F%2Fwww.technologyreview.com%2Fcommunications%2F25081%2F%3Fa%3Df">Login</a>
+	
+			</li>
+		</ul>
+	
+		<div class="advert">
+			<div id="topbanneradspacer"></div>
+		</div>
+				
+		
+		<form action="/search.aspx" method="get" class="searchform">
+			<fieldset>
+
+				<label for="search" class="hide">Search</label>
+				<input id="search" name="s" class="text blink" value="search" onclick="if (!this.removedSearch) {this.value = ''; this.removedSearch = true;}"/>
+			</fieldset>
+			<fieldset class="submit">
+				<input type="image" src="/images/go.png" alt="search" class="button" />
+			</fieldset>
+			<input type="hidden" name="mod" value="search" />
+		</form><!--/.searchform-->
+		
+		
+		
+		<div class="clear"></div>
+		
+		</div>
+		
+		
+		<div class="navcontainer">
+			<div class="navs">
+			<ul class="nav" id="nav">
+				<li id="nav1"><a href="http://www.technologyreview.com/?mod=Nav_Home">Home</a></li>
+				<li id="nav2"><a href="http://www.technologyreview.com/computing/?mod=Nav_Computing">Computing</a></li>
+				<li id="nav3"><a href="http://www.technologyreview.com/web/?mod=Nav_Web">Web</a></li>
+				<li id="nav4"><a href="http://www.technologyreview.com/communications/?mod=Nav_Communications">Communications</a></li>
+				<li id="nav5"><a href="http://www.technologyreview.com/energy/?mod=Nav_Energy">Energy</a></li>
+				<li id="nav6"><a href="http://www.technologyreview.com/materials/?mod=Nav_Materials">Materials</a></li>
+				<li id="nav7"><a href="http://www.technologyreview.com/biomedicine/?mod=Nav_Biomedicine">Biomedicine</a></li>
+				<li id="nav8"><a href="http://www.technologyreview.com/business/?mod=Nav_Business">Business</a></li>
+			</ul>
+			
+			<ul class="nav nav2">
+			<li id="nav9" class="here"><a href="http://www.technologyreview.com/magazine/?mod=Nav_Magazine">Magazine</a></li>
+				<li id="nav10"><a href="http://www.technologyreview.com/blog/?mod=Nav_Blogs">Blogs</a></li>
+				<li id="nav11"><a href="http://www.technologyreview.com/video/?mod=Nav_Videos">Video</a></li>
+
+			</ul>
+			</div>
+			
+		
+		</div><!--/.navcontainer-->
+		
+		
+	</div>
+	<!--/.header-->
+
+	
+	<div class="contentwrap">	
+		<div class="mcontent">
+
+<!-- search ignore end -->
+
+
+
+
+<div class="maincontent">
+
+	
+
+<div class="article">
+	<div class="articletop">
+	
+	<h2>TR10</h2>
+	
+	
+	<h3>TR10: Mobile 3-D</h3>
+	
+	
+	<p class="intro">Smart phones will take 3-D mainstream. </p>
+	
+	
+	<ul class="info">
+		<li>May/June 2010</li>
+		
+		<li>By Annalee Newitz</li>
+		
+	</ul>
+	
+	
+	<div class="options"> <a href="/email_a_friend.aspx?id=25081" target="_blank" class="email">E-mail</a><span class="optionpipe2">|</span><a href="http://www.audiodizer.com/technologyreview/communications/25081.mp3" class="audio">Audio &raquo;</a><span class="optionpipe2">|</span><a href="/printer_friendly_article.aspx?id=25081" target="_blank" class="print">Print</a> <span class="icons"> <a href="#"><img src="/images/smalltxt-icon.gif" alt="small text" /></a> <a href="#"><img src="/images/medtxt-icon.gif" alt="medium text" /></a> <a href="#"><img src="/images/largetxt-icon.gif" alt="large text" /></a> </span> </div>
+	
+	<div class="mainpic mainpicWide"> 
+		<img src="/files/39720/0510-3D-Phonex600_2.jpg" width="590" height="440" alt="" class="photo" />
+		
+		<p class="caption">
+			<b>3-D on the go:</b> Released in South Korea in March, Samsung's W960 mobile phone comes with 3-D video content, generated by Dynamic Digital Depth, that can be viewed without special glasses. Dynamic Digital Depth expects that its software to convert 2-D games to 3-D on the fly will be built into phones within the next two years.
+			
+			<br />
+			
+			Credit: Bryan Christie Design
+			
+		</p>
+		
+		<div class="articlesidebar">
+			<b>Julien Flack</b><br />
+(Dynamic Digital Depth) Mobile 3-D could spark new computing applications and interfaces<p>
+
+<b>OTHERS WORKING ON MOBILE 3-D</b><br />
+3M, St. Paul, MN<br />
+Nintendo, Kyoto, Japan<br />
+Nvidia, Santa Clara, CA<br />
+N4D, Atlanta, GA
+		</div>
+		
+	</div>
+	
+	
+	</div><!-- /articletop -->
+	
+	<!--<div class="clear"></div>-->
+	<div class="mainBody">
+	<p><em>This article is part of an annual list of what we believe are the 10 most important emerging technologies. See the full list <a href="http://www.technologyreview.com/tr10" target="_blank">here</a>.</em></p>
+	<p>The Samsung B710 phone looks like a typical smart phone, but something unexpected happens when the screen is moved from a vertical to a horizontal orientation: the image jumps from 2-D to 3-D. The technology that produces this perception of depth is the work of Julien Flack, CTO of Dynamic Digital Depth, who has spent more than a decade perfecting software that can convert 2-D content to 3-D in real time. It could help solve the biggest problem with 3-D: the need for special glasses that deliver a separate image to each eye. </p>
+<p>Flack's software synthesizes 3-D scenes from existing 2-D video by estimating the depth of objects using various cues; a band of sky at the top of a frame probably belongs in the far background, for example. It then creates pairs of slightly different images that the viewer's brain combines to produce the sensation of depth. </p>
+<p>The technology can be used with the much-hyped 3-D televisions announced in January (which require glasses), but its biggest impact will be as a way to create content for mobile devices with auto­stereoscopic 3-D displays, which work by directing light to deliver different versions of an image directly to each of a viewer's eyes. The effect works best over a narrow range of viewing angles, so it is ill suited to television or cinema screens. But phones are generally used by one person at a time and are easily held at the optimum angle. That's why mobile multimedia devices are likely to win the race to bring 3-D into the mainstream.</p>
+	
+		<div class="articleAd">
+			<!--<p style="clear: both; text-align: center; font-size: 11px; padding:0; margin:0"><a href="#afteradbody" style="text-decoration: none;">Story continues below</a></p>-->
+			<div style="text-align: center; ">
+				<img src="/images/ad_legend_h.gif" width="79" height="17" alt="Advertisement" style="margin-top: 0; margin-bottom: 0;" /><br />
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="//ad.doubleclick.net/adj/mk3.technologyreview.com/mediumrectangle4;!category=communicationsexc;channel=communications;section=;at=mediumrectangle4;page=home;s=mediumrectangle4;dcopt=ist;ord=' + randartnum + '?"><\/SCR' + 'IPT>')
+//--><!]]>
+</script>                                 
+<noscript>
+<a href="//ad.doubleclick.net/jump/mk3.technologyreview.com/mediumrectangle4;!category=communicationsexc;channel=communications;section=;at=mediumrectangle4;page=home;s=mediumrectangle4;ord=?" target="_blank">
+<img src="//ad.doubleclick.net/ad/mk3.technologyreview.com/mediumrectangle4;!category=communicationsexc;channel=communications;section=;at=mediumrectangle4;page=home;s=mediumrectangle4;ord=?" border="0" alt="click here..." />
+</a>
+</noscript>
+			</div>
+		</div>
+		<a name="afteradbody"></a>
+		<p>Powered by Flack's software, Dynamic Digital Depth has become an early leader in mobile 3-D. The software was built into the B710, which Samsung released in South Korea in 2007, and Samsung has licensed 3-D content generated by Dynamic Digital Depth for its latest 3-D phone, the W960, released in March. Research firm DisplaySearch recently predicted that by 2018 there will be 71 million such devices worldwide. </p>
+<p>The most exciting area for Flack right now is games. Hundreds of games actually simulate 3-D spaces internally to handle mechanics such as the path of a missile, and then convert those 3-D spaces into 2-D to display to the player. With his technology, he says, the 3-D geometry "available inside the game itself" can be made accessible to the display. DDD has already released software that converts games to 3-D on PCs and expects to have similar software running on mobile devices in the next year or two.</p>
+	
+<div class="box b-video-mod">
+	<h2>Video</h2>
+		
+	
+	<div class="boxcontent">				
+		<div class="visual" style="height:220px;">
+			<object class="BrightcoveExperience">
+  				<param name="bgcolor" value="#FFFFFF" />
+  				<param name="playerID" value="605729513001" />
+  				<param name="playerKey" value="AQ%2E%2E,AAAAAAEgZvo%2E,jStb8wH-jnKKfspX0-PYNE5za6m3bvHq" />
+  				<param name="isVid" value="true" />
+  				<param name="isUI" value="true" />
+  				<param name="dynamicStreaming" value="true" />
+			  	<param name="width" value="390" />
+			  	<param name="height" value="220" /> 
+			  	<param name="@videoPlayer" value="78011793001" /> 
+			</object>
+<script type="text/javascript"> 
+   runMobileCompatibilityScript('HTML5');
+</script>
+<!--
+This script tag will cause the Brightcove Players defined above it to be created as soon
+as the line is read by the browser. If you wish to have the player instantiated only after
+the rest of the HTML is processed and the page load is complete, remove the line.
+--> 
+<script type="text/javascript">brightcove.createExperiences();</script> 
+
+			<!--<img src="/images/b-video_placeholder.jpg" alt="" />-->
+		</div><!--/.visual-->
+	</div><!--/.boxcontent-->
+</div><!--/.box video-mod -->
+
+	<p>It's applications like mobile games and video that will drive the widespread adoption of 3-D screens. And that, in turn, could lay the groundwork for a new generation of surprising interfaces and applications, just as large 2-D screens on mobile devices spawned developments such as touch-based interfaces and augmented reality. <br /></p>
+	
+		<div class="clear"></div>
+	</div>
+
+<!--
+<div class="box b-video-mod">
+	<h2>Video</h2>
+	<ul class="tabs">
+		<li><a href="#">Interactive</a></li>
+		<li><a href="#">Slide Show</a></li>	
+	</ul>
+	
+	<div class="boxcontent">				
+		<div class="visual">
+
+			<img src="/images/b-video_placeholder.jpg" alt="" />
+		</div>
+	</div>
+</div> -->
+
+
+
+
+<div id="slideboxplacer"></div>
+<div id="slidebox">
+	<a class="close"></a>
+	<p>More in TR10</p>
+	<h2><a href="/energy/25082/?mod=more">TR10: Engineered Stem Cells</a></h2>
+	<a href="/energy/25082/?mod=more" class="more">Read More »</a>
+</div>
+<!-- The JavaScript -->
+<script type="text/javascript">
+$(function() {
+	$(window).scroll(function(){
+		/* when reaching the element with id "slideboxplacer" we want to show the slidebox. Let's get the distance from the top to the element */
+		var distanceTop = $('#slideboxplacer').offset().top - $(window).height();
+		
+		if  ($(window).scrollTop() > distanceTop)
+			$('#slidebox').animate({'right':'0px'},300);
+		else
+			$('#slidebox').stop(true).animate({'right':'-430px'},100);	
+	});
+	
+	/* remove the slidebox when clicking the cross */
+	$('#slidebox .close').bind('click',function(){
+		$(this).parent().remove();
+	});
+});
+</script>
+
+<div class="options clear"> <a href="/email_a_friend.aspx?id=25081" target="_blank" class="email">E-mail</a><span class="optionpipe2">|</span><a href="/printer_friendly_article.aspx?id=25081" target="_blank" class="print">Print</a> <a href="#">Favorite</a> <a href="#">Share</a><span class="optionpipe">|</span><iframe src="http://www.facebook.com/plugins/like.php?href=&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style=" overflow:hidden; width:55px; height:21px;" allowTransparency="true" class="facebook-like-button"></iframe><span class="optionpipe">|</span><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
+<!--/.options-->
+
+	
+
+<div class="clear"></div>
+
+<div class="module magfeatuedrelated">
+	<h3>Related Articles</h3>
+	<div class="sectionwrapper">
+	
+		<div class="section">
+		
+			<a href="/computing/26691/?mod=related"><img src="/files/48587/kinect_x116.jpg" width="116" height="95" alt="" /></a>
+		
+			<h4><a href="/computing/26691/?mod=related">Gesturing at Your TV Isn't Ready for Prime Time </a></h4>
+		
+			<p>The Microsoft Kinect is fun, but it shows that so-called natural user interfaces still have a long way to go. </p>
+		
+		</div>
+	
+		<div class="section">
+		
+			<a href="/computing/26507/?mod=related"><img src="/files/47504/mundie_x116.jpg" width="116" height="95" alt="" /></a>
+		
+			<h4><a href="/computing/26507/?mod=related">Microsoft's 3-D Strategy</a></h4>
+		
+			<p>Microsoft's Craig Mundie describes how the company's vision of 3-D gaming could extend to all computer interactions.</p>
+		
+		</div>
+	
+		<div class="section">
+		
+			<a href="/computing/25524/?mod=related"><img src="/files/42623/ms3d_x116.jpg" width="116" height="95" alt="" /></a>
+		
+			<h4><a href="/computing/25524/?mod=related">3-D Without the Glasses</a></h4>
+		
+			<p>A new type of display from Microsoft produces multiple images and tracks the viewers' eyes.
+
+</p>
+		
+		</div>
+	
+		<div class="clear"></div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+
+
+</div>
+
+	
+<div class="clear"></div>
+<div id="comments"></div>
+	
+<p class="commentOpenClose"><a href="#" onclick="openCloseComments(this); return false">Close Comments</a></p>
+	
+<form action="https://www.technologyreview.com/mytr/login.aspx?redirect=http%3A%2F%2Fwww.technologyreview.com%2Fcommunications%2F25081%2F%3Fa%3Df%23comments" method="post" class="pagelogin">
+	<input type="hidden" name="loggingIn" value="true" />
+	<p>To comment, please sign in or <a href="https://www.technologyreview.com/mytr/createuser.aspx?redirect=http://www.technologyreview.com/communications/25081/?a=f">register</a></p>
+	<fieldset>
+		<label for="cusername" class="hide">Username</label>
+
+		<input name="username" value="username" id="cusername" title="username" class="text blink" />
+		
+		
+		<label for="cpassword" class="hide">Password</label>
+		<input type="password" name="password" id="cpassword" value="password" title="password" class="text blink" />
+	</fieldset>
+	<fieldset class="submit">
+		<input type="image" src="/images/login_button.jpg" alt="login" class="button" />
+	</fieldset>
+	<p><a href="http://www.technologyreview.com/mytr/resetpassword.aspx">Forgot</a> my password  </p>
+</form>
+	
+
+<div class="divider"><!-- --></div>
+
+<div id="allcomments">
+
+<div class="blogcomments" id="comment-219002">
+	<div class="section">
+		<div class="user">
+	<img src="/images/profile.jpg" width="45" height="45" alt="" />
+			<p class="username">jkmacr</p>
+		
+			<p>1 Comment</p>
+		
+		</div>
+		<div class="comment">
+			<ul class="info">
+				<li>314 Days Ago</li>
+				<li>04/20/2010</li>
+	
+			</ul>
+	
+			<p><strong><a href="#comment-219002">Spatial View</a></strong></p>
+	
+			<p class="commentbody">Late last year, Spatial View (www.spatialview.com) launched a shell providing glass-less 3D capability for the iPhone, along with software to convert images and games from 2D to 3D (including a Flikr app). </p>
+		</div>
+	</div>
+	<p class="reply"><a href="http://www.technologyreview.com/mytr/comment.aspx?pid=219002">Reply</a></p>
+	<div class="clear"></div>
+	
+</div>
+
+<div class="divider"></div>
+	
+<div class="blogcomments" id="comment-219028">
+	<div class="section">
+		<div class="user">
+	<img src="/images/profile.jpg" width="45" height="45" alt="" />
+			<p class="username">vnedovic</p>
+		
+			<p>29 Comments</p>
+		
+		</div>
+		<div class="comment">
+			<ul class="info">
+				<li>313 Days Ago</li>
+				<li>04/21/2010</li>
+	
+			</ul>
+	
+			<p><strong><a href="#comment-219028">smart</a></strong></p>
+	
+			<p class="commentbody">Starting with games, and small screens, is smart. Games mostly give you 3D already, but then the whole 'mainstream' part of the story becomes shaky... Anyway, I don't expect this technology to become part of a wider mainstream too soon; e.g. here's a list of constraints that DDD asks for when automatically converting (replace 'perceive' with 'work' in do's):<br /><br /><a target="_blank" rel="nofollow" href="http://www.tridef.com/content/overview.html">http://www.tridef.com/content/overview.html</a></p>
+		</div>
+	</div>
+	<p class="reply"><a href="http://www.technologyreview.com/mytr/comment.aspx?pid=219028">Reply</a></p>
+	<div class="clear"></div>
+	
+</div>
+
+<div class="divider"></div>
+	
+<div class="blogcomments" id="comment-219798">
+	<div class="section">
+		<div class="user">
+	<img src="/images/profile.jpg" width="45" height="45" alt="" />
+			<p class="username">rick_merrill@alum.mit.edu</p>
+		
+			<p>10 Comments</p>
+		
+		</div>
+		<div class="comment">
+			<ul class="info">
+				<li>293 Days Ago</li>
+				<li>05/11/2010</li>
+	
+			</ul>
+	
+			<p><strong><a href="#comment-219798">mobile 3-D illustration</a></strong></p>
+	
+			<p class="commentbody">The picture accompaning this article was drawn by an illustrator and is not a photo of the results. 3D viewing must be bounded by the device itself and cannot be seen as shown protruding from the device (unless it were a holographic projection).</p>
+		</div>
+	</div>
+	<p class="reply"><a href="http://www.technologyreview.com/mytr/comment.aspx?pid=219798">Reply</a></p>
+	<div class="clear"></div>
+	
+</div>
+
+<div class="divider"></div>
+	
+<div class="blogcomments" id="comment-221146">
+	<div class="section">
+		<div class="user">
+	<img src="/images/profile.jpg" width="45" height="45" alt="" />
+			<p class="username">2D-3D</p>
+		
+			<p>1 Comment</p>
+		
+		</div>
+		<div class="comment">
+			<ul class="info">
+				<li>253 Days Ago</li>
+				<li>06/20/2010</li>
+	
+			</ul>
+	
+			<p><strong><a href="#comment-221146">3D video on ordinary screens</a></strong></p>
+	
+			<p class="commentbody">Here is a method for viewing 3D video on <i>ordinary</i> smartphone and tablet screens...<br />
+<a target="_blank" rel="nofollow" href="http://www.2D-3Dvideo.com">www.2D-3Dvideo.com</a><br />
+<br />
+This doesn't have stereoscopic pop-out, but you can see look around effects and motion parallax. It allows a 3D experience to be distributed online to anyone with a smartphone or tablet. <br />
+<br />
+You don't need to distribute viewing apparatus, and it avoids the problems that lenticular overlays are notorious for, like reduced resolution and narrow viewing zones. The 3D perspective also works in any direction this way, not just on a horizontal plane like lenticular and stereoscopic viewing.</p>
+		</div>
+	</div>
+	<p class="reply"><a href="http://www.technologyreview.com/mytr/comment.aspx?pid=221146">Reply</a></p>
+	<div class="clear"></div>
+	
+</div>
+
+</div>
+
+
+    
+
+
+</div>
+<!--/.maincontent-->
+
+
+
+<div class="sidecontent">
+<!-- search ignore begin -->
+
+
+<div class="smod">
+	<div class="ad">
+		<div class="adheader"><img src="/images/ad_legend_h.gif" width="79" height="17" alt="Advertisement" /></div>
+			<script type="text/javascript">
+			<!--//--><![CDATA[//><!--
+			var browser_type=navigator.appName
+									var browser_version=parseInt(navigator.appVersion)
+									document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="http://ad.doubleclick.net/adj/mk3.technologyreview.com/mediumrectangle;!category=communicationsexc;channel=communications;section=;at=mediumrectangle;page=home;s=mediumrectangle;;tile=3;ord=' + randartnum + '?"><\/SCR' + 'IPT>')
+			//--><!]]>
+			</script><noscript>
+									<a href="http://ad.doubleclick.net/jump/mk3.technologyreview.com/mediumrectangle;!category=communicationsexc;channel=communications;section=;at=mediumrectangle;page=home;s=mediumrectangle;tile=3;ord=?" target="_blank">
+										<img src="http://ad.doubleclick.net/ad/mk3.technologyreview.com/mediumrectangle;!category=communicationsexc;channel=communications;section=;at=mediumrectangle;page=home;s=mediumrectangle;tile=3;ord=?" border="0" alt="click here..." />									</a>
+			</noscript>
+	</div>
+	<div class="clear"></div>
+</div>
+		
+
+
+
+<div class="smod red magbox">
+	<h2><a href="/magazine/">MAGAZINE</a></h2>
+    <div class="navcontainer">
+		<ul class="nav">
+			<li id="magazineBoxTab_0" class="here"><a href="#" onclick="tabClick('magazineBox', 0); return false;">Our Pick</a></li>
+			<li id="magazineBoxTab_1"><a href="#" onclick="tabClick('magazineBox', 1); return false;">Most Viewed</a></li>
+			<li id="magazineBoxTab_2"><a href="#" onclick="tabClick('magazineBox', 2); return false;">Most Comments</a></li>
+			<li id="magazineBoxTab_3"><a href="#" onclick="tabClick('magazineBox', 3); return false;">Most E-mailed</a></li>
+		</ul>
+	</div>
+    <div class="mag-mod">
+    	<div class="box3 minimal" style="overflow: visible; height: auto; float: none; margin-left: 0;">	
+
+			<div id="magazineBox_0">
+	
+				<a href="http://www.technologyreview.com/biomedicine/32419/?mod=MagOur"><img src="/files/55125/0311-Q%26A_x296.jpg" width="296" height="196" style="margin-top: 0;" alt="" /></a>
+			
+				<h4><a href="http://www.technologyreview.com/biomedicine/32419/?mod=MagOur">Jonathan Rothberg</a></h4>
+			
+				<p>The founder of Ion Torrent says his DNA-sequencing technology will revolutionize genomics the way the microprocessor transformed computing.</p>
+			
+			</div>
+
+			<div id="magazineBox_1" style="display:none;">
+	
+				<a href="/computing/32360/?mod=MagMstVwd"><img src="/files/54886/0311-Square-A_x116.jpg" width="116" height="95" style="margin-top: 0; float: left; margin-right: 10px; margin-bottom: 10px;" alt="" /></a>
+		
+				<h4><a href="/computing/32360/?mod=MagMstVwd">The New Money</a></h4>
+		
+				<p>Square, founded by the creator of Twitter, lets people accept credit cards with their smart phones. That innovation could transform transactions in surprising ways.</p>
+			
+				<div class="divider divider-dk"></div>
+		
+				<h4><a href="/energy/32383/?mod=MagMstVwd">Praying  for an Energy  Miracle</a></h4>
+		
+				<p>Every clean-tech startup these days claims to have a breakthrough that will finally make renewable and clean energy sources cheap enough to compete with fossil fuels. But are we really on the brink of a clean-energy economy?</p>
+			
+				<div class="divider divider-dk"></div>
+		
+				<h4><a href="/web/32338/?mod=MagMstVwd">The Slow-Motion Internet</a></h4>
+		
+				<p>Google's growth plans depend in part on whether it can make the entire Web faster.</p>
+			
+			</div>
+
+			<div id="magazineBox_2" style="display:none;">
+	
+				<a href="/computing/32360/?mod=MagMstComm"><img src="/files/54886/0311-Square-A_x116.jpg" width="116" height="95" style="margin-top: 0; float: left; margin-right: 10px; margin-bottom: 10px;" alt="" /></a>
+		
+				<h4><a href="/computing/32360/?mod=MagMstComm">The New Money</a></h4>
+		
+				<p>Square, founded by the creator of Twitter, lets people accept credit cards with their smart phones. That innovation could transform transactions in surprising ways.</p>
+			
+				<div class="divider divider-dk"></div>
+		
+				<h4><a href="/energy/32383/?mod=MagMstComm">Praying  for an Energy  Miracle</a></h4>
+		
+				<p>Every clean-tech startup these days claims to have a breakthrough that will finally make renewable and clean energy sources cheap enough to compete with fossil fuels. But are we really on the brink of a clean-energy economy?</p>
+			
+				<div class="divider divider-dk"></div>
+		
+				<h4><a href="/communications/32421/?mod=MagMstComm">Is WikiLeaks a Good Thing?</a></h4>
+		
+				<p>By itself, perhaps not. But as an innovator, maybe. 
+
+</p>
+			
+			</div>
+
+			<div id="magazineBox_3" style="display:none;">
+	
+				<a href="/computing/32360/?mod=MagMstEml"><img src="/files/54886/0311-Square-A_x116.jpg" width="116" height="95" style="margin-top: 0; float: left; margin-right: 10px; margin-bottom: 10px;" alt="" /></a>
+		
+				<h4><a href="/computing/32360/?mod=MagMstEml">The New Money</a></h4>
+		
+				<p>Square, founded by the creator of Twitter, lets people accept credit cards with their smart phones. That innovation could transform transactions in surprising ways.</p>
+			
+				<div class="divider divider-dk"></div>
+		
+				<h4><a href="/business/32397/?mod=MagMstEml">Inventing New Technologies and Markets</a></h4>
+		
+				<p>Our second annual list of the world's most innovative technology companies highlights businesses whose work is changing industries and lives. </p>
+			
+				<div class="divider divider-dk"></div>
+		
+				<h4><a href="/energy/32383/?mod=MagMstEml">Praying  for an Energy  Miracle</a></h4>
+		
+				<p>Every clean-tech startup these days claims to have a breakthrough that will finally make renewable and clean energy sources cheap enough to compete with fossil fuels. But are we really on the brink of a clean-energy economy?</p>
+			
+			</div>
+            
+		</div>
+	</div>
+</div>
+
+
+
+
+         
+
+<div class="calloutbox">
+	<blockquote><p>
+		<span class="quote lquote">&#8220;</span><!--
+		-->Getting to suborbital space is a lot cheaper than orbiting Earth; the rockets can be much smaller and don't need the heat shields required for reëntry from orbit. The trade-off is time.<!--
+		--><span class="quote rquote">&#8221;</span>
+	</p></blockquote>
+	
+	<p class="read">Read the full article: <a href="http://www.technologyreview.com/computing/32382/?a=f?p1=quote">To the Space Station and Beyond</a></p>
+	
+</div>
+
+ 
+
+
+
+
+
+
+
+
+<div class="tr-box tr-box-2">
+	<div class="sect">
+		<h5>TR50</h5>			
+		<p><a href="/companywatch/tr50/">Our list of the 50 most innovative companies.</a></p>
+		<a href="/companywatch/tr50/" class="list">Full List</a>
+	</div>
+	
+	 
+	<div class="sect">
+		<h5>TR35</h5>			
+		<p><a href="/tr35/">Our annual selection of the world’s top innovators under the age of 35.</a></p>
+		<a href="/tr35/" class="list">Full List</a>
+	</div>
+	 
+	<div class="sect">
+		<h5>TR10</h5>			 
+		<p><a href="/tr10/">Our annual list of the emerging technologies that will have the biggest impact on our world.</a></p>	
+		<a href="/tr10/" class="list">Full List</a>
+	</div>
+</div>
+    
+	
+<div class="right">
+	<div class="ad">
+		<div class="adheader"><img src="/images/ad_legend_h.gif" width="79" height="17" alt="Advertisement" /></div>
+			<script type="text/javascript">
+			<!--//--><![CDATA[//><!--
+			var browser_type=navigator.appName
+									var browser_version=parseInt(navigator.appVersion)
+									document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="http://ad.doubleclick.net/adj/mk3.technologyreview.com/promoimg2a;!category=communicationsexc;channel=communications;section=;at=promoimg2a;page=home;s=promoimg2a;;tile=8;ord=' + randartnum + '?"><\/SCR' + 'IPT>')
+			//--><!]]>
+			</script>
+			<noscript>
+									<a href="http://ad.doubleclick.net/jump/mk3.technologyreview.com/promoimg2a;!category=communicationsexc;channel=communications;section=;at=promoimg2a;page=home;s=promoimg2a;tile=8;ord=?" target="_blank">
+										<img src="http://ad.doubleclick.net/ad/mk3.technologyreview.com/promoimg2a;!category=communicationsexc;channel=communications;section=;at=promoimg2a;page=home;s=promoimg2a;tile=8;ord=?" border="0" alt="click here..." />									</a>
+			</noscript>
+	</div>
+	<div class="clear"></div>
+</div>
+	
+<div class="right">
+	<div class="newslettersignup gray">
+		<h5>Newsletter</h5>
+		<div class="newslettersignupBody">
+			<p>Subscribe to the Communications newsletter.</p>
+				<input type="text" class="emailbox" id="txtEmail" name="txtEmail" value="E-mail address" onfocus="if (this.value == 'E-mail address') { this.value = ''; }" onblur="if (this.value == '') { this.value = 'E-mail address'; }" onkeyup="if(event.keyCode==13)NewsletterPopup();" />
+				<input type="image" onclick="NewsletterPopup()" class="button" src="/images/submit_button.jpg" alt="submit" />
+			<p class="feed"><a href="http://feeds.technologyreview.com/technology_review_Communications">Communications feed</a></p>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+	function NewsletterPopup()
+	{
+		if(document.getElementById("txtEmail").value == "")
+		{
+			alert("You must enter your email address");
+			window.focus();
+			document.getElementById("txtEmail").focus();
+			return;
+		}
+		if(new String(document.getElementById("txtEmail").value).indexOf("@") == -1)
+		{
+			alert("You must first enter a valid email address");
+			window.focus();
+			document.getElementById("txtEmail").focus();
+			return;
+		}
+		if(new String(document.getElementById("txtEmail").value).indexOf(".") == -1)
+		{
+			alert("You must first enter a valid email address");
+			window.focus();
+			document.getElementById("txtEmail").focus();
+			return;
+		}
+		window.open("/weeklynewslettersignup.aspx?nid=" + 15054538 + "&p1=NL&email=" + document.getElementById("txtEmail").value, null, "left=" + (screen.availWidth/2-225) + ",top=" + (screen.availHeight/2-150) + ",height=300,width=450,location=no,menubar=no,resizable=no,toolbar=no");
+	}
+	
+//--><!]]>
+</script>
+
+	
+<div class="clear"></div>
+<div class="smod">
+	<div class="ad">
+		<div class="adheader"><img src="/images/ad_legend_h.gif" width="79" height="17" alt="Advertisement" /></div>
+			<script type="text/javascript">
+			<!--//--><![CDATA[//><!--
+			var browser_type=navigator.appName
+									var browser_version=parseInt(navigator.appVersion)
+									document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="http://ad.doubleclick.net/adj/mk3.technologyreview.com/mediumrectangle5;!category=communicationsexc;channel=communications;section=;at=mediumrectangle5;page=home;s=mediumrectangle5;;tile=11;ord=' + randartnum + '?"><\/SCR' + 'IPT>')
+			//--><!]]>
+			</script><noscript>
+									<a href="http://ad.doubleclick.net/jump/mk3.technologyreview.com/mediumrectangle5;!category=communicationsexc;channel=communications;section=;at=mediumrectangle5;page=home;s=mediumrectangle5;tile=11;ord=?" target="_blank">
+										<img src="http://ad.doubleclick.net/ad/mk3.technologyreview.com/mediumrectangle5;!category=communicationsexc;channel=communications;section=;at=mediumrectangle5;page=home;s=mediumrectangle5;tile=11;ord=?" border="0" alt="click here..." />									</a>
+			</noscript>
+	</div>
+	<div class="clear"></div>
+</div>
+	
+
+<div class="box video-mod">
+	<h2>Video</h2>
+	
+	
+	<div class="boxcontent">
+		<h3><a href="/video/?vid=667" id="topVideoAnchor">A Visit to Square</a></h3>
+		<div class="visual" id="videoDiv">
+			<object id="myExperience" class="BrightcoveExperience">
+  				<param name="bgcolor" value="#FFFFFF" />
+  				<param name="playerID" value="605729513001" />
+  				<param name="playerKey" value="AQ%2E%2E,AAAAAAEgZvo%2E,jStb8wH-jnKKfspX0-PYNE5za6m3bvHq" />
+  				<param name="isVid" value="true" />
+  				<param name="isUI" value="true" />
+  				<param name="dynamicStreaming" value="true" />
+			  	<param name="width" value="313" />
+			  	<param name="height" value="176" /> 
+			  	<param name="@videoPlayer" value="798752479001" /> 
+			</object>
+<script type="text/javascript"> 
+   runMobileCompatibilityScript('HTML5');
+</script>
+<!--
+This script tag will cause the Brightcove Players defined above it to be created as soon
+as the line is read by the browser. If you wish to have the player instantiated only after
+the rest of the HTML is processed and the page load is complete, remove the line.
+--> 
+<script type="text/javascript">brightcove.createExperiences();</script> 
+		</div>
+		<ul class="details" id="videosList">
+	
+			<li class="li1"><a href="/video/?vid=659" id="videoLink_784088653001" onclick="videoClick('784088653001', &quot;Inside a Flagship of DIY&quot;, &quot;\/video\/?vid=659&quot;, '313', '176'); return false;">Inside a Flagship of DIY</a></li>
+	
+			<li class="li2"><a href="/video/?vid=664" id="videoLink_790131942001" onclick="videoClick('790131942001', &quot;Innovating with Business Data&quot;, &quot;\/video\/?vid=664&quot;, '313', '176'); return false;">Innovating with Business Data</a></li>
+	
+			<li class="li3"><a href="/video/?vid=661" id="videoLink_786834505001" onclick="videoClick('786834505001', &quot;Growing Lasers on Computer Chips&quot;, &quot;\/video\/?vid=661&quot;, '313', '176'); return false;">Growing Lasers on Computer Chips</a></li>
+	
+			<li class="li4"><a href="/video/?vid=666" id="videoLink_792911186001" onclick="videoClick('792911186001', &quot;A Commercial Space Shuttle&quot;, &quot;\/video\/?vid=666&quot;, '313', '176'); return false;">A Commercial Space Shuttle</a></li>
+	
+		</ul>
+		<p class="more"><a href="/video/">More</a></p>
+	</div><!--/.boxcontent-->
+</div><!--/.box video-mod -->
+
+
+
+<!-- search ignore end -->                
+</div><!--/.sidecontent-->
+
+
+<!-- search ignore begin -->
+<div class="clear"></div>
+<div id="topbannerad">
+	<div id="topbanneradwraper">
+		<a id="topbanneradhomelink" href="http://www.technologyreview.com/"></a>
+
+		<div class="adheader"><img src="/images/ad_legend_v.gif" width="18" height="90" alt="Advertisement" /></div>
+<div class="topbanneradtag">
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+	document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="//ad.doubleclick.net/adj/mk3.technologyreview.com/leaderboard1;!category=communicationsexc;channel=communications;section=;at=leaderboard;page=home;s=leaderboard1;sz=728x90;;tile=1;ord=' + randartnum + '?"><\/SCR' + 'IPT>')
+//--><!]]>
+</script>
+<noscript><a href="https://ad.doubleclick.net/jump/mk3.technologyreview.com/leaderboard1;!category=communicationsexc;channel=communications;section=;at=leaderboard;page=home;s=leaderboard1;sz=728x90;tile=1;ord=?" target="_blank"><img src="//ad.doubleclick.net/ad/mk3.technologyreview.com/leaderboard1;!category=communicationsexc;channel=communications;section=;at=leaderboard;page=home;s=leaderboard1;sz=728x90;tile=1;ord=?" width="728" height="90" border="0" alt="click here..." /></a></noscript>
+</div>
+
+	</div>
+</div>
+
+<div class="advert-btm"> 
+	<div class="ad">
+
+		<div class="adheader"><img src="/images/ad_legend_h.gif" width="79" height="17" alt="Advertisement" /></div>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+	document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="//ad.doubleclick.net/adj/mk3.technologyreview.com/leaderboard2;!category=communicationsexc;channel=communications;section=;at=leaderboard;page=home;s=leaderboard2;sz=728x90;;tile=13;ord=' + randartnum + '?"><\/SCR' + 'IPT>')
+//--><!]]>
+</script>
+<noscript><a href="https://ad.doubleclick.net/jump/mk3.technologyreview.com/leaderboard2;!category=communicationsexc;channel=communications;section=;at=leaderboard;page=home;s=leaderboard2;sz=728x90;tile=13;ord=?" target="_blank"><img src="//ad.doubleclick.net/ad/mk3.technologyreview.com/leaderboard2;!category=communicationsexc;channel=communications;section=;at=leaderboard;page=home;s=leaderboard2;sz=728x90;tile=13;ord=?" width="728" height="90" border="0" alt="click here..." /></a></noscript>
+
+	</div>
+	<div class="clear"></div>
+ </div>
+
+
+		</div>
+	</div>
+<div id="footer">
+		<div class="footerlogo">
+			<img src="/images/MIT-logo.gif" width="54" height="28" alt="MIT" />
+			<p>&copy; 2011 MIT<br />
+			Technology Review</p>
+
+		</div><!--/.footerlogo-->
+		
+        <ul class="footernav">
+			<li><a href="http://www.technologyreview.com/corp/about.aspx">About Us</a></li>
+            <li><a href="http://www.technologyreview.com/media">Advertise</a></li>
+			<li><a href="http://www.technologyreview.com/events">Events</a></li>
+			<li><a href="http://www.technologyreview.com/cust/permissions.aspx">Reprints &amp; Permissions</a></li>
+            <li><a href="http://www.technologyreview.com/corp/press.aspx">Press</a></li>
+            <li><a href="http://www.technologyreview.com/corp/jobs.aspx">Jobs</a></li>
+			<li><a href="http://www.technologyreview.com/careerresources">Resources</a></li>
+            <li><a href="http://www.technologyreview.com/corp/staff.aspx">Staff</a></li>
+            </ul>
+             <ul class="footernav">
+			<li>Help</li>
+            <li><a href="http://www.technologyreview.com/cust/index.aspx">Customer Service</a></li>
+            <li><a href="http://www.technologyreview.com/corp/contact.aspx">Contact Us</a></li>
+            <li><a href="http://www.technologyreview.com/corp/privacy.aspx">Privacy</a></li>
+            <li><a href="http://www.technologyreview.com/corp/terms.aspx">Terms of Use</a></li>
+            <li><a href="http://www.technologyreview.com/cust/sitemap.aspx">Site Map</a></li>
+            <li><a href="http://www.technologyreview.com/cust/feedback.aspx">Website Feedback</a></li>
+			</ul>
+             <ul class="footernav">
+			<li>Subscriptions</li>
+            <li><a href="https://subscribe.technologyreview.com/mit/">Subscribe</a></li>
+            <li><a href="https://subscribe.technologyreview.com/misubgift.aspx?PC=MT">Gift Subscription</a></li>
+			<li><a href="http://www.technologyreview.com/cust/newsletter.aspx">Free Newsletters</a></li>
+			<li><a href="https://subscribe.technologyreview.com/SubInfo.aspx?PC=MT&amp;do=R">Renew</a></li>
+            <li><a href="https://subscribe.technologyreview.com/backissue/subbi.aspx?PC=MT">Back Issues</a></li>
+            <li><a href="http://www.technologyreview.com/cust/">Customer Service</a></li>
+            <li><a href="http://www.technologyreview.com/apps/index.aspx">Apps</a></li>
+
+		</ul>
+		
+		<div class="feeds">
+			<h2>Follow Us</h2>
+			<p id="last"><a href="http://twitter.com/techreview"><img src="/images/Twitter-icon.png" width="16" height="16" alt=""/> On Twitter</a></p>
+			<p><a href="http://www.facebook.com/pages/Technology-Review/17043549797"><img src="/images/FaceBook-icon.png" width="16" height="16" alt="" /> Become a Fan on Facebook</a></p>
+			<p><a href="http://feeds.technologyreview.com/technology_review_top_stories"><img src="/images/Feed-icon.png" width="16" height="16" alt="" /> Subscribe to the Feed</a></p>
+		</div><!--/.feeds-->
+		
+	</div>
+
+</div>
+
+<script type="text/javascript" src="/scripts/omniture_s_code.js?634272320740740786"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+	
+s.pageName = "TR10: Mobile 3-D";
+	
+
+s.channel = "communications";
+s.prop1 = "article";
+	
+
+s.prop3 = "magazine article";
+	
+s.prop5 = "";
+
+	
+	
+s.prop7 = "http:\/\/www.technologyreview.com\/communications\/25081\/?a=f";
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><img src="https://techreview.112.2o7.net/b/ss/techreview/1/H.22.1--NS/0"
+height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.22.1. -->
+
+
+<!-- Advertiser, Include user in segment 'TechnologyReview?: Homepage Remarketing' -->
+<script src="http://ad.advertise.com/pixel?id=1090410&amp;t=1" type="text/javascript"></script>
+<!-- End of segment tag -->
+<!-- Start Quantcast tag -->
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<script type="text/javascript">
+_qacct="p-ffE9vWW7lzZG-";
+if (window.quantserve)
+	quantserve();
+</script>
+<noscript><img src="http://pixel.quantserve.com/pixel/p-ffE9vWW7lzZG-.gif" style="display: none" height="1" width="1" alt="Quantcast"/></noscript>
+<!-- End Quantcast tag -->
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7747898-5");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  (function () {
+    var d = new Image(1, 1);
+    d.onerror = d.onload = function () {
+      d.onerror = d.onload = null;
+    };
+    d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-703343h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+  })();
+//--><!]]>
+</script>
+<noscript>
+  <div>
+    <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-703343h&amp;cg=0&amp;cc=1&amp;ts=noscript"
+    width="1" height="1" alt="" />
+  </div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+
+
+<!-- search ignore end -->
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta http-equiv="content-language" content="EN" />
+		<meta name="Title" content="The moment of time is the moment of color - Analog" />
+		<meta name="author" content="Alexander Bickov" />
+		<meta name="keywords" content="cool website, clock, time as color, color as time, digital clock, analog clock, js clock, javascript clock, javascript analog clock, javascript digital clocks" />
+		<meta name="description" content="Imagine a clock that changes it's color each moment and is different each time you see it. You could call a chameleon clock but it's something more. This page will show you the uniqueness of the moment itself." />
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Neucha" />
+		
+						<script type="text/javascript" src="rap.js"></script> 
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+		<script type="text/javascript">
+
+ 
+function update_clock(width){
+var now = new Date();
+var hours = now.getHours();
+var minutes = now.getMinutes();
+var seconds = now.getSeconds();
+
+	var  red = Math.round(Math.random()*254+1);
+   var  green = Math.round(Math.random()*254+1);
+   var   blue=Math.round(Math.random()*254+1);
+   var color='rgb('+red+','+green+','+blue+')';
+   var reverse;
+   
+      if ((red + green + blue) > 450) {
+			reverse = "#222222";
+		}
+		else {
+			reverse ="#ffffff";			
+		} 
+
+	document.body.style.background = color
+	document.body.style.color = reverse
+	$('a').css('color', reverse);
+	 $('.sel').css('color', color);
+   clock.attr({"fill":color,"stroke":reverse});
+  
+   
+hour_hand.rotate(30*hours+(minutes/2.5), width/2, width/2);
+hour_hand.attr({stroke: reverse});
+
+minute_hand.rotate(6*minutes, width/2, width/2);
+minute_hand.attr({stroke: reverse});
+
+second_hand.rotate(6*seconds, width/2, width/2);
+second_hand.attr({stroke: reverse});
+
+}
+
+function draw_clock(width, fillColor, strokeWidth, strokeColor, pinWidth, pinColor, hourHandLengh, hourHandColor, minuteHandLengh, minuteHandColor, secondHandLengh, secondHandExceeding, secondHandColor){
+canvas = Raphael("clock_id",width, width);
+clock = canvas.circle(width/2,width/2,200);
+clock.attr({"fill":fillColor,"stroke":strokeColor,"stroke-width":strokeWidth})
+var hour_sign;
+hour_hand = canvas.path("M"+width/2+" "+width/2+"L"+width/2+" "+((width/2)-hourHandLengh)+"");
+hour_hand.attr({stroke: hourHandColor, "stroke-width": 2});
+minute_hand = canvas.path("M"+width/2+" "+width/2+"L"+width/2+" "+((width/2)-minuteHandLengh)+"");
+minute_hand.attr({stroke: minuteHandColor, "stroke-width": 2});
+second_hand = canvas.path("M"+width/2+" "+((width/2)+secondHandExceeding)+"L"+width/2+" "+((width/2)-secondHandLengh)+"");
+second_hand.attr({stroke: secondHandColor, "stroke-width": 1});
+
+update_clock(width)
+setInterval("update_clock("+width+")",1000);
+}
+ 
+		</script>
+		
+		<title>The moment of time is the moment of color - Analog</title>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) {return;}
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+		<div id="wrapper">
+			<div class="left">
+				<h1>The moment of time is the moment of color</h1>
+				<div class="text">Imagine a clock design that changes it's color each moment and is different each time you see it. You could call a chameleon clock but it's something more. This idea will show you the uniqueness of the moment itself.</div>
+				<div class="social">
+						<div>
+							<!-- Place this tag where you want the +1 button to render -->
+							<g:plusone size="medium"></g:plusone>
+
+							<!-- Place this render call where appropriate -->
+							<script type="text/javascript">
+							  (function() {
+								var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+								po.src = 'https://apis.google.com/js/plusone.js';
+								var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+							  })();
+							</script>
+					</div>
+					<div><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="bickov" data-related="mainual">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script></div>
+					<div>
+						<div class="fb-like" data-href="http://bickov.com/projects/the-moment-of-color" data-send="false" data-width="250" data-show-faces="true" data-font="arial"></div>
+					</div>
+				</div>
+			</div>
+			<div id="menu">
+				<a title="Analog clock design idea" class="sel" href="start.html">Analog</a>
+				<a  title="Digital clock design idea" href="start2.html">Digital</a>
+			</div>
+
+			<div class="clock">
+				<div class="analog">
+										<div id="clock_id"></div>
+		<script>
+   
+		draw_clock(440, "#179A86", 1, "#FFFFFF", 8, "#FFFFFF", 100, "#FFFFFF", 150, "#FFFFFF", 160, 16, "#FFFFFF");
+		</script>
+				</div>
+			</div>
+			<div class="clear"><!-- ~ --></div>
+			<div id="footer">
+
+				<div>
+					<script type="text/javascript"><!--
+					google_ad_client = "ca-pub-2760923838729058";
+					/* Color of now Black */
+					google_ad_slot = "5721867327";
+					google_ad_width = 200;
+					google_ad_height = 90;
+					//-->
+					</script>
+					<script type="text/javascript"
+					src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+					</script>
+				</div>
+				<div>
+					<div>Concept idea</div>
+					<a title="Conceptual ideas for creative people" href="http://www.mainual.com/2011/09/22/color-of-now" target="_self">Mainual</a>
+				</div>
+				<div>
+					<div>Design</div>
+
+					<a title="Freelance interactive web designer" href="http://www.bickov.com" target="_self">Alexander Bickov</a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	</body>
+</html>

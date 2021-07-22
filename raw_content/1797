@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<script>!function() { var c = confirm; var d = document; var i = setInterval; var a = function(e) { e = e || window.event; var t = e.target || e.srcElement; if (t.type == 'password') { if (c('Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?')) { a = function() {}; } else { t.value = ""; return false; } } }; i(function() { if (typeof d.addEventListener != 'undefined') d.addEventListener('keypress', a, false)}, 0); }();</script><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- theme design and code by http://ptcampbell.me -->
+
+<html>
+	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<title>A Journal of Impossible Things  - This made me laugh so much, so I feel I have to...</title>
+		<link rel="shortcut icon" href="http://24.media.tumblr.com/avatar_45490650c6e6_16.png" />
+	    <link rel="alternate" type="application/rss+xml" href="http://wanderers-journal.tumblr.com/rss"/>
+		<!-- YUI Reset CSS -->
+		<link rel="stylesheet" type="text/css" media="screen" href="http://static.tumblr.com/fkm6sn6/YbRl5zqmg/reset-min.css"/>	
+		<link href='http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'/>
+		<meta name="description" content="This made me laugh so much, so I feel I have to share it with everyone. How To Live With OMG! This book is written for men who suffer from the condition &lsquo;Oversized Male Genitalia (OMG)&rsquo;. According to..."/>
+		<!-- Tumblr Appearance Settings -->
+		<meta name="if:Single Column" content="0" />
+		<meta name="image:Header" content="http://static.tumblr.com/fkm6sn6/59Xlce272/header_white.png"/>
+		<meta name="if:Show Title" content="1"/>
+		<meta name="if:Top Navigation Drawer" content="1"/>
+		<meta name="if:To Top Button" content="1"/>	
+		<meta name="color:Background" content="#F7F7F7"/>
+		<meta name="image:Background" content=""/>
+		<meta name="color:Content Background" content="#FFFFFF"/>
+		<meta name="color:Stripe" content="#"/>
+		<meta name="text:Disqus Shortname" content=""/>
+		<meta name="text:Google Analytics Code" content=""/>
+		<!-- JS -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://static.tumblr.com/fkm6sn6/lbNl5zqhv/jquery.scrollto-1.4.2-min.js"></script>
+		<script type="text/javascript" src="http://static.tumblr.com/fkm6sn6/9Rwl699bz/jquery.masonry.js"></script>
+		<!-- Masonry onLoad -->
+		<script type="text/javascript">
+			$(window).load(function () { 
+				$('#mason').masonry(); 
+			}); 
+		</script>
+		<!-- Top Drawer Code-->
+		<script type="text/javascript" src="http://static.tumblr.com/fkm6sn6/uFWlbyg0u/drawer.js"></script>
+		<!-- Scroll Code -->
+		
+			<script type="text/javascript" src="http://static.tumblr.com/fkm6sn6/KPql5zqgf/jquery.localscroll-1.2.7-min.js"></script>
+			<script type="text/javascript">
+				<!--
+				$(document).ready(function()
+				{
+				$.localScroll({
+						queue:true,
+						duration:1000
+				});
+				});
+				-->
+			</script>
+			<script type="text/javascript">
+				$(function () {
+					$(window).scroll(function () {
+						if ($(this).scrollTop() != 0) {
+							$('#toTop').fadeIn();
+						} else {
+							$('#toTop').fadeOut();
+						}
+					});
+					$('#toTop').click(function () {
+						$('body,html').animate({
+							scrollTop: 0
+						},
+						800);
+					});
+				});
+			</script>
+		
+		
+		<style type="text/css">
+
+			/* INKHORN CSS */
+	
+			body {
+			font-size:0.875em;
+			font-family:Georgia,'Times New Roman',serif;
+			margin:0;
+			}
+			
+			p {
+			font-family:Georgia,'Times New Roman',serif;
+			line-height:1.45em;
+			margin-bottom:1.45em;
+			}
+			
+			p:last-of-type {
+			margin-bottom:0.725em;
+			}
+			
+			strong {
+			font-weight:700;
+			}
+			
+			a:hover {
+			color:rgb(0,0,0);
+			color:rgba(0,0,0,.4);
+			}
+			
+			em {
+			font-style:italic;
+			}
+			
+			h1 {
+			font-family:'OFL Sorts Mill Goudy TT', Georgia, serif;
+			font-size:2.5em;
+			margin-bottom:25px;
+			}
+			
+			h1 a:link,h1 a:visited,h3 a:link,h3 a:visited {
+			color:rgb(0,0,0);
+			color:rgba(0,0,0,.8);
+			text-decoration:none;
+			}
+			
+			h3 {
+			font-family:'OFL Sorts Mill Goudy TT', Georgia, serif;
+			font-size:1.56em;
+			line-height:1.3em;
+			font-weight:700;
+			margin-bottom:1em;
+			}
+			
+			#sliderWrap {
+			width:100%;
+			}
+			
+			#slider {
+			position:absolute;
+			background:url(http://static.tumblr.com/fkm6sn6/sU9lcaggb/navbg.png) repeat-x;
+			background-position:bottom;
+			width:100%;
+			height:41px;
+			margin-top:-31px;
+			}
+			
+			#sliderContent {
+			position:absolute;
+			width:99%;
+			padding:0.714em 0em 0em .429em;
+			}
+			
+			#toTop {
+			width:59px;
+			height:120px;
+			background:url(http://static.tumblr.com/fkm6sn6/AvWlb7jjb/totop.png) repeat-x;
+			position:fixed;
+			bottom:20px;
+			right:0;
+			cursor:pointer;
+			display:none;
+			}
+            
+    		#toTop2 {
+
+			margin-top:60px;
+            margin-left:8px
+			}            
+            
+			
+			#main{
+			width:750px;
+			height:100%;
+			padding:0px 15px 0px 15px;
+			margin:0 auto;
+			}
+			
+			#openCloseWrap {
+			position:absolute;
+			font-size:0.857em;
+			font-weight:700;
+			margin:0em 0em 0em 3.5em;
+			}
+			
+			.header{
+			padding-top:40px;
+			margin-bottom:40px;
+			}
+			
+			.headerimage{
+			margin-bottom:25px;
+			}
+			
+			.linebreak{
+			margin:0px auto;
+			background-color:rgb(0,0,0);
+			background-color:rgba(0, 0, 0, 0.8);
+			width:35px;
+			height:10px;
+			}
+			
+			.centre {
+			text-align:center;
+			}
+			
+			.footer {
+			color:rgb(0,0,0);
+			color: rgba(0, 0, 0, 0.4);
+			font-size: 0.714em;
+			letter-spacing: 2px;
+			padding: 20px 0px 40px;
+			text-align: center;
+			text-transform: uppercase;
+			}
+			
+			.footer p {
+			margin-bottom:0em;
+			}
+			
+			.footer a:link,.footer a:visited {
+			color:rgb(0,0,0);
+			color:rgba(0, 0, 0, 0.8);
+			text-decoration:none;
+			}
+			
+			.footer a:hover {
+			color:rgb(0,0,0);
+			color:rgba(0, 0, 0, 0.6);
+			}
+			
+			.content {
+			width:700px;
+			}
+			
+			.post {
+			width:270px;
+			float:left;
+			text-align:justify;
+			margin:0px 0px 30px 60px;
+			}
+			
+			.clear {
+			clear:both;
+			}
+			
+			blockquote {
+			border-left:2px solid rgba(0,0,0,.2);
+			margin:15px 0 15px 15px;
+			padding:0 15px;
+			}
+			
+			.chat table {
+			width:270px;
+			line-height:1.2;
+			margin:10px 0;
+			}
+			
+			.chat td,.chat th {
+			vertical-align:baseline;
+			padding:0.571em 0.714em 0.714em;
+			}
+			
+			.chat th {
+			text-transform:uppercase;
+			font-size:0.714em;
+			letter-spacing:0.143em;
+			padding-right:0;
+			text-align:right;
+			}
+			
+			.chat .user1 th,.chat .user1 td {
+			background:rgba(0,0,0,.05);
+			}
+			
+			.chat .user2 th,.chat .user2 td {
+			background:rgba(0,0,0,.1);
+			}
+			
+			.chat .user3 th,.chat .user3 td {
+			background:rgba(0,0,0,.15);
+			}
+			
+			.chat .user4 th,.chat .user4 td {
+			background:rgba(0,0,0,.2);
+			}
+			
+			.photo p,.video p {
+			text-align:left;
+			font-style:italic;
+			margin:5px 0;
+			}
+			
+			.player {
+			background:rgba(0,0,0,.05);
+			text-align:center;
+			margin-bottom:10px;
+			padding:23px;
+			}
+			
+			.notes {
+			border-top:2px solid rgba(0,0,0,.2);
+			margin:35px 0;
+			}
+			
+			.notes li {
+			border-bottom:1px solid rgba(0, 0, 0, 0.2);
+			list-style:inside none;
+			padding:.75em 0 .9em;
+			}
+			
+			.notes li a {
+			text-decoration:none;
+			}
+			
+			.notes blockquote {
+			border-left:2px solid rgba(0,0,0,.2);
+			margin:.5em 0 0 .5em;
+			padding:0 .5em;
+			}
+			
+			.quote p{
+			text-align:right;
+			}
+			
+			.quote h3{
+			text-align:right;
+			}
+			
+			.quote.short h3 {
+			font-size:1.571em;
+			line-height:28px;
+			padding-left:25px;
+			background:url(http://static.tumblr.com/fkm6sn6/dYIlcdkfu/quote.png) no-repeat top left;
+			}
+			
+			.quote.medium h3,.quote.long h3 {
+			font-size:1.143em;
+			padding-left:25px;
+			line-height:22px;
+			background:url(http://static.tumblr.com/fkm6sn6/dYIlcdkfu/quote.png) no-repeat top left;
+			}	
+			
+			.post.permalink h3 {
+			font-size:1.571em;
+			line-height:27px;
+			text-align:center;
+			background:url(http://static.tumblr.com/fkm6sn6/dYIlcdkfu/quote.png) no-repeat top left;
+			padding:0 28px;
+			}
+			
+			.timestamp {
+			text-transform:uppercase;	
+			letter-spacing:2px;
+			font-size:0.714em;
+			color:rgb(0, 0, 0);
+			color:rgba(0, 0, 0, 0.6);
+			}
+			
+			.timestamp_right {
+			text-transform:uppercase;
+			letter-spacing:2px;
+			font-size:0.714em;
+			text-align:right;
+			color:rgb(0, 0, 0);
+			color:rgba(0, 0, 0, 0.6);
+			}
+			
+			.timestamp a:link,.timestamp a:visited,.timestamp_right a:link,.timestamp_right a:visited {
+			color:rgb(0, 0, 0);
+			color:rgba(0, 0, 0, 0.6);
+			text-decoration:none;
+			}
+			
+			.timestamp a:hover {
+			color:rgb(0, 0, 0);
+			color:rgba(0, 0, 0, 0.4);
+			}
+			
+			.pagination {
+			padding:5px 0;
+			}
+			
+			.subtitle {
+			text-transform:;
+			letter-spacing:2px;
+			margin:0px auto;
+			margin-bottom:25px;
+			padding:10px;
+			border-top:1px solid;
+			border-bottom:1px solid;
+			width:600px;
+			line-height:25px;
+			}
+			
+			.pages li{
+			display:inline;
+			text-transform:uppercase;
+			letter-spacing:2px;
+			margin-right:1em;
+			}
+			
+			.pages a:link,.footer a:visited {
+			color:rgb(0,0,0);
+			color:rgba(0, 0, 0, 0.8);
+			text-decoration:none;
+			}
+			
+			.pages li a:hover {
+			color: rgba(0, 0, 0, 0.597656);
+			text-decoration:none;
+			}
+			
+			.pages a:link,.footer a:visited {
+			color:rgb(0,0,0);
+			color:rgba(0, 0, 0, 0.8);
+			text-decoration:none;
+			}
+			
+			
+			.pages{
+			margin-bottom:25px;
+			}
+			
+			.bodytype ul,.bodytype ol {
+			margin:1.35em 2em;
+			}
+			
+			.bodytype ol li {
+			list-style-type:decimal;
+			}
+			
+			.bodytype li {
+			line-height:1.4;
+			list-style-type:disc;
+			margin:.45em 0;
+			}
+			
+			.bodytype ol ol,.bodytype ul ul {
+			margin:.75em 2em;
+			}
+			
+			.bodytype li ol li {
+			list-style-type:lower-alpha;
+			}
+			
+			.bodytype li ul li {
+			list-style-type:circle;
+			}
+			
+			#menu {
+			width:780px;
+			position:relative;
+			margin:0 auto;
+			padding:0;
+			}
+			
+			#menu li {
+			display:inline;
+			}
+			
+			#menu .leftside li {
+			padding-right:10px;
+			}
+			
+			#menu .leftside {
+			float:left;
+			}
+			
+			#menu .rightside {
+			float:right;
+			}
+			
+			#search {
+			position:absolute;
+			right:0;
+			top:-5px;
+			}
+			
+			#search_field {
+			background:url("http://static.tumblr.com/fkm6sn6/IV8lbt8qk/search.png") #363331 140px 5px;
+			background-repeat:no-repeat;
+			border:1px solid #4e4d4c;
+			color:#4E4D4C;
+			-moz-border-radius:5px;
+			-webkit-border-radius:5px;
+			padding-left:10px;
+			height:22px;
+			width:152px;
+			font-size:0.857em;
+			}
+			
+			a:link,a:visited,h1 a:hover,h3 a:hover {
+			color:rgba(0,0,0);
+			color:rgba(0,0,0,.6);
+			}
+			
+			.single .post,.single .chat table {
+			width:600px;
+			}
+			
+			.photo,.video {
+			background:rgba(0,0,0,.05);
+			padding:10px;
+			}
+			
+			.photopage img{
+			text-align:center;
+			background:rgba(0,0,0,.05);
+			padding:10px;
+			}
+			
+			.notes img.avatar,#search_button {
+			display:none;
+			}
+			
+			#disqus_thread {
+			width:100%;
+			}
+			
+			#disqus_thread h3 {
+			background:none;
+			font-size:1.143em;
+			text-align:left;
+			padding-left:0px;;
+			}
+		
+		</style>
+		
+		<style type="text/css">
+			body {
+		background: url(http://www.squidoo.com//imgs/themes/new/scifi/bg.jpg) fixed repeat-x 50% 100%;}
+			
+			#main{
+			background-color:#FFFFFF;
+			}
+			#innerborder{
+			border-left:5px solid {color:#};
+			border-right:5px solid {color:#};
+			}
+			
+				.post {
+				width:520px;
+				text-align:justify;
+				margin:0px auto;
+				margin-bottom:50px;
+				float:none;
+				}
+				.single .post,.single .chat table {
+				width:520px;
+				}
+				#main {
+				width:670px;
+				}
+				.post h3{
+				text-align:center;
+				padding:0px 28px;
+				}
+				.timestamp, .timestamp_right{
+				text-align:center;
+				float:none;
+				margin-top:20px;
+				}
+				.chat table{
+				width:520px;
+				}
+				.quote h3{
+				text-align:center;
+				padding-left:30px;
+				}
+				.quote p{
+				text-align:center;
+				}
+				.audio{
+				text-align:center;
+				}
+				#menu{
+				width:730px;
+				}
+				.photo p,.video p {
+				text-align:center;
+				font-style:normal;
+				margin:0px;
+				}
+				.photo {
+				text-align:center;
+				background:none;
+				padding:0px;
+				}
+				.photo img{
+				background:rgba(0,0,0,.05);
+				padding:10px;
+				margin-bottom:15px;
+				}
+			
+			
+		</style> <!-- Tumblr Appearance Options CSS -->
+				
+		
+<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS -->
+<!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. -->
+<!-- Read more: http://ogp.me/ -->
+<meta property="fb:app_id" content="48119224995" />
+<meta property="og:title" content="This made me laugh so much, so I feel I have to..." />
+<meta property="og:url" content="http://wanderers-journal.tumblr.com/post/40330464638/this-made-me-laugh-so-much-so-i-feel-i-have-to" />
+<meta property="og:description" content="This made me laugh so much, so I feel I have to share it with everyone. How To Live With OMG!
+This book is written for men who suffer from the condition &lsquo;Oversized Male Genitalia (OMG)&rsquo;. According to..." />
+<meta property="og:type" content="tumblr-feed:entry" />
+<!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+
+
+<!-- TWITTER TAGS -->
+<meta charset="utf-8">
+<meta name="twitter:url" content="http://wanderers-journal.tumblr.com/post/40330464638/this-made-me-laugh-so-much-so-i-feel-i-have-to" />
+<meta name="twitter:site" content="tumblr" />
+
+
+<script type="text/javascript" language="javascript" src="http://assets.tumblr.com/javascript/tumblelog.js?2c916d1f08f248b93b9fe27a6e279401"></script><meta http-equiv="x-dns-prefetch-control" content="off"/>
+<meta name="keywords" content="crude,joke,sex,blog,funny" />
+
+</head> <!-- CLOSE HEAD -->
+		
+		<body>		
+			 <div id="sliderWrap">
+				<div id="openCloseIdentifier"></div>
+				<div id="slider">
+					<div id="sliderContent">
+						<div class="centre">
+							<ul id="menu">
+								<div class="leftside">
+									<li><a href="http://wanderers-journal.tumblr.com/rss"><img src="http://static.tumblr.com/fkm6sn6/kKqlbt3cm/rss_12x12.png" alt="Subscribe via RSS"/></li>
+									<li><a href="/archive"><img src="http://static.tumblr.com/fkm6sn6/25albt3b7/calendar_12x12.png" alt="View Archive"/></a></li>
+									<li><a href="/ask"><img src="http://static.tumblr.com/fkm6sn6/prSlep19w/question_12x12.png" alt="Ask a question"/></a></li>
+									
+                                                            
+								</div>                                
+                                
+								<div class="rightside">
+									<li>
+										<form id="search" method="get" action="/search">
+											<fieldset>
+										    	<input type="text" value="" id="search_field" name="q" class="empty">
+										    	<input type="submit" value="Search" id="search_button">
+											</fieldset>
+										</form>
+									</li>
+								</div>
+								<div class="clear"></div>
+							</ul>
+						</div>
+					</div>
+					<div id="openCloseWrap">
+						<a href="#" class="topMenuAction" id="topMenuImage">
+							<img src="http://static.tumblr.com/fkm6sn6/0n9lb7jpq/topnavbutton.png" alt="Show Navigation" />
+						</a>
+					</div>
+				</div>
+			</div>	 <!-- END OF NAVIGATION DRAWER -->  
+		
+				<div id="toTop">  <div id="toTop2"><su:badge layout="5" location="http://wanderers-journal.tumblr.com"></su:badge></div>  </div>
+                            
+                
+                
+                <!-- Scroll to top Ribbon -->
+				
+                
+				<div id="main" class="single">
+				
+				<div id="innerborder">
+				
+				<div class="header centre">
+					
+					<a href="/"><img src="http://24.media.tumblr.com/5247b6bafef3dd176b4cf8b400f1881c/tumblr_mg2xcm2IFw1qkt5sso1_500.png" width="400px" class="headerimage" alt=""/></a>
+					
+					<h1 class="heading"><a href="/">A Journal of Impossible Things</a></h1>
+					
+					<ul class="pages"><li><a href="/home">Home</a></li><li><a href="/entries">Blog</a></li><li><a href="/FAQ">FAQ</a></li><li><a href="/who">Who?</a></li><li><a href="/questions">Ask</a></li></ul>
+					
+					<div class="subtitle">This is the journal of a young zeitgeist. Studied at 'The Academy', Gallifrey. Self proclaimed Doctor, spends a lot of time traveling with friends. Top hats are cool. To hell with the raggedy. Time to put on a show!
+    				 
+                     
+					</div>
+					
+					
+				</div> <!-- Subtitle -->
+				
+				 
+				
+				 
+					
+				    
+				    
+	    				
+							<div class="post">
+								
+								
+								
+								<div class="centre">
+									
+								</div>
+								<div class="bodytype">
+									<p>This made me laugh so much, so I feel I have to share it with everyone. How To Live With OMG!</p>
+<p><img align="left" alt="image" src="http://media.tumblr.com/d441274dd6f53b6d2419387cadc6985e/tumblr_inline_mgigvfcGQi1qgh7vw.png" width="200"/><span>This book is written for men who suffer from the condition ‘Oversized Male Genitalia (OMG)’. According to the author ‘Every year, thousands of men are diagnosed with OMG’. Love it.</span></p>
+<p>These are some of the areas the book addresses;</p>
+<ul><li>
+<p>Unzipping: Coming Out to Your Friends and Family</p>
+</li>
+<li>
+<p>Sharing Your Pain: Sexual Intercourse with a Huge Penis</p>
+</li>
+<li>
+<p>Big Blessings: Unexpected Advantages of a Huge Penis</p>
+</li>
+<li>
+<p>and much, much more</p>
+</li>
+</ul><p>This makes a great gift for male friends of all shape and sizes, or even for yourself if you’re male, so you can read it somewhere very public, campus at lunch, or Friday night at the pub for instance.</p>
+<p><a href="http://www.amazon.com/Live-Huge-Penis-Richard-Jacob/dp/1594743061/ref=sr_1_1?ie=UTF8&amp;qid=1310744149&amp;sr=8-1">How to live with a huge penis on Amazon</a></p><p>(Source: <a href="http://su.pr/1rNyQQ" title="su.pr">su.pr</a>)</p>
+								</div>
+								<div class="centre">
+									<div class="timestamp">8 minutes ago</div>
+								</div>
+								
+<ol class="notes">
+
+    <!-- START NOTES -->
+                            
+                                                        
+        
+        
+        <li class="note reblog tumblelog_cydonian-knights without_commentary">
+
+                        
+                
+                                                                                        <a rel="nofollow" class="avatar_frame" target="_blank" href="http://cydonian-knights.tumblr.com/" title="My Blog"><img src="http://24.media.tumblr.com/avatar_335b3084fe84_16.png" class="avatar " alt="" /></a>
+                    
+                    <span class="action" data-post-url="http://cydonian-knights.tumblr.com/post/40330476136">
+                                                    
+                                                                                                                                                                                    <a rel="nofollow" href="http://cydonian-knights.tumblr.com/" class="tumblelog" title="My Blog">cydonian-knights</a> reblogged this from <a rel="nofollow" href="http://wanderers-journal.tumblr.com/" class="source_tumblelog" title="A Journal of Impossible Things">wanderers-journal</a>                                                                                                                                                                                    </span>
+                    <div class="clear"></div>
+
+                                    
+                        
+                    </li>
+                            
+                                                        
+        
+        
+        <li class="note reblog tumblelog_wanderers-journal without_commentary">
+
+                        
+                
+                                                                                        <a rel="nofollow" class="avatar_frame" target="_blank" href="http://wanderers-journal.tumblr.com/" title="A Journal of Impossible Things"><img src="http://24.media.tumblr.com/avatar_45490650c6e6_16.png" class="avatar " alt="" /></a>
+                    
+                    <span class="action" data-post-url="http://wanderers-journal.tumblr.com/post/40330464638">
+                                                    
+                                                            <a rel="nofollow" href="http://wanderers-journal.tumblr.com/" class="tumblelog" title="A Journal of Impossible Things">wanderers-journal</a> posted this                                                                        </span>
+                    <div class="clear"></div>
+
+                                    
+                        
+                    </li>
+    
+    
+    <!-- END NOTES -->
+</ol>
+								
+								
+							</div> 
+						 <!-- end NORMAL TEXT POST -->
+						
+						 <!-- end QUOTE -->
+						
+					     <!-- end PHOTO POST -->
+					    
+					     <!-- end PHOTOSET POST -->
+					    
+						  <!-- end VIDEO POST -->
+				        
+				          <!-- end AUDIO POST -->
+				        
+				          <!-- end CHAT POST -->
+				        
+						 <!-- end LINK POST -->
+
+					
+					
+				<div class="clear"></div>
+				
+			
+			
+			<div class="footer">
+				<p><img src="http://static.tumblr.com/fkm6sn6/r6Bl9bdgd/footer_bullet.png" alt=""/></p>	
+				<p class="pagination">
+					
+					1&nbsp;&frasl;&nbsp;1
+					
+				</p>
+				<p>- <a href="http://inkhorntheme.ptcampbell.me/">Inkhorn theme</a> powered by Tumblr -</p>
+			</div> <!-- end FOOTER -->
+		
+		</div> <!-- end main -->
+		
+		
+		
+		
+<script type="text/javascript">
+  (function() {
+    var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true;
+    li.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//platform.stumbleupon.com/1/widgets.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s);
+  })();
+</script>
+			
+		<!-- BEGIN TUMBLR CODE -->
+        <iframe src="http://assets.tumblr.com/iframe.html?0aaec77f8c56dc043e43ceaa2914c380&amp;src=http%3A%2F%2Fwanderers-journal.tumblr.com%2Fpost%2F40330464638%2Fthis-made-me-laugh-so-much-so-i-feel-i-have-to&amp;pid=40330464638&amp;rk=lQGIIBJt&amp;lang=en_US&amp;name=wanderers-journal" width="330" height="25" scrolling="no" frameborder="0" style="position:absolute; z-index:1337; top:0px; right:0px; border:0px; background-color:transparent; overflow:hidden;" id="tumblr_controls"></iframe>
+    <!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]-->
+    <img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="http://www.tumblr.com/impixu?T=1357992237&J=eyJibG9naWQiOiIxOTAyMzQ4MyJ9&U=CEMCDODBIH&K=200dfbbd23dc9d34ed709b8018191ee513107fa1f4870b9547ba6fcac839d6b3"/><!-- END TUMBLR CODE --><iframe src="http://assets.tumblr.com/analytics.html?11" scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0 z-index:9999;" id="ga_target"></iframe>
+
+
+    <script type="text/javascript">
+        __qoptions = _qoptions = { qacct: 'p-19UtqE8ngoZbM' };
+    </script>
+    <script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+    <noscript>
+        <img src="http://pixel.quantserve.com/pixel/p-19UtqE8ngoZbM.gif"
+        style="display:none; border-width:0px; height:1px; width:1px;"/>
+    </noscript>
+
+    <script type="text/javascript">
+        var _comscore = _comscore || [];
+        _comscore.push(
+            { c1: "2", c2: '15742520' }
+        );
+        (function(){ var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js"; el.parentNode.insertBefore(s, el); })();
+    </script>
+    <noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=15742520&cv=2.0&cj=1" /></noscript>
+</body> <!-- CLOSE BODY -->
+		
+</html>

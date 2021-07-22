@@ -1,0 +1,535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	 
+	<!-- Meta Data -->
+		<meta name="generator" content="Simple PHP Blog" />
+	<link rel="alternate" type="application/rss+xml" title="Get RSS 2.0 Feed" href="rss.php" />
+	<link rel="alternate" type="application/rdf+xml" title="Get RDF 1.0 Feed" href="rdf.php" />
+	<link rel="alternate" type="application/atom+xml" title="Get Atom 0.3 Feed" href="atom.php" />
+	
+	<!-- Meta Data -->
+	<!-- http://dublincore.org/documents/dces/ -->
+	<meta name="dc.title"       content="Stress Management" />
+	<meta name="author"         content="Resources For Attorneys sm@resourcesforattorneys.com" />
+	<meta name="dc.creator"     content="Resources For Attorneys sm@resourcesforattorneys.com" />
+	<meta name="dc.subject"     content="stress management,stress,management,anxiety,relaxation,laughter,yoga,meditation,aromatherapy
+" />
+	<meta name="keywords"       content="stress management,stress,management,anxiety,relaxation,laughter,yoga,meditation,aromatherapy
+" />
+	<meta name="dc.description" content="A collection of articles, posts and editorials regarding stress, it&#039;s causes and how to manage stress." />
+	<meta name="description"    content="A collection of articles, posts and editorials regarding stress, it&#039;s causes and how to manage stress." />
+	<meta name="dc.type"        content="weblog" />
+	<meta name="dc.type"        content="blog" />
+	<meta name="resource-type"  content="document" />
+	<meta name="dc.format"      scheme="IMT" content="text/html" />
+	<meta name="dc.source"      scheme="URI" content="http://www.resourcesforattorneys.com/stress/index.php" />
+	<meta name="dc.language"    scheme="RFC1766" content="Array" />
+	<meta name="dc.coverage"    content="global" />
+	<meta name="distribution"   content="GLOBAL" /> 
+	<meta name="dc.rights"      content="Copyright 2006 - 2007 by ResourcesForAttorneys.com" />
+	<meta name="copyright"      content="Copyright 2006 - 2007 by ResourcesForAttorneys.com" />
+	
+	<!-- Robots -->
+	<meta name="robots" content="ALL,INDEX,FOLLOW,ARCHIVE" />
+	<meta name="revisit-after" content="7 days" />
+	
+	<!-- Fav Icon -->
+	<link rel="shortcut icon" href="interface/favicon.ico" />
+	
+	<link rel="stylesheet" type="text/css" href="themes/modern/style.css" />
+	<style type="text/css">
+  /* OVERRIDE COLORS */
+
+  /* GENERAL SETTINGS */
+  body {
+    background-color: #CFECEC;
+    color: #000000;
+  }
+
+  hr  
+  {
+    color: #E6E6E6;
+    background-color: #E6E6E6;
+  }
+  
+  /* TYPEOGRAPHY */
+  
+  a:link, a:visited { color: #0000FF; }
+  a:hover { color: #B83C34; }
+  a:active { color: #0000FF; }
+  
+  pre {
+    width: 480px;
+    border-color: #E6E6E6;
+  }
+  
+  /* HEADERS */
+  
+  h1, h2, h3, h4, h5, h6 {
+    /* color: #000000; */
+  }
+  
+  blockquote {
+    color: #000000;
+    border-color: #E6E6E6;
+  }
+  
+  /* LAYOUT / PLACEMENT */
+  
+  #page {
+    background-color: #CFECEC;
+    border-color: #CCCCCC;
+  }
+  
+  #popup {
+    background-color: #CFECEC;
+    border-color: #CCCCCC;
+  }
+  
+  #header {
+    border-color: #CCCCCC;
+  }
+  
+  #title {
+    color: #FFFFFF;
+    border-color: #CCCCCC;
+    background-color: #B83C34;
+  }
+  
+  #footer {
+    color: #000000;
+    border-color: #CCCCCC;
+    background: #CFECEC;
+  }
+  
+  /* CONTENT */
+  
+  /* REGULAR ENTRY */
+  #content .entry .blog_title
+  {
+    border-color: #B83C34;
+    color: #ffffff;
+    background-color: #B83C34;
+  }
+  
+  #content .entry .blog_body
+  {
+    border-color: #B83C34;
+    color: #000000;
+    background-color: #F2F2F2;
+  }
+
+  #content .entry .blog_body_solid  {
+    border-color: #B83C34;
+    color: #000000;
+    background-color: #B83C34;
+  }
+  
+  #content .entry .blog_comment
+  {
+    border-color: #B83C34;
+    color: #000000;
+    background-color: #F2F2F2;
+  }
+  
+  #content .entry .blog_date,
+  #content .static .blog_date,
+  #content .comment .blog_date
+  {
+    color: #000000;
+  }
+  
+  /* STATIC ENTRY */
+  #content .static .blog_title
+  {
+    border-color: #95958C;
+    color: #666661;
+    background-color: #BEBEB5;
+  }
+  
+  #content .static .blog_body
+  {
+    border-color: #95958C;
+    color: #4F4F48;
+    background-color: #F2F2EB;
+  }
+  
+  #content .static .blog_comment
+  {
+    border-color: #95958C;
+    color: #4F4F48;
+    background-color: #F2F2EB;
+  }
+  
+  /* COMMENT ENTRY */
+  #content .comment .blog_title
+  {
+    border-color: #95958C;
+    color: #666661;
+    background-color: #BEBEB5;
+  }
+  
+  #content .comment .blog_body
+  {
+    border-color: #95958C;
+    color: #4F4F48;
+    background-color: #F2F2EB;
+  }
+  
+  #content .comment .blog_comment
+  {
+    border-color: #95958C;
+    color: #4F4F48;
+    background-color: #F2F2EB;
+  }
+  
+  /* SIDEBAR */
+  
+  #sidebar {
+    border-color: #E6E6E6;
+    background-color: #CFECEC;
+  }
+  
+  #sidebar .menu_body a:link { color: #0000FF; }
+  #sidebar .menu_body a:visited { color: #0000FF; }
+  #sidebar .menu_body a:hover { color: #B83C34; }
+  #sidebar .menu_body a:active { color: #829FD9; }
+  
+  #sidebar .menu_title {
+    border-color: #CCCCCC;
+    color: #ffffff;
+    background-color: #B83C34;
+  }
+  
+  #sidebar .menu_body {
+    border-color: #CCCCCC;
+    color: #000000;
+    background-color: #CFECEC;
+  }
+</style>
+	
+<script type="text/javascript">
+	<!--
+	// BLOG SETTINGS
+	var blogSettings = Array();
+	blogSettings['theme'] = 'modern';
+	blogSettings['img_path'] = 'themes/modern/images/';
+	blogSettings['content_width'] = 550;
+	blogSettings['menu_width'] = 200;
+	-->
+</script>
+	<script language="javascript" src="scripts/sb_javascript.js" type="text/javascript"></script>
+	
+	<title>Stress Management - Fighting Burn-out: Natural Help For Stress, Fatigue and Adrenal Insufficiency.</title>    <style type="text/css">@import "addto/addto.css";
+</style>
+</head>
+	    <body>
+    
+<P><center>
+<a href="http://www.nationallawyersdirectory.com" target="noframes"><img src="http://www.resourcesforattorneys.com/national-lawyers-directory.jpg" width="468" height="60"></a><br />
+<font color="#eeeeee">National <a href="http://www.nationallawyersdirectory.com" target="noframes">Lawyers</a> Directory</font>
+</center><P>      
+
+<center><script type="text/javascript"><!--
+google_ad_client = "pub-9363496469772843";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_channel ="";
+google_ad_type = "text";
+google_color_border = "ffffff";
+google_color_bg = "cfecec";
+google_color_link = "0000FF";
+google_color_url = "0000FF";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></center><br />
+      <div id="page">
+        <div id="header"><img src="themes/modern/images/header750x100.jpg" alt="" border="0" /></div>
+        <div id="title">Stress Management</div>        <div id="innerpage">
+          <div id="content">
+            
+<!-- BLOG ENTRY BEGIN -->
+<div class="entry">
+
+<!-- BLOG TITLE BEGIN -->
+<div class="blog_title">Fighting Burn-out: Natural Help For Stress, Fatigue and Adrenal Insufficiency.<a name="entry070209-192443">&nbsp;</a><br />
+</div>
+<!-- BLOG TITLE END -->
+
+<!-- BLOG BODY BEGIN -->
+<div class="blog_body">
+	<div class="blog_date">Friday, February 9, 2007, 09:24 PM</div>
+		The adrenal or “stress glands” are small, triangular shaped glands located on the top of the kidneys. Their function is to prepare the body’s resources to run or fight through the releasing of specific hormones. When this primitive, instinctive response is activated, blood is diverted from digestive system while our blood pressure, pulse, blood sugar levels increase. At the same time, our pupils dilate and the speed of reflexes increases. All of this happens as a way to ensure our survival.<br /><br />In modern times, we don’t’ have to worry about becoming dinner for a hungry tiger or being trampled by a herd of buffalo. Our bodies, however, automatically respond the same way when we are under physical, emotional or mental stress. Many of us live in a state of constant stress that strains our bodies to the point of exhaustion. Over time, and through repetition, this can impact the way the adrenal glands function, causing us to experience adrenal insufficiency or “burn-out”.<br /><br />If you think about it, our adrenal glands can be likened to the batteries in a flashlight. They are filled with a charge that is used to run the body and give us that extra edge in times of need. Each time we use our flashlight, we drain some of the charge from our batteries. Fortunately for us, our batteries are automatically recharged when we eat healthy and get lots of rest. If, on the other hand, we use our flashlight all of the time, and don’t recharge our batteries regularly, it is only a matter of time before the light starts to dim and eventually goes out all together.<br /><br />Technically speaking, adrenal insufficiency refers to the inability of adrenal glands to produce the proper quantity of hormones needed to run the body. It should not to be confused with Addison’s disease, which is when the adrenal glands fail to produce hormones or shutdown completely. The most common symptom of adrenal insufficiency is fatigue. Other symptoms include: not feeling rested after sleep, inability to deal with life stressors, poor memory, a low sex drive, frequent infections due to a suppressed immune system, inability to concentrate, depression, mood swings, irritability, weight gain, weakness and hormonal imbalances.<br /><br />There are a number of reasons why people experience adrenal insufficiency. It can be from a genetic or congenital abnormality, but the most common one is stress. Some of us force our bodies to run or fight all the time. Life challenges, financial pressures, relationship issues and unresolved emotional concerns will eventually deplete your adrenal glands. Internal stressors such as allergies, physical disease, nutritional deficiencies, food and environmental toxins can also put pressure on the body’s natural reserves. In addition, stimulants, such as sugar, white flower, caffeine, as well as constant exposure to loud music, loud noise or E M radiation can take a toll on our adrenal glands.<br /><br />Recommendations For Wellness<br /><br />First and foremost, stop forcing yourself to keep going and start listening to your body. It will tell you what it needs. If it is tired, try closing your eyes and taking a few deep breaths. Taking a break, even a short one is a great way to let your body rest.<br /><br />Just let it go. Allow your body to let go of any resentment, blame, guilt, worries or fears that can paralyze the adrenal glands.<br /><br />Learning relaxation techniques such as biofeedback, meditation guided imagery can help you cope with stress better.<br /><br />Try taking a hot bath with l avender or n eroli oil at night. These oils can help to calm frazzled nerves, promote a feeling of calmness and bring about a restful nights sleep.<br /><br />Siberian ginseng is an adaptogenic herb that supports the adrenal glands making it a great tonic to help the body deal with stress.<br /><br />Found in the rainforest of South America, the herb suma has been reported to help increase energy levels and rejuvenate the spirit. It has been found to be useful in restoring glandular function and balancing the endocrine system.<br /><br />Licorice Root has traditionally been used to support the adrenals. This herb is very sweet and is not recommended if you are diabetic.<br /><br />Pantothenic Acid, vitamin B5, is vital for adrenal hormone production and is recommended in supporting the adrenal glands.<br /><br />Nature’s Sunshine’s Energy-V Capsules and Nervous Fatigue Formula are a collection of stimulating &amp; adaptogenic herbs which can help the body adapt to stress.<br /><br />DHEA is a hormone precursor produced by the adrenal glands. Leading health experts to believe that after the age of 25, the body&#039;s ability to produce DHEA declines and supplementation can help increase energy and counteract the effects of stress.<br /><br />Supplements made from bovine adrenal glands provide nutritional support for proper adrenal gland function. Only use this supplement for short periods of time as to not disrupt the normal function of the adrenal glands.<br /><br />© Copyright Body, Mind &amp; SoulHealer – soulhealer.com 2007. All rights reserved.<br /><br />By: Dr. Rita Louise<br />Dr. Rita Louise, Ph D is a Naturopathic Physician and the host of Just Energy Radio. Author of the books “Avoiding the Cosmic 2x4” and “The Power Within”, it is her unique gift as a medical intuitive and professional clairvoyant that enlivens her work. Let Dr. Rita assist you bringing health, healing and wholeness back into your life. Visit  <a href="http://www.soulhealer.com" target="_blank" >http://www.soulhealer.com</a> or listen live online to Dr. Rita on JustEnergyRadio.com.<br /><br /><B>Editors note</B>: Neither this blog nor it&#039;s publishers or editors take any position as to the use, benefits or potential problems caused by any supplements mentioned in the above article. The opinions are solely those of the author.<br /><br />Featured by Resources For Attorneys, a  <a href="http://www.resourcesforattorneys.com" target="_blank" >Legal Resources</a> and  <a href="http://lifestyle.resourcesforattorneys.com" target="_blank" >Lifestyle</a> directory for attorneys, lawyers and the general internet public.<br /><br />There is an old saying, &quot;laughter is the best medicine&quot;. Why not treat yourself to some laughter? Visit our  <a href="http://lifestyle.resourcesforattorneys.com/jokeindex.html" target="_blank" >jokes</a> directory and relax with some jokes, humor and humerous anecdotes.<br /><br /><strong>Comments:</strong> For those of you that would like to comment on this or any other post in this blog, go to the Contact me link on the upper right hand side of this page and send your comment via that link. If your comment is on topic, whether pro or anti, and even fairly well written, we will post it with the article. If you have a site that you would like to be linked to your comment please supply it and we will include it.<br clear="all" />
+	</div>
+<!-- BLOG BODY END -->
+
+<!-- BLOG FOOTER BEGIN -->
+
+	<div class="blog_comment"><a href="comments.php?y=07&amp;m=02&amp;entry=entry070209-192443"><img src="themes/modern/images/box_add.png" alt="" width="14" height="14" align="top"/> 1 comment </a>
+ ( 280 views )
+</div>
+
+<!-- BLOG FOOTER END -->
+</div>
+
+<!-- BLOG ENTRY END -->
+<br /><center><b><span><a href="index.php?m=07&amp;y=10&amp;d=31&amp;entry=entry100731-203111">&#60;&#60;First&#32;&#32;</a></span><span><a href="index.php?m=02&amp;y=07&amp;d=10&amp;entry=entry070210-152035"> &#60;Back&#32;&#32;</a></span>  <span><a href="index.php?m=02&amp;y=07&amp;d=08&amp;entry=entry070208-154823">Next&#62;&#32;&#32;</a></span> <span><a href="index.php?m=02&amp;y=07&amp;d=08&amp;entry=entry070208-154823">&#32;&#32;Last&#62;&#62;</a></span></b></center><br />          </div>
+          <div id="sidebar">
+          
+
+          <!-- Search Google -->
+<center>
+<style type="text/css">
+@import url(http://www.google.com/cse/api/branding.css);
+</style>
+<div class="cse-branding-left" style="background-color:#cfecec;color:#000000">
+  <div class="cse-branding-form">
+
+    <form action="http://www.google.com/cse" id="cse-search-box" target="_blank">
+      <div>
+        <input type="hidden" name="cx" value="partner-pub-9363496469772843:fr341lytykq" />
+        <input type="hidden" name="ie" value="ISO-8859-1" />
+        <input type="text" name="q" size="26" />
+        <input type="submit" name="sa" value="Search" />
+      </div>
+    </form>
+  </div>
+
+  <div class="cse-branding-logo">
+    <img src="http://www.google.com/images/poweredby_transparent/poweredby_FFFFFF.gif" alt="Google" />
+  </div>
+  <div class="cse-branding-text">
+    Custom Search
+  </div>
+</div>
+</center>
+<!-- Search Google -->
+          
+<br />
+
+
+<!-- SIDEBAR MENU BEGIN -->
+
+<!-- SEARCH -->
+<div class="menu_title">
+	<a id="linkSidebarSearch" href="javascript:toggleBlock('SidebarSearch');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Search this Site</a>
+</div>
+<div id="toggleSidebarSearch" class="menu_body">
+	<form method="get" action="search.php"><input type="text" size="16" name="q" />&nbsp;<input type="submit" value="Go" /></form>
+</div>
+<br />
+
+<!-- LINKS -->
+<div class="menu_title">
+Links
+</div>
+<div class="menu_body">
+	<a href="index.php">Home</a><br /><a href="contact.php">Contact Me</a><br /><a href="http://animaljokes.resourcesforattorneys.com/index.php" target="_blank">Animal Jokes and Humor</a><br /><a href="http://blondjokes.informationresourcenetwork.com/index.php" target="_blank">Blonde Jokes and Humor</a><br /><a href="http://california.resourcesforattorneys.com/californiaissues/index.php" target="_blank">California Issues</a><br /><a href="http://www.californiawineries.info/index.php" target="_blank">California Wineries</a><br /><a href="http://lifestyle.resourcesforattorneys.com/camping/index.php" target="_blank">Camping Tips and Information</a><br /><a href="http://doctorjokes.resourcesforattorneys.com/index.php" target="_blank">Doctor Jokes and Humor</a><br /><a href="http://lifestyle.resourcesforattorneys.com/fishing/index.php" target="_blank">Fishing Tips and Information</a><br /><a href="http://fitness.resourcesforattorneys.com/index.php" target="_blank">Fitness - Diet And Exercise</a><br /><a href="http://forums.resourcesforattorneys.com" target="_blank">Forums</a><br /><a href="http://www.resourcesforattorneys.com/reversedirectories.html" target="_blank">Free Reverse Directories</a><br /><a href="http://gardening.resourcesforattorneys.com/index.php" target="_blank">Gardening Tips and Information</a><br /><a href="http://lifestyle.resourcesforattorneys.com/golfing/index.php" target="_blank">Golf - Golfing Tips</a><br /><a href="http://healthcare.informationresourcenetwork.com/index.php" target="_blank">Healthcare Information</a><br /><a href="http://homeimprovement.resourcesforattorneys.com/index.php" target="_blank">Home Improvement Information</a><br /><a href="http://lifestyle.resourcesforattorneys.com/jokeindex.html" target="_blank">Humor and Jokes</a><br /><a href="http://www.informationresourcenetwork.com/index.php" target="_blank">Information Resource</a><br /><a href="http://www.resourcesforattorneys.com/issues/index.php" target="_blank">Issues</a><br /><a href="http://www.nationallawyersdirectory.com/" target="_blank">Lawyer Directory</a><br /><a href="http://www.resourcesforattorneys.com/legalarticles.html" target="_blank">Legal Articles</a><br /><a href="http://legalblog.resourcesforattorneys.com/index.php" target="_blank">Legal Information</a><br /><a href="http://www.resourcesforattorneys.com/index.html" target="_blank">Legal Resources</a><br /><a href="http://lifestyle.resourcesforattorneys.com/index.html" target="_blank">Lifestyle Resources</a><br /><a href="http://officejokes.resourcesforattorneys.com/index.php" target="_blank">Office Jokes and Humor</a><br /><a href="http://politicaljokes.resourcesforattorneys.com/index.php" target="_blank">Political Jokes and Humor</a><br /><a href="http://realestatejokes.nationalrealtorsdirectory.com/index.php" target="_blank">Real Estate Jokes and Humor</a><br /><a href="http://www.findrealtors.net/" target="_blank">Realtors - Real Estate Brokers</a><br /><a href="http://sportsjokes.resourcesforattorneys.com/index.php" target="_blank">Sports Jokes and Humor</a><br /><a href="http://www.usacitydirectories.com/travelamerica/index.php" target="_blank">Travel America</a><br /><a href="http://travel.resourcesforattorneys.com/index.php" target="_blank">Travel Destinations</a><br /><a href="http://traveleurope.findairlines.net/index.php" target="_blank">Travel Europe</a><br /><a href="http://traveljokes.resourcesforattorneys.com/index.php" target="_blank">Travel Jokes and Humor</a><br /><a href="http://travel.resourcesforattorneys.com/mexico/index.php" target="_blank">Travel Mexico</a><br /><hr /><a href="login.php">Login</a>
+</div>
+<br />
+
+<!-- RANDOM ENTRY -->
+<div class="menu_title">
+	<a id="linkSidebarRandomEntry" href="javascript:toggleBlock('SidebarRandomEntry');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> </a>
+</div>
+<div id="toggleSidebarRandomEntry" class="menu_body">
+	<a href="index.php?entry=entry090723-003136">Relieve Your Stress With Meditation</a>
+</div>
+<br />
+
+<!-- CATEGORIES -->
+<div class="menu_title">
+	<a id="linkSidebarCategories" href="javascript:toggleBlock('SidebarCategories');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Categories</a>
+</div>
+<div id="toggleSidebarCategories" class="menu_body">
+	<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=10">Anger</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=5">Anxiety</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=2">Aromatherapy</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=14">Breathing</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=11">Depression</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=3">Exercise</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=1">General</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=15">Grief</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=13">Hypnosis</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=4">Laughter</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=17">Massage</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=7">Meditation</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=8">Nervousness</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=9">Positive Thinking</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=12">Relaxation</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=16">Worry</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=6">Yoga</a>
+
+</div>
+<br />
+
+<!-- ARCHIVE TREE -->
+<div class="menu_title">
+	<a id="linkSidebarArchives" href="javascript:toggleBlock('SidebarArchives');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Archives</a>
+</div>
+<div id="toggleSidebarArchives" class="menu_body">
+	<a href="archives.php">View Archives</a><br />
+<div id="archive_tree_menu"><ul><li>
+2010
+<ul>
+<li>
+<a href="index.php?m=07&amp;y=10">July</a>
+<ul>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-203111">Self-Massaging - Relaxing and Very Very Cheap</a><br />
+<b>07/31/10</b></li>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-202631">Ways to Relax Yourself</a><br />
+<b>07/31/10</b></li>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-201406">Strategies For Effectively Preventing Anxiety Attacks</a><br />
+<b>07/31/10</b></li>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-200624">Overcoming Panic Quickly - 3 Steps to Overcoming Panic Attacks</a><br />
+<b>07/31/10</b></li>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-200110">Stress Factors - Common Stress Factors and How to Eliminate Them</a><br />
+<b>07/31/10</b></li>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-195205">How to Stop Worrying and Be Happy</a><br />
+<b>07/31/10</b></li>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-194651">How to Become Relaxed - Five Easy Steps</a><br />
+<b>07/31/10</b></li>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-194117">Anxiety and Stress Can Be Overcome With Music</a><br />
+<b>07/31/10</b></li>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-185451">The 3 Things You Need to Do to Breathe Correctly &amp; Change Your Life Forever</a><br />
+<b>07/31/10</b></li>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-170652">4 Ways To Manage Stress at Work More Effectively</a><br />
+<b>07/31/10</b></li>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-165950">Reduce Stress With These 2 Simple Exercises</a><br />
+<b>07/31/10</b></li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li>
+2009
+<ul>
+<li>
+<a href="index.php?m=07&amp;y=09">July</a>
+</li>
+<li>
+<a href="index.php?m=05&amp;y=09">May</a>
+</li>
+<li>
+<a href="index.php?m=02&amp;y=09">March</a>
+</li>
+
+</ul>
+</li>
+<li>
+2008
+<ul>
+<li>
+<a href="index.php?m=10&amp;y=08">October</a>
+</li>
+<li>
+<a href="index.php?m=07&amp;y=08">July</a>
+</li>
+<li>
+<a href="index.php?m=06&amp;y=08">July</a>
+</li>
+<li>
+<a href="index.php?m=05&amp;y=08">May</a>
+</li>
+<li>
+<a href="index.php?m=04&amp;y=08">May</a>
+</li>
+<li>
+<a href="index.php?m=03&amp;y=08">March</a>
+</li>
+<li>
+<a href="index.php?m=02&amp;y=08">March</a>
+</li>
+<li>
+<a href="index.php?m=01&amp;y=08">January</a>
+</li>
+
+</ul>
+</li>
+<li>
+2007
+<ul>
+<li>
+<a href="index.php?m=12&amp;y=07">December</a>
+</li>
+<li>
+<a href="index.php?m=11&amp;y=07">December</a>
+</li>
+<li>
+<a href="index.php?m=10&amp;y=07">October</a>
+</li>
+<li>
+<a href="index.php?m=09&amp;y=07">October</a>
+</li>
+<li>
+<a href="index.php?m=08&amp;y=07">August</a>
+</li>
+<li>
+<a href="index.php?m=07&amp;y=07">July</a>
+</li>
+<li>
+<a href="index.php?m=06&amp;y=07">July</a>
+</li>
+<li>
+<a href="index.php?m=05&amp;y=07">May</a>
+</li>
+<li>
+<a href="index.php?m=04&amp;y=07">May</a>
+</li>
+<li>
+<a href="index.php?m=03&amp;y=07">March</a>
+</li>
+<li>
+<a href="index.php?m=02&amp;y=07">March</a>
+</li>
+
+</ul>
+</li>
+</ul></div>
+</div>
+<br />
+
+<!-- RECENT ENTRIES -->
+<div class="menu_title">
+	<a id="linkSidebarRecentEntries" href="javascript:toggleBlock('SidebarRecentEntries');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Most Recent Entries</a>
+</div>
+<div id="toggleSidebarRecentEntries" class="menu_body">
+	<a href="http://www.resourcesforattorneys.com/stress/index.php?entry=entry100731-203111">Self-Massaging - Relaxing and Very Very Cheap</a><br /><a href="http://www.resourcesforattorneys.com/stress/index.php?entry=entry100731-202631">Ways to Relax Yourself</a><br /><a href="http://www.resourcesforattorneys.com/stress/index.php?entry=entry100731-201406">Strategies For Effectively Preventing Anxiety Attacks</a><br /><a href="http://www.resourcesforattorneys.com/stress/index.php?entry=entry100731-200624">Overcoming Panic Quickly - 3 Steps to Overcoming Panic Attacks</a><br /><a href="http://www.resourcesforattorneys.com/stress/index.php?entry=entry100731-200110">Stress Factors - Common Stress Factors and How to Eliminate Them</a><br /><a href="http://www.resourcesforattorneys.com/stress/index.php?entry=entry100731-195205">How to Stop Worrying and Be Happy</a><br /><a href="http://www.resourcesforattorneys.com/stress/index.php?entry=entry100731-194651">How to Become Relaxed - Five Easy Steps</a><br /><a href="http://www.resourcesforattorneys.com/stress/index.php?entry=entry100731-194117">Anxiety and Stress Can Be Overcome With Music</a><br />
+</div>
+<br />
+<p /><div align="center">
+<a href="http://sourceforge.net/projects/sphpblog/"><img style="margin-bottom: 5px;" src="interface/button_sphpblog.png" alt="Powered by Simple PHP Blog" title="Powered by Simple PHP Blog" border="0" /></a> <a href="rss.php"><img style="margin-bottom: 5px;" src="interface/button_rss20.png" alt="Get RSS 2.0 Feed" title="Get RSS 2.0 Feed" border="0" /></a><br /><a href="http://php.net/"><img style="margin-bottom: 5px;" src="interface/button_php.png" alt="Powered by PHP 5.1.6" title="Powered by PHP 5.1.6" border="0" /></a> <a href="atom.php"><img style="margin-bottom: 5px;" src="interface/button_atom03.png" alt="Get Atom 0.3 Feed" title="Get Atom 0.3 Feed" border="0" /></a><br /><img style="margin-bottom: 5px;" src="interface/button_txt.png" alt="Powered by Plain text files" title="Powered by Plain Text Files" border="0" /> <a href="rdf.php"><img style="margin-bottom: 5px;" src="interface/button_rdf10.png" alt="Get RDF 1.0 Feed" title="Get RDF 1.0 Feed" border="0" /></a><br /></div>
+<center>
+<!-- AddThis Button BEGIN -->
+<a href="http://www.addthis.com/bookmark.php" onClick="window.open('http://www.addthis.com/bookmark.php?wt=nw&pub=lawstud&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title), 'addthis', 'scrollbars=yes,menubar=no,width=620,height=520,resizable=yes,toolbar=no,location=no,status=no,screenX=200,screenY=100,left=200,top=100'); return false;" title="Bookmark and Share" target="_blank"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" border="0" alt="Bookmark and Share" /></a>
+<!-- AddThis Button END -->		
+
+<br />
+
+</td></tr></table></center>
+										</div>
+        </div>
+        <div id="footer">
+          A collection of articles, posts and editorials regarding stress, it&#039;s causes and how to manage stress. - Page Generated in 0.3746 seconds        </div>
+      </div>
+    </body>
+    </html>

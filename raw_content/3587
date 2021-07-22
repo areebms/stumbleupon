@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>post it the 2nd generation | Shoplet Office Supplies Blog</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e4e7cb520cb9e5c"></script>
+<link rel="stylesheet" type="text/css" media="all" href="http://blog.shoplet.com/wp-content/themes/toolbox/style.css" />
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'>
+<link rel="pingback" href="http://blog.shoplet.com/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://blog.shoplet.com/wp-content/themes/toolbox/html5.js" type="text/javascript"></script>
+<![endif]-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" type="text/javascript"></script>
+<script src="http://blog.shoplet.com/wp-content/themes/toolbox/js/jquery.tabSlideOut.v1.3.js"></script>
+<script src="http://blog.shoplet.com/wp-includes/js/jquery.placeholder.js" type="text/javascript"></script>
+<script src="http://blog.shoplet.com/wp-content/themes/toolbox/js/jquery.textshadow.js" type="text/javascript"></script>
+  
+<script type="text/javascript">
+$(document).ready(function(){					   
+  //prepend span tag
+  $(".entry-content img").before("<span id=\"tape\"></span>");							  
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){					   
+  //prepend span tag
+  $("li.depth-1").after("<img id=\"comment-shadow\" src=\"http://blog.shoplet.com/wp-content/themes/toolbox/img/comment-shadow.png\" />");							  
+});
+</script>
+
+<script>
+$(document).ready(function() {
+
+	$("ul#menu-menu li").prepend("<p></p>"); //Throws an empty span tag right before the a tag
+
+	//$("ul#menu-menu li").each(function() { //For each list item...
+		//var linkText = $(this).find("a").html(); //Find the text inside of the <a> tag
+		//$(this).find("p").show().html(linkText); //Add the text in the <span> tag
+	//}); 
+
+	$("ul#menu-menu li").hover(function() {	//On hover...
+		$(this).find("p").stop().animate({
+			marginTop: "-40" //Find the <span> tag and move it up 40 pixels
+		}, 250);
+	} , function() { //On hover out...
+		$(this).find("p").stop().animate({
+			marginTop: "0"  //Move the <span> back to its original state (0px)
+		}, 250);
+	});
+
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+var option2 = {
+  x:      -1, 
+  y:      1, 
+  radius: 0,
+  color:  "#FFFFFF"
+}
+
+$(".date-tab p, #go, #searchsubmit").textShadow( option2 );
+})
+</script>
+<link rel="shortcut icon" href="http://blog.shoplet.com/wp-content/uploads/2010/05/favicon.ico" />
+    <link rel="pingback" href="http://blog.shoplet.com/xmlrpc.php" />
+		
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7652191-9']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+var submitGo=function(el){
+	patt=/[A-Za-z0-9]/;
+	var value=encodeURIComponent(jQuery('#searchtext').val().replace(/\//gi,'%2F').trim());
+	if(value==''||!patt.test(value) || value == encodeURIComponent('What does your business need today?')){
+		window.location='http://www.shoplet.com/';
+		return false;
+	}else{
+		window.location='http://www.shoplet.com/'+value+'/usrch'; 
+		return false
+	}
+return false;
+}
+</script>
+
+
+
+
+
+<link rel="alternate" type="application/rss+xml" title="Shoplet Office Supplies Blog &raquo; Feed" href="http://blog.shoplet.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Shoplet Office Supplies Blog &raquo; Comments Feed" href="http://blog.shoplet.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Shoplet Office Supplies Blog &raquo; post it the 2nd generation Comments Feed" href="http://blog.shoplet.com/office-supplies/post-it-the-2nd-generation/feed/" />
+<link rel='stylesheet' id='wp-polls-css'  href='http://blog.shoplet.com/wp-content/plugins/wp-polls/polls-css.css?ver=2.50' type='text/css' media='all' />
+<script type='text/javascript' src='http://blog.shoplet.com/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://blog.shoplet.com/wp-includes/js/jquery/jquery.js?ver=1.6.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.shoplet.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.shoplet.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Shoplet Office Supplies Blog' href='http://blog.shoplet.com/' />
+<link rel='start' title='A Cure To The Growing Bacteria Problem' href='http://blog.shoplet.com/work-better/healthy-office/hello-world-2/' />
+<link rel='prev' title='how to ask for a raise, and get promptly rejected' href='http://blog.shoplet.com/work-better/how-to-ask-for-a-raise-and-get-promptly-rejected/' />
+<link rel='next' title='Office Supplies That Go BLING' href='http://blog.shoplet.com/office-supplies/office-supplies-that-go-bling/' />
+<meta name="generator" content="WordPress 3.2.1" />
+<link rel='canonical' href='http://blog.shoplet.com/office-supplies/post-it-the-2nd-generation/' />
+<link rel='shortlink' href='http://blog.shoplet.com/?p=78' />
+		<style type="text/css">
+			
+			#gfc_profile {
+				font-size: 11px;
+				border-top: 1px solid black;
+				border-bottom: 1px solid black;
+				margin: 20px 40px;
+				padding: 15px;
+			}
+			
+			#gfc_profile img {
+				border: 2px solid grey;
+				margin-top: 15px;
+				margin-right: 10px;		
+			}
+			
+			#gfc_profile ul {
+				list-style-type:none;
+			}
+
+			#gfc_profile ul li {
+				list-style-type:none;
+			} 
+			
+		</style>
+		
+	<!-- Load the Google AJAX API Loader -->
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+
+	<!-- Load the Google Friend Connect javascript library. -->
+	<script type="text/javascript">
+		google.load('friendconnect', '0.8');
+	</script>
+
+	<!-- Initialize the Google Friend Connect OpenSocial API. -->
+	<script type="text/javascript">
+	
+		var SITE_ID = "1276945391306735787"
+		google.friendconnect.container.setParentUrl('http://blog.shoplet.com/' /* location of rpc_relay.html and canvas.html */);
+		google.friendconnect.container.initOpenSocialApi({
+			site: SITE_ID,
+			onload: function(securityToken) { 
+			    if (!window.timesloaded) {
+					window.timesloaded = 1;
+				} else {
+					window.timesloaded++;
+				}
+				initAllData(window.timesloaded); 
+			}
+		});
+	
+	</script>
+
+	<script type="text/javascript">
+
+		// Send request to GFC if needed
+		function initAllData(gfc_loaded) {
+			
+			if ( gfc_loaded > 1 ) {
+				
+				//Page is loded twice or more
+				//Sign In or Sign out happened -> reload page
+				window.location.reload();
+				
+			} else {
+			
+								google.friendconnect.renderSignInButton({ 'id': 'gfc_profile','style':'standard','text': 'Sign In'});
+							
+			}
+			
+		};   
+
+	</script>
+<style type="text/css">
+.wp-polls .pollbar {
+	margin: 1px;
+	font-size: 6px;
+	line-height: 8px;
+	height: 8px;
+	background-image: url('http://blog.shoplet.com/wp-content/plugins/wp-polls/images/default/pollbg.gif');
+	border: 1px solid #c8c8c8;
+}
+</style>
+</head>
+
+<body class="single single-post postid-78 single-format-standard">
+
+<div id="artist-bg">
+
+<div id="page" class="hfeed">
+	<header id="branding" role="banner">
+        <div id="search-bar" class="slide-out-div">
+            <!--<a class="handle" style="width: 150px; height: 55px; display: block; position: absolute; top: 58px; right:165px;">HANDLE</a>-->
+            <form method="post" name="main_search" action="http://www.shoplet.com/search/search/">
+            <div id="searchfield">
+            <span></span>
+            <input id="searchtext" type="text" autocomplete="off" name="text" placeholder="Search our products on Shoplet.com!" value="">
+            </div>
+            <button id="go" onClick="_gaq.push(['_trackEvent', 'SearchBlog', 'SearchBlog']);submitGo(searchtext); return false;" type="submit">SEARCH</button>
+            </form>
+        </div>
+    <div id="red-stapler"></div>
+    <div id="sharpie"></div>
+			<hgroup>
+				<h1 id="site-title"><span><a href="http://blog.shoplet.com/" title="Shoplet Office Supplies Blog" rel="home">Shoplet Office Supplies Blog</a></span></h1>
+				<h2 id="site-description">Sharing our Love for Office Supplies</h2>
+			</hgroup>
+
+			<a href="http://blog.shoplet.com/" ><img id="logo" src="http://blog.shoplet.com/wp-content/themes/toolbox/img/blog-logo-sticky.png" width="402" height="180" /></a>
+            <!--<img id="tagline" src="../wp-content/themes/toolbox/img/tagline.png" width="450"  />-->
+				</header><!-- #branding -->
+            <div class="nav-border-top"></div>
+            <nav id="access" role="navigation">
+				<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-83042" class="menu-about menu-item menu-item-type-custom menu-item-object-custom menu-item-83042"><a href="http://blog.shoplet.com/about-us/">About Shoplet Blog</a></li>
+<li id="menu-item-83052" class="menu-reviews menu-item menu-item-type-custom menu-item-object-custom menu-item-83052"><a href="http://blog.shoplet.com/category/buying-guides/">Office Product Reviews</a></li>
+<li id="menu-item-83062" class="menu-office-art menu-item menu-item-type-custom menu-item-object-custom menu-item-83062"><a href="http://blog.shoplet.com/tag/office-supplies-art/">Office Art</a></li>
+<li id="menu-item-83082" class="menu-office-fashion menu-item menu-item-type-custom menu-item-object-custom menu-item-83082"><a href="http://blog.shoplet.com/category/office-fashion/">Office Fashion</a></li>
+<li id="menu-item-83092" class="menu-weekly-giveaway menu-item menu-item-type-custom menu-item-object-custom menu-item-83092"><a href="http://blog.shoplet.com/category/giveaways/">Office Weekly Giveaways</a></li>
+<li id="menu-item-83102" class="menu-badges menu-item menu-item-type-custom menu-item-object-custom menu-item-83102"><a href="http://www.shoplet.com/about/badges.html">Shoplet Badges</a></li>
+<li id="menu-item-83112" class="menu-contact menu-item menu-item-type-custom menu-item-object-custom menu-item-83112"><a href="mailto:marketing@shoplet.com">Contact Shoplet</a></li>
+<li id="menu-item-83122" class="menu-shop menu-item menu-item-type-custom menu-item-object-custom menu-item-83122"><a href="http://www.shoplet.com">Shop and Save at Shoplet</a></li>
+</ul></div>			</nav><!-- #access -->
+            <div id="clear"></div>
+			<div class="nav-border-bottom"></div>
+<div id="clear"></div>
+
+	<div id="main">
+
+		<div id="primary">
+			<div id="content" role="main">
+
+			
+				<!--<nav id="nav-above">
+					<h1 class="section-heading">Post navigation</h1>
+					<div class="nav-previous"><a href="http://blog.shoplet.com/work-better/how-to-ask-for-a-raise-and-get-promptly-rejected/" rel="prev"><span class="meta-nav">&larr;</span> how to ask for a raise, and get promptly rejected</a></div>
+					<div class="nav-next"><a href="http://blog.shoplet.com/office-supplies/office-supplies-that-go-bling/" rel="next">Office Supplies That Go BLING <span class="meta-nav">&rarr;</span></a></div>
+				</nav>--><!-- #nav-above -->
+
+				
+<article id="post-78" class="post-78 post type-post status-publish format-standard hentry category-office-fun category-office-supplies tag-post-it-notes tag-post-it-notes-art">
+<img src="http://blog.shoplet.com/wp-content/themes/toolbox/img/post-top.png" width="620" height="119"  />
+<div id="post">
+	<header class="entry-header">
+    <!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_compact"></a>
+</div>
+<!-- AddThis Button END -->
+<div style="clear"></div>
+    <div id="comment-bubble">Comments: <span>12</span></div>
+        
+		<div class="date-tab">
+		<div class="entry-meta">
+			 <p class="month">Jul</p>
+             <p class="day">01</p>
+             <p class="year">2008</p>
+		</div><!-- .entry-meta -->     
+        </div><!-- .date-tab -->  
+        
+        
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	<h1 class="entry-title">post it the 2nd generation <span class="by-line">by johns</span></h1>
+		<p>We love <strong>post it notes</strong>! What would we do without these colorful squares that seem to pop up in all the <strong>most appropriate as well as inappropriate places</strong>? What would we do without the help of these little pieces of paper to help us <strong>organize, multi-task, as well as distillate</strong> our lives? The original post it brings c<strong>olor, functionality, creativity, and imagination</strong> to our lives. Due to our recent success on the posting of <a href="http://blog.shoplet.com/office-supplies/post-its-note-art-8-bit-edition/" title="post it" target="_blank">post-it notes art: 8-bit edition</a>, and <a href="http://blog.shoplet.com/office-supplies/post-it-notes-art/" title="post it art" target="_blank">post-it note art</a>. We looked around for the ideas that took post it to <strong>another level of usefulness and fun!</strong></p>
+<p><img src="http://farm4.static.flickr.com/3035/2627353353_35fc59a517.jpg?v=0" align="middle" height="293" width="450" title="" alt=" post it the 2nd generation" /></p>
+<p><strong>Post It Sculpture</strong></p>
+<p>Now not only are they functional, these morph pads become beautiful sculptures themselves and are a sight to behold. Mold your stress into these pads and watch beautiful museum pieces emerge from underneath your fingers. Who knew post-it notes is so therapeutic as well as they are functional? Thanks <a href="http://www.geekologie.com/2006/07/morph_pad_is_the_most_amazing.php" target="_blank">Geekologie</a>.</p>
+<p><strong><br />
+</strong><img src="http://www.coolhunting.com/images/080508-post-it.jpg" align="middle" height="230" width="306" title="080508 post it" alt="080508 post it post it the 2nd generation" /></p>
+<p><strong>Transparent Post It</strong></p>
+<p>Now I can mark my reading materials and remember my thought processes as I was reading it! Really wish this was in existence when I was in school! Thanks <a href="http://www3.3m.com/catalog/us/en001/Post-it/notes_flags/node_1VPKS1ZB6Qbe/root_GST1T4S9TCgv/vroot_F376ZV1HQVge/gvel_ZFP28H3R2Ngl/theme_us_postit_3_0/command_AbcPageHandler/output_html" title="3M" target="_blank">3M</a>.</p>
+<h2></h2>
+<p><img src="http://www.yankodesign.com/images/design_news/2007/11/28/pockit2.jpg" align="middle" height="339" width="468" title="pockit2" alt="pockit2 post it the 2nd generation" /></p>
+<p><strong>Post It, But Pock It Too!</strong></p>
+<p>Hey, how come I didn&#8217;t think of this. Sigh, there goes my million dollar idea. Is it possible for post-its to get any more multifunctional? Thanks <a href="http://www.yankodesign.com/index.php/2007/11/28/pock-it/" target="_blank">Yanko</a>.</p>
+<p><object height="344" width="425"><embed src="http://www.youtube.com/v/HQT5_4aVvHU&amp;hl=en" type="application/x-shockwave-flash" allowfullscreen="true" height="344" width="425"></embed></object></p>
+<p><img src="http://www.blogsmithmedia.com/www.engadget.com/media/2008/05/5-01-08-quickies.jpg" align="middle" height="80%" width="80%" title="5 01 08 quickies" alt="5 01 08 quickies post it the 2nd generation" /></p>
+<p><strong>MIT reinvents the Post-It Notes</strong></p>
+<p>Can only be described as post-its on steroids. These post it notes are digitalized, can be managed through computers, can be sent through SMS, and can be tracked down through RFID tags, just in case you misplace them. Thanks <a href="http://www.engadget.com/2008/05/01/mit-reinvents-the-post-it-note-with-post-it-notes/" target="_blank">engadget</a>.</p>
+<p><img src="http://cseries.typepad.com/photos/uncategorized/2007/03/21/geniustable267001.jpg" title="post it table 2" alt="geniustable267001 post it the 2nd generation" align="middle" height="267" width="267" /></p>
+<p><strong>Post It Table</strong></p>
+<p>Great for spontaneous coffee table conversations and doodles. Mmm, and just in case you don&#8217;t have anything to write on in case you do meet your dream guy or gal. Thanks <a href="http://www.tomseymour.com/products.html" target="_blank">Boing Boing</a>.</p>
+<p><img src="http://www.coolest-gadgets.com/wp-content/uploads/post-it-table.jpg" align="middle" height="197" width="200" title="post it table" alt="post it table post it the 2nd generation" /></p>
+<p><strong>Post It Table 2</strong></p>
+<p>Table and stool in one! Thanks <a href="http://www.tomseymour.com/products.html" target="_blank">tom seymour.</a></p>
+<p><strong><br />
+</strong></p>
+<div class="linkwithin_hook" id="http://blog.shoplet.com/office-supplies/post-it-the-2nd-generation/"></div><script>
+<!-- //LinkWithinCodeStart
+var linkwithin_site_id = 201682;
+var linkwithin_div_class = "linkwithin_hook";
+//LinkWithinCodeEnd -->
+</script>
+<script src="http://www.linkwithin.com/widget.js"></script>
+			</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+		This entry was posted in <a href="http://blog.shoplet.com/category/office-fun/" title="View all posts in Office Fun" rel="category tag">Office Fun</a>, <a href="http://blog.shoplet.com/category/office-supplies/" title="View all posts in Office Supplies" rel="category tag">Office Supplies</a> and tagged <a href="http://blog.shoplet.com/tag/post-it-notes/" rel="tag">post it notes</a>, <a href="http://blog.shoplet.com/tag/post-it-notes-art/" rel="tag">post it notes art</a>. Bookmark the <a href="http://blog.shoplet.com/office-supplies/post-it-the-2nd-generation/" title="Permalink to post it the 2nd generation" rel="bookmark">permalink</a>.
+			</footer><!-- .entry-meta -->
+      </div><!--#post--> 
+    <img src="http://blog.shoplet.com/wp-content/themes/toolbox/img/post-bottom.png" width="620" height="7"  />
+</article><!-- #post-78 -->
+
+				<!--<nav id="nav-below">
+					<h1 class="section-heading">Post navigation</h1>
+					<div class="nav-previous">
+						                              <div id="prev-l"></div><div id="prev-m"><a href="http://blog.shoplet.com/work-better/how-to-ask-for-a-raise-and-get-promptly-rejected/" rel="prev">how to ask for a raise, and get promptly rejected</a></div><div id="prev-r"></div>
+                                                
+                    </div>
+					<div class="nav-next">
+						                           
+                          <div id="next-r"></div><div id="next-m"><a href="http://blog.shoplet.com/office-supplies/office-supplies-that-go-bling/" rel="next">Office Supplies That Go BLING <span class="meta-nav"></span></a></div><div id="next-l"></div>
+                                              
+                    </div>
+				</nav>-->
+
+				
+	<div id="comments">
+	
+	
+			<h2 id="comments-title">
+			12 Responses to <em>post it the 2nd generation</em>		</h2>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-15593">
+		<article id="comment-15593" class="comment">
+			
+            	<div class="comment-meta commentmetadata">
+					<a href="http://blog.shoplet.com/office-supplies/post-it-the-2nd-generation/comment-page-1/#comment-15593"><time pubdate datetime="2008-07-01T12:30:48+00:00">
+					July 1, 2008 at 12:30 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+                <footer>
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/463b22fda3144c5a3a3435290140b4c9?s=40&amp;d=http%3A%2F%2Fblog.shoplet.com%2Fwp-content%2Fthemes%2Ftoolbox%2Fimg%2Fshoplet-grav.jpg%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />					<cite class="fn"><a href='http://www.alextips.com' rel='external nofollow' class='url'>Alex D</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-content"><p>Oh my God! That quickies are awesome!</p>
+</div>
+			</footer>
+
+			
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-##  -->
+
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-15594">
+		<article id="comment-15594" class="comment">
+			
+            	<div class="comment-meta commentmetadata">
+					<a href="http://blog.shoplet.com/office-supplies/post-it-the-2nd-generation/comment-page-1/#comment-15594"><time pubdate datetime="2008-07-01T13:46:59+00:00">
+					July 1, 2008 at 1:46 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+                <footer>
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/6f3715d2e199a2e6a571001ee09542fb?s=40&amp;d=http%3A%2F%2Fblog.shoplet.com%2Fwp-content%2Fthemes%2Ftoolbox%2Fimg%2Fshoplet-grav.jpg%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />					<cite class="fn"><a href='http://www.waynejohn.com' rel='external nofollow' class='url'>Wayne</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-content"><p>Brilliant!  Absolutely Brilliant! The transparent ones are so obvious, why did I ever think of that!</p>
+</div>
+			</footer>
+
+			
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-##  -->
+
+	</li>
+	<li class="comment even thread-even depth-1" id="li-comment-15595">
+		<article id="comment-15595" class="comment">
+			
+            	<div class="comment-meta commentmetadata">
+					<a href="http://blog.shoplet.com/office-supplies/post-it-the-2nd-generation/comment-page-1/#comment-15595"><time pubdate datetime="2008-07-01T16:53:58+00:00">
+					July 1, 2008 at 4:53 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+                <footer>
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/cb0d3e8993847b35be69c6a709d6652f?s=40&amp;d=http%3A%2F%2Fblog.shoplet.com%2Fwp-content%2Fthemes%2Ftoolbox%2Fimg%2Fshoplet-grav.jpg%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />					<cite class="fn"><a href='http://www.sleepys.com' rel='external nofollow' class='url'>Sealy Mattresses</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-content"><p>One of the better accidental discoveries.</p>
+</div>
+			</footer>
+
+			
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-##  -->
+
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-15596">
+		<article id="comment-15596" class="comment">
+			
+            	<div class="comment-meta commentmetadata">
+					<a href="http://blog.shoplet.com/office-supplies/post-it-the-2nd-generation/comment-page-1/#comment-15596"><time pubdate datetime="2008-07-01T21:37:11+00:00">
+					July 1, 2008 at 9:37 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+                <footer>
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/e288721362d1a339d461dddcefc538bf?s=40&amp;d=http%3A%2F%2Fblog.shoplet.com%2Fwp-content%2Fthemes%2Ftoolbox%2Fimg%2Fshoplet-grav.jpg%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />					<cite class="fn"><a href='http://www.recognizedexpert.com' rel='external nofollow' class='url'>Josh Sommers</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-content"><p>How cool!  I would love a post-it table! :D</p>
+</div>
+			</footer>
+
+			
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-##  -->
+
+	</li>
+	<li class="comment even thread-even depth-1" id="li-comment-15597">
+		<article id="comment-15597" class="comment">
+			
+            	<div class="comment-meta commentmetadata">
+					<a href="http://blog.shoplet.com/office-supplies/post-it-the-2nd-generation/comment-page-1/#comment-15597"><time pubdate datetime="2008-07-03T03:07:25+00:00">
+					July 3, 2008 at 3:07 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+                <footer>
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/8bf8d6b7493b8ca1dc7a619f34800ca8?s=40&amp;d=http%3A%2F%2Fblog.shoplet.com%2Fwp-content%2Fthemes%2Ftoolbox%2Fimg%2Fshoplet-grav.jpg%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />					<cite class="fn"><a href='http://www.light-links.net/' rel='external nofollow' class='url'>David from Light Links</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-content"><p>I love the transparent and pocket post its. I was thinking it would be good to have dry-wipe post-its too (I Googled for them but couldn&#8217;t find any, maybe Shoplet could be the first there?)</p>
+</div>
+			</footer>
+
+			
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-##  -->
+
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-15598">
+		<article id="comment-15598" class="comment">
+			
+            	<div class="comment-meta commentmetadata">
+					<a href="http://blog.shoplet.com/office-supplies/post-it-the-2nd-generation/comment-page-1/#comment-15598"><time pubdate datetime="2008-07-06T16:18:47+00:00">
+					July 6, 2008 at 4:18 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+                <footer>
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/c481b66cc57c2aaf5acb24fc3fa9d783?s=40&amp;d=http%3A%2F%2Fblog.shoplet.com%2Fwp-content%2Fthemes%2Ftoolbox%2Fimg%2Fshoplet-grav.jpg%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />					<cite class="fn"><a href='http://solinkable.com' rel='external nofollow' class='url'>SoLinkable</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-content"><p>I want the pock-it post-it note. That would come in very handy&#8230;</p>
+</div>
+			</footer>
+
+			
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-##  -->
+
+	</li>
+	<li class="comment even thread-even depth-1" id="li-comment-15603">
+		<article id="comment-15603" class="comment">
+			
+            	<div class="comment-meta commentmetadata">
+					<a href="http://blog.shoplet.com/office-supplies/post-it-the-2nd-generation/comment-page-1/#comment-15603"><time pubdate datetime="2008-07-10T12:20:41+00:00">
+					July 10, 2008 at 12:20 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+                <footer>
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/b1a553023a653a8e5b21b7d8be589988?s=40&amp;d=http%3A%2F%2Fblog.shoplet.com%2Fwp-content%2Fthemes%2Ftoolbox%2Fimg%2Fshoplet-grav.jpg%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />					<cite class="fn"><a href='http://www.officeprofiles.com' rel='external nofollow' class='url'>Marvin</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-content"><p>those wierd pord its are really funky. keyboards are pretty cool too &#8211; not sure how easy they would be to use though.</p>
+</div>
+			</footer>
+
+			
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-##  -->
+
+	</li>
+	<li class="post pingback">
+		<p>Pingback: <a href='http://blog.shoplet.com/office-supplies/post-it-a-cinematographic-masterpiece/' rel='external nofollow' class='url'>Post It - A Cinematographic Masterpiece</a></p>
+	</li>
+	<li class="post pingback">
+		<p>Pingback: <a href='http://blog.shoplet.com/office-supplies/post-it-in-advertisements/' rel='external nofollow' class='url'>Post it in Advertisements</a></p>
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-15632">
+		<article id="comment-15632" class="comment">
+			
+            	<div class="comment-meta commentmetadata">
+					<a href="http://blog.shoplet.com/office-supplies/post-it-the-2nd-generation/comment-page-1/#comment-15632"><time pubdate datetime="2009-10-09T03:34:45+00:00">
+					October 9, 2009 at 3:34 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+                <footer>
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/2ebb072095965246a9681d959a96732c?s=40&amp;d=http%3A%2F%2Fblog.shoplet.com%2Fwp-content%2Fthemes%2Ftoolbox%2Fimg%2Fshoplet-grav.jpg%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />					<cite class="fn"><a href='http://www.tiffany.us.com/' rel='external nofollow' class='url'>tiffany and co</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-content"><p>Thanks for your information, i have read it, very good！</p>
+</div>
+			</footer>
+
+			
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-##  -->
+
+	</li>
+	<li class="post pingback">
+		<p>Pingback: <a href='http://blogs.howstuffworks.com/2008/07/08/interesting-reading-113/' rel='external nofollow' class='url'>Interesting Reading&#8230; &#8211; The Blogs at HowStuffWorks</a></p>
+	</li>
+	<li class="post pingback">
+		<p>Pingback: <a href='http://blog.shoplet.com/office-supplies/office-supplies-art-not-just-the-normal-stuff/' rel='external nofollow' class='url'>Shoplet Office Supplies Blog &raquo; Office Supplies Art: Not Just the Normal STuff.</a></p>
+	</li>
+		</ol>
+
+		
+	
+									
+</div><!-- #comments -->
+			
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+
+		<div id="secondary" class="widget-area" role="complementary">
+        <form role="search" method="get" id="searchform" action="http://blog.shoplet.com/" >
+	<div><label class="screen-reader-text" for="s">Search for:</label>
+	<input type="text" value="" name="s" id="s" placeholder="Search Blog" class="placeholder" />
+	<button type="submit" id="searchsubmit" value="Search" >SEARCH</button>
+	</div>
+	</form>        <img src="http://blog.shoplet.com/wp-content/themes/toolbox/img/sidebar-top.png" width="325" height="4"  />
+        <div id="sidebar">	
+			<aside id="text-4" class="widget widget_text"><h1 class="widget-title">Connect With Us</h1>			<div class="textwidget"><p><form action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=office-supplies-blog', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><p style="font-family: 'Oswald', Impact, Helvetica, Arial, sans-serif; font-size: 14px;">Read the Shoplet Blog via Email</p><p style="font-size: 10px;">Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></p><p><input type="text" style="width:140px" name="email"/></p><input type="hidden" value="office-supplies-blog" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" value="Subscribe" /></form>
+</p>
+
+<ul class="side-ul">
+<li><a href="http://www.facebook.com/shoplet/"><img src="http://blog.shoplet.com/wp-content/uploads/2011/11/new-facebook.png" border="0" height="61" width="61"/></a>
+<a href="http://feeds.feedburner.com/office-supplies-blog"><img src="http://blog.shoplet.com/wp-content/uploads/2011/11/new-rss.png" border="0" height="61" width="61" /></a>
+<a href="http://www.twitter.com/shoplet/"><img src="http://blog.shoplet.com/wp-content/uploads/2011/11/new-twitter.png" border="0" height="61" width="61" /></a>
+</li></ul>
+
+<ul class="side-ul">
+<li><a href="http://iloveofficesupplies.tumblr.com/"><img src="http://blog.shoplet.com/wp-content/uploads/2011/11/new-tumblr.png" border="0" height="47" width="47" /></a>
+<a href="http://www.flickr.com/photos/shoplet/"><img src="http://blog.shoplet.com/wp-content/uploads/2011/11/new-flickr.png" border="0" height="47" width="47" /></a>
+<a href="http://pinterest.com/gracepoulsen/"><img src="http://blog.shoplet.com/wp-content/uploads/2011/11/new-pinterest.png" border="0" height="47" width="47" /></a>
+<a href="http://www.linkedin.com/companies/shoplet.com"><img src="http://blog.shoplet.com/wp-content/uploads/2011/11/new-linked-in.png" border="0" height="47" width="47" /></a></li></ul>
+</div>
+		</aside><aside id="text-8" class="widget widget_text"><h1 class="widget-title">Planking Red Stapler</h1>			<div class="textwidget"><div style="height: 262px; margin-left: -45px;"><a href="http://blog.shoplet.com/planking-stapler/"><img src="http://blog.shoplet.com/wp-content/uploads/2012/04/Shoplet.png"></a></div></div>
+		</aside><aside id="text-7" class="widget widget_text"><h1 class="widget-title">Be a Shoplet Product Reviewer</h1>			<div class="textwidget"><div style="height: 262px; margin-left: -45px;"><a href="http://www.facebook.com/Shoplet?sk=app_203351739677351" target="_blank"><img src="http://blog.shoplet.com/wp-content/uploads/2011/11/product-review-facebook-banner.png"></a></div></div>
+		</aside><aside id="categories-3" class="widget widget_categories"><h1 class="widget-title">Categories</h1>		<ul>
+	<li class="cat-item cat-item-10"><a href="http://blog.shoplet.com/category/buying-guides/" title="View all posts filed under Buying Guides">Buying Guides</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="http://blog.shoplet.com/category/giveaways/" title="View all posts filed under Giveaways">Giveaways</a>
+</li>
+	<li class="cat-item cat-item-77"><a href="http://blog.shoplet.com/category/green-office/" title="View all posts filed under Green Office">Green Office</a>
+</li>
+	<li class="cat-item cat-item-883"><a href="http://blog.shoplet.com/category/work-better/healthy-office/" title="View all posts filed under Healthy Office">Healthy Office</a>
+</li>
+	<li class="cat-item cat-item-873"><a href="http://blog.shoplet.com/category/office-design/" title="View all posts filed under Office Design">Office Design</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="http://blog.shoplet.com/category/office-fashion/" title="View all posts filed under Office Fashion">Office Fashion</a>
+</li>
+	<li class="cat-item cat-item-367"><a href="http://blog.shoplet.com/category/office-fun/" title="View all posts filed under Office Fun">Office Fun</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="http://blog.shoplet.com/category/office-furniture/" title="View all posts filed under Office Furniture">Office Furniture</a>
+</li>
+	<li class="cat-item cat-item-875"><a href="http://blog.shoplet.com/category/office-ideas/" title="View all posts filed under Office Ideas">Office Ideas</a>
+</li>
+	<li class="cat-item cat-item-879"><a href="http://blog.shoplet.com/category/work-better/office-safety/" title="View all posts filed under Office Safety">Office Safety</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://blog.shoplet.com/category/office-supplies/" title="View all posts filed under Office Supplies">Office Supplies</a>
+</li>
+	<li class="cat-item cat-item-881"><a href="http://blog.shoplet.com/category/office-technology/" title="View all posts filed under Office Technology">Office Technology</a>
+</li>
+	<li class="cat-item cat-item-132"><a href="http://blog.shoplet.com/category/work-better/office-tips/" title="View all posts filed under Office Tips">Office Tips</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://blog.shoplet.com/category/office-trend/" title="View all posts filed under Office Trend">Office Trend</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="http://blog.shoplet.com/category/work-better/organization-and-efficiency/" title="View all posts filed under Organization &amp; Efficiency">Organization &amp; Efficiency</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="http://blog.shoplet.com/category/poll/" title="View all posts filed under Poll">Poll</a>
+</li>
+	<li class="cat-item cat-item-160"><a href="http://blog.shoplet.com/category/sales-tips/" title="View all posts filed under Sales Tips">Sales Tips</a>
+</li>
+	<li class="cat-item cat-item-58"><a href="http://blog.shoplet.com/category/school-supplies/" title="View all posts filed under School Supplies">School Supplies</a>
+</li>
+	<li class="cat-item cat-item-50"><a href="http://blog.shoplet.com/category/shoplet-activities/" title="View all posts filed under Shoplet Activities">Shoplet Activities</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://blog.shoplet.com/category/work-better/" title="View all posts filed under Work Better">Work Better</a>
+</li>
+		</ul>
+</aside><aside id="tag_cloud-3" class="widget widget_tag_cloud"><h1 class="widget-title">Tags</h1><div class="tagcloud"><a href='http://blog.shoplet.com/tag/avery/' class='tag-link-76' title='32 topics' style='font-size: 11.95652173913pt;'>avery</a>
+<a href='http://blog.shoplet.com/tag/bic/' class='tag-link-181' title='20 topics' style='font-size: 8.9130434782609pt;'>bic</a>
+<a href='http://blog.shoplet.com/tag/binder-clips/' class='tag-link-183' title='30 topics' style='font-size: 11.5pt;'>binder clips</a>
+<a href='http://blog.shoplet.com/tag/calendars/' class='tag-link-219' title='25 topics' style='font-size: 10.282608695652pt;'>calendars</a>
+<a href='http://blog.shoplet.com/tag/crayons/' class='tag-link-331' title='36 topics' style='font-size: 12.717391304348pt;'>crayons</a>
+<a href='http://blog.shoplet.com/tag/eco-friendly/' class='tag-link-78' title='31 topics' style='font-size: 11.804347826087pt;'>eco-friendly</a>
+<a href='http://blog.shoplet.com/tag/envelopes/' class='tag-link-420' title='26 topics' style='font-size: 10.586956521739pt;'>envelopes</a>
+<a href='http://blog.shoplet.com/tag/erasers/' class='tag-link-1321' title='28 topics' style='font-size: 11.04347826087pt;'>erasers</a>
+<a href='http://blog.shoplet.com/tag/gadgets/' class='tag-link-27' title='23 topics' style='font-size: 9.8260869565217pt;'>gadgets</a>
+<a href='http://blog.shoplet.com/tag/geek/' class='tag-link-971' title='22 topics' style='font-size: 9.5217391304348pt;'>geek</a>
+<a href='http://blog.shoplet.com/tag/green-office/' class='tag-link-77' title='45 topics' style='font-size: 14.086956521739pt;'>Green Office</a>
+<a href='http://blog.shoplet.com/tag/highlighters/' class='tag-link-341' title='22 topics' style='font-size: 9.5217391304348pt;'>highlighters</a>
+<a href='http://blog.shoplet.com/tag/keyboards/' class='tag-link-37' title='22 topics' style='font-size: 9.5217391304348pt;'>keyboards</a>
+<a href='http://blog.shoplet.com/tag/notebooks/' class='tag-link-542' title='65 topics' style='font-size: 16.521739130435pt;'>notebooks</a>
+<a href='http://blog.shoplet.com/tag/notepads/' class='tag-link-615' title='21 topics' style='font-size: 9.2173913043478pt;'>notepads</a>
+<a href='http://blog.shoplet.com/tag/office-chairs/' class='tag-link-62' title='25 topics' style='font-size: 10.282608695652pt;'>office chairs</a>
+<a href='http://blog.shoplet.com/tag/office-desk/' class='tag-link-225' title='38 topics' style='font-size: 13.021739130435pt;'>office desk</a>
+<a href='http://blog.shoplet.com/tag/office-fashion/' class='tag-link-22' title='49 topics' style='font-size: 14.695652173913pt;'>Office Fashion</a>
+<a href='http://blog.shoplet.com/tag/office-fun/' class='tag-link-367' title='20 topics' style='font-size: 8.9130434782609pt;'>Office Fun</a>
+<a href='http://blog.shoplet.com/tag/office-humor/' class='tag-link-73' title='70 topics' style='font-size: 16.978260869565pt;'>office humor</a>
+<a href='http://blog.shoplet.com/tag/office-needs/' class='tag-link-18' title='31 topics' style='font-size: 11.804347826087pt;'>Office Needs</a>
+<a href='http://blog.shoplet.com/tag/office-supplies/' class='tag-link-6' title='26 topics' style='font-size: 10.586956521739pt;'>Office Supplies</a>
+<a href='http://blog.shoplet.com/tag/office-supplies-art/' class='tag-link-43' title='149 topics' style='font-size: 22pt;'>office supplies art</a>
+<a href='http://blog.shoplet.com/tag/office-tips/' class='tag-link-132' title='25 topics' style='font-size: 10.282608695652pt;'>Office Tips</a>
+<a href='http://blog.shoplet.com/tag/organization/' class='tag-link-1531' title='61 topics' style='font-size: 16.065217391304pt;'>organization</a>
+<a href='http://blog.shoplet.com/tag/paper-art/' class='tag-link-486' title='29 topics' style='font-size: 11.347826086957pt;'>paper art</a>
+<a href='http://blog.shoplet.com/tag/paper-clips/' class='tag-link-189' title='70 topics' style='font-size: 16.978260869565pt;'>paper clips</a>
+<a href='http://blog.shoplet.com/tag/paper-crafts/' class='tag-link-48' title='18 topics' style='font-size: 8.304347826087pt;'>paper crafts</a>
+<a href='http://blog.shoplet.com/tag/pencils/' class='tag-link-141' title='106 topics' style='font-size: 19.717391304348pt;'>pencils</a>
+<a href='http://blog.shoplet.com/tag/pencil-sharpener/' class='tag-link-414' title='37 topics' style='font-size: 12.869565217391pt;'>pencil sharpener</a>
+<a href='http://blog.shoplet.com/tag/pens/' class='tag-link-436' title='70 topics' style='font-size: 16.978260869565pt;'>pens</a>
+<a href='http://blog.shoplet.com/tag/pentel/' class='tag-link-520' title='20 topics' style='font-size: 8.9130434782609pt;'>pentel</a>
+<a href='http://blog.shoplet.com/tag/pilot/' class='tag-link-252' title='17 topics' style='font-size: 8pt;'>pilot</a>
+<a href='http://blog.shoplet.com/tag/post-it-notes/' class='tag-link-721' title='65 topics' style='font-size: 16.521739130435pt;'>post it notes</a>
+<a href='http://blog.shoplet.com/tag/post-it-notes-art/' class='tag-link-1001' title='20 topics' style='font-size: 8.9130434782609pt;'>post it notes art</a>
+<a href='http://blog.shoplet.com/tag/recycled-products/' class='tag-link-1051' title='25 topics' style='font-size: 10.282608695652pt;'>recycled products</a>
+<a href='http://blog.shoplet.com/tag/rubber-bands/' class='tag-link-1181' title='35 topics' style='font-size: 12.565217391304pt;'>rubber bands</a>
+<a href='http://blog.shoplet.com/tag/rulers/' class='tag-link-195' title='37 topics' style='font-size: 12.869565217391pt;'>rulers</a>
+<a href='http://blog.shoplet.com/tag/scissors/' class='tag-link-1251' title='36 topics' style='font-size: 12.717391304348pt;'>scissors</a>
+<a href='http://blog.shoplet.com/tag/scotch-tape/' class='tag-link-192' title='18 topics' style='font-size: 8.304347826087pt;'>scotch tape</a>
+<a href='http://blog.shoplet.com/tag/sharpie/' class='tag-link-439' title='59 topics' style='font-size: 15.913043478261pt;'>sharpie</a>
+<a href='http://blog.shoplet.com/tag/staplers/' class='tag-link-188' title='53 topics' style='font-size: 15.152173913043pt;'>staplers</a>
+<a href='http://blog.shoplet.com/tag/thumbtacks/' class='tag-link-1401' title='22 topics' style='font-size: 9.5217391304348pt;'>thumbtacks</a>
+<a href='http://blog.shoplet.com/tag/tutorials/' class='tag-link-44' title='47 topics' style='font-size: 14.391304347826pt;'>tutorials</a>
+<a href='http://blog.shoplet.com/tag/usb/' class='tag-link-28' title='38 topics' style='font-size: 13.021739130435pt;'>usb</a></div>
+</aside><aside id="archives-3" class="widget widget_archive"><h1 class="widget-title">Archives</h1>		<select name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> <option value="">Select Month</option> 	<option value='http://blog.shoplet.com/2012/05/'> May 2012 </option>
+	<option value='http://blog.shoplet.com/2012/04/'> April 2012 </option>
+	<option value='http://blog.shoplet.com/2012/03/'> March 2012 </option>
+	<option value='http://blog.shoplet.com/2012/02/'> February 2012 </option>
+	<option value='http://blog.shoplet.com/2012/01/'> January 2012 </option>
+	<option value='http://blog.shoplet.com/2011/12/'> December 2011 </option>
+	<option value='http://blog.shoplet.com/2011/11/'> November 2011 </option>
+	<option value='http://blog.shoplet.com/2011/10/'> October 2011 </option>
+	<option value='http://blog.shoplet.com/2011/09/'> September 2011 </option>
+	<option value='http://blog.shoplet.com/2011/08/'> August 2011 </option>
+	<option value='http://blog.shoplet.com/2011/07/'> July 2011 </option>
+	<option value='http://blog.shoplet.com/2011/06/'> June 2011 </option>
+	<option value='http://blog.shoplet.com/2011/05/'> May 2011 </option>
+	<option value='http://blog.shoplet.com/2011/04/'> April 2011 </option>
+	<option value='http://blog.shoplet.com/2011/03/'> March 2011 </option>
+	<option value='http://blog.shoplet.com/2011/02/'> February 2011 </option>
+	<option value='http://blog.shoplet.com/2011/01/'> January 2011 </option>
+	<option value='http://blog.shoplet.com/2010/12/'> December 2010 </option>
+	<option value='http://blog.shoplet.com/2010/11/'> November 2010 </option>
+	<option value='http://blog.shoplet.com/2010/10/'> October 2010 </option>
+	<option value='http://blog.shoplet.com/2010/09/'> September 2010 </option>
+	<option value='http://blog.shoplet.com/2010/08/'> August 2010 </option>
+	<option value='http://blog.shoplet.com/2010/07/'> July 2010 </option>
+	<option value='http://blog.shoplet.com/2010/06/'> June 2010 </option>
+	<option value='http://blog.shoplet.com/2010/05/'> May 2010 </option>
+	<option value='http://blog.shoplet.com/2010/04/'> April 2010 </option>
+	<option value='http://blog.shoplet.com/2010/03/'> March 2010 </option>
+	<option value='http://blog.shoplet.com/2010/02/'> February 2010 </option>
+	<option value='http://blog.shoplet.com/2010/01/'> January 2010 </option>
+	<option value='http://blog.shoplet.com/2009/12/'> December 2009 </option>
+	<option value='http://blog.shoplet.com/2009/11/'> November 2009 </option>
+	<option value='http://blog.shoplet.com/2009/10/'> October 2009 </option>
+	<option value='http://blog.shoplet.com/2009/09/'> September 2009 </option>
+	<option value='http://blog.shoplet.com/2009/08/'> August 2009 </option>
+	<option value='http://blog.shoplet.com/2009/07/'> July 2009 </option>
+	<option value='http://blog.shoplet.com/2009/06/'> June 2009 </option>
+	<option value='http://blog.shoplet.com/2009/05/'> May 2009 </option>
+	<option value='http://blog.shoplet.com/2009/04/'> April 2009 </option>
+	<option value='http://blog.shoplet.com/2009/03/'> March 2009 </option>
+	<option value='http://blog.shoplet.com/2009/02/'> February 2009 </option>
+	<option value='http://blog.shoplet.com/2009/01/'> January 2009 </option>
+	<option value='http://blog.shoplet.com/2008/12/'> December 2008 </option>
+	<option value='http://blog.shoplet.com/2008/11/'> November 2008 </option>
+	<option value='http://blog.shoplet.com/2008/10/'> October 2008 </option>
+	<option value='http://blog.shoplet.com/2008/09/'> September 2008 </option>
+	<option value='http://blog.shoplet.com/2008/08/'> August 2008 </option>
+	<option value='http://blog.shoplet.com/2008/07/'> July 2008 </option>
+	<option value='http://blog.shoplet.com/2008/06/'> June 2008 </option>
+	<option value='http://blog.shoplet.com/2008/05/'> May 2008 </option>
+	<option value='http://blog.shoplet.com/2008/03/'> March 2008 </option>
+	<option value='http://blog.shoplet.com/2008/02/'> February 2008 </option>
+	<option value='http://blog.shoplet.com/2008/01/'> January 2008 </option>
+	<option value='http://blog.shoplet.com/2007/12/'> December 2007 </option>
+	<option value='http://blog.shoplet.com/2007/11/'> November 2007 </option>
+	<option value='http://blog.shoplet.com/2007/10/'> October 2007 </option>
+	<option value='http://blog.shoplet.com/2007/09/'> September 2007 </option>
+ </select>
+</aside><aside id="text-5" class="widget widget_text"><h1 class="widget-title">Shopping Links</h1>			<div class="textwidget"><ul class="side-ul">
+<li><a href="http://www.shoplet.com/janitorial-supplies/">Janitorial Supplies</a></li>
+<li><a href="http://www.shoplet.com/paper/">Copy Paper</a></li>
+<li><a href="http://www.shoplet.com/">Business Products</a></li>
+<li><a href="http://www.shoplet.com/furniture/">Office Furniture</a></li>
+<li><a href="http://www.shoplet.com/search/supplyfinder">Ink and Toner Supplies</a></li>
+<li><a href="http://www.shoplet.com/shop-green/">Recycled Office Products</a></li>
+<li><a href="http://www.shoplet.com/">Discount Office Supplies</a></li>
+</ul></div>
+		</aside><aside id="text-6" class="widget widget_text"><h1 class="widget-title">Blogs We Love</h1>			<div class="textwidget"><ul class="side-ul">
+<li><a href="http://pentelblog.com/">Pentel Blog</a></li>
+<li><a href="http://blog.sharpie.com/">Sharpie Blog</a></li>
+<li><a href="http://theofficestylist.com/">Office Stylist</a></li>
+<li><a href="http://corporette.com/">Corporette</a></li>
+<li><a href="http://www.jobacle.com/">Jobacle</a>.</li>
+<li><a href="http://www.secretary4life.com/">Secretary 4 Life</a></li>
+<li><a href="http://www.officefreaks.com/">Office Freaks</a></li>
+<li><a href="http://www.officesnapshots.com//">Office Snapshots</a></li>
+<li><a href="http://blog.shoplet.com/blogs-we-love/"><b>See More</b></a></li>
+</ul></div>
+		</aside>        </div><!--#sidebar-->
+        <img src="http://blog.shoplet.com/wp-content/themes/toolbox/img/sidebar-bottom.png" width="325" height="6"  />
+		</div><!-- #secondary .widget-area -->
+
+		
+	</div><!-- #main -->
+
+</div><!-- #page -->
+
+
+
+
+
+
+
+<div id="clear"></div>
+	<footer id="colophon" role="contentinfo">
+            <div class="nav-border-top"></div>
+			<div class="nav-border-bottom"></div>
+    <div id="footer-content">
+			<div id="site-generator">
+            <p id="copyright-info"><a href="http://shoplet.com" rel="generator">Shoplet.com &copy; 2012. Visit Shoplet.com and find everything for your business.</a></p>
+            <div id="clear"></div>
+            
+    <div class="footerinside">
+					</div><!-- end footer left -->
+
+	<div class="footerinside">
+		
+			</div><!-- end footer central -->
+
+	<div class="footerinsideright">
+		
+			</div><!-- end footer right -->
+            
+            
+			</div>
+     </div>
+	</footer><!-- #colophon -->
+<script src="http://blog.shoplet.com/wp-content/themes/toolbox/placeholder.js" type="text/javascript"></script>
+<script type="text/javascript">
+$('#searchtext,#author,#email,#url,#comment,#s').placeholder();
+</script>
+
+<!--[if IE 7]>
+<style>
+#post .entry-header {
+	top: -84px;
+}
+</style>
+<![endif]-->
+</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pollsL10n = {
+	ajax_url: "http://blog.shoplet.com/wp-content/plugins/wp-polls/wp-polls.php",
+	text_wait: "Your last request is still being processed. Please wait a while ...",
+	text_valid: "Please choose a valid poll answer.",
+	text_multiple: "Maximum number of choices allowed: ",
+	show_loading: "1",
+	show_fading: "1"
+};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://blog.shoplet.com/wp-content/plugins/wp-polls/polls-js.js?ver=2.50'></script>
+
+</body>
+</html>

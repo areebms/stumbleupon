@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>JetPunk.com | Name the NFL Football Teams Quiz</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<META name="description" content="How many NFL football teams do you know? In this quiz, you've got 4:00 to name as many as you can. Go!">
+
+		<link rel="stylesheet" href="/css/default.css?v=005">
+
+		<script type="text/javascript" src="/js/jquery-1.4.4.min.js?v=003"></script>
+		<script type="text/javascript" src="/js/common.js?v=003"></script>
+					<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) {return;}
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+		<link rel="stylesheet" href="/css/tquiz.css?v=003" />
+	<script type="text/javascript" src="/js/tquiz.js?v=004"></script>
+	<script type="text/javascript" src="/js/replace-foreign.js?v=003"></script>
+		<style type="text/css">
+			#quiz table { border-collapse: collapse; }
+#quiz div.col { float: left; margin: 0 5px 0 0;  }
+#quiz td { border: 1px solid #ccc; }
+#quiz td div { padding: 3px 8px; text-align: center; width: 155px; height: 16px; }
+#quiz th { color: white; padding: 3px 8px; }
+#quiz div.sp { height: 10px; }
+
+.afce { background-color: #B39437; border: 1px solid #B39437; }
+.afcn { background-color: #B39437; border: 1px solid #B39437; }
+.afcs { background-color: #B39437; border: 1px solid #B39437; }
+.afcw { background-color: #B39437; border: 1px solid #B39437; }
+.nfce { background-color: #333; border: 1px solid #333; }
+.nfcn { background-color: #333; border: 1px solid #333; }
+.nfcs { background-color: #333; border: 1px solid #333; }
+.nfcw { background-color: #333; border: 1px solid #333; }		</style>
+
+		<script type="text/javascript">	
+			_page = new Page();
+			_user = null;
+_page.enableUser = true;
+
+_page.readyNext = tQuizReady;
+var q = new Quiz();
+q.id = 4;q.seconds = 240;q.answers = {
+	"296" : new Answer("296", ["Buffalo Bills"], ["BILLS$"]),
+	"297" : new Answer("297", ["New England Patriots"], ["PATRIOTS$"]),
+	"298" : new Answer("298", ["New York Jets"], ["JETS$"]),
+	"299" : new Answer("299", ["Miami Dolphins"], ["DOLPHINS$"]),
+	"300" : new Answer("300", ["Pittsburgh Steelers"], ["STE[AE]LERS$"]),
+	"301" : new Answer("301", ["Baltimore Ravens"], ["RAVENS$"]),
+	"302" : new Answer("302", ["Cleveland Browns"], ["BROWNS$"]),
+	"303" : new Answer("303", ["Cincinnati Bengals"], ["BENG(LE|EL|AL)S$"]),
+	"304" : new Answer("304", ["Tennessee Titans"], ["TITANS$"]),
+	"305" : new Answer("305", ["Jacksonville Jaguars"], ["JAG[UA][UA]RS$"]),
+	"306" : new Answer("306", ["Indianapolis Colts"], ["COLTS$"]),
+	"307" : new Answer("307", ["Houston Texans"], ["TEXANS$"]),
+	"308" : new Answer("308", ["Denver Broncos"], ["BRONCOE?S$"]),
+	"309" : new Answer("309", ["San Diego Chargers"], ["CHARGERS$"]),
+	"310" : new Answer("310", ["Oakland Raiders"], ["RAIDERS$"]),
+	"311" : new Answer("311", ["Kansas City Chiefs"], ["CH(IE|EI)FS$"]),
+	"312" : new Answer("312", ["New York Giants"], ["GIANTS$"]),
+	"313" : new Answer("313", ["Washington Redskins"], ["SKINS$"]),
+	"314" : new Answer("314", ["Dallas Cowboys"], ["BOYS$"]),
+	"315" : new Answer("315", ["Philadelphia Eagles"], ["EAGLES$"]),
+	"316" : new Answer("316", ["Green Bay Packers"], ["PACKERS$"]),
+	"317" : new Answer("317", ["Chicago Bears"], ["BEARS$"]),
+	"318" : new Answer("318", ["Minnesota Vikings"], ["VIKINGS$"]),
+	"319" : new Answer("319", ["Detroit Lions"], ["LIONS$"]),
+	"320" : new Answer("320", ["Carolina Panthers"], ["PANTHERS$"]),
+	"321" : new Answer("321", ["Tampa Bay Buccaneers"], ["BUC[CK]?S$","BU[CK]+[AEI]NEERS$"]),
+	"322" : new Answer("322", ["New Orleans Saints"], ["SAINTS$"]),
+	"323" : new Answer("323", ["Atlanta Falcons"], ["FALCONS$"]),
+	"324" : new Answer("324", ["Arizona Cardinals"], ["CARDS$","CARDINALS$"]),
+	"325" : new Answer("325", ["San Francisco 49ers"], ["49ERS$","NINERS$"]),
+	"326" : new Answer("326", ["Seattle Seahawks"], ["SEAHAWKS$"]),
+	"327" : new Answer("327", ["St. Louis Rams"], ["RAMS$"])
+};
+q.cells = [
+	new ACell("c1","314"),
+	new ACell("c2","312"),
+	new ACell("c3","315"),
+	new ACell("c4","313"),
+	new ACell("c5","317"),
+	new ACell("c6","319"),
+	new ACell("c7","316"),
+	new ACell("c8","318"),
+	new ACell("c9","323"),
+	new ACell("c10","320"),
+	new ACell("c11","322"),
+	new ACell("c12","321"),
+	new ACell("c13","324"),
+	new ACell("c14","325"),
+	new ACell("c15","326"),
+	new ACell("c16","327"),
+	new ACell("c17","296"),
+	new ACell("c18","299"),
+	new ACell("c19","297"),
+	new ACell("c20","298"),
+	new ACell("c21","301"),
+	new ACell("c22","303"),
+	new ACell("c23","302"),
+	new ACell("c24","300"),
+	new ACell("c25","307"),
+	new ACell("c26","306"),
+	new ACell("c27","305"),
+	new ACell("c28","304"),
+	new ACell("c29","308"),
+	new ACell("c30","311"),
+	new ACell("c31","310"),
+	new ACell("c32","309")
+];
+
+
+statsW.headers = [ "Team" ];
+statsW.template = [ 0 ];
+		</script>
+
+    </head>
+    <body onkeydown="q.bodyKeyDown(event)">
+        <div id="content">
+			<div id="top">
+				<div id="tcol1">
+					<div class="fish"><a href="/"><img src="/img/fish.gif" alt="fish"></a></div>
+					<div class="logo"><a href="/"><img src="/img/logo.gif" alt="logo"></a></div>
+					<div class="f1"><div class="fb-like" href="http://www.facebook.com/pages/JetPunk/128523970986" data-send="true" data-width="600" data-show-faces="false"></div></div>				</div>
+				<div id="tcol2">
+										<div id="accountIn">
+						<div id="accountIn1"></div>
+						<div id="accountIn2"><a href="/user/profile.php">Profile</a> | <a href="/user/stats.php">Stats</a> | <span id="logout" class="w">Logout</span></div>
+					</div>
+					<div id="accountOut">
+						<span id="login" class="w">Login</span> | <span id="createAccount" class="w">Create Account</span>
+					</div>
+											<div id="untimed"><a href="javascript:void(0)" onclick="q.stopTimer()">[Stop Timer]</a></div>
+									</div>
+				<div id="divSearch">
+					<input type="text" value="Search quizzes" id="txtSearch"><input type="button" id="btnSearch" value="Go">
+				</div>
+			</div>
+			<div id="main">
+				<noscript>
+					<div id="noJs">Javascript should be enabled for this site to work correctly.</div>
+				</noscript>
+
+				<div id="lowIe">
+					You are using Internet Explorer version 6 or earlier.  Unfortunately, this content may not work correctly with your browser.
+					<p>We recommend using <a href="http://www.mozilla.com/firefox/">Firefox</a>, Chrome or upgrading to Internet Explorer version 7 or higher.</p>
+				</div>
+
+				<div id="col1"><script type="text/javascript">
+	var _qBackup = q;
+</script>
+<div id="adLeader">
+	<script type="text/javascript"><!--
+	google_ad_client = "pub-0994084661919749";
+	/* 728x90, created 2/7/11 */
+	google_ad_slot = "0298548593";
+	google_ad_width = 728;
+	google_ad_height = 90;
+	//-->
+	</script>
+	<script type="text/javascript"
+	src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+	</script>
+
+
+</div>
+<script type="text/javascript">
+	var q = _qBackup;
+</script>
+<div id="adWithUs">
+	<a href="/advertise-on-jetpunk.php">Advertise on JetPunk!</a>
+</div>
+
+<div id="row2">
+	<table cellpadding="0" cellspacing="0">
+		<tr>
+					<td valign="top">
+				<div id="thumbContainer"><img alt="thumb" src="/img/thumbs/4.jpg"></div>
+				<div id="thumbAttrib">image credit</div>			</td>
+				<td valign="top">
+			<div id="rightOfThumb">
+				<h1>Name the NFL Football Teams Quiz</h1>
+				<div id="instructions">
+					How many NFL teams can you name?  Type a team name into the box. The city name is not required.				</div>
+				<div id="controls">
+					<table cellpadding="0" cellspacing="0">
+						<tr>
+						<td valign="top">
+							<div id="timerOuter">
+								<div id="timer"></div>
+								<div id="giveUp"><a href="javascript:void(0)" onclick="q.finish()">Give Up?</a></div>
+							</div>
+						</td>
+						<td valign="top">
+							<div id="controlsRight">
+								<div id="enter">
+									Enter team name here:									<span class="helpLink"><a href="javascript:void(0)" onclick="displayHelp()">?</a>
+								</div>
+								<div style="clear:both;">
+									<input id="txtUser" type="text" onkeyup="typing(event)">
+								</div>
+								<div style="clear:both;">
+									<div id="numGuessed"></div>
+									<div id="alreadyGuessed"></div>
+								</div>
+							</div>
+						</td>
+						</tr>
+					</table>	
+				</div>
+			</div>
+		</td>
+		</tr>
+	</table>	
+</div> <!-- end row2 -->
+
+		<div id="statBox1">
+			<div class="tp"></div>
+			<div class="bd">
+				<div class="h">Scoring</div>
+				<div id="statLine1"></div>
+				<div id="statLine2"></div>
+				<div id="statLine3"></div>
+				<div id="statLine4"></div>		
+			</div>
+			<div class="bt"></div>
+		</div>
+	<div id="likeBox"><div class="a"><a target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.jetpunk.com%2Fquizzes%2Fname-pro-football-teams.php%3Flx%3Dfb&t=Name+the+NFL+Football+Teams+Quiz"><img src="/img/fb.gif"></a></div><div class="b"><div class="b1">Like this Quiz?</div><div class="b2"><a target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.jetpunk.com%2Fquizzes%2Fname-pro-football-teams.php%3Flx%3Dfb&t=Name+the+NFL+Football+Teams+Quiz">Share it</a> with your friends on Facebook!</div></div></div><div style="clear:both"></div>		<div id="postGameControls">
+			<b>Keep scrolling down for answers and more stats...</b>
+			<div class="a"><input type="button" value="Take Quiz Again" id="btnRetake"></div>
+		</div>
+	
+<div style="clear: both;"></div>
+
+<div id="scrollSpacer"></div>
+
+<div id="quiz">
+<div class="col">
+	<table cellpadding="0" cellspacing="0">
+		<tr><th class="nfce">NFC East</th></tr>
+		<tr><td><div id="c1"></div></td></tr>
+		<tr><td><div id="c2"></div></td></tr>
+		<tr><td><div id="c3"></div></td></tr>
+		<tr><td><div id="c4"></div></td></tr>
+	</table>
+	<div class="sp"></div>
+	<table cellpadding="0" cellspacing="0">
+		<tr><th class="nfcn">NFC North</th></tr>
+		<tr><td><div id="c5"></div></td></tr>
+		<tr><td><div id="c6"></div></td></tr>
+		<tr><td><div id="c7"></div></td></tr>
+		<tr><td><div id="c8"></div></td></tr>
+	</table>
+</div>
+
+<div class="col">
+	<table cellpadding="0" cellspacing="0">
+		<tr><th class="nfcs">NFC South</th></tr>
+		<tr><td><div id="c9"></div></td></tr>
+		<tr><td><div id="c10"></div></td></tr>
+		<tr><td><div id="c11"></div></td></tr>
+		<tr><td><div id="c12"></div></td></tr>
+	</table>
+	<div class="sp"></div>
+	<table cellpadding="0" cellspacing="0">
+		<tr><th class="nfcw">NFC West</th></tr>
+		<tr><td><div id="c13"></div></td></tr>
+		<tr><td><div id="c14"></div></td></tr>
+		<tr><td><div id="c15"></div></td></tr>
+		<tr><td><div id="c16"></div></td></tr>
+	</table>
+</div>
+
+<div class="col">
+	<table cellpadding="0" cellspacing="0">
+		<tr><th class="afce">AFC East</th></tr>
+		<tr><td><div id="c17"></div></td></tr>
+		<tr><td><div id="c18"></div></td></tr>
+		<tr><td><div id="c19"></div></td></tr>
+		<tr><td><div id="c20"></div></td></tr>
+	</table>
+	<div class="sp"></div>
+	<table cellpadding="0" cellspacing="0">
+		<tr><th class="afcn">AFC North</th></tr>
+		<tr><td><div id="c21"></div></td></tr>
+		<tr><td><div id="c22"></div></td></tr>
+		<tr><td><div id="c23"></div></td></tr>
+		<tr><td><div id="c24"></div></td></tr>
+	</table>
+</div>
+
+
+<div class="col">
+	<table cellpadding="0" cellspacing="0">
+		<tr><th class="afcs">AFC South</th></tr>
+		<tr><td><div id="c25"></div></td></tr>
+		<tr><td><div id="c26"></div></td></tr>
+		<tr><td><div id="c27"></div></td></tr>
+		<tr><td><div id="c28"></div></td></tr>
+	</table>
+	<div class="sp"></div>
+	<table cellpadding="0" cellspacing="0">
+		<tr><th class="afcw">AFC West</th></tr>
+		<tr><td><div id="c29"></div></td></tr>
+		<tr><td><div id="c30"></div></td></tr>
+		<tr><td><div id="c31"></div></td></tr>
+		<tr><td><div id="c32"></div></td></tr>
+	</table>
+</div>
+
+</div>
+<div style="clear:both"></div>
+<div id="stats">
+	<div class="h">Answer Stats</div>
+	<div id="statsInner">
+	</div>
+</div>
+<div id="supplemental">More team naming: <a href="name-major-league-teams.php">Baseball</a>, <a href="name-nba-basketball-teams.php">NBA</a>, <a href="name-nhl-hockey-teams.php">NHL</a> and <a href="/tags/team-naming.php">more</a>!</div>
+
+<div style="clear:both;"></div><div id="commentsOuter"><div id="commentsTease"><div class="h">Join the Discussion!</div><ul><li><a href="/quizzes/threads/quiz-ideas.php">Give us your quiz ideas!</a></li><li><a href="javascript:void(0)" onclick="showComments()">View 58 comments on this quiz</a>.  (May contain spoilers.)</li></ul></div><div id="comments"><table cellpadding="0" cellspacing="0"><tr class="odd"><td valign="top"><div class="a">supersam</div></td><td valign="top"><div class="b"><div class="text">I missed the Bills along with everybody else. </div><div class="date">2010-06-22</div></div></td></tr><tr class="even"><td valign="top"><div class="a">Shueb12</div></td><td valign="top"><div class="b"><div class="text">nearly missed this. forgot falcons and cheifs</div><div class="date">2010-06-29</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">beccalinda</div></td><td valign="top"><div class="b"><div class="text">Not bad, considering I'm not at all a football fan.  Knew there were two Ohio teams but could not think of them for the life of me!</div><div class="date">2010-07-25</div></div></td></tr><tr class="even"><td valign="top"><div class="a">YourMother</div></td><td valign="top"><div class="b"><div class="text">Every time I take this, I always miss 1 or 2 teams and it's always a different team everytime</div><div class="date">2010-10-28</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">ctleng76</div></td><td valign="top"><div class="b"><div class="text">Why did I forget the packers?  What is wrong with me?!</div><div class="date">2010-12-17</div></div></td></tr><tr class="even"><td valign="top"><div class="a">darkseraphim21</div></td><td valign="top"><div class="b"><div class="text">Forgot the Bears, Packers, and Rams.
+
+Oops. xD</div><div class="date">2011-01-04</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">Georgiapeachrocks</div></td><td valign="top"><div class="b"><div class="text">missed raiders, sea hawks, cardinals, rams,and chargers! how did i miss all of those....gosh that should have been OB-VI-OUS! gah!</div><div class="date">2011-01-13</div></div></td></tr><tr class="even"><td valign="top"><div class="a">Wildman1056</div></td><td valign="top"><div class="b"><div class="text">You won't be forgetting the Packers after the upcoming Super Bowl.</div><div class="date">2011-01-18</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">Beaver</div></td><td valign="top"><div class="b"><div class="text">100% 32/32</div><div class="date">2011-02-12</div></div></td></tr><tr class="even"><td valign="top"><div class="a">hammybammy152</div></td><td valign="top"><div class="b"><div class="text">lol, I'm going to memorize these now</div><div class="date">2011-02-13</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">hammybammy152</div></td><td valign="top"><div class="b"><div class="text">I GOT ALL OF THEM!!!!!!!!!!</div><div class="date">2011-02-14</div></div></td></tr><tr class="even"><td valign="top"><div class="a">hammybammy152</div></td><td valign="top"><div class="b"><div class="text">all of them with 2:37 left :D</div><div class="date">2011-02-14</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">hammybammy152</div></td><td valign="top"><div class="b"><div class="text">got them in 1:56</div><div class="date">2011-02-15</div></div></td></tr><tr class="even"><td valign="top"><div class="a">Awarrior10</div></td><td valign="top"><div class="b"><div class="text">I missed 9
+</div><div class="date">2011-03-09</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">IowaMHS</div></td><td valign="top"><div class="b"><div class="text">how did i forget the steelers?c</div><div class="date">2011-04-04</div></div></td></tr><tr class="even"><td valign="top"><div class="a">Muneta</div></td><td valign="top"><div class="b"><div class="text">I guessed 15. I have never seen a football game in my life.</div><div class="date">2011-04-06</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">UGAbulldogs3899</div></td><td valign="top"><div class="b"><div class="text">32 of 32 100%!</div><div class="date">2011-04-07</div></div></td></tr><tr class="even"><td valign="top"><div class="a">Nate</div></td><td valign="top"><div class="b"><div class="text">so easy a caveman could do it</div><div class="date">2011-04-09</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">gibbs172226</div></td><td valign="top"><div class="b"><div class="text">I got the Bills but only in the last seconds. </div><div class="date">2011-04-28</div></div></td></tr><tr class="even"><td valign="top"><div class="a">rodob1</div></td><td valign="top"><div class="b"><div class="text">how are the giants more popular than the cowboys?!</div><div class="date">2011-05-02</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">DrMoltenius</div></td><td valign="top"><div class="b"><div class="text">8/32... i don't live in states, plus i don't really like american football</div><div class="date">2011-05-05</div></div></td></tr><tr class="even"><td valign="top"><div class="a">timenyart</div></td><td valign="top"><div class="b"><div class="text">I forgot the cardinals because I spent way too much time trying to spell buccaneers right, ended up just typing Bucs at the last 5 seconds</div><div class="date">2011-05-22</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">Parksy52</div></td><td valign="top"><div class="b"><div class="text">NYG most popular. Yup, sounds about right </div><div class="date">2011-05-24</div></div></td></tr><tr class="even"><td valign="top"><div class="a">mrstealyogurl</div></td><td valign="top"><div class="b"><div class="text">32/32 with 3 minutes left.. get at me</div><div class="date">2011-06-11</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">The Gambler</div></td><td valign="top"><div class="b"><div class="text">3:21 left...you get at me mrstealyyogurl</div><div class="date">2011-06-18</div></div></td></tr><tr class="even"><td valign="top"><div class="a">halfbakedj12</div></td><td valign="top"><div class="b"><div class="text">It makes me sad as a Chiefs fan that they are the least guessed :(. </div><div class="date">2011-06-19</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">sharastarr1</div></td><td valign="top"><div class="b"><div class="text">haha only 5/32. Although that's good for having never watched a game!</div><div class="date">2011-06-22</div></div></td></tr><tr class="even"><td valign="top"><div class="a">queenmaeree</div></td><td valign="top"><div class="b"><div class="text">Might could accept "Pats" for "Patriots" since they are commonly called that.</div><div class="date">2011-07-10</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">delky06</div></td><td valign="top"><div class="b"><div class="text">100%</div><div class="date">2011-07-29</div></div></td></tr><tr class="even"><td valign="top"><div class="a">Spartangrad87</div></td><td valign="top"><div class="b"><div class="text">100% got raiders in last second</div><div class="date">2011-08-02</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">Ithabise</div></td><td valign="top"><div class="b"><div class="text">Argh! I always forget the obvious on this one.</div><div class="date">2011-08-12</div></div></td></tr><tr class="even"><td valign="top"><div class="a">Ithabise</div></td><td valign="top"><div class="b"><div class="text">Ah! Finally got them all!</div><div class="date">2011-09-01</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">ginger2209</div></td><td valign="top"><div class="b"><div class="text">2:42 left</div><div class="date">2011-09-02</div></div></td></tr><tr class="even"><td valign="top"><div class="a">llamaboy23</div></td><td valign="top"><div class="b"><div class="text">27/32 ahhh! always forget about the chiefs and buccaneers!</div><div class="date">2011-10-03</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">mariofan367</div></td><td valign="top"><div class="b"><div class="text">I think the Vikings are low on the list (of accuracy) and the dolphins are high. Just saying.</div><div class="date">2011-10-26</div></div></td></tr><tr class="even"><td valign="top"><div class="a">ThePaulMoore</div></td><td valign="top"><div class="b"><div class="text">I nearly missed the Lions, but they're never relevant, so it's okay.</div><div class="date">2011-11-11</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">ctleng76</div></td><td valign="top"><div class="b"><div class="text">i always miss the panthers!
+</div><div class="date">2011-11-17</div></div></td></tr><tr class="even"><td valign="top"><div class="a">NakedDumblydore</div></td><td valign="top"><div class="b"><div class="text">I'm watching the Patriots-Chiefs game right now and STILL almost forgot the Chiefs. *facepalm* Still 32/32, though.</div><div class="date">2011-11-21</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">lancershaft</div></td><td valign="top"><div class="b"><div class="text">done with 3:12 left....not bad</div><div class="date">2011-11-30</div></div></td></tr><tr class="even"><td valign="top"><div class="a">Penguinagent004</div></td><td valign="top"><div class="b"><div class="text">Stupid Broncos! The only one I missed! I really need to start watching football games other than the Packers! </div><div class="date">2011-12-03</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">tcangro224</div></td><td valign="top"><div class="b"><div class="text">i used  to be able to name all the nfl teams then i took an arrow to the knee
+</div><div class="date">2011-12-12</div></div></td></tr><tr class="even"><td valign="top"><div class="a">smevans</div></td><td valign="top"><div class="b"><div class="text">@Your Mother me too.. i missed the Rams and im sure the next time i take it ill miss a different one, but im destined not to get all of them..</div><div class="date">2011-12-12</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">clarinetcutie</div></td><td valign="top"><div class="b"><div class="text">@Penguinagent who else is there to watch other than the packers?? :)</div><div class="date">2011-12-29</div></div></td></tr><tr class="even"><td valign="top"><div class="a">houshyapoppa</div></td><td valign="top"><div class="b"><div class="text">32/32 in 37 seconds.  WHO DEY</div><div class="date">2012-01-01</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">billysimmons</div></td><td valign="top"><div class="b"><div class="text">Get Off Them Giants! WE THE BEST KNOWN TEAM</div><div class="date">2012-01-11</div></div></td></tr><tr class="even"><td valign="top"><div class="a">Kristybabii</div></td><td valign="top"><div class="b"><div class="text">32/32 with 6 seconds left.</div><div class="date">2012-01-20</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">txbdog</div></td><td valign="top"><div class="b"><div class="text">Cowboys NATION!!!!!!!!!!!! Waaaaaaaay to easy. Shorten the time to like 2 and half minutes.</div><div class="date">2012-02-01</div></div></td></tr><tr class="even"><td valign="top"><div class="a">Rattyb</div></td><td valign="top"><div class="b"><div class="text">100% with 2:46 left. Rock solid</div><div class="date">2012-02-04</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">mariofan367</div></td><td valign="top"><div class="b"><div class="text">Giants beat patriots in popularity and superbowl.</div><div class="date">2012-02-07</div></div></td></tr><tr class="even"><td valign="top"><div class="a">mariofan367</div></td><td valign="top"><div class="b"><div class="text">Oh and let's start a war. I hate Cowboys. LOL</div><div class="date">2012-02-07</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">milkX5</div></td><td valign="top"><div class="b"><div class="text">100% WOO!!!! GO SAINTS!</div><div class="date">2012-02-10</div></div></td></tr><tr class="even"><td valign="top"><div class="a">Hawk</div></td><td valign="top"><div class="b"><div class="text">I hate the giants and the cowboys!!!! </div><div class="date">2012-02-10</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">smilingporkchop</div></td><td valign="top"><div class="b"><div class="text">got them all with 2:35 left
+I'm proud to be a teenage girl with actual football knowledge. :D </div><div class="date">2012-02-17</div></div></td></tr><tr class="even"><td valign="top"><div class="a">AwesomeAustin</div></td><td valign="top"><div class="b"><div class="text">My seven year old cousin helped me more than my two forty year old parents could. That's pretty sad. xD</div><div class="date">2012-02-19</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">Im cool007</div></td><td valign="top"><div class="b"><div class="text">ugh, i hate trying to do this but its so addicting.</div><div class="date">2012-02-29</div></div></td></tr><tr class="even"><td valign="top"><div class="a">thorpedo96</div></td><td valign="top"><div class="b"><div class="text">what the heck???? you totally forgot the michigan state spartans!!!! how has no one noticed this?</div><div class="date">2012-02-29</div></div></td></tr><tr class="odd"><td valign="top"><div class="a">alruiz</div></td><td valign="top"><div class="b"><div class="text">I got them all and im a teenage girl </div><div class="date">2012-03-17</div></div></td></tr><tr class="even"><td valign="top"><div class="a">Andy246</div></td><td valign="top"><div class="b"><div class="text">Oh yeah, beat 3:24 guys!!!</div><div class="date">2012-03-27</div></div></td></tr></table>		<div id="commentPost">
+			<b>Post Your Comment:</b> (all comments are moderated)<br>
+			<textarea id="txtComment"></textarea>
+			<br>
+				<div id="commentPostIn">
+					<input type="button" value="Post Comment" onclick="postComment(4,-1)">
+				</div>
+				<div id="commentPostOut">
+					Must be <a href="javascript:void(0)" onclick="_loginWindow.launch(1, null)">logged in</a> to comment.
+				</div>
+		</div>
+	</div>
+	</div> <!-- end comments outer -->
+</div><div id="col2"><div id="ql" class="subdiv"><div class="tp"></div><div class="bd"><div class="a">New and Popular Quizzes</div><table cellpadding="0" cellspacing="0"><tr><td valign="top" class="x">923</td><td valign="top" class="y"><a href="/user-quizzes/2/johnnys-general-knowledge-quiz-2">Johnny's General Knowledge #2</a></td></tr><tr><td valign="top" class="x">813</td><td valign="top" class="y"><a href="/quizzes/how-many-countries-can-you-name.php">Countries of the World</a></td></tr><tr><td valign="top" class="x">565</td><td valign="top" class="y"><a href="/quizzes/fast-typing-to-hundred-quiz.php">Fast Typing to 100</a></td></tr><tr><td valign="top" class="x">387</td><td valign="top" class="y"><a href="/quizzes/random-flags-quiz">Random Flags</a></td></tr><tr><td valign="top" class="x">321</td><td valign="top" class="y"><a href="/user-quizzes/24158/internet-memes-quiz">Reddit Memes</a></td></tr><tr><td valign="top" class="x">259</td><td valign="top" class="y"><a href="/quizzes/countries-of-europe-quiz.php">Countries of Europe</a></td></tr><tr><td valign="top" class="x">251</td><td valign="top" class="y"><a href="/quizzes/oscar-best-supporting-actors-quiz.php">Oscar Supporting Actors Quiz</a></td></tr><tr><td valign="top" class="x">201</td><td valign="top" class="y"><a href="/quizzes/name-nba-basketball-teams.php">NBA Basketball Teams</a></td></tr><tr><td valign="top" class="x">193</td><td valign="top" class="y"><a href="/quizzes/how-many-states-can-you-name.php">States in the USA</a></td></tr><tr><td valign="top" class="x">181</td><td valign="top" class="y"><a href="/quizzes/word-shortenings-quiz-2.php">Word Shortenings #2</a></td></tr><tr><td valign="top" class="x">180</td><td valign="top" class="y"><a href="/quizzes/original-pokemon-quiz.php">Original Pokemon</a></td></tr><tr><td valign="top" class="x">166</td><td valign="top" class="y"><a href="/quizzes/top-wine-producing-countries-quiz.php">Top Wine Producing Countries</a></td></tr><tr><td valign="top" class="x">160</td><td valign="top" class="y"><a href="/quizzes/nineties-catchphrases-quiz.php">90's Catchphrases</a></td></tr><tr><td valign="top" class="x">119</td><td valign="top" class="y"><a href="/quizzes/general-knowledge-quiz-2.php">General Knowledge #2</a></td></tr><tr><td valign="top" class="x">101</td><td valign="top" class="y"><a href="/quizzes/cc-vocabulary-words-quiz.php">Double C Vocabulary Words</a></td></tr></table><div class="b"><a href="/quizzes/random.php">Random Quiz &gt;&gt;&gt;</a></div><div class="b"><a href="/tags/all.php">All Quizzes &gt;&gt;&gt;</a></div></div><div class="bt"></div></div><div id="facebookLike"><div class="fb-like" href="http://www.facebook.com/pages/JetPunk/128523970986" data-send="false" data-width="260" data-show-faces="true"></div></div>		<div id="tags" class="subdiv">
+			<div class="tp"></div>
+			<div class="bd">
+				<div class="a">Similar Quizzes by Tag</div>
+				<a href="/tags/football.php">Football</a>, <a href="/tags/nfl.php">NFL</a>, <a href="/tags/sports.php">Sports</a>, <a href="/tags/team-naming.php">Team Naming</a>				</div>
+			<div class="bt"></div>
+		</div>
+	</div>			</div>
+
+			<div id="push"></div> <!-- necessary to put footer at bottom -->
+        </div>
+        <div id="footer">
+			JetPunk.com is copyright H Brothers Inc, 2012. :)<br/>
+			<a rel="nofollow" href="/contact.php">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/about.php">About Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/popular-quiz-categories.php">Popular Quiz Categories</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/user-quizzes/">User-Created Quizzes</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/tags/index.php">Quizzes by Tag</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/privacy.php">Privacy Policy</a>
+			<script type="text/javascript">
+
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-23348460-1']);
+			  _gaq.push(['_trackPageview']);
+
+			  (function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+
+			</script>
+		</div>
+
+		<div id="overlay">
+				<div id="loginWindow">
+		<div class="close"><img src="/img/x.png" alt="close"></div>
+		<div class="tabContainer">
+			<div class="tabs">
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td valign="bottom"><div id="loginTab1" class="tab selTab">Log In</div></td>
+						<td valign="bottom"><div id="loginTab2" class="tab">Create Account</div></td>
+						<td valign="bottom"><div id="loginTab3" class="tab">Forgot Password</div></td>
+					</tr>
+				</table>
+			</div>
+			<div class="loader"><img src="/img/ajax-loader2.gif" alt="ajax loader 2"></div>
+			
+			<div class="tabContent" id="loginTabContent1" style="display: block;">
+				<div class="a">Login to JetPunk.com</div>
+				<div class="b">Screen Name or E-mail Address:</div>
+				<div><input type="text" id="loginUser" class="x"></div>
+				<div class="b">Password:</div>
+				<div><input type="password" id="loginPass" class="x"></div>
+				<div class="c">
+					<input type="button" id="btnLogin" value="Login" class="y">
+					<input type="button" id="btnVerify" value="Resend Verification E-mail" class="y">
+				</div>
+				<div class="d">
+						<input type="checkbox" id="loginRemember" checked> Remember me on this computer
+					</div>
+			</div>
+			<div class="tabContent" id="loginTabContent2">
+				<div class="a">Create Account</div>
+				<div class="b">E-mail Address: (must be real)</div>
+				<div><input type="text" id="createEmail" class="x"></div>
+				<div class="b">Screen Name:</div>
+				<div><input type="text" id="createScreen" class="x"></div>
+				<div class="b">Password:</div>
+				<div><input type="password" id="createPass1" class="x"></div>
+				<div class="b">Retype Password:</div>
+				<div><input type="password" id="createPass2" class="x"></div>
+				<div class="c"><input type="button" id="btnCreate" value="Create Account" class="y"></div>
+				<div class="d">
+					<input type="checkbox" id="createCheck1" checked> E-mail me occasional Quiz Updates<br>
+				</div>
+				<div class="e">
+					* We will never sell or share your e-mail address!
+				</div>
+			</div>
+			<div class="tabContent" id="loginTabContent3">
+				<div class="a">Forgotten Password</div>
+				<div class="f">We will send you an e-mail with a link to reset your password.</div>
+				<div class="b">E-mail Address:</div>
+				<div><input type="text" id="resetEmail" class="x"></div>
+				<div class="c"><input type="button" value="Reset Password" class="y" id="btnReset"></div>
+			</div>
+		</div>
+	</div>
+
+<div id="activeHelp" class="help">
+	<div class="close"><img src="/img/x.png" alt="close"></div>
+	<div class="help1">How to Answer</div>
+	<ul>
+		<li>Enter answers in the area marked "Enter team name here:".</li>
+		<li><b>Your answer should correspond to the highlighted yellow box.</b></li>
+		<li>Click a box to highlight it.</li>
+		<li>You can also use the UP, DOWN, and TAB keys to change which box is highlighted.</li>
+	</ul>
+</div>
+
+		<div id="messageBox">
+			<div class="close"><img src="/img/x.png" alt="close"></div>
+			<div class="message"></div>
+		</div>
+	<div id="divImageAttrib"><div class="close"><img src="/img/x.png" alt="close"></div>Image credit <a href="http://commons.wikimedia.org/wiki/User:Bgag">Bernard Gagnon</a>. <a href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution ShareAlike 2.5 license</a></div>
+<div id="normalHelp" class="help">
+	<div class="close"><img src="/img/x.png" alt="close"></div>
+	<div class="help1">How to Answer</div>
+	<ul>
+		<li>Enter answers in the area marked "".</li>
+		<li>You can enter any answer, at any time - they don't have to be in order.</li>
+	</ul>
+</div>
+
+<div id="bigImageBox">
+	<div id="bibClose"><img src="/img/x.png" alt="close"></div>
+	<div id="bibImage"></div>
+	<div id="bibAttrib"></div>
+</div>
+
+		<div id="loading">
+			Loading<br>Results<div><img src="/img/ajax-loader.gif" alt="ajax loading"></div>
+		</div>
+			</div>
+    </body>
+</html>
+

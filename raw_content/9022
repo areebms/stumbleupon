@@ -1,0 +1,185 @@
+<html>
+
+<head>
+<title>New Page 2</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<style type="text/css">
+body {
+}
+
+#topbar {
+position:absolute;
+padding: 0px;
+width: 130px;
+height: 33px;
+visibility: hidden;
+z-index: 100;
+}
+
+img {
+border:0;
+}
+
+</style>
+<script type="text/javascript">
+
+/***********************************************
+* Floating Top Bar script- © Dynamic Drive (www.dynamicdrive.com)
+* Sliding routine by Roy Whittle (http://www.javascript-fx.com/)
+* This notice must stay intact for legal use.
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var persistclose=0 //set to 0 or 1. 1 means once the bar is manually closed, it will remain closed for browser session
+var startX = 430 //set x offset of bar in pixels
+var startY = 5 //set y offset of bar in pixels
+var verticalpos="fromtop" //enter "fromtop" or "frombottom"
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function get_cookie(Name) {
+var search = Name + "="
+var returnvalue = "";
+if (document.cookie.length > 0) {
+offset = document.cookie.indexOf(search)
+if (offset != -1) {
+offset += search.length
+end = document.cookie.indexOf(";", offset);
+if (end == -1) end = document.cookie.length;
+returnvalue=unescape(document.cookie.substring(offset, end))
+}
+}
+return returnvalue;
+}
+
+function closebar(){
+if (persistclose)
+document.cookie="remainclosed=1"
+document.getElementById("topbar").style.visibility="hidden"
+}
+
+function staticbar(){
+	barheight=document.getElementById("topbar").offsetHeight
+	var ns = (navigator.appName.indexOf("Netscape") != -1) || window.opera;
+	var d = document;
+	function ml(id){
+		var el=d.getElementById(id);
+		if (!persistclose || persistclose && get_cookie("remainclosed")=="")
+		el.style.visibility="visible"
+		if(d.layers)el.style=el;
+		el.sP=function(x,y){this.style.left=x+"px";this.style.top=y+"px";};
+		el.x = startX;
+		if (verticalpos=="fromtop")
+		el.y = startY;
+		else{
+		el.y = ns ? pageYOffset + innerHeight : iecompattest().scrollTop + iecompattest().clientHeight;
+		el.y -= startY;
+		}
+		return el;
+	}
+	window.stayTopLeft=function(){
+		if (verticalpos=="fromtop"){
+		var pY = ns ? pageYOffset : iecompattest().scrollTop;
+		ftlObj.y += (pY + startY - ftlObj.y)/8;
+		}
+		else{
+		var pY = ns ? pageYOffset + innerHeight - barheight: iecompattest().scrollTop + iecompattest().clientHeight -  barheight;
+		ftlObj.y += (pY - startY - ftlObj.y)/8;
+		}
+		ftlObj.sP(ftlObj.x, ftlObj.y);
+		setTimeout("stayTopLeft()", 10);
+	}
+	ftlObj = ml("topbar");
+	stayTopLeft();
+}
+
+if (window.addEventListener)
+window.addEventListener("load", staticbar, false)
+else if (window.attachEvent)
+window.attachEvent("onload", staticbar)
+else if (document.getElementById)
+window.onload=staticbar
+</script>
+
+<base target="_blank">
+</head>
+
+<body topmargin="0" leftmargin="0" bgcolor="#63CAEC" link="#000000" vlink="#000000"
+alink="#000000">
+<div id="topbar"><a
+href="http://twitter.com/home/?status=hilarious+site+making+fun+of+punk+/+emo+/+metal+/+indie+scenesters+at+www.yourscenesucks.com+via+@robdobi">
+<dd><img src="http://www.dobi.nu/yourscenesucks/tweetthis.gif" /></a> </dd>
+</div><div align="left">
+
+<table border="0" width="652" cellspacing="0" cellpadding="0" valign="top">
+  <tr>
+    <td width="100%" align="center"><font face="Verdana" size="2"><img src="scene.jpg"
+    width="652" height="762"></font></td>
+  </tr>
+  <tr>
+    <td width="100%" align="center"><table border="0" width="541" cellspacing="0"
+    cellpadding="0" valign="top">
+      <tr>
+        <td width="100%" valign="top"><font face="Verdana" size="2"><img src="../top.gif"
+        width="541" height="16"></font></td>
+      </tr>
+      <tr>
+        <td width="100%" bgcolor="#FFFFFF" valign="top"><div align="center"><center><table
+        border="0" width="510" cellspacing="0" cellpadding="10">
+          <tr>
+            <td width="389" align="left" valign="top"><font face="Verdana" size="2"><img
+            src="../about.gif" width="60" height="21"></font><big><br>
+            </big>in a scene flooded with jet-black hair, piercings, and eyeliner, this spunky dude is
+            a breath of fresh air. unfortunately for him, he looks just as silly as his contemporaries
+            and appears to be suffering from an even worse identity crisis. <br>
+            <br>
+            one could argue that he might be the male equivalent of rainbow brite. his wardrobe
+            primarily consists of brightly-colored american apparel products. this might be acceptable
+            and even cute for a teenage girl, but for a 20-something guy with hairy legs? this is a
+            problem.<br>
+            <br>
+            it doesn't stop there! he appears to be reliving his childhood; he embraces nostalgia in
+            the form of retro video games, ninjas, robots, dinosaurs, 80's icons, and anything with a
+            moog synthesizer.<br>
+            <br>
+            despite his uber flamboyant appearance, his nostalgic tendencies, and his dedication to
+            pop-punk prepackaged for preteens, he does have one masculine quality: a crush on
+            paramore's lead singer, hayley williams.<br>
+            <br>
+            sadly, she is nine years his junior. <p><font color="#000000" valign="top" face="Verdana"
+            size="2">&lt;&lt; <a href="../scenesters.htm" target="_self"><strong>back to scenesters</strong></a></font></p>
+            <p><a href="http://www.yourscenesucks.com" target="_top"><img src="../link.gif"
+            width="343" height="21" border="0"></a></td>
+            <td width="121" align="left" valign="top"><font face="Verdana" size="2"><img
+            src="../playlist.gif" width="81" height="21"><br>
+            </font><font color="#000000" face="Verdana" size="2">hello goodbye<br>
+            cobra starship<br>
+            boys like girls<br>
+            all time low<br>
+            farewell</font><font face="Verdana" size="2"><br>
+            <br>
+            <img src="../bookmarks.gif" width="109" height="21"><br>
+            </font><font color="#000000" face="Verdana" size="2"><a
+            href="http://www.americanapparel.net">american apparel</a><br>
+            <a href="http://www.thedailychorus.com">the daily chorus</a><br>
+            <a href="http://www.glamourkills.com">glamour kills</a></font></td>
+          </tr>
+        </table>
+        </center></div></td>
+      </tr>
+      <tr>
+        <td width="100%"><font face="Verdana" size="2"><img src="../bottom.gif" width="541"
+        height="16"></font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+</div>
+
+<p>&nbsp;</p>
+</body>
+</html>

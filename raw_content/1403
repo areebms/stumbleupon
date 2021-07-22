@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Lifespan Calculator &ndash; Test Your Life Expectancy || NM</title>
+
+<!-------------------------------META DATA-------------------------------------->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="author" content="Nothwestern Mutual">
+<meta name="description" content="Test your life expectancy with the Longevity Calculator from Northwestern Mutual.">
+<meta name="keywords" content="longevity game, longevity, life expectancy calculator, how long will i live, life expectancy, longevity calculator, the longevity game, life games, longevity test, how long will you live, longevity quiz, northwestern mutual, test, Milwaukee, WI, life calculation, age projection">
+
+<!-------------------------------INCLUDES-------------------------------------->
+<link href="includes/css/screen.css" rel="stylesheet" type="text/css">
+<script language="javascript" type="text/javascript" src="includes/swfobject.js"></script>
+
+<script type="text/javascript">
+<!--
+//SWF object Vars
+var flashvars = {};
+var params = {
+  swliveconnect: "true",
+  allowScriptAccess: "always",
+  wmode: "transparent"
+};
+var attributes = {};
+
+
+
+function loadSWF(){
+  	var flashWidth = 375;
+	
+	var flashHeight = flashWidth * 1.56; //1.56 is a constant that will preserve the aspect ratio at any width
+	var centeringMargin = (640-flashWidth) / 2;
+  	document.getElementById("root").style.marginLeft = centeringMargin + "px";
+ 	 swfobject.embedSWF("index.swf", "flashcontent", flashWidth, flashHeight, "8.0.0", false, flashvars, params, attributes);
+	
+}
+
+//Opens a new browser window
+function MM_openBrWindow(theURL,winName,features) {
+  window.open(theURL,winName,features);
+}
+
+function closeWindow(isNmfn, formname) {
+		
+	/*var redirectUrl = "http://www.northwesternmutual.com/representative-contact-form.aspx";	
+		
+		window.resizeTo(690, 800);
+		window.moveTo(0, 0);*/
+
+	if (!isNmfn) {
+		var redirectUrl = "https://service.nmfn.com/webforms/nmfnForms/"+formname+".html"+document.location.search + "&CampName=Lifespan_Calculator";
+		//window.resizeTo(625, 800);
+		//window.moveTo(0, 0);
+		MM_openBrWindow(redirectUrl,"win","scrollbars=1,location=1,status=1,resizable=1,toolbar=1,width=625,height=800,left=0,top=0,screenX=0,screenY=0");
+	}else{
+		var redirectUrl = "http://www.northwesternmutual.com/representative-contact-form.aspx?CampName=Lifespan_Calculator";
+		MM_openBrWindow(redirectUrl,"win","scrollbars=1,location=1,status=1,resizable=1,toolbar=1,width=800,height=600,left=0,top=0,screenX=0,screenY=0");
+	}
+	
+	//alert(isNmfn+" - "+formname);
+	//location.href = redirectUrl;
+}
+
+//-->
+</script>
+</head>
+<body onload="loadSWF()">
+
+
+<div id="main">
+
+  <div id="root">  
+    <div id="flashcontent" class="flashcontent">
+      <center>
+      <strong>You need to upgrade your Flash Player</strong><br>Flash 8.0 is required to view this page, download it <a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash">here</a>.
+      </center>
+    </div>		
+  </div>
+  
+  <div class="screenResolutionDisclaimer">
+    This application is best viewed at a resolution of 1024x768 or better. Click <a href="#" onclick="MM_openBrWindow('screenResolution.html','resolution','scrollbars=yes,width=700,top=0,left=0,screenX=0,screenY=0,resizable=yesy')">here</a> to learn more about adjusting your resolution settings.
+  </div>
+  
+  <div id="disclosure">
+    Copyright 2011, The Northwestern Mutual Life Insurance Company, Milwaukee, WI. All rights reserved. 720 East Wisconsin Avenue, Milwaukee, Wisconsin 53202-4797 - (414) 271-1444
+    <br><br>
+    Please see <a href="http://nmfn.com">nmfn.com</a> for information on the Legal Notice, Privacy Statement and other disclosures.
+  </div>
+
+</div>
+
+<script type="text/javascript" src="http://media.nmfn.com/sitecatalyst/nmprod/s_code.js"></script>
+<script type="text/javascript" src="http://media.nmfn.com/sitecatalyst/nmprod/calc/sc_custom_lifespan.js"></script>
+</body>
+</html>

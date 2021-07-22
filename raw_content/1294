@@ -1,0 +1,983 @@
+<!-- google_ad_section_start(weight=ignore) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+	<title> Ex-Time Projector Watch Shows Time Fading Out On The Wrist - The Design blog</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="title" content="Ex-Time Projector Watch Shows Time Fading Out On The Wrist - The Design blog" />
+	<meta name="subject" content="Lifestyle" />
+	<meta name="language" content="en" />
+	<meta name="keywords" content="architecture, architecture design, art, Auto, Auto Design, Chair, Concept, design, eco-friendly, furniture, gadget, home decor, Home Furnishing, home improvement, industrial design, lamp, Lifestyle, Lighting, Modular, multifunctional, portable, Sustainable, tech design, Technology, timepiece" />
+	<meta name="description" content="Design trendsetter" />
+	<link rel="alternate" href="http://www.thedesignblog.org/rss.xml" type="application/rss+xml" title="The Design blog's RSS Feed" />
+	<link rel="alternate" href="http://www.instablogs.com/feed/blog=The+Design+blog" type="application/rss+xml" title="The Design blog's RSS Feed (Instablogs Community)" />
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js">
+</script>
+<script type="text/javascript">
+GS_googleAddAdSenseService("ca-pub-9415440757655812");
+GS_googleEnableAllServices();
+</script>
+<script type="text/javascript">
+GA_googleAddSlot("ca-pub-9415440757655812", "7Blogs_Homepage_ATF_Button");
+GA_googleAddSlot("ca-pub-9415440757655812", "Thedesignblog_Martini_HalfPage");
+</script>
+<script type="text/javascript">
+GA_googleFetchAds();
+</script>
+
+<style type="text/css">
+  @import url(/style.css);
+</style>
+
+<script type="text/javascript">
+if (top !== self) top.location.href = self.location.href;
+</script>
+
+	<script type="text/javascript" src="/js/jquery-1.3.1.min.js"></script>
+	<script type="text/javascript" src="http://www.instablogs.com/js/yui.js"></script>
+	<script type="text/javascript" src="/js/prototype.js"></script>
+	<script type="text/javascript" src="http://www.instablogs.com/js/connection.js"></script>
+	<script type="text/javascript">
+		$ = jQuery.noConflict();
+		$(function(){  
+			
+			$("#headlink").hover(
+			  function () {
+				$('.outer_lang').toggle();
+			  }, 
+			  function () {
+				$('.outer_lang').toggle();
+			  }
+			);
+		});
+
+		function on_blur()
+		{
+			if(document.getElementById('nav-search').value == "")
+			{
+			document.getElementById('nav-search').value = "search here...";
+			document.getElementById('nav-search').style.color = "#999";
+			}
+		}
+		function on_focus()
+		{
+			document.getElementById('nav-search').value = "";
+			document.getElementById('nav-search').style.color = "#444";
+		}
+
+		function open_reply_comment(comment_id, post_id, back_url, blog_name)
+		{
+			
+			var div = document.getElementById('reply-comment'+comment_id);	
+			var postdata ='comment_id='+ comment_id + '&post_id=' + post_id + '&back_url=' + back_url + '&blog_name=' + blog_name;
+			div.innerHTML = '<div style="font:bold 1.2em/1.2em Georgia, serif;padding:20px 0 35px;"><center><img src="/css-img/wheel.gif" /> &nbsp; &nbsp;Loading...</center></div>';
+
+			var handleSuccess = function(o){if(o.responseText !== undefined){div.innerHTML = o.responseText;}}
+			var handleFailure = function(o){if(o.responseText !== undefined){div.innerHTML=  o.statusText;}}
+			var Callback ={success:handleSuccess,failure: handleFailure};
+
+			var request = YAHOO.util.Connect.asyncRequest("POST", '/reply_comment.php', Callback, postdata);
+		}
+
+		
+		function lightboxImageOn(image_id, Image_title)
+		{
+			var comment_image = 'comment_image';
+			var Image_title = "Image uploaded by - " + Image_title;
+			var div = document.getElementById('lb-edit');
+			div.innerHTML = '<div style="font:bold 1.2em/1.2em Georgia, serif;padding:80px 0 35px;"><center><img src="/css-img/loading.gif" /> &nbsp; &nbsp;Loading...</center></div>';
+
+			$.ajax({
+			type: "POST",
+			url: "/show_media.php",
+			data: 'image_id='+image_id + '&type=' + comment_image + '&title=' + Image_title,
+			success: function(msg)
+			{
+				var id ='#lb-edit';
+				$(id).html(msg);
+			}
+			});
+
+			var black = document.getElementById('fade');
+			black.style.display = 'block';
+
+			div.style.display = 'block';
+			window.scrollTo(0,0);
+		}
+
+
+		function lightboxVideoOn(video_id, You_Tube_title)
+		{
+			var video='video';
+			var You_Tube_title = "Video uploaded by - " + You_Tube_title;
+			var div = document.getElementById('lb-edit');
+			div.innerHTML = '<div style="font:bold 1.2em/1.2em Georgia, serif;padding:80px 0 35px;"><center><img src="/css-img/loading.gif" /> &nbsp; &nbsp;Loading...</center></div>';
+
+			$.ajax({
+			type: "POST",
+			url: "/show_media.php",
+			data: 'video_id=' + video_id + '&type=' + video + '&title=' +  You_Tube_title,
+			success: function(msg)
+			{
+				var id ='#lb-edit';
+				$(id).html(msg);
+			}
+			});
+
+			var black = document.getElementById('fade');
+			black.style.display = 'block';
+
+			div.style.display = 'block';
+			window.scrollTo(0,0);
+		}
+
+		function lightboxoff(id)
+		{
+			var light = document.getElementById(id);
+			light.style.display = 'none';
+		}
+
+	</script>
+	<style>
+	.black_overlay
+		{
+			display: none;
+			position: absolute;
+			top:0px;
+			left:0px;
+			width:100%;
+			height:100%;
+			/width:expression((document.body.clientWidth) + "px");
+			/height:expression((document.body.clientHeight)+ "px");
+			background-color: black;
+			z-index:1001;
+			-moz-opacity: 0.6;
+			opacity:.60;
+			filter: alpha(opacity=60);
+		}
+				
+		.white_content_video
+		{
+			display: none;
+			position: absolute;
+			top: 90px;
+			left: 37%;
+			min-width:400px;
+			min-height:330px;
+			border: 4px solid #333;
+			background-color: #E6EFF4;
+			z-index:1002;
+		}
+
+		.login-head{background:#333;color:#868686;font: bold 1.9em/1.3em georgia,verdana,arial,serif;padding:8px;}
+		.login-head .close {display:block;float:right;padding:0px;text-align:right;font-size:12px}
+	</style>
+
+</head>
+
+<body>
+<script type="text/javascript" src="http://www.instablogs.com/js/lightbox.js"></script>
+
+	<div id="container">
+	<div style="height:1px;"> </div>
+					<div class="ad-top">
+			<div class="left-top-ad">
+				<script type="text/javascript" language="javascript" src="http://www2.glam.com/app/site/affiliate/viewChannelModule.act?mName=viewAdJs&affiliateId=318102555&adSize=728x90"></script>			</div>
+			<div class="right-top-ad">
+							<a href="http://www.instablogs.com/ad_solutions.php?b=25"><img src="http://www.instablogs.com/css-img/120-x-90.jpg" /></a>
+			</div>
+			<div class="clear"></div>
+			</div><!-- EOF #ad-top -->
+
+		<div id="header"> 
+
+			<div class="logo"> <a href="http://www.designbuzz.com/" title="Home"><h1>The Design blog</h1></a> </div>
+	
+		</div><!-- EOF header -->
+
+			<div style="padding:5px;text-align:center;">
+				<script type="text/javascript"><!--
+google_ad_client = "pub-9415440757655812";
+/* Thedesignblog, Header, LinkUnit, 8Jan10 */
+google_ad_slot = "1472921965";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>			</div>
+		
+			<div class="extra-ads"></div>
+
+
+
+			<div class="top-nav">
+
+				<span class="home">
+					<a href="http://www.designbuzz.com/">Home</a>
+				</span>
+
+				<div class="inst_lang_network" id="headlink">
+					<a class="current" href="http://www.designbuzz.com/">EN</a> </span> | <span> <a href="http://www.designhaute.fr/">FR</a> </span>
+				</div>
+
+				<span class="RSS">
+					<a href="http://feeds.feedburner.com/thedesignblog/ntLw">RSS</a> ::
+				</span>
+
+				<span>
+					<a href="/contact-us.php?q=tips">Send Tips</a> ::
+				</span>
+
+				<span>
+					<a href="http://www.instablogs.com/ad_solutions.php?b=25">Advertise</a> ::
+				</span>
+
+				<span>
+					<a href="/contact-us.php?q=general">Contact</a> ::
+				</span>
+
+				<span>	
+					<form method="get" action="/search.php" id="cse-search-box">
+						<input type="hidden" name="cx" value="partner-pub-9415440757655812:5f458b-9p87" />
+						<input type="hidden" name="cof" value="FORID:10" />
+						<input type="hidden" name="ie" value="UTF-8" />
+						<input type="text" name="q" size="25" />
+						<input type="submit" name="sa" value="Search" />
+					</form>
+					<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
+				</span>
+			</div><!-- EOF top-nav -->
+
+
+
+		<div id="content">
+			<div id="content-box">
+
+				<div id="perma-content-main">
+				<div style="float:right">
+									</div>
+	
+						<!--INFOLINKS_OFF-->
+						<!-- google_ad_section_end -->
+						<!-- google_ad_section_start -->
+						<div class="title">
+							Ex-Time projector watch shows time fading out on the wrist						</div>
+						<div class="clear"></div>
+
+					<div class="author">
+						<div class="retweet-title">
+							<div class="retweet">
+								<script type="text/javascript">
+									tweetmeme_style = 'compact';
+									tweetmeme_url = 'http://www.thedesignblog.org/entry/ex-time-projector-watch-shows-time-fading-out-on-the-wrist/';
+									tweetmeme_source = 'designblog_org';
+								</script>
+								<script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script>
+							</div>
+							<div class="fb">
+								<script>
+									var fbShare = {url: 'http://www.thedesignblog.org/entry/ex-time-projector-watch-shows-time-fading-out-on-the-wrist/', size: 'small', google_analytics: 'false'}
+								</script>
+								<script src="http://widgets.fbshare.me/files/fbshare.js"></script>
+							</div>
+						</div>
+						<a href="http://bharat.instablogs.com/">Bharat</a>
+						| 
+						May 29 2010						<div class="spon-links" style="font:1.1em/1.2em arial, verdana,arial,serif;padding:10px 0 10px 0;text-decoration:underline;"> Sponsored Links </div>
+						<div class="perma_ads">
+							<div class="perma_ads2" style="float:left;"><script type="text/javascript"><!--
+google_ad_client = "pub-9415440757655812";
+/* Thedesignblog, Permalink, LargeRectangle, 8Jan10 */
+google_ad_slot = "7169437488";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+							<div class="perma_ads2" style="float:left;"></div>
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+					</div><!--INFOLINKS_ON-->
+
+					<div class="clear"></div>
+					<div class="post-content">
+							<p><img src="http://www.instablogsimages.com/images/2010/05/29/ex-time-watch_07_wDgbw_17621.jpg" alt="ex time watch_07"/></p>
+	<p>It’s just evident, with projectors going small we’ll see them making way into creepiest to weirdest of places. Case in point, the Ex-Time watch concept by designer Rong Yong. The Ex-Time watch which touts of a unique way of letting the user experience the time fading out on the wrist has a projector stuffed inside to project the time on the user’s wrist or the wall etc. The concept watch consists of three display modes for time, date and alarm. Time as we say is seen fading away on the wrist is possible courtesy the time mode, hour, minute and second automatically rotating across the wrist in various directions. Scroll down to see more pictures of the watch for a better understanding of the concept. </p>
+	<p><img src="http://www.instablogsimages.com/images/2010/05/29/ex-time-watch_01_694RC_17621.jpg" alt="ex time watch_01"/><br />
+<img src="http://www.instablogsimages.com/images/2010/05/29/ex-time-watch_02_Amsys_17621.jpg" alt="ex time watch_02"/><br />
+<img src="http://www.instablogsimages.com/images/2010/05/29/ex-time-watch_03_kEGF9_17621.jpg" alt="ex time watch_03"/><br />
+<img src="http://www.instablogsimages.com/images/2010/05/29/ex-time-watch_04_fbJ6Y_17621.jpg" alt="ex time watch_04"/><br />
+<img src="http://www.instablogsimages.com/images/2010/05/29/ex-time-watch_05_xeXLG_17621.jpg" alt="ex time watch_05"/><img src="http://www.instablogsimages.com/images/2010/05/29/ex-time-watch_06_aI1Uu_17621.jpg" alt="ex time watch_06"/></p>
+	<p>Cheers Rong Yong<span class="post.id" style="display:none">544931</span>
+</p>
+					</div>
+					<div class="clear"></div>
+
+					<div class="advertisement"></div>
+					<div class="other-site-links">
+
+	<span class="other-site4">
+		<script>
+			var fbShare = {url: 'http://www.thedesignblog.org/entry/ex-time-projector-watch-shows-time-fading-out-on-the-wrist/', size: 'small', google_analytics: 'false'}
+		</script>
+		<script src="http://widgets.fbshare.me/files/fbshare.js"></script>
+	</span>
+
+	<span class="other-site5">
+		<script type="text/javascript">
+			tweetmeme_style = 'compact';
+			tweetmeme_url = 'http://www.thedesignblog.org/entry/ex-time-projector-watch-shows-time-fading-out-on-the-wrist/';
+			tweetmeme_source = 'designblog_org';
+		</script>
+		<script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script>
+	</span>
+
+	<span class="other-site1">
+		<a target='_blank' href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.thedesignblog.org%2Fentry%2Fex-time-projector-watch-shows-time-fading-out-on-the-wrist%2F&title=Ex-Time+projector+watch+shows+time+fading+out+on+the+wrist"><img src="/css-img/stumble-upon.png"></a>
+	</span>
+
+	<span class="other-site2">
+		<a href="http://digg.com/submit?phase=2&url=http%3A%2F%2Fwww.thedesignblog.org%2Fentry%2Fex-time-projector-watch-shows-time-fading-out-on-the-wrist%2F&title=Ex-Time+projector+watch+shows+time+fading+out+on+the+wrist&bodytext=It%E2%80%99s+just+evident%2C+with+projectors+going+small+we%E2%80%99ll+see+them+making+way+into+creepiest+to+weirdest+of+places.+Case+in+point%2C+the+Ex-Time..."><img src="/css-img/digg.png"></a>
+	</span>
+
+	<span class="other-site3">
+		<a href="http://reddit.com/submit?url=http%3A%2F%2Fwww.thedesignblog.org%2Fentry%2Fex-time-projector-watch-shows-time-fading-out-on-the-wrist%2F&title=Ex-Time+projector+watch+shows+time+fading+out+on+the+wrist"><img src="/css-img/reddit.png"></a>
+	</span>
+
+	<div class="clear"></div>
+</div>
+
+					<div class="perma_ads">
+						<div class="perma_ads2" style="float:left;"></div>
+							
+						<div class="perma_ads2" style="float:left;"><script type="text/javascript"><!--
+google_ad_client = "pub-9415440757655812";
+/* Thedesignblog, Permalink, LinkUnit, 20May10 */
+google_ad_slot = "6102450954";
+google_ad_width = 468;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+					</div>
+
+					<div class="clear"></div>
+					<div class="post-tags">
+						<span class="single-post-tag">Tags:</span>
+						<span class="single-post-tag"><a href="http://www.thedesignblog.org/tags/jaw-dropping/">Jaw Dropping</a>, </span><span class="single-post-tag"><a href="http://www.thedesignblog.org/tags/watches/">Watches</a>, </span><span class="single-post-tag"><a href="http://www.thedesignblog.org/tags/design/">Design</a>, </span><span class="single-post-tag"><a href="http://www.thedesignblog.org/tags/concept/">Concept</a>, </span><span class="single-post-tag"><a href="http://www.thedesignblog.org/tags/wristwatch-concept/">Wristwatch Concept</a>, </span><span class="single-post-tag"><a href="http://www.thedesignblog.org/tags/ex-time-projector-watch/">Ex-Time projector watch</a>, </span><span class="single-post-tag"><a href="http://www.thedesignblog.org/tags/extime/">Extime</a>, </span><span class="single-post-tag"><a href="http://www.thedesignblog.org/tags/projector-watch/">Projector watch</a>, </span><span class="single-post-tag"><a href="http://www.thedesignblog.org/tags/rotating-number-watch/">Rotating number watch</a>, </span><span class="single-post-tag"><a href="http://www.thedesignblog.org/tags/wristwatch/">wristwatch</a>, </span><span class="single-post-tag"><a href="http://www.thedesignblog.org/tags/lifestyle/">Lifestyle</a></span>						<!-- google_ad_section_end --> 
+						<!-- google_ad_section_start(weight=ignore) -->
+						, Related : <a href="http://www.blindsgalore.com/category.asp?dept_id=14000000">Roman Shades</a>, <a href="http://www.blindsgalore.com/category.asp?dept_id=07000000">Cellular Shades</a>, <a href="http://www.eroomservice.com">Modern Bedroom Furniture</a>, <a href="http://www.made-in-china.com/products/catlist/listsubcat/129/00/mic/Light_Industry_Daily_Use.html">Household & Daily Use</a>					</div>
+
+					<div class="perma_ads">
+						<div class="perma_ads2" style="margin-top:50px;text-align:center;margin-bottom:15px;"><!-- BEGIN STANDARD TAG - 250 x 250 - thedesignblog::Default section - DO NOT MODIFY -->
+<IFRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=250 HEIGHT=250 SRC="http://ad.103092804.com/st?ad_type=iframe&ad_size=250x250&section=809361"></IFRAME>
+<!-- END TAG --></div>
+					</div>
+					<div class="clear"></div>
+
+					<!--INFOLINKS_OFF--><div id="comments">
+						<div id="normal-comments">
+							<h1>Comments</h1><span id="comment-656383"></span>				<div class="comment-odd">										
+												
+			<div class="comment-content">
+				<img src="http://www.instablogsimages.com/user-img/m_man.jpg" />
+				<div class="comment-author-content">
+					<div class="comment-author">
+													vivek						
+						| <a href="#comment-656383">Jun 4 2010</a>
+					</div>
+						<p>all designs are very very cool ty for this informative posts man
+</p>
+				</div>
+			</div>
+
+							<div class="reply-comment"><a href="javascript:open_reply_comment('656383', '544931','http://www.thedesignblog.org/entry/ex-time-projector-watch-shows-time-fading-out-on-the-wrist/','thedesignblog')">Reply to this comment</a></div>
+
+								<div id="reply-comment656383"></div>
+			</div>						</div>
+						<div class="clear"></div>
+
+						<div class="insta-daily">
+							<div class="related-s">You might also like</div>
+															<div class="single-story-insta">
+									<div class="stry-img-insta"><a href="http://www.thedesignblog.org/entry/12-wearable-cellphone-concepts-that-add-fashion-to-your-chatter/"><img src="http://www.instablogsimages.com/images/2010/04/26/cellphone_xTekb_17621_110x110.jpg"/></a></div>
+									<div class="stry-title-insta"><a href="http://www.thedesignblog.org/entry/12-wearable-cellphone-concepts-that-add-fashion-to-your-chatter/">12 Wearable Cellphone concepts that add fashion to your chatter</a></div>
+								</div><!-- eof single-story -->
+																<div class="single-story-insta">
+									<div class="stry-img-insta"><a href="http://www.thedesignblog.org/entry/10-portable-projectors-for-instant-presentations-anywhere/"><img src="http://www.instablogsimages.com/images/2010/06/24/portable-projector_UoA3R_17621_110x110.jpg"/></a></div>
+									<div class="stry-title-insta"><a href="http://www.thedesignblog.org/entry/10-portable-projectors-for-instant-presentations-anywhere/">10 portable projectors for instant presentations anywhere</a></div>
+								</div><!-- eof single-story -->
+																<div class="single-story-insta">
+									<div class="stry-img-insta"><a href="http://www.bornrich.com/entry/top-10-unusual-luxury-wrist-watches-1/"><img src="http://www.instablogsimages.com/images/2008/12/22/luxury-watches_SByIw_48_110x110.jpg"/></a></div>
+									<div class="stry-title-insta"><a href="http://www.bornrich.com/entry/top-10-unusual-luxury-wrist-watches-1/">Top 10 unusual luxury wrist watches</a></div>
+								</div><!-- eof single-story -->
+																<div class="single-story-insta">
+									<div class="stry-img-insta"><a href="http://www.thedesignblog.org/entry/15-transparent-gadgets-that-let-you-see-through-them/"><img src="http://www.instablogsimages.com/images/2010/04/15/transparent-gadgets_nrSQJ_17621_110x110.jpg"/></a></div>
+									<div class="stry-title-insta"><a href="http://www.thedesignblog.org/entry/15-transparent-gadgets-that-let-you-see-through-them/">15 transparent gadgets that let you see through them</a></div>
+								</div><!-- eof single-story -->
+																<div class="single-story-insta">
+									<div class="stry-img-insta"><a href="http://www.bornrich.com/entry/artyas-tesla-squelette-quadri-rotor-watch-is-lightning-struck-1/"><img src="http://www.instablogsimages.com/images/2010/07/28/artya-tesla-squelette-4rotor_uOiT6_48_110x110.jpg"/></a></div>
+									<div class="stry-title-insta"><a href="http://www.bornrich.com/entry/artyas-tesla-squelette-quadri-rotor-watch-is-lightning-struck-1/">Artya's Tesla Squelette Quadri-Rotor watch is lightning struck</a></div>
+								</div><!-- eof single-story -->
+															<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+						<div class="clear"></div>
+
+														<div class="single-story-insta">
+									<div class="stry-img-insta"><a href="http://www.bornrich.com/entry/bugatti-super-sport-timepiece-by-parmigiani-1/"><img src="http://www.instablogsimages.com/images/2010/08/17/parmigiani-bugatti-super-sport-timepiece_AMHUU_48_110x110.jpg"/></a></div>
+									<div class="stry-title-insta"><a href="http://www.bornrich.com/entry/bugatti-super-sport-timepiece-by-parmigiani-1/">Bugatti Super Sport timepiece by Parmigiani</a></div>
+								</div><!-- eof single-story -->
+																<div class="single-story-insta">
+									<div class="stry-img-insta"><a href="http://www.thedesignblog.org/entry/fiil-cellphone-with-tangible-user-interface-gives-physical-form-to-digital-information/"><img src="http://www.instablogsimages.com/images/2011/01/20/fiil-_06_A4w7b_17621_110x110.jpg"/></a></div>
+									<div class="stry-title-insta"><a href="http://www.thedesignblog.org/entry/fiil-cellphone-with-tangible-user-interface-gives-physical-form-to-digital-information/">FiiL cellphone with Tangible User Interface gives physical form to digital information</a></div>
+								</div><!-- eof single-story -->
+																<div class="single-story-insta">
+									<div class="stry-img-insta"><a href="http://www.thedesignblog.org/entry/10-suitcases-that-do-more-than-just-carrying-your-load/"><img src="http://www.instablogsimages.com/images/2010/04/29/the-suitcase_cjar9_17621_110x110.jpg"/></a></div>
+									<div class="stry-title-insta"><a href="http://www.thedesignblog.org/entry/10-suitcases-that-do-more-than-just-carrying-your-load/">10 suitcases that do more than just carrying your load</a></div>
+								</div><!-- eof single-story -->
+																<div class="single-story-insta">
+									<div class="stry-img-insta"><a href="http://www.thedesignblog.org/entry/10-extraordinary-skateboards-you-ll-ride-on-someday/"><img src="http://www.instablogsimages.com/images/2010/05/07/skateboard_ijCIQ_17621_110x110.jpg"/></a></div>
+									<div class="stry-title-insta"><a href="http://www.thedesignblog.org/entry/10-extraordinary-skateboards-you-ll-ride-on-someday/">10 extraordinary skateboards you’ll ride on someday</a></div>
+								</div><!-- eof single-story -->
+																<div class="single-story-insta">
+									<div class="stry-img-insta"><a href="http://www.thedesignblog.org/entry/10-helmets-protecting-you-as-well-as-your-style/"><img src="http://www.instablogsimages.com/images/2010/05/24/helmet_KYUm5_17621_110x110.jpg"/></a></div>
+									<div class="stry-title-insta"><a href="http://www.thedesignblog.org/entry/10-helmets-protecting-you-as-well-as-your-style/">10 helmets protecting you as well as your style</a></div>
+								</div><!-- eof single-story -->
+								<div class="perma_ads2" style="margin-top:50px;text-align:center;margin-bottom:15px;"><script src='http://www15.glam.com/glamIgm.act?igm=318102555;199268861;6058'></script></div><div class="perm-ads" style="margin-top:50px;float:left;margin-bottom:15px;"></div><div class="clear"></div>
+						<div class="clear"></div>
+						<div id="add-comments">Add Your Comment</div>
+						<iframe src="http://www.instablogs.com/facebook_platform/fb_network_comment.php?post_id=544931&back_url=http://www.thedesignblog.org/entry/ex-time-projector-watch-shows-time-fading-out-on-the-wrist/&css_file=thedesignblog.css" height="690px" width="590px" frameborder=0 scrolling="no"></iframe>
+					</div><!-- EOF comments -->
+
+					<div class="perma_ads">
+						<div class="perma_ads2" style="float:left;"></div>
+					</div>
+					<div class="clear"></div>
+
+				</div><!-- EOF perma-content-main -->
+
+			</div><!-- EOF #content-box -->
+
+			<div id="lb-edit" class="white_content_video" style="display:none;"></div><!-- EOF white_content -->
+			<div id="fade" class="black_overlay"></div>
+
+			<!--INFOLINKS_OFF--><div id="content-sidebar">
+
+	
+<script>
+	function toggle_div(id)
+	{
+		var divid= document.getElementById(id);
+		if(divid.style.display == 'none')
+			divid.style.display = 'block';
+		else
+			divid.style.display = 'none';
+	}
+</script>
+
+<div class="side-ads" style="margin-left:20px; padding-bottom:10px; margin-right:10px;"><!-- ca-pub-9415440757655812/Thedesignblog_Martini_HalfPage -->
+<script type='text/javascript'>
+GA_googleFillSlot("Thedesignblog_Martini_HalfPage");
+</script></div><div class="clear"></div><div class="side-ads" style="margin-left:20px; padding-bottom:10px; margin-top:5px;"><script type="text/javascript" language="javascript" src="http://www2.glam.com/app/site/affiliate/viewChannelModule.act?mName=viewAdJs&affiliateId=318102555&adSize=300x250"></script></div><div class="clear"></div><div class="side-ads"></div><div class="clear"></div><div class="side-ads"></div><div class="clear"></div>
+<div class="follow" style="margin-bottom:10px; margin-left:10px;">
+	<a href="http://twitter.com/designblog_org"><img src="http://www.bornrich.org/images/twitter.jpg"/></a>
+	<a href="http://facebook.com/pages/The-Design-Blog/146059135476"><img src="http://www.bornrich.org/images/facebook.jpg"/></a>
+</div>
+<div class="clear"></div>
+
+<div class="inner-sidebars">
+	<div class="inner-sidebar1">
+
+<div class="side-ads" style="margin-bottom:10px; margin-left:10px;"></div><div class="clear"></div><div class="side-ads" style="margin-bottom:10px; margin-left:10px;"></div><div class="clear"></div><div class="side-ads" style="margin-bottom:10px; margin-left:10px;margin-top:-10px;"><!-- BEGIN RICH-MEDIA Burst Direct CODE -->
+<script type="text/javascript" language="JavaScript">
+rnum=Math.round(Math.random() * 100000);
+ts=String.fromCharCode(60);
+if (window.self != window.top) {nf=''} else {nf='NF/'};
+document.write(ts+'script src="http://www.burstnet.com/cgi-bin/ads/ad15198j.cgi/v=2.3S/sz=125x125A/'+rnum+'/'+nf+'RETURN-CODE/JS/">'+ts+'/script>');
+</script><noscript><a href="http://www.burstnet.com/ads/ad15198j-map.cgi/ns/v=2.3S/sz=125x125A/" target="_top">
+<img src="http://www.burstnet.com/cgi-bin/ads/ad15198j.cgi/ns/v=2.3S/sz=125x125A/" border="0" alt="Click Here" /></a>
+</noscript>
+<!-- END Burst Direct CODE --></div><div class="clear"></div>	
+	<div style="padding-bottom:10px;text-align:center;">
+		<a href="http://www.instablogs.com/instablogs-club/"><img src="http://www.instablogs.com/css-img/insta_club_badge.gif" /></a>
+	</div>
+
+<div class="market-place">
+	<h2>Instablogs Club</h2>
+	<div class="club-data">
+	<span class="club-top-img"><a href="http://www.celebguru.com/entry/from-head-to-toe-justin-bieber-wants-to-auction-it-all/"><img src="http://www.instablogsimages.com/images/2011/03/04/justin-biber_S1YHW_37600_160x120.jpg" /></a></span><div class="club-top-title"><a href="http://www.celebguru.com/entry/from-head-to-toe-justin-bieber-wants-to-auction-it-all/">From head to toe, Justin Bieber wants to auction it all</a><span> (<a href="http://www.celebguru.com">Celeb Guru</a>)</span></div><span class="club-top-img"><a href="http://www.borntechie.com/entry/browsing-the-web-gets-more-productive-with-pageguide-chrome-extension/"><img src="http://www.instablogsimages.com/images/2011/03/04/chrome_LdAbl_17756_160x120.jpg" /></a></span><div class="club-top-title"><a href="http://www.borntechie.com/entry/browsing-the-web-gets-more-productive-with-pageguide-chrome-extension/">Browsing the web gets more productive with PageGuide Chrome extension</a><span> (<a href="http://www.borntechie.com">Borntechie</a>)</span></div><span class="club-top-img"><a href="http://www.crickblog.com/entry/sl-v-aus-icc-cricket-world-cup-2011-preview-murali-malinga-mania-v-aus-pace-test/"><img src="http://www.instablogsimages.com/images/2011/03/04/sl-discuss-plans_mtpQU_17022_160x120.jpg" /></a></span><div class="club-top-title"><a href="http://www.crickblog.com/entry/sl-v-aus-icc-cricket-world-cup-2011-preview-murali-malinga-mania-v-aus-pace-test/">SL v Aus ICC Cricket World Cup 2011 Preview: Murali, Malinga Mania v Aus Pace Test</a><span> (<a href="http://www.crickblog.com">Cricket Blog</a>)</span></div><span class="club-top-img"><a href="http://www.crickblog.com/entry/lalit-modi-alleges-passport-revoked-after-failing-to-pay-bribes-to-dismiss-case/"><img src="http://www.instablogsimages.com/images/2011/03/04/lalit-modi-with-security-guards_PyaVM_17022_160x120.jpg" /></a></span><div class="club-top-title"><a href="http://www.crickblog.com/entry/lalit-modi-alleges-passport-revoked-after-failing-to-pay-bribes-to-dismiss-case/">Lalit Modi Alleges Passport Revoked After Failing to Pay Bribes to Dismiss Case</a><span> (<a href="http://www.crickblog.com">Cricket Blog</a>)</span></div><span class="club-top-img"><a href="http://www.automotto.com/entry/electric-limo-the-green-auto-rolled-out-by-rolls-royce/"><img src="http://www.instablogsimages.com/images/2011/03/04/electric-limousine-phantom-ex102_FDUAz_37821_160x120.jpg" /></a></span><div class="club-top-title"><a href="http://www.automotto.com/entry/electric-limo-the-green-auto-rolled-out-by-rolls-royce/">Electric Limo: The green auto rolled out by Rolls Royce</a><span> (<a href="http://www.automotto.com">Auto Motto</a>)</span></div><span class="club-top-img"><a href="http://www.designbuzz.com/entry/helpmate-to-unfurl-a-whole-new-gardening-experience/"><img src="http://www.instablogsimages.com/images/2011/03/04/helpmate1_NS9Wa_2263_160x120.jpg" /></a></span><div class="club-top-title"><a href="http://www.designbuzz.com/entry/helpmate-to-unfurl-a-whole-new-gardening-experience/">Helpmate to unfurl a whole new gardening experience</a><span> (<a href="http://www.designbuzz.com">Designbuzz</a>)</span></div><span class="club-top-img"><a href="http://www.designbuzz.com/entry/take-your-business-wherever-you-go-on-a-multipurpose-trailer/"><img src="http://www.instablogsimages.com/images/2011/03/04/pic-1_xlaRS_37600_160x120.jpg" /></a></span><div class="club-top-title"><a href="http://www.designbuzz.com/entry/take-your-business-wherever-you-go-on-a-multipurpose-trailer/">Take your business wherever you go on a multipurpose trailer</a><span> (<a href="http://www.designbuzz.com">Designbuzz</a>)</span></div>	</div>
+	<div class="add-news"><a class="add-news-page" href="http://www.instablogs.com/instablogs-club/club_wp_plugin.php">Add This</a></div>
+</div><div class="clear"> </div>
+	<div class="border"></div>
+	<div class="side-ads"></div><div class="clear"></div><div class="side-ads"></div><div class="clear"></div><div class="side-ads" style="margin:10px;"><!-- BEGIN STANDARD TAG - 120 x 240 - thedesignblog::Default section - DO NOT MODIFY -->
+<SCRIPT TYPE="text/javascript" SRC="http://ad.103092804.com/st?ad_type=ad&ad_size=120x240&section=809361"></SCRIPT>
+<!-- END TAG --></div><div class="clear"></div>
+	<div id="tags">
+		<h2>Tags</h2>
+		<div class="tag-content">
+			<a href="http://www.thedesignblog.org/tags/architecture/" class="ibn_tag7">architecture</a> <a href="http://www.thedesignblog.org/tags/architecture-design/" class="ibn_tag3">architecture design</a> <a href="http://www.thedesignblog.org/tags/art/" class="ibn_tag6">art</a> <a href="http://www.thedesignblog.org/tags/auto/" class="ibn_tag7">Auto</a> <a href="http://www.thedesignblog.org/tags/auto-design/" class="ibn_tag3">Auto Design</a> <a href="http://www.thedesignblog.org/tags/chair/" class="ibn_tag5">Chair</a> <a href="http://www.thedesignblog.org/tags/concept/" class="ibn_tag9">Concept</a> <a href="http://www.thedesignblog.org/tags/design/" class="ibn_tag10">design</a> <a href="http://www.thedesignblog.org/tags/eco-friendly/" class="ibn_tag8">eco-friendly</a> <a href="http://www.thedesignblog.org/tags/furniture/" class="ibn_tag9">furniture</a> <a href="http://www.thedesignblog.org/tags/gadget/" class="ibn_tag9">gadget</a> <a href="http://www.thedesignblog.org/tags/home-decor/" class="ibn_tag7">home decor</a> <a href="http://www.thedesignblog.org/tags/home-furnishing/" class="ibn_tag2">Home Furnishing</a> <a href="http://www.thedesignblog.org/tags/home-improvement/" class="ibn_tag8">home improvement</a> <a href="http://www.thedesignblog.org/tags/industrial-design/" class="ibn_tag4">industrial design</a> <a href="http://www.thedesignblog.org/tags/lamp/" class="ibn_tag5">lamp</a> <a href="http://www.thedesignblog.org/tags/lifestyle/" class="ibn_tag10">Lifestyle</a> <a href="http://www.thedesignblog.org/tags/lighting/" class="ibn_tag6">Lighting</a> <a href="http://www.thedesignblog.org/tags/modular/" class="ibn_tag4">Modular</a> <a href="http://www.thedesignblog.org/tags/multifunctional/" class="ibn_tag6">multifunctional</a> <a href="http://www.thedesignblog.org/tags/portable/" class="ibn_tag5">portable</a> <a href="http://www.thedesignblog.org/tags/sustainable/" class="ibn_tag8">Sustainable</a> <a href="http://www.thedesignblog.org/tags/tech-design/" class="ibn_tag4">tech design</a> <a href="http://www.thedesignblog.org/tags/technology/" class="ibn_tag10">Technology</a> <a href="http://www.thedesignblog.org/tags/timepiece/" class="ibn_tag3">timepiece</a> 		</div>		
+	</div><!-- EOF  tags-->
+
+	<div class="clear"></div>
+	<div class="border"></div>
+
+				<div id="archives">
+				<h2>Archives</h2>
+				
+				<div class="year" onclick="toggle_div('arch-open0')">2011</div><div id="arch-open0">					<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/201102/">February 2011</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/201101/">January 2011</a>
+					</div>
+				</div><div class="year" onclick="toggle_div('arch-open1')">2010</div><div id="arch-open1" style="display:none;">					<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/201012/">December 2010</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/201011/">November 2010</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/201010/">October 2010</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/201009/">September 2010</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/201008/">August 2010</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/201007/">July 2010</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/201006/">June 2010</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/201005/">May 2010</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/201004/">April 2010</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/201003/">March 2010</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/201002/">February 2010</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/201001/">January 2010</a>
+					</div>
+				</div><div class="year" onclick="toggle_div('arch-open2')">2009</div><div id="arch-open2" style="display:none;">					<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200912/">December 2009</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200911/">November 2009</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200910/">October 2009</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200909/">September 2009</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200908/">August 2009</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200907/">July 2009</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200906/">June 2009</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200905/">May 2009</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200904/">April 2009</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200903/">March 2009</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200902/">February 2009</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200901/">January 2009</a>
+					</div>
+				</div><div class="year" onclick="toggle_div('arch-open3')">2008</div><div id="arch-open3" style="display:none;">					<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200812/">December 2008</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200811/">November 2008</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200810/">October 2008</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200809/">September 2008</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200808/">August 2008</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200807/">July 2008</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200806/">June 2008</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200805/">May 2008</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200804/">April 2008</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200803/">March 2008</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200802/">February 2008</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200801/">January 2008</a>
+					</div>
+				</div><div class="year" onclick="toggle_div('arch-open4')">2007</div><div id="arch-open4" style="display:none;">					<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200712/">December 2007</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200711/">November 2007</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200710/">October 2007</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200709/">September 2007</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200708/">August 2007</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200707/">July 2007</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200706/">June 2007</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200705/">May 2007</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200704/">April 2007</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200703/">March 2007</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200702/">February 2007</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200701/">January 2007</a>
+					</div>
+				</div><div class="year" onclick="toggle_div('arch-open5')">2006</div><div id="arch-open5" style="display:none;">					<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200612/">December 2006</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200611/">November 2006</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200610/">October 2006</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200609/">September 2006</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200608/">August 2006</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200607/">July 2006</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200606/">June 2006</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200605/">May 2006</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200604/">April 2006</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200603/">March 2006</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200602/">February 2006</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200601/">January 2006</a>
+					</div>
+				</div><div class="year" onclick="toggle_div('arch-open6')">2005</div><div id="arch-open6" style="display:none;">					<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200512/">December 2005</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200511/">November 2005</a>
+					</div>
+									<div class="archive-data">
+						<a href="http://www.thedesignblog.org/archives/200510/">October 2005</a>
+					</div>
+								</div>
+			</div><!-- EOF archives -->
+		
+		<div class="side-ads"><script type="text/javascript" language="javascript" src="http://www2.glam.com/app/site/affiliate/viewChannelModule.act?mName=viewAdJs&affiliateId=318102555&adSize=300x250&zone=Marketplace"></script></div><div class="clear"></div>
+	</div><!-- EOF inner-sidebar1 -->
+
+		<div class="inner-sidebar2">
+
+		<div class="market-place" style="margin-bottom:5px; margin-left:10px;">
+			<script type="text/javascript">
+				GA_googleFillSlot("7Blogs_Homepage_ATF_Button");
+			</script>
+		</div>
+
+		<div class="side-ads"></div><div class="clear"></div>
+				
+
+			<div class="clear"></div>
+			
+			<div class="border"></div>
+
+			<div class="side-ads" style="padding-top:5px;margin-left:10px;"><script type="text/javascript" language="javascript" src="http://www2.glam.com/app/site/affiliate/viewChannelModule.act?mName=viewAdJs&affiliateId=318102555&adSize=160x600&zone=Marketplace"></script></div><div class="clear"></div>
+			<div class="side-ads" style="padding-top:5px;margin-left:10px;"><!-- Begin Adify tag for "WideSkyscraper" Ad Space (160x600) ID #1000001151607 -->
+<script type="text/javascript">
+	sr_adspace_id = 1000001151607;
+	sr_adspace_width = 160;
+	sr_adspace_height = 600;
+	sr_ad_new_window = true;
+	sr_adspace_type = "graphic";
+</script></div><div class="clear"></div><div class="side-ads" style="padding-top:20px;"></div><div class="clear"></div>
+			<div class="Comments">
+				<h2>Fresh Comments</h2>
+									<div class="image-content">
+						<div class="image"><img src="http://www.instablogsimages.com/user-img/m_amitbabu45gmailcom.jpg"  /></div>
+						<div class="comment-content">
+							<div class="author">
+															<a href="http://amitbabu45gmailcom.instablogs.com/">Amit Kumar</a>
+															</div>
+							on <span><a href="http://www.thedesignblog.org/entry/15-floating-structures-staring-in-the-face-of-future/#comment-681115">15 Floating Structures...</a> i wants the concept of floating sturcture for making modles on it </span>
+						</div>
+					</div>
+					<div class="clear"></div>
+									<div class="image-content">
+						<div class="image"><img src="http://www.instablogsimages.com/user-img/m_sakurayuki.jpg"  /></div>
+						<div class="comment-content">
+							<div class="author">
+															<a href="http://sakurayuki.instablogs.com/">Sakura Yuki</a>
+															</div>
+							on <span><a href="http://www.thedesignblog.org/entry/simplesee-mobile-phone-makes-chatting-easy-for-elderly-and-visually-impaired/#comment-681021">SimpleSee mobile phone makes...</a> Honestly, I don’t find this concept phone attractive. I don’t even think it will... </span>
+						</div>
+					</div>
+					<div class="clear"></div>
+									<div class="image-content">
+						<div class="image"><img src="http://www.instablogsimages.com/user-img/m_sakurayuki.jpg"  /></div>
+						<div class="comment-content">
+							<div class="author">
+															<a href="http://sakurayuki.instablogs.com/">Sakura Yuki</a>
+															</div>
+							on <span><a href="http://www.thedesignblog.org/entry/the-loop-mobile-phone-for-the-visually-impaired/#comment-681020">The Loop, mobile phone for...</a> For people with low vision who cannot wait for the fulfillment of this concept phone, the... </span>
+						</div>
+					</div>
+					<div class="clear"></div>
+									<div class="image-content">
+						<div class="image"><img src="http://www.instablogsimages.com/user-img/m_cfp123.jpg"  /></div>
+						<div class="comment-content">
+							<div class="author">
+															<a href="http://cfp123.instablogs.com/">Chennai Flowerplaza</a>
+															</div>
+							on <span><a href="http://www.thedesignblog.org/entry/slush-hydrogen-powered-chase-2053-vehicle-moves-on-both-land-and-air/#comment-680920">Slush hydrogen-powered...</a> The visit was useful. Content was really very informative. From ahmedabadonnet dot... </span>
+						</div>
+					</div>
+					<div class="clear"></div>
+									<div class="image-content">
+						<div class="image"><img src="http://www.instablogsimages.com/user-img/m_dafya126.jpg"  /></div>
+						<div class="comment-content">
+							<div class="author">
+															<a href="http://dafya126.instablogs.com/">DAFYA126</a>
+															</div>
+							on <span><a href="http://www.thedesignblog.org/entry/baja-1000-buggy-green-and-mean-desert-racer/#comment-680866">Baja 1000 Buggy: Green and...</a> Kind of reminds me of the design for the &#8221;H&#8221; drive system in the DAF YA126. ... </span>
+						</div>
+					</div>
+					<div class="clear"></div>
+							</div><!-- EOF Comments -->
+
+			<div class="clear"></div>
+
+			<div class="border"></div>
+
+			<div class="side-ads"></div><div class="clear"></div><div class="side-ads"></div><div class="clear"></div>
+			<div class="market-place">
+
+				<div class="side-ads"></div><div class="clear"></div>
+					<div class="buy"> To Advertise please <a href="http://www.instablogs.com/ad_solutions.php?b=25">Contact Us</a>.</div>
+			</div><!-- EOF market-place -->
+
+			<div class="side-ads"></div><div class="clear"></div>
+	</div><!-- EOF inner-sidebar2 -->
+
+</div><!-- EOF inner-sidebars -->
+
+<div class="clear"></div>
+<div style="margin:10px;">
+	<iframe src="http://www.facebook.com/plugins/fan.php?id=146059135476&amp;width=295&amp;height=250&amp;connections=10&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:300px; height:250px"></iframe>
+</div>	
+<div class="side-ads" style="padding-top:15px;padding-bottom:15px;margin-left:15px;"></div><div class="clear"></div>
+</div><!-- EOF #content-sidebar -->
+		</div><!-- EOF #content -->
+
+		<img src="http://www.instablogs.com/permalink_pageviews_img.php?var=544931|54|2010-05-29|5|club|25|0|0|200|www.thedesignblog.org||||74.201.117.226|%2Fentry%2Fex-time-projector-watch-shows-time-fading-out-on-the-wrist%2F|%2Fentry%2Fex-time-projector-watch-shows-time-fading-out-on-the-wrist%2F">
+<!-- start Vibrant Media IntelliTXT script section -->
+<script type="text/javascript" src="http://thedesignblog.us.intellitxt.com/intellitxt/front.asp?ipid=19075"></script>
+<!-- end Vibrant Media IntelliTXT script section -->
+<!--INFOLINKS_OFF--><div class="clear"> </div>
+
+				
+		<div id="ad-footer">
+
+			<div class="side-ads"></div>
+
+			<div class="side-ads"></div>
+
+		</div><!-- EOF #ad-footer -->
+
+		<div id="footer">
+			
+			<div id="footer-main">
+				
+				<div class="publish">Published by The <a href="http://www.instablogs.com/">Instablogs Network</a>, <a href="http://www.citizenmedia.org">Citizen Media Pvt. Ltd.</a></div>
+				<div class="copyright">Copyright &copy; Instablogs Network 2005. All rights reserved.</div>
+				<div class="footer-links">
+				<a href="http://www.instablogs.com/ad_solutions.php?b=25">Advertising</a>  |  <a href="/about-us.php">About</a> |  <a href="/disclaimer.php">Disclaimer</a> | <a href="/privacy-policy.php">Privacy Policy</a> | <a href="/terms-of-use.php">Terms of Use</a> | <a href="/contact-us.php?q=general">Contact</a>
+				</div>
+			</div><!-- EOF #footer-main -->
+
+				<div class="side-ads"></div>
+
+				<div class="side-ads"></div>
+
+		</div><!-- EOF #footer -->
+
+		</div> <!-- EOF #container -->
+
+				<div class="side-ads">
+									</div>
+
+	<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=6555593; 
+var sc_invisible=1; 
+var sc_security="8342bd39"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="counter for tumblr"
+href="http://statcounter.com/tumblr/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/6555593/0/8342bd39/1/"
+alt="counter for tumblr" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+<!-- Start of StatCounter Code Instablogs Network -->
+<script type="text/javascript">
+var sc_project=2497465; 
+var sc_invisible=1; 
+var sc_partition=66; 
+var sc_click_stat=1; 
+var sc_security="77633a20"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="web stats"
+href="http://www.statcounter.com/free_web_stats.html"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/2497465/0/77633a20/1/"
+alt="web stats" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+	<!-- Site Google Analytics -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-5747719-28");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+	<!-- End of Site Google Analytics -->
+
+
+	<!-- Channel Google Analytics -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-5515876-12");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+	<!-- End of Channel Google Analytics -->
+
+<!-- Instablogs Network Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-601944-10");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- End of Instablogs Network Google Analytics -->
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=970942;
+var sc_invisible=1;
+var sc_partition=58;
+var sc_click_stat=1;
+var sc_security="edbb62bb";
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="hit counter joomla"
+href="http://www.statcounter.com/joomla/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/970942/0/edbb62bb/1/" alt="hit
+counter joomla" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-601944-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </body>
+</html>
+
+
+
+		<!-- google_ad_section_start(weight=ignore) -->

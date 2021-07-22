@@ -1,0 +1,1411 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>Bacon (Part II) - Cooking Tests - Cooking For Engineers</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Cooking and taste tests: Bacon (Part II)" />
+		<meta name="keywords" content="cooking,cooking tests,taste tests,bacon (part ii)" />
+		
+		
+		<link href="/stylesheets/style.css?1299140152" media="screen" rel="Stylesheet" type="text/css" /><link href="/stylesheets/frontpage.css?1204359953" media="screen" rel="Stylesheet" type="text/css" />
+		
+		
+		
+		<script src="/javascripts/prototype.js?1204375575" type="text/javascript"></script>
+
+		
+		<link href="http://www.cookingforengineers.com/atom.xml" rel="alternate" title="Atom 1.0 Feed" type="application/atom+xml" />
+		
+		<link rel="shortcut icon" href="http://www.cookingforengineers.com/favicon.ico" />
+	</head>
+	<body>
+		
+		
+		
+			<div class="navbar">
+	<div style="float:left">
+		<div class="sitetitle"><a href="/">Cooking For Engineers<span class="trademark">SM</span></a></div>
+		<div class="subtitle">Have an analytical mind? Like to cook? This is the site to read!</div>
+	</div>
+	<div style="float:right; margin: 15px 8px 0 0">
+		<form method="get" action="/searchform" style="margin: 0pt; display: inline;">
+		  <input style="margin: 0pt 0pt 2px; font-size: 90%;" name="terms" size="25" maxlength="255" value="" type="text">
+		  <input style="margin: 0pt 0pt 2px; font-size: 90%;" name="search" value="Search" type="submit">
+	  </form>
+	  <br>
+	  <!-- Google Search -->
+	  <form target="_blank" action="http://www.google.com/search" style="margin: 0pt; display: inline;">
+		  <input style="font-size: 90%;" size="24" maxlength="255" value="half cup in milliliters" name="q" type="text">
+		  <input style="font-size: 90%;" name="sa" value="Convert" type="submit">
+		</form>
+	</div>	
+	<div class="clear"></div>
+	<table class="nav" cellpadding="0" cellspacing="1">
+		<tr><td width="11%" id="categorytd_Books"><a href="#" onClick="showcat('Books');return false">Books</a></td>
+			<td width="11%" id="categorytd_CookingTests"><a href="#" onClick="showcat('CookingTests');return false">Cooking&nbsp;Tests</a></td>
+			<td width="11%" id="categorytd_DiningOut"><a href="#" onClick="showcat('DiningOut');return false">Dining&nbsp;Out</a></td>
+			<td width="11%" id="categorytd_EquipmentGear"><a href="#" onClick="showcat('EquipmentGear');return false">Equipment&nbsp;&amp;&nbsp;Gear</a></td>
+			<td width="11%" id="categorytd_KitchenNotes"><a href="#" onClick="showcat('KitchenNotes');return false">Kitchen&nbsp;Notes</a></td>
+			<td width="11%" id="categorytd_OffTopic"><a href="#" onClick="showcat('OffTopic');return false">Off&nbsp;Topic</a></td>
+			<td width="11%" id="categorytd_RecipeFile"><a href="#" onClick="showcat('RecipeFile');return false">Recipe&nbsp;File</a></td>
+			<td width="11%" id="categorytd_SousVide"><a href="#" onClick="showcat('SousVide');return false">Sous&nbsp;Vide</a></td>
+			<td width="12%" id="categorytd_TestRecipes"><a href="#" onClick="showcat('TestRecipes');return false">Test&nbsp;Recipes</a></td>
+			</tr>
+	</table>
+	<script type="text/javascript">
+//<![CDATA[
+
+	function lb(id)
+	{
+		document.getElementById(id).style.border='1px solid #FFFF00';
+	}
+	function db(id)
+	{
+		document.getElementById(id).style.border='1px solid #99FF99';
+	}
+	function showcat(id)
+	{
+		var curdisplay = document.getElementById('navcat_'+id).style.display;
+		document.getElementById('navcat_Books').style.display='none';
+document.getElementById('navcat_CookingTests').style.display='none';
+document.getElementById('navcat_DiningOut').style.display='none';
+document.getElementById('navcat_EquipmentGear').style.display='none';
+document.getElementById('navcat_KitchenNotes').style.display='none';
+document.getElementById('navcat_OffTopic').style.display='none';
+document.getElementById('navcat_RecipeFile').style.display='none';
+document.getElementById('navcat_SousVide').style.display='none';
+document.getElementById('navcat_TestRecipes').style.display='none';
+
+		document.getElementById('categorytd_Books').style.border='1px solid #99FF99';
+document.getElementById('categorytd_Books').style.backgroundColor='transparent';
+document.getElementById('categorytd_CookingTests').style.border='1px solid #99FF99';
+document.getElementById('categorytd_CookingTests').style.backgroundColor='transparent';
+document.getElementById('categorytd_DiningOut').style.border='1px solid #99FF99';
+document.getElementById('categorytd_DiningOut').style.backgroundColor='transparent';
+document.getElementById('categorytd_EquipmentGear').style.border='1px solid #99FF99';
+document.getElementById('categorytd_EquipmentGear').style.backgroundColor='transparent';
+document.getElementById('categorytd_KitchenNotes').style.border='1px solid #99FF99';
+document.getElementById('categorytd_KitchenNotes').style.backgroundColor='transparent';
+document.getElementById('categorytd_OffTopic').style.border='1px solid #99FF99';
+document.getElementById('categorytd_OffTopic').style.backgroundColor='transparent';
+document.getElementById('categorytd_RecipeFile').style.border='1px solid #99FF99';
+document.getElementById('categorytd_RecipeFile').style.backgroundColor='transparent';
+document.getElementById('categorytd_SousVide').style.border='1px solid #99FF99';
+document.getElementById('categorytd_SousVide').style.backgroundColor='transparent';
+document.getElementById('categorytd_TestRecipes').style.border='1px solid #99FF99';
+document.getElementById('categorytd_TestRecipes').style.backgroundColor='transparent';
+
+		if (curdisplay != 'block')
+		{
+			document.getElementById('categorytd_'+id).style.border='1px solid #9999FF';
+			document.getElementById('categorytd_'+id).style.backgroundColor='#000060';
+			document.getElementById('navcat_'+id).style.display='block';
+		}
+		else
+		{
+			document.getElementById('navcat_'+id).style.display='none';
+		}
+	}
+	
+//]]>
+</script>
+	<div id="navcat_Books" style="display:none"><table width="100%" class="navlinks" cellpadding="0" cellspacing="1"><tr><td width="25%" id="nl248" onclick="window.location='/article/248/Everybody-Eats-Lunch-by-Cricket-Azima'" onMouseOver="lb('nl248')" onMouseOut="db('nl248')" ><a href="/article/248/Everybody-Eats-Lunch-by-Cricket-Azima" title="Books: Everybody Eats Lunch by Cricket Azima">Everybody Eats Lunch by Cricket Azima</a></td><td width="25%" id="nl229" onclick="window.location='/article/229/Joy-of-Cooking-75th-Anniversary-Edition-2006'" onMouseOver="lb('nl229')" onMouseOut="db('nl229')" ><a href="/article/229/Joy-of-Cooking-75th-Anniversary-Edition-2006" title="Books: Joy of Cooking (75th Anniversary Edition; 2006)">Joy of Cooking (75th Anniversary Edition; 2006)</a></td><td width="25%" id="nl292" onclick="window.location='/article/292/The-Sorcerers-Apprentices-by-Lisa-Abend'" onMouseOver="lb('nl292')" onMouseOut="db('nl292')" ><a href="/article/292/The-Sorcerers-Apprentices-by-Lisa-Abend" title="Books: The Sorcerer's Apprentices by Lisa Abend">The Sorcerer's Apprentices by Lisa Abend</a></td><td width="25%" id="nl220" onclick="window.location='/article/220/Toast-by-Nigel-Slater'" onMouseOver="lb('nl220')" onMouseOut="db('nl220')" ><a href="/article/220/Toast-by-Nigel-Slater" title="Books: Toast by Nigel Slater">Toast by Nigel Slater</a></td></tr><tr><td id="nl270" onclick="window.location='/article/270/Fun-Food-Facts-by-Mike-Bellino'" onMouseOver="lb('nl270')" onMouseOut="db('nl270')" ><a href="/article/270/Fun-Food-Facts-by-Mike-Bellino" title="Books: Fun Food Facts by Mike Bellino">Fun Food Facts by Mike Bellino</a></td><td id="nl242" onclick="window.location='/article/242/Kitchen-Mysteries-by-Herve-This'" onMouseOver="lb('nl242')" onMouseOut="db('nl242')" ><a href="/article/242/Kitchen-Mysteries-by-Herve-This" title="Books: Kitchen Mysteries by Herve This">Kitchen Mysteries by Herve This</a></td><td id="nl241" onclick="window.location='/article/241/The-Story-of-Tea-by-Mary-Lou-and-Robert-Heiss'" onMouseOver="lb('nl241')" onMouseOut="db('nl241')" ><a href="/article/241/The-Story-of-Tea-by-Mary-Lou-and-Robert-Heiss" title="Books: The Story of Tea by Mary Lou and Robert Heiss">The Story of Tea by Mary Lou and Robert Heiss</a></td><td id="nl233" onclick="window.location='/article/233/Vegetables-The-Culinary-Institute-of-America'" onMouseOver="lb('nl233')" onMouseOut="db('nl233')" ><a href="/article/233/Vegetables-The-Culinary-Institute-of-America" title="Books: Vegetables (The Culinary Institute of America)">Vegetables (The Culinary Institute of America)</a></td></tr><tr><td id="nl201" onclick="window.location='/article/201/Heat-by-Bill-Buford'" onMouseOver="lb('nl201')" onMouseOut="db('nl201')" ><a href="/article/201/Heat-by-Bill-Buford" title="Books: Heat by Bill Buford">Heat by Bill Buford</a></td><td id="nl254" onclick="window.location='/article/254/The-Science-of-Good-Food'" onMouseOver="lb('nl254')" onMouseOut="db('nl254')" ><a href="/article/254/The-Science-of-Good-Food" title="Books: The Science of Good Food">The Science of Good Food</a></td></tr></table></div>
+	<div id="navcat_CookingTests" style="display:none"><table width="100%" class="navlinks" cellpadding="0" cellspacing="1"><tr><td width="25%" id="nl3" onclick="window.location='/article/3/Bacon-Part-I'" onMouseOver="lb('nl3')" onMouseOut="db('nl3')" ><a href="/article/3/Bacon-Part-I" title="Cooking Tests: Bacon (Part I)">Bacon (Part I)</a></td><td width="25%" id="nl171" onclick="window.location='/article/171/Beer-Can-Chicken'" onMouseOver="lb('nl171')" onMouseOut="db('nl171')" ><a href="/article/171/Beer-Can-Chicken" title="Cooking Tests: Beer Can Chicken">Beer Can Chicken</a></td><td width="25%" id="nl173" onclick="window.location='/article/173/HFCS-Free-Cream-Sodas'" onMouseOver="lb('nl173')" onMouseOut="db('nl173')" ><a href="/article/173/HFCS-Free-Cream-Sodas" title="Cooking Tests: HFCS-Free Cream Sodas">HFCS-Free Cream Sodas</a></td><td width="25%" id="nl249" onclick="window.location='/article/249/Soft-Boiled-Eggs'" onMouseOver="lb('nl249')" onMouseOut="db('nl249')" ><a href="/article/249/Soft-Boiled-Eggs" title="Cooking Tests: Soft Boiled Eggs">Soft Boiled Eggs</a></td></tr><tr><td id="nl110" onclick="window.location='/article/110/Bacon-Part-II'" onMouseOver="lb('nl110')" onMouseOut="db('nl110')" ><a href="/article/110/Bacon-Part-II" title="Cooking Tests: Bacon (Part II)">Bacon (Part II)</a></td><td id="nl5" onclick="window.location='/article/5/Eggplant-Taste-Test'" onMouseOver="lb('nl5')" onMouseOut="db('nl5')" ><a href="/article/5/Eggplant-Taste-Test" title="Cooking Tests: Eggplant Taste Test">Eggplant Taste Test</a></td></tr></table></div>
+	<div id="navcat_DiningOut" style="display:none"><table width="100%" class="navlinks" cellpadding="0" cellspacing="1"><tr><td width="25%" id="nl202" onclick="window.location='/article/202/Ad-Hoc-Yountville-California'" onMouseOver="lb('nl202')" onMouseOut="db('nl202')" ><a href="/article/202/Ad-Hoc-Yountville-California" title="Dining Out: Ad Hoc (Yountville, California)">Ad Hoc (Yountville, California)</a></td><td width="25%" id="nl291" onclick="window.location='/article/291/Congress-Austin-Texas'" onMouseOver="lb('nl291')" onMouseOut="db('nl291')" ><a href="/article/291/Congress-Austin-Texas" title="Dining Out: Congress (Austin, Texas)">Congress (Austin, Texas)</a></td><td width="25%" id="nl235" onclick="window.location='/article/235/Michelin-Rated-Restaurants-San-Francisco-2007'" onMouseOver="lb('nl235')" onMouseOut="db('nl235')" ><a href="/article/235/Michelin-Rated-Restaurants-San-Francisco-2007" title="Dining Out: Michelin Rated Restaurants (San Francisco 2007)">Michelin Rated Restaurants (San Francisco 2007)</a></td><td width="25%" id="nl153" onclick="window.location='/article/153/Shadowbrook-Restaurant-Capitola-California'" onMouseOver="lb('nl153')" onMouseOut="db('nl153')" ><a href="/article/153/Shadowbrook-Restaurant-Capitola-California" title="Dining Out: Shadowbrook Restaurant (Capitola, California)">Shadowbrook Restaurant (Capitola, California)</a></td></tr><tr><td id="nl88" onclick="window.location='/article/88/Ahwahnee-Hotel-Kitchen-Yosemite-California'" onMouseOver="lb('nl88')" onMouseOut="db('nl88')" ><a href="/article/88/Ahwahnee-Hotel-Kitchen-Yosemite-California" title="Dining Out: Ahwahnee Hotel Kitchen (Yosemite, California)">Ahwahnee Hotel Kitchen (Yosemite, California)</a></td><td id="nl253" onclick="window.location='/article/253/Elements-Napa-California'" onMouseOver="lb('nl253')" onMouseOut="db('nl253')" ><a href="/article/253/Elements-Napa-California" title="Dining Out: Elements (Napa, California)">Elements (Napa, California)</a></td><td id="nl236" onclick="window.location='/article/236/Michelin-Rated-Restaurants-San-Francisco-2008'" onMouseOver="lb('nl236')" onMouseOut="db('nl236')" ><a href="/article/236/Michelin-Rated-Restaurants-San-Francisco-2008" title="Dining Out: Michelin Rated Restaurants (San Francisco 2008)">Michelin Rated Restaurants (San Francisco 2008)</a></td><td id="nl216" onclick="window.location='/article/216/Soul-Bar--Bistro-Auckland-New-Zealand'" onMouseOver="lb('nl216')" onMouseOut="db('nl216')" ><a href="/article/216/Soul-Bar--Bistro-Auckland-New-Zealand" title="Dining Out: Soul Bar &amp; Bistro (Auckland, New Zealand)">Soul Bar &amp; Bistro (Auckland, New Zealand)</a></td></tr><tr><td id="nl91" onclick="window.location='/article/91/Cafe-Terigo-Park-City-Utah'" onMouseOver="lb('nl91')" onMouseOut="db('nl91')" ><a href="/article/91/Cafe-Terigo-Park-City-Utah" title="Dining Out: Cafe Terigo (Park City, Utah)">Cafe Terigo (Park City, Utah)</a></td><td id="nl240" onclick="window.location='/article/240/Hard-Knox-Cafe-San-Francisco-California'" onMouseOver="lb('nl240')" onMouseOut="db('nl240')" ><a href="/article/240/Hard-Knox-Cafe-San-Francisco-California" title="Dining Out: Hard Knox Cafe (San Francisco, California)">Hard Knox Cafe (San Francisco, California)</a></td><td id="nl260" onclick="window.location='/article/260/Parcel-104-Santa-Clara-California'" onMouseOver="lb('nl260')" onMouseOut="db('nl260')" ><a href="/article/260/Parcel-104-Santa-Clara-California" title="Dining Out: Parcel 104 (Santa Clara, California)">Parcel 104 (Santa Clara, California)</a></td><td id="nl293" onclick="window.location='/article/293/The-Noble-Pig-Austin-Texas'" onMouseOver="lb('nl293')" onMouseOut="db('nl293')" ><a href="/article/293/The-Noble-Pig-Austin-Texas" title="Dining Out: The Noble Pig (Austin, Texas)">The Noble Pig (Austin, Texas)</a></td></tr><tr><td id="nl231" onclick="window.location='/article/231/Chads-Fish--Chips-Willits-California'" onMouseOver="lb('nl231')" onMouseOut="db('nl231')" ><a href="/article/231/Chads-Fish--Chips-Willits-California" title="Dining Out: Chad's Fish &amp; Chips (Willits, California)">Chad's Fish &amp; Chips (Willits, California)</a></td><td id="nl204" onclick="window.location='/article/204/Maverick-San-Francisco-California'" onMouseOver="lb('nl204')" onMouseOut="db('nl204')" ><a href="/article/204/Maverick-San-Francisco-California" title="Dining Out: Maverick (San Francisco, California)">Maverick (San Francisco, California)</a></td><td id="nl281" onclick="window.location='/article/281/Per-Se-New-York-New-York'" onMouseOver="lb('nl281')" onMouseOut="db('nl281')" ><a href="/article/281/Per-Se-New-York-New-York" title="Dining Out: Per Se (New York, New York)">Per Se (New York, New York)</a></td><td id="nl245" onclick="window.location='/article/245/Uchi-Austin-Texas'" onMouseOver="lb('nl245')" onMouseOut="db('nl245')" ><a href="/article/245/Uchi-Austin-Texas" title="Dining Out: Uchi (Austin, Texas)">Uchi (Austin, Texas)</a></td></tr><tr><td id="nl267" onclick="window.location='/article/267/Coi-San-Francisco-California'" onMouseOver="lb('nl267')" onMouseOut="db('nl267')" ><a href="/article/267/Coi-San-Francisco-California" title="Dining Out: Coi (San Francisco, California)">Coi (San Francisco, California)</a></td></tr></table></div>
+	<div id="navcat_EquipmentGear" style="display:none"><table width="100%" class="navlinks" cellpadding="0" cellspacing="1"><tr><td width="25%" id="nl205" onclick="window.location='/article/205/Bakers-Edge'" onMouseOver="lb('nl205')" onMouseOut="db('nl205')" ><a href="/article/205/Bakers-Edge" title="Equipment &amp; Gear: Baker's Edge">Baker's Edge</a></td><td width="25%" id="nl17" onclick="window.location='/article/17/Cutting-Boards'" onMouseOver="lb('nl17')" onMouseOut="db('nl17')" ><a href="/article/17/Cutting-Boards" title="Equipment &amp; Gear: Cutting Boards">Cutting Boards</a></td><td width="25%" id="nl82" onclick="window.location='/article/82/Kitchen-Scales'" onMouseOver="lb('nl82')" onMouseOut="db('nl82')" ><a href="/article/82/Kitchen-Scales" title="Equipment &amp; Gear: Kitchen Scales">Kitchen Scales</a></td><td width="25%" id="nl269" onclick="window.location='/article/269/Metrokane-Mighty-OJ-Not-recommended'" onMouseOver="lb('nl269')" onMouseOut="db('nl269')" ><a href="/article/269/Metrokane-Mighty-OJ-Not-recommended" title="Equipment &amp; Gear: Metrokane Mighty OJ (Not recommended)">Metrokane Mighty OJ (Not recommended)</a></td></tr><tr><td id="nl290" onclick="window.location='/article/290/Ceramic-Chefs-Knives-Rated'" onMouseOver="lb('nl290')" onMouseOut="db('nl290')" ><a href="/article/290/Ceramic-Chefs-Knives-Rated" title="Equipment &amp; Gear: Ceramic Chef's Knives Rated">Ceramic Chef's Knives Rated</a></td><td id="nl222" onclick="window.location='/article/222/Fathers-Day-Gift-Ideas'" onMouseOver="lb('nl222')" onMouseOut="db('nl222')" ><a href="/article/222/Fathers-Day-Gift-Ideas" title="Equipment &amp; Gear: Father's Day Gift Ideas">Father's Day Gift Ideas</a></td><td id="nl95" onclick="window.location='/article/95/Kitchen-Thermometers'" onMouseOver="lb('nl95')" onMouseOut="db('nl95')" ><a href="/article/95/Kitchen-Thermometers" title="Equipment &amp; Gear: Kitchen Thermometers">Kitchen Thermometers</a></td><td id="nl99" onclick="window.location='/article/99/Microwave-Safe-Containers'" onMouseOver="lb('nl99')" onMouseOut="db('nl99')" ><a href="/article/99/Microwave-Safe-Containers" title="Equipment &amp; Gear: Microwave Safe Containers">Microwave Safe Containers</a></td></tr><tr><td id="nl129" onclick="window.location='/article/129/Chefs-Knives-Rated'" onMouseOver="lb('nl129')" onMouseOut="db('nl129')" ><a href="/article/129/Chefs-Knives-Rated" title="Equipment &amp; Gear: Chef's Knives Rated">Chef's Knives Rated</a></td><td id="nl256" onclick="window.location='/article/256/GelPro-Mat'" onMouseOver="lb('nl256')" onMouseOut="db('nl256')" ><a href="/article/256/GelPro-Mat" title="Equipment &amp; Gear: GelPro Mat">GelPro Mat</a></td><td id="nl187" onclick="window.location='/article/187/Knife-and-Sharpening-Steel-Hardness'" onMouseOver="lb('nl187')" onMouseOut="db('nl187')" ><a href="/article/187/Knife-and-Sharpening-Steel-Hardness" title="Equipment &amp; Gear: Knife and Sharpening Steel Hardness">Knife and Sharpening Steel Hardness</a></td><td id="nl84" onclick="window.location='/article/84/NSF-Certification'" onMouseOver="lb('nl84')" onMouseOut="db('nl84')" ><a href="/article/84/NSF-Certification" title="Equipment &amp; Gear: NSF Certification">NSF Certification</a></td></tr><tr><td id="nl120" onclick="window.location='/article/120/Common-Materials-of-Cookware'" onMouseOver="lb('nl120')" onMouseOut="db('nl120')" ><a href="/article/120/Common-Materials-of-Cookware" title="Equipment &amp; Gear: Common Materials of Cookware">Common Materials of Cookware</a></td><td id="nl117" onclick="window.location='/article/117/Hefty-Serve-n-Store'" onMouseOver="lb('nl117')" onMouseOut="db('nl117')" ><a href="/article/117/Hefty-Serve-n-Store" title="Equipment &amp; Gear: Hefty Serve 'n Store">Hefty Serve 'n Store</a></td><td id="nl135" onclick="window.location='/article/135/Knife-Covers'" onMouseOver="lb('nl135')" onMouseOut="db('nl135')" ><a href="/article/135/Knife-Covers" title="Equipment &amp; Gear: Knife Covers">Knife Covers</a></td><td id="nl275" onclick="window.location='/article/275/Saber-Kitchen-Knives'" onMouseOver="lb('nl275')" onMouseOut="db('nl275')" ><a href="/article/275/Saber-Kitchen-Knives" title="Equipment &amp; Gear: Saber Kitchen Knives">Saber Kitchen Knives</a></td></tr><tr><td id="nl232" onclick="window.location='/article/232/Cooking-With-Aluminum'" onMouseOver="lb('nl232')" onMouseOut="db('nl232')" ><a href="/article/232/Cooking-With-Aluminum" title="Equipment &amp; Gear: Cooking With Aluminum">Cooking With Aluminum</a></td><td id="nl272" onclick="window.location='/article/272/Kapoosh-Knife-Block-not-recommended'" onMouseOver="lb('nl272')" onMouseOut="db('nl272')" ><a href="/article/272/Kapoosh-Knife-Block-not-recommended" title="Equipment &amp; Gear: Kapoosh Knife Block (not recommended)">Kapoosh Knife Block (not recommended)</a></td><td id="nl130" onclick="window.location='/article/130/Knife-Parts'" onMouseOver="lb('nl130')" onMouseOut="db('nl130')" ><a href="/article/130/Knife-Parts" title="Equipment &amp; Gear: Knife Parts">Knife Parts</a></td><td id="nl234" onclick="window.location='/article/234/Soda-Club-SodaStream'" onMouseOver="lb('nl234')" onMouseOut="db('nl234')" ><a href="/article/234/Soda-Club-SodaStream" title="Equipment &amp; Gear: Soda-Club (SodaStream)">Soda-Club (SodaStream)</a></td></tr><tr><td id="nl175" onclick="window.location='/article/175/CoolCover'" onMouseOver="lb('nl175')" onMouseOut="db('nl175')" ><a href="/article/175/CoolCover" title="Equipment &amp; Gear: CoolCover">CoolCover</a></td><td id="nl39" onclick="window.location='/article/39/Kitchen-Knives'" onMouseOver="lb('nl39')" onMouseOut="db('nl39')" ><a href="/article/39/Kitchen-Knives" title="Equipment &amp; Gear: Kitchen Knives">Kitchen Knives</a></td><td id="nl85" onclick="window.location='/article/85/Krups-Spice-Grinder'" onMouseOver="lb('nl85')" onMouseOut="db('nl85')" ><a href="/article/85/Krups-Spice-Grinder" title="Equipment &amp; Gear: Krups Spice Grinder">Krups Spice Grinder</a></td><td id="nl287" onclick="window.location='/article/287/Understanding-Blender-Specifications'" onMouseOver="lb('nl287')" onMouseOut="db('nl287')" ><a href="/article/287/Understanding-Blender-Specifications" title="Equipment &amp; Gear: Understanding Blender Specifications">Understanding Blender Specifications</a></td></tr></table></div>
+	<div id="navcat_KitchenNotes" style="display:none"><table width="100%" class="navlinks" cellpadding="0" cellspacing="1"><tr><td width="25%" id="nl90" onclick="window.location='/article/90/Additives'" onMouseOver="lb('nl90')" onMouseOut="db('nl90')" ><a href="/article/90/Additives" title="Kitchen Notes: Additives">Additives</a></td><td width="25%" id="nl131" onclick="window.location='/article/131/Clarified-Butter'" onMouseOver="lb('nl131')" onMouseOut="db('nl131')" ><a href="/article/131/Clarified-Butter" title="Kitchen Notes: Clarified Butter">Clarified Butter</a></td><td width="25%" id="nl51" onclick="window.location='/article/51/Glossary'" onMouseOver="lb('nl51')" onMouseOut="db('nl51')" ><a href="/article/51/Glossary" title="Kitchen Notes: Glossary">Glossary</a></td><td width="25%" id="nl96" onclick="window.location='/article/96/Pears'" onMouseOver="lb('nl96')" onMouseOut="db('nl96')" ><a href="/article/96/Pears" title="Kitchen Notes: Pears">Pears</a></td></tr><tr><td id="nl280" onclick="window.location='/article/280/Analyzing-a-Baking-Recipe'" onMouseOver="lb('nl280')" onMouseOut="db('nl280')" ><a href="/article/280/Analyzing-a-Baking-Recipe" title="Kitchen Notes: Analyzing a Baking Recipe">Analyzing a Baking Recipe</a></td><td id="nl198" onclick="window.location='/article/198/Clarified-Butter-II'" onMouseOver="lb('nl198')" onMouseOut="db('nl198')" ><a href="/article/198/Clarified-Butter-II" title="Kitchen Notes: Clarified Butter II">Clarified Butter II</a></td><td id="nl209" onclick="window.location='/article/209/Heat-Transfer-and-Browning-Foods'" onMouseOver="lb('nl209')" onMouseOut="db('nl209')" ><a href="/article/209/Heat-Transfer-and-Browning-Foods" title="Kitchen Notes: Heat Transfer and Browning Foods">Heat Transfer and Browning Foods</a></td><td id="nl40" onclick="window.location='/article/40/Saturated-Fats-Cholesterol-and-Heart-Disease'" onMouseOver="lb('nl40')" onMouseOut="db('nl40')" ><a href="/article/40/Saturated-Fats-Cholesterol-and-Heart-Disease" title="Kitchen Notes: Saturated Fats, Cholesterol, and Heart Disease">Saturated Fats, Cholesterol, and Heart Disease</a></td></tr><tr><td id="nl199" onclick="window.location='/article/199/Baguettes-Deconstructed'" onMouseOver="lb('nl199')" onMouseOut="db('nl199')" ><a href="/article/199/Baguettes-Deconstructed" title="Kitchen Notes: Baguettes Deconstructed">Baguettes Deconstructed</a></td><td id="nl184" onclick="window.location='/article/184/Curry'" onMouseOver="lb('nl184')" onMouseOut="db('nl184')" ><a href="/article/184/Curry" title="Kitchen Notes: Curry">Curry</a></td><td id="nl224" onclick="window.location='/article/224/Heat-Transfer-and-Cooking'" onMouseOver="lb('nl224')" onMouseOut="db('nl224')" ><a href="/article/224/Heat-Transfer-and-Cooking" title="Kitchen Notes: Heat Transfer and Cooking">Heat Transfer and Cooking</a></td><td id="nl78" onclick="window.location='/article/78/Scoville-Units'" onMouseOver="lb('nl78')" onMouseOut="db('nl78')" ><a href="/article/78/Scoville-Units" title="Kitchen Notes: Scoville Units">Scoville Units</a></td></tr><tr><td id="nl213" onclick="window.location='/article/213/Bakers-Yeast'" onMouseOver="lb('nl213')" onMouseOut="db('nl213')" ><a href="/article/213/Bakers-Yeast" title="Kitchen Notes: Baker's Yeast">Baker's Yeast</a></td><td id="nl97" onclick="window.location='/article/97/Cutting-Up-Chicken'" onMouseOver="lb('nl97')" onMouseOut="db('nl97')" ><a href="/article/97/Cutting-Up-Chicken" title="Kitchen Notes: Cutting Up Chicken">Cutting Up Chicken</a></td><td id="nl52" onclick="window.location='/article/52/Ingredient-Substitutions'" onMouseOver="lb('nl52')" onMouseOut="db('nl52')" ><a href="/article/52/Ingredient-Substitutions" title="Kitchen Notes: Ingredient Substitutions">Ingredient Substitutions</a></td><td id="nl50" onclick="window.location='/article/50/Smoke-Points-of-Various-Fats'" onMouseOver="lb('nl50')" onMouseOut="db('nl50')" ><a href="/article/50/Smoke-Points-of-Various-Fats" title="Kitchen Notes: Smoke Points of Various Fats">Smoke Points of Various Fats</a></td></tr><tr><td id="nl123" onclick="window.location='/article/123/Boning-Chicken-Breast'" onMouseOver="lb('nl123')" onMouseOut="db('nl123')" ><a href="/article/123/Boning-Chicken-Breast" title="Kitchen Notes: Boning Chicken Breast">Boning Chicken Breast</a></td><td id="nl211" onclick="window.location='/article/211/European-Designation-of-Quality-Labels'" onMouseOver="lb('nl211')" onMouseOut="db('nl211')" ><a href="/article/211/European-Designation-of-Quality-Labels" title="Kitchen Notes: European Designation of Quality Labels">European Designation of Quality Labels</a></td><td id="nl113" onclick="window.location='/article/113/Making-Butter'" onMouseOver="lb('nl113')" onMouseOut="db('nl113')" ><a href="/article/113/Making-Butter" title="Kitchen Notes: Making Butter">Making Butter</a></td><td id="nl155" onclick="window.location='/article/155/Tempering-Chocolate'" onMouseOver="lb('nl155')" onMouseOut="db('nl155')" ><a href="/article/155/Tempering-Chocolate" title="Kitchen Notes: Tempering Chocolate">Tempering Chocolate</a></td></tr><tr><td id="nl70" onclick="window.location='/article/70/Brining'" onMouseOver="lb('nl70')" onMouseOut="db('nl70')" ><a href="/article/70/Brining" title="Kitchen Notes: Brining">Brining</a></td><td id="nl244" onclick="window.location='/article/244/Fond-of-Fond'" onMouseOver="lb('nl244')" onMouseOut="db('nl244')" ><a href="/article/244/Fond-of-Fond" title="Kitchen Notes: Fond of Fond">Fond of Fond</a></td><td id="nl16" onclick="window.location='/article/16/Maple-Syrup-Grades'" onMouseOver="lb('nl16')" onMouseOut="db('nl16')" ><a href="/article/16/Maple-Syrup-Grades" title="Kitchen Notes: Maple Syrup Grades">Maple Syrup Grades</a></td><td id="nl30" onclick="window.location='/article/30/USDA-Beef-Quality-Grades'" onMouseOver="lb('nl30')" onMouseOut="db('nl30')" ><a href="/article/30/USDA-Beef-Quality-Grades" title="Kitchen Notes: USDA Beef Quality Grades">USDA Beef Quality Grades</a></td></tr><tr><td id="nl73" onclick="window.location='/article/73/Buying-Whole-Turkeys'" onMouseOver="lb('nl73')" onMouseOut="db('nl73')" ><a href="/article/73/Buying-Whole-Turkeys" title="Kitchen Notes: Buying Whole Turkeys">Buying Whole Turkeys</a></td><td id="nl27" onclick="window.location='/article/27/Freezing-Meats'" onMouseOver="lb('nl27')" onMouseOut="db('nl27')" ><a href="/article/27/Freezing-Meats" title="Kitchen Notes: Freezing Meats">Freezing Meats</a></td><td id="nl134" onclick="window.location='/article/134/Oven-Temperatures'" onMouseOver="lb('nl134')" onMouseOut="db('nl134')" ><a href="/article/134/Oven-Temperatures" title="Kitchen Notes: Oven Temperatures">Oven Temperatures</a></td><td id="nl63" onclick="window.location='/article/63/Wheat-Flour'" onMouseOver="lb('nl63')" onMouseOut="db('nl63')" ><a href="/article/63/Wheat-Flour" title="Kitchen Notes: Wheat Flour">Wheat Flour</a></td></tr><tr><td id="nl156" onclick="window.location='/article/156/Caviar'" onMouseOver="lb('nl156')" onMouseOut="db('nl156')" ><a href="/article/156/Caviar" title="Kitchen Notes: Caviar">Caviar</a></td></tr></table></div>
+	<div id="navcat_OffTopic" style="display:none"><table width="100%" class="navlinks" cellpadding="0" cellspacing="1"><tr><td width="25%" id="nl133" onclick="window.location='/article/133/African-Horned-Melon-or-Kiwano'" onMouseOver="lb('nl133')" onMouseOut="db('nl133')" ><a href="/article/133/African-Horned-Melon-or-Kiwano" title="Off Topic: African Horned Melon or Kiwano">African Horned Melon or Kiwano</a></td><td width="25%" id="nl23" onclick="window.location='/article/23/Donations-Please'" onMouseOver="lb('nl23')" onMouseOut="db('nl23')" ><a href="/article/23/Donations-Please" title="Off Topic: Donations Please!">Donations Please!</a></td><td width="25%" id="nl24" onclick="window.location='/article/24/Increased-Readership-and-Traffic-Woes'" onMouseOver="lb('nl24')" onMouseOut="db('nl24')" ><a href="/article/24/Increased-Readership-and-Traffic-Woes" title="Off Topic: Increased Readership and Traffic Woes">Increased Readership and Traffic Woes</a></td><td width="25%" id="nl29" onclick="window.location='/article/29/Recipe-Summaries---Standards-and-Microsoft'" onMouseOver="lb('nl29')" onMouseOut="db('nl29')" ><a href="/article/29/Recipe-Summaries---Standards-and-Microsoft" title="Off Topic: Recipe Summaries - Standards and Microsoft">Recipe Summaries - Standards and Microsoft</a></td></tr><tr><td id="nl279" onclick="window.location='/article/279/Amano-Chocolate-Contest'" onMouseOver="lb('nl279')" onMouseOut="db('nl279')" ><a href="/article/279/Amano-Chocolate-Contest" title="Off Topic: Amano Chocolate Contest">Amano Chocolate Contest</a></td><td id="nl157" onclick="window.location='/article/157/Fancy-Food-Show-Winter-2006'" onMouseOver="lb('nl157')" onMouseOut="db('nl157')" ><a href="/article/157/Fancy-Food-Show-Winter-2006" title="Off Topic: Fancy Food Show Winter 2006">Fancy Food Show Winter 2006</a></td><td id="nl210" onclick="window.location='/article/210/Inside-the-CIA'" onMouseOver="lb('nl210')" onMouseOut="db('nl210')" ><a href="/article/210/Inside-the-CIA" title="Off Topic: Inside the CIA">Inside the CIA</a></td><td id="nl167" onclick="window.location='/article/167/Santa-Cruz-Clam-Chowder-Cook-Off-2006'" onMouseOver="lb('nl167')" onMouseOut="db('nl167')" ><a href="/article/167/Santa-Cruz-Clam-Chowder-Cook-Off-2006" title="Off Topic: Santa Cruz Clam Chowder Cook Off 2006">Santa Cruz Clam Chowder Cook Off 2006</a></td></tr><tr><td id="nl179" onclick="window.location='/article/179/Asparagus-Festival'" onMouseOver="lb('nl179')" onMouseOut="db('nl179')" ><a href="/article/179/Asparagus-Festival" title="Off Topic: Asparagus Festival">Asparagus Festival</a></td><td id="nl206" onclick="window.location='/article/206/Fancy-Food-Show-Winter-2007'" onMouseOver="lb('nl206')" onMouseOut="db('nl206')" ><a href="/article/206/Fancy-Food-Show-Winter-2007" title="Off Topic: Fancy Food Show Winter 2007">Fancy Food Show Winter 2007</a></td><td id="nl119" onclick="window.location='/article/119/Iron-Chef-America'" onMouseOver="lb('nl119')" onMouseOut="db('nl119')" ><a href="/article/119/Iron-Chef-America" title="Off Topic: Iron Chef America">Iron Chef America</a></td><td id="nl25" onclick="window.location='/article/25/Some-Quotes'" onMouseOver="lb('nl25')" onMouseOut="db('nl25')" ><a href="/article/25/Some-Quotes" title="Off Topic: Some Quotes">Some Quotes</a></td></tr><tr><td id="nl243" onclick="window.location='/article/243/Chilis-Bacon-Burger'" onMouseOver="lb('nl243')" onMouseOut="db('nl243')" ><a href="/article/243/Chilis-Bacon-Burger" title="Off Topic: Chili's Bacon Burger">Chili's Bacon Burger</a></td><td id="nl262" onclick="window.location='/article/262/Fancy-Food-Show-Winter-2009'" onMouseOver="lb('nl262')" onMouseOut="db('nl262')" ><a href="/article/262/Fancy-Food-Show-Winter-2009" title="Off Topic: Fancy Food Show Winter 2009">Fancy Food Show Winter 2009</a></td><td id="nl286" onclick="window.location='/article/286/Johnsonville-Pastaville-Italian-Sausage-Recipe-Contest'" onMouseOver="lb('nl286')" onMouseOut="db('nl286')" ><a href="/article/286/Johnsonville-Pastaville-Italian-Sausage-Recipe-Contest" title="Off Topic: Johnsonville Pastaville Italian Sausage Recipe Contest">Johnsonville Pastaville Italian Sausage Recipe Contest</a></td><td id="nl57" onclick="window.location='/article/57/Surprises-In-Snacks'" onMouseOver="lb('nl57')" onMouseOut="db('nl57')" ><a href="/article/57/Surprises-In-Snacks" title="Off Topic: Surprises In Snacks">Surprises In Snacks</a></td></tr><tr><td id="nl284" onclick="window.location='/article/284/Christmas-Gift-Ideas'" onMouseOver="lb('nl284')" onMouseOut="db('nl284')" ><a href="/article/284/Christmas-Gift-Ideas" title="Off Topic: Christmas Gift Ideas">Christmas Gift Ideas</a></td><td id="nl182" onclick="window.location='/article/182/Fanpop'" onMouseOver="lb('nl182')" onMouseOut="db('nl182')" ><a href="/article/182/Fanpop" title="Off Topic: Fanpop">Fanpop</a></td><td id="nl165" onclick="window.location='/article/165/LASIK'" onMouseOver="lb('nl165')" onMouseOut="db('nl165')" ><a href="/article/165/LASIK" title="Off Topic: LASIK">LASIK</a></td><td id="nl149" onclick="window.location='/article/149/Thanksgiving-Dinner'" onMouseOver="lb('nl149')" onMouseOut="db('nl149')" ><a href="/article/149/Thanksgiving-Dinner" title="Off Topic: Thanksgiving Dinner">Thanksgiving Dinner</a></td></tr><tr><td id="nl116" onclick="window.location='/article/116/Comments-and-Forums'" onMouseOver="lb('nl116')" onMouseOut="db('nl116')" ><a href="/article/116/Comments-and-Forums" title="Off Topic: Comments and Forums">Comments and Forums</a></td><td id="nl271" onclick="window.location='/article/271/Food-Inc'" onMouseOver="lb('nl271')" onMouseOut="db('nl271')" ><a href="/article/271/Food-Inc" title="Off Topic: Food, Inc">Food, Inc</a></td><td id="nl67" onclick="window.location='/article/67/Lunar-Eclipse'" onMouseOver="lb('nl67')" onMouseOut="db('nl67')" ><a href="/article/67/Lunar-Eclipse" title="Off Topic: Lunar Eclipse">Lunar Eclipse</a></td><td id="nl251" onclick="window.location='/article/251/The-HP-Freshman-15-Contest---Win-a-Notebook-Computer'" onMouseOver="lb('nl251')" onMouseOut="db('nl251')" ><a href="/article/251/The-HP-Freshman-15-Contest---Win-a-Notebook-Computer" title="Off Topic: The HP Freshman 15 Contest - Win a Notebook Computer">The HP Freshman 15 Contest - Win a Notebook Computer</a></td></tr><tr><td id="nl118" onclick="window.location='/article/118/Comments-and-Forums-Back-Online'" onMouseOver="lb('nl118')" onMouseOut="db('nl118')" ><a href="/article/118/Comments-and-Forums-Back-Online" title="Off Topic: Comments and Forums Back Online">Comments and Forums Back Online</a></td><td id="nl263" onclick="window.location='/article/263/Foodoro'" onMouseOver="lb('nl263')" onMouseOut="db('nl263')" ><a href="/article/263/Foodoro" title="Off Topic: Foodoro">Foodoro</a></td><td id="nl7" onclick="window.location='/article/7/Orange-Juice-Shelf-Life'" onMouseOver="lb('nl7')" onMouseOut="db('nl7')" ><a href="/article/7/Orange-Juice-Shelf-Life" title="Off Topic: Orange Juice Shelf Life">Orange Juice Shelf Life</a></td><td id="nl214" onclick="window.location='/article/214/Two-New-Shows-on-Discovery-Health'" onMouseOver="lb('nl214')" onMouseOut="db('nl214')" ><a href="/article/214/Two-New-Shows-on-Discovery-Health" title="Off Topic: Two New Shows on Discovery Health">Two New Shows on Discovery Health</a></td></tr><tr><td id="nl196" onclick="window.location='/article/196/Cooking-With-Passion'" onMouseOver="lb('nl196')" onMouseOut="db('nl196')" ><a href="/article/196/Cooking-With-Passion" title="Off Topic: Cooking With Passion">Cooking With Passion</a></td><td id="nl278" onclick="window.location='/article/278/Free-Cookbook-from-Snubbr'" onMouseOver="lb('nl278')" onMouseOut="db('nl278')" ><a href="/article/278/Free-Cookbook-from-Snubbr" title="Off Topic: Free Cookbook from Snubbr">Free Cookbook from Snubbr</a></td><td id="nl217" onclick="window.location='/article/217/Orthogonal-Thought---A-New-Blog'" onMouseOver="lb('nl217')" onMouseOut="db('nl217')" ><a href="/article/217/Orthogonal-Thought---A-New-Blog" title="Off Topic: Orthogonal Thought - A New Blog">Orthogonal Thought - A New Blog</a></td><td id="nl143" onclick="window.location='/article/143/University-Chickens-911-Challenge'" onMouseOver="lb('nl143')" onMouseOut="db('nl143')" ><a href="/article/143/University-Chickens-911-Challenge" title="Off Topic: University Chicken's 911 Challenge">University Chicken's 911 Challenge</a></td></tr><tr><td id="nl183" onclick="window.location='/article/183/Cosentinos-Markets---Good-News-and-Bad-News'" onMouseOver="lb('nl183')" onMouseOut="db('nl183')" ><a href="/article/183/Cosentinos-Markets---Good-News-and-Bad-News" title="Off Topic: Cosentino's Markets - Good News and Bad News">Cosentino's Markets - Good News and Bad News</a></td><td id="nl282" onclick="window.location='/article/282/Hefty-Kitchen-Bags-with-Unscented-Odor-Block-Technology'" onMouseOver="lb('nl282')" onMouseOut="db('nl282')" ><a href="/article/282/Hefty-Kitchen-Bags-with-Unscented-Odor-Block-Technology" title="Off Topic: Hefty Kitchen Bags with Unscented Odor Block Technology">Hefty Kitchen Bags with Unscented Odor Block Technology</a></td><td id="nl228" onclick="window.location='/article/228/Pixars-Ratatouille'" onMouseOver="lb('nl228')" onMouseOut="db('nl228')" ><a href="/article/228/Pixars-Ratatouille" title="Off Topic: Pixar's Ratatouille">Pixar's Ratatouille</a></td><td id="nl22" onclick="window.location='/article/22/Welcome-to-the-New-Server'" onMouseOver="lb('nl22')" onMouseOut="db('nl22')" ><a href="/article/22/Welcome-to-the-New-Server" title="Off Topic: Welcome to the New Server">Welcome to the New Server</a></td></tr><tr><td id="nl64" onclick="window.location='/article/64/Details-of-the-Pumpkin-Carving'" onMouseOver="lb('nl64')" onMouseOut="db('nl64')" ><a href="/article/64/Details-of-the-Pumpkin-Carving" title="Off Topic: Details of the Pumpkin Carving">Details of the Pumpkin Carving</a></td><td id="nl197" onclick="window.location='/article/197/IEEE-Spectrum-Radio-Looking-for-Engineers-Who-Cook'" onMouseOver="lb('nl197')" onMouseOut="db('nl197')" ><a href="/article/197/IEEE-Spectrum-Radio-Looking-for-Engineers-Who-Cook" title="Off Topic: IEEE Spectrum Radio Looking for Engineers Who Cook">IEEE Spectrum Radio Looking for Engineers Who Cook</a></td><td id="nl1" onclick="window.location='/article/1/Pumpkin-Carving'" onMouseOver="lb('nl1')" onMouseOut="db('nl1')" ><a href="/article/1/Pumpkin-Carving" title="Off Topic: Pumpkin Carving">Pumpkin Carving</a></td><td id="nl192" onclick="window.location='/article/192/Whats-the-Most-Trans-Fat-Youve-Seen'" onMouseOver="lb('nl192')" onMouseOut="db('nl192')" ><a href="/article/192/Whats-the-Most-Trans-Fat-Youve-Seen" title="Off Topic: What's the Most Trans Fat You've Seen?">What's the Most Trans Fat You've Seen?</a></td></tr></table></div>
+	<div id="navcat_RecipeFile" style="display:none"><table width="100%" class="navlinks" cellpadding="0" cellspacing="1"><tr><td width="25%" id="nl188" onclick="window.location='/recipe/188/Anghelikas-Tsatsiki-Tzatziki'" onMouseOver="lb('nl188')" onMouseOut="db('nl188')" ><a href="/recipe/188/Anghelikas-Tsatsiki-Tzatziki" title="Recipe File: Anghelika's Tsatsiki (Tzatziki)">Anghelika's Tsatsiki (Tzatziki)</a></td><td width="25%" id="nl74" onclick="window.location='/recipe/74/Classic-Roast-Turkey'" onMouseOver="lb('nl74')" onMouseOut="db('nl74')" ><a href="/recipe/74/Classic-Roast-Turkey" title="Recipe File: Classic Roast Turkey">Classic Roast Turkey</a></td><td width="25%" id="nl43" onclick="window.location='/recipe/43/Homemade-Mayonnaise'" onMouseOver="lb('nl43')" onMouseOut="db('nl43')" ><a href="/recipe/43/Homemade-Mayonnaise" title="Recipe File: Homemade Mayonnaise">Homemade Mayonnaise</a></td><td width="25%" id="nl92" onclick="window.location='/recipe/92/Poached-Fish'" onMouseOver="lb('nl92')" onMouseOut="db('nl92')" ><a href="/recipe/92/Poached-Fish" title="Recipe File: Poached Fish">Poached Fish</a></td></tr><tr><td id="nl163" onclick="window.location='/recipe/163/Asparagus-with-Almonds'" onMouseOver="lb('nl163')" onMouseOut="db('nl163')" ><a href="/recipe/163/Asparagus-with-Almonds" title="Recipe File: Asparagus with Almonds">Asparagus with Almonds</a></td><td id="nl98" onclick="window.location='/recipe/98/Condensed-Milk-Fudge'" onMouseOver="lb('nl98')" onMouseOut="db('nl98')" ><a href="/recipe/98/Condensed-Milk-Fudge" title="Recipe File: Condensed Milk Fudge">Condensed Milk Fudge</a></td><td id="nl104" onclick="window.location='/recipe/104/Kelloggs-Rice-Krispies-Treats'" onMouseOver="lb('nl104')" onMouseOut="db('nl104')" ><a href="/recipe/104/Kelloggs-Rice-Krispies-Treats" title="Recipe File: Kellogg's Rice Krispies Treats">Kellogg's Rice Krispies Treats</a></td><td id="nl38" onclick="window.location='/recipe/38/Prime-Rib-or-Standing-Rib-Roast'" onMouseOver="lb('nl38')" onMouseOut="db('nl38')" ><a href="/recipe/38/Prime-Rib-or-Standing-Rib-Roast" title="Recipe File: Prime Rib or Standing Rib Roast">Prime Rib or Standing Rib Roast</a></td></tr><tr><td id="nl103" onclick="window.location='/recipe/103/Baked-Cinnamon-Apple'" onMouseOver="lb('nl103')" onMouseOut="db('nl103')" ><a href="/recipe/103/Baked-Cinnamon-Apple" title="Recipe File: Baked Cinnamon Apple">Baked Cinnamon Apple</a></td><td id="nl152" onclick="window.location='/recipe/152/Cooked-Egg-Nog'" onMouseOver="lb('nl152')" onMouseOut="db('nl152')" ><a href="/recipe/152/Cooked-Egg-Nog" title="Recipe File: Cooked Egg Nog">Cooked Egg Nog</a></td><td id="nl33" onclick="window.location='/recipe/33/Lemon-Bars'" onMouseOver="lb('nl33')" onMouseOut="db('nl33')" ><a href="/recipe/33/Lemon-Bars" title="Recipe File: Lemon Bars">Lemon Bars</a></td><td id="nl189" onclick="window.location='/recipe/189/Prosciutto-e-Melone'" onMouseOver="lb('nl189')" onMouseOut="db('nl189')" ><a href="/recipe/189/Prosciutto-e-Melone" title="Recipe File: Prosciutto e Melone">Prosciutto e Melone</a></td></tr><tr><td id="nl108" onclick="window.location='/recipe/108/Banana-Nut-Bread'" onMouseOver="lb('nl108')" onMouseOut="db('nl108')" ><a href="/recipe/108/Banana-Nut-Bread" title="Recipe File: Banana Nut Bread">Banana Nut Bread</a></td><td id="nl48" onclick="window.location='/recipe/48/Corn-Fritters'" onMouseOver="lb('nl48')" onMouseOut="db('nl48')" ><a href="/recipe/48/Corn-Fritters" title="Recipe File: Corn Fritters">Corn Fritters</a></td><td id="nl121" onclick="window.location='/recipe/121/Lemon-Iced-Tea'" onMouseOver="lb('nl121')" onMouseOut="db('nl121')" ><a href="/recipe/121/Lemon-Iced-Tea" title="Recipe File: Lemon Iced Tea">Lemon Iced Tea</a></td><td id="nl65" onclick="window.location='/recipe/65/Pumpkin-Pie'" onMouseOver="lb('nl65')" onMouseOut="db('nl65')" ><a href="/recipe/65/Pumpkin-Pie" title="Recipe File: Pumpkin Pie">Pumpkin Pie</a></td></tr><tr><td id="nl246" onclick="window.location='/recipe/246/Barbecue-Pork-Ribs-Baby-Back-or-Spare'" onMouseOver="lb('nl246')" onMouseOut="db('nl246')" ><a href="/recipe/246/Barbecue-Pork-Ribs-Baby-Back-or-Spare" title="Recipe File: Barbecue Pork Ribs (Baby Back or Spare)">Barbecue Pork Ribs (Baby Back or Spare)</a></td><td id="nl79" onclick="window.location='/recipe/79/Cranberry-Sauce'" onMouseOver="lb('nl79')" onMouseOut="db('nl79')" ><a href="/recipe/79/Cranberry-Sauce" title="Recipe File: Cranberry Sauce">Cranberry Sauce</a></td><td id="nl124" onclick="window.location='/recipe/124/Lime-Marinated-Grilled-Chicken'" onMouseOver="lb('nl124')" onMouseOut="db('nl124')" ><a href="/recipe/124/Lime-Marinated-Grilled-Chicken" title="Recipe File: Lime Marinated Grilled Chicken">Lime Marinated Grilled Chicken</a></td><td id="nl227" onclick="window.location='/recipe/227/Ratatouille'" onMouseOver="lb('nl227')" onMouseOut="db('nl227')" ><a href="/recipe/227/Ratatouille" title="Recipe File: Ratatouille">Ratatouille</a></td></tr><tr><td id="nl35" onclick="window.location='/recipe/35/Basic-Granita'" onMouseOver="lb('nl35')" onMouseOut="db('nl35')" ><a href="/recipe/35/Basic-Granita" title="Recipe File: Basic Granita">Basic Granita</a></td><td id="nl194" onclick="window.location='/recipe/194/Cream-of-Mushroom-Soup'" onMouseOver="lb('nl194')" onMouseOut="db('nl194')" ><a href="/recipe/194/Cream-of-Mushroom-Soup" title="Recipe File: Cream of Mushroom Soup">Cream of Mushroom Soup</a></td><td id="nl66" onclick="window.location='/recipe/66/Limeade'" onMouseOver="lb('nl66')" onMouseOut="db('nl66')" ><a href="/recipe/66/Limeade" title="Recipe File: Limeade">Limeade</a></td><td id="nl101" onclick="window.location='/recipe/101/Roasted-Asparagus-Spears'" onMouseOver="lb('nl101')" onMouseOut="db('nl101')" ><a href="/recipe/101/Roasted-Asparagus-Spears" title="Recipe File: Roasted Asparagus Spears">Roasted Asparagus Spears</a></td></tr><tr><td id="nl47" onclick="window.location='/recipe/47/Basic-Pancakes'" onMouseOver="lb('nl47')" onMouseOut="db('nl47')" ><a href="/recipe/47/Basic-Pancakes" title="Recipe File: Basic Pancakes">Basic Pancakes</a></td><td id="nl107" onclick="window.location='/recipe/107/Creamy-Garlic-Mashed-Potatoes'" onMouseOver="lb('nl107')" onMouseOut="db('nl107')" ><a href="/recipe/107/Creamy-Garlic-Mashed-Potatoes" title="Recipe File: Creamy Garlic Mashed Potatoes">Creamy Garlic Mashed Potatoes</a></td><td id="nl230" onclick="window.location='/recipe/230/Macaroni-and-Cheese-Bake'" onMouseOver="lb('nl230')" onMouseOut="db('nl230')" ><a href="/recipe/230/Macaroni-and-Cheese-Bake" title="Recipe File: Macaroni and Cheese Bake">Macaroni and Cheese Bake</a></td><td id="nl174" onclick="window.location='/recipe/174/Rosemary-Lamb-Chops'" onMouseOver="lb('nl174')" onMouseOut="db('nl174')" ><a href="/recipe/174/Rosemary-Lamb-Chops" title="Recipe File: Rosemary Lamb Chops">Rosemary Lamb Chops</a></td></tr><tr><td id="nl44" onclick="window.location='/recipe/44/Basic-Vinaigrette-Salad-Dressing'" onMouseOver="lb('nl44')" onMouseOut="db('nl44')" ><a href="/recipe/44/Basic-Vinaigrette-Salad-Dressing" title="Recipe File: Basic Vinaigrette Salad Dressing">Basic Vinaigrette Salad Dressing</a></td><td id="nl32" onclick="window.location='/recipe/32/Creme-Brulee-Crme-Brle'" onMouseOver="lb('nl32')" onMouseOut="db('nl32')" ><a href="/recipe/32/Creme-Brulee-Crme-Brle" title="Recipe File: Creme Brulee (Crème Brûlée)">Creme Brulee (Crème Brûlée)</a></td><td id="nl177" onclick="window.location='/recipe/177/Matzo-Matzah-Ball-Soup'" onMouseOver="lb('nl177')" onMouseOut="db('nl177')" ><a href="/recipe/177/Matzo-Matzah-Ball-Soup" title="Recipe File: Matzo (Matzah) Ball Soup">Matzo (Matzah) Ball Soup</a></td><td id="nl53" onclick="window.location='/recipe/53/Salsa-Cruda'" onMouseOver="lb('nl53')" onMouseOut="db('nl53')" ><a href="/recipe/53/Salsa-Cruda" title="Recipe File: Salsa Cruda">Salsa Cruda</a></td></tr><tr><td id="nl122" onclick="window.location='/recipe/122/Beef-Stroganoff'" onMouseOver="lb('nl122')" onMouseOut="db('nl122')" ><a href="/recipe/122/Beef-Stroganoff" title="Recipe File: Beef Stroganoff">Beef Stroganoff</a></td><td id="nl158" onclick="window.location='/recipe/158/Dark-Chocolate-Brownies'" onMouseOver="lb('nl158')" onMouseOut="db('nl158')" ><a href="/recipe/158/Dark-Chocolate-Brownies" title="Recipe File: Dark Chocolate Brownies">Dark Chocolate Brownies</a></td><td id="nl36" onclick="window.location='/recipe/36/Meat-Lasagna'" onMouseOver="lb('nl36')" onMouseOut="db('nl36')" ><a href="/recipe/36/Meat-Lasagna" title="Recipe File: Meat Lasagna">Meat Lasagna</a></td><td id="nl8" onclick="window.location='/recipe/8/Sauteed-Okra-with-Roasted-Red-Peppers'" onMouseOver="lb('nl8')" onMouseOut="db('nl8')" ><a href="/recipe/8/Sauteed-Okra-with-Roasted-Red-Peppers" title="Recipe File: Sauteed Okra with Roasted Red Peppers">Sauteed Okra with Roasted Red Peppers</a></td></tr><tr><td id="nl154" onclick="window.location='/recipe/154/Biscotti'" onMouseOver="lb('nl154')" onMouseOut="db('nl154')" ><a href="/recipe/154/Biscotti" title="Recipe File: Biscotti">Biscotti</a></td><td id="nl160" onclick="window.location='/recipe/160/Dark-Chocolate-Souffle'" onMouseOver="lb('nl160')" onMouseOut="db('nl160')" ><a href="/recipe/160/Dark-Chocolate-Souffle" title="Recipe File: Dark Chocolate Souffle">Dark Chocolate Souffle</a></td><td id="nl55" onclick="window.location='/recipe/55/Mini-Hamburgers'" onMouseOver="lb('nl55')" onMouseOut="db('nl55')" ><a href="/recipe/55/Mini-Hamburgers" title="Recipe File: Mini Hamburgers">Mini Hamburgers</a></td><td id="nl127" onclick="window.location='/recipe/127/Shepherds-Pie-Cottage-Pie'" onMouseOver="lb('nl127')" onMouseOut="db('nl127')" ><a href="/recipe/127/Shepherds-Pie-Cottage-Pie" title="Recipe File: Shepherd's Pie (Cottage Pie)">Shepherd's Pie (Cottage Pie)</a></td></tr><tr><td id="nl288" onclick="window.location='/recipe/288/Biscuits-Southern-Buttermilk-Biscuits'" onMouseOver="lb('nl288')" onMouseOut="db('nl288')" ><a href="/recipe/288/Biscuits-Southern-Buttermilk-Biscuits" title="Recipe File: Biscuits (Southern Buttermilk Biscuits)">Biscuits (Southern Buttermilk Biscuits)</a></td><td id="nl147" onclick="window.location='/recipe/147/Dirty-Rice'" onMouseOver="lb('nl147')" onMouseOut="db('nl147')" ><a href="/recipe/147/Dirty-Rice" title="Recipe File: Dirty Rice">Dirty Rice</a></td><td id="nl151" onclick="window.location='/recipe/151/Mulled-Cider-Spiced-Apple-Cider'" onMouseOver="lb('nl151')" onMouseOut="db('nl151')" ><a href="/recipe/151/Mulled-Cider-Spiced-Apple-Cider" title="Recipe File: Mulled Cider (Spiced Apple Cider)">Mulled Cider (Spiced Apple Cider)</a></td><td id="nl15" onclick="window.location='/recipe/15/Shrimp-Scampi'" onMouseOver="lb('nl15')" onMouseOut="db('nl15')" ><a href="/recipe/15/Shrimp-Scampi" title="Recipe File: Shrimp Scampi">Shrimp Scampi</a></td></tr><tr><td id="nl136" onclick="window.location='/recipe/136/Braised-Brussels-Sprouts'" onMouseOver="lb('nl136')" onMouseOut="db('nl136')" ><a href="/recipe/136/Braised-Brussels-Sprouts" title="Recipe File: Braised Brussels Sprouts">Braised Brussels Sprouts</a></td><td id="nl255" onclick="window.location='/recipe/255/Dulce-de-Leche'" onMouseOver="lb('nl255')" onMouseOut="db('nl255')" ><a href="/recipe/255/Dulce-de-Leche" title="Recipe File: Dulce de Leche">Dulce de Leche</a></td><td id="nl185" onclick="window.location='/recipe/185/Nestle-Toll-House-Chocolate-Chip-Cookies'" onMouseOver="lb('nl185')" onMouseOut="db('nl185')" ><a href="/recipe/185/Nestle-Toll-House-Chocolate-Chip-Cookies" title="Recipe File: Nestle Toll House Chocolate Chip Cookies">Nestle Toll House Chocolate Chip Cookies</a></td><td id="nl26" onclick="window.location='/recipe/26/Simple-Tiramisu'" onMouseOver="lb('nl26')" onMouseOut="db('nl26')" ><a href="/recipe/26/Simple-Tiramisu" title="Recipe File: Simple Tiramisu">Simple Tiramisu</a></td></tr><tr><td id="nl268" onclick="window.location='/recipe/268/Buffalo-Chicken-Chili'" onMouseOver="lb('nl268')" onMouseOut="db('nl268')" ><a href="/recipe/268/Buffalo-Chicken-Chili" title="Recipe File: Buffalo Chicken Chili">Buffalo Chicken Chili</a></td><td id="nl203" onclick="window.location='/recipe/203/Egg-Custard-with-Clams'" onMouseOver="lb('nl203')" onMouseOut="db('nl203')" ><a href="/recipe/203/Egg-Custard-with-Clams" title="Recipe File: Egg Custard with Clams">Egg Custard with Clams</a></td><td id="nl86" onclick="window.location='/recipe/86/Okra-Stew-Fast-Gumbo'" onMouseOver="lb('nl86')" onMouseOut="db('nl86')" ><a href="/recipe/86/Okra-Stew-Fast-Gumbo" title="Recipe File: Okra Stew (Fast Gumbo)">Okra Stew (Fast Gumbo)</a></td><td id="nl28" onclick="window.location='/recipe/28/Slow-Simmered-Spicy-Barbeque-Sauce'" onMouseOver="lb('nl28')" onMouseOut="db('nl28')" ><a href="/recipe/28/Slow-Simmered-Spicy-Barbeque-Sauce" title="Recipe File: Slow Simmered Spicy Barbeque Sauce">Slow Simmered Spicy Barbeque Sauce</a></td></tr><tr><td id="nl180" onclick="window.location='/recipe/180/Buttercream-Frosting-American'" onMouseOver="lb('nl180')" onMouseOut="db('nl180')" ><a href="/recipe/180/Buttercream-Frosting-American" title="Recipe File: Buttercream Frosting (American)">Buttercream Frosting (American)</a></td><td id="nl159" onclick="window.location='/recipe/159/English-Toffee'" onMouseOver="lb('nl159')" onMouseOut="db('nl159')" ><a href="/recipe/159/English-Toffee" title="Recipe File: English Toffee">English Toffee</a></td><td id="nl200" onclick="window.location='/recipe/200/Osso-Buco'" onMouseOver="lb('nl200')" onMouseOut="db('nl200')" ><a href="/recipe/200/Osso-Buco" title="Recipe File: Osso Buco">Osso Buco</a></td><td id="nl144" onclick="window.location='/recipe/144/Smoked-Beer-Can-Turkey'" onMouseOver="lb('nl144')" onMouseOut="db('nl144')" ><a href="/recipe/144/Smoked-Beer-Can-Turkey" title="Recipe File: Smoked Beer Can Turkey">Smoked Beer Can Turkey</a></td></tr><tr><td id="nl9" onclick="window.location='/recipe/9/Campbells-Green-Bean-Casserole'" onMouseOver="lb('nl9')" onMouseOut="db('nl9')" ><a href="/recipe/9/Campbells-Green-Bean-Casserole" title="Recipe File: Campbell's Green Bean Casserole">Campbell's Green Bean Casserole</a></td><td id="nl34" onclick="window.location='/recipe/34/Garlic-Roasted-Potatoes'" onMouseOver="lb('nl34')" onMouseOut="db('nl34')" ><a href="/recipe/34/Garlic-Roasted-Potatoes" title="Recipe File: Garlic Roasted Potatoes">Garlic Roasted Potatoes</a></td><td id="nl81" onclick="window.location='/recipe/81/Oven-Baked-Chicken-and-Rice'" onMouseOver="lb('nl81')" onMouseOut="db('nl81')" ><a href="/recipe/81/Oven-Baked-Chicken-and-Rice" title="Recipe File: Oven Baked Chicken and Rice">Oven Baked Chicken and Rice</a></td><td id="nl239" onclick="window.location='/recipe/239/Soft-Boiled-Eggs'" onMouseOver="lb('nl239')" onMouseOut="db('nl239')" ><a href="/recipe/239/Soft-Boiled-Eggs" title="Recipe File: Soft Boiled Eggs">Soft Boiled Eggs</a></td></tr><tr><td id="nl181" onclick="window.location='/recipe/181/Cheesecake-Cupcakes'" onMouseOver="lb('nl181')" onMouseOut="db('nl181')" ><a href="/recipe/181/Cheesecake-Cupcakes" title="Recipe File: Cheesecake Cupcakes">Cheesecake Cupcakes</a></td><td id="nl132" onclick="window.location='/recipe/132/Gravlax'" onMouseOver="lb('nl132')" onMouseOut="db('nl132')" ><a href="/recipe/132/Gravlax" title="Recipe File: Gravlax">Gravlax</a></td><td id="nl45" onclick="window.location='/recipe/45/Oven-Baked-Spare-Ribs---Two-Ways'" onMouseOver="lb('nl45')" onMouseOut="db('nl45')" ><a href="/recipe/45/Oven-Baked-Spare-Ribs---Two-Ways" title="Recipe File: Oven Baked Spare Ribs - Two Ways">Oven Baked Spare Ribs - Two Ways</a></td><td id="nl83" onclick="window.location='/recipe/83/Strawberry-Glazed-Angel-Food-Cake'" onMouseOver="lb('nl83')" onMouseOut="db('nl83')" ><a href="/recipe/83/Strawberry-Glazed-Angel-Food-Cake" title="Recipe File: Strawberry Glazed Angel Food Cake">Strawberry Glazed Angel Food Cake</a></td></tr><tr><td id="nl89" onclick="window.location='/recipe/89/Cheesecake-Plain-New-York-Style'" onMouseOver="lb('nl89')" onMouseOut="db('nl89')" ><a href="/recipe/89/Cheesecake-Plain-New-York-Style" title="Recipe File: Cheesecake, Plain New York Style">Cheesecake, Plain New York Style</a></td><td id="nl111" onclick="window.location='/recipe/111/Grilled-Artichokes'" onMouseOver="lb('nl111')" onMouseOut="db('nl111')" ><a href="/recipe/111/Grilled-Artichokes" title="Recipe File: Grilled Artichokes">Grilled Artichokes</a></td><td id="nl37" onclick="window.location='/recipe/37/Pan-Fried-Fish-Fillets'" onMouseOver="lb('nl37')" onMouseOut="db('nl37')" ><a href="/recipe/37/Pan-Fried-Fish-Fillets" title="Recipe File: Pan Fried Fish Fillets">Pan Fried Fish Fillets</a></td><td id="nl4" onclick="window.location='/recipe/4/Sweet-Corn-Bread'" onMouseOver="lb('nl4')" onMouseOut="db('nl4')" ><a href="/recipe/4/Sweet-Corn-Bread" title="Recipe File: Sweet Corn Bread">Sweet Corn Bread</a></td></tr><tr><td id="nl59" onclick="window.location='/recipe/59/Chicken--Mushroom-Marsala'" onMouseOver="lb('nl59')" onMouseOut="db('nl59')" ><a href="/recipe/59/Chicken--Mushroom-Marsala" title="Recipe File: Chicken &amp; Mushroom Marsala">Chicken &amp; Mushroom Marsala</a></td><td id="nl20" onclick="window.location='/recipe/20/Grilled-Pork-Chops'" onMouseOver="lb('nl20')" onMouseOut="db('nl20')" ><a href="/recipe/20/Grilled-Pork-Chops" title="Recipe File: Grilled Pork Chops">Grilled Pork Chops</a></td><td id="nl71" onclick="window.location='/recipe/71/Pan-Seared-Scallops-with-Roasted-Red-Pepper-Sauce'" onMouseOver="lb('nl71')" onMouseOut="db('nl71')" ><a href="/recipe/71/Pan-Seared-Scallops-with-Roasted-Red-Pepper-Sauce" title="Recipe File: Pan Seared Scallops with Roasted Red Pepper Sauce">Pan Seared Scallops with Roasted Red Pepper Sauce</a></td><td id="nl42" onclick="window.location='/recipe/42/Traditional-Chicken-Pot-Pie'" onMouseOver="lb('nl42')" onMouseOut="db('nl42')" ><a href="/recipe/42/Traditional-Chicken-Pot-Pie" title="Recipe File: Traditional Chicken Pot Pie">Traditional Chicken Pot Pie</a></td></tr><tr><td id="nl178" onclick="window.location='/recipe/178/Chocolate-Cake'" onMouseOver="lb('nl178')" onMouseOut="db('nl178')" ><a href="/recipe/178/Chocolate-Cake" title="Recipe File: Chocolate Cake">Chocolate Cake</a></td><td id="nl31" onclick="window.location='/recipe/31/Grilled-Porterhouse-or-T-Bone-Steak'" onMouseOver="lb('nl31')" onMouseOut="db('nl31')" ><a href="/recipe/31/Grilled-Porterhouse-or-T-Bone-Steak" title="Recipe File: Grilled Porterhouse or T-Bone Steak">Grilled Porterhouse or T-Bone Steak</a></td><td id="nl164" onclick="window.location='/recipe/164/Parmesan-Garlic-Bread'" onMouseOver="lb('nl164')" onMouseOut="db('nl164')" ><a href="/recipe/164/Parmesan-Garlic-Bread" title="Recipe File: Parmesan Garlic Bread">Parmesan Garlic Bread</a></td><td id="nl18" onclick="window.location='/recipe/18/Traditional-Pecan-Pie'" onMouseOver="lb('nl18')" onMouseOut="db('nl18')" ><a href="/recipe/18/Traditional-Pecan-Pie" title="Recipe File: Traditional Pecan Pie">Traditional Pecan Pie</a></td></tr><tr><td id="nl195" onclick="window.location='/recipe/195/Chocolate-Truffles'" onMouseOver="lb('nl195')" onMouseOut="db('nl195')" ><a href="/recipe/195/Chocolate-Truffles" title="Recipe File: Chocolate Truffles">Chocolate Truffles</a></td><td id="nl10" onclick="window.location='/recipe/10/Grilled-Salmon'" onMouseOver="lb('nl10')" onMouseOut="db('nl10')" ><a href="/recipe/10/Grilled-Salmon" title="Recipe File: Grilled Salmon">Grilled Salmon</a></td><td id="nl58" onclick="window.location='/recipe/58/Peanut-Butter-Cookies'" onMouseOver="lb('nl58')" onMouseOut="db('nl58')" ><a href="/recipe/58/Peanut-Butter-Cookies" title="Recipe File: Peanut Butter Cookies">Peanut Butter Cookies</a></td><td id="nl62" onclick="window.location='/recipe/62/Tuna-Noodle-Casserole'" onMouseOver="lb('nl62')" onMouseOut="db('nl62')" ><a href="/recipe/62/Tuna-Noodle-Casserole" title="Recipe File: Tuna Noodle Casserole">Tuna Noodle Casserole</a></td></tr><tr><td id="nl112" onclick="window.location='/recipe/112/Clam-Chowder-New-England-Style'" onMouseOver="lb('nl112')" onMouseOut="db('nl112')" ><a href="/recipe/112/Clam-Chowder-New-England-Style" title="Recipe File: Clam Chowder, New England Style">Clam Chowder, New England Style</a></td><td id="nl6" onclick="window.location='/recipe/6/Grilled-Skinless-Chicken-Breast'" onMouseOver="lb('nl6')" onMouseOut="db('nl6')" ><a href="/recipe/6/Grilled-Skinless-Chicken-Breast" title="Recipe File: Grilled Skinless Chicken Breast">Grilled Skinless Chicken Breast</a></td><td id="nl168" onclick="window.location='/recipe/168/Pecan-Coffee-Cake'" onMouseOver="lb('nl168')" onMouseOut="db('nl168')" ><a href="/recipe/168/Pecan-Coffee-Cake" title="Recipe File: Pecan Coffee Cake">Pecan Coffee Cake</a></td><td id="nl75" onclick="window.location='/recipe/75/Turkey-or-Chicken-Stock'" onMouseOver="lb('nl75')" onMouseOut="db('nl75')" ><a href="/recipe/75/Turkey-or-Chicken-Stock" title="Recipe File: Turkey or Chicken Stock">Turkey or Chicken Stock</a></td></tr></table></div>
+	<div id="navcat_SousVide" style="display:none"><table width="100%" class="navlinks" cellpadding="0" cellspacing="1"><tr><td width="25%" id="nl283" onclick="window.location='/article/283/An-Introduction-to-Sous-Vide-Cooking'" onMouseOver="lb('nl283')" onMouseOut="db('nl283')" ><a href="/article/283/An-Introduction-to-Sous-Vide-Cooking" title="Sous Vide: An Introduction to Sous Vide Cooking">An Introduction to Sous Vide Cooking</a></td><td width="25%" id="nl289" onclick="window.location='/article/289/Sous-Vide-Cooking-at-Home-Setup-Guide'" onMouseOver="lb('nl289')" onMouseOut="db('nl289')" ><a href="/article/289/Sous-Vide-Cooking-at-Home-Setup-Guide" title="Sous Vide: Sous Vide Cooking at Home Setup Guide">Sous Vide Cooking at Home Setup Guide</a></td></tr></table></div>
+	<div id="navcat_TestRecipes" style="display:none"><table width="100%" class="navlinks" cellpadding="0" cellspacing="1"><tr><td width="25%" id="nl14" onclick="window.location='/recipe/14/Albers-Corn-Bread'" onMouseOver="lb('nl14')" onMouseOut="db('nl14')" ><a href="/recipe/14/Albers-Corn-Bread" title="Test Recipes: Albers Corn Bread">Albers Corn Bread</a></td><td width="25%" id="nl19" onclick="window.location='/recipe/19/Erics-Chocolate-Pecan-Pie'" onMouseOver="lb('nl19')" onMouseOut="db('nl19')" ><a href="/recipe/19/Erics-Chocolate-Pecan-Pie" title="Test Recipes: Eric's Chocolate Pecan Pie">Eric's Chocolate Pecan Pie</a></td><td width="25%" id="nl215" onclick="window.location='/recipe/215/Hot-Cross-Buns-Delia-Smiths'" onMouseOver="lb('nl215')" onMouseOut="db('nl215')" ><a href="/recipe/215/Hot-Cross-Buns-Delia-Smiths" title="Test Recipes: Hot Cross Buns (Delia Smith's)">Hot Cross Buns (Delia Smith's)</a></td><td width="25%" id="nl172" onclick="window.location='/recipe/172/Pan-Pizza'" onMouseOver="lb('nl172')" onMouseOut="db('nl172')" ><a href="/recipe/172/Pan-Pizza" title="Test Recipes: Pan Pizza">Pan Pizza</a></td></tr><tr><td id="nl77" onclick="window.location='/recipe/77/Asian-Taco'" onMouseOver="lb('nl77')" onMouseOut="db('nl77')" ><a href="/recipe/77/Asian-Taco" title="Test Recipes: Asian Taco">Asian Taco</a></td><td id="nl46" onclick="window.location='/recipe/46/Faux-BBQ-Beef-Ribs'" onMouseOver="lb('nl46')" onMouseOut="db('nl46')" ><a href="/recipe/46/Faux-BBQ-Beef-Ribs" title="Test Recipes: Faux BBQ Beef Ribs">Faux BBQ Beef Ribs</a></td><td id="nl49" onclick="window.location='/recipe/49/Joy-of-Cookings-Peanut-Butter-Cookies-14-in-one'" onMouseOver="lb('nl49')" onMouseOut="db('nl49')" ><a href="/recipe/49/Joy-of-Cookings-Peanut-Butter-Cookies-14-in-one" title="Test Recipes: Joy of Cooking's Peanut Butter Cookies (14-in-one)">Joy of Cooking's Peanut Butter Cookies (14-in-one)</a></td><td id="nl252" onclick="window.location='/recipe/252/Quick-Gazpacho'" onMouseOver="lb('nl252')" onMouseOut="db('nl252')" ><a href="/recipe/252/Quick-Gazpacho" title="Test Recipes: Quick Gazpacho">Quick Gazpacho</a></td></tr><tr><td id="nl12" onclick="window.location='/recipe/12/Avocado-Pork-Stuffed-Peppers'" onMouseOver="lb('nl12')" onMouseOut="db('nl12')" ><a href="/recipe/12/Avocado-Pork-Stuffed-Peppers" title="Test Recipes: Avocado Pork Stuffed Peppers">Avocado Pork Stuffed Peppers</a></td><td id="nl76" onclick="window.location='/recipe/76/Giblet-Pan-Gravy'" onMouseOver="lb('nl76')" onMouseOut="db('nl76')" ><a href="/recipe/76/Giblet-Pan-Gravy" title="Test Recipes: Giblet Pan Gravy">Giblet Pan Gravy</a></td><td id="nl80" onclick="window.location='/recipe/80/Leftover-Cranberry-Sauce-Pie'" onMouseOver="lb('nl80')" onMouseOut="db('nl80')" ><a href="/recipe/80/Leftover-Cranberry-Sauce-Pie" title="Test Recipes: Leftover Cranberry Sauce Pie">Leftover Cranberry Sauce Pie</a></td><td id="nl13" onclick="window.location='/recipe/13/Sauteed-Zucchini-with-Mushrooms'" onMouseOver="lb('nl13')" onMouseOut="db('nl13')" ><a href="/recipe/13/Sauteed-Zucchini-with-Mushrooms" title="Test Recipes: Sauteed Zucchini with Mushrooms">Sauteed Zucchini with Mushrooms</a></td></tr><tr><td id="nl41" onclick="window.location='/recipe/41/Basic-Biscuits'" onMouseOver="lb('nl41')" onMouseOut="db('nl41')" ><a href="/recipe/41/Basic-Biscuits" title="Test Recipes: Basic Biscuits">Basic Biscuits</a></td><td id="nl72" onclick="window.location='/recipe/72/Good-Eats-Peanut-Brittle'" onMouseOver="lb('nl72')" onMouseOut="db('nl72')" ><a href="/recipe/72/Good-Eats-Peanut-Brittle" title="Test Recipes: Good Eats Peanut Brittle">Good Eats Peanut Brittle</a></td><td id="nl106" onclick="window.location='/recipe/106/Marshmallows'" onMouseOver="lb('nl106')" onMouseOut="db('nl106')" ><a href="/recipe/106/Marshmallows" title="Test Recipes: Marshmallows">Marshmallows</a></td><td id="nl60" onclick="window.location='/recipe/60/The-Classic-Tiramisu-original-recipe'" onMouseOver="lb('nl60')" onMouseOut="db('nl60')" ><a href="/recipe/60/The-Classic-Tiramisu-original-recipe" title="Test Recipes: The Classic Tiramisu (original recipe?)">The Classic Tiramisu (original recipe?)</a></td></tr><tr><td id="nl87" onclick="window.location='/recipe/87/Carrot-Pulp-Cake-Part-I'" onMouseOver="lb('nl87')" onMouseOut="db('nl87')" ><a href="/recipe/87/Carrot-Pulp-Cake-Part-I" title="Test Recipes: Carrot Pulp Cake, Part I">Carrot Pulp Cake, Part I</a></td><td id="nl69" onclick="window.location='/recipe/69/Halloween-Green-Slime-Spinach-Dip'" onMouseOver="lb('nl69')" onMouseOut="db('nl69')" ><a href="/recipe/69/Halloween-Green-Slime-Spinach-Dip" title="Test Recipes: Halloween Green Slime Spinach Dip">Halloween Green Slime Spinach Dip</a></td><td id="nl161" onclick="window.location='/recipe/161/Orzo-Risotto-with-Buttery-Shrimp'" onMouseOver="lb('nl161')" onMouseOut="db('nl161')" ><a href="/recipe/161/Orzo-Risotto-with-Buttery-Shrimp" title="Test Recipes: Orzo Risotto with Buttery Shrimp">Orzo Risotto with Buttery Shrimp</a></td><td id="nl193" onclick="window.location='/recipe/193/TrailBlaze-Bake-At-Home-Energy-Bars'" onMouseOver="lb('nl193')" onMouseOut="db('nl193')" ><a href="/recipe/193/TrailBlaze-Bake-At-Home-Energy-Bars" title="Test Recipes: TrailBlaze Bake-At-Home Energy Bars">TrailBlaze Bake-At-Home Energy Bars</a></td></tr><tr><td id="nl170" onclick="window.location='/recipe/170/Chinese-Almond-Cookies'" onMouseOver="lb('nl170')" onMouseOut="db('nl170')" ><a href="/recipe/170/Chinese-Almond-Cookies" title="Test Recipes: Chinese Almond Cookies">Chinese Almond Cookies</a></td><td id="nl274" onclick="window.location='/recipe/274/Hatch-Chile-Infused-Chocolate-Truffles'" onMouseOver="lb('nl274')" onMouseOut="db('nl274')" ><a href="/recipe/274/Hatch-Chile-Infused-Chocolate-Truffles" title="Test Recipes: Hatch Chile Infused Chocolate Truffles">Hatch Chile Infused Chocolate Truffles</a></td><td id="nl176" onclick="window.location='/recipe/176/Oven-Fried-Onion-Rings'" onMouseOver="lb('nl176')" onMouseOut="db('nl176')" ><a href="/recipe/176/Oven-Fried-Onion-Rings" title="Test Recipes: Oven-Fried Onion Rings">Oven-Fried Onion Rings</a></td></tr></table></div>
+	
+</div>
+<div class="navbarbottom"></div>
+			<table class="tl_table" cellpadding="0" cellspacing="1" border="0">
+	<tr align="center">
+		<td class="indexsummary">
+			<a href="/toc.php?sort=date">Table of Contents</a>
+		</td>
+		<td class="indexsummary">
+			<a href="/forums">Community Forums</a>
+		</td>
+		<td class="indexsummary">
+			<a href="/dictionary">Dictionary</a>
+		</td>
+		<td class="indexsummary">
+			<a href="/books">Recommended Reading</a>
+		</td>
+		<td class="indexsummary">
+			<a href="http://astore.amazon.com/themichaelupdate">Marketplace</a>
+		</td>
+		<td class="indexsummary">
+			<a href="http://www.cafepress.com/cookingengineer">Giftshop</a>
+		</td>
+		<td class="indexsummary">
+			<a href="/what_i_ate">What I Ate</a>
+		</td>
+		<td class="indexsummary" style="border:1px solid #C00000">
+			<a href="http://www.orthogonalthought.com/blog" title="Read Michael's Blog: Orthogonal Thought" style="background-color:#FFFFC0">Michael's Blog</a>
+		</td>
+	</tr>
+</table>
+
+
+		
+		
+		
+
+		
+<div id="orthogonalthought" onclick="window.location='http://www.orthogonalthought.com/blog/index.php/2011/04/font-size-for-large-signs/';" style="cursor:pointer">
+	Latest Post on Michael's Blog: <a href="http://www.orthogonalthought.com/blog/index.php/2011/04/font-size-for-large-signs/">Font size for large signs</a>
+</div>
+		
+		<div class="mainbody">
+			
+
+<table cellpadding="0" cellspacing="2" border="0" style="margin:0 auto 0 auto">
+	<tr>
+		
+		<td style="background: #000000 url(http://www.cookingforengineers.com/pics3/160/ND2_0900_crop.jpg) no-repeat center center; cursor:pointer;border:2px solid #FFFFA0;padding:0">
+			<a href="/article/155/Tempering-Chocolate" title="Kitchen Notes: Tempering Chocolate"><div style="height:100px;width:100px;cursor:pointer"></div></a>
+		</td>
+		
+		<td style="background: #000000 url(http://www.cookingforengineers.com/pics2/160/DSC_1623_crop.jpg) no-repeat center center; cursor:pointer;border:2px solid #FFFFA0;padding:0">
+			<a href="/recipe/176/Oven-Fried-Onion-Rings" title="Test Recipes: Oven-Fried Onion Rings"><div style="height:100px;width:100px;cursor:pointer"></div></a>
+		</td>
+		
+		<td style="background: #000000 url(http://www.cookingforengineers.com/hello/259/958/160/IMG_3058_sharp.jpg) no-repeat center center; cursor:pointer;border:2px solid #FFFFA0;padding:0">
+			<a href="/recipe/53/Salsa-Cruda" title="Recipe File: Salsa Cruda"><div style="height:100px;width:100px;cursor:pointer"></div></a>
+		</td>
+		
+		<td style="background: #000000 url(http://www.cookingforengineers.com/hello/259/958/160/DSC_0340_copy.jpg) no-repeat center center; cursor:pointer;border:2px solid #FFFFA0;padding:0">
+			<a href="/recipe/14/Albers-Corn-Bread" title="Test Recipes: Albers Corn Bread"><div style="height:100px;width:100px;cursor:pointer"></div></a>
+		</td>
+		
+		<td style="background: #000000 url(http://www.cookingforengineers.com/pics/160/DSC_1808_crop.jpg) no-repeat center center; cursor:pointer;border:2px solid #FFFFA0;padding:0">
+			<a href="/recipe/81/Oven-Baked-Chicken-and-Rice" title="Recipe File: Oven Baked Chicken and Rice"><div style="height:100px;width:100px;cursor:pointer"></div></a>
+		</td>
+		
+		<td style="background: #000000 url(http://www.cookingforengineers.com/pics5a/160/DSC_8440_LR.jpg) no-repeat center center; cursor:pointer;border:2px solid #FFFFA0;padding:0">
+			<a href="/article/275/Saber-Kitchen-Knives" title="Equipment & Gear: Saber Kitchen Knives"><div style="height:100px;width:100px;cursor:pointer"></div></a>
+		</td>
+		
+		<td style="background: #000000 url(http://www.cookingforengineers.com/pics3/150/pdo.jpg) no-repeat center center; cursor:pointer;border:2px solid #FFFFA0;padding:0">
+			<a href="/article/211/European-Designation-of-Quality-Labels" title="Kitchen Notes: European Designation of Quality Labels"><div style="height:100px;width:100px;cursor:pointer"></div></a>
+		</td>
+		
+		<td style="background: #000000 url(http://www.cookingforengineers.com/hello/259/958/160/DSC_1116_crop.1.jpg) no-repeat center center; cursor:pointer;border:2px solid #FFFFA0;padding:0">
+			<a href="/recipe/55/Mini-Hamburgers" title="Recipe File: Mini Hamburgers"><div style="height:100px;width:100px;cursor:pointer"></div></a>
+		</td>
+		
+	</tr>
+</table>
+
+<div id="articleheader">
+		<div class="headertitle"><div>
+			<span class="category">
+				Cooking Tests
+			</span><br />
+			<h1 class="title" style="display:inline">
+				Bacon (Part II)
+			</h1>
+			<span class="author">
+				by Michael Chu
+			</span>
+		</div></div>
+	
+	<div class="formatbutton"><a href="/article/110/Bacon-Part-II/print">Printer-friendly</a></div>
+	<div class="selectedformatbutton">Normal view</div>
+	
+	<div class="hr"></div>
+</div>
+
+<div id="articlebody">
+	
+	
+		<div style="font-size:12pt;font-weight:bold;float:right;margin:0px -6px 0 0;padding:0 4px 6px 8px;background-color:#FFFFA0"><a href="/recipe/107/Creamy-Garlic-Mashed-Potatoes">Next &#187;</a></div>
+		<div style="font-size:12pt;font-weight:bold;float:left;margin:0px 0 0 -6px;padding:0 8px 6px 4px;background-color:#FFFFA0"><a href="/article/117/Hefty-Serve-n-Store">&#171; Prev</a></div>
+		
+		<div style="clear:both"></div>
+		<div style="float:right;clear:right;padding:4px 0 12px 8px;" class="nothing">
+			
+
+
+<div style="height:60px;width:120px;margin:0 20px 5px 20px" align="center">
+	<a href="http://www.foodbuzz.com/foodies/us/california/santa_clara/profile/cooking+for+engineers" target="foodbuzz" id="logo">
+		<img src="http://www.foodbuzz.com/images/foodbuzz_120x60_badge_pub.gif?1863" title="Foodbuzz" alt="Foodbuzz" style="border: none;" />
+	</a>
+</div>
+
+<div style="border:0px solid #FFFFA0;width:160px;height:600px;">
+
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://ads.foodbuzz.com/www/delivery/ajs.php':'http://ads.foodbuzz.com/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=158");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><img src='http://ads.foodbuzz.com/www/delivery/avw.php?zoneid=158&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=aad2f81c' border='0' alt='' /></noscript>
+
+</div>
+
+			<div style="margin:30px 0 0 0;line-height:0px"><!-- --></div>
+			
+		</div>
+		<div class="adsense-left">
+	<div align=center style="border:0px solid #407050;background:#FFFFDD;padding:4px 4px 0px 4px">
+		<script type="text/javascript"><!--
+			google_ad_client = "pub-1164960032546572";
+			google_ad_width = 300;
+			google_ad_height = 250;
+			google_ad_format = "300x250_as";
+			google_ad_type = "text";
+			google_ad_channel ="1985980924";
+			google_color_border = "FFFFDD";
+			google_color_bg = "FFFFDD";
+			google_color_link = "0000FF";
+			google_color_url = "333333";
+			google_color_text = "333333";
+		//--></script>
+		<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+	</div>
+</div>
+	
+	
+		
+		When I posted the <a <div class="larticles">
+	<div class="title">Related Articles</div>
+	<div class="link">
+			<a href="/article/3/Bacon-Part-I">Bacon (Part I)</a>
+		</div><div class="link">
+			<a href="/recipe/107/Creamy-Garlic-Mashed-Potatoes">Creamy Garlic Mashed Potatoes</a>
+		</div><div class="link">
+			<a href="/recipe/112/Clam-Chowder-New-England-Style">Clam Chowder, New England Style</a>
+		</div><div class="link">
+			<a href="/article/117/Hefty-Serve-n-Store">Hefty Serve 'n Store</a>
+		</div><div class="link">
+			<a href="/article/249/Soft-Boiled-Eggs">Soft Boiled Eggs</a>
+		</div>
+	
+</div>
+	href="http://cookingforengineers.com/article.php?id=3">first Bacon Cooking Test</a> (October 2004), I knew that I would have to continue to test different ways to cook bacon. I was so sure that a second article would follow that I named labeled that first article as "Part I". Over half a year later, I've finally gotten around to writing up my latest experiments with cooking bacon.<span class="fullpost"><?if($fullpost==1){?><br />
+<br />
+I look at three more techniques in this article (using a fourth cooking method, low heat pan frying, as a control): Microwaving with a Makin' Bacon dish, grilling, and slow baking.<br /><br /><div style='clear:left'></div><a href='http://www.cookingforengineers.com/pics/640/DSC_4624_crop.jpg'><img border='0'  src='http://www.cookingforengineers.com/pics/320/DSC_4624_crop.jpg'  width='320' height='294' class='left' alt='' /></a>
+<b>Method 1: Microwaving with a Makin' Bacon dish</b><br /><div style='clear:left'></div><br />
+There are many specialty dishes designed for microwaving bacon. Some are simply plastic plates with grooves cut in them to catch grease. This one, <a href="http://www.makinbacon.com">the Makin' Bacon dish</a> (about $10), elevates the bacon on poles. As many as a eighteen strips of bacon (according to the manufacturer), can be cooked at a time on this apparatus (although I think my bacon must be wider than their bacon because only a dozen of my strips would fit).<br />
+<br />
+Since I was only going to be cooking a couple strips, I used only the center pole.<br />
+<?}?></span><br /><a href='http://www.cookingforengineers.com/pics/640/DSC_4625_crop.jpg'><img border='0'  src='http://www.cookingforengineers.com/pics/320/DSC_4625_crop.jpg'  width='320' height='218'></a><span class="fullpost"><?if($fullpost==1){?><br /><br /><div style='clear:left'></div><a href='http://www.cookingforengineers.com/pics/640/DSC_4626_crop.jpg'><img border='0'  src='http://www.cookingforengineers.com/pics/320/DSC_4626_crop.jpg'  width='320' height='263' class='left' alt='' /></a>
+Following the instructions on the Makin' Bacon box, I covered the bacon with a paper towel to reduce potential splatter.<br /><div style='clear:left'></div><br /><br /><div style='clear:left'></div><a href='http://www.cookingforengineers.com/pics/640/DSC_4628_crop.jpg'><img border='0'  src='http://www.cookingforengineers.com/pics/320/DSC_4628_crop.jpg'  width='320' height='217' class='left' alt='' /></a>
+I then microwaved it on high for 90 seconds. The bacon at the top (where it bends over the beam, was thoroughly cooked (almost overcooked). However, some of the fatty parts were still soft and partially unrendered. The texture of the bacon was thick and crunchy (similar to the microwaved bacon from the first test). There was also a slight off flavor to the bacon indicative of heating the bacon to too high of a temperature. It is definitely a very fast way to cook and with the Makin Bacon dish, a reasonable number of pieces can be cooked at the same time.<br /><div style='clear:left'></div><br />
+<br />
+As advertised, the bacon grease dripped down into the plastic container. The instructions recommend pouring out the bacon grease but why waste a good thing? After the grease cools, simply spoon it out into a storage container and store in the refrigerator. The grease collected was fairly clean with some small pieces of bacon in it.<br />
+<br />
+<b>Method 2: Grilling</b><br />
+I prepared a grill with low heat (about 300-350 degrees) and laid out the bacon onto the cooking surface.<br /><a href='http://www.cookingforengineers.com/pics/640/DSC_4631_crop.jpg'><img border='0'  src='http://www.cookingforengineers.com/pics/320/DSC_4631_crop.jpg'  width='320' height='176'></a><br /><br /><div style='clear:left'></div><a href='http://www.cookingforengineers.com/pics/640/DSC_4633_crop.jpg'><img border='0'  src='http://www.cookingforengineers.com/pics/320/DSC_4633_crop.jpg'  width='320' height='295' class='left' alt='' /></a>
+Flipping the bacon every five minutes, they reached doneness in twenty minutes time.<br /><div style='clear:left'></div><br />
+<br />
+With this method, the meaty portions were chewy (but not overly so) while the fat was light and crisp. There were also no off flavors to the bacon. Because of the texture and flavor, this was Tina's favorite cooking method.<br />
+<br />
+Because the bacon grease dripped down into the grill, there was no grease to collect and save afterward; there was also no clean up required. Depending on the size of your grill, you can cook a great deal of bacon at once.<br />
+<br />
+<b>Method 3: Baking at low temperatures</b><br />
+I seemed to have lost the pictures that accompanied this baking technique - but their not much to look at anyway, it's just an oven.<br />
+<br />
+I laid out strips of bacon onto a wire rack and positioned a wire rack on a foil  lined half sheet pan. I placed the pan in an oven preheated to 200&#176;F (93&#176;C) and waited. The theory was that the low heat would penetrate the bacon slowly and as the bacon cooked the fat would render, but without increasing the bacon temperature to a level where the preserving agents of cured meat begin to react and form new compounds producing an off taste (and potentially carcinogenic substances - but more chemicals such as ascorbic acid  or erythorbic acid are added these days to help mitigate these effects).<br />
+<br />
+Unfortunately, I do not know how long the bacon was in the oven because I forgot to look at the time and fell asleep. My best estimate is that the bacon baked for about 3 hours.<br />
+<br />
+The baking resulted in extremely straight pieces of bacon that I found to have exceptional taste and flavor as compared to the pan frying and grilling (the microwaved bacon's off taste was really apparent next to the baked bacon). The texture was crispy throughout. Since flavor and texture were great, this is my favorite cooking method. (Tina prefers a little chewier meat and still likes the grilled method the best.)<br />
+<br />
+The long cooking time means this method is best for cooking bacon in large quantities (multiple pans) and then bagging and refrigerating them for future use. The bacon grease collected from the half sheet pan was pure white and completely devoid of charred bits.<br />
+<br />
+<b>Method 4: Pan frying</b><br />
+As a control, I cooked the bacon in the same way as the "winning" method from the <a href="http://cookingforengineers.com/article.php?id=3">first bacon test</a> - pan frying. I placed three strips of bacon in a cold pan and placed it over low heat.<br /><a href='http://www.cookingforengineers.com/pics/640/DSC_4632_crop.jpg'><img border='0'  src='http://www.cookingforengineers.com/pics/320/DSC_4632_crop.jpg'  width='320' height='159'></a><br />
+<br />
+After fifteen minutes of cooking while turning the bacon occasionally, the bacon was done. The bacon was light and crispy with a little chewiness to the meat. The grilled method's results came closest to this bacon. The bacon grease remaining in the pan had a pale gray-brown color and was spotted with charred bits and pieces of bacon.<br />
+<br />
+<b>Conclusions</b><br />
+If you're in a rush, microwaving works - but for the best flavor and texture either grill or bake (in advance). If you own a propane grill, cooking bacon over the grill is easier and more convenient than doing it on a stove top. However, if you don't mind spending the time, baking produces the best results with pure bacon grease for use later (may I suggest <a href="http://www.cookingforengineers.com/article.php?id=112">clam chowder</a>?).<br />
+<?}?></span><br />
+<div class="larticles">
+	<div class="title">Related Articles</div>
+	<div class="link">
+			<a href="/article/3/Bacon-Part-I">Bacon (Part I)</a>
+		</div><div class="link">
+			<a href="/recipe/107/Creamy-Garlic-Mashed-Potatoes">Creamy Garlic Mashed Potatoes</a>
+		</div><div class="link">
+			<a href="/recipe/112/Clam-Chowder-New-England-Style">Clam Chowder, New England Style</a>
+		</div><div class="link">
+			<a href="/article/117/Hefty-Serve-n-Store">Hefty Serve 'n Store</a>
+		</div><div class="link">
+			<a href="/article/249/Soft-Boiled-Eggs">Soft Boiled Eggs</a>
+		</div>
+	
+</div>
+	<div style="clear:both;margin-bottom:8px"></div>
+	
+	
+	<div class="clear"></div>
+	
+		<div style="font-size:12pt;font-weight:bold;float:right;margin:0 -6px -4px 0;padding:0 2px 2px 6px;background-color:#FFFFA0"><a href="/recipe/107/Creamy-Garlic-Mashed-Potatoes">Next &#187;</a></div>
+		<div style="font-size:12pt;font-weight:bold;float:left;margin:0 0 -4px -6px;padding:0 6px 2px 2px;background-color:#FFFFA0"><a href="/article/117/Hefty-Serve-n-Store">&#171; Prev</a></div>
+	
+	<div class="clear"></div>
+</div>
+
+<div id="articlefooter">
+	<div class="author">Written by Michael Chu</div>
+	<div class="timestamp">Published on July 01, 2005 at 12:12 PM</div>
+	<div class="clear"></div>
+</div>
+
+
+
+
+
+
+	<div class="spacer3"></div>
+		
+<!-- Start Google Adsense -->
+	<div align="center" style="border:0px solid #FFFFA0;width:728px;height:90px;margin:0 auto">
+		<script type="text/javascript"><!--
+		google_ad_client = "pub-1164960032546572";
+		google_ad_width = 728;
+		google_ad_height = 90;
+		google_ad_format = "728x90_as";
+		google_ad_type = "image_text";
+		google_ad_channel ="6610397831";
+		google_color_border = "FFFFA0";
+		google_color_bg = "FFFFDD";
+		google_color_link = "008000";
+		google_color_text = "666666";
+		google_color_url = "999999";
+		//--></script>
+		<script type="text/javascript"
+			src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+	</div>
+<!-- End Adsense -->
+
+	
+	
+  <div id="comments">
+		<div id="articlecomments">
+			<div class="header">88 comments on <b>Bacon (Part II)</b>:<span class="commentlink">(<a href="/forums/posting.php?mode=reply&t=84" style="font-size:12pt" title="Comments are managed in the Cooking For Engineers Forums">Post a comment</a>)</span></div>
+			
+					<hr size="1" noshade />
+					<div class="commentheading">On July 07, 2005 at 10:32 PM, Sir Frederick (guest) said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">I have found that slow cooking<br />
+(baking) meat consistently produces the best flavor. This even in steaks normally grilled.<br />
+I bake with no condiments and no<br />
+wire rack. More like a bbq with no<br />
+sauce. Sauces can be added when eating, and varied. A variac on a toaster oven or contact grill and a good thermometer take the guess work out and more even heat.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 07, 2005 at 10:33 PM, Sir Frederick (guest) said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">Here is the inexpensive<br />
+20 amp VARIAC I use.<br />
+<a href='http://store.yahoo.com/webtronics/varacouttran.html'>http://store.yahoo.com/webtronics/varacouttran.html</a></div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 07, 2005 at 10:34 PM, an anonymous reader said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">Cooking bacon, or any fatty food like duck breast for example, requires a slightly differant treatment than most meats. It's best to start by placing the meat, fat side down, in a cold and dry pan. Then the stove is turned to high until the fat begins to sizzle. At this point the heat is turned to medium high until done. This approach allows the fat to gradually render, producing a superior product.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 07, 2005 at 10:34 PM, Claire Eats (guest) said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">Is there any meat on the bacon you get in america? It is totally different to what we call bacon in Australia</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 07, 2005 at 10:35 PM, Michael Chu said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">re: Australian bacon?<br />
+<br />
+I'm not familiar with the bacon that is sold/served in Australia. American bacon is cut from the belly, cured or smoked. The fat content is about 50% (eye-balling it, not actually measured). Generally streaks and clumps of meat are surrounded by ample areas of fats.<br />
+<br />
+Canadian bacon is cut from the loin and in comparison is not fatty at all. It has a different texture and taste (almost like ham) when compared to American bacon.<br />
+<br />
+Perhaps the bacon sold in Australia is like Canadian bacon?</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 07, 2005 at 10:36 PM, an anonymous reader said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">As I understand it, what we in America call bacon is called "streaky bacon" elsewhere in the anglosphere.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 07, 2005 at 10:36 PM, an anonymous reader said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">the most commonly available form of bacon here in the antipodes is known as "middle rasher bacon" which comprises the streaky/fatty bit and a generous portion of meat at one end crowned with a small layer of fat. the cut i believe, is from the middle to back portion of the animal.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 07, 2005 at 10:37 PM, an anonymous reader said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">watch Good Eats on food network<br />
+A B says put your bacon in a cold oven and pre heat to 400 i leave it in about 12 minutes and i'v tired most of the other methods and find this to be successful for flavor plus i even just use my toaster oven if all i want is a little and ajust the time to suit your tastes</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 07, 2005 at 10:37 PM, an anonymous reader said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">In Canada, bacon is the same stuff that Americans eat. "Canadian bacon" is usually called "back bacon" here. My dad likes back bacon coated with peameal.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 07, 2005 at 10:37 PM, Brenda (guest) said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">My Grandfather always has bacon with the "rind" on at his house in SW Arkansas. I'm sure that he bought it from the local butcher. It was always an exotic treat.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 07, 2005 at 10:38 PM, The Hermit (guest) said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">Bacon and a nap! I know what I'm doing on sundays.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 07, 2005 at 10:38 PM, --z (guest) said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">Ah - I can't vouch for it's flavour in comparison to pan-fried or other methods, as it has been many years since I've sampled it this way at my grandparents - but in the microwave, an old newspaper section folded in half withpaper towels in the middle - bacon strips cooked there... just another method to chew on.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 07, 2005 at 10:38 PM, an anonymous reader said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">I really enjoy your site, keep up the good work!</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 08, 2005 at 07:27 PM, megwoo said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">I adore your bacon posts... keep 'em coming! I love the idea of grilled bacon, I'm going to have to try that asap.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 11, 2005 at 03:38 PM, R J Keefe said...</div>
+					<div class="commentsubject">Subject: <span>Slow Bacon</span><br /></div>
+					<div class="commentbody">The slow-cooking result can be achieved on a griddle pan, if your stove is capable of very low flames. The bacon melts (as it does in the oven) as it cooks; there is no sizzling. The process takes at least two hours and requires minimal attention. As the bacon finishes, whip up some pancake batter and keep the bacon warm in a slow oven while the pancakes cook.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 11, 2005 at 11:44 PM, Wired1 (guest) said...</div>
+					<div class="commentsubject">Subject: <span>bACON COOKING</span><br /></div>
+					<div class="commentbody">sLOW COOK THE BACON IN A CAST IRON FRY PAN......NOT THOSE TEFLON THINGYS......IT WILL BROWN MUCH NICER....DON'T OVER COOK IT.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 12, 2005 at 02:46 PM, Twindaddy (guest) said...</div>
+					<div class="commentsubject">Subject: <span>Another alternative way to microwave bacon</span><br /></div>
+					<div class="commentbody">My oldest set of twins had a most unusual way of cooking bacon in the microwave.  They would wrap however many slices of bacon up in a bunch of paper towels, then nuke.  It would be at least 6 layers, top and bottom.<br />
+<br />
+Did I mention that my consumption of paper products has gone down to a third of what it is (paper towels, TP!) since those two joined the Army and moved out?  That was one third of the family using two thirds of the paper products.<br />
+<br />
+It's the Army's problem now. Skin_Colorz_PDT_01</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 16, 2005 at 04:56 AM, andrewschwerin (guest) said...</div>
+					<div class="commentsubject">Subject: <span>cooking bacon methods</span><br /></div>
+					<div class="commentbody">deep fry the bacon.<br />
+<br />
+andrew<br />
+<br />
+consciousnessofstream@yahoo.com</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 19, 2005 at 01:02 AM, Kent said...</div>
+					<div class="commentsubject">Subject: <span>Microwave gadgets</span><br /></div>
+					<div class="commentbody">The gadget may work better with a full rack than with just two strips. The additional strips would absorb more of the energy. The bacon would cook much slower. It works the same when cooking bacon in paper towels in the microwave. I have found that some bacon cooks much faster. There are differences from one package to another, and with the age of the bacon. The rack should make it easy to tell when it is done the way you like it.<br />
+Since this is an engineers cooking site, I will suggest another approach: Connect a clip to each end of a strip and measure its resistance. As the moisture leaves, resistance should increase. This could be used to make an automatic slow cooker, using a large light bulb for heat in an insulated box. Unless you use stainless steel clips, you would sacrifice one strip.<br />
+There was a device sold in the 70's that heated a hot dog by inserting sharp metal points into it and running straight house current through it for about a minute. It tasted awful, and there was no browning. Slow oven cooking creates taste.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 19, 2005 at 09:45 PM, Chris (guest) said...</div>
+					<div class="commentsubject">Subject: <span>One thing to consider about the grill method...</span><br /></div>
+					<div class="commentbody">You said the grease dripped down and there was nothing to clean up...<br />
+<br />
+That may be true for 3 strips, but if you cook a full package, the grease will build up in the bottom of your grill and eventually run out the bottom (if you gave a gas grill)...  theres supposed to be a little bucket to collect this (comes with most grill kits) but I dont know many guys who bothered to put it on. <br />
+<br />
+I dont cook much with charcoal, but I suspect that the grease would end up mixing with the ash and make for a fun cleaning job as well.<br />
+<br />
+Personally, I like it on the griddle...  theres no better way as far as I'm concerned. Though, I am intrigued, I think I'm going to have to try it.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 24, 2005 at 01:40 AM, an anonymous reader said...</div>
+					<div class="commentsubject">Subject: <span>bacon - now with real meat :)</span><br /></div>
+					<div class="commentbody">Yeah... US bacon seems to be like "streaky bacon" in the UK, only with a vastly higher fat content - the pictures in the article seem to me to show well over 50% fat, and I remember looking for (and failing to find) bacon with a reasonable amount of meat when I last visited the States.  <br />
+<br />
+Here in the UK we also get "Back bacon", which has much more meat.  Maybe it's just the USA that is bacon-poor? I've had decent bacon in NZ and Europe.<br />
+<br />
+Excellent site, by the way. I like the logical layout of the recipies.<br />
+<br />
+<i>- notmyopinion</i></div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 30, 2005 at 04:02 AM, darus (guest) said...</div>
+					<div class="commentsubject">Subject: <span>Bacon on a George Foreman grill</span><br /></div>
+					<div class="commentbody">I have an imitation George Foreman (iGF) grill (it has most of the<br />
+same features, just not the brand name or price tag) and I recently tried<br />
+cooking some bacon on it.<br />
+<br />
+The result was probably the best bacon I've ever cooked.<br />
+Thats not really saying a lot. After reading this article I learned that<br />
+I've probably been doing it wrong all these years. (cooking it over too<br />
+high heat )<br />
+<br />
+I did two batches of bacon on my iGF.<br />
+The first batch I started with the grill cold. I layed out as many slices<br />
+as I could fit comfortably. Then I closed the lid and plugged it in.<br />
+I started checking it for done-ness by eyeball after about 4 minutes.<br />
+By 5 or 6 minutes total cooking time, the bacon was done.<br />
+<br />
+For the second batch I just put more raw bacon on the already hot iGF.<br />
+The cooking time was reduced a bit. Other than that, the results were<br />
+pretty much the same.<br />
+<br />
+The bacon came out wonderfully tender crispy (personally I can't stand<br />
+chewy bacon) without being over cooked. Since it's constrained by the<br />
+grill while cooking it comes out nicely flat. Due to the nature of the<br />
+grill, the grease drains away while cooking so the bacon isn't greasy.<br />
+Lastly, since the system is closed while cooking, there is little<br />
+opportunity for splatter.<br />
+<br />
+On my particular grill, cleanup is a Pain In The Posterior. It doesn't<br />
+disassemble at all. Being an electric appliance I can't just toss it into<br />
+a sink of hot water. There are other, more expensive, models with<br />
+removable cooking surfaces which are dishwasher safe.<br />
+<br />
+Overall, I'd say using an electric clamshell style grill to cook bacon<br />
+works very well. I wouldn't recommend running out to buy one JUST<br />
+to cook bacon. If you do run out to buy one, choose wisely. Consider cleanup.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On August 08, 2005 at 04:50 PM, Theresa L. (guest) said...</div>
+					<div class="commentsubject">Subject: <span>Making bacon</span><br /></div>
+					<div class="commentbody">Thank you so much for your amusing and insightful article on preparing bacon.  I need about 40 slices for a brunch this weekend and I was all set to prepare them in a pan/skillet. I'm going the oven route now - thanks! This will make my event so much easier to pull off.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On August 18, 2005 at 10:39 PM, an anonymous reader said...</div>
+					<div class="commentsubject">Subject: <span>My Method Is Still The Best</span><br /></div>
+					<div class="commentbody">B) <br />
+After reading this post on your second wave of tests on cooking bacon, I still think my method is the best...the one I posted in your Bacon I post. <a href='http://www.cookingforengineers.com/article.php?id=3#c112440229214433920'> Check it out.</a></div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On August 31, 2005 at 12:11 AM, an anonymous reader said...</div>
+					<div class="commentsubject">Subject: <span>The Kentuckians way to cook bacon</span><br /></div>
+					<div class="commentbody">First you gotta have good bacon. Not the watery mess sold in the grocery stores these days. You want real hickory cured bacon that has had salt rubbed in it to cure it. <br />
+<br />
+Now this is mighty hard to come by these days so you may have to find some farmers or backcountry smokehouse folks who will sell it to you. My favorite was in the next town over and they would take me into the smoking rooms and open a door to a smoker. There would be a small pile of hickory sawdust smoldering on the floor and hanging above were many slabs of sow belly. <br />
+<br />
+I would ask the curing man to pull me down one he thought was best and he generally would get me a nice on. I never had it sliced by them but just took the whole slad wrapped in paper home. It was strong enough that the whole pickup would smell like hickory smoke. <br />
+<br />
+Now to cook it. I would take a real real sharp butcher knife and cut a slice bout 1/8 inch thick or maybe a bit thicker. You never never want thin bacon.  I would either cut on thru the rind (outer skin) , then slice that off later or fillet about 2 inches with the flat of the knife along the top of the rind. <br />
+<br />
+Next goes some pure lard into the 8 or 9 inch cast iron skillet. This skillet must NEVER be touched by women's hands. They will ruin it with soap and remove the seasoning. Never let them touch it and it will never stick, long as you clean it right afterwards. <br />
+<br />
+Bring the lard up to heat and put the bacon in the pan. If your temperature is just right and enough lard(to just cover the bacon) it will never pop or splatter and also because all the liquid in it has been cured out!!<br />
+<br />
+This bacon will not shrink either. What goes in the skillet is the same size as what comes out. You then look for when the fat parts of the bacon tend to get done. Its a judgement call anyway and you will learn. You then put it on a platter on top of some folded paper towels and then another to pat the top. This removes the extra grease and results in a certain brittleness. No chewieness. Don't want that. I like mine to be at the point where I can snap it in two. Not burned either. Just right is what I want. <br />
+<br />
+You will also notice that with this good bacon that there will be NOTHING sticking to the bottom of the skillet. What that is with normal bacon is the carbon from the sugar burning. You don't want that either. No sugar cured bacon. No sir. <br />
+<br />
+Now the hard part. No a lot of folks can eat this type of old fashioned bacon. It may be a bit too salty for them or too smoky. But once you get to like it you won't be able to live without it. City bacon will just not work for you anymore. <br />
+<br />
+Now with the bacon grease in the skillet you can do many things. You never dispose of it. You first can fry you some eggs. Over easy or sunnyside up. Let the grease cool down a bit. Use a spoon or metal spatula to flip grease onto the top of the egg and it will cook perfectly. Put it on a plate and pat with a paper towel then pepper it. <br />
+<br />
+The leftover bacon drippings(grease) can be used to season a lot of vegetables or to make cornbread with(also in the skillet). You can season turnip greens with it or collards or whatever. Green beans too. You can also put it in a qt. mason jar and save it in the icebox. <br />
+<br />
+BTW making good cornbread is a lost art. Its  getting just the right amount in the skillet, no sugar and no flour. Just bacon drippings, Martha White cornmeal(white only) and one egg and some milk. Got to have just the right amount of milk. When baked if too thick won't taste right nor if too thin. Let it bake a tad too long and its coarse. Get everything just exactly right and you will eat the whole pan full. Save some to crumble in a glass of buttermilk with salt and pepper on the top. Heaven. I mean heaven. <br />
+<br />
+I can cook up a pot of white beans with a ham shank and a pan of cornbread and some fried potatoes and I am back on the farm. Well I still live on the farm but you know what I mean. <br />
+<br />
+Round here if you go to the church fellowship dinners you will get the best food you ever ate. This is cooked by older farm wives the old fashioned way. <br />
+<br />
+This is the way I have cooked bacon all my life. <br />
+<br />
+To clean the skillet after pouring off the drippings. Hold it under the cold water faucet and wipe with a paper towel. It will have a slight sheen of animal fat on the surface. Put it in your over to store it. I keep all my cast irons skillets there. For just myself I use a little skillet. Maybe 5 inches or so. <br />
+<br />
+With the white beans and cornbread you got to have a good white onion or Valdia onion. Can't never get too much black pepper on white beans, some say. <br />
+<br />
+Again I must say. Don't try this with city bacon. Not the same. <br />
+Now that many of the local smokehouse folks are out of business I am considering building one myself. A small metal one out back. My friend made one and it was easy. Got the plans out of Mother Earth some time back.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On September 04, 2005 at 05:59 AM, Visitor (guest) said...</div>
+					<div class="commentsubject">Subject: <span>Bacon Tests part II</span><br /></div>
+					<div class="commentbody">I agree that oven baking produces the best texture and flavor.  Many restaurants bake bacon, both for taste and because you can cook enough to feed a crowd without taking up all your skillets.<br />
+<br />
+The slower bacon is cooked, the more flavorful it is.  However, as a compromise between flavor and speed,  I find that a medium oven works well.  My method is to stack the bacon in two-strip piles in a cold, ungreased pan, put in a cold oven and turn the oven to 350 F (gas mark 4ish).  Depending on the thickness of your bacon and how crispy you like it, it is cooked in about 15 minutes, and it renders enough fat out so you have a respectable amount of dripping for later use.  If you like very well-done bacon, you should remember that baked bacon does continue to cook for about a minute after it's removed from the heat--so take it out a little early to avoid a charred mess.  <br />
+<br />
+I miss British bacon.  On the other hand, since I save bacon drippings for other uses, there's not that much waste from American streaky bacon.  Just have to cook more slices to make a decent sandwich.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On September 04, 2005 at 06:07 AM, an anonymous reader said...</div>
+					<div class="commentsubject">Subject: <span>Re: The Kentuckians way to cook bacon</span><br /></div>
+					<div class="commentbody"><div class='commentquote'>Anonymous wrote:<div class='commentquotebody'>First you gotta have good bacon. Not the watery mess sold in the grocery stores these days. You want real hickory cured bacon that has had salt rubbed in it to cure it. </div></div><br />
+<br />
+Definitely.  I live in Pennsylvania and get mine from an Amish farmer who still makes REAL bacon.<br />
+<br />
+<div class='commentquote'>Anonymous wrote:<div class='commentquotebody'> 8 or 9 inch cast iron skillet. This skillet must NEVER be touched by women's hands. They will ruin it with soap and remove the seasoning. Never let them touch it and it will never stick, long as you clean it right afterwards. </div></div><br />
+<br />
+Now this I have to disagree with.  My HUSBAND is the one who would have the cast-iron skillet soaking in a sink of double-strength detergent, not me.  He actually tried to run my good cornbread skillet through the dishwasher!  I would almost call that grounds for divorce....</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On September 19, 2005 at 04:56 AM, BeerMan (guest) said...</div>
+					<div class="commentsubject">Subject: <span>local source for good bacon</span><br /></div>
+					<div class="commentbody">My local Whole Foods Supermarket has the best readily available bacon that I have found.  It is thick cut, smoked nicely, not too fatty, and supposedly nitrate free (or at least ADDED nitrate free.)  It does have a rather short shelf life, so don't buy too much unless you plan on cooking it soon thereafter.  I guess you could try freezing it but I prefer to have it as fresh as possible.  The meat cutter/butcher usually has some in the case, but the Whole Foods gourmet thick cut pre-packed is just as good.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On October 06, 2005 at 07:54 PM, johnandpatricia (guest) said...</div>
+					<div class="commentsubject">Subject: <span>Canadian Bacon</span><br /></div>
+					<div class="commentbody">Canadian and Australian bacon[s] were mentioned in some of the messages.  In that regard, we'd like to recommend one, a Canadian bacon.  It's called "Peameal bacon" or "Real Canadian Bacon"--possibly because what is generally sold in the U.S.A. as Canadian bacon isn't the real thing.  It's more like round ham lunchmeat; real Canadian bacon is oval and entirely different in taste.  We highly--highly--recommend it.  <br />
+<br />
+The Real Canadian Bacon Co. can be reached at  either the following web site: www.realcanadianbacon.com, or by phone at 1-888-BACON-01 and it is a uniquely delicious product (fantastic for bacon/lettuce/tomato sandwiches).[/url]</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On October 12, 2005 at 03:25 PM, BVT (guest) said...</div>
+					<div class="commentsubject">Subject: <span>I am a little late but better than never</span><br /></div>
+					<div class="commentbody"><div class='commentquote'>Quote:<div class='commentquotebody'>On Jul 7, 2005 at 6:46 PM, Brenda (guest) said...<br />
+My Grandfather always has bacon with the "rind" on at his house in SW Arkansas. I'm sure that he bought it from the local butcher. It was always an exotic treat.</div></div><br />
+<br />
+I believe what you are talking about is hog jawl. You can ask your grandpa about it. If he is an oldtimer than grew up on a farm, he might know that hog jawl is eaten on New Years Day along with black eyed peas with a coin in them for good luck. <br />
+<br />
+Hog jawl can be bought in a Kroger or Publix or larger grocery store from time to time. They usually cut it too thin tho. It should have a thick skin on it that takes a long time to completely chew up. You can cut the skin off and chew it seperately during the day to get the bacon taste. It will help you not be hungry between meals if thick enough and cooked right.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On October 18, 2005 at 10:10 PM, an anonymous reader said...</div>
+					<div class="commentsubject">Subject: <span>Bacon drippings</span><br /></div>
+					<div class="commentbody">If you ever build a wood fire,  one of the best ways to do it<br />
+is fill up an empty cardboard egg carton with bacon drippings.<br />
+Put it under the wood and light it!   Just as good as lighter fluid.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On November 07, 2005 at 06:32 PM, chlychef said...</div>
+					<div class="commentsubject">Subject: <span>Cooking Bacon</span><br /></div>
+					<div class="commentbody">Cooking bacon in the oven is definitely the best way to go.  However, the way I have always done it is at 350 degrees for about 12-14 minutes.  You can adjust the time for your preferred doneness. Here at the restaurant this is done in a convection oven so it runs about 50 degrees hotter than the conventional oven.  And we use parchment paper as a liner instead of the foil.  I believe that cuts down the heat slightly from not being directly on a metal type surface.  It comes out perfect every time.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On November 08, 2005 at 04:03 PM, jon (guest) said...</div>
+					<div class="commentsubject">Subject: <span>makin bacon</span><br /></div>
+					<div class="commentbody">Cooking meat with high levels of preservatives by direct heat source results in nitrosamines which are known to be cancerous. <br />
+<br />
+That is why microwaving above the floor plane of a microwave oven is preferred. Exciting water molecules is actually a safer way to cook these meats that are known to be high in preservatives. If you can get rid of the fat - all the better.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On November 09, 2005 at 10:34 PM, Richard (guest) said...</div>
+					<div class="commentsubject">Subject: <span>My opinions on bacon cooking from much experience</span><br /></div>
+					<div class="commentbody">I <b>love</b> bacon. I buy it in 3 lb packs from a discount wholesale store. I usually eat a bit after cooking and refridgerate the rest to eat as a snack out of ziplock bags like chips. I have tried almost all of the methods listed above. The best method I have found so far is based on the microwave (although grilling arguably makes for a better taste and has its own advantages listed at the end of this).<br />
+<br />
+A favorite saying of mine: "Everything tastes better with bacon, even bacon."<br />
+<br />
+Take a pyrex dish or bowl. I prefer the large wide mixing bowls since you can fit more slices in per batch and only have to clean the bowl once at the end of all of your cooking. The wide opening also gives you the advantage of fitting whole slices of bacon if your microwave is large enough. Place a bamboo rack on top of the bowl. I have also used wooden spoons and bamboo skewers before, but they can be a pain to use since they roll if you're not careful while placing the bacon. Place two stacked paper towels on top of the bacon to keep it from splattering in your microwave. Cook the bacon in your microwave for about 4-5 minutes at 70% power. Experiment with the power settings and time to find what works best for you. I use a lower power to more evenly cook the bacon. Most of the fat will drip into the bowl. Clean up is remarkably easy. Dump the fat into some empty soup cans and let them cool before you throw them away. Use some dish soap to get the residue from the bowl. I usually handwash the bamboo rack as well, but you could place the bowl and rack in a dishwasher, too, for a more thorough clean.<br />
+<br />
+Pros:<br />
+<br />
++ Your bacon will be less greasy.<br />
++ Easy to clean and makes no mess.<br />
++ Using the microwave timer, you can note exact times required for different levels of cooking: limp bacon for sandwiches, crisp bacon for a breakfast side. This makes future cooking a breeze.<br />
+<br />
+Cons:<br />
+<br />
+- The bacon can tend to cur<b></b>l downward at the ends. You can correct for this by using a bamboo rack, or by better placement of the wooden spoons or bamboo skewers.<br />
+<br />
+<br />
+<br />
+Disadvantages of other methods:<br />
+<br />
+Skillet:<br />
+<br />
+- Constant supervision<br />
+- Splatter<br />
+- Greasier<br />
+<br />
+Oven:<br />
+<br />
+- Harder to clean<br />
+- Greasier<br />
+- Takes a long time<br />
+<br />
+Broiler:<br />
+<br />
+- Same as oven, except for the tendency for burning as Michael notes in the article<br />
+<br />
+George Foreman grill:<br />
+<br />
+- Seems to take a while and you can't fit that many slices at once.<br />
+- Also, I only have the small version and have to cut the bacon in half.<br />
+<br />
+Special microwave dishes for bacon:<br />
+<br />
+- They tend to <b>melt</b> after the first batch or two! I've tried the one above and several others.<br />
+- Can only cook 4-5 slices at a time, usually.<br />
+- The vertical ones leave your bacon looking funny with a "V" shape. Matter of taste(pun not intended), I guess.<br />
+<br />
+Grilling:<br />
+<br />
++ The bacon tastes good.<br />
++ Can cook ALL of your bacon at once if your grill is large enough<br />
+- Takes a while, but the results can be worth it.<br />
+- Messy to clean. You <b>DO</b> clean your grill, don't you?</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On November 18, 2005 at 01:01 AM, johncooks (guest) said...</div>
+					<div class="commentsubject">Subject: <span>Cooking Bacon</span><br /></div>
+					<div class="commentbody">I have found that cooking bacon in the oven utilizing a cooling rack/grid over a half sheet pan gives the best results with little clean up around the kitchen.  The bacon comes out of the oven crisp and drip free and is bacon that you can use right away and do not have to drip dry it in paper towels.  You do have to clean two pieces of equipment (rack and sheet pan) but it is worth it.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On November 18, 2005 at 02:40 PM, suzy (guest) said...</div>
+					<div class="commentsubject">Subject: <span>bacon reply</span><br /></div>
+					<div class="commentbody">i really love the makin bacon tool. i myself have owned one for about to years and it is now the only way i cook my bacon. it is light and crisp with so much flavor. i woulh HIGHLY recomend purchesing a makin bacon for your self here is the link: <br />
+<br />
+http://www.makinbacon.com/purchase.htm</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On November 18, 2005 at 11:06 PM, maureen (guest) said...</div>
+					<div class="commentsubject">Subject: <span>bakin bacon is best</span><br /></div>
+					<div class="commentbody">I agree with chlychef.  Bake the bacon in the oven at 350F for 15 min (or to desired doneness).  There is no messy splatter (like pan frying), no checking or watching the bacon, and you can bake more slices in an oven than in a microwave or pan.  During the 15 min. of carefree baking you can prepare the rest of the meal.  As chlychef said, it comes out perfect every time.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On November 19, 2005 at 01:32 AM, sandy (guest) said...</div>
+					<div class="commentsubject">Subject: <span>bacon</span><br /></div>
+					<div class="commentbody">I've baked my bacon for years - while we do like pan-fried bacon, the baked bacon has a subtly different taste that we enjoy; also, we can devote our time, attention, and stovetop to other dishes while the bacon is cooking.  Here's how we do it:<br />
+<br />
+Preheat oven to 425 degrees F.  Line a rimmed baking sheet with foil.  Lay bacon directly on the foil, not touching.  Turn bacon over at about 10-12 minutes; very thin bacon may be done now, thicker bacon will take as long as 12-16 minutes total.  Remove to a paper-towel-lined plate.  You can eat it right away, or put it aside for a bit and, covering it with a paper towel, reheat it for 30 seconds in the microwave (for those of you who have trouble getting the timing right with multiple dishes).</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On December 20, 2005 at 01:57 AM, an anonymous reader said...</div>
+					<div class="commentsubject">Subject: <span>Aussie bacon</span><br /></div>
+					<div class="commentbody">Bacon available in Australia is the whole strip - that is the round shaped fleshy bit (known as Canadian bacon), with a streaky end (known simply as bacon in the USA). It's actually shaped a bit like a number 6 on its side.<br />
+<br />
+Personally, I usually trim most of the fat off the streaky end and keep just the pink bits. Oh, and pan frying it is usually best (although I haven't tried baking it for 3 hours!)<br />
+<br />
+Regards,<br />
+<br />
+Aussie in America</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On February 28, 2006 at 11:45 PM, an anonymous reader said...</div>
+					<div class="commentsubject">Subject: <span>I love American Bacon</span><br /></div>
+					<div class="commentbody">I guess it depends on what you grow up with. Me, although not American, grew up with American style bacon (streaky bacon) and even though I live in Australia now, I cannot get used to the taste of Aussie bacon. It just isn't bacon. It's ham. Australians bash American bacon just because theirs have more meat, but Aussie bacon really lacks the smoky flavor. It's just salty ham. I'm still trying to find the American kind here...</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On March 01, 2006 at 05:12 PM, an anonymous reader said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">UK is the best place for buying bacon I reckon. You can get streaky middle or back; with or without rind; smoked or unsmoked. <br />
+<br />
+The general American trend to cook the bacon till completely crisp is not the common way of cooking it over here though. We generally cook it till the fat has gone crispy but the meat is still chewy.<br />
+<br />
+I think grilled bacon tastes far and away the best between grilled baked and fried. Never tried the microwave method though. will have to give it a go.<br />
+<br />
+The first article mentioned broiling. What is that?</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On March 01, 2006 at 06:23 PM, Michael Chu said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody"><div class='commentquote'>Anonymous wrote:<div class='commentquotebody'>The first article mentioned broiling. What is that?</div></div><br />
+Broiling, in this context, means to cook food directly under a heat source. In American ovens, an additional heating element is often placed at the top of the oven (either a gas jet or electrical heating element) under which you place food. The heat is very intense and localized. In older ovens, the broiling element was the same as the oven heating element (below the cooking chamber) and a special broiler drawer is used to broil food.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On March 08, 2006 at 03:14 PM, an anonymous reader said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">I am an Aussie currently in London and i loathe the bacon over here - the texture and taste is all wrong!!!!!<br />
+<br />
+I saw some Aussie style bacon somewhere once but I was going to be out for the rest of the day so didn't buy any &amp; now I can't remember where I saw it! <br />
+<br />
+As a result, i have started grilling pancetta instead - its awesome!</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On March 13, 2006 at 08:05 PM, Guest from Silicon Valley (guest) said...</div>
+					<div class="commentsubject">Subject: <span>Bacon cooking</span><br /></div>
+					<div class="commentbody">I found that a combination of cooking methods works pretty well for bacon. I will microwave bacon to quickly remove water and fat. Then I crisp up the bacon in the oven or in a frying pan.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On March 14, 2006 at 03:44 AM, GaryProtein said...</div>
+					<div class="commentsubject">Subject: <span>Re: local source for good bacon</span><br /></div>
+					<div class="commentbody"><div class='commentquote'>BeerMan wrote:<div class='commentquotebody'>My local Whole Foods Supermarket has the best readily available bacon that I have found.  It is thick cut, smoked nicely, not too fatty, and supposedly nitrate free (or at least ADDED nitrate free.)  It does have a rather short shelf life, so don't buy too much unless you plan on cooking it soon thereafter.  I guess you could try freezing it but I prefer to have it as fresh as possible.  The meat cutter/butcher usually has some in the case, but the Whole Foods gourmet thick cut pre-packed is just as good.</div></div><br />
+<br />
+I agree their bacon, especially when purchased as a slab is excellent.  If you are in New York, try slab bacon at Zabar's and Citarella.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On March 16, 2006 at 12:41 AM, Mister Paul (guest) said...</div>
+					<div class="commentsubject">Subject: <span>Multi-Tecnique Compromise in cooking bacon</span><br /></div>
+					<div class="commentbody">I like to make a compromise between the variable quality and speed differentials of the different techniques discussed regarding the preparation of bacon, and I have found that microwaving the bacon for 2/3rds the cooking time (depending on the amount of bacon), then transferring the heated bacon to a pan for 1/3rd of the time searing in a pan on high heat gives you the pan fried texture, with the speed and consistency of the microwave.<br />
+<br />
+All in all it takes about 5 to 10 minutes off of the conventional time it takes just cooking in the pan, which can be important when you are preparing complimentary dishes that take less time to cook.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On May 08, 2006 at 02:40 AM, an anonymous reader said...</div>
+					<div class="commentsubject">Subject: <span>skillet on the grill</span><br /></div>
+					<div class="commentbody">My favorite method uses a gas grill AND a cast iron skillet.  Fill a cold skillet, even the sides of the pan, with bacon. Place the pan on a cold gas grill and set the heat to medium high.  The fat will render during the warm up period, fry when the fat is rendered and bake when the grill is hot enough.  It takes about 15 minutes.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On May 16, 2006 at 08:05 PM, ZeptoGator said...</div>
+					<div class="commentsubject">Subject: <span>Bacon</span><br /></div>
+					<div class="commentbody">Mmmmmm...bacon</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On May 19, 2006 at 08:00 PM, an anonymous reader said...</div>
+					<div class="commentsubject">Subject: <span>American Style Bacon</span><br /></div>
+					<div class="commentbody">I always thought that american style bacon came from the long winters in the midwest. In the past there wasn't grocery stores like we think of them now, the nearest town might be 5 hours away by horse, and there was no such thing as vegetable oils. The only sources of cooking fat came from either animal fat or butter, and cows would stop giving milk in the winter. On my grandparents farm they would render fat into lard, and they salted and smoked bacon so it would last through the winter. The bacon dripping were poured off into a small covered crock and used in place of butter through the winter (I still have the crock!). I think that this cut of meat was chosen on purpose to make bacon with because it was so fatty, and the thin slices come from having to ration it out to last through the winter. The lard didn't have a strong taste and was used to make breads, pies, cakes, etc.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On June 04, 2006 at 08:01 PM, an anonymous reader said...</div>
+					<div class="commentsubject">Subject: <span>American Bacon</span><br /></div>
+					<div class="commentbody">My father tells me that when he was growing up (in 1030's Missouri) bacon was pretty much all fat and little or no meat. It was an inexpensive source of grease and flavor. Hogs were raised differently depending on whether they were to be 'lard hogs' or 'meat hogs'.  Now bacon and pork is much leaner. Sausage is still often half fat, so I usually make my own from pork butt. I bought some name brand ground pork that was so lean, I had to add some fat to make sausage.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 15, 2006 at 06:13 PM, grayparrot (guest) said...</div>
+					<div class="commentsubject">Subject: <span>cooking bacon</span><br /></div>
+					<div class="commentbody">I'm a mechanical engineer too guys, and this girl cooks her strips of bacon laid out on cold cast iron pans placed inside a preheated 350 deg. F gas oven for 7 to 9 minutes.  No turning necessary and the strips cook up crispy yet remain straight averaging nine inches long. Forget aluminum cookie sheets for the bacon will cook unevenly.  Sometimes the old fashioned ways are THE BEST.  And BTW I went through the BIG Dig tunnels three times 7-10-2006 in the afternoon.  WTF were those idiot engineers thinking about suspending a 3 ton 25' x 45' concrete panel from epoxied bolts?????  I'd rather see the I beams above me than have 6000 pounds fall down and crush me.  Truly a dumb design.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On August 29, 2006 at 01:06 AM, pj (guest) said...</div>
+					<div class="commentsubject">Subject: <span>cooking bacon</span><br /></div>
+					<div class="commentbody">I'm about to cook a large amount of cheap supermarket bacon and was looking for some tips.  I harvested all I needed from this fine site.  But I did want to add one tip about cheap supermarket bacon.  Let it get to room temperature before frying or baking!  It will lay flat and cook more evenly!</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On October 08, 2006 at 01:45 AM, an anonymous reader said...</div>
+					<div class="commentsubject">Subject: <span>bacon</span><br /></div>
+					<div class="commentbody">best bacon is deep fried!</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On October 16, 2006 at 12:17 AM, Frugal, not by choice! (guest) said...</div>
+					<div class="commentsubject">Subject: <span>thin, cheap bacon....</span><br /></div>
+					<div class="commentbody">It is horrible to have to buy the thin supermarket bacon, but sometimes you just have to.  I have found if you lightlly flour it before pan frying in a cast iron skillet it seems to plump it up a bit and helps with the shrinkage.  You can still use the drippings for cream gravy... yum!</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On October 20, 2006 at 10:31 AM, Guest (guest) said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">Gross. Why would I want bacon made on some hick's nasty ass farm? So I can catch some sort of disease? And why would I want to eat anything from a hogs' "jowl" or whatever?<br />
+<br />
+I'll stick to buying packaged bacon from Safeway or Kroger's, thanks.<br />
+<br />
+Seriously, are you all like 80 years old and grew up on farms milking your cows and eating unprocessed chicken eggs or what? Between this and homemade mayo with raw eggs, you all must have a death wish.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On November 20, 2006 at 04:02 AM, bamsejente (guest) said...</div>
+					<div class="commentsubject">Subject: <span>bacon in a crock pot</span><br /></div>
+					<div class="commentbody">I have actually put bacon ends and pieces in the crock pot and let it render and crisp.  I can buy ends and pieces in bulk at a rather good price.  You end up with some very tender thick meat pieces and some crisp pieces and some melt in your mouth fat pieces.  It is great to sort and store in the freezer for later uses: baked beans, salads, bacon gravy w/ crumbles over cornbread, bacon and green beans, eggs or omelets, etc.  I also collect the rendered fat and use that for cooking other items.  There is no spatter and clean up is just as simple as other crock pot cooking.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On April 30, 2007 at 01:27 AM, Seattle guest (guest) said...</div>
+					<div class="commentsubject">Subject: <span>baking bacon</span><br /></div>
+					<div class="commentbody">I took the advice of the resident chef at my favorite super market and bake my thick slice bacon for about 30 minutes at 350 in an aluminum baking pan with an edge.  Works VERY nicely and the grease is all contained in the pan.<br />
+<br />
+The cast iron idea intrigues me.  I will have to try that method some time.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On June 12, 2007 at 09:16 AM, Grendel (guest) said...</div>
+					<div class="commentsubject">Subject: <span>Cooked bacon freezes</span><br /></div>
+					<div class="commentbody">Great site! I love the format of the recipes, and the attitude to testing.<br />
+<br />
+I buy bulk whole bacon when it's cheaper here (Australia) and trim it, separating the eyes, which don't need much cooking, from the rest. The eyes I use immediately for recipes I don't want fatty bits in, or fry it lightly, then freeze, because cooked bacon freezes well, where raw bacon doesn't. The streaky bits I oven cook spread on trays because you can do a lot at a time and it doesn't need much attention. I then freeze that in ziplock bags and when I want a quick bacon sandwich or something a couple of rashers microwave very efficiently in 10 - 20 seconds and go extra crisp.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 10, 2007 at 10:42 PM, jkarle1106 said...</div>
+					<div class="commentsubject">Subject: <span>BaconII</span><br /></div>
+					<div class="commentbody">I live in central FL, and wild hogs are a common thing here. They are a cross between feral pigs and Russian boars. And they make great bacon. Not as much fat on a wild boar as on a domestic pig. Now, I make mine from the jowl, as it's more meaty than the belly. This is also true of domestic pigs. The microwave works best for me, being lazy and impatient, lololol.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 16, 2007 at 12:22 AM, an anonymous reader said...</div>
+					<div class="commentsubject">Subject: <span>For the dense guest comment above</span><br /></div>
+					<div class="commentbody">[i:7635a049c6]On October 20, 2006 at 06:31 AM, Guest (guest) said...<br />
+Gross. Why would I want bacon made on some hick's nasty ass farm? So I can catch some sort of disease? And why would I want to eat anything from a hogs' "jowl" or whatever? <br />
+<br />
+I'll stick to buying packaged bacon from Safeway or Kroger's, thanks. <br />
+<br />
+Seriously, are you all like 80 years old and grew up on farms milking your cows and eating unprocessed chicken eggs or what? Between this and homemade mayo with raw eggs, you all must have a death wish.[/i:7635a049c6]<br />
+<br />
+Where do you think the Safeway bacon comes from? Do you think that those hogs live in apartments? Or maybe food tastes better to you, after it has plenty of additives added, and is processed in high speed factories?<br />
+No, that "hick" who probably sold most of his hogs to Safeway, he doesn't know anything about making pork products, and he doesn't add any chemicals to the meat. How could it be good?<br />
+You have probably already eaten hog jowl, if you have ever eaten at Cracker barrel, or had a canned ham.<br />
+<br />
+RE: Mayonaise with raw eggs. That is how mayonaise is made, in the wonderful delicious factories, or at home.  The raw eggs are the reason that anything made with mayonaise cannot be left out of the refrigerator for more than 1 hour.  The raw eggs start to go bad, resulting in food poisoning.  But then again, you know everything, so why not make some potato salad, RIGHT NOW, and leave it on your porch overnight. Tomorrow for lunch, ENJOY!<br />
+<br />
+You are a jerk</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On October 06, 2007 at 06:02 PM, felixandme (guest) said...</div>
+					<div class="commentsubject">Subject: <span>Bacon Test 1&amp;2</span><br /></div>
+					<div class="commentbody">I bake my bacon at 400 degrees. It only takes 12-15 minutes and comes out crispy (or you can cook it less to make it softer.) My mother in law cooks hers in the toaster oven.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On October 22, 2007 at 11:44 PM, Mike (guest) said...</div>
+					<div class="commentsubject">Subject: <span>why has no one mentioned this yet?</span><br /></div>
+					<div class="commentbody">Bacon cooked in the oven is very easy to do, and very tasty.  But my absolute favourite is to coat the slices generously with brown sugar before placing them into a 350 degree oven. You have never tasted anything like it!</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On November 23, 2007 at 03:20 AM, Visiter (guest) said...</div>
+					<div class="commentsubject">Subject: <span>Differences in Bacon</span><br /></div>
+					<div class="commentbody">Some here have noted teh differences in bacon available, not just the thickness of the slices but the amount of water (effectively adding to shrinkange) and the ration of fat to lean.<br />
+<br />
+My uncle had a hog ranch in TX.  THere are many types of hogs and they all have differing weights for the "best" fat or lean uses.  The geographic area actually makes a difference (or used to) as far as how fat or lean meat was to be.  Remember that the hogs are raised for ALL thier meat, not just the pork belly.  One good weight for the rest of the meat might make a fatty belly, as would hogs that were "penned" verses what we would call "free range" today.<br />
+<br />
+His hogs always had large pens and could move at will.  They were raised on grain and sold at 190 to 200 pounds average.  If my uncle delivered at 185 pounds he would not be paid enough to stay in business, teh same at 202 pounds.  Believe me, they were all very close in size (average) by sex.  It was amazing because My uncle would one day say "its time to sell them" ....he would never have weighed them he just knew by looking.<br />
+<br />
+The point is that the companies that make the bacon heavily brine them, use sugars and other unnecessary items in curing, add liquid smoke, add additional salt and then at packaging add and inject water.  They do NOT care about a good product.  They are there to make money.  They certainly do not care about the "lean" of the product. Some idiot will buy it and eat it because they aer programmed to like it.<br />
+<br />
+I have eaten bacon that of course was brined before smoking, but never had anything added or changed after smoking, no water, nothing.  There is NO comparison of REAL bacon to the stuff being sold in the US as palletable.  There is NO meat on this stuff, if there is it is fatty streaked meat as well (penned hogs) from flacid muscles.<br />
+<br />
+WE need a minor revolution in bacon to have good product.<br />
+<br />
+The only product I was able to find that was any good at all was sold in stores in the San Jose area as cut ends and peaces of bacon (the drops and cuttings from processing).  It was meaty, thick and even huge chunks.  It was cheap.  It was better than any I have found as regular store items.<br />
+<br />
+If you are int eh SF bay area (unfortunately I am now in FL) try Cosentinos Markets, they sometimes have fairly good bacon in the meat department.  I watch for exceptionally lean product even there before buying, I even make them sort some for me if I can.<br />
+<br />
+As to the cooking of the bacon.....after having read all the reports and methods, it seems that there is a thread of evidence that would make one believe that cooking for over 15 to 20 minutes under a heat that allows this without burning delivers the best results.  I believe that is correct as I usually slow cook on stove top or oven  for about 20 to 30 minutes myself</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On December 15, 2007 at 06:45 PM, xenobiologista (guest) said...</div>
+					<div class="commentsubject">Subject: <span>bacon at Copps</span><br /></div>
+					<div class="commentbody">The Copps Supermarket (it's a Wisconsin chain) near my place in Madison has thick cut applewood smoked bacon at the meat counter. I've only recently started eating bacon (thanks to this webpage!!!) and the thick cut stuff is so much better than the prepackaged bacon on the shelf - in the same supermarket.<br />
+<br />
+I'm Chinese Malaysian...the taste for fatty pork must be genetic or something. I'm going to use the drippings for fried rice. The source of grease in Chinese fried rice is usually small cubes of salt pork fat, which are fried until the oil renders out before you add other ingredients.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On December 18, 2007 at 12:05 PM, California Insomnia (guest) said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">It's 4am and I can't sleep! But reading about all this bacon inspired me to go cook some. <br />
+<br />
+Truth is I'm old school I like my bacon cooked in a cast iron skillet; and I feel the microwave is just so unnatural. But I might try grilling it after reading this page. Poor pigs! Why did God make you taste so good?</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On January 03, 2008 at 02:47 AM, an anonymous reader said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">Sheesh.  Having worked for a major airline all of my adult life, I've lived in many places over the years (big cities for the most part), but decided to retire in the wonderful rural Ozarks.  For the first time ever I'm now able to buy hog jowl FRESH (i.e., never frozen) and I've fallen head over heels in love with it.  The bacon is to die for.  And may God bless the "hicks" who make it available to me for something like .79/lb.  Does life get any better???</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On January 13, 2008 at 12:02 AM, Melsonic (guest) said...</div>
+					<div class="commentsubject">Subject: <span>Bacon</span><br /></div>
+					<div class="commentbody">My uncle used to cook his bacon coated in a light dusting of flour in a skillet.  I sometimes do this in the microwave, and have also had it baked in an oven. Yum.  It's also good with a little Tony Chachere's Cajun seasoning mixed in with the flour.  You can get the unsalted version if you object to salt on your bacon.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On February 01, 2008 at 09:43 PM, jkarle1106 said...</div>
+					<div class="commentsubject">Subject: <span>Bacon</span><br /></div>
+					<div class="commentbody">Down here where I have retired, in Florida, on the "Red Neck Riviera" (the St Johns River in DeBary, FL), we are infested with wild hogs. They are a cross bread of  feral pigs and Russian Boars. The latter having been brought here for sport hunting by the Robber Barons of the nineteenth century. They taste really good. The bacon, made from the belly and the jowls is to die for. While I don't hunt them, I occasionally have to kill one or two for plowing up my lawn like a 16 row cultivator. I cure the bacon parts using Morton Tender Quick as a brine, and cold smoke it in an old barrel type smoker. I've cooked the bacon in the microwave, the oven, in a skillet, and on a cheap flat top electric griddle. The best I've had is on the griddle. Start cold, set the temp at 350 F~, and use an old cast iron frying pan as a bacon press. While I can feel my arteries plugging up, it's still the best eating bacon I've ever had.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On March 21, 2008 at 09:22 PM, quadcap (guest) said...</div>
+					<div class="commentsubject">Subject: <span>Best way to cook bacon</span><br /></div>
+					<div class="commentbody">The very best way to cook bacon that I have found is to pan fry it over very high heat, stirring constantly.  This beats the time consuming slow fry method you describe, and works when you have more bacon than will fit on the bottom of the pan.  It cooks the bacon evenly, without the painstaking "flipping" process, and renders the most fat.  Try it!</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On June 06, 2008 at 02:40 AM, jw (guest) said...</div>
+					<div class="commentsubject">Subject: <span>mayonnaise</span><br /></div>
+					<div class="commentbody">For the person afraid of mayonnaise....<br />
+<br />
+Wikipedia has this to say.....<br />
+<br />
+"Mayonnaise has a pH between 3.8 and 4.6, making it an acidic food. There is a misconception that foods like potato salad can make a person sick if left out in the sun, due to the mayonnaise spoiling. This is false; the pH of mayonnaise prevents harmful bacteria from growing in it. Left out of refrigeration, mayonnaise will develop an unappetizing taste and smell, due to other types of bacteria and molds that can spoil it; but will not make one sick."</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On June 07, 2008 at 04:27 PM, Elizabeth A. (guest) said...</div>
+					<div class="commentsubject">Subject: <span>multi rack for toaster/conv. oven bacon cooking</span><br /></div>
+					<div class="commentbody">I just realized I could put more than one layer of bacon in my toaster/conv. oven at a time if I had a multi layer rack as the hot air is constantly moving around and through the layers.  I tried my little broiler pan with a small cake cooling rack sitting over that, but there wasn't enough air flow under the rack on the pan.   There was under the cooling rack.  I thought that if I had a multi rack over a drip pan with water in it,  and at 400 degrees, I would have the fastest cooking method.  Has anyone seen a multi rack that would be smell enough to fit in a toaster/conv oven?  The racks would only have to be about 1/2 inch to 1 inch apart.  Four to five layers could probably fit.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 08, 2008 at 08:21 PM, jdr (guest) said...</div>
+					<div class="commentsubject">Subject: <span>bacon</span><br /></div>
+					<div class="commentbody">I was a vegetarian for 11 years.  During that time I would often dream about bacon!  I never dreamed of any other food, just bacon.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 13, 2008 at 03:10 AM, Philip Robert (guest) said...</div>
+					<div class="commentsubject">Subject: <span>Cooking Bacon</span><br /></div>
+					<div class="commentbody">Before reading this post I had never given much thought about the way bacon was (or should be) cooked.  Throw it in a hot frying pan until crispy then dry on paper towels.  For cooking at home now I use the baking method.  Typically I'll wake up at 3:00AM turn the oven to 200 degrees and put in a half sheet with a rack to hold the bacon out of the grease.  At 6:00AM when I get up I kick the oven up to 400 degrees for about 10 minutes to finish.  Best bacon I've ever cooked.<br />
+<br />
+A while ago I enjoyed breakfast at a place called The Tractor Room in San Diego.  The bacon came out in an interesting looking curl.  It was absolutely incredible.  When I inquired as to how it was prepared they told me that they deep fried it.  Nice, but I'm not going to put a commercial deep fryer in my kitchen.  <br />
+<br />
+Now I'm looking forward to grilling some bacon.  Would have already tried this if I was still living with my ex.  We had a nice deck off the kitchen with a wonderful gas grill.  God I miss that &lt;del&gt;girl&lt;/del&gt; grill.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On September 10, 2008 at 06:01 PM, fatty (guest) said...</div>
+					<div class="commentsubject">Subject: <span>Agreed!</span><br /></div>
+					<div class="commentbody">Oven baking is the most consistent, provides the easiest, most mess free way to create crispy bacon, and leaves lovely grease for later use.<br />
+<br />
+<a href='http://fattyfatfat.com/index.php/2008/09/no-more-crappy-bacon/'>http://fattyfatfat.com/index.php/2008/09/no-more-crappy-bacon/</a></div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On November 01, 2008 at 08:24 PM, OfficerNelson (guest) said...</div>
+					<div class="commentsubject">Subject: <span>Cooking some bacon now (for the sake of cooking bacon)</span><br /></div>
+					<div class="commentbody">Every weekend I pull out a pack of Hormel Black Label (UNCOOKED) bacon from my fridge. This is by far the best "supermarket bacon" available, and, if cooked right, tastes like pure heaven (and pure heart attack, but hell, I've got more important things to worry about. Like whether or not I'll have enough bacon next week.)<br />
+<br />
+Be careful, though. I've seen a lot of stores carry Hormel Black Label, but most likely it's fake. Unless you're dirt poor or enjoy this stuff, do NOT get the precooked junk. Definitely not worth it! I'd rather eat the package it came in.<br />
+<br />
+Tip: If you're pan frying, put simply anything over the pan to cover it. If it has a lid, great. Just make sure there's an opening so the steam can get out. This reduces the risk of splatter greatly, although you have to be careful when you're flipping the bacon. (Pretty obvious but I see a lot of you still complaining about it...)<br />
+<br />
+Gotta go. Bacon's done. *om nom nom*</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On November 26, 2008 at 03:43 PM, Lynn Fuston (guest) said...</div>
+					<div class="commentsubject">Subject: <span>Twirly Bacon</span><br /></div>
+					<div class="commentbody">I have to give my kids credit for this one. They wanted to make bacon that was twirly--curled around like a corkscrew. I thought about it and decided we might be able to use drinking straws as the form. So we wrapped bacon strips around a straw, like the red stripe on a candy cane. Then we cooked it the normal way in the microwave. It worked quite well and the kids were very excited about the way it looked. The straws will get very melty and sometimes are hard to separate from the bacon. But it's a fun experience for the kids.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On November 26, 2008 at 07:19 PM, Dilbert said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">oops!  plastic would not have been my choice - it does melt as you learned.<br />
+<br />
+actually when bacon is still sizzling hot - whether you do it in the microwave on pan/griddle, it is very pliable.<br />
+<br />
+cook it up, then quickly wrap it around the handle of a wooden spoon (for example) - allow to cool.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On January 14, 2009 at 06:24 PM, an anonymous reader said...</div>
+					<div class="commentsubject">Subject: <span>Grilling bacon</span><br /></div>
+					<div class="commentbody">My next door neighbors put pancake syrup on their bacon when they grill it.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On June 04, 2009 at 04:42 PM, Stan from Ithaca NY (guest) said...</div>
+					<div class="commentsubject">Subject: <span>Bacon cooker for the microwave / Source of good bacon</span><br /></div>
+					<div class="commentbody">My brother has a Makin' Bacon, and I am not a fan.  The one I have used, with consistently good results for about eight years, is the BaconWave.  (Walmart.com has them, but the retail store does not.)  It holds the bacon strips on their edges, and quite a lot of fat renders out.  It's clear, with a few little bacony bits in it, just as Michael described for the Makin' Bacon.  With the BaconWave come skewers to hold the ends of the strips in place, but I've never used them.  One caution is that the instructions for the BaconWave generally have too-long cooing times, so be prepared to experiment.<br />
+<br />
+Some folks mentioned how fatty standard American bacon is.  I agree. But John F. Martin (based in Lancaster PA, I believe) makes excellent bacon -- a nice smoky flavor, but not overpowering, and significantly less fat than national brands.  The bacon comes in regular and low salt, but they taste equally good to me.  Only annoyance (a minor one) is that the strips are sometimes not uniformly thick.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On November 01, 2009 at 11:20 PM, an anonymous reader said...</div>
+					<div class="commentsubject">Subject: <span>Use Waffle Iron?</span><br /></div>
+					<div class="commentbody">A certain cooking show host recommends using a waffle iron to cook bacon.  I tried this, but cleanup is a mess. My waffle iron converts to a panini press.  That is the ticket!</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On January 09, 2010 at 11:29 PM, Skhilled (guest) said...</div>
+					<div class="commentsubject"></div>
+					<div class="commentbody">John F Martin does make good bacon. I don't live far from there. Wegman's (the best supermarket in the world, imo) sell an applewood smoked reduced salt bacon that is VERY, VERY good!!! Go to Wegmans.com for locations.<br />
+<br />
+I usually bake my bacon on a rack at 350 for about 20 minutes. There's no need to slow cook it and you'll get very straight and evenly cooked bacon. You can even flavor it with spices, maple syrup or whatever you like and get the same results.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On February 23, 2010 at 12:16 AM, an anonymous reader said...</div>
+					<div class="commentsubject">Subject: <span>my favorite method</span><br /></div>
+					<div class="commentbody">400 degrees aluminum baking sheet with parchment paper on it. If you get creative you can fit a whole pound on one sheet pan. Also I find this method keeps the bacon fat fairly "clean" if you want to harvest it for later use.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On April 18, 2010 at 04:49 PM, an anonymous reader said...</div>
+					<div class="commentsubject">Subject: <span>Agree with the low oven method</span><br /></div>
+					<div class="commentbody">Just in the past month or so, I've discovered the wonders of slow baking bacon in the oven, partially thanks to this site.<br />
+<br />
+One morning, my wife wanted waffles.  She's grown accustomed to my raised (yeasted) waffle recipe, which I usually let rise overnight.  But I needed it for the morning, and it needs at least an hour for the yeast to ferment.<br />
+<br />
+So I figured it was the perfect time to try out the slow baking method.  I put the oven at 200 degrees (as suggested here), and the bacon cooked for about 90 minutes like that.  No mess.  No burnt stains on the aluminum foil (as I've seen before at high temperature).  Perfectly clear drippings.<br />
+<br />
+The bacon wasn't quite done at that point, so I turned the oven up slightly as I started to make the waffles.  The flavor was UNBELIEVABLE.  Texture was fantastic -- uniformly crispy with just the right amount of chewy.  I had a guest for brunch as well as my wife; both said it was about the best bacon they had ever had.<br />
+<br />
+Higher temperatures do the trick, but few comments seem to discuss trying the slow baking method.  Yes, you need extra time, but some weekend morning when you're up early and the rest of the family is sleeping in, put the bacon in and just let it slow cook until people get up.  You can always raise the temperature to finish it if you need to, but any additional time is worth it.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On May 16, 2010 at 09:47 PM, an anonymous reader said...</div>
+					<div class="commentsubject">Subject: <span>Grilling Bacon</span><br /></div>
+					<div class="commentbody">I'm really surprised at how perfect your grilled bacon looked.  So much so that it almost doesn't look real.  I've grilled bacon before and it doesn't take but two minutes with the grill on low for that stuff to cause a pretty decent flare up and there wasn't one burned spot on your grilled bacon.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On June 30, 2010 at 03:57 AM, an anonymous reader said...</div>
+					<div class="commentsubject">Subject: <span>Cooking Bacon</span><br /></div>
+					<div class="commentbody">The instructions on my box of bacon say if preparing in an oven, cook at 400 degrees for 15-18 minutes.  This seems to be in between the broiling method you used in part I and the slow cooking method you used in part II.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On July 05, 2010 at 11:01 PM, MarshallM (guest) said...</div>
+					<div class="commentsubject">Subject: <span>Bacon II</span><br /></div>
+					<div class="commentbody">Most painless way for me is to put half-length strips in a cold 12-inch thick- bottomed SS pan (non-teflon).  I stumble out of bed, lay in the bacon, turn burner to about 1.5 of 10 (electric burner).  Don't use any oil on pan; you want it to stick--the bacon strips are super flat; even the fat is crunchy.  Go back to bed.  About an hour or so later, smell wakes me up, and 'm happy!  While making the breakfast, you can play around with the finishing heat.   The remaining bacon fat should be crystal clear.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On September 06, 2010 at 02:50 AM, ladybird (guest) said...</div>
+					<div class="commentsubject">Subject: <span>deep fried</span><br /></div>
+					<div class="commentbody">I was getting a bacon and egg sandwich at work, where the cook makes it on the spot. I always ask for 'super-extra crispy' so one day he submerges the bacon in the hot cooking oil that was used for home fries. Delicious! Heavenly! and yes, Super-extra crispy! Soon my other co-workers were asking for it the same way, so he just put the entire package of bacon in the oil every morning.</div>
+					<hr size="1" noshade />
+				
+					<hr size="1" noshade />
+					<div class="commentheading">On October 13, 2010 at 01:43 AM, Adrain. (guest) said...</div>
+					<div class="commentsubject">Subject: <span>and it's edible frozen</span><br /></div>
+					<div class="commentbody">As other have said, in the UK bacon is is 90% meat, with some fat round the edge. I've played with the sugestions on this site (thanks!) to cook cheap bulk offers of bacon from the supermarket. Once cooked, you can scoff a slice straight from the freezer! Sounds nasty but is nice. <br />
+<br />
+The disadvantage is the potential erosion of your economical frozen stash.<br />
+<br />
+If you try it, you won't thank me for this observation... it's so tempting.<br />
+<br />
+Adrian.</div>
+					<hr size="1" noshade />
+				
+		<div class="commentlink">
+			<a href="/forums/posting.php?mode=reply&t=84" title="Comments are managed in the Cooking For Engineers Forums">Post a comment on <i>Bacon (Part II)</i></a>
+		</div>
+	</div>
+	
+
+</div>
+	
+  
+	<div class="spacer3"></div>
+	
+<!-- Start Google Adsense -->
+	<div align="center" style="border:0px solid #FFFFA0;width:728px;height:90px;margin:0 auto">
+		<script type="text/javascript"><!--
+		google_ad_client = "pub-1164960032546572";
+		google_ad_width = 728;
+		google_ad_height = 90;
+		google_ad_format = "728x90_as";
+		google_ad_type = "image_text";
+		google_ad_channel ="6610397831";
+		google_color_border = "FFFFA0";
+		google_color_bg = "FFFFDD";
+		google_color_link = "008000";
+		google_color_text = "666666";
+		google_color_url = "999999";
+		//--></script>
+		<script type="text/javascript"
+			src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+	</div>
+<!-- End Adsense -->
+
+	<div class="spacer3"></div>
+
+
+		</div>
+		
+		
+			
+<table class="fl_table" cellspacing="2" cellpadding="0" border="0">
+	<tr>
+		<td width="16%">
+			<a href="/article/138/About-Cooking-For-Engineers" title="About Cooking For Engineers">About CfE</a>
+		</td>
+		<td width="17%">
+			<a href="/article/139/Contact-Cooking-For-Engineers" title="Contact Cooking For Engineers">Contact</a>
+		</td>
+		<td width="17%">
+			<a href="/article/190/User-Agreement" title="User Agreement">User Agreement</a>
+		</td>
+		<td width="16%">
+			<a href="/article/140/Frequently-Asked-Questions" title="Frequently Asked Questions">FAQ's</a>
+		</td>
+		<td width="17%">
+			<a href="/article/141/In-the-Press" title="Cooking For Engineers in the Press">In the Press</a>
+		</td>
+		<td width="17%">
+			<a href="/article/191/Article-Submission-Program" title="Article Submission Program">Write for CfE</a>
+		</td>
+	</tr>
+</table>
+			<style type="text/css">
+	.footer_partenaires{
+		width:880px;
+		border:1px solid #808080;
+		padding:4px 4px;
+		margin:2px auto 0 auto;
+		font-size:10px;
+		background: #000000;
+		font-family: "Trebuchet MS",Arial,sans-serif;
+	}
+	.footer_partenaires div {
+		padding:0;
+		margin:0;
+	}
+	.footer_partenaires h2{
+		color:#D0D000;
+		font-size:13px;
+		margin:0 0 4px 7px;
+		padding:0;
+		border:0px;	
+		font-family: "Trebuchet MS",Arial,sans-serif;
+		font-weight:normal;
+	}
+	.footer_partenaires a{
+		color:#C0C0C0;
+		font-size:11px;
+		font-weight: normal;
+		text-decoration:none;
+		margin:0 3px 0 0;
+		padding:0 2px 0 7px;
+		border-left:#747577 1px solid;
+		line-height:1em;
+	}
+	.footer_partenaires a.first{
+		border-left:none;
+	}
+	.footer_partenaires a:hover{
+		color:#C0C0C0;
+		text-decoration:none;
+	}
+</style>
+<div class="footer_partenaires">
+	<h2>Local Guides</h2>
+	<div>
+		<a href="http://local.cookingforengineers.com/" title="All Guides" class="first">All Guides</a>
+		<a href="http://local.cookingforengineers.com/Alabama-nAlabama.html" title="Alabama">Alabama</a>
+		<a href="http://local.cookingforengineers.com/Alaska-nAlaska.html" title="Alaska">Alaska</a>
+		<a href="http://local.cookingforengineers.com/Arizona-nArizona.html" title="Arizona">Arizona</a>
+		<a href="http://local.cookingforengineers.com/Arkansas-nArkansas.html" title="Arkansas">Arkansas</a>
+		<a href="http://local.cookingforengineers.com/California-nCalifornia.html" title="California">California</a>
+		<a href="http://local.cookingforengineers.com/Colorado-nColorado.html" title="Colorado">Colorado</a>
+		<a href="http://local.cookingforengineers.com/Connecticut-nConnecticut.html" title="Connecticut">Connecticut</a>
+		<a href="http://local.cookingforengineers.com/DC-nDC.html" title="DC">DC</a>
+		<a href="http://local.cookingforengineers.com/Delaware-nDelaware.html" title="Delaware">Delaware</a>
+		<a href="http://local.cookingforengineers.com/Florida-nFlorida.html" title="Florida">Florida</a>
+		<a href="http://local.cookingforengineers.com/Georgia-nGeorgia.html" title="Georgia">Georgia</a>
+		<a href="http://local.cookingforengineers.com/Hawaii-nHawaii.html" title="Hawaii">Hawaii</a>
+		<a href="http://local.cookingforengineers.com/Idaho-nIdaho.html" title="Idaho">Idaho</a>
+		<a href="http://local.cookingforengineers.com/Illinois-nIllinois.html" title="Illinois">Illinois</a>
+	</div>
+	<div>
+		<a href="http://local.cookingforengineers.com/Indiana-nIndiana.html" title="Indiana" class="first">Indiana</a>
+		<a href="http://local.cookingforengineers.com/Iowa-nIowa.html" title="Iowa">Iowa</a>
+		<a href="http://local.cookingforengineers.com/Kansas-nKansas.html" title="Kansas">Kansas</a>
+		<a href="http://local.cookingforengineers.com/Kentucky-nKentucky.html" title="Kentucky">&nbsp;Kentucky</a>
+		<a href="http://local.cookingforengineers.com/Louisiana-nLouisiana.html" title="Louisiana">Louisiana</a>
+		<a href="http://local.cookingforengineers.com/Maine-nMaine.html" title="Maine">Maine</a>
+		<a href="http://local.cookingforengineers.com/Maryland-nMaryland.html" title="Maryland">Maryland</a>
+		<a href="http://local.cookingforengineers.com/Massachusetts-nMassachusetts.html" title="Massachusetts">Massachusetts</a>
+		<a href="http://local.cookingforengineers.com/Michigan-nMichigan.html" title="Michigan">Michigan</a>
+		<a href="http://local.cookingforengineers.com/Minnesota-nMinnesota.html" title="Minnesota">Minnesota</a>
+		<a href="http://local.cookingforengineers.com/Mississippi-nMississippi.html" title="Mississippi">Mississippi</a>
+		<a href="http://local.cookingforengineers.com/Missouri-nMissouri.html" title="Missouri">Missouri</a>
+		<a href="http://local.cookingforengineers.com/Montana-nMontana.html" title="Montana">Montana</a>
+		<a href="http://local.cookingforengineers.com/Nebraska-nNebraska.html" title="Nebraska">Nebraska</a>
+	</div>
+	<div>
+		<a href="http://local.cookingforengineers.com/Nevada-nNevada.html" title="Nevada" class="first">Nevada</a>
+		<a href="http://local.cookingforengineers.com/New_Hampshire-nNew+Hampshire.html" title="New Hampshire">New Hampshire</a>
+		<a href="http://local.cookingforengineers.com/New_Jersey-nNew+Jersey.html" title="New Jersey">New Jersey</a>
+		<a href="http://local.cookingforengineers.com/New_Mexico-nNew+Mexico.html" title="New Mexico">New &nbsp;Mexico</a>
+		<a href="http://local.cookingforengineers.com/New_York-nNew+York.html" title="New York">New York</a>
+		<a href="http://local.cookingforengineers.com/North_Carolina-nNorth+Carolina.html" title="North Carolina">North Carolina</a>
+		<a href="http://local.cookingforengineers.com/North_Dakota-nNorth+Dakota.html" title="North Dakota">North Dakota</a>
+		<a href="http://local.cookingforengineers.com/Ohio-nOhio.html" title="Ohio">Ohio</a>
+		<a href="http://local.cookingforengineers.com/Oklahoma-nOklahoma.html" title="Oklahoma">Oklahoma</a>
+		<a href="http://local.cookingforengineers.com/Oregon-nOregon.html" title="Oregon">Oregon</a>
+		<a href="http://local.cookingforengineers.com/Pennsylvania-nPennsylvania.html" title="Pennsylvania">Pennsylvania</a>
+		<a href="http://local.cookingforengineers.com/Rhode_Island-nRhode+Island.html" title="Rhode Island">Rhode Island</a>
+	</div>
+	<div>
+		<a href="http://local.cookingforengineers.com/South_Carolina-nSouth+Carolina.html" title="South Carolina" class="first">South Carolina</a>
+		<a href="http://local.cookingforengineers.com/South_Dakota-nSouth+Dakota.html" title="South Dakota">South Dakota</a>
+		<a href="http://local.cookingforengineers.com/Tennessee-nTennessee.html" title="Tennessee">Tennessee</a>
+		<a href="http://local.cookingforengineers.com/Texas-nTexas.html" title="Texas">Texas</a>
+		<a href="http://local.cookingforengineers.com/Utah-nUtah.html" title="Utah">Utah</a>
+		<a href="http://local.cookingforengineers.com/Vermont-nVermont.html" title="Vermont">&nbsp;Vermont</a>
+		<a href="http://local.cookingforengineers.com/Virginia-nVirginia.html" title="Virginia">Virginia</a>
+		<a href="http://local.cookingforengineers.com/Washington-nWashington.html" title="Washington">Washington</a>
+		<a href="http://local.cookingforengineers.com/West_Virginia-nWest+Virginia.html" title="West Virginia">West Virginia</a>
+		<a href="http://local.cookingforengineers.com/Wisconsin-nWisconsin.html" title="Wisconsin">Wisconsin</a>
+		<a href="http://local.cookingforengineers.com/Wyoming-nWyoming.html" title="Wyoming">Wyoming</a>
+	</div>
+</div>
+			<div id="footer">
+	
+  <center><span style="font-size: 85%; line-height: 110%;">All content published by CFE Enterprises, Inc. under license with copyright holders<br>Tabular Recipe Notation Patent Pending (Michael Chu)</span></center>
+
+	<center><a href="/atom.xml">Syndicate</a> <a href="/atom.xml"><img src="/pics/xml.gif" alt="(XML)" style="vertical-align: middle;" border="0" /></a></center>
+
+	
+
+	
+
+	  <center>
+  <!--WEBBOT bot="HTMLMarkup" startspan ALT="Site Meter" -->
+  <script type="text/javascript" language="JavaScript">var site="s18cooking4engineers"</script>
+  <script type="text/javascript" language="JavaScript1.2" src="http://s18.sitemeter.com/js/counter.js?site=s18cooking4engineers"></script>
+  <noscript>
+    <img src="http://s18.sitemeter.com/meter.asp?site=s18cooking4engineers" alt="Site Meter" border=0>
+  </noscript>
+  </center>
+
+	
+	  <!-- Google Analytics -->
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+	</script>
+	<script type="text/javascript">
+	_uacct = "UA-254248-1";
+	urchinTracker();
+	</script>
+
+		
+ </div>
+		
+		
+	</body>
+</html>

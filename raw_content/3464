@@ -1,0 +1,2405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:pas="http://www.dallasnews.com/2009/pluckApplicationServer" xml:lang="en" lang="en">
+<head>
+<!--// Svrl- 293252-gespres01.ahc.belotechnologies.com:7013 //-->
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+<meta http-equiv="refresh" content="300">
+<script type="text/javascript">
+/* set up generic functions */ function APTgetCookie(name) {
+var dc = document.cookie;
+var cname = name + "=";
+var clen = dc.length;
+var cbegin = 0;
+while (cbegin < clen) {
+var vbegin = cbegin + cname.length;
+if (dc.substring(cbegin, vbegin) == cname) {
+var vend = dc.indexOf (";", vbegin);
+if (vend == -1) vend = clen;
+return unescape(dc.substring(vbegin, vend));
+}
+cbegin = dc.indexOf(" ", cbegin) + 1;
+if (cbegin== 0) break;
+}
+return "";
+}
+function APTGetAgeRange(year)
+{
+d = new Date();
+age = d.getFullYear() - year;
+range = '';
+if( age >= 13 && age <= 17)
+{
+range = '13-17';
+}
+else if( age >= 18 && age <= 20)
+{
+range = '18-20';
+}
+else if( age >= 21 && age <= 24)
+{
+range = '21-24';
+}
+else if( age >= 25 && age <= 29)
+{
+range = '25-29';
+}
+else if( age >= 30 && age <= 34)
+{
+range = '30-34';
+}
+else if( age >= 35 && age <= 39)
+{
+range = '35-39';
+}
+else if( age >= 40 && age <= 44)
+{
+range = '40-44';
+}
+else if( age >= 45 && age <= 49)
+{
+range = '45-49';
+}
+else if( age >= 50 && age <= 54)
+{
+range = '50-54';
+}
+else if( age >= 55 && age <= 59)
+{
+range = '55-59';
+}
+else if( age >= 60 && age <= 64)
+{
+range = '60-64';
+}
+else if( age >= 65 && age <= 100)
+{
+range = '65-100';
+}
+return range;
+}
+function APTgetDomain()
+{
+var domainName = document.domain;
+var domainNameArr = domainName.split(".");
+if (domainNameArr.length >= 3)
+{
+domainName = "";
+for (var i = 1 ; i < domainNameArr.length ; i++)
+{
+domainName += "." + domainNameArr[i]
+}
+}
+return domainName;
+}
+function APTsetCookie(name, value, expiration)
+{
+var expirationDate = new Date();
+expirationDate.setTime(expirationDate.getTime() + expiration * 24 * 60 * 60 * 1000);
+var strCookie = name + "=" + escape(value) + "; expires=" + expirationDate.toGMTString() + "; path=/; domain=" + APTgetDomain();
+document.cookie = strCookie;
+}
+APTsetCookie("aptImgKey", "Fz2PprLx5pXEC0Xx5QtoEyFlH4odaHaCx0JJSe10Z5BgNzcV", 7);
+APTsetCookie("aptImgZipCode", "75220", 7);
+APTsetCookie("aptImgBirthYear", "1960", 7);
+APTsetCookie("aptImgGender", "M", 7);
+/* set up yahoo yld mgr */
+yld_mgr = {};
+yld_mgr.slots = {};
+// global YApt setting
+yld_mgr.pub_id = "21107722569";
+yld_mgr.site_name = "dallasnews.com";
+yld_mgr.clk_dest = "_blank";
+yld_mgr.container_type = "js";
+yld_mgr.disable_content_send = "1";
+yld_mgr.request_type = "ac";
+// Section level YApt settings
+yld_mgr.content_topic_id_list = ["20201001"];
+yld_mgr.content_type_list = ["fn_news"];
+yld_mgr.cstm_content_cat_list = [""];
+yld_mgr.cstm_sctn_list = ["HomePage"];
+//Wallpaper
+yld_mgr.slots.Wallpaper = {};
+yld_mgr.slots.Wallpaper.ad_delivery_mode = "ipstf";
+yld_mgr.slots.Wallpaper.ad_size_list = ["1x1"];
+yld_mgr.slots.Wallpaper.content_type_list = yld_mgr.content_type_list;
+yld_mgr.slots.Wallpaper.cstm_content_cat_list = yld_mgr.cstm_content_cat_list.concat([]);
+//Pagepeel
+yld_mgr.slots.Pagepeel = {};
+yld_mgr.slots.Pagepeel.ad_delivery_mode = "ipatf";
+yld_mgr.slots.Pagepeel.ad_size_list = ["500x500"];
+yld_mgr.slots.Pagepeel.content_type_list = yld_mgr.content_type_list;
+yld_mgr.slots.Pagepeel.cstm_content_cat_list = yld_mgr.cstm_content_cat_list.concat([]);
+//Billboard
+yld_mgr.slots.Billboard = {};
+yld_mgr.slots.Billboard.ad_delivery_mode = "ipatf";
+yld_mgr.slots.Billboard.ad_size_list = ["940x30"];
+yld_mgr.slots.Billboard.content_type_list = yld_mgr.content_type_list;
+yld_mgr.slots.Billboard.cstm_content_cat_list = yld_mgr.cstm_content_cat_list.concat([]);
+//LeaderTop
+yld_mgr.slots.LeaderTop = {};
+yld_mgr.slots.LeaderTop.ad_delivery_mode = "ipatf";
+yld_mgr.slots.LeaderTop.ad_size_list = ["728x90"];
+yld_mgr.slots.LeaderTop.content_type_list = yld_mgr.content_type_list;
+yld_mgr.slots.LeaderTop.cstm_content_cat_list = yld_mgr.cstm_content_cat_list.concat([]);
+//MedRectangle1
+yld_mgr.slots.MedRectangle1 = {};
+yld_mgr.slots.MedRectangle1.ad_delivery_mode = "ipatf";
+yld_mgr.slots.MedRectangle1.ad_size_list = ["300x250"];
+yld_mgr.slots.MedRectangle1.content_type_list = yld_mgr.content_type_list;
+yld_mgr.slots.MedRectangle1.cstm_content_cat_list = yld_mgr.cstm_content_cat_list.concat([]);
+//MedRectangle2
+yld_mgr.slots.MedRectangle2 = {};
+yld_mgr.slots.MedRectangle2.ad_delivery_mode = "ipstf";
+yld_mgr.slots.MedRectangle2.ad_size_list = ["300x250"];
+yld_mgr.slots.MedRectangle2.content_type_list = yld_mgr.content_type_list;
+yld_mgr.slots.MedRectangle2.cstm_content_cat_list = yld_mgr.cstm_content_cat_list.concat([]);
+//MedRectangle3
+yld_mgr.slots.MedRectangle3 = {};
+yld_mgr.slots.MedRectangle3.ad_delivery_mode = "ipbtf";
+yld_mgr.slots.MedRectangle3.ad_size_list = ["300x250"];
+yld_mgr.slots.MedRectangle3.content_type_list = yld_mgr.content_type_list;
+yld_mgr.slots.MedRectangle3.cstm_content_cat_list = yld_mgr.cstm_content_cat_list.concat([]);
+//Floater
+if (document.referrer.indexOf('yahoo') < 0)
+{
+yld_mgr.slots.Floater = {};
+yld_mgr.slots.Floater.ad_delivery_mode = "ipstf";
+yld_mgr.slots.Floater.ad_size_list = ["500x500"];
+yld_mgr.slots.Floater.content_type_list = yld_mgr.content_type_list;
+yld_mgr.slots.Floater.cstm_content_cat_list = yld_mgr.cstm_content_cat_list.concat([]);
+}
+//Ribbon1
+yld_mgr.slots.Ribbon1 = {};
+yld_mgr.slots.Ribbon1.ad_delivery_mode = "ipatf";
+yld_mgr.slots.Ribbon1.ad_size_list = ["300x60"];
+yld_mgr.slots.Ribbon1.content_type_list = yld_mgr.content_type_list;
+yld_mgr.slots.Ribbon1.cstm_content_cat_list = yld_mgr.cstm_content_cat_list.concat([]);
+//Ribbon2
+yld_mgr.slots.Ribbon2 = {};
+yld_mgr.slots.Ribbon2.ad_delivery_mode = "ipbtf";
+yld_mgr.slots.Ribbon2.ad_size_list = ["300x60"];
+yld_mgr.slots.Ribbon2.content_type_list = yld_mgr.content_type_list;
+yld_mgr.slots.Ribbon2.cstm_content_cat_list = yld_mgr.cstm_content_cat_list.concat([]);
+//Txt1
+yld_mgr.slots.Txt1 = {};
+yld_mgr.slots.Txt1.ad_delivery_mode = "ipbtf";
+yld_mgr.slots.Txt1.ad_size_list = ["336x280"];
+yld_mgr.slots.Txt1.content_type_list = yld_mgr.content_type_list;
+yld_mgr.slots.Txt1.cstm_content_cat_list = yld_mgr.cstm_content_cat_list.concat([]);
+//Sponsor1
+yld_mgr.slots.Sponsor1 = {};
+yld_mgr.slots.Sponsor1.ad_delivery_mode = "ipstf";
+yld_mgr.slots.Sponsor1.ad_size_list = ["180x90"];
+yld_mgr.slots.Sponsor1.content_type_list = yld_mgr.content_type_list;
+yld_mgr.slots.Sponsor1.cstm_content_cat_list = yld_mgr.cstm_content_cat_list.concat([""]);
+//Sponsor5
+yld_mgr.slots.Sponsor5 = {};
+yld_mgr.slots.Sponsor5.ad_delivery_mode = "ipatf";
+yld_mgr.slots.Sponsor5.ad_size_list = ["285x105"];
+yld_mgr.slots.Sponsor5.content_type_list = yld_mgr.content_type_list;
+yld_mgr.slots.Sponsor5.cstm_content_cat_list = yld_mgr.cstm_content_cat_list.concat([""]);
+/* set demographic info in the ad call */
+try
+{
+if (APTgetCookie("img2"))
+{
+if (APTgetCookie("aptImgZipCode").length > 0)
+{
+yld_mgr.user_zip = APTgetCookie("aptImgZipCode");
+}
+if (APTgetCookie("aptImgBirthYear").length > 0)
+{
+yld_mgr.user_age = APTGetAgeRange(APTgetCookie("aptImgBirthYear"));
+}
+if (APTgetCookie("aptImgBirthYear").length > 0)
+{
+switch (APTgetCookie("aptImgGender").toLowerCase())
+{
+case "m":
+yld_mgr.user_gender = "male";
+break;
+case "f":
+yld_mgr.user_gender = "female";
+break;
+}
+}
+}
+}
+catch(e)
+{
+}
+</script>
+<script type="text/javascript" src="http://e.yieldmanager.net/script.js"></script>
+<meta content="dallas, dallas fort worth, dallas news, dallas fort worth news, dfw news, dallas local news, dallas fort worth local news, dallas breaking news, dallas fort worth breaking news, dallas weather, dallas fort worth weather, dallas traffic, dallas fort worth traffic, dallas sports, dallas fort worth sports, dallas entertainment, dallas fort worth entertainment, dallas newspaper, dallas morning news, dallas morning news newspaper" name="keywords" />
+<meta content="Dallasnews.com is the official website for The Dallas Morning News newspaper. This page contains Dallas-Fort Worth breaking news, sports news, business news, entertainment news and listings, Texas news, photos and videos, commentary and opinion, and more." name="description" />
+<title>
+Dallas-Fort Worth News, Sports, Entertainment, Weather and Traffic - The Dallas Morning News
+</title><div class="widget code html" >
+<meta name="google-site-verification" content="hLwhtObVqzad1tfFJ5Eb33WOBuZtpWxKk0_Y2q11SMk" />
+</div>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!-- include stylesheets -->
+<link rel="stylesheet" type="text/css" href="/skins/dmn/css/global.css"/>
+<link rel="stylesheet" type="text/css" href="/skins/dmn/css/navigation.css"/>
+<link rel="stylesheet" type="text/css" href="/skins/dmn/css/grid.css"/>
+<link rel="stylesheet" type="text/css" href="/skins/dmn/css/dmn.css"/>
+<link rel="stylesheet" type="text/css" href="/skins/dmn/css/custom.css"/>
+<link rel="stylesheet" type="text/css" href="/skins/dmn/css/jquery-ui-1.7.3.custom.css"/>
+<link rel="stylesheet" type="text/css" href="/skins/dmn/css/accordion.css"/>
+<link rel="stylesheet" type="text/css" href="/skins/dmn/css/widgets.css"/>
+<link rel="stylesheet" type="text/css" href="/resources/css/cgm.css"/>
+<link rel="pingback" href="/xmlrpc"/>
+<!-- include javascript files -->
+<script type="text/javascript" src="/resources/js/common.js"></script>
+<script type="text/javascript" src="/resources/js/swfobject.js"></script>
+<script type="text/javascript" src="/resources/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="/resources/js/jquery-ui-1.7.3.custom.min.js"></script>
+<script type="text/javascript" src="/resources/js/jquery-ui-accordion.js"></script>
+<script type="text/javascript" src="/resources/js/jquery.charcounter.js"></script>
+<script type="text/javascript" src="/resources/js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="/resources/js/jqDnR.min.js"></script>
+<script type="text/javascript" src="/resources/js/jquery.bgiframe.min.js"></script>
+<script type="text/javascript" src="/resources/js/jquery.jqpopup.min.js"></script>
+<script type="text/javascript" src="/resources/js/jquery.form.js"></script>
+<script type="text/javascript" src="/resources/js/captify.js"></script>
+<script type="text/javascript" src="/resources/js/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript" src="/resources/js/jquery-ui-navigation.js"></script>
+<script type="text/javascript" src="/resources/js/navSearch.js"></script>
+<script type="text/javascript" src="/resources/js/ua-detect.js"></script>
+<script type="text/javascript" src="/resources/js/jquery.tmpl.js"></script>
+<script type="text/javascript" src="/resources/js/userCustomRedirs.js"></script>
+<script type="text/javascript" src="/resources/js/widget-framework-util.js"></script>
+<script type='text/javascript' language="javascript" src='/resources/js/flowplayer-3.1.4.min.js'></script>
+<script id="loginHeaderNotLoggedInTmpl" type="text/x-jquery-tmpl"><div class="DMNUtilityLinks"><div><span class="DMNUtilityLinksL1"><a href="{{html RegisterUrl}}?fw={{html CurrentPageUrl}}">Register</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{html LoginUrl}}?fw={{html CurrentPageUrl}}">Sign In</a></span><br/><span class="DMNUtilityLinksL2">	<a href="{{html SubscriberServicesUrl}}">Subscriber Services</a></span></div></div><div class="DMNUtilityAvatar"><img class="UtilityAvatarImg" {{html AvatarUrl}} width="25" height="25"/></div><div class="clear"></div><div id="DMNYahooSearch">Web Search by Yahoo!</div></script>
+<script id="loginHeaderLoggedInNoProfileTmpl" type="text/x-jquery-tmpl"><div class="DMNUtilityLinks"><div><span class="DMNUtilityLinksL1"><a href="/membercontent/memberprofile/">Create a Profile</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{html LogoutUrl}}?fw={{html CurrentPageUrl}}">Sign Out</a></span><br/><span class="DMNUtilityLinksL2"><a href="{{html MemberCenterUrl}}?fw={{html CurrentPageUrl}}">Member Center</a>&nbsp;&nbsp|&nbsp;&nbsp;<a href="{{html SubscriberServicesUrl}}">Subscriber Services</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{html SpecialOffersUrl}}?fw={{html CurrentPageUrl}}">Special Offers</a></span></div></div><div class="DMNUtilityAvatar"><img class="UtilityAvatarImg" {{html AvatarUrl}} width="25" height="25"/></div><div class="clear"></div><div id="DMNYahooSearch">Web Search by Yahoo!</div></script>
+<script id="loginHeaderLoggedInWithProfileTmpl" type="text/x-jquery-tmpl"><div class="DMNUtilityLinks"><div><span class="DMNUtilityLinksL1">Hi, <a href="/membercontent/memberprofile/">{{html ScreenName}}</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{html LogoutUrl}}?fw={{html CurrentPageUrl}}">Sign Out</a></span><br/><span class="DMNUtilityLinksL2"><a href="{{html MemberCenterUrl}}?fw={{html CurrentPageUrl}}">Member Center</a>&nbsp;&nbsp|&nbsp;&nbsp;<a href="{{html SubscriberServicesUrl}}">Subscriber Services</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{html SpecialOffersUrl}}?fw={{html CurrentPageUrl}}">Special Offers</a></span></div></div><div class="DMNUtilityAvatar"><img class="UtilityAvatarImg" {{html AvatarUrl}} width="25" height="25"/></div><div class="clear"></div><div id="DMNYahooSearch">Web Search by Yahoo!</div></script>
+<script id="commentsLoginHeaderNotLoggedIn" type="text/x-jquery-tmpl"><div id="loginComments"><div class="DMNCommentsUtilityLinks"><div><span class="DMNCommentsUtilityLinksL1"><a href="{{html RegisterUrl}}?fw={{html CurrentPageUrl}}">Register</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{html LoginUrl}}?fw={{html CurrentPageUrl}}">Sign In</a></span><br/><span class="DMNCommentsUtilityLinksL2">	<a href="{{html SubscriberServicesUrl}}">Subscriber Services</a></span></div></div><div class="DMNCommentsUtilityAvatar"><img class="UtilityAvatarImg" {{html AvatarUrl}} width="25" height="25"/></div><div class="clear"></div></div><div class="clear"></div></script>
+<script id="commentsLoginHeaderLoggedInNoProfileTmpl" type="text/x-jquery-tmpl"><div id="loginComments"><div class="DMNCommentsUtilityLinks"><div><span class="DMNCommentsUtilityLinksL1"><a href="/membercontent/memberprofile/">Create a Profile</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{html LogoutUrl}}?fw={{html CurrentPageUrl}}">Sign Out</a></span><br/><span class="DMNCommentsUtilityLinksL2"><a href="{{html MemberCenterUrl}}?fw={{html CurrentPageUrl}}">Member Center</a>&nbsp;&nbsp|&nbsp;&nbsp;<a href="{{html SubscriberServicesUrl}}">Subscriber Services</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{html SpecialOffersUrl}}?fw={{html CurrentPageUrl}}">Special Offers</a></span></div></div><div class="DMNCommentsUtilityAvatar"><img class="UtilityAvatarImg" {{html AvatarUrl}} width="25" height="25"/></div><div class="clear"></div></div><div class="clear"></div></script>
+<script id="commentsLoginHeaderLoggedInWithProfileTmpl" type="text/x-jquery-tmpl"><div id="loginComments"><div class="DMNCommentsUtilityLinks"><div><span class="DMNCommentsUtilityLinksL1">Hi, <a href="/membercontent/memberprofile/">{{html ScreenName}}</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{html LogoutUrl}}?fw={{html CurrentPageUrl}}">Sign Out</a></span><br/><span class="DMNCommentsUtilityLinksL2"><a href="{{html MemberCenterUrl}}?fw={{html CurrentPageUrl}}">Member Center</a>&nbsp;&nbsp|&nbsp;&nbsp;<a href="{{html SubscriberServicesUrl}}">Subscriber Services</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{html SpecialOffersUrl}}?fw={{html CurrentPageUrl}}">Special Offers</a></span></div></div><div class="DMNCommentsUtilityAvatar"><img class="UtilityAvatarImg" {{html AvatarUrl}} width="25" height="25"/></div><div class="clear"></div></div><div class="clear"></div></script>
+<script id="storyCommentCountTmpl" type="text/x-jquery-tmpl"><a href="#slcgm_comments_anchor">Comments</a> <span class="blue">{{html Comments.NumberOfComments}}</span>&nbsp;|&nbsp;{{html RecommendString}} {{html Recommendations.NumberOfRecommendations}}</script>
+<script id="recentPhotosGalleryTmpl" type="text/x-jquery-tmpl"><p><span style="float:right;"><a class="slcgm_recentphoto_viewall" id="slcgm_recentphoto_viewall" href="/membercontent/photos/gallery/?plckGalleryID={{html galleryId}}">View All</a>&nbsp;|&nbsp;<a class="slcgm_recentphoto_yourprofile" id="slcgm_recentphoto_yourprofile" href="/membercontent/memberprofile/">Your Profile</a>&nbsp;|&nbsp;<a class="slcgm_recentphoto_yourprofile" id="slcgm_recentphoto_upload" href="/membercontent/photos/upload/?plckGalleryID={{html galleryId}}">Upload</a></span><span class="title" id="slcgm_recentphoto_title"><a class="slcgm_recentphoto_yourprofile" id="slcgm_recentphoto_title_link" href="/membercontent/photos/gallery/">Photos</a></span></p></script>
+<script id="recentPhotosGalleryImageTmpl" type="text/x-jquery-tmpl"><span class="slcgm_photogallery_image"><a href="{{html Url}}"><img {{html Image.P4Persona}} width="{{html ImageWidth}}"/></a></span></script>
+<script id="recentPhotosGalleryFillerTmpl" type="text/x-jquery-tmpl"><span class="slcgm_photogallery_filler">&nbsp;</span></script>
+<script id="mostCommentedTmpl" type="text/x-jquery-tmpl"><p><a href="{{html Url}}">{{html Title}}</a>&nbsp<span class="discoveryCount">({{html Comments.NumberOfComments}})</span></p></script>
+<script id="mostRecommendedTmpl" type="text/x-jquery-tmpl"><p><a href="{{html Url}}">{{html Title}}</a>&nbsp<span class="discoveryCount">({{html Recommendations.NumberOfRecommendations}})</span></p></script>
+<script type="text/javascript">function getEmailAddress(){return("");}</script>
+<script type="text/javascript" src="/resources/js/cgm.js"></script>
+<script type="text/javascript" src="http://sitelife.dallasnews.com/ver1.0/Direct/JavascriptSDKProxy"></script>
+<script type="text/javascript" src="/resources/js/ajaxfunctions.js"></script>
+<script type="text/javascript" src="/resources/js/json2.js"></script>
+<script type="text/javascript" src="/resources/js/customSearch.js"></script>
+<link rel="stylesheet" type="text/css" href="/skins/dmn/css/customSearch.css"/>
+<script type='text/javascript' src='/resources/js/inpage.min.js'></script>
+<script type='text/javascript' src='/resources/js/tiny_mce/tiny_mce.js'></script>
+<script type='text/javascript' src='/resources/js/jquery.contextMenu.js'></script>
+<link rel="stylesheet" type="text/css" media="screen" href="/skins/dmn/css/inpage.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="/skins/dmn/css/jquery.contextMenu.css"/>
+<script type="text/javascript" src="/resources/js/init.js"></script>
+</head>
+<body class="context-sec">
+<div id="viewport">
+<div id="outer" class="x620x300-extended-config">
+<div class="positionPagepeel">
+<script type="text/javascript">yld_mgr.place_ad_here("Pagepeel");</script>
+</div>
+<div class="positionLeaderTop">
+<!--<div class="adMarker"><a href=""><img src="/skins/dmn/gfx/ad/ad_vert_onwhite.jpg"></a></div>-->
+<script type="text/javascript">yld_mgr.place_ad_here("LeaderTop");</script>
+</div>
+</div>
+<div id="page" class="x620x300-extended-config">
+<div id="header"> <!--pageHeader-->
+<div class="positionWallpaper">
+<script type="text/javascript">yld_mgr.place_ad_here("Wallpaper");</script>
+</div>
+<div class="x380x540 "
+>
+<div class="column-1">
+<div class="widget code jsp" >
+<div id="DMNHdrLeft">
+<div id="DMNHdrLogo"><a href="/"><img src="/skins/dmn/gfx/pixel.png" width="333" height="53" alt="Dallas News, Sports, Weather and Traffic from The Dallas Morning News" title="Dallas News, Sports, Weather and Traffic from The Dallas Morning News" /></a></div>
+<div id="DMNHdrScriptLogo"><a href="/"><img src="/skins/dmn/gfx/pixel.png" width="139" height="15" alt="Dallas News, Sports, Weather and Traffic from The Dallas Morning News" title="Dallas News, Sports, Weather and Traffic from The Dallas Morning News" /></a></div>
+</div>
+</div>
+</div>
+<div class="column-2">
+<div id="DMNUtilityMenu" class="loginHeaderHdr DMNUtilityMenuClass"><div id="loginHeader"></div></div>
+<div class="widget code jsp navSearchHdr" >
+<form name="DMNSearchForm" class="DMNSearch" method="get" onSubmit="return(DMNValidateSearchForm(this));">
+<input type="hidden" name="publicationId" value="1" />
+<input type="hidden" name="includeSectionId" value="1" />
+<input type="text" name="DMNSearchText" value="Search" class="DMNSearchText" onfocus="this.value='';"/>
+<select name="DMNSearchDD" class="DMNSearchDD">
+<option selected value="/site-search/?service=search">dallasnews.com</option>
+<option value="/external-search/?service=search">Web Search</option>
+<option value="http://topics.dallasnews.com/search">Topics</option>
+<option value="http://shopping.dallasnews.com/Shared/MYSearch.aspx">Shopping</option>
+<option value="http://www.newslibrary.com/nlsearch.asp">Story Archive</option>
+<option value="http://nl.newsbank.com/nl-search/we/Archives/">1885-1977 Archives</option>
+<option value="http://www.newslibrary.com/nlsearch.asp">Obituary Archive</option>
+<option value="http://www.newslibrary.com/nlsearch.asp">Blog Archive</option>
+<option value="/recipe-search/?service=search">Recipes</option>
+<option value="/external-search/?service=search">Member Submitted</option>
+</select>
+<span class="DMNSearchGoWrapper">
+<input class="DMNSearchGo" type="image" src="/skins/dmn/gfx/mainMenu/search-arrow.png"/>
+</span>
+</form></div>
+</div>
+<div style="clear:both"></div>
+</div>
+<div class="positionBillboard">
+<script type="text/javascript">yld_mgr.place_ad_here("Billboard");</script>
+</div>
+<div id="nav">
+<ul id="nav_top">
+<li id="nav_0" class="top default active">
+<a href="/"><img src="/skins/dmn/gfx/mainMenu/pixel.png" width="11" height="10"></a>
+<ul class="sub_nav">
+<li id=subNav_0_0" class="sub"><a href="http://www.dallasnews.com/news/politics/texas-legislature/">Texas Legislature</a></li>
+<li id=subNav_0_1" class="sub"><a href="http://www.dallasnews.com/news/elections/">Elections </a></li>
+<li id=subNav_0_2" class="sub"><a href="http://www.dallasnews.com/weather/">Weather</a></li>
+<li id=subNav_0_3" class="sub"><a href="http://www.dallasnews.com/traffic/">Traffic</a></li>
+<li id=subNav_0_4" class="sub"><a href="http://obits.dallasnews.com">Obituaries</a></li>
+<li id=subNav_0_5" class="sub"><a href="http://www.dallasnews.com/photos/">Photos</a></li>
+<li id=subNav_0_6" class="sub"><a href="http://www.dallasnews.com/video/">Video</a></li>
+<li id=subNav_0_7" class="sub"><a href="http://reg.dallasnews.com/registration/loadNewsletter.do">Newsletters</a></li>
+<li id=subNav_0_8" class="sub"><a href="http://www.dallasnews.com/mobile-alerts/">Mobile/Alerts</a></li>
+<li id=subNav_0_9" class="sub"><a href="http://res.dallasnews.com/contactus/">Contact Us</a></li>
+<li id=subNav_0_10" class="sub"><a href="https://dallasnews.regsignup.com/tdmnoffer_main">Subscribe</a></li>
+</ul>
+</li>
+<li id="nav_1" class="top">
+<a href="http://www.dallasnews.com/news/">News</a>
+<ul class="sub_nav">
+<li id=subNav_1_0" class="sub"><a href="http://www.dallasnews.com/news/community-news/">Community News</a></li>
+<li id=subNav_1_1" class="sub"><a href="http://www.dallasnews.com/news/crime/">Crime</a></li>
+<li id=subNav_1_2" class="sub"><a href="http://www.dallasnews.com/news/education/">Education</a></li>
+<li id=subNav_1_3" class="sub"><a href="http://www.dallasnews.com/news/state/">State</a></li>
+<li id=subNav_1_4" class="sub"><a href="http://www.dallasnews.com/news/washington/">Washington</a></li>
+<li id=subNav_1_5" class="sub"><a href="http://www.dallasnews.com/news/nation-world/">Nation/World</a></li>
+<li id=subNav_1_6" class="sub"><a href="http://www.dallasnews.com/news/columnists/">Columnists</a></li>
+<li id=subNav_1_7" class="sub"><a href="http://www.dallasnews.com/news/blogs/">Blogs</a></li>
+</ul>
+</li>
+<li id="nav_2" class="top">
+<a href="http://www.dallasnews.com/sports/">Sports</a>
+<ul class="sub_nav">
+<li id=subNav_2_0" class="sub"><a href="http://www.dallasnews.com/sports/nfl-draft/">NFL Draft</a></li>
+<li id=subNav_2_1" class="sub"><a href="http://www.dallasnews.com/sports/dallas-cowboys/">Cowboys</a></li>
+<li id=subNav_2_2" class="sub"><a href="http://www.dallasnews.com/sports/dallas-mavericks/">Mavericks</a></li>
+<li id=subNav_2_3" class="sub"><a href="http://www.dallasnews.com/sports/dallas-stars/">Stars</a></li>
+<li id=subNav_2_4" class="sub"><a href="http://www.dallasnews.com/sports/texas-rangers/">Rangers</a></li>
+<li id=subNav_2_5" class="sub"><a href="http://www.dallasnews.com/sports/college-sports/">Colleges</a></li>
+<li id=subNav_2_6" class="sub"><a href="http://www.dallasnews.com/sports/high-schools/">High Schools</a></li>
+<li id=subNav_2_7" class="sub"><a href="http://www.dallasnews.com/sports/golf/">Golf </a></li>
+<li id=subNav_2_8" class="sub"><a href="http://runningblog.dallasnews.com/">Running</a></li>
+<li id=subNav_2_9" class="sub"><a href="http://dallasnews.stats.com/">Scores/Stats</a></li>
+<li id=subNav_2_10" class="sub"><a href="http://www.dallasnews.com/sports/more-sports/">More</a></li>
+</ul>
+</li>
+<li id="nav_3" class="top">
+<a href="http://www.dallasnews.com/business/">Business</a>
+<ul class="sub_nav">
+<li id=subNav_3_0" class="sub"><a href="http://www.dallasnews.com/autos/">Autos</a></li>
+<li id=subNav_3_1" class="sub"><a href="http://www.dallasnews.com/business/airline-industry/">Airline Industry</a></li>
+<li id=subNav_3_2" class="sub"><a href="http://www.dallasnews.com/business/commercial-real-estate/">Commercial Real Estate </a></li>
+<li id=subNav_3_3" class="sub"><a href="http://www.dallasnews.com/business/technology/">Technology </a></li>
+<li id=subNav_3_4" class="sub"><a href="http://www.dallasnews.com/business/personal-finance/">Personal Finance </a></li>
+<li id=subNav_3_5" class="sub"><a href="http://www.dallasnews.com/business/best-places-to-work/">Top 100 Places to Work</a></li>
+</ul>
+</li>
+<li id="nav_4" class="top">
+<a href="http://www.dallasnews.com/investigations/">Investigations</a>
+<ul class="sub_nav">
+<li id=subNav_4_0" class="sub"><a href="http://watchdogblog.dallasnews.com">Investigations Blog</a></li>
+<li id=subNav_4_1" class="sub"><a href="http://www.dallasnews.com/investigations/problem-solver/">Problem Solver</a></li>
+<li id=subNav_4_2" class="sub"><a href="http://www.dallasnews.com/investigations/databases/">Databases</a></li>
+</ul>
+</li>
+<li id="nav_5" class="top">
+<a href="http://www.dallasnews.com/entertainment/">Entertainment</a>
+<ul class="sub_nav">
+<li id=subNav_5_0" class="sub"><a href="http://listings.guidelive.com">Things To Do</a></li>
+<li id=subNav_5_1" class="sub"><a href="http://www.dallasnews.com/entertainment/restaurants/">Restaurants</a></li>
+<li id=subNav_5_2" class="sub"><a href="http://www.dallasnews.com/entertainment/movies/">Movies </a></li>
+<li id=subNav_5_3" class="sub"><a href="http://www.dallasnews.com/entertainment/music/">Music </a></li>
+<li id=subNav_5_4" class="sub"><a href="http://www.dallasnews.com/entertainment/nightlife/">Nightlife </a></li>
+<li id=subNav_5_5" class="sub"><a href="http://www.dallasnews.com/entertainment/arts/">Arts </a></li>
+<li id=subNav_5_6" class="sub"><a href="http://www.dallasnews.com/entertainment/television/">Television</a></li>
+<li id=subNav_5_7" class="sub"><a href="http://www.dallasnews.com/entertainment/books/">Books </a></li>
+<li id=subNav_5_8" class="sub"><a href="http://www.dallasnews.com/entertainment/comics-and-games/">Comics & Games </a></li>
+</ul>
+</li>
+<li id="nav_6" class="top">
+<a href="http://www.dallasnews.com/lifestyles/">Life</a>
+<ul class="sub_nav">
+<li id=subNav_6_0" class="sub"><a href="http://www.dallasnews.com/lifestyles/food/">Food </a></li>
+<li id=subNav_6_1" class="sub"><a href="http://www.dallasnews.com/lifestyles/home-and-gardening/">Home and Gardening</a></li>
+<li id=subNav_6_2" class="sub"><a href="http://www.dallasnews.com/lifestyles/style/">Style</a></li>
+<li id=subNav_6_3" class="sub"><a href="http://www.dallasnews.com/lifestyles/pets/">Pets</a></li>
+<li id=subNav_6_4" class="sub"><a href="http://topics.dallasnews.com/page/weddings">Weddings</a></li>
+</ul>
+</li>
+<li id="nav_7" class="top">
+<a href="http://www.dallasnews.com/health/">Health</a>
+<ul class="sub_nav">
+<li id=subNav_7_0" class="sub"><a href="http://www.dallasnews.com/health/family-health/">Family Health</a></li>
+<li id=subNav_7_1" class="sub"><a href="http://www.dallasnews.com/health/fitness/">Fitness</a></li>
+<li id=subNav_7_2" class="sub"><a href="http://www.dallasnews.com/health/weight-loss/">Weight Loss</a></li>
+<li id=subNav_7_3" class="sub"><a href="http://www.dallasnews.com/health/heart-health/">Heart</a></li>
+<li id=subNav_7_4" class="sub"><a href="http://www.dallasnews.com/health/cancer/">Cancer</a></li>
+<li id=subNav_7_5" class="sub"><a href="http://www.dallasnews.com/health/diseases-cures/">Diseases and Cures</a></li>
+</ul>
+</li>
+<li id="nav_8" class="top">
+<a href="http://www.dallasnews.com/travel/">Travel</a>
+<ul class="sub_nav">
+<li id=subNav_8_0" class="sub"><a href="http://www.dallasnews.com/travel/texas/">Texas</a></li>
+<li id=subNav_8_1" class="sub"><a href="http://www.dallasnews.com/travel/getaways/">Getaways</a></li>
+<li id=subNav_8_2" class="sub"><a href="http://www.dallasnews.com/travel/colorado/">Colorado</a></li>
+<li id=subNav_8_3" class="sub"><a href="http://www.dallasnews.com/travel/las-vegas/">Las Vegas</a></li>
+<li id=subNav_8_4" class="sub"><a href="http://www.dallasnews.com/travel/southwest/">Southwest</a></li>
+<li id=subNav_8_5" class="sub"><a href="http://www.dallasnews.com/travel/beach/">Beach</a></li>
+<li id=subNav_8_6" class="sub"><a href="http://www.dallasnews.com/travel/cruise/">Cruise</a></li>
+<li id=subNav_8_7" class="sub"><a href="http://www.dallasnews.com/travel/ski-snow/">Ski and Snow</a></li>
+<li id=subNav_8_8" class="sub"><a href="http://www.dallasnews.com/travel/coast-to-coast/">Coast to Coast</a></li>
+<li id=subNav_8_9" class="sub"><a href="http://www.dallasnews.com/travel/international/">International</a></li>
+</ul>
+</li>
+<li id="nav_9" class="top">
+<a href="http://www.dallasnews.com/opinion/">Opinion</a>
+<ul class="sub_nav">
+<li id=subNav_9_0" class="sub"><a href="http://www.dallasnews.com/opinion/editorials/">Editorials </a></li>
+<li id=subNav_9_1" class="sub"><a href="http://www.dallasnews.com/opinion/columnists/">Columnists </a></li>
+<li id=subNav_9_2" class="sub"><a href="http://www.dallasnews.com/opinion/latest-columns/">Columns</a></li>
+<li id=subNav_9_3" class="sub"><a href="http://dallasmorningviewsblog.dallasnews.com/">Blog</a></li>
+<li id=subNav_9_4" class="sub"><a href="http://letterstotheeditorblog.dallasnews.com/">Letters to the Editor</a></li>
+<li id=subNav_9_5" class="sub"><a href="http://www.dallasnews.com/opinion/sunday-commentary/">Sunday Commentary </a></li>
+<li id=subNav_9_6" class="sub"><a href="http://www.dallasnews.com/opinion/local-voices/">Local Voices </a></li>
+<li id=subNav_9_7" class="sub"><a href="http://www.dallasnews.com/opinion/north-south-dallas-project/">North-South Dallas Project </a></li>
+<li id=subNav_9_8" class="sub"><a href="http://www.dallasnews.com/opinion/ask-the-editor/">Ask the Editor </a></li>
+</ul>
+</li>
+<li id="nav_10" class="top">
+<a href="http://www.dallasnews.com/autos/">Autos</a>
+<ul class="sub_nav">
+<li id=subNav_10_0" class="sub"><a href="http://dallasrv.travidia.com/Portal/portal.aspx">Recreation/Misc. Vehicles</a></li>
+</ul>
+</li>
+<li id="nav_11" class="top">
+<a href="http://www.dallasnews.com/homes/">Homes</a>
+</li>
+<li id="nav_12" class="top">
+<a href="http://www.dallasnews.com/jobs/">Jobs</a>
+<ul class="sub_nav">
+<li id=subNav_12_0" class="sub"><a href="http://jobsearch.local-jobs.monster.com/?ch=dallasmorning">View Jobs</a></li>
+<li id=subNav_12_1" class="sub"><a href="https://login.monster.com/Login.aspx?ch=dallasmorning&redirect=http%3a%2f%2fmy.local-jobs.monster.com%2fresume%2fmanageresumes.aspx">Submit a Resume</a></li>
+<li id=subNav_12_2" class="sub"><a href="http://www.digitalmediacommunications.com/dallas/employment/index_jobs.php?ad_num=">See Videos</a></li>
+<li id=subNav_12_3" class="sub"><a href="http://www.dallasnews.com/business/best-places-to-work/">Best Places to Work</a></li>
+<li id=subNav_12_4" class="sub"><a href="http://placeads.dallasnews.com/webbase/en/std/jsp/WebBaseMain.do">Place an Ad</a></li>
+</ul>
+</li>
+<li id="nav_13" class="top">
+<a href="http://www.dallasnews.com/shopping/">Shopping/Classifieds</a>
+<ul class="sub_nav">
+<li id=subNav_13_0" class="sub"><a href="http://shopping.dallasnews.com/class/ClassifiedAds.aspx?scid=MD">Merchandise</a></li>
+<li id=subNav_13_1" class="sub"><a href="http://shopping.dallasnews.com/class/ClassifiedAds.aspx?scid=LP">Pets, Poultry, Livestock</a></li>
+<li id=subNav_13_2" class="sub"><a href="http://shopping.dallasnews.com/class/ClassifiedAds.aspx?scid=MD">Garage/Estate Sales</a></li>
+<li id=subNav_13_3" class="sub"><a href="http://shopping.dallasnews.com/class/ClassifiedAds.aspx?scid=DS">Service Directory</a></li>
+<li id=subNav_13_4" class="sub"><a href="http://shopping.dallasnews.com/class/ClassifiedAds.aspx?scid=FB">Business/Financial</a></li>
+<li id=subNav_13_5" class="sub"><a href="http://shopping.dallasnews.com/class/ClassifiedAds.aspx?scid=AN">Announcements</a></li>
+<li id=subNav_13_6" class="sub"><a href="http://shopping.dallasnews.com/class/ClassifiedAds.aspx?scid=MD_Tickets">Tickets</a></li>
+<li id=subNav_13_7" class="sub"><a href="http://shopping.dallasnews.com/class/ClassifiedAds.aspx?scid=LN">Legal Notices</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="widget code html" id="hpPremium">
+<style>
+#message {
+background-image:url("/skins/dmn/gfx/SCmessageBck.jpg");
+background-repeat: no-repeat;
+height:70px;
+width:940px;
+padding:0;
+margin:0;
+}
+.copy {
+float:left;
+margin:14px 0px 0 90px;
+font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+color:#000;
+}
+.copy p{
+}
+.copy a{
+font-size:.75em;
+color:#005689;
+}
+.secondary {
+float:left;
+margin:2px 0px 0 90px;
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+color:#000;
+}
+.secondary p{
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+color:#000;
+}
+.secondary a{
+font-size:.9em;
+color:#005689;
+}
+</style>
+<div style="text-align:center; width:100%; margin:0; padding:0;">
+<div id="message">
+<div class="copy">
+New <em>Subscriber Content</em> is exclusively for newspaper subscribers or online subscribers. &nbsp;<a href="javascript:subscribeForward();">Subscribe now</a>
+</div>
+<div class="secondary">
+Premium content written and compiled by our journalists just for you. &nbsp;<a href="http://www.dallasnews.com/tell-me-more/">Learn more about <em>Subscriber Content</em></a> | <a href="http://www.dallasnews.com/nextgenguide">User Guide</a>
+</div> </div>
+</div>
+</div>
+<div class="widget code html" >
+<script type="text/javascript">
+if (belo.cgm.util.isSubscribedToBelo())
+{
+document.getElementById('hpPremium').style.display = 'none';
+}
+</script>
+</div>
+</div>
+<div id="content"> <!--pageBody-->
+<div id="areas">
+<div id="main"> <!--mainContent-->
+<div class="x140x460 "
+>
+<div class="column-1">
+<div class="widget groupHeadline groupHeadlineLatestNews" >
+Latest News
+</div>
+<div class="widget list detailed " >
+<div class="content">
+<div class="article premium">
+<h4><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/sports/columnists/tim-cowlishaw/20110424-cowlishaw-if-dirk-nowitzki-can_t-own-fourth-quarter-this-series-is-over.ece" class="viziwyg-editable viziwyg-field-169075-TITLE viziwyg-section-7641">
+Cowlishaw: If Dirk Nowitzki can&#039;t own fourth quarter, this series is over
+</a>
+<!-- display related items -->
+</div>
+</h4>
+<div class="article premium">
+<h4><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/news/community-news/arlington/headlines/20110424-storms-bring-rain-high-winds-large-hail-to-dallas-fort-worth.ece" class="viziwyg-editable viziwyg-field-169246-TITLE viziwyg-section-7475">
+Storms bring rain, high winds, large hail to Dallas-Fort Worth
+</a>
+<span class="dateline">11:52 PM CDT</span>
+<!-- display related items -->
+</div>
+</h4>
+<div class="article premium">
+<h4><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/news/community-news/dallas/headlines/20110424-gourmet-food-trucks-are-making-inroads-into-dallas-council-vote-may-let-them-in-arts-district-.ece" class="viziwyg-editable viziwyg-field-169218-TITLE viziwyg-section-7496">
+Gourmet food trucks are making inroads into Dallas; council vote may let them in Arts District
+</a>
+<span class="dateline">11:02 PM CDT</span>
+<!-- display related items -->
+</div>
+</h4>
+<div class="article ">
+<h4>
+<a href="http://dallasnews.stats.com/mlb/recap.asp?g=310424113&final=true" class="viziwyg-editable viziwyg-field-168976-TITLE viziwyg-section-7653">
+Rangers sweep Royals, but team knows it has plenty of work left
+</a>
+<!-- display related items -->
+</div>
+</h4>
+<div class="article premium">
+<h4><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/news/community-news/dallas/headlines/20110424-auditor-questions-millions-of-dollars-in-new-parkland-hospital-construction-contract.ece" class="viziwyg-editable viziwyg-field-169227-TITLE viziwyg-section-7496">
+Auditor questions millions of dollars in new Parkland hospital construction contract
+</a>
+<span class="dateline">11:21 PM CDT</span>
+<!-- display related items -->
+</div>
+</h4>
+<div class="article ">
+<h4>
+<a href="http://www.dallasnews.com/news/community-news/dallas/headlines/20110424-east-dallas-neighborhood-celebrates-easter-with-a-scary-twist.ece" class="viziwyg-editable viziwyg-field-169128-TITLE viziwyg-section-7496">
+East Dallas neighborhood celebrates Easter with a scary twist
+</a>
+<span class="dateline">11:34 PM CDT</span>
+<!-- display related items -->
+</div>
+</h4>
+<div class="article premium">
+<h4><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/sports/dallas-cowboys/headlines/20110424-dallas-cowboys-cheerleaders-cancellation-on-cruise-causes-waves-for-upset-travelers-.ece" class="viziwyg-editable viziwyg-field-169129-TITLE viziwyg-section-7643">
+Dallas Cowboys Cheerleaders cancellation on cruise causes waves for upset travelers
+</a>
+<span class="dateline">11:50 PM CDT</span>
+<!-- display related items -->
+</div>
+</h4>
+<div class="article premium">
+<h4><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/news/state/headlines/20110424-firefighters-use-ground-and-air-attacks-against-texas-wildfires.ece" class="viziwyg-editable viziwyg-field-169211-TITLE viziwyg-section-7609">
+Firefighters use ground and air attacks against Texas wildfires
+</a>
+<span class="dateline">11:43 PM CDT</span>
+<!-- display related items -->
+</div>
+</h4>
+</div>
+</div>
+<div class="widget groupHeadline" >
+<a href="/opinion/">Opinion<span><img src="/skins/dmn/gfx/arrow-blue-single.png"/></span></a>
+</div>
+<div class="widget list detailed " >
+<div class="content">
+<div class="article first ">
+<h4>
+<a href="http://www.dallasnews.com/opinion/editorials/20110422-editorial-neighborhoods-should-have-their-say-about-redistricting.ece" class="viziwyg-editable viziwyg-field-168266-TITLE viziwyg-section-8064">
+Editorial: Neighborhoods should have their say about redistricting
+</a>
+<!-- display related items -->
+</div>
+</h4>
+<div class="article ">
+<h4>
+<a href="http://www.dallasnews.com/opinion/editorials/20110422-editorial-lets-focus-on-the-national-debt-not-the-debt-ceiling.ece" class="viziwyg-editable viziwyg-field-168270-TITLE viziwyg-section-8064">
+Editorial: Let’s focus on the national debt, not the debt ceiling
+</a>
+<!-- display related items -->
+</div>
+</h4>
+</div>
+</div>
+<div class="widget list detailed " >
+<div class="content">
+<div class="article first premium">
+<h4><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/opinion/latest-columns/20110422-ronald-trowbridge-taxpayers-and-students-deserve-the-truth-about-higher-ed-research-.ece" class="viziwyg-editable viziwyg-field-168287-TITLE viziwyg-section-8090">
+Ronald Trowbridge: Taxpayers and students deserve the truth about higher ed research
+</a>
+<!-- display related items -->
+</div>
+</h4>
+</div>
+</div>
+<div class="widget groupHeadline" >
+<a href="/news/education/">EDUCATION<span><img src="/skins/dmn/gfx/arrow-blue-single.png"/></span></a>
+</div>
+<div class="widget list detailed " >
+<div class="content">
+<div class="article first ">
+<h4>
+<a href="http://www.dallasnews.com/news/education/headlines/20110423-north-texas-area-education-notes.ece" class="viziwyg-editable viziwyg-field-168898-TITLE viziwyg-section-7459">
+North Texas-area education notes
+</a>
+<!-- display related items -->
+</div>
+</h4>
+<div class="article ">
+<h4>
+<a href="http://www.dallasnews.com/news/education/headlines/20110423-education-notes-for-communities-including-carrollton-denton-farmers-branch-grand-prairie-irving-arlington-lewisville-flower-mound-the-colony.ece" class="viziwyg-editable viziwyg-field-168887-TITLE viziwyg-section-7459">
+Education notes for communities including Carrollton, Denton, Farmers Branch, Grand Prairie, Irving, Arlington, Lewisville, Flower Mound, The Colony
+</a>
+<!-- display related items -->
+</div>
+</h4>
+<div class="article ">
+<h4>
+<a href="http://www.dallasnews.com/news/education/headlines/20110423-dallas-area-education-notes.ece" class="viziwyg-editable viziwyg-field-168817-TITLE viziwyg-section-7459">
+Dallas-area education notes
+</a>
+<!-- display related items -->
+</div>
+</h4>
+</div>
+</div>
+<div class="widget groupHeadline" >
+<a href="/news/state/">State<span><img src="/skins/dmn/gfx/arrow-blue-single.png"/></span></a>
+</div>
+<div class="widget list detailed " >
+<div class="content">
+<div class="article first premium">
+<h4><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/news/state/headlines/20110424-on-easter-sunday-possum-kingdom-lake-churchgoers-find-renewed-faith-amid-wildfire.ece" class="viziwyg-editable viziwyg-field-169172-TITLE viziwyg-section-7609">
+On Easter Sunday, Possum Kingdom Lake churchgoers find renewed faith amid wildfire
+</a>
+<!-- display related items -->
+</div>
+</h4>
+<div class="article premium">
+<h4><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/news/state/headlines/20110424-firefighters-use-ground-and-air-attacks-against-texas-wildfires.ece" class="viziwyg-editable viziwyg-field-169211-TITLE viziwyg-section-7609">
+Firefighters use ground and air attacks against Texas wildfires
+</a>
+<!-- display related items -->
+</div>
+</h4>
+<div class="article premium">
+<h4><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/news/state/headlines/20110423-possum-kingdom-homes-hold-clues-to-preventing-future-fire-losses.ece" class="viziwyg-editable viziwyg-field-168865-TITLE viziwyg-section-7609">
+Possum Kingdom homes hold clues to preventing future fire losses
+</a>
+<!-- display related items -->
+</div>
+</h4>
+</div>
+</div>
+</div>
+<div class="column-2">
+<div class="widget stories topstory homepageTopStory " >
+<div class="article news first default ">
+<div class="media news">
+<div><div id="slcgm_metadata_ece_news_169172" class="slcgm_metadata cgminfo"></div></div>
+<script type="text/javascript">cgmArticleIds.push({articleId:"ece.news.169172",divId:"slcgm_metadata_ece_news_169172",articleTitle:"On Easter Sunday, Possum Kingdom Lake churchgoers find renewed faith amid wildfire"});</script>
+<h1 class="default">
+<img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/news/state/headlines/20110424-on-easter-sunday-possum-kingdom-lake-churchgoers-find-renewed-faith-amid-wildfire.ece" class="viziwyg-editable viziwyg-field-169172-TITLE viziwyg-section-7609">
+On Easter Sunday, Possum Kingdom Lake churchgoers find renewed faith amid wildfire
+</a>
+<span class="timeStamp">12:03 AM CDT</span>
+</h1>
+</div>
+<div class="text">
+<div id="widget4700-story169172-picture169160">
+<img src="http://www.dallasnews.com/incoming/20110424-fire001.jpg.ece/BINARY/w460/fire001.JPG"
+alt=""
+title="Operation section chief Jamie Schwartz points out trouble spots for fires and fire damage before crews go out at the operations center in Mineral Wells on Sunday."
+onclick="location.href='';"
+rel="widget4700-story169172-picture169160-info" class="stories-topstory-topPicture" />
+<div id="indexCredit">
+Nathan Hunsinger/Staff Photographer
+</div>
+</div>
+<div class="DMNStoryTease">The massive wildfires destroyed two churches, including one that held church Sunday in an adjacent gymnasium.
+</div>
+<div class="DMNRelatedItemsSection">
+<p>
+<a href="http://www.scribd.com/doc/53758628/Largest-contained-Texas-wildfires">
+Map: Largest uncontained Texas wildfires
+</a>
+</p>
+<p class="DMNReferVideo DMNBulletLink">
+<a href="/video/?bcid=917454762001">First Baptist Church of Possum Kingdom Lake holds services after fire</a>
+</p>
+</div></div>
+</div>
+</div>
+<div class="widget stories custom " >
+<div class="article news first default ">
+<div class="text">
+<div class="textDetailNoImage">
+<div><div id="slcgm_metadata_ece_news_169176" class="slcgm_metadata cgminfo"></div></div>
+<script type="text/javascript">cgmArticleIds.push({articleId:"ece.news.169176",divId:"slcgm_metadata_ece_news_169176",articleTitle:"Morale problems, sex harassment suits haven’t shaken city management’s faith in Dallas fire chief"});</script>
+<h2>
+<img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/news/community-news/dallas/headlines/20110424-morale-problems-sex-harassment-suits-havent-shaken-city-managements-faith-in-dallas-fire-chief.ece" class="viziwyg-editable viziwyg-field-169176-TITLE viziwyg-section-7496">
+Morale problems, sex harassment suits haven’t shaken city management’s faith in Dallas fire chief
+</a>
+<span class="timeStamp">10:46 PM CDT</span>
+</h2>
+<p class="summary">
+<span class="viziwyg-editable viziwyg-field-169176-LEADTEXT viziwyg-section-7496">Sex harassment suits and morale problems don’t rattle the man who became Dallas’ top firefighter five years ago.</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="widget groupHeadline" >
+TOP PICKS
+</div>
+<link rel="stylesheet" type="text/css" href="/resources/css/topPicks.css"/>
+<div class="widget topPicks default" >
+<div class="topPicksItem firstItem" style="margin-right: 20px; width:140px;">
+<div class="topPicksImage" style="clear:both; width: 100%; padding-bottom:10px;">
+<img src="http://www.dallasnews.com/incoming/20110422-royalweddingfinalnew.jpg.ece/ALTERNATES/w140/royalweddingfinalNEW.jpg" alt="Things to do"/>
+</div>
+<div class="topPicksTitleWrapper" style="clear:both; width: 100%;">
+<p class="topPicksTitle">
+Things to do
+</p>
+<p class="topPicksLink"><a href="http://www.dallasnews.com/entertainment/headlines/20110421-where-to-celebrate-britains-royal-wedding-in-the-dallas-area.ece">
+<img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>&nbsp;
+Where to celebrate Britain’s royal wedding in the Dallas area</a>
+</p>
+</div>
+</div>
+<div class="topPicksItem nextItem" style="margin-right: 20px; width:140px;">
+<div class="topPicksImage" style="clear:both; width: 100%; padding-bottom:10px;">
+<img src="http://www.dallasnews.com/incoming/20110421-0422dat.jpg.ece/ALTERNATES/w140/0422dat.JPG" alt="Pets"/>
+</div>
+<div class="topPicksTitleWrapper" style="clear:both; width: 100%;">
+<p class="topPicksTitle">
+Pets
+</p>
+<p class="topPicksLink"><a href="http://www.dallasnews.com/lifestyles/pets/20110421-dog-about-town-celebrating-easter-and-more-weekend-events.ece">
+<img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>&nbsp;
+Dog About Town: Celebrating Easter and more weekend events</a>
+</p>
+</div>
+</div>
+<div class="topPicksItem nextItem" style="margin-right: 0px; width:140px;">
+<div class="topPicksImage" style="clear:both; width: 100%; padding-bottom:10px;">
+<img src="http://www.dallasnews.com/incoming/20110421-fdx_0421_madhatr-2_3780uinrv.jpg.ece/ALTERNATES/w140/FDX_0421_MadHatr+2_3780UINRV.png" alt="Style"/>
+</div>
+<div class="topPicksTitleWrapper" style="clear:both; width: 100%;">
+<p class="topPicksTitle">
+Style
+</p>
+<p class="topPicksLink"><a href="http://www.dallasnews.com/lifestyles/style/people/20110421-snapped-the-mad-hatters-tea-party-.ece">
+<img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>&nbsp;
+Snapped: The Mad Hatter’s Tea Party </a>
+</p>
+</div>
+</div>
+<div class="topPicksClear"></div>
+</div>
+<div class="widget groupHeadline sbDisplay" >
+<a href="/sports/">SPORTS<span><img src="/skins/dmn/gfx/arrow-blue-single.png"/></span></a>
+</div>
+<div class="widget list custom " >
+<div class="content">
+<div class="article first premium">
+<!-- display image -->
+<img src="http://www.dallasnews.com/incoming/20110412-104379366.jpg.ece/ALTERNATES/w220/104379366.png"
+alt=""
+class=" inpage-cropable inpage-image-161434-ALTERNATES-w220 inpage-dim-220-154 viziwyg-section-4 "
+title=""
+width="220"
+height="154"/>
+<h3><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/sports/nfl-draft/20110424-rick-gosselin_s-mock-draft-no.-2-cowboys-pick-wisconsin_s-j.j.-watt.ece" class="viziwyg-editable viziwyg-field-169043-TITLE viziwyg-section-9207">
+Rick Gosselin&#039;s Mock Draft No. 2: Cowboys pick Wisconsin&#039;s J.J. Watt
+</a>
+</h3>
+<p class="">
+</p>
+<!-- display related items -->
+</div>
+<div class="article premium">
+<!-- display image -->
+<h3><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/sports/columnists/tim-cowlishaw/20110424-cowlishaw-if-dirk-nowitzki-can_t-own-fourth-quarter-this-series-is-over.ece" class="viziwyg-editable viziwyg-field-169075-TITLE viziwyg-section-7641">
+Cowlishaw: If Dirk Nowitzki can&#039;t own fourth quarter, this series is over
+</a>
+</h3>
+<!-- display related items -->
+</div>
+<div class="article ">
+<!-- display image -->
+<h3>
+<a href="http://www.dallasnews.com/sports/more-sports/headlines/20110407-dallas-sports-legends-series.ece" class="viziwyg-editable viziwyg-field-166695-TITLE viziwyg-section-8804">
+Dallas Sports Legends: Memorable moments in their lives, careers
+</a>
+</h3>
+<!-- display related items -->
+</div>
+<div class="article ">
+<!-- display image -->
+<h3>
+<a href="http://dallasnews.stats.com/mlb/recap.asp?g=310424113&final=true" class="viziwyg-editable viziwyg-field-168976-TITLE viziwyg-section-7653">
+Rangers sweep Royals, but team knows it has plenty of work left
+</a>
+</h3>
+<!-- display related items -->
+</div>
+<div class="article premium">
+<!-- display image -->
+<h3><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/sports/dallas-cowboys/headlines/20110424-fraley-why-jason-witten-has-the-most-demanding-job-in-pro-football.ece" class="viziwyg-editable viziwyg-field-169143-TITLE viziwyg-section-7643">
+Fraley: Why Jason Witten has the most demanding job in pro football
+</a>
+</h3>
+<!-- display related items -->
+</div>
+</div>
+</div>
+<div class="widget groupHeadline" >
+<a href="/news/">News<span><img src="/skins/dmn/gfx/arrow-blue-single.png"/></span></a>
+</div>
+<div class="widget list custom " >
+<div class="content">
+<div class="article first ">
+<img src="http://www.dallasnews.com/incoming/20110424-ng_24paradenewell_2.jpg.ece/ALTERNATES/w220/NG_24PARADEnewell_2.jpg"
+alt=""
+class=" inpage-cropable inpage-image-169127-ALTERNATES-w220 inpage-dim-220-154 viziwyg-section-4 "
+title="Brandon Barnett, 37, of Dallas was part of a float called “The Nightmare Before Easter” on Sunday in the sixth annual Newellian Easter Parade down Newell Avenue in the Hollywood-Santa Monica neighborhood in East Dallas."
+width="220"
+height="154"/>
+<h3>
+<a href="http://www.dallasnews.com/news/community-news/dallas/headlines/20110424-east-dallas-neighborhood-celebrates-easter-with-a-scary-twist.ece" class="viziwyg-editable viziwyg-field-169128-TITLE viziwyg-section-7496">
+East Dallas neighborhood celebrates Easter with a scary twist
+</a>
+</h3>
+<p class="viziwyg-editable viziwyg-field-169128-LEADTEXT viziwyg-section-7496">
+Residents of the Hollywood-Santa Monica neighborhood in East Dallas put on the sixth annual Newellian Easter Parade on Sunday.
+</p>
+<!-- display related items -->
+</div>
+<div class="article premium">
+<h3><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/news/community-news/arlington/headlines/20110424-storms-bring-rain-high-winds-large-hail-to-dallas-fort-worth.ece" class="viziwyg-editable viziwyg-field-169246-TITLE viziwyg-section-7475">
+Storms bring rain, high winds, large hail to Dallas-Fort Worth
+</a>
+</h3>
+<!-- display related items -->
+</div>
+<div class="article premium">
+<h3><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/news/community-news/dallas/headlines/20110424-dallas-city-council-member-dave-neumann-faces-stiff-challenge-from-scott-griggs-in-district-3-race-.ece" class="viziwyg-editable viziwyg-field-169149-TITLE viziwyg-section-7496">
+Dallas City Council member Dave Neumann faces stiff challenge from Scott Griggs in District 3 race
+</a>
+</h3>
+<!-- display related items -->
+</div>
+</div>
+</div>
+<div class="widget groupHeadline" >
+<a href="/business/">Business<span><img src="/skins/dmn/gfx/arrow-blue-single.png"/></span></a>
+</div>
+<div class="widget list custom " >
+<div class="content">
+<div class="article first premium">
+<!-- display image -->
+<img src="http://www.dallasnews.com/incoming/20110424-groundbreaking.jpg.ece/ALTERNATES/w220/groundbreaking.JPG"
+alt=""
+class=" inpage-cropable inpage-image-169232-ALTERNATES-w220 inpage-dim-220-154 viziwyg-section-4 "
+title="Linda Wilkerson, Parkland Memorial Hospital's pastoral care director, points to a model of the new hospital campus unveiled during its groundbreaking in October. An outside auditor is questioning the use of more than $7 million in taxpayer funds to build the new hospital."
+width="220"
+height="154"/>
+<h3><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/news/community-news/dallas/headlines/20110424-auditor-questions-millions-of-dollars-in-new-parkland-hospital-construction-contract.ece" class="viziwyg-editable viziwyg-field-169227-TITLE viziwyg-section-7496">
+Auditor questions millions of dollars in new Parkland hospital construction contract
+</a>
+</h3>
+<p class="viziwyg-editable viziwyg-field-169227-LEADTEXT viziwyg-section-7496">
+The auditor questioned more than $7 million, some of which included barbecue lunches, gift cards and T-shirts.
+</p>
+<!-- display related items -->
+</div>
+<div class="article premium">
+<!-- display image -->
+<h3><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/news/community-news/dallas/headlines/20110424-gourmet-food-trucks-are-making-inroads-into-dallas-council-vote-may-let-them-in-arts-district-.ece" class="viziwyg-editable viziwyg-field-169218-TITLE viziwyg-section-7496">
+Gourmet food trucks are making inroads into Dallas; council vote may let them in Arts District
+</a>
+</h3>
+<!-- display related items -->
+</div>
+<div class="article premium">
+<!-- display image -->
+<h3><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/business/columnists/will-deener/20110424-stock-market-averages-could-put-some-retirees-out-on-mean-streets-.ece" class="viziwyg-editable viziwyg-field-169221-TITLE viziwyg-section-7893">
+Stock market averages could put some retirees out on mean streets
+</a>
+</h3>
+<!-- display related items -->
+</div>
+</div>
+</div>
+<div class="widget groupHeadline" >
+<a href="/news/politics/texas-legislature">Texas Legislature<span><img src="/skins/dmn/gfx/arrow-blue-single.png"/></span></a>
+</div>
+<div class="widget list custom " >
+<div class="content">
+<div class="article first ">
+<!-- display image -->
+<img src="http://www.dallasnews.com/incoming/20110421-texas_budget_18761634.jpg.ece/ALTERNATES/w220/TEXAS_BUDGET_18761634.JPG"
+alt=""
+class=" inpage-cropable inpage-image-167318-ALTERNATES-w220 inpage-dim-220-154 viziwyg-section-4 "
+title="Texas state representatives gather around House Parliamentarian Chris Griesel, third from left, leaning over the dais, during debate of House Bill 1 in the House Chamber at the Capitol in Austin on Sunday."
+width="220"
+height="154"/>
+<h3>
+<a href="http://www.dallasnews.com/news/politics/texas-legislature/headlines/20110421-texas-senate-committee-oks-budget-that-would-ease-cuts-to-schools-social-services.ece" class="viziwyg-editable viziwyg-field-166930-TITLE viziwyg-section-7450">
+Texas Senate committee OKs budget that would ease cuts to schools, social services
+</a>
+</h3>
+<p class="viziwyg-editable viziwyg-field-166930-LEADTEXT viziwyg-section-7450">
+The panel would spend at least $12 billion more, including more rainy day fund money, than House members approved.
+</p>
+<!-- display related items -->
+</div>
+<div class="article ">
+<!-- display image -->
+<h3>
+<a href="http://www.dallasnews.com/news/politics/texas-legislature/headlines/20110422-under-the-dome-briefs-from-the-legislature.ece" class="viziwyg-editable viziwyg-field-167753-TITLE viziwyg-section-7450">
+Under the Dome: Briefs from the Legislature
+</a>
+</h3>
+<!-- display related items -->
+</div>
+<div class="article premium">
+<!-- display image -->
+<h3><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/news/politics/texas-legislature/headlines/20110421-texas-legislators-aim-to-keep-police-from-ticketing-10-and-11-year-olds.ece" class="viziwyg-editable viziwyg-field-167749-TITLE viziwyg-section-7450">
+Texas legislators aim to keep police from ticketing 10- and 11-year-olds
+</a>
+</h3>
+<!-- display related items -->
+</div>
+</div>
+</div>
+<div class="widget groupHeadline" >
+<a href="/entertainment/">Entertainment<span><img src="/skins/dmn/gfx/arrow-blue-single.png"/></span></a>
+</div>
+<div class="widget list custom " >
+<div class="content">
+<div class="article first ">
+<!-- display image -->
+<img src="http://www.dallasnews.com/incoming/20110422-0422willskate.jpg.ece/ALTERNATES/w220/0422WILLSKATE.JPG"
+alt=""
+class=" inpage-cropable inpage-image-168016-ALTERNATES-w220 inpage-dim-220-154 viziwyg-section-4 "
+title="Britain's Prince William accompanied by his fiancee Kate Middleton, arrives at Witton Country Park, Darwen, England, Monday April 11, 2011. Prince William and Kate Middleton will marry on April 29."
+width="220"
+height="154"/>
+<h3>
+<a href="http://popcultureblog.dallasnews.com/archives/2011/04/talking-tv-royal-wedding-game.html" class="viziwyg-editable viziwyg-field-168017-TITLE viziwyg-section-7990">
+Talking TV: Royal wedding and &#039;Game of Thrones&#039;
+</a>
+</h3>
+<p class="viziwyg-editable viziwyg-field-168017-LEADTEXT viziwyg-section-7990">
+On this week’s podcast, Samantha Urban and media critic Tom Maurstad discuss the media coverage of the royal wedding, HBO’s “Game of Thrones” and Will Ferrell’s role on “The Office.”
+</p>
+<!-- display related items -->
+</div>
+<div class="article ">
+<!-- display image -->
+<h3>
+<a href="http://www.dallasnews.com/entertainment/headlines/20110422-to-do-sunday-easter-events-in-dfw.ece" class="viziwyg-editable viziwyg-field-168055-TITLE viziwyg-section-7930">
+To do Sunday: Easter events in DFW
+</a>
+</h3>
+<!-- display related items -->
+</div>
+<div class="article premium">
+<!-- display image -->
+<h3><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/entertainment/headlines/20110421-easter-dining-options-in-the-dallas-area-for-april-24.ece" class="viziwyg-editable viziwyg-field-166968-TITLE viziwyg-section-7930">
+Easter dining options in the Dallas area for April 24
+</a>
+</h3>
+<!-- display related items -->
+</div>
+</div>
+</div>
+<div class="widget groupHeadline" >
+<a href="/lifestyles/">Lifestyles<span><img src="/skins/dmn/gfx/arrow-blue-single.png"/></span></a>
+</div>
+<div class="widget list custom " >
+<div class="content">
+<div class="article first premium">
+<!-- display image -->
+<img src="http://www.dallasnews.com/incoming/20110422-nhmwelldressed0020423gd.ece/ALTERNATES/w220/nhmwelldressed0020423gd"
+alt=""
+class=" inpage-cropable inpage-image-168085-ALTERNATES-w220 inpage-dim-220-154 viziwyg-section-4 "
+title="Emily Hewett prefers to show off the symmetrical monogram of the family name wherever she can, on bed and kitchen linens, glassware and serving pieces."
+width="220"
+height="154"/>
+<h3><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/lifestyles/home-and-gardening/home-tours/20110422-redesigning-a-bachelor-pad-in-east-dallas.ece" class="viziwyg-editable viziwyg-field-168094-TITLE viziwyg-section-8031">
+Redesigning a bachelor pad in East Dallas
+</a>
+</h3>
+<p class="viziwyg-editable viziwyg-field-168094-LEADTEXT viziwyg-section-8031">
+When Chris Hewett hired Emily Sheehan to decorate his home, he ended up asking her to marry him.
+</p>
+<!-- display related items -->
+</div>
+<div class="article premium">
+<!-- display image -->
+<h3><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/lifestyles/food/headlines/20110422-make-your-own-version-of-prince-williams-royal-wedding-grooms-cake.ece" class="viziwyg-editable viziwyg-field-168201-TITLE viziwyg-section-8019">
+Make your own version of Prince William’s royal wedding groom’s cake
+</a>
+</h3>
+<!-- display related items -->
+</div>
+<div class="article premium">
+<!-- display image -->
+<h3><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/lifestyles/food/headlines/20110422-toast-the-royal-bride-and-groom-with-authentic-menu.ece" class="viziwyg-editable viziwyg-field-168208-TITLE viziwyg-section-8019">
+Toast the royal bride and groom with authentic menu
+</a>
+</h3>
+<!-- display related items -->
+</div>
+</div>
+</div>
+<div class="widget groupHeadline" >
+<a href="/business/technology/">TECHNOLOGY<span><img src="/skins/dmn/gfx/arrow-blue-single.png"/></span></a>
+</div>
+<div class="widget list custom " >
+<div class="content">
+<div class="article first premium">
+<!-- display image -->
+<h3><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/business/technology/headlines/20110423-legal-challenges-could-hold-back-cloud-computing.ece" class="viziwyg-editable viziwyg-field-168842-TITLE viziwyg-section-8899">
+Legal challenges could hold back ‘cloud computing’
+</a>
+</h3>
+<p class="viziwyg-editable viziwyg-field-168842-LEADTEXT viziwyg-section-8899">
+Experts say content creators are reluctant to let Amazon and other sellers dictate the terms for digital streaming.
+</p>
+<!-- display related items -->
+</div>
+<div class="article premium">
+<!-- display image -->
+<h3><img class="premium" src="http://www.dallasnews.com/skins/dmn/gfx/premium-d12.png" width="12" height="12"/>
+<a href="http://www.dallasnews.com/business/technology/headlines/20110421-use-aperture-if-youve-outgrown-iphoto.ece" class="viziwyg-editable viziwyg-field-167648-TITLE viziwyg-section-8899">
+Use Aperture if you’ve outgrown iPhoto
+</a>
+</h3>
+<!-- display related items -->
+</div>
+<div class="article ">
+<!-- display image -->
+<h3>
+<a href="http://www.dallasnews.com/business/technology/headlines/20110420-att-reports-improved-first-quarter-sales-profit.ece" class="viziwyg-editable viziwyg-field-166110-TITLE viziwyg-section-8899">
+AT&amp;T reports improved first-quarter sales, profit
+</a>
+</h3>
+<!-- display related items -->
+</div>
+</div>
+</div>
+</div>
+<div style="clear:both"></div>
+</div>
+</div>
+<div id="right"> <!--rightColumn-->
+<!-- latest call to wunderground = Mon Apr 25 02:51:38 CDT 2011, updated at 1:53 AM CDT on April 25, 2011 -->
+<div class="widget weather 12HourForecastHome DMNWeatherModule" >
+<div class="DMNWeatherContainer">
+<div class="DMNWeatherForecast">
+<div class="DMNWeatherCurrent">
+<div class="DMNWeatherCurrentImg">
+<img src="http://www.dallasnews.com/skins/dmn/gfx/weather/nt_cloudy.gif" width="24" height="24"/>
+</div>
+<div class="DMNWeatherCurrentInfo">
+<div class="DMNWeatherCurrentTemp">
+<strong>Currently:</strong> 74&deg;
+</div>
+<div class="DMNWeatherCurrentCond">
+Overcast
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="DMNWeather5Day">
+<div class="DMNWeatherDaily">
+<div class="DMNWeatherDailyImg">
+<img src="http://www.dallasnews.com/skins/dmn/gfx/weather/nt_chancetstorms.gif" width="24" height="24"/>
+</div>
+<div class="DMNWeatherDailyTime">
+4 am
+</div>
+<div class="DMNWeatherDailyTemp">
+68&deg;
+</div>
+</div>
+<div class="DMNWeatherDaily">
+<div class="DMNWeatherDailyImg">
+<img src="http://www.dallasnews.com/skins/dmn/gfx/weather/chancetstorms.gif" width="24" height="24"/>
+</div>
+<div class="DMNWeatherDailyTime">
+7 am
+</div>
+<div class="DMNWeatherDailyTemp">
+67&deg;
+</div>
+</div>
+<div class="DMNWeatherDaily">
+<div class="DMNWeatherDailyImg">
+<img src="http://www.dallasnews.com/skins/dmn/gfx/weather/chancetstorms.gif" width="24" height="24"/>
+</div>
+<div class="DMNWeatherDailyTime">
+10 am
+</div>
+<div class="DMNWeatherDailyTemp">
+70&deg;
+</div>
+</div>
+<div class="DMNWeatherDaily">
+<div class="DMNWeatherDailyImg">
+<img src="http://www.dallasnews.com/skins/dmn/gfx/weather/chancetstorms.gif" width="24" height="24"/>
+</div>
+<div class="DMNWeatherDailyTime">
+1 pm
+</div>
+<div class="DMNWeatherDailyTemp">
+79&deg;
+</div>
+</div>
+<div class="DMNWeatherDaily">
+<div class="DMNWeatherDailyImg">
+<img src="http://www.dallasnews.com/skins/dmn/gfx/weather/chancetstorms.gif" width="24" height="24"/>
+</div>
+<div class="DMNWeatherDailyTime">
+4 pm
+</div>
+<div class="DMNWeatherDailyTemp">
+85&deg;
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="DMNWeatherMapContainer">
+<div class="DMNWeatherMap">
+<a href="/weather"><img src="http://www.wunderground.com/data/nids/FWS19_thumb_t.jpg" height="90" width="90" alt="more weather" /></a>
+</div>
+<!-- <div class="DMNWeatherLink">
+<a href="/weather">More Weather</a>
+</div>
+-->
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="positionRibbon1">
+<script type="text/javascript">yld_mgr.place_ad_here("Ribbon1");</script>
+</div>
+<div class="widget code html" >
+<script type="text/javascript">
+if (belo.cgm.util.isSubscribedToBelo())
+{
+document.writeln('<style>.positionRibbon1 {display:none;}</style>');
+}
+</script>
+</div>
+<div class="positionMedRectangle1">
+<script type="text/javascript">yld_mgr.place_ad_here("MedRectangle1");</script>
+</div>
+<div class="positionMedRectangle2">
+<script type="text/javascript">yld_mgr.place_ad_here("MedRectangle2");</script>
+</div>
+<div class="positionRibbon2">
+<script type="text/javascript">yld_mgr.place_ad_here("Ribbon2");</script>
+</div>
+<div class="widget groupHeadline" >
+<a href="http://topics.dallasnews.com">Hot Topics<span><img src="/skins/dmn/gfx/arrow-blue-single.png"/></span></a>
+</div>
+<link rel="stylesheet" type="text/css" href="/skins/dmn/css/hotTopics.css"/>
+<div class="DMNHotTopics">
+<div class="DMNHotTopicsLeft">
+<div class="DMNHotTopicsItem">
+<div class="DMNHotTopicNumbers DMNHotTopicNumber_1"></div>
+<div class="DMNHotTopicsLink"><a href="http://topics.dallasnews.com/topic/Tim_Hetherington">Tim Hetherington</a></div>
+<div class="DMNHotTopicsClear"></div>
+</div>
+<div class="DMNHotTopicsItem">
+<div class="DMNHotTopicNumbers DMNHotTopicNumber_2"></div>
+<div class="DMNHotTopicsLink"><a href="http://topics.dallasnews.com/topic/Lindsay_Lohan">Lindsay Lohan</a></div>
+<div class="DMNHotTopicsClear"></div>
+</div>
+<div class="DMNHotTopicsItem">
+<div class="DMNHotTopicNumbers DMNHotTopicNumber_3"></div>
+<div class="DMNHotTopicsLink"><a href="http://topics.dallasnews.com/topic/National_Basketball_Association">NBA playoffs</a></div>
+<div class="DMNHotTopicsClear"></div>
+</div>
+<div class="DMNHotTopicsItem">
+<div class="DMNHotTopicNumbers DMNHotTopicNumber_4"></div>
+<div class="DMNHotTopicsLink"><a href="http://topics.dallasnews.com/topic/Reese_Witherspoon">'Water for Elephants'</a></div>
+<div class="DMNHotTopicsClear"></div>
+</div>
+<div class="DMNHotTopicsItem">
+<div class="DMNHotTopicNumbers DMNHotTopicNumber_5"></div>
+<div class="DMNHotTopicsLink"><a href="http://topics.dallasnews.com/topic/Los_Angeles_Dodgers">L.A. Dodgers</a></div>
+<div class="DMNHotTopicsClear"></div>
+</div>
+</div>
+<div class="DMNHotTopicsRight">
+<div class="DMNHotTopicsItem">
+<div class="DMNHotTopicNumbers DMNHotTopicNumber_6"></div>
+<div class="DMNHotTopicsLink"><a href="http://topics.dallasnews.com/topic/Lady_Gaga">Lady Gaga</a></div>
+<div class="DMNHotTopicsClear"></div>
+</div>
+<div class="DMNHotTopicsItem">
+<div class="DMNHotTopicNumbers DMNHotTopicNumber_7"></div>
+<div class="DMNHotTopicsLink"><a href="http://topics.dallasnews.com/topic/Apple%2C_Inc.">Apple</a></div>
+<div class="DMNHotTopicsClear"></div>
+</div>
+<div class="DMNHotTopicsItem">
+<div class="DMNHotTopicNumbers DMNHotTopicNumber_8"></div>
+<div class="DMNHotTopicsLink"><a href="http://topics.dallasnews.com/topic/Jennifer_Lopez">Jennifer Lopez</a></div>
+<div class="DMNHotTopicsClear"></div>
+</div>
+<div class="DMNHotTopicsItem">
+<div class="DMNHotTopicNumbers DMNHotTopicNumber_9"></div>
+<div class="DMNHotTopicsLink"><a href="http://topics.dallasnews.com/topic/Snooki">Snooki</a></div>
+<div class="DMNHotTopicsClear"></div>
+</div>
+<div class="DMNHotTopicsItem">
+<div class="DMNHotTopicNumbers DMNHotTopicNumber_10"></div>
+<div class="DMNHotTopicsLink"><a href="http://topics.dallasnews.com/topic/Easter">Easter</a></div>
+<div class="DMNHotTopicsClear"></div>
+</div>
+</div>
+</div>
+<div class="widget groupHeadline" >
+<a href="/video/">Video<span><img src="/skins/dmn/gfx/arrow-blue-single.png"/></span></a>
+</div>
+<link rel="stylesheet" type="text/css" href="/resources/css/bcVideo.css"/>
+<div class="widget brightcove featured" >
+<div class="bcVideoFeatured">
+<div class="bcVideoFeaturedItem">
+<div class="bcVideoFeaturedImage">
+<a href="/video/?bcid=916368544001"><img src="http://brightcove.vo.llnwd.net/d15/unsecured/media/108289241001/108289241001_916439001001_eggdropthumb.jpg?pubId=108289241001" alt="McKinney Church Holds First Annual Operation Egg Drop" width="120"/></a>
+</div>
+<div class="bcVideoFeaturedTitleWrapper">
+<p class="bcVideoFeaturedTitle"><a href="/video/?bcid=916368544001">McKinney Church Holds First Annual Operation Egg Drop</a></p>
+</div>
+<div class="bcVideoClear"></div>	</div>
+<div class="bcVideoFeaturedFiller">&nbsp;</div>
+<div class="bcVideoFeaturedItem">
+<div class="bcVideoFeaturedImage">
+<a href="/video/?bcid=916375144001"><img src="http://brightcove.vo.llnwd.net/d15/unsecured/media/108289241001/108289241001_916359520001_150Utube.jpg?pubId=108289241001" alt="YouTube Tour Stops at House of Blues" width="120"/></a>
+</div>
+<div class="bcVideoFeaturedTitleWrapper">
+<p class="bcVideoFeaturedTitle"><a href="/video/?bcid=916375144001">YouTube Tour Stops at House of Blues</a></p>
+</div>
+<div class="bcVideoClear"></div>	</div>
+<div class="bcVideoFeaturedFiller">&nbsp;</div>
+<div class="bcVideoFeaturedItem">
+<div class="bcVideoFeaturedImage">
+<a href="/video/?bcid=915483759001"><img src="http://brightcove.vo.llnwd.net/d15/unsecured/media/108289241001/108289241001_915523894001_smu-sm.jpg?pubId=108289241001" alt="SMU celebrating 100th anniversary with light display" width="120"/></a>
+</div>
+<div class="bcVideoFeaturedTitleWrapper">
+<p class="bcVideoFeaturedTitle"><a href="/video/?bcid=915483759001">SMU celebrating 100th anniversary with light display</a></p>
+</div>
+<div class="bcVideoClear"></div>	</div>
+</div>
+</div>
+<div class="widget groupHeadline" >
+<a href="http://listings.guidelive.com/">Things To Do<span><img src="/skins/dmn/gfx/arrow-blue-single.png"/></span></a>
+</div>
+<script type="text/javascript" src="/template/widgets/thingsToDo/skin/js/event-list.js"></script>
+<link rel="stylesheet" type="text/css" href="/template/widgets/thingsToDo/skin/css/basic.css"/>
+<script type="text/javascript">
+function changeCol(obj) {
+var objname=obj.name;
+obj.value='';
+obj.style.color = '#000000';
+}
+function doSubmit(frm) {
+//alert(frm.name + ' ' + frm.when.value);
+if (frm.when.value == 'null') {
+if (frm.pricerange.value != 'null') { window.open('http://listings.guidelive.com/search?swhat='+frm.what.value+'&swhere='+frm.where.value+'&srad='+frm.rad.value+'&srss=10&st='+frm.name+'&search=true&svt=text&price='+frm.pricerange.value);
+}
+else {
+window.open('http://listings.guidelive.com/search?swhat='+frm.what.value+'&swhere='+frm.where.value+'&srad='+frm.rad.value+'&srss=10&st='+frm.name+'&search=true&svt=text');
+}
+}
+else {
+window.open('http://listings.guidelive.com/search?swhat='+frm.what.value+'&swhen='+frm.when.value+'&swhere='+frm.where.value+'&srad='+frm.rad.value+'&srss=10&st='+frm.name+'&search=true&svt=text');
+}
+//window.location.href = 'http://listings.guidelive.com/search?swhat='+frm.what.value+'&swhen='+frm.when.value+'&swhere='+frm.where.value+'&srad='+frm.rad.value+'&srss=10&st='+frm.name+'&search=true&svt=text';
+//return false;
+}
+function hiLiteLiveBtn(btnid) {
+document.getElementById(btnid).className="searchnavhover";
+document.getElementById(btnid+'form').style.display="block";
+if (btnid != 'events') {document.getElementById('events').className="searchnav"; document.getElementById('eventsform').style.display="none";}
+if (btnid != 'restaurants') {document.getElementById('restaurants').className="searchnav"; document.getElementById('restaurantsform').style.display="none";}
+if (btnid != 'movies') {document.getElementById('movies').className="searchnav"; document.getElementById('moviesform').style.display="none";}
+if (btnid != 'venues') {document.getElementById('venues').className="searchnav"; document.getElementById('venuesform').style.display="none";}
+}
+</script>
+<div id="zvw-Module">
+<!--<div id="zvw-ModuleHead"><div id="zvw-ModuleSubHead"><a href="http://listings.guidelive.com" target="_blank">More</a></div>THINGS TO DO</div>-->
+<div class="zvw-ModuleContent">
+<div id="zvw-ModuleContentTop"><img src="/skins/dmn/gfx/pixel.png" height="5" width="1" /></div>
+<div class="zvw-Header">Upcoming Events</div>
+<div class="zvw-Content">
+<div>
+<div>
+<noscript>
+<p><a class="ZventsFallbackLink" href="http://listings.guidelive.com">Upcoming Event Listings</a></p>
+</noscript>
+<script type="text/javascript" src="http://www.zvents.com/misc/widgets/5225.js?65617"></script>
+</div>
+</div>	</div>
+<div style="background-color:#d7dfe7; height:4px;"></div>
+<div class="zvw-Content3">
+<div class="zvw-ContentHeader" style="float:left;">Search</div><div id="search-addlisting" style="float:right;"><a href="http://listings.guidelive.com/listings" target="_blank">Add A Listing</a></div>
+<div style="clear:both"></div>
+<table width="100%" border="0" cellspacing="2" cellpadding="0">
+<tr>
+<td width="*" align="center" class="searchnav" id="events"><a href="javascript:void(0)" onclick="hiLiteLiveBtn('events')" class="searchnavLink">Events</a></td>
+<td width="*" align="center" class="searchnav" id="restaurants"><a href="javascript:void(0)" onclick="hiLiteLiveBtn('restaurants')" class="searchnavLink">Restaurants</a></td>
+<td width="*" align="center" class="searchnav" id="movies"><a href="javascript:void(0)" onclick="hiLiteLiveBtn('movies')" class="searchnavLink">Movies</a></td>
+<td width="*" align="center" class="searchnav" id="venues"><a href="javascript:void(0)" onclick="hiLiteLiveBtn('venues')" class="searchnavLink">Venues</a></td>
+</tr>
+<tr>
+<td colspan="4">
+<div id="eventsform" style="padding:0 5px 0 5px; position:relative;">
+<form name="event" action="javascript:void(0)" onSubmit="doSubmit(this)" method="get">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="56%"><div class="zvw-ContentHeader">What</div></td>
+<td width="4%">&nbsp;</td>
+<td width="40%"><div class="zvw-ContentHeader">When</div></td>
+</tr>
+<tr>
+<td><input type="text" name="what" size="20" id="zvw-Contentinput" value="" onclick="changeCol(this);" ></td>
+<td>&nbsp;</td>
+<td><input type="text" name="when" size="12" id="zvw-Contentinput" value="" onclick="changeCol(this);" ></td>
+</tr>
+<tr>
+<td colspan="3" height="5"></td>
+</tr>
+<tr>
+<td><div class="zvw-ContentHeader">Where</div></td>
+<td>&nbsp;</td>
+<td><div class="zvw-ContentHeader">Within</div></td>
+</tr>
+<tr>
+<td><input type="text" size="20" name="where" value="Dallas, TX" id="zvw-Contentinputon" onclick="changeCol(this);"></td>
+<td>&nbsp;</td>
+<td valign="middle"><input type="text" name="rad" value="50" size="2" id="zvw-Contentinputon" onclick="changeCol(this);"> Miles <input type="image" src="/skins/dmn/gfx/zvent-search-btn.jpg" align="top" /></td>
+</tr>
+</table>
+</form>
+</div>
+<div id="restaurantsform" style="padding:0 5px 0 5px; position:relative;">
+<form name="restaurant" action="javascript:void(0)" onSubmit="doSubmit(this)" method="get">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><input type="hidden" name="when" value="null">
+<td width="56%"><div class="zvw-ContentHeader">What</div></td>
+<td width="4%">&nbsp;</td>
+<td width="40%"><div class="zvw-ContentHeader">Price Range</div></td>
+</tr>
+<tr>
+<td><input type="text" name="what" size="20" id="zvw-Contentinput" value="" onclick="changeCol(this);" ></td>
+<td>&nbsp;</td>
+<td><select name="pricerange"><option value="0">Any</option><option value="1">$0-$14</option><option value="2">$15-$30</option><option value="3">$30-$50</option><option value="4">$50+</option></select></td>
+</tr>
+<tr>
+<td colspan="3" height="5"></td>
+</tr>
+<tr>
+<td><div class="zvw-ContentHeader">Where</div></td>
+<td>&nbsp;</td>
+<td><div class="zvw-ContentHeader">Within</div></td>
+</tr>
+<tr>
+<td><input type="text" size="20" name="where" value="Dallas, TX" id="zvw-Contentinputon" onclick="changeCol(this);"></td>
+<td>&nbsp;</td>
+<td valign="middle"><input type="text" name="rad" value="50" size="2" id="zvw-Contentinputon" onclick="changeCol(this);"> Miles <input type="image" src="/skins/dmn/gfx/zvent-search-btn.jpg" align="top" /></td>
+</tr>
+</table>
+</form>
+</div>
+<div id="moviesform" style="padding:0 5px 0 5px; position:relative;">
+<form name="movie" action="javascript:void(0)" onSubmit="doSubmit(this)" method="get">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="56%"><div class="zvw-ContentHeader">Movies</div></td>
+<td width="4%">&nbsp;</td>
+<td width="40%"><div class="zvw-ContentHeader">When</div></td>
+</tr>
+<tr>
+<td><input type="text" name="what" size="20" id="zvw-Contentinput" value="" onclick="changeCol(this);"></td>
+<td>&nbsp;</td>
+<td><input type="text" name="when" size="12" id="zvw-Contentinput" value="" onclick="changeCol(this);" ></td>
+</tr>
+<tr>
+<td colspan="3" height="5"></td>
+</tr>
+<tr>
+<td><div class="zvw-ContentHeader">Where</div></td>
+<td>&nbsp;</td>
+<td><div class="zvw-ContentHeader">Within</div></td>
+</tr>
+<tr>
+<td><input type="text" size="20" name="where" value="Dallas, TX" id="zvw-Contentinputon" onclick="changeCol(this);"></td>
+<td>&nbsp;</td>
+<td valign="middle"><input type="text" name="rad" value="50" size="2" id="zvw-Contentinputon" onclick="changeCol(this);"> Miles <input type="image" src="/skins/dmn/gfx/zvent-search-btn.jpg" align="top" /></td>
+</tr>
+</table>
+</form>
+</div>
+<div id="venuesform" style="padding:0 5px 0 5px; position:relative;">
+<form name="venue" action="javascript:void(0)" onSubmit="doSubmit(this)" method="get">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="56%"><div class="zvw-ContentHeader">What</div></td>
+<td width="4%">&nbsp;</td>
+<td width="40%"><div class="zvw-ContentHeader"></div></td>
+</tr>
+<tr>
+<td><input type="text" name="what" size="20" id="zvw-Contentinput" value="" onclick="changeCol(this);" ></td>
+<td>&nbsp;</td>
+<td>&nbsp;<input type="hidden" name="when" value="null"><input type="hidden" name="pricerange" value="null"></td>
+</tr>
+<tr>
+<td colspan="3" height="5"></td>
+</tr>
+<tr>
+<td><div class="zvw-ContentHeader">Where</div></td>
+<td>&nbsp;</td>
+<td><div class="zvw-ContentHeader">Within</div></td>
+</tr>
+<tr>
+<td><input type="text" size="20" name="where" value="Dallas, TX" id="zvw-Contentinputon" onclick="changeCol(this);"></td>
+<td>&nbsp;</td>
+<td valign="middle"><input type="text" name="rad" value="50" size="2" id="zvw-Contentinputon" onclick="changeCol(this);"> Miles <input type="image" src="/skins/dmn/gfx/zvent-search-btn.jpg" align="top" /></td>
+</tr>
+</table>
+</form>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="4" width="100%" align="center">
+<div style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666666; padding:5px 0 5px 0;">From GuideLive.com</div>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+if (typeof communityName != "undefined")
+{
+try {
+document.event.where.value = getCityZipValue();
+document.restaurant.where.value = getCityZipValue();
+document.movie.where.value = getCityZipValue();
+document.venue.where.value = getCityZipValue();
+}
+catch(e){}
+}
+</script>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+hiLiteLiveBtn('events');
+</script>
+<div class="widget code html" >
+<div class="DMNContentModule">
+<div class="DMNContentModuleHdr" style="float:left; padding-bottom:20px !important;">
+<span class="DMNContentModuleHdrFcb"><img src="http://www.dallasnews.com/skins/dmn/gfx/facebook.png"/></span> FIND US
+<div class="DMNContentModuleLink">
+<a href="http://www.dallasnews.com/dmn-facebook/"><strong>on Facebook</strong></a>
+</div>
+</div>
+<div class="DMNContentModuleHdr" style="float:left; padding-left: 60px; padding-bottom:20px !important;">
+<span class="DMNContentModuleHdrTwt"><img src="http://www.dallasnews.com/skins/dmn/gfx/twitter.png"/></span> FOLLOW US
+<div class="DMNContentModuleLink">
+<a href="http://www.dallasnews.com/twitter/"><strong>on Twitter</strong></a>
+</div>
+</div>
+</div>
+</div>
+<div class="widget code jsp mobileModule" >
+<div class="DMNRRModule">
+<div class="DMNContentModule">
+<div class="DMNContentModuleHdr">
+<span class="DMNContentModuleHdrMbl"><img src="/skins/dmn//gfx/mobile.png"/></span> MOBILE
+</div>
+<div class="DMNContentModuleLink">
+<a href="http://res.dallasnews.com/mobile-alerts">Get dallasnews.com on your mobile device</a>
+</div>
+<div class="DMNContentModuleLink">
+<a href="http://res.dallasnews.com/mobile-alerts">Sign up for alerts or coupons sent to your phone</a>
+</div>
+</div>
+</div></div>
+<div class="widget code jsp mobileModule" >
+<div class="DMNRRModule">
+<div class="DMNContentModule">
+<div class="DMNContentModuleHdr">
+<span class="DMNContentModuleHdrMbl"><img src="/skins/dmn//gfx/newsletter.png"/></span> NEWSLETTERS
+</div>
+<div class="DMNContentModuleLink">
+<a href="http://reg.dallasnews.com/registration/loadNewsletter.do">Subscribe to a variety of newsletters</a>
+</div>
+</div>
+</div></div>
+<div class="widget groupHeadline" >
+Most Popular
+</div>
+<div class="" >
+<div id="DMNAccModule">
+<div class="DMNAccModuleContent">
+<div id="accordion">
+<h3><a class="DMNAccLink" href="#"><div class="DMNAccModuleHeader">Most Read</div></a></h3>
+<div class="DMNACCModuleContainerPop"> <div id="Most_Read_Article">
+<p><a href="http://www.dallasnews.com/news/community-news/dallas/headlines/20110424-east-dallas-neighborhood-celebrates-easter-with-a-scary-twist.ece">East Dallas neighborhood celebrates Easter with a scary twist</a>
+<p><a href="http://www.dallasnews.com/sports/dallas-mavericks/headlines/20110424-bob-sturm-why-are-you-shocked-mavs-have-too-much-emotional-baggage.ece">Bob Sturm: Why are you shocked? Mavs have too much emotional baggage</a>
+<p><a href="http://www.dallasnews.com/sports/columnists/tim-cowlishaw/20110424-cowlishaw-if-nowitzki-can_t-own-fourth-quarter-this-series-is-over.ece">Cowlishaw: If Nowitzki can&#039;t own fourth quarter, this series is over</a>
+<p><a href="http://www.dallasnews.com/photos/sports/mavericks/20110423-photos-mavericks-waste-23-point-lead-in-game-4-loss-to-blazers.ece">Photos: Mavericks waste 23-point lead in Game 4 loss to Blazers</a>
+<p><a href="http://www.dallasnews.com/sports/dallas-mavericks/headlines/20110424-dirk-nowitzki-hopefully-our-fans-are-as-fired-up-as-blazers_crowd.ece">Dirk Nowitzki: Hopefully our fans are as fired up as Blazers&#039; crowd</a>
+</div>
+</div>
+<h3><a class="DMNAccLink" href="#"><div class="DMNAccModuleHeader">Most Commented</div></a></h3>
+<div class="DMNACCModuleContainerPop"> <div id="Most_Commented_Article"></div>
+</div>
+<h3><a class="DMNAccLink" href="#"><div class="DMNAccModuleHeader">Most Recommended</div></a></h3>
+<div class="DMNACCModuleContainerPop"> <div id="Most_Recommended_Article"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+$(function(){$("#accordion").accordion({ header: "h3"});});
+$("#accordion h3 .DMNAccModuleHeader").bind("click",function(e){DMNToggleAccordionHeader("accordion",this);});
+$($("#accordion h3 .DMNAccModuleHeader")[0]).addClass("on");	if (window.isIE)
+{
+$(window).load(function(){belo.cgm.util.discoverContent(PluckSDK.DiscoveryActivity.Commented,1,5,"Sports",'Most_Commented_Article')});
+$(window).load(function(){belo.cgm.util.discoverContent(PluckSDK.DiscoveryActivity.Recommended,1,5,"Sports",'Most_Recommended_Article')});
+}
+else
+{
+$(document).ready(function(){belo.cgm.util.discoverContent(PluckSDK.DiscoveryActivity.Commented,1,5,"Sports",'Most_Commented_Article')});
+$(document).ready(function(){belo.cgm.util.discoverContent(PluckSDK.DiscoveryActivity.Recommended,1,5,"Sports",'Most_Recommended_Article')});
+}
+</script>
+<script src="http://www.cars.com/includes/js/makemodels-used.js" type="text/javascript" language="javascript"></script>
+<script src="http://www.cars.com/includes/js/new_mm.js" type="text/javascript" language="javascript"></script>
+<script src="/resources/js/findit/carsdotcomSearch.js" type="text/javascript" language="javascript"></script>
+<script src="/resources/js/findit/clsmodule.js" type="text/javascript" language="javascript"></script>
+<div class="DMNRRModule">
+<div class="DMNContentModule">
+<div class="DMNContentModuleHdr">FIND IT</div>
+<div id="DMNAccModule">
+<div class="DMNAccModuleContent">
+<div id="accordion2">
+<h3><a class="DMNAccLink" href="#"><div class="DMNAccModuleHeader">Shop</div></a></h3>
+<div class="DMNACCModuleContainerPop"> <!-- start shop -->
+<form method="get" action="http://shopping.dallasnews.com/Shared/MYSearch.aspx" style="padding:20px 0 0 20px;margin:0;" id="mkKeywordForm" target="_top">
+<input type="hidden" name="advid" value="0">
+<input type="hidden" name="loc" value="0">
+<table border="0" cellpadding="0" cellspacing="0"><tr><td valign="middle" style="line-height:12px;height:12px;font-size:11px;font-family:Verdana, Arial, Helvetica, sans-serif;width:50px;">Keyword:&nbsp;</td><td valign="middle"><input name="s" type="text" style="height: 11px; font-size: 10px;width:135px;">&nbsp;</td><td valign="middle" style="padding-left:10px;"><input type="image" src="/skins/dmn/gfx/go-button.jpg"></td></tr></table>
+</form>
+<div style="height:30px;"><img src="/skins/dmn/gfx/pixel.png" height="30"></div>
+<div class="ShadvancedSearch" style="padding:0 0 0 7px;margin:0;width:290px;line-height:11px;">
+<a href="http://shopping.dallasnews.com/ROP/Categories.aspx?clswdg"><strong>Newspaper Ads</strong></a>&nbsp|
+<a href="http://shopping.dallasnews.com/SS/Tiles.aspx?clswdg"><strong>Special Sections</strong></a>&nbsp;|
+<a href="http://shopping.dallasnews.com/CLASS/Pclass.aspx?clswdg"><strong>Classifieds</strong></a>
+</div>	<div style="height:10px;"><img src="/skins/dmn/gfx/pixel.png" height="10"></div>
+<div class="ShadvancedSearch" style="padding:0 0 0 25px;margin:0;width:240px;line-height:13px;" >
+<a href="/placeads"><strong>Place an Ad</strong></a>&nbsp|
+<a href="http://www.dallasnews.com/sharedcontent/myspecialsdirect/?clswdg"><strong>Sign Up for Special Offers</strong></a>
+</div>	<div style="height:10px;"><img src="/skins/dmn/gfx/pixel.png" height="10"></div><!-- end shop -->
+</div>
+<h3><a class="DMNAccLink" href="#"><div class="DMNAccModuleHeader">Autos</div></a></h3>
+<div class="DMNACCModuleContainerPop"> <!-- start autos -->
+<table cellpadding="0" cellspacing="0" border="0" style="margin:0; padding:0;">
+<tr>
+<td valign="top">
+<form name="usedForm" id="usedForm" onsubmit="return false;" target="_blank" style="padding:0 0 0 7px; margin:0;">
+<input name="tracktype" type="hidden" value="usedcc" />
+<input name="srv" type="hidden" value="adlocator" />	<input name="aff" type="hidden" value="dallas" />	<input name="act" type="hidden" value="search" />	<input name="searchType" type="hidden" value="21" />
+<input name="szc" type="hidden" value="" />
+<input name="flt" type="hidden" value="zr,n_ms,used">
+<input name="fs" type="hidden" value="" />
+<input name="so" type="hidden" value="desc" />
+<input name="sb" type="hidden" value="vp" />
+<input type="hidden" name="trf" value="homepageused" />
+<input type="hidden" name="maxp" value="">
+<input type="hidden" name="rd" value="30">
+<!-- used to force height so buttons line up -->
+<div class="title"><strong>Used Cars</strong></div>
+<div class="text_bold">Make:</div>
+<select class="text" name="mknm" id="usedMakeSelect" onchange="selectUsedMake(this.value)" style="font-size:10px;width:125px;"></select>
+<div class="text_bold">Model:</div>
+<select class="text" name="mdnm" id="usedModelSelect" style="font-size:10px; width:125px;"></select>
+<div class="text_bold">Your ZIP:</div>
+<div style="float:left;width:97px;">
+<input class="text" name="zc" type="text" id="usedzipcode" size="9" maxlength="5" style="font-size:10px;width:87px;" /> </div>
+<div style="float:left;">
+<input type="image" src="/skins/dmn/gfx/go-button.jpg" align="top" onclick="submitUsedForm();">
+</div>
+<div style="clear:both;font-size:0;line-height:0;"></div>
+</form>	</td>
+<td width="23">&nbsp;</td>
+<td valign="top">
+<form name="newForm" id="newForm" onsubmit="return false;" target="_blank" style="margin:0; padding:0;"> <input type="hidden" name="tracktype" value="newcc" />
+<input type="hidden" name="szc" value="" />
+<input type="hidden" name="year" value="2006" />
+<input type="hidden" name="srv" value="dealer" />
+<input type="hidden" name="act" value="ncbssrch" />
+<input type="hidden" name="sb" value="dst" />
+<input type="hidden" name="sk" value="dst" />
+<input type="hidden" name="so" value="asc" />
+<input type="hidden" name="fs" value="" />
+<input type="hidden" name="config" value="t" />
+<input type="hidden" name="rt" value="quick_ncbs.tmpl" />
+<input type="hidden" name="referrer" value="configurator" />
+<input type="hidden" name="trf" value="homepagenew" />
+<input type="hidden" name="mdnm" value="" />
+<input type="hidden" name="mdid" value="" />
+<input type="hidden" name="aff" value="dallas" />
+<input type="hidden" name="ddrd" value="30" />
+<input type="hidden" name="mknm" value="" />
+<input type="hidden" name="searchType" value="49" />
+<input type="hidden" name="rd" value="30">
+<div class="title"><strong>New Cars</strong></div>
+<div class="text_bold">Make:</div>
+<select class="text" name="mkid" id="newMakeSelect" onchange="selectNewMake(this.value)" style="font-size:10px;width:125px;"></select>	<div class="text_bold">Model:</div>
+<select class="text" id="newModelSelect" style="font-size:10px; width:125px;"></select>
+<div class="text_bold">
+<div class="label">Your ZIP:</div>
+<div style="float:left;width:97px;">
+<input class="text" type="text" maxlength="5" size="9" name="zc" value="" id="newzipcode" style="font-size:10px;width:87px;" /> </div>
+<div style="float:left;">	<input onclick="submitNewForm();" type="image" src="/skins/dmn/gfx/go-button.jpg" align="top">
+</div>
+<div style="clear:both;font-size:0;line-height:0;"></div>
+</div>
+</form>
+</td>
+</tr>
+</table> <script type="text/javascript" language="javascript">
+initCarForm();
+</script><!-- end autos -->
+</div>
+<h3><a class="DMNAccLink" href="#"><div class="DMNAccModuleHeader">Homes</div></a></h3>
+<div class="DMNACCModuleContainerPop"> <!-- start homes -->
+<table cellpadding="0" cellspacing="0" border="0" style="margin:0; padding:0;">
+<tr>
+<td valign="top">
+<style type="text/css">
+form.homecenter_lookup_findit
+{
+padding: 0; margin: 0;
+}
+form.homecenter_lookup_findit div
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+font-weight:bold;
+color:#000000;
+line-height:11px;
+}
+form.homecenter_lookup_findit .field
+{
+font-size:10px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-weight:normal;
+color:#000;
+}
+</style>
+<!--<form name="sbform1" method="get" action="" onSubmit="return false;" class="homecenter_lookup_findit" style="padding:0 0 0 7px;">-->
+<form name="sbform1" method="get" action="" onSubmit="return false;" class="homecenter_lookup_findit" style="padding:0 0 0 7px;">
+<div>
+TYPE IN CITY, NEIGHBORHOOD, ZIP, or MLS#
+</div>
+<div style="padding-top:1px;padding-bottom:2px;">
+<div>
+<a href="javascript:openCityList('/template/custom/sbCitiesList.jsp','citiesWin','298','370');"><img src="/skins/dmn/gfx/blue-arrow-arrow.jpg" />&nbsp;Or choose from a list of cities&nbsp;&nbsp;&nbsp;</a>
+</div>
+</div>
+<div style="padding-top:1px;font-size:11px;">
+<input style="width:130px;" class="field" type="text" name="geo_area_text" onblur='setCookie("sblookup",this.value,365);'/>
+<input type="hidden" name="state" value="tx">
+<select style="width:130px;" class="field" name="property_type">
+<option class="field" value="">Property Type</option>
+<option class="field" value="Detached">Single Family Home</option>
+<option class="field" value="Townhouse">Townhouse/Townhome</option>
+<option class="field" value="Condo">Condominium Unit</option>
+</select>
+</div>
+<div style="padding-top:1px;clear:both;">
+PRICE RANGE
+</div>
+<div style="padding-top:1px;clear:both;">
+<div style="float:left;width:119px;">
+<select style="width:114px;" class="field" name="min_price">
+<option class="field" value="0">No minimum</option>
+<option class="field" value="100000">$100,000</option>
+<option class="field" value="150000">$150,000</option>
+<option class="field" value="200000">$200,000</option>
+<option class="field" value="250000">$250,000</option>
+<option class="field" value="300000">$300,000</option>
+<option class="field" value="350000">$350,000</option>
+<option class="field" value="400000">$400,000</option>
+<option class="field" value="450000">$450,000</option>
+<option class="field" value="500000">$500,000</option>
+<option class="field" value="550000">$550,000</option>
+<option class="field" value="600000">$600,000</option>
+<option class="field" value="650000">$650,000</option>
+<option class="field" value="700000">$700,000</option>
+<option class="field" value="750000">$750,000</option>
+<option class="field" value="800000">$800,000</option>
+<option class="field" value="850000">$850,000</option>
+<option class="field" value="900000">$900,000</option>
+<option class="field" value="950000">$950,000</option>
+<option class="field" value="1000000">$1,000,000</option>
+<option class="field" value="1100000">$1,100,000</option>
+<option class="field" value="1200000">$1,200,000</option>
+<option class="field" value="1300000">$1,300,000</option>
+<option class="field" value="1400000">$1,400,000</option>
+<option class="field" value="1500000">$1,500,000</option>
+<option class="field" value="1600000">$1,600,000</option>
+<option class="field" value="1700000">$1,700,000</option>
+<option class="field" value="1800000">$1,800,000</option>
+<option class="field" value="1900000">$1,900,000</option>
+<option class="field" value="2000000">$2,000,000</option>
+<option class="field" value="3000000">$3,000,000</option>
+<option class="field" value="4000000">$4,000,000</option>
+<option class="field" value="5000000">$5,000,000</option>
+</select>
+</div>
+<div style="float:left;width:25px;font-weight:bold;">TO</div>
+<div style="float:left;width:128px;">
+<select style="width:128px;" class="field" name="max_price">
+<option class="field" value="5000000">No maximum</option>
+<option class="field" value="100000">$100,000</option>
+<option class="field" value="150000">$150,000</option>
+<option class="field" value="200000">$200,000</option>
+<option class="field" value="250000">$250,000</option>
+<option class="field" value="300000">$300,000</option>
+<option class="field" value="350000">$350,000</option>
+<option class="field" value="400000">$400,000</option>
+<option class="field" value="450000">$450,000</option>
+<option class="field" value="500000">$500,000</option>
+<option class="field" value="550000">$550,000</option>
+<option class="field" value="600000">$600,000</option>
+<option class="field" value="650000">$650,000</option>
+<option class="field" value="700000">$700,000</option>
+<option class="field" value="750000">$750,000</option>
+<option class="field" value="800000">$800,000</option>
+<option class="field" value="850000">$850,000</option>
+<option class="field" value="900000">$900,000</option>
+<option class="field" value="950000">$950,000</option>
+<option class="field" value="1000000">$1,000,000</option>
+<option class="field" value="1100000">$1,100,000</option>
+<option class="field" value="1200000">$1,200,000</option>
+<option class="field" value="1300000">$1,300,000</option>
+<option class="field" value="1400000">$1,400,000</option>
+<option class="field" value="1500000">$1,500,000</option>
+<option class="field" value="1600000">$1,600,000</option>
+<option class="field" value="1700000">$1,700,000</option>
+<option class="field" value="1800000">$1,800,000</option>
+<option class="field" value="1900000">$1,900,000</option>
+<option class="field" value="2000000">$2,000,000</option>
+<option class="field" value="3000000">$3,000,000</option>
+<option class="field" value="4000000">$4,000,000</option>
+<option class="field" value="5000000">$5,000,000</option>
+</select>
+</div>
+</div>
+<div style="padding-top:1px;clear:both;">
+<div>
+<div style="float:left;width:120px;">BEDRMS</div>
+<div style="float:left;">BATHRMS</div>
+</div>
+</div>
+<div style="padding-top:1px;clear:both;">
+<div style="float:left;width:120px;">
+<select style="width:110px;" class="field" name="min_bed">
+<option class="field" value="">Any</option>
+<option class="field" value="1-100br">1+</option>
+<option class="field" value="2-100br">2+</option>
+<option class="field" value="3-100br">3+</option>
+<option class="field" value="4-100br">4+</option>
+<option class="field" value="5-100br">5+</option>
+</select>
+</div>
+<div style="float:left;width:120px">
+<select style="width:110px;" class="field" name="min_bath">
+<option class="field" value="">Any</option>
+<option class="field" value="1-50ba">1+</option>
+<option class="field" value="2-50ba">2+</option>
+<option class="field" value="3-50ba">3+</option>
+<option class="field" value="4-50ba">4+</option>
+<option class="field" value="5-50ba">5+</option>
+</select>
+</div>
+<div style="float:left;margin-top:-2px;">
+<input type="image" src="/skins/dmn/gfx/go-button.jpg" onclick="doSearchHomesFindIt(sbform1);" />
+</div>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+try
+{
+if (getCookie("sblookup"))
+{
+document.sbform1.geo_area_text.value = getCookie("sblookup");
+}
+}
+catch(e)
+{
+}
+</script><!-- end homes -->
+</div>
+<h3><a class="DMNAccLink" href="#"><div class="DMNAccModuleHeader">Jobs</div></a></h3>
+<div class="DMNACCModuleContainerPop"> <!-- start jobs -->
+<form action="http://hotjobs.yahoo.com/job-search" method="get" name="hotjobsJobSearch" target="_blank" style="padding:5px 0 0 7px;margin:0;">
+<input type="hidden" name="partner" value="tdmn">
+<input type='hidden' name='metro_search' value='1' />
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="width:110px;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:12px;line-height:12px;">
+Keywords:
+</td>
+<td>
+<input type="text" id="kw" name="kw" style="font-size:11px;height:12px;width:160px;"/>
+</td>	</tr>
+<tr>
+<td style="padding-top:5px;width:110px;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:12px;line-height:12px;">
+Location:
+</td>
+<td style="padding-top:5px;">
+<input type="text" id="locations" name="locations" value="Dallas, TX" style="font-size:11px;height:12px;width:160px;"/>
+</td>	</tr>
+<tr>
+<td style="padding-top:5px;width:110px;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:12px;line-height:12px;">
+Job Categories:
+</td>
+<td style="padding-top:5px;">
+<select name="industry" id="industry"
+style="font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10px;width:165px;line-height:12px;padding:0;margin:0">
+<option value="">Select a Job Category</option>
+<option value="FIN">Accounting/Finance</option>
+<option value="ADV">Advertising/Public Relations</option>
+<option value="ART">Arts/Entertainment/Publishing</option>
+<option value="BAM">Banking/Mortgage</option>
+<option value="ADM">Clerical/Administrative</option>
+<option value="CON">Construction/Facilities</option>
+<option value="CUS">Customer Service</option>
+<option value="EDU">Education/Training</option>
+<option value="ENG">Engineering/Architecture</option>
+<option value="GOV">Government/Military</option>
+<option value="HEA">Healthcare</option>
+<option value="HOS">Hospitality/Travel</option>
+<option value="HRS">Human Resources</option>
+<option value="INS">Insurance</option>
+<option value="NEW">Internet/New Media</option>
+<option value="LAW">Law Enforcement/Security</option>
+<option value="LEG">Legal</option>
+<option value="MCO">Management Consulting</option>
+<option value="MAN">Manufacturing/Operations</option>
+<option value="MAR">Marketing</option>
+<option value="NON">Non-Profit/Volunteer</option>
+<option value="SCI">Pharmaceutical/Biotech</option>
+<option value="RLE">Real Estate</option>
+<option value="RFS">Restaurant/Food Service</option>
+<option value="PUR">Retail</option>
+<option value="SAL">Sales</option>
+<option value="MIS">Technology</option>
+<option value="TEL">Telecommunications</option>
+<option value="TRA">Transportation/Logistics</option>
+<option value="OTH">Other</option>
+</select>
+</td>	</tr>
+<tr>
+<td colspan="2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="bottom" class="HJadvancedSearch" style="padding-top:5px;width:200px;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:11px;">
+<a target="_blank" href="http://hotjobs.yahoo.com/jobs/?advancedsearch=1" ylc="http://hotjobs.yahoo.com/jobs/?advancedsearch=1&partner=tdmn"><img src="/skins/dmn/gfx/blue-arrow-arrow.jpg" />&nbsp;<strong>Advanced Search</strong></a>
+</td>
+<td align="right" style="padding-top:5px;">
+<input type="image" src="/skins/dmn/gfx/go-button.jpg" align="top">
+</td>	</tr>
+</table>
+</td>
+</tr>
+</table>
+</form><!-- end jobs -->
+</div>
+<h3><a class="DMNAccLink" href="#"><div class="DMNAccModuleHeader">Classifieds/Place an Ad</div></a></h3>
+<div class="DMNACCModuleContainerPop"> <!-- start classifieds -->
+<div class="HJadvancedSearch" style="padding-top:5px;padding-left:7px;">
+<a href="/placeads"> <img src="/skins/dmn/gfx/blue-arrow-arrow.jpg" />&nbsp;<strong>Place an Ad</strong></a><br>
+</div>
+<div class="HJadvancedSearch" style="padding-top:5px;padding-left:7px;">
+<a href="http://shopping.dallasnews.com/ROP/Categories.aspx"> <img src="/skins/dmn/gfx/blue-arrow-arrow.jpg" />&nbsp;<strong>Shop/Buy</strong></a><br>
+</div>
+<div class="HJadvancedSearch" style="padding-top:5px;padding-left:7px;">
+<a href="http://shopping.dallasnews.com/ROP/Categories.aspx"> <img src="/skins/dmn/gfx/blue-arrow-arrow.jpg" />&nbsp;<strong>Services/Notices</strong></a><br>
+</div>
+<div class="HJadvancedSearch" style="padding-top:5px;padding-left:7px;">
+<img src="/skins/dmn/gfx/blue-arrow-arrow.jpg" />&nbsp;Celebrations <a href="http://www.legacy.com/dallasmorningnews/Celebrations.asp"><strong>Browse</strong></a> | <a href="/placeads"><strong>Place</strong></a><br>
+</div>
+<div class="HJadvancedSearch" style="padding-top:5px;padding-left:7px;">
+<a href="/sharedcontent/myspecialsdirect/joinmsd.jsp"> <img src="/skins/dmn/gfx/blue-arrow-arrow.jpg" />&nbsp;<strong>Sign Up for Special Offers</strong></a><br>
+</div><!-- end classifieds -->
+</div>
+<h3><a class="DMNAccLink" href="#"><div class="DMNAccModuleHeader">Find a Business</div></a></h3>
+<div class="DMNACCModuleContainerPop ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active"> <!-- start find business -->
+<form name="LocalSearchForm" method="get" action="http://directory.dallasnews.com/search.pg" style="margin:0; padding: 0;">
+<div style="margin: 0; padding: 2px 0 3px 5px;">
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td><p style="background:none; padding: 0 !important; margin: 0 !important; font-size:12px !important;">Search:</p></td>
+<td style="padding: 0 0 0 4px;">
+<input name="q" type="text" value="" class="finditbox" style="width:175px; height: 17px; border:1px solid #BBBBBB; padding:0; margin:0; font-size:12px !important;" />
+<input name="z" type="hidden" value="Dallas, TX" />
+</td>
+<td style="padding: 0 0 0 4px;">
+<input type="image" src="/skins/dmn/gfx/go-button.jpg" align="top" />
+</td>
+</tr>
+</table>
+</div>
+<div class="storylist" style="padding-left:5px; font-size:10px;">
+<p><a href="http://directory.dallasnews.com/Dallas/Appliance Repair.zq.html">Dallas Appliance Repair</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Auto Repair.zq.html">Dallas Auto Repair</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Dentists.zq.html">Dallas Dentists</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Landscape Contractors.zq.html">Dallas Landscape Contractors</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Apartments.zq.html">Dallas Apartments</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Attorneys.zq.html">Dallas Attorneys</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Auto Dealers.zq.html">Dallas Auto Dealers</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Auto Parts.zq.html">Dallas Auto Parts</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Auto Repair.zq.html">Dallas Auto Repair</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Beauty Salons.zq.html">Dallas Beauty Salons</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Car Rental.zq.html">Dallas Car Rental</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Dentists.zq.html">Dallas Dentists</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Doctors.zq.html">Dallas Doctors</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Flowers.zq.html">Dallas Flowers</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Hotels.zq.html">Dallas Hotels</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Insurance.zq.html">Dallas Insurance</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Loans.zq.html">Dallas Loans</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Mortgages.zq.html">Dallas Mortgages</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Movers.zq.html">Dallas Movers</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Pizza.zq.html">Dallas Pizza</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Realtors.zq.html">Dallas Realtors</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Restaurants.zq.html">Dallas Restaurants</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Storage.zq.html">Dallas Storage</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Tax Preparation.zq.html">Dallas Tax Preparation</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas/Travel.zq.html">Dallas Travel</a></p>
+<p><a href="http://directory.dallasnews.com/Dallas.z.html">More Dallas Businesses</a></p>
+</div>
+</form>
+<!-- end find business -->
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+var DMNPopularActive = 5;
+$(function(){
+$("#accordion2").accordion({ header: "h3", active: DMNPopularActive });
+//$("#accordion2").accordion({ active: DMNPopularActive });
+});
+$("#accordion2 h3 .DMNAccModuleHeader").bind("click",function(e){DMNToggleAccordionHeader("accordion2",this);});
+$($("#accordion2 h3 .DMNAccModuleHeader")[DMNPopularActive]).addClass("on");	</script>
+</div>
+</div>	<div class="positionMedRectangle3">
+<script type="text/javascript">yld_mgr.place_ad_here("MedRectangle3");</script>
+</div>
+</div>
+</div>
+</div>
+<div id="footer"> <!--pageFooter-->
+<div class="positionFloater">
+<script type="text/javascript">yld_mgr.place_ad_here("Floater");</script>
+</div>
+<div class="positionPopunder">
+<script type="text/javascript">yld_mgr.place_ad_here("Popunder");</script>
+</div>
+<div class="menuGroup ">
+<div class="widget menu vertical" >
+<ul>
+<li>
+<a href="http://www.dallasnews.com/advertising/" >
+Advertising
+</a>
+</li>
+<li>
+<a href="http://shopping.dallasnews.com/" >
+View Ads
+</a>
+</li>
+<li>
+<a href="http://placeads.dallasnews.com" >
+Place a Classified Ad
+</a>
+</li>
+<li>
+<a href="http://adsource.dallasnews.com/portal/page?_pageid=34,899277,34_953915&_dad=portal&_schema=PORTAL" >
+Media Kit
+</a>
+</li>
+</ul>
+</div>
+<div class="widget menu vertical" >
+<ul>
+<li>
+<a href="http://www.dallasnews.com/archive/" >
+Newspaper Story Archive
+</a>
+</li>
+<li>
+<a href="http://www.dallasnews.com/archive/" >
+DMN Story Archive
+</a>
+</li>
+<li>
+<a href="http://www.dallasnews.com/archive/obituary/" >
+Obituary Archive
+</a>
+</li>
+<li>
+<a href="http://www.dallasnews.com/historicalarchives" >
+1885-1977 Archive
+</a>
+</li>
+</ul>
+</div>
+<div class="widget menu vertical" >
+<ul>
+<li>
+<a href="http://www.dallasnews.com/" class="active" >
+Dallas Morning News<br/>Resources
+</a>
+</li>
+<li>
+<a href="http://www.dallasnews.com/investigations/databases/" >
+Databases
+</a>
+</li>
+<li>
+<a href="http://www.dallasnews.com/news-tips/" >
+Send a news tip
+</a>
+</li>
+<li>
+<a href="http://company.monster.com/profiles/dallas-morning-news.aspx" >
+Careers
+</a>
+</li>
+</ul>
+</div>
+<div class="widget menu vertical" >
+<ul>
+<li>
+<a href="https://www.dmnsubscriber.com/" >
+Subscriber Services
+</a>
+</li>
+<li>
+<a href="https://www.dmnsubscriber.com/ns/nsSplash.asp?pid=1" >
+Home Delivery
+</a>
+</li>
+<li>
+<a href="https://www.dmnsubscriber.com/logon.asp?PageName=makepayment%2Easp%3F&Hdr=View%2FPay+Bill" >
+Pay My Bill
+</a>
+</li>
+<li>
+<a href="https://www.dmnsubscriber.com/logon.asp?PageName=VacationStop%2Easp%3F&Hdr=Schedule+A+Vacation+Hold" >
+Vacation Stop
+</a>
+</li>
+</ul>
+</div>
+<div class="widget menu vertical" >
+<ul>
+<li>
+<a href="http://placeads.dallasnews.com/" >
+Celebrations
+</a>
+</li>
+<li>
+<a href="http://placeads.dallasnews.com/" >
+Submit a Celebration Ad
+</a>
+</li>
+<li>
+<a href="http://www.legacy.com/celebration/dallasmorningnews/" >
+View Celebration Ads
+</a>
+</li>
+</ul>
+</div>
+<div class="widget menu vertical" >
+<ul>
+<li>
+<a href="http://www.dallasnews.com/" class="active" >
+Related Sites
+</a>
+</li>
+<li>
+<a href="http://www.aldiatx.com/?fl" >
+AlDiaTX.com
+</a>
+</li>
+<li>
+<a href="http://www.fdluxe.com/?fl" >
+FDLuxe.com
+</a>
+</li>
+<li>
+<a href="http://listings.guidelive.com/?fl" >
+GuideLive.com
+</a>
+</li>
+<li>
+<a href="http://www.neighborsgo.com/?fl" >
+neighborsgo.com
+</a>
+</li>
+<li>
+<a href="http://www.quickdfw.com/?fl" >
+QuickDFW.com
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="widget menu horizontal" >
+<ul >
+<li>
+<a href="http://www.dallasnews.com/" class="active first">
+<span>Home</span>
+</a>
+</li>
+<li>
+<a href="http://res.dallasnews.com/contactus/" class=" ">
+<span>Contact Us</span>
+</a>
+</li>
+<li>
+<a href="http://www.dallasnews.com/help-center/" class=" ">
+<span>Help Center</span>
+</a>
+</li>
+<li>
+<a href="http://www.dallasnews.com/advertising/" class=" ">
+<span>Advertising</span>
+</a>
+</li>
+<li>
+<a href="http://www.dallasnews.com/site-map/" class=" ">
+<span>Site Map</span>
+</a>
+</li>
+<li>
+<a href="http://jobsearch.local-jobs.monster.com/Search.aspx?wt.mc_n=hjnpsearch&ch=dallasmorning&q=&where=Dallas&re=130&cy=us&brd=1" class=" ">
+<span>Find Dallas Jobs</span>
+</a>
+</li>
+<li>
+<a href="http://www.dallasnews.com/news-feeds/" class=" ">
+<span>News Feeds</span>
+</a>
+</li>
+<li>
+<a href="https://www.dmnsubscriber.com/" class=" ">
+<span>Subscriber Services</span>
+</a>
+</li>
+<li>
+<a href="javascript:subscribeForward();" class=" ">
+<span>Get the Newspaper</span>
+</a>
+</li>
+<li>
+<a href="http://reg.dallasnews.com/registration/LoadSpecialOffers.do" class=" ">
+<span>Special Offers</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="widget code jsp footerCopyright" >
+<span>&copy;2011, The Dallas Morning News, Inc. All Rights Reserved&nbsp;|&nbsp;
+<a href="/terms/">Terms of Service</a>&nbsp;|&nbsp;
+<a href="/privacy-policy/">Privacy Policy</a></span></div>
+</div>
+</div></div>
+<script type="text/javascript" src="/resources/js/cgmFooter.js"></script>
+<script type="text/javascript"> s_account2 = "bidallasnewscom";
+om_linkInternalFilters="javascript:,dallasnews.com";
+om_fpcdomain="dallasnews.com";
+var omPageName = "home";
+var omSiteSection = "home";
+var omSubSection1 = "";
+var omSubSection2 = "";
+var omSubSection3 = "";
+var omSectionContentType = "home page";
+var omArticleTitle = "";
+var omDirectoryPath = "";
+var omArticleId = "";
+var preiumContentType = "free";
+var saSiteSection = "home";
+var saSubSection1 = "";
+var saSubSection2 = "";
+var saSubSection3 = "";
+var articleAuthor = "";
+var $SAT = $SAT || [];
+$SAT.push(['setContent','contentType', preiumContentType]);
+$SAT.push(['setContent','mainMenu', saSiteSection]);
+$SAT.push(['setContent','subMenu', saSubSection1]);
+$SAT.push(['setContent','topic', saSubSection2]);
+$SAT.push(['setContent','subTopic', saSubSection3]);
+$SAT.push(['setContent','articleName', omArticleTitle]);
+$SAT.push(['setContent','author', articleAuthor]);
+var isLoggedIn=belo.cgm.util.isLoggedInForBelo();
+var isSubscribed = belo.cgm.util.isSubscribedToBelo();
+var userEmail = getEmailAddress();
+//Set scoutTransactionTypeInt to 1 for authenticated sessions
+//For anonymous usage, this code does not need to be present
+//(or alternately set to 4)
+if (isLoggedIn) {
+var scoutTransactionTypeInt = 1;
+}
+else {
+var scoutTransactionTypeInt = 4;
+}
+//Provide the username below for authenticated sessions
+//For anonymous usage, this code does not need to be present
+var $SAT = $SAT || [];
+$SAT.push(['setUser', userEmail]);
+//This code asynchronously loads the Scout data collector
+//This should go immediately before the close of the < body > tag
+(function() {
+var sa = document.createElement('script'); sa.type = 'text/javascript';
+sa.src = 'http' + ('https:' == document.location.protocol ? 's' : '') + '://scout.scoutanalytics.net/tgtmw/sat.ashx';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(sa);
+})();
+</script>
+<!-- SiteCatalyst code version: H.22.1.
+Copyright 1996-2010 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="/resources/js/omniture_s_code.js"></script>
+<script language="JavaScript" type="text/javascript" src="/resources/js/omniture.js"></script>
+<script language="JavaScript" type="text/javascript" src="/resources/js/omniture_pagecall.js"></script>
+<!-- Begin comScore Tag -->
+<script>
+document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b")
++ ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+</script>
+<script>
+COMSCORE.beacon({
+c1:2,
+c2:"6036246",
+c3:"",
+c4:"",
+c5:"",
+c6:"",
+c15:""
+});
+</script>
+<noscript>
+<img src="http://b.scorecardresearch.com/b?c1=2&c2=6036246&c3=&c4=&c5=&c6=&c15=&cv=1.3&cj=1"
+style="display:none" width="0" height="0" alt="" />
+</noscript>
+<!-- End comScore Tag --><script type="text/javascript">
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="http://fls.doubleclick.net/activityi;src=3040435;type=homep505;cat=homep963;ord=' + a + '?" width="1" height="1" frameborder="0"></iframe>');
+</script>
+<noscript>
+<iframe src="http://fls.doubleclick.net/activityi;src=3040435;type=homep505;cat=homep963;ord=1?" width="1" height="1" frameborder="0"></iframe>
+</noscript>
+</body>
+</html>

@@ -1,0 +1,2144 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head><title>
+	PUBLICO.PT 
+</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="googlebot" content="noarchive" /><link rel="stylesheet" href="http://static.publico.pt/files/home/css/blueprint.css" type="text/css" /><link rel="stylesheet" href="http://static.publico.pt/files/home/css/headerHome.css" type="text/css" /><link rel="stylesheet" href="http://static.publico.pt/files/home/css/style.css" type="text/css" /><link rel="stylesheet" href="http://static.publico.pt/files/home/css/style-alteracoes.css" type="text/css" /><link rel="stylesheet" href="http://static.publico.pt/files/home/css/caixaServicos.css" type="text/css" /><link rel="stylesheet" href="http://static.publico.pt/files/home/css/jquery.fancybox.css" type="text/css" /><link rel="stylesheet" href="http://static.publico.pt/files/home/css/style-numero.css" type="text/css" /><link rel="stylesheet" href="http://static.publico.pt/files/home/css/15anosOnline.css" type="text/css" />
+	<!--[if lt IE 7]><link rel="stylesheet" href="http://static.publico.pt/files/home/css/style_ie.css" type="text/css" /><![endif]-->
+    <link rel="stylesheet" href="http://static.publico.pt/files/home/css/style_print.css" type="text/css" media="print" />
+    
+    
+    
+    
+    <script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js"></script>
+    <script type="text/javascript">
+        GS_googleAddAdSenseService("ca-pub-3828975654388241");
+        GS_googleEnableAllServices();
+    </script>
+    
+    <script type='text/javascript' src='http://comunique.clix.pt/dfpsb/PublicoHomepage.js'></script>
+    <script type="text/javascript" src="../../Scripts/swfobject.js"></script>
+    
+
+
+    <script type="text/javascript">
+        function getPub() {
+            //ord = Math.random() * 10000000000000000;
+            //document.write('<script language="JavaScript" src="http://ad.pt.doubleclick.net/adj/ppt_ulthora/;dcopt=ist;sz=10x10;ord=' + ord + '?" type="text/javascript"><\/script>');
+            try { Comunique.tag("PublicoUltimaHora10x10"); } catch (e) { }
+        }
+
+        function setCounter(id, Origin, type, section, title) {
+            var ord = Math.random() * 10000000000000000;
+            if (!isNaN(id)) {
+                if (!document.getElementById("statPic")) {
+                    var pic1 = new Image(1, 1);
+                    pic1.id = "statPic";
+                } else {
+                    var pic1 = document.getElementById("statPic");
+                }
+                var params = "&id=" + id + "&Origin=" + Origin + "&type=" + type + "&section=" + section + "&title=" + title + "&url=" + escape(document.location.href) + "&ord=" + ord;
+                pic1.src = "http://www.publico.pt/includes/lib/statistics.aspx?" + params;
+            }
+        }
+
+        var doReload = true;
+        var timerRefresh = setTimeout("go()", 300000);
+
+        function go() {
+            if (doReload)
+                document.location.reload();
+        }
+    </script>
+    <script src="http://data.publico.pt/?loadCss=0&newWays=1&loadScript=jquery.jcarousel.min,jquery.scrollTo-1.4.2-min,jquery.serialScroll-1.2.2-min,MeteoHP,jquery.fancybox-1.2.1.min,jquery.inputlabel.min,Comentarios,Utils,News,Login,jQuery.color.min,Tops" type="text/javascript"></script>    
+    
+    <link rel="alternate" href="http://feeds.feedburner.com/publicoRSS" type="application/rss+xml" title="Notícias do PUBLICO.PT" />
+    <!--[if IE]>
+            <link rel="stylesheet" type="text/css" href="http://static.publico.pt/files/home/css/barra.css" />    <![endif]-->
+</head>
+<body>
+
+
+    
+
+<script type="text/javascript">
+    
+    Comunique.setSection('Home');
+    
+</script>
+
+
+    
+    <script type="text/javascript">
+        //try { if (!document.richmedia) clix_dfp_tag('publicohome', '', '990', '30'); } catch (e) { }
+        try { if (!document.richmedia) Comunique.tag("PublicoHomepage990x30"); } catch (e) { }
+    </script>
+    
+    <div style="text-align:center">
+
+        
+        
+        <div style="margin: 0 auto; width: 728px;">
+    	   <script type="text/javascript">
+    	       //try { clix_dfp_tag('publicohome', '', '728', '90'); } catch (e) { }
+    	       try { Comunique.tag("PublicoHomepage728x90"); } catch (e) { }
+           </script>
+        </div>
+    	<div style="text-align:center;height:1px;" id="pub990x1">
+	        <div style="width:990px;height:1px;position:relative;margin:0 auto;text-align:left;">
+		        <div id="pub_150x600_guide">
+		            <script type="text/javascript">
+		                //try{if(!document.richmedia)clix_dfp_tag('publicohome', '', '150', '600')}catch(e){}
+		                try { if (!document.richmedia) Comunique.tag("PublicoHomepage150x600"); } catch (e) { }
+		            </script>
+		        </div>
+	        </div>
+	    </div>
+    </div>
+<script type="text/javascript">
+    var hideMenu;
+    $(document).ready(function() {
+        $("#subMenu-float").hide();
+
+        $("#More").hover(function() {
+            $("#subMenu-float").show('fast');
+            $("#More").parent().removeClass().addClass("item on red");
+        }, function() {
+            hideMenu = setTimeout('hideContent()', 100);
+            $("#More").parent().removeClass().addClass("item red");
+        });
+
+        $("#subMenu-float").hover(function() {
+            try {
+                clearTimeout(hideMenu);
+                $("#More").parent().removeClass().addClass("item on red");
+            } catch (e) { }
+        }, function() {
+            $("#subMenu-float").hide('fast');
+            $("#More").parent().removeClass().addClass("item red");
+        });
+    });
+
+    function hideContent() {
+        $("#subMenu-float").hide('fast');
+    }
+</script>
+<div class="pptHeader">
+    <div class="pubTextual">
+        <script type="text/javascript">
+            
+			try { Comunique.tag("PublicoEconomia10x10"); } catch (e) { }
+			try { Comunique.tag("PublicoHomepage10x10"); } catch (e) { }
+			try { Comunique.tag("PublicoUltimaHora10x10"); } catch (e) { }
+			try { Comunique.tag("PublicoJornal10x10"); } catch (e) { }
+        </script>
+    </div>
+    <div class="weather">
+        <ul>
+            <li>19 de Junho de 2012</li>
+            
+            
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <div class="topBar">
+        <div class="left">
+            <ul>
+                            <li class="item"><a target="_blank" href="http://lifestyle.publico.pt/">Life&Style</a></li>
+                            <li class="spaceBar">|</li>
+                        
+                            <li class="item"><a target="_blank" href="http://fugas.publico.pt/">Fugas</a></li>
+                            <li class="spaceBar">|</li>
+                        
+                            <li class="item"><a target="_blank" href="http://ipsilon.publico.pt">Ípsilon</a></li>
+                            <li class="spaceBar">|</li>
+                        
+                            <li class="item"><a target="_blank" href="http://lazer.publico.pt/">Guia do lazer</a></li>
+                            <li class="spaceBar">|</li>
+                        
+                            <li class="item"><a target="_blank" href="http://cinecartaz.publico.pt">Cinecartaz</a></li>
+                            <li class="spaceBar">|</li>
+                        
+                            <li class="item"><a target="_blank" href="http://inimigo.publico.pt">Inimigo Público</a></li>
+                            <li class="spaceBar">|</li>
+                        
+                            <li class="item"><a target="_blank" href="http://p3.publico.pt/">P3</a></li>
+                            <li class="spaceBar">|</li>
+                        
+            </ul>
+        </div>
+
+
+<div class="right">
+    <ul class="header-follow">
+      <li class="siga-nos">Siga-nos:</li>
+      <li class="facebook"><a href="http://www.facebook.com/publico" title="O Público no Facebook">Facebook</a></li>
+      <li class="twitter"><a href="http://www.twitter.com/publico" title="O Público no Twitter">Twitter</a></li>
+      <li class="rss"><a href="http://www.publico.pt/homepage/site/rss/" title="Feeds RSS do Público">RSS</a></li>
+      <li class="mobile"><a href="http://static.publico.pt/digital/publico-mobile.php" title="O Público mobile">Mobile</a></li>
+      <li class="iphone"><a href="http://static.publico.pt/digital/publico-iphone.php" title="O Público no iPhone">iPhone</a></li>
+    </ul>
+    <div class="formHeader">
+      <input type="text" id="searchBox" value="Pesquisa" class="text">
+      <input type="button" onclick="document.location = 'http://www.publico.pt/Search/1/?q=' + document.getElementById('searchBox').value;" value=" ok " class="button">
+    </div>
+</div>
+
+<!--        <div class="right">
+            <ul>
+                <li class="formHeader">
+                    <input type="text" class="text" value="Pesquisa" id="searchBox" />
+                    <input type="button" class="button" value=" ok " onclick="document.location = 'http://www.publico.pt/Search/1/?q=' + document.getElementById('searchBox').value;" />
+                </li>
+                <li class="spaceBar">|</li>
+                <li class="item"><a target="_self" href="http://static.publico.pt/digital/publico-iphone.php"><img src="http://static.publico.pt/files/home/images/icon-apple.gif" width="14" height="10" alt="Iphone" title="Iphone" /></a></li>
+                <li class="spaceBar">|</li>
+                <li class="item"><a target="_self" href="http://static.publico.pt/digital/publico-mobile.php"><img src="http://static.publico.pt/files/home/images/icon-mobile.gif" width="14" height="10" alt="Mobile" title="Mobile" /></a></li>
+                <li class="spaceBar">|</li>
+                <li class="item"><a target="_self" href="http://www.publico.pt/homepage/site/rss/"><img src="http://static.publico.pt/files/home/images/icon-rss.gif" width="14" height="10" alt="RSS" title="RSS" /></a></li>
+                <li class="spaceBar">|</li>
+                <li class="item"><a target="_self" href="http://www.twitter.com/publico"><img src="http://static.publico.pt/files/home/images/icon-twitter.png" width="14" height="10" alt="Twitter" title="Twitter" /></a></li>
+                <li class="spaceBar">|</li>
+                <li class="item"><a target="_self" href="http://www.facebook.com/publico"><img src="http://static.publico.pt/files/home/images/icon-facebook.gif" width="14" height="10" alt="Facebook" title="Facebook" /></a></li>
+                <li class="item siga-nos">Siga-nos em:</li>
+            </ul>
+        </div>
+        -->
+        <div class="clear"></div>
+    </div>
+
+    <div class="mainBar">
+        <div class="logo"><a href="http://www.publico.pt"><img src="http://static.publico.pt/files/header/img/publico.png" border="0" alt="" /></a></div>
+        <div class="topStories">
+            <ul>
+                            <li class="img3"><a href="http://fugas.publico.pt/306020"><img src="http://imagens.publico.pt/imagens.aspx/1458269?tp=UH&amp;db=DESTAQUES" border="0" alt="" /></a></li><li class="textBox"><div class="alignBottom"><div class="title edImpressa"><a href="http://fugas.publico.pt/306020">Reportagem</a></div><div class="text">Gorongosa, lugar do silêncio</div></div></li>
+                        
+                            <li class="img3"><a href="http://p3.publico.pt/actualidade/educacao/3439/sho-yano-aos-21-anos-o-prodigio-chegou-medico"><img src="http://imagens.publico.pt/imagens.aspx/1458565?tp=UH&amp;db=DESTAQUES" border="0" alt="" /></a></li><li class="textBox"><div class="alignBottom"><div class="title edImpressa"><a href="http://p3.publico.pt/actualidade/educacao/3439/sho-yano-aos-21-anos-o-prodigio-chegou-medico">Sho Yano</a></div><div class="text">O prodígio que já é médico aos 21 anos</div></div></li>
+                        
+                            <li class="img3"><a href="http://p3.publico.pt/actualidade/politica/3371/porta-voz-de-hollande-e-o-seu-triplo-simbolismo-jovem-mulher-e-de-origem-a"><img src="http://imagens.publico.pt/imagens.aspx/1458464?tp=UH&amp;db=DESTAQUES" border="0" alt="" /></a></li><li class="textBox"><div class="alignBottom"><div class="title edImpressa"><a href="http://p3.publico.pt/actualidade/politica/3371/porta-voz-de-hollande-e-o-seu-triplo-simbolismo-jovem-mulher-e-de-origem-a">França</a></div><div class="text">A porta-voz de Hollande já é um ícone</div></div></li>
+                        
+            </ul>
+        </div>
+        <div class="pubHeader">
+            <ul>
+                <li class="disclaimer"><img src="http://static.publico.pt/files/header/img/pubMain.gif" border="0" alt="" /></li>
+                <li class="img">
+                
+		    <script type="text/javascript">
+			var ord = Math.random()*10000000000000000;
+			document.write('<script language="JavaScript" src="http://static.publico.pt/files/header/js/clix.js?ord=' + ord + '" type="text/javascript"><\/script>');
+		    </script>
+                
+                
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="subBar">
+        <div class="left">
+            <ul>
+                            <li class="item"><a target="_self" href="http://jornal.publico.pt">Jornal do Dia</a></li>
+                            <li class="spaceBar">|</li>
+                
+                            <li class="item"><a target="_self" href="http://videos.publico.pt/">Vídeos</a></li>
+                            <li class="spaceBar">|</li>
+                
+                            <li class="item"><a target="_self" href="http://multimedia.publico.pt/FotoGalerias">Multimédia</a></li>
+                            <li class="spaceBar">|</li>
+                
+                            <li class="item"><a target="_self" href="http://static.publico.pt/homepage/infografia/">Infografias</a></li>
+                            <li class="spaceBar">|</li>
+                
+                            <li class="item"><a target="_self" href="http://blogs.publico.pt/">Blogues</a></li>
+                            <li class="spaceBar">|</li>
+                </ul>
+        </div>
+        <div class="right">
+            <ul>
+                            <li class="item"><a target="_blank" href="http://tempo.publico.pt/">METEO</a></li>
+                            <li class="spaceBar">|</li>
+                
+                            <li class="item"><a target="_blank" href="http://coleccoes.publico.pt">Iniciativas</a></li>
+                            <li class="spaceBar">|</li>
+                
+                            <li class="item"><a target="_blank" href="http://static.publico.pt/Classificados">Classificados</a></li>
+                            <li class="spaceBar">|</li>
+                
+                            <li class="item"><a target="_blank" href="http://static.publico.pt/homepage/nos/contactos.aspx">Contactos</a></li>
+                            <li class="spaceBar">|</li>
+                
+                            <li class="item"><a target="_blank" href="http://static.publico.pt/assinaturas">Assinaturas</a></li>
+                            <li class="spaceBar">|</li>
+                
+                            <li class="item"><a target="_blank" href="http://loja.publico.pt/"><font color="red">Loja</font></a></li>
+                            <li class="spaceBar">|</li>
+                </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="mainMenu">
+        <ul>
+            <li class="item home on"><a href="http://www.publico.pt"><img src="http://static.publico.pt/files/header/img/home.png" width="13" height="13" border="0" alt="Home" /></a></li>
+            
+                        <li class="item "><a href="http://www.publico.pt/Mundo">Mundo</a></li>
+            
+                        <li class="item "><a href="http://www.publico.pt/Política">Política</a></li>
+            
+                        <li class="item "><a href="http://economia.publico.pt">Economia</a></li>
+            
+                        <li class="item "><a href="http://desporto.publico.pt">Desporto</a></li>
+            
+                        <li class="item "><a href="http://www.publico.pt/Sociedade">Sociedade</a></li>
+            
+                        <li class="item "><a href="http://www.publico.pt/Educação">Educação</a></li>
+            
+                        <li class="item "><a href="http://www.publico.pt/Ciências">Ciências</a></li>
+            
+                        <li class="item "><a href="http://ecosfera.publico.pt">Ecosfera</a></li>
+            
+                        <li class="item "><a href="http://www.publico.pt/Cultura">Cultura</a></li>
+            
+                        <li class="item "><a href="http://www.publico.pt/Local">Local</a></li>
+            
+                        <li class="item "><a href="http://www.publico.pt/Media">Media</a></li>
+            
+                        <li class="item "><a href="http://www.publico.pt/Tecnologia">Tecnologia</a></li>
+            
+            <li class="item red"><a id="More" href="javascript:void();">Mais</a></li>
+        </ul>
+        <div class="clear"></div>
+		<div class="subMenu-float off" id="subMenu-float">
+            <ul>
+                <li class="header">Mais canais no PUBLICO.PT</li>
+                <li>
+                    <a href="http://www.publico.pt/Mundo/iraque" title="Regresso ao Iraque">
+                        <h6>Regresso ao Iraque</h6>
+                        <span>Reportagens de Sofia Lorena e Nuno Ferreira Santos</span>
+                    </a>
+                </li><li>
+                    <a href="http://www.publico.pt/mundo/africadosul" title="Especial &#193;frica do Sul">
+                        <h6>Especial África do Sul</h6>
+                        <span>As reportagens de Alexandra Lucas Coelho e Pedro Cunha</span>
+                    </a>
+                </li><li>
+                    <a href="http://static.publico.pt/docs/Cultura/especialSaramago/" title="Especial Saramago">
+                        <h6>Especial Saramago</h6>
+                        <span>Tudo sobre a vida e obra do Nobel da Literatura</span>
+                    </a>
+                </li><li>
+                    <a href="http://ultraleve.publico.pt/" title="Edi&#231;&#227;o Ultra-leve">
+                        <h6>Edição Ultra-leve</h6>
+                        <span>Versão ultra-leve das notícias de última hora do Publico.pt</span>
+                    </a>
+                </li><li>
+                    <a href="http://jornal.publico.pt/magoo/" title="P&#250;blico para Cegos">
+                        <h6>Público para Cegos</h6>
+                        <span>Edição digital do Público para cegos</span>
+                    </a>
+                </li><li>
+                    <a href="http://projectopne.blogspot.com/" title="P&#250;blico na Escola">
+                        <h6>Público na Escola</h6>
+                        <span>Projecto de incentivo ao uso dos media na escola</span>
+                    </a>
+                </li><li>
+                    <a href="http://tempo.publico.pt/" title="Meteorologia">
+                        <h6>Meteorologia</h6>
+                        <span>Previsão do tempo para os próximos dias</span>
+                    </a>
+                </li>
+            </ul>
+		</div>
+    </div>
+    <div class="subMenu">
+        <ul id="subMenus">
+            <li class="item"><a href="http://blogues.publico.pt/publicolab/"><b>Novo blogue: Público Lab</b></a></li>
+            <li class="spaceBar">|</li>
+        
+            <li class="item"><a href="http://www.publico.pt/cincofamilias">Cinco Famílias - Um ano na crise</a></li>
+            <li class="spaceBar">|</li>
+        
+            <li class="item"><a href="http://static.publico.pt/20Anos/20Historias/Portalegre">20 histórias</a></li>
+            <li class="spaceBar">|</li>
+        
+            <li class="item"><a href="http://www.publico.pt/comunidades">Comunidades</a></li>
+            <li class="spaceBar">|</li>
+        
+            <li class="item"><a href="http://static.publico.clix.pt/consultorios/">Consultório de Justiça</a></li>
+            <li class="spaceBar">|</li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    
+    <div style="height:10px;"></div>
+    
+</div>
+
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".pptHeader").prepend("<div class='homeInformacao'><a href='http://www.publico.pt/Tecnologia/site-do-publico-disponivel-em-ipv6_1497904'><img src='http://www.publico.pt/homepage/files/informacao.jpg' alt='informacao' /></a></div>");
+            $(".logo a img").attr('src', 'http://static.publico.pt/files/header/img/publico_ipv6.gif');
+        });
+    </script>
+	<div id="content-wrap" class="wrap">
+	    <script language="JavaScript" type="text/javascript">
+	        //ord = Math.random() * 10000000000000000;
+	        //document.write('<script language="JavaScript" src="http://ad.pt.doubleclick.net/adj/publicohome/;dcopt=ist;sz=990x20;ord=' + ord + '?" type="text/javascript"><\/script>');
+	        try { Comunique.tag("PublicoHomepage990x20"); } catch (e) { }
+        </script>
+        
+        <div id="content">
+            
+            <div id="sec-content">
+                
+        <div class="headlines">
+        
+            <div class="entry featured main">
+	            <h2><a href="http://economia.publico.pt/Noticia/cavaco-promulga-codigo-do-trabalho-e-pede-estabilidade-para-criacao-de-emprego--1550924" title="Cavaco Silva promulga Código do Trabalho">Cavaco Silva promulga Código do Trabalho</a></h2>
+	            
+<div class="entry-img">
+    <div class="entry-img-wrap">
+        <ul>
+            <li>
+                <a href="http://economia.publico.pt/Noticia/cavaco-promulga-codigo-do-trabalho-e-pede-estabilidade-para-criacao-de-emprego--1550924" title="Cavaco Silva promulga Código do Trabalho"><img src="http://imagens.publico.pt/imagens.aspx/1458613?tp=UH&amp;db=DESTAQUES&amp;w=300&amp;h=0&amp;act=resize&t=1340083985,01351" alt="" title="" /></a>
+		        
+		        <div class="entry-img-author"></div>
+	        </li>
+        </ul>
+	</div>
+	
+</div>
+	            <div class="entry-body">
+                    <p class="author">Lusa, PÚBLICO</p>
+		            <p>O Presidente da República promulgou o Código do Trabalho, exortando que se “assegure” a estabilidade, para a criação de emprego e o relançamento da economia.</p>
+	            </div>
+	            <ul class="entry-comments">
+		            
+		            <li class="entry-comments-write"><a href="http://economia.publico.pt/Noticia/cavaco-promulga-codigo-do-trabalho-e-pede-estabilidade-para-criacao-de-emprego--1550924#Comentarios" title="Ler Coment�rios">9 Coment&aacute;rios</a></li>
+                    <li class="entry-comments-facebook"><a href="javascript:void(0);" onclick="Publico.Scripts.Facebook_v1.Post(1550924, 'UH');" title="Facebook">40</a></li>
+                    <li class="entry-comments-twitter"><a href="javascript:void(0);" onclick="Publico.Scripts.Twitter.Post('Cavaco Silva promulga Código do Trabalho', 'http://economia.publico.pt/Noticia/cavaco-promulga-codigo-do-trabalho-e-pede-estabilidade-para-criacao-de-emprego--1550924', 1550924, 'UH');" title="Twitter">3</a></li>
+                    <li class="mais-temas"><b>+</b><a href="http://economia.publico.pt" title=""> ECONOMIA</a></li>
+	            </ul>
+	            <ul class="entry-links">
+	                    
+		                    <li><a href="http://economia.publico.pt/Noticia/pcp-presidente-colocouse-fora-da-lei-constitucional_1550961" title="#">PCP: Presidente colocou-se “fora da lei” constitucional</a></li>
+                
+		                    <li><a href="http://economia.publico.pt/Noticia/ugt-promulgacao-desmistifica-criticas-a-revisao_1550927" title="#">UGT: promulgação “desmistifica” críticas à revisão</a></li>
+                
+		                    <li><a href="http://publico.pt/1550954" title="#">CGTP apela à fiscalização do novo código pelo TC</a></li>
+                
+		                    <li><a href="http://economia.publico.pt/Noticia/be-presidente-escolheu-o-lado-dos-mais-fortes_1550934" title="#">BE: Presidente escolheu “o lado dos mais fortes”</a></li>
+                
+		                    <li><a href="http://publico.pt/1550937" title="#">CIP: legislação não é único “obstáculo” à criação de emprego</a></li>
+                
+		                    <li><a href="http://publico.pt/1550964" title="#">CCP considera positiva a promulgação da nova legislação</a></li>
+                
+                </ul>
+            </div>
+        
+        </div>
+
+<style type="text/css">
+
+/* SHARES*/
+.share {display:-moz-inline-stack; display:inline-block; zoom:1; *display:inline;float:right;}
+.share .comments {border:none;}
+.news-item .share { font-size: 85.7%; }
+.news-item .share a { color: #666; }
+.news-item .share a:hover { color: #008290; }
+.news-item footer .share.basichorizlist {margin:20px 0px; background:url(http://static.publico.pt/files/Guialazer/img/loop-line.png) repeat-x left top; padding-top:7px; width:100%; font-size: 100% /* override */ }
+.share.basichorizlist li a {display:-moz-inline-stack; display:inline-block; zoom:1; *display:inline;width:auto;text-decoration:none;margin-left:3px; margin-right:11px;}
+.share.basichorizlist .sidebox li a {width:35px;}
+.share.basichorizlist .icon16 {width:16px; height:16px; display:block;float:left;margin-right:5px;position:relative;top:0px;}
+.share.basichorizlist .icon16.comments {background:url(http://static.publico.pt/files/Guialazer/img/sprite.png) no-repeat -210px -241px;}
+.share.basichorizlist .icon16.send {background:url(http://static.publico.pt/files/Guialazer/img/sprite.png) no-repeat -239px -131px;}
+.share.basichorizlist .icon16.share {background:url(http://static.publico.pt/files/Guialazer/img/sprite.png) no-repeat -239px -78px;}
+.share.basichorizlist .icon16.print {background:url(http://static.publico.pt/files/Guialazer/img/sprite.png) no-repeat -239px -105px;}
+.share.basichorizlist .icon16.error {background:url(http://static.publico.pt/files/Guialazer/img/sprite.png) no-repeat -239px -157px;}
+.share.basichorizlist .icon16.feedback {background:url(http://static.publico.pt/files/Guialazer/img/sprite.png) no-repeat -239px -183px;}
+.share.basichorizlist .icon16.facebook {background:url(http://static.publico.pt/files/Guialazer/img/sprite.png) no-repeat -240px -241px;}
+.share.basichorizlist .icon16.twitter {background:url(http://static.publico.pt/files/Guialazer/img/sprite.png) no-repeat -270px -241px;}
+.share.basichorizlist a:hover .icon16.comments {background:url(http://static.publico.pt/files/Guialazer/img/sprite.png) no-repeat -210px -213px;}
+.share.basichorizlist a:hover .icon16.send {background:url(http://static.publico.pt/files/Guialazer/img/sprite.png) no-repeat -210px -131px;}
+.share.basichorizlist a:hover .icon16.share {background:url(http://static.publico.pt/files/Guialazer/img/sprite.png) no-repeat -210px -78px;}
+.share.basichorizlist a:hover .icon16.print {background:url(http://static.publico.pt/files/Guialazer/img/sprite.png) no-repeat -210px -105px;}
+.share.basichorizlist a:hover .icon16.error {background:url(http://static.publico.pt/files/Guialazer/img/sprite.png) no-repeat -210px -157px;}
+.share.basichorizlist a:hover .icon16.feedback {background:url(http://static.publico.pt/files/Guialazer/img/sprite.png) no-repeat -210px -183px;}
+.share.basichorizlist a:hover .icon16.facebook {background:url(http://static.publico.pt/files/Guialazer/img/sprite.png) no-repeat -240px -213px;}
+.share.basichorizlist a:hover .icon16.twitter {background:url(http://static.publico.pt/files/Guialazer/img/sprite.png) no-repeat -270px -213px;}
+
+
+/*micro destaque HP*/
+.micro-wrap{ width:303px; min-height:80px; top:5px; margin-bottom:20px !important; padding-bottom: 10px; left:0px !important; position:relative; border-bottom:1px solid #ccc;}
+.micro-wrap a { color:#000 !important; text-decoration:none !important; }
+.top-micro{ height:60px; width:300px;  float:left;  position:relative; top:12px;}
+.top-micro h2{ font-size:30px; color:#fff; padding-left:10px; }
+.micro{ width:303px; margin-left:auto; margin-right:auto; }
+.micro img{ width:100%; }
+.micro-wrap h2{ font-size:16px !important; margin-top:5px; margin-bottom:5px; line-height:20px !important; }
+.micro-media{ top:135px !important; left:120px !important; float:left;}
+.micro-um{ position:relative; top:10px; width:300px !important;}
+.micro-footer { top:10px; float:right; position:relative; left:0px; }
+.micro-footer ul { padding:0px; margin:0px; width:150px; }
+.micro-footer li { display:inline-block;  float:left;}
+.micro-footer li a { color:#000 !important; font-size:12px !important; }
+.feat-micro { width: 300px !important; left: 0px; float: left !important; margin-top: 20px; padding-top: 27px; background: url(http://static.publico.pt/homepage/desporto/euro2012/img/mais-micro.png) no-repeat top left;  min-height: 10px !important; padding-bottom: 15px;}
+.featurednews .feat-micro ul {  width:300px !important; padding-top:10px !important; }
+.featurednews .feat-micro li { width:300px !important;  }
+.micro-um p { font-size:12px;}
+/*micro destaque HP*/
+
+.antetitulo { color:#d30000; font-family: 'Arial', Georgia, sans-serif !important; text-transform:uppercase; font-weight:bold; font-size:11px !important; }
+.micro-wrap .featurednews .newscontent { float:left; width:220px;  }
+.micro-wrap .featurednews .thumb { float:right; width:200px; height:134px; margin-top:7px; background:#000;}
+.micro-wrap .featurednews { float:right;  width:220px; right:5px; min-height:100px; position:relative; display:block; text-decoration:none;}
+.micro-wrap .featurednews h2  {  margin-top:5px; font-size:28px; line-height:33px; color:#333333; font-family: 'PublicoRoman', Georgia, sans-serif !important; text-decoration:none; }
+.micro-wrap .featurednews h2 a:link { margin-top:5px; font-size:28px; line-height:33px; color:#333333; font-family: 'PublicoRoman', Georgia, sans-serif !important; text-decoration:none; }
+.micro-wrap .featurednews p  { margin-top:5px; font-family:Arial;  }
+.micro-wrap .featurednews ul { font-family:Arial; margin-top:8px !important; font-size:12px; list-style-type: none; padding: 0px; margin: -5px; }
+.micro-wrap .featurednews li { background-image: url(http://static.publico.pt/homepage/desporto/euro2012/img/bullet-red.png); font-size:12px; background-repeat: no-repeat; background-position: 0px -1px;  padding-left: 19px; padding-right: 3px; }
+.micro-wrap .featurednews li a { text-decoration:none; color:#000; font-size:12px;  }
+.micro-wrap .featurednews li a:hover { text-decoration:none; color:#D30000; font-size:12px;  }
+
+
+
+</style>
+
+    <div class="micro-wrap">
+        <a href="http://desporto.publico.pt/Euro2012" title="Euro 2012">
+            <img src="http://static.publico.pt/homepage/desporto/euro2012/img/destaque-min-title.png" border="0" alt="Euro 2012" />
+        </a>
+        <div class="micro ">
+            <div style="float:left;">         
+           	    <div style="float:left;">
+                
+                    <img src="http://imagens.publico.pt/imagens.aspx/1458662?tp=UH&amp;db=DESTAQUES&amp;w=300&amp;h=0&amp;act=resize" width="340" title="foto1"><br>
+                    <div class="caption" style="float:left !important; "> <span class="author"></span></div>
+                
+                    <div class="micro-um ">
+                        <span class="antetitulo">Crónica de jogo</span>
+                        <h2><a href="http://desporto.publico.pt/Euro2012/noticia/risco-zero-da-angustiada-seleccao-espanhola-quase-estragou-a-aposta-de-platini-1550973">A Espanha nas mãos de Casillas</a></h2>
+                        <p>Campeã em título sofreu para bater a Croácia, por 1-0. E passa como primeira do Grupo C.</p>
+                        <div class="featured-footer micro-footer">
+                                <ul class="share basichorizlist">
+                                    <li><a title="Comentários" href="/Euro2012/noticia/risco-zero-da-angustiada-seleccao-espanhola-quase-estragou-a-aposta-de-platini-1550973#comentarios"><span class="icon16 ir comments">Comentários</span> 0</a></li>
+                                    <li><a title="Facebook" onclick="Publico.Scripts.Facebook_v1.Post(1550973, 'SCRIPTOR');" href="javascript: void(0);"><span class="icon16 ir facebook">Facebook</span> 1</a></li>
+                                    <li><a title="Twitter" onclick="Publico.Scripts.Twitter.Post('A Espanha nas mãos de Casillas', 'http://desporto.publico.pt/Euro2012/noticia/risco-zero-da-angustiada-seleccao-espanhola-quase-estragou-a-aposta-de-platini-1550973', 1550973, 'SCRIPTOR');" href="javascript: void(0);"><span class="icon16 ir twitter">Twitter</span> 0</a></li>
+                                </ul>
+                        </div>
+                        <div class="featurednews feat-micro">
+                            <ul>
+                                <li><a href="http://desporto.publico.pt/euro2012/noticia/a-noite-em-que-balotelli-apareceu-no-europeu-marcou-e-lhe-taparam-a-boca-1550974" title="">E Balotelli apareceu no Europeu</a></li>
+                            
+                                <li><a href="http://desporto.publico.pt/euro2012/noticia/e-agora-vem-ai-a-republica-checa-1550902" title="">E agora vem aí a República Checa</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="maisnoticias box">
+    <h2><span class="titlebar-title"><a href="javascript:void(0);" title="ultimas.publico.pt">Últimas Notícias</a></span>  </h2>
+    <ul class="ultimasnoticias-lista">
+        <li> 
+            <a href="http://www.publico.pt/Tecnologia/microsoft-apresenta-tablet-de-marca-propria-1550982"><b>01:15  -</b>Microsoft apresenta tablet de marca própria</a> 
+        </li>
+        <li> 
+            <a href="http://www.publico.pt/Cultura/o-primeiro-festival-de-cinema-no-youtube-ja-comecou--1550979"><b>18.06.2012 23:36  -</b>O primeiro Festival de Cinema no YouTube já começou</a> 
+        </li>
+        <li> 
+            <a href="http://ecosfera.publico.pt/noticia.aspx?id=1550975"><b>18.06.2012 22:58  -</b>Brasil diz que acordo na Rio+20 está próximo</a> 
+        </li>
+        <li> 
+            <a href="http://desporto.publico.pt/Euro2012/noticia/risco-zero-da-angustiada-seleccao-espanhola-quase-estragou-a-aposta-de-platini-1550973"><b>18.06.2012 22:58  -</b>Risco zero da angustiada selecção espanhola quase estragou a aposta de Platini</a> 
+        </li>
+        <li> 
+            <a href="http://desporto.publico.pt/Euro2012/noticia/a-noite-em-que-balotelli-apareceu-no-europeu-marcou-e-lhe-taparam-a-boca-1550974"><b>18.06.2012 22:56  -</b>A noite em que Balotelli apareceu no Europeu, marcou e lhe taparam a boca</a> 
+        </li>
+        <li> 
+            <a href="http://www.publico.pt/Mundo/obama-e-putin-pedem-o-fim-da-violencia-na-siria-mas-mantem-divergencias-quanto-a-assad-1550971"><b>18.06.2012 22:09  -</b>Obama e Putin pedem o fim da violência na Síria mas mantêm divergências quanto a Assad</a> 
+        </li>
+        <li> 
+            <a href="http://economia.publico.pt/Noticia/sindicato-dos-tripulantes-marca-eleicoes-antecipadas-1550968"><b>18.06.2012 21:59  -</b>Sindicato dos tripulantes marca eleições antecipadas</a> 
+        </li>
+        
+    </ul>
+	
+</div>
+
+<link rel="stylesheet" href="http://static.publico.pt/publicidade/optimus/p3/css/p3_alive.css" />
+<link rel="stylesheet" href="http://static.publico.pt/publicidade/optimus/p3/css/coda-slider-2.0.css" type="text/css" media="screen" />
+<script type="text/javascript" src="http://static.publico.pt/publicidade/online/js/scripts.js"></script>
+<script type="text/javascript">
+     $().ready(function () {
+         var counter = 1;
+         $('#coda-slider-1').codaSlider({
+             dynamicArrows: false,
+             dynamicTabs: false,
+             autoHeight: false,
+             autoSlide: true,
+             autoSlideStopWhenClicked: true
+         });
+         $('#ops-wrapper').mouseenter(function () {
+             if (counter == 1) {
+                 $(this).css('width', '600px');
+                 counter += 1;
+             }
+         });
+         $('#ops-wrapper').mouseleave(function () {
+             $(this).css('width', '300px');
+         });
+         $('#fechar').click(function () {
+             $('#ops-wrapper').css('width', '300px');
+         });
+     });
+</script>
+<style type="text/css">
+	.coda-slider .panel {position: relative;}
+</style>
+<div id="ops-wrapper">
+	<div class="left">
+        <div id="ops-header">
+            <a href="http://p3.publico.pt/optimus-alive" title="Optimus Alive 2012 | P3" target="_blank">
+                <img src="http://static.publico.pt/publicidade/optimus/p3/img/logo_p3_ani83px.gif" width="83" height="64" alt="P3" align="left" />
+                <img src="http://static.publico.pt/publicidade/optimus/p3/img/logo_small.png" width="90" height="98" alt="Optimus Primavera Sound" align="right" />
+            </a>
+        </div>
+        <div id="ops-body">
+            <div class="coda-slider-wrapper">
+                <div class="coda-slider preload" id="coda-slider-1">
+                    
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                        	<a href="http://p3.publico.pt/cultura/mp3/3459/optimus-alive-so-cinco-anos-quase-seis-e-ja-tanta-historia" target="_blank">
+                                
+                                <img src="http://static.publico.pt/files/p3_optimus_alive/LM-Iggy-109-070711_0.jpg" width="258" height="168" />
+                                
+                                <h1>Optimus Alive: só cinco anos (quase seis) e já tanta história</h1>
+                                <p>Só passaram cinco anos. Quem diria. Este é apenas o sexto Optimus Alive!(de 13 a 15 de Julho) e já tanto aconteceu. Espantámos demónios com uns rejuvenescidos Nick Cave e Warr...</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                        	<a href="http://p3.publico.pt/cultura/palcos/3426/como-chegar-ao-optimus-alive" target="_blank">
+                                
+                                <img src="http://static.publico.pt/files/p3_optimus_alive/Planta_Legendada.png" width="258" height="168" />
+                                
+                                <h1>Como chegar ao Optimus Alive? </h1>
+                                <p>O que precisas de saber para chegar ao festival</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                        	<a href="http://p3.publico.pt/cultura/palcos/3406/artistas-do-optimus-alive" target="_blank">
+                                
+                                <img src="http://static.publico.pt/files/p3_optimus_alive/stoneroses_dr.jpg" width="258" height="168" />
+                                
+                                <h1>Artistas do Optimus Alive</h1>
+                                <p>Pelo Passeio Marítimo de Algés, em Oeiras, vão passar mais de meia centena de artistas. Já os conheces a todos?</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                        	<a href="http://p3.publico.pt/cultura/mp3/3412/optimus-alive-e-eis-que-os-bilhetes-esgotaram" target="_blank">
+                                
+                                <img src="http://static.publico.pt/files/p3_optimus_alive/radiohead_ppimenta.jpg" width="258" height="168" />
+                                
+                                <h1>Optimus Alive: e eis que os bilhetes esgotaram</h1>
+                                <p>Já voaram os passes de três dias e os bilhetes diários para 15 de Julho. Há agora um novo passe especial para os dois primeiros dias por 89 euros</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                        	<a href="http://p3.publico.pt/cultura/mp3/3409/o-optimus-alive-la-fora-no-reino-unido" target="_blank">
+                                
+                                <img src="http://static.publico.pt/files/p3_optimus_alive/recinto_miguelmanso.jpg" width="258" height="168" />
+                                
+                                <h1>O Optimus Alive lá fora, no Reino Unido</h1>
+                                <p>"Elle", "The Times" e "The Guardian" sugerem uma visita ao festival. Esperam-se mais de doze mil estrangeiros</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                        	<a href="http://p3.publico.pt/cultura/mp3/2686/ala-viagens-garante-transporte-custos-mais-baixos-para-os-festivais-de-verao" target="_blank">
+                                
+                                <img src="http://static.publico.pt/files/p3_optimus_alive/festival2.jpg" width="258" height="168" />
+                                
+                                <h1>ALA Viagens garante transporte a custos mais baixos para os festivais de Verão</h1>
+                                <p>Uma agência promete ida e volta aos festivais de Verão a preços mais baixos que os da CP ou os das redes de autocarro. Chama-se ALA Viagens</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div><!-- .coda-slider -->
+            </div><!-- .coda-slider-wrapper -->
+            <div id="ops-nav">
+                <div id="coda-nav-left-1" class="coda-nav-left" style="float:left;"><a href="#">« Anterior</a></div>
+                <div id="coda-nav-right-1" class="coda-nav-right" style="float:right;"><a href="#">Seguinte »</a></div>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <a id="fechar" title="Fechar">Fechar</a>
+        <div style="clear:both;"></div>
+        <div style="text-align:center;">
+            <img src="http://static.publico.pt/publicidade/optimus/p3/img/logo.png" alt="" width="217" height="302" />
+            <ul>
+                <li><a href="http://p3.publico.pt/cultura/palcos/3406/artistas-do-optimus-alive" target="_blank">Bandas</a></li>
+                <li>•</li>
+                <li><a href="http://p3.publico.pt/optimus-alive" target="_blank">Programa</a></li>
+                <li>•</li>
+                <li><a href="http://p3.publico.pt/cultura/palcos/3426/como-chegar-ao-optimus-alive" target="_blank">Utilidades</a></li>
+                <div style="clear:both;"></div>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="videos box">
+	<h2><span class="titlebar-title"><a href="http://videos.publico.pt/" title="Vídeos">Vídeos</a></span> <span class="titlebar-url"><a href="http://videos.publico.pt/" title="Vídeos">videos.publico.pt</a></span></h2>
+	<h3><a href="http://videos.publico.pt/Default.aspx?Id=188e676c-52ac-46f8-b772-c8889a62321f" id="videoTitle" title="">Dicas para a época de exames que agora começa</a></h3>
+	<p class="author"></p>
+	<a href="http://videos.publico.pt/Default.aspx?Id=188e676c-52ac-46f8-b772-c8889a62321f" id="_videoImg"><img src="http://imagens.publico.pt/imagens.aspx/canal_videos/VideoPortal/Images/201206/1287960695melhoresalunos.jpg?tp=VIDEOS&amp;o=/imagens/player.png&amp;w=300&amp;h=240&t=1340083985,01351" alt="" /></a>
+</div>
+        <script type="text/javascript">
+          
+           var videoHeight = 378;
+           
+        </script>          
+
+<script type="text/javascript" src="http://static.publico.pt/files/home/sindicator/js/jquery.jshowoff.js"></script>
+<div class="jshowoff-title jshowoff-title-v2">
+	<h2>Opinião</h2>	
+	<span class="jshowoff-label">Com Apoio de</span>	
+	<div class="jshowoff-pub">
+		<!-- PublicoHomepage60x46 -->
+		<script type='text/javascript'>
+		    try { Comunique.tag("PublicoHomepage60x46"); } catch (e) { }
+		</script>
+	</div>
+</div>
+<div id="features" class="syndicate-v2">
+
+    <div>
+        <div class="jshowoff-img">
+            <a href="/ProjectSyndicate/Volker Perthes/quando-as-democracias-colidem-1550899"><img src="http://imagens.publico.pt/imagens.aspx/1458588?tp=UH&amp;db=DESTAQUES&amp;w=126&amp;h=132&amp;act=cropResize" width="126" height="132" /></a>
+        </div>
+        <div class="jshowoff-author">Volker Perthes</div>
+        <div class="jshowoff-min-title"><a href="/ProjectSyndicate/Volker Perthes/quando-as-democracias-colidem-1550899">Quando as democracias colidem</a></div>
+        <div class="jshowoff-content">
+            <p>A Europa precisa de aprender a ser mais clara e mais transparente sobre os interesses subjacentes às suas próprias políticas.</p>
+        </div>
+        <div class="jshowoff-min-text">Em colaboração com o <a href="http://www.publico.pt/ProjectSyndicate/" title="Project Syndicate">Project Syndicate</a></div>     
+    </div>
+
+    <div>
+        <div class="jshowoff-img">
+            <a href="/ProjectSyndicate/Peter Singer/o-uso-e-abuso-da-liberdade-religiosa-1550015"><img src="http://imagens.publico.pt/imagens.aspx/1457807?tp=UH&amp;db=DESTAQUES&amp;w=126&amp;h=132&amp;act=cropResize" width="126" height="132" /></a>
+        </div>
+        <div class="jshowoff-author">Peter Singer</div>
+        <div class="jshowoff-min-title"><a href="/ProjectSyndicate/Peter Singer/o-uso-e-abuso-da-liberdade-religiosa-1550015">O uso e abuso da liberdade religiosa</a></div>
+        <div class="jshowoff-content">
+            <p>Quais são os limites certos da liberdade religiosa? "A liberdade religiosa termina onde o sofrimento humano ou animal começa."</p>
+        </div>
+        <div class="jshowoff-min-text">Em colaboração com o <a href="http://www.publico.pt/ProjectSyndicate/" title="Project Syndicate">Project Syndicate</a></div>     
+    </div>
+
+    <div>
+        <div class="jshowoff-img">
+            <a href="/ProjectSyndicate/Joseph Nye/o-dilema-da-intervencao-1549878"><img src="http://imagens.publico.pt/imagens.aspx/1457682?tp=UH&amp;db=DESTAQUES&amp;w=126&amp;h=132&amp;act=cropResize" width="126" height="132" /></a>
+        </div>
+        <div class="jshowoff-author">Joseph Nye</div>
+        <div class="jshowoff-min-title"><a href="/ProjectSyndicate/Joseph Nye/o-dilema-da-intervencao-1549878">O dilema da intervenção</a></div>
+        <div class="jshowoff-content">
+            <p>Quando é que os estados devem intervir militarmente para impedirem atrocidades nos outros países? A questão é antiga e bem viajada.</p>
+        </div>
+        <div class="jshowoff-min-text">Em colaboração com o <a href="http://www.publico.pt/ProjectSyndicate/" title="Project Syndicate">Project Syndicate</a></div>     
+    </div>
+
+    <div>
+        <div class="jshowoff-img">
+            <a href="/ProjectSyndicate/George Soros/o-imperio-acidental-1549545"><img src="http://imagens.publico.pt/imagens.aspx/1457394?tp=UH&amp;db=DESTAQUES&amp;w=126&amp;h=132&amp;act=cropResize" width="126" height="132" /></a>
+        </div>
+        <div class="jshowoff-author">George Soros</div>
+        <div class="jshowoff-min-title"><a href="/ProjectSyndicate/George Soros/o-imperio-acidental-1549545">O Império Acidental</a></div>
+        <div class="jshowoff-content">
+            <p>É agora evidente que a principal causa da crise do euro reside na renúncia do direito de emitir moeda.</p>
+        </div>
+        <div class="jshowoff-min-text">Em colaboração com o <a href="http://www.publico.pt/ProjectSyndicate/" title="Project Syndicate">Project Syndicate</a></div>     
+    </div>
+
+</div>
+<script type="text/javascript">
+    $(document).ready(function () { $('#features').jshowoff(); });
+</script>
+<div class="pub">
+	<h2>Pub</h2>
+	<script type="text/javascript">
+		try {
+			Comunique.tag("PublicoHomepage300x60Btn03");
+		} catch(e){}
+	</script>
+</div><div class="multimedia box">
+	<h2>
+	    <span class="titlebar-title"><a href="http://multimedia.publico.pt/" title="multimedia.publico.pt">Multim&eacute;dia</a></span>
+        <span class="titlebar-url"><a href="http://multimedia.publico.pt/" title="multimedia.publico.pt">multimedia.publico.pt</a></span>
+    </h2>
+	<div class="box-float-container">
+		<div class="box-float featured">
+			<img alt="" src="http://imagens.publico.pt/imagens.aspx/1458182?tp=UH&amp;db=DESTAQUES&amp;w=95" />
+            <p class="category-type">Fotogaleria</p>
+			<h3><a href="http://static.publico.pt/docs/desporto/dinamarcaportugal/">Sons e imagens e uma vitória Portuguesa</a></h3>
+		</div><div class="box-float ">
+			<img alt="" src="http://imagens.publico.pt/imagens.aspx/1457924?tp=UH&amp;db=DESTAQUES&amp;w=95" />
+            <p class="category-type">Fotogaleria</p>
+			<h3><a href="http://static.publico.pt/docs/Cultura/primaverasound2012/">Primavera Sound com sol e chuva</a></h3>
+		</div><div class="box-float box-float-last">
+			<img alt="" src="http://imagens.publico.pt/imagens.aspx/1457390?tp=UH&amp;db=DESTAQUES&amp;w=95" />
+            <p class="category-type">Fotogaleria</p>
+			<h3><a href="http://static.publico.pt/docs/desporto/euro2012_dia1/">Euro 2012, o primeiro dia</a></h3>
+		</div>
+	</div>
+
+</div>
+<div id="Inquerito-Box">
+<div class="inquerito box">
+	<h2><span class="titlebar-title">Inqu&eacute;rito</span></h2>
+	<input type="hidden" id="inqID" value="2898" />
+	<input type="hidden" id="validation" value="XjMbmIgXvfY=" />
+    <p>Concorda com a aplicação de multas e a suspensão de apoios sociais aos pais de alunos faltosos ou indisciplinados?</p>
+	<ul>
+		
+		    <li><input id="answer" type="radio" name="answer" value="4397" /><label for="answer">Sim</label></li>
+        
+		    <li><input id="answer" type="radio" name="answer" value="4398" /><label for="answer">Não</label></li>
+        
+	</ul>
+	<div class="inquerito-form-btns" id="imgValidation" style="display:none">
+    
+	    <img id="imgValue" alt="" src="http://static.publico.pt/includes/img/vazio.gif?t=1340083985,01351" />
+    
+	    <input type="text" id="inputValidation" />
+	    <img alt="" src="http://www.publico.pt/includes/icons/submitButton.gif?t=1340083985,01351" />
+    </div>
+    <div class="wrap-error" id="inqErrMsg" ></div>
+	<div class="inquerito-form-btns">
+		<input type="button" class="button votar" value="Votar" onclick="Vote();" />
+		<input type="button" class="button ver" value="Ver Resultados" onclick="$('#Inquerito-Box').load('/Inquerito/Results/2898', function(e){});" />
+	</div>
+</div>
+</div>
+<div class="desporto box">
+    <h2>
+	    <span class="titlebar-title"><a href="http://economia.publico.pt" title="desporto.publico.pt">Economia</a></span>
+	    <span class="titlebar-url"><a href="http://economia.publico.pt" title="desporto.publico.pt">economia.publico.pt</a></span>
+    </h2>
+	<div class="box-float-container">
+		<div class="entry noborder box-float">
+			<h3><a href="http://economia.publico.pt/Noticia/fmi-sem-estimulos-europa-corre-o-risco-de-estagnacao-prolongada--1550965" title="">FMI: sem estímulos, Europa corre o risco de “estagnação prolongada”</a></h3>
+			<a href="http://economia.publico.pt/Noticia/fmi-sem-estimulos-europa-corre-o-risco-de-estagnacao-prolongada--1550965"><img src="http://imagens.publico.pt/imagens.aspx/1458654?tp=UH&amp;db=DESTAQUES&amp;w=140&amp;h=100&amp;act=cropResize&t=1340083985,01351" alt="" /></a>
+			
+			<ul class="entry-comments entry-comments-vertical">
+                <li class="entry-comments-write"><a href="http://economia.publico.pt/Noticia/fmi-sem-estimulos-europa-corre-o-risco-de-estagnacao-prolongada--1550965#Comentarios" title="Ler Coment&aacute;rios">0 Coment&aacute;rios</a>&nbsp;</li>
+                <li class="entry-comments-facebook-vertical"><a href="javascript:void(0);" onclick="Publico.Scripts.Facebook_v1.Post(1550965, 'UH');" title="Facebook">4</a></li>
+                <li class="entry-comments-twitter-vertical"><a href="javascript:void(0);" onclick="Publico.Scripts.Twitter.Post('FMI: sem estímulos, Europa corre o risco de “estagnação prolongada”', 'http://economia.publico.pt/Noticia/fmi-sem-estimulos-europa-corre-o-risco-de-estagnacao-prolongada--1550965', 1550965, 'UH');" title="Twitter">0</a></li>
+			</ul><!-- .entry-comments -->
+		</div><!-- .entry -->
+		<div class="newslist titlelist box-float box-float-last">
+			<ul>
+				    <li class=""><h3><a href="http://economia.publico.pt/Noticia/europeus-nao-estao-no-g20-para-receber-licoes-de-democracia-diz-barroso--1550953">Europeus não estão no G20 para receber lições de democracia, diz Barroso</a></h3></li>
+				
+				    <li class=""><h3><a href="http://economia.publico.pt/Noticia/escalada-dos-juros-acima-dos-7-intensifica-risco-da-divida-de-espanha--1550936">Escalada dos juros acima dos 7% intensifica risco da dívida de Espanha</a></h3></li>
+				
+				    <li class="noborder"><h3><a href="http://economia.publico.pt/Noticia/cavaco-promulga-codigo-do-trabalho-e-pede-estabilidade-para-criacao-de-emprego--1550924">Cavaco Silva promulga Código do Trabalho</a></h3></li>
+				
+			</ul>
+		</div><!-- .box box-float box-float-last -->
+	</div><!-- .box-float-container -->
+</div><!-- .desporto .sec-content-box box -->
+
+<div class="desporto box">
+    <h2>
+	    <span class="titlebar-title"><a href="http://desporto.publico.pt" title="desporto.publico.pt">Desporto</a></span>
+	    <span class="titlebar-url"><a href="http://desporto.publico.pt" title="desporto.publico.pt">desporto.publico.pt</a></span>
+    </h2>
+	<div class="box-float-container">
+		<div class="entry noborder box-float">
+			<h3><a href="http://desporto.publico.pt/noticia.aspx?id=1550790" title="">Ciclista Rui Costa conquista a Suíça</a></h3>
+			<a href="http://desporto.publico.pt/noticia.aspx?id=1550790"><img src="http://imagens.publico.pt/imagens.aspx/1458494?tp=UH&amp;db=DESTAQUES&amp;w=140&amp;h=100&amp;act=cropResize&t=1340083985,01351" alt="Ciclista Rui Costa conquista a Su&#237;&#231;a" title="Ciclista Rui Costa conquista a Su&#237;&#231;a" /></a>
+			
+			<ul class="entry-comments entry-comments-vertical">
+                <li class="entry-comments-write"><a href="http://desporto.publico.pt/noticia.aspx?id=1550790#Comentarios" title="Ler Coment&aacute;rios">13 Coment&aacute;rios</a>&nbsp;</li>
+                <li class="entry-comments-facebook-vertical"><a href="javascript:void(0);" onclick="Publico.Scripts.Facebook_v1.Post(1550790, 'UH');" title="Facebook">36</a></li>
+                <li class="entry-comments-twitter-vertical"><a href="javascript:void(0);" onclick="Publico.Scripts.Twitter.Post('Ciclista Rui Costa conquista a Suíça', 'http://desporto.publico.pt/noticia.aspx?id=1550790', 1550790, 'UH');" title="Twitter">5</a></li>
+			</ul><!-- .entry-comments -->
+		</div><!-- .entry -->
+		<div class="newslist titlelist box-float box-float-last">
+			<ul>
+				    <li class=""><h3><a href="http://desporto.publico.pt/noticia.aspx?id=1550898">Itália pune clubes e jogadores pelo escândalo de jogos combinados</a></h3></li>
+				
+				    <li class=""><h3><a href="http://desporto.publico.pt/noticia.aspx?id=1550959">Pedro Proença foi o melhor árbitro da temporada</a></h3></li>
+				
+				    <li class="noborder"><h3><a href="http://desporto.publico.pt/noticia.aspx?id=1550893">Glasgow Rangers fora do calendário da próxima época</a></h3></li>
+				
+			</ul>
+		</div><!-- .box box-float box-float-last -->
+	</div><!-- .box-float-container -->
+</div><!-- .desporto .sec-content-box box -->
+<div class="blogues box newslist">
+	<h2><span class="titlebar-title"><a href="http://blogs.publico.pt" title="Blogues">Blogues</a></span> <span class="titlebar-url"><a href="http://blogs.publico.pt" title="Blogues">blogs.publico.pt</a></span></h2>
+	<div class="box-float-container">
+		<ul class="box-float">
+			<li>
+				<h3><a href="http://aminhatelevisao.blogspot.com/2011/08/cabo.html">Cabo</a></h3>
+				<p class="author">A minha TV</p>
+			</li><li>
+				<h3><a href="http://lerbd.blogspot.com/2012/06/autobiografia-sem-factos-topedro-edicao.html">Autobiografia sem factos. Topedro (edição do autor)</a></h3>
+				<p class="author">Ler BD</p>
+			</li>
+		</ul>
+		<ul class="box-float box-float-last">
+			<li>
+				<h3><a href="http://darussia.blogspot.com/2012/06/conversacoes-entre-51-e-irao-decorrem.html">Conversações entre "5+1" e Irão decorrem com grande dificuldade</a></h3>
+				<p class="author">Da Rússia</p>
+			</li><li>
+				<h3><a href="http://bordadoingles.blogspot.com/2010/12/que-venha-2011.html">Que venha 2011</a></h3>
+				<p class="author">Bordado Inglês</p>
+			</li>
+		</ul>
+	</div>
+</div>
+<div id="caixaUtilidades" class="maisnoticias">
+    
+    <div class="maisnoticias-menu">
+        <!-- MENU -->
+        <ul class="utilities-menu">
+            <li class="maisnoticias-active" >
+                <a href="javascript:void(0)" onclick="loadUtilities('/Utilidades/getNetworkUtilities')" title="Redes">Redes</a></li>
+            <li >
+                <a href="javascript:void(0)" onclick="loadUtilities('/Utilidades/getFormatsUtilities')" title="Formatos">Formatos</a></li>
+            <li >
+                <a href="javascript:void(0)" onclick="loadUtilities('/Utilidades/getUsefulUtilities')" title="Úteis">Úteis</a></li>
+            <li >
+                <a href="javascript:void(0)" onclick="loadUtilities('/Utilidades/getServicesUtilities')" title="Serviços">Serviços</a></li>
+            <li >
+                <a href="javascript:void(0)" onclick="loadUtilities('/Utilidades/getReaderUtilities')" title="Leitor">Leitor</a></li>
+        </ul>
+    </div>
+    
+    <div id="caixaUtilidadesConteudo">
+        
+        <ul class="CS-GERAL">
+        
+        <li class="Facebook">
+            <a href="http://www.facebook.com/publico" target="_blank">
+                
+                <img src="http://imagens.publico.pt/imagens.aspx/300886?tp=UH&amp;db=NOTICIAS&amp;&t=1340083985,01351" alt="Facebook" />
+                
+            </a>
+            <b>Facebook</b>
+        </li>
+        
+        <li class="Twitter">
+            <a href="http://twitter.com/publico" target="_blank">
+                
+                <img src="http://imagens.publico.pt/imagens.aspx/300880?tp=UH&amp;db=NOTICIAS&amp;&t=1340083985,01351" alt="Twitter" />
+                
+            </a>
+            <b>Twitter</b>
+        </li>
+        
+        <li class="Youtube">
+            <a href="http://www.youtube.com/user/jornalpublicovideos" target="_blank">
+                
+                <img src="http://imagens.publico.pt/imagens.aspx/302232?tp=UH&amp;db=NOTICIAS&amp;&t=1340083985,01351" alt="Youtube" />
+                
+            </a>
+            <b>Youtube</b>
+        </li>
+        
+    </ul>
+        
+        <div class="pub">
+        <h2>Pub</h2>
+        <ul class="CS-PUB">
+            
+        </ul>
+        </div>
+        
+        <script type="text/javascript">
+            function loadUtilities(url) {
+                var arr = url.split("/");
+                switch (arr[2]) {
+                    case "getNetworkUtilities":
+                        $('.utilities-menu li').removeClass('maisnoticias-active');
+                        $('.utilities-menu li:eq(0)').addClass('maisnoticias-active');
+                        break;
+                    case "getFormatsUtilities":
+                        $('.utilities-menu li').removeClass('maisnoticias-active');
+                        $('.utilities-menu li:eq(1)').addClass('maisnoticias-active');
+                        break;
+                    case "getUsefulUtilities":
+                        $('.utilities-menu li').removeClass('maisnoticias-active');
+                        $('.utilities-menu li:eq(2)').addClass('maisnoticias-active');
+                        break;
+                    case "getServicesUtilities":
+                        $('.utilities-menu li').removeClass('maisnoticias-active');
+                        $('.utilities-menu li:eq(3)').addClass('maisnoticias-active');
+                        break;
+                    case "getReaderUtilities":
+                        $('.utilities-menu li').removeClass('maisnoticias-active');
+                        $('.utilities-menu li:eq(4)').addClass('maisnoticias-active');
+                        break;
+                    default:
+                        $('.utilities-menu li').removeClass('maisnoticias-active');
+                        $('.utilities-menu li:eq(0)').addClass('maisnoticias-active');
+                }
+                $("#caixaUtilidadesConteudo").load(url + " #caixaUtilidadesConteudo", function () { $("ul.CS-GERAL li:nth-child(5n)").css("margin-right", "0px"); });
+            }
+
+        </script>
+    </div>
+</div><div class="pub">
+	<h2>Pub</h2>
+	<script type="text/javascript">
+		try {
+			Comunique.tag("PublicoHomepage300x250Slot02");
+		} catch(e){}
+	</script>
+</div>
+            </div>
+            <div id="main-content">
+                
+    <div class="headlines">
+        
+            <div class="entry featured">
+	            <h2><a href="/Mundo/samaras-comeca-conversacoes-para-formar-governo-na-grecia-1550891" title="Formação do governo grego em banho-maria">Formação do governo grego em banho-maria</a></h2>
+	            
+	            <div class="entry-body">
+	                <p class="author">Maria João Guimarães, em Atenas</p>
+		            <p>O Governo da Grécia permanece uma incógnita, depois de um dia de reuniões entre Antonis Samaras, líder do partido vencedor, centro-direita, e os partidos da esquerda (PASOK, Syriza e Dimar).</p>
+	            </div>
+	            <ul class="entry-comments">
+		            
+		            <li class="entry-comments-write"><a href="/Mundo/samaras-comeca-conversacoes-para-formar-governo-na-grecia-1550891#Comentarios" title="Ler Coment&aacute;rios">5 Coment&aacute;rios</a>&nbsp;</li>
+                    <li class="entry-comments-facebook"><a href="javascript:void(0);" onclick="Publico.Scripts.Facebook_v1.Post(1550891, 'UH');" title="Facebook">3</a></li>
+                    <li class="entry-comments-twitter"><a href="javascript:void(0);" onclick="Publico.Scripts.Twitter.Post('Forma&#231;&#227;o do governo grego em banho-maria', '/Mundo/samaras-comeca-conversacoes-para-formar-governo-na-grecia-1550891', 1550891, 'UH');" title="Twitter">0</a></li>
+                    <li class="mais-temas"><b>+</b><a href="/Mundo/" title=""> MUNDO</a></li>
+	            </ul>
+	            <ul class="entry-links">
+	                    
+		                    <li><a href="/Mundo/merkel-espera-continuidade-das-reformas_1550856" title="#">Merkel espera continuidade das reformas</a></li>
+		                
+		                    <li><a href="/Mundo/partido-proausteridade-venceu-as-eleicoes-gregas_1550826" title="#">Partido pró-austeridade venceu as eleições gregas</a></li>
+		                
+		                    <li><a href="/Mundo/vencedor-das-eleicoes-encontrase-com-presidente_1550857" title="#">Vencedor das eleições encontra-se com Presidente</a></li>
+		                
+		                    <li><a href="/Mundo/imprensa-destaca-novo-folego-para-o-euro_1550853" title="#">Imprensa destaca novo fôlego para o euro</a></li>
+		                
+		                    <li><a href="/Mundo/partido-proausteridade-venceu-as-eleicoes-gregas_1550826" title="#">Partido pró-austeridade venceu as eleições gregas</a></li>
+		                
+		                    <li><a href="/Mundo/barroso-quer-ver-um-governo-rapidamente-em-funcoes_1550817" title="#">Barroso quer ver um Governo rapidamente em funções</a></li>
+		                
+                </ul>
+            </div>
+        
+            <div class="entry ">
+	            <h2><a href="/Educação/crato-quer-mais-exames-a-mais-disciplinas-1550944" title="Crato quer mais exames a mais disciplinas">Crato quer mais exames a mais disciplinas</a></h2>
+	            
+	            <div class="entry-body">
+	                <p class="author">Lusa, PÚBLICO</p>
+		            <p>O Ministério da Educação quer exames a mais disciplinas, de acordo com o documento divulgado esta segunda-feira pelo Governo para fazer o balanço de um ano de actividade e enquadrar as medidas.</p>
+	            </div>
+	            <ul class="entry-comments">
+		            
+		            <li class="entry-comments-write"><a href="/Educação/crato-quer-mais-exames-a-mais-disciplinas-1550944#Comentarios" title="Ler Coment&aacute;rios">0 Coment&aacute;rios</a>&nbsp;</li>
+                    <li class="entry-comments-facebook"><a href="javascript:void(0);" onclick="Publico.Scripts.Facebook_v1.Post(1550944, 'UH');" title="Facebook">30</a></li>
+                    <li class="entry-comments-twitter"><a href="javascript:void(0);" onclick="Publico.Scripts.Twitter.Post('Crato quer mais exames a mais disciplinas', '/Educação/crato-quer-mais-exames-a-mais-disciplinas-1550944', 1550944, 'UH');" title="Twitter">2</a></li>
+                    <li class="mais-temas"><b>+</b><a href="/Educação/" title=""> EDUCAÇÃO</a></li>
+	            </ul>
+	            <ul class="entry-links">
+	                    
+		                    <li><a href="http://static.publico.pt/docs/educacao/documentotrabalhogoverno.pdf" title="#">Documento de trabalho do Governo</a></li>
+		                
+                </ul>
+            </div>
+        
+            <div class="entry ">
+	            <h2><a href="/Tecnologia/microsoft-apresenta-tablet-de-marca-propria-1550982" title="Microsoft apresenta tablet de marca própria">Microsoft apresenta tablet de marca própria</a></h2>
+	            
+<div class="entry-img">
+    <div class="entry-img-wrap">
+        <ul>
+            <li>
+                <a href="/Tecnologia/microsoft-apresenta-tablet-de-marca-propria-1550982" title="Microsoft apresenta tablet de marca própria"><img src="http://imagens.publico.pt/imagens.aspx/1458670?tp=UH&amp;db=DESTAQUES&amp;w=360&amp;h=0&amp;act=resize&t=1340083985,01351" alt="" title="" /></a>
+		        
+		        <div class="entry-img-author"></div>
+	        </li>
+        </ul>
+	</div>
+	
+</div>
+	            <div class="entry-body">
+	                <p class="author">João Pedro Pereira</p>
+		            <p>É uma mudança histórica na estratégia da Microsoft. A empresa apresentou uma linha de tablets de marca própria, chamada Microsoft Surface.</p>
+	            </div>
+	            <ul class="entry-comments">
+		            
+		            <li class="entry-comments-write"><a href="/Tecnologia/microsoft-apresenta-tablet-de-marca-propria-1550982#Comentarios" title="Ler Coment&aacute;rios">0 Coment&aacute;rios</a>&nbsp;</li>
+                    <li class="entry-comments-facebook"><a href="javascript:void(0);" onclick="Publico.Scripts.Facebook_v1.Post(1550982, 'UH');" title="Facebook">9</a></li>
+                    <li class="entry-comments-twitter"><a href="javascript:void(0);" onclick="Publico.Scripts.Twitter.Post('Microsoft apresenta tablet de marca pr&#243;pria', '/Tecnologia/microsoft-apresenta-tablet-de-marca-propria-1550982', 1550982, 'UH');" title="Twitter">1</a></li>
+                    <li class="mais-temas"><b>+</b><a href="/Tecnologia/" title=""> TECNOLOGIA</a></li>
+	            </ul>
+	            
+            </div>
+        
+            <div class="entry ">
+	            <h2><a href="http://ecosfera.publico.pt/noticia.aspx?id=1550975" title="Brasil diz que acordo na Rio+20 está próximo">Brasil diz que acordo na Rio+20 está próximo</a></h2>
+	            
+	            <div class="entry-body">
+	                <p class="author">Ricardo Garcia, no Rio de Janeiro</p>
+		            <p>O Brasil acredita que serão concluídas ainda na noite desta segunda-feira (madrugada de terça-feira em Lisboa) as negociações de um texto a ser aprovado esta semana pelos chefes de Estado e de ...</p>
+	            </div>
+	            <ul class="entry-comments">
+		            
+		            <li class="entry-comments-write"><a href="http://ecosfera.publico.pt/noticia.aspx?id=1550975#Comentarios" title="Ler Coment&aacute;rios">2 Coment&aacute;rios</a>&nbsp;</li>
+                    <li class="entry-comments-facebook"><a href="javascript:void(0);" onclick="Publico.Scripts.Facebook_v1.Post(1550975, 'UH');" title="Facebook">0</a></li>
+                    <li class="entry-comments-twitter"><a href="javascript:void(0);" onclick="Publico.Scripts.Twitter.Post('Brasil diz que acordo na Rio+20 est&#225; pr&#243;ximo', 'http://ecosfera.publico.pt/noticia.aspx?id=1550975', 1550975, 'UH');" title="Twitter">0</a></li>
+                    <li class="mais-temas"><b>+</b><a href="http://ecosfera.publico.pt" title=""> ECOSFERA</a></li>
+	            </ul>
+	            
+            </div>
+        
+            <div class="entry ">
+	            <h2><a href="http://economia.publico.pt/Noticia/europeus-nao-estao-no-g20-para-receber-licoes-de-democracia-diz-barroso--1550953" title="Europeus não estão no G20 para receber lições de democracia, diz Barroso">Europeus não estão no G20 para receber lições de democracia, diz Barroso</a></h2>
+	            
+<div class="entry-img">
+    <div class="entry-img-wrap">
+        <ul>
+            <li>
+                <a href="http://economia.publico.pt/Noticia/europeus-nao-estao-no-g20-para-receber-licoes-de-democracia-diz-barroso--1550953" title="Europeus não estão no G20 para receber lições de democracia, diz Barroso"><img src="http://imagens.publico.pt/imagens.aspx/1458642?tp=UH&amp;db=DESTAQUES&amp;w=360&amp;h=0&amp;act=resize&t=1340083985,01351" alt="" title="" /></a>
+		        
+		        <div class="entry-img-author"></div>
+	        </li>
+        </ul>
+	</div>
+	
+</div>
+	            <div class="entry-body">
+	                <p class="author">PÚBLICO</p>
+		            <p>Antes de começar a cimeira do G20, no México, o presidente da CE deixou um recado aos parceiros do grupo das maiores economias: os responsáveis europeus não precisam de receber lições de democracia.</p>
+	            </div>
+	            <ul class="entry-comments">
+		            
+		            <li class="entry-comments-write"><a href="http://economia.publico.pt/Noticia/europeus-nao-estao-no-g20-para-receber-licoes-de-democracia-diz-barroso--1550953#Comentarios" title="Ler Coment&aacute;rios">0 Coment&aacute;rios</a>&nbsp;</li>
+                    <li class="entry-comments-facebook"><a href="javascript:void(0);" onclick="Publico.Scripts.Facebook_v1.Post(1550953, 'UH');" title="Facebook">4</a></li>
+                    <li class="entry-comments-twitter"><a href="javascript:void(0);" onclick="Publico.Scripts.Twitter.Post('Europeus n&#227;o est&#227;o no G20 para receber li&#231;&#245;es de democracia, diz Barroso', 'http://economia.publico.pt/Noticia/europeus-nao-estao-no-g20-para-receber-licoes-de-democracia-diz-barroso--1550953', 1550953, 'UH');" title="Twitter">0</a></li>
+                    <li class="mais-temas"><b>+</b><a href="http://economia.publico.pt" title=""> ECONOMIA</a></li>
+	            </ul>
+	            <ul class="entry-links">
+	                    
+		                    <li><a href="http://economia.publico.pt/Noticia/fmi-sem-estimulos-europa-corre-o-risco-de-estagnacao-prolongada_1550965" title="#">FMI: sem estímulos, Europa corre o risco de “estagnação prolongada”</a></li>
+		                
+		                    <li><a href="http://publico.pt/1550962" title="#">BRICS querem mais poder de voto para aumentar as contribuições para o FMI</a></li>
+		                
+		                    <li><a href="http://economia.publico.pt/Noticia/crise-da-divida-na-zona-euro-domina-a-cimeira-do-g20-no-mexico_1550918" title="#">Crise da dívida na zona euro domina a cimeira do G20 no México</a></li>
+		                
+                </ul>
+            </div>
+        
+            <div class="entry ">
+	            <h2><a href="http://economia.publico.pt/Noticia/escalada-dos-juros-acima-dos-7-intensifica-risco-da-divida-de-espanha--1550936" title="Escalada dos juros acima dos 7% intensifica risco da dívida de Espanha">Escalada dos juros acima dos 7% intensifica risco da dívida de Espanha</a></h2>
+	            
+	            <div class="entry-body">
+	                <p class="author">Pedro Crisóstomo</p>
+		            <p>Mariano Rajoy diz que a vitória dos conservadores na Grécia é uma boa notícia para Espanha. A reacção dos mercados foi comedida: a bolsa de Madrid caiu quase 3% e o risco da dívida voltou a disparar.</p>
+	            </div>
+	            <ul class="entry-comments">
+		            
+		            <li class="entry-comments-write"><a href="http://economia.publico.pt/Noticia/escalada-dos-juros-acima-dos-7-intensifica-risco-da-divida-de-espanha--1550936#Comentarios" title="Ler Coment&aacute;rios">0 Coment&aacute;rios</a>&nbsp;</li>
+                    <li class="entry-comments-facebook"><a href="javascript:void(0);" onclick="Publico.Scripts.Facebook_v1.Post(1550936, 'UH');" title="Facebook">5</a></li>
+                    <li class="entry-comments-twitter"><a href="javascript:void(0);" onclick="Publico.Scripts.Twitter.Post('Escalada dos juros acima dos 7% intensifica risco da d&#237;vida de Espanha', 'http://economia.publico.pt/Noticia/escalada-dos-juros-acima-dos-7-intensifica-risco-da-divida-de-espanha--1550936', 1550936, 'UH');" title="Twitter">1</a></li>
+                    <li class="mais-temas"><b>+</b><a href="http://economia.publico.pt" title=""> ECONOMIA</a></li>
+	            </ul>
+	            <ul class="entry-links">
+	                    
+		                    <li><a href="http://publico.pt/1550907" title="#">Espanha pede “firmeza” do BCE para responder à pressão</a></li>
+		                
+		                    <li><a href="http://publico.pt/1550878" title="#">Juros passam barreira dos 7% apesar do voto grego</a></li>
+		                
+                </ul>
+            </div>
+        
+            <div class="entry ">
+	            <h2><a href="/Tecnologia/autoridades-portuguesas-pediram-ao-google-dados-de-519-contas-de-utilizador-1550932" title="Portugal pediu ao Google dados de 519 contas de utilizador">Portugal pediu ao Google dados de 519 contas de utilizador</a></h2>
+	            
+<div class="entry-img">
+    <div class="entry-img-wrap">
+        <ul>
+            <li>
+                <a href="/Tecnologia/autoridades-portuguesas-pediram-ao-google-dados-de-519-contas-de-utilizador-1550932" title="Portugal pediu ao Google dados de 519 contas de utilizador"><img src="http://imagens.publico.pt/imagens.aspx/1458621?tp=UH&amp;db=DESTAQUES&amp;w=360&amp;h=0&amp;act=resize&t=1340083985,01351" alt="" title="" /></a>
+		        
+		        <div class="entry-img-author"></div>
+	        </li>
+        </ul>
+	</div>
+	
+</div>
+	            <div class="entry-body">
+	                <p class="author">João Pedro Pereira</p>
+		            <p>Ao longo do ano passado, as autoridades portuguesas pediram ao Google, no âmbito de investigações criminais, informação de 519 contas de utilizadores dos vários serviços da empresa.</p>
+	            </div>
+	            <ul class="entry-comments">
+		            
+		            <li class="entry-comments-write"><a href="/Tecnologia/autoridades-portuguesas-pediram-ao-google-dados-de-519-contas-de-utilizador-1550932#Comentarios" title="Ler Coment&aacute;rios">0 Coment&aacute;rios</a>&nbsp;</li>
+                    <li class="entry-comments-facebook"><a href="javascript:void(0);" onclick="Publico.Scripts.Facebook_v1.Post(1550932, 'UH');" title="Facebook">14</a></li>
+                    <li class="entry-comments-twitter"><a href="javascript:void(0);" onclick="Publico.Scripts.Twitter.Post('Portugal pediu ao Google dados de 519 contas de utilizador', '/Tecnologia/autoridades-portuguesas-pediram-ao-google-dados-de-519-contas-de-utilizador-1550932', 1550932, 'UH');" title="Twitter">2</a></li>
+                    <li class="mais-temas"><b>+</b><a href="/Tecnologia/" title=""> TECNOLOGIA</a></li>
+	            </ul>
+	            
+            </div>
+        
+            <div class="entry ">
+	            <h2><a href="/Sociedade/ipo-do-porto-cobrou-irregularmente-116-milhoes-em-quimioterapia-oral-1550940" title="IPO do Porto cobrou irregularmente 11,6 milhões em quimioterapia oral">IPO do Porto cobrou irregularmente 11,6 milhões em quimioterapia oral</a></h2>
+	            
+	            <div class="entry-body">
+	                <p class="author">João d´Espiney </p>
+		            <p>O Instituto Português de Oncologia (IPO) do Porto “facturou  irregularmente” 11,6 milhões de euros à Administração Central do Sistema de Saúde (ACSS) em 2009.</p>
+	            </div>
+	            <ul class="entry-comments">
+		            
+		            <li class="entry-comments-write"><a href="/Sociedade/ipo-do-porto-cobrou-irregularmente-116-milhoes-em-quimioterapia-oral-1550940#Comentarios" title="Ler Coment&aacute;rios">1 Coment&aacute;rios</a>&nbsp;</li>
+                    <li class="entry-comments-facebook"><a href="javascript:void(0);" onclick="Publico.Scripts.Facebook_v1.Post(1550940, 'UH');" title="Facebook">6</a></li>
+                    <li class="entry-comments-twitter"><a href="javascript:void(0);" onclick="Publico.Scripts.Twitter.Post('IPO do Porto cobrou irregularmente 11,6 milh&#245;es em quimioterapia oral', '/Sociedade/ipo-do-porto-cobrou-irregularmente-116-milhoes-em-quimioterapia-oral-1550940', 1550940, 'UH');" title="Twitter">0</a></li>
+                    <li class="mais-temas"><b>+</b><a href="/Sociedade/" title=""> SOCIEDADE</a></li>
+	            </ul>
+	            
+            </div>
+        
+            <div class="entry ">
+	            <h2><a href="/Educação/gil-vicente-estreiase-no-exame-do-9-ano-alunos-do-12-satisfeitos-com-a-prova-1550938" title="Gil Vicente estreia-se no exame do 9.º ano, alunos do 12.º satisfeitos com a prova">Gil Vicente estreia-se no exame do 9.º ano, alunos do 12.º satisfeitos com a prova</a></h2>
+	            
+<div class="entry-img">
+    <div class="entry-img-wrap">
+        <ul>
+            <li>
+                <a href="/Educação/gil-vicente-estreiase-no-exame-do-9-ano-alunos-do-12-satisfeitos-com-a-prova-1550938" title="Gil Vicente estreia-se no exame do 9.º ano, alunos do 12.º satisfeitos com a prova"><img src="http://imagens.publico.pt/imagens.aspx/1458627?tp=UH&amp;db=DESTAQUES&amp;w=360&amp;h=0&amp;act=resize&t=1340083985,01351" alt="" title="" /></a>
+		        
+		        <div class="entry-img-author"></div>
+	        </li>
+        </ul>
+	</div>
+	
+</div>
+	            <div class="entry-body">
+	                <p class="author">Clara Viana</p>
+		            <p>É a estreia de Gil Vicente na 1.ª fase dos exames de Língua Portuguesa do 9.º ano, que se realizam desde 2005.</p>
+	            </div>
+	            <ul class="entry-comments">
+		            
+		            <li class="entry-comments-write"><a href="/Educação/gil-vicente-estreiase-no-exame-do-9-ano-alunos-do-12-satisfeitos-com-a-prova-1550938#Comentarios" title="Ler Coment&aacute;rios">0 Coment&aacute;rios</a>&nbsp;</li>
+                    <li class="entry-comments-facebook"><a href="javascript:void(0);" onclick="Publico.Scripts.Facebook_v1.Post(1550938, 'UH');" title="Facebook">6</a></li>
+                    <li class="entry-comments-twitter"><a href="javascript:void(0);" onclick="Publico.Scripts.Twitter.Post('Gil Vicente estreia-se no exame do 9.&#186; ano, alunos do 12.&#186; satisfeitos com a prova', '/Educação/gil-vicente-estreiase-no-exame-do-9-ano-alunos-do-12-satisfeitos-com-a-prova-1550938', 1550938, 'UH');" title="Twitter">0</a></li>
+                    <li class="mais-temas"><b>+</b><a href="/Educação/" title=""> EDUCAÇÃO</a></li>
+	            </ul>
+	            <ul class="entry-links">
+	                    
+		                    <li><a href="http://static.publico.pt/docs/educacao/portuguesfinal12.pdf" title="#">Enunciado do exame de Português e critérios de correcção (12º ano - Gave)</a></li>
+		                
+		                    <li><a href="http://static.publico.pt/docs/educacao/criteriosdecorreccaoeparecer12ano.pdf" title="#">Parecer e critérios de correcção da APP do exame de Português do 12.º ano</a></li>
+		                
+		                    <li><a href="http://static.publico.pt/docs/educacao/portuguesfinal.pdf" title="#">Enunciado do exame de Língua Portuguesa e critérios de correcção do Gave</a></li>
+		                
+		                    <li><a href="http://static.publico.pt/docs/educacao/criterioscorreccaolinguaport.pdf" title="#">Critérios de correcção da APP para o exame de Língua Portuguesa do 9.º ano</a></li>
+		                
+		                    <li><a href="http://static.publico.pt/docs/educacao/parecer9ano2012.pdf" title="#">Parecer da APP sobre o exame de Língua Portuguesa do 9º ano</a></li>
+		                
+                </ul>
+            </div>
+        
+            <div class="entry ">
+	            <h2><a href="/Mundo/obama-e-putin-pedem-o-fim-da-violencia-na-siria-mas-mantem-divergencias-quanto-a-assad-1550971" title="Obama e Putin pedem o fim da violência na Síria mas mantêm divergências quanto a Assad">Obama e Putin pedem o fim da violência na Síria mas mantêm divergências quanto a Assad</a></h2>
+	            
+	            <div class="entry-body">
+	                <p class="author">Agências</p>
+		            <p>Dois dias depois de ter sido suspensa a missão de observação da ONU na Síria, e no dia em que os confrontos causaram pelo menos mais 70 mortos, Barack Obama e Vadimir Putin pediram o fim da violência.</p>
+	            </div>
+	            <ul class="entry-comments">
+		            
+		            <li class="entry-comments-write"><a href="/Mundo/obama-e-putin-pedem-o-fim-da-violencia-na-siria-mas-mantem-divergencias-quanto-a-assad-1550971#Comentarios" title="Ler Coment&aacute;rios">0 Coment&aacute;rios</a>&nbsp;</li>
+                    <li class="entry-comments-facebook"><a href="javascript:void(0);" onclick="Publico.Scripts.Facebook_v1.Post(1550971, 'UH');" title="Facebook">1</a></li>
+                    <li class="entry-comments-twitter"><a href="javascript:void(0);" onclick="Publico.Scripts.Twitter.Post('Obama e Putin pedem o fim da viol&#234;ncia na S&#237;ria mas mant&#234;m diverg&#234;ncias quanto a Assad', '/Mundo/obama-e-putin-pedem-o-fim-da-violencia-na-siria-mas-mantem-divergencias-quanto-a-assad-1550971', 1550971, 'UH');" title="Twitter">0</a></li>
+                    <li class="mais-temas"><b>+</b><a href="/Mundo/" title=""> MUNDO</a></li>
+	            </ul>
+	            
+            </div>
+        
+            <div class="entry ">
+	            <h2><a href="/Política/louca-portugal-precisa-de-se-revoltar-1550895" title="Louçã: "Portugal precisa de se revoltar"">Louçã: "Portugal precisa de se revoltar"</a></h2>
+	            
+	            <div class="entry-body">
+	                <p class="author">Rita Brandão Guerra</p>
+		            <p>Francisco Louçã considerou nesta segunda-feira que o país deve revoltar-se contra a austeridade e uma política de “terra queimada” que só conduz ao desastre e à falência da economia.</p>
+	            </div>
+	            <ul class="entry-comments">
+		            
+		            <li class="entry-comments-write"><a href="/Política/louca-portugal-precisa-de-se-revoltar-1550895#Comentarios" title="Ler Coment&aacute;rios">19 Coment&aacute;rios</a>&nbsp;</li>
+                    <li class="entry-comments-facebook"><a href="javascript:void(0);" onclick="Publico.Scripts.Facebook_v1.Post(1550895, 'UH');" title="Facebook">24</a></li>
+                    <li class="entry-comments-twitter"><a href="javascript:void(0);" onclick="Publico.Scripts.Twitter.Post('Lou&#231;&#227;: &quot;Portugal precisa de se revoltar&quot;', '/Política/louca-portugal-precisa-de-se-revoltar-1550895', 1550895, 'UH');" title="Twitter">0</a></li>
+                    <li class="mais-temas"><b>+</b><a href="/Política/" title=""> POLÍTICA</a></li>
+	            </ul>
+	            <ul class="entry-links">
+	                    
+		                    <li><a href="/Política/psd-europa-vai-poder-respirar-um-pouco-de-alivio_1550919" title="#">PSD: "Europa vai poder respirar um pouco de alívio"</a></li>
+		                
+		                    <li><a href="/Política/cds-resultado-pode-ser-positivo-para-grecia-e-europa_1550892" title="#">CDS: resultado pode ser positivo para Grécia e Europa</a></li>
+		                
+		                    <li><a href="/Política/pcp-grecia-continua-a-condenar-politicas-de-destruicao-social_1550920" title="#">PCP: Grécia continua a condenar políticas de "destruição social"</a></li>
+		                
+                </ul>
+            </div>
+        
+            <div class="entry ">
+	            <h2><a href="http://ecosfera.publico.pt/noticia.aspx?id=1550908" title="Renováveis contribuíram com 24,6% para consumo de energia em 2010">Renováveis contribuíram com 24,6% para consumo de energia em 2010</a></h2>
+	            
+	            <div class="entry-body">
+	                <p class="author">Fábio Monteiro</p>
+		            <p>Em 2010, a energia de fontes renováveis contribuiu com 12,4% do consumo final bruto de energia na UE. Em Portugal essa percentagem foi de 24,6%, segundos dados divulgados pelo Eurostat.</p>
+	            </div>
+	            <ul class="entry-comments">
+		            
+		            <li class="entry-comments-write"><a href="http://ecosfera.publico.pt/noticia.aspx?id=1550908#Comentarios" title="Ler Coment&aacute;rios">19 Coment&aacute;rios</a>&nbsp;</li>
+                    <li class="entry-comments-facebook"><a href="javascript:void(0);" onclick="Publico.Scripts.Facebook_v1.Post(1550908, 'UH');" title="Facebook">0</a></li>
+                    <li class="entry-comments-twitter"><a href="javascript:void(0);" onclick="Publico.Scripts.Twitter.Post('Renov&#225;veis contribu&#237;ram com 24,6% para consumo de energia em 2010', 'http://ecosfera.publico.pt/noticia.aspx?id=1550908', 1550908, 'UH');" title="Twitter">0</a></li>
+                    <li class="mais-temas"><b>+</b><a href="http://ecosfera.publico.pt" title=""> ECOSFERA</a></li>
+	            </ul>
+	            
+            </div>
+        
+            <div class="entry ">
+	            <h2><a href="/Mundo/suu-kyi-encontrase-com-bono-e-vai-a-irlanda-assistir-a-concerto-em-sua-homenagem-1550942" title="Suu Kyi encontra-se com Bono e vai à Irlanda assistir a concerto em sua homenagem">Suu Kyi encontra-se com Bono e vai à Irlanda assistir a concerto em sua homenagem</a></h2>
+	            
+<div class="entry-img">
+    <div class="entry-img-wrap">
+        <ul>
+            <li>
+                <a href="/Mundo/suu-kyi-encontrase-com-bono-e-vai-a-irlanda-assistir-a-concerto-em-sua-homenagem-1550942" title="Suu Kyi encontra-se com Bono e vai à Irlanda assistir a concerto em sua homenagem"><img src="http://imagens.publico.pt/imagens.aspx/1458631?tp=UH&amp;db=DESTAQUES&amp;w=360&amp;h=0&amp;act=resize&t=1340083985,01351" alt="" title="" /></a>
+		        
+		        <div class="entry-img-author"></div>
+	        </li>
+        </ul>
+	</div>
+	
+</div>
+	            <div class="entry-body">
+	                <p class="author">Isabel Gorjão Santos</p>
+		            <p>Bono ficou “deslumbrado”, Aung Sun Suu Kyi esteve sempre sorridente. A estrela dos U2 e a líder da oposição birmanesa encontraram-se nesta segunda-feira e deram uma conferência de imprensa em Oslo.</p>
+	            </div>
+	            <ul class="entry-comments">
+		            
+		            <li class="entry-comments-write"><a href="/Mundo/suu-kyi-encontrase-com-bono-e-vai-a-irlanda-assistir-a-concerto-em-sua-homenagem-1550942#Comentarios" title="Ler Coment&aacute;rios">1 Coment&aacute;rios</a>&nbsp;</li>
+                    <li class="entry-comments-facebook"><a href="javascript:void(0);" onclick="Publico.Scripts.Facebook_v1.Post(1550942, 'UH');" title="Facebook">13</a></li>
+                    <li class="entry-comments-twitter"><a href="javascript:void(0);" onclick="Publico.Scripts.Twitter.Post('Suu Kyi encontra-se com Bono e vai &#224; Irlanda assistir a concerto em sua homenagem', '/Mundo/suu-kyi-encontrase-com-bono-e-vai-a-irlanda-assistir-a-concerto-em-sua-homenagem-1550942', 1550942, 'UH');" title="Twitter">0</a></li>
+                    <li class="mais-temas"><b>+</b><a href="/Mundo/" title=""> MUNDO</a></li>
+	            </ul>
+	            
+            </div>
+        
+            <div class="entry ">
+	            <h2><a href="/Mundo/salman-bin-abdulaziz-foi-nomeado-principe-herdeiro-da-arabia-saudita-1550928" title="Salman bin Abdulaziz foi nomeado príncipe herdeiro da Arábia Saudita">Salman bin Abdulaziz foi nomeado príncipe herdeiro da Arábia Saudita</a></h2>
+	            
+	            <div class="entry-body">
+	                <p class="author">PÚBLICO</p>
+		            <p>O rei Abdullah da Arábia Saudita nomeou o príncipe Salman bin Abdulaziz como príncipe herdeiro e seu sucessor, após a morte, no sábado, do príncipe Nayef ben Abdel Aziz, aos 78 anos.</p>
+	            </div>
+	            <ul class="entry-comments">
+		            
+		            <li class="entry-comments-write"><a href="/Mundo/salman-bin-abdulaziz-foi-nomeado-principe-herdeiro-da-arabia-saudita-1550928#Comentarios" title="Ler Coment&aacute;rios">1 Coment&aacute;rios</a>&nbsp;</li>
+                    <li class="entry-comments-facebook"><a href="javascript:void(0);" onclick="Publico.Scripts.Facebook_v1.Post(1550928, 'UH');" title="Facebook">1</a></li>
+                    <li class="entry-comments-twitter"><a href="javascript:void(0);" onclick="Publico.Scripts.Twitter.Post('Salman bin Abdulaziz foi nomeado pr&#237;ncipe herdeiro da Ar&#225;bia Saudita', '/Mundo/salman-bin-abdulaziz-foi-nomeado-principe-herdeiro-da-arabia-saudita-1550928', 1550928, 'UH');" title="Twitter">0</a></li>
+                    <li class="mais-temas"><b>+</b><a href="/Mundo/" title=""> MUNDO</a></li>
+	            </ul>
+	            <ul class="entry-links">
+	                    
+		                    <li><a href="/Mundo/quem-e-o-futuro-rei-da-arabia-saudita_1550815" title="#">Quem é o futuro rei da Arábia Saudita?</a></li>
+		                
+                </ul>
+            </div>
+        
+    </div>
+
+<div class="maisnoticias box">
+    <h2><span class="titlebar-title">Outros destaques</span> </h2>
+    <ul class="ultimasnoticias-lista">
+        <li> 
+            <a href="/Política/mocao-de-censura-do-pcp-ao-governo-e-um-fait-divers-1550916"><b>Política -</b>Menezes considera moção de censura ao Governo um “fait divers”</a> 
+        </li><li> 
+            <a href="/Mundo/a-greve-dos-mineiros-das-asturias-ja-nao-e-so-deles-1550914"><b>Mundo -</b>A greve dos mineiros das Astúrias já não é só deles</a> 
+        </li><li> 
+            <a href="/Mundo/maioria-absoluta-do-ps-travou-entrada-de-marine-le-pen-no-parlamento-frances-1550806"><b>Mundo -</b>Maioria absoluta do PS travou entrada de Marine Le Pen no Parlamento francês</a> 
+        </li><li> 
+            <a href="/Sociedade/sociedade-de-advogados-processada-por-cliente-inconformado-com-a-forma-como-foi-defendido-1550862"><b>Sociedade -</b>Sociedade de advogados processada por cliente inconformado com a forma como foi defendido</a> 
+        </li><li> 
+            <a href="/Ciências/campeoes-de-robotica-a-caminho-do-mexico-1550886"><b>Ciências -</b>Campeões de robótica a caminho do México</a> 
+        </li><li> 
+            <a href="/Ciências/cargueiro-chines-tripulado-acopla-automaticamente-ao-laboratorio-espacial-tiangong1-1550904"><b>Ciências -</b>Cargueiro chinês tripulado acoplou ao laboratório espacial</a> 
+        </li>
+    </ul>
+</div>
+
+            </div>
+        </div>
+        <div id="sidebar">
+            <div id="Miau">
+            </div>
+            
+<div class="maisnoticias">
+    
+    <a href="http://www.publico.pt/Hoje">
+        <img src="http://static.publico.pt/files/home/images/bannerEdImpressa.png" width="300" height="69" alt="Link para as Capas de Hoje do P�blico" />
+    </a>
+</div>
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://ads.clix.pt/www/delivery/ajs.php':'http://ads.clix.pt/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=1402");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a href='http://ads.clix.pt/www/delivery/ck.php?n=ac2067b2&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://ads.clix.pt/www/delivery/avw.php?zoneid=1402&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=ac2067b2' border='0' alt='' /></a></noscript><div class="pub" id="main300x250">
+	<h2>Pub</h2>
+	<script type="text/javascript">
+		try{ Comunique.tag('PublicoHomepage300x250');} catch(e){}
+//		try{ Comunique.tag('PublicoUltimaHora300x250');} catch(e){}
+	</script>
+</div><script type='text/javascript'><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://ads.clix.pt/www/delivery/ajs.php':'http://ads.clix.pt/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=2292");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a href='http://ads.clix.pt/www/delivery/ck.php?n=af5c86f1&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://ads.clix.pt/www/delivery/avw.php?zoneid=2292&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=af5c86f1' border='0' alt='' /></a></noscript>
+
+<link href="http://static.publico.pt/files/assinaturas/assinaturas.css?1=4" rel="Stylesheet" type="text/css" />
+<script type='text/javascript'><!--    //<![CDATA[
+    var m3_u = (location.protocol == 'https:' ? 'https://ads.clix.pt/www/delivery/ajs.php' : 'http://ads.clix.pt/www/delivery/ajs.php');
+    var m3_r = Math.floor(Math.random() * 99999999999);
+    if (!document.MAX_used) document.MAX_used = ',';
+    document.write("<scr" + "ipt type='text/javascript' src='" + m3_u);
+    document.write("?zoneid=2892");
+    document.write('&amp;cb=' + m3_r);
+    if (document.MAX_used != ',') document.write("&amp;exclude=" + document.MAX_used);
+    document.write(document.charset ? '&amp;charset=' + document.charset : (document.characterSet ? '&amp;charset=' + document.characterSet : ''));
+    document.write("&amp;loc=" + escape(window.location));
+    if (document.referrer) document.write("&amp;referer=" + escape(document.referrer));
+    if (document.context) document.write("&context=" + escape(document.context));
+    if (document.mmm_fo) document.write("&amp;mmm_fo=1");
+    document.write("'><\/scr" + "ipt>");
+//]]>--></script><noscript><a href='http://ads.clix.pt/www/delivery/ck.php?n=a9808a1c&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://ads.clix.pt/www/delivery/avw.php?zoneid=2892&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a9808a1c' border='0' alt='' /></a></noscript>
+<div class="box" id="subscriber-content">
+    <h2><span class="titlebar-title">Exclusivo Assinantes</span></h2>
+    <div class="subscriber-content-wrapper clearfix">
+	    <ul class="ultimasnoticias-lista">
+
+            <li>
+	            <div class="featured clearfix">
+                    <img alt="" src="http://imagens.publico.pt/imagens.aspx/75894?tp=EI&db=IMAGES&w=95">
+                    
+					<p class="category-type">DESTAQUE</p>
+					<h3><a target="_blank" href="http://jornal.publico.pt/noticia/18-06-2012/apenas-um-pequeno-balao-de-oxigenio-na-crise-do-euro-24744397.htm">Apenas um pequeno balão de oxigénio na crise do euro</a></h3>
+                </div> 
+	        </li>
+	        <li> 
+	            <a href="http://jornal.publico.pt/noticia/18-06-2012/portugal-fronteira-da-alemanha-24743238.htm">
+                    
+                    <span class="category-type">OPINIÃO <span class="author">José Loureiro dos Santos</span></span> 
+                    <span class="title">Portugal, fronteira da Alemanha</span>
+                    
+                </a>
+	        </li>
+	        <li> 
+	            <a href="http://jornal.publico.pt/noticia/18-06-2012/o-mundo-segundo-a-geracao-eco92-24701664.htm">
+                    
+                    <span class="category-type">PORTUGAL <span class="author">Andreia Sanches (texto) Joana Bourgard (fotos)</span></span> 
+                    <span class="title">O mundo segundo a geração Eco-92</span>
+                    
+                </a>
+	        </li>
+	        
+	        <li>
+	        	<div class="clearfix">
+            
+				        <a href="http://jornal.publico.pt"><img width="180" style="float: none; display: block; margin: 4px auto;" class="edicaoimpressa1" src="http://imagens.publico.pt/imagens.aspx/8345df2f-2a2f-42c6-a117-ca6dbce12a31?tp=EI&amp;db=EDITIONS&amp;w=180" alt="Capa P1" title="Capa P1"></a>
+                    
+                </div>
+	        </li>
+	    </ul>
+	    <p class="callout">Assine o Público Digital a partir de <strong>2,30 €</strong> e aceda a todos os conteúdos exclusivos que temos para si.</p>
+	    <p><a title="Assine o Público" class="signup" href="http://www.publico.pt/assinaturas/digital.aspx">Assinar</a><span class="visuallyhidden">.</span> Já é assinante? <a href="http://jornal.publico.pt/">Faça login.</a></p>
+    </div>
+</div><div class="pub">
+	<h2>Pub</h2>
+	<script type="text/javascript" language="javascript">
+		try {
+			Comunique.tag("PublicoHomepage300x60Btn02");
+		} catch(e){}
+	</script>
+</div><div class="pub">
+	<h2>Pub</h2>
+	<script language="JavaScript" type="text/javascript">
+		try {
+			Comunique.tag("PublicoHomepage300x60Btn04");
+		} catch(e) {}
+	</script>
+</div><div id="Tops"> 
+    <script type="text/javascript"> 
+        Publico.Scripts.Tops.Load(10, '', 10, 'Tops');
+    </script> 
+</div> 
+<div class="pub">
+        <h2>Pub</h2>
+        <script language="JavaScript" type="text/javascript">
+            getPub();
+	</script>
+</div><div class="pub">
+	<h2>Pub</h2>
+	<script type="text/javascript" language="javascript">
+		try {
+			Comunique.tag("PublicoHomepage300x60Btn06");
+		} catch(e){}
+	</script>
+</div><div class="pub">
+	<h2>Pub</h2>
+	<script type="text/javascript" language="javascript">
+		try {
+			Comunique.tag("PublicoHomepage300x60Btn01");
+		} catch(e){}
+	</script>
+</div>
+
+<div class="box box-float-container no-margin-bottom">
+    
+        <div class="entry small-features-foto noborder" style="margin-bottom:0px;padding-bottom:0px">
+			<h2>Foto do dia<span style="display:none">Foto do dia</span></h2>
+			<a class="fotoDia" href="/Fotos?id=1550872&amp;idCanal=1371&amp;w=600"><img src="http://imagens.publico.pt/imagens.aspx/387473?tp=UH&amp;db=IMAGENS&amp;w=145&amp;h=131&amp;act=cropResize&t=1340083985,01351" alt="" /></a>
+
+		</div>
+
+	
+	    <div class="bartoon box-float box-float-last">
+		    <h2 style="margin-bottom:5px"><span class="titlebar-title">Bartoon</span></h2>
+		    <a id="bartoon" title=" Bartoon 19.6.2012" href="http://imagens.publico.pt/imagens.aspx/387606?tp=UH&amp;db=IMAGENS&amp;w=970" ><img src="http://imagens.publico.pt/imagens.aspx/387607?tp=UH&amp;db=IMAGENS&amp;w=145&t=1340083985,01351" alt="" /></a>
+	    </div>
+	
+</div><div class="pub">
+	<h2>Pub</h2>
+	<script language="JavaScript" type="text/javascript">
+		try {
+			Comunique.tag("PublicoHomepage300x60Btn05");
+		} catch(e) {}
+	</script>
+</div>			<div class="pub pub-textads">
+				<h2>Pub</h2>
+                <script type="text/javascript"><!--
+                    var sas_affiliate_id = '63';
+                    var sas_site_id = '433';
+                    var sas_position_id = '349';
+                    var sas_cluster = '1';
+                    var sas_ad_width = '300';
+                    var sas_ad_height = '250';
+                    var sas_ad_format = '300x250_publico';
+                    var sas_c = '4';
+                    var sas_ad_type = 'text';
+                    var sas_location_id = '3';
+                    var sas_color_border = 'ffffff';
+                    var sas_color_link = '666666';
+                    var sas_color_bg = 'FFFFFF';
+                    var sas_color_text = '999999';
+                    var sas_color_url = '999999';
+                    var sas_ic = '50b8bae10570cef61b88ea376d502567';
+                    var sas_medium = '0';
+                //-->
+                </script><script type="text/javascript" src="http://js.sl.pt/Snippets/SAS.js"></script>
+			</div><!-- .pub -->
+
+
+
+    
+    <style type="text/css" media="screen">
+	#destaque-IP {background:url(images/Azul.jpg) no-repeat; height:130px; padding-top:82px; width:300px;}        
+	#IP_antetit {border-bottom:1px solid #666666; color:white; display:block; font-family:Helvetica,Arial,sans-serif; font-size:13px; height:18px; margin:0 26px; width:248px;}        
+	#IP_noticias {color:white; font-family:Georgia, Times, serif; font-size:13px; height:62px; line-height:14px; margin-top:7px; overflow:hidden; width:300px;}
+        #destaque-IP .items a {color:white; float:left; margin:0 20px 0 0; width:248px; height:62px; text-decoration:none;}
+        #destaque-IP .items a:hover {color:#BBB;}
+        #IP_site {font-family:Georgia, Times, serif; font-size:13px; margin:16px 26px 0 26px; text-align:center; width: 248px;}
+        #IP_site a {color:black;text-decoration:underline;}
+        #IP_site a:hover {color:#555;}
+        #destaque-IP .scrollable {position:relative; overflow:hidden; width: 248px; height:62px;}
+        #destaque-IP .scrollable .items {width:20000em; position:absolute; clear:both;}
+        #destaque-IP .items a {float:left; width:248px; height:62px;}
+        #destaque-IP .scrollable img {float:left; margin:20px 5px 20px 21px; background-color:#fff; padding:2px; border:1px solid #ccc; width:100px; height:75px; -moz-border-radius:4px; -webkit-border-radius:4px;}
+        #destaque-IP .scrollable .active {border:2px solid #000;	position:relative; cursor:default;}
+        #destaque-IP a.browse {cursor:pointer; display:block; float:left; height:62px; width:26px;}
+	#destaque-IP .left {background: url(images/seta-esq-Azul.gif) no-repeat left 8px;}
+        #destaque-IP .right {background: url(images/seta-dir-Azul.gif) no-repeat right 8px;}
+        #destaque-IP .disabled {-moz-opacity:0.5; opacity:0.5; filter:alpha(opacity=50); -khtml-opacity:0.5;  cursor:default !important;}
+    </style>
+    <div id="destaque-IP">
+		<div id="IP_antetit" style="color:#00CCFF">Últimas da edição online</div>
+		<div id="IP_noticias">
+			<!-- "previous page" action -->
+			<a class="prev browse left"></a>
+			<!-- float div -->
+			<div style="float:left;"> 		
+				<!-- root element for scrollable -->
+				<div class="scrollable"> 
+				   <!-- root element for the items -->
+				   <div class="items">5
+				   
+				      <a href="http://inimigo.publico.pt/Noticia/Detail/1550951">Manuel José e Queiroz deslocalizados para a República Checa</a>
+			       
+				      <a href="http://inimigo.publico.pt/Noticia/Detail/1550829">Pedófilos não querem divulgação da morada e telefones para não passarem a vida a levarem com publicidade e telemarketing</a>
+			       
+				      <a href="http://inimigo.publico.pt/Noticia/Detail/1550752">Ronaldo trata disfunção eréctil para conseguir comer a Holanda</a>
+			       
+				      <a href="http://inimigo.publico.pt/Noticia/Detail/1550748">Fernando Santos à frente das sondagens na Grécia</a>
+			       
+				      <a href="http://inimigo.publico.pt/Noticia/Detail/1550624">Português que transformou casa em edifício sustentável, com redução de 90% dos gastos diz que segredo foi separar-se da mulher</a>
+			       
+				   </div>
+				</div>
+			</div>
+			<!-- "next page" action -->
+			<a class="next browse right"></a>  
+			<br clear="all" />
+			<!-- javascript coding -->
+			<script type="text/javascript">
+			// execute your scripts when the DOM is ready. this is mostly a good habit
+			    var num = 5;
+			    var i2 = 0;
+			    $(function() {
+			        // initialize scrollable
+			        //$('.next').removeClass("disabled")
+			        //$(".scrollable").scrollable();
+			        $("#IP_noticias > a.prev").click(function() { $("#IP_noticias > div > div.scrollable").scrollTo({top: '0px', left: '-=268px'},600);if (i2>0) i2--; });
+			        $("#IP_noticias > a.next").click(function() { if (i2 < num-1) { $("#IP_noticias > div > div.scrollable").scrollTo({ top: '0px', left: '+=268px' }, 600) ; i2++; }});
+			    });
+			</script>
+		</div>
+		<div id="IP_site"><a href="http://inimigo.publico.pt">Mais em: inimigo.publico.pt</a></div>
+	</div>
+<div class="facebook-activity box">
+	<h2><span class="titlebar-title">Os seus amigos no Público</span></h2> <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FPublico&amp;width=320&amp;colorscheme=light&amp;show_faces=true&amp;border_color=%23fff&amp;stream=false&amp;header=false&amp;height=258&amp;locale=pt_PT" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:320px; height:258px; margin-left: -10px" allowtransparency="true"></iframe>
+	
+	<iframe src="http://www.facebook.com/plugins/activity.php?site=publico.pt&amp;width=320&amp;height=340&amp;header=false&amp;colorscheme=light&amp;font&amp;border_color=%23fff&amp;recommendations=false&amp;locale=pt_PT&amp;max_age=1&amp;linktarget=_top" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:320px; height:340px; background: #fff; margin-left: -10px; margin-top: -30px;" allowTransparency="true"></iframe>  
+</div>
+    <div class="meteorologia box newslist" id="box-Meteorologia">
+        <h2>
+		    <span class="titlebar-title"><a href="http://tempo.publico.pt/" title="Meteorologia">Meteorologia</a></span>
+		    <span class="titlebar-url"><a href="http://tempo.publico.pt/" title="Meteorologia">tempo.publico.pt</a></span>
+	    </h2>
+	    <div class="escondemenu">
+            <ul class="sub-menu">
+                
+                <li class="on"><a href="javascript:void(0);" onclick="getWeather('Lisboa','http://tempo.publico.pt/MeteoHP/GetWeatherForecast/')">Lisboa</a></li>
+                <li><a href="javascript:void(0);" onclick="getWeather('Porto','http://tempo.publico.pt/MeteoHP/GetWeatherForecast/')">Porto</a></li>
+                <li><a href="javascript:void(0);" onclick="getWeather('Faro','http://tempo.publico.pt/MeteoHP/GetWeatherForecast/')">Faro</a></li>
+                <li><a href="javascript:void(0);" onclick="getWeather('Funchal','http://tempo.publico.pt/MeteoHP/GetWeatherForecast/')">Funchal</a></li>
+                <li><a href="javascript:void(0);" onclick="getWeather('Ponta Delgada','http://tempo.publico.pt/MeteoHP/GetWeatherForecast/')">Ponta Delgada</a></li>
+                
+                <li><a href="javascript:void(0);" onclick="getWeather('Aveiro','http://tempo.publico.pt/MeteoHP/GetWeatherForecast/')">Aveiro</a></li>
+                <li><a href="javascript:void(0);" onclick="getWeather('Beja','http://tempo.publico.pt/MeteoHP/GetWeatherForecast/')">Beja</a></li>
+                <li><a href="javascript:void(0);" onclick="getWeather('Braga','http://tempo.publico.pt/MeteoHP/GetWeatherForecast/')">Braga</a></li>
+                <li><a href="javascript:void(0);" onclick="getWeather('Bragança','http://tempo.publico.pt/MeteoHP/GetWeatherForecast/')">Bragança</a></li>
+                <li><a href="javascript:void(0);" onclick="getWeather('Castelo Branco','http://tempo.publico.pt/MeteoHP/GetWeatherForecast/')">Castelo Branco</a></li>
+                <li><a href="javascript:void(0);" onclick="getWeather('Coimbra','http://tempo.publico.pt/MeteoHP/GetWeatherForecast/')">Coimbra</a></li>
+                <li><a href="javascript:void(0);" onclick="getWeather('Évora','http://tempo.publico.pt/MeteoHP/GetWeatherForecast/')">&#201;vora</a></li>
+                <li><a href="javascript:void(0);" onclick="getWeather('Guarda','http://tempo.publico.pt/MeteoHP/GetWeatherForecast/')">Guarda</a></li>
+                <li><a href="javascript:void(0);" onclick="getWeather('Leiria','http://tempo.publico.pt/MeteoHP/GetWeatherForecast/')">Leiria</a></li>
+                <li><a href="javascript:void(0);" onclick="getWeather('Portalegre','http://tempo.publico.pt/MeteoHP/GetWeatherForecast/')">Portalegre</a></li>
+                <li><a href="javascript:void(0);" onclick="getWeather('Santarém','http://tempo.publico.pt/MeteoHP/GetWeatherForecast/')">Santarém</a></li>
+                <li><a href="javascript:void(0);" onclick="getWeather('Setúbal','http://tempo.publico.pt/MeteoHP/GetWeatherForecast/')">Setúbal</a></li>
+                <li><a href="javascript:void(0);" onclick="getWeather('Viana do Castelo','http://tempo.publico.pt/MeteoHP/GetWeatherForecast/')">Viana do Castelo</a></li>            
+                <li><a href="javascript:void(0);" onclick="getWeather('Vila Real','http://tempo.publico.pt/MeteoHP/GetWeatherForecast/')">Vila Real</a></li>
+                <li><a href="javascript:void(0);" onclick="getWeather('Viseu','http://tempo.publico.pt/MeteoHP/GetWeatherForecast/')">Viseu</a></li>
+            </ul>
+        </div>
+        <div class="menubt">
+        	<a href="javascript:void(0)" onclick="previousLocation()" class="menubtesquerda"> </a>
+            <a href="javascript:void(0)" onclick="nextLocation()" class="menubtdireita"> </a>
+        </div>
+	    <div id="MeteoContainer">
+	        <script type="text/javascript">
+	            $(document).ready(function() {
+	                getWeather('Lisboa', 'http://tempo.publico.pt/MeteoHP/GetWeatherForecast/');
+	            });
+	        </script>
+	    </div>
+        <span><a href="http://tempo.publico.pt/">Consulte a previsão para os próximos 15 dias</a></span>
+    </div>
+<div class="imobiliario box">
+	<h2><span class="titlebar-title">Imobili&aacute;rio</span></h2>
+	<div class="box-float-container" id="box-Imobiliario">
+    
+        <a href="http://www.publico.clix.pt/Homepage/Includes/Imobiliario/imob/Imobiliario.pdf"><img src="http://imagens.publico.pt/imagens.aspx/386786?tp=UH&amp;db=IMAGENS&amp;w=140&t=1340083985,01351" alt="Imobili�rio" /></a>
+        <h3></h3>
+    	
+	</div>
+</div>
+
+<div class="cargaetransportes box newslist" id="box-CargaTransporte">
+	<h2><span class="titlebar-title"><a href="http://static.publico.pt/carga_transportes/">Carga e Transportes</a></span></h2>
+    
+	<ul>
+		<li>
+			<p class="category-type">Ferrovia é fundamental</p>
+			<h3><a href="http://www.publico.pt/carga_transportes/Noticia/1550824">Economia ganha com transporte intermodal</a></h3>
+		</li>
+		<li>
+			<p class="category-type">Dia 22 de Junho na Figueira da Foz</p>
+			<h3><a href="http://www.publico.pt/carga_transportes/Noticia/1550820">Logística para o centro da Ibéria em análise</a></h3>
+		</li>
+		<li>
+			<p class="category-type">A fábrica de aviões funcionará em Julho</p>
+			<h3><a href="http://www.publico.pt/carga_transportes/Noticia/1550812">Porto de Setúbal recebe equipamentos para Embraer em Évora</a></h3>
+		</li>
+	</ul>
+    
+</div>
+        </div>
+    </div>
+    <div id="extra-content" class="wrap">
+	    <div class="pub">
+		    <h2>Pub</h2>	    
+		    <script type="text/javascript">
+		        //clix_dfp_tag('publicohome', '', '990', '40');
+		        try { Comunique.tag("PublicoHomepage990x40"); } catch (e) { }
+		    </script>
+	    </div>
+		<div class="suplement-features">
+			<div class="cinecartaz box" id="box-Cinema"></div>
+			<div class="ipsilon box" id="box-Ipsilon"></div>
+			<div class="guialazer box" id="box-Lazer"></div>
+		</div>
+	</div>
+    <script language="javascript" type="text/javascript">
+        var WRP_ID = 294353;
+        var WRP_SECTION = 'HP';
+        var WRP_SUBSECTION = 'HOME';
+        var WRP_CONTENT = 'Home';
+        var WRP_CHANNEL;
+        wreport_ok = 0;
+        var WRP_ACC;
+        $(document).ready(function () {
+            $("#pub998x30").css("height", "30px");
+        });
+    </script>
+    <script language="javascript" src="http://www.publico.pt/includes/JS/netscope2.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+        if (wreport_ok == 1) {
+            var w_counter = new wreport_counter(WRP_SECTION, WRP_SUBSECTION, WRP_ID, WRP_ACC, WRP_CHANNEL);
+            w_counter.add_content(WRP_CONTENT);
+            w_counter.count();
+        }
+
+        $(document).ready(function () {
+            $(".submenumaislidas li").eq(3).html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+        })
+    </script>
+
+    
+
+    <div id="footer" class="wrap">
+        <div class="pub pub-wide pub-textads" style="text-align:center">
+		    <h2>Pub</h2>
+            <script type="text/javascript"><!--
+                var sas_affiliate_id = '63';
+                var sas_site_id = '433';
+                var sas_position_id = '337';
+                var sas_cluster = '1';
+                var sas_ad_width = '728';
+                var sas_ad_height = '90';
+                var sas_ad_format = '728x90_publico';
+                var sas_c = '4';
+                var sas_ad_type = 'text';
+                var sas_location_id = '8';
+                var sas_color_border = 'ffffff';
+                var sas_color_link = '666666';
+                var sas_color_bg = 'FFFFFF';
+                var sas_color_text = '999999';
+                var sas_color_url = '999999';
+                var sas_ic = '0d71a40cba1e047f44f3564dc5a2350f';
+                var sas_medium = '0';
+            //--></script>
+            <script type="text/javascript" src="http://js.sl.pt/Snippets/SAS.js"></script>
+        </div>
+        <div class="category-features" id="category-features">
+			<div class="box-float-container">
+				<div id="category-Política" class="category-politica category-box box newslist box-float">
+					<h2><span class="titlebar-title">Pol&iacute;tica</span> <span class="titlebar-url"><a href="/Política" title="Política">mais</a></span></h2>
+				</div>
+				<div id="category-Mundo" class="category-mundo category-box box newslist box-float">
+					<h2><span class="titlebar-title">Mundo</span> <span class="titlebar-url"><a title="Mundo" href="/Mundo">mais</a></span></h2>
+				</div>
+				<div id="category-Desporto" class="category-desporto category-box box newslist box-float">
+					<h2><span class="titlebar-title">Desporto</span> <span class="titlebar-url"><a title="Desporto" href="http://desporto.publico.pt">mais</a></span></h2>
+				</div>
+				<div id="category-Economia" class="category-economia category-box box newslist box-float box-float-last">
+					<h2><span class="titlebar-title">Economia</span> <span class="titlebar-url"><a title="Economia" href="http://economia.publico.pt">mais</a></span></h2>
+				</div>
+			</div>
+			<div class="box-float-container">
+				<div id="category-Educação" class="category-educacao category-box box newslist box-float">
+					<h2><span class="titlebar-title">Educa&ccedil;&atilde;o</span> <span class="titlebar-url"><a href="/Educação" title="Educação">mais</a></span></h2>
+				</div>
+				<div id="category-Sociedade" class="category-sociedade category-box box newslist box-float">
+					<h2><span class="titlebar-title">Sociedade</span> <span class="titlebar-url"><a title="Sociedade" href="/Sociedade">mais</a></span></h2>
+				</div>
+				<div id="category-Ecosfera" class="category-ecosfera category-box box newslist box-float">
+					<h2><span class="titlebar-title">Ecosfera</span> <span class="titlebar-url"><a title="Ecosfera" href="http://ecosfera.publico.pt">mais</a></span></h2>
+				</div>
+				<div id="category-Ciências" class="category-ciencias category-box box newslist box-float box-float-last">
+					<h2><span class="titlebar-title">Ci&ecirc;ncias</span> <span class="titlebar-url"><a title="Ciência" href="/Ciências">mais</a></span></h2>
+				</div>
+			</div>
+			<div class="box-float-container">
+				<div id="category-Local" class="category-local category-box box newslist box-float">
+					<h2><span class="titlebar-title">Local</span> <span class="titlebar-url"><a title="Local" href="/local">mais</a></span></h2>
+				</div>
+				<div id="category-Cultura" class="category-cultura category-box box newslist box-float">
+					<h2><span class="titlebar-title">Cultura</span> <span class="titlebar-url"><a title="Cultura" href="/Cultura">mais</a></span></h2>
+				</div>
+				<div id="category-Tecnologia" class="category-tecnologia category-box box newslist box-float">
+					<h2><span class="titlebar-title">Tecnologia</span> <span class="titlebar-url"><a title="Tecnologia" href="/Tecnologia">mais</a></span></h2>
+				</div>
+				<div id="category-Media" class="category-media category-box box newslist box-float box-float-last">
+					<h2><span class="titlebar-title">Media</span> <span class="titlebar-url"><a title="Media" href="/Media">mais</a></span></h2>
+				</div>
+			</div>
+		</div>
+		
+<div class="loja box">
+    <h2>
+		<span class="titlebar-title"><a title="loja.publico.pt" href="http://loja.publico.pt"><img src="http://static.publico.pt/files/home/images/letter-loja.png?t=1340083985,01351" width="124" height="20" alt="Loja Público" /></a></span>
+		<span class="titlebar-url"><a title="loja.publico.pt" href="http://loja.publico.pt">loja.publico.pt</a></span>
+	</h2>
+</div>
+
+<div class="loja-container">
+    
+</div>
+
+<link rel="stylesheet" href="http://static.publico.pt/digital/css/rodape.css" />
+<!--<script type="text/javascript" src="http://static.publico.pt/files/framework/js/libs/jquery-1.6.1.min.js"></script>-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#digital-opcoes').children().hover(function () {
+            $(this).siblings().stop().fadeTo(500, 0.5);
+        }, function () {
+            $(this).siblings().stop().fadeTo(500, 1);
+        });
+    });
+</script>
+<div id="digital-rodape">
+	<a id="home" href="http://static.publico.pt/digital/" title="P&uacute;blico Digital" target="_blank">P&uacute;blico<span>Digital</span></a>
+	<div class="clearfix"></div>
+    <ul id="digital-opcoes" class="clearfix">
+    	<li>
+        	<a href="http://static.publico.pt/digital/publico-mobile.php" target="_blank">
+				<img src="http://static.publico.pt/digital/img/rodape/01.png" width="52" height="98" alt="Sites Mobile" />
+            <h2>Sites Mobile</h2>
+                <p>Aceda ao P&uacuteblico atrav&eacute;s do<br />
+                seu telem&oacute;vel ou smartphone.</p>
+            </a>
+        </li>
+        <li>
+        	<a href="http://static.publico.pt/digital/publico-iphone.php" target="_blank">
+				<img src="http://static.publico.pt/digital/img/rodape/02.png" width="49" height="98" alt="Aplica&ccedil&otilde;es Mobile" />
+        <h2>Aplica&ccedil&otilde;es Mobile</h2>
+                <p>N&atilde;o perca toda a actualidade<br />
+                na palma da sua m&atilde;o.</p>
+            </a>
+        </li>
+		<li>
+        	<a href="http://static.publico.pt/digital/publico-ipad.php" target="_blank">
+				<img src="http://static.publico.pt/digital/img/rodape/03.png" width="123" height="98" alt="Tablet" />
+        <h2>Tablet</h2>
+                <p>Toda a informa&ccedil&atilde;o ao minuto<br />
+                de forma din&acirc;mica e interactiva</p>
+            </a>
+        </li>
+		<li>
+        	<a href="http://static.publico.pt/digital/publico-kindle.php" target="_blank">
+				<img src="http://static.publico.pt/digital/img/rodape/04.png" width="58" height="98" alt="Kindle" style="margin-top:3px;" />
+        <h2>Kindle</h2>
+                <p>Receba o seu jornal di&aacute;rio<br />
+                sem fios</p>
+            </a>
+        </li>
+		<li class="last">
+        	<a href="http://static.publico.pt/assinaturas/digital.aspx" target="_blank">
+				<img src="http://static.publico.pt/digital/img/rodape/05.png" width="154" height="98" alt="Assinaturas" style="margin-top:6px;" />
+        <h2>Assinaturas</h2>
+                <p>Subscreva o P&uacuteblico a partir<br />
+                de 2,30&euro; por semana.</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="copyright">
+	<p>&copy; 2012 P&Uacute;BLICO Comunica&ccedil;&atilde;o Social SA - 
+	Directora: <a class="option-enviar iframe" href="http://www.publico.pt/send.aspx?opt=5&amp;id=70">Bárbara Reis</a> - 
+	Directora executiva: <a class="option-enviar iframe" href="http://www.publico.pt/send.aspx?opt=5&amp;id=509">Simone Duarte</a> -  
+	Editores: <a class="option-enviar iframe" href="http://www.publico.pt/send.aspx?opt=5&amp;id=510">Luciano Alvarez</a>, <a class="option-enviar iframe" href="http://www.publico.pt/send.aspx?opt=5&amp;id=516">Victor Ferreira</a>
+    <br />Editor de plataformas e multimédia: <a class="option-enviar iframe" href="http://www.publico.pt/send.aspx?opt=5&amp;id=492">S&eacute;rgio B. Gomes</a>
+	 -
+	Webmaster: <a class="option-enviar iframe" href="http://www.publico.pt/send.aspx?opt=5&amp;id=314">Paulo Almeida</a> - 
+    <a href="http://static.publico.pt/publicidade/online/">Publicidade Online</a> -
+	<a href="http://static.publico.pt/homepage/publicidade/default.aspx">Publicidade</a> - 
+	<a class="option-enviar iframe" href="http://www.publico.pt/send.aspx?opt=5&amp;id=448">Webdesign</a> - 
+	<a class="option-enviar iframe" href="http://www.publico.pt/send.aspx?opt=5&amp;id=501">Provedor dos Leitores</a></p>
+</div>
+
+    </div>
+        
+    <script type="text/javascript">
+        //clix_dfp_tag('publicohome', '', '1', '1');
+        try { Comunique.tag("PublicoHomepage1x1"); } catch (e) { }
+    </script>
+
+    <div style="margin: 0 auto; width: 728px;">
+        <script language="JavaScript" type="text/javascript">
+            
+            try { Comunique.tag("PublicoHomepage728x90"); } catch (e) { }
+        </script>
+    
+        <script language="JavaScript" type="text/javascript">
+            //ord = Math.random() * 10000000000000000;
+            //document.write('<script language="JavaScript" src="http://ad.pt.doubleclick.net/adj/ppt_home_footer/;dcopt=ist;sz=728x90;ord=' + ord + '?" type="text/javascript"><\/script>');
+            try { Comunique.tag("PublicoHomepage728x90"); } catch (e) { }
+        </script>
+    </div>
+    
+
+    <script type="text/javascript">
+//        _uacct = "UA-554722-1";
+//        _udn = "clix.pt";
+//        _userv = 2;
+//        urchinTracker();
+        var doNewsRefresh = true;
+        doNewsRefresh = false;
+    </script>
+    <script src="/Scripts/Publico.js?id=7" type="text/javascript"></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-15474788-1']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+
+    
+    
+    <script src="http://data.publico.pt/content/scripts/FacebookV3.js" type="text/javascript"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+//            $(".pub").each(function () {
+//                if ($(this).eq(0).height() <= 14)
+//                    $(this).hide();
+//            });
+
+            if ($("#verMapa").length > 0) {
+                $("#verMapa").fancybox({
+                    'frameWidth': 990,
+                    'frameHeight': 590,
+                    'hideOnContentClick': false
+                });
+            }
+        });
+
+        $(document).ready(function () {
+            $("#topbar").find("#sim").click(function () {
+                this.style.behavior = 'url(#default#homepage)'; this.setHomePage('http://www.publico.pt')
+                $('#topbar').hide(100);
+                var exdate = new Date();
+                exdate.setDate(exdate.getDate() + 365);
+                var c_value = escape(1) + ((7 == null) ? "" : "; expires=" + exdate.toUTCString());
+                document.cookie = "PUBLICO_HOMEPAGE=" + c_value;
+            });
+            $("#topbar").find("#nao").click(function () {
+                $('#topbar').hide(100);
+
+                var exdate = new Date();
+                exdate.setDate(exdate.getDate() + 7);
+                var c_value = escape(1) + ((7 == null) ? "" : "; expires=" + exdate.toUTCString());
+                document.cookie = "PUBLICO_HOMEPAGE=" + c_value;
+            });
+            $("#topbar").find("#close").click(function () {
+                $('#topbar').hide(100);
+            });
+        });
+
+    </script>
+    
+    <script type="text/javascript">
+        var keyCode = 0;
+        var cancel = false;
+        document.onkeydown = checkKeyCode;
+        document.onkeyup = function () {
+            if (!cancel) keyCode = 0;
+        };
+        function checkKeyCode(e) { 
+            if (window.event) {
+                keyCode = window.event.keyCode;
+            } else if (e) {
+                keyCode = e.which;
+            }
+        }
+
+        $(document).ready(function () {
+            setTimeout("bindClick()", 1000);
+        });
+
+        function bindClick() {
+            $("a").each(function () {
+                if (!$.data(this, "events")) {
+                    var url = $(this).attr("href");
+                    if (url.indexOf("javascript") == -1) {
+                        $(this).bind("click", function (d) {
+                            cancel = true;
+                            try {
+                                var url = $(this).attr("href");
+
+                                var div = $(this).closest("div");
+                                var parentDiv = div.parent().closest("div");
+                                var maxDiv = parentDiv.parent().closest("div");
+
+                                var location = "";
+                                var divClass = div.attr("class");
+                                var parentDivClass = parentDiv.attr("class");
+                                var maxDivClass = maxDiv.attr("class");
+
+                                if (div.find("h2").length == 1) {
+                                    location = getLocation(div);
+                                } else if (parentDiv.find("h2").length == 1) {
+                                    location = getLocation(parentDiv);
+                                } else if (maxDiv.find("h2").length == 1) {
+                                    location = getLocation(maxDiv);
+                                }
+
+                                if (location == "" || location == null) {
+                                    if (parentDivClass == "headlines") {
+                                        if (divClass.indexOf("main") > -1)
+                                            location = "DESTAQUE ESQUERDO";
+                                        else
+                                            location = "DESTAQUE CENTRAL"
+                                    } else if (parentDivClass.indexOf("subscriber") > -1 || divClass.indexOf("subscriber") > -1) {
+                                        location = "CAIXA ASSINANTES"
+                                    } else if (divClass == "maisnoticias box") {
+                                        location = "ULTIMAS NOTICIAS"
+                                    } else if (divClass.indexOf("videos") > -1) {
+                                        location = "VIDEO HP"
+                                    } else if (maxDivClass == "topStories") {
+                                        location = "DESTAQUES CABEÇA"
+                                    } else if (divClass == "mainMenu") {
+                                        location = "MENU SECÇOES"
+                                    } else if (parentDivClass == "topBar") {
+                                        location = "MENU TOPO"
+                                    } else if (parentDivClass == "subBar") {
+                                        if (divClass == "left") {
+                                            location = "MENU CENTRAL ESQUERDO"
+                                        } else {
+                                            location = "MENU CENTRAL DIREITO"
+                                        }
+                                    } else if (divClass == "maisnoticias") {
+                                        location = "CAIXA TOPS"
+                                    } else if (parentDivClass == "suplement-entry") {
+                                        location = getLocation(maxDiv.parent().closest("div").parent());
+                                    } else if (divClass == "subMenu") {
+                                        location = "SUBMENU";
+                                    }
+                                }
+
+                                if (location == "" || location == null) {
+                                    location = "OUTROS"
+                                }
+
+                                try {
+                                    _gaq.push(['_trackEvent', location, "CLICK", url]);
+                                } catch (e) {
+                                    console.log(e);
+                                }
+
+                                if (keyCode != 17 && keyCode != 91) {
+                                    setTimeout(function () {
+                                        document.location = url;
+                                    }, 1000);
+                                    return false;
+                                } else { 
+                                    keyCode = 0
+                                }
+                            } catch (e) { }
+                        });
+                    }
+                };
+            });
+
+            setTimeout("bindClick()", 1000)
+        }
+
+        function getLocation(container) {
+            if (container.find("h2").first().find("span").length > 0) {
+                if (container.find("h2").first().find("span").length > 1) {
+                    if (container.find("h2").first().find("span").find("a").length > 0) {
+                        return container.find("h2").first().find("span").first().find("a").html();
+                    } else {
+                        return container.find("h2").first().find("span").first().html();
+                    }
+                } else {
+                    if (container.find("h2").first().find("span a").length > 0) {
+                        return container.find("h2").first().find("span a").html();
+                    } else {
+                        return container.find("h2").first().find("span").html();
+                    }
+                }
+            }
+            return "";
+        }
+    </script>
+
+</body>
+</html>

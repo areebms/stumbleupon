@@ -1,0 +1,535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	 
+	<!-- Meta Data -->
+		<meta name="generator" content="Simple PHP Blog" />
+	<link rel="alternate" type="application/rss+xml" title="Get RSS 2.0 Feed" href="rss.php" />
+	<link rel="alternate" type="application/rdf+xml" title="Get RDF 1.0 Feed" href="rdf.php" />
+	<link rel="alternate" type="application/atom+xml" title="Get Atom 0.3 Feed" href="atom.php" />
+	
+	<!-- Meta Data -->
+	<!-- http://dublincore.org/documents/dces/ -->
+	<meta name="dc.title"       content="Stress Management" />
+	<meta name="author"         content="Resources For Attorneys sm@resourcesforattorneys.com" />
+	<meta name="dc.creator"     content="Resources For Attorneys sm@resourcesforattorneys.com" />
+	<meta name="dc.subject"     content="stress management,stress,management,anxiety,relaxation,laughter,yoga,meditation,aromatherapy
+" />
+	<meta name="keywords"       content="stress management,stress,management,anxiety,relaxation,laughter,yoga,meditation,aromatherapy
+" />
+	<meta name="dc.description" content="A collection of articles, posts and editorials regarding stress, it&#039;s causes and how to manage stress." />
+	<meta name="description"    content="A collection of articles, posts and editorials regarding stress, it&#039;s causes and how to manage stress." />
+	<meta name="dc.type"        content="weblog" />
+	<meta name="dc.type"        content="blog" />
+	<meta name="resource-type"  content="document" />
+	<meta name="dc.format"      scheme="IMT" content="text/html" />
+	<meta name="dc.source"      scheme="URI" content="http://www.resourcesforattorneys.com/stress/index.php" />
+	<meta name="dc.language"    scheme="RFC1766" content="Array" />
+	<meta name="dc.coverage"    content="global" />
+	<meta name="distribution"   content="GLOBAL" /> 
+	<meta name="dc.rights"      content="Copyright 2006 - 2007 by ResourcesForAttorneys.com" />
+	<meta name="copyright"      content="Copyright 2006 - 2007 by ResourcesForAttorneys.com" />
+	
+	<!-- Robots -->
+	<meta name="robots" content="ALL,INDEX,FOLLOW,ARCHIVE" />
+	<meta name="revisit-after" content="7 days" />
+	
+	<!-- Fav Icon -->
+	<link rel="shortcut icon" href="interface/favicon.ico" />
+	
+	<link rel="stylesheet" type="text/css" href="themes/modern/style.css" />
+	<style type="text/css">
+  /* OVERRIDE COLORS */
+
+  /* GENERAL SETTINGS */
+  body {
+    background-color: #CFECEC;
+    color: #000000;
+  }
+
+  hr  
+  {
+    color: #E6E6E6;
+    background-color: #E6E6E6;
+  }
+  
+  /* TYPEOGRAPHY */
+  
+  a:link, a:visited { color: #0000FF; }
+  a:hover { color: #B83C34; }
+  a:active { color: #0000FF; }
+  
+  pre {
+    width: 480px;
+    border-color: #E6E6E6;
+  }
+  
+  /* HEADERS */
+  
+  h1, h2, h3, h4, h5, h6 {
+    /* color: #000000; */
+  }
+  
+  blockquote {
+    color: #000000;
+    border-color: #E6E6E6;
+  }
+  
+  /* LAYOUT / PLACEMENT */
+  
+  #page {
+    background-color: #CFECEC;
+    border-color: #CCCCCC;
+  }
+  
+  #popup {
+    background-color: #CFECEC;
+    border-color: #CCCCCC;
+  }
+  
+  #header {
+    border-color: #CCCCCC;
+  }
+  
+  #title {
+    color: #FFFFFF;
+    border-color: #CCCCCC;
+    background-color: #B83C34;
+  }
+  
+  #footer {
+    color: #000000;
+    border-color: #CCCCCC;
+    background: #CFECEC;
+  }
+  
+  /* CONTENT */
+  
+  /* REGULAR ENTRY */
+  #content .entry .blog_title
+  {
+    border-color: #B83C34;
+    color: #ffffff;
+    background-color: #B83C34;
+  }
+  
+  #content .entry .blog_body
+  {
+    border-color: #B83C34;
+    color: #000000;
+    background-color: #F2F2F2;
+  }
+
+  #content .entry .blog_body_solid  {
+    border-color: #B83C34;
+    color: #000000;
+    background-color: #B83C34;
+  }
+  
+  #content .entry .blog_comment
+  {
+    border-color: #B83C34;
+    color: #000000;
+    background-color: #F2F2F2;
+  }
+  
+  #content .entry .blog_date,
+  #content .static .blog_date,
+  #content .comment .blog_date
+  {
+    color: #000000;
+  }
+  
+  /* STATIC ENTRY */
+  #content .static .blog_title
+  {
+    border-color: #95958C;
+    color: #666661;
+    background-color: #BEBEB5;
+  }
+  
+  #content .static .blog_body
+  {
+    border-color: #95958C;
+    color: #4F4F48;
+    background-color: #F2F2EB;
+  }
+  
+  #content .static .blog_comment
+  {
+    border-color: #95958C;
+    color: #4F4F48;
+    background-color: #F2F2EB;
+  }
+  
+  /* COMMENT ENTRY */
+  #content .comment .blog_title
+  {
+    border-color: #95958C;
+    color: #666661;
+    background-color: #BEBEB5;
+  }
+  
+  #content .comment .blog_body
+  {
+    border-color: #95958C;
+    color: #4F4F48;
+    background-color: #F2F2EB;
+  }
+  
+  #content .comment .blog_comment
+  {
+    border-color: #95958C;
+    color: #4F4F48;
+    background-color: #F2F2EB;
+  }
+  
+  /* SIDEBAR */
+  
+  #sidebar {
+    border-color: #E6E6E6;
+    background-color: #CFECEC;
+  }
+  
+  #sidebar .menu_body a:link { color: #0000FF; }
+  #sidebar .menu_body a:visited { color: #0000FF; }
+  #sidebar .menu_body a:hover { color: #B83C34; }
+  #sidebar .menu_body a:active { color: #829FD9; }
+  
+  #sidebar .menu_title {
+    border-color: #CCCCCC;
+    color: #ffffff;
+    background-color: #B83C34;
+  }
+  
+  #sidebar .menu_body {
+    border-color: #CCCCCC;
+    color: #000000;
+    background-color: #CFECEC;
+  }
+</style>
+	
+<script type="text/javascript">
+	<!--
+	// BLOG SETTINGS
+	var blogSettings = Array();
+	blogSettings['theme'] = 'modern';
+	blogSettings['img_path'] = 'themes/modern/images/';
+	blogSettings['content_width'] = 550;
+	blogSettings['menu_width'] = 200;
+	-->
+</script>
+	<script language="javascript" src="scripts/sb_javascript.js" type="text/javascript"></script>
+	
+	<title>Stress Management - Stress And Alcohol.</title>    <style type="text/css">@import "addto/addto.css";
+</style>
+</head>
+	    <body>
+    
+<P><center>
+<a href="http://www.nationallawyersdirectory.com" target="noframes"><img src="http://www.resourcesforattorneys.com/national-lawyers-directory.jpg" width="468" height="60"></a><br />
+<font color="#eeeeee">National <a href="http://www.nationallawyersdirectory.com" target="noframes">Lawyers</a> Directory</font>
+</center><P>      
+
+<center><script type="text/javascript"><!--
+google_ad_client = "pub-9363496469772843";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_channel ="";
+google_ad_type = "text";
+google_color_border = "ffffff";
+google_color_bg = "cfecec";
+google_color_link = "0000FF";
+google_color_url = "0000FF";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></center><br />
+      <div id="page">
+        <div id="header"><img src="themes/modern/images/header750x100.jpg" alt="" border="0" /></div>
+        <div id="title">Stress Management</div>        <div id="innerpage">
+          <div id="content">
+            
+<!-- BLOG ENTRY BEGIN -->
+<div class="entry">
+
+<!-- BLOG TITLE BEGIN -->
+<div class="blog_title">Stress And Alcohol.<a name="entry070430-003533">&nbsp;</a><br />
+</div>
+<!-- BLOG TITLE END -->
+
+<!-- BLOG BODY BEGIN -->
+<div class="blog_body">
+	<div class="blog_date">Monday, April 30, 2007, 12:35 AM - <a href="index.php?category=1">General</a><br />Posted by Administrator</div>
+		&quot;This is driving me to drink&quot; a once popular humours phrase is rooted in the fact that many times stress is the root cause for the consumption of alcohol.<br /><br />While it may be true that someone under stress may have a tendency to seek a good stiff drink; it is just as true that the chronic consumption of alcohol can cause stress. Moderate consumption of alcohol can actually have some beneficial effects on one&#039;s health. The problem lies when the alcohol consumption is heavy and becomes more and more frequent as a reason to relieve stress. This type of compulsive behavior over time will actually worsen the stress in one&#039;s life.<br /><br />Heavy alcohol consumption stimulates the hypothalamus, the pituitary, and the adrenal glands. A side effect of this is an increase in the amount of cortisol and adrenaline produced. Although both of these to chemicals alone don&#039;t cause stress directly, it is believed they play a role in the symptoms.<br /><br />As you may have experienced, stress makes it more difficult to concentrate and focus. These are also effects that accompany alcohol consumption. So you can see from the math that someone who is feeling the effects of stress and is under the influence of alcohol is getting a heavy does of concentration inhibition... probably at a time when they need clear thinking the most.<br /><br />Exercise is known as one of the best tools and defenses against stress. Unfortunately consumption of alcohol doesn&#039;t lend itself to motivating one to go have a workout. So, the more frequently the drinking the less frequently it is found that people engage in healthy activity.<br /><br />In addition, heavy consumption of alcohol suppresses one&#039;s appetite. Yet at the same time, alcohol is not calorie free. So again, someone who has the propensity to consume alcohol is getting a double dip by decreasing their motivation to maintain a healthy while consuming non nutritional calories provided in alcoholic beverages.<br /><br />Along with everything else in the spiral of excessive alcohol consumption and stress, comes the fact that alcohol debilitates one&#039;s mental faculties, thus making it even more difficult for the drinker to think rationally. In this state, more mistakes are made, important tasks and dates are missed or mis-timed which only heightens the stress that is already surrounding this person. In an alcoholic state, the person can literally not even think their way out of their predicament... again causing yet more stress.<br /><br />As you can see, this is a perilous cycle a person get into... the stress encourages drinking and the drinking creates scenarios that produce more stress. Although the results of alcohol and stress vary from person to person, the lesson learned is that teaching yourself to have a drink to relieve stress is not a solution or a habit to get into.<br /><br />If a person finds themselves engaged in this endless loop of self destruction, the key is to break the cycle. It is imperative that this person first finds an alternative for dealing with the stress in their life. By doing this, the individual will immediately relieve the alcohol induced stress and thus immediately reduce a significant portion of the overall stress right there.<br /><br />In many cases something as simple as proper diet and beginning an exercise program or other physical activities are an excellent starting point.<br /><br />By: Jeff Foster<br />For more important information on stress reduction, wellness information and other topics on your health, be sure to visit 0-stress.com where we provide a variety of  <a href="http://0-stress.com/" target="_blank" >stress treatment</a> information and so much more.<br /><br />Featured by Resources For Attorneys, a  <a href="http://www.resourcesforattorneys.com" target="_blank" >Legal Services</a> and <a href="http://lifestyle.resourcesforattorneys.com" target="_blank" >Lifestyle Information</a> resources directory for attorneys, lawyers and the general internet public.<br /><br />There is an old saying, &quot;laughter is the best medicine&quot;. Why not treat yourself to some laughter? Visit our  <a href="http://lifestyle.resourcesforattorneys.com/jokeindex.html" target="_blank" >jokes</a> index and relax with some jokes, humor and humerous anecdotes.<br clear="all" />
+	</div>
+<!-- BLOG BODY END -->
+
+<!-- BLOG FOOTER BEGIN -->
+
+	<div class="blog_comment"><a href="comments.php?y=07&amp;m=04&amp;entry=entry070430-003533"><img src="themes/modern/images/box_add.png" alt="" width="14" height="14" align="top"/> add comment </a>
+ ( 256 views )
+</div>
+
+<!-- BLOG FOOTER END -->
+</div>
+
+<!-- BLOG ENTRY END -->
+<br /><center><b><span><a href="index.php?m=07&amp;y=10&amp;d=31&amp;entry=entry100731-203111">&#60;&#60;First&#32;&#32;</a></span><span><a href="index.php?m=05&amp;y=07&amp;d=01&amp;entry=entry070501-153255"> &#60;Back&#32;&#32;</a></span>  <span><a href="index.php?m=04&amp;y=07&amp;d=27&amp;entry=entry070427-202236">Next&#62;&#32;&#32;</a></span> <span><a href="index.php?m=02&amp;y=07&amp;d=27&amp;entry=entry070208-154823">&#32;&#32;Last&#62;&#62;</a></span></b></center><br />          </div>
+          <div id="sidebar">
+          
+
+          <!-- Search Google -->
+<center>
+<style type="text/css">
+@import url(http://www.google.com/cse/api/branding.css);
+</style>
+<div class="cse-branding-left" style="background-color:#cfecec;color:#000000">
+  <div class="cse-branding-form">
+
+    <form action="http://www.google.com/cse" id="cse-search-box" target="_blank">
+      <div>
+        <input type="hidden" name="cx" value="partner-pub-9363496469772843:fr341lytykq" />
+        <input type="hidden" name="ie" value="ISO-8859-1" />
+        <input type="text" name="q" size="26" />
+        <input type="submit" name="sa" value="Search" />
+      </div>
+    </form>
+  </div>
+
+  <div class="cse-branding-logo">
+    <img src="http://www.google.com/images/poweredby_transparent/poweredby_FFFFFF.gif" alt="Google" />
+  </div>
+  <div class="cse-branding-text">
+    Custom Search
+  </div>
+</div>
+</center>
+<!-- Search Google -->
+          
+<br />
+
+
+<!-- SIDEBAR MENU BEGIN -->
+
+<!-- SEARCH -->
+<div class="menu_title">
+	<a id="linkSidebarSearch" href="javascript:toggleBlock('SidebarSearch');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Search this Site</a>
+</div>
+<div id="toggleSidebarSearch" class="menu_body">
+	<form method="get" action="search.php"><input type="text" size="16" name="q" />&nbsp;<input type="submit" value="Go" /></form>
+</div>
+<br />
+
+<!-- LINKS -->
+<div class="menu_title">
+Links
+</div>
+<div class="menu_body">
+	<a href="index.php">Home</a><br /><a href="contact.php">Contact Me</a><br /><a href="http://animaljokes.resourcesforattorneys.com/index.php" target="_blank">Animal Jokes and Humor</a><br /><a href="http://blondjokes.informationresourcenetwork.com/index.php" target="_blank">Blonde Jokes and Humor</a><br /><a href="http://california.resourcesforattorneys.com/californiaissues/index.php" target="_blank">California Issues</a><br /><a href="http://www.californiawineries.info/index.php" target="_blank">California Wineries</a><br /><a href="http://lifestyle.resourcesforattorneys.com/camping/index.php" target="_blank">Camping Tips and Information</a><br /><a href="http://doctorjokes.resourcesforattorneys.com/index.php" target="_blank">Doctor Jokes and Humor</a><br /><a href="http://lifestyle.resourcesforattorneys.com/fishing/index.php" target="_blank">Fishing Tips and Information</a><br /><a href="http://fitness.resourcesforattorneys.com/index.php" target="_blank">Fitness - Diet And Exercise</a><br /><a href="http://forums.resourcesforattorneys.com" target="_blank">Forums</a><br /><a href="http://www.resourcesforattorneys.com/reversedirectories.html" target="_blank">Free Reverse Directories</a><br /><a href="http://gardening.resourcesforattorneys.com/index.php" target="_blank">Gardening Tips and Information</a><br /><a href="http://lifestyle.resourcesforattorneys.com/golfing/index.php" target="_blank">Golf - Golfing Tips</a><br /><a href="http://healthcare.informationresourcenetwork.com/index.php" target="_blank">Healthcare Information</a><br /><a href="http://homeimprovement.resourcesforattorneys.com/index.php" target="_blank">Home Improvement Information</a><br /><a href="http://lifestyle.resourcesforattorneys.com/jokeindex.html" target="_blank">Humor and Jokes</a><br /><a href="http://www.informationresourcenetwork.com/index.php" target="_blank">Information Resource</a><br /><a href="http://www.resourcesforattorneys.com/issues/index.php" target="_blank">Issues</a><br /><a href="http://www.nationallawyersdirectory.com/" target="_blank">Lawyer Directory</a><br /><a href="http://www.resourcesforattorneys.com/legalarticles.html" target="_blank">Legal Articles</a><br /><a href="http://legalblog.resourcesforattorneys.com/index.php" target="_blank">Legal Information</a><br /><a href="http://www.resourcesforattorneys.com/index.html" target="_blank">Legal Resources</a><br /><a href="http://lifestyle.resourcesforattorneys.com/index.html" target="_blank">Lifestyle Resources</a><br /><a href="http://officejokes.resourcesforattorneys.com/index.php" target="_blank">Office Jokes and Humor</a><br /><a href="http://politicaljokes.resourcesforattorneys.com/index.php" target="_blank">Political Jokes and Humor</a><br /><a href="http://realestatejokes.nationalrealtorsdirectory.com/index.php" target="_blank">Real Estate Jokes and Humor</a><br /><a href="http://www.findrealtors.net/" target="_blank">Realtors - Real Estate Brokers</a><br /><a href="http://sportsjokes.resourcesforattorneys.com/index.php" target="_blank">Sports Jokes and Humor</a><br /><a href="http://www.usacitydirectories.com/travelamerica/index.php" target="_blank">Travel America</a><br /><a href="http://travel.resourcesforattorneys.com/index.php" target="_blank">Travel Destinations</a><br /><a href="http://traveleurope.findairlines.net/index.php" target="_blank">Travel Europe</a><br /><a href="http://traveljokes.resourcesforattorneys.com/index.php" target="_blank">Travel Jokes and Humor</a><br /><a href="http://travel.resourcesforattorneys.com/mexico/index.php" target="_blank">Travel Mexico</a><br /><hr /><a href="login.php">Login</a>
+</div>
+<br />
+
+<!-- RANDOM ENTRY -->
+<div class="menu_title">
+	<a id="linkSidebarRandomEntry" href="javascript:toggleBlock('SidebarRandomEntry');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> </a>
+</div>
+<div id="toggleSidebarRandomEntry" class="menu_body">
+	<a href="index.php?entry=entry070518-190311">Dealing with Stress.</a>
+</div>
+<br />
+
+<!-- CATEGORIES -->
+<div class="menu_title">
+	<a id="linkSidebarCategories" href="javascript:toggleBlock('SidebarCategories');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Categories</a>
+</div>
+<div id="toggleSidebarCategories" class="menu_body">
+	<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=10">Anger</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=5">Anxiety</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=2">Aromatherapy</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=14">Breathing</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=11">Depression</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=3">Exercise</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=1">General</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=15">Grief</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=13">Hypnosis</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=4">Laughter</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=17">Massage</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=7">Meditation</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=8">Nervousness</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=9">Positive Thinking</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=12">Relaxation</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=16">Worry</a><br />
+<a href="index.php?d=31&amp;m=07&amp;y=10&amp;category=6">Yoga</a>
+
+</div>
+<br />
+
+<!-- ARCHIVE TREE -->
+<div class="menu_title">
+	<a id="linkSidebarArchives" href="javascript:toggleBlock('SidebarArchives');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Archives</a>
+</div>
+<div id="toggleSidebarArchives" class="menu_body">
+	<a href="archives.php">View Archives</a><br />
+<div id="archive_tree_menu"><ul><li>
+2010
+<ul>
+<li>
+<a href="index.php?m=07&amp;y=10">July</a>
+<ul>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-203111">Self-Massaging - Relaxing and Very Very Cheap</a><br />
+<b>07/31/10</b></li>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-202631">Ways to Relax Yourself</a><br />
+<b>07/31/10</b></li>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-201406">Strategies For Effectively Preventing Anxiety Attacks</a><br />
+<b>07/31/10</b></li>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-200624">Overcoming Panic Quickly - 3 Steps to Overcoming Panic Attacks</a><br />
+<b>07/31/10</b></li>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-200110">Stress Factors - Common Stress Factors and How to Eliminate Them</a><br />
+<b>07/31/10</b></li>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-195205">How to Stop Worrying and Be Happy</a><br />
+<b>07/31/10</b></li>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-194651">How to Become Relaxed - Five Easy Steps</a><br />
+<b>07/31/10</b></li>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-194117">Anxiety and Stress Can Be Overcome With Music</a><br />
+<b>07/31/10</b></li>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-185451">The 3 Things You Need to Do to Breathe Correctly &amp; Change Your Life Forever</a><br />
+<b>07/31/10</b></li>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-170652">4 Ways To Manage Stress at Work More Effectively</a><br />
+<b>07/31/10</b></li>
+<li>
+<a href="index.php?m=07&amp;y=10&amp;entry=entry100731-165950">Reduce Stress With These 2 Simple Exercises</a><br />
+<b>07/31/10</b></li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li>
+2009
+<ul>
+<li>
+<a href="index.php?m=07&amp;y=09">July</a>
+</li>
+<li>
+<a href="index.php?m=05&amp;y=09">May</a>
+</li>
+<li>
+<a href="index.php?m=02&amp;y=09">March</a>
+</li>
+
+</ul>
+</li>
+<li>
+2008
+<ul>
+<li>
+<a href="index.php?m=10&amp;y=08">October</a>
+</li>
+<li>
+<a href="index.php?m=07&amp;y=08">July</a>
+</li>
+<li>
+<a href="index.php?m=06&amp;y=08">July</a>
+</li>
+<li>
+<a href="index.php?m=05&amp;y=08">May</a>
+</li>
+<li>
+<a href="index.php?m=04&amp;y=08">May</a>
+</li>
+<li>
+<a href="index.php?m=03&amp;y=08">March</a>
+</li>
+<li>
+<a href="index.php?m=02&amp;y=08">March</a>
+</li>
+<li>
+<a href="index.php?m=01&amp;y=08">January</a>
+</li>
+
+</ul>
+</li>
+<li>
+2007
+<ul>
+<li>
+<a href="index.php?m=12&amp;y=07">December</a>
+</li>
+<li>
+<a href="index.php?m=11&amp;y=07">December</a>
+</li>
+<li>
+<a href="index.php?m=10&amp;y=07">October</a>
+</li>
+<li>
+<a href="index.php?m=09&amp;y=07">October</a>
+</li>
+<li>
+<a href="index.php?m=08&amp;y=07">August</a>
+</li>
+<li>
+<a href="index.php?m=07&amp;y=07">July</a>
+</li>
+<li>
+<a href="index.php?m=06&amp;y=07">July</a>
+</li>
+<li>
+<a href="index.php?m=05&amp;y=07">May</a>
+</li>
+<li>
+<a href="index.php?m=04&amp;y=07">May</a>
+</li>
+<li>
+<a href="index.php?m=03&amp;y=07">March</a>
+</li>
+<li>
+<a href="index.php?m=02&amp;y=07">March</a>
+</li>
+
+</ul>
+</li>
+</ul></div>
+</div>
+<br />
+
+<!-- RECENT ENTRIES -->
+<div class="menu_title">
+	<a id="linkSidebarRecentEntries" href="javascript:toggleBlock('SidebarRecentEntries');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Most Recent Entries</a>
+</div>
+<div id="toggleSidebarRecentEntries" class="menu_body">
+	<a href="http://www.resourcesforattorneys.com/stress/index.php?entry=entry100731-203111">Self-Massaging - Relaxing and Very Very Cheap</a><br /><a href="http://www.resourcesforattorneys.com/stress/index.php?entry=entry100731-202631">Ways to Relax Yourself</a><br /><a href="http://www.resourcesforattorneys.com/stress/index.php?entry=entry100731-201406">Strategies For Effectively Preventing Anxiety Attacks</a><br /><a href="http://www.resourcesforattorneys.com/stress/index.php?entry=entry100731-200624">Overcoming Panic Quickly - 3 Steps to Overcoming Panic Attacks</a><br /><a href="http://www.resourcesforattorneys.com/stress/index.php?entry=entry100731-200110">Stress Factors - Common Stress Factors and How to Eliminate Them</a><br /><a href="http://www.resourcesforattorneys.com/stress/index.php?entry=entry100731-195205">How to Stop Worrying and Be Happy</a><br /><a href="http://www.resourcesforattorneys.com/stress/index.php?entry=entry100731-194651">How to Become Relaxed - Five Easy Steps</a><br /><a href="http://www.resourcesforattorneys.com/stress/index.php?entry=entry100731-194117">Anxiety and Stress Can Be Overcome With Music</a><br />
+</div>
+<br />
+<p /><div align="center">
+<a href="http://sourceforge.net/projects/sphpblog/"><img style="margin-bottom: 5px;" src="interface/button_sphpblog.png" alt="Powered by Simple PHP Blog" title="Powered by Simple PHP Blog" border="0" /></a> <a href="rss.php"><img style="margin-bottom: 5px;" src="interface/button_rss20.png" alt="Get RSS 2.0 Feed" title="Get RSS 2.0 Feed" border="0" /></a><br /><a href="http://php.net/"><img style="margin-bottom: 5px;" src="interface/button_php.png" alt="Powered by PHP 5.1.6" title="Powered by PHP 5.1.6" border="0" /></a> <a href="atom.php"><img style="margin-bottom: 5px;" src="interface/button_atom03.png" alt="Get Atom 0.3 Feed" title="Get Atom 0.3 Feed" border="0" /></a><br /><img style="margin-bottom: 5px;" src="interface/button_txt.png" alt="Powered by Plain text files" title="Powered by Plain Text Files" border="0" /> <a href="rdf.php"><img style="margin-bottom: 5px;" src="interface/button_rdf10.png" alt="Get RDF 1.0 Feed" title="Get RDF 1.0 Feed" border="0" /></a><br /></div>
+<center>
+<!-- AddThis Button BEGIN -->
+<a href="http://www.addthis.com/bookmark.php" onClick="window.open('http://www.addthis.com/bookmark.php?wt=nw&pub=lawstud&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title), 'addthis', 'scrollbars=yes,menubar=no,width=620,height=520,resizable=yes,toolbar=no,location=no,status=no,screenX=200,screenY=100,left=200,top=100'); return false;" title="Bookmark and Share" target="_blank"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" border="0" alt="Bookmark and Share" /></a>
+<!-- AddThis Button END -->		
+
+<br />
+
+</td></tr></table></center>
+										</div>
+        </div>
+        <div id="footer">
+          A collection of articles, posts and editorials regarding stress, it&#039;s causes and how to manage stress. - Page Generated in 0.2379 seconds        </div>
+      </div>
+    </body>
+    </html>

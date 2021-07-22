@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>Practical Arduino: Touch Control Panel</title>
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	
+				<script type="text/javascript">
+					var session_url = 'usertracker_public=879e950d38ac542713fd4e6389b47258'
+				</script>
+				<script type="text/javascript" src="/sb/modules/core/javascript/ajax.js"></script>
+				<script type="text/javascript" src="/sb/modules/core/script.js"></script>
+				
+	
+				<script language="javascript" type="text/javascript">
+					_editor_lang = "en";
+					_editor_url = "/sb/modules/core/htmlarea";
+				</script>
+				<script language="javascript" type="text/javascript" src="/sb/modules/core/htmlarea/htmlarea.js"></script>
+				
+	
+				<script type="text/javascript" src="/sb/modules/core/date_selector.js"></script>
+				
+	<link rel="stylesheet" href="/sb/styles/PracticalArduino/style.css" type="text/css" />
+</head>
+
+<body>
+<div id="page">
+<div id="header" onclick="location.href='http://www.practicalarduino.com';" style="cursor: pointer;">
+    <div id="headerimg">
+        <!-- <h1><small>Serial.print("</small>Projects<small>");</small></h1> -->
+        <h1>Projects</h1>
+        <!-- <div class="description">[Practical Arduino]</div> -->
+    </div>
+</div>
+<hr />
+
+
+<div id="content" class="narrowcolumn">
+    <h2>Touch Control Panel</h2>
+
+<p><img align="right" alt="Nintendo DS Touch Screen" hspace="5" src="http://www.practicalarduino.com/pics/nintendo-ds-touch-screen.jpg" />Small 4-wire resistive touchscreens are now amazingly cheap: they are produced in such enormous quantities for mobile phones, PDAs, and particularly handheld games such as the Nintendo DS that they can be bought brand new for under US$10.</p>
+<p>Larger touchscreens are also rapidly falling in price. The popularity of netbooks with screens between 7&quot; and 10&quot; in size has resulted in a healthy market for touchscreens that can be retrofitted to them and plugged into an internal USB port. Despite the fact that they come with control electronics and a USB interface those screens are also predominantly 4-wire resistive devices, so if you dump the control module that comes with them and interface to the screen directly you can have a 10&quot; touchscreen on your Arduino! And if you want to go even bigger there are often 15&quot;, 17&quot;, and 19&quot; touchscreen kits available on eBay for under US$150.</p>
+<p>Note however that what is advertised as a &quot;touchscreen&quot; is not actually a complete screen including an LCD. It&#39;s just the transparent glass and plastic panel that fits onto the front of an appropriately sized LCD so the CPU can detect the point at which it is being touched. If you want your Arduino to display information on a screen and let you select or control it by touch you&#39;ll have to do a bit more work to set up the LCD that goes behind the touchscreen overlay.</p>
+<p>Even on its own though a touchscreen is a very handy device. They&#39;re incredibly thin and can be mounted over the top of any flat surface, not just an LCD, so they&#39;re great for creating little custom control panels with the &quot;buttons&quot; printed on a sheet that goes behind the touchscreen. All you have to do is map the buttons to X/Y coordinates and your Arduino can figure out which button is being pressed by matching the coordinates. Of course your control panel could represent anything, not just buttons. You could have a slider on it to select volume or temperature level by touching somewhere along a scale, or it could be a plan of a house so you can control lights in different rooms by touching the correct part of the floorplan.</p>
+<p>In this project we mount a Nintendo DS touch screen on a blank electrical wall plate to create a touch-sensitive light switch that can link to a home automation system.</p>
+<h3>Parts Required</h3>
+<div align="center">
+	 </div>
+<p> </p>
+<table align="" border="1" cellpadding="1" cellspacing="1" width="">
+	<tbody>
+		<tr>
+			<td align="center">
+				<b>Qty</b></td>
+			<td align="center">
+				<b>Description</b></td>
+		</tr>
+		<tr>
+			<td align="center">
+				1</td>
+			<td>
+				Arduino Duemilanove, Arduino Pro, Seeeduino, or equivalent</td>
+		</tr>
+		<tr>
+			<td align="center">
+				1</td>
+			<td>
+				Nintendo DS touch screen</td>
+		</tr>
+		<tr>
+			<td align="center">
+				1</td>
+			<td>
+				Nintendo DS touch screen breakout board</td>
+		</tr>
+		<tr>
+			<td align="center">
+				1</td>
+			<td>
+				Blank electrical wall plate</td>
+		</tr>
+		<tr>
+			<td align="center">
+				1</td>
+			<td>
+				4-pin male breakaway header</td>
+		</tr>
+	</tbody>
+</table>
+<p> </p>
+<h3>Touch Control Panel Schematic</h3>
+<p><img alt="" height="220" src="/sitebuilder/projects/knowledge/asset/medium/12/touch-control-panel-schematic-small.jpg" width="480" /></p>
+<h3>Source Code</h3>
+<p><img alt="" src="/sb/styles/PracticalArduino/images/icon-arrow.gif" /> TouchScreen library for Arduino: <a href="http://github.com/practicalarduino/TouchScreen">github.com/practicalarduino/TouchScreen</a></p>
+<p><img alt="" src="/sb/styles/PracticalArduino/images/icon-arrow.gif" /> TouchscreenCoordinates minimal example sketch: <a href="http://github.com/practicalarduino/">github.com/practicalarduino/TouchscreenCoordinates</a></p>
+<p><img alt="" src="/sb/styles/PracticalArduino/images/icon-arrow.gif" /> TouchCube visualization for Processing: <a href="http://github.com/practicalarduino/">github.com/practicalarduino/</a></p>
+<p><img alt="" src="/sb/styles/PracticalArduino/images/icon-arrow.gif" /> TouchControlPanel sketch to map virtual buttons to actions: <a href="http://github.com/practicalarduino/TouchControlPanel">github.com/practicalarduino/TouchControlPanel</a></p>
+<p><img alt="" src="/sb/styles/PracticalArduino/images/icon-arrow.gif" /> TouchControlPanel display for Processing: <a href="http://github.com/practicalarduino/TouchControlPanelDisplay">github.com/practicalarduino/TouchControlPanelDisplay</a></p>
+<h3>Resources</h3>
+<p><img alt="" src="/sb/styles/PracticalArduino/images/icon-arrow.gif" /> &quot;Processing&quot; visual programming environment: <a href="http://www.processing.org">Processing</a></p>
+<h3>Errata</h3>
+<p>If you would like to submit a correction for this project please <a href="mailto:errata@practicalarduino.com">let us know</a>.</p>
+<p><img alt="" src="/sb/styles/PracticalArduino/images/icon-arrow.gif" /> <b>Page 124: Figure 8-3, touch screen layers</b></p>
+<p>The labels for the two front layers (plastic layer and resistive material) are transposed, and the front resistive layer should be in contact with the microdot spacers. The correct diagram appears below.</p>
+<p><img alt="Resistive touch screen layers" height="354" src="/sitebuilder/projects/knowledge/asset/medium/12/Figure-8-3.png" width="254" /></p>
+<p> </p>
+<h3>Gallery</h3>
+<p>Have you built this project or something inspired by it? Please <a href="mailto:projects@practicalarduino.com">let us know</a> and we&#39;ll put a picture of it here!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div id="sidebar">
+	<h2><img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="/" title="Home">Home</h2></a>
+	
+		<h2><img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="/about" title="About The Book">About The Book</h2></a>
+		
+	
+		<h2><img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="/news" title="News">News</h2></a>
+		
+	
+		<h2><img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="/buy" title="Where To Buy">Where To Buy</h2></a>
+		
+	
+		<h2><img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="/projects" title="Projects">Projects</h2></a>
+		
+	
+		<h2><img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="/acknowledgements" title="Acknowledgements">Acknowledgements</h2></a>
+		
+	
+		<h2><img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="/authors" title="Authors">Authors</h2></a>
+		
+	
+		<h2><img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="/supporters" title="Supporters">Supporters</h2></a>
+		
+	
+		<h2><img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="/errata" title="Errata">Errata</h2></a>
+		
+	
+<br />
+<!-- <p><a href="http://twitter.com/parduino"><img alt="Follow Practical Arduino on Twitter" src="/pics/twitter-zigzag.png"></a></p> -->
+<p><b>Buy hardware from us:</b><br />
+<img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="http://www.freetronics.com/">Freetronics</a><br />
+</p>
+
+<p><b>Official Arduino resources:</b><br />
+<img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="http://arduino.cc">Arduino website</a><br />
+<img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="http://arduino.cc/en/Main/Software">Arduino IDE download</a><br />
+<img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="http://arduino.cc/en/Reference/HomePage">Language reference</a><br />
+<img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="http://arduino.cc/mailman/listinfo/developers_arduino.cc">Developer mailing list</a><br />
+<img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl">Discussion forum</a>
+</p>
+
+<p><b>Follow us on Twitter:</b><br />
+<img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="http://twitter.com/parduino">Practical Arduino</a><br />
+<img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="http://twitter.com/jonoxer">Jonathan Oxer</a><br />
+<img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="http://twitter.com/hughhalf">Hugh Blemings</a>
+</p>
+
+<p><b>Our favorite Twitterers:</b><br />
+<img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="http://twitter.com/freetronics">Freetronics</a><br />
+<img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="http://twitter.com/geekscape">Andy Gelme</a><br />
+<img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="http://twitter.com/followr">Philip Lindsay</a><br />
+<img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="http://twitter.com/sparkfun">Nathan Seidle</a><br />
+<img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="http://twitter.com/adafruit">Limor Fried</a><br />
+<img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="http://twitter.com/mtronic">Marc Alexander</a><br />
+<img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="http://twitter.com/littlebirdceo">Marcus Schappi</a><br />
+<img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="http://twitter.com/seeedstudio">Eric Pan</a><br />
+<img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="http://twitter.com/asynclabs">Brad Rex</a><br />
+<img src="/sb/styles/PracticalArduino/images/icon-arrow.gif"> <a href="http://twitter.com/nkcelectronics">Tony</a><br />
+</p>
+
+<br /><p><a href="http://www.ivt.com.au/"><img src="/pics/ivt-button.jpg" width="126" height="115" border="0"></a></p>
+
+<br /><p><b>News Categories</b><br />
+<ul class="news_category_list">
+<li><a href="/news/category/Cool+Stuff">Cool Stuff</a></li>
+<li><a href="/news/category/News">News</a></li>
+<li><a href="/news/category/Projects">Projects</a></li>
+<li><a href="/news/category/Reviews">Reviews</a></li>
+<li><a href="/news/category/Tips">Tips</a></li>
+</ul>
+
+<br /><p><b>News Updates</b><br />
+<ul class="news_date_list">
+<li><a href="/news/date/2010-10">October 2010</a> (2)</li>
+<li><a href="/news/date/2010-06">June 2010</a> (2)</li>
+<li><a href="/news/date/2010-05">May 2010</a> (1)</li>
+</ul>
+</p>
+</div>
+
+<hr />
+<div id="footer">
+    <p>
+    Powered by <a href="http://www.ivt.com.au/">Internet Vision Technologies</a>.<br />
+    Design is based on "Kubrick" by Michael Heilemann.
+    </p>
+</div>
+
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7636135-6");
+pageTracker._setDomainName(".practicalarduino.com");
+pageTracker._setAllowLinker(true);
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+<!-- ANCHOR -->

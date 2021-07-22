@@ -1,0 +1,5185 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:pas="http://sitelife.luckymag.com/2009/pluckApplicationServer">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    
+        <link rel="icon" type="image/vnd.microsoft.icon" href="/etc/designs/lucky/favicon.ico"/>
+        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/etc/designs/lucky/favicon.ico"/>
+    
+        <link rel="stylesheet" href="/etc/designs/lucky/styles/global.css"/>
+
+    
+    <link rel="stylesheet" media="print" href="/etc/designs/lucky/styles/print.css"/>
+
+    
+
+    
+
+
+
+<!--
+
+-->
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
+<script type="text/javascript" src="/etc/designs/foundation/clientlibs/groupings/cn.core.js"></script>
+
+
+
+<script type="text/javascript">
+
+    CN.site.init({
+        env             : 'PROD',
+        code            : 'LKY',
+        title           : '',
+        tld             : 'luckymag.com',
+        name            : 'luckymag',
+        siteRoot        : 'lucky',
+        allowedDomains  : 'www.luckymag.com,contribute.luckymag.com',
+        pageId          : '078e7aa1-62f8-4a46-b018-ffb47bdb032a'
+    });
+
+    CN.pluck.main.serverUrl = "http://sitelife.luckymag.com/ver1.0/Direct/Process";
+    CN.pluck.main.photoUrl = "http://sitelife.luckymag.com/ver1.0/Photo/Upload";
+    CN.pluck.main.siteUrl = "http://www.luckymag.com/";
+    CN.pluck.main.hostUrl = "http://sitelife.luckymag.com/ver1.0";
+    CN.pluck.main.mostpopularEntries = 5;
+    if (typeof(CN.pluck.serverUrl) =="undefined") {
+            CN.pluck.serverUrl="http://sitelife.luckymag.com/ver1.0/Direct/Process";
+    }
+    if (typeof PluckSDK !== "undefined") {
+        PluckSDK.SetEnv(CN.pluck.main.hostUrl);
+    }
+    jQuery.noConflict();
+    CN.config.set({
+        reg     : {
+            urls : {
+                login:    "/content/lucky/user/login.html",
+                logout:   "/content/lucky/user/logout.html",
+                reg  :    "/content/lucky/user/registration.html",
+                profile : "/content/lucky/user/update.html",
+                base :    "/content/lucky"
+            }
+        },
+        pluckApps : {
+            swapCountDisplay   : true,
+            disableFriends     : true,
+            disableMiniPersona : true,
+            clickableAvatar    : false,
+            hideAbused         : true,
+            countComponent     : true,
+            personaSetup       : true,
+            useSlauth          : false,
+            useOmniture        : true,
+            disablePersonaLink : false
+        }
+    });
+
+</script>
+
+<script type="text/javascript">
+     CNP.ecom.start({host: "magazine.luckymag.com", cnd: false });
+</script>
+
+
+<script type="text/javascript" src="/etc/designs/foundation/clientlibs/groupings/cn.top.js"></script>
+<script type="text/javascript" src="/apps/foundation/components/cn_ad_init/clientlibs.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    <script type="text/javascript" src="/content/lucky/_jcr_content/ads_config.plugin_loader.js"></script>
+    
+
+    <script type="text/javascript">
+        CN.dart.init({site:'luckymag.dart', zone: 'blogs;', kws: ["blogs", "luckyrightnow", "2011", "10", "20-jackets-under-50"],charmap: {' ' : '+', '-' : '_'} });
+    </script>
+
+
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+
+/*
+  //deprecated to allow a page level tracker object to be used from components during their events.
+  _gaq.push(['_setAccount', 'UA-8293713-11']);
+  _gaq.push(['_trackPageview']);
+*/
+  _gaq.push(function() {
+      //global page tracker object
+      var pageTracker = _gat._createTracker('UA-8293713-11', 'CNTracker');
+  });
+  _gaq.push(['CNTracker._trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+    CN.config.set({
+      facebook     : {pageid: "32181195191", appId: "", apiKey: ""}
+    });
+    </script>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="description" content="You read right. These jackets are all under $50." />
+    <meta name="keywords" content="fall, online shopping, jackets, under $50, shoppable" />
+    <meta name="Author" content="Lucky Magazine" />
+    <meta name="Copyright" content="Copyright (c) Cond&#233;Net 2011" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <meta property="fb:page_id" content="32181195191" />
+    <meta property="fb:admins" content="648235154, 688620285, 789168297" />
+    <meta property="og:image" content="http://www.luckymag.com/content/dam/lucky/blogs/luckyrightnow/2011/10/jacket-yellow-navy.jpg"/>
+    <meta property="og:site_name" content="Lucky Magazine"/>
+    <meta property="og:title" content="20 Jackets Under $50"/>
+    <meta property="og:url" content="http://www.luckymag.com/blogs/luckyrightnow/2011/10/20-jackets-under-50"/>
+    <meta property="og:type" content="article"/>
+    
+        
+        
+            <meta name="ROBOTS" content="NOARCHIVE" />
+        
+    
+    <link rel="canonical" href="http://www.luckymag.com/blogs/luckyrightnow/2011/10/20-jackets-under-50"/>
+
+    <title>20 Jackets Under $50 : Lucky Magazine</title>
+
+
+    <link rel="stylesheet" href="/etc/designs/foundation/styles/socialsidekick.css"/>
+    <script src="http://ads.sidekick.condenast.com/js/sidekickads.js" type="text/javascript"></script>
+
+
+</head>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body class="page cn_page ">
+    <div class="parbase cn_page_metadata">
+</div>
+
+
+    
+        
+        
+            
+            <div class="parsys cn_ecom_placement">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The following is the alternative code for entry & exit popups, instead of editing the blank template(cn_blank.jsp).
+
+ -->
+
+
+    
+
+
+
+    
+
+    
+         
+
+        
+
+
+  
+            <div id="floatingAd" style="display:none;">
+                <div id="floatingAd_header">
+                    <a href="#">Close</a>
+                </div>
+                <div id="floatingAd_content">
+                
+                
+                
+                    <div id="popUp_floatingAd">
+               
+               
+
+                        <div id="layer_offer_link">
+                            <a href="https://w1.buysub.com/loc/LKY/ATGFailsafe" target="_blank"><img src="/etc/designs/lucky/images/ecom/LKY_floating_ad.gif" alt="Subscribe to Lucky" border="0"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+         
+        
+    
+
+    
+
+    
+    
+    
+        
+        
+               <script type="text/javascript">
+    
+         if (CN.popups.isLayer()) { 
+            if (CNP && CNP.ecom) {
+                CNP.ecom.request({
+                    pid : 'popUp_floatingAd',
+                    tgt : '/atg/registry/RepositoryTargeters/LKY/LKY_popUp_floatingAd',
+                    params : {},callafter:{},callbefore:{}
+                });
+            }
+         } 
+    
+    </script>
+
+        
+    
+
+
+
+
+
+
+</div>
+
+            
+
+            
+            <div class="parsys cn_ecom_placement">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The following is the alternative code for entry & exit popups, instead of editing the blank template(cn_blank.jsp).
+
+ -->
+
+
+    
+
+
+
+    
+
+    
+         
+
+        
+
+
+  
+
+
+        
+
+        
+
+        
+
+        
+            
+            
+
+            <div id="rolloverAd" class="rolloverAd"  data-timeout="" style="display:none;">
+                <div id="rolloverAd_header" class="rolloverAd_header">
+                    <a href="#">Close</a>
+                </div>
+                <div id="rolloverAd_content" class="rolloverAd_content">
+
+                 
+            
+            
+                 <div id="global_navBar_rollover"></div>
+            
+            
+                </div>
+                    <div id="rolloverAd_footer" class="rolloverAd_footer"></div>
+                 </div>
+
+            
+            
+            
+                
+            
+            
+        
+
+        
+
+        
+
+         
+        
+    
+
+    
+
+    
+    
+    
+        
+        
+               <script type="text/javascript">
+    
+        
+            if (CNP && CNP.ecom) {
+                CNP.ecom.request({
+                    pid : 'global_navBar_rollover',
+                    tgt : '/atg/registry/RepositoryTargeters/LKY/LKY_global_navBar_rollover',
+                    params : {},callafter:{func: CN.ecom.rolloverAd.init,params: ['rolloverAd']},callbefore:{}
+                });
+            }
+        
+    
+    </script>
+
+        
+    
+
+
+
+
+
+
+</div>
+
+            
+        
+    
+
+    <div id="wrapper" class="section-blogs subsection-luckyrightnow">
+        <div class="cn_site_header parsys cn_componentContainer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <section id="banner-ad">
+            <div class="parsys cn_iparsys">
+
+
+
+
+
+
+
+
+
+
+
+<div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="parsys cn_iparsys"><div class="section"><div class="parbase cn_ad_placement">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="topbanner728x90_frame" class="displayAd 728x90"></div>
+    
+    <script type="text/javascript">
+        
+        CN.dart.call('topbanner', {sz:'728x90', kws:["top"]});
+    </script>
+
+
+
+
+</div>
+</div></div>
+</div>
+
+
+</div>
+
+        </section>
+
+        <header id="site-header" role="banner">
+            
+            <div class="skip-link">
+                <a href="#content">Skip to content</a>
+            </div>
+
+            
+            <div class="parbase cn_site_logo">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hgroup>
+    <h2><a href="/content/lucky.html" title="Go to Lucky Magazine homepage">Lucky Magazine</a></h2>
+    
+        <h3>The Online Source for Shopping &amp; Style</h3>
+    
+</hgroup>
+
+<div class="print-logo">
+    <img src="/etc/designs/lucky/images/shell/print-logo.png" alt=""/>
+</div>
+
+
+
+</div>
+
+
+            
+            <div class="parsys cn_iparsys">
+
+
+
+
+
+
+
+
+
+
+
+<div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="parsys cn_iparsys"><div class="section"><div class="parbase cn_main_nav">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+
+
+
+
+
+
+<nav role="navigation" class="global-nav">
+    <ul class="gnav-list">
+        
+        
+            <li id="nav-subscribe">
+                
+                <div class="parsys cn_ecom_placement">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The following is the alternative code for entry & exit popups, instead of editing the blank template(cn_blank.jsp).
+
+ -->
+
+
+    
+
+
+
+    
+
+    
+         
+
+        
+
+
+  
+
+
+        
+
+        
+
+        
+            
+            
+            
+                 <div id="global_navBar">
+            
+            
+                <a href="https://w1.buysub.com/loc/LKY/ATGFailsafe" target="_blank" title="Subscribe to Lucky magazine"><span>Subscribe</span></a>
+                </div>
+                
+        
+
+        
+
+        
+
+        
+
+         
+        
+    
+
+    
+
+    
+    
+    
+        
+        
+               <script type="text/javascript">
+    
+        
+            if (CNP && CNP.ecom) {
+                CNP.ecom.request({
+                    pid : 'global_navBar',
+                    tgt : '/atg/registry/RepositoryTargeters/LKY/LKY_global_navBar',
+                    params : {},callafter:{},callbefore:{}
+                });
+            }
+        
+    
+    </script>
+
+        
+    
+
+
+
+
+
+
+</div>
+
+                
+            </li>
+        
+        <li class="gnav-1"><a href="/content/lucky/shopping.html">Shopping</a></li><li class="gnav-2"><a href="/content/lucky/style.html">Style & Fashion</a></li><li class="gnav-3"><a href="/content/lucky/beauty.html">Beauty</a></li><li class="gnav-4"><a href="/content/lucky/celebs.html">Celeb Looks</a></li><li class="gnav-5"><a href="/content/lucky/streetstyle.html">Street Style</a></li><li class="gnav-6"><a href="/content/lucky/breaks.html">Free Stuff</a></li><li class="gnav-7"><a href="/content/lucky/magazine.html">In the Mag</a></li><li class="gnav-8"><a href="/content/lucky/kids.html">In the Mag</a></li>
+    </ul> 
+</nav>
+
+
+
+</div>
+</div></div>
+</div>
+
+
+</div>
+
+
+            
+            <section class="ecom-header">
+                
+                
+                <div class="parsys cn_ecom_placement">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The following is the alternative code for entry & exit popups, instead of editing the blank template(cn_blank.jsp).
+
+ -->
+
+
+    
+
+
+
+    
+
+    
+         
+
+        
+
+
+  
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+            
+                
+                
+                     <div id="global_header">
+                
+            
+                       <h2 id="subs-hdr"><a target="_blank" href="https://w1.buysub.com/loc/LKY/ATGFailsafe" rel="nofollow">Subscribe to Lucky Magazine</a></h2>
+                        <nav title="Subscription Resources" id="subs-nav-container">
+                            <ul id="subs-nav-menu">
+                                <li id="subs-nav-subscribe">
+                                    <a title="Subscribe to Lucky Magazine" target="_blank" href="https://w1.buysub.com/loc/LKY/ATGFailsafe">Subscribe</a>
+                                </li>
+                                <li id="subs-nav-gift">
+                                    <a title="Give a Subscription to Lucky Magazine as a Gift" target="_blank" href="https://w1.buysub.com/loc/LKY/ATGFailsafeGift">Give a gift</a>
+                                </li>
+                                <li id="subs-nav-renew">
+                                    <a title="Renew your Subscription to Lucky Magazine" target="_blank" href="https://w1.buysub.com/servlet/CSGateway?cds_mag_code=LKY">Renew</a>
+                                </li>
+                                <li id="subs-nav-questions">
+                                    <a title="Subscription Questions and Answers for Lucky Magazine" target="_blank" href="https://w1.buysub.com/servlet/CSGateway?cds_mag_code=LKY">Questions</a>
+                                </li>
+                                <li id="subs-nav-rewards">
+                                    <a title="Lucky Magazine subscribers get cash back for shopping" href="http://www.luckymagrewards.com/?xmailerid=4883" target="_blank">Lucky Magazine Rewards</a>
+                                </li>
+                            </ul>
+                        </nav>
+          </div>
+        
+
+         
+        
+    
+
+    
+
+    
+    
+    
+        
+        
+               <script type="text/javascript">
+    
+        
+            if (CNP && CNP.ecom) {
+                CNP.ecom.request({
+                    pid : 'global_header',
+                    tgt : '/atg/registry/RepositoryTargeters/LKY/LKY_global_header',
+                    params : {},callafter:{},callbefore:{}
+                });
+            }
+        
+    
+    </script>
+
+        
+    
+
+
+
+
+
+
+</div>
+
+                
+
+                
+                
+                <div class="parsys cn_ecom_placement">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The following is the alternative code for entry & exit popups, instead of editing the blank template(cn_blank.jsp).
+
+ -->
+
+
+    
+
+
+
+    
+
+    
+         
+
+        
+
+
+  
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+         
+            
+                
+                
+                     <div id="global_headerCallout">
+                
+            
+                        <div id="subs-teaser">
+                            <a href="https://w1.buysub.com/loc/LKY/ATGFailsafe" target="_blank" title="Subscribe to Lucky" rel="nofollow"><img src="/etc/designs/lucky/images/ecom/LKY_header_callout.png" alt="Subscribe to Lucky"/></a>
+                        </div>
+                        <div id="subs-cover">
+                            <a href="https://w1.buysub.com/loc/LKY/ATGFailsafe" target="_blank" title="Subscribe to Lucky" rel="nofollow">Subscribe to Lucky</a>
+                        </div>
+            </div>
+        
+        
+    
+
+    
+
+    
+    
+    
+        
+        
+               <script type="text/javascript">
+    
+        
+            if (CNP && CNP.ecom) {
+                CNP.ecom.request({
+                    pid : 'global_headerCallout',
+                    tgt : '/atg/registry/RepositoryTargeters/LKY/LKY_global_headerCallout',
+                    params : {},callafter:{},callbefore:{}
+                });
+            }
+        
+    
+    </script>
+
+        
+    
+
+
+
+
+
+
+</div>
+
+                
+            </section>
+
+            
+            <div class="parbase cn_login_bar">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="loginbar">
+    <div id="login"></div>
+</div>
+
+
+</div>
+
+        </header>
+    
+
+    
+
+
+
+
+</div>
+
+        
+
+
+
+
+
+<section id="site-body">
+    
+    <div class="parsys site_subnav cn_iparsys">
+
+
+
+
+
+
+
+
+
+
+
+<div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="parsys site_subnav cn_iparsys"></div>
+</div>
+
+
+</div>
+
+
+    <div class="parsys section_header_par"></div>
+
+
+    <div class="parsys cn_iparsys page_leaderboard">
+
+
+
+
+
+
+
+
+
+
+
+<div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="parsys cn_iparsys page_leaderboard"></div>
+</div>
+
+
+</div>
+
+
+
+    <div class="par parsys"><div class="parbase section cn_breadcrumb">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="bc">
+
+<a href="/content/lucky.html">Lucky</a> > <a href="/content/lucky/blogs/luckyrightnow.html">Lucky Right Now</a> > <a href="/content/lucky/blogs/luckyrightnow/2011.html">2011</a> > <a href="/content/lucky/blogs/luckyrightnow/2011/10.html">10</a>
+</div>
+
+
+</div>
+<div class="parsys cn_componentContainer cn_contentwell section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+        <div id="page" class="standard">
+            <aside id="top-rail">
+
+
+                 
+                    
+                    
+                        <div class="par-top_rail parsys cn_iparsys">
+
+
+
+
+
+
+
+
+
+
+
+<div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="par-top_rail parsys cn_iparsys"></div>
+</div>
+
+
+</div>
+
+                    
+                
+
+            </aside>
+
+            <div class="content-container">
+                <div id="content">
+                    <div id="main" role="main">
+                        
+                        <div class="par-main parsys"><div class="title cn_auto_header section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <h2 class="indexheader"><a href="/content/lucky/blogs/luckyrightnow.html">Lucky Right Now</a></h2>
+    
+
+    
+
+    
+
+
+
+</div>
+<div class="parbase cn_subheader section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="subheader ">What you need to know this instant.</h2>
+
+
+</div>
+<div class="parsys cn_share_bar cn_componentContainer Standard-Share-Bar border-top align-right section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="utilities   align-right border-top">
+    <div class="section"><div class="parbase cn_share_addthis">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="share utility-share">
+    <a href="http://www.addthis.com/bookmark.php?pub=luckymag&amp;url=http%3a%2f%2fwww.luckymag.com%2fblogs%2fluckyrightnow%2f2011%2f10%2f20-jackets-under-50&amp;title=20+Jackets+Under+%2450+%3a+Lucky+Magazine" target="addthis" rel="nofollow" onclick="window.open(this.href, this.target, 'scrollbars=yes,menubar=no,width=620,height=420,resizable=yes,toolbar=no,location=no,status=no,screenX=200,screenY=100,left=200,top=100');" title="Bookmark using any bookmark manager!">Share</a>
+</div>
+
+
+</div>
+</div><div class="section"><div class="cn_share_feeds parbase">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="share utility-feeds">
+    <a href="/content/lucky/services/rss/summary.html" title="Sign up for our RSS feeds">RSS Feeds</a>
+</div>
+
+
+</div>
+</div><div class="section"><div class="parbase cn_share_email">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="share utility-email">
+
+     <a title="E-mail this page to a friend" onclick="if (typeof CN !== 'undefined' && CN.stats) { CN.stats.trackAction('emailAFriend',this); }" href="/content/lucky/contact/emailFriend.html?referringPage=http://www.luckymag.com/services/lookup/078e7aa1-62f8-4a46-b018-ffb47bdb032a" rel="nofollow">E-Mail</a>
+
+</div>
+
+</div>
+</div><div class="section"><div class="parbase cn_share_print">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+            
+        
+    
+
+
+
+<div class="share utility-print">
+    <a href="http://www.luckymag.com/blogs/luckyrightnow/2011/10/20-jackets-under-50.print.html" title="Print this page">Print</a>
+</div>
+
+
+</div>
+</div><div class="section"><div class="new *"></div>
+</div>
+</div>
+
+
+</div>
+<div class="parsys cn_blogpost cn_componentContainer section">
+
+
+
+
+
+
+
+
+
+
+
+<article class="cn_blogpost">
+
+    <div class="cn_blog_post_nav parbase">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="blogNav topBlogNav">
+    
+        
+            
+            
+                <li class="blogNavMain blogNavMainTextLink">
+                    
+                    <a href="/content/lucky/blogs/luckyrightnow.html">< Back to Lucky Right Now main</a>
+                </li>
+            
+            
+        
+    
+</ul>
+
+
+</div>
+<div class="cn_keywords">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="parsys utilities-top cn_share_bar cn_componentContainer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="utilities utilities-top   ">
+    <div class="section"><div class="parbase cn_share_facebook_like">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+   
+   
+   
+  
+
+
+
+
+<div class="share utility-like"
+    data-fbcolorscheme="light"
+    data-fbfont="arial"
+    data-fblink="page"
+    data-fblayout="standard"
+    id="1457a2f7-980e-440f-96a4-5a311af87321"
+    data-fbshowfaces="false"
+    data-fbwidth="450"
+    data-fbheight="35"
+    data-fbaction="like"
+    data-fbtargetpath=""
+    
+        
+
+    
+    data-fbtitle="">
+</div>
+
+</div>
+</div><div class="section"><div class="parbase cn_share_tweet">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div
+    class="share utility-tweet"
+    data-twlayout="horizontal"
+    data-twaction="tweet"
+    id="432f18f2-e53c-4051-afe1-01065c33139f"
+    data-show-count=""
+    
+        
+        
+            data-twurl="http://www.luckymag.com/content/lucky/blogs/luckyrightnow/2011/10/20-jackets-under-50.html"
+        
+    
+    data-twtitle=""
+      data-twvia="LuckyMagazine">
+</div>
+
+</div>
+</div><div class="section"><div class="new"></div>
+</div>
+</div>
+
+
+</div>
+<div class="title cn_title">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1 class="headline ">
+    
+            
+                
+                
+                    20 Jackets Under $50: Really Cute Ones
+                
+            
+    
+</h1>
+
+
+</div>
+<div class="parbase cn_date_time">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<time datetime="2011-10-26T12:15:00.000-04:00">12:15 PM, October 26 2011</time>
+
+
+</div>
+<div class="cn_contributors parbase">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="byline">
+        <span class="contributor first last" data-contributor-type="writer">
+    
+        
+        
+            
+            <label>By</label>
+        
+
+        <span class="name">Ray Siegel</span></span>
+    </div>
+
+
+
+</div>
+<div class="parbase cn_text">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+<div class="body ">
+    <p>Since we know you're all saving up for the winter coat of your dreams:  here's our baller on a budget, fall jacket extravaganza. These 20  toppers are so cheap that you might even want to buy two. Or three. Go  nuts!<br>
+</p>
+</div>
+
+
+</div>
+<div class="cn_slideshow parbase">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article id="items-container" class="slideshow" data-path="/content/lucky/blogs/luckyrightnow/2011/10/20-jackets-under-50/jcr:content/par/cn_contentwell/par-main/cn_blogpost/cn_slideshow.2.json">
+    
+        <nav class="slideshow-top">
+            <div id="show-header" class="control-bar">
+                
+    
+        <div class="start"><a href="#">Play Slideshow</a></div>
+        <div class="stop"><a href="#">Pause</a></div>
+        
+        
+        <div class="previous"><a href="http://www.luckymag.com/blogs/luckyrightnow/2011/10/20-jackets-under-50?slide=21" title="Previous slide">Previous</a></div>
+        <div class="count">1 of 21</div>
+        <div class="next"><a href="http://www.luckymag.com/blogs/luckyrightnow/2011/10/20-jackets-under-50?slide=2" title="Next slide">Next</a></div>
+    
+
+
+            </div>
+        </nav>
+    
+
+    <section class="items">
+        
+            
+            
+
+            
+                <article class="item vertical">
+                    <figure class="media"> 
+
+                        
+                            <img class="photo" src="/content/lucky/blogs/luckyrightnow/2011/10/20-jackets-under-50/_jcr_content/par/cn_contentwell/par-main/cn_blogpost/cn_slideshow/item0.rendition.slideshowVertical.target-aviator-jacket.jpg" alt="file" title="">
+                         
+
+                    </figure>
+
+                    
+                        <div class="item-inner"> 
+
+                            <div class="body"> 
+                                    <p>Very Maverick. Or Goose, even.</p>
+ 
+                            </div>
+
+                            <footer class="item-footer"> 
+                                    <p class="footer-text">Aviator jacket in dark brown, $44.99, <a href="http://www.target.com/p/Xhilaration-Aviator-Jacket-Assorted-Colors/-/A-13508968#?ref=tgt_adv_XSC10001&AFID=shopping_df&LNM=|13508968&CPNG=&ci_src=13736960&ci_sku=13508968&" target="_blank">Target.com</A></p> 
+                            </footer>
+
+                               
+                                   <a class="buy" target="_blank" href="http://www.target.com/p/Xhilaration-Aviator-Jacket-Assorted-Colors/-/A-13508968#?ref=tgt_adv_XSC10001&AFID=shopping_df&LNM=|13508968&CPNG=&ci_src=13736960&ci_sku=13508968&">buy it now</a>
+
+                            
+                               
+                               
+                                    
+                               
+                               <div class="cn_favorites_control parbase _cq_template">
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  CN.config.set({
+      collectionNames : "yes,maybe,someday,please,gottahave"
+  });
+</script>
+
+<div data-favorites-contentid="078e7aa1-62f8-4a46-b018-ffb47bdb032a" class="favorites-controls">
+
+    
+        
+            
+                <a href="#" title="CHANGE/REMOVE">favorite it</a>
+            
+        
+        
+    
+
+    <div class="favorites-items">
+    
+    <p>Add a sticker</p>
+        <a class="close" href="#">close</a>
+        <ul>
+        
+            <li class="favNav1"><a data-favorites-collection-name="yes" class="favorites-collection" href="#">yes!</a></li>
+        
+            <li class="favNav2"><a data-favorites-collection-name="maybe" class="favorites-collection" href="#">maybe!</a></li>
+        
+            <li class="favNav3"><a data-favorites-collection-name="someday" class="favorites-collection" href="#">someday!</a></li>
+        
+            <li class="favNav4"><a data-favorites-collection-name="please" class="favorites-collection" href="#">please?!</a></li>
+        
+            <li class="favNav5"><a data-favorites-collection-name="gottahave" class="favorites-collection" href="#">gotta have!</a></li>
+        
+        </ul>
+    </div>
+</div>
+</div>
+
+                               
+                            
+                        </div>
+                    
+                </article>
+            
+        
+    </section>
+    
+
+    
+        
+            <nav class="slideshow-bottom">
+                <div id="show-footer" class="control-bar">
+                    
+    
+        <div class="start"><a href="#">Play Slideshow</a></div>
+        <div class="stop"><a href="#">Pause</a></div>
+        
+        
+        <div class="previous"><a href="http://www.luckymag.com/blogs/luckyrightnow/2011/10/20-jackets-under-50?slide=21" title="Previous slide">Previous</a></div>
+        <div class="count">1 of 21</div>
+        <div class="next"><a href="http://www.luckymag.com/blogs/luckyrightnow/2011/10/20-jackets-under-50?slide=2" title="Next slide">Next</a></div>
+    
+
+
+                </div>
+            </nav>
+        
+
+        
+            <script type="text/javascript">
+                // We need to disable the controls immediately, placing this in external script requires a delay until yrail ads come back.
+                // There MUST be an error handler for the slideshow ajax call that deletes this div if data fails, otherwise the
+                // slideshow will be unusable!
+                jQuery('<div class="slideshow-loading"></div>').appendTo('.control-bar');
+                jQuery('<div class="slideshow-loading-message">Loading Slideshow</div>').appendTo('.items');
+            </script>
+        
+    
+
+    
+    
+
+            
+
+            <section class="cr-item"> 
+            </section>
+
+             
+</article>
+
+
+
+    
+
+<div class="last-slide">
+    <div class="cn_ecom_placement">
+        <div class="slideshow-cm-subsoffer">
+            
+            <div class="header_ecom_placement parsys cn_ecom_placement">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The following is the alternative code for entry & exit popups, instead of editing the blank template(cn_blank.jsp).
+
+ -->
+
+
+    
+
+
+
+    
+
+    
+         
+
+        
+            
+                
+                
+                     <div id="global_slideshow">
+                
+            
+                <a href="https://w1.buysub.com/loc/LKY/ATGFailsafe" target="_blank"><img border="0" src="/etc/designs/lucky/images/ecom/LKY_slideshow.jpg" alt="Subscribe to Lucky"/></a>
+                     </div>
+        
+
+
+  
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+         
+        
+    
+
+    
+
+    
+    
+    
+        
+        
+               <script type="text/javascript">
+    
+        
+            if (CNP && CNP.ecom) {
+                CNP.ecom.request({
+                    pid : 'global_slideshow',
+                    tgt : '/atg/registry/RepositoryTargeters/LKY/LKY_global_slideshow',
+                    params : {},callafter:{},callbefore:{}
+                });
+            }
+        
+    
+    </script>
+
+        
+    
+
+
+
+
+
+
+</div>
+
+            
+        </div>
+    </div>
+
+    <div class="_cq_template cn_slideshow_share">
+
+
+
+
+<div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="share utility-share">
+    <a href="http://www.addthis.com/bookmark.php?pub=luckymag&amp;url=http%3a%2f%2fwww.luckymag.com%2fblogs%2fluckyrightnow%2f2011%2f10%2f20-jackets-under-50&amp;title=20+Jackets+Under+%2450+%3a+Lucky+Magazine" target="addthis" rel="nofollow" onclick="window.open(this.href, this.target, 'scrollbars=yes,menubar=no,width=620,height=420,resizable=yes,toolbar=no,location=no,status=no,screenX=200,screenY=100,left=200,top=100');" title="Bookmark using any bookmark manager!">Share</a>
+</div>
+
+
+
+</div>
+<div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="share utility-email">
+
+     <a title="E-mail this page to a friend" onclick="if (typeof CN !== 'undefined' && CN.stats) { CN.stats.trackAction('emailAFriend',this); }" href="/content/lucky/contact/emailFriend.html?referringPage=http://www.luckymag.com/services/lookup/078e7aa1-62f8-4a46-b018-ffb47bdb032a" rel="nofollow">E-Mail</a>
+
+</div>
+
+
+</div>
+<div>
+    
+
+
+
+
+
+
+
+
+
+
+
+<div class="share slideshow-replay">
+    <a href="?slide=1" title="Replay Slideshow">Replay</a>
+</div>
+
+
+
+</div>
+</div>
+
+
+    
+
+</div>
+
+
+    
+        
+
+<script type="text/javascript">
+    
+
+    
+        
+    
+</script>
+
+    
+
+    
+
+
+
+</div>
+<div class="parbase cn_text">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+<div class="body ">
+    <p><b>More from Luckymag.com:</b></p>
+<ul>
+<li><a href="http://www.luckymag.com/shopping/2011/08/fifty-coats-under-150" target="_blank">50 Coats Under $150</a><br>
+</li>
+<li><a href="http://www.luckymag.com/blogs/luckyrightnow/2011/10/50-jeans-under-50-dollars#slide=1" target="_blank">50 Jeans Under $50</a><br>
+</li>
+<li><a href="http://www.luckymag.com/blogs/luckyrightnow/2011/09/under-fifty-dollars-fall-shoes" target="_blank">Under $50: 50 Pairs of Fall Shoes</a><br>
+</li>
+<li><a href="http://www.luckymag.com/shopping/2011/10/french-style#slide=1" target="_blank">Under $50: French Flair</a><br>
+</li>
+<li><a href="http://www.luckymag.com/shopping/2011/09/50-and-under-classic-pieces-for-every-day#slide=1" target="_blank">$50 and Under: Classic Workwear Pieces<br>
+ </a></li>
+<li><a href="http://www.luckymag.com/shopping/2011/10/weekend-retreat#slide=1" target="_blank">Under $50: Weekend Wear<br>
+ </a></li>
+</ul>
+</div>
+
+
+</div>
+<div class="parbase cn_text">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+<div class="body ">
+    <p>For more fall fashion tips: <a href="http://twitter.com/RaySiegel" class="twitter-follow-button" data-show-count="true">Follow @RaySiegel</a></p>
+<p>Keep up with the <i>Lucky</i> team on Twitter: <a href="http://twitter.com/LuckyMagazine" class="twitter-follow-button" data-show-count="true">Follow @LuckyMagazine</a></p>
+</div>
+
+
+</div>
+<div class="cn_keywords">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="cn_keywords">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <dl class="keywords keywords">
+        
+        
+            <dt>KEYWORDS </dt>
+        
+        
+        <dd class="tag10" title="1"><a class="tag10" href="/content/lucky/about/fall.html">fall</a></dd>
+        <dd class="tag10" title="1"><a class="tag10" href="/content/lucky/about/jackets.html">jackets</a></dd>
+        <dd class="tag10" title="1"><a class="tag10" href="/content/lucky/about/online-shopping.html">online shopping</a></dd>
+        <dd class="tag10" title="1"><a class="tag10" href="/content/lucky/about/shoppable.html">shoppable</a></dd>
+        <dd class="tag10" title="1"><a class="tag10" href="/content/lucky/about/under-50.html">under $50</a></dd>
+    </dl>
+
+
+</div>
+<div class="parsys cn_share_bar cn_componentContainer border-both text-display">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="utilities  text-display  border-both">
+    <div class="section"><div class="parbase cn_share_email">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="share utility-email">
+
+     <a title="E-mail this page to a friend" onclick="if (typeof CN !== 'undefined' && CN.stats) { CN.stats.trackAction('emailAFriend',this); }" href="/content/lucky/contact/emailFriend.html?referringPage=http://www.luckymag.com/services/lookup/078e7aa1-62f8-4a46-b018-ffb47bdb032a" rel="nofollow">E-Mail</a>
+
+</div>
+
+</div>
+</div><div class="section"><div class="parbase cn_share_print">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+            
+        
+    
+
+
+
+<div class="share utility-print">
+    <a href="http://www.luckymag.com/blogs/luckyrightnow/2011/10/20-jackets-under-50.print.html" title="Print this page">Print</a>
+</div>
+
+
+</div>
+</div><div class="section"><div class="parbase cn_share_addthis">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="share utility-share">
+    <a href="http://www.addthis.com/bookmark.php?pub=luckymag&amp;url=http%3a%2f%2fwww.luckymag.com%2fblogs%2fluckyrightnow%2f2011%2f10%2f20-jackets-under-50&amp;title=20+Jackets+Under+%2450+%3a+Lucky+Magazine" target="addthis" rel="nofollow" onclick="window.open(this.href, this.target, 'scrollbars=yes,menubar=no,width=620,height=420,resizable=yes,toolbar=no,location=no,status=no,screenX=200,screenY=100,left=200,top=100');" title="Bookmark using any bookmark manager!">Share</a>
+</div>
+
+
+</div>
+</div><div class="section"><div class="cn_share_permalink parbase">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="share utility-permalink">
+    <a href="http://www.luckymag.com/services/lookup/078e7aa1-62f8-4a46-b018-ffb47bdb032a">Permalink</a>
+</div>
+
+
+</div>
+</div><div class="section"><div class="parbase cn_share_comments_count">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="share comments-count">
+    <span class="commentstotal" data-uid="luckymag_078e7aa1-62f8-4a46-b018-ffb47bdb032a"><a href="#pluck-comments">Comments(<span>0</span>)</a></span>
+</div>
+
+</div>
+</div><div class="section"><div class="new"></div>
+</div>
+</div>
+
+
+</div>
+<div class="cn_blog_post_nav parbase">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="blogNav bottomBlogNav">
+    
+        
+            
+            
+            
+                <li class="blogNavNext">
+                    
+                        
+                            
+                            
+                                <span class="nextPrefix">NEXT POST: </span>
+                            
+                        
+                    
+                    <a href="/content/lucky/blogs/luckyrightnow/2011/10/donatella-gives-us-a-sneak-peek-of-the-versace-for-hm-movie.html" class="nextLinkText">Donatella Gives Us a Sneak Peek of the Versace for H&M Movie</a>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li class="blogNavPrev">
+                    
+                        
+                            
+                            
+                                <span class="prevPrefix">PREVIOUS POST: </span>
+                            
+                        
+                    
+                    <a href="/content/lucky/blogs/luckyrightnow/2011/10/shop-3-lucky-capsule-collections-live-on-hsn-tonight.html" class="prevLinkText">Shop Three <i>Lucky</i> Capsule Collections Live on HSN Tonight</a>
+                    
+                </li>
+            
+            
+            
+        
+    
+</ul>
+
+
+</div>
+<div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="parsys cn_blogpost cn_componentContainer"></div>
+</div>
+</article>
+
+
+</div>
+<div class="parbase cn_sandbox section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<iframe class="sandbox" name="sandbox_a1808639-02f9-4091-86f1-d17928f00572" src="/etc/designs/lucky/sandbox/pages/outbrain.html" frameborder="0" scrolling="no" id="sandbox_a1808639-02f9-4091-86f1-d17928f00572" height="230" width="500" data-url="/etc/designs/lucky/sandbox/pages/outbrain.html"></iframe>
+
+
+
+
+
+
+</div>
+<div class="parbase cn_reactions_ratings section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    if (typeof pluckHandler === 'undefined' || (typeof pluckHandler !== 'undefined' && pluckHandler.artId !== 'luckymag_078e7aa1-62f8-4a46-b018-ffb47bdb032a')) {
+        var genericPluckData = {
+            ID          : '',
+            programUrl  : '',
+            serverUrl   : 'http://sitelife.luckymag.com/ver1.0',
+            articleID   : '',
+            userID      : 'pluckUser.u'
+        };
+
+        var pluckHandler = new Pluck();
+
+        var gateway = new RegisteredGateway("/content/lucky/user/login.html", "/content/lucky/user/registration.html");
+        pluckHandler.addGatewayListener(gateway);
+        pluckHandler.crTitle = pluckHandler.crTitle || {}; // for legacy pluck.js
+        pluckHandler.artId    = "luckymag_078e7aa1-62f8-4a46-b018-ffb47bdb032a";
+        pluckHandler.contentId = "078e7aa1-62f8-4a46-b018-ffb47bdb032a";
+        pluckHandler.subArtId    = "";
+        pluckHandler.crType = pluckHandler.crType || {}; // for legacy pluck.js
+        pluckHandler.init(genericPluckData.serverUrl, 10, '/content/lucky/user/registration.html');
+
+        jQuery(function() {
+            pluckHandler.gatewayHandler.init();
+        });
+    }
+</script>
+
+
+<script>
+    if (typeof pluckHandler !== 'undefined') {
+        pluckHandler.crMetaData['luckymag_078e7aa1-62f8-4a46-b018-ffb47bdb032a'] = {
+            title   : '20 Jackets Under $50',
+            type    : '',
+            kw      : 'fall, online shopping, jackets, under $50, shoppable',
+            url     : true,
+            redirect : "/services/lookup/25a9646b-db78-4ca3-9c43-3d5a206f95ee"
+        };
+
+        if (typeof (Rating) != 'undefined') {
+            var newRating = new Rating();
+            Rating.init(5);
+        }
+
+        Rating.addSubmitListener(pluckHandler);
+
+        jQuery(function() {
+            pluckHandler.callbackHandler.initRatings('luckymag_078e7aa1-62f8-4a46-b018-ffb47bdb032a', pluckHandler.LoggedIn());
+            CN.pluck.ratingComponent('luckymag_078e7aa1-62f8-4a46-b018-ffb47bdb032a', pluckHandler.callbackHandler);
+        });
+    }
+</script>
+
+
+<aside class="pluck-ratings pluck-enabled pluck-app-container" data-id="luckymag_078e7aa1-62f8-4a46-b018-ffb47bdb032a">
+    <h4>Ratings</h4>
+
+    <div class="rate">
+        <h5>Rate it:</h5>
+
+        <div class="ratingGroup">
+            <a href="#" class="inactive">1 star</a>
+            <a href="#" class="inactive">2 stars</a>
+            <a href="#" class="inactive">3 stars</a>
+            <a href="#" class="inactive">4 stars</a>
+            <a href="#" class="inactive">5 stars</a>
+        </div>
+
+       <span class="ratingtxt"></span>
+       <span class="ratingAverage"></span>
+    </div>
+</aside>
+
+
+</div>
+<div class="parbase cn_reactions_comments section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    if (typeof pluckHandler === 'undefined' || (typeof pluckHandler !== 'undefined' && pluckHandler.artId !== 'luckymag_078e7aa1-62f8-4a46-b018-ffb47bdb032a')) {
+        var genericPluckData = {
+            ID          : '',
+            programUrl  : '',
+            serverUrl   : 'http://sitelife.luckymag.com/ver1.0',
+            articleID   : '',
+            userID      : 'pluckUser.u'
+        };
+
+        var pluckHandler = new Pluck();
+
+        pluckHandler.crMetaData['luckymag_078e7aa1-62f8-4a46-b018-ffb47bdb032a'] = {
+            title   : '20 Jackets Under $50',
+            type    : '',
+            kw      : 'fall, online shopping, jackets, under $50, shoppable',
+            url     : true,
+            redirect : "/services/lookup/25a9646b-db78-4ca3-9c43-3d5a206f95ee"
+        };
+
+
+        var gateway = new RegisteredGateway("/content/lucky/user/login.html", "/content/lucky/user/registration.html");
+        pluckHandler.addGatewayListener(gateway);
+        pluckHandler.crTitle = pluckHandler.crTitle || {}; // for legacy pluck.js
+        pluckHandler.crType = pluckHandler.crType || {}; // for legacy pluck.js
+        pluckHandler.artId    = "luckymag_078e7aa1-62f8-4a46-b018-ffb47bdb032a";
+        pluckHandler.contentId = "078e7aa1-62f8-4a46-b018-ffb47bdb032a";
+        pluckHandler.subArtId    = "";
+        pluckHandler.init(genericPluckData.serverUrl, 10, '/content/lucky/user/registration.html');
+
+        jQuery(function() {
+            pluckHandler.gatewayHandler.init();
+        });
+    }
+</script>
+
+
+<aside class="pluck-comments pluck-enabled pluck-app-container" id="pluck-comments">
+    <h4>Post a Comment</h4>
+    <pas:pluck_comments plckCommentOnKeyType="article" plckCommentOnKey="luckymag_078e7aa1-62f8-4a46-b018-ffb47bdb032a" plckArticleTitle="20 Jackets Under $50" plckArticleUrl="http://www.luckymag.com/services/lookup/25a9646b-db78-4ca3-9c43-3d5a206f95ee" class="pluck-app-tag"></pas:pluck_comments>
+</aside>
+
+
+
+</div>
+</div>
+
+                    </div>
+
+                    
+                    
+
+                    <aside id="u-rail">
+                    </aside>
+                </div>
+
+                <aside id="y-rail">
+                
+                    
+                    
+                        <div class="parsys par-y_rail cn_iparsys">
+
+
+
+
+
+
+
+
+
+
+
+<div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="parsys par-y_rail cn_iparsys"><div class="section"><div class="parbase cn_search_box">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="search-box">
+    <form name="search-box-form-par-y_rail" id="search-box-form-par-y_rail" action="/content/lucky/search.html" method="get" role="search">
+        <h4><label for="search-box-query-par-y_rail">Search</label></h4>
+
+        <input type="search" name="query" id="search-box-query-par-y_rail" placeholder="Search Lucky Magazine" />
+        <input type="hidden" name="sort" value="score desc" />
+
+        <button type="submit" title="Search">Search</button>
+    </form>
+</section>
+
+
+</div>
+</div><div class="section"><div class="parsys cn_features_container cn_componentContainer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="cn_manual_feature parsys cn_componentContainer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="feature ">
+    <div class="parbase cn_ad_placement">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="rightrailTop300x250_frame" class="displayAd 300x250"></div>
+    
+    <script type="text/javascript">
+        
+        CN.dart.call('rightrailTop', {sz:'300x250', kws:["top"]});
+    </script>
+
+
+
+
+</div>
+
+        <div class="section new">
+            <div class="new"></div>
+
+        </div>
+
+</section>
+
+
+</div>
+ 
+
+<div class="section new">
+    <div class="new"></div>
+
+</div>
+
+
+</div>
+</div><div class="section"><div class="parsys cn_features_container cn_componentContainer listcarousel">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="cn_manual_feature parsys cn_componentContainer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="feature ">
+    <div class="title cn_title">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3 class="headline ">
+    
+            
+                
+                
+                    Lucky Stickers
+                
+            
+    
+</h3>
+
+
+</div>
+<div class="parbase cn_mostpopular">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="most-favorited" data-cn_mostpopular-numresults="10" data-cn_mostpopular-age="10"></div>
+
+
+</div>
+
+        <div class="section new">
+            <div class="new"></div>
+
+        </div>
+
+</section>
+
+
+</div>
+  <div class="cn_manual_feature parsys cn_componentContainer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="feature ">
+    <div class="parbase cn_text">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+<div class="body ">
+    <ul>
+<li><a href="/content/lucky/user/persona.html">VIEW YOUR STICKER BOOK</a></li>
+<li><a href="/content/lucky/shopping/stickers.html">CLICK TO LEARN MORE ABOUT STICKERS</a></li>
+</ul>
+</div>
+
+
+</div>
+
+        <div class="section new">
+            <div class="new"></div>
+
+        </div>
+
+</section>
+
+
+</div>
+  <div class="parbase cn_ad_placement">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="stickers300x100_frame" class="displayAd 300x100"></div>
+    
+    <script type="text/javascript">
+        
+        CN.dart.call('stickers', {sz:'300x100', kws:["stickers"]});
+    </script>
+
+
+
+
+</div>
+ 
+
+<div class="section new">
+    <div class="new"></div>
+
+</div>
+
+
+</div>
+</div><div class="section"><div class="parsys cn_features_container cn_componentContainer tabs">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="cn_manual_feature parsys cn_componentContainer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="feature ">
+    <div class="title cn_title">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3 class="headline ">
+    
+            
+                
+                
+                    Commented
+                
+            
+    
+</h3>
+
+
+</div>
+<div class="parbase cn_mostpopular">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="most-commented" data-cn_mostpopular-numresults="5" data-cn_mostpopular-age=""></div>
+
+
+</div>
+
+        <div class="section new">
+            <div class="new"></div>
+
+        </div>
+
+</section>
+
+
+</div>
+  <div class="cn_manual_feature parsys cn_componentContainer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="feature ">
+    <div class="title cn_title">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3 class="headline ">
+    
+            
+                
+                
+                    E-Mailed
+                
+            
+    
+</h3>
+
+
+</div>
+<div class="parbase cn_mostpopular">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="most-emailed" data-cn_mostpopular-numresults="5" data-cn_mostpopular-age=""></div>
+
+
+</div>
+
+        <div class="section new">
+            <div class="new"></div>
+
+        </div>
+
+</section>
+
+
+</div>
+  <div class="cn_manual_feature parsys cn_componentContainer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="feature ">
+    <div class="title cn_title">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3 class="headline ">
+    
+            
+                
+                
+                    Viewed
+                
+            
+    
+</h3>
+
+
+</div>
+<div class="parbase cn_mostpopular">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="most-viewed" data-cn_mostpopular-numresults="5" data-cn_mostpopular-age=""></div>
+
+
+</div>
+
+        <div class="section new">
+            <div class="new"></div>
+
+        </div>
+
+</section>
+
+
+</div>
+ 
+
+<div class="section new">
+    <div class="new"></div>
+
+</div>
+
+
+</div>
+</div><div class="section"><div class="parsys cn_ecom_placement">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The following is the alternative code for entry & exit popups, instead of editing the blank template(cn_blank.jsp).
+
+ -->
+
+
+
+
+    
+
+    
+         
+             
+                 
+                 
+                       <div id="global_rightRail_A">
+                 
+             
+                 <div id="global_rightRail_A"><a href="https://w1.buysub.com/loc/LKY/ATGFailsafe" target="_blank"><img src="/etc/designs/lucky/images/ecom/LKY_rr_subscribe.gif" alt="Subscribe to Lucky" border="0"/></a></div>
+             </div>
+        
+
+        
+
+
+  
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+         
+        
+    
+
+    
+
+    
+    
+    
+        
+        
+               <script type="text/javascript">
+    
+        
+            if (CNP && CNP.ecom) {
+                CNP.ecom.request({
+                    pid : 'global_rightRail_A',
+                    tgt : '/atg/registry/RepositoryTargeters/LKY/LKY_global_rightRail_A',
+                    params : {},callafter:{},callbefore:{}
+                });
+            }
+        
+    
+    </script>
+
+        
+    
+
+
+
+
+
+
+</div>
+</div><div class="section"><div class="parbase cn_ad_placement">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="rightrailText4x1_frame" class="displayAd 4x1"></div>
+    
+    <script type="text/javascript">
+        
+        CN.dart.call('rightrailText', {sz:'4x1'});
+    </script>
+
+
+
+
+</div>
+</div><div class="section"><div class="parbase cn_ad_placement">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="rightrailBottom300x250_frame" class="displayAd 300x250"></div>
+    
+    <script type="text/javascript">
+        
+        CN.dart.call('rightrailBottom', {sz:'300x250', kws:["bottom"]});
+    </script>
+
+
+
+
+</div>
+</div><div class="section"><div class="parbase image cn_image">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class="media ">
+    
+    
+        
+        
+
+        
+        
+            
+                    <a href="http://www.condenaststore.com/index.aspx?utm_medium=referral&amp;utm_campaign=GeneralBranding&amp;utm_source=Lucky"> 
+                        <img src="/content/lucky/_jcr_content/par/cn_contentwell/par-y_rail/cn_image.size.cns_ies_0801A.gif" alt="Shop the Cond&eacute;Nast Store" title=""/> 
+                    </a> 
+        
+    
+
+    
+    
+
+    
+    
+</figure>
+
+
+
+</div>
+</div><div class="section"><div class="parsys cn_ecom_placement">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The following is the alternative code for entry & exit popups, instead of editing the blank template(cn_blank.jsp).
+
+ -->
+
+
+
+
+    
+
+    
+         
+             
+                 
+                 
+                       <div id="global_rightRail_B">
+                 
+             
+                 <div id="global_rightRail_B"><a href="https://w1.buysub.com/loc/LKY/ATGFailsafeGift" target="_blank"><img src="/etc/designs/lucky/images/ecom/LKY_rr_gift.gif" alt="Gift the gift of Lucky" border="0"/></a></div>
+             </div>
+        
+
+        
+
+
+  
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+         
+        
+    
+
+    
+
+    
+    
+    
+        
+        
+               <script type="text/javascript">
+    
+        
+            if (CNP && CNP.ecom) {
+                CNP.ecom.request({
+                    pid : 'global_rightRail_B',
+                    tgt : '/atg/registry/RepositoryTargeters/LKY/LKY_global_rightRail_B',
+                    params : {},callafter:{},callbefore:{}
+                });
+            }
+        
+    
+    </script>
+
+        
+    
+
+
+
+
+
+
+</div>
+</div><div class="section"><div class="parsys cn_ecom_placement">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The following is the alternative code for entry & exit popups, instead of editing the blank template(cn_blank.jsp).
+
+ -->
+
+
+
+
+    
+
+    
+         
+             
+                 
+                 
+                       <div id="global_rightRail_C">
+                 
+             
+                 <div id="global_rightRail_C"></div>
+             </div>
+        
+
+        
+
+
+  
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+         
+        
+    
+
+    
+
+    
+    
+    
+        
+        
+               <script type="text/javascript">
+    
+        
+            if (CNP && CNP.ecom) {
+                CNP.ecom.request({
+                    pid : 'global_rightRail_C',
+                    tgt : '/atg/registry/RepositoryTargeters/LKY/LKY_global_rightRail_C',
+                    params : {},callafter:{},callbefore:{}
+                });
+            }
+        
+    
+    </script>
+
+        
+    
+
+
+
+
+
+
+</div>
+</div><div class="section"><div class="parbase cn_sandbox">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<iframe class="sandbox auto" name="sandbox_97946526-b71f-4644-93fb-c1d03e41003d" src="/etc/designs/foundation/nocount/blankiframe.html" frameborder="0" scrolling="no" id="sandbox_97946526-b71f-4644-93fb-c1d03e41003d" height="0" width="100%" data-url="/etc/designs/lucky/sandbox/pages/facebookwidget.html"></iframe>
+
+
+
+
+
+
+
+
+</div>
+</div><div class="section"><div class="parbase cn_sandbox">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<iframe class="sandbox" name="sandbox_f2ae0eaf-ac11-47c9-a32d-350f1c75b7f7" src="http://www.facebook.com/plugins/likebox.php?id=139788669413933&width=292&connections=10&stream=false&header=false&height=270" frameborder="0" scrolling="no" id="sandbox_f2ae0eaf-ac11-47c9-a32d-350f1c75b7f7" height="270" width="292" data-url="http://www.facebook.com/plugins/likebox.php?id=139788669413933&width=292&connections=10&stream=false&header=false&height=270"></iframe>
+
+
+
+
+
+
+</div>
+</div></div>
+</div>
+
+
+</div>
+
+                    
+                
+                </aside>
+            </div>
+
+            <div id="bottom-rail">
+                
+                <div class="parsys cn_iparsys par-bottom">
+
+
+
+
+
+
+
+
+
+
+
+<div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="parsys cn_iparsys par-bottom"><div class="section"><div class="parsys cn_ecom_placement">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The following is the alternative code for entry & exit popups, instead of editing the blank template(cn_blank.jsp).
+
+ -->
+
+
+
+
+    
+
+    
+         
+             
+                 
+                 
+                       <div id="global_embeddedForm">
+                 
+             
+                 <div id="subscriptionwrap">
+    <div id="global_embeddedForm"></div>
+</div>
+             </div>
+        
+
+        
+
+
+  
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+         
+        
+    
+
+    
+
+    
+    
+    
+        
+        
+               <script type="text/javascript">
+    
+        
+            if (CNP && CNP.ecom) {
+                CNP.ecom.request({
+                    pid : 'global_embeddedForm',
+                    tgt : '/atg/registry/RepositoryTargeters/LKY/LKY_global_embeddedForm',
+                    params : {},callafter:{},callbefore:{}
+                });
+            }
+        
+    
+    </script>
+
+        
+    
+
+
+
+
+
+
+</div>
+</div></div>
+</div>
+
+
+</div>
+
+            </div>
+        </div>
+    
+
+
+
+</div>
+</div>
+
+</section>
+
+        <div class="parsys cn_componentContainer cn_site_footer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer id="site-footer">
+
+
+
+
+    
+    
+
+
+        
+        <div class="parsys cn_iparsys">
+
+
+
+
+
+
+
+
+
+
+
+<div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="parsys cn_iparsys"><div class="section"><div class="parbase cn_site_footer_nav">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="foot-nav">
+    <ul class="fnav-list">
+        
+        <li class="fnav-1"><a href="/content/lucky/services/sitemap.html">Site Map</a></li>
+        
+        <li class="fnav-2"><a href="/content/lucky/contact/contactus.html">Contact Lucky</a></li>
+        
+        <li class="fnav-3"><a href="/content/lucky/services/newsletters/demographics.html">Newsletter</a></li>
+        
+        <li class="fnav-4"><a href="/content/lucky/user/registration.html">Registration</a></li>
+        
+        <li class="fnav-5"><a href="/content/lucky/services/presscenter/pressreleases.html">Press Center</a></li>
+        
+    </ul>
+</nav>
+
+
+</div>
+</div><div class="section"><div class="parbase cn_global_footer_nav">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="cnd-nav">
+    
+    <h2>Lucky Deals</h2>
+
+    <ul class="cnd-nav-list">
+        
+
+        <li><a href="/content/lucky/breaks.html">Lucky Breaks</a></li>
+
+        
+
+        <li><a href="http://www.luckymagrewards.com/?xmailerid=4884">Lucky Rewards</a></li>
+
+        
+
+        <li><a href="/content/lucky/breaks/luckysweeps.html">Lucky Giveaways</a></li>
+
+        
+
+        <li><a href="/content/lucky/breaks.html">All Lucky Deals</a></li>
+
+        
+    </ul>
+</nav>
+
+
+</div>
+</div><div class="section"><div class="parbase cn_global_footer_nav">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="cnd-nav">
+    
+    
+
+    <ul class="cnd-nav-list">
+        
+
+        <li><a href="https://w1.buysub.com/servlet/CSGateway?cds_mag_code=LKY">Subscription Services</a></li>
+
+        
+
+        <li><a href="http://www.condenastcareers.com">Careers</a></li>
+
+        
+
+        <li><a href="http://www.condenaststore.com/">Cond&eacute; Nast Store</a></li>
+
+        
+
+        <li><a href="mailto:permissions@condenast.com">Reprints/Permissions</a></li>
+
+        
+
+        <li><a href="http://www.condenastmediakit.com/luc/">Lucky Media Kit</a></li>
+
+        
+    </ul>
+</nav>
+
+
+</div>
+</div></div>
+</div>
+
+
+</div>
+
+
+        
+        <section class="cnd-footer">
+            <h2>Cond&eacute; Nast Digital</h2>
+
+            
+            <section class="select-sites">
+                <div class="parsys cn_iparsys">
+
+
+
+
+
+
+
+
+
+
+
+<div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="parsys cn_iparsys"><div class="section"><div class="parbase cn_global_footer_sites">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3>Sites on style, beauty, health & more:</h3>
+
+<ul>
+    
+
+    <li><a href="http://www.self.com">SELF</a></li>
+
+    
+
+    <li><a href="http://www.wmagazine.com">W Magazine</a></li>
+
+    
+
+    <li><a href="http://www.glamour.com">Glamour</a></li>
+
+    
+
+    <li><a href="http://www.allure.com">Allure</a></li>
+
+    
+
+    <li><a href="http://www.style.com">Style</a></li>
+
+    
+
+    <li><a href="http://www.teenvogue.com">TeenVogue</a></li>
+
+    
+</ul>
+
+
+</div>
+</div><div class="section"><div class="parbase cn_global_footer_sites">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3> Find Luckymag.com around the world:</h3>
+
+<ul>
+    
+
+    <li><a href="http://www.luckymag.gr">Greece</a></li>
+
+    
+</ul>
+
+
+</div>
+</div></div>
+</div>
+
+
+</div>
+
+            </section>
+
+            <section class="subscriptions">
+                <form action="#" name="sub_dropmenus" id="sub_dropmenus">
+                    <h3><label for="sub_list">Subscribe to a magazine:</label></h3>
+                    <select onchange="(this.options[this.selectedIndex].value) ? window.open(this.options[this.selectedIndex].value) : null" name="sub_list" id="sub_list" size="1">
+                        <option selected="selected" value="">Subscribe to a magazine</option>
+                        <option value=""></option>
+                        <option value="http://www.magazinestoresubscriptions.com?source=univdropdown">View All Titles</option>
+                        <option value="">- - - - - - - - - - - - - -</option>
+                        <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Allure?source=SITEFOOTER">Allure</option>
+                        <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_ArchitecturalDigest?source=SITEFOOTER">Architectural Digest</option>
+                        <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_BonAppetite?source=SITEFOOTER">Bon App&eacute;tit</option>
+
+                        <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Brides?source=SITEFOOTER">Brides</option>
+                        <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_CondeNastTraveler?source=SITEFOOTER">Cond&eacute; Nast Traveler</option>
+                        <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Details?source=SITEFOOTER">Details</option>
+                        <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Glamour?source=SITEFOOTER">Glamour</option>
+                        <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GolfDigest?source=SITEFOOTER">Golf Digest</option>
+                        <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GolfWorld?source=SITEFOOTER">Golf World</option>
+                        <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GQ?source=SITEFOOTER">GQ</option>
+                        <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Lucky?source=SITEFOOTER">Lucky</option>
+                        <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Self?source=SITEFOOTER">Self</option>
+                        <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_TeenVogue?source=SITEFOOTER">Teen Vogue</option>
+                        <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_NewYorker?source=SITEFOOTER">The New Yorker</option>
+                        <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_VanityFair?source=SITEFOOTER">Vanity Fair</option>
+                        <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Vogue?source=SITEFOOTER">Vogue</option>
+                        <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_W?source=SITEFOOTER">W</option>
+                        <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Wired?source=SITEFOOTER">Wired</option>
+                    </select>
+                </form>
+            </section>
+
+            <section class="all-sites">
+                <form action="#" name="mag_dropmenus" id="mag_dropmenus">
+                    <h3><label for="mag_list">Visit our sister sites:</label></h3>
+                    <select onchange="(this.options[this.selectedIndex].value) ? window.open(this.options[this.selectedIndex].value) : null" name="mag_list" id="mag_list">
+                        <option selected="selected" value="">Visit our sister sites</option>
+                        <option value="">- - - - - - - - - - - - - -</option>
+                        <option value="http://www.allure.com">Allure</option>
+                        <option value="http://www.architecturaldigest.com">Architectural Digest</option>
+                        <option value="http://www.arstechnica.com">Ars Technica</option>
+                        <option value="http://www.bonappetit.com">Bon App&eacute;tit</option>
+                        <option value="http://www.brides.com">Brides.com</option>
+                        <option value="http://www.concierge.com/cntraveler">Cond&eacute; Nast Traveler</option>
+                        <option value="http://www.concierge.com">Concierge</option>
+                        <option value="http://www.details.com">Details</option>
+                        <option value="http://www.epicurious.com">Epicurious</option>
+                        <option value="http://www.glamour.com">Glamour</option>
+                        <option value="http://www.golfdigest.com">Golf Digest</option>
+                        <option value="http://www.golfworld.com">Golf World</option>
+                        <option value="http://www.gq.com">GQ</option>
+                        <option value="http://www.hotelchatter.com">Hotel Chatter</option>
+                        <option value="http://www.jaunted.com">Jaunted</option>
+                        <option value="http://www.luckymag.com">Lucky</option>
+                        <option value="http://www.nutritiondata.com">NutritionData</option>
+                        <option value="http://www.reddit.com">Reddit</option>
+                        <option value="http://www.self.com">Self</option>
+                        <option value="http://www.style.com">Style</option>
+                        <option value="http://www.teenvogue.com">Teen Vogue</option>
+                        <option value="http://www.newyorker.com">The New Yorker</option>
+                        <option value="http://www.vanityfair.com">Vanity Fair</option>
+                        <option value="http://www.vegaschatter.com">Vegas Chatter</option>
+                        <option value="http://www.vogue.com">Vogue</option>
+                        <option value="http://www.wmagazine.com">W</option>
+                        <option value="http://www.wired.com">Wired</option>
+                    </select>
+                </form>
+            </section>
+        </section>
+
+        
+        <p id="cn_copyright">
+            <small>Registration on or use of this site constitutes acceptance of our <a href="http://www.condenast.com/services/privacy/" target="_blank">User Agreement</a> <time datetime="2011-08-01">(Revised August 1, 2011)</time> and <a href="http://www.condenast.com/services/privacy/" target="_blank">Privacy Policy</a> <time datetime="2011-08-01">(Revised August 1, 2011)</time>. Lucky Magazine &copy; 2011 Cond&eacute; Nast Digital. All rights reserved. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Cond&eacute; Nast Digital.<br />
+                <a href="http://www.condenast.com/services/privacy/#optout" target="_blank" class="ad_choices">Ad Choices</a><br />
+            </small>
+        </p>
+
+    
+
+
+</footer>
+
+
+</div>
+
+        <div class="parbase cn_socialsidekick">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+CN.socialMediaData = CN.socialMediaData || {};
+    CN.socialMediaData.trackingURL = '%2Fcontent%2Flucky%2Fblogs%2Fluckyrightnow%2F2011%2F10%2F20-jackets-under-50.html';
+    CN.socialMediaData.collectorBaseURL = '/content/lucky';
+    CN.socialMediaData.formattedDate = '11/23/2011';
+    CN.socialMediaData.imageUrl = 'http://www.luckymag.com/content/dam/lucky/blogs/luckyrightnow/2011/10/jacket-yellow-navy.jpg';
+    CN.socialMediaData.keywords = 'fall, online shopping, jackets, under $50, shoppable';
+    CN.socialMediaData.socialHost='http://sidekick.condenastdigital.com/sidekick';
+    CN.socialMediaData.socailSidekickType='social';
+    CN.socialMediaData.socialNumContent='3';
+    CN.socialMediaData.facebook_event = '';
+    CN.socialMediaData.tweet_event = '';
+</script>
+
+<!-- Intial View Panel start-->
+<div id="bottompanel_expanded">
+        <div id="panel_arrow_expanded">
+                <div id="panel_icon_expanded">
+
+                        <div class="arrow SSarrow" id="arrow_SSarrow_expanded"><a href="javascript:void(0);" title="bottompanel_expanded_full">&nbsp;</a></div>
+                        <div class="arrow SSarrow" id="arrow_SSarrow_collapsed"><a href="javascript:void(0);" title="bottompanel">&nbsp;</a></div>
+                 </div>
+        </div>
+        <div id="panel_expanded">
+                <div id="panel_expanded_middle" class="content clearfix">
+                        <div class="left_panel">
+                                <img src="/etc/designs/foundation/images/socialsidekick/utility.jpg" width="253" height="129" border="0"/>
+                        </div>
+                    <div class="right_panel">
+                    </div>
+                </div>
+        </div>
+</div>
+<!-- Intial View Panel End -->
+
+<!-- Maximized View Panel start-->
+<div id="bottompanel_expanded_full">
+<div id="dart_iframe_sidekick">
+
+</div>
+            <div id="panel_arrow_expanded_full">
+                     <div id="panel_icon_expanded01" class="SSarrow"> <a href="javascript:void(0);" title="bottompanel_expanded_full"><img src="/etc/designs/foundation/images/socialsidekick/socialSidekick_down.png" width="31" height="26" border="0"/></a></div>
+                </div>
+
+          <div id="panel_expanded_full_bg">
+                        <div id="panel_expanded_full">
+                        <div class="content clearfix">
+                        <img border="0" class="top_banner_sidekick" src="/etc/designs/foundation/images/socialsidekick/expand.jpg"/>
+                        </div>
+                        </div>
+
+
+                        <div id="panel_expanded_full_middle">
+                        <div class="content clearfix">
+
+                        <!-- "previous page" action -->
+                        <div class="left_panel" >
+                        <div class="sliderarrow"><a href="javascript:void(0);" class="prev browse left"><img id="ss_left_arrow" src="/etc/designs/foundation/images/socialsidekick/sliderarrow_left.png" border="0" onmouseover="document.images['ss_left_arrow'].src='/etc/designs/foundation/images/socialsidekick/sliderarrow_left_red.png';" onmouseout="document.images['ss_left_arrow'].src='/etc/designs/foundation/images/socialsidekick/sliderarrow_left.png';" width="17"/></a></div>
+                        </div>
+
+                        <!-- root element for scrollable -->
+                        <div id="browsable" class="scrollable">
+                        <!-- root element for the items -->
+                        <div id="chained" class="ss_items" >
+                        </div>
+                        </div>
+                        <div class="right_panel">
+                        <div class="sliderarrow"><a href="javascript:void(0);" class="next browse right"><img id="ss_right_arrow" src="/etc/designs/foundation/images/socialsidekick/sliderarrow_right.png" border="0" onmouseover="document.images['ss_right_arrow'].src='/etc/designs/foundation/images/socialsidekick/sliderarrow_right_red.png';" onmouseout="document.images['ss_right_arrow'].src='/etc/designs/foundation/images/socialsidekick/sliderarrow_right.png';" width="17"/></a></div>
+                        </div>
+                        <br />
+                        <div  id="pagedots" class="navi"></div>
+                        </div>
+
+                        </div>
+                 </div>
+</div>
+<!-- Maximized View Panel End-->
+
+<!-- Minimized View Panel Start-->
+<div id="bottompanel">
+                <div id="panel_arrow">
+
+                         <div id="panel_icon" class="SSarrow"> <a href="javascript:void(0);" title="bottompanel"><img src="/etc/designs/foundation/images/socialsidekick/socialSidekick_up.png" width="31" height="26" border="0"/></a></div>
+
+                </div>
+
+        <div id="panel">
+                <div class="content clearfix">
+
+                    <div class="left_panel">
+                    <img src="/etc/designs/foundation/images/socialsidekick/collapse.jpg" border="0"/>
+                    </div>
+
+                    <div class="middle">
+                    </div>
+                    <div class="right_panel">
+                    </div>
+                </div>
+                </div>
+</div>
+<div id="dart_logo_sidekick">
+
+</div>
+<!-- Minimized View Panel End-->
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script src="http://admin.brightcove.com/js/APIModules_all.js"></script>
+
+
+
+<script src="/etc/designs/foundation/clientlibs/footer.1_2_1_3.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+CN.popups.setArriving(true).setExiting(true).setLayer(true).setForceLayer(false).setCookieLife(24).setPopDelay(3).init();
+</script>
+
+
+
+
+<script type="text/javascript">
+    CN.features.render();
+    CN.config.set({
+        
+        useInterstitial : true,
+        showInterstitialTimer : 15,
+        hasIntro : 'false'
+    });
+            // Adds classes for rendering based on intro and hash state
+            (function() {
+                CN.slideshow.render('#items-container', '/content/lucky/blogs/luckyrightnow/2011/10/20-jackets-under-50/jcr:content/par/cn_contentwell/par-main/cn_blogpost/cn_slideshow.2.json');
+            })();
+    
+        CN.features.sandbox.render();
+    
+
+    
+        CN.pluck.commentCountsComponent(["luckymag_078e7aa1-62f8-4a46-b018-ffb47bdb032a"]);
+    
+
+    
+
+</script>
+
+
+        
+
+
+
+
+
+
+
+
+    
+        
+        
+    
+
+
+
+
+    <script type="text/javascript" src="http://event.luckymag.com/js/eventTracker.js"></script>
+
+
+
+<div id="eventListHolder" style="display:none;"></div>
+<script type="text/javascript">
+    (function(){
+        var ns= CN,
+            trackingUrl = "/services/lookup/25a9646b-db78-4ca3-9c43-3d5a206f95ee",
+            absoluteUrl,
+            i,
+            domain = location.protocol + "//" + location.host;
+
+        if (CN.site && CN.site.allowedDomains) {
+            allowedDomains = CN.site.allowedDomains.split(",");
+        }
+        absoluteUrl = 0;
+        for(var i=0; i < allowedDomains.length; i++) {
+            if(domain.indexOf(allowedDomains[i]) >= 0) {
+                absoluteUrl = 1;
+            }
+        }
+
+        if (absoluteUrl == 1) {
+            trackingUrl = domain + trackingUrl;
+            ns.site = ns.site || {};
+            ns.site.eventTrackingList = new EventList("eventListHolder");
+            ns.site.eventTrackingList.setBaseUrl("http://event.luckymag.com/");
+            ns.site.eventTrackingEvent = new EventObject("LKY", "most_viewed");
+            ns.site.eventTrackingEvent.setEnvironment("PROD");
+            if (CN.site.pageId && CN.site.pageId !== "null") {
+                ns.site.eventTrackingEvent.setContentId(CN.site.pageId);
+            }
+            //ns.site.eventTrackingEvent.setContentType("");
+            ns.site.eventTrackingEvent.setFullUrl(trackingUrl);
+            ns.site.eventTrackingEvent.setContentTitle(CN.utils.trim("20 Jackets Under $50"));
+            
+                ns.site.eventTrackingEvent.setProperty("pd","2011/10/26 00:00:00");
+            
+
+            ns.site.eventTrackingList.addEvent(ns.site.eventTrackingEvent);
+            ns.site.eventTrackingList.writeImageTags();
+        }
+    }())
+</script>
+ 
+
+    
+
+
+
+
+
+
+
+<!--
+More detailed timing info is available by uncommenting some code in the timing.jsp component
+Timing chart URL:
+http://chart.apis.google.com/chart?chtt=20-jackets-under-50.html+%28576ms%29&cht=bhs&chxt=x&chco=c6d9fd,4d89f9&chbh=a&chds=0,576,0,576&chxr=0,0,576&chd=t:13,19,22,25,28,30,31,33,35,37,39,41,42,44,47,49,52,54,58,59,61,63,65,66,67,69,70,73,76,77,79,80,84,86,88,90,92,94,96,97,99,102,105,117,119,121,123,125,127,129,132,134,141,146,148,157,159,161,172,184,187,189,191,193,195,196,198,388,391,393,395,396,399,400,402,405,407,409,411,412,413,415,418,420,421,423,492,494,496,497,499,501,503,505,507,509,511,513,514,516,517,519,521,523,524,525,528,529,531,537,539,542,543,546,547,549,551,554,556,557,559,561,563,564,567,568,569,571,573,576|1,0,1,0,28,6,0,3,0,1,8,0,5,3,0,1,0,0,3,0,0,0,3,0,1,483,1,479,3,0,0,317,0,0,10,1,1,1,0,1,292,1,9,6,1,1,0,0,1,1,0,21,0,0,2,1,1,9,10,12,1,1,1,1,0,0,188,0,0,0,0,1,145,1,142,0,7,3,0,0,1,84,5,0,1,0,4,1,0,1,0,23,6,1,0,0,5,0,1,0,6,1,0,0,0,1,0,1,4,1,1,0,1,6,0,3,1,20,9,0,6,1,0,1,6,0,4,1,0,0&chly=cn_ad_init.jsp|cn_page_metadata.jsp|cn_ecom_placement.jsp|cn_ecom_placement.jsp|cn_site_header.jsp|cn_iparsys.jsp|new.jsp|par.jsp|cn_ad_placement.jsp|cn_site_logo.jsp|cn_iparsys.jsp|new.jsp|par.jsp|cn_main_nav.jsp|cn_ecom_placement.jsp|cn_ecom_placement.jsp|cn_ecom_placement.jsp|cn_login_bar.jsp|cn_iparsys.jsp|new.jsp|par.jsp|parsys.jsp|cn_iparsys.jsp|new.jsp|par.jsp|parsys.jsp|cn_breadcrumb.jsp|cn_contentwell.jsp|cn_iparsys.jsp|new.jsp|par.jsp|parsys.jsp|cn_auto_header.jsp|cn_subheader.jsp|cn_share_bar.jsp|cn_share_addthis.jsp|cn_share_feeds.jsp|cn_share_email.jsp|cn_share_print.jsp|new.jsp|cn_blogpost.jsp|cn_blog_post_nav.jsp|cn_keywords.jsp|cn_share_bar.jsp|cn_share_facebook_like...|cn_share_tweet.jsp|new.jsp|cn_title.jsp|cn_date_time.jsp|cn_contributors.jsp|cn_text.jsp|cn_slideshow.jsp|cn_favorites_control.jsp|cn_ecom_placement.jsp|cn_slideshow_share.jsp|cn_text.jsp|cn_text.jsp|cn_keywords.jsp|cn_keywords.jsp|cn_share_bar.jsp|cn_share_email.jsp|cn_share_print.jsp|cn_share_addthis.jsp|cn_share_permalink.jsp|cn_share_comments_coun...|new.jsp|cn_blog_post_nav.jsp|new.jsp|par.jsp|cn_sandbox.jsp|cn_reactions_ratings.jsp|cn_reactions_comments.jsp|cn_iparsys.jsp|new.jsp|par.jsp|cn_search_box.jsp|cn_features_container.jsp|cn_manual_feature.jsp|cn_ad_placement.jsp|new.jsp|new.jsp|cn_features_container.jsp|cn_manual_feature.jsp|cn_title.jsp|cn_mostpopular.jsp|new.jsp|cn_manual_feature.jsp|cn_text.jsp|new.jsp|cn_ad_placement.jsp|new.jsp|cn_features_container.jsp|cn_manual_feature.jsp|cn_title.jsp|cn_mostpopular.jsp|new.jsp|cn_manual_feature.jsp|cn_title.jsp|cn_mostpopular.jsp|new.jsp|cn_manual_feature.jsp|cn_title.jsp|cn_mostpopular.jsp|new.jsp|new.jsp|cn_ecom_placement.jsp|cn_ad_placement.jsp|cn_ad_placement.jsp|cn_image.jsp|cn_ecom_placement.jsp|cn_ecom_placement.jsp|cn_sandbox.jsp|cn_sandbox.jsp|cn_iparsys.jsp|new.jsp|par.jsp|cn_ecom_placement.jsp|cn_site_footer.jsp|cn_iparsys.jsp|new.jsp|par.jsp|cn_site_footer_nav.jsp|cn_global_footer_nav.jsp|cn_global_footer_nav.jsp|cn_iparsys.jsp|new.jsp|par.jsp|cn_global_footer_sites...|cn_global_footer_sites...|cn_socialsidekick.jsp&chs=600x500
+-->
+
+
+
+    <div id="stats">
+        <div class="clickstreamcloud">
+<script type="text/javascript" src="/etc/clientlibs/foundation/librarymanager.js"></script>
+<script type="text/javascript">
+CQClientLibraryManager.write([{"p":"/etc/clientlibs/foundation/shared.js","c":[]},{"p":"/libs/cq/personalization/clientlib.js","c":[]},{"p":"/libs/cq/personalization/clientlib/themes/default.css","c":[]},{"p":"/libs/cq/personalization/clientlib/ie6/themes/default.css","c":["ie6"]}],false);
+</script>
+<script type="text/javascript" src="/etc/segmentation.segment.js"></script>
+
+<script type="text/javascript">
+CQ_Analytics.PageDataMgr.addInitProperty('sitesection', 'blogs');
+CQ_Analytics.PageDataMgr.addInitProperty('url', 'http://www.luckymag.com/content/lucky/blogs/luckyrightnow/2011/10/20-jackets-under-50.html');
+CQ_Analytics.PageDataMgr.addInitProperty('urlType', 'standard');
+</script>
+
+<div id="clickstreamcloud-gui"></div></div>
+
+        <div class="analytics">
+
+<!-- SiteCatalyst code version: H.22.1.
+Copyright 1996-2010 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="/content/lucky/_jcr_content/analytics.sitecatalyst.js"></script>
+<script language="JavaScript" type="text/javascript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+CQ_Analytics.Sitecatalyst.updateEvars = function() {
+    // user defined mappings
+     
+}
+
+CQ_Analytics.ClickstreamcloudMgr.addListener("storesloaded", function(e) {
+    // set page name
+    s.pageName="blogs:luckyrightnow:2011:10:20-jackets-under-50";
+    // collect component events
+    CQ_Analytics.Sitecatalyst.collect();
+    // base mappings
+    CQ_Analytics.Sitecatalyst.getBaseMappings();	
+ 	// set basic variables
+    
+ 	// update 
+    CQ_Analytics.Sitecatalyst.updateEvars();
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    var s_code=s.t();if(s_code)document.write(s_code)
+});
+
+//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script>
+
+<noscript><img src="http://stats2.luckymag.com/b/ss/conde-luckymag/1/H.22.1--NS/1322085483441?cdp=0&gn=blogs%3Aluckyrightnow%3A2011%3A10%3A20-jackets-under-50" height="1" width="1" border="0" alt=""/></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.22.1. -->
+
+
+</div>
+
+    </div>
+
+
+</body>
+
+
+</html>

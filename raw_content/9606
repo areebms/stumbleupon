@@ -1,0 +1,659 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<title>- Hospital Food -</title>
+
+	<meta name="author" content="Matthew Buchanan" />
+	<meta name="color:Accent" content="#ee3322" />
+
+	<link rel="icon" href="http://28.media.tumblr.com/avatar_ac0b1f459537_16.png" />
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.5.2/build/reset/reset-min.css" media="all" />
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://hospitalfood.tumblr.com/rss" />
+
+	<style type="text/css" media="screen">
+		/*
+			Vertigo Theme by Matthew Buchanan v1.20
+			Released under Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License
+			http://creativecommons.org/licenses/by-nc-sa/3.0/
+		*/
+
+		html { background-color: transparent; }
+		html, body { height: 100%; }
+		body { font: normal 62.5%/1 "Helvetica Neue", Helvetica, Arial, sans-serif; background-color: #000; color: #ddd; }
+		#page { position: relative; width: 960px; min-height: 100%; margin: 0 auto; }
+		#header { background: url("http://static.tumblr.com/gpln05e/ScKMC9xSQ/header-bg.png") no-repeat 50% 0; padding-top: 110px; margin-bottom: 60px; }
+		#header h1 { font-size: 450%; color: #fff; text-align: center; text-transform: uppercase; }
+		#header h2 { width: 500px; margin: 0 auto; background: url("http://static.tumblr.com/gpln05e/23vSi9xSQ/header-h2-bg.png") no-repeat 50% 100%; padding: 15px 0 60px 120px; font-size: 130%; text-align: center; color: #fff; }
+		.pagetype { font-size: 130%; color: #666; text-transform: lowercase; margin: -10px 0 30px; padding: 0 0 20px 415px; }
+		.pagetype span { border: 1px solid #222; padding: 0.66em 1em; }
+		.pagetype strong { font-weight: normal; text-transform: uppercase; }
+		.pagetype a:link, .pagetype a:visited { color: #fff; }
+		.pagetype a:hover, .pagetype a:active { color: #ee3322; }
+
+		/* Posts */
+
+		.post { margin-bottom: 60px; font-size: 130%; }
+		.post .container { position: relative; }
+
+		.video { background: url("http://static.tumblr.com/gpln05e/lTMkzBxSQ/video-bg.png") repeat-y 250px 100%; margin-bottom: 40px; }
+		.video .container { position: relative; background: url("http://static.tumblr.com/gpln05e/lWXujBxSQ/video-projector.png") no-repeat 250px 100%; padding: 0 285px 165px 275px; }
+		.video .embed { background: url("http://static.tumblr.com/gpln05e/GqRzjBxSQ/video-top.png") no-repeat 0 0; padding: 50px 0 0 35px; margin: 0 -35px 1em -35px; }
+		.video .projector { position: absolute; width: 80px; height: 100px; left: 805px; bottom: 54px; background: url("http://static.tumblr.com/gpln05e/cZPpDBxSQ/video-projector-anim.gif") no-repeat 0 0; }
+		.video .meta { top: 50px; }
+
+		.audio .container { position: relative; padding: 10px 260px 0 240px; background: url("http://static.tumblr.com/gpln05e/G1YyS5xSQ/audio-cite-bg.png") no-repeat 200px 100%; }
+		.audio .embed { width: 300px; height: 220px; padding: 30px 0 0 100px; margin-bottom: 10px; background: url("http://static.tumblr.com/gpln05e/LidPi5xSQ/audio-bg.png") no-repeat 0 0; }
+		.audio .cassette { position: absolute; width: 270px; height: 120px; left: 281px; top: 81px; background: url("http://static.tumblr.com/gpln05e/ttmoS5xSQ/audio-cassette-anim.gif") no-repeat 0 0; }
+		.audio .content { padding-left: 20px; }
+		.audio .plays { margin-bottom: 1em; color: #777; }
+		.audio .plays a:link, .audio .plays a:visited { color: #777; text-decoration: none; border-bottom: 1px dotted #aaa; }
+		.audio .plays a:hover, .audio .plays a:active { color: #444; border-bottom: 1px dotted #555; }
+		.audio .plays + p { text-indent: 0; }
+		.audio .plays + p + p { text-indent: 2.5em; }
+		.audio .meta { top: 35px; }
+
+		.quote { margin-top: -20px; }
+		.quote .container { padding: 30px 260px 0 240px; background: url("http://static.tumblr.com/gpln05e/gR8GjBxSQ/quote-bg.png") no-repeat 710px 0; }
+		.quote .quotetext { padding: 0; color: #fff; }
+		.quote .quotetext p + p { text-indent: 2em; }
+		.quote .long { font-size: 140%; line-height: 135%; }
+		.quote .medium { font-size: 185%; line-height: 120%; }
+		.quote .short { font-size: 230%; line-height: 120%; }
+		.quote .content { width: 430px; min-height: 80px; margin-top: 10px; padding: 50px 20px 0 20px; background: url("http://static.tumblr.com/gpln05e/G4zMzBxSQ/quote-cite-bg.png") no-repeat 0 0; }
+		.quote .hand { float: left; width: 150px; height: 80px; }
+		.quote .meta { top: 30px; }
+		.long .meta { top: 28px; }
+		.short .meta { top: 34px; }
+
+		.link .container { padding: 0 0 0 240px; }
+		.link .link-wrap { position: relative; width: 590px; min-height: 90px; }
+		.link .hand { position: absolute; top: 0; right: 0; width: 165px; height: 90px; background: #ee3322 url("http://static.tumblr.com/gpln05e/BgCdi9xSQ/link-hand.png") no-repeat 100% 0; }
+		.link h2 { font-size: 200%; margin-right: 165px; background: #ee3322 url("http://static.tumblr.com/gpln05e/F8chS9xSQ/link-top.png") no-repeat 0 0; }
+		.link h2 span { display: block; padding: 35px 0 20px 20px; background: transparent url("http://static.tumblr.com/gpln05e/5GBYS9xSQ/link-bot.png") no-repeat 0 100%; }
+		.link h2 a:link, .link h2 a:visited { color: #fff; }
+		.link h2 a:hover, .link h2 a:active { text-decoration: none; border-bottom: 1px dotted #fff; }
+		.link .content { padding: 0 260px 0 20px; margin-top: 10px; }
+		.link .meta { top: 35px; }
+
+		.chat .container { padding: 0 240px 0 210px; }
+		.chat h2 { font-size: 190%; color: #fff; margin-bottom: 15px; padding: 2px 0 0 30px; }
+		.chat .transcript li { background: url("http://static.tumblr.com/gpln05e/ACX8i5xSQ/chat-bg.png") repeat-y 0 0; margin-bottom: 5px; padding: 5px 40px 5px 50px; color: #fff; font-size: 115%; line-height: 1.3; }
+		.chat .transcript li.even { background-position: 0 100%; }
+		.chat .label { font-weight: normal; text-transform: lowercase; color: #888; }
+
+		.photo .container { padding: 20px 270px 0 240px; }
+		.photo .photo-wrap { background: url("http://static.tumblr.com/gpln05e/aVsCzBxSQ/photo-bg.png") no-repeat 0 0; padding: 25px 20px 0; }
+		.photo .photo-wrap img { display: block; border: 3px solid #000; margin: 0 auto; }
+		.photo .photo-wrap img:hover { border: 3px solid #ee3322; }
+		.photo .photo-wrap .frame { height: 30px; margin-left: -20px; margin-right: -20px; background: url("http://static.tumblr.com/gpln05e/aVsCzBxSQ/photo-bg.png") no-repeat 0 100%; }
+		.photo .content { padding-left: 20px; margin-top: 10px; }
+		.photo .meta { top: 45px; }
+
+		.text .container { padding: 35px 270px 0 260px; background: url("http://static.tumblr.com/gpln05e/w0MdTBxSQ/text-bg.png") no-repeat 600px 0; }
+		.text h2.title { font-size: 185%; text-transform: uppercase; margin: 5px 0 15px; }
+		.text h2.title a:link, .text h2.title a:visited { color: #fff; }
+		.text h2.title a:hover, .text h2.title a:active { color: #ee3322; text-decoration: none; }
+		.text .meta { top: 35px; }
+
+		/* Notes */
+
+		.shownotes { margin-top: 10px; padding-left: 20px; color: #777; }
+		.shownotes a:link, .shownotes a:visited { color: #000; text-decoration: none; border-bottom: 1px dotted #000; }
+		.shownotes a:hover, .shownotes a:active { color: #000; border-bottom: 1px dotted #555; }
+		.text .shownotes, .video .shownotes { padding-left: 0; }
+		.chat .shownotes { padding-left: 50px; }
+		
+		.notes { width: 520px; margin: 15px 0 0 -25px; }
+		.notes li { background: url("http://static.tumblr.com/gpln05e/ACX8i5xSQ/chat-bg.png") repeat-y 0 0; margin-bottom: 5px; padding: 5px 40px 5px 50px; color: #888; font-size: 100%; line-height: 1.3; }
+		.notes .reblog { background-position: 0 100%; }
+		.notes a:link, .notes a:visited { color: #fff; }
+		.notes .avatar { display: none; }
+		.notes blockquote { margin: 0.5em 0 0 1.5em; font-style: italic; }
+		.notes blockquote a:link, .notes blockquote a:visited { color: #888;}
+		.chat .notes { margin-left: 0; }
+
+		/* Content */
+
+		.content { line-height: 154%; color: #bbb; }
+		.content h1, .content h2 { font-size: 131%; color: #fff; margin-bottom: 0.5em; }
+		.content h3, .content h4 { font-size: 115%; color: #fff; margin: 0.75em 0 0.25em; }
+		.content h5, .content h6 { color: #fff; text-transform: uppercase; margin: 0.75em 0 0.25em; }
+		.content p + p { text-indent: 2.5em; }
+		.content blockquote { font-style: italic; margin: 1em 0; padding-left: 2.5em; }
+		.content ul, .content ol { margin: 0.75em 0; padding-left: 2.5em; }
+		.content ul li { list-style: disc; }
+		.content ol li { list-style-type: decimal; }
+		.content pre { margin: 1em 0; padding: 5px 10px; background-color: #222; color: #fff; overflow: auto; width: 410px; }
+		.content code { padding: 1px 2px; font: normal 108%/1.57 "Lucida Console", Consolas, monospace; background-color: #222; color: #fff; }
+		.content abbr, .content acronym { border-bottom: 1px dotted #bbb; cursor: help; }
+
+		/* Metadata */
+
+		.meta { position: absolute; top: 0; left: 0; width: 220px; }
+		.meta .permalink { position: absolute; top: 0; right: 0; width: 30px; height: 30px; background: url("http://static.tumblr.com/gpln05e/w297S9xSQ/permalink.png") no-repeat 0 0; overflow: hidden; }
+		.meta .permalink a { display: block; width: 30px; height: 0; padding-top: 30px; overflow: hidden; }
+		.meta .data { text-align: right; margin-right: 40px; background-color: #000; }
+		.meta .data p, .meta .tags { margin: 0.7em 0; }
+		.meta .data p em { color: #666; font-style: normal; padding-bottom: 0.25em; border-bottom: 1px solid #333; }
+		.meta .data p.divider em { border-bottom: 1px solid #333; }
+		.meta .tags li { padding-bottom: 0.5em; }
+
+		.hidden { display: none; }
+
+		/* Content */
+
+		strong, b, strong em, strong i { font-weight: bold; }
+		em, i, em strong, em b { font-style: italic; }
+
+		/* Footer */
+
+		#footer { background: url("http://static.tumblr.com/gpln05e/eQTAi9xSQ/footer-bg.png") no-repeat 50% 0; padding: 60px 0; }
+		#footer #tumblr-logo, #footer #controls { position: absolute; bottom: 0; width: 100px; height: 30px; }
+		#footer #tumblr-logo { left: 220px; background: url("http://static.tumblr.com/gpln05e/6FRgjBxSQ/tumblr-logo.png") no-repeat 0 0; }
+		#footer #controls { width: 130px; left: 610px; background: #ee3322 url("http://static.tumblr.com/gpln05e/u2qGy9xSQ/footer-controls.png") no-repeat 0 0; }
+		#footer #controls li, #footer #controls li a { display: block; float: left; width: 30px; height: 30px; }
+		#footer #controls .random, #footer #controls .random a { width: 40px; }
+		#footer #tumblr-logo, #footer #controls li a { text-indent: -999em; overflow: hidden; }
+		#footer #search { display: none; position: absolute; bottom: 0; left: 454px; width: 160px; height: 30px; background: url("http://static.tumblr.com/gpln05e/H523jBxSQ/search-bg.png") no-repeat 0 0; z-index: 10; }
+		#footer #search label { display: none; }
+		#footer #search-query { position: absolute; left: 8px; bottom: 3px; background-color: #333; border: none; font-size: 130%; width: 150px; height: 21px; color: #fff; }
+		#footer .older, #footer .newer { width: 180px; height: 40px; float: left; margin-left: 285px; background: url("http://static.tumblr.com/gpln05e/5FfxC9xSQ/nav-older-bg.png") no-repeat 0 0; }
+		#footer .newer { margin-left: 20px; background-image: url("http://static.tumblr.com/gpln05e/j8JnS9xSQ/nav-newer-bg.png"); }
+		#footer .older a, #footer .newer a { display: block; height: 40px; text-indent: -999em; overflow: hidden; background: #ee3322 url("http://static.tumblr.com/gpln05e/YxL1S9xSQ/nav-older.png") no-repeat 0 0; }
+		#footer .newer a { background-image: url("http://static.tumblr.com/gpln05e/rKctC9xSQ/nav-newer.png"); }
+		#footer .older a:hover, #footer .newer a:hover { background-position: 0 -40px; }
+		#footer .credits, #footer .pages { clear: both; text-align: center; font-size: 130%; line-height: 130%; padding-top: 1em; color: #666; }
+		#footer .pages { color: #333; }
+		#footer .credits a:link, #footer .credits a:visited { color: #999; }
+		#footer .credits a:hover, #footer .credits a:active { color: #ee3322; }
+
+		/* Following */
+		
+		#following { overflow: hidden; width: 360px; margin: 20px auto 0; padding-top: 30px; background: url("http://static.tumblr.com/gpln05e/F9Fkfgd11/header-following.png") no-repeat 50% 0; }
+		#following li { display: block; float: left; width: 24px; height: 24px; margin: 0; padding: 8px; background: #000 url("http://static.tumblr.com/gpln05e/OkOkfgc9y/avatar-bg.png") no-repeat 0 0; }
+		#following li.alt2 { background-position: -40px 0; }
+		#following li.alt3 { background-position: -80px 0; }
+		#following li.alt4 { background-position: -120px 0; }
+
+		/* Links */
+
+		a:link, a:visited { color: #ee3322; text-decoration: none; }
+		a:hover, a:active { text-decoration: underline; }
+		.data a:link, .data a:visited { color: #666; }
+		.data a:hover, .data a:active { color: #ee3322; text-decoration: none; }
+	</style>
+
+	<link rel="stylesheet" href="http://static.tumblr.com/gpln05e/hvJwzJxSQ/sifr-3.css" type="text/css" media="screen" />
+
+	<!--[if lt IE 7]>
+		<style type="text/css" media="screen">
+			body, #header { text-align: center; }
+			#page { text-align: left; }
+			.link .link-wrap { height: 90px; }
+			.content p { text-indent: 2.5em; }
+			.content pre { width: 430px; overflow-x: auto; overflow-y: visible; }
+			.content code { font-size: 91%; }
+			.meta { left: -240px; }
+			.video .meta { left: -275px; }
+			.text .meta { left: -260px; }
+			.audio .embed { width: 400px; height: 250px; }
+			.audio .cassette { left: 41px; }
+			#footer .older, #footer .newer { display: inline; }
+		</style>
+	<![endif]-->
+	<!--[if IE 7]>
+		<style type="text/css" media="screen">
+			.content pre { overflow-x: scroll; overflow-y: visible; }
+			.content code { font-size: 91%; }
+		</style>
+	<![endif]-->
+
+	<script type="text/javascript" src="http://static.tumblr.com/gpln05e/weB2DJxSQ/sifr-3.js"></script>
+	<script type="text/javascript" src="http://static.tumblr.com/gpln05e/IxqIzNxSQ/sifr-vertigo-config.js"></script>	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+	
+	<script type="text/javascript">
+	// <![CDATA[
+
+		sIFR.replace(hitchcock, {
+			selector: '#header h1',
+			css: [
+				'.sIFR-root { background-color: #000000; color: #ee3322; text-transform: uppercase; text-align: center; }',
+				'a { text-decoration: none; }',
+				'a:link { color: #ee3322; }',
+				'a:hover { color: #ffffff; }'
+				]
+		});
+		sIFR.replace(hitchcock, {
+			selector: 'h2.title',
+			css: [
+				'.sIFR-root { background-color: #000000; color: #ee3322; text-transform: uppercase; }',
+				'a { text-decoration: none; }',
+				'a:link { color: #ee3322; }',
+				'a:hover { color: #ffffff; }'
+				]
+		});
+
+		var obj = null;
+		function fadeObject() {
+			if (obj) obj.find(".data").fadeOut("slow");
+		}
+		$(document).ready(function() {
+			$(".meta").hover(function() {
+				if (obj) {
+					obj.find(".data").fadeOut("slow");
+					obj = null;
+				}
+				$(this).find(".data").fadeIn("fast");
+			}, function() {
+				obj = $(this);
+				setTimeout("fadeObject()",1000);
+			});
+			$(".video").hover(function() {
+				$(this).find(".projector").removeClass("hidden");
+			}, function() {
+				$(this).find(".projector").addClass("hidden");
+			});
+			$(".video #notes").appendTo(".video")
+				.css("background-color","#000")
+				.find(".notes").css({"margin-left": "200px", "margin-top": "0"});
+			$(".audio").hover(function() {
+				$(this).find(".cassette").removeClass("hidden");
+			}, function() {
+				$(this).find(".cassette").addClass("hidden");
+			});
+			$("#footer .search").click(function(event) {
+				event.preventDefault();
+				$("#search").slideToggle();
+				if ($("#search-query").val() == "") {
+					$("#search-query").val("Search");
+					$("#search-query").focus(function() {
+						if ($("#search-query").val() == "Search") {
+							$("#search-query").val("");
+						}
+					});
+					$("#search-query").blur(function() {
+						if ($("#search-query").val() == "") {
+							$("#search-query").val("Search");
+						}
+					});
+				}
+			});
+			$("#following li").each(function() {
+				var num = Math.ceil(Math.random()*4);
+				$(this).addClass("alt"+num);
+			});
+			$("p,div.content,blockquote").each(function() {
+				var para = $(this).html();
+				para = para.replace(/:[-]?[\)D]/g, "<img src='http://static.tumblr.com/gpln05e/nEO9jBxSQ/smiley.png' />");
+				$(this).html(para);
+			});
+		});
+	// ]]>	
+	</script>
+<meta http-equiv="x-dns-prefetch-control" content="off"/></head>
+<body>
+
+	<div id="page">
+		<div id="header">
+			<h1><a href="/">- Hospital Food -</a></h1>
+			<h2><br>
+<div align="justify">Dear hungry patient, submit your "delicious" hospital food <a href="http://hospitalfood.tumblr.com/submit"><u><b>here</b></u></a> !
+<br>
+<br>
+</br>
+New ! Join the hospital food community on Facebook <a href="http://www.facebook.com/pages/Hospital-Food/205708505650"><u><b>here</b></u></a> !
+<br>
+</div></h2>
+		</div>
+		<div id="main">
+			
+			
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				<div class="post text">
+					<div class="container">
+						
+	                    <h2 class="title"><a href="http://hospitalfood.tumblr.com/post/4279814704/weirdest-ebay-auction-ever">Weirdest Ebay Auction Ever!</a></h2>
+						
+						<div class="content">
+							<p><img src="http://media.tumblr.com/tumblr_lj0q87EtR11qzarpx.jpg"/></p>
+<p>Ebay is an online forum for selling merchandise worldwide. You can buy anything on Ebay, even &#8220;nothing&#8221;. Current bid: $20.50!</p>
+<p>Link: <a href="http://cgi.ebay.com/ws/eBayISAPI.dll?ViewItem&amp;item=200592911741" target="_blank"><a href="http://cgi.ebay.com/ws/eBayISAPI.dll?ViewItem&amp;item=200592911741" target="_blank">http://cgi.ebay.com/ws/eBayISAPI.dll?ViewItem&amp;item=200592911741</a></a></p>
+						</div>
+				
+				
+					
+						<p class="shownotes"><a href="http://hospitalfood.tumblr.com/post/4279814704/weirdest-ebay-auction-ever#notes" title="See Post with Notes">1 note</a></p>
+					
+				
+				
+						<div class="meta" id="meta4279814704">
+							<p class="permalink"><a href="http://hospitalfood.tumblr.com/post/4279814704/weirdest-ebay-auction-ever">*</a></p>
+							<div class="data hidden">
+								<p><em>posted <a href="http://hospitalfood.tumblr.com/post/4279814704/weirdest-ebay-auction-ever">3 days ago</a></em></p>
+								
+								
+							</div>
+						</div>
+					</div>
+<br>
+</br>
+<div style="font-size: 10px; text-align: center;"><a class="dsq-comment-count" href="http://hospitalfood.tumblr.com/post/4279814704/weirdest-ebay-auction-ever#disqus_thread">Comments (View)</a></div>
+				</div>
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				<div class="post text">
+					<div class="container">
+						
+	                    <h2 class="title"><a href="http://hospitalfood.tumblr.com/post/4233383978/new-on-facebook-whats-your-name">New on Facebook: What&#8217;s your name?</a></h2>
+						
+						<div class="content">
+							<p><img src="http://media.tumblr.com/tumblr_lixdhm0XNK1qzarpx.png"/></p>
+<p>Bad at Names? So. You have a pile of fading photos of the gang, but you can’t for the life of you remember so-and-so’s name. This is where “What’s Your Name?” hopes to provide you with an answer. The trick is to get thousands of people to the Facebook page to look over the uploaded photos and recognize that guy whose name you have forgotten. This community is new, having been birthed this month, so there are not a lot of photos yet. Nor people accessing the page to help those suffering from memory fade.</p>
+<p>To help them give it a go, click here: <a href="http://www.facebook.com/pages/Whats-your-name/161659000551452" target="_blank"><a href="http://www.facebook.com/pages/Whats-your-name/161659000551452" target="_blank">http://www.facebook.com/pages/Whats-your-name/161659000551452</a></a></p>
+						</div>
+				
+				
+					
+				
+				
+						<div class="meta" id="meta4233383978">
+							<p class="permalink"><a href="http://hospitalfood.tumblr.com/post/4233383978/new-on-facebook-whats-your-name">*</a></p>
+							<div class="data hidden">
+								<p><em>posted <a href="http://hospitalfood.tumblr.com/post/4233383978/new-on-facebook-whats-your-name">5 days ago</a></em></p>
+								
+								
+							</div>
+						</div>
+					</div>
+<br>
+</br>
+<div style="font-size: 10px; text-align: center;"><a class="dsq-comment-count" href="http://hospitalfood.tumblr.com/post/4233383978/new-on-facebook-whats-your-name#disqus_thread">Comments (View)</a></div>
+				</div>
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				<div class="post text">
+					<div class="container">
+						
+	                    <h2 class="title"><a href="http://hospitalfood.tumblr.com/post/4231051307/the-future-most-famous-painting-in-internet-history">The future &#8220;most famous painting in Internet history&#8221;!</a></h2>
+						
+						<div class="content">
+							<p><img src="http://media.tumblr.com/tumblr_lix3ftk4C71qzarpx.jpg"/></p>
+<p>Please check out this crazy Ebay auction: <a href="http://cgi.ebay.com/ws/eBayISAPI.dll?ViewItem&amp;item=200592716181" target="_blank"><a href="http://cgi.ebay.com/ws/eBayISAPI.dll?ViewItem&amp;item=200592716181" target="_blank">http://cgi.ebay.com/ws/eBayISAPI.dll?ViewItem&amp;item=200592716181</a></a></p>
+						</div>
+				
+				
+					
+				
+				
+						<div class="meta" id="meta4231051307">
+							<p class="permalink"><a href="http://hospitalfood.tumblr.com/post/4231051307/the-future-most-famous-painting-in-internet-history">*</a></p>
+							<div class="data hidden">
+								<p><em>posted <a href="http://hospitalfood.tumblr.com/post/4231051307/the-future-most-famous-painting-in-internet-history">5 days ago</a></em></p>
+								
+								
+							</div>
+						</div>
+					</div>
+<br>
+</br>
+<div style="font-size: 10px; text-align: center;"><a class="dsq-comment-count" href="http://hospitalfood.tumblr.com/post/4231051307/the-future-most-famous-painting-in-internet-history#disqus_thread">Comments (View)</a></div>
+				</div>
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				<div class="post text">
+					<div class="container">
+						
+	                    <h2 class="title"><a href="http://hospitalfood.tumblr.com/post/4081402395/humoristic-annotations-on-post-it-notes-when-people-are">Humoristic annotations on Post-it notes when people are at work.</a></h2>
+						
+						<div class="content">
+							<p><img src="http://media.tumblr.com/tumblr_lilvd66Hq51qzarpx.jpg"/></p>
+<p>The Yellow Notes project is a continuous art experiment where people leave personal and humoristic annotations on Post-it notes when they are at work.</p>
+<p>The project is brand new. To give it a go, click here: <a href="http://yellownotes.tumblr.com/" target="_blank"><a href="http://yellownotes.tumblr.com/" target="_blank">http://yellownotes.tumblr.com/</a></a></p>
+						</div>
+				
+				
+					
+				
+				
+						<div class="meta" id="meta4081402395">
+							<p class="permalink"><a href="http://hospitalfood.tumblr.com/post/4081402395/humoristic-annotations-on-post-it-notes-when-people-are">*</a></p>
+							<div class="data hidden">
+								<p><em>posted <a href="http://hospitalfood.tumblr.com/post/4081402395/humoristic-annotations-on-post-it-notes-when-people-are">1 week ago</a></em></p>
+								
+								
+							</div>
+						</div>
+					</div>
+<br>
+</br>
+<div style="font-size: 10px; text-align: center;"><a class="dsq-comment-count" href="http://hospitalfood.tumblr.com/post/4081402395/humoristic-annotations-on-post-it-notes-when-people-are#disqus_thread">Comments (View)</a></div>
+				</div>
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				<div class="post text">
+					<div class="container">
+						
+	                    <h2 class="title"><a href="http://hospitalfood.tumblr.com/post/4024737479/face-of-the-day">FACE OF THE DAY!</a></h2>
+						
+						<div class="content">
+							<p><img src="http://media.tumblr.com/tumblr_ligtkdqWWt1qzarpx.png"/></p>
+<p><span class="bio">Follow us on Twitter! Every day we&#8217;ll choose 1 follower at random, upload his/her profile picture as our own picture &amp; tweet his/her account to the rest of the community.</span> A simple way to get new followers for free!</p>
+<p><a href="https://twitter.com/FaceOfTheDay" target="_blank"><a href="https://twitter.com/FaceOfTheDay" target="_blank">https://twitter.com/FaceOfTheDay</a></a></p>
+						</div>
+				
+				
+					
+				
+				
+						<div class="meta" id="meta4024737479">
+							<p class="permalink"><a href="http://hospitalfood.tumblr.com/post/4024737479/face-of-the-day">*</a></p>
+							<div class="data hidden">
+								<p><em>posted <a href="http://hospitalfood.tumblr.com/post/4024737479/face-of-the-day">2 weeks ago</a></em></p>
+								
+								
+							</div>
+						</div>
+					</div>
+<br>
+</br>
+<div style="font-size: 10px; text-align: center;"><a class="dsq-comment-count" href="http://hospitalfood.tumblr.com/post/4024737479/face-of-the-day#disqus_thread">Comments (View)</a></div>
+				</div>
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				<div class="post text">
+					<div class="container">
+						
+	                    <h2 class="title"><a href="http://hospitalfood.tumblr.com/post/4021902985/weirdest-twitter-account-ever">WEIRDEST TWITTER ACCOUNT EVER :-))</a></h2>
+						
+						<div class="content">
+							<p><img src="http://media.tumblr.com/tumblr_liggfn57yv1qzarpx.jpg"/></p>
+<p><span class="bio">Tweeting strike&#8230;.until he gets more followers than Justin Bieber!</span></p>
+<p>WEIRD!!</p>
+<p>:-))</p>
+<p><a href="http://twitter.com/AccountonSTRIKE" target="_blank"><a href="http://twitter.com/AccountonSTRIKE" target="_blank">http://twitter.com/AccountonSTRIKE</a></a></p>
+						</div>
+				
+				
+					
+				
+				
+						<div class="meta" id="meta4021902985">
+							<p class="permalink"><a href="http://hospitalfood.tumblr.com/post/4021902985/weirdest-twitter-account-ever">*</a></p>
+							<div class="data hidden">
+								<p><em>posted <a href="http://hospitalfood.tumblr.com/post/4021902985/weirdest-twitter-account-ever">2 weeks ago</a></em></p>
+								
+								
+							</div>
+						</div>
+					</div>
+<br>
+</br>
+<div style="font-size: 10px; text-align: center;"><a class="dsq-comment-count" href="http://hospitalfood.tumblr.com/post/4021902985/weirdest-twitter-account-ever#disqus_thread">Comments (View)</a></div>
+				</div>
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				<div class="post text">
+					<div class="container">
+						
+	                    <h2 class="title"><a href="http://hospitalfood.tumblr.com/post/3984780025/sexpaint">SEXPAINT</a></h2>
+						
+						<div class="content">
+							<p><img src="http://media.tumblr.com/tumblr_lidab1DTau1qzarpx.png"/></p>
+<p>Hilarious, embarrassing and personal sex confessions from anonymous and ordinary Paint addicts.</p>
+<p><a href="http://sexpaint.tumblr.com/" target="_blank"><a href="http://sexpaint.tumblr.com" target="_blank">http://sexpaint.tumblr.com</a></a></p>
+<p>Take a look, it&#8217;s fun!</p>
+						</div>
+				
+				
+					
+						<p class="shownotes"><a href="http://hospitalfood.tumblr.com/post/3984780025/sexpaint#notes" title="See Post with Notes">1 note</a></p>
+					
+				
+				
+						<div class="meta" id="meta3984780025">
+							<p class="permalink"><a href="http://hospitalfood.tumblr.com/post/3984780025/sexpaint">*</a></p>
+							<div class="data hidden">
+								<p><em>posted <a href="http://hospitalfood.tumblr.com/post/3984780025/sexpaint">2 weeks ago</a></em></p>
+								
+								
+							</div>
+						</div>
+					</div>
+<br>
+</br>
+<div style="font-size: 10px; text-align: center;"><a class="dsq-comment-count" href="http://hospitalfood.tumblr.com/post/3984780025/sexpaint#disqus_thread">Comments (View)</a></div>
+				</div>
+			
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/hospitalfoodblog/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+
+		</div>
+<center><script type="text/javascript"><!--
+google_ad_client = "pub-3940914996183054";
+/* 468x60, date de création 05/05/09 */
+google_ad_slot = "7846201536";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></center>
+<br>
+<br>
+		<div id="footer">
+			<a href="http://www.tumblr.com" title="Running on Tumblr." id="tumblr-logo">Tumblr</a>
+
+			
+			<form action="/search" method="get" id="search">
+				<label for="search-query">Search</label>
+				<input type="text" id="search-query" name="q" value="" />
+			</form>
+			
+
+			<ul id="controls">
+				<li class="search"><a href="#" title="Search">Search</a></li>
+				<li class="feed"><a href="http://hospitalfood.tumblr.com/rss" title="RSS Feed">RSS Feed</a></li>
+				<li class="random"><a href="/random" title="Random Post">Random Post</a></li>
+				<li class="archive"><a href="/archive" title="Archive">Archive</a></li>
+			</ul>
+
+			
+			<div class="older"><a href="/page/2">Older</a></div>
+			<div class="newer"></div>
+			
+			
+			
+
+			
+			<p class="pages">Page 1 of 10</p>
+			
+
+		
+<br>
+<div align="justify">Legal notice:
+
+By submitting information to this site, you grant HospitalFood a perpetual, royalty-free license to use, reproduce, modify, publish, distribute, and otherwise exercise all copyright and publicity rights with respect to that information at its sole discretion, including storing it on HospitalFood servers and incorporating it in other works in any media now known or later developed including without limitation published books. If you do not wish to grant HospitalFood these rights, it is suggested that you do not submit information to this site. No image from this site may be used for any purpose without expressed written authorization, with one exception: you may post one image as a link to HospitalFood.tumblr.com. If you do not have rights to the image, you must provide a link to the image owner. Thks !</div>
+
+			
+		</div>
+	</div>
+<!-- Site Meter -->
+<script type="text/javascript" src="http://s14.sitemeter.com/js/counter.js?site=s14Hospitalfood">
+</script>
+<noscript>
+<a href="http://s14.sitemeter.com/stats.asp?site=s14Hospitalfood" target="_top">
+<img src="http://s14.sitemeter.com/meter.asp?site=s14Hospitalfood" alt="Site Meter" border="0"/></a>
+</noscript>
+<!-- Copyright (c)2009 Site Meter -->
+
+
+<!-- BEGIN TUMBLR CODE --><iframe src="http://assets.tumblr.com/iframe.html?9&src=http%3A%2F%2Fhospitalfood.tumblr.com%2F&amp;lang=en_US&amp;name=hospitalfood&amp;brag=0" scrolling="no" width="330" height="25" frameborder="0" style="position:absolute; z-index:1337; top:0px; right:0px; border:0px; background-color:transparent; overflow:hidden;" id="tumblr_controls"></iframe><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><script type="text/javascript">_qoptions={qacct:"p-19UtqE8ngoZbM"};</script><script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script><noscript><img src="http://pixel.quantserve.com/pixel/p-19UtqE8ngoZbM.gif" style="display:none; border-width:0px; height:1px; width:1px;" alt=""/></noscript><!-- END TUMBLR CODE --></body>
+</html>

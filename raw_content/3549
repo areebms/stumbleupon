@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <title>Sharecare -  UnitedHealthcare Team - Blog</title>                <meta name="title" content="Sharecare -  UnitedHealthcare Team - Blog" />
+        <meta property="og:title" content="Sharecare -  UnitedHealthcare Team - Blog" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="http://media.sharecare.com/profileImages/D/E/V/DEV__4c72a4efeceac1_40832749/UHC_Main_300.jpg.jpg" />
+<meta property="og:url" content="http://sharecare.to/rF3jfk" />
+<meta property="og:site_name" content="Sharecare" />
+<meta property="fb:app_id" content="211481248877321" />
+                                                                                <link rel="stylesheet" href="http://static.sharecare.com/css/rollup/rollup.css?v=0" media="screen" type="text/css" />
+<link rel="canonical" href="http://www.sharecare.com/user/unitedhealthcare-team/blogs/show/a-womans-1-health-threat" />
+<link rel="stylesheet" href="http://static.sharecare.com/css/rollup/user.css?v=0" media="screen" type="text/css" />
+<!--[if IE 7]> <link rel="stylesheet" href="http://static.sharecare.com/css/ie/ie7.css?v=0" media="screen" type="text/css" /><![endif]-->
+<!--[if IE 8]> <link rel="stylesheet" href="http://static.sharecare.com/css/ie/ie8.css?v=0" media="screen" type="text/css" /><![endif]-->
+<link rel="shortcut icon" href="http://static.sharecare.com/images/favicon.png" type="image/x-icon" />        <script type="text/javascript" src="http://sc.ssoservice.com/tools/page.js?response_type=token&client_id=sharecare"></script>
+        <script type="text/javascript" src="http://fonts.sharecare.com/wfc1tio.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script type="text/javascript" charset="utf-8">
+                            // TinyMCE needs document.domain set
+                document.domain     = 'sharecare.com';
+                        var amazonS3BaseUrl = 'http://media.sharecare.com/';
+            var s_account       = 'sharecareprod';
+        </script>
+        <script type="text/javascript">
+    //<![CDATA[
+
+        var saveProfileImageUrl = '';
+        //]]>
+</script>
+<script type="text/javascript">
+    //<![CDATA[
+
+    var commentValidator = '{"commentText":{"notEmpty":{"method":"notEmpty","arguments":[],"allowEmpty":false,"message":"Message may not be empty."},"stringLength":{"method":"stringLength","arguments":[{"max":2600}],"allowEmpty":false,"message":"Maximum message length is 2,500 characters."}}}';
+    //]]>
+</script>
+<script type="text/javascript" src="http://static.sharecare.com/js/rollup/libs.js?v=0"></script>
+<script type="text/javascript" src="http://static.sharecare.com/js/user/module.js?v=0"></script>
+<script type="text/javascript" src="http://static.sharecare.com/js/user/blog/controller.js?v=0"></script>
+<script type="text/javascript" src="http://static.sharecare.com/js/tiny_mce/tiny_mce.js?v=0"></script>
+<script type="text/javascript" src="http://static.sharecare.com/js/user/blog/show.js?v=0"></script>
+<script type="text/javascript" src="http://static.sharecare.com/js/facebookFix.js?v=0"></script>
+<script type="text/javascript">
+    //<![CDATA[
+var EXTERNAL_SEARCH_AJAX_URL = 'http://www.healthline.com/v2/sharecare/autocomplete';    //]]>
+</script>
+<script type="text/javascript" src="http://static.sharecare.com/js/global.js?v=0"></script>        <script type="text/javascript">
+            $(function(){
+                applySuperfish('ul.userLinks');
+
+            /* Logged in user dropdown */
+            (function($) {
+               $.dropdown = function(container) {
+                   var menu   = $('ul', $(container));
+                   var button = $('.dropdownButton', $(container));
+
+                   button.click(function(e) {
+                       e.stopPropagation();
+                       menu.slideToggle('fast');
+                       $(container).toggleClass('expanded');
+                   });
+
+                   $('html').click(function(e) {
+                       menu.slideUp('fast');
+                       $(container).removeClass('expanded');
+                   });
+               };
+            })(jQuery);
+
+
+            $.dropdown('.dropdown');
+            });
+                        $(function(){
+                $('.exploreCollapse').ajaxify('#exploreTopicsWindow', {
+                    bind: 'click',
+                    cache: false,
+                    live: true,
+                    preloadType: 'inline',
+                    postResponse: function() {
+                        if ($('#exploreTopics').hasClass('exploreCollapse')) {
+                            $('#exploreTopics').removeClass('exploreCollapse');
+                            $('#exploreTopics').addClass('exploreExpand');
+                        } else if ($('#exploreTopics').hasClass('exploreExpand')) {
+                            $('#exploreTopics').removeClass('exploreExpand');
+                            $('#exploreTopics').addClass('exploreCollapse');
+                        }
+
+                        if ($('#exploreTopicsWrapper').hasClass('exploreTopicsWrapperHide')) {
+                            $('exploreTopicsWrapper').removeClass('exploreTopicsWrapperHide');
+                            $('exploreTopicsWrapper').addClass('exploreTopicsWrapperShow');
+                        }
+
+                        closeOthers('exploreTopics');
+                    }
+                });
+
+                $('.exploreExpand').live('click', function() {
+                    if ($('#exploreTopics').hasClass('exploreCollapse')) {
+                        $('#exploreTopics').removeClass('exploreCollapse');
+                        $('#exploreTopics').addClass('exploreExpand');
+                    } else if ($('#exploreTopics').hasClass('exploreExpand')) {
+                        $('#exploreTopics').removeClass('exploreExpand');
+                        $('#exploreTopics').addClass('exploreCollapse');
+                    }
+
+                    if ($('#exploreTopicsWrapper').hasClass('exploreTopicsWrapperShow')) {
+                        $('#exploreTopicsWrapper').removeClass('exploreTopicsWrapperShow');
+                        $('#exploreTopicsWrapper').addClass('exploreTopicsWrapperHide');
+                    }
+
+                    return false;
+                });
+
+                $('.topicExplorePaginator a').ajaxify('#exploreTopicsWindow', {
+                    bind: 'click',
+                    cache: false,
+                    live: true
+                });
+
+                $('.topicExploreItem').live('mouseover', function(){
+                    $(this).addClass('topicExploreItemHover');
+                }).live('mouseout', function(){
+                    $(this).removeClass('topicExploreItemHover');
+                });
+
+                $('.drozAnswerCollapse').ajaxify('#drozAnswerWindow', {
+                    bind: 'click',
+                    cache: false,
+                    live: true,
+                    preloadType: 'inline',
+                    postResponse: function() {
+                        if ($('#drozAnswer').hasClass('drozAnswerCollapse')) {
+                            $('#drozAnswer').removeClass('drozAnswerCollapse');
+                            $('#drozAnswer').addClass('drozAnswerExpand');
+                        } else if ($('#drozAnswer').hasClass('drozAnswerExpand')) {
+                            $('#drozAnswer').removeClass('drozAnswerExpand');
+                            $('#drozAnswer').addClass('drozAnswerCollapse');
+                        }
+
+                        if ($('#drozAnswerWrapper').hasClass('drozAnswerWrapperHide')) {
+                            $('drozAnswerWrapper').removeClass('drozAnswerWrapperHide');
+                            $('drozAnswerWrapper').addClass('drozAnswerWrapperShow');
+                        }
+
+                        closeOthers('drozAnswer');
+                    }
+                });
+
+                $('.drozAnswerExpand').live('click', function() {
+                    if ($('#drozAnswer').hasClass('drozAnswerCollapse')) {
+                        $('#drozAnswer').removeClass('drozAnswerCollapse');
+                        $('#drozAnswer').addClass('drozAnswerExpand');
+                    } else if ($('#drozAnswer').hasClass('drozAnswerExpand')) {
+                        $('#drozAnswer').removeClass('drozAnswerExpand');
+                        $('#drozAnswer').addClass('drozAnswerCollapse');
+                    }
+
+                    if ($('#drozAnswerWrapper').hasClass('drozAnswerWrapperShow')) {
+                        $('#drozAnswerWrapper').removeClass('drozAnswerWrapperShow');
+                        $('#drozAnswerWrapper').addClass('drozAnswerWrapperHide');
+                    }
+
+                    return false;
+                });
+
+                var closeOthers = function(name) {
+                    if (name !== 'exploreTopics') {
+                        $('.exploreExpand').trigger('click');
+                    }
+                    if (name !== 'drozAnswer') {
+                        $('.drozAnswerExpand').trigger('click');
+                    }
+                }
+            });
+        </script>
+        <script type="text/javascript">
+            // ChartBeat
+            var _sf_startpt=(new Date()).getTime()
+        </script>
+
+    </head>
+    <body id="userModuleBlogControllerShowAction" >
+                        <div id="headerWrapper">
+            <div id="header" class="wrapper">
+                <div id="primaryNavigation" class="wrapper">
+                        <ul id="navMenu">
+                                                    <li class="account"><a href="#" class="registerButton">Sign Up</a></li>
+                            <li class="account"><a href="#" class="loginButton">Log In</a></li>
+                                                    <li class="nav"><a href="http://reference.sharecare.com/">Health Reference</a></li>
+                            <li class="nav"><a href="/people">People</a></li>
+                            <li class="nav"><a href="/topics">Topics</a></li>
+                        </ul>
+                        <div class="logo">
+                            <a href="/" id="logo">Sharecare</a>
+                        </div>
+                </div>
+            </div> <!-- /header -->
+
+            <div id="topContent">
+                <form id="globalSearchBar" action="/search">
+                    <h2>Get expert answers to your health questions</h2>
+                    <div id="globalSearchField">
+                        <input id="globalSearchFieldInput" name="query" class="defaultText" />
+                        <!-- <ul id="autocompleteResults"></ul> -->
+                    </div>
+                    <button type="submit">Ask</button>
+                    <div id="headerdma">
+                        <!-- scdn.sharecare/qa/pos=a (tile=1) -->
+                        <script type="text/javascript">//<![CDATA[
+var ord = Math.floor(Math.random() * 10000000000000000);
+document.write('<script type="text/javascript" src="http://ad.doubleclick.net/N6437/adj/scdn.sharecare/user;env=PRD;cn=;ct=;us=;pos=a;tile=1;dcopt=ist;sz=862x15;kw=;ord=' + ord + '?"><\/script>');
+//]]></script><noscript><a href="http://ad.doubleclick.net/N6437/jump/scdn.sharecare/user;env=PRD;cn=;ct=;us=;pos=a;tile=1;dcopt=ist;sz=862x15;kw=;ord=123456789?" target="_blank" ><img src="http://ad.doubleclick.net/N6437/ad/scdn.sharecare/user;env=PRD;cn=;ct=;us=;pos=a;tile=1;dcopt=ist;sz=862x15;kw=;ord=123456789?" border="0" alt="" /></a></noscript>                        <!-- end ad tag -->
+                    </div>
+                </form>
+
+                                </div><!-- /topContent -->
+
+            
+            
+        </div><!-- /headerWrapper -->
+        
+        
+        <div id="content" class="userModule blogController showAction wrapper">
+        
+<ul class="tabs" id="userLinks">
+    <li>
+        <a href="/user/unitedhealthcare-team">Profile</a></li>
+
+            <li>
+            <a href="/user/unitedhealthcare-team/answers">Answers</a></li>
+    
+        <li>
+    <a href="/user/unitedhealthcare-team/credentials">Credentials</a></li>
+    
+        <li>
+        <a href="/user/unitedhealthcare-team/events">Events</a></li>
+    
+    <li>
+        <a href="/user/unitedhealthcare-team/friends">Friends</a></li>
+
+        <li>
+        <a href="/user/unitedhealthcare-team/colleagues">Colleagues</a></li>
+    
+    <li>
+        <a href="/user/unitedhealthcare-team/groups">Groups</a></li>
+
+    <li class="selected">
+        <a href="/user/unitedhealthcare-team/blogs">Blog</a></li>
+
+
+</ul><ul id="userSubMenu">
+    <li class="facebookLike"><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=211481248877321&amp;xfbml=1"></script><fb:like href="http://sharecare.to/rF3jfk" layout="button_count" send="false" show_faces="false" font=""></fb:like></li>
+    <li><a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-url="http://sharecare.to/rF3jfk">Tweet</a><script type="text/javascript"src="http://platform.twitter.com/widgets.js"></script></li>
+            <li><a rel="nofollow" class="favorite" href="/home/blogs/a-womans-1-health-threat/add/favorite/type/post"></a></li>
+    </ul>
+
+
+<div class="doubleCol wrapper">
+    <div class="secondary">
+        
+
+<div id="userProfileSummary">
+        <div class="photos">
+        <div class="avatar">
+                        <div class="attrImg">
+    <img class="landscape" src="http://media.sharecare.com/profileImages/D/E/V/DEV__4c72a4efeceac1_40832749/UHC_Main_300.jpg.jpg" alt=" UnitedHealthcare Team" title=" UnitedHealthcare Team" />
+</div>        </div>
+    </div>
+        <div class="details">
+                <div class="wrapper">
+            <div class="userIcon practitioner"></div>
+            <h1 class="username">
+                 UnitedHealthcare Team            </h1>
+                                                        <h4>
+                                                                                    Group Administrator, UnitedHealthcare                        </h4>
+                                        </div>
+
+        <div id="editableProfileSummary">
+            
+
+            <div class="bio">
+                <h3>Bio:</h3>
+                <div class='bioText'>
+                                    UnitedHealthcare provides a spectrum of consumer-oriented health
+benefit plans and services to individuals, public sector employers
+and businesses of all sizes. The company organizes access to health
+care services on behalf of more than 25 million individual
+consumers, contracting directly with more than
+600,000&nbsp;physicians and care professionals and 5,000 hospitals
+nationwide. UnitedHealthcare...                                </div>
+                <a href="/user/unitedhealthcare-team/bio">Read More</a>
+            </div>
+
+                                            </div>
+
+    </div>
+    <div class="footer">
+                            <a href="http://twitter.com/unitedforhealth" class="twitter">Twitter</a>
+        
+                
+            </div>
+</div>
+<div id="editProfileImageOverlay"></div>
+    </div>
+
+    <div class="primary">
+        <div id="blogList" class="blogList">
+                        <div class="blogEntry" id="blogEntry4ec6d6fe141c68_96075340">
+                        <div class="header wrapper">
+                    <div class="description">
+                        <h2 class="title">A Woman’s #1 Health Threat</h2>
+                        <div class="date">Nov 18, 2011</div>
+                    </div>
+                </div>
+                <div class="content">
+                                                            Attention women: If you think heart disease is only for men, think again. Women get heart disease too. In fact, it&rsquo;s the leading cause of death in women, killing more women than all cancers combined, according to the Centers for Disease Control and Prevention. That&rsquo;s why it&rsquo;s so important to understand what raises your risk -- and how you can lower it.<br /> <div class="mediaItemWrapper"><img src="http://media.sharecare.com/mediaItems/4/c/c/4cc09819c2fc2/200252820-001.jpg.jpg?v=1287690345" alt="Male Doctor Sitting with Woman" title="Male Doctor Sitting with Woman" class="postedMediaItem"/></div> <br />For both women and men, the risk for heart attacks rises with age. Having a blood relative with heart disease increases your risk, too. You can&rsquo;t stop aging or change family members, but there are many risk factors for heart disease that you can modify. They include:<br />&bull;&nbsp; obesity<br />&bull;&nbsp; diabetes<br />&bull;&nbsp; high blood pressure<br />&bull;&nbsp; high cholesterol<br />&bull;&nbsp; lack of exercise<br />&bull;&nbsp; tobacco use<br /><br />The prescription for controlling these risk factors is familiar: Get plenty of <a href="http://www.sharecare.com/question/can-exercise-reduce-my-stress " target="_blank">exercise</a>, eat a balanced <a href="http://www.sharecare.com/question/what-is-a-mediterranean-diet" target="_self">diet</a>, keep your <a href="http://www.sharecare.com/question/how-can-i-change-eating-habits-lose-weight" target="_blank">weight</a> under control, don&rsquo;t smoke, and see your doctor often. Get your cholesterol checked regularly starting at age 45. If you are a tobacco user or have diabetes, or if heart disease runs in your family, start getting regular cholesterol checks at age 20. Have your blood pressure taken at least every two years, or more frequently if you have already been diagnosed with high blood pressure.<br /><br />Because women die of heart attacks just as men do, you should know the symptoms to watch for. For both men and women, the most common sign of a heart attack is pain or discomfort in the center of the chest. It can be mild or strong, last just a few minutes, or come and go. There may also be radiating pain down the left arm. Some people &ndash; especially women -- will experience atypical symptoms. These can include:<br />&bull;&nbsp; pain or discomfort in one or both arms, the back, neck, jaw, or stomach<br />&bull;&nbsp; shortness of breath<br />&bull;&nbsp; feeling like you can&rsquo;t get enough air, which can occur before or along with the chest pain or discomfort<br />&bull;&nbsp; nausea or vomiting<br />&bull;&nbsp; feeling faint or woozy<br />&bull;&nbsp; breaking out in a cold sweat<br /><br />Certain other symptoms of a heart attack tend to occur exclusively in women, including:<br />&bull;&nbsp; heartburn<br />&bull;&nbsp; loss of appetite<br />&bull;&nbsp; fatigue or weakness<br />&bull;&nbsp; coughing<br />&bull;&nbsp; heart flutters<br />&bull;&nbsp; back or jaw pain<br /><br />If you think that you or someone else may be having a heart attack, call 911. Sometimes the signs of a heart attack can happen suddenly, but they can also develop slowly, over hours, days, and even weeks before a heart attack actually occurs. The more symptoms and signs you have, the more likely it is that you are experiencing a heart attack. Also, if you&rsquo;ve already had a heart attack, your symptoms may differ if you have another one.<br /><br />Improving your heart disease awareness can be a lifesaver.<br /><br />-- Kathy Jackson, Wellness Consultant for UnitedHealth Group<br /><br />Helpful links:<br /><br /><a href="http://www.sharecare.com/question/what-exercises-should-i-do-to-improve-heart-health" target="_blank">What exercises should I do to improve my heart health?</a><br /><a href="http://www.sharecare.com/question/can-exercise-reduce-my-stress" target="_self">Can exercise reduce my stress?</a><br /><a href="http://www.sharecare.com/question/what-is-preventive-care" target="_self">What is preventive care?</a><br /><a href="http://www.sharecare.com/question/does-managed-care-insurance-cover-screenings" target="_blank">Does managed care insurance cover health screenings and preventive care?</a>                    
+                                    </div>
+
+            </div>
+            <div class="footer">
+                <div class="comments" id="blogComments">
+                    <div id="commentListWithPagination">
+                                                                <ul id="commentList"></ul>
+                                        </div>
+                                    </div>
+            </div>        </div>
+    </div>
+</div>
+<div id="editBlogPostOverlay"></div>
+        <div id="ready" rel=/media/list></div>
+        <div id="mediaDialogSelector"></div>
+        <div id="mediaImageHolder"><img alt='' src='http://static.sharecare.com/images/colorpicker/blank.gif?v=0' /></div>        </div>
+
+        <div id="footer">
+            <style type="text/css">
+            #footer table {
+                border-collapse: collapse;
+            }
+			#footer table tr th {
+				background-color: transparent;
+				color: #66BAC0;
+				padding: 2px;
+			}
+			#footer table tr td {
+				background-color: transparent;
+				line-height: 150%;
+				padding: 2px;
+			}
+			#footer table tr td a {
+				font-weight: bold;
+                                color: #FFFFFF;
+			}
+			#footer table tr td.footerBottom {
+				border-top: 1pt dotted #AAAAAA;
+				padding-top: 15px !important;
+			}
+			#footer table tr td.footerLogo {
+				border-left: 1pt dotted #AAAAAA;
+				text-align: right;
+                               padding-left: 10px !important;
+			}
+
+                        #footer table tr td.footerBottom a {
+                                color: #66BAC0;
+                        }
+        </style>
+            <div id="footerInner">
+                <table width="100%">
+                    <tr>
+                        <td valign="top" style="padding-top: 0">
+            	<table width="100%">
+            		<tr>
+            			<th width="25%">About</th>
+            			<th width="25%">Legal</th>
+            			<th width="25%">Contact Us</th>
+            			<th width="25%">Follow Us</th>
+            		</tr>
+            		<tr>
+            			<td>
+            				<a href="/static/about">About Sharecare</a><br />
+                			<a href="/static/partners">Featured Experts</a><br /> 
+            				<a href="/static/editorialadvisoryboard">Editorial Advisory Board</a><br /> 
+                			<a href="/static/pressreleases">Press Releases</a><br />
+            			</td>
+            			<td>
+            				<a href="/static/privacypolicy" rel="nofollow">Privacy Policy</a><br />
+               				<a href="/static/terms" rel="nofollow">Terms of Use</a><br />
+                			<a href="/static/contentpolicy" rel="nofollow">Content Policy</a><br />
+                			<a href="/static/legal" rel="nofollow">Legal</a><br />
+            			</td>
+            			<td>
+				            <a href="/static/become-an-expert">Become an Expert</a><br /> 
+				            <a href="/static/contact">Contact Us</a><br />
+            				<a href="/static/help" rel="nofollow">Support</a><br />
+                            <a href="/static/sitemap">Site Map</a><br />
+            			</td>
+            			<td>
+            				<a href="http://www.facebook.com/SharecareNow" target="_blank">Facebook</a><br />
+            				<a href="http://www.twitter.com/SharecareNow" target="_blank">Twitter</a><br />
+            				<a href="/widget">Widget</a><br />
+                                        <a href="http://blog.sharecare.com">Blog</a><br/>
+            			</td>
+            		</tr>
+            	</table>
+                        </td>
+                        <td class="footerLogo" width="212px">
+                            <br />
+                           <a href="http://www.sharecare.com"><img src="http://static.sharecare.com/images/logofooter.png?v=62" /></a>
+                        </td>
+                    </tr>
+                    <tr><td colspan="2">&nbsp;</td></tr>
+                    <tr>
+                        <td colspan="2" class="footerBottom"> 
+                            All content posted on this site is the responsibility of the party posting such content. Participation 
+                            on this site by a party does not imply endorsement of any other party's content, products, or services. 
+                            CONTENT SHOULD NOT BE USED FOR MEDICAL ADVICE, DIAGNOSIS, OR TREATMENT. <a href="/static/legal" rel="nofollow">See 
+                            additional information</a>.
+                        </td>
+                    </tr>
+                </table>
+            </div><!-- /footerinner -->        </div>
+                <!-- SiteCatalyst code version: H.21.1. Copyright 1996-2010 Adobe, Inc. All Rights Reserved -->
+        <script language="JavaScript" type="text/javascript"><!--
+            s.pageName="sharecare.com/user/unitedhealthcare-team/blogs/show/a-womans-1-health-threat";s.eVar33="sharecare.com/user/unitedhealthcare-team/blogs/show/a-womans-1-health-threat";s.channel="user";s.eVar34="user";s.server="domU-12-31-39-00-9D-24";s.prop1="user/blog";s.eVar1="user/blog";s.prop8="unregistered";s.eVar8="unregistered";s.eVar36="non";s.eVar37="non";s.prop35="non";s.events="event7";s.eVar40="UnitedHealthcare Team";s.prop32="UnitedHealthcare Team";s.eVar41="blog";s.prop33="blog";s.products="media|Getty Images;media|image|Male Doctor Sitting with Woman";
+            s.eVar21 = s.prop21;
+            s.eVar22 = s.prop22;
+            s.eVar23 = s.prop23;
+            /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+            var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+        <!-- End SiteCatalyst code version: H.21.1. -->
+        
+        <script type="text/javascript">
+            var _sf_async_config={uid:23142,domain:"sharecare.com"};
+            (function(){
+            function loadChartbeat() { window._sf_endpt=(new Date()).getTime(); var e = document.createElement('script'); e.setAttribute('language', 'javascript'); e.setAttribute('type', 'text/javascript'); e.setAttribute('src', (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") + "js/chartbeat.js"); document.body.appendChild(e); }
+            var oldonload = window.onload;
+            window.onload = (typeof window.onload != 'function') ?
+            loadChartbeat : function() { oldonload(); loadChartbeat(); };
+            })();
+        </script>
+
+    </body>
+</html>

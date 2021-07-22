@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html class="" lang="en-US">
+
+<!--[if lt IE 7]> <html class="no-js ie6 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<meta name="robots" content="noodp, noydir">
+
+<title>Clutch Magazine | Smart &amp; Fly | clutchmagonline.com</title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://www.clutchmagonline.com/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://www.clutchmagonline.com/wp-content/themes/clutchmag/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<script type="text/javascript" src="http://www.clutchmagonline.com/wp-content/themes/clutchmag/js/jquery.sharrre-1.3.4.min.js"></script>
+
+<script src="http://www.clutchmagonline.com/wp-content/themes/clutchmag/js/modernizr.custom.js"></script>
+<script src="http://www.clutchmagonline.com/wp-content/themes/clutchmag/js/waypoints.min.js"></script>
+
+<script type="text/javascript">
+/*
+$(document).ready(function() {
+	$('.top').addClass('hidden');
+	$.waypoints.settings.scrollThrottle = 30;
+	$('#rap').waypoint(function(event, direction) {
+		$('.top').toggleClass('hidden', direction === "up");
+	}, {
+		offset: '-100%'
+	}).find('.main-navigation').waypoint(function(event, direction) {
+		$(this).parent().toggleClass('stickything', direction === "down");
+		event.stopPropagation();
+	});
+});
+*/
+</script>
+
+<script src="http://www.clutchmagonline.com/wp-content/themes/clutchmag/js/jquery.masonry.min.js"></script>
+<script src="http://www.clutchmagonline.com/wp-content/themes/clutchmag/js/jquery.infinitescroll.min.js"></script>
+
+<script>
+$(function(){
+	$('.shareme').sharrre({
+	share: {
+	twitter: true,
+	facebook: true,
+	googlePlus: false
+	},
+	template: '<div class="rox"><div class="sleft"><i class="foundicon-heart"></i><span class="stotal">{total}</span></div><div class="smiddle"><a href="#" class="facebook"><i class="social foundicon-facebook"></i></a><a href="#" class="twitter"><i class="social foundicon-twitter"></i></a></div></div>',
+	enableHover: false,
+	enableTracking: true,
+	render: function(api, options){
+	$(api.element).on('click', '.twitter', function() {
+	api.openPopup('twitter');
+	});
+	$(api.element).on('click', '.facebook', function() {
+	api.openPopup('facebook');
+	});
+	}
+	});
+});
+</script>
+
+
+
+<script>
+
+  $(function infinitescroll(){
+    
+    var $container = $('#fullcontent');
+    
+    $container.imagesLoaded(function(){
+      $container.masonry({
+        itemSelector: '.hentry',
+        columnWidth: 160
+      });
+    });
+    
+    $container.infinitescroll({
+      navSelector  : '#nav-below',    // selector for the paged navigation 
+      nextSelector : '.loadmore a',  // selector for the NEXT link (to page 2)
+      itemSelector : '.hentry',     // selector for all items you'll retrieve
+      loading: {
+          finishedMsg: 'No more posts to load.',
+          img: 'http://www.clutchmagonline.com/wp-content/themes/clutchmag/images/loader.gif'
+        }
+      },
+      // trigger Masonry as a callback
+      function( newElements ) {
+        // hide new items while they are loading
+        var $newElems = $( newElements ).css({ opacity: 0 });
+        // ensure that images load before adding to masonry layout
+        $newElems.imagesLoaded(function(){
+          // show elems now they're ready
+          $newElems.animate({ opacity: 1 });
+          $container.masonry( 'appended', $newElems, true ); 
+        });
+
+		  $('.shareme').sharrre({
+			share: {
+			twitter: true,
+			facebook: true,
+			googlePlus: false
+			},
+	template: '<div class="rox"><div class="sleft"><i class="foundicon-heart"></i><span class="stotal">{total}</span></div><div class="smiddle"><a href="#" class="facebook"><i class="social foundicon-facebook"></i></a><a href="#" class="twitter"><i class="social foundicon-twitter"></i></a></div></div>',
+			enableHover: false,
+			enableTracking: true,
+			render: function(api, options){
+			$(api.element).on('click', '.twitter', function() {
+			api.openPopup('twitter');
+			});
+			$(api.element).on('click', '.facebook', function() {
+			api.openPopup('facebook');
+			});
+			}
+			});		
+
+      }
+    );
+
+		//Load More Button
+//		$(window).unbind('.infscr');
+//		$(".loadmore a").click(function(){
+//		    $('#fullcontent').infinitescroll('retrieve');
+//		    $('#nav-below').show();
+//		    return false;
+//		});
+    
+  });
+</script>
+
+<script src="http://www.clutchmagonline.com/wp-content/themes/clutchmag/js/cycle.min.js"></script>
+
+<link href='http://fonts.googleapis.com/css?family=Norican|Open+Sans+Condensed:700|Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="http://www.clutchmagonline.com/wp-content/themes/clutchmag/stylesheets/general_foundicons.css">	
+<link rel="stylesheet" href="http://www.clutchmagonline.com/wp-content/themes/clutchmag/stylesheets/general_foundicons_ie7.css">
+<link rel="stylesheet" href="http://www.clutchmagonline.com/wp-content/themes/clutchmag/stylesheets/social_foundicons.css">	
+<link rel="stylesheet" href="http://www.clutchmagonline.com/wp-content/themes/clutchmag/stylesheets/social_foundicons_ie7.css">
+
+
+<!-- PUT THIS TAG IN THE head SECTION -->
+<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js"></script>
+<script type="text/javascript">
+  GS_googleAddAdSenseService("ca-pub-4490002161143424");
+  GS_googleEnableAllServices();
+</script>
+<script type="text/javascript">
+	GA_googleAddSlot("ca-pub-4490002161143424", "Header");
+
+	GA_googleAddSlot("ca-pub-4490002161143424", "SelfServe1");
+	GA_googleAddSlot("ca-pub-4490002161143424", "SelfServe2");
+	GA_googleAddSlot("ca-pub-4490002161143424", "SelfServe3");
+	GA_googleAddSlot("ca-pub-4490002161143424", "SelfServe4");
+	GA_googleAddSlot("ca-pub-4490002161143424", "SelfServe5");
+	GA_googleAddSlot("ca-pub-4490002161143424", "SelfServe6");
+
+	GA_googleAddSlot("ca-pub-4490002161143424", "txtlink1");
+   GA_googleAddSlot("ca-pub-4490002161143424", "Text2");
+
+	GA_googleAddSlot("ca-pub-4490002161143424", "ClutchMagazineOnlineHomePage300x250");
+	GA_googleAddSlot("ca-pub-4490002161143424", "ClutchMagazineOnlineHomePage728x90");
+	GA_googleAddSlot("ca-pub-4490002161143424", "ClutchMagazineOnlineHomePageBottom728x90");
+	GA_googleAddSlot("ca-pub-4490002161143424", "ClutchMagazineOnlineHomePageSkyscraper160x600");
+
+	GA_googleAddSlot("ca-pub-4490002161143424", "ClutchMagazineOnlineArticlePage728x90");
+	GA_googleAddSlot("ca-pub-4490002161143424", "ClutchMagazineOnlineArticlePageBOTTOM728x90");
+	GA_googleAddSlot("ca-pub-4490002161143424", "ClutchMagOnlineArticlePage160x600");
+	GA_googleAddSlot("ca-pub-4490002161143424", "ClutchMagOnlineArticlePage300x250");
+
+	GA_googleAddSlot("ca-pub-4490002161143424", "NewsGossipInfo160x600");
+	GA_googleAddSlot("ca-pub-4490002161143424", "NewsGossipInfoBOTTOM300x250");
+	GA_googleAddSlot("ca-pub-4490002161143424", "NewsGossipInfoBOTTOM728x90");
+	GA_googleAddSlot("ca-pub-4490002161143424", "NewsGossipInfoTOP300x250");
+	GA_googleAddSlot("ca-pub-4490002161143424", "NewsGossipInfoTOP728x90");
+	GA_googleAddSlot("ca-pub-4490002161143424", "TopClutchLeaderBoard");
+
+</script>
+<script type="text/javascript">
+  GA_googleFetchAds();
+</script>
+
+
+<script type="text/javascript" src="http://ads.jetpackdigital.com/sites/clutch/jpd.js"></script>
+
+<!-- Begin comScore Tag --><script>var _comscore = _comscore || [];_comscore.push({ c1: "2", c2: "6036161" });(function() {var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s, el);})();</script><noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=6036161&cv=2.0&cj=1" /></noscript><!-- End comScore Tag -->
+
+	
+	<!-- BEGIN TRIGGER TAG INITIALIZATION -->
+	<script type="text/javascript" src="http://cdn.triggertag.gorillanation.com/js/triggertag.js"></script>
+	<script type="text/javascript">getTrigger('9220');</script>
+	<!-- END TRIGGER TAG INITIALIZATION -->
+
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.4.7 - http://yoast.com/wordpress/seo/ -->
+<link rel="canonical" href="http://www.clutchmagonline.com/" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Clutch Magazine &raquo; Feed" href="http://www.clutchmagonline.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Clutch Magazine &raquo; Comments Feed" href="http://www.clutchmagonline.com/comments/feed/" />
+<link rel='stylesheet' id='cptchStylesheet-css'  href='http://www.clutchmagonline.com/wp-content/plugins/captcha/css/style.css?ver=454' type='text/css' media='all' />
+<link rel='stylesheet' id='wpcf-css'  href='http://www.clutchmagonline.com/wp-content/plugins/wp-contact-form/wpcf.css?ver=20110218' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-email-css'  href='http://www.clutchmagonline.com/wp-content/plugins/wp-email/email-css.css?ver=2.60' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-polls-css'  href='http://www.clutchmagonline.com/wp-content/plugins/wp-polls/polls-css.css?ver=2.63' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack-widgets-css'  href='http://www.clutchmagonline.com/wp-content/plugins/jetpack/modules/widgets/widgets.css?ver=20121003' type='text/css' media='all' />
+<link rel='stylesheet' id='style-main-css'  href='http://www.clutchmagonline.com/wp-content/themes/clutchmag/style.css?ver=1369791295' type='text/css' media='all' />
+<link rel='stylesheet' id='sharedaddy-css'  href='http://www.clutchmagonline.com/wp-content/plugins/jetpack/modules/sharedaddy/sharing.css?ver=2.3' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.clutchmagonline.com/wp-includes/js/jquery/jquery.js?ver=1.8.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var SafeCommentsAjax = {"ajaxurl":"http:\/\/www.clutchmagonline.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.clutchmagonline.com/wp-content/plugins/safe-report-comments/js/ajax.js?ver=454'></script>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.clutchmagonline.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='http://wp.me/1IA5A' />
+<script type="text/javascript" src="http://www.clutchmagonline.com/wp-content/plugins/audio-player/assets/audio-player.js?ver=2.0.4.6"></script>
+<script type="text/javascript">AudioPlayer.setup("http://www.clutchmagonline.com/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.6", {width:"290",animation:"yes",encode:"yes",initialvolume:"60",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"e1e1e1",text:"000000",leftbg:"000000",lefticon:"ffffff",volslider:"ffffff",voltrack:"FFFFFF",rightbg:"000000",rightbghover:"999999",righticon:"ffffff",righticonhover:"ffffff",track:"999999",loader:"000000",border:"000000",tracker:"DDDDDD",skip:"000000",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+
+<!-- Comment Rating plugin Version: 2.9.32 by Bob King, http://wealthynetizen.com/, dynamic comment voting & styling. --> 
+<style type="text/css" media="screen">
+   .ckrating_highly_rated {;}
+   .ckrating_poorly_rated {;}
+   .ckrating_hotly_debated {;}
+</style>
+
+
+<!--Plugin WP Missed Schedule 2013.0531.4444 Active - Tag: edcb48f0d130ca1974cf9bab6cb27fc3-->
+
+<style type="text/css">
+.wp-polls .pollbar {
+	margin: 1px;
+	font-size: 6px;
+	line-height: 8px;
+	height: 8px;
+	background-image: url('http://www.clutchmagonline.com/wp-content/plugins/wp-polls/images/default/pollbg.gif');
+	border: 1px solid #c8c8c8;
+}
+</style>
+<style type='text/css'>img#wpstats{display:none}</style>	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+
+
+<meta name="google-site-verification" content="VgwRjE6_JKmY34jMKjCqoIapq79y6thmL4s3UZh3JNE" />
+</head>
+
+<body class="home blog">
+	
+	
+	<!-- BEGIN GN Ad Tag for Clutch Magazine 1000x1000 home -->
+	<script type="text/javascript">
+	if ((typeof(f423664)=='undefined' || f423664 > 0) ) {
+	  if(typeof(gnm_ord)=='undefined') gnm_ord=Math.random()*10000000000000000; if(typeof(gnm_tile) == 'undefined') gnm_tile=1;
+	  document.write('<scr'+'ipt src="http://ad.doubleclick.net/N4403/adj/clutchmagazine.com/home;sect=home;mtfInline=true;sz=1000x1000;tile='+(gnm_tile++)+';ord='+gnm_ord+'?" type="text/javascript"></scr'+'ipt>');
+	}else{
+	//insert default static image here as default ad
+	}
+	</script>
+	<!-- END AD TAG -->	
+	
+<div id="rap" class="hfeed site clearfix">
+		<header id="masthead" class="site-header clearfix" role="banner">
+		<hgroup class="logoban">
+			<div id="topban">
+				
+					<!-- clutchmagazine.com/home -->
+					<script type="text/javascript">
+					  var ord = window.ord || Math.floor(Math.random() * 1e16);
+					  document.write('<script type="text/javascript" src="http://ad.doubleclick.net/N4403/adj/clutchmagazine.com/home;sect=home;sz=728x90;dcopt=ist;type=pop;type=int;ord=' + ord + '?"><\/script>');
+					</script>
+					<noscript>
+					<a href="http://ad.doubleclick.net/N4403/jump/clutchmagazine.com/home;sect=home;sz=728x90;ord=[timestamp]?">
+					<img src="http://ad.doubleclick.net/N4403/ad/clutchmagazine.com/home;sect=home;sz=728x90;ord=[timestamp]?" width="728" height="90" />
+					</a>
+					</noscript>
+
+							</div>
+			
+			
+			<h1 class="logo-head">				<a href="http://www.clutchmagonline.com" title="Clutch" id="logo">
+				  <img src="http://www.clutchmagonline.com/wp-content/themes/clutchmag/images/clutchlogo.png" alt="Clutch" width="202" height="68" />
+				</a>
+			</h1>			
+		</hgroup>
+		
+		<nav role="navigation" class="site-navigation main-navigation">
+			<div class="iconlinks clearfix">
+				<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com/clutchmagazineonline&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+				<a href="http://twitter.com/clutchmagazine"><i class="social foundicon-twitter"></i></a>
+				<a href="http://clutchmag.tumblr.com/"><i class="social foundicon-tumblr"></i></a>
+				<a href="https://plus.google.com/u/0/100140268906245248071"><i class="social foundicon-google-plus"></i></a>
+				<a href="http://pinterest.com/clutchmag/"><i class="social foundicon-pinterest"></i></a>
+				<a href="http://www.clutchmagonline.com/feed"><i class="social foundicon-rss"></i></a>
+			</div>
+			<div class="themainmenu clearfix">
+				<h2 class="viewmenu assistive-text">View Menu <span>&rsaquo;</span></h2>
+				<div class="assistive-text skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
+				<ul>
+					<li>
+							<form method="get" id="searchform" action="/index.php">
+		<input class="searchbox" type="text" placeholder="Search&hellip;" name="s" id="s" />
+		<button type="submit" id="searchsubmit" value="Search"><i class="foundicon-search"></i></button>
+	</form>					</li>
+				</ul>
+				<div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-108006" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-108006"><a href="http://www.clutchmagonline.com/feature/">Life+Culture</a></li>
+<li id="menu-item-190189" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-190189"><a href="http://www.clutchmagonline.com/tag/photos">Photos</a></li>
+<li id="menu-item-108001" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-108001"><a href="http://www.clutchmagonline.com/tag/fashion/">Fashion</a></li>
+<li id="menu-item-108002" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-108002"><a href="http://www.clutchmagonline.com/tag/beauty/">Beauty</a></li>
+<li id="menu-item-108007" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-108007"><a href="http://www.clutchmagonline.com/tag/opinion">Opinion</a></li>
+<li id="menu-item-194877" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-194877"><a title="Coco and Creme" href="http://cocoandcreme.com">Coco and Creme</a></li>
+</ul></div>	
+
+			
+			</div>
+		</nav>
+	</header><!-- #masthead .site-header -->
+
+	<div id="main">
+
+<script>window.ONSWIPE_USR = 'clutchmagonline'</script>
+<script src="http://assets.onswipe.com/synapse/on.js?usr=clutchmagonline" id="onswipe_synapse"></script> 
+		<div id="primary" class="site-content">
+			<div id="fullcontent" role="main" class="infinite-scroll clearfix">
+				
+						<div id="homesidebar" class="widget-area" role="complementary">
+		<div class="sidebar hentry">
+			
+						<aside id="text-12" class="widget widget_text">			<div class="textwidget"><!-- clutchmagazine.com/home -->
+<script type="text/javascript">
+  var ord = window.ord || Math.floor(Math.random() * 1e16);
+  document.write('<script type="text/javascript" src="http://ad.doubleclick.net/N4403/adj/clutchmagazine.com/home;sect=home;sz=300x250,300x600;ord=' + ord + '?"><\/script>');
+</script>
+<noscript>
+<a href="http://ad.doubleclick.net/N4403/jump/clutchmagazine.com/home;sect=home;sz=300x250,300x600;ord=[timestamp]?">
+<img src="http://ad.doubleclick.net/N4403/ad/clutchmagazine.com/home;sect=home;sz=300x250,300x600;ord=[timestamp]?" />
+</a>
+</noscript></div>
+		</aside><aside id="theskinnypicwidget-2" class="widget widget_theskinnypicwidget">			
+			<div class="skinnypicrap clearfix">
+								
+				
+				<article>
+
+					<a href="http://www.clutchmagonline.com/2013/07/trot-the-globe-a-guide-to-las-vegas/" title="Trot the Globe: A Guide to Las Vegas" rel="bookmark">
+											<img width="140" height="78" src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/LasVegas-140x78.jpg" class="attachment-thumbnail wp-post-image" alt="LasVegas" />										</a>
+
+					<header class="entry-header">
+						<span class="cat-links">
+							<a href="http://www.clutchmagonline.com/tag/las-vegas/">Las Vegas</a> 						</span>
+
+						<h2 class="entry-title"><a href="http://www.clutchmagonline.com/2013/07/trot-the-globe-a-guide-to-las-vegas/" title="Trot the Globe: A Guide to Las Vegas" rel="bookmark">Trot the Globe: A Guide to Las Vegas</a></h2>
+					</header><!-- .entry-header -->
+
+				</article><!-- #post-201270 -->
+				
+
+								
+				
+				<article>
+
+					<a href="http://www.clutchmagonline.com/2013/07/pantless-wonder/" title="Pantless Wonder" rel="bookmark">
+											<img width="140" height="78" src="http://www.clutchmagonline.com/wp-content/uploads/2011/10/Screen-Shot-2011-10-25-at-8.48.49-PM1-140x78.png" class="attachment-thumbnail wp-post-image" alt="Screen-Shot-2011-10-25-at-8.48.49-PM1" />										</a>
+
+					<header class="entry-header">
+						<span class="cat-links">
+							<a href="http://www.clutchmagonline.com/tag/image/">Image</a> 						</span>
+
+						<h2 class="entry-title"><a href="http://www.clutchmagonline.com/2013/07/pantless-wonder/" title="Pantless Wonder" rel="bookmark">Pantless Wonder</a></h2>
+					</header><!-- .entry-header -->
+
+				</article><!-- #post-85704 -->
+				
+
+								
+				</div>
+				
+			</aside>        <aside id="popsliderwidget-2" class="widget widget_popsliderwidget">  
+		
+		
+			      
+
+		 <div class="roundslider popularslider">
+		  <div id="covertxt"></div>
+		  <!--<div id="coverarrow"></div>-->
+			<div class="viewer">
+			<div id="controlCycle" data-cycle="go" class="cycle slide">
+			    <div class="cycle-inner slideimages">
+
+					
+						  <div class="item aslide">
+				            <a class="thumb" href="http://www.clutchmagonline.com/2013/07/congratulations-kerry-washington-reportedly-marries-football-player-nnamdi-asomugha/"><!--<div class="cover"></div>--><img width="460" height="307" src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/kerry-married-460x307.jpg" class="attachment-kindabig wp-post-image" alt="kerry-married" /></a>
+								<h3><a href="http://www.clutchmagonline.com/2013/07/congratulations-kerry-washington-reportedly-marries-football-player-nnamdi-asomugha/">Congratulations: Kerry Washington Reportedly Marries Football Player Nnamdi Asomugha</a></h3>
+				        </div>
+
+						
+						  <div class="item aslide">
+				            <a class="thumb" href="http://www.clutchmagonline.com/2013/07/should-dwayne-the-rock-johnson-be-on-the-cover-of-essence-magazine/"><!--<div class="cover"></div>--><img src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/o-DWAYNE-THE-ROCK-JOHNSON-ESSENCE-MAGAZINE-570-453x595-453x307.jpg" alt="should-dwayne-the-rock-johnson-be-on-the-cover-of-essence-magazine" class="" width="" height="" /></a>
+								<h3><a href="http://www.clutchmagonline.com/2013/07/should-dwayne-the-rock-johnson-be-on-the-cover-of-essence-magazine/">Should Dwayne &#8216;The Rock&#8217; Johnson Be On the Cover of Essence Magazine?</a></h3>
+				        </div>
+
+						
+						  <div class="item aslide">
+				            <a class="thumb" href="http://www.clutchmagonline.com/2013/07/we-were-all-trayvon-martin-why-arent-we-supporting-rachel-jeantel/"><!--<div class="cover"></div>--><img width="460" height="307" src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/rachel-jeantel-photo-460x307.png" class="attachment-kindabig wp-post-image" alt="rachel-jeantel-photo" /></a>
+								<h3><a href="http://www.clutchmagonline.com/2013/07/we-were-all-trayvon-martin-why-arent-we-supporting-rachel-jeantel/">We Were All Trayvon Martin. Why Aren’t We Supporting Rachel Jeantel?</a></h3>
+				        </div>
+
+						
+						  <div class="item aslide">
+				            <a class="thumb" href="http://www.clutchmagonline.com/2013/07/meagan-good-gets-flack-for-presenting-gospel-award-in-revealing-gown-is-it-fair/"><!--<div class="cover"></div>--><img width="460" height="307" src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/meagan-good-dress-bet-awards-460x307.jpg" class="attachment-kindabig wp-post-image" alt="2013 BET Awards - Arrivals" /></a>
+								<h3><a href="http://www.clutchmagonline.com/2013/07/meagan-good-gets-flack-for-presenting-gospel-award-in-revealing-gown-is-it-fair/">Meagan Good Gets Flack For Presenting BET Gospel Award in Revealing Gown: Is It Fair?</a></h3>
+				        </div>
+
+						
+						  <div class="item aslide">
+				            <a class="thumb" href="http://www.clutchmagonline.com/2013/07/great-white-hype-is-robin-thicke-popular-because-hes-white/"><!--<div class="cover"></div>--><img src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/BET-Awards-2013-Robin-Thicke-Seduces-with-Live-Performance-of-Blurred-Lines-2-460x307.jpg" alt="great-white-hype-is-robin-thicke-popular-because-hes-white" class="" width="" height="" /></a>
+								<h3><a href="http://www.clutchmagonline.com/2013/07/great-white-hype-is-robin-thicke-popular-because-hes-white/">Great White Hype: Is Robin Thicke Popular Because He’s White?</a></h3>
+				        </div>
+
+								
+
+					
+			    </div>
+			    <nav>
+			        <a class="cycle-control left" data-cycle="prev" href="#controlCycle"></a>
+			        <a class="cycle-control right" data-cycle="next" href="#controlCycle"></a>
+			    </nav>
+			</div>
+			</div>
+			</div>
+ 					
+        </aside>        <aside id="text-27" class="widget widget_text">			<div class="textwidget"><a href="http://www.curls.biz/curly-blog/beautiful-bouncy-luscious-curls-are-waiting-for-you-at-walmart-1876" target="_blank" rel="nofollow"><img class="alignnone size-full wp-image-200609" alt="Curls @ Walmart" src="http://www.clutchmagonline.com/wp-content/uploads/2013/06/Walmart-sm4.jpg" width="300" height="250" /></a></div>
+		</aside><aside id="recentopinionswidget-4" class="widget widget_recentopinionswidget">
+                  <h2 class="widget-title">Recent Opinions</h2>
+								<ul id="RecentOpinions" class="thumbwidget">
+					
+									
+										
+									<li class="opinion clearfix">
+										<div class="thumb">
+											<a href="http://www.clutchmagonline.com/2013/07/we-were-all-trayvon-martin-why-arent-we-supporting-rachel-jeantel/">
+												<img alt='Whitney Teal' src='http://www.clutchmagonline.com/wp-content/uploads/2013/06/Whitney-Teal_avatar-78x78.jpg' class='avatar avatar-78 photo' height='78' width='78' />											</a>
+										</div>
+									
+										<div class="text">
+											
+												<div class="commentcount">
+	        <span class="point"></span>  
+	        <a href="http://www.clutchmagonline.com/2013/07/we-were-all-trayvon-martin-why-arent-we-supporting-rachel-jeantel/#comments" rel="nofollow"  title="Comment on We Were All Trayvon Martin. Why Aren’t We Supporting Rachel Jeantel?">127</a>	</div>
+												
+											<span class="cat-links">
+												<a href="http://www.clutchmagonline.com/author/whitney-teal/">Whitney Teal</a>
+											</span>
+											<h3 class="entry-title"><a href="http://www.clutchmagonline.com/2013/07/we-were-all-trayvon-martin-why-arent-we-supporting-rachel-jeantel/" title="We Were All Trayvon Martin. Why Aren’t We Supporting Rachel Jeantel?" rel="bookmark">We Were All Trayvon Martin. Why Aren’t We Supporting Rachel Jeantel?</a></h3>
+										</div>
+									</li>									
+									
+										
+									<li class="opinion clearfix">
+										<div class="thumb">
+											<a href="http://www.clutchmagonline.com/2013/06/american-african/">
+												<img alt='Erickka Sy Savané' src='http://www.clutchmagonline.com/wp-content/uploads/2013/06/Erickka-Sy-Savané_avatar-78x78.jpg' class='avatar avatar-78 photo' height='78' width='78' />											</a>
+										</div>
+									
+										<div class="text">
+											
+												<div class="commentcount">
+	        <span class="point"></span>  
+	        <a href="http://www.clutchmagonline.com/2013/06/american-african/#comments" rel="nofollow"  title="Comment on American African">101</a>	</div>
+												
+											<span class="cat-links">
+												<a href="http://www.clutchmagonline.com/author/erickka-sy-savane/">Erickka Sy Savané</a>
+											</span>
+											<h3 class="entry-title"><a href="http://www.clutchmagonline.com/2013/06/american-african/" title="American African" rel="bookmark">American African</a></h3>
+										</div>
+									</li>									
+									
+										
+									<li class="opinion clearfix">
+										<div class="thumb">
+											<a href="http://www.clutchmagonline.com/2013/06/michael-jackson-moonwalker-my-sister-and-me/">
+												<img alt='Danielle C. Belton' src='http://www.clutchmagonline.com/wp-content/uploads/2012/07/Danielle-C.-Belton_avatar-78x78.jpeg' class='avatar avatar-78 photo' height='78' width='78' />											</a>
+										</div>
+									
+										<div class="text">
+											
+												<div class="commentcount">
+	        <span class="point"></span>  
+	        <a href="http://www.clutchmagonline.com/2013/06/michael-jackson-moonwalker-my-sister-and-me/#comments" rel="nofollow"  title="Comment on Michael Jackson: Moonwalker, My Sister and Me">9</a>	</div>
+												
+											<span class="cat-links">
+												<a href="http://www.clutchmagonline.com/author/danielle-c-belton/">Danielle C. Belton</a>
+											</span>
+											<h3 class="entry-title"><a href="http://www.clutchmagonline.com/2013/06/michael-jackson-moonwalker-my-sister-and-me/" title="Michael Jackson: Moonwalker, My Sister and Me" rel="bookmark">Michael Jackson: Moonwalker, My Sister and Me</a></h3>
+										</div>
+									</li>									
+									
+																	</ul>	
+		
+              </aside>        <aside id="recent-comments-3" class="widget widget_recent_comments"><h2 class="widget-title">Recent Comments</h2><ul id="recentcomments"><li class="recentcomments">Cali on <a href="http://www.clutchmagonline.com/2013/07/love-basketball-nba-star-kevin-durant-gets-engaged-to-wnba-star-monica-wright/comment-page-3/#comment-414501">Love &#038; Basketball: NBA Star Kevin Durant Gets Engaged to the WNBA&#8217;s Monica Wright</a></li><li class="recentcomments">kk on <a href="http://www.clutchmagonline.com/2013/07/should-dwayne-the-rock-johnson-be-on-the-cover-of-essence-magazine/comment-page-29/#comment-414500">Should Dwayne &#8216;The Rock&#8217; Johnson Be On the Cover of Essence Magazine?</a></li><li class="recentcomments">omfg on <a href="http://www.clutchmagonline.com/2013/07/love-basketball-nba-star-kevin-durant-gets-engaged-to-wnba-star-monica-wright/comment-page-3/#comment-414499">Love &#038; Basketball: NBA Star Kevin Durant Gets Engaged to the WNBA&#8217;s Monica Wright</a></li><li class="recentcomments">omfg on <a href="http://www.clutchmagonline.com/2013/07/compton-calif-elects-youngest-mayor-in-citys-history/comment-page-1/#comment-414498">Compton, Calif. Elects Youngest Mayor in City’s History</a></li><li class="recentcomments">MommieDearest on <a href="http://www.clutchmagonline.com/2013/07/love-basketball-nba-star-kevin-durant-gets-engaged-to-wnba-star-monica-wright/comment-page-3/#comment-414497">Love &#038; Basketball: NBA Star Kevin Durant Gets Engaged to the WNBA&#8217;s Monica Wright</a></li></ul></aside><aside id="text-33" class="widget widget_text">			<div class="textwidget"><!-- clutchmagazine.com/home -->
+<script type="text/javascript">
+  var ord = window.ord || Math.floor(Math.random() * 1e16);
+  document.write('<script type="text/javascript" src="http://ad.doubleclick.net/N4403/adj/clutchmagazine.com/home;sect=home;sz=160x600;ord=' + ord + '?"><\/script>');
+</script>
+<noscript>
+<a href="http://ad.doubleclick.net/N4403/jump/clutchmagazine.com/home;sect=home;sz=160x600;ord=[timestamp]?">
+<img src="http://ad.doubleclick.net/N4403/ad/clutchmagazine.com/home;sect=home;sz=160x600;ord=[timestamp]?" width="160" height="600" />
+</a>
+</noscript></div>
+		</aside><aside id="text-37" class="widget widget_text">			<div class="textwidget"><!-- clutchmagazine.com/home_btf -->
+<script type="text/javascript">
+  var ord = window.ord || Math.floor(Math.random() * 1e16);
+  document.write('<script type="text/javascript" src="http://ad.doubleclick.net/N4403/adj/clutchmagazine.com/home_btf;sect=home_btf;sz=300x250;ord=' + ord + '?"><\/script>');
+</script>
+<noscript>
+<a href="http://ad.doubleclick.net/N4403/jump/clutchmagazine.com/home_btf;sect=home_btf;sz=300x250;ord=[timestamp]?">
+<img src="http://ad.doubleclick.net/N4403/ad/clutchmagazine.com/home_btf;sect=home_btf;sz=300x250;ord=[timestamp]?" width="300" height="250" />
+</a>
+</noscript></div>
+		</aside>	
+			<footer id="colophon" role="contentinfo">
+				<div class="site-info">
+					<a href="http://clutchmagonline.com/copyright">&copy;2013 Sutton New Media LLC</a> |
+					<a href="http://clutchmagonline.com/masthead/">Masthead</a> |
+					<a href="http://www.clutchmagonline.com/privacy-policy/">Privacy</a> |
+					<a href="http://clutchmagonline.com/about-clutch/">About</a> |
+					<a href="http://clutchmagonline.com/contact">Contact</a> |
+					<a href="http://clutchmagonline.com/contact">Advertising</a> |
+					<a href="http://319heads.com" title="Design by 319 Heads" rel="generator">Design by 319 Heads</a>
+				</div><!-- .site-info -->
+			</footer><!-- .site-footer .site-footer -->
+			
+		</div>	
+		</div><!-- .widget-area -->
+								
+				<div class="bigfeat">
+<article id="post-201300" class="post-201300 post type-post status-publish format-standard hentry category-feature tag-academia tag-education tag-public-intellectuals homepage">
+	
+	<a class="thethumb" href="http://www.clutchmagonline.com/2013/07/more-women-scholars-less-public-intellectuals/" title="More Women Scholars, Less Public Intellectuals?" rel="bookmark">
+			<img width="501" height="334" src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-08-at-8.52.14-AM.png" class="attachment-large wp-post-image" alt="Black Women" />		</a>
+	
+	<header class="entry-header">
+		<div class="shareme" data-url="http://www.clutchmagonline.com/2013/07/more-women-scholars-less-public-intellectuals/" data-text="More Women Scholars, Less Public Intellectuals?"></div>
+			<div class="commentcount">
+	        <span class="point"></span>  
+	        <a href="http://www.clutchmagonline.com/2013/07/more-women-scholars-less-public-intellectuals/#comments" rel="nofollow"  title="Comment on More Women Scholars, Less Public Intellectuals?">4</a>	</div>
+			<span class="cat-links">
+			<a href="http://www.clutchmagonline.com/tag/academia/">Academia</a> 		</span>
+	
+		<h2 class="entry-title"><a href="http://www.clutchmagonline.com/2013/07/more-women-scholars-less-public-intellectuals/" title="More Women Scholars, Less Public Intellectuals?" rel="bookmark">More Women Scholars, Less Public Intellectuals?</a></h2>
+	</header><!-- .entry-header -->
+
+	<div class="entry-summary">
+		<p>When I think of Dr. Brittney Cooper, Joan Morgan, Dr. Melissa Harris-Perry, Dr. Tanisha Ford, Dr. Treva Lindsey and Dr. Kaila Story, I imagine the intellectual ancestors smiling down on them. These women scholars are progressing public discourse through their academic work. Their scholarship ranges from hip-hop feminism to fashion as political resistance, but their&#8230;</p>
+	</div><!-- .entry-summary -->
+
+	<footer class="entry-meta">
+
+				<div class="date">
+			<a href="http://www.clutchmagonline.com/2013/07/more-women-scholars-less-public-intellectuals/"><time class="entry-date" datetime="%3$s" pubdate>July 8, 2013</time></a> 		</div>
+				
+	</footer><!-- #entry-meta -->
+</article><!-- #post-201300 -->
+</div>
+				
+
+					
+				
+<article id="post-201405" class="post-201405 post type-post status-publish format-standard hentry category-extra category-news tag-aja-brown tag-compton-california homepage">
+	
+	<a class="thethumb" href="http://www.clutchmagonline.com/2013/07/compton-calif-elects-youngest-mayor-in-citys-history/" title="Compton, Calif. Elects Youngest Mayor in City’s History" rel="bookmark">
+			<img width="300" height="200" src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/Aja-Brown-300x200.jpg" class="attachment-medium wp-post-image" alt="Aja Brown" />		</a>
+	
+	<header class="entry-header">
+		<div class="shareme" data-url="http://www.clutchmagonline.com/2013/07/compton-calif-elects-youngest-mayor-in-citys-history/" data-text="Compton, Calif. Elects Youngest Mayor in City’s History"></div>
+			<div class="commentcount">
+	        <span class="point"></span>  
+	        <a href="http://www.clutchmagonline.com/2013/07/compton-calif-elects-youngest-mayor-in-citys-history/#comments" rel="nofollow"  title="Comment on Compton, Calif. Elects Youngest Mayor in City’s History">1</a>	</div>
+			<span class="cat-links">
+			<a href="http://www.clutchmagonline.com/tag/aja-brown/">Aja Brown</a> 		</span>
+	
+		<h2 class="entry-title"><a href="http://www.clutchmagonline.com/2013/07/compton-calif-elects-youngest-mayor-in-citys-history/" title="Compton, Calif. Elects Youngest Mayor in City’s History" rel="bookmark">Compton, Calif. Elects Youngest Mayor in City’s History</a></h2>
+	</header><!-- .entry-header -->
+
+	<div class="entry-summary">
+		<p>Compton, Calif. has elected Aja Brown as its newest mayor. The 31-year-old urban planner beat former mayor Omar Bradley in a runoff mayoral election. She’s the youngest mayor in Compton’s history and is determined to make progress in the city. “I believe the people of Compton are ready for change,” she said after being elected&#8230;</p>
+	</div><!-- .entry-summary -->
+
+	<footer class="entry-meta">
+
+				<div class="date">
+			<a href="http://www.clutchmagonline.com/2013/07/compton-calif-elects-youngest-mayor-in-citys-history/"><time class="entry-date" datetime="%3$s" pubdate>July 8, 2013</time></a> 		</div>
+				
+	</footer><!-- #entry-meta -->
+</article><!-- #post-201405 -->
+
+<article id="post-201355" class="post-201355 post type-post status-publish format-standard hentry category-extra category-news tag-asiana-airlines tag-flight-anxiety tag-plane-crash homepage">
+	
+	<a class="thethumb" href="http://www.clutchmagonline.com/2013/07/asiana-airline-flight-crashes-at-san-francisco-international-airport-5-ways-to-overcome-flight-anxiety/" title="Asiana Airline Flight Crashes at San Francisco International Airport: 5 Ways to Overcome Flight Anxiety" rel="bookmark">
+			<img width="300" height="169" src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/Asiana-Airlines1-300x169.jpg" class="attachment-medium wp-post-image" alt="Photo courtesy of the Associated Press" />		</a>
+	
+	<header class="entry-header">
+		<div class="shareme" data-url="http://www.clutchmagonline.com/2013/07/asiana-airline-flight-crashes-at-san-francisco-international-airport-5-ways-to-overcome-flight-anxiety/" data-text="Asiana Airline Flight Crashes at San Francisco International Airport: 5 Ways to Overcome Flight Anxiety"></div>
+			<div class="commentcount">
+	        <span class="point"></span>  
+	        <a href="http://www.clutchmagonline.com/2013/07/asiana-airline-flight-crashes-at-san-francisco-international-airport-5-ways-to-overcome-flight-anxiety/#respond" rel="nofollow"  title="Comment on Asiana Airline Flight Crashes at San Francisco International Airport: 5 Ways to Overcome Flight Anxiety">&nbsp;</a>	</div>
+			<span class="cat-links">
+			<a href="http://www.clutchmagonline.com/tag/asiana-airlines/">Asiana Airlines</a> 		</span>
+	
+		<h2 class="entry-title"><a href="http://www.clutchmagonline.com/2013/07/asiana-airline-flight-crashes-at-san-francisco-international-airport-5-ways-to-overcome-flight-anxiety/" title="Asiana Airline Flight Crashes at San Francisco International Airport: 5 Ways to Overcome Flight Anxiety" rel="bookmark">Asiana Airline Flight Crashes at San Francisco International Airport: 5 Ways to Overcome Flight Anxiety</a></h2>
+	</header><!-- .entry-header -->
+
+	<div class="entry-summary">
+		<p>An Asiana Airlines flight from Seoul, South Korea to San Francisco, Calif. crash-landed at the San Francisco International Airport on July 6. Two teenagers were killed in the crash, while 181 passengers were injured. Aerial photos and cell-phone footage show the aircraft descending onto the landing strip and immediately combusting. The Boeing 777-plane was charred,&#8230;</p>
+	</div><!-- .entry-summary -->
+
+	<footer class="entry-meta">
+
+				<div class="date">
+			<a href="http://www.clutchmagonline.com/2013/07/asiana-airline-flight-crashes-at-san-francisco-international-airport-5-ways-to-overcome-flight-anxiety/"><time class="entry-date" datetime="%3$s" pubdate>July 8, 2013</time></a> 		</div>
+				
+	</footer><!-- #entry-meta -->
+</article><!-- #post-201355 -->
+
+<article id="post-201397" class="post-201397 post type-post status-publish format-standard hentry category-news tag-black-love tag-kevin-durant tag-monica-wright tag-weddings homepage">
+	
+	<a class="thethumb" href="http://www.clutchmagonline.com/2013/07/love-basketball-nba-star-kevin-durant-gets-engaged-to-wnba-star-monica-wright/" title="Love &amp; Basketball: NBA Star Kevin Durant Gets Engaged to the WNBA&#8217;s Monica Wright" rel="bookmark">
+			<img src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/KevinDurant_MonicaWright-300x155.png" alt="love-basketball-nba-star-kevin-durant-gets-engaged-to-wnba-star-monica-wright" class="post-image" width="" height="" />		</a>
+	
+	<header class="entry-header">
+		<div class="shareme" data-url="http://www.clutchmagonline.com/2013/07/love-basketball-nba-star-kevin-durant-gets-engaged-to-wnba-star-monica-wright/" data-text="Love &#038; Basketball: NBA Star Kevin Durant Gets Engaged to the WNBA&#8217;s Monica Wright"></div>
+			<div class="commentcount">
+	        <span class="point"></span>  
+	        <a href="http://www.clutchmagonline.com/2013/07/love-basketball-nba-star-kevin-durant-gets-engaged-to-wnba-star-monica-wright/#comments" rel="nofollow"  title="Comment on Love &amp; Basketball: NBA Star Kevin Durant Gets Engaged to the WNBA&#8217;s Monica Wright">11</a>	</div>
+			<span class="cat-links">
+			<a href="http://www.clutchmagonline.com/tag/black-love/">black love</a> 		</span>
+	
+		<h2 class="entry-title"><a href="http://www.clutchmagonline.com/2013/07/love-basketball-nba-star-kevin-durant-gets-engaged-to-wnba-star-monica-wright/" title="Love &amp; Basketball: NBA Star Kevin Durant Gets Engaged to the WNBA&#8217;s Monica Wright" rel="bookmark">Love &#038; Basketball: NBA Star Kevin Durant Gets Engaged to the WNBA&#8217;s Monica Wright</a></h2>
+	</header><!-- .entry-header -->
+
+	<div class="entry-summary">
+		<p>Love is in the air for Oklahoma City Thunder baller Kevin Durant and WNBA star Monica Wright. After meeting back in 2006 as McDonald’s All Americans, the pair remained friends, and are now reportedly engaged. Durant, who once tweeted about needing “a basketball playing girlfriend” like Love &amp; Basketball heroine Monica Wright, found just that&#8230;</p>
+	</div><!-- .entry-summary -->
+
+	<footer class="entry-meta">
+
+				<div class="date">
+			<a href="http://www.clutchmagonline.com/2013/07/love-basketball-nba-star-kevin-durant-gets-engaged-to-wnba-star-monica-wright/"><time class="entry-date" datetime="%3$s" pubdate>July 8, 2013</time></a> 		</div>
+				
+	</footer><!-- #entry-meta -->
+</article><!-- #post-201397 -->
+
+<article id="post-201383" class="post-201383 post type-post status-publish format-standard hentry category-article tag-internet-comments homepage">
+	
+	<a class="thethumb" href="http://www.clutchmagonline.com/2013/07/admit-it-you-just-want-to-argue/" title="Admit It: You Just Want to Argue" rel="bookmark">
+			<img src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/Angry-computer-300x217.jpg" alt="admit-it-you-just-want-to-argue" class="post-image" width="" height="" />		</a>
+	
+	<header class="entry-header">
+		<div class="shareme" data-url="http://www.clutchmagonline.com/2013/07/admit-it-you-just-want-to-argue/" data-text="Admit It: You Just Want to Argue"></div>
+			<div class="commentcount">
+	        <span class="point"></span>  
+	        <a href="http://www.clutchmagonline.com/2013/07/admit-it-you-just-want-to-argue/#comments" rel="nofollow"  title="Comment on Admit It: You Just Want to Argue">19</a>	</div>
+			<span class="cat-links">
+			<a href="http://www.clutchmagonline.com/tag/internet-comments/">Internet Comments</a> 		</span>
+	
+		<h2 class="entry-title"><a href="http://www.clutchmagonline.com/2013/07/admit-it-you-just-want-to-argue/" title="Admit It: You Just Want to Argue" rel="bookmark">Admit It: You Just Want to Argue</a></h2>
+	</header><!-- .entry-header -->
+
+	<div class="entry-summary">
+		<p>I’ve been heavy in these Internet streets for a minute now, and I’ve come to realize one thing: Folks just want to argue. No matter how many good things happen around the ‘web (and there are many), or positive, upbeat articles that get written—say, congratulating an actress on her nuptials—the comments on the articles can&#8230;</p>
+	</div><!-- .entry-summary -->
+
+	<footer class="entry-meta">
+
+				<div class="date">
+			<a href="http://www.clutchmagonline.com/2013/07/admit-it-you-just-want-to-argue/"><time class="entry-date" datetime="%3$s" pubdate>July 8, 2013</time></a> 		</div>
+				
+	</footer><!-- #entry-meta -->
+</article><!-- #post-201383 -->
+							
+						<article class="hentry bad">
+							<!-- SelfServe1 -->
+							<script type='text/javascript'>
+							GA_googleFillSlot("SelfServe1");
+							</script>
+						</article>
+						
+						
+<article id="post-201384" class="post-201384 post type-post status-publish format-standard hentry category-article tag-dating tag-titles tag-xojane homepage">
+	
+	<a class="thethumb" href="http://www.clutchmagonline.com/2013/07/hanging-out-dating-a-thing-has-the-no-titles-thing-ever-worked-out-for-anyone-in-the-history-of-the-universe/" title="Hanging Out, Dating, a &#8220;Thing&#8221;: Has The &#8216;No Titles&#8221; Thing Ever Worked Out For Anyone In The History of the Universe?" rel="bookmark">
+			<img width="300" height="343" src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-08-at-2.48.15-PM-300x343.png" class="attachment-medium wp-post-image" alt="Screen Shot 2013-07-08 at 2.48.15 PM" />		</a>
+	
+	<header class="entry-header">
+		<div class="shareme" data-url="http://www.clutchmagonline.com/2013/07/hanging-out-dating-a-thing-has-the-no-titles-thing-ever-worked-out-for-anyone-in-the-history-of-the-universe/" data-text="Hanging Out, Dating, a &#8220;Thing&#8221;: Has The &#8216;No Titles&#8221; Thing Ever Worked Out For Anyone In The History of the Universe?"></div>
+			<div class="commentcount">
+	        <span class="point"></span>  
+	        <a href="http://www.clutchmagonline.com/2013/07/hanging-out-dating-a-thing-has-the-no-titles-thing-ever-worked-out-for-anyone-in-the-history-of-the-universe/#comments" rel="nofollow"  title="Comment on Hanging Out, Dating, a &#8220;Thing&#8221;: Has The &#8216;No Titles&#8221; Thing Ever Worked Out For Anyone In The History of the Universe?">7</a>	</div>
+			<span class="cat-links">
+			<a href="http://www.clutchmagonline.com/tag/dating/">dating</a> 		</span>
+	
+		<h2 class="entry-title"><a href="http://www.clutchmagonline.com/2013/07/hanging-out-dating-a-thing-has-the-no-titles-thing-ever-worked-out-for-anyone-in-the-history-of-the-universe/" title="Hanging Out, Dating, a &#8220;Thing&#8221;: Has The &#8216;No Titles&#8221; Thing Ever Worked Out For Anyone In The History of the Universe?" rel="bookmark">Hanging Out, Dating, a &#8220;Thing&#8221;: Has The &#8216;No Titles&#8221; Thing Ever Worked Out For Anyone In The History of the Universe?</a></h2>
+	</header><!-- .entry-header -->
+
+	<div class="entry-summary">
+		<p>Would a relationship by any other name smell as sweet? Um, no.</p>
+	</div><!-- .entry-summary -->
+
+	<footer class="entry-meta">
+
+				<div class="date">
+			<a href="http://www.clutchmagonline.com/2013/07/hanging-out-dating-a-thing-has-the-no-titles-thing-ever-worked-out-for-anyone-in-the-history-of-the-universe/"><time class="entry-date" datetime="%3$s" pubdate>July 8, 2013</time></a> 		</div>
+				
+	</footer><!-- #entry-meta -->
+</article><!-- #post-201384 -->
+
+<article id="post-201378" class="post-201378 post type-post status-publish format-standard hentry category-article tag-dating tag-the-frisky homepage">
+	
+	<a class="thethumb" href="http://www.clutchmagonline.com/2013/07/18-things-you-wish-you-could-ask-on-a-first-date-but-cant-because-theyre-probably-inappropriate/" title="18 Things You Wish You Could Ask On A First Date (But Can’t Because They’re Probably Inappropriate)" rel="bookmark">
+			<img width="300" height="411" src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-08-at-2.28.14-PM-300x411.png" class="attachment-medium wp-post-image" alt="Screen Shot 2013-07-08 at 2.28.14 PM" />		</a>
+	
+	<header class="entry-header">
+		<div class="shareme" data-url="http://www.clutchmagonline.com/2013/07/18-things-you-wish-you-could-ask-on-a-first-date-but-cant-because-theyre-probably-inappropriate/" data-text="18 Things You Wish You Could Ask On A First Date (But Can’t Because They’re Probably Inappropriate)"></div>
+			<div class="commentcount">
+	        <span class="point"></span>  
+	        <a href="http://www.clutchmagonline.com/2013/07/18-things-you-wish-you-could-ask-on-a-first-date-but-cant-because-theyre-probably-inappropriate/#comments" rel="nofollow"  title="Comment on 18 Things You Wish You Could Ask On A First Date (But Can’t Because They’re Probably Inappropriate)">14</a>	</div>
+			<span class="cat-links">
+			<a href="http://www.clutchmagonline.com/tag/dating/">dating</a> 		</span>
+	
+		<h2 class="entry-title"><a href="http://www.clutchmagonline.com/2013/07/18-things-you-wish-you-could-ask-on-a-first-date-but-cant-because-theyre-probably-inappropriate/" title="18 Things You Wish You Could Ask On A First Date (But Can’t Because They’re Probably Inappropriate)" rel="bookmark">18 Things You Wish You Could Ask On A First Date (But Can’t Because They’re Probably Inappropriate)</a></h2>
+	</header><!-- .entry-header -->
+
+	<div class="entry-summary">
+		<p>It’s our first date and I literally don’t care about your college major, or how long you’ve been in the city. I don’t care if you only drink aged whiskey or how lame you thought new Superman movie was. Please stop talking about your favorite hockey team and how it’s such a small world  because we both&#8230;</p>
+	</div><!-- .entry-summary -->
+
+	<footer class="entry-meta">
+
+				<div class="date">
+			<a href="http://www.clutchmagonline.com/2013/07/18-things-you-wish-you-could-ask-on-a-first-date-but-cant-because-theyre-probably-inappropriate/"><time class="entry-date" datetime="%3$s" pubdate>July 8, 2013</time></a> 		</div>
+				
+	</footer><!-- #entry-meta -->
+</article><!-- #post-201378 -->
+
+<article id="post-201366" class="post-201366 post type-post status-publish format-standard hentry category-news homepage">
+	
+	<a class="thethumb" href="http://www.clutchmagonline.com/2013/07/heartbreaking-yasiin-bey-mos-def-demonstrates-force-feeding-of-guantanamo-bay-detainees/" title="Heartbreaking: Yasiin Bey (Mos Def) Demonstrates Force-Feeding of Guantánamo Bay Detainees" rel="bookmark">
+			<img src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-08-at-10.39.42-AM-300x273.png" alt="heartbreaking-yasiin-bey-mos-def-demonstrates-force-feeding-of-guantanamo-bay-detainees" class="post-image" width="" height="" />		</a>
+	
+	<header class="entry-header">
+		<div class="shareme" data-url="http://www.clutchmagonline.com/2013/07/heartbreaking-yasiin-bey-mos-def-demonstrates-force-feeding-of-guantanamo-bay-detainees/" data-text="Heartbreaking: Yasiin Bey (Mos Def) Demonstrates Force-Feeding of Guantánamo Bay Detainees"></div>
+			<div class="commentcount">
+	        <span class="point"></span>  
+	        <a href="http://www.clutchmagonline.com/2013/07/heartbreaking-yasiin-bey-mos-def-demonstrates-force-feeding-of-guantanamo-bay-detainees/#comments" rel="nofollow"  title="Comment on Heartbreaking: Yasiin Bey (Mos Def) Demonstrates Force-Feeding of Guantánamo Bay Detainees">8</a>	</div>
+			<span class="cat-links">
+					</span>
+	
+		<h2 class="entry-title"><a href="http://www.clutchmagonline.com/2013/07/heartbreaking-yasiin-bey-mos-def-demonstrates-force-feeding-of-guantanamo-bay-detainees/" title="Heartbreaking: Yasiin Bey (Mos Def) Demonstrates Force-Feeding of Guantánamo Bay Detainees" rel="bookmark">Heartbreaking: Yasiin Bey (Mos Def) Demonstrates Force-Feeding of Guantánamo Bay Detainees</a></h2>
+	</header><!-- .entry-header -->
+
+	<div class="entry-summary">
+		<p>Although President Obama has called the Guantánamo Bay detention facility a stain on America’s reputation and ordered its closure shortly after he took office in 2009, the facility continues to house 166 men, nearly half of whom have been cleared for release. Many of the men have languished in Guantánamo Bay for years (some even&#8230;</p>
+	</div><!-- .entry-summary -->
+
+	<footer class="entry-meta">
+
+				<div class="date">
+			<a href="http://www.clutchmagonline.com/2013/07/heartbreaking-yasiin-bey-mos-def-demonstrates-force-feeding-of-guantanamo-bay-detainees/"><time class="entry-date" datetime="%3$s" pubdate>July 8, 2013</time></a> 		</div>
+				
+	</footer><!-- #entry-meta -->
+</article><!-- #post-201366 -->
+
+<article id="post-201328" class="post-201328 post type-post status-publish format-standard hentry category-extra category-news tag-brittney-cooper tag-n-word tag-racism homepage">
+	
+	<a class="thethumb" href="http://www.clutchmagonline.com/2013/07/professor-recounts-her-experience-with-the-n-word/" title="Professor Recounts Her Experience With The &#8220;N&#8221; Word" rel="bookmark">
+			<img width="300" height="451" src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/brittney-cooper.jpg" class="attachment-medium wp-post-image" alt="brittney-cooper" />		</a>
+	
+	<header class="entry-header">
+		<div class="shareme" data-url="http://www.clutchmagonline.com/2013/07/professor-recounts-her-experience-with-the-n-word/" data-text="Professor Recounts Her Experience With The &#8220;N&#8221; Word"></div>
+			<div class="commentcount">
+	        <span class="point"></span>  
+	        <a href="http://www.clutchmagonline.com/2013/07/professor-recounts-her-experience-with-the-n-word/#comments" rel="nofollow"  title="Comment on Professor Recounts Her Experience With The &#8220;N&#8221; Word">33</a>	</div>
+			<span class="cat-links">
+			<a href="http://www.clutchmagonline.com/tag/brittney-cooper/">Brittney Cooper</a> 		</span>
+	
+		<h2 class="entry-title"><a href="http://www.clutchmagonline.com/2013/07/professor-recounts-her-experience-with-the-n-word/" title="Professor Recounts Her Experience With The &#8220;N&#8221; Word" rel="bookmark">Professor Recounts Her Experience With The &#8220;N&#8221; Word</a></h2>
+	</header><!-- .entry-header -->
+
+	<div class="entry-summary">
+		<p>The use of the &#8220;n&#8221; word has made headlines recently, mainly due to the use of it by Paula Deen.  Personally, I&#8217;ve never been called the &#8220;n&#8221; word to my face, and the one time I did hear it used towards a black person by a white person was when I was 9.  Unfortunately, the&#8230;</p>
+	</div><!-- .entry-summary -->
+
+	<footer class="entry-meta">
+
+				<div class="date">
+			<a href="http://www.clutchmagonline.com/2013/07/professor-recounts-her-experience-with-the-n-word/"><time class="entry-date" datetime="%3$s" pubdate>July 8, 2013</time></a> 		</div>
+				
+	</footer><!-- #entry-meta -->
+</article><!-- #post-201328 -->
+							
+						<article class="hentry bad">
+							<!-- SelfServe2 -->
+							<script type='text/javascript'>
+							GA_googleFillSlot("SelfServe2");
+							</script>
+						</article>
+						
+						
+<article id="post-201349" class="post-201349 post type-post status-publish format-standard hentry category-extra tag-dating tag-google tag-relationships homepage">
+	
+	<a class="thethumb" href="http://www.clutchmagonline.com/2013/07/open-thread-should-you-google-your-spouse/" title="Open Thread: Should You Google Your Spouse?" rel="bookmark">
+			<img width="300" height="221" src="http://www.clutchmagonline.com/wp-content/uploads/2012/10/Black_woman_on_computer-300x2211111.jpg" class="attachment-medium wp-post-image" alt="Black_woman_on_computer-300x2211111" />		</a>
+	
+	<header class="entry-header">
+		<div class="shareme" data-url="http://www.clutchmagonline.com/2013/07/open-thread-should-you-google-your-spouse/" data-text="Open Thread: Should You Google Your Spouse?"></div>
+			<div class="commentcount">
+	        <span class="point"></span>  
+	        <a href="http://www.clutchmagonline.com/2013/07/open-thread-should-you-google-your-spouse/#comments" rel="nofollow"  title="Comment on Open Thread: Should You Google Your Spouse?">11</a>	</div>
+			<span class="cat-links">
+			<a href="http://www.clutchmagonline.com/tag/dating/">dating</a> 		</span>
+	
+		<h2 class="entry-title"><a href="http://www.clutchmagonline.com/2013/07/open-thread-should-you-google-your-spouse/" title="Open Thread: Should You Google Your Spouse?" rel="bookmark">Open Thread: Should You Google Your Spouse?</a></h2>
+	</header><!-- .entry-header -->
+
+	<div class="entry-summary">
+		<p>There’s nothing new about researching potential dates, especially in the era of social media and Craig’s List killers. It’s Just Lunch, a dating-service, surveyed more than 1,100 users of their site in 2011 to gauge how their clients use Google when dating. They found about 43 percent of people Google their dates, while 88 percent&#8230;</p>
+	</div><!-- .entry-summary -->
+
+	<footer class="entry-meta">
+
+				<div class="date">
+			<a href="http://www.clutchmagonline.com/2013/07/open-thread-should-you-google-your-spouse/"><time class="entry-date" datetime="%3$s" pubdate>July 8, 2013</time></a> 		</div>
+				
+	</footer><!-- #entry-meta -->
+</article><!-- #post-201349 -->
+
+<article id="post-201317" class="post-201317 post type-post status-publish format-standard hentry category-extra category-news tag-chris-noth tag-interracial-marriage tag-tara-wilson homepage">
+	
+	<a class="thethumb" href="http://www.clutchmagonline.com/2013/07/sex-in-the-city-actors-marriage-incites-hate-mail/" title="Sex In The City Actor&#8217;s Marriage Incites Hate Mail" rel="bookmark">
+			<img width="300" height="148" src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/Chris-Noth_7713_575lh-300x148.jpg" class="attachment-medium wp-post-image" alt="Sex In The CityActor&#039;s Marriage Incites Hate Mail" />		</a>
+	
+	<header class="entry-header">
+		<div class="shareme" data-url="http://www.clutchmagonline.com/2013/07/sex-in-the-city-actors-marriage-incites-hate-mail/" data-text="Sex In The City Actor&#8217;s Marriage Incites Hate Mail"></div>
+			<div class="commentcount">
+	        <span class="point"></span>  
+	        <a href="http://www.clutchmagonline.com/2013/07/sex-in-the-city-actors-marriage-incites-hate-mail/#comments" rel="nofollow"  title="Comment on Sex In The City Actor&#8217;s Marriage Incites Hate Mail">34</a>	</div>
+			<span class="cat-links">
+			<a href="http://www.clutchmagonline.com/tag/chris-noth/">chris noth</a> 		</span>
+	
+		<h2 class="entry-title"><a href="http://www.clutchmagonline.com/2013/07/sex-in-the-city-actors-marriage-incites-hate-mail/" title="Sex In The City Actor&#8217;s Marriage Incites Hate Mail" rel="bookmark"><i>Sex In The City</i> Actor&#8217;s Marriage Incites Hate Mail</a></h2>
+	</header><!-- .entry-header -->
+
+	<div class="entry-summary">
+		<p>Christopher Noth is known for his roles in  “Sex in the City,” “Law &amp; Order” and “The Good Wife&#8221;.  But he&#8217;s although he lives his life on screen, his private life is something that he&#8217;s chosen to live privately.  Last year, Noth married his longtime girlfriend Tara Wilson, with whom he has a 5-year-old son, during a&#8230;</p>
+	</div><!-- .entry-summary -->
+
+	<footer class="entry-meta">
+
+				<div class="date">
+			<a href="http://www.clutchmagonline.com/2013/07/sex-in-the-city-actors-marriage-incites-hate-mail/"><time class="entry-date" datetime="%3$s" pubdate>July 8, 2013</time></a> 		</div>
+				
+	</footer><!-- #entry-meta -->
+</article><!-- #post-201317 -->
+
+<article id="post-201332" class="post-201332 post type-post status-publish format-standard hentry category-extra category-news tag-beyonce tag-marriage tag-matthew-knowles tag-solange homepage">
+	
+	<a class="thethumb" href="http://www.clutchmagonline.com/2013/07/beyonces-dad-remarries-singer-and-sister-solange-do-not-attend/" title="Beyonce&#8217;s Dad Remarries: Singer and Sister Solange Do Not Attend" rel="bookmark">
+			<img width="300" height="436" src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/Beyonce-Dad-Remarries-Singer-and-Sister-Solange-Do-Not-Attend-300x436.jpeg" class="attachment-medium wp-post-image" alt="Beyonce Dad Remarries Singer and Sister Solange Do Not Attend" />		</a>
+	
+	<header class="entry-header">
+		<div class="shareme" data-url="http://www.clutchmagonline.com/2013/07/beyonces-dad-remarries-singer-and-sister-solange-do-not-attend/" data-text="Beyonce&#8217;s Dad Remarries: Singer and Sister Solange Do Not Attend"></div>
+			<div class="commentcount">
+	        <span class="point"></span>  
+	        <a href="http://www.clutchmagonline.com/2013/07/beyonces-dad-remarries-singer-and-sister-solange-do-not-attend/#comments" rel="nofollow"  title="Comment on Beyonce&#8217;s Dad Remarries: Singer and Sister Solange Do Not Attend">32</a>	</div>
+			<span class="cat-links">
+			<a href="http://www.clutchmagonline.com/tag/beyonce/">beyonce</a> 		</span>
+	
+		<h2 class="entry-title"><a href="http://www.clutchmagonline.com/2013/07/beyonces-dad-remarries-singer-and-sister-solange-do-not-attend/" title="Beyonce&#8217;s Dad Remarries: Singer and Sister Solange Do Not Attend" rel="bookmark">Beyonce&#8217;s Dad Remarries: Singer and Sister Solange Do Not Attend</a></h2>
+	</header><!-- .entry-header -->
+
+	<div class="entry-summary">
+		<p>Beyoncé has a new stepmother. Her father, Mathew Knowles, got married last Sunday. His representative told The Associated Press on Friday that he has wed former model Gena Charmaine Avery in Houston, Texas. The pair had been engaged for a year and a half. Knowles and Beyoncé&#8217;s mother, Tina, divorced in 2011 after 31 years of marriage&#8230;</p>
+	</div><!-- .entry-summary -->
+
+	<footer class="entry-meta">
+
+				<div class="date">
+			<a href="http://www.clutchmagonline.com/2013/07/beyonces-dad-remarries-singer-and-sister-solange-do-not-attend/"><time class="entry-date" datetime="%3$s" pubdate>July 8, 2013</time></a> 		</div>
+				
+	</footer><!-- #entry-meta -->
+</article><!-- #post-201332 -->
+
+<article id="post-201314" class="post-201314 post type-post status-publish format-standard hentry category-extra category-news tag-minority-businesses tag-reality-tv tag-shark-tank homepage">
+	
+	<a class="thethumb" href="http://www.clutchmagonline.com/2013/07/abcs-shark-tank-wants-to-cast-more-minority-businesses/" title="ABC’s ‘Shark Tank’ Wants to Cast More Minority Businesses" rel="bookmark">
+			<img width="300" height="225" src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/shark-tank-300x225.jpg" class="attachment-medium wp-post-image" alt="ABC’s ‘Shark Tank’ Wants to Cast More Minority Businesses" />		</a>
+	
+	<header class="entry-header">
+		<div class="shareme" data-url="http://www.clutchmagonline.com/2013/07/abcs-shark-tank-wants-to-cast-more-minority-businesses/" data-text="ABC’s ‘Shark Tank’ Wants to Cast More Minority Businesses"></div>
+			<div class="commentcount">
+	        <span class="point"></span>  
+	        <a href="http://www.clutchmagonline.com/2013/07/abcs-shark-tank-wants-to-cast-more-minority-businesses/#comments" rel="nofollow"  title="Comment on ABC’s ‘Shark Tank’ Wants to Cast More Minority Businesses">3</a>	</div>
+			<span class="cat-links">
+			<a href="http://www.clutchmagonline.com/tag/minority-businesses/">minority businesses</a> 		</span>
+	
+		<h2 class="entry-title"><a href="http://www.clutchmagonline.com/2013/07/abcs-shark-tank-wants-to-cast-more-minority-businesses/" title="ABC’s ‘Shark Tank’ Wants to Cast More Minority Businesses" rel="bookmark">ABC’s ‘Shark Tank’ Wants to Cast More Minority Businesses</a></h2>
+	</header><!-- .entry-header -->
+
+	<div class="entry-summary">
+		<p>Where there are a lot of reality tv shows filled with hair pulling and black eyes, there&#8217;s one that uses business acumen to pit people against each other. The Shark Tank series features a panel of &#8220;potential investors&#8221;, called &#8220;sharks&#8221;, who consider offers from &#8220;aspiring entrepreneurs&#8221; seeking investments for their business or product. The entrepreneur or&#8230;</p>
+	</div><!-- .entry-summary -->
+
+	<footer class="entry-meta">
+
+				<div class="date">
+			<a href="http://www.clutchmagonline.com/2013/07/abcs-shark-tank-wants-to-cast-more-minority-businesses/"><time class="entry-date" datetime="%3$s" pubdate>July 8, 2013</time></a> 		</div>
+				
+	</footer><!-- #entry-meta -->
+</article><!-- #post-201314 -->
+							
+						<article class="hentry bad">
+							<!-- SelfServe3 -->
+							<script type='text/javascript'>
+							GA_googleFillSlot("SelfServe3");
+							</script>
+						</article>
+						
+						
+<article id="post-201291" class="post-201291 post type-post status-publish format-standard hentry category-news tag-jay-z tag-we-love tag-wondagurl homepage">
+	
+	<a class="thethumb" href="http://www.clutchmagonline.com/2013/07/yes-she-can-16-year-old-wondagirl-produces-song-on-jay-zs-magna-carta-holy-grail/" title="Yes She Can: 16-Year-Old Wondagurl Produces Song On Jay-Z’s ‘Magna Carta Holy Grail’" rel="bookmark">
+			<img width="300" height="247" src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-05-at-11.19.27-AM-300x247.png" class="attachment-medium wp-post-image" alt="Wondagirl" />		</a>
+	
+	<header class="entry-header">
+		<div class="shareme" data-url="http://www.clutchmagonline.com/2013/07/yes-she-can-16-year-old-wondagirl-produces-song-on-jay-zs-magna-carta-holy-grail/" data-text="Yes She Can: 16-Year-Old Wondagurl Produces Song On Jay-Z’s ‘Magna Carta Holy Grail’"></div>
+			<div class="commentcount">
+	        <span class="point"></span>  
+	        <a href="http://www.clutchmagonline.com/2013/07/yes-she-can-16-year-old-wondagirl-produces-song-on-jay-zs-magna-carta-holy-grail/#comments" rel="nofollow"  title="Comment on Yes She Can: 16-Year-Old Wondagurl Produces Song On Jay-Z’s ‘Magna Carta Holy Grail’">15</a>	</div>
+			<span class="cat-links">
+			<a href="http://www.clutchmagonline.com/tag/jay-z/">jay-z</a> 		</span>
+	
+		<h2 class="entry-title"><a href="http://www.clutchmagonline.com/2013/07/yes-she-can-16-year-old-wondagirl-produces-song-on-jay-zs-magna-carta-holy-grail/" title="Yes She Can: 16-Year-Old Wondagurl Produces Song On Jay-Z’s ‘Magna Carta Holy Grail’" rel="bookmark">Yes She Can: 16-Year-Old Wondagurl Produces Song On Jay-Z’s ‘Magna Carta Holy Grail’</a></h2>
+	</header><!-- .entry-header -->
+
+	<div class="entry-summary">
+		<p>Jay-Z’s latest album “Magna Carta Holy Grail” has been the toast of social media since its July 4th debut. But while Samsung users wrestled to download the album despite a faulty app, and Hot 97’s Funkmaster Flex dropped bombs over the radio, 16-year-old Ebony Oshunrinde was having the time of her life. Oshunrinde, a Toronto-native,&#8230;</p>
+	</div><!-- .entry-summary -->
+
+	<footer class="entry-meta">
+
+				<div class="date">
+			<a href="http://www.clutchmagonline.com/2013/07/yes-she-can-16-year-old-wondagirl-produces-song-on-jay-zs-magna-carta-holy-grail/"><time class="entry-date" datetime="%3$s" pubdate>July 5, 2013</time></a> 		</div>
+				
+	</footer><!-- #entry-meta -->
+</article><!-- #post-201291 -->
+
+<article id="post-201285" class="post-201285 post type-post status-publish format-standard hentry category-news tag-george-zimmerman-trial tag-trayvon-martin homepage">
+	
+	<a class="thethumb" href="http://www.clutchmagonline.com/2013/07/sybrina-fulton-on-the-witness-stand-in-the-zimmerman-trial-i-heard-my-son-screaming/" title="Sybrina Fulton Takes the Witness Stand: ‘I heard my son screaming’" rel="bookmark">
+			<img src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/sybrina-fulton-300x168.jpg" alt="sybrina-fulton-on-the-witness-stand-in-the-zimmerman-trial-i-heard-my-son-screaming" class="post-image" width="" height="" />		</a>
+	
+	<header class="entry-header">
+		<div class="shareme" data-url="http://www.clutchmagonline.com/2013/07/sybrina-fulton-on-the-witness-stand-in-the-zimmerman-trial-i-heard-my-son-screaming/" data-text="Sybrina Fulton Takes the Witness Stand: ‘I heard my son screaming’"></div>
+			<div class="commentcount">
+	        <span class="point"></span>  
+	        <a href="http://www.clutchmagonline.com/2013/07/sybrina-fulton-on-the-witness-stand-in-the-zimmerman-trial-i-heard-my-son-screaming/#comments" rel="nofollow"  title="Comment on Sybrina Fulton Takes the Witness Stand: ‘I heard my son screaming’">29</a>	</div>
+			<span class="cat-links">
+			<a href="http://www.clutchmagonline.com/tag/george-zimmerman-trial/">George Zimmerman Trial</a> 		</span>
+	
+		<h2 class="entry-title"><a href="http://www.clutchmagonline.com/2013/07/sybrina-fulton-on-the-witness-stand-in-the-zimmerman-trial-i-heard-my-son-screaming/" title="Sybrina Fulton Takes the Witness Stand: ‘I heard my son screaming’" rel="bookmark">Sybrina Fulton Takes the Witness Stand: ‘I heard my son screaming’</a></h2>
+	</header><!-- .entry-header -->
+
+	<div class="entry-summary">
+		<p>Sybrina Fulton, Trayvon Martin’s mother, testified in the Zimmerman trial Friday and confidently told jurors that the voice on the 911 tape screaming for help was her son. During her testimony, prosecutor Bernie de la Rionda asked Ms. Fulton, “That screaming or yelling – do you recognize that?” To which Ms. Fulton responded, “Travyon Benjamin&#8230;</p>
+	</div><!-- .entry-summary -->
+
+	<footer class="entry-meta">
+
+				<div class="date">
+			<a href="http://www.clutchmagonline.com/2013/07/sybrina-fulton-on-the-witness-stand-in-the-zimmerman-trial-i-heard-my-son-screaming/"><time class="entry-date" datetime="%3$s" pubdate>July 5, 2013</time></a> 		</div>
+				
+	</footer><!-- #entry-meta -->
+</article><!-- #post-201285 -->
+
+<article id="post-201282" class="post-201282 post type-post status-publish format-standard hentry category-extra tag-100-dicks tag-old-people-say-the-darnedest-things homepage">
+	
+	<a class="thethumb" href="http://www.clutchmagonline.com/2013/07/100-year-old-lady-asks-reporter-hows-your-dck-hanging/" title="100 Year Old Lady Asks Reporter &#8216;How&#8217;s your d*ck hanging?&#8217;" rel="bookmark">
+			<img width="300" height="162" src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/100dicks-300x162.jpg" class="attachment-medium wp-post-image" alt="100dicks" />		</a>
+	
+	<header class="entry-header">
+		<div class="shareme" data-url="http://www.clutchmagonline.com/2013/07/100-year-old-lady-asks-reporter-hows-your-dck-hanging/" data-text="100 Year Old Lady Asks Reporter &#8216;How&#8217;s your d*ck hanging?&#8217;"></div>
+			<div class="commentcount">
+	        <span class="point"></span>  
+	        <a href="http://www.clutchmagonline.com/2013/07/100-year-old-lady-asks-reporter-hows-your-dck-hanging/#comments" rel="nofollow"  title="Comment on 100 Year Old Lady Asks Reporter &#8216;How&#8217;s your d*ck hanging?&#8217;">43</a>	</div>
+			<span class="cat-links">
+			<a href="http://www.clutchmagonline.com/tag/100-dicks/">100 dicks</a> 		</span>
+	
+		<h2 class="entry-title"><a href="http://www.clutchmagonline.com/2013/07/100-year-old-lady-asks-reporter-hows-your-dck-hanging/" title="100 Year Old Lady Asks Reporter &#8216;How&#8217;s your d*ck hanging?&#8217;" rel="bookmark">100 Year Old Lady Asks Reporter &#8216;How&#8217;s your d*ck hanging?&#8217;</a></h2>
+	</header><!-- .entry-header -->
+
+	<div class="entry-summary">
+		<p>There are two things in this world that I love, videos of old people and videos of toddlers. &nbsp;They are also the two groups of people who don&#8217;t have a care in the world, or tact. &nbsp;Right now, let&#8217;s just focus on tactless old people. Take a look at the video below: &nbsp; If a&#8230;</p>
+	</div><!-- .entry-summary -->
+
+	<footer class="entry-meta">
+
+				<div class="date">
+			<a href="http://www.clutchmagonline.com/2013/07/100-year-old-lady-asks-reporter-hows-your-dck-hanging/"><time class="entry-date" datetime="%3$s" pubdate>July 5, 2013</time></a> 		</div>
+				
+	</footer><!-- #entry-meta -->
+</article><!-- #post-201282 -->
+			
+
+			</div><!-- #fullcontent -->
+			
+				<nav role="navigation" id="nav-below" class="site-navigation paging-navigation">
+		<h2 class="assistive-text">Post navigation</h2>
+
+	
+	<div class="loadmore"><a href="http://www.clutchmagonline.com/page/2/" >~ Load More Posts ~</a></div>
+
+	
+	</nav><!-- #nav-below -->
+				
+		</div><!-- #primary .site-content -->
+
+
+
+	</div><!-- #main -->
+
+
+</div><!-- #page .hfeed .site -->
+
+<footer class="site-footer"><!-- Jan 24 2013 -->
+	<nav>
+		<ul>
+			<li><a class="top" href="#" title="Back to top">Top</a></li>
+		</ul>
+	</nav>
+			
+		
+						
+			<div class="skinnypicrap footposts clearfix">
+				
+			<div class="footpostcut">
+						
+			
+			<article>
+
+				<a href="http://www.clutchmagonline.com/2013/07/dear-prada-you-dont-get-props-for-using-one-black-model-every-19-years/" title="Dear Prada: You Don&#8217;t Get Props For Casting One Black Model Every 19 Years" rel="bookmark">
+									<img src="http://www.clutchmagonline.com/wp-content/uploads/2013/07/MalaikaFirth_Prada-140x78.jpg" alt="dear-prada-you-dont-get-props-for-using-one-black-model-every-19-years" class="post-image" width="" height="" />								</a>
+
+				<header class="entry-header">
+					<span class="cat-links">
+						<a href="http://www.clutchmagonline.com/tag/black-models/">black models</a> 					</span>
+
+					<h2 class="feet entry-title"><a href="http://www.clutchmagonline.com/2013/07/dear-prada-you-dont-get-props-for-using-one-black-model-every-19-years/" title="Dear Prada: You Don&#8217;t Get Props For Casting One Black Model Every 19 Years" rel="bookmark">Dear Prada: You Don&#8217;t Get Props For Casting One Black Model Every 19 Years</a></h2>
+				</header><!-- .entry-header -->
+
+			</article><!-- #post-201123 -->
+			
+
+							
+			
+			<article>
+
+				<a href="http://www.clutchmagonline.com/2013/06/13-products-that-the-beauty-industry-wont-tell-you-are-amazing-for-brown-women-so-i-will/" title="13 Products That The Beauty Industry Won&#8217;t Tell You Are Amazing For Brown Women So I Will" rel="bookmark">
+									<img width="140" height="78" src="http://www.clutchmagonline.com/wp-content/uploads/2013/06/NARS-140x78.jpg" class="attachment-thumbnail wp-post-image" alt="NARS" />								</a>
+
+				<header class="entry-header">
+					<span class="cat-links">
+						<a href="http://www.clutchmagonline.com/tag/beauty/">Beauty</a> 					</span>
+
+					<h2 class="feet entry-title"><a href="http://www.clutchmagonline.com/2013/06/13-products-that-the-beauty-industry-wont-tell-you-are-amazing-for-brown-women-so-i-will/" title="13 Products That The Beauty Industry Won&#8217;t Tell You Are Amazing For Brown Women So I Will" rel="bookmark">13 Products That The Beauty Industry Won&#8217;t Tell You Are Amazing For Brown Women So I Will</a></h2>
+				</header><!-- .entry-header -->
+
+			</article><!-- #post-200832 -->
+			
+
+							
+			
+			<article>
+
+				<a href="http://www.clutchmagonline.com/2013/06/listen-up-fashion-companies-plus-size-women-are-literally-just-waiting-to-give-you-our-money/" title="Listen Up, Fashion Companies: Plus-Size Women Are Literally Just Waiting to Give You Our Money" rel="bookmark">
+									<img width="140" height="78" src="http://www.clutchmagonline.com/wp-content/uploads/2013/06/062113PLUS-140x78.jpg" class="attachment-thumbnail wp-post-image" alt="062113PLUS" />								</a>
+
+				<header class="entry-header">
+					<span class="cat-links">
+						<a href="http://www.clutchmagonline.com/tag/fashion/">Fashion</a> 					</span>
+
+					<h2 class="feet entry-title"><a href="http://www.clutchmagonline.com/2013/06/listen-up-fashion-companies-plus-size-women-are-literally-just-waiting-to-give-you-our-money/" title="Listen Up, Fashion Companies: Plus-Size Women Are Literally Just Waiting to Give You Our Money" rel="bookmark">Listen Up, Fashion Companies: Plus-Size Women Are Literally Just Waiting to Give You Our Money</a></h2>
+				</header><!-- .entry-header -->
+
+			</article><!-- #post-200642 -->
+			
+
+							
+			
+			<article>
+
+				<a href="http://www.clutchmagonline.com/2013/06/the-3-non-beauty-products-that-keep-my-hair-and-skin-clean-and-soft/" title="The 3 Non-Beauty Products That Keep My Hair And Skin Clean And Soft" rel="bookmark">
+									<img width="140" height="78" src="http://www.clutchmagonline.com/wp-content/uploads/2013/06/malaika-supermarkets-140x78.jpg" class="attachment-thumbnail wp-post-image" alt="malaika supermarkets" />								</a>
+
+				<header class="entry-header">
+					<span class="cat-links">
+						<a href="http://www.clutchmagonline.com/tag/hair/">hair</a> 					</span>
+
+					<h2 class="feet entry-title"><a href="http://www.clutchmagonline.com/2013/06/the-3-non-beauty-products-that-keep-my-hair-and-skin-clean-and-soft/" title="The 3 Non-Beauty Products That Keep My Hair And Skin Clean And Soft" rel="bookmark">The 3 Non-Beauty Products That Keep My Hair And Skin Clean And Soft</a></h2>
+				</header><!-- .entry-header -->
+
+			</article><!-- #post-200500 -->
+			
+
+							
+			
+			<article>
+
+				<a href="http://www.clutchmagonline.com/2013/06/baggy-method-with-bee-lovely-moisturizing-daily-conditioner/" title="Baggy Method with Bee Lovely Moisturizing Daily Conditioner" rel="bookmark">
+									<img width="140" height="78" src="http://www.clutchmagonline.com/wp-content/uploads/2013/06/loveyourhair-140x78.png" class="attachment-thumbnail wp-post-image" alt="loveyourhair" />								</a>
+
+				<header class="entry-header">
+					<span class="cat-links">
+						<a href="http://www.clutchmagonline.com/tag/beemine/">beemine</a> 					</span>
+
+					<h2 class="feet entry-title"><a href="http://www.clutchmagonline.com/2013/06/baggy-method-with-bee-lovely-moisturizing-daily-conditioner/" title="Baggy Method with Bee Lovely Moisturizing Daily Conditioner" rel="bookmark">Baggy Method with Bee Lovely Moisturizing Daily Conditioner</a></h2>
+				</header><!-- .entry-header -->
+
+			</article><!-- #post-200451 -->
+			
+
+							
+			
+			<article>
+
+				<a href="http://www.clutchmagonline.com/2013/06/my-lovehate-relationship-with-my-satin-scarf/" title="My Love/Hate Relationship with my Satin Scarf" rel="bookmark">
+									<img width="140" height="78" src="http://www.clutchmagonline.com/wp-content/uploads/2011/11/Picture-131-140x78.png" class="attachment-thumbnail wp-post-image" alt="Picture-131" />								</a>
+
+				<header class="entry-header">
+					<span class="cat-links">
+						<a href="http://www.clutchmagonline.com/tag/hair/">hair</a> 					</span>
+
+					<h2 class="feet entry-title"><a href="http://www.clutchmagonline.com/2013/06/my-lovehate-relationship-with-my-satin-scarf/" title="My Love/Hate Relationship with my Satin Scarf" rel="bookmark">My Love/Hate Relationship with my Satin Scarf</a></h2>
+				</header><!-- .entry-header -->
+
+			</article><!-- #post-112565 -->
+			
+
+								
+				</div>
+				</div>
+
+				
+					
+	<nav id="colophon" role="contentinfo">
+		<div class="site-info">
+			<a href="http://clutchmagonline.com/copyright">&copy;2013 Sutton New Media LLC</a> |
+			<a href="http://clutchmagonline.com/masthead/">Masthead</a> |
+			<a href="http://www.clutchmagonline.com/privacy-policy/">Privacy</a> |
+			<a href="http://clutchmagonline.com/about-clutch/">About</a> |
+			<a href="http://clutchmagonline.com/contact">Contact</a> |
+			<a href="http://clutchmagonline.com/contact">Advertising</a> |
+			<a href="http://319heads.com" title="Design by 319 Heads" rel="generator">Design by 319 Heads</a>
+		</div><!-- .site-info -->
+	</nav>
+	</footer>
+
+
+<script type="text/javascript">
+$(function () {
+   
+  var msie6 = $.browser == 'msie' && $.browser.version < 7;
+   
+  if (!msie6 && $('.rosside').offset()!=null) {
+    var top = $('.rosside').offset().top - parseFloat($('.rosside').css('margin-top').replace(/auto/, 0));
+    var height = $('.rosside').height();
+    var winHeight = $(window).height();
+    var footerTop = $('.site-footer').offset().top - parseFloat($('.site-footer').css('margin-top').replace(/auto/, 0));
+    var gap = 10;
+    $(window).scroll(function (event) {
+      // what the y position of the scroll is
+      var y = $(this).scrollTop();
+       
+      // whether that's below the form
+      if (y+winHeight >= top+ height+gap && y+winHeight<=footerTop) {
+        // if so, ad the fixed class
+        $('.rosside').addClass('rossidefixed').css('top',winHeight-height-gap +'px');
+      }
+      else if (y+winHeight>footerTop) {
+        // if so, ad the fixed class
+       $('.rosside').addClass('rossidefixed').css('top',footerTop-height-y-gap+'px');
+      }
+      else   
+      {
+        // otherwise remove it
+        $('.rosside').removeClass('rossidefixed').css('top','0px');
+      }
+    });
+  } 
+});
+</script>
+
+<!-- Compete XL Code for clutchmagonline.com -->
+<script type="text/javascript">
+__compete_code = 'e4a4c1eb294dbe350df7b901fcab39b9';
+/* Set control variables below this line. */ 
+</script>
+<script type="text/javascript" src="//c.compete.com/bootstrap/s/e4a4c1eb294dbe350df7b901fcab39b9/clutchmagonline-com/bootstrap.js"></script>
+<noscript>
+    <img width="1" height="1" src="https://ssl-clutchmagonline-com-e4a4c1.c-col.com"/>
+</noscript>
+
+<!-- start Vibrant Media IntelliTXT script section -->
+<script type="text/javascript" src="http://clutchmagonline.us.intellitxt.com/intellitxt/front.asp?ipid=54011"></script>
+<!-- end Vibrant Media IntelliTXT script section -->
+
+<!-- Start Quantcast tag -->
+<script type="text/javascript">
+_qoptions={
+qacct:"p-38MkYahszXchE"
+};
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+<img src="http://pixel.quantserve.com/pixel/p-38MkYahszXchE.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- End Quantcast tag -->
+
+
+<!-- Start Google Analytics tag -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-1774544-11");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- End Google Analytics tag -->
+
+
+
+<!--Plugin WP Missed Schedule 2013.0531.4444 Active - Tag: edcb48f0d130ca1974cf9bab6cb27fc3-->
+
+	<div style="display:none">
+	<div class="grofile-hash-map-e7e50aca43beba31519e37f08dcba7a9">
+	</div>
+	<div class="grofile-hash-map-7911d31ff40bfb72c3154ab5b9feedee">
+	</div>
+	<div class="grofile-hash-map-81feb1bc8e4b012988cea41a7c6d5dac">
+	</div>
+	</div>
+<script type='text/javascript' src='http://www.clutchmagonline.com/wp-content/plugins/comment-rating/ck-karma.js?ver=454'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201328'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var emailL10n = {"ajax_url":"http:\/\/www.clutchmagonline.com\/wp-admin\/admin-ajax.php","max_allowed":"5","text_error":"The Following Error Occurs:","text_name_invalid":"- Your Name is empty\/invalid","text_email_invalid":"- Your Email is empty\/invalid","text_remarks_invalid":"- Your Remarks is invalid","text_friend_names_empty":"- Friend Name(s) is empty","text_friend_name_invalid":"- Friend Name is empty\/invalid: ","text_max_friend_names_allowed":"- Maximum 5 Friend Names allowed","text_friend_emails_empty":"- Friend Email(s) is empty","text_friend_email_invalid":"- Friend Email is invalid: ","text_max_friend_emails_allowed":"- Maximum 5 Friend Emails allowed","text_friends_tally":"- Friend Name(s) count does not tally with Friend Email(s) count","text_image_verify_empty":"- Image Verification is empty"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.clutchmagonline.com/wp-content/plugins/wp-email/email-js.js?ver=2.60'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pollsL10n = {"ajax_url":"http:\/\/www.clutchmagonline.com\/wp-admin\/admin-ajax.php","text_wait":"Your last request is still being processed. Please wait a while ...","text_valid":"Please choose a valid poll answer.","text_multiple":"Maximum number of choices allowed: ","show_loading":"1","show_fading":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.clutchmagonline.com/wp-content/plugins/wp-polls/polls-js.js?ver=2.63'></script>
+<script type='text/javascript' src='http://www.clutchmagonline.com/wp-content/themes/clutchmag/js/small-menu.js?ver=20120206'></script>
+
+	<script src="http://stats.wordpress.com/e-201328.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	st_go({v:'ext',j:'1:2.3',blog:'25401498',post:'0',tz:'-4'});
+	var load_cmc = function(){linktracker_init(25401498,0,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script></body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using apc
+Object Caching 3605/4196 objects using apc
+
+ Served from: www.clutchmagonline.com @ 2013-07-08 19:48:29 by W3 Total Cache -->

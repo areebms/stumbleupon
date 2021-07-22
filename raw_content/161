@@ -1,0 +1,1218 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
+<head>
+	<title>Copycat Krispy Kreme Doughnuts</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Delicious recipe for Copycat Krispy Kreme Doughnuts on Foodista.com, the cooking encyclopedia everyone can edit. " />
+	<meta name="keywords" content="Copycat Krispy Kreme Doughnuts, recipe" />
+	
+<meta property="og:title" content="Copycat Krispy Kreme Doughnuts"/>
+<meta property="og:type" content="food"/>
+<meta property="og:url" content="http://www.foodista.com/recipe/CYQ5RD2B/copycat-krispy-kreme-doughnuts"/>
+<meta property="og:image" content="http://cloud.foodista.com/content/images/CYQ5RD2B_big"/>
+<meta property="og:site_name" content="Foodista"/>
+<meta property="fb:app_id" content="119269472146"/>
+
+
+	<link rel="icon" href="http://cf.foodista.com/static/images/favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="http://cf.foodista.com/static/images/favicon.ico" type="image/x-icon"/>
+	
+	
+		
+
+<link rel="stylesheet" href="http://cf.foodista.com/static_9071/css/foodista.css" type="text/css" />
+
+		
+		
+
+		<!--[if lt IE 7 ]>
+			<link href="http://cf.foodista.com/static_9071/css/ie_fix.css" rel="stylesheet" type="text/css"> 
+		<![endif]-->
+
+		<!--[if IE 7]>
+			<link href="http://cf.foodista.com/static_9071/css/ie_7fix.css" rel="stylesheet" type="text/css">
+		<![endif]-->
+	
+	
+	
+	
+
+	
+	
+
+<script type="text/javascript" src="http://cf.foodista.com/static_9071/js/foodista.js"></script>
+
+
+	<script type="text/javascript" charset="utf-8">
+	/* <![CDATA[ */
+
+		$.setStaticUrl('http://cf.foodista.com/static');
+		$.setSearchFocus(false);
+		$.facebox.settings.closeImage = 'http://cf.foodista.com/static/images/facebox/closelabel.gif'
+		$.facebox.settings.opacity = 0.2
+			
+
+	    $(document).ready(function() {
+		
+			// Make sidebar stretch to full height of content container
+			var contentH = $('#content').height(),
+				colH = $('#col3').outerHeight(true);
+			if (contentH > colH) {
+				$('#col3').height(contentH-20);
+			}
+		
+			
+			if ($("#search-query").val() == "") {
+				showlabelen();
+			}
+			
+
+			
+
+			if(!window.location.hash && $.getSearchFocus()) {
+				$('#search-query').focus();
+			}
+
+			$('#search-query').bind('click', function(event) {
+				hidelabelen();
+			});
+			$('#search-query').bind('blur', function(event) {
+				if ($('#search-query').val() == '') {
+					showlabelen();
+				}
+	        });
+			$('#search-query').bind('keypress', function(event) {
+				hidelabelen();
+			}); 
+			
+			$('.new-random-recipe').click(function() {
+				var randomRecipe = $(this).parent().find(':first');
+				$.callApi('content.random_recipe', {}, {onsuccess: function(packet) {
+					if (packet.response) {
+						var recipe = packet.response.recipe
+						randomRecipe.attr('href', recipe.url);
+						randomRecipe.html(
+							'<img src="http://cloud.foodista.com/content/images/' + recipe.id + '_sm" />'+ 
+							recipe.title
+						);
+					}
+				}});
+				return false;
+			});
+			
+			$('#col3 .event-feed').feed({
+				itemHeight: 55,
+				maxVisible: 4,
+				showActee: false
+				
+			});
+			
+			
+
+			
+	$('#search-results-banner')
+		.slideDown()
+		.find('.close')
+		.click(function() { 
+			$(this).parent().hide();
+			return false;
+		});
+
+	
+
+	// async file upload progress handler
+	$('#upload-photo').uploadProgress({
+		jqueryPath: "http://cf.foodista.com/static/js/_jquery.js",
+		progressBar: '#progress-indicator',
+		progressUrl: '/progress',
+		start: function() {
+			$("#upload-photo").children().hide();
+			filename = $("#photo").val().split(/[\/\\]/).pop();
+			$("#progress-filename").html('Uploading ' + filename + "...");
+			$("#progress-container").show();
+		},
+		uploadProgressPath: "http://cf.foodista.com/static/js/jquery.uploadprogress.js",
+		uploading: function(upload) {
+			if (upload.percents == 100) {
+				window.clearTimeout(this.timer);
+				$("#progress-filename").html('Processing ' + filename + "...");
+			} else {
+				$("#progress-filename").html('Uploading ' + filename + ': ' + upload.percents + '%');
+			}
+		},
+		interval: 1000
+	});
+	
+	var photomatic_settings = {
+		photoElement: '#main-photo img',
+		previousControl: '#previousButton',
+		nextControl: '#nextButton',
+		firstControl: '#firstButton',
+		lastControl: '#lastButton',
+		suppressFirst: true,
+		onPhotoClick: function(photo) {
+			setVoteMessage(photo.id);
+		}
+	};
+
+	$('#thumbs').jcarousel({
+        size: imageIds.length,
+		scroll: 5,
+		initCallback: function(c) {
+			carousel = c;
+		},
+		itemLoadCallback: {
+			onBeforeAnimation: function(carousel, state) {
+				var id,
+					img,
+					html = '';
+				for (var i = carousel.first; i <= carousel.last; i++) {
+					if (carousel.has(i)) {
+						continue;
+					}
+
+					if (i > imageIds.length) {
+						break;
+					}
+					
+					id = imageIds[i-1];
+					img = imageInfo[id];
+					html = '<img id="' + id + '" src="' + img.thumb_url + '" width="32" height="32" alt="' + img.title + '" title="' + img.title + '"  />';
+
+					carousel.add(i, html);
+					carousel.get(i).find('img').photomatic(photomatic_settings);
+				}
+			}
+		}
+    });
+
+	$('#thumbs img').photomatic(photomatic_settings);
+	
+	$('#main-photo').photovote({
+		contentId: 'CYQ5RD2B',
+		onSubmit: function(contentId, imageId, score) {
+			imageInfo[imageId].vote = (score > 0);
+			setVoteMessage(imageId);
+		}
+	});
+
+	// Pre-load thumbnails
+	for (object_id in imageInfo) {
+	    //imageInfo[object_id]['_imagepreload'] = new Image(1,1);
+	    //imageInfo[object_id]['_imagepreload'].src = imageInfo[object_id]['url'];
+	    imageInfo[object_id]['_thumbpreload'] = new Image(1,1);
+	    imageInfo[object_id]['_thumbpreload'].src = imageInfo[object_id]['thumb_url'];
+	}
+	
+	
+
+	$('#photo-module .show-upload').click(function() {
+		$('#upload-photo').show();
+		return false;
+	});
+	
+	$('.lightbox').fancybox({
+		type: 'image'
+	});
+	
+	$.toolbox({
+		objectId: 'CYQ5RD2B',
+		userId: '',
+		ratingAvg: 0.0,
+		ratingRedirect: '/signin?next=/recipe/CYQ5RD2B/copycat-krispy-kreme-doughnuts',
+		contentType: 'recipe',
+		contentTitle: 'Copycat Krispy Kreme Doughnuts'
+	});
+		
+
+	    });
+
+	/* ]]> */
+	</script>
+
+	
+	
+
+<script type="text/javascript">
+/* <![CDATA[ */
+
+function setVoteMessage(imageId) {
+	
+	var personal = false;
+	
+	if (imageInfo[imageId].vote === undefined) {
+		$('.photo-voted').hide();
+		$('.photo-vote').show().find('a').attr('href', imageId);
+		return;
+	}
+
+	$('.photo-vote').hide();
+
+	var html = !personal ? 'Photo helpful? ' : 'Moved ';
+
+	if (imageInfo[imageId].vote == true) {
+		html += (!personal ? '<img src="http://cf.foodista.com/static/images/photo_yes.png" width="12" height="9" alt="Photo Helpful" title="Photo Helpful" /> You voted yes' : 'up');
+		$('.photo-voted').html(html).show();
+	} else {
+		html += (!personal ? '<img src="http://cf.foodista.com/static/images/photo_no.png" width="9" height="9" alt="Photo Not Helpful" title="Photo Not Helpful" /> You voted no' : 'down');
+		$('.photo-voted').html(html).show();
+	}
+}
+
+imageIds = [];
+imageInfo = {};
+
+
+imageIds[0] = 'c75dbd2d233a6a59dceaf1745bdc53048a2a9e87';
+imageInfo['c75dbd2d233a6a59dceaf1745bdc53048a2a9e87'] = {
+	'url': 'http://dyn.foodista.com/content/images/c75dbd2d233a6a59dceaf1745bdc53048a2a9e87_240x180c.jpg',
+	'thumb_url': 'http://dyn.foodista.com/content/images/c75dbd2d233a6a59dceaf1745bdc53048a2a9e87_32x32c.jpg',
+	'title': 'Uploaded photo',
+	'attrib_text': '\x3Ca href\x3D\x22/profile/FB44DXS2/melissa\x22\x3EMelissa\x3C/a\x3E' 
+};
+
+imageIds[1] = '7dbadc531fefafb03f69f147c6941401bb54e319';
+imageInfo['7dbadc531fefafb03f69f147c6941401bb54e319'] = {
+	'url': 'http://dyn.foodista.com/content/images/7dbadc531fefafb03f69f147c6941401bb54e319_240x180c.jpg',
+	'thumb_url': 'http://dyn.foodista.com/content/images/7dbadc531fefafb03f69f147c6941401bb54e319_32x32c.jpg',
+	'title': 'Uploaded photo',
+	'attrib_text': '\x3Ca href\x3D\x22/profile/FB44DXS2/melissa\x22\x3EMelissa\x3C/a\x3E' 
+};
+
+
+/* ]]> */
+</script>
+
+
+	
+</head>
+<body  class="content-view alt-view recipe-type">
+	<div id="fb-root"></div>
+	<script type="text/javascript" charset="utf-8">
+		$.facebookConnect({apiKey: 'c869a2b4981c8289ddcd21e554037d7b'});
+	</script>
+<div id="wrapper">
+	
+	
+
+<div id="header-wrapper">
+	<a href="/" id="logo">Foodista</a>
+	
+	<ul id="user-panel">
+    
+       	<li><a href="/signin?next=/recipe/CYQ5RD2B/copycat-krispy-kreme-doughnuts" rel="nofollow">Sign In</a></li><li><a href="/signup" rel="nofollow">Sign Up</a></li>
+    
+		<li><a href="/static/help">Help</a></li>
+    </ul>
+	<div id="header">
+		<div id="sparkle"><a href="http://www.foodista.com/ifbc2011/"><img src="https://s3.amazonaws.com/cloud.foodista.com/static/images/ifbc2011/IFBC2011_sparkle_180x70.png" title="International Food Blogger Conference 2011" alt="International Food Blogger Conference 2011" /></a></div>
+		<form id="search-form" action="/search" method="get">
+			<fieldset>
+				<label class="overlabel-apply" for="search-query">Search recipes, foods, tools, techniques, and Q&amp;A</label>
+				<input id="search-query" name="query" value="" title="Search recipes, foods, tools, and techniques" />
+				<input id="search-submit" type="image" src="http://cf.foodista.com/static_9071/images/search_btn.png" alt="Search" />
+			</fieldset>
+	    </form>
+	</div>
+	<div id="nav">
+		<b id="nav-left"></b>
+		<ul>
+			<li id="nav-home"><a href="/">Home</a></li>
+			<li id="nav-recipes"><a href="/recipes">Recipes</a></li>
+			<li id="nav-foods"><a href="/foods">Foods</a></li>
+			<li id="nav-tools"><a href="/tools">Tools</a></li>
+			<li id="nav-techniques"><a href="/techniques">Techniques</a></li>
+			<li id="nav-questions"><a href="/questions">Questions</a></li>
+			<li id="nav-profiles"><a href="/profiles">People</a></li>
+			<li id="nav-blog"><a href="/blog">Blog</a></li>
+			<li id="nav-recent"><a href="/recentchanges">Recent</a></li>
+			<li id="nav-widgets"><a href="/bloggertools/widgets">Recent</a></li>
+		</ul>
+		<b id="nav-right"></b>
+	</div>
+</div>
+
+
+
+
+	
+	
+	
+
+	
+	<div id="content">
+  	
+		
+			
+			
+				<div id="col3">
+				
+					<a rel="nofollow" href="/recipe/new"><img src="http://cf.foodista.com/static/images/add_recipe_btn.png" height="29" width="133" /></a>
+					<a rel="nofollow" href="/question/new"><img src="http://cf.foodista.com/static/images/ask_question_btn.png" height="29" width="133" /></a>
+
+					
+						<a href="/signup"><img src="http://cf.foodista.com/static/images/signup_large.png" height="193" width="193" class="signup" /></a>
+					
+					
+					
+				
+					<hr />
+
+					
+					
+					<hr />
+					
+					<h4>Latest Activity on Foodista</h4>
+					<div class="event-feed"></div>
+					
+					<hr />
+					
+					<div class="sparkle">
+						<a href="http://www.foodista.com/ifbc2011/"><img src="https://s3.amazonaws.com/cloud.foodista.com/static/images/ifbc2011/IFBC2011_sparkle_150x150.png" title="International Food Blogger Conference 2011" alt="International Food Blogger Conference 2011" /></a>
+					</div>
+
+					<hr />
+				
+					
+
+					<h4>Recent Questions</h4>
+					<ul class="content-list">
+						<li><a href="/question/TGYBH5F6/how-to-make-siopao">how to make siopao</a></li><li><a href="/question/7CKRDP5Y/which-is-the-best-wrinkle-creams">which is the best Wrinkle Creams?</a></li><li><a href="/question/KVQL4RDR/my-goose-is-cooked">My Goose is Cooked!</a></li><li><a href="/question/NRS2P6J7/sea-salt-taste">Sea Salt Taste</a></li><li><a href="/question/DKZSTJY6/how-can-i-add-my-blo">how can i add my blo?</a></li><li><a href="/question/C47YMD7G/chocolate-tart">Chocolate Tart</a></li><li><a href="/question/86R3R4Z8/what-are-some-good-lemon-substitutes">What are some good lemon substitutes</a></li><li><a href="/question/VDSKM3ZR/is-there-a-recipe-on-a-delicious-gooey-chocolate-tart">Is there a recipe on a delicious gooey chocolate tart?</a></li><li><a href="/question/77RQ888C/how-do-you-make-marinade">How do you make marinade?</a></li><li><a href="/question/F7P8RBH8/cake-batter-coloring">cake batter coloring</a></li>
+					</ul>
+					<!--b class="cap"></b-->
+				
+				</div>
+			
+			
+			
+			
+<div class="col1-wide" xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Recipe">
+	
+	
+
+
+
+
+	
+	
+		
+		
+		<h1>Recipe: <span property="v:name">Copycat Krispy Kreme Doughnuts</span> 
+<a href="/recipe/CYQ5RD2B/copycat-krispy-kreme-doughnuts/edit#title" title="Correct errors and add missing information." rel="nofollow" class="edit">edit</a>
+</h1>
+		
+	
+
+	<script type="text/javascript"><!--
+google_ad_client = "pub-3736058543653087";
+/* 468x60, created 5/4/10 */
+google_ad_slot = "3820519163";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+	
+
+<div class="rating-container">
+	<div class="rating"><input class="rating-star" type="radio" name="rating" value="1" title="Hate it" /><input class="rating-star" type="radio" name="rating" value="2" title="Don't like it" /><input class="rating-star" type="radio" name="rating" value="3" title="Like it" /><input class="rating-star" type="radio" name="rating" value="4" title="Like it a lot" /><input class="rating-star" type="radio" name="rating" value="5" title="Love it" /></div>
+	
+		<div class="rating-message">Be the first to rate this!</div>
+	
+	
+</div>
+	<div style="height: 30px; padding-top: 5px">
+	<fb:like href="http://www.foodista.com/recipe/CYQ5RD2B/copycat-krispy-kreme-doughnuts" layout="standard" show-faces="false" width="450" action="like" colorscheme="light"></fb:like>
+</div>
+				
+	<div id="col2">
+		
+
+		
+		
+		
+
+
+
+
+<div id="photos">
+
+	<div id="main-photo">
+		<a href="http://cloud.foodista.com/content/images/CYQ5RD2B_big" class="photo lightbox"><img src="http://cloud.foodista.com/content/images/CYQ5RD2B_med" alt="" rel="v:photo"/></a>
+		
+		<div class="photo-vote">
+			
+				
+			Photo helpful?
+			<a href="c75dbd2d233a6a59dceaf1745bdc53048a2a9e87" rel="nofollow" class="vote-up">Yes</a> <a href="c75dbd2d233a6a59dceaf1745bdc53048a2a9e87" rel="nofollow" class="vote-down">No</a>
+				
+			
+		</div>
+		<div class="photo-voted"></div>
+		<div class="attribution">
+			Photo: <span id="photo-attribution"><a href="/profile/FB44DXS2/melissa">Melissa</a></span>
+		</div>
+		
+	</div>
+
+	<div id="photo-module">
+		<h3>Photos</h3>
+		
+		<ul id="thumbs" class="thumbs-sm jcarousel-skin-foodista-sm">
+			
+			<li><img id="c75dbd2d233a6a59dceaf1745bdc53048a2a9e87" src="http://dyn.foodista.com/content/images/c75dbd2d233a6a59dceaf1745bdc53048a2a9e87_32x32c.jpg" width="32" height="32" alt="Uploaded photo" title="Uploaded photo" /></li>
+			
+			<li><img id="7dbadc531fefafb03f69f147c6941401bb54e319" src="http://dyn.foodista.com/content/images/7dbadc531fefafb03f69f147c6941401bb54e319_32x32c.jpg" width="32" height="32" alt="Uploaded photo" title="Uploaded photo" /></li>
+			
+		</ul>
+		<a href="/recipe/CYQ5RD2B/copycat-krispy-kreme-doughnuts/photos">See all photos...</a>
+		
+		
+			<a href="#" class="show-upload">Upload a photo</a>
+		
+	</div>
+
+</div>
+
+
+		
+		<div class="module">
+
+			
+<div><strong>Yield:</strong> <span property="v:yield">10 donuts</span></div>
+
+
+		
+			
+
+
+			
+
+
+
+			
+
+
+
+			
+
+
+			
+
+
+
+			
+<p><strong>Editors:</strong> <a href="/profile/FB44DXS2/melissa">Melissa</a>, <a href="/profile/RXVJJ6P6/desiree-lowe">Desiree Lowe</a>, <a href="/profile/4YDD4ZHY/sheri">Sheri</a>, <a href="/profile/pHe0qhhX/barnaby-dorfman">Barnaby Dorfman</a></p>
+
+
+			
+		</div>
+	
+		
+			
+
+
+
+<div class="toolbox">
+	<div class="icons">
+		
+	</div>
+	<div class="message"></div>
+</div>
+
+<div id="toolbox">
+	<b class="cap-top"></b>
+	
+	<h3>Toolbox</h3>
+	
+	<hr />
+	
+	<ul>
+		<li><a href="/recipe/CYQ5RD2B/copycat-krispy-kreme-doughnuts/favorite" class="not-favorite" title="Favorite this recipe" rel="nofollow"><img src="http://cf.foodista.com/static/images/icon_notfavorited.png" width="17" height="17" alt="Favorite this recipe" />Favorite this recipe</a></li>
+		
+		
+		<li><a href="?fmt=print" class="new-window" title="Print this page" rel="nofollow"><img src="http://cf.foodista.com/static/images/icon_print.png" width="17" height="17" alt="Print this page" />Print this recipe</a></li>
+		
+		
+		<li><a href="mailto:?subject=Great Cooking Article From Foodista.com&amp;body=http%3A//www.foodista.com/recipe/CYQ5RD2B/copycat-krispy-kreme-doughnuts" title="Email this page" rel="nofollow"><img src="http://cf.foodista.com/static/images/icon_email.png" width="17" height="17" alt="Email this page" />Email this recipe</a></li>
+		
+		<li><a href="http://www.facebook.com/sharer.php?u=http%3A//www.foodista.com/recipe/CYQ5RD2B/copycat-krispy-kreme-doughnuts&amp;t=Recipe%20%20for%20Copycat%20Krispy%20Kreme%20Doughnuts%20on%20Foodista.com" class="new-window" title="Share on Facebook" rel="nofollow"><img src="http://cf.foodista.com/static/images/icon_facebook.png" width="16" height="16" alt="Share on Facebook" />Post this on Facebook</a></li>
+		
+		<li><a href="http://twitter.com/home?status=http%3A//www.foodista.com/CYQ5RD2B" class="new-window" title="Share on Twitter" rel="nofollow"><img src="http://cf.foodista.com/static/images/icon_twitter.png" width="16" height="16" alt="Share on Twitter" />Tweet this recipe</a></li>
+		
+		<li><a href="http://www.stumbleupon.com/submit?url=http%3A//www.foodista.com/recipe/CYQ5RD2B/copycat-krispy-kreme-doughnuts&amp;title=Recipe%20%20for%20Copycat%20Krispy%20Kreme%20Doughnuts%20on%20Foodista.com" class="new-window" title="Stumble this page" rel="nofollow"><img src="http://cf.foodista.com/static/images/icon_stumbleupon.png" width="16" height="16" alt="Stumble this page" />Stumble this recipe</a></li>
+	</ul>
+	
+	<b class="cap-bottom"></b>
+</div>
+
+		
+
+		
+
+<h3>Embed This Widget</h3>
+<div class="module widget-module">
+	
+	<a href="/recipe/CYQ5RD2B/copycat-krispy-kreme-doughnuts/widgets" style="display: block; padding: 8px 0 0 0; width: 212px; background: transparent url(http://cf.foodista.com/static/images/widget_red_demo.png) no-repeat scroll 0px -8px; text-decoration: none;" class="widget-demo">
+	    <span style="display: block; padding: 0 8px; background-color: #C44F50; overflow: hidden; text-indent: 0;">
+			<img src="http://cloud.foodista.com/content/images/CYQ5RD2B_med" alt="" style="width: 192px; height: 144px; border: none; padding: 0 0 5px 0; margin: 0;" />
+			<span style="text-align: left; float: left; overflow: hidden; color: white; font-family: arial,helvetica,clean,sans-serif; font-size: 13px; background-color: #C36C6D; width: 124px; padding: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">Copycat Krispy Kreme Doughnuts</span>
+			<img src="http://cf.foodista.com/static/images/widget_logo.png" style="float: right; border: none; width: 56px; height: 20px; padding: 0; margin: 0;" />
+		</span>
+		<span style="display: block; padding: 0; height: 8px; background: transparent url(http://cf.foodista.com/static/images/widget_red_demo.png) no-repeat scroll 0px 0px; clear: both;"></span>
+	</a>
+	<h4><a href="/recipe/CYQ5RD2B/copycat-krispy-kreme-doughnuts/widgets">More Options</a>Code:</h4>
+	<input type='text' class="widget-code" value="&lt;a href=&quot;http://www.foodista.com/recipe/CYQ5RD2B/copycat-krispy-kreme-doughnuts&quot; style=&quot;display: block; padding: 10px 0 0 0; width: 260px; background: transparent url(http://cf.foodista.com/static/images/widget_red.png) no-repeat scroll 0px -10px; text-decoration: none;&quot;&gt;&lt;span style=&quot;display: block; padding: 0 10px; background-color: #C44F50; overflow: hidden; text-indent: 0;&quot;&gt;&lt;img src=&quot;http://dyn.foodista.com/content/images/c75dbd2d233a6a59dceaf1745bdc53048a2a9e87_240x180c.jpg&quot; alt=&quot;&quot; style=&quot;width: 240px; height: 180px; border: none; padding: 0 0 5px 0; margin: 0;&quot; /&gt;&lt;span style=&quot;text-align: left; float: left; overflow: hidden; color: white; font-family: arial,helvetica,clean,sans-serif; font-size: 15px; background-color: #C36C6D; width: 155px; padding: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;&quot;&gt;Copycat Krispy Kreme Doughnuts&lt;/span&gt;&lt;img src=&quot;http://cf.foodista.com/static/images/widget_logo.png&quot; style=&quot;float: right; border: none; width: 70px; height: 25px; padding: 0; margin: 0;&quot; /&gt;&lt;/span&gt;&lt;span style=&quot;display: block; padding: 0; height: 10px; background: transparent url(http://cf.foodista.com/static/images/widget_red.png) no-repeat scroll 0px 0px; clear: both;&quot;&gt;&lt;/span&gt;&lt;img src=&quot;http://dyn.foodista.com/content/embed/z1.png?foodista_widget_CYQ5RD2B_AAAAAAAA&quot; style=&quot;display: none;&quot; /&gt;&lt;/a&gt;" />
+	
+</div>
+
+<script type="text/javascript" charset="utf-8">
+	$('input.widget-code').bind('click', function(event) { $(this).select(); })
+</script>
+
+
+		
+
+
+<div class="module related-blogposts">
+	<h3>Related Blogposts</h3>
+	<p class="preamble"><a href="/recipe/CYQ5RD2B/copycat-krispy-kreme-doughnuts/widgets">Click here</a> to add your blog post on Copycat Krispy Kreme Doughnuts to this page.</p>
+	<ul>
+		
+		<li>
+			
+			<a href="/profile/FB44DXS2/embedomatic-user" class="photo"><img src="http://cloud.foodista.com/content/images/FB44DXS2_sm" title="" /></a>
+			<p>
+			
+				<a href="http://schweetnsavory.blogspot.com/search?updated-max=2008-12-28T17%3A02%3A00-05%3A00&amp;max-results=6">schweetnsavory.blogspot.com</a>
+				<span class="date">January 02, 2009</span>
+				
+		    	<a href="/profile/FB44DXS2/embedomatic-user">View profile</a>
+				
+			</p>
+		</li>
+		
+	</ul>
+</div>
+
+
+		
+
+
+
+	
+		
+
+
+
+
+		
+
+
+
+		
+
+<h3>Related Recipes</h3>
+<div class="module">
+	<ul>
+		
+			<li><a href="/recipe/T3F54LKF/cheese-filled-almond-bread">Cheese - Filled Almond Bread</a></li>
+		
+			<li><a href="/recipe/TXTRGQCF/italian-foccacia">Italian Foccacia</a></li>
+		
+			<li><a href="/recipe/22HW3TRV/lemon-strawberry-cake-roll">Lemon Strawberry Cake Roll</a></li>
+		
+			<li><a href="/recipe/GL2SLP4M/king-cake">King Cake</a></li>
+		
+			<li><a href="/recipe/FNJDBYF8/brioche-buns">Brioche Buns</a></li>
+		
+		<li><a href="/recipes" class="more">See more recipes...</a></li>
+	</ul>
+</div>
+
+
+
+
+
+
+
+<h3>Related Food &amp; Cooking Questions</h3>
+<div class="module">
+	<ul class="questions">
+		
+		<li><a href="/question/6XFFCZKW/when-was-peanut-butter-first-created">When Was Peanut Butter First Created?</a></li>
+		
+		<li><a href="/question/B2XMNTWR/what-is-100-ml-of-the-water">What Is 100 Ml Of The Water?</a></li>
+		
+		<li><a href="/question/LCKZ6VLH/why-it-is-better-a-traditional-oven">Why It Is Better A Traditional Oven?</a></li>
+		
+		<li><a href="/question/GQV84Q3B/what-is-iso">What Is Iso?</a></li>
+		
+		<li><a href="/question/KKRP2JSR/what-is-the-use-of-julienne-in-a-recipe">What Is The Use Of Julienne In A Recipe?</a></li>
+		
+		<li><a href="/questions" class="more">See more questions...</a></li>
+	</ul>
+</div>
+
+
+
+
+<h3>Related Posts</h3>
+<div class="module">
+	<ul>
+		
+			<li><a href="/post/K2FJFC6D/cookbook-junkies-fruit">Cookbook Junkies: fruit</a></li>
+		
+			<li><a href="/post/KJXM5WL2/smoky-grilled-salmon-with-pickled-fennel">Smoky Grilled Salmon with Pickled Fennel</a></li>
+		
+			<li><a href="/post/NVZKYKVT/pockets-of-blue">Pockets of Blue</a></li>
+		
+			<li><a href="/post/HMPMQ3JD/chocolate-drizzled-pretzels-eggless">Chocolate-drizzled pretzels (eggless)</a></li>
+		
+			<li><a href="/post/PLHML5KV/pamper-yourself-with-our-packages">Pamper yourself with our packages</a></li>
+		
+		<li><a href="/blogs" class="more">See more posts...</a></li>
+	</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<h3>Related Products</h3>
+<div class="module">
+	<ul>
+		
+			<li><a href="/product/WMV7PLGH/healthy-choice-traditional-turkey-breast-dinner-105-ounce-12-count-healthy-choice">Healthy Choice Traditional Turkey Breast Dinner, 10.5-Ounce, 12-Count - Healthy Choice</a></li>
+		
+			<li><a href="/product/PGH5WBCQ/gourmetstation-day-meal-plan-for-french-style-five-delicious-french-style-entrees-and-side-dishes-11-pound-gourmetstation">GourmetStation Day Meal Plan For French Style - Five Delicious French Style Entrees and Side Dishes, 11-Pound - GourmetStation</a></li>
+		
+			<li><a href="/product/XPNMZTGQ/contes-gluten-free-vegetable-lasagna-microwave-meal-20-ounce-microwave-contes">Conte&#39;s Gluten Free Vegetable Lasagna Microwave Meal, 20-Ounce Microwave - Conte&#39;s</a></li>
+		
+			<li><a href="/product/HRBXHNNM/contes-gluten-free-stuffed-shells-microwave-meal-20-ounce-microwave-contes">Conte&#39;s Gluten Free Stuffed Shells Microwave Meal, 20-Ounce Microwave - Conte&#39;s</a></li>
+		
+			<li><a href="/product/88Q536X4/stouffers-french-bread-pizza-pepperoni-1125-ounce-12-count-stouffers">Stouffer&#39;s French Bread Pizza, Pepperoni, 11.25-Ounce, 12-Count - Stouffer&#39;s</a></li>
+		
+		<li><a href="/browse/products" class="more">See more products...</a></li>
+	</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3>Related Periodicals</h3>
+<div class="module">
+	<ul>
+		
+			<li><a href="/periodical/5QH44D5H/gourmet-september-2003">Gourmet - September 2003</a></li>
+		
+			<li><a href="/periodical/NYHBWDTB/bon-appetit-november-2009">Bon Appétit - November 2009</a></li>
+		
+			<li><a href="/periodical/BY6KJ65R/bon-appetit-june-1994">Bon Appétit - June 1994</a></li>
+		
+			<li><a href="/periodical/7CGSNB84/gourmet-september-2007">Gourmet - September 2007</a></li>
+		
+			<li><a href="/periodical/7RCC3P36/parade-november-2002">Parade - November 2002</a></li>
+		
+		<li><a href="/browse/periodicals" class="more">See more periodicals...</a></li>
+	</ul>
+</div>
+
+
+
+
+
+
+<h3>Related Books</h3>
+<div class="module">
+	<ul>
+		
+			<li><a href="/book/VC2DDSTF/sicilian-food-recipes-from-italys-abundant-isle">SICILIAN FOOD: Recipes from Italy&#39;s Abundant Isle</a></li>
+		
+			<li><a href="/book/4KKB2RRG/mesquite-country">Mesquite Country</a></li>
+		
+			<li><a href="/book/SR5THYN2/glasgow-on-a-plate">Glasgow on a Plate</a></li>
+		
+			<li><a href="/book/XKTPZKGV/the-road-to-vindaloo-curry-cooks-and-curry-books">The Road to Vindaloo: Curry Cooks and Curry Books</a></li>
+		
+			<li><a href="/book/N8PW2358/championship-chili-top-cookoff-winning-recipes">Championship Chili: Top Cookoff Winning Recipes</a></li>
+		
+		<li><a href="/browse/books" class="more">See more books...</a></li>
+	</ul>
+</div>
+
+
+
+
+
+
+<h3>Related Categorys</h3>
+<div class="module">
+	<ul>
+		
+			<li><a href="/category/87NR3F8B/grilled-meat-recipes">Grilled Meat Recipes</a></li>
+		
+			<li><a href="/category/4WSPX3C3/grilled-pork-chop-marinade">Grilled Pork Chop Marinade</a></li>
+		
+			<li><a href="/category/2V5WBBBR/grilling-beef-ribs">Grilling Beef Ribs</a></li>
+		
+			<li><a href="/category/7GK66RLW/grilling-beef-brisket-recipes">Grilling Beef Brisket Recipes</a></li>
+		
+			<li><a href="/category/HZCFGGWC/grilled-salmon-steaks-recipe">Grilled Salmon Steaks Recipe</a></li>
+		
+			<li><a href="/category/R55X4XSX/grilled-pork-ribs-recipe">Grilled Pork Ribs Recipe</a></li>
+		
+			<li><a href="/category/Y4XQTHJC/grilled-roast-beef">Grilled Roast Beef</a></li>
+		
+			<li><a href="/category/SFJYG38Q/grilled-spare-ribs">Grilled Spare Ribs</a></li>
+		
+			<li><a href="/category/PHTPN4MQ/grilling-vegetables-on-the-bbq">Grilling Vegetables On The Bbq</a></li>
+		
+			<li><a href="/category/7KG56K8Q/grilled-shrimp-recipes">Grilled Shrimp Recipes</a></li>
+		
+		<li><a href="/categorys" class="more">See more categorys...</a></li>
+	</ul>
+</div>
+
+
+
+
+		
+        
+<h3>See Also</h3>
+<div class="module">
+        <ul>
+                
+                        <li><a href="/recipe/Q6LM7CPP/glazed-cranberry-date-bars">Glazed Cranberry Date Bars</a></li>
+                
+                        <li><a href="/recipe/MPKJMC3T/quick-easy-delicious-monkey-bread">Quick Easy Delicious Monkey Bread</a></li>
+                
+                        <li><a href="/recipe/ZGPSCYK3/shrimp-oleans">Shrimp Oleans</a></li>
+                
+                        <li><a href="/recipe/Z4DZ8PZJ/goldie-cocktail">Goldie Cocktail</a></li>
+                
+                        <li><a href="/recipe/ZH6GK265/chicken-gloria">Chicken Gloria</a></li>
+                
+                        <li><a href="/recipe/TZN3ZL44/pear-bread">Pear Bread</a></li>
+                
+        </ul>
+</div>
+
+
+
+
+		
+	
+		
+	</div>
+
+	<div id="col1">
+		
+		<form action="/recipe/CYQ5RD2B/copycat-krispy-kreme-doughnuts/upload_photo" method="post" enctype="multipart/form-data" id="upload-photo"><div><input type="hidden" name="pb_token" value="1298881471_eea31e11b640c4ecf7d6e5bd4bc587b5" /></div>
+	<a name="upload-photo"></a>
+	<h3><label for="photo">Upload a Photo: </label></h3>
+	
+	<p>
+		<input type="file" id="photo" name="photo" value="Select Photo" /> 
+		<input type="submit" value="Submit" />
+	</p>
+	<div id="progress-container">
+		<div id="progress-filename"></div>
+		<div id="progress-bar">
+			<div id="progress-indicator"></div>
+		</div>
+	</div>
+</form>
+
+		
+		
+
+
+
+
+
+
+
+
+<div class="module ingredients">
+	<h2>
+<a href="/recipe/CYQ5RD2B/copycat-krispy-kreme-doughnuts/edit" title="Correct errors and add missing information." rel="nofollow" class="edit">edit</a>
+Ingredients</h2>
+	<table class="ingredients" width="100%">
+	    
+	    <tr rel="v:ingredient">
+	        <td class="quantity"><p>2 </p></td>
+	        <td class="food"><p>package&nbsp;(¼ ounce) <a class="foodista_interlink" id="foodista_interlink_X3KSXFQ4" href="http://www.foodista.com/food/X3KSXFQ4/yeast" title="Yeast"> yeas</a>t</p></td>
+	    </tr>
+	    
+	    <tr rel="v:ingredient">
+	        <td class="quantity"><p> &#x00BC;</p></td>
+	        <td class="food"><p>cup&nbsp;warm <a class="foodista_interlink" id="foodista_interlink_PXTR53Z5" href="http://www.foodista.com/food/PXTR53Z5/water" title="Water">water</a></p></td>
+	    </tr>
+	    
+	    <tr rel="v:ingredient">
+	        <td class="quantity"><p>1 &#x00BD;</p></td>
+	        <td class="food"><p>cups&nbsp;lukewarm <a class="foodista_interlink" id="foodista_interlink_K7473XN2" href="http://www.foodista.com/food/K7473XN2/skim-milk" title="Skim Milk">milk</a> (scalded, then cooled)</p></td>
+	    </tr>
+	    
+	    <tr rel="v:ingredient">
+	        <td class="quantity"><p> &#x00BD;</p></td>
+	        <td class="food"><p>cup&nbsp;<a class="foodista_interlink" id="foodista_interlink_GHZ654L7" href="http://www.foodista.com/food/GHZ654L7/brown-sugar" title="Brown Sugar">sugar</a></p></td>
+	    </tr>
+	    
+	    <tr rel="v:ingredient">
+	        <td class="quantity"><p>1 </p></td>
+	        <td class="food"><p>teaspoon&nbsp;<a class="foodista_interlink" id="foodista_interlink_XBPNFKYS" href="http://www.foodista.com/food/XBPNFKYS/salt" title="Salt">salt</a></p></td>
+	    </tr>
+	    
+	    <tr rel="v:ingredient">
+	        <td class="quantity"><p>2 </p></td>
+	        <td class="food"><p>egga</p></td>
+	    </tr>
+	    
+	    <tr rel="v:ingredient">
+	        <td class="quantity"><p> &#x2153;</p></td>
+	        <td class="food"><p>cup&nbsp;<a class="foodista_interlink" id="foodista_interlink_X8GYSC6G" href="http://www.foodista.com/food/X8GYSC6G/shortening" title="Shortening">shortening</a> (I used <a class="foodista_interlink" id="foodista_interlink_JWK77VQF" href="http://www.foodista.com/food/JWK77VQF/butter" title="Butter">Butter</a>)</p></td>
+	    </tr>
+	    
+	    <tr rel="v:ingredient">
+	        <td class="quantity"><p>5 </p></td>
+	        <td class="food"><p>cups&nbsp;<a class="foodista_interlink" id="foodista_interlink_W7LCJR7C" href="http://www.foodista.com/food/W7LCJR7C/all-purpose-flour" title="All-Purpose Flour">all-purpose flour</a></p></td>
+	    </tr>
+	    
+	    <tr rel="v:ingredient">
+	        <td class="quantity"><p></p></td>
+	        <td class="food"><p><a class="foodista_interlink" id="foodista_interlink_KLDGDS5L" href="http://www.foodista.com/food/KLDGDS5L/canola-oil" title="Canola Oil">canola oil</a></p></td>
+	    </tr>
+	    
+	    <tr rel="v:ingredient">
+	        <td class="quantity"><p></p></td>
+	        <td class="food"><p><a class="foodista_interlink" id="foodista_interlink_6VYG5JVJ" href="http://www.foodista.com/recipe/6VYG5JVJ/creamy-glaze" title="Creamy Glaze">Creamy Glaze</a>:</p></td>
+	    </tr>
+	    
+	    <tr rel="v:ingredient">
+	        <td class="quantity"><p> &#x2153;</p></td>
+	        <td class="food"><p>cup&nbsp;<a class="foodista_interlink" id="foodista_interlink_JWK77VQF" href="http://www.foodista.com/food/JWK77VQF/butter" title="Butter">butter</a></p></td>
+	    </tr>
+	    
+	    <tr rel="v:ingredient">
+	        <td class="quantity"><p>2 </p></td>
+	        <td class="food"><p>cups&nbsp;<a class="foodista_interlink" id="foodista_interlink_QZYNNXBY" href="http://www.foodista.com/food/QZYNNXBY/powdered-sugar" title="Powdered Sugar">powdered sugar</a></p></td>
+	    </tr>
+	    
+	    <tr rel="v:ingredient">
+	        <td class="quantity"><p>1 &#x00BD;</p></td>
+	        <td class="food"><p>teaspoons&nbsp;<a class="foodista_interlink" id="foodista_interlink_SCWTQ5DZ" href="http://www.foodista.com/food/SCWTQ5DZ/vanilla" title="Vanilla">vanilla</a></p></td>
+	    </tr>
+	    
+	    <tr rel="v:ingredient">
+	        <td class="quantity"><p>4 </p></td>
+	        <td class="food"><p>tablespoons&nbsp;hot <a class="foodista_interlink" id="foodista_interlink_PXTR53Z5" href="http://www.foodista.com/food/PXTR53Z5/water" title="Water">water</a></p></td>
+	    </tr>
+	    
+	</table>
+</div>
+
+
+
+
+
+
+
+<h2>
+<a href="/recipe/CYQ5RD2B/copycat-krispy-kreme-doughnuts/edit" title="Correct errors and add missing information." rel="nofollow" class="edit">edit</a>
+Preparation</h2>
+<div class="module">
+	<table class="steps" width="100%" property="v:instructions">
+	    
+	        <tr>
+	            <td class="steps-col1"><p><strong>Step&nbsp;1</strong></p></td>
+	            <td class="steps-col2"><p><a class="foodista_interlink" id="foodista_interlink_PXKXVQTM" href="http://www.foodista.com/technique/PXKXVQTM/dissolving" title="Dissolving">Dissolve</a> <a class="foodista_interlink" id="foodista_interlink_HF7TLMS7" href="http://www.foodista.com/technique/HF7TLMS7/leavening" title="Leavening">yeast</a> in <a class="foodista_interlink" id="foodista_interlink_FVYNJCCW" href="http://www.foodista.com/technique/FVYNJCCW/warming" title="Warming">warm</a> water in 2 1/2-quart bowl. Add milk, sugar, s<a class="foodista_interlink" id="foodista_interlink_DPSVTKVY" href="http://www.foodista.com/technique/DPSVTKVY/salting" title="Salting">alt,</a> eggs, shortening and 2 cups flour. B<a class="foodista_interlink" id="foodista_interlink_3CYMY2D7" href="http://www.foodista.com/technique/3CYMY2D7/beating" title="Beating">eat </a>on low for 30 seconds, scraping bowl constantly. B<a class="foodista_interlink" id="foodista_interlink_3CYMY2D7" href="http://www.foodista.com/technique/3CYMY2D7/beating" title="Beating">eat </a>on medium speed for 2 minutes, scraping bowl occasionally. S<a class="foodista_interlink" id="foodista_interlink_DRM2WPZ4" href="http://www.foodista.com/technique/DRM2WPZ4/stirring" title="Stirring">tir </a>in remaining flour until smooth. Cover and let rise until double, 50-60 minutes.</p></td>
+	        </tr>
+	    
+	        <tr>
+	            <td class="steps-col1"><p><strong>Step&nbsp;2</strong></p></td>
+	            <td class="steps-col2"><p>For the Creamy <a class="foodista_interlink" id="foodista_interlink_3BL7DPJ8" href="http://www.foodista.com/technique/3BL7DPJ8/glaze" title="Glaze">Glaze</a>: <a class="foodista_interlink" id="foodista_interlink_XZFHRHHF" href="http://www.foodista.com/technique/XZFHRHHF/heating" title="Heating">Heat</a> butter until <a class="foodista_interlink" id="foodista_interlink_64W3NS5R" href="http://www.foodista.com/technique/64W3NS5R/melting" title="Melting">melted</a>. Remove from <a class="foodista_interlink" id="foodista_interlink_XZFHRHHF" href="http://www.foodista.com/technique/XZFHRHHF/heating" title="Heating">heat</a>. <a class="foodista_interlink" id="foodista_interlink_DRM2WPZ4" href="http://www.foodista.com/technique/DRM2WPZ4/stirring" title="Stirring">Stir</a> in powdered sugar and vanilla until smooth. <a class="foodista_interlink" id="foodista_interlink_DRM2WPZ4" href="http://www.foodista.com/technique/DRM2WPZ4/stirring" title="Stirring">Stir</a> in water, 1 tablespoon at a time, until desired consistency.</p></td>
+	        </tr>
+	    
+	        <tr>
+	            <td class="steps-col1"><p><strong>Step&nbsp;3</strong></p></td>
+	            <td class="steps-col2"><p>When the dough has risen, <a class="foodista_interlink" id="foodista_interlink_B52FHCF2" href="http://www.foodista.com/technique/B52FHCF2/turning" title="Turning">turn</a> it onto a floured surface; <a class="foodista_interlink" id="foodista_interlink_LTNN8R88" href="http://www.foodista.com/technique/LTNN8R88/rolling" title="Rolling">roll</a> around lightly to <a class="foodista_interlink" id="foodista_interlink_6BTCX64M" href="http://www.foodista.com/technique/6BTCX64M/coating" title="Coating">coat</a> with flour. Gently <a class="foodista_interlink" id="foodista_interlink_LTNN8R88" href="http://www.foodista.com/technique/LTNN8R88/rolling" title="Rolling">roll</a> dough 1/2-inch thick with floured r<a class="foodista_interlink" id="foodista_interlink_LTNN8R88" href="http://www.foodista.com/technique/LTNN8R88/rolling" title="Rolling">olling </a>pin. C<a class="foodista_interlink" id="foodista_interlink_XZBDDD5G" href="http://www.foodista.com/technique/XZBDDD5G/cutting" title="Cutting">ut </a>with floured doughnut cutter.</p></td>
+	        </tr>
+	    
+	        <tr>
+	            <td class="steps-col1"><p><strong>Step&nbsp;4</strong></p></td>
+	            <td class="steps-col2"><p><a class="foodista_interlink" id="foodista_interlink_XZFHRHHF" href="http://www.foodista.com/technique/XZFHRHHF/heating" title="Heating">Heat</a> vegetable oil in deep fryer to 350°. Slide doughnuts into hot oil with wide spatula. T<a class="foodista_interlink" id="foodista_interlink_B52FHCF2" href="http://www.foodista.com/technique/B52FHCF2/turning" title="Turning">urn </a>doughnuts as they rise to the surface. F<a class="foodista_interlink" id="foodista_interlink_NZ2LK8CC" href="http://www.foodista.com/technique/NZ2LK8CC/frying" title="Frying">ry </a>until golden b<a class="foodista_interlink" id="foodista_interlink_D434P8MH" href="http://www.foodista.com/technique/D434P8MH/browning" title="Browning">rown,</a> about 1 minute on each side.</p></td>
+	        </tr>
+	    
+	        <tr>
+	            <td class="steps-col1"><p><strong>Step&nbsp;5</strong></p></td>
+	            <td class="steps-col2"><p>Remove carefully from oil (do not <a class="foodista_interlink" id="foodista_interlink_45BJSPGG" href="http://www.foodista.com/technique/45BJSPGG/pricking" title="Pricking">prick</a> surface); drain. Dip the doughnuts into creamy <a class="foodista_interlink" id="foodista_interlink_3BL7DPJ8" href="http://www.foodista.com/technique/3BL7DPJ8/glaze" title="Glaze">glaze</a> and set on rack to <a class="foodista_interlink" id="foodista_interlink_GZFHJC5K" href="http://www.foodista.com/technique/GZFHJC5K/cooling" title="Cooling">cool</a>. Drizzle with chocolate and add sprinkles if desired.</p></td>
+	        </tr>
+	    
+	        <tr>
+	            <td class="steps-col1"><p><strong>Step&nbsp;6</strong></p></td>
+	            <td class="steps-col2"><p>CHOCOLATE <a class="foodista_interlink" id="foodista_interlink_RP8LCDPZ" href="http://www.foodista.com/technique/RP8LCDPZ/icing" title="Icing">FROSTING</a>:
+1/3 cup butter 
+2 cups powdered sugar 
+1-1/2 tsp. vanilla 
+4–6 tbl. hot water
+4 ounces milk chocolate chips or semisweet chocolate chips
+
+CH<a class="foodista_interlink" id="foodista_interlink_RP8LCDPZ" href="http://www.foodista.com/technique/RP8LCDPZ/icing" title="Icing">OCOLATE </a>FR<a class="foodista_interlink" id="foodista_interlink_XZFHRHHF" href="http://www.foodista.com/technique/XZFHRHHF/heating" title="Heating">OSTI</a>NG: Heat butter and chocolate o<a class="foodista_interlink" id="foodista_interlink_XZFHRHHF" href="http://www.foodista.com/technique/XZFHRHHF/heating" title="Heating">ver </a>low heat until choco<a class="foodista_interlink" id="foodista_interlink_64W3NS5R" href="http://www.foodista.com/technique/64W3NS5R/melting" title="Melting">late i</a>s melted. Remo<a class="foodista_interlink" id="foodista_interlink_XZFHRHHF" href="http://www.foodista.com/technique/XZFHRHHF/heating" title="Heating">ve f</a>ro<a class="foodista_interlink" id="foodista_interlink_DRM2WPZ4" href="http://www.foodista.com/technique/DRM2WPZ4/stirring" title="Stirring">m he</a>at. Stir in powdered sugar and vanilla until <a class="foodista_interlink" id="foodista_interlink_DRM2WPZ4" href="http://www.foodista.com/technique/DRM2WPZ4/stirring" title="Stirring">smoo</a>th. Stir in water 1 tablespoon at a time, until desired consistency. 
+</p></td>
+	        </tr>
+	    
+	        <tr>
+	            <td class="steps-col1"><p><strong>Step&nbsp;7</strong></p></td>
+	            <td class="steps-col2"><p>CREAMY <a class="foodista_interlink" id="foodista_interlink_3BL7DPJ8" href="http://www.foodista.com/technique/3BL7DPJ8/glaze" title="Glaze">GLAZE</a>: 
+1/3 cup butter 
+2 cups powdered sugar 
+1-1/2 tsp. vanilla 
+4–6 tbl. hot water 
+<a class="foodista_interlink" id="foodista_interlink_3BL7DPJ8" href="http://www.foodista.com/technique/3BL7DPJ8/glaze" title="Glaze">
+CRE</a>AM<a class="foodista_interlink" id="foodista_interlink_XZFHRHHF" href="http://www.foodista.com/technique/XZFHRHHF/heating" title="Heating">Y GL</a>AZE:
+Heat but<a class="foodista_interlink" id="foodista_interlink_64W3NS5R" href="http://www.foodista.com/technique/64W3NS5R/melting" title="Melting">ter un</a>til melted. Re<a class="foodista_interlink" id="foodista_interlink_XZFHRHHF" href="http://www.foodista.com/technique/XZFHRHHF/heating" title="Heating">move</a> f<a class="foodista_interlink" id="foodista_interlink_DRM2WPZ4" href="http://www.foodista.com/technique/DRM2WPZ4/stirring" title="Stirring">rom </a>heat. Stir in powdered sugar and vanilla unti<a class="foodista_interlink" id="foodista_interlink_DRM2WPZ4" href="http://www.foodista.com/technique/DRM2WPZ4/stirring" title="Stirring">l sm</a>ooth. Stir in water, 1 tablespoon at a time, until desired consistency.</p></td>
+	        </tr>
+	    
+	</table>
+</div>
+
+
+
+
+<h2>
+<a href="/recipe/CYQ5RD2B/copycat-krispy-kreme-doughnuts/edit" title="Correct errors and add missing information." rel="nofollow" class="edit">edit</a>
+Tools</h2>
+<div class="module tools">
+
+	<ul>
+	    
+	    
+	    <li><p>
+	    <a class="foodista_interlink" id="foodista_interlink_J3NYQM7P" href="http://www.foodista.com/tool/J3NYQM7P/spatula" title="Spatula">Spatula</a></p>
+	    </li>
+	    
+	    <li><p>
+	    <a class="foodista_interlink" id="foodista_interlink_FHDM35BN" href="http://www.foodista.com/tool/FHDM35BN/deep-fryer" title="Deep Fryer">Deep fryer</a></p>
+	    </li>
+	    
+	    <li><p>
+	    <a class="foodista_interlink" id="foodista_interlink_YPYC33QC" href="http://www.foodista.com/tool/YPYC33QC/rolling-pin" title="Rolling Pin">Rolling pin</a></p>
+	    </li>
+	    
+	</ul>
+</div>
+
+
+
+
+
+<h2>Related Recipes</h2>
+<ul class="module related-recipes-detailed">
+
+	<li>
+		<img src="http://cloud.foodista.com/content/images/GNN4QNWW_sm" />
+		<div>
+			<a href="/recipe/GNN4QNWW/beehive-cake">Beehive Cake</a><br />
+			<span>Active Dry Yeast, Almond, Butter, Cornstarch, Egg</span>
+		</div>
+	</li>
+
+	<li>
+		<img src="http://cloud.foodista.com/content/images/PCF458VF_sm" />
+		<div>
+			<a href="/recipe/PCF458VF/hungarian-poppy-seed-bread">Hungarian Poppy - Seed Bread</a><br />
+			<span>Active Dry Yeast, All Purpose Flour, Butter, Cinnamon, Egg</span>
+		</div>
+	</li>
+
+	<li>
+		<img src="http://cloud.foodista.com/content/images/6R2QCTLT_sm" />
+		<div>
+			<a href="/recipe/6R2QCTLT/fresh-seasonal-fruit-tart">Fresh Seasonal Fruit Tart</a><br />
+			<span>Blackberry, Blueberry, Cornstarch, Egg, Egg Yolk</span>
+		</div>
+	</li>
+
+	<li>
+		<img src="http://cloud.foodista.com/content/images/G3M5R5QH_sm" />
+		<div>
+			<a href="/recipe/G3M5R5QH/herb-cheddar-bread">Herb-Cheddar Bread</a><br />
+			<span>Active Dry Yeast, Bread, Butter, Cayenne Pepper, Cheddar Cheese</span>
+		</div>
+	</li>
+
+	<li>
+		<img src="http://cloud.foodista.com/content/images/LYVNDNWV_sm" />
+		<div>
+			<a href="/recipe/LYVNDNWV/praline-pecan-roll">Praline-Pecan Roll</a><br />
+			<span>All Purpose Flour, Caramel, Cream Of Tartar, Egg White, Egg Yolk</span>
+		</div>
+	</li>
+
+</ul>
+
+
+
+
+
+
+<h2>Comments</h2>
+<div class="module comments">
+	
+	<h3>Leave a Comment</h3>
+	
+	<div>You need to <a href="/signin?next=/recipe/CYQ5RD2B/copycat-krispy-kreme-doughnuts">sign in</a> or <a href="/signup?next=/recipe/CYQ5RD2B/copycat-krispy-kreme-doughnuts">sign up</a> to leave a comment.</div>
+	
+</div>
+
+
+
+
+
+
+		
+	</div>
+	
+</div>
+
+			
+			
+			
+		
+	
+	</div>
+
+	
+
+<div id="footer">
+	<hr />
+	<div class="press">As Seen in... <a href="http://www.time.com/time/magazine/article/0,9171,1929212,00.html"><img src="http://cf.foodista.com/static/images/logo_time.png" width="63" height="20" alt="Foodista in Time Magazine" title="Foodista in Time Magazine" /></a> <a href="http://www.nytimes.com/2009/09/23/dining/23recipes.html"><img src="http://cf.foodista.com/static/images/logo_nyt.png" width="116" height="20" alt="Foodista in the New York Times" title="Foodista in the New York Times" /></a> <a href="http://www.techcrunch.com/2008/12/17/foodista-tries-to-prove-that-more-cooks-in-the-kitchen-will-produce-a-better-recipe/"><img src="http://cf.foodista.com/static/images/logo_techcrunch.png" width="101" height="20" alt="Foodista in TechCrunch" title="Foodista in TechCrunch" /></a></div>
+	<div class="menus">
+		<ul>
+			<li class="heading"><a href="/static/about">About</a></li>
+			<li><a href="/static/press">Press</a></li>
+			<li><a href="/static/legal">Legal</a></li>
+			<li><a href="/static/jobs">Jobs</a></li>
+			<li><a href="/static/about">Team</a></li>
+		</ul>
+		<ul>
+			<li class="heading"><a href="http://www.foodista.com/blog/">Blog</a></li>
+			<li><a href="/bloggertools/widgets">Widgets</a></li>
+			<li><a href="/fbod">Food Blog of the Day</a></li>
+			<li><a href="/fcod">Chef of the Day</a></li>
+			<li><a href="/wbod">Wine Blog of the Day</a></li>
+		</ul>
+		<ul>
+			<li class="heading"><a href="/static/events">Events</a></li>
+			<li><a href="/blogbook">Cookbook Contest</a></li>
+			<li><a href="http://www.foodista.com/foodsnap/">Foodsnap</a></li>
+			<li><a href="http://www.foodista.com/ifbc">IFBC</a></li>
+			<li><a href="http://www.foodista.com/nightschool/">Night School</a></li>
+			<li><a href="http://www.foodista.com/filmfest">Food Film Festival</a></li>
+		</ul>
+		<ul>
+			<li class="heading"><a href="/contact">Contact Us</a></li>
+			<li>&nbsp;</li>
+			<li class="heading"><a href="/static/help">Help</a></li>
+			<li><a href="/static/help">FAQ</a></li>
+			<li><a href="/static/writing_guide">Writing Guide</a></li>
+		</ul>
+		<ul>
+			<li class="heading"><a href="/recipe/new">Get Involved</a></li>
+			<li><a href="/recipe/new">Add a Recipe</a></li>
+			<li><a href="/food/new">Add a Food</a></li>
+			<li><a href="/tool/new">Add a Tool</a></li>
+			<li><a href="/technique/new">Add a Technique</a></li>
+			<li><a href="/question/new">Ask a Question</a></li>
+		</ul>
+		<ul class="last">
+			<li><a href="http://www.facebook.com/Foodista"><img src="http://cf.foodista.com/static/images/icon_facebook.png" width="16" height="16" /></a> <a href="http://www.facebook.com/Foodista">Fan on Facebook</a></li>
+			<li><a href="http://twitter.com/foodista"><img src="http://cf.foodista.com/static/images/icon_twitter.png" width="16" height="16" /></a> <a href="http://twitter.com/foodista">Follow on Twitter</a></li>
+			<li><a href="http://www.stumbleupon.com/submit?url=http%3A//www.foodista.com/&title=Foodista.com,%20the%20Cooking%20Encyclopedia%20Everyone%20Can%20Edit"><img src="http://cf.foodista.com/static/images/icon_stumbleupon.png" width="16" height="16" /></a> <a href="http://www.stumbleupon.com/submit?url=http%3A//www.foodista.com/&title=Foodista.com,%20the%20Cooking%20Encyclopedia%20Everyone%20Can%20Edit">Stumble us</a></li>
+		</ul>
+	</div>
+	<div class="browse-links">
+		<p>
+			<strong>Browse:</strong>
+			<a href="/browse/foods">Foods</a>
+			<a href="/browse/recipes">Recipes</a>
+			<a href="/browse/tools">Tools</a>
+			<a href="/browse/techniques">Techniques</a>
+			<a href="/browse/questions">Questions</a>
+			<a href="/browse/profiles">Profiles</a>
+			<a href="/browse/periodicals">Periodicals</a>
+			<a href="/browse/products">Products</a>
+			<a href="/browse/blogs">Blogs</a>
+			<a href="/browse/posts">Posts</a>
+			<a href="/browse/categories">Categories</a>
+		</p>
+	</div>
+	<div id="copyright">
+		<a href="http://www.iacp.com"><img src="http://cf.foodista.com/static/images/iacp_logo.png" class="iacp-logo" /></a>
+		<cite>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a>.</cite> "Foodista" is a registered trademark of Foodista, Inc.<br /> Check out <a href="http://www.zeer.com/gluten-free-foods.html">Zeer Select</a> to find <a href="http://www.zeer.com/gluten-free-foods.html">gluten free foods</a>.
+			
+	</div>
+	
+</div>
+
+
+	
+	<div id="connect-social-dialog" style="display:none">
+		<h2>Connect accounts to share your Foodista activity!</h2>
+		<div class="connect-social-facebook">
+				<fb:login-button size="medium" perms="email,user_birthday,publish_stream,read_stream,user_location,user_status,user_website,offline_access" v="2" onlogin="window.location='/connect?c=fb'"><fb:intl>Connect with Facebook</fb:intl></fb:login-button>
+		</div>
+		<div class="connect-social-twitter">
+				<p><a href="/connect?c=tw" class="connect-twitter">Connect with Twitter</a></p>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-5356061-1");
+pageTracker._setDomainName("www.foodista.com");
+ 	 
+pageTracker._trackEvent("sneetches","SPREAD");
+
+pageTracker._trackPageview();
+</script>
+ </body>
+</html>
+
+
+
+<!-- 0.3729 0 20110221183101 ip-10-250-151-15 -->
+<!-- BEGIN RECIPE CONTEXT = 0.1065 -->
+<!-- END RECIPE CONTEXT = 0.1485 -->

@@ -1,0 +1,1142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hr-HR" lang="hr-HR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="hr" />
+<meta http-equiv="pragma" content="no-cache" />
+<title>Net.hr</title>
+<meta name="description" content="Net.hr - hrvatski portal za vijesti, sport, zabavu, lifestyle i informacije o događanjima" />
+<meta name="keywords" content="Net.hr, portal, vijesti, sport, film, televizija, tv, glazba, kultura, znanost, auti, seks, sex, veze, moda, ljepota, bebe, djeca, tehnologija, tehnoklik, kuhinja, recepti, fotografija, crna, kronika, zabava, webcafe, infocentar, djevojka, vic, dečko, dana, zagreb, rijeka, split, osijek, dubrovnik, gamebox, trosjed, skarabej, writesomething" />
+<link rel="stylesheet" type="text/css" href="http://www.net.hr/css/net.css?cb=20120217" />
+<!--[if IE]><link rel="stylesheet" type="text/css" href="http://www.net.hr/css/ie.css" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" type="text/css" href="http://www.net.hr/css/ie6.css" /><![endif]-->	
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="http://www.net.hr/css/ie8.css" /><![endif]-->
+<link type="text/css" rel="stylesheet" href="http://www.net.hr/css/jcarousel.css" />
+<link type="text/css" rel="stylesheet" href="http://file.net.hr/shared/js/shadowbox/shadowbox.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://file.net.hr/shared/js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="http://file.net.hr/shared/js/jquery.jcarousel.lite.js"></script>
+<script type="text/javascript" src="http://file.net.hr/shared/js/jquery.cycle.js"></script>
+<script type="text/javascript" src="http://file.net.hr/shared/js/flash-fix.js"></script>
+<script type="text/javascript" src="http://file.net.hr/shared/js/swfobject.js"></script>
+<script type="text/javascript" src="http://file.net.hr/shared/js/shadowbox/shadowbox.js"></script>
+<script type="text/javascript" src="http://www.net.hr/js/functions.js?cb=20111107"></script>
+<script type="text/javascript" charset="utf-8">
+var isMSIE=navigator.appVersion.indexOf('MSIE')!=-1;
+function addtofavorite(){if(!isMSIE){window.sidebar.addPanel(document.title,location.href,'');}else{window.external.AddFavorite(location.href,document.title);}}
+</script>
+<script type="text/javascript">
+var galleryPath = '';
+Shadowbox.init( {
+	animate : false,
+	animateFade : false,
+	animSequence : 'sync', // 'sync', 'wh', 'hw'
+	continuous : false,
+	enableKeys : true,
+	fadeDuration : 0.00,
+	handleOversize : 'resize', // 'resize', 'none', 'drag'
+	modal : true,
+	overlayColor : '#000',
+	overlayOpacity : 0.85,
+	showOverlay : true,
+	viewportPadding : 20
+	}
+);
+function new_parameters() {
+var d=document;
+var newPath = galleryPath.split("?url=")[1];
+var href=new String(newPath);
+var ref;
+if (d.referrer) { ref = new String(d.referrer); } else { ref = ""; }
+var t=typeof Error;
+if(t!='undefined') {
+eval("try { if (typeof(top.document.referrer)=='string') { ref = top.document.referrer } } catch(gemius_ex) { }")
+}
+var url='&tz='+(new Date()).getTimezoneOffset()+'&href='+escape(href.substring(0,299))+'&ref='+escape(ref.substring(0,299));
+if (screen) {
+var s=screen;
+if (s.width) url+='&screen='+s.width+'x'+s.height;
+if (s.colorDepth) url+='&col='+s.colorDepth;
+}
+return url;
+}
+function gemiusPageView() {
+var tmpUrl = 'http://hr.hit.gemius.pl/_'+(new Date()).getTime()+ '/rexdot.gif?l=11&id=';
+tmpUrl += new String( 'd2Lr24LIrE.rf8yTtLsfjcWonM91h8xbpjrxdcxr3AP.s7' );
+tmpUrl += new_parameters();
+//tmpUrl += '&cb=' + (65536 * Math.random());
+var tmpImg = new Image();
+tmpImg.src = tmpUrl;
+}
+</script>
+<!--[if gte IE 9]>
+<SCRIPT type="text/javascript" charset="utf-8" src="http://file.net.hr/shared/ie9/jquery.jfeed.pack.js"></SCRIPT>
+<SCRIPT type="text/javascript" charset="utf-8" src="http://file.net.hr/shared/ie9/ie9features.js"></SCRIPT>
+<LINK rel="stylesheet" type="text/css" href="http://file.net.hr/shared/ie9/ie9features.css" charset="utf-8" media="screen, projection">
+<![endif]-->
+<meta name="application-name" content="Net.hr" />
+<meta name="msapplication-tooltip" content="Net.hr - hrvatski portal za vijesti, sport, zabavu, lifestyle i informacije o događanjima" />
+<meta name="msapplication-starturl" content="http://www.net.hr/" />
+<meta name="msapplication-task" content="name=Danas.hr;action-uri=http://danas.net.hr/;icon-uri=http://danas.net.hr/favicon.ico" />
+<meta name="msapplication-task" content="name=Webcafe;action-uri=http://webcafe.net.hr/;icon-uri=http://webcafe.net.hr/favicon.ico" />
+<meta name="msapplication-task" content="name=Sportski.net;action-uri=http://sportski.net.hr/;icon-uri=http://sportski.net.hr/favicon.ico" />
+<meta name="msapplication-task" content="name=Freemail;action-uri=http://freemail.net.hr/;icon-uri=http://i0.cz/jeden-ucet-nethr/common/favicon-nethr.ico" />
+<meta name="msapplication-task" content="name=Trosjed;action-uri=http://trosjed.net.hr/;icon-uri=http://trosjed.net.hr/images/favicon.ico" />
+<link type="application/rss+xml" rel="alternate" title="Net.hr naslovnica" href="http://www.net.hr/rss/feeds/naslovnica/index.xml" />
+<link type="application/rss+xml" rel="alternate" title="Danas.hr - portal za vijesti" href="http://danas.net.hr/rss/index.xml" />
+<link type="application/rss+xml" rel="alternate" title="Webcafe.hr - portal za zabavu" href="http://webcafe.net.hr/rss/index.xml" />
+<link type="application/rss+xml" rel="alternate" title="Sportski.net - portal za sport" href="http://sportski.net.hr/rss/index.xml" />
+<link type="application/rss+xml" rel="alternate" title="Magazin.hr - lifestyle portal" href="http://www.net.hr/rss/feeds/magazin/index.xml" />
+<link type="application/rss+xml" rel="alternate" title="Hot.hr - poznati, film, glazba..." href="http://www.net.hr/rss/feeds/hot/index.xml" />
+<link type="application/rss+xml" rel="alternate" title="Net.hr infocentar" href="http://www.net.hr/rss/feeds/infocentar/index.xml" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<script type="text/javascript">
+var pp_gemius_identifier = new String( '1wA66GMdJydLolbYjH2yzqeEnJ5Ih8wFwVXc9v5PxZn.g7' );
+</script>
+<script type="text/javascript" src="http://www.net.hr/js/xgemius.js"></script>
+<script type="text/javascript">InitializeTimer();</script> 
+<noscript><meta http-equiv="refresh" content="300" /></noscript>
+</head>
+<body>
+<div id="page-outer-header" class="clearfix">
+<div class="inner">
+<div id="first-nav">
+<ul class="clearfix">
+<li><strong><a href="http://www.net.hr/" target="_parent">net.hr</a></strong></li>
+<li><a href="http://danas.net.hr/" target="_parent">danas.hr</a></li>
+<li><a href="http://webcafe.net.hr/" target="_parent">webcafe.hr</a></li>
+<li><a href="http://sportski.net.hr/" target="_parent">sportski.net</a></li>
+<li><a href="http://magazin.net.hr/" target="_parent">magazin.hr</a></li>
+<li><a href="http://hot.net.hr/" target="_parent">hot.hr</a></li>
+<li><a href="http://www.net.hr/infocentar/" target="_parent">infocentar</a></li>
+<li><a href="http://forum.net.hr/forums/" target="_parent">forumi</a></li>
+<li><a href="http://trosjed.net.hr/" target="_parent">trosjed</a></li>
+<li><a href="http://freemail.net.hr/" target="_parent">freemail</a></li>
+<li><a href="http://temedileme.magazin.hr/">teme&amp;dileme</a></li>
+<li><a href="http://chat.net.hr/" target="_parent">chat</a></li>
+<li><a href="http://webcafe.net.hr/webigrice/" target="_parent">igrice</a></li>
+<li><a href="http://www.net.hr/a-z/" target="_parent">net a-ž</a></li>
+<li class="register"><a href="http://prijava.net.hr/" title="Klikni i otvori svoju besplatnu freemail adresu !!" target="_parent">registriraj se</a></li>
+</ul>
+</div><!-- end first-nav -->
+</div><!-- end inner -->
+</div><!-- end page-outer-header -->
+<div id="page-container">
+<div id="page-header"> 
+<h1><a href="http://www.net.hr/" title="www.net.hr">www.net.hr</a></h1>
+<div id="search">
+<div class="inner-search">
+<form id="search_MIX_form" method="get" action="http://search.net.hr/">
+<ul>
+<li class="google"><a href="http://www.google.hr">Powered by Google</a></li>
+<li><input name="q" class="q" type="text" /></li>
+<li class="submit"><input value="" class="t" type="submit" onclick="this.form.target='_blank';return true;" /></li>
+</ul>
+</form>
+</div>
+</div><!-- end search -->
+</div><!-- end page-header -->
+<div id="content-container">
+<div class="inner-container clearfix">
+<div id="banner-728-area" class="home">
+<div class="inner clearfix"> 
+<div id="weather">
+<div id="Zagreb" class="w-2">
+<h3>Zagreb</h3>
+<ul>
+<li class="min"><em>min</em>-2C</li>
+<li class="max"><em>max</em>11C</li>
+</ul>
+</div><div id="Osijek" class="w-3" style="display:none;">
+<h3>Osijek</h3>
+<ul>
+<li class="min"><em>min</em>2C</li>
+<li class="max"><em>max</em>10C</li>
+</ul>
+</div><div id="Gospić" class="w-2" style="display:none;">
+<h3>Gospić</h3>
+<ul>
+<li class="min"><em>min</em>-7C</li>
+<li class="max"><em>max</em>7C</li>
+</ul>
+</div><div id="Pula" class="w-1" style="display:none;">
+<h3>Pula</h3>
+<ul>
+<li class="min"><em>min</em>3C</li>
+<li class="max"><em>max</em>12C</li>
+</ul>
+</div><div id="Rijeka" class="w-2" style="display:none;">
+<h3>Rijeka</h3>
+<ul>
+<li class="min"><em>min</em>2C</li>
+<li class="max"><em>max</em>12C</li>
+</ul>
+</div><div id="Zadar" class="w-1" style="display:none;">
+<h3>Zadar</h3>
+<ul>
+<li class="min"><em>min</em>3C</li>
+<li class="max"><em>max</em>12C</li>
+</ul>
+</div><div id="Split" class="w-2" style="display:none;">
+<h3>Split</h3>
+<ul>
+<li class="min"><em>min</em>4C</li>
+<li class="max"><em>max</em>14C</li>
+</ul>
+</div><div id="Dubrovnik" class="w-3" style="display:none;">
+<h3>Dubrovnik</h3>
+<ul>
+<li class="min"><em>min</em>7C</li>
+<li class="max"><em>max</em>15C</li>
+</ul>
+</div>
+</div><!-- end weather -->
+<script type="text/javascript">
+$("#weather").cycle({cleartype:1,timeout:5000,speed:900,fx:'fade'});
+</script><div class="box-728">
+<script type="text/javascript" >
+nethr_src = 'http://ad.net.hr/js.ng/site=net.hr&adsize=728x90&PagePos=1&channel=naslovnica&subsubchannel=naslovnica';
+now = new Date();
+var ran = "" + now.getTime();
+if(typeof(rndTile) == "undefined"){
+var rndTile=Math.floor(Math.random()*100000000);
+}
+document.write ('<scr'+'ipt type="text/javascript" sr'+'c="'+nethr_src+'&ran='+ran+'&tile='+rndTile+'"></scr'+'ipt>');
+</script><noscript><a href="http://ad.net.hr/click.ng/site=net.hr&adsize=728x90&PagePos=1&channel=naslovnica&subsubchannel=naslovnica"><img border="0" src="http://ad.net.hr/image.ng/site=net.hr&adsize=728x90&PagePos=1&channel=naslovnica&subsubchannel=naslovnica" alt="" /></a></noscript>
+</div><div class="ticker">
+<a href="http://danas.net.hr/specijal/brodogradilista">Brodogradilišta</a><a href="http://danas.net.hr/specijal/sinisa-hajdas-doncic">Siniša Hajdaš Dončić</a><a href="http://danas.net.hr/specijal/slavko-linic">Slavko Linić</a><a href="http://sportski.net.hr/specijal/dubravko-pavlicic">Dubravko Pavličić</a><a href="http://magazin.net.hr/specijal/uskrs">Uskrs</a><a href="http://danas.net.hr/hrvatska/proljetni-praznici">Proljetni praznici</a><a href="http://sportski.net.hr/nogomet/hnl/">HNL</a>
+</div><!-- END ticker -->
+</div>
+</div>
+<div id="sidebar-left">
+<div class="inner-side-cont">
+<ul id="main-nav">
+<li class="sel"><a href="/">naslovnica</a></li><li><a href="http://danas.net.hr/">vijesti</a></li><li><a href="http://sportski.net.hr/">sport</a></li><li><a href="http://hot.net.hr/">film/glazba/tv</a></li><li><a href="http://hot.net.hr/zvijezde/">zvijezde</a></li><li><a href="http://danas.net.hr/crna-kronika/">crna kronika</a></li><li><a href="http://danas.net.hr/novac/">novac</a></li><li><a href="http://danas.net.hr/kultura/">kultura</a></li><li><a href="http://danas.net.hr/znanost/">znanost</a></li><li><a href="http://hot.net.hr/planet-x/">planet x</a></li><li><a href="/tehnoklik/">tehnoklik</a></li><li><a href="/auti/">auti</a></li><li><a href="http://magazin.net.hr/putovanja/">putovanja</a></li><li><a href="http://magazin.net.hr/dom-vrt/">dom&vrt</a></li><li><a href="http://magazin.net.hr/">moda i ljepota</a></li><li><a href="http://hot.net.hr/sexy/">sexy</a></li><li><a href="http://magazin.net.hr/brak-veze/">brak&veze</a></li><li><a href="http://magazin.net.hr/zdravlje/">zdravlje</a></li><li><a href="http://magazin.net.hr/roditeljstvo/">roditeljstvo</a></li><li><a href="http://magazin.net.hr/kuhinja/">kuhinja</a></li><li><a href="http://magazin.net.hr/ljubimci/">ljubimci</a></li><li><a href="http://danas.net.hr/drugi-mediji/">drugi mediji</a></li><li class="spc"><a href="/arhiva/">arhiva</a></li><div class="box"><script type="text/javascript" >
+nethr_src = 'http://ad.net.hr/js.ng/site=net.hr&adsize=132x175&PagePos=1&channel=naslovnica';
+now = new Date();
+var ran = "" + now.getTime();
+if(typeof(rndTile) == "undefined"){
+var rndTile=Math.floor(Math.random()*100000000);
+}
+document.write ('<scr'+'ipt type="text/javascript" sr'+'c="'+nethr_src+'&ran='+ran+'&tile='+rndTile+'"></scr'+'ipt>');
+</script><noscript><a href="http://ad.net.hr/click.ng/site=net.hr&adsize=132x175&PagePos=1&channel=naslovnica"><img border="0" src="http://ad.net.hr/image.ng/site=net.hr&adsize=132x175&PagePos=1&channel=naslovnica" alt="" /></a></noscript></div><li class="snl-lnk rss"><a href="/rss/">rss</a></li><li class="snl-lnk facebook"><a href="http://www.facebook.com/pages/Nethr/86874647886" title="Posjetite nas na Facebooku" target="_blank">facebook</a></li>
+<li class="snl-lnk twitter spc"><a href="https://twitter.com/Nethr/" title="Pratite nas na Twitteru" target="_blank">twitter</a></li><li><a href="http://webcafe.net.hr/">webcafe</a></li><li><a href="http://webcafe.net.hr/e-cestitke/">e-čestitke</a></li><li class="spc"><a href="/infocentar/">infocentar</a></li><li><a target="_blank" href="http://pogledaj.to/">pogledaj.to</a></li><li><a href="http://topshop.net.hr/">top shop</a></li><li><a href="http://oglasnik.net.hr/">oglasnik</a></li><li><a href="http://auti.net.hr/">autooglasnik</a></li><li><a href="http://nekretnine.net.hr/">nekretnine</a></li><li><a href="http://edukacija.net.hr/">edukacija</a></li>
+</ul><script type="text/javascript">
+<!--
+var BrowserDetect = {
+	init: function () {
+		this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
+		this.version = this.searchVersion(navigator.userAgent)
+			|| this.searchVersion(navigator.appVersion)
+			|| "an unknown version";
+		this.OS = this.searchString(this.dataOS) || "an unknown OS";
+	},
+	searchString: function (data) {
+		for (var i=0;i<data.length;i++)	{
+			var dataString = data[i].string;
+			var dataProp = data[i].prop;
+			this.versionSearchString = data[i].versionSearch || data[i].identity;
+			if (dataString) {
+				if (dataString.indexOf(data[i].subString) != -1)
+					return data[i].identity;
+			}
+			else if (dataProp)
+				return data[i].identity;
+		}
+	},
+	searchVersion: function (dataString) {
+		var index = dataString.indexOf(this.versionSearchString);
+		if (index == -1) return;
+		return parseFloat(dataString.substring(index+this.versionSearchString.length+1));
+	},
+	dataBrowser: [
+		{
+			string: navigator.userAgent,
+			subString: "Chrome",
+			identity: "Chrome"
+		},
+		{ 	string: navigator.userAgent,
+			subString: "OmniWeb",
+			versionSearch: "OmniWeb/",
+			identity: "OmniWeb"
+		},
+		{
+			string: navigator.vendor,
+			subString: "Apple",
+			identity: "Safari",
+			versionSearch: "Version"
+		},
+		{
+			prop: window.opera,
+			identity: "Opera"
+		},
+		{
+			string: navigator.vendor,
+			subString: "iCab",
+			identity: "iCab"
+		},
+		{
+			string: navigator.vendor,
+			subString: "KDE",
+			identity: "Konqueror"
+		},
+		{
+			string: navigator.userAgent,
+			subString: "Firefox",
+			identity: "Firefox"
+		},
+		{
+			string: navigator.vendor,
+			subString: "Gecko",
+			identity: "Camino",
+			versionSearch: "rv"
+		},
+		{		// for newer Netscapes (6+)
+			string: navigator.userAgent,
+			subString: "Netscape",
+			identity: "Netscape"
+		},
+		{
+			string: navigator.userAgent,
+			subString: "MSIE",
+			identity: "Internet Explorer",
+			versionSearch: "MSIE"
+		},
+		{
+			string: navigator.userAgent,
+			subString: "Gecko",
+			identity: "Mozilla",
+			versionSearch: "rv"
+		},
+		{ 		// for older Netscapes (4-)
+			string: navigator.userAgent,
+			subString: "Mozilla",
+			identity: "Netscape",
+			versionSearch: "Mozilla"
+		}
+	],
+	dataOS : [
+		{
+			string: navigator.platform,
+			subString: "Win",
+			identity: "Windows"
+		},
+		{
+			string: navigator.platform,
+			subString: "Mac",
+			identity: "Mac"
+		},
+		{
+			string: navigator.userAgent,
+			subString: "iPhone",
+			identity: "iPhone/iPod"
+	    },
+		{
+			string: navigator.platform,
+			subString: "Linux",
+			identity: "Linux"
+		}
+	]
+
+};
+BrowserDetect.init();
+
+// -->
+</script>
+<script type="text/javascript">
+if (BrowserDetect.browser == "Internet Explorer"){
+document.write('<a class="box snl-lnk home" href="javascript:history.go(0);" onClick="this.style.behavior=\'url(#default#homepage)\';this.setHomePage(\'http://www.net.hr\');">');
+document.write('Neka ovo bude vaša početna stranica</a>');
+}
+else if (BrowserDetect.browser == "Firefox" && BrowserDetect.OS == "Windows")	{
+document.write('<a class="box snl-lnk home" href="http://www.net.hr" title="net.hr">Odvucite ovo na <em>Home</em> ikonu kako bi net.hr postao vaša početna stranica</a>');
+}
+else if (BrowserDetect.browser == "Firefox" && BrowserDetect.OS == "Mac")	{
+document.write('<a class="box snl-lnk home" href="http://www.net.hr" title="net.hr">Odvucite ovo na <em>Home</em> ikonu kako bi net.hr postao vaša početna stranica</a>');
+}
+else if (BrowserDetect.browser == "Chrome" && BrowserDetect.OS == "Windows")	{
+document.write('<a class="box snl-lnk home" href="#" onClick="window.alert(\'Nažalost Vaš browser ne podržava ovu opciju!\\nProbajte ovako:\\n\\nKliknite na ikonu (francuski ključ) s gornje desne strane Vašeg browsera i odaberite Options.\\nU otvorenom prozoru pod Home Page odaberite Open this page i ovdje ukoliko Vam već nije upisano upišite:\\nhttp://www.net.hr/\\n\\nVaš net.hr\')">');
+document.write('Neka ovo bude vaša početna stranica</a>');
+}
+else if (BrowserDetect.browser == "Chrome" && BrowserDetect.OS == "Mac")	{
+document.write('<a class="box snl-lnk home" href="#" onClick="window.alert(\'Nažalost Vaš browser ne podržava ovu opciju!\\nProbajte ovako:\\n\\nKliknite u izborniku na:\\n\\nChrome -> Preferences pa u otvorenom prozoru pod \\nHome Page odaberite Open this page\\ni ovdje ukoliko Vam već nije upisano upišite:\\nhttp://www.net.hr/\\n\\nVaš net.hr\')">');
+document.write('Neka ovo bude vaša početna stranica</a>');
+}
+else if (BrowserDetect.browser == "Safari" && BrowserDetect.OS == "Windows")	{
+document.write('<a class="box snl-lnk home" href="#" onClick="window.alert(\'Nažalost Vaš browser ne podržava ovu opciju!\\nProbajte ovako:\\n\\nKliknite na ikonu (zupčanik) s gornje desne strane Vašeg browsera i odaberite Preferences.\\nU otvorenom prozoru kliknite na tab General i pod Homepage ukoliko Vam već nije upisano upišite:\\nhttp://www.net.hr/ ili pritisnite gumb Set to Current Page\\n\\nVaš net.hr\')">');
+document.write('Neka ovo bude vaša početna stranica</a>');
+}
+else if (BrowserDetect.browser == "Safari" && BrowserDetect.OS == "Mac")	{
+document.write('<a class="box snl-lnk home" href="#" onClick="window.alert(\'Nažalost Vaš browser ne podržava ovu opciju!\\nProbajte ovako:\\n\\nKliknite u izborniku na:\\n\\nSafari -> Preferences pa u otvorenom prozoru na tab General i pod Homepage ukoliko Vam već nije upisano upišite:\\nhttp://www.net.hr/\\nili pritisnite gumb Set to Current Page\\n\\nVaš net.hr\')">');
+document.write('Neka ovo bude vaša početna stranica</a>');
+}
+else if (BrowserDetect.browser == "Opera" && BrowserDetect.OS == "Windows")	{
+document.write('<a class="box snl-lnk home" href="#" onClick="window.alert(\'Nažalost Vaš browser ne podržava ovu opciju!\\nProbajte ovako:\\n\\nNa vrhu Opera browsera iz padajućeg izbornika odaberite \'Preferences\'.\\nOtvorit će se prozor i ovdje odaberite \'General\' tab.\\nPod \'Home page\' kliknite na \'Set current page as home page\'. Kliknite na gumb \'Ok\'.\\n\\nVaš net.hr\')">');
+document.write('Neka ovo bude vaša početna stranica</a>');
+}
+else if (BrowserDetect.browser == "Opera" && BrowserDetect.OS == "Mac")	{
+document.write('<a class="box snl-lnk home" href="#" onClick="window.alert(\'Nažalost Vaš browser ne podržava ovu opciju!\\nProbajte ovako:\\n\\nKliknite u izborniku na:\\n\\nOpera -> Preferences pa u otvorenom prozoru u tabu General pod Home page pritisnite gumb Use Current\\n\\nVaš net.hr\')">');
+document.write('Neka ovo bude vaša početna stranica</a>');
+}
+else {
+document.write('');
+}
+// -->
+</script><div class="box-banner">
+<a class="clearfix lnk-btn" href="http://www.net.hr/marketing/" style="border-bottom: none";>Oglašavanje na Net.hr portalu</a>
+</div><table border="0" width="1" cellspacing="0" cellpadding="0"><tr height="7px"><td></td></tr></table><div class="box"><script type="text/javascript" >
+nethr_src = 'http://ad.net.hr/js.ng/site=net.hr&adsize=132x60&PagePos=1&channel=naslovnica';
+now = new Date();
+var ran = "" + now.getTime();
+if(typeof(rndTile) == "undefined"){
+var rndTile=Math.floor(Math.random()*100000000);
+}
+document.write ('<scr'+'ipt type="text/javascript" sr'+'c="'+nethr_src+'&ran='+ran+'&tile='+rndTile+'"></scr'+'ipt>');
+</script><noscript><a href="http://ad.net.hr/click.ng/site=net.hr&adsize=132x60&PagePos=1&channel=naslovnica"><img border="0" src="http://ad.net.hr/image.ng/site=net.hr&adsize=132x60&PagePos=1&channel=naslovnica" alt="" /></a></noscript></div>
+</div><!-- end inner-cont -->
+</div><!-- end sidebar-left -->
+<script type="text/javascript" >
+nethr_src = 'http://ad.net.hr/js.ng/site=net.hr&adsize=250x250&PagePos=1&channel=naslovnica';
+now = new Date();
+var ran = "" + now.getTime();
+if(typeof(rndTile) == "undefined"){
+var rndTile=Math.floor(Math.random()*100000000);
+}
+document.write ('<scr'+'ipt type="text/javascript" sr'+'c="'+nethr_src+'&ran='+ran+'&tile='+rndTile+'"></scr'+'ipt>\n');
+</script><div id="content-main" class="clearfix">
+<div class="section lay-one clearfix">
+<div id="box-200907220150002" class="box left w-466">
+<ul class="box-top-blank">
+<li class="left w-230-6 blank"><div class="head-three">
+<a id="art-201204060128006" href="http://danas.net.hr/novac/nova-revolucija-radnici-uzimaju-stvar-u-svoje-ruke"><img width="224" height="152" alt="Nova revolucija &#8211; radnici uzimaju stvar u svoje ruke" title="Thinkstock" src="/2011/12/08/0649007.30.jpg" /><b style="color:#525252;">Kako i što s dugovima?</b>
+<h3>Nova revolucija &#8211; radnici uzimaju stvar u svoje ruke</h3>
+U Splitu jača pokret radnika upropaštenih poduzeća. Parola kaže &#8211; tvornice radnicima. Zahtjev je to radnika Brodosplita, Adriachema, Dalmacijavina, Jadrankamena, Uzora... Lijepo zvuči, ali kako to napraviti i, što je najgore, kako riješiti dugove?</a>
+</div></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://danas.net.hr/crna-kronika/u-savi-kod-siska-pronadjeno-zensko-tijelo"><img border="0" width="51" height="36" alt="U Savi kod Siska pronađeno žensko tijelo" title="PIXSELL" src="/2012/01/23/0616007.21.jpg" />Očevid je u tijeku<strong>U Savi kod Siska pronađeno žensko tijelo</strong></a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://sportski.net.hr/nogomet/lige-petice/real-opet-prosuo-bodove-protiv-valencije"><img border="0" width="51" height="36" alt="VIDEO: Panika u Realu! Barcelona na nogama!" title="AFP" src="/2012/03/19/0117007.21.jpg" />Drama u Španjolskoj<strong>VIDEO: Panika u Realu! Barcelona na nogama!</strong></a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://sportski.net.hr/nogomet/hnl/cacic-o-sammiru-ni-bilic-nece-ostati-imun"><img border="0" width="51" height="36" alt="'Opijeni' trener Dinama <i>zaprijetio</i> Slavenu Biliću!" title="PIXSELL" src="/2012/03/30/0304007.21.jpg" />Možda dogodi se čudo...<strong>'Opijeni' trener Dinama <i>zaprijetio</i> Slavenu Biliću!</strong></a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://sportski.net.hr/nogomet/lige-petice/mario-balotelli-na-kraju-sezone-prelazi-u-inter"><img border="0" width="51" height="36" alt="Inter dovodi zločestog dečka za 22 milijuna eura?!" title="" src="/2012/04/08/0166007.21.jpg" />'Vrata mu nismo zatvorili'<strong>Inter dovodi zločestog dečka za 22 milijuna eura?!</strong></a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://hot.net.hr/zvijezde/zvjezdarnica/sjecate-li-se-nakadasnjeg-voditelja-ivice-kovacevica"><img border="0" width="51" height="36" alt="Sjećate li se nakadašnjeg voditelja Ivice Kovačevića?" title="Facebook" src="/2012/04/08/0283007.21.jpg" />'Dolijala' zvijezda gay drame<strong>Sjećate li se nakadašnjeg voditelja Ivice Kovačevića?</strong></a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://webcafe.net.hr/bizzar/bit-ce-vasa-cura-za-samo-27-kuna"><img border="0" width="51" height="36" alt="Bit će vaša cura za samo 30 kuna!" title="thinkstock.com" src="/2012/04/06/0120007.21.jpg" />Unajmi djevojku<strong>Bit će vaša cura za samo 30 kuna!</strong></a></li>
+<li class="lst-stl-one last"><a class="clearfix" href="http://hot.net.hr/zvijezde/skandali/njezine-su-grudi-prevelike-za-americku-javnost"><img border="0" width="51" height="36" alt="Njezine su grudi prevelike za američku javnost" title="nydailynews.com" src="/2012/04/08/0005007.21.jpg" />Smanjili ih za dva broja<strong>Njezine su grudi prevelike za američku javnost</strong></a></li>
+</ul>            
+</div><div class="box right w-162 blank equal sub-gray">
+  <h2><em>izdvajamo</em></h2>
+ <div class="box-inner"><ul>
+<li class="blank"><div class="head-three">
+<a href="http://magazin.net.hr/dom-vrt/zanimljivo-i-korisno/ovo-je-najsretnija-kuca-na-svijetu"><img width="146" height="100" alt="Ovo je najsretnija kuća na svijetu!" src="/2012/04/08/0279007.20.jpg" /></a>
+<h3><a href="http://magazin.net.hr/dom-vrt/zanimljivo-i-korisno/ovo-je-najsretnija-kuca-na-svijetu"><var>Šarena do bola</var>Ovo je najsretnija kuća na svijetu!</a></h3>
+</div></li>
+<li><a href="http://danas.net.hr/hrvatska/zar-mirovina-olimpijcima-od-8500-kuna-nije-previse" class="clearfix">Zaboravljenih 40 god. staža<strong>'Zar mirovina olimpijcima od 8.500 kuna nije previše?'</strong></a></li>
+<li><a href="http://magazin.net.hr/zdravlje/nutricionizam/hrana-za-djecu-prepuna-je-secera-i-masti" class="clearfix">Ni 'z' od zdravlja<strong>Hrana za djecu prepuna je šećera i masti</strong></a></li>
+<li><a href="http://hot.net.hr/zvijezde/zvjezdarnica/pjevala-u-preuskom-crnom-bodyju-sto-joj-je-bilo" class="clearfix">'Uskočila' u crninu<strong>Pjevala u preuskom crnom bodyju, što joj je bilo?</strong></a></li>
+<li><a href="http://webcafe.net.hr/bizzar/ovaj-devetogodisnjak-osvojio-je-srbiju" class="clearfix">VIDEO: Genije u akciji<strong>Ovaj devetogodišnjak osvojio je Srbiju</strong></a></li>
+<li><a href="http://hot.net.hr/zvijezde/zvjezdarnica/heidi-klum-je-podnijela-zahtjev-za-rastavu" class="clearfix">I službeno je!<strong>Heidi Klum je podnijela zahtjev za rastavu</strong></a></li>
+<li><a href="http://hot.net.hr/sexy/seks-na-eks/pravo-je-cudo-sto-je-grudi-uspjela-ugurati-u-kadar" class="clearfix">Pokazala obdarenost<strong>Pravo je čudo što je grudi uspjela 'ugurati' u kadar</strong></a></li>
+<li class="last"><a href="http://hot.net.hr/sexy/trikovi/savjeti-za-seks-kada-partner-ima-veliki-penis" class="clearfix">Nije nimalo lako<strong>Kako izaći na kraj s povećim 'tamo dolje'</strong></a></li>
+</ul></div>
+</div><div class="box left w-230 clr-orange">
+<h2><em><a href="http://webcafe.net.hr/forwarduse/video/">naj video</a></em></h2>
+<div class="box-inner clearfix equal car-video"><ul>
+  
+
+      <li class="lst-stl-video">
+    <a href="http://webcafe.net.hr/forwarduse/video/inner.html?select=201204090017503"><img width="65" height="50" border="0" alt="Razbijanje nikad nije bilo ljepše" src="http://webcafe.net.hr/2012/04/09/0018007.49.jpg" /><em>Razbijanje nikad nije bilo ljepše</em></a>
+    </li>
+      <li class="lst-stl-video">
+    <a href="http://webcafe.net.hr/forwarduse/video/inner.html?select=201204090015503"><img width="65" height="50" border="0" alt="Ludi pas gimnastičar" src="http://webcafe.net.hr/2012/04/09/0016007.49.jpg" /><em>Ludi pas gimnastičar</em></a>
+    </li>
+      <li class="lst-stl-video">
+    <a href="http://webcafe.net.hr/forwarduse/video/inner.html?select=201204090013503"><img width="65" height="50" border="0" alt="Sila je jaka u njemu" src="http://webcafe.net.hr/2012/04/09/0014007.49.jpg" /><em>Sila je jaka u njemu</em></a>
+    </li>
+      <li class="lst-stl-video">
+    <a href="http://webcafe.net.hr/forwarduse/video/inner.html?select=201204080015503"><img width="65" height="50" border="0" alt="Komadi, krafne i luda vožnja" src="http://webcafe.net.hr/2012/04/08/0016007.49.jpg" /><em>Komadi, krafne i luda vožnja</em></a>
+    </li>
+      <li class="lst-stl-video">
+    <a href="http://webcafe.net.hr/forwarduse/video/inner.html?select=201204080013503"><img width="65" height="50" border="0" alt="Smiješne, zaigrane i neodoljive :)" src="http://webcafe.net.hr/2012/04/08/0014007.49.jpg" /><em>Smiješne, zaigrane i neodoljive :)</em></a>
+    </li>
+      <li class="lst-stl-video">
+    <a href="http://webcafe.net.hr/forwarduse/video/inner.html?select=201204080011503"><img width="65" height="50" border="0" alt="Ožujak je posebno brutalan" src="http://webcafe.net.hr/2012/04/08/0012007.49.jpg" /><em>Ožujak je posebno brutalan</em></a>
+    </li>
+  
+</ul></div>
+<div class="car-video-nav clearfix">
+<button class="left btn prev-video"><</button>
+<em><a href="http://webcafe.net.hr/forwarduse/video/">pogledajte još videa</a></em>
+<button class="right btn next-video">></button>
+</div>
+</div>
+<script type="text/javascript">
+$(".car-video").jCarouselLite({btnNext:".next-video",btnPrev:".prev-video",visible:3});
+</script><div class="box left w-230 komnetar">
+  <h2><em><a href="http://webcafe.net.hr/forwarduse/komnetar/">kom<span>net</span>ar</a></em></h2>
+ 
+
+<ul>
+    <li><a href="http://webcafe.net.hr/forwarduse/komnetar/">
+    <span class="btn">pogledaj</span>
+    <img src="http://webcafe.net.hr/2012/04/09/0038007.68.jpg" width="226" height="121" />
+  </a></li>
+</ul>
+
+</div><!-- END box left w-230 komnetar -->
+</div><!-- END section lay-one clearfix --><div class="section lay-two clearfix">
+<div class="box carousel">
+<h2><em>fotogalerije</em></h2>
+<button class="prev prev-photo">&gt;</button>
+<button class="next next-photo">&gt;</button>
+<div class="box-inner clearfix car-photo"><ul class="hor">
+            <li class="lst-stl-one"><a href="#" onclick="galleryPath='http://www.net.hr/galerija/display/?url=http://danas.net.hr/galerija/vijesti/Velika-svecanost-u-Vodicama/';var s=document.createElement('script');s.type='text/javascript';s.src='http://danas.net.hr/galerija/vijesti/Velika-svecanost-u-Vodicama/';document.getElementsByTagName('head')[0].appendChild(s);return false;" class="clearfix"><img width="51" height="36" alt="" src="/2012/04/09/0095007.21.jpg" /><strong>12. festival žudija</strong>Velika svečanost u Vodicama</a></li>
+                  <li class="lst-stl-one"><a href="#" onclick="galleryPath='http://www.net.hr/galerija/display/?url=http://danas.net.hr/galerija/vijesti/uskrs-zoo-pisanice/';var s=document.createElement('script');s.type='text/javascript';s.src='http://danas.net.hr/galerija/vijesti/uskrs-zoo-pisanice/';document.getElementsByTagName('head')[0].appendChild(s);return false;" class="clearfix"><img width="51" height="36" alt="" src="/2012/04/08/0231007.21.jpg" /><strong>Pisanice za životinje  </strong>Vesela atmosfera u ZOO-u</a></li>
+                  <li class="lst-stl-one"><a href="#" onclick="galleryPath='http://www.net.hr/galerija/display/?url=http://hot.net.hr/galerija/glazba/bare-koncert-u-sibeniku-nakon-10-godina/';var s=document.createElement('script');s.type='text/javascript';s.src='http://hot.net.hr/galerija/glazba/bare-koncert-u-sibeniku-nakon-10-godina/';document.getElementsByTagName('head')[0].appendChild(s);return false;" class="clearfix"><img width="51" height="36" alt="" src="/2012/04/08/0193007.21.jpg" /><strong>Nakon 10 godina</strong>Goran Bare održao koncert u Šibeniku</a></li>
+                  <li class="lst-stl-one"><a href="#" onclick="galleryPath='http://www.net.hr/galerija/display/?url=http://danas.net.hr/galerija/vijesti/uskrs-snijeg-lika-gorski-kotar/';var s=document.createElement('script');s.type='text/javascript';s.src='http://danas.net.hr/galerija/vijesti/uskrs-snijeg-lika-gorski-kotar/';document.getElementsByTagName('head')[0].appendChild(s);return false;" class="clearfix"><img width="51" height="36" alt="" src="/2012/04/08/0173007.21.jpg" /><strong>Bijeli Uskrs </strong>Snijeg prekrio najviše krajeve</a></li>
+                  <li class="lst-stl-one"><a href="#" onclick="galleryPath='http://www.net.hr/galerija/display/?url=http://sportski.net.hr/galerija/rukomet/hrvatska-izborila-london/';var s=document.createElement('script');s.type='text/javascript';s.src='http://sportski.net.hr/galerija/rukomet/hrvatska-izborila-london/';document.getElementsByTagName('head')[0].appendChild(s);return false;" class="clearfix"><img width="51" height="36" alt="" src="/2012/04/08/0126007.21.jpg" /><strong>Bravo Kauboji </strong>Hrvatska izborila London</a></li>
+                  <li class="lst-stl-one"><a href="#" onclick="galleryPath='http://www.net.hr/galerija/display/?url=http://danas.net.hr/galerija/vijesti/sretan-uskrs-2012/';var s=document.createElement('script');s.type='text/javascript';s.src='http://danas.net.hr/galerija/vijesti/sretan-uskrs-2012/';document.getElementsByTagName('head')[0].appendChild(s);return false;" class="clearfix"><img width="51" height="36" alt="" src="/2012/04/08/0051007.21.jpg" /><strong>Sretan Uskrs!</strong>Veselje blagdana</a></li>
+                  <li class="lst-stl-one"><a href="#" onclick="galleryPath='http://www.net.hr/galerija/display/?url=http://sportski.net.hr/galerija/vijesti/dinamo-prvak-hrvatske-08042012/';var s=document.createElement('script');s.type='text/javascript';s.src='http://sportski.net.hr/galerija/vijesti/dinamo-prvak-hrvatske-08042012/';document.getElementsByTagName('head')[0].appendChild(s);return false;" class="clearfix"><img width="51" height="36" alt="" src="/2012/04/08/0096007.21.jpg" /><strong>Sedmi put zaredom</strong>Dinamo prvak Hrvatske</a></li>
+                  <li class="lst-stl-one"><a href="#" onclick="galleryPath='http://www.net.hr/galerija/display/?url=http://magazin.net.hr/galerija/moda/Zagrepcanke-se-utegnule-u-haljine/';var s=document.createElement('script');s.type='text/javascript';s.src='http://magazin.net.hr/galerija/moda/Zagrepcanke-se-utegnule-u-haljine/';document.getElementsByTagName('head')[0].appendChild(s);return false;" class="clearfix"><img width="51" height="36" alt="" src="/2012/04/07/0182007.21.jpg" /><strong>Prigrlile proljeće</strong>Zagrepčanke se 'utegnule' u haljine</a></li>
+                  <li class="lst-stl-one"><a href="#" onclick="galleryPath='http://www.net.hr/galerija/display/?url=http://danas.net.hr/galerija/vijesti/Gradani-uzivali-u-bespalatnoj-masazi/';var s=document.createElement('script');s.type='text/javascript';s.src='http://danas.net.hr/galerija/vijesti/Gradani-uzivali-u-bespalatnoj-masazi/';document.getElementsByTagName('head')[0].appendChild(s);return false;" class="clearfix"><img width="51" height="36" alt="" src="/2012/04/07/0148007.21.jpg" /><strong>Borba protiv stresa</strong>Građani uživali u bespalatnoj masaži</a></li>
+                  <li class="lst-stl-one last"><a href="#" onclick="galleryPath='http://www.net.hr/galerija/display/?url=http://danas.net.hr/galerija/vijesti/Pokop-Grada-Sibenika/';var s=document.createElement('script');s.type='text/javascript';s.src='http://danas.net.hr/galerija/vijesti/Pokop-Grada-Sibenika/';document.getElementsByTagName('head')[0].appendChild(s);return false;" class="clearfix"><img width="51" height="36" alt="" src="/2012/04/06/0708007.21.jpg" /><strong>Ogorčeni Šibenčani</strong>Htjeli pokopati grad, pa odustali</a></li>
+                    </ul></div>
+</div>
+</div><!-- END section lay-two clearfix -->
+<script type="text/javascript">
+$(".car-photo").jCarouselLite({btnPrev:".prev-photo",btnNext:".next-photo",visible:3});
+</script><div class="section lay-three clearfix">
+<div class="box left w-398">
+  <h2><em><a href="http://danas.net.hr/">vijesti dana</a></em></h2>
+ <div class="box-inner rpt-wh-162 clearfix"><ul class="clearfix">
+<li class="left w-162"><div class="head-three">
+<a href="http://danas.net.hr/hrvatska/olujna-bura-zatvara-ceste-u-gorju-poledica"><img width="146" height="100" alt="Olujna bura zatvara ceste, u gorju poledica" src="/2012/02/10/0761007.20.jpg" /></a>
+<h3><a href="http://danas.net.hr/hrvatska/olujna-bura-zatvara-ceste-u-gorju-poledica">Olujna bura zatvara ceste, u gorju poledica</a></h3>
+</div></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://danas.net.hr/novac/nova-revolucija-radnici-uzimaju-stvar-u-svoje-ruke"><img border="0" width="51" height="36" alt="Nova revolucija &#8211; radnici uzimaju stvar u svoje ruke" title="Thinkstock" src="/2011/12/08/0649007.21.jpg" />Kako i što s dugovima?<strong>Nova revolucija &#8211; radnici uzimaju stvar u svoje ruke</strong></a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://danas.net.hr/svijet/u-anchorageu-palo-tri-i-pol-metra-snijega"><img border="0" width="51" height="36" alt="U Anchorageu palo tri i pol metra snijega" title="PIXSELL" src="/2012/02/14/0126007.21.jpg" />Postavljen novi rekord<strong>U Anchorageu palo tri i pol metra snijega</strong></a></li>
+<li class="lst-stl-one last"><a class="clearfix" href="http://danas.net.hr/svijet/cetvero-poginulih-u-stravicnoj-nesreci"><img border="0" width="51" height="36" alt="Četvero poginulih u stravičnoj nesreći" title="AFP" src="/2011/11/14/0324007.21.jpg" />Auto se prepolovio<strong>Četvero poginulih u stravičnoj nesreći</strong></a></li>
+</ul></div>
+</div><div class="box right w-230 clr-black">
+  <h2><em><a href="http://danas.net.hr/crna-kronika/">crna kronika</a></em></h2>
+ <div class="box-inner clearfix"><ul>
+<li class="lst-stl-one"><a class="clearfix" href="http://danas.net.hr/crna-kronika/u-savi-kod-siska-pronadjeno-zensko-tijelo"><img border="0" width="51" height="36" alt="U Savi kod Siska pronađeno žensko tijelo" title="PIXSELL" src="/2012/01/23/0616007.21.jpg" />Očevid je u tijeku<strong>U Savi kod Siska pronađeno žensko tijelo</strong></a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://danas.net.hr/crna-kronika/vozio-pijan-prijeti-mu-60-dana-zatvora"><img border="0" width="51" height="36" alt="Vozio s 3,28 promila, prijeti mu 60 dana zatvora" title="PIXSELL" src="/2010/04/19/0206007.21.jpg" />Opasnost na cesti<strong>Vozio s 3,28 promila, prijeti mu 60 dana zatvora</strong></a></li>
+<li class="lst-stl-one last"><a class="clearfix" href="http://danas.net.hr/crna-kronika/radnika-ubio-grom-dok-je-popravljao-dalekovod"><img border="0" width="51" height="36" alt="Radnika ubio grom dok je popravljao dalekovod" title="Thinkstock" src="/2010/07/14/0495007.21.jpg" />Tragedija kod Sinja<strong>Radnika ubio grom dok je popravljao dalekovod</strong></a></li>
+</ul></div>
+</div>
+</div><!-- END section lay-three clearfix --><div class="section lay-three clearfix">
+<div class="box right w-230 clr-purple">
+  <h2><em><a href="http://hot.net.hr/">Hot.hr</a></em></h2>
+ <div class="box-inner clearfix"><ul>
+<li class="lst-stl-one"><a class="clearfix" href="http://hot.net.hr/zvijezde/tracevi/lana-del-rey-ljubi-25-godina-starijeg-axela-rosea"><img border="0" width="51" height="36" alt="Lana Del Rey ljubi 25 godina starijeg Axla Rosea?" title="Foto: www.lanadelrey.com" src="/2012/01/29/0071007.21.jpg" />Posvetila mu i pjesmu<strong>Lana Del Rey ljubi 25 godina starijeg Axla Rosea?</strong></a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://hot.net.hr/zvijezde/skandali/njezine-su-grudi-prevelike-za-americku-javnost"><img border="0" width="51" height="36" alt="Njezine su grudi prevelike za američku javnost" title="nydailynews.com" src="/2012/04/08/0005007.21.jpg" />Smanjili ih za dva broja<strong>Njezine su grudi prevelike za američku javnost</strong></a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://hot.net.hr/zvijezde/zvjezdarnica/ava-zove-me-svaki-dan-vlado-nema-tu-nicega"><img border="0" width="51" height="36" alt="Ava: Zove me svaki dan; Vlado: Nema tu ničega" title="PIXSELL" src="/2012/03/09/0815007.21.jpg" />Tko tu koga!?<strong>Ava: Zove me svaki dan; Vlado: Nema tu ničega</strong></a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://hot.net.hr/zvijezde/zvjezdarnica/sjecate-li-se-nakadasnjeg-voditelja-ivice-kovacevica"><img border="0" width="51" height="36" alt="Sjećate li se nakadašnjeg voditelja Ivice Kovačevića?" title="Facebook" src="/2012/04/08/0283007.21.jpg" />'Dolijala' zvijezda gay drame<strong>Sjećate li se nakadašnjeg voditelja Ivice Kovačevića?</strong></a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://hot.net.hr/zvijezde/zvjezdarnica/potrosila-gomilu-novca-da-bi-ispravila-naglasak"><img border="0" width="51" height="36" alt="Potrošila gomilu novca da bi ispravila naglasak" title="YouTube" src="/2011/03/03/0252007.21.jpg" />Cijena uspjeha<strong>Potrošila gomilu novca da bi ispravila naglasak</strong></a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://hot.net.hr/zvijezde/tracevi/seherezada-onuru-oprostila-prevare-i-kocku"><img border="0" width="51" height="36" alt="Šeherezada Onuru oprostila prevare i kocku" title="Foto: RTL" src="/2010/09/15/0569007.21.JPG" />Kamen gori, val se pjeni...<strong>Šeherezada Onuru oprostila prevare i kocku</strong></a></li>
+<li class="lst-stl-one last"><a class="clearfix" href="http://hot.net.hr/zvijezde/zvjezdarnica/heidi-klum-je-podnijela-zahtjev-za-rastavu"><img border="0" width="51" height="36" alt="Heidi Klum je podnijela zahtjev za rastavu" title="PIXSELL" src="/2012/02/04/0300007.21.jpg" />I službeno je!<strong>Heidi Klum je podnijela zahtjev za rastavu</strong></a></li>
+</ul></div>
+</div><div class="box left w-398 clr-blue">
+  <h2><em><a href="http://sportski.net.hr/">sportski.net</a></em></h2>
+ <div class="box-inner rpt-wh-162 clearfix"><ul class="clearfix">
+<li class="left w-162"><div class="head-three">
+<a href="http://sportski.net.hr/nogomet/lige-petice/real-opet-prosuo-bodove-protiv-valencije"><img width="146" height="100" alt="VIDEO: Panika u Realu! Barcelona na nogama!" src="/2012/03/19/0117007.20.jpg" /></a>
+<h3><a href="http://sportski.net.hr/nogomet/lige-petice/real-opet-prosuo-bodove-protiv-valencije">VIDEO: Panika u Realu! Barcelona na nogama!</a></h3>
+</div></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://sportski.net.hr/nogomet/lige-petice/mario-balotelli-na-kraju-sezone-prelazi-u-inter"><img border="0" width="51" height="36" alt="Inter dovodi zločestog dečka za 22 milijuna eura?!" title="" src="/2012/04/08/0166007.21.jpg" />'Vrata mu nismo zatvorili'<strong>Inter dovodi zločestog dečka za 22 milijuna eura?!</strong></a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://sportski.net.hr/nogomet/hnl/cacic-o-sammiru-ni-bilic-nece-ostati-imun"><img border="0" width="51" height="36" alt="'Opijeni' trener Dinama <i>zaprijetio</i> Slavenu Biliću!" title="PIXSELL" src="/2012/03/30/0304007.21.jpg" />Možda dogodi se čudo...<strong>'Opijeni' trener Dinama <i>zaprijetio</i> Slavenu Biliću!</strong></a></li>
+<li class="lst-stl-one last"><a class="clearfix" href="http://sportski.net.hr/nogomet/lige-petice/pogledajte-sramotu-ronalda-i-pepea"><img border="0" width="51" height="36" alt="Pogledajte najnoviji ispad agresivnog realovca!" title="AFP" src="/2012/04/09/0070007.21.jpg" />Počeo udarati i suigrače<strong>Pogledajte najnoviji ispad agresivnog realovca!</strong></a></li>
+</ul></div>
+</div><div class="box left w-398 clr-orange">
+  <h2><em><a href="http://webcafe.net.hr/">webcafe</a></em></h2>
+ <div class="box-inner rpt-wh-162 clearfix"><ul class="clearfix">
+<li class="left w-162"><div class="head-three">
+<a href="http://webcafe.net.hr/bizzar/bit-ce-vasa-cura-za-samo-27-kuna"><img width="146" height="100" alt="Bit će vaša cura za samo 30 kuna!" src="/2012/04/06/0120007.20.jpg" /></a>
+<h3><a href="http://webcafe.net.hr/bizzar/bit-ce-vasa-cura-za-samo-27-kuna">Bit će vaša cura za samo 30 kuna!</a></h3>
+</div></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://webcafe.net.hr/svastara/foto-pale-su-s-neba-samo-za-vas"><img border="0" width="51" height="36" alt="FOTO: Pale su s neba samo za vas!" title="thechive.com" src="/2012/04/05/0518007.21.jpg" />Prave grešnice<strong>FOTO: Pale su s neba samo za vas!</strong></a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://webcafe.net.hr/svastara/videoeksplozija-boja-u-slow-motionu"><img border="0" width="51" height="36" alt="VIDEO: Eksplozija boja u <em>slow motionu</em>" title="" src="/2012/04/05/0233007.21.jpg" />Čista umjetnost<strong>VIDEO: Eksplozija boja u <em>slow motionu</em></strong></a></li>
+<li class="lst-stl-one last"><a class="clearfix" href="http://webcafe.net.hr/bizzar/kolumna/ribafish/rostilj-ima-nesto-zdravo-lijepo-i-veselo-u-tome"><img border="0" width="51" height="36" alt="Roštilj &#8211; ima nešto zdravo, lijepo i veselo u tome" title="internet" src="/2012/04/06/0088007.21.jpg" />Dnevnik poluhedonista<strong>Roštilj &#8211; ima nešto zdravo, lijepo i veselo u tome</strong></a></li>
+</ul></div>
+</div>
+</div><!-- END section lay-three clearfix --><div class="section lay-four-short clearfix">
+<div class="box w-154">
+  <h2><em><a href="http://www.tulumarka.com/">tulumarka.com</a></em></h2>
+ <div class="box-inner"><ul>
+<li class="blank"><div class="head-three">
+<a href="http://www.tulumarka.com/magazin/89/foto-atraktivne-djevojke-i-vruca-atmosfera-u-domac" onClick="_gaq.push(['_trackEvent', 'tulumarka.com', 'tulumarka.com', 'Foto: Atraktivne djevojke i vruća atmosfera u domaćim klubovima']);" target="_blank"><img width="146" height="100" border="0" src="/2012/04/09/0065007.20.jpg" alt="Foto: Atraktivne djevojke i vruća atmosfera u domaćim klubovima" /></a>
+<h3><a href="http://www.tulumarka.com/magazin/89/foto-atraktivne-djevojke-i-vruca-atmosfera-u-domac" onClick="_gaq.push(['_trackEvent', 'tulumarka.com', 'tulumarka.com', 'Foto: Atraktivne djevojke i vruća atmosfera u domaćim klubovima']);" target="_blank">Foto: Atraktivne djevojke i vruća atmosfera u domaćim klubovima</a></h3>
+</div></li>
+</ul></div>
+</div><div class="box w-154">
+  <h2><em><a href="http://www.lupiga.com">lupiga.com</a></em></h2>
+ <div class="box-inner"><ul>
+<li class="blank"><div class="head-three">
+<a href="http://lupiga.com/vijesti/index.php?id=6838" onClick="_gaq.push(['_trackEvent', 'lupiga.com', 'lupiga.com', 'FLAMBOJANTNA KRAĐA: Globus krade tekstove iz New Yorkera']);" target="_blank"><img width="146" height="100" border="0" src="/2012/04/09/0069007.20.jpg" alt="FLAMBOJANTNA KRAĐA: Globus krade tekstove iz New Yorkera" /></a>
+<h3><a href="http://lupiga.com/vijesti/index.php?id=6838" onClick="_gaq.push(['_trackEvent', 'lupiga.com', 'lupiga.com', 'FLAMBOJANTNA KRAĐA: Globus krade tekstove iz New Yorkera']);" target="_blank">FLAMBOJANTNA KRAĐA: Globus krade tekstove iz New Yorkera</a></h3>
+</div></li>
+</ul></div>
+</div><div class="box w-154">
+  <h2><em><a href="http://gadgeterija.net/">gadgeterija.net</a></em></h2>
+ <div class="box-inner"><ul>
+<li class="blank"><div class="head-three">
+<a href="http://www.gadgeterija.net/2012/04/08/nedjeljna-debata-9-fotoaparat-ili-telefon-s-fotoaparatom/" onClick="_gaq.push(['_trackEvent', 'gadgeterija.net', 'gadgeterija.net', 'DEBATA: Fotoaparat ili mobitel s fotoaparatom?']);" target="_blank"><img width="146" height="100" border="0" src="/2012/04/09/0067007.20.jpg" alt="DEBATA: Fotoaparat ili mobitel s fotoaparatom?" /></a>
+<h3><a href="http://www.gadgeterija.net/2012/04/08/nedjeljna-debata-9-fotoaparat-ili-telefon-s-fotoaparatom/" onClick="_gaq.push(['_trackEvent', 'gadgeterija.net', 'gadgeterija.net', 'DEBATA: Fotoaparat ili mobitel s fotoaparatom?']);" target="_blank">DEBATA: Fotoaparat ili mobitel s fotoaparatom?</a></h3>
+</div></li>
+</ul></div>
+</div><div class="box w-154">
+  <h2><em><a href="http://www.hcl.hr/">hcl.hr</a></em></h2>
+ <div class="box-inner"><ul>
+<li class="blank"><div class="head-three">
+<a href="http://www.hcl.hr/vijesti-far-cry-3-sadrzavat-ce-i-editor-mapa-6305-27.html" onClick="_gaq.push(['_trackEvent', 'hcl.hr', 'hcl.hr', 'VIDEO: Far Cry 3 izgleda fenomenalno i u multiplayeru']);" target="_blank"><img width="146" height="100" border="0" src="/2012/04/09/0068007.20.jpg" alt="VIDEO: Far Cry 3 izgleda fenomenalno i u multiplayeru" /></a>
+<h3><a href="http://www.hcl.hr/vijesti-far-cry-3-sadrzavat-ce-i-editor-mapa-6305-27.html" onClick="_gaq.push(['_trackEvent', 'hcl.hr', 'hcl.hr', 'VIDEO: Far Cry 3 izgleda fenomenalno i u multiplayeru']);" target="_blank">VIDEO: Far Cry 3 izgleda fenomenalno i u multiplayeru</a></h3>
+</div></li>
+</ul></div>
+</div>
+</div><!-- END section lay-four-short clearfix --><div class="section lay-three clearfix">
+<div class="box left w-634 clr-orange">
+  <h2><em><a href="/marketing/">Promo</a></em></h2>
+ <div class="box-inner rpt-wh-162 clearfix"><ul class="clearfix">
+<li class="left w-162"><div class="head-three">
+<a href="http://danas.net.hr/promo/velika-akcija-do-20-popusta-na-fitness-opremu"><img width="146" height="100" alt="Velika Akcija: do 20% popusta na fitness opremu!" src="/2012/04/06/0548007.20.jpg" /></a>
+<h3><a href="http://danas.net.hr/promo/velika-akcija-do-20-popusta-na-fitness-opremu">Velika Akcija: do 20% popusta na fitness opremu!</a></h3>
+</div></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://danas.net.hr/promo/odabran-najkvalitetniji-dodatak-prehrani-u-rh"><img border="0" width="51" height="36" alt="Odabran najkvalitetniji dodatak prehrani u RH!" title="" src="/2012/04/06/0413007.21.jpg" />Natural Wealth&reg; <strong>Odabran najkvalitetniji dodatak prehrani u RH!</strong></a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://danas.net.hr/promo/fit-paket-za-gubitak-masnih-naslaga-2"><img border="0" width="51" height="36" alt="FIT paket za gubitak masnih naslaga" title="" src="/2012/04/04/0174007.21.jpg" />Lijepi i atraktivni<strong>FIT paket za gubitak masnih naslaga</strong></a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://danas.net.hr/promo/na-skatey-besplatno-na-posao"><img border="0" width="51" height="36" alt="Na Skatey besplatno na posao!" title="" src="/2012/04/06/0162007.21.JPG" />Jurry Džabe <strong>Na Skatey besplatno na posao!</strong></a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://danas.net.hr/promo/jedinstveno-djelo"><img border="0" width="51" height="36" alt="Jedinstveno djelo!" title="" src="/2012/04/06/0269007.21.jpg" />ENCIKLOPEDIJA GLJIVA<strong>Jedinstveno djelo!</strong></a></li>
+<li class="lst-stl-one last"><a class="clearfix" href="http://danas.net.hr/promo/mislite-na-vrijeme-na-svoje-kosti"><img border="0" width="51" height="36" alt="Mislite na vrijeme na svoje kosti" title="" src="/2012/04/06/0058007.21.JPG" />Kalcij<strong>Mislite na vrijeme na svoje kosti</strong></a></li>
+<li class="lst-stl-one last"><a class="clearfix" href="http://danas.net.hr/promo/kuhaj-s-ledom-i-osvoji-1"><img border="0" width="51" height="36" alt="Kuhaj s Ledom i osvoji!" title="" src="/2012/04/02/0223007.21.jpg" />LEDO nagradna igra<strong>Kuhaj s Ledom i osvoji!</strong></a></li>
+</ul></div>
+</div>
+</div><!-- END section lay-three clearfix --><div class="section lay-four-short clearfix">
+<div class="box w-154">
+  <h2><em><a href="/tehnoklik/">Tehnoklik</a></em></h2>
+ <div class="box-inner"><ul>
+<li class="blank"><div class="head-three">
+<a href="/tehnoklik/foto-moze-li-ovo-vas-mobitel"><img width="146" height="100" alt="VIDEO: Može li ovo i vaš mobitel?" src="/2012/04/06/0378007.20.jpg" /></a>
+<h3><a href="/tehnoklik/foto-moze-li-ovo-vas-mobitel">VIDEO: Može li ovo i vaš mobitel?</a></h3>
+</div></li>
+</ul></div>
+</div><div class="box w-154">
+  <h2><em><a href="/auti/">Auti</a></em></h2>
+ <div class="box-inner"><ul>
+<li class="blank"><div class="head-three">
+<a href="/auti/ovo-je-najbolji-automobil-2012-godine"><img width="146" height="100" alt="Ovo je najbolji automobil 2012. godine!" src="/2012/04/06/0392007.20.jpg" /></a>
+<h3><a href="/auti/ovo-je-najbolji-automobil-2012-godine">Ovo je najbolji automobil 2012. godine!</a></h3>
+</div></li>
+</ul></div>
+</div><div class="box w-154">
+  <h2><em><a href="http://danas.net.hr/kultura/">Kultura</a></em></h2>
+ <div class="box-inner"><ul>
+<li class="blank"><div class="head-three">
+<a href="http://danas.net.hr/kultura/karauoke-toni-marosevic-jadranka-krajina-tribina"><img width="146" height="100" alt="Znate li što su Karauoke? Isplati se raspitati!" src="/2012/04/05/0530007.20.jpg" /></a>
+<h3><a href="http://danas.net.hr/kultura/karauoke-toni-marosevic-jadranka-krajina-tribina">Znate li što su Karauoke? Isplati se raspitati!</a></h3>
+</div></li>
+</ul></div>
+</div><div class="box w-154">
+  <h2><em><a href="http://danas.net.hr/znanost/">Znanost</a></em></h2>
+ <div class="box-inner"><ul>
+<li class="blank"><div class="head-three">
+<a href="http://danas.net.hr/znanost/krpelji-haemaphysalis-flava-podnose-i-vakum-i-zracenje"><img width="146" height="100" alt="VIDEO: Napasnici koji podnose i vakuum i zračenje" src="/2012/04/04/0268007.20.jpg" /></a>
+<h3><a href="http://danas.net.hr/znanost/krpelji-haemaphysalis-flava-podnose-i-vakum-i-zracenje">VIDEO: Napasnici koji podnose i vakuum i zračenje</a></h3>
+</div></li>
+</ul></div>
+</div><div class="clear"><!-- spanner --></div>
+</div><!-- END section lay-four-short clearfix --><div class="section lay-three clearfix">
+<div class="box left w-398 clr-green">
+  <h2><em><a href="http://magazin.net.hr/">magazin</a></em></h2>
+ <div class="box-inner rpt-wh-162 clearfix"><ul class="clearfix">
+<li class="left w-162"><div class="head-three">
+<a href="http://magazin.net.hr/ljepota/njega/jeste-li-u-ime-ljepote-spremni-zrtvovati-i-zdravlje"><img width="146" height="100" alt="Jeste li u ime ljepote spremni žrtvovati i zdravlje?" src="/2011/10/26/0012007.20.jpg" /></a>
+<h3><a href="http://magazin.net.hr/ljepota/njega/jeste-li-u-ime-ljepote-spremni-zrtvovati-i-zdravlje">Jeste li u ime ljepote spremni žrtvovati i zdravlje?</a></h3>
+</div></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://magazin.net.hr/brak-veze/brak/meni-je-divno-bracni-zivot-je-fenomenalan"><img border="0" width="51" height="36" alt="'Meni je divno, bračni život je fenomenalan'" title="PIXSELL" src="/2010/05/26/0533007.21.jpg" />Shannen Doherty: <strong>'Meni je divno, bračni život je fenomenalan'</strong></a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://magazin.net.hr/ljubimci/net-ordinacija/saptac-psima/povratak-na-pocetak-odgoja-psa"><img border="0" width="51" height="36" alt="Povratak na početak odgoja psa" title="Thinkstock" src="/2012/01/13/0499007.21.jpg" />Šaptač psima savjetuje<strong>Povratak na početak odgoja psa</strong></a></li>
+<li class="lst-stl-one last"><a class="clearfix" href="http://magazin.net.hr/kuhinja/recepti/specijal/janjeca-koljenica-s-krumpirom"><img border="0" width="51" height="36" alt="Pečena janjeća koljenica s krumpirom" title="Thinkstock" src="/2012/03/28/0564007.21.jpg" />Neodoljivi uskršnji ručak<strong>Pečena janjeća koljenica s krumpirom</strong></a></li>
+</ul></div>
+</div><div class="box right w-230 clr-green">
+  <h2><em><a href="http://magazin.net.hr/zdravlje/">zdravlje</a></em></h2>
+ <div class="box-inner clearfix"><ul>
+<li class="lst-stl-one"><a class="clearfix" href="http://magazin.net.hr/zdravlje/nutricionizam/hrana-za-djecu-prepuna-je-secera-i-masti"><img border="0" width="51" height="36" alt="Hrana za djecu prepuna je šećera i masti" title="Thinkstock" src="/2012/02/20/0468007.21.jpg" />Ni 'z' od zdravlja<strong>Hrana za djecu prepuna je šećera i masti</strong></a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://magazin.net.hr/zdravlje/prevencija/hrana-s-prevelkim-kolicinama-soli"><img border="0" width="51" height="36" alt="U kojoj sve hrani ima više soli nego u čipsu?!" title="thinkstock/Ilustracija" src="/2010/10/18/0009007.21.jpg" />Gdje se skriva<strong>U kojoj sve hrani ima više soli nego u čipsu?!</strong></a></li>
+<li class="lst-stl-one last"><a class="clearfix" href="http://magazin.net.hr/zdravlje/nutricionizam/umjerenost-za-stolom-ce-sprijeciti-zelucane-tegobe"><img border="0" width="51" height="36" alt="Umjerenost za stolom će spriječiti želučane tegobe" title="Thinkstock" src="/2011/12/22/0873007.21.jpg" />Blagdansko prejedanje<strong>Umjerenost za stolom će spriječiti želučane tegobe</strong></a></li>
+</ul></div>
+</div>
+</div><!-- END section lay-three clearfix --><div class="section lay-four clearfix">
+<div class="box w-154">
+  <h2><em><a href="http://hot.net.hr/zvijezde/">show</a></em></h2>
+ <div class="box-inner"><ul>
+<li class="blank"><div class="head-three">
+<a href="http://hot.net.hr/zvijezde/skandali/njezine-su-grudi-prevelike-za-americku-javnost"><img width="146" height="100" alt="Njezine su grudi prevelike za američku javnost" src="/2012/04/08/0005007.20.jpg" /></a>
+<h3><a href="http://hot.net.hr/zvijezde/skandali/njezine-su-grudi-prevelike-za-americku-javnost">Njezine su grudi prevelike za američku javnost</a></h3>
+</div></li>
+<li><a class="clearfix" href="http://hot.net.hr/zvijezde/tracevi/lana-del-rey-ljubi-25-godina-starijeg-axela-rosea">Lana Del Rey ljubi 25 godina starijeg Axla Rosea?</a></li>
+<li><a class="clearfix" href="http://hot.net.hr/zvijezde/zvjezdarnica/sjecate-li-se-nakadasnjeg-voditelja-ivice-kovacevica">Sjećate li se nakadašnjeg voditelja Ivice Kovačevića?</a></li>
+<li class="last"><a class="clearfix" href="http://hot.net.hr/zvijezde/zvjezdarnica/ava-zove-me-svaki-dan-vlado-nema-tu-nicega">Ava: Zove me svaki dan; Vlado: Nema tu ničega</a></li>
+</ul></div>
+</div><div class="box w-154">
+  <h2><em><a href="http://magazin.net.hr/dom-vrt/">dom&vrt</a></em></h2>
+ <div class="box-inner"><ul>
+<li class="blank"><div class="head-three">
+<a href="http://magazin.net.hr/dom-vrt/zanimljivo-i-korisno/ovo-je-najsretnija-kuca-na-svijetu"><img width="146" height="100" alt="Ovo je najsretnija kuća na svijetu!" src="/2012/04/08/0279007.20.jpg" /></a>
+<h3><a href="http://magazin.net.hr/dom-vrt/zanimljivo-i-korisno/ovo-je-najsretnija-kuca-na-svijetu">Ovo je najsretnija kuća na svijetu!</a></h3>
+</div></li>
+<li><a class="clearfix" href="http://magazin.net.hr/dom-vrt/savjeti/vrata-mogu-biti-problem-u-malim-stanovima-evo-rjesenja">U malim prostorima i vrata su problem - maknite ih!</a></li>
+<li><a class="clearfix" href="http://magazin.net.hr/dom-vrt/zanimljivo-i-korisno/rjesenja-za-graditeljstvo-i-uredjenje-prostora">Rješenja za graditeljstvo i uređenje prostora</a></li>
+<li><a class="clearfix" href="http://magazin.net.hr/dom-vrt/net-ordinacija/arhitekt/prijedlog-uredjenja-stana-od-70-kvadrata">Prijedlog uređenja stana od 70 kvadrata</a></li>
+<li class="last"><a class="clearfix" href="http://magazin.net.hr/dom-vrt/interijer/carobni-poljski-namjestaj">Fotelja će vas doslovno polizati</a></li>
+</ul></div>
+</div><div class="box w-154">
+  <h2><em><a href="http://hot.net.hr/sexy/">sexy</a></em></h2>
+ <div class="box-inner"><ul>
+<li class="blank"><div class="head-three">
+<a href="http://hot.net.hr/sexy/seks-na-eks/ovako-vam-je-kate-upton-pozeljela-sretan-uskrs"><img width="146" height="100" alt="Ovako vam je Kate Upton poželjela Sretan Uskrs!" src="/2012/04/08/0139007.20.jpg" /></a>
+<h3><a href="http://hot.net.hr/sexy/seks-na-eks/ovako-vam-je-kate-upton-pozeljela-sretan-uskrs">Ovako vam je Kate Upton poželjela Sretan Uskrs!</a></h3>
+</div></li>
+<li><a class="clearfix" href="http://hot.net.hr/sexy/trikovi/savjeti-za-seks-kada-partner-ima-veliki-penis">Kako izaći na kraj s povećim 'tamo dolje'</a></li>
+<li><a class="clearfix" href="http://hot.net.hr/sexy/seks-na-eks/pravo-je-cudo-sto-je-grudi-uspjela-ugurati-u-kadar">Pravo je čudo što je grudi uspjela 'ugurati' u kadar</a></li>
+<li class="last"><a class="clearfix" href="http://hot.net.hr/sexy/tajne-poznatih/varala-sam-sve-muskarce-s-kojima-sam-bila">'Varala sam sve muškarce s kojima sam bila!'</a></li>
+</ul></div>
+</div><div class="box w-154">
+  <h2><em><a href="http://hot.net.hr/planet-x/">planet-x</a></em></h2>
+ <div class="box-inner"><ul>
+<li class="blank"><div class="head-three">
+<a href="http://hot.net.hr/planet-x/ufologija/vojni-pilot-otkrio-tajnu-koju-je-cuvao-40-godina"><img width="146" height="100" alt="Vojni pilot otkrio tajnu koju je čuvao 40 godina" src="/2012/04/06/0074007.20.jpg" /></a>
+<h3><a href="http://hot.net.hr/planet-x/ufologija/vojni-pilot-otkrio-tajnu-koju-je-cuvao-40-godina">Vojni pilot otkrio tajnu koju je čuvao 40 godina</a></h3>
+</div></li>
+<li><a class="clearfix" href="http://hot.net.hr/planet-x/ufologija/video-preplasili-nlo-ali-ga-prije-uspjeli-snimiti">VIDEO: Nevjerojatna snimka ipak autentična?</a></li>
+<li><a class="clearfix" href="http://hot.net.hr/planet-x/bliski-susreti/2012-mozete-prezivjeti-samo-ovdje">Jedino tamo možete preživjeti 2012.</a></li>
+<li class="last"><a class="clearfix" href="http://hot.net.hr/planet-x/ufologija/video-glasnici-apokalipse-padaju-diljem-svijeta">VIDEO: 'Glasnici apokalipse' padaju diljem svijeta</a></li>
+</ul></div>
+</div><div class="clear"><!-- spanner --></div>
+</div><!-- END section lay-four clearfix -->
+</div><!-- end content-main --><div id="sidebar-right">
+<div class="inner-side-cont">
+<div class="box"><script type="text/javascript" >
+nethr_src = 'http://ad.net.hr/js.ng/site=net.hr&adsize=132x170&PagePos=1&channel=naslovnica';
+now = new Date();
+var ran = "" + now.getTime();
+if(typeof(rndTile) == "undefined"){
+var rndTile=Math.floor(Math.random()*100000000);
+}
+document.write ('<scr'+'ipt type="text/javascript" sr'+'c="'+nethr_src+'&ran='+ran+'&tile='+rndTile+'"></scr'+'ipt>');
+</script><noscript><a href="http://ad.net.hr/click.ng/site=net.hr&adsize=132x170&PagePos=1&channel=naslovnica"><img border="0" src="http://ad.net.hr/image.ng/site=net.hr&adsize=132x170&PagePos=1&channel=naslovnica" alt="" /></a></noscript></div><div class="box"><script type="text/javascript" >
+nethr_src = 'http://ad.net.hr/js.ng/site=net.hr&adsize=132x171&PagePos=1&channel=naslovnica';
+now = new Date();
+var ran = "" + now.getTime();
+if(typeof(rndTile) == "undefined"){
+var rndTile=Math.floor(Math.random()*100000000);
+}
+document.write ('<scr'+'ipt type="text/javascript" sr'+'c="'+nethr_src+'&ran='+ran+'&tile='+rndTile+'"></scr'+'ipt>');
+</script><noscript><a href="http://ad.net.hr/click.ng/site=net.hr&adsize=132x171&PagePos=1&channel=naslovnica"><img border="0" src="http://ad.net.hr/image.ng/site=net.hr&adsize=132x171&PagePos=1&channel=naslovnica" alt="" /></a></noscript></div><div class="box"><script type="text/javascript" >
+nethr_src = 'http://ad.net.hr/js.ng/site=net.hr&adsize=132x101&PagePos=1&channel=naslovnica';
+now = new Date();
+var ran = "" + now.getTime();
+if(typeof(rndTile) == "undefined"){
+var rndTile=Math.floor(Math.random()*100000000);
+}
+document.write ('<scr'+'ipt type="text/javascript" sr'+'c="'+nethr_src+'&ran='+ran+'&tile='+rndTile+'"></scr'+'ipt>');
+</script><noscript><a href="http://ad.net.hr/click.ng/site=net.hr&adsize=132x101&PagePos=1&channel=naslovnica"><img border="0" src="http://ad.net.hr/image.ng/site=net.hr&adsize=132x101&PagePos=1&channel=naslovnica" alt="" /></a></noscript></div><div class="box"><script type="text/javascript" >
+nethr_src = 'http://ad.net.hr/js.ng/site=net.hr&adsize=132x100&PagePos=1&channel=naslovnica';
+now = new Date();
+var ran = "" + now.getTime();
+if(typeof(rndTile) == "undefined"){
+var rndTile=Math.floor(Math.random()*100000000);
+}
+document.write ('<scr'+'ipt type="text/javascript" sr'+'c="'+nethr_src+'&ran='+ran+'&tile='+rndTile+'"></scr'+'ipt>');
+</script><noscript><a href="http://ad.net.hr/click.ng/site=net.hr&adsize=132x100&PagePos=1&channel=naslovnica"><img border="0" src="http://ad.net.hr/image.ng/site=net.hr&adsize=132x100&PagePos=1&channel=naslovnica" alt="" /></a></noscript></div><div class="box"><script type="text/javascript" >
+nethr_src = 'http://ad.net.hr/js.ng/site=net.hr&adsize=132x50&PagePos=1&channel=naslovnica';
+now = new Date();
+var ran = "" + now.getTime();
+if(typeof(rndTile) == "undefined"){
+var rndTile=Math.floor(Math.random()*100000000);
+}
+document.write ('<scr'+'ipt type="text/javascript" sr'+'c="'+nethr_src+'&ran='+ran+'&tile='+rndTile+'"></scr'+'ipt>');
+</script><noscript><a href="http://ad.net.hr/click.ng/site=net.hr&adsize=132x50&PagePos=1&channel=naslovnica"><img border="0" src="http://ad.net.hr/image.ng/site=net.hr&adsize=132x50&PagePos=1&channel=naslovnica" alt="" /></a></noscript></div><div class="box bann-slider">    							
+	<ul id="slider-1" class="jcar-skin-bann-slider clearfix">
+	<li><div class="box clr-white palijan">
+<div class="box-head"><a href="http://webcafe.net.hr/bizzar/kolumna/ribafish/rostilj-ima-nesto-zdravo-lijepo-i-veselo-u-tome" target=""><img border="0" width="132" src="/2011/12/29/0268007.19.jpg" title="Roštilj &#8211; ima nešto zdravo, lijepo i veselo u tome" /></a></div>
+<div class="box-inner"><ul>
+<li class="lst-stl-one last"><a class="clearfix lnk-btn" href="http://webcafe.net.hr/bizzar/kolumna/ribafish/rostilj-ima-nesto-zdravo-lijepo-i-veselo-u-tome">Roštilj &#8211; ima nešto zdravo, lijepo i veselo u tome</a></li>
+</ul></div>
+</div></li>  
+	<li><div class="box clr-white dobric">
+<div class="box-head"><a href="http://danas.net.hr/hrvatska/ddobric/" target=""><img border="0" width="132" src="/2011/05/26/0943007.19.png" title="A jesam teška naivčina" /></a></div>
+<div class="box-inner"><ul>
+<li class="lst-stl-one last"><a class="clearfix lnk-btn" href="http://danas.net.hr/hrvatska/ddobric/rikverc-dalibora-dobrica-trazi-se-ljevicar-s-mudima">A jesam teška naivčina</a></li>
+</ul></div>
+</div></li>  
+	<li><a href="http://webcafe.net.hr/forwarduse/overkloking/" target=""><img width="132" alt="" title="" src="/2011/08/10/0220007.19.gif" /></a>
+</li>  
+	<li><a href="http://temedileme.magazin.hr/groups/" target=""><img width="132" alt="" title="" src="/2011/08/04/0085007.19.jpg" /></a>
+</li>  
+	<li><a href="http://sportski.net.hr/rezultati-uzivo/" target=""><img width="132" alt="" title="" src="/2011/08/04/0086007.19.jpg" /></a>
+</li>  
+	</ul>
+	<script type="text/javascript">		
+		jQuery(document).ready(function() {									
+		    jQuery('#slider-1').jcarousel({
+		         scroll: 1,
+		         animation: 800,
+			auto: 5,
+			wrap: 'circular',
+			buttonNextHTML: null,
+			buttonPrevHTML: null
+		    });								
+		});		
+	</script>	
+</div><!-- END box danas-izbor --><script type="text/javascript">
+
+	// if( top != self ) { top.window.location.href = self.window.location.href; }
+
+	function scur( el ) {
+		var p = el.value.indexOf( '@' );
+		if( 0 != p ) { return true; }
+		if( el.setSelectionRange ) {
+			el.focus();
+			el.setSelectionRange( 0, 0 );
+		}
+		else {
+			if( el.createTextRange ) {
+				range = el.createTextRange();
+				range.collapse(true);
+				range.moveEnd('character',0);
+				range.moveStart('character',0);
+				range.select();
+			}
+			else { el.focus(); }
+		}
+	}
+
+	function CheckAll( form ) {
+		if( form.ego_user.value == '' ) {
+			alert( 'Upišite e-mail adressu!' );
+			form.ego_user.focus();
+			return false;
+		}
+
+		if( form.ego_secret.value == '' ) {
+			alert( 'Upišite lozinku!' );
+			form.ego_secret.focus();
+			return false;
+		}
+		return true;
+	}
+
+	function ol() {
+		if( (document.log_centrum.ego_user.value == '') || (document.log_centrum.ego_user.value == '@net.hr') ) { document.log_centrum.ego_user.focus(); }
+		else { document.log_centrum.ego_secret.focus(); }
+	}
+
+</script>
+<div class="box clr-blue freemail">
+<h2><em><a href="http://user.net.hr/?url=freemail.net.hr">freemail</a></em></h2>
+<form id="log_centrum" method="post" name="log_centrum" action="http://user.net.hr/" onsubmit="return CheckAll( this );">
+<input type="hidden" name="url" id="url" value="http://freemail.net.hr" class="hidden" />
+<input type="hidden" name="ego_domain" value="net.hr" class="hidden" />
+<div class="box-inner">
+<label for="user">korisni&#269;ko ime:</label>
+<input type="text" id="ego_user" name="ego_user" class="tekst" onfocus="scur( this );" value="" />
+<label for="pass">lozinka:</label>
+<input type="password" name="ego_secret" id="ego_secret" class="tekst" />
+<input value="Prijava" name="submit" class="submit" type="submit" />
+<ul>
+<li><a href="http://webmail.iskon.hr/" target="_blank">inet.hr korisnici</a></li>
+<li><a href="http://prijava.net.hr/">otvori svoj<br />besplatni e-mail</a></li>
+</ul>
+</div>
+</form>
+</div><div class="box cura-dana">
+<ul class="clearfix">
+<li><a href="http://webcafe.net.hr/cura/">cura dana</a></li>  
+<li><a href="http://webcafe.net.hr/frajer/">frajer dana</a></li>  
+</ul>
+
+  <div style="background: url(http://webcafe.net.hr/2012/04/03/0305007.49.jpg) no-repeat 50% 50%;">
+  <a href="http://webcafe.net.hr/cura/">
+    <img src="http://file.net.hr/net/i/v2/bg_curadana_outdex_bottom.png" width="132" height="96" /><span>> pogledaj</span>
+  </a>
+  </div>
+
+</div><!-- END box cura-dana --><div class="box clr-purple">
+  <h2><em><a href="http://webcafe.net.hr/astronet/">astronet</a></em></h2>
+ <div class="box-inner clearfix"><ul>
+<li class="lst-stl-one"><a  class="clearfix" href="http://webcafe.net.hr/astronet/sanjarica/">Sanjarica</a></li>
+<li class="lst-stl-one"><a  class="clearfix" href="http://webcafe.net.hr/astronet/horoskopi/dnevni/">Današnji horoskop</a></li>
+<li class="lst-stl-one"><a  class="clearfix" href="http://webcafe.net.hr/astronet/horoskopi/kineski/">Kineski horoskop</a></li>
+<li class="lst-stl-one"><a  class="clearfix" href="http://webcafe.net.hr/astronet/horoskopi/sexy/">Sexy horoskop</a></li>
+<li class="lst-stl-one"><a  class="clearfix" href="http://webcafe.net.hr/astronet/horoskopi/zvjeroskop/">Zvjeroskop</a></li>
+<li class="lst-stl-one last"><a  class="clearfix" href="http://webcafe.net.hr/astronet/horoskopi/anti/">Antihoroskop</a></li>
+</ul></div>
+</div><div class="box" id="pageview-1"></div>
+<script type="text/javascript">	
+jQuery(document).ready(function() {	
+	var aArticles = new Array (
+										new Array ( '', '/2011/08/04/0174007.19.jpg', 'http://webcafe.net.hr/astronet/horoskopi/dnevni/', '' ),
+											new Array ( '', '/2011/08/04/0175007.19.jpg', 'http://webcafe.net.hr/forwarduse/vicevi/', '' ),
+											new Array ( '', '/2011/08/04/0176007.19.jpg', 'http://webcafe.net.hr/forwarduse/fore/', '' ),
+											new Array ( '', '/2011/08/04/0177007.19.jpg', 'http://webcafe.net.hr/webigrice/', '' )
+						)
+	var nRandom = (Math.floor(Math.random()*4));
+	jQuery("#pageview-1").append('<a class="lnk-roll lnk-roll-120" href="'+ aArticles[ nRandom ][ 2 ] +'" target="'+ aArticles[ nRandom ][ 3 ] +'" style="background-image: url('+ aArticles[ nRandom ][ 1 ] +')">'+ aArticles[ nRandom ][ 0 ] +'</a>');
+});
+</script><table width="132" cellpadding="0" cellspacing="0" style="background:#F0F0F0;>
+<tr style="padding-top: 5px;"><td colspan="5" width="1" height="5"></td></tr>
+<tr>
+<td width="5" height="1"></td>
+<td width="62"><img width="62" height="37" border="0" src="/i/LogoChat.gif"></td>
+<td width="9" height="1"></td>
+<td width="51"><a href="http://hot.net.hr/zvijezde/lijepa-lorena-nosic-prvi-put-na-chatu"><img style="border:1px solid #AAAAAA;" width="51" height="36" border="0" title="Lijepa Lorena Nosić na svom prvom chatu!" alt="Lijepa Lorena Nosić na svom prvom chatu!" src="/2012/03/29/0266007.21.jpg" /></a></td>
+<td width="4" height="1"></td>
+</tr>
+<tr><td colspan="5" width="1" height="5"></td></tr>
+<tr><td colspan="5" width="132"><img width="132" height="8" src="/i/OrangeChat.gif"></td></tr>
+<tr style="background-color: #F97C00;"><td colspan="5" width="132">
+<a href="http://hot.net.hr/zvijezde/lijepa-lorena-nosic-prvi-put-na-chatu" style="display: block; font: normal 11px/10px Arial, Verdana, sans-serif; color: #FFFFFF; margin: 5px 4px 5px 4px;">Lijepa Lorena Nosić na svom prvom chatu!</an>
+</td></tr>
+<tr style="background-color: #666666;"><td colspan="5" width="132">
+<a href="http://hot.net.hr/zvijezde/lijepa-lorena-nosic-prvi-put-na-chatu" style="display: block; font: normal 11px/10px Arial, Verdana, sans-serif; color: #FFFFFF; margin: 5px 4px 5px 4px;">Utorak, 10. 04. u 13.00</a>
+</td></tr>
+</table>
+<table cellpadding="0" cellspacing="0"><tr><td height="5"></td></tr></table><div class="box clr-green">
+  <h2><em>izračuni</em></h2>
+ <div class="box-inner clearfix"><ul>
+<li class="lst-stl-one"><a  class="clearfix" href="http://magazin.net.hr/zdravlje/page/2011/06/20/0199006.html">Idealna težina</a></li>
+<li class="lst-stl-one"><a  class="clearfix" href="http://magazin.net.hr/zdravlje/page/2011/06/07/0174006.html">Potrošnja kalorija</a></li>
+<li class="lst-stl-one"><a  class="clearfix" href="http://webcafe.net.hr/astronet/bioritam/">Bioritam</a></li>
+<li class="lst-stl-one"><a  class="clearfix" href="http://webcafe.net.hr/astronet/numerologija/page/2010/09/14/0629006.html">Vaši sretni brojevi su...</a></li>
+<li class="lst-stl-one last"><a  class="clearfix" href="http://webcafe.net.hr/astronet/numerologija/page/2010/09/14/0642006.html">Ljubavni kalkulator</a></li>
+</ul></div>
+</div><div class="box bann-slider">    							
+	<ul id="slider-2" class="jcar-skin-bann-slider clearfix">
+	<li><div class="box"><object width="130" height="120" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"><param name="movie" value="/2011/08/04/0123007.19.swf?clicktag=http://webcafe.net.hr/webigrice/poker/"/><param name="quality" value="high"/><param name="wmode" value="transparent" /><embed width="130" height="120" src="/2011/08/04/0123007.19.swf?clicktag=http://webcafe.net.hr/webigrice/poker/" quality="high" wmode="transparent" type="application/x-shockwave-flash" pluginsPage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed></object></div></li>  
+	<li><a href="http://trosjed.net.hr/" target=""><img width="132" alt="" title="" src="/2011/08/04/0124007.19.jpg" /></a>
+</li>  
+	<li><a href="http://forum.net.hr/" target=""><img width="132" alt="" title="" src="/2011/08/04/0125007.19.jpg" /></a>
+</li>  
+	<li><a href="http://webcafe.net.hr/webigrice/" target=""><img width="132" alt="" title="" src="/2011/08/04/0126007.19.jpg" /></a>
+</li>  
+	</ul>
+	<script type="text/javascript">		
+		jQuery(document).ready(function() {									
+		    jQuery('#slider-2').jcarousel({
+		         scroll: 1,
+		         animation: 800,
+			auto: 7,
+			wrap: 'circular',
+			buttonNextHTML: null,
+			buttonPrevHTML: null
+		    });								
+		});		
+	</script>	
+</div><!-- END box danas-izbor --><div class="box">
+  <h2><em>nagradnjače</em></h2>
+ <div class="box-inner clearfix"><ul>
+<li class="lst-stl-one"><a class="clearfix" href="http://hot.net.hr/glazba/euro-black-nation-predgrupa-balkan-beat-boxu">Vodimo vas na Balkan Beat Box!</a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://hot.net.hr/film/filmoskop/tajni-zivot-kucnih-pomocnica-konacno-na-dvd-u-i-blu-rayu">Tajni život kućnih pomoćnica na DVD-u i Blu-rayu!</a></li>
+<li class="lst-stl-one"><a class="clearfix" href="http://hot.net.hr/glazba/najbolje-trubaci-fanfare-ciocarlia-stizu-u-zagreb">Vodimo vas na Fanfare Ciocarlia u Aquariusu</a></li>
+<li class="lst-stl-one"><a class="clearfix" href="/infocentar/zg/nagradne/amnesty-international-daruje">Amnesty International daruje CD s romskom glazbom</a></li>
+<li class="lst-stl-one"><a class="clearfix" href="/infocentar/kulturalije/beskompromisni-vampirizam-i-eksplicitni-erotizam">Beskompromisni vampirizam i eksplicitni erotizam</a></li>
+<li class="lst-stl-one last"><a class="clearfix" href="http://hot.net.hr/sexy/seks-na-eks/evo-nacina-kako-zaciniti-seksualni-zivot">Evo načina kako začiniti seksualni život</a></li>
+</ul></div>
+</div><div class="box" id="pageview-2"></div>
+<script type="text/javascript">	
+jQuery(document).ready(function() {	
+	var aArticles = new Array (
+										new Array ( '', '/2011/08/04/0230007.19.png', 'http://www.facebook.com/Net.hr', '_blank' ),
+											new Array ( '', '/2011/08/04/0231007.19.png', 'http://www.facebook.com/Net.hr', '_blank' ),
+											new Array ( '', '/2011/08/04/0232007.19.png', 'http://www.facebook.com/Net.hr', '_blank' ),
+											new Array ( '', '/2011/08/04/0233007.19.png', 'http://www.facebook.com/Net.hr', '_blank' ),
+											new Array ( '', '/2011/08/04/0234007.19.png', 'http://www.facebook.com/Net.hr', '_blank' )
+						)
+	var nRandom = (Math.floor(Math.random()*5));
+	jQuery("#pageview-2").append('<a class="lnk-roll lnk-roll-120" href="'+ aArticles[ nRandom ][ 2 ] +'" target="'+ aArticles[ nRandom ][ 3 ] +'" style="background-image: url('+ aArticles[ nRandom ][ 1 ] +')">'+ aArticles[ nRandom ][ 0 ] +'</a>');
+});
+</script><div class="box clr-blue">
+  <h2><em><a href="/infocentar/">infocentar</a></em></h2>
+ <div class="box-inner clearfix"><ul>
+<li class="lst-stl-one"><a class="clearfix" rel="p2" pp="iframe=true&amp;width=1050&amp;height=720" href="http://www.hak.hr/info/stanje-na-cestama/" target="_blank"><strong>Stanje na cestama</strong></a></li>
+<li class="lst-stl-one"><a  class="clearfix" href="http://www.net.hr/infocentar/page/2009/08/03/0076006.html">Vremenska prognoza</a></li>
+<li class="lst-stl-one"><a  class="clearfix" href="http://www.net.hr/infocentar/tv-program/">TV-program</a></li>
+<li class="lst-stl-one"><a  class="clearfix" href="http://www.net.hr/infocentar/kino-program/">Kino-program</a></li>
+<li class="lst-stl-one"><a  class="clearfix" href="http://www.net.hr/infocentar/galerije/zagreb/">Galerije</a></li>
+<li class="lst-stl-one"><a  class="clearfix" href="http://www.net.hr/infocentar/muzeji/zagreb/">Muzeji</a></li>
+<li class="lst-stl-one"><a  class="clearfix" href="http://www.net.hr/infocentar/klubovi/zagreb/">Klubovi</a></li>
+<li class="lst-stl-one last"><a  class="clearfix" href="http://www.net.hr/infocentar/kazalisni-program/">Kazališta</a></li>
+</ul></div>
+</div>
+</div><!-- end inner-side-cont -->
+</div><!-- end sidebar-right --></div><!-- end inner -->
+</div><!-- end content-container -->
+<div id="page-footer">
+<div class="page-footer-inner clearfix">
+
+<div id="sitemap" class="clearfix">
+
+<div id="stmp-danashr">
+<h3><a href="http://danas.net.hr/">Danas.hr</a></h3>
+<ul>        
+<li><a href="http://danas.net.hr/hrvatska/">hrvatska</a></li>
+<li><a href="http://danas.net.hr/svijet/">svijet</a></li>
+<li><a href="http://danas.net.hr/crna-kronika/">crna kronika</a></li>
+
+<li><a href="http://danas.net.hr/novac/">novac</a></li>
+<li><a href="http://danas.net.hr/novac/tecajnalista/page/2010/01/09/0003006.html">tečajna lista</a></li>
+
+<li><a href="http://danas.net.hr/drugi-mediji/">izbor iz drugih medija</a></li>
+<li><a href="http://danas.net.hr/kultura/">kultura</a></li>
+<li><a href="http://danas.net.hr/znanost/">znanost</a></li>
+<li><a href="http://danas.net.hr/intervju-tjedna">intervju tjedna</a></li>
+<li><a href="http://danas.net.hr/kultura/">arhitektura</a></li>
+<li><a href="http://danas.net.hr/kultura/">knjige</a></li>
+</ul>       
+
+</div><!-- stmp-danas -->
+
+<div id="stmp-webcafe">
+<h3><a href="http://webcafe.net.hr/">Webcafe.hr</a></h3>
+<ul>
+<li><a href="http://webcafe.net.hr/astronet/horoskopi/">horoskopi</a></li>
+<li><a href="http://webcafe.net.hr/astronet/sanjarica/">sanjarica</a></li>
+<li><a href="http://webcafe.net.hr/astronet/bioritam/">bioritam</a></li>
+<li><a href="http://webcafe.net.hr/astronet/numerologija/">numerologija</a></li>
+<li><a href="http://webcafe.net.hr/forwarduse/vicevi/">vic dana</a></li>
+<li><a href="http://webcafe.net.hr/forwarduse/fore/">fora dana</a></li>
+<li><a href="http://webcafe.net.hr/forwarduse/video/">video dana</a></li>
+<li><a href="http://webcafe.net.hr/fotomanija/">fotomanija</a></li>
+<li><a href="http://webcafe.net.hr/cura/">cura dana</a></li>
+<li><a href="http://webcafe.net.hr/frajer/">frajer dana</a></li>
+<li><a href="http://webcafe.net.hr/webigrice/">web igrice</a></li>
+
+<li><a href="http://webcafe.net.hr/test-kviz/">test & kviz</a></li>
+<li><a href="http://webcafe.net.hr/bizzar/">bizzar</a></li>
+</ul>       
+</div><!-- stmp-webcafe -->
+
+<div id="stmp-sportski">
+<h3><a href="http://sportski.net.hr/">Sportski.net</a></h3>
+<ul>
+<li><a href="http://sportski.net.hr/nogomet/">nogomet</a></li>
+<li><a href="http://sportski.net.hr/kosarka/">košarka</a></li>
+<li><a href="http://sportski.net.hr/rukomet/">rukomet</a></li>
+<li><a href="http://sportski.net.hr/tenis/">tenis</a></li>
+<li><a href="http://sportski.net.hr/automoto/">automoto</a></li>
+<li><a href="http://sportski.net.hr/skijanje/">skijanje</a></li>
+<li><a href="http://sportski.net.hr/hokej/">hokej</a></li>
+<li><a href="http://sportski.net.hr/klub-boraca/">klub boraca</a></li>
+<li><a href="http://sportski.net.hr/na-rubu/">na rubu</a></li>
+<li><a href="http://sportski.net.hr/videosport/">videosport</a></li>
+<li><a href="http://sportski.net.hr/vremeplov/">vremeplov</a></li>
+<li><a href="http://sportski.net.hr/rezultati-uzivo/">rezultati uživo</a></li></ul>       
+</div><!-- stmp-sportski -->
+
+<div id="stmp-magazin">
+<h3><a href="http://magazin.net.hr/">Magazin.hr</a></h3>
+<ul>
+<li><a href="http://magazin.net.hr/moda/">moda</a></li>
+<li><a href="http://magazin.net.hr/ljepota/">ljepota</a></li>
+<li><a href="http://magazin.net.hr/putovanja/">putovanja</a></li>
+<li><a href="http://magazin.net.hr/zdravlje/">zdravlje</a></li>
+<li><a href="http://magazin.net.hr/roditeljstvo/trudnoca/">trudnoća</a></li>
+<li><a href="http://magazin.net.hr/roditeljstvo/">roditeljstvo</a></li>
+<li><a href="http://magazin.net.hr/dom-vrt/">dom&amp;vrt</a></li>
+<li><a href="http://magazin.net.hr/kuhinja/">kuhinja</a></li>
+<li><a href="http://magazin.net.hr/kuhinja/recepti/specijal/">recepti</a></li>
+<li><a href="http://magazin.net.hr/brak-veze/">brak&amp;veze</a></li>
+<li><a href="http://magazin.net.hr/ljubimci/">ljubimci</a></li>
+<li><a href="http://qa.net.hr/groups/">teme&amp;dileme</a></li>
+</ul>     
+</div><!-- stmp-magazin -->
+
+<div id="stmp-hot">
+<h3><a href="http://www.hot.hr/">Hot.hr</a></h3>
+
+<ul>
+<li><a href="http://www.hot.hr/zvijezde/">zvijezde</a></li>
+<li><a href="http://www.hot.hr/film/">film</a></li>
+<li><a href="http://www.hot.hr/glazba/">glazba</a></li>
+<li><a href="http://www.hot.hr/tv/">tv</a></li>
+<li><a href="http://www.hot.hr/sexy/">sexy</a></li>
+<li><a href="http://www.hot.hr/planet-x/">planet x</a></li>
+<li><a href="http://temedileme.magazin.hr/groups/sexy/forum/default.aspx">teme&amp;dileme</a></li>
+<li><a href="http://hot.net.hr/sexy/page/2011/09/29/0270006.html">sex kalkulator</a></li>
+<li><a href="http://www.hot.hr/zvijezde/tracevi/">tračevi</a></li>
+<li><a href="http://www.hot.hr/zvijezde/skandali/">skandali</a></li>
+</ul>     
+</div><!-- stmp-hot -->
+
+<div id="stmp-servisi">
+<h3><span>Servisi</span></h3>
+<ul>
+<li><a href="http://freemail.net.hr">freemail</a></li>
+<li><a href="http://forum.net.hr">forum</a></li>
+<li><a href="http://chat.net.hr">chat</a></li>
+<li><a href="http://webcafe.net.hr/webigrice/">web igrice</a></li>
+<li><a href="http://webcafe.net.hr/e-cestitke/">e-čestitke</a></li>
+<li><a href="http://www.net.hr/arhiva/">arhiva</a></li>
+<li><a href="http://trosjed.net.hr/">trosjed</a></li>
+<li><a href="http://nekretnine.net.hr/">nekretnine</a></li>
+<li><a href="http://auti.net.hr/">autooglasnik</a></li>
+<li><a href="http://oglasnik.net.hr/">oglasnik</a></li>
+<li><a href="http://prijava.net.hr/">registracija korisnika</a></li>
+<li><a href="http://www.net.hr/marketing/">oglašavanje</a></li>
+</ul>     
+</div><!-- stmp-servisi -->
+	
+</div><!-- end sitemap -->
+
+
+<div id="foot-search">
+<div class="inner-search">
+<form method="post" name="search-top" action="/search">
+<input type="hidden" name="page" value="1" />
+<input type="hidden" name="type" value="search" />
+<input type="hidden" name="suffix" value="/objects/Box/2002/06/11/0044002.1287.html" />
+<input type="hidden" name="site" value="200205210001003" />
+<input type="hidden" name="artperpage" value="15" />
+<input type="hidden" name="st" value="simple" />
+<input type="hidden" name="fh" value="1" />
+<input type="hidden" name="ct" value="Google" />
+<ul>
+<li><input name="q" class="q" type="text" /><input name="qunicode2" value="" type="hidden" /></li>
+<li class="submit"><input value="" class="t" type="submit" /></li>
+</ul>
+</form>
+</div>
+</div>
+<div id="sec-nav"><a href="javascript:;" onclick="addtofavorite();">spremi stranicu u favorites</a>  | <a href="mailto:urednik@portal.net.hr">pišite nam</a></div>
+</div><!-- end page-footer-inner -->
+</div><!-- end page-footer --><div id="page-copy">
+<ul>
+<li>&copy; 2000-2012</li>
+<li class="author"><a href="/">adriatic<em>media</em></a></li>
+<li>Sva prava pridr&#382;ana.</li>
+<li><a href="/uvjeti_koristenja/"><b>Uvjeti kori&#353;tenja</b></a></li>
+<li><a href="/marketing/">Marketing</a></li>
+<li><a href="/impresum/">Impresum</a></li>
+</ul>
+</div><!-- end page-copy -->
+</div><!-- end page container -->
+<!-- elements before end-of-body -->
+<!-- google analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3118478-1']);
+  _gaq.push(['_setDomainName', 'net.hr']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+  })();
+</script>
+<!-- / google analytics -->
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/0523.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+<!-- end elements before end-of-body -->
+</body>
+</html>

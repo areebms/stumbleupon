@@ -1,0 +1,602 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Home" />
+	<meta name="description" content="management+artists" />
+	<meta name="author" content="management+artists" />
+	<meta name="keywords" content="management+artists" />
+<title>MANAGEMENT+ARTISTS - Home</title>
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width=990" />
+<meta name="initial-scale=1, maximum-scale=1, user-scalable=yes" />
+
+<link href="/favicon.ico" type="image/png" rel="icon" />
+<link href="/favicon.png" type="image/png" rel="shortcut icon" />
+<link href="/favicon-114.png" rel="apple-touch-icon-precomposed" />
+
+<link rel="alternate" type="application/rss+xml" title="Management Artists News Feed" href="http://www.managementartists.com/news.rss" /> 
+
+
+<link rel="stylesheet" type="text/css" media="all" href="/css/white.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/black.css" />
+<script type="text/javascript">
+	var mapi = ''; // menu scrollbar
+	var api = ''; // other scrollbar
+	var bapi = ''; // bio scrollbar
+	var clapi = ''; // client list scrollbar
+	var menu = 0; // menu is hidden (1 = menu shown)
+	var contentTop = 0; // content top is 0 px
+	var home = 0; // set home to 0 (1 = on home page)
+	var pageTop = 30; // height of the page titles
+	var textSize = 10; // text size
+	var throttleTimeout; // timeout for jscrollpane
+	var mobile = false; // is mobile active
+
+	// for nav photo fades
+	var next_hover_delay = 1500;
+	var homepage_delay = 100;
+	var homenav_per_item_delay = 100;
+	var homenav_fadein_speed = 500;
+	var homenews_delay = 1100;
+
+</script>
+
+
+<script type="text/javascript" src="/js/02151201/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="/js/02151201/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="/js/02151201/jwplayer.js"></script>
+<script type="text/javascript" src="/js/02151201/swfobject.js"></script>
+<script type="text/javascript" src="/js/02151201/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="/js/02151201/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="/js/02151201/mwheelIntent.js"></script>
+<script type="text/javascript" src="/js/02151201/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/02151201/jquery.stylesheet.js"></script>
+<script type="text/javascript" src="/js/02151201/jquery.touchSwipe-1.2.4.js"></script>
+<script type="text/javascript" src="/js/02151201/functions.js"></script>
+<script type="text/javascript" src="/js/02151201/flexcroll-uncompressed.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+	<div class="logo" onclick="window.location.href='/';">
+		<h1>Management + Artists</h1>
+		<img src="/imgs/logo_white.png" alt="Management + Artists" title="Management + Artists" class="logo_white" />
+		<img src="/imgs/logo_black.png" alt="Management + Artists" title="Management + Artists" class="logo_black" />
+	</div>
+</div><script>
+//adjusting content because of position absolute
+// 1371   #window.width - 34 padding
+// --  X  -----
+// 85    new height
+//ems to px formula
+// em = px(target) / px(parent)
+(function(){
+	$.appendContentStyle = function(){
+		var windowWidth = $(window).width(),
+				fontsize = windowWidth < 1400 ? 14 : textSize*((windowWidth/textSize)/100),
+				paddingpx = 1.1 * fontsize,
+				top = ( ((windowWidth-(paddingpx*2)) * 85 / 1371) + (paddingpx*2) );
+		contentTop = top;
+		$('head').append('<style>#content{opacity:1;top:'+top+'px}</style>');
+	}
+	$.appendContentStyle();
+})();
+</script>
+<div id="content" class="top-bordered">
+	<div id="fader">
+		<div id="leftcol" class="home"><div id="logo">
+	<a href="/">Management+Artists</a>
+</div>
+
+<div id="nav">
+	<ul class="parent">
+					<li><a href="#" class="main division " id="photography">PHOTOGRAPHY</a>
+				<ul class="sub">
+									<li><a href="/photography/alexi-lubomirski" rel="alexi-lubomirski-photography">ALEXI LUBOMIRSKI</a></li>
+										<li><a href="/photography/benjamin-lennox" rel="benjamin-lennox-photography">BENJAMIN LENNOX</a></li>
+										<li><a href="/photography/camilla-akrans" rel="camilla-akrans-photography">CAMILLA AKRANS</a></li>
+										<li><a href="/photography/daniel-sannwald" rel="daniel-sannwald-photography">DANIEL SANNWALD</a></li>
+										<li><a href="/photography/dusan-reljin" rel="dusan-reljin-photography">DUSAN RELJIN</a></li>
+										<li><a href="/photography/elle-muliarchyk" rel="elle-muliarchyk-photography">ELLE MULIARCHYK</a></li>
+										<li><a href="/photography/katja-rahlwes" rel="katja-rahlwes-photography">KATJA RAHLWES</a></li>
+										<li><a href="/photography/lachlan-bailey" rel="lachlan-bailey-photography">LACHLAN BAILEY</a></li>
+										<li><a href="/photography/laurie-bartley" rel="laurie-bartley-photography">LAURIE BARTLEY</a></li>
+										<li><a href="/photography/mark-abrahams" rel="mark-abrahams-photography">MARK ABRAHAMS</a></li>
+										<li><a href="/photography/mark-seliger" rel="mark-seliger-photography">MARK SELIGER</a></li>
+										<li><a href="/photography/michelangelo-di-battista" rel="michelangelo-di-battista-photography">MICHELANGELO DI BATTISTA</a></li>
+										<li><a href="/photography/serge-leblon" rel="serge-leblon-photography">SERGE LEBLON</a></li>
+										<li><a href="/photography/steven-pan" rel="steven-pan-photography">STEVEN PAN</a></li>
+										<li><a href="/photography/tom-munro" rel="tom-munro-photography">TOM MUNRO</a></li>
+										<li><a href="/photography/victor-demarchelier" rel="victor-demarchelier-photography">VICTOR DEMARCHELIER</a></li>
+										<li><a href="/photography/willy-vanderperre" rel="willy-vanderperre-photography">WILLY VANDERPERRE</a></li>
+											<li class="category" style="padding-bottom: 0.5em;">Still Life Photography</li>
+													<li><a href="/photography/daniel-lindh" rel="daniel-lindh-photography">DANIEL LINDH</a></li>
+														<li><a href="/photography/daniel-schweizer" rel="daniel-schweizer-photography">DANIEL SCHWEIZER</a></li>
+														<li><a href="/photography/ines-dieleman" rel="ines-dieleman-photography">INES DIELEMAN</a></li>
+											</ul>
+			</li>
+						<li><a href="#" class="main division " id="moving-image">MOVING IMAGE</a>
+				<ul class="sub">
+									<li><a href="/moving-image/daniel-sannwald" rel="daniel-sannwald-moving-image">DANIEL SANNWALD</a></li>
+										<li><a href="/moving-image/dusan-reljin" rel="dusan-reljin-moving-image">DUSAN RELJIN</a></li>
+										<li><a href="/moving-image/elle-muliarchyk" rel="elle-muliarchyk-moving-image">ELLE MULIARCHYK</a></li>
+										<li><a href="/moving-image/willy-vanderperre" rel="willy-vanderperre-moving-image">WILLY VANDERPERRE</a></li>
+									</ul>
+			</li>
+						<li><a href="#" class="main division " id="stylists">STYLISTS</a>
+				<ul class="sub">
+									<li><a href="/stylists/aleksandra-woroniecka" rel="aleksandra-woroniecka-stylists">ALEKSANDRA WORONIECKA</a></li>
+										<li><a href="/stylists/ana-steiner" rel="ana-steiner-stylists">ANA STEINER</a></li>
+										<li><a href="/stylists/arianne-phillips" rel="arianne-phillips-stylists">ARIANNE PHILLIPS</a></li>
+										<li><a href="/stylists/camille-bidault-waddington" rel="camille-bidault-waddington-stylists">CAMILLE BIDAULT-WADDINGTON</a></li>
+										<li><a href="/stylists/joanna-schlenzka" rel="joanna-schlenzka-stylists">JOANNA SCHLENZKA</a></li>
+										<li><a href="/stylists/jonathan-kaye" rel="jonathan-kaye-stylists">JONATHAN KAYE</a></li>
+										<li><a href="/stylists/ludivine-poiblanc" rel="ludivine-poiblanc-stylists">LUDIVINE POIBLANC</a></li>
+										<li><a href="/stylists/melanie-huynh" rel="melanie-huynh-stylists">MELANIE HUYNH</a></li>
+										<li><a href="/stylists/samira-nasr" rel="samira-nasr-stylists">SAMIRA NASR</a></li>
+										<li><a href="/stylists/simon-robins" rel="simon-robins-stylists">SIMON ROBINS</a></li>
+										<li><a href="/stylists/sissy-vian" rel="sissy-vian-stylists">SISSY VIAN</a></li>
+										<li><a href="/stylists/tom-van-dorpe" rel="tom-van-dorpe-stylists">TOM VAN DORPE</a></li>
+										<li><a href="/stylists/vanessa-traina" rel="vanessa-traina-stylists">VANESSA TRAINA</a></li>
+											<li class="category" style="padding-bottom: 0.5em;">Special Projects</li>
+													<li><a href="/stylists/victoria-bartlett" rel="victoria-bartlett-stylists">VICTORIA BARTLETT</a></li>
+														<li><a href="/stylists/andrea-tenerani" rel="andrea-tenerani-stylists">ANDREA TENERANI</a></li>
+											</ul>
+			</li>
+						<li><a href="#" class="main division " id="hair-makeup">HAIR+MAKEUP</a>
+				<ul class="sub">
+										<li class="category" style="padding-bottom: 0.5em;">Hair</li>
+													<li><a href="/hair-makeup/nicolas-jurnjack" rel="nicolas-jurnjack-hair-makeup">NICOLAS JURNJACK</a></li>
+														<li><a href="/hair-makeup/rudi-lewis" rel="rudi-lewis-hair-makeup">RUDI LEWIS</a></li>
+														<li><a href="/hair-makeup/tomohiro-ohashi" rel="tomohiro-ohashi-hair-makeup">TOMOHIRO OHASHI</a></li>
+														<li><a href="/hair-makeup/yannick-d-is" rel="yannick-d-is-hair-makeup">YANNICK D&#039;IS</a></li>
+													<li class="category" style="padding-bottom: 0.5em;">Makeup</li>
+													<li><a href="/hair-makeup/adrien-pinault" rel="adrien-pinault-hair-makeup">ADRIEN PINAULT</a></li>
+														<li><a href="/hair-makeup/arianna-cattarin" rel="arianna-cattarin-hair-makeup">ARIANNA CATTARIN</a></li>
+														<li><a href="/hair-makeup/georgina-graham" rel="georgina-graham-hair-makeup">GEORGINA GRAHAM</a></li>
+														<li><a href="/hair-makeup/kaoru-okubo" rel="kaoru-okubo-hair-makeup">KAORU OKUBO</a></li>
+														<li><a href="/hair-makeup/romy-soleimani" rel="romy-soleimani-hair-makeup">ROMY SOLEIMANI</a></li>
+											</ul>
+			</li>
+						<li><a href="#" class="main division " id="creative-direction">CREATIVE DIRECTION</a>
+				<ul class="sub">
+									<li><a href="/creative-direction/dennis-freedman" rel="dennis-freedman-creative-direction">DENNIS FREEDMAN</a></li>
+										<li><a href="/creative-direction/dkc" rel="dkc-creative-direction">DKC</a></li>
+									</ul>
+			</li>
+					<li><a href="http://www.maosyndication.com/" class="main">Syndication</a></li>
+		<li><a href="/about" class="main">About Us</a></li>
+		<li><a href="/contact" class="main">Contact</a></li>
+		<li><a href="/news" class="main">News</a></li>
+		<li><a href="/lightbox" class="main">Lightbox</a></li>
+	</ul>
+	<div class="showmenu other"><a href="#">Menu</a></div>
+	<div class="showpage other"><a href="#">Back to Home</a></div>
+	<div class="backmenu other"><a href="#">Back to Menu</a></div>
+	<div class="backartist other"><a href="#">Back to Artist</a></div>
+</div></div>
+		<div id="rightcol" class="home">
+
+			<div class="page_title italic">
+				<a href="/news.rss" class="subscribe">&nbsp;</a>
+				<a href="#" class="right modal" id="subscribeToNewsLink" rel="newsOverlay">Subscribe to News</a>
+				<h1>News</h1>
+			</div>
+			<div id="news">
+				<div class="news_list">
+							<div class="news_item">
+				<div class="news_tags">
+					<div class="nt_recent">
+													<a href="/news/artist/lachlan+bailey">Recent News</a>
+												</div>
+					<div class="nt_date">
+						<strong>04.30.12</strong> &nbsp;
+						<strong><a href="/news/artist/lachlan+bailey">LACHLAN BAILEY</a></strong> &nbsp; <strong><a href="/news/artist/rudi+lewis">RUDI LEWIS</a></strong> &nbsp; <a href="/news/tag/"></a>					</div>
+				</div>
+				<h2 class="news_title">
+					<a href="/news/lachlan-bailey-photographs-abbey-lee-kershaw-for-vogue-china-may-2012">Lachlan Bailey Photographs Abbey Lee Kershaw for Vogue China, May 2012</a>
+				</h2>
+				<div class="news_image">
+													<a href="/news/lachlan-bailey-photographs-abbey-lee-kershaw-for-vogue-china-may-2012">
+									<img src="http://managementartists.s3.amazonaws.com/lg_4f85a743-ecfc-40a5-b15e-0db50a541b78.jpg" alt="" title="" />
+								</a>
+												</div>
+				<div class="news_body">
+					<p>Lachlan Bailey Photographs Abbey Lee Kershaw for Vogue China, May 2012 with hair by Rudi Lewis.</p>
+<p>Check out Lachlan's <a href="http://www.managementartists.com/photography/lachlan-bailey">portfolio</a> for more image. &nbsp;Follow the latest Lachlan shoots on&nbsp;<a href="https://www.facebook.com/LachlanBaileyMAO">Facebook</a>, and for the latest Rudi hairstyles, be sure to follow him on his&nbsp;<a href="https://www.facebook.com/pages/Rudi-Lewis/302545903118933?sk=wall">Facebook</a>&nbsp;page.</p>
+<p>&nbsp;&nbsp;</p>				</div>
+				<div class="news_actions">
+					<a href="/news/lachlan-bailey-photographs-abbey-lee-kershaw-for-vogue-china-may-2012" class="more">More</a> |
+					<a href="#" class="modal" rel="shareOverlay">Email This</a> |
+					<a href="/send/lachlan-bailey-photographs-abbey-lee-kershaw-for-vogue-china-may-2012">Print to PDF</a> | 
+					<span class="st_facebook" st_url="http://www.managementartists.com/news/lachlan-bailey-photographs-abbey-lee-kershaw-for-vogue-china-may-2012" st_title="Lachlan Bailey Photographs Abbey Lee Kershaw for Vogue China, May 2012" st_image="http://managementartists.s3.amazonaws.com/lg_4f85a743-ecfc-40a5-b15e-0db50a541b78.jpg"></span> 
+					<span class="st_twitter" st_url="http://www.managementartists.com/news/lachlan-bailey-photographs-abbey-lee-kershaw-for-vogue-china-may-2012" st_title="Lachlan Bailey Photographs Abbey Lee Kershaw for Vogue China, May 2012 - via @managementart" st_image="http://managementartists.s3.amazonaws.com/lg_4f85a743-ecfc-40a5-b15e-0db50a541b78.jpg"></span> 
+					<span class="st_sharethis" st_url="http://www.managementartists.com/news/lachlan-bailey-photographs-abbey-lee-kershaw-for-vogue-china-may-2012" st_title="Lachlan Bailey Photographs Abbey Lee Kershaw for Vogue China, May 2012" st_image="http://managementartists.s3.amazonaws.com/lg_4f85a743-ecfc-40a5-b15e-0db50a541b78.jpg"></span> | 
+					<iframe class="fblike" src="//www.facebook.com/plugins/like.php?href=http://www.managementartists.com/news/lachlan-bailey-photographs-abbey-lee-kershaw-for-vogue-china-may-2012&amp;send=false&amp;layout=standard&amp;width=52&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=24&amp;appId=182452345183208" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:52px; height:24px;" allowTransparency="true"></iframe>
+				</div>
+			</div>
+						<div class="news_item">
+				<div class="news_tags">
+					<div class="nt_recent">
+													<a href="/news/artist/melanie+huynh">Recent News</a>
+												</div>
+					<div class="nt_date">
+						<strong>04.27.12</strong> &nbsp;
+						<strong><a href="/news/artist/rudi+lewis">RUDI LEWIS</a></strong> &nbsp; <strong><a href="/news/artist/melanie+huynh">MELANIE HUYNH</a></strong> &nbsp; <a href="/news/tag/"></a>					</div>
+				</div>
+				<h2 class="news_title">
+					<a href="/news/melanie-huynh-styles-vogue-china-with-hair-by-rudi-lewis-may-2012">Melanie Huynh Styles Vogue China with Hair by Rudi Lewis, May 2012</a>
+				</h2>
+				<div class="news_image">
+													<a href="/news/melanie-huynh-styles-vogue-china-with-hair-by-rudi-lewis-may-2012">
+									<img src="http://managementartists.s3.amazonaws.com/lg_4f917bd6-fcf0-453a-915d-6fba0a660dbf.jpg" alt="" title="" />
+								</a>
+												</div>
+				<div class="news_body">
+					<p>Melanie Huynh Styles Vogue China with Hair by Rudi Lewis, May 2012</p>
+<p>For the latest Rudi hairstyles, be sure to follow him on&nbsp;<a href="https://www.facebook.com/pages/Rudi-Lewis/302545903118933?sk=wall">Facebook</a>&nbsp;and&nbsp;<a href="http://www.twitter.com/managementart">Twitter</a>&nbsp;as well as&nbsp;Melanie's styling tips on her&nbsp;<a href="https://www.facebook.com/pages/Melanie-Huynh/108484299269984">Facebook</a>&nbsp;page.</p>
+<p>&nbsp;</p>				</div>
+				<div class="news_actions">
+					<a href="/news/melanie-huynh-styles-vogue-china-with-hair-by-rudi-lewis-may-2012" class="more">More</a> |
+					<a href="#" class="modal" rel="shareOverlay">Email This</a> |
+					<a href="/send/melanie-huynh-styles-vogue-china-with-hair-by-rudi-lewis-may-2012">Print to PDF</a> | 
+					<span class="st_facebook" st_url="http://www.managementartists.com/news/melanie-huynh-styles-vogue-china-with-hair-by-rudi-lewis-may-2012" st_title="Melanie Huynh Styles Vogue China with Hair by Rudi Lewis, May 2012" st_image="http://managementartists.s3.amazonaws.com/lg_4f917bd6-fcf0-453a-915d-6fba0a660dbf.jpg"></span> 
+					<span class="st_twitter" st_url="http://www.managementartists.com/news/melanie-huynh-styles-vogue-china-with-hair-by-rudi-lewis-may-2012" st_title="Melanie Huynh Styles Vogue China with Hair by Rudi Lewis, May 2012 - via @managementart" st_image="http://managementartists.s3.amazonaws.com/lg_4f917bd6-fcf0-453a-915d-6fba0a660dbf.jpg"></span> 
+					<span class="st_sharethis" st_url="http://www.managementartists.com/news/melanie-huynh-styles-vogue-china-with-hair-by-rudi-lewis-may-2012" st_title="Melanie Huynh Styles Vogue China with Hair by Rudi Lewis, May 2012" st_image="http://managementartists.s3.amazonaws.com/lg_4f917bd6-fcf0-453a-915d-6fba0a660dbf.jpg"></span> | 
+					<iframe class="fblike" src="//www.facebook.com/plugins/like.php?href=http://www.managementartists.com/news/melanie-huynh-styles-vogue-china-with-hair-by-rudi-lewis-may-2012&amp;send=false&amp;layout=standard&amp;width=52&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=24&amp;appId=182452345183208" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:52px; height:24px;" allowTransparency="true"></iframe>
+				</div>
+			</div>
+						<div class="news_item">
+				<div class="news_tags">
+					<div class="nt_recent">
+													<a href="/news/artist/aleksandra+woroniecka">Recent News</a>
+												</div>
+					<div class="nt_date">
+						<strong>04.27.12</strong> &nbsp;
+						<strong><a href="/news/artist/aleksandra+woroniecka">ALEKSANDRA WORONIECKA</a></strong> &nbsp; <a href="/news/tag/"></a>					</div>
+				</div>
+				<h2 class="news_title">
+					<a href="/news/aleksandra-woroniecka-featured-as-club-monaco-style-muse">Aleksandra Woroniecka featured as Club Monaco Style Muse</a>
+				</h2>
+				<div class="news_image">
+													<a href="/news/aleksandra-woroniecka-featured-as-club-monaco-style-muse">
+									<img src="http://managementartists.s3.amazonaws.com/lg_4f7b2510-ac3c-454e-9366-6e740a541b78.jpg" alt="" title="" />
+								</a>
+												</div>
+				<div class="news_body">
+					<p>Aleksandra Woroniecka featured as <a href="http://www.clubmonaco.com/family/index.jsp?categoryId=12665326&amp;cp=12243590.12243597.12665326&amp;ab=ln_women_thelatest_stylemuse">Club Monaco Style Muse</a>, with photography by our Serge Leblon</p>
+<p>Follow Aleksandra's latest styling work on her&nbsp;<a href="https://www.facebook.com/pages/Aleksandra-Woroniecka/265885030136564?sk=wall">Facebook</a>.&nbsp;</p>
+<p></p>
+<p></p>				</div>
+				<div class="news_actions">
+					<a href="/news/aleksandra-woroniecka-featured-as-club-monaco-style-muse" class="more">More</a> |
+					<a href="#" class="modal" rel="shareOverlay">Email This</a> |
+					<a href="/send/aleksandra-woroniecka-featured-as-club-monaco-style-muse">Print to PDF</a> | 
+					<span class="st_facebook" st_url="http://www.managementartists.com/news/aleksandra-woroniecka-featured-as-club-monaco-style-muse" st_title="Aleksandra Woroniecka featured as Club Monaco Style Muse" st_image="http://managementartists.s3.amazonaws.com/lg_4f7b2510-ac3c-454e-9366-6e740a541b78.jpg"></span> 
+					<span class="st_twitter" st_url="http://www.managementartists.com/news/aleksandra-woroniecka-featured-as-club-monaco-style-muse" st_title="Aleksandra Woroniecka featured as Club Monaco Style Muse - via @managementart" st_image="http://managementartists.s3.amazonaws.com/lg_4f7b2510-ac3c-454e-9366-6e740a541b78.jpg"></span> 
+					<span class="st_sharethis" st_url="http://www.managementartists.com/news/aleksandra-woroniecka-featured-as-club-monaco-style-muse" st_title="Aleksandra Woroniecka featured as Club Monaco Style Muse" st_image="http://managementartists.s3.amazonaws.com/lg_4f7b2510-ac3c-454e-9366-6e740a541b78.jpg"></span> | 
+					<iframe class="fblike" src="//www.facebook.com/plugins/like.php?href=http://www.managementartists.com/news/aleksandra-woroniecka-featured-as-club-monaco-style-muse&amp;send=false&amp;layout=standard&amp;width=52&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=24&amp;appId=182452345183208" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:52px; height:24px;" allowTransparency="true"></iframe>
+				</div>
+			</div>
+						<div class="news_item">
+				<div class="news_tags">
+					<div class="nt_recent">
+													<a href="/news/artist/camilla+akrans">Recent News</a>
+												</div>
+					<div class="nt_date">
+						<strong>04.26.12</strong> &nbsp;
+						<strong><a href="/news/artist/camilla+akrans">CAMILLA AKRANS</a></strong> &nbsp; <strong><a href="/news/artist/sissy+vian">SISSY VIAN</a></strong> &nbsp; <a href="/news/tag/"></a>					</div>
+				</div>
+				<h2 class="news_title">
+					<a href="/news/camilla-akrans-photographs-vogue-japan-may-2012">Camilla Akrans photographs Vogue Japan, May 2012</a>
+				</h2>
+				<div class="news_image">
+													<a href="/news/camilla-akrans-photographs-vogue-japan-may-2012">
+									<img src="http://managementartists.s3.amazonaws.com/lg_4f32d3bc-adf0-4724-a57b-38ae0a08261c.jpg" alt="" title="" />
+								</a>
+												</div>
+				<div class="news_body">
+					<p>Camilla Akrans photographs Vogue Japan, May 2012 with styling by Sissy Vian</p>
+<p>Follow Camilla's latest work on&nbsp;<a href="https://www.facebook.com/CamillaAkransMAO">Facebook</a>&nbsp;and&nbsp;<a href="http://www.twitter.com/managementart">Twitter</a>. &nbsp;Also you can check out Sissy's newest styles on her&nbsp;<a href="https://www.facebook.com/pages/Sissy-Vian/191649607595682?sk=wall">Facebook</a>&nbsp;page as well.&nbsp;</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>				</div>
+				<div class="news_actions">
+					<a href="/news/camilla-akrans-photographs-vogue-japan-may-2012" class="more">More</a> |
+					<a href="#" class="modal" rel="shareOverlay">Email This</a> |
+					<a href="/send/camilla-akrans-photographs-vogue-japan-may-2012">Print to PDF</a> | 
+					<span class="st_facebook" st_url="http://www.managementartists.com/news/camilla-akrans-photographs-vogue-japan-may-2012" st_title="Camilla Akrans photographs Vogue Japan, May 2012" st_image="http://managementartists.s3.amazonaws.com/lg_4f32d3bc-adf0-4724-a57b-38ae0a08261c.jpg"></span> 
+					<span class="st_twitter" st_url="http://www.managementartists.com/news/camilla-akrans-photographs-vogue-japan-may-2012" st_title="Camilla Akrans photographs Vogue Japan, May 2012 - via @managementart" st_image="http://managementartists.s3.amazonaws.com/lg_4f32d3bc-adf0-4724-a57b-38ae0a08261c.jpg"></span> 
+					<span class="st_sharethis" st_url="http://www.managementartists.com/news/camilla-akrans-photographs-vogue-japan-may-2012" st_title="Camilla Akrans photographs Vogue Japan, May 2012" st_image="http://managementartists.s3.amazonaws.com/lg_4f32d3bc-adf0-4724-a57b-38ae0a08261c.jpg"></span> | 
+					<iframe class="fblike" src="//www.facebook.com/plugins/like.php?href=http://www.managementartists.com/news/camilla-akrans-photographs-vogue-japan-may-2012&amp;send=false&amp;layout=standard&amp;width=52&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=24&amp;appId=182452345183208" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:52px; height:24px;" allowTransparency="true"></iframe>
+				</div>
+			</div>
+						<div class="news_item">
+				<div class="news_tags">
+					<div class="nt_recent">
+													<a href="/news/artist/jonathan+kaye">Recent News</a>
+												</div>
+					<div class="nt_date">
+						<strong>04.26.12</strong> &nbsp;
+						<strong><a href="/news/artist/jonathan+kaye">JONATHAN KAYE</a></strong>					</div>
+				</div>
+				<h2 class="news_title">
+					<a href="/news/jonathan-kaye-styles-sinead-o-connor-for-gentlewoman-s-s-2012">Jonathan Kaye styles Sinead O&#039;Connor for Gentlewoman, S/S 2012</a>
+				</h2>
+				<div class="news_image">
+													<a href="/news/jonathan-kaye-styles-sinead-o-connor-for-gentlewoman-s-s-2012">
+									<img src="http://managementartists.s3.amazonaws.com/lg_4f70ecae-9580-486a-bd93-39230a541b78.jpg" alt="" title="" />
+								</a>
+																<a href="/news/jonathan-kaye-styles-sinead-o-connor-for-gentlewoman-s-s-2012">
+									<img src="http://managementartists.s3.amazonaws.com/lg_4f70ecbc-6e88-4e68-936a-3a5e0a541b78.jpg" alt="" title="" />
+								</a>
+												</div>
+				<div class="news_body">
+					<p>Jonathan Kaye styles Sinead O'Connor for Gentlewoman, S/S 2012</p>
+<p>Follow Jonathan styling stories and tips on&nbsp;<a href="https://www.facebook.com/pages/Jonathan-Kaye/270224643026126?sk=wall">Facebook</a>. &nbsp;Also follow Management Artists on&nbsp;<a href="https://twitter.com/#!/managementart">twitter</a>&nbsp;for latest updates and alerts.</p>
+<p>&nbsp;</p>				</div>
+				<div class="news_actions">
+					<a href="/news/jonathan-kaye-styles-sinead-o-connor-for-gentlewoman-s-s-2012" class="more">More</a> |
+					<a href="#" class="modal" rel="shareOverlay">Email This</a> |
+					<a href="/send/jonathan-kaye-styles-sinead-o-connor-for-gentlewoman-s-s-2012">Print to PDF</a> | 
+					<span class="st_facebook" st_url="http://www.managementartists.com/news/jonathan-kaye-styles-sinead-o-connor-for-gentlewoman-s-s-2012" st_title="Jonathan Kaye styles Sinead O&#039;Connor for Gentlewoman, S/S 2012" st_image="http://managementartists.s3.amazonaws.com/lg_4f70ecae-9580-486a-bd93-39230a541b78.jpg"></span> 
+					<span class="st_twitter" st_url="http://www.managementartists.com/news/jonathan-kaye-styles-sinead-o-connor-for-gentlewoman-s-s-2012" st_title="Jonathan Kaye styles Sinead O&#039;Connor for Gentlewoman, S/S 2012 - via @managementart" st_image="http://managementartists.s3.amazonaws.com/lg_4f70ecae-9580-486a-bd93-39230a541b78.jpg"></span> 
+					<span class="st_sharethis" st_url="http://www.managementartists.com/news/jonathan-kaye-styles-sinead-o-connor-for-gentlewoman-s-s-2012" st_title="Jonathan Kaye styles Sinead O&#039;Connor for Gentlewoman, S/S 2012" st_image="http://managementartists.s3.amazonaws.com/lg_4f70ecae-9580-486a-bd93-39230a541b78.jpg"></span> | 
+					<iframe class="fblike" src="//www.facebook.com/plugins/like.php?href=http://www.managementartists.com/news/jonathan-kaye-styles-sinead-o-connor-for-gentlewoman-s-s-2012&amp;send=false&amp;layout=standard&amp;width=52&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=24&amp;appId=182452345183208" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:52px; height:24px;" allowTransparency="true"></iframe>
+				</div>
+			</div>
+							</div>
+			</div>
+			<div class="page_pagination"><span class="current">1</span> | <span><a href="/home/page:2">2</a></span> | <span><a href="/home/page:3">3</a></span> | <span><a href="/home/page:4">4</a></span> | <span><a href="/home/page:5">5</a></span> | <span><a href="/home/page:6">6</a></span> | <span><a href="/home/page:7">7</a></span> | <span><a href="/home/page:8">8</a></span> | <span><a href="/home/page:9">9</a></span></div>
+		</div>
+	</div>
+</div>
+<div class="overlay" id="shareOverlay">
+	<div class="overlay_bg"></div>
+	<div class="overlay_inner">
+		<div class="overlay_con">
+		<form id="NewsForm" name="NewsForm">
+			<fieldset>
+				<input type="hidden" name="slug" id="nSlug" value=""/>
+				<label for="nTo">To</label>
+				<input type="text" name="recipients" id="nTo" />
+								<input type="text" name="more1" id="nRec1" />
+				<input type="text" name="more2" id="nRec2" value="etc" />
+				<p>
+					Separate multiple e-mail addresses with commas. Limited to 10 addresses.<br /> 
+					The e-mail addresses that you supply to use this service will not be shared with any third parties.
+				</p>
+				<label for="nSubject">Subject</label>
+				<input type="text" name="subject" id="nSubject" value=" on Management Artists" />
+				<label for="nName">Your Name</label>
+				<input type="text" name="name" id="nName" />
+				<label for="nEmail">Your Email Address</label>
+				<input type="text" name="email" id="nEmail" />
+				<label for="nComment">Comments</label>
+				<textarea rows="10" name="comments" id="nComment"></textarea>
+				<div class="btns">
+					<button type="submit" value="Send" name="fSubmit" id="fSubmit">Send</button>
+					<a href="#" class="fCancel">Cancel</a>
+				</div>
+			</fieldset>
+		</form>
+		</div>
+	</div>
+</div>
+<style type="text/css">
+	#nRec1, #nRec2 { display: none; }
+</style>
+<script type="text/javascript">
+var news_share_sending = false;
+$(document).ready(function() {
+	$('#NewsForm').submit(function() {
+		var email = $('#nEmail').val();
+		if (email != '') {
+			if (!news_share_sending) {
+				news_share_sending = true;
+				$('#fSubmit').text('Sending..');
+				$.ajax({
+					url: '/send',
+					data: $('#NewsForm').serialize(),
+					type: 'POST',
+					dataType: 'json',
+					success: function(json) {
+						if (json.success) {
+							$('.overlay').hide();
+						} else {
+							alert($(json.message).text());
+						}
+						news_share_sending = false;
+						$('#fSubmit').text('Send');
+					}
+				});
+			}
+		} else {
+			$('#nEmail').val('You must enter an email address');
+		}
+		return false;
+	});
+});
+</script><div class="overlay" id="newsOverlay">
+	<div class="overlay_bg"></div>
+	<div class="overlay_inner">
+		<div class="overlay_con" style="width:30em;">
+		<form name="SubscribeForm" id="SubscribeForm">
+			<fieldset>
+				Sign up to receive Management + Artists news updates
+				<label for="sName">Your Name</label>
+				<input type="text" name="data[Contact][name]" id="sName" />
+				<label id="lblEmail" for="sEmail">Your Email</label>
+				<input type="email" name="data[Contact][email]" id="sEmail" />
+				<div class="btns">
+					<button type="submit" value="Send" name="sSubmit" id="sSubmit">Send</button>
+					<a href="#" class="fCancel">Cancel</a>
+				</div>
+				<div class="clear"></div>
+				<br/>
+				<p>Management + Artists does not share e-mail addresses, please read our <a href="/privacy">Privacy Policy</a>.</p>
+			</fieldset>
+		</form>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#SubscribeForm').submit(function() {
+		var email = $('#sEmail').val();
+		console.log(email);
+		if (email != '') {
+			$.ajax({
+				url: '/contacts/subscribe',
+				data: $('#SubscribeForm').serialize(),
+				type: 'POST',
+				dataType: 'json',
+				success: function(json) {
+					if (json.success) {
+						$('#subscribeToNewsLink').text('You are subscribed to News.');
+						$('.overlay').hide();
+					} else {
+						$('#subscribeToNewsLink').text($(json.message).text());
+					}
+				}
+			});
+		} else {
+			$('#lblEmail').text('You must enter an email address');
+		}
+		return false;
+	});
+});
+</script>
+<script type="text/javascript">
+home = 1;
+$(document).ready(function() {
+	$('#nav, #nav ul.parent>li, #rightcol').css({'opacity': 0});
+	$('#header').css({'display': 'block'});
+	$('#logo').hide();
+	$('#nav').css({'top':'1.8em'});
+	$('#news').css({'bottom':'2.0em'});
+	if($.browser.mozilla){
+		fleXenv.fleXcrollMain("news");
+	}else if (!$.browser.webkit) {
+		$('#news').jScrollPane({autoReinitialise: true, autoReinitialiseDelay: 50});
+	}
+	$('#news .news_item:first-child').css({'borderTop': '0px'});
+	$('#nav').delay(homepage_delay).fadeTo(homenav_fadein_speed, 1.0, function() {
+		var items = $('#nav ul.parent>li');
+		for (var i=0; i<items.length; i++) {
+		$(items[i]).delay(i * homenav_per_item_delay).animate({
+				'opacity':1.0
+			}, homenav_fadein_speed);
+		};
+	});
+	$('#rightcol').delay(homenews_delay).fadeTo(500, 1.0, function() {
+			});
+});
+$(window).bind('resize', function() {
+	getPageTop();
+});
+
+function getPageTop() {
+	if (menu == 1){
+		$('#content').css({'top':'1.4em'});
+	} else {
+		// set the top position of the scrollbar based on header height
+		var hTop = $('#header').height();
+		contentTop = hTop + pageTop;
+		$('#content').css({'top':contentTop});
+	}
+}
+</script>
+<script type="text/javascript">
+var nav_photos = {"laurie-bartley":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2dafed-791c-49f0-9789-0b89f5724477.jpg","href":false,"cat":"photography"}],"serge-leblon":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db2da-e030-4c41-8609-0b89f5724477.jpg","href":"\/photography\/serge-leblon\/fashion-2","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ea58cf9-c698-4ebb-bef8-50390a7a1917.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f19e03b-94d8-4bbf-bc5d-79240a02a2c2.jpeg","href":"\/photography\/serge-leblon\/fashion-1","cat":"photography"}],"daniel-lindh":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db330-01b0-4630-a4c7-0b89f5724477.jpg","href":"\/photography\/daniel-lindh\/accessories","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2daeba-6af8-47d2-acf0-0b89f5724477.jpg","href":"\/photography\/daniel-lindh\/cosmetics","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2daeba-71c4-453b-afde-0b89f5724477.jpg","href":"\/photography\/daniel-lindh\/cosmetics","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2daeac-22d4-4dff-929b-0b89f5724477.jpg","href":"\/photography\/daniel-lindh\/cosmetics","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db334-fb68-46e2-9cb2-0b89f5724477.jpg","href":"\/photography\/daniel-lindh\/accessories","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2daeba-8e4c-4838-8e62-0b89f5724477.jpg","href":"\/photography\/daniel-lindh\/cosmetics","cat":"photography"}],"daniel-schweizer":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db4f6-7d1c-49f4-b339-0b89f5724477.jpg","href":"\/photography\/daniel-schweizer\/jewelry","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2dc0b0-0604-4686-b544-0b89f5724477.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2dc0b1-bbb4-4ac0-a8bf-0b89f5724477.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2dc0b1-1b78-4515-9dcf-0b89f5724477.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2dc0b1-9cdc-42bb-a54e-0b89f5724477.jpg","href":false,"cat":"photography"}],"dennis-freedman":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2daeac-4f78-4b56-aff3-0b89f5724477.jpg","href":"\/creative-direction\/dennis-freedman\/gabbana-ads","cat":"creative-direction"}],"mark-abrahams":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ec1a68a-13ac-4cff-9a86-45740a7a1917.jpg","href":"\/photography\/mark-abrahams\/portraits","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ec19ff3-a508-4e88-8314-3e910a7a1917.jpg","href":"\/photography\/mark-abrahams\/portraits","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ec1af0a-3958-4c9e-ab83-52e20a7a1917.jpg","href":"\/photography\/mark-abrahams\/portraits","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e9355cf-1e2c-4aef-adbe-2a6e0a7a1917.jpg","href":"\/photography\/mark-abrahams\/portraits","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db1a0-30a4-49fa-92a4-0b89f5724477.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e9480b0-b8b8-4b07-a285-20ea0a7a1917.jpg","href":"\/photography\/mark-abrahams\/portraits","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e95f6ef-6ad0-4ce0-8f8b-1ec50a7a1917.jpg","href":"\/photography\/mark-abrahams\/fashion-and-celebrities","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e9607e0-1d0c-41f4-a283-37380a7a1917.jpg","href":"\/photography\/mark-abrahams\/portraits","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e95d5e0-1914-4e51-a998-74b70a7a1917.jpg","href":"\/photography\/mark-abrahams\/portraits","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db1a0-ca98-47b5-be8e-0b89f5724477.jpg","href":"\/photography\/mark-abrahams\/music","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db1a0-07d4-4a5b-b17d-0b89f5724477.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e95e7f4-41a0-4e39-b4c5-11f50a7a1917.jpg","href":"\/photography\/mark-abrahams\/portraits","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f04a41d-ce60-42cd-a978-25ee0ac66fcf.jpg","href":"\/photography\/mark-abrahams\/fashion-and-celebrities","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f04a433-a368-44ec-9fa6-23550ac66fcf.jpg","href":"\/photography\/mark-abrahams\/fashion-and-celebrities","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e94984a-afec-4619-9166-29710a7a1917.jpg","href":"\/photography\/mark-abrahams\/fashion-and-celebrities","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db1a6-76a4-4537-af5b-0b89f5724477.jpg","href":"\/photography\/mark-abrahams\/fashion-and-celebrities","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e95bb3a-8748-449f-9d7c-11cf0a7a1917.jpg","href":"\/photography\/mark-abrahams\/fashion-and-celebrities","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e946523-1200-4bac-9c0f-5c5d0a7a1917.jpg","href":"\/photography\/mark-abrahams\/music","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e945fb2-ada8-4168-a8c8-4ba70a7a1917.jpg","href":"\/photography\/mark-abrahams\/music","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db1ae-bae8-4823-b4b1-0b89f5724477.jpg","href":"\/photography\/mark-abrahams\/work-archive\/stories-vmagazine-5","cat":"photography"}],"samira-nasr":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db165-2034-4706-87a1-0b89f5724477.jpg","href":"\/stylists\/samira-nasr\/editorial-1","cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2dc0bb-9534-400e-a137-0b89f5724477.jpg","href":false,"cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db15b-2800-4e69-b5a6-0b89f5724477.jpg","href":"\/stylists\/samira-nasr\/editorial-1","cat":"stylists"}],"nicolas-jurnjack":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db0c3-7628-45b8-a4ae-0b89f5724477.jpg","href":"\/hair-makeup\/nicolas-jurnjack\/portfolio","cat":"hair-makeup"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db0cf-2b90-4fc8-972b-0b89f5724477.jpg","href":"\/hair-makeup\/nicolas-jurnjack\/portfolio","cat":"hair-makeup"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db0cd-9b44-479b-97a1-0b89f5724477.jpg","href":"\/hair-makeup\/nicolas-jurnjack\/portfolio","cat":"hair-makeup"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db0d7-bea4-454e-bd0b-0b89f5724477.jpg","href":"\/hair-makeup\/nicolas-jurnjack\/portfolio","cat":"hair-makeup"}],"camille-bidault-waddington":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f2301cb-1160-4be4-ae03-0b350a02a2c2.jpg","href":false,"cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db11c-bfec-420e-abfc-0b89f5724477.jpg","href":"\/stylists\/camille-bidault-waddington\/editorial","cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db127-3cf0-4380-85d0-0b89f5724477.jpg","href":"\/stylists\/camille-bidault-waddington\/editorial","cat":"stylists"}],"joanna-schlenzka":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f230332-6858-4ee3-85d8-0c090a02a2c2.jpg","href":false,"cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2daf5a-5278-42b0-927b-0b89f5724477.jpg","href":"\/stylists\/joanna-schlenzka\/portfolio","cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f2304b8-82dc-4565-a5d3-0b690a02a2c2.jpg","href":false,"cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f2304bf-dc64-420b-a6f0-0b940a02a2c2.jpg","href":false,"cat":"stylists"}],"simon-robins":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2dc0b3-cfbc-4fba-b1c1-0b89f5724477.jpg","href":false,"cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2dc0b3-8700-4f66-9c3d-0b89f5724477.jpg","href":false,"cat":"stylists"}],"sissy-vian":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db10c-8cbc-47c9-8cc5-0b89f5724477.jpg","href":"\/stylists\/sissy-vian\/editorial","cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db116-105c-4b5f-800a-0b89f5724477.jpg","href":"\/stylists\/sissy-vian\/editorial","cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e9eea08-1288-4490-a8b9-25a80a7a1917.jpg","href":"\/stylists\/sissy-vian\/editorial","cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db101-4afc-469a-b428-0b89f5724477.jpg","href":"\/stylists\/sissy-vian\/editorial","cat":"stylists"}],"steven-pan":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e55168c-b670-48e4-99d2-51910a7a1917.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e5516d8-ae20-4904-91d6-51710a7a1917.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e5516d0-b6ec-486e-9f6f-51710a7a1917.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e554977-840c-40de-a7bb-12490a7a1917.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e554970-46d0-426b-b7fb-10200a7a1917.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e552009-6758-4d5f-83d1-5d1e0a7a1917.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f22e974-e798-4684-b303-2e240a02a2c2.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f22e9cc-c7dc-451b-be08-3d360a02a2c2.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f22ea0e-2f70-4f41-8f33-40110a02a2c2.jpg","href":false,"cat":"photography"}],"dusan-reljin":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ed751ae-b3e8-4fa4-9a6b-1a010a7a1917.jpg","href":"\/photography\/dusan-reljin\/work-archive\/dr_2011_11_elle_francia_mariacarla_boscono","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e658a04-e964-4ef7-8949-73e00a7a1917.jpg","href":"\/photography\/dusan-reljin\/work-archive\/dr_2010_mm_elle_daria","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db42b-54fc-4bc4-81c2-0b89f5724477.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e9dec76-42a0-4b45-a265-0bfe0a7a1917.jpg","href":"\/photography\/dusan-reljin\/work-archive\/dr_2011_09_us_elle_women_of_hollywood","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e9dec52-1178-4204-bd02-0bff0a7a1917.jpg","href":"\/photography\/dusan-reljin\/work-archive\/dr_2011_09_us_elle_women_of_hollywood","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db56c-92a4-4ca1-b71e-0b89f5724477.jpg","href":"\/photography\/dusan-reljin\/portraits","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e65817a-2610-49f4-80be-68770a7a1917.jpg","href":"\/photography\/dusan-reljin\/work-archive\/dr_2010_01_elle_france_laetitiacasta","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e65824e-796c-4b8d-ab47-69d10a7a1917.jpg","href":"\/photography\/dusan-reljin\/work-archive\/dr_2010_07_elle_france_charlizetheron","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db60e-b088-42a9-bfde-0b89f5724477.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e659a1d-af80-4c57-b0a0-79bd0a7a1917.jpg","href":"\/photography\/dusan-reljin\/work-archive\/dr_2011_09_vogue_spain_joansmalls_liuwen","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ec43ae9-c3d8-49ef-9b9e-49270a7a1917.jpg","href":"\/photography\/dusan-reljin\/work-archive\/dr_2010_mm_costume","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e9c74b4-d374-4285-bb4f-55720a7a1917.jpg","href":"\/photography\/dusan-reljin\/portraits","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e5e8725-5290-44d5-898c-6e980a7a1917.jpg","href":"\/photography\/dusan-reljin\/work-archive\/dr_2009_07_ad_victoriassecret","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db610-12a0-4b35-b59b-0b89f5724477.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db567-4070-4670-94c9-0b89f5724477.jpg","href":"\/photography\/dusan-reljin\/portraits","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db60c-8e74-443a-ada4-0b89f5724477.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e6597d3-e208-400e-addf-76530a7a1917.jpg","href":"\/photography\/dusan-reljin\/work-archive\/dr_2011_05_elle_us_gwenstefani","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f15bd78-a6e4-4b12-8105-12cb0a02a2c2.jpg","href":"\/photography\/dusan-reljin\/work-archive\/dr_2011_12_gq_aus_alexoloughlin","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e659ca4-01cc-4671-a83d-7da30a7a1917.jpg","href":"\/photography\/dusan-reljin\/work-archive\/dr_2011_mm_luxure_lips","cat":"photography"}],"victor-demarchelier":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e5c02c5-6564-4284-95c0-1b5e0a7a1917.jpg","href":"\/photography\/victor-demarchelier\/work-archive\/vd_2011_09_vogue_korea_arizonamuse","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e5c0ce1-3cec-41ca-93e7-22e90a7a1917.jpg","href":"\/photography\/victor-demarchelier\/work-archive\/vd_2010_fw_vivamoda_anjarubik","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e835f61-ee0c-4a34-a0d7-14d00a7a1917.jpg","href":"\/photography\/victor-demarchelier\/work-archive\/vd_2011_02_vogue_china_chanel_liuwen","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e98a940-ab18-46b2-85b2-23390a7a1917.jpg","href":"\/photography\/victor-demarchelier\/work-archive\/vd_2011_mm_wonderland","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e5c0c4f-d248-4441-8c02-23710a7a1917.jpg","href":"\/photography\/victor-demarchelier\/work-archive\/vd_2011_01_bazaar_us_fashionforacause","cat":"photography"}],"lachlan-bailey":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e8b32a8-c68c-4480-b8fa-02860a7a1917.jpg","href":"\/photography\/lachlan-bailey\/work-archive\/lby_2011_10_vogue_spain_natashapoly","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e8b34c8-d0b4-41a8-91b0-06090a7a1917.jpg","href":"\/photography\/lachlan-bailey\/work-archive\/lby_2011_fw_muse_onefromtheheart_doutzenkroes","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e8b6c57-8494-4a3d-ba26-434a0a7a1917.jpg","href":"\/photography\/lachlan-bailey\/work-archive\/lby_2011_08_vogue_uk_miditown","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e8b20b3-b0bc-4d5c-b1f5-5d4c0a7a1917.jpg","href":"\/photography\/lachlan-bailey\/work-archive\/lby_2010_fw_muse_editavilkeviciute","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f29675d-bce0-4622-835f-419a0a02a2c2.jpg","href":"\/photography\/lachlan-bailey\/work-archive\/lby_2012_02_last_jamiebochert","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f15b461-2ce4-4612-afab-6c880a02a2c2.jpg","href":"\/photography\/lachlan-bailey\/work-archive\/lby_2011_12_vogue_china_artdecocinema_feifeisun_a","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e8b2915-1f3c-499c-b11b-65e70a7a1917.jpg","href":"\/photography\/lachlan-bailey\/work-archive\/lby_2011_03_vogue_spain_alonewitharizona_arizonamuse","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f036b12-ec78-41cb-a918-5e4a0ac66fcf.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e8b64ba-07c0-4df5-b08b-39430a7a1917.jpg","href":"\/photography\/lachlan-bailey\/work-archive\/lby_2009_09_vogue_japan_anaturalloveaffair","cat":"photography"}],"aleksandra-woroniecka":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4eb05fcd-c67c-4eaf-8e6c-49060a7a1917.jpg","href":false,"cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f230057-1464-4054-addc-0b340a02a2c2.jpg","href":false,"cat":"stylists"}],"ana-steiner":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f22f3e0-0528-4b22-9c54-70f40a02a2c2.jpg","href":false,"cat":"stylists"}],"arianne-phillips":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2daed2-21dc-4454-957e-0b89f5724477.jpg","href":"\/stylists\/arianne-phillips\/editorial-1","cat":"stylists"}],"ludivine-poiblanc":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db051-b1c0-4910-8bc3-0b89f5724477.jpg","href":"\/stylists\/ludivine-poiblanc\/editorial","cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db063-fda4-4ca8-b824-0b89f5724477.jpg","href":"\/stylists\/ludivine-poiblanc\/editorial","cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db296-7220-47e8-8580-0b89f5724477.jpg","href":"\/stylists\/ludivine-poiblanc\/advertising","cat":"stylists"}],"melanie-huynh":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2dafbf-858c-4998-a642-0b89f5724477.jpg","href":false,"cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2dafbe-5578-4d81-9d49-0b89f5724477.jpg","href":"\/stylists\/melanie-huynh\/editorial","cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2dc0aa-ea7c-4862-aab9-0b89f5724477.jpg","href":false,"cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2dc0aa-3068-4928-89b6-0b89f5724477.jpg","href":false,"cat":"stylists"}],"victoria-bartlett":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db017-c0ac-4e13-9c1e-0b89f5724477.jpg","href":"\/stylists\/victoria-bartlett\/women","cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db01a-22d0-4fbb-8b8d-0b89f5724477.jpg","href":"\/stylists\/victoria-bartlett\/women","cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db01a-698c-4131-afac-0b89f5724477.jpg","href":"\/stylists\/victoria-bartlett\/women","cat":"stylists"}],"andrea-tenerani":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2daf1d-94b4-4d96-9a02-0b89f5724477.jpg","href":"\/stylists\/andrea-tenerani\/portfolio-1","cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2daf25-5944-4ac3-bee2-0b89f5724477.jpg","href":"\/stylists\/andrea-tenerani\/portfolio-1","cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2dc0bf-3010-468b-b988-0b89f5724477.jpg","href":false,"cat":"stylists"}],"rudi-lewis":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db027-f46c-4acd-8e24-0b89f5724477.jpg","href":"\/hair-makeup\/rudi-lewis\/women","cat":"hair-makeup"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db02e-fe4c-4425-83bf-0b89f5724477.jpg","href":"\/hair-makeup\/rudi-lewis\/women","cat":"hair-makeup"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db02c-dc30-4b48-84e6-0b89f5724477.jpg","href":"\/hair-makeup\/rudi-lewis\/women","cat":"hair-makeup"}],"yannick-d-is":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db07c-1b7c-4854-ad9c-0b89f5724477.jpg","href":"\/hair-makeup\/yannick-d-is\/fashion","cat":"hair-makeup"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f43be2e-25c8-4825-a798-171f0a541b78.jpg","href":"\/hair-makeup\/yannick-d-is\/fashion","cat":"hair-makeup"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db46d-0658-4351-bdb8-0b89f5724477.jpg","href":false,"cat":"hair-makeup"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db08a-6bf8-4d3f-bc0d-0b89f5724477.jpg","href":"\/hair-makeup\/yannick-d-is\/fashion","cat":"hair-makeup"}],"arianna-cattarin":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2daf84-6e40-4c11-b158-0b89f5724477.jpg","href":"\/hair-makeup\/arianna-cattarin\/portfolio","cat":"hair-makeup"}],"romy-soleimani":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2daf95-9d68-472d-909e-0b89f5724477.jpg","href":"\/hair-makeup\/romy-soleimani\/editorial","cat":"hair-makeup"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f3d28f9-c018-4be8-a45d-192d0a541b78.jpg","href":"\/hair-makeup\/romy-soleimani\/editorial","cat":"hair-makeup"}],"ines-dieleman":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db0a3-4130-431d-b112-0b89f5724477.jpg","href":"\/photography\/ines-dieleman\/jewelry","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db0a9-5ee4-439f-bec9-0b89f5724477.jpg","href":"\/photography\/ines-dieleman\/jewelry","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db3fe-6fc4-4329-8dc2-0b89f5724477.jpg","href":"\/photography\/ines-dieleman\/cosmetics","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db5e1-1a70-4628-be38-0b89f5724477.jpg","href":"\/photography\/ines-dieleman\/accessories","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f2285da-ded8-411b-8306-5d960a02a2c2.jpg","href":"\/photography\/ines-dieleman\/accessories","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f228c9e-91dc-4fd9-b671-5d960a02a2c2.jpg","href":"\/photography\/ines-dieleman\/watches","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db631-6f2c-4864-9b29-0b89f5724477.jpg","href":"\/photography\/ines-dieleman\/beverages","cat":"photography"}],"benjamin-lennox":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f198b43-8270-45e6-9d50-53f40a02a2c2.jpeg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f198e3f-5040-44ae-9839-5dff0a02a2c2.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e970a9c-1e18-48cd-86de-2ae20a7a1917.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f198af5-50dc-4a78-b94a-4e2e0a02a2c2.jpeg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f198ea7-d4a8-4937-ace3-5e730a02a2c2.jpg","href":false,"cat":"photography"}],"tom-munro":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4edcfe26-a0a8-4fa9-86eb-55d90a7a1917.jpg","href":"\/photography\/tom-munro\/fashion","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f19c863-dc0c-41bd-a0c5-1dcb0a02a2c2.jpg","href":"\/photography\/tom-munro\/celebrities","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4edcfeb3-6888-45a7-a71b-550c0a7a1917.jpg","href":"\/photography\/tom-munro\/beauty","cat":"photography"}],"camilla-akrans":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2daf2d-da30-4a42-9eee-0b89f5724477.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f2332d9-8e6c-455a-a96d-54280a02a2c2.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f2332e6-99f4-4a2e-8973-58880a02a2c2.jpg","href":false,"cat":"photography"}],"katja-rahlwes":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4eb98576-6080-4101-9465-06560a7a1917.jpg","href":"\/photography\/katja-rahlwes\/portfolio","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ea6e631-86c0-4eaa-b538-3dd80a7a1917.jpg","href":"\/photography\/katja-rahlwes\/portfolio","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ea7088c-6fe4-4682-87ad-04840a7a1917.jpg","href":"\/photography\/katja-rahlwes\/portfolio","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ea72caa-c4e4-4869-8876-57b10a7a1917.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ea58cbf-6838-4919-b9e1-4fdc0a7a1917.jpg","href":"\/photography\/katja-rahlwes\/portfolio","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ea6e9ea-8ee8-45c8-a83e-499e0a7a1917.jpg","href":false,"cat":"photography"}],"editorials":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4eb98576-6080-4101-9465-06560a7a1917.jpg","href":"\/work-archive-unpublished\/editorials\/vogue-japan\/kr_2011_oct_vogue_japan_julia_stegner","cat":"work-archive-unpublished"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ea6e631-86c0-4eaa-b538-3dd80a7a1917.jpg","href":"\/work-archive-unpublished\/editorials\/self-service\/kr_2007_fw_self_service_claudia_schiffer","cat":"work-archive-unpublished"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ea7088c-6fe4-4682-87ad-04840a7a1917.jpg","href":"\/work-archive-unpublished\/editorials\/self-service\/kr_2009_fw_self_service-31_anja_rubik","cat":"work-archive-unpublished"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ea72caa-c4e4-4869-8876-57b10a7a1917.jpg","href":"\/work-archive-unpublished\/editorials\/vogue-spain\/kr_2011_vogue_spain_magdalena","cat":"work-archive-unpublished"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ea58cbf-6838-4919-b9e1-4fdc0a7a1917.jpg","href":"\/work-archive-unpublished\/editorials\/vogue-paris\/kr_2009_feb_vogue_france_beaute_lara_stone","cat":"work-archive-unpublished"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ea6e9ea-8ee8-45c8-a83e-499e0a7a1917.jpg","href":"\/work-archive-unpublished\/editorials\/vogue-paris\/kr_2008_aug_vogue_paris_malgosia_bela","cat":"work-archive-unpublished"}],"michelangelo-di-battista":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2daf77-97d8-4c7f-8823-0b89f5724477.jpg","href":"\/photography\/michelangelo-di-battista\/fashion-beauty","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f15c1b9-9b00-4d04-a75b-17060a02a2c2.jpg","href":"\/photography\/michelangelo-di-battista\/celebrities","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e776197-5858-4e74-999e-42940a7a1917.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e776c12-95e4-477a-9b24-64630a7a1917.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f83f839-aed8-4644-86e2-597b0a660dbf.jpg","href":"\/photography\/michelangelo-di-battista\/celebrities","cat":"photography"}],"willy-vanderperre":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f43be2e-25c8-4825-a798-171f0a541b78.jpg","href":"\/photography\/willy-vanderperre\/fashion-women","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f212185-b1f4-43be-8f64-34110a02a2c2.jpg","href":"\/photography\/willy-vanderperre\/fashion-women","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f105086-983c-46b3-92df-56630a02a2c2.jpg","href":"\/photography\/willy-vanderperre\/advertising","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4eddf17a-720c-4f72-956c-40340a7a1917.jpg","href":"\/photography\/willy-vanderperre\/fashion-men","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f2ba414-f760-4357-bf24-51040a02a2c2.jpg","href":false,"cat":"photography"}],"elle-muliarchyk":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f2c393f-8a18-4865-a0c3-27410a02a2c2.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f2c395f-9d78-47c3-b380-26c40a02a2c2.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f16e8ab-9404-45e5-947c-738f0a02a2c2.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f16e8bc-740c-464a-a06f-750c0a02a2c2.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e9da463-899c-40fc-96bb-557f0a7a1917.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e9dbaaa-9c68-4d91-a3bc-76f90a7a1917.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e9db9ef-ac18-483d-ba16-76750a7a1917.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4eb95bc8-5568-4071-81f3-69390a7a1917.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e9db65a-0710-40c1-85cf-72630a7a1917.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4eb97ea6-1fe0-4f85-9fa1-05870a7a1917.jpg","href":false,"cat":"photography"}],"tom-van-dorpe":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f55446e-f614-490d-8dd8-6e450a541b78.jpg","href":false,"cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f5543a9-44a4-4863-83c6-6ae00a541b78.jpg","href":false,"cat":"stylists"}],"alexi-lubomirski":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f4e5718-9530-4530-aaf5-2a5d0a541b78.jpeg","href":"\/photography\/alexi-lubomirski\/work-archive\/al_2012_04_bazaar_uk_cate_blanchett","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f4e58d9-77e8-4494-926f-49420a541b78.jpg","href":"\/photography\/alexi-lubomirski\/work-archive\/al_2012_03_bazaar_uk","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f21b171-4dc4-41b9-b811-48b60a02a2c2.jpeg","href":"\/photography\/alexi-lubomirski\/work-archive\/al_2012_03_vogue_germany_adolescence","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e9d90a0-507c-4e5e-958e-3d1b0a7a1917.jpg","href":"\/photography\/alexi-lubomirski\/work-archive\/al_2011_11_vogue_germany_rosiehuntingtonwhiteley","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e526481-3538-40e3-bb99-56460a7a1917.jpg","href":"\/photography\/alexi-lubomirski\/work-archive\/al_2011_09_bazaar_uk_beyonce","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e7b6bf0-e39c-41f8-ae20-01c80a7a1917.jpg","href":"\/photography\/alexi-lubomirski\/work-archive\/al_2011_10_vogue_spain_cliveowen","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f15cd65-c6a8-48d6-8354-27ad0a02a2c2.jpg","href":"\/photography\/alexi-lubomirski\/work-archive\/al_2012_03_vogue_germany_waterski","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db0be-b79c-42bf-8a45-0b89f5724477.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e4bd65c-95fc-4a45-8f58-2c8c0a7a1917.jpg","href":"\/photography\/alexi-lubomirski\/work-archive\/al_2011_03_vogue_-spain_anjaysuschicos","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4eca7aab-de0c-41dc-8676-2e6d0a7a1917.jpg","href":"\/photography\/alexi-lubomirski\/work-archive\/al_2011_12_bazaar_us_celebs","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f70e543-81a8-4e88-b065-327b0a541b78.jpeg","href":"\/photography\/alexi-lubomirski\/fashion","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e4be1a0-fff0-4996-807c-3aa50a7a1917.jpg","href":"\/photography\/alexi-lubomirski\/work-archive\/al_2011_06_vogue_germany_karolinakurkova","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e4ade29-ef54-4104-a90c-325c0a7a1917.jpg","href":"\/photography\/alexi-lubomirski\/work-archive\/al_2010_05_bazaar_uk_jenniferaniston","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e4bcba0-7958-408a-8412-1b5a0a7a1917.jpg","href":"\/photography\/alexi-lubomirski\/work-archive\/al_2010_10_bazaar_uk_karenelson","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4eca8819-21fc-4701-a1c6-4ddf0a7a1917.jpg","href":"\/photography\/alexi-lubomirski\/work-archive\/al_2011_12_vogue_germany_karliekloss","cat":"photography"}],"daniel-sannwald":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f3ceda7-7de0-4196-a306-14a90a541b78.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f32e842-34c4-4f3b-9912-6bd80a08261c.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f32e81f-956c-4d20-a989-65f50a08261c.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f32e84a-f41c-4dfd-b2ce-6bd70a08261c.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f32e5f9-9e78-4733-81f1-583b0a08261c.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f3d0963-04e8-4811-afc9-19b10a541b78.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f32e69b-6b3c-4d80-9c42-5e3e0a08261c.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f5ba2bd-af54-4f1b-9b68-06e20a4c2a95.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f32e6aa-2880-4441-8a71-5e3e0a08261c.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f5e73d2-11c8-41e5-9864-18030a541b78.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f5eb9a7-c010-450d-94ce-29c80a4c2a95.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f5e7418-335c-4a50-9840-17b00a541b78.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f3cefe6-7b68-4a10-8a47-01920a541b78.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f5ba583-3a28-406f-a667-06e00a4c2a95.jpg","href":false,"cat":"photography"}],"mark-seliger":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db576-f414-4b86-991e-0b89f5724477.jpg","href":"\/photography\/mark-seliger\/portfolio-1","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db191-5514-47a0-8516-0b89f5724477.jpg","href":"\/photography\/mark-seliger\/work-archive\/vogue-germany-fashion-minnie-story","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db580-6400-4c09-88b2-0b89f5724477.jpg","href":"\/photography\/mark-seliger\/work-archive\/leonardodicaprio","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db57c-a894-4ad4-bf68-0b89f5724477.jpg","href":"\/photography\/mark-seliger\/portfolio-2","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db57f-de60-40be-a2a8-0b89f5724477.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db198-c844-47a7-9580-0b89f5724477.jpg","href":"\/photography\/mark-seliger\/work-archive\/vogue-italia-diane-kruger","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db391-aa0c-4bd0-a40b-0b89f5724477.jpg","href":"\/photography\/mark-seliger\/work-archive\/jasonstatham","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db193-8c60-4d05-9526-0b89f5724477.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db586-ba10-4f9e-9f04-0b89f5724477.jpg","href":"\/photography\/mark-seliger\/work-archive\/l-uomo-vogue-steven-spielberg-2007","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db195-554c-4353-9362-0b89f5724477.jpg","href":false,"cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db586-56c0-42b3-b4fd-0b89f5724477.jpg","href":"\/photography\/mark-seliger\/portfolio-2","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db19c-e7bc-4a8f-91c2-0b89f5724477.jpg","href":"\/photography\/mark-seliger\/work-archive\/isabellucas","cat":"photography"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db391-db78-4ebf-878f-0b89f5724477.jpg","href":"\/photography\/mark-seliger\/work-archive\/gq-us-aaron-eckhart-2007","cat":"photography"}],"vanessa-traina":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f68f6f3-5300-44ec-8042-13db0a541b78.jpg","href":"\/stylists\/vanessa-traina\/portfolio","cat":"stylists"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f68f609-0e1c-4d77-99a4-084b0a541b78.jpg","href":"\/stylists\/vanessa-traina\/portfolio","cat":"stylists"}],"georgina-graham":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f7db071-24b8-4505-aea5-420d0a660dbf.jpg","href":"\/hair-makeup\/georgina-graham\/women","cat":"hair-makeup"}],"tomohiro-ohashi":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f8c29c2-5cd4-40c7-a71a-4f460a660dbf.jpg","href":"\/hair-makeup\/tomohiro-ohashi\/women","cat":"hair-makeup"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f70e543-81a8-4e88-b065-327b0a541b78.jpeg","href":"\/hair-makeup\/tomohiro-ohashi\/women","cat":"hair-makeup"}],"adrien-pinault":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f719319-1b94-4836-9cb2-5f8a0a541b78.jpg","href":"\/hair-makeup\/adrien-pinault\/women","cat":"hair-makeup"}],"dkc":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f902533-6ae8-4e56-b211-0f400a541b78.jpg","href":"\/creative-direction\/dkc\/work","cat":"creative-direction"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f902501-5978-4115-9d2b-03440a541b78.jpg","href":"\/creative-direction\/dkc\/work","cat":"creative-direction"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f902590-b8b0-4f00-927a-7f680a541b78.jpg","href":"\/creative-direction\/dkc\/work","cat":"creative-direction"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f902560-4a88-4f9b-abfd-0f490a541b78.jpg","href":"\/creative-direction\/dkc\/work","cat":"creative-direction"}],"kaoru-okubo":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2dafdd-1790-49ac-b9b6-0b89f5724477.jpg","href":"\/hair-makeup\/kaoru-okubo\/portfolio","cat":"hair-makeup"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f554536-9814-4c76-bd63-5e9c0a541b78.jpg","href":false,"cat":"hair-makeup"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f554541-d118-4e9e-ade1-6cdf0a541b78.jpg","href":false,"cat":"hair-makeup"}],"jonathan-kaye":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db0a1-97b4-4cad-b9b4-0b89f5724477.jpg","href":"\/stylists\/jonathan-kaye\/women-1","cat":"stylists"}]};
+var division_photos = {"hair-makeup":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db027-f46c-4acd-8e24-0b89f5724477.jpg","href":"\/hair-makeup\/rudi-lewis\/women"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db0cd-9b44-479b-97a1-0b89f5724477.jpg","href":"\/hair-makeup\/nicolas-jurnjack\/portfolio"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2daf84-6e40-4c11-b158-0b89f5724477.jpg","href":"\/hair-makeup\/arianna-cattarin\/portfolio"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db1e3-320c-4ee1-b139-0b89f5724477.jpg","href":"\/hair-makeup\/tomohiro-ohashi\/women"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2daf95-9d68-472d-909e-0b89f5724477.jpg","href":"\/hair-makeup\/romy-soleimani\/editorial"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db07c-1b7c-4854-ad9c-0b89f5724477.jpg","href":"\/hair-makeup\/yannick-d-is\/fashion"}],"photography":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2daf77-97d8-4c7f-8823-0b89f5724477.jpg","href":"\/photography\/michelangelo-di-battista\/fashion-beauty"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f2332d9-8e6c-455a-a96d-54280a02a2c2.jpg","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e4bcb7a-b0dc-4771-b887-18080a7a1917.jpg","href":"\/photography\/alexi-lubomirski\/work-archive\/al_2010_10_bazaar_uk_karenelson"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f15b418-2554-4e71-a9ea-73c80a02a2c2.jpg","href":"\/photography\/lachlan-bailey\/work-archive\/lby_2011_12_vogue_china_artdecocinema_feifeisun_a"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e776197-5858-4e74-999e-42940a7a1917.jpg","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f83f839-aed8-4644-86e2-597b0a660dbf.jpg","href":"\/photography\/michelangelo-di-battista\/celebrities"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db2e7-9774-4e09-8e6e-0b89f5724477.jpg","href":"\/photography\/serge-leblon\/fashion-2"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e776c12-95e4-477a-9b24-64630a7a1917.jpg","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2daf75-afd4-4fed-b3fc-0b89f5724477.jpg","href":"\/photography\/michelangelo-di-battista\/fashion-beauty"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ed751ae-b3e8-4fa4-9a6b-1a010a7a1917.jpg","href":"\/photography\/dusan-reljin\/portfolio"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e5516d0-b6ec-486e-9f6f-51710a7a1917.jpg","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e9dbaaa-9c68-4d91-a3bc-76f90a7a1917.jpg","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ec19ff3-a508-4e88-8314-3e910a7a1917.jpg","href":"\/photography\/mark-abrahams\/portraits"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e5c02c5-6564-4284-95c0-1b5e0a7a1917.jpg","href":"\/photography\/victor-demarchelier\/work-archive\/vd_2011_09_vogue_korea_arizonamuse"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e4bd658-f65c-49c3-84ce-28b40a7a1917.jpg","href":"\/photography\/alexi-lubomirski\/work-archive\/al_2011_03_vogue_-spain_anjaysuschicos"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e8b32a8-c68c-4480-b8fa-02860a7a1917.jpg","href":"\/photography\/lachlan-bailey\/work-archive\/lby_2011_10_vogue_spain_natashapoly"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db24e-8334-42f8-a026-0b89f5724477.jpg","href":"\/photography\/tom-munro\/celebrities"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f2332e6-99f4-4a2e-8973-58880a02a2c2.jpg","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db143-cfb0-4b9f-bbdb-0b89f5724477.jpg","href":"\/photography\/serge-leblon\/fashion-1"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4eb97e9a-68cc-4ba3-825e-05270a7a1917.jpg","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e554970-46d0-426b-b7fb-10200a7a1917.jpg","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e8b352b-526c-456b-aa1f-06090a7a1917.jpg","href":"\/photography\/lachlan-bailey\/work-archive\/lby_2011_fw_muse_onefromtheheart_doutzenkroes"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e9d9056-7340-4009-8b59-3ca30a7a1917.jpg","href":"\/photography\/alexi-lubomirski\/work-archive\/al_2011_11_vogue_germany_rosiehuntingtonwhiteley"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f19af97-ef88-4659-a0ec-4ac90a02a2c2.jpg","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f19dd10-af0c-4c37-afab-635c0a02a2c2.jpg","href":"\/photography\/serge-leblon\/fashion-1"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ec193b2-6920-434d-9f24-2c360a7a1917.jpg","href":"\/photography\/mark-abrahams\/portraits"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e5c0ce1-3cec-41ca-93e7-22e90a7a1917.jpg","href":"\/photography\/victor-demarchelier\/work-archive\/vd_2010_fw_vivamoda_anjarubik"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db580-6400-4c09-88b2-0b89f5724477.jpg","href":"\/photography\/mark-seliger\/portfolio-2"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e989e2c-d74c-45be-90f7-16330a7a1917.jpg","href":"\/photography\/laurie-bartley\/work-archive\/lb_2011_09_elle_us_escapeartist"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4eb9b35d-423c-4068-a580-255f0a7a1917.jpg","href":"\/photography\/katja-rahlwes\/portfolio"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f5eb9a7-c010-450d-94ce-29c80a4c2a95.jpg","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e65814f-5dc8-4bb4-bfd2-671e0a7a1917.jpg","href":"\/photography\/dusan-reljin\/portfolio"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4eb95bc8-5568-4071-81f3-69390a7a1917.jpg","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f186963-37f8-4698-a863-48390a02a2c2.jpg","href":"\/photography\/camilla-akrans\/fashion-women"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f199bc9-8978-43f2-8860-06d80a02a2c2.jpg","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e5c0c4f-d248-4441-8c02-23710a7a1917.jpg","href":"\/photography\/victor-demarchelier\/work-archive\/vd_2011_01_bazaar_us_fashionforacause"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db197-1b60-44de-982a-0b89f5724477.jpg","href":"\/photography\/mark-seliger\/portfolio-1"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db2d6-3990-4e87-8ec6-0b89f5724477.jpg","href":"\/photography\/serge-leblon\/fashion-2"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db30a-73b8-4cf6-beb3-0b89f5724477.jpg","href":"\/photography\/michelangelo-di-battista\/celebrities"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4eb98576-6080-4101-9465-06560a7a1917.jpg","href":"\/photography\/katja-rahlwes\/portfolio"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ec43ae9-c3d8-49ef-9b9e-49270a7a1917.jpg","href":"\/photography\/dusan-reljin\/work-archive\/dr_2010_mm_costume"}],"moving-image":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f26f5d2-edd4-4928-aeb8-7aae0a02a2c2.png","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f26f5e1-7c70-42b6-b50b-7aaf0a02a2c2.png","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f26f6a4-2344-4ca6-bcd0-7aaf0a02a2c2.png","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f26f573-fd28-4fd2-8ecd-79550a02a2c2.png","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f26f6ba-395c-4d5a-8df4-050b0a02a2c2.png","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f26f58b-0734-4389-bef8-74e80a02a2c2.png","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f26f656-e614-46ba-8d6a-74b00a02a2c2.png","href":false}],"stylists":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4eb05fcd-c67c-4eaf-8e6c-49060a7a1917.jpg","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4f22f3e0-0528-4b22-9c54-70f40a02a2c2.jpg","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2daed2-21dc-4454-957e-0b89f5724477.jpg","href":"\/stylists\/arianne-phillips\/editorial-1"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db11c-bfec-420e-abfc-0b89f5724477.jpg","href":"\/stylists\/camille-bidault-waddington\/editorial"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2daf5a-5278-42b0-927b-0b89f5724477.jpg","href":"\/stylists\/joanna-schlenzka\/portfolio"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db051-b1c0-4910-8bc3-0b89f5724477.jpg","href":"\/stylists\/ludivine-poiblanc\/editorial"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2dafbf-858c-4998-a642-0b89f5724477.jpg","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db15b-2800-4e69-b5a6-0b89f5724477.jpg","href":"\/stylists\/samira-nasr\/editorial-1"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2dc0b3-8700-4f66-9c3d-0b89f5724477.jpg","href":false},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db101-4afc-469a-b428-0b89f5724477.jpg","href":"\/stylists\/sissy-vian\/editorial"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ea72d71-61c8-422f-9447-58df0a7a1917.jpg","href":"\/stylists\/tom-van-dorpe\/portfolio"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2db017-c0ac-4e13-9c1e-0b89f5724477.jpg","href":"\/stylists\/victoria-bartlett\/women"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4e2daf1d-94b4-4d96-9a02-0b89f5724477.jpg","href":"\/stylists\/andrea-tenerani\/portfolio-1"}],"work-archive-unpublished":[{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4ea83c85-a48c-41e0-8a9f-59e90a7a1917.jpg","href":"\/work-archive-unpublished\/editorials\/vogue-japan\/kr_2011_oct_vogue_japan_julia_stegner"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4eb9b35d-423c-4068-a580-255f0a7a1917.jpg","href":"\/work-archive-unpublished\/editorials\/vogue-paris\/kr_2011_oct_vogue_paris_magdalena_frackowiak"},{"img":"http:\/\/managementartists.s3.amazonaws.com\/gl_4eb98576-6080-4101-9465-06560a7a1917.jpg","href":"\/work-archive-unpublished\/editorials\/vogue-japan\/kr_2011_oct_vogue_japan_julia_stegner"}]};
+</script>
+<div id="navPhotos">
+	<div class="n_photos">
+		<table>
+			<tr>
+				<td id="nav_photos_holder">
+				</td>
+			</tr>
+		</table>
+	</div>
+</div></div>
+<div id="footer">
+	<div class="f_bgcolor">
+		<span>Background Color</span>
+		<a href="javascript:void(0);" rel="/css/white.css" id="whiteSwitcher" class="css">white</a>
+		<a href="javascript:void(0);" rel="/css/black.css" id="blackSwitcher" class="css">black</a>
+	</div>
+	<div class="f_links">
+		<a href="/privacy">Privacy Policy</a>  <a href="/terms">Terms of Service</a>
+	</div>
+	<div class="f_social">
+		<a href="http://www.youtube.com/user/ManagementArtists" target="_blank"><img src="/imgs/youtube-icon.png" alt="youtube" /></a>
+		<a href="http://www.facebook.com/pages/Management-Artists-Organization/117155765003885?v=wall"><img src="/imgs/facebook-icon.png" /></a>
+		<a href="https://twitter.com/#!/managementart"><img src="/imgs/twitter-icon.png" /></a>
+	</div>
+	<div class="f_search">
+		<form id="SearchForm" name="SearchForm" action="/search" method="POST">
+			<fieldset>
+				<label for="f_search">Search</label> <input type="text" name="search_terms" id="f_search" />
+			</fieldset>
+		</form>
+	</div>
+	<div class="f_lightbox"><a href="/lightbox" class="sel">Lightbox: <em class="lightbox_count">0</em></a></div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		if (typeof nav_photos != 'undefined') {
+			var $nph = $('#nav_photos_holder');
+			$.each(nav_photos, function(index, val) {
+				var pindex;
+				var cindex = vindex = -1;
+				$.each(val, function(valindex, pic) {
+					if (pic.href == false) pic.href = 'javascript:void(0);';
+					if (pic.cat == 'moving-image') {
+						pic.cat = '-'+pic.cat;
+						cindex++;
+						pindex = cindex;
+					} else {
+						pic.cat = '-'+pic.cat;
+						vindex++;
+						pindex = vindex;
+					}
+
+					$nph.append('<a href="' + pic.href + '"><img class="' + index + pic.cat + '" id="' + index + pic.cat + '-' + pindex + '" src="' + pic.img + '" /></a>');
+				});
+			});
+		}
+		if (typeof division_photos != 'undefined') {
+			var $nph = $('#nav_photos_holder');
+			$.each(division_photos, function(index, val) {
+				$.each(val, function(valindex, pic) {
+					if (pic.href == false) pic.href = 'javascript:void(0);';
+					$nph.append('<a href="' + pic.href + '"><img class="division-' + index + '" id="division-' + index + '-' + valindex + '" src="' + pic.img + '" /></a>');
+				});
+			});
+		}
+	});
+</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher:'a32451a6-5a53-456a-8b79-0b92f12691b8'});</script>
+<!--Footer-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26549608-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

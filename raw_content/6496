@@ -1,0 +1,1855 @@
+<meta http-equiv="X-UA-Compatible" content="IE=5"><html><head><title>Breaking News &amp; Top Stories - World News, US &amp; Local | NBC News</title><link rel="stylesheet" type="text/css" href="http://assets.msnbc.msn.com/rendering/msnbc/wb/assets/wb_html40.css" /><link rel="stylesheet" type="text/css" href="http://assets.msnbc.msn.com/rendering/msnbc/wb/assets/wb_front_cover_core.css" /><script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.5.2.min.js"></script><script type="text/javascript" src="/js/std.js"></script><script type="text/javascript" src="/id/28644474?agency "></script>
+<script language="JavaScript" type="text/javascript" src="http://assets.msnbc.msn.com/rendering/msnbc/html40/assets/Js/Analytics.js?v=06012013"></script><script type="text/javascript">gEnabled=false;</script><meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta name="description" content="Visit NBCNEWS.com for breaking news, original journalism and videos. Stay current with the latest world news, business headlines, health, sports &amp; entertainment."><meta name="robots" content="noodp, noydir"><meta name="Search.Document" content="front"><meta name="Search.Updated" content="Sat, 01 Jun 2013 00:03:22 GMT"><meta name="Search.Section" content="Cover"><link rel="alternate" type="application/rss+xml" title="MSNBC - Top Stories" href="http://rss.msnbc.msn.com/id/3032091/device/rss/rss.xml">
+<link rel="alternate" type="application/rss+xml" title="MSNBC - Most Viewed" href="http://rss.msnbc.msn.com/id/3058960/displaymode/1026/eventType/1/rss/rss.xml"><!-- empty tracking cdata 29473223 --><script type="text/javascript">
+   
+function DateTime(){
+ var ma=["Jan","Feb","March","April","May","June","July","Aug","Sept","Oct","Nov","Dec"];
+ var wa=["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
+ var za=["ET","CT","MT","PT","AKT","HT","HT"];
+ 
+ this.D2S= function(d,f){
+  var r="as of ";
+  return r+"<span class=\"time\">"+GetT(d)+"</span> <span class=\"date\">"+GetD(d)+"</span>";
+ };
+ 
+ var T2M=function(t){
+  return parseInt((t-621355968000000000)/10000);
+ };
+ 
+ this.T2D = function(t){
+  return new Date(T2M(t));
+ };
+ 
+ var GetT= function(d){
+  var h=d.getHours();
+  var m=d.getMinutes();
+  return((h<13)?((h==0)?12:h):(h-12))+":"+((m<10)?"0"+m:m)+" "+((h<12)?"a.m.":"p.m.");
+ };
+ 
+ var GetD=function(d){
+  var m=ma[d.getMonth()]+" "+d.getDate()+", "+d.getFullYear();
+  return m;
+ };
+ 
+ this.GetTZ=function(d){
+  var o=d.getTimezoneOffset()/60;
+  var st=(d.toString().lastIndexOf("ST")>-1||d.toString().lastIndexOf("Standard Time")>-1)?5:4;
+  return(o<=10&&o>=st)?za[o-st]:false;
+ };
+}
+
+$(document).ready(
+ function(){
+  var now=new Date();
+  now.setSeconds(now.getSeconds(),0);
+  var out=new DateTime().D2S(now,null);
+  var datespan=$('#udtD');
+  if(datespan) {
+   if($.trim(datespan.html()).length>0) {
+    $(datespan).html(out);
+    $(datespan).css({"visibility":"visible"});
+   }
+  }
+ }
+);
+   
+</script><script type="text/javascript" src="http://ads1.msads.net/library/dapmsn.js"></script><script language="javascript" type="text/javascript">
+this.nm_bo = function (o) 
+{
+    //newsmenu delay
+    if (nm_Enter) 
+    {
+        window.clearTimeout(nm_Enter);
+        nm_Enter = 0;
+    }
+    // Get initiating button
+    if (o) 
+    {
+    o2 = o.relatedTarget;
+    o = o.target;
+    } 
+    else 
+    {
+    o = window.event.srcElement;
+    o2 = window.event.toElement;
+    }
+    
+    // Force to our object; ignore if internal
+    o = nm_ne(o, 'onmouseout');
+    o2 = nm_ne(o2, 'onmouseout');
+    if (o == o2)
+    return;
+    
+    // Turn off active color
+    nm_mo(o);
+}
+
+this.nm_mo = function (o) 
+{
+    //newsmenu delay
+	if (nm_Enter) 
+	{
+        window.clearTimeout(nm_Enter);
+        nm_Enter = 0;
+    }
+    
+	// Check if we opened a menu
+	if ((nm_nNew == 1) && (nm_nD)) 
+	{
+        // Just opened the menu, so set the new menu protection timeout
+		nm_nNew = 2;
+        nm_tNew = window.setTimeout('nm_mt();', 250);
+        
+		// Remember to turn off highlight later
+		document.getElementById('nm_c' + nm_nD).nm_aOff = new Array(o);
+    } 
+	else 
+	{
+        // Turn off the highlight style for this item
+		if (nm_sx(o.className) == 'H') {
+            o.className = o.className.slice(0, -1);
+            if (o.firstChild.className) {
+                o.firstChild.className = o.firstChild.className.slice(0, -1);
+            }
+        }
+    }
+    
+	// Clear deferred arguments
+	nm_aDef = 0;
+    
+	// Set dismiss timer
+	nm_tDis = window.setTimeout('nm_mx(0,0)', 500);
+}
+</script><meta content="width = 1030" name="viewport"><link rel="apple-touch-icon" href="http://msnbcmedia.msn.com/i/msnbc/Components/ArtAndPhoto-Fronts/SITEWIDE/apple-touch-icon.png"/><script type="text/javascript">
+var mp={};
+mp.marketplaceMenuItem='197';
+mp.marketplaceParams='9,152' ;
+</script><link rel="canonical" href="http://www.nbcnews.com/">
+<meta property="og:url" content="http://www.nbcnews.com/" />
+<meta property="og:title" content="nbcnews.com - Breaking news, science and tech news, world news, US news, local news" />
+<meta property="og:site_name" content="nbcnews.com" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://msnbcmedia.msn.com/i/MSNBC/Components/Interactives/_swf/_shared/msnbc-facebooklike-icon.jpg" />
+<meta property="fb:page_id" content="23294612872" /><!--all admins-->
+<meta name="msvalidate.01" content="452BC1D97155BE7085514BAF92FC7F79" /><!--mos-->
+<meta name="google-site-verification" content="Kk_fmsbanODafvmeORZyUXIalQwaJivFPDvGpiQUVRE" /><script type="text/javascript" language="javascript" src="/js/LaunchCanonicalPlayers.js">
+</script><script language="javascript">
+function checkBook(name, url){
+
+ var xnbc_ua = $.browser;
+ if(xnbc_ua.mozilla){ 
+   window.sidebar.addPanel(name, url, "");   
+ } else if(xnbc_ua.msie) {
+   alert('Press ctrl+D to bookmark after you click Ok');
+ } else {
+   alert('Press ctrl+D to bookmark (Command+D for macs) after you click Ok'); 
+ }
+}
+</script><script src="//www.nbcnews.com/id/51832828" type="text/javascript"></script>
+
+<script src="//www.nbcnews.com/id/51836893" type="text/javascript"></script></head><body><script src="//www.nbcnews.com/id/51738311"></script><div style="display:none;">
+<script type="text/javascript">
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<img src="http://ad.doubleclick.net/activity;src=2183402;type=count651;cat=msnbc778;ord=1;num=' + a + '?" width="1" height="1" alt=""/>');
+</script>
+<noscript>
+<img src="http://ad.doubleclick.net/activity;src=2183402;type=count651;cat=msnbc778;ord=1;num=1?" width="1" height="1" alt="">
+</noscript>
+</div><style># {display:none;}</style><a href="#skipnav" style="display:none;visibility:hidden">Skip navigation</a>
+<!-- SiteCatalyst code version: H.15.1.Copyright 1997-2008 Omniture, Inc. More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript">s_account="msnbcom";if (typeof(readCookie)==="function" && readCookie("o.sv2") === "true"){s_account = "msnbcom,msnbcstorytest";}
+    </script>
+<script language="JavaScript" type="text/javascript" src="http://www.nbcnews.com/js/s_code.js"></script>
+<script>pd_top('Cover','html40','3053415','','','Cover','','','','','20:03, 31/05/13','','cover','','','3103848','70102','', '1',0,
+		{AdBanner:{},AdBannerFront:{AdGroup:'*customTag',AdSizeCode:'1390',Width:'728',Height:'90'},AdSponsor:{},AdOverThePage:{}}
+	,'MSNBC','true','','','');pd_me.ads = {'adShowcaseJson':{'adCallString':'','adWidth':'300','adHeight':'250'}};pd_om('msnbcom','100');</script>
+<script language="JavaScript" type="text/javascript">
+if(eventTrackerParams && ((pd_me.id!=3053415)||(checkTime()==true && pd_me.id==3053415)))
+{   
+  EventTracker().track(eventTrackerParams);  
+}</script>
+
+<div id="nm_c1" class="nmX"> </div><div id="nm_c2" class="nmX"> </div><div id="nm_c3" class="nmX"> </div><div id="nm_c4" class="nmX"> </div><link href="http://assets.msnbc.msn.com/rendering/msnbc/wb/assets/wb_tempstyles.css" type="text/css" rel="stylesheet"></link><link href="/id/48137659" type="text/css" rel="stylesheet"></link><script type="text/javascript">/*
+if (!("console" in window) || !("firebug" in console)) {
+    var names = ["log", "debug", "info", "warn", "error", "assert", "dir", "dirxml", "group", "groupEnd", "time", "timeEnd", "count", "trace", "profile", "profileEnd"];
+    window.console = {};
+    for (var i = 0; i < names.length; ++i) window.console[names[i]] = function () {};
+}
+*/
+var IS_IE = $.browser.msie;
+var IEdebug = false;
+if (IS_IE && IEdebug) {
+    $('body').append("<div id='IEconsole' style='position:absolute; z-index: 1000; top:580px; right:0; width:200px; background:#EECCCC;'>IE Debug Console -v " + IEdebug + "<\/div>");
+}
+this.echo = function (msg, clear) {
+    var curContent = $('#IEconsole').html() + "<br />";
+    if (clear) {
+        curContent = '';
+    }
+    $('#IEconsole').html(curContent + msg);
+}
+jQuery.fn.extend({
+    isAboveViewport: function (offset) {
+        var t = $(window).scrollTop();
+        return t >= this.offset().top + this.height() + (offset || 0);
+    },
+    isBelowViewport: function (offset) {
+        var b = $(window).height() + $(window).scrollTop();
+        return b <= this.offset().top + (-offset || 0);
+    },
+    isInViewport: function (padding) {
+        return !this.isAboveViewport(padding) && !this.isBelowViewport(padding);
+    }
+});
+var gridswitcher = (function (root, hoverLi) {
+    var LOADING_TEXT = "loading latest headlines ...";
+    var CLASS_LOADING = "loading";
+    var HOVER_DELAY = 250;
+    var currGridId = 0;
+    var gridSlot = $("#upscroll-grid");
+    var sections = $('#sections');
+    var loaded = false;
+    var loadingIndicator = null;
+    var data = null;
+    var currentIndex = 1;
+    var videoIconHtml = '<span class="icon"><span class="video"></span></span>';
+    var photoIconHtml = '<span class="icon"><span class="photo"></span></span>';
+
+    function init() {
+        if (!gridSlot.length) {
+            return;
+        }
+        currGridId = 0;
+        if (hoverLi) {
+            currGridId = getGridId($(hoverLi));
+        }
+        if (currGridId == 0) {
+            currGridId = getGridId(sections.find("li:first"));
+        }
+        getData(currGridId, function (d) {
+            data = d;
+            gridSlot.html(data);
+            addMultimediaIcon();
+            loaded = true;
+        });
+        setupBehavior();
+    };
+
+    function setupBehavior() {
+        sections.find("li").each(function (index) {
+            var li = $(this);
+            var gid = getGridId(li);
+            var delay;
+            $(this).bind("mouseover", function () {
+                delay = setTimeout(function () {
+                    root.removeClass('s' + currentIndex);
+                    handleSectionTrigger(li, gid, index);
+                }, HOVER_DELAY);
+            }).bind("mouseout", function () {
+                clearTimeout(delay);
+            });
+        });
+    };
+
+    function handleSectionTrigger(li, gridId, index) {
+        if (!gridId || gridId === currGridId) {
+            return;
+        }
+        index = index + 1;
+        currGridId = gridId;
+        root.addClass('s' + index);
+        currentIndex = index;
+        getData(gridId, function (d) {
+            data = d;
+            gridSlot.html(data);
+            addMultimediaIcon();
+        });
+    };
+
+    function addMultimediaIcon() {
+        var upscrollGrid = $('#upscroll-grid');
+        var videoLinks = $('.story h6 a[href*="vPlayer"], .story h6 a[href*="/vp/"]', upscrollGrid);
+        for (var i = 0; i < videoLinks.length; i++) {
+            $(videoLinks[i]).prepend(videoIconHtml);
+        };
+        var videoLinksH4 = $('.story h4 a[href*="vPlayer"], .story h4 a[href*="/vp/"]', upscrollGrid);
+        for (var i = 0; i < videoLinksH4.length; i++) {
+            $(videoLinksH4[i]).parent().next().prepend(videoIconHtml);
+        };
+        var slideShowLinks = $('.story h6 a[href*="SSOpen"]', upscrollGrid);
+        for (var i = 0; i < slideShowLinks.length; i++) {
+            $(slideShowLinks[i]).prepend(photoIconHtml);
+        };
+        var slideShowLinksH4 = $('.story h4 a[href*="SSOpen"]', upscrollGrid);
+        for (var i = 0; i < slideShowLinksH4.length; i++) {
+            $(slideShowLinksH4[i]).parent().next().prepend(photoIconHtml);
+        };
+    }
+
+    function getGridId(el) {
+        return parseInt(el.attr('grid'), 10);
+    };
+
+    function getData(gridId, callback) {
+        var self = this;
+        var url = String(window.location.href).split(".com/")[0] + ".com/id/" + gridId;
+        jQuery.ajax({
+            "dataType": "html",
+            "url": url,
+            "success": function (data) {
+                if (data && callback) {
+                    callback.call(self, data);
+                }
+            }
+        });
+    };
+    init();
+    return {};
+});
+var upscroll = (function () {
+    var ID_NET = "network";
+    var ID_SITEHEADER = "siteHeader";
+    var ID_NAV = "site";
+    var ID_MARQUEE = "marqueeContainer";
+    var CLASS_MAIN = ".main";
+    var ACTION_HOVER = "hover";
+    var ACTION_SCROLL = "scroll";
+    var CLASS_SELECTED = "selected";
+    var GRID_HEIGHT = 185;
+    var TODAY_GRID_HEIGHT = 210;
+    var HOVER_ON_NAV_ITEM = 500;
+    var HOVER_OPEN_SPEED = 300;
+    var SCROLLTOP_WHERE_75_PERCENT_IN_VIEW = 100;
+    var ID_LIST = "sections";
+    var IS_TODAY_SHOW = false;
+    var ATTR_GRID_ID = "data-grid-id";
+    var ID_COMCAST = "xfinity";
+    var MY = {};
+    MY.init = function (jq_rootElement, type, data) {
+        var breadcrumb = $("#breadcrumbs .breadcrumbs li");
+        for (var i = 0; i < breadcrumb.length; i++) {
+            if (i == breadcrumb.length - 1) {
+                $(breadcrumb[i]).css({
+                    "display": "inline"
+                });
+            } else {
+                $(breadcrumb[i]).css({
+                    "display": "none"
+                });
+            }
+        };
+        $('#todayShow #breadcrumbs').contents().filter(function () {
+            return this.nodeType == 3;
+        }).remove();
+        if ("undefined" === typeof document.body.style.maxHeight) {
+            return;
+        }
+
+        this.cookie = readCookie('P7');
+        if (this.cookie != null && this.cookie === 'X') {
+            this.isComcast = true;
+            this.comcastHeight = 44;
+        }
+        else {
+            this.isComcast = false;
+            this.comcastHeight = 0;
+        }
+
+        var NAV_CONTENT_ADDITIONAL_HEIGHT = 63 + 212;
+        this.root = $(jq_rootElement);
+        this.net = $("#" + ID_NET);
+        this.nav = $("#" + ID_NAV);
+        this.list = $("#" + ID_LIST);
+        this.siteHeader = $("#" + ID_SITEHEADER);
+        this.marquee = $("#" + ID_MARQUEE);
+        this.sections = $("#sections li");
+        this.relLayers = this.root.find(".layer");
+        this.navContent = this.nav.find(CLASS_MAIN);
+        this.grid = this.navContent.find("#upscroll-grid");
+        this.netHeight = this.net.height() + 1;
+        this.navHeight = this.nav.height();
+        this.listHeight = this.list.height();
+        this.marqueeHeight = this.marquee.height();
+        this.navContentHeight = this.navContent.height();
+        this.fixedElems = this.netHeight + this.marqueeHeight + this.listHeight;
+        this.hdrHeight = this.navContentHeight + this.fixedElems + NAV_CONTENT_ADDITIONAL_HEIGHT - 35;
+        this.defHeight = this.navHeight + this.fixedElems;
+        this.upHeight = this.hdrHeight - this.defHeight;
+        this.netIsFixed = false;
+        this.hasExtendedOnce = false;
+        this.notFullyExtended = false;
+        this.isUpscrollOpen = false;
+        this.switcher = null;
+        this.currLi = null;
+        if (this.isComcast == true) {
+            this.comcast = $("#" + ID_COMCAST);
+        }
+  this.checkComcast();
+ };
+ MY.isComcastLoaded = function(){
+   var self = this;
+         setTimeout(function () {
+             self.comcast = $("#xfinity");
+             self.checkComcast();
+         }, 500);
+  };
+  MY.checkComcast = function(){
+   if (this.isComcast === true) {
+          if (this.comcast.length === 0) {
+              this.isComcastLoaded();
+          }
+          else {
+    //faking bg for quirks
+
+   if(IS_IE){
+        this.comcast.wrap('<div id="xfinity_bg"/>');
+     }
+              var self = this;
+              $(window).resize(function () {
+                  self.sizeXfinity();
+              });
+
+              this.sizeXfinity();
+              this.start();
+          }
+      }
+      else {
+          this.start();
+      }
+
+  };
+  MY.sizeXfinity = function(){
+ //faking bg for quirks
+
+   if(IS_IE){
+  var margin = ($(window).width()-1100)/2;
+  this.comcast.css({'width':'1100px', 'margin-left': margin});
+ }
+ else{
+  this.comcast.css({ 'width': $(window).width() });  
+ }
+
+  };
+ MY.start = function(){
+        this.reset();
+        if (!IS_IE) {
+            $("#siteHeader .main #upscroll-grid").css({
+                "height": "185px"
+            });
+            this.reset();
+            if (this.root.isInViewport()) {
+                $("html,body").scrollTop(this.upHeight);
+            }
+            this.bindEvents();
+        } else {
+            var self = this;
+            $(window).scrollTop(5);
+            $(window).scroll(function (e) {
+                if ($(window).scrollTop() == 0 && !this.hasExtendedOnce) {
+                    self.siteHeader.css({
+                        "height": "307px"
+                    });
+                    self.nav.css({
+                        "height": "250px"
+                    });
+                    $("#siteHeader .main #upscroll-grid").css({
+                        "height": "185px",
+                        "margin-bottom": "10px"
+                    });
+                    $("#tbx-37650045").css({
+                        "zoom": "1"
+                    });
+                    $("#siteHeader #coverbadge #wx-badge").css({
+                        "margin": "10px 0 -10px",
+                        "zoom": "1",
+                        "clear": "both"
+                    });
+                    this.hasExtendedOnce = true;
+                    if (!self.isUpscrollOpen) {
+                        self.isUpscrollOpen = true;
+                        if (!self.currLi) {
+                            self.currLi = self.sections[0];
+                        }
+                        $(self.currLi).addClass(CLASS_SELECTED);
+                    }
+                    var switcher = gridswitcher(self.navContent, self.currLi);
+                    self.grid.addClass('active');
+                }
+            });
+            this.bindEventsForIE();
+            $("#msn .more").mouseover(function (e) {
+                $(this).addClass("moreOut");
+            });
+            $("#msn .more").mouseout(function (e) {
+                $(this).removeClass("moreOut");
+            });
+        }
+    };
+    MY.reset = function () {
+        if (this.isComcast === true) {
+            this.comcast.css({ "top": this.upHeight, "position": "absolute" }); //new line
+            this.sizeXfinity();
+        } 
+        this.root.height(this.hdrHeight + 8);
+        this.nav.css({
+            "top": this.upHeight,
+            "height": this.navHeight,
+            "overflow": "visible"
+        });
+        this.relLayers.css({
+            "top": this.upHeight,
+            "position": "relative",
+            "z-index": 1200
+        });
+    this.net.css({
+     "position": "relative",
+     "z-index": 1300
+    });
+        this.navContent.css("top", this.upHeight * -1);
+        this.grid.find('.grid').css({
+            "display": "none"
+        });
+        this.netIsFixed = false;
+        if (IS_IE) {
+         if (this.isComcast === true) {
+             this.comcast.css({ "top": 0, "position": "relative" }); //new line
+             this.sizeXfinity();
+         }
+            this.root.height(this.hdrHeight - 250);
+            this.net.css({
+                "top": 0,
+                "position": "relative",
+                "left": 0
+            });
+            this.marquee.css({
+                "top": 0,
+                "position": "relative",
+                "left": 0
+            });
+            this.list.css({
+                "top": 0,
+                "position": "relative"
+            });
+            this.navContent.css("top", 0);
+            this.nav.css("top", 0);
+            echo("reset()");
+        } else {
+            this.grid.css({
+                "height": GRID_HEIGHT
+            });
+        }
+        if (this.isUpscrollOpen) {
+            this.isUpscrollOpen = false;
+        }
+    };
+    MY.update = function (action_type, li) {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > this.upHeight) {
+            if (this.netIsFixed) {
+                this.reset();
+                this.grid.css({
+                    "visibility": "hidden"
+                });
+            }
+            return;
+        }
+        if (scrollTop != 0) {
+            this.sections.removeClass(CLASS_SELECTED);
+        } else if (this.currLi) {
+            $(this.currLi).addClass(CLASS_SELECTED);
+        }
+        if (this.netIsFixed == false || !this.hasExtendedOnce) {
+            if (this.isComcast === true) {
+                this.root.css({ "top": this.comcastHeight, "margin-bottom": this.comcastHeight });
+                this.comcast.css({ "top": 0, "position": "fixed", "left": 0, "z-index": 1500 }); //new line
+            }
+   this.net.css({
+                "top": this.comcastHeight,
+                "position": "fixed",
+                "left": 0
+            });
+            this.marquee.css({
+                "top": this.netHeight + this.comcastHeight,
+                "position": "fixed"
+            });
+            this.list.css({
+                "top": this.netHeight + this.marqueeHeight + this.comcastHeight,
+                "position": "fixed"
+            });
+            this.nav.css({
+                "overflow": "hidden"
+            });
+            this.root.height(this.hdrHeight);
+            if (!this.hasExtendedOnce) {
+                this.grid.addClass('active');
+            } else {
+                this.grid.css({
+                    "visibility": "visible"
+                });
+            }
+            this.grid.find(".grid").css({
+                "display": "block"
+            });
+            this.netIsFixed = true;
+        }
+        this.nav.css({
+            "height": this.hdrHeight - scrollTop - this.fixedElems,
+            "top": scrollTop + this.fixedElems
+        });
+        this.navContent.css("top", scrollTop * -1);
+        if (action_type == ACTION_HOVER) {
+            this.navContent.css("top", 0);
+            $("html, body").animate({
+                scrollTop: 0
+            }, HOVER_OPEN_SPEED);
+        }
+        if (scrollTop < SCROLLTOP_WHERE_75_PERCENT_IN_VIEW || action_type == ACTION_HOVER) {
+            if (!this.isUpscrollOpen) {
+                this.isUpscrollOpen = true;
+                if (!this.currLi) {
+                    this.currLi = this.sections[0];
+                }
+                $(this.currLi).addClass(CLASS_SELECTED);
+            }
+            if (!this.hasExtendedOnce) {
+                this.initialUpdate(action_type, this.currLi);
+            }
+        }
+    };
+    MY.initialUpdate = function (action_type, li) {
+        var self = this;
+        var scrollTop = $(window).scrollTop();
+        this.hasExtendedOnce = true;
+        this.grid.css({
+            "visibility": "visible"
+        });
+        this.switcher = gridswitcher(this.navContent, li);
+    };
+    MY.bindEvents = function () {
+        var self = this;
+        var doCheck = true;
+        var delay;
+        var exposedHover = HOVER_ON_NAV_ITEM;
+        this.list.find("a").bind("mouseover", function () {
+            var hoverLi = $(this).parent();
+            var currGridID = self.getGridID(hoverLi);
+            if (currGridID == 0) {
+                return;
+            }
+            if (hoverLi != self.currLi) {
+                self.sections.removeClass(CLASS_SELECTED);
+                self.currLi = hoverLi;
+            }
+            if ($(window).scrollTop() == 0) {
+                hoverLi.addClass(CLASS_SELECTED);
+            }
+            delay = setTimeout(function () {
+                if (!self.hasExtendedOnce) {
+                    self.update(ACTION_HOVER, hoverLi);
+                }
+                if ($(window).scrollTop() < self.upHeight) {
+                    exposedHover = 100;
+                    self.update(ACTION_HOVER, hoverLi);
+                }
+            }, exposedHover);
+        }).bind("mouseout", function () {
+            clearTimeout(delay);
+        });
+        $(window).scroll(function (e) {
+            self.update(ACTION_SCROLL);
+            doCheck = false;
+        });
+        setTimeout(function () {
+            self.update(ACTION_SCROLL);
+            if (self.root.isInViewport()) {
+                $("html,body").scrollTop(self.upHeight);
+            }
+        }, 500);
+    };
+    MY.bindEventsForIE = function () {
+        var self = this;
+        var doCheck = true;
+        var delay;
+        var exposedHover = HOVER_ON_NAV_ITEM;
+        this.list.find("a").bind("mouseover", function () {
+            var hoverLi = $(this).parent();
+            var currGridID = self.getGridID(hoverLi);
+            if (currGridID == 0) {
+                return;
+            }
+            if (hoverLi != self.currLi) {
+                self.sections.removeClass(CLASS_SELECTED);
+                self.currLi = hoverLi;
+            }
+            if ($(window).scrollTop() == 0) {
+                hoverLi.addClass(CLASS_SELECTED);
+            }
+            delay = setTimeout(function () {
+                $(window).scrollTop(0);
+            }, exposedHover);
+        }).bind("mouseout", function () {
+            clearTimeout(delay);
+        });
+    };
+    MY.getGridID = function (el) {
+        return parseInt(el.attr('grid'), 10);
+    };
+    return MY;
+})();
+$(document).ready(function () {
+ upscroll.init($("#siteHeader"));
+});
+try {
+    var AdBreakingNews = {};
+    AdBreakingNews.Render = function () {
+        try {
+            if (AdBreakingNews.Enable ) {
+    var marqueeColor = $('#marquee H1').css('backgroundColor');
+    $('div#marquee:first').addClass('adBnm');
+    $('div#marquee:first').prepend('<div id="AdBnmLeft"></div>').append('<div id="AdBnmRight"></div>');
+    $('div#marqueeContainer').width('100%').css('background-color', marqueeColor);
+    $('div#marquee').eq(1).empty().remove();
+                if (AdBreakingNews.Left && AdBreakingNews.Left != "") {
+                    dapMgr.enableACB("AdBnmLeft", false);
+                    dapMgr.renderAd("AdBnmLeft", AdBreakingNews.Left, 120, 30);
+                    AdBreakingNews.Rendered = true
+                }
+                if (AdBreakingNews.Right && AdBreakingNews.Right != "") {
+                    dapMgr.enableACB("AdBnmRight", false);
+                    dapMgr.renderAd("AdBnmRight", AdBreakingNews.Right, 120, 30);
+                    AdBreakingNews.Rendered = true
+                }
+                $(window).resize(function () {
+                    $(window).width() > 1158 ? $("div#marquee").addClass("adBnm") : $("div#marquee").removeClass("adBnm")
+                })
+            }
+        } catch (a) {}
+    };
+    AdBreakingNews.InitAds = function () {
+        AdBreakingNews.Left = "";
+        AdBreakingNews.Right = "";
+        AdBreakingNews.Width = 1024;
+        AdBreakingNews.Enable = false;
+        AdBreakingNews.Rendered = false;
+        AdBreakingNews.Url = "/xml.aspx?id=39654701";
+        $.get(AdBreakingNews.Url, function (a) {
+            $(a).find("DisplayAd").each(function () {
+                if ($(this).find("Enabled").text().toLowerCase() === "true") {
+                    var d = $(this).find("AdLocation").text(),
+                        b = $(this).find("Content").text(),
+                        c = $(this).find("AdPlacementCode").text();
+                    switch (d) {
+                    case "AdBreakingNewsMarqueeLeft":
+                        AdBreakingNews.Left = "&PG=" + b + "&AP=" + c;
+                        AdBreakingNews.Enable = true;
+                        break;
+                    case "AdBreakingNewsMarqueeRight":
+                        AdBreakingNews.Right = "&PG=" + b + "&AP=" + c;
+                        AdBreakingNews.Enable = true
+                    }
+                }
+            });
+            if (AdBreakingNews.Enable && $(window).width() > AdBreakingNews.Width) AdBreakingNews.Render();
+            else AdBreakingNews.Enable && $(window).resize(function () {
+                AdBreakingNews.Enable && AdBreakingNews.Rendered === false && $(window).width() > AdBreakingNews.Width && AdBreakingNews.Render()
+            })
+        })
+    }
+} catch (ex$$1) {};</script><div id="siteHeader" class="cover"><div id="network" class="layer"><a class="focus" href="#headline"><span>Jump to story headline</span></a>
+<div class="content">
+ <ul id="msn">
+  <li class="msnLogo">
+  <a href="http://www.msn.com/">MSN</a>
+  </li>
+  <li class="i1 hotmail">
+  <a href="http://www.hotmail.com/">Hotmail</a>
+  </li>
+  <li class="i2 more">
+  <a href="http://www.hotmail.com/">More</a>
+  <ul id="msn-more">
+    <li class="i1">
+   <a href="http://autos.msn.com/">Autos</a>
+   </li>
+   <li class="i2">
+   <a href="http://my.msn.com/">My MSN</a>   
+   </li>
+   <li class="i3">
+  <a href="http://video.msn.com/video.aspx?mkt=en-us&amp;from=MSNHP">Video</a>
+   </li>
+   <li class="i4">
+    <a href="http://careers.msn.com/">Careers &amp; Jobs</a>  
+   </li>
+   <li class="i5">
+   <a href="http://now.msn.com">msnNOW</a>
+   </li>
+   <li class="i6">
+   <a href="http://local.msn.com/weather.aspx">Weather</a>
+   </li>
+   <li class="i7">
+   <a href="http://www.delish.com/">Delish</a>
+   </li>
+   <li class="i8">
+   <a href="http://moneycentral.msn.com/detail/stock_quote">Quotes</a>
+   </li>
+   <li class="i9">
+   <a href="http://msn.whitepages.com/">White Pages</a>
+   </li>
+   <li class="i10">
+   <a href="http://zone.msn.com/en-us/home">Games</a>
+   </li>
+   <li class="i11">
+   <a href="http://realestate.msn.com/">Real Estate</a>
+   </li>
+   <li class="i12">
+   <a href="http://wonderwall.msn.com/">Wonderwall</a>
+   </li>
+   <li class="i13">
+   <a href="http://astrocenter.astrology.msn.com/">Horoscopes</a>
+   </li>
+   <li class="i14">
+   <a href="http://www.bing.com/shopping?FORM=SHOPH2">Shopping</a>
+   </li>
+   <li class="i15">
+   <a href="http://yellowpages.msn.com/">Yellow Pages</a>
+   </li>
+   <li class="i16">
+   <a href="http://local.msn.com/news.aspx">Local Edition</a>
+   </li>
+   <li class="i17">
+   <a href="http://local.msn.com/gas-traffic.aspx">Traffic</a>
+   </li>
+   <li class="i18">
+   <a target="_blank" href="https://secure.opinionlab.com/ccc01/o.asp?ID=WpkpVtTB">Feedback</a>
+   </li>
+   <li class="i19">
+   <a href="http://www.bing.com/maps/default.aspx?FORM=MSNNAV">Maps &amp; Directions</a>
+   </li>
+   <li class="i20">
+   <a href="http://www.bing.com/travel/?cid=msn_nav_more&amp;FORM=MSNNAV">Travel</a>
+   </li>
+   <li class="i21">
+   <a href="http://specials.msn.com/alphabet.aspx">Full MSN Index</a>
+   </li>
+  </ul>
+  </li>
+  <li class="i3 bing" id="bing">
+  <a href="http://bing.com/?FORM=MSNBCN"><span>Bing</span></a>
+  </li>
+ </ul>
+ <ul id="sites-shows">
+  <li class="i1">
+  <a class="site-msnbc" href="http://www.nbcnews.com/">NBCNews.com</a><span class="sitesShows">sites &amp; shows:</span>
+  </li>
+  <li class="i2 show-today">
+  <a href="http://today.com/">TODAY</a>
+  </li>
+  <li class="i3 show-rockcenter">
+  <a href="http://rockcenter.msnbc.msn.com//">Rock Center</a>
+  </li>
+  <li class="i4 show-nightly">
+  <a href="http://nightly.msnbc.com/">Nightly News</a>
+  </li>
+  <li class="i5 show-mtp">
+  <a href="http://mtp.msnbc.com/">Meet the Press</a>
+  </li>
+  <li class="i6 show-dateline">
+  <a href="http://dateline.msnbc.com/">Dateline</a>
+  </li>
+  <li class="i7 show-morningjoe">
+  <a href="http://joe.msnbc.com">Morning Joe</a>
+  </li>
+  <li class="i8 show-hardball">
+  <a href="http://hardball.msnbc.com/">Hardball</a>
+  </li>
+  <li class="i9 show-allin">
+  <a href="http://allin.msnbc.com/">All In</a>
+  </li>
+  <li class="i10 show-maddow">
+  <a href="http://rachel.msnbc.com/">Maddow</a>
+  </li>
+  <li class="i11 show-lastword">
+  <a href="http://thelastword.msnbc.msn.com/">Last Word</a>
+  </li>
+  <li class="i12 show-msnbc">
+  <a href="http://tv.msnbc.com/">msnbc</a>
+  </li>
+  <li class="i13 zinger-login-widget">
+  <div id="zinger_network_nav" class="zinger_login_nav"></div>
+  </li>
+ </ul>
+</div>
+
+
+<!-- 
+- the scripts and style included below adds in the universal login functionality
+- we are targeting the div with the class zinger_login_nav in the network nav strip
+- contained in wbid 37786762
+-->
+
+<link rel="stylesheet" type="text/css" href="http://www.msnbc.msn.com/id/46330550/?name=networknav_universal_login_style"/>
+<script type="text/javascript" src="http://www.polls.newsvine.com/_elliott/jenga?name=jenga"></script>
+<script type="text/javascript" src="http://www.msnbc.msn.com/id/46330567/?name=networknav_universal_login_script_blue"></script></div><div id="marqueeContainer" class="layer"><style type="text/css">#marquee-section{display: none;}</style><div id="marquee"><div id="marquee-site" class="breaking" onmouseover="mq_timer(0,'marquee-site');" onmouseout="mq_timer(500,'marquee-site');"><script language="javascript">
+						var mq_a;
+						if(typeof(mq_a)=='undefined') mq_a=new Object;
+						mq_bn=new Object;
+						mq_bn.Timer = 0;
+						mq_bn.Current = 1;
+						mq_bn.Time=5000;
+						mq_bn.items=1;
+						mq_bn.isDownlevel=false;
+						mq_bn.mq_as = new Array;
+						
+      mq_bn.mq_as[1]='<span CM="marquee-site" pn="sitewrapper" ct="mqb" cn="BREAKING: Woman, baby killed a">  <h1>BREAKING: <a href="http://www.nbcnews.com/video/nbcnews.com/52048284">Woman, baby killed as tornadoes hit Oklahoma City area</a>  |  <a href="http://www.breakingnews.com/topic/oklahoma-city-tornadoes-may-31-2013">More from breakingnews.com</a></h1></span>';
+    
+						mq_a['marquee-site']=mq_bn;
+						mq_write('marquee-site');</script></div></div></div><div id="mainNav" class="content"><style>
+#siteHeader #sections li {
+  margin-right:8px;
+}
+</style>
+<ul class="navigation hlist layer" id="sections">
+ <li grid="40441910" class="i1">
+  <a href="http://www.nbcnews.com/">Home</a>
+ </li>
+ <li grid="40436557" class="i2">
+  <a href="http://www.nbcnews.com/id/3032525/ns/us_news/">US</a>
+ </li>
+ <li grid="40439315" class="i3">
+  <a href="http://www.nbcnews.com/id/3032507/ns/world_news/">World</a>
+ </li>
+ <li grid="40440165" class="i4">
+  <a href="http://www.nbcnews.com/id/3032553/ns/politics/">Politics</a>
+ </li>
+ <li grid="40440468" class="i5">
+  <a href="http://www.nbcnews.com/business/">Business</a>
+ </li>
+ <li grid="40440113" class="i6">
+  <a href="http://nbcsports.nbcnews.com/">Sports</a>
+ </li>
+ <li grid="40440385" class="i7">
+  <a href="http://www.today.com/entertainment/">Entertainment</a>
+ </li>
+ <li grid="40440359" class="i8">
+  <a href="http://www.nbcnews.com/id/3032076/ns/health/">Health</a>
+ </li>
+ <li grid="40439692" class="i9">
+  <a href="http://www.nbcnews.com/technology">Tech</a>
+ </li>
+  <li grid="51691672" class="i10">
+  <a href="http://science.nbcnews.com/">Science</a>
+ </li>
+ <li grid="40439628" class="i10a">
+  <a href="http://www.nbcnews.com/travel/">Travel</a>
+ </li>
+ <li grid="0" class="i11">
+  <a href="http://www.nbcnews.com/id/3948437/">Local</a>
+ </li>
+ <li grid="0" class="i12">
+  <a href="http://www.nbcnews.com/id/3032128/ns/weather/">Weather</a>
+</li>
+</ul></div> <div id="site">
+  <div class="content main s1">
+   <div id="upscroll-grid" class="main-grid">
+   </div><div class="x4" id="breadcrumbs"><a href="/" id="coverLogo" class="logo"><span>NBCNews.com</span></a><div id="timeStamp"><span id="udtD">updated <span class="time">8:03 p.m. ET </span><span class="date">May 31, 2013</span></span><script language="javascript">
+		function UpdateTimeStamp(pdt) {
+			var n = document.getElementById("udtD");
+			if(pdt != '' && n && window.DateTime) {
+				var dt = new DateTime();
+				pdt = dt.T2D(pdt);
+				if(dt.GetTZ(pdt)) {n.innerHTML = dt.D2S(pdt,((''.toLowerCase()=='false')?false:true));}
+			}
+		}
+		UpdateTimeStamp('635056418028130000');</script></div></div><div id="coverbadge"><script src="http://assets.msnbc.msn.com/rendering/msnbc/wb/assets/wb_com_DataboxServiceC.js" type="text/javascript"></script><div id='wx-badge' class="weatherbadger"></div>
+<script type="text/javascript">
+var dxWxB = {}; 
+
+(function() { 
+ var $x = {}; 
+ var $s = {}; 
+ var $f_o = ""; 
+ var $ss_o = ''; 
+ var isPer = false; 
+ function makeBadge() { 
+  var we = $x.weather || $s.weather; 
+  var f = we.conditions; 
+  
+  if (f.cid == '-na-' || f.cid == '') { 
+   f.cid = we.forecast[0].cid; 
+   f.text = we.forecast[0].cond; 
+   f.temp = (we.forecast[0].hi != '-na-' && we.forecast[0].hi != '') ? (we.forecast[0].hi + ' / ' + we.forecast[0].lo) : we.forecast[0].lo; 
+  } 
+  
+  if (f.text == "Thunder in the Vicinity") {
+   f.text = "Thunder";
+  } 
+  
+  f.text = f.text.toLowerCase(); 
+  var nc = (isPer) ? ('') : (' nocookie'); 
+  $f_o += '<span class="loc' + nc + '"><a href="/id/3032128/ns/weather/" title="Get more weather information for ' + we.city + '">' + we.city + '</a></span>'; 
+  $f_o += '<span class="forecast"><span class="img wea' + f.cid + '">' + f.text + ', <strong>' + f.temp + '</strong></span></span>';     
+  $f_o += '<span class="edit"><a href="' + Utils.dbx_Change('weather') + '" title="Change the location for your weather report">(Change)</a></span>'; 
+  var isBW = (isPer) ? ('') : ('_bw'); 
+  var bdg = document.getElementById('wx-badge'); 
+  bdg.innerHTML = $f_o; 
+  var bodystyles = document.getElementsByTagName('body')[0].className; 
+  var p = bdg;//bdg.childNodes[0].firstChild; 
+  if (bodystyles.indexOf('IE-6') != -1) { 
+   var marquee = document.getElementById('marquee-site'); 
+   if (marquee != null) { 
+    var b = document.getElementById('coverbadge'); 
+    b.style.top = '12px'; 
+   } 
+   p.style.backgroundImage = 'none'; 
+   p.style.height = '1px'; 
+   p.style.width = '270px'; 
+   p.style.paddingTop = '30px'; 
+   p.style.textAlign = 'right'; 
+   p.style.filter = 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://msnbcmedia.msn.com/i/msnbc/Components/CSS/img/weather/WC' + f.cid + '.png", sizingMethod="crop")'; 
+  } else { 
+   p.style.background = 'url("http://msnbcmedia.msn.com/i/msnbc/Components/CSS/img/weather/WC' + f.cid + isBW + '.png") bottom left no-repeat'; 
+  } 
+ } 
+ 
+ function onLoad() { 
+  var pz = Utils.getPersonalization(); 
+  if (pz != undefined) { 
+   if (pz.locCode != null) { 
+    $x = DBMgr.cookied.getData(); 
+    $s = DBMgr.def.getData(); 
+    isPer = true; 
+   } else { 
+    $x = DBMgr.def.getData(); 
+   } 
+  } else { 
+   $x = DBMgr.def.getData(); 
+  } 
+  
+  if (dbxErr == false) { 
+   makeBadge(); 
+  } else { 
+   var bdg = document.getElementById('wx-badge'); 
+   bdg.innerHTML = "Weather currently unavailable"; 
+  } 
+ } 
+ 
+ dxWxB.onLoad = onLoad; 
+})(); 
+
+DBMgr.init(); 
+DBMgr.subscribe(dxWxB.onLoad); 
+DBMgr.start();
+</script> <style>
+
+ #top-stories .grid h2{font-size:190%;}
+
+ #top-stories .grid h4{font-family: Arial, sans-serif; font-size:115%}
+ 
+ #top-stories .grid h6 {font-size:75%;}
+
+ #cover #top-stories {margin-bottom: -11px!important;}
+ 
+ #cover #top-stories div.grid {min-height:220px;}
+ 
+/* //// GRIDLETTE /// */
+
+#cover #top-stories div.grid.gridlette {
+height:110px;
+min-height:110px;
+margin-bottom: 15px;
+clear: both;
+padding-bottom: 0!important;
+}
+
+.IE #cover #top-stories div.grid.gridlette {
+height:115px;
+}
+
+#top-stories .grid.gridlette .content {
+background: none !important;
+}
+
+#top-stories .gridlette .content {
+border-right: none;}
+
+#top-stories .gridlette .content {
+background: none !important;}
+
+#top-stories  .gridlette .label  {
+height:0px!important;
+}
+
+.IE #top-stories .grid .w1-5 .nowrap .text {
+width: 239px !important;
+}
+.Firefox .tvsp-dotted .label {
+margin-bottom: 10px;
+}
+
+#top-stories .gridlette .label {
+background: none; 
+border-bottom: 1px dotted #AAA; 
+margin-bottom: 20px;
+}
+#top-stories .gridlette .label.no-border {
+border-bottom: none !important;
+margin-bottom:10px;
+}
+
+#top-stories .gridlette #cell1, 
+#top-stories .gridlette #cell2, 
+#top-stories .gridlette #cell3, 
+#top-stories .gridlette  #cell4 {
+padding-top: 0px;
+}
+ 
+
+ </style></div>   <form method="get" action="/" class="search">
+    <fieldset>
+     <input name="id" id="id" value="11881780" type="hidden"> <input id="q" value="Search NBCNews.com" name="q" class="q" type="type" maxlength="2000" onfocus="if(this.value=='Search NBCNews.com')this.value='';" onblur="if(this.value=='')this.value='Search NBCNews.com';"> <input value="" class="bing" name="search" type="submit"> <input name="p" value="1" type="hidden"> <input name="st" value="1" type="hidden"> <input name="sm" value="user" type="hidden">
+    </fieldset>
+   </form>
+  </div>
+ </div></div><script type="text/javascript">//bnmInit   
+try{AdBreakingNews.Init=function(){$("#marquee").length>0&&AdBreakingNews.InitAds()}()}catch(ex){};//bnmInit
+</script></script><div id="sliderAdHolder"><div id="sliderAd"><style>#sliderAd {display:none;}</style></div></div><div id="cover"><div id="top-stories"><div id="grid_52063089" class="tsm grid cvr autosize "><div id="cell1" class="content w4 sL" ct="GRD" cn="52063089/BREAKING NEWS" pn=""><span class="label breaking" id="label1">BREAKING NEWS</span><div class="story textfx-center"><h2><a href="http://usnews.nbcnews.com/_news/2013/05/31/18648500-woman-baby-killed-as-mammoth-tornado-slams-oklahoma-city-suburbs?lite">Woman and baby killed as tornadoes menace Oklahoma and Missouri</a></h2></div><div class="story img-right textfx-center"><div class="img"><div><a href="http://usnews.nbcnews.com/_news/2013/05/31/18648500-tornado-emergency-declared-for-oklahoma-city-extensive-damage-reported-in-suburbs?lite"><img src="http://media3.s-nbcnews.com/j/MSNBC/Components/Slideshows/_production/gss-130531-storm/gss-130531-storm-OKC.grid-5x2.jpg"></a></div></div><div class="text"><div><p class="abstr">Multiple twisters tore through the Oklahoma City area Friday night – killing two when their SUV flipped, according to a state trooper – as officials issued tornado warnings for St. Louis and other cities across the Midwest.</p></div></div></div><script type="text/javascript" charset="utf-8">
+/* ONLY USE THIS WORKAROUND FOR THE NBCNEWS.COM COVER */
+
+//add the Workbench ID of your slideshow
+//next to the gssSlideshowID variable below
+var gssSlideshowID = 52063731; // <--CHANGE THIS VALUE
+</script>
+
+<!-- add jquery script call if page loads in wb preview -->
+<script type = "text/javascript"charset = "utf-8" >
+ if ( window.location.host.indexOf("wbpreview") != -1 ) document.write('<s' + 'cript src="http://www.msnbc.msn.com/id/23149822/" type="text/javascript" charset="utf-8"></s' + 'cript>');
+</script>
+<script type="text/javascript" charset="utf-8">
+(function(){
+ var gssAIMSSize, gssImageWidth, gssImageHeight, gssSlot;
+ var gssBeacon = "gridSlideshowBeacon";
+
+ function init(){
+  gssSlot = getSlot();
+  renderFrame();
+ }
+
+ function renderFrame(){
+  populateFromSlot();
+
+  if( !gssImageWidth || !gssImageHeight ){
+   setTimeout(renderFrame,50);
+   return;
+  }
+
+  var frameUrl = getFrameUrl();
+  var iframe = $('<iframe/>')
+   .attr({
+    src: frameUrl,
+    scrolling: "no",
+    frameborder: 0
+   })
+   .width(gssImageWidth)
+   .height(gssImageHeight+20);
+
+  gssSlot.empty().append(iframe);
+ }
+
+ function populateFromSlot(){
+  var slotIMG = $( gssSlot ).find( "img:first" );
+  var slotIMGSrc = slotIMG.attr( "src" ); //src for the slot image
+  var slotIMGSrcSplit = slotIMGSrc.split( "." );
+
+  gssAIMSSize = slotIMGSrcSplit[ ( slotIMGSrcSplit.length - 2 ) ]; //AIMS sizing based on AIMS size of original slot image
+  gssImageWidth = slotIMG.attr( "clientWidth" ); //width of each slideshow image, in pixels
+  gssImageHeight = slotIMG.attr( "clientHeight" ); //height of each slideshow image, in pixels
+ }
+
+ function getFrameUrl(){
+  return 'http://www.msnbc.msn.com/id/48258290?' + $.param({
+   aims:gssAIMSSize,
+   w:gssImageWidth,
+   h:gssImageHeight,
+   wbid:gssSlideshowID
+  });
+ }
+
+ function getSlot(){
+  var gssSlot = $( '#' + gssBeacon ).parent().children( 'div.force-inline' ).children( '.img:first' );
+
+  if ( $( gssSlot ).length < 1 ){
+   gssSlot = $( '#' + gssBeacon ).parent().children( 'div.story' ).children( '.img:first' );
+  }
+
+  return gssSlot;
+ }
+
+ $(function(){
+  init();
+ });
+})();
+</script>
+<div id="gridSlideshowBeacon"></div><div class="hr"><!-- --></div><div class="story"><h4><a href="http://www.nbcnews.com/video/nbcnews.com/52048284/">WATCH LIVE: Local coverage of the tornado</a></h4></div><div class="story"><h4><a href="http://cosmiclog.nbcnews.com/_news/2013/05/31/18663732-more-oklahoma-twisters-latest-outbreak-fits-tornado-alleys-pattern?lite">Latest twister outbreak<br>fits Tornado Alley’s pattern</a></h4></div><div class="hr"><!-- --></div><div class="story img-thumb-m"><h6><a href="http://usnews.nbcnews.com/_news/2013/05/31/18654635-three-us-navy-football-players-under-investigation-for-alleged-sex-assault-sources-say?lite">Navy football players face sex-assault allegations, sources say</a></h6></div><div class="story img-thumb-m"><h6><a href="http://worldnews.nbcnews.com/_news/2013/05/31/18592339-the-drawdown-diet-marines-steamed-by-loss-of-hot-meal-at-afghanistan-base?lite">Marines steamed by loss of hot meals in Afghanistan</a></h6></div></div><div id="cell2" class="content w2 x4 sR" ct="GRD" cn="52063089/Also making headlines" pn=""><span class="label" id="label2">Also making headlines</span><div class="story img-left img-thumb-m nowrap"><div class="img"><div><a href="http://www.nbcnews.com/business/stocks-close-big-drop-dow-tumbles-200-points-uncertainties-6C10141002"><img src="http://media2.s-nbcnews.com/j/MSNBC/Components/Photo/_new/g-cvr-130531-nyse-8p.thumb-m.jpg" title="Image: Traders work at the New York Stock Exchange" alt="Image: Traders work at the New York Stock Exchange"></a></div><cite><span class="byline">Brendan Mcdermid / </span>Reuters</cite></div><div class="text"><div><h4><a href="http://www.nbcnews.com/business/stocks-close-big-drop-dow-tumbles-200-points-uncertainties-6C10141002">Summer slump? Stocks close with big drop, as Dow tumbles</a></h4></div></div></div><div class="story img-left img-thumb-m nowrap"><div class="img"><div><a href="http://inplainsight.nbcnews.com/_news/2013/05/31/18581353-the-truth-about-gays-and-money?lite"><img src="http://media4.s-nbcnews.com/j/MSNBC/Components/Photo/_new/g-cvr-130531-gay-ecomomic-power-1col.thumb-m.jpg"></a></div></div><div class="text"><div><h4><a href="http://inplainsight.nbcnews.com/_news/2013/05/31/18581353-the-truth-about-gays-and-money?lite">Despite perceptions, many gay couples live in poverty</a></h4></div></div></div><div class="story img-left img-thumb-m nowrap"><div class="img"><div><a href="http://www.today.com/news/queens-new-portrait-dubbed-hideous-bloke-wearing-wig-6C10153218"><img src="http://media3.s-nbcnews.com/j/MSNBC/Components/Photo/_new/FON-130531-queen-430p.thumb-m.jpg" title="Image: Queen portrait" alt="Image: Queen portrait"></a></div><cite><span class="byline">Rex Usa / Royal Mail</span></cite></div><div class="text"><div><h4><a href="http://www.today.com/news/queens-new-portrait-dubbed-hideous-bloke-wearing-wig-6C10153218">'Like a bloke wearing a wig': Queen's new portrait slammed</a></h4></div></div></div><div class="hr"><!-- --></div><div class="story"><h6><a href="http://usnews.nbcnews.com/_news/2013/05/31/18643968-im-free-arizona-mom-returns-to-us-after-drug-allegations-dropped-in-mexico?lite">'I'm free.' Mom rejoices as she leaves Mexico jail</a></h6></div><div class="story"><h6><a href="http://redtape.nbcnews.com/_news/2013/05/31/18628883-forget-self-denial-key-to-richer-healthier-life-is-a-good-imagination?lite">The secret to saving money? A creative brain</a></h6></div><div class="story"><h6><a href="http://usnews.nbcnews.com/_news/2013/05/31/18659902-four-firefighters-killed-in-houston-hotel-fire-officials-say?lite">Four firefighters killed, five others injured in Houston hotel fire</a></h6></div></div></div><script type="text/javascript">addGrid("grid_52063089");</script><div id="grid_51167640" class="tsm grid cvr tvsp tvsp-secondaryS tvsp-dotted gridlette"><div id="cell1" class="content w1-5 sL innerdiv" ct="GRD" cn="51167640/cell1" pn=""><span class="label no-border" id="label1"></span><div class="story img-left img-thumb-m nowrap"><div class="img"><div><a href="http://www.nbcnews.com/video/nightly-news/52062981/"><img src="http://media3.s-nbcnews.com/j/MSNBC/Components/Photo/_new/g-cvr-130531-asteroid-930p.thumb-m.jpg"></a></div></div><div class="text"><div><h6><a href="http://www.nbcnews.com/video/nightly-news/52062981/" title="Click to view video: &quot;That was close! Giant asteroid whizzes by Earth&quot;" class="icoVid"> </a> <a href="http://www.nbcnews.com/video/nightly-news/52062981/">That was close! Giant asteroid whizzes by Earth</a></h6></div></div></div></div><div id="cell2" class="content w1-5 x1-5 innerdiv" ct="GRD" cn="51167640/cell2" pn=""><span class="label no-border" id="label2"></span><div class="story img-left img-thumb-m nowrap"><div class="img"><div><a href="http://www.today.com/news/having-it-all-doesnt-mean-doing-it-all-womens-grad-6C10141008"><img src="http://media2.s-nbcnews.com/j/MSNBC/Components/Photo/_new/g-cvr-130531-arianna-huffington-7p.thumb-m.jpg" title="Image: Arianna Huffington" alt="Image: Arianna Huffington"></a></div></div><div class="text"><div><h6><a href="http://www.today.com/news/having-it-all-doesnt-mean-doing-it-all-womens-grad-6C10141008">'Having it all doesn't mean doing it all': Women's grad advice to women</a></h6></div></div></div></div><div id="cell3" class="content w1-5 x3 innerdiv" ct="GRD" cn="51167640/cell3" pn=""><span class="label no-border" id="label3"></span><div class="story img-left img-thumb-m nowrap"><div class="img"><div><a href="http://vitals.nbcnews.com/_news/2013/05/31/18661014-girls-lung-transplant-plight-spurs-high-level-review?lite"><img src="http://media3.s-nbcnews.com/j/MSNBC/Components/Photo/_new/130528-Family-fights-for-Lung-Tran.thumb-m.jpg"></a></div><cite>Murnaghan family</cite></div><div class="text"><div><h6><a href="http://vitals.nbcnews.com/_news/2013/05/31/18661014-girls-lung-transplant-plight-spurs-high-level-review?lite">Girl's lung transplant plight sparks review from top officials</a></h6></div></div></div></div><div id="cell4" class="content w1-5 x4-5 sR" ct="GRD" cn="51167640/cell4" pn=""><span class="label no-border" id="label4"></span><div class="story img-left img-thumb-m nowrap"><div class="img"><div><a href="http://www.today.com/pets/slothified-activist-brings-home-200-rescued-sloths-1C10118467"><img src="http://media2.s-nbcnews.com/j/MSNBC/Components/Photo/_new/130531-sloth-4x3-559p.thumb-m.jpg" title="Image: Sloths displaced by deforestation are rescued and released back into the wild with the help of Green Heritage Fund Suriname." alt="Image: Sloths displaced by deforestation are rescued and released back into the wild with the help of Green Heritage Fund Suriname."></a></div><cite><span class="byline">Becca Field / </span>Becca Field</cite></div><div class="text"><div><h6><a href="http://www.today.com/pets/slothified-activist-brings-home-200-rescued-sloths-1C10118467">'Slothified!' Activist brings home 200 rescued sloths</a></h6></div></div></div></div></div></div><div class="container"><div id="nav-left"><div id="newsMAIN"><div class="hottopics cover"><ul class="section"><li class="label firstlabel">Featured</li><li class="hottopics" id="leftNavFeaturedContent"><ol class="stories"><li class="i1"><a href="http://inplainsight.nbcnews.com/">In Plain Sight: Poverty in America</a><p>A special report on a problem many people overlook or choose to ignore</p></li><li class="i2"><a href="http://www.nbcnews.com/id/49555806#51232342">Red Tape Chronicles</a><p>Solutions that save you time and money</p></li><li class="i3"><a href="http://www.nbcnews.com/id/50262910/">Road to Retirement</a><p>News, resources for your financial future</p></li><li class="i4"><a href="http://thegrio.com/">TheGrio</a><p>News, analysis for African-Americans</p></li><li class="i5"><a href="http://nbclatino.com/">NBCLatino</a><p>Voice of American Hispanics</p></li></ol></li></ul><ul class="section"><li class="label">Browse</li><li><ol><li><a href="http://www.msnbc.msn.com/id/8004316/ns/video/">Video</a></li><li><a href="http://www.msnbc.msn.com/id/4999736/ns/multimedia/">Photos</a></li></ol></li></ul></div >
+<style media="screen" type="text/css">
+ #newsMAIN .hottopics a:hover,
+ #nav-left #newsMAIN .relatedBreadcrumbs a:hover {
+ background: none;
+ }
+
+ #nav-left #newsMAIN .hottopics,
+ #nav-left #newsMAIN .relatedBreadcrumbs,
+ #nav-left #newsMAIN .hottopics ul.section,
+ #nav-left #newsMAIN .relatedBreadcrumbs ul.section {
+ margin-bottom: 2em;
+ }
+
+#nav-left #newsMAIN ul.section li,
+#nav-left #newsMAIN ul.relatedBreadcrumbs li {
+ height:17px;
+ padding: 0;
+}
+
+ #nav-left #newsMAIN .hottopics ul.section li.label,
+#nav-left #newsMAIN ul.relatedBreadcrumbs .title,
+ #nav-left #newsMAIN .label {
+ border-bottom:medium none;
+ color:#999999;
+ font-size:14px;
+ font-weight: bold;
+ height:17px;
+ padding-top: 20px;
+ }
+
+#nav-left #newsMAIN ul.section li p,
+#nav-left #newsMAIN ul.relatedBreadcrumbs li p {
+ font-size: 11px;
+ font-weight: normal;
+}
+
+
+#nav-left #newsMAIN .firstlabel {
+ padding-top:5px !important;
+}
+
+#nav-left #newsMAIN .hottopics ul.section li,
+#nav-left #newsMAIN ul.relatedBreadcrumbs li {
+ min-height:17px;
+ height: auto;
+ padding: 0;
+ }
+
+ .IE #nav-left #newsMAIN .hottopics ul.section li,
+.IE #nav-left #newsMAIN ul.relatedBreadcrumbs li {
+ height: 17px;
+width: 110px;
+ }
+
+
+#nav-left #newsMAIN ul.relatedBreadcrumbs li {
+ padding-bottom:2px;
+}
+
+ #nav-left #newsMAIN .hottopics ul.section li a,
+#nav-left #newsMAIN ul.relatedBreadcrumbs li a,
+ #nav-left #newsMAIN .hottopics ul.section li a:visited,
+#nav-left #newsMAIN ul.relatedBreadcrumbs li a:visited  {
+ color:#147;
+ display:inline-block;
+ font-size:12px;
+ margin:10px 0 0;
+ width:100% !important;
+font-weight: normal;
+ }
+
+#nav-left #newsMAIN .upscroll-type {
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+line-height:15px;
+display: block;
+padding: 8px 0 20px 25px;
+width: 110px;
+background:url('http://msnbcmedia.msn.com/i/MSNBC/SiteManagement/Topics/Cover/upscrollTease_icon.gif') no-repeat 0 12px;
+}
+ #nav-left #newsMAIN .first-label {padding-top: 0;}
+ #nav-left #newsMAIN .label {width: 110px;}
+ 
+#nav-left #newsMAIN .homelink {
+ margin: -17px 0;
+}
+
+#more_headlines h3 {
+padding-top: 0;
+}
+
+</style><style type="text/css" media="screen">#newsMAIN div.bak { display: none; }</style>
+<!-- <style type="text/css" media="screen">
+ #newsMAIN div.hottopics { display: none; }
+ #nav-left #newsMAIN .sub, #nav-left #newsMAIN div.bak { display: block; }
+</style>
+<div class="hottopics bak"><ul class="section"><li class="label firstlabel">Hot topics</li>
+<li class="hottopics">
+ <ol class="stories">
+  <li class="i1"><a title="Ted Stevens" href="http://www.msnbc.msn.com/id/34993957">Ted Stevens</a></li>
+  <li class="i2"><a title="Afghanistan" href="http://www.msnbc.msn.com/id/35463609">Afghanistan</a></li>
+  <li class="i3"><a title="Federal Reserve System" href="http://www.msnbc.msn.com/id/33645392">Federal Reserve System</a></li>
+  <li class="i4"><a title="China" href="http://www.msnbc.msn.com/id/33095852">China</a></li>
+  <li class="i5"><a title="Gulf of Mexico" href="http://www.msnbc.msn.com/id/34704541">Gulf of Mexico</a></li>
+  <li class="i6"><a title="U.S. House of Representatives" href="http://www.msnbc.msn.com/id/34698478">U.S. House of Representatives</a></li>
+  <li class="i7"><a title="Pakistan" href="http://www.msnbc.msn.com/id/33097505">Pakistan</a></li>
+  <li class="i0"><a title="Net neutrality" href="http://www.msnbc.msn.com/id/34656800/ns/technology_and_science">Net neutrality</a></li>
+ </ol>
+</li></ul><ul class="section"><li class="label">Browse</li><li><ol><li><a href="http://www.msnbc.msn.com/id/8004316/ns/video">Video</a></li><li><a href="http://www.msnbc.msn.com/id/4999736/ns/multimedia">Photos</a></li></ol></li></ul></div> --><ul id="shortcuts" class="nav-menu">
+<li class="label">Shortcuts</li>
+<li><a href="/id/3891881/">Corrections</a></li>
+<li><a href="http://www.msnbc.msn.com/id/8523679/ns/entertainment-comics_games_news_of_the_weird/">Comics</a></li>
+<li><a href="http://today.msnbc.msn.com/id/20044245/ns/entertainment-comics_games_news_of_the_weird/?cat=fcx">Crosswords</a></li>
+<li><a href="http://www.msnbc.msn.com/id/8404539/ns/entertainment-horoscope/">Horoscopes</a></li>
+<li><a href="http://www.msnbc.msn.com/id/14187811/ns/entertainment-lottery_results/">Lottery</a></li>
+<!-- <li><a href="http://www.msnbc.msn.com/id/7468311/ns/community-most_popular/">Most popular</a></li> -->
+<li><a href="/id/23781733/">NewsTools</a></li>
+<li><a href="http://today.msnbc.msn.com/id/20044245/ns/entertainment-comics_games_news_of_the_weird/?cat=sudoc">Sudoku</a></li>
+<li><a href="http://newsletters.msnbc.com">Newsletters & alerts</a></li><ul id="marketplace" class="nav-menu">
+<li class="label">Marketplace</li>
+<li><script type="text/javascript">dap("&PG=NBCML3&AP=1402",1,1)</script></li>
+<li><script type="text/javascript">dap("&PG=NBCML5&AP=1402",1,1)</script></li>
+<li id="pg-menu" class="noshow"></li>
+<li id="pg-featured" class="noshow"></li>
+</ul><script type="text/javascript">
+       /* Pierre.util.FBClient.headlessInit(); */
+</script></div></div><div id="content"><script type="text/javascript"></script>
+<noscript>
+<style>
+.box-hdr { background: #7C6240 url(http://msnbcmedia1.msn.com/i/msnbc/SiteManagement/SiteWide/SectionSlice/ssheadbg1.jpg) repeat-y scroll left center; }
+.box-hdr .opt-size{ display: none; }
+.box-hdr .ctrl1{ display: none; }
+#ss_141{ display: none; }
+#noscript-warn{ border: 2px solid #F0AC3C; background: #fdf7aa; padding: 10px; width: 800px; }
+#noscript-warn p{ font-family: Tahoma, Arial, sans-serif; color: #000; line-height: 1.4em; font-size: .9em; background: url(http://msnbcmedia4.msn.com/i/msnbc/Components/CSS/img/warn.gif) no-repeat center left; padding-left: 50px; }
+#noscript-warn strong{ font-weight: bold; }
+#noscript-warn a, #noscript-warn a:visited{ font-weight: normal; color: #114477; text-decoration: underline; }
+#tab-box{ display: none;}
+#ad-showcase, #AdShowcase_F{ display: none; }
+</style>
+<div id="noscript-warn">
+<p><strong>You don't appear to have javascript enabled.</strong> Some parts of msnbc.com may not display correctly. Javascript allows for features such as personalization and a customized layout based on your interests. <a href="http://www.msnbc.msn.com/id/3303511/#enable_js">Learn how to enable javascript</a>.</p>
+</div>
+</noscript><div id="tab-box"><style type="text/css">.addendum #cell1, .addendum #cell2 {height: 150px;}
+html+body .addendum #cell1, html+body  .addendum #cell2 {min-height:150px; height: auto;}
+.addendum .box-hdr {display:none;}
+.addendum .grid .label {font-size:70%;}
+.addendum .tab {height:auto;}
+.addendum .tab .label {background: none; border-bottom:1px #CCC solid;}
+.addendum .tbx-body {border:none;}
+.addendum .tbx-body .tbx-content 
+{position:relative; background:none;
+ overflow:visible;padding-bottom:10px;}
+.addendum .grid .w2 {position:relative;}
+.addendum .grid .sR .label {margin-right:-3px;}
+.addendum .tbx-content .content {height:auto;}
+
+.tbx-body {height: 574px; overflow: hidden;}
+.IE-6 .tbx-body, .IE-7 .tbx-body {height: 577px;}
+.tbx-content {overflow: visible;}
+.IE-6 #grid_29620494.tab, .IE-7 #grid_29620494.tab, #grid_29620494.tab {height:290px;}
+  html+body #grid_29620494.tab {height:auto;min-height:290px;}
+
+#GenericAdOn {border-bottom: 1px solid #ccc; margin: 0 2px 10px 2px;}
+#GenericAdOn p {font-size: 0.7em;}
+#GenericAdOn p a {color: #6699CC; font-weight: normal;}
+#GenericAdOn p a:hover {color: #CC0000;}
+#GenericAdOn p img {position: relative; display: inline; margin: 0 10px; top: 6px;}
+#GenericAdOn p img {margin: 0 0 -2px 10px; top: 6px;}
+
+#GenericAdOn p img {top: 13px;}
+/*.IE-6 #tab-cover-videoPhoto_Generic .tab, .IE-7 #GenericAdOn_stories .tab, #GenericAdOn_stories .tab  {height: 80px;}
+  html+body #tab-cover-videoPhoto_Generic .tab {height: auto; min-height: 80px;}*/
+
+.IE-6 #grid_30228967.tab, .IE-7 #grid_30228967.tab #grid_30228967.tab    {height: 290px;}
+  html+body  #grid_30228967.tab {height: auto; min-height: 290px;}
+
+#tab-cover-videoPhoto_Generic.grid .inner-div {background: transparent url(http://msnbcmedia.msn.com/i/msnbc/Components/Art/SITEWIDE/tsm/bg-dash-vert-mega3.gif) no-repeat scroll right;}
+#GenericAdOn p a {margin-left: 2px;}
+/*#GenericAdOn p a.Oscars09_Logo {margin: 0;}*/
+
+#grid_30228967 .thumbs-m-rows .img-thumb-m {margin: 3px 26px 0px;}
+.IE-6 #grid_30228967 .thumbs-m-rows .img-thumb-m {margin: 3px 17px 0px;}
+
+#grid_30228967.tab .label {background: transparent;}
+#grid_30228967 {background:transparent url(http://msnbcmedia.msn.com/i/MSNBC/Sections/zRedesign/tabboxes/Cover/GenericAdOn/ExtendedTabGradient.gif) no-repeat scroll left top; border-top:1px solid #ccc;}
+
+.tbx .scroll {height: 575px;}
+/*.tbx .tabs li {padding: 0 19px 0 10px;}*/
+.grid .w1-5 .img-thumb-m .text {width: 110px;}
+/*.tab.ofVisible .thumbs-m-rows .img-thumb-m  {height: 133px !important;}*/
+
+#ad-promo-showcase table {height: auto}
+
+span.GenericAdOn {margin-left: 10px}</style><div id="tbx-30227903" class="tbx tbx-skin1 tbx-w3 tbx-h3" style="&#xA;					width:px&#xA;				"><div class="box-hdr"><h2>Explore</h2><ul class="ctrl1"><li class="label"><a href="#">Pinned</a></li><li class="btn pinned"><a href="#" title="pinned"> </a></li></ul><ul class="tabs"><li class="tab1" def="1"><a href="#">More news</a></li><li class="tab2"><a href="#">My news</a></li><li class="tab3"><a href="#">Just in</a></li></ul></div><div ct="tbx" cn="Explore/More news" pn="" class="tbx-body hide"><div class="tbx-content"><div id="grid_30326792" class="grid tab "><div id="cell1" class="content w2 sL" ct="GRD" cn="30326792/Other top stories" pn=""><span class="label" id="label1">Other top stories</span><div class="story  "><h6><a href="http://nbcpolitics.nbcnews.com/_news/2013/05/31/18655925-medicare-fund-insolvency-date-a-bit-further-away-than-last-year?lite">Healthy news: Medicare insolvency date moved back</a></h6></div><div class="story  "><div class="text"><div><h6><a href="http://www.today.com/tech/will-google-glass-destroy-your-love-life-6C10132134">So awkward together: Will Google Glass doom dating?</a></h6></div></div></div><div class="story  "><div class="text"><div><h6><a href="http://usnews.nbcnews.com/_news/2013/05/31/18655211-zumba-instructor-sentenced-to-10-months-in-jail-on-prostitution-charges?lite">Zumba instructor jailed for prostitution ring</a></h6></div></div></div><div class="story  "><div class="text"><div><h6><a href="http://usnews.nbcnews.com/_news/2013/05/31/18657765-8-arrested-after-brawl-at-kindergarten-graduation?lite">8 arrested after brawl at kindergarten graduation</a></h6></div></div></div><div class="story  "><div class="text"><div><h6><a href="http://firstread.nbcnews.com/_news/2013/05/31/18654759-first-thoughts-hillarys-2016-numbers-come-back-down-to-earth?lite">Hillary Clinton's ratings come back down to Earth</a></h6></div></div></div><div class="story  "><div class="text"><div><h6><a href="http://www.today.com/entertainment/woman-beats-incredible-odds-win-1-million-prize-wheel-fortune-6C10140583">'Wheel of Fortune' winner beats incredible odds</a></h6></div></div></div><div class="story  "><div class="text"><div><h6><a href="http://usnews.nbcnews.com/_news/2013/05/30/18636062-body-of-missouri-mom-of-triplets-found-two-years-after-she-vanished?lite">Body of Missouri mom found two years after vanishing</a></h6></div></div></div><div class="story  "><div class="text"><div><h6><a href="http://vitals.nbcnews.com/_news/2013/05/31/18657823-20-now-sick-in-new-outbreak-tied-to-pain-shots?lite">20 now sick in new outbreak tied to pain shots</a></h6></div></div></div><div class="story  "><div class="text"><div><h6><a href="http://www.nbcnews.com/technology/tesla-founder-promises-details-futuristic-hyperloop-mass-transit-6C10157218">Tesla founder hints at futuristic 'Hyperloop' mass transit</a></h6></div></div></div><div class="story  "><div class="text"><div><h6><a href="http://www.nbcnews.com/technology/syrian-electronic-army-kicked-web-6C10145580">Syria kicks Syrian Electronic Army hackers off the Web</a></h6></div></div></div><div class="story  "><div class="text"><div><h6><a href="http://usnews.nbcnews.com/_news/2013/05/31/18660600-four-dead-after-two-small-planes-collide-midair-officials-say?lite">Officials: 4 dead after two small planes collide midair</a></h6></div></div></div></div><div id="cell2" class="content w1 x2 sR" ct="GRD" cn="30326792/Featured on NBCNews.com" pn=""><span class="label" id="label2">Featured on NBCNews.com</span><div class="story img-small"><div class="img"><div><a href="http://slideshow.nbcnews.com/slideshow/news/month-in-space-may-2013-52032882/"><img src="http://media3.s-nbcnews.com/j/MSNBC/Components/Photo/_new/ss-130529-misp-tease2.grid-2x2.jpg"></a></div></div><div class="text"><div><h5><a href="http://slideshow.nbcnews.com/slideshow/news/month-in-space-may-2013-52032882/" title="Click to view slide show: &quot;Stellar images: A stunning month in space&quot;" class="icoSli"> </a> <a href="http://slideshow.nbcnews.com/slideshow/news/month-in-space-may-2013-52032882/">Stellar images: A stunning month in space</a></h5></div></div></div><div class="hr"><!-- --></div><div class="story"><h6><a href="http://www.today.com/entertainment/dick-van-dyke-reveals-cause-his-mystery-illness-6C10153251">Dick Van Dyke reveals cause of mystery illness</a></h6></div></div></div><div id="GenericAdOn_stories"><style type="text/css">.addendum #cell1, .addendum #cell2 {height: 150px;}
+html+body .addendum #cell1, html+body  .addendum #cell2 {min-height:150px; height: auto;}
+.addendum .box-hdr {display:none;}
+.addendum .grid .label {font-size:70%;}
+.addendum .tab {height:auto;}
+.addendum .tab .label {background: none; border-bottom:1px #CCC solid;}
+.addendum .tbx-body {border:none;}
+.addendum .tbx-body .tbx-content 
+{position:relative; background:none;
+ overflow:visible;padding-bottom:10px;}
+.addendum .grid .w2 {position:relative;}
+.addendum .grid .sR .label {margin-right:-3px;}
+.addendum .tbx-content .content {height:auto;}
+
+.tbx-body {height: 574px; overflow: hidden;}
+.IE-6 .tbx-body, .IE-7 .tbx-body {height: 577px;}
+.tbx-content {overflow: visible;}
+.IE-6 #grid_29620494.tab, .IE-7 #grid_29620494.tab, #grid_29620494.tab {height:290px;}
+  html+body #grid_29620494.tab {height:auto;min-height:290px;}
+
+#GenericAdOn {border-bottom: 1px solid #ccc; margin: 0 2px 10px 2px;}
+#GenericAdOn p {font-size: 0.7em;}
+#GenericAdOn p a {color: #6699CC; font-weight: normal;}
+#GenericAdOn p a:hover {color: #CC0000;}
+#GenericAdOn p img {position: relative; display: inline; margin: 0 10px; top: 6px;}
+#GenericAdOn p img {margin: 0 0 -2px 10px; top: 6px;}
+
+#GenericAdOn p img {top: 13px;}
+/*.IE-6 #tab-cover-videoPhoto_Generic .tab, .IE-7 #GenericAdOn_stories .tab, #GenericAdOn_stories .tab  {height: 80px;}
+  html+body #tab-cover-videoPhoto_Generic .tab {height: auto; min-height: 80px;}*/
+
+.IE-6 #grid_30228967.tab, .IE-7 #grid_30228967.tab #grid_30228967.tab    {height: 290px;}
+  html+body  #grid_30228967.tab {height: auto; min-height: 290px;}
+
+#tab-cover-videoPhoto_Generic.grid .inner-div {background: transparent url(http://msnbcmedia.msn.com/i/msnbc/Components/Art/SITEWIDE/tsm/bg-dash-vert-mega3.gif) no-repeat scroll right;}
+#GenericAdOn p a {margin-left: 2px;}
+/*#GenericAdOn p a.Oscars09_Logo {margin: 0;}*/
+
+#grid_30228967 .thumbs-m-rows .img-thumb-m {margin: 3px 26px 0px;}
+.IE-6 #grid_30228967 .thumbs-m-rows .img-thumb-m {margin: 3px 17px 0px;}
+
+#grid_30228967.tab .label {background: transparent;}
+#grid_30228967 {background:transparent url(http://msnbcmedia.msn.com/i/MSNBC/Sections/zRedesign/tabboxes/Cover/GenericAdOn/ExtendedTabGradient.gif) no-repeat scroll left top; border-top:1px solid #ccc;}
+
+.tbx .scroll {height: 575px;}
+/*.tbx .tabs li {padding: 0 19px 0 10px;}*/
+.grid .w1-5 .img-thumb-m .text {width: 110px;}
+/*.tab.ofVisible .thumbs-m-rows .img-thumb-m  {height: 133px !important;}*/
+
+#ad-promo-showcase table {height: auto}
+
+span.GenericAdOn {margin-left: 10px}</style><div id="grid_30228967" class="grid tab "><div id="cell1" class="content w2 sL thumbs-m-rows " ct="GRD" cn="30228967/Video" pn=""><span class="label" id="label1"><a href="/id/8004316/ns/video/">Video</a></span><div class="story img-thumb-m  "><div class="img"><div><a href="http://www.today.com/video/today/52055655/"><img src="http://media3.s-nbcnews.com/j/MSNBC/Components/Video/130531/tdy_mor_OSU_130531.thumb-m.jpg"></a></div><cite><span>TODAY</span></cite></div><div class="text"><div><h6><a href="http://www.today.com/video/today/52055655/">University chief apologizes to Notre Dame, Catholics</a></h6></div></div></div><div class="story img-thumb-m  "><div class="img"><div><a href="http://www.nbcnews.com/video/nightly-news/52057861/"><img src="http://media3.s-nbcnews.com/j/MSNBC/Components/Video/__NEW/_News Channel/x_nn_kcra_grad_130530.thumb-m.jpg"></a></div><cite><span>Nightly News</span></cite></div><div class="text"><div><p class="sublabel-tease">Video</p><h6><a href="http://www.nbcnews.com/video/nightly-news/52057861/">Student can't buy yearbook, gets full ride to Harvard </a></h6><p class="source"><a href="/id/3032619/ns/nbc_nightly_news_with_brian_williams/">Nightly News</a></p></div></div></div><div class="story img-thumb-m  "><div class="img"><div><a href="http://www.nbcnews.com/video/nightly-news/52051241/"><img src="http://media4.s-nbcnews.com/j/MSNBC/Components/Video/__NEW/nn_10bwi_amelia_130530.thumb-m.jpg"></a></div><cite><span>Nightly News</span></cite></div><div class="text"><div><p class="sublabel-tease">Video</p><h6><a href="http://www.nbcnews.com/video/nightly-news/52051241/">Amelia Earhart's lost plane found on sonar pic?</a></h6><p class="source"><a href="/id/3032619/ns/nbc_nightly_news_with_brian_williams/">Nightly News</a></p></div></div></div><div class="story img-thumb-m  "><div class="img"><div><a href="http://www.today.com/video/today/52057133/"><img src="http://media2.s-nbcnews.com/j/MSNBC/Components/Photo/_new/g-cvr-ferret-145p.thumb-m.jpg" title="Image: Ferret" alt="Image: Ferret"></a></div></div><div class="text"><div><p class="sublabel-tease">Video</p><h6><a href="http://www.today.com/video/today/52057133/">Ferret pops out of toilet in Ukraine apartment</a></h6><p class="source"><a href="/id/21134540/vp/18424716/#18424716">TODAY</a></p></div></div></div> </div><div id="cell2" class="content x2 w1 sR thumbs-m-rows " ct="GRD" cn="30228967/Photos" pn=""><span class="label" id="label2"><a href="/id/4999736/ns/multimedia/">Photos</a></span><div class="story img-thumb-m  "><div class="img"><div><a href="http://slideshow.nbcnews.com/slideshow/news/the-week-in-pictures-may-23-30-52045482/"><img src="http://media4.s-nbcnews.com/j/MSNBC/Components/Slideshows/_production/twip-130530/ss-130530-twip-tease.thumb-m.jpg" title="Image: US President Barack Obama delivers the commencement address for the United States Naval Academy" alt="Image: US President Barack Obama delivers the commencement address for the United States Naval Academy"></a></div><cite><span class="byline">Michael Reynolds / </span>EPA</cite></div><div class="text"><div><h6><a href="http://slideshow.nbcnews.com/slideshow/news/the-week-in-pictures-may-23-30-52045482/">The Week in Pictures</a></h6></div></div></div><div class="story img-thumb-m  "><div class="img"><div><a href="http://photoblog.nbcnews.com/"><img src="http://media3.s-nbcnews.com/j/MSNBC/Components/Photo/_new/pb-130531-frankfurt-da-04.photoblog900.thumb-m.jpg" title="Image: Riot police scuffle with protesters in front of the European Central Bank headquarters." alt="Image: Riot police scuffle with protesters in front of the European Central Bank headquarters."></a></div><cite><span class="byline">Kai Pfaffenbach / </span>Reuters</cite></div><div class="text"><div><p class="sublabel-tease">PhotoBlog</p><h6><a href="http://photoblog.nbcnews.com/">Our picks of the day's top photos</a></h6></div></div></div> </div></div></div></div></div><div ct="tbx" cn="Explore/My news" pn="" class="tbx-body hide"><div class="tbx-content"><div class="scroll">
+<div class="grid tab stack row-label-left" id="newstabmarket">
+</div>
+<div class="grid tab stack row-label-left" id="newstabweather">
+</div>
+<div class="grid tab stack row-label-left" id="newstabsports">
+</div>
+<div class="grid tab stack row-label-left" id="newstablottery">
+</div>
+<div class="grid tab stack row-label-left" id="newstabhoroscope">
+</div>
+</div>
+<script src="http://assets.msnbc.msn.com/rendering/msnbc/wb/assets/wb_comp_cover_tabbox_MyNews.js" type="text/javascript"></script></div></div><div ct="tbx" cn="Explore/Just in" pn="" class="tbx-body hide"><div class="tbx-content"><style type="text/css">.tbx #grid_33079887 { height: 573px; }
+#result { height: 545px; overflow: auto; padding: 10px 10px 0 10px; font-size: 11px; }
+.IE #result { height: 555px; }</style><div id="grid_33079887" class="grid tab "><div id="cell1" class="content w2 sL" ct="GRD" cn="33079887/Latest updates from @breakingnews on Twitter" pn=""><span class="label" id="label1">Latest updates from <a href="http://twitter.com/breakingnews">@breakingnews on Twitter</a></span><script src="/id/33589610?name=tweetspy" type="text/javascript"></script>
+<div id="result"><ol class="statuses" id="twitter_timeline"><li class="load">Loading the latest posts&#8230;</li></ol><div class="showmore"><div class="avatar"><a href="http://twitter.com/BreakingNews" class="item.text-url profile-pic url"><img height="48" width="48" alt="BreakingNews" class="photo fn" src="http://a2.twimg.com/profile_images/553100046/BNAvatar4_normal.JPG"></a></div><div class="intro">See more at <a href="http://twitter.com/BreakingNews">twitter.com/BreakingNews</a> or <a href="http://www.breakingnews.com">breakingnews.com</div></div></div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+$(".tab3").one("click",function(){
+
+var feedvars = {'datatype': 'json', 'source': 'twitter', 'type': 'account', 'mothership':'true', 'query': 'breakingnews', 'limit': 10}; 
+$('#result').spy(feedvars); //load the feed
+var refresh = setInterval(function(){ $('#result').spy(feedvars); }, 120000); //refresh the feed
+
+});
+
+if($(".tab3").hasClass("current")){
+ $(".tab3").trigger("click");
+}
+});
+</script></div><div id="cell2" class="content w1 x2 sR" ct="GRD" cn="33079887/Get more breaking news" pn=""><span class="label" id="label2">Get more breaking news</span><div class="story img-left img-thumb-s  nowrap remove-border"><div class="img"><div><a href="http://www.breakingnews.com/"><img src="http://media4.s-nbcnews.com/j/MSNBC/Sections/zRedesign/tabboxes/Cover/BreakingNewsTab/web.thumb-s.png"></a></div></div><div class="text"><div><h6><a href="http://www.breakingnews.com/">On the Web</a></h6></div></div></div><div class="story img-left img-thumb-s  nowrap remove-border"><div class="img"><div><a href="http://www.breakingnews.com/about/mobile"><img src="http://media4.s-nbcnews.com/j/MSNBC/Sections/zRedesign/tabboxes/Cover/BreakingNewsTab/phone.thumb-s.png"></a></div></div><div class="text"><div><h6><a href="http://www.breakingnews.com/about/mobile">Mobile apps</a></h6></div></div></div><div class="story img-left img-thumb-s  nowrap remove-border"><div class="img"><div><a href="http://www.alerts.msnbc.com/"><img src="http://media3.s-nbcnews.com/j/MSNBC/Sections/zRedesign/tabboxes/Cover/BreakingNewsTab/email.thumb-s.png"></a></div></div><div class="text"><div><h6><a href="http://www.alerts.msnbc.com/">E-mail</a></h6></div></div></div><div class="story img-left img-thumb-s  nowrap remove-border"><div class="img"><div><a href="http://www.alerts.msnbc.com/"><img src="http://media1.s-nbcnews.com/j/MSNBC/Sections/zRedesign/tabboxes/Cover/BreakingNewsTab/sms.thumb-s.png"></a></div></div><div class="text"><div><h6><a href="http://www.alerts.msnbc.com/">SMS text message</a></h6></div></div></div><div class="story img-left img-thumb-s  nowrap remove-border"><div class="img"><div><a href="http://www.facebook.com/breakingnews"><img src="http://media1.s-nbcnews.com/j/MSNBC/Sections/zRedesign/tabboxes/Cover/BreakingNewsTab/facebook.thumb-s.gif"></a></div></div><div class="text"><div><h6><a href="http://www.facebook.com/breakingnews">Facebook</a></h6></div></div></div><div class="story img-left img-thumb-s  nowrap remove-border"><div class="img"><div><a href="http://www.twitter.com/breakingnews"><img src="http://media1.s-nbcnews.com/j/MSNBC/Sections/zRedesign/tabboxes/Cover/BreakingNewsTab/twitter.thumb-s.gif"></a></div></div><div class="text"><div><h6><a href="http://www.twitter.com/breakingnews">Twitter</a></h6></div></div></div><div class="story img-left img-thumb-s  nowrap remove-border"><div class="img"><div><a href="http://www.breakingnews.com/feeds/rss/"><img src="http://media3.s-nbcnews.com/j/MSNBC/Sections/zRedesign/tabboxes/Cover/BreakingNewsTab/rss.thumb-s.gif"></a></div></div><div class="text"><div><h6><a href="http://www.breakingnews.com/feeds/rss/">RSS feed</a></h6></div></div></div> </div></div></div></div></div><script type="text/javascript">
+			tabboxInit('30227903',false,false,'Pinned','Pin tab');
+		</script></div><div id="AdShowcase_F" class="ad"><div class="w300 aC textSmallGrey p7" id="AdShowcase_F1">
+<div class="ad-label"><a href="http://www.msnbc.msn.com/id/31066137/media-kit/" class="mediakit" target="_blank">Advertise</a> | <a href="http://g.msn.com/AIPRIV/en-us" class="adchoices" target="_blank">AdChoices</a></div><style>
+/*Front tbx sponsored links*/
+#AdContentModule_F #ad-front-sponsoredlinks h6 {font-size: 110%; color: #999; font-family: 'Lucida Grande', Tahoma, sans-serif; text-align: left; margin-bottom: 10px; border-bottom: 1px solid #999;}
+   .IE-6 #AdContentModule_F #ad-front-sponsoredlinks h6,   .IE-7 #AdContentModule_F #ad-front-sponsoredlinks h6 {margin-bottom: 5px;}
+#AdContentModule_F #ad-front-sponsoredlinks {margin-top: 20px;}
+#AdContentModule_F #ad-front-sponsoredlinks .listing {padding: 0;}
+#AdContentModule_F #ad-front-sponsoredlinks .listing p {text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 100%;}
+  .IE-6 #AdContentModule_F #ad-front-sponsoredlinks .listing p, .IE-7 #AdContentModule_F #ad-front-sponsoredlinks .listing p {padding-bottom: 5px;}
+#AdContentModule_F #ad-front-sponsoredlinks u {text-decoration: underline;}
+#AdContentModule_F #ad-front-sponsoredlinks {HEIGHT: 250px}
+#adShowcase_F {height: 610px !important; position: relative;}
+#cover #ad-promo-showcase {margin-top: 0 !important; position: absolute; top: 550px;}
+.IE-6 #adShowcase_F, .IE-7 #adShowcase_F, .IE-8 #adShowcase_F, .IE-9 #adShowcase_F {position: absolute !important; margin-left: 10px;}
+.IE-6 #ad-promo-showcase, .IE-7 #ad-promo-showcase, .IE-8 #ad-promo-showcase, .IE-9 #ad-promo-showcase {left: 0 !important}
+</style><script type="text/javascript">
+    try {
+        (function () {
+
+            var networkId = 2620;
+            var adUnit = "nbcnews/homepage";
+            var height = 250;
+            var width = 300;
+
+            _gpt_simpleUrl.CreateTag(networkId, adUnit, width, height);
+        } ());
+    } catch (e) { }
+</script><div style="padding-top:10px;">
+
+</div><div id="AdContentModule_F" class="aL"><script type="text/javascript">dap('&PG=NBCFP1&AP=1089','300','250');</script></div><div id="ad-promo-showcase"><script type="text/javascript">
+    try {
+        (function () {
+
+            var networkId = 2620;
+            var adUnit = "nbcnews/homepage";
+            var height = 60;
+            var width = 300;
+
+            _gpt_simpleUrl.CreateTag(networkId, adUnit, width, height);
+        } ());
+    } catch (e) { }
+</script></div></div></div><div id="summaries"><div class="section-summary"><div ct="slc" cn="Local news &amp; weather" pn="sectionslice" class="sum" id="ss_6488"><div class="box-hdr"><h2><a href="/id/25632630/">Local news</a> &amp; <a href="/id/3032128/ns/weather/">weather</a><span class="sub-hed"><a href="javascript:dxLNW.hideEms()">change</a></span></h2><ul class="ctrl1"><li class="label"><span>Move box</span></li><li class="btn up"><a href="#" title="up"> </a></li><li class="btn down"><a href="#" title="down"> </a></li></ul><ul class="opt-size"><li class="label">Show</li><li><a href="#" s="1">0</a></li><li><a href="#" s="2">4</a></li><li><a href="#" s="3">8</a></li><li class="label">items</li></ul></div><div class="ssBody"><div id="grid_23283967" class="grid std "><div id="cell1" class="content w1 sL label-span inner-div" ct="GRD" cn="23283967/cell1" pn=""><span id="label1" class="label no-border span-3"></span><div id="localH" class=""><div id="LNWzipsearch"><form id="fgl" onsubmit="return(Utils.dbx_Local());" name="fgl" title="Search"><fieldset><div><div class="caption" id="caption"><a href="/id/25632630/" title="Set weather and local news by city name">Choose by city, or&#8230;</a></div><label for="txtZip">Enter your ZIP Code</label><input id="txtZip" name="txtZip" value="Enter ZIP" onfocus="javascript:dxLNW.clearEm(this);" type="text"><button type="button" id="ZipSubmit" name="ZipSubmit" onclick="return(Utils.dbx_Local());">set</button></div></fieldset> </form></div><div class="story"><div id="localone" class="text"><h4></h4><div class="medmax"><p class="abstr medmax">&nbsp;</p></div></div></div></div></div><div id="cell2" class="content w2 x1 sL" ct="GRD" cn="23283967/cell2" pn=""><span id="label2" class="label hide"></span><div id="localF" class=""><div class="following"></div></div></div><div id="cell3" class="content w1-5 x3 label-span inner-div" ct="GRD" cn="23283967/cell3" pn=""><div id="label3" class="label span-2"></div><div id="localC" class=""><div class="weatherreport story"></div></div></div><div id="cell4" class="content w0-5 x4-5 sL sR" ct="GRD" cn="23283967/cell4" pn=""><span id="label4" class="label hide"></span><div id="localW" class=""><div class="weathercom"></div></div><script src="http://assets.msnbc.msn.com/rendering/msnbc/wb/assets/wb_comp_LocalNewsWeather.js" type="text/javascript"></script></div></div></div><div class="ssFooter"><!-- re-enabeled by TessaW on Nov 7th-->
+
+<!--
+<link rel="stylesheet" type="text/css" href="/id/46656827/?everyblock_local_slice_style">
+<script type="text/javascript" charset="utf-8" src="/id/46861230/?everyblock_local_slice_logic_nogroupon"></script>
+<div class="ebpromo" style="display:none;"></div>
+
+<div id="LS_AD_PROMO">
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+dapMgr.renderAd("LS_AD_PROMO","&PG=NBCSHO&AP=1402",820,41);
+});
+</script>
+
+--></div></div><!-- removed the script below until "bookmark" feature requested -->
+<!--  
+<script type="text/javascript" src="http://www.msnbc.msn.com/id/48772767"></script>  
+-->
+<link href="http://www.msnbc.msn.com/id/48772794" rel="stylesheet" type="text/css" />
+
+<div class="nbc_news_cover social_links">
+ 
+ <div class="links_box_hdr">
+  <span class="h4"><a href="http://www.nbcnews.com/connect">More ways to connect with NBC News</a></span>
+ </div>
+ 
+ <ul class="social_list">
+  <li class="twitter"><a href="https://twitter.com/#!/NBCNews/" target="new">Twitter</a></li>
+  <li class="facebook"><a href="http://www.facebook.com/NBCNews"target="new">Facebook</a></li>
+  <li class="google"><a href="https://plus.google.com/+NBCNews/posts" target="new">Google+</a></li>
+  <li class="instagram"><a href="http://instagram.com/nbcnews/" target="new">Instagram</a></li>
+  <li class="pinterest"><a href="http://pinterest.com/nbcnews/" target="new">Pinterest</a></li>
+  <li class="tumblr"><a href="http://nbcnews.tumblr.com/" target="new">Tumblr</a></li>
+  <li class="linkedIn"><a href="http://www.linkedin.com/company/1827" target="new">Linked in</a></li>
+  <!-- 
+   <li class="bookmark"><a id="#addNBCNewsBookmark" href="#addNBCNewsBookmark">Bookmark Us</a></li> 
+  -->
+  <li class="newsletters"><a href="http://newsvine.msnbc.msn.com/_nv/accounts/msnbc/newsletters?affiliate=msnbc.msn.com&amp;rdc=1" target="new">Newsletters</a></li>
+<li class="more"><a href="http://www.nbcnews.com/connect">More</a>
+ </ul>
+
+</div><div ct="slc" cn="US &amp; world" pn="sectionslice" class="sum" id="ss_14367"><div class="box-hdr"><h2><a href="/id/3032525/ns/us_news/">US</a> &amp; <a href="/id/3032507/ns/world_news/">world</a></h2><ul class="ctrl1"><li class="label"><span>Move box</span></li><li class="btn up"><a href="#" title="up"> </a></li><li class="btn down"><a href="#" title="down"> </a></li></ul><ul class="opt-size"><li class="label">Show</li><li><a href="#" s="1">0</a></li><li><a href="#" s="2">5</a></li><li><a href="#" s="3">10</a></li><li><a href="#" s="4">15</a></li><li class="label">stories</li></ul></div><div class="ssBody"><div id="grid_21604548" class="grid std "><div id="cell1" class="content w1 sL inner-div" ct="GRD" cn="21604548/Top headlines" pn=""><span class="label no-border" id="label1">Top headlines</span><div class="story minmedmax "><h4><a href="http://usnews.nbcnews.com/_news/2013/05/31/18648500-tornado-emergency-declared-for-oklahoma-city-extensive-damage-reported-in-suburbs?lite">Tornadoes smash through Oklahoma City area</a></h4><p class="abstr">A tornado emergency was declared for Oklahoma City as multiple twisters touched down Friday night, one of them a mile-wide monster that destroyed a Weather Channel vehicle.</p></div><div class="story max "><div class="text"><div><h5><a href="http://worldnews.nbcnews.com/_news/2013/05/31/18592339-the-drawdown-diet-marines-steamed-by-loss-of-hot-meal-at-afghanistan-base?lite">Marines steamed by loss of hot meals in Afghanistan</a></h5></div></div></div></div><div id="cell2" class="content w2 x1 sL" ct="GRD" cn="21604548/cell2" pn=""><span class="label" id="label2"></span><div class="story minmed "><h6><a href="http://worldnews.nbcnews.com/_news/2013/05/31/18592339-the-drawdown-diet-marines-steamed-by-loss-of-hot-meal-at-afghanistan-base?lite">Marines steamed by loss of hot meals in Afghanistan</a></h6></div><div class="story minmedmax "><div class="text"><div><h6><a href="http://inplainsight.nbcnews.com/_news/2013/05/31/18581353-the-truth-about-gays-and-money?lite">The truth about gays and money </a></h6></div></div></div><div class="story minmedmax "><div class="text"><div><h6><a href="http://worldnews.nbcnews.com/_news/2013/05/31/18656331-taliban-says-it-was-not-behind-red-cross-attack-in-afghanistan?lite">Taliban denies Red Cross attack in Afghanistan</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://usnews.nbcnews.com/_news/2013/05/31/18660600-four-dead-after-two-small-planes-collide-midair-officials-say?lite">Officials: 4 dead after two small planes collide midair</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://usnews.nbcnews.com/_news/2013/05/31/18657765-8-arrested-after-brawl-at-kindergarten-graduation?lite">8 arrested after brawl at kindergarten graduation</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://usnews.nbcnews.com/_news/2013/05/31/18654635-three-us-navy-football-players-under-investigation-for-alleged-sex-assault-sources-say?lite">Sources: 3 Navy football players face sex assault allegations</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://usnews.nbcnews.com/_news/2013/05/31/18655211-zumba-instructor-sentenced-to-10-months-in-jail-on-prostitution-charges?lite">Zumba instructor sentenced on prostitution charges</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://usnews.nbcnews.com/_news/2013/05/31/18659902-four-firefighters-killed-in-houston-hotel-fire-officials-say?lite">Officials: 4 firefighters killed in Houston hotel fire</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://usnews.nbcnews.com/_news/2013/05/31/18643968-im-free-arizona-mom-returns-to-us-after-drug-allegations-dropped-in-mexico?lite">'I'm free': Mexico drops drug charges against US mom</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://www.nbclosangeles.com/news/local/LAUSD-STD-Sexual-Health-Tool-QpidMe-209618131.html">LA schools offer texting tool for sharing STD status</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://www.nbcnewyork.com/news/local/Ricin-Letters-Person-Interest-Questioned-Police-Michael-Bloomberg-Barack-Obama-Mark-Glaze-Anti-Gun-Shreveport-Louisiana-209595341.html">Texas man questioned over ricin mail threats</a></h6></div></div></div></div><div id="cell3" class="content w1-5 x3" ct="GRD" cn="21604548/Multimedia" pn=""><span class="label" id="label3">Multimedia</span><div class="story img-left img-thumb-m minmedmax nowrap "><div class="img"><div><a href="http://www.nbcnews.com/video/nightly-news/52063864/"><img src="http://media1.s-nbcnews.com/j/MSNBC/Components/Video/__NEW/nn_kfor_tornado1_130531.thumb-m.jpg"></a></div><cite><span>Nightly News</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://www.nbcnews.com/video/nightly-news/52063864/" title="Click to view video: &quot;Twisters touch down in Oklahoma&quot;" class="icoVid"> </a> Video</p><h6><a href="http://www.nbcnews.com/video/nightly-news/52063864/">Twisters touch down in Oklahoma</a></h6><p class="source"><a href="/id/3032619/ns/nbc_nightly_news_with_brian_williams/ ">Nightly News</a></p></div></div></div><div class="story img-left img-thumb-m medmax nowrap "><div class="img"><div><a href="http://www.nbcnews.com/video/nightly-news/52063913/"><img src="http://media1.s-nbcnews.com/j/MSNBC/Components/Video/130531/nn_jsh_aiport2_130531.thumb-m.jpg"></a></div><cite><span>Nightly News</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://www.nbcnews.com/video/nightly-news/52063913/" title="Click to view video: &quot;Hundreds take cover in Oklahoma City airport&quot;" class="icoVid"> </a> Video</p><h6><a href="http://www.nbcnews.com/video/nightly-news/52063913/">Hundreds take cover in Oklahoma City airport</a></h6><p class="source"><a href="/id/3032619/ns/nbc_nightly_news_with_brian_williams/ ">Nightly News</a></p></div></div></div><div class="story img-left img-thumb-m max nowrap "><div class="img"><div><a href="http://video.msnbc.msn.com/the-rachel-maddow-show/52064306/"><img src="http://media1.s-nbcnews.com/j/MSNBC/Components/Video/130531/n_kfor_weathervan_130531.thumb-m.jpg"></a></div><cite><span>The Rachel Maddow Show</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://video.msnbc.msn.com/the-rachel-maddow-show/52064306/" title="Click to view video: &quot;Weather Channel truck destroyed in storm&quot;" class="icoVid"> </a> Video</p><h6><a href="http://video.msnbc.msn.com/the-rachel-maddow-show/52064306/" title="New" class="icoNew" name="icon_U" ic_cd="635056487611700000"> </a> <a href="http://video.msnbc.msn.com/the-rachel-maddow-show/52064306/">Weather Channel truck destroyed in storm</a></h6><p class="source"><a href="/id/21134540/vp/18424721/#18424721 ">The Rachel Maddow Show</a></p></div></div></div></div><div id="cell4" class="content w0-5 x4-5 sR" ct="GRD" cn="21604548/Topics" pn=""><span class="label" id="label4">Topics</span><div class="story minmedmax "><div class="text"><div><h6><a href="http://openchannel.msnbc.msn.com/">Open Channel</a></h6></div></div></div><div class="story minmedmax "><div class="text"><div><h6><a href="http://behindthewall.msnbc.msn.com/">Behind the Wall</a></h6></div></div></div><div class="story minmedmax "><div class="text"><div><h6><a href="http://worldnews.msnbc.msn.com/">World News Blog</a></h6></div></div></div></div></div></div></div><div ct="slc" cn="Politics" pn="sectionslice" class="sum" id="ss_9367"><div class="box-hdr"><h2><a href="/id/3032553/">Politics</a></h2><ul class="ctrl1"><li class="label"><span>Move box</span></li><li class="btn up"><a href="#" title="up"> </a></li><li class="btn down"><a href="#" title="down"> </a></li></ul><ul class="opt-size"><li class="label">Show</li><li><a href="#" s="1">0</a></li><li><a href="#" s="2">5</a></li><li><a href="#" s="3">10</a></li><li><a href="#" s="4">15</a></li><li class="label">stories</li></ul></div><div class="ssBody"><div id="grid_27185512" class="grid std "><div id="cell1" class="content w1 sL inner-div" ct="GRD" cn="27185512/Top headlines" pn=""><span class="label no-border" id="label1">Top headlines</span> <div class="story minmedmax "><h4><a href="http://nbcpolitics.nbcnews.com/_news/2013/05/31/18655925-medicare-fund-insolvency-date-a-bit-further-away-than-last-year?lite">Medicare fund insolvency date a bit further away than last year</a></h4><p class="abstr">The trustees of the federal government’s two largest entitlement programs – Social Security and Medicare – reported Friday that the Medicare hospital insurance fund is a bit further away than projected last year from exhausting its assets,</p></div><div class="story max "><div class="text"><div><h5><a href="http://firstread.nbcnews.com/_news/2013/05/31/18659374-re-emergence-of-debate-over-controversies-could-loom-for-obama?lite" title="New" class="icoNew" name="icon_U" ic_cd="635056263243000000"> </a> <a href="http://firstread.nbcnews.com/_news/2013/05/31/18659374-re-emergence-of-debate-over-controversies-could-loom-for-obama?lite">Re-emergence of debate over controversies could loom for Obama </a></h5></div></div></div>  </div><div id="cell2" class="content w2 x1 sL" ct="GRD" cn="27185512/cell2" pn=""><span class="label" id="label2"></span><div class="story minmed "><h6><a href="http://firstread.nbcnews.com/_news/2013/05/31/18659374-re-emergence-of-debate-over-controversies-could-loom-for-obama?lite" title="New" class="icoNew" name="icon_U" ic_cd="635056263243000000"> </a> <a href="http://firstread.nbcnews.com/_news/2013/05/31/18659374-re-emergence-of-debate-over-controversies-could-loom-for-obama?lite">Re-emergence of debate over controversies could loom for Obama </a></h6></div><div class="story minmedmax "><div class="text"><div><h6><a href="http://nbcpolitics.nbcnews.com/_news/2013/05/31/18655903-obama-urges-congress-to-follow-his-lead-to-extend-student-loan-rates?lite">Obama urges Congress to follow his lead to extend student loan rates </a></h6></div></div></div><div class="story minmedmax "><div class="text"><div><h6><a href="http://firstread.nbcnews.com/_news/2013/05/31/18657253-bachmanns-democratic-opponent-bows-out-of-race?lite" title="New" class="icoNew" name="icon_U" ic_cd="635056222624230000"> </a> <a href="http://firstread.nbcnews.com/_news/2013/05/31/18657253-bachmanns-democratic-opponent-bows-out-of-race?lite">Bachmann's Democratic opponent bows out of race</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://firstread.nbcnews.com/_news/2013/05/31/18654759-first-thoughts-hillarys-2016-numbers-come-back-down-to-earth?lite">Hillary’s polling numbers come back down to earth</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://firstread.nbcnews.com/_news/2013/05/31/18655943-poll-majority-of-voters-say-immigration-bill-wont-pass?lite">Poll: Majority of voters say immigration bill won't pass </a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://nbcpolitics.nbcnews.com/_news/2013/05/30/18633666-for-promoters-and-foes-immigration-bills-larger-impact-may-be-felt-at-the-polls?lite">For promoters and foes, immigration bill's larger impact may be felt at the polls </a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://nbcpolitics.nbcnews.com/_news/2013/05/30/18628571-future-of-voting-rights-at-stake-before-supreme-court?lite">Future of voting rights at stake before Supreme Court</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://firstread.nbcnews.com/_news/2013/05/30/18630208-immigration-and-the-blame-game?lite">Immigration and the blame game</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://firstread.nbcnews.com/_news/2013/05/30/18617500-first-thoughts-obama-says-weve-got-a-politics-thats-stuck-right-now?lite">Obama’s tough balancing act to fix ‘stuck’ politics</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://worldnews.nbcnews.com/_news/2013/05/30/18604055-mccain-insists-us-weapons-would-help-the-right-people-in-syria-war?lite">McCain: US weapons would 'help' in Syria war</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://firstread.nbcnews.com/_news/2013/05/29/18592369-for-bachmann-probes-and-politics-didnt-line-up?lite">For Bachmann, probes and politics didn't line up</a></h6></div></div></div></div><div id="cell3" class="content w1-5 x3" ct="GRD" cn="27185512/Multimedia" pn=""><span class="label" id="label3">Multimedia</span><div class="story img-left img-thumb-m minmedmax nowrap "><div class="img"><div><a href="http://video.msnbc.msn.com/mitchell-reports/52059486/"><img src="http://media1.s-nbcnews.com/j/MSNBC/Components/Video/__NEW/n_mitchell_1bass_130531.thumb-m.jpg"></a></div><cite><span>Mitchell Reports</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://video.msnbc.msn.com/mitchell-reports/52059486/" title="Click to view video: &quot;Obama pushes to lower rates on student loans&quot;" class="icoVid"> </a> Video</p><h6><a href="http://video.msnbc.msn.com/mitchell-reports/52059486/">Obama pushes to lower rates on student loans</a></h6><p class="source"><a href="">Mitchell Reports</a></p></div></div></div><div class="story img-left img-thumb-m medmax nowrap "><div class="img"><div><a href="http://video.msnbc.msn.com/mitchell-reports/52059502/"><img src="http://media2.s-nbcnews.com/j/MSNBC/Components/Video/__NEW/n_mitchell_4gun_130531.thumb-m.jpg"></a></div><cite><span>Mitchell Reports</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://video.msnbc.msn.com/mitchell-reports/52059502/" title="Click to view video: &quot;Democratic senator defends votes on gun proposals &quot;" class="icoVid"> </a> Video</p><h6><a href="http://video.msnbc.msn.com/mitchell-reports/52059502/">Democratic senator defends votes on gun proposals </a></h6><p class="source"><a href="">Mitchell Reports</a></p></div></div></div><div class="story img-left img-thumb-m max nowrap "><div class="img"><div><a href="http://video.msnbc.msn.com/mitchell-reports/52059416/"><img src="http://media3.s-nbcnews.com/j/MSNBC/Components/Video/__NEW/n_mitchell_3amb_130531.thumb-m.jpg"></a></div><cite><span>Mitchell Reports</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://video.msnbc.msn.com/mitchell-reports/52059416/" title="Click to view video: &quot;Stability in Syria threatened&quot;" class="icoVid"> </a> Video</p><h6><a href="http://video.msnbc.msn.com/mitchell-reports/52059416/">Stability in Syria threatened</a></h6><p class="source"><a href="">Mitchell Reports</a></p></div></div></div></div><div id="cell4" class="content w0-5 x4-5 sR" ct="GRD" cn="27185512/Topics" pn=""><span class="label" id="label4">Topics</span><div class="story  minmedmax"><h6><a href="http://elections.msnbc.msn.com/ns/politics/2012/all/republican/current/">Primary results</a></h6></div><div class="story  minmedmax"><h6><a href="http://firstread.msnbc.msn.com/">First Read</a></h6></div><div class="story  minmedmax"><h6><a href="http://mtp.msnbc.com/">Meet the Press</a></h6></div><div class="story  medmax"><h6><a href="http://nbcpolitics.msnbc.msn.com/_news/2012/05/03/11485509-download-the-new-nbc-politics-app?lite">NBC Politics app</a></h6></div></div></div></div></div><div ct="slc" cn="Business" pn="sectionslice" class="sum sum-biz" id="ss_9801"><div class="box-hdr"><h2><a href="http://www.nbcnews.com/business">Business</a></h2><ul class="ctrl1"><li class="label"><span>Move box</span></li><li class="btn up"><a href="#" title="up"> </a></li><li class="btn down"><a href="#" title="down"> </a></li></ul><ul class="opt-size"><li class="label">Show</li><li><a href="#" s="1">0</a></li><li><a href="#" s="2">5</a></li><li><a href="#" s="3">10</a></li><li><a href="#" s="4">15</a></li><li class="label">stories</li></ul></div><div class="ssBody"><div id="grid_21584902" class="grid std "><div id="cell1" class="content w1 sL inner-div" ct="GRD" cn="21584902/Top headlines" pn=""><span class="label no-border" id="label1">Top headlines</span><div class="story minmedmax "><h4><a href="http://www.nbcnews.com/business/richest-1-control-39-worlds-wealth-growing-6C10141007">Richest 1% control 39% of world's wealth and growing</a></h4><p class="abstr">The wealthiest 1 percent now control 39 percent of the world's wealth, and their share is likely to grow in the coming years, according to a new report. </p></div><div class="story max "><div class="text"><div><h5><a href="http://www.nbcnews.com/business/starbucks-smokers-dont-even-take-it-outside-6C10141006">Starbucks to smokers: Don't even take it outside!</a></h5></div></div></div></div><div id="cell2" class="content w2 x1 sL" ct="GRD" cn="21584902/cell2" pn=""><span class="label" id="label2"></span><div class="story minmed "><h6><a href="http://www.nbcnews.com/business/starbucks-smokers-dont-even-take-it-outside-6C10141006">Starbucks to smokers: Don't even take it outside!</a></h6></div><div class="story minmedmax "><div class="text"><div><h6><a href="http://redtape.nbcnews.com/_news/2013/05/31/18628883-forget-self-denial-key-to-richer-healthier-life-is-a-good-imagination?lite">Forget self-denial: Key to riches is a good imagination</a></h6></div></div></div><div class="story minmedmax "><div class="text"><div><h6><a href="http://www.nbcnews.com/business/wary-frankenfood-s-korea-suspends-us-wheat-imports-6C10141005">Wary of 'Frankenfood,' S. Korea suspends US wheat imports</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://lifeinc.today.com/_news/2013/05/31/18658648-turn-that-thing-off-toy-chicken-recalled-for-being-too-loud?lite">Toy chicken recalled for being too darn loud</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://lifeinc.today.com/_news/2013/05/31/18656453-its-wedding-season-are-you-covered?lite">It's wedding season. Are you covered?</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://www.nbcnews.com/business/consumer-spending-slips-sign-us-economy-slowed-6C10146786">Consumer spending slips in sign US economy slowed</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://www.nbcnews.com/business/stocks-close-big-drop-dow-tumbles-200-points-uncertainties-6C10141002">Stocks close with big drop; Dow tumbles 200 points on uncertainties</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://www.nbcnews.com/business/big-pork-deal-comes-amid-friction-over-livestock-drug-6C10136355">Big pork deal comes amid friction over livestock drug</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://www.nbcnews.com/business/theres-light-end-tunnel-us-economy-dc-obscures-view-1C10118530">Economy looks stronger, but DC's an obstacle </a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://lifeinc.today.com/_news/2013/05/30/18627220-how-to-bring-personal-ethics-into-your-closet?lite">How to bring personal ethics into your closet</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://lifeinc.today.com/_news/2013/05/29/18564363-the-college-majors-with-the-lowest-unemployment-rates?lite">For a job after graduation, major in these not those</a></h6></div></div></div></div><div id="cell3" class="content w1-5 x3" ct="GRD" cn="21584902/Multimedia &amp; features " pn=""><span class="label" id="label3">Multimedia &amp; features </span><div class="story img-left img-thumb-m minmedmax nowrap "><div class="img"><div><a href="http://www.nbcnews.com/video/nightly-news/52051487/"><img src="http://media2.s-nbcnews.com/j/MSNBC/Components/Video/__NEW/x_nn_commencement_053013.thumb-m.jpg"></a></div><cite><span>Nightly News</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://www.nbcnews.com/video/nightly-news/52051487/" title="Click to view video: &quot;Class of 2013 looks to the future&quot;" class="icoVid"> </a> Video</p><h6><a href="http://www.nbcnews.com/video/nightly-news/52051487/">Class of 2013 looks to the future</a></h6><p class="source"><a href="/id/3032619/ns/nbc_nightly_news_with_brian_williams/ ">Nightly News</a></p></div></div></div><div class="story img-left img-thumb-m medmax nowrap "><div class="img"><div><a href="http://www.nbcnews.com/video/nightly-news/52039230/"><img src="http://media4.s-nbcnews.com/j/MSNBC/Components/Video/130529/nn_13bw_takeover_130529.thumb-m.jpg"></a></div><cite><span>Nightly News</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://www.nbcnews.com/video/nightly-news/52039230/" title="Click to view video: &quot;Chinese meat producer to buy US food company&quot;" class="icoVid"> </a> Video</p><h6><a href="http://www.nbcnews.com/video/nightly-news/52039230/">Chinese meat producer to buy US food company</a></h6><p class="source"><a href="/id/3032619/ns/nbc_nightly_news_with_brian_williams/ ">Nightly News</a></p></div></div></div><div class="story img-left img-thumb-m max nowrap "><div class="img"><div><a href="http://www.nbcnews.com/video/nightly-news/52039555/"><img src="http://media2.s-nbcnews.com/j/MSNBC/Components/Video/130529/nn_re_ecnmy_130529.thumb-m.jpg"></a></div><cite><span>Nightly News</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://www.nbcnews.com/video/nightly-news/52039555/" title="Click to view video: &quot;Rise in women breadwinners signals societal shift&quot;" class="icoVid"> </a> Video</p><h6><a href="http://www.nbcnews.com/video/nightly-news/52039555/">Rise in women breadwinners signals societal shift</a></h6><p class="source"><a href="/id/3032619/ns/nbc_nightly_news_with_brian_williams/ ">Nightly News</a></p></div></div></div></div><div id="cell4" class="content w0-5 x4-5 sR" ct="GRD" cn="21584902/Topics" pn=""><span class="label" id="label4">Topics</span><div class="story  minmedmax"><h6><a href="http://www.nbcnews.com/business/topic/economy">Economy</a></h6></div><div class="story  minmedmax"><h6><a href="http://www.nbcnews.com/business/topic/markets">Markets</a></h6></div><div class="story  minmedmax"><h6><a href="http://lifeinc.today.com/">Life Inc.</a></h6></div><div class="story  medmax"><h6><a href="http://www.nbcnews.com/business/topic/autos">Autos</a></h6></div><div class="story  medmax"><h6><a href="http://www.nbcnews.com/business/topic/real-estate">Real estate</a></h6></div><div class="story  medmax"><h6><a href="http://www.nbcnews.com/business/tag/taxes">Taxes</a></h6></div><div class="story  max"><h6><a href="http://www.nbcnews.com/business/tag/energy">Energy</a></h6></div></div></div></div><div class="ssFooter"><div id="mtContainer"></div></div></div><div ct="slc" cn="Sports" pn="sectionslice" class="sum" id="ss_8287"><div class="box-hdr"><h2><a href="http://nbcsports.msnbc.com/id/3032113/ns/sports/">Sports</a></h2><ul class="ctrl1"><li class="label"><span>Move box</span></li><li class="btn up"><a href="#" title="up"> </a></li><li class="btn down"><a href="#" title="down"> </a></li></ul><ul class="opt-size"><li class="label">Show</li><li><a href="#" s="1">0</a></li><li><a href="#" s="2">5</a></li><li><a href="#" s="3">10</a></li><li><a href="#" s="4">15</a></li><li class="label">stories</li></ul></div><div class="ssBody"><div id="grid_21598457" class="grid std "><div id="cell1" class="content w1 sL inner-div" ct="GRD" cn="21598457/Top headlines" pn=""><span class="label no-border" id="label1">Top headlines</span><div class="story minmedmax "><h4><a href="http://nbcsports.msnbc.com/id/52056813/ns/sports-nba/">Tim Duncan: Fundamental legend</a></h4><p class="abstr">Posnanski: Tim Duncan may be mysterious, but he is consistent with everything he does. He has been for over 20 years. And the man who has been wise beyond his years since a child just keeps getting better.</p></div><div class="story max "><div class="text"><div><h5><a href="http://probasketballtalk.nbcsports.com/2013/05/31/lebron-says-he-went-back-to-his-cleveland-days-during-third-quarter-of-game-5/related/">PBT: LeBron channels Cavs days in win over Pacers</a></h5></div></div></div></div><div id="cell2" class="content w2 x1 sL" ct="GRD" cn="21598457/cell2" pn=""><span class="label" id="label2"></span><div class="story minmed "><h6><a href="http://probasketballtalk.nbcsports.com/2013/05/31/lebron-says-he-went-back-to-his-cleveland-days-during-third-quarter-of-game-5/related/">PBT: LeBron channels Cavs days in win over Pacers</a></h6></div><div class="story minmedmax "><div class="text"><div><h6><a href="http://probasketballtalk.nbcsports.com/2013/05/31/former-nba-player-mookie-blaylock-on-life-support-after-auto-accident/related">PBT: Former NBA star Blaylock reportedly on life support</a></h6></div></div></div><div class="story minmedmax "><div class="text"><div><h6><a href="http://www.natsinsider.com/2013/05/instant-analysis-nats-3-braves-2.html">CSN: Strasburg hurt in Nats win |<a href="http://www.csnwashington.com/baseball-washington-nationals/talk/harper-could-go-dl-werth-still-not-ready" linktype="External" resizable="true" status="true" scrollbars="true" fullscreen="false" location="true" menubars="true" titlebar="true" toolbar="true" omnitrack="false" hidetimestampicon="false" hidecontenticon="false" contenticononly="false">  Harper to DL?</a></a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://www.csnphilly.com/baseball-philadelphia-phillies/instant-replay-brewers-8-phillies-5">CSN: Brown's two blasts wasted as Crew tops Phils</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://probasketballtalk.nbcsports.com/2013/05/31/heats-chris-andersen-suspended-for-game-6-for-shoving-pacers-tyler-hansbrough/related/">PBT: Heat's Andersen suspended for Gm. 6  |<a href="http://probasketballtalk.nbcsports.com/2013/05/31/stern-tells-nbc-andersen-should-have-been-ejected-for-shove-of-hansbrough/related/" linktype="External" resizable="true" status="true" scrollbars="true" fullscreen="false" location="true" menubars="true" titlebar="true" toolbar="true" omnitrack="false" hidetimestampicon="false" hidecontenticon="false" contenticononly="false">  Stern</a></a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://prohockeytalk.nbcsports.com/2013/05/31/report-gretzky-messier-both-interested-in-rangers-job/related/">PHT: Gretzky, Messier reportedly want Rangers job</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://probasketballtalk.nbcsports.com/2013/05/31/lebron-takes-over-heat-take-game-5-from-pacers/related/">LeBron gets Heat back on track</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="javascript:vPlayer('52050434','','22825103')" title="Click to view video: &quot;Blackhawks, Kings battle in the West&quot;" class="icoVid"> </a> <a href="javascript:vPlayer('52050434','','22825103')">Blackhawks, Kings battle in the West</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://prohockeytalk.nbcsports.com/2013/05/31/eastern-conference-final-team-capsules-boston-bruins/related/">PHT conf. finals capsules: BOS  |<a href="http://prohockeytalk.nbcsports.com/2013/05/31/eastern-conference-final-team-capsules-pittsburgh-penguins/related/" linktype="External" resizable="true" status="true" scrollbars="true" fullscreen="false" location="true" menubars="true" titlebar="true" toolbar="true" omnitrack="false" hidetimestampicon="false" hidecontenticon="false" contenticononly="false">  PIT</a>  |  <a href="http://prohockeytalk.nbcsports.com/2013/05/31/western-conference-final-team-capsules-los-angeles-kings/related/" linktype="External" resizable="true" status="true" scrollbars="true" fullscreen="false" location="true" menubars="true" titlebar="true" toolbar="true" omnitrack="false" hidetimestampicon="false" hidecontenticon="false" contenticononly="false">LA</a>  |  <a href="http://prohockeytalk.nbcsports.com/2013/05/31/western-conference-final-team-capsules-chicago-blackhawks/related/" linktype="External" resizable="true" status="true" scrollbars="true" fullscreen="false" location="true" menubars="true" titlebar="true" toolbar="true" omnitrack="false" hidetimestampicon="false" hidecontenticon="false" contenticononly="false">CHI</a></a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://prohockeytalk.nbcsports.com/2013/05/31/2013-nhl-playoffs-a-look-at-the-early-conn-smythe-candidates/related/">PHT: Quick an early Conn Smythe favorite</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://collegefootballtalk.nbcsports.com/2013/05/31/three-navy-players-under-investigation-for-sexual-assault/related/">CFT: Three Navy players under investigation for sexual assault</a></h6></div></div></div></div><div id="cell3" class="content w1-5 x3" ct="GRD" cn="21598457/Multimedia &amp; features" pn=""><span class="label" id="label3">Multimedia &amp; features</span><div class="story img-left img-thumb-m minmedmax nowrap "><div class="img"><div><a href="javascript:vPlayer('52062805','','22825103')"><img src="http://nbcsportsmedia3.msnbc.com/j/NBCSports/Components/Video/_NEW/s_nbc_pft_nfl_tebow_130531_4x3.thumb-m.jpg" title="New England Patriots v New York Jets" alt="New England Patriots v New York Jets"></a></div><cite><span>NBC Sports</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="javascript:vPlayer('52062805','','22825103')" title="Click to view video: &quot;Tebow's NFL career could be over&quot;" class="icoVid"> </a> Video</p><h6><a href="javascript:vPlayer('52062805','','22825103')">Tebow's NFL career could be over</a></h6><p class="source"><a href="http://nbcsports.msnbc.com/id/22825103/">NBC Sports</a></p></div></div></div><div class="story img-left img-thumb-m medmax nowrap "><div class="img"><div><a href="javascript:vPlayer('52061337','','22825103')"><img src="http://nbcsportsmedia3.msnbc.com/j/NBCSports/Components/Video/_NEW/s_nbc_yahoo_cothehype_130531.thumb-m.jpg"></a></div><cite><span>NBC Sports</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="javascript:vPlayer('52061337','','22825103')" title="Click to view video: &quot;The Hype: Bending the screen like Beckham&quot;" class="icoVid"> </a> Video</p><h6><a href="javascript:vPlayer('52061337','','22825103')">The Hype: Bending the screen like Beckham</a></h6><p class="source"><a href="http://nbcsports.msnbc.com/id/22825103/">NBC Sports</a></p></div></div></div><div class="story img-left img-thumb-m max nowrap "><div class="img"><div><a href="javascript:vPlayer('52051594','','22825103')"><img src="http://nbcsportsmedia2.msnbc.com/j/NBCSports/Components/Video/_NEW/s_nbc_pft_nfl_rg3_130530_4x3.thumb-m.jpg"></a></div><cite><span>NBC Sports</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="javascript:vPlayer('52051594','','22825103')" title="Click to view video: &quot;RGIII on road to recovery&quot;" class="icoVid"> </a> Video</p><h6><a href="javascript:vPlayer('52051594','','22825103')">RGIII on road to recovery</a></h6><p class="source"><a href="http://nbcsports.msnbc.com/id/22825103/">NBC Sports</a></p></div></div></div></div><div id="cell4" class="content w0-5 x4-5 sR" ct="GRD" cn="21598457/Topics" pn=""><span class="label" id="label4">Topics</span><div class="story  minmedmax"><h6><a href="http://nbcsports.msnbc.com/id/51620938">Social</a></h6></div><div class="story  minmedmax"><h6><a href="http://shop.nbcsports.com/Shop-_-749550857_HM.html?sourceid=topnav">Shop</a></h6></div><div class="story  minmedmax"><h6><a href="http://nbcsports.msnbc.com/id/22825103/vp/21426493#21426493">Video</a></h6></div><div class="story  medmax"><h6><a href="http://nbcsports.msnbc.com/id/27117175/">Photos</a></h6></div><div class="story  medmax"><h6><a href="http://nbcsports.msnbc.com/id/3104018/ns/sports-scores/">Scores</a></h6></div><div class="story  medmax"><h6><a href="http://matchups.nbcsports.msnbc.com/ALL/odds/index.html">Odds</a></h6></div><div class="story  max"><h6><a href="http://matchups.nbcsports.msnbc.com/ALL/schedule/index.html">Matchups</a></h6></div><div class="story  max"><h6><a href="http://matchups.nbcsports.msnbc.com/ALL/schedule/index.html">Injuries</a></h6></div></div></div></div></div><div ct="slc" cn="Entertainment" pn="sectionslice" class="sum" id="ss_9789"><div class="box-hdr"><h2><a href="http://www.today.com/entertainment">Entertainment</a></h2><ul class="ctrl1"><li class="label"><span>Move box</span></li><li class="btn up"><a href="#" title="up"> </a></li><li class="btn down"><a href="#" title="down"> </a></li></ul><ul class="opt-size"><li class="label">Show</li><li><a href="#" s="1">0</a></li><li><a href="#" s="2">5</a></li><li><a href="#" s="3">10</a></li><li><a href="#" s="4">15</a></li><li class="label">stories</li></ul></div><div class="ssBody"><div id="grid_21583865" class="grid std "><div id="cell1" class="content w1 sL inner-div" ct="GRD" cn="21583865/Top headlines" pn=""><span class="label no-border" id="label1">Top headlines</span><div class="story minmedmax "><h4><a href="http://www.today.com/entertainment/father-son-will-jaden-smith-not-only-family-pair-working-6C10110186">Daddy dearest! Smiths join other dad-son duos</a></h4><p class="abstr">In "After Earth," real-life father and son Will and Jaden Smith play a father and son in the future. Here's a look at other dad and son duos from the entertainment world.</p></div><div class="story max "><div class="text"><div><h5><a href="http://www.today.com/toyotaconcertseries/boy-band-palooza-rocks-today-new-kids-block-98-degrees-6C10141001">NKOTB, 98 Degrees, Boyz II Men rock TODAY</a></h5></div></div></div> </div><div id="cell2" class="content w2 x1 sL" ct="GRD" cn="21583865/cell2" pn=""><span class="label" id="label2"></span><div class="story minmed "><h6><a href="http://www.today.com/toyotaconcertseries/boy-band-palooza-rocks-today-new-kids-block-98-degrees-6C10141001">NKOTB, 98 Degrees, Boyz II Men rock TODAY</a></h6></div><div class="story minmedmax "><div class="text"><div><h6><a href="http://www.today.com/entertainment/woman-beats-incredible-odds-win-1-million-prize-wheel-fortune-6C10140583">'Wheel of Fortune' winner beats incredible odds</a></h6></div></div></div><div class="story minmedmax "><div class="text"><div><h6><a href="http://www.today.com/entertainment/patrick-stewart-hugs-domestic-abuse-survivor-tells-violence-his-childhood-6C10145579">Patrick Stewart hugs domestic-abuse survivor</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://www.today.com/entertainment/dick-van-dyke-reveals-cause-his-mystery-illness-6C10153251" title="Updated" class="icoUpd" name="icon_U" ic_cd="635056394020300000"> </a> <a href="http://www.today.com/entertainment/dick-van-dyke-reveals-cause-his-mystery-illness-6C10153251">Dick Van Dyke reveals cause of his illness</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://entertainment.nbcnews.com/_news/2013/05/30/18633340-bands-rock-boston-to-aid-victims-of-marathon-bombing?lite?_fb">Bands rock Boston to aid bombing victims</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://www.today.com/entertainment/courtney-love-frances-bean-turned-down-playing-twilights-bella-6C10145572">Courtney Love: Daughter refused 'Twilight' role</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://www.today.com/entertainment/breaking-bad-creator-saul-spin-very-much-possibility-6C10141003">'Breaking Bad' creator: Saul spin-off possible</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://www.today.com/entertainment/nicki-minaj-mariah-carey-quit-american-idol-6C10140580">Nicki Minaj, Mariah Carey quit 'American Idol'</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://www.today.com/entertainment/look-out-lads-downton-abbeys-lady-mary-black-widow-6C10128515">Beware, lads! 'Downton's' Mary is a black widow</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://www.today.com/entertainment/jared-leto-i-was-food-stamp-poor-6C10136195">Jared Leto: I was 'food-stamp poor'</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://www.today.com/entertainment/instagram-prankster-gets-cozy-celebs-thanks-photoshop-6C10130982">Instagram prankster finds way into celeb pics</a></h6></div></div></div> </div><div id="cell3" class="content w1-5 x3" ct="GRD" cn="21583865/Multimedia" pn=""><span class="label" id="label3">Multimedia</span><div class="story img-left img-thumb-m minmedmax nowrap "><div class="img"><div><a href="/id/3041478/vp/52055777#52055777"><img src="http://media3.s-nbcnews.com/j/MSNBC/Components/Video/130531/tdy_concert_nkotb_130531.thumb-m.jpg"></a></div><cite><span>TODAY</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="/id/3041478/vp/52055777#52055777" title="Click to view video: &quot;New Kids on the Block perform medley of hits&quot;" class="icoVid"> </a> Video</p><h6><a href="/id/3041478/vp/52055777#52055777">New Kids on the Block perform medley of hits</a></h6><p class="source"><a href="http://today.msnbc.msn.com/id/26184891/">TODAY</a></p></div></div></div><div class="story img-left img-thumb-m medmax nowrap "><div class="img"><div><a href="/id/3041478/vp/52055776#52055776"><img src="http://media1.s-nbcnews.com/j/MSNBC/Components/Video/130531/tdy_concert_98_130531.thumb-m.jpg"></a></div><cite><span>TODAY</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="/id/3041478/vp/52055776#52055776" title="Click to view video: &quot;98 Degrees sings classic hit ‘The Hardest Thing’&quot;" class="icoVid"> </a> Video</p><h6><a href="/id/3041478/vp/52055776#52055776">98 Degrees sings classic hit ‘The Hardest Thing’</a></h6><p class="source"><a href="http://today.msnbc.msn.com/id/26184891/">TODAY</a></p></div></div></div><div class="story img-left img-thumb-m max nowrap "><div class="img"><div><a href="/id/3041478/vp/52055778#52055778"><img src="http://media1.s-nbcnews.com/j/MSNBC/Components/Video/130531/tdy_concert_boyz_130531.thumb-m.jpg"></a></div><cite><span>TODAY</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="/id/3041478/vp/52055778#52055778" title="Click to view video: &quot;Boyz II Men rock plaza with ‘Motownphilly’&quot;" class="icoVid"> </a> Video</p><h6><a href="/id/3041478/vp/52055778#52055778">Boyz II Men rock plaza with ‘Motownphilly’</a></h6><p class="source"><a href="http://today.msnbc.msn.com/id/26184891/">TODAY</a></p></div></div></div></div><div id="cell4" class="content w0-5 x4-5 sR" ct="GRD" cn="21583865/Topics" pn=""><span class="label" id="label4">Topics</span><div class="story  minmedmax"><h6><a href="http://entertainment.nbcnews.com/">NBC News Entertainment</a></h6></div><div class="story  minmedmax"><h6><a href="http://www.today.com/entertainment">TODAY Entertainment</a></h6></div><div class="story  minmedmax"><h6><a href="http://www.today.com/entertainment/topic/celebs">Celebs</a></h6></div><div class="story  medmax"><h6><a href="http://www.today.com/entertainment/topic/tv">TV</a></h6></div><div class="story  medmax"><h6><a href="http://www.today.com/entertainment/topic/popculture">Pop culture</a></h6></div><div class="story  medmax"><h6><a href="http://www.today.com/entertainment/tag/movies">Movies</a></h6></div><div class="story  max"><h6><a href="http://www.today.com/id/3041478/ns/today-toyota_concert_series_on_today">Concert Series</a></h6></div></div></div></div></div><div ct="slc" cn="Health" pn="sectionslice" class="sum" id="ss_9034"><div class="box-hdr"><h2><a href="/id/3032076/ns/health/">Health</a></h2><ul class="ctrl1"><li class="label"><span>Move box</span></li><li class="btn up"><a href="#" title="up"> </a></li><li class="btn down"><a href="#" title="down"> </a></li></ul><ul class="opt-size"><li class="label">Show</li><li><a href="#" s="1">0</a></li><li><a href="#" s="2">5</a></li><li><a href="#" s="3">10</a></li><li><a href="#" s="4">15</a></li><li class="label">stories</li></ul></div><div class="ssBody"><div id="grid_21582828" class="grid std "><div id="cell1" class="content w1 sL inner-div" ct="GRD" cn="21582828/Top headlines" pn=""><span class="label no-border" id="label1">Top headlines</span><div class="story minmedmax "><h4><a href="http://www.today.com/health/its-time-prancercise-horse-inspired-fitness-workout-goes-viral-6C10145091">It's time to Prancercise! Horse-inspired 'fitness workout' goes viral</a></h4><p class="abstr">If you haven't already seen the Internet's current favorite exercise phenomenon, do yourself a favor and watch "Prancercise: A Fitness Workout." It is worth every minute.</p></div><div class="story max "><div class="text"><div><h5><a href="http://vitals.nbcnews.com/_news/2013/05/31/18661014-girls-lung-transplant-plight-spurs-high-level-review?lite">Girl's lung transplant plight spurs top review</a></h5></div></div></div></div><div id="cell2" class="content w2 x1 sL" ct="GRD" cn="21582828/cell2" pn=""><span class="label" id="label2"></span><div class="story minmed "><h6><a href="http://vitals.nbcnews.com/_news/2013/05/31/18661014-girls-lung-transplant-plight-spurs-high-level-review?lite">Girl's lung transplant plight spurs top review</a></h6></div><div class="story minmedmax "><div class="text"><div><h6><a href="http://vitals.nbcnews.com/_news/2013/05/31/18661680-30-sick-with-hepatitis-a-tied-to-frozen-berry-blend?lite">30 sick with hepatitis A tied to frozen berry blend</a></h6></div></div></div><div class="story minmedmax "><div class="text"><div><h6><a href="http://vitals.nbcnews.com/_news/2013/05/30/18629764-most-police-murders-involve-guns-study-finds?lite">Most police murders involve guns, study finds</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://www.today.com/video/today/52061060/" title="Click to view video: &quot;How teens cope with anxiety in fast-paced digital world&quot;" class="icoVid"> </a> <a href="http://www.today.com/video/today/52061060/">How teens cope with anxiety in fast-paced digital world</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://vitals.nbcnews.com/_news/2013/05/31/18657823-20-now-sick-in-new-outbreak-tied-to-pain-shots?lite">20 now sick in new outbreak tied to pain shots</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://vitals.nbcnews.com/_news/2013/05/31/18655634-immune-therapy-excites-cancer-researchers-at-meeting?lite">Immune therapy excites cancer researchers at meeting</a></h6></div></div></div><div class="story medmax "><h6><a href="/id/52060503/ns/business-stocks_and_economy/">Italy announces first case of SARS-like coronavirus</a></h6></div><div class="story max "><div class="text"><div><h6><a href="http://www.today.com/health/your-gross-handbag-dirtier-toilet-1C10120964">Your gross handbag is dirtier than a toilet</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://vitals.nbcnews.com/_news/2013/05/30/18633759-7-pm-et-embargoprobiotics-can-prevent-dangerous-diarrhea-study-finds?lite">Probiotics can prevent dangerous diarrhea</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://vitals.nbcnews.com/_news/2013/05/29/18589680-woozy-wheezy-and-queasy-most-common-in-flight-illnesses?lite">Woozy and queasy: Most common in-flight emergencies</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://bodyodd.nbcnews.com/_news/2013/05/30/18621618-women-with-big-feet-are-beautiful-at-least-to-the-karo-batak-in-indonesia?lite">Big feet are beautiful, at least to one Indonesian group</a></h6></div></div></div></div><div id="cell3" class="content w1-5 x3" ct="GRD" cn="21582828/Multimedia and features" pn=""><span class="label" id="label3">Multimedia and features</span><div class="story img-left img-thumb-m minmedmax nowrap "><div class="img"><div><a href="http://www.nbcnews.com/video/nightly-news/52063032/"><img src="http://media2.s-nbcnews.com/j/MSNBC/Components/Video/__NEW/nn_11bwi_dolphin_130531.thumb-m.jpg"></a></div><cite><span>Nightly News</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://www.nbcnews.com/video/nightly-news/52063032/" title="Click to view video: &quot;Doctors perform breakthrough dolphin surgery&quot;" class="icoVid"> </a> Video</p><h6><a href="http://www.nbcnews.com/video/nightly-news/52063032/">Doctors perform breakthrough dolphin surgery</a></h6><p class="source"><a href="/id/3032619/ns/nbc_nightly_news_with_brian_williams/ ">Nightly News</a></p></div></div></div><div class="story img-left img-thumb-m medmax nowrap "><div class="img"><div><a href="http://www.nbcnews.com/video/rock-center/52062928/"><img src="http://media3.s-nbcnews.com/j/MSNBC/Components/Video/__NEW/x_30_rc_amputeesextra_130531.thumb-m.jpg"></a></div><cite><span>Rock Center</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://www.nbcnews.com/video/rock-center/52062928/" title="Click to view video: &quot;Amputee searches for hero who saved her at Boston Marathon&quot;" class="icoVid"> </a> Video</p><h6><a href="http://www.nbcnews.com/video/rock-center/52062928/">Amputee searches for hero who saved her at Boston Marathon</a></h6><p class="source"><a href="/id/21134540/ ">Rock Center</a></p></div></div></div><div class="story img-left img-thumb-m max nowrap "><div class="img"><div><a href="http://www.today.com/video/today/52061060/"><img src="http://media4.s-nbcnews.com/j/MSNBC/Components/Video/__NEW/x_dc_tdy_teen_anxiety_13053.thumb-m.jpg"></a></div><cite><span>TODAY</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://www.today.com/video/today/52061060/" title="Click to view video: &quot;Teens on anxiety: Everything has to be instantaneous&quot;" class="icoVid"> </a> Video</p><h6><a href="http://www.today.com/video/today/52061060/">Teens on anxiety: Everything has to be instantaneous</a></h6><p class="source"><a href="/id/21134540/ ">TODAY</a></p></div></div></div></div><div id="cell4" class="content w0-5 x4-5 sR" ct="GRD" cn="21582828/Topics" pn=""><span class="label" id="label4">Topics</span><div class="story  minmedmax"><h6><a href="/id/32462685/ns/health-health_care/">Health care</a></h6></div><div class="story  minmedmax"><h6><a href="/id/3034601/ns/health-womens_health/">Women's health</a></h6></div><div class="story  minmedmax"><h6><a href="/id/3034481/ns/health-childrens_health/">Kids and parenting</a></h6></div><div class="story  medmax"><h6><a href="/id/3034546/ns/health-heart_health/">Heart health</a></h6></div><div class="story  medmax"><h6><a href="/id/3034506/ns/health-aging/">Aging</a></h6></div><div class="story  medmax"><h6><a href="/id/13594238/ns/health-diet_and_nutrition/">Diet and nutrition</a></h6></div><div class="story  max"><h6><a href="/id/3034576/ns/health-cancer/">Cancer</a></h6></div></div></div></div></div><div ct="slc" cn="Tech &amp; Science" pn="sectionslice" class="sum" id="ss_13945"><div class="box-hdr"><h2><a href="http://www.nbcnews.com/technology">Tech</a> &amp; <a href="http://science.nbcnews.com/">Science</a></h2><ul class="ctrl1"><li class="label"><span>Move box</span></li><li class="btn up"><a href="#" title="up"> </a></li><li class="btn down"><a href="#" title="down"> </a></li></ul><ul class="opt-size"><li class="label">Show</li><li><a href="#" s="1">0</a></li><li><a href="#" s="2">5</a></li><li><a href="#" s="3">10</a></li><li><a href="#" s="4">15</a></li><li class="label">stories</li></ul></div><div class="ssBody"><div id="grid_21604102" class="grid std "><div id="cell1" class="content w1 sL inner-div" ct="GRD" cn="21604102/Top headlines" pn=""><span class="label no-border" id="label1">Top headlines</span><div class="story minmedmax "><h4><a href="http://cosmiclog.nbcnews.com/_news/2013/05/31/18663732-more-oklahoma-twisters-latest-outbreak-fits-tornado-alleys-pattern?lite">Latest outbreak fits Tornado Alley's pattern</a></h4><p class="abstr"><a href="http://cosmiclog.nbcnews.com/_news/2013/05/31/18663732-more-oklahoma-twisters-latest-outbreak-fits-tornado-alleys-pattern?lite" title="New" class="icoNew" name="icon_U" ic_cd="635056474933030000"> </a> The twisters sweeping across Oklahoma add to the perception that the Midwest is being raked by extreme weather this year, but weather researchers say the storms fit the pattern for Tornado Alley.</p></div><div class="story max "><div class="text"><div><h5><a href="http://cosmiclog.nbcnews.com/_news/2013/05/31/18658007-asteroid-1998-qe2-passes-by-our-planet-leaving-cosmic-lessons-behind?lite">Asteroid sails past us, leaving lessons behind</a></h5></div></div></div></div><div id="cell2" class="content w2 x1 sL" ct="GRD" cn="21604102/cell2" pn=""><span class="label" id="label2"></span><div class="story minmed "><h6><a href="http://cosmiclog.nbcnews.com/_news/2013/05/31/18658007-asteroid-1998-qe2-passes-by-our-planet-leaving-cosmic-lessons-behind?lite">Asteroid sails past us, leaving lessons behind</a></h6></div><div class="story minmedmax "><div class="text"><div><h6><a href="http://www.today.com/tech/will-google-glass-destroy-your-love-life-6C10132134">So awkward together: Will Google Glass doom dating?</a></h6></div></div></div><div class="story minmedmax "><div class="text"><div><h6><a href="http://www.nbcnews.com/technology/microsoft-defends-xbox-ones-maligned-design-6C10145582">Microsoft defends Xbox One's maligned design </a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://www.nbcnews.com/technology/tesla-founder-promises-details-futuristic-hyperloop-mass-transit-6C10157218">Tesla founder promises details on futuristic 'Hyperloop' mass transit</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://www.nbcnews.com/technology/syrian-electronic-army-kicked-web-6C10145580">Syrian Electronic Army kicked off the Web</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://www.nbcnews.com/technology/hands-last-us-zombie-game-very-human-face-6C10157186">'Last of Us,' a zombie game with a very human face </a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://photoblog.nbcnews.com/_news/2013/05/31/18662583-rings-of-fire-blaze-in-outer-space?lite">'Rings of fire' blaze in outer space</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://www.today.com/tech/teens-wary-facebook-following-classmates-murder-6C10145581">Teens wary of Facebook following classmate's murder</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://www.nbcnews.com/technology/dig-microsoft-sony-insists-playstation-4-first-foremost-game-console-6C10153252">Sony insists PS4 is 'first and foremost' a game console </a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://science.nbcnews.com/_news/2013/05/31/18662168-more-acidic-seas-could-mean-big-trouble-for-squid?lite">Acidic seas could mean big trouble for squid</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://science.nbcnews.com/_news/2013/05/31/18661211-a-rarely-seen-constellation-shines-this-summer?lite">A rarely seen constellation shines this summer</a></h6></div></div></div></div><div id="cell3" class="content w1-5 x3" ct="GRD" cn="21604102/Multimedia" pn=""><span class="label" id="label3">Multimedia</span><div class="story img-left img-thumb-m minmedmax nowrap "><div class="img"><div><a href="http://www.nbcnews.com/video/nightly-news/52062981/"><img src="http://media4.s-nbcnews.com/j/MSNBC/Components/Video/__NEW/nn_09bwi_asteroid_130531.thumb-m.jpg"></a></div><cite><span>Nightly News</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://www.nbcnews.com/video/nightly-news/52062981/" title="Click to view video: &quot;Giant asteroid whizzes by Earth&quot;" class="icoVid"> </a> Video</p><h6><a href="http://www.nbcnews.com/video/nightly-news/52062981/">Giant asteroid whizzes by Earth</a></h6><p class="source"><a href="/id/3032619/ns/nbc_nightly_news_with_brian_williams/ ">Nightly News</a></p></div></div></div><div class="story img-left img-thumb-m medmax nowrap "><div class="img"><div><a href="http://www.nbcnews.com/video/nbc-news/52054053/"><img src="http://media4.s-nbcnews.com/j/MSNBC/Components/Video/__NEW/_News Channel/NC_distracted0530_test_mezzn.thumb-m.jpg"></a></div><cite><span>NBC News</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://www.nbcnews.com/video/nbc-news/52054053/" title="Click to view video: &quot;Mobile devises major distraction for workers&quot;" class="icoVid"> </a> Video</p><h6><a href="http://www.nbcnews.com/video/nbc-news/52054053/">Mobile devises major distraction for workers</a></h6><p class="source"><a href="/id/21134540/ ">NBC News</a></p></div></div></div><div class="story img-left img-thumb-m max nowrap "><div class="img"><div><a href="http://www.nbcnews.com/video/in-game/52050459/"><img src="http://media4.s-nbcnews.com/j/MSNBC/Components/Video/__NEW/a_kenreck_contrast_130530.thumb-m.jpg"></a></div><cite><span>In-Game</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://www.nbcnews.com/video/in-game/52050459/" title="Click to view video: &quot;'Contrast:' the personal sacrifices to make a personal game&quot;" class="icoVid"> </a> Video</p><h6><a href="http://www.nbcnews.com/video/in-game/52050459/">'Contrast:' the personal sacrifices to make a personal game</a></h6><p class="source"><a href="http://www.ingame.msnbc.msn.com/technology/ingame">In-Game</a></p></div></div></div></div><div id="cell4" class="content w0-5 x4-5 sR" ct="GRD" cn="21604102/Topics" pn=""><span class="label" id="label4">Topics</span><div class="story  minmedmax"><h6><a href="http://science.nbcnews.com/space">Space</a></h6></div><div class="story  minmedmax"><h6><a href="http://science.nbcnews.com/">Science</a></h6></div><div class="story  minmedmax"><h6><a href="http://www.nbcnews.com/technology/technolog">Tech</a></h6></div><div class="story  medmax"><h6><a href="http://www.nbcnews.com/technology/topic/security">Security</a></h6></div><div class="story  medmax"><h6><a href="http://www.nbcnews.com/technology/topic/video-games">Video games</a></h6></div><div class="story  medmax"><h6><a href="http://www.nbcnews.com/technology/topic/innovation">Innovation</a></h6></div><div class="story  max"><h6><a href="http://www.nbcnews.com/technology/topic/mobile">Mobile</a></h6></div></div></div></div></div><div ct="slc" cn="Travel" pn="sectionslice" class="sum" id="ss_11121"><div class="box-hdr"><h2><a href="http://www.nbcnews.com/travel/">Travel</a></h2><ul class="ctrl1"><li class="label"><span>Move box</span></li><li class="btn up"><a href="#" title="up"> </a></li><li class="btn down"><a href="#" title="down"> </a></li></ul><ul class="opt-size"><li class="label">Show</li><li><a href="#" s="1">0</a></li><li><a href="#" s="2">5</a></li><li><a href="#" s="3">10</a></li><li><a href="#" s="4">15</a></li><li class="label">stories</li></ul></div><div class="ssBody"><div id="grid_21585069" class="grid std "><div id="cell1" class="content w1 sL inner-div" ct="GRD" cn="21585069/Top headlines" pn=""><span class="label no-border" id="label1">Top headlines</span><div class="story minmedmax "><h4><a href="http://www.nbcnews.com/travel/germans-claim-be-worlds-best-tippers-6C10140740">Germans claim to be the world's best tippers</a></h4><p class="abstr"></p></div><div class="story max "><div class="text"><div><h5><a href="http://www.nbcnews.com/travel/sharks-worth-more-tourism-soup-study-6C10145092">Sharks worth more for tourism than in soup: study</a></h5></div></div></div> </div><div id="cell2" class="content w2 x1 sL" ct="GRD" cn="21585069/cell2" pn=""><span class="label" id="label2"></span><div class="story minmed "><h6><a href="http://www.nbcnews.com/travel/sharks-worth-more-tourism-soup-study-6C10145092">Sharks worth more for tourism than in soup: study</a></h6></div><div class="story minmedmax "><div class="text"><div><h6><a href="http://www.nbcnews.com/travel/va-va-voom-biggest-burlesque-contest-takes-vegas-6C10139746">Va-va-voom: Biggest burlesque contest takes off in Vegas</a></h6></div></div></div><div class="story minmedmax "><div class="text"><div><h6><a href="http://www.today.com/travel/nothing-sacred-pickpockets-target-vatican-tourists-6C10145574">Is nothing sacred? Pickpockets target Vatican tourists</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://www.nbcnews.com/travel/tsa-eliminates-all-invasive-x-ray-machines-6C10138818">TSA eliminates all invasive X-ray machines</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://www.nbcnews.com/travel/chinese-wonder-why-their-tourists-behave-so-badly-6C10132132">Chinese wonder why their 
+tourists behave so badly</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://www.nbcnews.com/travel/seaworld-antarctica-opens-trackless-ride-close-penguins-6C10126947">SeaWorld Antarctica opens with trackless ride and up close penguins</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://www.nbcnews.com/travel/disney-parks-use-wireless-magicbands-tickets-1C10118466">Disney parks to use wireless MagicBands as tickets</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://www.nbcnews.com/travel/google-captures-galapagos-street-view-6C10094980">Google captures the Galapagos in Street View</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://www.nbcnews.com/travel/dry-ice-likely-led-evacuation-californias-disneyland-6C10109540">Dry ice likely led to 
+evacuation at California's Disneyland</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://www.nbcnews.com/travel/chinese-teen-defaces-egypt-temple-sparks-outcry-6C10088204">Chinese teen defaces Egypt 
+temple; sparks outcry</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://www.nbcnews.com/travel/cruise-ship-passengers-flown-back-baltimore-after-fire-breaks-out-6C10095811">Stranded cruise ship passengers bound for Baltimore</a></h6></div></div></div> </div><div id="cell3" class="content w1-5 x3" ct="GRD" cn="21585069/Multimedia and features" pn=""><span class="label" id="label3">Multimedia and features</span><div class="story img-left img-thumb-m minmedmax nowrap "><div class="img"><div><a href="http://www.today.com/video/today/52055082/"><img src="http://media3.s-nbcnews.com/j/MSNBC/Components/Video/130531/tdy-130531-vatican.thumb-m.jpg"></a></div><cite><span>TODAY</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://www.today.com/video/today/52055082/" title="Click to view video: &quot;Is nothing sacred? Pickpockets target Vatican tourists&quot;" class="icoVid"> </a> Video</p><h6><a href="http://www.today.com/video/today/52055082/">Is nothing sacred? Pickpockets target Vatican tourists</a></h6><p class="source"><a href="http://today.msnbc.msn.com/id/26184891/">TODAY</a></p></div></div></div><div class="story img-left img-thumb-m medmax nowrap "><div class="img"><div><a href="http://www.today.com/video/today/52055054/"><img src="http://media2.s-nbcnews.com/j/MSNBC/Components/Photo/_new/tdy-130531-rossen-disney.thumb-m.jpg"></a></div><cite><span>TODAY</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://www.today.com/video/today/52055054/" title="Click to view video: &quot;Rossen Reports: Scheme to skip lines at Disney&quot;" class="icoVid"> </a> Video</p><h6><a href="http://www.today.com/video/today/52055054/">Rossen Reports: Scheme to skip lines at Disney</a></h6><p class="source"><a href="http://today.msnbc.msn.com/id/26184891/">TODAY</a></p></div></div></div><div class="story img-left img-thumb-m max nowrap "><div class="img"><div><a href="http://www.nbcnews.com/video/nightly-news/52051241/"><img src="http://media4.s-nbcnews.com/j/MSNBC/Components/Video/__NEW/nn_10bwi_amelia_130530.thumb-m.jpg"></a></div><cite><span>Nightly News</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://www.nbcnews.com/video/nightly-news/52051241/" title="Click to view video: &quot;Does sonar image reveal Amelia Earhart’s lost aircraft? &quot;" class="icoVid"> </a> Video</p><h6><a href="http://www.nbcnews.com/video/nightly-news/52051241/">Does sonar image reveal Amelia Earhart’s lost aircraft? </a></h6><p class="source"><a href="/id/3032619/ns/nbc_nightly_news_with_brian_williams/ ">Nightly News</a></p></div></div></div></div><div id="cell4" class="content w0-5 x4-5 sR" ct="GRD" cn="21585069/Topics" pn=""><span class="label" id="label4">Topics</span><div class="story  minmedmax"><h6><a href="http://www.nbcnews.com/travel/tag/trending">Trending</a></h6></div><div class="story  minmedmax"><h6><a href="http://www.nbcnews.com/travel/topic/destinations">Destinations</a></h6></div><div class="story  minmedmax"><h6><a href="http://www.nbcnews.com/travel/topic/tips">Tips</a></h6></div><div class="story  medmax"><h6><a href="http://www.today.com/travel/tag/family">Family</a></h6></div><div class="story  medmax"><h6><a href="http://www.today.com/travel/tag/inspiration">Inspiration</a></h6></div><div class="story  medmax"><h6><a href="http://www.nbcnews.com/travel/tag/security">Security</a></h6></div><div class="story  max"><h6><a href="http://www.today.com/travel/">TODAY Travel</a></h6></div> </div></div></div></div><div ct="slc" cn="Lifestyle" pn="sectionslice" class="sum" id="ss_2418"><div class="box-hdr"><h2>Lifestyle<span class="sub-hed">powered by <a href="http://www.today.com/">TODAY</a></span></h2><ul class="ctrl1"><li class="label"><span>Move box</span></li><li class="btn up"><a href="#" title="up"> </a></li><li class="btn down"><a href="#" title="down"> </a></li></ul><ul class="opt-size"><li class="label">Show</li><li><a href="#" s="1">0</a></li><li><a href="#" s="2">5</a></li><li><a href="#" s="3">10</a></li><li><a href="#" s="4">15</a></li><li class="label">stories</li></ul></div><div class="ssBody"><div id="grid_23591074" class="grid std "><div id="cell1" class="content w1 sL inner-div" ct="GRD" cn="23591074/Top headlines" pn=""><span class="label no-border" id="label1">Top headlines</span><div class="story minmedmax "><h4><a href="http://usnews.nbcnews.com/_news/2013/05/31/18648500-tornado-emergency-declared-for-oklahoma-city-extensive-damage-reported-in-suburbs?lite">Tornadoes smash through Oklahoma City area</a></h4><p class="abstr">A tornado emergency was declared for Oklahoma City as multiple twisters touched down Friday night, one of them a mile-wide monster that destroyed a Weather Channel vehicle.</p></div><div class="story max "><div class="text"><div><h5><a href="http://www.today.com/entertainment/woman-beats-incredible-odds-win-1-million-prize-wheel-fortune-6C10140583">'Wheel of Fortune' winner beats incredible odds</a></h5></div></div></div></div><div id="cell2" class="content w2 x1 sL" ct="GRD" cn="23591074/cell2" pn=""><span class="label" id="label2"></span><div class="story minmed "><h6><a href="http://www.today.com/entertainment/woman-beats-incredible-odds-win-1-million-prize-wheel-fortune-6C10140583">'Wheel of Fortune' winner beats incredible odds</a></h6></div><div class="story minmedmax "><div class="text"><div><h6><a href="http://www.today.com/news/queens-new-portrait-dubbed-hideous-bloke-wearing-wig-6C10153218">Queen's new portrait dubbed 'hideous,' 'like a bloke wearing a wig'</a></h6></div></div></div><div class="story minmedmax "><div class="text"><div><h6><a href="http://www.today.com/allday/pacino-dave-matthews-clint-bill-hader-does-fan-fave-impersonations-6C10145090">Pacino, Dave Matthews and Clint: Bill Hader does fan-fave impersonations</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://www.today.com/news/having-it-all-doesnt-mean-doing-it-all-womens-grad-6C10141008">'Having it all doesn't mean doing it all': Women's grad advice to women</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://www.today.com/pets/slothified-activist-brings-home-200-rescued-sloths-1C10118467">'Slothified!' Activist brings home 200 rescued sloths</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://www.today.com/moms/what-not-name-your-baby-6C10141004">Harshit and Abass: Worst – and real – baby names</a></h6></div></div></div><div class="story medmax "><div class="text"><div><h6><a href="http://www.today.com/news/spelling-bee-winner-i-studied-german-language-patterns-6C10140997">Spelling bee winner: I studied German language patterns</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://www.today.com/health/its-time-prancercise-horse-inspired-fitness-workout-goes-viral-6C10145091">It's time to Prancercise! Horse-inspired 'fitness workout' goes viral</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://www.today.com/toyotaconcertseries/boy-band-palooza-rocks-today-new-kids-block-98-degrees-6C10141001">NKOTB, 98 Degrees, Boyz II Men rock TODAY</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://www.today.com/news/undercover-disney-deplorable-scheme-skip-lines-6C10131266">Undercover at Disney: ‘Deplorable’ scheme to skip lines</a></h6></div></div></div><div class="story max "><div class="text"><div><h6><a href="http://www.today.com/style/goodbye-32a-34a-36c-jockey-offering-new-bra-sizes-6C10140998">Goodbye 32A, 36C: Jockey offering new bra sizes</a></h6></div></div></div></div><div id="cell3" class="content w1-5 x3" ct="GRD" cn="23591074/Multimedia" pn=""><span class="label" id="label3">Multimedia</span><div class="story img-left img-thumb-m minmedmax nowrap "><div class="img"><div><a href="http://www.today.com/video/today/52054909/"><img src="http://media3.s-nbcnews.com/j/MSNBC/Components/Video/130531/tdy_sham_tornado_130531.thumb-m.jpg"></a></div><cite><span>TODAY</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://www.today.com/video/today/52054909/" title="Click to view video: &quot;At least 5 tornadoes strike Okla. and Ark.&quot;" class="icoVid"> </a> Video</p><h6><a href="http://www.today.com/video/today/52054909/">At least 5 tornadoes strike Okla. and Ark.</a></h6><p class="source"><a href="http://today.msnbc.msn.com/id/26184891/">TODAY</a></p></div></div></div><div class="story img-left img-thumb-m medmax nowrap "><div class="img"><div><a href="http://www.today.com/video/today/52055054/"><img src="http://media2.s-nbcnews.com/j/MSNBC/Components/Photo/_new/tdy-130531-rossen-disney.thumb-m.jpg"></a></div><cite><span>TODAY</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://www.today.com/video/today/52055054/" title="Click to view video: &quot;Rossen Reports: Scheme to skip lines at Disney&quot;" class="icoVid"> </a> Video</p><h6><a href="http://www.today.com/video/today/52055054/">Rossen Reports: Scheme to skip lines at Disney</a></h6><p class="source"><a href="http://today.msnbc.msn.com/id/26184891/">TODAY</a></p></div></div></div><div class="story img-left img-thumb-m max nowrap "><div class="img"><div><a href="http://www.today.com/video/today/52055556/"><img src="http://media4.s-nbcnews.com/j/MSNBC/Components/Video/130531/tdy_health_prance_130531.thumb-m.jpg"></a></div><cite><span>TODAY</span></cite></div><div class="text"><div><p class="sublabel-tease"><a href="http://www.today.com/video/today/52055556/" title="Click to view video: &quot;Do you Prancercise? Fitness sensation goes viral&quot;" class="icoVid"> </a> Video</p><h6><a href="http://www.today.com/video/today/52055556/">Do you Prancercise? Fitness sensation goes viral</a></h6><p class="source"><a href="http://today.msnbc.msn.com/id/26184891/">TODAY</a></p></div></div></div></div><div id="cell4" class="content w0-5 x4-5 sR" ct="GRD" cn="23591074/Topics" pn=""><span class="label" id="label4">Topics</span><div class="story  minmedmax"><h6><a href="http://www.today.com/news">News</a></h6></div><div class="story  minmedmax"><h6><a href="http://www.today.com/moms">Moms</a></h6></div><div class="story  minmedmax"><h6><a href="http://today.msnbc.msn.com/id/3041440/ns/today-money/">Money</a></h6></div><div class="story  medmax"><h6><a href="http://www.today.com/style">Style</a></h6></div><div class="story  medmax"><h6><a href="http://today.msnbc.msn.com/id/29054368/">KLG &amp; Hoda</a></h6></div><div class="story  medmax"><h6><a href="http://today.msnbc.msn.com/id/49063771/">Video</a></h6></div><div class="story  max"><h6><a href="http://today.msnbc.msn.com/id/16487590/">Pets</a></h6></div><div class="story  max"><h6><a href="http://today.msnbc.msn.com/id/41743465/ns/today-good_news/">Good News!</a></h6></div> </div></div></div></div><style>
+    div.marketticker .col1 {width: 140px;}
+    div.marketticker form  {width: 160px; margin-left: 12px; text-align: left;}
+    body.IE div.marketticker form input#symbol {width: 100px;}
+    div.marketticker a.sponsor {padding: 3px 0 0 0;}
+    div.marketticker div#mtSponsor {position:relative;}
+    div.marketticker div#mtSponsor div#mtDap {position:relative;float:right;}
+    span.mtSponsorT {position:absolute;top:8px;}  
+</style>
+
+<script type="text/javascript">
+    function mtCreateDap(){
+        if(mtShowDap){
+              dapMgr.enableACB("mtDap",false);
+              dapMgr.renderAd("mtDap","&PG=NBCHSL&AP=1025", 120, 30);
+        }
+    }
+</script>
+
+<script src="/id/35109355" type="text/javascript"></script><meta http-equiv="refresh" content="600; URL=http://www.nbcnews.com/"><div id="ssWrap" class="clr"><div id="AdBanner_F1" class="textSmallGrey"><div class="ad-label"><a href="http://www.msnbc.msn.com/id/31066137/media-kit/" class="mediakit" target="_blank">Advertise</a> | <a href="http://g.msn.com/AIPRIV/en-us" class="adchoices" target="_blank">AdChoices</a></div>
+<table width="779" height="105" cellpadding="0" cellspacing="0" class="adbar" id="AdBannerFront_F1">
+<tr>
+<td align="center" valign="top"><script type="text/javascript">
+    try {
+        (function () {
+
+            var networkId = 2620;
+            var adUnit = "nbcnews/homepage";
+            var height = 90;
+            var width = 728;
+
+            _gpt_simpleUrl.CreateTag(networkId, adUnit, width, height);
+        } ());
+    } catch (e) { }
+</script></td>
+</tr>
+</table></div></div><noscript><style>.sum{display:block}</style></noscript><script type="text/javascript">ssInit('6488,14367,9367,9801,8287,9789,9034,13945,11121,2418','1222222222',4);</script></div></div><div id="spotlight"><div ct="slc" cn="Spotlight" pn="sectionslice" class="sum sponsorSlice (adSpot_01) (adSpot_02)" id="ss_587"><div class="box-hdr"><h2>Spotlight<span class="sub-hed">on coverage supported by our sponsors</span></h2><ul class="hide"><li class="label"><span>Move box</span></li><li class="btn up"><a href="#" title="up"> </a></li><li class="btn down"><a href="#" title="down"> </a></li></ul><ul class="opt-size"></ul></div><div class="ssBody"><style type="text/css">.sponsorSlice .grid .label a, .sponsorSlice .grid .label a:visited {color:#999999;}.sponsorSlice .box-hdr h2 {color:#919191;}</style><div id="grid_29470917" class="grid std "><div id="cell1" class="content w1 sL" ct="GRD" cn="29470917/Nightly News" pn=""><span class="label" id="label1"><a href="http://dailynightly.nbcnews.com/_news/2013/04/30/17988877-entrepreneurs-find-success-in-detroit">Nightly News</a></span><div class="story img-small"><div class="img"><div><a href="http://dailynightly.nbcnews.com/_news/2013/04/30/17988877-entrepreneurs-find-success-in-detroit"><img src="http://media4.s-nbcnews.com/j/MSNBC/Sections/zRedesign/Slices/Sales - Sponsored Links/SPOTLIGHT_IMAGES/Detroit_142x107.grid-2x2.jpg"></a></div></div><div class="text"><div><h6><a href="http://dailynightly.nbcnews.com/_news/2013/04/30/17988877-entrepreneurs-find-success-in-detroit">Entrepreneurs find success in Detroit</a></h6><p class="abstr"></p></div></div></div> </div><div id="cell2" class="content w1 x1 sL" ct="GRD" cn="29470917/Full Time Beauty" pn=""><span class="label" id="label2"><a href="http://www.today.com/style/full-time-beauty-how-real-women-balance-busy-life-healthy-6C9995725">Full Time Beauty</a></span><div class="story img-small"><div class="img"><div><a href="http://www.today.com/style/full-time-beauty-how-real-women-balance-busy-life-healthy-6C9995725"><img src="http://media3.s-nbcnews.com/j/MSNBC/Sections/zRedesign/Slices/Sales - Sponsored Links/SPOTLIGHT_IMAGES/142x107_HealthySkin.grid-2x2.jpg"></a></div></div><div class="text"><div><h6><a href="http://www.today.com/style/full-time-beauty-how-real-women-balance-busy-life-healthy-6C9995725">How real women balance a busy life with healthy skin</a></h6><p class="abstr"></p></div></div></div></div><div id="cell3" class="content w1 x2 sL" ct="GRD" cn="29470917/connections" pn=""><span class="label" id="label3"><a href="http://connections.msn.com/videos/archive/3?WT.mc_id=nbc">connections</a></span><div class="story img-small"><div class="img"><div><a href="http://connections.msn.com/videos/archive/3?WT.mc_id=nbc"><img src="http://media2.s-nbcnews.com/j/MSNBC/Sections/zRedesign/Slices/Sales - Sponsored Links/SPOTLIGHT_IMAGES/connect_142x107.grid-2x2.jpg"></a></div></div><div class="text"><div><h6><a href="http://connections.msn.com/videos/archive/3?WT.mc_id=nbc">Passengers find romance in row 40</a></h6><p class="abstr"></p></div></div></div></div><div id="cell4" class="content w1 x3 sL" ct="GRD" cn="29470917/Business on Main" pn=""><span class="label" id="label4"><a href="http://businessonmain.msn.com/browseresources/articles/leadership.aspx?cp-documentid=257718708&amp;wt.mc_id=msnbcspotlight">Business on Main</a></span><div class="story img-small"><div class="img"><div><a href="http://businessonmain.msn.com/browseresources/articles/leadership.aspx?cp-documentid=257718708&amp;wt.mc_id=msnbcspotlight"><img src="http://media1.s-nbcnews.com/j/MSNBC/Sections/zRedesign/Slices/Sales - Sponsored Links/SPOTLIGHT_IMAGES/CriticThinker_142x107.grid-2x2.jpg"></a></div></div><div class="text"><div><h6><a href="http://businessonmain.msn.com/browseresources/articles/leadership.aspx?cp-documentid=257718708&amp;wt.mc_id=msnbcspotlight">How to be a better critical thinker and decision-maker</a></h6><p class="abstr"></p></div></div></div></div><div id="cell5" class="content w1 x4 sR" ct="GRD" cn="29470917/TODAY Food" pn=""><span class="label" id="label5"><a href="http://www.today.com/id/3041421/vp/51810924#vpflash">TODAY Food</a></span><div class="story img-left img-small"><div class="img"><div><a href="http://www.today.com/id/3041421/vp/51811026#vpflash"><img src="http://media4.s-nbcnews.com/j/TODAY/z_Creative/ShowFronts/TODAYFood/grids/Tease_Images/142x107_Lactaid_3.grid-2x2.jpg"></a></div></div><div class="text"><div><h6><a href="http://www.today.com/id/3041421/vp/51811026#vpflash">Delicious lactose free breakfast</a></h6></div></div></div></div></div></div></div><style type="text/css">
+#spotlight .sum {
+margin-bottom: 10px;
+}
+
+#cover #msnfooter .container {
+    height: 22px;
+}
+
+</style>
+
+<iframe src="about:blank" marginHeight="0" scrolling="no" marginWidth="0" height="250" width="840" id="ob_video"></iframe>
+<script>
+$(function(){
+$("#ob_video").attr("src","/id/51982452");
+});
+</script><script src="/id/24472559" type="text/javascript"></script></div>
+<div id="ad-front-footer"><style type="text/css">
+
+#ad-front-footer {
+height:auto !important;
+}
+
+.Ad-Container-820x282 {
+ font-family: Arial, Helvetica, sans-serif;
+ color: #797A8A;
+ margin: 0px auto;
+ width: 820px;
+ padding-right: 10px;
+ height: 166px;
+ font-size: 10px;
+ line-height: 13px;
+}
+
+.Ad-Container-820x282 .Left, .Ad-Container-820x282 .Right {
+ float: left;
+ height: 100%;
+}
+
+.Ad-Container-820x282 .Left {
+ width: 664px;
+ background-image:url(http://msnbcmedia.msn.com/i/MSNBC/SiteManagement/Ads/Custom%20Solutions/DealsAndTips/300x100_Ads_Spotlight_BG.png);
+ background-position: -996px 0;
+ background-repeat:no-repeat;
+ overflow:hidden;
+}
+
+.Ad-Container-820x282 .LeftContainer {
+ padding-top: 44px;
+ padding-left: 21px;
+}
+
+.Ad-Container-820x282 div.Row div {
+ width: 300px;
+ height: 100px;
+ overflow:hidden;
+ float:left;
+ margin-right:13px;
+ margin-bottom: 21px;
+}
+
+.Ad-Container-820x282 .Right {
+ width: 143px;
+ margin-left: 11px;
+}
+
+.Ad-Container-820x282 .Right .SponsoredLinks {
+    height: 135px;
+    overflow: hidden !important;
+    padding-top: 25px;
+}
+
+.Ad-Container-820x282 img {
+ border: none;
+}
+.Ad-Container-820x282 .Left .LeftContainer .Row {padding:0;border:0;background:none;}
+#todayShow .ad-container-820x282 .left {background-position: 0 -166px;}
+</style>
+<div id="dnt" class="Ad-Container-820x282">
+ <div class="Left">
+     <div class="LeftContainer">
+            <div class="Row">
+                <div id="dealOne"><iframe width="300" scrolling="no" height="100" frameborder="0" id="dapIfM7" name="dapIfM7" src="about:blank"></iframe><script>dapMgr.renderAd("dealOne","&amp;PG=NBCRM4&amp;AP=1402",300,100);</script>                </div>
+                <div id="dealTwo"><iframe width="300" scrolling="no" height="100" frameborder="0" id="dapIfM8" name="dapIfM8" src="about:blank"></iframe><script>dapMgr.renderAd("dealTwo","&amp;PG=NBCRM1&amp;AP=1402",300,100);</script>                </div>
+            </div>
+   </div>
+    </div>    
+ <div class="Right">      
+        <div class="SponsoredLinks">
+<iframe src="http://www.nbcnews.com/id/51055203" marginheight="0" marginwidth="0" frameBorder="0" scrolling="no" padding="0" margin="0" style="height:135px;width:143px;padding:0;margin:0;"></iframe>
+
+</div></div></div>
+
+</div></div></div><div id="bottomGradientIE" class="gradOff"></div><div id="footer"><div class="container"><div class="logo"><a href="/" title="NBCNews.com home"><img src="http://msnbcmedia.msn.com/i/msnbc/Components/CSS/img/spacer.gif" alt="" height="75" width="140"></a></div><div class="links"><div class="listheader">Featuring</div><ul>
+<li><a href="http://www.today.com/">TODAY</a></li>
+<li><a href="http://www.nbcnews.com/id/3032619/ns/nightly_news/">Nightly News</a></li>
+<li><a href="http://www.nbcnews.com/id/3032600/ns/dateline_nbc/">Dateline</a></li>
+<li><a href="http://www.nbcnews.com/id/3032608/ns/meet_the_press_online_at_msnbc/">Meet the Press</a></li>
+<li><a href="http://www.nbcnews.com/id/3096434/ns/msnbc_tv/">msnbc tv</a></li>
+<li><a href="http://www.breakingnews.com">Breaking News</a></li>
+<li><a href="http://www.newsvine.com/">Newsvine</a></li>
+</ul><div class="listheader">Categories</div><ul>
+<li><a href="/">Top stories</a></li>
+<li><a href="http://www.nbcnews.com/id/3098358/ns/local_news-local_news/">Local news</a></li>
+<li><a href="http://www.nbcnews.com/id/3032525/ns/us_news/">US</a></li>
+<li><a href="http://www.nbcnews.com/id/3032507/ns/world_news/">World</a></li>
+<li><a href="http://www.nbcnews.com/id/3032553/ns/politics/">Politics</a></li>
+<li><a href="http://www.nbcnews.com/business">Business</a></li>
+<li><a href="http://nbcsports.msnbc.com/id/3032113/ns/sports/">Sports</a></li>
+<li><a href="http://www.nbcnews.com/id/3032084/ns/entertainment/">Entertainment</a></li>
+<li><a href="http://www.nbcnews.com/id/3032076/ns/health/">Health</a></li>
+<li><a href="http://www.nbcnews.com/technology">Tech</a></li>
+<li><a href="http://science.nbcnews.com">Science</a></li>
+<br />
+<li><a href="http://www.nbcnews.com/travel">Travel</a></li>
+<li><a href="http://www.nbcnews.com/id/3032128/ns/weather/">Weather</a></li>
+</ul></div><div class="divider"></div><div class="buttons"><style>
+#footer .buttons {
+top:5px;
+}
+
+#footer .buttons ul.buttons {
+  left: 0;
+}
+
+#footer .buttons .link {
+float:left;
+width: 195px;
+margin-bottom:7px;
+padding-bottom:2px;
+text-align:left;
+height:18px
+}
+
+#footer .buttons .link a{
+padding:3px 0 0 25px;
+font-size: 11px;
+font-weight: normal;
+color: #DEF;
+text-decoration:none;
+display:inline-block;
+}
+
+#footer .buttons .link a:hover {
+color:#FC6;
+border-bottom:none;
+}
+
+#footer .ftr-mobile {
+background: transparent url("http://media1.s-nbcnews.com/i/msnbc/Components/CSS/img/ftr-buttons-20px/ftr-btn-phone.gif") no-repeat left top;
+}
+
+#footer .ftr-alerts {
+background: transparent url("http://media1.s-nbcnews.com/i/msnbc/Components/CSS/img/ftr-buttons-20px/ftr-btn-mail.gif") no-repeat left top;
+}
+
+#footer .ftr-newstools {
+background: transparent url("http://media1.s-nbcnews.com/i/msnbc/Components/CSS/img/ftr-buttons-20px/ftr-btn-widget.gif") no-repeat left top;
+}
+
+#footer .ftr-rss {
+background: transparent url("http://media3.s-nbcnews.com/i/msnbc/Components/CSS/img/ftr-buttons-20px/ftr-btn-RSS.gif") no-repeat left top;
+}
+
+#footer .ftr-podcast { 
+background: transparent url("http://media2.s-nbcnews.com/i/msnbc/Components/CSS/img/ftr-buttons-20px/ftr-btn-podcast.gif") no-repeat left top;
+}
+
+#footer .ftr-connect {
+background: transparent url("http://media1.s-nbcnews.com/i/MSNBC/Components/CSS/img/ftr-buttons-20px/ftr-button-share_01.gif") no-repeat left top;
+}
+</style>
+<ul class="buttons">
+<li class="ftr-connect link"><a href="http://www.nbcnews.com/connect">Connect with NBC News</a>
+</li>
+<li class="ftr-mobile link"><a href="/id/39538918/">NBCNews.com on your phone</a>
+</li>
+<li class="ftr-alerts link"><a href="http://www.newsletters.msnbc.com/">Sign up for newsletters &amp; alerts</a>
+</li>
+<li class="ftr-rss link"><a href="/id/5216556/">Subscribe to our RSS feeds</a>
+</li>
+<li class="ftr-podcast link"><a href="/id/8132577/">Subscribe to our podcasts</a>
+</li>
+<li class="ftr-newstools link"><a href="/id/23781733/">NewsTools from NBCNews.com</a>
+</li>
+</ul></div></div></div><div id="msnfooter"><div class="container"><ul><li>© 2013 NBCNews.com</li></ul>
+<ul id="leftlinks">
+<li><a href="/id/32027560/">About us</a></li>
+<li><a href="/id/32359544/">Contact</a></li>
+<li><a href="/html/msnbc/HtmlSitemap0.html">Site map</a></li>
+<li><a href="/id/27365695/">Careers</a></li> 
+<li><a href="/id/32556806/">Stock data</a></li>
+<li><a href="/id/3303540/">Terms &amp; conditions</a></li>
+<li><a href="/id/49418540/">Closed captioning</a></li>
+
+</ul>
+<ul id="rightlinks">
+<li><a href="http://g.msn.com/AIPRIV/en-us">About our ads</a></li>
+<li><a href="http://www.nbcnews.com/id/48150786">Privacy policy</a></li>
+<li><a href="/id/31066137/">Advertise</a></li>
+<li><a href="/id/3303511/">Help</a></li>
+</ul><script type='text/javascript'>
+function _init() {
+    var cookie = readCookie("P7");
+	if(document.referrer.match(/xfinity.comcast.net/)){
+		document.cookie = ('P7=X;domain=.msnbc.msn.com;path=/;');
+		isComcast();
+	}
+	else if(cookie !== null && cookie === "X"){
+		if(document.referrer.match(/.msnbc.msn.com/)){
+			isComcast();
+		}
+		else{
+			showNetwork();
+			deleteCookie();
+		}
+	}
+	else{
+		showNetwork();
+	}
+   }
+
+   function isComcast() {
+       $('body').addClass('comcast');
+       showNetwork();
+       $.getScript('http://xfinity.comcast.net/js-api/compressed/xpbar.js?version=3&pagename=msnbcheader&width=1100&id=xfinity');
+   }
+
+   function showNetwork() {
+       $("#network .content").show();
+   }
+
+   function readCookie(ck) {
+       var anyCookies = document.cookie;
+       var pos = anyCookies.toUpperCase().indexOf(ck.toUpperCase() + "=");
+       var value = "";
+       if (pos != -1) {
+           var start = pos + ck.length + 1;
+           var end = anyCookies.indexOf(";", start);
+           if (end == -1) {
+               end = anyCookies.length;
+           }
+           value = anyCookies.substring(start, end);
+           value = unescape(value);
+       }
+       return value;
+   }
+
+	function deleteCookie(){
+		document.cookie = ('P7=X;expires=Thu, 01-Jan-1970 00:00:01 GMT');
+	}
+
+   _init();
+
+</script></div></div><div id="bottomGradient" class="gradOff"></div><img src="https://switch.atdmt.com/action/msnus_MSNBC_homepage_021009" height="1" width="1"><script type="text/javascript">document.write('<!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: MSNBC.com Homepage\nURL of the webpage where the tag is expected to be placed: http://www.msnbc.msn.com/\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 07/13/2012\n-->\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\ndocument.write(\'<iframe src="http://fls.doubleclick.net/activityi;src=2183402;type=nbcne748;cat=msnbc333;ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n</scr'+'ipt>\n<noscript>\n<iframe src="http://fls.doubleclick.net/activityi;src=2183402;type=nbcne748;cat=msnbc333;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\n<!-- End of DoubleClick Floodlight Tag: Please do not remove -->');</script><script type="text/javascript">
+(function(w, d) { var a = function() { var a = d.createElement('script'); a.type = 'text/javascript';
+a.async = 'async'; a.src = '//' + ((w.location.protocol === 'https:') ? 's3.amazonaws.com/cdx-radar/' :
+'radar.cedexis.com/') + '01-10674-radar10.min.js'; d.body.appendChild(a); };
+if (w.addEventListener) { w.addEventListener('load', a, false); }
+else if (w.attachEvent) { w.attachEvent('onload', a); }
+}(window, document));
+</script><script src="//www.nbcnews.com/id/51579771"></script></body></html>

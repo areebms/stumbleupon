@@ -1,0 +1,765 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+
+
+<title>Griffin Argo Kitesurfing Kite</title>
+
+<link rel="stylesheet" href="http://www.powerkitesdirect.com/wp-content/themes/mk3/style.css" type="text/css" media="screen" title="default" />
+
+<link rel="alternate" type="application/rss+xml" title="Kiteboarding Kitesurfing Kite Surf Shop Power Kite &amp; Trainer Kites RSS Feed" href="http://www.powerkitesdirect.com/feed/" />
+
+<link rel="pingback" href="http://www.powerkitesdirect.com/xmlrpc.php" />
+
+<script src="http://www.powerkitesdirect.com/wp-content/themes/mk3/ajCart/jquery.js" type="text/javascript"></script>
+
+<script src="http://www.powerkitesdirect.com/wp-content/themes/mk3/ajCart/jquery.form.js" type="text/javascript"></script>
+
+<script src="http://www.powerkitesdirect.com/wp-content/themes/mk3/ajCart/thickbox.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+
+		var CARTDIR="/wp-content/themes/mk3/ajCart/";
+
+		var PPEmail="powerkitesdirect@gmail.com";
+
+		imgLoader.src = CARTDIR + "loadingAnimation.gif";
+
+		
+
+		   $('.crtAdd').ajaxForm({
+
+		   //intercept the submit event with a callback
+
+		   beforeSubmit:  function(formData, jqForm, options) {
+
+		     //serialize form data; append to the form action; tack on ThickBox params
+
+		     var URL = jqForm[0].action + "?" + $.param(formData);
+
+		     URL += "&PPEmail="+PPEmail+"&CARTDIR="+CARTDIR;
+
+			 
+
+			 var form = jqForm[0]; 
+
+				 if (form.shp){
+
+					 var shipping = form.shp.value;
+
+					  if (form.shp.selectedIndex==0) {          // force a selection
+
+						alert ("Make a shipping selection!");
+
+						return false;
+
+						}
+
+					
+
+					 var ary = shipping.split (" ");          // break apart
+
+					  for (j=0; j<ary.length; j++) {  
+
+					    if (ary[j].length < 4) continue;
+
+						    tok = ary[j].substring (0,3); // first 3 chars
+
+						    val = ary[j].substring (3);   // get data
+
+						    if (tok == "hn=")             // value for item handling
+
+						      URL += "&" + "handling=" + val;
+
+						    if (tok == "hc=")             // value for handling cart
+
+						      URL += "&" + "handling_cart=" + val;
+
+						    if (tok == "s1=")             // value for shipping
+
+						      URL += "&" + "shipping=" + val;
+
+						    if (tok == "s2=")             // value for shipping2
+
+						      URL += "&" + "shipping2=" + val;
+
+					  }
+
+				 }	  
+
+		     //call ThickBox directly
+
+		     var caption = "My Shopping Cart";
+
+		     var imageGroup = false;
+
+		     tb_show(caption,URL,imageGroup);
+
+		     //cancel the form submission by returning false
+
+		       return false;
+
+		   }
+
+		 }); 
+
+		 
+
+	});
+
+</script>
+
+<link rel="stylesheet" href="http://www.powerkitesdirect.com/wp-content/themes/mk3/ajCart/thickbox.css" type="text/css" media="screen" title="default" />
+
+<script src="http://www.powerkitesdirect.com/wp-content/themes/mk3/js/FancyZoom.js" type="text/javascript"></script>
+
+<script src="http://www.powerkitesdirect.com/wp-content/themes/mk3/js/FancyZoomHTML.js" type="text/javascript"></script>
+
+	<style type="text/css">
+	body { background-color: #708BC0; }
+	#bar { background-color: #000000; }
+	#nav { background-color: #708BC0; }
+	#nav li a { color: #000000; }
+	#bar .barhead { width: 900px; }
+	#nav .navbar { width: 900px; }
+	#wrap { width: 900px; }	
+	#content .news { width: 470px; }
+	#content .products { width: 400px; }	
+	#content .products .post { width: 116px; }
+	#content .products .widgetcase { width: 375px; }	
+	#content .grid { width: 900px; }
+	/* The following is if widget sidebar is enabled */
+	//#content .grid { width: 500px; }
+	</style>
+	
+	<link rel="canonical" href="http://www.powerkitesdirect.com/griffin-argo-kitesurf-kite/" />
+	<meta name="description" content="A review of the new Griffin Argonaut kiteboarding kite. Video and article that details the pros and cons of this beginner kitesurfing kite for sale." />
+	<meta name="keywords" content="Griffin argo,Griffin Argonaut,kitesurfing kites,kiteboarding kite,parachute kite,kitesurf kite,kitesurfing kites for sale,sail kite,kiteboard kite,Kiteboarding,kitesurfing,power kites,landboards,mountain boards,trainer kite,kitesurf,hq kites,ozone kites" />
+	<meta name="google-site-verification" content="www.powerkitesdirect.com" />
+	<meta name="y_key" content="www.powerktiesdirect.com" />
+	<meta name="msvalidate.01" content="www.powerkitesdirect.com" />
+				
+	<script type="text/javascript">//<![CDATA[
+	// Google Analytics for WordPress by Yoast v4.2.2 | http://yoast.com/wordpress/google-analytics/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-710914-4']);
+	_gaq.push(['_trackPageview'],['_trackPageLoadTime']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	//]]></script>
+<link rel="alternate" type="application/rss+xml" title="Kiteboarding Kitesurfing Kite Surf Shop Power Kite &amp; Trainer Kites &raquo; Griffin Argo Kitesurf Kite Comments Feed" href="http://www.powerkitesdirect.com/griffin-argo-kitesurf-kite/feed/" />
+<link rel='stylesheet' id='gdsr_style_main-css'  href='http://www.powerkitesdirect.com/wp-content/plugins/gd-star-rating/css/gdsr.css.php?t=1325180243&#038;s=a10i10m20k20c05r05%23121620243046%23121620243240%23s1pchristmas%23s1pcrystal%23s1pdarkness%23s1poxygen%23s1goxygen_gif%23s1pplain%23s1ppumpkin%23s1psoft%23s1pstarrating%23s1pstarscape%23t1pclassical%23t1pstarrating%23t1gstarrating_gif%23lsgflower&#038;o=off&#038;ver=1.9.13' type='text/css' media='all' />
+<link rel='stylesheet' id='gdsr_style_xtra-css'  href='http://www.powerkitesdirect.com/wp-content/gd-star-rating/css/rating.css?ver=1.9.13' type='text/css' media='all' />
+<link rel='stylesheet' id='sfstst_css-css'  href='http://www.powerkitesdirect.com/wp-content/plugins/wp-testimonials/css/wp-testimonials-style.css?ver=3.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://www.powerkitesdirect.com/wp-content/plugins/contact-form-7/styles.css?ver=3.0.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='popup_domination-css'  href='http://www.powerkitesdirect.com/wp-content/plugins/popup-domination1/themes/lightbox3/lightbox.css?ver=3.2.1' type='text/css' media='all' />
+<script type="text/javascript">
+var popup_domination = {"defaults":{"name":"Your First Name...","from":"Your Email Address..."},"delay":8,"cookie_time":7,"center":"Y","cookie_path":"\/","show_opt":"open","unload_msg":"Would you like to signup to the newsletter before you go?","impression_count":0,"output":"<div class=\"popup-dom-lightbox-wrapper\" id=\"popup_domination_lightbox_wrapper\" style=\"display:none\">\n\t<div class=\"lightbox-main lightbox-color-red\">\n\t\t<a href=\"#\" class=\"lightbox-close\" id=\"popup_domination_lightbox_close\"><span>Close<\/span><\/a>\n\t\t<div class=\"lightbox-clear\"><\/div>\n\t\t<div class=\"lightbox-grey-panel\">\n\t\t\t<p class=\"heading\">Get $ 49 Worth of Kiteboarding Training - FREE !<\/p>\n\t\t\t\n\t\t\t<div class=\"bullet-listx\">\n\t\t\t\t<p>Join The Power Kites Direct VIP List and and get access to learning how to kiteboard - the fast, easy way! You're about to learn:<br \/>\r\n<\/p>\n\t\t\t\t<ul class=\"bullet-list\">\t\t\t\t\t<li>Our Favorite Methods for Speeding Up Your Kiteboard Training (get to the fun part - fast)<\/li>\t\t\t\t\t<li>Special Deals, Offers and Prices for VIP List Members. You Get First Pick of The Best Deals.<\/li>\t\t\t\t\t<li>Best Spots Worldwide and When to Go<\/li>\t\t\t\t<\/ul>\n\t\t\t\t<div class=\"lightbox-clear\"><\/div>\n\t\t\t<\/div>\n\t\t<\/div>\n\t\t\n\t\t<div class=\"lightbox-signup-panel\">\n\t\t\t<p><\/p>\n            <form method=\"post\" action=\"http:\/\/www.aweber.com\/scripts\/addlead.pl\" target=\"_blank\">\n                <div>\n                    <input type=\"hidden\" name=\"meta_web_form_id\" value=\"1602896050\" \/><input type=\"hidden\" name=\"meta_split_id\" value=\"\" \/><input type=\"hidden\" name=\"unit\" value=\"powerkitestips\" \/><input type=\"hidden\" name=\"redirect\" value=\"http:\/\/www.aweber.com\/thankyou-coi.htm?m=audio\" \/><input type=\"hidden\" name=\"meta_redirect_onlist\" value=\"\" \/><input type=\"hidden\" name=\"meta_adtracking\" value=\"\" \/><input type=\"hidden\" name=\"meta_message\" value=\"1\" \/><input type=\"hidden\" name=\"meta_required\" value=\"from\" \/><input type=\"hidden\" name=\"meta_forward_vars\" value=\"0\" \/><input type=\"hidden\" name=\"submit\" value=\"Get Instant Access Now\" \/><input type=\"text\" class=\"name\" value=\"Your First Name...\" name=\"name\" \/><input type=\"text\" class=\"email\" value=\"Your Email Address...\" name=\"from\" \/>                    <input type=\"submit\" value=\"FREE INSTANT ACCESS\" src=\"http:\/\/www.powerkitesdirect.com\/wp-content\/plugins\/popup-domination1\/themes\/lightbox3\/images\/trans.png\" class=\"green-button\" \/>\n\t\t\t\t\t<p class=\"secure\"><\/p>\n                <\/div>\n            <\/form>\n\t\t<\/div>\n\t\t<div class=\"lightbox-clear\"><\/div>\n\t\t\t<p class=\"powered\"><a href=\"http:\/\/www.popupdomination.com\/\" target=\"_blank\">Powered By PopUp Domination<\/a><\/p>\t<\/div>\n<\/div>"};
+</script><script type='text/javascript' src='http://www.powerkitesdirect.com/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://www.powerkitesdirect.com/wp-includes/js/jquery/jquery.js?ver=1.6.1'></script>
+<script type='text/javascript' src='http://www.powerkitesdirect.com/wp-content/plugins/gd-star-rating/js/gdsr.js?ver=1.9.13'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js?ver=3.2.1'></script>
+<script type='text/javascript' src='http://www.powerkitesdirect.com/wp-content/plugins/popup-domination1/lightbox.js?ver=1.0'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.powerkitesdirect.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.powerkitesdirect.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Kiteboarding Kitesurfing Kite Surf Shop Power Kite &amp; Trainer Kites' href='http://www.powerkitesdirect.com/' />
+<link rel='start' title='Griffin Kites LEI' href='http://www.powerkitesdirect.com/2009-griffin-kitesurfing-kites/' />
+<link rel='prev' title='Scrub Psycho Landboard ATB' href='http://www.powerkitesdirect.com/entry-level-mountain-board-2/' />
+<link rel='next' title='Flying And Jumping Practice – Taming Your Kitesurfing Experience' href='http://www.powerkitesdirect.com/flying-jumping-practice-taming-kitesurfing-experience/' />
+<meta name="generator" content="WordPress 3.2.1" />
+<link rel='shortlink' href='http://www.powerkitesdirect.com/?p=2891' />
+<link rel="stylesheet" type="text/css" href="http://www.powerkitesdirect.com/wp-content/plugins/collision-testimonials/i/css/styles.css" media="all" /><script type="text/javascript">
+//<![CDATA[
+var _wpcf7 = { cached: 1 };
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+var gdsr_cnst_nonce = "9f1ef7c409";
+var gdsr_cnst_ajax = "http://www.powerkitesdirect.com/wp-content/plugins/gd-star-rating/ajax.php";
+var gdsr_cnst_button = 1;
+var gdsr_cnst_cache = 1;
+// ]]>
+</script>
+<!--[if IE]><style type="text/css">.ratemulti .starsbar .gdcurrent { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; filter: alpha(opacity=70); }</style><![endif]-->
+<!-- This site is powered by Tweet, Like, Plusone and Share Plugin - http://letusbuzz.com/tweet-share-like-plusone/ -->
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Griffin Argo Kitesurf Kite" />
+	<meta property="og:url" content="http://www.powerkitesdirect.com/griffin-argo-kitesurf-kite/"/>
+			<meta property="og:image" content="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+	<style type="text/css">div.socialicons{float:left;display:block;margin-right: 10px;}div.socialicons p{margin-bottom: 0px !important;margin-top: 0px !important;padding-bottom: 0px !important;padding-top: 0px !important;}</style>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script><script type="text/javascript" src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
+<!-- Start of Woopra Code -->
+<script type="text/javascript">
+function woopraReady(tracker) {
+}
+</script>
+<script type="text/javascript">
+(function(){
+var wsc=document.createElement('script');
+wsc.type='text/javascript';
+wsc.src=document.location.protocol+'//static.woopra.com/js/woopra.js';
+wsc.async=true;
+var ssc = document.getElementsByTagName('script')[0];
+ssc.parentNode.insertBefore(wsc, ssc);})();
+</script>
+<!-- End of Woopra Code -->
+
+<script type="text/javascript">
+  swfobject.registerObject("wpFollowmeFlash", "9.0.0");
+</script>
+<style type="text/css">
+.getflash { font-size:8px; }
+.wp_followme_c2 {
+	position:fixed;
+	background:#59B7FF;
+	top:450px;
+	right:0px;
+	width:32px;
+	height:160px;
+	border:1px solid #FFFFFF;
+	color:#FFFFFF;
+}
+</style>
+
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style>
+	<!-- Clean Archives Reloaded v3.2.0 | http://www.viper007bond.com/wordpress-plugins/clean-archives-reloaded/ -->
+	<style type="text/css">.car-collapse .car-yearmonth { cursor: s-resize; } </style>
+	<script type="text/javascript">
+		/* <![CDATA[ */
+			jQuery(document).ready(function() {
+				jQuery('.car-collapse').find('.car-monthlisting').hide();
+				jQuery('.car-collapse').find('.car-monthlisting:first').show();
+				jQuery('.car-collapse').find('.car-yearmonth').click(function() {
+					jQuery(this).next('ul').slideToggle('fast');
+				});
+				jQuery('.car-collapse').find('.car-toggler').click(function() {
+					if ( 'Expand All' == jQuery(this).text() ) {
+						jQuery(this).parent('.car-container').find('.car-monthlisting').show();
+						jQuery(this).text('Collapse All');
+					}
+					else {
+						jQuery(this).parent('.car-container').find('.car-monthlisting').hide();
+						jQuery(this).text('Expand All');
+					}
+					return false;
+				});
+			});
+		/* ]]> */
+	</script>
+
+
+<SCRIPT language="JavaScript" type="text/javascript">
+
+<!-- Yahoo! Inc.
+
+var ysm_accountid  = "18QK20GMHVEJ6V24UH2O40R0B4G";
+
+document.write("<SCR" + "IPT language='JavaScript' type='text/javascript' " 
+
++ "SRC=//" + "srv3.wa.marketingsolutions.yahoo.com" + "/script/ScriptServlet" + "?aid=" + ysm_accountid 
+
++ "></SCR" + "IPT>");
+
+// -->
+
+</SCRIPT>
+
+
+
+<SCRIPT>
+
+ microsoft_adcenterconversion_domainid = 491386;
+
+ microsoft_adcenterconversion_cp = 5050;
+
+</SCRIPT>
+
+<meta name="verify-v1" content="RQrtNRWWY4s3/vlAOMuuMSyogj+iD+pnC7wgseh1ujs=" />
+
+</head>
+
+<body onload="setupZoom()">
+
+<div id="bar">
+<div id="banner">
+<div id="banner-logo"><a href="http://www.powerkitesdirect.com/"><img src="http://www.powerkitesdirect.com/wp-content/themes/mk3/PowerKitesLogo_01.png" /></a></div>
+<div id="banner-fshp"><a href="http://www.powerkitesdirect.com/worlds-lowest-price-guarantee/"><img src="http://www.powerkitesdirect.com/wp-content/themes/mk3/PowerKitesLogo_02.png" /></a></div>
+<div id="banner-social"><img src="http://www.powerkitesdirect.com/wp-content/themes/mk3/PowerKitesLogo_03.png" /></div>
+<div id="banner-socialf"><a href="https://www.facebook.com/pages/Kitesurfing-Fans/307571973366" title="Become a Fan!">&nbsp;</a></div>
+<div id="banner-socialt"><a href="http://twitter.com/power_kites" title="Follow us Twitter!">&nbsp;</a></div>
+<div id="banner-bestp"><a href="http://www.powerkitesdirect.com/power-kites-guarantee/" title="Best Price Guarantee!">&nbsp;</a></div>
+</div>
+
+ <div class="barhead">
+
+ 
+  </div>
+
+  <div style="clear:both;"></div>
+
+
+
+ </div>
+
+</div>
+
+<div id="nav" style="">
+
+  <div class="navbar">
+
+    <ul>
+
+      <li><a href="http://www.powerkitesdirect.com">Home</a></li>
+
+      <li class="page_item page-item-315"><a href="http://www.powerkitesdirect.com/store/" title="Buy Gear">Buy Gear</a></li>
+<li class="page_item page-item-2136"><a href="http://www.powerkitesdirect.com/trainer-kites/" title="Trainer Kites">Trainer Kites</a></li>
+<li class="page_item page-item-2130"><a href="http://www.powerkitesdirect.com/kitesurfing-kites/" title="Kitesurfing Kites">Kitesurfing Kites</a></li>
+<li class="page_item page-item-2128"><a href="http://www.powerkitesdirect.com/traction-kites/" title="Traction Kites">Traction Kites</a></li>
+<li class="page_item page-item-2132"><a href="http://www.powerkitesdirect.com/kite-boards/" title="Kite Boards">Kite Boards</a></li>
+<li class="page_item page-item-2134"><a href="http://www.powerkitesdirect.com/accessories/" title="Accessories">Accessories</a></li>
+<li class="page_item page-item-328"><a href="http://www.powerkitesdirect.com/used_gear/" title="Used Gear">Used Gear</a></li>
+<li class="page_item page-item-231"><a href="http://www.powerkitesdirect.com/contact/" title="Contact">Contact</a></li>
+
+	  <!-- The following line adds a "View Cart" link to the navigation menu. You may remove it if you don't want it shown -->
+
+      <!--"<li><a href="http://www.powerkitesdirect.com/wp-content/themes/mk3/ajCart/cart.php?cart=true&CARTDIR=/wp-content/themes/mk3/ajCart/&PPEmail=powerkitesdirect@gmail.com" class="thickbox" title="My Shopping Cart">View Cart</a></li>"-->
+
+      <!-- End of "View Cart" menu option-->
+
+    </ul>
+
+    <div style="clear:both;"></div>
+
+  </div>
+
+</div>
+
+<div style="clear:both;"></div>
+
+<div id="wrap">
+
+<div id="content">
+
+ 
+
+  <div class="breadcrumbs">
+    <p><strong><a href="http://www.powerkitesdirect.com">
+      Kiteboarding Kitesurfing Kite Surf Shop Power Kite &amp; Trainer Kites      </a></strong> &#8250;
+      <a href="http://www.powerkitesdirect.com/category/products/all-around-kites/" title="View all posts in All Around Kites" rel="category tag">All Around Kites</a> <a href="http://www.powerkitesdirect.com/category/kitesurfing-kites/" title="View all posts in Kitesurfing Kites" rel="category tag">Kitesurfing Kites</a> <a href="http://www.powerkitesdirect.com/category/products/kitesurfing-kites-products/" title="View all posts in Kitesurfing Kites" rel="category tag">Kitesurfing Kites</a> <a href="http://www.powerkitesdirect.com/category/products/" title="View all posts in Products" rel="category tag">Products</a>      &#8250;
+      Griffin Argo Kitesurf Kite    </p>
+  </div>
+
+<div class="product_image">
+  <div class="post" id="post-2891">
+    <div class="mi"> <img src="http://www.powerkitesdirect.com/wp-content/themes/mk3/phpthumb/phpThumb.php?src=/wp-content/uploads/2011/griffin/griffin_argonaut.JPG&w=350&h=350&iar=0" alt="Griffin Argo Kitesurf Kite" /> </div>
+    <div class="tr">
+<a href="http://www.powerkitesdirect.com/wp-content/uploads/2011/griffin/3DBlackRed.jpg"><img src="http://www.powerkitesdirect.com/wp-content/themes/mk3/phpthumb/phpThumb.php?src=/wp-content/uploads/2011/griffin/3DBlackRed.jpg&w=100&h=100&q=100&zc=1" /></a><a href="http://www.powerkitesdirect.com/wp-content/uploads/2011/griffin/griffin-argo.JPG"><img src="http://www.powerkitesdirect.com/wp-content/themes/mk3/phpthumb/phpThumb.php?src=/wp-content/uploads/2011/griffin/griffin-argo.JPG&w=100&h=100&q=100&zc=1" /></a><a href="http://www.powerkitesdirect.com/wp-content/uploads/2011/griffin/2010_bar.png"><img src="http://www.powerkitesdirect.com/wp-content/themes/mk3/phpthumb/phpThumb.php?src=/wp-content/uploads/2011/griffin/2010_bar.png&w=100&h=100&q=100&zc=1" /></a>    </div>
+  </div>
+<br></br>
+<br></br>
+<br></br>
+
+
+<br></br><DIV ALIGN=CENTER>
+
+<img src="http://www.powerkitesdirect.com/wp-content/uploads/2009/07/feedback-208x300.jpg" alt="power kite review, buy a kite testimonials, trainer kite reviews, power kite shop, power kite store" title="feedback" width="248" height="320" class="aligncenter size-medium wp-image-1241" />
+</div>
+<br></br>
+<br></br><DIV ALIGN=CENTER>
+
+<img src="http://www.powerkitesdirect.com/wp-content/uploads/2009/trust_marks/seal.gif.jpg" alt="get a power kite and buy your power kites on sale" title="guarantee" width="248" height="194" class="size-full wp-image-1303" />
+<br></br>
+<br></br>
+<img src="http://www.powerkitesdirect.com/wp-content/uploads/2009/05/always-free-shipping.gif" alt="always-free-shipping, free shipping kite gear, kitesurfing equipment used gear, kite gear ships free, free shipping on kitesurfing equipment" title="always-free-shipping" width="94" height="54" class="aligncenter size-full wp-image-1464" />
+<br></br>
+<br></br>
+<img src="http://www.powerkitesdirect.com//wp-content/uploads/2009/trust_marks/ups_truck1.gif" alt="ups_truck" title="ups_truck" width="167" height="138" class="aligncenter size-full wp-image-1465" />
+<br></br>
+<br></br><img src="http://www.powerkitesdirect.com/wp-content/uploads/2009/05/dmag-5stars.jpg" alt="5 Star Rated Service, best kite shop, kite store, kite shop, buy kites cheap, kite sale" title="5 Star Rated Service" width="150" height="35" class="aligncenter size-full wp-image-1466" /></div>
+<DIV ALIGN=CENTER>
+<img class="aligncenter size-full wp-image-1047" title="verisign1" src="http://www.powerkitesdirect.com/wp-content/uploads/2009/05/verisign1.gif" alt="kite shop" width="130" height="88" /></div>
+
+<DIV ALIGN=CENTER>
+
+<img class="aligncenter size-full wp-image-1048" title="google checkout" src="http://www.powerkitesdirect.com/wp-content/uploads/2009/trust_marks/google_checkout.JPG" alt="google kites, safe shopping kites, kites for sale" width="135" height="75" /><img class="alignright size-full wp-image-1051" title="truste1" src="http://www.powerkitesdirect.com/wp-content/uploads/2009/trust_marks/trustE.JPG" alt="kites for sale, kite store" width="135" height="75" /></div>
+<DIV ALIGN=CENTER>
+
+<img class="aligncenter size-full wp-image-1052" title="paypal" src="http://www.powerkitesdirect.com/wp-content/uploads/2009/trust_marks/paypal.JPG" alt="paypal kites, kite paypal, paypal kites for sale, paypal kite store" width="135" height="75" /><img class="alignright size-full wp-image-1066" title="ssl secure" src="http://www.powerkitesdirect.com/wp-content/uploads/2009/trust_marks/starterssl-ssl-secure.gif" alt="skype" width="135" height="75" /></div>
+<br></br>
+<br></br>
+<div ALIGN=CENTER>
+<img class="size-medium wp-image-1207" title="Limited Time Offer Power Kites" src="http://www.powerkitesdirect.com/wp-content/uploads/2009/05/offer-13-300x174.jpg" alt="Power Kites Sale" width="300" height="174" /></div>
+<br></br>
+<br></br>
+<br></br>
+
+<div ALIGN=CENTER>
+</form><img class="aligncenter size-full wp-image-902" title="cards1" src="http://www.powerkitesdirect.com/wp-content/uploads/2009/06/cards1.gif" alt="cards1, buy kites, powerkites, power kite shop, buy power kites" width="229" height="31" /></div>
+<br></br>
+<br></br>
+</div>
+
+<div class="desc">
+  <h2>
+    Griffin Argo Kitesurf Kite        		<span class="price"><strong>&#36;</strong>665</span>
+	  </h2>
+  <h1><span style="text-decoration: underline;"><strong><a title="Griffin Argo Kitesurf Kite" href="http://www.powerkitesdirect.com/griffin-argo-kitesurf-kite/" >Griffin Argo Kitesurf Kite</a></strong></span></h1>
+<p>The 2011 Argo is a medium-low aspect kite designed for super stability  with auto relaunch, excellent for waves and light to strong winds. With  even more wind range and unbeatable upwind performance.  The Argo is the most tunable kite available giving riders the ability to  make the kite suit their rider level and style. If you have tennis  elbow, this kite can have the lightest bar pressure available, if you  like strong bar pressure with plenty of feeling and punch, this is also  the kite for you, if you like medium or medium light bar pressure  without loosing turning speed this is also the kite for you.<br />
+<em><span style="color: #ff0000;"><strong>Want to get your Griffin Argo <a href="http://www.powerkitesdirect.com" >Kitesurfing</a> Kite shipped Fast. Just click below:</strong></span></em></p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input name="cmd" type="hidden" value="_s-xclick" />
+<input name="hosted_button_id" type="hidden" value="7HKX39FQWA2PY" />&nbsp;</p>
+<table>
+<tbody>
+<tr>
+<td>
+<input name="on0" type="hidden" value="Kite Sizes" />Kite Sizes</td>
+</tr>
+<tr>
+<td>
+<select name="os0">
+<option value="7 Meter Griffin Argo Kite">7 Meter Griffin Argo Kite $665.00</option>
+<option value="9 Meter Griffin Argo Kite">9 Meter Griffin Argo Kite $725.00</option>
+<option value="10 Meter Griffin Argo Kite">10 Meter Griffin Argo Kite $760.00</option>
+<option value="11 Meter Griffin Argo Kite">11 Meter Griffin Argo Kite $800.00</option>
+<option value="13.5 Meter Griffin Argo Kite">13.5 Meter Griffin Argo Kite $860.00</option>
+<option value="17 Meter Griffin Argo">17 Meter Griffin Argo $960.00</option>
+</select>
+</td>
+</tr>
+</tbody>
+</table>
+<input name="currency_code" type="hidden" value="USD" />
+<input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" type="image" /> <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" border="0" alt="pixel Griffin Argo Kitesurf Kite" width="1" height="1" title="pixel photo" />&nbsp;</p>
+</form>
+<p><strong>And if you need a bar, Select one below</strong></p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<table>
+<tbody>
+<tr>
+<td>Bar Sizes</td>
+</tr>
+<tr>
+<td>
+<select name="os0">
+<option value="45cm Bar with 21m lines and 4m extensions">45cm Bar with 21m lines and 4m extensions $225.00</option>
+<option value="53cm Bar with 21m lines and 4m extensions">53cm Bar with 21m lines and 4m extensions $225.00</option>
+<option value="60cm Bar with 21m lines and 4m extensions">60cm Bar with 21m lines and 4m extensions $225.00</option>
+</select>
+</td>
+</tr>
+</tbody>
+</table>
+<input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" type="image" /> <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" border="0" alt="pixel Griffin Argo Kitesurf Kite" width="1" height="1" title="pixel photo" />&nbsp;</p>
+</form>
+<h2>The Griffin Argo Kite is Very Adjustable</h2>
+<p>The Argo is the most adjustable kite ever designed. Our goal was to  design a kite you can tune to suit your preferences, but be simple  enough to use out of the bag without any fussing around. The Argo gives  the best performance from learning to advanced, wave riding and free  riding. The Argo comes with default setting in green which will suit  most riders..</p>
+<p>Of all the kites we have tested we find the 2011 Griffin Argo to be  the best beginner kitesurfing kite out there.  It’s got rock-solid  stability, effortless re-launch and all the same features and quality of  the more expensive kites.  This is the one kite every beginner we’re  given it so feels comfortable with immediately. It’s predictable nature  give the Argo a real “set it and forget it” feel that instantly builds  the confidence that helps beginners progress fast.   Why else do we  love the Griffin Argo Kite?</p>
+<ul>
+<li> Rock Solid Stable</li>
+<li> Auto-Launch and Re-Launch</li>
+<li> Amazing Power and Grunt</li>
+<li> Massive Depower</li>
+<li> Powered Pivotal Turns</li>
+<li> Bomproof Construction</li>
+<li> Strong Boost with Softer Landings</li>
+<li> Unmatched Adjustability and Settings</li>
+<li> Unbeatable Upwind Performance and Wind Range</li>
+</ul>
+<p><strong>Auto Relaunch</strong></p>
+<p>The leading edge has been curved to allow the kite to easily turn onto  its side for easy auto relaunch. For beginners and schools using the  Argo we have found students and beginners progress many times faster  because the kite will often turn on its side and wait in the edge of the  wind window unpowered ready for the rider to relaunch the kite.</p>
+<p><strong>Super Stability</strong></p>
+<p>The Argo has the greatest stability and is easier to control in all wind  conditions with much less chance of overflying the kite above your head  or the kite falling from the sky because of its low aspect design. A  low aspect design also gives better light wind performance and grunt,  stability and float.</p>
+<p><strong>Massive depower</strong></p>
+<p>The bridle has been designed to give maximum depower and full bridle  support if the bar is let all the way out. This is great for beginners  as letting go of the bar or depowering the bar can quickly depower the  kite by 99% without having to pull a depower strap. The Argo is also  excellent for riding in the surf because of the light wind grunt as well  as the total depower available when on a wave and the fast turning  speed. You can kite loop without being pulled of your board when  depowered and power up when needed.</p>
+<p><strong>Amazing Power and Grunt</strong></p>
+<p>With the lower aspect design, the kite generates a lot more power and  turning for its size, as an example the 13.5m Argo has the same grunt  and pull as a typical older 16m bow kite, but turns like a 12m bow kite  and de-powers more than most 12m bow kites. Having a light wind kite  that you can kite loop and throw around in the waves is a better options  than a large 16m slow turner. We have riders using the Argo 13.5 in  8  to 10 knots. Feedback from riders is they are going upwind on 9m while others on 10m,  11m, + kites are struggling in the lighter winds.</p>
+<p><strong>Boost and Turning</strong></p>
+<p>The Argo is excellent for jumping. The low AR design makes jumps floaty  and landings soft. You can jump higher in lighter winds and land softer. The adjustable turning speed can be set from slow, med, to fast which is  great for the pivot turns needed for wave riding.</p>
+<p><strong> Upwind Performance</strong></p>
+<p>We designed the profile of the Argo to have the best upwind performance possible in light, normal and strong winds.<br />
+<object width="425" height="272"><param name="movie" value="http://www.youtube.com/v/oYVj74IN1vM?version=3&amp;hl=en_US&amp;rel=0" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><embed type="application/x-shockwave-flash" width="425" height="272" src="http://www.youtube.com/v/oYVj74IN1vM?version=3&amp;hl=en_US&amp;rel=0" allowscriptaccess="always" allowfullscreen="true"></embed></object><br />
+<span style="text-decoration: underline;"><strong>The All New 2011 Griffin Performance Bar</strong></span></p>
+<p>Griffin <a href="http://www.powerkitesdirect.com" >Kiteboarding</a> has updated their bar for 2011 with a new push away  release amongst many other changes.  The new chicken loop and release  setup is a welcome upgrade, now using a metal Ronstan racing cleat and a  push away sheath around the cleat.  Safety is through the bar attaching  to a stainless ring inside the chicken loop, when releasing the safety  you can configure the bar to a single flag out line or dual front line.</p>
+<p><strong>Griffin 2011 Chicken Loop</strong></p>
+<p>The main difference for 2011 is the new Chicken Loop which has a  range of nice updates.  From the start it is now a push away style  release which you can use with either your left or right hand.  In the  middle of the sheath there&#8217;s a new Ronstan metal racing cleat, the  reason for metal is simple, over time plastic cleats weaken and separate  under load allowing the depower line to slip.  The next upgrade is a  new through the bar and through the loop safety attachment, you no  longer attach to the depower rope instead you attach to a metal ring  inside the chicken loop.  Last of all the chicken loop  is auto orientating, so when you unhook it will click in to place in  the bar to make it easy to hook back in.<a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2011/06/2011_bar.png');"  href="http://www.powerkitesdirect.com/wp-content/uploads/2011/06/2011_bar.png" ><img class="alignleft size-medium wp-image-2899" title="2011_bar" src="http://www.powerkitesdirect.com/wp-content/uploads/2011/06/2011_bar-236x300.png" alt="2011 bar 236x300 Griffin Argo Kitesurf Kite" width="211" height="268" /></a></p>
+<p><a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2011/06/griffin_argo_performance.jpg');"  href="http://www.powerkitesdirect.com/wp-content/uploads/2011/06/griffin_argo_performance.jpg" ><img class="aligncenter size-full wp-image-2901" title="griffin_argo_performance" src="http://www.powerkitesdirect.com/wp-content/uploads/2011/06/griffin_argo_performance.jpg" alt="griffin argo performance Griffin Argo Kitesurf Kite" width="430" height="393" /></a></p>
+<p><strong>Wind Range and Sizing</strong></p>
+<p>The Argo is available in 7m 9m 10m 11.5m 13.5  and 17m Light wind<br />
+We have made the 11.5 13.5  17m extra grunty from with faster turning and lots of depower when needed.</p>
+<p>Because lower aspect kites have a lot more grunt we found that:</p>
+<ul>
+<li> 13.5m Argo has the almost the same power as the 16m from other brands and turns + depowers more than a 12m or less bow kite</li>
+<li> 11.5m Argo has the power of a 13m or 14m from other brands and turns like a 10m</li>
+<li> 10m Argo has the power of a 11.5 from other brands and turns like a 9m</li>
+<li> 9m Argo has the power of a 10m from other brands and turns like a 8m</li>
+<li> 7m Argo has the power of a 8.5 and turns like a 6m</li>
+</ul>
+<p>Wind range depends on the settings and the weight of the rider and board sizes.<br />
+<strong>New 17m Light Wind Argo</strong>.  We have just finished a few months refining the17m version of the Argo.  Designed to be a faster turning super stable light wind kite. The  bridle has been optimized, the leading edge and profile has been thinned  to sit further forward in the wind window and generate more power. The  17m had been designed to be a grunty light wind fun kite with faster  turning and lighter bar pressure. A 220lb rider on a 6ft surf board can  get going from 10 knots. Light riders with larger boards can get going  from 8 knots. Good top end and lots of depower.</p>
+<p><strong>13.5m</strong> 8 to 20  knots. On a surf board 200-215lb you can get going in 11+ knots to 19 is  its ideal wind range, you can hold up to 23+ knots if you want to. The  13.5 Argo has the power of most 16m kites and some 18m kites but feels  like your riding a fast 12m kite. Heavy riders are putting away their  slow turning 16m kites for a Argo 13.5. For a light wind kite or a large  persons kite the Argo 13.5 is an excellent choice.With a light wind  board and 30m lines riders are using the 13.5 in 8+ knots.</p>
+<p><strong>11.5m</strong> 12,13 up  to 26knots comfortably, This is a great all round sub 27 knot kite.  Plenty of grunt similar to a 13m bow kite but feels like your flying a  fast 10m kite. It is a good heavy riders 190-240lbs all round kite 14 to  29 knots. Its fast enough to do kite loops and powerful enough to be a  lighter persons light wind kite</p>
+<p><strong>10m</strong> 13,14 to  29 knots This is most kiters 175-190lbs all round 1 quiver kite. Just  the right size to rip up the waves and the right amount of power and  depower to handle the best wind conditions 13-14 to 28 knots.</p>
+<p><strong>9m</strong> 14,16  to 30 knots. The 9m is a great lighter persons kite. For  under 155lbs  riders this is often the largest kite they need as it has the power of  most 10.5m kites with massive depower but feels like your flying a 8m  kite. For most 175-190lbs riders the 9m is a good stronger wind kite 18  to 28 knots. Best not to use over 35 knots.</p>
+<p><strong>7m</strong> 16,17  to 33 knots. The Argo 7m is a good lighter persons kite under 175lbs  in  medium to strong winds or teaching and learning kite. Being a  medium-lower aspect grunty kite the 7m generates a lot of power.</p>
+<p>Please note that a low aspect kite like the Argo performs excellently  in light to medium-strong winds ( ideally 9 to 30 knots ) and offer  better light wind grunt, better stability, easier relaunch and plenty of  depower. Low aspect kites are not the best very strong wind ( 40+ knots  ).</p>
+<p><strong>One Kite Quiver</strong><br />
+200lbs and more = 11.5m Argo<br />
+175lbs rider = 10m Argo<br />
+155lbs and less = 9m Argo</p>
+<p><em><span style="color: #ff0000;"><strong>Want to get your Griffin Argo Kitesurfing Kite shipped Fast. Just click below:</strong></span></em></p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input name="cmd" type="hidden" value="_s-xclick" />
+<input name="hosted_button_id" type="hidden" value="7HKX39FQWA2PY" />&nbsp;</p>
+<table>
+<tbody>
+<tr>
+<td>
+<input name="on0" type="hidden" value="Kite Sizes" />Kite Sizes</td>
+</tr>
+<tr>
+<td>
+<select name="os0">
+<option value="7 Meter Griffin Argo Kite">7 Meter Griffin Argo Kite $665.00</option>
+<option value="9 Meter Griffin Argo Kite">9 Meter Griffin Argo Kite $725.00</option>
+<option value="10 Meter Griffin Argo Kite">10 Meter Griffin Argo Kite $760.00</option>
+<option value="11 Meter Griffin Argo Kite">11 Meter Griffin Argo Kite $800.00</option>
+<option value="13.5 Meter Griffin Argo Kite">13.5 Meter Griffin Argo Kite $860.00</option>
+<option value="17 Meter Griffin Argo">17 Meter Griffin Argo $960.00</option>
+</select>
+</td>
+</tr>
+</tbody>
+</table>
+<input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" type="image" /> <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" border="0" alt="pixel Griffin Argo Kitesurf Kite" width="1" height="1" title="pixel photo" />&nbsp;</p>
+</form>
+<p><strong>And if you need a bar, Select one below</strong></p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input name="cmd" type="hidden" value="_s-xclick" />
+<table>
+<tbody>
+<tr>
+<td>
+<input name="on0" type="hidden" value="Bar Sizes" />Bar Sizes</td>
+</tr>
+<tr>
+<td>
+<select name="os0">
+<option value="45cm Bar with 21m lines and 4m extensions">45cm Bar with 21m lines and 4m extensions $225.00</option>
+<option value="53cm Bar with 21m lines and 4m extensions">53cm Bar with 21m lines and 4m extensions $225.00</option>
+<option value="60cm Bar with 21m lines and 4m extensions">60cm Bar with 21m lines and 4m extensions $225.00</option>
+</select>
+</td>
+</tr>
+</tbody>
+</table>
+<input name="currency_code" type="hidden" value="USD" />
+<input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" type="image" /> <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" border="0" alt="pixel Griffin Argo Kitesurf Kite" width="1" height="1" title="pixel photo" />&nbsp;</p>
+</form>
+<h3><strong>Griffin Argo Kitesurfing Kite</strong></h3>
+<div class="social4i" style="height:29px;">
+<div class="social4in" style="height:29px;float: left;">
+<div class="socialicons s4twitter" style="float:left;margin-right: 10px;background:url(&quot;http://goo.gl/zjqd1&quot;) no-repeat;"><a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/share');" target="_blank"  href="http://twitter.com/share" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://twitter.com']);" data-url="http://www.powerkitesdirect.com/griffin-argo-kitesurf-kite/" data-counturl="http://www.powerkitesdirect.com/griffin-argo-kitesurf-kite/" data-text="Griffin Argo Kitesurf Kite" class="twitter-share-button" data-count="horizontal" data-via="power_kites"></a></div>
+<div class="socialicons s4fblike" style="float:left;margin-right: 10px;">
+<div id="fb-root"></div>
+<p><fb:like href="http%3A%2F%2Fwww.powerkitesdirect.com%2Fgriffin-argo-kitesurf-kite%2F" send="false" layout="button_count" width="100" height="21" show_faces="false" font=""></fb:like></div>
+<div class="socialicons s4plusone" style="float:left;margin-right: 10px;"><g:plusone size="medium" href="http://www.powerkitesdirect.com/griffin-argo-kitesurf-kite/" count="true"></g:plusone></div>
+<div class="socialicons s4fbshare" style="position: relative;float:left;margin-right: 10px;">
+<div class="s4ifbshare" ><a onclick="javascript:pageTracker._trackPageview('/outgoing/www.facebook.com/sharer.php');" target="_blank" name="fb_share" type="button_count" share_url="http%3A%2F%2Fwww.powerkitesdirect.com%2Fgriffin-argo-kitesurf-kite%2F"  href="http://www.facebook.com/sharer.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.facebook.com']);"></a></div>
+</div>
+</div>
+<div style="clear:both"></div>
+</div>
+<div class="gdsrcacheloader gdsrclsmall" id="gdsrc_asr.2891.0.1.1243003887.10.0.24.3.4.0"><strong>GD Star Rating</strong><br /><em>loading...</em></div><div class="gdsrcacheloader gdsrclsmall" id="gdsrc_atr.2891.0.1.1243003887.25.0.20.1.2.0"><strong>GD Star Rating</strong><br /><em>loading...</em></div><span class="hreview-aggregate" style="display: none !important;"><span class="item"><span class="fn">Griffin Argo Kitesurf Kite</span></span>, <span class="rating"><span class="average">10.0</span> out of <span class="best">10</span> based on <span class="count">1</span> rating <span class="summary"></span></span></span>  
+  			
+  	  <div class="buy">
+    <!--Start Vcart Code-->
+    <form class="crtAdd" method="post" action="http://www.powerkitesdirect.com/wp-content/themes/mk3/ajCart/cart.php" >
+      <input type="hidden" name="cmd" value="_cart">
+      <input type="hidden" name="add" value="1">
+      <input type="hidden" name="quantity" value="1">
+      <input type="hidden" name="business" value="powerkitesdirect@gmail.com">
+      <input type="hidden" name="item_name" value="Griffin Argo Kitesurf Kite">
+      <input type="hidden" name="amount" value="665">
+      <input type="hidden" name="handling" value="" />
+      <input type="hidden" name="handling_cart" value="" />
+	  <input type="hidden" name="lc" value="US">
+	  <input type="hidden" name="currency_code" value="USD">
+	  <input type="hidden" name="country" value="US">
+      <input type="hidden" name="return" value="http://www.powerkitesdirect.com">
+      <input type="hidden" name="cancel_return" value="http://www.powerkitesdirect.com">
+      <input type="hidden" name="postID" value="2891">	  
+      <input type="hidden" name="stockquantity" value="">
+      <table>
+
+        <tr>
+         
+        </tr>
+		<tr>
+                   </tr>
+		
+		<tr><td><br></td></tr>
+
+                  
+      </table>  
+	
+ 
+	  
+    </form>
+    <!--End Vcart Code-->
+
+	
+    <div style="clear: both"></div>
+  </div>
+  </div>
+<div style="clear: both"></div>
+<!-- added by open in new window plugin -->
+<script language="javascript" type="text/javascript" src="http://www.powerkitesdirect.com/wp-content/plugins/open-in-new-window-plugin/open_in_new_window.js"></script>
+<!-- end of open in new window plugin -->
+
+
+<div style="position:relative;">
+  <div class="wp_followme_c2">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="32" height="160" id="wpFollowmeFlash">
+      <param name="movie" value="http://www.powerkitesdirect.com/wp-content/plugins/wp-followme/flash/wp_followme.swf" />
+      <param name="allowfullscreen" value="false" />
+      <param name="allowscriptaccess" value="always" />
+      <param name="flashvars" value="twit_icon=http://www.powerkitesdirect.com/wp-content/plugins/wp-followme/icons/14.png&amp;turl=http://twitter.com/power_kites&amp;twitmsg=Follow Me&amp;twitmsgcolor=FFFFFF&amp;iconbgcolor=FFFFFF" />
+      <param name="bgcolor" value="#59B7FF" />
+      <!--[if !IE]>-->
+      <object type="application/x-shockwave-flash" data="http://www.powerkitesdirect.com/wp-content/plugins/wp-followme/flash/wp_followme.swf" width="32" height="160">
+        <param name="allowfullscreen" value="false" />
+        <param name="allowscriptaccess" value="always" />
+        <param name="flashvars" value="twit_icon=http://www.powerkitesdirect.com/wp-content/plugins/wp-followme/icons/14.png&amp;turl=http://twitter.com/power_kites&amp;twitmsg=Follow Me&amp;twitmsgcolor=FFFFFF&amp;iconbgcolor=FFFFFF" />
+        <param name="bgcolor" value="#59B7FF" />
+        <!--<![endif]-->
+		<div class="getflash">
+         <a rel="nofollow" href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a>Plugin by wpburn.com <a href="http://wpburn.com">wordpress themes</a></div><!--[if !IE]>-->
+      </object> <!--<![endif]-->
+    </object>
+  </div>
+</div>
+
+
+
+<div style="clear: both"></div>
+
+</div>
+
+<div id="footer">
+
+  <div class="col1">
+  </div>
+
+ 
+
+</div>
+
+<div id="copyright">
+
+  <p style="padding:10px;">
+
+    Kiteboarding Kitesurfing Kite Surf Shop Power Kite &amp; Trainer Kites
+   All Rights Reserved</a> 
+<br>
+    <p><a href="http://www.powerkitesdirect.com/sitemap.xml">Sitemap</a></p>
+</div>
+
+<div style="clear: both"></div>
+
+</div>
+
+<script type='text/javascript' src='http://www.powerkitesdirect.com/wp-content/plugins/contact-form-7/jquery.form.js?ver=2.52'></script>
+<script type='text/javascript' src='http://www.powerkitesdirect.com/wp-content/plugins/contact-form-7/scripts.js?ver=3.0.2.1'></script>
+
+<!-- tracker added by Ultimate Google Analytics plugin v1.6.0: http://www.oratransplant.nl/uga -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-8465206-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<div id="su-footer-links" style="text-align: center;"></div>
+<script type="text/javascript" src="http://cetrk.com/pages/scripts/0010/3154.js"> </script>
+
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-710914-4");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+<script type="text/javascript" src="http://cetrk.com/pages/scripts/0010/3154.js"> </script>
+
+
+
+<SCRIPT language="JavaScript" type="text/javascript">
+
+<!-- Yahoo! Inc.
+
+var ysm_accountid  = "18QK20GMHVEJ6V24UH2O40R0B4G";
+
+document.write("<SCR" + "IPT language='JavaScript' type='text/javascript' " 
+
++ "SRC=//" + "srv3.wa.marketingsolutions.yahoo.com" + "/script/ScriptServlet" + "?aid=" + ysm_accountid 
+
++ "></SCR" + "IPT>");
+
+// -->
+
+</SCRIPT>
+
+<script type="text/javascript">
+var WRInitTime=(new Date()).getTime();
+</script>
+
+<!-- ClickTale Bottom part -->
+<div id="ClickTaleDiv" style="display: none;"></div>
+<script type="text/javascript">
+if(document.location.protocol!='https:')
+  document.write(unescape("%3Cscript%20src='http://s.clicktale.net/WRb.js'%20type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+if(typeof ClickTale=='function') ClickTale(37784,0.1,"www");
+</script>
+<!-- ClickTale end of Bottom part -->
+
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+$.src='//cdn.zopim.com/?CWujTF3GxD5P8oWhWGBIdxOTSbTt2UdN';z.t=+new Date;$.
+type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
+</body></html>
+<!-- Dynamic page generated in 0.409 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2012-02-07 05:20:42 -->
+<!-- super cache -->

@@ -1,0 +1,523 @@
+
+
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#">
+	<head>
+        <title>Find recipes online. Share them with your friends. | FOODILY</title>
+    	<meta name="google-site-verification" content="bOH2d3IfzDFgyvHFwy5zEzrWnuP-oSO42KNuFrt9sa0" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="recipes, recipes search, recipe sites, recipe search engine, find recipes, best recipes" />
+		<meta name="description" content="Foodily is a recipe network for friends. Join to find and share recipes from across the web." />
+	    <meta property="og:title" content="Foodily"/>
+	    <meta property="og:site_name" content="Foodily"/>
+		
+		<link rel="stylesheet" type="text/css" media="screen" href="/7cfa02936dd8aa3fc91a/css/global-all-index-min.css" />
+				<link rel="search" type="application/opensearchdescription+xml" title="Foodily Search Plugin" href="http://www.foodily.com/plugins/foodily.xml">
+		<link rel="icon" type="image/png" href="/images/favicon.png" />
+		<!--[if IE]>
+			<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+		<![endif]-->
+	</head>
+
+	<body id="home" class="old_design">
+    <script type="text/javascript">
+var isPartnerPage = function(){
+	var path = window.location.href;
+	var pattern_healthline = /partner\//i;
+	if(path.match(pattern_healthline)){
+		return true;
+	}else{
+		return false;
+	}
+};
+var iframeAuthSites = function(){
+    //note this will only work when the page first loads in an iframe
+	var path = document.referrer;
+	if(path){
+		if(path.indexOf("stumbleupon")!=-1){
+			return true;
+		}else if(path.indexOf("allmyfaves")!=-1){
+			return true;
+		}
+	}
+	return false;
+};
+if(window != top && isPartnerPage()==false && iframeAuthSites()==false) {
+	ele_body = document.getElementsByTagName("body")[0];
+	ele_body.className = ele_body.className + " iframe";
+	bodyid = ele_body.id;
+	if(bodyid=="home" || bodyid=="index_regwall"){
+		var url = "http://" + window.location.hostname;
+		if(window.location.port){
+			url += ":" + window.location.port;
+		}
+		window.top.location.href = url + "/";
+	}
+}
+</script>
+    
+
+
+
+<script type='text/javascript'>
+  userData = {
+  };
+  
+  pageData = {
+  	appId: '102455679813413',
+	appName: 'foodily',
+	useSignupPane: false,
+	baseUrl: 'http://www.foodily.com',
+	debug: false
+  };
+  
+  foodilyFbIsReady = false;
+</script>
+	
+   
+    
+
+
+
+
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  function myFbInit() {
+    FB.init({
+      appId  : '102455679813413',
+      status : true, // check login status
+      cookie : true, // enable cookies to allow the server to access the session
+      xfbml  : true,  // parse XFBML
+      channelUrl : "http://" + window.location.hostname + '/plugins/channel.html',  // custom channel
+      oauth : true // oauth... true... 
+    });
+    
+    foodilyFbIsReady = true;
+  }
+
+  typeof FB == 'undefined' ? window.fbAsyncInit = myFbInit : myFbInit();
+</script>
+	
+   
+    <div id='fdl-header-bar'>
+	
+		<div style="float:left;padding:10px">
+			<fb:like href="http://www.facebook.com/foodily" send="false" layout="button_count" width="450" show_faces="false" colorscheme="dark"></fb:like>
+		</div>
+	  <div id='fdl-header' >
+  	    
+        <div id='settings' class='tb-button _tb-menu'><em></em>
+      <ul class='menu _menu-list'>
+        <li class='top _menu-item' href='/my/settings'><span>Settings</span></li>
+        <li id='logout' class='connect' data-ffbook='{"fbookType":"logout"}'><span>Log out</span></li>
+      </ul>
+    </div>
+    <div id='friends' class='tb-button _tb-button ' href='/my/friends/invite'>
+      <span>Invite</span>
+      <div class='nib'></div>
+    </div>
+    <div id='faves' class='tb-button _tb-button ' href='/my/saved-recipes'>
+      <span>Faves</span>
+      <div class='nib'></div>
+    </div>
+    <div id='feed' class='tb-button _tb-button ' href='/my/feed'>
+      <span>Feed</span>
+      <div class='nib'></div>
+    </div>
+    <div id='signup' class='tb-button'>
+        <a id='signup-a' href='#' class='_login_popup _track' data-ftrack='{"a":"LOG","b":"Upper right","c":"cur_page"}'>
+          <span>Sign up</span>
+        </a>
+    </div>
+    <div id='login' class='tb-button'>
+        <a id='profile-a' href='#'>
+          <img height=25 width=25 src='' />
+        </a>
+        <div class='tooltip'><div class='nib'></div></div>
+        <a id='login-a' href='#' class='_login_popup _track' data-ftrack='{"a":"LOG","b":"Upper right","c":"cur_page"}'>
+          <span>Log in</span>
+        </a>
+    </div>
+    <div class='clear'></div>
+  </div>
+</div>
+
+<div id="fixed-height-spacer"></div>
+
+<div id="fdl-header-message">
+	<div class="message _message"></div><a href="#" class="btn_question _question hidden"></a><a href="#" class="btn_close _close"></a>
+	<div class="clear"></div>
+	<div class="help _help" style="display:none;"></div>
+</div>
+
+<div class='hidden'>
+  <div id='login-panel-x' class='container_long_1 container_account popup'>
+    <div class='_ac_create hidden'>
+      <div class='ismember'><em class='icon_close _close'></em></div>
+      <div class='title'></div>
+      <div id='msgtext'></div>
+      <div class='panel-body'>
+          <div class='login-body'>
+            <div class='fb-cell'>
+              <div class='cell-title'><b>Log in</b> with Facebook<br/>and discover new tastes with your friends.</div>
+              <div class='fb'>
+                <div class='_fbfriends fbfriends hidden' data-ffbook='{"fbookType":"connectedfriends"}'>
+                  <em class='icon_fblogo'></em>
+                  <div class='_fb_data'></div>
+                </div>
+                <div class='_fbook btn_fbconnect' data-ffbook='{"fbookType":"login"}'></div>
+              </div>
+            </div>
+            <div class='vert-splitter'></div>
+            <div class='foodily-cell'>
+              <div class='cell-title'><b>Log in</b> with your email address.</div>
+              <iframe id='login-pane' scrolling='no' frameborder=0 >Browser doesn't support iframes</iframe>
+            </div>
+            <div class='clear'></div>
+            <div class='splitter'><div class='splitter-left'></div><div class='splitter-right'></div></div>
+            <div class='footer'>
+              New to Foodily? <a class='signup-button' href='#' onclick="$('.login-body').toggleClass('hidden');$('.register-body').toggleClass('hidden'); $('#msgtext').slideUp();">Sign up now</a>
+            </div>
+          </div>
+          <div class='register-body hidden'>
+            <div class='fb-cell'>
+              <div class='cell-title'><b>Sign up</b> with Facebook<br/>and discover new tastes with your friends.</div>
+              <div class='fb'>
+                <div class='_fbfriends fbfriends hidden' data-ffbook='{"fbookType":"connectedfriends"}'>
+                  <em class='icon_fblogo'></em>
+                  <div class='_fb_data'></div>
+                </div>
+                <div class='_fbook btn_fbconnect' data-ffbook='{"fbookType":"login"}'></div>
+              </div>
+            </div>
+            <div class='vert-splitter'></div>
+            <div class='foodily-cell'>
+              <div class='cell-title'><b>Sign up</b> with your email address.<br>Foodily respects your privacy.</div>
+              <iframe id='register-pane' scrolling='no' frameborder=0 >Browser doesn't support iframes</iframe>
+            </div>
+            <div class='clear'></div>
+            <div class='splitter'><div class='splitter-left'></div><div class='splitter-right'></div></div>
+            <div class='footer'>
+              Already have an account? <a class='signup-button' href='#' onclick="$('.login-body').toggleClass('hidden');$('.register-body').toggleClass('hidden'); $('#msgtext').slideUp();">Log in</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div id='aboutfoodily' class='container_long_1 popup' style="width:260px;padding:15px 20px">
+	<h2 style="color:#FD3E4E;font:normal 15px Arial, Sans-serif">What is Foodily?</h2>
+	<p style="margin-top:5px;font:normal normal 13px Arial, sans-serif;color:#333333;">Foodily let you easily share & discover great new recipes with your friends.<br/>
+	- Get a feed of new recipe ideas from your friends, bloggers, chefs and people you follow.<br/>
+	- Use Foodily Search to discover recipes you'll love & create lists of your favorites<br/>
+	- Add recipes you like, make and recommend to your Facebook Timeline</p>
+  </div>
+  <div id="searchoptions" class="container_long_1 dropdown">
+  	  	<div class="row top" value="1"><em class="bg_ast ic ic_check_grey"></em><span>Search recipes</span></div>
+  	<div class="row bottom" value="2"><em class="bg_ast ic ic_check_grey"></em><span>Search people</span></div>
+  	<div class="row bottom hidden" value="3"><em class="bg_ast ic ic_check_grey"></em><span>Search my faves</span></div>
+  </div>
+</div>
+
+    <div id="rotate_bg"><img id="rotate_bg_img" src=""/></div>
+		<div id="worktop">
+			<div id="oven">
+				<div id="logo"><a href="/" accesskey="1"></a></div>
+				<div id="search_box">
+					<form id="search" method="get" action="/" class="_form" onsubmit="fdlHeaderQuery(this);return false;">
+						<div id="input_q" class="input-search _placeholder">
+							<label>Search for what you want to cook...</label>
+							<input type="text" id="q" autocomplete="off" class="hint _autocomplete" autocorrect="off" autocapitalize="off" />
+							<div id="search-loading"></div>
+						</div>
+						<div id="input_w" class="input-search _placeholder">
+							<label>without...</label>
+							<input type="text" id="w" autocomplete="off" class="_autocomplete _without" autocorrect="off" autocapitalize="off" />
+						</div>
+						<div id="button_search">
+							<input type="submit" class="_submit" data-submit='' value="" />
+						</div>
+					</form>
+				</div>
+				<div class="clear"></div>
+				<div class="search_query">
+					<img src="/images/food-i-love-you.png">
+				</div>
+			</div>
+			<div id="menus">
+                <div id='button-bar'>
+                    <div id="fbinvitemessage" class='message'>
+					  <a rel="nofollow" href='/my/feed' id='fbinvitebtn' class='pink-button-med btns btns_med _flogin _track'
+					    data-ffbook='{"fbookType":"redirecttofeed"}' 
+					    data-ftrack='{&quot;a&quot;:&quot;LOG&quot;,&quot;b&quot;:&quot;LOGSR&quot;}'>
+					    <span>EXPLORE YOUR RECIPE FEED &raquo;</span>
+					  </a>
+				    </div>
+				</div>
+				<div class="nav"><a href="#" class="left"></a><a href="#" class="right"></a></div>
+				
+
+<div id="menus_container_temp" class="menus_container_temp" style="">
+  <div class="menu mult1">
+    <a class="img _track _fbapp_target" href="/s/barley-salad-with-oranges" data-ftrack='{"a":"TIL","b":"TILUGB","c":"barley-salad-with-oranges"}'>
+    <span><img height=142 width=272 src="http://foodily.net/img/272x142/6e7534e91331.jpg" onerror="this.src='/images/272x142/noimg.jpg';return true;"></span>
+    </a>
+    <p>
+      <a class="_track _fbapp_target" href="/s/barley-salad-with-oranges" data-ftrack='{"a":"TIL","b":"TILUGB","c":"barley-salad-with-oranges"}'><a class="_track _fbapp_target" href="/s/Barley-Salad-with-Oranges" data-ftrack="{"a":"TIL","b":"TILUGB","c":"almond-cookies"}"><font style="color:#FD3E4E;">Barley Salad with Oranges</font></a><br/><span style="font:12px Arial;"> Featured in <a href="http://www.foodily.com/u/meatlessmonday" style=" font-weight:bold;">Meatless Monday's</a> profile</span></a>
+      <br />
+      
+        <div class=""><input type="hidden" class="userid" value="83968" /><a class="_follow follow-button btns btns_med" title="Follow this person" href="#" data-ffollow='{"type":"followuser","userId":83968}'><span>Follow</span></a></div>
+          </p>
+  </div>
+  <div class="menu mult1">
+    <a class="img _track _fbapp_target" href="/s/brown-butter-ice-cream" data-ftrack='{"a":"TIL","b":"TILUGB","c":"brown-butter-ice-cream"}'>
+    <span><img height=142 width=272 src="http://foodily.net/img/272x142/ec05bb8f3ff6.jpg" onerror="this.src='/images/272x142/noimg.jpg';return true;"></span>
+    </a>
+    <p>
+      <a class="_track _fbapp_target" href="/s/brown-butter-ice-cream" data-ftrack='{"a":"TIL","b":"TILUGB","c":"brown-butter-ice-cream"}'><a class="_track _fbapp_target" href="/s/Brown-Butter-Ice-Cream" data-ftrack="{"a":"TIL","b":"TILUGB","c":"creme-brulee"}"><font style="color:#FD3E4E;">Brown Butter Ice Cream</font></a><br/><span style="font:12px Arial;"> Featured in <a href="http://www.foodily.com/u/thenaptimechef" style=" font-weight:bold;">The Naptime Chef's</a> profile</span></a>
+      <br />
+      
+        <div class=""><input type="hidden" class="userid" value="29724" /><a class="_follow follow-button btns btns_med" title="Follow this person" href="#" data-ffollow='{"type":"followuser","userId":29724}'><span>Follow</span></a></div>
+          </p>
+  </div>
+  <div class="menu mult1">
+    <a class="img _track _fbapp_target" href="http://www.foodily.com/tastemakers/" data-ftrack='{"a":"TIL","b":"TILUGB","c":"http://www.foodily.com/tastemakers/"}'>
+    <span><img height=142 width=272 src="/images/hp-promo-cakeboss.jpg" onerror="this.src='/images/272x142/noimg.jpg';return true;"></span>
+    </a>
+    <p>
+      <a class="_track _fbapp_target" href="http://www.foodily.com/tastemakers/" data-ftrack='{"a":"TIL","b":"TILUGB","c":"http://www.foodily.com/tastemakers/"}'><font style='color: rgb(253, 62, 78);'>Follow our newest Tastemakers</font><br /><span style='font:12px Arial;'><span style='color:#444;font-weight: bold;'>Buddy Valastro</span>, Cat Cora, Dr. Mark Hyman...</span></a>
+      <br />
+      
+        <div class=""><input type="hidden" class="userid" value="183066" /><a class="_follow follow-button btns btns_med" title="Follow this person" href="#" data-ffollow='{"type":"followuser","userId":183066}'><span>Follow</span></a></div>
+          </p>
+  </div>
+  <div class="menu mult1">
+    <a class="img _track _fbapp_target" href="/s/salsa-verde-with-avocado-from-blogs" data-ftrack='{"a":"TIL","b":"TILUGB","c":"salsa-verde-with-avocado-from-blogs"}'>
+    <span><img height=142 width=272 src="http://foodily.net/img/272x142/44fd031c6a5d.jpg" onerror="this.src='/images/272x142/noimg.jpg';return true;"></span>
+    </a>
+    <p>
+      <a class="_track _fbapp_target" href="/s/salsa-verde-with-avocado-from-blogs" data-ftrack='{"a":"TIL","b":"TILUGB","c":"salsa-verde-with-avocado-from-blogs"}'><a class="_track _fbapp_target" href="/s/salsa-verde-with-avocado-from-blogs" data-ftrack="{"a":"TIL","b":"TILUGB","c":"sweet-potato-shepherds-pie"}"><font style="color:#FD3E4E;">Salsa Verde w/ Avocado from Blogs</font></a><br/><span style="font:12px Arial;"> Featured in <a href="http://www.foodily.com/u/chefcatcora" style=" font-weight:bold;">Cat Cora's</a> profile</span></a>
+      <br />
+      
+        <div class=""><input type="hidden" class="userid" value="151904" /><a class="_follow follow-button btns btns_med" title="Follow this person" href="#" data-ffollow='{"type":"followuser","userId":151904}'><span>Follow</span></a></div>
+          </p>
+  </div>
+  <div class="menu mult1">
+    <a class="img _track _fbapp_target" href="/s/roast-squash-soup" data-ftrack='{"a":"TIL","b":"TILUGB","c":"roast-squash-soup"}'>
+    <span><img height=142 width=272 src="http://foodily.net/img/272x142/5d4ae3e21aac.jpg" onerror="this.src='/images/272x142/noimg.jpg';return true;"></span>
+    </a>
+    <p>
+      <a class="_track _fbapp_target" href="/s/roast-squash-soup" data-ftrack='{"a":"TIL","b":"TILUGB","c":"roast-squash-soup"}'><a class="_track _fbapp_target" href="/s/Roast-Squash-Soup" data-ftrack={"a":"TIL","b":"TILUGB","c":"Christmas Cannoli"}"><font style="color:#FD3E4E;">Roast Squash Soup</font></a><br/><span style="font:12px Arial;"> Featured in <a href="http://www.foodily.com/u/phillip" style=" font-weight:bold;">Phillip Bensaid's</a> profile</span></a>
+      <br />
+      
+        <div class=""><input type="hidden" class="userid" value="772" /><a class="_follow follow-button btns btns_med" title="Follow this person" href="#" data-ffollow='{"type":"followuser","userId":772}'><span>Follow</span></a></div>
+          </p>
+  </div>
+  <div class="menu mult1">
+    <a class="img _track _fbapp_target" href="/s/peach-tart" data-ftrack='{"a":"TIL","b":"TILUGB","c":"peach-tart"}'>
+    <span><img height=142 width=272 src="http://foodily.net/img/272x142/e39a9c5028d0.jpg" onerror="this.src='/images/272x142/noimg.jpg';return true;"></span>
+    </a>
+    <p>
+      <a class="_track _fbapp_target" href="/s/peach-tart" data-ftrack='{"a":"TIL","b":"TILUGB","c":"peach-tart"}'><a class="_track _fbapp_target" href="/s/Peach-Tart" data-ftrack="{"a":"TIL","b":"TILUGB","c":"potato apple latkes"}"><font style="color:#FD3E4E;">Peach Tart</font></a><br/><span style="font:12px Arial;"> Featured in <a href="http://www.foodily.com/u/heatherbethtay" style=" font-weight:bold;">Heather Taylor's</a> profile</span></a>
+      <br />
+      
+        <div class=""><input type="hidden" class="userid" value="128074" /><a class="_follow follow-button btns btns_med" title="Follow this person" href="#" data-ffollow='{"type":"followuser","userId":128074}'><span>Follow</span></a></div>
+          </p>
+  </div>
+  <div class="menu mult1">
+    <a class="img _track _fbapp_target" href="/s/pina-colada" data-ftrack='{"a":"TIL","b":"TILUGB","c":"pina-colada"}'>
+    <span><img height=142 width=272 src="http://foodily.net/img/272x142/bc8995f37e29.jpg" onerror="this.src='/images/272x142/noimg.jpg';return true;"></span>
+    </a>
+    <p>
+      <a class="_track _fbapp_target" href="/s/pina-colada" data-ftrack='{"a":"TIL","b":"TILUGB","c":"pina-colada"}'><a class="_track _fbapp_target" href="/s/Pina-Colada" data-ftrack="{"a":"TIL","b":"TILUGB","c":"lentils and butternut squash"}"><font style="color:#FD3E4E;">Pina Colada</font></a><br/><span style="font:12px Arial;"> Featured in <a href="http://www.foodily.com/u/lulupowers" style=" font-weight:bold;">Lulu Powers'</a> profile</span></a>
+      <br />
+      
+        <div class=""><input type="hidden" class="userid" value="40836" /><a class="_follow follow-button btns btns_med" title="Follow this person" href="#" data-ffollow='{"type":"followuser","userId":40836}'><span>Follow</span></a></div>
+          </p>
+  </div>
+  <div class="menu mult1">
+    <a class="img _track _fbapp_target" href="/s/grilled-pizza-with-onion" data-ftrack='{"a":"TIL","b":"TILUGB","c":"grilled-pizza-with-onion"}'>
+    <span><img height=142 width=272 src="http://foodily.net/img/272x142/950ae69d90aa.jpg" onerror="this.src='/images/272x142/noimg.jpg';return true;"></span>
+    </a>
+    <p>
+      <a class="_track _fbapp_target" href="/s/grilled-pizza-with-onion" data-ftrack='{"a":"TIL","b":"TILUGB","c":"grilled-pizza-with-onion"}'><a class="_track _fbapp_target" href="/s/grilled-pizza-with-onion" data-ftrack="{"a":"TIL","b":"TILUGB","c":"lamb-tagine"}"><font style="color:#FD3E4E;">Grilled Pizza with Onion</font></a><br/><span style="font:12px Arial;"> Featured in <a href="http://www.foodily.com/u/7fec8f973df2" style=" font-weight:bold;">Kathya Ethington's</a> profile</span></a>
+      <br />
+      
+        <div class=""><input type="hidden" class="userid" value="12970" /><a class="_follow follow-button btns btns_med" title="Follow this person" href="#" data-ffollow='{"type":"followuser","userId":12970}'><span>Follow</span></a></div>
+          </p>
+  </div>
+  <div class="menu mult1">
+    <a class="img _track _fbapp_target" href="/s/quinoa-and-fennel" data-ftrack='{"a":"TIL","b":"TILUGB","c":"quinoa-and-fennel"}'>
+    <span><img height=142 width=272 src="http://foodily.net/img/272x142/a32dd2eb2c6f.jpg" onerror="this.src='/images/272x142/noimg.jpg';return true;"></span>
+    </a>
+    <p>
+      <a class="_track _fbapp_target" href="/s/quinoa-and-fennel" data-ftrack='{"a":"TIL","b":"TILUGB","c":"quinoa-and-fennel"}'><a class="_track _fbapp_target" href="/s/Quinoa-and-Fennel" data-ftrack="{"a":"TIL","b":"TILUGB","c":"real-simple-tilapia"}"><font style="color:#FD3E4E;">Quinoa and Fennel</font></a><br/><span style="font:12px Arial;"> Featured in <a href="http://www.foodily.com/u/celinesteen" style=" font-weight:bold;">Celine Steen's</a> profile </span></a>
+      <br />
+      
+        <div class=""><input type="hidden" class="userid" value="181" /><a class="_follow follow-button btns btns_med" title="Follow this person" href="#" data-ffollow='{"type":"followuser","userId":181}'><span>Follow</span></a></div>
+          </p>
+  </div>
+  <div class="clear"></div>
+</div>
+			</div>
+		</div><!-- end worktop / kitchen -->
+		<div id="hidden-content">
+		  <div id="nutrition_banner_popup" class="popup">
+
+	<a class="icon_delete close _sclose" href="#" title=""></a>
+	<div class="inner_container">	
+    <div class="header">
+      <h1><em class="forked-heart-icon"></em>Hello we're Foodily</h1>
+      <div><a href="#" class="watch_video _track" data-ftrack='{"a":"HHP","b":"HHPV"}'>watch our video <em class="video-icon"></em></a></div>
+    </div>
+    <div class="clear"></div>
+    <br>
+    <br>
+    <p><strong>Foodily brings together recipes and friends</strong></p>
+    <p><strong>Browse recipes like a magazine</strong> Compare recipes side-by-side so it's easy to pick your favorites. Save a recipe on Foodily and see the ones your friends have saved.</p>
+    <p><strong class="p">New! Find the most healthy recipe in every search you do</strong> With Nutrition by Foodily you can compare everything from sugar to saturated fat, or simply search "healthy", "low-carb" or "high-fiber." And see your friends' healthy favorites to help you decide.</p>
+    <p class="header">
+		<strong>Try it now</strong>.
+		See results for <a href="s/low-carb-chicken">Low-carb chicken</a>
+	</p>
+  </div>
+</div>
+
+        </div>
+        
+
+
+
+<div id='loaded-elems' class='hidden'></div>
+<div id="fb-root"></div>
+
+<div id='footer-fb-like-button'>
+  <div class='faded'></div>
+  <div class='iframe-container'>
+    <fb:like href="http://www.facebook.com/foodily" send="true" width="375" show_faces="true"></fb:like>
+  </div>
+</div>
+<div id="footer">
+  <p>
+	
+	  &nbsp;&nbsp;
+	  <a class="_fbapp_target" href="http://www.foodily.com/tastemakers">Tastemakers</a> / 
+	  <a class="_fbapp_target" href="http://www.foodily.com/blog/about-us">About Us</a> / 
+	  <a class="_fbapp_target" href="http://www.foodily.com/blog/">Blog</a> / 
+	  <a class="_fbapp_target" href="http://www.foodily.com/blog/foodily-tools-and-resources/" target="_blank">Tools</a> / 
+	  <a href="#" class="_popup_click" data-fpopup='{"type":"centered", "popupId":"#search_tips_popup"}'>Search Tips</a> /
+	  <a class="_fbapp_target" href="http://www.foodily.com/blog/privacy" target="_blank" rel="nofollow">Privacy</a> / 
+	  <a class="_fbapp_target" href="http://www.foodily.com/blog/terms" target="_blank" rel="nofollow">Terms</a> / 
+	  <a class="_fbapp_target" href="http://www.foodily.com/blog/contact-us" rel="nofollow">Contact</a> / 
+	  <a class="_fbapp_target" href="http://itunes.apple.com/us/app/foodily-recipe-search-sharing/id475603520?mt=8" rel="nofollow"><b>Get the iPhone app</b></a>
+	  <br/>
+	  &copy; Foodily, Inc. 2010-2012.&nbsp;&nbsp;Copyright does not pertain to 3rd party content.
+	  <div class='hidden'>
+	    <div id="search_tips_popup">
+	<a class="close _sclose" href="#"><em></em></a>
+	<p class='title'><em></em>Foodily understands the way you want to search</p>
+	
+	<p class="line"><span class='bullet'>&raquo;</span>Search by <span class='strong'>dish type</span>............................................<span class='weak'>e.g. <a class="_fbapp_target" href="/s/dinner">dinner</a> or <a class="_fbapp_target" href="/s/appetizers">appetizers</a></span></p>
+	
+	<p class="line"><span class='bullet'>&raquo;</span>Search <span class='strong'>specific food sites</span>................................<span class='weak'>e.g. <a class="_fbapp_target" href="/s/Mario Batali pasta">Mario Batali pasta</a> or <a class="_fbapp_target" href="/s/Pioneer Woman desserts">Pioneer Woman desserts</a></span></p>
+	
+	<p class="line"><span class='bullet'>&raquo;</span>Search by <span class='strong'>nutrition interest</span> or <span class='strong'>diet</span>...................<span class='weak'>e.g. <a class="_fbapp_target" href="/s/low-carb casseroles">low-carb casseroles</a> or <a class="_fbapp_target" href="/s/low-fat picatta">low-fat picatta</a></span></p>
+	
+	<p class="line"><span class='bullet'>&raquo;</span><span class='strong'>Include</span> any ingredients you want.......................<span class='weak'>e.g. <a class="_fbapp_target" href="/s/chicken with rosemary">chicken with rosemary</a> or <a class="_fbapp_target" href="/s/lemon with capers">lemon with capers</a></span></p>
+	
+	<p class="line divider"><span class='bullet'>&raquo;</span><span class='strong'>Exclude</span> any ingredients you don't......................<span class='weak'>e.g. <a class="_fbapp_target" href="/s/breakfast without eggs">breakfast without eggs</a> or <a class="_fbapp_target" href="/s/cakes without chocolate">cakes without chocolate</a></span></p>
+	
+	<p class="line">Or put them all together! <a class="_fbapp_target" href='/s/Epicurious-vegetarian-healthy-pasta-with-tomato-without-basil'>Epicurious, vegetarian, healthy, pasta, with tomato, without basil</a></span></p>
+	
+	<p class="line">Of course, if you have other ideas for how we can support the way you want to search - <a class="_fbapp_target" href='http://foodily.uservoice.com/forums/88631'>let us know.</a></p>
+	
+	<div class="clear"></div>
+    <p class='close_bottom'><a class="_sclose" href="#">~ close ~</a></p>
+</div>
+
+	  </div>
+	  </p>
+  
+    <div id="footer_links_bar">
+    <div id="footer_links" class="clearfix">  
+      <ul class="left list">
+        <li><a class="_fbapp_target" href="/s/Cat-Cora">Cat Cora recipes</a></li>
+        <li><a class="_fbapp_target" href="/s/Cristina-Ferrare">Cristina Ferrare recipes</a></li>
+        <li><a class="_fbapp_target" href="/s/Lisa-McRee">Lisa McRee recipes</a></li>
+        <li><a class="_fbapp_target" href="/s/naptime-chef">The Naptime Chef recipes</a></li>
+      </ul>
+      <ul class="left list">
+        <li><a class="_fbapp_target" href="/s/pizza-recipes">Pizza recipes</a></li>
+        <li><a class="_fbapp_target" href="/s/squash-recipes">Squash recipes</a></li>
+        <li><a class="_fbapp_target" href="/s/brussels-sprouts-recipes">Brussels sprouts recipes</a></li>
+        <li><a class="_fbapp_target" href="/s/crockpot-recipes">Crockpot recipes</a></li>
+      </ul>
+      <ul class="left list">
+        <li><a class="_fbapp_target" href="/s/quick-chicken-dinner">Quick chicken dinner</a></li>
+        <li><a class="_fbapp_target" href="/s/brownie-recipes">Brownie recipes</a></li>
+        <li><a class="_fbapp_target" href="/s/egg-beaters">Egg Beaters recipes</a></li>
+        <li><a class="_fbapp_target" href="/s/vegan-recipes">Vegan recipes</a></li>
+      </ul>
+      <ul class="left list">
+        <li><a class="_fbapp_target" href="/s/pasta-recipes">Pasta recipes</a></li>
+        <li><a class="_fbapp_target" href="/s/chocolate-recipes">Chocolate recipes</a></li>
+        <li><a class="_fbapp_target" href="/s/soup-recipes">Soup recipes</a></li>
+        <li><a class="_fbapp_target" href="/s/quinoa-recipes">Quinoa recipes</a></li>
+      </ul>
+      <ul class="left list">
+        <li><a class="_fbapp_target" href="/s/healthy-dinner-recipes">Healthy dinner recipes</a></li>
+        <li><a class="_fbapp_target" href="/s/salmon-recipes">Salmon recipes</a></li>
+        <li><a class="_fbapp_target" href="/s/chili-recipes">Chili recipes</a></li>
+        <li><a class="_fbapp_target" href="/s/salad-recipes">Salad recipes</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+<div style="display:none;">
+		<div id="facebook_friendsave" class="share-facepile-dialog">
+		  	<div class="action">
+		      	<a href="#" class="fave save _popup_click active" data-fpopup='{"type":"saverecipe"}'></a>&nbsp;&nbsp;&nbsp;
+		      	<a href="#" class="_popup_click addToMenu" title="Add to a list" data-fpopup='{"type":"addrecipetolist"}'><em class="bg_ast ic ic_list"></em> Add to a list</a>
+		  	</div>
+		  	<div class="hori"></div>
+		    <div class='savebox'></div>
+		    <div class="facepile"></div>
+		    <div class="clear"></div>
+		    <a href="#" class="link">See all &raquo;</a>
+		</div>
+		<div id="tooltip_popup" class="tooltip-box _tooltip-box">
+			<div class="pointer"></div>
+			<p></p>
+			<div class="clear"></div>
+		</div>
+</div>
+   
+		
+            <script type="text/javascript" src='/7cfa02936dd8aa3fc91a/js/js-all-common-min.js'></script>
+            <script type="text/javascript" src='/7cfa02936dd8aa3fc91a/js/js-all-index-min.js'></script>
+        		<!--  Google Analytic Code -->
+<script type="text/javascript">
+	var ga_site_id = 'UA-15205029-1';
+	if(window.location.port){
+		ga_site_id = 'UA-15205029-2';
+	}
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', ga_site_id]);
+	_gaq.push(['_trackPageview']);
+    _gaq.push(['_trackPageLoadTime']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+<!-- /Google Analytic Code -->
+	</body>
+</html>

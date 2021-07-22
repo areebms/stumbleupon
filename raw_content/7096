@@ -1,0 +1,485 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+ <title>
+ OLED lighting - OLED light bulb </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="light, white light, White OLED, oled lighting, WOLED, light blub, light source, OLED lamp, oled bulb" />
+<meta name="copyright" content="copyright 2004-2006, OLED-Info.com" />
+<meta name="description" content="OLED lighting technology can be used to create white light. An OLED light bulb will be efficient, thin, and environmental friendly" />
+<link rel="shortcut icon" href="/sites/default/themes/oledTheme4/favicon.ico" type="image/x-icon" />
+  
+  <link type="text/css" rel="stylesheet" media="all" href="/files/css/css_62cb514638bce2ed9f815d8c7066c3fe.css" />
+  <script type="text/javascript" src="/files/js/js_36722fe3c14ba20f99387f712fe3709f.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</script>
+  <style type="text/css" media="all">
+	@import "/sites/default/themes/oledTheme4/tinymce_styles.css";</style>
+	<script type="text/javascript">
+	// Used for OLED Main Menu:
+	
+
+  var timeout    = 500;
+  var closetimer = 0;
+  var ommenuitem = 0;
+
+	function omm_open()
+	{ 
+		omm_canceltimer();
+		omm_close();
+		ommenuitem = $(this).find('ul').css('visibility', 'visible');
+	}
+	
+	function omm_close()
+	{if(ommenuitem) ommenuitem.css('visibility', 'hidden');}
+	
+	function omm_timer()
+	{  closetimer = window.setTimeout(omm_close, timeout);}
+	
+	function omm_canceltimer()
+	{  if(closetimer)
+	   {  window.clearTimeout(closetimer);
+	      closetimer = null;}
+    }
+	
+	$(document).ready(function()
+	{  $('#oledMainMenu > li').bind('mouseover', omm_open)
+	   $('#oledMainMenu > li').bind('mouseout',  omm_timer)
+	});
+	
+	document.onclick = omm_close;
+	</script>
+	<script type="text/javascript"> </script>
+	
+	
+	
+	
+	
+</head>
+
+<body>
+
+<div id="MainDiv"><div id="container">
+
+<div id="logoRow" style="float:left;">
+	<div id="logo" style="float:left;">
+	<a title="OLED-Info home" href="/"><img alt="OLED-Info" title="OLED-Info" src="/sites/default/themes/oledTheme4/oled-info-logo.gif" height="79" width="259" border=""></img></a>
+	</div>
+	
+<div style="width:470px;float:right;padding-top:12px;">  <div class="block block-block" id="block-block-27">
+        <div class="content"><a href="http://www.novaled.com" target="_blank" onClick="javascript: pageTracker._trackPageview('/ads/novaled-top');"
+><img src="http://www.oled-info.com/external/novaled-468x60-ad.jpg" alt="Novaled OLED advertisement" title="Novaled OLED advertisement"  width="468" height="60" /></a></div>
+ </div>
+</div></div>
+<ul id="oledMainMenu">
+<li><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/introduction">Introduction</a></li>
+<li><a href="http://www.oled-info.com/?page=0">News</a></li>
+<li><a href="/handbook">Handbook</a></li>
+<li><a href="/super-amoled-plus">Super AMOLED +</a></li>
+<li><a href="/companies">Companies</a>
+	<ul>
+	<li><a href="/companies/oled_panel_makers">Display makers</a></li>
+	<li><a href="/companies/oled_resellers">Resellers</a></li>
+	<li><a href="/companies/oled-lighting-companies">Lighting companies</a></li>
+	<li><a href="/companies/chemical_companies">Chemicals</a></li>
+	<li><a href="/companies/research_ip_companies">Research/IP</a></li>
+	<li><a href="/companies">Other companies</a></li>
+	</ul>
+</li>
+<li><a href="/devices">Products</a>
+	<ul>
+	<li><a href="/oled_devices/mobile_phones">Mobile phones</a></li>
+	<li><a href="/oled_devices/digital_cameras">Digital cameras</a></li>
+	<li><a href="/oled_devices/mp3_video_players">A/V players</a></li>
+	<li><a href="/oled_devices/tv">OLED TVs</a></li>
+	<li><a href="/oled_devices/oled_lighting_device">OLED lamps</a></li>
+	<li><a href="/devices">Other devices</a></li>
+	</ul>
+</li>
+<li><a href="/sitemap">Resources</a>
+	<ul>
+	<li><a href="/oled-jobs">Jobs board</a></li>
+	<li><a href="/photos">Photos</a></li>
+	<li><a href="/events">Events</a></li>
+	<li><a href="/reports">Reports</a></li>
+	<li><a href="/projects">Projects</a></li>
+	<li><a href="/history">History</a></li>
+	<li><a href="/books">Books</a></li>
+	<li><a href="/archive">News archive</a></li>
+	<li><a href="/sitemap">Other resources</a></li>
+	</ul>
+</li>
+<li><a href="/sitemap">Topics</a>
+	<ul>
+	<li><a href="/oled-tv">OLED TV</a></li>
+	<li><a href="/oled-light">OLED lighting</a></li>
+	<li><a href="/oled-technology">OLED technology</a></li>
+	<li><a href="/amoled">AMOLED</a></li>
+	<li><a href="/pmoled">PMOLED</a></li>
+	<li><a href="/super-amoled">Super AMOLED</a></li>
+	<li><a href="/super-amoled-plus">Super AMOLED Plus</a></li>
+	<li><a href="/flexible-oled">Flexible OLEDs</a></li>
+	<li><a href="/transparent-oleds">Transparent OLEDs</a></li>
+	<li><a href="/sitemap">More topics</a></li>
+	</ul>
+</li>
+<li><a href="/contact">Contact us</a></li>
+</ul>
+
+<div style="clear:both"></div>
+<div style="margin-top:5px;">
+<TABLE style="border-top-width:0px #FFF;" cellpadding="0" cellspacing="0" border="0" width="100%"><TR>
+<TBODY style="border:0px #FFF">
+<TR>
+<TD valign="top" style="width:733px">
+
+<div id="contentDiv">
+
+	
+    <div class="block block-block" id="block-block-1">
+        <div class="content"><script type="text/javascript"><!--
+google_ad_client = "pub-4785989504530480";
+google_ad_type = "text_image";
+google_ad_channel = "5384570318+3147100765"
+google_ad_width = 468;
+google_ad_height = 15;
+google_ad_format = "468x15_0ads_al";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "3261D3";
+google_color_url = "3261D3";
+google_color_text = "3261D3";
+google_ui_features = "rc:10";
+//--></script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+ </div>
+
+<h1 class="title">OLED lighting - OLED light bulb</h1>
+      
+
+	  
+  
+    
+	 
+  <div class="node">
+        
+    
+    
+        	
+    	<div class="left-side-sharing-block"><div><a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="oledinfo">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div><div class="side-sharing-button"><iframe src="http://www.facebook.com/plugins/like.php?app_id=204258876285823&amp;href=http%3A%2F%2Fwww.oled-info.com%2Foled-light&amp;send=false&amp;layout=box_count&amp;width=50&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=60" scrolling="no" frameborder="0" 
+	    	style="margin-left:5px;border:none; overflow:hidden; width:50px; height:60px;" allowTransparency="true"></iframe></div><div class="side-sharing-button"><g:plusone size="tall"></g:plusone></div><div class="side-sharing-button"><script src="http://www.stumbleupon.com/hostedbadge.php?s=5"></script></div></div>    
+        <div class="content" ><p>OLED (Organic Light Emitting Diodes) are materials that emit light when current is passed through them. OLED are used today to make beautiful and efficient displays, but it is also possible to use the technology to create white light.
+</p><p align="center"><span class="inline inline-center"><a href="/lg-chem-white-oled-panels-photos"><img src="http://www.oled-info.com/files/images/LG-Chem-OLED-Lighting-Panels.img_assist_custom-300x223.jpg" alt="LG Chem white OLED panels photos" title="LG Chem white OLED panels photos"  class="image image-img_assist_custom-300x223 " width="300" height="223" /></a></span></p><center><br/>  <div class="block block-block" id="block-block-28">
+        <div class="content"><script type="text/javascript"><!--
+google_ad_client = "pub-4785989504530480";
+google_ad_type = "text_image";
+google_ad_channel = "0316165879+3147100765+7915984241"
+google_ad_width = 336;
+google_ad_height = 280;
+google_ad_format = "336x280_as";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "3D81EE";
+google_color_url = "CC0000";
+google_color_text = "003366";
+google_ui_features = "rc:10";
+//--></script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+ </div>
+</center>
+<p>
+OLEDs are very power efficient and they can be made very thin. An OLED light bulb is actually a thin film of material that emits bright light. Because OLEDs can be color-tunable, flexible, or even transparent, exciting new OLED lamp designs are possible.
+</p><p align="center"><span class="inline inline-center"><a href="/transparent-oleds-philips"><img src="http://www.oled-info.com/files/images/philips-transparent-oleds.img_assist_custom-301x150.jpg" alt="Transparent OLEDs by Philips" title="Transparent OLEDs by Philips"  class="image image-img_assist_custom-301x150 " width="301" height="150" /></a></span></p>
+<h2>OLED lighting - the green light source</h2>
+<p>
+Not only are OLEDs super efficient, but these 'lamps' do not contain any 'bad'
+metals such as mercury, which is present in efficient CFL lamps. So OLEDs are really the future lighting source, when all things are considered.
+</p>
+<p align="center"><span class="inline inline-center"><a href="/large-area-oled-lighting-photo"><img src="http://www.oled-info.com/files/images/large-area-OLED-philips-research_oled100.img_assist_custom-301x185.jpg" alt="Large Area OLED Lighting photo" title="Large Area OLED Lighting photo"  class="image image-img_assist_custom-301x185 " width="300" height="185" /></a></span>
+</p>
+<h2>Sample design kits</h2>
+<p>There are three companies that already offer OLED panels: Philips, Osram and Japan's Lumiotec. These companies are offering 'sample design kits' - which are not real commercial products but high-priced sample kits. The idea is to offer these to designers that can get panels to play with, waiting till the companies lower their prices and start making commercial OLED Lighting panels. 
+</p><p>Philips' OLED panels are called Lumiblade, and were the first to be released back in 2009. Philips' panels come in different sizes, shapes and colors. <a href="http://www.oled-info.com/philips-lumiblade-oled-light-first-looks">Check out our first OLED light review of a couple of panels they sent us</a>. Philips thinks that <a href="http://www.oled-info.com/philips-sees-tunable-color-and-transparent-oleds-3-5-years-flexible-ones-5-8">transparent and color-tunable OLEDs will be here within 3-5 years</a>. Flexible ones? a bit longer, might take 5-8 years. 
+</p><p><span class="inline inline-center"><a href="/philips-lumiblade-oled-blue-square-photo-6"><img src="http://www.oled-info.com/files/images/philips-lumiblade-oled-blue-square-6.img_assist_custom-300x199.jpg" alt="Philips lumiblade oled blue square photo 6" title="Philips lumiblade oled blue square photo 6"  class="image image-img_assist_custom-300x199 " width="300" height="199" /></a></span></p><p>OSRAM offer just one kind of OLED panel called the ORBEOS (available since November 2009). It's a round panel (88mm diameter) with 25lm/W efficiency. The price is around $375. Here's our <a href="http://www.oled-info.com/osram-orbeos-oled-light-hands">hands-on review of the ORBEOS</a>.
+</p><div align="center"><span class="inline inline-center"><a href="/osram-orbeos-photo"><img src="http://www.oled-info.com/files/images/orbeos-lighting.img_assist_custom-301x193.jpg" alt="OSRAM ORBEOS" title="OSRAM ORBEOS"  class="image image-img_assist_custom-301x193 " width="300" height="193" /></a><span class="caption"><strong>OSRAM ORBEOS</strong></span></span></div><p>Lumiotec started offering their white OLEDs in February 2010. It's a rather large (15cm by 15cm) square panel that's very bright. The kit costs over a $1000. Here's our <a href="http://www.oled-info.com/lumiotec-oled-lighting-panel-hands-review">on-hands review of Lumiotec's OLED panels</a> - which includes a comparison to the Philips and OSRAM panels as well. Here's a short video review of all these panels:</p>
+<div align="center">
+<object width="560" height="340"><param name="movie" value="http://www.youtube.com/v/PY1UmfoFUsc?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/PY1UmfoFUsc?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340"></embed></object>
+</div>
+<h2>OLED lamps</h2><p>There are several companies that offer lamps built from OLED panels - obviously at a very high price. Blackbody are offering several lamps (with their own OLED panels). The <a href="http://www.oled-info.com/philippe-starck-designed-new-oled-lamp-costs-5900">light-photon</a> (shown below), for example, which has a single large 47cm x 37cm OLED panel costs $5900. Their largest lamp (called Big-Band) uses 249 OLED panels! we do not know the price of this one...</p>
+<p align="center"><span class="inline inline-center"><a href="/light-photon-oled-lamp-photo"><img src="http://www.oled-info.com/files/images/light-photon-oled-lamp.img_assist_custom-300x300.jpg" alt="Light Photon OLED lamp" title="Light Photon OLED lamp"  class="image image-img_assist_custom-300x300 " width="300" height="300" /></a><span class="caption"><strong>Light Photon OLED lamp</strong></span></span></p>
+<p>Other companies that offer OLED lamps for sale include <a href="http://www.oled-info.com/philips-starts-sell-new-oled-lamp-called-edge">Philips</a>, <a href="http://www.oled-info.com/wac-lighting-shows-orbeos-based-oled-chandelier">WAC Lighting</a> (using OSRAM made panels), <a href="http://www.oled-info.com/osram_opto_semiconductors/worlds_first_oled_lamp">OSRAM</a> and others.</p><p align="center"><span class="inline inline-center"><a href="/oled-table-lamp-concept-photo-philips"><img src="http://www.oled-info.com/files/images/oled-table-lamp-philips-lumiblade-concept.img_assist_custom-300x225.jpg" alt="OLED table lamp concept photo by Philips" title="OLED table lamp concept photo by Philips"  class="image image-img_assist_custom-300x225 " width="300" height="225" /></a></span></p><h2>OLED lighting status</h2>
+<p>As we said already, three companies are already offering sample panels, and some companies are selling high-priced premium lamps. But what about real, commercially available panels? </p><p>If OLED Lighting will take off, the market will be huge - billions of dollars. So it's no wonder a lot of companies are researching and developing solutions. The US and the US governments are very active, and fund several projects that involve OLED Lighting technologies.</p><p><span class="inline inline-center"><a href="/flexible-oled-lighting-prototype-no-ito-photo"><img src="http://www.oled-info.com/files/images/agfa-holst-flexible-oled-lighting-no-ito.img_assist_custom-301x200.jpg" alt="Flexible OLED lighting prototype with no ITO  photo" title="Flexible OLED lighting prototype with no ITO  photo"  class="image image-img_assist_custom-301x200 " width="301" height="200" /></a></span></p><p>Besides the companies we already mentioned (Philips, OSRAM and Lumiotec), Konica Minolta are working together with GE towards OLED lighting. They <a href="http://www.oled-info.com/konica-minolta-lays-out-oled-lighting-plan-wants-get-1-billion-sales-201718">hope to start making them in 2011</a> (with large-scale production planned for 2014). <a href="http://www.oled-info.com/qa-verbatims-oled-team">Mitsubishi are collaborating with Pioneer</a>, and will start mass-producing panels in 2011 (they will sell them under the Verbatim brand). Other companies include Samsung, LG, <a href="http://www.oled-info.com/visionox-shows-new-oled-lighting-and-display-prototypes">China's Visionox</a>, <a href="http://www.oled-info.com/kaneka-says-their-oled-lighting-panels-are-ready-be-shipped">Kaneka</a> and others.</p>
+<div align="center">
+<span class="inline inline-center"><a href="/visionox-oled-lamp-prototype-photo"><img src="http://www.oled-info.com/files/images/visionox-oled-lamp-prototype-2009.img_assist_custom-300x184.jpg" alt="Visionox OLED lamp prototype" title="Visionox OLED lamp prototype"  class="image image-img_assist_custom-300x184 " width="299" height="184" /></a><span class="caption"><strong>Visionox OLED lamp prototype</strong></span></span> 
+</div>
+<p>
+Here's a nice chart by <a href="http://www.displaysearch.com/cps/rde/xchg/displaysearch/hs.xsl/oled_info_program.asp">DisplaySearch</a>, showing the leading companies and their announced OLED lighting plans:
+</p>
+<div align="center">
+<img src="http://www.displaysearch.com/images/Research/DisplaySearch_OLED_Lighting_Manufacturing_Participant_Roadmap_0903.png" border="0" alt="OLED lighting prediction by DisplaySearch" width="500" height="257" /> 
+</div><div class="image-clear"></div></div>
+    
+        <div class="links">
+    <table border="0"><tbody style="  border-top: 0px"><tr>
+     <td></td>    </tr></tbody></table></div>
+  </div>
+  
+     <div class="block block-block" id="block-block-24">
+        <div class="content"><center>
+<br/>
+<a href="http://osddisplays.com/oled_pmoled.php" onClick="javascript: pageTracker._trackPageview('/ads/osd-pmoled-bottom');" target="_blank" 
+><img src="http://www.oled-info.com/external/ads/osd-728-90-pmoled-ad.jpg" alt="OSD PMOLED ad" title="OSD PMOLED ad" width="728" height="90" /></a></center></div>
+ </div>
+  <div class="block block-views" id="block-views-d8ba46d82a59f207296312150dc3fca8">
+    <h2 class="title">Latest stories about oled for Lighting:</h2>    <div class="content"><div class="view view-Zlatest-OLED-Light-Stories view-id-Zlatest_OLED_Light_Stories view-display-id-block_1 view-dom-id-1">
+    
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+     
+  <div class="node">
+        
+    
+    
+        	<h2 class="title">
+    		<a href="/us-doe-awards-two-oled-research-projects-and-3-million-production-project-moser-baer">
+    		    		US DOE awards two OLED research projects and a $3 million production project to Moser Baer</a>
+    	</h2>    	
+    	    
+        <div class="content" ><p>The US Department of Energy (DOE) announced the 7th round of SSL projects, totalling $15 million for OLED and LED lighting research, product development and production projects. One of the two production projects is headed by Moser Baer. The DOE will give $2.9 million (and Moser Baer will add $1 million) to reduce the cost of manufacturing OLED lighting panels. Moser Baer's pilot production line in Canandaigua, NY will be used to demonstrate these manufacturing improvements.</p><p><span class="inline inline-center"><a href="http://www.oled-info.com/udc-showing-some-beautiful-new-oled-lamp-prototypes"><img src="http://www.oled-info.com/files/images/UDC-desk-lamp-prototype-photo.img_assist_custom-300x219.jpg" alt="Prototype OLED lamps by UDC" title="Prototype OLED lamps by UDC"  class="image image-img_assist_custom-300x219 " width="300" height="219" /></a><span class="caption"><strong>Prototype OLED lamps by UDC</strong></span></span></p><p>Moser Baer's pilot production line is built together with <a href="http://www.oled-info.com/universal_display_udc">Universal Display</a>&nbsp;and uses UDC's&nbsp;PHOLED technology. T<a href="http://www.oled-info.com/oled-lighting-production-line-built-moser-baer-and-udc-will-cost-20-million">he project was already awarded $8.3 million by the DOE back in January</a>.</p> <div class="image-clear"></div></div>
+    
+        <div class="links">
+    <table border="0"><tbody style="  border-top: 0px"><tr>
+    <td><span class="submitted">06/09/2011</span></td> <td><ul class="links inline"><li class="node_read_more first"><a href="/us-doe-awards-two-oled-research-projects-and-3-million-production-project-moser-baer" title="Read the rest of US DOE awards two OLED research projects and a $3 million production project to Moser Baer.">Read more</a></li>
+<li class="upload_attachments last"><a href="/us-doe-awards-two-oled-research-projects-and-3-million-production-project-moser-baer#attachments" title="Read full article to view attachments.">1 attachment</a></li>
+</ul></td>    </tr></tbody></table></div>
+  </div>
+  
+     </div>
+  <div class="views-row views-row-2 views-row-even">
+     
+  <div class="node">
+        
+    
+    
+        	<h2 class="title">
+    		<a href="/fraunhofer-institute-and-renetec-build-%E2%82%AC140-million-oled-lighting-fab-korea">
+    		    		The Fraunhofer Institute and Renetec to build a €140 million OLED lighting fab in Korea</a>
+    	</h2>    	
+    	    
+        <div class="content" ><p>The <a href="http://www.oled-info.com/fraunhofer-institute-photonic-microsystems">Fraunhofer Institute for Photonic Microsystems</a> (IPMS) and Korea's Renetec will jointly build an OLED lighting fab in Gwangju, South Korea. The project will cost around €140 million, and the Fraunhofer will apparently invest up to 25% of that sum (€35 million).</p> <p><span class="inline inline-center"><a href="/tabola-oled-lighting-panels-photo"><img src="http://www.oled-info.com/files/images/tabola-oled-light-panels.img_assist_custom-300x225.jpg" alt="TABOLA OLED lighting panels photo" title="TABOLA OLED lighting panels photo"  class="image image-img_assist_custom-300x225 " width="300" height="225" /></a></span></p><p>We don't have any more details at this time. Back in October 2010 the Fraunhofer IPMS Institute unveiled <a href="http://www.oled-info.com/fraunhofer-unveils-new-oled-lighting-panels-be-released-q1-2011">new OLED lighting panels called TABOLA</a> (the full name is TABOLA OLED Light Tablets), set to be fabricated at <a href="http://www.oled-info.com/comedd">COMEDD</a> and released in Q1 2011 (which didn't happen yet). Perhaps these panels will be produced in the new plant - although it will probably take quite a while to finish the plant so they may develop newer and better panels by then.</p>
+<div class="image-clear"></div></div>
+    
+        <div class="links">
+    <table border="0"><tbody style="  border-top: 0px"><tr>
+    <td><span class="submitted">06/08/2011</span></td> <td><ul class="links inline"><li class="node_read_more first last"><a href="/fraunhofer-institute-and-renetec-build-%E2%82%AC140-million-oled-lighting-fab-korea" title="Read the rest of The Fraunhofer Institute and Renetec to build a €140 million OLED lighting fab in Korea.">Read more</a></li>
+</ul></td>    </tr></tbody></table></div>
+  </div>
+  
+     </div>
+  <div class="views-row views-row-3 views-row-odd">
+     
+  <div class="node">
+        
+    
+    
+        	<h2 class="title">
+    		<a href="/nanomarkets-oled-material-sales-reach-2-billion-2016">
+    		    		Nanomarkets: OLED material sales to reach $2 billion by 2016</a>
+    	</h2>    	
+    	    
+        <div class="content" ><p><span class="inline inline-right"><img src="http://www.oled-info.com/files/images/nanomarkets_logo.thumbnail.jpg" alt="Nanomarkets logo" title="Nanomarkets logo"  class="image image-thumbnail " width="100" height="26" /></span>Nanomarkets released a new report (<a href="http://www.oled-info.com/markets-oled-materials-2011">The Market for OLED Materials 2011</a>) in which they predict that OLED display and lighting material sales will exceed $2 billion in 2016. Mass market for <a href="http://www.oled-info.com/oled-tv">OLED TV</a> and <a href="http://www.oled-info.com/oled-light">OLED lighting</a> will emerge in 2013 to 2015 which will boost the OLED material market.</p> <p>Nanomarkets also believe that there&nbsp;will be more IP challenges and a trend towards "reverse engineering". Most OLED panels will use small molecules, but polymer OLEDs will begin to appear and will generate over $255 million by 2016 (i.e. around 12% of the total OLED marker).</p><div class="image-clear"></div></div>
+    
+        <div class="links">
+    <table border="0"><tbody style="  border-top: 0px"><tr>
+    <td><span class="submitted">06/01/2011</span></td> <td></td>    </tr></tbody></table></div>
+  </div>
+  
+     </div>
+  <div class="views-row views-row-4 views-row-even">
+     
+  <div class="node">
+        
+    
+    
+        	<h2 class="title">
+    		<a href="/oled-handbook">
+    		    		The OLED Handbook</a>
+    	</h2>    	
+    	    
+        <div class="content" ><p>Today we launched our first product - <a href="http://www.oled-info.com/handbook">The OLED Handbook</a>. This is a comprehensive guide to OLED technology, market and industry - encompassing all that we learned here at OLED-Info over the past 6 years. We are seeing a growing interest in OLEDs - from all over the world, and we believe that this guide can help introduce the subject quickly and throughly.</p><p><a href="http://www.oled-info.com/handbook"><img src="http://www.oled-info.com/handbook/img/oled-book-3d-cover.jpg" border="0" width="240" height="282" style="display: block; margin-left: auto; margin-right: auto;" /></a></p><p>Reading this book, you'll learn all about:</p><ul><li>OLED technology and materials</li><li>What kind of <strong>OLED displays are available today</strong></li><li>What is a Super AMOLED and a Clear Black display</li><li>All about <strong>OLED lighting technology</strong></li><li>OLED lighting panels and lamps available today</li><li>The future of OLED displays and lighting</li><li><strong><a href="http://www.oled-info.com/handbook/">And lot's more</a>!</strong></li></ul> </div>
+    
+        <div class="links">
+    <table border="0"><tbody style="  border-top: 0px"><tr>
+    <td><span class="submitted">05/31/2011</span></td> <td><ul class="links inline"><li class="node_read_more first last"><a href="/oled-handbook" title="Read the rest of The OLED Handbook.">Read more</a></li>
+</ul></td>    </tr></tbody></table></div>
+  </div>
+  
+     </div>
+  <div class="views-row views-row-5 views-row-odd views-row-last">
+     
+  <div class="node">
+        
+    
+    
+        	<h2 class="title">
+    		<a href="/toshiba-developed-portable-oled-lamp-produce-100-units-and-donate-quake-hit-areas-japan">
+    		    		Toshiba developed a portable OLED lamp, to produce 100 units and donate to quake-hit areas in Japan</a>
+    	</h2>    	
+    	    
+        <div class="content" ><p>Toshiba developed a new <a href="http://www.oled-info.com/toshiba-portable-oled-lamp-2011">portable OLED lamp</a> - and they will make 100 units of this lamp, and donate these to quake-hit areas (50 units were already donated to the evacuation center in Kesennuma City, Miyagi Prefecture). Toshiba has no plans to sell these to consumers. The lamps run from either four AAA alkaline batteries or from the embedded rechargeable battery - and Toshiba bundle the lamp with a solar-panel (it can also be recharged via a USB port).</p><p><span class="inline inline-center"><a href="/toshiba-portable-earthquake-oled-lamp-photo"><img src="http://www.oled-info.com/files/images/toshiba-earthquake-oled-lamp.jpg" alt="Toshiba portable Earthquake OLED lamp photo" title="Toshiba portable Earthquake OLED lamp photo"  class="image image-_original " width="211" height="251" /></a></span></p><p>The lamp measure 146x100x18.5mm (at the thickest part) and weight 180g without the batteries. There are no details about the OLED panel itself, which is made by Toshiba. We only know that lamp brightness is 53 lm (similar to a desk lamp) with 100% brightness, it can be dimmed to 30% or 10%.</p> <div class="image-clear"></div></div>
+    
+        <div class="links">
+    <table border="0"><tbody style="  border-top: 0px"><tr>
+    <td><span class="submitted">05/31/2011</span></td> <td><ul class="links inline"><li class="node_read_more first last"><a href="/toshiba-developed-portable-oled-lamp-produce-100-units-and-donate-quake-hit-areas-japan" title="Read the rest of Toshiba developed a portable OLED lamp, to produce 100 units and donate to quake-hit areas in Japan.">Read more</a></li>
+</ul></td>    </tr></tbody></table></div>
+  </div>
+  
+     </div>
+    </div>
+  
+  
+  
+      
+<div class="more-link">
+  <a href="/oled-light-stories">
+    more  </a>
+</div>
+  
+  
+  
+</div> </div>
+ </div>
+</div>
+
+
+</TD>
+<TD style="width:240px;" valign="top">
+
+<div id="rightSideBar">
+	<div id="searchDiv" align="center" style="padding-bottom:5px;">
+		<form action="http://www.google.com/cse" id="cse-search-box" target="_blank">
+  			<div>
+    			<input type="hidden" name="cx" value="partner-pub-4785989504530480:mxbzuai1v0z" />
+    			<input type="hidden" name="ie" value="ISO-8859-1" />
+    			<input type="text" name="q" size="16" />
+    			<input type="submit" name="sa" value="Search" />
+  			</div>
+		</form>
+		<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+	</div>	
+</div>
+
+<div style="margin-bottom:10px;" >
+
+ 
+	<div>  <div class="block block-block" id="block-block-49">
+        <div class="content"><h3><img class="oled-icon-side" alt="oled icon" src="/sites/default/themes/oledTheme4/small-oled-icon-sidebar.gif" height="20" width="20" border="" align="left" />
+Get OLED news</h3>
+<div class="side-bar-strip">
+<img alt="title strip" src="/sites/default/themes/oledTheme4/side-bar-title-strip.jpg" height="5" width="220"/>
+</div>
+
+<table border="0" cellpadding="2">
+<tr>
+<td width="130">
+<a onclick="javascript: pageTracker._trackPageview('/get-news-click/rss-image');" title="Get OLED news using RSS" type="application/rss+xml" rel="alternate" href="http://feedproxy.google.com/oled-info">
+<img align="absmiddle" src="http://www.oled-info.com/external/feed-icon16x16.png"/></a> 
+<a onclick="javascript: pageTracker._trackPageview('/get-news-click/rss');" title="Get OLED news using RSS" type="application/rss+xml" rel="alternate" href="http://feedproxy.google.com/oled-info">RSS feed</a>
+</td>
+
+<td>
+<a onclick="javascript: pageTracker._trackPageview('/get-news-click/rss-mail-img');" title="Get OLED news in your email" href="http://feedburner.google.com/fb/a/mailverify?uri=oled-info&amp;loc=en_US">
+<img align="absmiddle" src="/sites/default/themes/oledTheme4/rssEmailIcon.jpg"/></a> 
+<a onclick="javascript: pageTracker._trackPageview('/get-news-click/rss-mail');" title="Get OLED news in your email" href="http://feedburner.google.com/fb/a/mailverify?uri=oled-info&amp;loc=en_US">E-mail</a>
+</td></tr>
+
+<td>
+<a onclick="javascript: pageTracker._trackPageview('/get-news-click/kindle-img');" href="http://www.amazon.com/gp/product/B002OL1O3U">
+<img align="absmiddle" src="/external/kindle-icon.jpg"/></a>  
+<a onclick="javascript: pageTracker._trackPageview('/get-news-click/kindle');" title="Get OLED-Info directly on your Amazon Kindle" href="http://www.amazon.com/gp/product/B002OL1O3U">Kindle</a>
+</td>
+
+<td>
+<a onclick="javascript: pageTracker._trackPageview('/get-news-click/twitter-img');" href="http://www.twitter.com/oledinfo">
+<img align="absmiddle" src="/external/twitter-icon.jpg"/></a>  
+<a onclick="javascript: pageTracker._trackPageview('/get-news-click/twitter'); "title="Follow us on twitter" href="http://www.twitter.com/oledinfo">Twitter</a>
+</td>
+</tr>
+<tr><td colspan="2" align="center"><a onclick="javascript: pageTracker._trackPageview('/get-news-click/newsletter');" href="http://www.oled-info.com/oled-newsletter-subscribe">Free monthly newsletter</a></td></tr>
+</table></div>
+ </div>
+  <div class="block block-block" id="block-block-48">
+        <div class="content"><div style="margin-bottom:10px;" >
+<h3><img class="oled-icon-side" alt="oled icon" src="/sites/default/themes/oledTheme4/small-oled-icon-sidebar.gif" height="20" width="20" border="" align="left" />
+Popular stories</h3>
+<div class="side-bar-strip">
+<img alt="title strip" src="/sites/default/themes/oledTheme4/side-bar-title-strip.jpg" height="5" width="220"/>
+</div>
+
+<div class="item-list"><ul><li><a href="http://www.oled-info.com/toshiba-shows-ultra-thin-flexible-3-oled-display-prototype">Toshiba shows an ultra-thin flexible 3" OLED display prototype</a></li><li><a href="http://www.oled-info.com/samsungs-55-gen-amoled-fab-first-line-online-two-months-ahead-schedule">Samsung's 5.5-Gen AMOLED fab: first line is online, two months ahead of schedule</a></li><li><a href="http://www.oled-info.com/mitsubishis-geo-cosmos-oled-globe-video">Mitsubishi's Geo-Cosmos OLED globe on video</a></li><li><a href="http://www.oled-info.com/samsung-start-mass-producing-flexible-amoleds-2012">Samsung to start mass producing flexible AMOLEDs in 2012?</a></li><li><a href="http://www.oled-info.com/cmi-will-not-start-producing-amoleds-near-future">CMI will not start producing AMOLEDs in the near future</a></li></ul></div></div>
+ </div>
+  <div class="block block-block" id="block-block-33">
+        <div class="content"><div align="center"><br/><object width="160" height="600">
+<param name="movie" value="/external/ads/densitron-flash-ad.swf">
+<embed src="/external/ads/densitron-flash-ad.swf" width="160" height="600">
+</embed>
+</object></div></div>
+ </div>
+  <div class="block block-block" id="block-block-46">
+        <div class="content"><center><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like-box href="http://www.facebook.com/oledinfo" width="200" show_faces="true" stream="false" header="true"></fb:like-box></center></div>
+ </div>
+  <div class="block block-block" id="block-block-51">
+        <div class="content"><div align="center">
+<a href="http://www.oled-info.com/handbook">
+<img width="125" height="125" border="0" src="/external/oled-handbook-125.jpg"/>
+</a>
+</div></div>
+ </div>
+</div></div><!-- right sidebar -->
+
+</TD>
+</TR></TBODY></TABLE>
+
+</div>
+
+
+
+
+<div id="footerDiv" style="float:left;width:980px;background-color:#fbfbfb;border-top:1px solid #E4E4E4;">  <div class="block block-block" id="block-block-26">
+        <div class="content"><div align="center" style="color:#999;font-size:0.7em;">
+Copyright 2004-2011 Metalgrass software
+</div></div>
+ </div>
+</div>
+
+</div></div>
+<script type="text/javascript" src="http://forms.aweber.com/form/41/721196941.js"></script>
+
+<!-- THE FOLLOWING IS ANALYTICS CODE BY E-JUNKIE, THIS SUPPORTS SHOPPING CARTS: -->
+	<script type="text/javascript">
+var gaJsHost=(("https:"==document.location.protocol)?"https://ssl.":"http://www.");
+document.write(unescape("%3Cscript src='"+gaJsHost+
+  "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var ejGATracker = _gat._getTracker("UA-222344-2");
+ejGATracker._setDomainName("none");
+ejGATracker._setAllowLinker(true);
+ejGATracker._trackPageview();
+</script>
+
+<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+</body></html>

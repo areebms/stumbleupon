@@ -1,0 +1,921 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fresh Strawberry Cupcakes with Almond Buttercream - Around My Family Table
+ | Around My Family Table</title>
+<link rel="Shortcut Icon" href="http://www.aroundmyfamilytable.com/wp-content/themes/pretty/images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="http://www.aroundmyfamilytable.com/wp-content/themes/pretty/style.css" type="text/css" media="screen" />
+<script type="text/javascript">
+//<![CDATA[
+var BrowserDetect = {
+init: function () {
+this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
+this.version = this.searchVersion(navigator.userAgent)|| this.searchVersion(navigator.appVersion)|| "an unknown version";
+this.OS = this.searchString(this.dataOS) || "an unknown OS";
+},
+searchString: function (data) {
+for (var i=0;i<data.length;i++)	{
+        var dataString = data[i].string;
+        var dataProp = data[i].prop;
+        this.versionSearchString = data[i].versionSearch || data[i].identity;
+        if (dataString) {if (dataString.indexOf(data[i].subString) != -1)
+                return data[i].identity;}
+        else if (dataProp){return data[i].identity;}
+}
+},
+searchVersion: function (dataString) {
+var index = dataString.indexOf(this.versionSearchString);
+if (index == -1) return;
+return parseFloat(dataString.substring(index+this.versionSearchString.length+1));
+},
+dataBrowser: [
+        {string: navigator.userAgent,subString: "Chrome",identity: "Chrome"},
+        {string: navigator.userAgent,subString: "OmniWeb",versionSearch: "OmniWeb/",identity: "OmniWeb"},
+        {string: navigator.vendor,subString: "Apple",identity: "Safari",versionSearch: "Version"},
+        {prop: window.opera,identity: "Opera"},
+        {string: navigator.vendor,subString: "iCab",identity: "iCab"},
+        {string: navigator.vendor,subString: "KDE",identity: "Konqueror"},
+        {string: navigator.userAgent,subString: "Firefox",identity: "Firefox"},
+        {string: navigator.vendor,subString: "Camino",identity: "Camino"},
+        {string: navigator.userAgent,subString: "Netscape",identity: "Netscape"},
+        {string: navigator.userAgent,subString: "MSIE",identity: "Explorer",versionSearch: "MSIE"},
+        {string: navigator.userAgent,subString: "Gecko",identity: "Mozilla",versionSearch: "rv"},
+        {string: navigator.userAgent,subString: "Mozilla",identity: "Netscape",versionSearch: "Mozilla"}],
+dataOS:[{string: navigator.platform,subString: "Win",identity: "Windows"},
+        {string: navigator.platform,subString: "Mac",identity: "Mac"},
+        {string: navigator.userAgent,subString: "iPhone",identity: "iPhone/iPod"},
+        {string: navigator.platform,subString: "Linux",identity: "Linux"}]
+};
+BrowserDetect.init();
+
+function bookMark(theurl, thetitle, browser){
+    switch(browser){
+        case "Firefox":
+            window.sidebar.addPanel(thetitle, theurl,"");
+            break;
+        case "Explorer":
+            window.external.AddFavorite( theurl, thetitle);
+            break;
+        case "Chrome":
+        case "Safari":
+        case "Opera":
+        case "Netscape":
+            switch(BrowserDetect.OS){
+            case "Windows":
+            case "Linux":
+            alert('press ctrl+D to bookmark this page');
+            break;
+            case "Mac":
+                alert('press cmd+D to bookmark this page');
+            break;
+            }
+            break;
+    }
+}
+//]]>
+</script>
+                        <style type="text/css" media="screen" >
+                                .socialwrap li.icon_text a img, .socialwrap li.iconOnly a img, .followwrap li.icon_text a img, .followwrap li.iconOnly a img{border-width:0 !important;background-color:none;}#follow.right {width:32px;position:fixed; right:0; top:100px;background-color:#878787;padding:10px 0;font-family:impact,charcoal,arial, helvetica,sans-serif;-moz-border-radius-topleft: 5px;-webkit-border-top-left-radius:5px;-moz-border-radius-bottomleft:5px;-webkit-border-bottom-left-radius:5px;border:2px solid #fff;border-right-width:0}#follow.right ul {padding:0; margin:0; list-style-type:none !important;font-size:24px;color:black;}
+#follow.right ul li {padding-bottom:10px;list-style-type:none !important;padding-left:4px;padding-right:4px}
+#follow img{border:none;}#follow.right ul li.follow {margin:0 4px;}
+#follow.right ul li.follow img {border-width:0;display:block;overflow:hidden; background:transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/impact/follow-right.png) no-repeat -0px 0px;height:79px;width:20px;}
+#follow.right ul li a {display:block;}
+#follow.right ul li.follow span, #follow ul li a span {display:none}.share {margin:0 3px 3px 0;}
+.phat span {display:inline;}
+ul.row li {float:left;list-style-type:none;}
+li.iconOnly a span.head {display:none}
+#follow.left ul.size16 li.follow{margin:0px auto !important}
+li.icon_text a {padding-left:0;margin-right:3px}
+li.text_only a {background-image:none !important;padding-left:0;}
+li.text_only a img {display:none;}
+li.icon_text a span{background-image:none !important;padding-left:0 !important; }
+li.iconOnly a span.head {display:none}
+ul.socialwrap li {margin:0 3px 3px 0 !important;}
+ul.socialwrap li a {text-decoration:none;}ul.row li {float:left;line-height:auto !important;}
+ul.row li a img {padding:0}.size16 li a,.size24 li a,.size32 li a, .size48 li a, .size60 li a {display:block}ul.socialwrap {list-style-type:none !important;margin:0; padding:0;text-indent:0 !important;}
+ul.socialwrap li {list-style-type:none !important;background-image:none;padding:0;list-style-image:none !important;}
+ul.followwrap {list-style-type:none !important;margin:0; padding:0}
+ul.followwrap li {margin-right:3px;margin-bottom:3px;list-style-type:none !important;}
+#follow.right ul.followwrap li, #follow.left ul.followwrap li {margin-right:0px;margin-bottom:0px;}
+.shareinpost {clear:both;padding-top:0px}.shareinpost ul.socialwrap {list-style-type:none !important;margin:0 !important; padding:0 !important}
+.shareinpost ul.socialwrap li {padding-left:0 !important;background-image:none !important;margin-left:0 !important;list-style-type:none !important;text-indent:0 !important}
+.socialwrap li.icon_text a img, .socialwrap li.iconOnly a img{border-width:0}ul.followrap li {list-style-type:none;list-style-image:none !important;}
+div.clean {clear:left;}
+div.display_none {display:none;}
+                        </style>
+                                                <style type="text/css" media="print" >
+                                body {background: white;font-size: 12pt;color:black;}
+ * {background-image:none;}
+ #wrapper, #content {width: auto;margin: 0 5%;padding: 0;border: 0;float: none !important;color: black;background: transparent none;}
+ a { text-decoration : underline; color : #0000ff; }
+#menu, #navigation, #navi, .menu {display:none}
+                        </style>
+                        
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.1.5 - http://yoast.com/wordpress/seo/ -->
+<meta name="description" content="No dyes, No jello...just cake and fresh strawberries!"/>
+<link rel="canonical" href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Around My Family Table &raquo; Feed" href="http://feeds.feedburner.com/AroundMyFamilyTable" />
+<link rel="alternate" type="application/rss+xml" title="Around My Family Table &raquo; Comments Feed" href="http://www.aroundmyfamilytable.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Around My Family Table &raquo; Fresh Strawberry Cupcakes with Almond Buttercream Comments Feed" href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/feed/" />
+<link rel='stylesheet' id='commentluv_style-css'  href='http://www.aroundmyfamilytable.com/wp-content/plugins/commentluv/css/commentluv.css?ver=3.3.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.aroundmyfamilytable.com/wp-includes/js/jquery/jquery.js?ver=1.7.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var cl_settings = {"name":"author","url":"url","comment":"comment","email":"email","infopanel":"on","default_on":null,"default_on_admin":null,"cl_version":"2.90.9.6","images":"http:\/\/www.aroundmyfamilytable.com\/wp-content\/plugins\/commentluv\/images\/","api_url":"http:\/\/www.aroundmyfamilytable.com\/wp-admin\/admin-ajax.php","_fetch":"06f028a968","_info":"90ab538f69","infoback":"white","infotext":"black","template_insert":"","logged_in":"","refer":"http:\/\/www.aroundmyfamilytable.com\/2012\/01\/fresh-strawberry-cupcakes\/","no_url_message":"Please enter a URL and then click the CommentLuv checkbox if you want to add your last blog post","no_http_message":"Please use http:\/\/ in front of your url","no_url_logged_in_message":"You need to visit your profile in the dashboard and update your details with your site URL","no_info_message":"No info was available or an error occured"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.aroundmyfamilytable.com/wp-content/plugins/commentluv/js/commentluv.js?ver=3.3.1'></script>
+<script type='text/javascript' src='http://www.aroundmyfamilytable.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.aroundmyfamilytable.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.aroundmyfamilytable.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.3.1" />
+<link rel='shortlink' href='http://www.aroundmyfamilytable.com/?p=3537' />
+
+<!-- Facebook Open Graph metatags added by WordPress plugin. Get it at: http://www.linksalpha.com/widgets/clickngo -->
+<meta property="og:site_name" content="Around My Family Table" />
+<meta property="og:title" content="Fresh Strawberry Cupcakes with Almond Buttercream" />
+<meta property="og:url" content="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/" />
+<meta property="og:image" content="http://www.aroundmyfamilytable.com/wp-content/uploads/2012/01/IMG_2385.jpg" />
+<meta property="og:description" content="I have been craving a good strawberry cupcake; however, all store bought mixes have very little flavor and lots of dyes. And most recipes for &quot;scratch&quot; cakes call for jello (again...we can't have the dye).  So I decided it was time to tackle this recipe and see what I could come up with. ..." />
+<meta property="og:type" content="article" />
+<!-- End Facebook Open Graph metatags-->
+<meta name="google-site-verification" content="TDWLc_YwdDbuZ19XIbqyFUlmsRx_qQOXCaXl0UqRq7M" /> 
+<meta name="y_key" content="e7c567a7e6b0e017" />
+<meta name="alexaVerifyID" content="VsSXORi4Wz0jaw_rn96rCsd74eg" />
+<meta name="blogcatalog" content="9BC10203126" />
+<meta property="fb:admins" content="118885818159837" />
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-20582039-1 ']);
+_gaq.push(['_trackPageview']);
+_gaq.push(['_trackPageLoadTime']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+</script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script><script type='text/javascript' src='http://www.aroundmyfamilytable.com/wp-includes/js/tw-sack.js?ver=1.6.1'></script>
+  <script	type="text/javascript" src="http://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    google.load('friendconnect', '0.8');
+  </script>
+  <script	type="text/javascript" src="http://www.aroundmyfamilytable.com/wp-content/plugins/googlefriendconnect//googlefriendconnect.js"></script>
+  <script type="text/javascript">
+      var SITE_ID = "04946891970339427948";
+      var FC_PLUGIN_URL = "http://www.aroundmyfamilytable.com/wp-content/plugins/googlefriendconnect/";
+      var FC_LOGOUT_URL = "http://www.aroundmyfamilytable.com/wp-login.php?action=logout&amp;redirect_to=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2012%2F01%2Ffresh-strawberry-cupcakes%2F&amp;_wpnonce=a52732a2e6";
+      var FC_USER_ID = 0;
+      google.friendconnect.container.setParentUrl(FC_PLUGIN_URL);
+    </script>
+  
+<!-- Start Of Additions Generated By Greg's Threaded Comment Numbering Plugin 1.4.8 -->
+<link rel='stylesheet' id='gtcn-plugin-css'  href='http://www.aroundmyfamilytable.com/wp-content/plugins/gregs-threaded-comment-numbering/gtcn-css.css?ver=1.4.8' type='text/css' media='all' />
+<!-- End Of Additions Generated By Greg's Threaded Comment Numbering Plugin 1.4.8 -->
+
+<!-- platinum seo pack 1.3.7 -->
+<meta name="robots" content="index,follow,noodp,noydir" />
+<meta name="description" content="I have been craving a good strawberry cupcake; however, all store bought mixes have very little flavor and lots of dyes. And most recipes for scratch cakes" />
+<link rel="canonical" href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/" />
+<!-- /platinum one seo pack -->
+<script type="text/javascript" src="http://www.aroundmyfamilytable.com/wp-content/plugins/ziplist-recipe-plugin/zlrecipe_print.js"></script>
+<script type="text/javascript" src="http://www.zlcdn.com/javascripts/pt_include.js"></script>
+	<link charset="utf-8" href="http://www.zlcdn.com/stylesheets/minibox/generic.css" rel="stylesheet" type="text/css" />
+<link charset="utf-8" href="http://www.zlcdn.com/stylesheets/minibox/zlrecipe-std.css" rel="stylesheet" type="text/css" />
+<link rel="pingback" href="http://www.aroundmyfamilytable.com/xmlrpc.php" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" /><style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style></head>
+<body class="single single-post postid-3537 single-format-standard header-full-width header-image content-sidebar pretty-yellow pretty-yellow">
+<div id="wrap">
+<div id="nav"><div class="wrap"><ul id="menu-new-menu" class="nav superfish"><li id="menu-item-3058" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3058"><a href="http://www.aroundmyfamilytable.com/">Home</a></li>
+<li id="menu-item-3053" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3053"><a href="http://www.aroundmyfamilytable.com/about-me/">About Me</a>
+<ul class="sub-menu">
+	<li id="menu-item-3055" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3055"><a href="http://www.aroundmyfamilytable.com/about-me/">About Me</a></li>
+	<li id="menu-item-3054" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3054"><a href="http://www.aroundmyfamilytable.com/disclosure/">Disclosure</a></li>
+	<li id="menu-item-3052" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3052"><a href="http://www.aroundmyfamilytable.com/pr-friendly/">PR Friendly</a></li>
+	<li id="menu-item-3048" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3048"><a href="http://www.aroundmyfamilytable.com/sponsor-amft/">Sponsor AMFT</a></li>
+</ul>
+</li>
+<li id="menu-item-3047" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3047"><a href="http://www.aroundmyfamilytable.com/category/giveaway/">giveaways</a>
+<ul class="sub-menu">
+	<li id="menu-item-3057" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3057"><a href="http://www.aroundmyfamilytable.com/category/giveaway/">giveaways</a></li>
+	<li id="menu-item-3050" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3050"><a href="http://www.aroundmyfamilytable.com/winners/">Winners</a></li>
+</ul>
+</li>
+<li id="menu-item-3045" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-3045"><a href="http://www.aroundmyfamilytable.com/category/recipe/">recipes</a></li>
+<li id="menu-item-3046" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3046"><a href="http://www.aroundmyfamilytable.com/category/review/">reviews</a></li>
+<li id="menu-item-3049" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3049"><a href="http://www.aroundmyfamilytable.com/nutrisystem/">Nutrisystem</a></li>
+<li id="menu-item-3496" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3496"><a href="http://www.aroundmyfamilytable.com/category/travel/">travel</a></li>
+</ul></div></div><div id="header"><div class="wrap"><div id="title-area"><p id="title"><a href="http://www.aroundmyfamilytable.com/" title="Around My Family Table">Around My Family Table</a></p></div><!-- end #title-area --></div><!-- end .wrap --></div><!--end #header--><div id="subnav"><div class="wrap"></div></div><div id="inner">	<div id="content-sidebar-wrap">
+				<div id="content" class="hfeed">
+				<div class="post-3537 post type-post status-publish format-standard hentry category-recipe tag-baking tag-cupcakes tag-dessert tag-strawberry">
+
+				<h1 class="entry-title">Fresh Strawberry Cupcakes with Almond Buttercream</h1>
+		
+		<div class="post-info"><span class="date published time" title="2012-01-31T06:30:05+00:00">January 31, 2012</span>  <span class="post-comments"><a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comments">23 Comments</a></span> </div>		<div class="entry-content">
+			<div style="float:right;padding: 0 0 10px 10px" class="interactive_right"><script src="http://www.stumbleupon.com/hostedbadge.php?s=2&amp;r=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2012%2F01%2Ffresh-strawberry-cupcakes%2F"></script></div><div name="googleone_share_1" style="position:relative;z-index:5;float: right; margin-left: 10px;"><g:plusone size="medium" count="1" href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/"></g:plusone></div><div style="padding-top:5px;padding-right:0px;padding-bottom:5px;padding-left:0px;;">
+											<iframe
+												style="height:25px !important; border:0px solid gray !important; overflow:hidden !important; width:550px !important;" frameborder="0" scrolling="no" allowTransparency="true"
+												src="http://www.linksalpha.com/social?blog=Around+My+Family+Table&link=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2012%2F01%2Ffresh-strawberry-cupcakes%2F&title=Fresh+Strawberry+Cupcakes+with+Almond+Buttercream&desc=%0D%0AI+have+been+craving+a+good+strawberry+cupcake%3B+however%2C+all+store+bought+mixes+have+very+little+flavor+and+lots+of+dyes.+And+most+recipes+for+%22scratch%22+cakes+call+for+jello+%28again...we+can%27t+have+th&fc=333333&fs=arial&fblname=like&fblref=facebook&fbllang=en_US&fblshow=1&fbsbutton=1&fbsctr=1&fbslang=en&fbsendbutton=0&twbutton=1&twlang=en&twmention=myfamilytable&twrelated1=myfamilytable&twrelated2=&twctr=1&lnkdshow=noshow&lnkdctr=0&buzzbutton=0&buzzlang=en&buzzctr=0&diggbutton=0&diggctr=0&stblbutton=1&stblctr=1&g1button=1&g1ctr=1&g1lang=en-US">
+											</iframe>
+										</div><p style="text-align: center;"><a href="http://www.aroundmyfamilytable.com/wp-content/uploads/2012/01/IMG_2385.jpg"><img class="aligncenter  wp-image-3538" title="Strawberry Cupcakes" src="http://www.aroundmyfamilytable.com/wp-content/uploads/2012/01/IMG_2385.jpg" alt="" width="435" height="573" /></a></p>
+<p>I have been craving a good strawberry cupcake; however, all store bought mixes have very little flavor and lots of dyes. And most recipes for &#8220;scratch&#8221; cakes call for jello (again&#8230;we can&#8217;t have the dye).  So I decided it was time to tackle this recipe and see what I could come up with.</p>
+<p style="text-align: center;"><a href="http://www.aroundmyfamilytable.com/wp-content/uploads/2012/01/IMG_2424.jpg"><img class="aligncenter  wp-image-3539" title="Strawberry Cupcakes" src="http://www.aroundmyfamilytable.com/wp-content/uploads/2012/01/IMG_2424.jpg" alt="" width="573" height="435" /></a></p>
+<p>Our family met at our local BBQ place&#8230;they give a free meal on your birthday, so we are always there&#8230;.and I brought the cupcakes.  I love experimenting (and my family loves it too).  So last weekend was the perfect weekend because it was my nephew&#8217;s 13th birthday.  He is a really picky eater, so I am pleased to announced that this past his test.</p>
+<div id="attachment_3540" class="wp-caption aligncenter" style="width: 501px"><a href="http://www.aroundmyfamilytable.com/wp-content/uploads/2012/01/IMG_2419.jpg"><img class=" wp-image-3540  " title="IMG_2419" src="http://www.aroundmyfamilytable.com/wp-content/uploads/2012/01/IMG_2419-1024x682.jpg" alt="" width="491" height="327" /></a><p class="wp-caption-text">Happy Birthday!</p></div>
+<div id="attachment_3541" class="wp-caption aligncenter" style="width: 501px"><a href="http://www.aroundmyfamilytable.com/wp-content/uploads/2012/01/IMG_2420.jpg"><img class=" wp-image-3541  " title="IMG_2420" src="http://www.aroundmyfamilytable.com/wp-content/uploads/2012/01/IMG_2420-1024x730.jpg" alt="" width="491" height="350" /></a><p class="wp-caption-text">Ready for a nap!</p></div>
+<p>&nbsp;</p>
+<p>Honestly, you could swap out the &#8220;scratch&#8221; part of the recipe for a boxed white cake mix.  But you should try making your own cake from scratch at least once.  I promise it&#8217;s very easy!  Complete the look by using <a href="http://www.amazon.com/mn/search/?_encoding=UTF8&amp;x=0&amp;tag=arou02-20&amp;linkCode=ur2&amp;y=0&amp;camp=1789&amp;creative=390957&amp;field-keywords=wilton%20tube%201M&amp;url=search-alias%3Daps" target="_blank">decorating tube 1M</a>.</p>
+<p>One last picture, just cuz it turned out really neat.  I had a lot of fun with my new camera at the restaurant&#8230;it was a beautiful January day in Phoenix.</p>
+<p style="text-align: center;"><a href="http://www.aroundmyfamilytable.com/wp-content/uploads/2012/01/IMG_2413.jpg"><img class="aligncenter  wp-image-3546" title="Strawberry Cupcakes" src="http://www.aroundmyfamilytable.com/wp-content/uploads/2012/01/IMG_2413-635x1024.jpg" alt="" width="381" height="614" /></a></p>
+<p style="text-align: center;">
+    <div id="zlrecipe-container-16" class="zlrecipe-container-border" style="border: 1px dotted;">
+    <div id="zlrecipe-container" class="hrecipe serif">
+      <div id="zlrecipe-innerdiv">
+        <div class="item b-b"><div class="zlrecipe-print-link fl-r"><a class="butn-link" title="Print this recipe" href="javascript:void(0);" onclick="zlrPrint('zlrecipe-container-16'); return false">Print</a></div><div id="zl-recipe-link-16" class="zl-recipe-link fl-r">
+		  <a class="butn-link" title="Add this recipe to your ZipList, where you can store all of your favorite web recipes in one place and easily add ingredients to your shopping list." onmouseup="getZRecipeArgs(this, {'partner_key':'aroundmyfamilytable', 'url':'http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/', 'class':'hrecipe'}); return false;" href="javascript:void(0);"></a>
+		</div><div id="zlrecipe-title" class="fn b-b h-1 strong" >Strawberry Cupcakes with Strawberry Filling and Almond Buttercream</div>
+      </div><div class="zlmeta zlclear">
+      <div class="fl-l width-50"></div>
+      <div class="fl-l width-50"><p id="zlrecipe-yield"><span class="yield">18-24 cupcakes</span></p></div>
+      <div class="zlclear">
+      </div>
+    </div><div class="img-desc-wrap"><p class="t-a-c hide-card">
+			  <img class="photo" src="http://www.aroundmyfamilytable.com/wp-content/uploads/2012/01/IMG_2413.jpg" title="Strawberry Cupcakes with Strawberry Filling and Almond Buttercream" style="width: 500px;" />
+			</p></div><span id="zlrecipe-ingredients-list"><div id="zlrecipe-ingredient-0" class="ingredient"><b>Cake:</b></div><div id="zlrecipe-ingredient-1" class="ingredient">3 cups flour</div><div id="zlrecipe-ingredient-2" class="ingredient">4 tsps baking powder</div><div id="zlrecipe-ingredient-3" class="ingredient">1 tsp salt</div><div id="zlrecipe-ingredient-4" class="ingredient">2 cups granulated sugar</div><div id="zlrecipe-ingredient-5" class="ingredient">3/4 cup butter, melted and slightly cooled</div><div id="zlrecipe-ingredient-6" class="ingredient">1 1/2 cups pureed strawberries</div><div id="zlrecipe-ingredient-7" class="ingredient">1 tsp pure vanilla extract</div><div id="zlrecipe-ingredient-8" class="ingredient">4 large eggs, slightly beaten</div><div id="zlrecipe-ingredient-9" class="ingredient"></br></div><div id="zlrecipe-ingredient-10" class="ingredient"><b>Filling:</b></div><div id="zlrecipe-ingredient-11" class="ingredient">3/4 cups pureed strawberries</div><div id="zlrecipe-ingredient-12" class="ingredient"></div><div id="zlrecipe-ingredient-13" class="ingredient"><b>Frosting:</b></div><div id="zlrecipe-ingredient-14" class="ingredient">1/2 cup  butter, softened</div><div id="zlrecipe-ingredient-15" class="ingredient">1/2 cup Shortening</div><div id="zlrecipe-ingredient-16" class="ingredient">2 tbls warm water (2-3)</div><div id="zlrecipe-ingredient-17" class="ingredient">1 tsp almond extract</div><div id="zlrecipe-ingredient-18" class="ingredient">1 lb confectioners sugar</div><div id="zlrecipe-ingredient-19" class="ingredient"></div></span><span id="zlrecipe-instructions-list" class="instructions"><p id="zlrecipe-instruction-0" class="instruction">Preheat oven to 325F.  Line cupcake pan with liners and lightly spray with non-stick cooking spray.</p><p id="zlrecipe-instruction-1" class="instruction">In a large bowl combine the flour, baking powder, salt, and sugar.  In another bowl, combine the butter, vanilla, and eggs.  Add the wet to the dry ingredients and mix well.  Stir in strawberry puree. </p><p id="zlrecipe-instruction-2" class="instruction">Fill muffin tins about 3/4 of the way full.  Bake for 15-25 minutes or until done.</p><p id="zlrecipe-instruction-3" class="instruction">*Use either fresh or frozen berries.  If using frozen berries allow them to thaw before putting in the blender to puree.  </p><p id="zlrecipe-instruction-4" class="instruction"><b>For the filling:</b></p><p id="zlrecipe-instruction-5" class="instruction">Use a straw or frosting tip to punch a little hole in the center of each cupcake.  Place filling in a piping bag or zip-top bag, snip the end and fill the holes with a little of the strawberry puree.</p><p id="zlrecipe-instruction-6" class="instruction"><b>For the frosting:</b></p><p id="zlrecipe-instruction-7" class="instruction">Beat together butter, shortening, 1 tbsp of warm water, and almond until smooth and creamy. Beat in the sugar gradually on a low setting. Scrape sides of bowl as needed. </p><p id="zlrecipe-instruction-8" class="instruction">Mixture will be very thick. After all sugar is incorporated, add 1-2 more tbsp. of warm water and beat at medium/medium-high speed for 1-2 more minutes. Adding more warm water will continue to thin the frosting consistency and bring down the sweetness even more. Add as much as you like to get the appropriate flavor and consistency. Be careful because a little goes a long way.</p><p id="zlrecipe-instruction-9" class="instruction">The frosting can also be made several days in advance and stored in an airtight container in the refrigerator.  Bring to room temperature, then mix well before using.  Leftovers should be refrigerated.</p><p id="zlrecipe-instruction-10" class="instruction">Get the look by using Decorating Tube 1M fitted into a piping bag.  </p></span><div class="zl-linkback" style="display: none;">Google Recipe View Microformatting by <a title="ZipList Recipe Plugin" href="http://www.ziplist.com/recipe_plugin" target="_blank">ZipList Recipe Plugin</a></div><div class="ziplist-recipe-plugin" style="display: none;">1.4</div><a id="zl-printed-permalink" href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/"title="Permalink to Recipe">http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/</a></div><div id="zl-printed-copyright-statement">Copyright AroundMyFamilyTable.com</div></div>
+		</div></p>
+<center><script type="text/javascript"><!--
+google_ad_client = "ca-pub-3716571835575631";
+/* In Post */
+google_ad_slot = "1544911838";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></center><div class="linkwithin_hook" id="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/"></div><script>
+<!-- //LinkWithinCodeStart
+var linkwithin_site_id = 404475;
+var linkwithin_div_class = "linkwithin_hook";
+//LinkWithinCodeEnd -->
+</script>
+<script src="http://www.linkwithin.com/widget.js"></script>
+<a href="http://www.linkwithin.com/"><img src="http://www.linkwithin.com/pixel.png" alt="Related Posts Plugin for WordPress, Blogger..." style="border: 0" /></a><div class='shareinpost'><ul class="socialwrap row"><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://delicious.com/post?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2012%2F01%2Ffresh-strawberry-cupcakes%2F&amp;title=Fresh+Strawberry+Cupcakes+with+Almond+Buttercream" title="Bookmark this post : Fresh Strawberry Cupcakes with Almond Buttercream on Delicious" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-102px 0px" class="image-16" width="16" alt="delicious"/> <span class="head">Bookmark on Delicious</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://digg.com/submit?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2012%2F01%2Ffresh-strawberry-cupcakes%2F&amp;title=Fresh+Strawberry+Cupcakes+with+Almond+Buttercream&amp;bodytext=%0D%0AI+have+been+craving+a+good+strawberry+cupcake%3B+however%2C+all+store+bought+mixes+have+very+little+flavor+and+lots+of+dyes.+And+most+recipes+for+%22scratch%22+cakes+call+for+jello+%28again...we+can%27t+have+the+dye%29.+%C2%A0So+I+decided+it+was+time+to+tackle+this+recipe+and+see+what+I+could+come+up+with.%0D%0A%0D%0AOur+family+met+at+our+loc" title="Digg this post : Fresh Strawberry Cupcakes with Almond Buttercream" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-136px 0px" class="image-16" width="16" alt="digg"/> <span class="head">Digg this post</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2012%2F01%2Ffresh-strawberry-cupcakes%2F&amp;t=Fresh+Strawberry+Cupcakes+with+Almond+Buttercream" title="Recommend this post : Fresh Strawberry Cupcakes with Almond Buttercream on Facebook" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-187px 0px" class="image-16" width="16" alt="facebook"/> <span class="head">Recommend on Facebook</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2012%2F01%2Ffresh-strawberry-cupcakes%2F&amp;title=Fresh+Strawberry+Cupcakes+with+Almond+Buttercream" title="Share this post : Fresh Strawberry Cupcakes with Almond Buttercream with Stumblers" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-833px 0px" class="image-16" width="16" alt="stumble"/> <span class="head">Share with Stumblers</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.tumblr.com/share?v=3&amp;u=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2012%2F01%2Ffresh-strawberry-cupcakes%2F&amp;t=Fresh+Strawberry+Cupcakes+with+Almond+Buttercream" title="Tumblr. this post : Fresh Strawberry Cupcakes with Almond Buttercream " ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-884px 0px" class="image-16" width="16" alt="tumblr"/> <span class="head">Tumblr it</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://twitter.com/home/?status=Fresh+Strawberry+Cupcakes+with+Almond+Buttercream+-+http%3A%2F%2Fbit.ly%2FAAgrnE VIA+%40myfamilytable" title="Tweet this post : Fresh Strawberry Cupcakes with Almond Buttercream on Twitter" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-901px 0px" class="image-16"  width="16"  alt="twitter"/> <span class="head">Tweet about it</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://buzz.yahoo.com/buzz?targetUrl=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2012%2F01%2Ffresh-strawberry-cupcakes%2F" title="Buzz up this post : Fresh Strawberry Cupcakes with Almond Buttercream " ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-1020px 0px" class="image-16" width="16" alt="yahoo_buzz"/> <span class="head">Buzz it up</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.print();" title="Print this post : Fresh Strawberry Cupcakes with Almond Buttercream for reading later" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-714px 0px" class="image-16" width="16" alt="print"/> <span class="head">Print for later</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.bookMark('http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2012%2F01%2Ffresh-strawberry-cupcakes%2F', 'Fresh+Strawberry+Cupcakes+with+Almond+Buttercream', BrowserDetect.browser);" title="Bookmark this post : Fresh Strawberry Cupcakes with Almond Buttercream" ><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-51px 0px" class="image-16" width="16" alt="bookmark"/> <span class="head">Bookmark in Browser</span></a></li><li class="iconOnly"><a rel="_self" href="mailto:?subject=Around%20My%20Family%20Table%20:%20Fresh%20Strawberry%20Cupcakes%20with%20Almond%20Buttercream&amp;body=Here%20is%20a%20link%20to%20a%20site%20I%20really%20like.%20%20%20http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/" title="Tell a friend about this post : Fresh Strawberry Cupcakes with Almond Buttercream "><img src="http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/images/blank.gif" height="16"  width="16" style="background: transparent url(http://www.aroundmyfamilytable.com/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-170px 0px" class="image-16"  alt="email" /> <span class="head">Tell a friend</span></a></li></ul><div class="clean"></div> </div><div style="padding: 10px 0 "  class="interactive_bottom"><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2012%2F01%2Ffresh-strawberry-cupcakes%2F&amp;text=Fresh Strawberry Cupcakes with Almond Buttercream&amp;count=none&amp;lang=&amp;via=myfamilytable  " style="width:0px; height:31px;"></iframe><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.aroundmyfamilytable.com%2F2012%2F01%2Ffresh-strawberry-cupcakes%2F&amp;layout=standard&amp;show_faces=false&amp;width=0&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=31" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:0px; height:31px;" allowTransparency="true"></iframe></div><!--<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/"
+    dc:identifier="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/"
+    dc:title="Fresh Strawberry Cupcakes with Almond Buttercream"
+    trackback:ping="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/trackback/" />
+</rdf:RDF>-->
+		</div><!-- end .entry-content -->
+		<div class="post-meta"><span class="categories">Filed Under: <a rel="nofollow" href="http://www.aroundmyfamilytable.com/category/recipe/" title="View all posts in recipe" rel="category tag">recipe</a></span>  <span class="tags">Tagged With: <a href="http://www.aroundmyfamilytable.com/tag/baking/" rel="tag">baking</a>, <a href="http://www.aroundmyfamilytable.com/tag/cupcakes/" rel="tag">cupcakes</a>, <a href="http://www.aroundmyfamilytable.com/tag/dessert/" rel="tag">dessert</a>, <a href="http://www.aroundmyfamilytable.com/tag/strawberry/" rel="tag">strawberry</a></span> </div><div class="after-post-ad"></div>
+	</div><!-- end .postclass -->
+			<div id="comments">
+			<h3>Comments</h3>			<ol class="comment-list">
+				
+	<li class="comment even thread-even depth-1" id="comment-11680">
+
+		
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/e27dd2d2aae7529010687d98a6df1a1c?s=48&amp;d=http%3A%2F%2Fwww.aroundmyfamilytable.com%2Fwp-includes%2Fimages%2Fblank.gif&amp;r=G' class='avatar avatar-48 photo' height='48' width='48' />			<cite class="fn"><a href='http://www.smokedngrilled.com' rel='external nofollow' class='url'>Curt</a></cite> <span class="says">says:</span>	 	</div><!-- end .comment-author -->
+
+		<div class="comment-meta commentmetadata">
+			<a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11680">January 31, 2012 at 7:35 am</a>
+					</div><!-- end .comment-meta -->
+
+		<div class="comment-content">
+			
+			<p>Yum, almond buttercream! I&#8217;ll bet that&#8217;s delicious with strawberry!</p>
+		</div><!-- end .comment-content -->
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11680#respond' onclick='return addComment.moveForm("comment-11680", "11680", "respond", "3537")'>Reply</a>		</div>
+
+		</li>
+
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-11681">
+
+		
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/73f19ae88e6a65f85c7a1fe5b5327a89?s=48&amp;d=http%3A%2F%2Fwww.aroundmyfamilytable.com%2Fwp-includes%2Fimages%2Fblank.gif&amp;r=G' class='avatar avatar-48 photo' height='48' width='48' />			<cite class="fn"><a href='http://www.frugalwannabecooks.com' rel='external nofollow' class='url'>Bibi</a></cite> <span class="says">says:</span>	 	</div><!-- end .comment-author -->
+
+		<div class="comment-meta commentmetadata">
+			<a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11681">January 31, 2012 at 7:52 am</a>
+					</div><!-- end .comment-meta -->
+
+		<div class="comment-content">
+			
+			<p>They look so delicious&#8230;..I am very excited about the almond buttercream and can&#8217;t wait to try it.<br />
+<span class="cluv">Bibi recently posted..<a class="a9504abc46 11681" rel="nofollow" href="http://www.frugalwannabecooks.com/2012/01/turkey-bacon-tomato-stew.html">Turkey Bacon &amp; Tomato Stew</a><span class="heart_tip_box"><img class="heart_tip u 11681" alt="My Profile" style="border:0" width="16" height="14" src="http://www.aroundmyfamilytable.com/wp-content/plugins/commentluv/images/littleheart.gif"/></span></span></p>
+		</div><!-- end .comment-content -->
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11681#respond' onclick='return addComment.moveForm("comment-11681", "11681", "respond", "3537")'>Reply</a>		</div>
+
+		</li>
+
+	<li class="comment even thread-even depth-1" id="comment-11682">
+
+		
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/5ec6bbc00248c698369b1f732e381630?s=48&amp;d=http%3A%2F%2Fwww.aroundmyfamilytable.com%2Fwp-includes%2Fimages%2Fblank.gif&amp;r=G' class='avatar avatar-48 photo' height='48' width='48' />			<cite class="fn"><a href='http://spabettie.com' rel='external nofollow' class='url'>Kristina</a></cite> <span class="says">says:</span>	 	</div><!-- end .comment-author -->
+
+		<div class="comment-meta commentmetadata">
+			<a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11682">January 31, 2012 at 8:21 am</a>
+					</div><!-- end .comment-meta -->
+
+		<div class="comment-content">
+			
+			<p>these look beautiful and sound great &#8211; especially being scratch made! thanks for sharing.<br />
+<span class="cluv">Kristina recently posted..<a class="01e7deffd4 11682" rel="nofollow" href="http://feedproxy.google.com/~r/Spabettie/~3/rVGMQObjAFo/">buffalo dip three ways</a><span class="heart_tip_box"><img class="heart_tip u 11682" alt="My Profile" style="border:0" width="16" height="14" src="http://www.aroundmyfamilytable.com/wp-content/plugins/commentluv/images/littleheart.gif"/></span></span></p>
+		</div><!-- end .comment-content -->
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11682#respond' onclick='return addComment.moveForm("comment-11682", "11682", "respond", "3537")'>Reply</a>		</div>
+
+		</li>
+
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-11685">
+
+		
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/ddc98da8c57012d134a2329b1e51ea4c?s=48&amp;d=http%3A%2F%2Fwww.aroundmyfamilytable.com%2Fwp-includes%2Fimages%2Fblank.gif&amp;r=G' class='avatar avatar-48 photo' height='48' width='48' />			<cite class="fn"><a href='http://msenplace.blogspot.com/' rel='external nofollow' class='url'>Michelle</a></cite> <span class="says">says:</span>	 	</div><!-- end .comment-author -->
+
+		<div class="comment-meta commentmetadata">
+			<a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11685">January 31, 2012 at 8:40 am</a>
+					</div><!-- end .comment-meta -->
+
+		<div class="comment-content">
+			
+			<p>Almond Buttercream sounds delicious!  Also like the filling.<br />
+<span class="cluv">Michelle recently posted..<a class="13df6f855e 11685" rel="nofollow" href="http://msenplace.blogspot.com/2012/01/see-ya-in-gumbo-16-potluck.html">See Ya In the Gumbo! # 16 (Potluck)</a><span class="heart_tip_box"><img class="heart_tip u 11685" alt="My Profile" style="border:0" width="16" height="14" src="http://www.aroundmyfamilytable.com/wp-content/plugins/commentluv/images/littleheart.gif"/></span></span></p>
+		</div><!-- end .comment-content -->
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11685#respond' onclick='return addComment.moveForm("comment-11685", "11685", "respond", "3537")'>Reply</a>		</div>
+
+		</li>
+
+	<li class="comment even thread-even depth-1" id="comment-11687">
+
+		
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/e87f032c4c832dae7b8492c056be9c1a?s=48&amp;d=http%3A%2F%2Fwww.aroundmyfamilytable.com%2Fwp-includes%2Fimages%2Fblank.gif&amp;r=G' class='avatar avatar-48 photo' height='48' width='48' />			<cite class="fn"><a href='http://brousehousemouse.blogspot.com/' rel='external nofollow' class='url'>Lori B</a></cite> <span class="says">says:</span>	 	</div><!-- end .comment-author -->
+
+		<div class="comment-meta commentmetadata">
+			<a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11687">January 31, 2012 at 9:11 am</a>
+					</div><!-- end .comment-meta -->
+
+		<div class="comment-content">
+			
+			<p>Hurray!  Perfect timing because I wanted to make my hubby a treat for Valentines Day and he loves strawberries.  So these will be a big hit for sure.  Thank you very much!</p>
+		</div><!-- end .comment-content -->
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11687#respond' onclick='return addComment.moveForm("comment-11687", "11687", "respond", "3537")'>Reply</a>		</div>
+
+		</li>
+
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-11688">
+
+		
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/9d5f82798c9a2866f3f4f354ee4fd7b9?s=48&amp;d=http%3A%2F%2Fwww.aroundmyfamilytable.com%2Fwp-includes%2Fimages%2Fblank.gif&amp;r=G' class='avatar avatar-48 photo' height='48' width='48' />			<cite class="fn"><a href='http://www.nextdaycatering.co.uk' rel='external nofollow' class='url'>Catering Supplies</a></cite> <span class="says">says:</span>	 	</div><!-- end .comment-author -->
+
+		<div class="comment-meta commentmetadata">
+			<a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11688">January 31, 2012 at 9:40 am</a>
+					</div><!-- end .comment-meta -->
+
+		<div class="comment-content">
+			
+			<p>Will this will do for the wife Almond Buttercream  well I never even gave it a thought. Yum!</p>
+		</div><!-- end .comment-content -->
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11688#respond' onclick='return addComment.moveForm("comment-11688", "11688", "respond", "3537")'>Reply</a>		</div>
+
+		</li>
+
+	<li class="comment even thread-even depth-1" id="comment-11690">
+
+		
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/396447c09545aeed4b352b7cd3cbf5a8?s=48&amp;d=http%3A%2F%2Fwww.aroundmyfamilytable.com%2Fwp-includes%2Fimages%2Fblank.gif&amp;r=G' class='avatar avatar-48 photo' height='48' width='48' />			<cite class="fn"><a href='http://www.sweettartbeauty.com' rel='external nofollow' class='url'>Danielle</a></cite> <span class="says">says:</span>	 	</div><!-- end .comment-author -->
+
+		<div class="comment-meta commentmetadata">
+			<a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11690">January 31, 2012 at 10:27 am</a>
+					</div><!-- end .comment-meta -->
+
+		<div class="comment-content">
+			
+			<p>I will have to try these soon!! I love cupcakes but for some reason I get sick when I get store bought cupcakes <img src='http://www.aroundmyfamilytable.com/wp-includes/images/smilies/icon_sad.gif' alt=':(' class='wp-smiley' /> </p>
+		</div><!-- end .comment-content -->
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11690#respond' onclick='return addComment.moveForm("comment-11690", "11690", "respond", "3537")'>Reply</a>		</div>
+
+		</li>
+
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-11694">
+
+		
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/eec804d152b3ac8ec3b965f13bc5f186?s=48&amp;d=http%3A%2F%2Fwww.aroundmyfamilytable.com%2Fwp-includes%2Fimages%2Fblank.gif&amp;r=G' class='avatar avatar-48 photo' height='48' width='48' />			<cite class="fn"><a href='http://www.thatsmykindofparty.com' rel='external nofollow' class='url'>meredith</a></cite> <span class="says">says:</span>	 	</div><!-- end .comment-author -->
+
+		<div class="comment-meta commentmetadata">
+			<a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11694">January 31, 2012 at 12:15 pm</a>
+					</div><!-- end .comment-meta -->
+
+		<div class="comment-content">
+			
+			<p>These look yummy &#8211; I am going to make the strawberry, chocolate layered cupcake (all over pinterest) and try this!  thanks</p>
+		</div><!-- end .comment-content -->
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11694#respond' onclick='return addComment.moveForm("comment-11694", "11694", "respond", "3537")'>Reply</a>		</div>
+
+		</li>
+
+	<li class="comment even thread-even depth-1" id="comment-11697">
+
+		
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/204bb8226fe4d012cfbac0f0a6b3a5c9?s=48&amp;d=http%3A%2F%2Fwww.aroundmyfamilytable.com%2Fwp-includes%2Fimages%2Fblank.gif&amp;r=G' class='avatar avatar-48 photo' height='48' width='48' />			<cite class="fn"><a href='http://jolynccc.wordpress.com' rel='external nofollow' class='url'>jo-lyn's cup cakes n' candies</a></cite> <span class="says">says:</span>	 	</div><!-- end .comment-author -->
+
+		<div class="comment-meta commentmetadata">
+			<a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11697">January 31, 2012 at 1:45 pm</a>
+					</div><!-- end .comment-meta -->
+
+		<div class="comment-content">
+			
+			<p>They look great! I love baking from scratch and I feel it is a must for my business.  No one wants to pay for cupcakes made from a box, at least I wouldn&#8217;t!!   =)<br />
+<span class="cluv">jo-lyn&#8217;s cup cakes n&#8217; candies recently posted..<a class="6b9fa7b8b8 11697" rel="nofollow" href="http://jolynccc.wordpress.com/2012/01/30/711/">Honey Chicken…nom nom nom</a><span class="heart_tip_box"><img class="heart_tip u 11697" alt="My Profile" style="border:0" width="16" height="14" src="http://www.aroundmyfamilytable.com/wp-content/plugins/commentluv/images/littleheart.gif"/></span></span></p>
+		</div><!-- end .comment-content -->
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11697#respond' onclick='return addComment.moveForm("comment-11697", "11697", "respond", "3537")'>Reply</a>		</div>
+
+		</li>
+
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-11703">
+
+		
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/587f6872bc35b367d4dd18a8a86ca636?s=48&amp;d=http%3A%2F%2Fwww.aroundmyfamilytable.com%2Fwp-includes%2Fimages%2Fblank.gif&amp;r=G' class='avatar avatar-48 photo' height='48' width='48' />			<cite class="fn"><a href='http://joyjoycreativeoutlet.blogspot.com' rel='external nofollow' class='url'>Joy</a></cite> <span class="says">says:</span>	 	</div><!-- end .comment-author -->
+
+		<div class="comment-meta commentmetadata">
+			<a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11703">February 1, 2012 at 3:10 pm</a>
+					</div><!-- end .comment-meta -->
+
+		<div class="comment-content">
+			
+			<p>The cupcakes look wonderful.  I just saw you are attending camp blogaway.  I hope to see you.</p>
+		</div><!-- end .comment-content -->
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11703#respond' onclick='return addComment.moveForm("comment-11703", "11703", "respond", "3537")'>Reply</a>		</div>
+
+		<ul class='children'>
+
+	<li class="comment byuser comment-author-wendy bypostauthor even depth-2" id="comment-11704">
+
+		
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/810eff43ddacb05f026667bb9f686548?s=48&amp;d=http%3A%2F%2Fwww.aroundmyfamilytable.com%2Fwp-includes%2Fimages%2Fblank.gif&amp;r=G' class='avatar avatar-48 photo' height='48' width='48' />			<cite class="fn"><a href='http://www.aroundmyfamilytable.com' rel='external nofollow' class='url'>Wendy</a></cite> <span class="says">says:</span>	 	</div><!-- end .comment-author -->
+
+		<div class="comment-meta commentmetadata">
+			<a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11704">February 1, 2012 at 3:25 pm</a>
+					</div><!-- end .comment-meta -->
+
+		<div class="comment-content">
+			
+			<p>Awesome!  I hope to see you too.  Sounds like it will be a ton of fun!</p>
+		</div><!-- end .comment-content -->
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11704#respond' onclick='return addComment.moveForm("comment-11704", "11704", "respond", "3537")'>Reply</a>		</div>
+
+		</li>
+</ul>
+</li>
+
+	<li class="comment odd alt thread-even depth-1" id="comment-11710">
+
+		
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/5145a03e77902425dfaf99f1359269b5?s=48&amp;d=http%3A%2F%2Fwww.aroundmyfamilytable.com%2Fwp-includes%2Fimages%2Fblank.gif&amp;r=G' class='avatar avatar-48 photo' height='48' width='48' />			<cite class="fn"><a href='http://fb' rel='external nofollow' class='url'>Debra Wagner</a></cite> <span class="says">says:</span>	 	</div><!-- end .comment-author -->
+
+		<div class="comment-meta commentmetadata">
+			<a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11710">February 3, 2012 at 5:51 am</a>
+					</div><!-- end .comment-meta -->
+
+		<div class="comment-content">
+			
+			<p>Wow they looks incredible! yum</p>
+		</div><!-- end .comment-content -->
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11710#respond' onclick='return addComment.moveForm("comment-11710", "11710", "respond", "3537")'>Reply</a>		</div>
+
+		</li>
+
+	<li class="comment even thread-odd thread-alt depth-1" id="comment-11711">
+
+		
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/597e465211cd823ba94711ad6cccddaa?s=48&amp;d=http%3A%2F%2Fwww.aroundmyfamilytable.com%2Fwp-includes%2Fimages%2Fblank.gif&amp;r=G' class='avatar avatar-48 photo' height='48' width='48' />			<cite class="fn"><a href='http://www.yoshiblueblog.com/' rel='external nofollow' class='url'>Yoshi Blue</a></cite> <span class="says">says:</span>	 	</div><!-- end .comment-author -->
+
+		<div class="comment-meta commentmetadata">
+			<a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11711">February 3, 2012 at 1:47 pm</a>
+					</div><!-- end .comment-meta -->
+
+		<div class="comment-content">
+			
+			<p>Thanks for this strawberry cupcakes with strawberry filling and almond buttercream recipe.  I think these could be a good choice for Valentine&#8217;s Day.</p>
+		</div><!-- end .comment-content -->
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11711#respond' onclick='return addComment.moveForm("comment-11711", "11711", "respond", "3537")'>Reply</a>		</div>
+
+		</li>
+
+	<li class="comment odd alt thread-even depth-1" id="comment-11731">
+
+		
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/522068502f8c5ebb88afb19233150271?s=48&amp;d=http%3A%2F%2Fwww.aroundmyfamilytable.com%2Fwp-includes%2Fimages%2Fblank.gif&amp;r=G' class='avatar avatar-48 photo' height='48' width='48' />			<cite class="fn"><a href='http://www.mintascreations.blogspot.com/' rel='external nofollow' class='url'>Minta</a></cite> <span class="says">says:</span>	 	</div><!-- end .comment-author -->
+
+		<div class="comment-meta commentmetadata">
+			<a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11731">February 7, 2012 at 7:32 am</a>
+					</div><!-- end .comment-meta -->
+
+		<div class="comment-content">
+			
+			<p>I definitely want to try this.  looks so yummy!<br />
+Minta</p>
+		</div><!-- end .comment-content -->
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11731#respond' onclick='return addComment.moveForm("comment-11731", "11731", "respond", "3537")'>Reply</a>		</div>
+
+		</li>
+
+	<li class="comment even thread-odd thread-alt depth-1" id="comment-11732">
+
+		
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/522068502f8c5ebb88afb19233150271?s=48&amp;d=http%3A%2F%2Fwww.aroundmyfamilytable.com%2Fwp-includes%2Fimages%2Fblank.gif&amp;r=G' class='avatar avatar-48 photo' height='48' width='48' />			<cite class="fn"><a href='http://www.mintascreations.blogspot.com/' rel='external nofollow' class='url'>Minta</a></cite> <span class="says">says:</span>	 	</div><!-- end .comment-author -->
+
+		<div class="comment-meta commentmetadata">
+			<a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11732">February 7, 2012 at 7:54 am</a>
+					</div><!-- end .comment-meta -->
+
+		<div class="comment-content">
+			
+			<p>This looks yummy!<br />
+Minta</p>
+		</div><!-- end .comment-content -->
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11732#respond' onclick='return addComment.moveForm("comment-11732", "11732", "respond", "3537")'>Reply</a>		</div>
+
+		</li>
+			</ol>
+			<div class="navigation">
+				<div class="alignleft"></div>
+				<div class="alignright"></div>
+			</div>
+		</div><!--end #comments-->
+				<div id="pings">
+			<h3>Trackbacks</h3>			<ol class="ping-list">
+						<li class="pingback even thread-even depth-1" id="comment-11722">
+				<div id="div-comment-11722" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://www.ourfamilyworld.com/2012/02/06/win-140-amazon-gift-card/' rel='external nofollow' class='url'>Pin it, Win it : $140 Amazon Gift Card - Our Family World</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11722">
+			February 6, 2012 at 9:00 pm</a>		</div>
+
+		<p>[...] Fresh Strawberry Cupcakes with Almond Buttercream [...]</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11722#respond' onclick='return addComment.moveForm("div-comment-11722", "11722", "respond", "3537")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-11723">
+				<div id="div-comment-11723" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://stillblondeafteralltheseyears.com/2012/02/pinterest-giveaway/' rel='external nofollow' class='url'>Pinterest Giveaway -- Need an invite?</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11723">
+			February 6, 2012 at 9:03 pm</a>		</div>
+
+		<p>[...] Fresh Strawberry Cupcakes with Almond Buttercream [...]</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11723#respond' onclick='return addComment.moveForm("div-comment-11723", "11723", "respond", "3537")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="pingback even thread-even depth-1" id="comment-11724">
+				<div id="div-comment-11724" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://www.aboutamom.com/2012/02/pin-it-to-win-it-giveaway-round-2.html' rel='external nofollow' class='url'>Pin It To Win It Giveaway Round 2 - About A Mom</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11724">
+			February 6, 2012 at 9:59 pm</a>		</div>
+
+		<p>[...] Fresh Strawberry Cupcakes with Almond Buttercream [...]</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11724#respond' onclick='return addComment.moveForm("div-comment-11724", "11724", "respond", "3537")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-11725">
+				<div id="div-comment-11725" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://www.simplystacie.net/2012/02/pin-it-to-win-it-giveaway-win-140-amazon-gc-ww/' rel='external nofollow' class='url'>Pin It to Win It Giveaway | Win 0 Amazon GC (WW) - Simply Stacie</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11725">
+			February 6, 2012 at 10:01 pm</a>		</div>
+
+		<p>[...] Fresh Strawberry Cupcakes with Almond Buttercream [...]</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11725#respond' onclick='return addComment.moveForm("div-comment-11725", "11725", "respond", "3537")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="pingback even thread-even depth-1" id="comment-11726">
+				<div id="div-comment-11726" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://sweeptight.com/2012/02/pin-it-to-win-it.html' rel='external nofollow' class='url'>Pin It to Win It Giveaway - Enter to Win $140 in Amazon Gift Codes | Sweep Tight</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11726">
+			February 6, 2012 at 10:01 pm</a>		</div>
+
+		<p>[...] Fresh Strawberry Cupcakes with Almond Buttercream [...]</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11726#respond' onclick='return addComment.moveForm("div-comment-11726", "11726", "respond", "3537")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-11727">
+				<div id="div-comment-11727" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://dearcrissy.com/pin-win-140-amazon-gc-giveaway/' rel='external nofollow' class='url'>Pin It To Win It: $140 Amazon GC #Giveaway | Dear Crissy Mom Blog</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11727">
+			February 6, 2012 at 10:02 pm</a>		</div>
+
+		<p>[...] Fresh Strawberry Cupcakes with Almond Buttercream [...]</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11727#respond' onclick='return addComment.moveForm("div-comment-11727", "11727", "respond", "3537")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="pingback even thread-even depth-1" id="comment-11728">
+				<div id="div-comment-11728" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://celebrating-family.com/2012/02/06/pin-it-to-win-it-giveaway-2/' rel='external nofollow' class='url'>Pin It to Win It Giveaway (0 Amazon)</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11728">
+			February 6, 2012 at 10:37 pm</a>		</div>
+
+		<p>[...] Fresh Strawberry Cupcakes with Almond Buttercream [...]</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11728#respond' onclick='return addComment.moveForm("div-comment-11728", "11728", "respond", "3537")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-11730">
+				<div id="div-comment-11730" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://www.thefrugalette.com/2012/02/pin-it-to-win-it-giveaway-27-221/' rel='external nofollow' class='url'>Pin It To Win It Giveaway 2/7-2/21 | TheFrugalette</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.aroundmyfamilytable.com/2012/01/fresh-strawberry-cupcakes/#comment-11730">
+			February 7, 2012 at 6:32 am</a>		</div>
+
+		<p>[...] Fresh Strawberry Cupcakes with Almond Buttercream [...]</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/2012/01/fresh-strawberry-cupcakes/?replytocom=11730#respond' onclick='return addComment.moveForm("div-comment-11730", "11730", "respond", "3537")'>Reply</a>		</div>
+				</div>
+		</li>
+			</ol>
+		</div><!-- end #pings -->
+										<div id="respond">
+				<h3 id="reply-title">Speak Your Mind <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2012/01/fresh-strawberry-cupcakes/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://www.aroundmyfamilytable.com/wp-comments-post.php" method="post" id="commentform">
+																										<p class="comment-form-author"><input id="author" name="author" type="text" value="" size="30" tabindex="1" aria-required="true" /><label for="author">Name</label> <span class="required">*</span></p><!-- #form-section-author .form-section -->
+<p class="comment-form-email"><input id="email" name="email" type="text" value="" size="30" tabindex="2" aria-required="true" /><label for="email">Email</label> <span class="required">*</span></p><!-- #form-section-email .form-section -->
+<p class="comment-form-url"><input id="url" name="url" type="text" value="" size="30" tabindex="3" /><label for="url">Website</label></p><!-- #form-section-url .form-section -->
+												<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" tabindex="4" aria-required="true"></textarea></p><!-- #form-section-comment .form-section -->												<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='3537' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						<p id="gasp_p" style="clear:both;"></p><script type="text/javascript">
+            //v1.01
+            var gasp_p = document.getElementById("gasp_p");
+            var gasp_cb = document.createElement("input");
+            var gasp_text = document.createTextNode(" Confirm you are NOT a spammer");
+            gasp_cb.type = "checkbox";
+            gasp_cb.id = "gasp_checkbox";
+            gasp_cb.name = "gasp_checkbox";
+            gasp_cb.style.width = "25px";
+            gasp_p.appendChild(gasp_cb);
+            gasp_p.appendChild(gasp_text);
+            var frm = gasp_cb.form;
+            frm.onsubmit = gasp_it;
+            function gasp_it(){
+            if(gasp_cb.checked != true){
+            alert("Please check the box to confirm that you are NOT a spammer");
+            return false;
+            }
+            return true;
+            }
+            </script>
+            <input type="hidden" id="gasp_email" name="gasp_email" value="" /><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="88cd5d2d26" /></p><input type="hidden" name="cl_post_title" id="cl_post_title"/><input type="hidden" name="cl_post_url" id="cl_post_url"/><input type="hidden" name="cl_prem" id="cl_prem"/><div id="commentluv"><div id="cl_messages"></div><input type="checkbox" id="doluv" name="doluv" /><span id="mylastpost"><img alt="CommentLuv badge" src="http://www.aroundmyfamilytable.com/wp-content/plugins/commentluv/images/CL91_default.png"/></span><span id="showmorespan"><img class="clarrow" id="showmore" src="http://www.aroundmyfamilytable.com/wp-content/plugins/commentluv/images/down-arrow.gif" alt="Show more posts" title="Show more posts" style="display:none;"/></span></div><div id="lastposts" style="display:none;"></div>					</form>
+							</div><!-- #respond -->
+						<!-- login button  -->
+<div id="div-175458888026420902" style="display:block;"></div>
+<br />
+<script type="text/javascript">
+  var FC_ELEMENT_ID = 'div-175458888026420902';	
+  GFC.fixUrls();
+  google.friendconnect.container.initOpenSocialApi({site: SITE_ID,onload: function(securityToken) { GFC.init(securityToken); }});
+</script>
+<!-- /login button  -->
+		</div><!-- end #content -->
+		<div id="sidebar" class="sidebar widget-area">
+<div id="search-3" class="widget widget_search"><div class="widget-wrap">
+		<form method="get" class="searchform" action="http://www.aroundmyfamilytable.com/" >
+			
+			<input type="text" value="Search this website &hellip;" name="s" class="s" onfocus="if (this.value == 'Search this website &hellip;') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search this website &hellip;';}" />
+			<input type="submit" class="searchsubmit" value="Search" />
+		</form>
+	</div></div>
+<div id="text-22" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">Connect with AMFT!</h4>
+			<div class="textwidget"><center><a href="http://feeds.feedburner.com/AroundMyFamilyTable"><img src="http://www.aroundmyfamilytable.com/wp-includes/images/mag/rss.png" alt="rss" /></a>
+<a href="http://www.facebook.com/aroundmyfamilytable"><img src="http://www.aroundmyfamilytable.com/wp-includes/images/mag/facebook.png" alt="facebook" /></a>
+<a href="http://www.twitter.com/myfamilytable"><img src="http://www.aroundmyfamilytable.com/wp-includes/images/mag/twitter.png" alt="twitter" /></a>
+<a href="http://feedburner.google.com/fb/a/mailverify?uri=AroundMyFamilyTable&amp;loc=en_US"><img src="http://www.aroundmyfamilytable.com/wp-includes/images/mag/mail.png" alt="e-mail" /></a><br />
+<a href="https://plus.google.com/b/110950122258732072601/"><img src="http://www.aroundmyfamilytable.com/wp-includes/images/mag/gplus.png" alt="google plus" /></a>
+<a href="http://www.tumblr.com/blog/aroundmyfamilytable"><img src="http://www.aroundmyfamilytable.com/wp-includes/images/mag/tumblr.png" alt="tumblr" /></a>
+<a href="http://pinterest.com/slingmama/"><img src="http://www.aroundmyfamilytable.com/wp-includes/images/mag/pintrest.png" alt="pintrest" /></a>
+<a href="http://networkedblogs.com/followblog.php?name=around_my_family_table#"><img src="http://www.aroundmyfamilytable.com/wp-includes/images/mag/networkedblogs.png" alt="networked blogs" /></a></center></div>
+		</div></div>
+<div id="text-18" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-3716571835575631";
+/* Sidebar */
+google_ad_slot = "2193695328";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</br>
+</br>
+</br>
+<center><a href="http://campblogaway.com" target=_blank><img src="http://campblogaway.com/2012CampBlogawayGoing.jpg" border="0" width="110" alt=Camp Blogaway"></a></center></div>
+		</div></div>
+<div id="text-20" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">Vote for AMFT! </h4>
+			<div class="textwidget"><center><a href="http://www.babble.com/best-recipes/dinner/top-100-food-mom-blog-2011-nominate-a-food-blog/" target="_blank" title="VOTE"><img alt="Around My Family Table" src="http://i3.photobucket.com/albums/y100/waoneal/badge_foodmombloggers_nominee.jpg" /></a></center>
+</br>
+<center><a href="http://www.cookingblogs.org" data-count="rank" data-size="small" data-id="1kqd93JILIXwa7v54wCjnQ" class="blognation-widget-element">cookingblogs.org</a><script type="text/javascript" src="http://www.blognation.com/bn/widget/bnscript.js?1kqd93JILIXwa7v54wCjnQ"></script></center>
+</br>
+<center><iframe src="http://rcm.amazon.com/e/cm?t=arou02-20&o=1&p=42&l=ur1&category=holiday&f=ifr" width="234" height="60" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe></center>
+
+
+</div>
+		</div></div>
+<div id="text-3" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">Grab a Button!</h4>
+			<div class="textwidget"><center><a href="http://www.aroundmyfamilytable.com/" title="Around My Family Table"><img alt="Around My Family Table" src="http://i3.photobucket.com/albums/y100/waoneal/buttonthree.gif" /></a></center>
+
+<center><textarea id="code-source" cols="30" rows="3" name="code-source"><a href="http://www.aroundmyfamilytable.com/" target="_blank" title="Around My Family Table"><img alt="Around My Family Table" src="http://i3.photobucket.com/albums/y100/waoneal/buttonthree.gif" /></a></textarea></center>
+
+<!-- Begin BlogFrog Widget --><script src="http://widget.theblogfrog.com/widgets/v2/custom/2012/01/quaker-ad-300x250.aspx?userid=38082"></script><!-- End BlogFrog Widget -->
+
+
+
+
+</div>
+		</div></div>
+<div id="text-25" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">Find AMFT Other Places!</h4>
+			<div class="textwidget"><center><script type="text/javascript">mbgc='f5f5f5';ww='260';mbc='*';bbc='3F79D5';bmobc='3b71c6';bbgc='4889F0';bmoc='3F79D5';bfc='FFFFFF';bmofc='ffffff';tlc='*';tc='6a6a6a';nc='6a6a6a';bc='6a6a6a';l='y';fs='16';fsb='13';bw='100';ff='2';pc='4889F0';b='s'; pid='110950122258732072601';</script><script type="text/javascript" src="http://widgetsplus.com/google_plus_widget.js"></script></center>
+
+
+<center><a href="http://www.eastvalleymomguide.com/" target="_blank" title="East Valley Mom Guide"><img alt=" East Valley Mom Guide " src="http://i3.photobucket.com/albums/y100/waoneal/EVMG_button.gif" /></a> </center></div>
+		</div></div>
+</div>
+	</div><!-- end #content-sidebar-wrap -->
+	</div><!-- end #inner -->	<div class="footer-widgets">
+		<div class="wrap">
+			<div class="footer-widgets-1 widget-area">
+				<div id="meta-4" class="widget widget_meta"><div class="widget-wrap"><h4 class="widgettitle">Meta</h4>
+			<ul>
+						<li><a rel="nofollow" rel="nofollow" href="http://www.aroundmyfamilytable.com/wp-login.php">Log in</a></li>
+			<li><a href="http://feeds.feedburner.com/AroundMyFamilyTable" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://www.aroundmyfamilytable.com/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+						</ul>
+</div></div>
+<div id="text-19" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20582039-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Start of Woopra Code -->
+<script type="text/javascript">
+function woopraReady(tracker) {
+    tracker.setDomain('aroundmyfamilytable.com');
+    tracker.setIdleTimeout(300000);
+    tracker.track();
+    return false;
+}
+(function() {
+    var wsc = document.createElement('script');
+    wsc.src = document.location.protocol+'//static.woopra.com/js/woopra.js';
+    wsc.type = 'text/javascript';
+    wsc.async = true;
+    var ssc = document.getElementsByTagName('script')[0];
+    ssc.parentNode.insertBefore(wsc, ssc);
+})();
+</script>
+<!-- End of Woopra Code --></div>
+		</div></div>
+ 
+			</div><!-- end .footer-widgets-1 -->
+			<div class="footer-widgets-2 widget-area">
+				<div id="text-11" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><center><marquee direction="up" behavior="scroll" style="width: 200px; height: 330px; font-size: 11px; background-color: #ffffcc; border-color: #dd6680; border-width: 2px; border-style: ridge;" scrollamount="2">
+</br>
+</br>
+<center><a title="Wendy on Foodista" href="http://www.foodista.com/profile/4STFY346/wendy" style="display: block; padding: 5px; border: 5px solid #C44F50; -moz-border-radius: 2px; -webkit-border-radius: 2px; background-color: #fff; width: 100px; text-align: center; text-indent: 0;"><img alt="Wendy on Foodista" src="http://cf.foodista.com/static/images/widget_logo_md.png" style="border: none; width: 84px; height: 18px; padding: 0; margin: 0;" /><img src="http://dyn.foodista.com/content/embed/z1.png?foodista_widget_4STFY346_4STFY346" style="display: none;" alt="Foodista"/></a></center>
+</br>
+</br>
+<center><a
+href="http://www.myblogspark.com/" target="_blank"><img src="http://www.myblogspark.com/images/MBSWebButton.jpg" alt="Blog Search" width="149" height="70" border="0" /></a></center>
+</br>
+</br>
+<center><a href="http://www.business2blogger.com/" target="_blank"><img src="http://business2blogger.com/wp-content/uploads/2010/01/b2bbutton111.png" alt="Business 2 Blogger" width="125" height="125" /></a></center>
+</br>
+</br>
+<center><a href="http://www.blogwithintegrity.com/"><img src="http://www.blogwithintegrity.com/badges/BWI_125sq.jpg" border="0" alt="BlogWithIntegrity.com" /></a></center>
+</br>
+</br>
+<center><a href="http://www.usfamilyguide.com/">
+<img src="http://www.usfamilyguide.com/graphics/USFGmemberbadge.png" width="125" height="175" alt="USFamilyGuide.com" /></a></center>
+</br>
+</br>
+</marquee></center>
+
+</div>
+		</div></div>
+ 
+			</div><!-- end .footer-widgets-2 -->
+			<div class="footer-widgets-3 widget-area">
+				<div id="text-9" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><center><script type="text/javascript" src="http://widget.foodieblogroll.com?BlogID=13279&StyleID=1"></script></center>
+
+</div>
+		</div></div>
+ 
+			</div><!-- end .footer-widgets-3 -->
+		</div><!-- end .wrap -->
+	</div><!-- end .footer-widgets -->
+	<div id="footer" class="footer"><div class="wrap"><p>Copyright &#xa9; 2012 &#xb7; All Rights Reserved &#xb7; Powered by <a href="http://wordpress.org" title="WordPress">WordPress</a><br /><a href="http://www.studiopress.com/themes/pretty" title="Pretty Young Thing Theme">Pretty Young Thing Theme</a> on <a href="http://www.studiopress.com/themes/genesis" title="Genesis Framework">Genesis Framework</a></p></div><!-- end .wrap --></div><!-- end #footer -->
+	<div class="footer-top">
+		<p><a href="#wrap">To the Top</a></p>
+	</div>
+	</div><!-- end #wrap -->
+<center><script type="text/javascript"><!--
+google_ad_client = "ca-pub-3716571835575631";
+/* Footer */
+google_ad_slot = "2370201605";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></center>
+<script type='text/javascript' src='http://www.aroundmyfamilytable.com/wp-content/themes/genesis/lib/js/menu/superfish.js?ver=1.4.8'></script>
+<script type='text/javascript' src='http://www.aroundmyfamilytable.com/wp-content/themes/genesis/lib/js/menu/superfish.args.js?ver=1.8.0'></script>
+</body>
+</html>

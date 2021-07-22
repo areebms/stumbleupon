@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<title>Grilled Cheese Academy</title>
+	<meta id="metatitle" name="title" content="Grilled Cheese Academy" />
+	<meta id="metadescription" name="description" content="The Grilled Cheese Academy is your source for everything grilled cheese, from new recipes to photography. Upload your own and share with your friends." />
+	<meta name="keywords" content="" />
+	
+	<link id="linkimage" type="image/jpeg" rel="image_src" href="/images/email/gca_logo.gif" />
+<link rel="stylesheet" type="text/css" href="/css/grilled.css">
+<link rel="stylesheet" type="text/css" href="/css/submit_gallery.css">
+<link rel="stylesheet" type="text/css" href="/css/print_recipe.css" media="print">
+
+<script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/xml/jsxml.php"></script>
+<script type="text/javascript" src="/js/xml2json.js"></script>
+<script type="text/javascript" src="/js/items.js"></script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-32138-25']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+<script type="text/javascript" src="/js/shine.js"></script>
+<script type="text/javascript" src="/js/swfobject.js"></script>
+
+<script type="text/javascript">
+	var simClick = [];
+		swfobject.embedSWF('/swf/audio.swf', 'flashaudio', '1', '1', '9', {}, {}, {'id':'flashaudio', 'name':'flashaudio'});
+</script>
+
+<![if gte ie 9]>
+<script type="text/javascript" src="http://use.typekit.com/cwn2rsv.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<![endif]>
+
+<!--[if lte ie 6]>
+<style type="text/css">
+	.pngfix { behavior: url(/pngfix/iepngfix.php) }
+</style>
+<script type="text/javascript" src="/pngfix/iepngfix_tilebg.js"></script>
+<![endif]-->
+
+</head>
+<body>
+<div style="display:none;"><img src="/images/email/gca_logo.gif" /></div><center>
+<div id="container"><a id="mainlogo" class="pngfix" href="#">mainlogo</a>
+	<div id="topheader">
+		<div id="topnav-container"><div id="topcontent"></div>
+			<div id="topleftnav">
+				<ul class="navitems">
+					<li class="sandwich"><a href="#" class="commonover" id="navdirectory">Sandwich Directory</a></li>
+					<li class="cheese"><a href="#" class="commonover" id="navindex">Cheese Index</a></li>
+				</ul>
+				<div style="clear:both;"></div>
+			</div>
+			<div id="toprightnav">
+				<ul class="navitems">
+					<!--li class="submit"><a href="#" id="linksubmit" class="commonover">Submit A Recipe</a></li>
+					<li class="gallery"><a href="#" id="linkgallery" class="commonover">Recipe Gallery</a></li-->
+					<li class="recipe_contest"><a href="#" id="linkrecipe_contest" class="commonover">2012 Grilled Cheese Recipe Contest</a></li>
+				</ul>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+	<div id="body">
+		<div id="directory" class="navdropdown">
+			<h2>Sandwich Directory</h2>
+			<!-- col 1 -->
+			<div class="navCol">
+				<div class="navColPad">
+					<a href="#" class="sandwichDirectoryLink commonover" rel="1"><h3>1. The Sergeant Pepper</h3></a>
+					Wisconsin Pepper Jack and Cheddar
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="2"><h3>2. The Pilgrim</h3></a>
+					Wisconsin Gouda
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="3"><h3>3. The Bavaria</h3></a>
+					Wisconsin Edam
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="4"><h3>4. The Nantucket</h3></a>
+					Wisconsin Cream Cheese and Aged Cheddar
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="5"><h3>5. The Buffalo Bill</h3></a>
+					Wisconsin Blue and Monterey Jack
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="6"><h3>6. The Flatiron</h3></a>
+					Wisconsin Brie
+				</div>
+			</div>
+			<!-- col 2 -->
+			<div class="navCol">
+				<div class="navColPad">
+					<a href="#" class="sandwichDirectoryLink commonover" rel="7"><h3>7. The Heartland</h3></a>
+					Wisconsin Aged Cheddar and Baby Swiss
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="8"><h3>8. The Perry</h3></a>
+					Wisconsin Blue
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="9"><h3>9. The Biloxi</h3></a>
+					Wisconsin Fontina
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="10"><h3>10. The Monroe</h3></a>
+					Wisconsin Limburger
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="11"><h3>11. The Lil’ Kahuna</h3></a>
+					Wisconsin Pepper Jack
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="12"><h3>12. The Sommerset</h3></a>
+					Wisconsin Chipotle Jack
+				</div>
+			</div>
+			<!-- col 3 -->
+			<div class="navCol">
+				<div class="navColPad">
+					<a href="#" class="sandwichDirectoryLink commonover" rel="13"><h3>13. The Appleton</h3></a>
+					Wisconsin Cheddar
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="14"><h3>14. The Marco</h3></a>
+					Wisconsin Provolone and Parmesan
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="15"><h3>15. The Verde</h3></a>
+					Wisconsin Feta
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="16"><h3>16. The Brasserie</h3></a>
+					Wisconsin Brie
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="17"><h3>17. The Dagwood</h3></a>
+					Wisconsin American Cheese and Sliced Swiss
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="18"><h3>18. The Benedict</h3></a>
+					Wisconsin Sharp Cheddar Cheese Spread and Gouda
+				</div>
+			</div>
+			<!-- col 4 -->
+			<div class="navColWide">
+				<div class="navColPad">
+					<a href="#" class="sandwichDirectoryLink commonover" rel="19"><h3>19. The Lisa Marie</h3></a>
+					Wisconsin Butterkäse
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="20"><h3>20. The Francesca</h3></a>
+					Wisconsin Fresh Mozzarella
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="21"><h3>21. The Dominique</h3></a>
+					Wisconsin Gorgonzola and Parmesan
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="22"><h3>22. The Athena</h3></a>
+					Wisconsin Feta
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="23"><h3>23. The Green Acre</h3></a>
+					Wisconsin Gouda
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="24"><h3>24. The Gibraltar</h3></a>
+					Wisconsin Kasseri
+				</div>
+			</div>
+			<!-- col 5 -->
+			<div class="navColWide noBorder">
+				<div class="navColPad">
+					<a href="#" class="sandwichDirectoryLink commonover" rel="25"><h3>25. The Big Sal</h3></a>
+					Wisconsin Asiago and Fresh Mozzarella
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="26"><h3>26. The Birchwood</h3></a>
+					Wisconsin Aged Brick and Cheddar
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="27"><h3>27. The Drake</h3></a>
+					Wisconsin Port Wine Cheese Spread
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="28"><h3>28. The Carnegie</h3></a>
+					Wisconsin Swiss
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="29"><h3>29. The Cheshire</h3></a>
+					Wisconsin Edam and Cheddar
+					
+					<a href="#" class="sandwichDirectoryLink commonover" rel="30"><h3>30. The Bianca</h3></a>
+					Wisconsin Mascarpone
+				</div>
+			</div>
+		</div><!-- / #directory -->
+		<div id="index" class="navdropdown">
+			<h2>Wisconsin Cheese Index</h2>
+			<!-- col 1 -->
+			<div class="navCol">
+				<div class="navColPad">
+					<a href="#" id="cheeseindex-american" class="cheesedirect commonover" rel="american"><h3>American</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="17" >17. The Dagwood</a>
+					
+					<a href="#" id="cheeseindex-asiago" class="cheesedirect commonover" rel="asiago"><h3>Asiago</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="25">25. The Big Sal</a>
+					
+					<a href="#" id="cheeseindex-blue" class="cheesedirect commonover" rel="blue"><h3>Blue</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="5">5. The Buffalo Bill</a><br />
+					<a href="#" class="cheeseIndexSandwich" rel="8">8. The Perry</a>
+					
+					
+					<a href="#" id="cheeseindex-agedbrick" class="cheesedirect commonover" rel="agedbrick"><h3>Brick <span style="text-transform: none;">(Aged)</span></h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="26">26. The Birchwood</a>
+					
+					<a href="#" id="cheeseindex-brie" class="cheesedirect commonover" rel="brie"><h3>Brie</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="6">6. The Flatiron</a><br />
+					<a href="#" class="cheeseIndexSandwich" rel="16">16. The Brasserie</a>
+					
+					<a href="#" id="cheeseindex-butterkase" class="cheesedirect commonover" rel="butterkase"><h3>Butterkäse</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="19">19. The Lisa Marie</a>
+				</div>
+			</div>
+			<!-- col 2 -->
+			<div class="navCol">
+				<div class="navColPad">
+					<a href="#" id="cheeseindex-cheddar" class="cheesedirect commonover" rel="cheddar"><h3>Cheddar</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="1">1. The Sergeant Pepper</a><br />
+					<a href="#" class="cheeseIndexSandwich" rel="13">13. The Appleton</a><br />
+					<a href="#" class="cheeseIndexSandwich" rel="26">26. The Birchwood</a><br />
+					<a href="#" class="cheeseIndexSandwich" rel="29">29. The Cheshire</a>
+					
+					<a href="#" id="cheeseindex-agedcheddar" class="cheesedirect commonover" rel="agedcheddar"><h3>Cheddar <span style="text-transform: none;">(Aged)</span></h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="4">4. The Nantucket</a><br />
+					<a href="#" class="cheeseIndexSandwich" rel="7">7. The Heartland</a><br />
+					
+					<a href="#" id="cheeseindex-cheddarspread" class="cheesedirect commonover" rel="cheddarspread"><h3>Cheddar Cheese Spread</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="18">18. The Benedict</a>
+					
+					<a href="#" id="cheeseindex-chipotlejack" class="cheesedirect commonover" rel="chipotlejack"><h3>Chipotle Jack</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="12">12. The Sommerset</a>
+					
+					<a href="#" id="cheeseindex-cream" class="cheesedirect commonover" rel="cream"><h3>Cream Cheese</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="4">4. The Nantucket</a>
+				</div>
+			</div>
+			<!-- col 3 -->
+			<div class="navCol">
+				<div class="navColPad">
+					<a href="#" id="cheeseindex-edam" class="cheesedirect commonover" rel="edam"><h3>Edam</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="3">3. The Bavaria</a><br />
+					<a href="#" class="cheeseIndexSandwich" rel="29">29. The Cheshire</a>
+					
+					<a href="#" id="cheeseindex-feta" class="cheesedirect commonover" rel="feta"><h3>Feta</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="15">15. The Verde</a><br />
+					<a href="#" class="cheeseIndexSandwich" rel="22">22. The Athena</a>
+					
+					<a href="#" id="cheeseindex-fontina" class="cheesedirect commonover" rel="fontina"><h3>Fontina</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="9">9. The Biloxi</a>
+					
+					<a href="#" id="cheeseindex-gorgonzola" class="cheesedirect commonover" rel="gorgonzola"><h3>Gorgonzola</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="21">21. The Dominique</a>
+					
+					<a href="#" id="cheeseindex-gouda" class="cheesedirect commonover" rel="gouda"><h3>Gouda</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="2">2. The Pilgrim</a><br />
+					<a href="#" class="cheeseIndexSandwich" rel="18">18. The Benedict</a><br />
+					<a href="#" class="cheeseIndexSandwich" rel="23">23. The Green Acre</a>
+				</div>
+			</div>
+			<!-- col 4 -->
+			<div class="navColWide">
+				<div class="navColPad">
+					<a href="#" id="cheeseindex-kasseri" class="cheesedirect commonover" rel="kasseri"><h3>Kasseri</h3><a/>
+					<a href="#" class="cheeseIndexSandwich" rel="24">24. The Gibraltar</a>
+				
+					<a href="#" id="cheeseindex-limburger" class="cheesedirect commonover" rel="limburger"><h3>Limburger</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="10">10. The Monroe</a>
+				
+					<a href="#" id="cheeseindex-mascarpone" class="cheesedirect commonover" rel="mascarpone"><h3>Mascarpone</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="30">30. The Bianca</a>
+					
+					<a href="#" id="cheeseindex-montereyjack" class="cheesedirect commonover" rel="montereyjack"><h3>Monterey Jack</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="5">5. The Buffalo Bill</a>
+					
+					<a href="#" id="cheeseindex-freshmozzarella" class="cheesedirect commonover" rel="freshmozzarella"><h3>Mozzarella <span style="text-transform: none;">(Fresh)</span></h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="20">20. The Francesca</a><br />
+					<a href="#" class="cheeseIndexSandwich" rel="25">25. The Big Sal</a>
+					
+					<a href="#" id="cheeseindex-parmesan" class="cheesedirect commonover" rel="parmesan"><h3>Parmesan</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="14">14. The Marco</a><br />
+					<a href="#" class="cheeseIndexSandwich" rel="21">21. The Dominique</a>
+				</div>
+			</div>
+			<!-- col 5 -->
+			<div class="navColWide noBorder">
+				<div class="navColPad">
+					<a href="#" id="cheeseindex-pepperjack" class="cheesedirect commonover" rel="pepperjack"><h3>Pepper Jack</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="1">1. The Sergeant Pepper</a><br />
+					<a href="#" class="cheeseIndexSandwich" rel="11">11. The Lil’ Kahuna</a>
+					
+					<a href="#" id="cheeseindex-portwinespread" class="cheesedirect commonover" rel="portwinespread"><h3>Port Wine Cheese Spread</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="27">27. The Drake</a>
+					
+					<a href="#" id="cheeseindex-provolone" class="cheesedirect commonover" rel="provolone"><h3>Provolone</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="14">14. The Marco</a>
+					
+					<a href="#" id="cheeseindex-swiss" class="cheesedirect commonover" rel="swiss"><h3>Swiss</h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="28">28. The Carnegie</a>
+					
+					<a href="#" id="cheeseindex-babyswiss" class="cheesedirect commonover" rel="babyswiss"><h3>Swiss <span style="text-transform: none;">(Baby)</span></h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="7">7. The Heartland</a>
+
+					<a href="#" id="cheeseindex-slicedswiss" class="cheesedirect commonover" rel="slicedswiss"><h3>Swiss <span style="text-transform: none;">(Processed)</span></h3></a>
+					<a href="#" class="cheeseIndexSandwich" rel="17">17. The Dagwood</a><br />
+				</div>
+			</div>
+		</div><!-- /#index -->
+
+		<div id="contentwrapper"><div id="whiteoverlay" class="contentcontainer"><img src="/images/ajax-loader.gif" id="slideloader"/></div>
+			<div id="homecontainer" class="contentcontainer" style="display:none;">
+				<div class="leftCol">
+					<div class="homeSlide-content">
+						<table cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td>
+									<div class="tooltip-popup">
+										<a href="http://www.eatwisconsincheese.com" target="_blank" class="tooltip"><img src="/images/wiCheeseLogo-home.png" border="0" alt="Wisconsin Cheese" /></a>
+										<em class="left">Continue the tastiness at eatwisconsincheese.com</em>
+									</div>
+								</td>
+								<td><img src="/images/homeWelcome.png" title="Welcome" border="0" class="welcomeCopy" /></td>
+								<td>
+									<a href="#" class="btn-viewSadwhiches-home" id="viewsandwiches">View Sandwiches</a>
+								</td>
+							</tr>
+						</table>
+					</div><!-- end homeSlide-content -->
+				</div>
+				<div class="rightCol">
+				
+													<div class="entryTitle">
+						<img src="/images/title-postContest.gif" title="The 2012 Grilled Cheese Recipe Contest" border="0" />
+					</div>
+					<div class="entryPic-home">
+						<img src="/images/contest-homeSandwhich-sm.jpg" border="0" alt="sandwich" />
+					</div>
+					<div class="entryContent-home">
+						<h4>All good things must come to an end.</h4>
+						The 2012 Grilled Cheese Recipe Contest<br />has officially ended. Please check back<br /> soon to view the winning entries.
+						<br /><br /><span class="footnote">(winners will be announced mid-august)</span>
+					</div>
+					<div style="clear: both;"></div>
+																								</div>
+				
+			</div><!-- end homecontainer -->
+			
+			
+			<div id="tipscontainer" class="contentcontainer" style="display:none;">
+				<div id="tipsprint" class="printme"><a href="/pdf/Grilled_Cheese_Tips.pdf" target="_blank">Print</a></div>
+				<div class="tooltip-popup" id="tipscheeselogo">
+					<a href="http://www.eatwisconsincheese.com" target="_blank" class="tooltip">
+						<img src="/images/wiCheeseLogo.png" style="width:77px;height:78px;" class="pngfix" border="0" alt="Wisconsin Cheese" />
+					</a>
+					<em style="left:-125px;" class="right">Continue the tastiness at eatwisconsincheese.com</em>
+				</div>
+				<div id="tipspacer"></div>
+				<div id="tipswrapper">
+					<div id="tipscap">
+						<a id="cheesetab" href="#" onclick="TipsController.focusTips('tipscheese');">Cheese Tips</a>
+						<a id="buttertab" href="#" onclick="TipsController.focusTips('tipsbread');">Bread &amp; Butter Tips</a>
+						<a id="cookingtab" href="#" onclick="TipsController.focusTips('tipscooking');">Cooking Tips</a>
+						<div style="clear:both;"></div>
+					</div>
+					<div id="tipscontentwrapper">
+						<div id="tipslanding" class="tipscontent">
+							<div id="tipslandingcontent">
+								<h2>Grilled Cheese Tips</h2>
+								Behold the tips from the world’s most renowned grilled cheese sandwich masters. Don’t just follow them. Live by them.							
+							</div>
+							<div class="tipslinkscontainer"><a href="javascript:TipsController.focusTips('tipscheese');">Begin ></a></div>
+						</div>
+						<div id="tipscheese" class="tipscontent">
+							<div class="tipwrapperpadding"><div class="tipwrapper"><div class="tips">
+								<div class="tip">
+									<span class="tipnumber">Tip No. 1</span><br />
+									<h2>TO SLICE OR NOT TO SLICE</h2>
+									Often it’s best to grate or shred the cheese. This promotes faster melting, as well as a smooth and more even melt. Of course, if a recipe calls for sliced cheese, go ahead and use sliced cheese.
+								</div>
+								<div class="tip">
+									<span class="tipnumber">Tip No. 2</span><br />
+									<h2>SLICING AND MELTING</h2>
+									It’s easier to slice and grate cheese when it’s cold. So what should you do? That’s right, slice and grate the cheese when it’s cold. Furthermore, cheese melts best when brought to room temperature. So what should you do? Correct! Melt the cheese after it’s brought to room temperature. Now you’re getting this.
+								</div>
+								<div class="tip">
+									<span class="tipnumber">Tip No. 3</span><br />
+									<h2>MORE IS BETTER</h2>
+									Don’t be shy. Pile on the cheese. There you go! Now pile on more. Also, expand your horizons by using several types of cheese at once, as well as unique toppings. Remember, Cheddar and American aren’t the only game in town.
+								</div>
+							</div></div></div>
+							<div class="tipslinkscontainer">
+								<a href="#" onclick="cheeseTips.previous();">&lt; Previous</a> | 
+								<a href="#" onclick="cheeseTips.next();">Next &gt;</a>
+							</div>
+						</div>
+						<div id="tipsbread" class="tipscontent">
+							<div class="tipwrapperpadding"><div class="tipwrapper"><div class="tips">
+								<div class="tip">
+									<span class="tipnumber">Tip No. 1</span><br />
+									<h2>USE THE REAL DEAL</h2>
+									Margarine and other butter wannabes win you no points. So only use real butter. When it comes to flavor and creating the ultimate golden toast for your sandwich, nothing compares to the real thing.
+								</div>
+								<div class="tip">
+									<span class="tipnumber">Tip No. 2</span><br />
+									<h2>SOFT IS GOOD</h2>
+									Soft butter rules supreme. Not only does it spread easily, but it also browns the bread more evenly. Simply put, always bring butter to room temperature before commencing grilling.
+								</div>
+								<div class="tip">
+									<span class="tipnumber">Tip No. 3</span><br />
+									<h2>USE YOUR IMAGINATION</h2>
+									White bread is not always the answer. Be creative. Use unique breads to create equally unique grilled cheese sandwiches.
+								</div>
+							</div></div></div>
+							<div class="tipslinkscontainer">
+								<a href="#" onclick="breadTips.previous();">&lt; Previous</a> | 
+								<a href="#" onclick="breadTips.next();">Next &gt;</a>
+							</div>
+						</div>
+						<div id="tipscooking" class="tipscontent">
+							<div class="tipwrapperpadding"><div class="tipwrapper"><div class="tips">
+								<div class="tip">
+									<span class="tipnumber">Tip No. 1</span><br />
+									<h2>SIZE MATTERS</h2>
+									Always use the right size skillet or pay the consequences. If you opt for a skillet that’s too small, your sandwich will cook too slowly and not evenly. Not good.
+								</div>
+								<div class="tip">
+									<span class="tipnumber">Tip No. 2</span><br />
+									<h2>FLIP. PRESS. REPEAT.</h2>
+									You want the cheese to spread evenly as it melts. So always press the sandwich with a spatula after you <br />flip it. Forgetting to do so is a telltale sign of a novice. <br />Obviously, open-faced grilled cheese sandwiches do not require flipping. 
+								</div>
+								<div class="tip">
+									<span class="tipnumber">Tip No. 3</span><br />
+									<h2>CAST OFF CAST IRON</h2>
+									Cast-iron pans and grilled cheese sandwiches are not friends. Always use a nonstick
+pan to minimize “stickage” (yes, we made up that word). Using a nonstick pan also makes cleanup easier.
+								</div>
+								<div class="tip">
+									<span class="tipnumber">Tip No. 4</span><br />
+									<h2>LOW AND STEADY</h2>
+									Be patient. Don’t grill over high heat. Not only will <br />the bread brown too fast, but the cheese will not melt completely. Always grill over low heat.
+								</div>
+							</div></div></div>
+							<div class="tipslinkscontainer">
+								<a href="#" onclick="cookingTips.previous();">&lt; Previous</a> | 
+								<a href="#" onclick="cookingTips.next();">Next &gt;</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="pantrycontainer" class="contentcontainer" style="display:none;">
+				<!-- Facebook content -->
+				<div class="pantryDefault">
+					<h1>Who Said You Can Have Just One Soul Mate?</h1>
+					<h2>Become a Grilled Cheese Academy Fan on Facebook.&reg;</h2>
+					<div class="rule"></div>
+						We come together for one purpose. To celebrate the almighty and ever so tasty<br /> grilled cheese sandwich. Do you share our love of this culinary classic? If so, become a<br /> Grilled Cheese Academy Fan on Facebook. We look forward to meeting you.
+					<div class="btnFindFBLrg"><a target="_blank" href="http://www.facebook.com/profile.php?id=222968865888" style="width:150px;height:54px;">Find Us On Facebook</a></div>
+					<div class="wmbLogo">
+						<div class="tooltip-popup">
+							<a href="http://www.eatwisconsincheese.com" target="_blank" class="tooltip" style="margin-left:65px;">
+							<img src="/images/wiCheeseLogo.png" style="width:77px;height:78px;" class="pngfix" border="0" alt="Wisconsin Cheese" />
+							</a>
+							<em style="left:-60px;" class="right">Continue the tastiness at eatwisconsincheese.com</em>
+						</div>
+					</div>
+			 	</div>
+			</div><!-- end pantry container -->
+			
+					
+			<div id="recipecontainer" class="detailcontainer contentcontainer" style="display:none;">
+				<div class="detailright">
+					<div class="detailprint">
+						<div class="printme"><a href="#" id="sandwichprint" target="_blank">Print</a></div>
+					</div>
+					<div class="detailrightleft" id="cookingdirections">
+						<h3>Cooking Directions</h3>
+					</div>
+					<div class="detailrightright">
+						<h3>Ingredients</h3>
+						<div style="margin-bottom: 5px;"><strong><small>No. of Servings: 4</small></strong></div>
+						<span id="ingredientlist">generic<br />
+						ingredients<br /></span>
+						<div class="tooltip-popup" style="margin-top:20px;">
+							<a href="http://www.eatwisconsincheese.com" target="_blank" class="tooltip">
+								<img src="/images/wiCheeseLogo.png" style="width:77px;height:78px;" class="pngfix" border="0" alt="Wisconsin Cheese" />
+							</a>
+							<em style="left:-65px;">Continue the tastiness at eatwisconsincheese.com</em>
+						</div>
+
+					</div>
+				</div>
+				<div class="detailleft">
+					<div class="detailleftcontent">
+						<h2 style="white-space:nowrap;"><a href="javascript:playVoice(Slideshow.sandwich.getAudio());"><img src="/images/audioIcon.gif" alt="audio" border="0" class="audioIcon" /><span id="sandwichlabel">Sandwich Label</span></a></h2>
+						<img id="sandwichmedium" src="" />
+						<div class="detailleftSubContent">
+							<span id="shortdescription">Short description</span><br />
+							<a href="#" id="sandwichcheeselink0"><img src="" alt="Cheese name" border="0" class="leftPic" id="sandwichcheese0" /></a><a href="#" id="sandwichcheeselink1"><img src="" alt="Cheese name" border="0" id="sandwichcheese1" /></a>
+						</div>
+					</div>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+			
+			
+			<div id="cheesecontainer0" class="detailcontainer contentcontainer" style="display:none;">
+				<div class="detailright">
+					<div class="detailprint">
+						<div class="printme"><a href="#" class="cheeseprint" target="_blank">Print</a></div>
+					</div>
+					<div class="detailrightleft">
+						<h3>Description</h3>
+						<span class="description"></span>
+
+						<p><strong>Flavor:</strong><br /> 
+						<span class="flavor"></span></p>
+						
+						<p><strong>Goes well with:</strong><br /> 
+						<span class="goeswith"></span></p>
+						
+						<p><strong>Pairs with:</strong><br />
+						<span class="pairswith"></span></p>
+					</div>
+					<div class="detailrightright relations"></div>
+				</div>
+				<div class="detailleft">
+					<div class="detailleftcontent">
+						<table>
+							<tr>
+								<td valign="bottom"><a href="javascript:playVoice(Controller.cheese.getAudio());"><img src="/images/audioIcon.gif" alt="audio" border="0" class="audioIcon" /></a></td>
+								<td valign="bottom"><h2 style="margin: 0;"><a href="javascript:playVoice(Controller.cheese.getAudio());"><span class="cheeseWI">Wisconsin</span><br /><span class="cheeselabel">Cheese Label</span></a></h2></td>
+							</tr>
+						</table>						
+						<img class="cheesemedium" src="" /><br />
+						<div class="tooltip-popup">
+							<a href="http://www.eatwisconsincheese.com" target="_blank" class="tooltip">
+								<script type="text/javascript">document.write('<img src="/images/wiCheeseLogo-left.png" border="0" style="width:208px;height:100px;" class="pngfix" alt="Wisconsin Cheese" />');</script>
+							</a>
+							<em style="left:3px;">Continue the tastiness at eatwisconsincheese.com</em>
+						</div>
+					</div>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+			
+			<div id="cheesecontainer1" class="detailcontainer contentcontainer" style="display:none;">
+				<div class="detailright">
+					<div class="detailprint">
+						<div class="printme"><a href="#" class="cheeseprint" target="_blank">Print</a></div>
+					</div>
+					<div class="detailrightleft">
+						<h3>Description</h3>
+						<span class="description"></span>
+
+						<p><strong>Flavor:</strong><br /> 
+						<span class="flavor"></span></p>
+						
+						<p><strong>Goes well with:</strong><br /> 
+						<span class="goeswith"></span></p>
+						
+						<p><strong>Pairs with:</strong><br />
+						<span class="pairswith"></span></p>
+					</div>
+					<div class="detailrightright relations"></div>
+				</div>
+				<div class="detailleft">
+					<div class="detailleftcontent">
+						<table>
+							<tr>
+								<td valign="bottom"><a href="javascript:playVoice(Controller.cheese.getAudio());"><img src="/images/audioIcon.gif" alt="audio" border="0" class="audioIcon" /></a></td>
+								<td valign="bottom"><h2 style="margin: 0;"><a href="javascript:playVoice(Controller.cheese.getAudio());"><span class="cheeseWI">Wisconsin</span><br /><span class="cheeselabel">Cheese Label</span></a></h2></td>
+							</tr>
+						</table>	
+						<img class="cheesemedium" src="" /><br />
+						<div class="tooltip-popup">
+							<a href="http://www.eatwisconsincheese.com" target="_blank" class="tooltip">
+								<script type="text/javascript">document.write('<img src="/images/wiCheeseLogo-left.png" border="0" style="width:208px;height:100px;" class="pngfix" alt="Wisconsin Cheese" />');</script>
+							</a>
+							<em style="left:3px;">Continue the tastiness at eatwisconsincheese.com</em>
+						</div>
+					</div>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+			
+			<div id="sendtofriendcontainer" class="contentcontainer" style="display:none;">
+				<div class="sendContent">
+					<form id="sendtofriendform">
+					<h1>Viva la Grilled Cheese Sandwich!</h1>
+					<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td>To: <input type="text" class="instructioninput formemail" id="recipientemail" name="recipientemail" value="Email Address" /></td>
+							<td>From: <input type="text" class="instructioninput formemail" id="senderemail" name="senderemail" value="Email Address" /></td>
+							<td><input type="text" class="instructioninput formtext" id="sendername" name="sendername" value="Your Name" /></td>
+						</tr>
+						<tr>
+							<td colspan="3" class="info">
+							Hi <input type="text" class="instructioninput formtext" id="recipientname" name="recipientname" value="Friend's Name" /> ,
+In the spirit of sharing, I thought I’d pass along a website dedicated to grilled cheese sandwiches. But not the kind your mom used to make. I’m talking about gourmet masterpieces that’ll leave your mouth watering well into next week. Check it out. It’s home to the Grilled Cheese Academy. Best of all, it's all about using only Wisconsin Cheese. Bon appétit.
+							</td>
+						</tr>
+					</table>
+					<button type="submit" style="border:none;display:block;cursor:pointer;" class="btnSubmitLrg" id="sendtofriendsubmit"></button>
+					</form>
+				</div>
+				<div class="tooltip-popup" id="sendtofriendcheeselogo">
+					<a href="http://www.eatwisconsincheese.com" target="_blank" class="tooltip">
+						<img src="/images/wiCheeseLogo.png" style="width:77px;height:78px;" class="pngfix" border="0" alt="Wisconsin Cheese" />
+					</a>
+					<em style="left:-125px;" class="right">Continue the tastiness at eatwisconsincheese.com</em>
+				</div>				
+			</div>
+			<div id="sendtofriendthankyoucontainer" class="contentcontainer" style="display:none;">
+				<div class="sendContent">
+					<h1>Thank You!</h1>
+					Thanks for spreading the love of grilled cheese. <br />Good karma is headed your way.
+				</div>
+				<div class="tooltip-popup" id="sendtofriendthankyoucheeselogo">
+					<a href="http://www.eatwisconsincheese.com" target="_blank" class="tooltip">
+						<img src="/images/wiCheeseLogo.png" style="width:77px;height:78px;" class="pngfix" border="0" alt="Wisconsin Cheese" />
+					</a>
+					<em style="left:-125px;" class="right">Continue the tastiness at eatwisconsincheese.com</em>
+				</div>
+			</div>
+			
+			<div id="cheesedirectcontainer" class="detailcontainer contentcontainer" style="display:none;">
+				<div class="detailright">
+					<div class="detailprint">
+						<div class="printme"><a href="#" class="cheeseprint" target="_blank">Print</a></div>
+					</div>
+					<div class="detailrightleft">
+						<h3>Description</h3>
+						<span class="description"></span>
+
+						<p><strong>Flavor:</strong><br /> 
+						<span class="flavor"></span></p>
+						
+						<p><strong>Goes well with:</strong><br /> 
+						<span class="goeswith"></span></p>
+						
+						<p><strong>Pairs with:</strong><br />
+						<span class="pairswith"></span></p>
+					</div>
+					<div class="detailrightright relations"></div>
+					<div style="clear:both;"></div>
+				</div>
+				<div class="detailleft">
+					<div class="detailleftcontent">
+						<table>
+							<tr>
+								<td valign="middle"><a href="javascript:playVoice(Controller.cheese.getAudio());"><img src="/images/audioIcon.gif" alt="audio" border="0" class="audioIcon" /></a></td>
+								<td valign="middle"><h2 style="margin: 0;"><a href="javascript:playVoice(Controller.cheese.getAudio());"><span class="cheeseWI">Wisconsin</span><br /><span class="cheeselabel">Cheese Label</span></a></h2></td>
+							</tr>
+						</table>						
+						<img class="cheesemedium" src="" /><br />
+						<div class="tooltip-popup">
+							<a href="http://www.eatwisconsincheese.com" target="_blank" class="tooltip">
+								<script type="text/javascript">document.write('<img src="/images/wiCheeseLogo-left.png" style="width:208px;height:100px;" class="pngfix" border="0" alt="Wisconsin Cheese" />');</script>
+							</a>
+							<em style="left:3px;">Continue the tastiness at eatwisconsincheese.com</em>
+						</div>
+					</div>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+			<div id="slidecontainer" class="contentcontainer" style="display:none;">
+				<div id="slideshowlogo">
+					<div class="tooltip-popup">
+						<a href="http://www.eatwisconsincheese.com" target="_blank" class="tooltip" style="margin-left:65px;">
+						<img src="/images/wiCheeseLogo.png" style="width:77px;height:78px;" class="pngfix" border="0" alt="Wisconsin Cheese" />
+						</a>
+						<em style="left:-120px;" class="right">Continue the tastiness at eatwisconsincheese.com</em>
+					</div>
+				</div>
+				<a id="slideleft" class="slidenav commonover" href="javascript:Slideshow.left();"></a>
+				<a id="slideright" class="slidenav commonover" href="javascript:Slideshow.right()"></a>
+				<div id="imgwrapperwrapper"><div id="imgwrapper"></div></div>
+			</div>
+			
+			<div id="contestcontainer" class="contentcontainer entry-details" style="display:none;">
+								<div class="leftCol">
+					<div class="leftColContent">
+						<center><img src="/images/title-postContest-lrg.gif" title="The 2012 Grilled Cheese Recipe Contest" border="0" class="postTitleImg" /></center><br />
+						<h4>All good things must come to an end.</h4>
+						<span class="endedCopy">The 2012 Grilled Cheese Recipe Contest<br />has officially ended. Please check back<br /> soon to view the winning entries.</span>
+						<br /><br /><span class="footnote">(winners will be announced mid-august)</span>
+						<div style="left: -195px; top: 15px; position: relative;">
+							<div class="tooltip-popup">
+								<a href="http://www.eatwisconsincheese.com" target="_blank" class="tooltip"><img src="/images/wiCheeseLogo-home.png" border="0" alt="Wisconsin Cheese" /></a>
+								<em class="left" style="left: 140px;">Continue the tastiness at eatwisconsincheese.com</em>
+							</div><!-- end tooltip-popup -->
+						</div><!-- end div -->
+					</div><!-- end leftColContent -->
+				</div><!-- end leftCol -->
+				<div class="rightCol">
+					<div class="rightColContent" style="padding-top: 60px; padding-left: 10px;">
+						<img src="/images/contest-detailSandwich.jpg" border="0" alt="Grilled Cheese Academy" class="postDetailImg" />
+					</div><!-- end rightColContent -->
+				</div><!-- end rightCol -->	
+							</div><!-- end contestcontainer -->
+			
+			<div id="submitrecipecontainer" class="contentcontainer" style="display:none;">
+				<form class="contestform" id="contest-form" method="post" action="/contest_submission" enctype="multipart/form-data">
+					<div class="page1 contestpage">
+						<div class="contest-index">1 of 2</div>
+						<div style="clear:both;"></div>
+						<table class="submitRecipe">
+							<tr>
+								<td class="firstCol instructions" style="padding: 0 25px 0 45px;">
+									<div class="entryCol1">
+										<img src="/images/title-enterContest-form.gif" title="Enter the 2012 Grilled Cheese Recipe Contest" border="0" style="margin: 0 0 20px 0;" /><br />
+										<img src="/images/contest-homeSandwhich-entry.png" title="Submit your tastiest Wisconsin Grilled Cheese recipe today!" border="0" style="margin: 0 0 3px 0;" /><br />
+										<img src="/images/txt-submitToday.png" title="Submit your tastiest Wisconsin Grilled Cheese recipe today!" border="0" />
+									</div><!-- end entryCol1 -->
+								</td>
+								<td>
+									<div class="vertRule" style="margin: 0; height: 370px;"></div>
+								</td>
+								<td style="padding: 0 20px 0 20px;">
+									<fieldset>
+										<label for="first_name">First Name <span class="required">*</span></label>
+										<input type="text" class="mid required " name="first_name" value="" /><br />
+										
+										<label for="last_name">Last Name<span class="required">*</span></label>
+										<input type="text" class="mid required " name="last_name" value="" /><br />
+										
+										<label for="email">Your Email <span class="required">*</span></label>
+										<input type="text" class="mid required email " name="email" value="" /><br />
+										
+										<label for="email_confirm">Confirm Email <span class="required">*</span></label>
+										<input type="text" class="mid required email_confirm " name="email_confirm" value="" /><br />
+										
+										<label for="address1">Address Line 1 <span class="required">*</span></label>
+										<input type="text" class="mid required " name="address1" value="" /><br />
+										
+										<label for="address2">Address Line 2</label>
+										<input type="text" class="mid" name="address2" value="" /><br />
+										
+										<label for="city">City <span class="required">*</span></label>
+										<input type="text" class="mid required " name="city" value="" /><br />
+	
+										<div style="float:left;">
+											<label for="state">State <span class="required">*</span></label>
+											<input type="text" class="text half-sm required " name="state" value="" />
+										</div>
+
+										<div style="float:left;margin-left:11px;">
+											<label for="zip">Zip <span class="required">*</span></label>
+											<input type="text" class="text half-sm required " name="zip" value="" /><br />
+										</div>										
+									</fieldset>
+										
+								</td>
+								<td>
+									<div class="vertRule" style="margin: 0; height: 370px;"></div>
+								</td>
+								<td style="padding: 0 0px 0 20px;">
+									<fieldset>
+										<p id="camera">Upload a photo <span class="required">*</span></p>
+										<p style="font-size: 9px; margin: 5px 0 15px 0;"><span id="contest-image_error">Photo is required for entry and must meet all entry<br/>criteria stated in the official rules.</span></p>
+										<span id="fileWrapper"><input type="file" name="image" id="contest-image" accept="image/*" /></span><br />
+										
+										<h3 style="margin-top: 25px;">Photo Caption</h3>
+										<textarea name="caption" class="formtext mid"></textarea>
+										<a href="#" class="btn-nextPage" onclick="ContestForm.validateAndAdvance();">Next Page</a>
+										<br />* Required field.
+									</fieldset>
+								</td>
+							</tr>
+						</table>
+						<div class="tooltip-popup" id="tipscheeselogo" style="left: 450px; top: -73px; width: 200px;">
+							<a href="http://www.eatwisconsincheese.com" target="_blank" class="tooltip">
+								<img src="/images/wiCheeseLogo.png" style="width:77px;height:78px;" class="pngfix" border="0" alt="Wisconsin Cheese" />
+							</a>
+							<em style="left:-120px;" class="right">Continue the tastiness at eatwisconsincheese.com</em>
+						</div><!-- end tooltip-popup -->
+					</div><!-- end page1 contestpage -->
+					<div class="page2 contestpage">
+						<div class="contest-index">2 of 2</div>
+						<div style="clear:both;"></div>
+						<table class="submitRecipe">
+							<tr>
+								<td class="firstCol instructions" style=" padding: 0 20px 0 40px;">
+									<fieldset>
+										<label for="sandwich"><h3>Sandwich Name <span class="required">*</span></h3></label>
+										<input type="text" class="text formtext mid required " style="margin-bottom: 20px;" id="sandwich" name="title" value="" /><br />
+										
+										<h3>Brief Description*</h3>
+										<textarea name="description" class="mid required  formtext"></textarea><br />
+										
+										<h3 style="margin-top: 12px;">Preparation Instructions*</h3>
+										<textarea name="instructions" class="mid required  formtext"></textarea><br />
+										
+									</fieldset>
+								</td>
+								<td>
+									<div class="vertRule" style="margin: 0; height: 370px;"></div>
+								</td>
+								<td style="padding: 0 20px;">
+									<fieldset id="ingredientList">
+										<h3>Ingredients * <small> Cheese, bread, etc...</small></h3>
+										<div style="font-size: 9px; line-height: 12px; margin-bottom: 10px;">When listing the ingredients of your masterpiece,<br/>
+										please don't use brand names. Thank you.</div>
+																						<input type="text" class="required text formingredient mid" name="ingredients[]" value="" /><br />
+																						<input type="text" class=" text formingredient mid" name="ingredients[]" value="" /><br />
+																						<input type="text" class=" text formingredient mid" name="ingredients[]" value="" /><br />
+																						<input type="text" class=" text formingredient mid" name="ingredients[]" value="" /><br />
+																						<input type="text" class=" text formingredient mid" name="ingredients[]" value="" /><br />
+																						<input type="text" class=" text formingredient mid" name="ingredients[]" value="" /><br />
+																						<input type="text" class=" text formingredient mid" name="ingredients[]" value="" /><br />
+																						<input type="text" class=" text formingredient mid" name="ingredients[]" value="" /><br />
+																						<input type="text" class=" text formingredient mid" name="ingredients[]" value="" /><br />
+																						<input type="text" class=" text formingredient mid" name="ingredients[]" value="" /><br />
+																						<input type="text" class=" text formingredient mid" name="ingredients[]" value="" /><br />
+																			</fieldset>
+									* Required field.
+										
+								</td>
+								<td>
+									<div class="vertRule" style="margin: 0; height: 370px;"></div>
+								</td>
+								<td style="padding: 0 20px;">
+									<fieldset>
+										<table cellpadding="0" cellspacing="0" border="0" class="submitBoxes">
+											<tr>
+												<td><input class="formlegal required" name="age" type="checkbox" value="accepted"/></td>
+												<td><label for="age" >I am a legal U.S. adult resident (including DC), who is 18+ years of age at the time of entry and prize distribution*</label></td>
+											</tr>
+											<tr>
+												<td><input class="formlegal required" name="agree_rules" type="checkbox" value="accepted"/></td>
+												<td><label for="agree_rules" >I acknowledge that submission of my entry constitutes acceptance of the Official Rules and the www.grilledcheeseacademy.com <a href="/privacy.html" target="_blank">Privacy Policy</a> (online entrants) and that I have had the opportunity to review them before entering.*</label> </td>
+											</tr>
+											<tr>
+												<td><input class="formlegal" name="agree_updates" type="checkbox" checked value="accepted"/></td>
+												<td><label for="agree_updates" >Sign up to receive the latest news from Wisconsin Cheese.</label></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td><button type="submit" id="submitForm" class="btn-submitRecipe submit" value=""></button>
+													<a href="/officialrules.html" target="_blank">Official Rules</a> | <a href="/privacy.html" target="_blank">Privacy Policy</a>
+												</td>
+											</tr>
+										</table>
+									</fieldset>
+								</td>
+							</tr>
+						</table>
+						<div class="tooltip-popup" id="tipscheeselogo" style="right: -75px; top: -70px;">
+							<a href="http://www.eatwisconsincheese.com" target="_blank" class="tooltip">
+								<img src="/images/wiCheeseLogo.png" style="width:77px;height:78px;" class="pngfix" border="0" alt="Wisconsin Cheese" />
+							</a>
+							<em style="left:-120px;" class="right">Continue the tastiness at eatwisconsincheese.com</em>
+						</div><!-- end tooltip-popup -->
+					</div>
+				</form>
+			</div>
+			
+			<div id="contestthankyoucontainer" class="contentcontainer contestpage" style="display:none;"><a href="#" id="hidden-contest-thankyou" style="display:none;"></a>
+				<div class="contest-index"><a href="#" id="thanks_close">Close X</a></div>
+				<div class="thankyouContent">
+					<img src="/images/title-gcrContestThanks.png" title="The 2012 Grilled Cheese Recipe Contest" border="0" style="margin-bottom: 15px;" /><br />
+					Thank you for entering. If the mood should strike,<br />please feel free to enter another of your grilled<br />cheese sandwich works of art.
+					<a href="#" class="btn-submitAnotherRecipe" id="submit_another_recipe">Submit Another Recipe</a>
+					<a href="#" id="thanks_viewsandwiches">View Sandwiches</a>
+
+					<div class="tooltip-popup" id="tipscheeselogo" style="left: 390px; top: -15px; width: 300px;">
+						<a href="http://www.eatwisconsincheese.com" target="_blank" class="tooltip">
+							<img src="/images/wiCheeseLogo.png" style="width:77px;height:78px;" class="pngfix" border="0" alt="Wisconsin Cheese" />
+						</a>
+						<em style="left:-10px;" class="right">Continue the tastiness at eatwisconsincheese.com</em>
+					</div><!-- end tooltip-popup -->
+				</div><!-- end thankyouContent -->
+			</div><!-- end contestthankyoucontainer -->
+			
+			<div id="slidedetail">
+				<span>Item Label</span> |
+				<a href="#">View Recipe</a> |
+				<a href="#">Cheese 1</a> |
+				<a href="#">Cheese 2</a> |
+				<a href="#">Facebook</a>
+				<a href="#">Twitter</a>
+			</div>
+			
+			<div id="containerShadTop" class="containerShadow pngfix"></div>
+			<div id="containerShadLeft" class="containerShadow pngfix"></div>
+			<div id="containerShadRight" class="containerShadow pngfix"></div>
+			<div id="containerShadBot" class="containerShadow pngfix"></div>
+		</div>
+	</div>
+  <div id="footer">
+    <div id="indexselecter">
+      <a href="#" class="active commonover" id="link0">Sandwiches</a>
+      <a href="#" class="commonover" id="link1">1</a>
+      <a href="#" class="commonover" id="link2">2</a>
+      <a href="#" class="commonover" id="link3">3</a>
+      <a href="#" class="commonover" id="link4">4</a>
+      <a href="#" class="commonover" id="link5">5</a>
+      <a href="#" class="commonover" id="link6">6</a>
+      <a href="#" class="commonover" id="link7">7</a>
+      <a href="#" class="commonover" id="link8">8</a>
+      <a href="#" class="commonover" id="link9">9</a>
+      <a href="#" class="commonover" id="link10">10</a>
+      <a href="#" class="commonover" id="link11">11</a>
+      <a href="#" class="commonover" id="link12">12</a>
+      <a href="#" class="commonover" id="link13">13</a>
+      <a href="#" class="commonover" id="link14">14</a>
+      <a href="#" class="commonover" id="link15">15</a>
+      <a href="#" class="commonover" id="link16">16</a>
+      <a href="#" class="commonover" id="link17">17</a>
+      <a href="#" class="commonover" id="link18">18</a>
+      <a href="#" class="commonover" id="link19">19</a>
+      <a href="#" class="commonover" id="link20">20</a>
+      <a href="#" class="commonover" id="link21">21</a>
+      <a href="#" class="commonover" id="link22">22</a>
+      <a href="#" class="commonover" id="link23">23</a>
+      <a href="#" class="commonover" id="link24">24</a>
+      <a href="#" class="commonover" id="link25">25</a>
+      <a href="#" class="commonover" id="link26">26</a>
+      <a href="#" class="commonover" id="link27">27</a>
+      <a href="#" class="commonover" id="link28">28</a>
+      <a href="#" class="commonover" id="link29">29</a>
+      <a href="#" class="commonover" id="link30">30</a>
+      <a href="#" class="commonover" id="link31">Tips</a>
+      <a href="#" class="commonover" id="link32">Pantry</a>
+      <div style="clear:both;"></div>
+    </div>  
+	<div id="footerUtil">
+		<table id="footerItems">
+			<tr>
+			<td>
+				<a href="http://www.facebook.com/profile.php?id=222968865888" target="_blank" class="find">Find us on Facebook</a>
+				<!-- <a href="#" id="sendtofriend" class="send">Send to a Friend</a> -->
+				
+				<div id="updateswrapper" style="float:left;position:relative;overflow:hidden;width:125px;">
+					<div id="updatesinvitewrapper" style="overflow:hidden;width:140px;display:block"><a href="#" id="updatesbtn" class="updates" style="">Get email updates</a></div>
+									
+					<div id="updatessubmitwrapper" style="float:left;width:190px;display:none;overflow:hidden;">
+						<div style="width:190px;">
+						<form id="updatesform" style="padding:0px;margin:0px;width:190px;">
+							<input type="text" name="email" value="E-Mail Address" class="newsletter" style="margin-top:8px;" id="updatesforminput"/>
+							<button type="submit" class="btnSubmitSM" style="margin-left:5px;margin-top:8px;border:none;" id="updatessubmitbtn"></button>
+						</form>
+						</div>
+					</div>
+					<div id="updatesthanks" style="overflow:hidden;float:left;margin-top:8px;width:215px;margin-left:10px;display:none;" class="thanks">Thanks for your email address. We'll happily<br />return the favor with our latest updates.</div>
+				</div>
+				<div class="shareTip">
+					<img src="/images/share-friends.gif" title="Share with Friends" border="0" /><br />	
+					<input type="text" value="http://grilledcheeseacademy.com" readonly="readonly">
+				</div>
+				<a href="/mediaresources.html" target="_blank" class="share">Share</a>
+			</td>
+			</tr>
+		</table>
+		&copy;&nbsp;2012&nbsp;Wisconsin Milk Marketing Board  &nbsp;|&nbsp; <a target="_blank" href="http://www.eatwisconsincheese.com" style="text-indent:0px;display:inline;float:none;">www.EatWisconsinCheese.com</a> &nbsp;| &nbsp; <a href="http://wisconsincheesetalk.com/" target="_blank">WisconsinCheeseTalk.com</a> &nbsp;| &nbsp; <a href="/terms.html" target="_blank">Terms &amp; Conditions</a>  &nbsp;|&nbsp; <a href="/privacy.html" target="_blank">Privacy Policy</a>
+		<div style="clear: both;"><a href="http://www.shinenorth.com" style="visibility:hidden;">Shine Advertising</a></div>
+	</div>
+
+  </div>
+</div></center>
+
+<div id="flashaudio"></div>
+
+</body>
+</html>

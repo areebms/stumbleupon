@@ -1,0 +1,1344 @@
+ <!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+
+	<meta charset="UTF-8" />
+
+<title>Top 10 Questionable Food Additives</title> 
+<meta name="google-site-verification" content="Mz04n9bTfPauCxRU-KVvQGOTN2cb7EM2dn13Inot5GU" />
+ <meta name="description" content="Everyone loves to eat food. Aside from the fact that body needs to be filled with necessary nutrition to make it stronger and fortifies body against diseases that would cause sicknesses, it would also prolong life span.  The ways and forms of eating habits have changed through centuries, but the purpose of doing it does [...]" />
+
+  
+ 
+ 
+ 
+ <meta name="keywords" content="" />
+
+	<link rel="stylesheet" href="http://uptenlist.com/wp-content/themes/techblog-single/style.css" type="text/css" media="screen" />
+
+    <link rel="shortcut icon" href="http://uptenlist.com/wp-content/uploads/2012/06/favicon.ico" />
+
+    <link rel="shortcut icon" href="http://uptenlist.com/wp-content/uploads/2012/06/favicon.ico" type="image/x-icon" />
+
+    <meta name="generator" content="Magazine3 Framework" /> 
+
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+	<link rel="alternate" type="application/rss+xml" title=" RSS Feed" href="http://uptenlist.com/feed/" />
+
+	<link rel="pingback" href="http://uptenlist.com/xmlrpc.php" />
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.4.1'></script>
+	<script type="text/javascript" src="http://uptenlist.com/wp-content/themes/techblog-single/js/ddsmoothmenu.js"></script> 
+
+    <script type="text/javascript" src="http://uptenlist.com/wp-content/themes/techblog-single/js/jquery.tools.min.js"></script>
+    	<script type="text/javascript" src="http://uptenlist.com/wp-content/themes/techblog-single/js/superfish.js"></script>
+	<script type="text/javascript" src="http://uptenlist.com/wp-content/themes/techblog-single/js/custom.js"></script>
+	<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script> 
+
+ <script type="text/javascript">
+
+var $ = jQuery.noConflict();
+
+$(document).ready(function() {
+
+
+
+	//When page loads...
+
+	$(".tab_content").hide(); //Hide all content
+
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+
+	$(".tab_content:first").show(); //Show first tab content
+
+
+
+	//On Click Event
+
+	$("ul.tabs li").click(function() {
+
+
+
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+
+		$(this).addClass("active"); //Add "active" class to selected tab
+
+		$(".tab_content").hide(); //Hide all tab content
+
+
+
+		var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+
+		$(activeTab).fadeIn(); //Fade in the active ID content
+
+		return false;
+
+	});
+
+
+
+});
+
+</script>
+
+ <script type="text/javascript">
+
+$(document).ready(function() {
+
+	//Tooltips
+
+	$(".tip_trigger").hover(function(){
+
+		tip = $(this).find('.tip');
+
+		tip.show(); //Show tooltip
+
+	}, function() {
+
+		tip.hide(); //Hide tooltip		  
+
+	}).mousemove(function(e) {
+
+		var mousex = e.pageX + 20; //Get X coodrinates
+
+		var mousey = e.pageY + 20; //Get Y coordinates
+
+		var tipWidth = tip.width(); //Find width of tooltip
+
+		var tipHeight = tip.height(); //Find height of tooltip
+
+		
+
+		//Distance of element from the right edge of viewport
+
+		var tipVisX = $(window).width() - (mousex + tipWidth);
+
+		//Distance of element from the bottom of viewport
+
+		var tipVisY = $(window).height() - (mousey + tipHeight);
+
+		  
+
+		if ( tipVisX < 20 ) { //If tooltip exceeds the X coordinate of viewport
+
+			mousex = e.pageX - tipWidth - 20;
+
+		} if ( tipVisY < 20 ) { //If tooltip exceeds the Y coordinate of viewport
+
+			mousey = e.pageY - tipHeight - 20;
+
+		} 
+
+		tip.css({  top: mousey, left: mousex });
+
+	});
+
+});
+
+
+
+</script>
+
+	 <script type="text/javascript">
+
+ $(document).ready(function() {
+
+
+
+ $("div.scrollable").scrollable({
+
+
+
+		size: 3,
+
+		items: '#thumbs',   
+
+		hoverClass: 'hover',
+
+		speed: 400,
+
+		keyboard: false,
+
+		clickable: false
+
+
+
+	}).navigator();	
+
+	  
+
+  		
+
+});
+
+</script>
+
+  
+
+ <script type="text/javascript">   
+
+
+
+  // when the DOM is ready...        
+
+
+
+$(document).ready(function () {      
+
+
+
+  // load the ticker                 
+
+
+
+	createTicker();                    
+
+
+
+});                                  
+
+
+
+function createTicker(){             
+
+
+
+	// put all list elements within #ticker-area into array   
+
+
+
+	var tickerLIs = $("#ticker-area ul").children();          
+
+
+
+	tickerItems = new Array();                                
+
+
+
+	tickerLIs.each(function(el) {                             
+
+
+
+		tickerItems.push( jQuery(this).html() );                
+
+
+
+	});                                                       
+
+
+
+	i = 0                                                     
+
+
+
+	rotateTicker();                                           
+
+
+
+}                                                           
+
+
+
+function rotateTicker(){                                    
+
+
+
+	if( i == tickerItems.length ){                            
+
+
+
+	  i = 0;                                                  
+
+
+
+	}                                                         
+
+
+
+  tickerText = tickerItems[i];                              
+
+
+
+	c = 0;                                                    
+
+
+
+	typetext();                                               
+
+
+
+	setTimeout( "rotateTicker()", 5000 );                     
+
+
+
+	i++;                                                      
+
+
+
+}                                                           
+
+
+
+var isInTag = false;                                        
+
+
+
+function typetext() {	                                      
+
+
+
+	var thisChar = tickerText.substr(c, 1);                   
+
+
+
+	if( thisChar == '<' ){ isInTag = true; }                  
+
+
+
+	if( thisChar == '>' ){ isInTag = false; }                 
+
+
+
+	$('#ticker-area').html("&nbsp;" + tickerText.substr(0, c++));   
+
+
+
+	if(c < tickerText.length+1)                                     
+
+
+
+		if( isInTag ){                                                
+
+
+
+			typetext();                                                 
+
+
+
+		}else{                                                        
+
+
+
+			setTimeout("typetext()", 28);                               
+
+
+
+		}else { c = 1; tickerText = "";  }
+}                                                                 
+
+
+
+  </script> 
+
+			
+
+	
+ 
+   <style>#content .post {
+
+    border: none !important; </style> 
+
+ 
+  	
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.2.5 - http://yoast.com/wordpress/seo/ -->
+<meta name="description" content="There are top 10 questionable food additives which are really dangerous in human’s health. Read on, and find out why."/>
+<link rel="canonical" href="http://uptenlist.com/health/top-10-questionable-food-additives/" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Top 10 Questionable Food Additives Comments Feed" href="http://uptenlist.com/health/top-10-questionable-food-additives/feed/" />
+<link rel='stylesheet' id='xc_pinterest_style-css'  href='http://uptenlist.com/wp-content/plugins/pinterest-pin-it-button-for-images/xc_pinterest.css?ver=3.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://uptenlist.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=3.2' type='text/css' media='all' />
+<script type='text/javascript' src='http://uptenlist.com/wp-includes/js/comment-reply.js?ver=3.4.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://uptenlist.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://uptenlist.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.4.1" />
+<link rel='shortlink' href='http://uptenlist.com/?p=746' />
+<link rel="stylesheet" href="http://uptenlist.com/wp-content/plugins/digg-digg/include/../css/diggdigg-style.css?ver=5.2.9" type="text/css" media="screen" />  
+
+      <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css' />
+
+       <link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css' />
+
+       <link href='http://fonts.googleapis.com/css?family=Droid+Serif:regular,bold&subset=latin' rel='stylesheet' type='text/css' />
+
+       <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css' />
+  <style> .indextopleftslide {height:325px} #indextopleft {width:650px !important} #twocats {width:650px} #twocatsleft, #twocatsright {width:322px}</style>   
+
+ 
+
+
+
+
+<link rel="canonical" href="http://uptenlist.com/health/top-10-questionable-food-additives/" /><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7446371-15']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body class="single single-post postid-746 single-format-standard">
+  <h1 style="display:none"></h1> 
+<div id="wrapper">
+
+
+
+	<header><div id="topmenu">
+
+<div id="topmenuleft">
+
+			<div id="topMenu" class="ddsmoothmenu"><ul id="menu-top-menu" class="menu"><li id="menu-item-84" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-84"><a href="http://uptenlist.com/">Home</a></li>
+<li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="http://uptenlist.com/contact-us/">contact us</a></li>
+</ul></div>
+</div>
+
+<div id="topmenuright">
+
+ <ul>
+
+ <li id="rssb">
+
+ Mon, Jul 2012
+ </li>
+
+ <li class="rssnav"><a href="http://uptenlist.com/feed/">RSS </a></li>
+
+ <li><a href="info@uptenlist.com">Newsletter</a></li>
+
+ </ul>
+
+</div>
+
+</div>
+
+	 
+
+     <div id="logowrap">
+
+     <div id="logo"><a href="http://uptenlist.com"><img src="http://uptenlist.com/wp-content/uploads/2012/06/finallogo.png" alt="UP TEN LIST" /></a></div>
+
+     <div id="logohead">
+
+     <div id="headad">  
+
+    <script type="text/javascript"><!--
+google_ad_client = "ca-pub-9995628201837835";
+/* header uptenlist */
+google_ad_slot = "0179307550";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script> 
+
+     </div>
+
+     <div id="twfb">
+
+     <ul>   <li>  <a href="http://www.facebook.com/pages/Uptenlistcom/227478887370752" target="_blank"><img src="http://uptenlist.com/wp-content/themes/techblog-single/images/facebook.png" alt="Become a Fan!" /></a></li>
+
+ <li> 
+
+   <a href="http://twitter.com/uptenlist" class="tip_trigger"><img src="http://uptenlist.com/wp-content/themes/techblog-single/images/twitter.png" alt="Follow On Twitter" /><span class="tip">    <ul id="twitter_update_list">
+
+    </ul>
+
+    <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script><script type="text/javascript" src="http://twitter.com/statuses/user_timeline/uptenlist.json?callback=twitterCallback2&count=1"></script>
+
+
+
+</span></a>
+
+     </li>
+
+   
+
+      <li> <a href="http://uptenlist.com/feed/"><img src="http://uptenlist.com/wp-content/themes/techblog-single/images/rssicon.png" alt="Subcribe to Our RSS Feed" /></a></li>
+
+     </ul>
+
+     </div>
+
+     </div>
+
+     <div id="cb"></div>
+
+     </div>    <div id="cb"></div>
+
+		<nav>
+
+	<div id="navigation">
+<div id="nav" class="ddsmoothmenu1"><ul id="menu-menu" class="menu"><li id="menu-item-45" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-45"><a href="http://uptenlist.com/category/all/">All</a></li>
+<li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category arrow menu-item-42"><a href="http://uptenlist.com/category/misc/">Misc</a>
+<ul class="sub-menu">
+	<li id="menu-item-43" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-43"><a href="http://uptenlist.com/category/misc/events-misc/">Events</a></li>
+	<li id="menu-item-44" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-44"><a href="http://uptenlist.com/category/misc/shopping-misc/">Shopping</a></li>
+</ul>
+</li>
+<li id="menu-item-79" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-79"><a href="http://uptenlist.com/category/health/">Health</a></li>
+<li id="menu-item-101" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-101"><a href="http://uptenlist.com/category/facts/">Facts</a></li>
+<li id="menu-item-125" class="menu-item menu-item-type-taxonomy menu-item-object-category arrow menu-item-125"><a href="http://uptenlist.com/category/entertainment/">Entertainment</a>
+<ul class="sub-menu">
+	<li id="menu-item-126" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126"><a href="http://uptenlist.com/category/entertainment/hollywood/">Hollywood</a></li>
+</ul>
+</li>
+<li id="menu-item-183" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-183"><a href="http://uptenlist.com/category/expensive/">Expensive</a></li>
+<li id="menu-item-184" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-184"><a href="http://uptenlist.com/category/technology/">Technology</a></li>
+<li id="menu-item-269" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-269"><a href="http://uptenlist.com/category/cars/">Cars</a></li>
+<li id="menu-item-311" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-311"><a href="http://uptenlist.com/category/facts/">Facts</a></li>
+<li id="menu-item-437" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-437"><a href="http://uptenlist.com/category/politics/">Politics</a></li>
+<li id="menu-item-549" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-549"><a href="http://uptenlist.com/category/fashion/">Fashion</a></li>
+</ul></div>
+</div>
+		</nav>
+	</header>
+<section>    
+
+  <div id="headgal">
+
+<div id="featured" style="padding-left: 14px !important;">
+    
+			
+   
+	
+ 
+<div class="scrollable" style="height: 60px !important">	
+
+			<div id="thumbs">			
+				<div id="featured-wrap">
+					<div id="featured-inner">
+										   
+				<div class="slide">	 			<div class="post">
+                	<div class="slidesingle">        
+			<span id="slidesingleimg">
+
+<a href="http://uptenlist.com/all/10-most-dangerous-cities-in-the-world-in-2012/"><img width="50" height="45" src="http://uptenlist.com/wp-content/uploads/2012/06/1.-Baghdad-Iraq-50x45.jpg" class="attachment-singlegalthumb wp-post-image" alt="1. Baghdad, Iraq" title="1. Baghdad, Iraq" /></a>	</span>
+							<h2 style="position: relative !important;background: none !important;"><a href="http://uptenlist.com/all/10-most-dangerous-cities-in-the-world-in-2012/" rel="bookmark" title="10 Most Dangerous Cities in the World in 2012">10 Most Dangerous Cities in the World in 2012</a></h2>
+							<div id="cb"></div>
+
+			 	</div>
+						 </div></div><!--post-->
+						
+										   
+				<div class="slide">	 			<div class="post">
+                	<div class="slidesingle">        
+			<span id="slidesingleimg">
+
+<a href="http://uptenlist.com/all/10-most-romantic-movies-in-2012/"><img width="50" height="45" src="http://uptenlist.com/wp-content/uploads/2012/06/4.-The-Vow-50x45.jpg" class="attachment-singlegalthumb wp-post-image" alt="4. The Vow" title="4. The Vow" /></a>	</span>
+							<h2 style="position: relative !important;background: none !important;"><a href="http://uptenlist.com/all/10-most-romantic-movies-in-2012/" rel="bookmark" title="10 Most Romantic Movies in  2012">10 Most Romantic Movies in  2012</a></h2>
+							<div id="cb"></div>
+
+			 	</div>
+						 </div></div><!--post-->
+						
+										   
+				<div class="slide">	 			<div class="post">
+                	<div class="slidesingle">        
+			<span id="slidesingleimg">
+
+<a href="http://uptenlist.com/misc/10-interesting-facts-about-the-london-olympics-2012/"><img width="50" height="45" src="http://uptenlist.com/wp-content/uploads/2012/06/1.-The-Capacity-of-Stadium-50x45.jpg" class="attachment-singlegalthumb wp-post-image" alt="1. The Capacity of Stadium" title="1. The Capacity of Stadium" /></a>	</span>
+							<h2 style="position: relative !important;background: none !important;"><a href="http://uptenlist.com/misc/10-interesting-facts-about-the-london-olympics-2012/" rel="bookmark" title="10 Interesting Facts About the London Olympics 2012">10 Interesting Facts About the London Olympics 2012</a></h2>
+							<div id="cb"></div>
+
+			 	</div>
+						 </div></div><!--post-->
+						
+										   
+				<div class="slide">	 			<div class="post">
+                	<div class="slidesingle">        
+			<span id="slidesingleimg">
+
+<a href="http://uptenlist.com/all/10-fitness-tips-to-be-healthy/"><img width="50" height="45" src="http://uptenlist.com/wp-content/uploads/2012/06/2.-Schedule-Your-Regular-WorkoutExercises-50x45.jpg" class="attachment-singlegalthumb wp-post-image" alt="2. Schedule Your Regular WorkoutExercises" title="2. Schedule Your Regular WorkoutExercises" /></a>	</span>
+							<h2 style="position: relative !important;background: none !important;"><a href="http://uptenlist.com/all/10-fitness-tips-to-be-healthy/" rel="bookmark" title="10 Fitness Tips to Be Healthy">10 Fitness Tips to Be Healthy</a></h2>
+							<div id="cb"></div>
+
+			 	</div>
+						 </div></div><!--post-->
+						
+										   
+				<div class="slide">	 			<div class="post">
+                	<div class="slidesingle">        
+			<span id="slidesingleimg">
+
+<a href="http://uptenlist.com/misc/top-10-best-fathers-day-gifts-in-2012/"><img width="50" height="45" src="http://uptenlist.com/wp-content/uploads/2012/06/Fathers-Days-2012-50x45.jpg" class="attachment-singlegalthumb wp-post-image" alt="Fathers Days 2012" title="Fathers Days 2012" /></a>	</span>
+							<h2 style="position: relative !important;background: none !important;"><a href="http://uptenlist.com/misc/top-10-best-fathers-day-gifts-in-2012/" rel="bookmark" title="Top 10 Best Father’s Day Gifts in 2012">Top 10 Best Father’s Day Gifts in 2012</a></h2>
+							<div id="cb"></div>
+
+			 	</div>
+						 </div></div><!--post-->
+						
+												<div class="clear"></div>
+					</div><!--featured-inner-->
+					<div class="clear"></div>
+			</div></div>	</div><!--featured-wrap-->
+				
+				
+									<div id="featured-controls">
+						<a style="display: none;" href="#slide-prev" class="fl" rel="prev"><img src="http://uptenlist.com/wp-content/themes/techblog-single/images/featured-arrow-left.png" alt="" /></a>
+						
+													<a href="#slide-1" class="active featured-dot" rel="1"></a>
+													<a href="#slide-2" class=" featured-dot" rel="2"></a>
+												
+						<a style="display: none;" href="#slide-next" class="fr" rel="next"><img src="http://uptenlist.com/wp-content/themes/techblog-single/images/featured-arrow-right.png" alt="" /></a>
+					</div><!--featured-controls-->
+								
+		 <!--featured-->
+			
+		 
+				<script type="text/javascript">
+				setInterval(function() {
+						jQuery('#featured-controls a:last').trigger('click');
+					}, 5000
+				);
+				</script>
+		 
+    
+     
+    
+ 
+<div id="theticker">
+<div id="m3ticker">
+<div id="tickimg"><img src="http://uptenlist.com/wp-content/themes/techblog-single/images/youarehere.png" alt="" /> </div>  
+<div id="m3crumbs">	<div id="crumbs"><a href="http://uptenlist.com">Home</a> &raquo; <a href="http://uptenlist.com/category/foods/" title="View all posts in Foods">Foods</a> &raquo; <span class="current">Top 10 Questionable Food Additives</span></div></div>
+<div id="cb"></div>
+</div>  <div id="cb"></div>
+</div>
+</div>       
+
+ <div id="content">	
+
+	
+
+
+		<article class="post">
+
+			<h2>  Top 10 Questionable Food Additives</h2>
+
+			<div class="pmetasingle"> Posted In  <a href="http://uptenlist.com/category/foods/" title="View all posts in Foods" rel="category tag">Foods</a>, <a href="http://uptenlist.com/category/health/" title="View all posts in Health" rel="category tag">Health</a> - By  <b><a href="http://uptenlist.com/author/josef/" title="View all posts by Josef Ray F. Dagatan">Josef Ray F. Dagatan </a></b>  
+
+            	    on  Monday, July 16th, 2012 With 
+
+    <a href="#comments"> No Comments &#187;</a>  
+
+  
+
+            </div>
+
+              
+
+    <center></center>
+
+
+			<div class="entry">
+
+			  <div class='dd_post_share'><div class='dd_buttons'><div class='dd_button'><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://uptenlist.com/health/top-10-questionable-food-additives/" data-count="horizontal" data-text="Top 10 Questionable Food Additives" data-via="uptenlist" ></a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div><div class='dd_button'><script src='http://www.stumbleupon.com/hostedbadge.php?s=1&amp;r=http%3A%2F%2Fuptenlist.com%2Fhealth%2Ftop-10-questionable-food-additives%2F'></script></div><div class='dd_button'><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http%3A%2F%2Fuptenlist.com%2Fhealth%2Ftop-10-questionable-food-additives%2F" send="false" show_faces="false"  layout="button_count" width="92"  ></fb:like></div><div class='dd_button'><a name='fb_share' type='button_count' share_url='http://uptenlist.com/health/top-10-questionable-food-additives/' href='http://www.facebook.com/sharer.php'></a><script src='http://static.ak.fbcdn.net/connect.php/js/FB.Share' type='text/javascript'></script></div><div class='dd_button'><script type='text/javascript' src='https://apis.google.com/js/plusone.js'></script><g:plusone size='medium' href='http://uptenlist.com/health/top-10-questionable-food-additives/'></g:plusone></div><div class='dd_button'><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fuptenlist.com%2Fhealth%2Ftop-10-questionable-food-additives%2F&description=Top%2010%20Questionable%20Food%20Additives&media=http://uptenlist.com/wp-content/uploads/2012/07/7.-TBHQ-e1342108048248.jpg" class="pin-it-button" count-layout="horizontal"></a><script type="text/javascript" src="http://assets.pinterest.com/js/pinit.js"></script></div></div><div style='clear:both'></div></div><div style='clear:both'></div><p>Everyone loves to eat food. Aside from the fact that body needs to be filled with necessary nutrition to make it stronger and fortifies body against diseases that would cause sicknesses, it would also prolong life span.<span id="more-746"></span>  The ways and forms of eating habits have changed through centuries, but the purpose of doing it does not change. In fact, with all the developments that the world undertakes each day, additives have been created to make life easier, and make each meal flavorful and tastier. Moreover, they are substances that preserve food and it has become part of the most processed food being sold in the market. Nonetheless, there are <strong>top 10 questionable food additives</strong> which are really dangerous in human’s health. Read on, and find out why.</p>
+<h3><strong>10. Sulfur Dioxide</strong></h3>
+<p><div class="xc_pinterest"><a href="#" onClick='window.open("http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fuptenlist.com%2Fhealth%2Ftop-10-questionable-food-additives%2F&media=http://uptenlist.com/wp-content/uploads/2012/07/10.-Sulfur-Dioxide-e1342108091604.jpg&description=Top+10+Questionable+Food+Additives","Pinterest","scrollbars=no,menubar=no,width=600,height=380,resizable=yes,toolbar=no,location=no,status=no")' class="xc_pin"></a><a href="http://uptenlist.com/wp-content/uploads/2012/07/10.-Sulfur-Dioxide-e1342108091604.jpg"><img class="aligncenter size-full wp-image-757" src="http://uptenlist.com/wp-content/uploads/2012/07/10.-Sulfur-Dioxide-e1342108091604.jpg"  alt="10. Sulfur Dioxide" width="550" height="481" \/></a></div></p>
+<p>It is known as a bleaching agent wherein its other name is coal tar. It is used primarily in most of the soft and hard drinks, fruits and vegetables. However, it tear downs vitamins and there is a recorded death because of the effects of this substance.</p>
+<h3><strong>9. Aspartame- (Nutra-Sweet, Equal)</strong></h3>
+<p><div class="xc_pinterest"><a href="#" onClick='window.open("http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fuptenlist.com%2Fhealth%2Ftop-10-questionable-food-additives%2F&media=http://uptenlist.com/wp-content/uploads/2012/07/9.-Aspartame-Nutra-Sweet-Equal-e1342108080439.jpg&description=Top+10+Questionable+Food+Additives","Pinterest","scrollbars=no,menubar=no,width=600,height=380,resizable=yes,toolbar=no,location=no,status=no")' class="xc_pin"></a><a href="http://uptenlist.com/wp-content/uploads/2012/07/9.-Aspartame-Nutra-Sweet-Equal-e1342108080439.jpg"><img class="aligncenter size-full wp-image-756" src="http://uptenlist.com/wp-content/uploads/2012/07/9.-Aspartame-Nutra-Sweet-Equal-e1342108080439.jpg"  alt="9. Aspartame- (Nutra-Sweet, Equal)" width="550" height="364" \/></a></div></p>
+<p>This is commonly found in most diet type of food and drinks such as soft drinks, kool-aid, chewable vitamins, low-calorie desserts, and even toothpaste. It’s actually a combination of methanol and amino acids. The end result of it is methanol poisoning which is really a <strong>questionable food additive</strong> found in those mentioned products.</p>
+<h3><strong>8. BHA and BHT</strong></h3>
+<p><div class="xc_pinterest"><a href="#" onClick='window.open("http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fuptenlist.com%2Fhealth%2Ftop-10-questionable-food-additives%2F&media=http://uptenlist.com/wp-content/uploads/2012/07/8.-BHA-and-BHT-e1342108069367.jpg&description=Top+10+Questionable+Food+Additives","Pinterest","scrollbars=no,menubar=no,width=600,height=380,resizable=yes,toolbar=no,location=no,status=no")' class="xc_pin"></a><a href="http://uptenlist.com/wp-content/uploads/2012/07/8.-BHA-and-BHT-e1342108069367.jpg"><img class="aligncenter size-full wp-image-755" src="http://uptenlist.com/wp-content/uploads/2012/07/8.-BHA-and-BHT-e1342108069367.jpg"  alt="8. BHA and BHT" width="550" height="257" \/></a></div></p>
+<p>It’s a preservative that works as an anti-oxidation in order to preserve the flavor, color, and avoids rancidity. It’s a common ingredient in most cereals, gum, frozen sausages, and chips. Based on studies that continuous intake of those foods may trigger formation of cancer.</p>
+<h3><strong>7. TBHQ</strong></h3>
+<p><div class="xc_pinterest"><a href="#" onClick='window.open("http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fuptenlist.com%2Fhealth%2Ftop-10-questionable-food-additives%2F&media=http://uptenlist.com/wp-content/uploads/2012/07/7.-TBHQ-e1342108048248.jpg&description=Top+10+Questionable+Food+Additives","Pinterest","scrollbars=no,menubar=no,width=600,height=380,resizable=yes,toolbar=no,location=no,status=no")' class="xc_pin"></a><a href="http://uptenlist.com/wp-content/uploads/2012/07/7.-TBHQ-e1342108048248.jpg"><img class="aligncenter size-full wp-image-754" src="http://uptenlist.com/wp-content/uploads/2012/07/7.-TBHQ-e1342108048248.jpg"  alt="TBHQ" width="550" height="221" \/></a></div></p>
+<p>This is actually a common preservative found in most of the women cosmetic products, varnishes, and lacquers. Imagine that it also a percentage of it is being mixed in your favorite Chicken McNuggets, Walnut Salad, and the McGriddle. In fact, an accumulation of 5 grams can kill anyone. It’s true that there is a lower percentage of it being added for general consumption, but it still risky.</p>
+<h3><strong>6. Ammonium Sulfate</strong></h3>
+<p><div class="xc_pinterest"><a href="#" onClick='window.open("http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fuptenlist.com%2Fhealth%2Ftop-10-questionable-food-additives%2F&media=http://uptenlist.com/wp-content/uploads/2012/07/6.-Ammonium-Sulfate-e1342108038534.jpg&description=Top+10+Questionable+Food+Additives","Pinterest","scrollbars=no,menubar=no,width=600,height=380,resizable=yes,toolbar=no,location=no,status=no")' class="xc_pin"></a><a href="http://uptenlist.com/wp-content/uploads/2012/07/6.-Ammonium-Sulfate-e1342108038534.jpg"><img class="aligncenter size-full wp-image-753" src="http://uptenlist.com/wp-content/uploads/2012/07/6.-Ammonium-Sulfate-e1342108038534.jpg"  alt="Ammonium Sulfate" width="550" height="410" \/></a></div></p>
+<p>It serves as bread yeast aside from sugar. However, it’s also used as a fertilizer for all alkaline type of soils. It acts as pesticides as well. Imagine that you are eating your favorite bread as if you are one of the pests that must be killed.</p>
+<h3><strong>5. Pink Slime</strong></h3>
+<p><div class="xc_pinterest"><a href="#" onClick='window.open("http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fuptenlist.com%2Fhealth%2Ftop-10-questionable-food-additives%2F&media=http://uptenlist.com/wp-content/uploads/2012/07/5.-Pink-Slime-e1342108026899.jpg&description=Top+10+Questionable+Food+Additives","Pinterest","scrollbars=no,menubar=no,width=600,height=380,resizable=yes,toolbar=no,location=no,status=no")' class="xc_pin"></a><a href="http://uptenlist.com/wp-content/uploads/2012/07/5.-Pink-Slime-e1342108026899.jpg"><img class="aligncenter size-full wp-image-752" src="http://uptenlist.com/wp-content/uploads/2012/07/5.-Pink-Slime-e1342108026899.jpg"  alt="Pink Slime" width="550" height="220" \/></a></div></p>
+<p>This is a fast-<strong>food additive</strong> which has a spray content of ammonium hydroxide which is being used primarily to kill bacteria. It is commonly found in most of the fertilizers, homemade bombs, and household cleaners.</p>
+<h3><strong>4.</strong> <strong>Transfat</strong></h3>
+<p><div class="xc_pinterest"><a href="#" onClick='window.open("http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fuptenlist.com%2Fhealth%2Ftop-10-questionable-food-additives%2F&media=http://uptenlist.com/wp-content/uploads/2012/07/4.-Transfat-e1342108008138.jpg&description=Top+10+Questionable+Food+Additives","Pinterest","scrollbars=no,menubar=no,width=600,height=380,resizable=yes,toolbar=no,location=no,status=no")' class="xc_pin"></a><a href="http://uptenlist.com/wp-content/uploads/2012/07/4.-Transfat-e1342108008138.jpg"><img class="aligncenter size-full wp-image-751" src="http://uptenlist.com/wp-content/uploads/2012/07/4.-Transfat-e1342108008138.jpg"  alt="Transfat" width="550" height="260" \/></a></div></p>
+<p>It’s being mixed in most of the processed food that can be bought in grocery stores for extended shelf-life and to minimize greasy feel of food. However, it causes heart diseases, limb loss, kidney failure, and cardiovascular problems. It&#8217;s commonly found mixed in doughnuts, margarine, and fried foods.</p>
+<h3><strong>3. Food color Yellow #6</strong></h3>
+<p><div class="xc_pinterest"><a href="#" onClick='window.open("http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fuptenlist.com%2Fhealth%2Ftop-10-questionable-food-additives%2F&media=http://uptenlist.com/wp-content/uploads/2012/07/3.-Food-color-Yellow-6-e1342107996724.jpg&description=Top+10+Questionable+Food+Additives","Pinterest","scrollbars=no,menubar=no,width=600,height=380,resizable=yes,toolbar=no,location=no,status=no")' class="xc_pin"></a><a href="http://uptenlist.com/wp-content/uploads/2012/07/3.-Food-color-Yellow-6-e1342107996724.jpg"><img class="aligncenter size-full wp-image-750" src="http://uptenlist.com/wp-content/uploads/2012/07/3.-Food-color-Yellow-6-e1342107996724.jpg"  alt="Food color Yellow #6" width="550" height="242" \/></a></div></p>
+<p>It is found in your favorite candy, cheese, carbonated beverages, lemonade, and macaroni. What would you get after tasting it is formation of tumors in kidneys and adrenal glands which are the most common health problems seen in lab animals.</p>
+<h3><strong>2. MSG</strong></h3>
+<p><div class="xc_pinterest"><a href="#" onClick='window.open("http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fuptenlist.com%2Fhealth%2Ftop-10-questionable-food-additives%2F&media=http://uptenlist.com/wp-content/uploads/2012/07/2.-MSG-e1342107986480.jpg&description=Top+10+Questionable+Food+Additives","Pinterest","scrollbars=no,menubar=no,width=600,height=380,resizable=yes,toolbar=no,location=no,status=no")' class="xc_pin"></a><a href="http://uptenlist.com/wp-content/uploads/2012/07/2.-MSG-e1342107986480.jpg"><img class="aligncenter size-full wp-image-749" src="http://uptenlist.com/wp-content/uploads/2012/07/2.-MSG-e1342107986480.jpg"  alt="MSG" width="550" height="553" \/></a></div></p>
+<p>It has been said that it is the secret weapon in all cooking methodologies because of its umami taste. It enhances the flavor of any food that you cook and prepare. It is the favorite seasoning being used in Asian cuisines, snacks, lunch meats, soup products, snacks, and frozen dinners. It is a <strong>questionable food additive</strong> because it may results to sudden headaches, nausea, tightness in chest, and migraines.</p>
+<h3><strong>1. Sodium Nitrite</strong></h3>
+<p><div class="xc_pinterest"><a href="#" onClick='window.open("http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fuptenlist.com%2Fhealth%2Ftop-10-questionable-food-additives%2F&media=http://uptenlist.com/wp-content/uploads/2012/07/1.-Sodium-Nitrite-e1342107973838.jpg&description=Top+10+Questionable+Food+Additives","Pinterest","scrollbars=no,menubar=no,width=600,height=380,resizable=yes,toolbar=no,location=no,status=no")' class="xc_pin"></a><a href="http://uptenlist.com/wp-content/uploads/2012/07/1.-Sodium-Nitrite-e1342107973838.jpg"><img class="aligncenter size-full wp-image-748" src="http://uptenlist.com/wp-content/uploads/2012/07/1.-Sodium-Nitrite-e1342107973838.jpg"  alt="Sodium Nitrite" width="550" height="227" \/></a></div></p>
+<p>Just like any food additives that you can see in this list, they all serve as food preservatives. Nonetheless, it main purpose is to give flavor to all meat products and preserve that taste. It is mixed in kid’s favorite hotdogs, bacon, ham, corned beef, and smoked fish. Its carcinogen which means it triggers formation of cancer.</p>
+<script type="text/javascript" src="http://uptenlist.com/wp-content/plugins/digg-digg/include/../js/diggdigg-linkedin.js?ver=5.2.9"></script><!-- Social Buttons Generated by Digg Digg plugin v5.2.9,
+    Author : Buffer, Inc
+    Website : http://bufferapp.com/diggdigg -->
+			</div>
+
+			
+			<div class="ptags">Tags: <a href="http://uptenlist.com/tag/food-additives/" rel="tag">food additives</a>, <a href="http://uptenlist.com/tag/foods-2/" rel="tag">foods</a>, <a href="http://uptenlist.com/tag/health-2/" rel="tag">health</a></div>
+
+		</article>
+
+	
+  
+
+    <center></center>
+
+
+  
+
+      <style>input, textarea{}
+
+#authorarea{border:#9EBAC7 1px solid; margin:10px 0px; padding:6px 8px 14px 6px; background-repeat:no-repeat; color:#555; background-color:#e2eaee}
+
+#authorarea h3{font-size:14px; color:#333; font-weight:bold; margin:0}
+
+#authorarea h3 a{text-decoration:none; color:#333; font-weight:bold}
+
+#authorarea img{margin:0;  float:left; border:1px solid #ddd; width:60px; height:60px;  margin-right:12px}
+
+#authorarea p{color:#333; margin:0}
+
+#authorarea p a{color:#333}
+
+.authorinfo{ }
+
+</style>
+
+<div id="authorarea">
+
+<img alt='' src='http://0.gravatar.com/avatar/a49b54dbbead4e1c682d514a969165f9?s=60&amp;d=monsterid&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' />
+<div class="authorinfo">
+
+<p><b>About  <a href="http://uptenlist.com/author/josef/" title="Posts by Josef Ray F. Dagatan" rel="author">Josef Ray F. Dagatan</a></b> - </p>
+
+</div>
+
+</div>    
+
+
+
+<div id="related" class="clearfix">
+
+	<div id="sharemark">
+
+<div style="float: left;"><h1>Related Posts </h1></div>
+
+ 
+	<div id="cb"></div>
+
+</div>
+
+	
+		
+
+		<div class="related">
+
+			  
+
+					<span class="relatedimg">
+
+              
+<a href="http://uptenlist.com/foods/top-10-fast-food-chains-in-the-u-s/"> <img width="150" height="125" src="http://uptenlist.com/wp-content/uploads/2012/07/wendys-150x125.jpg" class="attachment-relatedimg wp-post-image" alt="wendys" title="" /> </a>
+
+      
+
+                    </span>  					
+
+			<div class="relatedpost">
+
+				<h3><a href="http://uptenlist.com/foods/top-10-fast-food-chains-in-the-u-s/" rel="bookmark" title="Top 10 Fast Food Chains in the U.S.">Top 10 Fast Food Chains in the U.S.</a></h3>
+
+				 
+
+			</div>
+
+
+
+		</div> 
+
+	
+
+	
+		
+
+		<div class="related">
+
+			  
+
+					<span class="relatedimg">
+
+              
+<a href="http://uptenlist.com/foods/top-10-shocking-food-facts/"> <img width="150" height="125" src="http://uptenlist.com/wp-content/uploads/2012/06/10-150x125.jpg" class="attachment-relatedimg wp-post-image" alt="Naturally-radioactive-fruit" title="" /> </a>
+
+      
+
+                    </span>  					
+
+			<div class="relatedpost">
+
+				<h3><a href="http://uptenlist.com/foods/top-10-shocking-food-facts/" rel="bookmark" title="Top 10 Shocking Food Facts">Top 10 Shocking Food Facts</a></h3>
+
+				 
+
+			</div>
+
+
+
+		</div> 
+
+	
+
+	
+		
+
+		<div class="related">
+
+			  
+
+					<span class="relatedimg">
+
+              
+<a href="http://uptenlist.com/health/10-worst-jobs-you-dont-want-to-do/"> <img width="150" height="125" src="http://uptenlist.com/wp-content/uploads/2012/06/4.-Oil-Rig-Worker-150x125.jpg" class="attachment-relatedimg wp-post-image" alt="4. Oil Rig Worker" title="" /> </a>
+
+      
+
+                    </span>  					
+
+			<div class="relatedpost">
+
+				<h3><a href="http://uptenlist.com/health/10-worst-jobs-you-dont-want-to-do/" rel="bookmark" title="10 Worst Jobs You Don&#8217;t Want to Do">10 Worst Jobs You Don&#8217;t Want to Do</a></h3>
+
+				 
+
+			</div>
+
+
+
+		</div> 
+
+	
+
+	
+		
+
+		<div class="related">
+
+			  
+
+					<span class="relatedimg">
+
+              
+<a href="http://uptenlist.com/all/10-fitness-tips-to-be-healthy/"> <img width="150" height="125" src="http://uptenlist.com/wp-content/uploads/2012/06/2.-Schedule-Your-Regular-WorkoutExercises-150x125.jpg" class="attachment-relatedimg wp-post-image" alt="2. Schedule Your Regular WorkoutExercises" title="" /> </a>
+
+      
+
+                    </span>  					
+
+			<div class="relatedpost">
+
+				<h3><a href="http://uptenlist.com/all/10-fitness-tips-to-be-healthy/" rel="bookmark" title="10 Fitness Tips to Be Healthy">10 Fitness Tips to Be Healthy</a></h3>
+
+				 
+
+			</div>
+
+
+
+		</div> 
+
+	
+
+	
+
+
+</div> <div id="cb"></div>
+
+ 	
+
+		
+<!-- You can start editing here. --> 
+<div class="comments-box"> <a name="comments" id="comments"></a>
+  
+  
+  <!-- If comments are open, but there are no comments. -->
+  
+  
+     	 
+  <div id="respond">     
+    <h2>Leave a comment</h2>
+    <div class="cancel-comment-reply"> <small>
+      <a rel="nofollow" id="cancel-comment-reply-link" href="/health/top-10-questionable-food-additives/#respond" style="display:none;">Click here to cancel reply.</a>
+      </small> </div>
+    
+    <form action="http://uptenlist.com/wp-comments-post.php" method="post" id="commentform">
+      
+      <p>
+        <input class="author" type="text" value="Your Name..." onclick="this.value='';" name="author" id="author" size="22" tabindex="1"/>
+        <label for="author"><small>
+        (Required)
+        </small></label>
+      </p>
+      <p>
+        <input class="email" type="text" value="Your Email..." onclick="this.value='';" name="email" id="email" size="22" tabindex="2"/>
+        <label for="email"><small>(Will not be published)
+         (Required)
+        </small></label>
+      </p>
+      <p>
+        <input class="url" type="text" value="Your Website..." onclick="this.value='';" name="url" id="url" size="22" tabindex="3"/>
+        <label for="url"><small>(Optional)</small></label>
+      </p>
+      
+
+      <p>
+        <textarea name="comment" id="comment" tabindex="4"></textarea>
+      </p>
+           <p><small><strong> XHTML: </strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>
+      <p>
+        <input class="submit" name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+        <input type='hidden' name='comment_post_ID' value='746' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+
+      </p>
+      <p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="547df3ea4e" /></p>
+    </form>
+    
+  </div>
+  
+</div>
+
+
+
+ </div>  
+
+     </div><!-- end #content -->
+
+
+
+    <aside>
+
+
+
+   
+
+ 
+
+		    	 <div class="fsearchbg"> 
+
+
+
+      	<form method="get" id="footersearch" action="http://uptenlist.com/">
+
+
+
+			           <input type="text" name="s" value="Search News - Enter Keyword" onblur="if(this.value=='') this.value='Search News - Enter Keyword';" onfocus="if(this.value=='Search News - Enter Keyword') this.value='';" id="s" />
+
+
+
+			<input type="submit" value=" " id="searchsubmit" />
+
+
+
+		   </form> 
+
+
+
+       </div>
+
+
+
+
+			<div id="sidebar">
+
+
+
+<div class="adspace-widget widget">		<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9995628201837835";
+/* Bottom of Toptensthings 336*280 */
+google_ad_slot = "5859227309";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script> 		
+		<br/></div>		
+<!--begin of social widget--> 
+<div style="margin-bottom:10px;">
+
+<div id="multiplesocialwidget-id"> <!-- Begin Widget -->
+
+<div id="multiplesocialwidget-id-widget" style="background: #EBEBEB; padding: 1px 8px 1px 3px;text-align: left;border-image: initial;font-size:10px;font-family: Arial,Helvetica,sans-serif; border-bottom: 1px solid #E6E6E6;"> 
+Connect with us on social networks</div>
+
+	<div class="fb-likebox" style="background: #ECEEF5;"> <!-- Facebook -->
+		<iframe src="//www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Uptenlistcom/227478887370752&amp;send=false&amp;layout=standard&amp;width=289&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=80&amp;appId=234513819928295" scrolling="no" frameborder="0" style=" overflow:hidden; width:289px; height:80px;"></iframe>
+	</div>
+     
+    <div class="twitter" style="background: #DBECF4;"> <!-- Twitter -->
+        	<iframe title="" style="width: 289px; height: 20px;" class="twitter-follow-button" src="http://platform.twitter.com/widgets/follow_button.html#_=1319978796351&amp;align=&amp;button=blue&amp;id=twitter_tweet_button_0&amp;lang=en&amp;link_color=&amp;screen_name=uptenlist&amp;show_count=&amp;show_screen_name=&amp;text_color=" frameborder="0" scrolling="no"></iframe>
+	</div>
+    
+ 
+	<div class="googleplus" style="background: #fff;"> <!-- Google -->
+		
+
+
+<!-- Place this tag where you want the +1 button to render -->
+
+<g:plusone annotation="inline" width="300" href="http://uptenlist.com"></g:plusone>
+
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+	</div>
+
+
+
+	<div id="email-news-subscribe" style="background: #fdead2;"> <!-- Email Subscribe -->
+		<div class="email-box">
+			<form action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=uptenlist', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">	
+				<input class="email" type="text" style="width:177px; font-size: 12px;" id="email" name="email" value="Enter your email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">		
+				<input type="hidden" value="uptenlist" name="uri">
+				<input type="hidden" name="loc" value="en_US">
+				<input class="subscribe" name="commit" type="submit" value="Subscribe">	
+			</form>
+		</div>
+	</div>
+
+<div id="get-im" style="background: #EBEBEB; padding: 1px 8px 1px 3px; border-image: initial;font-size:10px;font-family: Arial,Helvetica,sans-serif;height:8px">
+
+ </div></div> <!-- End Widget -->
+ </div>
+<!--end of social widget--> 
+		<div class="section pyre_tabs">		<!-- BEGIN WIDGET -->
+		<div class="tabs-wrapper">
+			
+			<ul class="tabs">
+				<li><a href="#tab1">Popular</a></li>
+				<li><a href="#tab2">Comments</a></li>
+				<li><a href="#tab3">Tags</a></li>
+			</ul>
+			
+			<div class="tabs_container">
+			
+				<div id="tab1" class="tab_content">
+																							<div class="block-item-small">
+						 
+							<div class="block-image"><a href="http://uptenlist.com/places/10-unseen-and-natural-wonders-of-the-world/" title="10 Unseen and Natural Wonders of the World"><img width="50" height="50" src="http://uptenlist.com/wp-content/uploads/2012/07/8.-The-Leshan-Giant-Buddha-of-China-50x50.jpg" class="attachment-sidebar-thumb wp-post-image" alt="8. The Leshan Giant Buddha of China" title="8. The Leshan Giant Buddha of China" /></a></div>
+						<div class="block-image-r">		 	 
+							<h2><a href='http://uptenlist.com/places/10-unseen-and-natural-wonders-of-the-world/' title='10 Unseen and Natural Wonders of the World'>10 Unseen and Natural Wonders of the World</a></h2>
+							<span class="block-meta">July 12, 2012, <a href="http://uptenlist.com/places/10-unseen-and-natural-wonders-of-the-world/#comments" title="Comment on 10 Unseen and Natural Wonders of the World">2 Comments</a></span>
+						</div>
+                        	</div>
+																		<div class="block-item-small">
+						 
+							<div class="block-image"><a href="http://uptenlist.com/entertainment/top-10-american-drama-shows/" title="Top 10 American Drama Shows"><img width="50" height="50" src="http://uptenlist.com/wp-content/uploads/2012/06/Switched-At-Birth-50x50.jpg" class="attachment-sidebar-thumb wp-post-image" alt="Switched-At-Birth" title="Switched-At-Birth" /></a></div>
+						<div class="block-image-r">		 	 
+							<h2><a href='http://uptenlist.com/entertainment/top-10-american-drama-shows/' title='Top 10 American Drama Shows'>Top 10 American Drama Shows</a></h2>
+							<span class="block-meta">June 19, 2012, <a href="http://uptenlist.com/entertainment/top-10-american-drama-shows/#comments" title="Comment on Top 10 American Drama Shows">1 Comment</a></span>
+						</div>
+                        	</div>
+																		<div class="block-item-small">
+						 
+							<div class="block-image"><a href="http://uptenlist.com/foods/top-10-shocking-food-facts/" title="Top 10 Shocking Food Facts"><img width="50" height="50" src="http://uptenlist.com/wp-content/uploads/2012/06/10-50x50.jpg" class="attachment-sidebar-thumb wp-post-image" alt="Naturally-radioactive-fruit" title="Naturally-radioactive-fruit" /></a></div>
+						<div class="block-image-r">		 	 
+							<h2><a href='http://uptenlist.com/foods/top-10-shocking-food-facts/' title='Top 10 Shocking Food Facts'>Top 10 Shocking Food Facts</a></h2>
+							<span class="block-meta">June 15, 2012, <a href="http://uptenlist.com/foods/top-10-shocking-food-facts/#comments" title="Comment on Top 10 Shocking Food Facts">1 Comment</a></span>
+						</div>
+                        	</div>
+																		<div class="block-item-small">
+						 
+							<div class="block-image"><a href="http://uptenlist.com/cars/buying-an-old-car-here-10-tips-you/" title="Top 10 Best Tips For Buying A Used Car"><img width="50" height="50" src="http://uptenlist.com/wp-content/uploads/2012/06/Checking-exterior-of-the-car-50x50.jpg" class="attachment-sidebar-thumb wp-post-image" alt="Checking exterior of the car" title="Checking exterior of the car" /></a></div>
+						<div class="block-image-r">		 	 
+							<h2><a href='http://uptenlist.com/cars/buying-an-old-car-here-10-tips-you/' title='Top 10 Best Tips For Buying A Used Car'>Top 10 Best Tips For Buying A Used Car</a></h2>
+							<span class="block-meta">June 13, 2012, <a href="http://uptenlist.com/cars/buying-an-old-car-here-10-tips-you/#comments" title="Comment on Top 10 Best Tips For Buying A Used Car">1 Comment</a></span>
+						</div>
+                        	</div>
+																		<div class="block-item-small">
+						 
+							<div class="block-image"><a href="http://uptenlist.com/romantic/top-ten-ways-to-surprise-your-lover/" title="Top Ten Ways to Surprise Your Lover"><img width="50" height="50" src="http://uptenlist.com/wp-content/uploads/2012/06/10.-Give-a-Massage-50x50.jpg" class="attachment-sidebar-thumb wp-post-image" alt="10. Give a Massage" title="10. Give a Massage" /></a></div>
+						<div class="block-image-r">		 	 
+							<h2><a href='http://uptenlist.com/romantic/top-ten-ways-to-surprise-your-lover/' title='Top Ten Ways to Surprise Your Lover'>Top Ten Ways to Surprise Your Lover</a></h2>
+							<span class="block-meta">June 12, 2012, <a href="http://uptenlist.com/romantic/top-ten-ways-to-surprise-your-lover/#comments" title="Comment on Top Ten Ways to Surprise Your Lover">1 Comment</a></span>
+						</div>
+                        	</div>
+															</div>
+				
+				<div id="tab2" class="tab_content">
+											<div class="block-item-small">
+						<div class="block-image">	<img alt='' src='http://0.gravatar.com/avatar/48226490dbf854fd0e44cf183c5088b0?s=50&amp;d=monsterid&amp;r=G' class='avatar avatar-50 photo' height='50' width='50' />						</div>		<div class="block-image-r">
+                            	<h2>Beliz says:</h2>
+							<a class="comment-text-side" href="http://uptenlist.com/places/10-unseen-and-natural-wonders-of-the-world/#comment-45" title="Beliz on 10 Unseen and Natural Wonders of the World">So beautiful. I would love to visit any of these....</a>
+						</div>	</div>
+											<div class="block-item-small">
+						<div class="block-image">	<img alt='' src='http://0.gravatar.com/avatar/025fccc2d247e375ecefc16d3ec61ccb?s=50&amp;d=monsterid&amp;r=G' class='avatar avatar-50 photo' height='50' width='50' />						</div>		<div class="block-image-r">
+                            	<h2>hultan2003 says:</h2>
+							<a class="comment-text-side" href="http://uptenlist.com/places/10-unseen-and-natural-wonders-of-the-world/#comment-41" title="hultan2003 on 10 Unseen and Natural Wonders of the World">those places are incredible , they deserves to be visited...</a>
+						</div>	</div>
+											<div class="block-item-small">
+						<div class="block-image">	<img alt='' src='http://0.gravatar.com/avatar/01d6742a63b861bf3f1919e0f4010db3?s=50&amp;d=monsterid&amp;r=G' class='avatar avatar-50 photo' height='50' width='50' />						</div>		<div class="block-image-r">
+                            	<h2>umair77777 says:</h2>
+							<a class="comment-text-side" href="http://uptenlist.com/foods/top-10-shocking-food-facts/#comment-26" title="umair77777 on Top 10 Shocking Food Facts">I did NOT know any of the facts stated above. :O
+
+Awesome stuff....</a>
+						</div>	</div>
+											<div class="block-item-small">
+						<div class="block-image">	<img alt='' src='http://0.gravatar.com/avatar/01d6742a63b861bf3f1919e0f4010db3?s=50&amp;d=monsterid&amp;r=G' class='avatar avatar-50 photo' height='50' width='50' />						</div>		<div class="block-image-r">
+                            	<h2>umair77777 says:</h2>
+							<a class="comment-text-side" href="http://uptenlist.com/entertainment/top-10-american-drama-shows/#comment-25" title="umair77777 on Top 10 American Drama Shows">What a brilliant ARTICLE. Made me fall in love with ONE TREE...</a>
+						</div>	</div>
+											<div class="block-item-small">
+						<div class="block-image">	<img alt='' src='http://1.gravatar.com/avatar/dd2cd82dc545dbfabd9de0b88b2b15bb?s=50&amp;d=monsterid&amp;r=G' class='avatar avatar-50 photo' height='50' width='50' />						</div>		<div class="block-image-r">
+                            	<h2>Raheel says:</h2>
+							<a class="comment-text-side" href="http://uptenlist.com/all/10-most-dangerous-cities-in-the-world-in-2012/#comment-19" title="Raheel on 10 Most Dangerous Cities in the World in 2012">Thanks God PAKISTAN ka koe city nhi hai...</a>
+						</div>	</div>
+									</div>
+				
+				<div id="tab3" class="tab_content"> 
+					<p class='tag_cloud'>
+					<a href='http://uptenlist.com/tag/2012/' class='tag-link-26' title='5 topics' style='font-size: 19.2pt;'>2012</a>
+<a href='http://uptenlist.com/tag/america/' class='tag-link-75' title='3 topics' style='font-size: 15pt;'>america</a>
+<a href='http://uptenlist.com/tag/apple-2/' class='tag-link-49' title='1 topic' style='font-size: 8pt;'>apple</a>
+<a href='http://uptenlist.com/tag/cities/' class='tag-link-33' title='1 topic' style='font-size: 8pt;'>Cities</a>
+<a href='http://uptenlist.com/tag/dangerous/' class='tag-link-34' title='2 topics' style='font-size: 12.2pt;'>Dangerous</a>
+<a href='http://uptenlist.com/tag/dangerous-cities/' class='tag-link-35' title='1 topic' style='font-size: 8pt;'>dangerous cities</a>
+<a href='http://uptenlist.com/tag/entertainment-2/' class='tag-link-29' title='3 topics' style='font-size: 15pt;'>entertainment</a>
+<a href='http://uptenlist.com/tag/events-2/' class='tag-link-9' title='3 topics' style='font-size: 15pt;'>events</a>
+<a href='http://uptenlist.com/tag/expensive-2/' class='tag-link-40' title='3 topics' style='font-size: 15pt;'>expensive</a>
+<a href='http://uptenlist.com/tag/expensive-watches/' class='tag-link-41' title='1 topic' style='font-size: 8pt;'>expensive watches</a>
+<a href='http://uptenlist.com/tag/expensive-watches-2012/' class='tag-link-42' title='1 topic' style='font-size: 8pt;'>expensive watches 2012</a>
+<a href='http://uptenlist.com/tag/facts-2/' class='tag-link-24' title='7 topics' style='font-size: 22pt;'>facts</a>
+<a href='http://uptenlist.com/tag/fashion-2/' class='tag-link-106' title='3 topics' style='font-size: 15pt;'>fashion</a>
+<a href='http://uptenlist.com/tag/fastest/' class='tag-link-86' title='2 topics' style='font-size: 12.2pt;'>fastest</a>
+<a href='http://uptenlist.com/tag/fathers-day/' class='tag-link-8' title='1 topic' style='font-size: 8pt;'>father's day</a>
+<a href='http://uptenlist.com/tag/features/' class='tag-link-50' title='1 topic' style='font-size: 8pt;'>features</a>
+<a href='http://uptenlist.com/tag/fitness/' class='tag-link-18' title='1 topic' style='font-size: 8pt;'>fitness</a>
+<a href='http://uptenlist.com/tag/fitness-tips/' class='tag-link-21' title='1 topic' style='font-size: 8pt;'>Fitness Tips</a>
+<a href='http://uptenlist.com/tag/foods-2/' class='tag-link-71' title='2 topics' style='font-size: 12.2pt;'>foods</a>
+<a href='http://uptenlist.com/tag/funny/' class='tag-link-103' title='2 topics' style='font-size: 12.2pt;'>funny</a>
+<a href='http://uptenlist.com/tag/geek/' class='tag-link-4' title='1 topic' style='font-size: 8pt;'>geek</a>
+<a href='http://uptenlist.com/tag/geeky/' class='tag-link-7' title='1 topic' style='font-size: 8pt;'>geeky</a>
+<a href='http://uptenlist.com/tag/gifts/' class='tag-link-5' title='1 topic' style='font-size: 8pt;'>gifts</a>
+<a href='http://uptenlist.com/tag/health-2/' class='tag-link-17' title='4 topics' style='font-size: 17.3333333333pt;'>health</a>
+<a href='http://uptenlist.com/tag/healthy/' class='tag-link-19' title='1 topic' style='font-size: 8pt;'>healthy</a>
+<a href='http://uptenlist.com/tag/hollywood-2/' class='tag-link-32' title='2 topics' style='font-size: 12.2pt;'>hollywood</a>
+<a href='http://uptenlist.com/tag/humor-2/' class='tag-link-102' title='2 topics' style='font-size: 12.2pt;'>humor</a>
+<a href='http://uptenlist.com/tag/ios6/' class='tag-link-45' title='1 topic' style='font-size: 8pt;'>ios6</a>
+<a href='http://uptenlist.com/tag/iphone-5/' class='tag-link-47' title='1 topic' style='font-size: 8pt;'>iphone 5</a>
+<a href='http://uptenlist.com/tag/iphone5/' class='tag-link-46' title='1 topic' style='font-size: 8pt;'>iphone5</a>
+<a href='http://uptenlist.com/tag/jobs/' class='tag-link-36' title='1 topic' style='font-size: 8pt;'>jobs</a>
+<a href='http://uptenlist.com/tag/love/' class='tag-link-53' title='1 topic' style='font-size: 8pt;'>love</a>
+<a href='http://uptenlist.com/tag/lover/' class='tag-link-55' title='1 topic' style='font-size: 8pt;'>lover</a>
+<a href='http://uptenlist.com/tag/movies/' class='tag-link-31' title='3 topics' style='font-size: 15pt;'>movies</a>
+<a href='http://uptenlist.com/tag/olympics/' class='tag-link-25' title='1 topic' style='font-size: 8pt;'>olympics</a>
+<a href='http://uptenlist.com/tag/romantic-2/' class='tag-link-54' title='1 topic' style='font-size: 8pt;'>romantic</a>
+<a href='http://uptenlist.com/tag/romantic-movies/' class='tag-link-30' title='1 topic' style='font-size: 8pt;'>romantic movies</a>
+<a href='http://uptenlist.com/tag/shopping/' class='tag-link-6' title='1 topic' style='font-size: 8pt;'>shopping</a>
+<a href='http://uptenlist.com/tag/surprise-your-lover/' class='tag-link-56' title='1 topic' style='font-size: 8pt;'>surprise your lover</a>
+<a href='http://uptenlist.com/tag/technology-2/' class='tag-link-48' title='2 topics' style='font-size: 12.2pt;'>technology</a>
+<a href='http://uptenlist.com/tag/top-10/' class='tag-link-64' title='2 topics' style='font-size: 12.2pt;'>top 10</a>
+<a href='http://uptenlist.com/tag/women/' class='tag-link-20' title='2 topics' style='font-size: 12.2pt;'>women</a>
+<a href='http://uptenlist.com/tag/world/' class='tag-link-85' title='2 topics' style='font-size: 12.2pt;'>world</a>
+<a href='http://uptenlist.com/tag/worst/' class='tag-link-38' title='1 topic' style='font-size: 8pt;'>worst</a>
+<a href='http://uptenlist.com/tag/worst-jobs/' class='tag-link-37' title='1 topic' style='font-size: 8pt;'>worst jobs</a>					</p>
+				</div>
+				
+			</div>
+		
+		</div>
+		<!-- END WIDGET -->
+		</div></div><div class="section pyre_posts">		<!-- BEGIN WIDGET -->
+		<div id="sidebartitlewrapper"><h3>Recent Posts</h3></div><div class="sectioncont">		
+				
+							
+				<div class="block-item-small">
+		 
+		 
+			<div class="block-image"><a href="http://uptenlist.com/all/10-most-dangerous-cities-in-the-world-in-2012/" title="10 Most Dangerous Cities in the World in 2012"><img width="50" height="50" src="http://uptenlist.com/wp-content/uploads/2012/06/1.-Baghdad-Iraq-50x50.jpg" class="attachment-sidebar-thumb wp-post-image" alt="1. Baghdad, Iraq" title="1. Baghdad, Iraq" /></a></div>
+ 
+		<div class="block-image-r">	<h2><a href='http://uptenlist.com/all/10-most-dangerous-cities-in-the-world-in-2012/' title='10 Most Dangerous Cities in the World in 2012'>10 Most Dangerous Cities in the World in 2012</a></h2>
+			<span class="block-meta">June 7, 2012, <a href="http://uptenlist.com/all/10-most-dangerous-cities-in-the-world-in-2012/#comments" title="Comment on 10 Most Dangerous Cities in the World in 2012">1 Comment</a></span> </div>
+		</div>
+				<div class="block-item-small">
+		 
+		 
+			<div class="block-image"><a href="http://uptenlist.com/all/10-most-romantic-movies-in-2012/" title="10 Most Romantic Movies in  2012"><img width="50" height="50" src="http://uptenlist.com/wp-content/uploads/2012/06/4.-The-Vow-50x50.jpg" class="attachment-sidebar-thumb wp-post-image" alt="4. The Vow" title="4. The Vow" /></a></div>
+ 
+		<div class="block-image-r">	<h2><a href='http://uptenlist.com/all/10-most-romantic-movies-in-2012/' title='10 Most Romantic Movies in  2012'>10 Most Romantic Movies in  2012</a></h2>
+			<span class="block-meta">June 7, 2012, <a href="http://uptenlist.com/all/10-most-romantic-movies-in-2012/#respond" title="Comment on 10 Most Romantic Movies in  2012">No Comments</a></span> </div>
+		</div>
+				<div class="block-item-small">
+		 
+		 
+			<div class="block-image"><a href="http://uptenlist.com/misc/10-interesting-facts-about-the-london-olympics-2012/" title="10 Interesting Facts About the London Olympics 2012"><img width="50" height="50" src="http://uptenlist.com/wp-content/uploads/2012/06/1.-The-Capacity-of-Stadium-50x50.jpg" class="attachment-sidebar-thumb wp-post-image" alt="1. The Capacity of Stadium" title="1. The Capacity of Stadium" /></a></div>
+ 
+		<div class="block-image-r">	<h2><a href='http://uptenlist.com/misc/10-interesting-facts-about-the-london-olympics-2012/' title='10 Interesting Facts About the London Olympics 2012'>10 Interesting Facts About the London Olympics 2012</a></h2>
+			<span class="block-meta">June 6, 2012, <a href="http://uptenlist.com/misc/10-interesting-facts-about-the-london-olympics-2012/#comments" title="Comment on 10 Interesting Facts About the London Olympics 2012">1 Comment</a></span> </div>
+		</div>
+				<div class="block-item-small">
+		 
+		 
+			<div class="block-image"><a href="http://uptenlist.com/all/10-fitness-tips-to-be-healthy/" title="10 Fitness Tips to Be Healthy"><img width="50" height="50" src="http://uptenlist.com/wp-content/uploads/2012/06/2.-Schedule-Your-Regular-WorkoutExercises-50x50.jpg" class="attachment-sidebar-thumb wp-post-image" alt="2. Schedule Your Regular WorkoutExercises" title="2. Schedule Your Regular WorkoutExercises" /></a></div>
+ 
+		<div class="block-image-r">	<h2><a href='http://uptenlist.com/all/10-fitness-tips-to-be-healthy/' title='10 Fitness Tips to Be Healthy'>10 Fitness Tips to Be Healthy</a></h2>
+			<span class="block-meta">June 5, 2012, <a href="http://uptenlist.com/all/10-fitness-tips-to-be-healthy/#respond" title="Comment on 10 Fitness Tips to Be Healthy">No Comments</a></span> </div>
+		</div>
+				<div class="block-item-small">
+		 
+		 
+			<div class="block-image"><a href="http://uptenlist.com/misc/top-10-best-fathers-day-gifts-in-2012/" title="Top 10 Best Father’s Day Gifts in 2012"><img width="50" height="50" src="http://uptenlist.com/wp-content/uploads/2012/06/Fathers-Days-2012-50x50.jpg" class="attachment-sidebar-thumb wp-post-image" alt="Fathers Days 2012" title="Fathers Days 2012" /></a></div>
+ 
+		<div class="block-image-r">	<h2><a href='http://uptenlist.com/misc/top-10-best-fathers-day-gifts-in-2012/' title='Top 10 Best Father’s Day Gifts in 2012'>Top 10 Best Father’s Day Gifts in 2012</a></h2>
+			<span class="block-meta">June 5, 2012, <a href="http://uptenlist.com/misc/top-10-best-fathers-day-gifts-in-2012/#respond" title="Comment on Top 10 Best Father’s Day Gifts in 2012">No Comments</a></span> </div>
+		</div>
+				<!-- END WIDGET -->
+		</div></div><div class="section widget_pluswidget"><div id="sidebartitlewrapper"><h3>Visit us on Google+</h3></div><div class="sectioncont"><script type="text/javascript">(function(){var po = document.createElement("script");po.type = "text/javascript";po.async = true;po.src = "https://apis.google.com/js/plusone.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(po, s);})();</script><g:plus href="https://plus.google.com/116388555928362508416" size="smallbadge"></g:plus></div></div><div class="section facebook_like"><div id="sidebartitlewrapper"><h3>Find us on Facebook</h3></div><div class="sectioncont">		<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fuptenlist&amp;width=300&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=260" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height: 260px;" allowTransparency="true"></iframe>
+		</div></div>
+
+
+			</div><!-- end #r-sidebar -->
+
+
+
+		</aside>  
+
+	</section>
+
+</div><!-- #wrapper -->
+
+	<footer>
+
+    <div id="footer1">     <div id="footerwrapper1"> 
+
+    <div id="fsidebar1">                                            
+
+       		
+
+                  
+
+    </div>
+
+    <div id="fsidebar2">                                            
+
+       		
+
+                  
+
+    </div> 
+
+    <div id="fsidebar3">                                            
+
+       		
+
+                  
+
+    </div>   
+
+     <div id="fsidebar4">
+
+    
+
+    </div>     <div style="clear: both;"> </div> 
+
+    </div>  </div>
+
+ <div id="footer2">  <div id="footerwrapper2"> 
+
+<div id="fotnav">
+
+		 	<ul id="fnav">  <center> 
+
+
+      </center>	</ul> 
+
+         	</div> 
+
+      <div id="fotbot">
+
+      <div class="fotlogoleft"> 
+
+        <div class="fotcopy">
+
+   &copy; 2012  -  All Rights Reserved  
+
+        </div>     
+
+		  </div>
+
+	   	<div class="fotlogoright">
+
+	   	 <ul id="skyline"> 
+
+<li id="pad1">  <a href="http://www.facebook.com/pages/Uptenlistcom/227478887370752"><img src="http://uptenlist.com/wp-content/themes/techblog-single/images/fot-fb.png" alt="Become a Fan!" /></a></li>
+
+<li id="pad1">  <a href="http://twitter.com/uptenlist"><img src="http://uptenlist.com/wp-content/themes/techblog-single/images/fot-twitter.png" alt="Follow On Twitter" /></a></li>
+
+<li id="pad1"> <a href="http://uptenlist.com/feed/"><img src="http://uptenlist.com/wp-content/themes/techblog-single/images/fot-feed.png" alt="Subcribe to Our RSS Feed" /></a></li>
+
+<li>
+
+      	<form method="get" id="footersearch" action="http://uptenlist.com/">
+
+			           <input type="text" name="s" value="Search News - Enter Keyword" onblur="if(this.value=='') this.value='Search News - Enter Keyword';" onfocus="if(this.value=='Search News - Enter Keyword') this.value='';" id="s" />
+
+			<input type="submit" value=" " id="searchsubmit" />
+
+		   </form> 
+
+</li>   
+
+       
+
+       </ul>
+
+	   	</div>
+
+    	<div id="cb"></div>
+
+   </div>
+
+  </div>   
+
+	</footer>
+
+<script type='text/javascript' src='http://uptenlist.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.js?ver=3.09'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/uptenlist.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ...","cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://uptenlist.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=3.2'></script>
+
+<div style="display:none;">
+<script id="_wauwt0">var _wau = _wau || []; _wau.push(["small", "g2hwwcu2hen1", "wt0"]);
+(function() {var s=document.createElement("script"); s.async=true;
+s.src="http://widgets.amung.us/small.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+})();</script></div>
+
+</body>
+
+</html>
+<!-- Dynamic page generated in 0.627 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2012-07-16 11:35:49 -->
+<!-- super cache -->

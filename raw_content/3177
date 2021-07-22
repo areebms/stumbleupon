@@ -1,0 +1,965 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+		<title>Photograzing: Tags: cupcakes</title>
+
+<!-- JS Code for Chartbeat -->
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
+   
+	
+			<script src="http://static.seriouseats.com/photograzing/js/mt.js" type="text/javascript"></script>
+	
+	
+
+
+
+<script src="http://static.seriouseats.com/js/jquery.min.js"></script>
+
+	<script src="http://static.seriouseats.com/serious_eats/js/mt-site.js?20120317072553" type="text/javascript"></script>
+	
+	<script src="http://static.seriouseats.com/js/jquery.tools.scroll.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://static.seriouseats.com/js/jquery.accordion.min.js" type="text/javascript"></script>
+	<script src="http://static.seriouseats.com/js/accordion.js" type="text/javascript"></script>
+	<script type="text/javascript">
+var field_stars = new Array();
+function star_over(field, rating, on, off) {
+    for (var i = 1; i <= rating; i++) {
+        var star = document.getElementById(field + '_' + i);
+        star.src = on;
+    }
+    for (var i = rating + 1; i <= field_stars[field]; i++) {
+        var star = document.getElementById(field + '_' + i);
+        star.src = off;
+    }
+}
+function star_out(field, rating, on, off) {
+    var val = document.getElementById(field).value;
+    if (val) {
+        val = parseInt(val);
+    } else {
+        val = 0;
+    }
+    for (var i = 1; i <= val; i++) {
+        var star = document.getElementById(field + '_' + i);
+        star.src = on;
+    }
+    for (var i = val + 1; i <= field_stars[field]; i++) {
+        var star = document.getElementById(field + '_' + i);
+        star.src = off;
+    }
+}
+function star_click(field, rating) {
+    document.getElementById(field).value = rating;
+}
+</script>
+
+   	<script src="http://static.seriouseats.com/js/mobileRedirect.js" type="text/javascript"></script>
+	
+   	
+   	
+
+    
+   	
+
+<!-- JS Code for Google Analytics -->
+<script type="text/javascript">
+	  	var _gaq = _gaq || [];
+  		_gaq.push(['_setAccount', 'UA-962456-1']);
+                _gaq.push(['_setDomainName', '.seriouseats.com']);
+  		_gaq.push(['_trackPageview']);
+
+
+
+  		(function() {
+    		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  		})();
+	</script>
+
+
+
+ 
+
+
+
+
+   <link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/general.css?v=121511" media="screen" />
+
+	
+	
+	
+	
+	<link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/photograzing/css/photo.css" />
+	
+	
+	
+	<link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/print.css" media="print" />
+
+	<!--[if lte IE 8]>
+	    <link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/ie8.css" media="screen" charset="utf-8" />
+	  <![endif]-->
+	<!--[if IE 7]>
+	    <link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/ie7.css" media="screen" charset="utf-8" />
+	  <![endif]-->
+
+
+
+
+
+
+	<meta name="copyright" content="Serious Eats 2012" />
+	<meta http-equiv="Content-Language" content="en-us" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="false" />
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+   <meta name="readability-verification" content="UA7kXkwV7ntCrsptquaq9Ufjh2FcJ9qzDV3C6C5b"/>
+	<link rel="Shortcut Icon" href="http://photograzing.seriouseats.com/favicon.ico" />
+
+	
+
+<meta property="fb:page_id" content="168926019255" />
+	<link rel="alternate" type="application/atom+xml" title="Serious Eats" href="http://feeds.seriouseats.com/seriouseatsfeaturesvideos" />
+	
+
+   <script type="text/javascript">
+   /* <![CDATA[ */
+   $(document).ready(function() {
+       var u = mtGetUser();
+       if (u && u.is_authenticated) {
+           mtUpdateScores();
+       } else {
+           $('.scoring').addClass('scoring-scorable');
+       }
+       
+       	/* ------- Utilities BEGIN --------- */
+		// remove the default text on any search input box with the class "userField"
+		$(".userField").click(function() { 
+			    if ($(this).val() == 'Search Serious Eats'||'Search for Recipes' || 'Search Talk' || 'Search New York' || 'Search Sweets' || 'Search Drinks' || 'Search Slice' || 'Search AHT' || 'Search Photograzing' || 'Search Chicago') {   
+			        $(this).data('original', $(this).val()).val('');
+					$(this).addClass("selected");
+			    }
+			});
+		// put the default text back into any search input box with the class "userField" if the user hasn't typed anything
+		$(".userField").blur(function() { 
+			    if ($(this).val() == '') {   
+					$(this).removeClass("selected");
+			        $(this).val($(this).data('original'));
+			    }
+			});
+		// show and hide the newsletter form signup box
+		$("#subscribe-button").click(function(){
+			$("#newsletter-form").toggle("fast");
+			$(this).text($(this).text() == 'Go' ? 'Close' : 'Go');
+		});
+		/* ------- Utilities END --------- */
+
+   });
+   //mtAttachEvent('load', mtUpdateScores);
+   mtAttachEvent('usersignin', mtUpdateScores);
+   /* ]]> */
+   </script>
+
+
+<!-- socialize.js script should only be included once -->
+<script type="text/javascript" src="http://cdn.gigya.com/js/socialize.js?apiKey=2_ArepGxju5Ep6wgk0f7-tEYmuzM15n0na_Bs7Cw9OzTw2SsDZeoXheFFxBGD9TVK5"></script>
+<script type="text/javascript">
+var conf={}
+</script>
+
+
+
+
+
+	<script type="text/javascript" src="http://use.typekit.com/kti2wqp.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+</head>	
+	
+<body class="community">
+
+<div id="container">
+<div id="header" class="PG" style="background: url('http://static.seriouseats.com/images/siteassets/background_header.png') no-repeat scroll center 0px transparent">
+	<form id="SearchForm" action="http://www.seriouseats.com/cgi-bin/mte/mt-search.cgi" method="get">
+        <input type="hidden" name="__mode" value="gsearch" />
+        <input type="hidden" name="blog_id" value="39" />
+        <input type="hidden" name="site" value="All" />
+        <input id="searchBox" class="query userField" name="search" autocomplete="off" value="Search Serious Eats" />
+		<input type="submit" class="submit" value="Go" />
+    </form>
+
+
+
+
+
+	<div class="widget-sign-in widget">
+
+    <div id="signin-widget-content" class="widget-content" style="top:20px;"></div>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+function mtUpdateSignInWidget(u) {
+    var separator = '&nbsp;&nbsp;|&nbsp;&nbsp;';
+    var el = document.getElementById('signin-widget-content');
+    var content = '';
+    // alert (document.URL);
+    //alert (encodeURIComponent(document.URL));
+    if (!el) return;
+    if (u) {
+        if (u && u.is_authenticated) {
+            user = u;
+            mtSaveUser();
+        } else {
+            // user really isn't logged in; so let's do this!
+            return mtSignIn();
+        }
+    } else {
+        u = mtGetUser();
+    }
+    if (u && u.name) {
+        var url;
+		content += '<div id="login-tab" class="loggedIn"><div id="login-tab-inner">';
+        if (u.is_authenticated) {
+            if (u.is_author) {
+
+				url = 'http://www.seriouseats.com/user/profile/'; 
+
+
+            } else {
+                url = u.url;
+            }
+        } else if (u.url) {
+            url = u.url;
+        } else {
+            url = null;
+        }
+        if (url)
+            content += '<span class="welcome">Hello, <a href="' + url + '">' + u.name + '</a>.</span>';
+        else
+            content += '<span class="welcome">Hello, <strong>' + u.name + '.</span>';
+        if (u.is_author)
+            content += '<span class="account"><a href="http://www.seriouseats.com/cgi-bin/mte/mt-cp.cgi?__mode=edit&blog_id=39&return_to=' + encodeURIComponent(document.URL) + '">Account</a></span>';
+        
+        content += ' | <a href="javascript:void(0)" onclick="return mtSignOutOnClick()">Log out</a>';
+        
+		content += '</div></div><div class="clearer"><!-- --></div>'
+    } else if (u && u.is_banned) {
+        content = 'You do not have permission to sign in to this blog.';
+    } else {
+		content = '<div id="login-tab" class="notLoggedIn"><div id="login-tab-inner"><span class="welcome">Welcome to Serious Eats!</span><a onclick="return mtSignInOnClick(\'login-tab-inner\')" href="javascript:void(0)" id="login-link">Log in</a> or <a href="http://www.seriouseats.com/cgi-bin/mte/mt-cp.cgi?__mode=register&blog_id=39&blog_id=0&return_to=http%3A%2F%2Fwww.seriouseats.com%2Fwelcome%2F">join</a> the community.</div></div><div class="clearer"><!-- --></div>'
+    }
+    //alert ("content is: " + content);
+    el.innerHTML = content;
+}
+mtAttachEvent('usersignin', mtUpdateSignInWidget);
+mtUpdateSignInWidget();
+/* ]]> */
+</script>
+<script type="text/javascript">
+//mtAttachEvent('load', mtUpdateScores);
+//mtAttachEvent('usersignin', mtUpdateScores);
+</script>
+
+	 <h1 id="sitetitle" title="Serious Eats home" style="top:10px;"><a href="http://www.seriouseats.com">Serious Eats - seriouseats.com</a></h1>
+
+
+
+
+	<div id="navarea">
+		<div id="sociallinks">
+			<span class="label">Follow Serious Eats</span><a href="http://foursquare.com/seriouseats" id="link-foursquare">Foursquare</a><a href="http://twitter.com/seriouseats" id="link-twitter">Twitter</a><a href="http://www.facebook.com/seriouseats" id="link-facebook">Facebook</a>
+		</div>
+		<ul id="mainnav" class="global">
+			<li id="item-sites" class="has-subnav"><a href="#">Our Sites</a><ul id="subnav-sites">
+				<li id="item-SE"><a href="http://www.seriouseats.com">Home</a></li>
+						<li id="item-AHT"><a href="http://aht.seriouseats.com/">Burgers <span class="blogname">(A Hamburger Today)</span></a></li>
+						<li id="item-SL"><a href="http://slice.seriouseats.com/">Pizza <span class="blogname">(Slice)</span></a></li>
+						<li id="item-DR"><a href="http://drinks.seriouseats.com/">Drinks</a></li>
+						<li id="item-SW"><a href="http://sweets.seriouseats.com/">Sweets</a></li>
+					</ul></li>
+			<li id="item-cities" class="has-subnav"><a href="#">Cities</a>
+				<ul id="subnav-cities" >
+							<li id="item-SENY"><a href="http://newyork.seriouseats.com/">New York</a></li>
+							<li id="item-CH"><a href="http://chicago.seriouseats.com/">Chicago</a></li>
+							<li><a href="#"><span class="blogname">More Launching Soon!</span></a></li>
+						</ul>
+				</li>
+			<li id="item-community"class="has-subnav"><a href="#">Community</a>
+				<ul id="subnav-community">
+								<li id="item-TK"><a href="http://www.seriouseats.com/talk/">Talk</a></li>
+								<li id="item-PG"><a href="http://photograzing.seriouseats.com/">Photograzing</a></li>
+							</ul>
+				</li>
+			<li id="item-recipes"><a href="http://www.seriouseats.com/recipes/">Recipes</a></li>
+		</ul>
+		</div>
+
+
+<div id="sectionheader">
+<h1 id="sectiontitle"><a href="http://photograzing.seriouseats.com/">Photograzing</a></h1>
+<ul id="sectionnav">
+	<li id="item-search-photograzing" class="has-subnav"><form id="SearchPhotograzingForm" method="get" action="http://photograzing.seriouseats.com/cgi-bin/mte/mt-search.cgi">
+        <input type="hidden" id="IncludeBlogs" name="IncludeBlogs" value="39" />
+        <input type="hidden" name="limit" value="20" />
+        <input id="searchBox" value="Search Photograzing" class="query userField" name="search" value="" />
+        <input type="submit" class="submit" value="Go" />
+    </form>
+        </li>
+	<li id="item-gohome"><a href="http://photograzing.seriouseats.com/">Home</a></li>
+	<li id="item-popular" class="has-subnav"><a href="">Popular</a>
+		<ul>
+		<li class="popLink"><a href="http://photograzing.seriouseats.com/tags/bacon">Bacon</a></li>
+		<li class="popLink"><a href="http://photograzing.seriouseats.com/tags/cupcakes">Cupcakes</a></li>
+		<li class="popLink"><a href="http://photograzing.seriouseats.com/tags/vegetarian">Vegetarian</a></li>
+		<li class="popLink"><a href="http://photograzing.seriouseats.com/tags/gluten%20free">Gluten Free</a></li>
+		<li class="popLink"><a href="/tags/cakes">Cakes</a></li>
+   		</ul>
+       
+        </li>
+	
+</ul>
+
+<div id="sectionlogo"></div>
+</div>
+
+
+<div id="whatshot">
+<div id="whatshot-wrapper">        
+	<h3>What's Hot</h3>
+
+<script type="text/javascript">window.featurescode = "PG";</script>
+<script src="http://www.seriouseats.com/js/skyboxes.js?20120317072553" type="text/javascript"></script>
+
+	<div class="clearfix"></div>
+	</div>
+</div>
+
+</div><!-- close header -->
+
+	<div id="content">
+                <h2 style="border-bottom: 0;">Entries tagged with 'cupcakes'<br />
+		Page 1 of 253</h2>
+
+				<div id="searchTools" class="tools" >
+						<form><p class="left">Viewing Results from:&nbsp;
+
+						<select name="type" class="formTextSmall tan"  style="width: auto;" onchange="if(this.value!='')window.location.href=this.value;">
+		<option value="http://www.seriouseats.com/tags/all/cupcakes" label="All of Serious Eats">All of Serious Eats</option>						
+		<option value="http://www.seriouseats.com/tags/cupcakes" label="Serious Eats">Serious Eats</option>
+		<option value="http://www.seriouseats.com/tags/talk/cupcakes" label="Talk">Talk</option>
+		<option value="http://www.seriouseats.com/tags/recipes/cupcakes" label="Recipes">Recipes</option>
+                <option value="http://drinks.seriouseats.com/tags/cupcakes" label="Drinks">Drinks</option>
+                <option value="http://sweets.seriouseats.com/tags/cupcakes" label="Sweets">Sweets</option>
+		<option value="http://newyork.seriouseats.com/tags/cupcakes" label="Serious Eats: New York">Serious Eats: New York</option>
+                <option value="http://chicago.seriouseats.com/tags/cupcakes" label="Serious Eats: Chicago">Serious Eats: Chicago</option>
+		<option value="http://slice.seriouseats.com/tags/cupcakes" label="Slice">Slice</option>
+		<option value="http://aht.seriouseats.com/tags/cupcakes" label="A Hamburger Today">A Hamburger Today</option>
+		<option value="http://photograzing.seriouseats.com/tags/cupcakes" label="Photograzing" selected>Photograzing</option>
+								</select></p>
+						</form>	 
+							<div class="clearer"></div>
+					</div>
+		
+
+					
+
+
+
+	 
+       
+         
+	<div class="dropshadow">
+	<div class="photoContainer">
+
+		<div class="tape"></div>
+	
+		<a href="http://thefirst10000.wordpress.com/2012/03/13/cupcakes-and-happy-days/" target="_blank"><img src="http://photograzing.seriouseats.com/assets_c/2012/03/p1040837-thumb-245x245-226146.jpg" width="245" height="245" alt="Whiskey-Guinness Cupcakes (vegan adaptable)" /></a>
+
+<p class="linkSource">source: <a href="http://thefirst10000.wordpress.com/2012/03/13/cupcakes-and-happy-days/" target="_blank">http://thefirst10000.wordpress.com/...</a></p>
+
+
+
+
+		<h3><a href="http://photograzing.seriouseats.com/2012/03/whiskey-guinness-cupcakes-vegan-adaptable.html" title="Click here to read Whiskey-Guinness Cupcakes (vegan adaptable)">Whiskey-Guinness Cupcakes (veg...</a></h3>
+	
+		<p class="byline">Posted by <a href="http://www.seriouseats.com/user/profile/adhitchcock">Peter Piper</a></p>
+	
+<p class="postFooter" id="commentsAndFavoritesFooter">
+
+<a href="http://photograzing.seriouseats.com/2012/03/whiskey-guinness-cupcakes-vegan-adaptable.html#comments" class="commentCount">Post a Comment</a> 
+
+
+<span class="favorite">
+
+<!-- [1] new favorite code  -->
+<span class="entry-scoring">
+<a href="javascript:void(0);" onclick="return mtScore(197442);" id="scoring-id-197442" class="scoring">Favorite this!</a> &nbsp;(<span id="scoring-score-197442" class="scoring-score">0</span>)
+</span>
+
+
+</span>
+
+</p>
+	<div style="clear:left"></div>
+
+	</div><!-- close photoContainer -->
+</div>
+
+
+	
+
+       
+         
+	<div class="dropshadow">
+	<div class="photoContainer">
+
+		<div class="tape"></div>
+	
+		<a href="http://dishinggourmet.blogspot.com/2012/03/pistachio-cupcakes-for-st-patricks-day.html" target="_blank"><img src="http://photograzing.seriouseats.com/assets_c/2012/03/st_patricks_day_pistachio_cupcakes3-thumb-245x245-226203.jpg" width="245" height="245" alt="Pistachio Cupcakes" /></a>
+
+<p class="linkSource">source: <a href="http://dishinggourmet.blogspot.com/2012/03/pistachio-cupcakes-for-st-patricks-day.html" target="_blank">http://dishinggourmet.blogspot.com/...</a></p>
+
+
+
+
+		<h3><a href="http://photograzing.seriouseats.com/2012/03/pistachio-cupcakes.html" title="Click here to read Pistachio Cupcakes">Pistachio Cupcakes</a></h3>
+	
+		<p class="byline">Posted by <a href="http://www.seriouseats.com/user/profile/dishinggourmet">dishinggourmet</a></p>
+	
+<p class="postFooter" id="commentsAndFavoritesFooter">
+
+<a href="http://photograzing.seriouseats.com/2012/03/pistachio-cupcakes.html#comments" class="commentCount">Post a Comment</a> 
+
+
+<span class="favorite">
+
+<!-- [1] new favorite code  -->
+<span class="entry-scoring">
+<a href="javascript:void(0);" onclick="return mtScore(197471);" id="scoring-id-197471" class="scoring">Favorite this!</a> &nbsp;(<span id="scoring-score-197471" class="scoring-score">0</span>)
+</span>
+
+
+</span>
+
+</p>
+	<div style="clear:left"></div>
+
+	</div><!-- close photoContainer -->
+</div>
+
+
+	
+
+       
+         
+	<div class="dropshadow">
+	<div class="photoContainer">
+
+		<div class="tape"></div>
+	
+		<a href="http://barbarabakes.com/2012/03/lemon-shamrock-cupcakes-and-cupcakes-giveaway/" target="_blank"><img src="http://photograzing.seriouseats.com/assets_c/2012/03/shamrock-cupcakes-barbara-bakes-sq-thumb-245x245-226088.jpg" width="245" height="245" alt="Lemon Shamrock Cupcakes" /></a>
+
+<p class="linkSource">source: <a href="http://barbarabakes.com/2012/03/lemon-shamrock-cupcakes-and-cupcakes-giveaway/" target="_blank">http://barbarabakes.com/2012/03/lem...</a></p>
+
+
+
+
+		<h3><a href="http://photograzing.seriouseats.com/2012/03/lemon-shamrock-cupcakes.html" title="Click here to read Lemon Shamrock Cupcakes">Lemon Shamrock Cupcakes</a></h3>
+	
+		<p class="byline">Posted by <a href="http://www.seriouseats.com/user/profile/BarbaraBakes">BarbaraBakes</a></p>
+	
+<p class="postFooter" id="commentsAndFavoritesFooter">
+
+<a href="http://photograzing.seriouseats.com/2012/03/lemon-shamrock-cupcakes.html#comments" class="commentCount">Post a Comment</a> 
+
+
+<span class="favorite">
+
+<!-- [1] new favorite code  -->
+<span class="entry-scoring">
+<a href="javascript:void(0);" onclick="return mtScore(197398);" id="scoring-id-197398" class="scoring">Favorite this!</a> &nbsp;(<span id="scoring-score-197398" class="scoring-score">0</span>)
+</span>
+
+
+</span>
+
+</p>
+	<div style="clear:left"></div>
+
+	</div><!-- close photoContainer -->
+</div>
+
+
+	
+
+       
+         
+	<div class="dropshadow">
+	<div class="photoContainer">
+
+		<div class="tape"></div>
+	
+		<a href="http://bobbiesbakingblog.com/blog/2012/03/14/creme-de-menthe-cupcakes-recipe/" target="_blank"><img src="http://photograzing.seriouseats.com/assets_c/2012/03/vanilla-mintcupcake7175sq1_245-thumb-245x245-226084.jpg" width="245" height="245" alt="Creme de Menthe Cupcakes, the Luck of the Irish" /></a>
+
+<p class="linkSource">source: <a href="http://bobbiesbakingblog.com/blog/2012/03/14/creme-de-menthe-cupcakes-recipe/" target="_blank">http://bobbiesbakingblog.com/blog/2...</a></p>
+
+
+
+
+		<h3><a href="http://photograzing.seriouseats.com/2012/03/creme-de-menthe-cupcakes-the-luck-of-the-iris.html" title="Click here to read Creme de Menthe Cupcakes, the Luck of the Irish">Creme de Menthe Cupcakes, the ...</a></h3>
+	
+		<p class="byline">Posted by <a href="http://www.seriouseats.com/user/profile/bobbienoto">bobbie noto</a></p>
+	
+<p class="postFooter" id="commentsAndFavoritesFooter">
+
+<a href="http://photograzing.seriouseats.com/2012/03/creme-de-menthe-cupcakes-the-luck-of-the-iris.html#comments" class="commentCount">Post a Comment</a> 
+
+
+<span class="favorite">
+
+<!-- [1] new favorite code  -->
+<span class="entry-scoring">
+<a href="javascript:void(0);" onclick="return mtScore(197395);" id="scoring-id-197395" class="scoring">Favorite this!</a> &nbsp;(<span id="scoring-score-197395" class="scoring-score">0</span>)
+</span>
+
+
+</span>
+
+</p>
+	<div style="clear:left"></div>
+
+	</div><!-- close photoContainer -->
+</div>
+
+
+	
+	<div class="adContainer">
+        <script> 
+var ve_publisher = "SeriousEats";
+var ve_site = "SERIOUSEATS_300X250_ROS";
+var ve_area = "SERIOUSEATS_300X250_ROS";
+var ve_location = "SERIOUSEATS_300X250_ROS_ROS_300X250";
+var ve_placement = "ROS";
+var ve_width = 300;
+var ve_height = 250;
+var ve_alternate = "";
+document.write("<script src='http://core.videoegg.com/eap/html/js/init.js?"+Math.random()+"'></sc"+"ript>");
+</script>
+	</div><!-- close adContainer -->
+	
+
+       
+         
+	<div class="dropshadow">
+	<div class="photoContainer">
+
+		<div class="tape"></div>
+	
+		<a href="http://unegaminedanslacuisine.com/2012/03/guinness-chocolate-cupcakes-with.html" target="_blank"><img src="http://photograzing.seriouseats.com/assets_c/2012/03/17a_4-thumb-245x245-224911.jpg" width="245" height="245" alt="Guinness-chocolate cupcakes" /></a>
+
+<p class="linkSource">source: <a href="http://unegaminedanslacuisine.com/2012/03/guinness-chocolate-cupcakes-with.html" target="_blank">http://unegaminedanslacuisine.com/2...</a></p>
+
+
+
+
+		<h3><a href="http://photograzing.seriouseats.com/2012/03/guinness-chocolate-cupcakes-3.html" title="Click here to read Guinness-chocolate cupcakes">Guinness-chocolate cupcakes</a></h3>
+	
+		<p class="byline">Posted by <a href="http://www.seriouseats.com/user/profile/Valerina">Valerina</a></p>
+	
+<p class="postFooter" id="commentsAndFavoritesFooter">
+
+<a href="http://photograzing.seriouseats.com/2012/03/guinness-chocolate-cupcakes-3.html#comments" class="commentCount">Post a Comment</a> 
+
+
+<span class="favorite">
+
+<!-- [1] new favorite code  -->
+<span class="entry-scoring">
+<a href="javascript:void(0);" onclick="return mtScore(196665);" id="scoring-id-196665" class="scoring">Favorite this!</a> &nbsp;(<span id="scoring-score-196665" class="scoring-score">0</span>)
+</span>
+
+
+</span>
+
+</p>
+	<div style="clear:left"></div>
+
+	</div><!-- close photoContainer -->
+</div>
+
+
+	
+
+       
+         
+	<div class="dropshadow">
+	<div class="photoContainer">
+
+		<div class="tape"></div>
+	
+		<a href="http://www.americancupcakeabroad.com/cupcakes/neapolitan-cupcakes" target="_blank"><img src="http://photograzing.seriouseats.com/assets_c/2012/03/imgp7856a-thumb-245x245-224902.jpg" width="245" height="245" alt="Neapolitan Cupcakes" /></a>
+
+<p class="linkSource">source: <a href="http://www.americancupcakeabroad.com/cupcakes/neapolitan-cupcakes" target="_blank">http://www.americancupcakeabroad.co...</a></p>
+
+
+
+
+		<h3><a href="http://photograzing.seriouseats.com/2012/03/neapolitan-cupcakes-1.html" title="Click here to read Neapolitan Cupcakes">Neapolitan Cupcakes</a></h3>
+	
+		<p class="byline">Posted by <a href="http://www.seriouseats.com/user/profile/kellylovescupcakes">Cupcake_Kelly</a></p>
+	
+<p class="postFooter" id="commentsAndFavoritesFooter">
+
+<a href="http://photograzing.seriouseats.com/2012/03/neapolitan-cupcakes-1.html#comments" class="commentCount">Post a Comment</a> 
+
+
+<span class="favorite">
+
+<!-- [1] new favorite code  -->
+<span class="entry-scoring">
+<a href="javascript:void(0);" onclick="return mtScore(196653);" id="scoring-id-196653" class="scoring">Favorite this!</a> &nbsp;(<span id="scoring-score-196653" class="scoring-score">0</span>)
+</span>
+
+
+</span>
+
+</p>
+	<div style="clear:left"></div>
+
+	</div><!-- close photoContainer -->
+</div>
+
+
+	
+
+       
+         
+	<div class="dropshadow">
+	<div class="photoContainer">
+
+		<div class="tape"></div>
+	
+		<a href="http://www.icancookthat.org/2012/03/irish-coffee-cupcakes-giveaway.html" target="_blank"><img src="http://photograzing.seriouseats.com/assets_c/2012/03/img_888911-thumb-245x245-225987.jpg" width="245" height="245" alt="Irish Coffee Cupcakes" /></a>
+
+<p class="linkSource">source: <a href="http://www.icancookthat.org/2012/03/irish-coffee-cupcakes-giveaway.html" target="_blank">http://www.icancookthat.org/2012/03...</a></p>
+
+
+
+
+		<h3><a href="http://photograzing.seriouseats.com/2012/03/irish-coffee-cupcakes-2.html" title="Click here to read Irish Coffee Cupcakes">Irish Coffee Cupcakes</a></h3>
+	
+		<p class="byline">Posted by <a href="http://www.seriouseats.com/user/profile/icancookthat">I Can Cook That</a></p>
+	
+<p class="postFooter" id="commentsAndFavoritesFooter">
+
+<a href="http://photograzing.seriouseats.com/2012/03/irish-coffee-cupcakes-2.html#comments" class="commentCount">Post a Comment</a> 
+
+
+<span class="favorite">
+
+<!-- [1] new favorite code  -->
+<span class="entry-scoring">
+<a href="javascript:void(0);" onclick="return mtScore(197332);" id="scoring-id-197332" class="scoring">Favorite this!</a> &nbsp;(<span id="scoring-score-197332" class="scoring-score">0</span>)
+</span>
+
+
+</span>
+
+</p>
+	<div style="clear:left"></div>
+
+	</div><!-- close photoContainer -->
+</div>
+
+
+	
+
+       
+         
+	<div class="dropshadow">
+	<div class="photoContainer">
+
+		<div class="tape"></div>
+	
+		<a href="http://theculinarychronicles.com/2012/03/16/thin-mint-chocolate-cupcakes-for-st-paddys-day/" target="_blank"><img src="http://photograzing.seriouseats.com/assets_c/2012/03/ts_24-thumb-245x245-226231.jpg" width="245" height="245" alt="Thin Mint-Chocolate Cupcakes" /></a>
+
+<p class="linkSource">source: <a href="http://theculinarychronicles.com/2012/03/16/thin-mint-chocolate-cupcakes-for-st-paddys-day/" target="_blank">http://theculinarychronicles.com/20...</a></p>
+
+
+
+
+		<h3><a href="http://photograzing.seriouseats.com/2012/03/thin-mint-chocolate-cupcakes-1.html" title="Click here to read Thin Mint-Chocolate Cupcakes">Thin Mint-Chocolate Cupcakes</a></h3>
+	
+		<p class="byline">Posted by <a href="http://www.seriouseats.com/user/profile/theculinarychronicles">The Culinary Chronicles</a></p>
+	
+<p class="postFooter" id="commentsAndFavoritesFooter">
+
+<a href="http://photograzing.seriouseats.com/2012/03/thin-mint-chocolate-cupcakes-1.html#comments" class="commentCount">Post a Comment</a> 
+
+
+<span class="favorite">
+
+<!-- [1] new favorite code  -->
+<span class="entry-scoring">
+<a href="javascript:void(0);" onclick="return mtScore(197493);" id="scoring-id-197493" class="scoring">Favorite this!</a> &nbsp;(<span id="scoring-score-197493" class="scoring-score">0</span>)
+</span>
+
+
+</span>
+
+</p>
+	<div style="clear:left"></div>
+
+	</div><!-- close photoContainer -->
+</div>
+
+
+	
+
+
+
+
+	<div id="searchNav">
+
+<ul>
+	<li>1</li>
+	<li><a href="http://photograzing.seriouseats.com/tags/cupcakes/2">2</a></li>
+	<li><a href="http://photograzing.seriouseats.com/tags/cupcakes/3">3</a></li>
+	<li><a href="http://photograzing.seriouseats.com/tags/cupcakes/4">4</a></li>
+	<li><a href="http://photograzing.seriouseats.com/tags/cupcakes/5">5</a></li>
+	<li><a href="http://photograzing.seriouseats.com/tags/cupcakes/6">6</a></li>
+	<li><a href="http://photograzing.seriouseats.com/tags/cupcakes/7">7</a></li>
+	<li><a href="http://photograzing.seriouseats.com/tags/cupcakes/8">8</a></li>
+	<li><a href="http://photograzing.seriouseats.com/tags/cupcakes/9">9</a></li>
+	<li><a href="http://photograzing.seriouseats.com/tags/cupcakes/10">10</a></li>
+	<li><a href="http://photograzing.seriouseats.com/tags/cupcakes/11">11</a></li>
+	
+</ul>
+<h3 class="older"><a href="http://photograzing.seriouseats.com/tags/cupcakes/2">Older &raquo;</a></h3>
+</div>
+
+
+
+
+
+                    
+                      
+                      
+                      
+
+<div class="clearer"></div>
+
+	</div><!-- close content div -->
+<script src="http://www.seriouseats.com/js/bottombuckets.js?20120317072553" type="text/javascript"></script>
+
+
+
+<div id="footer" class="shortFooter">
+
+	<div id="footerColumn1" class="footer-column">
+          <h3 id="h-still-hungry">Still Hungry?</h3>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/about/">About</a></li>
+			<li><a href="/faq/">FAQ</a></li>
+			<li><a href="/contact/">Contact</a></li>
+			<li><a href="http://photograzing.seriouseats.com/upload/">Upload an Image</a></li>
+		</ul>
+          <div style="position:relative; top: 15px;"><a href="http://saymedia.com" target="_blank"><img title="SAY Channel Food" src="http://
+channels.saymedia.com/img/Food-light.png" border="0" alt="SAY Channel Food"></a></div>
+	</div><!-- close footerColumn1 -->
+		
+	<div id="footerColumn2" class="footer-column">
+	   <h3 id="h-delivery">Delivery</h3>
+		<p>Subscribe to our email newsletters so you don't miss anything delicious!</p>
+
+   		<form action="http://www.seriouseats.com/cgi-bin/mte/plugins/ProfileMail/profilemail.cgi" enctype="multipart/form-data" id="profile_edit" method="post">
+   		    <input type="hidden" name="__mode" value="save">
+   		    <input type="hidden" name="blog_id" value="39">
+   			<input value="Your Email Address:" type="text" name="email" class="short" onblur="if(this.value==''){this.style.color=''; this.form.reset()}" onfocus="this.value = ''; this.style.color = '#000';" />
+   			<div class="formField">
+   				<input type="checkbox" name="serious_eats_weekly_newsletter" id="serious_eats_weekly_newsletter"  /><label for="serious_eats_weekly_newsletter"> Weekly Newsletter</label>
+   		 		<br />
+   				<input type="hidden" name="name" value="" />
+   				<input type="checkbox" name="serious_eats_recipe_newsletter" id="serious_eats_recipe_newsletter"  /><label for="serious_eats_recipe_newsletter"> Recipe Newsletter</label>
+   				<br />
+   				<input type="checkbox" name="serious_eats_new_york_newsletter" id="serious_eats_new_york_newsletter"  /><label for="serious_eats_new_york_newsletter"> New York Newsletter</label>
+  				<br />
+   				<input type="checkbox" name="serious_eats_chicago_newsletter" id="serious_eats_chicago_newsletter"  /><label for="serious_eats_chicago_newsletter"> Chicago Newsletter</label>
+   				<br />
+   				<input type="checkbox" name="serious_eats_drinks_newsletter" id="serious_eats_drinks_newsletter"  /><label for="serious_eats_drinks_newsletter"> Drinks Newsletter</label>
+  				<br />
+   				<input type="checkbox" name="serious_eats_sweets_newsletter" id="serious_eats_sweets_newsletter"  /><label for="serious_eats_sweets_newsletter"> Sweets Newsletter</label>
+   				
+   			</div>
+   			<input type="image" value="Subscribe" src="http://seriouseats.com/imagesV2/buttons/subscribe.png" width="82" height="24" border="0" alt="subscribe" />
+   		</form>
+
+
+	</div><!-- close footerColumn2 -->
+		
+	<div id="footerColumn3" class="footer-column">
+           <h3 id="h-kiss-the-chef">Kiss the Chef</h3>
+		<ul>	
+			<li><a href="/about/?ref=footer">About Us</a></li>
+			<li><a href="/contact/?ref=footer">Contact Us</a></li>
+                        <li><a href="http://www.seriouseats.com/advertise/?ref=footer
+">Advertise with Us</a></li>
+		</ul>
+		<h3 id="h-family-style">Family Style</h3>
+		<ul>
+			<li><a href="http://www.seriouseats.com/?ref=footer">Serious Eats</a></li>
+			<li><a href="http://drinks.seriouseats.com/?ref=footer">Drinks</a></li>
+			<li><a href="http://sweets.seriouseats.com/?ref=footer">Sweets</a></li>
+			<li><a href="http://aht.seriouseats.com/?ref=footer">A Hamburger Today</a></li>
+			<li><a href="http://slice.seriouseats.com/?ref=footer">Slice</a></li>
+			<li><a href="http://newyork.seriouseats.com/?ref=footer">Serious Eats: New York</a></li>
+			<li><a href="http://chicago.seriouseats.com/?ref=footer">Serious Eats: Chicago</a></li>
+		</ul>
+	</div><!-- close footerColumn3 -->
+
+	<div id="footerColumn4" class="footer-column">
+            <h3 id="h-feed-yourself">Feed Yourself</h3>
+		<p>Subscribe to the<br />
+		<a href="http://feeds.feedburner.com/seriouseats/photograzing">Photograzing Feed</a></p>
+	</div><!-- close footerColumn4 --><div class="clearer"></div>
+
+	<a href="http://twitter.com/photograzing" id="footer-twitter">Follow us on Twitter!</a>
+
+</div><!--/#footer -->
+
+<!-- footer links module -->
+<div id="footerLinks">
+<ul>
+
+<li><a href="http://www.seriouseats.com/faq/">FAQ</a></li>
+<li><a href="http://www.seriouseats.com/advertise/">Advertise</a></li>
+<li><a href="http://www.seriouseats.com/sitemap/">Sitemap</a></li>
+
+<li><a href="http://www.seriouseats.com/terms/">Terms of Use</a></li>
+<li><a href="http://www.seriouseats.com/privacy/">Privacy Policy</a></li>
+<li>&copy; 2006-2012</li>
+</ul>
+</div>
+<!-- /footer links module -->
+
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+ 
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+ 
+_qevents.push({
+qacct:"p-abhYEve3ZZl2E"
+});
+</script>
+ 
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-abhYEve3ZZl2E.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+
+<!-- Begin comScore Tag -->
+<script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "6036036" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=6036036&cv=2.0&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+
+
+<script type="text/javascript">
+function recordOutboundLink(link, category, action, outgoingPageviewLink) {
+  try {
+    _gaq.push(['_trackEvent', category, action, outgoingPageviewLink]);
+    _gaq.push(['_trackPageview', outgoingPageviewLink]);
+    setTimeout('document.location = "' + link.href + '"', 100)
+  }catch(err){}
+}
+</script>
+
+<!-- Start Amazon Impression Reporting Script -->
+<script type="text/javascript" src="http://www.assoc-amazon.com/s/impression-counter?tag=serieats-20&o=1"></script>
+<noscript><img src="http://www.assoc-amazon.com/s/noscript?tag=serieats-20" alt="" /></noscript>
+<!-- End Amazon Impression Reporting Script -->
+
+
+
+
+<!-- chartbeat --> 
+<script type="text/javascript"> 
+var _sf_async_config={uid:2384,domain:"photograzing.seriouseats.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+       "static.chartbeat.com/js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+ 
+</script> 
+<!-- chartbeat --> 
+
+<!-- AddThis settings for Google Analytics -->
+<script type="text/javascript">
+     var addthis_config = {
+        data_ga_property: 'UA-962456-1',
+        data_ga_social : true
+     };
+</script>
+
+
+
+
+<!-- Addthis -->
+
+<!-- Addthis -->
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=seriouseats"></script>
+<!-- Addthis -->
+
+<!--  BuzzFeed code begins -->
+<div id="BF_WIDGET_1"></div>
+<script type="text/javascript">
+(function( ){
+	BF_WIDGET_JS=document.createElement('script'); BF_WIDGET_JS.type="text/javascript";
+	BF_WIDGET_SRC="http://ct.buzzfeed.com/wd/UserWidget?u=seriouseats.com&amp;to=1&amp;or=vb&amp;wid=1&amp;cb=" + (new Date()).getTime();
+	setTimeout(function() {document.getElementById('BF_WIDGET_1').appendChild(BF_WIDGET_JS);BF_WIDGET_JS.src=BF_WIDGET_SRC},1);
+})();
+</script>
+<!-- / BuzzFeed code ends -->
+
+</div><!-- close container -->
+
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html><script type="text/javascript"> 
+ <!-- 
+ (new Image).src="http://store.yahoo.net/cgi-bin/refsd?e=http://www.ecreamery.com/&h=www.ecreamery.com&v=1.0&dr=" + escape(document.referrer); 
+ --> 
+ </script>
+<head><title>Welcome to eCreamery Ice Cream & Gelato</title><meta name="Keywords" content="ice cream, gelato, ship ice cream, ice cream delivery, get well gifts, birthday gifts, send ice cream, ice cream gifts, gelato gifts, custom ice cream, create your own ice cream, fathers day gifts, graduation gifts" /><link rel="stylesheet" type="text/css" href="css-base.css" /><link rel="stylesheet" type="text/css" href="css-element.css" /><link rel="stylesheet" type="text/css" href="css-contents.css" /><link rel="stylesheet" type="text/css" href="css-edits.css" /><head><link rel="shortcut icon" href="http://lib.store.yahoo.net/lib/yhst-66244728411828/favico" type="image/x-icon" /></head>
+<script type="text/javascript" src="http://lib.store.yahoo.net/lib/yhst-66244728411828/m-redirect.js"></script>
+
+<meta name="google-site-verification" content="ojJgwF5K_yMmhXb1B2DtNT_P-8rAyEMpBJC_1GZ3pbg" /><map name="header2">
+<area shape="poly" coords="120,28,102,2,1,1,4,132,49,140,104,111,127,57,120,32" href="index.html" target="_self">
+<area shape="rect" coords="233,41,382,76" href="createyourown.html" target="_self">
+<area shape="rect" coords="388,41,516,77" href="createsampler.html" target="_self">
+<area shape="rect" coords="520,40,671,75" href="specialoccasions.html" target="_self">
+<area shape="rect" coords="673,40,784,76" href="bakery.html" target="_self">
+<area shape="rect" coords="788,41,866,78" href="gifts.html" target="_self">
+<area shape="rect" coords="869,40,973,75" href="recipebox.html" target="_self">
+<area shape="rect" coords="538,10,588,24" href="info.html" target="_self">
+<area shape="rect" coords="592,10,630,24" href="news.html" target="_self">
+<area shape="rect" coords="632,10,684,24" href="shipping.html" target="_self">
+<area shape="rect" coords="688,10,768,24" href="contactus.html" target="_self">
+<area shape="rect" coords="772,10,892,24" href="myaccount.html" target="_self">
+<area shape="rect" coords="896,10,972,24" href="http://order.store.yahoo.net/yhst-66244728411828/cgi-bin/wg-order?yhst-66244728411828" target="_self">
+</map>
+
+<map name="header">
+<area shape="poly" coords="125,42,103,0,0,0,0,131,27,141,54,141,89,125,115,89,125,57,125,42" href="index.html" target="_self">
+<area shape="rect" coords="496,40,336,76" href="createyourown.html" target="_self">
+<area shape="rect" coords="498,76,630,40" href="createsampler.html" target="_self">
+<area shape="rect" coords="632,76,782,40" href="specialoccasions.html" target="_self">
+<area shape="rect" coords="786,76,866,40" href="gifts.html" target="_self">
+<area shape="rect" coords="868,40,976,76" href="recipebox.html" target="_self">
+<area shape="rect" coords="538,10,588,24" href="info.html" target="_self">
+<area shape="rect" coords="592,10,630,24" href="news.html" target="_self">
+<area shape="rect" coords="632,10,684,24" href="shipping.html" target="_self">
+<area shape="rect" coords="688,10,768,24" href="contactus.html" target="_self">
+<area shape="rect" coords="772,10,892,24" href="myaccount.html" target="_self">
+<area shape="rect" coords="896,10,972,24" href="http://order.store.yahoo.net/yhst-66244728411828/cgi-bin/wg-order?yhst-66244728411828" target="_self">
+</map>
+<link rel="stylesheet" href="http://lib.store.yahoo.net/lib/yhst-66244728411828/ecreameryfinal.css" type="text/css"><script type="text/javascript" src="http://lib.store.yahoo.net/lib/yhst-66244728411828/jquery.js"></script><script type="text/javascript" src="http://lib.store.yahoo.net/lib/yhst-66244728411828/additionalshipping.js"></script><script type="text/javascript">
+      
+/***********************************************
+* Ultimate Fade-In Slideshow (v1.51): � Dynamic Drive (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+ 
+var fadeimages=new Array()
+//SET IMAGE PATHS. Extend or contract array as needed
+fadeimages[0]=["http://lib.store.yahoo.net/lib/yhst-66244728411828/rotate1.jpg", "createyourown.html", ""] //image with link syntax
+fadeimages[1]=["http://lib.store.yahoo.net/lib/yhst-66244728411828/rotate2.jpg", "createsampler.html", ""] //image with link syntax
+fadeimages[2]=["http://lib.store.yahoo.net/lib/yhst-66244728411828/rotate3.jpg", "specialoccasions.html", ""] //image with link syntax 
+
+var fadebgcolor="white"
+
+////NO need to edit beyond here/////////////
+ 
+var fadearray=new Array() //array to cache fadeshow instances
+var fadeclear=new Array() //array to cache corresponding clearinterval pointers
+ 
+var dom=(document.getElementById) //modern dom browsers
+var iebrowser=document.all
+ 
+function fadeshow(theimages, fadewidth, fadeheight, borderwidth, delay, pause, displayorder){
+this.pausecheck=pause
+this.mouseovercheck=0
+this.delay=delay
+this.degree=10 //initial opacity degree (10%)
+this.curimageindex=0
+this.nextimageindex=1
+fadearray[fadearray.length]=this
+this.slideshowid=fadearray.length-1
+this.canvasbase="canvas"+this.slideshowid
+this.curcanvas=this.canvasbase+"_0"
+if (typeof displayorder!="undefined")
+theimages.sort(function() {return 0.5 - Math.random();}) //thanks to Mike (aka Mwinter) :)
+this.theimages=theimages
+this.imageborder=parseInt(borderwidth)
+this.postimages=new Array() //preload images
+for (p=0;p<theimages.length;p++){
+this.postimages[p]=new Image()
+this.postimages[p].src=theimages[p][0]
+}
+ 
+var fadewidth=fadewidth+this.imageborder*2
+var fadeheight=fadeheight+this.imageborder*2
+ 
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers (ie: Firefox)
+document.write('<div id="master'+this.slideshowid+'" style="position:relative;width:'+fadewidth+'px;height:'+fadeheight+'px;overflow:hidden;"><div id="'+this.canvasbase+'_0" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div><div id="'+this.canvasbase+'_1" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div></div>')
+else
+document.write('<div><img name="defaultslide'+this.slideshowid+'" src="'+this.postimages[0].src+'"></div>')
+ 
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers such as Firefox
+this.startit()
+else{
+this.curimageindex++
+setInterval("fadearray["+this.slideshowid+"].rotateimage()", this.delay)
+}
+}
+
+function fadepic(obj){
+if (obj.degree<100){
+obj.degree+=10
+if (obj.tempobj.filters&&obj.tempobj.filters[0]){
+if (typeof obj.tempobj.filters[0].opacity=="number") //if IE6+
+obj.tempobj.filters[0].opacity=obj.degree
+else //else if IE5.5-
+obj.tempobj.style.filter="alpha(opacity="+obj.degree+")"
+}
+else if (obj.tempobj.style.MozOpacity)
+obj.tempobj.style.MozOpacity=obj.degree/101
+else if (obj.tempobj.style.KhtmlOpacity)
+obj.tempobj.style.KhtmlOpacity=obj.degree/100
+else if (obj.tempobj.style.opacity&&!obj.tempobj.filters)
+obj.tempobj.style.opacity=obj.degree/101
+}
+else{
+clearInterval(fadeclear[obj.slideshowid])
+obj.nextcanvas=(obj.curcanvas==obj.canvasbase+"_0")? obj.canvasbase+"_0" : obj.canvasbase+"_1"
+obj.tempobj=iebrowser? iebrowser[obj.nextcanvas] : document.getElementById(obj.nextcanvas)
+obj.populateslide(obj.tempobj, obj.nextimageindex)
+obj.nextimageindex=(obj.nextimageindex<obj.postimages.length-1)? obj.nextimageindex+1 : 0
+setTimeout("fadearray["+obj.slideshowid+"].rotateimage()", obj.delay)
+}
+}
+ 
+fadeshow.prototype.populateslide=function(picobj, picindex){
+var slideHTML=""
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML='<a href="'+this.theimages[picindex][1]+'" target="'+this.theimages[picindex][2]+'">'
+slideHTML+='<img src="'+this.postimages[picindex].src+'" border="'+this.imageborder+'px">'
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML+='</a>'
+picobj.innerHTML=slideHTML
+}
+ 
+ 
+fadeshow.prototype.rotateimage=function(){
+if (this.pausecheck==1) //if pause onMouseover enabled, cache object
+var cacheobj=this
+if (this.mouseovercheck==1)
+setTimeout(function(){cacheobj.rotateimage()}, 100)
+else if (iebrowser&&dom||dom){
+this.resetit()
+var crossobj=this.tempobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+crossobj.style.zIndex++
+fadeclear[this.slideshowid]=setInterval("fadepic(fadearray["+this.slideshowid+"])",50)
+this.curcanvas=(this.curcanvas==this.canvasbase+"_0")? this.canvasbase+"_1" : this.canvasbase+"_0"
+}
+else{
+var ns4imgobj=document.images['defaultslide'+this.slideshowid]
+ns4imgobj.src=this.postimages[this.curimageindex].src
+}
+this.curimageindex=(this.curimageindex<this.postimages.length-1)? this.curimageindex+1 : 0
+}
+ 
+fadeshow.prototype.resetit=function(){
+this.degree=10
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+if (crossobj.filters&&crossobj.filters[0]){
+if (typeof crossobj.filters[0].opacity=="number") //if IE6+
+crossobj.filters(0).opacity=this.degree
+else //else if IE5.5-
+crossobj.style.filter="alpha(opacity="+this.degree+")"
+}
+else if (crossobj.style.MozOpacity)
+crossobj.style.MozOpacity=this.degree/101
+else if (crossobj.style.KhtmlOpacity)
+crossobj.style.KhtmlOpacity=this.degree/100
+else if (crossobj.style.opacity&&!crossobj.filters)
+crossobj.style.opacity=this.degree/101
+}
+ 
+ 
+fadeshow.prototype.startit=function(){
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+this.populateslide(crossobj, this.curimageindex)
+if (this.pausecheck==1){ //IF SLIDESHOW SHOULD PAUSE ONMOUSEOVER
+var cacheobj=this
+var crossobjcontainer=iebrowser? iebrowser["master"+this.slideshowid] : document.getElementById("master"+this.slideshowid)
+crossobjcontainer.onmouseover=function(){cacheobj.mouseovercheck=1}
+crossobjcontainer.onmouseout=function(){cacheobj.mouseovercheck=0}
+}
+this.rotateimage()
+}
+
+</script>
+<!-- Dynamic Facebook Meta Tags for Yahoo! Store - www.fastpivot.com - v1.3 - 06.13.2010 -->
+
+<meta property="og:title" content="Welcome to eCreamery Ice Cream & Gelato"/>
+<meta property="og:site_name" content="eCreamery Ice Cream & Gelato"/>
+<meta property="og:image" content="http://ep.yimg.com/ca/I/yhst-66244728411828_2195_8276091"/></head><body><div id="PageWrapperOther"><div class="fpnew" id="Header"><div class="logo"><a href="index.html"><img title="eCreamery" alt="eCreamery" src="http://lib.store.yahoo.net/lib/yhst-66244728411828/logo.jpg"> </img></a></div><div id="headlinks"><ul><li class="colorone"><a href="gift-certificates.html">gift certs</a></li><li class="colorone"><a href="http://contest.ecreamery.com/index.php/contest">contest</a></li><li class="colorone"><a href="info.html">about us</a></li><li class="colorone"><a href="http://blog.ecreamery.com">blog</a></li><li class="colorone"><a href="news.html">news</a></li><li class="colorone"><a href="faq.html">FAQ</a></li><li class="colorone"><a href="local.html">local</a></li><li class="colorone"><a href="shipping.html">shipping</a></li><li class="colortwo"><a href="contactus.html">CONTACT US</a></li><li class="colorthree"><a href="myaccount.html">ACCOUNT LOGIN</a></li><li class="last colorthree cart"><a href="http://order.store.yahoo.net/yhst-66244728411828/cgi-bin/wg-order?yhst-66244728411828">My Cart</a></li></ul><script type="text/javascript">
+jQuery(document).ready(function(){
+	var zIndexNumber = 500;
+	jQuery('.topNav li').each(function() {
+	   jQuery(this).css('zIndex', zIndexNumber);
+	   zIndexNumber -= 10; 
+	});	
+});
+</script></div><div class="topNav"><ul><li class="colorone"><a href="createyourown.html">Create Your Flavor</a><b></b></li><li class="colorone"><a href="createsampler.html">Pick Your 4 Pack</a><b></b></li><li class="colorone"><a href="specialoccasions.html">Gifts by Occasion</a><b></b></li><li class="colorone"><a href="partycups.html">Party Cups</a><b></b></li><li class="colorthree"><a href="makeyourownicecream.html">eC At Home</a><b></b></li><li class="colortwo"><a href="gifts.html">Month Clubs</a><b></b></li><li><b></b></li></ul></div><div id="HeaderText">See our new<A HREF="http://www.ecreamery.com/partycups.html"><div class="greenText">Single Serving Party Cups</div></A>, featured at<br> The Martha Stewart Weddings Bridal Event!</div><div id="search"><form action="http://store.yahoo.com/cgi-bin/nsearch" method="post">
+	<input type="hidden" name="catalog" value="yhst-66244728411828">
+	<input type="text" name="query" class="searchInputNew" value="Search" onblur="if(this.value=='') {this.value='Search';}" onfocus="if(this.value=='Search') {this.value='';}">
+	<input type="image" alt="Submit" value="Search" src="http://lib.store.yahoo.net/lib/yhst-66244728411828/search.jpg" class="searchImage">
+</form></div></div><div id="RightColumnHome"><div style="position:relative;"><div class="fblikebtn" style="position:absolute; right: 20px; top: -24px;"><!-- Dynamic Facebook Like Button for Yahoo! Store - www.fastpivot.com - v1.3 - 06.13.2010 --><div id="facebookLikeButton"><iframe src="http://www.facebook.com/plugins/like.php?href=http://ecreamery.com/index.html&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></div></div></div><center><script type="text/javascript">
+//new fadeshow(IMAGES_ARRAY_NAME, slideshow_width, slideshow_height, borderwidth, delay, pause (0=no, 1=yes), optionalRandomOrder)
+new fadeshow(fadeimages, 949, 275, 0, 3000, 1)
+</script><table style="width:949px; margin-top:4px; border-collapse:collapse;"><tr><td style="text-align:left;"><a href="createyourown.html"><img src="http://ep.yimg.com/ca/I/yhst-66244728411828_2195_8301556" width="311" height="114" border="0" hspace="0" vspace="0" alt="Create your own" /></a></td><td style="text-align:center;"><a href="sweethearts.html"><img src="http://ep.yimg.com/ca/I/yhst-66244728411828_2192_9369761" width="311" height="114" border="0" hspace="0" vspace="0" alt="Valentine's Day" /></a></td><td style="text-align:right;"><a href="specialoccasions.html"><img src="http://ep.yimg.com/ca/I/yhst-66244728411828_2194_3793514" width="311" height="114" border="0" hspace="0" vspace="0" alt="Special Occasions" /></a></td></tr></table><table style="width:949px; margin-top:28px;"><tr><td style="width:256px; text-align:center;"><img src="http://lib.store.yahoo.net/lib/yhst-66244728411828/thesweetspot.jpg" alt="The Sweet Spot"></td><td class="homeContent">Welcome to eCreamery the online custom ice cream & gelato shop where you choose your own flavors, mix-ins, packaging, even your own ice cream name. So go ahead, make it sweet. Or make it spicy. Make it for a friend. Or make it for yourself. At eCreamery, the options are endless, the flavors are fresh and best of all, you rule the scoop. </td></tr></table><center><a target="_blank" href="http://www.ecreamery.com/news.html"><img src="http://ep.yimg.com/ca/I/yhst-66244728411828_2195_17064003" width="893" height="103" border="0" hspace="0" vspace="0" /></a></center></center></div><div id="HomeBottom"><img src="http://lib.store.yahoo.net/lib/yhst-66244728411828/homebottom.jpg"></div><div id="Footer"><div id="Dish"><a href="testimonials.html"><img src="http://lib.store.yahoo.net/lib/yhst-66244728411828/dishitout.jpg"></a></div><div id="Newsletter"><img src="http://ep.yimg.com/ca/I/yhst-66244728411828_2195_510121" width="647" height="20" border="0" hspace="0" vspace="0" alt="Newsletter" /><form style="margin-bottom:3;" method="get" target="_blank" action="http://ecreamery.us4.list-manage.com/subscribe?u=cd474324192ec656c9ecebb1f&id=3cf04c44ee" name="ccoptin">
+	<input type="text" name="MERGE0" class="newsEmail" value="Email" onblur="if(this.value=='') {this.value='Email';}" onfocus="if(this.value=='Email') {this.value='';}" />
+	<input type="image" name="go" alt="Submit" value="Join" src="http://ep.yimg.com/ca/I/yhst-66244728411828_2183_26602" class="newsletterSubmit" />
+	<input name="u" value="cd474324192ec656c9ecebb1f" type="hidden" />
+	<input name="id" value="3cf04c44ee" type="hidden" />
+</form></div><div id="FooterLinks">
+<a href="http://www.ecreamery.com">home</a>&nbsp;|&nbsp;
+<a href="info.html">about us</a>&nbsp;|&nbsp;
+<a href="contactus.html">contact us</a>&nbsp;|&nbsp;
+<a href="shipping.html">shipping</a>&nbsp;|&nbsp;
+<a href="ingredients.html">ingredients</a>&nbsp;|&nbsp;
+<a href="http://order.store.yahoo.net/yhst-66244728411828/cgi-bin/wg-order?yhst-66244728411828">view cart</a>&nbsp;|&nbsp;
+<a href="faq.html">faq</a>&nbsp;|&nbsp;
+<a href="privacypolicy.html">policies</a>
+</div><div></div>
+<div id="Copyright">
+&copy; 2011 eCreamery, All Rights Reserved.
+</div>
+
+<div id="Authorize" style="left:690px;">
+<table><tr><td style="vertical-align:middle;">
+<table style="margin-bottom:-25px;"><tr><td>
+<a href="http://www.facebook.com/pages/eCreamery/71085607225" target="_blank"><img src="http://lib.store.yahoo.net/lib/yhst-66244728411828/ey-facebook.jpg"></a> 
+</td><td>
+<a href="http://twitter.com/ecreamery" target="_blank"><img src="http://lib.store.yahoo.net/lib/yhst-66244728411828/ey-twitter.jpg"></a> 
+</td></tr></table>
+</td><td>
+<!-- GeoTrust True Site [tm] Smart Icon tag. Do not edit. -->
+    <div class="geoTrust"><script language="javaScript" type="text/javascript" src="//smarticon.geotrust.com/si.js"></script></div>
+
+<!-- end GeoTrust Smart Icon tag -->
+
+<!-- (c) 2006. Authorize.Net is a registered trademark of Lightbridge, Inc. --> 
+<div class="AuthorizeNetSeal"> 
+    <script type="text/javascript" language="javascript">var ANS_customer_id="e528298f-1f8f-4cc9-9f8b-87b6781919ea";</script>
+    <script type="text/javascript" language="javascript" src="//VERIFY.AUTHORIZE.NET/anetseal/seal.js"></script>
+  </td></tr></table>
+
+</div>
+
+</div></div></div><script type="text/javascript" src="/lib/yhst-30858557802959/cookie.js"></script><script type="text/javascript" src="http://www.eyhosting.com/client_data/ecreamery/myaccounthead.js"></script><div id="Session" style="display:none;"></div><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-2908100-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<script type="text/javascript">
+document.write(unescape("%3Cscript src='" + (location.protocol=="https:" ? "https://": "http://") + "cn.clickable.net/js/cct.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+document.cookie=cct.CookieCheck(document.cookie);
+cct.cct_log('0820-eP6a4gbecVfi7eaw939c46d78beac7a2ea417bb1');
+</script>
+<!-- Google Code for eCreamery Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1049970669;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "666666";
+var google_conversion_label = "SOAoCMfljAIQ7Y_V9AM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+	<div style="display:inline;">
+	<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1049970669/?label=SOAoCMfljAIQ7Y_V9AM&amp;guid=ON&amp;script=0"/>
+	</div>
+</noscript></body>
+<script type="text/javascript">
+csell_env = 'mud';
+</script>
+<script type="text/javascript">
+// Begin Y! Store Generated Code
+ </script><script type="text/javascript" src="http://d.yimg.com/mi/ywa.js" >
+</script>
+<script type="text/javascript">
+// Begin Y! Store Generated Code
+var analytics_token_map = {}; analytics_token_map['TOK_ENTRY_DOMAIN'] = ''; analytics_token_map['TOK_DOCGROUP'] = 'Store'; analytics_token_map['TOK_STATS_URL'] = 'http://a.analytics.yahoo.com/p.pl?a=1000'; analytics_token_map['TOK_COOKIE_PATH'] = ''; analytics_token_map['TOK_PROJECT_ID'] = '588864762'; analytics_token_map['TOK_DOCNAME'] = 'Home'; analytics_token_map['TOK_OTHER_DOMAINS'] = '*.store.yahoo.net,*.yhs4.search.yahoo.com';  YStore = window.YStore||{};YStore.itatm = analytics_token_map;YWATracker = YWA.getTracker('1000'+YStore.itatm['TOK_PROJECT_ID']);YWATracker.setDocumentName(YStore.itatm['TOK_DOCNAME']);YWATracker.setDocumentGroup(YStore.itatm['TOK_DOCGROUP']);YWATracker.setDomains(YStore.itatm['TOK_OTHER_DOMAINS']);YWATracker.setCookiePath(YStore.itatm['TOK_COOKIE_PATH']);
+</script>
+<script type="text/javascript">
+// Begin Y! Store Generated Code
+function analytics_BEACON() {  YWATracker.submit(); } 
+</script>
+<script type="text/javascript">
+analytics_BEACON(); </script>
+<script type="text/javascript"> 
+ <!-- 
+ if (document.referrer && (document.referrer!='') && window.Image) 
+ { 
+ (new Image).src="http://redirect1.vip.store.yahoo.com/cgi-bin/referadd?spcl=1&et=4f28511b&catalog=yhst-66244728411828&r=" + escape(document.referrer) + "&v=1"; }
+ // --> 
+ </script><script type="text/javascript"> 
+ <!-- 
+ if (document.referrer && (document.referrer!='') && window.Image) 
+ { 
+ (new Image).src="http://redirect1.vip.store.yahoo.net/cgi-bin/referadd?spcl=1&et=4f28511b&catalog=yhst-66244728411828&r=" + escape(document.referrer) + "&v=3"; }
+ // --> 
+ </script></html>

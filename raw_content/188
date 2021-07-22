@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Childhood. Owned.lv</title>
+
+	<meta name="description" content="www.owned.lv - Daily updated funny pictures and videos. Huge collection of pictures and videos from insane internet. Get your owned today !" />
+	<meta name="keywords" content="daily, owned, pictures, videos">
+
+    <link rel="stylesheet" type="text/css" href="/css/main.1.css" />
+
+	<link rel="shortcut icon" href="http://www.owned.lv/favicon.ico" >
+	<meta name="robots" content="index, follow" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.owned.lv/rss/" />
+
+	<meta property="og:site_name" content="Owned.lv" />
+	<meta property="og:image" content="http://www.owned.lv/small/x3x75f221478b3e7592c140cb29c6e2e339.jpg" />
+    <script src="/js/jquery-min.js" type="text/javascript"></script>
+
+	<script language="javascript" type="text/javascript" src="http://www.anymedia.lv/js/show_media.php?p=9" charset="utf-8" defer="defer"></script>
+
+    
+</head>
+
+<body>
+    <div id="header">
+    	<a href="/" id="logo">Owned.lv</a>
+        <ul id="main-menu">
+        	<li><a href="/?s=home" class="home"><span><em>Home</em></span></a></li>
+            <li><a href="/?s=videos" class=""><span>Videos</span></a></li>
+            <li><a href="/?s=pictures" class=" active"><span>Pictures</span></a></li>
+			<li><a href="/?s=pictures&t=all&g=popular" class=""><span>Popular</span></a></li>
+			<li><a href="/?s=pictures&t=all&g=top" class=""><span>Top 15</span></a></li>
+            <!--<li><a href="#"><span>Games</span></a></li>
+            <li class="submenu"><a href="#"><span>More</span></a>
+                <ul class="subnav">
+                    <li><a href="#">Flash animations</a></li>
+                    <li><a href="#">Text jokes</a></li>
+                </ul>
+            </li>-->
+            
+            
+            <li><a href="/upload.php?keepThis=true&TB_iframe=true&height=500&width=700" title="Upload funny images and videos! Share with others" class="thickbox"><span><B>Upload</B></span></a></li>
+            
+            
+        </ul>
+        <!--<a href="#" id="login">Login</a>-->
+
+    </div>
+    <div id="content">
+    <script>
+    $(document).ready(function(){
+		$(".submenu").hoverIntent(function(){
+			$(this).find(".subnav").fadeIn('fast');
+			$(this).find("a:first").addClass("active");
+		},function(){
+			$(this).find(".subnav").delay(200).fadeOut('slow');
+			$(this).find("a").removeClass("active");
+		});
+        
+        if ($("#image_content").width() > 0)
+        {
+            var intW = $("#image_content").width();
+            //$('#img-view-right-button').width(parseInt(intW/2)+'px');
+            $('#img-view-right-button').css({'right' : (364-parseInt(intW/2)) + 'px'});
+            //$('#img-view-left-button').width(parseInt(intW/2)+'px');
+            $('#img-view-left-button').css({'left' : (364-parseInt(intW/2)) + 'px'});
+        }
+        
+        
+	});
+
+    </script>
+
+      <script type="text/javascript">
+
+        function sayDraugiem(title) {
+          window.open(
+            'http://www.draugiem.lv/say/ext/add.php?title=' + encodeURIComponent(title) +
+            '&link=' + encodeURIComponent(location.href) +
+            '&titlePrefix=' + encodeURIComponent('OWNED.lv:'),
+            '',
+            'location=1,status=1,scrollbars=0,resizable=0,width=600,height=400'
+          );
+          return false;
+        }
+
+        function sayFacebook(title) {
+          window.open(
+            'http://www.facebook.com/sharer.php?u=' + encodeURIComponent(location.href) +
+            '&t=' + encodeURIComponent('OWNED.lv: ') + encodeURIComponent(title),
+            '',
+            'location=1,status=1,scrollbars=0,resizable=0,width=640,height=480'
+          );
+          return false;
+        }
+
+        function sayTwitter(title) {
+          window.open(
+            'http://twitter.com/intent/tweet?source=webclient&text=' +
+              encodeURIComponent('OWNED.lv: ') +
+              encodeURIComponent(title) +
+              '&url=' + encodeURIComponent(location.href),
+            '',
+            'location=1,status=1,scrollbars=0,resizable=0,width=640,height=480'
+          );
+          return false;
+        }
+
+        function sayDigg(title) {
+          window.open(
+            'http://digg.com/submit?title=' +
+              encodeURIComponent('OWNED.lv: ') +
+              encodeURIComponent(title) +
+              '&url=' + encodeURIComponent(location.href),
+            '',
+            'location=1,status=1,scrollbars=0,resizable=0,width=640,height=480'
+          );
+          return false;
+        }
+
+        function sayReddit(title) {
+          window.open(
+            'http://www.reddit.com/submit?title=' +
+              encodeURIComponent('OWNED.lv: ') +
+              encodeURIComponent(title) +
+              '&url=' + encodeURIComponent(location.href),
+            '',
+            'location=1,status=1,scrollbars=0,resizable=0,width=640,height=480'
+          );
+          return false;
+        }
+
+      </script>
+
+		<div id="adsense-top">
+			<script type="text/javascript"><!--
+			google_ad_client = "ca-pub-5472341110353775";
+			/* 728 x 90 text image */
+			google_ad_slot = "0184269380";
+			google_ad_width = 728;
+			google_ad_height = 90;
+			//-->
+			</script>
+			<script type="text/javascript"
+			src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+			</script>
+		</div>
+
+    	<div id="content-menu">
+        	<ul class="navigation">
+            	<!-- <li class="left"><a href="///" class="first">First</a></li> -->
+            	<li><a href="/14358/Wieners-for-kids/" class="previous">Previous</a></li>            	<li><a href="/13972/No-dumping/" class="random">Random</a></li>
+            	<li><a href="/14356/One-evening/" class="next">Next</a></li>            	<!-- <li class="right"><a href="///" class="last">Last</a></li> -->
+            </ul>
+        </div>
+            <div class="title"><h1 style="font-size: 18px; font-weight: bold;">Childhood</h1></div>
+            <ul id="breadcrumbs">
+            	<li><a href="/">Pictures</a></li>
+                <li><a href="/">Recent</a></li>
+                <li>All time</li>
+            </ul>
+            <div class="clear"></div>
+
+            <div id="object">
+                    <div id="img_navigate__prev_next">
+                    
+						<a href="/13972/No-dumping/" class="random">
+                        <img src="http://www.owned.lv/images/x3x75f221478b3e7592c140cb29c6e2e339.jpg" alt="Childhood" class="object" id="image_content" />						</a>
+                        
+						                        <div id="img-view-left-button" onclick="window.location='/14358/Wieners-for-kids/';" src="/img/pix2.png">
+                            <div><img onclick="window.location='/14358/Wieners-for-kids/';" src="/img/pix2.png"></div>
+                        </div>
+                        
+						                        <div id="img-view-right-button" onclick="window.location='/14356/One-evening/';" src="/img/pix2.png">
+                            <div><img onclick="window.location='/14356/One-evening/';" src="/img/pix2.png"></div>
+                        </div>
+						
+                    </div>
+            </div>
+
+			<div id="content-menu">
+        	<ul class="navigation">
+            	<!-- <li class="left"><a href="///" class="first">First</a></li> -->
+            	<li><a href="/14358/Wieners-for-kids/" class="previous">Previous</a></li>            	<li><a href="/13972/No-dumping/" class="random">Random</a></li>
+            	<li><a href="/14356/One-evening/" class="next">Next</a></li>            	<!-- <li class="right"><a href="///" class="last">Last</a></li> -->
+            </ul>
+			</div>
+
+            <div class="object-data"><div class="inner">
+            	<div id="voting">
+                	                	<a href="#vote" id="vote-up" onclick="$.post('/vote.php', {'img_id': 14357, 'vote':5}, function (t){if (t==1) {location.reload(true);}});"><span>26</span></a>
+                	
+                    <div class="vote-percent"><span style="width:100%"></span><strong>100%</strong></div>
+
+                	                	<a href="#vote" id="vote-down" onclick="$.post('/vote.php', {'img_id': 14357, 'vote':5}, function (t){if (t==1) {location.reload(true);}});"><span>0</span></a>
+                	                </div>
+                <ul id="social">
+                	<li class="share"><b>Stumble and share it:</b></li>
+                    <li id="social_stumbleupon">
+                        <script src="http://www.stumbleupon.com/hostedbadge.php?s=6"></script>
+                        <style type="text/css">
+                            #social_stumbleupon IFRAME{
+                                height: 36px !important;
+                            }
+                        </style>
+
+                    </li>
+                    <li><a href="#1" class="facebook" onclick="sayFacebook('Childhood');"><p>Facebook</p></a></li>
+                    <li><a href="#1" class="twitter" onclick="sayTwitter('Childhood');"><p>Twitter</p></a></li>
+                	<li><a href="#1" class="draugiem" onclick="sayDraugiem('Childhood');"><p>Draugiem.lv</p></a></li>
+                    <li><a href="#1" class="digg" onclick="sayDigg('Childhood');"><p>Digg</p></a></li>
+                    <li><a href="#1" class="reddit" onclick="sayReddit('Childhood');"><p>Reddit</p></a></li>
+					<li class="google"><!--google plus one--> <g:plusone ></g:plusone></li>
+                </ul>
+                <div class="clear"></div>
+             </div></div>
+             <ul id="sharing">
+                <li class="link"><form id="link">
+                    <fieldset>
+                        <span><input style="width: 300px;" OnClick="this.focus(); this.select();" type="text" id="shareurl" name="link" value="http://www.owned.lv/14357/Childhood/"></span>
+                    </fieldset>
+                </form></li>
+                
+                <li class="mail"><form id="mail">
+                    <fieldset>
+                        <span><input type="text" id="sharemail" name="link" value="Enter e-mail address" onclick="if (this.value=='Enter e-mail address') {this.value='';}"></span>
+                        <em class="primary-button-cont"><input type="button" value="Send" id="mail-btn" class="primary-button" onclick="$.post('/m.php', {'em': $('#sharemail').val(), 'e': $.md5($('#sharemail').val()), 'id': 14357}, function (data){if (data=='ok') {$('#sharemail').val(''); alert ('Email sent!');} else {alert ('Email is not sent!')}})" /></em>
+                    </fieldset>
+                </form></li>
+                
+             </ul>
+        <ul class="listing">
+            <li><a href="/13972/No-dumping/">
+            	<img style="width: 116px; height: 116px;" src="http://www.owned.lv/small/x3xfd6aa166873a2ee4c5da92d11087eabd.jpg" title="" />
+                <strong>No dumping</strong>
+                <span></span></a>
+            </li>
+			            <li><a href="/13177/Dear-girls/">
+            	<img style="width: 116px; height: 116px;" src="http://www.owned.lv/small/x3x3698970c939a67eed8efa0144aab3b91.jpg" title="" />
+                <strong>Dear girls</strong>
+                <span></span></a>
+            </li>
+			            <li><a href="/7754/In-case-of-emergency-follow-the-instructions/">
+            	<img style="width: 116px; height: 116px;" src="http://www.owned.lv/small/x3xd85ba48df9232866ae8d08f71e982152.jpg" title="" />
+                <strong>In case of emer</strong>
+                <span></span></a>
+            </li>
+			            <li><a href="/9328/Replacement-ass/">
+            	<img style="width: 116px; height: 116px;" src="http://www.owned.lv/small/x3xed5bec4daa1bdab5c174c6e954116427.jpg" title="" />
+                <strong>Replacement ass</strong>
+                <span></span></a>
+            </li>
+			            <li><a href="/7352/Parkour-fails/">
+            	<img style="width: 116px; height: 116px;" src="http://www.owned.lv/small/7352.jpg" title="" />
+                <strong>Parkour fails</strong>
+                <span></span></a>
+            </li>
+			            <li><a href="/881/Stuck/">
+            	<img style="width: 116px; height: 116px;" src="http://www.owned.lv/small/e0fa1f187ec1126539cb30b00a0992eb.jpg" title="" />
+                <strong>Stuck</strong>
+                <span></span></a>
+            </li>
+			            <li><a href="/10052/Parking-fail/">
+            	<img style="width: 116px; height: 116px;" src="http://www.owned.lv/small/x3x0b6e6a5df650d99d686b2a794932fbfb.jpg" title="" />
+                <strong>Parking fail</strong>
+                <span></span></a>
+            </li>
+			            <li><a href="/11153/The-power-of-money/">
+            	<img style="width: 116px; height: 116px;" src="http://www.owned.lv/small/x3x2ed9b78c8f84fcfddbad4cee3a200a90.jpg" title="" />
+                <strong>The power of mo</strong>
+                <span></span></a>
+            </li>
+			            <li><a href="/5078/Alcohol/">
+            	<img style="width: 116px; height: 116px;" src="http://www.owned.lv/small/x3x07e0ebc10e83e523d362c8fab142769d.jpg" title="" />
+                <strong>Alcohol</strong>
+                <span></span></a>
+            </li>
+			            <li><a href="/5688/Funny-commercial/">
+            	<img style="width: 116px; height: 116px;" src="http://www.owned.lv/small/5688.jpg" title="" />
+                <strong>Funny commercia</strong>
+                <span></span></a>
+            </li>
+			        </ul>
+		<div style="clear:both"></div>
+    	<div id="adsense-bottom">
+			<script type="text/javascript"><!--
+			google_ad_client = "ca-pub-5472341110353775";
+			/* Owned bottom 728 */
+			google_ad_slot = "1730563667";
+			google_ad_width = 728;
+			google_ad_height = 90;
+			//-->
+			</script>
+			<script type="text/javascript"
+			src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+			</script>
+        </div>
+
+		<div style="clear:both"></div>
+		
+		<div id="mgid">
+			<!-- MGID News Widget Start -->
+			<div id="MarketGid6902"><center>
+			<a href="http://mgid.com/" target="_blank">Loading...</a>
+			</center></div>
+			<!-- MGID News Widget End -->
+			<script type="text/javascript">
+			var MarketGidDate = new Date();
+			document.write('<scr'+'ipt type="text/javascript" '
+			+'src="http://jsn.dt07.net/o/w/owned.lv.6902.js?t='+MarketGidDate.getYear()+MarketGidDate.getMonth()
+			+ '" charset="utf-8" ></scr'+'ipt>');
+			</script>
+		</div>
+
+
+<!-- <script type="text/javascript" src="http://www.luminate.com/widget/a0a734773b/"></script>
+ -->
+<!-- Avalanchers.com Custom Widget owned.lv_Ji6 -->
+<!-- <div id="ava_2569" style="text-align:center;">Loading...</div>
+<script async type="text/javascript" src="http://www.avalanchers.com/wcode/2569/" charset="utf-8"></script> -->
+<!-- Avalanchers.com Custom Widget End -->
+
+<!-- MGID Pop-under Start -->
+<script type="text/javascript"> var MGCD = new Date(); document.write('<scr' +'ipt type="text/javascript"' +' src="http://jsu.dt07.net/o/w/owned.lv.3649.js?t=' +MGCD.getYear() +MGCD.getMonth() +MGCD.getDate() +MGCD.getHours() +'" charset="utf-8"></scr'+'ipt>'); </script><!-- MGID Pop-under End -->        <div class="clear"></div>
+    </div>
+
+    <div id="footer"><div class="container">
+
+		<!-- Anymedia owned bottom -->
+		<!-- <div id="media_place_50" style="width:728px; height:90px;"></div> -->
+
+
+
+        <div class="data">
+            <p>
+                owned.lv, 2011, 0.025998            </p>
+                
+            <p style="margin-left: 100px;">
+				<script type="text/javascript" src="http://cc9424.counter.hackers.lv/cc.php"></script>
+				<noscript><div><a href="http://counter.hackers.lv/">
+				<img src="http://cc9424.counter.hackers.lv/counter.php?uid=9424"></a></div></noscript>
+            </p>
+        <ul id="footer-menu">
+       <!--     <li><a href="#">World Peace</a></li>
+            <li><a href="#">Adverts</a></li>
+            <li><a href="#">Contacts</a></li>  -->
+        </ul>
+        <div class="clear"></div>
+        </div>
+    </div></div>
+
+    <script src="/js/hoverintent.js" type="text/javascript"></script>
+    <script src="/js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="/js/jquery.t.js" type="text/javascript"></script>
+    
+    <link rel="stylesheet" type="text/css" href="/css/thickbox.css" /> 
+    <script src="/js/thickbox-compressed.js" type="text/javascript"></script>
+
+	<!-- mine -->
+	<script type="text/javascript" defer="defer">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-23222936-1']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+	<!-- MC -->
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-2273299-1']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+    
+	<!-- Place this tag after the last plusone tag -->
+	<script type="text/javascript">
+	  (function() {
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+
+</body>

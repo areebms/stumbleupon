@@ -1,0 +1,1986 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>The Burger Lab: Bacon Attack! | A Hamburger Today</title>
+
+	<meta name="description" content="It's time for another round of The Burger Lab. Got a suggestion for an upcoming burger? Email Kenji here, and he'll do his best to answer your queries in a future post. [Photographs: J. Kenji Lopez-Alt] Bacon Attack! Recipe Ready..." />
+	<meta name="keywords" content="A Hamburger Today, burgers, food, media, news, recommended, The Burger Lab" />
+
+<!-- JS Code for Chartbeat -->
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
+   
+	
+	<script type="text/javascript" src="http://static.seriouseats.com/aht/js/mt.js"></script>
+	
+	
+
+
+
+<script src="http://static.seriouseats.com/js/jquery.min.js"></script>
+
+	<script src="http://static.seriouseats.com/serious_eats/js/mt-site.js?20120430224927" type="text/javascript"></script>
+	
+	<script src="http://static.seriouseats.com/js/jquery.tools.scroll.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://static.seriouseats.com/js/jquery.accordion.min.js" type="text/javascript"></script>
+	<script src="http://static.seriouseats.com/js/accordion.js" type="text/javascript"></script>
+	<script type="text/javascript">
+var field_stars = new Array();
+function star_over(field, rating, on, off) {
+    for (var i = 1; i <= rating; i++) {
+        var star = document.getElementById(field + '_' + i);
+        star.src = on;
+    }
+    for (var i = rating + 1; i <= field_stars[field]; i++) {
+        var star = document.getElementById(field + '_' + i);
+        star.src = off;
+    }
+}
+function star_out(field, rating, on, off) {
+    var val = document.getElementById(field).value;
+    if (val) {
+        val = parseInt(val);
+    } else {
+        val = 0;
+    }
+    for (var i = 1; i <= val; i++) {
+        var star = document.getElementById(field + '_' + i);
+        star.src = on;
+    }
+    for (var i = val + 1; i <= field_stars[field]; i++) {
+        var star = document.getElementById(field + '_' + i);
+        star.src = off;
+    }
+}
+function star_click(field, rating) {
+    document.getElementById(field).value = rating;
+}
+</script>
+
+   	<script src="http://static.seriouseats.com/js/mobileRedirect.js" type="text/javascript"></script>
+	
+   	
+   	
+
+    
+   	
+
+<!-- JS Code for Google Analytics -->
+<script type="text/javascript">
+	  	var _gaq = _gaq || [];
+  		_gaq.push(['_setAccount', 'UA-962456-1']);
+                _gaq.push(['_setDomainName', '.seriouseats.com']);
+  		_gaq.push(['_trackPageview']);
+
+_gaq.push(['_trackEvent', 'A Hamburger Today', 'Authors', 'GoodEaterKenji']);
+
+  		(function() {
+    		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  		})();
+	</script>
+
+
+
+ 
+
+
+
+
+   <link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/general.css?v=121511" media="screen" />
+
+	
+	
+	
+	
+	<link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/aht/css/AHT.css?v=110601" />
+	
+	
+	
+	<link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/print.css" media="print" />
+
+	<!--[if lte IE 8]>
+	    <link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/ie8.css" media="screen" charset="utf-8" />
+	  <![endif]-->
+	<!--[if IE 7]>
+	    <link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/ie7.css" media="screen" charset="utf-8" />
+	  <![endif]-->
+
+
+
+
+
+
+	<meta name="copyright" content="Serious Eats 2012" />
+	<meta http-equiv="Content-Language" content="en-us" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="false" />
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+   <meta name="readability-verification" content="UA7kXkwV7ntCrsptquaq9Ufjh2FcJ9qzDV3C6C5b"/>
+	<link rel="Shortcut Icon" href="http://aht.seriouseats.com/favicon.ico" />
+
+	
+
+<meta property="fb:page_id" content="181784937278" />
+	<link rel="alternate" type="application/atom+xml" title="Atom" href="http://feeds.feedburner.com/feedmeaburger" />
+	
+
+   <script type="text/javascript">
+   /* <![CDATA[ */
+   $(document).ready(function() {
+       var u = mtGetUser();
+       if (u && u.is_authenticated) {
+           mtUpdateScores();
+       } else {
+           $('.scoring').addClass('scoring-scorable');
+       }
+       
+       	/* ------- Utilities BEGIN --------- */
+		// remove the default text on any search input box with the class "userField"
+		$(".userField").click(function() { 
+			    if ($(this).val() == 'Search Serious Eats'||'Search for Recipes' || 'Search Talk' || 'Search New York' || 'Search Sweets' || 'Search Drinks' || 'Search Slice' || 'Search AHT' || 'Search Photograzing' || 'Search Chicago') {   
+			        $(this).data('original', $(this).val()).val('');
+					$(this).addClass("selected");
+			    }
+			});
+		// put the default text back into any search input box with the class "userField" if the user hasn't typed anything
+		$(".userField").blur(function() { 
+			    if ($(this).val() == '') {   
+					$(this).removeClass("selected");
+			        $(this).val($(this).data('original'));
+			    }
+			});
+		// show and hide the newsletter form signup box
+		$("#subscribe-button").click(function(){
+			$("#newsletter-form").toggle("fast");
+			$(this).text($(this).text() == 'Go' ? 'Close' : 'Go');
+		});
+		/* ------- Utilities END --------- */
+
+   });
+   //mtAttachEvent('load', mtUpdateScores);
+   mtAttachEvent('usersignin', mtUpdateScores);
+   /* ]]> */
+   </script>
+
+
+<!-- socialize.js script should only be included once -->
+<script type="text/javascript" src="http://cdn.gigya.com/js/socialize.js?apiKey=2_ArepGxju5Ep6wgk0f7-tEYmuzM15n0na_Bs7Cw9OzTw2SsDZeoXheFFxBGD9TVK5"></script>
+<script type="text/javascript">
+var conf={}
+</script>
+
+
+
+
+
+	<script type="text/javascript" src="http://use.typekit.com/kti2wqp.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+	
+	
+
+	<script type="text/javascript" src="http://static.seriouseats.com/js/individualPost.js?v=022408"></script>
+
+<script src="http://static.seriouseats.com/js/date.js" type="text/javascript"></script>
+<script src="http://static.seriouseats.com/js/pagination.js" type="text/javascript">
+</script>
+
+
+
+
+
+
+<script src="http://aht.seriouseats.com/archives/2009/10/the-burger-lab-bacon-attack-pork-butt-bacon-burger-comments.js?20120430224927" type="text/javascript"></script>
+
+<script type="text/javascript">
+  	var commentsJSLoaded = false;
+  	var commentsDisplayed = false;
+  	var commentCount = '';
+  	var commentCountText = '';
+  	var intervalID = 0;
+  	var numCommentsPerPage = 100;
+  	//100;
+
+  	// For printing comments with Recipe posts   
+  	var recipeCommentsToInclude = new Array(); 
+  	var jumpToTopOfComments = true;
+    
+  	if (numComments > 0) {
+		commentCount = numComments + " Comment";
+        if (numComments > 1) {
+              commentCount += "s";
+        }
+   	} else {
+        commentCount = "Post a Comment";
+   	}
+	  
+
+      commentCountText = '<a href="http://aht.seriouseats.com/archives/2009/10/the-burger-lab-bacon-attack-pork-butt-bacon-burger.html#comments"  class="commentCount">';
+      commentCountText += commentCount + '</a>';               
+
+
+
+      commentsJSLoaded = true;
+	  
+	  intervalID = setInterval("showCommentSection()", 1000);
+  
+function showCommentSection()
+{
+	if (!commentsDisplayed)
+	{
+		if (commentsJSLoaded && ($('#commentSection').length) && ($('#postFooterCommentCount').length))  {
+			$("#postFooterCommentCount").html(commentCountText);
+			if($(".entryCommentCount").length > 0) {
+				$(".entryCommentCount").each(function() {
+				 	$(this).html(commentCount);
+				});
+			}	
+	   
+			if (numComments <= numCommentsPerPage) {
+				showComments(0, numComments);
+			} else {
+				jumpToTopOfComments = false;
+	
+				$(".pagination").pagination(numComments, {
+					items_per_page:numCommentsPerPage,
+					num_edge_entries:1,
+					num_display_entries:9,
+					next_show_always:false,
+					prev_show_always:false,
+					link_to:"#comments",
+					callback:handlePaginationClick
+				});
+				
+				jumpToTopOfComments = true;
+			}
+			commentsDisplayed = true;
+		} 
+	} else {
+		clearInterval(intervalID);
+	} 
+}
+  
+function showComments(startNum, endNum)
+{
+    var commentContent = '';
+	var regex = new RegExp("\n", "g"); 
+
+    for (var i = startNum;i < endNum;i++) {
+        commentContent += '<a name="' + commentJSON[i]["comment_id"] + '"></a>';
+    	if (i%2) {
+    		commentContent += '<div class="comment yellow">';
+    	} else {
+    		commentContent += '<div class="comment green">';
+    	}
+        commentContent += '<div class="comment-body">';
+        
+                commentContent += '<p>' + commentJSON[i]["text"].replace(regex, "<br />") + '</p><div class="comment-body-bottom"></div></div><p class="commenter postFooter"><a href="http://www.seriouseats.com/user/profile/' + commentJSON[i]["author_username"] + '">' + decodeURIComponent(escape(commentJSON[i]["author_nickname"])) + '</a> at <a href="http://aht.seriouseats.com/archives/2009/10/the-burger-lab-bacon-attack-pork-butt-bacon-burger.html#' + commentJSON[i]["comment_id"] + '">';
+        
+ 		
+ 		var date = commentJSON[i]["created_on"];
+ 		
+ 		var commentDate = new Date(date.substr(0,4), date.substr(4,2)-1, date.substr(6,2), date.substr(8,2), date.substr(10,2), date.substr(12,2));
+ 		
+ 		commentContent += commentDate.toString("h:mmtt on MM/dd/yy") + '</a></p></div>'; 		
+    }
+	
+    $('#commentSection').html(commentContent);
+	
+	// Recipe post - checked comments for printing
+	$('input[name$="include-comment"]').change(function() {
+		if ($(this).is(':checked')) { 
+			var arrayIndex = (jQuery.inArray($(this).attr('value'), recipeCommentsToInclude));
+			if (arrayIndex < 0) {
+				recipeCommentsToInclude.push($(this).attr('value'));
+				comments_list = recipeCommentsToInclude.join();
+			}
+		}
+		else {
+			var arrayIndex = (jQuery.inArray($(this).attr('value'), recipeCommentsToInclude));
+			if (arrayIndex >= 0) {
+				recipeCommentsToInclude.splice(arrayIndex,1);
+				comments_list = recipeCommentsToInclude.join();
+			}
+		}
+	});
+}
+
+function handlePaginationClick(page_index, pagination_container) {
+    var max_num = Math.min((page_index+1) * numCommentsPerPage, numComments);
+    var commentRange = '';
+    if ((max_num < numComments) || (max_num > numCommentsPerPage)) {
+         commentRange += "(" + (page_index*numCommentsPerPage + 1) + " - " + max_num + ") of ";
+    }
+
+    $('#commentRange').html(commentRange);
+
+	showComments(page_index*numCommentsPerPage, max_num);
+    
+	if (jumpToTopOfComments) {
+    	document.getElementById('comments').scrollIntoView();
+	}
+    return false;
+}
+
+$(document).ready(function()
+{
+	if (!commentsDisplayed)
+	{
+		showCommentSection();
+	}
+});
+</script>
+
+
+<!--
+<PageMap>
+     <DataObject type="document">
+        <Attribute name="title">The Burger Lab: Bacon Attack!</Attribute>
+        <Attribute name="author">J. Kenji López-Alt</Attribute>
+        <Attribute name="description">A burger patty made entirely of bacon isn't very good. But made of pork butt and bacon? Awesome. Add bacon-fat mayo and put it all in a bacon bit-studded bun for the Bacon Attack!</Attribute>
+        <Attribute name="post_date">Oct 30, 2009</Attribute>
+        <Attribute name="entry_id">71768</Attribute>
+        <Attribute name="num_favorites">6</Attribute>
+        <Attribute name="num_comments">20</Attribute>
+        
+     </DataObject>
+     <DataObject type="thumbnail">
+        <Attribute name="src" value="http://aht.seriouseats.com/assets_c/2009/10/20091030-baconattack-thumb-thumb-autox75-58385.jpg" />
+        <Attribute name="width" value="100" />
+        <Attribute name="height" value="75" />
+     </DataObject>
+  </PageMap>
+-->
+
+</head>
+
+<body class="sites">
+
+<div id="container">
+
+<div id="header" class="AHT" style="background: url('http://static.seriouseats.com/images/siteassets/background_header.png') no-repeat scroll center 0px transparent">
+	<form id="SearchForm" action="http://www.seriouseats.com/cgi-bin/mte/mt-search.cgi" method="get">
+        <input type="hidden" name="__mode" value="gsearch" />
+        <input type="hidden" name="blog_id" value="26" />
+        <input type="hidden" name="site" value="Burgers" />
+        <input id="searchBox" class="query userField" name="search" autocomplete="off" value="Search AHT" />
+		<input type="submit" class="submit" value="Go" />
+    </form>
+
+
+
+
+
+	<div class="widget-sign-in widget">
+
+    <div id="signin-widget-content" class="widget-content" style="top:20px;"></div>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+function mtUpdateSignInWidget(u) {
+    var separator = '&nbsp;&nbsp;|&nbsp;&nbsp;';
+    var el = document.getElementById('signin-widget-content');
+    var content = '';
+    // alert (document.URL);
+    //alert (encodeURIComponent(document.URL));
+    if (!el) return;
+    if (u) {
+        if (u && u.is_authenticated) {
+            user = u;
+            mtSaveUser();
+        } else {
+            // user really isn't logged in; so let's do this!
+            return mtSignIn();
+        }
+    } else {
+        u = mtGetUser();
+    }
+    if (u && u.name) {
+        var url;
+		content += '<div id="login-tab" class="loggedIn"><div id="login-tab-inner">';
+        if (u.is_authenticated) {
+            if (u.is_author) {
+
+				url = 'http://www.seriouseats.com/user/profile/'; 
+
+
+            } else {
+                url = u.url;
+            }
+        } else if (u.url) {
+            url = u.url;
+        } else {
+            url = null;
+        }
+        if (url)
+            content += '<span class="welcome">Hello, <a href="' + url + '">' + u.name + '</a>.</span>';
+        else
+            content += '<span class="welcome">Hello, <strong>' + u.name + '.</span>';
+        if (u.is_author)
+            content += '<span class="account"><a href="http://www.seriouseats.com/cgi-bin/mte/mt-cp.cgi?__mode=edit&blog_id=26&return_to=' + encodeURIComponent(document.URL) + '">Account</a></span>';
+        
+        content += ' | <a href="javascript:void(0)" onclick="return mtSignOutOnClick()">Log out</a>';
+        
+		content += '</div></div><div class="clearer"><!-- --></div>'
+    } else if (u && u.is_banned) {
+        content = 'You do not have permission to sign in to this blog.';
+    } else {
+		content = '<div id="login-tab" class="notLoggedIn"><div id="login-tab-inner"><span class="welcome">Welcome to Serious Eats!</span><a onclick="return mtSignInOnClick(\'login-tab-inner\')" href="javascript:void(0)" id="login-link">Log in</a> or <a href="http://www.seriouseats.com/cgi-bin/mte/mt-cp.cgi?__mode=register&blog_id=26&blog_id=0&return_to=http%3A%2F%2Fwww.seriouseats.com%2Fwelcome%2F">join</a> the community.</div></div><div class="clearer"><!-- --></div>'
+    }
+    //alert ("content is: " + content);
+    el.innerHTML = content;
+}
+mtAttachEvent('usersignin', mtUpdateSignInWidget);
+mtUpdateSignInWidget();
+/* ]]> */
+</script>
+<script type="text/javascript">
+//mtAttachEvent('load', mtUpdateScores);
+//mtAttachEvent('usersignin', mtUpdateScores);
+</script>
+
+	 <h1 id="sitetitle" title="Serious Eats home" style="top:10px;"><a href="http://www.seriouseats.com">Serious Eats - seriouseats.com</a></h1>
+
+
+
+
+	<div id="navarea">
+		<div id="sociallinks">
+			<span class="label">Follow Serious Eats</span><a href="http://foursquare.com/seriouseats" id="link-foursquare">Foursquare</a><a href="http://twitter.com/seriouseats" id="link-twitter">Twitter</a><a href="http://www.facebook.com/seriouseats" id="link-facebook">Facebook</a>
+		</div>
+		<ul id="mainnav" class="global">
+			<li id="item-sites" class="has-subnav"><a href="#">Our Sites</a><ul id="subnav-sites">
+				<li id="item-SE"><a href="http://www.seriouseats.com">Home</a></li>
+						<li id="item-AHT"><a href="http://aht.seriouseats.com/">Burgers <span class="blogname">(A Hamburger Today)</span></a></li>
+						<li id="item-SL"><a href="http://slice.seriouseats.com/">Pizza <span class="blogname">(Slice)</span></a></li>
+						<li id="item-DR"><a href="http://drinks.seriouseats.com/">Drinks</a></li>
+						<li id="item-SW"><a href="http://sweets.seriouseats.com/">Sweets</a></li>
+					</ul></li>
+			<li id="item-cities" class="has-subnav"><a href="#">Cities</a>
+				<ul id="subnav-cities" >
+							<li id="item-SENY"><a href="http://newyork.seriouseats.com/">New York</a></li>
+							<li id="item-CH"><a href="http://chicago.seriouseats.com/">Chicago</a></li>
+							<li><a href="#"><span class="blogname">More Launching Soon!</span></a></li>
+						</ul>
+				</li>
+			<li id="item-community"class="has-subnav"><a href="#">Community</a>
+				<ul id="subnav-community">
+								<li id="item-TK"><a href="http://www.seriouseats.com/talk/">Talk</a></li>
+								<li id="item-PG"><a href="http://photograzing.seriouseats.com/">Photograzing</a></li>
+							</ul>
+				</li>
+			<li id="item-recipes"><a href="http://www.seriouseats.com/recipes/">Recipes</a></li>
+		</ul>
+		</div>
+
+
+<div id="sectionheader">
+<h1 id="sectiontitle"><a href="http://aht.seriouseats.com/">A Hamburger Today</a></h1>
+<ul id="sectionnav">
+		<li><a href="http://aht.seriouseats.com/recipes/" class="recipes">Recipes</a></li>
+		<li><a href="http://aht.seriouseats.com/grilled/" class="grilled" title="The AHT Q &amp; A" alt="Grilled">Grilled</a></li>
+		<li><a href="http://aht.seriouseats.com/reviews/" class="reviews" title="Reviews from AHT and Other Sources" alt="Reviews from AHT and Other Sources">Reviews</a></li>
+		<li><a href="http://aht.seriouseats.com/recommended/" class="recommended" title="" alt="">Recommended</a></li>
+	        <li><a href="http://www.seriouseats.com/talk/burgers/?ref=flyout">Talk</a></li>
+</ul>
+
+
+<div id="sectionlogo"></div>
+</div>
+
+
+<div id="whatshot">
+<div id="whatshot-wrapper">        
+	<h3>What's Hot</h3>
+
+<script type="text/javascript">window.featurescode = "AHT";</script>
+<script src="http://www.seriouseats.com/js/skyboxes.js?20120430224928" type="text/javascript"></script>
+
+	<div class="clearfix"></div>
+	</div>
+</div>
+
+</div><!-- close header -->
+
+	<div id="content">
+	
+		<div id="threeColumn1">
+
+			<div class="individualPost">
+                     <div class="tools" id="blogTools">
+	  <ul id="postTools" class="left">
+					<li><a href="http://aht.seriouseats.com/archives/2009/10/print/the-burger-lab-bacon-attack-pork-butt-bacon-burger.html" title="Print" target="_blank"><img src="http://static.seriouseats.com/imagesV2/transparent.gif" class="icon icon-print" alt="Print This" /></a></li>
+          </ul><!--/#postTools -->
+
+<ul id="share" class="right">
+<li id="shareParent">Share:</li>
+<li style="position: relative; top: -4px;"><a class="addthis_button_pinterest" pi:pinit:url="http://aht.seriouseats.com/archives/2009/10/the-burger-lab-bacon-attack-pork-butt-bacon-burger.html" pi:pinit:media="http://aht.seriouseats.com/images/20091030-bacon-burger-in-hand.jpg" pi:pinit:layout="horizontal"></a></li>
+
+<li><a class="addthis_button_facebook"></a></li>
+<li><a class="addthis_button_twitter"></a></li>
+<li><a class="addthis_button_stumbleupon"></a></li>
+<li><a class="addthis_button_google_plusone"></a></li>
+            </ul><!-- close share  postTools-->
+</div>
+
+<!-- google_ad_section_start --> 
+
+<h3>The Burger Lab: Bacon Attack!</h3>
+
+	<p class="byline">Posted by <a href="http://www.seriouseats.com/user/profile/GoodEaterKenji">J. Kenji López-Alt</a>, October 30, 2009 at 10:30 AM</p>          
+
+	
+<script type="text/javascript">
+        $(document).ready(function(){ 
+        	var entryRecipeAlert = '#' + $(this).attr('id') + ' .recipe-alert';
+            if (($('.individualPost .recipe-alert').length > 0) && ($('.individualPost .entry-main-image').length > 0)) {
+            	$('.individualPost .recipe-alert').insertAfter($('.individualPost .entry-main-image').parent());
+            }
+            if ($('.individualPost .breakoutbox').length > 0) {
+            	$('.individualPost .breakoutbox').insertAfter($('.individualPost .recipe-alert'));
+		$('.individualPost .breakoutbox').css('clear', 'right');
+            }
+        });
+    </script>
+
+    
+     
+        
+            <div class="recipe-alert recipe-alert-lg">
+            
+                
+<a class="arrow" href="http://www.seriouseats.com/recipes/2009/10/the-bacon-attack-bacon-4-burger-recipe.html">Get the Recipe!</a>
+
+            
+            </div>
+        
+    
+    
+     
+
+	
+	<p><small>It's time for another round of <a href="/tags/The Burger Lab">The Burger Lab</a>. Got a suggestion for an upcoming burger? Email Kenji <a href="mailto:BurgerLab@gmail.com">here</a>, and he'll do his best to answer your queries in a future post.</small></p>
+
+<p><img alt="20091030-burger-buns-bacon-attack-opener.jpg" src="http://aht.seriouseats.com/images/20091030-burger-buns-bacon-attack-opener.jpg" /></p>
+
+<p class="caption">[Photographs: J. Kenji Lopez-Alt]</p>
+
+<div class="breakoutbox">
+<h4>Bacon Attack! Recipe</h4>
+
+<p>Ready to get hit by a Bacon Attack!?<br /><strong><a href="http://www.seriouseats.com/recipes/2009/10/the-bacon-attack-bacon-4-burger-recipe.html">Here's the recipe for the Bacon Burger »</a></strong></p></div>
+
+<p>Anyone who's vaguely into bacon (and who isn't?) or follows <a href="http://www.peppersandsmoke.com/bbq/burgers/">important internet memes</a> has surely born witness to the <a href="http://www.speakeasy.org/%7Esjmaks/bcb/">bacon burger</a>&mdash;that is, a burger patty entirely made up out of ground bacon. The trouble is, anyone who's actually followed through and made one of these things has probably come to the same conclusion that I have: <strong>they just aren't very good.</strong></p>
+
+<p>Overly salty, overly smoky, overly fatty (I didn't believe it, but yes, there is such a thing), and just plain <em>overly bacon-y</em>, they make for an interesting story, but are hardly good eats.</p>
+
+<p>Still, the concept is sound: Bacon is delicious, burgers are delicious; why shouldn't the two go hand-in-hand to make something extra delicious? The goal of this week's Burger Lab is to do just that: <strong>Take a burger to the bacon extreme,</strong> while at the same time coming up with something that is as good to eat as it is fun to gawk at.</p>
+
+<p>I present to you, <strong>The Bacon Attack!</strong></p>
+
+<p>As usual, I'm going to build the burger one piece at a time before putting it all together, starting with the grind.</p>
+	<a name="continued"></a>
+	<h4>The Meat</h4>
+
+<p><img alt="20091030-Bacon-and-pork.jpg" src="http://aht.seriouseats.com/images/20091030-Bacon-and-pork.jpg" /></p>
+
+<p>To begin my testing, I opted for good quality cured&mdash;not brine-injected (i.e. Oscar Meyer-quality)&mdash;smoked slab bacon over the pre-sliced stuff in order to allow me maximum mobility in terms of grind size. I didn't want to limit my options before I'd even started. I could go into the relative merits of nitrate-free vs. traditional, or hickory vs. applewood smoke, but that's another story for another time. Personal taste reigns supreme.</p>
+
+<p>Just to get my bearings, I made a single patty out of <strong>100% pure ground bacon</strong>, and as expected, couldn't get through more than a bite and a half of it (If anyone has any suggestions of what to do with the quarter pound patty of cooked ground bacon with two bites taken out of it sitting in my fridge, I'm all ears). Like a good cocktail, this patty was going to need a mixer.</p>
+
+<p>While grinding it together with beef was certainly an option, I found that beef ended up fighting with the bacon. It became a beef burger flavored with bacon, rather than a bacon burger. <span class="pullquote">Whenever I'm at a loss, my first instinct is to grab a package of pork butt</span>, and this time was no exception. When ground together with the bacon 50/50, <strong>the well marbled meat diluted the flavors of the bacon to acceptably delicious levels,</strong> without introducing any odd flavors of its own.</p>
+
+<h4>The Toppings</h4>
+
+<p><img alt="20091030-rendering-fat.jpg" src="http://aht.seriouseats.com/images/20091030-rendering-fat.jpg" /></p>
+
+<p>Crisply fried, thick-sliced bacon was a no-brainer&mdash;I did mine in a cast iron skillet over low, low heat for even, spatter free cooking, though if I were doing a larger volume, I'd do it on a sheet tray in the oven. But if this recipe is really about optimizing bacon, it would've be a shame to throw out all of that flavorful rendered bacon fat that comes out of those slices. The solution? <a href="http://www.seriouseats.com/2009/10/the-food-lab-meatonnaise-mayonnaises-mayos-bacon-lamb-duck-beef-fats-science.html">Bacon fat mayo</a>, of course.</p>
+
+<p><img alt="20091023mayo500.jpg" src="http://aht.seriouseats.com/images/20091023mayo500.jpg" /></p>
+
+<p>If you missed <a href="http://www.seriouseats.com/2009/10/the-food-lab-meatonnaise-mayonnaises-mayos-bacon-lamb-duck-beef-fats-science.html">last week's Food Lab post</a>, it was about the science behind making mayonnaise by replacing vegetable oil with rendered animal fats. For this burger, a solid dollop of bacon-fat mayo (studded with bacon bits, of course) is just what the doctor ordered*.</p>
+
+<p><small>* The doctor in my mind, that is.</small></p>
+
+<h4>The Bun</h4>
+
+<p><img alt="20091030-making-dough.jpg" src="http://aht.seriouseats.com/image/20091030-making-dough.jpg" /></p>
+
+<p>Here's where I begin heading into personally uncharted waters. I've made burger buns a few times, but in all honesty, I'm a cook, not a baker. But on the other hand, I do know exactly what I'm looking for in a burger bun. It should have a <strong>soft, golden crust, a slightly sweet and savory flavor, and a tender, almost squishy interior.</strong> The key to these qualities is fat. Because fat interferes with the formation of gluten&mdash;the protein network that gives baked goods their structure&mdash;a fatty dough ends up less tough and more tender.</p>
+
+<p><img alt="20091030-burger-buns.jpg" class="photo-right" src="http://aht.seriouseats.com/images/20091030-burger-buns.jpg" />I started with my basic burger bun dough, which uses yeast, water, oil, sugar, an egg, and flour, and started upping the bacon. Stage one was to <strong>introduce crisply fried bacon bits</strong> to the dough before allowing it to rise. The crisp bits studded in the finished bun add sudden bursts of salt and smoke that pop on your tongue as you chew the soft bread. But to really take the bacon to the extreme, <strong>I replaced the vegetable oil with the bacon fat</strong> that I had just rendered off of the bits.</p>
+
+<p><strong>Perfect</strong>. I think I may have invented the only Atkin's-friendly burger bun in the world&mdash;the thing tasted almost more meat than bread.</p>
+
+<h4>The Assembly</h4>
+
+<p><img alt="20091030-cooking-bacon-curger.jpg" src="http://aht.seriouseats.com/images/20091030-cooking-bacon-curger.jpg" /></p>
+
+<p>The bacon patty gets plenty crisp and flavorful on its own, so there's no need to use the <a href="http://aht.seriouseats.com/archives/2009/10/the-burger-lab-the-fake-shack-how-to-make-shake-shack-burger.html">smash and scape technique</a> here&mdash;just form the meat into patties, and fry away. While pork is really just as safe to eat as beef even at rare, most people find soft, cool pork to be off-putting, so I try and get my patties to at least a nice juicy pink stage. Because cured meat proteins are able to hold more water than unadulterated proteins, the bacon meat helps the patty retain moisture as it cooks, so luckily, slight overcooking doesn't pose too much of a problem&mdash;<strong>these things come out juicy no matter what you do to them.</strong></p>
+
+<p><img alt="20091030-assembling-bacon-attack.jpg" src="http://aht.seriouseats.com/images/20091030-assembling-bacon-attack.jpg" /></p>
+
+<p>I toyed briefly with the idea of adding cheese, but found that it only distracted from the baconiness, and that really, it doesn't need it. Perhaps in future experiments I'll attempt to make meltable cheese slices flavored with bacon to accompany the burger, but I'm afraid my past attempts at <a href="http://aht.seriouseats.com/archives/2008/05/the-blumenburger-the-most-laborintensive-hamburger-in-the-world.html">making meltable cheese</a> have ended in failure.</p>
+
+<p><img alt="20091030-bacon-burger-in-hand.jpg" src="http://aht.seriouseats.com/images/20091030-bacon-burger-in-hand.jpg" /></p>
+
+<p>The end result? <strong>Bacolicious!</strong> The soft, smoky bun with crisp, salty lardons is just strong enough to support the juicy patty inside, but soft enough to melt into a wash of bacon flavor on your tongue. The crisp strips and intense baconnaise, while hardly necessary, work together to turn this into one of the purest expressions of bacon I have ever put in my mouth&mdash;and I've put many expressions of bacon in my mouth. The only accompaniment that the Bacon Attack! needed (incidentally, even in the middle of a sentence, <span class="pullquote">the Bacon Attack! should always be punctuated with an exclamation point&mdash;it's just that kind of a sandwich</span>) was a batch of homemade B&B pickles to eat between bites and help cut through some of the richness.</p>
+
+<p>I haven't decided yet whether the "Attack!" in Bacon Attack! is a noun or an imperative verb (as in, "Bacon, Attack!"), but after eating it, my mouth is telling me it's the latter.</p>
+
+<p><strong>Continue here for <a href="http://www.seriouseats.com/recipes/2009/10/the-bacon-attack-bacon-4-burger-recipe.html">The Bacon Attack! recipe »</a></strong></p>
+
+<p><small><strong>About the author: </strong>After graduating from MIT, <a href="http://www.seriouseats.com/user/profile/GoodEaterKenji">J. Kenji Lopez-Alt</a> spent many years as a chef, recipe developer, writer, and editor in Boston. He now lives in New York with his wife, where he runs a private chef business, <a href="http://www.kacuisine.com">KA Cuisine</a>, and co-writes the blog <a href="http://www.goodeater.org">GoodEater.org</a>.</small></p>
+
+	
+
+	
+
+<p style="padding-top: 5px; padding-bottom: 5px; margin-bottom: 6px; border-top: dotted 1px black; border-bottom: dotted 1px black;"><em>View other entries from <a href="http://aht.seriouseats.com/the-burger-lab/?ref=ind">The Burger Lab</a></em></p>
+    
+
+
+ <!-- google_ad_section_end -->                 
+
+ <p class="postFooter" id="commentsAndFavoritesFooter">
+
+<span id="postFooterCommentCount"><a href="http://aht.seriouseats.com/archives/2009/10/the-burger-lab-bacon-attack-pork-butt-bacon-burger.html#comments" class="commentCount">Post a Comment</a></span>
+
+
+<span class="favorite">
+
+<!-- [1] new favorite code  -->
+<span class="entry-scoring">
+<a href="javascript:void(0);" onclick="return mtScore(71768);" id="scoring-id-71768" class="scoring">Favorite this!</a> &nbsp;(<span id="scoring-score-71768" class="scoring-score">6</span>)
+</span>
+
+
+</span>
+
+</p>
+
+<p class="postFooter">Tags: <a href="/tags/recommended">recommended</a>, <a href="/tags/The Burger Lab">The Burger Lab</a></p>
+					
+	<div class="clearer"></div>
+
+
+<script language='JavaScript'>
+var OB_langJS = 'http://widgets.outbrain.com/lang_en.js'; var OBITm = '1296090325009';var OB_raterMode = 'none';var OB_recMode = 'strip'; 
+
+var OutbrainPermaLink='http://aht.seriouseats.com/archives/2009/10/the-burger-lab-bacon-attack-pork-butt-bacon-burger.html'; 
+
+ if ( typeof(OB_Script)!='undefined' )OutbrainStart(); else { var OB_Script = true; var str = unescape("%3Cscript src=\'http://widgets.outbrain.com/OutbrainRater.js\' type=\'text/javascript\'%3E%3C/script%3E"); document.write(str); }
+ </script>
+	
+									
+</div><!-- close individual post -->
+
+	<div id="SERIOUSEATS_BTF_CENTER_AD" style="border-bottom: 1px solid #B2B2B2; padding: 0px 30px 20px 30px; margin-bottom: 20px;">
+<script src="http://adserver.adtechus.com/?adrawdata/3.0/5108.1/2329003/0/0/ADTECH;loc=100;noperf=1;"></script>
+</div>
+
+		<div id="comments">
+				
+					
+						
+						
+<h4 class="body"><span id="commentRange"></span>
+<span class="entryCommentCount">Comments</span>:</h4>
+
+					
+					
+	
+					
+        <div id="commentPagination" class="pagination">
+        </div>
+        <div style="clear:both;"></div>
+	<div id="commentSection" style="padding-top:10px;padding-bottom:10px;">
+	</div>
+        <div id="bottomCommentPagination" class="pagination"></div>
+        <div style="clear:both;"></div>
+                                        
+
+				</div><!-- end comments -->
+				
+				
+
+<a name="ihascommented"></a><div id="commented" style="display: none;"><p>Thanks for commenting!<br />Your comment has been accepted<br />and will appear in a moment.</p></div>
+
+ <h4 class="body addAComment">Add a comment:</h4>
+
+
+					<div id="add">
+						<script type="text/javascript">
+						user = mtGetUser();
+						if (user && user.is_authenticated) {
+							document.write("");
+						} else {
+							document.write("<div class=\"commentGuidelines\"><h3>Hello Eater!</h3><p>To start talking, please <a href=\"javascript:void(0)\" onclick=\"return mtSignInOnClick('signin-widget-content')\">log in</a> or <a href=\"http://aht.seriouseats.com/cgi-bin/mte/mt-cp.cgi?__mode=register&blog_id=26&return_to=" + encodeURIComponent('http://www.seriouseats.com/welcome/') + "\">sign up</a> &mdash; it's fast and free!</p></div>");
+						}
+						</script>
+					</div>
+					
+				
+
+				
+
+
+					<div id="post-comment">
+						
+					
+						<a name="commentform"></a>
+						<div class="formSection">
+							<form method="post" action="http://www.seriouseats.com/cgi-bin/mte/mt-comments.cgi" name="comments_form" id="comments_form" onsubmit="setCookie('commented', 'true'); document.getElementById('comment-post').disabled=true; document.getElementById('comment-post').value = '&nbsp;&nbsp;&nbsp;Please wait...&nbsp;&nbsp;&nbsp;'; ">
+
+<input type="hidden" name="post" value="post" />
+
+
+
+
+								<input type="hidden" name="static" value="1" />
+								<input type="hidden" name="entry_id" value="71768" />
+								<textarea id="addComment" rows="5" cols="60" name="text" class="formText"></textarea>
+								<div style="float:left"><p class="requirements">Comments can take up to a minute to appear - please be patient!</p></div>
+
+<div style="float:right" class="formCommentPreview">
+									<input type="submit" value="Post a Comment!" name="post" id="comment-post" class="formButton"  />
+								</div><div class="clearer"></div>
+							</form>
+						</div>
+						
+						<div id="previewingComment">	
+							<h4 class="body">Previewing your comment:</h4>
+							<div class="comment preview">
+								<div class="comment-body" >
+									<p id="livePreview">&nbsp;</p>
+									<div class="comment-body-bottom"></div>
+								</div>
+							</div><!-- close comment preview -->
+						</div><!-- close previewing comment -->				
+			
+						<div class="tools" id="HTMLHints">
+							<p><strong>HTML Hints</strong></p>
+							<p>Some HTML is OK: &lt;a href="URL"&gt;link&lt;/a&gt;, &lt;strong&gt;<strong>strong</strong>&lt;/strong&gt;, &lt;em&gt;<em>em</em>&lt;/em&gt;</p>
+							
+							<p><strong>Comment Guidelines</strong></p>
+							<p>Post whatever you want, just keep it seriously about eats, seriously. We reserve the right to delete off-topic or inflammatory comments. Learn more at our <a href="http://www.seriouseats.com/comment-policy/">Comment Policy page</a>.</p>
+							
+							<p>If you see something not so nice, please, <a href="http://www.seriouseats.com/contact?selected=flag&url=http://aht.seriouseats.com/archives/2009/10/the-burger-lab-bacon-attack-pork-butt-bacon-burger.html">report an inappropriate comment.</a></strong></p>
+						</div>
+						
+					
+					</div><!-- close post-comment -->
+			
+					 <script type="text/javascript">
+						 if (!user || !user.is_authenticated) { document.getElementById("post-comment").style.display = 'none'; }
+					 </script>
+ 
+ 
+				
+
+
+		</div><!-- end column 1 -->
+	
+
+
+<div id="featuredRight2Columns">
+<div id="SAY-ad">
+
+
+<div id="SERIOUSEATS_AHAMBURGERTODAY_AD">
+<script src="http://adserver.adtechus.com/?adrawdata/3.0/5108.1/2265415/0/0/ADTECH;loc=100;noperf=1;"></script>
+</div>
+
+
+
+</div>
+
+
+
+
+	<div class="box">
+<div class="inner" id="indexBurgerByLocation">
+	
+		<h4>Burger by Location</h4>
+
+<select name="type" class="AHTSelect" onchange="if(this.value!='')window.location.href=this.value;">
+      <option value="">By City, State, or Country...</option>
+      <option value="">  </option>
+       <option value="">------ UNITED STATES ------</option>
+      <option value="http://aht.seriouseats.com/tags/Alabama">Alabama</option>
+      <option value="http://aht.seriouseats.com/tags/Alaska">Alaska</option>
+      <option value="http://aht.seriouseats.com/tags/Arizona">Arizona</option>
+      <option value="http://aht.seriouseats.com/tags/Arkansas">Arkansas</option>
+      <option value="http://aht.seriouseats.com/tags/California">California</option>
+
+      <option value="http://aht.seriouseats.com/tags/Los Angeles"> &nbsp;&nbsp;Los Angeles</option>
+      <option value="http://aht.seriouseats.com/tags/San Diego"> &nbsp;&nbsp;San Diego</option>
+      <option value="http://aht.seriouseats.com/tags/Santa Barbara"> &nbsp;&nbsp;Santa Barbara</option>
+      <option value="http://aht.seriouseats.com/tags/San Francisco"> &nbsp;&nbsp;San Francisco</option>
+      <option value="http://aht.seriouseats.com/tags/Colorado">Colorado</option>          
+      <option value="http://aht.seriouseats.com/tags/Connecticut">Connecticut</option>
+      <option value="http://aht.seriouseats.com/tags/Delaware">Delaware</option>
+
+      <option value="http://aht.seriouseats.com/tags/Florida">Florida</option>
+      <option value="http://aht.seriouseats.com/tags/Georgia">Georgia</option>
+      <option value="http://aht.seriouseats.com/tags/Hawaii">Hawaii</option>
+      <option value="http://aht.seriouseats.com/tags/Idaho">Idaho</option>
+      <option value="http://aht.seriouseats.com/tags/Illinois">Illinois</option>
+      <option value="http://aht.seriouseats.com/tags/Indiana">Indiana</option>
+      <option value="http://aht.seriouseats.com/tags/Iowa">Iowa</option>
+
+      <option value="http://aht.seriouseats.com/tags/Kansas">Kansas</option>
+		<option value="http://aht.seriouseats.com/tags/Salina">&nbsp;&nbsp;Salina</option>
+		<option value="http://aht.seriouseats.com/tags/Topeka">&nbsp;&nbsp;Topeka</option>
+	  <option value="http://aht.seriouseats.com/tags/Wichita">&nbsp;&nbsp;Wichita</option>
+      <option value="http://aht.seriouseats.com/tags/Kentucky">Kentucky</option>
+      <option value="http://aht.seriouseats.com/tags/Louisiana">Louisiana</option>
+      <option value="http://aht.seriouseats.com/tags/Maine">Maine</option>
+      <option value="http://aht.seriouseats.com/tags/Maryland">Maryland</option>
+
+      <option value="http://aht.seriouseats.com/tags/Massachusetts">Massachusetts</option>
+      <option value="http://aht.seriouseats.com/tags/Michigan">Michigan</option>
+      <option value="http://aht.seriouseats.com/tags/Minnesota">Minnesota</option>
+      <option value="http://aht.seriouseats.com/tags/Mississippi">Mississippi</option>
+      <option value="http://aht.seriouseats.com/tags/Missouri">Missouri</option>
+      <option value="http://aht.seriouseats.com/tags/Montana">Montana</option>
+      <option value="http://aht.seriouseats.com/tags/Nebraska">Nebraska</option>
+
+      <option value="http://aht.seriouseats.com/tags/Nevada">Nevada</option>
+      <option value="http://aht.seriouseats.com/tags/New Hampshire">New Hampshire</option>
+      <option value="http://aht.seriouseats.com/tags/New Jersey">New Jersey</option>
+      <option value="http://aht.seriouseats.com/tags/New Mexico">New Mexico</option>
+      <option value="http://aht.seriouseats.com/tags/New York">New York</option>
+      &nbsp;&nbsp;<option value="http://aht.seriouseats.com/tags/NYC">NYC</option>
+      <option value="http://aht.seriouseats.com/tags/North Carolina">North Carolina</option>
+
+      <!-- <option value="http://aht.seriouseats.com/tags/North Dakota">North Dakota</option> -->
+      <option value="http://aht.seriouseats.com/tags/Ohio">Ohio</option>
+      <option value="http://aht.seriouseats.com/tags/Oklahoma">Oklahoma</option>
+      <option value="http://aht.seriouseats.com/tags/Oregon">Oregon</option> 
+      <option value="http://aht.seriouseats.com/tags/Pennsylvania">Pennsylvania</option>
+      <option value="http://aht.seriouseats.com/tags/South Carolina">South Carolina</option>
+      <!-- <option value="http://aht.seriouseats.com/tags/South Dakota">South Dakota</option> -->
+
+      <option value="http://aht.seriouseats.com/tags/Tennessee">Tennessee</option>
+      <option value="http://aht.seriouseats.com/tags/Texas">Texas</option>
+      <option value="http://aht.seriouseats.com/tags/Utah">Utah</option>
+      <!-- <option value="http://aht.seriouseats.com/tags/Vermont">Vermont</option> -->
+      <option value="http://aht.seriouseats.com/tags/Virginia">Virginia</option>
+      <option value="http://aht.seriouseats.com/tags/Washington">Washington</option>
+      <option value="http://aht.seriouseats.com/tags/Washington D.C.">Washington D.C.</option>
+
+      <option value="http://aht.seriouseats.com/tags/West Virginia">West Virginia</option>
+      <option value="http://aht.seriouseats.com/tags/Wisconsin">Wisconsin</option>
+      <option value="http://aht.seriouseats.com/tags/Wyoming">Wyoming</option>
+      
+      <option value="">   </option>
+      
+      <option value="">------ BURGERS ABROAD ------</option>
+      <option value="http://aht.seriouseats.com/tags/Canada">&nbsp;&nbsp;Canada</option>
+      <option value="http://aht.seriouseats.com/tags/British Columbia">&nbsp;&nbsp;&nbsp;&nbsp;British Columbia</option>
+      <option value="http://aht.seriouseats.com/tags/Ontario">&nbsp;&nbsp;&nbsp;&nbsp;Ontario</option>
+
+      <option value="http://aht.seriouseats.com/tags/China">&nbsp;&nbsp;China</option>
+      <option value="http://aht.seriouseats.com/tags/Cuba">&nbsp;&nbsp;Cuba</option>
+      <option value="http://aht.seriouseats.com/tags/Finland">&nbsp;&nbsp;Finland</option>
+      <option value="http://aht.seriouseats.com/tags/France">&nbsp;&nbsp;France</option>
+      <option value="http://aht.seriouseats.com/tags/Iceland">&nbsp;&nbsp;Iceland</option>
+      <option value="http://aht.seriouseats.com/tags/Japan">&nbsp;&nbsp;Japan</option>
+	  <option value="http://aht.seriouseats.com/tags/Malaysia">&nbsp;&nbsp;Malaysia</option>
+      <option value="http://aht.seriouseats.com/tags/Mexico">&nbsp;&nbsp;Mexico</option>
+
+	  <option value="http://aht.seriouseats.com/tags/The Netherlands">&nbsp;&nbsp;The Netherlands</option>
+      <option value="http://aht.seriouseats.com/tags/Amsterdam">&nbsp;&nbsp;&nbsp;&nbsp;Amsterdam</option>      
+      <option value="http://aht.seriouseats.com/tags/New Zealand">&nbsp;&nbsp;New Zealand</option>
+	  <option value="http://aht.seriouseats.com/tags/Senegal">&nbsp;&nbsp;Senegal</option> 
+      <option value="http://aht.seriouseats.com/tags/Sweden">&nbsp;&nbsp;Sweden</option>     
+<option value="http://aht.seriouseats.com/tags/South Korea">&nbsp;&nbsp;South Korea</option>
+<option value="http://aht.seriouseats.com/tags/Taiwan">&nbsp;&nbsp;Taiwan</option>   &nbsp;
+<option value="http://aht.seriouseats.com/tags/UK">&nbsp;&nbsp;U.K.</option>
+	  <option value="http://aht.seriouseats.com/tags/Vietnam">&nbsp;&nbsp;Vietnam</option>
+
+</select>
+
+		</div><!-- close inner -->
+<div class="inner" id="innerArchives">
+	
+			<h4>Browse the Archives</h4>
+
+			
+			<select name="type" id="AHTDateSelect" class="AHTSelect" onchange="if(this.value!='')window.location.href=this.value;">
+				<option value="" label="By Date...">By Date...</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2012/04/29-week/" label="April 29, 2012 - May  5, 2012">April 29, 2012 - May  5, 2012</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2012/04/22-week/" label="April 22, 2012 - April 28, 2012">April 22, 2012 - April 28, 2012</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2012/04/15-week/" label="April 15, 2012 - April 21, 2012">April 15, 2012 - April 21, 2012</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2012/04/08-week/" label="April  8, 2012 - April 14, 2012">April  8, 2012 - April 14, 2012</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2012/04/01-week/" label="April  1, 2012 - April  7, 2012">April  1, 2012 - April  7, 2012</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2012/03/25-week/" label="March 25, 2012 - March 31, 2012">March 25, 2012 - March 31, 2012</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2012/03/18-week/" label="March 18, 2012 - March 24, 2012">March 18, 2012 - March 24, 2012</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2012/03/11-week/" label="March 11, 2012 - March 17, 2012">March 11, 2012 - March 17, 2012</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2012/03/04-week/" label="March  4, 2012 - March 10, 2012">March  4, 2012 - March 10, 2012</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2012/02/26-week/" label="February 26, 2012 - March  3, 2012">February 26, 2012 - March  3, 2012</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2012/02/19-week/" label="February 19, 2012 - February 25, 2012">February 19, 2012 - February 25, 2012</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2012/02/12-week/" label="February 12, 2012 - February 18, 2012">February 12, 2012 - February 18, 2012</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2012/02/05-week/" label="February  5, 2012 - February 11, 2012">February  5, 2012 - February 11, 2012</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2012/01/29-week/" label="January 29, 2012 - February  4, 2012">January 29, 2012 - February  4, 2012</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2012/01/22-week/" label="January 22, 2012 - January 28, 2012">January 22, 2012 - January 28, 2012</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2012/01/15-week/" label="January 15, 2012 - January 21, 2012">January 15, 2012 - January 21, 2012</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2012/01/08-week/" label="January  8, 2012 - January 14, 2012">January  8, 2012 - January 14, 2012</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2012/01/01-week/" label="January  1, 2012 - January  7, 2012">January  1, 2012 - January  7, 2012</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/12/25-week/" label="December 25, 2011 - December 31, 2011">December 25, 2011 - December 31, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/12/18-week/" label="December 18, 2011 - December 24, 2011">December 18, 2011 - December 24, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/12/11-week/" label="December 11, 2011 - December 17, 2011">December 11, 2011 - December 17, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/12/04-week/" label="December  4, 2011 - December 10, 2011">December  4, 2011 - December 10, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/11/27-week/" label="November 27, 2011 - December  3, 2011">November 27, 2011 - December  3, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/11/20-week/" label="November 20, 2011 - November 26, 2011">November 20, 2011 - November 26, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/11/13-week/" label="November 13, 2011 - November 19, 2011">November 13, 2011 - November 19, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/11/06-week/" label="November  6, 2011 - November 12, 2011">November  6, 2011 - November 12, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/10/30-week/" label="October 30, 2011 - November  5, 2011">October 30, 2011 - November  5, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/10/23-week/" label="October 23, 2011 - October 29, 2011">October 23, 2011 - October 29, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/10/16-week/" label="October 16, 2011 - October 22, 2011">October 16, 2011 - October 22, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/10/09-week/" label="October  9, 2011 - October 15, 2011">October  9, 2011 - October 15, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/10/02-week/" label="October  2, 2011 - October  8, 2011">October  2, 2011 - October  8, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/09/25-week/" label="September 25, 2011 - October  1, 2011">September 25, 2011 - October  1, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/09/18-week/" label="September 18, 2011 - September 24, 2011">September 18, 2011 - September 24, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/09/11-week/" label="September 11, 2011 - September 17, 2011">September 11, 2011 - September 17, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/09/04-week/" label="September  4, 2011 - September 10, 2011">September  4, 2011 - September 10, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/08/28-week/" label="August 28, 2011 - September  3, 2011">August 28, 2011 - September  3, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/08/21-week/" label="August 21, 2011 - August 27, 2011">August 21, 2011 - August 27, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/08/14-week/" label="August 14, 2011 - August 20, 2011">August 14, 2011 - August 20, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/08/07-week/" label="August  7, 2011 - August 13, 2011">August  7, 2011 - August 13, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/07/31-week/" label="July 31, 2011 - August  6, 2011">July 31, 2011 - August  6, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/07/24-week/" label="July 24, 2011 - July 30, 2011">July 24, 2011 - July 30, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/07/17-week/" label="July 17, 2011 - July 23, 2011">July 17, 2011 - July 23, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/07/10-week/" label="July 10, 2011 - July 16, 2011">July 10, 2011 - July 16, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/07/03-week/" label="July  3, 2011 - July  9, 2011">July  3, 2011 - July  9, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/06/26-week/" label="June 26, 2011 - July  2, 2011">June 26, 2011 - July  2, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/06/19-week/" label="June 19, 2011 - June 25, 2011">June 19, 2011 - June 25, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/06/12-week/" label="June 12, 2011 - June 18, 2011">June 12, 2011 - June 18, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/06/05-week/" label="June  5, 2011 - June 11, 2011">June  5, 2011 - June 11, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/05/29-week/" label="May 29, 2011 - June  4, 2011">May 29, 2011 - June  4, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/05/22-week/" label="May 22, 2011 - May 28, 2011">May 22, 2011 - May 28, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/05/15-week/" label="May 15, 2011 - May 21, 2011">May 15, 2011 - May 21, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/05/08-week/" label="May  8, 2011 - May 14, 2011">May  8, 2011 - May 14, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/05/01-week/" label="May  1, 2011 - May  7, 2011">May  1, 2011 - May  7, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/04/24-week/" label="April 24, 2011 - April 30, 2011">April 24, 2011 - April 30, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/04/17-week/" label="April 17, 2011 - April 23, 2011">April 17, 2011 - April 23, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/04/10-week/" label="April 10, 2011 - April 16, 2011">April 10, 2011 - April 16, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/04/03-week/" label="April  3, 2011 - April  9, 2011">April  3, 2011 - April  9, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/03/27-week/" label="March 27, 2011 - April  2, 2011">March 27, 2011 - April  2, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/03/20-week/" label="March 20, 2011 - March 26, 2011">March 20, 2011 - March 26, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/03/13-week/" label="March 13, 2011 - March 19, 2011">March 13, 2011 - March 19, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/03/06-week/" label="March  6, 2011 - March 12, 2011">March  6, 2011 - March 12, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/02/27-week/" label="February 27, 2011 - March  5, 2011">February 27, 2011 - March  5, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/02/20-week/" label="February 20, 2011 - February 26, 2011">February 20, 2011 - February 26, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/02/13-week/" label="February 13, 2011 - February 19, 2011">February 13, 2011 - February 19, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/02/06-week/" label="February  6, 2011 - February 12, 2011">February  6, 2011 - February 12, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/01/30-week/" label="January 30, 2011 - February  5, 2011">January 30, 2011 - February  5, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/01/23-week/" label="January 23, 2011 - January 29, 2011">January 23, 2011 - January 29, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/01/16-week/" label="January 16, 2011 - January 22, 2011">January 16, 2011 - January 22, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/01/09-week/" label="January  9, 2011 - January 15, 2011">January  9, 2011 - January 15, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2011/01/02-week/" label="January  2, 2011 - January  8, 2011">January  2, 2011 - January  8, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/12/26-week/" label="December 26, 2010 - January  1, 2011">December 26, 2010 - January  1, 2011</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/12/19-week/" label="December 19, 2010 - December 25, 2010">December 19, 2010 - December 25, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/12/12-week/" label="December 12, 2010 - December 18, 2010">December 12, 2010 - December 18, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/12/05-week/" label="December  5, 2010 - December 11, 2010">December  5, 2010 - December 11, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/11/28-week/" label="November 28, 2010 - December  4, 2010">November 28, 2010 - December  4, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/11/21-week/" label="November 21, 2010 - November 27, 2010">November 21, 2010 - November 27, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/11/14-week/" label="November 14, 2010 - November 20, 2010">November 14, 2010 - November 20, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/11/07-week/" label="November  7, 2010 - November 13, 2010">November  7, 2010 - November 13, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/10/31-week/" label="October 31, 2010 - November  6, 2010">October 31, 2010 - November  6, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/10/24-week/" label="October 24, 2010 - October 30, 2010">October 24, 2010 - October 30, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/10/17-week/" label="October 17, 2010 - October 23, 2010">October 17, 2010 - October 23, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/10/10-week/" label="October 10, 2010 - October 16, 2010">October 10, 2010 - October 16, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/10/03-week/" label="October  3, 2010 - October  9, 2010">October  3, 2010 - October  9, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/09/26-week/" label="September 26, 2010 - October  2, 2010">September 26, 2010 - October  2, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/09/19-week/" label="September 19, 2010 - September 25, 2010">September 19, 2010 - September 25, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/09/12-week/" label="September 12, 2010 - September 18, 2010">September 12, 2010 - September 18, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/09/05-week/" label="September  5, 2010 - September 11, 2010">September  5, 2010 - September 11, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/08/29-week/" label="August 29, 2010 - September  4, 2010">August 29, 2010 - September  4, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/08/22-week/" label="August 22, 2010 - August 28, 2010">August 22, 2010 - August 28, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/08/15-week/" label="August 15, 2010 - August 21, 2010">August 15, 2010 - August 21, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/08/08-week/" label="August  8, 2010 - August 14, 2010">August  8, 2010 - August 14, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/08/01-week/" label="August  1, 2010 - August  7, 2010">August  1, 2010 - August  7, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/07/25-week/" label="July 25, 2010 - July 31, 2010">July 25, 2010 - July 31, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/07/18-week/" label="July 18, 2010 - July 24, 2010">July 18, 2010 - July 24, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/07/11-week/" label="July 11, 2010 - July 17, 2010">July 11, 2010 - July 17, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/07/04-week/" label="July  4, 2010 - July 10, 2010">July  4, 2010 - July 10, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/06/27-week/" label="June 27, 2010 - July  3, 2010">June 27, 2010 - July  3, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/06/20-week/" label="June 20, 2010 - June 26, 2010">June 20, 2010 - June 26, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/06/13-week/" label="June 13, 2010 - June 19, 2010">June 13, 2010 - June 19, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/06/06-week/" label="June  6, 2010 - June 12, 2010">June  6, 2010 - June 12, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/05/30-week/" label="May 30, 2010 - June  5, 2010">May 30, 2010 - June  5, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/05/23-week/" label="May 23, 2010 - May 29, 2010">May 23, 2010 - May 29, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/05/16-week/" label="May 16, 2010 - May 22, 2010">May 16, 2010 - May 22, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/05/09-week/" label="May  9, 2010 - May 15, 2010">May  9, 2010 - May 15, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/05/02-week/" label="May  2, 2010 - May  8, 2010">May  2, 2010 - May  8, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/04/25-week/" label="April 25, 2010 - May  1, 2010">April 25, 2010 - May  1, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/04/18-week/" label="April 18, 2010 - April 24, 2010">April 18, 2010 - April 24, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/04/11-week/" label="April 11, 2010 - April 17, 2010">April 11, 2010 - April 17, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/04/04-week/" label="April  4, 2010 - April 10, 2010">April  4, 2010 - April 10, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/03/28-week/" label="March 28, 2010 - April  3, 2010">March 28, 2010 - April  3, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/03/21-week/" label="March 21, 2010 - March 27, 2010">March 21, 2010 - March 27, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/03/14-week/" label="March 14, 2010 - March 20, 2010">March 14, 2010 - March 20, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/03/07-week/" label="March  7, 2010 - March 13, 2010">March  7, 2010 - March 13, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/02/28-week/" label="February 28, 2010 - March  6, 2010">February 28, 2010 - March  6, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/02/21-week/" label="February 21, 2010 - February 27, 2010">February 21, 2010 - February 27, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/02/14-week/" label="February 14, 2010 - February 20, 2010">February 14, 2010 - February 20, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/02/07-week/" label="February  7, 2010 - February 13, 2010">February  7, 2010 - February 13, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/01/31-week/" label="January 31, 2010 - February  6, 2010">January 31, 2010 - February  6, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/01/24-week/" label="January 24, 2010 - January 30, 2010">January 24, 2010 - January 30, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/01/17-week/" label="January 17, 2010 - January 23, 2010">January 17, 2010 - January 23, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/01/10-week/" label="January 10, 2010 - January 16, 2010">January 10, 2010 - January 16, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2010/01/03-week/" label="January  3, 2010 - January  9, 2010">January  3, 2010 - January  9, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/12/27-week/" label="December 27, 2009 - January  2, 2010">December 27, 2009 - January  2, 2010</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/12/20-week/" label="December 20, 2009 - December 26, 2009">December 20, 2009 - December 26, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/12/13-week/" label="December 13, 2009 - December 19, 2009">December 13, 2009 - December 19, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/12/06-week/" label="December  6, 2009 - December 12, 2009">December  6, 2009 - December 12, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/11/29-week/" label="November 29, 2009 - December  5, 2009">November 29, 2009 - December  5, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/11/22-week/" label="November 22, 2009 - November 28, 2009">November 22, 2009 - November 28, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/11/15-week/" label="November 15, 2009 - November 21, 2009">November 15, 2009 - November 21, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/11/08-week/" label="November  8, 2009 - November 14, 2009">November  8, 2009 - November 14, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/11/01-week/" label="November  1, 2009 - November  7, 2009">November  1, 2009 - November  7, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/10/25-week/" label="October 25, 2009 - October 31, 2009">October 25, 2009 - October 31, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/10/18-week/" label="October 18, 2009 - October 24, 2009">October 18, 2009 - October 24, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/10/11-week/" label="October 11, 2009 - October 17, 2009">October 11, 2009 - October 17, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/10/04-week/" label="October  4, 2009 - October 10, 2009">October  4, 2009 - October 10, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/09/27-week/" label="September 27, 2009 - October  3, 2009">September 27, 2009 - October  3, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/09/20-week/" label="September 20, 2009 - September 26, 2009">September 20, 2009 - September 26, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/09/13-week/" label="September 13, 2009 - September 19, 2009">September 13, 2009 - September 19, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/09/06-week/" label="September  6, 2009 - September 12, 2009">September  6, 2009 - September 12, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/08/30-week/" label="August 30, 2009 - September  5, 2009">August 30, 2009 - September  5, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/08/23-week/" label="August 23, 2009 - August 29, 2009">August 23, 2009 - August 29, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/08/16-week/" label="August 16, 2009 - August 22, 2009">August 16, 2009 - August 22, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/08/09-week/" label="August  9, 2009 - August 15, 2009">August  9, 2009 - August 15, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/08/02-week/" label="August  2, 2009 - August  8, 2009">August  2, 2009 - August  8, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/07/26-week/" label="July 26, 2009 - August  1, 2009">July 26, 2009 - August  1, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/07/19-week/" label="July 19, 2009 - July 25, 2009">July 19, 2009 - July 25, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/07/12-week/" label="July 12, 2009 - July 18, 2009">July 12, 2009 - July 18, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/07/05-week/" label="July  5, 2009 - July 11, 2009">July  5, 2009 - July 11, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/06/28-week/" label="June 28, 2009 - July  4, 2009">June 28, 2009 - July  4, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/06/21-week/" label="June 21, 2009 - June 27, 2009">June 21, 2009 - June 27, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/06/14-week/" label="June 14, 2009 - June 20, 2009">June 14, 2009 - June 20, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/06/07-week/" label="June  7, 2009 - June 13, 2009">June  7, 2009 - June 13, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/05/31-week/" label="May 31, 2009 - June  6, 2009">May 31, 2009 - June  6, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/05/24-week/" label="May 24, 2009 - May 30, 2009">May 24, 2009 - May 30, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/05/17-week/" label="May 17, 2009 - May 23, 2009">May 17, 2009 - May 23, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/05/10-week/" label="May 10, 2009 - May 16, 2009">May 10, 2009 - May 16, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/05/03-week/" label="May  3, 2009 - May  9, 2009">May  3, 2009 - May  9, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/04/26-week/" label="April 26, 2009 - May  2, 2009">April 26, 2009 - May  2, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/04/19-week/" label="April 19, 2009 - April 25, 2009">April 19, 2009 - April 25, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/04/12-week/" label="April 12, 2009 - April 18, 2009">April 12, 2009 - April 18, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/04/05-week/" label="April  5, 2009 - April 11, 2009">April  5, 2009 - April 11, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/03/29-week/" label="March 29, 2009 - April  4, 2009">March 29, 2009 - April  4, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/03/22-week/" label="March 22, 2009 - March 28, 2009">March 22, 2009 - March 28, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/03/15-week/" label="March 15, 2009 - March 21, 2009">March 15, 2009 - March 21, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/03/08-week/" label="March  8, 2009 - March 14, 2009">March  8, 2009 - March 14, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/03/01-week/" label="March  1, 2009 - March  7, 2009">March  1, 2009 - March  7, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/02/22-week/" label="February 22, 2009 - February 28, 2009">February 22, 2009 - February 28, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/02/15-week/" label="February 15, 2009 - February 21, 2009">February 15, 2009 - February 21, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/02/08-week/" label="February  8, 2009 - February 14, 2009">February  8, 2009 - February 14, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/02/01-week/" label="February  1, 2009 - February  7, 2009">February  1, 2009 - February  7, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/01/25-week/" label="January 25, 2009 - January 31, 2009">January 25, 2009 - January 31, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/01/18-week/" label="January 18, 2009 - January 24, 2009">January 18, 2009 - January 24, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/01/11-week/" label="January 11, 2009 - January 17, 2009">January 11, 2009 - January 17, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2009/01/04-week/" label="January  4, 2009 - January 10, 2009">January  4, 2009 - January 10, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/12/28-week/" label="December 28, 2008 - January  3, 2009">December 28, 2008 - January  3, 2009</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/12/21-week/" label="December 21, 2008 - December 27, 2008">December 21, 2008 - December 27, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/12/14-week/" label="December 14, 2008 - December 20, 2008">December 14, 2008 - December 20, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/12/07-week/" label="December  7, 2008 - December 13, 2008">December  7, 2008 - December 13, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/11/30-week/" label="November 30, 2008 - December  6, 2008">November 30, 2008 - December  6, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/11/23-week/" label="November 23, 2008 - November 29, 2008">November 23, 2008 - November 29, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/11/16-week/" label="November 16, 2008 - November 22, 2008">November 16, 2008 - November 22, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/11/09-week/" label="November  9, 2008 - November 15, 2008">November  9, 2008 - November 15, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/11/02-week/" label="November  2, 2008 - November  8, 2008">November  2, 2008 - November  8, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/10/26-week/" label="October 26, 2008 - November  1, 2008">October 26, 2008 - November  1, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/10/19-week/" label="October 19, 2008 - October 25, 2008">October 19, 2008 - October 25, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/10/12-week/" label="October 12, 2008 - October 18, 2008">October 12, 2008 - October 18, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/10/05-week/" label="October  5, 2008 - October 11, 2008">October  5, 2008 - October 11, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/09/28-week/" label="September 28, 2008 - October  4, 2008">September 28, 2008 - October  4, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/09/21-week/" label="September 21, 2008 - September 27, 2008">September 21, 2008 - September 27, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/09/14-week/" label="September 14, 2008 - September 20, 2008">September 14, 2008 - September 20, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/09/07-week/" label="September  7, 2008 - September 13, 2008">September  7, 2008 - September 13, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/08/31-week/" label="August 31, 2008 - September  6, 2008">August 31, 2008 - September  6, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/08/24-week/" label="August 24, 2008 - August 30, 2008">August 24, 2008 - August 30, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/08/17-week/" label="August 17, 2008 - August 23, 2008">August 17, 2008 - August 23, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/08/10-week/" label="August 10, 2008 - August 16, 2008">August 10, 2008 - August 16, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/08/03-week/" label="August  3, 2008 - August  9, 2008">August  3, 2008 - August  9, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/07/27-week/" label="July 27, 2008 - August  2, 2008">July 27, 2008 - August  2, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/07/20-week/" label="July 20, 2008 - July 26, 2008">July 20, 2008 - July 26, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/07/13-week/" label="July 13, 2008 - July 19, 2008">July 13, 2008 - July 19, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/07/06-week/" label="July  6, 2008 - July 12, 2008">July  6, 2008 - July 12, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/06/29-week/" label="June 29, 2008 - July  5, 2008">June 29, 2008 - July  5, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/06/22-week/" label="June 22, 2008 - June 28, 2008">June 22, 2008 - June 28, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/06/15-week/" label="June 15, 2008 - June 21, 2008">June 15, 2008 - June 21, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/06/08-week/" label="June  8, 2008 - June 14, 2008">June  8, 2008 - June 14, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/06/01-week/" label="June  1, 2008 - June  7, 2008">June  1, 2008 - June  7, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/05/25-week/" label="May 25, 2008 - May 31, 2008">May 25, 2008 - May 31, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/05/18-week/" label="May 18, 2008 - May 24, 2008">May 18, 2008 - May 24, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/05/11-week/" label="May 11, 2008 - May 17, 2008">May 11, 2008 - May 17, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/05/04-week/" label="May  4, 2008 - May 10, 2008">May  4, 2008 - May 10, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/04/27-week/" label="April 27, 2008 - May  3, 2008">April 27, 2008 - May  3, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/04/20-week/" label="April 20, 2008 - April 26, 2008">April 20, 2008 - April 26, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/04/13-week/" label="April 13, 2008 - April 19, 2008">April 13, 2008 - April 19, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/04/06-week/" label="April  6, 2008 - April 12, 2008">April  6, 2008 - April 12, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/03/30-week/" label="March 30, 2008 - April  5, 2008">March 30, 2008 - April  5, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/03/23-week/" label="March 23, 2008 - March 29, 2008">March 23, 2008 - March 29, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/03/16-week/" label="March 16, 2008 - March 22, 2008">March 16, 2008 - March 22, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/03/09-week/" label="March  9, 2008 - March 15, 2008">March  9, 2008 - March 15, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/03/02-week/" label="March  2, 2008 - March  8, 2008">March  2, 2008 - March  8, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/02/24-week/" label="February 24, 2008 - March  1, 2008">February 24, 2008 - March  1, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/02/17-week/" label="February 17, 2008 - February 23, 2008">February 17, 2008 - February 23, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/02/10-week/" label="February 10, 2008 - February 16, 2008">February 10, 2008 - February 16, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/02/03-week/" label="February  3, 2008 - February  9, 2008">February  3, 2008 - February  9, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/01/27-week/" label="January 27, 2008 - February  2, 2008">January 27, 2008 - February  2, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/01/20-week/" label="January 20, 2008 - January 26, 2008">January 20, 2008 - January 26, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/01/13-week/" label="January 13, 2008 - January 19, 2008">January 13, 2008 - January 19, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2008/01/06-week/" label="January  6, 2008 - January 12, 2008">January  6, 2008 - January 12, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/12/30-week/" label="December 30, 2007 - January  5, 2008">December 30, 2007 - January  5, 2008</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/12/23-week/" label="December 23, 2007 - December 29, 2007">December 23, 2007 - December 29, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/12/16-week/" label="December 16, 2007 - December 22, 2007">December 16, 2007 - December 22, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/12/09-week/" label="December  9, 2007 - December 15, 2007">December  9, 2007 - December 15, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/12/02-week/" label="December  2, 2007 - December  8, 2007">December  2, 2007 - December  8, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/11/25-week/" label="November 25, 2007 - December  1, 2007">November 25, 2007 - December  1, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/11/11-week/" label="November 11, 2007 - November 17, 2007">November 11, 2007 - November 17, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/11/04-week/" label="November  4, 2007 - November 10, 2007">November  4, 2007 - November 10, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/10/28-week/" label="October 28, 2007 - November  3, 2007">October 28, 2007 - November  3, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/10/21-week/" label="October 21, 2007 - October 27, 2007">October 21, 2007 - October 27, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/10/14-week/" label="October 14, 2007 - October 20, 2007">October 14, 2007 - October 20, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/09/30-week/" label="September 30, 2007 - October  6, 2007">September 30, 2007 - October  6, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/09/23-week/" label="September 23, 2007 - September 29, 2007">September 23, 2007 - September 29, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/09/16-week/" label="September 16, 2007 - September 22, 2007">September 16, 2007 - September 22, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/09/09-week/" label="September  9, 2007 - September 15, 2007">September  9, 2007 - September 15, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/09/02-week/" label="September  2, 2007 - September  8, 2007">September  2, 2007 - September  8, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/08/26-week/" label="August 26, 2007 - September  1, 2007">August 26, 2007 - September  1, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/08/12-week/" label="August 12, 2007 - August 18, 2007">August 12, 2007 - August 18, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/08/05-week/" label="August  5, 2007 - August 11, 2007">August  5, 2007 - August 11, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/07/29-week/" label="July 29, 2007 - August  4, 2007">July 29, 2007 - August  4, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/07/22-week/" label="July 22, 2007 - July 28, 2007">July 22, 2007 - July 28, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/07/15-week/" label="July 15, 2007 - July 21, 2007">July 15, 2007 - July 21, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/07/08-week/" label="July  8, 2007 - July 14, 2007">July  8, 2007 - July 14, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/07/01-week/" label="July  1, 2007 - July  7, 2007">July  1, 2007 - July  7, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/06/17-week/" label="June 17, 2007 - June 23, 2007">June 17, 2007 - June 23, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/06/10-week/" label="June 10, 2007 - June 16, 2007">June 10, 2007 - June 16, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/06/03-week/" label="June  3, 2007 - June  9, 2007">June  3, 2007 - June  9, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/05/27-week/" label="May 27, 2007 - June  2, 2007">May 27, 2007 - June  2, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/05/20-week/" label="May 20, 2007 - May 26, 2007">May 20, 2007 - May 26, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/05/13-week/" label="May 13, 2007 - May 19, 2007">May 13, 2007 - May 19, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/05/06-week/" label="May  6, 2007 - May 12, 2007">May  6, 2007 - May 12, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/04/29-week/" label="April 29, 2007 - May  5, 2007">April 29, 2007 - May  5, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/04/22-week/" label="April 22, 2007 - April 28, 2007">April 22, 2007 - April 28, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/04/15-week/" label="April 15, 2007 - April 21, 2007">April 15, 2007 - April 21, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/04/08-week/" label="April  8, 2007 - April 14, 2007">April  8, 2007 - April 14, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/04/01-week/" label="April  1, 2007 - April  7, 2007">April  1, 2007 - April  7, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/03/25-week/" label="March 25, 2007 - March 31, 2007">March 25, 2007 - March 31, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/03/18-week/" label="March 18, 2007 - March 24, 2007">March 18, 2007 - March 24, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/03/11-week/" label="March 11, 2007 - March 17, 2007">March 11, 2007 - March 17, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/03/04-week/" label="March  4, 2007 - March 10, 2007">March  4, 2007 - March 10, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/02/25-week/" label="February 25, 2007 - March  3, 2007">February 25, 2007 - March  3, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/02/18-week/" label="February 18, 2007 - February 24, 2007">February 18, 2007 - February 24, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/02/11-week/" label="February 11, 2007 - February 17, 2007">February 11, 2007 - February 17, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/02/04-week/" label="February  4, 2007 - February 10, 2007">February  4, 2007 - February 10, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/01/28-week/" label="January 28, 2007 - February  3, 2007">January 28, 2007 - February  3, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/01/21-week/" label="January 21, 2007 - January 27, 2007">January 21, 2007 - January 27, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2007/01/14-week/" label="January 14, 2007 - January 20, 2007">January 14, 2007 - January 20, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/12/31-week/" label="December 31, 2006 - January  6, 2007">December 31, 2006 - January  6, 2007</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/12/24-week/" label="December 24, 2006 - December 30, 2006">December 24, 2006 - December 30, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/12/17-week/" label="December 17, 2006 - December 23, 2006">December 17, 2006 - December 23, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/12/10-week/" label="December 10, 2006 - December 16, 2006">December 10, 2006 - December 16, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/12/03-week/" label="December  3, 2006 - December  9, 2006">December  3, 2006 - December  9, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/11/26-week/" label="November 26, 2006 - December  2, 2006">November 26, 2006 - December  2, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/11/19-week/" label="November 19, 2006 - November 25, 2006">November 19, 2006 - November 25, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/11/12-week/" label="November 12, 2006 - November 18, 2006">November 12, 2006 - November 18, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/11/05-week/" label="November  5, 2006 - November 11, 2006">November  5, 2006 - November 11, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/10/29-week/" label="October 29, 2006 - November  4, 2006">October 29, 2006 - November  4, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/10/22-week/" label="October 22, 2006 - October 28, 2006">October 22, 2006 - October 28, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/10/15-week/" label="October 15, 2006 - October 21, 2006">October 15, 2006 - October 21, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/10/08-week/" label="October  8, 2006 - October 14, 2006">October  8, 2006 - October 14, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/10/01-week/" label="October  1, 2006 - October  7, 2006">October  1, 2006 - October  7, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/09/17-week/" label="September 17, 2006 - September 23, 2006">September 17, 2006 - September 23, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/09/10-week/" label="September 10, 2006 - September 16, 2006">September 10, 2006 - September 16, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/09/03-week/" label="September  3, 2006 - September  9, 2006">September  3, 2006 - September  9, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/08/27-week/" label="August 27, 2006 - September  2, 2006">August 27, 2006 - September  2, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/08/20-week/" label="August 20, 2006 - August 26, 2006">August 20, 2006 - August 26, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/08/13-week/" label="August 13, 2006 - August 19, 2006">August 13, 2006 - August 19, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/08/06-week/" label="August  6, 2006 - August 12, 2006">August  6, 2006 - August 12, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/07/30-week/" label="July 30, 2006 - August  5, 2006">July 30, 2006 - August  5, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/07/23-week/" label="July 23, 2006 - July 29, 2006">July 23, 2006 - July 29, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/07/16-week/" label="July 16, 2006 - July 22, 2006">July 16, 2006 - July 22, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/06/25-week/" label="June 25, 2006 - July  1, 2006">June 25, 2006 - July  1, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/06/18-week/" label="June 18, 2006 - June 24, 2006">June 18, 2006 - June 24, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/06/11-week/" label="June 11, 2006 - June 17, 2006">June 11, 2006 - June 17, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/06/04-week/" label="June  4, 2006 - June 10, 2006">June  4, 2006 - June 10, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/05/28-week/" label="May 28, 2006 - June  3, 2006">May 28, 2006 - June  3, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/05/21-week/" label="May 21, 2006 - May 27, 2006">May 21, 2006 - May 27, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/05/14-week/" label="May 14, 2006 - May 20, 2006">May 14, 2006 - May 20, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/05/07-week/" label="May  7, 2006 - May 13, 2006">May  7, 2006 - May 13, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/04/30-week/" label="April 30, 2006 - May  6, 2006">April 30, 2006 - May  6, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/04/23-week/" label="April 23, 2006 - April 29, 2006">April 23, 2006 - April 29, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/04/16-week/" label="April 16, 2006 - April 22, 2006">April 16, 2006 - April 22, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/04/09-week/" label="April  9, 2006 - April 15, 2006">April  9, 2006 - April 15, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/04/02-week/" label="April  2, 2006 - April  8, 2006">April  2, 2006 - April  8, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/03/26-week/" label="March 26, 2006 - April  1, 2006">March 26, 2006 - April  1, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/03/19-week/" label="March 19, 2006 - March 25, 2006">March 19, 2006 - March 25, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/03/12-week/" label="March 12, 2006 - March 18, 2006">March 12, 2006 - March 18, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/03/05-week/" label="March  5, 2006 - March 11, 2006">March  5, 2006 - March 11, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/02/26-week/" label="February 26, 2006 - March  4, 2006">February 26, 2006 - March  4, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/02/19-week/" label="February 19, 2006 - February 25, 2006">February 19, 2006 - February 25, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/02/12-week/" label="February 12, 2006 - February 18, 2006">February 12, 2006 - February 18, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/02/05-week/" label="February  5, 2006 - February 11, 2006">February  5, 2006 - February 11, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/01/29-week/" label="January 29, 2006 - February  4, 2006">January 29, 2006 - February  4, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2006/01/22-week/" label="January 22, 2006 - January 28, 2006">January 22, 2006 - January 28, 2006</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/12/11-week/" label="December 11, 2005 - December 17, 2005">December 11, 2005 - December 17, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/12/04-week/" label="December  4, 2005 - December 10, 2005">December  4, 2005 - December 10, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/11/27-week/" label="November 27, 2005 - December  3, 2005">November 27, 2005 - December  3, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/11/20-week/" label="November 20, 2005 - November 26, 2005">November 20, 2005 - November 26, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/10/23-week/" label="October 23, 2005 - October 29, 2005">October 23, 2005 - October 29, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/10/09-week/" label="October  9, 2005 - October 15, 2005">October  9, 2005 - October 15, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/10/02-week/" label="October  2, 2005 - October  8, 2005">October  2, 2005 - October  8, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/09/25-week/" label="September 25, 2005 - October  1, 2005">September 25, 2005 - October  1, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/09/18-week/" label="September 18, 2005 - September 24, 2005">September 18, 2005 - September 24, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/08/28-week/" label="August 28, 2005 - September  3, 2005">August 28, 2005 - September  3, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/08/21-week/" label="August 21, 2005 - August 27, 2005">August 21, 2005 - August 27, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/08/14-week/" label="August 14, 2005 - August 20, 2005">August 14, 2005 - August 20, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/07/31-week/" label="July 31, 2005 - August  6, 2005">July 31, 2005 - August  6, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/07/24-week/" label="July 24, 2005 - July 30, 2005">July 24, 2005 - July 30, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/07/17-week/" label="July 17, 2005 - July 23, 2005">July 17, 2005 - July 23, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/07/10-week/" label="July 10, 2005 - July 16, 2005">July 10, 2005 - July 16, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/07/03-week/" label="July  3, 2005 - July  9, 2005">July  3, 2005 - July  9, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/06/26-week/" label="June 26, 2005 - July  2, 2005">June 26, 2005 - July  2, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/06/19-week/" label="June 19, 2005 - June 25, 2005">June 19, 2005 - June 25, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/06/12-week/" label="June 12, 2005 - June 18, 2005">June 12, 2005 - June 18, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/06/05-week/" label="June  5, 2005 - June 11, 2005">June  5, 2005 - June 11, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/05/29-week/" label="May 29, 2005 - June  4, 2005">May 29, 2005 - June  4, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/05/22-week/" label="May 22, 2005 - May 28, 2005">May 22, 2005 - May 28, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/05/15-week/" label="May 15, 2005 - May 21, 2005">May 15, 2005 - May 21, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/05/08-week/" label="May  8, 2005 - May 14, 2005">May  8, 2005 - May 14, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/05/01-week/" label="May  1, 2005 - May  7, 2005">May  1, 2005 - May  7, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/04/24-week/" label="April 24, 2005 - April 30, 2005">April 24, 2005 - April 30, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/04/17-week/" label="April 17, 2005 - April 23, 2005">April 17, 2005 - April 23, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/04/10-week/" label="April 10, 2005 - April 16, 2005">April 10, 2005 - April 16, 2005</option>
+				
+				<option value="http://aht.seriouseats.com/archives/2005/04/03-week/" label="April  3, 2005 - April  9, 2005">April  3, 2005 - April  9, 2005</option>
+								
+			</select><br />
+	
+
+
+	
+			<select name="type" class="AHTSelect" onchange="if(this.value!='')window.location.href=this.value;">
+				<option value="" label="By Category...">By Category...</option>
+      <option value="http://aht.seriouseats.com/tags/megaburgers">Big-Ass Burgers</option>
+      <option value="http://aht.seriouseats.com/tags/burger weirdness">Burger Weirdness</option>
+      <option value="http://aht.seriouseats.com/tags/celebrity">Celebrities</option>
+      <option value="http://aht.seriouseats.com/tags/listburg">Listburg: Top 10 Lists and Much More</option>
+      <option value="http://aht.seriouseats.com/tags/chain burgers">The Major Chains</option>
+      <option value="http://aht.seriouseats.com/tags/news digest">News Digests</option>
+      <option value="http://aht.seriouseats.com/tags/photo gallery">Photo Galleries</option>
+      <option value="http://aht.seriouseats.com/tags/tiny hamburgers">Tiny Hamburgers (aka Sliders)</option>		</select>
+			</div><!-- close inner -->
+<div class="inner">
+<h4><a href="http://www.twitter.com/ahamburgertoday">@ahamburgertoday on Twitter</a></h4>
+<ul id="twitter_update_list"></ul>
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/ahamburgertoday.json?callback=twitterCallback2&amp;count=1"></script>
+</object></script>
+</div>
+	</div><!-- close box -->
+
+<div id="SERIOUSEATS_RIGHTRAIL_AD" style="margin-top:10px;">
+<script src="http://adserver.adtechus.com/?adrawdata/3.0/5108.1/2329004/0/0/ADTECH;loc=100;noperf=1;"></script>
+</div>	
+
+
+<!-- Facebook Like Fan Box -->
+<div style="padding:10px 0 0 0;">
+<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fahamburgertoday&amp;width=350&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=true&amp;height=292" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:350px; height:292px; padding-bottom:8px;" allowTransparency="true"></iframe>
+</div>
+<!--/Facebook Like Fan Box -->
+
+
+</div><!-- end featuredRight2Columns -->	
+
+<div id="threeColumn2">
+
+<script src="http://www.seriouseats.com/js/sidebuckets.js?20120430224931" type="text/javascript"></script>
+
+      		
+</div><!-- end column 2 -->
+
+<div id="threeColumn3">
+<div id="multiview" class="box column2List3">
+
+	<div class="inner">
+
+<div id="recentlyCommentedOn">
+		<div class="heading">
+			<h4>Recently Commented On</h4>
+		</div>
+
+<div>
+
+<p><a href="http://aht.seriouseats.com/archives/2012/04/meet-the-smoke-shack-shake-shacks-new-burger.html" rel="nofollow">Meet the Smoke Shack, Shake Shack's New Burger</a></p>
+<p class="postFooter"><a href="http://aht.seriouseats.com/archives/2012/04/meet-the-smoke-shack-shake-shacks-new-burger.html#comments" rel="nofollow">7 comments</a></p>
+
+<p><a href="http://aht.seriouseats.com/archives/2012/04/reality-check-star-wars-burgers-from-quick-in-france.html" rel="nofollow">Reality Check: Star Wars Burgers from Quick in France</a></p>
+<p class="postFooter"><a href="http://aht.seriouseats.com/archives/2012/04/reality-check-star-wars-burgers-from-quick-in-france.html#comments" rel="nofollow">10 comments</a></p>
+
+<p><a href="http://aht.seriouseats.com/archives/2012/04/fast-food-onion-ring-roundup-burger-king-hardees-sonic-jack-in-the-box.html" rel="nofollow">Fast Food Onion Ring Roundup: Burger King vs. Hardee's vs. Jack in the Box vs. Sonic</a></p>
+<p class="postFooter"><a href="http://aht.seriouseats.com/archives/2012/04/fast-food-onion-ring-roundup-burger-king-hardees-sonic-jack-in-the-box.html#comments" rel="nofollow">56 comments</a></p>
+
+<p><a href="http://aht.seriouseats.com/archives/2012/04/burger-city-guides-donald-links-five-favorite-burgers-in-new-orleans-louisiana.html" rel="nofollow">Burger City Guides: Donald Link's Favorite Burgers in New Orleans</a></p>
+<p class="postFooter"><a href="http://aht.seriouseats.com/archives/2012/04/burger-city-guides-donald-links-five-favorite-burgers-in-new-orleans-louisiana.html#comments" rel="nofollow">4 comments</a></p>
+
+<p><a href="http://aht.seriouseats.com/archives/2012/04/the-in-n-out-shooters-sandwich.html" rel="nofollow">Adventures at In-N-Out: We Make a Shooter's Sandwich with 16 Burger Patties</a></p>
+<p class="postFooter"><a href="http://aht.seriouseats.com/archives/2012/04/the-in-n-out-shooters-sandwich.html#comments" rel="nofollow">39 comments</a></p>
+
+<p><a href="http://aht.seriouseats.com/archives/2012/04/rosamunde-sausage-grill-burger-review-san-francisco-ca.html" rel="nofollow">San Francisco: A Tuesday Treat at Rosamunde Sausage Grill</a></p>
+<p class="postFooter"><a href="http://aht.seriouseats.com/archives/2012/04/rosamunde-sausage-grill-burger-review-san-francisco-ca.html#comments" rel="nofollow">16 comments</a></p>
+
+</div>
+
+	</div><!-- /RECENTLY COMMENTED ON -->
+
+	<!-- recentlyOnSlice-->	
+	<div id="recentlyOnSlice">
+		<div class="heading">
+			<h4>Recently on Slice</h4>
+		</div>
+
+<div>
+
+<p><a href="http://slice.seriouseats.com/archives/2012/04/my-pie-monday-blue-point-crab-nettles-redneck-pizza-and-more.html" rel="nofollow">My Pie Monday: Blue Point Crab, Nettles, Redneck Pizza, and More!</a></p>
+<p class="postFooter"><a href="http://slice.seriouseats.com/archives/2012/04/my-pie-monday-blue-point-crab-nettles-redneck-pizza-and-more.html#comments" rel="nofollow">3 comments</a></p>
+
+<p><a href="http://slice.seriouseats.com/archives/2012/04/daily-slice-focaccia-pizza-at-richtree-in-toronto.html" rel="nofollow">Daily Slice: Focaccia Pizza at Richtree, Toronto</a></p>
+<p class="postFooter"><a href="http://slice.seriouseats.com/archives/2012/04/daily-slice-focaccia-pizza-at-richtree-in-toronto.html#comments" rel="nofollow">1 comment</a></p>
+
+<p><a href="http://slice.seriouseats.com/archives/2012/04/poll-whats-your-favorite-square-slice.html" rel="nofollow">Poll: What's Your Favorite Square Slice?</a></p>
+<p class="postFooter"><a href="http://slice.seriouseats.com/archives/2012/04/poll-whats-your-favorite-square-slice.html#comments" rel="nofollow">20 comments</a></p>
+
+<p><a href="http://slice.seriouseats.com/archives/2012/04/this-week-in-pizza-20120429.html" rel="nofollow">This Week in Pizza</a></p>
+<p class="postFooter"><a href="http://slice.seriouseats.com/archives/2012/04/this-week-in-pizza-20120429.html#comments" rel="nofollow">1 comment</a></p>
+
+<p><a href="http://slice.seriouseats.com/archives/2012/04/daily-slice-iggys-bakery-cambridge.html" rel="nofollow">Daily Slice: Iggy's Bakery, Cambridge</a></p>
+<p class="postFooter"><a href="http://slice.seriouseats.com/archives/2012/04/daily-slice-iggys-bakery-cambridge.html#comments" rel="nofollow">4 comments</a></p>
+
+</div>
+
+	</div><!-- /recentlyOnSlice  -->
+
+
+	<!-- recentlyOnSE-->	
+	<div id="recentlyOnSE">
+		<div class="heading">
+			<h4>Recently on SE</h4>
+		</div>
+
+<div>
+
+<p><a href="http://www.seriouseats.com/2012/04/in-food-policy-this-week-5-news-bites-15.html" rel="nofollow">In Food Policy This Week: 5 News Bites</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/2012/04/in-food-policy-this-week-5-news-bites-15.html#comments" rel="nofollow">2 comments</a></p>
+
+<p><a href="http://www.seriouseats.com/2012/04/jose-andres-fried-egg-with-chorizo.html" rel="nofollow">Dinner Tonight: José Andrés's Fried Egg with Chorizo </a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/2012/04/jose-andres-fried-egg-with-chorizo.html#comments" rel="nofollow">3 comments</a></p>
+
+<p><a href="http://www.seriouseats.com/recipes/2012/04/jose-andress-fried-egg-with-chorizo.html" rel="nofollow">José Andrés's Fried Egg with Chorizo</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/recipes/2012/04/jose-andress-fried-egg-with-chorizo.html#comments" rel="nofollow">0 comments</a></p>
+
+<p><a href="http://www.seriouseats.com/2012/04/namu-gaji-san-francisco-mission-lee-brothers-kimchi-burger-okonomiyaki.html" rel="nofollow">First Look: Namu Gaji in San Francisco</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/2012/04/namu-gaji-san-francisco-mission-lee-brothers-kimchi-burger-okonomiyaki.html#comments" rel="nofollow">0 comments</a></p>
+
+<p><a href="http://www.seriouseats.com/recipes/2012/04/cakelove-coconut-milk-flapjack-pancake-recipe.html" rel="nofollow">Coconut Milk Flapjacks</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/recipes/2012/04/cakelove-coconut-milk-flapjack-pancake-recipe.html#comments" rel="nofollow">1 comment</a></p>
+
+</div>
+
+	</div><!-- /recentlyOnSE  -->
+
+</div><!-- close inner -->
+
+</div><!-- close box -->			
+</div><!-- end column 3 -->
+
+<div class="clearer"></div>
+		
+	</div><!-- close content div -->
+
+<script src="http://www.seriouseats.com/js/bottombuckets.js?20120430224931" type="text/javascript"></script>
+
+<div id="footer" class="shortFooter">
+
+	<div id="footerColumn1" class="footer-column">
+          <h3 id="h-still-hungry">Still Hungry?</h3>
+		<ul>
+			<li><a href="http://aht.seriouseats.com/?ref=ahtfooter">Home</a></li>
+			<li><a href="http://aht.seriouseats.com/links/?ref=ahtfooter">Links</a></li>
+			<li><a href="http://aht.seriouseats.com/faq/?ref=ahtfooter">FAQ / Policies</a></li>
+			<li><a href="http://aht.seriouseats.com/tags/press and props?ref=ahtfooter">Press &amp; Props</a></li>	
+			<li><a href="http://http://www.seriouseats.com/terms/?ref=ahtfooter">Terms of Use</a></li>
+			<li><a href="http://http://www.seriouseats.com/privacy/?ref=ahtfooter">Privacy Policy</a></li>
+		</ul>
+          <div style="position:relative; top: 15px;"><a href="http://saymedia.com" target="_blank"><img title="SAY Channel Food" src="http://
+channels.saymedia.com/img/Food-light.png" border="0" alt="SAY Channel Food"></a></div>
+	</div><!-- close footerColumn1 -->
+		
+	<div id="footerColumn2" class="footer-column">
+	   <h3 id="h-delivery">Delivery</h3>
+		<p>Subscribe to our email newsletters so you don't miss anything delicious!</p>
+
+   		<form action="http://www.seriouseats.com/cgi-bin/mte/plugins/ProfileMail/profilemail.cgi" enctype="multipart/form-data" id="profile_edit" method="post">
+   		    <input type="hidden" name="__mode" value="save">
+   		    <input type="hidden" name="blog_id" value="26">
+   			<input value="Your Email Address:" type="text" name="email" class="short" onblur="if(this.value==''){this.style.color=''; this.form.reset()}" onfocus="this.value = ''; this.style.color = '#000';" />
+   			<div class="formField">
+   				<input type="checkbox" name="serious_eats_weekly_newsletter" id="serious_eats_weekly_newsletter"  /><label for="serious_eats_weekly_newsletter"> Weekly Newsletter</label>
+   		 		<br />
+   				<input type="hidden" name="name" value="" />
+   				<input type="checkbox" name="serious_eats_recipe_newsletter" id="serious_eats_recipe_newsletter"  /><label for="serious_eats_recipe_newsletter"> Recipe Newsletter</label>
+   				<br />
+   				<input type="checkbox" name="serious_eats_new_york_newsletter" id="serious_eats_new_york_newsletter"  /><label for="serious_eats_new_york_newsletter"> New York Newsletter</label>
+  				<br />
+   				<input type="checkbox" name="serious_eats_chicago_newsletter" id="serious_eats_chicago_newsletter"  /><label for="serious_eats_chicago_newsletter"> Chicago Newsletter</label>
+   				<br />
+   				<input type="checkbox" name="serious_eats_drinks_newsletter" id="serious_eats_drinks_newsletter"  /><label for="serious_eats_drinks_newsletter"> Drinks Newsletter</label>
+  				<br />
+   				<input type="checkbox" name="serious_eats_sweets_newsletter" id="serious_eats_sweets_newsletter"  /><label for="serious_eats_sweets_newsletter"> Sweets Newsletter</label>
+   				
+   			</div>
+   			<input type="image" value="Subscribe" src="http://seriouseats.com/imagesV2/buttons/subscribe.png" width="82" height="24" border="0" alt="subscribe" />
+   		</form>
+
+
+	</div><!-- close footerColumn2 -->
+		
+	<div id="footerColumn3" class="footer-column">
+           <h3 id="h-kiss-the-chef">Kiss the Chef</h3>
+		<ul>
+                        <li><a href="http://aht.seriouseats.com/about/?ref=ahtfooter">About Us</a></li>
+			<li><a href="http://aht.seriouseats.com/contact/?ref=ahtfooter">Contact Us</a></li>
+			<li><a href="http://www.seriouseats.com/advertise/?ref=footer
+">Advertise with Us</a></li>
+		</ul>
+		<h3 id="h-family-style">Family Style</h3>
+		<ul>
+			<li><a href="http://www.seriouseats.com/?ref=ahtfooter">Serious Eats</a></li>
+			<li><a href="http://drinks.seriouseats.com/?ref=ahtfooter">Drinks</a></li>
+			<li><a href="http://sweets.seriouseats.com/?ref=ahtfooter">Sweets</a></li>
+			<li><a href="http://slice.seriouseats.com/?ref=ahtfooter">Slice</a></li>
+			<li><a href="http://newyork.seriouseats.com/?ref=ahtfooter">Serious Eats: New York</a></li>
+			<li><a href="http://chicago.seriouseats.com/?ref=ahtfooter">Serious Eats: Chicago</a></li>
+			<li><a href="http://photograzing.seriouseats.com/?ref=ahtfooter">Photograzing</a></li>
+		</ul>
+	</div><!-- close footerColumn3 -->
+
+	<div id="footerColumn4" class="footer-column">
+            <h3 id="h-feed-yourself">Feed Yourself</h3>
+		<p>Subscribe to the<br />
+		<a href="http://feeds.feedburner.com/feedmeaburger">A Hamburger Today<br />RSS Feed</a></p>
+		<h3 id="h-delivery">Delivery</h3>	
+		<p>Subscribe by email:</p>
+		<div id="feedburner">
+			<form action="http://www.feedburner.com/fb/a/emailverify" method="post" target="popupwindow" onsubmit="window.open('http://www.feedburner.com', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+				<p><input type="hidden" value="http://feeds.feedburner.com/~e?ffid=254634" name="url" />
+				<input type="hidden" value="A Hamburger Today" name="title" />
+				<input id="feedburnerEmail" type="text" name="email" value="Enter your email address" onfocus="if (this.value==this.defaultValue) this.value=''; else this.select()" onblur="if (!this.value) this.value=this.defaultValue" /><br />
+
+				<input type="submit" value="Subscribe" /><br />
+				Delivered by <a href="http://www.feedburner.com" target="_blank">FeedBurner</a></p>
+			</form>
+		</div>
+	</div><!-- close footerColumn4 --><div class="clearer"></div>
+
+	<a href="http://twitter.com/ahamburgertoday" id="footer-twitter">Follow us on Twitter!</a>
+
+</div><!--/#footer -->
+
+<!-- footer links module -->
+<div id="footerLinks">
+<ul>
+
+<li><a href="http://www.seriouseats.com/faq/">FAQ</a></li>
+<li><a href="http://www.seriouseats.com/advertise/">Advertise</a></li>
+<li><a href="http://www.seriouseats.com/sitemap/">Sitemap</a></li>
+
+<li><a href="http://www.seriouseats.com/terms/">Terms of Use</a></li>
+<li><a href="http://www.seriouseats.com/privacy/">Privacy Policy</a></li>
+<li>&copy; 2006-2012</li>
+</ul>
+</div>
+<!-- /footer links module -->
+
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+ 
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+ 
+_qevents.push({
+qacct:"p-abhYEve3ZZl2E"
+});
+</script>
+ 
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-abhYEve3ZZl2E.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+
+<!-- Begin comScore Tag -->
+<script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "6036036" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=6036036&cv=2.0&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+
+
+<script type="text/javascript">
+function recordOutboundLink(link, category, action, outgoingPageviewLink) {
+  try {
+    _gaq.push(['_trackEvent', category, action, outgoingPageviewLink]);
+    _gaq.push(['_trackPageview', outgoingPageviewLink]);
+    setTimeout('document.location = "' + link.href + '"', 100)
+  }catch(err){}
+}
+</script>
+
+<!-- Start Amazon Impression Reporting Script -->
+<script type="text/javascript" src="http://www.assoc-amazon.com/s/impression-counter?tag=serieats-20&o=1"></script>
+<noscript><img src="http://www.assoc-amazon.com/s/noscript?tag=serieats-20" alt="" /></noscript>
+<!-- End Amazon Impression Reporting Script -->
+
+
+
+
+<!-- chartbeat --> 
+<script type="text/javascript"> 
+var _sf_async_config={uid:2384,domain:"aht.seriouseats.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+       "static.chartbeat.com/js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+ 
+</script> 
+<!-- chartbeat --> 
+
+<!-- AddThis settings for Google Analytics -->
+<script type="text/javascript">
+     var addthis_config = {
+        data_ga_property: 'UA-962456-1',
+        data_ga_social : true
+     };
+</script>
+
+
+
+
+<!-- Addthis -->
+
+<!-- Addthis -->
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=seriouseats"></script>
+<!-- Addthis -->
+
+<!--  BuzzFeed code begins -->
+<div id="BF_WIDGET_1"></div>
+<script type="text/javascript">
+(function( ){
+	BF_WIDGET_JS=document.createElement('script'); BF_WIDGET_JS.type="text/javascript";
+	BF_WIDGET_SRC="http://ct.buzzfeed.com/wd/UserWidget?u=seriouseats.com&amp;to=1&amp;or=vb&amp;wid=1&amp;cb=" + (new Date()).getTime();
+	setTimeout(function() {document.getElementById('BF_WIDGET_1').appendChild(BF_WIDGET_JS);BF_WIDGET_JS.src=BF_WIDGET_SRC},1);
+})();
+</script>
+<!-- / BuzzFeed code ends -->
+
+<script type="text/javascript">
+  try {
+    _gaq.push(['_trackEvent', 'A Hamburger Today_Individual_Pages', 'Outbrain_Pageview', 'http://aht.seriouseats.com/archives/2009/10/the-burger-lab-bacon-attack-pork-butt-bacon-burger.html']);
+  }catch(err){}
+</script>
+
+</body>
+</html>

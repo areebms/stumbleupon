@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>When you see it. Owned.lv</title>
+
+	<meta name="description" content="www.owned.lv - Daily updated funny pictures and videos. Huge collection of pictures and videos from insane internet. Get your owned today !" />
+	<meta name="keywords" content="daily, owned, pictures, videos">
+
+    <link rel="stylesheet" type="text/css" href="/css/main.1.css" />
+
+	<link rel="shortcut icon" href="http://www.owned.lv/favicon.ico" >
+	<meta name="robots" content="index, follow" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.owned.lv/rss/" />
+
+	<meta property="og:site_name" content="Owned.lv" />
+	<meta property="og:image" content="http://www.owned.lv/small/x3x4518b37cfa97eb97bdc04192a3a47294.jpg" />
+    <script src="/js/jquery-min.js" type="text/javascript"></script>
+
+	<script language="javascript" type="text/javascript" src="http://www.anymedia.lv/js/show_media.php?p=9" charset="utf-8" defer="defer"></script>
+
+    
+</head>
+
+<body>
+    <div id="header">
+    	<a href="/" id="logo">Owned.lv</a>
+        <ul id="main-menu">
+        	<li><a href="/?s=home" class="home"><span><em>Home</em></span></a></li>
+            <li><a href="/?s=videos" class=""><span>Videos</span></a></li>
+            <li><a href="/?s=pictures" class=" active"><span>Pictures</span></a></li>
+			<li><a href="/?s=pictures&t=all&g=popular" class=""><span>Popular</span></a></li>
+			<li><a href="/?s=pictures&t=all&g=top" class=""><span>Top 15</span></a></li>
+            <!--<li><a href="#"><span>Games</span></a></li>
+            <li class="submenu"><a href="#"><span>More</span></a>
+                <ul class="subnav">
+                    <li><a href="#">Flash animations</a></li>
+                    <li><a href="#">Text jokes</a></li>
+                </ul>
+            </li>-->
+            
+            
+            <li><a href="/upload.php?keepThis=true&TB_iframe=true&height=500&width=700" title="Upload funny images and videos! Share with others" class="thickbox"><span><B>Upload</B></span></a></li>
+            
+            
+        </ul>
+        <!--<a href="#" id="login">Login</a>-->
+
+    </div>
+    <div id="content">
+    <script>
+    $(document).ready(function(){
+		$(".submenu").hoverIntent(function(){
+			$(this).find(".subnav").fadeIn('fast');
+			$(this).find("a:first").addClass("active");
+		},function(){
+			$(this).find(".subnav").delay(200).fadeOut('slow');
+			$(this).find("a").removeClass("active");
+		});
+        
+        if ($("#image_content").width() > 0)
+        {
+            var intW = $("#image_content").width();
+            //$('#img-view-right-button').width(parseInt(intW/2)+'px');
+            $('#img-view-right-button').css({'right' : (364-parseInt(intW/2)) + 'px'});
+            //$('#img-view-left-button').width(parseInt(intW/2)+'px');
+            $('#img-view-left-button').css({'left' : (364-parseInt(intW/2)) + 'px'});
+        }
+        
+        
+	});
+
+    </script>
+
+      <script type="text/javascript">
+
+        function sayDraugiem(title) {
+          window.open(
+            'http://www.draugiem.lv/say/ext/add.php?title=' + encodeURIComponent(title) +
+            '&link=' + encodeURIComponent(location.href) +
+            '&titlePrefix=' + encodeURIComponent('OWNED.lv:'),
+            '',
+            'location=1,status=1,scrollbars=0,resizable=0,width=600,height=400'
+          );
+          return false;
+        }
+
+        function sayFacebook(title) {
+          window.open(
+            'http://www.facebook.com/sharer.php?u=' + encodeURIComponent(location.href) +
+            '&t=' + encodeURIComponent('OWNED.lv: ') + encodeURIComponent(title),
+            '',
+            'location=1,status=1,scrollbars=0,resizable=0,width=640,height=480'
+          );
+          return false;
+        }
+
+        function sayTwitter(title) {
+          window.open(
+            'http://twitter.com/intent/tweet?source=webclient&text=' +
+              encodeURIComponent('OWNED.lv: ') +
+              encodeURIComponent(title) +
+              '&url=' + encodeURIComponent(location.href),
+            '',
+            'location=1,status=1,scrollbars=0,resizable=0,width=640,height=480'
+          );
+          return false;
+        }
+
+        function sayDigg(title) {
+          window.open(
+            'http://digg.com/submit?title=' +
+              encodeURIComponent('OWNED.lv: ') +
+              encodeURIComponent(title) +
+              '&url=' + encodeURIComponent(location.href),
+            '',
+            'location=1,status=1,scrollbars=0,resizable=0,width=640,height=480'
+          );
+          return false;
+        }
+
+        function sayReddit(title) {
+          window.open(
+            'http://www.reddit.com/submit?title=' +
+              encodeURIComponent('OWNED.lv: ') +
+              encodeURIComponent(title) +
+              '&url=' + encodeURIComponent(location.href),
+            '',
+            'location=1,status=1,scrollbars=0,resizable=0,width=640,height=480'
+          );
+          return false;
+        }
+
+      </script>
+
+		<div id="adsense-top">
+			<script type="text/javascript"><!--
+			google_ad_client = "ca-pub-5472341110353775";
+			/* 728 x 90 text image */
+			google_ad_slot = "0184269380";
+			google_ad_width = 728;
+			google_ad_height = 90;
+			//-->
+			</script>
+			<script type="text/javascript"
+			src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+			</script>
+		</div>
+
+    	<div id="content-menu">
+        	<ul class="navigation">
+            	<!-- <li class="left"><a href="///" class="first">First</a></li> -->
+            	<li><a href="/12173/Admit-it/" class="previous">Previous</a></li>            	<li><a href="/4365/Run-for-it/" class="random">Random</a></li>
+            	<li><a href="/12171/UV-protection/" class="next">Next</a></li>            	<!-- <li class="right"><a href="///" class="last">Last</a></li> -->
+            </ul>
+        </div>
+            <div class="title"><h1 style="font-size: 18px; font-weight: bold;">When you see it</h1></div>
+            <ul id="breadcrumbs">
+            	<li><a href="/">Pictures</a></li>
+                <li><a href="/">Recent</a></li>
+                <li>All time</li>
+            </ul>
+            <div class="clear"></div>
+
+            <div id="object">
+                    <div id="img_navigate__prev_next">
+                    
+						<a href="/4365/Run-for-it/" class="random">
+                        <img src="http://www.owned.lv/images/x3x4518b37cfa97eb97bdc04192a3a47294.jpg" alt="When you see it" class="object" id="image_content" />						</a>
+                        
+						                        <div id="img-view-left-button" onclick="window.location='/12173/Admit-it/';" src="/img/pix2.png">
+                            <div><img onclick="window.location='/12173/Admit-it/';" src="/img/pix2.png"></div>
+                        </div>
+                        
+						                        <div id="img-view-right-button" onclick="window.location='/12171/UV-protection/';" src="/img/pix2.png">
+                            <div><img onclick="window.location='/12171/UV-protection/';" src="/img/pix2.png"></div>
+                        </div>
+						
+                    </div>
+            </div>
+
+			<div id="content-menu">
+        	<ul class="navigation">
+            	<!-- <li class="left"><a href="///" class="first">First</a></li> -->
+            	<li><a href="/12173/Admit-it/" class="previous">Previous</a></li>            	<li><a href="/4365/Run-for-it/" class="random">Random</a></li>
+            	<li><a href="/12171/UV-protection/" class="next">Next</a></li>            	<!-- <li class="right"><a href="///" class="last">Last</a></li> -->
+            </ul>
+			</div>
+
+            <div class="object-data"><div class="inner">
+            	<div id="voting">
+                	                	<a href="#vote" id="vote-up" onclick="$.post('/vote.php', {'img_id': 12172, 'vote':5}, function (t){if (t==1) {location.reload(true);}});"><span>7</span></a>
+                	
+                    <div class="vote-percent"><span style="width:100%"></span><strong>100%</strong></div>
+
+                	                	<a href="#vote" id="vote-down" onclick="$.post('/vote.php', {'img_id': 12172, 'vote':5}, function (t){if (t==1) {location.reload(true);}});"><span>0</span></a>
+                	                </div>
+                <ul id="social">
+                	<li class="share"><b>Stumble and share it:</b></li>
+                    <li id="social_stumbleupon">
+                        <script src="http://www.stumbleupon.com/hostedbadge.php?s=6"></script>
+                        <style type="text/css">
+                            #social_stumbleupon IFRAME{
+                                height: 36px !important;
+                            }
+                        </style>
+
+                    </li>
+                    <li><a href="#1" class="facebook" onclick="sayFacebook('When you see it');"><p>Facebook</p></a></li>
+                    <li><a href="#1" class="twitter" onclick="sayTwitter('When you see it');"><p>Twitter</p></a></li>
+                	<li><a href="#1" class="draugiem" onclick="sayDraugiem('When you see it');"><p>Draugiem.lv</p></a></li>
+                    <li><a href="#1" class="digg" onclick="sayDigg('When you see it');"><p>Digg</p></a></li>
+                    <li><a href="#1" class="reddit" onclick="sayReddit('When you see it');"><p>Reddit</p></a></li>
+					<li class="google"><!--google plus one--> <g:plusone ></g:plusone></li>
+                </ul>
+                <div class="clear"></div>
+             </div></div>
+             <ul id="sharing">
+                <li class="link"><form id="link">
+                    <fieldset>
+                        <span><input style="width: 300px;" OnClick="this.focus(); this.select();" type="text" id="shareurl" name="link" value="http://www.owned.lv/12172/When-you-see-it/"></span>
+                    </fieldset>
+                </form></li>
+                
+                <li class="mail"><form id="mail">
+                    <fieldset>
+                        <span><input type="text" id="sharemail" name="link" value="Enter e-mail address" onclick="if (this.value=='Enter e-mail address') {this.value='';}"></span>
+                        <em class="primary-button-cont"><input type="button" value="Send" id="mail-btn" class="primary-button" onclick="$.post('/m.php', {'em': $('#sharemail').val(), 'e': $.md5($('#sharemail').val()), 'id': 12172}, function (data){if (data=='ok') {$('#sharemail').val(''); alert ('Email sent!');} else {alert ('Email is not sent!')}})" /></em>
+                    </fieldset>
+                </form></li>
+                
+             </ul>
+        <ul class="listing">
+            <li><a href="/4365/Run-for-it/">
+            	<img style="width: 116px; height: 116px;" src="http://www.owned.lv/small/x3x56372ff8cb3726a2ac780aeca060a520.jpg" title="" />
+                <strong>Run for it</strong>
+                <span></span></a>
+            </li>
+			            <li><a href="/13754/And-other-lies/">
+            	<img style="width: 116px; height: 116px;" src="http://www.owned.lv/small/x3x4fa20c9d64015f8e9803358153bf4261.jpg" title="" />
+                <strong>And other lies</strong>
+                <span></span></a>
+            </li>
+			            <li><a href="/11011/The-horror/">
+            	<img style="width: 116px; height: 116px;" src="http://www.owned.lv/small/x3x19a14e40a67905bab1a157461cd66b7e.jpg" title="" />
+                <strong>The horror</strong>
+                <span></span></a>
+            </li>
+			            <li><a href="/12056/How-Apple-sells-their-products/">
+            	<img style="width: 116px; height: 116px;" src="http://www.owned.lv/small/x3x42f0b780cff3ad9bf4e9aecd89c1142e.jpg" title="" />
+                <strong>How Apple sells</strong>
+                <span></span></a>
+            </li>
+			            <li><a href="/11475/Best-wishes/">
+            	<img style="width: 116px; height: 116px;" src="http://www.owned.lv/small/x3x37fec157497ae5e1190141033cfd1227.jpg" title="" />
+                <strong>Best wishes</strong>
+                <span></span></a>
+            </li>
+			            <li><a href="/10417/Dear-customer/">
+            	<img style="width: 116px; height: 116px;" src="http://www.owned.lv/small/x3x51cad3abb27c78d0b3522d5c9c493c04.jpg" title="" />
+                <strong>Dear customer</strong>
+                <span></span></a>
+            </li>
+			            <li><a href="/15404/Priorities/">
+            	<img style="width: 116px; height: 116px;" src="http://www.owned.lv/small/x3x2762d39551165d22ae07e791ee52c5fc.jpg" title="" />
+                <strong>Priorities</strong>
+                <span></span></a>
+            </li>
+			            <li><a href="/14157/So-sexy/">
+            	<img style="width: 116px; height: 116px;" src="http://www.owned.lv/small/x3x5543f985eb02aa445a8422a3f3185e83.jpg" title="" />
+                <strong>So sexy</strong>
+                <span></span></a>
+            </li>
+			            <li><a href="/8782/Cloverfield-monster/">
+            	<img style="width: 116px; height: 116px;" src="http://www.owned.lv/small/x3xa05cb6198479329f414b74f89e5959f4.jpg" title="" />
+                <strong>Cloverfield mon</strong>
+                <span></span></a>
+            </li>
+			            <li><a href="/306/Ha-Ha/">
+            	<img style="width: 116px; height: 116px;" src="http://www.owned.lv/small/52cc88b4860437ccaba19fc440795955.jpg" title="" />
+                <strong>Ha Ha</strong>
+                <span></span></a>
+            </li>
+			        </ul>
+		<div style="clear:both"></div>
+    	<div id="adsense-bottom">
+			<script type="text/javascript"><!--
+			google_ad_client = "ca-pub-5472341110353775";
+			/* Owned bottom 728 */
+			google_ad_slot = "1730563667";
+			google_ad_width = 728;
+			google_ad_height = 90;
+			//-->
+			</script>
+			<script type="text/javascript"
+			src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+			</script>
+        </div>
+
+		<div style="clear:both"></div>
+		
+		<div id="mgid">
+			<!-- MGID News Widget Start -->
+			<div id="MarketGid6902"><center>
+			<a href="http://mgid.com/" target="_blank">Loading...</a>
+			</center></div>
+			<!-- MGID News Widget End -->
+			<script type="text/javascript">
+			var MarketGidDate = new Date();
+			document.write('<scr'+'ipt type="text/javascript" '
+			+'src="http://jsn.dt07.net/o/w/owned.lv.6902.js?t='+MarketGidDate.getYear()+MarketGidDate.getMonth()
+			+ '" charset="utf-8" ></scr'+'ipt>');
+			</script>
+		</div>
+
+
+<!-- <script type="text/javascript" src="http://www.luminate.com/widget/a0a734773b/"></script>
+ -->
+<!-- Avalanchers.com Custom Widget owned.lv_Ji6 -->
+<!-- <div id="ava_2569" style="text-align:center;">Loading...</div>
+<script async type="text/javascript" src="http://www.avalanchers.com/wcode/2569/" charset="utf-8"></script> -->
+<!-- Avalanchers.com Custom Widget End -->
+
+<!-- MGID Pop-under Start -->
+<script type="text/javascript"> var MGCD = new Date(); document.write('<scr' +'ipt type="text/javascript"' +' src="http://jsu.dt07.net/o/w/owned.lv.3649.js?t=' +MGCD.getYear() +MGCD.getMonth() +MGCD.getDate() +MGCD.getHours() +'" charset="utf-8"></scr'+'ipt>'); </script><!-- MGID Pop-under End -->        <div class="clear"></div>
+    </div>
+
+    <div id="footer"><div class="container">
+
+		<!-- Anymedia owned bottom -->
+		<!-- <div id="media_place_50" style="width:728px; height:90px;"></div> -->
+
+
+
+        <div class="data">
+            <p>
+                owned.lv, 2011, 0.008999            </p>
+                
+            <p style="margin-left: 100px;">
+				<script type="text/javascript" src="http://cc9424.counter.hackers.lv/cc.php"></script>
+				<noscript><div><a href="http://counter.hackers.lv/">
+				<img src="http://cc9424.counter.hackers.lv/counter.php?uid=9424"></a></div></noscript>
+            </p>
+        <ul id="footer-menu">
+       <!--     <li><a href="#">World Peace</a></li>
+            <li><a href="#">Adverts</a></li>
+            <li><a href="#">Contacts</a></li>  -->
+        </ul>
+        <div class="clear"></div>
+        </div>
+    </div></div>
+
+    <script src="/js/hoverintent.js" type="text/javascript"></script>
+    <script src="/js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="/js/jquery.t.js" type="text/javascript"></script>
+    
+    <link rel="stylesheet" type="text/css" href="/css/thickbox.css" /> 
+    <script src="/js/thickbox-compressed.js" type="text/javascript"></script>
+
+	<!-- mine -->
+	<script type="text/javascript" defer="defer">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-23222936-1']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+	<!-- MC -->
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-2273299-1']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+    
+	<!-- Place this tag after the last plusone tag -->
+	<script type="text/javascript">
+	  (function() {
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+
+</body>

@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Princess Maker ~ Doll Divine</title>
+<meta name="keywords" content="princess maker, disney princess, disney, princess, princess dress up game, disney dress up game, dress up game, dress up games, queen, renaissance, victorian, dress, crown" /> 
+<meta name="description" content="Finally you can create your own Disney-styled Princess ~" /> 
+<meta name="verify-v1" content="QqvNj4diX9/BY3ih8SxkypJXrBukn6aLIo5MsVaBj2c=" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href="css/tiaraStyle.css" rel="stylesheet" type="text/css" />
+
+<script src="../Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<script language="JavaScript" type="text/JavaScript" src="js/general.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="js/ajax.js"></script>
+<!--<script language="JavaScript" type="text/JavaScript" src="js/min.js"></script>-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="js/jquery.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="js/jquery.corner.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="js/jquery.example.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="js/jquery.equalheights.js"></script>
+<script type="text/javascript" src="http://apis.google.com/js/plusone.js">
+  {parsetags: 'explicit'}
+</script>
+
+	
+<script type="text/javascript">
+
+	var clicked = false; // to stop multi-clicking on slow connections
+	
+	// This function calls ajax code to collect a user's 10 bonus crowns for 7 consecutive days logon
+	function collect_my_bonus_crowns(old_counter, updir)	{
+		if (!clicked)	{
+			if (updir)	{
+				var path = '../ajax';
+			}
+			else	{
+				var path = 'ajax';
+			}
+			makeRequest('action=collect_bonus_crowns', path, 'GET', 'collect_daily_crown_ajx_rtn');
+			clicked = true;
+			setTimeout(do_nothing(),1500);
+		
+			var rtn_val = document.getElementById('collect_daily_crown_ajx_rtn').innerHTML;
+			document.getElementById('daily_crown_text').innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;<b>10 bonus crowns COLLECTED!</b>';
+		}
+
+	}
+
+	// This function calls ajax code to collect a user's daily crown
+	function collect_my_daily_crown(old_counter, updir)	{
+		
+		if (!clicked)	{
+			if (updir)	{
+				var path = '../ajax';
+			}
+			else	{
+				var path = 'ajax';
+			}
+			makeRequest('action=collect_daily_crown', path, 'GET', 'collect_daily_crown_ajx_rtn');
+			clicked = true;
+			setTimeout(do_nothing(),1500);
+		
+			document.getElementById('daily_crown_text').innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;<b>Daily crown has been COLLECTED!</b>';
+		}		
+		
+	}
+	
+	// time waster function
+	function do_nothing()	{
+	}
+
+</script>
+
+<body>
+<table width="943" border="0" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="441"><a href="/"><img src="images/logo.png" width="553" height="123" border="0" /></a></td>
+		<td align="right" width="350" style="padding-bottom: 5px; padding-top: 5px;">
+		<form name="loginform" id="loginform" method="post" action="/princess-maker.php" />
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td align="right" style="padding-bottom:5px;" valign="top">
+						<input type="hidden" name="login" value="true" />
+		<input type="hidden" name="attemptlogin" value="1" />
+		<table width="380" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td class="login_text">E-mail:</td>
+				<td >&nbsp;<input type="text" tabindex="1" size="8" class="login_form" name="username" id="username" value="" maxlength="100" /></td>
+				<td class="login_text">&nbsp;&nbsp;Password:</td>
+				<td >&nbsp;<input type="password" tabindex="2" size="8" class="login_form" name="password" id="password" value="" maxlength="100" onkeypress="enter_form(event, 'loginform');" /></td>
+				<td align="right">&nbsp;<input type="button" tabindex="3" class="login_form_btn" value="LOGIN" onclick="submit_form('loginform');" onkeypress="enter_form(event, 'loginform');" style="margin-top: 5px;"/></td>
+			</tr>
+		</table>
+			
+				</td>
+			</tr>
+			<tr>
+				<td align="right" style="padding-bottom:5px;">
+				<div style="position: relative; float: left; margin-left: 1px;"><input type="checkbox"  name="remember_me" value="1" style="margin-top: 2px;" checked><span class="login_text">&nbsp;Remember me</span></div>&nbsp;<a href="forgot_password.php" class="login_text">Forgot your password?</a>&nbsp;&nbsp;<a href="create_profile.php" class="login_text">Register</a>				</td> 
+			</tr>
+		</table>
+		</form>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td align="right" style="padding-top:5px; height: 16px;">
+							
+				</td>
+			</tr>
+			<tr>
+				<td align="right" style="padding-top:5px;">
+				<form action="search.php" id="cse-search-box">
+				<table cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td><div style="margin-left: 4px;" id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=211276175560409&amp;xfbml=1"></script><fb:like href="" send="false" layout="button_count" show_faces="false" colorscheme="dark" font="verdana"></fb:like></td>
+						<td valign="top">&nbsp;</td>
+						<td width="5">&nbsp;</td>
+						<td width="100%" align="right">
+							<div>
+							<input type="hidden" name="cx" value="partner-pub-0566198054227871:beaok2qev2z" />
+							<input type="hidden" name="cof" value="FORID:9" />
+							<input type="hidden" name="ie" value="ISO-8859-1" />
+							<input type="text" name="q" size="18" style="" />
+							<input type="submit" name="sa" class="login_form_btn" style="margin-bottom: 2px;" value="Search" />
+							</div><script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
+						</td>
+					</tr>
+				</table>
+				</form>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<!-- New Top Menu Layout-->
+		<table width="943" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<table onclick="link_to('exclusive.php')" class="top_menu_item">
+					<tr>
+						<td><img src="images/crownButton.png" alt="logo" width="21" height="15" border="0" /></td>
+						<td>Exclusive</td>
+					</tr>
+				</table>
+				</td>
+				<td width="5">&nbsp;</td>
+				<td>
+				<table onclick="link_to('animal-makers.php')" class="top_menu_item">
+					<tr>
+						<td><img src="images/crownButton.png" alt="logo" width="21" height="15"  border="0" /></td>
+						<td>Animals</td>
+					</tr>
+				</table>
+				</td>
+				<td width="5">&nbsp;</td>
+				<td>
+				<table onclick="link_to('fantasy.php')" class="top_menu_item">
+					<tr>
+						<td><img src="images/crownButton.png" alt="logo" width="21" height="15"  border="0" /></td>
+						<td>Fantasy</td>
+					</tr>
+				</table>
+				</td>
+				<td width="5">&nbsp;</td>
+				<td>
+				<table onclick="link_to('fashion.php')" class="top_menu_item">
+					<tr>
+						<td><img src="images/crownButton.png" alt="logo" width="21" height="15" border="0" /></td>
+						<td>Fashion</td>
+					</tr>
+				</table>
+				</td>
+				<td width="5">&nbsp;</td>
+				<td>
+				<table onclick="link_to('folk.php')" class="top_menu_item">
+					<tr>
+						<td><img src="images/crownButton.png" alt="logo" width="21" height="15" border="0" /></td>
+						<td>Folk</td>
+					</tr>
+				</table>
+				</td>
+				<td width="5">&nbsp;</td>
+				<td>
+				<table onclick="link_to('historical.php')" class="top_menu_item">
+					<tr>
+						<td><img src="images/crownButton.png" alt="logo" width="21" height="15" border="0" /></td>
+						<td>History</td>
+					</tr>
+				</table>
+				</td>
+				<td width="5">&nbsp;</td>
+				<td>
+				<table onclick="link_to('media.php')" class="top_menu_item">
+					<tr>
+						<td><img src="images/crownButton.png" alt="logo" width="21" height="15" border="0" /></td>
+						<td>Media</td>
+					</tr>
+				</table>
+				</td>
+				<td width="5">&nbsp;</td>
+				<td>
+				<table onclick="link_to('male.php')" class="top_menu_item">			  
+					<tr>
+						<td><img src="images/crownButton.png" alt="logo" width="21" height="15" border="0" /></td>
+						<td>Male</td>
+					</tr>
+				</table>
+				</td>
+				<td width="5">&nbsp;</td>
+				<td>
+				<table width="100%" onclick="link_to('random.php')" class="top_menu_item" >
+					<tr>
+						<td><img src="images/crownButton.png" alt="logo" width="21" height="15" border="0" /></td>
+						<td>Random!</td>
+					</tr>
+				</table>
+				</td>
+				<td width="5">&nbsp;</td>
+				<td>
+				<table width="100%" onclick="link_to('voting_page.php')" class="top_menu_item" >
+					<tr>
+						<td><img src="images/crownButton.png" alt="logo" width="21" height="15" border="0" /></td>
+						<td>Vote!</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+<div class="blankPageSpanningDivider"></div>
+
+	<div id="fb-root"></div>
+<script src="http://connect.facebook.net/en_US/all.js">
+</script>
+
+<script language="JavaScript" type="text/JavaScript" >
+	function facebook_share(linkURL, picURL)	{
+
+		FB.init({ 
+			appId:'169322766477444', 
+			cookie:true, 
+			status:true, 
+			xfbml:true 
+		 });
+			
+		FB.ui(
+			{
+			method: 'feed',
+			name: 'Doll Divine',
+			link: linkURL,
+			picture: picURL,
+			caption: 'Doll Divine ~ Dress Up Games ~',
+			description: 'Fantasy dress up games and beautiful animal makers',
+			user_message_prompt: 'Share your thoughts about this Doll!'
+			},
+			function(response) {
+				if (response && response.post_id) {
+				  alert('Thanks!');
+				} 
+				else {
+				  alert('Hmm...unable to Post to Facebook.');
+				}
+			}
+		);
+	}
+</script>
+	<table width="943" border="0" align="center" cellpadding="0" cellspacing="0">
+		<tr>
+			<td valign="top">
+			<table width="175" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="160" valign="top" bgcolor="#009966">
+							<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-0566198054227871";
+		/* 160 x 600 Butterfly Layout */
+		google_ad_slot = "2356968014";
+		google_ad_width = 160;
+		google_ad_height = 600;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+
+							</td>
+					<td width="15">&nbsp;</td>
+				</tr>
+			</table>
+			</td>
+			<td width="135" valign="top">
+			<table width="135" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<table width="120" height="35" border="0" cellpadding="5" cellspacing="0">
+						<tr>
+							<td class="pinkCrownBanner"><img src="images/spacer.gif" width="40" height="10" /></td>
+						</tr>
+					</table>
+					<table width="135" height="565" border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td style="background: url('images/butterflyYellow.png') no-repeat #F7F1CC; vertical-align: top; align: center;" >
+								<table width="100%" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<th class="sideTableFontBold">Fave Games</th>
+		</tr>
+		<tr>
+			<td>
+						<div class="iconBigBoxes"><a class="gameIconLinks" href="scene-couples-maker.php"><img src="../images/1logoSceneCouple.gif" alt="Emo Scene couples dress up" title="Choose a scene look for this couple" width="94" height="94" border="0" />Scene Couples</a></div>							<div class="iconBigBoxes"><a class="gameIconLinks" href="ocean-fashion-dress-up.php"><img src="../images/ocean-fashion-dress-up.gif" alt="Ocean Fashion scene dress up" title="Create an aquatic scene character" width="94" height="94" border="0" />Ocean Fashion</a></div>							<div class="iconBigBoxes"><a class="gameIconLinks" href="viking-maker.php"><img src="../images/viking-maker.gif" alt="Viking Maker how to train your dragon dress up" title="Create and dress up a fierce Viking woman" width="94" height="94" border="0" />Viking Maker</a></div>							<div class="iconBigBoxes"><a class="gameIconLinks" href="sailor-senshi-maker.php"><img src="../images/logoSailor.gif" alt="Sailor Moon dress up game" title="Design your own Sailor Senshi!" width="94" height="94" border="0" />Sailor Senshi</a></div>							</td>
+		</tr>
+	</table>
+								</td>
+							<td width="15">&nbsp;</td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+			</table>
+			</td>
+			<td valign="top">
+			<table width="800" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="800" class="yellowButterfly"><object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="800" height="600">
+						<param name="movie" value="games/princessmaker.swf" />
+						<param name="quality" value="high" />
+						<param name="wmode" value="opaque" />
+						<param name="swfversion" value="9.0.45.0" />
+						<!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+						<param name="expressinstall" value="../Scripts/expressInstall.swf" />
+						<!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+						<!--[if !IE]>-->
+						<object type="application/x-shockwave-flash" data="games/princessmaker.swf" width="800" height="600">
+						<!--<![endif]-->
+						<param name="quality" value="high" />
+						<param name="wmode" value="opaque" />
+						<param name="swfversion" value="9.0.45.0" />
+						<param name="expressinstall" value="../Scripts/expressInstall.swf" />
+						<!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+						<div>
+						<h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+						<p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33" /></a></p>
+						</div>
+						<!--[if !IE]>-->
+					</object>
+					<!--<![endif]-->
+					</object>
+					</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+	</table>
+	<div class="blankPageSpanningDivider"></div>
+
+	
+<table width="943" border="0" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="340" valign="top">
+		<table width="100%" border="0" cellpadding="8" cellspacing="0">
+			<tr>
+				<td width="24" class="pinkCrownBanner"></td>
+				<td width="284" class="yellowButterflyTextLists"><span class="sideTableFont">Princess Maker</span><img src="../images/logoPrincessMaker.gif" alt="Finally you can create your own Disney-styled Princess ~" title="Finally you can create your own Disney-styled Princess ~" class="game_icon_game_page" /> <br />
+				<span class="sub_categories_font"><b>Game by:</b> Doll Divine<br /><b>Art by:</b> <a class="sub_categories" href="http://www.madmoiselleclau.deviantart.com" target="_blank">Claudia Patron Perez</a><br />Create the fantasy princess of your dreams!  Choose from endless bodices, skirts, sleeves, hairstyles and colors to completely customize a unique look. The game is has all the magic of classic Disney Princesses, but kicks it up a notch with lots of unique twists and additions.</span>
+								<p><center><a href="Javascript: void();" onclick="facebook_share('http://www.dolldivine.com/princess-maker.php','http://www.dolldivine.com/../images/logoPrincessMaker.gif');">
+				<img src="images/share-on-facebook-button.gif" border="0" /></a></center></p>
+				</td>
+			</tr>
+		</table>
+		<table width="340" height="15" cellpadding="0" cellspacing="0">
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+		<table width="340" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td width="40" class="pinkCrownBanner"></td>
+				<td width="300" bgcolor="#009966">		<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-0566198054227871";
+		/* 300 x 250 Butterfly Layout */
+		google_ad_slot = "4468813943";
+		google_ad_width = 300;
+		google_ad_height = 250;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+
+		</td>
+			</tr>
+		</table>
+		</td>
+		<td width="15" valign="top"><p>&nbsp;</p></td>
+		<td width="588" valign="top">
+	
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td width="40" class="pinkCrownBanner"><img src="images/spacer.gif" width="40" /></td>
+			<td  style="background: url('images/butterflyYellow.png') no-repeat #F7F1CC; vertical-align: top;">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="categoryTitleFont">Other Doll Makers</td>
+				</tr>
+				<tr>
+					<td>
+											<div class="iconBigBoxes"><a class="gameIconLinks" href="assassins-creed.php"><img src="../images/2logoAssassinsCreed.gif" alt="Assassin's Creed dress up game" title="Dress up the male character's of Assassin's Creed" width="94" height="94" border="0" />Assassin's Creed</a></div>
+												<div class="iconBigBoxes"><a class="gameIconLinks" href="clockwork-couture.php"><img src="../images/logoClockwork.gif" alt="Clockwork Couture - steampunk dress up game" title="Create a stunning steampunk look!" width="94" height="94" border="0" />ClockworkCouture</a></div>
+												<div class="iconBigBoxes"><a class="gameIconLinks" href="create-a-cat.php"><img src="../images/2logoCreateacat.gif" alt="Create a cat animal maker" title="Customize your cat's coat" width="94" height="94" border="0" />Create A Cat</a></div>
+												<div class="iconBigBoxes"><a class="gameIconLinks" href="cub-creator.php"><img src="../images/1logo-cub-creator.gif" alt="Cub Creator cat maker" title="Create a cute baby cub" width="94" height="94" border="0" />Cub Creator</a></div>
+												<div class="iconBigBoxes"><a class="gameIconLinks" href="dragon-game.php"><img src="../images/dragon-game.gif" alt="dragon game animal maker" title="Create a flying 3D dragon" width="94" height="94" border="0" />Dragon Game</a></div>
+												<div class="iconBigBoxes"><a class="gameIconLinks" href="elf-maker.php"><img src="../images/logoElf.gif" alt="Elf dress up game" title="Dress this Elf Princess in a wide selection of fashionable elf clothing" width="94" height="94" border="0" />Elf Maker</a></div>
+												<div class="iconBigBoxes"><a class="gameIconLinks" href="fairy-maker.php"><img src="../images/logoFairy.gif" alt="Fairy dress up game" title="Customize an adorable fluttering fairy!" width="94" height="94" border="0" />Fairy Maker</a></div>
+												<div class="iconBigBoxes"><a class="gameIconLinks" href="glamorous-wedding.php"><img src="../images/2logoglamorouswedding.gif" alt="Wedding Dress Up Game" title="Design a fabulous wedding dress" width="94" height="94" border="0" />Glam. Wedding</a></div>
+												<div class="iconBigBoxes"><a class="gameIconLinks" href="hogwarts-student-maker.php"><img src="../images/logoHogwarts.gif" alt="Hogwarts dress up game" title="You've been accepted to Hogwarts! Time to get ready." width="94" height="94" border="0" />Hogwarts Maker</a></div>
+												<div class="iconBigBoxes"><a class="gameIconLinks" href="legend-steampunk-dress-up.php"><img src="../images/legend-steampunk-dress-up.gif" alt="Legend Steampunk dress up game" title="Dress up a steampunk lady" width="94" height="94" border="0" />Legend</a></div>
+												<div class="iconBigBoxes"><a class="gameIconLinks" href="male-warrior-costume-creator.php"><img src="../images/2logoWarrior.gif" alt="Male Asian Warrior dress up" title="Fully outfit this Asian Warrior" width="94" height="94" border="0" />Male Warrior</a></div>
+												<div class="iconBigBoxes"><a class="gameIconLinks" href="pin-up-maker.php"><img src="../images/logoPinUp.gif" alt="Pin Up dress up game" title="Dress up this sassy pin up girl" width="94" height="94" border="0" />Pin Up Maker</a></div>
+												<div class="iconBigBoxes"><a class="gameIconLinks" href="mlp-fim-pony-creator.php"><img src="../images/2logoMlpFim.gif" alt="My Little Pony Friendship is Magic animal maker" title="MLP:FIM Pony Creator" width="94" height="94" border="0" />Pony Creator</a></div>
+												<div class="iconBigBoxes"><a class="gameIconLinks" href="design-your-prom-look.php"><img src="../images/2logoProm.gif" alt="Prom Dress Up Game" title="Design your prom dress piece by piece!" width="94" height="94" border="0" />Prom Look</a></div>
+												<div class="iconBigBoxes"><a class="gameIconLinks" href="scene-couples-maker.php"><img src="../images/1logoSceneCouple.gif" alt="Emo Scene couples dress up" title="Choose a scene look for this couple" width="94" height="94" border="0" />Scene Couples</a></div>
+											</td>
+				</tr>
+				<tr>
+					<td align="center" valign="middle" style="padding-top: 12px;">
+					<span class="sideTableFont">
+
+										
+					</span>
+					</td>
+				</tr>
+			</table>
+			<table width="100%" height="15" cellpadding="0" cellspacing="0">
+				<tr>
+					<td></td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+	</table>
+			
+		</td>
+	</tr>
+</table>
+<div class="blankPageSpanningDivider">
+</div>
+<table width="728" height="90" border="0" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="942" bgcolor="#00CC99">		<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-0566198054227871";
+		/* 728 x 90 Butterfly Layout */
+		google_ad_slot = "5580841999";
+		google_ad_width = 728;
+		google_ad_height = 90;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+
+		</td>
+	</tr>
+</table>
+
+<div class="blankPageSpanningDivider">
+  
+</div>
+<div class="blankPageSpanningDivider"></div>
+<table width="942" height="15" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="942" align="center">
+    <span class="bottomPageFont">
+    <a class="bottomPage" href="about.php">About</a> | <a class="bottomPage" href="advertise.php">Advertising</a> | <a class="bottomPage" href="behind-the-scenes.php">Behind the Scenes</a> | <a class="bottomPage" href="faq.php">FAQ</a> | <a class="bottomPage" href="privacypolicy.php">Privacy Policy</a> | <a class="bottomPage" href="webmasters.php">Webmasters</a><br /><a class="bottomPageSmall" href="http://blog.dolldivine.com" target="_blank">Blog</a> | <a class="bottomPageSmall" href="http://dolldivine.deviantart.com" target="_blank">DeviantArt</a> | <a class="bottomPageSmall" href="http://www.facebook.com/dolldivine" target="_blank">Facebook</a> | <a class="bottomPageSmall" href="http://twitter.com/dolldivinegames" target="_blank">Twitter</a>
+    </span>
+    </td>
+  </tr>
+</table>
+<div class="blankPageSpanningDivider"></div>
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+</script>
+</body>
+</html>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4968540-1");
+pageTracker._trackPageview();
+</script>
+	
+

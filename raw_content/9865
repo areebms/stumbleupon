@@ -1,0 +1,1411 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head id="ctl00_ctl00_Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><title>
+	
+    
+Stylepilot: Personal Style Engine For Men
+
+
+</title>
+<!-- HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+    
+
+var urlActions = {
+    occasionsListPopup: '/outfit/occasionslistpopup',
+    rateSku: '/outfit/ratesku',
+    getOccasionsNamedTab: '/outfit/getoccasionsnamedtabdata',
+    getSkuDetails: '/outfit/getskudetailsdata',
+    setDnaStyleStatus: '/Browse/setdnastylestatus'
+}
+</script>
+<script src="/scripts/jquery-1.7.min.js" type="text/javascript"></script>
+
+
+<link rel="shortcut icon" href="/favicon.ico" />
+
+
+    
+<meta name="description" content="Style Pilot is an online mens fashion start-up designed exclusively for men to navigate fashion online and to discover which styles and items to purchase. Style Pilot is effectively an online personal stylist" /> 
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+
+<meta property="og:title" content="Stylepilot.com - personal style engine for men" />
+<meta property="og:type" content="product" />
+<meta property="og:url" content="http://www.stylepilot.com" />
+<meta property="og:image" content="http://www.stylepilot.com/content/img/fb_logo.jpg" />
+<meta property="og:site_name" content="www.stylepilot.com" />
+<meta property="og:description" content="\u2018Like\u2019 our page and on the 1st of each month, one lucky liker will be picked at random to win a \u00a3100 gift voucher from the retailer of their choice! Stay liking to be entered each month.\n \nAnd Facebook fans, on this page, we also spot the A listers who have got what it takes in the style stakes."/>
+
+
+<link href="/scripts/plugins/iView/css/iview.css" rel="stylesheet" type="text/css" media="screen" />
+
+<link rel="stylesheet" type="text/css" href="/content/themes/v1/css/reset.css?cdv=132" /><link rel="stylesheet" type="text/css" href="/content/themes/v1/css/984_24_10_10.css?cdv=132" /><link rel="stylesheet" type="text/css" href="/content/themes/v1/css/homemaster.css?cdv=132" /><link rel="stylesheet" type="text/css" href="/content/themes/v1/css/stylepilot.master.css?cdv=132" /><link rel="stylesheet" type="text/css" href="/scripts/plugins/iView/css/spmain/style.css?cdv=132" /><link rel="stylesheet" type="text/css" href="/content/css/stylepilot.footer.css?cdv=132" /><link rel="stylesheet" type="text/css" href="/scripts/plugins/jquery.tweet/jquery.tweet.css?cdv=132" /><link rel="stylesheet" type="text/css" href="/Content/Themes/v1/css/NavigationMenu/navigation-menu.css?cdv=132" /><link rel="stylesheet" type="text/css" href="/content/css/stylepilot.popup.css?cdv=132" /><link rel="stylesheet" type="text/css" href="/content/css/feedback.form.css?cdv=132" /><link rel="stylesheet" type="text/css" href="/content/css/inputs.css?cdv=132" /><link rel="stylesheet" type="text/css" href="/content/themes/v1/css/button.css?cdv=132" />
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-24332805-1']);
+    // _gaq.push(['_setDomainName', 'www.stylepilot.com']);
+    // _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+    (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();    
+</script></head>
+<body>
+    
+    <header id="header">
+        <div class="container_24">
+            <div class="grid_11 alpha">
+	            <a class="logo" href="/"></a>
+	            <a class="slogan" href="/"></a>
+            </div>
+            <div class="grid_13 omega" style="margin-left: 30px">
+	           
+
+<div class="singnin">
+    
+    <a href='/Locker/SignUp' class="fs10">Join us</a>
+    <a rel="nofollow" href="/Locker/SignIn">Sign in</a>							
+    
+</div>
+
+<div class="social-holder">
+    <a href="http://youtube.com/stylepilots" class="youtube-button" target="_blank"></a>
+    <a href="http://twitter.com/Style_Pilot" class="twitter-button" target="_blank"></a>
+    <a href="http://facebook.com/StylePilot" class="facebook-button" target="_blank"></a>
+    
+</div>
+				           
+            </div>
+            <div class="clear"></div>
+        </div>
+    </header>
+
+    
+    
+    <div class="nav-container">
+        <div class="container_24">
+            <div class="grid_6">
+                
+
+<link href="/Content/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
+<style>
+    h3
+    {
+    	margin: 0px 0;
+    }
+    #SearchWrapper{
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+    }
+    
+    #search-holder{
+    	position: relative;
+    }
+    
+    .suggestions-holder{
+    	position: absolute;
+        z-index: 2;
+        background-color: whiteSmoke;
+        max-width: 760px;
+        overflow: hidden;
+        min-width: 224px;
+        top: 33px;
+    }
+    
+    .suggestion{
+    	padding: 5px 10px;
+    	cursor: pointer;
+    }
+    
+    .suggestion:hover,
+    .suggestion.selected{
+        background-color: #F38A06;
+        color: #ffffff;
+    }
+    /**/
+</style>
+
+
+<div id="SearchWrapper" class="container_24">
+    <div id="search-holder" class="grid_7">
+        <input autocomplete="off" id="fts" name="fts" autofocus="autofocus" type="text" onkeyup="fts_searchBoxKeyEvent(this, event)" value="" />
+        <a href="javascript:" id="search-button" onclick="javascript:fts_doSearch();"></a>
+        <div class="suggestions-holder">
+            
+        </div>        
+        <div class="clear"></div>        
+    </div>
+</div>
+
+<script type="text/javascript">
+    var History = window.History;
+    var fts_processing = false;
+    var fts_lastSearch = "";
+    var fts_lastActualSearch = "";
+
+    function fts_clearSuggestions() {
+        $("#fts").parents("div").children(".suggestions-holder").empty();
+    }
+    
+    // Suggestion clicked with mouse
+    $("#fts").parents("div").children(".suggestions-holder").delegate(".suggestion", "click", function() {
+        $("#fts").val($(this).text());   // Update search box
+        fts_clearSuggestions();
+        fts_getSearchResults(false);                     // Update search results
+    });
+
+    // Flush latent logging on link follow
+    $("a:not([target='_blank'])").click(function() {
+        fts_checkDiscardedQuery();
+        return true;
+    });
+   
+    // Flush latent logging on page unload
+    $(window).unload(function() {
+        fts_checkDiscardedQuery();
+    });
+    
+    function fts_searchBoxKeyEvent(sender, e) {
+        fts_checkDiscardedQuery();
+
+        var keyCode = null;
+        
+        if (window.event)
+            keyCode = window.event.keyCode || window.event.charCode || window.event.which;
+        else if (e)
+            keyCode = e.keyCode || e.charCode || e.which;
+
+        var ttt=$("#fts_temp").parents("div").children(".suggestions-holder .suggestion").length;
+        if ($("#fts").parents("div").children(".suggestions-holder").children(".suggestion").length > 0) {
+            var selectedSuggestion = $("#fts").parents("div").children(".suggestions-holder").children(".suggestion.selected");
+            switch (keyCode) {
+            case 38:
+                //up arrow
+                if (selectedSuggestion.length) {
+                    selectedSuggestion.removeClass("selected");
+                    selectedSuggestion.prev().addClass("selected");
+                } else {
+                    $("#fts").parents("div").children(".suggestions-holder").children(".suggestion:last-child").addClass("selected");
+                }
+
+                return;
+            case 40:
+                //down arrow
+                if (selectedSuggestion.length) {
+                    selectedSuggestion.removeClass("selected");
+                    selectedSuggestion.next().addClass("selected");
+                } else {
+                    $("#fts").parents("div").children(".suggestions-holder").children(".suggestion:first-child").addClass("selected");
+                }
+
+                return;
+            case 13:
+                //enter
+                if (selectedSuggestion.length) { // Select the active line
+                    $(sender).val(selectedSuggestion.text());
+                    fts_clearSuggestions();
+                    fts_getSearchResults(false);
+                } else { // Do the current search
+                    fts_clearSuggestions();
+                    fts_doSearch();
+                }
+
+                return false;
+                
+            default:
+                break;
+            }
+        } else if (keyCode == 13) { // Enter on main edit box pressed
+            $("#fts").parents("div").children(".suggestions-holder").empty();
+            fts_doSearch();
+            return;
+        }
+
+        // Start the timer to check for latency before checking for suggestions
+        if (fts_queryChanged($("#fts").val())) {
+            fts_startKeyPressTimer();
+        }
+    }
+    
+    function fts_queryChanged(query) {
+        return (query != "" && query != null && query != undefined && query.length >= 3 && query != fts_lastSearch);
+    }
+
+    var fts_keyPressTimer = null;
+
+    function fts_stopKeyPressTimer() {
+        if (fts_keyPressTimer != null) {
+            clearTimeout(fts_keyPressTimer);
+            fts_keyPressTimer = null;
+        }
+    }
+    
+    function fts_startKeyPressTimer() {
+        fts_stopKeyPressTimer();
+        fts_keyPressTimer = setTimeout(fts_getSearchResults, 100);
+    }
+
+    function fts_getSearchResults(showSuggestions) {
+        fts_stopKeyPressTimer();
+        fts_checkDiscardedQuery();
+
+        var query = $("#fts").val();
+
+        if (!fts_processing && fts_queryChanged(query))
+        {
+            fts_processing = true;
+            try {
+                spfilterPanel.fts = query;
+            } catch (e) { }
+
+            var model;
+            
+            try {
+                var filter = spfilterPanel.getSearchFilterModel();
+                model.filter.page = 0;
+                model = {
+                    fts: query,
+                    includeResults: true,
+                    filter: filter,
+                    lastFts: fts_lastSearch
+                };
+            } catch (e) {
+                model = {
+                    fts: query,
+                    includeResults: true,                  
+                    lastFts: fts_lastSearch
+                };
+            }
+
+            $.ajax({
+                url: "/Browse/SearchInfo",
+                type: "POST",
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                traditional: true,
+                data: $.toJSON(model),
+                success: function(data) {
+                    fts_lastSearch = query;
+                    fts_lastActualSearch = data.ActualQuery;
+                    $("#fts").parents("div").children(".suggestions-holder").empty();
+                    if (data.QuerySuggestions != null && showSuggestions != false) {
+                        for (var i = 0; i < data.QuerySuggestions.length; i++) {
+                            $("#fts").parents("div").children(".suggestions-holder").append("<div class='suggestion'>" + data.QuerySuggestions[i] + "</div>");
+                        }
+                    }
+
+                    if (typeof data.Skus !== 'undefined') {
+                        if (data.Skus.length > 0) {
+                            $('ul.list-items').html($("#productTemplate").tmpl(data.Skus));
+                        } else {
+                            $('ul.list-items').html("Products not found");
+                        }
+
+                        try {
+                            var pageSize = parseInt($.cookie('pageSize') || 20, 10) || 20;
+                            var pageOptions = { page: 0, records: data.Count, pageSize: pageSize };
+                            pageSizeModule.initPager(pageOptions);
+
+                            spfilterPanel.updateCountsWithFts(query);
+
+                            $("#titleWrapper h1").html(query + "<small>(" + data.Count + ")</small>");
+                        } catch (e) { }
+                    }
+                }
+            }).always(function() {
+                fts_processing = false;
+
+                if (fts_queryChanged($("#fts").val())) {
+                    fts_getSearchResults(); // The results are out of date, do it again
+                } else {
+                    fts_startLoggingTimer(); // Start discarded results timer
+                }
+            });
+        }
+    }
+
+    // Active search invocation by UI
+    function fts_doSearch() {
+        fts_logSearch(true);
+
+        var query = $("#fts").val();
+        var searchQueryString;
+        
+        try {
+            searchQueryString = spfilterPanel.getSearchFilterQueryParam();
+        } catch (e) {
+            searchQueryString = "";
+        }
+
+        var pathString;
+
+        if (searchQueryString != "" && searchQueryString.indexOf("&") != undefined && searchQueryString.indexOf("&") > 0) {
+            pathString = "/Browse/Explore" +
+                                    "?fts=" + query.replace(new RegExp(" ", 'g'), "+")
+                                    + spfilterPanel.getSearchFilterQueryParam().substring(searchQueryString.indexOf("&"));
+        } else {
+            pathString = "/Browse/Explore" + "?fts=" + query.replace(new RegExp(" ", 'g'), "+");
+        }
+
+        if ($.browser.msie || window.location.pathname != "/Browse/Explore") {
+            window.location = pathString;
+        }
+        else {
+            if (History.enabled) {
+                History.replaceState({}, document.title, pathString);
+            }
+
+            fts_getSearchResults();
+        }
+
+        return false;
+    }
+
+    var fts_queryDiscarded = false;
+    var fts_loggingTimer = null;
+
+    function fts_startLoggingTimer() {
+        fts_checkDiscardedQuery();
+        fts_loggingTimer = setTimeout(fts_loggingTimeout, 5000);
+    }
+
+    // The search have not been used within the timeout
+    function fts_loggingTimeout() {
+        fts_queryDiscarded = true;
+    }
+
+    function fts_checkDiscardedQuery() {
+        var oldQueryChanged = fts_queryDiscarded;
+        
+        fts_queryDiscarded = false;
+
+        if (fts_loggingTimer != null) {
+            clearTimeout(fts_loggingTimer);
+            fts_loggingTimer = null;
+        }
+
+        if (oldQueryChanged) {
+            fts_logSearch(false); // Log a discarded search
+        }
+    }
+
+    var fts_lastLoggedFts;
+
+    var _gaq = _gaq || [];
+
+    function fts_logSearch(clicked) {
+        if (fts_lastActualSearch > '' && fts_lastLoggedFts != fts_lastActualSearch) {
+            fts_lastLoggedFts = fts_lastActualSearch;
+            if (clicked) {
+                _gaq.push(['_trackEvent', 'Search', 'clicked ' + fts_lastLoggedFts]);
+            } else {
+                _gaq.push(['_trackEvent', 'Search', 'discarded ' + fts_lastLoggedFts]);
+            }
+        }
+
+        fts_queryDiscarded = false; // The query has been logged, clear the discared flag just in case
+    }
+</script>
+            </div>
+            <div class="grid_18 omega">
+                
+
+<nav id="primary_nav">
+<ul class="parent">
+    
+        <li class="parent ">
+            <a href="/Home/Recommendations">recommendations</a>            
+            
+            
+                <div class="selected"></div>
+            
+        </li>
+    
+        <li class="parent ">
+            <a href="#">browse</a>            
+            
+            
+                <div class="select" style="display: none"></div>
+                <div class="selected"></div>
+                <div class="submenu-container" style="width:600px">
+                
+                    <ul class="second-level-menu">
+                        <li class="first item"><span class="head">Clothing</span> </li>
+                        <li>
+                            
+                              <ul class="column">
+                                  
+                                    <li class="item">
+                                        <a href="/browse/clothing-587/coats-588/">Coats</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/clothing-587/trousers-612/">Trousers</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/clothing-587/shirts-602/">Shirts</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/clothing-587/t_shirts-613/">T-shirts</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/clothing-587/jeans-594/">Jeans</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/clothing-587/blazers-585/">Blazers</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/clothing-587/leather_jackets-598/">Leather jackets</a>
+                                    </li>
+                                  
+                              </ul>
+                            
+                              <ul class="column">
+                                  
+                                    <li class="item">
+                                        <a href="/browse/clothing-587/suits_and_tailoring-606/">Suits and tailoring</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/clothing-587/knitwear-597/">Knitwear</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/clothing-587/sweatshirts-609/">Sweatshirts</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/clothing-587/polo_shirts-599/">Polo shirts</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/clothing-587/sweatpants-608/">Sweatpants</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/clothing-587/shorts_and_swimwear-604/">Shorts and swimwear</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/clothing-587/socks-605/">Socks</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/clothing-587/underwear-614/">Underwear</a>
+                                    </li>
+                                  
+                              </ul>
+                            
+                        </li>
+                    </ul>
+                
+                    <ul class="second-level-menu">
+                        <li class="first item"><span class="head">Footwear</span> </li>
+                        <li>
+                            
+                              <ul class="column">
+                                  
+                                    <li class="item">
+                                        <a href="/browse/footwear-591/trainers-611/">Trainers</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/footwear-591/shoes-603/">Shoes</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/footwear-591/boots-586/">Boots</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/footwear-591/sandals-600/">Sandals</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/footwear-591/flip_flops-590/">Flip-flops</a>
+                                    </li>
+                                  
+                              </ul>
+                            
+                        </li>
+                    </ul>
+                
+                    <ul class="second-level-menu">
+                        <li class="first item"><span class="head">Accessories</span> </li>
+                        <li>
+                            
+                              <ul class="column">
+                                  
+                                    <li class="item">
+                                        <a href="/browse/accessories-581/jewellery-595/">Jewellery</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/accessories-581/hats-593/">Hats</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/accessories-581/scarves-601/">Scarves</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/accessories-581/bags-583/">Bags</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/accessories-581/belts_and_braces-584/">Belts and braces</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/accessories-581/gloves-592/">Gloves</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/accessories-581/watches-616/">Watches</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/accessories-581/ties-610/">Ties</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/accessories-581/cufflinks-589/">Cufflinks</a>
+                                    </li>
+                                  
+                                    <li class="item">
+                                        <a href="/browse/accessories-581/sunglasses-607/">Sunglasses</a>
+                                    </li>
+                                  
+                              </ul>
+                            
+                        </li>
+                    </ul>
+                
+                </div>
+            
+            
+        </li>
+    
+        <li class="parent ">
+            <a href="#">outfit builder</a>            
+            
+            
+                <div class="select" style="display: none"></div>
+                <div class="selected"></div>
+                <div class="submenu-container">
+                    <ul class="last clearfix">
+                    
+                            <li class="item"><a href="/outfit/occasion/">Start your own outfit</a></li>
+                        
+                            <li class="item"><a href="/outfit/HowTo">How to use Outfit builder</a></li>
+                        
+                            <li class="first item title" style="width: 173px"><span class="head">Occasions</span></li>
+                        
+                            <li class="item"><a href="/outfit/black_tie_event-49/">Black tie event</a></li>
+                        
+                            <li class="item"><a href="/outfit/smart_dinner-50/">Smart dinner</a></li>
+                        
+                            <li class="item"><a href="/outfit/relaxed_dinner_at_friends-51/">Relaxed dinner at friends</a></li>
+                        
+                            <li class="item"><a href="/outfit/chilling_at_home-52/">Chilling at home</a></li>
+                        
+                            <li class="item"><a href="/outfit/wedding_reception-53/">Wedding reception</a></li>
+                        
+                            <li class="item"><a href="/outfit/work_formal-54/">Work formal</a></li>
+                        
+                            <li class="item"><a href="/outfit/work_smart_casual-55/">Work smart casual</a></li>
+                        
+                            <li class="item"><a href="/outfit/ski_trip-56/">Ski trip</a></li>
+                        
+                            <li class="item"><a href="/outfit/out_hiking-57/">Out hiking</a></li>
+                        
+                            <li class="item"><a href="/outfit/at_the_beach-58/">At the beach</a></li>
+                        
+                    </ul>
+                </div>
+            
+        </li>
+    
+        <li class="parent ">
+            <a href="#">style notes</a>            
+            
+            
+                <div class="select" style="display: none"></div>
+                <div class="selected"></div>
+                <div class="submenu-container">
+                    <ul class="last clearfix">
+                    
+                            <li class="item"><a href="/q_and_a/">Q&A</a></li>
+                        
+                            <li class="item"><a href="/style_tips/">Style Tips</a></li>
+                        
+                            <li class="item"><a href="/article/">Article</a></li>
+                        
+                            <li class="item"><a href="/how_to_guides/">How to Guides</a></li>
+                        
+                    </ul>
+                </div>
+            
+        </li>
+    
+    
+</ul>
+</nav>
+
+<script type="text/javascript">
+    (function() {
+        var containerWidth = 0;
+
+        //this is some kind of hack to avoid unexpected width jumping on hover
+        $.each($("#primary_nav ul.parent li.parent:nth-child(2) .submenu-container .second-level-menu .column .item"), function(index, value) {
+            $(value).width($(value).width() + 5);
+        });
+        
+        //this calculates container width for submenu-container to fit to content
+        $.each($("#primary_nav ul.parent li.parent:nth-child(2) .submenu-container .second-level-menu"), function(index, value) {
+            containerWidth += $(value).width();
+        });
+        
+        //alert(containerWidth);
+        $("#primary_nav ul.parent li.parent:nth-child(2) .submenu-container").width(containerWidth + 10);
+        $("#primary_nav ul.parent li.parent:nth-child(2) .submenu-container").css("left", containerWidth / 2 - containerWidth + 20);
+    })()
+</script>  
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div class="inner">
+            <div class="page-content">	            
+	            <div class="clear"></div>
+		        <section id="content">
+				   
+				   
+				   
+				        
+    
+    
+    <div class="container_24">
+        <div class="grid_24">
+            <div class="home-slider-container">
+                <div id="temp" style="margin-bottom: 10px; position: relative; height: 305px">
+                    <img src="/Content/Themes/v1/img/layout/temp-home-search-background.png" />
+                    <span style="top: 27%; left: 20%; font-size: 30px; position: absolute;">Top notch menswear brands. Search now.</span>
+                    
+
+<link href="/Content/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
+<style>
+    h3
+    {
+    	margin: 0px 0;
+    }
+    #SearchWrapper{
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+    }
+    
+    #search-holder{
+    	position: relative;
+    }
+    
+    .suggestions-holder{
+    	position: absolute;
+        z-index: 2;
+        background-color: whiteSmoke;
+        max-width: 760px;
+        overflow: hidden;
+        min-width: 224px;
+        top: 33px;
+    }
+    
+    .suggestion{
+    	padding: 5px 10px;
+    	cursor: pointer;
+    }
+    
+    .suggestion:hover,
+    .suggestion.selected{
+        background-color: #F38A06;
+        color: #ffffff;
+    }
+    /**/
+</style>
+
+
+<div id="SearchWrapper" class="container_24">
+    <div id="search-holder" class="grid_7">
+        <input autocomplete="off" id="fts_temp" name="fts" autofocus="autofocus" type="text" onkeyup="fts_temp_searchBoxKeyEvent(this, event)" value="" />
+        <a href="javascript:" id="search-button" onclick="javascript:fts_temp_doSearch();"></a>
+        <div class="suggestions-holder">
+            
+        </div>        
+        <div class="clear"></div>        
+    </div>
+</div>
+
+<script type="text/javascript">
+    var History = window.History;
+    var fts_temp_processing = false;
+    var fts_temp_lastSearch = "";
+    var fts_temp_lastActualSearch = "";
+
+    function fts_temp_clearSuggestions() {
+        $("#fts_temp").parents("div").children(".suggestions-holder").empty();
+    }
+    
+    // Suggestion clicked with mouse
+    $("#fts_temp").parents("div").children(".suggestions-holder").delegate(".suggestion", "click", function() {
+        $("#fts_temp").val($(this).text());   // Update search box
+        fts_temp_clearSuggestions();
+        fts_temp_getSearchResults(false);                     // Update search results
+    });
+
+    // Flush latent logging on link follow
+    $("a:not([target='_blank'])").click(function() {
+        fts_temp_checkDiscardedQuery();
+        return true;
+    });
+   
+    // Flush latent logging on page unload
+    $(window).unload(function() {
+        fts_temp_checkDiscardedQuery();
+    });
+    
+    function fts_temp_searchBoxKeyEvent(sender, e) {
+        fts_temp_checkDiscardedQuery();
+
+        var keyCode = null;
+        
+        if (window.event)
+            keyCode = window.event.keyCode || window.event.charCode || window.event.which;
+        else if (e)
+            keyCode = e.keyCode || e.charCode || e.which;
+
+        var ttt=$("#fts_temp").parents("div").children(".suggestions-holder .suggestion").length;
+        if ($("#fts_temp").parents("div").children(".suggestions-holder").children(".suggestion").length > 0) {
+            var selectedSuggestion = $("#fts_temp").parents("div").children(".suggestions-holder").children(".suggestion.selected");
+            switch (keyCode) {
+            case 38:
+                //up arrow
+                if (selectedSuggestion.length) {
+                    selectedSuggestion.removeClass("selected");
+                    selectedSuggestion.prev().addClass("selected");
+                } else {
+                    $("#fts_temp").parents("div").children(".suggestions-holder").children(".suggestion:last-child").addClass("selected");
+                }
+
+                return;
+            case 40:
+                //down arrow
+                if (selectedSuggestion.length) {
+                    selectedSuggestion.removeClass("selected");
+                    selectedSuggestion.next().addClass("selected");
+                } else {
+                    $("#fts_temp").parents("div").children(".suggestions-holder").children(".suggestion:first-child").addClass("selected");
+                }
+
+                return;
+            case 13:
+                //enter
+                if (selectedSuggestion.length) { // Select the active line
+                    $(sender).val(selectedSuggestion.text());
+                    fts_temp_clearSuggestions();
+                    fts_temp_getSearchResults(false);
+                } else { // Do the current search
+                    fts_temp_clearSuggestions();
+                    fts_temp_doSearch();
+                }
+
+                return false;
+                
+            default:
+                break;
+            }
+        } else if (keyCode == 13) { // Enter on main edit box pressed
+            $("#fts_temp").parents("div").children(".suggestions-holder").empty();
+            fts_temp_doSearch();
+            return;
+        }
+
+        // Start the timer to check for latency before checking for suggestions
+        if (fts_temp_queryChanged($("#fts_temp").val())) {
+            fts_temp_startKeyPressTimer();
+        }
+    }
+    
+    function fts_temp_queryChanged(query) {
+        return (query != "" && query != null && query != undefined && query.length >= 3 && query != fts_temp_lastSearch);
+    }
+
+    var fts_temp_keyPressTimer = null;
+
+    function fts_temp_stopKeyPressTimer() {
+        if (fts_temp_keyPressTimer != null) {
+            clearTimeout(fts_temp_keyPressTimer);
+            fts_temp_keyPressTimer = null;
+        }
+    }
+    
+    function fts_temp_startKeyPressTimer() {
+        fts_temp_stopKeyPressTimer();
+        fts_temp_keyPressTimer = setTimeout(fts_temp_getSearchResults, 100);
+    }
+
+    function fts_temp_getSearchResults(showSuggestions) {
+        fts_temp_stopKeyPressTimer();
+        fts_temp_checkDiscardedQuery();
+
+        var query = $("#fts_temp").val();
+
+        if (!fts_temp_processing && fts_temp_queryChanged(query))
+        {
+            fts_temp_processing = true;
+            try {
+                spfilterPanel.fts = query;
+            } catch (e) { }
+
+            var model;
+            
+            try {
+                var filter = spfilterPanel.getSearchFilterModel();
+                model.filter.page = 0;
+                model = {
+                    fts: query,
+                    includeResults: true,
+                    filter: filter,
+                    lastFts: fts_temp_lastSearch
+                };
+            } catch (e) {
+                model = {
+                    fts: query,
+                    includeResults: true,                  
+                    lastFts: fts_temp_lastSearch
+                };
+            }
+
+            $.ajax({
+                url: "/Browse/SearchInfo",
+                type: "POST",
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                traditional: true,
+                data: $.toJSON(model),
+                success: function(data) {
+                    fts_temp_lastSearch = query;
+                    fts_temp_lastActualSearch = data.ActualQuery;
+                    $("#fts_temp").parents("div").children(".suggestions-holder").empty();
+                    if (data.QuerySuggestions != null && showSuggestions != false) {
+                        for (var i = 0; i < data.QuerySuggestions.length; i++) {
+                            $("#fts_temp").parents("div").children(".suggestions-holder").append("<div class='suggestion'>" + data.QuerySuggestions[i] + "</div>");
+                        }
+                    }
+
+                    if (typeof data.Skus !== 'undefined') {
+                        if (data.Skus.length > 0) {
+                            $('ul.list-items').html($("#productTemplate").tmpl(data.Skus));
+                        } else {
+                            $('ul.list-items').html("Products not found");
+                        }
+
+                        try {
+                            var pageSize = parseInt($.cookie('pageSize') || 20, 10) || 20;
+                            var pageOptions = { page: 0, records: data.Count, pageSize: pageSize };
+                            pageSizeModule.initPager(pageOptions);
+
+                            spfilterPanel.updateCountsWithFts(query);
+
+                            $("#titleWrapper h1").html(query + "<small>(" + data.Count + ")</small>");
+                        } catch (e) { }
+                    }
+                }
+            }).always(function() {
+                fts_temp_processing = false;
+
+                if (fts_temp_queryChanged($("#fts_temp").val())) {
+                    fts_temp_getSearchResults(); // The results are out of date, do it again
+                } else {
+                    fts_temp_startLoggingTimer(); // Start discarded results timer
+                }
+            });
+        }
+    }
+
+    // Active search invocation by UI
+    function fts_temp_doSearch() {
+        fts_temp_logSearch(true);
+
+        var query = $("#fts_temp").val();
+        var searchQueryString;
+        
+        try {
+            searchQueryString = spfilterPanel.getSearchFilterQueryParam();
+        } catch (e) {
+            searchQueryString = "";
+        }
+
+        var pathString;
+
+        if (searchQueryString != "" && searchQueryString.indexOf("&") != undefined && searchQueryString.indexOf("&") > 0) {
+            pathString = "/Browse/Explore" +
+                                    "?fts=" + query.replace(new RegExp(" ", 'g'), "+")
+                                    + spfilterPanel.getSearchFilterQueryParam().substring(searchQueryString.indexOf("&"));
+        } else {
+            pathString = "/Browse/Explore" + "?fts=" + query.replace(new RegExp(" ", 'g'), "+");
+        }
+
+        if ($.browser.msie || window.location.pathname != "/Browse/Explore") {
+            window.location = pathString;
+        }
+        else {
+            if (History.enabled) {
+                History.replaceState({}, document.title, pathString);
+            }
+
+            fts_temp_getSearchResults();
+        }
+
+        return false;
+    }
+
+    var fts_temp_queryDiscarded = false;
+    var fts_temp_loggingTimer = null;
+
+    function fts_temp_startLoggingTimer() {
+        fts_temp_checkDiscardedQuery();
+        fts_temp_loggingTimer = setTimeout(fts_temp_loggingTimeout, 5000);
+    }
+
+    // The search have not been used within the timeout
+    function fts_temp_loggingTimeout() {
+        fts_temp_queryDiscarded = true;
+    }
+
+    function fts_temp_checkDiscardedQuery() {
+        var oldQueryChanged = fts_temp_queryDiscarded;
+        
+        fts_temp_queryDiscarded = false;
+
+        if (fts_temp_loggingTimer != null) {
+            clearTimeout(fts_temp_loggingTimer);
+            fts_temp_loggingTimer = null;
+        }
+
+        if (oldQueryChanged) {
+            fts_temp_logSearch(false); // Log a discarded search
+        }
+    }
+
+    var fts_temp_lastLoggedFts;
+
+    var _gaq = _gaq || [];
+
+    function fts_temp_logSearch(clicked) {
+        if (fts_temp_lastActualSearch > '' && fts_temp_lastLoggedFts != fts_temp_lastActualSearch) {
+            fts_temp_lastLoggedFts = fts_temp_lastActualSearch;
+            if (clicked) {
+                _gaq.push(['_trackEvent', 'Search', 'clicked ' + fts_temp_lastLoggedFts]);
+            } else {
+                _gaq.push(['_trackEvent', 'Search', 'discarded ' + fts_temp_lastLoggedFts]);
+            }
+        }
+
+        fts_temp_queryDiscarded = false; // The query has been logged, clear the discared flag just in case
+    }
+</script>
+                </div>
+                
+            </div>           
+        </div>
+        <div class="clear"></div>
+        <div style="border-bottom: 1px solid #d3d3d3" class="grid_24 clearfix">
+            <div class="grid_x alpha omega new-arrivals">
+                <div class="panel-inner">
+					<a href="/Browse/Explore?fts=ASOS">
+						<img src="/Content/Themes/v1/img/home/asos-panel-image.png" />
+						<div class="panel-title">New Arrivals</div>
+					</a>
+                    
+                    <div class="panel-content">
+                        Welcome to our newest brand and shop ASOS menswear here
+                    </div>
+                    
+                    <div class="panel-footer">
+                        <a href="/Browse/Explore?fts=ASOS" class="spbutton orange with-arrow">Shop here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_x alpha omega win">
+                <div class="panel-inner">
+					<a href="/Locker/SignUpForCompetition">
+						<img src="/Content/Themes/v1/img/home/win-panel-image.png" />
+						<div class="panel-title">Win</div>
+					</a>
+                    <div class="panel-content">
+                        Join us now for your chance to win a &pound;200 menswear voucher
+                    </div>
+                    
+                    <div class="panel-footer">
+                        <a href="/Locker/SignUpForCompetition" class="spbutton orange with-arrow">Join us</a>
+                        <a class="action-link" rel="nofollow" data-value="popup-window" data-mode="modal" href="/Home/CompetitionTCPopup" style="display: block; margin-top: 10px; text-decoration: none; color: black;">*competition terms and conditions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_x alpha omega sale">
+                <div class="panel-inner">
+                    <img src="/Content/Themes/v1/img/home/sale-panel-image.png" />
+                    <div class="panel-title">Sale alerts</div>
+                    <form action="/Locker/SignUpForDeals" id="form0" method="post">
+                        <div class="panel-content" style="padding-top: 10px">                        
+                            <span style="display: inline-block; margin-bottom: 0px; font-size: 18px;">Members only</span> 
+                            <span style="font-size: 11px;">(Already a member? Log in <a href="/Locker/PriceAlertResults">here</a>)</span>
+                            <p style="margin:0; font-size: 18px;">Sign in for free instant membership and access to top designer brands at up to <span style="color:red;">70% off</span>.</p>
+                            
+                            <div style="position: relative;">
+                                <div style="position: absolute; top: 7px; left: 10px;">email:</div>
+                            
+                                <span class="field-validation-valid" id="RegistrationLogin_validationMessage" style=" color: red;"></span>
+                                <input id="RegistrationLogin" name="RegistrationLogin" style="height: 35px; width: 100%; line-height: 20px; box-sizing: border-box; margin-top: 5px; padding-left: 65px;" type="text" value="" />
+                            </div>
+                        </div>
+                                
+                        <div class="panel-footer">
+                            <input type="submit" class="spbutton orange with-arrow" value="See today's deals" style="font-size: 22px; margin-top:0" />
+                            <div class="clear"></div>
+                        
+                            <p style="font-size: 10px; line-height: 13px; margin-top: 3px; text-align: justify;">
+                                <span style="color: orange">*</span>Yes, show and send me the sales. By clicking the 'See Today's Sale' button above, 
+                                I agree to the <a href="/Information/Terms">terms of service</a> and <a href="/Information/PrivacyPolicy">privacy policy</a>
+                            </p>
+                        </div>
+                    </form><script type="text/javascript">
+//<![CDATA[
+if (!window.mvcClientValidationMetadata) { window.mvcClientValidationMetadata = []; }
+window.mvcClientValidationMetadata.push({"Fields":[{"FieldName":"RegistrationLogin","ReplaceValidationMessageContents":true,"ValidationMessageId":"RegistrationLogin_validationMessage","ValidationRules":[{"ErrorMessage":"Enter valid email addrees.","ValidationParameters":{},"ValidationType":"required"},{"ErrorMessage":"We already have an account for this email address.","ValidationParameters":{"url":"/Locker/isEmailAvailable","parameterName":"login"},"ValidationType":"remote"},{"ErrorMessage":"Please ensure you have correct email address format using @ and a domain name.","ValidationParameters":{"pattern":"^([a-zA-Z0-9_\\-\\+]\\.{0,1})+\\@(([a-zA-Z0-9\\-])+\\.)+([a-zA-Z0-9]{2,4})+$"},"ValidationType":"regularExpression"}]}],"FormId":"form0","ReplaceValidationSummary":false});
+//]]>
+</script>
+                </div>
+            </div>            
+        </div>
+        <div class="clear"></div>
+        <div style="border-bottom: 1px solid #d3d3d3" class="grid_24 clearfix">
+                <table>
+                    <colgroup>
+                        <col style="width: 650px"/>
+                        <col style="width: 310px"/>
+                    </colgroup>
+                    <tr>
+                        <td>
+                           <div class="grid_x alpha omega block-outfit-builder">
+                    <div class="block-inner">
+                        <h3 class="block-title">Outfit Builder</h3>
+                        <p class="text">No matter what the dress code is, you have to make an effort to look your best in the workplace. There's always room for improvement.</p>
+                        <a class="button-build-an-outfit" href="/outfit/occasion/"></a>
+                    </div>
+                </div>  
+                        </td>
+                        <td style="border-left: 1px solid #d3d3d3;">
+                             <div class="grid_x alpha omega" style="width: 310px; ">
+                    <div class="block-inner">
+                        <span class="follow-link"><a href="https://twitter.com/style_pilot" class="twitter-follow-button" data-show-count="false" data-show-screen-name="true">Follow @Stylepilot</a></span>
+                        <h3 class="block-title">Twitter feed</h3>
+                        <div id="tweet" class="tweet"></div>
+                    </div>
+                </div>
+                        </td>
+                     </tr>
+                </table>
+        </div>
+        <div class="clear"></div>
+        <div style="" class="grid_24 clearfix as-featured-in">
+            <div class="block-inner">
+              <h3 class="block-title">As featured in</h3>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+<div class="promotions-popup" id="promoPopup">
+    <a href="javascript:closePromoPopup()" class="close-promotion">x</a>
+    <p class="promotion-message">
+        Sign up to our newsletter to get our latest deals and styletips
+    </p>
+    
+    <div style="padding:5px 10px 15px 10px" class="editor-field-content">
+        <label>Email: <input type="text" id="userEmailPromo" /></label>
+        <span class="field-validation-error" style="padding-left: 40px; display: none" id="validationErrorPromo">The Email field is required.</span>
+    </div>
+    <div style="text-align: center">
+        <a href="/Locker/SubscriberSignUp" class="spbutton blue" id="signUpPromo">Sign up</a>
+    </div>
+        
+<style type="text/css">
+    .promotions-popup {
+		z-index: 1;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 280px;
+        background-color: #FAFAFA;
+        display: block;
+        background: white url('/content/themes/v1/img/logo.png') no-repeat -1px 0px;
+        border: 2px solid #FBB040;
+        padding: 82px 5px 10px 5px;
+    }
+    .close-promotion {
+        top: 0;
+        right: 7px;
+        font-size: 13px;
+        font-weight: 700;
+        text-decoration: none;
+        position: absolute;
+    }
+    .promotion-message {
+        font-size: 12px;
+        line-height: 17px;
+        font-weight: 700;
+        padding: 0 10px;
+        text-align: center
+    }
+    .promotions-popup .editor-field-content input[type="text"], .promotions-popup input[type="password"], 
+    .promotions-popup input[type="email"] {
+        width: 210px
+    }
+</style>
+<script type="text/javascript">
+    function closePromoPopup() {
+        $.cookie('promo', '-156845737', { expires: 365, path: '/' });
+        $('#promoPopup').remove();
+    }
+//
+    var promoModule = function() {
+        var controls = {
+            signupButton: null,
+            txtEmail: null,
+            errorMessage: null
+        };
+
+        function isValidEmail(emailValue) {
+            var emailRegx = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+            if (emailValue == '') {
+                controls.errorMessage.text('The Email field is required.');
+                return false;
+            }
+
+            if (emailRegx.test(emailValue) == false) {
+                controls.errorMessage.text('Enter valid email addrees.');
+                return false;
+            }
+            return true;
+        }
+
+        function initEvents() {
+            controls.signupButton = $('a#signUpPromo');
+            controls.txtEmail = $('#userEmailPromo');
+            controls.errorMessage = $('#validationErrorPromo');
+
+            controls.signupButton.click(function(e) {
+                e.preventDefault();
+                var email = $.trim($('#userEmailPromo').val());
+
+                controls.txtEmail.trigger('change');
+
+                if (isValidEmail(email)) {
+                    var url = $(this).attr('href') + '?email=' + email;
+                    window.location = url;
+                    closePromoPopup();
+                }
+
+                return false;
+            });
+
+            controls.txtEmail.change(function() {
+                if (isValidEmail($.trim($(this).val()))) {
+                    controls.txtEmail.removeClass('input-validation-error');
+                    controls.errorMessage.hide();
+
+                    return;
+                }
+
+                controls.txtEmail.addClass('input-validation-error');
+                controls.errorMessage.show();
+            });
+        }
+
+        initEvents();
+    } ();
+//
+</script>
+</div>
+
+    
+				   	        
+			       <div class="clear"></div>
+		        </section>
+		    </div>
+		</div>
+    </div>
+    
+    
+    
+    
+	
+<footer id="footer">
+    <div class="footer-wrapper">
+        <div class="container_24">
+            <div class="grid_16 footer-inner">
+                <div class="footer-container clearfix">
+                    
+                        <div class="col">
+                            <h4>About us</h4>
+                            <ul>
+                                
+                                    <li>
+                                        <a href='/AboutUs/OurMission'>Our mission</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href='/AboutUs/Team'>Team</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href='/AboutUs/ContactUs'>Contact Us</a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    
+                        <div class="col">
+                            <h4>Information</h4>
+                            <ul>
+                                
+                                    <li>
+                                        <a href='/Information/Terms'>Terms of Service</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href='/Information/PrivacyPolicy'>Privacy policy</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href='/Information/FAQ'>FAQ</a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="grid_8 footer-inner">
+                <div class="footer-container clearfix">
+                    <h4>Follow us</h4>
+                    <ul class="follow">
+
+
+                        <li>
+                            <a href="http://facebook.com/StylePilot" class="follow-icons facebook">
+                                <span>'Like' us on <span class="underlined-text">facebook</span></span> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://twitter.com/Style_Pilot" class="follow-icons twitter">
+                                <span>Follow us on <span class="underlined-text">twitter</span></span> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Popup/SendFeedback" rel="nofollow" data-value="popup-window" data-mode="modal" class="follow-icons email">
+                                <span>Send us an <span class="underlined-text">email</span></span> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</footer>
+    
+    
+    
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#categories-container").tinycarousel({
+            axis: 'y',
+            display: 5
+        });
+
+        $("#tweet").tweet({
+            username: "style_pilot",
+            join_text: "auto",
+            avatar_size: 32,
+            count: 3,
+            auto_join_text_default: "we said,",
+            auto_join_text_ed: "we",
+            auto_join_text_ing: "we were",
+            auto_join_text_reply: "we replied to",
+            auto_join_text_url: "we were checking out",
+            loading_text: "loading tweets...",
+            template: '{text}<br/>{time}'
+        });
+
+        $('#home_promo').iView({
+            fx: 'fade',
+            easing: 'easeOutExpo',
+            pauseTime: 7000,
+            pauseOnHover: true,
+            directionNav: true,
+            directionNavHide: false,
+            controlNav: true,
+            controlNavNextPrev: false,
+            controlNavTooltip: false,
+            nextLabel: "Next",
+            previousLabel: "Previous",
+            playLabel: "Play",
+            pauseLabel: "Pause",
+            timer: "360Bar",
+            timerPadding: 3,
+            timerBg: "#fff",
+			timerColor: "#F9AC38",
+            timerPosition: "top-right"
+        });
+    });
+</script>
+
+
+    
+    
+    <script type="text/javascript" src="/scripts/MicrosoftAjax.js?cdv=132"></script><script type="text/javascript" src="/scripts/MicrosoftMvcAjax.js?cdv=132"></script><script type="text/javascript" src="/scripts/MicrosoftMvcValidation.js?cdv=132"></script><script type="text/javascript" src="/scripts/plugins/jquery.tmpl/jquery.tmpl.min.js?cdv=132"></script><script type="text/javascript" src="/scripts/plugins/jquery.history/html4plushtml5/jquery.history.js?cdv=132"></script><script type="text/javascript" src="/scripts/plugins/jquery.cookie.js?cdv=132"></script><script type="text/javascript" src="/scripts/plugins/stylepilot.popup.js?cdv=132"></script><script type="text/javascript" src="/scripts/plugins/json.js?cdv=132"></script><script type="text/javascript" src="/scripts/stylepilot.common.js?cdv=132"></script><script type="text/javascript" src="/scripts/plugins/iView/js/raphael-min.js?cdv=132"></script><script type="text/javascript" src="/scripts/plugins/jquery.tinycarousel.min.js?cdv=132"></script><script type="text/javascript" src="/scripts/plugins/iView/js/jquery.easing.js?cdv=132"></script><script type="text/javascript" src="/scripts/plugins/jquery.tweet/jquery.tweet.js?cdv=132"></script><script type="text/javascript" src="/scripts/plugins/iView/js/iview.pack.js?cdv=132"></script>
+<a class="leave-feedback-button" rel="nofollow" data-value="popup-window" data-mode="modal" href="/Popup/SendFeedback"></a>
+
+<div id="opaco" class="hidden"></div><div id="mask" class="hidden"></div><div id="popup" class="hidden"></div>
+<!--twitter button-->
+<script type="text/javascript" async defer>!function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } } (document, "script", "twitter-wjs");</script>
+<!--google+1 button-->
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
